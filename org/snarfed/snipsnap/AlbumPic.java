@@ -27,7 +27,6 @@ import java.io.PrintWriter;
 import java.io.File;
 import java.io.IOException;
 
-import org.snipsnap.app.Application;
 import org.snipsnap.snip.SnipSpace;
 import org.snipsnap.snip.SnipSpaceFactory;
 import org.snipsnap.snip.Snip;
