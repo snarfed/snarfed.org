@@ -1,3 +1,6 @@
+/* Copyright 2003 Ryan Barrett <snarfed@ryanb.org>
+ * This software is licensed under the GPL. See the LICENSE file for details.
+ */
 package org.snarfed.snipsnap;
 
 import java.util.Iterator;

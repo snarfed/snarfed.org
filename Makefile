@@ -17,7 +17,7 @@ JAR = jar
 JFLAGS_DEV =
 JFLAGS_REL =
 JFLAGS = $(JFLAGS_DEV)
-CLASSPATH = $(LIBS)/radeox.jar:$(LIBS)/snipsnap-servlets.jar:$(LIBS)/jdom-b8.jar:third-party/junit.jar:.
+CLASSPATH = $(LIBS)/radeox.jar:$(LIBS)/snipsnap-servlets.jar:$(LIBS)/jdom-b8.jar:$(LIBS)/junit.jar:.
 METAFILE = META-INF/services/org.radeox.macro.Macro
 SRCS = $(shell ls org/snarfed/snipsnap/*.java)
 CLASSES = $(SRCS:.java=.class)
@@ -29,11 +29,16 @@ compile: $(SRCS)
 	$(JAVAC) -classpath $(CLASSPATH) $(JFLAGS) $(SRCS)
 
 jar: compile
-	$(JAR) cvf $(LIBS)/snarfed.jar $(CLASSES) $(METAFILE) ./README.txt ./LICENSE
+	$(JAR) cvf $(LIBS)/snarfed.jar $(CLASSES) $(METAFILE) ./README ./LICENSE
 
 test: compile
 	$(JAVA) -classpath $(CLASSPATH) junit.textui.TestRunner \
 		org.snarfed.snipsnap.AllTests
+
+#SNARFED_DIR = $(shell cd ..; ls -d snarfed*)
+#tar:
+#	tar czvf $(SNARFED_DIR).tar.gz -C .. --exclude=.svn --no-anchored \
+#	$(SNARFED_DIR)
 
 reload:
 	cd $(SNIPSNAPDIR); ./run.sh -admin reload sandbox

@@ -1,12 +1,7 @@
-/* File: MakeAlbum.java
- *
- * A macro for SnipSnap (http://snipsnap.org/). Allows a user to specify
- * captions for pictures that they have uploaded.
- *
- * @author Ryan Barrett (ryan@barrett.name),
- *         Maulik Shah (maulik@cs.stanford.edu)
+/* Copyright 2003 Maulik Shah <maulik@cs.stanford.edu>,
+ *   Ryan Barrett <snarfed@ryanb.org>
+ * This software is licensed under the GPL. See the LICENSE file for details.
  */
-
 package org.snarfed.snipsnap;
 
 import java.util.Vector;
@@ -28,6 +23,14 @@ import org.radeox.macro.parameter.MacroParameter;
 import org.radeox.macro.parameter.BaseMacroParameter;
 import org.snipsnap.app.Application;
 
+
+/**
+ * A macro for SnipSnap (http://snipsnap.org/). Allows a user to specify
+ * captions for pictures that they have uploaded.
+ *
+ * @author Ryan Barrett (ryan@barrett.name),
+ *         Maulik Shah (maulik@cs.stanford.edu)
+ */
 
 public class MakeAlbum extends Macro {
   private static final String ERROR_START = "<span style='color: red;'> ";

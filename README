@@ -16,6 +16,11 @@ application is called foo, place this jar file in the directory:
 
   /usr/share/snipsnap-0.4.2a/applications/foo/WEB-INF/lib/
 
+
+If you've downloaded the source, you'll need to edit the Makefile and specify
+where your SnipSnap installation is located.
+
+
 NOTE: This macro package works with Snipsnap 0.4.2 *only*! It most likely will
 not work with SnipSnap 0.5 or greater.
 
