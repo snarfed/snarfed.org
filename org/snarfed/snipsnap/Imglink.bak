@@ -1,0 +1,70 @@
+/* File: Imglink.java
+ * Author: Ryan Barrett (rbarrett@stanford.edu)
+ *
+ * A macro for SnipSnap (http://snipsnap.org/). Makes a link out of an image,
+ * instead of only text. First argument is the image filename, second argument
+ * is the target URL.
+ */
+
+package org.snarfed.snipsnap;
+
+import java.io.Writer;
+import java.io.PrintWriter;
+import java.io.IOException;
+import org.radeox.macro.Macro;
+import org.radeox.macro.parameter.MacroParameter;
+import org.radeox.macro.parameter.BaseMacroParameter;
+
+
+public class Imglink extends Macro
+{
+  // constants
+  private static final String NAME = "imglink";
+  private static final String DESCRIPTION =
+    "Displays an image hyperlink (instead of text). Arguments are similar to " +
+    "first is the image filename, second is the target URL.";
+  private static final String ERROR =
+    "<span style='color: red;'> imglink requires exactly two arguments. </span>";
+
+
+  // overridden methods in Macro...
+  public String getName()        { return NAME; }
+  public String getDescription() { return DESCRIPTION; }
+
+
+  /* execute
+   *
+   * Runs the macro. (Overrides execute in Macro.)
+   */
+  public void execute(Writer writer, MacroParameter params)
+    throws IllegalArgumentException, IOException
+  {
+    // the single parameter is the album directory
+    if (params.getLength() != 2) {
+      writer.write(ERROR);
+      return;
+    }
+    String image = "asdf";//params.get("0");
+    String target = "qwer";//params.get("1");
+
+    writer.write("<a href='" + target + "'>");
+    writer.write("<img src='" + image + "' /></a>\r\n");
+  }
+
+
+
+    
+  /* test main
+   */
+  public static void main(String[] args) throws IOException {
+    System.out.println("Calling execute...");
+
+    PrintWriter out = new PrintWriter(System.out, true);
+    BaseMacroParameter params = new BaseMacroParameter();
+
+    params.setParams(args[0] + '|' + args[1]);
+
+    new Imglink().execute(out, params);
+    out.flush();
+  }
+}

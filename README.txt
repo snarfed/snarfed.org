@@ -1,0 +1,21 @@
+This jar file holds a collection of macros for the web/wiki server SnipSnap.
+The official snarfed.jar web site has more information. It is located at
+
+  http://snarfed.org/space/snipsnap+macros
+
+The SnipSnap web site is located at:
+
+  http://snipsnap.org/
+
+
+To install and use these macros, place this jar file in your SnipSnap
+application's WEB-INF/lib/ subdirectory and restart SnipSnap.
+
+For example, if SnipSnap is installed in /usr/share/snipsnap-0.4.2a, and your
+application is called foo, place this jar file in the directory:
+
+  /usr/share/snipsnap-0.4.2a/applications/foo/WEB-INF/lib/
+
+NOTE: This macro package works with Snipsnap 0.4.2 *only*! It most likely will
+not work with SnipSnap 0.5 or greater.
+
