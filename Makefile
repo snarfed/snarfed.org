@@ -1,11 +1,8 @@
-##
+###
 ## Makefile for the snarfed.org SnipSnap macros. You'll want to edit
-## SNIPSNAPLIBS to point to your SnipSnap installation.
+## SNIPSNAPDIR and LIBS to point to your SnipSnap installation and application.
 ##
-
 ## NOTE: this requires snipsnap 1.0b1-uttoxeter!
-## Please replace these with your snipsnap installation's directory and primary
-## application.
 ##
 SNIPSNAPDIR = /home/ryanb/shared/snipsnap-1.0b1-uttoxeter
 LIBS = /home/ryanb/applications/_8668_/webapp/WEB-INF/lib

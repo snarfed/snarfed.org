@@ -1,4 +1,22 @@
-/* Copyright 2003 Ryan Barrett <snarfed@ryanb.org>
+/**
+ * Snarfed macros for SnipSnap
+ * http://snarfed.org/space/snipsnap+macros
+ * Copyright 2003-2004 Ryan Barrett <snarfed@ryanb.org>
+ *
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the Free
+ * Software Foundation; either version 2 of the License, or (at your option)
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+ * more details.
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple
+ * Place, Suite 330, Boston, MA 02111-1307 USA
+ * Copyright 2003-2004 Ryan Barrett <snarfed@ryanb.org>
  * This software is licensed under the GPL. See the LICENSE file for details.
  */
 package org.snarfed.snipsnap;
@@ -21,7 +39,7 @@ import org.radeox.util.logging.Logger;
 /**
  * Attaches a file to the current snip.
  *
- * @author Ryan Barrett <ryan@barrett.name>
+ * @author Ryan Barrett <snarfed@ryanb.org>
  */
 public class Attach extends SnipMacro {
   // TODO: infer content type from extension? code for this must have already
@@ -53,10 +71,11 @@ public class Attach extends SnipMacro {
       throw new IllegalArgumentException("File " + inFile + " doesn't exist!");
     }
 
-    Snip snip = params.getSnip();
+    Snip snip = params.getSnipRenderContext().getSnip();
     FileInputStream in = new FileInputStream(inFile);
-    File fileStore =
-      new File(Application.get().getConfiguration().getFileStorePath());
+    // note that snipsnap's Configuration class is generated from a "template":
+    // org/snipsnap/config/Configuration.java.tmpl
+    File fileStore = Application.get().getConfiguration().getFilePath();
     File out = new File(new File(fileStore, snip.getName()), inFile.getName());
 
     upload(in, out);

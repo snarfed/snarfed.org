@@ -18,7 +18,7 @@ import javax.imageio.ImageIO;
 import java.awt.Image;
 import java.awt.image.BufferedImage;
 
-import org.radeox.macro.Macro;
+import org.radeox.macro.BaseMacro;
 import org.radeox.macro.parameter.MacroParameter;
 import org.radeox.macro.parameter.BaseMacroParameter;
 import org.snipsnap.app.Application;
@@ -28,11 +28,11 @@ import org.snipsnap.app.Application;
  * A macro for SnipSnap (http://snipsnap.org/). Allows a user to specify
  * captions for pictures that they have uploaded.
  *
- * @author Ryan Barrett (ryan@barrett.name),
+ * @author Ryan Barrett (snarfed@ryanb.org),
  *         Maulik Shah (maulik@cs.stanford.edu)
  */
 
-public class MakeAlbum extends Macro {
+public class MakeAlbum extends BaseMacro {
   private static final String ERROR_START = "<span style='color: red;'> ";
   private static final String ERROR_END = "</span> ";
   private static final String USAGE =
@@ -82,9 +82,7 @@ public class MakeAlbum extends Macro {
     writer_ = writer;
     String relPath = "/images/";
     String absURL = Application.get().getConfiguration().getUrl(relPath);
-    File confFile = Application.get().getConfiguration().getFile();
-    
-    String imgPath = confFile.getAbsolutePath();
+    String imgPath = Application.get().getConfiguration().getFileStore();
     
     boolean isWindows=(imgPath.indexOf("\\")!=-1);
     

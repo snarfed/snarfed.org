@@ -1,4 +1,22 @@
-/* Copyright 2003 Ryan Barrett <snarfed@ryanb.org>
+/**
+ * Snarfed macros for SnipSnap
+ * http://snarfed.org/space/snipsnap+macros
+ * Copyright 2003-2004 Ryan Barrett <snarfed@ryanb.org>
+ *
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the Free
+ * Software Foundation; either version 2 of the License, or (at your option)
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+ * more details.
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple
+ * Place, Suite 330, Boston, MA 02111-1307 USA
+ * Copyright 2003-2004 Ryan Barrett <snarfed@ryanb.org>
  * This software is licensed under the GPL. See the LICENSE file for details.
  */
 package org.snarfed.snipsnap;
@@ -22,7 +40,7 @@ import org.snipsnap.app.Application;
 /**
  * Misc utilities for our SnipSnap macros.
  *
- * @author Ryan Barrett <ryan@barrett.name>
+ * @author Ryan Barrett <snarfed@ryanb.org>
  */
 public class Utility {
   private static String DEFAULT_FILE_STORE = "WEB-INF/files";
@@ -36,12 +54,15 @@ public class Utility {
    * application).
    */
   public static File getFilePath(Snip snip) {
-    String app;
-    try {
-      app = Application.get().getConfiguration().getFileStorePath();
-    } catch (NullPointerException e) {
-      app = DEFAULT_FILE_STORE;   // SnipSnap must not be running; use default
-    }
+    File app = new File(DEFAULT_FILE_STORE);
+
+    // TODO: getFilePath() is unhappy in 1.0b1. why?
+//     try {
+//       app = Application.get().getConfiguration().getFilePath();
+//     } catch (NullPointerException e) {
+//       // SnipSnap must not be running; use default
+//       app = new File(DEFAULT_FILE_STORE);
+//     }
 
     return new File(app, getSnipName(snip));
   }
@@ -213,7 +234,7 @@ public class Utility {
     // hack, to force snipsnap to show us a snip's attachments
     atxs.getAttachment("asdf");
 
-    if (atxs.empty()) {
+    if (atxs.isEmpty()) {
       throw new IllegalArgumentException(snipName + "has no attachments.");
     }
   }

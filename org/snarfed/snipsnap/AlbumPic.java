@@ -1,4 +1,22 @@
-/* Copyright 2003 Ryan Barrett <snarfed@ryanb.org>
+/**
+ * Snarfed macros for SnipSnap
+ * http://snarfed.org/space/snipsnap+macros
+ * Copyright 2003-2004 Ryan Barrett <snarfed@ryanb.org>
+ *
+ * This program is free software; you can redistribute it and/or modify it
+ * under the terms of the GNU General Public License as published by the Free
+ * Software Foundation; either version 2 of the License, or (at your option)
+ * any later version.
+ *
+ * This program is distributed in the hope that it will be useful, but WITHOUT
+ * ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or
+ * FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for
+ * more details.
+ *
+ * You should have received a copy of the GNU General Public License along with
+ * this program; if not, write to the Free Software Foundation, Inc., 59 Temple
+ * Place, Suite 330, Boston, MA 02111-1307 USA
+ * Copyright 2003-2004 Ryan Barrett <snarfed@ryanb.org>
  * This software is licensed under the GPL. See the LICENSE file for details.
  */
 package org.snarfed.snipsnap;
@@ -36,7 +54,7 @@ import org.snipsnap.render.macro.parameter.SnipMacroParameter;
  * where thumb_* are generated from the original pictures. The thumbnails are
  * only generated once.
  *
- * @author Ryan Barrett <ryan@barrett.name>
+ * @author Ryan Barrett <snarfed@ryanb.org>
  */
 public class AlbumPic extends SnipMacro {
   static final String THUMB_PREFIX = "thumb.";
@@ -58,7 +76,7 @@ public class AlbumPic extends SnipMacro {
       throws IllegalArgumentException, IOException {
     // for debugging
     try{
-    Snip snip = params.getSnip();
+    Snip snip = params.getSnipRenderContext().getSnip();
 
     // find and load target snip
     String imgSnipName = params.get(0);
