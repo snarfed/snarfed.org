@@ -3,4 +3,4 @@ org.snarfed.snipsnap.Attach
 org.snarfed.snipsnap.ShowAttachments
 org.snarfed.snipsnap.MakeAlbum
 org.snarfed.snipsnap.CurrentUser
-org.snarfed.snipsnap.CreateOrRegister
+org.snarfed.snipsnap.CreateBox

@@ -21,10 +21,9 @@
  */
 package org.snarfed.snipsnap;
 
-import org.radeox.macro.BaseMacro;
-import org.radeox.macro.parameter.MacroParameter;
-import org.radeox.macro.parameter.BaseMacroParameter;
 import org.snipsnap.app.Application;
+import org.snipsnap.render.macro.SnipMacro;
+import org.snipsnap.render.macro.parameter.SnipMacroParameter;
 import org.snipsnap.user.User;
 
 import java.io.IOException;
@@ -37,7 +36,7 @@ import java.io.PrintWriter;
  * @author Ryan Barrett
  */
 
-public class CreateOrRegister extends BaseMacro {
+public class CreateBox extends SnipMacro {
   private final String CREATE_FORM_OPEN = 
     "<form class=\"form\" action=\"../exec/edit\" method=\"get\">\n";
   private final String CREATE_FORM_CLOSE = "</form>\n";
@@ -52,25 +51,23 @@ public class CreateOrRegister extends BaseMacro {
     "<a href=\"/exec/register.jsp\"> register</a>?\n";
 
 
-
   public String getName() {
-    return "create-or-register";
+    return "create-box";
   }
 
   public String getDescription() {
-    return "If a user is logged in, a \"Create page\" text box is shown. If " +
-      "not, a message is shown with links to login or register.";
+    return "If a user is logged in, a \"Create page\" text box is shown. " +
+      "Otherwise, nothing is shown.";
   }
 
   public String[] getParamDescription() {
-    return new String[]{"none"};
+    return new String[] { "none" };
   }
 
-  public void execute(Writer writer, MacroParameter params)
+  public void execute(Writer writer, SnipMacroParameter params)
       throws IllegalArgumentException, IOException {
 
     writer.write(JAVASCRIPT);
-
 
     User user = Application.get().getUser();
     if (user != null && !user.getLogin().equals("Guest")) {
@@ -79,19 +76,5 @@ public class CreateOrRegister extends BaseMacro {
       writer.write(CREATE_TEXT_BOX);
       writer.write(CREATE_FORM_CLOSE);
     }
-  }
-
-
-
-  /* test main
-   */
-  public static void main(String[] args) throws IOException {
-    System.out.println("Calling execute...");
-
-    PrintWriter out = new PrintWriter(System.out, true);
-    BaseMacroParameter params = new BaseMacroParameter();
-
-    new CreateOrRegister().execute(out, params);
-    out.flush();
   }
 }
