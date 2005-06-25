@@ -1,7 +1,7 @@
 /**
  * Snarfed macros for SnipSnap
  * http://snarfed.org/space/snipsnap+macros
- * Copyright 2003-2004 Ryan Barrett <snarfed@ryanb.org>
+ * Copyright 2003-2005 Ryan Barrett <snarfed@ryanb.org>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the Free
@@ -25,6 +25,7 @@ import junit.framework.Test;
 import junit.framework.TestCase;
 import junit.framework.TestSuite;
 
+import java.util.Arrays;
 import java.util.Iterator;
 import java.io.File;
 import java.io.IOException;
@@ -61,31 +62,31 @@ public class UtilityTest extends TestCase {
 
   public void testSplit() {
     String[] tokens1 = {"a", "b", "c"};
-    assertEquals(tokens1, Utility.split("aXbXcX", 'X'));
+    assertTrue(Arrays.equals(tokens1, Utility.split("aXbXcX", 'X')));
 
     String[] tokens2 = {"a", "b", "c"};
-    assertEquals(tokens2, Utility.split("aXbXc", 'X'));
+    assertTrue(Arrays.equals(tokens2, Utility.split("aXbXc", 'X')));
 
     String[] tokens3 = {"a", "b", "c"};
-    assertEquals(tokens3, Utility.split("XaXbXc", 'X'));
+    assertTrue(Arrays.equals(tokens3, Utility.split("XaXbXc", 'X')));
 
     String[] tokens4 = {"a", "b", "c"};
-    assertEquals(tokens4, Utility.split("aXXbXXXc", 'X'));
+    assertTrue(Arrays.equals(tokens4, Utility.split("aXXbXXXc", 'X')));
 
     String[] tokens5 = {};
-    assertEquals(tokens5, Utility.split("XXX", 'X'));
+    assertTrue(Arrays.equals(tokens5, Utility.split("XXX", 'X')));
 
     String[] tokens6 = {"abc"};
-    assertEquals(tokens6, Utility.split("abc", 'X'));
+    assertTrue(Arrays.equals(tokens6, Utility.split("abc", 'X')));
 
     String[] tokens7 = {"a"};
-    assertEquals(tokens7, Utility.split("a", 'X'));
+    assertTrue(Arrays.equals(tokens7, Utility.split("a", 'X')));
 
     String[] tokens8 = {};
-    assertEquals(tokens8, Utility.split("X", 'X'));
+    assertTrue(Arrays.equals(tokens8, Utility.split("X", 'X')));
 
     String[] tokens9 = {};
-    assertEquals(tokens9, Utility.split("", 'X'));
+    assertTrue(Arrays.equals(tokens9, Utility.split("", 'X')));
   }
 
   public void testGetExtension() {
@@ -217,14 +218,5 @@ public class UtilityTest extends TestCase {
                               attach.getPath());
     snip.setAttachments(attachments);
     return snip;
-  }
-
-                             // helpers
-  private static void assertEquals(String[] arr1, String[] arr2) {
-    assertEquals(arr1.length, arr2.length);
-
-    for (int i = 0; i < arr1.length; i++) {
-      assertEquals(arr1[i], arr2[i]);
-    }
   }
 }

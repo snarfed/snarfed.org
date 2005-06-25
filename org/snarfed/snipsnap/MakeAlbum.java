@@ -1,4 +1,4 @@
-/* Copyright 2003 Maulik Shah <maulik@cs.stanford.edu>,
+/* Copyright 2003-2005 Maulik Shah <maulik@cs.stanford.edu>,
  *   Ryan Barrett <snarfed@ryanb.org>
  * This software is licensed under the GPL. See the LICENSE file for details.
  */
@@ -25,8 +25,9 @@ import org.snipsnap.app.Application;
 
 
 /**
- * A macro for SnipSnap (http://snipsnap.org/). Allows a user to specify
- * captions for pictures that they have uploaded.
+ * The "make-album" macro for SnipSnap (http://snipsnap.org/). Creates an
+ * album, with thumbnails and a slideshow, from a directory of pictures in the
+ * images/ subdirectory of your SnipSnap application.
  *
  * @author Ryan Barrett (snarfed@ryanb.org),
  *         Maulik Shah (maulik@cs.stanford.edu)

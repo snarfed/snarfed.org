@@ -1,7 +1,7 @@
 /**
  * Snarfed macros for SnipSnap
  * http://snarfed.org/space/snipsnap+macros
- * Copyright 2003-2004 Ryan Barrett <snarfed@ryanb.org>
+ * Copyright 2003-2005 Ryan Barrett <snarfed@ryanb.org>
  *
  * This program is free software; you can redistribute it and/or modify it
  * under the terms of the GNU General Public License as published by the Free
@@ -43,6 +43,7 @@ public class AllTests extends TestSuite {
     suite.addTestSuite(AlbumPicTest.class);
     suite.addTestSuite(ShowAttachmentsTest.class);
     suite.addTestSuite(AttachTest.class);
+    suite.addTestSuite(IndexSomeTest.class);
     return suite;
   }
 }
