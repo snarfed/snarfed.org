@@ -41,8 +41,12 @@ jar: compile
 
 dist: clean
 	ln -s . $(PKGNAME)
-	tar cjhf $(PKGNAME).tar.bz2 --exclude $(PKGNAME).tar.bz2 --exclude .svn \
-	  --exclude $(PKGNAME)/$(PKGNAME) $(PKGNAME)
+	tar cjhf $(PKGNAME).tar.bz2 \
+	  --exclude .svn \
+	  $(addprefix --exclude , $(wildcard *.patch)) \
+	  --exclude $(PKGNAME).tar.bz2 \
+	  --exclude $(PKGNAME)/$(PKGNAME) \
+	  $(PKGNAME) 
 	rm $(PKGNAME)
 
 reload:
