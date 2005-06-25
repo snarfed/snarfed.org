@@ -11,10 +11,10 @@ The SnipSnap web site is located at:
 To install and use these macros, place the jar file in your SnipSnap
 application's WEB-INF/lib/ subdirectory and restart SnipSnap.
 
-For example, if SnipSnap is installed in /usr/share/snipsnap-0.4.2a, and your
+For example, if SnipSnap is installed in /usr/share/snipsnap-1.0b1, and your
 application is called foo, place this jar file in the directory:
 
-  /usr/share/snipsnap-0.4.2a/applications/foo/WEB-INF/lib/
+  /usr/share/snipsnap-1.0b1/applications/foo/WEB-INF/lib/
 
 
 If you've downloaded the source, you'll need to edit the Makefile and specify

@@ -34,9 +34,11 @@
 package org.snarfed.snipsnap;
 
 import org.radeox.util.i18n.ResourceManager;
-import org.snipsnap.render.macro.parameter.SnipMacroParameter;
 import org.snipsnap.render.macro.ListOutputMacro;
+import org.snipsnap.render.macro.list.Linkable;
+import org.snipsnap.render.macro.parameter.SnipMacroParameter;
 import org.snipsnap.snip.Snip;
+import org.snipsnap.snip.SnipLink;
 import org.snipsnap.snip.SnipSpaceFactory;
 import org.snipsnap.util.collection.Collections;
 import org.snipsnap.util.collection.Filterator;
@@ -94,25 +96,35 @@ public class IndexSome extends ListOutputMacro {
     }
 
     public boolean filter(Object obj) {
-      String snipName = ((Snip) obj).getName();
+      String name = ((Snip) obj).getName();
 
       // if this is a blog post, merge its date with its post number, so that
-      // it's included under "start"
-      if (snipName.endsWith("/1"))
-        snipName = snipName.substring(0, snipName.length() - 2) + "-1";
+      // it's considered a child of "start"
+      if (name.endsWith("/1"))
+        name = name.substring(0, name.length() - 2) + "-1";
 
-      // is this snip in the list?
-      if (parents.contains(snipName))
-        return false;
+      // separate into the snip's name and its parent's name
+      String snipName = null;
+      String parentName = null;
+      int lastSlash = name.lastIndexOf("/");
 
-      // is this snip's parent in the list?
-      int lastSlash = snipName.lastIndexOf("/");
-      if (lastSlash >= 0 &&
-          parents.contains(snipName.substring(0, lastSlash)))
+      if (lastSlash >= 0) {
+        parentName = name.substring(0, lastSlash);
+        snipName = name.substring(lastSlash + 1);
+      } else {
+        snipName = name;
+      }
+
+      // don't show comments
+      if (snipName.startsWith("comment-"))
+        return true;
+
+      // is this snip or its parent in the list?
+      if (parents.contains(name) || parents.contains(parentName))
         return false;
 
       // if the user specified /, is this a top-level snip?
-      if (parents.contains(ROOT_STRING) && lastSlash == -1)
+      if (parents.contains(ROOT_STRING) && parentName == null)
         return false;
 
       return true;
@@ -124,6 +136,7 @@ public class IndexSome extends ListOutputMacro {
 //                (parent != null && parents.contains(parent.getName())));
     }
   }
+
 
   public void execute(Writer writer, SnipMacroParameter params)
     throws IllegalArgumentException, IOException {
@@ -137,10 +150,16 @@ public class IndexSome extends ListOutputMacro {
     String[] parents = Utility.split(params.getContent(), '\n');
     ParentFilterator filter = new ParentFilterator(parents);
 
-    final Snip snip = params.getSnipRenderContext().getSnip();
+    // can't just pass the snip as the Linkable; it renders wrong
+    final String link = SnipLink.getSpaceRoot() + "/" + 
+      params.getSnipRenderContext().getSnip();
+
+    final Linkable linkToSnip = new Linkable() {
+        public String getLink() { return link; }
+      };
 
     output(writer,
-           snip,
+           linkToSnip,
            ResourceManager.getString("i18n.messages", "macro.index.all.snips"),
            Collections.filter(SnipSpaceFactory.getInstance().getAll(), filter),
            ResourceManager.getString("i18n.messages", "macro.index.none"),

@@ -47,6 +47,8 @@ public class IndexSomeTest extends TestCase {
   private static final String CHILD1 = "parent/child1";
   private static final String CHILD2 = "parent/child2";
   private static final String GRANDCHILD = "parent/child2/grandchild2";
+  private static final String COMMENT = "parent/child2/comment-grandchild2-1";
+  private static final String BLOG_POST = "start/2005-06-25/1";
   private ArrayList snips;
 
   public IndexSomeTest(String name) {
@@ -82,6 +84,8 @@ public class IndexSomeTest extends TestCase {
     snips.add(new MockSnipImpl(CHILD1));
     snips.add(new MockSnipImpl(CHILD2));
     snips.add(new MockSnipImpl(GRANDCHILD));
+    snips.add(new MockSnipImpl(COMMENT));
+    snips.add(new MockSnipImpl(BLOG_POST));
 
     // namespaces are currently handled by slashes in the snip name. if/when
     // they switch to using parent/child, use the tests below instead.
@@ -177,11 +181,13 @@ public class IndexSomeTest extends TestCase {
     assertEquals(list, filter(new String[] { IndexSome.ROOT_STRING, CHILD2 }));
   }
 
-  public void testBlogPostUnderStart() throws Exception {
-    String blogPost = "start/2005-06-25/1";
-    snips.add(new MockSnipImpl(blogPost));
+  public void testComment() throws Exception {
+    List list = new ArrayList();  // empty
+    assertEquals(list, filter(COMMENT));
+  }
 
-    List list = Arrays.asList(new String[] { blogPost });
+  public void testBlogPostUnderStart() throws Exception {
+    List list = Arrays.asList(new String[] { BLOG_POST });
     assertEquals(list, filter("start"));
   }
 
