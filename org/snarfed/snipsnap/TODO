@@ -1,6 +1,0 @@
-- switch from Utility.split() to org.snipsnap.util.collection.Collections.split()
-- clean up MakeAlbum
-- test MakeAlbum
-- test CurrentUser
-- test CreateOrRegister
-- put Imglink back in
