@@ -1,0 +1,73 @@
+pine remove trailing quote patch
+[![pine.png](/space/pine.png)](http://washington.edu/pine/)
+
+For the impatient:  
+Patch for Pine
+[4.60](/space/remove-trailing-quote.patch.4.60),
+[4.61](/space/remove-trailing-quote.patch.4.61),
+[4.63](/space/remove-trailing-quote.patch.4.63),
+[4.64](/space/remove-trailing-quote.patch.4.64)  
+[Pine source](http://www.washington.edu/pine/getpine/unix.html)  
+[FAQ on patching
+pine](http://www.math.washington.edu/~chappa/pine/faq/index.html)
+
+I use [Pine](http://www.washington.edu/pine/) as my email client, and I really
+like it. It's fast, simple, full-featured, and very keyboardable. However,
+nothing's perfect, even Pine.
+
+This patch adds an option to Pine that removes _trailing quotes_ from messages
+when you send them, or when you hit a keystroke. What's a trailing quote, you
+ask? It's best described by example. The last three lines in this email are a
+trailing quote:
+
+
+    On Fri, 4 Jun 2004, Jane Doe wrote:
+
+
+    > Thanks for the invite! Should I bring anything?
+
+
+    No, I have everything I need. Thanks though!
+
+
+    > I'll see you soon...
+
+    >
+
+    > -Jane
+
+I wrote this patch to make it easier to observe proper netiquette when quoting.
+If you want to quote the smallest relevant piece of an email, you often need to
+delete a significant amount of quoted text. This is especially true if you
+correspond with people who top-post. (ick!) This patch automates the drudgery of
+trimming that excess quoted text.
+
+For more on the top- vs. bottom-post debate, see:
+[http://catb.org/~esr/jargon/html/T/top-post.html](http://catb.org/~esr/jargon/html/T/top-post.html)
+[http://www.cs.tut.fi/~jkorpela/usenet/brox.html](http://www.cs.tut.fi/~jkorpela/usenet/brox.html)
+
+Also, a few recent email clients, such as [GMail](http://gmail.com/), try to use
+quoted text to do smart things. This patch can make your emails more readable in
+those clients. (I've discussed my thoughts on [gmail vs pine](/space/gmail vs
+pine) at length. :P)
+
+Feel free to [email me](http://ryan.barrett.name/contact.html) with feedback or
+bug reports.
+
+_Known bug_: Whole quotes are not detected correctly if you start your email
+with (C)ompose instead of (R)eply. This is usually encountered when you reply to
+an email, postpone the reply, then resume and attempt to send.
+
+See also:
+
+  * [pine delete attachments on save patch](/space/pine delete attachments on
+save patch)
+
+  * [pine flowed-text patch](/space/pine flowed-text patch)
+
+  * [pine reply-all patch](/space/pine reply-all patch)
+
+  * [port\_pine\_patch](/space/port_pine_patch)
+
+  * [gmail vs pine](/space/gmail vs pine)
+

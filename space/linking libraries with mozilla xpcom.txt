@@ -1,0 +1,37 @@
+linking libraries with mozilla xpcom
+[![/space/mozilla.png](/space/mozilla.png)](http://mozilla.org/mozilla1.x/)[![ff_icon.png](/space/ff_icon.png)](http://mozilla.org/firefox/)[![/space/camino.png](/space/camino.png)](http://mozilla.org/camino/)[![/space/thunderbird.jpg](/space/thunderbird.jpg)](http://mozilla.org/thunderbird/)[![/space/bugzilla.jpg](/space/bugzilla.jpg)](http://bugzilla.org/)
+
+I've
+been doing some development recently on the [Mozilla](http://mozilla.org/)
+[XPCOM](http://mozilla.org/projects/xpcom/) platform, and it's pretty cool.
+However, I ran into a small snag when I tried to build a [C++
+XPCOM](http://books.mozdev.org/html/mozilla-chp-8-sect-2.html#mozilla-CHP-8-SECT-2.5)
+component that linked with external libraries (specifically the X11 libraries).
+
+Mozilla provides a way to build XPCOM components by hooking into their
+Makefiles, which is great...except that adding extra libraries to LIBS didn't
+work. They were just ignored. If you need to link with external libraries, the
+trick is to add them to EXTRA\_DSO\_LDOPTS, _not_ to LIBS.
+
+As an example, I needed to add the flags **-lX11 -L/usr/X11R6/lib** to the link
+stage. I used the [example XPCOM
+Makefile](http://books.mozdev.org/html/mozilla-chp-8-sect-2.html#mozilla-CHP-8-SECT-2.6.1),
+and edited the EXTRA\_DSO\_LDOPTS line to look like this:
+
+
+    EXTRA\_DSO\_LDOPTS += \
+
+      $(MOZ\_COMPONENT\_LIBS) -lX11 -L/usr/X11R6/lib
+
+Voila, it worked!
+
+See also:
+
+  * [trigger scripts for mozilla xpi packages](/space/trigger scripts for
+mozilla xpi packages)
+
+  * [palo alto library amazon greasemonkey](/space/palo alto library amazon
+greasemonkey)
+
+  * [change firefox's saved passwords](/space/change firefox)
+

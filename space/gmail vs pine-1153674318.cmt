@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>gmail vs pine-32</title>
+<ipaddress></ipaddress>
+<author>ryan</author>
+<link>/space/ryan</link>
+<email></email>
+<source></source>
+<pubDate>1153674318</pubDate>
+<description>
+thanks andreas! there are also solutions that move emails into GMAIL using POP, or at least bounce them, so that the original sender, recipient, subject, and other headers remain intact.&lt;p class="paragraph"/&gt;For example, check out
+&lt;span class="nobr"&gt;&lt;a href="http://www.marklyon.org/"&gt;Mark Lyon&lt;/a&gt;&lt;/span&gt;'s
+&lt;span class="nobr"&gt;&lt;a href="http://www.marklyon.org/gmail/"&gt;Gmail Loader&lt;/a&gt;&lt;/span&gt;,
+among
+&lt;span class="nobr"&gt;&lt;a href="http://www.google.com/search?q=import+old+gmail"&gt;others&lt;/a&gt;&lt;/span&gt;.
+</description>
+</item>

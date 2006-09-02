@@ -1,0 +1,108 @@
+teaching beginning programming with Python
+[![/space/python-new.png](/space/python-new.png)](http://python.org/)[![/space/python-old.png](/space/python-old.png)](http://python.org/)
+
+I'm
+a software engineer. I've been programming for a long time - in
+[school](http://www.stanford.edu/), at [work](http://google.com/), and for
+[fun](/space/software). While I was in school, I also taught computer science as
+a TA for three years.
+
+I TAed a [mid-level class](http://cs107.stanford.edu/), though, so by the time I
+met the students, they didn't just know how to program, they'd also mastered
+more in-depth concepts like pointers, recursion, computer architecture, and
+algorithms.
+
+Last Sunday, for the first time, I had the chance to teach someone to program
+who'd never written a line of code before. It was very, very different from
+TAing. It was also a _lot_ of fun.
+
+I was inspired by [David Bau](http://davidbau.com/)'s [Haaarg,
+world!](http://davidbau.com/archives/2005/07/29/haaarg_world.html), so I decided
+to use [Python](http://python.org/) because of its simple syntax, plain-english
+keywords, and interactive shell. We started in the shell with a few **print**
+statements.
+
+
+    >>> print 'hi'
+
+    hi
+
+    >>> print 3
+
+    3
+
+    >>> print 2 + 2
+
+    4
+
+    >>> print 'hi', 2
+
+    hi 2
+
+We quickly covered strings, integers, and basic arithmetic. We opened a .py file
+and wrote a Python script, ran it, saw the output, and cheered. Hello, world!
+
+
+    print 'Hello, world!'
+
+We moved on to variables, which we thought about as little boxes in memory, with
+names, that could hold things. We used **input()** to ask the user's name,
+stored it in a variable, and said hi. We did more arithmetic, this time with
+variables instead of integer constants.
+
+Variables were a little tricky, but not too bad. Even better, they were the
+worst of it. String operations, expressions, conditionals, loops, and other
+control flow came easily. Even libraries and import statements didn't cause much
+trouble.
+
+Other than variables, the only speed bump was = for assignment vs. == for
+equality testing. It's tough for first-timers to understand why they need to use
+different operators. Guido actually mentioned this himself in one of his article
+about teaching with Python. I tried to find a link, but no such luck.
+
+In the end, we had a working copy of that old standard, the number guessing
+game. Check it out!
+
+
+    import random
+
+    play\_again='Y'
+
+
+    while play\_again=='Y':
+
+        print "pick a number"
+
+        answer=random.randint(0,100)
+
+        guess=input()
+
+        num\_guesses=1
+
+        while guess!=answer:
+
+            num\_guesses=num\_guesses+1
+
+            if guess<=answer:
+
+                print "higher than ", guess
+
+            if guess>=answer:
+
+                print "lower than ", guess
+
+            if guess>=answer-2 and guess<=answer+2:
+
+                print "almost"
+
+            guess=input()
+
+
+        print "great! The correct number was ", answer
+
+        print "your number of guesses was ", num\_guesses
+
+        print "play again? 'Y'/'N'"
+
+        play\_again=input()
+

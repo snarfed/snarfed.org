@@ -1,0 +1,54 @@
+referrer spam
+[![/space/spam.jpg](/space/spam.jpg)](/space/referrer+spam)[Referrer
+spam](http://www.spywareinfo.com/articles/referer_spam/) - or by Apache's
+original misspelling, _referer_ spam - has been a problem at snarfed.org for
+years. My [referrer log statistics](http://ryan.barrett.name/summary/) are
+publicly accessible, so spammers target this site with fake referrers, hoping
+that they'll be linked from the pages that [Summary](http://summary.net/)
+generates.
+
+There are a number of approaches to fighting referrer spam, but so far, no
+silver bullet. Here's what I do right now.
+
+  * I maintain a hand-edited blacklist of known spammers' sites. It's far from
+ideal, but it works. I use [Summary](http://summary.net/) for web analytics, so
+you can find my blacklist in my
+[summary.conf](http://ryan.barrett.name/summary.conf) file. If you're fighting
+referrer spam, feel free to borrow it. (I used to use
+[webalizer](http://ryan.barrett.name/webalizer/); my
+[webalizer.conf](http://ryan.barrett.name/webalizer.conf) is also available, but
+it's not maintained.)
+
+  * I've written a [webalizer nofollow patch](/space/webalizer+nofollow+patch)
+that adds support for the popular new
+[nofollow](http://www.google.com/googleblog/2005/01/preventing-comment-spam.html)
+tag.
+
+  * I _used to_ use
+[iptables](http://www.google.com/url?sa=X&start=1&q=http://www.netfilter.org/)
+to blacklist known spammers' IP addresses and subnets, such as marketscore.com,
+bezeqint.net, and ac.at. See my [referrer spam iptables
+rules](http://ryan.barrett.name/referrer-spam-iptables.txt).
+
+  * I'd eventually like to use existing blacklist and referrer spam tools, such
+as [Jay Allen's](http://www.jayallen.org/)
+[MT-Blacklist](http://www.jayallen.org/comment_spam/). However, most of those
+tools are specific to [MovableType](http://www.sixapart.com/movabletype/) and
+[Apache](http://apache.org/), and this site uses [SnipSnap](/space/SnipSnap)
+instead.
+
+  * A better approach would be to write tools that operate directly on referrer
+logs, so they can be used with any web server or CMS and any web analytics
+package. [Tony Buser](http://juju.org/)'s
+[derefspam.pl](http://www.juju.org/archives/2005/01/21/derefspam) script is a
+good first step. I'd like to extend it to use DNSBLs and RBLs like
+[Spamhaus](http://www.spamhaus.org/xbl/index.lasso),
+[BSB](http://bsb.empty.us/), [Blitzed](http://opm.blitzed.org/info), and
+[SURBL](http://www.surbl.org/faq.html).
+
+See also:
+
+  * [geocoding](/space/geocoding)
+
+  * [webalizer nofollow patch](/space/webalizer nofollow patch)
+

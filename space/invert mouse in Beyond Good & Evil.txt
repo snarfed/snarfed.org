@@ -1,0 +1,74 @@
+invert mouse in Beyond Good &amp; Evil
+[![/space/two.jpg](/space/two.jpg)](http://beyondgoodevil.com/)[![/space/box.jpg](/space/box.jpg)](http://beyondgoodevil.com/)[![/space/explosion.jpg](/space/explosion.jpg)](http://beyondgoodevil.com/)
+
+_If you like Beyond Good & Evil, you might also like [my
+writeup](/space/2004-11-11) and the [soundtrack](/space/Beyond Good & Evil
+soundtrack)._
+
+**Problem**
+
+I recently played the game Beyond Good & Evil, and I [loved every
+minute](/space/2004-11-11) of it. However, it has [a
+bug](http://forums.ubi.com/eve/ubb.x?a=tpc&s=400102&f=401101532&m=286101532&r=396101532#396101532)
+that prevents inverting the mouse input, in both "look" and "camera" modes.
+
+I'm very used to inverting the mouse in games, so I looked for a fix. Anything
+that can invert mouse input on the y axis, and works with
+[DirectInput](http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dninput/html/diov.asp)
+would work. After a lot of work, including posts to many forums, and even a
+[Google Answers
+question](http://answers.google.com/answers/threadview?id=408579), I found a few
+solutions.
+
+**Solutions**
+
+If you have Logitech MouseWare, and you're comfortable editing the registry, try
+Ashley Ings'
+[instructions](/comments/invert+mouse+in+Beyond+Good+%26+Evil#comment-invert%20mouse%20in%20Beyond%20Good%20&%20Evil-3),
+originally posted [on the Logitech
+forums](http://forums.logitech.com/pe/forums/displaypost.jsp?postID=10125316).
+It works with both Logitech and non-Logitech mice.
+
+Otherwise, [Moritz Franckenstein](http://www.maf-soft.de/) has written a small,
+simple mouse driver that inverts the y axis. If you'd like it, [drop him a
+line](http://www.maf-soft.de/#contact).
+
+**Background**
+
+Before Moritz contacted me, I'd done a fair amount of research on this. When I
+got to the point where I needed to write a Windows device driver, I called it
+quits. That was a too much of a time investment, even for me. :P
+
+I knew I needed either a setting or registry entry in Windows XP (or
+[DirectX](http://www.microsoft.com/windows/directx/default.aspx)) that controls
+mouse orientation per-axis, or a program that runs in the background and inverts
+the mouse input (per-axis).
+
+I first looked through the windows mouse control panel, the registry, etc., and
+didn't found anything.
+
+I tried installing [Logitech's
+MouseWare](http://www.logitech.com/index.cfm?countryid=19&languageid=1&page=downloads/software&CRID=1793&contentid=6003)
+and [Advanced Settings
+Utility](http://www.logitech.com/index.cfm/downloads/software/US/EN,CRID=1793,contentid=6003,OSID=1,softwareid=6819),
+which lets you change the mouse's orientation, and has effect in
+DirectInput-based apps (close!), but doesn't let you change it per-axis. I also
+tried [Kensington MouseWorks](http://www.kensington.com/html/1461.html), but I
+don't have a Kensington mouse, so I couldn't use it.
+
+I tried a number of utilities that let you drive the mouse pointer with a
+joystick, and can control the orientation of each axis independently...but the
+ones I tried don't have any effect when you use the mouse itself.
+
+Finally, I wrote a
+[script](/space/invert_mouse.ahk) for
+[AutoHotKey](http://autohotkey.com/), a pretty sophisticated program that lets
+you script and remap mouse, keyboard, and joystick input. It inverts the mouse
+per-axis successfully, but doesn't affect DirectInput apps.
+
+See also:
+
+  * [thinkpad keys in firefox](/space/thinkpad keys in firefox)
+
+  * [windows media player database](/space/windows media player database)
+

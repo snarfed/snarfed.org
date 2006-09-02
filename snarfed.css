@@ -1,0 +1,286 @@
+/**
+ * snarfed.org stylesheet.
+ * @author Ryan Barrett <snarfed@ryanb.org>
+ */
+
+
+input, select, textarea {
+  font-family: verdana, arial, sans-serif;
+  border: 1px solid #036;
+  font-size: 13;
+  margin: 5px;
+}
+
+table {
+  empty-cells: show;
+}
+
+input#searchbox {
+  margin: 0px;
+}
+
+textarea {
+  width: 100%;
+  overflow: auto;
+  wrap: virtual;
+}
+
+img {
+  border: none;
+}
+
+a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #036;
+}
+
+a:link    { color: #036; }
+a:visited { color: #467; }
+a:hover   { color: #07D; }
+/*#a:active { color: #6CF; }*/
+
+#page-buttons a:hover { color: #07D; }
+#page-buttons a:active { color: #07D; }
+
+.error-position {
+  background-color: #FAA;
+  color: inherit;
+}
+
+/* for debugging */
+/* * { border: 1px solid green; } */
+
+body {
+  font-family: verdana, arial, sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 16px;
+  color: #222;
+  background-color: #EEE;
+  margin: 0px;
+  padding: 0px;
+}
+
+div#body {
+  width: 600px;
+  margin: 0px;
+  padding: 10px;
+  background-color: #EEE;
+}
+
+div#page-title {
+  display: block;
+  background-image: url("/stylized-grass.jpg");
+  background-repeat: no-repeat;
+  height: 75px;
+  margin: 0px;
+  padding: 10px;
+  color: #036;
+  background-color: #FFF;
+  background-position: 0px -40px;
+}
+
+a#page-title {
+ font-size: 24px;
+ font-weight: bold;
+}
+
+div#page-buttons {
+  display: block;
+  padding: 5px;
+  text-decoration: bold;
+  text-align: right;
+  color: #FFF;
+  background-color: #036;
+}
+
+div#page-buttons a {
+  color: #FFF;
+}
+
+div#page-content {
+//  display: block;
+//  position: absolute;
+  left: 10px;
+  margin: 0px;
+  padding: 10px;
+  padding-left: 145px;
+  // min-width instead of width for IE
+  min-width: 445px;
+  background-color: #FFF;
+}
+
+div#page-portlet-1 
+{
+//  display: block;
+ position: absolute;
+//  z-index: 1;
+  width: 110px;
+  left: 10px;
+  padding: 10px;
+  background-color: #EEE;
+  color: #000;
+  border: 1px solid #036;
+  border-top: none;
+  -moz-border-radius-bottomleft: 15px;
+  -moz-border-radius-bottomright: 15px;
+}
+
+div#page-portlet-1 input {
+  width: 108px;
+}
+
+.snip-title {
+  display: table;
+  width: 100%;
+  text-align: left;
+  padding: 0px;
+}
+
+.snip-name, .blog-date {
+  font-weight: bold;
+  width: 100%;
+  color: #333;
+  padding-bottom: 4px;
+  border-bottom: 1px solid #036;
+}
+
+.snip-name { font-size: 19px; }
+.blog-date { font-size: 16px; }
+
+.snip-buttons {
+  border: 0;
+  float: right;
+  font-size: 10px;
+  text-align: right;
+}
+
+.snip-post-comments {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+div.comment {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+div#comment-input {
+  display: none;
+}
+
+h2.comment-name {
+  font-size: 16px;
+  margin: 5px;
+}
+
+div.comment-content {
+  margin: 5px;
+  margin-left: 20px;
+}
+
+div#ryan {
+  background-color: #EEE;
+  border: 1px solid #8AD;
+  -moz-border-radius: 15px;
+}
+
+.preview { background-color: #EEE; }
+
+.bold { font-weight: bold; }
+.italic { font-style: italic; }
+
+img {
+  padding: 1px;
+}
+
+h3 {
+  color: #036;
+  background-color: inherit;
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 16px;
+}
+
+blockquote { font-style: italic; }
+
+pre {
+  margin: 4px;
+  padding: 5px;
+  background-color: #EEE;
+  border: 1px dotted #036;
+  font-family: courier, courier new, monospace;
+  line-height: 100%;
+  white-space: pre;
+  width: 98%;
+  overflow: auto;
+}
+
+code {
+  color: #024;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+
+// img.left {
+//   display: block;
+//   left: 0px;
+// }
+// 
+// img.right {
+//   display: block;
+//   right: 0px;
+// }
+// 
+// img.center { text-align: center; }
+// img.float-left {
+//   float: left;
+//   margin: 10px;
+// }
+// img.float-right {
+//   float: right;
+//   margin: 10px;
+// }
+
+// .java-keyword {
+//   font-weight: bold;
+//   color: #00A;
+// }
+// .java-object { color: #008; }
+// .java-quote { color: #0a0; }
+// .xml-keyword { font-weight: bold; }
+// .xml-tag { color: #00a; }
+// 
+// /* special formatting of a wiki table */
+// .wiki-table {
+//   empty-cells: show;
+//   width: 100%;
+//   max-width: 100%;
+// }
+// 
+// .wiki-table td {
+//   border-top: 1px solid #036;
+//   padding: 4px;
+// }
+// 
+// .wiki-table th {
+//   border-top: 1px solid #036;
+//   text-align: left;
+//   font-weight: bold;
+//   color: #FFF;
+//   background-color: #013;
+// }
+// 
+// .list-title {
+//   font-weight: bold;
+// }
+// 
+// .list ul {
+//   list-style-type: none;
+// }
+

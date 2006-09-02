@@ -1,0 +1,90 @@
+thinkpad keys in firefox
+![/space/thinkpad_keys.jpg](/space/thinkpad_keys.jpg)
+
+I use a [Thinkpad
+T43](http://www.pc.ibm.com/us/notebooks/thinkpad/t-series/index.html), and I
+love it. Along with other Thinkpads and [IBM
+keyboards](http://www-132.ibm.com/webapp/wcs/stores/servlet/ProductDisplay?partNumber=28L3644),
+it has a couple little keys above the arrow keys that go "back" and "forward" in
+your browser. At least, in Windows IE. Shockingly, they don't work with
+[Firefox](http://mozilla.org/products/firefox/) (in Linux) out of the box.
+
+**Update**: Rob Mayoff's
+[howto](http://dqd.com/~mayoff/notes/thinkpad/dqdnavkeys/), originally for
+[Mozilla](http://mozilla.org/products/mozilla1.x/), now includes Firefox. He's
+done most of the work in a package that you can install with a single click. If
+you just want your thinkpad keys to work already, [follow his
+howto](http://dqd.com/~mayoff/notes/thinkpad/dqdnavkeys/).
+
+Otherwise, here's the recipe for Firefox, versions 0.8 through 1.0. (It probably
+works with earlier and later versions too, but no guarantees.)
+
+First, you need to map the keys to X keysyms. There are in-depth instructions
+[on the linux-thinkpad mailing
+list](http://mailman.linux-thinkpad.org/pipermail/linux-thinkpad/2003-December/014440.html),
+but all you need to do is add these two lines to ~/.Xmodmap:
+
+
+    keycode 234 = F19
+
+    keycode 233 = F20
+
+and then reload it:
+
+
+    $ xmodmap ~/.Xmodmap
+
+Now, you need to perform surgery on one of the jar files that Firefox uses to
+configure itself. In the chrome/ subdirectory of your Firefox directory, unpack
+the browser.jar file like so:
+
+
+    $ cd firefox/chrome
+
+    $ unzip browser.jar
+
+Fire up your favorite text editor and open the content/browser/browser.xul file.
+In the **<keyset id="mainKeyset">** section, find these lines:
+
+
+    <key id="goBackKb"  keycode="VK\_LEFT"
+
+         command="Browser:Back" modifiers="alt"/>
+
+    <key id="goForwardKb"  keycode="VK\_RIGHT"
+
+         command="Browser:Forward" modifiers="alt"/>
+
+...and add these two lines immediately after them:
+
+
+    <key id="goBackKb"  keycode="VK\_F19"
+
+         command="Browser:Back"/>
+
+    <key id="goForwardKb"  keycode="VK\_F20"
+
+         command="Browser:Forward"/>
+
+Repackage browser.jar, like so:
+
+
+    $ zip -rD0 browser.jar content/browser/
+
+If you weren't working in your firefox/chrome directory, copy the new
+browser.jar over the existing one in firefox/chrome.
+
+Restart Firefox, and you should be set! If not, feel free to [email
+me](http://ryan.barrett.name/contact.html), and I'll try to help.
+
+See also:
+
+  * [switch control and caps lock](/space/switch control and caps lock)
+
+  * [emacs keybindings in firefox](/space/emacs keybindings in firefox)
+
+  * [change firefox's saved passwords](/space/change firefox)
+
+  * [control arrow keys in rxvt, tcsh, and emacs](/space/control arrow keys in
+rxvt, tcsh, and emacs)
+

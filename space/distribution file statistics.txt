@@ -1,0 +1,141 @@
+distribution file statistics
+I've recently packaged and released a few small programs, and I spent a little
+time thinking about what files to include. If you've used any \*nix OS before,
+the following shell session will look very familiar:
+
+
+    heaven:~> tar xzvf foo-1.2.3.tar.gz
+
+
+
+    heaven:~> ls foo-1.2.3/
+
+    bin     configure  doc      include  Makefile  src
+
+    build   COPYING    etc      INSTALL  MANIFEST  test
+
+    config  COPYRIGHTS HISTORY  lib      README    UPDATE
+
+
+
+    heaven:~>
+
+If you haven't used \*nix much, this is a typical list of files and directories
+that a program comes with. Most programs have a README file. Other common files
+include CHANGELOG, NEWS, and AUTHORS. Also, some programs have different names
+for the same type of file, such as LICENSE, COPYING, and COPYRIGHT.
+
+I was curious to see how common each file is, so I looked at many of the
+programs that ship with RedHat 9 and calculated some basic statistics. Out of
+412 programs total, here's the frequency of each file, grouped by type:
+
+FilenamePercent of projects with this filePercent of projects with this _type_
+of file
+
+**README****73%****75%**
+
+MANUAL1%
+
+USAGE0%
+
+**COPYING****49%****59%**
+
+LICENSE5%
+
+LICENCE1%
+
+License0%
+
+COPYRIGHT3%
+
+Copyright2%
+
+**ChangeLog****41%****56%**
+
+CHANGES9%
+
+Changelog1%
+
+CHANGELOG1%
+
+Changes0%
+
+changelog0%
+
+NOTES1%
+
+RELNOTES1%
+
+VERSION1%
+
+RELEASE0%
+
+**NEWS****39%****42%**
+
+ANNOUNCE2%
+
+WHATSNEW0%
+
+WhatsNew0%
+
+announce0%
+
+**AUTHORS****33%****42%**
+
+THANKS5%
+
+CREDITS3%
+
+MAINTAINERS0%
+
+**TODO****24%****24%**
+
+ToDo0%%
+
+**INSTALL****12%**
+
+Install0%
+
+**BUGS****5%****7%**
+
+PROBLEMS1%
+
+Problems0%
+
+TROUBLESHOOTING0%
+
+FAQ4%4%
+
+HACKING2%2%
+
+HISTORY1%1%
+
+PROJECTS1%1%
+
+It's not surprising to see that README is by far the most common file. However,
+I was surprised at the number of different names for the same types of files,
+especially for license and changelog types of files. However, it's reassuring
+that the most common names, COPYING and ChangeLog respectively, are used 90% and
+80% of the time. For the license files specifically, COPYING is the [GNU
+standard](http://www.gnu.org/licenses/gpl-howto.html). (Personally, I prefer the
+more straightforward LICENSE.)
+
+Judging from this lineup, a de facto standard set of files would include README,
+COPYING, ChangeLog, NEWS, and for larger projects, AUTHORS.
+
+Also, note that the total percentages for each type of file don't all add up.
+This is due to rounding.
+
+This was inspired by [Eric Raymond](http://www.catb.org/~esr/)'s new book [The
+Art of Unix Programming](http://www.catb.org/~esr/writings/taoup/), which
+discusses best practices for releasing Open Source software. The [good
+distribution-making
+practice](http://en.tldp.org/HOWTO/Software-Release-Practice-HOWTO/distpractice.html)
+section of his release practices HOWTO is also very relevant.
+
+See also:
+
+  * [software](/space/software)
+
+  * [patches](/space/software#patches)
+

@@ -1,0 +1,32 @@
+switch control and caps lock
+![/space/sunkeys.jpg](/space/sunkeys.jpg)[Sun
+keyboards](http://www.sunstuff.org/hardware/components/keyboards/) have a few
+differences from normal 101-key keyboards. One is that the locations of the left
+Control and Caps Lock keys are switched. If you use the Control key often, this
+makes a big difference, ergonomically. Here's how to switch the left Control and
+Caps Lock keys on normal keyboards, on any \*nix platform that runs X Windows.
+
+Add these two lines to ~/.Xmodmap:
+
+
+    ! Switch caps lock and (left) control
+
+    remove Lock = Caps\_Lock
+
+    remove Control = Control\_L
+
+    keysym Control\_L = Caps\_Lock
+
+    keysym Caps\_Lock = Control\_L
+
+    add Lock = Caps\_Lock
+
+    add Control = Control\_L
+
+Now load the changes into X:
+
+
+    $ xmodmap ~/.Xmodmap
+
+Voila! You're now one step closer to Sun keyboard bliss. :P
+

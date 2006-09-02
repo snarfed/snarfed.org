@@ -1,0 +1,16 @@
+2003-07-18
+
+### It's Live!
+
+Hi, and welcome to [snarfed.org](http://snarfed.org/). It's official, we've
+launched!
+
+I won't send a real announcement for a while yet, since we're still working on
+the album...but at least it's at the right domain name, and it won't be going
+anywhere soon.
+
+Oh, and check it - [http://kash.stanford.edu/](http://kash.stanford.edu/) still
+serves its content, as usual, even though snarfed.org and kash are both running
+off the same server, both on port 80. How, you ask? Through the magic of
+[Jetty](http://snipsnap.org/space/virtual+host+redirection)!
+

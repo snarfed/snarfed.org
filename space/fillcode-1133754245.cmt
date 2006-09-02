@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>fillcode-1</title>
+<ipaddress></ipaddress>
+<author>hober</author>
+<link>/space/hober</link>
+<email></email>
+<source></source>
+<pubDate>1133754245</pubDate>
+<description>
+FYI, fillcode.el doesn't work with the python.el in CVS Emacs.
+</description>
+</item>

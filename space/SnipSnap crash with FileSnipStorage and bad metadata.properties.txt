@@ -1,0 +1,191 @@
+SnipSnap crash with FileSnipStorage and bad metadata.properties
+[![snipsnap.png](/space/snipsnap.png)](http://snipsnap.org/)_This
+article describes [SnipSnap](/space/SnipSnap) 1.0b1-uttoxeter using
+[FileSnipStorage](http://snipsnap.org/space/FileSnipStorage)._
+
+[SnipSnap](/space/SnipSnap), the software that runs this site, is great. I heart
+SnipSnap.
+
+Unfortunately, nothing's perfect, even SnipSnap. It occasionally crashes, and if
+you're using [filesystem snip
+storage](http://snipsnap.org/space/FileSnipStorage), it may corrupt itself.
+(This [has](http://nopaper.net/2004/06/15/downtime-is-my-favorite-time.html)
+[been](http://snipsnap.org/comments/help-me-please)
+[discussed](http://snipsnap.org/comments/snipsnap-help#comment-snipsnap-help-85)
+[elsewhere](http://snipforge.org/lurker/message/20060705.232815.00a1e509.en.html).)
+When that happens, it will refuse to start:
+
+
+    SnipSnap 1.0b1-uttoxeter
+
+    Copyright (c) 2000-2004 Fraunhofer Gesellschaft
+
+    Fraunhofer Institute for Computer Architecture and Software Technology
+
+    All Rights Reserved. See License Agreement for terms and conditions of use.
+
+    Responsible Authors: Stephan J. Schmidt, Matthias L. Jugel.
+
+    >> Applications: /<path...>/applications
+
+    >> Loading: / WARNING: unable to load application 'snarfed.org': null
+
+    0 applications loaded and running (1 errors).
+
+The **server.log** file will report this stacktrace:
+
+
+    java.lang.NullPointerException
+
+        at
+org.snipsnap.snip.storage.FileSnipStorage.parseSnip(FileSnipStorage.java:298)
+
+        at
+org.snipsnap.snip.storage.FileSnipStorage.traverseFileStore(FileSnipStorage.java:332)
+
+        at
+org.snipsnap.snip.storage.FileSnipStorage.traverseFileStore(FileSnipStorage.java:341)
+
+        at
+org.snipsnap.snip.storage.FileSnipStorage.storageAll(FileSnipStorage.java:325)
+
+        at
+org.snipsnap.snip.storage.MemorySnipStorage.<init>(MemorySnipStorage.java:87)
+
+        at org.snipsnap.snip.SnipSpaceImpl.<init>(SnipSpaceImpl.java:103)
+
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+
+        at
+sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+
+        at
+sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
+
+        at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
+
+        at
+org.picocontainer.defaults.InstantiatingComponentAdapter.instantiateComponent(InstantiatingComponentAdapter.java:86)
+
+        at
+org.picocontainer.defaults.InstantiatingComponentAdapter.getComponentInstance(InstantiatingComponentAdapter.java:36)
+
+        at
+org.picocontainer.defaults.CachingComponentAdapter.getComponentInstance(CachingComponentAdapter.java:44)
+
+        at
+org.picocontainer.extras.DecoratingComponentAdapter.getComponentInstance(DecoratingComponentAdapter.java:39)
+
+        at
+org.nanocontainer.nanning.NanningComponentAdapterFactory$WeavingAdapter.getComponentInstance(NanningComponentAdapterFactory.java:81)
+
+        at
+org.picocontainer.defaults.DefaultPicoContainer.getComponentInstance(DefaultPicoContainer.java:201)
+
+        at org.snipsnap.container.Components.getComponent(Components.java:149)
+
+        at
+org.snipsnap.net.filter.InitFilter.loadApplicationContexts(InitFilter.java:169)
+
+        at org.snipsnap.net.filter.InitFilter.init(InitFilter.java:150)
+
+If you see this, SnipSnap was in the middle of writing a **metadata.properties**
+file to disk when it crashed (or was killed).
+
+Each snip has a metadata.properties file. It stores metadata for that snip,
+including when it was created, who created it, when it was last modified, and
+which files are attached to it.
+
+Every metadata.properties file is 18 lines long. The first two lines are
+comments, and the next 16 are property values. Here's an example:
+
+
+    #Properties for start
+
+    #Sat Dec 11 19:45:10 PST 2002
+
+    snipLinks=abcd:1
+
+    name=start
+
+    oUser=ryan
+
+    cUser=ryan
+
+    mTime=1072028160413
+
+    backLinks=http://foo.com/:2
+
+    mUser=ryan
+
+    attachments=<attachments><attachments/></attachments>
+
+    commentSnip=
+
+    labels=
+
+    version=1
+
+    permissions=Edit:Editor
+
+    application=000000001234-0000000ABCDEF-...
+
+    parentSnip=
+
+    viewCount=519
+
+    cTime=1072028160413
+
+Since SnipSnap shut down unexpectedly, the metadata.properties file it was
+writing to disk was most likely truncated to zero bytes. It's also possible,
+though less likely, that it was _partially_ written to disk. Either way, when
+SnipSnap starts up and tries to read that file, it won't have all of the
+metadata it needs, so it can't continue.
+
+(Note that content.txt files, which contain the actual contents of a snip, may
+also be truncated or partially written to disk because of a crash. SnipSnap
+doesn't parse them, though, so they won't cause this stacktrace.)
+
+On \*nix, use this command to find broken metadata.properties files:
+
+
+    \# run this in your snipsnap application's directory
+
+
+    find WEB-INF/ . -name metadata.properties -print0 | \
+
+      xargs -0 -n1 wc -l | \
+
+      egrep -v '^ *18'
+
+For each file listed, simply restore it from its backup,
+**metadata.properties.bck**. SnipSnap should then restart happily. As a last
+resort, if the backup is corrupted too, you can use
+**../metadata.properties.template**, which should always be ok.
+
+See also:
+
+  * [Downtime is my favorite
+time](http://nopaper.net/2004/06/15/downtime-is-my-favorite-time.html) on
+[nopaper.net](http://nopaper.net/)
+
+  * [Help me please](http://snipsnap.org/comments/help-me-please) on
+[snipsnap.org](http://snipsnap.org/)
+
+  *
+[snipsnap-help](http://snipsnap.org/comments/snipsnap-help#comment-snipsnap-help-85)
+on [snipsnap.org](http://snipsnap.org/)
+
+  * [my original
+post](http://snipforge.org/lurker/message/20060705.232815.00a1e509.en.html) to
+the [snipsnap-users mailing
+list](http://snipforge.org/cgi-bin/mailman/listinfo/snipsnap-users)
+
+  * [servlets with snipsnap](/space/servlets with snipsnap)
+
+  * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap 1.0b1 virtual
+hostname patch)
+
+  * [snipsnap comment without login patch](/space/snipsnap comment without login
+patch)
+

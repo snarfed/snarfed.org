@@ -1,0 +1,32 @@
+webalizer nofollow patch
+[![/space/webalizer.png](/space/webalizer.png)](http://webalizer.com/)
+
+For the impatient:  
+[Patch for Webalizer 2.01-10](/space/webalizer_nofollow.patch)  
+[Webalizer source](http://webalizer.com/download.html)  
+[Google's nofollow
+page](http://googleblog.blogspot.com/2005/01/preventing-comment-spam.html)
+
+The latest salvo in the battle against [referrer spam](/space/referrer spam) and
+comment spam is
+[nofollow](http://googleblog.blogspot.com/2005/01/preventing-comment-spam.html),
+an HTML tag that instructs search engines not to count a link in their
+algorithms. It's not much, but for my part, I've written a trivial
+[patch](/space/webalizer_nofollow.patch) that adds
+nofollow support to [webalizer](http://webalizer.com/), a popular web server log
+analyzer.
+
+You can see this on the [webalizer site
+statistics](http://ryan.barrett.name/usage/) for snarfed.org and
+ryan.barrett.name. Check out that shiny new nofollow bling!
+
+See also:
+
+  * [referrer spam](/space/referrer spam)
+
+  * [geocoding](/space/geocoding)
+
+  * [patches](/space/software#patches)
+
+  * [ideas](/space/ideas)
+

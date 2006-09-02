@@ -1,0 +1,39 @@
+pine flowed-text patch
+[![pine.png](/space/pine.png)](http://washington.edu/pine/)
+
+For the impatient:  
+Patch for Pine [4.60 and
+4.61](/space/quell-displaying-flowed-text.patch.4.60),
+[4.63](/space/quell-displaying-flowed-text.patch.4.63),
+[4.64](/space/quell-displaying-flowed-text.patch.4.64)  
+[RedHat and Debian packages](http://www.quantumlinux.com/~chuckw/pine/)  
+[Pine source](http://www.washington.edu/pine/getpine/unix.html)  
+[FAQ on patching
+pine](http://www.math.washington.edu/~chappa/pine/faq/index.html)
+
+I use [Pine](http://www.washington.edu/pine/) as my email client, and I really
+like it. It's fast, simple, full-featured, and very keyboardable. However,
+nothing's perfect, even Pine.
+
+Pine 4.60 added support for flowed text a la
+[RFC2646](http://zvon.org/tmRFC/RFC2646/Output/index.html), which is great. If
+you want, you can tell it not to send flowed text...but there's no way to tell
+it not to _display_ flowed text. This patch adds that option.
+
+There are also [pre-built packages](http://www.quantumlinux.com/~chuckw/pine/)
+with this patch, thanks to Chuck Wolber, and [instructions on building Pine from
+source](/space/pine+reply-all+patch). Scroll to the bottom.
+
+See also:
+
+  * [pine delete attachments on save patch](/space/pine delete attachments on
+save patch)
+
+  * [pine remove trailing quote patch](/space/pine remove trailing quote patch)
+
+  * [pine reply-all patch](/space/pine reply-all patch)
+
+  * [port\_pine\_patch](/space/port_pine_patch)
+
+  * [gmail vs pine](/space/gmail vs pine)
+

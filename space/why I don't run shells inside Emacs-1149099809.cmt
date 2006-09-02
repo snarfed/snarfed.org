@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>why I don't run shells inside Emacs-2</title>
+<ipaddress></ipaddress>
+<author>ryan</author>
+<link>/space/ryan</link>
+<email></email>
+<source></source>
+<pubDate>1149099809</pubDate>
+<description>
+fascinating! i'd never heard of
+&lt;span class="nobr"&gt;&lt;a href="http://www.debian-administration.org/articles/290"&gt;ControlMaster&lt;/a&gt;&lt;/span&gt;
+before.&lt;p class="paragraph"/&gt;sadly, the machines i work on regularly all have openssh 3.7.x, and some of them would be bears to upgrade. still, i'll keep it in mind. thanks!
+</description>
+</item>

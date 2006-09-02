@@ -1,0 +1,85 @@
+2004-09-20
+
+### Sharing Digital Pictures 
+
+
+
+
+
+Since I dont post here often...I figure I'd make this one really, really long to
+make up for lost time.
+
+I finally got tired of making webalbums in somebody else's paradigm. Not that
+they weren't great programs, but I'm stubborn and didn't want to change my own
+workflow. This is how I work with pictures:
+
+  * Download pictures from camera into directories based on the date that the
+picture was taken
+
+  * Select the pictures I want, copy them to a directory made public by my
+webserver
+
+  * Write captions
+
+  * Link all the pictures together with quasi-fancy html
+
+To do this I had to select the pictures with the normal folder system of
+windows, which isn't bad and then use some other program to write captions and
+generate html.
+
+In the beginning, there was [Album Express](http://fookes.com/album). It was
+nice, but the albums didn't use CSS and it cost $25.
+
+Then came the age of SnipSnap. We wrote our [own
+macro](/space/Snipsnap+macros) to fit into the SnipSnap
+paradigm. This was nice, but it didn't have captions, alas we could not describe
+our photos to our friends.
+
+I turned my eyes to [JAlbum](http://jalbum.net) next. It was very nice, you
+could add captions and make very pretty albums with lots of data. Very
+professional. However, you still had to pick your pictures using Windows
+explorer and copy them over yourself. Once you had done that, you couldn't nix a
+picture you changed your mind about sharing.
+
+Then I found [Picasa](http://www.picasa.com/), which is really, really pretty.
+It easily lets you create albums while keeping your precious archive intact.
+However, there are no captions! They do keywords and all, but no friggin
+captions! Another sad thing is that you can't parse the albums that Picasa
+generates. Which means that you're stuck using their album formats.
+
+The last such program that I found before I wrote my own, was [Web Album
+Generator](http://www.ornj.net/software/webalbum/). It generated very simple,
+but elegant albums using CSS, but like JAlbum, once you selected a directory,
+you had to use all the pictures in there.
+
+So finally, I got off my duff and wrote my own album generating software!
+
+**Introducing: **
+[MAlbum](http://maulik.freeshell.net/software/malbum-release/): **Maulik's Album
+app**
+
+[![thumb_screenshot.jpg](http://maulik.freeshell.net/software/malbum-release/thumb_screenshot.jpg)](http://maulik.freeshell.net/software/malbum-release/)
+
+(there's also a [mirror](/space/MAlbum) here on Snarfed)
+
+And folks, _all seriousness aside_, let me tell you, it slices and it dices,
+it's the greatest thing to happen to digital picture taking since the digital
+camera itself :-P LOL
+
+Here's what it **does** do:
+
+I understands that maybe a data packrat, and would never want to throw away a
+single picture you've taken. So, you add a folder from your archive, maybe two
+(one pre-midnight, one post midnight).
+
+You start tabbing through the pictures and you see a picture that deserves a
+caption. Type it in and keep on tabbing. See one you don't want the world to
+see, hit ctrl-del, it's outta the family (but still in your archive). When
+you're done, you pick the directory where the album should live, say in the one
+that your webserver makes public, and hit "make the album". And now your time
+with MAlbum is done.
+
+Think me a geek? You're right my friend ... you're so right :-P
+
+    * Maulik
+

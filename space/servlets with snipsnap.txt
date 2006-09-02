@@ -1,0 +1,76 @@
+servlets with snipsnap
+![/space/snipsnap.png](/space/snipsnap.png)![/space/jetty.png](/space/jetty.png)[Snipsnap](/space/Snipsnap),
+the server that runs this site, is based on [Jetty](http://jetty.mortbay.com/),
+a standards based, pure java servlet container and web application server.
+Snipsnap is implemented on top of Jetty as a framework of servlets. Among other
+things, this means that you can configure the Jetty inside Snipsnap to serve
+_your_ servlets, JSPs, or anything else too! Here's how.
+
+First, you'll need to configure Jetty to serve some part of your site outside of
+Snipsnap. To do this, read my tutorial on [virtual host
+redirection](/space/virtual host redirection).
+
+Done? Great. Now, all you need to do is decide which pages you want Jetty to
+handle as JSPs, servlets, or whatever. You can specify everything in one
+directory, e.g. /servlets/, or all files with a specific extension, e.g. \*.jsp.
+In your jetty.conf, in the **<Call name="addContext">** element, add a servlet
+handler for those files:
+
+
+    <Call name="addHandler">
+
+      <Arg>
+
+       <New class=
+
+          "org.mortbay.jetty.servlet.ServletHandler">
+
+        <Call name="addServlet">
+
+          <Arg>JSP</Arg>
+
+          <Arg>*.jsp</Arg>
+
+         <Arg>
+
+          org.apache.jasper.servlet.JspServlet
+
+         </Arg>
+
+        </Call>
+
+        </New></Arg>
+
+    </Call>
+
+Add this handler _before_ the ResourceHandler that handles your static html
+files. (The file mappings are matched against in the order that they appear.)
+
+If you want to handle different files, or use a different servlet, replace the
+parameters with whatever you want. For example, if you want to use dynamic
+servlets, use **org.mortbay.jetty.servlet.Invoker** instead of
+**org.apache.jasper.servlet.JspServlet**. If you're interested, the [Jetty
+documentation](http://jetty.mortbay.com/jetty/tut/Server.html#nonwebapps) has
+more information.
+
+See also:
+
+  * [virtual host redirection](/space/virtual host redirection)
+
+  * [snipsnap register without email](/space/snipsnap register without email)
+
+  * [snipsnap script macro and python](/space/snipsnap script macro and python)
+
+  * [snipscrape](/space/snipscrape)
+
+  * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap 1.0b1 virtual
+hostname patch)
+
+  * [snipsnap comment without login patch](/space/snipsnap comment without login
+patch)
+
+  * [snipsnap macros](/space/snipsnap macros)
+
+  * [snipsnap recent-changes snip name patch](/space/snipsnap recent-changes
+snip name patch)
+

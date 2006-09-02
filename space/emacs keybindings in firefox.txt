@@ -1,0 +1,25 @@
+emacs keybindings in firefox
+[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)[![/space/firefox.png](/space/firefox.png)](http://getfirefox.com/)
+
+Use
+[Firefox](http://getfirefox.com/) on \*nix? Want
+[Emacs](http://gnu.org/software/emacs/) key bindings in text fields? As
+described in the [MozillaZine knowledge
+base](http://kb.mozillazine.org/Emacs_Keybindings_(Firefox)), add this to your
+~/.gtkrc-2.0 file.
+
+
+    gtk-key-theme-name = "Emacs"
+
+This will give you many Emacs key bindings, specifically C-a, C-e, C-f, C-b,
+C-k, C-u, C-w, C-h, and C-d. However, you won't get C-y, C-p, C-n, C-s, C-r,
+C-j, C-m, and C-l, since they're overridden by menu item accelerators.
+
+To get those key bindings too, go to [about:config](about:config) and set
+**ui.key.accelKey** to 18. This switches Firefox's accelerator key from Ctrl to
+Alt. So, you'll need to use Alt-L to go to the URL box, Alt-T to open a new tab,
+etc...but you'll be able to use all the Emacs keybindings burned into your
+muscle memory!
+
+Thanks to David Chandler for this tip.
+

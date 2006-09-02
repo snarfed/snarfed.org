@@ -1,0 +1,282 @@
+ideas
+[![/space/thought_bubble.jpg](/space/thought_bubble.jpg)](/space/ideas)
+
+I have lots of ideas
+for projects I'd like to work on. I can't pretend that they're particularly
+_good_ ideas, but it seems like a waste to just forget about them. So, here they
+are!
+
+
+  * **Phone transcripts!** Record all of your phone conversations, then
+transcribe them with speech recognition. Bonus points: index the transcripts and
+allow keyword search over them. Search results would link to both the transcript
+and the recording. Starting with VoIP would skip the telecom adoption hurdle,
+and the privacy issues aren't insurmountable. Unfortunately,
+[speaker-independent speech rec just isn't good enough
+yet](http://en.wikipedia.org/wiki/Computer_speech_recognition#Use). Sigh.
+
+  * Write a single-sign-on server (as [described
+here](http://manageddreams.com/osmpbb/viewtopic.php?t=179)) for the [Open Source
+Metaverse Project](http://metaverse.sourceforge.net/). It'd probably be based on
+[Kerberos](http://web.mit.edu/kerberos/).
+
+  * [SnipSnap](/space/SnipSnap) requires visitors to register and log in before
+they can comment. Alas, this discourages commenting. Add support for one-time
+comments a la [WordPress](http://wordpress.org/) and
+[Blogger](http://blogger.com). **\[_Done! See [snipsnap comment without login
+patch](/space/snipsnap comment without login patch)._]**
+
+  * Work on [Beagle](http://beaglewiki.org/) (formerly
+[Dashboard](http://nat.org/dashboard/)), which is wicked cool, or
+[Tenor](http://dot.kde.org/1113428593/), which may someday be even cooler.
+
+  * Write an overlay network that does multicast cleanly and efficiently.
+Similar to [IP
+multicast](http://www.cisco.com/univercd/cc/td/doc/cisintwk/ito_doc/ipmulti.htm),
+but above the transport layer. Among other things, this would require...
+
+  * ...a good API for [Vivaldi](http://project-iris.net/bib.html#networking), or
+another network distance algorithm. Write a portable implementation and package
+it as an easy-to-use library for app developers. P2P overlay networks might be a
+good initial target audience.
+
+  * Write elisp for [filling code in Emacs](/space/filling code in Emacs). This
+is my single biggest wished-for Emacs feature. **\[_Done! See
+[fillcode](/space/fillcode)._]**
+
+  * Emacs'
+[refill-mode](http://www.gnu.org/software/emacs/manual/html_node/Refill.html)
+and [filladapt](http://www.wonderworks.com/#filladapt) don't play well together.
+Make them! **[_Never mind, refill-mode isn't all that anyway._]**
+
+  * Add an undo command to [tcsh](http://tcsh.org). [Bash has
+one](http://www.gnu.org/software/bash/manual/bashref.html#SEC93), courtesy of
+[Readline](http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html), so I have
+shell envy. **\[_Done! [Emacs
+shell-mode](http://gnu.org/software/emacs/manual/html_node/Shell-Mode.html) does
+this._]**
+
+  * Add color to [tcsh](http://tcsh.org) and [GNU
+Readline](http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html) with [ANSI
+color codes](http://www.termsys.demon.co.uk/vtansi.htm#colors). For example,
+highlight the current region (when one exists), highlight the search string in
+incremental search, etc. **\[_Done! See [tcsh highlighting patch](/space/tcsh
+highlighting patch)._]**
+
+  * Add
+[delete-selection-mode](http://www.emacswiki.org/cgi-bin/wiki/DeleteSelectionMode)
+to [tcsh](http://tcsh.org) and [GNU
+Readline](http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html). **\[_Done!
+[Emacs
+shell-mode](http://gnu.org/software/emacs/manual/html_node/Shell-Mode.html) does
+this._]**
+
+  * [Referrer spam](/space/Referrer spam) is evil. Extend [Tony
+Buser](http://juju.org/)'s
+[derefspam](http://www.juju.org/archives/2005/01/21/derefspam) script to use
+DNSBLs and RBLs like [Spamhaus](http://www.spamhaus.org/xbl/index.lasso),
+[BSB](http://bsb.empty.us/), [Blitzed](http://opm.blitzed.org/info), and
+[SURBL](http://www.surbl.org/faq.html).
+
+  * Implement [JWZ](http://www.jwz.org/)'s
+[Intertwingle](http://www.mozilla.org/blue-sky/misc/199805/intertwingle.html)
+idea as a [GreaseMonkey](http://greasemonkey.mozdev.org) user script for
+[Gmail](http://gmail.com/). (I'd love to do it for Pine, but it's way too
+ambitious.)
+
+  * Write a [pine patch](/space/software#patches) to undo
+top-posting. It would parse an incoming email based on quoting levels, remove
+duplicate quotes, and display the unique quotes in the order they were written.
+Thanks to Matt Ackeret and [this pine-info
+thread](http://mailman1.u.washington.edu/pipermail/pine-info/2005-June/042260.html)
+for the original idea.
+
+  * Add [sieve](http://cyrusoft.com/sieve/) support to
+[Gmail](http://gmail.com/).
+
+  * Build a simple webapp with [Django](http://www.djangoproject.com/). Is it
+really as good as [Rails](http://www.rubyonrails.com/),
+[Struts](http://struts.apache.org/), and [Zope](http://www.zope.org/)?
+
+  * Revive [jxtapy](http://jxtapy.jxta.org/), which was founded to provide
+Python bindings for [JXTA](http://jxta.org/), but never got off the ground. Use
+[Jython](http://www.jython.org/) to get a running start.
+
+  * Add support for multiple-month events to
+[remind](http://roaringpenguin.com/penguin/open_source_remind.php), my calendar
+of choice. For more info, see this [email
+thread](/space/remind_multiple_months.txt).
+
+  * Why do modern web sites devote so much space to big, useless images and so
+little space to links and fields you actually use? This is awful usability,
+mostly due to [Fitts' law](http://en.wikipedia.org/wiki/Fitts'_law)
+([more](http://asktog.com/columns/022DesignedToGiveFitts.html)). A Firefox
+plugin that makes links and input fields "sticky" would go a long way toward
+fixing this problem.
+
+  * [Tuplespaces](http://www.almaden.ibm.com/cs/TSpaces/) have a powerful and
+elegant API, but they're centralized, so they're poor distributed data
+structures. [DHTs](http://www.nwfusion.com/details/805.html) are great building
+blocks for distributed systems, but their APIs are weak. Most only provide the
+functionality of a hashtable - gets and puts of key/value pairs. Write a
+tuplespace implementation that uses a DHT as its backing store - the best of
+both worlds!
+
+  * Write [pine patches](/space/software#patches) to make
+saving messages smarter. When saving, pine should [remove trailing
+quotes](/space/pine+remove+trailing+quote+patch), remove the HTML parts of MIME
+multipart messages, render HTML-only messages as text and save the text instead,
+offer to delete attachments, and save the attachment filename in the deletion
+note. Details in [this email
+thread](http://mailman1.u.washington.edu/pipermail/pine-info/2005-June/042260.html).
+\[**_Done! See [pine delete attachments on save patch](/space/pine delete
+attachments on save patch) and [pine remove trailing quote patch](/space/pine
+remove trailing quote patch)._**]
+
+  * I use [GeoBytes](http://geobytes.com/) to do [geocoding](/space/geocoding)
+on my [voyeurism](http://ryan.barrett.name/voyeurism.html) page. It's great,
+except that it occasionally [shows popup
+ads](http://geoup.com/GeoPhrase.htm#HowCanThisBeFree). So, I'd like to find a
+geocoding service that's ad-free and switch to it.
+
+  * [Google Keys](http://labs.google.com/keys/) provides keyboard shortcuts for
+Google search, which is quite cool...but it's not supported any more. Write a
+[GreaseMonkey](http://greasemonkey.mozdev.org) script that does the same thing.
+\[**_Done! See [Google Search
+Keys](http://www.imperialviolet.org/page24.html#e479)._**]
+
+  * Contribute to [acoc](http://www.caliban.org/ruby/acoc.shtml), which I love.
+First, add specs for more tools like pgrep, identify, tar, jar, etc. Then,
+extend acoc to detect columnar text output and color accordingly, especially
+columns that are enums. Finally, maybe extend it to recognize common data types
+like dates, and color accordingly. \[**_Done! Partially. See [acoc.conf for
+context diffs](/space/acoc.conf for context diffs)._**]
+
+  * Write [GreaseMonkey](http://greasemonkey.mozdev.org/) scripts for GMail to
+address the [reasons I haven't switched from Pine](/space/gmail+vs+pine).
+Specifically, add more keyboard shortcuts, cursor management, and [trailing
+quotes](/space/pine+remove+trailing+quote+patch). (Inspired by [Humane Gmail
+autosave](http://hirevito.com/greasemonkey/humanegmailautosave.html) and Mihai
+Parparita's
+[skinning](http://persistent.info/archives/2004/10/05/gmail-skinning),
+[persistent
+searches](http://persistent.info/archives/2005/03/01/gmail-searches), and extra
+keyboard shortcuts.) \[**_Somewhat done...see these [GMail GreaseMonkey
+scripts](http://dunck.us/collab/GreaseMonkeyUserScripts#head-2b681c0a24baff8899d7163cc7f805c75e1f44e4)._**]
+
+  * Implement [tuplespaces](http://www.almaden.ibm.com/cs/TSpaces/) in Python.
+\[**_Done! See [PyLinda](http://www-users.cs.york.ac.uk/~aw/pylinda/)._**]
+
+  * Add SSL and
+[GSSAPI](http://www.faqs.org/faqs/kerberos-faq/general/section-84.html)
+authentication to Python's
+[imaplib](http://docs.python.org/lib/module-imaplib.html).
+
+  * Use the newly GSSAPI-capable imaplib to rewrite
+[folderstat](/space/folderstat) so it can talk to my mail server.
+
+  * Work on [synchronizing mp3 playback](/space/synchronizing mp3 playback). We
+[took a stab](/space/p4) at this a while ago, and it was technically sound, but
+it wasn't very usable. I'm currently working on simplifying it and making it
+work with more MP3 players on different platforms. Bonus points: support
+[Bonjour](http://developer.apple.com/darwin/projects/bonjour/) (aka
+[ZeroConf](http://zeroconf.org/)). **\[_Done...as much as it can be. See
+[p4sync](/space/synchronizing mp3 playback)._]**
+
+  * Add internet multiplayer to [Baku
+Baku](http://www.the-underdogs.org/game.php?id=5059), one of the best games ever
+written. This might require a complete rewrite...maybe with
+[PyGame](http://pygame.org/)?
+
+  * It's widely acknowledged that bandwidth is increasing faster than latency.
+[David Patterson](http://www.cs.berkeley.edu/~pattrsn/) at Berkeley has a
+[writeup](http://roc.cs.berkeley.edu/retreats/winter_04/posters/pattrsn_BWv1b.doc)
+[(html)](http://216.239.63.104/search?q=cache:B5cT4nwYAsEJ:roc.cs.berkeley.edu/retreats/winter_04/posters/pattrsn_BWv1b.doc)
+on this - he's determined that, in general, bandwith increases with the _square_
+of latency! The standard techniques for masking latency are prefetching,
+caching, and prediction. Implement these in common applications. More ambitious:
+write a general-purpose _platform_ that does caching/prefetching, using plugins
+that provide app- or protocol-specific heuristics.
+
+  * Add an _xfn:_ operator to Google for searching [XFN](http://gmpg.org/xfn/)
+links, similar to the way the _site:_ operator searches specific sites.
+**_[Done! See [RubHub](http://rubhub.com/) and
+[XhtmlFriends](http://xhtmlfriends.net/). They're not Google, but they're good
+enough.]_**
+
+  * Build a "reverse" dashboard. It would take a piece of unstructured
+information (URL, email address, aim screen name, ICQ UIN, code snippet) and "do
+the right thing" with it (open a browser, compose an email, send an IM, compile,
+etc.). **_[Done! The [Google Toolbar](http://toolbar.google.com/) does this.
+Most snippets of interest come from email or web pages, and since most people
+use web-based email, it covers the common case.]_**
+
+  * Self-healing systems have gotten a lot of buzz recently, but fairly little
+real progress. Investigate what has been done (e.g. [Solaris's fault
+manager](http://www.acmqueue.com/modules.php?name=Content&pa=showpage&pid=242&page=1)
+and [IBM's autonomic computing](http://www.research.ibm.com/autonomic/)).
+Separate the content from the hype, and see if similar improvements could be
+made to Linux.
+
+  * Infer historical events based on AIM users' away messages. Build a server
+that (anonymously!) records lots of people's away messages, then process them
+offline and look for large-scale patterns at certain times - concerts, holidays,
+elections, TV shows, etc.
+
+  * Build a [Gaim](http://gaim.sf.net/) "secretary." If you go idle, but you
+didn't leave an away message, it guesses an appropriate one based on your
+previous away messages at that time of day, day of the week, etc.
+
+  * [Gaim](http://gaim.sf.net/) plugins can provide their own preferences panes,
+but only if they're written in C. Hack on Gaim to allow this for Perl plugins
+too. See [this email
+thread](http://sourceforge.net/mailarchive/message.php?msg_id=7225698).
+
+  * Contribute to [SIP/SIMPLE](http://xml.coverpages.org/ni2003-10-31-a.html),
+the [IETF](http://ietf.org/) instant messaging/presence standard. Check on the
+status of Gaim's SIP/SIMPLE protocol plugin?
+
+  * Do stateful packet inspection, at the host level, to monitor the services
+that are running. Build in a little domain-specific knowledge, and lots of
+heuristics, to monitor the health of those services. Also record statistics over
+time so usage patterns are more visible.
+
+  * Polish [bigbrother](/space/bigbrother), add new features, etc.
+
+  * Write a socket layer that resumes TCP connections if the network layer
+disappears temporarily, or if your IP changes. The killer app for this would be,
+if you hop from one WAP to another, your SSH sessions, IMAP mailboxes, IM
+conversations, etc. would stay open. I think either [IEEE](http://ieee.org/) or
+[IETF](http://ietf.org/) is already looking into this, but I can't find the
+working group.
+
+  * Work on [GNUnet](http://ovmj.org/GNUnet/), a strikingly practical,
+general-purpose overlay network with some really smart people behind it. (It's
+discussed relatively often on
+[p2p-hackers](http://zgp.org/mailman/listinfo/p2p-hackers).)
+
+  * Build a solid, open [SNTP library](/space/libmsntp). Implementations exist,
+both servers and clients, but they're either [not
+embeddable](http://www.citi.umich.edu/u/rees/pilot/) (ie
+[Java](http://www.kcmultimedia.com/jsntp/),
+[C#](http://www.dataman.ro/sntp/default.asp),
+[VB](http://www.vbxtras.com/products/sntpwizard.asp)) or [closed
+source](http://www.netcplus.com/netcclock.html)
+([lots](http://www.oneguycoding.com/automachron/)
+[and](http://www.unchanged.net/Software/SNTP/)
+[lots](http://www.beaglesoft.com/clwamixplatform.htm)
+[of](http://www.dillobits.com/sntp_service.html)
+[these](http://www.timetools.co.uk/)). A couple open source command-line
+utilities could be good starting points: [DJB](http://cr.yp.to/djb.html)'s
+prickly, client-only [clockspeed](http://cr.yp.to/clockspeed.html) and
+[Cambridge](http://cam.ac.uk/)'s much more hacker-friendly
+[msntp](http://www.hpcf.cam.ac.uk/export/). \[**_Done! See
+[libmsntp](/space/libmsntp)._**]
+
+  * Work on [PicoContainer](http://picocontainer.org/) and
+[NanoContainer](http://nanocontainer.org/), tools for loosely coupled software
+engineering. (Technically, they're implementations of the ["inversion of
+control" and "dependency
+injection"](http://www.martinfowler.com/articles/injection.html) patterns.) As a
+start, add Python support.
+

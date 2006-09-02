@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>fillcode-8</title>
+<ipaddress></ipaddress>
+<author>ryan</author>
+<link>/space/ryan</link>
+<email></email>
+<source></source>
+<pubDate>1134036852</pubDate>
+<description>
+good point. that's true for all major modes that respect `fill-paragraph-function'.&lt;p class="paragraph"/&gt;unfortunately, cc-mode doesn't. it replaces `fill-paragraph' with `c-fill-paragraph', which it binds M-q to. `c-fill-paragraph' ignores `fill-paragraph-function' entirely. :/&lt;p class="paragraph"/&gt;so, for fillcode to work in cc-mode major modes, it has to do something like advise `c-fill-paragraph'...which it does. still, you're probably right, it doesn't need a whole minor mode. i'll consider removing that in the future.
+</description>
+</item>

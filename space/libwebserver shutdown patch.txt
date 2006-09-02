@@ -1,0 +1,32 @@
+libwebserver shutdown patch
+[![/space/libwebserver.png](/space/libwebserver.png)](http://libwebserver.sourceforge.net/)
+
+For the impatient:  
+[Patch for libwebserver
+0.5.3](/space/libwebserver_shutdown.patch)  
+[Libwebserver page](http://libwebserver.sourceforge.net/)
+
+[Libwebserver](http://libwebserver.sourceforge.net/) is a fully functional web
+server in a tiny little library. It serves HTTP 1.0 and 1.1, and even supports
+SSL and cookies. You can use it to expose files and directories for download,
+but you can also write custom handlers whose output is sent directly to the
+client.
+
+Granted, if you just want a web server, libwebserver isn't for you. However, if
+you want to _embed_ a web server in another program, it's perfect. We're using
+it in our quest for [synchronizing mp3 playback](/space/synchronizing mp3
+playback), and we love it...
+
+...except for one thing. Libwebserver lets you start a server, but doesn't
+provide a way to _stop_ it. This might be reasonable for most programs, but not
+ours; we start and stop the server fairly often. [This
+patch](/space/libwebserver_shutdown.patch) adds a
+web\_server\_shutdown() call that stops the server, closes its socket, and
+deallocates its memory.
+
+See also:
+
+  * [synchronizing mp3 playback](/space/synchronizing mp3 playback)
+
+  * [p4](/space/p4)
+

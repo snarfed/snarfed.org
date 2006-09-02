@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>gaim null protocol plugin-4</title>
+<ipaddress></ipaddress>
+<author>ryan</author>
+<link>/space/ryan</link>
+<email></email>
+<source></source>
+<pubDate>1149187276</pubDate>
+<description>
+i built and tried the prpl with gaim 1.5.0, and it works ok. i can send messages to anyone, and if i IM myself on the nullprpl account, it sends the message back to me, as it should.&lt;p class="paragraph"/&gt;when you say you're "unable to send &amp;#91;and] receive messages," what exactly do you mean?&lt;p class="paragraph"/&gt;actually, now that i've looked at it again, it is missing  true multiple account support. you can create multiple accounts, and they work fine, but if you send messages &lt;i class="italic"&gt;between&lt;/i&gt; them, they don't get delivered. logon signals also don't always happen. neither of those sounds like your problem, though&amp;#8230;
+</description>
+</item>

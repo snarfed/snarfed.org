@@ -1,0 +1,36 @@
+emacs minibuffer-complete-and-exit bug fix
+[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)
+
+For the impatient:  
+[Bug fix
+patch](/space/emacs_minibuffer-complete-and-exit_fix.patch)
+against Emacs 22 ([CVS](http://savannah.gnu.org/cvs/?group=emacs) 2005-12-27)
+
+The minibuffer code in [GNU Emacs](http://gnu.org/software/emacs/) 22 has a
+minor bug in _minibuffer-complete-and-exit_. If _completion-ignore-case_ is t,
+and the minibuffer contains a valid completion in the wrong case,
+_minibuffer-complete-and-exit_ doesn't fix its case. It should.
+
+This spreads to other code that uses the minibuffer. For example, _read-buffer_
+has an optional argument _require-match_. If t, an existing buffer name must be
+entered. The list of existing buffer names is used as completions. If you enter
+an existing buffer name in the wrong case, it's not completed to the right case.
+
+The same thing happens with _read-file-name_ and _mustmatch_, as well as a few
+other minibuffer functions.
+
+Here's a test case. Run emacs -q, then evaluate these forms:
+
+
+    (setq completion-ignore-case t)
+
+    (read-buffer "buffer name: " nil t)
+
+Enter _\*SCRAtch\*_ at the prompt. It returns _\*SCRAtch\*_, but it should
+return _\*scratch\*_.
+
+This bug occurs in Emacs 22.0.50.7
+([CVS](http://savannah.gnu.org/cvs/?group=emacs) 2005-12-27) and before. [This
+patch](/space/emacs_minibuffer-complete-and-exit_fix.patch)
+fixes it. Whee!!!
+

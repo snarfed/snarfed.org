@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>synchronizing mp3 playback-3</title>
+<ipaddress></ipaddress>
+<author>ryan</author>
+<link>/space/ryan</link>
+<email></email>
+<source></source>
+<pubDate>1140669160</pubDate>
+<description>
+thanks! if and when we make an official release, it will definitely be free, both
+&lt;span class="nobr"&gt;&lt;a href="http://www.voresoel.dk/main.php?id=70"&gt;as in beer&lt;/a&gt;&lt;/span&gt;
+and
+&lt;span class="nobr"&gt;&lt;a href="http://www.gnu.org/philosophy/free-sw.html"&gt;as in freedom&lt;/a&gt;&lt;/span&gt;.&lt;p class="paragraph"/&gt;development has slowed down some, though, since the plugin latency in the vast
+majority of players is too high. when a plugin says "seek here!", it needs to
+actually happen, from the player down through the sound card driver, in under
+100ms at a bare minimum. winamp can do this, but not itunes, nor any *nix
+players i've found. :/&lt;p class="paragraph"/&gt;
+still, we might come back to it. until then, you're welcome to
+&lt;span class="nobr"&gt;&lt;a href="http://ryan.barrett.name/p4sync-0.1.tar.bz2"&gt;try out the latest version&lt;/a&gt;&lt;/span&gt;! it come with the core sync library and experimental plugins for
+&lt;span class="nobr"&gt;&lt;a href="http://xmms.org/"&gt;xmms&lt;/a&gt;&lt;/span&gt;,
+&lt;span class="nobr"&gt;&lt;a href="http://zinf.org/"&gt;zinf&lt;/a&gt;&lt;/span&gt;, and
+&lt;span class="nobr"&gt;&lt;a href="http://musicpd.org/"&gt;mpd&lt;/a&gt;&lt;/span&gt;,
+available for most *nix platforms.&lt;p class="paragraph"/&gt;</description>
+</item>

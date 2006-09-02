@@ -1,0 +1,26 @@
+bday
+[![/space/balloons.jpg](/space/balloons.jpg)](http://netmeister.org/apps/bday/)
+
+My memory is
+worthless, so I use lots of memory aids. One of them, Jan Schaumann's
+[bday](http://netmeister.org/apps/bday/), is a birthday reminder that emails me
+when my friends' birthdays are coming up.
+
+Here are a few tips for using bday.
+
+bday and bdayd, the reminder daemon, are somewhat inconsistent about where they
+assume [Perl](http://perl.org/) is installed. If you get _Command not found_
+errors when running bday or bdayd, make sure that their first lines point to
+your Perl installation, most likely /usr/bin/perl.
+
+Also, bday doesn't validate its user settings very well. If you see this error:
+
+
+    Argument "" isn't numeric in addition (+) at
+
+    /usr/local/bin/bdayd line 96, <PEOPLE> line 1.
+
+then bday has a blank for the number of days in advance you'd like to be
+notified of birthdays. Just run bday again, change your user preferences, and be
+sure to enter a valid number.
+

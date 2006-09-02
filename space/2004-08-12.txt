@@ -1,0 +1,44 @@
+2004-08-12
+
+### Big iron...uh....computers 
+
+![/space/datacenter.jpg](/space/datacenter.jpg)
+
+
+
+Abandon all hope, ye who enter here: this post is horribly geeky. Consider
+yourself warned.
+
+Last week I went on a tour of one of Google's datacenters, or colocation
+facilities. For the non-geeks reading this, a datacenter is basically a big
+warehouse with lots and lots (and _lots_) of servers, hooked up to really fast
+internet connections and backup generators in case the power goes down.
+
+It was _very_ cool, for lots of reasons I can't post here. Not to worry, though,
+[other](http://blog.topix.net/archives/000016.html)
+[sources](http://www.tnl.net/blog/entry/How_many_Google_machines)
+[are](http://query.nytimes.com/search/query?srcht=s&srchst=&vendor=&query=google&date_select=past30days&submit.x=0&submit.y=0&submit=Search)
+doing more than enough speculation on that front. I'd actually never been in a
+datacenter before, though, so the rest of it was new to me too.
+
+First, it was rather cold. Computers generate heat, so when you pack thousands
+of them together, you need industrial-strength cooling. Second, there are big,
+hulking, low-slung "power units" scattered around the datacenter. Power and
+bandwidth are both _very_ important, and so there are lots of redundant backups.
+
+More interestingly, since there are so many computers, the network operators
+think of them the "brawn." They consider the "brains" of the datacenter to be
+the network routing cage. This contains the main routers, load-balancers,
+internal switches, internal DNS caches, and external DNS servers. If the
+datacenter is a peering point such as the
+[PAX](http://www.qwest.com/about/qwest/internet2/overview.html) NAPs (the
+predecessors, or at least siblings, to
+[MAE-WEST](http://www.mae.net/fac/mae-west.htm) and
+[MAE-EAST](http://www.mae.net/fac/mae-east.htm)), you'd also see BGP servers.
+
+Before we left, we made our tour guide find one of our team's servers. It didn't
+look any different from the thousands of others, but we still oohed and ahhed
+and took a picture. It was a little silly, after talking shop over all the "big
+iron" hardware...but when you spend hours and hours a day, for months on end,
+working on a single server, you get a little attached. :P
+

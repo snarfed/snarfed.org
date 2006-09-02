@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>gmail vs pine-28</title>
+<ipaddress></ipaddress>
+<author>ryan</author>
+<link>/space/ryan</link>
+<email></email>
+<source></source>
+<pubDate>1145244832</pubDate>
+<description>
+william, i can't promise much, but i'll definitely pass on your bug report.&lt;p class="paragraph"/&gt;dave, you're right.
+&lt;span class="nobr"&gt;&lt;a href="http://calendar.google.com/"&gt;google calendar&lt;/a&gt;&lt;/span&gt;
+is really slick, especially the gmail integration. i doubt i'll start using it though, mostly because i'm not usually at a computer when i need my calendar. i've always just used paper calendars and phonebooks. (pdas and cell phones aren't for me.)&lt;p class="paragraph"/&gt;chuck, great point. a few people mentioned that on our internal mailing lists too. you're right, with that mental model, the Y key is consistent. however, compared to the &lt;i class="italic"&gt;archive&lt;/i&gt; mental model, &lt;i class="italic"&gt;remove attribute that causes messages to be displayed in current view&lt;/i&gt; is pretty damn unintuitive. it definitely violates the
+&lt;span class="nobr"&gt;&lt;a href="http://www.faqs.org/docs/artu/ch11s01.html"&gt;Rule of Least Surprise&lt;/a&gt;&lt;/span&gt;.&lt;p class="paragraph"/&gt;you're right, pine definitely has its inconsistentencies too. i guess this one of gmail's just rubbed me the wrong way.
+</description>
+</item>

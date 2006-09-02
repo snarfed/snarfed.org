@@ -1,0 +1,50 @@
+filling code in emacs
+[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)[Emacs](http://gnu.org/software/emacs)
+has a massive feature set, and there's also an endless supply of
+[elisp](http://gnu.org/software/emacs/emacs-lisp-intro/html_node/index.html) out
+there. However, for a long time, there was one feature on my Emacs wish list
+that I hadn't found yet.
+
+_Update: After lots of procrastination, I finally broke down and wrote
+[fillcode](/space/fillcode). It tackles the problem described here._
+
+I want Emacs to be able to correctly fill _code_, not just text. For example,
+when I press M-q in c-mode, I want Emacs to fill this:
+
+
+    public static void foo(int i, float f, String s) {
+
+to this:
+
+
+    public static void foo(int i, float f,
+
+                           String s) {
+
+Filling is Emacs' term for word wrapping. M-q is bound to fill-paragraph, which
+fills the current paragraph. However, Emacs only knows how to word wrap text. If
+you're in any of the code modes, like c-mode, python-mode, and sgml-mode, Emacs
+will only fill if it detects that you're in a comment. It's smart enough to know
+its limits, but it would be even smarter if it didn't have those limits. Filling
+code may not be as dirt-simple as filling text, but it's not hard.
+
+As a start, I'd love the ability to fill function declarations and calls. The
+algorithm, starting from the beginning of the line, is:
+
+  1. Find an open parenthesis.
+
+  2. Find a comma.
+
+  3. If you hit another open parenthesis, push the stack and go to step 1.
+
+  4. If you hit a close parenthesis, pop the stack and return.
+
+  5. If the first non-whitespace character after the comma is beyond the fill
+column, insert a newline and indent to the column after the open parenthesis in
+step 1. (If this is beyond the fill column, you're hosed.)
+
+  6. Go to step 2.
+
+Long string constants, arithmetic expressions, and Java throws clauses are
+similarly fillable. Elisp coders, here's your mission: make Emacs fill code!
+

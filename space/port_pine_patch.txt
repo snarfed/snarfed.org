@@ -1,0 +1,46 @@
+port_pine_patch
+[![pine.png](/space/pine.png)](http://washington.edu/pine/)
+
+For the impatient:  
+[Download port\_pine\_patch.sh v0.1](/space/port_pine_patch.sh)  
+[Pine source](http://www.washington.edu/pine/getpine/unix.html)  
+[My pine patches](/space/software#patches)  
+[FAQ on patching
+pine](http://www.math.washington.edu/~chappa/pine/faq/index.html)
+
+I've written a number of [patches](/space/software#patches) for
+[Pine](http://www.washington.edu/pine/), my email client. For a while, I ported
+them to new versions of Pine manually, which was very time consuming.
+
+This shell script automates the task of porting patches between Pine versions.
+It doesn't automatically resolve conflicts, but it does pretty much everything
+else. Upgrading Pine with patches has never been easier! (Uh, maybe.)
+
+To use the script to port a patch (on \*nix!), first unpack the new version's
+[source](http://www.washington.edu/pine/getpine/unix.html) into your home
+directory. The script will look for an existing patch for the old version in
+**~/src/pine**, and will write out the new patch to the same directory. For
+example, use this command line to port **foo.patch.4.63** to Pine version 4.64:
+
+
+    ./port\_pine\_patch.sh foo 4.63 4.64
+
+Future versions will remove the hard-coded paths. For now, you can edit the
+variables at the top of the script to point to different paths.
+
+port\_pine\_patch is copyright 2005 [Ryan Barrett](http://ryan.barrett.name/),
+and is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
+
+See also:
+
+  * [pine delete attachments on save patch](/space/pine delete attachments on
+save patch)
+
+  * [pine flowed-text patch](/space/pine flowed-text patch)
+
+  * [pine remove trailing quote patch](/space/pine remove trailing quote patch)
+
+  * [pine reply-all patch](/space/pine reply-all patch)
+
+  * [gmail vs pine](/space/gmail vs pine)
+

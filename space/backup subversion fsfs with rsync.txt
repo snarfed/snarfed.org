@@ -1,0 +1,27 @@
+backup subversion fsfs with rsync
+[![/space/subversion.png](/space/subversion.png)](http://subversion.tigris.org/)
+
+I use
+[Subversion](http://subversion.tigris.org/) for source control, and it's great.
+I recently migrated my repository to use the new
+[FSFS](http://svn.collab.net/repos/svn/trunk/notes/fsfs) backing store, which
+stores the repository directly on the filesystem, instead of in[Berkeley
+DB](http://sleepycat.com/).
+
+One of the many advantages of FSFS is that it's very easy to backup. The
+repository files can be copied directly. The only tricks are to copy the
+db/current file first, and not to copy the transactions/ directory. I backup my
+repository with rsync, like so:
+
+
+    rsync ... /path/to/repo/db/current backup:~/repo/db
+
+    rsync ... --exclude transactions/ --exclude db/current /path/to/repo
+backup:~/
+
+See also:
+
+  * [subversion and tkdiff](/space/subversion and tkdiff)
+
+  * [gnu emacs backup files](/space/gnu emacs backup files)
+

@@ -1,0 +1,213 @@
+why I don't run shells inside Emacs
+[![terminal.jpg](/space/terminal.jpg)](http://rxvt.org/)[![tcsh_oyster_catcher.jpg](/space/tcsh_oyster_catcher.jpg)](http://tcsh.org/)[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)
+
+This article details
+my experience running shells inside [Emacs](http://gnu.org/software/emacs/). I
+take a while to warm up, so if you're impatient, feel free to skip to the [pros
+and cons](/space/why+I+don't+run+shells+inside+Emacs#pros_and_cons), the [.emacs
+settings](/space/why+I+don't+run+shells+inside+Emacs#settings), or the [related
+articles](/space/why+I+don't+run+shells+inside+Emacs#related).
+
+When I'm working, I pretty much live inside Emacs. It's my IDE, debugger, text
+editor, email composer, spreadsheet, file manager, and all-around scratch pad.
+The only other app that's as ubiquitous in my work routine is my shell,
+[tcsh](http://www.tcsh.org/) inside [rxvt](http://rxvt.org/).
+
+I've customized the hell out of both Emacs and tcsh to make them work the way I
+want. I have Emacs whipped into shape, and tcsh too, mostly, except for one
+thing: _copying without the mouse_.
+
+I hate the mouse. It's good for some things, but not my work. Switching between
+the mouse and the keyboard wreaks havoc on my muscle memory and fine-motor flow.
+Thanks to [Emacs](http://gnu.org/software/emacs/),
+[Ion](http://iki.fi/tuomov/ion/), [Pine](http://www.washington.edu/pine/),
+[Gaim](http://gaim.sf.net), and [Firefox](http://getfirefox.com/)'s blessed
+[Find As You Type](http://www.mozilla.org/access/type-ahead/), I can do pretty
+much everything with the keyboard. The only thing I _can't_ do with the keyboard
+is copy text from a terminal. And that irks me.
+
+A voice in the back of my head had been nagging me about this for a while.
+_Ryan, you can fix this,_ it said, _and you know how._ It was right. I didn't
+want to admit it, but I did know how, and it did too. _Why don't you try running
+your shells inside Emacs?_
+
+I had a laundry list of reasons. Half of [my
+.cshrc](http://ryan.barrett.name/dotfiles/.cshrc) would be usless. I'd forgo
+[acoc](http://www.caliban.org/ruby/acoc.shtml)'s wonderful colorized command
+output. Emacs'
+[shell-mode](http://gnu.org/software/emacs/manual/html_node/Shell-Mode.html)
+would never do history management as well as native tcsh. And I wouldn't get
+that cool transparent background. :P
+
+The voice in the back of my head didn't go away, though. Every time I reached
+for the mouse to copy something out of a terminal, it piped up. _You could fix
+that, you know._ Sigh. I knew.
+
+Finally, it got the better of me. I wrote _try emacs shell mode_ on my todo
+list, and a few days later, I tried it. M-x shell was all it took, and it worked
+surprisingly well. What's more, most of my reasons for avoiding it were
+unfounded. Here's what worked well:
+
+
+<a name="pros_and_cons" />
+[![Icon-Permalink.png](/Icon-Permalink.png)](#pros_and_cons)
+
+
+  * **Copying with the keyboard.** This goes without saying. What's more, all of
+my Emacs muscle memory for navigating and searching now applied to the entire
+contents of my shell!
+
+  * **Session management.** All of my shells were at my fingertips, regardless
+of which Emacs frame I was currently in. No more context switching into a
+different Ion frame on a different virtual desktop just to check on a command.
+Even better, I could continue using my work shells _at home_, over VPN, just by
+connecting to my work Emacs!
+
+  * **Tcsh integration.** Emacs was surprisingly sociable with tcsh. It obeyed
+[my .cshrc](http://ryan.barrett.name/dotfiles/.cshrc), read and wrote its
+command history to ~/.history, and generally played nice.
+
+  * **ANSI color codes.** Wonder of wonders, Emacs could even display color
+codes properly. Just do M-x
+[ansi-color-for-comint-mode-on](http://www.gnu.org/software/emacs/manual/html_node/Shell-Options.html#index-shell_002dpushd_002ddunique-3323).
+
+  * **Find-file-at-point.** This handy little elisp function opens, in a new
+Emacs buffer, the filename that your cursor is currently on. After an ls, if I
+wanted to look at a file, I just moved up to it and hit M-C-f (bound to
+find-file-at-point), and Emacs would open the file. Slick.
+
+It wasn't perfect, though. Here's what didn't work well:
+
+  * **Not a terminal.** I gained keyboard navigation at the expense of having a
+true terminal emulator. I couldn't run any app that needed anything more than a
+dumb terminal - Pine, BitTorrent, less, and others. I could use [Term
+mode](file:///home/ryanb/www/emacs_manual/Terminal-emulator.html), which
+provides a full terminal, but that defeats the purpose of running inside emacs.
+
+  * **History.** As I suspected, command history wasn't quite as good as stock
+tcsh. It worked ok for history in the current shell's session, but I didn't have
+access to history from previous sessions.
+
+  * **Remote completion.** Emacs could tab-complete local, files and
+directories, but as soon as I sshed to another machine, it was helpless. OK,
+that's not quite true...I tried [TRAMP](http://www.gnu.org/software/tramp/), and
+it worked, but it was unbearably, unusably slow. Sigh.
+
+  * **Case-sensitive completion.** File and directory tab completion is case
+sensitive. It doesn't obey the completion-ignore-case variable. Boo.
+
+  * **Slow color code parsing.** My joy at finding ansi-color-for-comint-mode-on
+turned to horror as soon as I did an ls -l in a large directory. Emacs' color
+code parsing is dog slow. I could use ansi-color-for-comint-mode-filter to just
+ignore the color codes, but I couldn't bear to go without them.
+
+So, you might ask, what was the verdict? The jury's still out. I'm currently
+wrestling [GNU screen](http://www.gnu.org/software/screen/) into submission,
+since it also allows [keyboard navigation and
+copy/paste](http://www.delorie.com/gnu/docs/screen/screen_73.html) over shell
+contents. So far, I've [synchronized its paste buffer and the X
+selection](/space/synchronizing GNU screen), and I've [Emacs-ified its
+copy-scrollback mode](/space/Emacs keybindings in GNU screen). Stay tuned for
+more!
+
+Here's what I added to [my .emacs](http://ryan.barrett.name/dotfiles/.emacs) to
+make shell-mode behave the way I wanted:
+
+
+<a name="settings" />
+[![Icon-Permalink.png](/Icon-Permalink.png)](#settings)
+
+
+
+    (custom-set-variables
+
+     '(comint-scroll-to-bottom-on-input t)  ; always insert at the bottom
+
+     '(comint-scroll-to-bottom-on-output t) ; always add output at the bottom
+
+     '(comint-scroll-show-maximum-output t) ; scroll to show max possible output
+
+     '(comint-completion-autolist t)        ; show completion list when
+ambiguous
+
+     '(comint-input-ignoredups t)           ; no duplicates in command history
+
+     '(comint-completion-addsuffix t)       ; insert space/slash after file
+completion
+
+     )
+
+
+    ; interpret and use ansi color codes in shell output windows
+
+    (ansi-color-for-comint-mode-on)
+
+
+    ; make completion buffers disappear after 3 seconds.
+
+    (add-hook 'completion-setup-hook
+
+      (lambda () (run-at-time 3 nil
+
+        (lambda () (delete-windows-on "*Completions*")))))
+
+
+    ;; run a few shells.
+
+    (shell "*shell5*")
+
+    (shell "*shell6*")
+
+    (shell "*shell7*")
+
+
+    ; C-5, 6, 7 to switch to shells
+
+    (global-set-key [(control 5)]
+
+      (lambda () (interactive) (switch-to-buffer "*shell5*")))
+
+    (global-set-key [(control 6)]
+
+      (lambda () (interactive) (switch-to-buffer "*shell6*")))
+
+    (global-set-key [(control 7)]
+
+      (lambda () (interactive) (switch-to-buffer "*shell7*")))
+
+See also: 
+<a name="related" />
+[![Icon-Permalink.png](/Icon-Permalink.png)](#related)
+
+
+  * [synchronizing GNU screen's paste buffer and the X
+selection](/space/synchronizing GNU screen)
+
+  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs
+keybindings in GNU screen)
+
+  * [acoc.conf for context diffs](/space/acoc.conf for context diffs)
+
+  * [control arrow keys in rxvt, tcsh, and emacs](/space/control arrow keys in
+rxvt, tcsh, and emacs)
+
+  * [tcsh highlighting patch](/space/tcsh highlighting patch)
+
+  * [remove tcsh globbing in history search](/space/remove tcsh globbing in
+history search)
+
+  * [tcsh delete moves mark bug fix](/space/tcsh delete moves mark bug fix)
+
+  * [Emacs and remote X Windows](/space/Emacs and remote X Windows)
+
+  * [minimal .emacs for fast startup](/space/minimal .emacs for fast startup)
+
+  * [emacs keybindings with number keys](/space/emacs keybindings with number
+keys)
+
+  * [emacs keybindings in firefox](/space/emacs keybindings in firefox)
+
+  * [emacs X resources](/space/emacs X resources)
+
+  * [emacs page up page down](/space/emacs page up page down)
+

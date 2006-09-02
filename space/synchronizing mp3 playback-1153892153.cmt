@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>synchronizing mp3 playback-9</title>
+<ipaddress></ipaddress>
+<author>Guest</author>
+<link>/space/Guest</link>
+<email></email>
+<source></source>
+<pubDate>1153892153</pubDate>
+<description>
+I'm no programer, but could you use some fuzzy logic to steer the timing back to perfect sync.  Get it to play slightly faster or slower as needed instead of seeking a hundredth here or there.  I.e. Client says oops, Im starting to get ahead of the server, better slow it down 4 notches, Oops now I'm starting to get behind better speed it up 2 notches, etc.&lt;p class="paragraph"/&gt;Or, If you know what the ultimate deviation of the client and server was by the end of the track couldn't you have the client learn the diffference and adjust the playback speed to suite.  Then the more files you play the more accurate it becomes.  You could create a log of playback rates for different bit rates etc.&lt;p class="paragraph"/&gt;Also, I looked at your latest version, but I have no idea how to try this with say winamp, you might post a laymans guide to plugging it in and running it. FWIW, if you got it working in just one player many would be happy.&lt;p class="paragraph"/&gt; &lt;i class="italic"&gt;- Humanzee&lt;/i&gt;
+</description>
+</item>

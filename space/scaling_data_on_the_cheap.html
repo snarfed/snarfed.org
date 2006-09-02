@@ -1,0 +1,164 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Scaling MySQL on the Cheap</title>
+<meta name="version" content="S5 1.0" />
+<link rel="stylesheet" href="ui/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/opera.css" type="text/css" media="projection" id="operaFix" />
+<link rel="stylesheet" href="ui/print.css" type="text/css" media="print" id="slidePrint" />
+<script src="ui/slides.js" type="text/javascript"></script>
+</head>
+<body>
+
+<div class="layout">
+
+<div id="currentSlide"></div>
+<div id="header"></div>
+<div id="footer">
+<h1>bar camp stanford, aug. 26 2006</h1>
+<h2>scaling data on the cheap</h2>
+<div id="controls"></div>
+</div>
+
+</div>
+
+
+<div class="presentation">
+
+<div class="slide">
+<h1>Scaling Data on the Cheap</h1>
+<h3>Ryan Barrett</h3>
+<h4><img src="gg.gif" /> Inc.</h4>
+</div>
+
+
+<div class="slide">
+<h1>why?</h1>
+<ul>
+
+<li>growth and flash crowds: a good problem, but a problem</li>
+<li>bad for load, but...</li>
+<li>can duplicate frontends, file servers, indexes, caches</li>
+<li>worse for data volume</li>
+<li>even worse with common usage</li>
+<li>how to scale a traditional rdbms?</li>
+</ul>
+<div class="handout">
+[any material that should appear in print but not on the slide]
+</div>
+</div>
+
+<div class="slide">
+<h1>what?</h1>
+<ul>
+<li>shard! scale dbs across machines</li>
+<li><i>not</i> ORM, just a library and a shell</li>
+<li>simple partitioning across db machines</li>
+<li>mirrored schema</li>
+<li>global primary key namespace</li>
+<li>present a single-db abstraction to app code</li>
+</ul>
+<div class="handout">
+[any material that should appear in print but not on the slide]
+</div>
+</div>
+
+
+
+<div class="slide">
+<h1>how?</h1>
+<ul>
+<li>library takes sql queries from app</li>
+<li>connects to db(s) that have the data</li>
+<li>return results to app</li>
+<li><i>don't</i> distribute by hashing</li>
+<li>tables are sharded, replicated, or single-shard</li>
+</ul>
+<div class="handout">
+[any material that should appear in print but not on the slide]
+</div>
+</div>
+
+
+<div class="slide">
+<h1>how, faster?</h1>
+<ul>
+<li>parallel queries</li>
+<li>shard hints</li>
+<li>bloom filters</li>
+<li>ask your ORM for help!</li>
+<li>parent/child relationships</li>
+<li>session pinning</li>
+</ul>
+<div class="handout">
+[any material that should appear in print but not on the slide]
+</div>
+</div>
+
+
+<div class="slide">
+<h1>why not</h1>
+<ul>
+<li>can't join across dbs (apart from histograms)</li>
+<li>can't mine data</li>
+<li>cache incoherence</li>
+<li>your dba will hate you</li>
+<li>resharding</li>
+</ul>
+<div class="handout">
+[any material that should appear in print but not on the slide]
+</div>
+</div>
+
+
+<div class="slide">
+<h1>sharding 201: cross-shard txes</h1>
+<ul>
+<li>no two-phase commit?</li>
+<li>standard distributed tx</li>
+<li>Transactions table, with tx data, on all shards</li>
+<li>update shard 1, write tx row</li>
+<li>update shard 2, write tx row <i>with same primary key</i></li>
+<li>recover on startup or in background</li>
+</ul>
+<div class="handout">
+[any material that should appear in print but not on the slide]
+</div>
+</div>
+
+<div class="slide">
+<h1>sharding 201: cache coherence</h1>
+<ul>
+<li>avoid stateful sessions</li>
+<li>no, really. just say no!</li>
+<li>...</li>
+<li>fine, be that way</li>
+<li>use version numbers</li>
+<li>maintain versions in session state</li>
+<li>check version in write tx</li>
+<li>if changed, abort</li>
+</ul>
+<div class="handout">
+[any material that should appear in print but not on the slide]
+</div>
+</div>
+
+
+<div class="slide">
+<h1>Questions?</h1>
+<li>Ryan Barrett</li>
+<li>barcamp@ryanb.org</li>
+<li>http://snarfed.org/</li>
+<div class="handout">
+[any material that should appear in print but not on the slide]
+</div>
+</div>
+
+
+</div>
+
+</body>
+</html>

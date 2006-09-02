@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>gmail vs pine-19</title>
+<ipaddress></ipaddress>
+<author>Guest</author>
+<link>/space/Guest</link>
+<email></email>
+<source></source>
+<pubDate>1144409990</pubDate>
+<description>
+I mentioned this on the /. comments, but mihai on the google reader team did most of the greasemonkey work.&lt;p class="paragraph"/&gt;&lt;span class="nobr"&gt;&lt;a href="http://persistent.info/archives/2006/03/21/gmail-macros"&gt;&amp;#104;ttp://persistent.info/archives/2006/03/21/gmail-macros&lt;/a&gt;&lt;/span&gt;&lt;p class="paragraph"/&gt;Naturally, I recommend my patched version of the script but I find the macros addition serves me well enough.&lt;p class="paragraph"/&gt;I actually prefer to use gmail because I find writing greasemonkey scripts simpler than learning a mua code base and patching there. I patch stuff like linking bug numbers to bugzillas and expect mihai to take care of the major patches.&lt;p class="paragraph"/&gt; &lt;i class="italic"&gt;- &lt;span class="nobr"&gt;&lt;a href="http://gr.ayre.st"&gt;Karl G&lt;/a&gt;&lt;/span&gt;&lt;/i&gt;
+</description>
+</item>

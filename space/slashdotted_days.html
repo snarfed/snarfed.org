@@ -1,0 +1,778 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML><HEAD>
+<TITLE>Peak Daily Visits</TITLE>
+<STYLE type="text/css">
+<!--
+td {
+	}
+td.other {
+	}
+td.head, a.qu, td.tabs { 
+	font-weight:bold; 
+	font-family:arial,helvetica,swiss;
+	}
+td.tabs {
+	text-decoration:none;
+	font-size:13px;
+	link-color:000000;
+	}
+a.qu { color:#7B1010; }
+A:Hover { color : #990000; }
+.subhead { font-size:larger; }
+.subsubhead { }
+//-->
+</STYLE>
+<SCRIPT LANGUAGE="JavaScript" type="text/javascript"><!--
+mo=document.images;
+
+if (mo) {
+	ic1 = new Image(70,77);
+	ic1.src = "http://ryan.barrett.name/summary/art/config1.gif";
+	ic2 = new Image(70,77);
+	ic2.src = "http://ryan.barrett.name/summary/art/config2.gif";
+	ih1 = new Image(89,77);
+	ih1.src = "http://ryan.barrett.name/summary/art/help1.gif";
+	ih2 = new Image(89,77);
+	ih2.src = "http://ryan.barrett.name/summary/art/help2.gif";
+	ir1 = new Image(86,38);
+	ir1.src = "http://ryan.barrett.name/summary/art/report1.gif";
+	ir2 = new Image(86,38);
+	ir2.src = "http://ryan.barrett.name/summary/art/report2.gif";
+	ip1 = new Image(86,39);
+	ip1.src = "http://ryan.barrett.name/summary/art/page1.gif";
+	ip2 = new Image(86,39);
+	ip2.src = "http://ryan.barrett.name/summary/art/page2.gif";
+	it1 = new Image(95,77);
+	it1.src = "http://ryan.barrett.name/summary/art/text1.gif";
+	it2 = new Image(95,77);
+	it2.src = "http://ryan.barrett.name/summary/art/text2.gif";
+	}
+
+function DoRoll(iname,isrc)
+{
+	if (mo) {
+		inew=eval(isrc+".src");
+		document[iname].src=inew;
+		}
+	}
+
+function DoPopup(url) {
+	var nw=window.open(url,"summaryaux","height=200,width=600,"+
+		"titlebar=yes,location=no,status=no,toolbar=no,menubar=no,"+
+		"scrollbars=yes,resizable=yes,directories=no,fullscreen=no");
+	nw.focus();
+	return false;
+	}
+--></SCRIPT>
+</HEAD>
+<BODY bgcolor="#FFFFFF" text="#000000" link="#000066" vlink="#333333"
+alink="#999999" marginheight=0 topmargin=0 bottommargin=0 marginwidth=0
+leftmargin=0 rightmargin=0 >
+<table width="100%" cellpadding=0 cellspacing=0 border=0><tr>
+<td valign=top align=left width=306><A HREF="http://summary.net/"><IMG border=0 width=306 height=74
+src="http://ryan.barrett.name/summary/art/sum_logo.gif" alt=Summary></A>
+</td>
+<td align=center valign=top><table width="50%" cellpadding=0 cellspacing=0 border=0>
+<tr><td><IMG src="http://ryan.barrett.name/summary/art/clear.gif" width=1 height=6 alt=""></td></tr>
+<tr valign=bottom>
+<td><A HREF="http://localhost:9000/config-report?1:37"
+onMouseover="DoRoll('iic','ic2')" onMouseout="DoRoll('iic','ic1')">
+<IMG name=iic width=70 height=77 border=0 src="http://ryan.barrett.name/summary/art/config1.gif" alt="Configure"></A></td>
+<td><IMG src="http://ryan.barrett.name/summary/art/clear.gif" width=15 height=1 alt=""></td>
+<td><A HREF="http://ryan.barrett.name/summary/docs/index.html"
+onMouseover="DoRoll('iih','ih2')" onMouseout="DoRoll('iih','ih1')">
+<IMG name=iih width=89 height=77 border=0 src="http://ryan.barrett.name/summary/art/help1.gif" alt="Help"></A></td>
+</tr></table></td>
+</tr></table><CENTER><font size=2>&#160;<BR></font>
+
+<table cellpadding=0 cellspacing=0 border=0>
+<tr valign=bottom>
+<td rowspan=5>
+<IMG SRC="http://ryan.barrett.name/summary/art/tab_left.gif" width=31 height=24 alt="&lt;"></td>
+<td class=tabs valign=middle height=20 bgcolor="#CCCCCC">
+<A HREF="http://ryan.barrett.name/summary/menu.html">Menu</A></td>
+<td rowspan=2>
+<IMG SRC="http://ryan.barrett.name/summary/art/tab_div.gif" width=29 height=21 alt="|"></td>
+<td class=tabs valign=middle height=20 bgcolor="#CCCCCC">
+<A HREF="http://ryan.barrett.name/summary/overview.html">Overview</A></td>
+<td rowspan=2>
+<IMG SRC="http://ryan.barrett.name/summary/art/tab_div.gif" width=29 height=21 alt="|"></td>
+<td class=tabs valign=middle height=20 bgcolor="#CCCCCC">
+<A HREF="http://ryan.barrett.name/summary/report/31.html">Domains</A></td>
+<td rowspan=2>
+<IMG SRC="http://ryan.barrett.name/summary/art/tab_div.gif" width=29 height=21 alt="|"></td>
+<td class=tabs valign=middle height=20 bgcolor="#CCCCCC">
+<A HREF="http://ryan.barrett.name/summary/report/32.html">Hosts</A></td>
+<td rowspan=2>
+<IMG SRC="http://ryan.barrett.name/summary/art/tab_div.gif" width=29 height=21 alt="|"></td>
+<td class=tabs valign=middle height=20 bgcolor="#CCCCCC">
+<A HREF="http://ryan.barrett.name/summary/report/D9.html">by Bytes</A></td>
+<td rowspan=5>
+<IMG SRC="http://ryan.barrett.name/summary/art/tab_right.gif" width=31 height=24 alt="&gt;"></td></tr>
+<tr>
+<td height=1 bgcolor="#000000">
+<IMG width=1 height=1 SRC="http://ryan.barrett.name/summary/art/clear.gif" alt=""></td>
+<td height=1 bgcolor="#000000">
+<IMG width=1 height=1 SRC="http://ryan.barrett.name/summary/art/clear.gif" alt=""></td>
+<td height=1 bgcolor="#000000">
+<IMG width=1 height=1 SRC="http://ryan.barrett.name/summary/art/clear.gif" alt=""></td>
+<td height=1 bgcolor="#000000">
+<IMG width=1 height=1 SRC="http://ryan.barrett.name/summary/art/clear.gif" alt=""></td>
+<td height=1 bgcolor="#000000">
+<IMG width=1 height=1 SRC="http://ryan.barrett.name/summary/art/clear.gif" alt=""></td>
+</tr>
+<tr><td height=1 bgcolor="#E7E0E0" colspan=9>
+<IMG width=1 height=1 SRC="http://ryan.barrett.name/summary/art/clear.gif" alt=""></td></tr>
+<tr><td height=1 bgcolor="#EDD6D6" colspan=9>
+<IMG width=1 height=1 SRC="http://ryan.barrett.name/summary/art/clear.gif" alt=""></td></tr>
+<tr><td height=1 bgcolor="#E6D6D6" colspan=9>
+<IMG width=1 height=1 SRC="http://ryan.barrett.name/summary/art/clear.gif" alt=""></td></tr>
+</table>
+
+<img src="http://ryan.barrett.name/summary/art/clear.gif" height=5 width=1 alt=""><br>
+
+<table cellpadding=0 cellspacing=0 border=0>
+<tr valign=bottom>
+<td rowspan=5>
+<IMG SRC="http://ryan.barrett.name/summary/art/tab_left.gif" width=31 height=24 alt="|"></td>
+<td class=tabs valign=middle height=20 bgcolor="#CCCCCC">
+<A HREF="http://ryan.barrett.name/summary/report/38.html">with IP</A></td>
+<td rowspan=2>
+<IMG SRC="http://ryan.barrett.name/summary/art/tab_div_lsel.gif" width=29 height=21 alt="|"></td>
+<td class=tabs valign=middle height=20>
+<b>Peak Days</b></td>
+<td rowspan=2>
+<IMG SRC="http://ryan.barrett.name/summary/art/tab_div_rsel.gif" width=29 height=21 alt="|"></td>
+<td class=tabs valign=middle height=20 bgcolor="#CCCCCC">
+<A HREF="http://ryan.barrett.name/summary/report/48.html">Language</A></td>
+<td rowspan=5>
+<IMG SRC="http://ryan.barrett.name/summary/art/tab_right.gif" width=31 height=24 alt="&gt;"></td></tr>
+<tr>
+<td height=1 bgcolor="#000000">
+<IMG width=1 height=1 SRC="http://ryan.barrett.name/summary/art/clear.gif" alt=""></td>
+<td height=1 bgcolor="#000000">
+<IMG width=1 height=1 SRC="http://ryan.barrett.name/summary/art/clear.gif" alt=""></td>
+<td height=1 bgcolor="#000000">
+<IMG width=1 height=1 SRC="http://ryan.barrett.name/summary/art/clear.gif" alt=""></td>
+</tr>
+<tr><td height=1 bgcolor="#E7E0E0" colspan=5>
+<IMG width=1 height=1 SRC="http://ryan.barrett.name/summary/art/clear.gif" alt=""></td></tr>
+<tr><td height=1 bgcolor="#EDD6D6" colspan=5>
+<IMG width=1 height=1 SRC="http://ryan.barrett.name/summary/art/clear.gif" alt=""></td></tr>
+<tr><td height=1 bgcolor="#E6D6D6" colspan=5>
+<IMG width=1 height=1 SRC="http://ryan.barrett.name/summary/art/clear.gif" alt=""></td></tr>
+</table>
+
+<img src="http://ryan.barrett.name/summary/art/clear.gif" height=5 width=1 alt=""><br>
+<table width="100%" cellpadding=1 cellspacing=0 border=0>
+<tr class=other><td>&#160;</td>
+<td class=other colspan=11>
+<FONT size=6><b><SPAN class="head">Peak Daily Visits</SPAN></b>
+<nobr><FONT color="#006600"><SPAN class="hilight"><i>&#160;for</i> 
+<b>snarfed.org and ryan.barrett.name</b></SPAN></font></nobr></font>
+</td><td>&#160;</td></tr>
+
+<tr class=other bgcolor="#DDEEDD"><td class=other>&#160;</td>
+<td class=other colspan=11><font size=2 color="#006600">
+Reporting on <b>719.14 days</b>, 
+from <b>Apr 20, 2004 08:15AM</b> 
+to <b>Apr 09, 2006 11:30AM</b>.
+<nobr>Calculated <b>Apr 09, 2006 04:37AM</b>.</nobr></font></td>
+<td class=other>&#160;</td></tr>
+
+<tr class=other><td class=other>&#160;</td>
+<td class=other colspan=11>
+<table width=590 cellpadding=0 cellspacing=0 border=0>
+<tr class=other><td class=other><font color="#333333"><SPAN class="gray">
+<A class=qu href="http://ryan.barrett.name/summary/docs/reports.html%3Ftag=37.html#37" onClick="return DoPopup(this.href)">?</A>Shows information for each day sorted by the number of visits.
+</SPAN></font></td></tr></table>
+</td><td class=other>&#160;</td></tr>
+
+<tr><td class=other>&#160;</td>
+<td class=other colspan=11>
+<table width=590 cellpadding=0 cellspacing=0 border=0>
+<tr class=other valign=middle><td class=other>
+<nobr>Displaying items 1-60 of 720</nobr> <nobr>by date.</nobr></td>
+</tr></table>
+</td><td class=other>&#160;</td></tr>
+
+<tr bgcolor="#CCCCFF">
+<td class=head width=10>&#160;</td>
+<td class=head><A HREF="http://http://ryan.barrett.name/summary/report/37?O=L">Date</A>&#160;<A class=qu HREF="http://ryan.barrett.name/summary/docs/columns.html%3Ftag=ND.html#ND" onClick="return DoPopup(this.href)">?</A>
+</td><td width=20>&#160;</td>
+<td class=head align=right><A HREF="http://ryan.barrett.name/summary/report/37%3FO=H.html">Hits</A>&#160;<A class=qu HREF="http://ryan.barrett.name/summary/docs/columns.html%3Ftag=HN2.html#HN2" onClick="return DoPopup(this.href)">?</A>
+</td><td width=20>&#160;</td>
+<td class=head align=right><A HREF="http://ryan.barrett.name/summary/report/37%3FO=B.html">MBytes</A>&#160;<A class=qu HREF="http://ryan.barrett.name/summary/docs/columns.html%3Ftag=BV.html#BV" onClick="return DoPopup(this.href)">?</A>
+</td><td width=20>&#160;</td>
+<td class=head align=right><A HREF="http://ryan.barrett.name/summary/report/37%3FO=U.html">Unique Hosts</A>&#160;<A class=qu HREF="http://ryan.barrett.name/summary/docs/columns.html%3Ftag=UN.html#UN" onClick="return DoPopup(this.href)">?</A>
+</td><td width=20>&#160;</td>
+<td class=head align=right><A HREF="http://http://ryan.barrett.name/summary/report/37?O=V">Visits</A>&#160;<A class=qu HREF="http://ryan.barrett.name/summary/docs/columns.html%3Ftag=VN.html#VN" onClick="return DoPopup(this.href)">?</A>
+</td><td width=20>&#160;</td>
+<td class=head><A HREF="http://http://ryan.barrett.name/summary/report/37?O=V">Visits</A>&#160;<A class=qu HREF="http://ryan.barrett.name/summary/docs/columns.html%3Ftag=VB.html#VB" onClick="return DoPopup(this.href)">?</A>
+<BR><IMG src="http://ryan.barrett.name/summary/art/clear.gif" width=200 height=1 alt=""></td><td width=10>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>04/09/06</td><td>&#160;</td>
+<td align=right>7,045</td><td>&#160;</td>
+<td align=right>71.4M</td><td>&#160;</td>
+<td align=right>475</td><td>&#160;</td>
+<td align=right>508</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/bl.gif" width=2 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>04/08/06</td><td>&#160;</td>
+<td align=right>23,666</td><td>&#160;</td>
+<td align=right>208.3M</td><td>&#160;</td>
+<td align=right>1,518</td><td>&#160;</td>
+<td align=right>1,627</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/bl.gif" width=8 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>04/07/06</td><td>&#160;</td>
+<td align=right>67,770</td><td>&#160;</td>
+<td align=right>365.8M</td><td>&#160;</td>
+<td align=right>3,879</td><td>&#160;</td>
+<td align=right>4,190</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=21 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>04/06/06</td><td>&#160;</td>
+<td align=right>43,429</td><td>&#160;</td>
+<td align=right>344.2M</td><td>&#160;</td>
+<td align=right>34,767</td><td>&#160;</td>
+<td align=right>40,663</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=200 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>04/05/06</td><td>&#160;</td>
+<td align=right>20,786</td><td>&#160;</td>
+<td align=right>220.3M</td><td>&#160;</td>
+<td align=right>3,624</td><td>&#160;</td>
+<td align=right>3,821</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=19 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>04/04/06</td><td>&#160;</td>
+<td align=right>9,844</td><td>&#160;</td>
+<td align=right>217.9M</td><td>&#160;</td>
+<td align=right>874</td><td>&#160;</td>
+<td align=right>956</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=5 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>04/03/06</td><td>&#160;</td>
+<td align=right>9,888</td><td>&#160;</td>
+<td align=right>234.6M</td><td>&#160;</td>
+<td align=right>865</td><td>&#160;</td>
+<td align=right>919</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=5 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>04/02/06</td><td>&#160;</td>
+<td align=right>6,972</td><td>&#160;</td>
+<td align=right>138.8M</td><td>&#160;</td>
+<td align=right>856</td><td>&#160;</td>
+<td align=right>924</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/bl.gif" width=5 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>04/01/06</td><td>&#160;</td>
+<td align=right>8,629</td><td>&#160;</td>
+<td align=right>181.2M</td><td>&#160;</td>
+<td align=right>753</td><td>&#160;</td>
+<td align=right>835</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/bl.gif" width=4 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>03/31/06</td><td>&#160;</td>
+<td align=right>6,587</td><td>&#160;</td>
+<td align=right>151.1M</td><td>&#160;</td>
+<td align=right>799</td><td>&#160;</td>
+<td align=right>919</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=5 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>03/30/06</td><td>&#160;</td>
+<td align=right>10,722</td><td>&#160;</td>
+<td align=right>209.1M</td><td>&#160;</td>
+<td align=right>1,102</td><td>&#160;</td>
+<td align=right>1,275</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>03/29/06</td><td>&#160;</td>
+<td align=right>12,796</td><td>&#160;</td>
+<td align=right>202.3M</td><td>&#160;</td>
+<td align=right>1,110</td><td>&#160;</td>
+<td align=right>1,318</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>03/28/06</td><td>&#160;</td>
+<td align=right>11,609</td><td>&#160;</td>
+<td align=right>230.2M</td><td>&#160;</td>
+<td align=right>1,048</td><td>&#160;</td>
+<td align=right>1,197</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>03/27/06</td><td>&#160;</td>
+<td align=right>9,714</td><td>&#160;</td>
+<td align=right>214.7M</td><td>&#160;</td>
+<td align=right>1,254</td><td>&#160;</td>
+<td align=right>1,434</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=7 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>03/26/06</td><td>&#160;</td>
+<td align=right>7,004</td><td>&#160;</td>
+<td align=right>141.4M</td><td>&#160;</td>
+<td align=right>966</td><td>&#160;</td>
+<td align=right>1,107</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/bl.gif" width=5 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>03/25/06</td><td>&#160;</td>
+<td align=right>6,658</td><td>&#160;</td>
+<td align=right>132.8M</td><td>&#160;</td>
+<td align=right>902</td><td>&#160;</td>
+<td align=right>1,033</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/bl.gif" width=5 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>03/24/06</td><td>&#160;</td>
+<td align=right>11,006</td><td>&#160;</td>
+<td align=right>241.0M</td><td>&#160;</td>
+<td align=right>1,098</td><td>&#160;</td>
+<td align=right>1,243</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>03/23/06</td><td>&#160;</td>
+<td align=right>8,655</td><td>&#160;</td>
+<td align=right>201.2M</td><td>&#160;</td>
+<td align=right>993</td><td>&#160;</td>
+<td align=right>1,123</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>03/22/06</td><td>&#160;</td>
+<td align=right>9,315</td><td>&#160;</td>
+<td align=right>178.8M</td><td>&#160;</td>
+<td align=right>1,032</td><td>&#160;</td>
+<td align=right>1,120</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>03/21/06</td><td>&#160;</td>
+<td align=right>8,906</td><td>&#160;</td>
+<td align=right>209.3M</td><td>&#160;</td>
+<td align=right>959</td><td>&#160;</td>
+<td align=right>1,078</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=5 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>03/20/06</td><td>&#160;</td>
+<td align=right>9,684</td><td>&#160;</td>
+<td align=right>161.1M</td><td>&#160;</td>
+<td align=right>1,103</td><td>&#160;</td>
+<td align=right>1,324</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=7 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>03/19/06</td><td>&#160;</td>
+<td align=right>8,163</td><td>&#160;</td>
+<td align=right>181.4M</td><td>&#160;</td>
+<td align=right>935</td><td>&#160;</td>
+<td align=right>1,161</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/bl.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>03/18/06</td><td>&#160;</td>
+<td align=right>6,457</td><td>&#160;</td>
+<td align=right>144.9M</td><td>&#160;</td>
+<td align=right>781</td><td>&#160;</td>
+<td align=right>942</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/bl.gif" width=5 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>03/17/06</td><td>&#160;</td>
+<td align=right>6,902</td><td>&#160;</td>
+<td align=right>127.7M</td><td>&#160;</td>
+<td align=right>827</td><td>&#160;</td>
+<td align=right>911</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=4 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>03/16/06</td><td>&#160;</td>
+<td align=right>10,762</td><td>&#160;</td>
+<td align=right>155.7M</td><td>&#160;</td>
+<td align=right>985</td><td>&#160;</td>
+<td align=right>1,102</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=5 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>03/15/06</td><td>&#160;</td>
+<td align=right>8,862</td><td>&#160;</td>
+<td align=right>194.3M</td><td>&#160;</td>
+<td align=right>1,020</td><td>&#160;</td>
+<td align=right>1,130</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>03/14/06</td><td>&#160;</td>
+<td align=right>7,522</td><td>&#160;</td>
+<td align=right>152.4M</td><td>&#160;</td>
+<td align=right>1,348</td><td>&#160;</td>
+<td align=right>1,469</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=7 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>03/13/06</td><td>&#160;</td>
+<td align=right>10,767</td><td>&#160;</td>
+<td align=right>340.2M</td><td>&#160;</td>
+<td align=right>2,396</td><td>&#160;</td>
+<td align=right>2,625</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=13 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>03/12/06</td><td>&#160;</td>
+<td align=right>9,363</td><td>&#160;</td>
+<td align=right>256.3M</td><td>&#160;</td>
+<td align=right>1,563</td><td>&#160;</td>
+<td align=right>1,734</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/bl.gif" width=9 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>03/11/06</td><td>&#160;</td>
+<td align=right>6,231</td><td>&#160;</td>
+<td align=right>145.7M</td><td>&#160;</td>
+<td align=right>832</td><td>&#160;</td>
+<td align=right>960</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/bl.gif" width=5 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>03/10/06</td><td>&#160;</td>
+<td align=right>7,677</td><td>&#160;</td>
+<td align=right>205.6M</td><td>&#160;</td>
+<td align=right>849</td><td>&#160;</td>
+<td align=right>942</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=5 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>03/09/06</td><td>&#160;</td>
+<td align=right>10,088</td><td>&#160;</td>
+<td align=right>220.9M</td><td>&#160;</td>
+<td align=right>972</td><td>&#160;</td>
+<td align=right>1,095</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=5 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>03/08/06</td><td>&#160;</td>
+<td align=right>8,650</td><td>&#160;</td>
+<td align=right>180.7M</td><td>&#160;</td>
+<td align=right>924</td><td>&#160;</td>
+<td align=right>1,023</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=5 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>03/07/06</td><td>&#160;</td>
+<td align=right>10,859</td><td>&#160;</td>
+<td align=right>240.8M</td><td>&#160;</td>
+<td align=right>1,053</td><td>&#160;</td>
+<td align=right>1,212</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>03/06/06</td><td>&#160;</td>
+<td align=right>9,639</td><td>&#160;</td>
+<td align=right>238.9M</td><td>&#160;</td>
+<td align=right>1,053</td><td>&#160;</td>
+<td align=right>1,243</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>03/05/06</td><td>&#160;</td>
+<td align=right>6,871</td><td>&#160;</td>
+<td align=right>178.5M</td><td>&#160;</td>
+<td align=right>854</td><td>&#160;</td>
+<td align=right>985</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/bl.gif" width=5 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>03/04/06</td><td>&#160;</td>
+<td align=right>6,836</td><td>&#160;</td>
+<td align=right>196.0M</td><td>&#160;</td>
+<td align=right>890</td><td>&#160;</td>
+<td align=right>1,128</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/bl.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>03/03/06</td><td>&#160;</td>
+<td align=right>9,317</td><td>&#160;</td>
+<td align=right>337.6M</td><td>&#160;</td>
+<td align=right>1,040</td><td>&#160;</td>
+<td align=right>1,167</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>03/02/06</td><td>&#160;</td>
+<td align=right>10,307</td><td>&#160;</td>
+<td align=right>336.4M</td><td>&#160;</td>
+<td align=right>1,063</td><td>&#160;</td>
+<td align=right>1,208</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>03/01/06</td><td>&#160;</td>
+<td align=right>8,548</td><td>&#160;</td>
+<td align=right>181.0M</td><td>&#160;</td>
+<td align=right>888</td><td>&#160;</td>
+<td align=right>1,046</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=5 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>02/28/06</td><td>&#160;</td>
+<td align=right>11,873</td><td>&#160;</td>
+<td align=right>237.0M</td><td>&#160;</td>
+<td align=right>1,063</td><td>&#160;</td>
+<td align=right>1,385</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=7 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>02/27/06</td><td>&#160;</td>
+<td align=right>9,590</td><td>&#160;</td>
+<td align=right>204.4M</td><td>&#160;</td>
+<td align=right>971</td><td>&#160;</td>
+<td align=right>1,112</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=5 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>02/26/06</td><td>&#160;</td>
+<td align=right>10,188</td><td>&#160;</td>
+<td align=right>163.9M</td><td>&#160;</td>
+<td align=right>973</td><td>&#160;</td>
+<td align=right>1,146</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/bl.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>02/25/06</td><td>&#160;</td>
+<td align=right>8,883</td><td>&#160;</td>
+<td align=right>158.4M</td><td>&#160;</td>
+<td align=right>1,020</td><td>&#160;</td>
+<td align=right>1,233</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/bl.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>02/24/06</td><td>&#160;</td>
+<td align=right>9,868</td><td>&#160;</td>
+<td align=right>241.4M</td><td>&#160;</td>
+<td align=right>1,193</td><td>&#160;</td>
+<td align=right>1,433</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=7 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>02/23/06</td><td>&#160;</td>
+<td align=right>11,199</td><td>&#160;</td>
+<td align=right>338.9M</td><td>&#160;</td>
+<td align=right>1,400</td><td>&#160;</td>
+<td align=right>1,668</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=8 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>02/22/06</td><td>&#160;</td>
+<td align=right>11,671</td><td>&#160;</td>
+<td align=right>233.4M</td><td>&#160;</td>
+<td align=right>1,214</td><td>&#160;</td>
+<td align=right>1,442</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=7 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>02/21/06</td><td>&#160;</td>
+<td align=right>11,144</td><td>&#160;</td>
+<td align=right>213.5M</td><td>&#160;</td>
+<td align=right>1,169</td><td>&#160;</td>
+<td align=right>1,429</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=7 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>02/20/06</td><td>&#160;</td>
+<td align=right>11,205</td><td>&#160;</td>
+<td align=right>267.0M</td><td>&#160;</td>
+<td align=right>1,247</td><td>&#160;</td>
+<td align=right>1,529</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=8 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>02/19/06</td><td>&#160;</td>
+<td align=right>6,702</td><td>&#160;</td>
+<td align=right>166.0M</td><td>&#160;</td>
+<td align=right>997</td><td>&#160;</td>
+<td align=right>1,180</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/bl.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>02/18/06</td><td>&#160;</td>
+<td align=right>12,332</td><td>&#160;</td>
+<td align=right>307.2M</td><td>&#160;</td>
+<td align=right>995</td><td>&#160;</td>
+<td align=right>1,202</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/bl.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>02/17/06</td><td>&#160;</td>
+<td align=right>11,004</td><td>&#160;</td>
+<td align=right>245.6M</td><td>&#160;</td>
+<td align=right>1,038</td><td>&#160;</td>
+<td align=right>1,209</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>02/16/06</td><td>&#160;</td>
+<td align=right>3,927</td><td>&#160;</td>
+<td align=right>119.7M</td><td>&#160;</td>
+<td align=right>997</td><td>&#160;</td>
+<td align=right>1,149</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>02/15/06</td><td>&#160;</td>
+<td align=right>10,088</td><td>&#160;</td>
+<td align=right>206.7M</td><td>&#160;</td>
+<td align=right>1,425</td><td>&#160;</td>
+<td align=right>1,668</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=8 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>02/14/06</td><td>&#160;</td>
+<td align=right>9,842</td><td>&#160;</td>
+<td align=right>238.8M</td><td>&#160;</td>
+<td align=right>1,065</td><td>&#160;</td>
+<td align=right>1,228</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>02/13/06</td><td>&#160;</td>
+<td align=right>9,680</td><td>&#160;</td>
+<td align=right>245.0M</td><td>&#160;</td>
+<td align=right>1,075</td><td>&#160;</td>
+<td align=right>1,276</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>02/12/06</td><td>&#160;</td>
+<td align=right>6,882</td><td>&#160;</td>
+<td align=right>193.4M</td><td>&#160;</td>
+<td align=right>899</td><td>&#160;</td>
+<td align=right>1,089</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/bl.gif" width=5 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>02/11/06</td><td>&#160;</td>
+<td align=right>7,711</td><td>&#160;</td>
+<td align=right>200.7M</td><td>&#160;</td>
+<td align=right>966</td><td>&#160;</td>
+<td align=right>1,166</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/bl.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+<tr><td>&#160;</td>
+<td>02/10/06</td><td>&#160;</td>
+<td align=right>6,644</td><td>&#160;</td>
+<td align=right>204.2M</td><td>&#160;</td>
+<td align=right>920</td><td>&#160;</td>
+<td align=right>1,110</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=5 height=8></td><td>&#160;</td>
+</tr>
+
+<tr bgcolor="#EEEEFF"><td>&#160;</td>
+<td>02/09/06</td><td>&#160;</td>
+<td align=right>9,902</td><td>&#160;</td>
+<td align=right>210.8M</td><td>&#160;</td>
+<td align=right>1,006</td><td>&#160;</td>
+<td align=right>1,222</td><td>&#160;</td>
+<td width=200><IMG src="http://ryan.barrett.name/summary/art/b.gif" width=6 height=8></td><td>&#160;</td>
+</tr>
+
+</table>
+
+<P>
+<b>1</b>
+<A HREF="http://ryan.barrett.name/summary/report/37?O=/&amp;P=61">2</A>
+<A HREF="http://ryan.barrett.name/summary/report/37?O=/&amp;P=121">3</A>
+<A HREF="http://ryan.barrett.name/summary/report/37?O=/&amp;P=181">4</A>
+<A HREF="http://ryan.barrett.name/summary/report/37?O=/&amp;P=241">5</A>
+<A HREF="http://ryan.barrett.name/summary/report/37?O=/&amp;P=301">6</A>
+<A HREF="http://ryan.barrett.name/summary/report/37?O=/&amp;P=361">7</A>
+<A HREF="http://ryan.barrett.name/summary/report/37?O=/&amp;P=661">12</A>
+<A HREF="http://ryan.barrett.name/summary/report/37?O=/&amp;P=61">Next</A>
+</P>
+
+<p><br></p><table cellpadding=1 cellspacing=2>
+<tr><td align=center><A HREF="http://ryan.barrett.name/summary/main.html">
+<IMG align=left border=0 width=21 height=21 src="http://ryan.barrett.name/summary/art/ball.gif" alt="*">
+<FONT size=4><b>Summary Main Page</b></FONT></A></td>
+<td width=15></td><td align=left><FONT size=2>
+Questions or comments: <A HREF="mailto:Summary@Summary.Net"
+>Summary@Summary.Net</A><br>
+Copyright 1998-2005 by Summary.Net - Updated 9/19/05</FONT>
+</td></tr></table></CENTER>
+</BODY></HTML>

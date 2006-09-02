@@ -1,0 +1,22 @@
+tackon.dll
+[![/space/nsis_llama.png](/space/nsis_llama.png)](http://nsis.sourceforge.net/)[![/space/downhill_battle.jpg](/space/downhill_battle.jpg)](http://blogtorrent.com/)
+
+For the impatient:  
+[Download tackon.dll](/space/tackon.dll)
+
+[tackon.dll](/space/tackon.dll) is a plugin for
+[NSIS](http://nsis.sourceforge.net/), the scriptable Windows installer from
+[Nullsoft](http://nullsoft.com/). It allows you to "tack on" and later retrieve
+an arbitrary amount of data from an NSIS installer package.
+
+Tackon was written by the developers of [Blogtorrent](http://blogtorrent.com/),
+a [Downhill Battle](http://downhillbattle.org/) project. Tackon is distributed
+as part of the Blogtorrent source code.
+
+A [mingw](http://mingw.org/) Makefile is provided for building tackon, but
+installing mingw on Windows can be downright painful. Even installing on Linux
+takes a little effort. So, I'm hosting the [tackon.dll
+binary](/space/tackon.dll) here for those who'd like to hack on NSIS
+and/or Blogtorrent, but would like to skip the hassle of building tackon
+themselves.
+

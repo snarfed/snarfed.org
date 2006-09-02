@@ -1,0 +1,25 @@
+folderstat
+![/space/folder.jpg](/space/folder.jpg)
+
+For the impatient:  
+[Download folderstat.cpp](/space/folderstat.cpp)[  
+Folderstat](/space/folderstat.cpp) is a program that reports the
+sizes of each of the foldrs in an IMAP account. It uses
+[pine](http://www.washington.edu/pine/) as an IMAP client, so you'll need to
+have an IMAP account set up in pine, and you'll need to have pine in your path.
+
+Unless you have pine set up to use ssh-agent or a password file, it will ask you
+to authenticate once for each folder, so it's not really useful for accounts
+that use SSL/TLS or otherwise require authentication. However, it is a decent
+example of iostreams and STL usage in C++.
+
+To compile on \*nix, just do g++ folderstat.cpp. On Windows, just load it in
+your IDE of choice and compile it. :P
+
+Eventually, I might re-implement this using Python's
+[imaplib](http://www.python.org/doc/current/lib/module-imaplib.html), including
+support for authenticating to GSS-API capable imap servers.
+
+Folderstat is Copyright 1999 Ryan Barrett, and is distributed under the
+[GPL](http://www.gnu.org/licenses/gpl.html).
+

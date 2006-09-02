@@ -1,0 +1,59 @@
+geocoding
+![/space/worldmap.jpg](/space/worldmap.jpg)
+
+Resolving an IP address to a hostname, or reverse
+DNS, has been around for a while. However, resolving an IP address to a
+_physical location_, or geocoding, has just recently come into its own.
+
+If you're interested in the raw data, many of the regional
+[RIRs](http://en.wikipedia.org/wiki/Regional_Internet_Registry) (notably
+[RIPE](http://www.ripe.net/ripe/), [ARIN](http://arin.net/), and
+[APNIC](http://apnic.net/)) publish dumps, or "splits," of their databases.
+[This forum thread](http://forums.devarticles.com/t4529/s.html) has more
+detailed information.
+
+However, most people want something that they can simply plug into their web
+site that will tell visitors where they're located. Companies such as
+[Quova](http://quova.com/), [Akamai](http://akamai.com/), and
+[MaxMind](http://www.maxmind.com/) provide IP-to-location services of varying
+resolution and accuracy. Except for a few flukes (e.g. all AOL users are in
+Virginia!), these services are fairly good.
+
+Not surprisingly, they charge money for access to their databases. If you're a
+business, I'll let you decide on that value proposition yourself. However, if
+you're a small, independent web site, [GeoBytes](http://geobytes.com/) has a
+free ([as in beer](http://c2.com/cgi/wiki?FreeAsInBeer)) mapping service you can
+use. I'm using it on my [voyeurism
+page](http://ryan.barrett.name/voyeurism.html) right now. Just plug this
+javascript into your web site wherever you'd like to show the user their
+location:
+
+
+    <script type="text/javascript"
+
+     src="http://map.geoup.com/geoup?template=CityName">
+
+This results in a tiny script that prints the user's city, inline:
+
+
+    document.write('Brooklyn')
+
+I'm using it on my [voyeurism page](http://ryan.barrett.name/voyeurism.html)
+right now. If you'd prefer the user's region, country, or one of many pre-bulit
+messages, you can take your pick from GeoByte's
+[templates](http://geoup.com/GeoPhrase.htm#Templates).
+
+One caveat: to support this service, GeoBytes occasionally [shows an
+advertisement](http://geoup.com/GeoPhrase.htm#HowCanThisBeFree) instead of your
+own page, about once every 50 page views. This is unfortunate, so I'm looking
+for an ad-free replacement along the lines of
+[InternetFrog](http://internetfrog.com/).
+
+See also:
+
+  * [referrer spam](/space/referrer spam)
+
+  * [webalizer nofollow patch](/space/webalizer nofollow patch)
+
+  * [ideas](/space/ideas)
+

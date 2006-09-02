@@ -1,0 +1,134 @@
+software
+![/space/bolthead.png](/space/bolthead.png)![/space/maze.png](/space/maze.png)![/space/computer.png](/space/computer.png)
+
+Open source software I've [written](/space/software#projects) and
+[contributed to](/space/software#patches). Unless otherwise noted, everything
+is [GPL](http://www.gnu.org/licenses/gpl.html)ed.
+
+<a name="projects" />
+### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](#projects)
+
+  * [Filekicker](/space/filekicker) is a [PyBlosxom](http://pyblosxom.sf.net/)
+plugin that serves static files.
+
+  * [Fillcode](/space/fillcode) is an [Emacs](http://gnu.org/software/emacs/)
+minor mode that fills, or wraps, some parts of source code.
+
+  * [Ditrit](/space/ditrit) is a programmable application launcher that tries to
+"do the right thing" for any input it's given.
+
+  * [BigBrother](/space/bigbrother) generates statistics and graphs from your
+away message history. See my [personal
+example](http://ryan.barrett.name/bigbrother/).
+
+  * [P4](/space/p4) is a compact, lightweight overlay network library, similar
+to [Gnutella](http://rfc-gnutella.sourceforge.net/) and
+[Chord](http://www.pdos.lcs.mit.edu/chord/).
+
+  * [libmsntp](/space/libmsntp) is a compact, portable [SNTP
+library](/space/libmsntp). It provides both client and server functionality.
+
+  * [Snipsnap macros](/space/snipsnap macros) is a collection of macros for
+[SnipSnap](http://snipsnap.org), the web server that runs this site.
+
+  * [Tictactoe](/space/tictactoe) is an OpenGL engine that provides realistic
+procedural modelling and rendering of water.
+
+  * [Voxel](/space/voxel) is a high-resolution voxel terrain rendering engine.
+
+  * [Palo Alto Library](/space/palo+alto+library+amazon+greasemonkey) is a
+[Greasemonkey](http://greasemonkey.mozdev.org) script that shows whether a book
+on Amazon is available in any of the [Palo Alto
+Libraries](http://cityofpaloalto.org/library/).
+
+  * [MAlbum](/space/MAlbum) is a quick and easy graphical interface for creating
+a web album. (Maulik has a [sample
+album](http://maulik.freeshell.net/software/malbum-release/malbumSample).)
+
+  * [snipscrape](/space/snipscrape) transforms SnipSnap-generated HTML into XML
+that can be imported back into SnipSnap.
+
+  * [cdname.py](/space/cdname.py) names MP3 files according to
+[CDDB](http://cddb.com/)/[freedb](http://freedb.org/) INF files.
+
+  * [Gaim null protocol plugin](/space/gaim null protocol plugin) is a no-op
+protocol plugin that lets you run gaim without connecting to a server.
+
+  * [Remote](/space/remote) is a client for
+[httpQ](http://httpq.sourceforge.net/), a network server plugin for
+[Winamp](http://winamp.com).
+
+  * [Scavenger](/space/scavenger) extracts
+[RFC2822](http://zvon.org/tmRFC/RFC2822/Output/index.html) email addresses from
+text and binary files.
+
+  * [Folderstat](/space/folderstat) retrieves the size of the folders in an IMAP
+email account.
+
+
+<a name="patches" />
+### Patches  [![Icon-Permalink.png](/Icon-Permalink.png)](#patches)
+
+  * A [tcsh highlighting patch](/space/tcsh highlighting patch) that highlights
+the match during incremental search, and in emacs mode, the region between the
+mark and cursor.
+
+  * A patch to [remove tcsh globbing in history search](/space/remove tcsh
+globbing in history search).
+
+  * A [fix for a tcsh bug that moves the mark after deletions](/space/tcsh
+delete moves mark bug fix).
+
+  * An [acoc rule for coloring context diffs](/space/acoc.conf for context
+diffs).
+
+  * A [fix for an Emacs bug in minibuffer code](/space/emacs
+minibuffer-complete-and-exit bug fix), specifically in
+_minibuffer-complete-and-exit_.
+
+  * [port\_pine\_patch](/space/port_pine_patch) is a shell script that automates
+porting Pine patches between versions.
+
+  * [Pine reply-all patch](/space/pine reply-all patch) adds a reply-all command
+to the [Pine](http://www.washington.edu/pine) email client.
+
+  * [Pine flowed-text patch](/space/pine flowed-text patch) adds an option to
+[Pine](http://www.washington.edu/pine) to turn off displaying flowed text.
+
+  * [Pine remove trailing quote patch](/space/pine remove trailing quote patch)
+adds an option to automatically remove trailing quotes from outgoing emails.
+
+  * [Pine delete attachments on save patch](/space/pine delete attachments on
+save patch) adds an option to delete attachments from messages when you save
+them.
+
+  * [Gaim accelerators in away menus
+patch](http://sourceforge.net/tracker/index.php?func=detail&aid=1031098&group_id=235&atid=300235)
+fixes [Gaim](http://gaim.sf.net/)'s GTK menu code to allow accelerators in
+dynamically created menus, such as away message menus.
+
+  * [SnipSnap comment without login patch](/space/snipsnap comment without login
+patch) allows visitors to post comments without logging in.
+
+  * [SnipSnap recent-changes snip name patch](/space/snipsnap recent-changes
+snip name patch) fixes a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-392) in
+SnipSnap that causes recent-changes to show blog posts incorrectly.
+
+  * [SnipSnap 1.0b1 virtual hostname patch](/space/snipsnap 1.0b1 virtual
+hostname patch) fixes a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-387) in
+SnipSnap that prevents [virtual host redirection](/space/virtual host
+redirection).
+
+  * [Autocutsel clipboard and primary patch](/space/Autocutsel clipboard and
+primary patch) extends [autocutsel](http://www.nongnu.org/autocutsel/) to
+synchronize both the clipboard and the primary selection in X Windows.
+
+  * [Libwebserver shutdown patch](/space/libwebserver shutdown patch) adds a
+call to [libwebserver](http://libwebserver.sourceforge.net/) to stop a running
+server and close its socket(s).
+
+  * [Webalizer nofollow patch](/space/webalizer nofollow patch) adds
+[nofollow](http://www.google.com/googleblog/2005/01/preventing-comment-spam.html)
+support to the popular web server log analyzer
+[Webalizer](http://webalizer.com/).
+

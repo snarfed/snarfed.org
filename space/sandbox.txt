@@ -1,0 +1,30 @@
+sandbox
+{script} from java.util import Date print Date().toString() {script}
+
+{script} import sys sys.add\_package('org.snipsnap.snip') from org.snipsnap.snip
+import SnipSpaceFactory
+
+factory = SnipSpaceFactory.getInstance() atxs =
+factory.load(str(snip)).getAttachments().getAll() atx\_names = ',
+'.join([a.getName() for a in atxs](/space/a.getName() for a in atxs))
+
+print """ This snip is called **%s**. Its attachments are **%s**. """ % (snip,
+atx\_names) {script}
+
+foo
+
+Use this space to test new ideas, experiment with SnipSnap, or just plain
+graffiti.
+
+consider this page graffiti'ed
+
+  * M
+
+{logins}
+
+{recent-changes:9999}
+
+{index}
+
+[bigbrother big brother aim away message logs logging graphs](/space/bigbrother)
+

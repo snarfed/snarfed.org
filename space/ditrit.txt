@@ -1,0 +1,37 @@
+ditrit
+[![/space/do_the_right_thing.jpg](/space/do_the_right_thing.jpg)](/space/ditrit-0.1.tar.gz)
+
+For the impatient:  
+[Download ditrit 0.1](/space/ditrit-0.1.tar.gz)  
+[View ditrit.py](/space/ditrit.py)  
+[Example ditritrc file](/space/ditritrc)
+
+[Ditrit](/space/Ditrit) is a programmable application launcher that tries to "do
+the right thing" for any input. If ditrit is given an email address, it knows to
+launch your email client and compose an email to that address. Likewise, ditrit
+knows to open URLs in your browser, text files in your text editor, and AIM
+screen names in your IM client.
+
+Ditrit reads its input from stdin or from the X Windows primary selection (aka
+clipboard). The ditrit configuration file consists of template regexps and
+commands. The templates are matched against the input. When a match is found,
+the corresponding command is run. The input can be wholly or partially inserted
+into the command line.
+
+To read from the X selection, you'll need
+[python-xlib](http://python-xlib.sf.net) in your PYTHONPATH when you run ditrit.
+
+Ditrit's name comes from pronouncing the acronym DTRT, or [Do The Right
+Thing](http://www.catb.org/jargon/html/D/DWIM.html).
+
+There are similar CGI scripts on the web
+([impressive.net](http://impressive.net/services/dtrt/),
+[aaronsw](http://www.aaronsw.com/2002/dtrt), [clemens
+radl](http://www.clemens-radl.de/dtrt/)), but they're specific to the web. More
+importantly, the user must explicitly say what they want to do - _define:_ for
+dictionary, _movie:_ for movie listings, etc. You don't have to tell Ditrit what
+you want to do; it uses heuristics to guess on its own, based on the input.
+
+Ditrit is copyright 2006 [Ryan Barrett](http://ryan.barrett.name/), and is
+distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
+

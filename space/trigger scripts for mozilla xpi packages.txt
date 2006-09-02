@@ -1,0 +1,46 @@
+trigger scripts for mozilla xpi packages
+[![mozilla.png](/space/mozilla.png)](http://mozilla.org/mozilla1.x/)[![ff_icon.png](/space/ff_icon.png)](http://mozilla.org/firefox/)[![camino.png](/space/camino.png)](http://mozilla.org/camino/)[![thunderbird.jpg](/space/thunderbird.jpg)](http://mozilla.org/thunderbird/)[![bugzilla.jpg](/space/bugzilla.jpg)](http://bugzilla.org/)
+
+I've
+been doing some development recently on the [Mozilla](http://mozilla.org/)
+[XPCOM](http://mozilla.org/projects/xpcom/) platform, and it's pretty cool.
+However, I ran into a small snag when I tried to install an [XPI
+package](http://books.mozdev.org/html/mozilla-chp-6-sect-3.html#mozilla-CHP-6-SECT-3.1).
+I built. The package itself built fine, but Mozilla just ignored me when I tried
+to use their [trigger
+script](http://books.mozdev.org/html/mozilla-chp-6-sect-3.html#mozilla-CHP-6-EX-12)
+in a web page:
+
+
+    <a href="#" onclick="InstallTrigger.installChrome(
+
+       InstallTrigger.COMPONENT, 'mypackage.xpi',
+
+       'mypackage/1.0');">
+
+     Install!
+
+    </a>
+
+After some poking around, I found that if you just link to the XPI file
+directly, it works:
+
+
+    <a href="mypackage.xpi"> Install! </a>
+
+While you're developing, you can use the shortcut of typing the file:// link,
+e.g. [file://home/ryanb/mypackage.xpi](file://home/ryanb/mypackage.xpi),
+directly into the Mozilla URL box.
+
+Happy packaging!
+
+See also:
+
+  * [linking libraries with mozilla xpcom](/space/linking libraries with mozilla
+xpcom)
+
+  * [palo alto library amazon greasemonkey](/space/palo alto library amazon
+greasemonkey)
+
+  * [change firefox's saved passwords](/space/change firefox)
+

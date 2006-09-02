@@ -1,0 +1,78 @@
+control arrow keys in rxvt, tcsh, and emacs
+[![/space/terminal.jpg](/space/terminal.jpg)](http://rxvt.org/)[![/space/tcsh_oyster_catcher.jpg](/space/tcsh_oyster_catcher.jpg)](http://tcsh.org/)[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)
+
+I
+use [rxvt](http://rxvt.org/) as my terminal, [tcsh](http://tcsh.org/) as my
+interactive shell, and [emacs](http://gnu.org/software/emacs/) as my editor. I
+love them all.
+
+However, for a long time, I mostly used the default key bindings in tcsh and
+emacs, which are different for a few things. The most noticeable was moving
+forward and backward by whole words, instead of characters. I used Alt-B and
+Alt-F in tcsh, since those were the defaults. They work in emacs too, but I used
+Control-Left and Control-Right in emacs since I grew up on Windows. (Go ahead
+and laugh. :P)
+
+Recently, I got sick of this and figured out how to get control and arrow keys
+working in tcsh and emacs -nw, inside rxvt. When rxvt sees Control-Left and
+Control-Right, it translates them to Meta-O, d and Meta-O, c before passing them
+to the running application.
+
+So, I just added these lines to [my
+.cshrc](http://ryan.barrett.name/dotfiles/.cshrc):
+
+
+    ; rxvt's keycodes for C-<left> and C-<right> are M-O d and M-O c,
+
+    (global-set-key [(meta O) (d)] 'backward-word)
+
+    (global-set-key [(meta O) (c)] 'forward-word)
+
+They should work for any csh derivate, not just tcsh. I also added these lines
+to [my .emacs](http://ryan.barrett.name/dotfiles/.emacs):
+
+
+    bindkey "^[Od" backward-word  \# control-left
+
+    bindkey "^[Oc" forward-word   \# control-right
+
+and I added these to my [my
+.inputrc](http://ryan.barrett.name/dotfiles/.inputrc) for bash and other apps
+that use readline:
+
+
+    "\eOd": backward-word
+
+    "\eOc": forward-word
+
+Now control and the arrow keys should skip words, like god intended, even inside
+your terminal! This is especially useful when I'm ssh'ed into remote, headless
+servers, and using my [minimal .emacs for fast startup](/space/minimal .emacs
+for fast startup).
+
+I made a halfhearted attempt to find xterm's keycodes for Control-Left and
+Control-Right, but they eluded me. C-h k (ie describe-key) in emacs doesn't even
+catch them at all!
+
+References:
+
+  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs
+keybindings in GNU screen)
+
+  * [Emacs keybindings with number keys](/space/Emacs keybindings with number
+keys)
+
+  * [Emacs keybindings in firefox](/space/Emacs keybindings in firefox)
+
+  * [Emacs and remote X Windows](/space/Emacs and remote X Windows)
+
+  * [Terminals and Keymapping](http://www.white.nu/~jwhite/keymapping/)
+[white.nu]
+
+  * [Rxvt Technical
+Reference](http://www.mit.edu/afs/sipb/project/outland/doc/rxvt/html/refer.html)
+[mit.edu]
+
+  * ["control left in emacs in rxvt" mailing list
+post](http://sources.redhat.com/ml/cygwin/2003-09/msg00545.html) [redhat.com]
+

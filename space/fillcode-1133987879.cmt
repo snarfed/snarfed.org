@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>fillcode-7</title>
+<ipaddress></ipaddress>
+<author>ashawley</author>
+<link>/space/ashawley</link>
+<email></email>
+<source></source>
+<pubDate>1133987879</pubDate>
+<description>
+Rather than defining a mode and using hooks you can just set `fill-paragraph-function' to the desired "fillcode" function.
+See the command help on `fill-paragraph' at `C-h f fill-paragraph'.
+</description>
+</item>

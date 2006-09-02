@@ -1,0 +1,28 @@
+acoc.conf for context diffs
+[![/space/acoc_top.png](/space/acoc_top.png)](http://www.caliban.org/ruby/acoc.shtml)
+
+For the impatient:  
+[.acoc.conf](/space/acoc.conf) for coloring context diffs  
+[Patch](/space/acoc-diff-context.patch) for acoc 0.7.1  
+
+[Acoc](http://www.caliban.org/ruby/acoc.shtml) is one of my favorite \*nix tools.
+It adds color to common commands like ls, diff, grep, make, and top. This
+drastically [improves their
+usability](http://www.colormatters.com/usability.html). It's also extensible, so
+it's easy to color new programs and change colors for existing programs.
+
+For example, acoc 0.7.1 includes rules for coloring [unified format
+diffs](http://www.gnu.org/software/diffutils/manual/html_node/Unified-Format.html).
+However, it doesn't have a rule for "changed" lines, which start with ! and are
+unique to [context format
+diffs](http://www.gnu.org/software/diffutils/manual/html_node/Context-Format.html#Context%20Format).
+To color those lines, add this to your _~/.acoc.conf_:
+
+
+    [diff,rcsdiff/t,cvs diff/t,p4 diff/t]
+
+    /^([!*].*)/        yellow
+
+[This patch](/space/acoc-diff-context.patch) adds the
+rule to acoc 0.7.1.
+

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>gaim null protocol plugin-9</title>
+<ipaddress></ipaddress>
+<author>ryan</author>
+<link>/space/ryan</link>
+<email></email>
+<source></source>
+<pubDate>1152293018</pubDate>
+<description>
+sure! the
+&lt;span class="nobr"&gt;&lt;a href="http://gaim.sourceforge.net/api/struct__GaimPluginProtocolInfo.html#891f848d261f2c4ca934c1563ac7336a"&gt;send_im&lt;/a&gt;&lt;/span&gt;
+function that you register in the
+&lt;span class="nobr"&gt;&lt;a href="http://gaim.sourceforge.net/api/struct__GaimPluginProtocolInfo.html"&gt;GaimPluginProtocolInfo&lt;/a&gt;&lt;/span&gt;
+is
+called after a user sends an IM, but &lt;i class="italic"&gt;before&lt;/i&gt; it's printed to the chat
+window.&lt;p class="paragraph"/&gt;if you want code to run &lt;i class="italic"&gt;after&lt;/i&gt; it's sent and printed to the chat
+window, try
+&lt;span class="nobr"&gt;&lt;a href="http://gaim.sourceforge.net/api/signals_8h.html"&gt;registering a handler&lt;/a&gt;&lt;/span&gt;
+for the 
+&lt;span class="nobr"&gt;&lt;a href="http://gaim.sourceforge.net/api/conversation-signals.html#sent-im-msg"&gt;sent-im-msg&lt;/a&gt;&lt;/span&gt;
+signal.
+</description>
+</item>

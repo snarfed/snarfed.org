@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>gmail vs pine-11</title>
+<ipaddress></ipaddress>
+<author>ryan</author>
+<link>/space/ryan</link>
+<email></email>
+<source></source>
+<pubDate>1144353075</pubDate>
+<description>
+hi christine! good point. i have tried using pine as my MUA (ie email client) and gmail as my backend email provider, through POP. i actually found it slow, especially searching. IMAP supports most kinds of searching natively, which makes it much faster, assuming the server is halfway decent.&lt;p class="paragraph"/&gt;still, that was a while ago. i should try it again.&lt;p class="paragraph"/&gt;also, many people have noted that pine is just a MUA, while gmail is both a MUA and a mail provider backend. this article was meant to compare just the MUA part of gmail.
+</description>
+</item>

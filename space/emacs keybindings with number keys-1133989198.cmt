@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>emacs keybindings with number keys-1</title>
+<ipaddress></ipaddress>
+<author>ashawley</author>
+<link>/space/ashawley</link>
+<email></email>
+<source></source>
+<pubDate>1133989198</pubDate>
+<description>
+Use vectors:&lt;p class="paragraph"/&gt; (global-set-key &lt;a href='/space/?C-1'&gt;?C-1&lt;/a&gt; 'foo)&lt;p class="paragraph"/&gt;See "Key Bindings" in the Emacs Manual.
+</description>
+</item>

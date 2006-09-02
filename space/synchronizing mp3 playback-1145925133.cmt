@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>synchronizing mp3 playback-6</title>
+<ipaddress></ipaddress>
+<author>Guest</author>
+<link>/space/Guest</link>
+<email></email>
+<source></source>
+<pubDate>1145925133</pubDate>
+<description>
+Any chance of an alpha yet, guys?  I'm really interested in seeing this work.  I've tried muxing with Shoutcast, running two instances of Winamp on the server (one to run shoutcast, the other to client) and simultaneously listening on a remote machine.  It works to within 250ms I'd say if you stop and start the stream to reset both clients but it's still noticeable.&lt;p class="paragraph"/&gt;Thanks!&lt;p class="paragraph"/&gt; &lt;i class="italic"&gt;- FSL&lt;/i&gt;
+</description>
+</item>

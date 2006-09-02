@@ -1,0 +1,56 @@
+snipsnap 1.0b1 virtual hostname patch
+[![snipsnap.png](/space/snipsnap.png)](http://snipsnap.org/)[![jetty.png](/space/jetty.png)](http://jetty.mortbay.com/)
+
+For the impatient:  
+[Patch for SnipSnap
+1.0b1](/space/snipsnap-1.0b1-vhost.patch)  
+[SnipSnap 1.0b1
+source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b1-uttoxeter-20040914-src.tgz)  
+[Ant](http://ant.apache.org) (needed to build SnipSnap)
+
+[Patching
+FAQ](http://www.gnu.org/software/diffutils/manual/html_node/Merging-with-patch.html)
+
+I use [SnipSnap](/space/SnipSnap) as the web server for this site, and I love
+it. However, nothing's perfect, even SnipSnap.
+
+SnipSnap runs on top of [Jetty](http://jetty.mortbay.org/), a Java web server
+and servlet container. Jetty is highly configurable, which I take advantage of
+to do [virtual host redirection](/space/virtual host redirection). Specifically,
+I use a single instance of Jetty to serve a SnipSnap instance on
+[snarfed.org](http://snarfed.org/), and static HTML on
+[ryan.barrett.name](http://ryan.barrett.name/).
+
+This worked great until I upgraded to SnipSnap 1.0b1. Its Jetty initialization
+code has a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-387) that prevents
+virtual hostname redirection. :/
+
+I've written a small
+[patch](/space/snipsnap-1.0b1-vhost.patch)
+that fixes this. To use it with an existing SnipSnap installation, download the
+[SnipSnap 1.0b1
+source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b1-uttoxeter-20040914-src.tgz),
+apply the patch, build SnipSnap with [Ant](http://ant.apache.org), then copy the
+newly rebuilt snipsnap-server.jar into your SnipSnap's lib/ subdirectory, over
+the existing jar. Restart SnipSnap and you should be good to go!
+
+See also:
+
+  * [virtual host redirection](/space/virtual host redirection)
+
+  * [servlets with snipsnap](/space/servlets with snipsnap)
+
+  * [snipscrape](/space/snipscrape)
+
+  * [snipsnap comment without login patch](/space/snipsnap comment without login
+patch)
+
+  * [snipsnap macros](/space/snipsnap macros)
+
+  * [snipsnap recent-changes snip name patch](/space/snipsnap recent-changes
+snip name patch)
+
+  * [snipsnap register without email](/space/snipsnap register without email)
+
+  * [snipsnap script macro and python](/space/snipsnap script macro and python)
+

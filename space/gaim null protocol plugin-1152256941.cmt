@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>gaim null protocol plugin-8</title>
+<ipaddress></ipaddress>
+<author>Guest</author>
+<link>/space/Guest</link>
+<email></email>
+<source></source>
+<pubDate>1152256941</pubDate>
+<description>
+hi Ryan,&lt;p class="paragraph"/&gt;         Hey here is my problem.&lt;p class="paragraph"/&gt;We have written our own protocol and registered onto the Gaim as a part of our project. For printing the message onto the chat window i used the same function used in Null Protocol i.e. serv_got_im. But with that function it is printing the the response first and request sent by the user next.We want the other way .&lt;p class="paragraph"/&gt;        So can you help us in this&amp;#8230;
+By the way i am varun's team mate.&lt;p class="paragraph"/&gt;Thanks in Advance...&lt;p class="paragraph"/&gt;
+PS: u can send to vyshu2112@gmail.com&lt;p class="paragraph"/&gt;
+ &lt;i class="italic"&gt;- vyshnavi&lt;/i&gt;
+</description>
+</item>

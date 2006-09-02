@@ -1,0 +1,836 @@
+CodeCon 2006 notes
+[![codecon_2006_logo.png](/space/codecon_2006_logo.png)](http://codecon.org/2006/)
+
+I
+went to [CodeCon 2006](http://codecon.org/2006/), and I had a great time. Here
+are my rough, incomplete, unedited notes on the projects presented this year.
+[Dan](http://kodiak.brainymonkey.com/) has also posted [his
+notes](http://kodiak.brainymonkey.com/?m=200602). (If you're interested, I also
+have [notes from Codecon 2005](/space/Codecon 2005 notes) and [Codecon
+2004](/space/Codecon 2004).)
+
+### [Day 1](/space/CodeCon+2006+notes#day1)
+
+  * [Daylight Fraud Prevention (server-side phishing
+prevention)](/space/CodeCon+2006+notes#dfp)
+
+  * [SiteAdvisor (automated web safety
+ratings)](/space/CodeCon+2006+notes#siteadvisor)
+
+  * [VidTorrent (BitTorrent for
+streaming)](/space/CodeCon+2006+notes#vidtorrent)
+
+  * [Localhost (p2p filesharing based on
+ranking)](/space/CodeCon+2006+notes#localhost)
+
+  * [Truman (malware sandbox)](/space/CodeCon+2006+notes#truman)
+
+### [Day 2](/space/CodeCon+2006+notes#day2)
+
+  * [delta (minimizes input datasets)](/space/CodeCon+2006+notes#delta)
+
+  * [Djinni (approximating hard problems)](/space/CodeCon+2006+notes#djinni)
+
+  * [iGlance (p2p videoconferencing and screen
+sharing)](/space/CodeCon+2006+notes#iglance)
+
+  * [OASIS (anycast by finding local mirrors)](/space/CodeCon+2006+notes#oasis)
+
+  * [Query By Example (just what it sounds
+like!)](/space/CodeCon+2006+notes#qbe)
+
+### [Day 3](/space/CodeCon+2006+notes#day3)
+
+  * [Dido (dynamic phone menus on asterisk)](/space/CodeCon+2006+notes#dido)
+
+  * [Deme (group collaboration webapp)](/space/CodeCon+2006+notes#deme)
+
+  * [UniConf (unified system configuration)](/space/CodeCon+2006+notes#uniconf)
+
+  * [Remailer-To-Go (disposable anonymous
+remailers)](/space/CodeCon+2006+notes#remailer-to-go)
+
+  * [Monotone ("stress-free" source
+control)](/space/CodeCon+2006+notes#monotone)
+
+  * [Rhizome (wiki framework)](/space/CodeCon+2006+notes#rhizome)
+
+  * [Elsa/Oink/Cqual++ (static analysis for
+_dataflow_)](/space/CodeCon+2006+notes#elsa)
+
+<a name="day1" />
+### **Day 1** [![Icon-Permalink.png](/Icon-Permalink.png)](#day1)
+
+<a name="dfp" />
+### Daylight Fraud Prevention ([example](http://bank.securescience.net/bank/)) [![Icon-Permalink.png](/Icon-Permalink.png)](#dfp)
+
+
+_Anti-Phishing prevention, tracking and detection through real-time web-based
+forensics._
+
+[http://www.securescience.net/](http://www.securescience.net/)
+
+wow he's going fast. ok, catching up...
+
+types of phishing:
+
+  * impersonate (standard)
+
+  * forward (mitm through http and post, more sophisticated)
+
+  * popup (in front of real site; mostly deprecated)
+
+current solutions are insufficient:
+
+  * bounce email monitoring (since email headers are forged)
+
+  * whack-a-mole on phishing hosts
+
+  * detect known phishing email signatures (like virus scanners)
+
+  * toolbars with host blacklits and heuristics (have to push updates)
+
+basically like squid (server-side) for fraud prevention. single apache host
+w/modules. sniffs headers, compares referrers, etc.
+
+has built-in phishing creation tools for testing!
+
+imitate: doesn't allow logins from non-whitelisted referrers looks for hijacked
+images, x'es them in red (or whatever) for visibility phishing emails are often
+html, so this can be done _in the phishing email_! cool.
+
+forward: looks at login frequency, number of different logins, etc. from
+individual hosts and blacklists above threshold
+
+does proxy detection through java, depends on clients having java configured
+incompletely, as is common by default
+
+proactively prevents mirroring w/dynamic links and client monitoring interesting
+- can _hide_ dynamic links, dynamic hijacked images, etc. as tracking images,
+e.g. for marketing.
+
+very solid. i especially like putting this on the asp server, _not_ on the
+client. this should come built into apache, or at least in an established apache
+distribution.
+
+business case is tricky though. it perfectly complements
+[schneier](http://schneier.com/) et al saying that this will only get fixed if
+_companies and service providers_ are liable, not the consumer.
+
+sane philosophy: no silver bullet, just lots of combined signals, weighted
+appropriately
+
+lots can be automated. others have simple heuristics. others can be hard-coded
+(aim, mailing lists, etc.). others handled with data entry farms in china/india.
+some problems are hard for programs, easy for people. amusing cost/benefit
+analysis. :P
+
+### SiteAdvisor 
+<a name="siteadvisor" />
+[![Icon-Permalink.png](/Icon-Permalink.png)](#siteadvisor)
+
+
+_Pioneering Web safety by testing and rating every site, download, and form on
+the Internet._
+
+[http://www.siteadvisor.com](http://www.siteadvisor.com)
+
+honeypot for malware, spam, etc. except active, not passive
+
+lots of attention to usability and accessibility!
+
+browser extensions and pages that distill info down into single, analog
+red-yellow-green metric, etc
+
+annotating search results (google etc) w/very simple red/yellow green icon, more
+info on popup
+
+very cool since target audience is not extremely computer literate
+
+crawling alone is interesting problem - which sites to focus on?
+
+also combining factors and weights from different sources (apps, email,
+exploits, link analysis, popups) to evaluate single site(s)
+
+client-side machine state monitoring, a la tripwire, isn't exactly sexy, but
+very necessary. (watch for anything unexpected).
+
+monitors site content and behavior over time, a la tripwire. if interesting
+things happen (e.g. server upgrade to version w/exploit), route for more
+in-depth monitoring.
+
+working with grey-hat and white-hat security orgs to share info.
+
+very cool, but adoption is going to be tough. target audience won't know they
+need it, so they won't get it. :/
+
+video of spyware installing, fake anti-spyware installing through wmf exploit,
+windows ineffectually noticing spyware, etc. hilarious.
+
+ppl in the audience worry that siteadvisor itself fits the conventional
+definition of spyware; it's only distinguished by its intent. funny.
+
+<a name="vidtorrent" />
+### VidTorrent / Peers  [![Icon-Permalink.png](/Icon-Permalink.png)](#vidtorrent)
+
+_A scalable real-time p2p streaming protocol._
+
+[http://viral.media.mit.edu/index.php?page=vidtorrent](http://viral.media.mit.edu/index.php?page=vidtorrent)
+
+[http://viral.media.mit.edu/index.php?page=peers](http://viral.media.mit.edu/index.php?page=peers)
+
+basically multicast on top of bittorrent
+
+related academic work (bullet, splitstream, etc.) don't work in practice
+
+bittorrent is opposite, evolved from what worked in the wild. only problem is
+it's for files, not streams.
+
+wrote "peers," a platform/language for rapid development of p2p protocols.
+basically provides continuations for _asynchronous_ rpc. currently has at least
+python bindings. seems like a smaller, less powerful version of
+[p2](http://p2.cs.berkeley.edu/)...but still cool.
+
+includes nat traversal and rendezvous support. they didn't give its success
+percentage in the field though. :/
+
+stream is chunked continuously that it can be carried by multiple nodes. nodes
+are organized into standard overlay network.
+
+for live streams, how do nodes _get_ the stream ahead of time? or do they not,
+and delay is variable?
+
+a: they subscribe to stream source. takes advantage of asymmetric b/w of typical
+dsl or cable - need enough downstream b/w to receive full stream, but only need
+enough upstream to send partial stream (just its chunks)
+
+tested with ns (but w/o failure injection). network visualization was fun
+
+demo broke, couldn't watch actual video...but a breakage means there's at least
+real code, right? :P
+
+trees are organized w/bandwidth and latency (rtt) probes. subscribers keep
+buffer per tree because tree needs _all_ transmitting nodes
+
+these guys knew their stuff wrt real-world p2p overlay networks, network
+distance and b/w / latency behavior, etc. very cool.
+
+<a name="localhost" />
+### Localhost  [![Icon-Permalink.png](/Icon-Permalink.png)](#localhost)
+
+_A popularity-based P2P file sharing system based on BitTorrent_
+
+[http://p2p.cs.mu.oz.au/software/Localhost/](http://p2p.cs.mu.oz.au/software/Localhost/)
+
+slides and presenter seem a little basic. quotes like "basically a big C drive"
+and defining the word decentralized. he probably just way underestimated the
+audience. :P
+
+starts off with lots and lots...and lots...of background:
+
+  * % of web traffic by type (ftp, email, http, p2p) over history
+
+  * defined p2p, decentralized, peer, etc. (!)
+
+  * described napster (direct sharing, centralized index) and even client ui
+
+  * mentioned keyword poisoning as drawback of index
+
+  * explained bt's chunking, lack of index, instead ad hoc web sites (suprnova)
+
+provides a hierarchical, versioned filesystem of torrents. edits create new
+versions, and "popularity" of each version is measured w/individual user prefs.
+default view is most popular one.
+
+ui is web-based, daemon runs on localhost (like gds)
+
+e.g. comparing popularity of dir w/ or w/o a given file can measure popularity
+of that file
+
+each version is implemented as a file distributed by bittorrent. fs itself is
+stored in kademlia. each user can store a pref for each dir; (ip, dir) pref is
+key, dir contents are value.
+
+users are identified by IPs. what about NATs and proxies?!?
+
+brad templeton asked, what prevents ppl from spamming the prefs and making their
+own stuff popular? thomas: nothing.
+
+however, there are a number of existing approaches. one of my favorites is [ed
+felten](http://www.cs.princeton.edu/~felten/)'s ratings idea. soon disk and
+bandwidth will be effectively unlimited, so we could basically push all content
+to everyone. then the problem isn't distribution, it's vetting and rating the
+content to prevent poisoning.
+
+i can't find anything about this on [his
+site](http://www.cs.princeton.edu/~felten/), though...not even abstract. does
+anyone know of one?
+
+<a name="truman" />
+### Truman  [![Icon-Permalink.png](/Icon-Permalink.png)](#truman)
+
+_An open-source behavioral malware analysis sandnet_
+
+[http://www.lurhq.com/truman/](http://www.lurhq.com/truman/)
+
+skipped it. couldn't take a third malware talk in a day.
+
+evidently i skipped the wrong talk, though. friends said this was actually
+really good. lots of interesting, detailed info about how malware works, and
+also a fair amount about vm detection.
+
+<a name="day2" />
+### **Day 2** [![Icon-Permalink.png](/Icon-Permalink.png)](#day2)
+
+<a name="delta" />
+### delta  [![Icon-Permalink.png](/Icon-Permalink.png)](#delta)
+
+_Minimizing "interesting" files subject to a test of their interestingness._
+
+[http://delta.tigris.org/](http://delta.tigris.org/)
+
+many large systems and tools take large inputs (e.g. search engines, NLP,
+compilers). when the tool crashes on a large input, how do you isolate the part
+of the input that broke it?
+
+define an "interesting" input as one that has the specific result - e.g. not
+just any error or crash, but the exact crash, stacktrace, core dump, etc. that
+you're trying to fix.
+
+can specify in a shell script
+
+algorithm: for each granularity g from 0 to log(2) N partition the input into
+2^g parts for each part is the input w/o the part still "interesting"? if so,
+dump that part
+
+results in a "one minimal" input: removing _any line_ would make the input not
+interesting!
+
+my god. in the first _five minutes_, he's presented a very very simple algorithm
+(and gave an example!) that solves a real problem.
+
+dirt simple, very well explained, clear motivation, solution, and application!
+wow. very very impressive. brute force, but (and) it works!
+
+more interesting. can you use this to find bugs that aren't dependent on input,
+by selectively removing parts of code, until you end up w/just the broken code?
+
+provide "interesting" test to delta as flex filter
+
+concrete example: gcc choked on 250kloc codebase, delta reduced it to two pages!
+
+"topformflat": easy optimization for code. use really simple inherent structure,
+blocks defined by curly braces in c++, to pick parts to remove while maintaining
+syntactic integrity.
+
+many applications if you can configure and present them to delta
+
+e.g. instrumenting java _binaries_ (e.g. jvm) - give delta config file w/all
+jars, delta reduced to just jars that induced failure
+
+basically simulated annealing - large continuous subpsace, measurement of
+goodness, random local movement, and "temperature" for size of moves
+
+it's evolution! goodness == fitness function, random local moves == mutation,
+iteration == trying input w/o parts. "temperature" is new though.
+
+delta: goodness == interestingness, random local moves == mutation, iteration
+reproduction
+
+gcc people are _very_ happy w/this, they use it to reduce most bug reports
+
+so so so cool, mostly because a) it's dirt simple and b) it works!
+
+interesting q's: extending topformflat for other langs/data types, how to use
+delta for runtime failures, best: delta-minimize input, then delta-minimize code
+to just part that exhibits bug!
+
+<a name="djinni" />
+### Djinni  [![Icon-Permalink.png](/Icon-Permalink.png)](#djinni)
+
+_Approximating Solutions to Nigh-Unsolvable Problems--Fast!_
+
+[http://sixdemonbag.org/Djinni](http://sixdemonbag.org/Djinni)
+
+covered complexity theory and NP-completeness, etc. in a minute, max. heh.
+
+explained local search over state space of possible solns, fitness fns, local
+minima/maxima, etc.
+
+fitness fn must be:
+
+  * cheap. ay, for np problems, how? seems like halting problem
+
+  * comparable (sure, quantify based on e.g. time)
+
+current approaches to local search:
+
+  * hill climbing (dumb, simple)
+
+  * annealing (random changes plus hill climbing)
+
+  * genetic (annealing w/combining solutions, fitness fn has randomness)
+
+well-prepared and practiced talk, good speaker, rehearsed jokes, plus physical
+comedy! other speaker literally acted out local search w/chairs and stools,
+pretended to be drunk for annealing, etc.
+
+djinni isn't any new algs, it's a framework for applying local search algs to
+arbitrary problems
+
+spent a long type talking about how the World, Solution, and Engine types are
+decoupled, as opposed to current state of the art. is that really such a big
+breakthrough?
+
+spent more time explaining type-safety and compile time vs. runtime, runtime and
+compile time polymorphism (ie virtual methods vs. overloading)...why are they
+explaining this?!?
+
+more good jokes about federal law, NP-completeness and travelling salesmanship
+vs. energy in the universe ("thermodynamics is such a downer")
+
+demo: got an approximate soln to 100-city TSP, _within 1% of optimal_, in tens
+of seconds. not bad.
+
+still, it only finds instances of solutions, not algorithms. that makes this way
+way way less interesting. boo.
+
+it's "the first" open source implementation of the Ohlmann-Thomas Compressed
+Annealing algorithm (INFORM 2006)
+
+aimed at embedded systems w/low executable size (48k) and memory req'ts (3 \*
+sqrt of problem size)
+
+not really my bag, but a friend who works in this area says he was impressed.
+he's considering trying it out.
+
+<a name="iglance" />
+### iGlance  [![Icon-Permalink.png](/Icon-Permalink.png)](#iglance)
+
+_Open source push-to-talk videoconferencing and screen-sharing_
+
+[http://www.iglance.com/](http://www.iglance.com/)
+
+remote collaboration tool a la groove. oriented toward 1-to-1, not groups. _not_
+based on [red swoosh](http://redswoosh.com/)'s p2p platform.
+
+i know david (and mike, below) from the
+[p2p-hackers](http://zgp.org/mailman/listinfo/p2p-hackers). they both do great
+work. i'm already familiar w/iglance, based on the discussions david and i and
+others have had on p2p-hackers, so this will probably be short.
+
+iglance uses lots of current tech - p2p, nat traversal, shared whiteboard /
+browser, video conferencing, voip, etc - but focuses on unifying them into a
+good user experience.
+
+specifically, iglance attempts to integrate video into the overall experience
+
+tries to replicate implicit real-world conversation mores:
+
+  * don't explicitly call someone, just start talking
+
+  * don't set away msg, just go
+
+  * real-world privacy stuff: either both ppl can see each other or neither
+
+also more natural twists on vnc-style screen and input sharing:
+
+  * can share _individual windows_, not whole desktop
+
+  * instead of fighting over single mouse pointer, each remote user has their
+
+own pointer, visible to everyone, but only one has control at any time.
+
+tries hard to integrate easily w/existing apps (sharing, pointing, etc)
+
+i like this because david knows what he's doing wrt the underlying tech, but he
+rightly see it as a means to an end, not an end in and of itself.
+
+went on to mention specific "hot tech" - sip/simple, speex/theora, and
+specifically (udp) nat traversal. in a nutshell, he didn't like stun, turn, and
+ice - more theory than practice - so he rolled his own. details in the
+[p2p-hackers archives](http://zgp.org/pipermail/p2p-hackers/2005-December/).
+
+<a name="oasis" />
+### OASIS  [![Icon-Permalink.png](/Icon-Permalink.png)](#oasis)
+
+_Anycast for Any Service_
+
+[http://www.coralcdn.org/oasis/](http://www.coralcdn.org/oasis/)
+
+i know mike from [p2p-hackers](http://zgp.org/mailman/listinfo/p2p-hackers) too.
+he's the guy behind nyu's [coral](http://www.coralcdn.org/).
+
+presentation clearly reflects mike's academic background. talk's organization
+(motivation => related work => design => implementation => performance
+measurements => future work), citations, tone, etc.
+
+oasis attempts to provide automated local mirror/replica selection (instead of
+making users choose mirror, a la sourceforge or download.com). used as next-gen
+backend for coral.
+
+current solns:
+
+  * probe all mirrors for bandwidth/latency product (expensive, gets stale fast)
+
+  * define euclidean space (a la vivaldi and meridian), assign coordinates to
+hosts based on others (gets stale fast)
+
+he didn't come out and say so, but mike's pretty down on coordinate systems for
+network distance in general. he uses them roughly in oasis, but with a healthy
+dose of skepticism :P
+
+uses DNS frontend for resolver mechanics, oasis backend for actual local
+redirection smarts
+
+two levels of locality:
+
+  * client issues DNS req to oasis server, it redirects to nearby oasis server
+
+  * client re-issues DNS req to nearby server, it resolves to nearby host
+
+how to determine regions? ip addr isn't good enough, too many are dynamic.
+instead, use prefix, specifically grouping by AS as defined by BGP.
+
+map subnets to define regions based on network distance, then do search over
+given replicas by region to find closest
+
+minimizing active probing is a big thing, so spread probe results (regions and
+specific node coordinates) through oasis core by epidemic gossipping instead of
+by active discovery
+
+deployed on planetlab over ~300 hosts
+
+discussed coral and opendht. sure. i knew they used oasis...
+
+...but whoa. i hadn't heard about ocala before. it's intended to be an overlay
+network standard, deployed as an intermediary so that legacy transports (tcp,
+udp) and clients (ssh, irc, firefox) work w/o any changes on the client. _very_
+cool.
+
+<a name="qbe" />
+### Query By Example  [![Icon-Permalink.png](/Icon-Permalink.png)](#qbe)
+
+_Data mining operations within PostgreSQL_
+
+[http://pgfoundry.org/projects/qbe](http://pgfoundry.org/projects/qbe)
+
+this was a google summer of code project! chris lavoie mentored. yay.
+
+motivation is pretty clear. querying and data mining is big business.
+
+however, creating good unstructured keyword queries is hard
+
+  * synonyms (record, code, etc.)
+
+  * syntactic ambiguity (newspaper headline: "Eye Drops Off Shelf")
+
+  * namespace collisions (apache: indian tribe, helicoptor, or web server?)
+
+ranking is hard too. she even slams pagerank. aww... :P
+
+clustering and clsasification are known problems w/known solns, as is adding new
+data to existing datasets' clusters and classifications.
+
+finding discriminant fns for clustering/classifying is dosable, but finding ones
+that handle _new_ data well is very hard.
+
+introducted support vector machines, gave background. whee.
+
+all of this is already done and works well. query by example takes the existing
+clustering and classification stuff and provides a new interface to it,
+specifically SQL by example.
+
+add "EXAMPLE KEY" option for WHERE and ORDER BY:
+
+  * classical music:
+
+
+    SELECT title FROM songs
+
+      WHERE EXAMPLE KEY title LIKE
+
+      ("Moonlight Sonata", "Prelude in C\# Minor");
+
+  * people by how close to your age they are
+
+
+    SELECT name FROM people
+
+      ORDER BY EXAMPLE KEY ((20 > 5), (22 > 50));
+
+integration w/postgres was easy,
+
+  * new syntax in parser
+
+  * learning function in analyzer
+
+  * leave optimizer as is
+
+  * results engine in executor
+
+unfortunately, it only works on numeric values so far. sigh. as jonathan noted,
+you can do those fairly well already w/ranges. most of the value is in the
+clustering on unstructured text fields. get that working!
+
+demo was very effective. run a sql shell, connect to a postgres db, run a few
+WHERE and ORDER BY queries w/EXAMPLE KEY, and they worked as advertised. cool!
+
+great application of well-understood research (ML) to real-world problems (sql
+dbs and data mining). not my bag, but i have to run ad-hoc reports over sql dbs
+at work way too often, so i know this is very applicable and timely.
+
+...ok, meredith just wrapped up answering the questions and, holy shit, len just
+proposed to her. in front of the entire conference.
+
+wow.
+
+len's proposal was short and sweet, but totally heartfelt. meredith said yes, of
+course, and everyone jumped up and gave them a standing ovation. that's amazing.
+they were both overwhelmed, really emotional, and pretty much speechless. i'm
+even a little choked up. \*sniff\*!
+
+congratulations, len and meredith!!!
+
+<a name="day3" />
+### **Day 3** [![Icon-Permalink.png](/Icon-Permalink.png)](#day3)
+
+up until now, len had spent his remarks mostly on thanking sponsors, etc. this
+morning he took the stage and talked a little more. he first asked if people had
+had fun at the [CCCP](http://communitycolo.net/) charity dinner (yes!) and at
+[Nerd Salon](http://www.nerdsalon.net/) at [Annie's Social
+Club](http://myspace.com/anniessocialclub) (which I didn't make it to :/). he
+went off on Annie's Social Club, and rightfully so, since they double-booked
+Nerd Salon with a disruptive karaoke club, and the owner was really
+uncooperative.
+
+they called the W hotel right then and asked if they could provide a venue on
+the spot, and surprisingly, they did. wow, props to the W.
+
+he then talked about the history (him and bram and jonathan, nv, no starch
+press, etc.), the "good old days," why this fits the community more than
+industry and academic conferences, and specifically the price and how they
+intend to keep it at the under $100 price point for obvious reasons.
+
+and then the real final thanks to the volunteers, sponsors, organizers, etc...
+
+<a name="dido" />
+### Dido  [![Icon-Permalink.png](/Icon-Permalink.png)](#dido)
+
+_A platform for writing dynamic voice menu systems, in Perl_
+
+[http://fairpath.com/dido/](http://fairpath.com/dido/)
+
+standard motivation, recorded menus w/push-button interaction suck. he wants to
+write good IVRs (integrated voice responders?) based on asterisk.
+
+for demo, ran asterisk on his laptop and connected a real phone. cool! had a
+canned IVR with long slow menus, and waiting to hear the option you wanted was
+frustrating. all too familiar. it hung often though. :/
+
+dido lets you create menus dynamically, use text-to-speech (with festival), and
+reorder options based on popularity. even better, it can _customize_ the
+orderings for each caller, identified by their phone number (w/caller id).
+
+weird though. it doesn't just present the number=>option mappings in a different
+order, it actually changes the mappings itself! strange, seems like bad
+usability. why?!?
+
+asterisk's current extentions.conf language is very very weak - runs external
+processes for loops and branching, all vars are global, etc. (brad templeton
+notes that mark, the asterisk developer (?), switched it out for a better
+language in the latest version.)
+
+ok, so the motivation is crystal clear, the demo is cool, the code clearly works
+(since it breaks! :P) however...the talk wasn't really organized at all, and he
+didn't have slides! he tried to debug the demo while he talked (and trailed off
+often), didn't give much background, jumped straight into implementation
+details, etc.
+
+dido was understandable _despite_ the lack of a complete demo or prepared talk,
+which speaks to the quality of the project itself.
+
+however, this is just a band-aid on a machanism (IVRs) that really needs to be
+rethought from the ground up.
+
+<a name="deme" />
+### Deme  [![Icon-Permalink.png](/Icon-Permalink.png)](#deme)
+
+_A free/open-source platform for online group deliberation and dialogue_
+
+[http://www.groupspace.org](http://www.groupspace.org)
+
+i know ben and brendan from stanford undergrad and TAing, and todd and
+[kieran](http://civicspacelabs.org/home/blog/kieran) know each other from the
+CMS community and the CHI conference in portland, so we got the low down on deme
+before their presentation.
+
+we also heard the war stories of them staying up until 3 saturday night to
+finish the slides and check in code on major new features. ah, the fine
+tradition of preparing presentations and papers at the last minute. :P
+
+some traditional group tasks (running meetings, making budgets, etc.), as well
+as _deliberation_ online, really require in-person interaction.
+
+as that gets harder, you see chilling effects on certain types of groups,
+dependence on locality, etc.
+
+current solns (mailing lists, wikis, bulletin boards) are ok for
+_communication_, but not _action_. goal is to enable collaborative action.
+
+provides basic stuff since it's necessary: message boards, chat (ajax), file
+posting, etc.
+
+_new_ stuff is chat based on agendas, chat based on project planning,
+split-screen displays, flexible polls, threaded commenting in docs, etc.
+
+attention to usability w/explicit affordances and multiple "views" on data.
+
+demo showed groups, shared doc creation and commenting, meetings, decision
+making, announcements, and (whee) ajax chat.
+
+ajax in other places - doc editing, polls. a few interesting javascript
+development tips and tricks, optimizing to browser-specific calls, and a pretty
+significant oo library for javascript.
+
+looks very complicated and powerful, probably too much so for target audience of
+semi-computer-literate users. interface is so busy it's overwhelming.
+
+evolutionary in most parts, but lots of cool ideas. focus on group action is
+definitely unusual and worthwhile.
+
+<a name="uniconf" />
+### UniConf  [![Icon-Permalink.png](/Icon-Permalink.png)](#uniconf)
+
+_Unified access to system, service, and application configuration._
+
+[http://open.nit.ca/wiki/index.php?page=UnConf](http://open.nit.ca/wiki/index.php?page=UnConf)
+
+(Simon Law of [Net Integration](http://www.nitix.com/), backup presenter)
+
+simplify and unify \*nix service, app, and user config and settings.
+
+deployed as a library that abstracts access to config files.
+
+has _backends_ that parse existing apps' configs (/etc, dotfiles, properties
+files, etc.) and _frontends_ that present configs in certain formats like gconf
+dbs.
+
+internal implementation is key/value pairs organized hierarchically.
+
+also supports notifications when configs change, access control, etc.
+
+huge adoption hurdle, but a noble goal. :P
+
+<a name="remailer-to-go" />
+### Remailer To Go  [![Icon-Permalink.png](/Icon-Permalink.png)](#remailer-to-go)
+
+_Disposable anonymous remailers_
+
+Len Sassaman and Miles ?
+
+len is the penultimate cypherpunk. he maintains
+[mixmaster](http://mixmaster.sf.net/), and he's strongly interested in anonymous
+remailers and anonymity on the internet in general.
+
+he wanted a bunch of small, self-contained computers w/a wifi radio that will
+automatically boot up mixmaster and advertise themselves as available remailers
+when they connect.
+
+he'd leave them in coffee shops, near open home and corporate wireless access
+points, hell, on the side of buses and trucks so that when they stop next to an
+open wap.
+
+miles took this and ran with it. he connected a cloth solar panel to a gumstick
+computer and a wireless card, determined the power req'ts (roughly two watts
+continuously), and hacked it all together. sooo amusing and fun.
+
+<a name="monotone" />
+### Monotone  [![Icon-Permalink.png](/Icon-Permalink.png)](#monotone)
+
+_Low stress, high functionality version control._
+
+[http://venge.net/monotone](http://venge.net/monotone)
+
+motivation: version control is necessary but can be horribly frustrating and
+incomprehensible.
+
+monotone attempts to do version control w/o stress. most importantly, it's
+_understandable_; you get what it's doing under the covers.
+
+universal identifier is hash of a file. the file might be an actual version of a
+file stored in monotone, a monotone manifest (repository metadata), a "revision"
+(a point in history, ie a change number, represented w/old and new manifests'
+hashes), etc.
+
+files are stored in trees, trees stored in manifests, revisions are DAG over
+manifests, increasing in time monotonically.
+
+"certs" are key/value annotations on revisions. branches implemented as certs.
+
+client workspaces are stored as single file with all file versions, manifests,
+revisions, etc., as well as full project history! standard argument is disk is
+cheap...which is true, but bandwidth isn't!
+
+hrm. they're trying really hard to convince us that monotone is simple. fair
+enough, it is, i get it. :P they'll stop right after explaining a design point
+and say that "anything you think you can do with this, you can do!" i bet, but
+i'd love to hear details!
+
+ooh, they have a _great_ algorithm for diffing forked repositories. represent
+repo as merkle trie, a tree of hashes. store leaves' hash in their nodes, then
+parents' hash is hash of concatenated childrens' hashes.
+
+to diff, start at two roots' hashes. if equal, no more diffs in the subtree. if
+different, compare childrens' hashes and recurse. when you get to leaves whose
+hashes differ, that file has a difference.
+
+odd. they seem to think that they're the first to allow synching to previous
+versions, and committing against previous versions. uh, subversion? perforce?
+most others?
+
+meh. another codecon, another version control system. good talk at least.
+
+<a name="rhizome" />
+### Rhizome  [![Icon-Permalink.png](/Icon-Permalink.png)](#rhizome)
+
+_An application stack enabling the rapid development of collaborative,
+Semantic-Web enabled applications._
+
+[http://www.liminalzone.org](http://www.liminalzone.org)
+
+basically a platform for making wiki servers. not individual wiki sites, but
+_entire wiki server codebases_.
+
+sheesh. i know engineers like building platforms and infrastructure, not
+end-user apps...but this is taking it to an extreme.
+
+python-based. uses rdf for storage, xslt for processing, xpath/xquery for
+querying. _lots_ of built-in xpath tools. served on raccoon, an rdf-based
+server.
+
+platform itself is web-based. has lots of internal reflection, query support,
+discoverability, etc. aimed at developers.
+
+similarly, can even view and edit raw rdf (at your own risk).
+
+also, webapp development - code, config, content - is done through web interface
+too.
+
+showed rdf stored on file system in file browser - behind the scenes, whee!
+
+frankly, it looks pretty conventional. it's definitely modern...but not
+especially differentiated from all of the other wikis out there. :/
+
+...it is necessary, though. every codecon has to have at least one wiki, version
+control, and security project. :P
+
+<a name="elsa" />
+### Elsa/Oink/Cqual++  [![Icon-Permalink.png](/Icon-Permalink.png)](#elsa)
+
+_A static-time whole-program dataflow analysis for C and C++_
+
+[http://www.cs.berkeley.edu/~smcpeak/elkhound/sources/elsa](http://www.cs.berkeley.edu/~smcpeak/elkhound/sources/elsa)
+
+had to leave early, so i missed this one. boo!
+

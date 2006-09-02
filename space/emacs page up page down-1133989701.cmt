@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>emacs page up page down-1</title>
+<ipaddress></ipaddress>
+<author>ashawley</author>
+<link>/space/ashawley</link>
+<email></email>
+<source></source>
+<pubDate>1133989701</pubDate>
+<description>
+I found this  note interesting.&lt;p class="paragraph"/&gt;I came from Windows land and had accepted Emacs behavior on face-value when I arrived.&lt;p class="paragraph"/&gt;The documentation you link to does say this about pc-selection-mode:&lt;p class="paragraph"/&gt;"However, using Shift together with the 'move keys' activates the region over which they move."&lt;p class="paragraph"/&gt;Seems there should be a way to customize scroll-down-mark and scroll-up-mark rather than redefining the keys.
+</description>
+</item>

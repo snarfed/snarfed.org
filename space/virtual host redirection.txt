@@ -1,0 +1,220 @@
+virtual host redirection
+[![snipsnap.png](/space/snipsnap.png)](http://snipsnap.org/)[![jetty.png](/space/jetty.png)](http://jetty.mortbay.com/)
+
+_**Update**:
+Due to a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-387), if you're using
+SnipSnap [1.0b1-uttoxeter](http://snipsnap.org/space/version-1.0b1), it requires
+a [patch](http://bugs.snipsnap.org/secure/attachment/10203/snipsnap-vhost.patch)
+for this to work. Download the [SnipSnap
+source](http://snipsnap.org/space/snipsnap-DOWNLOAD), apply the patch, run
+[ant](http://ant.apache.org), and you should be good to go!_
+
+This article is also [posted on
+snipsnap.org](http://snipsnap.org/space/virtual+host+redirection).
+
+### Introduction
+
+This document describes how to configure SnipSnap to redirect to either SnipSnap
+or static content based on hostname. The configuration is done entirely through
+Jetty.
+
+If this is _exactly_ what you need to do, feel free to skip to the end and steal
+my jetty.conf. If your setup is at all different, though, you'll need to read
+through the doc. Sorry, those are the breaks.
+
+### Background
+
+I'm in the process of deploying a SnipSnap installation at
+[http://snarfed.org/](http://snarfed.org/) , and I'm very excited about the
+possibilities. However, there's one snag. This server currently serves static
+content through [http://ryan.barrett.name/](http://ryan.barrett.name/) , and I
+need that static content to be accessible. Furthermore, to avoid breaking links,
+old URLs (such as
+[http://ryan.barrett.name/bigbrother/](http://ryan.barrett.name/bigbrother/))
+should still work.
+
+I read through the SnipSnap virtual host documentation, but I couldn't find
+anything that discussed how to serve SnipSnap stuff through one hostname and
+_static_ content through another. However, I knew that SnipSnap is based on
+Jetty, so I decided to roll my sleeves up and dive into the [Jetty
+docs](http://mortbay.org/jetty/tut/index.html).
+
+Big mistake. The Jetty docs spend most of their time on apps server, so there's
+not much about serving static HTML. Worse, the information it does have assumes
+you're writing Java code on top of Jetty. That would require writing a patch for
+SnipSnap, which is way overkill. However, the only other way to configure Jetty
+is through the jetty.conf file.
+
+Anyway, to make a long story short, I learned how to configure Jetty, managed to
+redirect based on hostname, and even had some fun! Here's how.
+
+### Problem
+
+So, pretend we have two domain names, foo.com and bar.org, that both map to our
+SnipSnap server. When people go to [http://bar.org](http://bar.org) , we want
+them to see our SnipSnap, but when they go to [http://foo.com](http://foo.com) ,
+we want them to see some static HTML files. What's a poor SnipSnap administrator
+to do?
+
+### Jetty
+
+First, you need to learn how Jetty works, and specifically how the a Jetty XML
+configuration file works. Check out the
+[tutorial](http://mortbay.org/jetty/tut/index.html), especially the [Jetty HTTP
+Server](http://mortbay.org/jetty/tut/HttpServer.html) and [Jetty XML
+Syntax](http://mortbay.org/jetty/tut/XmlConfiguration.html) tutorials.
+
+No, really, I'm serious. Stop. Do not continue reading. Read the [Jetty HTTP
+Server tutorial](http://mortbay.org/jetty/tut/HttpServer.html). Read the example
+code at the bottom. Then, skim the [Jetty XML Syntax
+tutorial](http://mortbay.org/jetty/tut/XmlConfiguration.html). I _will not_
+repeat what they say. You don't need to know them inside and out, but at least
+get comfortable with them.
+
+Go ahead, I'll wait.
+
+...
+
+Hi! Good to have you back. Let's continue.
+
+### Solution: jetty.conf
+
+OK, now that you're familiar with Jetty, let's get started. The key insight is
+that Jetty XML configuration files are Java code in disguise. Literally - you
+can instantiate Java classes, and then call methods on them, using Jetty's XML
+syntax. This is explained in more detail in the [Jetty XML Syntax
+tutorial](http://mortbay.org/jetty/tut/XmlConfiguration.html)...but you've
+already read that, right?
+
+OK. Fire up your favorite text editor and open jetty.conf. It's in the conf/
+subdirectory of your SnipSnap directory. The first thing we need to do is
+configure HttpServer, which serves static content:
+
+
+    <Configure class="org.mortbay.http.HttpServer">
+
+All of the rest of the configuration code will be inside this tag.
+
+### SocketListener
+
+We need to tell the HttpServer to listen on port 80. We do this by creating a
+new SocketListener, setting its port to 80, and calling the
+HttpServer::addListener method:
+
+
+    <Call name="addListener">
+
+        <Arg>
+
+          <New class="org.mortbay.http.SocketListener">
+
+            <Set name="Port">
+
+              <SystemProperty name="jetty.port" default="80"/>
+
+            </Set>
+
+          </New>
+
+        </Arg>
+
+      </Call>
+
+### addContext
+
+Next, we need to tell Jetty where the static content is, and when to serve it.
+The HttpServer::addContext method can take a hostname as its first argument, so
+we'll tell it to only match foo.com:
+
+
+    <Call name="addContext">
+
+        <Arg>foo.com</Arg>
+
+This means that any requests to foo.com will use this HttpServer, but any other
+requests to the server (e.g. bar.org or the IP address) will not match this
+context, so they'll fall through to SnipSnap.
+
+### HttpContext
+
+The second argument to HttpServer::addContext is a context, so we need to create
+an HttpContext object and tell it where our static HTML files are. We do this by
+calling the HttpContext::setResourceBase method with the path to our static
+content:
+
+
+    <Arg><New class="org.mortbay.http.HttpContext">
+
+          <Call name="setContextPath">
+
+            <Arg>/</Arg>
+
+          </Call>
+
+          <Call name="setResourceBase">
+
+            <Arg>
+
+              /home/ryanb/staticstuff
+
+            </Arg>
+
+          </Call>
+
+          <Call name="addHandler">
+
+            <Arg>
+
+              <New class="org.mortbay.http.handler.ResourceHandler"></New>
+
+            </Arg>
+
+          </Call>
+
+        </New></Arg>
+
+      </Call>
+
+In this example, the static HTML files are in /home/ryanb/staticstuff. If you
+want, you can use the jetty.home system property to get the directory SnipSnap
+is installed in:
+
+
+    <Call name="setResourceBase">
+
+            <Arg>
+
+              <SystemProperty name="jetty.home" default="."/>/staticstuff
+
+            </Arg>
+
+          </Call>
+
+Finally, let's close off the Configure tag we opened way in the beginning...
+
+
+    </Configure>
+
+...restart SnipSnap, and we're done!
+
+See also:
+
+  * [servlets with snipsnap](/space/servlets with snipsnap)
+
+  * [snipsnap register without email](/space/snipsnap register without email)
+
+  * [snipsnap script macro and python](/space/snipsnap script macro and python)
+
+  * [snipscrape](/space/snipscrape)
+
+  * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap 1.0b1 virtual
+hostname patch)
+
+  * [snipsnap comment without login patch](/space/snipsnap comment without login
+patch)
+
+  * [snipsnap macros](/space/snipsnap macros)
+
+  * [snipsnap recent-changes snip name patch](/space/snipsnap recent-changes
+snip name patch)
+

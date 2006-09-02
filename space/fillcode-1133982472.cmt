@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>fillcode-4</title>
+<ipaddress></ipaddress>
+<author>hober</author>
+<link>/space/hober</link>
+<email></email>
+<source></source>
+<pubDate>1133982472</pubDate>
+<description>
+&amp;#60;pre&amp;#62;Debugger entered--Lisp error: (void-function py-in-literal)
+  py-in-literal()
+  funcall(py-in-literal)
+  (or (funcall in-literal-fn) (eval (cons &amp;#8230; ...)))
+  (let ((in-literal-fn ...) (literal-start-tokens ...)) (or (funcall in-literal-fn) (eval ...)))
+  fillcode-in-literal()
+  (cond ((fillcode-in-literal) (forward-char)) ((eolp) (delete-indentation t)) ((looking-at ...) (delete-horizontal-space) (if &amp;#8230; ...)) ((and &amp;#8230; ...) (progn &amp;#8230; ...)) ((and &amp;#8230; ... ...) (progn &amp;#8230; ...)) (t (forward-char)))
+  fillcode-collapse-whitespace-forward()
+  fillcode()
+  call-interactively(fillcode)
+  execute-extended-command(nil)
+  call-interactively(execute-extended-command)&amp;#60;/pre&amp;#62;
+</description>
+</item>

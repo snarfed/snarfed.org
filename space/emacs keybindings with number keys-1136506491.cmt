@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>emacs keybindings with number keys-2</title>
+<ipaddress></ipaddress>
+<author>ryan</author>
+<link>/space/ryan</link>
+<email></email>
+<source></source>
+<pubDate>1136506491</pubDate>
+<description>
+&lt;span class="nobr"&gt;&lt;a href="http://www.emacswiki.org/cgi-bin/emacs/JohanBockg%c3%a5rd#bojohan"&gt;Johan Bockg??rd&lt;/a&gt;&lt;/span&gt;
+(from &lt;span class="nobr"&gt;&lt;a href="http://emacswiki.org"&gt;EmacsWiki&lt;/a&gt;&lt;/span&gt;)
+&lt;span class="nobr"&gt;&lt;a href="http://www.emacswiki.org/cgi-bin/emacs/RyanBarrett"&gt;describes a similar solution&lt;/a&gt;&lt;/span&gt;:&lt;p class="paragraph"/&gt;&lt;blockquote class="quote"&gt;
+The thing following &amp;#117;2018control&amp;#117;2019 can be a symbol or a character. GNU Emacs has no separate character object type and 1 is indistinguishable from C-a as a character.&lt;p class="paragraph"/&gt;    (list 1     (type-of 1))      =&amp;#62;  (1 integer)  the number 1/the char ^A
+    (list ?&amp;#67;-a (type-of ?&amp;#67;-a))  =&amp;#62;  (1 integer)  ditto&lt;p class="paragraph"/&gt;    (list '&amp;#49;   (type-of '&amp;#49;))    =&amp;#62;  (&amp;#49; symbol)  the symbol 1&lt;p class="paragraph"/&gt;?1 would work too:&lt;p class="paragraph"/&gt;    (list ?1    (type-of ?1))     =&amp;#62;  (49 integer) the number 49/the char 1&lt;p class="paragraph"/&gt;I suggest (global-set-key (kbd "C-1") 'foo), btw.
+&lt;/blockquote&gt;&lt;p class="paragraph"/&gt;</description>
+</item>

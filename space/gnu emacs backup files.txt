@@ -1,0 +1,125 @@
+gnu emacs backup files
+[![/space/gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)
+
+I use [GNU
+Emacs](http://gnu.org/software/emacs/), and I love it. However, one annoyance is
+that it scatters autosave files (_#foo#_) and backup files (_foo~_) all over the
+filesystem.
+
+So, I finally got fed up with this, and figured out how to keep them all in one
+place. Here's the
+[elisp](http://gnu.org/software/emacs/emacs-lisp-intro/html_node/index.html)
+(GNU Emacs only) that I put in [my
+.emacs](http://ryan.barrett.name/dotfiles/.emacs):
+
+
+    ;; Put autosave files (ie #foo#) in one place, *not* scattered all over the
+
+    ;; file system! (The make-autosave-file-name function is invoked to
+determine
+
+    ;; the filename of an autosave file.)
+
+    (defvar autosave-dir (concat "/tmp/emacs\_autosaves/" (user-login-name)
+"/"))
+
+    (make-directory autosave-dir t)
+
+
+    (defun auto-save-file-name-p (filename)
+
+      (string-match "^#.*#$" (file-name-nondirectory filename)))
+
+
+    (defun make-auto-save-file-name ()
+
+      (concat autosave-dir
+
+       (if buffer-file-name
+
+          (concat "#" (file-name-nondirectory buffer-file-name) "#")
+
+        (expand-file-name
+
+         (concat "#%" (buffer-name) "#")))))
+
+
+    ;; Put backup files (ie foo~) in one place too. (The backup-directory-alist
+
+    ;; list contains regexp=>directory mappings; filenames matching a regexp are
+
+    ;; backed up in the corresponding directory. Emacs will mkdir it if
+necessary.)
+
+    (defvar backup-dir (concat "/tmp/emacs\_backups/" (user-login-name) "/"))
+
+    (setq backup-directory-alist (list (cons "." backup-dir)))
+
+...and, courtesy of [Amit Patel](http://www-cs-students.stanford.edu/~amitp/),
+here's the elisp for XEmacs.
+
+
+    ;;; Auto-save
+
+    ;;; Load the auto-save.el package, which lets you put all of your autosave
+
+    ;;; files in one place, instead of scattering them around the file system.
+
+    ;;; M-x recover-all-files or M-x recover-file to get them back
+
+    (defvar temp-directory (concat "/tmp/" (user-login-name)))
+
+    (make-directory temp-directory t)
+
+
+    ; One of the main issues for me is that my home directory is
+
+    ; NFS mounted.  By setting all the autosave directories in /tmp,
+
+    ; things run much quicker
+
+    (setq auto-save-directory (concat temp-directory "/autosave")
+
+          auto-save-hash-directory (concat temp-directory "/autosave-hash")
+
+          auto-save-directory-fallback "/tmp/"
+
+          auto-save-list-file-prefix (concat temp-directory "/autosave-")
+
+          auto-save-hash-p nil
+
+          auto-save-timeout 100
+
+          auto-save-interval 300)
+
+    (make-directory auto-save-directory t)
+
+    (require 'auto-save)
+
+
+    ;;; Put backups in another directory.  With the directory-info
+
+    ;;; variable, you can control which files get backed up where.
+
+    (require 'backup-dir)
+
+    (setq bkup-backup-directory-info
+
+          \`(
+
+            (t ,(concat temp-directory "/backups") ok-create full-path)
+
+            ))
+
+    (setq make-backup-files t)
+
+    (setq backup-by-copying t)
+
+    (setq backup-by-copying-when-mismatch t)
+
+    (setq backup-by-copying-when-linked t)
+
+    (setq version-control t)
+
+    (setq-default delete-old-versions t)
+

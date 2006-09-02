@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>gaim null protocol plugin-11</title>
+<ipaddress></ipaddress>
+<author>ryan</author>
+<link>/space/ryan</link>
+<email></email>
+<source></source>
+<pubDate>1153593822</pubDate>
+<description>
+Yeah, Gaim 2.0 is a major version number increment, which means it breaks plugin API compatibility. Updating nullprpl is on my todo list. Until then, I've added a note that it only supports Gaim 1.x.
+</description>
+</item>

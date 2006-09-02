@@ -1,0 +1,91 @@
+MAlbum
+
+### Introduction
+
+I am certain every digital shutter-bug has their own workflow for archiving and
+sharing their digital photos. My workflow maintains an archive of every photo I
+take, organized by date, and a second set of albums that are for sharing. In the
+past, I would need to manually copy the photos that I wanted to share and then
+use and application to generate the web pages/thumbnails etc. so that I could
+share these pictures. I wanted to streamline my workflow into a single
+application.
+
+So I present: **MAlbum: Maulik's Album application**
+:-P
+
+[![thumb_screenshot.jpg](http://maulik.freeshell.net/software/malbum-release/thumb_screenshot.jpg)](/space/screenshot.jpg)
+
+[MAlbum
+Screenshot](http://maulik.freeshell.net/software/malbum-release/screenshot.jpg)
+
+### Goals
+
+  * Quick and easy graphical interface for creating a web album
+
+  * Quickly add captions to photos
+
+  * Easily add/remove photos from the album
+
+  * Cross Platform (like Jalbum)
+
+  * Easily maintain an archive of original photos, and build a library of albums
+to share (like Picasa)
+
+  * Re-open an album, load captions and images and once again add/remove photos
+and add/remove/change captions
+
+  * Zero Install (executable jar file, <60Kb)
+
+### Existing Packages
+
+  * Jalbum
+
+  * - Operates on every picture from a single directory. Cannot combine pictures
+from different directories.
+
+  * Web Album Generator
+
+  * - No keyboard short cut to remove pictures from selection.
+
+  * - Web albums do not link to original photos
+
+  * Picasa
+
+  * - Cannot add captions, only keywords
+
+### Extensions (To Do list)
+
+  * Archive browser
+
+  * - Easily find the photos you want to work on
+
+  * Drag and drop interface
+
+  * Work with the Java Media Framework to work with videos
+
+  * Change the List on the left side to a Tree that would organize by date
+
+### Download an Sample
+
+  * Download
+[MAlbum.jar](http://maulik.freeshell.net/software/malbum-release/MAlbum.jar)
+
+  * Jar file includes source and Makefile
+
+  * Relased under GPL
+
+  * [Sample
+Album](http://maulik.freeshell.net/software/malbum-release/malbumSample)
+
+### Usage and Requirements
+
+  * Java 1.4.1
+
+  * Windows: Double click on MAlbum.jar
+
+  * \*nix: java -jar MAlbum.jar
+
+### Author / Contact / Bug Report Receiver
+
+  * [Maulik](http://maulik.net/)
+

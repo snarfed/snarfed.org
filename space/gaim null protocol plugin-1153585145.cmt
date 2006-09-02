@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>gaim null protocol plugin-10</title>
+<ipaddress></ipaddress>
+<author>zeegeek</author>
+<link>/space/zeegeek</link>
+<email></email>
+<source></source>
+<pubDate>1153585145</pubDate>
+<description>
+I was trying to compile it with Gaim 2.0 beta 3 and had an error and a lot of warnings as following:&lt;p class="paragraph"/&gt;&lt;blockquote class="quote"&gt;
+nullprpl.c: In function ???nullprpl_login???:
+nullprpl.c:41: warning: implicit declaration of function ???serv_finish_login???
+nullprpl.c: In function ???nullprpl_add_buddy???:
+nullprpl.c:48: warning: implicit declaration of function ???serv_got_update???
+nullprpl.c: At top level:
+nullprpl.c:58: error: syntax error before ???GaimConvImFlags???
+nullprpl.c: In function ???nullprpl_send_im???:
+nullprpl.c:60: error: ???who??? undeclared (first use in this function)
+nullprpl.c:60: error: (Each undeclared identifier is reported only once
+nullprpl.c:60: error: for each function it appears in.)
+nullprpl.c:60: error: ???message??? undeclared (first use in this function)
+nullprpl.c:62: error: ???gc??? undeclared (first use in this function)
+nullprpl.c:64: error: ???flags??? undeclared (first use in this function)
+nullprpl.c: In function ???nullprpl_away_states???:
+nullprpl.c:73: error: ???GAIM_AWAY_CUSTOM??? undeclared (first use in this function)
+nullprpl.c:74: warning: passing argument 2 of ???g_list_append??? discards qualifiers from pointer target type
+nullprpl.c: At top level:
+nullprpl.c:93: warning: initialization from incompatible pointer type
+nullprpl.c:103: warning: initialization from incompatible pointer type
+&lt;/blockquote&gt;&lt;p class="paragraph"/&gt;Sorry for flooding here. I don't know other ways to look for support. Thank you.
+</description>
+</item>

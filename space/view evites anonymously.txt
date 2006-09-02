@@ -1,0 +1,20 @@
+view evites anonymously
+[![/space/evite.png](/space/evite.png)](http://evite.com/)
+
+Does it ever give you the creeps
+that, whenever you get an [evite](http://evite.com/), it knows who you are?
+Worse, if you forward an evite link to a friend, when they view it, they can
+change your reply, or even your evite profile!
+
+To view an evite anonymously, remove the **&src=...** parameter from the URL (if
+any) and add **&unknownUser=true** to the end. This link is also safe to send to
+friends. (That's not as important any more, though since most evites let you
+invite other people "officially.")
+
+See also:
+
+  * [privacy through prepaid credit cards](/space/privacy through prepaid credit
+cards)
+
+  * [kodak picturecenter hacks](/space/kodak picturecenter hacks)
+

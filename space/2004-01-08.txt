@@ -1,0 +1,11 @@
+2004-01-08
+
+### Subversion
+
+For those who are interested, [snarfed.org](/) now offers a [version control
+server](http://subversion.tigris.org/). (Version control is a safe, reliable way
+to store files and track their changes over time.) The server will be used to
+store documents, web sites, and source code, including the [custom
+macros](/space/album) that run this site. [Drop me a
+line](http://ryan.barrett.name/contact.html) if you'd like access.
+

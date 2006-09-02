@@ -1,0 +1,41 @@
+kodak picturecenter hacks
+[Kodak PictureCenter](http://picturecenter.kodak.com/) is one of many online
+services for storing photos and sending them to friends. Like many others, it
+only displays images at ridiculously low resolutions, and only lets you download
+images at 768x576, at best. If you want better quality photos, you have to buy
+them.
+
+No thanks. Here's how to get the full-size images from PictureCenter.
+
+  1. Go to the PictureCenter page for an album. (You should have received an
+email with a link to this page.)
+
+  2. Click on the 'View' tab, and click on a picture.
+
+  3. Right-click on the picture, and select 'View Image'.
+
+  4. The URL in your browser should look something like this:
+[http://picturecenter.kodak.com/imagep/2239126934\_400.jpg?...](http://picturecenter.kodak.com/imagep/2239126934_400.jpg?...)
+
+  5. See the number before _.jpg_? Change it to 999999. The URL should now look
+like this:
+[http://picturecenter.kodak.com/imagep/2239126934\_999999.jpg?..](http://picturecenter.kodak.com/imagep/2239126934_999999.jpg?..)
+
+  6. Voila! Right-click and save, and you have the picture in its original size.
+
+Evidently, PictureCenter can display images at any size. The size is encoded in
+the URL, so we just ask for a size that's almost certainly larger than the
+picture, and PictureCenter shows the image at its original size.
+
+If I find out how to do this with other photo sites, I'll post instructions
+here.
+
+See also:
+
+  * [pictures](/space/pictures)
+
+  * [view evites anonymously](/space/view evites anonymously)
+
+  * [privacy through prepaid credit cards](/space/privacy through prepaid credit
+cards)
+

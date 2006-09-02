@@ -1,0 +1,9 @@
+emacs and jikes
+[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)[![/space/ibm.jpg](/space/ibm.jpg)](http://www.ibm.com/developerWorks/oss/jikes/)
+
+Using
+[Emacs](http://gnu.org/software/emacs/) and the
+[Jikes](http://www.ibm.com/developerWorks/oss/jikes/) JDK? Want error messages
+in a format that Emacs can parse, so you can use **C-x** \` (ie the
+**next-error** function)? Run jikes with the **+D** argument.
+

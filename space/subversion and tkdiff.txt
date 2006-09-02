@@ -1,0 +1,35 @@
+subversion and tkdiff
+[![/space/subversion.jpg](/space/subversion.jpg)](http://subversion.tigris.org/)[![/space/tkdiff.png](/space/tkdiff.png)](http://tkdiff.sf.net/)[Subversion](http://subversion.tigris.org/)
+is my version control of choice, and [tkdiff](http://tkdiff.sf.net/) is my
+graphical diff of choice. I love them both equally.
+
+However, for a while, I thought they couldn't play well together. I tried **svn
+diff --diff-cmd tkdiff <file>**, but it just produced an ugly error message,
+because svn passed command-line options to tkdiff that it didn't understand.
+
+I recently sat down to take another look, and found that Subversion support was
+added to tkdiff in version 4.0. Now, in a Subversion working directory, **tkdiff
+<file>** automatically diffs the file against HEAD. Sweet!
+
+I use this simple shell script to tkdiff all files that I've modified:
+
+
+    #!/bin/csh
+
+    foreach file ( \`svn st -q | cut -c 8-\` )
+
+      tkdiff $file
+
+    end
+
+One caveat: by default, tkdiff talks to the master repository (usually over the
+network) to get HEAD. This is unnecessary, and way slow. BASE is usually just as
+good, and it's stored locally, in .svn/text-base. [This
+patch](http://sourceforge.net/tracker/index.php?func=detail&aid=1111661&group_id=64960&atid=509272)
+makes tkdiff use the local copy instead.
+
+See also:
+
+  * [backup subversion fsfs with rsync](/space/backup subversion fsfs with
+rsync)
+

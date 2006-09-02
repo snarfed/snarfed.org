@@ -1,0 +1,30 @@
+#
+# this file is sent to robots accessing the URL /robots.txt
+#
+User-agent: *
+
+# Disallow all access to the configuration and diffs
+# Disallow: /space/SnipSnap/
+# Disallow: /exec/diff
+# Disallow: /exec/history
+# Disallow: /exec/version
+
+# hide webalizer and summary (they have referrer spam :/)
+Disallow: /webalizer/
+Disallow: /static/webalizer/
+Disallow: /usage/
+Disallow: /summary/
+Disallow: /static/summary/
+
+# front is modest. :P
+# Disallow: /space/Maulik's%20Visit%202004/scaled-images-pictures/
+
+# google image search sends people here, and they hijack images :/
+# Disallow: /space/2004-02-08/
+# Disallow: /space/pictures/
+
+# Fasterfox's (http://fasterfox.mozdev.org/) prefetching is
+# a double-edged sword. Disable it.
+User-agent: Fasterfox
+Disallow: /
+

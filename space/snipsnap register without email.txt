@@ -1,0 +1,106 @@
+snipsnap register without email
+[![snipsnap-logo.png](/space/snipsnap-logo.png)](http://snipsnap.org/)_This
+article is also [posted on
+snipsnap.org](http://snipsnap.org/space/register+without+email)._
+
+### I don't want your email address...
+
+[SnipSnap](http://snipsnap.org/), which [powers this site](/space/snipsnap), lets
+visitors [register](/exec/register.jsp) so that they can log in, comment on
+existing pages, and create their own pages. The default registration page asks
+you for a username, a a password, and optionally, an email address. It's not
+obvious that the email is optional, though, and many people have learned not to
+give their email address to random web sites.
+
+[My site](/) is small and personal, so I don't need email addresses. On the
+contrary, I don't want anything to discourage my friends from registering. So, I
+decided to remove the email box on the registration page altogether.
+
+### ...so don't give it to me!
+
+I could do this by [editing the JSP
+files](http://www.snipsnap.org/comments/CodingQuestions), but that was a little
+too invasive for my tastes. (I really should do this eventually, though...anyone
+want to post a tutorial on editing the SnipSnap JSPs?) Instead, I used CSS, and
+simply added this to [misc.css](/theme/css/misc.css) in my [SnipSnap
+theme](/space/snarfed.org):
+
+
+    /* don't ask people for their email address */
+
+    input#email { display: none; }
+
+The CSS only explicitly targets the input field, but it hides both the input
+field and the label. I believe that's because the label's _for_ attribute points
+to the input field, like so:
+
+
+    <label for="email">Email address:</label>
+
+In any case, it works, so I won't argue!
+
+### In the old days, we walked, uphill, both ways!
+
+Earlier versions of SnipSnap didn't provide an id for the email input. So, I
+originally did this with Javascript, DOM, and CSS. Here's how. Save this as
+noemail.js in your application's directory:
+
+
+    /* Hide the email address input box on
+
+        /exec/register.jsp .
+
+     */
+
+
+    emailbox = document.getElementById('email');
+
+    if (emailbox) {
+
+      emailbox.style.display = 'none';
+
+    }
+
+
+    label = document.getElementsByTagName('label')[1];
+
+    if (label &&
+
+        label.innerHTML == 'Email address:') {
+
+      label.style.display = 'none';
+
+    }
+
+Then, add a link to noemail.js:
+
+
+    <script type="text/javascript" src="/snarfed.js" />
+
+Again, you could edit the JSPs to put this in the <meta> section, but I'm intent
+on avoiding the JSPs, so I just wrote a [macro](/space/snipsnap macros) to
+insert this tag.
+
+Hope this helps!
+
+See also:
+
+  * [snipsnap comment without login patch](/space/snipsnap comment without login
+patch)
+
+  * [snipsnap macros](/space/snipsnap macros)
+
+  * [snipsnap recent-changes snip name patch](/space/snipsnap recent-changes
+snip name patch)
+
+  * [snipsnap script macro and python](/space/snipsnap script macro and python)
+
+  * [servlets with snipsnap](/space/servlets with snipsnap)
+
+  * [virtual host redirection](/space/virtual host redirection)
+
+  * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap 1.0b1 virtual
+hostname patch)
+
+  * [snipscrape](/space/snipscrape)
+

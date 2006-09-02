@@ -1,0 +1,47 @@
+pine delete attachments on save patch
+[![pine.png](/space/pine.png)](http://washington.edu/pine/)
+
+For the impatient:  
+Patch for Pine
+[4.63](/space/delete-attachments-on-save.patch.4.63),
+[4.64](/space/delete-attachments-on-save.patch.4.64)  
+[Pine source](http://www.washington.edu/pine/getpine/unix.html)  
+[FAQ on patching
+pine](http://www.math.washington.edu/~chappa/pine/faq/index.html)
+
+This patch adds an option to [Pine](http://www.washington.edu/pine/) that
+deletes all attachments from messages when you save them. Both [MIME
+multipart](http://www.washington.edu/pine/faq/whatis.html#2.4) attachments and
+standard file attachments are deleted. They're replaced with a message that
+describes the deleted attachment, just like manually deleted attachments.
+
+If this feature is enabled, the Delete and Undelete commands in the [Attachment
+Index](http://www.washington.edu/pine/faq/attachments.html#7.6) screen are
+replaced with the Preserve command. You may Preserve individual attachments, and
+they will not be deleted when their message is saved.
+
+As background, email usage has evolved and large attachments are now common.
+Also, modern mailers often send the same message in both HTML and plain text,
+using MIME multipart attachments. This means that attachments can quickly take
+up a large amount of space in your mailbox. If you have a quota on your mail
+server, this feature can help prevent attachments from using up your quota.
+
+This patch was inspired in part by a
+[post](http://mailman1.u.washington.edu/pipermail/pine-info/2005-June/042501.html)
+to the [pine-info](http://www.washington.edu/pine/pine-info/) mailing list.
+
+Feel free to [email me](http://ryan.barrett.name/contact.html) with feedback or
+bug reports.
+
+See also:
+
+  * [pine flowed-text patch](/space/pine flowed-text patch)
+
+  * [pine remove trailing quote patch](/space/pine remove trailing quote patch)
+
+  * [pine reply-all patch](/space/pine reply-all patch)
+
+  * [port\_pine\_patch](/space/port_pine_patch)
+
+  * [gmail vs pine](/space/gmail vs pine)
+

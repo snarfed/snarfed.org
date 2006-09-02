@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>gmail vs pine-26</title>
+<ipaddress></ipaddress>
+<author>Guest</author>
+<link>/space/Guest</link>
+<email></email>
+<source></source>
+<pubDate>1145107595</pubDate>
+<description>
+BUFFERING&lt;p class="paragraph"/&gt;My biggest problem with Gmail (as a regular user) is that whenever I issue a command (say, archive this message), I have to wait for Gmail to finish chewing on the command and communicating with servers and finally re-updating the screen before I can issue any more commands.  Mutt buffers keyboard input, and I'll bet pine does too.  It seems like a Javascript program like Gmail could, in principle, buffer input as well.&lt;p class="paragraph"/&gt;Until the Gmail team gets around to it though, thanks Ryan for the Pine patches, and if anyone learns of Gmail-ified mutt, please post here.&lt;p class="paragraph"/&gt; &lt;i class="italic"&gt;- &lt;span class="nobr"&gt;&lt;a href="http://dodgeit.com/run/checkmail?mailbox=muttfans"&gt;crwth&lt;/a&gt;&lt;/span&gt;&lt;/i&gt;
+</description>
+</item>

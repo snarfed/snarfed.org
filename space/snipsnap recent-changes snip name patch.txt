@@ -1,0 +1,53 @@
+snipsnap recent-changes snip name patch
+[![snipsnap.png](/space/snipsnap.png)](http://snipsnap.org/)[![jetty.png](/space/jetty.png)](http://jetty.mortbay.com/)
+
+For the impatient:  
+[Patch for SnipSnap CVS
+HEAD](/space/snipsnap-snip-name-cvs.patch)  
+[Patch for SnipSnap
+1.0b1](/space/snipsnap-snip-name-1.0b1.patch)  
+[SnipSnap 1.0b1
+source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b1-uttoxeter-20040914-src.tgz)  
+[Ant](http://ant.apache.org) (needed to build SnipSnap)
+
+[Patching
+FAQ](http://www.gnu.org/software/diffutils/manual/html_node/Merging-with-patch.html)
+
+I use [SnipSnap](/space/SnipSnap) as the web server for this site, and I love
+it. However, nothing's perfect, even SnipSnap.
+
+SnipSnap 0.5.1a introduced a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-392)
+that showed all blog posts as "1" in the recent-changes macro. This was quickly
+fixed, but only for the default "vertical" style. The bug remained in all other
+list styles.
+
+I've written a small
+[patch](/space/snipsnap-snip-name-1.0b1.patch)
+that fixes the remaining list styles. To use it with an existing SnipSnap
+installation, download the [SnipSnap 1.0b1
+source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b1-uttoxeter-20040914-src.tgz),
+apply the patch, build SnipSnap with [Ant](http://ant.apache.org), then copy the
+newly rebuilt snipsnap-servlet.jar into your SnipSnap application's WEB-INF/lib/
+subdirectory, over the existing jar. Restart SnipSnap and you should be good to
+go!
+
+See also:
+
+  * [snipsnap comment without login patch](/space/snipsnap comment without login
+patch)
+
+  * [snipsnap macros](/space/snipsnap macros)
+
+  * [snipsnap register without email](/space/snipsnap register without email)
+
+  * [snipsnap script macro and python](/space/snipsnap script macro and python)
+
+  * [servlets with snipsnap](/space/servlets with snipsnap)
+
+  * [virtual host redirection](/space/virtual host redirection)
+
+  * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap 1.0b1 virtual
+hostname patch)
+
+  * [snipscrape](/space/snipscrape)
+

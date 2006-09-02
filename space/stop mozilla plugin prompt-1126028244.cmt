@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>stop mozilla plugin prompt-3</title>
+<ipaddress></ipaddress>
+<author>ryan</author>
+<link>/space/ryan</link>
+<email></email>
+<source></source>
+<pubDate>1126028244</pubDate>
+<description>
+ooh, you're right, that is a much cleaner solution. thanks!&lt;p class="paragraph"/&gt;also, there are a few good
+&lt;span class="nobr"&gt;&lt;a href="http://greasemonkey.mozdev.org/"&gt;GreaseMonkey&lt;/a&gt;&lt;/span&gt;
+scripts that address objects (usually movies) embedded in web pages.
+&lt;span class="nobr"&gt;&lt;a href="http://www.3dlights.de/grease/removeFlash.user.js"&gt;Remove Flash Objects&lt;/a&gt;&lt;/span&gt; does exactly that, and
+&lt;span class="nobr"&gt;&lt;a href="http://neugierig.org/software/greasemonkey/unembed.user.js"&gt;Unembed&lt;/a&gt;&lt;/span&gt;
+shows a "download" link next to embedded movies.
+</description>
+</item>

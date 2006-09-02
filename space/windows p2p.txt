@@ -1,0 +1,88 @@
+windows p2p
+Disclaimers: these images are taken from a [Microsoft
+article](http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx),
+so they're probably copyrighted by Microsoft. They're _not_ mine.
+:P
+
+[![/space/p2p.png](/space/p2p.png)](http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx)
+
+About a year ago, Microsoft quietly announced that they were developing a
+peer-to-peer networking protocol. It's not a file sharing program, mind you;
+it's a network routing protocol. It's called, unimaginatively, [Windows Peer to
+Peer Networking](http://www.microsoft.com/windowsxp/p2p/). Since late March
+2004, I've been working on implementing this protocol. I'd like to create an
+interoperable library for use on other operating systems, such as Mac OS X and
+Linux, as well as Windows.
+
+The proof-of-concept app for this protocol is
+[Threedegrees](http://www.threedegrees.com/), a social interaction program that
+lets people send instant messages, share a music player, and interact in various
+other ways. More importantly, this protocol will be a fundamental part of
+[Indigo](http://msdn.microsoft.com/Longhorn/understanding/pillars/Indigo/default.aspx),
+the networking infrastructure in Longhorn, Microsoft's next-generation Windows
+platform.
+
+[![/space/stack.png](/space/stack.png)](http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx)
+
+In a nutshell, Windows P2P uses a [distributed hash
+table](http://www.infoanarchy.org/wiki/wiki.pl?Distributed_Hash_Table) for name
+resolution, with some interesting quirks. It includes decent mechanisms for
+creating, maintaining, and broadcasting to small groups of peers. It uses
+[IPv6](http://www.ipv6.org/) as its underlying transport, with
+[6to4](http://www.6bone.net/6bone_6to4.html) and
+[Teredo](http://www.microsoft.com/technet/prodtechnol/winxppro/maintain/teredo.mspx)
+for traversing NATs and the IPv4 Internet. It also includes security and
+authentication. Compared to other related work, all of these are solidly
+designed. Specifically, most of the new ideas are in the DHT implementation,
+which they call a Peer Name Resolution Protocol (PNRP).
+
+There are lots of technical details in the [white
+paper](http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx),
+the [API
+docs](http://msdn.microsoft.com/library/default.asp?url=/library/en-us/p2psdk/p2p/portal.asp),
+and the
+[FAQ](http://download.microsoft.com/download/8/C/1/8C1A2CB7-5F1C-4A66-9044-AAE94FCC25FC/P2P_SDK_FAQ.htm).
+(These pictures are taken from the white paper; they're Microsoft's, not mine.)
+Amusingly, there's also a lot of deep technical information in Microsoft's
+[patent filing](http://swpat.ffii.org/pikta/txt/ep/1248/441/) for PNRP,
+including some details that aren't published anywhere else. Unfortunately, the
+network protocol itself is proprietary, so I need to reverse engineer it from
+network traces obtained with a sniffer.
+
+This is where I am right now. I've written a decent amount of code before, but
+I've done more or less zero reverse engineering of network protocols.
+Furthermore, there aren't a lot of resources. It's definitely been done before -
+examples include instant messaging protocols such as
+[Yahoo](http://www.venkydude.com/articles/yahoo.htm),
+[Oscar](http://www.kingant.net/oscar/) (which AIM and ICQ now use), and
+[MSN](http://www.hypothetic.org/docs/msn/index.php). However, these focus on
+describing the protocols themselves, not the methodologies used to reverse
+engineer them. If you know of good resources on reverse engineering network
+protocols, or you'd like to help, [let me
+know](http://ryan.barrett.name/contact.html)!
+
+[![/space/cache.png](/space/cache.png)](http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx)
+
+As an aside, I got sidetracked from the reverse engineering one day, and wrote
+an implementation of the PNRP multi-level cache. You can download the
+[code](/space/pnrp.py) and a [unit
+test](/space/pnrp_unittest.py). (The multi-level cache is
+specifically covered by their patent, but this code isn't in the context of name
+resolution, so I'm not too worried. :P)
+
+Finally, this usually is (and should be) legal. Reverse engineering is expressly
+permitted under the right of "fair use" established by copyright law. [Recent
+rulings](http://www.eff.org/IP/Emulation/) have eroded this right with respect
+to software; specifically, they have held that software publishers can withhold
+this right in "shrinkwrap" or click-through licenses. I don't know if
+Microsoft's license for Windows P2P forbids reverse engineering, but I'm not
+inclined to find out.
+
+See also:
+
+  * [p4](/space/p4)
+
+  * [synchronizing mp3 playback](/space/synchronizing mp3 playback)
+
+  * [libmsntp](/space/libmsntp)
+

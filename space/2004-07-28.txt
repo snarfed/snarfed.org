@@ -1,0 +1,14 @@
+2004-07-28
+
+### bigbrother 0.5 released 
+
+
+
+[![thumbnail.jpg](/space/thumbnail.jpg)](/space/bigbrother)
+
+I've released version 0.5 of [bigbrother](/space/bigbrother), a program that
+generates statistics and graphs about your IM away messages. Highlights from
+this version include "layered" graphs, graph smoothing, and optional start and
+end dates. The smoothing alone is worth upgrading for; it makes the graphs look
+_much_ better. [Check it out!](http://ryan.barrett.name/bigbrother/)
+

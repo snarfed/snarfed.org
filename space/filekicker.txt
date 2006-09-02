@@ -1,0 +1,36 @@
+filekicker
+
+![kick.jpg](kick.jpg)
+
+For the impatient: <br />
+&nbsp; [Download filekicker 0.2](/space/filekicker.py) <br />
+&nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/) <br />
+&nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)
+
+[Filekicker](/space/filekicker.py) is a [PyBlosxom](http://pyblosxom.sf.net/)
+plugin that serves static files. The file to serve is determined by the URL
+path and the `datadir` configuration option. The MIME type is inferred from the
+file's extension.
+
+For example, if `datadir` is set in `config.py` like so:
+
+    py['config'] = '/home/ryanb/www'
+
+and the user requests this url:
+
+    http://mysite.org/videos/shovelglove.mov
+
+filekicker will send `/home/ryanb/www/videos/shovelglove.mov` to the client,
+if it exists, with the MIME type `video/quicktime`. If it doesn't exist,
+filekicker will let pyblosxom handle the request.
+
+Filekicker is different from, but related to, plugins such as
+[pystaticfile](http://pyblosxom.sourceforge.net/blog/registry/files/pystaticfile),
+[pyinclude](http://pyblosxom.sourceforge.net/blog/registry/include/pyinclude),
+and
+[imagekicker](http://pyblosxom.sourceforge.net/blog/registry/display/graphics/imagekicker).
+It's basically a generalization of imagekicker, which inspired its name.
+
+Filekicker is copyright 2006 [Ryan Barrett](/space/contact), and is distributed
+under the [GPL](http://www.gnu.org/licenses/gpl.html).
+

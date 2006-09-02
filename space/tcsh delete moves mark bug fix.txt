@@ -1,0 +1,34 @@
+tcsh delete moves mark bug fix
+[![/space/tcsh_oystercatcher.jpg](/space/tcsh_oystercatcher.jpg)](http://www.tcsh.org/)
+
+For the impatient:  
+[Patch](/space/tcsh-preserve-mark.patch) for
+[tcsh 6.14.00](http://www.tcsh.org/MostRecentRelease)
+
+I use [tcsh](http://www.tcsh.org/) as my shell, and I love it. Unfortunately,
+version 6.14.00 introduced a bug in _backward-delete-word, backward-kill-line,
+yank-pop_, and all other editor commands that use c\_delbefore() in ed.chared.c.
+
+If the mark is set in the middle of the region that's deleted, it's moved to
+before the start of the deleted region. Specifically, it's moved backward by the
+number of characters that were deleted.
+
+To reproduce:
+
+  1. Enter _foo barbaz_ at the prompt.
+
+  2. Move the cursor to the _b_ in _baz_.
+
+  3. Press Ctrl-Space to set the mark.
+
+  4. Move the cursor to the end of the line.
+
+  5. Press M-^H (Alt-Backspace) to delete _barbaz_.
+
+The mark will now be on the first _o_ in _foo_. You can confirm by pressing ^W
+to kill the region between the cursor and the mark. It will delete the _oo_,
+leaving only _f_.
+
+[This patch ](/space/tcsh-preserve-mark.patch)
+against [tcsh 6.14.00](http://www.tcsh.org/MostRecentRelease) fixes the bug.
+

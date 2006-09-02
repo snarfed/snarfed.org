@@ -1,0 +1,224 @@
+snipsnap script macro and python
+[![snipsnap.png](/space/snipsnap.png)](http://snipsnap.org/)[![/space/python_powered.png](/space/python_powered.png)](http://python.org/)[![/space/jython.png](/space/jython.png)](http://www.jython.org/)_This
+article is also [posted at
+snipsnap.org](http://snipsnap.org/space/script+macro+and+python)._
+
+### It's a {script}, {script} world
+
+I recently tried out SnipSnap's {script} macro, which runs
+[Python](http://python.org/) code inside SnipSnap. It uses
+[Jython](http://www.jython.org/) as an embedded, plug-and-play Python
+interpreter. It works great, and promised to turn SnipSnap into a lightweight
+webapp development paradise. Unfortunately, I can't use it...but maybe you can
+succeed where I failed!
+
+### Can't it _do_ anything?
+
+Recently, a [friend](http://www-cs-students.stanford.edu/~nstoll/) asked me if I
+could write a simple webapp on [snarfed.org](http://snarfed.org/), my
+SnipSnap-based site. Unfortunately, I hesitated, and for good reason. I've
+written my fair share of [Snipsnap
+macros](/space/snipsnap+macros), and I like the macro
+architecture, but it's not designed for interactive webapps. I considered
+whipping up some JSPs and serving them through
+[Jetty](http://mortbay.org/jetty/), but that's far from lightweight, and I'm far
+from a JSP expert. I have [friends](http://maulik.net/) who are
+[wizards](http://maulik.freeshell.net/Miki.pl?page=Reading+Log.miki)
+[with](http://maulik.freeshell.net/Miki.pl?page=Sample+Album+Script.miki)
+[AJAX](http://maulik.freeshell.net/Miki.pl?page=2005-08-14.miki), but JavaScript
+can't get very far without access to a backing store.
+
+### Flip the switch
+
+Fortunately, I remembered my job desscription as SnipSnap admin and thought of
+SnipSnap's {script} macro. I first tried the canonical "Hello world" script:
+
+
+    {script}
+
+    print 'Hello world!'
+
+    {script}
+
+I quickly noticed that the {script} macro isn't enabled by default. I looked
+inside WEB-INF/lib/snipsnap-servlets.jar and found that the ScriptMacro line in
+META-INF/services/org.radeox.macro.Macro was commented out:
+
+
+    #org.snipsnap.render.macro.ScriptMacro
+
+You can uncomment this line and rebuild snipsnap-servlets.jar, but it's probably
+easier to just download my
+[script.jar](/space/script.jar),
+which just has ScriptMacro.class and an uncommented org.radeox.macro.Macro file,
+put it in your WEB-INF/lib directory, and restart SnipSnap.
+
+After I did that, the hello world script actually worked. Holy executable code,
+Batman!
+
+### Down the rabbit hole
+
+I quickly tested the waters. First, file system access. Any webapp worth its
+salt needs a backing store, and while databases are de rigeur, they're also
+overkill in many cases. Flat files are often more than good enough. So:
+
+
+    {script}
+
+    f = open('foo.bar', 'w')
+
+    f.write('qwert')
+
+    f.close()
+
+
+    f = open('foo.bar')
+
+    print f.read()
+
+    f.close()
+
+    {script}
+
+Great! It could talk to the server file system. The script output _qwert_, as
+expected. Next, I tried network connectivity.
+
+
+    {script}
+
+    from urllib import urlopen
+
+
+    page = urlopen('http://asdf.com/')
+
+    print page.read()
+
+    {script}
+
+Sweet! It printed the (surprisingly small) HTML for the
+[asdf.com](http://asdf.com/) home page.
+
+### I know where you live
+
+At this point, the {script} environment was still fairly isolated from SnipSnap.
+My next task was to access basic SnipSnap site information, starting with the
+snip that contains the macro. I poked around in the source and noticed this
+telltale snippet in ScriptMacro.java:
+
+
+    PythonInterpreter interp = new PythonInterpreter();
+
+
+    interp.setOut(writer);
+
+    interp.set("snip",
+
+               params.getSnipRenderContext().getSnip());
+
+Aha! Sure enough, this code snippet prints out the name of the outer snip:
+
+
+    {script}
+
+    print snip
+
+    {script}
+
+On its own, though, the snip name isn't too useful. The Jython interpreter is
+running in the same JVM as SnipSnap, though, so maybe we can sneak in the back
+door...
+
+
+    {script}
+
+    import sys
+
+    sys.add\_package('org.snipsnap.snip')
+
+    from org.snipsnap.snip import SnipSpaceFactory
+
+
+    factory = SnipSpaceFactory.getInstance()
+
+    ats = factory.load(str(snip)).getAttachments().getAll()
+
+    at\_names = ', '.join([a.getName() for a in ats])
+
+
+    print """
+
+       This snip is called **%s**.
+
+       Its attachments are **%s**.
+
+    """ % (snip, at\_names)
+
+    {script}
+
+This script prints the snip name _and_ the file names of each attachment. Ah,
+now we're getting somewhere!
+
+### Wait a minute...
+
+At this point, something had been nagging at the back of my mind for a while.
+I'd ignored it for a while, but by the time I enabled {script} on my [live
+server](http://snarfed.org/), it pushed into the front of my mind. Hmm, {script}
+lets people run arbitrary code on my server, with filesystem and network access.
+Worse, since it needs to bind to port 80, SnipSnap runs as root, so their code
+would too. Yow! That's a gaping security hole to open on a production server.
+
+I quickly turned {script} off, ran [chkrootkit](http://www.chkrootkit.org/), and
+checked the web server logs to see if any script kiddies had noticed. SnipSnap
+isn't exactly a common target, and {script} is probably disabled on all other
+SnipSnap sites...but still, I wasn't taking any chances.
+
+### But...! but...!
+
+This is where I am now. I'd love to be able to use {script} on my site. It turns
+SnipSnap into a lightweight webapp development platform, in the same vein as
+[PHP](http://php.net/), [.NET](http://www.microsoft.com/net/),
+[J2EE](http://java.sun.com/j2ee/), and [Rails](http://www.rubyonrails.com/).
+However, it has the notable advantage that you can develop an entire webapp,
+from start to finish, _on the web site itself_, with nothing more than your
+browser. I don't know of any other webapp platforms that can claim that!
+
+Of course, it does have drawbacks. Other than pen and paper, a text form in a
+web page is just about the worst development environment I can imagine. Sure,
+you can code in your favorite text editor and transfer to SnipSnap for testing,
+but that's a recipe for version skew madness.
+
+Also, it may be lightweight, but it's not really designed for building webapps.
+You'll have to build even the most basic functionality yourself, including
+forms, templates, and user input. And don't even think about commonly used
+features like sessions, databases, and testing.
+
+And, of course, there's the aforementioned **security**...or more accurately,
+lack of security. Still, I've drunk the SnipSnap kool-aid, and I'd love an easy
+way to build webapps on top of it. Until I learn how to lock down and sandbox
+it, though, {script} isn't the answer.
+[BeanShell](http://www.snipsnap.org/space/BeanShell) might be worth a look, but
+at first glance, I'm guessing it's similarly wide open.
+
+Got any ideas? If so, please [let me know](/space/contact)!
+
+See also:
+
+  * [snipsnap macros](/space/snipsnap macros)
+
+  * [snipsnap comment without login patch](/space/snipsnap comment without login
+patch)
+
+  * [snipsnap recent-changes snip name patch](/space/snipsnap recent-changes
+snip name patch)
+
+  * [snipsnap register without email](/space/snipsnap register without email)
+
+  * [servlets with snipsnap](/space/servlets with snipsnap)
+
+  * [virtual host redirection](/space/virtual host redirection)
+
+  * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap 1.0b1 virtual
+hostname patch)
+
+  * [snipscrape](/space/snipscrape)
+

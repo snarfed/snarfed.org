@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>gmail vs pine-2</title>
+<ipaddress></ipaddress>
+<author>ryan</author>
+<link>/space/ryan</link>
+<email></email>
+<source></source>
+<pubDate>1113199651</pubDate>
+<description>
+hmm. i never really found a need to apply multiple labels to emails, so folders work just as well for me. i don't have any plans to add label support to pine.&lt;p class="paragraph"/&gt;you're right about threads, though. pine doesn't handle them nearly as well as gmail. gmail's big win there is the way it treats threads as a single entity, specifically in conversation view (which kicks ass), and applying user actions to whole threads by default.&lt;p class="paragraph"/&gt;pine has sort by thread - $ H in an index page - but it's rudimentary, and dog slow. eduardo chappa's
+&lt;span class="nobr"&gt;&lt;a href="http://www.math.washington.edu/~chappa/pine/info/fancy.html"&gt;fancy thread patch&lt;/a&gt;&lt;/span&gt;
+is better, and can apply user actions to whole threads, but there's no "conversation view" patch. to be truly competitive, threading support would need to be built in from the ground up.&lt;p class="paragraph"/&gt;still, &lt;span class="nobr"&gt;&lt;a href="http://www.ii.com/internet/messaging/pine"&gt;nancy mcgough&lt;/a&gt;&lt;/span&gt;
+or
+&lt;span class="nobr"&gt;&lt;a href="http://www.zrox.net/Mail/Pine/"&gt;gopi sundaram&lt;/a&gt;&lt;/span&gt;
+might have something i missed. let me know if you find anything!
+</description>
+</item>

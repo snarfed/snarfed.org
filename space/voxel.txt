@@ -1,0 +1,90 @@
+voxel
+[![/space/voxel_hunt_mountain_thumb.jpg](/space/voxel_hunt_mountain_thumb.jpg)](/space/voxel_hunt_mountain.jpg)[![/space/voxel_hunt_volcanic_thumb.jpg](/space/voxel_hunt_volcanic_thumb.jpg)](/space/voxel_hunt_volcanic.jpg)[Download
+Voxel Hunt](/space/voxel.zip)
+
+  * **Description**
+
+Voxel Hunt is a voxel landscape engine with a very simple game on top. This page
+includes instructions for running, building, and playing Voxel Hunt, as well as
+technical information about the engine.
+
+Voxel Hunt is Copyright 2000, Ryan Barrett, and is distributed under the GPL.
+See the LICENSE.txt file for more information.
+
+  * **Running**
+
+To play, download [voxel.zip](/space/voxel.zip), unzip it, and run
+voxel.exe. You'll need OpenGL drivers for your video card, which you almost
+certainly have, and GLUT, which is included in this package.
+
+  * **Controls**
+
+Arrow Keysmovement (forward/backward and turning)
+
+Homeincrease altitude
+
+Enddecrease altitude
+
+Mteleport to Mountain planet
+
+Vteleport to Volcanic planet
+
+Ftoggle FPS display
+
+Itoggle interpolation (smoother and not much slower)
+
+Atoggle autopilot (follow the terrain's altitude)
+
+Qquit the game
+
+  * **Known Bugs**
+
+The renderer shows artifacts occasionally when interpolation is turned on. This
+only happens in a few places, but it can easily be seen at the X-shaped islands
+on each planet. As a workaround, you can turn interpolation off.
+
+Also, the fps calculation is off. It's not exactly a showstopper, though.
+
+  * **Compiling**
+
+Voxel Hunt should build and run on any OpenGL platform. Unfortunately I
+developed and tested only on Windows, so only a Win32 executable and MS Visual
+C++ project files are included.
+
+There are no specific build instructions. I only ask that you (please!) turn on
+all appropriate compiler optimizations when building Voxel Hunt, since voxel
+rendering is CPU intensive. The "inline any suitable function" is especially
+good. Also, because of this, Voxel Hunt will run slower on older computers. A PC
+with a Pentium II-class processor, 300MHz or faster, is probably the baseline.
+
+  * **Technical Info**
+
+Voxel Hunt uses a voxel renderer to display terrain that is higher resolution
+than poly-based terrain on similar hardware. Voxel Hunt uses a heightmap to
+generate its height field, and an interpolated color map that is generated from
+the heightmap at run time. Each planet has its own interpolated color scheme.
+Each planet also has its own sky, which is rotated to match the viewing angle.
+Unfortunately, the sky does not scroll in parallax.
+
+The rendering algorithm is a specialized ray surfing algorithm which assumes
+convexity on the Y axis. This allows me to use a height map, since each point on
+the ground can only have one height. The algorithm casts a ray for each column
+of pixels on the screen. The ray is stepped through the scene until it
+intersects a voxel column. The ray then surfs up the voxel column, and the
+columns behind it, until it reaches a peak. The ray is then stepped until it
+intersects another voxel column. This continues until the ray is off the scene
+or it has been stepped a maximum number of times.
+
+Since the scene data in Voxel Hunt is made of voxels and not polygonal surfaces,
+OpenGL's poly routines cannot be used to rasterize the scene. Therefore, OpenGL
+is only used as a graphics library to blit pixels to the screen - I wrote my own
+framebuffer and call glDrawPixels only to draw a frame to the screen.
+
+I wrote a number of renderers in the process of writing Voxel Hunt. I first
+wrote a poly renderer that draws each voxel as a cube with 6 faces. Needless to
+say, this was ass slow. I then wrote a number of raycasting algorithms before
+settling on the "look angle" algorithm I use now. Two of the more significant
+optimizations I wrote were a special fixed point data type (operations on it are
+much faster than floating point), and a lookup table of cosine and sine values
+for "look angles."
+

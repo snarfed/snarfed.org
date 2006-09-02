@@ -1,0 +1,116 @@
+snipsnap-help
+
+### Text formatting rules
+
+[SnipSnap](http://snipsnap.org) text may contain the following filter rules and
+macros to format text. This includes simple filters for **bold** and _italic_ as
+well as special macros for tables and source code.
+
+### Simple text filters
+
+MnemonicRenderingComment
+
+1 Title a style 1 heading (major heading)
+
+1.1 Title a style 1.1 heading (minor heading)
+
+- text a list item (with -), several lines create a single list
+
+\* text a list item (with \*)
+
+1. text an enumerated list
+
+a. text alphabetical enumerated list
+
+A. text uppercase alphabetical enumerated list
+
+i. text roman enumerated list
+
+I. text uppercase roman enumerated list
+
+g. text greek enumerated list
+
+h. text hiragana (japanese) enumerated list
+
+k. text katakana (japanese) enumerated list
+
+j. text hebrew enumerated list
+
+__bold__**bold**simple bold text
+
+~~italics~~_italics_simple italic text
+
+--strike--strikestrike through text
+
+(empty line) produces a new paragraph
+
+\\ creates a line break, please use sparingly!
+
+[start][start](/space/start)
+
+internal link to another document
+
+http://snipsnap.org/[http://snipsnap.org/](http://snipsnap.org/)
+
+creates a link
+to an external resource, special characters that come after the URL and are not
+part of it must be separated with a space.
+
+\XXescape special character X (i.e. {)
+
+### Available Macros
+
+MacroDescriptionParameters
+
+anchorAdd an HTML anchor.1: anchor name (optional)
+
+apiGenerates links to Java or Ruby API documentation.1: class name, e.g.
+java.lang.Object or java.lang.Object@Java131
+
+2: mode, e.g. Java12, Ruby, defaults to Java (optional)
+
+api-docsDisplays a list of known online API documentations and mappings.none
+
+asinGenerates links to DVD/CD dealers or comparison services. Configuration is
+read from _conf/asinservices.txt_1: asin number
+
+codeDisplays a chunk of code with syntax highlighting, for example Java, XML and
+SQL. The none type will do nothing and is useful for unknown code types.1:
+syntax highlighter to use, defaults to java (optional)
+
+file-pathDisplays a file system path. The file path should use slashes. Defaults
+to windows.1: file path
+
+helloSay hello example macro.1: name to print
+
+imageDisplay an image.1: image filename (optional)
+
+2 link: optional hyperlink (optional)
+
+inter-wikiDisplays a list of known InterWiki mappings.none
+
+isbnGenerates links to book dealers or comparison services. Configuration is
+read from _conf/bookservices.txt_.1: isbn number
+
+linkGenerate a weblink.unexplained, lazy programmer, probably
+[funzel](/space/funzel)
+
+list-of-macrosDisplays a list of available macros.unexplained, lazy programmer,
+probably [funzel](/space/funzel)
+
+mailtoDisplays an email address.1: mail address
+
+quoteDisplay quotations.1: source (optional)
+
+2: displayed description, default is Source (optional)
+
+rfcGenerates links to RFCs.unexplained, lazy programmer, probably
+[funzel](/space/funzel)
+
+tableDisplays a table.none
+
+xrefGenerates links to Java Xref source code.1: class name, e.g.
+java.lang.Object or java.lang.Object@Nanning
+
+2: line number (optional)
+

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>Emacs and remote X Windows-1</title>
+<ipaddress></ipaddress>
+<author>t_therkelsen</author>
+<link>/space/t_therkelsen</link>
+<email></email>
+<source></source>
+<pubDate>1125998366</pubDate>
+<description>
+Thanks for this little tidbit of info.  No more twiddling my thumbs on ctrl-k's :-)&lt;p class="paragraph"/&gt;Oh, btw, at least in XEmacs you can use C-insert (copy) and Sh-insert (paste) to use the clipboard-sharing copy feature.  Don't know if this works in Emacs, though.&lt;p class="paragraph"/&gt;/TT
+</description>
+</item>

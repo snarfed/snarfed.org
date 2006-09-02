@@ -1,0 +1,44 @@
+stop mozilla plugin prompt
+[![mozilla.png](/space/mozilla.png)](http://mozilla.org/mozilla1.x/)[![ff_icon.png](/space/ff_icon.png)](http://mozilla.org/firefox/)[![camino.png](/space/camino.png)](http://mozilla.org/camino/)[![thunderbird.jpg](/space/thunderbird.jpg)](http://mozilla.org/thunderbird/)[![bugzilla.jpg](/space/bugzilla.jpg)](http://bugzilla.org/)
+
+Expanded
+from a [mozdev.org
+FAQ:](http://plugindoc.mozdev.org/faqs/firefox-linux.html#qa-nullplugin)
+
+**Q:** How do I stop Mozilla Firefox from prompting me to install a plugin?
+
+**A:** Delete the libnullplugin.so from your Mozilla Firefox plugins directory.
+You may have to do this as root if you do not have write access to your Mozilla
+Firefox installation from your user account.
+
+**Q:** But now Mozilla just shows blank space where plugin content would be. How
+do I know when I'm missing plugin content? (Or, how do I know when to feel warm
+and fuzzy because I successfully avoided a flash banner ad?)
+
+**A:** Add this CSS to your
+[userContent.css](http://texturizer.net/firefox/edit.html) file:
+
+
+    embed {
+
+      border: solid;
+
+      border-width: 20px;
+
+      border-color: red;
+
+    }
+
+Now there will be a big ugly red box where plugin content would have been. Feel
+free to customize the size, color, etc. to your liking.
+
+See also:
+
+  * [change firefox's saved passwords](/space/change firefox)
+
+  * [linking libraries with mozilla xpcom](/space/linking libraries with mozilla
+xpcom)
+
+  * [trigger scripts for mozilla xpi packages](/space/trigger scripts for
+mozilla xpi packages)
+

@@ -1,0 +1,80 @@
+fillcode
+
+[![gnu.jpg](/space/gnu.jpg)](/space/fillcode)
+
+For the impatient:  
+&nbsp; [Download fillcode.el 0.5](/space/fillcode.el)  
+&nbsp; [Download fillcode.tar.gz](/space/fillcode.tar.gz) (includes
+[elunit](http://www.lostway.org/~tko/elisp/elunit/) unit tests)  
+
+Fillcode is an [Emacs](http://gnu.org/software/emacs/) minor mode that fills, or
+wraps, some parts of source code. It's best described by example. Fillcode fills
+this:
+
+
+    public static void foo(int i, float f, String s) {
+
+to this:
+
+
+    public static void foo(int i, float f,
+
+                           String s) {
+
+The motivation is described in my original [call for filling
+code](/space/filling code in emacs).
+
+Fillcode can fill any parenthesized expression, including function prototypes,
+function calls, and conditional expressions. It only breaks lines at commas and
+binary operators, and correctly preserves embedded comments and string literals.
+It also normalizes existing whitespace and line breaks.
+
+Fillcode is supported in both [Emacs](http://gnu.org/software/emacs/) and
+[XEmacs](http://xemacs.org/), and works with most programming language major
+modes, including Java, C, C++, Objective C, Perl, Python, shell, and SQL modes.
+It fills when _fill-paragraph_ (usually M-q) is called. If the major mode itself
+attempts to fill - inside a comment, for example - fillcode graciously steps
+back and does nothing.
+
+You can load fillcode automatically by copying
+[fillcode.el](/space/fillcode.el) into _/usr/share/emacs/site-lisp/_,
+or any other directory in Emacs' _load-path_. Then, add this to your .emacs
+file:
+
+
+    (require 'fillcode)
+
+_M-x fillcode-mode_ toggles fillcode on and off in the current buffer. To turn
+it on automatically whenever you open source code, add these lines to your
+.emacs file.
+
+
+    (add-hook 'c-mode-common-hook 'fillcode-mode)
+
+    (add-hook 'perl-mode-hook 'fillcode-mode)
+
+    (add-hook 'python-mode-hook 'fillcode-mode)
+
+    (add-hook 'shell-script-mode-hook 'fillcode-mode)
+
+    (add-hook 'sql-mode-hook 'fillcode-mode)
+
+Fillcode is a work in progress. Here's a list of issues:
+
+  * It doesn't yet fill expressions outside parentheses.
+
+  * It doesn't break lines at the =, >, and < operators.
+
+  * It depends on the major mode's indentation and parsing engines. These are
+less than perfect in some major modes.
+
+  * It's not entirely compatible with
+[auto-fill-mode](http://www.gnu.org/software/emacs/manual/emacs.html#Auto%20Fill)
+or [filladapt-mode](http://www.wonderworks.com/#filladapt)...yet.
+
+  * Single-line comments, such as **//** and **#** comments, aren't handled
+perfectly. Specifically, the following lines aren't always indented.
+
+Fillcode is copyright 2005-2006 [Ryan Barrett](http://ryan.barrett.name/), and
+is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
+

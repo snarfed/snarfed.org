@@ -1,0 +1,28 @@
+remove tcsh globbing in history search
+[![tcsh_oystercatcher.jpg](/space/tcsh_oystercatcher.jpg)](http://www.tcsh.org/)
+
+For the impatient:  
+[Patch](/space/tcsh-no-glob-search.patch)
+for [tcsh 6.14.00](http://www.tcsh.org/MostRecentRelease)
+
+I use [tcsh](http://www.tcsh.org/) as my shell, and I love it. Unfortunately,
+globbing breaks its history search commands. They halfway support [...] and *
+(character sets and wildcards), but they die on {...} and ^ (expansions and
+negations).
+
+Specifically, if you use { in a history search pattern, the search is killed and
+prints _Missing }_. If you use ^ in a history search pattern, it treats it as a
+normal character (ie doesn't glob), but ignores everything after it.
+
+The affected commands include history-search-backward, history-search-forward,
+i-search-back, and i-search-fwd.
+
+After [discussing on the tcsh
+list](http://mx.gw.com/pipermail/tcsh/2006-January/003535.html), we decided to
+remove glob support in history search altogether. It's a rare use case, and we
+believe it's more confusing than useful.
+
+[This patch ](/space/tcsh-no-glob-search.patch) against [tcsh
+6.14.00](http://www.tcsh.org/MostRecentRelease) removes globbing support and
+fixes the bugs.
+

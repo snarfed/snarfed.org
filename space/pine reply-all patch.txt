@@ -1,0 +1,77 @@
+pine reply-all patch
+[![pine.png](/space/pine.png)](http://washington.edu/pine/)
+
+For the impatient:  
+Patch for Pine [4.58](/space/reply-all.patch.4.58), [4.60
+and 4.61](/space/reply-all.patch.4.60),
+[4.63](/space/reply-all.patch.4.63),
+[4.64](/space/reply-all.patch.4.64)  
+[Pine source](http://www.washington.edu/pine/getpine/unix.html)  
+[FAQ on patching
+pine](http://www.math.washington.edu/~chappa/pine/faq/index.html)
+
+I use [Pine](http://www.washington.edu/pine/) as my email client, and I really
+like it. It's fast, simple, full-featured, and very keyboardable. However,
+nothing's perfect, even Pine.
+
+Instead of providing separate Reply and Reply All commands, Pine has a single
+Reply command that asks you whether you want to reply to all. Unfortunately, as
+most [usability experts](http://www.useit.com/papers/webwriting/writing.html)
+will attest, [users don't
+read](http://www.joelonsoftware.com/uibook/chapters/fog0000000062.html).
+Including me. So, since I often want to reply all, I've inadvertently trained
+myself to ignore the prompt and just say yes. This is bad because, as we all
+know, there are occasions when you most emphatically _do not_ want to reply to
+all.
+
+So, I wrote a patch to separate Pine's Reply command into Reply and Reply All
+commands, which behave as expected. To patch Pine and build it, first download
+the [Pine 4.60 source](http://www.washington.edu/pine/getpine/unix.html) and my
+[patch](/space/reply-all.patch.4.60.gz). Then, run these
+commands to extract, patch, and build Pine.
+
+
+    $ tar xzvf pine.tar.gz
+
+    $ tar xzvf reply-all.patch.4.60.gz
+
+    $ cd pine4.60
+
+    $ patch -p0 < ../reply-all.patch.4.60
+
+    $ ./build DEBUG=-O lrh
+
+If you download a source package other than the gzip, modify the first command
+accordingly. Also, if you're not on Red Hat Linux, modify the last command
+accordingly. For more information on patching Pine, see [Eduardo Chappa's
+FAQ](http://www.math.washington.edu/~chappa/pine/faq/index.html).
+
+If you do try it out, please [let me
+know!](http://ryan.barrett.name/contact.html)
+
+**Note:** If you get compile problems with kssl.h and krb5.h when building Pine
+on Redhat 9, use this build command:
+
+
+    $ ./build EXTRACFLAGS='-I/usr/kerberos/include' lrh
+
+In RH9, Redhat moved the Kerberos libraries and headers to /usr/kerberos.
+Predictably, this broke every app that compiles against SSL but not
+(necessarily) Kerberos. There's a [debate in the bug
+listing](http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=82369) over whether
+to blame Redhat, packagers, or app developers...but for our purposes, the
+workaround above should be good enough.
+
+See also:
+
+  * [pine delete attachments on save patch](/space/pine delete attachments on
+save patch)
+
+  * [pine flowed-text patch](/space/pine flowed-text patch)
+
+  * [pine remove trailing quote patch](/space/pine remove trailing quote patch)
+
+  * [port\_pine\_patch](/space/port_pine_patch)
+
+  * [gmail vs pine](/space/gmail vs pine)
+

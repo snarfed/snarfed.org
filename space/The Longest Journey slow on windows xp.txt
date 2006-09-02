@@ -1,0 +1,27 @@
+The Longest Journey slow on windows xp
+[![/space/the_longest_journey.jpg](/space/the_longest_journey.jpg)](http://www.longestjourney.com/)
+
+I
+recently played [The Longest Journey](http://www.longestjourney.com/)
+([reviews](http://www.gamerankings.com/itemrankings/searchresult.asp?term=journey+longest&itemid=198973))
+a few weeks ago, and [I loved it](/space/2005-08-04). It's a standard
+point-and-click adventure game, but the world and characters are surprisingly
+immersive, and the story is amazing so far.
+
+Unfortunately, it took me a while to make it happy on Windows XP. It installed
+and ran, but it was incredibly slow, often only a few frames per second. I was
+surprised, since it's an older game, and I run it on a [Thinkpad
+T40](http://www.ibm.com/pc/support/site.wss/document.do?sitestyle=ibm&lndocid=MIGR-46451)
+with an [ATI Radeon 9000
+Mobility](http://ati.com/products/MobilityRadeon9000/index.html), which should
+be more than enough power. I tried all the options in the launcher, including 16
+vs. 32 bit color, low-detail models, W-buffer and force single buffer, and even
+[Windows 95 and 98/ME compatibility
+mode](http://www.longestjourney.com/help/faq/technical/run_on_winxp.html). No
+luck. I was stumped.
+
+Finally, I tried turning 3D acceleration _off_ by unchecking the "Enable 3D
+Acceleration" checkbox. The framerate suddenly turned silky smooth. Maybe TLJ
+uses an older version of DirectX that the ATI driver doesn't support well? Who
+knows. I'm just happy it works!
+

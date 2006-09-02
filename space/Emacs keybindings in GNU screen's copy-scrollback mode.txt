@@ -1,0 +1,98 @@
+Emacs keybindings in GNU screen's copy-scrollback mode
+[![terminal.jpg](/space/terminal.jpg)](http://www.gnu.org/software/screen/)[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)[![X_logo.png](/space/X_logo.png)](/space/synchronizing
+GNU screen's paste buffer and the X selection)
+
+When I'm working, I pretty much
+live inside [Emacs](http://gnu.org/software/emacs/). It's my IDE, debugger, text
+editor, email composer, spreadsheet, file manager, and all-around scratch pad.
+
+I've burned Emacs' key bindings into my brain, so I go to great lengths to set
+them in every program I use. That way, I don't have to context switch my
+fingers' muscle memory when I task switch from coding to email, to IM, to the
+web. Task switches may be a fact of life, but other unnecessary mental context
+switches are evil incarnate.
+
+I recently started using [GNU screen](http://www.gnu.org/software/screen/)'s
+[copy/scrollback mode](http://www.delorie.com/gnu/docs/screen/screen_73.html) so
+that I could copy from terminals with the keyboard. I use these commands in [my
+.screenrc](http://ryan.barrett.name/dotfiles/.screenrc) to set up Emacs key
+bindings in screen's copy/scrollback mode:
+
+
+    \# emacs keybindings for navigation in copy mode
+
+    markkeys h=^B:l=^F:0=^A:$=^E
+
+    markkeys " =^ "
+
+
+
+
+
+
+      1. special hack for C-e, since it should go *past*
+
+
+
+      2. the last char. -m means this is for copy mode only.
+
+
+
+
+
+    bindkey -m ^e stuff "$^f"
+
+
+
+
+
+
+      1. C-g and other keys just quit copy mode. Esc does nothing.
+
+
+
+
+
+    markkeys 033=015=^G=^D=h=j=k=l=H=M=L=G=g=y=c=v=a=x=b=e=B=E=w
+
+    markkeys @=033
+
+
+
+
+
+
+      1. control arrows move by words. (set B, e, and w to F keys so that i can
+use
+
+
+
+      2. them to move by words, but they themselves still quit copy mode.)
+
+
+
+
+
+    markkeys B=[:E=]:b={:e=}:w=>
+
+    bindkey -m ^[Od stuff {  #"[[}"
+
+    bindkey -m ^[Oc stuff ]  #"}]^f"
+
+See also:
+
+  * [synchronizing GNU screen's paste buffer and the X
+selection](/space/synchronizing GNU screen)
+
+  * [why I don't run shells inside Emacs](/space/why I don)
+
+  * [control arrow keys in rxvt, tcsh, and emacs](/space/control arrow keys in
+rxvt, tcsh, and emacs)
+
+  * [emacs keybindings in firefox](/space/emacs keybindings in firefox)
+
+  * [emacs keybindings with number keys](/space/emacs keybindings with number
+keys)
+
+  * [emacs page up page down](/space/emacs page up page down)
+

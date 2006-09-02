@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<item>
+<title>linking libraries with mozilla xpcom-1</title>
+<ipaddress></ipaddress>
+<author>Guest</author>
+<link>/space/Guest</link>
+<email></email>
+<source></source>
+<pubDate>1141195190</pubDate>
+<description>
+Hi,
+I also had the same problem as you and I add libraries and header files in following variables&lt;p class="paragraph"/&gt;EXTRA_LIBS&lt;p class="paragraph"/&gt;LOCAL_INCLUDES&lt;p class="paragraph"/&gt;Compiling and linking part is working fine. but when I try to make a object in JS it shows the following error:&lt;p class="paragraph"/&gt;&lt;hr class="line"/&gt;
+uncaught exception: &lt;a href='/space/ 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance'&gt; 0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE) [nsIJSCID.createInstance&lt;/a&gt;"  nsresult: "0x80570015 (NS_ERROR_XPC_CI_RETURNED_FAILURE)"  location: "JS frame :: typein :: &amp;#60;TOP_LEVEL&amp;#62; :: line 3"  data: no]
+&lt;hr class="line"/&gt;&lt;p class="paragraph"/&gt;Do you have some idea about this. 
+           thanx!&lt;p class="paragraph"/&gt; &lt;i class="italic"&gt;- Dimuthu&lt;/i&gt;
+</description>
+</item>

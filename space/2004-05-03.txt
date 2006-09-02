@@ -1,0 +1,14 @@
+2004-05-03
+
+### Windows P2P ![/space/p2p.png](/space/p2p.png)
+
+About a year ago, Microsoft quietly announced that they were developing a
+peer-to-peer networking protocol. This is not a file sharing program, mind you;
+it's a network routing protocol. It's called, unimaginatively, [Windows Peer to
+Peer Networking](http://www.microsoft.com/windowsxp/p2p/). Since late March,
+I've been working on implementing this protocol. I'd like to create an
+interoperable library for use on other operating systems, such as Mac OS X and
+Linux, as well as Windows.
+
+[Read more...](/space/windows+p2p)
+
