@@ -3,12 +3,12 @@
  * @author Ryan Barrett <snarfed@ryanb.org>
  */
 
-
 input, select, textarea {
   font-family: verdana, arial, sans-serif;
   border: 1px solid #036;
-  font-size: 13;
+  font-size: 13px;
   margin: 5px;
+  padding-left: 2px;
 }
 
 table {
@@ -22,12 +22,35 @@ input#searchbox {
 textarea {
   width: 100%;
   overflow: auto;
-  wrap: virtual;
 }
 
 img {
   border: none;
+  padding: 1px;
 }
+
+img.left {
+  display: block;
+  left: 0px;
+}
+
+img.right {
+  display: block;
+  right: 0px;
+}
+
+img.center { text-align: center; }
+
+img.float-left {
+  float: left;
+  margin: 10px;
+}
+
+img.float-right {
+  float: right;
+  margin: 10px;
+}
+
 
 a {
   text-decoration: none;
@@ -48,8 +71,14 @@ a:hover   { color: #07D; }
   color: inherit;
 }
 
+.ajax-message {
+  color: #8AD;
+  font-weight: bold;
+  font-style: italic;
+}
+
 /* for debugging */
-/* * { border: 1px solid green; } */
+/* { border: 1px solid green; } */
 
 body {
   font-family: verdana, arial, sans-serif;
@@ -87,9 +116,7 @@ a#page-title {
 }
 
 div#page-buttons {
-  display: block;
   padding: 5px;
-  text-decoration: bold;
   text-align: right;
   color: #FFF;
   background-color: #036;
@@ -100,22 +127,18 @@ div#page-buttons a {
 }
 
 div#page-content {
-//  display: block;
-//  position: absolute;
   left: 10px;
   margin: 0px;
   padding: 10px;
   padding-left: 145px;
-  // min-width instead of width for IE
+  /* min-width instead of width for IE */
   min-width: 445px;
   background-color: #FFF;
 }
 
 div#page-portlet-1 
 {
-//  display: block;
  position: absolute;
-//  z-index: 1;
   width: 110px;
   left: 10px;
   padding: 10px;
@@ -187,14 +210,14 @@ div#ryan {
   -moz-border-radius: 15px;
 }
 
-.preview { background-color: #EEE; }
+div.preview {
+  background-color: #EEE;
+  border: 1px dashed #8AD;
+  -moz-border-radius: 15px;
+}
 
 .bold { font-weight: bold; }
 .italic { font-style: italic; }
-
-img {
-  padding: 1px;
-}
 
 h3 {
   color: #036;
@@ -225,62 +248,3 @@ code {
 li {
   margin-bottom: 10px;
 }
-
-
-// img.left {
-//   display: block;
-//   left: 0px;
-// }
-// 
-// img.right {
-//   display: block;
-//   right: 0px;
-// }
-// 
-// img.center { text-align: center; }
-// img.float-left {
-//   float: left;
-//   margin: 10px;
-// }
-// img.float-right {
-//   float: right;
-//   margin: 10px;
-// }
-
-// .java-keyword {
-//   font-weight: bold;
-//   color: #00A;
-// }
-// .java-object { color: #008; }
-// .java-quote { color: #0a0; }
-// .xml-keyword { font-weight: bold; }
-// .xml-tag { color: #00a; }
-// 
-// /* special formatting of a wiki table */
-// .wiki-table {
-//   empty-cells: show;
-//   width: 100%;
-//   max-width: 100%;
-// }
-// 
-// .wiki-table td {
-//   border-top: 1px solid #036;
-//   padding: 4px;
-// }
-// 
-// .wiki-table th {
-//   border-top: 1px solid #036;
-//   text-align: left;
-//   font-weight: bold;
-//   color: #FFF;
-//   background-color: #013;
-// }
-// 
-// .list-title {
-//   font-weight: bold;
-// }
-// 
-// .list ul {
-//   list-style-type: none;
-// }
-
