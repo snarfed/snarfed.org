@@ -2,12 +2,12 @@
 
 ### Reply-all patch for pine
 
-<geekiness>
+`<geekiness>`
 
 I've written a patch for my email client,
 [Pine](http://www.washington.edu/pine/), that provides a fully functional Reply
 All command. More information here: [pine reply-all patch](/space/pine reply-all
 patch)
 
-</geekiness>
+`</geekiness>`
 
