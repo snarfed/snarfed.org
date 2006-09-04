@@ -1,0 +1,204 @@
+diff -rc contrib.1.3.0/plugins/comments/flavours/comment-form.html contrib_ajax_comments/plugins/comments/flavours/comment-form.html
+*** contrib.1.3.0/plugins/comments/flavours/comment-form.html	Tue May 30 17:01:34 2006
+--- contrib_ajax_comments/plugins/comments/flavours/comment-form.html	Sun Sep  3 10:31:20 2006
+***************
+*** 1,8 ****
+! <a name="comment_anchor">
+  <p>
+    <b>$comment_message</b>
+  </p>
+- </a>
+  <div class="blosxomCommentForm">
+  <form method="post" action="$base_url/$file_path#comment_anchor" name="comments_form">
+  <input type="hidden" name="secretToken" value="pleaseDontSpam" />
+--- 1,7 ----
+! <a name="comment_anchor" id="comment-anchor" />
+  <p>
+    <b>$comment_message</b>
+  </p>
+  <div class="blosxomCommentForm">
+  <form method="post" action="$base_url/$file_path#comment_anchor" name="comments_form">
+  <input type="hidden" name="secretToken" value="pleaseDontSpam" />
+***************
+*** 20,27 ****
+  Comment:<br />
+  <textarea cols="50" name="body" rows="12"></textarea><br />
+  <br />
+! <input name="Submit" type="submit" value="Submit" />
+  </form>
+  </div> <!-- ends blosxomCommentForm div -->
+  
+  </div> <!-- ends blosxomComments div -->
+--- 19,31 ----
+  Comment:<br />
+  <textarea cols="50" name="body" rows="12"></textarea><br />
+  <br />
+! <!-- <input value="Preview" name="preview" type="submit" id="preview-button"
+!             onclick="javascript:send_comment('preview');" /> -->
+! <input value="Submit" name="submit" type="submit" id="post-button"
+!        onclick="javascript:send_comment('post');" />
+  </form>
++ 
++ <script type="text/javascript" src="/comments.js" />
+  </div> <!-- ends blosxomCommentForm div -->
+  
+  </div> <!-- ends blosxomComments div -->
+Only in contrib_ajax_comments/plugins/comments/plugins: comments.js
+diff -rc contrib.1.3.0/plugins/comments/plugins/comments.py contrib_ajax_comments/plugins/comments/plugins/comments.py
+*** contrib.1.3.0/plugins/comments/plugins/comments.py	Tue May 30 17:01:35 2006
+--- contrib_ajax_comments/plugins/comments/plugins/comments.py	Sun Sep  3 09:53:51 2006
+***************
+*** 85,90 ****
+--- 85,125 ----
+      this template.
+  
+  
++ AJAX SUPPORT
++ ============
++ 
++ Comment previewing and posting can optionally use AJAX, as opposed to full
++ HTTP POST requests. This avoids a full-size roundtrip and re-render, so
++ commenting feels faster and more lightweight.
++ 
++ To enable AJAX comments, set the comment_ajax config parameter to True.
++ 
++ AJAX commenting degrades gracefully in older browsers. If JavaScript is
++ disabled or not supported in the user's browser, or if it doesn't support
++ XmlHttpRequest, comment posting and preview will use normal HTTP POST.
++ 
++ AJAX comment support requires a few elements in the comment-form flavour
++ template. Specifically, the comment-anchor tag must be the first thing in the
++ template:
++ 
++   <a name="comment-anchor" id="comment-anchor" />
++ 
++ Also, the preview and post buttons in the form must have these exact type, id,
++ and onclick attributes:
++ 
++   <input value="Preview" name="preview" type="submit" id="preview-button"
++          onclick="javascript:send_comment('preview');" />
++   <input value="Post" name="post" type="submit" id="post-button"
++          onclick="javascript:send_comment('post');" />
++ 
++ Finally, this script tag must be included somewhere after the </form> tag:
++ 
++   <script type="text/javascript" src="/comments.js" />
++ 
++ All of these tags are included in the default comment-form template that comes
++ with this plugin.
++ 
++ 
+  NOFOLLOW SUPPORT
+  ================
+  
+***************
+*** 150,159 ****
+  __url__ = "http://pyblosxom.sourceforge.net/"
+  __description__ = "Allows for comments on each blog entry."
+  
+! import cgi, glob, os.path, re, time, cPickle, os, codecs
+  from xml.sax.saxutils import escape
+  from Pyblosxom import tools
+  from Pyblosxom.entries.base import EntryBase
+  
+  def cb_start(args):
+      request = args["request"]
+--- 185,195 ----
+  __url__ = "http://pyblosxom.sourceforge.net/"
+  __description__ = "Allows for comments on each blog entry."
+  
+! import cgi, glob, os.path, re, time, cPickle, os, codecs, sys
+  from xml.sax.saxutils import escape
+  from Pyblosxom import tools
+  from Pyblosxom.entries.base import EntryBase
++ from Pyblosxom.renderers import blosxom
+  
+  def cb_start(args):
+      request = args["request"]
+***************
+*** 678,683 ****
+--- 714,787 ----
+          data["comment_message"] = writeComment(request, config, data, \
+                                                  cdict, encoding)
+  
++         # record the comment's timestamp, so we can extract it and send it
++         # back alone, without the rest of the page, if the request was ajax.
++         data['cmt_time'] = float(cdict['pubDate'])
++ 
++ class AjaxRenderer(blosxom.Renderer):
++     """ The renderer used when responding to AJAX requests to preview and post
++     comments. Renders *only* the comment and comment-preview divs.
++     """
++     def __init__(self, request, data):
++         out = request.getConfiguration().get('stdoutput', sys.stdout)
++         blosxom.Renderer.__init__(self, request, out)
++         self._ajax_type = request.getHttp()['form']['ajax'].value
++         self._data = data
++ 
++     def __shouldOutput(self, entry, template_name):
++         """ Return whether we should output this template, depending on the
++         type of ajax request we're responding to.
++         """
++         if self._ajax_type == 'preview' and template_name == 'comment-preview':
++             return True
++         elif (self._ajax_type == 'post' and template_name == 'comment' and
++               entry['cmt_time'] == self._data['cmt_time']):
++             return True
++         else:
++             return False
++ 
++     def outputTemplate(self, output, entry, template_name, override=0):
++         if self.__shouldOutput(entry, template_name):
++             blosxom.Renderer.outputTemplate(self, output, entry,
++                                             template_name, override)
++ 
++     def _outputFlavour(self, entry, template_name):
++         if self.__shouldOutput(entry, template_name):
++             blosxom.Renderer._outputFlavour(self, entry, template_name)
++ 
++ def cb_renderer(args):
++     request = args['request']
++     config = request.getConfiguration()
++     http = request.getHttp()
++     form = http['form']
++ 
++     # if ajax is enabled, intercept ajax requests with our renderer
++     if (config.get('comment_ajax', False) and form.has_key('ajax') and
++         http.get('REQUEST_METHOD', '') == 'POST'):
++         data = '&'.join(['%s=%s' % (arg.name, arg.value) for arg in form.list])
++         tools.getLogger().info('AJAX request: %s' % data)
++         return AjaxRenderer(request, request.getData())
++ 
++ def cb_handle(args):
++     request = args['request']
++     config = request.getConfiguration()
++ 
++     # if ajax is enabled, serve /comments.js
++     tools.getLogger().info(os.getcwd())
++     if (config.get('comment_ajax', False) and
++         request.getHttp()['PATH_INFO'] == '/comments.js'):
++         response = request.getResponse()
++         response.addHeader('Content-Type', 'text/javascript')
++ 
++         # look for it in each of the plugin_dirs
++         for dir in config['plugin_dirs']:
++             comments_js = os.path.join(dir, 'comments.js')
++             if os.path.isfile(comments_js):
++                 f = file(comments_js, 'r')
++                 response.write(f.read())
++                 f.close()
++                 return True
++ 
+  def escape_link(linkstring):
+      """Don't allow html in the link string"""
+      for c in "<>'\"":
+***************
+*** 739,744 ****
+--- 843,849 ----
+          c['cmt_item'] = sanitize(form['body'].value)
+          c['cmt_pubDate'] = time.ctime(time.time())
+          c['cmt_description'] = sanitize(form['body'].value)
++         c['cmt_description_escaped'] = escape(sanitize(form['body'].value))
+      except KeyError, e:
+          c['cmt_error'] = 'Missing value: %s' % e
+  

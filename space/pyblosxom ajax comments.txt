@@ -1,0 +1,56 @@
+pyblosxom ajax comments
+
+![ajax](/space/ajax.jpg)
+
+For the impatient:  
+&nbsp; [Download comments-1.3.0a.tar.gz](/space/comments-1.3.0a.tar.gz) (with AJAX support)  
+&nbsp; [Download patch](/space/pyblosxom_ajax_comments.patch) (against
+ [contrib-1.3.0](http://prdownloads.sourceforge.net/pyblosxom/contrib.1.3.0.tar.gz?download))  
+&nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
+&nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)
+
+[PyBlosxom](http://pyblosxom.sf.net/), the server software that runs this site,
+uses a [plugin](http://pyblosxom.sourceforge.net/blog/registry/input/comments)
+to handle commenting.
+This patch adds [AJAX](http://en.wikipedia.org/wiki/Ajax_\(programming\))
+support to that plugin. [Try it!](#comment-anchor)
+
+Specifically, comment previewing and posting can optionally use AJAX, as
+opposed to full HTTP POST requests. This avoids a full-size roundtrip and
+re-render, so commenting feels faster and more lightweight.
+
+To enable AJAX comments, set the `comment_ajax` config parameter in
+`config.py` to True.
+
+AJAX commenting degrades gracefully in older browsers. If JavaScript is
+disabled or not supported in the user's browser, or if it doesn't support
+`XmlHttpRequest`, comment posting and preview will use normal HTTP POST.
+Feel free to [check out the JavaScript](/comments.js).
+
+Also, since the browser window never sends a full POST request, refreshing the
+page after a preview or comment submission won't re-post the comment, or pop up
+an annoying "are you sure?" dialog box.
+
+AJAX comment support requires a few elements in the comment-form flavour
+template. Specifically, the comment-anchor tag must be the first thing in the
+template:
+
+    <a name="comment-anchor" id="comment-anchor" />
+
+Also, the preview and post buttons in the form must have these exact type, id,
+and onclick attributes:
+
+    <input value="Preview" name="preview" type="submit" id="preview-button"
+           onclick="javascript:send_comment('preview');" />
+    <input value="Post" name="post" type="submit" id="post-button"
+           onclick="javascript:send_comment('post');" />
+
+Finally, this script tag must be included somewhere after the `</form>` tag:
+
+    <script type="text/javascript" src="/comments.js" />
+
+All of these tags are included in the default comment-form template that comes
+with this plugin.
+
+AJAX comment support is copyright 2006 [Ryan Barrett](/space/contact), and is
+distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
