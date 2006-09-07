@@ -34,3 +34,7 @@ It's basically a generalization of imagekicker, which inspired its name.
 Filekicker is copyright 2006 [Ryan Barrett](/space/contact), and is distributed
 under the [GPL](http://www.gnu.org/licenses/gpl.html).
 
+See also:
+  * [pyblosxom ajax comments](/space/pyblosxom ajax comments)
+  * [pyblosxom rdf flavour](/space/pyblosxom rdf flavour)
+  * [migrating to pyblosxom](/space/2006-08-23)
