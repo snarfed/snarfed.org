@@ -8,6 +8,10 @@ is [GPL](http://www.gnu.org/licenses/gpl.html)ed.
 <a name="projects" />
 ### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](#projects)
 
+  * An [RDF flavour](/space/pyblosxom+rdf+flavour) for Pyblosxom.
+
+  * [AJAX commenting](/space/pyblosxom+ajax+comments) in Pyblosxom.
+
   * [Filekicker](/space/filekicker) is a [PyBlosxom](http://pyblosxom.sf.net/)
 plugin that serves static files.
 
