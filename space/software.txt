@@ -8,6 +8,12 @@ is [GPL](http://www.gnu.org/licenses/gpl.html)ed.
 <a name="projects" />
 ### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](#projects)
 
+  * [photogallery](/space/photogallery) is a [PyBlosxom](http://pyblosxom.sf.net/)
+plugin that displays photo galleries.
+
+  * [hardcodedates](/space/hardcodedates) is a [PyBlosxom](http://pyblosxom.sf.net/)
+plugin that stores mtimes in a file.
+
   * An [RDF flavour](/space/pyblosxom+rdf+flavour) for Pyblosxom.
 
   * [AJAX commenting](/space/pyblosxom+ajax+comments) in Pyblosxom.
