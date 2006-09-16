@@ -27,7 +27,7 @@ This module requires the 'history_backend' config parameter, which specifies
 the version control backend to use. For now, only 'subversion' is supported.
 Add this line to your config.py:
 
-    py[`history_backend`] = `subversion`
+    py['history_backend'] = 'subversion'
 
 To use the Subversion backend, the [pysvn](http://pysvn.tigris.org/) module
 must be installed somewhere in your PYTHONPATH.
@@ -90,15 +90,21 @@ plugin.
 
 ### Template Variables
 
-These new template variables are provided in the history-diff and
-history-version templates:
+These new template variables are provided in the `history-diff` and
+`history-version` templates:
 
-    $diff      (in history-diff)    The text of the diff, in unified format.
-    $version1  (in history-diff)    The base version of the diff.
-    $version2  (in history-diff)    The ending version of the diff.
-    $version   (in history-version) The displayed version of the entry.
-    $author    (in both)            The person who made the last change.
-    $message   (in both)            The changelog of the last change.
+    history-diff:
+    $diff      The text of the diff, in unified format.
+    $version1  The base version of the diff.
+    $version2  The ending version of the diff.
+
+    history-version:
+    $version   The displayed version of the entry .
+
+    both:
+    $author    The person who made the last change.
+    $message   The changelog of the last change.
+    $date      The date of the last change.
 
 Diffs should usually be displayed in a fixed-width font, so surrounding $diff
 with `<code>` and/or `<pre>` is strongly suggested.
