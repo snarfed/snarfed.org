@@ -1,0 +1,117 @@
+history.py
+
+![clock_icon.jpg](clock_icon.jpg)
+
+For the impatient: <br />
+&nbsp; [Download history.py 0.2](/space/history-0.2.tar.gz)  
+&nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
+&nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)  
+&nbsp; [svnpyblosxom](http://www.baus.net/svnpyblosxom)
+  ([simplified](http://0pointer.de/blog/projects/pyblosxom-svn.html)),
+  a related plugin
+
+[history.py](/space/history-0.2.tar.gz) is a [PyBlosxom](http://pyblosxom.sf.net/)
+plugin that displays change history for entries. The change history must
+already exist, either in a version control system, database, or another form.
+This plugin just uses that backend to display change history, previous
+versions of entries, and textual diffs for changes.
+
+
+### Version Control Backends
+
+This plugin is designed to support different version control backends.
+Currently the only backend is Subversion, but the backend code has been
+abstracted to make it easy to add new backends.
+
+This module requires the 'history_backend' config parameter, which specifies
+the version control backend to use. For now, only 'subversion' is supported.
+Add this line to your config.py:
+
+    py[`history_backend`] = `subversion`
+
+To use the Subversion backend, the [pysvn](http://pysvn.tigris.org/) module
+must be installed somewhere in your PYTHONPATH.
+
+
+### New Urls
+
+There are three new types of pages: past versions, change history, and diffs.
+They are accessed by adding these parameters to entry URLs:
+
+    ?history=1
+
+Shows the entry's change history as a series of diffs, one for each change.
+
+    ?version=X
+
+Shows version X of the entry. Depending on your backend, X may be a revision
+number, a date, a tag, or something else entirely. The Subversion backend
+supports revision numbers.
+
+    ?version=X&raw=1
+
+Shows the raw text of version X of the entry.
+
+    ?diff=1&version1=X&version2=Y
+
+For example, if an entry is located at
+[http://snarfed.org/space/filekicker](/space/filekicker),
+you'd use
+[http://snarfed.org/space/filekicker?history=1](/space/filekicker?history=1)
+to show its change history.
+
+Note that all of the URL parameters require a value. The values for history,
+diff, and raw can be anything, but they *must* be present. URLs that omit the
+value, e.g.
+[http://snarfed.org/space/filekicker?history](/space/filekicker?history),
+will not work.
+
+
+### Templates
+
+The history plugin uses a few new templates, and provides new template
+variables for them. Template files for the html flavour are provided with this
+plugin.
+
+  * `history-diff`: a diff between two versions of an entry. The text of the
+    diff is provided in the $diff template variable. It's in
+[unified format](www.gnu.org/software/diffutils/manual/html_node/Unified-Format.html).
+
+  * `history-version`: a previous version of an entry. This will usually be
+    similar to your story template, with minor modifications. For example, you
+    might not provide links to the entry's comments. All template variables
+    available in the story template are also available here.
+
+  * `history-head` and `history-foot`: These are displayed around the change
+    history page. history-head is displayed at the beginning, history-foot is
+    displayed at the end. The body of the page is a series of diffs, one for
+    each change to the entry, rendered with the history-diff template.
+
+
+### Template Variables
+
+These new template variables are provided in the history-diff and
+history-version templates:
+
+    $diff      (in history-diff)    The text of the diff, in unified format.
+    $version1  (in history-diff)    The base version of the diff.
+    $version2  (in history-diff)    The ending version of the diff.
+    $version   (in history-version) The displayed version of the entry.
+    $author    (in both)            The person who made the last change.
+    $message   (in both)            The changelog of the last change.
+
+Diffs should usually be displayed in a fixed-width font, so surrounding $diff
+with `<code>` and/or `<pre>` is strongly suggested.
+
+Some lines will be surrounded with `<span class="...">`. The class will
+be `diff-added`, `diff-removed`, `diff-changed`, or `diff-line-number`,
+depending on the type of change that the line represents.
+
+
+See also:
+  * [photogallery](/space/photogallery)
+  * [hardcodedates](/space/hardcodedates)
+  * [filekicker](/space/filekicker)
+  * [pyblosxom ajax comments](/space/pyblosxom ajax comments)
+  * [pyblosxom rdf flavour](/space/pyblosxom rdf flavour)
+  * [migrating to pyblosxom](/space/2006-08-23)
