@@ -16,11 +16,12 @@ Linux, as well as Windows.
 
 The proof-of-concept app for this protocol is
 [Threedegrees](http://www.threedegrees.com/), a social interaction program that
-lets people send instant messages, share a music player, and interact in various
-other ways. More importantly, this protocol will be a fundamental part of
+lets people send instant messages, share a browser and a music player, and
+interact in various other ways. More importantly, this protocol will be a
+fundamental part of
 [Indigo](http://msdn.microsoft.com/Longhorn/understanding/pillars/Indigo/default.aspx),
-the networking infrastructure in Longhorn, Microsoft's next-generation Windows
-platform.
+the networking infrastructure in the
+[Vista](http://www.microsoft.com/windowsvista/) platform.
 
 [![/space/stack.png](/space/stack.png)](http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx)
 
