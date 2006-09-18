@@ -8,6 +8,9 @@ is [GPL](http://www.gnu.org/licenses/gpl.html)ed.
 <a name="projects" />
 ### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](#projects)
 
+  * [history](/space/pyblosxom+history) is a [PyBlosxom](http://pyblosxom.sf.net/)
+plugin that displays change history for entries.
+
   * [photogallery](/space/photogallery) is a [PyBlosxom](http://pyblosxom.sf.net/)
 plugin that displays photo galleries.
 
