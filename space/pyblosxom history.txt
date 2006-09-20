@@ -3,8 +3,8 @@ history.py
 ![clock_icon.jpg](clock_icon.jpg)
 
 For the impatient: <br />
-&nbsp; Download [history.py 0.2](/space/history.py) or
-  [history-0.2.tar.gz](/space/history-0.2.tar.gz) (includes templates)  
+&nbsp; Download [history.py 0.2](/space/history.py)  
+&nbsp; Download [history-0.2.tar.gz](/space/history-0.2.tar.gz) (includes templates)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
 &nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)  
 &nbsp; [svnpyblosxom](http://www.baus.net/svnpyblosxom)
