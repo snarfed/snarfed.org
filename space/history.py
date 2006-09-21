@@ -116,6 +116,11 @@ depending on the type of change that the line represents. The classes are
 diff-added, diff-removed, diff-changed, and diff-line-number.
 
 
+CHANGELOG:
+0.3 bugfixes: handle change history w/only one version, etc.
+0.2 First release.
+
+
 TODO: caching. Change history data is immutable, so it's a great candidate for
 caching. However, a given piece of change history data is retrieved at most
 once per request, so caching it within a request wouldn't do much.
@@ -141,7 +146,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 """
 __author__ = "Ryan Barrett"
-__version__ = "0.2"
+__version__ = "0.3"
 __url__ = "http://snarfed.org/pyblosxom+history"
 __description__ = "Displays change history, past versions, and diffs."
 
@@ -218,6 +223,9 @@ class SubversionEntry(VersionedEntry):
   # cache of changes for this entry: {version: change}
   __change_cache = None
 
+  # note the except clauses. they catch pysvn.ClientError (bad pysvn usage), a
+  # pysvn._pysvn.ClientError (if internal error, e.g. can't connect to the svn
+  # repository), or python language error (if other bug).
   def __init__(self, path):
     VersionedEntry.__init__(self, path)
     self.client = pysvn.Client()
@@ -227,14 +235,14 @@ class SubversionEntry(VersionedEntry):
       self.entry = self.client.info(path)
       if not self.entry.is_valid:
         raise BadPath, '%s not found' % path
-    except pysvn.ClientError, msg:
+    except Exception, msg:
       raise BadPath, msg
 
   def get(self, version):
     try:
       revision = pysvn.Revision(pysvn.opt_revision_kind.number, version)
       return self.client.cat(self.path, revision)
-    except pysvn.ClientError, msg:
+    except Exception, msg:
       raise BadVersion, msg
 
   def __format_change(self, change):
@@ -252,7 +260,7 @@ class SubversionEntry(VersionedEntry):
       try:
         rev = pysvn.Revision(pysvn.opt_revision_kind.number, version)
         changes = self.client.log(self.path, revision_start=rev, limit=1)
-      except pysvn.ClientError, msg:
+      except Exception, msg:
         raise BadVersion, msg
 
       change = changes[0]
@@ -282,7 +290,7 @@ class SubversionEntry(VersionedEntry):
         # needs both url_or_path and url_or_path2, otherwise pysvn will break
         url_or_path=self.path, url_or_path2=self.path,
         revision1=rev1, revision2=rev2)
-    except pysvn.ClientError, msg:
+    except Exception, msg:
       raise BadVersion, msg
 
 
@@ -409,14 +417,19 @@ def version(versioned_entry, version, request):
 
 def history(versioned_entry):
   changes = versioned_entry.changes()
-
-  # a list of (version1, version2) pairs to diff
-  to_diff = zip(changes[1:], changes[:-1])
   diffs = []
 
-  for change1, change2 in to_diff:
-    data = diff(versioned_entry, change1['version'], change2['version'])
-    diffs.append(data)
+  if len(changes) == 1:
+    version = changes[0]['version']
+    diffs = [diff(versioned_entry, version, version)]
+    diffs[0]['diff'] = "There is only one version."
+  else:
+    # a list of (version1, version2) pairs to diff
+    to_diff = zip(changes[1:], changes[:-1])
+
+    for change1, change2 in to_diff:
+      data = diff(versioned_entry, change1['version'], change2['version'])
+      diffs.append(data)
 
   return {'diffs': diffs}
 

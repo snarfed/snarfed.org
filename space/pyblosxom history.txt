@@ -3,8 +3,8 @@ history.py
 ![clock_icon.jpg](clock_icon.jpg)
 
 For the impatient: <br />
-&nbsp; Download [history.py 0.2](/space/history.py)  
-&nbsp; Download [history-0.2.tar.gz](/space/history-0.2.tar.gz) (includes templates)  
+&nbsp; Download [history.py 0.3](/space/history.py)  
+&nbsp; Download [history-0.3.tar.gz](/space/history-0.3.tar.gz) (includes templates)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
 &nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)  
 &nbsp; [svnpyblosxom](http://www.baus.net/svnpyblosxom)
@@ -24,9 +24,9 @@ This plugin is designed to support different version control backends.
 Currently the only backend is Subversion, but the backend code has been
 abstracted to make it easy to add new backends.
 
-This module requires the 'history_backend' config parameter, which specifies
-the version control backend to use. For now, only 'subversion' is supported.
-Add this line to your config.py:
+The `history_backend` config parameter specifies the version control backend
+to use. For now, only `subversion` is supported. Add this line to your
+config.py:
 
     py['history_backend'] = 'subversion'
 
