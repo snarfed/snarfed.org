@@ -2,8 +2,7 @@ emacs font-lock faces for composing email
 [![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)[![pine.png](/space/pine.png)](http://washington.edu/pine/)
 
 I
-use [Pine](http://www.washington.edu/pine/) (no, [not GMail](/space/gmail vs
-pine)) as my email client. I set its [alternate
+use [Pine](http://www.washington.edu/pine/) (no, [not GMail](/space/gmail vs pine)) as my email client. I set its [alternate
 editor](http://www.washington.edu/pine/tech-notes/config-notes.html#alt-ed) to
 [Emacs](http://gnu.org/software/emacs/) so I can use it to write email.
 

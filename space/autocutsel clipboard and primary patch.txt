@@ -1,9 +1,10 @@
 autocutsel clipboard and primary patch
+
+[![/space/clip.png](/space/clip.png)](https://savannah.nongnu.org/patch/?func=detailitem&#38;item_id=3367)
+
 For the impatient:  
-[Patch for autocutsel
-0.7.0](/space/autocutsel_unified.v2.patch)  
-[Autocutsel
-page](http://www.nongnu.org/autocutsel/)[![/space/clip.png](/space/clip.png)](https://savannah.nongnu.org/patch/?func=detailitem&#38;item_id=3367)
+[Patch for autocutsel 0.7.0](/space/autocutsel_unified.v2.patch)  
+[Autocutsel page](http://www.nongnu.org/autocutsel/)
 
 I love [Firefox](http://mozilla.org/firefox/), but there are a few things about
 it that annoy me. For example, [you can't paste the primary selection from the

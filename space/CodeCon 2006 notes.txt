@@ -58,10 +58,10 @@ control)](/space/CodeCon+2006+notes#monotone)
   * [Elsa/Oink/Cqual++ (static analysis for
 _dataflow_)](/space/CodeCon+2006+notes#elsa)
 
-<a name="day1" />
+<a name="day1"></a>
 ### **Day 1** [![Icon-Permalink.png](/Icon-Permalink.png)](#day1)
 
-<a name="dfp" />
+<a name="dfp"></a>
 ### Daylight Fraud Prevention ([example](http://bank.securescience.net/bank/)) [![Icon-Permalink.png](/Icon-Permalink.png)](#dfp)
 
 
@@ -126,7 +126,7 @@ some problems are hard for programs, easy for people. amusing cost/benefit
 analysis. :P
 
 ### SiteAdvisor 
-<a name="siteadvisor" />
+<a name="siteadvisor"></a>
 [![Icon-Permalink.png](/Icon-Permalink.png)](#siteadvisor)
 
 
@@ -170,7 +170,7 @@ windows ineffectually noticing spyware, etc. hilarious.
 ppl in the audience worry that siteadvisor itself fits the conventional
 definition of spyware; it's only distinguished by its intent. funny.
 
-<a name="vidtorrent" />
+<a name="vidtorrent"></a>
 ### VidTorrent / Peers  [![Icon-Permalink.png](/Icon-Permalink.png)](#vidtorrent)
 
 _A scalable real-time p2p streaming protocol._
@@ -215,7 +215,7 @@ buffer per tree because tree needs _all_ transmitting nodes
 these guys knew their stuff wrt real-world p2p overlay networks, network
 distance and b/w / latency behavior, etc. very cool.
 
-<a name="localhost" />
+<a name="localhost"></a>
 ### Localhost  [![Icon-Permalink.png](/Icon-Permalink.png)](#localhost)
 
 _A popularity-based P2P file sharing system based on BitTorrent_
@@ -266,7 +266,7 @@ i can't find anything about this on [his
 site](http://www.cs.princeton.edu/~felten/), though...not even abstract. does
 anyone know of one?
 
-<a name="truman" />
+<a name="truman"></a>
 ### Truman  [![Icon-Permalink.png](/Icon-Permalink.png)](#truman)
 
 _An open-source behavioral malware analysis sandnet_
@@ -279,10 +279,10 @@ evidently i skipped the wrong talk, though. friends said this was actually
 really good. lots of interesting, detailed info about how malware works, and
 also a fair amount about vm detection.
 
-<a name="day2" />
+<a name="day2"></a>
 ### **Day 2** [![Icon-Permalink.png](/Icon-Permalink.png)](#day2)
 
-<a name="delta" />
+<a name="delta"></a>
 ### delta  [![Icon-Permalink.png](/Icon-Permalink.png)](#delta)
 
 _Minimizing "interesting" files subject to a test of their interestingness._
@@ -345,7 +345,7 @@ interesting q's: extending topformflat for other langs/data types, how to use
 delta for runtime failures, best: delta-minimize input, then delta-minimize code
 to just part that exhibits bug!
 
-<a name="djinni" />
+<a name="djinni"></a>
 ### Djinni  [![Icon-Permalink.png](/Icon-Permalink.png)](#djinni)
 
 _Approximating Solutions to Nigh-Unsolvable Problems--Fast!_
@@ -404,7 +404,7 @@ sqrt of problem size)
 not really my bag, but a friend who works in this area says he was impressed.
 he's considering trying it out.
 
-<a name="iglance" />
+<a name="iglance"></a>
 ### iGlance  [![Icon-Permalink.png](/Icon-Permalink.png)](#iglance)
 
 _Open source push-to-talk videoconferencing and screen-sharing_
@@ -451,7 +451,7 @@ specifically (udp) nat traversal. in a nutshell, he didn't like stun, turn, and
 ice - more theory than practice - so he rolled his own. details in the
 [p2p-hackers archives](http://zgp.org/pipermail/p2p-hackers/2005-December/).
 
-<a name="oasis" />
+<a name="oasis"></a>
 ### OASIS  [![Icon-Permalink.png](/Icon-Permalink.png)](#oasis)
 
 _Anycast for Any Service_
@@ -508,7 +508,7 @@ network standard, deployed as an intermediary so that legacy transports (tcp,
 udp) and clients (ssh, irc, firefox) work w/o any changes on the client. _very_
 cool.
 
-<a name="qbe" />
+<a name="qbe"></a>
 ### Query By Example  [![Icon-Permalink.png](/Icon-Permalink.png)](#qbe)
 
 _Data mining operations within PostgreSQL_
@@ -592,7 +592,7 @@ even a little choked up. \*sniff\*!
 
 congratulations, len and meredith!!!
 
-<a name="day3" />
+<a name="day3"></a>
 ### **Day 3** [![Icon-Permalink.png](/Icon-Permalink.png)](#day3)
 
 up until now, len had spent his remarks mostly on thanking sponsors, etc. this
@@ -614,7 +614,7 @@ intend to keep it at the under $100 price point for obvious reasons.
 
 and then the real final thanks to the volunteers, sponsors, organizers, etc...
 
-<a name="dido" />
+<a name="dido"></a>
 ### Dido  [![Icon-Permalink.png](/Icon-Permalink.png)](#dido)
 
 _A platform for writing dynamic voice menu systems, in Perl_
@@ -653,7 +653,7 @@ which speaks to the quality of the project itself.
 however, this is just a band-aid on a machanism (IVRs) that really needs to be
 rethought from the ground up.
 
-<a name="deme" />
+<a name="deme"></a>
 ### Deme  [![Icon-Permalink.png](/Icon-Permalink.png)](#deme)
 
 _A free/open-source platform for online group deliberation and dialogue_
@@ -699,7 +699,7 @@ semi-computer-literate users. interface is so busy it's overwhelming.
 evolutionary in most parts, but lots of cool ideas. focus on group action is
 definitely unusual and worthwhile.
 
-<a name="uniconf" />
+<a name="uniconf"></a>
 ### UniConf  [![Icon-Permalink.png](/Icon-Permalink.png)](#uniconf)
 
 _Unified access to system, service, and application configuration._
@@ -722,7 +722,7 @@ also supports notifications when configs change, access control, etc.
 
 huge adoption hurdle, but a noble goal. :P
 
-<a name="remailer-to-go" />
+<a name="remailer-to-go"></a>
 ### Remailer To Go  [![Icon-Permalink.png](/Icon-Permalink.png)](#remailer-to-go)
 
 _Disposable anonymous remailers_
@@ -745,7 +745,7 @@ miles took this and ran with it. he connected a cloth solar panel to a gumstick
 computer and a wireless card, determined the power req'ts (roughly two watts
 continuously), and hacked it all together. sooo amusing and fun.
 
-<a name="monotone" />
+<a name="monotone"></a>
 ### Monotone  [![Icon-Permalink.png](/Icon-Permalink.png)](#monotone)
 
 _Low stress, high functionality version control._
@@ -791,7 +791,7 @@ most others?
 
 meh. another codecon, another version control system. good talk at least.
 
-<a name="rhizome" />
+<a name="rhizome"></a>
 ### Rhizome  [![Icon-Permalink.png](/Icon-Permalink.png)](#rhizome)
 
 _An application stack enabling the rapid development of collaborative,
@@ -825,7 +825,7 @@ especially differentiated from all of the other wikis out there. :/
 ...it is necessary, though. every codecon has to have at least one wiki, version
 control, and security project. :P
 
-<a name="elsa" />
+<a name="elsa"></a>
 ### Elsa/Oink/Cqual++  [![Icon-Permalink.png](/Icon-Permalink.png)](#elsa)
 
 _A static-time whole-program dataflow analysis for C and C++_

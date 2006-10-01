@@ -5,7 +5,7 @@ Open source software I've [written](/space/software#projects) and
 [contributed to](/space/software#patches). Unless otherwise noted, everything
 is [GPL](http://www.gnu.org/licenses/gpl.html)ed.
 
-<a name="projects" />
+<a name="projects"></a>
 ### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](#projects)
 
   * [history](/space/pyblosxom+history) is a [PyBlosxom](http://pyblosxom.sf.net/)
@@ -79,24 +79,20 @@ text and binary files.
 email account.
 
 
-<a name="patches" />
+<a name="patches"></a>
 ### Patches  [![Icon-Permalink.png](/Icon-Permalink.png)](#patches)
 
   * A [tcsh highlighting patch](/space/tcsh highlighting patch) that highlights
 the match during incremental search, and in emacs mode, the region between the
 mark and cursor.
 
-  * A patch to [remove tcsh globbing in history search](/space/remove tcsh
-globbing in history search).
+  * A patch to [remove tcsh globbing in history search](/space/remove tcsh globbing in history search).
 
-  * A [fix for a tcsh bug that moves the mark after deletions](/space/tcsh
-delete moves mark bug fix).
+  * A [fix for a tcsh bug that moves the mark after deletions](/space/tcsh delete moves mark bug fix).
 
-  * An [acoc rule for coloring context diffs](/space/acoc.conf for context
-diffs).
+  * An [acoc rule for coloring context diffs](/space/acoc.conf for context diffs).
 
-  * A [fix for an Emacs bug in minibuffer code](/space/emacs
-minibuffer-complete-and-exit bug fix), specifically in
+  * A [fix for an Emacs bug in minibuffer code](/space/emacs minibuffer-complete-and-exit bug fix), specifically in
 _minibuffer-complete-and-exit_.
 
   * [port\_pine\_patch](/space/port_pine_patch) is a shell script that automates
@@ -111,8 +107,7 @@ to the [Pine](http://www.washington.edu/pine) email client.
   * [Pine remove trailing quote patch](/space/pine remove trailing quote patch)
 adds an option to automatically remove trailing quotes from outgoing emails.
 
-  * [Pine delete attachments on save patch](/space/pine delete attachments on
-save patch) adds an option to delete attachments from messages when you save
+  * [Pine delete attachments on save patch](/space/pine delete attachments on save patch) adds an option to delete attachments from messages when you save
 them.
 
   * [Gaim accelerators in away menus
@@ -120,20 +115,16 @@ patch](http://sourceforge.net/tracker/index.php?func=detail&aid=1031098&group_id
 fixes [Gaim](http://gaim.sf.net/)'s GTK menu code to allow accelerators in
 dynamically created menus, such as away message menus.
 
-  * [SnipSnap comment without login patch](/space/snipsnap comment without login
-patch) allows visitors to post comments without logging in.
+  * [SnipSnap comment without login patch](/space/snipsnap comment without login patch) allows visitors to post comments without logging in.
 
-  * [SnipSnap recent-changes snip name patch](/space/snipsnap recent-changes
-snip name patch) fixes a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-392) in
+  * [SnipSnap recent-changes snip name patch](/space/snipsnap recent-changes snip name patch) fixes a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-392) in
 SnipSnap that causes recent-changes to show blog posts incorrectly.
 
-  * [SnipSnap 1.0b1 virtual hostname patch](/space/snipsnap 1.0b1 virtual
-hostname patch) fixes a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-387) in
-SnipSnap that prevents [virtual host redirection](/space/virtual host
-redirection).
+  * [SnipSnap 1.0b1 virtual hostname patch](/space/snipsnap 1.0b1 virtual hostname patch) fixes a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-387) in
+SnipSnap that prevents [virtual host redirection](/space/virtual host redirection).
 
-  * [Autocutsel clipboard and primary patch](/space/Autocutsel clipboard and
-primary patch) extends [autocutsel](http://www.nongnu.org/autocutsel/) to
+  * [Autocutsel clipboard and primary patch](/space/autocutsel+clipboard+and+primary+patch)
+extends [autocutsel](http://www.nongnu.org/autocutsel/) to
 synchronize both the clipboard and the primary selection in X Windows.
 
   * [Libwebserver shutdown patch](/space/libwebserver shutdown patch) adds a

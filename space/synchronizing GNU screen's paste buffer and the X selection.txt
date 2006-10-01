@@ -49,19 +49,16 @@ in your PATH.
 
 See also:
 
-  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs
-keybindings in GNU screen)
+  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs keybindings in GNU screen)
 
   * [why I don't run shells inside Emacs](/space/why I don)
 
   * [RatPoison Wiki: mouseless
 paste](http://ratpoison.elektrubadur.se/mouseless_paste)
 
-  * [autocutsel clipboard and primary patch](/space/autocutsel clipboard and
-primary patch)
+  * [autocutsel clipboard and primary patch](/space/autocutsel clipboard and primary patch)
 
-  * [control arrow keys in rxvt, tcsh, and emacs](/space/control arrow keys in
-rxvt, tcsh, and emacs)
+  * [control arrow keys in rxvt, tcsh, and emacs](/space/control arrow keys in rxvt, tcsh, and emacs)
 
   * [Emacs and remote X Windows](/space/Emacs and remote X Windows)
 

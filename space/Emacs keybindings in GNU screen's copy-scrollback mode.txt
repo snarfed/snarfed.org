@@ -1,6 +1,5 @@
 Emacs keybindings in GNU screen's copy-scrollback mode
-[![terminal.jpg](/space/terminal.jpg)](http://www.gnu.org/software/screen/)[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)[![X_logo.png](/space/X_logo.png)](/space/synchronizing
-GNU screen's paste buffer and the X selection)
+[![terminal.jpg](/space/terminal.jpg)](http://www.gnu.org/software/screen/)[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)[![X_logo.png](/space/X_logo.png)](/space/synchronizing GNU screen's paste buffer and the X selection)
 
 When I'm working, I pretty much
 live inside [Emacs](http://gnu.org/software/emacs/). It's my IDE, debugger, text
@@ -86,13 +85,11 @@ selection](/space/synchronizing GNU screen)
 
   * [why I don't run shells inside Emacs](/space/why I don)
 
-  * [control arrow keys in rxvt, tcsh, and emacs](/space/control arrow keys in
-rxvt, tcsh, and emacs)
+  * [control arrow keys in rxvt, tcsh, and emacs](/space/control arrow keys in rxvt, tcsh, and emacs)
 
   * [emacs keybindings in firefox](/space/emacs keybindings in firefox)
 
-  * [emacs keybindings with number keys](/space/emacs keybindings with number
-keys)
+  * [emacs keybindings with number keys](/space/emacs keybindings with number keys)
 
   * [emacs page up page down](/space/emacs page up page down)
 

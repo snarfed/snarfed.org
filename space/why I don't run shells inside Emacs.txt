@@ -49,7 +49,7 @@ surprisingly well. What's more, most of my reasons for avoiding it were
 unfounded. Here's what worked well:
 
 
-<a name="pros_and_cons" />
+<a name="pros_and_cons"></a>
 [![Icon-Permalink.png](/Icon-Permalink.png)](#pros_and_cons)
 
 
@@ -114,7 +114,7 @@ Here's what I added to [my .emacs](http://ryan.barrett.name/dotfiles/.emacs) to
 make shell-mode behave the way I wanted:
 
 
-<a name="settings" />
+<a name="settings"></a>
 [![Icon-Permalink.png](/Icon-Permalink.png)](#settings)
 
 
@@ -176,25 +176,22 @@ completion
       (lambda () (interactive) (switch-to-buffer "*shell7*")))
 
 See also: 
-<a name="related" />
+<a name="related"></a>
 [![Icon-Permalink.png](/Icon-Permalink.png)](#related)
 
 
   * [synchronizing GNU screen's paste buffer and the X
 selection](/space/synchronizing GNU screen)
 
-  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs
-keybindings in GNU screen)
+  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs keybindings in GNU screen)
 
   * [acoc.conf for context diffs](/space/acoc.conf for context diffs)
 
-  * [control arrow keys in rxvt, tcsh, and emacs](/space/control arrow keys in
-rxvt, tcsh, and emacs)
+  * [control arrow keys in rxvt, tcsh, and emacs](/space/control arrow keys in rxvt, tcsh, and emacs)
 
   * [tcsh highlighting patch](/space/tcsh highlighting patch)
 
-  * [remove tcsh globbing in history search](/space/remove tcsh globbing in
-history search)
+  * [remove tcsh globbing in history search](/space/remove tcsh globbing in history search)
 
   * [tcsh delete moves mark bug fix](/space/tcsh delete moves mark bug fix)
 
@@ -202,8 +199,7 @@ history search)
 
   * [minimal .emacs for fast startup](/space/minimal .emacs for fast startup)
 
-  * [emacs keybindings with number keys](/space/emacs keybindings with number
-keys)
+  * [emacs keybindings with number keys](/space/emacs keybindings with number keys)
 
   * [emacs keybindings in firefox](/space/emacs keybindings in firefox)
 

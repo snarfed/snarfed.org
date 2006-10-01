@@ -40,7 +40,7 @@ recommendations)](/space/CodeCon+2005+notes#gleeper)
   * [OzymanDNS (DNS witchcraft)](/space/CodeCon+2005+notes#ozymandns)
 
 **Aura**
-<a name="aura" />
+<a name="aura"></a>
 [![Icon-Permalink.png](/Icon-Permalink.png)](#aura)
 
 
@@ -78,7 +78,7 @@ mostly left to the app.
 obviously had a working demo, but wasn't prepared very well.
 
 **Arx**
-<a name="arx" />
+<a name="arx"></a>
 [![Icon-Permalink.png](/Icon-Permalink.png)](#arx)
 
 
@@ -120,7 +120,7 @@ monotone, and svk. i was impressed by his honesty - arx performed ok in most,
 but noticeably bad in a few, and he didn't sugar-coat it.
 
 **ApacheCA**
-<a name="apacheca" />
+<a name="apacheca"></a>
 [![Icon-Permalink.png](/Icon-Permalink.png)](#apacheca)
 
 
@@ -149,7 +149,7 @@ my opinion? seems well-built, but with the standard issues when you build a new
 one from scratch. biggest ones right now are probably adoption and maturity.
 
 **Off-the-Record Messaging**
-<a name="otr" />
+<a name="otr"></a>
 [![Icon-Permalink.png](/Icon-Permalink.png)](#otr)
 
 
@@ -182,7 +182,7 @@ security tradeoffs very clearly.
 because the security issues were made so clear and simple.
 
 **RPOW**
-<a name="rpow" />
+<a name="rpow"></a>
 [![Icon-Permalink.png](/Icon-Permalink.png)](#rpow)
 
 
@@ -212,7 +212,7 @@ uses the TCPA-alike functionality of the IBM board (attestations) to secure the
 server.
 
 **The Ultra Gleeper**
-<a name="gleeper" />
+<a name="gleeper"></a>
 [![Icon-Permalink.png](/Icon-Permalink.png)](#gleeper)
 
 
@@ -244,7 +244,7 @@ using user ratings as a crutch, would be a lot better.
 also, it seems more appropriate for a browser plugin, a la alexa.
 
 **H2O**
-<a name="h2o" />
+<a name="h2o"></a>
 [![Icon-Permalink.png](/Icon-Permalink.png)](#h2o)
 
 
@@ -253,7 +253,7 @@ also, it seems more appropriate for a browser plugin, a la alexa.
 ...zoned out...
 
 **Jakarta FeedParser**
-<a name="feedparser" />
+<a name="feedparser"></a>
 [![Icon-Permalink.png](/Icon-Permalink.png)](#feedparser)
 
 
@@ -279,7 +279,7 @@ future uses for feeds are interesting: feeds for searches (like google alerts),
 feeds from version control systems, etc.
 
 **Mappr**
-<a name="mappr" />
+<a name="mappr"></a>
 [![Icon-Permalink.png](/Icon-Permalink.png)](#mappr)
 
 
@@ -317,7 +317,7 @@ serendipitous discoveries were also really cool - route 66, which doesn't even
 exist any more, nevertheless was visible as an actual path across the country.
 
 **Photospace**
-<a name="photospace" />
+<a name="photospace"></a>
 [![Icon-Permalink.png](/Icon-Permalink.png)](#photospace)
 
 
@@ -326,7 +326,7 @@ exist any more, nevertheless was visible as an actual path across the country.
 ...zoned again...
 
 **Wheat**
-<a name="wheat" />
+<a name="wheat"></a>
 [![Icon-Permalink.png](/Icon-Permalink.png)](#wheat)
 
 
@@ -354,7 +354,7 @@ would be in the real world.
 still, has a number of great ideas. when will it be ready?!?
 
 **Incoherence**
-<a name="incoherence" />
+<a name="incoherence"></a>
 [![Icon-Permalink.png](/Icon-Permalink.png)](#incoherence)
 
 
@@ -384,7 +384,7 @@ it's also a great example of a project that only solves a single problem, but
 does it damn well.
 
 **i-Brokers**
-<a name="i-brokers" />
+<a name="i-brokers"></a>
 [![Icon-Permalink.png](/Icon-Permalink.png)](#i-brokers)
 
 
@@ -419,7 +419,7 @@ cool! the main problem with this stuff is adoption, but they're well aware of
 that, and they're tackling it head on.
 
 **SciTools**
-<a name="scitools" />
+<a name="scitools"></a>
 [![Icon-Permalink.png](/Icon-Permalink.png)](#scitools)
 
 
@@ -432,7 +432,7 @@ openly available tools you can custom order RNA strands that have been
 determined to produce what ever genetic material that you want if it's possible.
 
 **OzymanDNS**
-<a name="ozymandns" />
+<a name="ozymandns"></a>
 [![Icon-Permalink.png](/Icon-Permalink.png)](#ozymandns)
 
 

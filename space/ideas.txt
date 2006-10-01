@@ -60,8 +60,7 @@ this._]**
 Readline](http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html) with [ANSI
 color codes](http://www.termsys.demon.co.uk/vtansi.htm#colors). For example,
 highlight the current region (when one exists), highlight the search string in
-incremental search, etc. **\[_Done! See [tcsh highlighting patch](/space/tcsh
-highlighting patch)._]**
+incremental search, etc. **\[_Done! See [tcsh highlighting patch](/space/tcsh highlighting patch)._]**
 
   * Add
 [delete-selection-mode](http://www.emacswiki.org/cgi-bin/wiki/DeleteSelectionMode)
@@ -129,9 +128,7 @@ multipart messages, render HTML-only messages as text and save the text instead,
 offer to delete attachments, and save the attachment filename in the deletion
 note. Details in [this email
 thread](http://mailman1.u.washington.edu/pipermail/pine-info/2005-June/042260.html).
-\[**_Done! See [pine delete attachments on save patch](/space/pine delete
-attachments on save patch) and [pine remove trailing quote patch](/space/pine
-remove trailing quote patch)._**]
+\[**_Done! See [pine delete attachments on save patch](/space/pine delete attachments on save patch) and [pine remove trailing quote patch](/space/pine remove trailing quote patch)._**]
 
   * I use [GeoBytes](http://geobytes.com/) to do [geocoding](/space/geocoding)
 on my [voyeurism](http://ryan.barrett.name/voyeurism.html) page. It's great,

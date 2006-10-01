@@ -86,8 +86,7 @@ a good resource for writing and refining your .emacs file.
 
 See also:
 
-  * [control arrow keys in rxvt, tcsh, and emacs](/space/control arrow keys in
-rxvt, tcsh, and emacs)
+  * [control arrow keys in rxvt, tcsh, and emacs](/space/control arrow keys in rxvt, tcsh, and emacs)
 
   * [why I don't run shells inside Emacs](/space/why I don)
 
@@ -97,6 +96,5 @@ rxvt, tcsh, and emacs)
 
   * [emacs page up page down](/space/emacs page up page down)
 
-  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs
-keybindings in GNU screen)
+  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs keybindings in GNU screen)
 

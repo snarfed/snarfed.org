@@ -14,8 +14,7 @@ client.
 
 Granted, if you just want a web server, libwebserver isn't for you. However, if
 you want to _embed_ a web server in another program, it's perfect. We're using
-it in our quest for [synchronizing mp3 playback](/space/synchronizing mp3
-playback), and we love it...
+it in our quest for [synchronizing mp3 playback](/space/synchronizing mp3 playback), and we love it...
 
 ...except for one thing. Libwebserver lets you start a server, but doesn't
 provide a way to _stop_ it. This might be reasonable for most programs, but not
