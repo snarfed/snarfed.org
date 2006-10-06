@@ -1,0 +1,21 @@
+2006-10-05
+
+### snipsnap2svn
+
+[<img src="/space/snipsnap.png" style="padding-bottom: 15px" />](http://snipsnap.org/)
+[![/space/xsl.png](/space/xsl.png)](http://www.w3.org/TR/xslt)
+[![/space/subversion.jpg](/space/subversion.jpg)](http://subversion.tigris.org/)
+
+I've just posted [snipsnap2svn](/space/snipsnap2svn.xslt), an
+[XSLT](http://www.w3.org/TR/xslt) script that converts
+[SnipSnap](http://snipsnap.org/) XML database dumps into
+[Subversion dumpfiles](http://svn.collab.net/viewvc/*checkout*/svn/trunk/notes/fs_dumprestore.txt),
+with change history, so they can be imported into a Subversion repository.
+This allows you to use Subversion to examine your snips' change history,
+experiment with alternative SnipSnap storage backends, or migrate from
+SnipSnap to another CMS, such as [PyBlosxom](http://pyblosxom.sourceforge.net/).
+
+Now that I've [migrated to PyBlosxom](/space/2006-08-23), I plan to use
+snipsnap2svn to import my site's change history from SnipSnap so it will be
+visible with the [history plugin](/space/pyblosxom+history).
+
