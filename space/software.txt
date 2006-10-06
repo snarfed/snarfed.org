@@ -8,6 +8,11 @@ is [GPL](http://www.gnu.org/licenses/gpl.html)ed.
 <a name="projects"></a>
 ### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](#projects)
 
+  * [snipsnap2svn](/space/snipsnap2svn) is an
+[XSLT](http://www.w3.org/TR/xslt) script that converts
+[SnipSnap](http://snipsnap.org/) XML database exports into
+[Subversion dumpfiles](http://svn.collab.net/viewvc/*checkout*/svn/trunk/notes/fs_dumprestore.txt).
+
   * [history](/space/pyblosxom+history) is a [PyBlosxom](http://pyblosxom.sf.net/)
 plugin that displays change history for entries.
 
