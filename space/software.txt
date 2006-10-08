@@ -8,6 +8,9 @@ is [GPL](http://www.gnu.org/licenses/gpl.html)ed.
 <a name="projects"></a>
 ### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](#projects)
 
+  * [index](/space/pyblosxom+index) is a [PyBlosxom](http://pyblosxom.sf.net/)
+plugin that displays an alphabetical index of all entries.
+
   * [snipsnap2svn](/space/snipsnap2svn) is an
 [XSLT](http://www.w3.org/TR/xslt) script that converts
 [SnipSnap](http://snipsnap.org/) XML database exports into
