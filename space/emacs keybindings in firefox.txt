@@ -8,7 +8,6 @@ described in the [MozillaZine knowledge
 base](http://kb.mozillazine.org/Emacs_Keybindings_(Firefox)), add this to your
 ~/.gtkrc-2.0 file.
 
-
     gtk-key-theme-name = "Emacs"
 
 This will give you many Emacs key bindings, specifically C-a, C-e, C-f, C-b,

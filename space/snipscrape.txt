@@ -19,7 +19,6 @@ escaping special characters.
 Assuming you'd like to scrape two pages, snip1.html and snip2.html, here's what
 you'd do:
 
-
     $ snipscrape.sh snip1.html snip2.html > snips.xml
 
 Now, go to the manager page in your SnipSnap, import snips.xml, and you should

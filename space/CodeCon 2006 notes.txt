@@ -545,18 +545,13 @@ add "EXAMPLE KEY" option for WHERE and ORDER BY:
 
   * classical music:
 
-
     SELECT title FROM songs
-
       WHERE EXAMPLE KEY title LIKE
-
       ("Moonlight Sonata", "Prelude in C\# Minor");
 
   * people by how close to your age they are
 
-
     SELECT name FROM people
-
       ORDER BY EXAMPLE KEY ((20 > 5), (22 > 50));
 
 integration w/postgres was easy,

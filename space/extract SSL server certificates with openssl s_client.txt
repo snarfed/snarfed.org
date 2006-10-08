@@ -16,7 +16,6 @@ For example, say you're troubleshooting a connection to
 line to connect on port 443 and examine the SSL handshake and server-side
 certificate:
 
-
     openssl s\_client -connect example.com:443
 
 Happy authenticating!

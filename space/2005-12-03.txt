@@ -11,14 +11,11 @@ code](/space/filling code in emacs).
 I've recently been working on [fillcode](/space/fillcode), an Emacs minor mode
 that does this. It's best described by example. Fillcode fills this:
 
-
     public static void foo(int i, float f, String s) {
 
 to this:
 
-
     public static void foo(int i, float f,
-
                            String s) {
 
 Fillcode can fill any parenthesized expression, including function prototypes,

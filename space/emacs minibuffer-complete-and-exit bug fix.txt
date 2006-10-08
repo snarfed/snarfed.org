@@ -21,9 +21,7 @@ other minibuffer functions.
 
 Here's a test case. Run emacs -q, then evaluate these forms:
 
-
     (setq completion-ignore-case t)
-
     (read-buffer "buffer name: " nil t)
 
 Enter _\*SCRAtch\*_ at the prompt. It returns _\*SCRAtch\*_, but it should

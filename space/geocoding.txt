@@ -28,13 +28,10 @@ page](http://ryan.barrett.name/voyeurism.html) right now. Just plug this
 javascript into your web site wherever you'd like to show the user their
 location:
 
-
     <script type="text/javascript"
-
      src="http://map.geoup.com/geoup?template=CityName">
 
 This results in a tiny script that prints the user's city, inline:
-
 
     document.write('Brooklyn')
 

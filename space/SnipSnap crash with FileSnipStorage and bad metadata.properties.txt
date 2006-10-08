@@ -15,28 +15,18 @@ storage](http://snipsnap.org/space/FileSnipStorage), it may corrupt itself.
 [elsewhere](http://snipforge.org/lurker/message/20060705.232815.00a1e509.en.html).)
 When that happens, it will refuse to start:
 
-
     SnipSnap 1.0b1-uttoxeter
-
     Copyright (c) 2000-2004 Fraunhofer Gesellschaft
-
     Fraunhofer Institute for Computer Architecture and Software Technology
-
     All Rights Reserved. See License Agreement for terms and conditions of use.
-
     Responsible Authors: Stephan J. Schmidt, Matthias L. Jugel.
-
     >> Applications: /<path...>/applications
-
     >> Loading: / WARNING: unable to load application 'snarfed.org': null
-
     0 applications loaded and running (1 errors).
 
 The **server.log** file will report this stacktrace:
 
-
     java.lang.NullPointerException
-
         at
 org.snipsnap.snip.storage.FileSnipStorage.parseSnip(FileSnipStorage.java:298)
 
@@ -53,9 +43,7 @@ org.snipsnap.snip.storage.FileSnipStorage.storageAll(FileSnipStorage.java:325)
 org.snipsnap.snip.storage.MemorySnipStorage.<init>(MemorySnipStorage.java:87)
 
         at org.snipsnap.snip.SnipSpaceImpl.<init>(SnipSpaceImpl.java:103)
-
         at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-
         at
 sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
 
@@ -63,7 +51,6 @@ sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorI
 sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
 
         at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
-
         at
 org.picocontainer.defaults.InstantiatingComponentAdapter.instantiateComponent(InstantiatingComponentAdapter.java:86)
 
@@ -83,7 +70,6 @@ org.nanocontainer.nanning.NanningComponentAdapterFactory$WeavingAdapter.getCompo
 org.picocontainer.defaults.DefaultPicoContainer.getComponentInstance(DefaultPicoContainer.java:201)
 
         at org.snipsnap.container.Components.getComponent(Components.java:149)
-
         at
 org.snipsnap.net.filter.InitFilter.loadApplicationContexts(InitFilter.java:169)
 
@@ -99,41 +85,23 @@ which files are attached to it.
 Every metadata.properties file is 18 lines long. The first two lines are
 comments, and the next 16 are property values. Here's an example:
 
-
     #Properties for start
-
     #Sat Dec 11 19:45:10 PST 2002
-
     snipLinks=abcd:1
-
     name=start
-
     oUser=ryan
-
     cUser=ryan
-
     mTime=1072028160413
-
     backLinks=http://foo.com/:2
-
     mUser=ryan
-
     attachments=<attachments><attachments/></attachments>
-
     commentSnip=
-
     labels=
-
     version=1
-
     permissions=Edit:Editor
-
     application=000000001234-0000000ABCDEF-...
-
     parentSnip=
-
     viewCount=519
-
     cTime=1072028160413
 
 Since SnipSnap shut down unexpectedly, the metadata.properties file it was
@@ -148,14 +116,10 @@ doesn't parse them, though, so they won't cause this stacktrace.)
 
 On \*nix, use this command to find broken metadata.properties files:
 
-
     \# run this in your snipsnap application's directory
 
-
     find WEB-INF/ . -name metadata.properties -print0 | \
-
       xargs -0 -n1 wc -l | \
-
       egrep -v '^ *18'
 
 For each file listed, simply restore it from its backup,

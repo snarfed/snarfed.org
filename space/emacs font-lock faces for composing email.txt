@@ -25,33 +25,20 @@ u-vm-color.el](http://de.geocities.com/ulf_jasper/lisp/u-vm-color.el.txt), put
 it somewhere in your load-path (e.g. /usr/share/emacs/site-lisp/), and add this
 to your ~/.emacs:
 
-
     (require 'u-vm-color)
 
-
     ; ugly heuristic to font-lock pine emails automatically
-
     (add-hook 'find-file-hooks
-
       (lambda ()
-
         (if (equal "pico." (substring (buffer-name (current-buffer)) 0 5))
-
             (u-vm-color-fontify-buffer))))
 
-
     ; these match pine's defaults. see M-x list-colors-display for other options
-
     (set-face-foreground 'u-vm-color-citation-1-face "cyan")
-
     (set-face-foreground 'u-vm-color-citation-2-face "lime green")
-
     (set-face-foreground 'u-vm-color-citation-3-face "blue")
-
     (set-face-foreground 'u-vm-color-citation-4-face "dark slate gray")
-
     (set-face-foreground 'u-vm-color-citation-5-face "dark slate blue")
-
     (set-face-foreground 'u-vm-color-signature-face  "gray30")
 
 Happy font-locked emailing!
@@ -60,7 +47,7 @@ See also:
 
   * [gmail vs pine](/space/gmail vs pine)
 
-  * [why I don't run shells inside Emacs](/space/why I don)
+  * [why I don't run shells inside Emacs](/space/why I don't run shells inside Emacs)
 
   * [acoc.conf for context diffs](/space/acoc.conf for context diffs)
 

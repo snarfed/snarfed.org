@@ -18,15 +18,10 @@ and fuzzy because I successfully avoided a flash banner ad?)
 **A:** Add this CSS to your
 [userContent.css](http://texturizer.net/firefox/edit.html) file:
 
-
     embed {
-
       border: solid;
-
       border-width: 20px;
-
       border-color: red;
-
     }
 
 Now there will be a big ugly red box where plugin content would have been. Feel
@@ -34,7 +29,7 @@ free to customize the size, color, etc. to your liking.
 
 See also:
 
-  * [change firefox's saved passwords](/space/change firefox)
+  * [change firefox's saved passwords](/space/change firefox's saved passwords)
 
   * [linking libraries with mozilla xpcom](/space/linking libraries with mozilla xpcom)
 

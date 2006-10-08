@@ -18,9 +18,7 @@ stage. I used the [example XPCOM
 Makefile](http://books.mozdev.org/html/mozilla-chp-8-sect-2.html#mozilla-CHP-8-SECT-2.6.1),
 and edited the EXTRA\_DSO\_LDOPTS line to look like this:
 
-
     EXTRA\_DSO\_LDOPTS += \
-
       $(MOZ\_COMPONENT\_LIBS) -lX11 -L/usr/X11R6/lib
 
 Voila, it worked!
@@ -31,5 +29,5 @@ See also:
 
   * [palo alto library amazon greasemonkey](/space/palo alto library amazon greasemonkey)
 
-  * [change firefox's saved passwords](/space/change firefox)
+  * [change firefox's saved passwords](/space/change firefox's saved passwords)
 

@@ -17,79 +17,30 @@ that I could copy from terminals with the keyboard. I use these commands in [my
 .screenrc](http://ryan.barrett.name/dotfiles/.screenrc) to set up Emacs key
 bindings in screen's copy/scrollback mode:
 
-
-    \# emacs keybindings for navigation in copy mode
-
+    # emacs keybindings for navigation in copy mode
     markkeys h=^B:l=^F:0=^A:$=^E
-
     markkeys " =^ "
 
-
-
-
-
-
-      1. special hack for C-e, since it should go *past*
-
-
-
-      2. the last char. -m means this is for copy mode only.
-
-
-
-
-
+    # special hack for C-e, since it should go *past*
+    # the last char. -m means this is for copy mode only.
     bindkey -m ^e stuff "$^f"
 
-
-
-
-
-
-      1. C-g and other keys just quit copy mode. Esc does nothing.
-
-
-
-
-
+    # C-g and other keys just quit copy mode. Esc does nothing.
     markkeys 033=015=^G=^D=h=j=k=l=H=M=L=G=g=y=c=v=a=x=b=e=B=E=w
-
     markkeys @=033
 
-
-
-
-
-
-      1. control arrows move by words. (set B, e, and w to F keys so that i can
-use
-
-
-
-      2. them to move by words, but they themselves still quit copy mode.)
-
-
-
-
-
+    # control arrows move by words. (set B, e, and w to F keys so that i can
+    # use them to move by words, but they themselves still quit copy mode.)
     markkeys B=[:E=]:b={:e=}:w=>
-
     bindkey -m ^[Od stuff {  #"[[}"
-
     bindkey -m ^[Oc stuff ]  #"}]^f"
 
 See also:
 
-  * [synchronizing GNU screen's paste buffer and the X
-selection](/space/synchronizing GNU screen)
-
-  * [why I don't run shells inside Emacs](/space/why I don)
-
+  * [synchronizing GNU screen's paste buffer and the X selection](/space/synchronizing GNU screen's paste buffer and the X selection)
+  * [why I don't run shells inside Emacs](/space/why I don't run shells inside Emacs)
   * [control arrow keys in rxvt, tcsh, and emacs](/space/control arrow keys in rxvt, tcsh, and emacs)
-
   * [emacs keybindings in firefox](/space/emacs keybindings in firefox)
-
   * [emacs keybindings with number keys](/space/emacs keybindings with number keys)
-
   * [emacs page up page down](/space/emacs page up page down)
 

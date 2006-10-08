@@ -12,7 +12,7 @@ everything I need to with the keyboard. The only thing I _can't_ do with the
 keyboard is copy text from a terminal. And that irks me.
 
 In the past, this has driven me to desperate measures, including [running shells
-inside Emacs](/space/why I don). I currently use [GNU
+inside Emacs](/space/why I don't run shells inside Emacs). I currently use [GNU
 screen](http://www.gnu.org/software/screen/)'s [copy/scrollback
 mode](http://www.delorie.com/gnu/docs/screen/screen_73.html), with a hack to
 integrate it with X Windows' clipboard.
@@ -21,26 +21,10 @@ This command in [my .screenrc](http://ryan.barrett.name/dotfiles/.screenrc)
 copies screen's paste buffer into the X primary selection. It runs automatically
 when you press > to set the second mark in copy/scrollback mode.
 
-
-    \# set the second mark, write to the screen-exchange
-
-
-
-
-
-
-      1. file, and use xsel to synchronize the paste buffer
-
-
-
-      2. with the X selection.
-
-
-
-
-
-    bindkey -m > eval "stuff ' '" writebuf "exec sh -c 'xsel -n <
-/tmp/screen-exchange'"
+    # set the second mark, write to the screen-exchange
+    # file, and use xsel to synchronize the paste buffer
+    # with the X selection.
+    bindkey -m > eval "stuff ' '" writebuf "exec sh -c 'xsel -n < /tmp/screen-exchange'"
 
 Note that this uses [Conrad Parker's
 xsel](http://www.vergenet.net/~conrad/software/xsel/) (_not_[ Ville Herva's
@@ -49,16 +33,11 @@ in your PATH.
 
 See also:
 
-  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs keybindings in GNU screen)
-
-  * [why I don't run shells inside Emacs](/space/why I don)
-
+  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs keybindings in GNU screen's copy-scrollback mode)
+  * [why I don't run shells inside Emacs](/space/why I don't run shells inside Emacs)
   * [RatPoison Wiki: mouseless
 paste](http://ratpoison.elektrubadur.se/mouseless_paste)
-
   * [autocutsel clipboard and primary patch](/space/autocutsel clipboard and primary patch)
-
   * [control arrow keys in rxvt, tcsh, and emacs](/space/control arrow keys in rxvt, tcsh, and emacs)
-
   * [Emacs and remote X Windows](/space/Emacs and remote X Windows)
 

@@ -21,28 +21,21 @@ to the running application.
 So, I just added these lines to [my
 .cshrc](http://ryan.barrett.name/dotfiles/.cshrc):
 
-
     ; rxvt's keycodes for C-<left> and C-<right> are M-O d and M-O c,
-
     (global-set-key [(meta O) (d)] 'backward-word)
-
     (global-set-key [(meta O) (c)] 'forward-word)
 
 They should work for any csh derivate, not just tcsh. I also added these lines
 to [my .emacs](http://ryan.barrett.name/dotfiles/.emacs):
 
-
     bindkey "^[Od" backward-word  \# control-left
-
     bindkey "^[Oc" forward-word   \# control-right
 
 and I added these to my [my
 .inputrc](http://ryan.barrett.name/dotfiles/.inputrc) for bash and other apps
 that use readline:
 
-
     "\eOd": backward-word
-
     "\eOc": forward-word
 
 Now control and the arrow keys should skip words, like god intended, even inside
@@ -55,7 +48,7 @@ catch them at all!
 
 References:
 
-  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs keybindings in GNU screen)
+  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs keybindings in GNU screen's copy-scrollback mode)
 
   * [Emacs keybindings with number keys](/space/Emacs keybindings with number keys)
 

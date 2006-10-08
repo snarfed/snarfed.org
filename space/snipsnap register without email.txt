@@ -25,15 +25,12 @@ want to post a tutorial on editing the SnipSnap JSPs?) Instead, I used CSS, and
 simply added this to [misc.css](/theme/css/misc.css) in my [SnipSnap
 theme](/space/snarfed.org):
 
-
     /* don't ask people for their email address */
-
     input#email { display: none; }
 
 The CSS only explicitly targets the input field, but it hides both the input
 field and the label. I believe that's because the label's _for_ attribute points
 to the input field, like so:
-
 
     <label for="email">Email address:</label>
 
@@ -45,35 +42,22 @@ Earlier versions of SnipSnap didn't provide an id for the email input. So, I
 originally did this with Javascript, DOM, and CSS. Here's how. Save this as
 noemail.js in your application's directory:
 
-
     /* Hide the email address input box on
-
         /exec/register.jsp .
-
      */
 
-
     emailbox = document.getElementById('email');
-
     if (emailbox) {
-
       emailbox.style.display = 'none';
-
     }
 
-
     label = document.getElementsByTagName('label')[1];
-
     if (label &&
-
         label.innerHTML == 'Email address:') {
-
       label.style.display = 'none';
-
     }
 
 Then, add a link to noemail.js:
-
 
     <script type="text/javascript" src="/snarfed.js" />
 

@@ -11,14 +11,11 @@ Fillcode is an [Emacs](http://gnu.org/software/emacs/) minor mode that fills, or
 wraps, some parts of source code. It's best described by example. Fillcode fills
 this:
 
-
     public static void foo(int i, float f, String s) {
 
 to this:
 
-
     public static void foo(int i, float f,
-
                            String s) {
 
 The motivation is described in my original [call for filling
@@ -41,22 +38,16 @@ You can load fillcode automatically by copying
 or any other directory in Emacs' _load-path_. Then, add this to your .emacs
 file:
 
-
     (require 'fillcode)
 
 _M-x fillcode-mode_ toggles fillcode on and off in the current buffer. To turn
 it on automatically whenever you open source code, add these lines to your
 .emacs file.
 
-
     (add-hook 'c-mode-common-hook 'fillcode-mode)
-
     (add-hook 'perl-mode-hook 'fillcode-mode)
-
     (add-hook 'python-mode-hook 'fillcode-mode)
-
     (add-hook 'shell-script-mode-hook 'fillcode-mode)
-
     (add-hook 'sql-mode-hook 'fillcode-mode)
 
 Fillcode is a work in progress. Here's a list of issues:

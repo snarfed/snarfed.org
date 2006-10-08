@@ -23,61 +23,38 @@ So, I set out to make the minimal emacs -nw setup - lightwight, fast to start,
 and still usable for casual editing. It actually turned out to be fairly easy. I
 use this command to start emacs:
 
-
     emacs -nw --no-init-file --no-site-file \
-
       --load .emacs.minimal
 
 and this elisp in my [my minimal
 .emacs](http://ryan.barrett.name/dotfiles/.emacs):
 
-
     ; cutoff for word wrap
-
     (setq-default fill-column 79)
 
-
     ; F12 toggles auto-fill mode
-
     (global-set-key [f12] 'auto-fill-mode)
 
-
     ; C-- keybinding for undo (removes the shift)
-
     (global-set-key [(control -)] 'undo)
 
-
     ; turn on pending delete (when a region
-
     ; is selected, typing replaces it)
-
     (delete-selection-mode t)
 
-
     ; when on a tab, make the cursor the tab length
-
     (setq-default x-stretch-cursor t)
 
-
     ; avoid garbage collection (default is only 400k)
-
     (setq-default gc-cons-threshold 4000000)
 
-
     ; turn on random customization options
-
     (custom-set-variables
-
       '(sentence-end-double-space nil)
-
       '(truncate-partial-width-windows nil)
-
       '(line-number-mode t)
-
       '(column-number-mode t)
-
       '(query-user-mail-address nil)
-
       '(visible-bell t))
 
 Your .emacs file is fairly personal, so you'll probably want to customize it and
@@ -88,7 +65,7 @@ See also:
 
   * [control arrow keys in rxvt, tcsh, and emacs](/space/control arrow keys in rxvt, tcsh, and emacs)
 
-  * [why I don't run shells inside Emacs](/space/why I don)
+  * [why I don't run shells inside Emacs](/space/why I don't run shells inside Emacs)
 
   * [Emacs and remote X Windows](/space/Emacs and remote X Windows)
 
@@ -96,5 +73,5 @@ See also:
 
   * [emacs page up page down](/space/emacs page up page down)
 
-  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs keybindings in GNU screen)
+  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs keybindings in GNU screen's copy-scrollback mode)
 

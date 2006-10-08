@@ -27,11 +27,9 @@ Playlists_.
 Second, I looked inside the playlist files themselves. A number of them had
 olduser's playlist directory hard-coded. So, I changed every line like this:
 
-
     <media src="C:\Documents and Settings\olduser\...
 
 to this:
-
 
     <media src="C:\Documents and Settings\newuser\...
 

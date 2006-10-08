@@ -24,13 +24,10 @@ First, you need to map the keys to X keysyms. There are in-depth instructions
 list](http://mailman.linux-thinkpad.org/pipermail/linux-thinkpad/2003-December/014440.html),
 but all you need to do is add these two lines to ~/.Xmodmap:
 
-
     keycode 234 = F19
-
     keycode 233 = F20
 
 and then reload it:
-
 
     $ xmodmap ~/.Xmodmap
 
@@ -38,36 +35,25 @@ Now, you need to perform surgery on one of the jar files that Firefox uses to
 configure itself. In the chrome/ subdirectory of your Firefox directory, unpack
 the browser.jar file like so:
 
-
     $ cd firefox/chrome
-
     $ unzip browser.jar
 
 Fire up your favorite text editor and open the content/browser/browser.xul file.
 In the **<keyset id="mainKeyset">** section, find these lines:
 
-
     <key id="goBackKb"  keycode="VK\_LEFT"
-
          command="Browser:Back" modifiers="alt"/>
-
     <key id="goForwardKb"  keycode="VK\_RIGHT"
-
          command="Browser:Forward" modifiers="alt"/>
 
 ...and add these two lines immediately after them:
 
-
     <key id="goBackKb"  keycode="VK\_F19"
-
          command="Browser:Back"/>
-
     <key id="goForwardKb"  keycode="VK\_F20"
-
          command="Browser:Forward"/>
 
 Repackage browser.jar, like so:
-
 
     $ zip -rD0 browser.jar content/browser/
 
@@ -83,7 +69,7 @@ See also:
 
   * [emacs keybindings in firefox](/space/emacs keybindings in firefox)
 
-  * [change firefox's saved passwords](/space/change firefox)
+  * [change firefox's saved passwords](/space/change firefox's saved passwords)
 
   * [control arrow keys in rxvt, tcsh, and emacs](/space/control arrow keys in rxvt, tcsh, and emacs)
 

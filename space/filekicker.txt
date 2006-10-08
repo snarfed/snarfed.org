@@ -14,7 +14,7 @@ file's extension.
 
 For example, if `datadir` is set in `config.py` like so:
 
-    py['config'] = '/home/ryanb/www'
+    py['datadir'] = '/home/ryanb/www'
 
 and the user requests this url:
 

@@ -90,7 +90,6 @@ OK. Fire up your favorite text editor and open jetty.conf. It's in the conf/
 subdirectory of your SnipSnap directory. The first thing we need to do is
 configure HttpServer, which serves static content:
 
-
     <Configure class="org.mortbay.http.HttpServer">
 
 All of the rest of the configuration code will be inside this tag.
@@ -101,23 +100,14 @@ We need to tell the HttpServer to listen on port 80. We do this by creating a
 new SocketListener, setting its port to 80, and calling the
 HttpServer::addListener method:
 
-
     <Call name="addListener">
-
         <Arg>
-
           <New class="org.mortbay.http.SocketListener">
-
             <Set name="Port">
-
               <SystemProperty name="jetty.port" default="80"/>
-
             </Set>
-
           </New>
-
         </Arg>
-
       </Call>
 
 ### addContext
@@ -126,9 +116,7 @@ Next, we need to tell Jetty where the static content is, and when to serve it.
 The HttpServer::addContext method can take a hostname as its first argument, so
 we'll tell it to only match foo.com:
 
-
     <Call name="addContext">
-
         <Arg>foo.com</Arg>
 
 This means that any requests to foo.com will use this HttpServer, but any other
@@ -142,56 +130,34 @@ an HttpContext object and tell it where our static HTML files are. We do this by
 calling the HttpContext::setResourceBase method with the path to our static
 content:
 
-
     <Arg><New class="org.mortbay.http.HttpContext">
-
           <Call name="setContextPath">
-
             <Arg>/</Arg>
-
           </Call>
-
           <Call name="setResourceBase">
-
             <Arg>
-
               /home/ryanb/staticstuff
-
             </Arg>
-
           </Call>
-
           <Call name="addHandler">
-
             <Arg>
-
               <New class="org.mortbay.http.handler.ResourceHandler"></New>
-
             </Arg>
-
           </Call>
-
         </New></Arg>
-
       </Call>
 
 In this example, the static HTML files are in /home/ryanb/staticstuff. If you
 want, you can use the jetty.home system property to get the directory SnipSnap
 is installed in:
 
-
     <Call name="setResourceBase">
-
             <Arg>
-
               <SystemProperty name="jetty.home" default="."/>/staticstuff
-
             </Arg>
-
           </Call>
 
 Finally, let's close off the Configure tag we opened way in the beginning...
-
 
     </Configure>
 

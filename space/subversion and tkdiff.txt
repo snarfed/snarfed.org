@@ -13,13 +13,9 @@ added to tkdiff in version 4.0. Now, in a Subversion working directory, **tkdiff
 
 I use this simple shell script to tkdiff all files that I've modified:
 
-
     #!/bin/csh
-
     foreach file ( \`svn st -q | cut -c 8-\` )
-
       tkdiff $file
-
     end
 
 One caveat: by default, tkdiff talks to the master repository (usually over the

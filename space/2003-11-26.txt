@@ -4,19 +4,12 @@
 
 Greetings all!
 
-
     foreach person (allreaders) {
-
        if (person == friend) {
-
            print "Have a Great Thanksgiving Turkey";
-
        } else {
-
            print "Have a Great Thanksgiving, Turkey";
-
        }
-
     }
 
 lol, have a good one! :-)

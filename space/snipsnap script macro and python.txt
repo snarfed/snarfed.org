@@ -33,17 +33,13 @@ can't get very far without access to a backing store.
 Fortunately, I remembered my job desscription as SnipSnap admin and thought of
 SnipSnap's {script} macro. I first tried the canonical "Hello world" script:
 
-
     {script}
-
     print 'Hello world!'
-
     {script}
 
 I quickly noticed that the {script} macro isn't enabled by default. I looked
 inside WEB-INF/lib/snipsnap-servlets.jar and found that the ScriptMacro line in
 META-INF/services/org.radeox.macro.Macro was commented out:
-
 
     #org.snipsnap.render.macro.ScriptMacro
 
@@ -62,37 +58,24 @@ I quickly tested the waters. First, file system access. Any webapp worth its
 salt needs a backing store, and while databases are de rigeur, they're also
 overkill in many cases. Flat files are often more than good enough. So:
 
-
     {script}
-
     f = open('foo.bar', 'w')
-
     f.write('qwert')
-
     f.close()
-
 
     f = open('foo.bar')
-
     print f.read()
-
     f.close()
-
     {script}
 
 Great! It could talk to the server file system. The script output _qwert_, as
 expected. Next, I tried network connectivity.
 
-
     {script}
-
     from urllib import urlopen
 
-
     page = urlopen('http://asdf.com/')
-
     print page.read()
-
     {script}
 
 Sweet! It printed the (surprisingly small) HTML for the
@@ -105,54 +88,35 @@ My next task was to access basic SnipSnap site information, starting with the
 snip that contains the macro. I poked around in the source and noticed this
 telltale snippet in ScriptMacro.java:
 
-
     PythonInterpreter interp = new PythonInterpreter();
 
-
     interp.setOut(writer);
-
     interp.set("snip",
-
                params.getSnipRenderContext().getSnip());
 
 Aha! Sure enough, this code snippet prints out the name of the outer snip:
 
-
     {script}
-
     print snip
-
     {script}
 
 On its own, though, the snip name isn't too useful. The Jython interpreter is
 running in the same JVM as SnipSnap, though, so maybe we can sneak in the back
 door...
 
-
     {script}
-
     import sys
-
     sys.add\_package('org.snipsnap.snip')
-
     from org.snipsnap.snip import SnipSpaceFactory
 
-
     factory = SnipSpaceFactory.getInstance()
-
     ats = factory.load(str(snip)).getAttachments().getAll()
-
     at\_names = ', '.join([a.getName() for a in ats])
 
-
     print """
-
        This snip is called **%s**.
-
        Its attachments are **%s**.
-
     """ % (snip, at\_names)
-
     {script}
 
 This script prints the snip name _and_ the file names of each attachment. Ah,

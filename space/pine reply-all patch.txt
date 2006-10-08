@@ -30,15 +30,10 @@ the [Pine 4.60 source](http://www.washington.edu/pine/getpine/unix.html) and my
 [patch](/space/reply-all.patch.4.60.gz). Then, run these
 commands to extract, patch, and build Pine.
 
-
     $ tar xzvf pine.tar.gz
-
     $ tar xzvf reply-all.patch.4.60.gz
-
     $ cd pine4.60
-
     $ patch -p0 < ../reply-all.patch.4.60
-
     $ ./build DEBUG=-O lrh
 
 If you download a source package other than the gzip, modify the first command
@@ -51,7 +46,6 @@ know!](http://ryan.barrett.name/contact.html)
 
 **Note:** If you get compile problems with kssl.h and krb5.h when building Pine
 on Redhat 9, use this build command:
-
 
     $ ./build EXTRACFLAGS='-I/usr/kerberos/include' lrh
 

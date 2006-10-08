@@ -11,14 +11,11 @@ _Update: After lots of procrastination, I finally broke down and wrote
 I want Emacs to be able to correctly fill _code_, not just text. For example,
 when I press M-q in c-mode, I want Emacs to fill this:
 
-
     public static void foo(int i, float f, String s) {
 
 to this:
 
-
     public static void foo(int i, float f,
-
                            String s) {
 
 Filling is Emacs' term for word wrapping. M-q is bound to fill-paragraph, which

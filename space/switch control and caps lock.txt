@@ -8,23 +8,15 @@ Caps Lock keys on normal keyboards, on any \*nix platform that runs X Windows.
 
 Add these two lines to ~/.Xmodmap:
 
-
     ! Switch caps lock and (left) control
-
     remove Lock = Caps\_Lock
-
     remove Control = Control\_L
-
     keysym Control\_L = Caps\_Lock
-
     keysym Caps\_Lock = Control\_L
-
     add Lock = Caps\_Lock
-
     add Control = Control\_L
 
 Now load the changes into X:
-
 
     $ xmodmap ~/.Xmodmap
 

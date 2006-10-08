@@ -98,10 +98,8 @@ These new template variables are provided in the `history-diff` and
     $diff      The text of the diff, in unified format.
     $version1  The base version of the diff.
     $version2  The ending version of the diff.
-
     history-version:
     $version   The displayed version of the entry .
-
     both:
     $author    The person who made the last change.
     $message   The changelog of the last change.

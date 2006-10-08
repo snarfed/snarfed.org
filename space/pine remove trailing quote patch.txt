@@ -20,20 +20,14 @@ when you send them, or when you hit a keystroke. What's a trailing quote, you
 ask? It's best described by example. The last three lines in this email are a
 trailing quote:
 
-
     On Fri, 4 Jun 2004, Jane Doe wrote:
-
 
     > Thanks for the invite! Should I bring anything?
 
-
     No, I have everything I need. Thanks though!
 
-
     > I'll see you soon...
-
     >
-
     > -Jane
 
 I wrote this patch to make it easier to observe proper netiquette when quoting.
