@@ -114,6 +114,9 @@ Some lines will be surrounded with `<span class="...">`. The class will
 be `diff-added`, `diff-removed`, `diff-changed`, or `diff-line-number`,
 depending on the type of change that the line represents.
 
+history.py is copyright 2006 [Ryan Barrett](/space/contact), and is distributed
+under the [GPL](http://www.gnu.org/licenses/gpl.html).
+
 
 See also:
   * [photogallery](/space/photogallery)

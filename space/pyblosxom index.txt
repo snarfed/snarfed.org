@@ -1,0 +1,39 @@
+index.py
+
+![/space/rolodex.jpg](/space/rolodex.jpg)
+
+For the impatient: <br />
+&nbsp; Download [index.py](/space/index.py)  
+&nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
+&nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)  
+
+[index.py](/space/index.py) is a [PyBlosxom](http://pyblosxom.sf.net/) plugin
+that displays displays an alphabetical index of all entries. It's similar to
+[other](http://pyblosxom.sourceforge.net/blog/registry/archives/pyarchives)
+[index](http://pyblosxom.sourceforge.net/blog/registry/archives/wbgarchives)
+[plugins](http://pyblosxom.sourceforge.net/blog/registry/category/pycategories),
+except that it indexes the entries by name, instead of by date.
+
+As an example, here's the [index](/site-index) for this site.
+
+There are number of config parameters available to customize index.py's
+behavior, all optional. Here they are, along with their defaults:
+
+    py['index_trigger']            = '/site-index'
+    py['index_num_columns']        = 2
+    py['index_letters_first']      = True
+    py['index_title']              = 'index'
+    py['index_use_story_template'] = True
+
+index.py is copyright 2006 [Ryan Barrett](/space/contact), and is distributed
+under the [GPL](http://www.gnu.org/licenses/gpl.html).
+
+
+See also:
+  * [history](/space/pyblosxom+history)
+  * [photogallery](/space/photogallery)
+  * [hardcodedates](/space/hardcodedates)
+  * [filekicker](/space/filekicker)
+  * [pyblosxom ajax comments](/space/pyblosxom ajax comments)
+  * [pyblosxom rdf flavour](/space/pyblosxom rdf flavour)
+  * [migrating to pyblosxom](/space/2006-08-23)
