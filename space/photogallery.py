@@ -21,8 +21,10 @@ py['base_url'] is now required.
 
 py['imagedata'] = '<path to map with images>' is required by imagefile, and also here.
 py['gallerytrigger'] = '<trigger>' is required.
+py['gallery_use_story_template'] = True/False is optional, defaulting to True.
 
 VERSION:
+0.5 Added gallery_use_story_template config option
 0.4 Added head and foot templates, and config options
 0.3 Now works with comments!
 0.2 It now can co-exist with comments. It can't use them, but it can co-exist.
@@ -53,7 +55,7 @@ import os, string
 from Pyblosxom import tools, entries, pyblosxom
 
 __author__ = "Magnus Nordlander magnus (at) nordlander (dot) tk"
-__version__ = "0.3 (27 April, 2004)"
+__version__ = "0.5 (27 April, 2004)"
 __url__ = "http://magnus.nordlander.tk/"
 __description__ = "Displays a photo gallery on a given trigger"
 
@@ -164,3 +166,15 @@ def cb_filelist(args):
 	file_path = absolute_path + "/" + fn
 	fe = entries.base.generate_entry(request, {"title": image, "absolute_path": absolute_path, "file_path": file_path, "fn": fn }, contents, None)
 	return [fe]
+
+def cb_story(args):
+  request = args['request']
+  http = request.getHttp()
+  config = request.getConfiguration()
+  trigger = config['gallerytrigger']
+
+  if (http['PATH_INFO'].startswith(trigger) and
+      not config.get('gallery_use_story_template', 1)):
+    args['template'] = '<h1 class="photogallery">$title</h1>\n<hr />\n$body'
+
+  return args

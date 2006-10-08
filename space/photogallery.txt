@@ -3,7 +3,7 @@ photogallery
 ![photogallery.jpg](photogallery.jpg)
 
 For the impatient:  
-&nbsp; [Download photogallery.py 0.4](/space/photogallery.py)  
+&nbsp; [Download photogallery.py 0.5](/space/photogallery.py)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
 &nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)
 
@@ -29,8 +29,10 @@ photogallery is Copyright 2004 [Magnus Nordlander](http://magnus.nordlander.tk/)
 under the [GPL](http://www.gnu.org/licenses/gpl.html).
 
 See also:
-  * [migrating to pyblosxom](/space/2006-08-23)
+  * [index](/space/pyblosxom+index)
+  * [history](/space/pyblosxom+history)
   * [filekicker](/space/filekicker)
   * [hardcodedates](/space/photogallery)
   * [pyblosxom ajax comments](/space/pyblosxom ajax comments)
   * [pyblosxom rdf flavour](/space/pyblosxom rdf flavour)
+  * [migrating to pyblosxom](/space/2006-08-23)
