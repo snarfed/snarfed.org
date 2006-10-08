@@ -1,0 +1,24 @@
+snarfed.org PyBlosxom flavour
+
+[![snarfed_flavour_screenshot_thumb.jpg](/space/snarfed_flavour_screenshot_thumb.jpg)](snarfed_flavour_screenshot.jpg)
+
+[PyBlosxom](http://snipsnap.org/), the server that runs this site,
+supports
+[flavours](http://pyblosxom.sourceforge.net/blog/registry/flavours?sortby=path).
+They change your PyBlosxom site's appearance, using
+[templates](file:///home/ryanb/shared/docs/pyblosxom/manual/c224.html#AEN235),
+[CSS](http://www.w3.org/Style/CSS/), images, and other files, without changing
+its content. There's a [longer
+description](http://pyblosxom.sf.net/1.3.1/manual/c224.html) on the
+[PyBlosxom site](http://pyblosxom.sf.net/).
+
+The snarfed.org flavour is [available for download](/space/snarfed_flavour.tar.gz).
+To try it out on your site,
+[download snarfed_flavour.tar.gz](/space/snarfed_flavour.tar.gz) and copy the
+contents of `datadir/` and `flavourdir/snarfed.flav` into your PyBlosxom's
+datadir and flavourdir, respectively. Then, edit `config.py` and add this line:
+
+    py['default_flavour'] = 'snarfed'
+
+This flavour is licensed under the
+[Creative Commons](http://creativecommons.org/licenses/by/2.0/).
