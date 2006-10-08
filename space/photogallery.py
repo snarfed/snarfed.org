@@ -24,7 +24,7 @@ py['gallerytrigger'] = '<trigger>' is required.
 py['gallery_use_story_template'] = True/False is optional, defaulting to True.
 
 VERSION:
-0.5 Added gallery_use_story_template config option
+0.5 404 on unknown file, added gallery_use_story_template config option
 0.4 Added head and foot templates, and config options
 0.3 Now works with comments!
 0.2 It now can co-exist with comments. It can't use them, but it can co-exist.
@@ -156,16 +156,8 @@ def cb_filelist(args):
 	return [fe]
 
     else:
-	l = string.find(gallery, "/")
-	image = gallery[l+1:]
-	#generate entry and return it
-	contents = "<br /><img src=\"" + baseurl + trigger + "/" + gallery + "\" alt=\"" + image + "\" /><br />"
-	i = string.find(gallery, "/") 
-	absolute_path = trigger[1:] + "/" + gallery[:i]
-	fn = image
-	file_path = absolute_path + "/" + fn
-	fe = entries.base.generate_entry(request, {"title": image, "absolute_path": absolute_path, "file_path": file_path, "fn": fn }, contents, None)
-	return [fe]
+	# unknown URL
+	return None
 
 def cb_story(args):
   request = args['request']
