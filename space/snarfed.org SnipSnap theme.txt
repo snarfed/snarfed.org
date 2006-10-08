@@ -4,7 +4,7 @@ snarfed.org SnipSnap theme
 
 [SnipSnap](http://snipsnap.org/), the server that used to run this site,
 supports [themes](http://snipsnap.org/space/Themes). They change your
-Snipsnap-based site's appearance, using [CSS](http://www.w3.org/Style/CSS/),
+SnipSnap-based site's appearance, using [CSS](http://www.w3.org/Style/CSS/),
 images, and other files, without changing its content. There's a
 [tutorial](http://snipsnap.org/space/Theme+Tutorial) on
 [snipsnap.org](http://snipsnap.org/).
