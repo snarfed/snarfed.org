@@ -1,5 +1,8 @@
 subversion and tkdiff
-[![/space/subversion.jpg](/space/subversion.jpg)](http://subversion.tigris.org/)[![/space/tkdiff.png](/space/tkdiff.png)](http://tkdiff.sf.net/)[Subversion](http://subversion.tigris.org/)
+
+[![/space/subversion.jpg](/space/subversion.jpg)](http://subversion.tigris.org/)[![/space/tkdiff.png](/space/tkdiff.png)](http://tkdiff.sf.net/)
+
+[Subversion](http://subversion.tigris.org/)
 is my version control of choice, and [tkdiff](http://tkdiff.sf.net/) is my
 graphical diff of choice. I love them both equally.
 

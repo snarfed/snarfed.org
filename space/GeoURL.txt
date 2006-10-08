@@ -1,5 +1,8 @@
 GeoURL
-[![worldmap.jpg](/space/worldmap.jpg)](http://geourl.com/)[GeoUrl](http://geourl.org/)
+
+[![worldmap.jpg](/space/worldmap.jpg)](http://geourl.com/)
+
+[GeoUrl](http://geourl.org/)
 is a nifty site that maps web sites to geographical locations, similar to
 [geocoding](/space/geocoding). It also maintains this index in reverse, which
 you can use to find sites located near other sites in the real world.

@@ -1,5 +1,7 @@
 referrer spam
-[![/space/spam.jpg](/space/spam.jpg)](/space/referrer+spam)[Referrer
+[![/space/spam.jpg](/space/spam.jpg)](/space/referrer+spam)
+
+[Referrer
 spam](http://www.spywareinfo.com/articles/referer_spam/) - or by Apache's
 original misspelling, _referer_ spam - has been a problem at snarfed.org for
 years. My [referrer log statistics](http://ryan.barrett.name/summary/) are

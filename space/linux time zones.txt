@@ -6,12 +6,12 @@ time zone on a linux server, and while linux _handles_ time zones and locales
 well, _changing_ the system's time zone isn't well documented.
 
 I searched for a single command that would do it, probably run as root, but no
-luck. zdump(8), zic(8), and tzfile(5) have lots of good information, but none of
+luck. `zdump(8)`, `zic(8)`, and `tzfile(5)` have lots of good information, but none of
 them actually changes the time zone.
 
-After some googling, I determined that /etc/localtime determines the system's
-time zone. It's usually a copy of or symlink to a file in /usr/share/zoneinfo. I
-ended up symlinking it to PST8PDT, for Pacific Time. If you're in another time
+After some googling, I determined that `/etc/localtime` determines the system's
+time zone. It's usually a copy of or symlink to a file in `/usr/share/zoneinfo`. I
+ended up symlinking it to `PST8PDT`, for Pacific Time. If you're in another time
 zone, the file names should be self-explanatory. (There's [more
 information](http://lists.debian.org/debian-user/1996/04/msg00527.html) on the
 debian-user mailing list.)

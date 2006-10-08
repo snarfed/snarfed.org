@@ -1,5 +1,8 @@
 snipsnap script macro and python
-[![snipsnap.png](/space/snipsnap.png)](http://snipsnap.org/)[![/space/python_powered.png](/space/python_powered.png)](http://python.org/)[![/space/jython.png](/space/jython.png)](http://www.jython.org/)_This
+
+[![snipsnap.png](/space/snipsnap.png)](http://snipsnap.org/)[![/space/python_powered.png](/space/python_powered.png)](http://python.org/)[![/space/jython.png](/space/jython.png)](http://www.jython.org/)
+
+_This
 article is also [posted at
 snipsnap.org](http://snipsnap.org/space/script+macro+and+python)._
 
@@ -156,7 +159,7 @@ You'll have to build even the most basic functionality yourself, including
 forms, templates, and user input. And don't even think about commonly used
 features like sessions, databases, and testing.
 
-And, of course, there's the aforementioned **security**...or more accurately,
+And, of course, there's the aforementioned security...or more accurately,
 lack of security. Still, I've drunk the SnipSnap kool-aid, and I'd love an easy
 way to build webapps on top of it. Until I learn how to lock down and sandbox
 it, though, {script} isn't the answer.

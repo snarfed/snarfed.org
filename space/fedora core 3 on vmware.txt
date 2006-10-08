@@ -52,11 +52,12 @@ then apply it to the vmhgfs driver source and re-run the VMWare Tools config
 script. When it asks if you want to compile the hgfs module from source, say
 yes. Here are the commands:
 
-    tar xf /usr/lib/vmware-tools/modules/source/vmhgfs.tar
-    patch -p 0 < vmware\_tools\_hgfs\_linux\_2.6\_guest.patch
-    tar cf vmhgfs.tar vmhgfs-only/
-    cp vmhgfs.tar /usr/lib/vmware-tools/modules/source/
-    /usr/bin/vmware-config-tools.pl
+        tar xf /usr/lib/vmware-tools/modules/source/vmhgfs.tar
+        patch -p 0 < vmware\_tools\_hgfs\_linux\_2.6\_guest.patch
+        tar cf vmhgfs.tar vmhgfs-only/
+        cp vmhgfs.tar /usr/lib/vmware-tools/modules/source/
+        /usr/bin/vmware-config-tools.pl
+
 
   * [Yum](http://www.linux.duke.edu/projects/yum) is the preferred package
 manager for FC3. It's fairly similar to

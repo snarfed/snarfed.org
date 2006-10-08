@@ -13,19 +13,19 @@ bars off, as well as setting custom fonts and colors. Luckily, there's a much
 faster way: [X resources](http://www.plig.org/xwinman/resource.html).
 
 Try for yourself! Here's the elisp to turn off the menu bar, toolbar, and scroll
-bars. Put it in your .emacs, and start Emacs.
+bars. Put it in your `.emacs`, and start Emacs.
 
     (menu-bar-mode nil)
     (tool-bar-mode nil)
     (scroll-bar-mode nil)
 
-Now, take it out, and instead, add these lines to your .Xresources file.
+Now, take it out, and instead, add these lines to your `.Xresources` file.
 
     Emacs.menuBar: off
     Emacs.verticalScrollBars: off
     Emacs.toolBar: off
 
-Run "xrdb .Xresources", then try starting Emacs again. It should be much faster!
+Run `xrdb .Xresources`, then try starting Emacs again. It should be much faster!
 
 Emacs obeys many other X resources. For example, I use these to customize the
 default font and foreground and background colors:

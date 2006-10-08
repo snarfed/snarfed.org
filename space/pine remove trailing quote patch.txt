@@ -42,7 +42,8 @@ For more on the top- vs. bottom-post debate, see:
 
 Also, a few recent email clients, such as [GMail](http://gmail.com/), try to use
 quoted text to do smart things. This patch can make your emails more readable in
-those clients. (I've discussed my thoughts on [gmail vs pine](/space/gmail vs pine) at length. :P)
+those clients. (I've discussed my thoughts on gmail vs pine
+[at length](/space/gmail vs pine).)
 
 Feel free to [email me](http://ryan.barrett.name/contact.html) with feedback or
 bug reports.

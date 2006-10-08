@@ -1,5 +1,8 @@
 webalizer referrer spam blacklist
-[![/space/spam.jpg](/space/spam.jpg)](/space/webalizer+referrer+spam+blacklist)[Referrer
+
+[![/space/spam.jpg](/space/spam.jpg)](/space/webalizer+referrer+spam+blacklist)
+
+[Referrer
 spam](http://www.spywareinfo.com/articles/referer_spam/) - or by Apache's
 original misspelling, _referer_ spam - has been a problem at snarfed.org for
 years. My [webalizer logs](http://ryan.barrett.name/usage/) are publicly

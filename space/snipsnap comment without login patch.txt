@@ -1,4 +1,5 @@
 snipsnap comment without login patch
+
 [![snipsnap.png](/space/snipsnap.png)](http://snipsnap.org/)[![jetty.png](/space/jetty.png)](http://jetty.mortbay.com/)
 
 For the impatient:  
@@ -19,15 +20,13 @@ jump through the account creation hoops for yet another site before they can
 comment, chances are they won't. So, I wrote a [patch](/space/snipsnap-comment-without-login.patch) to allow visitors to
 comment without logging in.
 
-It's running on this site right now. [Try it!](/comments/snipsnap comment without login patch#post)
-
 The patch applies cleanly against [SnipSnap
 1.0b2-uttoxeter](ftp://snipsnap.org/snipsnap/snipsnap-1.0b2-uttoxeter-20050204-src.tgz).
 To use it with an existing SnipSnap installation, download the [SnipSnap
 source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b2-uttoxeter-20050204-src.tgz),
 apply the patch, and build SnipSnap with [Ant](http://ant.apache.org). Then copy
-the newly rebuilt snipsnap.jar into your SnipSnap's lib/ subdirectory, and copy
-snipsnap-servlets.jar into your application's WEB-INF/lib/ subdirectory, over
+the newly rebuilt `snipsnap.jar` into your SnipSnap's `lib/` subdirectory, and copy
+`snipsnap-servlets.jar` into your application's `WEB-INF/lib/` subdirectory, over
 the existing jars. Restart SnipSnap and you should be good to go!
 
 See also:

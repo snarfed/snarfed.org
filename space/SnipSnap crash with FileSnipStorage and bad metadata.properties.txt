@@ -1,5 +1,7 @@
 SnipSnap crash with FileSnipStorage and bad metadata.properties
-[![snipsnap.png](/space/snipsnap.png)](http://snipsnap.org/)_This
+[![snipsnap.png](/space/snipsnap.png)](http://snipsnap.org/)
+
+_This
 article describes [SnipSnap](/space/SnipSnap) 1.0b1-uttoxeter using
 [FileSnipStorage](http://snipsnap.org/space/FileSnipStorage)._
 
@@ -27,52 +29,24 @@ When that happens, it will refuse to start:
 The **server.log** file will report this stacktrace:
 
     java.lang.NullPointerException
-        at
-org.snipsnap.snip.storage.FileSnipStorage.parseSnip(FileSnipStorage.java:298)
-
-        at
-org.snipsnap.snip.storage.FileSnipStorage.traverseFileStore(FileSnipStorage.java:332)
-
-        at
-org.snipsnap.snip.storage.FileSnipStorage.traverseFileStore(FileSnipStorage.java:341)
-
-        at
-org.snipsnap.snip.storage.FileSnipStorage.storageAll(FileSnipStorage.java:325)
-
-        at
-org.snipsnap.snip.storage.MemorySnipStorage.<init>(MemorySnipStorage.java:87)
-
+        at org.snipsnap.snip.storage.FileSnipStorage.parseSnip(FileSnipStorage.java:298)
+        at org.snipsnap.snip.storage.FileSnipStorage.traverseFileStore(FileSnipStorage.java:332)
+        at org.snipsnap.snip.storage.FileSnipStorage.traverseFileStore(FileSnipStorage.java:341)
+        at org.snipsnap.snip.storage.FileSnipStorage.storageAll(FileSnipStorage.java:325)
+        at org.snipsnap.snip.storage.MemorySnipStorage.<init>(MemorySnipStorage.java:87)
         at org.snipsnap.snip.SnipSpaceImpl.<init>(SnipSpaceImpl.java:103)
         at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
-        at
-sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
-
-        at
-sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
-
+        at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:39)
+        at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:27)
         at java.lang.reflect.Constructor.newInstance(Constructor.java:274)
-        at
-org.picocontainer.defaults.InstantiatingComponentAdapter.instantiateComponent(InstantiatingComponentAdapter.java:86)
-
-        at
-org.picocontainer.defaults.InstantiatingComponentAdapter.getComponentInstance(InstantiatingComponentAdapter.java:36)
-
-        at
-org.picocontainer.defaults.CachingComponentAdapter.getComponentInstance(CachingComponentAdapter.java:44)
-
-        at
-org.picocontainer.extras.DecoratingComponentAdapter.getComponentInstance(DecoratingComponentAdapter.java:39)
-
-        at
-org.nanocontainer.nanning.NanningComponentAdapterFactory$WeavingAdapter.getComponentInstance(NanningComponentAdapterFactory.java:81)
-
-        at
-org.picocontainer.defaults.DefaultPicoContainer.getComponentInstance(DefaultPicoContainer.java:201)
-
+        at org.picocontainer.defaults.InstantiatingComponentAdapter.instantiateComponent(InstantiatingComponentAdapter.java:86)
+        at org.picocontainer.defaults.InstantiatingComponentAdapter.getComponentInstance(InstantiatingComponentAdapter.java:36)
+        at org.picocontainer.defaults.CachingComponentAdapter.getComponentInstance(CachingComponentAdapter.java:44)
+        at org.picocontainer.extras.DecoratingComponentAdapter.getComponentInstance(DecoratingComponentAdapter.java:39)
+        at org.nanocontainer.nanning.NanningComponentAdapterFactory$WeavingAdapter.getComponentInstance(NanningComponentAdapterFactory.java:81)
+        at org.picocontainer.defaults.DefaultPicoContainer.getComponentInstance(DefaultPicoContainer.java:201)
         at org.snipsnap.container.Components.getComponent(Components.java:149)
-        at
-org.snipsnap.net.filter.InitFilter.loadApplicationContexts(InitFilter.java:169)
-
+        at org.snipsnap.net.filter.InitFilter.loadApplicationContexts(InitFilter.java:169)
         at org.snipsnap.net.filter.InitFilter.init(InitFilter.java:150)
 
 If you see this, SnipSnap was in the middle of writing a **metadata.properties**
@@ -133,8 +107,7 @@ time](http://nopaper.net/2004/06/15/downtime-is-my-favorite-time.html) on
 [nopaper.net](http://nopaper.net/)
   * [Help me please](http://snipsnap.org/comments/help-me-please) on
 [snipsnap.org](http://snipsnap.org/)
-  *
-[snipsnap-help](http://snipsnap.org/comments/snipsnap-help#comment-snipsnap-help-85)
+  * [snipsnap-help](http://snipsnap.org/comments/snipsnap-help#comment-snipsnap-help-85)
 on [snipsnap.org](http://snipsnap.org/)
   * [my original
 post](http://snipforge.org/lurker/message/20060705.232815.00a1e509.en.html) to

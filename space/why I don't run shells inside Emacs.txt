@@ -44,14 +44,11 @@ for the mouse to copy something out of a terminal, it piped up. _You could fix
 that, you know._ Sigh. I knew.
 
 Finally, it got the better of me. I wrote _try emacs shell mode_ on my todo
-list, and a few days later, I tried it. M-x shell was all it took, and it worked
+list, and a few days later, I tried it. `M-x shell` was all it took, and it worked
 surprisingly well. What's more, most of my reasons for avoiding it were
 unfounded. Here's what worked well:
 
-
 <a name="pros_and_cons"></a>
-[![Icon-Permalink.png](/Icon-Permalink.png)](#pros_and_cons)
-
 
   * **Copying with the keyboard.** This goes without saying. What's more, all of
 my Emacs muscle memory for navigating and searching now applied to the entire
@@ -65,16 +62,16 @@ connecting to my work Emacs!
 
   * **Tcsh integration.** Emacs was surprisingly sociable with tcsh. It obeyed
 [my .cshrc](http://ryan.barrett.name/dotfiles/.cshrc), read and wrote its
-command history to ~/.history, and generally played nice.
+command history to `~/.history`, and generally played nice.
 
   * **ANSI color codes.** Wonder of wonders, Emacs could even display color
-codes properly. Just do M-x
-[ansi-color-for-comint-mode-on](http://www.gnu.org/software/emacs/manual/html_node/Shell-Options.html#index-shell_002dpushd_002ddunique-3323).
+codes properly. Just do `M-x
+[ansi-color-for-comint-mode-on](http://www.gnu.org/software/emacs/manual/html_node/Shell-Options.html#index-shell_002dpushd_002ddunique-3323)`.
 
   * **Find-file-at-point.** This handy little elisp function opens, in a new
-Emacs buffer, the filename that your cursor is currently on. After an ls, if I
-wanted to look at a file, I just moved up to it and hit M-C-f (bound to
-find-file-at-point), and Emacs would open the file. Slick.
+Emacs buffer, the filename that your cursor is currently on. After an `ls`, if I
+wanted to look at a file, I just moved up to it and hit `M-C-f` (bound to
+`find-file-at-point`), and Emacs would open the file. Slick.
 
 It wasn't perfect, though. Here's what didn't work well:
 
@@ -96,9 +93,9 @@ it worked, but it was unbearably, unusably slow. Sigh.
   * **Case-sensitive completion.** File and directory tab completion is case
 sensitive. It doesn't obey the completion-ignore-case variable. Boo.
 
-  * **Slow color code parsing.** My joy at finding ansi-color-for-comint-mode-on
-turned to horror as soon as I did an ls -l in a large directory. Emacs' color
-code parsing is dog slow. I could use ansi-color-for-comint-mode-filter to just
+  * **Slow color code parsing.** My joy at finding `ansi-color-for-comint-mode-on`
+turned to horror as soon as I did an `ls -l` in a large directory. Emacs' color
+code parsing is dog slow. I could use `ansi-color-for-comint-mode-filter` to just
 ignore the color codes, but I couldn't bear to go without them.
 
 So, you might ask, what was the verdict? The jury's still out. I'm currently
@@ -113,22 +110,15 @@ more!
 Here's what I added to [my .emacs](http://ryan.barrett.name/dotfiles/.emacs) to
 make shell-mode behave the way I wanted:
 
-
 <a name="settings"></a>
-[![Icon-Permalink.png](/Icon-Permalink.png)](#settings)
-
 
     (custom-set-variables
      '(comint-scroll-to-bottom-on-input t)  ; always insert at the bottom
      '(comint-scroll-to-bottom-on-output t) ; always add output at the bottom
      '(comint-scroll-show-maximum-output t) ; scroll to show max possible output
-     '(comint-completion-autolist t)        ; show completion list when
-ambiguous
-
+     '(comint-completion-autolist t)        ; show completion list when ambiguous
      '(comint-input-ignoredups t)           ; no duplicates in command history
-     '(comint-completion-addsuffix t)       ; insert space/slash after file
-completion
-
+     '(comint-completion-addsuffix t)       ; insert space/slash after file completion
      )
 
     ; interpret and use ansi color codes in shell output windows
@@ -152,11 +142,8 @@ completion
     (global-set-key [(control 7)]
       (lambda () (interactive) (switch-to-buffer "*shell7*")))
 
-See also: 
 <a name="related"></a>
-[![Icon-Permalink.png](/Icon-Permalink.png)](#related)
-
-
+See also: 
   * [synchronizing GNU screen's paste buffer and the X
 selection](/space/synchronizing GNU screen's paste buffer and the X selection)
   * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs keybindings in GNU screen's copy-scrollback mode)

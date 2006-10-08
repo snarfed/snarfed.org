@@ -20,7 +20,7 @@ already at the end of the buffer.
 I next looked at
 [pc-selection-mode](http://www.gnu.org/software/emacs/manual/html_node/Emulation.html),
 which comes with Emacs (in pc-mode.el). It binds page down and page up to
-scroll-down-nomark and scroll-up-nomark, which do what I want, but they also
+`scroll-down-nomark` and `scroll-up-nomark`, which do what I want, but they also
 disable the mark. Argh!
 
 So, I stole the code and hacked it to leave the mark alone. I ended up with this

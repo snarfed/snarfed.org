@@ -20,7 +20,7 @@ it in our quest for [synchronizing mp3 playback](/space/synchronizing mp3 playba
 provide a way to _stop_ it. This might be reasonable for most programs, but not
 ours; we start and stop the server fairly often. [This
 patch](/space/libwebserver_shutdown.patch) adds a
-web\_server\_shutdown() call that stops the server, closes its socket, and
+`web_server_shutdown()` call that stops the server, closes its socket, and
 deallocates its memory.
 
 See also:

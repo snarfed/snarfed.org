@@ -8,8 +8,7 @@ HEAD](/space/snipsnap-snip-name-cvs.patch)
 1.0b1](/space/snipsnap-snip-name-1.0b1.patch)  
 [SnipSnap 1.0b1
 source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b1-uttoxeter-20040914-src.tgz)  
-[Ant](http://ant.apache.org) (needed to build SnipSnap)
-
+[Ant](http://ant.apache.org) (needed to build SnipSnap)  
 [Patching
 FAQ](http://www.gnu.org/software/diffutils/manual/html_node/Merging-with-patch.html)
 

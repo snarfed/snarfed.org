@@ -4,14 +4,10 @@ time thinking about what files to include. If you've used any \*nix OS before,
 the following shell session will look very familiar:
 
     heaven:~> tar xzvf foo-1.2.3.tar.gz
-
-
     heaven:~> ls foo-1.2.3/
     bin     configure  doc      include  Makefile  src
     build   COPYING    etc      INSTALL  MANIFEST  test
     config  COPYRIGHTS HISTORY  lib      README    UPDATE
-
-
     heaven:~>
 
 If you haven't used \*nix much, this is a typical list of files and directories
@@ -23,88 +19,52 @@ I was curious to see how common each file is, so I looked at many of the
 programs that ship with RedHat 9 and calculated some basic statistics. Out of
 412 programs total, here's the frequency of each file, grouped by type:
 
-FilenamePercent of projects with this filePercent of projects with this _type_
-of file
-
-**README****73%****75%**
-
-MANUAL1%
-
-USAGE0%
-
-**COPYING****49%****59%**
-
-LICENSE5%
-
-LICENCE1%
-
-License0%
-
-COPYRIGHT3%
-
-Copyright2%
-
-**ChangeLog****41%****56%**
-
-CHANGES9%
-
-Changelog1%
-
-CHANGELOG1%
-
-Changes0%
-
-changelog0%
-
-NOTES1%
-
-RELNOTES1%
-
-VERSION1%
-
-RELEASE0%
-
-**NEWS****39%****42%**
-
-ANNOUNCE2%
-
-WHATSNEW0%
-
-WhatsNew0%
-
-announce0%
-
-**AUTHORS****33%****42%**
-
-THANKS5%
-
-CREDITS3%
-
-MAINTAINERS0%
-
-**TODO****24%****24%**
-
-ToDo0%%
-
-**INSTALL****12%**
-
-Install0%
-
-**BUGS****5%****7%**
-
-PROBLEMS1%
-
-Problems0%
-
-TROUBLESHOOTING0%
-
-FAQ4%4%
-
-HACKING2%2%
-
-HISTORY1%1%
-
-PROJECTS1%1%
+<table>
+<tr><th>Filename</th>
+    <th>Percent of projects with this file</th>
+    <th>Percent of projects with this <i>type</i> of file</th>
+</tr>
+<tr><td><b>README</b></td><td><b>73%</b></td><td><b>75%</b></td></tr>
+<tr><td>MANUAL</td><td>1%</td></tr>
+<tr><td>USAGE</td><td>0%</td></tr>
+<tr><td><b>COPYING</b></td><td><b>49%</b></td><td><b>59%</b></td></tr>
+<tr><td>LICENSE</td><td>5%</td></tr>
+<tr><td>LICENCE</td><td>1%</td></tr>
+<tr><td>License</td><td>0%</td></tr>
+<tr><td>COPYRIGHT</td><td>3%</td></tr>
+<tr><td>Copyright</td><td>2%</td></tr>
+<tr><td><b>ChangeLog</b></td><td><b>41%</b></td><td><b>56%</b></td></tr>
+<tr><td>CHANGES</td><td>9%</td></tr>
+<tr><td>Changelog</td><td>1%</td></tr>
+<tr><td>CHANGELOG</td><td>1%</td></tr>
+<tr><td>Changes</td><td>0%</td></tr>
+<tr><td>changelog</td><td>0%</td></tr>
+<tr><td>NOTES</td><td>1%</td></tr>
+<tr><td>RELNOTES</td><td>1%</td></tr>
+<tr><td>VERSION</td><td>1%</td></tr>
+<tr><td>RELEASE</td><td>0%</td></tr>
+<tr><td><b>NEWS</b></td><td><b>39%</b></td><td><b>42%</b></td></tr>
+<tr><td>ANNOUNCE</td><td>2%</td></tr>
+<tr><td>WHATSNEW</td><td>0%</td></tr>
+<tr><td>WhatsNew</td><td>0%</td></tr>
+<tr><td>announce</td><td>0%</td></tr>
+<tr><td><b>AUTHORS</b></td><td><b>33%</b></td><td><b>42%</b></td></tr>
+<tr><td>THANKS</td><td>5%</td></tr>
+<tr><td>CREDITS</td><td>3%</td></tr>
+<tr><td>MAINTAINERS</td><td>0%</td></tr>
+<tr><td><b>TODO</b></td><td><b>24%</b></td><td><b>24%</b></td></tr>
+<tr><td>ToDo</td><td>0%%</td></tr>
+<tr><td><b>INSTALL</b></td><td><b>12%</b></td></tr>
+<tr><td>Install</td><td>0%</td></tr>
+<tr><td><b>BUGS</b></td><td><b>5%</b></td><td><b>7%</b></td></tr>
+<tr><td>PROBLEMS</td><td>1%</td></tr>
+<tr><td>Problems</td><td>0%</td></tr>
+<tr><td>TROUBLESHOOTING</td><td>0%</td></tr>
+<tr><td>FAQ</td><td>4%</td><td>4%</td></tr>
+<tr><td>HACKING</td><td>2%</td><td>2%</td></tr>
+<tr><td>HISTORY</td><td>1%</td><td>1%</td></tr>
+<tr><td>PROJECTS</td><td>1%</td><td>1%</td></tr>
+</table>
 
 It's not surprising to see that README is by far the most common file. However,
 I was surprised at the number of different names for the same types of files,

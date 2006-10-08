@@ -1,5 +1,8 @@
 servlets with snipsnap
-![/space/snipsnap.png](/space/snipsnap.png)![/space/jetty.png](/space/jetty.png)[Snipsnap](/space/Snipsnap),
+
+![/space/snipsnap.png](/space/snipsnap.png)![/space/jetty.png](/space/jetty.png)
+
+[Snipsnap](/space/Snipsnap),
 the server that runs this site, is based on [Jetty](http://jetty.mortbay.com/),
 a standards based, pure java servlet container and web application server.
 Snipsnap is implemented on top of Jetty as a framework of servlets. Among other
@@ -18,8 +21,7 @@ handler for those files:
 
     <Call name="addHandler">
       <Arg>
-       <New class=
-          "org.mortbay.jetty.servlet.ServletHandler">
+       <New class="org.mortbay.jetty.servlet.ServletHandler">
         <Call name="addServlet">
           <Arg>JSP</Arg>
           <Arg>*.jsp</Arg>

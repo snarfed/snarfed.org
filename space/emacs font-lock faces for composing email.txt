@@ -22,8 +22,8 @@ just like Pine's message viewer.
 
 To set it up, [download
 u-vm-color.el](http://de.geocities.com/ulf_jasper/lisp/u-vm-color.el.txt), put
-it somewhere in your load-path (e.g. /usr/share/emacs/site-lisp/), and add this
-to your ~/.emacs:
+it somewhere in your load-path (e.g. `/usr/share/emacs/site-lisp/`), and add this
+to your `~/.emacs`:
 
     (require 'u-vm-color)
 

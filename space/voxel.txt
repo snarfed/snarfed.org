@@ -1,5 +1,8 @@
 voxel
-[![/space/voxel_hunt_mountain_thumb.jpg](/space/voxel_hunt_mountain_thumb.jpg)](/space/voxel_hunt_mountain.jpg)[![/space/voxel_hunt_volcanic_thumb.jpg](/space/voxel_hunt_volcanic_thumb.jpg)](/space/voxel_hunt_volcanic.jpg)[Download
+
+[![/space/voxel_hunt_mountain_thumb.jpg](/space/voxel_hunt_mountain_thumb.jpg)](/space/voxel_hunt_mountain.jpg)[![/space/voxel_hunt_volcanic_thumb.jpg](/space/voxel_hunt_volcanic_thumb.jpg)](/space/voxel_hunt_volcanic.jpg)
+
+[Download
 Voxel Hunt](/space/voxel.zip)
 
   * **Description**
@@ -19,23 +22,15 @@ certainly have, and GLUT, which is included in this package.
 
   * **Controls**
 
-Arrow Keysmovement (forward/backward and turning)
-
-Homeincrease altitude
-
-Enddecrease altitude
-
-Mteleport to Mountain planet
-
-Vteleport to Volcanic planet
-
-Ftoggle FPS display
-
-Itoggle interpolation (smoother and not much slower)
-
-Atoggle autopilot (follow the terrain's altitude)
-
-Qquit the game
+**Arrow Keys**: movement (forward/backward and turning)  
+**Home**: increase altitude  
+**End**: decrease altitude  
+**M**: teleport to Mountain planet  
+**V**: teleport to Volcanic planet  
+**F**: toggle FPS display  
+**I**: toggle interpolation (smoother and not much slower)  
+**A**: toggle autopilot (follow the terrain's altitude)  
+**Q**: quit the game  
 
   * **Known Bugs**
 

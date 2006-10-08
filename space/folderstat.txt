@@ -13,7 +13,7 @@ to authenticate once for each folder, so it's not really useful for accounts
 that use SSL/TLS or otherwise require authentication. However, it is a decent
 example of iostreams and STL usage in C++.
 
-To compile on \*nix, just do g++ folderstat.cpp. On Windows, just load it in
+To compile on \*nix, just do `g++ folderstat.cpp`. On Windows, just load it in
 your IDE of choice and compile it. :P
 
 Eventually, I might re-implement this using Python's

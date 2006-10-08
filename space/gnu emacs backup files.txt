@@ -12,13 +12,10 @@ place. Here's the
 (GNU Emacs only) that I put in [my
 .emacs](http://ryan.barrett.name/dotfiles/.emacs):
 
-    ;; Put autosave files (ie #foo#) in one place, *not* scattered all over the
-    ;; file system! (The make-autosave-file-name function is invoked to
-determine
-
-    ;; the filename of an autosave file.)
-    (defvar autosave-dir (concat "/tmp/emacs\_autosaves/" (user-login-name)
-"/"))
+    ;; Put autosave files (ie #foo#) in one place, *not*
+    ;; scattered all over the file system!
+    (defvar autosave-dir
+     (concat "/tmp/emacs\_autosaves/" (user-login-name) "/"))
 
     (make-directory autosave-dir t)
 
@@ -34,9 +31,7 @@ determine
 
     ;; Put backup files (ie foo~) in one place too. (The backup-directory-alist
     ;; list contains regexp=>directory mappings; filenames matching a regexp are
-    ;; backed up in the corresponding directory. Emacs will mkdir it if
-necessary.)
-
+    ;; backed up in the corresponding directory. Emacs will mkdir it if necessary.)
     (defvar backup-dir (concat "/tmp/emacs\_backups/" (user-login-name) "/"))
     (setq backup-directory-alist (list (cons "." backup-dir)))
 

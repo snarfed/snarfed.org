@@ -9,8 +9,8 @@ Player](http://www.microsoft.com/windows/windowsmedia/default.aspx), since I'm
 lazy and it comes with Windows.
 
 Recently I had to switch Windows users on my computer. To get back all my stuff,
-I had to copy all of the files in _C:\Documents and Settings\olduser\_ to
-_C:\Documents and Settings\newuser\_.
+I had to copy all of the files in _C:\Documents and Settings\olduser_ to
+_C:\Documents and Settings\newuser_.
 
 This worked surprisingly well, except for my playlists. When I started WMP, and
 when I tried to play any playlist, it complained:
