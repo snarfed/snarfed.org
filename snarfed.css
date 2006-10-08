@@ -3,54 +3,65 @@
  * @author Ryan Barrett <snarfed@ryanb.org>
  */
 
-input, select, textarea {
-  font-family: verdana, arial, sans-serif;
+body {
+  font-family: helvetica, sans-serif;
+  line-height: 1.3em;
+  color: #222;
+  background-color: #DDD;
+  margin: 0em;
+  padding: .5em;
+}
+
+/*
+ * Layout
+ */
+div#page-title {
+  background-image: url("/stylized-grass.jpg");
+  background-repeat: no-repeat;
+  background-position: 0px -35px;
+  background-color: #FFF;
+  height: 65px;
+  width: 35em;
+  max-width: 35em;
+  margin-left: .5em;
+  margin-top: .5em;
+  padding: 1em;
+  border-bottom: .75em solid #036;
+  color: #036;
+}
+
+div#page-content {
+  width: 28.5em;
+  max-width: 28.5em;
+  margin: 0em;
+  margin-left: .5em;
+  padding: .5em;
+  padding-left: 8em;
+  background-color: #FFF;
+}
+
+div#sidebar
+{
+  position: absolute;
+  width: 6em;
+  max-width: 7em;
+  left: 1em;
+  padding: .67em;
+  background-color: #DDD;
+  color: #000;
   border: 1px solid #036;
-  font-size: 13px;
-  margin: 5px;
-  padding-left: 2px;
+  border-top: none;
+  -moz-border-radius-bottomleft: 1em;
+  -moz-border-radius-bottomright: 1em;
 }
 
-table {
-  empty-cells: show;
-}
-
-input#searchbox {
-  margin: 0px;
-}
-
-textarea {
-  width: 100%;
-  overflow: auto;
-}
-
+/*
+ * Style
+ */
 img {
   border: none;
-  padding: 1px;
+  padding: .1em;
 }
-
-img.left {
-  display: block;
-  left: 0px;
-}
-
-img.right {
-  display: block;
-  right: 0px;
-}
-
-img.center { text-align: center; }
-
-img.float-left {
-  float: left;
-  margin: 10px;
-}
-
-img.float-right {
-  float: right;
-  margin: 10px;
-}
-
 
 a {
   text-decoration: none;
@@ -61,14 +72,27 @@ a {
 a:link    { color: #036; }
 a:visited { color: #467; }
 a:hover   { color: #07D; }
+a:focus   { color: #07D; }
 /*#a:active { color: #6CF; }*/
 
-#page-buttons a:hover { color: #07D; }
-#page-buttons a:active { color: #07D; }
+input, select, textarea {
+  font-family: verdana, arial, sans-serif;
+  border: 1px solid #036;
+  margin-top: .5em;
+  padding-left: .2em;
+}
 
-.error-position {
-  background-color: #FAA;
-  color: inherit;
+div#sidebar input {
+  width: 6em;
+}
+
+div#sidebar form {
+  margin: 0px;
+}
+
+textarea {
+  width: 100%;
+  overflow: auto;
 }
 
 .ajax-message {
@@ -77,162 +101,96 @@ a:hover   { color: #07D; }
   font-style: italic;
 }
 
-/* for debugging */
-/* { border: 1px solid green; } */
-
-body {
-  font-family: verdana, arial, sans-serif;
-  font-weight: normal;
-  font-size: 14px;
-  line-height: 16px;
-  color: #222;
-  background-color: #EEE;
-  margin: 0px;
-  padding: 0px;
-}
-
-div#body {
-  width: 600px;
-  margin: 0px;
-  padding: 10px;
-  background-color: #EEE;
-}
-
-div#page-title {
-  display: block;
-  background-image: url("/stylized-grass.jpg");
-  background-repeat: no-repeat;
-  height: 75px;
-  margin: 0px;
-  padding: 10px;
-  color: #036;
-  background-color: #FFF;
-  background-position: 0px -40px;
-}
-
-a#page-title {
- font-size: 24px;
- font-weight: bold;
-}
-
-div#page-buttons {
-  padding: 5px;
-  text-align: right;
-  color: #FFF;
-  background-color: #036;
-}
-
-div#page-buttons a {
-  color: #FFF;
-}
-
-div#page-content {
-  left: 10px;
-  margin: 0px;
-  padding: 10px;
-  padding-left: 145px;
-  /* min-width instead of width for IE */
-  min-width: 445px;
-  background-color: #FFF;
-}
-
-div#page-portlet-1 
-{
- position: absolute;
-  width: 110px;
-  left: 10px;
-  padding: 10px;
-  background-color: #EEE;
-  color: #000;
-  border: 1px solid #036;
-  border-top: none;
-  -moz-border-radius-bottomleft: 15px;
-  -moz-border-radius-bottomright: 15px;
-}
-
-div#page-portlet-1 input {
-  width: 108px;
-}
-
-.snip-title {
-  display: table;
-  width: 100%;
-  text-align: left;
-  padding: 0px;
-}
-
-.snip-name, .blog-date {
+.ajax-error {
+  color: #F44;
   font-weight: bold;
+}
+
+table {
+  empty-cells: show;
+}
+
+.title {
   width: 100%;
-  color: #333;
-  padding-bottom: 4px;
+  padding: 0em;
+  padding-bottom: .3em;
   border-bottom: 1px solid #036;
 }
 
-.snip-name { font-size: 19px; }
-.blog-date { font-size: 16px; }
+.name, h1.index, h1.photogallery {
+  vertical-align: top;
+  font-weight: bold;
+  color: #333;
+  font-size: 1.2em;
+}
 
-.snip-buttons {
-  border: 0;
+.name { float: left; }
+
+.buttons {
   float: right;
-  font-size: 10px;
+  font-size: .67em;
   text-align: right;
 }
 
-.snip-post-comments {
-  margin-top: 20px;
-  margin-bottom: 20px;
+.clearing {
+  clear: both;
+}
+
+.post-comments {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
 }
 
 div.comment {
-  padding-top: 5px;
-  padding-bottom: 5px;
-  margin-bottom: 5px;
+  padding-top: .33em;
+  padding-bottom: .33em;
+  margin-bottom: .33em;
 }
 
 div#comment-input {
-  display: none;
+ display: none;
 }
 
 h2.comment-name {
-  font-size: 16px;
-  margin: 5px;
+  font-size: 1.1em;
+  margin: .33em;
 }
 
 div.comment-content {
-  margin: 5px;
-  margin-left: 20px;
+  margin: .33em;
+  margin-left: 1.5em;
 }
 
 div#ryan {
-  background-color: #EEE;
+  background-color: #DDD;
   border: 1px solid #8AD;
-  -moz-border-radius: 15px;
+  -moz-border-radius: 1em;
 }
 
 div.preview {
-  background-color: #EEE;
+  background-color: #DDD;
   border: 1px dashed #8AD;
-  -moz-border-radius: 15px;
+  -moz-border-radius: 1em;
 }
 
-.bold { font-weight: bold; }
-.italic { font-style: italic; }
+h1 {
+  margin: 0em;
+}
 
 h3 {
   color: #036;
   background-color: inherit;
   font-weight: bold;
   font-variant: small-caps;
-  font-size: 16px;
+  font-size: 1.1em;
 }
 
-blockquote { font-style: italic; }
+blockquote {  font-style: italic; }
 
 pre {
-  margin: 4px;
-  padding: 5px;
-  background-color: #EEE;
+  margin: .3em;
+  padding: .3em;
+  background-color: #DDD;
   border: 1px dotted #036;
   font-family: courier, courier new, monospace;
   line-height: 100%;
@@ -246,5 +204,26 @@ code {
 }
 
 li {
-  margin-bottom: 10px;
+  margin-bottom: .67em;
+}
+
+/*
+ * Plugins style
+ */
+span.diff-removed { color: red; }
+span.diff-added   { color: green; }
+span.diff-changed { color: yellow; }
+
+table.index {
+  width: 100%;
+  table-layout: fixed;
+  empty-cells: show;
+}
+
+h3.index {
+  color: #222;
+}
+
+tr.index-row-stripe-1 {
+  background-color: #DDD;
 }
