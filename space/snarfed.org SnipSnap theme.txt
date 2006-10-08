@@ -1,0 +1,18 @@
+snarfed.org SnipSnap theme
+
+[![snarfed_theme_screenshot_thumb.jpg](/space/snarfed_theme_screenshot_thumb.jpg)](snarfed_theme_screenshot.jpg)
+
+[SnipSnap](http://snipsnap.org/), the server that used to run this site,
+supports [themes](http://snipsnap.org/space/Themes). They change your
+Snipsnap-based site's appearance, using [CSS](http://www.w3.org/Style/CSS/),
+images, and other files, without changing its content. There's a
+[tutorial](http://snipsnap.org/space/Theme+Tutorial) on
+[snipsnap.org](http://snipsnap.org/).
+
+The snarfed.org theme is [available for download](/space/snarfed_theme.snip).
+To try it out on your site,
+[download snarfed_theme.snip](/space/snarfed_theme.snip), go to your
+SnipSnap's setup page, import it, and set it as your theme. Voila!
+
+This theme is licensed under the
+[Creative Commons](http://creativecommons.org/licenses/by/2.0/).
