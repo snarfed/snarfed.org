@@ -32,7 +32,6 @@ xsel](http://www.niksula.cs.hut.fi/~vherva/xsel/)), which needs to be somewhere
 in your PATH.
 
 See also:
-
   * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs keybindings in GNU screen's copy-scrollback mode)
   * [why I don't run shells inside Emacs](/space/why I don't run shells inside Emacs)
   * [RatPoison Wiki: mouseless

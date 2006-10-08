@@ -12,31 +12,19 @@ year.
 **Contents:**
 
   * [Aura (reputation library)](/space/CodeCon+2005+notes#aura)
-
   * [Arx (distributed version control)](/space/CodeCon+2005+notes#arx)
-
   * [ApacheCA (PGP-based certificate
 authority)](/space/CodeCon+2005+notes#apacheca)
-
   * [Off-the-Record Messaging (secure im)](/space/CodeCon+2005+notes#otr)
-
   * [The Ultra Gleeper (web page
 recommendations)](/space/CodeCon+2005+notes#gleeper)
-
   * [H2O (web-based education tools)](/space/CodeCon+2005+notes#h2o)
-
   * [Mappr (geomapping for flickr)](/space/CodeCon+2005+notes#mappr)
-
   * [Photospace (online photo site)](/space/CodeCon+2005+notes#photospace)
-
   * [Wheat (web development environment)](/space/CodeCon+2005+notes#wheat)
-
   * [Incoherence (audio visualization)](/space/CodeCon+2005+notes#incoherence)
-
   * [i-Brokers (online identities)](/space/CodeCon+2005+notes#i-brokers)
-
   * [SciTools (bioinformatics toolkit)](/space/CodeCon+2005+notes#scitools)
-
   * [OzymanDNS (DNS witchcraft)](/space/CodeCon+2005+notes#ozymandns)
 
 **Aura**
@@ -55,9 +43,7 @@ computational system needs to be at least as easy to use
 properties:
 
   * associable (users <=> information they provide)
-
   * peer review
-
   * feedback that affects user reputation (based on provider's reputation)
 
 very pessimistic - assumes all centralization is bad, all data is bad, all users
@@ -90,13 +76,9 @@ personal drama, but that's outside the scope here.
 has the standard laundry list of features that cvs doesnt:
 
   * atomic changesets
-
   * renames
-
   * cheap branching and tagging
-
   * good binary handling
-
   * python API
 
 killer feature: distributed!

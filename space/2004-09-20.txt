@@ -15,12 +15,9 @@ workflow. This is how I work with pictures:
 
   * Download pictures from camera into directories based on the date that the
 picture was taken
-
   * Select the pictures I want, copy them to a directory made public by my
 webserver
-
   * Write captions
-
   * Link all the pictures together with quasi-fancy html
 
 To do this I had to select the pictures with the normal folder system of

@@ -10,51 +10,34 @@ have [notes from Codecon 2005](/space/Codecon 2005 notes) and [Codecon
 2004](/space/Codecon 2004).)
 
 ### [Day 1](/space/CodeCon+2006+notes#day1)
-
   * [Daylight Fraud Prevention (server-side phishing
 prevention)](/space/CodeCon+2006+notes#dfp)
-
   * [SiteAdvisor (automated web safety
 ratings)](/space/CodeCon+2006+notes#siteadvisor)
-
   * [VidTorrent (BitTorrent for
 streaming)](/space/CodeCon+2006+notes#vidtorrent)
-
   * [Localhost (p2p filesharing based on
 ranking)](/space/CodeCon+2006+notes#localhost)
-
   * [Truman (malware sandbox)](/space/CodeCon+2006+notes#truman)
 
 ### [Day 2](/space/CodeCon+2006+notes#day2)
-
   * [delta (minimizes input datasets)](/space/CodeCon+2006+notes#delta)
-
   * [Djinni (approximating hard problems)](/space/CodeCon+2006+notes#djinni)
-
   * [iGlance (p2p videoconferencing and screen
 sharing)](/space/CodeCon+2006+notes#iglance)
-
   * [OASIS (anycast by finding local mirrors)](/space/CodeCon+2006+notes#oasis)
-
   * [Query By Example (just what it sounds
 like!)](/space/CodeCon+2006+notes#qbe)
 
 ### [Day 3](/space/CodeCon+2006+notes#day3)
-
   * [Dido (dynamic phone menus on asterisk)](/space/CodeCon+2006+notes#dido)
-
   * [Deme (group collaboration webapp)](/space/CodeCon+2006+notes#deme)
-
   * [UniConf (unified system configuration)](/space/CodeCon+2006+notes#uniconf)
-
   * [Remailer-To-Go (disposable anonymous
 remailers)](/space/CodeCon+2006+notes#remailer-to-go)
-
   * [Monotone ("stress-free" source
 control)](/space/CodeCon+2006+notes#monotone)
-
   * [Rhizome (wiki framework)](/space/CodeCon+2006+notes#rhizome)
-
   * [Elsa/Oink/Cqual++ (static analysis for
 _dataflow_)](/space/CodeCon+2006+notes#elsa)
 
@@ -75,19 +58,14 @@ wow he's going fast. ok, catching up...
 types of phishing:
 
   * impersonate (standard)
-
   * forward (mitm through http and post, more sophisticated)
-
   * popup (in front of real site; mostly deprecated)
 
 current solutions are insufficient:
 
   * bounce email monitoring (since email headers are forged)
-
   * whack-a-mole on phishing hosts
-
   * detect known phishing email signatures (like virus scanners)
-
   * toolbars with host blacklits and heuristics (have to push updates)
 
 basically like squid (server-side) for fraud prevention. single apache host
@@ -229,13 +207,9 @@ audience. :P
 starts off with lots and lots...and lots...of background:
 
   * % of web traffic by type (ftp, email, http, p2p) over history
-
   * defined p2p, decentralized, peer, etc. (!)
-
   * described napster (direct sharing, centralized index) and even client ui
-
   * mentioned keyword poisoning as drawback of index
-
   * explained bt's chunking, lack of index, instead ad hoc web sites (suprnova)
 
 provides a hierarchical, versioned filesystem of torrents. edits create new
@@ -360,15 +334,12 @@ minima/maxima, etc.
 fitness fn must be:
 
   * cheap. ay, for np problems, how? seems like halting problem
-
   * comparable (sure, quantify based on e.g. time)
 
 current approaches to local search:
 
   * hill climbing (dumb, simple)
-
   * annealing (random changes plus hill climbing)
-
   * genetic (annealing w/combining solutions, fitness fn has randomness)
 
 well-prepared and practiced talk, good speaker, rehearsed jokes, plus physical
@@ -428,15 +399,12 @@ specifically, iglance attempts to integrate video into the overall experience
 tries to replicate implicit real-world conversation mores:
 
   * don't explicitly call someone, just start talking
-
   * don't set away msg, just go
-
   * real-world privacy stuff: either both ppl can see each other or neither
 
 also more natural twists on vnc-style screen and input sharing:
 
   * can share _individual windows_, not whole desktop
-
   * instead of fighting over single mouse pointer, each remote user has their
 
 own pointer, visible to everyone, but only one has control at any time.
@@ -472,7 +440,6 @@ backend for coral.
 current solns:
 
   * probe all mirrors for bandwidth/latency product (expensive, gets stale fast)
-
   * define euclidean space (a la vivaldi and meridian), assign coordinates to
 hosts based on others (gets stale fast)
 
@@ -486,7 +453,6 @@ redirection smarts
 two levels of locality:
 
   * client issues DNS req to oasis server, it redirects to nearby oasis server
-
   * client re-issues DNS req to nearby server, it resolves to nearby host
 
 how to determine regions? ip addr isn't good enough, too many are dynamic.
@@ -522,9 +488,7 @@ motivation is pretty clear. querying and data mining is big business.
 however, creating good unstructured keyword queries is hard
 
   * synonyms (record, code, etc.)
-
   * syntactic ambiguity (newspaper headline: "Eye Drops Off Shelf")
-
   * namespace collisions (apache: indian tribe, helicoptor, or web server?)
 
 ranking is hard too. she even slams pagerank. aww... :P
@@ -557,11 +521,8 @@ add "EXAMPLE KEY" option for WHERE and ORDER BY:
 integration w/postgres was easy,
 
   * new syntax in parser
-
   * learning function in analyzer
-
   * leave optimizer as is
-
   * results engine in executor
 
 unfortunately, it only works on numeric values so far. sigh. as jonathan noted,

@@ -11,28 +11,16 @@ often, including [Emacs](http://gnu.org/software/emacs/),
 Direct links:
 
   * [.acoc.conf](http://ryan.barrett.name/dotfiles/.acoc.conf)
-
   * [.Xmodmap](http://ryan.barrett.name/dotfiles/.Xmodmap)
-
   * [.Xresources](http://ryan.barrett.name/dotfiles/.Xresources)
-
   * [.emacs](http://ryan.barrett.name/dotfiles/.emacs)
-
   * [.emacs.minimal](http://ryan.barrett.name/dotfiles/.emacs.minimal)
-
   * [.cshrc](http://ryan.barrett.name/dotfiles/.cshrc)
-
   * [.ion2/](http://ryan.barrett.name/dotfiles/.ion2/)
-
   * [.inputrc](http://ryan.barrett.name/dotfiles/.inputrc)
-
   * [.pinerc](http://ryan.barrett.name/dotfiles/.pinerc)
-
   * [.python](http://ryan.barrett.name/dotfiles/.python)
-
   * [.screenrc](http://ryan.barrett.name/dotfiles/.screenrc)
-
   * [.tkdiffrc](http://ryan.barrett.name/dotfiles/.tkdiffrc)
-
   * [.xinitrc](http://ryan.barrett.name/dotfiles/.xinitrc)
 

@@ -31,20 +31,12 @@ snipsnap-servlets.jar into your application's WEB-INF/lib/ subdirectory, over
 the existing jars. Restart SnipSnap and you should be good to go!
 
 See also:
-
   * [snipsnap register without email](/space/snipsnap register without email)
-
   * [snipscrape](/space/snipscrape)
-
   * [snipsnap macros](/space/snipsnap macros)
-
   * [snipsnap recent-changes snip name patch](/space/snipsnap recent-changes snip name patch)
-
   * [snipsnap script macro and python](/space/snipsnap script macro and python)
-
   * [servlets with snipsnap](/space/servlets with snipsnap)
-
   * [virtual host redirection](/space/virtual host redirection)
-
   * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap 1.0b1 virtual hostname patch)
 

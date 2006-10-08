@@ -52,14 +52,9 @@ with (C)ompose instead of (R)eply. This is usually encountered when you reply to
 an email, postpone the reply, then resume and attempt to send.
 
 See also:
-
   * [pine delete attachments on save patch](/space/pine delete attachments on save patch)
-
   * [pine flowed-text patch](/space/pine flowed-text patch)
-
   * [pine reply-all patch](/space/pine reply-all patch)
-
   * [port\_pine\_patch](/space/port_pine_patch)
-
   * [gmail vs pine](/space/gmail vs pine)
 

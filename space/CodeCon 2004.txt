@@ -12,21 +12,13 @@ unedited notes on a few of the projects presented on
 **Contents:**
 
   * [FunFS (Fast Userspace Network Filesystem)](/space/CodeCon+2004#funfs)
-
   * [Tor (anonymized onion routing)](/space/CodeCon+2004#tor)
-
   * [Vend-O-Rand (entropy vending machine)](/space/CodeCon+2004#vendorand)
-
   * [Osiris (security monitoring)](/space/CodeCon+2004#osiris)
-
   * [PGP Universal (encrypted email)](/space/CodeCon+2004#pgpuniversal)
-
   * [SCREAM (real-time audio synthesis)](/space/CodeCon+2004#scream)
-
   * [Solipsis (P2P virtual world)](/space/CodeCon+2004#solipsis)
-
   * [GracefulTavi (wiki server)](/space/CodeCon+2004#gracefultavi)
-
   * [Mosuki (next-gen social network)](/space/CodeCon+2004#mosuki)
 
 **FunFS (fast userspace network
@@ -120,7 +112,6 @@ of collusion resistance), other transports besides TCP, etc.
 questions:
 
   * compare to freenet? freedom? Peek-a-booty?
-
   * if you use a telescoping circuit, you have to set up stateful sessions
 w/each intermediate node. so how could setup be low-latency?
 
@@ -140,29 +131,19 @@ mere $1!
 inputs:
 
   * geiger counter
-
   * noisy diode
-
   * atmospheric noise (radio astronomy)
-
   * lava lamp cam
-
   * "brown bag" input device
-
   * cut-rate pacific rim motherboard manufacturers' onboard random \# generation
 
 outputs:
 
   * lottery numbers
-
   * horoscopes
-
   * fortunes
-
   * binary printout
-
   * IR beam to PDAs
-
   * ipsec, PGP, GPG keys
 
 currently accepting applications for franchises!
@@ -252,16 +233,11 @@ samples at all!
 pluggable modules include:
 
   * GranuSampler: granular synthesis, allows mixing and matching samples at
-
 different speeds and fine-grained envelopes
-
   * Ambisonic Spatialization: first-order unit generator from SuperCollider,
 does
-
 full 3d spatialization of sound, output to 5.1, 6.1, dolby, headphones, etc.
-
   * AmbiGranusampler, combination
-
 server-client w/thin client and bandwidth-constrained protocol design.
 
 demoed at burning man on an 8-point speaker system, thousands of watts, 12 ft.
@@ -301,9 +277,7 @@ are \*loose\* w.r.t visibility.
 the network structure, routing, connectivity are organized like a 2D BSP tree.
 
   * each node has its own connxn BSP tree
-
   * the correlations (edges) are the net connxns
-
   * the BSP tree is \*dynamic\* - changes when other nodes enter/leave/move,
 etc.
 
@@ -321,15 +295,10 @@ them) and keep going until you hit a node you've already seen. then you've
 architecture:
 
   * nodes talk to each other w/UDP - stateless, short-lived connxns to maintain
-
 ad-hoc network and routing tables.
-
   * avatars talk w/"navigators", which use nodes to find navigators, then talk
-
 directly to the other navigators over XML-RPC, CORBA, etc. (stateful).
-
   * navigators can do HTTP/proxy traversal
-
   * the navigator has a pluggable platform that allows people to develop their
 
 own services (e.g. chat, gambling, trading, etc.) on top of solipsis.
@@ -369,11 +338,8 @@ also provides wiki syntax for creating tables and other basic html features.
 advanced features:
 
   * page hierarchy and tree relations
-
   * diff functionality (basic version control, but no history per se)
-
   * search that matches from most to least restrictive, w/advanced syntax
-
   * pluggable macro framework. macros are written in php, however, and must be
 
 run on the server, so it's not clear how this is better than just hacking the

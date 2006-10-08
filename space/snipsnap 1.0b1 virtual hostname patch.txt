@@ -35,20 +35,12 @@ newly rebuilt snipsnap-server.jar into your SnipSnap's lib/ subdirectory, over
 the existing jar. Restart SnipSnap and you should be good to go!
 
 See also:
-
   * [virtual host redirection](/space/virtual host redirection)
-
   * [servlets with snipsnap](/space/servlets with snipsnap)
-
   * [snipscrape](/space/snipscrape)
-
   * [snipsnap comment without login patch](/space/snipsnap comment without login patch)
-
   * [snipsnap macros](/space/snipsnap macros)
-
   * [snipsnap recent-changes snip name patch](/space/snipsnap recent-changes snip name patch)
-
   * [snipsnap register without email](/space/snipsnap register without email)
-
   * [snipsnap script macro and python](/space/snipsnap script macro and python)
 

@@ -159,28 +159,16 @@ See also:
 
   * [synchronizing GNU screen's paste buffer and the X
 selection](/space/synchronizing GNU screen's paste buffer and the X selection)
-
   * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs keybindings in GNU screen's copy-scrollback mode)
-
   * [acoc.conf for context diffs](/space/acoc.conf for context diffs)
-
   * [control arrow keys in rxvt, tcsh, and emacs](/space/control arrow keys in rxvt, tcsh, and emacs)
-
   * [tcsh highlighting patch](/space/tcsh highlighting patch)
-
   * [remove tcsh globbing in history search](/space/remove tcsh globbing in history search)
-
   * [tcsh delete moves mark bug fix](/space/tcsh delete moves mark bug fix)
-
   * [Emacs and remote X Windows](/space/Emacs and remote X Windows)
-
   * [minimal .emacs for fast startup](/space/minimal .emacs for fast startup)
-
   * [emacs keybindings with number keys](/space/emacs keybindings with number keys)
-
   * [emacs keybindings in firefox](/space/emacs keybindings in firefox)
-
   * [emacs X resources](/space/emacs X resources)
-
   * [emacs page up page down](/space/emacs page up page down)
 

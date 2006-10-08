@@ -36,7 +36,6 @@ bindings in screen's copy/scrollback mode:
     bindkey -m ^[Oc stuff ]  #"}]^f"
 
 See also:
-
   * [synchronizing GNU screen's paste buffer and the X selection](/space/synchronizing GNU screen's paste buffer and the X selection)
   * [why I don't run shells inside Emacs](/space/why I don't run shells inside Emacs)
   * [control arrow keys in rxvt, tcsh, and emacs](/space/control arrow keys in rxvt, tcsh, and emacs)

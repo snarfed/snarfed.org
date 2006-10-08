@@ -66,8 +66,6 @@ you script and remap mouse, keyboard, and joystick input. It inverts the mouse
 per-axis successfully, but doesn't affect DirectInput apps.
 
 See also:
-
   * [thinkpad keys in firefox](/space/thinkpad keys in firefox)
-
   * [windows media player database](/space/windows media player database)
 

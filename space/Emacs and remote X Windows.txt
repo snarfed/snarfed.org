@@ -44,11 +44,8 @@ This binds **Esc M-w** to copy to the X selection and **Esc C-y** to paste from
 the X selection or cut buffer.
 
 See also:
-
   * [emacs X resources](/space/emacs X resources)
-
   * [synchronizing GNU screen's paste buffer and the X
 selection](/space/synchronizing GNU screen's paste buffer and the X selection)
-
   * [why I don't run shells inside Emacs](/space/why I don't run shells inside Emacs)
 

@@ -53,16 +53,12 @@ it on automatically whenever you open source code, add these lines to your
 Fillcode is a work in progress. Here's a list of issues:
 
   * It doesn't yet fill expressions outside parentheses.
-
   * It doesn't break lines at the =, >, and < operators.
-
   * It depends on the major mode's indentation and parsing engines. These are
 less than perfect in some major modes.
-
   * It's not entirely compatible with
 [auto-fill-mode](http://www.gnu.org/software/emacs/manual/emacs.html#Auto%20Fill)
 or [filladapt-mode](http://www.wonderworks.com/#filladapt)...yet.
-
   * Single-line comments, such as **//** and **#** comments, aren't handled
 perfectly. Specifically, the following lines aren't always indented.
 

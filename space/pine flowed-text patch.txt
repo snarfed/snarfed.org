@@ -25,14 +25,9 @@ with this patch, thanks to Chuck Wolber, and [instructions on building Pine from
 source](/space/pine+reply-all+patch). Scroll to the bottom.
 
 See also:
-
   * [pine delete attachments on save patch](/space/pine delete attachments on save patch)
-
   * [pine remove trailing quote patch](/space/pine remove trailing quote patch)
-
   * [pine reply-all patch](/space/pine reply-all patch)
-
   * [port\_pine\_patch](/space/port_pine_patch)
-
   * [gmail vs pine](/space/gmail vs pine)
 

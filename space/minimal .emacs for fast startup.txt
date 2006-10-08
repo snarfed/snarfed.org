@@ -62,16 +62,10 @@ add things from your standard .emacs. [dotemacs.de](http://www.dotemacs.de/) is
 a good resource for writing and refining your .emacs file.
 
 See also:
-
   * [control arrow keys in rxvt, tcsh, and emacs](/space/control arrow keys in rxvt, tcsh, and emacs)
-
   * [why I don't run shells inside Emacs](/space/why I don't run shells inside Emacs)
-
   * [Emacs and remote X Windows](/space/Emacs and remote X Windows)
-
   * [emacs X resources](/space/emacs X resources)
-
   * [emacs page up page down](/space/emacs page up page down)
-
   * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs keybindings in GNU screen's copy-scrollback mode)
 

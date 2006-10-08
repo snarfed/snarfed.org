@@ -25,27 +25,16 @@ Now, go to the manager page in your SnipSnap, import snips.xml, and you should
 be set!
 
 See also:
-
   * [Rendering SnipSnap snips with XSLT](http://snipsnap.org/space/xml+issue)
-
   * [Migrating from Radio to SnipSnap with
 XSLT](http://blog.fivesight.com/prb/space/Migrating+Radio+to+SnipSnap)
-
   * [Using XML to structure snips](http://snipsnap.org/space/xml+issue)
-
   * [servlets with snipsnap](/space/servlets with snipsnap)
-
   * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap 1.0b1 virtual hostname patch)
-
   * [snipsnap comment without login patch](/space/snipsnap comment without login patch)
-
   * [snipsnap macros](/space/snipsnap macros)
-
   * [snipsnap recent-changes snip name patch](/space/snipsnap recent-changes snip name patch)
-
   * [snipsnap register without email](/space/snipsnap register without email)
-
   * [snipsnap script macro and python](/space/snipsnap script macro and python)
-
   * [virtual host redirection](/space/virtual host redirection)
 

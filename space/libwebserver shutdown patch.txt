@@ -24,8 +24,6 @@ web\_server\_shutdown() call that stops the server, closes its socket, and
 deallocates its memory.
 
 See also:
-
   * [synchronizing mp3 playback](/space/synchronizing mp3 playback)
-
   * [p4](/space/p4)
 

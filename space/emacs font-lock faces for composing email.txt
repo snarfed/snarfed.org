@@ -44,16 +44,10 @@ to your ~/.emacs:
 Happy font-locked emailing!
 
 See also:
-
   * [gmail vs pine](/space/gmail vs pine)
-
   * [why I don't run shells inside Emacs](/space/why I don't run shells inside Emacs)
-
   * [acoc.conf for context diffs](/space/acoc.conf for context diffs)
-
   * [tcsh highlighting patch](/space/tcsh highlighting patch)
-
   * [Emacs and remote X Windows](/space/Emacs and remote X Windows)
-
   * [minimal .emacs for fast startup](/space/minimal .emacs for fast startup)
 

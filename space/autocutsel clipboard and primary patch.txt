@@ -20,9 +20,7 @@ help](https://savannah.nongnu.org/patch/?func=detailitem&item_id=3367), it now
 synchronizes both the clipboard and the primary selection. Problem solved!
 
 See also:
-
   * [synchronizing GNU screen's paste buffer and the X
 selection](/space/synchronizing GNU screen's paste buffer and the X selection)
-
   * [why I don't run shells inside Emacs](/space/why I don't run shells inside Emacs)
 

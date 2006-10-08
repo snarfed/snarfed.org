@@ -47,8 +47,6 @@ good first step. I'd like to extend it to use DNSBLs and RBLs like
 [SURBL](http://www.surbl.org/faq.html).
 
 See also:
-
   * [geocoding](/space/geocoding)
-
   * [webalizer nofollow patch](/space/webalizer nofollow patch)
 

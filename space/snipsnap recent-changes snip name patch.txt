@@ -32,20 +32,12 @@ subdirectory, over the existing jar. Restart SnipSnap and you should be good to
 go!
 
 See also:
-
   * [snipsnap comment without login patch](/space/snipsnap comment without login patch)
-
   * [snipsnap macros](/space/snipsnap macros)
-
   * [snipsnap register without email](/space/snipsnap register without email)
-
   * [snipsnap script macro and python](/space/snipsnap script macro and python)
-
   * [servlets with snipsnap](/space/servlets with snipsnap)
-
   * [virtual host redirection](/space/virtual host redirection)
-
   * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap 1.0b1 virtual hostname patch)
-
   * [snipscrape](/space/snipscrape)
 
