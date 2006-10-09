@@ -12,3 +12,14 @@ AIM: _[bl4ize](aim:goim?screenname=bl4ize)_
 ICQ: _[1471094](http://wwp.icq.com/1471094)_  
 Jabber: _[heaven@gmail](xmpp:heaven@gmail.com)_  
 
+snarfed.org runs on [PyBlosxom](http://pyblosxom.sf.net/) and
+[Apache](http://httpd.apache.org/), with a custom PyBlosxom
+[flavour](/space/snarfed.org+PyBlosxom+flavour) and
+[plugins](/space/software). snarfed.org is hosted at
+[pair.com](http://pair.com/) on a
+[shared FreeBSD server](http://pair.com/services/web_hosting/).
+
+snarfed.org _used_ to run on
+[SnipSnap](http://snipsnap.org/), on a
+[Linux VPS](http://jvds.com/linux.php) at
+[JVDS](http://jvds.com/).
