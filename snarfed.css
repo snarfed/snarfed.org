@@ -7,7 +7,7 @@ body {
   font-family: helvetica, verdana, arial, sans-serif;
   line-height: 1.3em;
   color: #222;
-  background-color: #DDD;
+  background-color: #EEE;
   margin: 0em;
   padding: .5em;
 }
@@ -23,8 +23,8 @@ div#page-title {
   height: 65px;
   width: 35em;
   max-width: 35em;
-  margin-left: .5em;
-  margin-top: .5em;
+  margin-left: .2em;
+  margin-top: .2em;
   padding: 1em;
   border-bottom: .75em solid #036;
   color: #036;
@@ -38,7 +38,7 @@ div#page-content {
   width: 28.5em;
   max-width: 28.5em;
   margin: 0em;
-  margin-left: .5em;
+  margin-left: .2em;
   padding: .5em;
   padding-left: 8em;
   background-color: #FFF;
@@ -49,9 +49,9 @@ div#sidebar
   position: absolute;
   width: 6em;
   max-width: 7em;
-  left: 1em;
+  left: .7em;
   padding: .67em;
-  background-color: #DDD;
+  background-color: #EEE;
   color: #000;
   border: 1px solid #036;
   border-top: none;
@@ -166,14 +166,14 @@ div.comment-content {
   margin-left: 1.5em;
 }
 
-div#ryan {
-  background-color: #DDD;
+div#ryan, div#Ryan {
+  background-color: #EEE;
   border: 1px solid #8AD;
   -moz-border-radius: 1em;
 }
 
 div.preview {
-  background-color: #DDD;
+  background-color: #EEE;
   border: 1px dashed #8AD;
   -moz-border-radius: 1em;
 }
@@ -195,7 +195,7 @@ blockquote {  font-style: italic; }
 pre {
   margin: .3em;
   padding: .3em;
-  background-color: #DDD;
+  background-color: #EEE;
   border: 1px dotted #036;
   font-family: courier, courier new, monospace;
   line-height: 100%;
@@ -230,5 +230,5 @@ h3.index {
 }
 
 tr.index-row-stripe-1 {
-  background-color: #DDD;
+  background-color: #EEE;
 }
