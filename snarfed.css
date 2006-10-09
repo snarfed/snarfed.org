@@ -4,7 +4,7 @@
  */
 
 body {
-  font-family: helvetica, sans-serif;
+  font-family: helvetica, verdana, arial, sans-serif;
   line-height: 1.3em;
   color: #222;
   background-color: #DDD;
@@ -28,6 +28,10 @@ div#page-title {
   padding: 1em;
   border-bottom: .75em solid #036;
   color: #036;
+}
+
+div#page-title h1 {
+  font-size: 1.5em;
 }
 
 div#page-content {
@@ -76,7 +80,7 @@ a:focus   { color: #07D; }
 /*#a:active { color: #6CF; }*/
 
 input, select, textarea {
-  font-family: verdana, arial, sans-serif;
+  font-family: helvetica, verdana, arial, sans-serif;
   border: 1px solid #036;
   margin-top: .5em;
   padding-left: .2em;
@@ -128,7 +132,8 @@ table {
 
 .buttons {
   float: right;
-  font-size: .67em;
+  font-size: .8em;
+  letter-spacing: -.05em;
   text-align: right;
 }
 
