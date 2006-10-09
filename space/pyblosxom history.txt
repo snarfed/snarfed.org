@@ -17,6 +17,8 @@ already exist, either in a version control system, database, or another form.
 This plugin just uses that backend to display change history, previous
 versions of entries, and textual diffs for changes.
 
+As an example, you can see the
+[change history for this page](?history=1).
 
 ### Version Control Backends
 
