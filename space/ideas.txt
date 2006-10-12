@@ -1,11 +1,25 @@
 ideas
 [![/space/thought_bubble.jpg](/space/thought_bubble.jpg)](/space/ideas)
 
-I have lots of ideas
-for projects I'd like to work on. I can't pretend that they're particularly
-_good_ ideas, but it seems like a waste to just forget about them. So, here they
-are!
+I've worked on a [number of software projects](/space/software), but I have
+lots more ideas for projects I'd _like_ to work on. I can't pretend that
+they're particularly good ideas, but it seems like a waste to just forget about
+them. So, here they are!
 
+  * Fix a [bug](http://www.mail-archive.com/wget%40sunsite.dk/msg09351.html)
+in [wget](http://wget.sunsite.dk/) that prevents `--html-extension` and
+`--convert-links` from playing nicely together.
+
+  * Write an [OpenID](http://openid.net/) plugin for
+[PyBlosxom](http://pyblosxom.sf.net/).
+
+  * Write a [Google Ajax Search API](http://code.google.com/apis/ajaxsearch/)
+plugin for [PyBlosxom](http://pyblosxom.sf.net/).
+
+  * Add support for
+[comments](http://pyblosxom.sourceforge.net/blog/registry/input/comments) to
+the [photogallery](/space/photogallery) plugin for
+[PyBlosxom](http://pyblosxom.sf.net/).
 
   * **Phone transcripts!** Record all of your phone conversations, then
 transcribe them with speech recognition. Bonus points: index the transcripts and
