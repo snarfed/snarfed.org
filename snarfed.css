@@ -32,7 +32,12 @@ div#page-title {
 
 div#page-title h1 {
   font-size: 1.5em;
+  font-weight: normal;
 }
+
+div#page-title a { text-decoration: none; }
+div#page-title a:visited { color: #036; }
+div#page-title a:hover, a:focus { color: #07D; }
 
 div#page-content {
   width: 28.5em;
@@ -68,15 +73,15 @@ img {
 }
 
 a {
-  text-decoration: none;
-  font-weight: bold;
   color: #036;
 }
 
 a:link    { color: #036; }
 a:visited { color: #467; }
-a:hover   { color: #07D; }
-a:focus   { color: #07D; }
+a:hover, a:focus {
+  color: #07D; 
+  text-decoration: none;
+}
 /*#a:active { color: #6CF; }*/
 
 input, select, textarea {
