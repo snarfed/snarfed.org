@@ -74,6 +74,7 @@ img {
 
 a {
   color: #036;
+  text-decoration: underline;
 }
 
 a:link    { color: #036; }
@@ -149,6 +150,10 @@ table {
 .post-comments {
   margin-top: 1.5em;
   margin-bottom: 1.5em;
+}
+
+div.content {
+  margin-bottom: 2em;
 }
 
 div.comment {
