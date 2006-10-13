@@ -1,0 +1,1 @@
+../pyblosxom/plugins/ajax_search.js
