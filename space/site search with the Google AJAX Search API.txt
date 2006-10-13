@@ -49,6 +49,7 @@ The search results are placed in divs with distinct classes, so you can style
 them with CSS. Here are the classes:
 
     gsc-title
+    gsc-back
    
     gs-result
      |- gs-title
@@ -61,13 +62,16 @@ them with CSS. Here are the classes:
      |- gsc-branding-img-noclear
 
 The [AJAX Search API stylesheet](http://www.google.com/uds/css/gsearch.css)
-has more details. As an example, this CSS recreates the style used on
-[google.com](http://google.com/):
+has more details. As an example, this is the CSS used on this site. It's
+similar to the [google.com](http://google.com/) style.
 
-    div.gs-result     { margin-top: 1em; }
-    div.gs-title      { text-decoration: underline; }
-    div.gs-visibleUrl { color: green; }
-    div.gs-watermark  { display: none; }
+    div.gs-result        { margin-top: 1em; }
+    div.gs-title         { text-decoration: underline; }
+    div.gs-visibleUrl    { color: green; }
+    div.gs-watermark     { display: none; }
+    div.gsc-back         { float: right; }
+    table.gsc-branding   { border: none; }
+    td.gsc-branding-text { color: gray; }
 
 Happy AJAX searching!
 
