@@ -1,0 +1,67 @@
+site search with the Google AJAX Search API
+
+<table><tr><td>
+<img src="/space/ajax.jpg">
+</td><td style="vertical-align: center">
+<a href="http://code.google.com/"><img src="/space/google_code.png" /></a>
+</td></tr></table>
+
+[ajax\_search.js](/ajax_search.js) uses the
+[Google AJAX Search API](http://code.google.com/apis/ajaxsearch/signup.html)
+to do site search. It's similar to Google's
+[existing site search](http://services.google.com/searchcode2.html?accept=on#both),
+except that it shows the results within _your_ site, not Google's. It also
+degrades gracefully, by falling back to standard Google site search over HTTP
+for users who don't have JavaScript.
+<a onclick="new site_search('snarfed.org', 'ajax');">Try it out!</a>
+
+To use this on your site, first
+[apply for an AJAX Search API key](http://code.google.com/apis/ajaxsearch/signup.html).
+Then, place [ajax\_search.js](/ajax_search.js) on your server and the
+following HTML on your page:
+
+    <form class="form" method="get" action="http://www.google.com/search"
+      onsubmit="new site_search('[YOUR_DOMAIN]', q.value); return false;">
+      <input type="hidden" name="sitesearch" value="snarfed.org" />
+      <input type="text" name="q" id="query" value="Search" />
+    </form>
+   
+    <script type="text/javascript"
+       src="http://www.google.com/uds/api?file=uds.js&v=1.0&key=[YOUR_KEY]">
+    </script>
+    <script type="text/javascript" src="[PATH]/ajax_search.js"></script>
+
+Replace `[YOUR_KEY]`, `[YOUR_DOMAIN]`, and `[PATH]` with your AJAX Search API
+key, your site's domain, and the path to `ajax_search.js` on your server,
+respectively.
+
+Finally, set the `results_div_id` variable in `ajax_search.js` to the id of an
+div where you want search results to be placed. This div will be deleted and
+recreated when a search is performed. You can also customize `results_header`,
+`results_footer`, and `searching_message`, if you want.
+
+The search results are placed in divs with distinct classes, so you can style
+them with CSS. Here are the classes:
+
+    gsc-title
+   
+    gs-result
+     |- gs-title
+     |- gs-snippet
+     |- gs-visibleUrl
+     |- gs-watermark
+   
+    gsc-branding
+     |- gsc-branding-text
+     |- gsc-branding-img-noclear
+
+The [AJAX Search API stylesheet](http://www.google.com/uds/css/gsearch.css)
+has more details. As an example, this CSS recreates the style used on
+[google.com](http://google.com/):
+
+    div.gs-result     { margin-top: 1em; }
+    div.gs-title      { text-decoration: underline; }
+    div.gs-visibleUrl { color: green; }
+    div.gs-watermark  { display: none; }
+
+Happy AJAX searching!
