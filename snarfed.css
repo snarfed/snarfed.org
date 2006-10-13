@@ -244,6 +244,7 @@ tr.index-row-stripe-1 {
   background-color: #EEE;
 }
 
+div.gsc-back      { float: right; }
 div.gs-result     { margin-top: 1em; }
 div.gs-title      { text-decoration: underline; }
 div.gs-visibleUrl { color: green; }
@@ -254,15 +255,11 @@ div.gs-snippet {
   letter-spacing: -.05em;
 }
 
-table.gsc-branding {
-  border: none;
-  width: 100%;
-}
+table.gsc-branding   { border: none; }
+td.gsc-branding-text { color: gray; }
 
-td.gsc-branding-text {
-  text-align: right;
-  color: gray;
+td.gsc-branding-img-noclear {
+  padding-left: 2px;
+  padding-top: 5px;
 }
-
-td.gsc-branding-img-noclear { width: 65px; }
-img.gsc-branding-img-noclear { margin-bottom: -5px; }
+img.gsc-branding-img-noclear { margin-bottom: -3px; }

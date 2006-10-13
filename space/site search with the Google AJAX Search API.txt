@@ -6,6 +6,8 @@ site search with the Google AJAX Search API
 <a href="http://code.google.com/"><img src="/space/google_code.png" /></a>
 </td></tr></table>
 
+_Updated 2006-10-13._
+
 [ajax\_search.js](/ajax_search.js) uses the
 [Google AJAX Search API](http://code.google.com/apis/ajaxsearch/signup.html)
 to do site search. It's similar to Google's
@@ -16,7 +18,7 @@ for users who don't have JavaScript.
 
 You can [check out the JavaScript](/ajax_search.js), or
 <a href="#" onclick="new site_search('snarfed.org', 'ajax');">try it out</a>
-right now! But heads up, the back button doesn't work. Blame AJAX.
+right now! But heads up, your browser's back button won't work. Blame AJAX.
 
 To use this on your site, first
 [apply for an AJAX Search API key](http://code.google.com/apis/ajaxsearch/signup.html).
