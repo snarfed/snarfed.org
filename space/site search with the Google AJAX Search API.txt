@@ -68,3 +68,13 @@ has more details. As an example, this CSS recreates the style used on
     div.gs-watermark  { display: none; }
 
 Happy AJAX searching!
+
+[ajax\_search.js](/ajax_search.js) is copyright 2006 [Ryan
+Barrett](/space/contact), and is distributed under the
+[GPL](http://www.gnu.org/licenses/gpl.html).
+
+See also:
+  * [pyblosxom ajax comments](/space/pyblosxom ajax comments)
+  * [software](/space/software)
+  * [ideas](/space/ideas)
+  * [migrating to pyblosxom](/space/2006-08-23)
