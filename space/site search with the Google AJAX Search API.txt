@@ -13,7 +13,10 @@ to do site search. It's similar to Google's
 except that it shows the results within _your_ site, not Google's. It also
 degrades gracefully, by falling back to standard Google site search over HTTP
 for users who don't have JavaScript.
-<a onclick="new site_search('snarfed.org', 'ajax');">Try it out!</a>
+
+You can
+<a href="#" onclick="new site_search('snarfed.org', 'ajax');">try it out</a>
+right now! But heads up, the back button doesn't work. Blame AJAX.
 
 To use this on your site, first
 [apply for an AJAX Search API key](http://code.google.com/apis/ajaxsearch/signup.html).
