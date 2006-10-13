@@ -1,0 +1,24 @@
+Site search with the Google AJAX Search API
+
+<table><tr><td>
+<img src="/space/ajax.jpg">
+</td><td style="vertical-align: center">
+<a href="http://code.google.com/"><img src="/space/google_code.png" /></a>
+</td></tr></table>
+
+I've just posted
+[AJAX site search](/space/site+search+with+the+Google+AJAX+Search+API),
+a JavaScript library that uses the
+[Google AJAX Search API](http://code.google.com/apis/ajaxsearch/signup.html)
+to do site search. It's similar to Google's
+[existing site search](http://services.google.com/searchcode2.html?accept=on#both),
+except that it shows the results within _your_ site, not Google's. It also
+degrades gracefully, by falling back to standard Google site search over HTTP
+for users who don't have JavaScript.
+
+You can [check out the JavaScript](/ajax_search.js), or just
+<a href="#" onclick="new site_search('snarfed.org', 'ajax');">try it out</a>
+right now! But heads up, the back button doesn't work. Blame AJAX.
+
+[Read more...](/space/site+search+with+the+Google+AJAX+Search+API)
+

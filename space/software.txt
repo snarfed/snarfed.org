@@ -8,7 +8,7 @@ is [GPL](http://www.gnu.org/licenses/gpl.html)ed.
 <a name="projects"></a>
 ### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](#projects)
 
-  * [Site search with the Google AJAX Search API](/space/site+search+with+the+Google+AJAX+Search+API).
+  * [AJAX site search with the Google AJAX Search API](/space/site+search+with+the+Google+AJAX+Search+API).
 
   * [index](/space/pyblosxom+index) is a [PyBlosxom](http://pyblosxom.sf.net/)
 plugin that displays an alphabetical index of all entries.
