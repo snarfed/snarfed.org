@@ -3,7 +3,7 @@ pyblosxom ajax comments
 ![ajax](/space/ajax.jpg)
 
 For the impatient:  
-&nbsp; [Download comments-1.3.0e.tar.gz](/space/comments-1.3.0e.tar.gz) (with AJAX support)  
+&nbsp; [Download comments-1.3.0f.tar.gz](/space/comments-1.3.0f.tar.gz) (with AJAX support)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
 &nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)
 
@@ -33,25 +33,20 @@ AJAX comment support requires a few elements in the comment-form flavour
 template. Specifically, the comment-anchor tag must be the first thing in the
 template:
 
-    <a name="comment-anchor" id="comment-anchor" />
+    <a name="comment-anchor" id="comment-anchor"></a>
 
-Also, there should be _two_ sets of preview and post buttons in the form.
-They're needed for the fallback to HTTP POST for non-JavaScript browsers. They
-should have these exact type, id, and onclick attributes:
+Also, the buttons in the comment form should include these onsubmit and
+onclick attributes:
 
-    <!-- these use plain HTTP POST, for browsers without JavaScript -->
-    <input value="Preview" name="preview" type="submit" id="preview-post" />
-    <input value="Post" name="post" type="submit" id="post-post" />
-    <!-- these use AJAX -->
-    <input value="Preview" name="preview-ajax" type="button" id="preview-ajax"
-           style="display: none" onclick="javascript:send_comment('preview');" />
-    <input value="Post" name="post-ajax" type="button" id="post-ajax"
-           style="display: none" onclick="javascript:send_comment('post');" />
+    <form name="comments_form" ... onsubmit="return false;">
+      <input value="Preview" name="preview" type="submit"
+             onclick="javascript:send_comment('preview');" />
+      <input value="Submit" name="submit" type="submit"
+             onclick="javascript:send_comment('post');" />
 
 Finally, this script tag must be included somewhere after the `</form>` tag:
 
-    <script type="text/javascript" src="/comments.js" />
-    <script></script>  <!-- needed for IE -->
+    <script type="text/javascript" src="/comments.js"></script>
 
 All of these tags are included in the default comment-form template that comes
 with this plugin.
