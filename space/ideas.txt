@@ -6,6 +6,10 @@ lots more ideas for projects I'd _like_ to work on. I can't pretend that
 they're particularly good ideas, but it seems like a waste to just forget about
 them. So, here they are!
 
+  * [Mock out](http://en.wikipedia.org/wiki/Mock_Object) the
+[Google Ajax Search API](http://code.google.com/apis/ajaxsearch/) for offline
+development and testing. Use failure injection, etc. to determine behavior.
+
   * Fix a [bug](http://www.mail-archive.com/wget%40sunsite.dk/msg09351.html)
 in [wget](http://wget.sunsite.dk/) that prevents `--html-extension` and
 `--convert-links` from playing nicely together.
@@ -14,7 +18,8 @@ in [wget](http://wget.sunsite.dk/) that prevents `--html-extension` and
 [PyBlosxom](http://pyblosxom.sf.net/).
 
   * Write a [Google Ajax Search API](http://code.google.com/apis/ajaxsearch/)
-plugin for [PyBlosxom](http://pyblosxom.sf.net/).
+plugin for [PyBlosxom](http://pyblosxom.sf.net/). **\[_Done! See
+[site search with the Google AJAX Search API](/space/site search with the Google AJAX Search API)._]**
 
   * Add support for
 [comments](http://pyblosxom.sourceforge.net/blog/registry/input/comments) to
