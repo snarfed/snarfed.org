@@ -216,14 +216,14 @@ that provide app- or protocol-specific heuristics.
 
   * Add an _xfn:_ operator to Google for searching [XFN](http://gmpg.org/xfn/)
 links, similar to the way the _site:_ operator searches specific sites.
-**_[Done! See [RubHub](http://rubhub.com/) and
+**_\[Done! See [RubHub](http://rubhub.com/) and
 [XhtmlFriends](http://xhtmlfriends.net/). They're not Google, but they're good
 enough.]_**
 
   * Build a "reverse" dashboard. It would take a piece of unstructured
 information (URL, email address, aim screen name, ICQ UIN, code snippet) and "do
 the right thing" with it (open a browser, compose an email, send an IM, compile,
-etc.). **_[Done! The [Google Toolbar](http://toolbar.google.com/) does this.
+etc.). **_\[Done! The [Google Toolbar](http://toolbar.google.com/) does this.
 Most snippets of interest come from email or web pages, and since most people
 use web-based email, it covers the common case.]_**
 
