@@ -1,0 +1,57 @@
+pyblosxom openid server
+
+[![openid](/space/openid-logo.png)](http://openid.net/)
+[![pyblosxom](/space/pyblosxom.png)](http://pyblosxom.sf.net/)
+
+For the impatient: <br />
+&nbsp; [Download openid_server.py](/space/openid_server.py)  
+&nbsp; [Download openid_server-0.1.tar.gz](/space/openid_server-0.1.tar.gz)  
+&nbsp; [Download openid_yadis_urljr_libs.par](/space/openid_yadis_urljr_libs.par)  
+&nbsp; [OpenID home page](http://openid.net/)  
+&nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
+&nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)  
+
+[openid_server.py](/space/openid_server.py) is a
+[PyBlosxom](http://pyblosxom.sf.net/) plugin that implements
+[OpenID](http://openid.net/) 1.1. OpenID allows you to prove that you own your
+site - for example, when you post comments on other sites.
+
+Specifically, this plugin acts as an an OpenID
+[Identifer]() and
+[Identity Provider]().
+It provides an
+[endpoint URL](), handles OpenID requests on that endpoint, allows
+[associations](), and authenticates the user with an HTML form.
+
+To use it, first add this line to your flavour's head template:
+
+    <link rel="openid.server" href="$base_url$openid_trigger">
+
+If you want to use SSL, hard-code your base url, like so:
+
+    <link rel="openid.server" href="https://snarfed.org$openid_trigger">
+
+Then, add the `openid_password` (required) and `openid_trigger` (optional)
+config variables to your `config.py`:
+
+    py['openid_password'] = 'topsecret!'
+    py['openid_trigger'] = '/openid'
+
+Default HTML is included for the endpoint info, login form, and error page,
+but you can override them by adding `openid-info`, `openid-login`, and
+`openid-error` templates for your flavour of choice. Example templates for the
+html flavour are included in
+[openid_server-0.1.tar.gz](/space/openid_server-0.1.tar.gz).
+
+
+openid_server.py is copyright 2006 [Ryan Barrett](/space/contact), and is
+distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
+
+See also:
+  * [pyblosxom ajax comments](/space/pyblosxom+ajax+comments)
+  * [windows p2p](/space/windows+p2p)
+  * [pyblosxom index](/space/pyblosxom+index)
+  * [pyblosxom history](/space/pyblosxom+history)
+  * [photogallery](/space/photogallery)
+  * [hardcodedates](/space/hardcodedates)
+  * [filekicker](/space/filekicker)
