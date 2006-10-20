@@ -13,9 +13,9 @@ For the impatient: <br />
 [openid_server.py](/space/openid_server.py) is a
 [PyBlosxom](http://pyblosxom.sf.net/) plugin that implements
 [OpenID](http://openid.net/) 1.1. OpenID is a distributed authentication
-protocol, ie a single sign on platform, that uses URLs as identifiers. It
-allows you to prove your identity to other sites - to post comments, for
-example - by logging into your own site.
+protocol, ie a single sign on platform, that uses URLs as identifiers. If you
+have a PyBlosxom site, this plugin allows you to login anywhere that accepts
+OpenID.
 
 In OpenID terminology, this plugin acts as an an 
 [Identifer](http://openid.net/specs/openid-authentication-1_1.html#anchor2) and
