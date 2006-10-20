@@ -4,41 +4,63 @@ pyblosxom openid server
 [![pyblosxom](/space/pyblosxom.png)](http://pyblosxom.sf.net/)
 
 For the impatient: <br />
-&nbsp; [Download openid_server.py](/space/openid_server.py)  
-&nbsp; [Download openid_server-0.1.tar.gz](/space/openid_server-0.1.tar.gz)  
-&nbsp; [Download openid_yadis_urljr_libs.par](/space/openid_yadis_urljr_libs.par)  
+&nbsp; Download [openid\_server.py](/space/openid_server.py) or
+[openid\_server-0.1.tar.gz](/space/openid_server-0.1.tar.gz)  
+&nbsp; Download [openid\_libs.zip](/space/openid_libs.zip)  
 &nbsp; [OpenID home page](http://openid.net/)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
-&nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)  
 
 [openid_server.py](/space/openid_server.py) is a
 [PyBlosxom](http://pyblosxom.sf.net/) plugin that implements
-[OpenID](http://openid.net/) 1.1. OpenID allows you to prove that you own your
-site - for example, when you post comments on other sites.
+[OpenID](http://openid.net/) 1.1. OpenID is a distributed authentication
+protocol, ie a single sign on platform, that uses URLs as identifiers. It
+allows you to prove your identity to other sites - to post comments, for
+example - by logging into your own site.
 
-Specifically, this plugin acts as an an OpenID
-[Identifer]() and
-[Identity Provider]().
+In OpenID terminology, this plugin acts as an an 
+[Identifer](http://openid.net/specs/openid-authentication-1_1.html#anchor2) and
+[Identity Provider](http://openid.net/specs/openid-authentication-1_1.html#anchor2).
 It provides an
-[endpoint URL](), handles OpenID requests on that endpoint, allows
-[associations](), and authenticates the user with an HTML form.
+[endpoint URL](http://openid.net/specs/openid-authentication-1_1.html#anchor2),
+handles OpenID requests on that endpoint, allows
+[associations](http://openid.net/specs/openid-authentication-1_1.html#mode_associate),
+and authenticates the user with an HTML form.
 
-To use it, first add this line to your flavour's head template:
+To use it, first download
+[openid_server.py](/space/openid_server.py) and
+[openid\_libs.zip](/space/openid_libs.zip)
+and place them both in your plugins directory. (`openid_libs.zip` is a
+convenient, drop-in package of necessary libraries, provided by
+[JanRain](http://janrain.com/),
+[Yadis](http://yadis.org/), and others. If you don't trust me - and why should
+you? - feel free to
+[build and install them yourself](http://www.openidenabled.com/openid/libraries/python).)
 
-    <link rel="openid.server" href="$base_url$openid_trigger">
+Then, add this line to your flavour's head template:
+
+    <link rel="openid.server"
+          href="$base_url$openid_trigger">
 
 If you want to use SSL, hard-code your base url, like so:
 
-    <link rel="openid.server" href="https://snarfed.org$openid_trigger">
+    <link rel="openid.server"
+          href="https://snarfed.org$openid_trigger">
 
-Then, add the `openid_password` (required) and `openid_trigger` (optional)
+Finally, add the `openid_password` (required) and `openid_trigger` (optional)
 config variables to your `config.py`:
 
     py['openid_password'] = 'topsecret!'
     py['openid_trigger'] = '/openid'
 
-Default HTML is included for the endpoint info, login form, and error page,
-but you can override them by adding `openid-info`, `openid-login`, and
+Et voila! You should be good to go. Try it out on a friendly neighborhood
+OpenID-enabled blog near you, like maybe
+[Scott Kveton](http://kveton.com/blog/)'s.
+
+Default HTML is included for the endpoint, login, and error pages. For your
+CSS styling pleasure, it uses divs with the classes `openid-info`,
+`openid-login`, and `openid-error`.
+
+You can override the default HTML by adding `openid-info`, `openid-login`, and
 `openid-error` templates for your flavour of choice. Example templates for the
 html flavour are included in
 [openid_server-0.1.tar.gz](/space/openid_server-0.1.tar.gz).
