@@ -6,6 +6,12 @@ lots more ideas for projects I'd _like_ to work on. I can't pretend that
 they're particularly good ideas, but it seems like a waste to just forget about
 them. So, here they are!
 
+  * Write gateways between identity platforms like
+[OpenID](http://openid.net/),
+Yahoo's [BBAuth](http://developer.yahoo.com/auth/),
+Microsoft's [CardSpace](http://cardspace.netfx3.com/)
+(see [OSIS](http://osis.netmesh.org/)), and others, so they can interoperate.
+
   * [Mock out](http://en.wikipedia.org/wiki/Mock_Object) the
 [Google Ajax Search API](http://code.google.com/apis/ajaxsearch/) for offline
 development and testing. Use failure injection, etc. to determine behavior.
