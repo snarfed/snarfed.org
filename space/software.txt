@@ -8,6 +8,8 @@ is [GPL](http://www.gnu.org/licenses/gpl.html)ed.
 <a name="projects"></a>
 ### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](#projects)
 
+  * An [OpenID server plugin for PyBlosxom](/space/pyblosxom+openid+server).
+
   * [AJAX site search with the Google AJAX Search API](/space/site+search+with+the+Google+AJAX+Search+API).
 
   * [index](/space/pyblosxom+index) is a [PyBlosxom](http://pyblosxom.sf.net/)
