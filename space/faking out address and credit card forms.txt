@@ -29,8 +29,8 @@ always work.
 Here's the list. Feel free to [add to
 it](/comments/faking+out+address+and+credit+card+forms#post)!
 
-  * [1800Flowers](http://1800flowers.com/): zip code must match card; dashes for
-everything else
+  * [1800Flowers](http://1800flowers.com/): zip code must match card, two
+    letters separated by a space for cardholder name; dashes for everything else
 
   * [AllDomains](http://alldomains.com/): pick a US state; dashes for everything
 else
