@@ -263,3 +263,5 @@ td.gsc-branding-img-noclear {
   padding-top: 5px;
 }
 img.gsc-branding-img-noclear { margin-bottom: -3px; }
+
+div.openid-error, div.openid-error a { color: red; }
