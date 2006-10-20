@@ -8,8 +8,9 @@ them. So, here they are!
 
   * Write gateways between identity platforms like
 [OpenID](http://openid.net/),
-Yahoo's [BBAuth](http://developer.yahoo.com/auth/),
-Microsoft's [CardSpace](http://cardspace.netfx3.com/)
+[Google Accounts](http://code.google.com/apis/accounts/Authentication.html),
+[Yahoo BBAuth](http://developer.yahoo.com/auth/),
+[Microsoft CardSpace](http://cardspace.netfx3.com/)
 (see [OSIS](http://osis.netmesh.org/)), and others, so they can interoperate.
 
   * [Mock out](http://en.wikipedia.org/wiki/Mock_Object) the
@@ -26,7 +27,7 @@ in [wget](http://wget.sunsite.dk/) that prevents `--html-extension` and
 
   * Write a [Google Ajax Search API](http://code.google.com/apis/ajaxsearch/)
 plugin for [PyBlosxom](http://pyblosxom.sf.net/). **\[_Done! See
-[site search with the Google AJAX Search API](/space/site search with the Google AJAX Search API)._]**
+[site search with the Google AJAX Search API](/space/site+search+with+the+Google+AJAX+Search+API)._]**
 
   * Add support for
 [comments](http://pyblosxom.sourceforge.net/blog/registry/input/comments) to
