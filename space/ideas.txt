@@ -15,7 +15,8 @@ in [wget](http://wget.sunsite.dk/) that prevents `--html-extension` and
 `--convert-links` from playing nicely together.
 
   * Write an [OpenID](http://openid.net/) plugin for
-[PyBlosxom](http://pyblosxom.sf.net/).
+[PyBlosxom](http://pyblosxom.sf.net/). **\[_Done! See
+[OpenID server plugin for PyBlosxom](/space/pyblosxom+openid+server)._]**
 
   * Write a [Google Ajax Search API](http://code.google.com/apis/ajaxsearch/)
 plugin for [PyBlosxom](http://pyblosxom.sf.net/). **\[_Done! See
