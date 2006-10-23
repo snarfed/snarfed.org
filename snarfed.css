@@ -207,11 +207,10 @@ pre {
   margin: .3em;
   padding: .3em;
   background-color: #EEE;
-  border: 1px dotted #036;
+  border: 1px dashed #036;
   font-family: courier, courier new, monospace;
   line-height: 100%;
   white-space: pre;
-  width: 98%;
   overflow: auto;
 }
 
@@ -265,3 +264,34 @@ td.gsc-branding-img-noclear {
 img.gsc-branding-img-noclear { margin-bottom: -3px; }
 
 div.openid-error, div.openid-error a { color: red; }
+
+/* css drop shadows. stolen from a list apart, among other places:
+ * http://alistapart.com/articles/cssdropshadows/
+ */
+div.img-shadow, div.p-shadow {
+  float:left;  /* so that the div doesn't span the width of the page */
+  background-image: url(/drop_shadow.gif);
+  background-position: bottom right;
+  margin: 6px 0 0 6px;
+}
+
+div.p-shadow {
+  padding-left: 0px !important;  /* for firefox */
+  padding-left: 6px;             /* for ie */
+  padding-top: 1px;
+}
+
+div.img-shadow img, div.p-shadow pre {
+  display: block;
+  position: relative;
+  margin: -6px 6px 6px -6px;
+}
+
+div.img-shadow img {
+  margin: -4px 4px 4px -4px !important;  /* for firefox, it's weird w/imgs */
+}
+
+/* to offset the bottom left of the drop shadow for <pre> blocks in IE */
+div.img-shadow div {
+  padding: 0 6px 6px 0;
+}
