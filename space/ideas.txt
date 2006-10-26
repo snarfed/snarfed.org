@@ -17,6 +17,13 @@ them. So, here they are!
 [Google Ajax Search API](http://code.google.com/apis/ajaxsearch/) for offline
 development and testing. Use failure injection, etc. to determine behavior.
 
+  * [Gaim](http://gaim.sf.net/)'s
+[TOC prpl](http://gaim.sf.net/protocol.php#toc) hasn't been updated for
+[2.0.0](http://sourceforge.net/project/showfiles.php?group_id=235&package_id=253&release_id=456679).
+It doesn't build in any of the beta releases. It should be either brought up to
+date or officially deprecated and removed.
+
+
   * Fix a [bug](http://www.mail-archive.com/wget%40sunsite.dk/msg09351.html)
 in [wget](http://wget.sunsite.dk/) that prevents `--html-extension` and
 `--convert-links` from playing nicely together.
