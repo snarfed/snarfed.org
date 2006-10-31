@@ -6,6 +6,16 @@ lots more ideas for projects I'd _like_ to work on. I can't pretend that
 they're particularly good ideas, but it seems like a waste to just forget about
 them. So, here they are!
 
+  * Improve [tcsh](http://tcsh.org)'s
+[dabbrev-expand](http://www.tcsh.org/tcsh.html/Editor_commands.html#dabbrev-expand)
+and
+[bash](http://www.gnu.org/software/bash/)/[readline](http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html)'s 
+[menu-complete](http://cnswww.cns.cwru.edu/php/chet/readline/rluserman.html#SEC19)
+commands to include the entire contents of the app or shell window's output in
+their index, not just the history of typed commands. This would make them
+similar to
+[dabbrev-expand in Emacs](http://gnu.org/software/emacs/manual/html_node/Dynamic-Abbrevs.html#index-dabbrev_002dexpand-2449).
+
   * Write gateways between identity platforms like
 [OpenID](http://openid.net/),
 [Google Accounts](http://code.google.com/apis/accounts/Authentication.html),
