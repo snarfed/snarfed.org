@@ -21,7 +21,9 @@ similar to
 [Google Accounts](http://code.google.com/apis/accounts/Authentication.html),
 [Yahoo BBAuth](http://developer.yahoo.com/auth/),
 [Microsoft CardSpace](http://cardspace.netfx3.com/)
-(see [OSIS](http://osis.netmesh.org/)), and others, so they can interoperate.
+(see [OSIS](http://osis.netmesh.org/)),
+[Higgins](http://www.eclipse.org/higgins/),
+and others, so they can interoperate.
 
   * [Mock out](http://en.wikipedia.org/wiki/Mock_Object) the
 [Google Ajax Search API](http://code.google.com/apis/ajaxsearch/) for offline
