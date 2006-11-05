@@ -272,7 +272,7 @@ div.img-shadow, div.p-shadow {
   float:left;  /* so that the div doesn't span the width of the page */
   background-image: url(/drop_shadow.gif);
   background-position: bottom right;
-  margin: 6px 0 0 6px;
+  margin: 6px 0 0 4px;
 }
 
 div.p-shadow {
