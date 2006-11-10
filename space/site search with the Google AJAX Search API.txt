@@ -27,7 +27,7 @@ following HTML on your page:
 
     <form class="form" method="get" action="http://www.google.com/search"
       onsubmit="new site_search('[YOUR_DOMAIN]', q.value); return false;">
-      <input type="hidden" name="sitesearch" value="snarfed.org" />
+      <input type="hidden" name="sitesearch" value="[YOUR_DOMAIN]" />
       <input type="text" name="q" id="query" value="Search" />
     </form>
    
