@@ -243,16 +243,19 @@ tr.index-row-stripe-1 {
   background-color: #EEE;
 }
 
-div.gsc-back      { float: right; }
-div.gs-result     { margin-top: 1em; }
-div.gs-title      { text-decoration: underline; }
-div.gs-visibleUrl { color: green; }
-div.gs-watermark  { display: none; }
+div.gsc-back           { float: right; }
+div.gs-result          { margin-top: 1em; }
+div.gs-title           { text-decoration: underline; }
+div.gs-visibleUrl      { color: green; }
+div.gs-visibleUrl-long { display: none; }
+div.gs-watermark       { display: none; }
 
 div.gs-snippet {
   font-size: .8em;
   letter-spacing: -.05em;
 }
+
+div.gs-snippet br { display: none; }
 
 table.gsc-branding   { border: none; }
 td.gsc-branding-text { color: gray; }
