@@ -9,6 +9,10 @@ distributed authentication protocol, ie a single sign on platform, that uses
 URLs as identifiers. It allows you to prove your identity to other sites - to
 post comments, for example - by logging into your own site.
 
+This plugin also implements the Simple Registration Extension, which lets you
+optionally provide your name, email address, and other information
+automatically to sites that you log into with OpenID.
+
 For more on OpenId, see http://openid.net/.
 
 In OpenID terminology,, this plugin acts as an an OpenID Identifer and Identity
@@ -38,6 +42,20 @@ config variables to your `config.py`:
 Et voila! You should be good to go. Try it out on, for example,
 http://kveton.com/blog/.
 
+You can also provide your name, email address, and other information so that
+they'll be available to sites that you log into with OpenID. Just fill in any
+of these config variables in `config.py`:
+
+  py['openid_nickname'] = 'ryan'
+  py['openid_email'] = 'ryan'
+  py['openid_fullname'] = 'Ryan Barrett'
+  py['openid_dob'] = '1901-01-01'                # YYYY-MM-DD
+  py['openid_gender'] = 'M'                      # M or F
+  py['openid_postcode'] = '90001'
+  py['openid_country'] = 'US'                    # an ISO-3166 country code
+  py['openid_language'] = 'EN-us'                # an ISO-639 language code
+  py['openid_timezone'] = 'America/Los_Angeles'  # from the tz database
+
 Currently, only one user is supported. Also, currently, this plugin does *not*
 act as an OpenId client to authenticate comments made on your site. It only
 acts as an OpenId Identity Provider, to authenticate you when you comment on
@@ -49,7 +67,7 @@ CSS styling pleasure, it uses divs with the classes `openid-info`,
 
 You can override the default HTML by adding `openid-info`, `openid-login`, and
 `openid-error` templates for your flavour of choice. Example templates for the
-html flavour are included in openid_server-0.1.tar.gz.
+html flavour are included in openid_server-0.2.tar.gz.
 
 
 This program is free software; you can redistribute it and/or modify it under
@@ -64,7 +82,7 @@ details.
 """
 
 __author__ = 'Ryan Barrett <pyblosxom at ryanb dot org>'
-__version__ = '0.1'
+__version__ = '0.2'
 __url__ = 'http://snarfed.org/space/pyblosxom+openid+server'
 __description__  = 'Implements OpenID 1.1 (http://openid.net/)'
 
@@ -140,8 +158,16 @@ def FieldStorage_to_dict(form):
 
 
 def respond(request, oidresponse):
+  config = request.getConfiguration()
   response = request.getResponse()
   data = request.getData()
+
+  # add extra fields with Simple Registration Extension:
+  # http://www.openidenabled.com/openid/simple-registration-extension/
+  for field in ['nickname', 'email', 'fullname', 'dob', 'gender', 'postcode',
+                'country', 'language', 'timezone']:
+    if config.has_key('openid_%s' % field):
+      response.addField('sreg', field, config['openid_%s' % field])
 
   try:
     webresponse = oidserver.encodeResponse(oidresponse)

@@ -5,10 +5,12 @@ pyblosxom openid server
 
 For the impatient: <br />
 &nbsp; Download [openid\_server.py](/space/openid_server.py) or
-[openid\_server-0.1.tar.gz](/space/openid_server-0.1.tar.gz)  
+[openid\_server-0.2.tar.gz](/space/openid_server-0.2.tar.gz)  
 &nbsp; Download [openid\_libs.zip](/space/openid_libs.zip)  
 &nbsp; [OpenID home page](http://openid.net/)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
+
+*Updated 2006-11-12.*
 
 [openid_server.py](/space/openid_server.py) is a
 [PyBlosxom](http://pyblosxom.sf.net/) plugin that implements
@@ -16,6 +18,12 @@ For the impatient: <br />
 protocol, ie a single sign on platform, that uses URLs as identifiers. If you
 have a PyBlosxom site, this plugin allows you to login anywhere that accepts
 OpenID.
+
+This plugin also implements the
+[Simple Registration
+Extension](http://www.openidenabled.com/openid/simple-registration-extension),
+which lets you optionally provide your name, email address, and other
+information automatically to sites that you log into with OpenID.
 
 In OpenID terminology, this plugin acts as an an 
 [Identifer](http://openid.net/specs/openid-authentication-1_1.html#anchor2) and
@@ -56,6 +64,22 @@ Et voila! You should be good to go. Try it out on a friendly neighborhood
 OpenID-enabled blog near you, like maybe
 [Scott Kveton](http://kveton.com/blog/)'s.
 
+You can also provide your name, email address, and other information to sites
+that you log into with OpenID, using the
+[Simple Registration
+Extension](http://www.openidenabled.com/openid/simple-registration-extension).
+Just fill in any of these config variables in `config.py`:
+
+    py['openid_nickname'] = 'ryan'
+    py['openid_email'] = 'ryan'
+    py['openid_fullname'] = 'Ryan Barrett'
+    py['openid_dob'] = '1901-01-01'
+    py['openid_gender'] = 'M'
+    py['openid_postcode'] = '90001'
+    py['openid_country'] = 'US'
+    py['openid_language'] = 'EN-us'
+    py['openid_timezone'] = 'America/Los_Angeles'
+
 Default HTML is included for the endpoint, login, and error pages. For your
 CSS styling pleasure, it uses divs with the classes `openid-info`,
 `openid-login`, and `openid-error`.
@@ -63,7 +87,7 @@ CSS styling pleasure, it uses divs with the classes `openid-info`,
 You can override the default HTML by adding `openid-info`, `openid-login`, and
 `openid-error` templates for your flavour of choice. Example templates for the
 html flavour are included in
-[openid_server-0.1.tar.gz](/space/openid_server-0.1.tar.gz).
+[openid_server-0.2.tar.gz](/space/openid_server-0.2.tar.gz).
 
 
 openid_server.py is copyright 2006 [Ryan Barrett](/space/contact), and is
