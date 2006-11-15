@@ -122,10 +122,23 @@ adds an option to automatically remove trailing quotes from outgoing emails.
   * [Pine delete attachments on save patch](/space/pine delete attachments on save patch) adds an option to delete attachments from messages when you save
 them.
 
-  * [Gaim accelerators in away menus
-patch](http://sourceforge.net/tracker/index.php?func=detail&aid=1031098&group_id=235&atid=300235)
-fixes [Gaim](http://gaim.sf.net/)'s GTK menu code to allow accelerators in
+  * [Gaim chat\_invite patch](/space/gaim_2_chat_invite_reverse_params.patch)
+([tracker](https://sourceforge.net/tracker/index.php?func=detail&aid=1595831&group_id=235&atid=300235))
+fixes a
+[parameter ordering bug](https://sourceforge.net/tracker/index.php?func=detail&aid=1595828&group_id=235&atid=100235)
+in [Gaim 2.x](http://gaim.sf.net/)'s
+[GaimPluginProtocolInfo::chat_invite](http://gaim.sourceforge.net/api/struct__GaimPluginProtocolInfo.html#a3ea6e94a223c32ba8814aec326f02a5)
+callback member.
+
+  * [Gaim accelerators in away menus patch](/space/gaim_1_away_menu_accelerators.patch)
+([tracker](http://sourceforge.net/tracker/index.php?func=detail&aid=1031098&group_id=235&atid=300235))
+fixes [Gaim 1.x](http://gaim.sf.net/)'s GTK menu code to allow accelerators in
 dynamically created menus, such as away message menus.
+
+  * Similarly, [Gaim accelerators in accounts submenus patch](/space/gaim_2_accounts_menu_accels.patch)
+([tracker](https://sourceforge.net/tracker/index.php?func=detail&aid=1597271&group_id=235&atid=300235))
+fixes [Gaim 2.x](http://gaim.sf.net/)'s GTK menu code to allow accelerators in
+the dynamically created submenus of the Accounts menu.
 
   * [SnipSnap comment without login patch](/space/snipsnap comment without login patch) allows visitors to post comments without logging in.
 
