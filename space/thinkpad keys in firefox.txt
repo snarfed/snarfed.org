@@ -41,16 +41,16 @@ the browser.jar file like so:
 Fire up your favorite text editor and open the content/browser/browser.xul file.
 In the **<keyset id="mainKeyset">** section, find these lines:
 
-    <key id="goBackKb"  keycode="VK\_LEFT"
+    <key id="goBackKb"  keycode="VK_LEFT"
          command="Browser:Back" modifiers="alt"/>
-    <key id="goForwardKb"  keycode="VK\_RIGHT"
+    <key id="goForwardKb"  keycode="VK_RIGHT"
          command="Browser:Forward" modifiers="alt"/>
 
 ...and add these two lines immediately after them:
 
-    <key id="goBackKb"  keycode="VK\_F19"
+    <key id="goBackKb"  keycode="VK_F19"
          command="Browser:Back"/>
-    <key id="goForwardKb"  keycode="VK\_F20"
+    <key id="goForwardKb"  keycode="VK_F20"
          command="Browser:Forward"/>
 
 Repackage browser.jar, like so:
