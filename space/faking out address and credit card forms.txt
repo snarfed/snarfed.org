@@ -59,7 +59,7 @@ else
   * [Gametap](http://gametap.com/): pick a state, 00000 for zip code, one letter
 each for first and last name (e.g. A B); dashes for everything else
 
-  * [Google Video](http://video.google.com/): pick a state, 00000 for zip code,
+  * [Google Checkout](http://checkout.google.com/): pick a state, 00000 for zip code,
 000-000-0000 for phone; dashes for everything else
 
   * [iTunes](http://apple.com/itunes/): real city/state/zip, 000-000-0000 for
