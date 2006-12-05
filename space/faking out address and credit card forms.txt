@@ -83,6 +83,11 @@ dashes for everything else
   * [Netflix](http://netflix.com/): 00000 for zip code; dashes for everything
 else
 
+  * [ReserveAmerica](http://reserveamerica.com/): valid email, one letter each
+    for first and last name, phone number with valid area coce (e.g.
+    650-000-0000), 00000 for zip code, dashes for everything else, including
+    cardholder name
+
   * [SWREG](http://swreg.org/): pick a state, 00000 for zip code; dashes for
 everything else
 
