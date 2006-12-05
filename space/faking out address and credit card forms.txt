@@ -62,6 +62,9 @@ each for first and last name (e.g. A B); dashes for everything else
   * [Google Checkout](http://checkout.google.com/): pick a state, 00000 for zip code,
 000-000-0000 for phone; dashes for everything else
 
+  * [Heavenly at Lake Tahoe](https://skiheavenly.com/): valid email, dashes for
+    everything else, including cardholder name
+
   * [iTunes](http://apple.com/itunes/): real city/state/zip, 000-000-0000 for
 phone; dashes for everything else
 
