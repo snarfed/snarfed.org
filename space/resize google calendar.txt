@@ -1,0 +1,39 @@
+resize google calendar
+[![google calendar](/space/google_calendar.jpg)](ryanb@google.com/dpeterson@google.com/2006-12)
+
+I use paper for my personal calendar, but at work, I use
+[Google Calendar](http://calendar.google.com/).
+Despite being a web app, and not a rich client, it's really nice...even if I am
+a little biased. :P
+
+However, as much as other people complained about [Oracle
+Calendar](http://www.oracle.com/technology/products/ocal/), our old calendar,
+it still beat Google Calendar in one regard.
+
+Google Calendar resizes itself automatically to the browser window. That's
+nice, but it means you can't have a window showing _just_ your calendar,
+without the navigation widgets on the left.
+
+I keep my calendar open all the time, in a small window off to the side, and I
+usually only want to see my agenda for the day. For all its flaws, Oracle
+Calendar did let me do that.
+
+So, I set out to make Google Calendar do it too. Luckily, I use
+[Firefox](http://getfirefox.com/). After some quality time with the [DOM
+Inspector](http://kb.mozillazine.org/DOM_Inspector), I ended up with these CSS
+rules in my [userContent.css](http://www.mozilla.org/unix/customizing.html)
+file:
+
+    div#mainbody {
+      width: 450px !important;
+      height: 400px !important;
+    }
+    
+    div#gridcontainer {
+      height: 370px !important;  
+    }
+
+Add them to yours, restart Firefox, load up your calendar, and you should be
+able to resize and scroll the window so that only your actual calendar is
+visible. Tweak the width and height to your liking!
+
