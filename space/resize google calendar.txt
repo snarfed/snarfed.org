@@ -26,7 +26,6 @@ file:
 
     div#mainbody {
       width: 450px !important;
-      height: 400px !important;
     }
     
     div#gridcontainer {
