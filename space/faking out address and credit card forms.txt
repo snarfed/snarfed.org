@@ -80,6 +80,10 @@ dashes for everything else
   * [Kohls](http://www.kohls.com/): real city/state/zip, 000-000-0000 for phone;
 dashes for everything else
 
+  * [LA Philharmonic](http://laphil.com/): two dashes each for first and last
+    name, five for street address, four for zip code, three for city and
+    phone number, and "-- --" for cardholder name.
+
   * [Netflix](http://netflix.com/): 00000 for zip code; dashes for everything
 else
 
