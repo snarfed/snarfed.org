@@ -67,7 +67,7 @@ CSS styling pleasure, it uses divs with the classes `openid-info`,
 
 You can override the default HTML by adding `openid-info`, `openid-login`, and
 `openid-error` templates for your flavour of choice. Example templates for the
-html flavour are included in openid_server-0.2.tar.gz.
+html flavour are included in openid_server-0.3.tar.gz.
 
 
 This program is free software; you can redistribute it and/or modify it under
@@ -82,10 +82,11 @@ details.
 """
 
 __author__ = 'Ryan Barrett <pyblosxom at ryanb dot org>'
-__version__ = '0.2'
+__version__ = '0.3'
 __url__ = 'http://snarfed.org/space/pyblosxom+openid+server'
 __description__  = 'Implements OpenID 1.1 (http://openid.net/)'
 
+import BaseHTTPServer
 import cgi
 import Cookie
 import os
@@ -164,10 +165,11 @@ def respond(request, oidresponse):
 
   # add extra fields with Simple Registration Extension:
   # http://www.openidenabled.com/openid/simple-registration-extension/
-  for field in ['nickname', 'email', 'fullname', 'dob', 'gender', 'postcode',
-                'country', 'language', 'timezone']:
-    if config.has_key('openid_%s' % field):
-      response.addField('sreg', field, config['openid_%s' % field])
+  if oidresponse.request.mode in ['checkid_immediate', 'checkid_setup']:
+    for field in ['nickname', 'email', 'fullname', 'dob', 'gender', 'postcode',
+                  'country', 'language', 'timezone']:
+      if config.has_key('openid_%s' % field):
+        oidresponse.addField('sreg', field, config['openid_%s' % field])
 
   try:
     webresponse = oidserver.encodeResponse(oidresponse)
@@ -177,7 +179,9 @@ def respond(request, oidresponse):
     return False
 
   # send the response
-  response.setStatus(webresponse.code)
+  messages = BaseHTTPServer.BaseHTTPRequestHandler.responses
+  message = messages.get(int(webresponse.code), '')
+  response.setStatus('%s %s' % (webresponse.code, message))
 
   for header, value in webresponse.headers.iteritems():
     response.addHeader(header, value)
