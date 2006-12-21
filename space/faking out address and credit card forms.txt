@@ -98,6 +98,9 @@ everything else
   * [San Francisco Symphony](http://sfsymphony.com/): valid zip code,
 000-000-0000 for phone; dashes for everything else
 
+  * [Simon](http://simon.com/): 00000 for zip code,
+000-000-0000 for phone; dashes for everything else
+
   * [Southwest](http://southwest.com/): 00000 for zip code, 000-000-0000 for
 phone, one letter for first name, two letters for last name (e.g. A Bc), one
 letter each for cardholder address line 1 and city (e.g. D, E); dashes for
