@@ -6,6 +6,10 @@ lots more ideas for projects I'd _like_ to work on. I can't pretend that
 they're particularly good ideas, but it seems like a waste to just forget about
 them. So, here they are!
 
+  * Write a [session management
+    plugin](http://sourceforge.net/mailarchive/message.php?msg_id=7225698) for
+    [Gaim](http://gaim.sf.net/).
+
   * Improve [tcsh](http://tcsh.org)'s
 [dabbrev-expand](http://www.tcsh.org/tcsh.html/Editor_commands.html#dabbrev-expand)
 and
