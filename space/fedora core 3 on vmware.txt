@@ -127,3 +127,11 @@ from the mplayer page and extract them into /usr/lib/win32. (The mplayer docs
 have [more information](http://mplayerhq.hu/DOCS/HTML/en/codecs.html#realvideo),
 but you shouldn't need it.)
 
+  * Both FC3 and [Ubuntu](http://ubuntu.com/), my new distro, use
+[GDM](http:/gnome.org/projects/gdm/). I don't mind GDM and X sessions, but I
+prefer a console login and [xinit](http://xfree86.org/current/xinit.1.html). To
+turn off GDM on Ubuntu, run
+**update-rc.d -f gdm remove; update-rc.d gdm stop 20 2345**. On FC3, comment
+out this line in **/etc/inittab**:
+
+        x:5:respawn:/etc/X11/prefdm -nodaemon

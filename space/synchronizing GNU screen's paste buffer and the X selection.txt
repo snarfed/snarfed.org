@@ -27,7 +27,7 @@ when you press > to set the second mark in copy/scrollback mode.
     bindkey -m > eval "stuff ' '" writebuf "exec sh -c 'xsel -n < /tmp/screen-exchange'"
 
 Note that this uses [Conrad Parker's
-xsel](http://www.vergenet.net/~conrad/software/xsel/) (_not_[ Ville Herva's
+xsel](http://www.vergenet.net/~conrad/software/xsel/) (_not_ [Ville Herva's
 xsel](http://www.niksula.cs.hut.fi/~vherva/xsel/)), which needs to be somewhere
 in your PATH.
 
