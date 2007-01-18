@@ -76,8 +76,9 @@ that can be imported back into SnipSnap.
   * [cdname.py](/space/cdname.py) names MP3 files according to
 [CDDB](http://cddb.com/)/[freedb](http://freedb.org/) INF files.
 
-  * [Gaim null protocol plugin](/space/gaim null protocol plugin) is a no-op
-protocol plugin that lets you run gaim without connecting to a server.
+  * [Mockprpl](/space/gaim mock protocol plugin) is a mock
+protocol plugin for [Gaim](http://gaim.sf.net/) that lets you use Gaim without
+connecting to a server.
 
   * [Remote](/space/remote) is a client for
 [httpQ](http://httpq.sourceforge.net/), a network server plugin for

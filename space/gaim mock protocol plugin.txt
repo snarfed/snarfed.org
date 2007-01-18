@@ -1,0 +1,42 @@
+gaim mock protocol plugin
+[![/space/gaimlogo.png](/space/gaimlogo.png)](http://gaim.sf.net/)
+
+For the impatient:  
+[Download mockprpl 0.3](/space/mockprpl-0.3.tar.bz2)  
+[View mockprpl.c 0.3](/space/mockprpl.c)  
+[Gaim web site](http://gaim.sf.net/)  
+[SourceForge tracker
+entry](http://sourceforge.net/tracker/index.php?func=detail&aid=1033153&group_id=235&atid=390395)
+
+Mockprpl (formerly nullprpl) is a mock protocol plugin for
+[gaim](http://gaim.sf.net/). You can create accounts with it, sign on and off,
+add buddies, and send and receive IMs, all without connecting to a server!
+
+Beyond that basic functionality, mockprpl supports presence and away/available
+messages, offline messages, user info, typing notification, privacy
+allow/block lists, chat rooms, whispering, room lists, and protocol icons and
+emblems. Notable missing features are file transfer and account registration
+and authentication.
+
+Mockprpl is intended as an example of how to write a gaim protocol plugin. It
+doesn't contain networking code or an event loop, but it does demonstrate how
+to use [gaim's API](http://gaim.sourceforge.net/api/files.html) to do pretty
+much everything a prpl might need to do.
+
+Mockprpl is also a useful tool for hacking on gaim itself. It's a
+full-featured protocol plugin, but doesn't depend on an external server, so
+it's a quick and easy way to exercise gaim and test new code. It also allows
+you to work on gaim [while you're
+disconnected](https://sourceforge.net/mailarchive/message.php?msg_id=9534285).
+
+Mockprpl requires [Gaim](http://gaim.sf.net/) 2.x and
+[libtool](http://www.gnu.org/software/libtool/libtool.html) 1.4 or higher (on
+\*nix) or [Cygwin](http://www.cygwin.com/)/[MinGW](http://mingw.org/) (on
+Windows). It may work with Gaim 1.x, but no promises. Windows support was
+generously contributed by [Andrew Hart](http://sourceforge.net/users/arhart/).
+
+Mockprpl is copyright 2004-2007 [Ryan Barrett](http://ryan.barrett.name/), and
+is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
+
+Mockprpl was formerly known as nullprpl. For posterity, you can still
+[download nullprpl-0.2.tar.bz2](/space/nullprpl-0.2.tar.bz2).
