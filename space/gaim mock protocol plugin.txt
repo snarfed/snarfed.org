@@ -29,7 +29,23 @@ it's a quick and easy way to exercise gaim and test new code. It also allows
 you to work on gaim [while you're
 disconnected](https://sourceforge.net/mailarchive/message.php?msg_id=9534285).
 
-Mockprpl requires [Gaim](http://gaim.sf.net/) 2.x and
+To use mockprpl on *nix, first unpack it and run `make`. If you don't have the
+`gaim-dev` package installed, or you don't have the gaim headers and libraries
+installed in a standard place, you'll need to update the Makefile. After
+`make` finishes, copy `libmockprpl.la` and `.libs/libmockprpl.so` to
+`~/.gaim/plugins`.
+
+    $ tar xjf mockprpl-0.3.tar.bz2
+    $ cd mockprpl-0.3
+    $ make
+    $ cp libmockprpl.la .libs/libmockprpl.so \
+        ~/.gaim/plugins
+
+Start up gaim, create some mockprpl accounts, and you should be good to go!
+
+
+Mockprpl requires [gaim](http://gaim.sf.net/) 2.x, the gaim-dev package
+(headers and libraries), and
 [libtool](http://www.gnu.org/software/libtool/libtool.html) 1.4 or higher (on
 \*nix) or [Cygwin](http://www.cygwin.com/)/[MinGW](http://mingw.org/) (on
 Windows). It may work with Gaim 1.x, but no promises. Windows support was
