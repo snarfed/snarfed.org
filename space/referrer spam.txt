@@ -1,25 +1,23 @@
 referrer spam
 [![/space/spam.jpg](/space/spam.jpg)](/space/referrer+spam)
 
-[Referrer
-spam](http://www.spywareinfo.com/articles/referer_spam/) - or by Apache's
-original misspelling, _referer_ spam - has been a problem at snarfed.org for
-years. My [referrer log statistics](http://ryan.barrett.name/summary/) are
-publicly accessible, so spammers target this site with fake referrers, hoping
-that they'll be linked from the pages that [Summary](http://summary.net/)
-generates.
+[Referrer spam](http://www.spywareinfo.com/articles/referer_spam/) - or by
+Apache's original misspelling, _referer_ spam - has been a problem at
+snarfed.org for years. I use [Summary](http://summary.net/) for web analytics,
+and I made its statistic pages publicly available for a while, so spammers
+still hit this site fake referrers, to this day, hoping that they'll be linked
+from the Summary pages.
 
 There are a number of approaches to fighting referrer spam, but so far, no
-silver bullet. Here's what I do right now.
+silver bullet. Here's what I did while my Summary output was online.
 
-  * I maintain a hand-edited blacklist of known spammers' sites. It's far from
-ideal, but it works. I use [Summary](http://summary.net/) for web analytics, so
-you can find my blacklist in my
+  * I maintained a hand-edited blacklist of known spammers' sites. It's far
+from ideal, but it worked. You can find my blacklist in my
 [summary.conf](http://ryan.barrett.name/summary.conf) file. If you're fighting
 referrer spam, feel free to borrow it. (I used to use
 [webalizer](http://ryan.barrett.name/webalizer/); my
-[webalizer.conf](http://ryan.barrett.name/webalizer.conf) is also available, but
-it's not maintained.)
+[webalizer.conf](http://ryan.barrett.name/webalizer.conf) is also available,
+but it's not maintained.)
 
   * I've written a [webalizer nofollow patch](/space/webalizer+nofollow+patch)
 that adds support for the popular new
