@@ -28,6 +28,8 @@ similar to
 (see [OSIS](http://osis.netmesh.org/)),
 [Higgins](http://www.eclipse.org/higgins/),
 and others, so they can interoperate.
+**\[_Simon Willison's [idproxy.net](http://idproxy.net/) is a first step toward
+this. Sweet!_]**
 
   * [Mock out](http://en.wikipedia.org/wiki/Mock_Object) the
 [Google Ajax Search API](http://code.google.com/apis/ajaxsearch/) for offline
