@@ -7,8 +7,9 @@ they're particularly good ideas, but it seems like a waste to just forget about
 them. So, here they are!
 
   * Write a [session management
-    plugin](http://sourceforge.net/mailarchive/message.php?msg_id=7225698) for
-    [Gaim](http://gaim.sf.net/).
+plugin](http://sourceforge.net/mailarchive/message.php?msg_id=37745715) for
+[Gaim](http://gaim.sf.net/).
+**\[_Done! See Mattperry's [SessionSave plugin](http://somewhere.fscked.org/sessionsave/)._]**
 
   * Improve [tcsh](http://tcsh.org)'s
 [dabbrev-expand](http://www.tcsh.org/tcsh.html/Editor_commands.html#dabbrev-expand)
