@@ -123,6 +123,9 @@ dashes for everything else
 
   * [Vonage](http://vonage.com/): dashes for everything
 
+  * [Winerz](http://winerz.com/): 000-000-0000 for phone #(s),
+    00000 for zip code(s), dashes for everything else
+
   * [WalMart](http://walmart.com/): valid city/zip/state, one letter each for
 first and last name (e.g. A B), valid area code for phone number (e.g.
 650-000-000); dashes for everything else
