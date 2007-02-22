@@ -8,6 +8,12 @@ is [GPL](http://www.gnu.org/licenses/gpl.html)ed.
 <a name="projects"></a>
 ### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](#projects)
 
+  * [PyBlosxom](http://pyblosxom.sourceforge.net/) is a lightweight weblog
+    platform, based on [Blosxom](http://blosxom.com/) and written in Python.
+
+  * [simonitor](/space/simonitor) screen scrapes [simon.com](http://simon.com/)
+  to fetch the available balance on one or more Simon gift cards.
+
   * An [OpenID server plugin for PyBlosxom](/space/pyblosxom+openid+server).
 
   * [AJAX site search with the Google AJAX Search API](/space/site+search+with+the+Google+AJAX+Search+API).
