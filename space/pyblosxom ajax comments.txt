@@ -5,11 +5,11 @@ pyblosxom ajax comments
 _This patch was applied to the Pyblosxom contributed plugins pack in
 [revision 973](http://pyblosxom.svn.sourceforge.net/viewvc/pyblosxom?view=rev&revision=973).
 It's included in
-[version 1.3.3](http://sourceforge.net/project/showfiles.php?group_id=67445&package_id=145140&release_id=488222)
+[version 1.3.3](http://sourceforge.net/project/showfiles.php?group_id=67445&package_id=145140&release_id=489295)
 of the contrib pack._
 
 For the impatient:  
-&nbsp; [Download contrib pack 1.3.3](http://sourceforge.net/project/showfiles.php?group_id=67445&package_id=145140&release_id=488222) (includes AJAX support)  
+&nbsp; [Download contrib pack 1.3.3](http://sourceforge.net/project/showfiles.php?group_id=67445&package_id=145140&release_id=489295) (includes AJAX support)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
 &nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)
 

@@ -5,8 +5,8 @@ I use
 [Subversion](http://subversion.tigris.org/) for source control, and it's great.
 I recently migrated my repository to use the new
 [FSFS](http://svn.collab.net/repos/svn/trunk/notes/fsfs) backing store, which
-stores the repository directly on the filesystem, instead of in[Berkeley
-DB](http://sleepycat.com/).
+stores the repository directly on the filesystem, instead of in
+[Berkeley DB](http://sleepycat.com/).
 
 One of the many advantages of FSFS is that it's very easy to backup. The
 repository files can be copied directly. The only tricks are to copy the
