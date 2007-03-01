@@ -104,15 +104,19 @@ email account.
   * A [tcsh highlighting patch](/space/tcsh highlighting patch) that highlights
 the match during incremental search, and in emacs mode, the region between the
 mark and cursor.
+([Applied](http://mx.gw.com/pipermail/tcsh/2006-August/003724.html) on 8/23/2006.)
 
-  * A patch to [remove tcsh globbing in history search](/space/remove tcsh globbing in history search).
+  * A patch to [remove tcsh globbing in history search](/space/remove tcsh
+globbing in history search).
+([Applied](http://mx.gw.com/pipermail/tcsh/2006-August/003726.html) on 8/23/2006.)
 
-  * A [fix for a tcsh bug that moves the mark after deletions](/space/tcsh delete moves mark bug fix).
+  * A [fix for a tcsh bug that moves the mark after deletions](/space/tcsh
+    delete moves mark bug fix). (Applied on 8/23/2006.)
 
   * An [acoc rule for coloring context diffs](/space/acoc.conf for context diffs).
 
   * A [fix for an Emacs bug in minibuffer code](/space/emacs minibuffer-complete-and-exit bug fix), specifically in
-_minibuffer-complete-and-exit_.
+_minibuffer-complete-and-exit_. (Fixed in Emacs 22.)
 
   * [port\_pine\_patch](/space/port_pine_patch) is a shell script that automates
 porting Pine patches between versions.
@@ -130,12 +134,13 @@ adds an option to automatically remove trailing quotes from outgoing emails.
 them.
 
   * [Gaim chat\_invite patch](/space/gaim_2_chat_invite_reverse_params.patch)
-([tracker](https://sourceforge.net/tracker/index.php?func=detail&aid=1595831&group_id=235&atid=300235))
 fixes a
 [parameter ordering bug](https://sourceforge.net/tracker/index.php?func=detail&aid=1595828&group_id=235&atid=100235)
 in [Gaim 2.x](http://gaim.sf.net/)'s
 [GaimPluginProtocolInfo::chat_invite](http://gaim.sourceforge.net/api/struct__GaimPluginProtocolInfo.html#a3ea6e94a223c32ba8814aec326f02a5)
 callback member.
+([Applied](https://sourceforge.net/tracker/index.php?func=detail&aid=1595831&group_id=235&atid=300235)
+on 11/15/2006.)
 
   * [Gaim accelerators in away menus patch](/space/gaim_1_away_menu_accelerators.patch)
 ([tracker](http://sourceforge.net/tracker/index.php?func=detail&aid=1031098&group_id=235&atid=300235))
@@ -143,9 +148,10 @@ fixes [Gaim 1.x](http://gaim.sf.net/)'s GTK menu code to allow accelerators in
 dynamically created menus, such as away message menus.
 
   * Similarly, [Gaim accelerators in accounts submenus patch](/space/gaim_2_accounts_menu_accels.patch)
-([tracker](https://sourceforge.net/tracker/index.php?func=detail&aid=1597271&group_id=235&atid=300235))
 fixes [Gaim 2.x](http://gaim.sf.net/)'s GTK menu code to allow accelerators in
 the dynamically created submenus of the Accounts menu.
+([Applied](https://sourceforge.net/tracker/index.php?func=detail&aid=1597271&group_id=235&atid=300235)
+on 11/19/2006.)
 
   * [SnipSnap comment without login patch](/space/snipsnap comment without login patch) allows visitors to post comments without logging in.
 
