@@ -37,8 +37,6 @@ plugin that stores mtimes in a file.
 
   * An [RDF flavour](/space/pyblosxom+rdf+flavour) for Pyblosxom.
 
-  * [AJAX commenting](/space/pyblosxom+ajax+comments) in Pyblosxom.
-
   * [Filekicker](/space/filekicker) is a [PyBlosxom](http://pyblosxom.sf.net/)
 plugin that serves static files.
 
@@ -100,6 +98,10 @@ email account.
 
 <a name="patches"></a>
 ### Patches  [![Icon-Permalink.png](/Icon-Permalink.png)](#patches)
+
+  * [AJAX commenting](/space/pyblosxom+ajax+comments) in Pyblosxom.
+([Applied](http://pyblosxom.svn.sourceforge.net/viewvc/pyblosxom?view=rev&revision=973)
+on 1/24/2007.)
 
   * A [tcsh highlighting patch](/space/tcsh highlighting patch) that highlights
 the match during incremental search, and in emacs mode, the region between the
