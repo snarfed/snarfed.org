@@ -21,7 +21,7 @@ Since its release in early 2001, P4 has been surpassed by other general-purpose
 overlay platforms such as [JXTA](http://jxta.org/),
 [Groove](http://groove.net/), and Microsoft's [Windows Peer-to-Peer
 SDK](/space/windows+p2p). Furthermore, [many](http://overnet.com/)
-[other](http://freedom.net/)[ file](http://freehaven.net/)
+[other](http://freedom.net/) [file](http://freehaven.net/)
 [sharing](http://mnet.sourceforge.net/)
 [networks](http://en.wikipedia.org/wiki/FastTrack) have long been superior to P4
 in terms of routing algorithms, bandwidth management, anonymity, maturity, etc.
