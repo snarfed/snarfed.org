@@ -2,8 +2,6 @@
 
 ### Holla! 
 
-
-
 [![/space/p2p.jpg](/space/p2p.jpg)](/space/p4)
 
 It took us a while, but we finally packaged up [p4](/space/p4) and [released
@@ -11,7 +9,7 @@ it](http://freshmeat.net/projects/p4). Well, we've only released the backend and
 a small example plugin and client; we haven't released the mp3 syncher yet. But
 still, it's a release!
 
-If you don't remember it from our senior year at school, [P4](/space/P4) is a
+If you don't remember it from our senior year at school, [P4](/space/p4) is a
 self-organizing, peer-to-peer overlay network similar to
 [Gnutella](http://rfc-gnutella.sourceforge.net/) and
 [Freenet](http://freenet.sf.net/). However, P4 differs in that it provides an

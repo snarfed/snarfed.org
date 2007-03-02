@@ -5,7 +5,7 @@ synchronizing mp3 playback
 
 Once upon a time, we thought a killer app for hall parties would be an MP3
 player synchronizer. We actually wrote one, as part of our p2p network,
-[P4](/space/P4). It plugged into [Winamp](http://winamp.com/) and synched its
+[P4](/space/p4). It plugged into [Winamp](http://winamp.com/) and synched its
 playback with other P4 users on the network. This allowed lots of computers to
 sync up and play the same songs, at the same time, as if they were tuned to the
 same radio station. It sounded like one giant stereo with lots and lots of
@@ -17,7 +17,7 @@ buffering. Another low-tech alternative was to yell "Play!" and have everyone
 try to start an MP3 at the same time. We actually tried this, and quickly
 verified that it's more or less impossible.
 
-In the end, [P4](/space/P4)'s syncher worked, but it was brittle and not at all
+In the end, [P4](/space/p4)'s syncher worked, but it was brittle and not at all
 easy to use. We're currently working on an extensive redesign to make it simpler
 and more usable. We are actively developing, but it's _not done yet_, so we
 haven't released any code. If you want to check out what we have so far, [drop
