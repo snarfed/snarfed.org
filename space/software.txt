@@ -99,6 +99,10 @@ email account.
 <a name="patches"></a>
 ### Patches  [![Icon-Permalink.png](/Icon-Permalink.png)](#patches)
 
+  * A [tkdiff patch that quotes filenames](/space/tkdiff_quote_filenames_svn.patch)
+([tracker](http://sourceforge.net/tracker/index.php?func=detail&aid=1672284&group_id=64960&atid=509274))
+for files in Subversion repositories.
+
   * [AJAX commenting](/space/pyblosxom+ajax+comments) in Pyblosxom.
 ([Applied](http://pyblosxom.svn.sourceforge.net/viewvc/pyblosxom?view=rev&revision=973)
 on 1/24/2007.)
