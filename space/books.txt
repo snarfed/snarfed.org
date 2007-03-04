@@ -8,8 +8,8 @@ nf { color: darkgoldenrod; }
 
 [![/space/books.jpg](/space/books.jpg)](/space/books)
 
-[Books I've read](/space/books#read)
-and [books I'd like to read](/space/books#to_read).
+[Books I'd like to read](/space/books#to_read) and
+[books I've read](/space/books#read).
 
 <!-- Also [mini reviews](/space/books#mini_reviews) for a few books I read
 a while back. -->
