@@ -1,0 +1,441 @@
+GDC 2007
+[![GDC 2007](/space/gdc2007.jpg)](http://gdconf.com/)
+
+I'm back from my sixth year at [GDC][]! I wrote up my [last][] [two][] trips,
+and the protests weren't quite loud enough, so I'm doing it again this year.
+Don't worry; the protestors might manage to kidnap me outright this year, so
+you won't have to put up with me ever again.
+
+As always, sites like [Gamasutra][], [Slashdot][], and [GameSpot][] have more
+comprehensive reports. What's more, the full proceedings will soon be
+available online at [GDCTV][] and [GDCRadio][].
+
+[GDC]: http://gdconf.com/
+[last]: /space/GDC+2006
+[two]: /space/GDC+2005
+[Gamasutra]: http://www.gamasutra.com/gdc2007/
+[Slashdot]: http://games.slashdot.org/index.pl?issue=20070309
+[GameSpot]: http://www.gamespot.com/events/gdc07/
+[GDCTV]: http://gdctv.net/
+[GDCRadio]: http://gdcradio.net/
+
+They have me outnumbered, so I won't try to compete with them on coverage or
+details. Instead, I'll put on my amateur analyst hat and lay out some of the
+common themes I noticed. Look out, Gartner, here I come!
+
+### Contents
+
+[E3 is Dead, Long Live GDC?](#e3_is_dead)
+
+[User-Generated Content: YouTube for Games](#user_content)
+- [Sony: PlayStation Home and Little Big Planet](#sony)
+- [Microsoft: Community Arcade](#community_arcade)
+- [What this says about the platforms](#what_this_says)
+- [Games, meet Web 2.0](#web_2.0)
+
+[Outside the Mainstream: Million-Subscriber MMOs You've Never Heard Of](#outside)
+- [New business models, new cultures](#new)
+
+[Children of the Joystick](#input)
+- [Year of the Wii and DS](#wii_ds)
+- [Sing to your game](#sing)
+- [Game design challenge: Needle and Thread](#challenge)
+
+[Which GDC Speaker Are You?](#speaker)
+- [The party mouthpiece](#mouthpiece)
+- [The overinflated ego](#ego)
+- [The reluctant role model](#role_model)
+
+[I Like to Pretend I'm a Game Developer](#pretend)
+
+<br />
+
+<a name="e3_is_dead"></a>
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#e3_is_dead) E3 is Dead, Long Live GDC?
+
+The pre-GDC buzz this year centered around the [implosion][] of [E3][], the
+game industry's flagship trade show and press event. With E3 downsized to a
+invite-only press junket, and GDC's expo floor [doubling in size][], many
+wondered if GDC would take over E3's crown, for [better][] or [worse][].
+
+<div class="img-shadow" style="float: left; margin-right: 10px">
+  <img src="e3_logo.png" />
+</div>
+GDC has come and gone, and the answer seems to be a qualified no. Yes, the
+expo floor was bigger, but as usual, nearly half of it was dedicated to
+closed-door meeting rooms. Sure, there wasn't much focus this year, but
+there's never been much focus, and that's not necessarily a bad thing.
+
+This year's GDC was the same as it's been every year: getting developers,
+publishers, press, and toolmakers together to talk about anything and
+everything. Whether it's in a massive hall or a small roundtable, at a
+scripted keynote or a fiery off-the-leash rant, there was plenty of good,
+old-fashioned talk this year. It's not always pretty or soundbite-friendly,
+but it's always worthwhile.
+
+[implosion]: http://en.wikipedia.org/wiki/E3#E.C2.B3_change_fallout
+[E3]: http://e3expo.com/
+[better]: http://biz.gamedaily.com/industry/interview/?id=15366
+[worse]: http://games.slashdot.org/article.pl?sid=07/03/05/0750235
+[doubling in size]: http://games.slashdot.org/article.pl?sid=06/09/19/1858224
+
+
+<a name="user_content"></a>
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#user_content) User-Generated Content: YouTube for Games
+
+<div class="img-noshadow" style="float: right; margin-left: 10px">
+  <img src="gdc_2007_youtube.png" />
+</div>
+
+The overriding theme this year can be summed up in three words: [YouTube][]
+for games. Everyone was chasing full-speed after the user-generated content
+bandwagon. The big three platforms all had their official stories, and lots of
+others were clamoring to tell theirs too.
+
+[YouTube]: http://youtube.com/
+
+
+<a name="sony" href="#sony"><img src="/Icon-Permalink.png" /></a>
+The big headline was Sony's announcement of [PlayStation Home][] and
+[Little Big Planet][]. PlayStation Home has been compared to [Second Life][],
+and the description is apt. It's a physics-based virtual world with both
+public and private spaces. Users can customize their avatar's face, body, and
+clothes, decorate their apartment, and contribute to public spaces. Options
+include downloadable content, free and paid, and the user's own videos and
+photographs.
+
+<div class="img-noshadow" style="float: left; margin-right: 10px">
+  <img src="gdc_2007_playstation_home.jpg" />
+</div>
+Home is mostly interesting for its business and product significance, since
+Sony has traditionally avoided running online services for PlayStation
+themselves. As a Second Life clone, it's shallow at best. Sony will probably
+control user-generated content with an iron fist, so robust content creation
+tools seem unlikely. Content will tend toward digital photographs, Sony
+products, and trailers and clips from Sony movies, games, and music.
+
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <img src="gdc_2007_little_big_planet.jpg" />
+</div>
+Little Big Planet takes the same approach. It's the first AAA product from
+[Media Molecule][], the people behind [Rag Doll Kung Fu][]. It's a rich,
+physics-based, side-scroller sandbox. It will come with some levels built in,
+but it will also include simple in-game tools for users to build and share
+their own levels and mini-games. It looks really, _really_ cool, even if it's
+ultimately fairly limited.
+
+[PlayStation Home]: http://www.gamasutra.com/gdc2007/index.php?id=13033
+[Little Big Planet]: http://www.mediamolecule.com/games.html
+[Second Life]: http://secondlife.com/
+[Media Molecule]: http://mediamolecule.com/
+[Rag Doll Kung Fu]: http://ragdollkungfu.com/
+
+
+<a name="community_arcade" href="#community_arcade"><img src="/Icon-Permalink.png" /></a>
+Microsoft took their first steps toward user-generated content over a year ago
+with the second generation of [XBox Live][]. It included gamer tags,
+achievements, and most importantly, [XBox Live Arcade][]. They followed up
+with the groundbreaking [XNA Game Studio Express][], which allows homebrew
+developers to make their own XBox 360 games. Hackers had done this on other
+consoles for years, but this was the first time a console maker had opened a
+retail console to legitimate homebrew development. It was a big deal.
+
+<div class="img-noshadow" style="float: left; margin-right: 10px">
+  <img src="gdc_2007_xboxlivearcade.jpg" />
+</div>
+Another big deal is on its way. In his talk on the past, present, and future
+of XBox Live Arcade, Chris Satchell casually mentioned the next big thing for
+XBL. [He called it Community Arcade][], and described it as the natural
+evolution of XBLA and XNA Game Studio Express.
+
+Basically, it's YouTube for XBLA. Garage developers will make games with XNA
+GSE, upload them, and XBLA users will immediately be able to download them,
+play them, and rate them. No more onerous certification process. Instant
+gratification!
+
+[XBox Live]: http://www.xbox.com/en-US/live/
+[XBox Live Arcade]: http://www.xbox.com/games/livearcade
+[XNA Game Studio Express]: http://msdn2.microsoft.com/en-us/xna/aa937793.aspx
+[He called it Community Arcade]: http://www.1up.com/do/newsStory?cId=3152832
+
+
+<a name="what_this_says"></a>
+[![Icon-Permalink.png](/Icon-Permalink.png)](#what_this_says)
+These are markedly different approaches to user-generated content. They may be
+parts of greater corporate product plans, but just as importantly, they tell
+us a great deal about the souls of these platform giants.
+
+Sony is, at its heart, a content company. It thinks about movies, records, and
+games first. Hardware and software come second, and are often farmed out to
+[other][] [people][]. In keeping with that outlook, Home and Little Big Planet
+focus on sharing content. No programming necessary. No programming allowed.
+
+On the other hand, Microsoft is, at its heart, a software company.
+Specifically, Microsoft is an operating system company. It makes platforms for
+other companies to make products on top of. When Microsoft thinks
+user-generated content, it doesn't think content, it thinks _code_. It thinks
+_developers_. Like Sony, this cuts to the core of Microsoft's identity.
+
+[Nintendo][] didn't add anything to their story about user-generated content
+at this GDC. They've dabbled in it with [Animal Crossing][], with [Mii][]s
+on the [Wii][], and they've left the door open with [Channels][]. Regardless,
+Nintendo is, at its heart, a game company. It's focusing on what it's always
+focused on: _games_.
+
+[Nintendo]: http://nintendo.com/
+[Animal Crossing]: http://www.animal-crossing.com/
+[Mii]: http://www.nintendo.com/consumer/systems/wii/en_na/channelsMii.jsp
+[Wii]: http://www.nintendo.com/channel/wii
+[Channels]: http://en.wikipedia.org/wiki/Wii_Channels
+[other]: http://www.research.ibm.com/cell/
+[people]: http://www.freescale.com/webapp/sps/site/overview.jsp?nodeId=01272685077482
+
+
+<div class="img-noshadow" style="float: right; margin-left: 10px">
+  <img src="gdc_2007_gametap_logo.png" />
+</div>
+<a name="web_2.0" href="#web_2.0"><img src="/Icon-Permalink.png" /></a>
+The PC and web have been home to homebrew game development and user-generated
+content for decades, so they didn't earn the same headlines as Sony and
+Microsoft this year. Still, GDC highlighted some notable developments.
+
+[GameTap][] and [Steam][] continued to lead the indie game development trend.
+Like last year, Gametap offered development contracts to many of the [IGF][]
+finalists.
+
+Newcomers to GDC included [Kongregate][] and [GameGum][], highlighted in
+[Raph Koster][]'s talk _[Where Game meets The Web][]_. Both sites are true
+YouTubes for games, although they're both Flash-only.
+
+[GameTap]: http://gametap.com/
+[Steam]: http://steampowered.com/
+[IGF]: http://igf.com/
+[Kongregate]: http://kongregate.com/
+[GameGum]: http://gamegum.com/
+[Raph Koster]: http://www.raphkoster.com/
+[Where Game meets The Web]: https://www.cmpevents.com/GD07/a.asp?option=C&V=11&SessID=4477
+
+
+<a name="outside"></a>
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#outside) Outside the Mainstream: Million-Subscriber MMOs You've Never Heard Of
+
+<div class="img-shadow" style="float: left; margin-right: 10px">
+  <img src="gdc_2007_webkinz.jpg" />
+</div>
+A number of people, Raph Koster and [Daniel James][] among them,
+[drew attention][] to the fact that some of the biggest games in the world
+have flown under the radar of the mainstream game industry. Most are MMOs.
+Some, such as [Club Penguin][] and [Webkinz][], are aimed at kids. Others are
+spinoffs of television shows or other brands. Viacom has launched three,
+including [Virtual Laguna Beach][], in the past six months.
+
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <img src="gdc_2007_flyff.jpg" />
+</div>
+Others, like [Silkroad Online][], [Maple Story][], and [Flyff][], are based
+primarily in China and Korea, and are entirely free. Many of these have
+strikingly narrow, niche gameplay, but still boast millions of subscribers
+each.
+
+[drew attention]: http://www.1up.com/do/newsStory?cId=3157887
+[Club Penguin]: http://clubpenguin.com/
+[Webkinz]: http://www.webkinz.com/
+[Daniel James]: https://www.cmpevents.com/GD07/a.asp?option=G&V=3&id=270724
+[Virtual Laguna Beach]: http://www.wired.com/wired/archive/15.02/mtv.html
+[Silkroad Online]: http://www.silkroadonline.net/
+[Maple Story]: http://maplestory.com/
+[Flyff]: http://flyff.com/
+
+
+<a name="new" href="#new"><img src="/Icon-Permalink.png" /></a>
+These games are rarely sold in boxed retail SKUs, and they rarely require a
+monthly subscription fee. Many are tie-ins to retail products, television
+shows, or other media. Others are advertiser-funded. The ones in Asian markets
+are often free to download and play. They're funded by microtransactions,
+users buying virtual items for their in-game characters.
+
+These are bleeding-edge, forward-looking business models, and it's too early
+to say which will be financial successes. We already know that they're
+successful as products, though, based on the number of people playing them.
+Some industry veterans like [Todd Hollenshead][] will [bury their head in the
+sand][], scared that the sky is falling due to piracy and counterfeiting.
+Meanwhile, this new guard will be trailblazing a path for games of the future.
+
+[Todd Hollenshead]: http://www.idsoftware.com/business/team/
+[bury their head in the sand]: http://biz.gamedaily.com/industry/feature/?id=15448
+
+
+<a name="input"></a>
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#input) Children of the Joystick
+
+Another prevalent theme of this year's GDC was alternative forms of input.
+Conventional examples included the Wiimote and the DS' touch screen and
+microphone, but developers explored more radical controllers as well.
+
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <img src="gdc_2007_ds_stylus.jpg" />
+</div>
+<a name="wii_ds" href="#wii_ds"><img src="/Icon-Permalink.png" /></a>
+The DS and Wii are here to stay. In Japan, that's an understatement: based on
+sales numbers and anecdotal evidence, the DS is _the_ dominant Japanese game
+console right now. Similarly, in the next-generation console race, Wii enjoyed
+a stronger launch than either XBox 360 _or_ PS3. Analysts, eat your hearts
+out.
+
+GDC reflected this. There was a plethora of [Wii][] [and][] [DS][] [talks][],
+focusing on taking advantage of their unique controllers. Across the board,
+developers were excited about the possibilities, both for gameplay and for
+attracting a wider audience.
+
+[Wii]: https://www.cmpevents.com/GD07/a.asp?option=C&V=11&SessID=4712
+[and]: https://www.cmpevents.com/GD07/a.asp?option=C&V=11&SessID=4481
+[DS]: https://www.cmpevents.com/GD07/a.asp?option=C&V=11&SessID=3727
+[talks]: https://www.cmpevents.com/GD07/a.asp?option=C&V=11&SessID=3723
+
+
+<a name="sing" href="#sing"><img src="/Icon-Permalink.png" /></a>
+In an interesting twist, both the [Experimental Gameplay Workshop][] and IGF
+finalist [Racing Pitch][], featured _audio_ input. What's more, they went
+beyond the simple blowing and voice commands that DS games have featured so
+far.
+
+Racing Pitch is a racing game, but without the traditional gas and brake
+buttons. Instead, you hum the sound of an engine into a microphone -
+no joke! - and your car speeds up, or slows down, based on the tone of your
+voice.
+
+Similarly, many of the EGW's [Indie Game Jam][] and [Gamma][] games required
+you to sing into a mic to control them, a la [SingStar][] and
+[Karaoke Revolution][]. A few went so far as to move an in-game character, in
+two dimensions, solely based on your voice! It sounds wonky, but it was
+surprisingly intuitive.
+
+[Experimental Gameplay Workshop]: http://www.experimental-gameplay.org/
+[Racing Pitch]: http://skinflake.com/games/prototypes
+[Indie Game Jam]: http://indiegamejam.com/
+[Gamma]: http://www.kokoromi.org/gamma/
+[SingStar]: http://www.singstargame.com/
+[Karaoke Revolution]: http://www.konami.com/Konami/ctl3810/cp18756/cl0/Brands?attrib_search=Y&attrib_cnt=1&attrib_id_0=2341&attrib_value_0=Karaoke+Revolution
+
+<div class="img-shadow" style="float: left; margin-right: 10px">
+  <img src="gdc_2007_needle_thread.jpg" />
+</div>
+<a name="challenge" href="#challenge"><img src="/Icon-Permalink.png" /></a>
+Even the [Game Design Challenge][], that perennial favorite, threw its hat in
+the alternate input ring. This year's theme was a controller:
+[Eric Zimmerman][] challenged his three contestants to design a game with only
+a _needle and thread_ as input. So weird...so intriguing!
+
+[David Jaffe][], [Alexey Pajitnov][], and [Harvey Smith][] took the challenge.
+Jaffe proposed a paper airplane game, complete with online sharing of airplane
+designs and levels. True to his tetris roots, Pajitnov presented an abstract,
+elegantly simple multiplayer puzzler. Smith went the aesthetic route,
+envisioning a traditional adventure game in a rich, patchwork fantasy world.
+
+If you were voting with your heart, you'd go with Pajitnov. If you were voting
+with your dollars, you'd go with Smith. The result? Pajitnov, hands down. Game
+developers clearly haven't forgotten their roots. :P
+
+[Game Design Challenge]: http://www.gamasutra.com/gdc2007/index.php?id=13055
+[Eric Zimmerman]: https://www.cmpevents.com/GD07/a.asp?option=G&V=3&id=92327
+[David Jaffe]: https://www.cmpevents.com/GD07/a.asp?option=G&V=3&id=102573
+[Alexey Pajitnov]: https://www.cmpevents.com/GD07/a.asp?option=G&V=3&id=380080
+[Harvey Smith]: https://www.cmpevents.com/GD07/a.asp?option=G&V=3&id=475223
+
+
+<a name="speaker"></a>
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#speaker) Which GDC Speaker Are You?
+
+Over the course of six GDCs, I've seen the career arcs of a number of
+prominent industry speakers. Many are normal, garden-variety developers and
+publishers, just trying to give something back to the community. The more
+interesting characters, though, often fall into a few distinct personalities.
+Behold...the GDC speaker menagerie!
+
+<div class="img-shadow" style="float: left; margin-right: 10px">
+  <img src="gdc_2007_phil_harrison.jpg" />
+</div>
+<a name="mouthpiece" href="#mouthpiece"><img src="/Icon-Permalink.png" /></a>
+The party mouthpiece is a fairly common species of big-name GDC speaker. These
+speakers' first and only job at GDC is to represent their company, usually
+either a platform maker or a large publisher. Notable examples include Phil
+Harrison, Reggie Fils-Aime, Peter Moore, and J. Allard. This species can be
+distinguished by its slick, scripted keynote speeches and smart
+marketing-speak during interviews.
+
+
+<a name="ego" href="#ego"><img src="/Icon-Permalink.png" /></a>
+When left unsupervised, the party mouthpiece can grow dangerously big. Its ego
+becomes bloated from speaking engagements and media pandering, and it
+eventually begins to believe its own overblown hype and talent.
+
+At this point, it has outgrown its host company, and thinks it can survive on
+its own. What's worse, venture capital firms are seduced by the same speaking
+engagements and media pandering, and _fund_ the overinflated ego! They lavish
+it with money and employees, and it strikes out on its own...only to learn,
+years later, that its overinflated ego was only that.
+
+I won't name names, but I saw a few canonical examples at GDC this year, in
+different stages of the life cycle. It'll be interesting to see how they end
+up!
+
+
+<a name="role_model" href="#role_model"><img src="/Icon-Permalink.png" /></a>
+On the other end of the spectrum is the reluctant role model. This is usually
+a talented developer who makes great games, one of which eventually becomes a
+hit. They're suddenly thrust into the spotlight, whether they like it or not.
+
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <img src="gdc_2007_chris_taylor.jpg" />
+</div>
+[Chris Taylor][], of [Total Annihilation][] and [Supreme Commander][] fame,
+exemplified this species at this year's GDC. Chris held court for over an hour
+at his [9am Supreme Commander talk][]. He's hilarious, larger than life, and a
+born performer. He eschewed notes and slides and held his audience rapt for
+nearly an hour.
+
+Chris talked about his history in the industry, his past games and companies,
+and the path to shipping SupCom. I was impressed by his enthusiasm for
+building the [Gas Powered Games][] organization, focusing on unusal (for the
+game industry) concepts like sustainable working hours and healthy perks.
+
+He may be nearing the age of 40, but Chris was overflowing with energy. You
+could tell he'd been manic when he was younger, and it would surely have been
+all to easy for him to burn out. He'd obviously matured and seen the light,
+though, and he'd instilled the values of health and work/life balance in his
+team. It was sobering, and very inspiring.
+
+[Chris Taylor]: http://en.wikipedia.org/wiki/Chris_Taylor_(game_designer)
+[Total Annihilation]: http://www.tauniverse.com/
+[Supreme Commander]: http://supremecommander.com/
+[Supreme Commander talk]: http://www.gamespot.com/news/6167123.html
+[Gas Powered Games]: http://www.gaspowered.com/
+
+
+<a name="pretend"></a>
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#pretend) I Like to Pretend I'm a Game Developer
+
+<div class="img-shadow" style="float: left; margin-right: 10px">
+  <img src="gdc_2007_awards_miyamoto.jpg" />
+</div>
+No, really. Chris' talk reminded me that I really do enjoy pretending I'm part
+of the game development community. Sure, even if I was a developer at one
+point, I know I'm not any more. I still spend a lot of time following the
+industry, though. One of the things I like most about GDC is feeling like I'm
+part of the community, even for just a bit.
+
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <img src="gdc_2007_programmers_challenge.jpg" />
+</div>
+Events like the platform keynotes, Game Design Challenge, Experimental
+Gameplay Workshop, [Programmer's Challenge][], and [IGF][] and
+[Game Developers Choice Awards][] really drive that home. It doesn't last,
+and it's kind of cheating, since I'm not really a game developer, but it's
+still a great feeling.
+
+...and just like that, another GDC has come and gone. Sigh. See you next year!
+
+[Programmer's Challenge]: http://www.gamasutra.com/gdc2007/index.php?id=13077
+[IGF]: http://www.gamasutra.com/gdc2007/index.php?id=13039
+[Game Developers Choice Awards]: http://www.gamasutra.com/gdc2007/index.php?id=13040
+
