@@ -143,16 +143,20 @@ retail console to legitimate homebrew development. It was a big deal.
 <div class="img-noshadow" style="float: left; margin-right: 10px">
   <img src="gdc_2007_xboxlivearcade.jpg" />
 </div>
-Another big deal is on its way. In his talk on the past, present, and future
-of XBox Live Arcade, Chris Satchell casually mentioned the next big thing for
-XBL. [He called it Community Arcade][], and described it as the natural
-evolution of XBLA and XNA Game Studio Express.
+Even better, another big deal is on its way. In his talk on the past, present,
+and future of XBox Live Arcade, [Chris Satchell][] casually mentioned the next
+big thing for XBL. [He called it Community Arcade][], and described it as the
+natural evolution of XBLA and XNA Game Studio Express.
 
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <img src="gdc_2007_game_studio_express.gif" />
+</div>
 Basically, it's YouTube for XBLA. Garage developers will make games with XNA
 GSE, upload them, and XBLA users will immediately be able to download them,
 play them, and rate them. No more onerous certification process. Instant
 gratification!
 
+[Chris Satchell]: http://www.cmpevents.com/GD07/a.asp?option=G&V=3&id=251458
 [XBox Live]: http://www.xbox.com/en-US/live/
 [XBox Live Arcade]: http://www.xbox.com/games/livearcade
 [XNA Game Studio Express]: http://msdn2.microsoft.com/en-us/xna/aa937793.aspx
@@ -176,6 +180,9 @@ other companies to make products on top of. When Microsoft thinks
 user-generated content, it doesn't think content, it thinks _code_. It thinks
 _developers_. Like Sony, this cuts to the core of Microsoft's identity.
 
+<div class="img-shadow" style="float: left; margin-right: 10px">
+  <img src="gdc_2007_mii.jpg" />
+</div>
 [Nintendo][] didn't add anything to their story about user-generated content
 at this GDC. They've dabbled in it with [Animal Crossing][], with [Mii][]s
 on the [Wii][], and they've left the door open with [Channels][]. Regardless,
@@ -257,9 +264,10 @@ users buying virtual items for their in-game characters.
 These are bleeding-edge, forward-looking business models, and it's too early
 to say which will be financial successes. We already know that they're
 successful as products, though, based on the number of people playing them.
-Some industry veterans like [Todd Hollenshead][] will [bury their head in the
-sand][], scared that the sky is falling due to piracy and counterfeiting.
-Meanwhile, this new guard will be trailblazing a path for games of the future.
+Industry veterans like [Todd Hollenshead][] may
+[bury their head in the sand][], scared that the sky is falling due to piracy
+and counterfeiting. Meanwhile, this new guard will be trailblazing a path for
+games of the future.
 
 [Todd Hollenshead]: http://www.idsoftware.com/business/team/
 [bury their head in the sand]: http://biz.gamedaily.com/industry/feature/?id=15448
