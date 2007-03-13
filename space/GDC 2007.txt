@@ -59,7 +59,7 @@ invite-only press junket, and GDC's expo floor [doubling in size][], many
 wondered if GDC would take over E3's crown, for [better][] or [worse][].
 
 <div class="img-shadow" style="float: left; margin-right: 10px">
-  <img src="e3_logo.png" />
+  <a href="http://e3expo.com/"><img src="e3_logo.png" /></a>
 </div>
 GDC has come and gone, and the answer seems to be a qualified no. Yes, the
 expo floor was bigger, but as usual, nearly half of it was dedicated to
@@ -84,7 +84,7 @@ but it's always worthwhile.
 ### [![Icon-Permalink.png](/Icon-Permalink.png)](#user_content) User-Generated Content: YouTube for Games
 
 <div class="img-noshadow" style="float: right; margin-left: 10px">
-  <img src="gdc_2007_youtube.png" />
+  <a href="http://youtube.com/"><img src="gdc_2007_youtube.png" /></a>
 </div>
 
 The overriding theme this year can be summed up in three words: [YouTube][]
@@ -105,7 +105,8 @@ include downloadable content, free and paid, and the user's own videos and
 photographs.
 
 <div class="img-noshadow" style="float: left; margin-right: 10px">
-  <img src="gdc_2007_playstation_home.jpg" />
+  <a href="http://www.homebetatrial.com/">
+    <img src="gdc_2007_playstation_home.jpg" /></a>
 </div>
 Home is mostly interesting for its business and product significance, since
 Sony has traditionally avoided running online services for PlayStation
@@ -115,7 +116,8 @@ tools seem unlikely. Content will tend toward digital photographs, Sony
 products, and trailers and clips from Sony movies, games, and music.
 
 <div class="img-shadow" style="float: right; margin-left: 10px">
-  <img src="gdc_2007_little_big_planet.jpg" />
+  <a href="http://www.mediamolecule.com/games.html">
+    <img src="gdc_2007_little_big_planet.jpg" /></a>
 </div>
 Little Big Planet takes the same approach. It's the first AAA product from
 [Media Molecule][], the people behind [Rag Doll Kung Fu][]. It's a rich,
@@ -141,7 +143,8 @@ consoles for years, but this was the first time a console maker had opened a
 retail console to legitimate homebrew development. It was a big deal.
 
 <div class="img-noshadow" style="float: left; margin-right: 10px">
-  <img src="gdc_2007_xboxlivearcade.jpg" />
+  <a href="http://www.xbox.com/games/livearcade">
+    <img src="gdc_2007_xboxlivearcade.jpg" /></a>
 </div>
 Even better, another big deal is on its way. In his talk on the past, present,
 and future of XBox Live Arcade, [Chris Satchell][] casually mentioned the next
@@ -149,7 +152,8 @@ big thing for XBL. [He called it Community Arcade][], and described it as the
 natural evolution of XBLA and XNA Game Studio Express.
 
 <div class="img-shadow" style="float: right; margin-left: 10px">
-  <img src="gdc_2007_game_studio_express.gif" />
+  <a href="http://msdn2.microsoft.com/en-us/xna/aa937793.aspx">
+    <img src="gdc_2007_game_studio_express.gif" /></a>
 </div>
 Basically, it's YouTube for XBLA. Garage developers will make games with XNA
 GSE, upload them, and XBLA users will immediately be able to download them,
@@ -181,7 +185,8 @@ user-generated content, it doesn't think content, it thinks _code_. It thinks
 _developers_. Like Sony, this cuts to the core of Microsoft's identity.
 
 <div class="img-shadow" style="float: left; margin-right: 10px">
-  <img src="gdc_2007_mii.jpg" />
+  <a href="http://www.nintendo.com/consumer/systems/wii/en_na/channelsMii.jsp">
+    <img src="gdc_2007_mii.jpg" /></a>
 </div>
 [Nintendo][] didn't add anything to their story about user-generated content
 at this GDC. They've dabbled in it with [Animal Crossing][], with [Mii][]s
@@ -199,7 +204,7 @@ focused on: _games_.
 
 
 <div class="img-noshadow" style="float: right; margin-left: 10px">
-  <img src="gdc_2007_gametap_logo.png" />
+  <a href="http://gametap.com/"><img src="gdc_2007_gametap_logo.png" /></a>
 </div>
 <a name="web_2.0" href="#web_2.0"><img src="/Icon-Permalink.png" /></a>
 The PC and web have been home to homebrew game development and user-generated
@@ -227,7 +232,7 @@ YouTubes for games, although they're both Flash-only.
 ### [![Icon-Permalink.png](/Icon-Permalink.png)](#outside) Outside the Mainstream: Million-Subscriber MMOs You've Never Heard Of
 
 <div class="img-shadow" style="float: left; margin-right: 10px">
-  <img src="gdc_2007_webkinz.jpg" />
+  <a href="http://www.webkinz.com/"><img src="gdc_2007_webkinz.jpg" /></a>
 </div>
 A number of people, Raph Koster and [Daniel James][] among them,
 [drew attention][] to the fact that some of the biggest games in the world
@@ -237,7 +242,7 @@ spinoffs of television shows or other brands. Viacom has launched three,
 including [Virtual Laguna Beach][], in the past six months.
 
 <div class="img-shadow" style="float: right; margin-left: 10px">
-  <img src="gdc_2007_flyff.jpg" />
+  <a href="http://flyff.com/"><img src="gdc_2007_flyff.jpg" /></a>
 </div>
 Others, like [Silkroad Online][], [Maple Story][], and [Flyff][], are based
 primarily in China and Korea, and are entirely free. Many of these have
@@ -281,7 +286,8 @@ Conventional examples included the Wiimote and the DS' touch screen and
 microphone, but developers explored more radical controllers as well.
 
 <div class="img-shadow" style="float: right; margin-left: 10px">
-  <img src="gdc_2007_ds_stylus.jpg" />
+  <a href="http://www.nintendo.com/channel/ds">
+    <img src="gdc_2007_ds_stylus.jpg" /></a>
 </div>
 <a name="wii_ds" href="#wii_ds"><img src="/Icon-Permalink.png" /></a>
 The DS and Wii are here to stay. In Japan, that's an understatement: based on
@@ -326,7 +332,8 @@ surprisingly intuitive.
 [Karaoke Revolution]: http://www.konami.com/Konami/ctl3810/cp18756/cl0/Brands?attrib_search=Y&attrib_cnt=1&attrib_id_0=2341&attrib_value_0=Karaoke+Revolution
 
 <div class="img-shadow" style="float: left; margin-right: 10px">
-  <img src="gdc_2007_needle_thread.jpg" />
+  <a href="http://www.gamasutra.com/gdc2007/index.php?id=13055">
+    <img src="gdc_2007_needle_thread.jpg" /></a>
 </div>
 <a name="challenge" href="#challenge"><img src="/Icon-Permalink.png" /></a>
 Even the [Game Design Challenge][], that perennial favorite, threw its hat in
@@ -361,7 +368,8 @@ interesting characters, though, often fall into a few distinct personalities.
 Behold...the GDC speaker menagerie!
 
 <div class="img-shadow" style="float: left; margin-right: 10px">
-  <img src="gdc_2007_phil_harrison.jpg" />
+  <a href="http://www.gamasutra.com/gdc2007/index.php?id=13033">
+    <img src="gdc_2007_phil_harrison.jpg" /></a>
 </div>
 <a name="mouthpiece" href="#mouthpiece"><img src="/Icon-Permalink.png" /></a>
 The party mouthpiece is a fairly common species of big-name GDC speaker. These
@@ -394,7 +402,8 @@ a talented developer who makes great games, one of which eventually becomes a
 hit. They're suddenly thrust into the spotlight, whether they like it or not.
 
 <div class="img-shadow" style="float: right; margin-left: 10px">
-  <img src="gdc_2007_chris_taylor.jpg" />
+  <a href="http://www.gamespot.com/news/6167123.html">
+    <img src="gdc_2007_chris_taylor.jpg" /></a>
 </div>
 [Chris Taylor][], of [Total Annihilation][] and [Supreme Commander][] fame,
 exemplified this species at this year's GDC. Chris held court for over an hour
@@ -424,7 +433,8 @@ team. It was sobering, and very inspiring.
 ### [![Icon-Permalink.png](/Icon-Permalink.png)](#pretend) I Like to Pretend I'm a Game Developer
 
 <div class="img-shadow" style="float: left; margin-right: 10px">
-  <img src="gdc_2007_awards_miyamoto.jpg" />
+  <a href="http://www.gamasutra.com/gdc2007/index.php?id=13040">
+    <img src="gdc_2007_awards_miyamoto.jpg" /></a>
 </div>
 No, really. Chris' talk reminded me that I really do enjoy pretending I'm part
 of the game development community. Sure, even if I was a developer at one
@@ -433,7 +443,8 @@ industry, though. One of the things I like most about GDC is feeling like I'm
 part of the community, even for just a bit.
 
 <div class="img-shadow" style="float: right; margin-left: 10px">
-  <img src="gdc_2007_programmers_challenge.jpg" />
+  <a href="http://www.gamasutra.com/gdc2007/index.php?id=13077">
+    <img src="gdc_2007_programmers_challenge.jpg" /></a>
 </div>
 Events like the platform keynotes, Game Design Challenge, Experimental
 Gameplay Workshop, [Programmer's Challenge][], and [IGF][] and
