@@ -1,6 +1,8 @@
 simonitor
 [![simon_giftcard.jpg](/space/simon_giftcard.jpg)](http://www.simon.com/giftcard/)
 
+_Updated 3/22/2007._
+
 For privacy reasons, I use
 [prepaid debit cards](/space/privacy+through+prepaid+credit+cards) instead of
 credit cards. Right now, I mostly use
@@ -13,7 +15,7 @@ tedious to navigate the site and enter the card number and CCV over and over.
 So, I automated it.
 
 [simonitor.sh](/space/simonitor.sh) is a shell script that fetches the
-available balance of one or more
+available balance, expiration date, and address (if registered) for one or more
 [Simon gift card](http://www.simon.com/giftcard/). It uses
 [curl](http://curl.haxx.se/) to POST each card number and CCV to [Simon's web
 site](http://www.simon.com/), then handles the cookies, follows links, and
@@ -21,12 +23,12 @@ screen scrapes the resulting HTML.
 
 Here's an example run:
 
-    $ ./simonitor.sh 999901234578901/123 888801234578901/456
-    9999012345678901/123: $ 232.67
-    8888012345678901/456: $ 39.91
+    $ simonitor.sh 9999012345789/123 8888012345789/456
+    99990123456789/123: $232.67, expires 08/2008
+                        Mountain View, CA 94043
+    88880123456789/456: $39.91, expires 12/2008
     $
 <br class="clearing" />
-
 I briefly considered writing a [Greasemonkey](http://greasemonkey.mozdev.org/)
 script, but I have a small brain, and the shell script was simpler and didn't
 need a browser.

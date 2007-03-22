@@ -39,12 +39,18 @@ for cc in $*; do
     exit
   fi
 
-  BALANCE=`curl $CURL_ARGS https://www.simon.com/giftcard/card_balance.aspx \
-           | egrep -o 'lblBalance"><b>([^<]+)' \
-           | sed 's/lblBalance"><b>//'`
-  if [ $? != 0 ]; then
-    exit
+  TMPFILE=`mktemp /tmp/simonitor_out.XXXXXX` || exit 1
+  curl $CURL_ARGS -o $TMPFILE https://www.simon.com/giftcard/card_balance.aspx
+
+  BALANCE=`egrep -o 'lblBalance"><b>[^<]+' $TMPFILE | sed 's/lblBalance"><b>//'`
+  EXPDATE=`egrep -o 'lblExpDate">[^<]+' $TMPFILE | sed 's/lblExpDate">//'`
+  echo "$cc: $BALANCE, expires $EXPDATE"
+
+  CITY_STATE_ZIP=`egrep -o 'lblPersonAddress">[^<]*<br>[^<]+' $TMPFILE \
+                  | sed 's/lblPersonAddress">[^<]*<br>//'`
+  if [ "$CITY_STATE_ZIP" != "" ]; then
+    echo "                      $CITY_STATE_ZIP"
   fi
 
-  echo "$cc: $BALANCE"
+  shred -u $TMPFILE
 done
