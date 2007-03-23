@@ -34,5 +34,29 @@ file:
 
 Add them to yours, restart Firefox, load up your calendar, and you should be
 able to resize and scroll the window so that only your actual calendar is
-visible. Tweak the width and height to your liking!
+visible. Tweak the width and height to your liking.
 
+If you're happy with that, try out these CSS rules to further resize and
+customize the layout:
+
+    /* date picker, upper left hand */
+    div#dp_0 {
+      display: none !important;
+    }
+    
+    /* "Next 4 Days" and "Agenda" tabs */
+    td#mode_link4, td#mode_link5 {
+      display: none !important;
+    }
+    
+    /* "Calendars" picker */
+    div#calendars {
+      min-height: 335px !important;
+    }
+    
+    body {
+      max-width: 600px !important;
+      max-height: 480px !important;
+    }
+
+Tweak as necessary!

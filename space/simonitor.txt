@@ -16,7 +16,7 @@ So, I automated it.
 
 [simonitor.sh](/space/simonitor.sh) is a shell script that fetches the
 available balance, expiration date, and address (if registered) for one or more
-[Simon gift card](http://www.simon.com/giftcard/). It uses
+[Simon gift cards](http://www.simon.com/giftcard/). It uses
 [curl](http://curl.haxx.se/) to POST each card number and CCV to [Simon's web
 site](http://www.simon.com/), then handles the cookies, follows links, and
 screen scrapes the resulting HTML.
