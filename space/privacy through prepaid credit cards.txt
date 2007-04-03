@@ -42,7 +42,7 @@ a fairly comprehensive list of issuers. However, only a few come close to my
 requirements. Here's the short list.
 
   * [Green Dot](http://greendotonline.com/)
-  * [WebSecret](http://websecretcard.com/) _(a Green Dot brand)_
+  * [WebSecret](http://websecretcard.com/) _(a Green Dot brand, discontinued)_
   * [PrivaCash](https://secure.privacash.com/) _(affilated with Green Dot)_
   * [Morgan Beaumont](http://www.morganbeaumont.com/)
   * [ecount](http://ecount.com/defaultecount.asp)
@@ -54,6 +54,7 @@ requirements. Here's the short list.
 _(discontinued)_
   * Mall gift cards: [Simon](https://www.simon.com/giftcard/), [Westfield](http://westfield.com/uscentres/giftcards/), etc.
   * [Swiss Bankers Travel Cash](https://www.travelcash.ch/)
+  * [International Money Transfer Card](http://www.imtcard.com/)
 
 ### Personal information
 
@@ -170,18 +171,22 @@ Elite Plus charges $150! No thanks.
 
 ### The Verdict
 
-I currently use [WebSecret](http://websecretcard.com/), and I'm fairly happy
-with it. I buy it with cash, and I don't even have to give my name, much less my
-address or SSN. Sooner or later, I'll probably run into a merchant that uses AVS
-(address verification), and I'll get declined. I've avoided it so far, though.
-Also, I get pinged with a monthly $5 fee for the privilege of using the card,
-which is annoying, but not a dealbreaker.
+I currently use [Simon gift cards](https://www.simon.com/giftcard/), and I'm
+happy with them. They're not reloadable, but they take up to $500, accept cash,
+and don't even ask for my name, much less my address or SSN. Plus, their [web
+interface](https://www.simon.com/giftcard/) is fast, friendly, and lets you
+connect _any_ name and address you want to each card, so you can use them
+with merchants that do [AVS
+checks](http://en.wikipedia.org/wiki/Address_Verification_System).
 
-Before WebSecret, I used Bank of America's gift cards, which weren't nearly as
-nice. They required name, address, and SSN, all of which I happily fabricated.
-Also, they only allowed purchase with another credit or debit card, which I
-couldn't avoid. It's recently become a moot point, though, since they recently
-[discontinued the cards](https://www.bankofamericagiftcard.com/) altogether!
+Before Simon, I used [WebSecret](http://websecretcard.com/), which was
+discontinued, and [Bank of America gift
+card](http://bankofamerica.com/giftcard/), which were also discontinued, and
+not as nice. They required name, address, and SSN, all of which I happily
+fabricated. Also, they only allowed purchase with another credit or debit card,
+which I couldn't avoid. It's recently become a moot point, though, since they
+recently [discontinued the cards](https://www.bankofamericagiftcard.com/)
+altogether!
 
 Apart from prepaid credit and debit cards, there are
 [many](http://www.paypal.com/)[ promising](http://ecount.com/defaultecount.asp)
