@@ -1,0 +1,64 @@
+iTunes for Windows script to unset <i>Skip when shuffling</i>
+[![iTunes](/space/itunes.jpg)](http://apple.com/itunes/)
+[![iPod Shuffle](/space/ipod_shuffle.jpg)](http://apple.com/ipodshuffle/)
+[![Podcast](/space/rss.jpg)](http://en.wikipedia.org/wiki/Podcast)
+
+[no\_skip\_when\_shuffling.js](/space/no_skip_when_shuffling.js) is a script for
+[iTunes]((http://apple.com/itunes/) for Windows that unsets the
+[_skip when shuffling_](http://www.reelsmart.com/2006/01/28/itunes-tip-29-skip-tracks-when-shuffling/)
+setting on all songs in a playlist. It was inspired by [an
+AppleScript](http://www.macosxhints.com/article.php?story=20070218041737189)
+which does the same thing for iTunes on Mac OS X.
+
+_Skip when shuffling_ prevents songs and podcasts from playing nice with the
+iPod Shuffle. It won't play them when in shuffle mode, and more imoprtantly,
+[Autofill](http://www.apple.com/ipodshuffle/sync.html) won't see them at all.
+Worse, iTunes sets _skip when shuffling_ by default on new podcasts when
+they're downloaded. This script provides a workaround.
+
+I have a [Smart Playlist](http://docs.info.apple.com/article.html?artnum=93139)
+for the podcasts I haven't listened to yet. Every morning, I update my
+podcasts, then run this script. When I plug in my iPod, Autofill syncs it so
+that it has only the podcasts I haven't listened to yet.
+
+You can [download the script](/space/no_skip_when_shuffling.js), or copy and
+paste it from here:
+
+    var playlist_name = "Podcasts";
+    
+    var iTunes = WScript.CreateObject("iTunes.Application");
+    var sources = iTunes.Sources;
+    var playlists = sources.ItemByName("Library").Playlists;
+    var playlist = playlists.ItemByName(playlist_name);
+    var tracks = playlist.Tracks;
+    
+    for (i = 1; i <= tracks.Count; i++) {
+        tracks.Item(i).ExcludeFromShuffle = false;
+    }
+
+<br />
+Set `playlist_name` to the name of the playlist you want it to change. Then,
+make sure the file's extension in Windows is `.js`, and double-click on
+it. It should be [run by
+wscript.exe](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/wsh_runfromwindowsbasedhost.mspx?mfr=true).
+If it's not, change the File Type for `.js` files in Explorer's Folder
+Options.
+
+This script uses the [Windows Script
+Host](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/wsh_overview.mspx)
+and the [iTunes' COM SDK for
+Windows](http://developer.apple.com/sdk/itunescomsdk.html). That page has since
+disappeared, so I used a
+[Microsoft TechNet article on scripting
+iTunes](http://www.microsoft.com/technet/scriptcenter/funzone/tunes.mspx) -
+weird, I know, but it was invaluable. You can also still find
+`iTunesCOMInterface.h` on
+[Google Code Search](http://www.google.com/codesearch?hl=en&q=+iTunesCOMInterface.h+show:tuaQ8-JRruc:VCewQzHOoTs:OeYmnRoCpzg&sa=N&cd=3&ct=rc&cs_p=svn://svn.berlios.de/mgoodies/trunk&cs_f=listeningto/players/iTunesCOMInterface.h#a0),
+among others.
+Finally,
+[RipperDoc's tutorial](http://blog.nogo.se/2007/01/17/scripting-itunes-making-an-alarm-clock/)
+was helpful, as were
+[Otto's](http://ottodestruct.com/blog/2005/10/20/itunes-javascripts/) and
+[Doug's](http://dougscripts.com/itunes/itinfo/windowshelp.php) collections of
+scripts.
+
