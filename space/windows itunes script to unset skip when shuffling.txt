@@ -11,7 +11,7 @@ AppleScript](http://www.macosxhints.com/article.php?story=20070218041737189)
 which does the same thing for iTunes on Mac OS X.
 
 _Skip when shuffling_ prevents songs and podcasts from playing nice with the
-iPod Shuffle. It won't play them when in shuffle mode, and more imoprtantly,
+iPod Shuffle. It won't play them when in shuffle mode, and more importantly,
 [Autofill](http://www.apple.com/ipodshuffle/sync.html) won't see them at all.
 Worse, iTunes sets _skip when shuffling_ by default on new podcasts when
 they're downloaded. This script provides a workaround.
