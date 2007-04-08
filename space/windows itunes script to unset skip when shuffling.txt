@@ -39,24 +39,23 @@ paste it from here:
 <br />
 Set `playlist_name` to the name of the playlist you want it to change. Then,
 make sure the file's extension in Windows is `.js`, and double-click on
-it. It should be [run by
-wscript.exe](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/wsh_runfromwindowsbasedhost.mspx?mfr=true).
+it. It should be run by
+[Windows Script
+Host](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/wsh_overview.mspx) (
+[wscript.exe](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/wsh_runfromwindowsbasedhost.mspx?mfr=true).
 If it's not, change the File Type for `.js` files in Explorer's Folder
 Options.
 
-This script uses the [Windows Script
-Host](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/wsh_overview.mspx)
-and the [iTunes' COM SDK for
+This script uses the [iTunes COM SDK for
 Windows](http://developer.apple.com/sdk/itunescomsdk.html). That page has since
 disappeared, so I used a
 [Microsoft TechNet article on scripting
 iTunes](http://www.microsoft.com/technet/scriptcenter/funzone/tunes.mspx) -
-weird, I know, but it was invaluable. You can also still find
-`iTunesCOMInterface.h` on
-[Google Code Search](http://www.google.com/codesearch?hl=en&q=+iTunesCOMInterface.h+show:tuaQ8-JRruc:VCewQzHOoTs:OeYmnRoCpzg&sa=N&cd=3&ct=rc&cs_p=svn://svn.berlios.de/mgoodies/trunk&cs_f=listeningto/players/iTunesCOMInterface.h#a0),
-among others.
-Finally,
-[RipperDoc's tutorial](http://blog.nogo.se/2007/01/17/scripting-itunes-making-an-alarm-clock/)
+Microsoft, weird, I know, but the article was invaluable. You can also still
+find `iTunesCOMInterface.h` on [Google Code
+Search](http://www.google.com/codesearch?hl=en&q=+iTunesCOMInterface.h+show:tuaQ8-JRruc:VCewQzHOoTs:OeYmnRoCpzg&sa=N&cd=3&ct=rc&cs_p=svn://svn.berlios.de/mgoodies/trunk&cs_f=listeningto/players/iTunesCOMInterface.h#a0),
+among others. Finally, [RipperDoc's
+tutorial](http://blog.nogo.se/2007/01/17/scripting-itunes-making-an-alarm-clock/)
 was helpful, as were
 [Otto's](http://ottodestruct.com/blog/2005/10/20/itunes-javascripts/) and
 [Doug's](http://dougscripts.com/itunes/itinfo/windowshelp.php) collections of
