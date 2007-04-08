@@ -41,8 +41,8 @@ Set `playlist_name` to the name of the playlist you want it to change. Then,
 make sure the file's extension in Windows is `.js`, and double-click on
 it. It should be run by
 [Windows Script
-Host](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/wsh_overview.mspx) (
-[wscript.exe](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/wsh_runfromwindowsbasedhost.mspx?mfr=true).
+Host](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/wsh_overview.mspx)
+([wscript.exe](http://www.microsoft.com/resources/documentation/windows/xp/all/proddocs/en-us/wsh_runfromwindowsbasedhost.mspx?mfr=true)).
 If it's not, change the File Type for `.js` files in Explorer's Folder
 Options.
 
