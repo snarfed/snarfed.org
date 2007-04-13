@@ -1,0 +1,43 @@
+2007-04--13
+
+### Key signing party
+
+![key signing](/space/key_signing.jpg)
+
+I have a reputation for being a bit of a
+[privacy freak](/space/privacy+through+prepaid+credit+cards).
+Given that, it's a little
+odd that I [didn't have a PGP key until 2004](/space/2004-10-03),
+since [cypherpunks](http://en.wikipedia.org/wiki/Cypherpunk)
+and privacy freaks tend to love [PGP](http://www.pgp.net/pgp-faq/).
+
+What's even more odd is that, until today, I'd never been to a [key signing
+party](http://en.wikipedia.org/wiki/Key_signing_party)! We had a small one at
+work, so I finally have some signatures on my key. Very cool.
+
+From a sociological point of view, the evolution of key signing parties is
+utterly fascinating. If you're not a geek, it's similar to being in the mafia.
+Mobsters are constantly meeting new recruits and business associates, but they
+have to be careful about who they trust. So, when they bring someone new into
+the fold, they "vouch" for them.
+
+This is usually good enough, but sometimes they need to work with someone new,
+or from out of town. (Understandably, that happens pretty often.) They might not
+know the new person directly, but they might know someone else who will vouch
+for them. If they're lucky, they might even have two or three friend-of-friend
+links. It's not quite as good as vouching directly, but it's close.
+
+Key signing parties are basically the same thing, but with computers, crypto,
+geeks, and a healthy dose of paranoia. Similar to
+[La Cosa Nostra](http://people.howstuffworks.com/mafia1.htm),
+key signing parties have developed a fair amount of
+[structure](http://linuxreviews.org/howtos/gnupg/signingparty/),
+[coordination](http://www.keysigning.org/methods/adhoc), and even
+[etiquette](http://www.linuxsecurity.com/content/view/121645/49/). For
+example, ironically, laptops and PDAs are _frowned_ upon, since the goal is to
+verify identities and keys
+[out of band](http://catb.org/jargon/html/O/out-of-band.html), in person.
+
+It was great, geeky fun. Now that I know the ropes, I'll have to go to another
+one. On an unrelated note,
+[happy Friday the 13th](http://scientificamerican.com/podcast/podcast.mp3?e_id=E749295D-E7F2-99DF-34BCD6AC79A196CA&ref=p_sciam)!
