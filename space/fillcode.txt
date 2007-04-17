@@ -3,9 +3,11 @@ fillcode
 [![gnu.jpg](/space/gnu.jpg)](/space/fillcode)
 
 For the impatient:  
-&nbsp; [Download fillcode.el 0.5](/space/fillcode.el)  
+&nbsp; [Download fillcode.el 0.6](/space/fillcode.el)  
 &nbsp; [Download fillcode.tar.gz](/space/fillcode.tar.gz) (includes
 [elunit](http://www.lostway.org/~tko/elisp/elunit/) unit tests)  
+
+_Updated 2007/04/16._
 
 Fillcode is an [Emacs](http://gnu.org/software/emacs/) minor mode that fills, or
 wraps, some parts of source code. It's best described by example. Fillcode fills
