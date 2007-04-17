@@ -8,7 +8,7 @@ them. So, here they are!
 
   * Write a [session management
 plugin](http://sourceforge.net/mailarchive/message.php?msg_id=37745715) for
-[Gaim](http://gaim.sf.net/).
+[Pidgin](http://pidgin.im/) (formerly [Gaim](http://gaim.sf.net/)).
 **\[_Done! See Mattperry's [SessionSave plugin](http://somewhere.fscked.org/sessionsave/)._]**
 
   * Improve [tcsh](http://tcsh.org)'s
@@ -36,7 +36,7 @@ this. Sweet!_]**
 [Google Ajax Search API](http://code.google.com/apis/ajaxsearch/) for offline
 development and testing. Use failure injection, etc. to determine behavior.
 
-  * [Gaim](http://gaim.sf.net/)'s
+  * [Pidgin](http://pidgin.im/) (formerly [Gaim](http://gaim.sf.net/))'s
 [TOC prpl](http://gaim.sf.net/protocol.php#toc) hasn't been updated for
 [2.0.0](http://sourceforge.net/project/showfiles.php?group_id=235&package_id=253&release_id=456679).
 It doesn't build in any of the beta releases. It should be either brought up to
@@ -149,6 +149,7 @@ for the original idea.
   * Build a simple webapp with [Django](http://www.djangoproject.com/). Is it
 really as good as [Rails](http://www.rubyonrails.com/),
 [Struts](http://struts.apache.org/), and [Zope](http://www.zope.org/)?
+**\[_Done, at [work](http://google.com/). Django templates rock!_]**
 
   * Revive [jxtapy](http://jxtapy.jxta.org/), which was founded to provide
 Python bindings for [JXTA](http://jxta.org/), but never got off the ground. Use
@@ -273,18 +274,19 @@ that (anonymously!) records lots of people's away messages, then process them
 offline and look for large-scale patterns at certain times - concerts, holidays,
 elections, TV shows, etc.
 
-  * Build a [Gaim](http://gaim.sf.net/) "secretary." If you go idle, but you
-didn't leave an away message, it guesses an appropriate one based on your
-previous away messages at that time of day, day of the week, etc.
+  * Build a [Pidgin](http://pidgin.im/) (formerly [Gaim](http://gaim.sf.net/))
+"secretary." If you go idle, but you didn't leave an away message, it guesses
+an appropriate one based on your previous away messages at that time of day,
+day of the week, etc.
 
-  * [Gaim](http://gaim.sf.net/) plugins can provide their own preferences panes,
-but only if they're written in C. Hack on Gaim to allow this for Perl plugins
-too. See [this email
+  * [Pidgin](http://pidgin.im/) (formerly [Gaim](http://gaim.sf.net/)) plugins
+can provide their own preferences panes, but only if they're written in C.
+Hack on Pidgin to allow this for Perl plugins too. See [this email
 thread](http://sourceforge.net/mailarchive/message.php?msg_id=7225698).
 
   * Contribute to [SIP/SIMPLE](http://xml.coverpages.org/ni2003-10-31-a.html),
 the [IETF](http://ietf.org/) instant messaging/presence standard. Check on the
-status of Gaim's SIP/SIMPLE protocol plugin?
+status of Pidgin's SIP/SIMPLE protocol plugin?
 
   * Do stateful packet inspection, at the host level, to monitor the services
 that are running. Build in a little domain-specific knowledge, and lots of
