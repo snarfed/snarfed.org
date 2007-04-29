@@ -14,7 +14,8 @@ db/current file first, and not to copy the transactions/ directory. I backup my
 repository with rsync, like so:
 
     rsync ... /path/to/repo/db/current backup:~/repo/db
-    rsync ... --exclude transactions/ --exclude db/current /path/to/repo backup:~/
+    rsync ... --exclude transactions/ --exclude db/current \
+              /path/to/repo backup:~/
 
 See also:
   * [subversion and tkdiff](/space/subversion and tkdiff)
