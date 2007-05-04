@@ -14,7 +14,7 @@ py['index_use_story_template'] = True
 
 
 VERSION:
-0.1 First release
+0.2
 
 TODO:
 - use a template instead of hard-coded HTML
@@ -33,11 +33,12 @@ GNU General Public License for more details.
 """
 import math
 import os.path
+import time
 from Pyblosxom import tools
 import Pyblosxom.entries
 
 __author__ = 'Ryan Barrett'
-__version__ = '0.1'
+__version__ = '0.2'
 __url__ = 'http://snarfed.org/space/pyblosxom+index'
 __description__ = 'Displays an alphabetical index of all entries.'
 
@@ -123,8 +124,11 @@ def cb_filelist(args):
 
     body += '</table>\n<hr class="index"/>\n\n'
 
-  data = {'title': 'index'}
-  fe = Pyblosxom.entries.base.generate_entry(request, data, body, None)
+  data = {'title': config.get('index_title', 'index')}
+  # use the epoch for mtime. otherwise, pyblosxom uses the current time, which
+  # makes other plugins (like weblogsping) think this is a new entry.
+  epoch = time.localtime(0)
+  fe = Pyblosxom.entries.base.generate_entry(request, data, body, epoch)
   return [fe]
 
 def cb_story(args):

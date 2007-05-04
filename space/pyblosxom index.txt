@@ -7,6 +7,8 @@ For the impatient: <br />
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
 &nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)  
 
+_Updated 5/4/2007._
+
 [index.py](/space/index.py) is a [PyBlosxom](http://pyblosxom.sf.net/) plugin
 that displays displays an alphabetical index of all entries. It's similar to
 [other](http://pyblosxom.sourceforge.net/blog/registry/archives/pyarchives)
