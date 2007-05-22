@@ -135,3 +135,13 @@ turn off GDM on Ubuntu, run
 out this line in **/etc/inittab**:
 
         x:5:respawn:/etc/X11/prefdm -nodaemon
+
+  * [HGFS](http://www.vmware.com/support/ws4/doc/running_sharefold_ws.html),
+VMWare's Linux filesystem for shared folders, is quirky about permissions with
+Linux guests on Windows hosts. Windows and *nix filesystems handle permissions
+differently. *nix's are generally richer, so when the physical filesystem is
+on Windows, HGFS allows full access too all files for all users, but exposes
+their permissions as 700 and owned by root:root. This means that stat thinks
+you can't read them! This often crops up when running a `configure` script (or
+`autogen.sh`, `autoconf`, and `automake`) to build a program from source. The
+only workaround I've found is not to use HGFS. :/
