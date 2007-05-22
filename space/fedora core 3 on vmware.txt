@@ -143,5 +143,6 @@ differently. *nix's are generally richer, so when the physical filesystem is
 on Windows, HGFS allows full access too all files for all users, but exposes
 their permissions as 700 and owned by root:root. This means that stat thinks
 you can't read them! This often crops up when running a `configure` script (or
-`autogen.sh`, `autoconf`, and `automake`) to build a program from source. The
-only workaround I've found is not to use HGFS. :/
+`autogen.sh`, `autoconf`, and `automake`) to build a program from source. I've
+[asked VMWare about this](http://www.vmware.com/community/thread.jspa?threadID=85594&tstart=0),
+but for now, it looks like the only workaround is not to use HGFS. :/
