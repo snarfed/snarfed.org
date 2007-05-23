@@ -10,7 +10,7 @@ another workspace. Specifically, I want to close all of the files I have open
 in the old workspace, then open the corresponding files in the new workspace.
 This elisp adds a command to
 [buffer-menu-mode](http://www.gnu.org/software/emacs/manual/html_node/Several-Buffers.html#index-buffer_002dmenu-934),
-used in `*Buffer List*`, which you get with `C-x b`, to do
+used in the `*Buffer List*` that `C-x b` gives you, to do
 just that.
 
 To use it, mark files in `*Buffer List*` by pressing `m`, then press `r` to
