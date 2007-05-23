@@ -276,6 +276,7 @@ div.img-shadow, div.p-shadow {
   background-image: url(/drop_shadow.gif);
   background-position: bottom right;
   margin: 6px 0 0 4px;
+  margin-bottom: 1em;
 }
 
 div.p-shadow {

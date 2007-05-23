@@ -1,7 +1,7 @@
 libmsntp
 [![clock.jpg](/space/clock.jpg)](/space/libmsntp)
 
-For the impatient: <br />
+For the impatient:  
 [Download libmsntp 1.6a source](/space/libmsntp-1.6a.tar.gz)  
 [Download binary RPM packages](http://rpm.pbone.net/index.php3/stat/4/idpl/1636073/com/libmsntp1-1.6a-1mdk.i586.rpm.html)  
 [Msntp web site](http://www.hpcf.cam.ac.uk/export/)  

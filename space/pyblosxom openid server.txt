@@ -3,7 +3,7 @@ pyblosxom openid server
 [![openid](/space/openid-logo.png)](http://openid.net/)
 [![pyblosxom](/space/pyblosxom.jpg)](http://pyblosxom.sf.net/)
 
-For the impatient: <br />
+For the impatient:  
 &nbsp; Download [openid\_server.py](/space/openid_server.py) or
 [openid\_server-0.3.tar.gz](/space/openid_server-0.3.tar.gz)  
 &nbsp; Download [openid\_libs.zip](/space/openid_libs.zip)  

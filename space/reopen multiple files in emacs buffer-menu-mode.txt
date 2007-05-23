@@ -1,21 +1,35 @@
 reopen multiple files in emacs buffer-menu-mode
 [![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)
 
-I use [GNU Emacs](http://gnu.org/software/emacs/) as my text editor, and I
-love it. I regularly use it to work with multiple workspaces on disk that have
-identical sets of files and directories.
+I use [GNU Emacs](http://gnu.org/software/emacs/) as my text editor, and I love
+it. I regularly use it to work with multiple workspaces that have identical
+sets of files and directories.
 
 After I've worked in one workspace for a while, I often want to switch to
 another workspace. Specifically, I want to close all of the files I have open
 in the old workspace, then open the corresponding files in the new workspace.
-This elisp adds a command to
-[buffer-menu-mode](http://www.gnu.org/software/emacs/manual/html_node/Several-Buffers.html#index-buffer_002dmenu-934),
-used in the `*Buffer List*` that `C-x b` gives you, to do
-just that.
 
-To use it, mark files in `*Buffer List*` by pressing `m`, then press `r` to
-run the `Buffer-menu-reopen` function. It will ask you for a regexp and a
-replacement string, then reopen the marked files in the new location.
+For example, I might press `C-x b` to get a `*Buffer List*` and see that I have
+these files open:
+
+     MR Buffer            Size  Mode  File
+     -- ------            ----  ----  ----
+        foo.cc           10423  C++   ~/src/foo/foo.cc
+        foo.h             2933  C++   ~/src/foo/foo.h
+    .   foo_unittest.cc  17965  C++   ~/src/foo/foo_unittest.cc
+        *scratch*            0  Lisp  /tmp/*scratch*
+     *  *Messages*         726  Fundamental  
+
+When I finish the change I'm working on in `~/src`, I might want to start a new
+change in `~/src2`. To do that, I'd have to close `foo.cc`, `foo.h`, and
+`foo_unittest.cc`, and reopen them in `~/src2/foo`.
+
+This elisp adds a command to
+[`buffer-menu-mode`](http://www.gnu.org/software/emacs/manual/html_node/Several-Buffers.html#index-buffer_002dmenu-934),
+used in `*Buffer List*`, to do just that. To use it, mark the files you want to
+reopen with `m`, then press `r` to run the `Buffer-menu-reopen`
+function. It will ask you for a pattern and a replacement, then reopen the
+marked files in the new location.
 
     (defun Buffer-menu-reopen (regexp replacement)
       "Reopens marked files in a different place by replacing part of their path."
@@ -44,7 +58,6 @@ replacement string, then reopen the marked files in the new location.
                    "\n\\[Buffer-menu-reopen] -- reopen the files marked with m "
                    "in a new place in the filesystem.")))
 
-<br />
 Similarly, this function reopens the current buffer in a new location.
 
     (defun replace-path-and-reopen (regexp replacement)
@@ -58,7 +71,6 @@ Similarly, this function reopens the current buffer in a new location.
               (kill-buffer orig-buffer))
           (error "No match for %s in %s" regexp orig-file))))
 
-<br />
 See also:
   * [fillcode](/space/fillcode)
   * [gnu emacs backup files](/space/gnu emacs backup files)

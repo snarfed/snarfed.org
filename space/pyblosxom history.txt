@@ -2,14 +2,14 @@ history.py
 
 ![clock_icon.jpg](clock_icon.jpg)
 
-For the impatient: <br />
+For the impatient:  
 &nbsp; Download [history.py 0.3](/space/history.py)  
 &nbsp; Download [history-0.3.tar.gz](/space/history-0.3.tar.gz) (includes templates)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
 &nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)  
 &nbsp; [svnpyblosxom](http://www.baus.net/svnpyblosxom)
   ([simplified](http://0pointer.de/blog/projects/pyblosxom-svn.html)),
-  a related plugin
+  a related plugin  
 
 [history.py](/space/history.py) is a [PyBlosxom](http://pyblosxom.sf.net/)
 plugin that displays change history for entries. The change history must

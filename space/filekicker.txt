@@ -2,10 +2,10 @@ filekicker
 
 ![kick.jpg](kick.jpg)
 
-For the impatient: <br />
-&nbsp; [Download filekicker 0.2](/space/filekicker.py) <br />
-&nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/) <br />
-&nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)
+For the impatient:  
+&nbsp; [Download filekicker 0.2](/space/filekicker.py)  
+&nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
+&nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)  
 
 [Filekicker](/space/filekicker.py) is a [PyBlosxom](http://pyblosxom.sf.net/)
 plugin that serves static files. The file to serve is determined by the URL

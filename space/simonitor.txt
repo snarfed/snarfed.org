@@ -28,7 +28,7 @@ Here's an example run:
                         Mountain View, CA 94043
     88880123456789/456: $39.91, expires 12/2008
     $
-<br class="clearing" />
+
 I briefly considered writing a [Greasemonkey](http://greasemonkey.mozdev.org/)
 script, but I have a small brain, and the shell script was simpler and didn't
 need a browser.

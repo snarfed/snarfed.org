@@ -36,7 +36,6 @@ paste it from here:
         tracks.Item(i).ExcludeFromShuffle = false;
     }
 
-<br />
 Set `playlist_name` to the name of the playlist you want it to change. Then,
 make sure the file's extension in Windows is `.js`, and double-click on
 it. It should be run by
