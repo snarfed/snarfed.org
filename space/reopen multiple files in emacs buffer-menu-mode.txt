@@ -1,0 +1,68 @@
+reopen multiple files in emacs buffer-menu-mode
+[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)
+
+I use [GNU Emacs](http://gnu.org/software/emacs/) as my text editor, and I
+love it. I regularly use it to work with multiple workspaces on disk that have
+identical sets of files and directories.
+
+After I've worked in one workspace for a while, I often want to switch to
+another workspace. Specifically, I want to close all of the files I have open
+in the old workspace, then open the corresponding files in the new workspace.
+This elisp adds a command to
+[buffer-menu-mode](http://www.gnu.org/software/emacs/manual/html_node/Several-Buffers.html#index-buffer_002dmenu-934),
+used in `*Buffer List*`, which you get with `C-x b`, to do
+just that.
+
+To use it, mark files in `*Buffer List*` by pressing `m`, then press `r` to
+run the `Buffer-menu-reopen` function. It will ask you for a regexp and a
+replacement string, then reopen the marked files in the new location.
+
+    (defun Buffer-menu-reopen (regexp replacement)
+      "Reopens marked files in a different place by replacing part of their path."
+      (interactive "sReplace: \nsWith: ")
+      (goto-char (point-min))
+      (while (search-forward "\n>" nil t)
+        (let* ((original-buffer (Buffer-menu-buffer nil))
+               (original-file (buffer-file-name original-buffer)))
+          (when (and original-buffer
+                     original-file
+                     (string-match regexp original-file))
+            (let ((new-file (replace-match replacement nil nil original-file)))
+              (when (file-exists-p new-file)
+                (kill-buffer original-buffer)
+                (find-file-noselect new-file))))))
+      (list-buffers))
+    
+    ; add keybinding
+    (define-key Buffer-menu-mode-map "r" 'Buffer-menu-reopen)
+    
+    ; add to docstring
+    (progn
+      (put 'Buffer-menu-mode 'function-documentation nil)
+      (put 'Buffer-menu-mode 'function-documentation
+           (concat (documentation 'Buffer-menu-mode t)
+                   "\n\\[Buffer-menu-reopen] -- reopen the files marked with m "
+                   "in a new place in the filesystem.")))
+
+<br />
+Similarly, this function reopens the current buffer in a new location.
+
+    (defun replace-path-and-reopen (regexp replacement)
+      "Reopens the file visited by the current buffer in a different location."
+      (interactive "sReplace: \nsWith: ")
+      (let ((orig-buffer (current-buffer))
+            (orig-file (buffer-file-name (current-buffer))))
+        (if (string-match regexp orig-file)
+            (progn
+              (find-file (replace-match replacement nil nil orig-file))
+              (kill-buffer orig-buffer))
+          (error "No match for %s in %s" regexp orig-file))))
+
+<br />
+See also:
+  * [fillcode](/space/fillcode)
+  * [gnu emacs backup files](/space/gnu emacs backup files)
+  * [why I don't run shells inside Emacs](/space/why I don't run shells inside Emacs)
+  * [Emacs and remote X Windows](/space/Emacs and remote X Windows)
+  * [minimal .emacs for fast startup](/space/minimal .emacs for fast startup)
+
