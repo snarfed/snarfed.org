@@ -10,6 +10,7 @@ nf { color: darkgoldenrod; }
 
 [Books I'd like to read](/space/books#to_read) and
 [books I've read](/space/books#read).
+<nf>nf</nf> is non-fiction, <f>f</f> is fiction.
 
 <!-- Also [mini reviews](/space/books#mini_reviews) for a few books I read
 a while back. -->
@@ -21,508 +22,509 @@ a while back. -->
 
   * [Etgar Keret - The Bus Driver who Wanted to be
 God](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Etgar Keret&title=The Bus Driver who Wanted to be God)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Raby, Ruggeri - How To Protect Your Personal Information](http://www.authorhouse.com/BookStore/ItemDetail~bookid~39005.aspx)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Daniel Gilbert - Stumbling on Happiness](http://www.stumblingonhappiness.com/)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Ted Chiang - Hell is the Absence of God](http://isbn.nu/aisbn/chiang%20ted)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Orson Scott Card - Getting
 Lost](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Orson Scott Card&title=Getting Lost)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Christof Koch - The Quest for
 Consciousness](http://www.questforconsciousness.com/)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Carter Scholz -
 Radiance](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Carter Scholz&title=Radiance)
-<f>(fiction)</f>
-
-<a name="read"></a>
-**Books I've read**: 
-[![Icon-Permalink.png](/Icon-Permalink.png)](#to_read)
+<f>f</f>
 
   * [Bruce Sterling](http://blog.wired.com/sterling/) -
 [The Difference Engine](http://isbn.nu/9780553070286),
 [Mirrorshades](http://www.well.com/conf/mirrorshades/),
 [Schismatrix](http://isbn.nu/9780441754007)
+<f>f</f>
 
   * [J. J. Luna - Invisible Money](http://howtobeinvisible.com/index.cfm/page/Books#skip)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
+
+<a name="read"></a>
+**Books I've read**: 
+[![Icon-Permalink.png](/Icon-Permalink.png)](#to_read)
 
   * [Scott Rosenberg - Dreaming in Code](http://www.dreamingincode.com/)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [David Simon](http://en.wikipedia.org/wiki/David_Simon) -
 [Homicide](http://www.randomhouse.com/rhpg/catalog/display.pperl?isbn=9780449908082),
 [The Corner](http://www.randomhouse.com/catalog/display.pperl?isbn=9780767900317)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Tom McCarthy - Remainder](http://www.randomhouse.com/vintage/catalog/display.pperl?isbn=9780307278357)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Salman Rushdie - Shalimar the Clown](http://www.randomhouse.com/catalog/display.pperl?isbn=9780679463351)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Kemble Scott - SoMa](http://kemblescott.com/)
-<f>(fiction)</f>
+<f>f</f>
 
   * [David Sedaris - Naked](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&title=naked&authorchoice=exact&author=David Sedaris)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Lewis et al - A General Theory of
 Love](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&title=a+general+theory+of+love&authorchoice=exact)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [James Gwartney et al - Common Sense
 Economics](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=James Gwartney&title=Common Sense Economics)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Thomas Nagel - Concealment and
 Exposure](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Thomas Nagel&title=Concealment and Exposure)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Bobby Henderson - The Gospel of the Flying Spaghetti
 Monster](http://www.venganza.org/)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Mike Cohn - Agile Estimating and
 Planning](http://www.phptr.com/title/0131479415)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Jeff Hawkins - On Intelligence](http://www.onintelligence.org/)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Penny Arcade: Attack of the Bacon Robots!](http://isbn.nu/1593074441)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [William Gibson](www.williamgibsonbooks.com/) -
 [Neuromancer](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=William Gibson&title=Neuromancer),
 [Pattern Recognition](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=William Gibson&title=Pattern Recognition)
-<f>(fiction)</f>
+<f>f</f>
 
   * [John Battelle - The Search](http://isbn.nu/1591840880)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Robert Charles Wilson - Spin](http://www.geocities.com/canadian_sf/wilson/wilson_glance.htm#Spin)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Ken MacLeod - Learning The World](http://www.fantasticfiction.co.uk/m/ken-macleod/learning-world.htm)
-<f>(fiction)</f>
+<f>f</f>
 
   * [J. J. Luna - How to Be Invisible](http://howtobeinvisible.com/)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Neil Strauss - The
 Game](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Neil Strauss&title=The Game)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Terry Grossman and Ray Kurzweil - Fantastic
 Voyage](http://fantastic-voyage.net/)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Ellen Fein, Sherrie Schneider - The
 Rules](http://www.therulesbook.com/bookstore.html)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Max Brooks - World War Z](http://www.randomhouse.com/crown/worldwarz/)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Niel Gaiman - Neverwhere](http://www.neilgaiman.com/works/books/neverwhere)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Michael Roizen, Mehmet Oz - You, The Owner's
 Manual](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Michael Roizen&title=You The Owner's Manual)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Steven Johnson - Everything Bad is Good for
 You](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Steven Johnson&title=Everything Bad is Good for You)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Bruce Schneier - Beyond
 Fear](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Bruce Schneier&title=Beyond Fear)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Helen Fisher - Why We
 Love](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Helen Fisher&title=Why We Love)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Lauren Weisberger - The Devil Wears Prada](www.randomhouse.com/features/devilwearsprada/)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Thomas Kuhn - The Structure of Scientific
 Revolutions](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Thomas S. Kuhn&title=The Structure of Scientific Revolutions)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Stephen Wolfram - A New Kind of
 Science](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Stephen Wolfram&title=A New Kind of Science)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Joel Spolsky - The Best Software Writing
 I](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Joel Spolsky&title=The Best Software Writing I)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Michael J. Behe - Darwin's Black
 Box](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Michael J. Behe&title=Darwin's Black Box)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [John Allen Paulos -
 Innumeracy](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=John Allen Paulos&title=Innumeracy)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Freeman Dyson - Disturbing the
 Universe](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Freeman Dyson&title=Disturbing the Universe)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Susan Blackmore - The Meme
 Machine](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Susan Blackmore&title=The Meme Machine)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Matt Ridley](http://www.mattridley.co.uk/) -
 [Genome](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Matt Ridley&title=Genome),
 [Nature Via Nurture](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Matt Ridley&title=Nature Via Nurture),
 [The Red Queen](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Matt Ridley&title=The Red Queen)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Drew McDermott - Mind and
 Mechanism](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Drew McDermott&title=Mind and Mechanism)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Steven Strogatz -
 Sync](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Steven Strogatz&title=Sync)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Frank Close - Lucifer's
 Legacy](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Frank Close&title=Lucifer's Legacy)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [John F. X. Sundman - Acts of the Apostles](http://wetmachine.com/acts/)
-<f>(fiction)</f>
+<f>f</f>
 
   * [John Compton Sundman - Cheap Complex Devices](http://wetmachine.com/cheap/)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Randy Cohen - The Good, The Bad and The
 Difference](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Randy Cohen&title=The Good, The Bad and The Difference)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Mark Haddon - The Curious Incident of the Dog in the
 Night-time](http://isbn.nu/1400032717)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Matt Ruff - Set this House in
 Order](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Matt Ruff&title=Set this House in Order)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Sean Stewart - Perfect
 Circle](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Sean Stewart&title=Perfect Circle)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Bill Bryson - A Short History of Nearly
 Everything](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Bill Bryson&title=A Short History of Nearly Everything)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Mihaly Csikszentmihalyi](http://en.wikipedia.org/wiki/Mihaly_Csikszentmihalyi) -
 [Flow](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Mihaly Czikszentmihalyi&title=Flow),
 [Creativity](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Mihaly Csikszentmihalyi&title=Creativity)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Ray Kurzweil](http://www.kurzweilai.net/about/frame.html) -
 [The Age of Spiritual Machines](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Ray Kurzweil&title=The Age of Spiritual Machines),
 [The Age of Intelligent Machines](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Ray Kurzweil&title=The Age of Intelligent Machines),
 [The Ray Kurzweil Reader](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Ray Kurzweil&title=The Ray Kurzweil Reader)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Thomas Friedman](http://www.thomaslfriedman.com/) -
 [Longitudes & Attitudes](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Thomas Friedman&title=Longitudes & Attitudes),
 [The World is Flat](http://isbn.nu/1593976682)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Lawrence Lessig](http://www.lessig.org/) -
 [The Future of Ideas](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Lawrence Lessig&title=The Future of Ideas),
 [Code](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Lawrence Lessig&title=Code)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Richard Dawkins](http://richarddawkins.net/) -
 [The Selfish Gene](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Richard Dawkins&title=The Selfish Gene),
 [The Blind Watchmaker](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Richard Dawkins&title=The Blind Watchmaker),
 [Unweaving the Rainbow](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Richard Dawkins&title=Unweaving the Rainbow)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [David Foster Wallace, A Supposedly Fun Thing I'll Never Do
 Again](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=David Foster Wallace&title=A Supposedly Fun Thing I'll Never Do Again)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Steven Levy](http://www.stevenlevy.com/) -
 [Hackers](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Steven Levy&title=Hackers),
 [Insanely Great](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Steven Levy&title=Insanely Great)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Neal Stephenson](http://www.nealstephenson.com/) -
 [The Diamond Age](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Neal Stephenson&title=The Diamond Age),
 [Cryptonomicon](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Neal Stephenson&title=Cryptonomicon),
 [Snow Crash](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Neal Stephenson&title=Snow Crash)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Neal Stephenson - In the Beginning...Was the Command Line](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Neal Stephenson&title=In the Beginning...Was the Command Line)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Charles Stross](http://www.antipope.org/charlie/) -
 [Accelerando](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Charles Stross&title=Accelerando),
 [Singularity Sky](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Charles Stross&title=Singularity Sky),
 [Iron Sunrise](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Charles Stross&title=Iron Sunrise)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Dan Simmons](http://www.dansimmons.com/) -
 [Ilium](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Dan Simmons&title=Ilium),
 [Hyperion](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Dan Simmons&title=Hyperion)
-<f>(fiction)</f>
+<f>f</f>
 
   * [China Mieville](http://runagate-rampant.netfirms.com/) -
 [Perdido Street Station](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=China Mieville&title=Perdido Street Station),
 [The Scar](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=China Mieville&title=The Scar),
 [Iron Council](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=China Mieville&title=Iron Council), etc.
-<f>(fiction)</f>
+<f>f</f>
 
   * [James Trefil - 101 Things You Don't Know about Science and No On Else Does
 Either](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=James Trefil&title=101 Things You Don't Know about Science and No On Else Does Either)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Ernest Nagel and James R. Newman - Godel's
 Proof](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Ernest Nagel and James R. Newman&title=Godel's Proof)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [David Brin -
 Sundiver](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=David Brin&title=Sundiver)
-<f>(fiction)</f>
+<f>f</f>
 
   * [M. T. Anderson -
 Feed](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=M. T. Anderson&title=Feed)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Franz Kafka - The
 Trial](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Franz Kafka&title=The Trial)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Stewart Brand - The Media
 Lab](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Stewart Brand&title=The Media Lab)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Stephen R. Covey - The 7 Habits of Highly Effective
 People](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Stephen R. Covey&title=The 7 Habits of Highly Effective People)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Alec Mackenzie - The Time
 Trap](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Alec Mackenzie&title=The Time Trap)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Ian McEwan -
 Atonement](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Ian McEwan&title=Atonement)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Michael E. Edleson - Value
 Averaging](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Michael E. Edleson&title=Value Averaging)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Jeff Fischer - Investing Without a Silver
 Spoon](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Jeff Fischer&title=Investing Without a Silver Spoon)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [David and Tom Gardner - The Motley Fool Investment
 Guide](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=David and Tom Gardner&title=The Motley Fool Investment Guide)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Cory Doctorow - Eastern Standard
 Tribe](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Cory Doctorow&title=Eastern Standard Tribe)
-<f>(fiction)</f>
+<f>f</f>
 
   * [David Foster Wallace - A Supposedly Fun Thing I'll Never Do
 Again](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=David Foster Wallace&title=A Supposedly Fun Thing I'll Never Do Again)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Percival Everett - American
 Desert](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Percival Everett&title=American Desert)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Richard Feynman - Surely You Must Be Joking, Mr.
 Feynman](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Richard Feynman&title=Surely You Must Be Joking, Mr. Feynman)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Stephen Hawking - Black Holes and Baby
 Universes](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Stephen Hawking&title=Black Holes and Baby Universes)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Dave Eggers](http://en.wikipedia.org/wiki/Dave_Eggers) -
 [You Shall Know Our Velocity](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Dave Eggers&title=You Shall Know Our Velocity)
 [A Heartbreaking Work of Staggering Genius](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Dave Eggers&title=A Heartbreaking Work of Staggering Genius)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Milan Kundera - The Unbearable Lightness of
 Being](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Milan Kundera&title=The Unbearable Lightness of Being)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Tao Te
 Ching](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&title=Tao Te Ching)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Shunryu Suzuki - Zen Mind, Beginner's
 Mind](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Shunryu Suzuki&title=Zen Mind, Beginner's Mind)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Paul Reps and Nyugen Senzaki - Zen Flesh Zen
 Bones](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Paul Reps and Nyugen Senzaki&title=Zen Flesh Zen Bones)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Leonard Shlain - Sex, Time, and
 Power](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Leonard Shlain&title=Sex, Time, and Power)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Gabriel Garcia Marquez](http://www.themodernword.com/gabo/) -
 [One Hundred Years of Solitude](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Gabriel Garcia Marquez&title=One Hundred Years of Solitude),
 [Love in the Time of Cholera](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Gabriel Garcia Marquez&title=Love in the Time of Cholera), etc.
-<f>(fiction)</f>
+<f>f</f>
 
   * [Jared Diamond - Guns, Germs, and
 Steel](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Jared Diamond&title=Guns, Germs, and Steel)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Richard Adams](http://en.wikipedia.org/wiki/Richard_Adams_(author)) -
 [Watership Down](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Richard Adams&title=Watership Down),
 [Tales from Watership Down](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Richard Adams&title=Tales from Watership Down)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Laura Schlessinger](http://www.drlaura.com/) -
 [Ten Things Women Do to Mess Up their Lives](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Laura Schlessinger&title=Ten Things Women Do to Mess Up their Lives),
 [Ten Things Men Do to Mess Up their Lives](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Laura Schlessinger&title=Ten Things Men Do to Mess Up their Lives)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Richard Watson - Cogito, Ergo
 Sum](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Richard Watson&title=Cogito, Ergo Sum)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [T. R. Reid - Confucius Lives Next
 Door](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=T. R. Reid&title=Confucius Lives Next Door)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Guy Gavriel Kay](http://www.brightweavings.com/) -
 [Tigana](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Guy Gavriel Kay&title=Tigana),
 [A Song for Arbonne](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Guy Gavriel Kay&title=A Song for Arbonne),
 [The Lions of Al-Rassan](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Guy Gavriel Kay&title=The Lions of Al-Rassan)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Arnold C. Schonberg - The Great
 Pianists](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Arnold C. Schonberg&title=The Great Pianists)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Nick Bollettieri - My Aces, My
 Faults](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Nick Bollettieri&title=My Aces, My Faults)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [John Nunn - Secrets of Rook
 Endings](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=John Nunn&title=Secrets of Rook Endings)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [A. J. Gillam - Simple
 Checkmates](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=A. J. Gillam&title=Simple Checkmates)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Al Horowitz -
 Chess](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Al Horowitz&title=Chess)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Suparna Damany and Jack Bellis - It's Not Carpal Tunnel
 Syndrome!](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Suparna Damany and Jack Bellis&title=It's Not Carpal Tunnel Syndrome!)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Eric Raymond](http://www.catb.org/~esr/) -
 [The Cathedral and The Bazaar](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Eric Raymond&title=The Cathedral and The Bazaar),
 [The Art of Unix Programming](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Eric Raymond&title=The Art of Unix Programming)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Frank Herbert](http://www.dunenovels.com/bios/frank.html) -
 [Dune](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Frank Herbert&title=Dune),
 [Dune Messiah](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Frank Herbert&title=Dune Messiah),
 [Children of Dune](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Frank Herbert&title=Children of Dune), etc.
-<f>(fiction)</f>
+<f>f</f>
 
   * [Douglas Adams](http://www.douglasadams.com/) -
 [The Long Dark Tea-Time of the Soul](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Douglas Adams&title=The Long Dark Tea-Time of the Soul),
 [The Hitchhiker's Guide to the Galaxy](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Douglas Adams&title=The Hitchhiker's Guide to the Galaxy),
 [So Long, and Thanks for all the Fish](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Douglas Adams&title=So Long, and Thanks for all the Fish),
 [The Restaurant at the End of the Universe](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Douglas Adams&title=The Restaurant at the End of the Universe), etc.
-<f>(fiction)</f>
+<f>f</f>
 
   * [Gamma, Helm, Johnson, Vlissides - Design
 Patterns](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Gamma, Helm, Johnson, Vflissides&title=Design Patterns)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Robert Silverberg](http://www.majipoor.com/) -
 [Lord Valentine's Castle](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Robert Silverberg&title=Lord Valentine's Castle),
 [Valentine Pontifex](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Robert Silverberg&title=Valentine Pontifex),
 [Majipoor Chronicles](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Robert Silverberg&title=Majipoor Chronicles), etc.
-<f>(fiction)</f>
+<f>f</f>
 
   * [Stephen King](http://www.stephenking.com/) -
 [The Stand](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Stephen King&title=The Stand),
 [It](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Stephen King&title=It),
 [Needful Things](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Stephen King&title=Needful Things),
 [Cujo](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Stephen King&title=Cujo), etc.
-<f>(fiction)</f>
+<f>f</f>
 
   * [Plato -
 Republic](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Plato&title=Republic)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Melvin Rader and Jerry H. Gill - The Enduring
 Questions](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Melvin Rader and Jerry H. Gill&title=The Enduring Questions)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Immanuel Kant - Grounding for the Metaphysics of
 Morals](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Immanuel Kant&title=Grounding for the Metaphysics of Morals)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Rene Descartes - Collected
 Writings](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Rene Descartes&title=Collected Writings)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Aristotle -
 Ethics](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Aristotle&title=Ethics)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [David Hume](http://en.wikipedia.org/wiki/David_Hume) -
 [An Enquiry Concerning the Principles of Morals](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=David Hume&title=An Enquiry Concerning the Principles of Morals),
 [An Enquiry Concerning Human Understanding](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=David Hume&title=An Enquiry Concerning Human Understanding)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Emily Bronte - Wuthering
 Heights](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Emily Bronte&title=Wuthering Heights)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Charles Dickens - Great
 Expectations](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Charles Dickens&title=Great Expectations)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Bernard Williams -
 Morality](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Bernard Williams&title=Morality)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [William James - Essays in
 Pragmatism](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=William James&title=Essays in Pragmatism)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Thomas Aquinas - On Law, Morality, and
 Politics](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Thomas Aquinas&title=On Law, Morality, and Politics)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Lex Williford and Michael Martone - The Scribner Anthology of Contemporary
 Short Fiction](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Lex Williford and Michael Martone&title=The Scribner Anthology of Contemporary Short Fiction)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
   * [Michael Crichton](http://www.michaelcrichton.com/) -
 [Rising Sun](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Michael Crichton&title=Rising Sun),
@@ -530,7 +532,7 @@ Short Fiction](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact
 [The Andromeda Strain](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Michael Crichton&title=The Andromeda Strain),
 [The Terminal Man](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Michael Crichton&title=The Terminal Man),
 [Congo](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Michael Crichton&title=Congo),
-<f>(fiction)</f>
+<f>f</f>
 
   * [Orson Scott Card](http://www.hatrack.com/osc/about.shtml) -
 [Ender's Game](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Orson Scott Card&title=Ender's Game),
@@ -541,12 +543,12 @@ Short Fiction](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact
 [Shadow of the Hegemon](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Orson Scott Card&title=Shadow of the Hegemon),
 [Shadow Puppets](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Orson Scott Card&title=Shadow Puppets),
 [Shadow Of the Giant](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Orson Scott Card&title=Shadow Of The Giant)
-<f>(fiction)</f>
+<f>f</f>
 
   * [Piers Anthony](http://www.hipiers.com/) -
 [A Spell for Chameleon](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Piers Anthony&title=A Spell for Chameleon)
 and the Xanth series, the Incarnations series, and many others
-<f>(fiction)</f>
+<f>f</f>
 
 <!--
 <a name="mini_reviews"></a>
@@ -555,7 +557,7 @@ and the Xanth series, the Incarnations series, and many others
 
   * [Ray Kurzweil - The Age of Spiritual
 Machines](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Ray Kurzweil&title=The Age of Spiritual Machines)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
 Kurzweil is a technologist and scientist with an intimidating list of
 accomplishments: voice recognition, voice synthesis, computer-generated art and
@@ -566,7 +568,7 @@ his predictions for 2010, 2020, and beyond.
 
   * [Thomas Friedman - Longitudes &
 Attitudes](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Thomas Friedman&title=Longitudes & Attitudes)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
 Friedman is a giant of modern journalism. He already has three Pulitzers under
 his belt, and he currently hangs his hat on the Foreign Affairs editor's desk at
@@ -578,7 +580,7 @@ first 100 have some startling insights.
 
   * [Lawrence Lessig - The Future of
 Ideas](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Lawrence Lessig&title=The Future of Ideas)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
 Lessig was the Berkman Professor at Harvard Law School, and now he's at Stanford
 (aw yeah...) He's currently one of the brightest minds in legal theory. This
@@ -587,7 +589,7 @@ commons."
 
   * [Richard Dawkins - The Selfish
 Gene](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Richard Dawkins&title=The Selfish Gene)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
 In the past 50 years, we've rapidly unraveled the mysteries of DNA, genetics,
 and how evolution created the mind-boggling complexity of a human being. Dawkins
@@ -596,7 +598,7 @@ smart.
 
   * [Matt Ridley -
 Genome](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Matt Ridley&title=Genome)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
 The human genome is amazing. It's digital, it's immense, and it lays out the
 instructions to build a complete, fully functioning human being. We've mapped
@@ -606,7 +608,7 @@ should care.
 
   * [David Foster Wallace, A Supposedly Fun Thing I'll Never Do
 Again](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=David Foster Wallace&title=A Supposedly Fun Thing I'll Never Do Again)
-<nf>(nonfiction)</nf>
+<nf>nf</nf>
 
 This guy is just flat out hilarious. He's wickedly smart, and he spends just as
 much time skewering state fairs and luxury cruise liners as he does
