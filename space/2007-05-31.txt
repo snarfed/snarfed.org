@@ -1,0 +1,21 @@
+2007-05-31
+
+### Google Mashup Editor is Live
+
+[![google code](/space/google_code.png)](http://code.google.com/)
+[![mashup](/space/mashup.jpg)](http://en.wikipedia.org/wiki/Mashup_(web_application_hybrid\))
+[![katamari](/space/katamari.jpg)](http://katamari.namco.com/)
+
+Stick a fork in us,
+[we're done](http://www.google.com/intl/en/press/pressrel/developerday_20070530.html)!
+
+OK, scratch that, we're nowhere near done. Still, we're very excited that
+[Mashup Editor](http://googlemashups.com/) has launched. It's one of the first
+Google products based on my team's project, a piece of infrastructure that we
+hope will power many Google products in the future.
+
+Here's a screenshot.
+Feel free to [take a quick tour](http://code.google.com/gme/tour/tour1.html),
+or just jump right in and [try it out!](http://googlemashups.com/)
+
+[![screenshot](/space/mashup_editor.png)](http://code.google.com/gme/tour/tour1.html)
