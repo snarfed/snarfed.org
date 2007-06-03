@@ -6,7 +6,7 @@ import SnipSpaceFactory
 
 factory = SnipSpaceFactory.getInstance() atxs =
 factory.load(str(snip)).getAttachments().getAll() atx\_names = ',
-'.join([a.getName() for a in atxs](/space/a.getName() for a in atxs))
+'.join(/space/a.getName() for a in atxs)
 
 print """ This snip is called **%s**. Its attachments are **%s**. """ % (snip,
 atx\_names) {script}
