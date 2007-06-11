@@ -171,9 +171,10 @@ SnipSnap that prevents [virtual host redirection](/space/virtual host redirectio
 extends [autocutsel](http://www.nongnu.org/autocutsel/) to
 synchronize both the clipboard and the primary selection in X Windows.
 
-  * [Libwebserver shutdown patch](/space/libwebserver shutdown patch) adds a
-call to [libwebserver](http://libwebserver.sourceforge.net/) to stop a running
-server and close its socket(s).
+  * [Libwebserver shutdown patch](/space/libwebserver shutdown patch)
+([tracker](http://sourceforge.net/tracker/index.php?func=detail&aid=1146074&group_id=50164&atid=458797))
+adds a call to [libwebserver](http://libwebserver.sourceforge.net/) to stop a
+running server and close its socket(s).
 
   * [Webalizer nofollow patch](/space/webalizer nofollow patch) adds
 [nofollow](http://www.google.com/googleblog/2005/01/preventing-comment-spam.html)
