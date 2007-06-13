@@ -16,7 +16,7 @@ done most of the work in a package that you can install with a single click. If
 you just want your thinkpad keys to work already, [follow his
 howto](http://dqd.com/~mayoff/notes/thinkpad/dqdnavkeys/).
 
-Otherwise, here's the recipe for Firefox, versions 0.8 through 1.0. (It probably
+Otherwise, here's the recipe for Firefox, versions 0.8 through 2.x. (It probably
 works with earlier and later versions too, but no guarantees.)
 
 First, you need to map the keys to X keysyms. There are in-depth instructions
