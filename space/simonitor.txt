@@ -1,7 +1,10 @@
 simonitor
 [![simon_giftcard.jpg](/space/simon_giftcard.jpg)](http://www.simon.com/giftcard/)
 
-_Updated 3/22/2007._
+_Updated 6/23/2007. Unfortunately, Simon has added a
+[CAPTCHA](http://www.google.com/search?q=define%3Acaptcha) to their site,
+which breaks this script. I might be able to get around it, though. Stay tuned
+for updates!_
 
 For privacy reasons, I use
 [prepaid debit cards](/space/privacy+through+prepaid+credit+cards) instead of
