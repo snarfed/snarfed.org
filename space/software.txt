@@ -80,9 +80,11 @@ that can be imported back into SnipSnap.
   * [cdname.py](/space/cdname.py) names MP3 files according to
 [CDDB](http://cddb.com/)/[freedb](http://freedb.org/) INF files.
 
-  * [Mockprpl](/space/gaim mock protocol plugin) is a mock
-protocol plugin for [Gaim](http://gaim.sf.net/) that lets you use Gaim without
+  * [Nullprpl](/space/nullprpl: pidgin mock protocol plugin) is a mock
+protocol plugin that lets you use [Pidgin](http://pidgin.sf.net/) without
 connecting to a server.
+([Added to Pidgin](http://developer.pidgin.im/viewmtn/revision/info/17c1e71f633d40fd14e46c08a17a500605d793c8)
+on 5/30/2007.)
 
   * [Remote](/space/remote) is a client for
 [httpQ](http://httpq.sourceforge.net/), a network server plugin for
