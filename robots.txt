@@ -10,10 +10,5 @@ User-agent: *
 # works w/google.)
 Disallow: /space/*.txt
 Disallow: /space/*.rdf
-Disallow: /space/*?history*
-
-# Fasterfox's (http://fasterfox.mozdev.org/) prefetching is
-# a double-edged sword. Disable it.
-User-agent: Fasterfox
-Disallow: /
-
+Disallow: /space/*history=*
+Disallow: /space/*raw=*
