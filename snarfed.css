@@ -131,7 +131,7 @@ table {
 .name, h1.index, h1.photogallery {
   vertical-align: top;
   font-weight: bold;
-  color: #333;
+  color: #036;
   font-size: 1.2em;
 }
 
@@ -194,7 +194,6 @@ h1 {
 }
 
 h3 {
-  color: #036;
   background-color: inherit;
   font-weight: bold;
   font-variant: small-caps;
