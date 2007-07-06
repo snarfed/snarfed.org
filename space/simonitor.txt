@@ -1,10 +1,7 @@
 simonitor
 [![simon_giftcard.jpg](/space/simon_giftcard.jpg)](http://www.simon.com/giftcard/)
 
-_Updated 6/23/2007. Unfortunately, Simon has added a
-[CAPTCHA](http://www.google.com/search?q=define%3Acaptcha) to their site,
-which breaks this script. I might be able to get around it, though. Stay tuned
-for updates!_
+_Updated 7/6/2007._
 
 For privacy reasons, I use
 [prepaid debit cards](/space/privacy+through+prepaid+credit+cards) instead of
@@ -27,10 +24,15 @@ screen scrapes the resulting HTML.
 Here's an example run:
 
     $ simonitor.sh 9999012345789/123 8888012345789/456
+    Enter the captcha string: ABC123
     99990123456789/123: $232.67, expires 08/2008
                         Mountain View, CA 94043
     88880123456789/456: $39.91, expires 12/2008
     $
+
+Simon uses a [CAPTCHA](http://www.google.com/search?q=define%3Acaptcha) to
+discourage bots. This script displays the CAPTCHA image to the user, asks them
+for its text, and passes that text back to the site.
 
 I briefly considered writing a [Greasemonkey](http://greasemonkey.mozdev.org/)
 script, but I have a small brain, and the shell script was simpler and didn't
