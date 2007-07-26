@@ -50,6 +50,10 @@ roughly valid address; name can be dashes
   * [Circuit City](http://circuitcity.com/): 00000 for zip code, 000-000-0000
 for phone; dashes for everything else
 
+  * [Delta Airlines](http://delta.com/): address, city, state, and zip that
+  match your credit card, since Delta uses AVS; phone number with valid area
+  code and exchange (e.g. 650-900-0000)
+
   * [DigitalRiver](http://digitalriver.com/): matching state and zip (e.g.
 CA/90000), phone number with valid area code and exchange (e.g. 650-900-0000);
 dashes for everything else
