@@ -12,11 +12,12 @@ quietly published a
 [Data Store API](http://wiki.developers.facebook.com/index.php/Data_Store_API_documentation)
 on the
 [Facebook developer wiki](http://wiki.developers.facebook.com/).
+
 It's preliminary, and still in closed beta, but it marks a milestone in the
 evolution of the Facebook platform. It could be an indication of the
 direction Facebook plans to take the platform in the future.
 
-I've put together some preliminary thoughts on this API. Feel free to
+Here are some of my thoughts on this API. Feel free to
 [add your own](#comment-anchor)!
 
 ### Contents
