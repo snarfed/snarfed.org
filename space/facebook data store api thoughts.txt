@@ -133,7 +133,7 @@ Associations? etc.
 Despite the heading of this section, there are no general-purpose transactions
 in the Facebook data store API. Fortunately, there is an
 [atomic increment operation](http://wiki.developers.facebook.com/index.php/Data.incHashValue).
-It can increment or decrement an integer property value by any amount, atomically.
+It can increment or decrement an integer property value by any amount.
 This is obviously no substitute for full-fledged transactions, but it can
 handle a surprising number of use cases.
 
@@ -153,7 +153,7 @@ best we can hope for?
 [Associations](http://wiki.developers.facebook.com/index.php/Data_Store_API_documentation#Association_Data_Definition_API)
 are by far the most intriguing part of the data store API. They're
 [foreign keys](http://en.wikipedia.org/wiki/Foreign_key),
-but they can be two-way as well as one-way, and, unlike SQL, they're set at
+but they can be one-way or bidirectional, and, unlike SQL, they're set at
 the _object_ level instead of the object type level.
 
 Similar to object types and properties, associations are a kind of
