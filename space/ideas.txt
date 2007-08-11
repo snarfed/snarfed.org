@@ -6,6 +6,14 @@ lots more ideas for projects I'd _like_ to work on. I can't pretend that
 they're particularly good ideas, but it seems like a waste to just forget about
 them. So, here they are!
 
+  * There's a [Python client](http://code.google.com/p/gdata-python-client/)
+for [GData](http://code.google.com/apis/gdata/overview.html),
+but no server. Write one! Even better, now that the
+[Atom Publishing Protocol](http://www.atomenabled.org/developers/api/atom-api-spec.php)'s
+[IETF draft](http://ietfreport.isoc.org/idref/draft-ietf-atompub-protocol/)
+is solidifying, hopefully implementations will start appearing. GData is just a
+few extensions beyond that!
+
   * Write a [session management
 plugin](http://sourceforge.net/mailarchive/message.php?msg_id=37745715) for
 [Pidgin](http://pidgin.im/) (formerly [Gaim](http://gaim.sf.net/)).
