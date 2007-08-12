@@ -16,8 +16,12 @@ zone, the file names should be self-explanatory. (There's [more
 information](http://lists.debian.org/debian-user/1996/04/msg00527.html) on the
 debian-user mailing list.)
 
-Of course, I'm sure this isn't the officially endorsed method. If anyone knows
-what that is, please [let me know](http://ryan.barrett.name/contact.html)!
+Many distributions come with tools for setting the time zone. Debian and
+Fedora have
+[tzselect(8)](http://www.linuxcommand.org/man_pages/tzselect8.html), which is
+marginally helpful. Debian also has
+[tzconfig(8)](http://www.debian.org/doc/manuals/system-administrator/ch-sysadmin-time.html),
+which is much more useful.
 
 See also:
   * [libmsntp](/space/libmsntp)
