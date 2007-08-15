@@ -17,8 +17,8 @@ It's preliminary, and still in closed beta, but it marks a milestone in the
 evolution of the Facebook platform. It could be an indication of the
 direction Facebook plans to take the platform in the future.
 
-Here are some of my thoughts on this API. Feel free to
-[add your own](#comment-anchor)!
+Here are some of my thoughts on this API, as well as a few responses from
+Haiping, in _italics_. Feel free to [add your own](#comment-anchor)!
 
 ### Contents
 [Introduction](#intro)  
@@ -68,9 +68,9 @@ and
 delete existing objects and property values along with the corresponding
 object types and property definitions.
 
-Open questions:
+Questions:
 
-- The description of the
+The description of the
 [`properties`](http://wiki.developers.facebook.com/index.php/Data.createObject#Parameters)
 parameter in
 [`createObject`](http://wiki.developers.facebook.com/index.php/Data.createObject)
@@ -79,11 +79,13 @@ and
 seems to imply that some or all any or all of an object's properties may be
 undefined. Is that true?
 
-- In most calls that handle property values, like setObjectProperty and
+In most calls that handle property values, like setObjectProperty and
 set/getHashValue, properties are sent and returned as strings. Does that mean
 developers need to serialize integer properties manually? If so, that's
 unfortunate at best, and dangerous at worst.
 
+> We were facing a decision between a strongly typed model vs. a
+> weakly typed model in handling return values.  
 
 <a name="data_access"></a>
 ### [![Icon-Permalink.png](/Icon-Permalink.png)](#data_access) Data access 
@@ -111,20 +113,34 @@ Hash keys are described as "string object identifiers," but there's not much
 information on them beyond that. They may just be a string encoding of the
 `fbid`, for use in URLs and other string contexts.
 
-Open questions:
+Questions:
 
-- How are `fbid`s allocated? Is there a single global `fbid` namespace, or
+How are `fbid`s allocated? Is there a single global `fbid` namespace, or
 is it per app?
 
-- What are hash keys? When would they be used?
+> An `fbid` is a GUID, a globally unique identifier. Well, it's actually a
+> UUID, universally unique identifier, in case Mars has life and computers.
 
-- General-purpose queries based on property values are an important feature in
+What are hash keys? When would they be used?
+
+> It's an arbitrary string application defines. So, it could be a URL, if an
+> application elects to do so.
+
+General-purpose queries based on property values are an important feature in
 most data stores, but they're conspicuously absent here. Will they ever be
 added?
 
-- What are the practical limits on scaling? How many objects could an app
+> In fact, you could do that through
+> [FQL](http://developers.facebook.com/documentation.php?doc=fql). In FQL, any
+> property can appear in WHERE clause.
+
+What are the practical limits on scaling? How many objects could an app
 realistically store? How many object types? Properties per object type?
 Associations? etc.
+
+> Facebook Data Store API is designed to be scalable, although we will have
+> resource limit imposed to make fair use between different applications. Quota
+> will be documented when we have them.
 
 
 <a name="transactions"></a>
@@ -141,10 +157,12 @@ One odd quirk is that the increment operation _requires_ a hash key. Unlike
 the CRUD operations, there's no corresponding increment operation that takes
 an `fbid`.
 
-Open questions:
+Questions:
 
-- Will more transactional capabilities be added? Or is atomic increment the
+Will more transactional capabilities be added? Or is atomic increment the
 best we can hope for?
+
+> Not in consideration currently, due to distributed nature of data objects.
 
 
 <a name="associations"></a>
@@ -190,18 +208,33 @@ that Facebook provides. Beyond that, apps could let users create objects of any
 type - classes, books, movies, pets - and then connect them to people, and to
 each other, in new ways.
 
-Open questions:
+Questions:
 
-- Even in this first draft, associations are very powerful and useful. It's
+Even in this first draft, associations are very powerful and useful. It's
 interesting that they're handled separately from properties, though, and that
 they can't be set automatically, similar to traditional foreign keys. If that
 was added, would it be a net gain?
 
-- Are the counting methods efficient? Specifically, are they roughly constant
+What happens if i create an invalid association, e.g. one that violates a
+uniqueness constraint? The
+[setAssociation](http://wiki.developers.facebook.com/index.php/Data.setAssociation)
+calls don't have return values, and there aren't any association-specific error
+codes.
+
+> It returns an invalid operation error, although we may consider to special
+> case the error code.
+
+
+Are the counting methods efficient? Specifically, are they roughly constant
 time, or linear? I can see how they'd be very useful for large associations,
 but if they're no faster than calling
 [`getAssociatedObjects`](http://wiki.developers.facebook.com/index.php/Data.getAssociatedObjects),
 that makes them less useful.
+
+> Constant time. This should be documented. There is one more difference from
+> calling getAssociatedObjects() then count, because we have an upper limit on
+> how many associated object ids to return. This is missing from documentation,
+> too.
 
 
 <a name="preferences"></a>

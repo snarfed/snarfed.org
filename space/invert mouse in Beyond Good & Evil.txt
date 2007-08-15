@@ -21,16 +21,16 @@ solutions.
 
 **Solutions**
 
-If you have Logitech MouseWare, and you're comfortable editing the registry, try
-Ashley Ings'
+[Moritz Franckenstein](http://www.maf-soft.de/) has written
+a [mouse driver that inverts the y axis](http://www.maf-soft.de/mafmouse/).
+It works great, and even better, it's freeware.
+
+Otherwise, if you have Logitech MouseWare, and you're comfortable editing the
+registry, try Ashley Ings'
 [instructions](/comments/invert+mouse+in+Beyond+Good+%26+Evil#comment-invert%20mouse%20in%20Beyond%20Good%20&%20Evil-3),
 originally posted [on the Logitech
 forums](http://forums.logitech.com/pe/forums/displaypost.jsp?postID=10125316).
 It works with both Logitech and non-Logitech mice.
-
-Otherwise, [Moritz Franckenstein](http://www.maf-soft.de/) has written a small,
-simple mouse driver that inverts the y axis. If you'd like it, [drop him a
-line](http://www.maf-soft.de/#contact).
 
 **Background**
 
