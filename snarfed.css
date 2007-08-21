@@ -93,6 +93,17 @@ input, select, textarea {
   padding-left: .2em;
 }
 
+input[type=text] {
+  width: 15em;
+}
+
+input#comment-openid-url {
+  background: url(/icon_openid.gif) no-repeat;
+  background-position: 0 50%;
+  padding-left: 1.1em;
+  width: 14em;
+}
+
 div#sidebar input {
   width: 6em;
 }
