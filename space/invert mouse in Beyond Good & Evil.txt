@@ -22,8 +22,8 @@ solutions.
 **Solutions**
 
 [Moritz Franckenstein](http://www.maf-soft.de/) has written
-a [mouse driver that inverts the y axis](http://www.maf-soft.de/mafmouse/).
-It works great, and even better, it's freeware.
+a [shareware mouse driver](http://www.maf-soft.de/mafmouse/)
+that inverts the y axis. Thanks, Moritz!
 
 Otherwise, if you have Logitech MouseWare, and you're comfortable editing the
 registry, try Ashley Ings'
