@@ -3,11 +3,11 @@ fillcode
 [![gnu.jpg](/space/gnu.jpg)](/space/fillcode)
 
 For the impatient:  
-&nbsp; [Download fillcode.el 0.7](/space/fillcode.el)  
+&nbsp; [Download fillcode.el 0.7.1](/space/fillcode.el)  
 &nbsp; [Download fillcode.tar.gz](/space/fillcode.tar.gz) (includes
 [elunit](http://www.lostway.org/~tko/elisp/elunit/) unit tests)  
 
-_Updated 2007/07/08._
+_Updated 2007/08/24._
 
 Fillcode is an [Emacs](http://gnu.org/software/emacs/) minor mode that fills, or
 wraps, some parts of source code. It's best described by example. Fillcode fills
@@ -28,9 +28,10 @@ function calls, and conditional expressions. It only breaks lines at commas and
 binary operators, and correctly preserves embedded comments and string literals.
 It also normalizes existing whitespace and line breaks.
 
-Fillcode is supported in both [Emacs](http://gnu.org/software/emacs/) and
-[XEmacs](http://xemacs.org/), and works with most programming language major
-modes, including Java, C, C++, Objective C, Perl, Python, shell, and SQL modes.
+Fillcode is supported in [Emacs](http://gnu.org/software/emacs/) 21 and above
+and [XEmacs](http://xemacs.org/), and works with most programming language
+major modes, including Java, C, C++, Objective C, Perl, Python, shell, and SQL
+modes.
 
 Fillcode fills when `fill-paragraph` (usually `M-q`) is called. If the major
 mode itself attempts to fill - inside a comment, for example - fillcode
