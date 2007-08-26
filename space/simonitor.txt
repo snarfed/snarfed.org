@@ -1,7 +1,7 @@
 simonitor
 [![simon_giftcard.jpg](/space/simon_giftcard.jpg)](http://www.simon.com/giftcard/)
 
-_Updated 7/6/2007._
+_Updated 8/25/2007._
 
 For privacy reasons, I use
 [prepaid debit cards](/space/privacy+through+prepaid+credit+cards) instead of
@@ -11,7 +11,7 @@ credit cards. Right now, I mostly use
 Like most prepaid card web sites,
 [Simon's](http://www.simon.com/giftcard/card_balance.aspx) can show your
 card's balance and transaction history in real time. However, it's a little
-tedious to navigate the site and enter the card number and CCV over and over.
+tedious to navigate the site and enter the card number and CCV each time.
 So, I automated it.
 
 [simonitor.sh](/space/simonitor.sh) is a shell script that fetches the
@@ -33,6 +33,12 @@ Here's an example run:
 Simon uses a [CAPTCHA](http://www.google.com/search?q=define%3Acaptcha) to
 discourage bots. This script displays the CAPTCHA image to the user, asks them
 for its text, and passes that text back to the site.
+
+Naturally, Simon tweaks their web site every now and then, which breaks this
+script. When they do, I've found the
+[Live HTTP Headers](http://livehttpheaders.mozdev.org/) Firefox plugin
+indispensable for capturing the actual requests and POST data sent over the
+wire.
 
 I briefly considered writing a [Greasemonkey](http://greasemonkey.mozdev.org/)
 script, but I have a small brain, and the shell script was simpler and didn't
