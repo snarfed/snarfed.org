@@ -1,7 +1,7 @@
 download_picasa_album.sh
 [![picasaweb.png](/space/picasaweb.png)](http://picasaweb.google.com/)
 
-[download_picasa_album.sh](/space/download_picasa_album.sh) is a simple little
+[download\_picasa_album.sh](/space/download_picasa_album.sh) is a simple little
 shell script that downloads entire photo albums from
 [Picasa Web](http://picasaweb.google.com/). Just give it the album's RSS feed,
 and it will parse the feed, extract the links to the full-size pictures, and
@@ -21,7 +21,7 @@ or a
 instead. Personally, I have a small brain, so tiny shell scripts like this are
 just right for me.
 
-[download_picasa_album.sh](/space/download_picasa_album.sh) should work on most
+[download\_picasa_album.sh](/space/download_picasa_album.sh) should work on most
 *nix-based systems. It uses [curl](http://curl.haxx.se/),
 [grep](http://gnu.org/software/grep/), [sed](http://gnu.org/software/sed/), and
 xargs, which should come with your distribution.
