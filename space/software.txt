@@ -8,14 +8,14 @@ is [GPL](http://www.gnu.org/licenses/gpl.html)ed.
 <a name="projects"></a>
 ### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](#projects)
 
-  * [download_picasa_album.sh](/space/download_picasa_album) downloads entire
-    [Picasa Web](http://picasaweb.google.com/) photo albums.
+  * [download\_picasa_album.sh](/space/download_picasa_album) downloads entire
+[Picasa Web](http://picasaweb.google.com/) photo albums.
 
   * [PyBlosxom](http://pyblosxom.sourceforge.net/) is a lightweight weblog
-    platform, based on [Blosxom](http://blosxom.com/) and written in Python.
+platform, based on [Blosxom](http://blosxom.com/) and written in Python.
 
   * [simonitor](/space/simonitor) screen scrapes [simon.com](http://simon.com/)
-  to fetch the available balance on one or more Simon gift cards.
+to fetch the available balance on one or more Simon gift cards.
 
   * An [OpenID server plugin for PyBlosxom](/space/pyblosxom+openid+server).
 
