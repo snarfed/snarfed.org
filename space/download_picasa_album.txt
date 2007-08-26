@@ -1,0 +1,35 @@
+download_picasa_album.sh
+[![picasaweb.png](/space/picasaweb.png)](http://picasaweb.google.com/)
+
+[download_picasa_album.sh](/space/download_picasa_album.sh) is a simple little
+shell script that downloads entire photo albums from
+[Picasa Web](http://picasaweb.google.com/). Just give it the album's RSS feed,
+and it will parse the feed, extract the links to the full-size pictures, and
+download them one by one. For example:
+
+    $ ./download_picasa_album.sh \
+        'http://picasaweb.google.com/data/feed/base/user/heaven/albumid/...&alt=rss
+      % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+                                     Dload  Upload   Total   Spent    Left  Speed
+    100 74442    0 74442    0     0  22968      0 --:--:--  0:00:03 --:--:-- 35841
+    ...
+ 
+This script is dirt simple. If you're looking for something robust and
+full-featured, you probably want an
+[RSS reader that supports enclosures](http://http://www.podcastingnews.com/topics/Podcast_Software.html)
+or a
+[dedicated web photo downloader](http://www.google.com/search?q=web+photo+downloader)
+instead. Personally, I have a small brain, so tiny shell scripts like this are
+just right for me.
+
+[download_picasa_album.sh](/space/download_picasa_album.sh) should work on most
+*nix-based systems. It uses [curl](http://curl.haxx.se/),
+[grep](http://gnu.org/software/grep/), [sed](http://gnu.org/software/sed/), and
+xargs, which should come with your distribution.
+
+See also:
+  * [kodak picturecenter hacks](/space/kodak picturecenter hacks)
+  * [Malbum](/space/Malbum) and [album](/space/album)
+  * [view evites anonymously](/space/view evites anonymously)
+  * [change firefox's saved passwords](/space/change firefox's saved passwords)
+  * [simonitor](/space/simonitor)

@@ -8,6 +8,9 @@ is [GPL](http://www.gnu.org/licenses/gpl.html)ed.
 <a name="projects"></a>
 ### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](#projects)
 
+  * [download_picasa_album.sh](/space/download_picasa_album) downloads entire
+    [Picasa Web](http://picasaweb.google.com/) photo albums.
+
   * [PyBlosxom](http://pyblosxom.sourceforge.net/) is a lightweight weblog
     platform, based on [Blosxom](http://blosxom.com/) and written in Python.
 
@@ -100,6 +103,15 @@ email account.
 
 <a name="patches"></a>
 ### Patches  [![Icon-Permalink.png](/Icon-Permalink.png)](#patches)
+
+  * A [patch](/space/comments_openid.patch) that updates the
+[PyBlosxom OpenId comments plugin](http://www.openidenabled.com/software/pyblosxom/release-announcement)
+to work with versions 1.x of the
+[Python OpenId libraries](http://www.openidenabled.com/openid/libraries/python).
+
+  * A [minor bugfix for cryptutil.py](/space/cryptutil_ioerror.patch) in the
+[Python OpenId libraries](http://www.openidenabled.com/openid/libraries/python).
+The patch is against version 2.0.0-rc3b.
 
   * A [tkdiff patch that quotes filenames](/space/tkdiff_quote_filenames_svn.patch)
 ([tracker](http://sourceforge.net/tracker/index.php?func=detail&aid=1672284&group_id=64960&atid=509274))
