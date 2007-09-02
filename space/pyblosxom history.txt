@@ -1,6 +1,6 @@
 history.py
 
-![clock_icon.jpg](clock_icon.jpg)
+![clock_icon.jpg](/space/clock_icon.jpg)
 
 For the impatient:  
 &nbsp; Download [history.py 0.4](/space/history.py)  
@@ -79,8 +79,8 @@ variables for them. Template files for the html flavour are provided with this
 plugin.
 
   * `history-diff`: a diff between two versions of an entry. The text of the
-    diff is provided in the $diff template variable. It's in
-[unified format](www.gnu.org/software/diffutils/manual/html_node/Unified-Format.html).
+    diff is provided in the `$diff` template variable. It's in
+[unified format](http://www.gnu.org/software/diffutils/manual/html_node/Unified-Format.html).
 
   * `history-version`: a previous version of an entry. This will usually be
     similar to your story template, with minor modifications. For example, you
@@ -88,9 +88,9 @@ plugin.
     available in the story template are also available here.
 
   * `history-head` and `history-foot`: These are displayed around the change
-    history page. history-head is displayed at the beginning, history-foot is
-    displayed at the end. The body of the page is a series of diffs, one for
-    each change to the entry, rendered with the history-diff template.
+    history page. `history-head` is displayed at the beginning, `history-foot`
+    is displayed at the end. The body of the page is a series of diffs, one
+    for each change to the entry, rendered with the `history-diff` template.
 
 
 ### Template Variables
@@ -99,18 +99,18 @@ These new template variables are provided in the `history-diff` and
 `history-version` templates:
 
     history-diff:
-    $diff      The text of the diff, in unified format.
-    $version1  The base version of the diff.
-    $version2  The ending version of the diff.
+      $diff      The text of the diff, in unified format.
+      $version1  The base version of the diff.
+      $version2  The ending version of the diff.
     history-version:
-    $version   The displayed version of the entry .
+      $version   The displayed version of the entry.
     both:
-    $author    The person who made the last change.
-    $message   The changelog of the last change.
-    $date      The date of the last change.
+      $author    The person who made the last change.
+      $message   The changelog of the last change.
+      $date      The date of the last change.
 
-Diffs should usually be displayed in a fixed-width font, so surrounding $diff
-with `<code>` and/or `<pre>` is strongly suggested.
+Diffs should usually be displayed in a fixed-width font, so surrounding
+`$diff` with `<code>` and/or `<pre>` is strongly suggested.
 
 Some lines will be surrounded with `<span class="...">`. The class will
 be `diff-added`, `diff-removed`, `diff-changed`, or `diff-line-number`,

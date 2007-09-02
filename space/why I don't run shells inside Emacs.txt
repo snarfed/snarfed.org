@@ -75,11 +75,12 @@ wanted to look at a file, I just moved up to it and hit `M-C-f` (bound to
 
 It wasn't perfect, though. Here's what didn't work well:
 
-  * **Not a terminal.** I gained keyboard navigation at the expense of having a
-true terminal emulator. I couldn't run any app that needed anything more than a
-dumb terminal - Pine, BitTorrent, less, and others. I could use [Term
-mode](file:///home/ryanb/www/emacs_manual/Terminal-emulator.html), which
-provides a full terminal, but that defeats the purpose of running inside emacs.
+  * **Not a terminal.** I gained keyboard navigation at the expense of having
+a true terminal emulator. I couldn't run any app that needed anything more
+than a dumb terminal - Pine, BitTorrent, less, and others. I could use [Term
+mode](http://www.gnu.org/software/emacs/manual/html_node/emacs/Term-Mode.html),
+which provides a full terminal, but that defeats the purpose of running inside
+emacs.
 
   * **History.** As I suspected, command history wasn't quite as good as stock
 tcsh. It worked ok for history in the current shell's session, but I didn't have

@@ -4,7 +4,7 @@ For the impatient:
 [Example page](http://ryan.barrett.name/bigbrother/)  
 [Gaim web site](http://gaim.sf.net/)
 
-[![/space/thumbnail.jpg](/space/thumbnail.jpg)](bigbrother_screenshot.jpg)
+[![/space/thumbnail.jpg](/space/thumbnail.jpg)](/space/bigbrother_screenshot.jpg)
 
 [Bigbrother](/space/Bigbrother) is a program that calculates statistics about
 your away message history. It parses a log file of all of the away messages
