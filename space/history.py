@@ -117,6 +117,7 @@ diff-added, diff-removed, diff-changed, and diff-line-number.
 
 
 CHANGELOG:
+0.4 update to work with pysvn 1.5.2
 0.3 bugfixes: handle change history w/only one version, etc.
 0.2 First release.
 
@@ -146,8 +147,8 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 """
 __author__ = "Ryan Barrett"
-__version__ = "0.3"
-__url__ = "http://snarfed.org/pyblosxom+history"
+__version__ = "0.4"
+__url__ = "http://snarfed.org/space/pyblosxom+history"
 __description__ = "Displays change history, past versions, and diffs."
 
 import os
@@ -233,8 +234,6 @@ class SubversionEntry(VersionedEntry):
 
     try:
       self.entry = self.client.info(path)
-      if not self.entry.is_valid:
-        raise BadPath, '%s not found' % path
     except Exception, msg:
       raise BadPath, msg
 
@@ -473,7 +472,10 @@ def generate_history_entry(request, history_fn):
 
   # generate the entry
   body = entryData.get('body', '')
-  entry = entries.base.generate_entry(request, entryData, body, None)
+  # use the epoch for mtime. otherwise, pyblosxom uses the current time, which
+  # makes other plugins (like weblogsping) think this is a new entry.
+  epoch = time.localtime(0)
+  entry = entries.base.generate_entry(request, entryData, body, epoch)
   entry.update(entryData)
   return entry
 
