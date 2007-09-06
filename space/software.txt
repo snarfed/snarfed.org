@@ -110,6 +110,7 @@ email account.
 [PyBlosxom OpenId comments plugin](http://www.openidenabled.com/software/pyblosxom/release-announcement)
 to work with versions 1.x of the
 [Python OpenId libraries](http://www.openidenabled.com/openid/libraries/python).
+([Applied](/space/pyblosxom+openid+comments) on 9/6/2007.)
 
   * A [minor bugfix for cryptutil.py](/space/cryptutil_ioerror.patch) in the
 [Python OpenId libraries](http://www.openidenabled.com/openid/libraries/python).
