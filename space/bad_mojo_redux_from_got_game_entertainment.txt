@@ -6,9 +6,11 @@ Beware of Bad Mojo: Redux from Got Game Entertainment
 _Executive summary: don't buy
 [Bad Mojo: Redux](http://www.gotgameentertainment.com/badmojo/) from
 [Got Game Entertainment](http://www.gotgameentertainment.com/). Their
-[DRM](http://en.wikipedia.org/wiki/Digital_rights_management) has locked me
-out of the game, despite the fact that I bought it legimately, and they
-haven't provided a fix or refunded my money._
+[DRM](http://en.wikipedia.org/wiki/Digital_rights_management) locked me
+out of the game, despite the fact that I bought it legimately. Their tech
+support couldn't fix it - although I eventually
+[found a fix](#fix) - and it took them almost a month to offer refunded my
+money._
 
 I love old-school, point-and-click,
 [Kings Quest](http://en.wikipedia.org/wiki/King's_Quest) style adventure
@@ -34,7 +36,7 @@ I emailed Got Game's tech support, and over a week and a couple follow-up
 emails later, they finally responded. They asked a few basic questions, over
 the course of a couple more weeks, and finally told me that they _didn't know_
 what the problem was! Disappointed, I asked for a refund, since I couldn't
-play the game. I haven't heard from them since, nor have I received a refund.
+play the game. They finally agreed, but it took them a while.
 
 I don't like bad-mouthing Got Game publicly. I'd much prefer to support and
 encourage companies that sell adventure games. It's clear that Got Game is a
@@ -45,4 +47,41 @@ is
 and
 [passionate](http://www.fourfatchicks.com/Rants/Interviews/Howard_Horowitz/HH.shtml)
 about adventure games. I can't help being disgruntled, though. Got Game sold
-me a game I can't play, and they won't provide a fix or a refund.
+me a game I couldn't play, they were unable to fix the problem, and I had to
+prod them before they offered to refund my money.
+
+<a name="fix"></a>
+
+Anyway, here's the fix. Bad Mojo uses the `badmojo.ini` file to determine
+where it's installed. By default, it looks for the file in its own directory,
+e.g. <nobr>`C:\Program Files\Bad Mojo\\`</nobr>. However, if a `badmojo.ini`
+file exists in `C:\Windows\\`, it uses that instead.
+
+In my case, the Bad Mojo installer put an incomplete `badmojo.ini` file into
+`C:\Windows\\`. It had only these lines:
+
+    [badmojo]
+    Preferences=1111110
+    [SoundMix]
+    SoundOn=1
+    DumbSound=0
+
+I copied these lines from <nobr>`C:\Program Files\Bad Mojo\badmojo.ini`</nobr>
+into it, and voila, no more error!
+
+    [BOOGER]
+    BACKGROUND=C:\Program Files\Bad Mojo\OVER;C:\Program Files\Bad Mojo\BACKGND
+    TOPO=C:\Program Files\Bad Mojo\TOPO
+    BTC=C:\Program Files\Bad Mojo\BTC
+    PALETTE=C:\Program Files\Bad Mojo\PALETTE
+    SCRIBBLE=C:\Program Files\Bad Mojo\OVER;C:\Program Files\Bad Mojo\SCRIBBLE
+    CEL=C:\Program Files\Bad Mojo\OVER;C:\Program Files\Bad Mojo\CEL
+    SCRIPT=C:\Program Files\Bad Mojo\SCRIPT
+    ROACH=C:\Program Files\Bad Mojo\ROACHD
+    MOVIE=C:\Program Files\Bad Mojo\OVER;C:\Program Files\Bad Mojo\MOVIE
+    MASH=C:\Program Files\Bad Mojo\OVER;C:\Program Files\Bad Mojo\MASH
+    SOUND=C:\Program Files\Bad Mojo\SOUND
+    SAVE=C:\Program Files\Bad Mojo\SAVE
+    USER=Ryan
+
+Alternatively, deleting `C:\Windows\badmojo.ini` also fixes the problem.
