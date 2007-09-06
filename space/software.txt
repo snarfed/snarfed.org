@@ -17,6 +17,8 @@ platform, based on [Blosxom](http://blosxom.com/) and written in Python.
   * [simonitor](/space/simonitor) screen scrapes [simon.com](http://simon.com/)
 to fetch the available balance on one or more Simon gift cards.
 
+  * An [OpenID comments plugin for PyBlosxom](/space/pyblosxom+openid+comments).
+
   * An [OpenID server plugin for PyBlosxom](/space/pyblosxom+openid+server).
 
   * [AJAX site search with the Google AJAX Search API](/space/site+search+with+the+Google+AJAX+Search+API).

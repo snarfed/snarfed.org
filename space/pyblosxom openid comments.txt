@@ -1,0 +1,93 @@
+pyblosxom OpenID comments
+
+[![openid](/space/openid-logo.png)](http://openid.net/)
+[![pyblosxom](/space/pyblosxom.jpg)](http://pyblosxom.sf.net/)
+[![janrain](/space/janrain.jpg)](http://janrain.com/)
+
+For the impatient:  
+&nbsp; Download [comments\_openid.py 0.2](/space/comments_openid.py)  
+&nbsp; Download [Python OpenID libraries](http://www.openidenabled.com/python-openid/)  
+&nbsp; Download
+  [comments.py](http://pyblosxom.sf.net/blog/registry/input/comments/comments)
+  and [session.py](http://pyblosxom.sf.net/blog/registry/general/session)  
+&nbsp; [OpenID home page](http://openid.net/)  
+&nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
+
+[comments\_openid.py](/space/comments_openid.py) is a
+[PyBlosxom](http://pyblosxom.sf.net/) plugin that allows
+[OpenID](http://openid.net/)-authenticated comments. When used in conjunction
+with the
+[comments plugin](http://pyblosxom.sourceforge.net/blog/registry/input/comments/comments),
+it allows people to comment on your PyBlosxom-based site
+using their OpenID provider. In addition, if their provider supports the
+[Simple Registration Extension](http://www.openidenabled.com/openid/simple-registration-extension),
+it displays their nickname instead of their OpenID URL under the comment.
+
+To use it, first download and install the
+[Python OpenID libraries](http://www.openidenabled.com/python-openid/). Then, download
+[comments.py](http://pyblosxom.sourceforge.net/blog/registry/input/comments/comments)
+and [session.py](http://pyblosxom.sourceforge.net/blog/registry/general/session)
+plugins and
+[enable comments](http://pyblosxom.sourceforge.net/1.3.1/manual/c888.html) on
+your blog.
+
+When you're ready to add OpenID, download
+[comments\_openid.py](/space/comments_openid.py) and place it in your
+plugins directory. Add this HTML to your `comment-form` template:
+
+    <label for="openid_url">OpenID URL:</label><br />
+    <input name="openid_url" id="openid_url" type="text"
+           value="$cmt_openid_url" width="50" /><br />
+
+and add this setting to your `config.py`:
+
+    # A directory for the OpenID library to use to store information about
+    # OpenID servers and logins. This directory should be outside of your
+    # public web space.
+     py['openid_store_dir'] = '/path/to/data/directory/'
+
+Change the path to an appropriate directory on your web server, and you should
+be good to go!
+
+Apart from `openid_store_dir`, there are several configuration settings that
+allow you to control comment access based on OpenID:
+
+    # Trust root for the OpenID Request. Defaults to the base URL of your page.
+    # (All URLs should fall under this directory.)
+    py['openid_trust_root']  
+    
+    # If this is set to True, do not allow comments unless OpenID
+    # authentication succeeds. Defaults to False.
+    py['openid_required']  
+    
+    # List of patterns for identities and OpenID servers to always reject. The
+    # patterns follow the form of OpenID trust roots, which are basically URLs
+    # that allow * in the domain name to match any subdomain. For more
+    # details, see the entry on openid.trust_root in
+    # http://openid.net/specs.bml#mode-checkid_immediate.
+    # Both default to empty lists.
+    py['openid_reject_identity']  
+    py['openid_reject_server']  
+    
+    # Lists of patterns for identities and servers to allow. If either of
+    # these options are set, only OpenID URLs that match are allowed. Both
+    # default to empty lists.
+    py['openid_allow_identity']  
+    py['openid_allow_server']  
+
+Copyright 2006-2007
+[Josh Hoyt](http://claimid.com/j3h/) and
+[Kevin Turner](http://claimid.com/keturn/) of
+[JanRain](http://janrain.com/), original authors, and
+[Ryan Barrett](/space/about), current maintainer. Distributed under the
+[GPL](http://www.gnu.org/licenses/gpl.html). Originally released on
+[openidenabled.com](http://openidenabled.com/) and moved to
+[snarfed.org](http://snarfed.org/) on September 6, 2007.
+
+
+See also:
+  * [pyblosxom openid server](/space/pyblosxom+openid+server)
+  * [pyblosxom ajax comments](/space/pyblosxom+ajax+comments)
+  * [windows p2p](/space/windows+p2p)
+  * [pyblosxom index](/space/pyblosxom+index)
+  * [pyblosxom history](/space/pyblosxom+history)
