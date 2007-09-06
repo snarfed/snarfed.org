@@ -10,10 +10,8 @@ A while back, I posted an
 [PyBlosxom](http://pyblosxom.sf.net/), the software that runs this site.
 
 Since then, I've added support for
-[OpenID comments](/space/2007-08-21_openid_comments#comment-anchor),
-using
-[Josh Hoyt](http://www.openidenabled.com/author/http-3A-2F-2Fjosh.myopenid.com-2F)'s
-[comments plugin](http://www.openidenabled.com/software/pyblosxom/pyblosxom-openid-plug-in-documentation).
+[OpenID comments](/space/2007-08-21_openid_comments#comment-anchor), using
+the [comments_openid.py plugin](/space/pyblosxom+openid+comments).
 I've updated it to work with recent versions of PyBlosxom and
 [JanRain](http://www.janrain.com/)'s
 [Python OpenID library](http://www.openidenabled.com/openid/libraries/python/),
