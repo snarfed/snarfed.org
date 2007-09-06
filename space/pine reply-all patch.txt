@@ -42,7 +42,7 @@ accordingly. For more information on patching Pine, see [Eduardo Chappa's
 FAQ](http://www.math.washington.edu/~chappa/pine/faq/index.html).
 
 If you do try it out, please [let me
-know!](http://ryan.barrett.name/contact.html)
+know!](/space/about)
 
 **Note:** If you get compile problems with kssl.h and krb5.h when building Pine
 on Redhat 9, use this build command:

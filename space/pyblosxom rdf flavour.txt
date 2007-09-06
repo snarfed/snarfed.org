@@ -17,7 +17,7 @@ I've added an [RDF flavour](/space/rdf_flavour.tar.gz) that uses
 For an example, check out the
 [RDF for this page](/space/pyblosxom+rdf+flavour.rdf).
 
-The RDF flavour is copyright 2006 [Ryan Barrett](/space/contact), and is
+The RDF flavour is copyright 2006 [Ryan Barrett](/space/about), and is
 distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
 
 See also:

@@ -45,7 +45,7 @@ quoted text to do smart things. This patch can make your emails more readable in
 those clients. (I've discussed my thoughts on gmail vs pine
 [at length](/space/gmail vs pine).)
 
-Feel free to [email me](http://ryan.barrett.name/contact.html) with feedback or
+Feel free to [email me](/space/about) with feedback or
 bug reports.
 
 _Known bug_: Whole quotes are not detected correctly if you start your email

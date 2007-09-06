@@ -45,7 +45,7 @@ Unfortunately, there are very few working XSLT base64 decoders.
 [Mukul Gandhi's](http://gandhimukul.tripod.com/xmlxslt.htm) is close, but it's
 recursive, so files above a few KB overflow the stack. :/
 
-snipsnap2svn is copyright 2006 [Ryan Barrett](/space/contact), and is
+snipsnap2svn is copyright 2006 [Ryan Barrett](/space/about), and is
 distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
 
 See also:

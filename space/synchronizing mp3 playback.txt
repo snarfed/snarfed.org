@@ -21,7 +21,7 @@ In the end, [P4](/space/p4)'s syncher worked, but it was brittle and not at all
 easy to use. We're currently working on an extensive redesign to make it simpler
 and more usable. We are actively developing, but it's _not done yet_, so we
 haven't released any code. If you want to check out what we have so far, [drop
-me a line](http://ryan.barrett.name/contact.html) and I can send it to you. Be
+me a line](/space/about) and I can send it to you. Be
 warned, though, it's definitely a work in progress.
 
 ### Related Work

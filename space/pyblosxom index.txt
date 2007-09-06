@@ -27,7 +27,7 @@ behavior, all optional. Here they are, along with their defaults:
     py['index_title']              = 'index'
     py['index_use_story_template'] = True
 
-index.py is copyright 2006 [Ryan Barrett](/space/contact), and is distributed
+index.py is copyright 2006 [Ryan Barrett](/space/about), and is distributed
 under the [GPL](http://www.gnu.org/licenses/gpl.html).
 
 

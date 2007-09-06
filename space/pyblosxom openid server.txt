@@ -90,10 +90,11 @@ html flavour are included in
 [openid_server-0.3.tar.gz](/space/openid_server-0.3.tar.gz).
 
 
-openid_server.py is copyright 2006 [Ryan Barrett](/space/contact), and is
+openid_server.py is copyright 2006 [Ryan Barrett](/space/about), and is
 distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
 
 See also:
+  * [pyblosxom openid comments](/space/pyblosxom+openid+comments)
   * [pyblosxom ajax comments](/space/pyblosxom+ajax+comments)
   * [windows p2p](/space/windows+p2p)
   * [pyblosxom index](/space/pyblosxom+index)
