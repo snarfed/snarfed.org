@@ -50,19 +50,30 @@ div#page-content {
   min-height: 500px;
 }
 
-div#sidebar
+div#sidebar, div#sidebar-shadow
 {
   position: absolute;
   width: 6em;
   max-width: 7em;
   left: .7em;
   padding: .67em;
+  -moz-border-radius-bottomleft: 1em;
+  -moz-border-radius-bottomright: 1em;
+}
+
+div#sidebar {
+  z-index: 1;
   background-color: #EEE;
   color: #000;
   border: 1px solid #036;
   border-top: none;
-  -moz-border-radius-bottomleft: 1em;
-  -moz-border-radius-bottomright: 1em;
+}
+
+div#sidebar-shadow {
+  left: .9em;
+  border: 3px solid #DDD;
+  border-left: none;
+  background-color: #DDD;
 }
 
 /*
