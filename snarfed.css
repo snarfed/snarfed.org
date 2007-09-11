@@ -194,6 +194,10 @@ h2.comment-name {
   margin: .33em;
 }
 
+span.comment-date {
+  font-size: 0.8em;
+}
+
 div.comment-content {
   margin: .33em;
   margin-left: 1.5em;
