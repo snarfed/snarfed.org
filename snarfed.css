@@ -71,9 +71,10 @@ div#sidebar {
 
 div#sidebar-shadow {
   left: .9em;
+  padding-top: .7em;
   border: 3px solid #DDD;
   border-left: none;
-  background-color: #DDD;
+  background-color: #AAA;
 }
 
 /*
