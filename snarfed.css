@@ -154,12 +154,12 @@ table {
 .name, h1.index, h1.photogallery {
   vertical-align: top;
   font-weight: bold;
-  font-decoration: none;
   color: #036;
   font-size: 1.2em;
 }
 
 .name { float: left; }
+.name a { text-decoration: none; }
 
 .buttons {
   float: right;
