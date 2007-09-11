@@ -1,5 +1,8 @@
 archive
-![/space/clock_icon.jpg](/space/clock_icon.jpg)
+
+<div style="float: right; margin-left: 10px">
+  <img src="/space/clock_icon.jpg" />
+</div>
 
 Archived posts:
   * [Palo Alto Festival of the Arts](http://snarfed.org/space/2007-08-26_palo_alto_arts_festival)

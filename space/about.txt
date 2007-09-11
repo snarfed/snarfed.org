@@ -1,6 +1,8 @@
 about
 
-[![ryan_small.jpg](/space/ryan_small.jpg)](/space/ryan)
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <a href="/space/ryan"><img src="/space/ryan_small.jpg" /></a>
+</div>
 
 snarfed.org is run by [Ryan Barrett](/space/ryan). It is
 [copylefted](/space/snipsnap-copyright). For more, see

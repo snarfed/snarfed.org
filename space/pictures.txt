@@ -1,5 +1,9 @@
 pictures
-![/space/camera.jpg](/space/camera.jpg)
+
+<div class="img-shadow">
+  <img src="/space/camera.jpg" />
+</div>
+<br class="clearing" />
 
 [Minnesota 2007](/gallery/Minnesota 2007)
 with Nick's parents (from
