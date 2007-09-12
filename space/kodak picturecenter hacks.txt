@@ -15,11 +15,11 @@ email with a link to this page.)
   3. Right-click on the picture, and select 'View Image'.
 
   4. The URL in your browser should look something like this:
-[http://picturecenter.kodak.com/imagep/2239126934\_400.jpg?...](http://picturecenter.kodak.com/imagep/2239126934_400.jpg?...)
+`http://picturecenter.kodak.com/imagep/2239126934\_400.jpg?...`
 
   5. See the number before _.jpg_? Change it to 999999. The URL should now look
 like this:
-[http://picturecenter.kodak.com/imagep/2239126934\_999999.jpg?..](http://picturecenter.kodak.com/imagep/2239126934_999999.jpg?..)
+`http://picturecenter.kodak.com/imagep/2239126934\_999999.jpg?...`
 
   6. Voila! Right-click and save, and you have the picture in its original size.
 
