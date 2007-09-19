@@ -1,9 +1,11 @@
 podcasts
 
-[/space/podcast.gif](/space/podcast.gif)
+<div style="float: right; margin-left: 10px">
+  <img src="/space/podcast.gif" />
+</div>
 
 Podcasts I listen to, usually while running or at the gym. Most are news,
-current events, and game industry analysis.
+current events, or game industry analysis.
 
 * [BBC NewsPod](http://www.bbc.co.uk/radio/podcasts/newspod)
 (_[subscribe](http://downloads.bbc.co.uk/podcasts/radio/newspod/rss.xml)_) 
@@ -31,9 +33,6 @@ current events, and game industry analysis.
 
 * [NPR: Wait Wait... Don't Tell Me!](http://www.npr.org/templates/rundowns/rundown.php?prgId=35&ft=2&f=35)
 (_[subscribe](http://www.npr.org/templates/rss/podcast.php?id=35)_) 
-
-* [Jonathan Coulton » Thing a Week](http://www.jonathancoulton.com)
-(_[subscribe](http://feeds.feedburner.com/thingaweek)_) 
 
 * [NPR: Piano Puzzler](http://www.npr.org/templates/story/story.php?storyId=4464231&ft=2&f=4464231)
 (_[subscribe](http://www.npr.org/templates/rss/podcast.php?id=4464231)_) 
