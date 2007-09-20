@@ -106,6 +106,10 @@ email account.
 <a name="patches"></a>
 ### Patches  [![Icon-Permalink.png](/Icon-Permalink.png)](#patches)
 
+  * A [patch](/space/opml2markdown_linkify.patch) for
+[opml2markdown.xslt](http://fletcher.freeshell.org/wiki/Markdown_and_XML) that
+adds links to each item's web site and feed.
+
   * A [patch](/space/comments_openid.patch) that updates the
 [PyBlosxom OpenId comments plugin](http://www.openidenabled.com/software/pyblosxom/release-announcement)
 to work with versions 1.x of the
