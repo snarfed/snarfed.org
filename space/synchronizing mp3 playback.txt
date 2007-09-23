@@ -17,12 +17,20 @@ buffering. Another low-tech alternative was to yell "Play!" and have everyone
 try to start an MP3 at the same time. We actually tried this, and quickly
 verified that it's more or less impossible.
 
-In the end, [P4](/space/p4)'s syncher worked, but it was brittle and not at all
-easy to use. We're currently working on an extensive redesign to make it simpler
-and more usable. We are actively developing, but it's _not done yet_, so we
-haven't released any code. If you want to check out what we have so far, [drop
-me a line](/space/about) and I can send it to you. Be
-warned, though, it's definitely a work in progress.
+In the end, [P4](/space/p4)'s syncher worked, but it was brittle and not at
+all easy to use. I tried again without P2P, and ended up with a solid synching
+engine, but couldn't find a player with low enough plugin latency. When the
+sync plugin says "seek here!", it needs to happen in around 50ms, all the way
+from the player down through the sound card driver.
+[Winamp](http://winamp.com/) can do this, but not
+[iTunes](http://itunes.com/), nor any *nix players we found.
+
+Still, if you're interested, feel free download the source,
+[p4sync-0.1.tar.bz2](/space/p4sync-0.1.tar.bz2). It comes with the sync
+engine, plugin framework, and working plugins for the *nix music players
+[XMMS](http://xmms.org/), [Zinf](http://zinf.org/), and
+[MPD](http://musicpd.org/). [Drop me a line](/space/about) if you have any
+questions!
 
 ### Related Work
 
@@ -161,6 +169,5 @@ See also:
 
   * [p4](/space/p4)
   * [libmsntp](/space/libmsntp)
-
   * [libwebserver shutdown patch](/space/libwebserver shutdown patch)
 
