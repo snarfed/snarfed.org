@@ -13,6 +13,8 @@ For the impatient:
 &nbsp; [OpenID home page](http://openid.net/)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
 
+*Updated 2007-09-23.*
+
 [comments\_openid.py](/space/comments_openid.py) is a
 [PyBlosxom](http://pyblosxom.sf.net/) plugin that allows
 [OpenID](http://openid.net/)-authenticated comments. When used in conjunction

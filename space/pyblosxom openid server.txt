@@ -6,11 +6,10 @@ pyblosxom openid server
 For the impatient:  
 &nbsp; Download [openid\_server.py](/space/openid_server.py) or
 [openid\_server-0.4.tar.gz](/space/openid_server-0.4.tar.gz)  
-&nbsp; Download [openid\_libs.zip](/space/openid_libs.zip)  
 &nbsp; [OpenID home page](http://openid.net/)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
 
-*Updated 2006-12-19.*
+*Updated 2007-09-23.*
 
 [openid_server.py](/space/openid_server.py) is a
 [PyBlosxom](http://pyblosxom.sf.net/) plugin that implements
@@ -34,17 +33,11 @@ handles OpenID requests on that endpoint, allows
 [associations](http://openid.net/specs/openid-authentication-1_1.html#mode_associate),
 and authenticates the user with an HTML form.
 
-To use it, first download
-[openid_server.py](/space/openid_server.py) and
-[openid\_libs.zip](/space/openid_libs.zip)
-and place them both in your plugins directory. (`openid_libs.zip` is a
-convenient, drop-in package of necessary libraries, provided by
-[JanRain](http://janrain.com/),
-[Yadis](http://yadis.org/), and others. If you don't trust me - and why should
-you? - feel free to
-[build and install them yourself](http://www.openidenabled.com/openid/libraries/python).)
-
-Then, add this line to your flavour's head template:
+To use it, first download and install the
+[Python OpenID libraries](http://www.openidenabled.com/python-openid/).
+Then, download [openid_server.py](/space/openid_server.py) and
+place it in your plugins directory. Finally, add this line to your flavour's
+head template:
 
     <link rel="openid.server"
           href="$base_url$openid_trigger">
