@@ -80,6 +80,7 @@ configuration is the 'openid_store_dir'. The configuration parameters are:
 Changelog:
   0.3
   - updated to work with janrain's python openid libraries 1.x and 2.x
+  - lazy-load the janrain libraries
   0.2
   - added nickname support using Simple Registration Extension 
   - moved to snarfed.org
@@ -98,20 +99,8 @@ __description__  = 'OpenID commenting support for PyBlosxom'
 #import cgitb; cgitb.enable() # for debugging
 import time
 import cgi
+import traceback
 from urlparse import urlparse
-
-# OpenID imports
-from openid.server import trustroot
-from openid.consumer import consumer as openid
-from openid.consumer.discover import DiscoveryFailure
-from openid.store import filestore
-from openid.oidutil import appendArgs
-
-# Pyblosxom session plugin
-try:
-    from session import Session
-except ImportError:
-    Session = None
 
 from Pyblosxom import tools
 
@@ -125,10 +114,9 @@ class OpenIDCommentError(RuntimeError):
 def verify_installation(request):
     config = request.getConfiguration()
     retval = 1
-    
-    if Session is None:
-        print "Missing required plugin session.py."
-        retval = 0
+ 
+    import_and_initialize()
+    get_openid_consumer()
 
     try:
         import comments
@@ -144,6 +132,32 @@ def verify_installation(request):
     
     return retval
 
+def import_and_initialize():
+    # Pyblosxom session plugin
+    global Session
+    try:
+        from session import Session
+    except ImportError, e:
+        logger.error('Could not find the pyblosxom session plugin in:\n' +
+                     '\n'.join(sys.path))
+
+    # OpenID imports
+    global trustroot
+    global openid
+    global DiscoveryFailure
+    global filestore
+    global appendArgs
+    try:
+        from openid.server import trustroot
+        from openid.consumer import consumer as openid
+        from openid.consumer.discover import DiscoveryFailure
+        from openid.store import filestore
+        from openid.oidutil import appendArgs
+    except ImportError, e:
+        logger.error('Could not find the JanRain OpenId libraries in:\n' +
+                     '\n'.join(sys.path) + '\n\n' + e)
+
+
 def get_openid_consumer(request, session):
     """Initialize an OpenID store for authenticating comments.
 
@@ -156,15 +170,21 @@ def get_openid_consumer(request, session):
     @rtype: OpenID consumer store or C{None}
     """
     config = request.getConfiguration()
+    logger = tools.getLogger()
 
     store_dir = config.get('openid_store_dir')
     if store_dir is None:
-        tools.getLogger().error('You must define openid_store_dir in your '
-                                ' config to enable OpenID comments')
+        logger.error('You must define openid_store_dir in your '
+                     'config to enable OpenID comments.')
         return None
-    else:
+
+    try:
         store = filestore.FileOpenIDStore(store_dir)
         return openid.Consumer(session, store)
+    except Exception:
+        trace = traceback.format_exception(*sys.exc_info())
+        logger.error('Error initializing OpenID server:\n' + '\n'.join(trace))
+
 
 def check_url_matches(patterns, url):
     """Check to see if C{url} matches one of C{patterns}. For a URL
@@ -204,9 +224,10 @@ def start_openid_auth(request, openid_url):
     form = request.getForm()
     config = request.getConfiguration()
     data = request.getData()
-    session = Session(request)
+    import_and_initialize()
 
     # Try to start OpenID verification
+    session = Session(request)
     consumer = get_openid_consumer(request, session)
     if consumer is None:
         return
@@ -294,8 +315,9 @@ def complete_openid_auth(request, session_id):
     form = request.getForm()
     config = request.getConfiguration()
     data = request.getData()
-    session = Session(request, session_id)
+    import_and_initialize()
 
+    session = Session(request, session_id)
     consumer = get_openid_consumer(request, session)
     if consumer is None:
         return
