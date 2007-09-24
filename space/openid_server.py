@@ -1,13 +1,13 @@
-#!/usr/bin/python2.3
+#!/usr/bin/python2.5
 """
-openid.py
+openid_server.py
 http://snarfed.org/space/pyblosxom+openid+server
-Copyright 2006 Ryan Barrett
+Copyright 2006-2007 Ryan Barrett
 
-openid_server.py is a PyBlosxom plugin that implements OpenID 1.1. OpenID is a
-distributed authentication protocol, ie a single sign on platform, that uses
-URLs as identifiers. It allows you to prove your identity to other sites - to
-post comments, for example - by logging into your own site.
+openid_server.py is a PyBlosxom plugin that implements OpenID 1.x and 2.0.
+OpenID is a distributed authentication protocol, ie a single sign on platform,
+that uses URLs as identifiers. It allows you to prove your identity to other
+sites - to post comments, for example - by logging into your own site.
 
 This plugin also implements the Simple Registration Extension, which lets you
 optionally provide your name, email address, and other information
@@ -19,11 +19,8 @@ In OpenID terminology,, this plugin acts as an an OpenID Identifer and Identity
 Provider. It provides an endpoint URL, handles OpenID requests on that
 endpoint, allows associations, and authenticates the user with an HTML form.
 
-To use it, first install the JanRain OpenID, Yadis, UrlJr, and ElementTree
-libraries. The easiest way to do this is to download openid_libs.zip from the
-page on snarfed.org, and place it in your plugins directory. Of course, if you
-don't trust me - and why should you? - feel free to build and install them
-yourself. See http://www.openidenabled.com/openid/libraries/python for details.
+To use it, first install the JanRain OpenID libraries (including Yadis, UrlJr,
+and ElementTree). See http://www.openidenabled.com/openid/libraries/python .
 
 Then, add this line to your flavour's head template:
 
@@ -79,12 +76,19 @@ This program is distributed in the hope that it will be useful, but WITHOUT
 ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
 FOR A PARTICULAR PURPOSE. See the GNU General Public License for more
 details.
+
+Changelog:
+  0.4
+  - updated to support janrain's python 2.x libraries. thanks, anton romanov!
+  0.3
+  0.2
+  0.1
 """
 
 __author__ = 'Ryan Barrett <pyblosxom at ryanb dot org>'
-__version__ = '0.3'
+__version__ = '0.4'
 __url__ = 'http://snarfed.org/space/pyblosxom+openid+server'
-__description__  = 'Implements OpenID 1.1 (http://openid.net/)'
+__description__  = 'Implements OpenID 1.x and 2.0 (http://openid.net/)'
 
 import BaseHTTPServer
 import cgi
@@ -169,7 +173,8 @@ def respond(request, oidresponse):
     for field in ['nickname', 'email', 'fullname', 'dob', 'gender', 'postcode',
                   'country', 'language', 'timezone']:
       if config.has_key('openid_%s' % field):
-        oidresponse.addField('sreg', field, config['openid_%s' % field])
+        oidresponse.fields.setArg('http://openid.net/sreg/1.0', field,
+                          config['openid_%s' % field])
 
   try:
     webresponse = oidserver.encodeResponse(oidresponse)
@@ -203,17 +208,18 @@ def import_and_initialize(request):
   config = request.getConfiguration()
   data = request.getData()
 
-  for dir in config['plugin_dirs']:
-    sys.path.append(os.path.join(dir, 'openid_libs.zip'))
-
   # this lets us import modules in a function, but still bind their names in
   # the global namespace
   global FileOpenIDStore
   global OpenIDServer
   global server
+  global Message
+  global sreg
   try:
     from openid.store.filestore import FileOpenIDStore
     from openid.server import server as OpenIDServer
+    from openid.message import Message
+    from openid import sreg
   except ImportError, e:
     msg = ('Could not find the JanRain OpenId libraries in:\n' +
            '\n'.join(sys.path))
@@ -225,7 +231,8 @@ def import_and_initialize(request):
   if not oidserver:
     try:
       store = FileOpenIDStore(config['datadir'])
-      oidserver = OpenIDServer.Server(store)
+      endpoint = config.get('openid_trigger', DEFAULT_TRIGGER)
+      oidserver = OpenIDServer.Server(store, endpoint)
     except Exception:
       exception = traceback.format_exception(*sys.exc_info())
       msg = 'Error initializing OpenID server:\n' + '\n'.join(exception)
@@ -293,7 +300,9 @@ def cb_handle(args):
 
   elif http['PATH_INFO'] == trigger + '/login':
     try:
-      oidrequest = OpenIDServer.CheckIDRequest.fromQuery(form)
+      message = Message.fromPostArgs(form)
+      endpoint = config['base_url'] + trigger 
+      oidrequest = OpenIDServer.CheckIDRequest.fromMessage(message, endpoint)
     except:
       exception = traceback.format_exception(*sys.exc_info())
       data['openid_error'] = ('Error decoding login request:\n%s\n%s' %

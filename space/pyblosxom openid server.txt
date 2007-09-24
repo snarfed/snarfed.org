@@ -5,7 +5,7 @@ pyblosxom openid server
 
 For the impatient:  
 &nbsp; Download [openid\_server.py](/space/openid_server.py) or
-[openid\_server-0.3.tar.gz](/space/openid_server-0.3.tar.gz)  
+[openid\_server-0.4.tar.gz](/space/openid_server-0.4.tar.gz)  
 &nbsp; Download [openid\_libs.zip](/space/openid_libs.zip)  
 &nbsp; [OpenID home page](http://openid.net/)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
@@ -14,7 +14,7 @@ For the impatient:
 
 [openid_server.py](/space/openid_server.py) is a
 [PyBlosxom](http://pyblosxom.sf.net/) plugin that implements
-[OpenID](http://openid.net/) 1.1. OpenID is a distributed authentication
+[OpenID](http://openid.net/) 1.x and 2.0. OpenID is a distributed authentication
 protocol, ie a single sign on platform, that uses URLs as identifiers. If you
 have a PyBlosxom site, this plugin allows you to login anywhere that accepts
 OpenID.

@@ -5,7 +5,7 @@ pyblosxom OpenID comments
 [![janrain](/space/janrain.png)](http://janrain.com/)
 
 For the impatient:  
-&nbsp; Download [comments\_openid.py 0.2](/space/comments_openid.py)  
+&nbsp; Download [comments\_openid.py 0.3](/space/comments_openid.py)  
 &nbsp; Download [Python OpenID libraries](http://www.openidenabled.com/python-openid/)  
 &nbsp; Download
   [comments.py](http://pyblosxom.sf.net/blog/registry/input/comments/comments)

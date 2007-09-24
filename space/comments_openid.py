@@ -1,3 +1,4 @@
+#!/usr/bin/python2.5
 """
 OpenID for the PyBlosxom comments plugin.
 http://snarfed.org/space/pyblosxom+openid+comments
@@ -77,8 +78,9 @@ configuration is the 'openid_store_dir'. The configuration parameters are:
     allowed. If this option is not set, all URLs are whitelisted.
 
 Changelog:
-  0.2
+  0.3
   - updated to work with janrain's python openid libraries 1.x and 2.x
+  0.2
   - added nickname support using Simple Registration Extension 
   - moved to snarfed.org
   0.1
@@ -88,7 +90,7 @@ Changelog:
 __author__ = 'Josh Hoyt <josh at janrain dot com>'
 __author__ = 'Kevin Turner <kevin at janrain dot com>'
 __author__ = 'Ryan Barrett <pyblosxom at ryanb dot org>'
-__version__ = '0.2'
+__version__ = '0.3'
 __url__ = 'http://snarfed.org/space/pyblosxom+openid+comments'
 __description__  = 'OpenID commenting support for PyBlosxom'
 
@@ -97,12 +99,6 @@ __description__  = 'OpenID commenting support for PyBlosxom'
 import time
 import cgi
 from urlparse import urlparse
-
-# import the openid python librarie from openid_server.py's zip file.
-# this assumes that they're in the same directory as this plugin.
-import os
-import sys
-sys.path.append(os.path.join(os.path.dirname(__file__), 'openid_libs.zip'))
 
 # OpenID imports
 from openid.server import trustroot
@@ -228,7 +224,7 @@ def start_openid_auth(request, openid_url):
         raise OpenIDCommentError(msg)
 
     # Make sure that the server and identity URL are allowed by the config
-    server_id = auth_req.endpoint.getServerID()
+    server_id = auth_req.endpoint.getLocalID()
     server_url = auth_req.endpoint.server_url
     if (check_url_rejected(config, server_id, 'identity') or
         check_url_rejected(config, server_url, 'server')):
@@ -245,7 +241,7 @@ def start_openid_auth(request, openid_url):
         trust_root = config['base_url']
 
     # Save the data for the return
-    populate_comment_session(session, request, auth_req.token, trust_root)
+    populate_comment_session(session, request, auth_req.assoc, trust_root)
     args = {sid_field: session.id(), 'showcomments': 'yes',}
     return_to = appendArgs(data['url'], args)
 
@@ -257,14 +253,14 @@ def start_openid_auth(request, openid_url):
     renderer.showHeaders()
     renderer.rendered = 1
 
-def populate_comment_session(session, request, token, trust_root):
+def populate_comment_session(session, request, association, trust_root):
     cmt_data = {}
     form = request.getForm()
     for k in comment_form_fields:
         if form.has_key(k):
             cmt_data[k] = form[k].value
 
-    session["token"] = token
+    session["association"] = association
     session['trust_root'] = trust_root
     session["data"] = cmt_data
     session.save()
@@ -315,15 +311,18 @@ def complete_openid_auth(request, session_id):
     # Actual user-filled comment data
     cmt_data = sess.get('data', {})
 
-    # Auth token from the OpenID library
-    token = sess.get('token')
+    # Association
+    association = sess.get('association')
     trust_root = sess.get('trust_root')
 
     try:
+        if form.getfirst('openid.mode', None) == 'cancel':
+            raise OpenIDCommentError('OpenID authentication cancelled')
+
         # Make sure that the return_to URL that was sent by the server has
         # the same session ID as the current request
         return_to = query.get('openid.return_to', '')
-        if (not token or
+        if (not association or
             not verify_return_to(return_to, trust_root, session_id)):
             raise OpenIDCommentError('Error handling OpenID response')
 
@@ -336,9 +335,14 @@ def complete_openid_auth(request, session_id):
                 cmt_data['openid_url'] = response.identity_url
 
                 # get the user's nickname using Simple Registration Extension
-                sreg = response.extensionResponse('sreg')
-                if 'nickname' in sreg:
-                    cmt_data['author'] = sreg['nickname']
+                sreg_args = response.extensionResponse(
+                    'http://openid.net/sreg/1.0', False)
+                signon_args = response.extensionResponse(
+                    'http://openid.net/signon/1.0', False)
+                if 'nickname' in sreg_args:
+                    cmt_data['author'] = sreg_args['nickname']
+                elif 'sreg.nickname' in signon_args:
+                    cmt_data['author'] = signon_args['sreg.nickname']
 
                 save_comment(request, cmt_data)
 
@@ -450,7 +454,7 @@ def cb_prepare(args):
     form = request.getForm()
     config = request.getConfiguration()
 
-    if not config.get('openid_enabled', True):
+    if not config.get('openid_enabled', True) or not form:
         return
 
     # Session id of None generates a new session
@@ -458,7 +462,7 @@ def cb_prepare(args):
 
     if session_id is not None:
         msg = complete_openid_auth(request, session_id)
-    elif 'preview' not in form:
+    elif 'preview' not in form and 'openid_url' in form:
         try:
             openid_url = form.getfirst('openid_url')
             if openid_url:
