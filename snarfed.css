@@ -106,14 +106,14 @@ input, select, textarea {
 }
 
 input[type=text] {
-  width: 15em;
+  width: 16em;
 }
 
-input#comment-openid-url {
+input#comment-url {
   background: url(/icon_openid.gif) no-repeat;
-  background-position: 0 50%;
-  padding-left: 1.1em;
-  width: 14em;
+  background-position: 15.1em 50%;
+  padding-right: 1.1em;
+  width: 14.9em;
 }
 
 div#sidebar input {
