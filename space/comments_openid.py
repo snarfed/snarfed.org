@@ -34,11 +34,11 @@ https://sourceforge.net/project/showfiles.php?group_id=67445&package_id=145140
   3. Create a directory for putting the OpenID session data and set
      py['openid_store_dir'] = '/path/to/data/directory/'
 
-  4. Add something like this to your comment-form.html template:
-    <label for="openid_url">OpenID Identity URL:</label><br />
-    <input name="openid_url" id="openid_url" type="text"
-           value="$cmt_openid_url" width="50" /><br />
-    <br />
+  4. Add a note in your `comments-form` template that the URL input field
+     now supports OpenId. Something like:
+
+    <input name="url" id="comment-url" type="text" value="$cmt_link" />
+    <label for="url">Web site or <a href="http://openid.net/">OpenID</a></label>
 
     If you are requiring OpenID, it's probably a good idea to get rid
     of the normal comment URL field.
@@ -78,6 +78,10 @@ configuration is the 'openid_store_dir'. The configuration parameters are:
     allowed. If this option is not set, all URLs are whitelisted.
 
 Changelog:
+  0.4
+  - switch to "unobtrusive" mode, with a single url field. if that url is an
+    openid, use openid. otherwise, don't. :P inspired by sam ruby:
+    http://intertwingly.net/blog/2006/12/28/Unobtrusive-OpenID
   0.3
   - updated to work with janrain's python openid libraries 1.x and 2.x
   - lazy-load the janrain libraries
@@ -91,7 +95,7 @@ Changelog:
 __author__ = 'Josh Hoyt <josh at janrain dot com>'
 __author__ = 'Kevin Turner <kevin at janrain dot com>'
 __author__ = 'Ryan Barrett <pyblosxom at ryanb dot org>'
-__version__ = '0.3'
+__version__ = '0.4'
 __url__ = 'http://snarfed.org/space/pyblosxom+openid+comments'
 __description__  = 'OpenID commenting support for PyBlosxom'
 
@@ -104,7 +108,7 @@ from urlparse import urlparse
 
 from Pyblosxom import tools
 
-comment_form_fields = ['title', 'author', 'openid_url', 'email', 'url', 'body']
+comment_form_fields = ['title', 'author', 'email', 'url', 'body']
 comment_fields = ['title', 'pubDate', 'link', 'source', 'description']
 sid_field = 'cmt_openid_sid'
 
@@ -114,9 +118,13 @@ class OpenIDCommentError(RuntimeError):
 def verify_installation(request):
     config = request.getConfiguration()
     retval = 1
- 
-    import_and_initialize()
-    get_openid_consumer()
+
+    try:
+        import_and_initialize()
+        get_openid_consumer()
+    except:
+        print "Error initializing OpenID libraries."
+        retval = 0
 
     try:
         import comments
@@ -132,6 +140,7 @@ def verify_installation(request):
     
     return retval
 
+
 def import_and_initialize():
     # Pyblosxom session plugin
     global Session
@@ -140,6 +149,7 @@ def import_and_initialize():
     except ImportError, e:
         logger.error('Could not find the pyblosxom session plugin in:\n' +
                      '\n'.join(sys.path))
+        raise
 
     # OpenID imports
     global trustroot
@@ -156,6 +166,7 @@ def import_and_initialize():
     except ImportError, e:
         logger.error('Could not find the JanRain OpenId libraries in:\n' +
                      '\n'.join(sys.path) + '\n\n' + e)
+        raise
 
 
 def get_openid_consumer(request, session):
@@ -184,6 +195,7 @@ def get_openid_consumer(request, session):
     except Exception:
         trace = traceback.format_exception(*sys.exc_info())
         logger.error('Error initializing OpenID server:\n' + '\n'.join(trace))
+        return None
 
 
 def check_url_matches(patterns, url):
@@ -237,12 +249,7 @@ def start_openid_auth(request, openid_url):
         raise OpenIDCommentError(
             'That identity is not allowed to post to this blog')
 
-    try:
-        auth_req = consumer.begin(openid_url)
-    except DiscoveryFailure:
-        fmt = "Unable to use <q>%s</q> as an identity URL"
-        msg = fmt % (cgi.escape(openid_url),)
-        raise OpenIDCommentError(msg)
+    auth_req = consumer.begin(openid_url)
 
     # Make sure that the server and identity URL are allowed by the config
     server_id = auth_req.endpoint.getLocalID()
@@ -354,7 +361,7 @@ def complete_openid_auth(request, session_id):
             if response.identity_url is None:
                 raise OpenIDCommentError('OpenID authentication cancelled')
             else:
-                cmt_data['openid_url'] = response.identity_url
+                cmt_data['url'] = response.identity_url
 
                 # get the user's nickname using Simple Registration Extension
                 sreg_args = response.extensionResponse(
@@ -406,7 +413,7 @@ def save_comment(request, cmt_data):
         if type(v) is type(''):
             cmt_data[k] = v.decode(enc)
 
-    openid_url = cmt_data['openid_url']
+    openid_url = cmt_data['url']
 
     body = add_dont_follow(sanitize(cmt_data['body']), config)
 
@@ -471,31 +478,43 @@ def cb_prepare(args):
     @param request: pyblosxom request object
     @type request: a Pyblosxom request object
     """
-    request = args["request"]
+    request = args['request']
     data = request.getData()
     form = request.getForm()
     config = request.getConfiguration()
 
     if not config.get('openid_enabled', True) or not form:
         return
+    elif 'comments_openid_prepared' in data:
+        return
+
+    data['comments_openid_prepared'] = True
 
     # Session id of None generates a new session
     session_id = form.getfirst(sid_field, None)
 
     if session_id is not None:
         msg = complete_openid_auth(request, session_id)
-    elif 'preview' not in form and 'openid_url' in form:
+    elif 'preview' not in form and 'url' in form:
         try:
-            openid_url = form.getfirst('openid_url')
-            if openid_url:
+            openid_url = form.getfirst('url')
+            try:
                 start_openid_auth(request, openid_url)
-            elif config.get('openid_required', False):
-                raise OpenIDCommentError(
-                    'OpenID authentication is required to post')
+            except DiscoveryFailure:
+                fmt = "Unable to use <q>%s</q> as an OpenID identity URL"
+                msg = fmt % (cgi.escape(openid_url),)
+                if config.get('openid_required', False):
+                    raise OpenIDCommentError(msg)
+                else:
+                    # proceed without OpenID
+                    data['comments_not_openid'] = True
         except OpenIDCommentError, why:
             data['comment_message'] = why[0]
             for field_name in comment_form_fields:
                 data['cmt_' + field_name] = form.getfirst(field_name, '')
+    else:
+        data['comments_not_openid'] = True
+
 
 def cb_comment_reject(args):
     """Reject comments that were not generated by this plugin, as a
@@ -509,30 +528,27 @@ def cb_comment_reject(args):
     """
     comment = args['comment']
     request = args['request']
+    data = request.getData()
     config = request.getConfiguration()
+
+    cb_prepare(args)
 
     # Do not reject any comments if OpenID is disabled
     if not config.get('openid_enabled', True):
         return False
+    elif 'comments_not_openid' in data:
+        return config.get('openid_required', False)
 
     form = request.getForm()
     session_id = form.getfirst(sid_field, None)
 
-    # This is an initial post of an OpenID comment and this was
-    # triggered by the regular comments plugin. Reject this comment
-    # until we get OpenID auth finished.
-    if 'openid_url' in form:
+    if (form.getfirst('openid.mode', None) in (None, 'cancel')):
         return True
 
     if session_id or 'openid_url' in comment:
         # Allow a comment if the auth_method is OpenID and a URL is set
         openid_url = comment.get('openid_url')
         if openid_url:
-            del comment['openid_url']
             return check_url_rejected(config, openid_url, 'identity')
-        else:
-            return True
-    else:
-        # If OpenID is required, reject any comments that do not have
-        # an OpenID URL
-        return config.get('openid_required', False)
+
+    return True

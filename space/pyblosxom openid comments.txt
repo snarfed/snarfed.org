@@ -5,7 +5,7 @@ pyblosxom OpenID comments
 [![janrain](/space/janrain.png)](http://janrain.com/)
 
 For the impatient:  
-&nbsp; Download [comments\_openid.py 0.3](/space/comments_openid.py)  
+&nbsp; Download [comments\_openid.py 0.4](/space/comments_openid.py)  
 &nbsp; Download [Python OpenID libraries](http://www.openidenabled.com/python-openid/)  
 &nbsp; Download
   [comments.py](http://pyblosxom.sf.net/blog/registry/input/comments/comments)
@@ -13,7 +13,7 @@ For the impatient:
 &nbsp; [OpenID home page](http://openid.net/)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
 
-*Updated 2007-09-23.*
+*Updated 2007-09-24.*
 
 [comments\_openid.py](/space/comments_openid.py) is a
 [PyBlosxom](http://pyblosxom.sf.net/) plugin that allows
@@ -33,15 +33,13 @@ plugins and
 [enable comments](http://pyblosxom.sourceforge.net/1.3.1/manual/c888.html) on
 your blog.
 
-When you're ready to add OpenID, download
-[comments\_openid.py](/space/comments_openid.py) and place it in your
-plugins directory. Add this HTML to your `comment-form` template:
+When you're ready, add a note in your `comments-form` template that the URL
+input field now supports OpenId:
 
-    <label for="openid_url">OpenID URL:</label><br />
-    <input name="openid_url" id="openid_url" type="text"
-           value="$cmt_openid_url" width="50" /><br />
+    <input name="url" id="comment-url" type="text" value="$cmt_link" />
+    <label for="url">Web site or <a href="http://openid.net/">OpenID</a></label>
 
-and add this setting to your `config.py`:
+Then, add this setting to your `config.py`:
 
     # A directory for the OpenID library to use to store information about
     # OpenID servers and logins. This directory should be outside of your
