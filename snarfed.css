@@ -72,10 +72,12 @@ div#sidebar {
 div#sidebar-shadow {
   left: .9em;
   padding-top: .7em;
-  border: 3px solid #DDD;
+  border: 3px solid #EEE;
   border-left: none;
-  background-color: #AAA;
+  background-color: #BBB;
 }
+
+.hidden  { display: none; }
 
 /*
  * Style
