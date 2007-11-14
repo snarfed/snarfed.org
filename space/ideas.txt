@@ -6,6 +6,14 @@ lots more ideas for projects I'd _like_ to work on. I can't pretend that
 they're particularly good ideas, but it seems like a waste to just forget about
 them. So, here they are!
 
+  * Write a [Steam](http://steampowered.com/) protocol plugin for
+[Pidgin](http://pidgin.im/). I
+[haven't found](http://www.google.com/search?q=steam+protocol) much
+information about the protocol, and the Pidgin mailing list
+[is quiet so far](http://pidgin.im/pipermail/devel/2007-November/004035.html),
+but [this wiki page](http://developer.valvesoftware.com/wiki/Friends/Suggestions)
+seems to imply that it's MSN.
+
   * There's a [Python client](http://code.google.com/p/gdata-python-client/)
 for [GData](http://code.google.com/apis/gdata/overview.html),
 but no server. Write one! Even better, now that the
