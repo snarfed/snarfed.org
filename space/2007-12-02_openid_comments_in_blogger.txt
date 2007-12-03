@@ -13,7 +13,7 @@ OpenID project, commenting in
 [Blogger](http://blogger.com/), has
 [finally launched](http://bloggerindraft.blogspot.com/2007/11/new-feature-openid-commenting.html)!
 
-For the OpenID geeks out there, we've turned Blogger into an consumer, aka
+For the OpenID geeks out there, we've turned Blogger into a consumer, aka
 relying party. It has full support for
 [1.0](http://openid.net/specs/specs-1.0.bml) and
 [1.1](http://openid.net/specs/specs-1.0.bml), and
