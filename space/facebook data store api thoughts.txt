@@ -21,12 +21,12 @@ Here are some of my thoughts on this API, as well as a few responses from
 Haiping, in _italics_. Feel free to [add your own](#comment-anchor)!
 
 ### Contents
-[Introduction](#intro)  
-[Schema definition](#schema)  
-[Data access](#data_access)  
-[Transactions](#transactions)  
-[Associations](#associations)  
-[Preferences](#preferences)  
+[Introduction](/space/facebook+data+store+api+thoughts#intro)  
+[Schema definition](/space/facebook+data+store+api+thoughts#schema)  
+[Data access](/space/facebook+data+store+api+thoughts#data_access)  
+[Transactions](/space/facebook+data+store+api+thoughts#transactions)  
+[Associations](/space/facebook+data+store+api+thoughts#associations)  
+[Preferences](/space/facebook+data+store+api+thoughts#preferences)  
 
 <a name="intro"></a>
 ### [![Icon-Permalink.png](/Icon-Permalink.png)](#intro) Introduction

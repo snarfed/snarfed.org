@@ -37,12 +37,12 @@ Then again, i'm a sucker for anything [based on tuplespaces...](#tuplespaces)
 
 
 ### Contents
-[Introduction](#intro)  
-[Tuplespaces!](#tuplespaces)  
-[Queries](#queries)  
-[Attributes and ordering](#ordering)  
-[Scaling and Dynamo](#scaling)  
-[Usage-based pricing](#pricing)  
+[Introduction](/space/amazon+simpledb+thoughts#intro)  
+[Tuplespaces!](/space/amazon+simpledb+thoughts#tuplespaces)  
+[Queries](/space/amazon+simpledb+thoughts#queries)  
+[Attributes and ordering](/space/amazon+simpledb+thoughts#attributes)  
+[Scaling and Dynamo](/space/amazon+simpledb+thoughts#scaling)  
+[Usage-based pricing](/space/amazon+simpledb+thoughts#pricing)  
 
 
 <a name="intro"></a>
@@ -202,7 +202,7 @@ if so, I'm sure Amazon has its reasons for not (yet) offering full text search
 over SimpleDB domains.
 
 
-<a name="Pricing"></a>
+<a name="pricing"></a>
 ### [![Icon-Permalink.png](/Icon-Permalink.png)](#pricing) Usage-based pricing
 
 The [pricing model](http://aws.amazon.com/simpledb) for SimpleDB is very
