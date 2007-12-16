@@ -1,0 +1,221 @@
+Amazon SimpleDB thoughts
+
+<div style="float: right; margin-left: 10px">
+  <a href="http://aws.amazon.com/">
+   <img src="/space/amazon_web_services.gif" /></a>
+</div>
+
+[Amazon](http://amazon.com/) recently announced their latest web service,
+[SimpleDB](http://aws.amazon.com/simpledb), to a roar of
+[buzz](http://www.techcrunch.com/2007/12/14/amazon-takes-on-oracle-and-ibm-with-simple-db-beta/)
+[and](http://hardware.slashdot.org/hardware/07/12/16/0012213.shtml)
+[hype](http://www.scripting.com/stories/2007/12/15/amazonRemovesTheDatabaseSc.html).
+I finally got a chance to sit down and read through the docs and blog posts,
+and
+[like with the Facebook Data Store API](/space/facebook+data+store+api+thoughts),
+I've written up my thoughts.
+
+Amazon's
+[docs](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/)
+do a pretty good job of describing SimpleDB, so I won't try to reproduce them.
+Instead, I'll focus on observations, and I'll emphasize a few important points
+that are buried deep in the docs.
+
+The executive summary is: I like it. It's solid, straightforward, and
+eminently useful. Sure, it's limited. It includes design decisions that
+clearly simplified the implementation at the cost of functionality and
+usability. Still, as a result of those decisions, SimpleDB has
+the potential to be very robust, scalable, and performant.
+
+With SimpleDB alongside [S3](http://aws.amazon.com/s3) and
+[EC2](http://aws.amazon.com/ec2), Amazon's web services look more and more
+like the [Unix philosophy](http://www.catb.org/~esr/writings/taoup/): small,
+simple tools that do one job, do it well, and fit together in ways that
+complement each other. Very, very cool.
+
+Then again, i'm a sucker for anything [based on tuplespaces...](#tuplespaces)
+
+
+### Contents
+[Introduction](#intro)  
+[Tuplespaces!](#tuplespaces)  
+[Queries](#queries)  
+[Attributes and ordering](#ordering)  
+[Scaling and Dynamo](#scaling)  
+[Usage-based pricing](#pricing)  
+
+
+<a name="intro"></a>
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#intro) Introduction
+
+SimpleDB is a simple, schemaless structured storage engine. It stores items,
+which are bags of key/value pairs. Keys and values are always strings;
+primitive data types like integers and floats are not natively supported.
+Developers choose a unique string name for each item at creation time.
+
+The primary operations are
+[Put](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/SDB_API_PutAttributes.html),
+[Get](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/SDB_API_GetAttributes.html), and
+[Delete](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/SDB_API_DeleetAttributes.html) -
+which are self explanatory - and
+[Query](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/SDB_API_Query.html),
+which accepts attribute predicates and boolean operators in a
+[custom string query format](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/SDB_API_Query.html#SDB_API_Query_QueryExpressionSyntax_Example2)
+and returns all matching items.
+
+Items are partitioned into
+[domains](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/Introduction.html#KeyConcepts).
+An item's name must only be unique within its domain. Similarly, queries only
+return items from a single domain.
+
+
+<a name="tuplespaces"></a>
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#tuplespaces) Tuplespaces!
+
+One of the coolest things about SimpleDB is that its interface is pure
+[tuplespaces](http://en.wikipedia.org/wiki/Tuple_space), also known as
+[Linda](http://en.wikipedia.org/wiki/Linda_%28coordination_language%29).
+(Thanks to [Nelson](http://www.somebits.com/weblog/), who was one of the first
+people to point out this huge piece of SimpleDB's provenance.)
+
+The tuplespaces concept never spread too far beyond of research, but I've
+always loved it, and I've had ["build tuplespaces on top of a
+DHT"](space/ideas#tuplespaces) on my [list of project ideas](space/ideas) for
+years. As long as I get to play with it, I don't care if Amazon beat me to the
+punch. After all, they can afford a few more servers and sysadmins than I can.
+
+There are at least a couple noticeable differences between SimpleDB and
+standard tuplespaces interfaces. First, most tuplespace implementations only
+support equals and wildcard query operators. SimpleDB offers
+[inequality, prefix, and boolean operators](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/SDB_API_Query.html#SDB_API_Query_QueryExpressionSyntax_Example2),
+which it probably supports with extra secondary indices.
+
+Second, most tuplespaces implementations offer at least limited support for
+transactions, in the form of an atomic "update" operation that can remove
+existing tuples and add new ones. SimpleDB has no such operation, nor any
+other support for transactions.
+
+
+<a name="queries"></a>
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#queries) Queries
+
+SimpleDB uses a a minimal, string-based query language. It's
+best described by example. Here's one
+[from the docs](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/SDB_API_Query.html#SDB_API_Query_QueryExpressionSyntax_Example2)
+that will return all blue items that cost less than 14.99:
+
+    "['Price' < '14.99'] intersection ['Color' = 'Blue']"
+<br class="clearing" />
+It's interesting that Amazon went with a custom, proprietary query language,
+as opposed to a subset of SQL like Facebook's
+[FQL](http://developers.facebook.com/documentation.php?doc=fql). Again, it
+almost certainly made it easier for them to develop, but it raises the
+learning curve for developers, not to mention contributing to lock-in somewhat.
+
+Luckily, since all attribute values are strings, they avoid the issue of
+serializing non-string values and operands. I've used a decent number of ORMs
+and database libraries, and this always tends to be a wart. It can definitely
+be done safely, and somewhat cleanly, but it's always awkward.
+
+Apart from the query language, there's no support for joins, full text search,
+or sorting query results. I doubt I'd miss joins, but I'd definitely miss full
+text search and sorting. I expect that sorting alone will be one of the
+largest pain points for developers who try to use SimpleDB as a replacement
+for a standard RDBMS.
+
+Finally, separate from the [utilization-based pricing](#pricing)
+SimpleDB imposes a hard deadline on query execution time. If a query takes
+longer than 5 seconds, it's
+[cut off](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/SDB_API_Query.html#SDB_API_Query_Description).
+Tough love, but that's only reasonable.
+
+
+<a name="attributes"></a>
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#attributes) Attributes and ordering
+
+Like in tuplespaces, SimpleDB attribute names and values are untyped strings, so
+[comparison is always lexicographic](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/SDB_API_Query.html#d0e3182).
+That simplicity is endearing and attractive at first glance, and it almost
+certainly made SimpleDB easier for Amazon to develop. Unfortunately, it causes
+problems for numbers, dates, and composite types like points, which aren't
+compared lexicographically.
+
+To their credit, Amazon does explain how to [zero-pad numbers and offset
+negative
+numbers](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/SDB_API_Query.html#d0e3182),
+and their libraries include code that handles these operations.
+Still, no matter how you look at it, jumping through those kinds of hoops is
+ugly and awkward, for both data access and presentation. Worse, developers
+will need to write custom code to map to/from lexicographic ordering for any
+non-numeric types, such as points and dates. It doesn't help that
+the SimpleDB docs themselves have lots of
+[examples](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/SDB_API_Query.html#d0e3182)
+of numeric comparisons that aren't offset or zero-padded.
+
+Apart from ordering, attribute values are limited to 1024 characters, which is
+way too low. I can understand that they want to encourage developers to use S3
+for binary data, but articles, comments, and other text data is often much
+larger than 1024 characters. It would be infeasible for many apps to store and
+access that data separately from the rest of their data, which could prevent a
+numbe of applications from using SimpleDB as their only structured storage
+engine.
+
+Finally, it's worth noting that
+[all strings are UTF-8](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/SDB_API_Query.html#d0e3182),
+including domains, item names, attribute names, and values. It's what you'd
+expect, but it took me a fairly long time to find that tidbit in the docs.
+
+
+<a name="scaling"></a>
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#scaling) Scaling and Dynamo
+
+SimpleDB is almost certainly based on Amazon's
+[Dynamo](http://www.allthingsdistributed.com/2007/10/amazons_dynamo.html),
+a distributed hash table that's highly replicated and available in exchange 
+for a relatively low churn tolerance. That link is from Amazon's CTO Werner
+Vogel's [blog](](http://www.allthingsdistributed.com/), where he
+[said](http://www.allthingsdistributed.com/2007/10/amazons_dynamo.html):
+
+> Let me emphasize the internal technology part before it gets misunderstood:
+> Dynamo is **not** directly exposed externally as a web service; however, Dynamo
+> and similar Amazon technologies are used to power parts of our Amazon Web
+> Services, such as S3.
+
+Dynamo's key characteristic is that it really is just a DHT, so its only
+operations are put, get, and delete. In particular, it doesn't provide
+secondary indices. so, how are SimpleDB queries executed? Maybe they use a
+modified full text index...but then you'd expect SimpleDB to offer full text
+search, which it doesn't. Hmm.
+
+One useful hint is that SimpleDB only guarantees [_eventual_
+consistency](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/SDB_Glossary.html#glossary_EventualConsistency).
+(Thanks to [Ken](http://keeda.stanford.edu/~kash/) for pointing this out.)
+Evidently, items and indices are replicated, and the replicas are updated
+asynchronously. That's a big, big caveat for developers, but it helps us start
+to reverse engineer the architecture of their storage and indexing engine.
+
+Personally, I do wonder if SimpleDB's indexing is based on a full text index
+that's augmented to support structured data, similar to
+[Google Base](http://base.google.com/) or 
+[eBay's search engine](http://labs.ebay.com/erlresearchfocus.html#search).
+if so, I'm sure Amazon has its reasons for not (yet) offering full text search
+over SimpleDB domains.
+
+
+<a name="Pricing"></a>
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#pricing) Usage-based pricing
+
+The [pricing model](http://aws.amazon.com/simpledb) for SimpleDB is very
+interesting. Similar to [S3](http://aws.amazon.com/s3) and
+[EC2](http://aws.amazon.com/ec2), SimpleDB charges for bandwidth and usage.
+However, SimpleDB also charges for _machine utilization_, measured in
+[normalized CPU-hours](http://www.amazon.com/b/ref=sc_fe_c_0_342335011_4?ie=UTF8&node=393699011&no=342335011&me=A36L942TSJ2AJA#sdb14).
+
+This makes sense from a cost modeling perspective, but it's surprisingly hard
+to implement in the storage engine. The particularly impressive part is that
+SimpleDB includes machine utilization in the response to _every API call_.
+Wow. Measuring utilization can be hard in general, but it's even harder in
+real time.
+
+See also:
+  * [Facebook Data Store API Thoughts](/space/facebook+data+store+api+thoughts)
