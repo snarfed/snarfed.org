@@ -173,7 +173,7 @@ SimpleDB is almost certainly based on Amazon's
 [Dynamo](http://www.allthingsdistributed.com/2007/10/amazons_dynamo.html),
 a distributed hash table that's highly replicated and available in exchange 
 for a relatively low churn tolerance. That link is from Amazon's CTO Werner
-Vogel's [blog](](http://www.allthingsdistributed.com/), where he
+Vogel's [blog](http://www.allthingsdistributed.com/), where he
 [said](http://www.allthingsdistributed.com/2007/10/amazons_dynamo.html):
 
 > Let me emphasize the internal technology part before it gets misunderstood:
