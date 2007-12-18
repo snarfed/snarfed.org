@@ -191,6 +191,7 @@ blocks for distributed systems, but their APIs are weak. Most only provide the
 functionality of a hashtable - gets and puts of key/value pairs. Write a
 tuplespace implementation that uses a DHT as its backing store - the best of
 both worlds!
+\[**_Done! [Amazon SimpleDB](/space/amazon+simpledb+thoughts) beat me to it._**]
 
   * Write [pine patches](/space/software#patches) to make
 saving messages smarter. When saving, pine should [remove trailing
