@@ -4,7 +4,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <head>
-<title>Scaling MySQL on the Cheap</title>
+<title>Scaling Data on the Cheap</title>
 <meta name="version" content="S5 1.0" />
 <link rel="stylesheet" href="ui/slides.css" type="text/css" media="projection" id="slideProj" />
 <link rel="stylesheet" href="ui/opera.css" type="text/css" media="projection" id="operaFix" />
@@ -18,7 +18,7 @@
 <div id="currentSlide"></div>
 <div id="header"></div>
 <div id="footer">
-<h1>bar camp stanford, aug. 26 2006</h1>
+<h1>allmydata hack fest, dec. 14 2007</h1>
 <h2>scaling data on the cheap</h2>
 <div id="controls"></div>
 </div>
@@ -102,11 +102,26 @@
 <div class="slide">
 <h1>why not</h1>
 <ul>
-<li>can't join across dbs (apart from histograms)</li>
-<li>can't mine data</li>
+<li>can't join across shards (except histograms)</li>
+<li>need separate data warehouse</li>
 <li>cache incoherence</li>
 <li>your dba will hate you</li>
 <li>resharding</li>
+</ul>
+<div class="handout">
+[any material that should appear in print but not on the slide]
+</div>
+</div>
+
+
+<div class="slide">
+<h1>hibernate shards</h1>
+<ul>
+<li>config per shard</li>
+<li>access, resolution, selection, ids</li>
+<li>all customizable</li>
+<li>virtual shards</li>
+<li>early days: minimal Criteria/HQL, no caching</li>
 </ul>
 <div class="handout">
 [any material that should appear in print but not on the slide]
@@ -150,8 +165,8 @@
 <div class="slide">
 <h1>Questions?</h1>
 <li>Ryan Barrett</li>
-<li>barcamp@ryanb.org</li>
 <li>http://snarfed.org/</li>
+<li>hackfest@ryanb.org</li>
 <div class="handout">
 [any material that should appear in print but not on the slide]
 </div>
