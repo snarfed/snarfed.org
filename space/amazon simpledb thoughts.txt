@@ -33,7 +33,7 @@ like the [Unix philosophy](http://www.catb.org/~esr/writings/taoup/): small,
 simple tools that do one job, do it well, and fit together in ways that
 complement each other. Very, very cool.
 
-Then again, i'm a sucker for anything [based on tuplespaces...](#tuplespaces)
+Then again, I'm a sucker for anything [based on tuplespaces...](#tuplespaces)
 
 
 ### Contents
@@ -127,7 +127,7 @@ Finally, separate from the [utilization-based pricing](#pricing)
 SimpleDB imposes a hard deadline on query execution time. If a query takes
 longer than 5 seconds, it's
 [cut off](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/SDB_API_Query.html#SDB_API_Query_Description).
-Tough love, but that's only reasonable.
+Tough love, but reasonable.
 
 
 <a name="attributes"></a>
@@ -157,7 +157,7 @@ way too low. I can understand that they want to encourage developers to use S3
 for binary data, but articles, comments, and other text data is often much
 larger than 1024 characters. It would be infeasible for many apps to store and
 access that data separately from the rest of their data, which could prevent a
-numbe of applications from using SimpleDB as their only structured storage
+number of applications from using SimpleDB as their only structured storage
 engine.
 
 Finally, it's worth noting that
@@ -194,7 +194,7 @@ Evidently, items and indices are replicated, and the replicas are updated
 asynchronously. That's a big, big caveat for developers, but it helps us start
 to reverse engineer the architecture of their storage and indexing engine.
 
-Personally, I do wonder if SimpleDB's indexing is based on a full text index
+Personally, I wonder if SimpleDB's indexing is based on a full text index
 that's augmented to support structured data, similar to
 [Google Base](http://base.google.com/) or 
 [eBay's search engine](http://labs.ebay.com/erlresearchfocus.html#search).
@@ -217,5 +217,5 @@ SimpleDB includes machine utilization in the response to _every API call_.
 Wow. Measuring utilization can be hard in general, but it's even harder in
 real time.
 
-See also:
+**See also**:
   * [Facebook Data Store API Thoughts](/space/facebook+data+store+api+thoughts)
