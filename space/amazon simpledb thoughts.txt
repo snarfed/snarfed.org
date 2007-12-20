@@ -33,7 +33,8 @@ like the [Unix philosophy](http://www.catb.org/~esr/writings/taoup/): small,
 simple tools that do one job, do it well, and fit together in ways that
 complement each other. Very, very cool.
 
-Then again, I'm a sucker for anything [based on tuplespaces...](#tuplespaces)
+Then again, I'm a sucker for anything
+[based on tuplespaces...](/space/amazon+simpledb+thoughts#tuplespaces)
 
 
 ### Contents
