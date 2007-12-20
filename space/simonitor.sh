@@ -25,15 +25,14 @@ fi
 
 # simon.com runs on IIS, which requires a valid __VIEWSTATE parameter.
 # evidently it's a base64-encoded struct. it doesn't look like it's actually
-# used for anything, but it still needs to be there. note that %2B is the url
-# encoding for +.
+# used for anything, but it still needs to be there. %2B is the url encoding
+# for +, and %2F for /. see http://www.w3schools.com/tags/ref_urlencode.asp.
 #
 # when Simon changes their web site, this usually needs to be updated.
-VIEWSTATE=%2FwEPDwUJNTc2OTY4MDgyD2QWAmYPZBYCAgMPZBYGAgEPZBYCZg9kFgJmDxYCHgRUZXh0BQEvZAIDDxYCHgxhdXRvY29tcGxldGUFA29mZhYCAgEPZBYGAgEPZBYEZg8WAh4HVmlzaWJsZWcWAmYPDxYCHg9FbmFibGVWaWV3U3RhdGVnZGQCAQ8WAh8CaBYCZg8PFgIfA2dkZAIDD2QWCAIBDxYCHwJnZAIDDxYCHwJnZAIVDw9kFgIfAQUDb2ZmZAIbDw8WBB4YQ2FwdGNoYUltYWdlX0NQQ29udHJvbElEBSRjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJHR4dENhcHRjaGEeCEltYWdlVXJsBSVyZWNpcGllbnQvaW1hZ2VzL2NhcHRjaGEvNzg0OTMzNDAuanBnZGQCBQ8PFgIfAmhkFgQCDw8QZGQWAWZkAhEPPCsACwBkAgUPZBYGZg8PFgIeC05hdmlnYXRlVXJsBRMvUHJpdmFjeVBvbGljeS5hc3B4ZGQCAQ8PFgIfBgUKL2ZpbmRhbWFsbGRkAgIPDxYCHwYFGC9hYm91dF9zaW1vbi9jb250YWN0X3NwZ2RkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYCBSRjdGwwMCRIZWFkZXIxJFRvcE5hdmlnYXRpb24xJHRvcE1lbnUFI2N0bDAwJENvbnRlbnRQbGFjZUhvbGRlcjEkYnRuU3VibWl0nq6rj%2FdiWrU1I0kobPTuvp1TDV0%3D
+VIEWSTATE=%2FwEPDwUKMTMzOTgzOTM5NA9kFgJmD2QWAgIDD2QWBgIBD2QWAmYPZBYCZg8WAh4EVGV4dAUBL2QCAw8WAh4MYXV0b2NvbXBsZXRlBQNvZmYWAgIBD2QWBgIBD2QWBGYPFgIeB1Zpc2libGVnFgJmDw8WAh4PRW5hYmxlVmlld1N0YXRlZ2RkAgEPFgIfAmgWAmYPDxYCHwNnZGQCAw9kFggCAQ8WAh8CZ2QCAw8WAh8CZ2QCFQ8PZBYCHwEFA29mZmQCGw8PFgQeGENhcHRjaGFJbWFnZV9DUENvbnRyb2xJRAUkY3RsMDAkQ29udGVudFBsYWNlSG9sZGVyMSR0eHRDYXB0Y2hhHghJbWFnZVVybAUlcmVjaXBpZW50L2ltYWdlcy9jYXB0Y2hhLzE0Nzg2ODYwLmpwZ2RkAgUPDxYCHwJoZBYEAhEPEGRkFgFmZAITDzwrAAsAZAIFD2QWCGYPDxYCHgtOYXZpZ2F0ZVVybAUTL1ByaXZhY3lQb2xpY3kuYXNweGRkAgEPDxYCHwYFCi9maW5kYW1hbGxkZAICDw8WAh8GBRgvYWJvdXRfc2ltb24vY29udGFjdF9zcGdkZAIEDw8WAh8GBRJodHRwOi8vd3d3LnN5Zi5vcmdkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAgUkY3RsMDAkSGVhZGVyMSRUb3BOYXZpZ2F0aW9uMSR0b3BNZW51BSNjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGJ0blN1Ym1pdDzptKy4PPSA5vfpWk5WhtRtTzlG
 
 COOKIE_FILE=/tmp/simonitor_cookie.jar
 CURL_ARGS="--cookie-jar $COOKIE_FILE --cookie $COOKIE_FILE --silent --show-error --insecure"
-XLOADIMAGE_PIDS=""
 
 for CC in $*; do
   rm -f $COOKIE_FILE
@@ -53,7 +52,7 @@ for CC in $*; do
   CAPTCHAFILE=`mktemp /tmp/simonitor_captcha.XXXXXX` || exit 1
   curl --output $CAPTCHAFILE $CURL_ARGS https://www.simon.com/giftcard/$CAPTCHA
   xloadimage $CAPTCHAFILE > /dev/null &
-  XLOADIMAGE_PID="$XLOADIMAGE_PID $!"
+  XLOADIMAGE_PID="$!"
 
   # ask for the captcha.
   #
@@ -95,8 +94,7 @@ for CC in $*; do
   fi
 
   shred -u $TMPFILE $CAPTCHAFILE
+  if [[ $XLOADIMAGE_PID != "" ]]; then
+    kill $XLOADIMAGE_PID
+  fi
 done
-
-if [[ $XLOADIMAGE_PID != "" ]]; then
-  kill $XLOADIMAGE_PID
-fi
