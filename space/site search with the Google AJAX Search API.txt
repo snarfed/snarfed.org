@@ -6,7 +6,7 @@ site search with the Google AJAX Search API
 <a href="http://code.google.com/"><img src="/space/google_code.png" /></a>
 </td></tr></table>
 
-_Updated 2006-10-13._
+_Updated 2007-12-21._
 
 [ajax\_search.js](/ajax_search.js) uses the
 [Google AJAX Search API](http://code.google.com/apis/ajaxsearch/signup.html)
