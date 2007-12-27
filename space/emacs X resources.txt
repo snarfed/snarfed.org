@@ -3,7 +3,7 @@ emacs X resources
 
 I
 do most of my [Emacs](http://gnu.org/software/emacs/) customization in [my
-.emacs file](http://ryan.barrett.name/dotfiles/.emacs). However, Emacs starts
+.emacs file](http://ryan.barrett.name/dotfiles/emacs). However, Emacs starts
 itself and creates an X11 window _before_ it reads the .emacs file. So,
 customizations that affect the window itself are very expensive, since they're
 applied _after_ the window is created.
