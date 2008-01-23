@@ -8,6 +8,9 @@ is [GPL](http://www.gnu.org/licenses/gpl.html)ed.
 <a name="projects"></a>
 ### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](#projects)
 
+  * [openid-test](http://code.google.com/p/openid-test/) is an
+    interoperability test suite for [OpenID](http://openid.net/).
+
   * [download\_picasa_album.sh](/space/download_picasa_album) downloads entire
 [Picasa Web](http://picasaweb.google.com/) photo albums.
 
