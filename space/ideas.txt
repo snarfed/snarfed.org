@@ -6,6 +6,15 @@ lots more ideas for projects I'd _like_ to work on. I can't pretend that
 they're particularly good ideas, but it seems like a waste to just forget about
 them. So, here they are!
 
+  * Write a [PAM](http://www.kernel.org/pub/linux/libs/pam/) module that acts
+as an [OpenID](http://openid.net/) consumer and authenticates againsts remote
+accounts. See [Gracie](http://trac.whitetree.org/gracie/), which is a PAM
+OpenID _provider_, the
+[Inline Auth Extension](http://extremeswank.com/openid_inline_auth.html)
+([thread](http://openid.net/pipermail/specs/2007-September/001969.html)),
+which provides for OpenID authentication outside of a browser, and
+[Scott's blog post](http://kveton.com/blog/2006/12/10/openid-pam/).
+
   * wash, the Web (Again) Shell: a command line for the web. Example use cases
 include checking your bank account balance, adding a movie to your
 [Netflix](http://netflix.com/) queue, and listening to your
