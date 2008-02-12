@@ -109,6 +109,12 @@ email account.
 <a name="patches"></a>
 ### Patches  [![Icon-Permalink.png](/Icon-Permalink.png)](#patches)
 
+  * Two minor patches
+([one](http://pythonpaste.org/archives/message/20080210.035948.3e0d6399.en.html),
+[two](http://pythonpaste.org/archives/message/20080210.185854.234c983e.en.html)) to
+[paste.webob](http://pythonpaste.org/webob/)
+that fix character set handling bugs.
+
   * A [patch](/space/opml2markdown_linkify.patch) for
 [opml2markdown.xslt](http://fletcher.freeshell.org/wiki/Markdown_and_XML) that
 adds links to each item's web site and feed.
