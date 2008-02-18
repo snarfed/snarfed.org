@@ -114,6 +114,9 @@ email account.
 [two](http://pythonpaste.org/archives/message/20080210.185854.234c983e.en.html)) to
 [paste.webob](http://pythonpaste.org/webob/)
 that fix character set handling bugs.
+([Both](http://trac.pythonpaste.org/pythonpaste/changeset/7234)
+[applied](http://trac.pythonpaste.org/pythonpaste/changeset/7235)
+on 2/17/2008).
 
   * A [patch](/space/opml2markdown_linkify.patch) for
 [opml2markdown.xslt](http://fletcher.freeshell.org/wiki/Markdown_and_XML) that
