@@ -47,7 +47,7 @@ Then again, I'm a sucker for anything
 
 
 <a name="intro"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#intro) Introduction
+### [![Icon-Permalink.png](/Icon-Permalink.png)](/space/amazon+simpledb+thoughts#intro) Introduction
 
 SimpleDB is a simple, schemaless structured storage engine. It stores items,
 which are bags of key/value pairs. Keys and values are always strings;
@@ -71,7 +71,7 @@ return items from a single domain.
 
 
 <a name="tuplespaces"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#tuplespaces) Tuplespaces!
+### [![Icon-Permalink.png](/Icon-Permalink.png)](/space/amazon+simpledb+thoughts#tuplespaces) Tuplespaces!
 
 One of the coolest things about SimpleDB is that its interface is pure
 [tuplespaces](http://en.wikipedia.org/wiki/Tuple_space), also known as
@@ -98,7 +98,7 @@ other support for transactions.
 
 
 <a name="queries"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#queries) Queries
+### [![Icon-Permalink.png](/Icon-Permalink.png)](/space/amazon+simpledb+thoughts#queries) Queries
 
 SimpleDB uses a a minimal, string-based query language. It's
 best described by example. Here's one
@@ -124,7 +124,7 @@ text search and sorting. I expect that sorting alone will be one of the
 largest pain points for developers who try to use SimpleDB as a replacement
 for a standard RDBMS.
 
-Finally, separate from the [utilization-based pricing](#pricing)
+Finally, separate from the [utilization-based pricing](/space/amazon+simpledb+thoughts#pricing)
 SimpleDB imposes a hard deadline on query execution time. If a query takes
 longer than 5 seconds, it's
 [cut off](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/SDB_API_Query.html#SDB_API_Query_Description).
@@ -132,7 +132,7 @@ Tough love, but reasonable.
 
 
 <a name="attributes"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#attributes) Attributes and ordering
+### [![Icon-Permalink.png](/Icon-Permalink.png)](/space/amazon+simpledb+thoughts#attributes) Attributes and ordering
 
 Like in tuplespaces, SimpleDB attribute names and values are untyped strings, so
 [comparison is always lexicographic](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/SDB_API_Query.html#d0e3182).
@@ -168,7 +168,7 @@ expect, but it took me a fairly long time to find that tidbit in the docs.
 
 
 <a name="scaling"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#scaling) Scaling and Dynamo
+### [![Icon-Permalink.png](/Icon-Permalink.png)](/space/amazon+simpledb+thoughts#scaling) Scaling and Dynamo
 
 <ins style="text-decoration: none">_**Update**: After I originally wrote
 this, I learned from a reliable source that SimpleDB is probably_ not _based
@@ -210,7 +210,7 @@ SimpleDB domains.
 
 
 <a name="pricing"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#pricing) Usage-based pricing
+### [![Icon-Permalink.png](/Icon-Permalink.png)](/space/amazon+simpledb+thoughts#pricing) Usage-based pricing
 
 The [pricing model](http://aws.amazon.com/simpledb) for SimpleDB is very
 interesting. Similar to [S3](http://aws.amazon.com/s3) and

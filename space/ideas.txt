@@ -6,6 +6,12 @@ lots more ideas for projects I'd _like_ to work on. I can't pretend that
 they're particularly good ideas, but it seems like a waste to just forget about
 them. So, here they are!
 
+  * Port [Tic Tac Toe](/space/tictactoe) to the XBox 360, using XNA Studio
+Express, and distribute it on XBox Live Community Games.
+
+  * Build network bridges between the DS and PSP and other companies'
+consoles, ie DS to 360 and PS3 and PSP to 360 and Wii.
+
   * Write a [PAM](http://www.kernel.org/pub/linux/libs/pam/) module that acts
 as an [OpenID](http://openid.net/) consumer and authenticates againsts remote
 accounts. See [Gracie](http://trac.whitetree.org/gracie/), which is a PAM

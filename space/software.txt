@@ -6,7 +6,7 @@ Open source software I've [written](/space/software#projects) and
 is [GPL](http://www.gnu.org/licenses/gpl.html)ed.
 
 <a name="projects"></a>
-### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](#projects)
+### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](/space/software#projects)
 
   * [openid-test](http://code.google.com/p/openid-test/) is an
     interoperability test suite for [OpenID](http://openid.net/).
@@ -107,7 +107,7 @@ email account.
 
 
 <a name="patches"></a>
-### Patches  [![Icon-Permalink.png](/Icon-Permalink.png)](#patches)
+### Patches  [![Icon-Permalink.png](/Icon-Permalink.png)](/space/software#patches)
 
   * Two minor patches
 ([one](http://pythonpaste.org/archives/message/20080210.035948.3e0d6399.en.html),
