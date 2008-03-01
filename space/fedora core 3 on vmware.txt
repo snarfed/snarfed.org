@@ -7,6 +7,10 @@ recently upgraded to [VMWare](http://vmware.com/) 4.5.2, with [Fedora Core
 much smoother than I expected, but it still needed a few tweaks. Here's what I
 did to whip it into shape.
 
+_Since I wrote this, I've upgraded to VMware 6.0.0 and switched from FC3 to
+[Ubuntu](http://ubuntu.com/) Dapper (6.06), then later to Feisty (7.04). Almost
+all of these tips still apply, though!_
+
   * The kernel that shipped with FC3, 2.6.9-1.667, was slower than mud. X
 windows was especially bad, and would routinely use 50-60% of the CPU for
 nothing more than typing in Emacs. Kerneltrap's
