@@ -181,8 +181,7 @@ Thanks to Matt Ackeret and [this pine-info
 thread](http://mailman1.u.washington.edu/pipermail/pine-info/2005-June/042260.html)
 for the original idea.
 
-  * Add [sieve](http://cyrusoft.com/sieve/) support to
-[Gmail](http://gmail.com/).
+  * Add [sieve](http://sieve.info/) support to [Gmail](http://gmail.com/).
 
   * Build a simple webapp with [Django](http://www.djangoproject.com/). Is it
 really as good as [Rails](http://www.rubyonrails.com/),
