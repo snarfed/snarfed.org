@@ -1,0 +1,36 @@
+Google App Engine Launched!
+
+<div style="float: right; margin-left: 10px">
+  <a href="http://code.google.com/appengine/"><img src="/space/logo_en_appengine.gif" /></a>
+</div>
+
+If you've talked to me about work during the last couple years, I've probably
+downplayed it, resorted to generalities, or just changed the subject. No
+longer! We've finally
+[taken the wraps](http://code.google.com/campfire/) off our project,
+[Google App Engine](http://code.google.com/appengine/). From the
+[docs](http://code.google.com/appengine/docs/whatisgoogleappengine.html):
+
+> Google App Engine lets you run your web applications on Google's
+> infrastructure. App Engine applications are easy to build, easy to maintain,
+> and easy to scale as your traffic and data storage needs grow. With App
+> Engine, there are no servers to maintain: You just upload your application,
+> and it's ready to serve your users.
+
+<div style="float: right; margin-left: 10px">
+  <a href="http://code.google.com/appengine/"><img src="/space/appengine.gif" /></a>
+</div>
+
+Personally, I spent most of my time writing the
+[datastore](http://code.google.com/appengine/docs/datastore/overview.html),
+both the backend and much of the Python API. When I found extra time,
+though, I had a lot of fun writing apps and libraries on top of App Engine. I
+particularly enjoyed writing an
+[interactive shell](http://shell.appspot.com/), an
+[OpenID provider](http://openid-provider.appspot.com/), and a
+[full text search library](http://code.google.com/appengine/articles/bulkload.html).
+
+We've been excited about the project since we started it over two years ago.
+We can't wait to see what people do with it. If you're a developer and you
+have some spare time, please [try it out](http://code.google.com/appengine/) and
+[let us know](http://groups.google.com/group/google-appengine) what you think!
