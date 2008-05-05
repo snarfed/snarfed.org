@@ -8,6 +8,12 @@ is [GPL](http://www.gnu.org/licenses/gpl.html)ed.
 <a name="projects"></a>
 ### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](/space/software#projects)
 
+  * [shell](http://shell.appspot.com/) and
+[openid-provider](http://openid-provider.appspot.com/), two
+[Google App Engine](http://code.google.com/appengine/)
+[sample apps](http://code.google.com/p/google-app-engine-samples/). See
+[my announcement](/space/2008-04-07_google_app_engine_launched) for details.
+
   * [openid-test](http://code.google.com/p/openid-test/) is an
     interoperability test suite for [OpenID](http://openid.net/).
 
