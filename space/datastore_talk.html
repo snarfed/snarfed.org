@@ -54,7 +54,7 @@ javascript:void(0);
 <div class="slide">
 <h1>Under the covers of the Google App Engine Datastore</h1>
 <h3>Ryan Barrett</h3>
-<h4><img src="gg.gif" /></h4>
+<h4><img src="google_logo.gif" /></h4>
 </div>
 
 
@@ -496,7 +496,7 @@ Post
 <h1>Single-property index</h1>
 <p>Index data is kind, property name, value, key</p>
 DIAGRAM
-Person email me@google.com
+<li><red>Person</red> <green>email</green> <blue>me@google.com</blue>
 <li><red>Person</red> <green>name</green> <blue>Alice</blue>
 <li><red>Person</red> <green>name</green> <blue>Bob</blue>
 <li><red>Person</red> <green>name</green> <blue>Brad</blue>
@@ -566,9 +566,9 @@ Tim
 <h1>Composite indexes</h1>
 <ul>
 <p>Serve queries on multiple properties or ancestor:</p>
-<li>WHERE firstname = 'Ryan' AND lastname = 'Barrett'</li>
-<li>WHERE zip = 94107 AND name >= 'B' AND name < 'C'</li>
-<li>WHERE ANCESTOR IS /AddressBook:2 ORDER BY name DESC</li>
+<li><code>WHERE firstname = 'Ryan' AND lastname = 'Barrett'</code></li>
+<li><code>WHERE zip = 94107 AND name >= 'B' AND name < 'C'</code></li>
+<li><code>WHERE ANCESTOR IS /AddressBook:2 ORDER BY name DESC</code></li>
 </ul>
 </div>
 
@@ -608,7 +608,7 @@ DIAGRAM
 <div class="slide">
 <h1>Composite indexes</h1>
 <ul>
-<p>WHERE firstname = 'Ryan' AND lastname = 'Barrett'</p>
+<p><code>WHERE firstname = 'Ryan' AND lastname = 'Barrett'</code></p>
 DIAGRAM
 <li><red>Person</red> <green>Kevin</green> <blue>Gibbs</blue></li>
 <li><red>Person</red> <green>Ryan</green> <blue>Barrett</blue></li>
@@ -621,7 +621,7 @@ DIAGRAM
 <div class="slide">
 <h1>Composite indexes</h1>
 <ul>
-<p>WHERE zip = 94107 AND name >= 'B' AND name < 'C'</p>
+<p><code>WHERE zip = 94107 AND name >= 'B' AND name < 'C'</code></p>
 DIAGRAM
 <li><red>Person</red> <green>94103</green> <blue>Kevin</blue></li>
 <li><red>Person</red> <green>94107</green> <blue>Alice</blue></li>
@@ -636,7 +636,7 @@ DIAGRAM
 <div class="slide">
 <h1>Composite indexes</h1>
 <ul>
-<p>WHERE ANCESTOR IS /AddressBook:2 ORDER BY name DESC</p>
+<p><code>WHERE ANCESTOR IS /AddressBook:2 ORDER BY name DESC</code></p>
 DIAGRAM
 <li><red>Person</red> <green>/AddressBook:1</green> <blue>Brad</blue></li>
 <li><red>Person</red> <green>/AddressBook:2</green> <blue>Eve</blue></li>
