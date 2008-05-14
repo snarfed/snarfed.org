@@ -32,6 +32,7 @@ body, div#header { background-image: none; }
 red { background-color: #ffdddd; }
 green { background-color: #ddffdd; }
 blue { background-color: #ddddff; }
+yellow { background-color: #ffffdd; }
 </style>
 </head>
 <body>
@@ -350,245 +351,308 @@ Entity groups and transactions
 <!-- </div> -->
 
 
+<!-- <div class="slide"> -->
+<!-- <h1>Conclusions</h1> -->
+<!-- <ul> -->
+<!-- <li>Small entity groups, user's data or less</li> -->
+<!-- <li>?</li> -->
+<!-- <li>?</li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
 <div class="transition">
 Queries and indexes
 </div>
 
 
+<!-- <div class="slide"> -->
+<!-- <h1>Queries</h1> -->
+<!-- <ul> -->
+<!-- <li>kind</li> -->
+<!-- <li>ancestor</li> -->
+<!-- <li>property filters</li> -->
+<!-- <li>sort orders</li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Example queries</h1> -->
+<!-- <p><code>SELECT * FROM Person WHERE ...</code> -->
+<!-- <ul> -->
+<!-- <li><code>user = :current_user</code></li> -->
+<!-- <li><code>name >= 'A' AND name < 'B' ORDER BY name</code></li> -->
+<!-- <li><code>city = 'San Francisco' AND state = 'CA' AND country = 'USA'  -->
+<!-- <li><code>ANCESTOR IS :grandparent ORDER BY name DESC</code></li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Indexes</h1> -->
+<!-- <ul> -->
+<!-- <li>Map property values to entities</li> -->
+<!-- <li>Use Bigtable</li> -->
+<!-- <li>Each row includes index data and entity key</li> -->
+<!-- DIAGRAM -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Scanning indexes</h1> -->
+<!-- <p><strike>filtering in memory</strike></p> -->
+<!-- DIAGRAM -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Scanning indexes</h1> -->
+<!-- <p><strike>sorting in memory</strike></p> -->
+<!-- DIAGRAM -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Scanning indexes</h1> -->
+<!-- <ul> -->
+<!-- <li>dense index scans</li> -->
+<!-- DIAGRAM -->
+<!-- <li>one scan, n row fetches</li> -->
+<!-- <li>n + 1 disk seeks</li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Query planning</h1> -->
+<!-- <ul> -->
+<!-- <li>Goal: convert query to index scan</li> -->
+<!-- <li>Pick the index</li> -->
+<!-- <li>Compute the prefix or range</li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="transition"> -->
+<!-- Indexes -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Kind index</h1> -->
+<!-- <ul> -->
+<!-- <li>Serves queries for all entities of a given kind</li> -->
+<!-- <li>e.g. <code>Person.all().fetch()</code></li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Kind index</h1> -->
+<!-- <p>Index data is kind, key</p> -->
+<!-- DIAGRAM -->
+<!-- Blog -->
+<!-- Blog -->
+<!-- Person -->
+<!-- Person -->
+<!-- Post -->
+<!-- Post -->
+<!-- Post -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Kind index</h1> -->
+<!-- <ul> -->
+<!-- <p>Prefix scan with kind name</p> -->
+<!-- DIAGRAM -->
+<!-- Blog -->
+<!-- Blog -->
+<!-- Person -->
+<!-- Person -->
+<!-- Post -->
+<!-- Post -->
+<!-- Post -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Single-property index</h1> -->
+<!-- <ul> -->
+<!-- <li>Serves queries on a single property: -->
+<!-- <ul><li><code>WHERE name = 'Ryan'</code></li> -->
+<!--     <li><code>ORDER BY name DESC</code></li> -->
+<!--     <li><code>WHERE name >= 'A' AND name < 'B' ORDER BY name</code></li> -->
+<!-- </ul></li> -->
+<!-- <li>One ascending, one descending -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Single-property index</h1> -->
+<!-- <p>Index data is kind, property name, value, key</p> -->
+<!-- DIAGRAM -->
+<!-- Person email me@google.com -->
+<!-- <li><red>Person</red> <green>name</green> <blue>Alice</blue> -->
+<!-- <li><red>Person</red> <green>name</green> <blue>Bob</blue> -->
+<!-- <li><red>Person</red> <green>name</green> <blue>Brad</blue> -->
+<!-- <li><red>Person</red> <green>name</green> <blue>Chelsea</blue> -->
+<!-- <li><red>Person</red> <green>name</green> <blue>Ryan</blue> -->
+<!-- <li><red>Person</red> <green>name</green> <blue>Tim</blue> -->
+<!-- <li><red>Record</red> <green>title</green> <blue>Ninja Pirate</blue> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Single-property index</h1> -->
+<!-- <p>...or descending</p> -->
+<!-- DIAGRAM -->
+<!-- Tim -->
+<!-- Ryan -->
+<!-- Chelsea -->
+<!-- Brad -->
+<!-- Bob -->
+<!-- Alice -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Single-property index</h1> -->
+<!-- <p><code>WHERE name = 'Ryan'</code></p> -->
+<!-- <p>prefix scan:</p> -->
+<!-- DIAGRAM -->
+<!-- Alice -->
+<!-- Bob -->
+<!-- Brad -->
+<!-- Chelsea -->
+<!-- Ryan -->
+<!-- Tim -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Single-property index</h1> -->
+<!-- <p><code>ORDER BY name DESC</code></p> -->
+<!-- <p>descending index:</p> -->
+<!-- DIAGRAM -->
+<!-- Tim -->
+<!-- Ryan -->
+<!-- Chelsea -->
+<!-- Brad -->
+<!-- Bob -->
+<!-- Alice -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Single-property index</h1> -->
+<!-- <p><code>WHERE name >= 'A' AND name < 'B' ORDER BY name</code></p> -->
+<!-- <p>range scan:</p> -->
+<!-- DIAGRAM -->
+<!-- Alice -->
+<!-- Bob -->
+<!-- Brad -->
+<!-- Chelsea -->
+<!-- Ryan -->
+<!-- Tim -->
+<!-- </div> -->
+
+
 <div class="slide">
-<h1>Queries</h1>
+<h1>Composite indexes</h1>
 <ul>
-<li>kind</li>
-<li>ancestor</li>
-<li>property filters</li>
-<li>sort orders</li>
+<p>Serve queries on multiple properties or ancestor:</p>
+<li>WHERE firstname = 'Ryan' AND lastname = 'Barrett'</li>
+<li>WHERE zip = 94107 AND name >= 'B' AND name < 'C'</li>
+<li>WHERE ANCESTOR IS /AddressBook:2 ORDER BY name DESC</li>
 </ul>
-</div>
-
-
-<div class="slide">
-<h1>Example queries</h1>
-<p><code>SELECT * FROM Person WHERE ...</code>
-<ul>
-<li><code>user = :current_user</code></li>
-<li><code>name >= 'A' AND name < 'B' ORDER BY name</code></li>
-<li><code>city = 'San Francisco' AND state = 'CA' AND country = 'USA' 
-<li><code>ANCESTOR IS :grandparent ORDER BY name DESC</code></li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Indexes</h1>
-<ul>
-<li>Map property values to entities</li>
-<li>Use Bigtable</li>
-<li>Each row includes index data and entity key</li>
-DIAGRAM
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Scanning indexes</h1>
-<p><strike>filtering in memory</strike></p>
-DIAGRAM
-</div>
-
-
-<div class="slide">
-<h1>Scanning indexes</h1>
-<p><strike>sorting in memory</strike></p>
-DIAGRAM
-</div>
-
-
-<div class="slide">
-<h1>Scanning indexes</h1>
-<ul>
-<li>dense index scans</li>
-DIAGRAM
-<li>one scan, n row fetches</li>
-<li>n + 1 disk seeks</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Query planning</h1>
-<ul>
-<li>Goal: convert query to index scan</li>
-<li>Pick the index</li>
-<li>Compute the prefix or range</li>
-</ul>
-</div>
-
-
-<div class="transition">
-Indexes
-</div>
-
-
-<div class="slide">
-<h1>Kind index</h1>
-<ul>
-<li>Serves queries for all entities of a given kind</li>
-<li>e.g. <code>Person.all().fetch()</code></li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Kind index</h1>
-<p>Index data is kind name</p>
-DIAGRAM
-Blog
-Blog
-Person
-Person
-Post
-Post
-Post
-</div>
-
-
-<div class="slide">
-<h1>Kind index</h1>
-<ul>
-<p>Prefix scan with kind name</p>
-DIAGRAM
-Blog
-Blog
-Person
-Person
-Post
-Post
-Post
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Single-property index</h1>
-<ul>
-<li>Serves queries on a single property:
-<ul><li><code>WHERE name = 'Ryan'</code></li>
-    <li><code>ORDER BY name DESC</code></li>
-    <li><code>WHERE name >= 'A' AND name < 'B' ORDER BY name</code></li>
-</ul></li>
-<li>One ascending, one descending
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Single-property index</h1>
-<p>Index data is property name and value</p>
-DIAGRAM
-Alice
-Bob
-Brad
-Chelsea
-Ryan
-Tim
-</div>
-
-
-<div class="slide">
-<h1>Single-property index</h1>
-<p>...or descending</p>
-DIAGRAM
-Tim
-Ryan
-Chelsea
-Brad
-Bob
-Alice
-</div>
-
-
-<div class="slide">
-<h1>Single-property index</h1>
-<p><code>WHERE name = 'Ryan'</code></p>
-<p>prefix scan:</p>
-DIAGRAM
-Alice
-Bob
-Brad
-Chelsea
-Ryan
-Tim
-</div>
-
-
-<div class="slide">
-<h1>Single-property index</h1>
-<p><code>ORDER BY name DESC</code></p>
-<p>descending index:</p>
-DIAGRAM
-Tim
-Ryan
-Chelsea
-Brad
-Bob
-Alice
-</div>
-
-
-<div class="slide">
-<h1>Single-property index</h1>
-<p><code>WHERE name >= 'A' AND name < 'B' ORDER BY name</code></p>
-<p>range scan:</p>
-DIAGRAM
-Alice
-Bob
-Brad
-Chelsea
-Ryan
-Tim
 </div>
 
 
 <div class="slide">
 <h1>Composite indexes</h1>
 <ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<li>Index data is kind, ancestor, property values, key</li>
+<pre>
+- kind: Person
+  ancestor: yes
+  properties:
+  - name: name DESC
+  - name: phone
+</pre>
+DIAGRAM
+<li><red>Person</red> <green>/AddressBook:1</green> <blue>Brett</blue> <yellow>650-253-0006</yellow></li>
+<li><red>Person</red> <green>/AddressBook:2</green> <blue>Ryan</blue> <yellow>650-253-0002</yellow></li>
+<li><red>Person</red> <green>/AddressBook:2</green> <blue>Kevin</blue> <yellow>650-253-0004</yellow></li>
+<li><red>Person</red> <green>/AddressBook:2</green> <blue>Guido</blue> <yellow>650-253-0003</yellow></li>
+<li><red>Person</red> <green>/AddressBook:3</green> <blue>Rafe</blue> <yellow>650-253-0001</yellow></li>
 </ul>
 </div>
 
 
 <div class="slide">
-<h1></h1>
+<h1>Query planning</h1>
+<ol>
+<li>Add kind to prefix</li>
+<li>Add ancestor, if any
+<li>Add = filters, if any</li>
+<li>If any inequality filters, switch to range scan</li>
+</ol>
+</div>
+
+
+<div class="slide">
+<h1>Composite indexes</h1>
 <ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<p>WHERE firstname = 'Ryan' AND lastname = 'Barrett'</p>
+DIAGRAM
+<li><red>Person</red> <green>Kevin</green> <blue>Gibbs</blue></li>
+<li><red>Person</red> <green>Ryan</green> <blue>Barrett</blue></li>
+<li><red>Person</red> <green>Ryan</green> <blue>Smith</blue></li>
+<li><red>Person</red> <green>Tom</green> <blue>Stocky</blue></li>
 </ul>
 </div>
 
 
 <div class="slide">
-<h1></h1>
+<h1>Composite indexes</h1>
 <ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<p>WHERE zip = 94107 AND name >= 'B' AND name < 'C'</p>
+DIAGRAM
+<li><red>Person</red> <green>94103</green> <blue>Kevin</blue></li>
+<li><red>Person</red> <green>94107</green> <blue>Alice</blue></li>
+<li><red>Person</red> <green>94107</green> <blue>Bob</blue></li>
+<li><red>Person</red> <green>94107</green> <blue>Brad</blue></li>
+<li><red>Person</red> <green>94107</green> <blue>Eve</blue></li>
+<li><red>Person</red> <green>94301</green> <blue>Ryan</blue></li>
 </ul>
 </div>
 
 
 <div class="slide">
-<h1></h1>
+<h1>Composite indexes</h1>
 <ul>
-<li></li>
-<li></li>
-<li></li>
-<li></li>
+<p>WHERE ANCESTOR IS /AddressBook:2 ORDER BY name DESC</p>
+DIAGRAM
+<li><red>Person</red> <green>/AddressBook:1</green> <blue>Brad</blue></li>
+<li><red>Person</red> <green>/AddressBook:2</green> <blue>Eve</blue></li>
+<li><red>Person</red> <green>/AddressBook:2</green> <blue>Bob</blue></li>
+<li><red>Person</red> <green>/AddressBook:2</green> <blue>Alice</blue></li>
+<li><red>Person</red> <green>/AddressBook:3</green> <blue>Ryan</blue></li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Conclusions</h1>
+<ul>
+<li>?</li>
+<li>?</li>
+<li>?</li>
 </ul>
 </div>
 
