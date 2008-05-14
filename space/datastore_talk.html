@@ -58,35 +58,35 @@ javascript:void(0);
 </div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>What's ahead</h1> -->
-<!-- <ul> -->
-<!-- <li><strike>Best practices</strike></li> -->
-<!-- <li>Bigtable in one slide</li> -->
-<!-- <li>The Entities table</li> -->
-<!-- <li>Entity groups and transactions</li> -->
-<!-- <li>Queries and indexes -->
-<!--   <ul><li>Kind index</li> -->
-<!--   <li>Single-property index</li> -->
-<!--   <li>Composite indexes</li> -->
-<!--   </ul> -->
-<!-- </li> -->
-<!-- </ul> -->
-<!-- </div> -->
+<div class="slide">
+<h1>What's ahead</h1>
+<ul>
+<li><strike>Best practices</strike></li>
+<li>Bigtable in one slide</li>
+<li>The Entities table</li>
+<li>Entity groups and transactions</li>
+<li>Queries and indexes
+  <ul><li>Kind index</li>
+  <li>Single-property index</li>
+  <li>Composite indexes</li>
+  </ul>
+</li>
+</ul>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <\!-- <h1 style="text-decoration: line-through"> -\-> -->
-<!-- <h1><strike>Best practices</strike></h1> -->
-<!-- <ul> -->
-<!-- <li>You're smarter than us</li> -->
-<!-- <li>You're the domain experts</li> -->
-<!-- <li>There are <i>way</i> more of you</li> -->
-<!-- <li>We're lazy</li> -->
-<!-- <li>...</li> -->
-<!-- <li>You do it!</li> -->
-<!-- </ul> -->
-<!-- </div> -->
+<div class="slide">
+<h1 style="text-decoration: line-through">
+<h1><strike>Best practices</strike></h1>
+<ul>
+<li>You're smarter than us</li>
+<li>You're the domain experts</li>
+<li>There are <i>way</i> more of you</li>
+<li>We're lazy</li>
+<li>...</li>
+<li>You do it!</li>
+</ul>
+</div>
 
 
 <div class="transition">
@@ -94,52 +94,52 @@ Bigtable in one slide
 </div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Bigtable in one slide</h1> -->
-<!-- <p style="text-align: center">(...or maybe four)</p> -->
-<!-- <ul> -->
-<!-- <li><strike>Distributed database</strike></li> -->
-<!-- <li><strike>Sharded database</strike></li> -->
-<!-- <li><strike>Distributed array</strike></li> -->
-<!-- <li><i>Sharded</i> array</li> -->
-<!-- </ul> -->
-<!-- </div> -->
+<div class="slide">
+<h1>Bigtable in one slide</h1>
+<p style="text-align: center">(...or maybe four)</p>
+<ul>
+<li><strike>Distributed database</strike></li>
+<li><strike>Sharded database</strike></li>
+<li><strike>Distributed array</strike></li>
+<li><i>Sharded</i> array</li>
+</ul>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Bigtable in one slide</h1> -->
-<!-- <ul> -->
-<!-- <li>Rows, row names, and columns</li> -->
-<!-- DIAGRAM <li>three machines: a-h, i-p, q-z</li> -->
-<!-- </ul> -->
-<!-- </div> -->
+<div class="slide">
+<h1>Bigtable in one slide</h1>
+<ul>
+<li>Rows, row names, and columns</li>
+DIAGRAM <li>three machines: a-h, i-p, q-z</li>
+</ul>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Bigtable in one slide</h1> -->
-<!-- <p>Three (and a half) operations:</p> -->
-<!-- <ul> -->
-<!-- DIAGRAMS: -->
-<!-- <li>Read</li> -->
-<!-- <li>Write</li> -->
-<!-- <ul><li>Single-row transactions</li></ul> -->
-<!-- <li>Scan</li> -->
-<!-- <ul><li>prefix</li><li>range</li></ul> -->
-<!-- </ul> -->
-<!-- </div> -->
+<div class="slide">
+<h1>Bigtable in one slide</h1>
+<p>Three (and a half) operations:</p>
+<ul>
+DIAGRAMS:
+<li>Read</li>
+<li>Write</li>
+<ul><li>Single-row transactions</li></ul>
+<li>Scan</li>
+<ul><li>prefix</li><li>range</li></ul>
+</ul>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Bigtable in one slide</h1> -->
-<!-- What matters? -->
-<!-- <ul> -->
-<!-- <li><strike>Disk bandwidth (throughput)</strike></li> -->
-<!-- <li><strike>Network bandwidth</strike></li> -->
-<!-- <li>Network latency</li> -->
-<!-- <li><b>Disk seeks!</b></li> -->
-<!-- </ul> -->
-<!-- <p>How many Bigtable RPCs and disk seeks per datastore operation?</p> -->
-<!-- </div> -->
+<div class="slide">
+<h1>Bigtable in one slide</h1>
+What matters?
+<ul>
+<li><strike>Disk bandwidth (throughput)</strike></li>
+<li><strike>Network bandwidth</strike></li>
+<li>Network latency</li>
+<li><b>Disk seeks!</b></li>
+</ul>
+<p>How many Bigtable RPCs and disk seeks per datastore operation?</p>
+</div>
 
 
 <div class="transition">
@@ -147,43 +147,43 @@ The Entities table
 </div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>The Entities table</h1> -->
-<!-- <ul> -->
-<!-- <li>Primary table</li> -->
-<!-- <li>Stores all entities in all apps</li> -->
-<!-- <li>Row name is <b>entity key</b></li> -->
-<!-- <li>Payload is <b>serialized entity</b></li> -->
-<!-- </ul> -->
-<!-- </div> -->
+<div class="slide">
+<h1>The Entities table</h1>
+<ul>
+<li>Primary table</li>
+<li>Stores all entities in all apps</li>
+<li>Row name is <b>entity key</b></li>
+<li>Payload is <b>serialized entity</b></li>
+</ul>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Entity keys</h1> -->
-<!-- <ul> -->
-<!-- <li>Entity key based on <b>path</b></li> -->
-<!-- <li>Root entity, then its child, then its child, ...</li> -->
-<!-- <li>Each path element contains <b>kind</b> and <b>id</b> or <b>name</b></li> -->
-<!-- </ul> -->
-<!-- <pre> -->
-<!-- /<red>Grandparent:Ethel</red>/<green>Parent:Jane</green>/<blue>Child:Timmy</blue> -->
-<!-- </pre> -->
-<!-- </div> -->
+<div class="slide">
+<h1>Entity keys</h1>
+<ul>
+<li>Entity key based on <b>path</b></li>
+<li>Root entity, then its child, then its child, ...</li>
+<li>Each path element contains <b>kind</b> and <b>id</b> or <b>name</b></li>
+</ul>
+<pre>
+/<red>Grandparent:Ethel</red>/<green>Parent:Jane</green>/<blue>Child:Timmy</blue>
+</pre>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Entity keys</h1> -->
-<!-- DIAGRAM: examples -->
-<!-- <pre> -->
-<!-- /<red>Grandparent:Alice</red> -->
-<!-- /<red>Grandparent:Alice</red>/<green>Parent:Sam</green> -->
-<!-- /<red>Grandparent:Ethel</red> -->
-<!-- /<red>Grandparent:Ethel</red>/<green>Parent:Jane</green> -->
-<!-- /<red>Grandparent:Ethel</red>/<green>Parent:Jane</green>/<blue>Child:Timmy</blue> -->
-<!-- /<red>Grandparent:Ethel</red>/<green>Parent:Jane</green>/<blue>Child:William</blue> -->
-<!-- /<red>Grandparent:Frank</red> -->
-<!-- </pre> -->
-<!-- </div> -->
+<div class="slide">
+<h1>Entity keys</h1>
+DIAGRAM: examples
+<pre>
+/<red>Grandparent:Alice</red>
+/<red>Grandparent:Alice</red>/<green>Parent:Sam</green>
+/<red>Grandparent:Ethel</red>
+/<red>Grandparent:Ethel</red>/<green>Parent:Jane</green>
+/<red>Grandparent:Ethel</red>/<green>Parent:Jane</green>/<blue>Child:Timmy</blue>
+/<red>Grandparent:Ethel</red>/<green>Parent:Jane</green>/<blue>Child:William</blue>
+/<red>Grandparent:Frank</red>
+</pre>
+</div>
 
 
 <div class="transition">
@@ -191,174 +191,174 @@ Entity groups and transactions
 </div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Transaction model</h1> -->
-<!-- <ul> -->
-<!-- <li><b>All</b> writes are transactional</li> -->
-<!-- <li>Journals</li> -->
-<!-- <li>Entities versioned and timestamped</li> -->
-<!-- <li>Optimistic concurrency</li> -->
-<!-- </ul> -->
-<!-- </div> -->
+<div class="slide">
+<h1>Transaction model</h1>
+<ul>
+<li><b>All</b> writes are transactional</li>
+<li>Journals</li>
+<li>Entities versioned and timestamped</li>
+<li>Optimistic concurrency</li>
+</ul>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Entity groups</h1> -->
-<!-- <ul> -->
-<!-- <li>Transaction granularity</li> -->
-<!-- <li>Defined by root entities</li> -->
-<!-- <li>Consists of root and all descendants</li> -->
-<!-- <li>Separate row, colocated with root</li> -->
-<!-- </ul> -->
-<!-- </div> -->
+<div class="slide">
+<h1>Entity groups</h1>
+<ul>
+<li>Transaction granularity</li>
+<li>Defined by root entities</li>
+<li>Consists of root and all descendants</li>
+<li>Separate row, colocated with root</li>
+</ul>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Transactions</h1> -->
-<!-- <ul> -->
-<!-- <li>Record starting timestamp</li> -->
-<!-- <li><code>get()</code>s use that timestamp</li> -->
-<!-- <li><code>put()</code>s and <code>delete()</code>s are serialized</li> -->
-<!-- </ul> -->
-<!-- </div> -->
+<div class="slide">
+<h1>Transactions</h1>
+<ul>
+<li>Record starting timestamp</li>
+<li><code>get()</code>s use that timestamp</li>
+<li><code>put()</code>s and <code>delete()</code>s are serialized</li>
+</ul>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Commit</h1> -->
-<!-- <ul> -->
-<!-- <li>Write all <code>put()</code>s to journal in entity group row -->
-<!--   <ul><li>Point of no return!</li></ul> -->
-<!-- </li> -->
-<!-- <li>Apply <code>put()</code>s to entity rows</li> -->
-<!-- <li>Update indices</li> -->
-<!-- <li>Update entity group's <i>last updated</i> timestamp</li> -->
-<!-- </ul> -->
-<!-- </div> -->
+<div class="slide">
+<h1>Commit</h1>
+<ul>
+<li>Write all <code>put()</code>s to journal in entity group row
+  <ul><li>Point of no return!</li></ul>
+</li>
+<li>Apply <code>put()</code>s to entity rows</li>
+<li>Update indices</li>
+<li>Update entity group's <i>last updated</i> timestamp</li>
+</ul>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Commit example</h1> -->
-<!-- <pre> -->
-<!-- class Account(db.Model): -->
-<!--   balance = db.IntegerProperty() -->
+<div class="slide">
+<h1>Commit example</h1>
+<pre>
+class Account(db.Model):
+  balance = db.IntegerProperty()
 
-<!-- /<red>Bank:1</red> -->
-<!-- /<red>Bank:1</red>/<green>Account:A</green> -->
-<!-- /<red>Bank:1</red>/<green>Account:B</green> -->
-<!-- </pre> -->
-<!-- </div> -->
-
-
-<!-- <div class="slide"> -->
-<!-- <h1>Commit example</h1> -->
-<!-- <pre> -->
-<!-- def transfer(from_key, to_key, amount): -->
-<!--   from, to = db.get(from_key, to_key) -->
-<!--   from.balance -= amount -->
-<!--   to.balance += amount -->
-<!--   db.put(from, to) -->
-
-<!-- db.run_in_transaction(transfer, a.key(), b.key(), 100) -->
-<!-- </pre> -->
-<!-- </div> -->
+/<red>Bank:1</red>
+/<red>Bank:1</red>/<green>Account:A</green>
+/<red>Bank:1</red>/<green>Account:B</green>
+</pre>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Commit example</h1> -->
-<!-- <pre> -->
-<!-- def transfer(from_key, to_key, amount): -->
-<!--   from, to = db.get(from_key, to_key) -->
-<!--   from.balance -= amount -->
-<!--   to.balance += amount -->
-<!--   db.put(from, to) -->
+<div class="slide">
+<h1>Commit example</h1>
+<pre>
+def transfer(from_key, to_key, amount):
+  from, to = db.get(from_key, to_key)
+  from.balance -= amount
+  to.balance += amount
+  db.put(from, to)
 
-<!-- <green>db.run_in_transaction(</green>transfer, a.key(), b.key(), 100) -->
-<!-- </pre> -->
-
-<!-- <ul> -->
-<!-- <li>Get <code>/Bank:1</code> entity group</li> -->
-<!-- <li>Note <i>last updated</i> timestamp, <i>3:00pm</i></li> -->
-<!-- </ul> -->
-<!-- </div> -->
+db.run_in_transaction(transfer, a.key(), b.key(), 100)
+</pre>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Commit example</h1> -->
-<!-- <pre> -->
-<!-- def transfer(from_key, to_key, amount): -->
-<!--   <green>from, to = db.get(from_key, to_key)</green> -->
-<!--   from.balance -= amount -->
-<!--   to.balance += amount -->
-<!--   db.put(from, to) -->
+<div class="slide">
+<h1>Commit example</h1>
+<pre>
+def transfer(from_key, to_key, amount):
+  from, to = db.get(from_key, to_key)
+  from.balance -= amount
+  to.balance += amount
+  db.put(from, to)
 
-<!-- db.run_in_transaction(transfer, <green>a.key(), b.key()</green>, 100) -->
-<!-- </pre> -->
+<green>db.run_in_transaction(</green>transfer, a.key(), b.key(), 100)
+</pre>
 
-<!-- <ul> -->
-<!-- <li>Read <code>Account:A</code> and <code>Account:B</code> as of 3:00pm</li> -->
-<!-- </ul> -->
-<!-- </div> -->
-
-
-<!-- <div class="slide"> -->
-<!-- <h1>Commit example</h1> -->
-<!-- <pre> -->
-<!-- def transfer(from_key, to_key, amount): -->
-<!--   from, to = db.get(from_key, to_key) -->
-<!--   from.balance -= amount -->
-<!--   to.balance += amount -->
-<!--   <green>db.put(from, to)</green> -->
-
-<!-- db.run_in_transaction(transfer, <green>a.key(), b.key()</green>, 100) -->
-<!-- </pre> -->
-
-<!-- <ul> -->
-<!-- <li>Serialize <code>put()</code> call</li> -->
-<!-- <li>Attach to transaction</li> -->
-<!-- </ul> -->
-<!-- </div> -->
+<ul>
+<li>Get <code>/Bank:1</code> entity group</li>
+<li>Note <i>last updated</i> timestamp, <i>3:00pm</i></li>
+</ul>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Commit example</h1> -->
-<!-- <pre> -->
-<!-- def transfer(from_key, to_key, amount): -->
-<!--   from, to = db.get(from_key, to_key) -->
-<!--   from.balance -= amount -->
-<!--   to.balance += amount -->
-<!--   db.put(from, to)</green> -->
+<div class="slide">
+<h1>Commit example</h1>
+<pre>
+def transfer(from_key, to_key, amount):
+  <green>from, to = db.get(from_key, to_key)</green>
+  from.balance -= amount
+  to.balance += amount
+  db.put(from, to)
 
-<!-- db.run_in_transaction(transfer, a.key(), b.key(), 100<green>)</green> -->
-<!-- </pre> -->
+db.run_in_transaction(transfer, <green>a.key(), b.key()</green>, 100)
+</pre>
 
-<!-- <ul> -->
-<!-- <li>Write journal with serialized <code>put()</code> call to -->
-<!--     <code>/Bank:1</code> entity group</li> -->
-<!-- <li>Write new <code>Account:A</code> and <code>Account:B</code> entities</li> -->
-<!-- <li>Update <code>a.balance</code> and <code>b.balance</code> index rows</li> -->
-<!-- <li>Write new <i>last updated</i> timestamp to entity group</li> -->
-<!-- </ul> -->
-<!-- </div> -->
+<ul>
+<li>Read <code>Account:A</code> and <code>Account:B</code> as of 3:00pm</li>
+</ul>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Recovery</h1> -->
-<!-- <ul> -->
-<!-- <li>Always check entity group first</li> -->
-<!-- <li>Unfinished txes are <b>rolled forward</b></li> -->
-<!-- <li>Adds one Bigtable read to every datastore read and write</li> -->
-<!-- </ul> -->
-<!-- </div> -->
+<div class="slide">
+<h1>Commit example</h1>
+<pre>
+def transfer(from_key, to_key, amount):
+  from, to = db.get(from_key, to_key)
+  from.balance -= amount
+  to.balance += amount
+  <green>db.put(from, to)</green>
+
+db.run_in_transaction(transfer, <green>a.key(), b.key()</green>, 100)
+</pre>
+
+<ul>
+<li>Serialize <code>put()</code> call</li>
+<li>Attach to transaction</li>
+</ul>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Conclusions</h1> -->
-<!-- <ul> -->
-<!-- <li>Small entity groups, user's data or less</li> -->
-<!-- <li>?</li> -->
-<!-- <li>?</li> -->
-<!-- </ul> -->
-<!-- </div> -->
+<div class="slide">
+<h1>Commit example</h1>
+<pre>
+def transfer(from_key, to_key, amount):
+  from, to = db.get(from_key, to_key)
+  from.balance -= amount
+  to.balance += amount
+  db.put(from, to)</green>
+
+db.run_in_transaction(transfer, a.key(), b.key(), 100<green>)</green>
+</pre>
+
+<ul>
+<li>Write journal with serialized <code>put()</code> call to
+    <code>/Bank:1</code> entity group</li>
+<li>Write new <code>Account:A</code> and <code>Account:B</code> entities</li>
+<li>Update <code>a.balance</code> and <code>b.balance</code> index rows</li>
+<li>Write new <i>last updated</i> timestamp to entity group</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Recovery</h1>
+<ul>
+<li>Always check entity group first</li>
+<li>Unfinished txes are <b>rolled forward</b></li>
+<li>Adds one Bigtable read to every datastore read and write</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Conclusions</h1>
+<ul>
+<li>Small entity groups, user's data or less</li>
+<li>?</li>
+<li>?</li>
+</ul>
+</div>
 
 
 <div class="transition">
@@ -366,200 +366,200 @@ Queries and indexes
 </div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Queries</h1> -->
-<!-- <ul> -->
-<!-- <li>kind</li> -->
-<!-- <li>ancestor</li> -->
-<!-- <li>property filters</li> -->
-<!-- <li>sort orders</li> -->
-<!-- </ul> -->
-<!-- </div> -->
+<div class="slide">
+<h1>Queries</h1>
+<ul>
+<li>kind</li>
+<li>ancestor</li>
+<li>property filters</li>
+<li>sort orders</li>
+</ul>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Example queries</h1> -->
-<!-- <p><code>SELECT * FROM Person WHERE ...</code> -->
-<!-- <ul> -->
-<!-- <li><code>user = :current_user</code></li> -->
-<!-- <li><code>name >= 'A' AND name < 'B' ORDER BY name</code></li> -->
-<!-- <li><code>city = 'San Francisco' AND state = 'CA' AND country = 'USA'  -->
-<!-- <li><code>ANCESTOR IS :grandparent ORDER BY name DESC</code></li> -->
-<!-- </ul> -->
-<!-- </div> -->
+<div class="slide">
+<h1>Example queries</h1>
+<p><code>SELECT * FROM Person WHERE ...</code>
+<ul>
+<li><code>user = :current_user</code></li>
+<li><code>name >= 'A' AND name < 'B' ORDER BY name</code></li>
+<li><code>city = 'San Francisco' AND state = 'CA' AND country = 'USA'
+<li><code>ANCESTOR IS :grandparent ORDER BY name DESC</code></li>
+</ul>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Indexes</h1> -->
-<!-- <ul> -->
-<!-- <li>Map property values to entities</li> -->
-<!-- <li>Use Bigtable</li> -->
-<!-- <li>Each row includes index data and entity key</li> -->
-<!-- DIAGRAM -->
-<!-- </ul> -->
-<!-- </div> -->
+<div class="slide">
+<h1>Indexes</h1>
+<ul>
+<li>Map property values to entities</li>
+<li>Use Bigtable</li>
+<li>Each row includes index data and entity key</li>
+DIAGRAM
+</ul>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Scanning indexes</h1> -->
-<!-- <p><strike>filtering in memory</strike></p> -->
-<!-- DIAGRAM -->
-<!-- </div> -->
+<div class="slide">
+<h1>Scanning indexes</h1>
+<p><strike>filtering in memory</strike></p>
+DIAGRAM
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Scanning indexes</h1> -->
-<!-- <p><strike>sorting in memory</strike></p> -->
-<!-- DIAGRAM -->
-<!-- </div> -->
+<div class="slide">
+<h1>Scanning indexes</h1>
+<p><strike>sorting in memory</strike></p>
+DIAGRAM
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Scanning indexes</h1> -->
-<!-- <ul> -->
-<!-- <li>dense index scans</li> -->
-<!-- DIAGRAM -->
-<!-- <li>one scan, n row fetches</li> -->
-<!-- <li>n + 1 disk seeks</li> -->
-<!-- </ul> -->
-<!-- </div> -->
+<div class="slide">
+<h1>Scanning indexes</h1>
+<ul>
+<li>dense index scans</li>
+DIAGRAM
+<li>one scan, n row fetches</li>
+<li>n + 1 disk seeks</li>
+</ul>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Query planning</h1> -->
-<!-- <ul> -->
-<!-- <li>Goal: convert query to index scan</li> -->
-<!-- <li>Pick the index</li> -->
-<!-- <li>Compute the prefix or range</li> -->
-<!-- </ul> -->
-<!-- </div> -->
+<div class="slide">
+<h1>Query planning</h1>
+<ul>
+<li>Goal: convert query to index scan</li>
+<li>Pick the index</li>
+<li>Compute the prefix or range</li>
+</ul>
+</div>
 
 
-<!-- <div class="transition"> -->
-<!-- Indexes -->
-<!-- </div> -->
+<div class="transition">
+Indexes
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Kind index</h1> -->
-<!-- <ul> -->
-<!-- <li>Serves queries for all entities of a given kind</li> -->
-<!-- <li>e.g. <code>Person.all().fetch()</code></li> -->
-<!-- </ul> -->
-<!-- </div> -->
+<div class="slide">
+<h1>Kind index</h1>
+<ul>
+<li>Serves queries for all entities of a given kind</li>
+<li>e.g. <code>Person.all().fetch()</code></li>
+</ul>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Kind index</h1> -->
-<!-- <p>Index data is kind, key</p> -->
-<!-- DIAGRAM -->
-<!-- Blog -->
-<!-- Blog -->
-<!-- Person -->
-<!-- Person -->
-<!-- Post -->
-<!-- Post -->
-<!-- Post -->
-<!-- </div> -->
+<div class="slide">
+<h1>Kind index</h1>
+<p>Index data is kind, key</p>
+DIAGRAM
+Blog
+Blog
+Person
+Person
+Post
+Post
+Post
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Kind index</h1> -->
-<!-- <ul> -->
-<!-- <p>Prefix scan with kind name</p> -->
-<!-- DIAGRAM -->
-<!-- Blog -->
-<!-- Blog -->
-<!-- Person -->
-<!-- Person -->
-<!-- Post -->
-<!-- Post -->
-<!-- Post -->
-<!-- </ul> -->
-<!-- </div> -->
+<div class="slide">
+<h1>Kind index</h1>
+<ul>
+<p>Prefix scan with kind name</p>
+DIAGRAM
+Blog
+Blog
+Person
+Person
+Post
+Post
+Post
+</ul>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Single-property index</h1> -->
-<!-- <ul> -->
-<!-- <li>Serves queries on a single property: -->
-<!-- <ul><li><code>WHERE name = 'Ryan'</code></li> -->
-<!--     <li><code>ORDER BY name DESC</code></li> -->
-<!--     <li><code>WHERE name >= 'A' AND name < 'B' ORDER BY name</code></li> -->
-<!-- </ul></li> -->
-<!-- <li>One ascending, one descending -->
-<!-- </ul> -->
-<!-- </div> -->
+<div class="slide">
+<h1>Single-property index</h1>
+<ul>
+<li>Serves queries on a single property:
+<ul><li><code>WHERE name = 'Ryan'</code></li>
+    <li><code>ORDER BY name DESC</code></li>
+    <li><code>WHERE name >= 'A' AND name < 'B' ORDER BY name</code></li>
+</ul></li>
+<li>One ascending, one descending
+</ul>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Single-property index</h1> -->
-<!-- <p>Index data is kind, property name, value, key</p> -->
-<!-- DIAGRAM -->
-<!-- Person email me@google.com -->
-<!-- <li><red>Person</red> <green>name</green> <blue>Alice</blue> -->
-<!-- <li><red>Person</red> <green>name</green> <blue>Bob</blue> -->
-<!-- <li><red>Person</red> <green>name</green> <blue>Brad</blue> -->
-<!-- <li><red>Person</red> <green>name</green> <blue>Chelsea</blue> -->
-<!-- <li><red>Person</red> <green>name</green> <blue>Ryan</blue> -->
-<!-- <li><red>Person</red> <green>name</green> <blue>Tim</blue> -->
-<!-- <li><red>Record</red> <green>title</green> <blue>Ninja Pirate</blue> -->
-<!-- </div> -->
+<div class="slide">
+<h1>Single-property index</h1>
+<p>Index data is kind, property name, value, key</p>
+DIAGRAM
+Person email me@google.com
+<li><red>Person</red> <green>name</green> <blue>Alice</blue>
+<li><red>Person</red> <green>name</green> <blue>Bob</blue>
+<li><red>Person</red> <green>name</green> <blue>Brad</blue>
+<li><red>Person</red> <green>name</green> <blue>Chelsea</blue>
+<li><red>Person</red> <green>name</green> <blue>Ryan</blue>
+<li><red>Person</red> <green>name</green> <blue>Tim</blue>
+<li><red>Record</red> <green>title</green> <blue>Ninja Pirate</blue>
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Single-property index</h1> -->
-<!-- <p>...or descending</p> -->
-<!-- DIAGRAM -->
-<!-- Tim -->
-<!-- Ryan -->
-<!-- Chelsea -->
-<!-- Brad -->
-<!-- Bob -->
-<!-- Alice -->
-<!-- </div> -->
+<div class="slide">
+<h1>Single-property index</h1>
+<p>...or descending</p>
+DIAGRAM
+Tim
+Ryan
+Chelsea
+Brad
+Bob
+Alice
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Single-property index</h1> -->
-<!-- <p><code>WHERE name = 'Ryan'</code></p> -->
-<!-- <p>prefix scan:</p> -->
-<!-- DIAGRAM -->
-<!-- Alice -->
-<!-- Bob -->
-<!-- Brad -->
-<!-- Chelsea -->
-<!-- Ryan -->
-<!-- Tim -->
-<!-- </div> -->
+<div class="slide">
+<h1>Single-property index</h1>
+<p><code>WHERE name = 'Ryan'</code></p>
+<p>prefix scan:</p>
+DIAGRAM
+Alice
+Bob
+Brad
+Chelsea
+Ryan
+Tim
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Single-property index</h1> -->
-<!-- <p><code>ORDER BY name DESC</code></p> -->
-<!-- <p>descending index:</p> -->
-<!-- DIAGRAM -->
-<!-- Tim -->
-<!-- Ryan -->
-<!-- Chelsea -->
-<!-- Brad -->
-<!-- Bob -->
-<!-- Alice -->
-<!-- </div> -->
+<div class="slide">
+<h1>Single-property index</h1>
+<p><code>ORDER BY name DESC</code></p>
+<p>descending index:</p>
+DIAGRAM
+Tim
+Ryan
+Chelsea
+Brad
+Bob
+Alice
+</div>
 
 
-<!-- <div class="slide"> -->
-<!-- <h1>Single-property index</h1> -->
-<!-- <p><code>WHERE name >= 'A' AND name < 'B' ORDER BY name</code></p> -->
-<!-- <p>range scan:</p> -->
-<!-- DIAGRAM -->
-<!-- Alice -->
-<!-- Bob -->
-<!-- Brad -->
-<!-- Chelsea -->
-<!-- Ryan -->
-<!-- Tim -->
-<!-- </div> -->
+<div class="slide">
+<h1>Single-property index</h1>
+<p><code>WHERE name >= 'A' AND name < 'B' ORDER BY name</code></p>
+<p>range scan:</p>
+DIAGRAM
+Alice
+Bob
+Brad
+Chelsea
+Ryan
+Tim
+</div>
 
 
 <div class="slide">
