@@ -29,10 +29,47 @@ body, div#header { background-image: none; }
 .slide p { margin-left: .5em; }
 .slide li ul li { margin-top: 0.75em; }
 .transition { display: none; }
-red { background-color: #ffdddd; }
-green { background-color: #ddffdd; }
-blue { background-color: #ddddff; }
-yellow { background-color: #ffffdd; }
+/* strike { color: red; } */
+
+table {
+  margin-top: 2em;
+  font-family: monospace;
+}
+/* th { font-size: medium; } */
+td {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+pre {
+  border: 1px solid black;
+  background-color: #eeeeee;
+}
+
+pre p, pre ul {
+  color: #006000;
+}
+
+/* these are from the io talk powerpoint template. the bases are:
+ * red:    #e60d2e
+ * green:  #89cb22
+ * blue:   #1a75cf
+ * yellow: #f7d417
+ */
+
+/* red, .red, green, .green, blue, .blue, yellow, .yellow {
+ *   margin: 2px solid gray;
+ * }
+ */
+white, .white   { background-color: #ffffff; }
+red, .red       { background-color: #ff4d6e; }
+.darkred        { background-color: #e60d2e; }
+green, .green   { background-color: #a9eb42; }
+.darkgreen      { background-color: #69ab02; }
+blue, .blue     { background-color: #3a95ef; }
+.darkblue       { background-color: #0055af; }
+yellow, .yellow { background-color: #fff437; }
+.darkyellow     { background-color: #d7b400; }
 </style>
 </head>
 <body>
@@ -45,365 +82,331 @@ yellow { background-color: #ffffdd; }
 <h1>Google I/O, May 28, 2008</h1>
 <h2>Under the covers of the Google App Engine Datastore</h2>
 </div>
-
 </div>
 javascript:void(0);
 
 <div class="presentation">
 
-<div class="slide">
-<h1>Under the covers of the Google App Engine Datastore</h1>
-<h3>Ryan Barrett</h3>
-<h4><img src="gg.gif" /></h4>
-</div>
-
-
-<div class="slide">
-<h1>What's ahead</h1>
-<ul>
-<li><strike>Best practices</strike></li>
-<li>Bigtable in one slide</li>
-<li>The Entities table</li>
-<li>Entity groups and transactions</li>
-<li>Queries and indexes
-  <ul><li>Kind index</li>
-  <li>Single-property index</li>
-  <li>Composite indexes</li>
-  </ul>
-</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1 style="text-decoration: line-through">
-<h1><strike>Best practices</strike></h1>
-<ul>
-<li>You're smarter than us</li>
-<li>You're the domain experts</li>
-<li>There are <i>way</i> more of you</li>
-<li>We're lazy</li>
-<li>...</li>
-<li>You do it!</li>
-</ul>
-</div>
-
-
-<div class="transition">
-Bigtable in one slide
-</div>
-
-
-<div class="slide">
-<h1>Bigtable in one slide</h1>
-<p style="text-align: center">(...or maybe four)</p>
-<ul>
-<li><strike>Distributed database</strike></li>
-<li><strike>Sharded database</strike></li>
-<li><strike>Distributed array</strike></li>
-<li><i>Sharded</i> array</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Bigtable in one slide</h1>
-<ul>
-<li>Rows, row names, and columns</li>
-DIAGRAM <li>three machines: a-h, i-p, q-z</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Bigtable in one slide</h1>
-<p>Three (and a half) operations:</p>
-<ul>
-DIAGRAMS:
-<li>Read</li>
-<li>Write</li>
-<ul><li>Single-row transactions</li></ul>
-<li>Scan</li>
-<ul><li>prefix</li><li>range</li></ul>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Bigtable in one slide</h1>
-What matters?
-<ul>
-<li><strike>Disk bandwidth (throughput)</strike></li>
-<li><strike>Network bandwidth</strike></li>
-<li>Network latency</li>
-<li><b>Disk seeks!</b></li>
-</ul>
-<p>How many Bigtable RPCs and disk seeks per datastore operation?</p>
-</div>
-
-
-<div class="transition">
-The Entities table
-</div>
-
-
-<div class="slide">
-<h1>The Entities table</h1>
-<ul>
-<li>Primary table</li>
-<li>Stores all entities in all apps</li>
-<li>Row name is <b>entity key</b></li>
-<li>Payload is <b>serialized entity</b></li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Entity keys</h1>
-<ul>
-<li>Entity key based on <b>path</b></li>
-<li>Root entity, then its child, then its child, ...</li>
-<li>Each path element contains <b>kind</b> and <b>id</b> or <b>name</b></li>
-</ul>
-<pre>
-/<red>Grandparent:Ethel</red>/<green>Parent:Jane</green>/<blue>Child:Timmy</blue>
-</pre>
-</div>
-
-
-<div class="slide">
-<h1>Entity keys</h1>
-DIAGRAM: examples
-<pre>
-/<red>Grandparent:Alice</red>
-/<red>Grandparent:Alice</red>/<green>Parent:Sam</green>
-/<red>Grandparent:Ethel</red>
-/<red>Grandparent:Ethel</red>/<green>Parent:Jane</green>
-/<red>Grandparent:Ethel</red>/<green>Parent:Jane</green>/<blue>Child:Timmy</blue>
-/<red>Grandparent:Ethel</red>/<green>Parent:Jane</green>/<blue>Child:William</blue>
-/<red>Grandparent:Frank</red>
-</pre>
-</div>
-
-
-<div class="transition">
-Entity groups and transactions
-</div>
-
-
-<div class="slide">
-<h1>Transaction model</h1>
-<ul>
-<li><b>All</b> writes are transactional</li>
-<li>Journals</li>
-<li>Entities versioned and timestamped</li>
-<li>Optimistic concurrency</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Entity groups</h1>
-<ul>
-<li>Transaction granularity</li>
-<li>Defined by root entities</li>
-<li>Consists of root and all descendants</li>
-<li>Separate row, colocated with root</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Transactions</h1>
-<ul>
-<li>Record starting timestamp</li>
-<li><code>get()</code>s use that timestamp</li>
-<li><code>put()</code>s and <code>delete()</code>s are serialized</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Commit</h1>
-<ul>
-<li>Write all <code>put()</code>s to journal in entity group row
-  <ul><li>Point of no return!</li></ul>
-</li>
-<li>Apply <code>put()</code>s to entity rows</li>
-<li>Update indices</li>
-<li>Update entity group's <i>last updated</i> timestamp</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Commit example</h1>
-<pre>
-class Account(db.Model):
-  balance = db.IntegerProperty()
-
-/<red>Bank:1</red>
-/<red>Bank:1</red>/<green>Account:A</green>
-/<red>Bank:1</red>/<green>Account:B</green>
-</pre>
-</div>
-
-
-<div class="slide">
-<h1>Commit example</h1>
-<pre>
-def transfer(from_key, to_key, amount):
-  from, to = db.get(from_key, to_key)
-  from.balance -= amount
-  to.balance += amount
-  db.put(from, to)
-
-db.run_in_transaction(transfer, a.key(), b.key(), 100)
-</pre>
-</div>
-
-
-<div class="slide">
-<h1>Commit example</h1>
-<pre>
-def transfer(from_key, to_key, amount):
-  from, to = db.get(from_key, to_key)
-  from.balance -= amount
-  to.balance += amount
-  db.put(from, to)
-
-<green>db.run_in_transaction(</green>transfer, a.key(), b.key(), 100)
-</pre>
-
-<ul>
-<li>Get <code>/Bank:1</code> entity group</li>
-<li>Note <i>last updated</i> timestamp, <i>3:00pm</i></li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Commit example</h1>
-<pre>
-def transfer(from_key, to_key, amount):
-  <green>from, to = db.get(from_key, to_key)</green>
-  from.balance -= amount
-  to.balance += amount
-  db.put(from, to)
-
-db.run_in_transaction(transfer, <green>a.key(), b.key()</green>, 100)
-</pre>
-
-<ul>
-<li>Read <code>Account:A</code> and <code>Account:B</code> as of 3:00pm</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Commit example</h1>
-<pre>
-def transfer(from_key, to_key, amount):
-  from, to = db.get(from_key, to_key)
-  from.balance -= amount
-  to.balance += amount
-  <green>db.put(from, to)</green>
-
-db.run_in_transaction(transfer, <green>a.key(), b.key()</green>, 100)
-</pre>
-
-<ul>
-<li>Serialize <code>put()</code> call</li>
-<li>Attach to transaction</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Commit example</h1>
-<pre>
-def transfer(from_key, to_key, amount):
-  from, to = db.get(from_key, to_key)
-  from.balance -= amount
-  to.balance += amount
-  db.put(from, to)</green>
-
-db.run_in_transaction(transfer, a.key(), b.key(), 100<green>)</green>
-</pre>
-
-<ul>
-<li>Write journal with serialized <code>put()</code> call to
-    <code>/Bank:1</code> entity group</li>
-<li>Write new <code>Account:A</code> and <code>Account:B</code> entities</li>
-<li>Update <code>a.balance</code> and <code>b.balance</code> index rows</li>
-<li>Write new <i>last updated</i> timestamp to entity group</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Recovery</h1>
-<ul>
-<li>Always check entity group first</li>
-<li>Unfinished txes are <b>rolled forward</b></li>
-<li>Adds one Bigtable read to every datastore read and write</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Conclusions</h1>
-<ul>
-<li>Small entity groups, user's data or less</li>
-<li>?</li>
-<li>?</li>
-</ul>
-</div>
-
-
-<div class="transition">
-Queries and indexes
-</div>
-
-
-<div class="slide">
-<h1>Queries</h1>
-<ul>
-<li>kind</li>
-<li>ancestor</li>
-<li>property filters</li>
-<li>sort orders</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Example queries</h1>
-<p><code>SELECT * FROM Person WHERE ...</code>
-<ul>
-<li><code>user = :current_user</code></li>
-<li><code>name >= 'A' AND name < 'B' ORDER BY name</code></li>
-<li><code>city = 'San Francisco' AND state = 'CA' AND country = 'USA'
-<li><code>ANCESTOR IS :grandparent ORDER BY name DESC</code></li>
-</ul>
-</div>
-
+<!-- <div class="slide"> -->
+<!-- <h1>Under the covers of the Google App Engine Datastore</h1> -->
+<!-- <h3>Ryan Barrett</h3> -->
+<!-- <h4><img src="gg.gif" /></h4> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>What's ahead</h1> -->
+<!-- <ul> -->
+<!-- <li><strike>Best practices</strike></li> -->
+<!-- <li>Bigtable in one slide</li> -->
+<!-- <li>The Entities table</li> -->
+<!-- <li>Queries and indexes -->
+<!--   <ul><li>Kind index</li> -->
+<!--   <li>Single-property index</li> -->
+<!--   <li>Composite indexes</li> -->
+<!--   </ul> -->
+<!-- </li> -->
+<!-- <li>Entity groups and transactions</li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1 style="text-decoration: line-through"> -->
+<!-- <h1><strike>Best practices</strike></h1> -->
+<!-- <ul> -->
+<!-- <li>You're smarter than us</li> -->
+<!-- <li>You're the domain experts</li> -->
+<!-- <li>There are <i>way</i> more of you</li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="transition"> -->
+<!-- Bigtable in one slide -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Why Bigtable?</h1> -->
+<!-- <ul> -->
+<!-- <li><i>Structured</i> storage (vs unstructured)</li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Bigtable in one slide</h1> -->
+<!-- <p style="text-align: center">(...or maybe seven)</p> -->
+<!-- <ul> -->
+<!-- <li><strike>Distributed hashtable</strike></li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Bigtable</h1> -->
+<!-- <p style="text-align: center">(...or maybe seven)</p> -->
+<!-- <ul> -->
+<!-- <li><strike>Distributed hashtable</strike></li> -->
+<!-- <li><strike>Sharded database</strike></li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Bigtable</h1> -->
+<!-- <p style="text-align: center">(...or maybe seven)</p> -->
+<!-- <ul> -->
+<!-- <li><strike>Distributed hashtable</strike></li> -->
+<!-- <li><strike>Sharded database</strike></li> -->
+<!-- <li><i>Sharded, sorted</i> array</li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Bigtable</h1> -->
+<!-- <ul> -->
+<!-- <li>Rows, row names, and columns</li> -->
+<!-- <table> -->
+<!-- <tr><td class="red">a</td><td class="darkred">...</td></tr> -->
+<!-- <tr><td class="red">b</td><td class="darkred">...</td></tr> -->
+<!-- <tr><td class="red">c</td><td class="darkred">...</td></tr> -->
+<!-- <tr><td>&nbsp;</td></tr> -->
+<!-- <tr><td class="green">d</td><td class="darkgreen">...</td></tr> -->
+<!-- <tr><td class="green">f</td><td class="darkgreen">...</td></tr> -->
+<!-- <tr><td class="green">j</td><td class="darkgreen">...</td></tr> -->
+<!-- <tr><td>&nbsp;</td></tr> -->
+<!-- <tr><td class="blue">n</td><td class="darkblue">...</td></tr> -->
+<!-- <tr><td class="blue">p</td><td class="darkblue">...</td></tr> -->
+<!-- <tr><td class="blue">z</td><td class="darkblue">...</td></tr> -->
+<!-- </table> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Bigtable</h1> -->
+<!-- <ul> -->
+<!-- <li>Read</li> -->
+<!-- <table> -->
+<!-- <tr class="red"><td class="white" colspan="2" /><td>a</td><td>...</td></tr> -->
+<!-- <tr class="red"><td class="white">&lt;--</td> -->
+<!--   <td>b</td><td>...</td><td class="white"/></tr> -->
+<!-- <tr class="red"><td class="white" colspan="2" /><td>c</td><td>...</td></tr> -->
+<!-- </table> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Bigtable</h1> -->
+<!-- <ul> -->
+<!-- <li>Read</li> -->
+<!-- <li>Write</li> -->
+<!-- <table> -->
+<!-- <tr class="red"><td class="white" colspan="2" /><td>a</td><td>...</td></tr> -->
+<!-- <tr class="red"><td class="white">--&gt;</td> -->
+<!--   <td>b</td><td>...</td><td class="white"/></tr> -->
+<!-- <tr class="red"><td class="white" colspan="2" /><td>c</td><td>...</td></tr> -->
+<!-- </table> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Bigtable</h1> -->
+<!-- <ul> -->
+<!-- <li>Read</li> -->
+<!-- <li>Write</li> -->
+<!-- <li>Single-row transaction</li> -->
+<!-- <table> -->
+<!-- <tr class="red"><td class="white" colspan="2" /><td>a</td><td>...</td></tr> -->
+<!-- <tr class="red" style="margin-left: 3em"><td class="white">&lt;--</td> -->
+<!--   <td>b</td><td>X</td><td class="white"/></tr> -->
+<!-- <tr class="red"><td class="white" colspan="2" /><td>c</td><td>...</td></tr> -->
+
+<!-- <tr><td>&nbsp;</td></tr> -->
+<!-- <tr><td /><td /><td>...</td></tr> -->
+<!-- <tr><td>&nbsp;</td></tr> -->
+
+<!-- <tr class="red"><td class="white" colspan="2" /><td>a</td><td>...</td></tr> -->
+<!-- <tr class="red" style="margin-left: 3em"><td class="white">--&gt;</td> -->
+<!--   <td>b</td><td>X'</td><td class="white"/></tr> -->
+<!-- <tr class="red"><td class="white" colspan="2" /><td>c</td><td>...</td></tr> -->
+<!-- </table> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Bigtable</h1> -->
+<!-- <ul> -->
+<!-- <li>Read</li> -->
+<!-- <li>Write</li> -->
+<!-- <li>Delete</li> -->
+<!-- <li>Single-row transaction</li> -->
+<!-- <li>Scan</li> -->
+<!-- <ul><li>prefix: <i>b...</i></li></ul> -->
+<!-- <table> -->
+<!-- <tr class="red"><td class="white" colspan="2" /><td>a</td><td>...</td></tr> -->
+<!-- <tr><td>&lt;--</td><td class="red">b1</td><td class="red">...</td><td /></tr> -->
+<!-- <tr><td>&lt;--</td><td class="red">b2</td><td class="red">...</td><td /></tr> -->
+<!-- <tr><td>&lt;--</td><td class="red">b3</td><td class="red">...</td><td /></tr> -->
+<!-- <tr class="red"><td class="white" colspan="2" /><td>c</td><td>...</td></tr> -->
+<!-- </table> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Bigtable</h1> -->
+<!-- <ul> -->
+<!-- <li>Read</li> -->
+<!-- <li>Write</li> -->
+<!-- <li>Delete</li> -->
+<!-- <li>Single-row transaction</li> -->
+<!-- <li>Scan</li> -->
+<!-- <ul><li>prefix</li></ul> -->
+<!-- <ul><li>range: <i>b to d</i></li></ul> -->
+<!-- <table> -->
+<!-- <tr class="red"><td class="white" colspan="2" /><td>a</td><td>...</td></tr> -->
+<!-- <tr><td>&lt;--</td><td class="red">b</td><td class="red">...</td><td /></tr> -->
+<!-- <tr><td>&lt;--</td><td class="red">c</td><td class="red">...</td><td /></tr> -->
+<!-- <tr><td>&lt;--</td><td class="red">d</td><td class="red">...</td><td /></tr> -->
+<!-- <tr class="red"><td class="white" colspan="2" /><td>e</td><td>...</td></tr> -->
+<!-- </table> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Bigtable</h1> -->
+<!-- XXX REMOVE ME -->
+<!-- What matters? -->
+<!-- <ul> -->
+<!-- <li><strike>Disk bandwidth (throughput)</strike></li> -->
+<!-- <li><strike>Network bandwidth</strike></li> -->
+<!-- <li>Network latency</li> -->
+<!-- <li><b>Disk seeks!</b></li> -->
+<!-- </ul> -->
+<!-- DIAGRAM: bandwidth vs latency? -->
+<!-- </div> -->
+
+
+<!-- <div class="transition"> -->
+<!-- The Entities table -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>The Entities table</h1> -->
+<!-- <ul> -->
+<!-- <li>Primary table</li> -->
+<!-- <li>Stores all entities in all apps</li> -->
+<!-- <li>Generic, schemaless</i> -->
+<!-- <li>Row name is <b>entity key</b></li> -->
+<!-- <li>Payload is <b>serialized entity</b></li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Entity keys</h1> -->
+<!-- <ul> -->
+<!-- <li>Entity key based on parent entities</li> -->
+<!-- <li>Root entity, then its child, then its child, ...</li> -->
+<!-- <li>Each path element contains <b>kind</b> and <b>id</b> or <b>name</b></li> -->
+<!-- </ul> -->
+<!-- <br /><br /> -->
+<!-- <pre> -->
+<!-- /<red>Grandparent:Ethel</red> -->
+<!-- /<red>Grandparent:Ethel</red>/<green>Parent:Jane</green> -->
+<!-- /<red>Grandparent:Ethel</red>/<green>Parent:Jane</green>/<blue>Child:Timmy</blue> -->
+<!-- </pre> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Entity keys</h1> -->
+<!-- XXX REMOVE ME -->
+<!-- DIAGRAM: examples -->
+<!-- <pre> -->
+<!-- /<red>Grandparent:Alice</red> -->
+<!-- /<red>Grandparent:Alice</red>/<green>Parent:Sam</green> -->
+<!-- /<red>Grandparent:Ethel</red> -->
+<!-- /<red>Grandparent:Ethel</red>/<green>Parent:Jane</green> -->
+<!-- /<red>Grandparent:Ethel</red>/<green>Parent:Jane</green>/<blue>Child:Timmy</blue> -->
+<!-- /<red>Grandparent:Ethel</red>/<green>Parent:Jane</green>/<blue>Child:William</blue> -->
+<!-- /<red>Grandparent:Frank</red> -->
+<!-- </pre> -->
+<!-- </div> -->
+
+
+<!-- <div class="transition"> -->
+<!-- Queries and indexes -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Queries</h1> -->
+<!-- <ul> -->
+<!-- <li>kind</li> -->
+<!-- <li>ancestor</li> -->
+<!-- <li>property filters</li> -->
+<!-- <li>sort orders</li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Example queries</h1> -->
+<!-- <pre> -->
+<!-- <br />&nbsp;SELECT * FROM Person ... -->
+<!-- <ul> -->
+<!-- <li>WHERE user = :current_user</li> -->
+<!-- <li>WHERE name >= 'A' AND name < 'B' ORDER BY name</li> -->
+<!-- <li>WHERE city = 'San Francisco' AND state = 'CA' AND country = 'USA'</li> -->
+<!-- <li>WHERE ANCESTOR IS :grandparent ORDER BY name DESC</li> -->
+<!-- </ul> -->
+<!-- </pre> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Indexes</h1> -->
+<!-- <ul> -->
+<!-- <li>Separate Bigtable tables</li> -->
+<!-- <li>Map property values to entities</li> -->
+<!-- <li>Each row includes index data and entity key</li> -->
+<!-- </ul> -->
+<!-- </div> -->
 
 <div class="slide">
 <h1>Indexes</h1>
-<ul>
-<li>Map property values to entities</li>
-<li>Use Bigtable</li>
-<li>Each row includes index data and entity key</li>
-DIAGRAM
-</ul>
+<table>
+<tr><td class="rowname">age</td><td class="rowname">12</td>
+  <td class="payload">/Grandparent:Ethel/Parent:Jane/Child:Timmy</td></tr>
+<tr><td class="rowname">age</td><td class="rowname">38</td>
+  <td class="payload">/Grandparent:Ethel/Parent:Jane</td></tr>
+<tr><td class="rowname">age</td><td class="rowname">63</td>
+  <td class="payload">/Grandparent:Ethel</td></tr>
+</table>
+</table>
 </div>
-
 
 <div class="slide">
 <h1>Scanning indexes</h1>
 <p><strike>filtering in memory</strike></p>
-DIAGRAM
+<table>
+<tr><td>&lt;--</td><td class="red">age 12</td>
+  <td class="darkred">/Grandparent:Ethel/Parent:Jane/Child:Timmy</td></tr>
+<tr><td>&lt;--</td><td class="red">age 38</td>
+  <td class="darkred">/Grandparent:Ethel/Parent:Jane</td></tr>
+<tr><td>&lt;--</td><td class="red">age 63</td>
+  <td class="darkred">/Grandparent:Ethel</td></tr>
+</table>
 </div>
 
 
@@ -647,13 +650,188 @@ DIAGRAM
 </div>
 
 
+<div class="transition">
+Entity groups and transactions
+</div>
+
+
+<div class="slide">
+<red>TODO: streamline or split up</red>
+<h1>Transaction model</h1>
+<ul>
+<li><b>All</b> writes are transactional</li>
+<li>Journals</li>
+<li>Entities versioned and timestamped</li>
+<li>Optimistic concurrency</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Entity groups</h1>
+<ul>
+<!-- <li>Transaction granularity</li> -->
+<li>Defined by root entities</li>
+<li>Consists of root and all descendants</li>
+<li>Separate row, co-located with root</li>
+<li><i>last committed</i> timestamp</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Transactions</h1>
+TODO: use single put as first example
+<ul>
+<li>Record "now" as starting timestamp</li>
+<li><code>get()</code>s use that timestamp</li>
+<li><code>put()</code>s and <code>delete()</code>s are serialized</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Commit</h1>
+<ul>
+<li>Write all <code>put()</code>s to journal in entity group row
+  <ul><li>Point of no return!</li></ul>
+</li>
+<li>Apply <code>put()</code>s to entity rows</li>
+<li>Update indices</li>
+<li>Update entity group's <i>last committed</i> timestamp</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Commit example</h1>
+<pre>
+class Account(db.Model):
+  balance = db.IntegerProperty()
+
+/<red>Bank:1</red>
+/<red>Bank:1</red>/<green>Account:A</green>
+/<red>Bank:1</red>/<green>Account:B</green>
+</pre>
+</div>
+
+
+<div class="slide">
+<h1>Commit example</h1>
+<pre>
+def transfer(from_key, to_key, amount):
+  from, to = db.get(from_key, to_key)
+  from.balance -= amount
+  to.balance += amount
+  db.put(from, to)
+
+db.run_in_transaction(transfer, a.key(), b.key(), 100)
+</pre>
+</div>
+
+
+<div class="slide">
+<h1>Commit example</h1>
+<pre>
+def transfer(from_key, to_key, amount):
+  from, to = db.get(from_key, to_key)
+  from.balance -= amount
+  to.balance += amount
+  db.put(from, to)
+
+<green>db.run_in_transaction(</green>transfer, a.key(), b.key(), 100)
+</pre>
+
+<ul>
+<li>Get <code>/Bank:1</code> entity group</li>
+<li>Note <i>last updated</i> timestamp, <i>3:00pm</i></li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Commit example</h1>
+<pre>
+def transfer(from_key, to_key, amount):
+  <green>from, to = db.get(from_key, to_key)</green>
+  from.balance -= amount
+  to.balance += amount
+  db.put(from, to)
+
+db.run_in_transaction(transfer, <green>a.key(), b.key()</green>, 100)
+</pre>
+
+<ul>
+<li>Read <code>Account:A</code> and <code>Account:B</code> as of 3:00pm</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Commit example</h1>
+<pre>
+def transfer(from_key, to_key, amount):
+  from, to = db.get(from_key, to_key)
+  from.balance -= amount
+  to.balance += amount
+  <green>db.put(from, to)</green>
+
+db.run_in_transaction(transfer, <green>a.key(), b.key()</green>, 100)
+</pre>
+
+<ul>
+<li>Serialize <code>put()</code> call</li>
+<li>Attach to transaction</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Commit example</h1>
+<pre>
+def transfer(from_key, to_key, amount):
+  from, to = db.get(from_key, to_key)
+  from.balance -= amount
+  to.balance += amount
+  db.put(from, to)</green>
+
+db.run_in_transaction(transfer, a.key(), b.key(), 100<green>)</green>
+</pre>
+
+<ul>
+<li>Write journal with serialized <code>put()</code> call to
+    <code>/Bank:1</code> entity group</li>
+<li>Write new <code>Account:A</code> and <code>Account:B</code> entities</li>
+<li>Update <code>a.balance</code> and <code>b.balance</code> index rows</li>
+<li>Write new <i>last updated</i> timestamp to entity group</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Recovery</h1>
+<ul>
+<li>Always check entity group first</li>
+<li>Unfinished txes are <b>rolled forward</b></li>
+<li>Adds one Bigtable read to every datastore read and write</li>
+</ul>
+</div>
+
+
 <div class="slide">
 <h1>Conclusions</h1>
 <ul>
-<li>?</li>
-<li>?</li>
+<li><i>small</i> entity groups: one user's data or less</li>
+<li>use Text/Blob for properties you don't need to query on</li>
 <li>?</li>
 </ul>
+</div>
+
+
+<div class="slide">
+<h1>Questions?</h1>
+<img src="google_io_logo.jpg" />
+<h2>code.google.com/appengine</h2>
 </div>
 
 
