@@ -46,7 +46,7 @@ pre {
   background-color: #eeeeee;
 }
 
-pre p, pre ul {
+pre p, pre ul, code {
   color: #006000;
 }
 
@@ -70,6 +70,10 @@ blue, .blue     { background-color: #3a95ef; }
 .darkblue       { background-color: #0055af; }
 yellow, .yellow { background-color: #fff437; }
 .darkyellow     { background-color: #d7b400; }
+
+//.payload { background-color: #e60d2e; }
+//.index1  { background-color: #ff4d6e; }
+
 </style>
 </head>
 <body>
@@ -192,7 +196,7 @@ javascript:void(0);
 <!-- <li>Read</li> -->
 <!-- <table> -->
 <!-- <tr class="red"><td class="white" colspan="2" /><td>a</td><td>...</td></tr> -->
-<!-- <tr class="red"><td class="white">&lt;--</td> -->
+<!-- <tr class="red"><td class="white">&lt;-</td> -->
 <!--   <td>b</td><td>...</td><td class="white"/></tr> -->
 <!-- <tr class="red"><td class="white" colspan="2" /><td>c</td><td>...</td></tr> -->
 <!-- </table> -->
@@ -207,7 +211,7 @@ javascript:void(0);
 <!-- <li>Write</li> -->
 <!-- <table> -->
 <!-- <tr class="red"><td class="white" colspan="2" /><td>a</td><td>...</td></tr> -->
-<!-- <tr class="red"><td class="white">--&gt;</td> -->
+<!-- <tr class="red"><td class="white">-&gt;</td> -->
 <!--   <td>b</td><td>...</td><td class="white"/></tr> -->
 <!-- <tr class="red"><td class="white" colspan="2" /><td>c</td><td>...</td></tr> -->
 <!-- </table> -->
@@ -223,7 +227,7 @@ javascript:void(0);
 <!-- <li>Single-row transaction</li> -->
 <!-- <table> -->
 <!-- <tr class="red"><td class="white" colspan="2" /><td>a</td><td>...</td></tr> -->
-<!-- <tr class="red" style="margin-left: 3em"><td class="white">&lt;--</td> -->
+<!-- <tr class="red" style="margin-left: 3em"><td class="white">&lt;-</td> -->
 <!--   <td>b</td><td>X</td><td class="white"/></tr> -->
 <!-- <tr class="red"><td class="white" colspan="2" /><td>c</td><td>...</td></tr> -->
 
@@ -232,7 +236,7 @@ javascript:void(0);
 <!-- <tr><td>&nbsp;</td></tr> -->
 
 <!-- <tr class="red"><td class="white" colspan="2" /><td>a</td><td>...</td></tr> -->
-<!-- <tr class="red" style="margin-left: 3em"><td class="white">--&gt;</td> -->
+<!-- <tr class="red" style="margin-left: 3em"><td class="white">-&gt;</td> -->
 <!--   <td>b</td><td>X'</td><td class="white"/></tr> -->
 <!-- <tr class="red"><td class="white" colspan="2" /><td>c</td><td>...</td></tr> -->
 <!-- </table> -->
@@ -251,9 +255,9 @@ javascript:void(0);
 <!-- <ul><li>prefix: <i>b...</i></li></ul> -->
 <!-- <table> -->
 <!-- <tr class="red"><td class="white" colspan="2" /><td>a</td><td>...</td></tr> -->
-<!-- <tr><td>&lt;--</td><td class="red">b1</td><td class="red">...</td><td /></tr> -->
-<!-- <tr><td>&lt;--</td><td class="red">b2</td><td class="red">...</td><td /></tr> -->
-<!-- <tr><td>&lt;--</td><td class="red">b3</td><td class="red">...</td><td /></tr> -->
+<!-- <tr><td>&lt;-</td><td class="red">b1</td><td class="red">...</td><td /></tr> -->
+<!-- <tr><td>&lt;-</td><td class="red">b2</td><td class="red">...</td><td /></tr> -->
+<!-- <tr><td>&lt;-</td><td class="red">b3</td><td class="red">...</td><td /></tr> -->
 <!-- <tr class="red"><td class="white" colspan="2" /><td>c</td><td>...</td></tr> -->
 <!-- </table> -->
 <!-- </ul> -->
@@ -272,9 +276,9 @@ javascript:void(0);
 <!-- <ul><li>range: <i>b to d</i></li></ul> -->
 <!-- <table> -->
 <!-- <tr class="red"><td class="white" colspan="2" /><td>a</td><td>...</td></tr> -->
-<!-- <tr><td>&lt;--</td><td class="red">b</td><td class="red">...</td><td /></tr> -->
-<!-- <tr><td>&lt;--</td><td class="red">c</td><td class="red">...</td><td /></tr> -->
-<!-- <tr><td>&lt;--</td><td class="red">d</td><td class="red">...</td><td /></tr> -->
+<!-- <tr><td>&lt;-</td><td class="red">b</td><td class="red">...</td><td /></tr> -->
+<!-- <tr><td>&lt;-</td><td class="red">c</td><td class="red">...</td><td /></tr> -->
+<!-- <tr><td>&lt;-</td><td class="red">d</td><td class="red">...</td><td /></tr> -->
 <!-- <tr class="red"><td class="white" colspan="2" /><td>e</td><td>...</td></tr> -->
 <!-- </table> -->
 <!-- </ul> -->
@@ -366,7 +370,7 @@ javascript:void(0);
 <!-- <br />&nbsp;SELECT * FROM Person ... -->
 <!-- <ul> -->
 <!-- <li>WHERE user = :current_user</li> -->
-<!-- <li>WHERE name >= 'A' AND name < 'B' ORDER BY name</li> -->
+<!-- <li>WHERE name >= 'B' AND name < 'C' ORDER BY name</li> -->
 <!-- <li>WHERE city = 'San Francisco' AND state = 'CA' AND country = 'USA'</li> -->
 <!-- <li>WHERE ANCESTOR IS :grandparent ORDER BY name DESC</li> -->
 <!-- </ul> -->
@@ -383,101 +387,107 @@ javascript:void(0);
 <!-- </ul> -->
 <!-- </div> -->
 
+<!-- <div class="slide"> -->
+<!-- <h1>Indexes</h1> -->
+<!-- <table> -->
+<!-- <tr><td class="rowname">age</td><td class="rowname">12</td> -->
+<!--   <td class="payload">/Grandparent:Ethel/Parent:Jane/Child:Timmy</td></tr> -->
+<!-- <tr><td class="rowname">age</td><td class="rowname">38</td> -->
+<!--   <td class="payload">/Grandparent:Ethel/Parent:Jane</td></tr> -->
+<!-- <tr><td class="rowname">age</td><td class="rowname">63</td> -->
+<!--   <td class="payload">/Grandparent:Ethel</td></tr> -->
+<!-- </table> -->
+<!-- </div> -->
+
+<!-- <div class="slide"> -->
+<!-- <h1>Scanning indexes</h1> -->
+<!-- <p><strike>filtering in memory</strike></p> -->
+<!-- <p><strike>sorting in memory</strike></p> -->
+<!-- <table> -->
+<!-- <tr><td>&lt;-</td><td class="red">age 12</td> -->
+<!--   <td class="darkred">/Grandparent:Ethel/Parent:Jane/Child:Timmy</td></tr> -->
+<!-- <tr><td>&lt;-</td><td class="red">age 38</td> -->
+<!--   <td class="darkred">/Grandparent:Ethel/Parent:Jane</td></tr> -->
+<!-- <tr><td>&lt;-</td><td class="red">age 63</td> -->
+<!--   <td class="darkred">/Grandparent:Ethel</td></tr> -->
+<!-- <tr><td>&lt;-</td><td class="red">age 66</td> -->
+<!--   <td class="darkred">/Grandparent:Fred</td></tr> -->
+<!-- </table> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Scanning indexes</h1> -->
+<!-- <ul> -->
+<!-- <li>dense index scans</li> -->
+<!-- <p>e.g. <code>WHERE AGE > 35 AND AGE < 65</code>:</p> -->
+<!-- <table> -->
+<!-- <tr><td colspan="2"><td class="red">age 12</td> -->
+<!--   <td class="darkred">/Grandparent:Ethel/Parent:Jane/Child:Timmy</td></tr> -->
+<!-- <tr><td>&lt;-</td><td class="red">age 38</td> -->
+<!--   <td class="darkred">/Grandparent:Ethel/Parent:Jane</td></tr> -->
+<!-- <tr><td>&lt;-</td><td class="red">age 63</td> -->
+<!--   <td class="darkred">/Grandparent:Ethel</td></tr> -->
+<!-- <tr><td colspan="2"><td class="red">age 66</td> -->
+<!--   <td class="darkred">/Grandparent:Fred</td></tr> -->
+<!-- </table> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Query planning</h1> -->
+<!-- <ul> -->
+<!-- <li>Goal: convert query to index scan</li> -->
+<!-- <li>Pick the index</li> -->
+<!-- <li>Compute the prefix or range</li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="transition"> -->
+<!-- Indexes -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Kind index</h1> -->
+<!-- <ul> -->
+<!-- <li>Serves queries for all entities of a given kind</li> -->
+<!-- <li>e.g. <code>SELECT * FROM Grandparent</code></li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Kind index</h1> -->
+<!-- <p>Index data is kind, key</p> -->
+<!-- <table> -->
+<!-- <tr><td class="red">Child</td><td class="darkred">Jimmy</td></tr> -->
+<!-- <tr><td class="red">Child</td><td class="darkred">Timmy</td></tr> -->
+<!-- <tr><td class="green">Grandparent</td><td class="darkgreen">Ethel</td></tr> -->
+<!-- <tr><td class="green">Grandparent</td><td class="darkgreen">Fred</td></tr> -->
+<!-- <tr><td class="blue">Parent</td><td class="darkblue">Jane</td></tr> -->
+<!-- <tr><td class="blue">Parent</td><td class="darkblue">John</td></tr> -->
+<!-- <tr><td class="blue">Parent</td><td class="darkblue">Todd</td></tr> -->
+<!-- </table> -->
+<!-- </div> -->
+
+
 <div class="slide">
-<h1>Indexes</h1>
+<h1>Kind index</h1>
+<ul>
+<li><code>SELECT * FROM Grandparent</code></li>
+<li>Scan with prefix <code>Grandparent</code></li>
 <table>
-<tr><td class="rowname">age</td><td class="rowname">12</td>
-  <td class="payload">/Grandparent:Ethel/Parent:Jane/Child:Timmy</td></tr>
-<tr><td class="rowname">age</td><td class="rowname">38</td>
-  <td class="payload">/Grandparent:Ethel/Parent:Jane</td></tr>
-<tr><td class="rowname">age</td><td class="rowname">63</td>
-  <td class="payload">/Grandparent:Ethel</td></tr>
+<tr><td colspan="2"><td class="red">Child</td><td class="darkred">Jimmy</td></tr>
+<tr><td colspan="2"><td class="red">Child</td><td class="darkred">Timmy</td></tr>
+<tr><td>&lt;-</td><td class="green">Grandparent</td><td class="darkgreen">Ethel</td></tr>
+<tr><td>&lt;-</td><td class="green">Grandparent</td><td class="darkgreen">Fred</td></tr>
+<tr><td colspan="2"><td class="blue">Parent</td><td class="darkblue">Jane</td></tr>
+<tr><td colspan="2"><td class="blue">Parent</td><td class="darkblue">John</td></tr>
+<tr><td colspan="2"><td class="blue">Parent</td><td class="darkblue">Todd</td></tr>
 </table>
-</table>
-</div>
-
-<div class="slide">
-<h1>Scanning indexes</h1>
-<p><strike>filtering in memory</strike></p>
-<table>
-<tr><td>&lt;--</td><td class="red">age 12</td>
-  <td class="darkred">/Grandparent:Ethel/Parent:Jane/Child:Timmy</td></tr>
-<tr><td>&lt;--</td><td class="red">age 38</td>
-  <td class="darkred">/Grandparent:Ethel/Parent:Jane</td></tr>
-<tr><td>&lt;--</td><td class="red">age 63</td>
-  <td class="darkred">/Grandparent:Ethel</td></tr>
-</table>
-</div>
-
-
-<div class="slide">
-<h1>Scanning indexes</h1>
-<p><strike>sorting in memory</strike></p>
-DIAGRAM
-</div>
-
-
-<div class="slide">
-<h1>Scanning indexes</h1>
-<ul>
-<li>dense index scans</li>
-DIAGRAM
-<li>one scan, n row fetches</li>
-<li>n + 1 disk seeks</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Query planning</h1>
-<ul>
-<li>Goal: convert query to index scan</li>
-<li>Pick the index</li>
-<li>Compute the prefix or range</li>
-</ul>
-</div>
-
-
-<div class="transition">
-Indexes
-</div>
-
-
-<div class="slide">
-<h1>Kind index</h1>
-<ul>
-<li>Serves queries for all entities of a given kind</li>
-<li>e.g. <code>Person.all().fetch()</code></li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Kind index</h1>
-<p>Index data is kind, key</p>
-DIAGRAM
-Blog
-Blog
-Person
-Person
-Post
-Post
-Post
-</div>
-
-
-<div class="slide">
-<h1>Kind index</h1>
-<ul>
-<p>Prefix scan with kind name</p>
-DIAGRAM
-Blog
-Blog
-Person
-Person
-Post
-Post
-Post
 </ul>
 </div>
 
@@ -486,9 +496,9 @@ Post
 <h1>Single-property index</h1>
 <ul>
 <li>Serves queries on a single property:
-<ul><li><code>WHERE name = 'Ryan'</code></li>
+<ul><li><code>WHERE name = 'John</code></li>
     <li><code>ORDER BY name DESC</code></li>
-    <li><code>WHERE name >= 'A' AND name < 'B' ORDER BY name</code></li>
+    <li><code>WHERE name >= 'B' AND name < 'C' ORDER BY name</code></li>
 </ul></li>
 <li>One ascending, one descending
 </ul>
@@ -498,70 +508,89 @@ Post
 <div class="slide">
 <h1>Single-property index</h1>
 <p>Index data is kind, property name, value, key</p>
-DIAGRAM
-<li><red>Person</red> <green>email</green> <blue>me@google.com</blue>
-<li><red>Person</red> <green>name</green> <blue>Alice</blue>
-<li><red>Person</red> <green>name</green> <blue>Bob</blue>
-<li><red>Person</red> <green>name</green> <blue>Brad</blue>
-<li><red>Person</red> <green>name</green> <blue>Chelsea</blue>
-<li><red>Person</red> <green>name</green> <blue>Ryan</blue>
-<li><red>Person</red> <green>name</green> <blue>Tim</blue>
-<li><red>Record</red> <green>title</green> <blue>Ninja Pirate</blue>
+<table>
+<tr><td class="red">Parent</td><td class="green">address</td><td class="blue">1 Palm Dr.</td></tr>
+<tr><td class="red">Parent</td><td class="green">name</td><td class="blue">Alice</td></tr>
+<tr><td class="red">Parent</td><td class="green">name</td><td class="blue">Bob</td></tr>
+<tr><td class="red">Parent</td><td class="green">name</td><td class="blue">Brad</td></tr>
+<tr><td class="red">Parent</td><td class="green">name</td><td class="blue">Chelsea</td></tr>
+<tr><td class="red">Parent</td><td class="green">name</td><td class="blue">Jane</td></tr>
+<tr><td class="red">Parent</td><td class="green">name</td><td class="blue">John</td></tr>
+<tr><td class="red">Parent</td><td class="green">title</td><td class="blue">Ninja Pirate</td></tr>
+</table>
 </div>
 
 
 <div class="slide">
 <h1>Single-property index</h1>
 <p>...or descending</p>
-DIAGRAM
-Tim
-Ryan
-Chelsea
-Brad
-Bob
-Alice
+<table>
+<tr><td class="red">Parent</td><td class="green">address</td><td class="blue">1 Palm Dr.</td></tr>
+<tr><td class="red">Parent</td><td class="green">name</td><td class="blue">John</td></tr>
+<tr><td class="red">Parent</td><td class="green">name</td><td class="blue">Jane</td></tr>
+<tr><td class="red">Parent</td><td class="green">name</td><td class="blue">Chelsea</td></tr>
+<tr><td class="red">Parent</td><td class="green">name</td><td class="blue">Brad</td></tr>
+<tr><td class="red">Parent</td><td class="green">name</td><td class="blue">Bob</td></tr>
+<tr><td class="red">Parent</td><td class="green">name</td><td class="blue">Alice</td></tr>
+<tr><td class="red">Parent</td><td class="green">title</td><td class="blue">Ninja Pirate</td></tr>
+</table>
 </div>
 
 
 <div class="slide">
 <h1>Single-property index</h1>
-<p><code>WHERE name = 'Ryan'</code></p>
-<p>prefix scan:</p>
-DIAGRAM
-Alice
-Bob
-Brad
-Chelsea
-Ryan
-Tim
+<ul>
+<li><code>WHERE name = 'John'</code></li>
+<li>Scan with prefix <code>Parent name John</code></li>
+<table>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">address</td><td class="blue">1 Palm Dr.</td></tr>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">name</td><td class="blue">Alice</td></tr>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">name</td><td class="blue">Bob</td></tr>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">name</td><td class="blue">Brad</td></tr>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">name</td><td class="blue">Chelsea</td></tr>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">name</td><td class="blue">Jane</td></tr>
+<tr><td>&lt;-</td><td class="red">Parent</td><td class="green">name</td><td class="blue">John</td></tr>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">title</td><td class="blue">Ninja Pirate</td></tr>
+</table>
+</ul>
 </div>
 
 
 <div class="slide">
 <h1>Single-property index</h1>
-<p><code>ORDER BY name DESC</code></p>
-<p>descending index:</p>
-DIAGRAM
-Tim
-Ryan
-Chelsea
-Brad
-Bob
-Alice
+<ul>
+<li><code>ORDER BY name DESC</code></li>
+<li>Scan <i>descending</i> index with prefix <code>Parent name</code>:</li>
+<table>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">address</td><td class="blue">1 Palm Dr.</td></tr>
+<tr><td>&lt;-</td><td class="red">Parent</td><td class="green">name</td><td class="blue">John</td></tr>
+<tr><td>&lt;-</td><td class="red">Parent</td><td class="green">name</td><td class="blue">Jane</td></tr>
+<tr><td>&lt;-</td><td class="red">Parent</td><td class="green">name</td><td class="blue">Chelsea</td></tr>
+<tr><td>&lt;-</td><td class="red">Parent</td><td class="green">name</td><td class="blue">Brad</td></tr>
+<tr><td>&lt;-</td><td class="red">Parent</td><td class="green">name</td><td class="blue">Bob</td></tr>
+<tr><td>&lt;-</td><td class="red">Parent</td><td class="green">name</td><td class="blue">Alice</td></tr>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">title</td><td class="blue">Ninja Pirate</td></tr>
+</table>
+</ul>
 </div>
 
 
 <div class="slide">
 <h1>Single-property index</h1>
-<p><code>WHERE name >= 'A' AND name < 'B' ORDER BY name</code></p>
-<p>range scan:</p>
-DIAGRAM
-Alice
-Bob
-Brad
-Chelsea
-Ryan
-Tim
+<ul>
+<li><code>WHERE name >= 'B' AND name < 'C' ORDER BY name</code></li>
+<li>Scan range <code>[Parent name B, Parent name C)</code>:</li>
+<table>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">address</td><td class="blue">1 Palm Dr.</td></tr>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">name</td><td class="blue">Alice</td></tr>
+<tr><td>&lt;-</td><td class="red">Parent</td><td class="green">name</td><td class="blue">Bob</td></tr>
+<tr><td>&lt;-</td><td class="red">Parent</td><td class="green">name</td><td class="blue">Brad</td></tr>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">name</td><td class="blue">Chelsea</td></tr>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">name</td><td class="blue">Jane</td></tr>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">name</td><td class="blue">John</td></tr>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">title</td><td class="blue">Ninja Pirate</td></tr>
+</table>
+</ul>
 </div>
 
 
@@ -570,8 +599,8 @@ Tim
 <ul>
 <p>Serve queries on multiple properties or ancestor:</p>
 <li><code>WHERE firstname = 'Ryan' AND lastname = 'Barrett'</code></li>
-<li><code>WHERE zip = 94107 AND name >= 'B' AND name < 'C'</code></li>
-<li><code>WHERE ANCESTOR IS /AddressBook:2 ORDER BY name DESC</code></li>
+<li><code>WHERE lastname = 'Smith' AND firstname >= 'B' AND firstname < 'C'</code></li>
+<li><code>WHERE ANCESTOR IS /Grandparent:Ethel ORDER BY firstname DESC</code></li>
 </ul>
 </div>
 
@@ -580,19 +609,22 @@ Tim
 <h1>Composite indexes</h1>
 <ul>
 <li>Index data is kind, ancestor, property values, key</li>
+<br />
 <pre>
-- kind: Person
+- kind: Parent
   ancestor: yes
   properties:
-  - name: name DESC
-  - name: phone
+  - name: lastname
+  - name: firstname DESC
 </pre>
-DIAGRAM
-<li><red>Person</red> <green>/AddressBook:1</green> <blue>Brett</blue> <yellow>650-253-0006</yellow></li>
-<li><red>Person</red> <green>/AddressBook:2</green> <blue>Ryan</blue> <yellow>650-253-0002</yellow></li>
-<li><red>Person</red> <green>/AddressBook:2</green> <blue>Kevin</blue> <yellow>650-253-0004</yellow></li>
-<li><red>Person</red> <green>/AddressBook:2</green> <blue>Guido</blue> <yellow>650-253-0003</yellow></li>
-<li><red>Person</red> <green>/AddressBook:3</green> <blue>Rafe</blue> <yellow>650-253-0001</yellow></li>
+<table>
+<tr><td class="red">Parent</td><td class="green">Anderson</td><td class="blue">Jane</td></tr>
+<tr><td class="red">Parent</td><td class="green">Barrett</td><td class="blue">Ryan</td></tr>
+<tr><td class="red">Parent</td><td class="green">Smith</td><td class="blue">Chelsea</td></tr>
+<tr><td class="red">Parent</td><td class="green">Smith</td><td class="blue">Brad</td></tr>
+<tr><td class="red">Parent</td><td class="green">Smith</td><td class="blue">Bob</td></tr>
+<tr><td class="red">Parent</td><td class="green">Thomas</td><td class="blue">Alice</td></tr>
+</table>
 </ul>
 </div>
 
@@ -611,12 +643,16 @@ DIAGRAM
 <div class="slide">
 <h1>Composite indexes</h1>
 <ul>
-<p><code>WHERE firstname = 'Ryan' AND lastname = 'Barrett'</code></p>
-DIAGRAM
-<li><red>Person</red> <green>Kevin</green> <blue>Gibbs</blue></li>
-<li><red>Person</red> <green>Ryan</green> <blue>Barrett</blue></li>
-<li><red>Person</red> <green>Ryan</green> <blue>Smith</blue></li>
-<li><red>Person</red> <green>Tom</green> <blue>Stocky</blue></li>
+<li><code>WHERE firstname = 'Ryan' AND lastname = 'Barrett</code></li>
+<p>Scan index with prefix <code>Parent Barrett Ryan</code>:</p>
+<table>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">Anderson</td><td class="blue">Jane</td></tr>
+<tr><td>&lt;-</td><td class="red">Parent</td><td class="green">Barrett</td><td class="blue">Ryan</td></tr>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">Smith</td><td class="blue">Chelsea</td></tr>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">Smith</td><td class="blue">Brad</td></tr>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">Smith</td><td class="blue">Bob</td></tr>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">Thomas</td><td class="blue">Alice</td></tr>
+</table>
 </ul>
 </div>
 
@@ -624,14 +660,16 @@ DIAGRAM
 <div class="slide">
 <h1>Composite indexes</h1>
 <ul>
-<p><code>WHERE zip = 94107 AND name >= 'B' AND name < 'C'</code></p>
-DIAGRAM
-<li><red>Person</red> <green>94103</green> <blue>Kevin</blue></li>
-<li><red>Person</red> <green>94107</green> <blue>Alice</blue></li>
-<li><red>Person</red> <green>94107</green> <blue>Bob</blue></li>
-<li><red>Person</red> <green>94107</green> <blue>Brad</blue></li>
-<li><red>Person</red> <green>94107</green> <blue>Eve</blue></li>
-<li><red>Person</red> <green>94301</green> <blue>Ryan</blue></li>
+<li><code>WHERE lastname = 'Smith' AND name >= 'B' AND name < 'C'</code></li>
+<li>Scan range <code>[Parent Smith B, Parent name C)</code>:</li>
+<table>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">Anderson</td><td class="blue">Jane</td></tr>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">Barrett</td><td class="blue">Ryan</td></tr>
+<tr><td>&lt;-</td><td class="red">Parent</td><td class="green">Smith</td><td class="blue">Chelsea</td></tr>
+<tr><td>&lt;-</td><td class="red">Parent</td><td class="green">Smith</td><td class="blue">Brad</td></tr>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">Smith</td><td class="blue">Bob</td></tr>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">Thomas</td><td class="blue">Alice</td></tr>
+</table>
 </ul>
 </div>
 
@@ -639,13 +677,39 @@ DIAGRAM
 <div class="slide">
 <h1>Composite indexes</h1>
 <ul>
-<p><code>WHERE ANCESTOR IS /AddressBook:2 ORDER BY name DESC</code></p>
-DIAGRAM
-<li><red>Person</red> <green>/AddressBook:1</green> <blue>Brad</blue></li>
-<li><red>Person</red> <green>/AddressBook:2</green> <blue>Eve</blue></li>
-<li><red>Person</red> <green>/AddressBook:2</green> <blue>Bob</blue></li>
-<li><red>Person</red> <green>/AddressBook:2</green> <blue>Alice</blue></li>
-<li><red>Person</red> <green>/AddressBook:3</green> <blue>Ryan</blue></li>
+<p>Ancestor index:
+<br />
+<pre>
+- kind: Parent
+  ancestor: yes
+  properties:
+  - name: firstname DESC
+</pre>
+<table>
+<tr>><td class="red">Parent</td><td class="green">/Grandparent:David</td><td class="blue">Jane</td></tr>
+<tr><td class="red">Parent</td><td class="green">/Grandparent:Ethel</td><td class="blue">Ryan</td></tr>
+<tr><td class="red">Parent</td><td class="green">/Grandparent:Ethel</td><td class="blue">Chelsea</td></tr>
+<tr><td class="red">Parent</td><td class="green">/Grandparent:Ethel</td><td class="blue">Brad</td></tr>
+<tr><td class="red">Parent</td><td class="green">/Grandparent:Ethel</td><td class="blue">Bob</td></tr>
+<tr><td class="red">Parent</td><td class="green">/Grandparent:Fred</td><td class="blue">Alice</td></tr>
+</table>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Composite indexes</h1>
+<ul>
+<li><code>WHERE ANCESTOR IS /Grandparent:Ethel ORDER BY firstname DESC</code></li>
+<li>Scan with prefix <code>Parent /Grandparent:Ethel</code>:</li>
+<table>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">/Grandparent:David</td><td class="blue">Jane</td></tr>
+<tr><td>&lt;-</td><td class="red">Parent</td><td class="green">/Grandparent:Ethel</td><td class="blue">Ryan</td></tr>
+<tr><td>&lt;-</td><td class="red">Parent</td><td class="green">/Grandparent:Ethel</td><td class="blue">Chelsea</td></tr>
+<tr><td>&lt;-</td><td class="red">Parent</td><td class="green">/Grandparent:Ethel</td><td class="blue">Brad</td></tr>
+<tr><td>&lt;-</td><td class="red">Parent</td><td class="green">/Grandparent:Ethel</td><td class="blue">Bob</td></tr>
+<tr><td colspan="2"><td class="red">Parent</td><td class="green">/Grandparent:Fred</td><td class="blue">Alice</td></tr>
+</table>
 </ul>
 </div>
 
@@ -656,7 +720,7 @@ Entity groups and transactions
 
 
 <div class="slide">
-<red>TODO: streamline or split up</red>
+<li>TODO: streamline or split up</li>
 <h1>Transaction model</h1>
 <ul>
 <li><b>All</b> writes are transactional</li>
@@ -709,9 +773,7 @@ TODO: use single put as first example
 class Account(db.Model):
   balance = db.IntegerProperty()
 
-/<red>Bank:1</red>
-/<red>Bank:1</red>/<green>Account:A</green>
-/<red>Bank:1</red>/<green>Account:B</green>
+YYY
 </pre>
 </div>
 
@@ -739,7 +801,7 @@ def transfer(from_key, to_key, amount):
   to.balance += amount
   db.put(from, to)
 
-<green>db.run_in_transaction(</green>transfer, a.key(), b.key(), 100)
+<td class="green">db.run_in_transaction(</td>transfer, a.key(), b.key(), 100)
 </pre>
 
 <ul>
@@ -753,12 +815,12 @@ def transfer(from_key, to_key, amount):
 <h1>Commit example</h1>
 <pre>
 def transfer(from_key, to_key, amount):
-  <green>from, to = db.get(from_key, to_key)</green>
+  <td class="green">from, to = db.get(from_key, to_key)</td>
   from.balance -= amount
   to.balance += amount
   db.put(from, to)
 
-db.run_in_transaction(transfer, <green>a.key(), b.key()</green>, 100)
+db.run_in_transaction(transfer, <td class="green">a.key(), b.key()</td>, 100)
 </pre>
 
 <ul>
@@ -774,9 +836,9 @@ def transfer(from_key, to_key, amount):
   from, to = db.get(from_key, to_key)
   from.balance -= amount
   to.balance += amount
-  <green>db.put(from, to)</green>
+  <td class="green">db.put(from, to)</td>
 
-db.run_in_transaction(transfer, <green>a.key(), b.key()</green>, 100)
+db.run_in_transaction(transfer, <td class="green">a.key(), b.key()</td>, 100)
 </pre>
 
 <ul>
@@ -793,9 +855,9 @@ def transfer(from_key, to_key, amount):
   from, to = db.get(from_key, to_key)
   from.balance -= amount
   to.balance += amount
-  db.put(from, to)</green>
+  db.put(from, to)</td>
 
-db.run_in_transaction(transfer, a.key(), b.key(), 100<green>)</green>
+db.run_in_transaction(transfer, a.key(), b.key(), 100<td class="green">)</td>
 </pre>
 
 <ul>
@@ -831,7 +893,8 @@ db.run_in_transaction(transfer, a.key(), b.key(), 100<green>)</green>
 <div class="slide">
 <h1>Questions?</h1>
 <img src="google_io_logo.jpg" />
-<h2>code.google.com/appengine</h2>
+<h2><a href="http://code.google.com/appengine/" style="text-decoration: underline">
+    code.google.com/appengine</a></h2>
 </div>
 
 
