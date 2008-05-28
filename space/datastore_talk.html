@@ -23,13 +23,23 @@
 <script src="ui/default/slides.js" type="text/javascript"></script>
 
 <style type="text/css">
-body, div#header { background-image: none; }
+body, div#header, div#footer { background-image: none; background-color: white;}
+div#footer { height: 3em; }
 .slide h1 { text-transform: none; }
-.slide ul { margin-left: 1em; margin-right: 1em; }
+.slide ul, .slide ol { margin-left: 1em; margin-right: 1em; }
 .slide p { margin-left: .5em; }
-.slide li ul li { margin-top: 0.75em; }
+.slide li ul li, .slide li ol li { margin-top: 0.75em; }
 .transition { display: none; }
+
+div.title, div.title h1 {
+  background-color: black;
+  color: white;
+  z-index: 15;
+}
+/*  background: white url('/space/io_logo_black.png') no-repeat scroll 95% 0%;*/
 /* strike { color: red; } */
+
+.slide h1, #controls, #navLink { background-color: white; color: black; }
 
 table {
   margin-top: 1em;
@@ -109,18 +119,21 @@ yellow, .yellow { background-color: #fff437; }
 <div id="currentSlide"><!-- DO NOT EDIT --></div>
 <div id="header"></div>
 <div id="footer">
-<h1>Google I/O, May 28, 2008</h1>
-<h2>Under the covers of the App Engine Datastore</h2>
+<table style="width: 100%; margin-top: 0"><tr>
+<td style="align: left"><img src="/space/io_footer_black.png" /></td>
+<td style="align: right">
+  <img src="/space/appengine.gif" /><img src="/space/io_logo_black.png" /></td>
+</tr></table>
 </div>
 </div>
 javascript:void(0);
 
 <div class="presentation">
 
-<div class="slide">
-<h1>Under the covers of the App Engine Datastore</h1>
-<h3>Ryan Barrett</h3>
-<h4><img src="gg.gif" /></h4>
+<div class="slide title" style="z-index: 15">
+<img src="/space/io_title_horizontal_black.png" />
+<h1 style="color: white">Under the covers of the<br />App Engine Datastore</h1>
+<h3>Ryan Barrett<br />Google I/O, May 28, 2008</h3>
 </div>
 
 
@@ -202,7 +215,7 @@ javascript:void(0);
 <ul>
 <li>Rows, row names, and columns</li>
 <table>
-<tr><th>Row name</td><td>Columns</td></tr>
+<tr><th>Row name</th><th>Columns</th></tr>
 <tr><td class="red">a</td><td class="darkred">...</td></tr>
 <tr><td class="red">b</td><td class="darkred">...</td></tr>
 <tr><td class="red">c</td><td class="darkred">...</td></tr>
@@ -237,7 +250,7 @@ javascript:void(0);
 <ul><li>Read</li></ul>
 <table>
 <tr><td /><td class="red">a</td><td class="darkred">...</td></tr>
-<tr><td>&larr;</td><td class="red">b</td><td class="darkred">...</td></tr>
+<tr><td><b>&larr;</b></td><td class="red">b</td><td class="darkred">...</td></tr>
 <tr><td /><td class="red">c</td><td class="darkred">...</td></tr>
 </table>
 </div>
@@ -248,7 +261,7 @@ javascript:void(0);
 <ul><li>Write</li></ul>
 <table>
 <tr><td /><td class="red">a</td><td class="darkred">...</td></tr>
-<tr><td>&rarr;</td><td class="red">b</td><td class="darkred">...</td></tr>
+<tr><td><b>&rarr;</b></td><td class="red">b</td><td class="darkred">...</td></tr>
 <tr><td /><td class="red">c</td><td class="darkred">...</td></tr>
 </table
 </div>
@@ -259,7 +272,7 @@ javascript:void(0);
 <ul><li>Single-row transaction</li></ul>
 <table>
 <tr><td /><td class="red">a</td><td class="darkred">...</td></tr>
-<tr><td>&larr;</td><td class="red">b</td><td class="darkred">X</td></tr>
+<tr><td><b>&larr;</b></td><td class="red">b</td><td class="darkred">X</td></tr>
 <tr><td /><td class="red">c</td><td class="darkred">...</td></tr>
 
 <tr><td>&nbsp;</td></tr>
@@ -267,7 +280,7 @@ javascript:void(0);
 <tr><td>&nbsp;</td></tr>
 
 <tr><td /><td class="red">a</td><td class="darkred">...</td></tr>
-<tr><td>&rarr;</td><td class="red">b</td><td class="darkred">X'</td></tr>
+<tr><td><b>&rarr;</b></td><td class="red">b</td><td class="darkred">X'</td></tr>
 <tr><td /><td class="red">c</td><td class="darkred">...</td></tr>
 </table>
 </div>
@@ -278,9 +291,9 @@ javascript:void(0);
 <ul><li>Scan: prefix <i>b</i></li></ul>
 <table>
 <tr><td /><td class="red notscan">a</td><td class="darkred">...</td></tr>
-<tr><td>&larr;</td><td class="red scan">b1</td><td class="darkred">...</td></tr>
-<tr><td>&larr;</td><td class="red scan">b2</td><td class="darkred">...</td></tr>
-<tr><td>&larr;</td><td class="red scan">b3</td><td class="darkred">...</td></tr>
+<tr><td><b>&larr;</b></td><td class="red scan">b1</td><td class="darkred">...</td></tr>
+<tr><td><b>&larr;</b></td><td class="red scan">b2</td><td class="darkred">...</td></tr>
+<tr><td><b>&larr;</b></td><td class="red scan">b3</td><td class="darkred">...</td></tr>
 <tr><td /><td class="red notscan">c</td><td class="darkred">...</td></tr>
 </table>
 </div>
@@ -291,9 +304,9 @@ javascript:void(0);
 <ul><li>Scan: range <i>b to d</i></li></ul>
 <table>
 <tr><td /><td class="red notscan">a</td><td class="darkred">...</td></tr>
-<tr><td>&larr;</td><td class="red scan">b</td><td class="darkred">...</td></tr>
-<tr><td>&larr;</td><td class="red scan">c</td><td class="darkred">...</td></tr>
-<tr><td>&larr;</td><td class="red scan">d</td><td class="darkred">...</td></tr>
+<tr><td><b>&larr;</b></td><td class="red scan">b</td><td class="darkred">...</td></tr>
+<tr><td><b>&larr;</b></td><td class="red scan">c</td><td class="darkred">...</td></tr>
+<tr><td><b>&larr;</b></td><td class="red scan">d</td><td class="darkred">...</td></tr>
 <tr><td /><td class="red notscan">e</td><td class="darkred">...</td></tr>
 </table>
 </div>
@@ -555,9 +568,9 @@ timmy = Child(parent=jane)
 
 <div class="slide">
 <h1>Kind index</h1>
-<ul><li>Index data is kind</li></ul>
+<ul><li>Index data is kind</li>
 <table>
-<tr><th>Kind</td><td>Key</td></tr>
+<tr><th>Kind</th><th>Key</th></tr>
 <tr><td class="red">Child</td><td class="darkred">Jimmy</td></tr>
 <tr><td class="red">Child</td><td class="darkred">Timmy</td></tr>
 <tr><td class="red">Grandparent</td><td class="darkred">Ethel</td></tr>
@@ -565,6 +578,7 @@ timmy = Child(parent=jane)
 <tr><td class="red">Parent</td><td class="darkred">Jane</td></tr>
 <tr><td class="red">Parent</td><td class="darkred">John</td></tr>
 <tr><td class="red">Parent</td><td class="darkred">Todd</td></tr>
+</ul>
 </table>
 </div>
 
@@ -575,7 +589,7 @@ timmy = Child(parent=jane)
 <li><code>SELECT * FROM Grandparent</code></li>
 <li>Scan with prefix <code>Grandparent</code></li>
 <table>
-<tr><th>Kind</td><td>Key</td></tr>
+<tr><th>Kind</th><th>Key</th></tr>
 <tr><td class="red">Child</td><td class="darkred">Jimmy</td></tr>
 <tr><td class="red">Child</td><td class="darkred">Timmy</td></tr>
 <tr class="scan"><td class="red">Grandparent</td><td class="darkred">Ethel</td></tr>
@@ -620,9 +634,9 @@ timmy = Child(parent=jane)
 
 <div class="slide">
 <h1>Single-property index</h1>
-<ul><li>Index data is kind, property name, value</li></ul>
+<ul><li>Index data is kind, property name, value</li>
 <table>
-<tr><th>Kind</td><td>Name</td><td>Value</td></tr>
+<tr><th>Kind</th><th>Name</th><th>Value</th></tr>
 <tr><td class="red">Parent</td><td class="green">address</td><td class="blue">1 Palm Dr.</td></tr>
 <tr><td class="red">Parent</td><td class="green">name</td><td class="blue">Alice</td></tr>
 <tr><td class="red">Parent</td><td class="green">name</td><td class="blue">Bob</td></tr>
@@ -632,6 +646,7 @@ timmy = Child(parent=jane)
 <tr><td class="red">Parent</td><td class="green">name</td><td class="blue">John</td></tr>
 <tr><td class="red">Parent</td><td class="green">title</td><td class="blue">Ninja Pirate</td></tr>
 </table>
+</ul>
 </div>
 
 
@@ -639,7 +654,7 @@ timmy = Child(parent=jane)
 <h1>Single-property index</h1>
 <ul><li>...or descending</li></ul>
 <table>
-<tr><th>Kind</td><td>Name</td><td>Value DESC</td></tr>
+<tr><th>Kind</th><th>Name</th><th>Value DESC</th></tr>
 <tr><td class="red">Parent</td><td class="green">address</td><td class="blue">1 Palm Dr.</td></tr>
 <tr><td class="red">Parent</td><td class="green">name</td><td class="blue">John</td></tr>
 <tr><td class="red">Parent</td><td class="green">name</td><td class="blue">Jane</td></tr>
@@ -658,7 +673,7 @@ timmy = Child(parent=jane)
 <li><code>WHERE name = 'John'</code></li>
 <li>Scan with prefix <code>Parent name John</code></li>
 <table>
-<tr><th>Kind</td><td>Name</td><td>Value</td></tr>
+<tr><th>Kind</th><th>Name</th><th>Value</th></tr>
 <tr><td class="red">Parent</td><td class="green">address</td><td class="blue">1 Palm Dr.</td></tr>
 <tr><td class="red">Parent</td><td class="green">name</td><td class="blue">Alice</td></tr>
 <tr><td class="red">Parent</td><td class="green">name</td><td class="blue">Bob</td></tr>
@@ -678,7 +693,7 @@ timmy = Child(parent=jane)
 <li><code>ORDER BY name DESC</code></li>
 <li>Scan <i>descending</i> index with prefix <code>Parent name</code>:</li>
 <table>
-<tr><th>Kind</td><td>Name</td><td>Value DESC</td></tr>
+<tr><th>Kind</th><th>Name</th><th>Value DESC</th></tr>
 <tr><td class="red">Parent</td><td class="green">address</td><td class="blue">1 Palm Dr.</td></tr>
 <tr class="scan"><td class="red">Parent</td><td class="green">name</td><td class="blue">John</td></tr>
 <tr class="scan"><td class="red">Parent</td><td class="green">name</td><td class="blue">Jane</td></tr>
@@ -698,7 +713,7 @@ timmy = Child(parent=jane)
 <li><code>WHERE name >= 'B' AND name < 'C'<br />ORDER BY name</code></li>
 <li>Scan range <code>[Parent name B, Parent name C)</code>:</li>
 <table>
-<tr><th>Kind</td><td>Name</td><td>Value</td></tr>
+<tr><th>Kind</th><th>Name</th><th>Value</th></tr>
 <tr><td class="red">Parent</td><td class="green">address</td><td class="blue">1 Palm Dr.</td></tr>
 <tr><td class="red">Parent</td><td class="green">name</td><td class="blue">Alice</td></tr>
 <tr class="scan"><td class="red">Parent</td><td class="green">name</td><td class="blue">Bob</td></tr>
@@ -772,7 +787,7 @@ WHERE ANCESTOR IS :ethel ORDER BY firstname
 </div>
 <li>Index data is kind, ancestor, property values</li>
 <table>
-<tr><th>Kind</td><td>lastname</td><td>firstname</td></tr>
+<tr><th>Kind</th><th>lastname</th><th>firstname</th></tr>
 <tr><td class="red">Parent</td><td class="green">Anderson</td><td class="blue">Jane</td></tr>
 <tr><td class="red">Parent</td><td class="green">Barrett</td><td class="blue">Ryan</td></tr>
 <tr><td class="red">Parent</td><td class="green">Smith</td><td class="blue">Bob</td></tr>
@@ -796,10 +811,10 @@ WHERE ANCESTOR IS :ethel ORDER BY firstname
 <div class="slide">
 <h1>Composite index</h1>
 <ul>
-<li><code>WHERE firstname = 'Ryan' AND lastname = 'Barrett'</code></li>
+<li><code>WHERE firstname = 'Ryan'<br />&nbsp;AND lastname = 'Barrett'</code></li>
 <li>Scan index with prefix <code>Parent Barrett Ryan</code>:</li>
 <table>
-<tr><th>Kind</td><td>lastname</td><td>firstname</td></tr>
+<tr><th>Kind</th><th>lastname</th><th>firstname</th></tr>
 <tr><td class="red">Parent</td><td class="green">Anderson</td><td class="blue">Jane</td></tr>
 <tr class="scan"><td class="red">Parent</td><td class="green">Barrett</td><td class="blue">Ryan</td></tr>
 <tr><td class="red">Parent</td><td class="green">Smith</td><td class="blue">Bob</td></tr>
@@ -815,10 +830,10 @@ WHERE ANCESTOR IS :ethel ORDER BY firstname
 <h1>Composite index</h1>
 <ul>
 <li><code>WHERE lastname = 'Smith'<br />
-AND firstname >= 'B' AND firstname < 'C'</code></li>
+&nbsp;AND firstname >= 'B' AND firstname < 'C'</code></li>
 <li>Scan range <code>[Parent Smith B, Parent Smith C)</code>:</li>
 <table>
-<tr><th>Kind</td><td>lastname</td><td>firstname</td></tr>
+<tr><th>Kind</th><th>lastname</th><th>firstname</th></tr>
 <tr><td class="red">Parent</td><td class="green">Anderson</td><td class="blue">Jane</td></tr>
 <tr><td class="red">Parent</td><td class="green">Barrett</td><td class="blue">Ryan</td></tr>
 <tr class="scan"><td class="red">Parent</td><td class="green">Smith</td><td class="blue">Bob</td></tr>
@@ -839,7 +854,7 @@ AND firstname >= 'B' AND firstname < 'C'</code></li>
   properties:
   - name: firstname</div>
 <table>
-<tr><th>Kind</td><td>Ancestor</td><td>firstname</td></tr>
+<tr><th>Kind</th><th>Ancestor</th><th>firstname</th></tr>
 <tr><td class="red">Parent</td><td class="green">/Grandparent:David</td><td class="blue">Jane</td></tr>
 <tr><td class="red">Parent</td><td class="green">/Grandparent:Ethel</td><td class="blue">Bob</td></tr>
 <tr><td class="red">Parent</td><td class="green">/Grandparent:Ethel</td><td class="blue">Chelsea</td></tr>
@@ -856,7 +871,7 @@ AND firstname >= 'B' AND firstname < 'C'</code></li>
 <li><code>WHERE ANCESTOR IS /Grandparent:Ethel<br />ORDER BY firstname</code></li>
 <li>Scan with prefix <code>Parent /Grandparent:Ethel</code>:</li>
 <table>
-<tr><th>Kind</td><td>Ancestor</td><td>firstname</td></tr>
+<tr><th>Kind</th><th>Ancestor</th><th>firstname</th></tr>
 <tr><td class="red">Parent</td><td class="green">/Grandparent:David</td><td class="blue">Jane</td></tr>
 <tr class="scan"><td class="red">Parent</td><td class="green">/Grandparent:Ethel</td><td class="blue">Bob</td></tr>
 <tr class="scan"><td class="red">Parent</td><td class="green">/Grandparent:Ethel</td><td class="blue">Chelsea</td></tr>
@@ -889,14 +904,105 @@ AND firstname >= 'B' AND firstname < 'C'</code></li>
 
 
 <div class="slide">
-<li>TODO: streamline or split up</li>
 <h1>Transaction model</h1>
 <ul>
 <li><b>All</b> writes are transactional</li>
-<li>Journals</li>
-<li>Entities versioned and timestamped</li>
+<li>Timestamped journals</li>
+<li>Entity version history</li>
 <li>Optimistic concurrency</li>
 </ul>
+</div>
+
+<!-- <div class="slide"> -->
+<!-- <h1>Transactions</h1> -->
+<!-- <ul> -->
+<!-- <li>Record "now" as starting timestamp</li> -->
+<!-- <li><code>get()</code> uses that timestamp</li> -->
+<!-- <li><code>put()</code> and <code>delete()</code> are serialized</li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Commit</h1> -->
+<!-- <ul> -->
+<!-- <li>Write each <code>put()</code> to journal in entity group row -->
+<!--   <ul><li>Point of no return!</li></ul> -->
+<!-- </li> -->
+<!-- <li>Apply each <code>put()</code></li> -->
+<!-- <li>Update indices</li> -->
+<!-- <li>Update entity group's <i>last committed</i> timestamp</li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<div class="slide">
+<h1>Example: Put</h1>
+<ol>
+<li><b>Read "last committed" timestamp</b></li>
+<li style="list-style-type: none">&nbsp;</li>
+<li style="list-style-type: none">&nbsp;</li>
+<li style="list-style-type: none">&nbsp;</li>
+</ol>
+<table>
+<tr><th /><th>Key</th><th>Entity</th><th>Journal</th><th><b>Committed</b></th></tr>
+<tr><td><b>&nbsp;&larr;</b></td><td class="red">A</td><td class="darkred">X (3:00)</td>
+    <td class="yellow">...<td class="yellow"><b>3:00</b></td></tr>
+</table>
+</div>
+
+
+<div class="slide">
+<h1>Example: Put</h1>
+<ol>
+<li>Read "last committed" timestamp</li>
+<li><b>Write journal</b></li>
+<li style="list-style-type: none">&nbsp;</li>
+<li style="list-style-type: none">&nbsp;</li>
+</ol>
+<table>
+<tr><th /><th>Key</th><th>Entity</th><th><b>Journal</b></th><th>Committed</th></tr>
+<tr><td><b>&nbsp;&rarr;</b></td><td class="red">A</td><td class="darkred">X (3:00)</td>
+    <td class="yellow"><b>3:45 A&larr;Y</b><td class="yellow">3:00</td></tr>
+</table>
+</div>
+
+
+<div class="slide">
+<h1>Example: Put</h1>
+<ol>
+<li>Read "last committed" timestamp</li>
+<li>Write journal</li>
+<li><b>Apply journal</b></li>
+<li style="list-style-type: none">&nbsp;</li>
+</ol>
+<table>
+<tr><th /><th>Key</th><th><b>Entity</b></th><th>Journal</th><th>Committed</th></tr>
+<tr><td><b>&nbsp;&rarr;</b></td><td class="red">A</td>
+    <td class="darkred"><b>Y (3:45)<br />X (3:00)</b></td>
+    <td class="yellow">3:45 A&larr;Y<td class="yellow">3:00</td></tr>
+</table>
+</div>
+
+
+<div class="slide">
+<h1>Example: Put</h1>
+<ol>
+<li>Read "last committed" timestamp</li>
+<li>Write journal</li>
+<li>Apply journal</li>
+<li><b>Update "last committed" timestamp</b></li>
+</ol>
+<table>
+<tr><th /><th>Key</th><th>Entity</th><th>Journal</th><th><b>Committed</b></th></tr>
+<tr><td><b>&larr;&rarr;</b></td><td class="red">A</td><td class="darkred">Y (3:45)<br />X (3:00)</td>
+    <td class="yellow">3:45 A&larr;Y
+    <td class="yellow"><b><strike>3:00</strike> 3:45</b></td></tr>
+<!-- <tr><td /><td /><td><br />...<br /><br /></td><td /><td /></tr> -->
+<!-- <tr><td><b>&rarr;</b></td><td class="red">A</td> -->
+<!--     <td class="darkred">Y (3:45)<br />X (3:00)</td> -->
+<!--     <td class="yellow">3:45 A&larr;Y<td class="yellow"><b>3:45</b></td></tr> -->
+</table>
 </div>
 
 
@@ -906,32 +1012,7 @@ AND firstname >= 'B' AND firstname < 'C'</code></li>
 <!-- <li>Transaction granularity</li> -->
 <li>Defined by root entities</li>
 <li>Consists of root and all descendants</li>
-<li>Separate row, co-located with root</li>
-<li><i>last committed</i> timestamp</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Transactions</h1>
-TODO: use single put as first example
-<ul>
-<li>Record "now" as starting timestamp</li>
-<li><code>get()</code> uses that timestamp</li>
-<li><code>put()</code> and <code>delete()</code> are serialized</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Commit</h1>
-<ul>
-<li>Write each <code>put()</code> to journal in entity group row
-  <ul><li>Point of no return!</li></ul>
-</li>
-<li>Apply each <code>put()</code></li>
-<li>Update indices</li>
-<li>Update entity group's <i>last committed</i> timestamp</li>
+<li>Journal, "last committed" timestamp co-located with root entity</li>
 </ul>
 </div>
 
