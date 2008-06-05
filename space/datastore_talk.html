@@ -34,7 +34,6 @@ div#footer { height: 3em; }
 div.title, div.title h1 {
   background-color: black;
   color: white;
-  z-index: 15;
 }
 /*  background: white url('/space/io_logo_black.png') no-repeat scroll 95% 0%;*/
 /* strike { color: red; } */
@@ -72,13 +71,13 @@ td.scan {
 div.pre {
   border: 1px solid black;
   background-color: #eeeeee;
-}
-
-/*.pre p, .pre ul, .pre ul li, .pre,*/
-div.pre {
   white-space: pre;
   color: #006000;
   padding: .5em;
+}
+
+.pre {
+  font-family: monospace;
 }
 
 .slide code {
@@ -106,6 +105,8 @@ blue, .blue     { background-color: #3a95ef; }
 .darkblue       { background-color: #0055af; }
 yellow, .yellow { background-color: #fff437; }
 .darkyellow     { background-color: #d7b400; }
+gray, .gray     { background-color: #dddddd; }
+.darkgray       { background-color: #aaaaaa; }
 
 /*.payload { background-color: #e60d2e; }
   .index1  { background-color: #ff4d6e; }*/
@@ -120,9 +121,10 @@ yellow, .yellow { background-color: #fff437; }
 <div id="header"></div>
 <div id="footer">
 <table style="width: 100%; margin-top: 0"><tr>
-<td style="align: left"><img src="/space/io_footer_black.png" /></td>
+<td style="align: left">
+<img src="/space/io_footer_black.png" /></td>
 <td style="align: right">
-  <img src="/space/appengine.gif" /><img src="/space/io_logo_black.png" /></td>
+  </td>
 </tr></table>
 </div>
 </div>
@@ -130,7 +132,7 @@ javascript:void(0);
 
 <div class="presentation">
 
-<div class="slide title" style="z-index: 15">
+<div class="slide title">
 <img src="/space/io_title_horizontal_black.png" />
 <h1 style="color: white">Under the covers of the<br />App Engine Datastore</h1>
 <h3>Ryan Barrett<br />Google I/O, May 28, 2008</h3>
@@ -147,6 +149,7 @@ javascript:void(0);
   <ul><li>Kind index</li>
   <li>Single-property index</li>
   <li>Composite index</li>
+  <li>Merge join</li>
   </ul>
 </li>
 <li>Entity groups and transactions</li>
@@ -269,6 +272,17 @@ javascript:void(0);
 
 <div class="slide">
 <h1>Bigtable</h1>
+<ul><li>Delete</li></ul>
+<table>
+<tr><td /><td class="red">a</td><td class="darkred">...</td></tr>
+<tr><td><b style="color: red">X</b></td><td class="gray">b</td><td class="gray">...</td></tr>
+<tr><td /><td class="red">c</td><td class="darkred">...</td></tr>
+</table
+</div>
+
+
+<div class="slide">
+<h1>Bigtable</h1>
 <ul><li>Single-row transaction</li></ul>
 <table>
 <tr><td /><td class="red">a</td><td class="darkred">...</td></tr>
@@ -340,6 +354,7 @@ javascript:void(0);
   <ul><li>Kind index</li>
   <li>Single-property index</li>
   <li>Composite index</li>
+  <li>Merge join</li>
   </ul>
 </li>
 <li>Entity groups and transactions</li>
@@ -429,6 +444,7 @@ timmy = Child(parent=jane)
   <ul><li>Kind index</li>
   <li>Single-property index</li>
   <li>Composite index</li>
+  <li>Merge join</li>
   </ul>
 </li>
 <li>Entity groups and transactions</li>
@@ -550,6 +566,7 @@ timmy = Child(parent=jane)
   <ul><li><b>Kind index</b></li>
   <li>Single-property index</li>
   <li>Composite index</li>
+  <li>Merge join</li>
   </ul>
 </li>
 <li>Entity groups and transactions</li>
@@ -612,6 +629,7 @@ timmy = Child(parent=jane)
   <ul><li>Kind index</li>
   <li><b>Single-property index</b></li>
   <li>Composite index</li>
+  <li>Merge join</li>
   </ul>
 </li>
 <li>Entity groups and transactions</li>
@@ -652,7 +670,7 @@ timmy = Child(parent=jane)
 
 <div class="slide">
 <h1>Single-property index</h1>
-<ul><li>...or descending</li></ul>
+<ul><li>...or descending</li>
 <table>
 <tr><th>Kind</th><th>Name</th><th>Value DESC</th></tr>
 <tr><td class="red">Parent</td><td class="green">address</td><td class="blue">1 Palm Dr.</td></tr>
@@ -664,6 +682,7 @@ timmy = Child(parent=jane)
 <tr><td class="red">Parent</td><td class="green">name</td><td class="blue">Alice</td></tr>
 <tr><td class="red">Parent</td><td class="green">title</td><td class="blue">Ninja Pirate</td></tr>
 </table>
+</ul>
 </div>
 
 
@@ -737,6 +756,7 @@ timmy = Child(parent=jane)
   <ul><li>Kind index</li>
   <li>Single-property index</li>
   <li><b>Composite index</b></li>
+  <li>Merge join</li>
   </ul>
 </li>
 <li>Entity groups and transactions</li>
@@ -804,6 +824,7 @@ WHERE ANCESTOR IS :ethel ORDER BY firstname
 <li>Add ancestor, if any
 <li>Add = filters, if any</li>
 <li>If any inequality filters, convert to range scan</li>
+<li>Add sort orders, if any</li>
 </ol>
 </div>
 
@@ -881,6 +902,74 @@ WHERE ANCESTOR IS :ethel ORDER BY firstname
 </ul>
 </div>
 
+<div class="slide">
+<h1>Contents</h1>
+<ul>
+<li><strike>Best practices</strike></li>
+<li>Bigtable in one slide</li>
+<li>The Entities table</li>
+<li>Queries and indexes
+  <ul><li>Kind index</li>
+  <li>Single-property index</li>
+  <li>Composite index</li>
+  <li><b>Merge join</b></li>
+  </ul>
+</li>
+<li>Entity groups and transactions</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Merge join</h1>
+<ul>
+<li>Serves multiple <code>=</code> filters <i>without</i> a composite index
+<li>Can include ancestor
+<li>e.g. <code>WHERE firstname = 'John' AND lastname = 'Smith'</code></li>
+<li>Scan single-property index once for each filter value
+<li>Intersect results</li>
+</ul>
+</div>
+
+<div class="slide">
+<h1>Merge join</h1>
+<ul>
+<li><code>WHERE firstname = 'John' AND lastname = 'Smith'</code></li>
+<li>Scan with prefix <code>Parent firstname John</code>:</li>
+<table>
+<tr><th>Kind</th><th>Name</th><th>Value</th></tr>
+<tr class="scan"><td class="red">Parent</td><td class="green">firstname</td><td class="blue">John</td></tr>
+<tr class="scan"><td class="red">Parent</td><td class="green">firstname</td><td class="blue">John</td></tr>
+<tr><td class="red">Parent</td><td class="green">firstname</td><td class="blue">Ryan</td></tr>
+</table>
+<li>...and with prefix <code>Parent lastname Smith</code>:</li>
+<table>
+<tr><td class="red">Parent</td><td class="green">lastname</td><td class="blue">Barrett</td></tr>
+<tr class="scan"><td class="red">Parent</td><td class="green">lastname</td><td class="blue">Smith</td></tr>
+<tr class="scan"><td class="red">Parent</td><td class="green">lastname</td><td class="blue">Smith</td></tr>
+</table>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Merge join</h1>
+<ul>
+<li>Intersect results incrementally, using key:</li>
+<table>
+<tr><th>Kind</th><th>Name</th><th>Value</th><th>Key</th></tr>
+<tr><td class="red">Parent</td><td class="green">firstname</td><td class="blue">John</td><td class="yellow">X</td></tr>
+<tr class="scan"><td class="red">Parent</td><td class="green">firstname</td><td class="blue">John</td><td class="yellow">Y</td></tr>
+</table>
+<table>
+<tr class="scan"><td class="red">Parent</td><td class="green">lastname</td><td class="blue">Smith</td><td class="yellow">Y</td></tr>
+<tr><td class="red">Parent</td><td class="green">lastname</td><td class="blue">Smith</td><td class="yellow">Z</td></tr>
+</table>
+</ul>
+</div>
+
+
+
 
 <!-- <div class="transition"> -->
 <!-- Entity groups and transactions -->
@@ -896,6 +985,7 @@ WHERE ANCESTOR IS :ethel ORDER BY firstname
   <ul><li>Kind index</li>
   <li>Single-property index</li>
   <li>Composite index</li>
+  <li>Merge join</li>
   </ul>
 </li>
 <li><b>Entity groups and transactions</b></li>
@@ -1018,99 +1108,89 @@ WHERE ANCESTOR IS :ethel ORDER BY firstname
 
 
 <div class="slide">
-<h1>Example: transferring money</h1>
-<ul><li>paying allowance :P</li>
-<br />
-<div class="pre">class FamilyMember(db.Model):
+<h1>Example: paying allowance</h1>
+<div class="pre">class Parent(db.Model):
   cash = db.IntegerProperty()
+
+class Child(db.Model):
+  cash = db.IntegerProperty()
+
+parent = Parent(cash=1000)
+child = Child(parent=parent, cash=0)
 </div>
 </ul>
 </div>
 
 
 <div class="slide">
-<h1>Example: transferring money</h1>
-<div class="pre">def transfer(from_key, to_key, amount):
-  from, to = db.get(from_key, to_key)
-  from.balance -= amount
-  to.balance += amount
-  db.put(from, to)
+<h1>Example: paying allowance</h1>
+<div class="pre">def pay(parent_key, child_key, amount):
+  parent, child = db.get(parent_key, child_key)
+  parent.cash -= amount
+  child.cash += amount
+  db.put(parent, child)
 
-db.run_in_transaction(transfer, a.key(), b.key(), 100)
+db.run_in_transaction(
+  pay, parent.key(), child.key(), 10)
 </div>
 </div>
 
 
 <div class="slide">
-<h1>Example: transferring money</h1>
-<div class="pre">def transfer(from_key, to_key, amount):
-  from, to = db.get(from_key, to_key)
-  from.balance -= amount
-  to.balance += amount
-  db.put(from, to)
+<h1>Example: paying allowance</h1>
+<div class="pre">def pay(parent_key, child_key, amount):
+  <b>parent, child = db.get(parent_key, child_key)</b>
+  parent.cash -= amount
+  child.cash += amount
+  db.put(parent, child)
 
-<b>db.run_in_transaction(</b>transfer, a.key(), b.key(), 100)
+db.run_in_transaction(
+  pay, <b>parent.key(), child.key()</b>, 10)
 </div>
 
 <ul>
-<li>Get <code>/Bank:1</code> entity group</li>
+<li>Read entity group for <code>parent</code></li>
 <li>Note committed timestamp, <i>3:00pm</i></li>
+<li>Read <code>parent</code> and <code>child</code> entities as of 3:00pm</li>
 </ul>
 </div>
 
 
 <div class="slide">
-<h1>Example: transferring money</h1>
-<div class="pre">def transfer(from_key, to_key, amount):
-  <b>from, to = db.get(from_key, to_key)</b>
-  from.balance -= amount
-  to.balance += amount
-  db.put(from, to)
+<h1>Example: paying allowance</h1>
+<div class="pre">def pay(parent_key, child_key, amount):
+  parent, child = db.get(parent_key, child_key)
+  parent.cash -= amount
+  child.cash += amount
+  <b>db.put(parent, child)</b>
 
-db.run_in_transaction(transfer, <b>a.key(), b.key()</b>, 100)
+db.run_in_transaction(
+  pay, <b>parent.key(), child.key()</b>, 10)
 </div>
 
 <ul>
-<li>Read <code>Account:A</code> and <code>Account:B</code> as of 3:00pm</li>
+<li>Serialize <code>parent</code> and <code>child</code></li>
+<li>Write to journal in <code>parent</code>'s entity group row</li>
 </ul>
 </div>
 
 
 <div class="slide">
-<h1>Example: transferring money</h1>
-<div class="pre">def transfer(from_key, to_key, amount):
-  from, to = db.get(from_key, to_key)
-  from.balance -= amount
-  to.balance += amount
-  <b>db.put(from, to)</b>
+<h1>Example: paying allowance</h1>
+<div class="pre">def pay(parent_key, child_key, amount):
+  parent, child = db.get(parent_key, child_key)
+  parent.cash -= amount
+  child.cash += amount
+  db.put(parent, child)
 
-db.run_in_transaction(transfer, <b>a.key(), b.key()</b>, 100)
+<b>db.run_in_transaction(
+  </b>pay, parent.key(), child.key(), 10<b>)</b>
 </div>
 
 <ul>
-<li>Serialize <code>put()</code> call</li>
-<li>Attach to transaction</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Example: transferring money</h1>
-<div class="pre">def transfer(from_key, to_key, amount):
-  from, to = db.get(from_key, to_key)
-  from.balance -= amount
-  to.balance += amount
-  db.put(from, to)
-
-<b>db.run_in_transaction(</b>transfer, a.key(), b.key(), 100<b>)</b>
-</div>
-
-<ul>
-<li>Write journal with serialized <code>put()</code> call to
-    <code>/Bank:1</code> entity group</li>
-<li>Write new <code>Account:A</code> and <code>Account:B</code> entities</li>
-<li>Update <code>a.balance</code> and <code>b.balance</code> index rows</li>
+<li>Apply journalled changes to <code>parent</code> and <code>child</code></li>
 <li>Write new committed timestamp to entity group</li>
+<li>Update <code>parent.cash</code> and <code>child.cash</code> index rows</li>
 </ul>
 </div>
 
@@ -1125,14 +1205,14 @@ db.run_in_transaction(transfer, <b>a.key(), b.key()</b>, 100)
 </div>
 
 
-<div class="slide">
-<h1>Conclusions</h1>
-<ul>
-<li><b>small</b> entity groups: one user's data or less</li>
-<li>use Text/Blob for properties you don't need to query on</li>
-<li>don't do work in memory; use queries!</li>
-</ul>
-</div>
+<!-- <div class="slide"> -->
+<!-- <h1>Conclusions</h1> -->
+<!-- <ul> -->
+<!-- <li><b>small</b> entity groups: one user's data or less</li> -->
+<!-- <li>use Text/Blob for properties you don't need to query on</li> -->
+<!-- <li>don't do work in memory; use queries!</li> -->
+<!-- </ul> -->
+<!-- </div> -->
 
 
 <div class="slide">
@@ -1145,6 +1225,7 @@ db.run_in_transaction(transfer, <b>a.key(), b.key()</b>, 100)
   <ul><li>Kind index</li>
   <li>Single-property index</li>
   <li>Composite index</li>
+  <li>Merge join</li>
   </ul>
 </li>
 <li>Entity groups and transactions</li>
@@ -1153,10 +1234,11 @@ db.run_in_transaction(transfer, <b>a.key(), b.key()</b>, 100)
 
 
 <div class="slide">
-<h1>Questions?</h1>
-<img src="/space/google_io_logo.jpg" />
-<h2><a href="http://code.google.com/appengine/" style="text-decoration: underline">
-    code.google.com/appengine</a></h2>
+<h1>Questions?<br /><br />
+<a href="http://code.google.com/appengine/" style="text-decoration: underline">
+    code.google.com/appengine</a><br /><br />
+<img src="/space/io_logo_black.png" /><img src="/space/appengine.gif" />
+</h1>
 </div>
 
 
