@@ -2,8 +2,8 @@ books
 
 <style type="text/css">
 good, ok, bad, f, nf { font-style: italic; }
-f  { color: firebrick; }
-nf { color: darkgoldenrod; }
+//f  { color: firebrick; }
+//nf { color: darkgoldenrod; }
 img { vertical-align: text-top; }
 </style>
 
