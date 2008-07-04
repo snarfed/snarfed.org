@@ -8,8 +8,9 @@ is [GPL](http://www.gnu.org/licenses/gpl.html)ed.
 <a name="projects"></a>
 ### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](/space/software#projects)
 
-  * [shell](http://shell.appspot.com/) and
-[openid-provider](http://openid-provider.appspot.com/), two
+  * [shell](http://shell.appspot.com/),
+[openid-provider](http://openid-provider.appspot.com/), and
+[openid-consumer](http://openid-consumer.appspot.com/), three
 [Google App Engine](http://code.google.com/appengine/)
 [sample apps](http://code.google.com/p/google-app-engine-samples/). See
 [my announcement](/space/2008-04-07_google_app_engine_launched) for details.
@@ -129,13 +130,13 @@ on 2/17/2008).
 adds links to each item's web site and feed.
 
   * A [patch](/space/comments_openid.patch) that updates the
-[PyBlosxom OpenId comments plugin](http://www.openidenabled.com/software/pyblosxom/release-announcement)
+[PyBlosxom OpenID comments plugin](http://www.openidenabled.com/software/pyblosxom/release-announcement)
 to work with versions 1.x of the
-[Python OpenId libraries](http://www.openidenabled.com/openid/libraries/python).
+[Python OpenID libraries](http://www.openidenabled.com/openid/libraries/python).
 ([Applied](/space/pyblosxom+openid+comments) on 9/6/2007.)
 
   * A [minor bugfix for cryptutil.py](/space/cryptutil_ioerror.patch) in the
-[Python OpenId libraries](http://www.openidenabled.com/openid/libraries/python).
+[Python OpenID libraries](http://www.openidenabled.com/openid/libraries/python).
 The patch is against version 2.0.0-rc3b.
 
   * A [tkdiff patch that quotes filenames](/space/tkdiff_quote_filenames_svn.patch)
