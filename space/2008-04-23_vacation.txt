@@ -1,7 +1,7 @@
 Vacation
 
 <div style="float: right; margin-left: 10px">
-  <img src="/space/house.jpg" alt="house" />
+  <a href="/space/eden_canyon_house.jpg"><img src="/space/house.jpg" alt="house" /></a>
 </div>
 
 The last couple months have been eventful, to say the least, so I'm happy to say
