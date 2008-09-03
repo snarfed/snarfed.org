@@ -12,8 +12,16 @@ it.
   * Port [Tic Tac Toe](/space/tictactoe) to the XBox 360, using XNA Studio
 Express, and distribute it on XBox Live Community Games.
 
-  * Build network bridges between the DS and PSP and other companies'
-consoles, ie DS to 360 and PS3 and PSP to 360 and Wii.
+  * Build network bridges between the DS and PSP, and to the consoles
+consoles, ie DS to 360 and PS3 and PSP to 360 and Wii, to allow cross-platform
+multiplayer games.
+[Proprietary](http://www.unrealtechnology.com/technology.php)
+[commercial](http://www.poweredbygamespy.com/services/view/category/connect/)
+[libraries](http://www.quazal.com/modules.php?op=modload&name=Sections&file=index&req=viewarticle&artid=3&page=1)
+for this exist, but handheld support is limited.
+[GameSpy](http://www.poweredbygamespy.com/)'s
+[Game Open](http://open.poweredbygamespy.com/)
+looks promising, though.
 
   * Write a [PAM](http://www.kernel.org/pub/linux/libs/pam/) module that acts
 as an [OpenID](http://openid.net/) consumer and authenticates againsts remote
