@@ -1,0 +1,557 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Windows Azure: Overview and Impressions</title>
+<!-- metadata -->
+<meta name="generator" content="S5" />
+<meta name="version" content="S5 1.1" />
+<meta name="presdate" content="20080528" />
+<meta name="author" content="Ryan Barrett" />
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<link rel="stylesheet" href="ui/default/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/default/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/default/opera.css" type="text/css" media="projection" id="operaFix" />
+<!-- S5 JS -->
+<script src="ui/default/slides.js" type="text/javascript"></script>
+
+<style type="text/css">
+body, div#header, div#footer { background-image: none; color: black; background-color: white; }
+div#footer { margin-left: 1em; height: 2em; }
+.slide h1 { text-transform: none; }
+.slide ul { margin-left: 1em; margin-right: 1em; margin-top: .2em; }
+.slide p { margin-left: .5em; }
+.transition { display: none; }
+
+.slide h1, #controls, #navLink { background-color: white; color: black; }
+
+div.pre {
+  border: 1px solid black;
+  background-color: #eeeeee;
+  white-space: pre;
+  color: #006000;
+  padding: .5em;
+}
+
+.pre {
+  font-family: monospace;
+}
+
+.slide code {
+  padding: 0;
+  color: #006000;
+}
+
+.slide a, #footer a {
+  text-decoration: underline;
+}
+
+<!-- td { padding-right: 1em; } -->
+td.fixed-width { width: 10em; }
+</style>
+</head>
+<body>
+
+<div class="layout">
+<div id="controls"><!-- DO NOT EDIT --></div>
+<div id="currentSlide"><!-- DO NOT EDIT --></div>
+<div id="header"></div>
+<div id="footer">
+<p>Ryan Barrett, <a href="http://snarfed.org/">snarfed.org</a>
+</div>
+</div>
+javascript:void(0);
+
+<div class="presentation">
+
+<div class="slide title">
+<h1><img src="azure_logo_small.jpg" /><br />Overview and Impressions</h1>
+<!-- <h3>Ryan Barrett</h3> -->
+</div>
+
+
+<div class="slide">
+<h1>What's ahead</h1>
+<ul>
+<!-- <li>What is PDC?</li> -->
+<li>What is Windows Azure?</li>
+  <ul><li>Fabric</li>
+  <li>Storage</li>
+  <li>Developer experience</li>
+  <li>Roadmap</li></ul>
+<li>My impressions</li>
+<li>Takeaways for everyone else</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Disclaimers</h1>
+<ul>
+<li>I work on <a href="http://appengine.google.com/">Google App Engine</a></li>
+<li><strike>Religion</strike></li>
+  <!-- going to be saying objective things, positive, learn from ms -->
+<li><strike>Strategy</strike>, or IANAPM</li>
+<li>Should already know the cloud computing landscape</li>
+  <!-- will be comparing to other existing products and technologies -->
+</ul>
+</div>
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>What is PDC?</h1> -->
+<!-- <ul> -->
+<!-- <li>Professional Developers Conference</li> -->
+<!-- <li>MS's premier developer event, held irregularly</li> -->
+<!-- <li>"focused on the future of the Platform and technical strategy"</li> -->
+<!-- <li>LA Convention Center, Oct. 26-29</li> -->
+<!-- <li>6000 attendees (?)</li> -->
+<!-- <li><a href="http://microsoftpdc.com/">microsoftpdc.com</a></li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+<div class="slide">
+<h1>What is Windows Azure?</h1>
+<ul>
+<li>Cloud computing platform</li>
+  <ul><li>"Operating system for the cloud"</li></ul>
+  <!-- what windows is for your desktop - running processes, managing
+       resources, providing UI - azure is for the datacenter -->
+<li>Fabric hosts your cloud services</li>
+<li>Storage: tables, queues, blobs</li>
+<li>SDK</li>
+  <!-- cmd-line based, multiprocess, integrated w/VS, package/deploy -->
+<li>Developer portal</li>
+<li>...and friends</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Fabric</h1>
+<ul>
+<li>~= <a href="http://rightscale.com/">RightScale</a>, but better</li>
+<li>Define your cloud service in XML</li>
+<li>Fabric manages service lifecycle:</li>
+  <ul>
+  <li>Resource allocation</li>
+  <li>Provisioning</li>
+  <li>Deployment</li>
+  <li>Monitoring</li>
+  <li>Maintenance</li>
+  </ul>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Fabric: Services</h1>
+<ul>
+<li>Service definitions include:</li>
+<table>
+  <tr><td>roles</td><td><nobr>== processes (e.g. web frontends)</nobr></td></tr>
+  <tr><td>channels</td><td><nobr>== network connections between roles</nobr></td></tr>
+  <tr><td>interfaces</td><td><nobr>== external network endpoints</nobr></td></tr>
+  <tr><td><nobr>load balancers</nobr></td></td></tr>
+</table>
+<li>Instances</li>
+<li>Update domains, fault domains</li>
+<li>APIs</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Example service definition</h1>
+<pre><code>
+&lt;ServiceDefinition name="MyService" xmlns="..."&gt;
+  &lt;WebRole name="WebRole"&gt;
+    &lt;ConfigurationSettings&gt;
+      &lt;Setting name="GreetingString" /&gt;
+    &lt;/ConfigurationSettings&gt;
+    &lt;InputEndpoints&gt;
+      &lt;InputEndpoint name="HttpIn"
+                     protocol="http"
+                     port="80" /&gt;
+    &lt;/InputEndpoints&gt;
+  &lt;/WebRole&gt;
+&lt;/ServiceDefinition&gt;
+</code></pre>
+</div>
+
+<div class="slide">
+<h1>Example service configuration</h1>
+<pre><code>
+&lt;ServiceConfiguration name="MyService" xmlns="..."&gt;
+  &lt;Role name="WebRole"&gt;
+    &lt;Instances min="3" max="10" /&gt;
+    &lt;UpdateDomains count="3" /&gt;
+    &lt;FaultDomains count="3" /&gt;
+    &lt;ConfigurationSettings&gt;
+      &lt;Setting name="GreetingString"
+               value="Hello world!" /&gt;
+    &lt;/ConfigurationSettings&gt;
+  &lt;/Role&gt;
+&lt;/ServiceConfiguration&gt;
+</code></pre>
+
+<p>(Warning: includes minor speculation, since full service definition and
+configuration isn't available in CTP.)
+</div>
+
+
+<div class="slide">
+<h1>Fabric: Implementation</h1>
+<ul>
+<li>Fabric Controller manages cluster</li>
+<li>Roles run in VMs</li>
+  <ul><li>Hypervisor, one host, multiple guests</li>
+  <li>Agents inside VMs report state, health to FC</li></ul>
+<li>Deployment based on virtual hard disk images</li>
+<li>FC itself runs on mini Azure cluster (!)</li>
+  <ul><li>5-7 machines,
+      <a href="http://labs.google.com/papers/paxos_made_live.html">Paxos</a>-based
+      master election</li></ul>
+</ul>
+</div>
+
+<div class="slide">
+<h1>Fabric: Virtualization</h1>
+<img src="azure_vm_architecture.jpg" />
+<p>From the PDC talk <a href="http://channel9.msdn.com/pdc2008/ES19/">Under
+    the Hood: Inside the Cloud Computing Hosting Environment</a></p>
+</div>
+
+
+<div class="slide">
+<h1>What's ahead</h1>
+<ul>
+<li>What is Windows Azure?</li>
+  <ul><li>Fabric</li>
+  <li><b>Storage</b></li>
+  <li>Developer experience</li>
+  <li>Roadmap</li></ul>
+<li>My impressions</li>
+<li>Takeaways for everyone else</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Storage</h1>
+<ul>
+<table>
+  <tr><td>Tables</td><td>==
+      <a href="http://code.google.com/appengine/docs/datastore/">App Engine
+      datastore</a><br />
+      ~= <a href="http://aws.amazon.com/simpledb/">Amazon SimpleDB</a></td></tr>
+  <tr><td>Queues</td><td>==
+      <a href="http://aws.amazon.com/sqs/">Amazon SQS</a></td></tr>
+  <tr><td>Blobs</td><td>~=
+      <a href="http://aws.amazon.com/s3/">Amazon S3</a></td></tr>
+  <tr><td>Locks</td><td>==
+      <a href="http://labs.google.com/papers/chubby.html">Chubby</a></td></tr>
+  <tr><td>Caches</td><td>==
+      <a href="www.danga.com/memcached/">memcached</a></td></tr>
+</table>
+</ul>
+</div>
+
+<div class="slide">
+<h1>Storage</h1>
+<ul>
+<li>All scalable</li>
+<li>Programmatic and REST APIs</li>
+<li>Run on fabric!</li>
+<li><a href="#">*.{table,queue,blob}.core.windows.net</a></li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Tables</h1>
+<ul>
+<li>== <a href="http://code.google.com/appengine/docs/datastore/">App Engine datastore</a>,
+    ~= <a href="http://aws.amazon.com/simpledb/">Amazon SimpleDB</a></li>
+<li>Schemaless, structured storage</li>
+<li>Strongly consistent</li>
+<li>Single-entity txes via per-entity optimistic concurrency</li>
+<li>Manual partitioning</li>
+  <ul><li>Partitions ~= 
+      <a href="http://labs.google.com/papers/bigtable.html">Bigtable</a> tablets,
+      ie scaling granularity</li>
+    <li>Possibly also locking at partition level; not exposed</i></li></ul>
+<li>Secondary indices still in progress (!)</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Queues</h1>
+<ul>
+<li>== <a href="http://aws.amazon.com/sqs/">Amazon SQS</a></li>
+<li>Asynchronous processing</li>
+<li>Create, delete queues</li>
+<li>Enqueue, dequeue, delete messages</li>
+<li>Lease-based</li>
+<li><i>Roughly</i> FIFO</li>
+  <ul><li>ie no help with preventing starvation</li></ul>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Blobs</h1>
+<ul>
+<li>~= <a href="http://aws.amazon.com/s3/">Amazon S3</a></li>
+<li>Create and retrieve programmatically</li>
+<li>Simple, up to 64MB</li>
+<li>Block-based, up to 50GB</li>
+<li>Blobs are mutable!</li>
+<li>URL-based, hierarchical namespace</li>
+  <ul><li>enumerable</li></ul>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>What's ahead</h1>
+<ul>
+<li>What is Windows Azure?</li>
+  <ul><li>Fabric</li>
+  <li>Storage</li>
+  <li><b>Developer experience</b></li>
+  <li><b>Roadmap</b></li></ul>
+<li>My impressions</li>
+<li>Takeaways for everyone else</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Developer Experience</h1>
+<ul>
+<li>Local SDK ==
+  <a href="http://code.google.com/appengine/docs/python/thedevwebserver.html">App Engine SDK</a>,
+    others</li>
+  <ul><li>"cloud on your desktop"</li>
+  <li>command-line tools</li>
+  <li>Visual Studio integration</li></ul>
+<li>Developer Portal ==
+  <a href="http://appengine.google.com/">App Engine Admin Console</a></li>
+  <ul><li>view, manage, monitor deployed service</li></ul>
+<li><a href="#">*.cloudapp.net</a> == <a href="#">*.appspot.com</a></li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>...and friends</h1>
+<table>
+<tr><td>.NET Services</td></tr>
+  <tr><td class="fixed-width">&nbsp;&nbsp; Access control</td>
+    <td><nobr>~= <a href="http://oauth.net/">OAuth</a></nobr></td></tr>
+  <tr><td class="fixed-width">&nbsp;&nbsp; Service bus</td>
+    <td>== cross-VPN relay/traversal</td></tr>
+  <tr><td class="fixed-width">&nbsp;&nbsp; Workflow</td></tr>
+<tr><td>Live Services</td></tr>
+  <tr><td class="fixed-width">&nbsp;&nbsp; Live ID</td>
+      <td>~= centralized <a href="http://openid.net/">OpenID</a></td></tr>
+  <tr><td class="fixed-width">&nbsp;&nbsp; Mesh</td><td>== consumer data sync</td><tr>
+  <tr><td class="fixed-width">&nbsp;&nbsp; ...</td></tr>
+<tr><td class="fixed-width">Federated identity</td>
+    <td>~= <a href="http://openid.net/">OpenID</a>,
+      <a href="http://www.projectliberty.org/">Liberty Alliance</a></td></tr>
+<tr><td class="fixed-width">SQL Services</td>
+      <td>== <a href="/space/scaling_data_on_the_cheap.html">sharded</a>
+        <a href="http://www.microsoft.com/sql/">SQL Server</a></td></tr>
+<tr><td class="fixed-width">Dynamics CRM</td>
+      <td>== <a href="http://force.com/">SalesForce</a></td></tr>
+<tr><td>...</td></tr>
+</table>
+</div>
+
+
+<div class="slide">
+<h1>...and friends</h1>
+<img src="azure_marketecture.jpg" />
+<p>From <a href="http://azure.com/">azure.com</a></p>
+</div>
+
+
+<div class="slide">
+<h1>Roadmap</h1>
+<ul>
+<li>Now: Invite-only CTP (beta)</li>
+  <!-- community technology preview -->
+<li>Calendar 2009: commercial release
+  <ul><li>billing</li>
+  <li>full service model</li>
+  <li>monitoring, alerts</li>
+  <li>native code, raw VMs</li>
+  <li>monitoring</li>
+  <li>TLDs</li>
+  <li>secondary indices for tables</li>
+  <li>locks, caches, ...</li>
+  </ul>
+</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>What's ahead</h1>
+<ul>
+<li>What is Windows Azure?</li>
+  <ul><li>Fabric</li>
+  <li>Storage</li>
+  <li>Developer experience</li>
+  <li>Roadmap</li></ul>
+<li><b>My impressions</b></li>
+<li>Takeaways for everyone else</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>My impressions</h1>
+<ul>
+<li><b>Big bet for MS</b></li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>My impressions</h1>
+<ul>
+<li>Big bet for MS</li>
+<li><b>Similar to existing offerings (except for fabric!)</b></li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>My impressions</h1>
+<ul>
+<li>Big bet for MS</li>
+<li>Similar to existing offerings (except for fabric!)</li>
+<li><b>Aimed at enterprise</b></li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>My impressions</h1>
+<ul>
+<li>Big bet for MS</li>
+<li>Similar to existing offerings (except for fabric!)</li>
+<li>Aimed at enterprise</li>
+<li><b>"Use your existing skills and tools"</b></li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>My impressions</h1>
+<ul>
+<li>Big bet for MS</li>
+<li>Similar to existing offerings (except for fabric!)</li>
+<li>Aimed at enterprise</li>
+<li>"Use your existing tools and skill set"</li>
+<li><b>Lots of information about internals</b></li>
+</ul>
+</div>
+
+<div class="slide">
+<h1>My impressions</h1>
+<ul>
+<li>Big bet for MS</li>
+<li>Similar to existing offerings (except for fabric!)</li>
+<li>Aimed at enterprise</li>
+<li>"Use your existing tools and skill set"</li>
+<li>Lots of information about internals</li>
+<li><b>Standard cloud computing questions</b></li>
+  <ul><li>Code and data portability, regulatory compliance, SLAs...</li></ul>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>What's ahead</h1>
+<ul>
+<li>What is Windows Azure?</li>
+  <ul><li>Fabric</li>
+  <li>Storage</li>
+  <li>Developer experience</li>
+  <li>Roadmap</li></ul>
+<li>My impressions</li>
+<li><b>Takeaways for everyone else</b></li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Takeaways for everyone else</h1>
+<ul>
+<li><b>Keep executing!</b></li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Takeaways for everyone else</h1>
+<ul>
+<li>Keep executing!</li>
+<li><b>Give more information</b></li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Takeaways for everyone else</h1>
+<ul>
+<li>Keep executing!</li>
+<li>Give more information</li>
+<li><b>Pitch to enterprise better</b></li>
+  <!-- the key point here is that enterprise stuff trickles down to adoption
+  by startups, hobbyists, etc. if it's good and inexpensive. however,
+  enterprises won't give something a second glance if it's perceived as only
+  for hobbyists and startups, even if it's really good. -->
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Takeaways for everyone else</h1>
+<ul>
+<li>Keep executing!</li>
+<li>Give more information</li>
+<li>Pitch to enterprise better</li>
+<li><b>Make SDK and production behave the same</b></li>
+  <!-- azure trusted testers said this was by far their biggest pain point -->
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>More</h1>
+<ul>
+<li>My writeup: <a href="http://snarfed.org/space/2008-11-10_windows_azure">
+                   snarfed.org/azure</a></li>
+<li>PDC talk videos:
+  <a href="http://channel9.msdn.com/pdc2008/">channel9.msdn.com/pdc2008</a></li>
+<li>Try it: <a href="http://azure.com/">azure.com</a></li>
+</ul>
+</div>
+
+
+</div>
+
+</body>
+</html>
