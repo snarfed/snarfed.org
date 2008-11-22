@@ -624,9 +624,9 @@ of course.
 
 To publish a service to the cloud, first build each role binary with Visual
 Studio, or any compatible compiler. Then, use
-`[CSPack.exe](http://msdn.microsoft.com/en-us/library/dd179470.aspx)` to package
+[`CSPack.exe`](http://msdn.microsoft.com/en-us/library/dd179470.aspx) to package
 a service image that includes the role binaries. Finally, use
-`[CSRun.exe](http://msdn.microsoft.com/en-us/library/dd179412.aspx)` to
+[`CSRun.exe`](http://msdn.microsoft.com/en-us/library/dd179412.aspx) to
 upload the image and publish the service to a staging instances, where the service is
 available for testing before it serves live traffic. Finally, to start serving
 live traffic flip the switch to swap the staging and prod instances, via
