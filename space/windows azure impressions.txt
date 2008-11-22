@@ -11,9 +11,8 @@ Here are the themes that stuck with me. Some are straightforward quotes from
 MS's messaging that were particularly compelling, and some are implications
 that follow from reading between the lines.
 
-Also see my [presentation](/space/azure_talk.html),
-[technical writeup](/space/windows+azure+details), and
-[glossary](/space/windows+azure+glossary).
+Also see my [technical writeup](/space/windows+azure+details) and
+[presentation slides](/space/azure_talk.html).
 
 
 **Contents:**
@@ -229,10 +228,9 @@ It'd be a good theme for our next fixit.
 
 
 **See also:**
+  * [Windows Azure details](/space/windows+azure+details)
+  * [Windows Azure: Overview and Impressions](/space/azure_talk.html) (slides)
   * [Facebook Data Store API Thoughts](/space/facebook+data+store+api+thoughts)
   * [Amazon SimpleDB thoughts](/space/amazon+simpledb+thoughts)
   * [Google App Engine launched](/space/2008-04-07_google_app_engine_launched)
   * [Under the Covers of the App Engine datastore](/space/datastore_talk.html) (slides)
-  * [Windows Azure details](/space/windows+azure+details)
-  * [Windows Azure glossary](/space/windows+azure+glossary)
-  * [Windows Azure: Overview and Impressions](/space/azure_talk.html) (slides)
