@@ -1,0 +1,694 @@
+Windows Azure details
+
+![windows azure logo](/space/azure_logo_small.jpg)
+
+I [recently attended PDC 2008](/space/2008-10-27_in_la_for_pdc), where
+Microsoft announced [Windows Azure](http://azure.com/). I spent the week
+absorbing Microsoft's messaging, diving deep into the technical details, and
+thinking about the broader implications for cloud computing as a whole.
+Here are some of the technical details.
+
+Also see my [overall impressions](/space/windows+azure+impressions),
+[presentation](/space/azure_talk.html),
+and [glossary](/space/windows+azure+glossary).
+
+
+**Contents:**
+
+* [Fabric](/space/windows+azure+description#Fabric)
+   * [Services](/space/windows+azure+description#Services)
+      * [Components](/space/windows+azure+description#Components)
+      * [Provisioning](/space/windows+azure+description#Provisioning)
+      * [Configuration and APIs](/space/windows+azure+description#Configuration and APIs)
+      * [Geodistribution and Georeplication](/space/windows+azure+description#Geodistribution and Georeplication)
+   * [Implementation](/space/windows+azure+description#Implementation)
+      * [Fabric Controller](/space/windows+azure+description#Fabric Controller)
+         * [State machine](/space/windows+azure+description#State machine)
+         * [Service life cycle](/space/windows+azure+description#Service life cycle)
+         * [Networking](/space/windows+azure+description#Networking)
+      * [Implementation details](/space/windows+azure+description#Implementation details)
+      * [Virtualization](/space/windows+azure+description#Virtualization)
+      * [Image-based deployment](/space/windows+azure+description#Image-based deployment)
+* [Monitoring and alerting](/space/windows+azure+description#Monitoring and alerting)
+* [Storage](/space/windows+azure+description#Storage)
+   * [Tables](/space/windows+azure+description#Tables)
+      * [Features](/space/windows+azure+description#Tables_Features)
+         * [Entity Model](/space/windows+azure+description#Entity Model)
+      * [Queries](/space/windows+azure+description#Queries)
+         * [Consistency and Transactions](/space/windows+azure+description#Consistency and Transactions)
+      * [Implementation](/space/windows+azure+description#Implementation)
+   * [Queues](/space/windows+azure+description#Queues)
+      * [Features](/space/windows+azure+description#Queues_Features)
+      * [Implementation](/space/windows+azure+description#Implementation)
+   * [Blobs](/space/windows+azure+description#Blobs)
+* [Developer Experience](/space/windows+azure+description#Developer Experience)
+* [SQL Services](/space/windows+azure+description#SQL Services)
+
+
+<br />
+<a name="Fabric"></a>
+## Fabric [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Fabric)
+
+The Azure fabric is an umbrella term for the logical cluster of machines that
+Azure services run on, along with the processes that manage the cluster, provision
+and deploy services, monitor system status, and recover from failures.
+
+The fabric consists of nodes, which may be physical machines, VMs, or
+(eventually) partial VMs.
+
+
+<a name="Services"></a>
+### Services [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Services)
+
+An Azure service is defined by a service definition, aka a model, similar to a
+[RightScale deployment](http://wiki.rightscale.com/1._Tutorials/2._Deployment_Setup).
+It's an XML definition of the different components of the app, the resources
+they need, and how they interact with each other and the outside world.
+
+In the CTP, only a few canned service definition templates may be used. In the
+commercial release, the full XML definition language will be available and
+arbitrary service definitions will be supported.
+
+
+<a name="Components"></a>
+#### Components [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Components)
+
+A role is an individual runnable component of an app. A role typically
+specifies a binary or piece of code to run as an OS process. A role may be
+instantiated many times. Example roles include web frontent, backend, garbage
+collector, daemon, transaction processor, and worker.
+
+Roles run on fabric nodes. In the CTP, each role runs in its own Hyper-V-based
+VM, and may only run managed code. In the commercial release, roles may
+include native code and even run on bare hardware. In the other direction,
+they may also run in a VM shared between many roles or may run
+
+Load balancers may be included in service definitions. They're connected to
+roles or other load balancers via channels. Based on a conversation in person,
+their policies will be fairly flexible, so you can use them to do experiments
+on live traffic.
+
+A few kinds of networking components are available to service definitions. A
+channel is a connection between two roles. An endpoint is a generic network
+endpoint, either internal or external, for serving requests. An interface is
+an externally accessible endpoint. Supported protocols include HTTP(S), SMTP,
+ATOM, and SOAP. Notably, while HTTPS is supported, you can't automatically
+require it, ie there's no equivalent of App Engine's secure: always in
+app.yaml.
+
+
+<a name="Provisioning"></a>
+#### Provisioning [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Provisioning)
+
+A role's (or other component's) definition include the resources it needs,
+including CPU, memory, disk, and network bandwith (I think). Notably, when the
+role is deployed, it's limited to these resources. The role definition may
+also include specific OS features that it needs.
+
+The role definition also includes the number of instances that the fabric
+should deploy, either a specific number or a lower and upper bound. Finally,
+constraints may be specified, including how many role instances may run in the
+same node, whether instances of different roles should be co-located, and how
+to allocate instances across update domains and fault domains.
+
+Update domains and fault domains are optional but useful features. Update
+domains are used to partition the service during upgrades. A role may specify
+the number of update domains its instances should be deployed in.
+
+During rolling OS upgrades and service updates, only one update domain will be
+upgraded at a time. While an update domain is being upgraded, the fabric won't
+route live traffic to any roles or load balancers inside it. After an update
+domain has been fully upgraded and all services in it report that they're
+health, the fabric returns them to service and starts on the next update domain.
+
+Fault domains are similar to update domains. They're basically disjoint
+failure zones within a single datacenter. They're determined according to the
+datacenter topology, based on things like rack and switch configurations,
+which make certain classes of failures likely to affect well-defined groups of
+nodes. As with update domains, a role may specify the number of fault
+domains its instances should be deployed in.
+
+
+<a name="Example definition"></a>
+
+Here's an example service definition:
+
+    <ServiceDefinition name="MyService" xmlns="...">
+      <WebRole name="WebRole">
+        <ConfigurationSettings>
+          <Setting name="GreetingString" />
+        </ConfigurationSettings>
+        <InputEndpoints>
+          <InputEndpoint name="HttpIn"
+                         protocol="http"
+                         port="80" />
+        </InputEndpoints>
+      </WebRole>
+    </ServiceDefinition>
+
+
+<a name="Hosting"></a>
+#### Hosting [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Hosting)
+
+Role code and binaries run on VMs with a limited choice of Windows OS (which
+versions?). It has a standard MS stack available: IIS7 (with XML config), .NET
+CLR, ASP.NET, .NET services, Live services, SSL. Some .NET CLR managed code
+languages are available, and more are coming, along with native code. Role
+code is subject to a custom Azure CAS (code access security) policy for
+managed code.
+
+There are APIs for interacting with the fabric, including introspecting the
+service definition and the current node, accessing configuration settings, and
+reporting health and other status info. Role instances may also use the local
+disk on their nodes as temporary scratch space, within a quota limited,
+chrooted directory. Finally, as mentioned in
+[Developer Experience](#Developer Experience), there's a distributed logging
+system that collects logs and makes them available for browsing, searching,
+and downloading.
+
+Asymmetric keys are provided for authenticating to the development portal from
+local machines, authenticating to the storage systems from live role
+instances, and signing and encrypting service images before publishing them.
+
+
+<a name="Configuration and APIs"></a>
+#### Configuration and APIs [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Configuration and APIs)
+
+Services include configuration settings, which are similar to the registry in
+Windows and `/etc`, dotfiles, and flags in *nix. Some are system-defined, such
+as the instance id, update domain id, and fault domain id. The rest are
+declared by the developer in the service definition, along with default
+values. Those values may be changed at runtime, I think via `CSRun.exe` (see
+[Developer Experience](#Developer Experience) or the developer portal.
+
+Roles can define callbacks to be called when settings change. This allows
+developers/deployers to change them dynamically, at runtime, without requiring
+a restart. Of course, most (all?) of the system-defined settings will only
+change on a restart.
+
+Here's an example service configuration:
+
+    <ServiceConfiguration name="MyService" xmlns="...">
+      <Role name="WebRole">
+        <Instances min="3" max="10" />
+        <UpdateDomains count="3" />
+        <FaultDomains count="3" />
+        <ConfigurationSettings>
+          <Setting name="GreetingString"
+                   value="Hello world!" />
+        </ConfigurationSettings>
+      </Role>
+    </ServiceConfiguration>
+
+Warning: full service definition and configuration isn't available in CTP, so
+this includes minor speculation, specifically the `Instances` tag's `min` and
+`max` attributes and the `UpdateDomains` and `FaultDomains` tags.
+
+
+
+<a name="Geodistribution and Georeplication"></a>
+#### Geodistribution and Georeplication [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Geodistribution and Georeplication)
+
+In the CTP, Azure runs in "a single datacenter on the US west coast." In the
+commercial release, MS will offer some control over geodistribution and
+georeplication, ie where and how your apps and data live. Details on this were
+scarce.
+
+
+<a name="Implementation"></a>
+### Implementation [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Implementation)
+
+The Azure fabric implementation consists of two main components, the [fabric
+controller](#Fabric Controller) and the
+[fabric controller agent](#State machine).
+
+
+<a name="Fabric Controller"></a>
+#### Fabric Controller [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Fabric Controller)
+
+The fabric controller (FC) manages the life cycle of Azure services. It
+allocates resources for them, provisions, deploys them, monitors them, and
+maintains their goal state. It also manages and monitors both VMs and physical
+machines in the fabric.
+
+
+<a name="State machine"></a>
+##### State machine [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#State machine)
+
+The FC has an internal state machine that it uses for managing the life cycle
+of a service. It maintains the current (last known) state of each virtual and
+physical node, which it updates by on talking with FC agents on each machine.
+It also knows the goal state of each service that's been published.
+
+The state machine maintains internal data structures for logical services,
+logical roles, logical role instances, logical nodes, and physical nodes.
+
+The FC's main loop is described as a heartbeat. During each heartbeat, it
+compares its services' goal states with the current state of the nodes they're
+deployed on, if any. When it finds a role with a goal state that doesn't match
+its nodes' current state, it tries to move the node's state toward the role's
+goal state. If it can't, it might move the role instance to another node.
+
+The FC also monitors for certain events that move nodes out of goal state,
+e.g. failures.
+
+
+<a name="Service life cycle"></a>
+##### Service life cycle [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Service life cycle)
+
+Inside the FC, there are four specific stages in the life cycle of a service:
+resource allocation, provisioning, deployment and upgrading, and maintennance.
+
+Resource allocation is largely a constraint satisfaction problem. Constraints
+include update and fault domains, resources and OS features/versions, network
+channels, etc. They also described it as a graph construction problem, where
+nodes are nodes and network channels between roles and load balancers are
+edges.
+
+Resource allocation is transactional, at either the service or role/node level
+(not sure which, I think the former). Either all of the necessary resources
+are allocated or none.
+
+Other provisioning and standard datacenter/NOC operations are handled either
+automatically, by the FC, or offline, e.g. burn-in, diagnostics, replacing
+parts, capacity planning, TOR/L2 switches (?), load balancers, SNMP, and
+access routers.
+
+Deployments and upgrades are done mostly automatically by the FC, one update
+domain at a time. Within each update domain, new OS or service images are
+copied to all nodes. Then, all nodes are marked as out of service (which moves
+them out of the goal state), so live traffic is no longer sent to them. Then,
+they'rer all upgraded. Finally, once the OS and services are back up and
+healthy, the nodes are marked in service and moved back into the goal states,
+as appropriate.
+
+Upgrades may be done either full automatically or manually. In the full auto
+case, each update domain starts immediately after the previous one finishes.
+In the manual case, humans start each new update domain. Service deployments
+are usually automatic; OS upgrades are either automatic or manual.
+
+Maintennance consists of the standard monitoring for failures and
+unhealthiness, as reported by both the FC agents and roles themselves. When
+certain events occur, the FC moves a service/role out of its goal state, and
+may mark parts out of service. It then falls back to the deployment process of
+moving the service back toward the goal state via its heartbeats.
+
+
+<a name="Networking"></a>
+##### Networking [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Networking)
+
+VIPs and DIPs (dedicated IPs) for services are allocated and programmed in
+load balancers automatically. The FC moves DIPs as in service and out of
+service based on running role instances with interface when they move in and
+out of goal state. Load balancers only send traffic to role instances in goal
+state.
+
+<a name="Implementation details"></a>
+#### Implementation details [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Implementation details)
+
+The FC itself is cluster of 5-7 machines. At any given time, one is the
+primary, and the rest are secondary workers. They vaguely alluded to using a
+form of master election for the primary, almost certainly
+<a href="http://labs.google.com/papers/paxos_made_live.html">Paxos</a>-based.
+
+Internally, there are four main components, from high to low:
+
+* The *core* runs the heartbeat, the state machine, the resource allocation
+constraint solver, etc.
+
+* The *object model* includes the business logic for roles, services, etc.
+
+* The *state system* stores, retrieves, and validates state checkpoints. It can
+roll back and forward in the case of failures.
+
+* The *data replication system* is similar to
+[GFS](http://labs.google.com/papers/gfs.html), but dedicated to the FC. It's
+distributed across all of the FC machines.
+
+Notably, the FC cluster actually runs on a smaller, limited, dedicated version
+of Azure itself (!).
+
+
+<a name="Virtualization"></a>
+#### Virtualization [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Virtualization)
+
+Node VMs use a hypervisor architecture based on
+[Hyper-V](www.microsoft.com/windowsserver2008/en/us/hyperv.aspx), which takes
+advantage of new hardware features designed to assist virtualization. The
+hypervisor runs on the hardware directly, and multiple VMs run on top of it.
+
+One VM is the host. It includes device drivers, which talk directly to the
+machine's hardware. The hypervisor routes system calls and other direct
+hardware accesses from the other (guest) VMs to the host VM, which performs
+them on behalf of the guest VMs.
+
+The OSes also include a feature called VMBus, which is an optimized,
+high-bandwidth direct data bus between VMs. (This is probably used for disk
+reads and writes from guest VMs.)
+
+
+<a name="Image-based deployment"></a>
+#### Image-based deployment [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Image-based deployment)
+
+Deployments and upgrades are based on virtual hard disk images, which provide
+a number of benefits. They're homogenous, stabler and more predictable, faster
+to copy and install, cacheable, easier to repare via replacement, and may be
+constructed and serviced offline, which is automated.
+
+There was a vague reference to an image manager, akin to package management
+systems for Linux, which handles dependencies, image distribution via multicast,
+replication, and caching.
+
+
+
+
+
+
+<a name="Monitoring and alerting"></a>
+## Monitoring and alerting [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Monitoring and alerting)
+
+This is one of the areas we have the least information so far. There's little
+to no support for developer-configurable monitoring in the CTP. The commercial
+release will support limited monitoring, as well as health and status
+reporting from roles, but it's unclear how powerful it will be.
+
+At the minimum, developers will be able to set alerts to fire when role
+instances become unhealthy, crash, or otherwise fail, when their nodes fail,
+or when a role logs a message at the `CRITICAL` level (or whatever the level
+is called). Alerts may be delivered by email, IM, and/or SMS.
+
+However, it's still unclear whether or how custom alerts may be defined, and
+what fine-grained metrics (e.g. qps, latency, error rate) will be available to
+those alerts.
+
+There's also a `CSMonitor.exe` file in the SDK. I haven't seen much information
+about it, but I'm guessing it's for querying the status and monitoring info of
+a local role instance, or maybe even a live one running in Azure. See
+[Developer Experience](#Developer Experience).
+
+
+
+
+<a name="Storage"></a>
+## Storage [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Storage)
+
+The three Azure storage services in the CTP are
+[tables](#Tables), [queues](#Queues), and [blobs](#Blobs). In
+the commercial release, they'll be joined by lock and cache services. They're
+all intended to be simple and massively scalable. Notably, they all run on top
+of the Azure fabric itself.
+
+Each storage service has a programmatic .NET API and an HTTP REST API. The
+REST endpoints are under <account>.[storage,blob,queue].core.windows.net. With
+the right keys, the REST API can be used to access data across accounts.
+
+There are also command-line utilities for browsing and modifying data in each
+service (except for tables, currently), in both production and staging
+instances.
+
+
+<a name="Tables"></a>
+### Tables [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Tables)
+
+<a name="Tables_Features"></a>
+#### Features [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Tables_Features)
+
+Tables is Azure's scalable, schemaless, structured datastore, similar to the
+[App Engine datastore](http://code.google.com/appengine/docs/datastore/). It's
+a distributed system that's very similar in design to
+[Bigtable](http://labs.google.com/papers/bigtable.html). It's designed to
+scale to billions of entities and terabytes of data.
+
+
+<a name="Entity Model"></a>
+##### Entity Model [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Entity Model)
+
+Each entity has a table name and a schemaless, key/value property bag.
+Entities are limited to 1MB and 255 properties each. The supported property
+types are:
+
+- string binary int long int bool double guid
+
+Three properties are special: the partition key, the row key, and the version.
+
+The partition key identifies a partition, ie a group of entities that should
+be stored together. The row key identifies an entity within a partition.
+Together, an entity's partition key and row key comprise its primary key. The
+partition and row key are both strings, up to 64KB.
+
+Notably, the developer must choose both the partition key and the row key. I
+didn't ask if partitions are limited in size, but I believe they are.
+
+
+<a name="Queries"></a>
+#### Queries [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Queries)
+
+Beyond the standard CRUD operations, tables supports a limited form of
+querying.
+
+In the CTP, queries supports only equals filters, on one or more properties.
+Results are returned in partition + row key order. In the commercial release,
+developer-defined secondary indexes for sorting and inequality filters will be
+supported, but they haven't decided how they'll work, or even whether they'll
+be global or partition-local.
+
+The programmatic query API uses LINQ, a simplified query language similar to
+GQL. The HTTP REST API uses the ADO.NET Data Services (aka Astoria)
+[URL-based interface](http://msdn.microsoft.com/en-us/magazine/cc748663.aspx#id0190049).
+
+Along with the result entities, each query returns a continuation marker,
+which may be passed back in following query calls to retrieve the next page of
+results.
+
+
+<a name="Consistency and Transactions"></a>
+##### Consistency and Transactions [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Consistency and Transactions)
+
+Azure tables is strongly consistent. Single entity writes are synchronous, and
+there are no dirty reads. ACID transactions are supported on single entities.
+
+Consistency and transactions are implemented via optimistic concurrency,
+similar to the App Engine datastore, using a system-defined version property
+on each entity that's updated on each write.
+
+Notably, the HTTP REST interface supports the same optimistic concurrency
+behavior, using the standard `Etag` and `If-Match` HTTP headers.
+
+In the commercial release, transactional batch writes will be supported, ie
+all writes in the batch will be committed or none. They're not sure if reading
+across entities in txes as well as writing, ie consistency and isolation, will
+be supported.
+
+One interesting feature is that table-scan-based queries within partitions
+provide snapshot isolation, since they can use a single base timestamp. It's
+unclear what kind of isolation secondary index queries will provide, since
+they don't know if they'll be global or local.
+
+Schemas As mentioned before, Azure tables is schemaless, like the App Engine
+datastore. There's a built-in Tables table that stores the list of tables
+currently used by an account, but not the properties or their types. It's
+queryable the same way as the normal tables.
+
+For schema changes, they strongly recommend the backward compatibility model,
+ie pushing code that understands both the old and new schemas. After that, you
+can either update the data in the background, then drop the old schema code
+path, or just leave both code paths in (ugh!).
+
+
+
+<a name="Implementation"></a>
+#### Implementation [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Implementation)
+
+From discussions with [Brad Calder](http://www-cse.ucsd.edu/~calder/) et al,
+it sounds like tables is designed similarly to Bigtable plus the App Engine
+datastore's features
+
+Notably, partitions are similar to Bigtable tablets, with a few of the added
+characteristics of App Engine's
+[entity groups](http://code.google.com/appengine/docs/datastore/keysandentitygroups.html#Entity_Groups_Ancestors_and_Paths).
+All entities in a partition are stored on the same table server. I have to
+assume partitions are unavailable if/when they're moved between table servers,
+like Bigtable tablets, but that's just speculation on my part.
+
+Transactions are implemented a la the App Engine datastore, using the built-in
+per-entity version property for optimistic concurrency. The notable difference
+there is that the versioning is at the entity level, not the entity group
+level, which makes cross-entity transactions much more difficult.
+
+Query are currently implemented via full partition scans and filtering in
+memory. Secondary indices are coming in the full commercial release.
+
+
+
+
+<a name="Queues"></a>
+### Queues [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Queues)
+
+<a name="Queues_Features"></a>
+#### Features [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Queues_Features)
+
+Queues is similar to [http://aws.amazon.com/sqs/](Amazon SQS). It allows
+messages to be enqueued and processed later, asynchronously, in a loosely
+coupled fashion. A service specifies a set of queues in its definition. At
+runtime, it may enqueue, dequeue, and delete messages from those queues.
+Messages have a typed payload, up to 8KB.
+
+The available queue operations are create queue, delete queue, enqueue
+message, dequeue message, delete message, clear queue, and get queue length.
+
+The dequeue operation acquires a lease on a message. While that lease is held,
+the message is invisible to other queue clients. When the owner of the lease
+is finished with the message, it may permanently delete it. If it doesn't
+delete it within the lease period, the lease expires and the message becomes
+available to dequeue again. (The lease period is configurable, and defaults to
+30s.)
+
+They've considered providing higher-level abstractions on top of this, e.g.
+simple map,
+[MapReduce](http://labs.google.com/papers/mapreduce.html),
+[Dryad](research.microsoft.com/research/sv/Dryad/), and
+[Pig](http://research.yahoo.com/node/90),
+but they haven't made any decisions.
+
+Note that [SQL Server 2005](http://www.microsoft.com/sqlserver/2005/) has a
+[service broker](http://msdn.microsoft.com/en-us/library/ms166043.aspx)
+that offers queueing functionality too. This is similar, but different, and
+doesn't share any code.
+
+
+<a name="Implementation"></a>
+#### Implementation [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Implementation)
+
+The order that tasks are dequeued is roughly FIFO, but not exactly. The system
+makes no guarantees about starvation or fairness within a queue.
+
+
+
+<a name="Blobs"></a>
+### Blobs [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Blobs)
+
+The blob service stores opaque blobs, similar to
+[Amazon S3](http://aws.amazon.com/s3/). Blobs may be created and retrieved
+programmatically. Blobs are identified by unique, human-readable URL paths
+under `<account>.blob.core.windows.net`, chosen by the developer. Blobs may be
+up to 50GB, and may have additional metadata consisting of key/value pairs.
+
+Blobs up to 64MB may be uploaded directly. Blobs above 64MB must be divided
+into blocks. Each block is uploaded separately. Blocks may be uploaded out of
+order, and individual blocks may be repeated. At the end, a `Commit` call is
+made with the block ids in order.
+
+The blob namespace is the hierarchical URL path namespace under
+`<account>.blob.core.windows.net`. Blobs may be enumerated at any level in the
+URL space, non-recursively. Paging is supported with continuation markers,
+similar to tables.
+
+Blobs are not immutable! They may be modified, appended, and cloned. For
+block-based blobs, modifications are made at the block level.
+
+
+
+
+
+<a name="Developer Experience"></a>
+## Developer Experience [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Developer Experience)
+
+One of the loudest messages at PDC was that
+[your existing tools, libraries, skills, and knowledge transfer to the
+ cloud](/space/windows+azure+impressions#tools).
+Specifically, you use Visual Studio, .NET,
+[LINQ](http://en.wikipedia.org/wiki/Language_Integrated_Query), etc. to write
+Azure services, just like you use them to write on-premises service.
+
+One of MS's core messages is that the service development lifecycle consists of
+four steps:
+
+   1. Write the code and service model. This is done by developer(s).
+   2. Determine the necessary resources and configure the service. This is done by
+   developer(s) or deployer(s).
+   3. Allocate resources, provision, and deploy the service. This is done by the
+   [fabric](#Fabric).
+   4. Maintain the service in the "goal state," ie monitor the system health
+   and handle failures. This is done by the [fabric](#Fabric).
+
+The Azure SDK includes a full, stand-alone, stubbed-out implementation of the
+Azure fabric, APIs, and storage services: `runme.exe`. It's multi-process, so
+you can run multiple roles, and multiple instances of each role, on the local
+machine.
+
+Visual Studio is not required, but it's naturally by far the most supported
+environment. When using the SDK, all features are available, most notably the
+debugger. Debuggers may not be attached to apps running in the cloud on Azure,
+of course.
+
+To publish a service to the cloud, first build each role binary with Visual
+Studio, or any compatible compiler. Then, use
+`[CSPack.exe](http://msdn.microsoft.com/en-us/library/dd179470.aspx)` to package
+a service image that includes the role binaries. Finally, use
+`[CSRun.exe](http://msdn.microsoft.com/en-us/library/dd179412.aspx)` to
+upload the image and publish the service to a staging instances, where the service is
+available for testing before it serves live traffic. Finally, to start serving
+live traffic flip the switch to swap the staging and prod instances, via
+either `CSRun.exe` or the developer portal.
+
+The SDK, `CSPack`, and `CSRun` are all command line, with Visual Studio plugins
+built on top of them. This allows for third party tools and plugins. For
+example, they have an Eclipse plugin internally. As mentioned, asymmetric keys
+are provided for authenticating to the development portal from local machines,
+authenticating to the storage systems from live role instances, and signing
+and encrypting service images before publishing them.
+
+There's also a `CSMonitor.exe` in the SDK. I haven't found much information
+about it, but I'm guessing it's for querying the status and monitoring info of
+a local role instance, or maybe even a live one running in Azure.
+
+The developer portal is much like the App Engine admin console. It shows you
+the status of your deployed service.
+
+Apps get a subdomain of `cloudapp.net` to serve off of. Notably, dedicated
+top-level domains are not available in the CTP, but may be available in the
+commercial release.
+
+Finally, the core Azure API includes a logging facility that logs to a
+reliable, distributed store, similar to App Engine. The logs are then
+available for browsing, searching, and download.
+
+See [this MSDN article](http://msdn.microsoft.com/en-us/library/dd179441.aspx)
+for more.
+
+
+
+<a name="SQL Services"></a>
+## SQL Services [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#SQL Services)
+
+SQL Services is a schemaless structured database that lives in the cloud. It's
+based on sharded [SQL Server](http://www.microsoft.com/sql/). The entity model
+is similar to [Tables](#Tables).
+
+SQL service is intended to *complement* Tables. It doesn't scale quite as
+automatically or easily, it's not intended to serve a high load of end user
+traffic, and it's expected to be much more expensive. However, it supports the
+more demanding traditional OLAP/OLTP usage patterns, and includes many of the
+existing SQL Server tools and extra features, including data mining,
+reporting, etc.
+
+Developers must manually shard entities into *containers*. The container to
+SQL Server mapping under the hood is many-to-one, similar the Azure tables
+partition to table server mapping. Containers are limited in size, which seems
+dangerous if you get your sharding parameters wrong.
+
+Currently, queries, transactions, etc. cannot cross containers. I'm not sure
+if joins are supported yet, but they eventually will be, along with queries
+and joins across containers. Transactions across containers will probably
+never be supported without something like two phase commit, though.
+
+
+
+**See also:**
+  * [Facebook Data Store API Thoughts](/space/facebook+data+store+api+thoughts)
+  * [Amazon SimpleDB thoughts](/space/amazon+simpledb+thoughts)
+  * [Google App Engine launched](/space/2008-04-07_google_app_engine_launched)
+  * [Under the Covers of the App Engine datastore](/space/datastore_talk.html) (slides)
+  * [Windows Azure impressions](/space/windows+azure+impressions)
+  * [Windows Azure glossary](/space/windows+azure+glossary)
+  * [Windows Azure: Overview and Impressiond](/space/azure_talk.html) (slides)
