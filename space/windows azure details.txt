@@ -528,7 +528,7 @@ memory. Secondary indices are coming in the full commercial release.
 <a name="Queues_Features"></a>
 #### Features [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Queues_Features)
 
-Queues is similar to [http://aws.amazon.com/sqs/](Amazon SQS). It allows
+Queues is similar to [Amazon SQS](http://aws.amazon.com/sqs/). It allows
 messages to be enqueued and processed later, asynchronously, in a loosely
 coupled fashion. A service specifies a set of queues in its definition. At
 runtime, it may enqueue, dequeue, and delete messages from those queues.
@@ -547,7 +547,7 @@ available to dequeue again. (The lease period is configurable, and defaults to
 They've considered providing higher-level abstractions on top of this, e.g.
 simple map,
 [MapReduce](http://labs.google.com/papers/mapreduce.html),
-[Dryad](research.microsoft.com/research/sv/Dryad/), and
+[Dryad](http://research.microsoft.com/research/sv/Dryad/), and
 [Pig](http://research.yahoo.com/node/90),
 but they haven't made any decisions.
 
