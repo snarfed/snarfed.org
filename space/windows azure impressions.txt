@@ -147,10 +147,11 @@ Azure felt more and more solid.
 <a name="lessons"></a>
 ### "Learn from our lessons." [![permalink](/Icon-Permalink.png)](/space/windows+azure+impressions#lessons)
 
-Similar to the [information](#information) theme, another big part of their
-messaging was that they've built large-scale services, they've learned lessons
-and they've tried to bake those lessons into azure so that developers are
-encouraged, and occasionally forced, to do the right thing.
+Similar to the [information](/space/windows+azure+impressions#information)
+theme, another big part of their messaging was that they've built large-scale
+services, they've learned lessons and they've tried to bake those lessons into
+azure so that developers are encouraged, and occasionally forced, to do the
+right thing.
 
 Where they couldn't bake in lessons, they pushed best practices: prefer
 statelessness, think idempotent, separate data and config from code,

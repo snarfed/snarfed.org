@@ -16,39 +16,39 @@ Also see my [overall impressions](/space/windows+azure+impressions) and
 
 **Contents:**
 
-* [Fabric](/space/windows+azure+description#Fabric)
-   * [Services](/space/windows+azure+description#Services)
-      * [Components](/space/windows+azure+description#Components)
-      * [Provisioning](/space/windows+azure+description#Provisioning)
-      * [Configuration and APIs](/space/windows+azure+description#Configuration and APIs)
-      * [Geodistribution and Georeplication](/space/windows+azure+description#Geodistribution and Georeplication)
-   * [Implementation](/space/windows+azure+description#Implementation)
-      * [Fabric Controller](/space/windows+azure+description#Fabric Controller)
-         * [State machine](/space/windows+azure+description#State machine)
-         * [Service life cycle](/space/windows+azure+description#Service life cycle)
-         * [Networking](/space/windows+azure+description#Networking)
-      * [Implementation details](/space/windows+azure+description#Implementation details)
-      * [Virtualization](/space/windows+azure+description#Virtualization)
-      * [Image-based deployment](/space/windows+azure+description#Image-based deployment)
-* [Monitoring and alerting](/space/windows+azure+description#Monitoring and alerting)
-* [Storage](/space/windows+azure+description#Storage)
-   * [Tables](/space/windows+azure+description#Tables)
-      * [Features](/space/windows+azure+description#Tables_Features)
-         * [Entity Model](/space/windows+azure+description#Entity Model)
-      * [Queries](/space/windows+azure+description#Queries)
-         * [Consistency and Transactions](/space/windows+azure+description#Consistency and Transactions)
-      * [Implementation](/space/windows+azure+description#Implementation)
-   * [Queues](/space/windows+azure+description#Queues)
-      * [Features](/space/windows+azure+description#Queues_Features)
-      * [Implementation](/space/windows+azure+description#Implementation)
-   * [Blobs](/space/windows+azure+description#Blobs)
-* [Developer Experience](/space/windows+azure+description#Developer Experience)
-* [SQL Services](/space/windows+azure+description#SQL Services)
+* [Fabric](/space/windows+azure+details#Fabric)
+   * [Services](/space/windows+azure+details#Services)
+      * [Components](/space/windows+azure+details#Components)
+      * [Provisioning](/space/windows+azure+details#Provisioning)
+      * [Configuration and APIs](/space/windows+azure+details#Configuration and APIs)
+      * [Geodistribution and Georeplication](/space/windows+azure+details#Geodistribution and Georeplication)
+   * [Implementation](/space/windows+azure+details#Implementation)
+      * [Fabric Controller](/space/windows+azure+details#Fabric Controller)
+         * [State machine](/space/windows+azure+details#State machine)
+         * [Service life cycle](/space/windows+azure+details#Service life cycle)
+         * [Networking](/space/windows+azure+details#Networking)
+      * [Implementation details](/space/windows+azure+details#Implementation details)
+      * [Virtualization](/space/windows+azure+details#Virtualization)
+      * [Image-based deployment](/space/windows+azure+details#Image-based deployment)
+* [Monitoring and alerting](/space/windows+azure+details#Monitoring and alerting)
+* [Storage](/space/windows+azure+details#Storage)
+   * [Tables](/space/windows+azure+details#Tables)
+      * [Features](/space/windows+azure+details#Tables_Features)
+         * [Entity Model](/space/windows+azure+details#Entity Model)
+      * [Queries](/space/windows+azure+details#Queries)
+         * [Consistency and Transactions](/space/windows+azure+details#Consistency and Transactions)
+      * [Implementation](/space/windows+azure+details#Implementation)
+   * [Queues](/space/windows+azure+details#Queues)
+      * [Features](/space/windows+azure+details#Queues_Features)
+      * [Implementation](/space/windows+azure+details#Implementation)
+   * [Blobs](/space/windows+azure+details#Blobs)
+* [Developer Experience](/space/windows+azure+details#Developer Experience)
+* [SQL Services](/space/windows+azure+details#SQL Services)
 
 
 <br />
 <a name="Fabric"></a>
-## Fabric [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Fabric)
+## Fabric [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Fabric)
 
 The Azure fabric is an umbrella term for the logical cluster of machines that
 Azure services run on, along with the processes that manage the cluster, provision
@@ -59,7 +59,7 @@ The fabric consists of nodes, which may be physical machines, VMs, or
 
 
 <a name="Services"></a>
-### Services [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Services)
+### Services [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Services)
 
 An Azure service is defined by a service definition, aka a model, similar to a
 [RightScale deployment](http://wiki.rightscale.com/1._Tutorials/2._Deployment_Setup).
@@ -72,7 +72,7 @@ arbitrary service definitions will be supported.
 
 
 <a name="Components"></a>
-#### Components [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Components)
+#### Components [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Components)
 
 A role is an individual runnable component of an app. A role typically
 specifies a binary or piece of code to run as an OS process. A role may be
@@ -99,7 +99,7 @@ app.yaml.
 
 
 <a name="Provisioning"></a>
-#### Provisioning [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Provisioning)
+#### Provisioning [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Provisioning)
 
 A role's (or other component's) definition include the resources it needs,
 including CPU, memory, disk, and network bandwith (I think). Notably, when the
@@ -149,7 +149,7 @@ Here's an example service definition:
 
 
 <a name="Hosting"></a>
-#### Hosting [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Hosting)
+#### Hosting [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Hosting)
 
 Role code and binaries run on VMs with a limited choice of Windows OS (which
 versions?). It has a standard MS stack available: IIS7 (with XML config), .NET
@@ -163,7 +163,7 @@ service definition and the current node, accessing configuration settings, and
 reporting health and other status info. Role instances may also use the local
 disk on their nodes as temporary scratch space, within a quota limited,
 chrooted directory. Finally, as mentioned in
-[Developer Experience](#Developer Experience), there's a distributed logging
+[Developer Experience](/space/windows+azure+details#Developer Experience), there's a distributed logging
 system that collects logs and makes them available for browsing, searching,
 and downloading.
 
@@ -173,14 +173,14 @@ instances, and signing and encrypting service images before publishing them.
 
 
 <a name="Configuration and APIs"></a>
-#### Configuration and APIs [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Configuration and APIs)
+#### Configuration and APIs [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Configuration and APIs)
 
 Services include configuration settings, which are similar to the registry in
 Windows and `/etc`, dotfiles, and flags in *nix. Some are system-defined, such
 as the instance id, update domain id, and fault domain id. The rest are
 declared by the developer in the service definition, along with default
 values. Those values may be changed at runtime, I think via `CSRun.exe` (see
-[Developer Experience](#Developer Experience) or the developer portal.
+[Developer Experience](/space/windows+azure+details#Developer Experience) or the developer portal.
 
 Roles can define callbacks to be called when settings change. This allows
 developers/deployers to change them dynamically, at runtime, without requiring
@@ -208,7 +208,7 @@ this includes minor speculation, specifically the `Instances` tag's `min` and
 
 
 <a name="Geodistribution and Georeplication"></a>
-#### Geodistribution and Georeplication [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Geodistribution and Georeplication)
+#### Geodistribution and Georeplication [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Geodistribution and Georeplication)
 
 In the CTP, Azure runs in "a single datacenter on the US west coast." In the
 commercial release, MS will offer some control over geodistribution and
@@ -217,15 +217,15 @@ scarce.
 
 
 <a name="Implementation"></a>
-### Implementation [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Implementation)
+### Implementation [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Implementation)
 
 The Azure fabric implementation consists of two main components, the [fabric
-controller](#Fabric Controller) and the
-[fabric controller agent](#State machine).
+controller](/space/windows+azure+details#Fabric Controller) and the
+[fabric controller agent](/space/windows+azure+details#State machine).
 
 
 <a name="Fabric Controller"></a>
-#### Fabric Controller [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Fabric Controller)
+#### Fabric Controller [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Fabric Controller)
 
 The fabric controller (FC) manages the life cycle of Azure services. It
 allocates resources for them, provisions, deploys them, monitors them, and
@@ -234,7 +234,7 @@ machines in the fabric.
 
 
 <a name="State machine"></a>
-##### State machine [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#State machine)
+##### State machine [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#State machine)
 
 The FC has an internal state machine that it uses for managing the life cycle
 of a service. It maintains the current (last known) state of each virtual and
@@ -255,7 +255,7 @@ e.g. failures.
 
 
 <a name="Service life cycle"></a>
-##### Service life cycle [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Service life cycle)
+##### Service life cycle [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Service life cycle)
 
 Inside the FC, there are four specific stages in the life cycle of a service:
 resource allocation, provisioning, deployment and upgrading, and maintennance.
@@ -296,7 +296,7 @@ moving the service back toward the goal state via its heartbeats.
 
 
 <a name="Networking"></a>
-##### Networking [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Networking)
+##### Networking [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Networking)
 
 VIPs and DIPs (dedicated IPs) for services are allocated and programmed in
 load balancers automatically. The FC moves DIPs as in service and out of
@@ -305,7 +305,7 @@ out of goal state. Load balancers only send traffic to role instances in goal
 state.
 
 <a name="Implementation details"></a>
-#### Implementation details [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Implementation details)
+#### Implementation details [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Implementation details)
 
 The FC itself is cluster of 5-7 machines. At any given time, one is the
 primary, and the rest are secondary workers. They vaguely alluded to using a
@@ -331,7 +331,7 @@ of Azure itself (!).
 
 
 <a name="Virtualization"></a>
-#### Virtualization [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Virtualization)
+#### Virtualization [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Virtualization)
 
 Node VMs use a hypervisor architecture based on
 [Hyper-V](www.microsoft.com/windowsserver2008/en/us/hyperv.aspx), which takes
@@ -349,7 +349,7 @@ reads and writes from guest VMs.)
 
 
 <a name="Image-based deployment"></a>
-#### Image-based deployment [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Image-based deployment)
+#### Image-based deployment [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Image-based deployment)
 
 Deployments and upgrades are based on virtual hard disk images, which provide
 a number of benefits. They're homogenous, stabler and more predictable, faster
@@ -366,7 +366,7 @@ replication, and caching.
 
 
 <a name="Monitoring and alerting"></a>
-## Monitoring and alerting [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Monitoring and alerting)
+## Monitoring and alerting [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Monitoring and alerting)
 
 This is one of the areas we have the least information so far. There's little
 to no support for developer-configurable monitoring in the CTP. The commercial
@@ -385,16 +385,16 @@ those alerts.
 There's also a `CSMonitor.exe` file in the SDK. I haven't seen much information
 about it, but I'm guessing it's for querying the status and monitoring info of
 a local role instance, or maybe even a live one running in Azure. See
-[Developer Experience](#Developer Experience).
+[Developer Experience](/space/windows+azure+details#Developer Experience).
 
 
 
 
 <a name="Storage"></a>
-## Storage [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Storage)
+## Storage [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Storage)
 
 The three Azure storage services in the CTP are
-[tables](#Tables), [queues](#Queues), and [blobs](#Blobs). In
+[tables](/space/windows+azure+details#Tables), [queues](/space/windows+azure+details#Queues), and [blobs](/space/windows+azure+details#Blobs). In
 the commercial release, they'll be joined by lock and cache services. They're
 all intended to be simple and massively scalable. Notably, they all run on top
 of the Azure fabric itself.
@@ -409,10 +409,10 @@ instances.
 
 
 <a name="Tables"></a>
-### Tables [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Tables)
+### Tables [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Tables)
 
 <a name="Tables_Features"></a>
-#### Features [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Tables_Features)
+#### Features [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Tables_Features)
 
 Tables is Azure's scalable, schemaless, structured datastore, similar to the
 [App Engine datastore](http://code.google.com/appengine/docs/datastore/). It's
@@ -422,7 +422,7 @@ scale to billions of entities and terabytes of data.
 
 
 <a name="Entity Model"></a>
-##### Entity Model [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Entity Model)
+##### Entity Model [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Entity Model)
 
 Each entity has a table name and a schemaless, key/value property bag.
 Entities are limited to 1MB and 255 properties each. The supported property
@@ -442,7 +442,7 @@ didn't ask if partitions are limited in size, but I believe they are.
 
 
 <a name="Queries"></a>
-#### Queries [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Queries)
+#### Queries [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Queries)
 
 Beyond the standard CRUD operations, tables supports a limited form of
 querying.
@@ -463,7 +463,7 @@ results.
 
 
 <a name="Consistency and Transactions"></a>
-##### Consistency and Transactions [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Consistency and Transactions)
+##### Consistency and Transactions [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Consistency and Transactions)
 
 Azure tables is strongly consistent. Single entity writes are synchronous, and
 there are no dirty reads. ACID transactions are supported on single entities.
@@ -498,7 +498,7 @@ path, or just leave both code paths in (ugh!).
 
 
 <a name="Implementation"></a>
-#### Implementation [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Implementation)
+#### Implementation [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Implementation)
 
 From discussions with [Brad Calder](http://www-cse.ucsd.edu/~calder/) et al,
 it sounds like tables is designed similarly to Bigtable plus the App Engine
@@ -523,10 +523,10 @@ memory. Secondary indices are coming in the full commercial release.
 
 
 <a name="Queues"></a>
-### Queues [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Queues)
+### Queues [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Queues)
 
 <a name="Queues_Features"></a>
-#### Features [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Queues_Features)
+#### Features [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Queues_Features)
 
 Queues is similar to [http://aws.amazon.com/sqs/](Amazon SQS). It allows
 messages to be enqueued and processed later, asynchronously, in a loosely
@@ -558,7 +558,7 @@ doesn't share any code.
 
 
 <a name="Implementation"></a>
-#### Implementation [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Implementation)
+#### Implementation [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Implementation)
 
 The order that tasks are dequeued is roughly FIFO, but not exactly. The system
 makes no guarantees about starvation or fairness within a queue.
@@ -566,7 +566,7 @@ makes no guarantees about starvation or fairness within a queue.
 
 
 <a name="Blobs"></a>
-### Blobs [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Blobs)
+### Blobs [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Blobs)
 
 The blob service stores opaque blobs, similar to
 [Amazon S3](http://aws.amazon.com/s3/). Blobs may be created and retrieved
@@ -592,7 +592,7 @@ block-based blobs, modifications are made at the block level.
 
 
 <a name="Developer Experience"></a>
-## Developer Experience [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#Developer Experience)
+## Developer Experience [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Developer Experience)
 
 One of the loudest messages at PDC was that
 [your existing tools, libraries, skills, and knowledge transfer to the
@@ -608,9 +608,9 @@ four steps:
    2. Determine the necessary resources and configure the service. This is done by
    developer(s) or deployer(s).
    3. Allocate resources, provision, and deploy the service. This is done by the
-   [fabric](#Fabric).
+   [fabric](/space/windows+azure+details#Fabric).
    4. Maintain the service in the "goal state," ie monitor the system health
-   and handle failures. This is done by the [fabric](#Fabric).
+   and handle failures. This is done by the [fabric](/space/windows+azure+details#Fabric).
 
 The Azure SDK includes a full, stand-alone, stubbed-out implementation of the
 Azure fabric, APIs, and storage services: `runme.exe`. It's multi-process, so
@@ -660,11 +660,11 @@ for more.
 
 
 <a name="SQL Services"></a>
-## SQL Services [![permalink](/Icon-Permalink.png)](/space/windows+azure+description#SQL Services)
+## SQL Services [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#SQL Services)
 
 SQL Services is a schemaless structured database that lives in the cloud. It's
 based on sharded [SQL Server](http://www.microsoft.com/sql/). The entity model
-is similar to [Tables](#Tables).
+is similar to [Tables](/space/windows+azure+details#Tables).
 
 SQL service is intended to *complement* Tables. It doesn't scale quite as
 automatically or easily, it's not intended to serve a high load of end user
