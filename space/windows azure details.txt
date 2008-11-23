@@ -34,7 +34,7 @@ Also see my [overall impressions](/space/windows+azure+impressions) and
 * [Storage](/space/windows+azure+details#Storage)
    * [Tables](/space/windows+azure+details#Tables)
       * [Features](/space/windows+azure+details#Tables_Features)
-         * [Entity Model](/space/windows+azure+details#Entity Model)
+         * [Entity model](/space/windows+azure+details#Entity model)
       * [Queries](/space/windows+azure+details#Queries)
          * [Consistency and Transactions](/space/windows+azure+details#Consistency and Transactions)
       * [Implementation](/space/windows+azure+details#Implementation)
@@ -421,14 +421,21 @@ a distributed system that's very similar in design to
 scale to billions of entities and terabytes of data.
 
 
-<a name="Entity Model"></a>
-##### Entity Model [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Entity Model)
+<a name="Entity model"></a>
+##### Entity model [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Entity model)
 
 Each entity has a table name and a schemaless, key/value property bag.
 Entities are limited to 1MB and 255 properties each. The supported property
 types are:
 
-- string binary int long int bool double guid
+* string
+* binary
+* int
+* long
+* int
+* bool
+* double
+* guid
 
 Three properties are special: the partition key, the row key, and the version.
 
@@ -453,8 +460,10 @@ developer-defined secondary indexes for sorting and inequality filters will be
 supported, but they haven't decided how they'll work, or even whether they'll
 be global or partition-local.
 
-The programmatic query API uses LINQ, a simplified query language similar to
-GQL. The HTTP REST API uses the ADO.NET Data Services (aka Astoria)
+The programmatic query API uses
+[LINQ](http://en.wikipedia.org/wiki/Language_Integrated_Query),
+a simplified query language similar to GQL. The HTTP REST API uses the ADO.NET
+Data Services (aka Astoria)
 [URL-based interface](http://msdn.microsoft.com/en-us/magazine/cc748663.aspx#id0190049).
 
 Along with the result entities, each query returns a continuation marker,
