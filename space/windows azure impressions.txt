@@ -223,11 +223,6 @@ cases, but they said those are the ones that are trickiest, since you know how
 the normal stuff is supposed to work. It's the edge cases that aren't
 documented as well, so they're doubly difficult when they're inconsistent.
 
-This is very, very low hanging fruit. We have a ton of these bugs already
-filed that we've been considering low priority, and we know of many more that
-we haven't filed. Assuming we can spare the resources, we should fix these.
-It'd be a good theme for our next fixit.
-
 
 **See also:**
   * [Windows Azure details](/space/windows+azure+details)
