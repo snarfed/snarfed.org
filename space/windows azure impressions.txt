@@ -206,10 +206,10 @@ providers:
 * Can I delete something and be sure it's totally deleted, everywhere?
 * How can I make sure I don't get bitten by quotas, throttling, or other limits?
 
-Often, MS has better answers than us, since many of these questions are
-specific to enterprises, and MS has dealt with them for decades. In other
+Often, MS has better answers to these questions, since many of these questions
+are specific to enterprises, and MS has dealt with them for decades. In other
 cases, the MS speaker notes that these are common cloud questions, then gives
-basically the same answers we give.
+basically the same answers as everyone else.
 
 
 <a name="sdk_prod"></a>
