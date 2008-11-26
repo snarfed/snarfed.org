@@ -50,10 +50,11 @@ Amazon's [S3](http://aws.amazon.com/s3/),
 [EC2](http://aws.amazon.com/ec2/),
 [SimpleDB](http://aws.amazon.com/simpledb/), and
 [SQS](http://aws.amazon.com/sqs/),
-lock servers like Google's [Chubby](http://labs.google.com/papers/chubby.html),
-and [memcached](http://www.danga.com/memcached/), among others.
+infrastructure like [memcached](http://www.danga.com/memcached/)
+and Google's [Chubby](http://labs.google.com/papers/chubby.html),
+and others.
 The [Azure Fabric](/space/windows+azure+details#Fabric)
-also provides some of the same high level features
+also provides some of the same high level features as
 [RightScale](http://rightscale.com/) and
 [Google App Engine](http://appengine.google.com/), but it also has noticeable
 differences.
