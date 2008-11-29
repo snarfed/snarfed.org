@@ -94,8 +94,9 @@ channel is a connection between two roles. An endpoint is a generic network
 endpoint, either internal or external, for serving requests. An interface is
 an externally accessible endpoint. Supported protocols include HTTP(S), SMTP,
 ATOM, and SOAP. Notably, while HTTPS is supported, you can't automatically
-require it, ie there's no equivalent of App Engine's secure: always in
-app.yaml.
+require it, ie there's no equivalent of App Engine's
+[`secure: always`](http://code.google.com/appengine/docs/configuringanapp.html#Secure_URLs) in
+[`app.yaml`](http://code.google.com/appengine/docs/configuringanapp.html).
 
 
 <a name="Provisioning"></a>
