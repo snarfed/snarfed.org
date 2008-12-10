@@ -152,12 +152,10 @@ the match during incremental search, and in emacs mode, the region between the
 mark and cursor.
 ([Applied](http://mx.gw.com/pipermail/tcsh/2006-August/003724.html) on 8/23/2006.)
 
-  * A patch to [remove tcsh globbing in history search](/space/remove tcsh
-globbing in history search).
+  * A patch to [remove tcsh globbing in history search](/space/remove tcsh globbing in history search).
 ([Applied](http://mx.gw.com/pipermail/tcsh/2006-August/003726.html) on 8/23/2006.)
 
-  * A [fix for a tcsh bug that moves the mark after deletions](/space/tcsh
-    delete moves mark bug fix). (Applied on 8/23/2006.)
+  * A [fix for a tcsh bug that moves the mark after deletions](/space/tcsh delete moves mark bug fix). (Applied on 8/23/2006.)
 
   * An [acoc rule for coloring context diffs](/space/acoc.conf for context diffs).
 
