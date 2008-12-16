@@ -40,7 +40,7 @@ Currently, YQL is _not_ part of a cloud database. It's strictly a hosted
 service for query processing. On the plus side, this means that YQL isn't
 limited to a single data source. It's not even limited to Yahoo's own
 properties. YQL can operate on any third party data source, as long as it's in
-one of the in the usual suspect formats: RSS, ATOM, JSON, XML, etc.
+one of the usual suspect formats: RSS, ATOM, JSON, XML, etc.
 
 The drawback of YQL's generic, bring-your-own-data model is that it
 must often do full table scans and
@@ -49,16 +49,16 @@ Data sources can only offer shallow, rudimentary indexed queries themselves:
 only equality filters, ie no range or bounding box queries, only on
 hard-coded parameters, and subject to a
 [4 second deadline](http://developer.yahoo.com/yql/guide/query-parameters.html).
-Worse, it's not clear that indexed queries supported on third party data
+Worse, it's not clear that indexed queries are supported on third party data
 sources at all.
 
 All other operations are [done in memory](/space/yql+yahoo+query+language+thoughts#local),
-and are subject to a
+subject to a
 [30 second processing deadline](http://developer.yahoo.com/yql/guide/query-parameters.html).
 This limits those operations to minor post-processing and cosmetic tweaks,
 which rules out many interesting use cases on even modest size data sets.
 
-Still, in line with the rest of Yahoo!'s philosophy of developer APIs and web
+Still, in line with the rest of Yahoo's philosophy of developer APIs and web
 services, YQL is straightforward and practical. At a high level, YQL is to
 [XPath](http://www.w3.org/TR/xpath) and [XQuery](http://www.w3.org/TR/xquery/)
 what JSON is to XML and what XML-RPC was (and REST now is) to SOAP.
@@ -72,8 +72,8 @@ XPath/XQuery,
 Microsoft's [LINQ](http://en.wikipedia.org/wiki/Language_Integrated_Query),
 Google's [GQL](http://code.google.com/appengine/docs/datastore/gqlreference.html),
 Facebook's [FQL](/space/facebook+data+store+api+thoughts), and the
-[Amazon SimpleDB](/space/amazon+simpledb+thoughts) and
-[CouchDB](http://couchdb.org/) query languages.
+query interfaces for [Amazon SimpleDB](/space/amazon+simpledb+thoughts) and
+[CouchDB](http://couchdb.org/).
 
 Since YQL doesn't actually store data, it's not really a competitor to the
 likes of SimpleDB,
@@ -113,21 +113,23 @@ table's hierarchical structure, fields, and
 <a name="filtering"></a>
 ### Filtering [![permalink](/Icon-Permalink.png)](/space/yql+yahoo+query+language+thoughts#filtering)
 
-YQL query syntax is similar to SQL:
+YQL's syntax is similar to SQL:
 
     SELECT fields FROM table
     [WHERE filter [AND filter] ...]
     [function] [function] ...
 
 
-Notably, YQL also supports sub-selects:
+Notably, unlike most of the
+[related projects](/space/yql+yahoo+query+language+thoughts#related),
+YQL also supports sub-selects:
 
     SELECT fields FROM table
     WHERE field IN
       (SELECT fields FROM other_table ...)
 
 
-This is particularly interesting because sub-selects may be on different
+This is particularly interesting because sub-selects may query different
 tables and data sources than the top-level query. This makes YQL a powerful
 tool for mashups.
 
@@ -153,20 +155,21 @@ data model, using dot notation to access inner fields, e.g.
 #### Remote filters [![permalink](/Icon-Permalink.png)](/space/yql+yahoo+query+language+thoughts#remote)
 
 Remote filters are handled by the data source, and may only use the equality
-operator. Examples include zip code for event queries on Upcoming, or album
-id for album queries on Flickr. Remote filters may only use the equality
-operator.
+operator. The fields that support remote filtering for a given table are called
+_input parameters_. Examples include event zip code on Upcoming and album id on
+Flickr. Data sources may require queries to provide filter values for some or
+all input parameters.
 
-The fields that support remote filtering for a given table are called
-_input parameters_. They may overlap with fields in the table's rows, but
-they're not required to. That means that input parameters aren't always
-available for projection or local filtering.
+Input parameters may overlap with fields in the table's rows, but they're not
+required to. That means that input parameters aren't always available for
+projection or local filtering.
 
 Remote filters are notable because they're the _only_ way to do efficient,
 indexed queries. All [local filters](/space/yql+yahoo+query+language+thoughts#local),
-[post-query functions](/space/yql+yahoo+query+language+thoughts#post_query), and other
-operations are evaluated on each row returned by the data source. This means
-that any heavy lifting for scalability must be done in the data source itself.
+[post-query functions](/space/yql+yahoo+query+language+thoughts#post_query),
+and other operations are evaluated data after it's returned by the data source.
+This means that any heavy lifting for scalability must be done in the data
+source itself.
 
 Along with filters, YQL can pass
 [paging parameters](http://developer.yahoo.com/yql/guide/limit-offset-statements.html)
@@ -180,8 +183,8 @@ must calculate the result set and then slice it in memory.
 
 If paging parameters aren't specified, YQL defers to the provider's defaults.
 This means that queries will only include results from the first page returned
-by the data source. YQL lets you turn this off by specifying a start of 0 and
-no end, but still, this will likely be a source of confusion for YQL users.
+by the data source. YQL lets you disable this behavior and fetch as much data as
+you need, but still, this will likely be a source of confusion for developers.
 
 
 <a name="post_query"></a>
@@ -223,7 +226,7 @@ Developers may
 via Yahoo's [OAuth](http://oauth.org/) service to access private data or use
 higher, per-account quotas.
 
-Finally, the `v1` in the endpoint URL implies support for versioning support.
+Finally, the `v1` in the endpoint URL implies support for versioning.
 Yahoo will probably handle backward incompatible changes to YQL by adding a
 new endpoint with the next version number.
 
