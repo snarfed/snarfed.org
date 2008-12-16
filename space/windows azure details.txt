@@ -463,8 +463,9 @@ be global or partition-local.
 
 The programmatic query API uses
 [LINQ](http://en.wikipedia.org/wiki/Language_Integrated_Query),
-a simplified query language similar to GQL. The HTTP REST API uses the ADO.NET
-Data Services (aka Astoria)
+a simplified query language similar to Google App Engine's
+[GQL](http://code.google.com/appengine/docs/datastore/gqlreference.html).
+The HTTP REST API uses the ADO.NET Data Services (aka Astoria)
 [URL-based interface](http://msdn.microsoft.com/en-us/magazine/cc748663.aspx#id0190049).
 
 Along with the result entities, each query returns a continuation marker,
@@ -702,3 +703,4 @@ never be supported without something like two phase commit, though.
   * [Amazon SimpleDB thoughts](/space/amazon+simpledb+thoughts)
   * [Google App Engine launched](/space/2008-04-07_google_app_engine_launched)
   * [Under the Covers of the App Engine datastore](/space/datastore_talk.html) (slides)
+  * [YQL (Yahoo Query Language) thoughts](/space/yql+yahoo+query+language+thoughts)
