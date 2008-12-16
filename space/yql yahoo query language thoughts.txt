@@ -11,7 +11,11 @@ datastore](http://code.google.com/appengine/docs/datastore/overview.html), one
 part of Y!OS that immediately caught my eye was the
 [Yahoo! Query Language](http://developer.yahoo.com/yql/), or YQL. It's a
 SQL dialect and query processing engine that operates on data exposed by web
-services. Here's a brief description, along with my thoughts.
+services.
+
+Here's a brief description, along with my thoughts. See the
+[original post](/space/2008-12-16-yos_yahoo_open_strategy) for my thoughts on
+the rest of Y!OS.
 
 
 **Contents:**
@@ -240,3 +244,4 @@ new endpoint with the next version number.
   * [Amazon SimpleDB thoughts](/space/amazon+simpledb+thoughts)
   * [Google App Engine launched](/space/2008-04-07_google_app_engine_launched)
   * [Under the Covers of the App Engine datastore](/space/datastore_talk.html) (slides)
+  * [Yahoo! Open Strategy thoughts](/space/2008-12-16-yos_yahoo_open_strategy)
