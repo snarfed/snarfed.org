@@ -703,4 +703,4 @@ never be supported without something like two phase commit, though.
   * [Amazon SimpleDB thoughts](/space/amazon+simpledb+thoughts)
   * [Google App Engine launched](/space/2008-04-07_google_app_engine_launched)
   * [Under the Covers of the App Engine datastore](/space/datastore_talk.html) (slides)
-  * [YQL (Yahoo Query Language) thoughts](/space/yql+yahoo+query+language+thoughts)
+  * [Yahoo! Query Language thoughts](/space/yql+yahoo+query+language+thoughts)

@@ -1,0 +1,61 @@
+Y!OS: Yahoo Open Strategy
+
+<div style="float: right; margin-left: 10px">
+  <a href="http://developer.yahoo.com/yos/intro/">
+   <img src="/space/yahoo_exclamation_logo.gif" alt="yahoo exclamation logo" /></a>
+</div>
+
+I've already written about a few cloud computing services here -
+[Azure](/space/2008-11-22_windows_azure),
+[SimpleDB](/space/amazon+simpledb+thoughts),
+the [Facebook data store](/space/facebook+data+store+api+thoughts) -
+so I might as well continue down the list. Next up is
+[Yahoo! Open Strategy](http://developer.yahoo.com/yos/intro/) aka
+Y!OS, a collection of services and APIs that let developers integrate their
+web applications with Yahoo. I've done a separate
+[deep dive into YQL](/space/yql+yahoo+query+language+thoughts),
+the query language for Y!OS; I'll skim the rest of the platform here.
+
+Y!OS is an umbrella that includes a number of different APIs and services.
+At a high level, Y!OS is similar to platforms like
+[OpenSocial](http://opensocial.org/) and the
+[many](http://code.google.com/apis/gadgets/)
+[gadget](http://dev.netvibes.com/)
+[APIs](http://widgets.yahoo.com/tools/).
+It allows third party web applications to be distributed, discovered, and
+live inside Yahoo.
+Y!OS apps may be
+[installed](http://developer.yahoo.com/yap/guide/anatomy-my-applications.html)
+by Yahoo users,
+[run in various contexts](http://developer.yahoo.com/yap/guide/yap-anatomy.html)
+on Yahoo sites,
+use [Yahoo's custom markup language](http://developer.yahoo.com/yap/yml/),
+integrate with [Yahoo's social network](http://developer.yahoo.com/social/),
+and [access data](/space/yql+yahoo+query+language+thoughts) from Yahoo's
+various properties, including private data - if permitted -
+[via OAuth](http://developer.yahoo.com/oauth/guide/).
+
+<div style="float: left; margin-right: 10px">
+  <a href="http://developer.yahoo.com/yap/guide/yap-anatomy.html">
+   <img src="/space/yos_anatomy_snippet.png" alt="yos anatomy snippet" /></a>
+</div>
+
+There are
+[three runtime models](http://developer.yahoo.com/yap/guide/prog-model.html)
+for Y!OS apps: JavaScript
+via [Caja](http://developer.yahoo.com/yap/guide/caja-support.html),
+Flash, and traditional server side. Apps may be displayed in either
+[small](http://developer.yahoo.com/yap/guide/anatomy-small-view.html) or
+[canvas](http://developer.yahoo.com/yap/guide/anatomy-canvas-view.html) view,
+depending on the device and context. Both modes have a
+[conspicuous Yahoo container](http://developer.yahoo.com/yap/guide/anatomy-landing-page.html),
+including a header, footer, and banner ad. That last part is notable, since
+there's no mention of revenue sharing.
+
+Y!OS isn't really in the same league as full-fledged cloud offerings
+like [Amazon Web Services](http://aws.amazon.com/),
+[Windows Azure](/space/windows+azure+impressions), and
+[Google App Engine](/space/2008-04-07_google_app_engine_launched). It doesn't
+directly run third parties' code, nor does it host their data or static files.
+It's a more of a full featured web container and set of services. Still
+interesting, of course, just not my field.
