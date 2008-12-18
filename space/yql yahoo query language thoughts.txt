@@ -48,7 +48,7 @@ one of the usual suspect formats: RSS, ATOM, JSON, XML, etc.
 
 The drawback of YQL's generic, bring-your-own-data model is that it
 must often do full table scans and
-[process data in memory](/space/yql+yahoo+query+language+thoughts#remote).
+[process data in memory](/space/yql+yahoo+query+language+thoughts#local).
 Data sources can only offer shallow, rudimentary indexed queries themselves:
 only equality filters, ie no range or bounding box queries, only on
 hard-coded parameters, and subject to a
