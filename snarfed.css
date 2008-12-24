@@ -85,6 +85,10 @@ div#sidebar-shadow {
 img {
   border: none;
   padding: .1em;
+
+  // use better interpolation on IE. see:
+  // http://code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+  -ms-interpolation-mode: bicubic;
 }
 
 a {
