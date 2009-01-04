@@ -677,7 +677,7 @@ SQL Services is a schemaless structured database that lives in the cloud. It's
 based on sharded [SQL Server](http://www.microsoft.com/sql/). The entity model
 is similar to [Tables](/space/windows+azure+details#Tables).
 
-SQL service is intended to *complement* Tables. It doesn't scale quite as
+SQL Services is intended to *complement* Tables. It doesn't scale quite as
 automatically or easily, it's not intended to serve a high load of end user
 traffic, and it's expected to be much more expensive. However, it supports the
 more demanding traditional OLAP/OLTP usage patterns, and includes many of the
