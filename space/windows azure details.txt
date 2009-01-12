@@ -34,13 +34,14 @@ Also see my [overall impressions](/space/windows+azure+impressions) and
 * [Storage](/space/windows+azure+details#Storage)
    * [Tables](/space/windows+azure+details#Tables)
       * [Features](/space/windows+azure+details#Tables_Features)
-         * [Entity model](/space/windows+azure+details#Entity model)
+      * [Entity model](/space/windows+azure+details#Entity model)
       * [Queries](/space/windows+azure+details#Queries)
-         * [Consistency and Transactions](/space/windows+azure+details#Consistency and Transactions)
-      * [Implementation](/space/windows+azure+details#Implementation)
+      * [Consistency and Transactions](/space/windows+azure+details#Consistency and Transactions)
+      * [Schemas](/space/windows+azure+details#Schemas)
+      * [Implementation](/space/windows+azure+details#Tables Implementation)
    * [Queues](/space/windows+azure+details#Queues)
       * [Features](/space/windows+azure+details#Queues_Features)
-      * [Implementation](/space/windows+azure+details#Implementation)
+      * [Implementation](/space/windows+azure+details#Queues Implementation)
    * [Blobs](/space/windows+azure+details#Blobs)
 * [Developer Experience](/space/windows+azure+details#Developer Experience)
 * [SQL Services](/space/windows+azure+details#SQL Services)
@@ -423,7 +424,7 @@ scale to billions of entities and terabytes of data.
 
 
 <a name="Entity model"></a>
-##### Entity model [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Entity model)
+#### Entity model [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Entity model)
 
 Each entity has a table name and a schemaless, key/value property bag.
 Entities are limited to 1MB and 255 properties each. The supported property
@@ -474,7 +475,7 @@ results.
 
 
 <a name="Consistency and Transactions"></a>
-##### Consistency and Transactions [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Consistency and Transactions)
+#### Consistency and Transactions [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Consistency and Transactions)
 
 Azure tables is strongly consistent. Single entity writes are synchronous, and
 there are no dirty reads. ACID transactions are supported on single entities.
@@ -496,7 +497,10 @@ provide snapshot isolation, since they can use a single base timestamp. It's
 unclear what kind of isolation secondary index queries will provide, since
 they don't know if they'll be global or local.
 
-Schemas As mentioned before, Azure tables is schemaless, like the App Engine
+<a name="Schemas"></a>
+#### Schemas [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Schemas)
+
+As mentioned before, Azure tables is schemaless, like the App Engine
 datastore. There's a built-in Tables table that stores the list of tables
 currently used by an account, but not the properties or their types. It's
 queryable the same way as the normal tables.
@@ -508,8 +512,8 @@ path, or just leave both code paths in (ugh!).
 
 
 
-<a name="Implementation"></a>
-#### Implementation [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Implementation)
+<a name="Tables Implementation"></a>
+#### Implementation [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Tables Implementation)
 
 From discussions with [Brad Calder](http://www-cse.ucsd.edu/~calder/) et al,
 it sounds like tables is designed similarly to Bigtable plus the App Engine
@@ -568,8 +572,8 @@ that offers queueing functionality too. This is similar, but different, and
 doesn't share any code.
 
 
-<a name="Implementation"></a>
-#### Implementation [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Implementation)
+<a name="Queues Implementation"></a>
+#### Implementation [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Queues Implementation)
 
 The order that tasks are dequeued is roughly FIFO, but not exactly. The system
 makes no guarantees about starvation or fairness within a queue.
