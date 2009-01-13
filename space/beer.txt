@@ -10,12 +10,15 @@ img { vertical-align: text-top; }
 
 [Beer I'd like to try](/space/beer#to_try) and
 [beer I've tried](/space/beer#tried).
-![good](/good.png) means I liked it,
-![ok](/ok.png) means it was just ok,
-![bad](/bad.png) means I didn't like it.
+![good](/good.png) I liked,
+![ok](/ok.png) were just ok,
+![bad](/bad.png) I didn't like.
 
-Naturally, this isn't comprehensive. I've tried others that aren't listed here.
-This is mostly the more memorable, recent ones.
+Naturally, this isn't comprehensive -
+I've tried others that aren't listed here -
+and it's biased toward my taste. I tend to prefer darker beers: stouts,
+porters, and nut brown and red ales. I don't mind lighter ales and lagers, but
+some, like lambics and Belgian ales, I'm not a fan of.
 
 <a name="to_try"></a>
 **Beer I'd like to try**: 
