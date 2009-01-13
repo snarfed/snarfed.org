@@ -14,6 +14,8 @@ img { vertical-align: text-top; }
 ![ok](/ok.png) means it was just ok,
 ![bad](/bad.png) means I didn't like it.
 
+Naturally, this isn't comprehensive. I've tried others that aren't listed here.
+This is mostly the more memorable, recent ones.
 
 <a name="to_try"></a>
 **Beer I'd like to try**: 
@@ -60,7 +62,8 @@ img { vertical-align: text-top; }
 
 [Rogue](http://www.rogue.com/)
 [Hazelnut Brown Nectar](http://www.rogue.com/beers/hazelnut-brown.php)
-(brown ale),
+(brown ale)
+![bad](/bad.png),
 [Shakespeare Stout](http://www.rogue.com/beers/shakespeare-stout.php)
 ![bad](/bad.png)
 
@@ -99,9 +102,12 @@ img { vertical-align: text-top; }
 ![ok](/ok.png)
 
 [21st Amendment](http://www.21st-amendment.com/)
-[Watermelon Wheat](http://www.21st-amendment.com/beerlist/),
-[Amendment Pale Ale](http://www.21st-amendment.com/beerlist/),
-[Oyster Stout](http://www.21st-amendment.com/beerlist/),
+[Watermelon Wheat](http://www.21st-amendment.com/beerlist/)
+![good](/good.png),
+[Amendment Pale Ale](http://www.21st-amendment.com/beerlist/)
+![ok](/ok.png),
+[Oyster Stout](http://www.21st-amendment.com/beerlist/)
+![good](/good.png),
 [Double Trouble Imperial IPA](http://www.21st-amendment.com/beerlist/)
 ![good](/good.png)
 
@@ -130,13 +136,15 @@ img { vertical-align: text-top; }
 ![good](/good.png)
 
 [Negra Modelo](http://beeradvocate.com/beer/profile/75/667/)
-([Grupo Modelo](http://www.gmodelo.com/));
+([Grupo Modelo](http://www.gmodelo.com/);
  [Vienna lager](http://en.wikipedia.org/wiki/Vienna_lager))
 ![good](/good.png)
 
 [Samuel Smith](http://en.wikipedia.org/wiki/Samuel_Smith_Brewery)
-[Imperial Stout](http://beeradvocate.com/beer/profile/113/782),
-[Oatmeal Stout](http://beeradvocate.com/beer/profile/113/571/),
+[Imperial Stout](http://beeradvocate.com/beer/profile/113/782)
+![good](/good.png),
+[Oatmeal Stout](http://beeradvocate.com/beer/profile/113/571/)
+![good](/good.png),
 [Nut Brown Ale](http://beeradvocate.com/beer/profile/113/576)
 ![good](/good.png)
 
