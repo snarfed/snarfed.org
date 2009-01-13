@@ -330,3 +330,5 @@ div.img-shadow img, div.p-shadow pre {
 div.img-shadow img {
   margin: -4px 4px 4px -4px !important;  /* for firefox, it's weird w/imgs */
 }
+
+good, ok, bad, f, nf { font-style: italic; }

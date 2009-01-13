@@ -1,0 +1,159 @@
+beer
+
+<style type="text/css">
+img { vertical-align: text-top; }
+</style>
+
+<div style="float: right; margin-left: 10px">
+  <img src="/space/beer_taps.jpg" alt="yahoo exclamation logo" />
+</div>
+
+[Beer I'd like to try](/space/beer#to_try) and
+[beer I've tried](/space/beer#tried).
+![good](/good.png) means I liked it,
+![ok](/ok.png) means it was just ok,
+![bad](/bad.png) means I didn't like it.
+
+
+<a name="to_try"></a>
+**Beer I'd like to try**: 
+[![Icon-Permalink.png](/Icon-Permalink.png)](/space/beer#to_try)
+
+[Stone Brewing Co.](http://www.stonebrew.com/),
+[miscellaneous](http://www.stonebrew.com/beers/)
+
+[Green Flash Brewing Co.](http://greenflashbrew.com/),
+[miscellaneous](http://greenflashbrew.com/taproom.html)
+
+[Pizza Port](http://www.pizzaport.com/),
+[miscellaneous](http://www.pizzaport.com/grog.htm)
+
+[Russian River Brewing](http://www.russianriverbrewing.com/)
+[Damnation](http://russianriverbrewing.com/web/brews/damnation.htm)
+(golden ale),
+[Pliny the Younger](http://beeradvocate.com/beer/profile/863/21690)
+(double IPA),
+[Pliny the Elder](http://russianriverbrewing.com/web/brews/plinytheelder.htm)
+(double IPA)
+
+[Dogfish Head](http://www.dogfish.com/)
+[Theobroma](http://www.dogfish.com/brewings/Occasional_Rarities/Theobroma/66/index.htm)
+([chile light ale](http://beeradvocate.com/beer/style/163))
+
+
+<a name="tried"></a>
+**Beer I've tried**: 
+[![Icon-Permalink.png](/Icon-Permalink.png)](/space/beer#tried)
+
+[Harviestoun](http://www.harviestoun.com/)
+[Old Engine Oil](http://www.harviestoun.com/oldengineoil.htm)
+(black ale)
+![good](/good.png)
+
+[Anchor](http://www.anchorbrewing.com/)
+[Porter](http://www.anchorbrewing.com/beers/anchorporter.htm)
+![ok](/ok.png)
+
+[St. Peter's](http://www.stpetersbrewery.co.uk/)
+[Cream Stout](http://beeradvocate.com/beer/profile/296/2442/)
+![good](/good.png)
+
+[Rogue](http://www.rogue.com/)
+[Hazelnut Brown Nectar](http://www.rogue.com/beers/hazelnut-brown.php)
+(brown ale),
+[Shakespeare Stout](http://www.rogue.com/beers/shakespeare-stout.php)
+![bad](/bad.png)
+
+[Lion](http://www.lionbeer.com/)
+[Stout](http://beeradvocate.com/beer/profile/389/1115/)
+![good](/good.png)
+
+[Stone Brewing Co.](http://www.stonebrew.com/)
+[Arrogant Bastard Ale](http://www.stonebrew.com/arrogantbastard/)
+![good](/good.png)
+
+[Dogfish Head](http://www.dogfish.com/)
+[90 Minute IPA](http://www.dogfish.com/brewings/Year_Round_Beers/90_Minute_IPA/11/index.htm)
+![good](/good.png)
+
+[Dogfish Head](http://www.dogfish.com/)
+[Palo Santo Marron](http://www.dogfish.com/brewings/Year_Round_Beers/Palo_Santo_Marron/51/index.htm)
+(brown ale)
+![ok](/ok.png)
+
+[Lagunitas](http://www.lagunitas.com/)
+[Capuccino Stout](http://beeradvocate.com/beer/profile/220/20445)
+![bad](/bad.png)
+
+[Stockyard Oatmeal Stout](http://beeradvocate.com/beer/profile/1146/5688)
+([Goose Island](http://www.gooseisland.com/))
+![good](/good.png)
+
+[Allagash](http://www.allagash.com/)
+[Black](http://www.allagash.com/black.htm)
+(stout)
+![bad](/bad.png)
+
+Alaskan Brewing Co.
+[Smoked Porter](http://www.alaskanbeer.com/porter.html)
+![ok](/ok.png)
+
+[21st Amendment](http://www.21st-amendment.com/)
+[Watermelon Wheat](http://www.21st-amendment.com/beerlist/),
+[Amendment Pale Ale](http://www.21st-amendment.com/beerlist/),
+[Oyster Stout](http://www.21st-amendment.com/beerlist/),
+[Double Trouble Imperial IPA](http://www.21st-amendment.com/beerlist/)
+![good](/good.png)
+
+[Young's](http://www.youngs.co.uk/)
+[Double Chocolate Stout](http://en.wikipedia.org/wiki/Young's_Brewery#Beers)
+![good](/good.png)
+
+[Guinness](http://guinness.com/)
+(stout)
+![good](/good.png)
+
+[Gordon Biersch](http://gordonbiersch.com/)
+[Märzen](http://www.gordonbiersch.com/brewery/beer/)
+![bad](/bad.png)
+
+[Dos Equis](http://dosequis.com/)
+(amber lager)
+![good](/good.png)
+
+[Bass](http://bass.com/)
+(pale ale)
+![good](/good.png)
+
+[Newcastle](http://www.newcastlebrown.com/)
+(brown ale)
+![good](/good.png)
+
+[Negra Modelo](http://beeradvocate.com/beer/profile/75/667/)
+([Grupo Modelo](http://www.gmodelo.com/));
+ [Vienna lager](http://en.wikipedia.org/wiki/Vienna_lager))
+![good](/good.png)
+
+[Samuel Smith](http://en.wikipedia.org/wiki/Samuel_Smith_Brewery)
+[Imperial Stout](http://beeradvocate.com/beer/profile/113/782),
+[Oatmeal Stout](http://beeradvocate.com/beer/profile/113/571/),
+[Nut Brown Ale](http://beeradvocate.com/beer/profile/113/576)
+![good](/good.png)
+
+[Red Rocket](http://www.bearrepublic.com/ourbeers.php)
+([Bear Republic](http://www.bearrepublic.com/); red ale)
+![good](/good.png)
+
+[Racer 5 IPA](http://www.bearrepublic.com/ourbeers.php)
+([Bear Republic](http://www.bearrepublic.com/))
+![good](/good.png)
+
+[Old Rasputin](http://www.northcoastbrewing.com/beer-rasputin.htm)
+([North Coast Brewing](http://www.northcoastbrewing.com/beer-rasputin.htm);
+ imperial stout)
+![good](/good.png)
+
+[Abita](http://www.abita.com/)
+[Turbodog](http://www.abita.com/brews/turbodog.php)
+(dark brown ale)
+![good](/good.png)
