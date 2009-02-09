@@ -88,7 +88,7 @@ good bet that it will support YQL.
 
 YQL is notable in that it support third party data sources. XQuery/XPath does
 too, but YQL's [remote filters](/space/yql+yahoo+query+language+thoughts#remote) allow
-it to use at some efficient query mechanisms exposed by those sources, which
+it to use more efficient query mechanisms exposed by those sources, which
 XQuery/XPath can't do without help. LINQ supports third party data sources,
 but only somewhat, and they must install a LINQ driver first.
 
@@ -171,9 +171,9 @@ projection or local filtering.
 Remote filters are notable because they're the _only_ way to do efficient,
 indexed queries. All [local filters](/space/yql+yahoo+query+language+thoughts#local),
 [post-query functions](/space/yql+yahoo+query+language+thoughts#post_query),
-and other operations are evaluated data after it's returned by the data source.
-This means that any heavy lifting for scalability must be done in the data
-source itself.
+and other operations are evaluated after the initial results are returned by
+the data source. This means that remote filters cannot be used for any heavy
+lifting that impacts scalability.
 
 Along with filters, YQL can pass
 [paging parameters](http://developer.yahoo.com/yql/guide/limit-offset-statements.html)
