@@ -144,7 +144,8 @@ Scaling is hard.
 <div class="slide">
 <h1>What's ahead</h1>
 <ul>
-<li><b>Why transactions? Why across datacenters?</b></li>
+<li>Why transactions?</li>
+<li>Why across datacenters?</li>
 <li>Consistency</li>
 <li>Multihoming</li>
 <li>Techniques</li>
@@ -169,17 +170,7 @@ Scaling is hard.
 <li>Correctness</li>
 <li>Consistency</li>
 <li>Enforce invariants</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>ACID properties</h1>
-<ul>
-<li><b>A</b>tomic</li>
-<li><b>C</b>onsistent</li>
-<li><b>I</b>solated</li>
-<li><b>D</b>urable</li>
+<li>ACID</li>
 </ul>
 </div>
 
@@ -199,12 +190,38 @@ Scaling is hard.
 </div>
 
 
+<!-- <div class="slide"> -->
+<!-- <h1>ACID properties</h1> -->
+<!-- <ul> -->
+<!-- <li><b>A</b>tomic</li> -->
+<!-- <li><b>C</b>onsistent</li> -->
+<!-- <li><b>I</b>solated</li> -->
+<!-- <li><b>D</b>urable</li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+<div class="slide">
+<h1>What's ahead</h1>
+<ul>
+<li>Why transactions?</li>
+<li><b>Why across datacenters?</b></li>
+<li>Consistency</li>
+<li>Multihoming</li>
+<li>Techniques</li>
+<li>Tradeoffs</li>
+</ul>
+</div>
+
+
 <div class="slide">
 <h1>Why across datacenters?</h1>
 <ul>
 <li>Catastrophic failures</li>
 <li>Expected failures</li>
 <li>Routine maintennance</li>
+<li>Geolocality</li>
+  <ul><li>CDNs, edge caching</li></ul>
 </ul>
 </div>
 
@@ -230,7 +247,8 @@ Scaling is hard.
 <div class="slide">
 <h1>What's ahead</h1>
 <ul>
-<li>Why transactions? Why across datacenters?</li>
+<li>Why transactions?</li>
+<li>Why across datacenters?</li>
 <li><b>Consistency</b></li>
 <li>Multihoming</li>
 <li>Techniques</li>
@@ -255,7 +273,7 @@ Scaling is hard.
 <li>After a write, subsequent reads <i>may or may not</i> see the new data</li>
 <li>Best effort only</li>
 <li>"Message in a bottle"</li>
-<li>SMS, UDP</li>
+<li>IP/UDP, SMS, JPEG</li>
 <li>GMail: Web Clip history</li>
 </ul>
 </div>
@@ -266,7 +284,7 @@ Scaling is hard.
 <ul>
 <li>After a write, subsequent reads will <i>eventually</i> see the new data</li>
 <li>Search engine indexing</li>
-<li>DNS, SMTP, CDNs, snail mail</li>
+<li>DNS, SMTP, snail mail</li>
 <li>Amazon S3, SimpleDB</li>
 <li>GMail: mail delivery</li>
 </ul>
@@ -291,7 +309,8 @@ Scaling is hard.
 <div class="slide">
 <h1>What's ahead</h1>
 <ul>
-<li>Why transactions? Why across datacenters?</li>
+<li>Why transactions?</li>
+<li>Why across datacenters?</li>
 <li>Consistency</li>
 <li><b>Multihoming</b></li>
 <li>Techniques</li>
@@ -336,7 +355,7 @@ Scaling is hard.
   <li>Window of lost data</li>
   <li>Failover data may be inconsistent</li></ul>
 <li>Banks, brokerages, etc.</li>
-<li>Serving: ok for reads, bad for writes</li>
+<li>Geolocated for reads, not for writes</li>
 </div>
 
 
@@ -356,7 +375,7 @@ Scaling is hard.
 <!--   <li>Distributed consensus</li> -->
   <li>Amazon Web Services, Google</li>
   <li><i>Harder.</i></li></ul>
-<li>Good for catastrophic failure, serving</li>
+<li>Good for catastrophic failure, geolocality</li>
 </ul>
 </div>
 
@@ -367,11 +386,23 @@ Scaling is hard.
 <div class="slide">
 <h1>What's ahead</h1>
 <ul>
-<li>Why transactions? Why across datacenters?</li>
+<li>Why transactions?</li>
+<li>Why across datacenters?</li>
 <li>Consistency</li>
 <li>Multihoming</b></li>
 <li><b>Techniques</b></li>
 <li>Tradeoffs</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Interested in...</h1>
+<ul>
+<li>Replication</li>
+<li>Transactions</li>
+  <ul><li>distributed?</li>
+  <li>decentralized?</li></ul>
 </ul>
 </div>
 
@@ -419,6 +450,7 @@ Scaling is hard.
 <h1>Master/slave replication</h1>
 <ul>
 <li>Usually asynchronous</li>
+  <ul><li>Good for throughput, latency</li></ul>
 <li>Most RDBMSes</li>
   <ul><li>e.g. MySQL binary logs</li></ul>
 <li>Weak/eventual consistency</li>
@@ -449,9 +481,9 @@ Scaling is hard.
 <li><i>Centralized</i> consensus protocol</li>
 <li>Single coordinator (SPOF)</li>
 <li>1: propose, 2: vote, 3: commit/abort</li>
-<li>Heavyweight and blocking</li>
+<li>Heavyweight (high latency) and blocking</li>
   <ul><li>3PC buys non-blocking with extra message</li></ul>
-<li>Replication and transactions</li>
+<li>Replication and distributed transactions</li>
 <li>Supports true multihoming</li>
 </ul>
 </div>
@@ -460,14 +492,14 @@ Scaling is hard.
 <div class="slide">
 <h1>Paxos</h1>
 <ul>
-<li><i>Distributed</i> consensus protocol</li>
+<li><i>Decentralized, distributed</i> consensus protocol</li>
 <li>"Either Paxos, or Paxos with cruft, or broken"</li>
 <!--   <br />&nbsp;&nbsp;</li> -->
   <ul><li>Mike Burrows</li></ul>
 <li>Majority writes; survives minority failure</li>
 <li>Protocol similar to 2PC</li>
-<li>Lighter than 2PC/3PC, but still heavy</li>
-<li>Replication and transactions</li>
+<li>Lighter than 2PC/3PC, but still heavy, high latency</li>
+<li>Replication and distributed transactions</li>
 <li>Supports true multihoming</li>
 </ul>
 </div>
@@ -479,7 +511,8 @@ Scaling is hard.
 <div class="slide">
 <h1>What's ahead</h1>
 <ul>
-<li>Why transactions? Why across datacenters?</li>
+<li>Why transactions?</li>
+<li>Why across datacenters?</li>
 <li>Consistency</li>
 <li>Multihoming</li>
 <li>Techniques</li>
@@ -551,7 +584,7 @@ Scaling is hard.
 
 
 <div class="slide">
-<h1>Tradeoffs</h1>
+<h1>In conclusion...</h1>
 <p style="width: 80%; text-align: center; font-size: 180px">:'(</p>
 </div>
 
@@ -559,7 +592,8 @@ Scaling is hard.
 <div class="slide">
 <h1>What's behind</h1>
 <ul>
-<li>Why transactions? Why across datacenters?</li>
+<li>Why transactions?</li>
+<li>Why across datacenters?</li>
 <li>Consistency</li>
 <li>Multihoming</li>
 <li>Techniques</li>
@@ -570,6 +604,9 @@ Scaling is hard.
 
 <div class="slide">
 <h1>Questions?</h1>
+<br />
+<p style="text-align: center">
+ (slides will be on <a href="http://snarfed.org/">snarfed.org</a>)</p>
 </div>
 
 
