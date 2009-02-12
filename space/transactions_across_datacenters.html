@@ -36,9 +36,9 @@ div#footer {
 .slide h1 { text-transform: none; }
 .slide ul { margin-left: 1em; margin-right: 1em; margin-top: .2em; }
 .slide p { margin-left: .5em; }
-.transition { display: none; }
-
 .slide h1, #controls, #navLink { background-color: white; color: black; }
+
+#currentSlide { display: none; }
 
 div.pre {
   border: 1px solid black;
@@ -95,14 +95,12 @@ td.bad  { background-color: #ff4d6e; }
 <table><tr>
   <td><a href="http://appengine.google.com/"><img src="logo_en_appengine.gif" /></a></td>
   <td><h3><!-- <a href="http://snarfed.org/"> -->
-  &nbsp; &nbsp; Ryan Barrett<!-- </a> --> <br />
-  &nbsp; &nbsp; Software Engineer
+  &nbsp; &nbsp; Ryan Barrett<!-- </a> -->
   </h3></td>
 <!--   <td><a href="http://appengine.google.com/"><img src="appengine.jpg" /></a></td> -->
 </tr></table>
 </div>
 </div>
-javascript:void(0);
 
 <div class="presentation">
 
@@ -122,9 +120,9 @@ javascript:void(0);
 <div class="slide">
 <blockquote>
 Of three properties of distributed data systems - consistency, availability,
-reliability (tolerance to network partition) - choose two.
+partition tolerance - choose two.
 </blockquote>
-<p style="text-align: center"><small>&nbsp; -Eric Brewer (paraphrased),
+<p style="text-align: center"><small>&nbsp; -Eric Brewer, CAP theorem,
  <a href="http://www.cs.berkeley.edu/~brewer/cs262b-2004/PODC-keynote.pdf">
   PODC 2000</a>
 </small></p>
@@ -140,6 +138,16 @@ Scaling is hard.
 
 
 
+
+
+<div class="slide">
+<h1>GMail</h1>
+<ul>
+<li>Mail delivery: <i>eventual, guaranteed</i></li>
+<li>Mailbox operations: <i>immediate, guaranteed</i></li>
+<li>Web clip history: <i>best effort</i></li>
+</ul>
+</div>
 
 
 <div class="slide">
@@ -180,7 +188,7 @@ Scaling is hard.
 
 
 <div class="slide">
-<h1>Cliched example</h1>
+<h1>Cliched examples</h1>
 <ul>
 <li>Transfer money from A to B</li>
   <ul><li>subtract from A</li>
@@ -189,6 +197,7 @@ Scaling is hard.
   <ul><li>another transaction on A or B</li>
   <li>machine crashes</li>
   <li>...</li></ul>
+<li>Gmail: Archive email</li>
 </ul>
 </div>
 
@@ -229,6 +238,7 @@ Scaling is hard.
 <li>Best effort only</li>
 <li>"Message in a bottle"</li>
 <li>SMS, UDP</li>
+<li>GMail: Web Clip history</li>
 </ul>
 </div>
 
@@ -239,7 +249,8 @@ Scaling is hard.
 <li>After a write, subsequent reads will <i>eventually</i> see the new data</li>
 <li>Search engine indexing</li>
 <li>DNS, SMTP, CDNs, snail mail</li>
-<li>Amazon S3, SimpleDB, SQS</li>
+<li>Amazon S3, SimpleDB</li>
+<li>GMail: mail delivery</li>
 </ul>
 </div>
 
@@ -251,6 +262,7 @@ Scaling is hard.
 <li>File systems</li>
 <li>RDBMSes</li>
 <li>App Engine datastore, Azure tables</li>
+<li>GMail: mailbox operations</li>
 </ul>
 </div>
 
@@ -275,7 +287,7 @@ Scaling is hard.
 
 
 <div class="slide">
-<h1>Thinking acros datacenters</h1>
+<h1>Thinking across datacenters</h1>
 <ul>
 <li>Within a datacenter</li>
   <ul><li>High bandwidth: 1-100Gbps interconnects</li>
@@ -310,6 +322,8 @@ Scaling is hard.
   </ul>
 <li>Bad at catastrophic failure</li>
   <ul><li>Large scale data loss</li></ul>
+<li>Bad for serving</li>
+  <ul><li>Far from many users</li></ul>
 </ul>
 </div>
 
@@ -322,24 +336,27 @@ Scaling is hard.
   <li>Window of lost data</li>
   <li>Failover data may be inconsistent</li></ul>
 <li>Banks, brokerages, etc.</li>
+<li>Serving: ok for reads, bad for writes</li>
 </div>
 
 
 <div class="slide">
 <h1>Option 3: True multihoming</h1>
 <ul>
-<li>Simultaneous writes in different dcs, maintaining consistency</li>
-<li>Two-way</li>
-  <ul><li>Synchronous replication</li>
-  <li>Often 2PC</li>
+<li>Simultaneous writes in different DCs, maintaining consistency</li>
+<li>Two way</li>
+  <ul>
+<!--   <li>Synchronous replication</li> -->
+<!--   <li>Often 2PC</li> -->
   <li>NASDAQ</li>
   <li><i>Hard.</i></li></ul>
-<li>N-way</li>
-  <ul><li>Multi-master replication</li>
-  <li>Distributed consensus</li>
+<li>N way</li>
+  <ul>
+<!--   <li>Multi-master replication</li> -->
+<!--   <li>Distributed consensus</li> -->
   <li>Amazon Web Services, Google</li>
   <li><i>Harder.</i></li></ul>
-<li>Good at catastrophic failure</li>
+<li>Good for catastrophic failure, serving</li>
 </ul>
 </div>
 
@@ -370,9 +387,9 @@ Scaling is hard.
 <li>Common in RDBMSes</li>
 <li>Good for consistency, bad for throughput</li>
 <li>Optimizations</li>
-  <ul><li>shared locks, read/write locks (InnoDB)</li>
-  <li>SCN and read_committed (Oracle)</li></ul>
-<li>Not a distributed tx protocol</li>
+  <ul><li>shared locks, read/write locks</li>
+  <li>InnoDB (MySQL), Oracle</li></ul>
+<li>Not a distributed tx protocol by itself</li>
 </ul>
 </div>
 
@@ -386,7 +403,7 @@ Scaling is hard.
 <li>Useful variant: <i>multi version concurrency control</i></li>
 <!--   <ul><li>Keep past versions for consistent snapshots</li></ul> -->
 <li>Good for throughput, read-heavy workloads</li>
-<li>Not a distributed tx protocol</li>
+<li>Not a distributed tx protocol by itself</li>
 </ul>
 </div>
 
@@ -395,6 +412,7 @@ Scaling is hard.
 <h1>Multi-master replication</h1>
 <ul>
 <li>Umbrella term for merging concurrent writes</li>
+<li>Synchronous or asynchronous</li>
 <li>Supports true multihoming</li>
 <li>Need merge protocol, e.g. <i>timestamp oracle</i></li>
   <ul><li>Issues monotonically increasing timestamps</li>
@@ -408,7 +426,7 @@ Scaling is hard.
 <div class="slide">
 <h1>Two Phase Commit</h1>
 <ul>
-<li>Centralized consensus protocol</li>
+<li><i>Centralized</i> consensus protocol</li>
 <li>Single coordinator (SPOF)</li>
 <li>1: propose, 2: vote, 3: commit/abort</li>
 <li>Heavyweight and blocking</li>
@@ -420,10 +438,10 @@ Scaling is hard.
 <div class="slide">
 <h1>Paxos</h1>
 <ul>
-<li>"...or Paxos with cruft, or broken"</li>
+<li><i>Distributed</i> consensus protocol</li>
+<li>"Either Paxos, or Paxos with cruft, or broken"</li>
 <!--   <br />&nbsp;&nbsp;</li> -->
   <ul><li>Mike Burrows</li></ul>
-<li>Distributed consensus</li>
 <li>Majority writes; survives minority failure</li>
 <li>Protocol similar to 2PC</li>
 <li>Lighter than 2PC/3PC, but still heavy</li>
@@ -455,6 +473,9 @@ Scaling is hard.
 <br />
 <table class="chart">
 <!-- <tr><th></th><td></td><td></td><td></td><td></td></tr> -->
+<tr><th></th>
+ <th colspan="2">Paxos, 2PC</th>
+ <th colspan="2">Async replication</th></tr>
 <tr><th>Consistency</th>
  <td colspan="2" class="good">Strong</td>
  <td class="ok">Eventual</td>
@@ -475,13 +496,46 @@ Scaling is hard.
  <td class="ok">Minimal impact</td>
  <td class="bad">Read only</td></tr>
 </table>
-<p><small>(with artistic liberties)</small></p>
 </div>
 
 
 <div class="slide">
 <h1>Tradeoffs</h1>
-<p style="width: 80%; text-align: center; font-size: 180px">:`(</p>
+<br />
+<table class="chart">
+<!-- <tr><th></th><td></td><td></td><td></td><td></td></tr> -->
+<tr><th></th>
+ <th colspan="2">Paxos, 2PC</th>
+ <th colspan="2">Async replication</th></tr>
+<tr><th>Consistency</th>
+ <td colspan="2" class="good">Strong</td>
+ <td class="ok">Eventual</td>
+ <td class="bad">Weak</td></tr>
+<tr><th>Latency</th>
+ <td colspan="2" class="bad">High</td>
+ <td colspan="2" class="good">Low</td></tr>
+<tr><th>Throughput</th>
+ <td class="bad">Low</td>
+ <td class="ok">Medium</td>
+ <td colspan="2" class="good">High</td></tr>
+<tr><th>Data loss</th>
+ <td colspan="2" class="good">None</td>
+ <td class="ok">Some</td>
+ <td class="bad">Lots</td></tr>
+<tr><th>Failover</th>
+ <td colspan="2" class="good">N/A</td>
+ <td class="ok">Minimal impact</td>
+ <td class="bad">Read only</td></tr>
+<tr><th></th>
+ <td colspan="3" style="border: 1px dotted black; border-top: none;">
+   <b>GMail</b></td></tr>
+</table>
+</div>
+
+
+<div class="slide">
+<h1>Tradeoffs</h1>
+<p style="width: 80%; text-align: center; font-size: 180px">:'(</p>
 </div>
 
 
