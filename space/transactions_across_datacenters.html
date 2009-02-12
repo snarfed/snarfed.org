@@ -200,11 +200,26 @@ Scaling is hard.
 
 
 <div class="slide">
-<h1>Why across datacenters</h1>
+<h1>Why across datacenters?</h1>
 <ul>
 <li>Catastrophic failures</li>
 <li>Expected failures</li>
 <li>Routine maintennance</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Why <i>not</i> across datacenters?</h1>
+<ul>
+<li>Within a datacenter</li>
+  <ul><li>High bandwidth: 1-100Gbps interconnects</li>
+  <li>Low latency: < 1ms within a rack, < 5ms across</li>
+  <li>Little to no cost</li></ul>
+<li>Between datacenters</li>
+  <ul><li>Low bandwidth: 10Mbps-1Gbps</li>
+  <li>High latency: expect 100s of ms</li>
+  <li>$$$ for bandwidth or fiber</li></ul>
 </ul>
 </div>
 
@@ -281,21 +296,6 @@ Scaling is hard.
 <li><b>Multihoming</b></li>
 <li>Techniques</li>
 <li>Tradeoffs</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Thinking across datacenters</h1>
-<ul>
-<li>Within a datacenter</li>
-  <ul><li>High bandwidth: 1-100Gbps interconnects</li>
-  <li>Low latency: < 1ms within a rack, < 5ms across</li>
-  <li>Little to no cost</li></ul>
-<li>Between datacenters</li>
-  <ul><li>Low bandwidth: 10Mbps-1Gbps</li>
-  <li>High latency: expect 100s of ms</li>
-  <li>$$$ for bandwidth or fiber</li></ul>
 </ul>
 </div>
 
