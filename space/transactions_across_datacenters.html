@@ -77,7 +77,7 @@ table.chart td {
 
 th {
   font-weight: normal;
-  font-style: italic;
+//  font-style: italic;
 }
 
 td.good { background-color: #a9eb42; }
@@ -107,7 +107,7 @@ td.bad  { background-color: #ff4d6e; }
 
 <div class="slide title">
 <h1>Transactions Across Datacenters
-<small><small>(and other weekend projects)</small></small>
+<small><small><br />(and other weekend projects)</small></small>
 </h1>
 <br /><br />
 <h4><small>
@@ -142,6 +142,18 @@ Scaling is hard.
 
 
 <div class="slide">
+<h1>What's ahead</h1>
+<ul>
+<li><b>Why transactions? Why across datacenters?</b></li>
+<li>Consistency</li>
+<li>Multihoming</li>
+<li>Techniques</li>
+<li>Tradeoffs</li>
+</ul>
+</div>
+
+
+<div class="slide">
 <h1>GMail</h1>
 <ul>
 <li>Mail delivery: <i>eventual, guaranteed</i></li>
@@ -152,23 +164,7 @@ Scaling is hard.
 
 
 <div class="slide">
-<h1>What's ahead</h1>
-<ul>
-<li><b>Transactions</b></li>
-<li>Consistency</li>
-<li>Multihoming</li>
-<li>Techniques</li>
-  <ul><li>Locking</li>
-  <li>Optimistic concurrency</li>
-  <li>Two phase commit</li>
-  <li>Paxos</li></ul>
-<li>Tradeoffs</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Transactions</h1>
+<h1>Why transactions?</h1>
 <ul>
 <li>Correctness</li>
 <li>Consistency</li>
@@ -198,7 +194,17 @@ Scaling is hard.
   <ul><li>another transaction on A or B</li>
   <li>machine crashes</li>
   <li>...</li></ul>
-<li>Gmail: Archive email</li>
+<li>Gmail: archive an email</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Why across datacenters</h1>
+<ul>
+<li>Catastrophic failures</li>
+<li>Expected failures</li>
+<li>Routine maintennance</li>
 </ul>
 </div>
 
@@ -209,14 +215,10 @@ Scaling is hard.
 <div class="slide">
 <h1>What's ahead</h1>
 <ul>
-<li>Transactions</li>
+<li>Why transactions? Why across datacenters?</li>
 <li><b>Consistency</b></li>
 <li>Multihoming</li>
 <li>Techniques</li>
-  <ul><li>Locking</li>
-  <li>Optimistic concurrency</li>
-  <li>Two phase commit</li>
-  <li>Paxos</li></ul>
 <li>Tradeoffs</li>
 </ul>
 </div>
@@ -274,14 +276,10 @@ Scaling is hard.
 <div class="slide">
 <h1>What's ahead</h1>
 <ul>
-<li>Transactions</li>
+<li>Why transactions? Why across datacenters?</li>
 <li>Consistency</li>
 <li><b>Multihoming</b></li>
 <li>Techniques</li>
-  <ul><li>Locking</li>
-  <li>Optimistic concurrency</li>
-  <li>Two phase commit</li>
-  <li>Paxos</li></ul>
 <li>Tradeoffs</li>
 </ul>
 </div>
@@ -324,7 +322,8 @@ Scaling is hard.
 <li>Bad at catastrophic failure</li>
   <ul><li>Large scale data loss</li></ul>
 <li>Bad for serving</li>
-  <ul><li>Far from many users</li></ul>
+  <ul><li>Far from many users</li>
+  <li>Edge caching</li></ul>
 </ul>
 </div>
 
@@ -368,15 +367,22 @@ Scaling is hard.
 <div class="slide">
 <h1>What's ahead</h1>
 <ul>
-<li>Transactions</li>
+<li>Why transactions? Why across datacenters?</li>
 <li>Consistency</li>
 <li>Multihoming</b></li>
 <li><b>Techniques</b></li>
-  <ul><li>Locking</li>
-  <li>Optimistic concurrency</li>
-  <li>Two phase commit</li>
-  <li>Paxos</li></ul>
 <li>Tradeoffs</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Backups</h1>
+<ul>
+<li>Make a copy</li>
+<li>Sledgehammer</li>
+<li>Weak consistency</li>
+<li>Replication, not transactions</li>
 </ul>
 </div>
 
@@ -384,13 +390,13 @@ Scaling is hard.
 <div class="slide">
 <h1>Locking</h1>
 <ul>
-<li>Traditional; sledgehammer</li>
+<li>Sledgehammer</li>
 <li>Common in RDBMSes</li>
 <li>Good for consistency, bad for throughput</li>
 <li>Optimizations</li>
   <ul><li>shared locks, read/write locks</li>
   <li>InnoDB (MySQL), Oracle</li></ul>
-<li>Not a distributed tx protocol by itself</li>
+<li>Transactions, not replication</li>
 </ul>
 </div>
 
@@ -404,7 +410,20 @@ Scaling is hard.
 <li>Useful variant: <i>multi version concurrency control</i></li>
 <!--   <ul><li>Keep past versions for consistent snapshots</li></ul> -->
 <li>Good for throughput, read-heavy workloads</li>
-<li>Not a distributed tx protocol by itself</li>
+<li>Transactions, some replication</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Master/slave replication</h1>
+<ul>
+<li>Usually asynchronous</li>
+<li>Most RDBMSes</li>
+  <ul><li>e.g. MySQL binary logs</li></ul>
+<li>Weak/eventual consistency</li>
+<li>Replication, not transactions</li>
+  <ul><li>Granularity matters!</li></ul>
 </ul>
 </div>
 
@@ -413,13 +432,13 @@ Scaling is hard.
 <h1>Multi-master replication</h1>
 <ul>
 <li>Umbrella term for merging concurrent writes</li>
-<li>Synchronous or asynchronous</li>
-<li>Supports true multihoming</li>
-<li>Need merge protocol, e.g. <i>timestamp oracle</i></li>
-  <ul><li>Issues monotonically increasing timestamps</li>
-  <li>Use  to serialize writes</li>
+<li>Usually asynchronous</li>
+  <ul><li>Synchronous needs merge protocol to serialize writes</li>
+  <li>e.g. <i>timestamp oracle</i>: monotonically increasing timestamps</li>
   <li>Either SPOF with master election...</li>
   <li>...or distributed consensus protocol</li></ul>
+<li>Replication and transactions</li>
+<li>Supports true multihoming</li>
 </ul>
 </div>
 
@@ -431,7 +450,9 @@ Scaling is hard.
 <li>Single coordinator (SPOF)</li>
 <li>1: propose, 2: vote, 3: commit/abort</li>
 <li>Heavyweight and blocking</li>
-<li>3PC buys non-blocking with extra message</li>
+  <ul><li>3PC buys non-blocking with extra message</li></ul>
+<li>Replication and transactions</li>
+<li>Supports true multihoming</li>
 </ul>
 </div>
 
@@ -446,6 +467,8 @@ Scaling is hard.
 <li>Majority writes; survives minority failure</li>
 <li>Protocol similar to 2PC</li>
 <li>Lighter than 2PC/3PC, but still heavy</li>
+<li>Replication and transactions</li>
+<li>Supports true multihoming</li>
 </ul>
 </div>
 
@@ -456,14 +479,10 @@ Scaling is hard.
 <div class="slide">
 <h1>What's ahead</h1>
 <ul>
-<li>Transactions</li>
+<li>Why transactions? Why across datacenters?</li>
 <li>Consistency</li>
 <li>Multihoming</li>
 <li>Techniques</li>
-  <ul><li>Locking</li>
-  <li>Optimistic concurrency</li>
-  <li>Two phase commit</li>
-  <li>Paxos</li></ul>
 <li><b>Tradeoffs</b></li>
 </ul>
 </div>
@@ -475,8 +494,7 @@ Scaling is hard.
 <table class="chart">
 <!-- <tr><th></th><td></td><td></td><td></td><td></td></tr> -->
 <tr><th></th>
- <th colspan="2">Paxos, 2PC</th>
- <th colspan="2">Async replication</th></tr>
+ <th colspan="4">Paxos ... 2PC ... MMR ... MSR ... Backups</th></tr>
 <tr><th>Consistency</th>
  <td colspan="2" class="good">Strong</td>
  <td class="ok">Eventual</td>
@@ -504,10 +522,8 @@ Scaling is hard.
 <h1>Tradeoffs</h1>
 <br />
 <table class="chart">
-<!-- <tr><th></th><td></td><td></td><td></td><td></td></tr> -->
 <tr><th></th>
- <th colspan="2">Paxos, 2PC</th>
- <th colspan="2">Async replication</th></tr>
+ <th colspan="4">Paxos ... 2PC ... MMR ... MSR ... Backups</th></tr>
 <tr><th>Consistency</th>
  <td colspan="2" class="good">Strong</td>
  <td class="ok">Eventual</td>
@@ -528,7 +544,7 @@ Scaling is hard.
  <td class="ok">Minimal impact</td>
  <td class="bad">Read only</td></tr>
 <tr><th></th>
- <td colspan="3" style="border: 1px dotted black; border-top: none;">
+ <td colspan="4" style="border: 2px dotted black; border-top: none;">
    <b>GMail</b></td></tr>
 </table>
 </div>
@@ -543,14 +559,10 @@ Scaling is hard.
 <div class="slide">
 <h1>What's behind</h1>
 <ul>
-<li>Transactions</li>
+<li>Why transactions? Why across datacenters?</li>
 <li>Consistency</li>
 <li>Multihoming</li>
 <li>Techniques</li>
-  <ul><li>Locking</li>
-  <li>Optimistic concurrency</li>
-  <li>Two phase commit</li>
-  <li>Paxos</li></ul>
 <li>Tradeoffs</li>
 </ul>
 </div>
