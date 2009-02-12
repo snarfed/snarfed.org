@@ -145,8 +145,8 @@ Scaling is hard.
 <h1>What's ahead</h1>
 <ul>
 <li>Why transactions?</li>
-<li>Why across datacenters?</li>
 <li>Consistency</li>
+<li>Why across datacenters?</li>
 <li>Multihoming</li>
 <li>Techniques</li>
 <li>Tradeoffs</li>
@@ -201,46 +201,6 @@ Scaling is hard.
 <!-- </div> -->
 
 
-<div class="slide">
-<h1>What's ahead</h1>
-<ul>
-<li>Why transactions?</li>
-<li><b>Why across datacenters?</b></li>
-<li>Consistency</li>
-<li>Multihoming</li>
-<li>Techniques</li>
-<li>Tradeoffs</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Why across datacenters?</h1>
-<ul>
-<li>Catastrophic failures</li>
-<li>Expected failures</li>
-<li>Routine maintennance</li>
-<li>Geolocality</li>
-  <ul><li>CDNs, edge caching</li></ul>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Why <i>not</i> across datacenters?</h1>
-<ul>
-<li>Within a datacenter</li>
-  <ul><li>High bandwidth: 1-100Gbps interconnects</li>
-  <li>Low latency: < 1ms within a rack, < 5ms across</li>
-  <li>Little to no cost</li></ul>
-<li>Between datacenters</li>
-  <ul><li>Low bandwidth: 10Mbps-1Gbps</li>
-  <li>High latency: expect 100s of ms</li>
-  <li>$$$ for bandwidth or fiber</li></ul>
-</ul>
-</div>
-
-
 
 
 
@@ -248,8 +208,8 @@ Scaling is hard.
 <h1>What's ahead</h1>
 <ul>
 <li>Why transactions?</li>
-<li>Why across datacenters?</li>
 <li><b>Consistency</b></li>
+<li>Why across datacenters?</li>
 <li>Multihoming</li>
 <li>Techniques</li>
 <li>Tradeoffs</li>
@@ -310,8 +270,51 @@ Scaling is hard.
 <h1>What's ahead</h1>
 <ul>
 <li>Why transactions?</li>
-<li>Why across datacenters?</li>
 <li>Consistency</li>
+<li><b>Why across datacenters?</b></li>
+<li>Multihoming</li>
+<li>Techniques</li>
+<li>Tradeoffs</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Why across datacenters?</h1>
+<ul>
+<li>Catastrophic failures</li>
+<li>Expected failures</li>
+<li>Routine maintennance</li>
+<li>Geolocality</li>
+  <ul><li>CDNs, edge caching</li></ul>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Why <i>not</i> across datacenters?</h1>
+<ul>
+<li>Within a datacenter</li>
+  <ul><li>High bandwidth: 1-100Gbps interconnects</li>
+  <li>Low latency: < 1ms within a rack, < 5ms across</li>
+  <li>Little to no cost</li></ul>
+<li>Between datacenters</li>
+  <ul><li>Low bandwidth: 10Mbps-1Gbps</li>
+  <li>High latency: expect 100s of ms</li>
+  <li>$$$ for bandwidth or fiber</li></ul>
+</ul>
+</div>
+
+
+
+
+
+<div class="slide">
+<h1>What's ahead</h1>
+<ul>
+<li>Why transactions?</li>
+<li>Consistency</li>
+<li>Why across datacenters?</li>
 <li><b>Multihoming</b></li>
 <li>Techniques</li>
 <li>Tradeoffs</li>
@@ -340,9 +343,8 @@ Scaling is hard.
   </ul>
 <li>Bad at catastrophic failure</li>
   <ul><li>Large scale data loss</li></ul>
-<li>Bad for serving</li>
-  <ul><li>Far from many users</li>
-  <li>Edge caching</li></ul>
+<li>Not great for serving</li>
+  <ul><li>No geolocation</li></ul>
 </ul>
 </div>
 
@@ -373,9 +375,9 @@ Scaling is hard.
   <ul>
 <!--   <li>Multi-master replication</li> -->
 <!--   <li>Distributed consensus</li> -->
-  <li>Amazon Web Services, Google</li>
+  <li>Amazon, Google</li>
   <li><i>Harder.</i></li></ul>
-<li>Good for catastrophic failure, geolocality</li>
+<li>Handles catastrophic failure, geolocality</li>
 </ul>
 </div>
 
@@ -387,8 +389,8 @@ Scaling is hard.
 <h1>What's ahead</h1>
 <ul>
 <li>Why transactions?</li>
-<li>Why across datacenters?</li>
 <li>Consistency</li>
+<li>Why across datacenters?</li>
 <li>Multihoming</b></li>
 <li><b>Techniques</b></li>
 <li>Tradeoffs</li>
@@ -441,7 +443,7 @@ Scaling is hard.
 <li>Useful variant: <i>multi version concurrency control</i></li>
 <!--   <ul><li>Keep past versions for consistent snapshots</li></ul> -->
 <li>Good for throughput, read-heavy workloads</li>
-<li>Transactions, some replication</li>
+<li>Transactions, not replication</li>
 </ul>
 </div>
 
@@ -454,8 +456,8 @@ Scaling is hard.
 <li>Most RDBMSes</li>
   <ul><li>e.g. MySQL binary logs</li></ul>
 <li>Weak/eventual consistency</li>
-<li>Replication, not transactions</li>
   <ul><li>Granularity matters!</li></ul>
+<li>Replication, not transactions</li>
 </ul>
 </div>
 
@@ -464,13 +466,12 @@ Scaling is hard.
 <h1>Multi-master replication</h1>
 <ul>
 <li>Umbrella term for merging concurrent writes</li>
-<li>Usually asynchronous</li>
-  <ul><li>Synchronous needs merge protocol to serialize writes</li>
-  <li>e.g. <i>timestamp oracle</i>: monotonically increasing timestamps</li>
+<li>Usually asynchronous, eventual consistency</li>
+<li>Usually need <i>serialization</i> protocol</li>
+  <ul><li>e.g. <i>timestamp oracle</i>: monotonically increasing timestamps</li>
   <li>Either SPOF with master election...</li>
   <li>...or distributed consensus protocol</li></ul>
 <li>Replication and transactions</li>
-<li>Supports true multihoming</li>
 </ul>
 </div>
 
@@ -497,8 +498,8 @@ Scaling is hard.
 <!--   <br />&nbsp;&nbsp;</li> -->
   <ul><li>Mike Burrows</li></ul>
 <li>Majority writes; survives minority failure</li>
-<li>Protocol similar to 2PC</li>
-<li>Lighter than 2PC/3PC, but still heavy, high latency</li>
+<li>Protocol similar to 2PC/3PC</li>
+  <ul><li>Lighter, but still high latency</li></ul>
 <li>Replication and distributed transactions</li>
 <li>Supports true multihoming</li>
 </ul>
@@ -512,8 +513,8 @@ Scaling is hard.
 <h1>What's ahead</h1>
 <ul>
 <li>Why transactions?</li>
-<li>Why across datacenters?</li>
 <li>Consistency</li>
+<li>Why across datacenters?</li>
 <li>Multihoming</li>
 <li>Techniques</li>
 <li><b>Tradeoffs</b></li>
@@ -590,11 +591,11 @@ Scaling is hard.
 
 
 <div class="slide">
-<h1>What's behind</h1>
+<h1>What's behind (phew!)</h1>
 <ul>
 <li>Why transactions?</li>
-<li>Why across datacenters?</li>
 <li>Consistency</li>
+<li>Why across datacenters?</li>
 <li>Multihoming</li>
 <li>Techniques</li>
 <li>Tradeoffs</li>
