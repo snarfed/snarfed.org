@@ -516,8 +516,8 @@ path, or just leave both code paths in (ugh!).
 #### Implementation [![permalink](/Icon-Permalink.png)](/space/windows+azure+details#Tables Implementation)
 
 From discussions with [Brad Calder](http://www-cse.ucsd.edu/~calder/) et al,
-it sounds like tables is designed similarly to Bigtable plus the App Engine
-datastore's features
+it sounds like tables is designed similarly to Bigtable and the App Engine
+datastore.
 
 Notably, partitions are similar to Bigtable tablets, with a few of the added
 characteristics of App Engine's
