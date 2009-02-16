@@ -1,0 +1,31 @@
+Transactions Across Datacenters Slides
+
+<div style="float: right; margin-left: 10px">
+  <a href="/space/transactions_across_datacenters.html">
+   <img src="/space/datacenter.jpg" alt="datacenter" /></a>
+</div>
+
+I've posted the
+[slides](/space/transactions_across_datacenters.html)
+from a talk I gave recently at
+[USF](http://usf.edu/):
+[Transactions Across Datacenters](/space/transactions_across_datacenters.html).
+[Benjamin Wells](http://www.usfca.edu/artsci/fac_staff/W/wells_benjamin.html)
+invited me to speak as part of the
+[Special Lecture Series in Computer Science](http://web.cs.usfca.edu/courses).
+
+Here's the abstract:
+
+> If you work on distributed systems, you probably try to design your system
+> to keep running if any single machine fails. If you're ambitious, you
+> might extend this to entire racks, or even more inconvenient sets of
+> machines. However, what if your entire datacenter falls off the face of
+> the earth?
+> 
+> This talk will examine how current large scale storage systems handle
+> fault tolerance and consistency, with a particular focus on popular cloud
+> computing platforms. We'll cover techniques such as replication, sharding,
+> two phase commit, and consensus protocols (e.g. Paxos), then explore how
+> they can be applied across datacenters.
+
+Feedback is welcome!
