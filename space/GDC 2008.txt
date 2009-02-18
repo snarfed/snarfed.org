@@ -28,12 +28,12 @@ on analysis.
 
 [Microsoft's Community Games](/space/GDC+2008#community)  
 
-[Are Games Maturing?](/space/GDC+2008#maturing)  
+[Are Games Maturing?](/space/GDC+2008#maturing)
 - [Project Management](/space/GDC+2008#mgmt)  
 - [Business](/space/GDC+2008#business)  
 - [Game Design](/space/GDC+2008#design)  
 
-
+<br />
 <a name="developers"></a>
 ### [![permalink](/Icon-Permalink.png)](space/GDC+2008#developers) Goodbye Consoles, Hello Developers
 
@@ -157,7 +157,7 @@ indication, it's definitely on its way.
 
 
 <a name="mgmt"></a>
-### [![permalink](/Icon-Permalink.png)](/space/GDC+2008#mgmt) Project Management
+#### [![permalink](/Icon-Permalink.png)](/space/GDC+2008#mgmt) Project Management
 
 In the last few years, development best practices have been sure bets for GDC
 topics. Agile and scrum, continuous builds, automated regression testing, and
@@ -175,7 +175,7 @@ these practices in real world situations.
 
 
 <a name="design"></a>
-### [![permalink](/Icon-Permalink.png)](/space/GDC+2008#design) Game Design
+#### [![permalink](/Icon-Permalink.png)](/space/GDC+2008#design) Game Design
 
 <div class="img-shadow" style="float: right; margin-left: 10px">
   <a href="http://www.gamespot.com/news/6186636.html"><img src="/space/gdc_2008_portal.jpg" /></a>
@@ -218,7 +218,7 @@ unusual trends in game design recently.
 <br class="clearing" />
 
 <a name="business"></a>
-### [![permalink](/Icon-Permalink.png)](/space/GDC+2008#business) Business
+#### [![permalink](/Icon-Permalink.png)](/space/GDC+2008#business) Business
 
 As opposed to game development and design, the business of games has already
 matured in many respects. Still, a number of talks revealed encouraging new
