@@ -21,7 +21,7 @@ Also see my [technical writeup](/space/windows+azure+details) and
 * [Big bet for MS](/space/windows+azure+impressions#big_bet)
 * [Similar to existing offerings](/space/windows+azure+impressions#similar)
 * [Aimed at enterprise](/space/windows+azure+impressions#enterprise)
-* ["Use your existing tools, knowledge, and skill set"](/space/windows+azure+impressions#tools)
+* ["Use your existing tools, knowledge, and skill set."](/space/windows+azure+impressions#tools)
 * [Lots of information](/space/windows+azure+impressions#information)
 * ["Learn from our lessons."](/space/windows+azure+impressions#lessons)
 * [Azure is "open"](/space/windows+azure+impressions#open)
@@ -59,32 +59,32 @@ also provides some of the same high level features as
 [Google App Engine](http://appengine.google.com/), but it also has noticeable
 differences.
 
-Many of these are natural designs and solutions for building highly available
-distributed systems on commodity hardware, Given that, on its own, this
-wouldn't be too notable. The interesting part is that they did much of this
-expressly for Azure, so they had external users in mind from the beginning.
+Many of these are natural designs for building highly available, scalable
+systems on commodity hardware. Given that, the similarity isn't really
+surprising. The interesting part is that they did much of this expressly for
+Azure, so they had external users in mind from the beginning.
 
 Also, they've also committed to serious dogfooding, ie building and running
-their own hosted services on Azure, much more than other cloud providers.
-Azure [tables](/space/windows+azure+details#Tables),
+their own products on Azure, much more than other cloud providers. Azure
+[tables](/space/windows+azure+details#Tables),
 [queues](/space/windows+azure+details#Queues), and
 [blobs](/space/windows+azure+details#Blobs) all run on it. So do the .NET
 Services (service bus, access control, and workflow), SQL Services, Live
 Services, Dynamics CRM, and many others. They confirmed in person that they're
-working on porting even more of their existing hosted services to Azure.
+working on porting even more of their existing products to Azure.
 
 
 <a name="enterprise"></a>
 ### Aimed at enterprise [![permalink](/Icon-Permalink.png)](/space/windows+azure+impressions#enterprise) 
 
-MS is clearly aiming Azure at the enterprise first. Specifically, their
-messaging is very different from the current perception of many of the leading
-cloud offerings as being mainly for Web 2.0 startups and hobbyists. Azure's
-messaging was largely focused on enterprise - how it handles any enterprise
-apps, not just webapps, how it interoperates with existing "on-premises" systems
-and data sources, and how customers can use it to interoperate with each other.
-Almost all of the examples used in the talks were enterprises manufacturing,
-supply chain, ISVs, OEMs, service providers, etc.
+Azure is clearly aimed at enterprise first and foremost. MS's messaging is very
+different from many of the leading cloud offerings, which are pitched more
+toward Web 2.0 startups and hobbyists. Azure's messaging was focused on
+enterprise - how it handles any enterprise apps, not just webapps, how it
+interoperates with existing "on-premises" systems and data sources, and how
+customers can use it to interoperate with each other. Almost all of the examples
+used in the talks were enterprises manufacturing, supply chain, ISVs, OEMs,
+service providers, etc.
 
 One key part of this was the consistent message that the cloud didn't need to
 fully replace your existing on-premises apps. Instead, you could introduce it
@@ -107,7 +107,7 @@ tables.
 
 
 <a name="tools"></a>
-### "Use your existing tools, knowledge, and skill set" [![permalink](/Icon-Permalink.png)](/space/windows+azure+impressions#tools)
+### "Use your existing tools, knowledge, and skill set." [![permalink](/Icon-Permalink.png)](/space/windows+azure+impressions#tools)
 
 MS pushed the tools message very hard. You develop an Azure app with Visual
 Studio, IIS7, ASP, .NET CLR, WCF, Live ID, ADO, and the rest of the standard
