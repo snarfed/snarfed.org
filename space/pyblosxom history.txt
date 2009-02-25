@@ -3,15 +3,15 @@ history.py
 ![clock_icon.jpg](/space/clock_icon.jpg)
 
 For the impatient:  
-&nbsp; Download [history.py 0.4](/space/history.py)  
-&nbsp; Download [history-0.4.tar.gz](/space/history-0.4.tar.gz) (includes templates)  
+&nbsp; Download [history.py 0.5](/space/history.py)  
+&nbsp; Download [history-0.5.tar.gz](/space/history-0.5.tar.gz) (includes templates)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
 &nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)  
 &nbsp; [svnpyblosxom](http://www.baus.net/svnpyblosxom)
   ([simplified](http://0pointer.de/blog/projects/pyblosxom-svn.html)),
   a related plugin  
 
-*Updated 2007-09-02.*
+*Updated 2009-02-24.*
 
 [history.py](/space/history.py) is a [PyBlosxom](http://pyblosxom.sf.net/)
 plugin that displays change history for entries. The change history must
@@ -36,6 +36,15 @@ config.py:
 
 To use the Subversion backend, the [pysvn](http://pysvn.tigris.org/) module
 must be installed somewhere in your PYTHONPATH.
+
+
+### Config Parameters
+
+In addition to the `history_backend` parameter, you may also optionally
+specify a limit on the number of changes to fetch and display in the change
+history page. This is set via the `history_num_changes` parameter, e.g.:
+
+    py['history_num_changes'] = 20
 
 
 ### New Urls
