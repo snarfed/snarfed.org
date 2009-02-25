@@ -38,6 +38,16 @@ BACKENDS dictionary. If your backend uses its own config parameters, you'll
 also want to check for them in verify_installation().
 
 
+CONFIG PARAMETERS
+=================
+
+In addition to the `history_backend` parameter, you may also optionally
+specify a limit on the number of changes to fetch and display in the change
+history page. This is set via the `history_num_changes` parameter, e.g.:
+
+    py['history_num_changes'] = 20
+
+
 NEW URLS
 ========
 
@@ -117,6 +127,7 @@ diff-added, diff-removed, diff-changed, and diff-line-number.
 
 
 CHANGELOG:
+0.5 add history_num_changes config param
 0.4 update to work with pysvn 1.5.2
 0.3 bugfixes: handle change history w/only one version, etc.
 0.2 First release.
@@ -147,7 +158,7 @@ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
 GNU General Public License for more details.
 """
 __author__ = "Ryan Barrett"
-__version__ = "0.4"
+__version__ = "0.5"
 __url__ = "http://snarfed.org/space/pyblosxom+history"
 __description__ = "Displays change history, past versions, and diffs."
 
@@ -200,9 +211,12 @@ class VersionedEntry:
     """
     pass
 
-  def changes(self):
+  def changes(self, limit=0):
     """ Returns a list of changes for each version of this entry. The changes
     are dictionaries equivalent to those returned by the change() method.
+
+    If limit is specified, it limits the number of changes fetched and
+    returned. 0 means return all changes.
     """
     pass
 
@@ -269,8 +283,8 @@ class SubversionEntry(VersionedEntry):
 
     return self.__change_cache[version]
 
-  def changes(self):
-    changes = self.client.log(self.path)
+  def changes(self, limit=0):
+    changes = self.client.log(self.path, limit=limit)
 
     for change in changes:
       self.__format_change(change)
@@ -414,8 +428,8 @@ def version(versioned_entry, version, request):
   return data
 
 
-def history(versioned_entry):
-  changes = versioned_entry.changes()
+def history(versioned_entry, limit=0):
+  changes = versioned_entry.changes(limit=limit)
   diffs = []
 
   if len(changes) == 1:
@@ -484,14 +498,20 @@ def cb_filelist(args):
   """ Handles requests for version history pages.
   """
   request = args['request']
+  config = request.getConfiguration()
   form = request.getForm()
+
+  if 'history_num_changes' in config:
+    limit = config['history_num_changes']
+  else:
+    limit = 0
 
   history_fns = {
     'version': lambda (entry): version(entry, form.getvalue('version'),
                                        request),
     'diff': lambda (entry): diff(entry, form.getvalue('version1'),
                                  form.getvalue('version2')),
-    'history': history,
+    'history': lambda (entry): history(entry, limit=limit),
     }
 
   # TODO: detect multiple action params and fail with a reasonable error
