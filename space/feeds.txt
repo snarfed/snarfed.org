@@ -27,8 +27,8 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
 
 *Currently reading:* <a name="read"></a>
 
-<!-- keep this one when updating!!! -->
-* [Ryan Barrett's Friends' Facebook Status Updates](http://www.facebook.com/help.php?hq=rss+friends+status&ref=hq)
+<!-- keep this one as is!!! -->
+* [Ryan Barrett's Friends' Facebook Status Updates](http://snarfed.org/space/2009-03-05_facebook_friend_lists)
 
 
 * [3D Realms News](http://www.3drealms.com/)
