@@ -1,0 +1,55 @@
+Facebook Friend Lists
+
+[![facebook](/space/facebook_logo.png)](http://facebook.com/)
+
+[Facebook](http://facebook.com/)'s
+[Friend List](http://www.facebook.com/help.php?hq=friend+list&ref=hq)
+feature is invaluable. It lets you create lists for different groups of friends,
+like work, family, local, or just people you want to pay more (or less)
+attention to.
+
+![facebook: make a new list](/space/facebook_make_a_new_list.png)
+![facebook: short list](/space/facebook_friend_list.png)
+
+It's easy to add or remove individual people from a friend list, but at first
+glance, it seems difficult and tedious to make larger changes to friend lists.
+That's where the subtle, almost hidden,
+[Select Multiple Friends](http://www.facebook.com/help.php?hq=%22select+multiple+friends%22&ref=hq)
+link comes in. (It's next to the "Add to List" text box where you can type in a
+person's name to add to the friend list.)
+
+![facebook multi-friend-selector](/space/facebook_multi_friend_selector.png)
+
+It pops up a window that shows your friends visually, three across, and lets you
+click on them to add or remove them.
+
+The same interface is evidently used for inviting people to events, groups, etc.
+It's also exposed to Facebook Apps as
+[Fb:multi-friend-selector](http://wiki.developers.facebook.com/index.php/Fb:multi-friend-selector).
+
+<div style="float: right; margin-left: 10px">
+  <img src="/space/rss.jpg" />
+</div>
+
+I particularly like that the
+[RSS feeds](http://www.facebook.com/help.php?hq=rss+friends&ref=hq)
+for friends' status updates, posted items, etc. also support friend lists. I
+used to subscribe to the RSS feed for all of my friends' status updates, but it
+was _way_ too noisy. I now subscribe to a much smaller friend list.
+
+It's not all sunshine and kittens, though. The
+[News Feed Preferences](http://www.facebook.com/feed_prefs.php) page, which
+[lets you control](http://www.facebook.com/help.php?hq=news+feed+preferences&ref=hq)
+which people and kinds of stories are shown on your home page and news feed, is
+missing out. Its _More About These Friends_ and _Less About These Friends_ lists
+are in desperate need of friend list love!
+
+Otherwise, friend lists are great, particularly the RSS feed support. With
+that, I rarely have to actually use Facebook at all!
+
+**See also:**
+  * [How To Create Friend Lists on Facebook](http://www.slymarketing.com/2009/01/how-to-create-friends-lists-on-facebook/)
+  * [Students as Facebook Friends?](http://divisbyzero.com/2009/02/21/students-as-facebook-friends/)
+  * [Facebook Friends selection custom component](http://www.ajaxlines.com/ajax/stuff/article/facebook_friends_selection_custom_component.php)
+  * [Organise your friends with Facebook Friend Lists](http://imod.co.za/2008/01/02/organise-your-friends-with-facebook-friends-lists/)
+  * [Facebook Data Store API Thoughts](/space/facebook data store api thoughts)
