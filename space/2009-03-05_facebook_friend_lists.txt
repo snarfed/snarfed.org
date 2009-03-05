@@ -8,8 +8,8 @@ feature is invaluable. It lets you create lists for different groups of friends,
 like work, family, local, or just people you want to pay more (or less)
 attention to.
 
-![facebook: make a new list](/space/facebook_make_a_new_list.png)
-![facebook: short list](/space/facebook_friend_list.png)
+[![facebook: make a new list](/space/facebook_make_a_new_list.png)](http://www.facebook.com/friends/?ref=tn)
+[![facebook: short list](/space/facebook_friend_list.png)](http://www.facebook.com/friends/?ref=tn)
 
 It's easy to add or remove individual people from a friend list, but at first
 glance, it seems difficult and tedious to make larger changes to friend lists.
@@ -28,7 +28,7 @@ It's also exposed to Facebook Apps as
 [Fb:multi-friend-selector](http://wiki.developers.facebook.com/index.php/Fb:multi-friend-selector).
 
 <div style="float: right; margin-left: 10px">
-  <img src="/space/rss.jpg" />
+  <a href="/space/feeds"><img src="/space/rss.jpg" /></a>
 </div>
 
 I particularly like that the
