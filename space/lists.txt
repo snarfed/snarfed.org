@@ -1,0 +1,24 @@
+lists
+
+<div style="float: right; margin-left: 10px">
+  <img src="/space/scroll.png" alt="scroll" />
+</div>
+
+Lists of stuff.
+
+  * [archive](/space/archive)
+  * [beer](/space/beer)
+  * [books](/space/books)
+  * [chocolate](/space/chocolate)
+  * [feeds](/space/feeds)
+  * [games](/space/games)
+  * [podcasts](/space/podcasts)
+  * [software](/space/software)
+  * [talks](/space/talks)
+  * [tv](/space/tv)
+  * [writing](/space/writing)
+
+<!--
+  * [wine](/space/wine)
+  * [movies](/space/movies)
+-->
