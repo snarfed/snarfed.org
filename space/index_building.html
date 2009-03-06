@@ -1,0 +1,298 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>App Engine Index Building</title>
+<!-- metadata -->
+<meta name="generator" content="S5" />
+<meta name="version" content="S5 1.1" />
+<meta name="presdate" content="20080528" />
+<meta name="author" content="Ryan Barrett" />
+<meta name="company" content="Google Inc." />
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<link rel="stylesheet" href="ui/default/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/default/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/default/opera.css" type="text/css" media="projection" id="operaFix" />
+<!-- S5 JS -->
+<script src="ui/default/slides.js" type="text/javascript"></script>
+
+<style type="text/css">
+body, div#header, div#footer { background-image: none; color: black; background-color: white; }
+div#footer { height: 3em; }
+.slide h1 { text-transform: none; }
+.slide ul { margin-left: 1em; margin-right: 1em; margin-top: .2em; }
+.slide p { margin-left: .5em; }
+.transition { display: none; }
+
+.slide h1, #controls, #navLink { background-color: white; color: black; }
+
+div.pre {
+  border: 1px solid black;
+  background-color: #eeeeee;
+  white-space: pre;
+  color: #006000;
+  padding: .5em;
+}
+
+.pre {
+  font-family: monospace;
+}
+
+.slide code {
+  padding: 0;
+  color: #006000;
+}
+
+.slide a {
+  text-decoration: underline;
+}
+
+td { padding-right: 1em; }
+td.fixed-width { width: 10em; }
+</style>
+</head>
+<body>
+
+<div class="layout">
+<div id="controls"><!-- DO NOT EDIT --></div>
+<div id="currentSlide"><!-- DO NOT EDIT --></div>
+<div id="header"></div>
+<div id="footer">
+<table><tr><td><img src="google_logo.gif" /></td>
+  <td><h3>Ryan Barrett</h3></td></tr></table>
+</div>
+</div>
+javascript:void(0);
+
+<div class="presentation">
+
+<div class="slide title">
+<h1 style="text-align: center">
+<img src="appengine_highres.jpg" width="550" /><br />
+App Engine Index Building</h1>
+<p style="width: 100%; text-align: center">(also see the
+ <a href="http://code.google.com/appengine/articles/index_building.html">
+  article</a>)</p>
+</div>
+
+
+<div class="slide">
+<h1>What's ahead</h1>
+<ul>
+<li>Introduction</li>
+<li>Index layout</li>
+<li>Index building process</li>
+<li>Parallelizing work</li>
+<li>FAQs</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Introduction</h1>
+<ul>
+<li>building a new index</li>
+  <ul><li>populating it with data from existing entities</li></ul>
+<li>deleting an existing index</li>
+  <ul><li>removing existing index rows; similar process</li></ul>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Index building process</h1>
+<ol>
+<li>add new index definition (metadata) to app</li>
+<li>mark index definition "write only"</li>
+  <ul><li>write to it on puts and deletes</li>
+  <li>don't use it for queries</li></ul>
+<li>map over existing entities and populate index rows</li>
+<li>mark index definition "read/write"</li>
+</ol>
+</div>
+
+
+<div class="slide">
+<h1>Index deleting process</h1>
+<p>Similar to building:
+<ol>
+<li>mark index definition "deleted"</li>
+  <ul><li>don't write to it on puts or deletes</li>
+  <li>don't use it for queries</li></ul>
+<li>map over existing entities and remove index rows</li>
+<li>delete index definition</li>
+</ol>
+</div>
+
+
+<div class="slide">
+<h1>Index layout</h1>
+<ul>
+<li>internally, we call them "composite" indexes</li>
+  <ul><li>distinguishes from the built-in indexes</li>
+  <li>composite because they're compose of multiple property values</li></ul>
+<li>four <a href="http://labs.google.com/papers/bigtable.html">bigtable</a>
+    tables total for indices, across all apps</li>
+  <ul><li>one each for three built-in indices</li>
+    <ul><li>kind, single prop asc, single prop desc</li></ul>
+  <li>one for all composite indices</li></ul>
+<li>all index data is in row name, prefixed by app id</li>
+<li>composite indices also have secondary prefix: index id</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Index building</h1>
+<ul>
+<li>put/delete optimized to only calculate and update index <i>deltas</i></li>
+<li>put/delete also incorporate composite indices automatically</li>
+<li>this makes index building easy:</li>
+  <ul><li>map over all of app's data</li>
+  <li>read each entity and write it back, unchanged, in tx</li></ul>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Index deleting</h1>
+<ul>
+<li>index deleting is the same process</li>
+<li>on write, datastore automatically detects composite indexes 
+  marked "deleted" and removes their index rows</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Parallelizing work</h1>
+<ul>
+<li>want to split up mapping over app's datastore among many workers, in
+  parallel.</li>
+<li>want small, shorter-running chunks of work so that work is checkpointed
+  frequently and retries are small and short</li>
+<li>each worker takes out a <i>lease</i> on a chunk of work</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Parallelizing work</h1>
+<ul>
+<li>unfortunately, by design, bigtable doesn't provide an offset operation</li>
+  <ul><li>ie can't say e.g. "give me the 1000th row after this one"</li></ul>
+<li>makes it hard to split up work into equal sized chunks</li>
+<li>so we approximate: split up data by bigtable tablet</li>
+  <ul><li>each tablet can be handled by a separate worker, in parallel.</li></ul>
+</ul>
+</div>
+
+<div class="slide">
+<h1>Parallelizing work</h1>
+<ul>
+<li>also need to split the entities <i>within</i> each tablet</li>
+<li>split tablets into <code>n</code> pieces, each with
+  <i>sharding parameter</i> <code>k</code> in <code>[0, n)</code></li></ul>
+<li>hash each entity's key</li>
+<li>only operate on keys where hash(key) == k modulo n.</li>
+<li>can't just operate on every kth entity, since entities are
+  constantly being added and deleted</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Parallelizing work</h1>
+<p>note that each worker is still scanning over the entire tablet. however,
+this is relatively cheap compared to the multiple reads and writes
+required to build or delete the new index(es) for each entity. remember,
+disk bandwidth (ie large contiguous disk reads) are cheap, disk seeks
+are expensive!</p>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>FAQs</h1>
+<ul>
+<li>Q: why do indexes get stuck in Building or Deleting?</li>
+<li>A: most often, work chunks are too big for the lease period</li>
+   <ul><li>we increased the lease period, which helped, but wasn't
+   sustainable</li> <li>long term solution is the <code>k modulo n</code>
+   sharding, which was added recently</li></ul>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>FAQs</h1>
+<ul>
+<li>Q: why do indexes go into the "Error" state?</li>
+<li>A: see <a href="http://code.google.com/appengine/docs/datastore/queriesandindexes.html#Big_Entities_and_Exploding_Indexes">
+  Big Entities and Exploding Indexes</a></li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>FAQs</h1>
+<ul>
+<li>Q: why map over the app's whole datastore instead of just the entities of the
+  index's kind, using the built-in kind index?</li>
+<li>A: entity writes are <code>READ_CONSISTENT</code>
+  (see the <a href="http://code.google.com/appengine/articles/transaction_isolation.html">tx isolation article</a>),
+  but indices aren't, so the kind index might miss some entities.</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>FAQs</h1>
+<ul>
+<li>Q: when a composite index is deleted, why can't we just delete its index rows
+  directly? we could do a bigtable prefix scan with the app id and index id,
+  right?</li>
+<li>A1: we wish it was that easy! the entities themselves also store metadata about
+  the composite indices that apply to them, so we need to update that metadata
+  too.</li>
+<li>A2: also, composite indexes are subject to the same
+  <a href="http://code.google.com/appengine/articles/transaction_isolation.html">tx
+  isolation caveats</a> mentioned before.</li>
+</ul>
+</div>
+
+<div class="slide">
+<h1>FAQs</h1>
+<ul>
+<li>Q: when a composite index is deleted, why can't we just delete its index rows
+  directly? we could do a bigtable prefix scan with the app id and index id,
+  right?</li>
+<li>A1: we wish it was that easy! the entities themselves also store metadata about
+  the composite indices that apply to them, so we need to update that metadata
+  too.</li>
+<li>A2: also, composite indexes are subject to the same
+  <a href="http://code.google.com/appengine/articles/transaction_isolation.html">tx
+  isolation caveats</a> mentioned before.</li>
+</ul>
+</div>
+
+<div class="slide">
+<h1>Questions?
+ <small>(also see the
+ <a href="http://code.google.com/appengine/articles/index_building.html">
+  article</a>)</small>
+</h1>
+</div>
+
+
+
+</div>
+
+</body>
+</html>
