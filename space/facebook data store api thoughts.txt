@@ -18,18 +18,18 @@ evolution of the Facebook platform. It could be an indication of the
 direction Facebook plans to take the platform in the future.
 
 Here are some of my thoughts on this API, as well as a few responses from
-Haiping, in _italics_. Feel free to [add your own](/space/facebook+data+store+api+thoughts#comment-anchor)!
+Haiping, in _italics_. Feel free to [add your own](#comment-anchor)!
 
 ### Contents
-[Introduction](/space/facebook+data+store+api+thoughts#intro)  
-[Schema definition](/space/facebook+data+store+api+thoughts#schema)  
-[Data access](/space/facebook+data+store+api+thoughts#data_access)  
-[Transactions](/space/facebook+data+store+api+thoughts#transactions)  
-[Associations](/space/facebook+data+store+api+thoughts#associations)  
-[Preferences](/space/facebook+data+store+api+thoughts#preferences)  
+[Introduction](#intro)  
+[Schema definition](#schema)  
+[Data access](#data_access)  
+[Transactions](#transactions)  
+[Associations](#associations)  
+[Preferences](#preferences)  
 
 <a name="intro"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](/space/facebook+data+store+api+thoughts#intro) Introduction
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#intro) Introduction
 
 The Facebook data store is a very simple hosted database, accessible
 by a
@@ -38,7 +38,7 @@ by a
 delete operations, but no structured queries, full text search, or transactions.
 
 The one truly interesting feature it does provide is
-[associations](/space/facebook+data+store+api+thoughts#associations), which are foreign keys, with all the usual
+[associations](#associations), which are foreign keys, with all the usual
 constraints, but at the _row_ level, not the table level. These may be
 powerful enough to provide an alternative to querying on property values.
 
@@ -47,7 +47,7 @@ social networking - are obvious even in this first draft. It will be
 interesting to see how it evolves.
 
 <a name="schema"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](/space/facebook+data+store+api+thoughts#schema) Schema definition
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#schema) Schema definition
 
 As with most databases, Facebook apps must define their schema up front. A
 schema consists of
@@ -88,7 +88,7 @@ unfortunate at best, and dangerous at worst.
 > weakly typed model in handling return values.  
 
 <a name="data_access"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](/space/facebook+data+store+api+thoughts#data_access) Data access 
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#data_access) Data access 
 
 The API includes the standard
 [create](http://wiki.developers.facebook.com/index.php/Data.createObject),
@@ -144,7 +144,7 @@ Associations? etc.
 
 
 <a name="transactions"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](/space/facebook+data+store+api+thoughts#transactions) Transactions
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#transactions) Transactions
 
 Despite the heading of this section, there are no general-purpose transactions
 in the Facebook data store API. Fortunately, there is an
@@ -166,7 +166,7 @@ best we can hope for?
 
 
 <a name="associations"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](/space/facebook+data+store+api+thoughts#associations) Associations
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#associations) Associations
 
 [Associations](http://wiki.developers.facebook.com/index.php/Data_Store_API_documentation#Association_Data_Definition_API)
 are by far the most intriguing part of the data store API. They're
@@ -175,7 +175,7 @@ but they can be one-way or bidirectional, and, unlike SQL, they're set at
 the _object_ level instead of the object type level.
 
 Similar to object types and properties, associations are a kind of
-[schema](/space/facebook+data+store+api+thoughts#schema). Association types have string names, they must be
+[schema](#schema). Association types have string names, they must be
 [defined](http://wiki.developers.facebook.com/index.php/Data.defineAssociation)
 ahead of time, and they can be queried and modified on the fly. 
 
@@ -238,7 +238,7 @@ that makes them less useful.
 
 
 <a name="preferences"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](/space/facebook+data+store+api+thoughts#preferences) Preferences
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#preferences) Preferences
 
 The API has separate, dedicated storage for
 [per-app user preferences](http://wiki.developers.facebook.com/index.php/Data_Store_API_documentation#User_Preference_API).

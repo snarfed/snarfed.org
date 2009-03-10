@@ -20,25 +20,25 @@ the rest of Y!OS.
 
 **Contents:**
 
-* [Introduction (and conclusion)](/space/yql+yahoo+query+language+thoughts#intro)
-* [Related work](/space/yql+yahoo+query+language+thoughts#related)
-* [Data model](/space/yql+yahoo+query+language+thoughts#data_model)
-* [Filtering](/space/yql+yahoo+query+language+thoughts#filtering)
-   * [Local filters](/space/yql+yahoo+query+language+thoughts#local)
-   * [Remote filters](/space/yql+yahoo+query+language+thoughts#remote)
-   * [Post-query functions](/space/yql+yahoo+query+language+thoughts#post_query)
-* [REST interface](/space/yql+yahoo+query+language+thoughts#rest)
+* [Introduction (and conclusion)](#intro)
+* [Related work](#related)
+* [Data model](#data_model)
+* [Filtering](#filtering)
+   * [Local filters](#local)
+   * [Remote filters](#remote)
+   * [Post-query functions](#post_query)
+* [REST interface](#rest)
 
 
 <a name="intro"></a>
-### Introduction (and conclusion) [![permalink](/Icon-Permalink.png)](/space/yql+yahoo+query+language+thoughts#intro)
+### Introduction (and conclusion) [![permalink](/Icon-Permalink.png)](#intro)
 
 As mentioned, YQL is a query language based on SQL. It serves primarily as a
 unified interface to Yahoo's various web properties, such as
 [Flickr](http://flickr.com/), [Yahoo! Maps](http://maps.yahoo.com/), and
 [Upcoming](http://upcoming.yahoo.com/). The query engine itself is hosted by
 Yahoo; users make queries by sending HTTP requests to a
-[REST endpoint](/space/yql+yahoo+query+language+thoughts#rest).
+[REST endpoint](#rest).
 
 Currently, YQL is _not_ part of a cloud database. It's strictly a hosted
 service for query processing. On the plus side, this means that YQL isn't
@@ -48,7 +48,7 @@ one of the usual suspect formats: RSS, ATOM, JSON, XML, etc.
 
 The drawback of YQL's generic, bring-your-own-data model is that it
 must often do full table scans and
-[process data in memory](/space/yql+yahoo+query+language+thoughts#local).
+[process data in memory](#local).
 Data sources can only offer shallow, rudimentary indexed queries themselves:
 only equality filters, ie no range or bounding box queries, only on
 hard-coded parameters, and subject to a
@@ -56,7 +56,7 @@ hard-coded parameters, and subject to a
 Worse, it's not clear that indexed queries are supported on third party data
 sources at all.
 
-All other operations are [done in memory](/space/yql+yahoo+query+language+thoughts#local),
+All other operations are [done in memory](#local),
 subject to a
 [30 second processing deadline](http://developer.yahoo.com/yql/guide/query-parameters.html).
 This limits those operations to minor post-processing and cosmetic tweaks,
@@ -69,7 +69,7 @@ what JSON is to XML and what XML-RPC was (and REST now is) to SOAP.
 
 
 <a name="related"></a>
-### Related work [![permalink](/Icon-Permalink.png)](/space/yql+yahoo+query+language+thoughts#related)
+### Related work [![permalink](/Icon-Permalink.png)](#related)
 
 YQL is similar to a number of modern query languages, including
 XPath/XQuery,
@@ -87,13 +87,13 @@ Even so, if Yahoo does offer a cloud database in the future, it's a
 good bet that it will support YQL.
 
 YQL is notable in that it support third party data sources. XQuery/XPath does
-too, but YQL's [remote filters](/space/yql+yahoo+query+language+thoughts#remote) allow
+too, but YQL's [remote filters](#remote) allow
 it to use more efficient query mechanisms exposed by those sources, which
 XQuery/XPath can't do without help. LINQ supports third party data sources,
 but only somewhat, and they must install a LINQ driver first.
 
 <a name="data_model"></a>
-### Data model [![permalink](/Icon-Permalink.png)](/space/yql+yahoo+query+language+thoughts#data_model)
+### Data model [![permalink](/Icon-Permalink.png)](#data_model)
 
 Data is [interpreted and structured
 hierarchically](http://developer.yahoo.com/yql/guide/language-chapt.html),
@@ -111,11 +111,11 @@ it manually.
 YQL supports queries on schema metadata as well as data. `SHOW tables` lists
 the tables provided by a data source, and `DESC <table>` describes a given
 table's hierarchical structure, fields, and
-[input parameters](/space/yql+yahoo+query+language+thoughts#remote), if any.
+[input parameters](#remote), if any.
 
 
 <a name="filtering"></a>
-### Filtering [![permalink](/Icon-Permalink.png)](/space/yql+yahoo+query+language+thoughts#filtering)
+### Filtering [![permalink](/Icon-Permalink.png)](#filtering)
 
 YQL's syntax is similar to SQL:
 
@@ -125,7 +125,7 @@ YQL's syntax is similar to SQL:
 
 
 Notably, unlike most of the
-[related projects](/space/yql+yahoo+query+language+thoughts#related),
+[related projects](#related),
 YQL also supports sub-selects:
 
     SELECT fields FROM table
@@ -142,7 +142,7 @@ planner implements it on YQL's hierarchical, unindexed data.
 
  
 <a name="local"></a>
-#### Local filters [![permalink](/Icon-Permalink.png)](/space/yql+yahoo+query+language+thoughts#local)
+#### Local filters [![permalink](/Icon-Permalink.png)](#local)
 
 YQL supports
 [two types of query filters](http://developer.yahoo.com/yql/guide/select-from-where-statements.html):
@@ -156,7 +156,7 @@ data model, using dot notation to access inner fields, e.g.
 `WHERE person.address.zip = 90000`.
 
 <a name="remote"></a>
-#### Remote filters [![permalink](/Icon-Permalink.png)](/space/yql+yahoo+query+language+thoughts#remote)
+#### Remote filters [![permalink](/Icon-Permalink.png)](#remote)
 
 Remote filters are handled by the data source, and may only use the equality
 operator. The fields that support remote filtering for a given table are called
@@ -169,8 +169,8 @@ required to. That means that input parameters aren't always available for
 projection or local filtering.
 
 Remote filters are notable because they're the _only_ way to do efficient,
-indexed queries. All [local filters](/space/yql+yahoo+query+language+thoughts#local),
-[post-query functions](/space/yql+yahoo+query+language+thoughts#post_query),
+indexed queries. All [local filters](#local),
+[post-query functions](#post_query),
 and other operations are evaluated after the initial results are returned by
 the data source. This means that remote filters cannot be used for any heavy
 lifting that impacts scalability.
@@ -178,10 +178,10 @@ lifting that impacts scalability.
 Along with filters, YQL can pass
 [paging parameters](http://developer.yahoo.com/yql/guide/limit-offset-statements.html)
 to the remote data source. These are similar to
-[`LIMIT` and `OFFSET`](/space/yql+yahoo+query+language+thoughts#post_query), except
+[`LIMIT` and `OFFSET`](#post_query), except
 they're evaluated at the data source, after the remote filters are applied but
-before the [local filters](/space/yql+yahoo+query+language+thoughts#local) and
-[post-query functions](/space/yql+yahoo+query+language+thoughts#post_query). This means
+before the [local filters](#local) and
+[post-query functions](#post_query). This means
 that they'll usually be efficient, as opposed to `LIMIT` and `OFFSET`, which
 must calculate the result set and then slice it in memory.
 
@@ -192,14 +192,14 @@ you need, but still, this will likely be a source of confusion for developers.
 
 
 <a name="post_query"></a>
-#### Post-query functions [![permalink](/Icon-Permalink.png)](/space/yql+yahoo+query+language+thoughts#post_query)
+#### Post-query functions [![permalink](/Icon-Permalink.png)](#post_query)
 
 YQL provides a number of functions for modifying the result set once it's been
-determined by the [remote](/space/yql+yahoo+query+language+thoughts#remote) and
-[local](/space/yql+yahoo+query+language+thoughts#local) filters. They include `sort`,
+determined by the [remote](#remote) and
+[local](#local) filters. They include `sort`,
 `tail`, `truncate`, `reverse`, and `unique`.
 
-Like [local filters](/space/yql+yahoo+query+language+thoughts#local), these are applied
+Like [local filters](#local), these are applied
 in memory. In particular, `sort` only sorts the result set itself, _not_ the
 entire data source. This is a necessary limitation, but it's still
 unfortunate, and will almost certainly be another source of confusion.
@@ -210,7 +210,7 @@ as `truncate` and `tail`. It's unclear why YQL has both.
 
 
 <a name="rest"></a>
-### REST interface [![permalink](/Icon-Permalink.png)](/space/yql+yahoo+query+language+thoughts#rest)
+### REST interface [![permalink](/Icon-Permalink.png)](#rest)
 
 YQL is exposed on a single REST endpoint,
 [`query.yahooapis.com/v1/yql`](http://developer.yahoo.com/yql/guide/query-parameters.html).

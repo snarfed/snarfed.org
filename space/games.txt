@@ -6,8 +6,8 @@ img { vertical-align: text-top; }
 
 [![/space/twinsens_odyssey.jpg](/space/twinsens_odyssey.jpg)](http://www.twinadv.net/lba2/)[![/space/sam_and_max.jpg](/space/sam_and_max.jpg)](http://www.samandmax.net/)[![/space/hitman.jpg](/space/hitman.jpg)](http://www.ioi.dk/games/hitman1.htm)
 
-[Games I've played](/space/games#played) and
-[games I'd like to play](/space/games#to_play).
+[Games I've played](#played) and
+[games I'd like to play](#to_play).
 ![good](/good.png) means I liked it,
 ![ok](/ok.png) means it was just ok,
 ![bad](/bad.png) means I didn't like it.
@@ -15,7 +15,7 @@ img { vertical-align: text-top; }
 
 <a name="to_play"></a>
 **Games I'd like to play**:
-[![Icon-Permalink.png](/Icon-Permalink.png)](/space/games#to_play)
+[![Icon-Permalink.png](/Icon-Permalink.png)](#to_play)
 
   * [Noby Noby Boy](http://en.wikipedia.org/wiki/Noby_Noby_Boy)
 _([Keita Takahashi](http://en.wikipedia.org/wiki/Keita_Takahashi))_
@@ -60,7 +60,7 @@ Side](http://www.gaming-side.com/)/[Dream On](http://dreamon-studio.com/))_
 
 <a name="played"></a>
 **Games I've played**: 
-[![Icon-Permalink.png](/Icon-Permalink.png)](/space/games#played)
+[![Icon-Permalink.png](/Icon-Permalink.png)](#played)
 
   * [I-Fluid](http://i-fluid.com/)
 _([Exkee](http://exkee.com/))_

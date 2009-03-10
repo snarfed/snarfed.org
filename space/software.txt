@@ -1,12 +1,12 @@
 software
 ![/space/bolthead.png](/space/bolthead.png)![/space/maze.png](/space/maze.png)![/space/computer.png](/space/computer.png)
 
-Open source software I've [written](/space/software#projects) and
-[contributed to](/space/software#patches). Unless otherwise noted, everything
+Open source software I've [written](#projects) and
+[contributed to](#patches). Unless otherwise noted, everything
 is [GPL](http://www.gnu.org/licenses/gpl.html)ed.
 
 <a name="projects"></a>
-### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](/space/software#projects)
+### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](#projects)
 
   * [shell](http://shell.appspot.com/),
 [openid-provider](http://openid-provider.appspot.com/), and
@@ -114,7 +114,7 @@ email account.
 
 
 <a name="patches"></a>
-### Patches  [![Icon-Permalink.png](/Icon-Permalink.png)](/space/software#patches)
+### Patches  [![Icon-Permalink.png](/Icon-Permalink.png)](#patches)
 
   * Two minor patches
 ([one](http://pythonpaste.org/archives/message/20080210.035948.3e0d6399.en.html),

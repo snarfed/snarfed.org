@@ -4,9 +4,9 @@ why I don't run shells inside Emacs
 This article details
 my experience running shells inside [Emacs](http://gnu.org/software/emacs/). I
 take a while to warm up, so if you're impatient, feel free to skip to the [pros
-and cons](/space/why+I+don't+run+shells+inside+Emacs#pros_and_cons), the [.emacs
-settings](/space/why+I+don't+run+shells+inside+Emacs#settings), or the [related
-articles](/space/why+I+don't+run+shells+inside+Emacs#related).
+and cons](#pros_and_cons), the [.emacs
+settings](#settings), or the [related
+articles](#related).
 
 When I'm working, I pretty much live inside Emacs. It's my IDE, debugger, text
 editor, email composer, spreadsheet, file manager, and all-around scratch pad.

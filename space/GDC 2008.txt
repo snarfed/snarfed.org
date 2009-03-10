@@ -22,20 +22,20 @@ on analysis.
 
 ### Contents
 
-[Goodbye Consoles, Hello Developers](/space/GDC+2008#developers)  
+[Goodbye Consoles, Hello Developers](#developers)  
 
-[Social Networks and User Generated Content](/space/GDC+2008#social)  
+[Social Networks and User Generated Content](#social)  
 
-[Microsoft's Community Games](/space/GDC+2008#community)  
+[Microsoft's Community Games](#community)  
 
-[Are Games Maturing?](/space/GDC+2008#maturing)
-- [Project Management](/space/GDC+2008#mgmt)  
-- [Business](/space/GDC+2008#business)  
-- [Game Design](/space/GDC+2008#design)  
+[Are Games Maturing?](#maturing)
+- [Project Management](#mgmt)  
+- [Business](#business)  
+- [Game Design](#design)  
 
 <br />
 <a name="developers"></a>
-### [![permalink](/Icon-Permalink.png)](space/GDC+2008#developers) Goodbye Consoles, Hello Developers
+### [![permalink](/Icon-Permalink.png)](#developers) Goodbye Consoles, Hello Developers
 
 Like many businesses, a big part of game development is cyclical. Every five or
 six years sees a new generation of consoles, all usually launched within a year
@@ -58,7 +58,7 @@ among others.
 
 
 <a name="social"></a>
-### [![permalink](/Icon-Permalink.png)](space/GDC+2008#social) Social Networks and User Generated Content
+### [![permalink](/Icon-Permalink.png)](#social) Social Networks and User Generated Content
 
 [Like last year][], social networking and user-generated content reigned as the
 trendiest must-have game mechanics. Dozens of talks were devoted to them,
@@ -103,7 +103,7 @@ audience.
 
 
 <a name="community"></a>
-### [![permalink](/Icon-Permalink.png)](space/GDC+2008#community) Microsoft's Community Games
+### [![permalink](/Icon-Permalink.png)](#community) Microsoft's Community Games
 
 <div class="img-shadow" style="float: right; margin-left: 10px">
   <a href="http://forums.xna.com/ShowThread.aspx?PostID=46554"><img src="/space/gdc_2008_xbl_community.jpg" /></a>
@@ -131,7 +131,7 @@ Sony, Nintendo, are you listening? That certification process for [PSN][] and
 
 
 <a name="maturing"></a>
-### [![permalink](/Icon-Permalink.png)](space/GDC+2008#maturing) Are Games Maturing?
+### [![permalink](/Icon-Permalink.png)](#maturing) Are Games Maturing?
 
 <div class="img-shadow" style="float: left; margin-right: 10px">
   <a href="http://www.gamespot.com/news/6186460.html"><img src="/space/gdc_2008_awards.jpg" /></a>
@@ -157,7 +157,7 @@ indication, it's definitely on its way.
 
 
 <a name="mgmt"></a>
-#### [![permalink](/Icon-Permalink.png)](/space/GDC+2008#mgmt) Project Management
+#### [![permalink](/Icon-Permalink.png)](#mgmt) Project Management
 
 In the last few years, development best practices have been sure bets for GDC
 topics. Agile and scrum, continuous builds, automated regression testing, and
@@ -175,7 +175,7 @@ these practices in real world situations.
 
 
 <a name="design"></a>
-#### [![permalink](/Icon-Permalink.png)](/space/GDC+2008#design) Game Design
+#### [![permalink](/Icon-Permalink.png)](#design) Game Design
 
 <div class="img-shadow" style="float: right; margin-left: 10px">
   <a href="http://www.gamespot.com/news/6186636.html"><img src="/space/gdc_2008_portal.jpg" /></a>
@@ -218,7 +218,7 @@ unusual trends in game design recently.
 <br class="clearing" />
 
 <a name="business"></a>
-#### [![permalink](/Icon-Permalink.png)](/space/GDC+2008#business) Business
+#### [![permalink](/Icon-Permalink.png)](#business) Business
 
 As opposed to game development and design, the business of games has already
 matured in many respects. Still, a number of talks revealed encouraging new

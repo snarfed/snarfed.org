@@ -24,56 +24,56 @@ months...
 
 ### Contents
 
-[Big budgets and the return of the garage developer](/space/GDC 2006#budgets)
+[Big budgets and the return of the garage developer](#budgets)
 
-[Fun and games? Or strictly business?](/space/GDC 2006#business_or_fun)
+[Fun and games? Or strictly business?](#business_or_fun)
 
--[ Sony's PS3 keynote](/space/GDC 2006#sony)
+-[ Sony's PS3 keynote](#sony)
 
--[ Nintendo's DS and Revolution keynote](/space/GDC 2006#nintendo)
+-[ Nintendo's DS and Revolution keynote](#nintendo)
 
--[ Security and privacy meet SoX and the Feds](/space/GDC 2006#privacy)
+-[ Security and privacy meet SoX and the Feds](#privacy)
 
-[Games go data-driven](/space/GDC 2006#data-driven)
+[Games go data-driven](#data-driven)
 
--[ Tim Sweeney on building a game engine](/space/GDC 2006#tim_sweeney)
+-[ Tim Sweeney on building a game engine](#tim_sweeney)
 
--[ Emotional character control in Shadow of the Colossus](/space/GDC 2006#colossus)
+-[ Emotional character control in Shadow of the Colossus](#colossus)
 
--[ God of War: lead designer vs. lead programmer](/space/GDC 2006#god_of_war)
+-[ God of War: lead designer vs. lead programmer](#god_of_war)
 
--[ Different perspectives in Ninety-Nine Nights](/space/GDC 2006#n3)
+-[ Different perspectives in Ninety-Nine Nights](#n3)
 
-[How the pros invent games](/space/GDC 2006#game_design)
+[How the pros invent games](#game_design)
 
--[ Game design challenge: Nobel Peace Prize](/space/GDC 2006#challenge)
+-[ Game design challenge: Nobel Peace Prize](#challenge)
 
--[ Will Wright's keynote](/space/GDC 2006#will_wright)
+-[ Will Wright's keynote](#will_wright)
 
--[ Best game research of 2005](/space/GDC 2006#research)
+-[ Best game research of 2005](#research)
 
--[ Peter Molyneux goes MIA](/space/GDC 2006#molyneux)
+-[ Peter Molyneux goes MIA](#molyneux)
 
-[Metrics and analysis for...gameplay?](/space/GDC 2006#analysis)
+[Metrics and analysis for...gameplay?](#analysis)
 
--[ Playing with physics in Half-life 2](/space/GDC 2006#hl2)
+-[ Playing with physics in Half-life 2](#hl2)
 
--[ Ernest Adams on interactive fiction](/space/GDC 2006#ernest_adams)
+-[ Ernest Adams on interactive fiction](#ernest_adams)
 
--[ Burn, baby, burn](/space/GDC 2006#rant)
+-[ Burn, baby, burn](#rant)
 
-[Talks I missed](/space/GDC 2006#missed)
+[Talks I missed](#missed)
 
-[Extracurriculars!](/space/GDC 2006#extra)
+[Extracurriculars!](#extra)
 
--[ Independent Games Festival](/space/GDC 2006#igf)
+-[ Independent Games Festival](#igf)
 
--[ Game Developers' Choice Awards](/space/GDC 2006#choice_awards)
+-[ Game Developers' Choice Awards](#choice_awards)
 
--[ Video Games Live concert](/space/GDC 2006#concert)
+-[ Video Games Live concert](#concert)
 
 <a name="budgets"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#budgets) Big budgets and the return of the garage developer
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#budgets) Big budgets and the return of the garage developer
 
 A common refrain at [last year's GDC](/space/GDC 2005) was the unstoppable
 ballooning of game budgets and teams. Due to the need for higher and higher
@@ -100,7 +100,7 @@ shoestring. I don't know what this dichotomy means in the short term, but it's
 bound to be an interesting ride.
 
 <a name="business_or_fun"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#business_or_fun) Fun and games? Or strictly business?
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#business_or_fun) Fun and games? Or strictly business?
 
 [Microsoft](http://microsoft.com/)'s [Xbox 360](http://www.xbox.com/en-US/) was
 the platform keynote last year, so it was only natural that
@@ -109,7 +109,7 @@ this year's platform keynotes. Apart from the content, though, I was surprised
 at how much the _tone_ of the two keynotes reflected the companies
 themselves.
 
-<a name="sony"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#sony)
+<a name="sony"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](#sony)
 [Phil Harrison](http://www.cmpevents.com/gd06/a.asp?option=G&V=3&id=237356) gave
 [Sony's keynote](http://www.cmpevents.com/gd06/a.asp?option=C&V=11&SessID=2788)
 (more at [Slashdot](http://games.slashdot.org/games/06/03/22/208221.shtml),
@@ -149,7 +149,7 @@ screen treatment as their developers came on stage. It was a fitting end to a
 keynote that, for all its hard-headed business and glitzy eye candy, broke no
 new ground whatsoever.
 
-<a name="nintendo"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#nintendo)
+<a name="nintendo"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](#nintendo)
 The next day, [Satoru
 Iwata](http://www.cmpevents.com/gd06/a.asp?option=G&V=3&id=381380) gave
 [Nintendo's
@@ -197,7 +197,7 @@ Sony will still likely be the market leader in the next console generation, and
 Nintendo will still likely be third...but you have to admire their
 sincerity.
 
-<a name="privacy"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#privacy)
+<a name="privacy"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](#privacy)
 The next day, I stopped in at a roundtable on [security and privacy in
 games](http://www.cmpevents.com/gd06/a.asp?option=C&V=11&SessID=2334).
 Cryptographer [Elonka Dunin](http://www.elonka.com/) of
@@ -223,7 +223,7 @@ session and chat logs. It's far from the sexiest topic, but it is a sign that
 the game industry is maturing.
 
 <a name="data-driven"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#data-driven) Games go data-driven
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#data-driven) Games go data-driven
 
 I didn't go to many programming talks this year, but I still noticed a common
 theme. Bigger budgets for AAA games mean more opportunities for designers to
@@ -234,7 +234,7 @@ games more and more [data-driven](http://www.faqs.org/docs/artu/ch09s01.html),
 so that designers can take the reigns and create the game experience
 themselves.
 
-<a name="tim_sweeney"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#tim_sweeney)
+<a name="tim_sweeney"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](#tim_sweeney)
 [Tim Sweeney](http://www.cmpevents.com/gd06/a.asp?option=G&V=3&id=192499) of
 [Epic Games](http://epicgames.com/) drove this home in his
 [talk](http://www.cmpevents.com/gd06/a.asp?option=C&V=11&SessID=1540). Like
@@ -247,7 +247,7 @@ which is basically [mixins](http://c2.com/cgi/wiki?MixIn), and its design goal
 of orthogonality, ie component interoperability in all modes without
 constraints.
 
-<a name="colossus"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#colossus)
+<a name="colossus"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](#colossus)
 The engineering team behind [Shadow of the
 Colossus](http://www.us.playstation.com/Content/OGS/SCUS-97472/Site/) boiled
 this down in their
@@ -263,7 +263,7 @@ conflicted with their design, they cheated reality. _Reality lacks direction. To
 get true emotion, you need artistic
 control._
 
-<a name="god_of_war"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#god_of_war)
+<a name="god_of_war"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](#god_of_war)
 [Tim Moss](http://www.cmpevents.com/gd06/a.asp?option=G&V=3&id=409785), the [God
 of War](http://us.playstation.com/Content/OGS/SCUS-97399/Site/) lead programmer,
 took this to an extreme. In his
@@ -279,7 +279,7 @@ code!
 
 
 
-<a name="n3"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#n3)
+<a name="n3"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](#n3)
 The [Ninety Nine Nights](http://www.n3-game.jp/) team had an interesting spin on
 this. During their [talk on character
 design](http://www.cmpevents.com/gd06/a.asp?option=C&V=11&SessID=2376) (more at
@@ -300,13 +300,13 @@ brilliant games like [Space Channel
 [Lumines](http://www.luminesgame.com/) with a tired-looking Gauntlet clone?!?
 
 <a name="game_design"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#game_design) How the pros invent games
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#game_design) How the pros invent games
 
 Most of my favorite GDC talks each year come from the game design track, and
 this year didn't disappoint. There were lots of interesting new mechanics and
-innovations, both in the game design talks and in the [IGF](/space/GDC 2006#igf).
+innovations, both in the game design talks and in the [IGF](#igf).
 
-<a name="challenge"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#challenge)
+<a name="challenge"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](#challenge)
 [Eric Zimmerman](http://www.ericzimmerman.com/)'s [Game Design
 Challenge](http://www.cmpevents.com/gd06/a.asp?option=C&V=11&SessID=1625) is
 always a ton of fun. This year's mission, [design a game that could win the
@@ -354,7 +354,7 @@ down their weapons, help each other, and play games together happily ever after.
 It was too sweet for words.
 :P
 
-<a name="will_wright"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#will_wright)
+<a name="will_wright"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](#will_wright)
 [Will Wright](http://www.cmpevents.com/gd06/a.asp?option=G&V=3&id=434769),
 creator of the Sim games, is a legend in the game industry. His talks at GDC are
 always standing room only, and this year was no exception.
@@ -382,7 +382,7 @@ as clearly identifying what they needed to cut. Less than 10% of their original
 ideas survived, which Will thought was
 typical.
 
-<a name="research"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#research)
+<a name="research"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](#research)
 In a very different vein, [Jane McGonigal](http://avantgame.com/), [Ian
 Bogost](http://www.lcc.gatech.edu/~bogost/), and [Mia
 Consalvo](http://oak.cats.ohiou.edu/~consalvo/) presented the [top ten game
@@ -397,7 +397,7 @@ though, and [Avant Game](http://www.avantgame.com/top10.htm) has the slides and
 notes. I won't try to do better than refer you to them.
 :P
 
-<a name="molyneux"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#molyneux)
+<a name="molyneux"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](#molyneux)
 I was anxious to hear [Peter
 Molyneux](http://www.cmpevents.com/gd06/a.asp?option=G&V=3&id=188017) talk about
 game design again this year. He was fascinating [last year](/space/GDC 2005#molyneux), and [this
@@ -406,14 +406,14 @@ be equally compelling. Unfortunately, [his talk was
 cancelled](http://www.gamespot.com/news/6146650.html). I was disappointed.
 
 <a name="analysis"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#analysis) Metrics and analysis for...gameplay?
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#analysis) Metrics and analysis for...gameplay?
 
 Apart from new gameplay ideas, I was struck by how often I heard about metrics
 and analysis for something as ephemeral as gameplay. Many game developers were
 actively using quantitative tools to build and tweak the "sweet science" of
 their games' mechanics.
 
-<a name="hl2"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#hl2)
+<a name="hl2"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](#hl2)
 [Jay Stelly](http://www.cmpevents.com/gd06/a.asp?option=G&V=3&id=102444) spoke
 about how he and the other [Valve](http://valvesoftware.com/) designers created
 the physics-based gameplay of [Half-Life 2](http://half-life2.com/) (more at
@@ -430,7 +430,7 @@ compare skills in Half-Life 2: crates, the gravity gun, the glue gun, Dog. Valve
 used that to help decide what to keep and what to
 cut.
 
-<a name="ernest_adams"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#ernest_adams)
+<a name="ernest_adams"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](#ernest_adams)
 Meanwhile, [Ernest Adams](http://www.designersnotebook.com/) spoke about the
 [present and future of interactive
 storytelling](http://www.cmpevents.com/gd06/a.asp?option=C&V=11&SessID=1507). He
@@ -459,7 +459,7 @@ uncharitable of me to say so, but much of it was simply complaining that game
 writers (still!) don't get enough
 respect.
 
-<a name="rant"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#rant)
+<a name="rant"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](#rant)
 Finally, no GDC would be complete without a developer [analysis and rant
 session](http://www.cmpevents.com/gd06/a.asp?option=C&V=11&SessID=1911) led by
 [gameLab](http://gmlb.com/)'s [Eric Zimmerman](http://www.ericzimmerman.com/).
@@ -489,7 +489,7 @@ transcript](http://crystaltips.typepad.com/wonderland/2006/03/gdc_game_develo.ht
 is pretty thorough.
 
 <a name="missed"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#missed) Talks I missed
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#missed) Talks I missed
 
 There were many more talks I wish I could have heard. Here are a few.
 
@@ -541,7 +541,7 @@ sequel to The Longest Journey, [which I
 loved](/space/2005-08-04).
 
 <a name="extra"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#extra) Extracurriculars!
+### [![Icon-Permalink.png](/Icon-Permalink.png)](#extra) Extracurriculars!
 
 [![/space/choiceawards.jpg](/space/choiceawards.jpg)](http://www.gamechoiceawards.com/gdca_6th.htm)[![/space/igf.jpg](/space/igf.jpg)](http://igf.com/)[![/space/vglive.jpg](/space/vglive.jpg)](http://www.gdconf.com/networking/VGL.htm)
 
@@ -549,14 +549,14 @@ One of my favorite parts of GDC every year is the extracurriculars - the awards
 ceremonies, the booth crawls, the concerts, and the late nights drinking with
 people all over the industry.
 
-<a name="igf"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#igf)
+<a name="igf"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](#igf)
 As expected, [Darwinia](http://darwinia.co.uk/) swept the [IGF](http://igf.com/)
 awards (more at
 [Gamasutra](http://www.gamasutra.com/php-bin/news_index.php?story=8643)), and
 rightly so. It's really, really
 cool.
 
-<a name="choice_awards"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#choice_awards)
+<a name="choice_awards"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](#choice_awards)
 [Shadow of the
 Colossus](http://www.us.playstation.com/Content/OGS/SCUS-97472/Site/) took home
 Best Game and two other awards in the [Game Developer's Choice
@@ -572,7 +572,7 @@ lifetime achievement award, and [Chris Hecker](http://www.d6.com/users/checker/)
 was recognized for his involvement in the
 community.
 
-<a name="concert"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](/space/GDC+2006#concert)
+<a name="concert"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](#concert)
 Before going out Friday night, we went to the [Video Games Live
 concert](http://www.gdconf.com/networking/VGL.htm), which featured music from
 games past and present. (More at

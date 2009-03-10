@@ -9,34 +9,30 @@ notes](http://kodiak.brainymonkey.com/?m=200602). (If you're interested, I also
 have [notes from CodeCon 2005](/space/CodeCon 2005 notes) and [CodeCon
 2004](/space/CodeCon 2004).)
 
-### [Day 1](/space/CodeCon+2006+notes#day1)
-  * [Daylight Fraud Prevention (server-side phishing prevention)](/space/CodeCon+2006+notes#dfp)
-  * [SiteAdvisor (automated web safety ratings)](/space/CodeCon+2006+notes#siteadvisor)
-  * [VidTorrent (BitTorrent for streaming)](/space/CodeCon+2006+notes#vidtorrent)
-  * [Localhost (p2p filesharing based on ranking)](/space/CodeCon+2006+notes#localhost)
-  * [Truman (malware sandbox)](/space/CodeCon+2006+notes#truman)
-
-### [Day 2](/space/CodeCon+2006+notes#day2)
-  * [delta (minimizes input datasets)](/space/CodeCon+2006+notes#delta)
-  * [Djinni (approximating hard problems)](/space/CodeCon+2006+notes#djinni)
-  * [iGlance (p2p videoconferencing and screen sharing)](/space/CodeCon+2006+notes#iglance)
-  * [OASIS (anycast by finding local mirrors)](/space/CodeCon+2006+notes#oasis)
-  * [Query By Example (just what it sounds like!)](/space/CodeCon+2006+notes#qbe)
-
-### [Day 3](/space/CodeCon+2006+notes#day3)
-  * [Dido (dynamic phone menus on asterisk)](/space/CodeCon+2006+notes#dido)
-  * [Deme (group collaboration webapp)](/space/CodeCon+2006+notes#deme)
-  * [UniConf (unified system configuration)](/space/CodeCon+2006+notes#uniconf)
-  * [Remailer-To-Go (disposable anonymous remailers)](/space/CodeCon+2006+notes#remailer-to-go)
-  * [Monotone ("stress-free" source control)](/space/CodeCon+2006+notes#monotone)
-  * [Rhizome (wiki framework)](/space/CodeCon+2006+notes#rhizome)
-  * [Elsa/Oink/Cqual++ (static analysis for _dataflow_)](/space/CodeCon+2006+notes#elsa)
+### [Day 1](#day1)
+  * [Daylight Fraud Prevention (server-side phishing prevention)](#dfp)
+  * [SiteAdvisor (automated web safety ratings)](#siteadvisor)
+  * [VidTorrent (BitTorrent for streaming)](#vidtorrent)
+  * [Localhost (p2p filesharing based on ranking)](#localhost)
+  * [Truman (malware sandbox)](# [Day 2](#day2)
+  * [delta (minimizes input datasets)](#delta)
+  * [Djinni (approximating hard problems)](#djinni)
+  * [iGlance (p2p videoconferencing and screen sharing)](#iglance)
+  * [OASIS (anycast by finding local mirrors)](#oasis)
+  * [Query By Example (just what it sounds like!)](# [Day 3](#day3)
+  * [Dido (dynamic phone menus on asterisk)](#dido)
+  * [Deme (group collaboration webapp)](#deme)
+  * [UniConf (unified system configuration)](#uniconf)
+  * [Remailer-To-Go (disposable anonymous remailers)](#remailer-to-go)
+  * [Monotone ("stress-free" source control)](#monotone)
+  * [Rhizome (wiki framework)](#rhizome)
+  * [Elsa/Oink/Cqual++ (static analysis for _dataflow_)](#elsa)
 
 <a name="day1"></a>
-### **Day 1** [![Icon-Permalink.png](/Icon-Permalink.png)](/space/CodeCon+2006+notes#day1)
+### **Day 1** [![Icon-Permalink.png](/Icon-Permalink.png)](#day1)
 
 <a name="dfp"></a>
-### Daylight Fraud Prevention ([example](http://bank.securescience.net/bank/)) [![Icon-Permalink.png](/Icon-Permalink.png)](/space/CodeCon+2006+notes#dfp)
+### Daylight Fraud Prevention ([example](http://bank.securescience.net/bank/)) [![Icon-Permalink.png](/Icon-Permalink.png)](#dfp)
 
 
 _Anti-Phishing prevention, tracking and detection through real-time web-based
@@ -96,7 +92,7 @@ analysis. :P
 
 ### SiteAdvisor 
 <a name="siteadvisor"></a>
-[![Icon-Permalink.png](/Icon-Permalink.png)](/space/CodeCon+2006+notes#siteadvisor)
+[![Icon-Permalink.png](/Icon-Permalink.png)](#siteadvisor)
 
 
 _Pioneering Web safety by testing and rating every site, download, and form on
@@ -140,7 +136,7 @@ ppl in the audience worry that siteadvisor itself fits the conventional
 definition of spyware; it's only distinguished by its intent. funny.
 
 <a name="vidtorrent"></a>
-### VidTorrent / Peers  [![Icon-Permalink.png](/Icon-Permalink.png)](/space/CodeCon+2006+notes#vidtorrent)
+### VidTorrent / Peers  [![Icon-Permalink.png](/Icon-Permalink.png)](#vidtorrent)
 
 _A scalable real-time p2p streaming protocol._
 
@@ -185,7 +181,7 @@ these guys knew their stuff wrt real-world p2p overlay networks, network
 distance and b/w / latency behavior, etc. very cool.
 
 <a name="localhost"></a>
-### Localhost  [![Icon-Permalink.png](/Icon-Permalink.png)](/space/CodeCon+2006+notes#localhost)
+### Localhost  [![Icon-Permalink.png](/Icon-Permalink.png)](#localhost)
 
 _A popularity-based P2P file sharing system based on BitTorrent_
 
@@ -232,7 +228,7 @@ site](http://www.cs.princeton.edu/~felten/), though...not even abstract. does
 anyone know of one?
 
 <a name="truman"></a>
-### Truman  [![Icon-Permalink.png](/Icon-Permalink.png)](/space/CodeCon+2006+notes#truman)
+### Truman  [![Icon-Permalink.png](/Icon-Permalink.png)](#truman)
 
 _An open-source behavioral malware analysis sandnet_
 
@@ -245,10 +241,10 @@ really good. lots of interesting, detailed info about how malware works, and
 also a fair amount about vm detection.
 
 <a name="day2"></a>
-### **Day 2** [![Icon-Permalink.png](/Icon-Permalink.png)](/space/CodeCon+2006+notes#day2)
+### **Day 2** [![Icon-Permalink.png](/Icon-Permalink.png)](#day2)
 
 <a name="delta"></a>
-### delta  [![Icon-Permalink.png](/Icon-Permalink.png)](/space/CodeCon+2006+notes#delta)
+### delta  [![Icon-Permalink.png](/Icon-Permalink.png)](#delta)
 
 _Minimizing "interesting" files subject to a test of their interestingness._
 
@@ -311,7 +307,7 @@ delta for runtime failures, best: delta-minimize input, then delta-minimize code
 to just part that exhibits bug!
 
 <a name="djinni"></a>
-### Djinni  [![Icon-Permalink.png](/Icon-Permalink.png)](/space/CodeCon+2006+notes#djinni)
+### Djinni  [![Icon-Permalink.png](/Icon-Permalink.png)](#djinni)
 
 _Approximating Solutions to Nigh-Unsolvable Problems--Fast!_
 
@@ -367,7 +363,7 @@ not really my bag, but a friend who works in this area says he was impressed.
 he's considering trying it out.
 
 <a name="iglance"></a>
-### iGlance  [![Icon-Permalink.png](/Icon-Permalink.png)](/space/CodeCon+2006+notes#iglance)
+### iGlance  [![Icon-Permalink.png](/Icon-Permalink.png)](#iglance)
 
 _Open source push-to-talk videoconferencing and screen-sharing_
 
@@ -411,7 +407,7 @@ ice - more theory than practice - so he rolled his own. details in the
 [p2p-hackers archives](http://zgp.org/pipermail/p2p-hackers/2005-December/).
 
 <a name="oasis"></a>
-### OASIS  [![Icon-Permalink.png](/Icon-Permalink.png)](/space/CodeCon+2006+notes#oasis)
+### OASIS  [![Icon-Permalink.png](/Icon-Permalink.png)](#oasis)
 
 _Anycast for Any Service_
 
@@ -466,7 +462,7 @@ udp) and clients (ssh, irc, firefox) work w/o any changes on the client. _very_
 cool.
 
 <a name="qbe"></a>
-### Query By Example  [![Icon-Permalink.png](/Icon-Permalink.png)](/space/CodeCon+2006+notes#qbe)
+### Query By Example  [![Icon-Permalink.png](/Icon-Permalink.png)](#qbe)
 
 _Data mining operations within PostgreSQL_
 
@@ -540,7 +536,7 @@ even a little choked up. \*sniff\*!
 congratulations, len and meredith!!!
 
 <a name="day3"></a>
-### **Day 3** [![Icon-Permalink.png](/Icon-Permalink.png)](/space/CodeCon+2006+notes#day3)
+### **Day 3** [![Icon-Permalink.png](/Icon-Permalink.png)](#day3)
 
 up until now, len had spent his remarks mostly on thanking sponsors, etc. this
 morning he took the stage and talked a little more. he first asked if people had
@@ -562,7 +558,7 @@ intend to keep it at the under $100 price point for obvious reasons.
 and then the real final thanks to the volunteers, sponsors, organizers, etc...
 
 <a name="dido"></a>
-### Dido  [![Icon-Permalink.png](/Icon-Permalink.png)](/space/CodeCon+2006+notes#dido)
+### Dido  [![Icon-Permalink.png](/Icon-Permalink.png)](#dido)
 
 _A platform for writing dynamic voice menu systems, in Perl_
 
@@ -601,7 +597,7 @@ however, this is just a band-aid on a machanism (IVRs) that really needs to be
 rethought from the ground up.
 
 <a name="deme"></a>
-### Deme  [![Icon-Permalink.png](/Icon-Permalink.png)](/space/CodeCon+2006+notes#deme)
+### Deme  [![Icon-Permalink.png](/Icon-Permalink.png)](#deme)
 
 _A free/open-source platform for online group deliberation and dialogue_
 
@@ -647,7 +643,7 @@ evolutionary in most parts, but lots of cool ideas. focus on group action is
 definitely unusual and worthwhile.
 
 <a name="uniconf"></a>
-### UniConf  [![Icon-Permalink.png](/Icon-Permalink.png)](/space/CodeCon+2006+notes#uniconf)
+### UniConf  [![Icon-Permalink.png](/Icon-Permalink.png)](#uniconf)
 
 _Unified access to system, service, and application configuration._
 
@@ -670,7 +666,7 @@ also supports notifications when configs change, access control, etc.
 huge adoption hurdle, but a noble goal. :P
 
 <a name="remailer-to-go"></a>
-### Remailer To Go  [![Icon-Permalink.png](/Icon-Permalink.png)](/space/CodeCon+2006+notes#remailer-to-go)
+### Remailer To Go  [![Icon-Permalink.png](/Icon-Permalink.png)](#remailer-to-go)
 
 _Disposable anonymous remailers_
 
@@ -693,7 +689,7 @@ computer and a wireless card, determined the power req'ts (roughly two watts
 continuously), and hacked it all together. sooo amusing and fun.
 
 <a name="monotone"></a>
-### Monotone  [![Icon-Permalink.png](/Icon-Permalink.png)](/space/CodeCon+2006+notes#monotone)
+### Monotone  [![Icon-Permalink.png](/Icon-Permalink.png)](#monotone)
 
 _Low stress, high functionality version control._
 
@@ -739,7 +735,7 @@ most others?
 meh. another codecon, another version control system. good talk at least.
 
 <a name="rhizome"></a>
-### Rhizome  [![Icon-Permalink.png](/Icon-Permalink.png)](/space/CodeCon+2006+notes#rhizome)
+### Rhizome  [![Icon-Permalink.png](/Icon-Permalink.png)](#rhizome)
 
 _An application stack enabling the rapid development of collaborative,
 Semantic-Web enabled applications._
@@ -773,7 +769,7 @@ especially differentiated from all of the other wikis out there. :/
 control, and security project. :P
 
 <a name="elsa"></a>
-### Elsa/Oink/Cqual++  [![Icon-Permalink.png](/Icon-Permalink.png)](/space/CodeCon+2006+notes#elsa)
+### Elsa/Oink/Cqual++  [![Icon-Permalink.png](/Icon-Permalink.png)](#elsa)
 
 _A static-time whole-program dataflow analysis for C and C++_
 

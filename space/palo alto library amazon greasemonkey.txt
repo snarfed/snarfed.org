@@ -5,7 +5,7 @@ For the impatient:
 [Install Palo Alto Library](http://ryan.barrett.name/paloaltolibrary.user.js)
 (Right-click and select _Install User Script_)  
 [Scripts for other
-libraries](/space/palo+alto+library+amazon+greasemonkey#others)  
+libraries](#others)  
 [Get Firefox](http://getfirefox.com/)  in
 [Get
 Greasemonkey](http://downloads.mozdev.org/greasemonkey/greasemonkey_0.3.3.xpi)
@@ -16,7 +16,7 @@ that shows whether the book you're looking at is available in the [Palo Alto
 Libraries](http://cityofpaloalto.org/library/).
 
 There are plugins with similar functionality for other libraries and catalogs;
-[see below](/space/palo+alto+library+amazon+greasemonkey#others) for a list. The
+[see below](#others) for a list. The
 Palo Alto Library script differs mainly in its usability. Instead of simply
 linking to the library's search page, it displays the book's availability
 directly inside Amazon. More importantly, it's color-coded, since [users don't
@@ -52,7 +52,7 @@ script.
 
 Scripts for other libraries:
 <a name="others"></a>
-[![Icon-Permalink.png](/Icon-Permalink.png)](/space/palo+alto+library+amazon+greasemonkey#others)
+[![Icon-Permalink.png](/Icon-Permalink.png)](#others)
 
   * [UC
 Berkeley](http://dream.sims.berkeley.edu/~ryanshaw/wordpress/amazon2melvyl/)

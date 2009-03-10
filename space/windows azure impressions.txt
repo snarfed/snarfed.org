@@ -18,19 +18,19 @@ Also see my [technical writeup](/space/windows+azure+details) and
 
 **Contents:**
 
-* [Big bet for MS](/space/windows+azure+impressions#big_bet)
-* [Similar to existing offerings](/space/windows+azure+impressions#similar)
-* [Aimed at enterprise](/space/windows+azure+impressions#enterprise)
-* ["Use your existing tools, knowledge, and skill set."](/space/windows+azure+impressions#tools)
-* [Lots of information](/space/windows+azure+impressions#information)
-* ["Learn from our lessons."](/space/windows+azure+impressions#lessons)
-* [Azure is "open"](/space/windows+azure+impressions#open)
-* [Same old cloud questions](/space/windows+azure+impressions#standard_qs)
-* [Fix inconsistencies between SDK and prod!](/space/windows+azure+impressions#sdk_prod)
+* [Big bet for MS](#big_bet)
+* [Similar to existing offerings](#similar)
+* [Aimed at enterprise](#enterprise)
+* ["Use your existing tools, knowledge, and skill set."](#tools)
+* [Lots of information](#information)
+* ["Learn from our lessons."](#lessons)
+* [Azure is "open"](#open)
+* [Same old cloud questions](#standard_qs)
+* [Fix inconsistencies between SDK and prod!](#sdk_prod)
 
 
 <a name="big_bet"></a>
-### Big bet for MS [![permalink](/Icon-Permalink.png)](/space/windows+azure+impressions#big_bet)
+### Big bet for MS [![permalink](/Icon-Permalink.png)](#big_bet)
 
 It's clearly a big investiment of time, money, and people, and it has the full
 backing of senior execs. Quantitatively, it sounds like the Azure team is
@@ -43,7 +43,7 @@ they do arrive, they make a hell of an entrance.
 
 
 <a name="similar"></a>
-### Similar to existing offerings [![permalink](/Icon-Permalink.png)](/space/windows+azure+impressions#similar)
+### Similar to existing offerings [![permalink](/Icon-Permalink.png)](#similar)
 
 At minimum, Azure has feature parity with existing products like
 Amazon's [S3](http://aws.amazon.com/s3/),
@@ -75,7 +75,7 @@ working on porting even more of their existing products to Azure.
 
 
 <a name="enterprise"></a>
-### Aimed at enterprise [![permalink](/Icon-Permalink.png)](/space/windows+azure+impressions#enterprise) 
+### Aimed at enterprise [![permalink](/Icon-Permalink.png)](#enterprise) 
 
 Azure is clearly aimed at enterprise first and foremost. MS's messaging is very
 different from many of the leading cloud offerings, which are pitched more
@@ -107,7 +107,7 @@ tables.
 
 
 <a name="tools"></a>
-### "Use your existing tools, knowledge, and skill set." [![permalink](/Icon-Permalink.png)](/space/windows+azure+impressions#tools)
+### "Use your existing tools, knowledge, and skill set." [![permalink](/Icon-Permalink.png)](#tools)
 
 MS pushed the tools message very hard. You develop an Azure app with Visual
 Studio, IIS7, ASP, .NET CLR, WCF, Live ID, ADO, and the rest of the standard
@@ -122,7 +122,7 @@ by comparison.
 
 
 <a name="information"></a>
-### Lots of information [![permalink](/Icon-Permalink.png)](/space/windows+azure+impressions#information)
+### Lots of information [![permalink](/Icon-Permalink.png)](#information)
 
 MS provided *lots* of information. Not just tutorials and API references, but
 also details on how Azure itself is built and works under the covers.
@@ -146,9 +146,9 @@ Azure felt more and more solid.
 
 
 <a name="lessons"></a>
-### "Learn from our lessons." [![permalink](/Icon-Permalink.png)](/space/windows+azure+impressions#lessons)
+### "Learn from our lessons." [![permalink](/Icon-Permalink.png)](#lessons)
 
-Similar to the [information](/space/windows+azure+impressions#information)
+Similar to the [information](#information)
 theme, another big part of their messaging was that they've built large-scale
 services, they've learned lessons and they've tried to bake those lessons into
 azure so that developers are encouraged, and occasionally forced, to do the
@@ -164,7 +164,7 @@ that were unflattering, even embarrassing, if they were also educational.
 
 
 <a name="open"></a>
-### Azure is "open" [![permalink](/Icon-Permalink.png)](/space/windows+azure+impressions#open)
+### Azure is "open" [![permalink](/Icon-Permalink.png)](#open)
 
 Azure Storage -
 [tables](/space/windows+azure+details#Tables),
@@ -190,7 +190,7 @@ fundamentally new about it now.
 
 
 <a name="standard_qs"></a>
-### Same old cloud questions [![permalink](/Icon-Permalink.png)](/space/windows+azure+impressions#standard_qs)
+### Same old cloud questions [![permalink](/Icon-Permalink.png)](#standard_qs)
 
 People continued to ask the standard questions they ask all cloud computing
 providers:
@@ -214,7 +214,7 @@ basically the same answers as everyone else.
 
 
 <a name="sdk_prod"></a>
-### Fix inconsistencies between SDK and prod! [![permalink](/Icon-Permalink.png)](/space/windows+azure+impressions#sdk_prod)
+### Fix inconsistencies between SDK and prod! [![permalink](/Icon-Permalink.png)](#sdk_prod)
 
 I got to talk to some of the trusted testers from
 [Sentient](http://www.sentient.co.uk/) and [HP](http://hp.com/), and one of

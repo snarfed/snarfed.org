@@ -17,7 +17,7 @@ For the impatient:
 uses a [plugin](http://pyblosxom.sourceforge.net/blog/registry/input/comments)
 to handle commenting.
 This patch adds [AJAX](http://en.wikipedia.org/wiki/Ajax_\(programming\))
-support to that plugin. [Try it!](/space/pyblosxom+ajax+comments#comment-anchor)
+support to that plugin. [Try it!](#comment-anchor)
 
 Specifically, comment previewing and posting can optionally use AJAX, as
 opposed to full HTTP POST requests. This avoids a full-size roundtrip and

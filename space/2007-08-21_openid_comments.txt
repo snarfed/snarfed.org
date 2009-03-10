@@ -10,7 +10,7 @@ A while back, I posted an
 [PyBlosxom](http://pyblosxom.sf.net/), the software that runs this site.
 
 Since then, I've added support for
-[OpenID comments](/space/2007-08-21_openid_comments#comment-anchor), using
+[OpenID comments](#comment-anchor), using
 the [comments_openid.py plugin](/space/pyblosxom+openid+comments).
 I've updated it to work with recent versions of PyBlosxom and
 [JanRain](http://www.janrain.com/)'s
@@ -18,6 +18,6 @@ I've updated it to work with recent versions of PyBlosxom and
 and to use the nickname provided by the
 [Simple Registration Extension](http://www.openidenabled.com/openid/simple-registration-extension).
 
-Feel free to [try it out](/space/2007-08-21_openid_comments#comment-anchor)! If
+Feel free to [try it out](#comment-anchor)! If
 you don't have an OpenID yet, you can get one at
 [MyOpenID](http://www.myopenid.com/).

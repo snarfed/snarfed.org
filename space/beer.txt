@@ -8,8 +8,8 @@ img { vertical-align: text-top; }
   <img src="/space/beer_taps.jpg" alt="beer taps" />
 </div>
 
-[Beer I'd like to try](/space/beer#to_try) and
-[beer I've tried](/space/beer#tried).
+[Beer I'd like to try](#to_try) and
+[beer I've tried](#tried).
 ![good](/good.png) I liked,
 ![ok](/ok.png) were just ok,
 ![bad](/bad.png) I didn't like.
@@ -22,7 +22,7 @@ some, like lambics and Belgian ales, I'm not a fan of.
 
 <a name="to_try"></a>
 **Beer I'd like to try**: 
-[![Icon-Permalink.png](/Icon-Permalink.png)](/space/beer#to_try)
+[![Icon-Permalink.png](/Icon-Permalink.png)](#to_try)
 
 [Westvleteren](http://www.sintsixtus.be/eng/brouwerij.htm)
 [12](http://beeradvocate.com/beer/profile/313/1545)
@@ -52,7 +52,7 @@ some, like lambics and Belgian ales, I'm not a fan of.
 
 <a name="tried"></a>
 **Beer I've tried**: 
-[![Icon-Permalink.png](/Icon-Permalink.png)](/space/beer#tried)
+[![Icon-Permalink.png](/Icon-Permalink.png)](#tried)
 
 [Half Moon Bay Brewing Co.](http://www.hmbbrewingco.com/)
 Lunacy (sour ale)

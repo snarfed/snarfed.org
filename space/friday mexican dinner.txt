@@ -20,14 +20,13 @@ At this point, we've hit most of the Mexican restaurants in the Mountain
 View/Palo Alto/Menlo Park area. If it has margaritas and chimichangas, we've
 probably been there.
 
-Here's an (incomplete) list of the [restaurants we've eaten at so
-far](/space/friday+mexican+dinner#done), as well as [a few we hope to
-visit](/space/friday+mexican+dinner#not_yet). Feel free to [add any I've
-forgotten](/space/friday+mexican+dinner#comment_anchor)!
+Here's an (incomplete) list of the [restaurants we've eaten at so far](#done),
+as well as [a few we hope to visit](#not_yet). Feel free to
+[add any I've forgotten](#comment_anchor)!
 
 <a name="not_yet"></a>
 **We haven't yet eaten at:**
-[![Icon-Permalink.png](/Icon-Permalink.png)](/space/friday+mexican+dinner#not_yet)
+[![Icon-Permalink.png](/Icon-Permalink.png)](#not_yet)
 
   * [Como Esta Taqueria](http://www.yelp.com/biz/como-esta-taqueria-palo-alto)
   * [Taco Luna](http://www.burritophile.com/place.php?id=113)
@@ -43,7 +42,7 @@ Burro](http://maps.google.com/maps?f=q&hl=en&sll=37.0625,-95.677068&sspn=164.187
 
 <a name="done"></a>
 **We've eaten at:**
-[![Icon-Permalink.png](/Icon-Permalink.png)](/space/friday+mexican+dinner#done)
+[![Icon-Permalink.png](/Icon-Permalink.png)](#done)
 
   * [Reposado](http://reposadorestaurant.com/)
   * [Fiesta Del Mar Too](http://maps.google.com/maps?ie=UTF-8&oe=utf-8&rls=com.ubuntu:en-US:official&client=firefox-a&um=1&q=%22fiesta+del+mar+too%22+near+94043&fb=1&view=text&latlng=17113290725049004080&dtab=2&reviews=1&pcsi=17113290725049004080,1&sa=X&oi=local_result&resnum=1&ct=result#)

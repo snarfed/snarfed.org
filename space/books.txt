@@ -6,8 +6,8 @@ img { vertical-align: text-top; }
 
 ![/space/books.jpg](/space/books.jpg)
 
-[Books I'd like to read](/space/books#to_read) and
-[books I've read](/space/books#read).
+[Books I'd like to read](#to_read) and
+[books I've read](#read).
 ![good](/good.png) means I liked it,
 ![ok](/ok.png) means it was just ok,
 ![bad](/bad.png) means I didn't like it.
@@ -17,13 +17,13 @@ Also see
 [Maulik's](http://maulik.freeshell.net/Miki.pl?page=Reading+Log.miki) and
 [Jon's](http://catastrophewaitress.infogami.com/books) reading lists.
 
-<!-- Also [mini reviews](/space/books#mini_reviews) for a few books I read
+<!-- Also [mini reviews](#mini_reviews) for a few books I read
 a while back. -->
 
 
 <a name="to_read"></a>
 **Books I'd like to read**: 
-[![Icon-Permalink.png](/Icon-Permalink.png)](/space/books#to_read)
+[![Icon-Permalink.png](/Icon-Permalink.png)](#to_read)
 
   * [Richard Feynman - The Character of Physical Law](http://books.google.com/books?id=Q9AxAAAACAAJ)
 <nf>nf</nf>
@@ -50,7 +50,7 @@ a while back. -->
 
 <a name="read"></a>
 **Books I've read**: 
-[![Icon-Permalink.png](/Icon-Permalink.png)](/space/books#to_read)
+[![Icon-Permalink.png](/Icon-Permalink.png)](#to_read)
 
   * [Jill Taylor - My Stroke of Insight](http://books.google.com/books?id=ETBIrJMu-J0C)
 ![ok](/ok.png) <nf>nf</nf>
@@ -662,7 +662,7 @@ and the Xanth series, the Incarnations series, and many others
 <!--
 <a name="mini_reviews"></a>
 **Mini reviews**: 
-[![Icon-Permalink.png](/Icon-Permalink.png)](/space/books#mini_reviews)
+[![Icon-Permalink.png](/Icon-Permalink.png)](#mini_reviews)
 
   * [Ray Kurzweil - The Age of Spiritual
 Machines](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Ray Kurzweil&title=The Age of Spiritual Machines)

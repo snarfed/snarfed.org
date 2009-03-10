@@ -11,15 +11,15 @@ unedited notes on a few of the projects presented on
 
 **Contents:**
 
-  * [FunFS (Fast Userspace Network Filesystem)](/space/CodeCon+2004#funfs)
-  * [Tor (anonymized onion routing)](/space/CodeCon+2004#tor)
-  * [Vend-O-Rand (entropy vending machine)](/space/CodeCon+2004#vendorand)
-  * [Osiris (security monitoring)](/space/CodeCon+2004#osiris)
-  * [PGP Universal (encrypted email)](/space/CodeCon+2004#pgpuniversal)
-  * [SCREAM (real-time audio synthesis)](/space/CodeCon+2004#scream)
-  * [Solipsis (P2P virtual world)](/space/CodeCon+2004#solipsis)
-  * [GracefulTavi (wiki server)](/space/CodeCon+2004#gracefultavi)
-  * [Mosuki (next-gen social network)](/space/CodeCon+2004#mosuki)
+  * [FunFS (Fast Userspace Network Filesystem)](#funfs)
+  * [Tor (anonymized onion routing)](#tor)
+  * [Vend-O-Rand (entropy vending machine)](#vendorand)
+  * [Osiris (security monitoring)](#osiris)
+  * [PGP Universal (encrypted email)](#pgpuniversal)
+  * [SCREAM (real-time audio synthesis)](#scream)
+  * [Solipsis (P2P virtual world)](#solipsis)
+  * [GracefulTavi (wiki server)](#gracefultavi)
+  * [Mosuki (next-gen social network)](#mosuki)
 
 **FunFS (fast userspace network
 filesystem)**

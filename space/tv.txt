@@ -10,8 +10,8 @@ img { vertical-align: text-top; }
 
 
 Television shows I
-[want to watch](/space/tv#to_watch) and
-[have watched](/space/tv#watched).
+[want to watch](#to_watch) and
+[have watched](#watched).
 ![good](/good.png) I liked,
 ![ok](/ok.png) were just ok,
 ![bad](/bad.png) I didn't like.
@@ -23,7 +23,7 @@ comedies and serial dramas.
 
 <a name="to_watch"></a>
 **Shows I want to watch**: 
-[![Icon-Permalink.png](/Icon-Permalink.png)](/space/tv#to_watch)
+[![Icon-Permalink.png](/Icon-Permalink.png)](#to_watch)
 
 [Breaking Bad](http://www.amctv.com/originals/breakingbad/)
 _([AMC](http://www.amctv.com/))_
@@ -49,7 +49,7 @@ _([FX](http://www.fxnetworks.com/))_
 <br />
 <a name="watched"></a>
 **Shows I've watched**: 
-[![Icon-Permalink.png](/Icon-Permalink.png)](/space/tv#watched)
+[![Icon-Permalink.png](/Icon-Permalink.png)](#watched)
 
 [Time Warp](http://dsc.discovery.com/tv/time-warp/time-warp.html)
 _([Discovery](http://dsc.discovery.com/))_
