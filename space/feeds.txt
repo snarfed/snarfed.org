@@ -4,8 +4,8 @@ feeds
   <img src="/space/rss.jpg" alt="rss icon" />
 </div>
 
-Sites I [read regularly](#read) and [used to read](#used_to_read). They're
-mostly friends' blogs and other sites that I have a personal connection to.
+Sites I read regularly. They're mostly friends' blogs and other sites that I
+have a personal connection to.
 
 Thanks to [Google Reader](http://reader.google.com/),
 [RSS](http://en.wikipedia.org/wiki/RSS_(file_format\)),
@@ -25,7 +25,9 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
 -->
 
 
+<!--
 *Currently reading:* <a name="read"></a>
+-->
 
 <!-- keep this one as is!!! -->
 * [Ryan Barrett's Friends' Facebook Status Updates](http://snarfed.org/space/2009-03-05_facebook_friend_lists)
@@ -353,7 +355,12 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
 (_[subscribe](http://www.justinhaugh.com/wiretread/atom.xml)_)
 
 
+<!--
+
 *Used to read:* <a name="used_to_read"></a>
+
+* [Twitter / dlpeters](http://twitter.com/dlpeters)
+(_[subscribe](http://twitter.com/statuses/user_timeline/13545012.atom)_)
 
 * [Twitter / dewitt](http://twitter.com/dewitt)
 (_[subscribe](http://twitter.com/statuses/user_timeline/673483.atom)_)
@@ -363,9 +370,6 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
 
 * [Youwebtwo.com](http://youwebtwo.com)
 (_[subscribe](http://youwebtwo.com/feed/)_)
-
-
-<!--
 
 * [Rebecca Grand's Facebook Posts](http://www.facebook.com/posted.php?id=505629907)
 (_[subscribe](http://www.facebook.com/feeds/share_posts.php?id=505629907&viewer=212038&key=c886d8cc92&format=rss20)_)
