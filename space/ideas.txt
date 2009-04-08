@@ -128,7 +128,7 @@ comments a la [WordPress](http://wordpress.org/) and
 [Blogger](http://blogger.com). **\[_Done! See [snipsnap comment without login
 patch](/space/snipsnap comment without login patch)._]**
 
-  * Work on [Beagle](http://beaglewiki.org/) (formerly
+  * Work on [Beagle](http://beagle-project.org/) (formerly
 [Dashboard](http://nat.org/dashboard/)), which is wicked cool, or
 [Tenor](http://dot.kde.org/1113428593/), which may someday be even cooler.
 
@@ -180,7 +180,7 @@ DNSBLs and RBLs like [Spamhaus](http://www.spamhaus.org/xbl/index.lasso),
 [SURBL](http://www.surbl.org/faq.html).
 
   * Implement [JWZ](http://www.jwz.org/)'s
-[Intertwingle](http://www.mozilla.org/blue-sky/misc/199805/intertwingle.html)
+[Intertwingle](http://www-archive.mozilla.org/blue-sky/misc/199805/intertwingle.html)
 idea as a [GreaseMonkey](http://greasemonkey.mozdev.org) user script for
 [Gmail](http://gmail.com/). (I'd love to do it for Pine, but it's way too
 ambitious.)
@@ -284,10 +284,10 @@ work with more MP3 players on different platforms. Bonus points: support
 [ZeroConf](http://zeroconf.org/)). **\[_Done...as much as it can be. See
 [p4sync](/space/synchronizing mp3 playback)._]**
 
-  * Add internet multiplayer to [Baku
-Baku](http://www.the-underdogs.org/game.php?id=5059), one of the best games ever
-written. This might require a complete rewrite...maybe with
-[PyGame](http://pygame.org/)?
+  * Add internet multiplayer to
+[Baku Baku](http://en.wikipedia.org/wiki/Baku_Baku_Animal),
+one of the best games ever written. This might require a complete
+rewrite...maybe with [PyGame](http://pygame.org/)?
 
   * It's widely acknowledged that bandwidth is increasing faster than latency.
 [David Patterson](http://www.cs.berkeley.edu/~pattrsn/) at Berkeley has a
