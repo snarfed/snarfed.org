@@ -9,6 +9,12 @@ Talks I've given. Includes dates, locations, slides, video, etc.
 <!-- note the two trailing spaces after some lines for line breaks.
 -->
 
+[Distributed Transactions for Google App Engine](http://danielwilkerson.com/dist-trans-gae.html)
+([abstract](http://www.codecon.org/2009/program.html#DistributedTrans))  
+Apr. 18, 2009  
+[CodeCon](http://codecon.org/2009/),
+[Cellspace](http://cellspace.org/)
+
 [Transactions Across Datacenters](/space/2009-02-16_transactions_across_datacenters)
 ([slides](/space/transactions_across_datacenters.html))  
 Feb. 12, 2009  
