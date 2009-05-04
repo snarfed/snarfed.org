@@ -5,6 +5,7 @@ google_talk_sms pidgin plugin
 </div>
 
 [Download google\_talk\_sms.pl 0.1](/space/google_talk_sms.pl)  
+&nbsp;&nbsp; (requires Pidgin 2.5.2 or above)  
 [Pidgin web site](http://pidgin.im/)  
 &nbsp;&nbsp; [About Pidgin plugins](http://developer.pidgin.im/wiki/Scripting%20and%20Plugins#ScriptingandPlugins)  
 [Google Talk web site](http://talk.google.com/)  
