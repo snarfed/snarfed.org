@@ -8,6 +8,12 @@ is [GPL](http://www.gnu.org/licenses/gpl.html)ed.
 <a name="projects"></a>
 ### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](#projects)
 
+  * [google\_talk_sms.pl](/space/google_talk_sms+pidgin+plugin),
+a [Pidgin](http://pidgin.im/) plugin that enables
+[Google Talk](http://talk.google.com/)'s
+[SMS text messaging](http://gmailblog.blogspot.com/2008/12/really-new-in-labs-this-time-sms-text.html)
+feature.
+
   * [shell](http://shell.appspot.com/),
 [openid-provider](http://openid-provider.appspot.com/), and
 [openid-consumer](http://openid-consumer.appspot.com/), three
