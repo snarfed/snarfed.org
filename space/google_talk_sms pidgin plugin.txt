@@ -42,6 +42,8 @@ an IM. If I was offline, I'd get it when I logged.
 I loved this, so I immediately switched to Google Talk for SMSes. Sadly, other
 people did too, and since each SMS costs money, Google decided to
 [restrict the feature to official clients](http://www.innerfence.com/google-shuts-down-infinite-sms).
+Attempts to send SMSes returned the error message
+_"SMS\_ERROR\_11: Sorry we don't support free SMS messaging through this client. Visit http://gmail.com/sms for more info. (Code 405)"_
 
 <div style="float: right; margin-left: 10px">
   <img src="/space/sms_phone.jpg" /></a>
