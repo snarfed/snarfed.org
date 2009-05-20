@@ -1,0 +1,648 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+ "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+<title>Transactions Across Datacenters (and other weekend projects)</title>
+<!-- metadata -->
+<meta name="generator" content="S5" />
+<meta name="version" content="S5 1.1" />
+<meta name="presdate" content="20080528" />
+<meta name="author" content="Ryan Barrett" />
+<!-- configuration parameters -->
+<meta name="defaultView" content="slideshow" />
+<meta name="controlVis" content="hidden" />
+<!-- style sheet links -->
+<link rel="stylesheet" href="ui/default/slides.css" type="text/css" media="projection" id="slideProj" />
+<link rel="stylesheet" href="ui/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
+<link rel="stylesheet" href="ui/default/print.css" type="text/css" media="print" id="slidePrint" />
+<link rel="stylesheet" href="ui/default/opera.css" type="text/css" media="projection" id="operaFix" />
+<!-- S5 JS -->
+<script src="ui/default/slides.js" type="text/javascript"></script>
+
+<style type="text/css">
+* {
+  border: 1px dotted green;
+}
+
+div.slide {
+  border: 1px dashed red;
+}
+
+body, div#header, div#footer {
+  background-image: none;
+  color: black;
+  background-color: transparent;
+}
+
+div#footer {
+  height: 2em;
+}
+
+.slide { font-family: sans-serif; }
+.slide h1 { text-transform: none; }
+.slide ul { margin-left: 1em; margin-right: 1em; margin-top: .2em; }
+.slide p { margin-left: .5em; }
+.slide h1, #controls, #navLinks { background-color: transparent; color: black; }
+#currentSlide { display: none; }
+
+div.pre {
+  border: 1px solid black;
+  background-color: #eeeeee;
+  white-space: pre;
+  color: #006000;
+  padding: .5em;
+}
+
+.pre {
+  font-family: monospace;
+}
+
+.slide code {
+  padding: 0;
+  color: #006000;
+}
+
+.slide a, #footer a {
+  text-decoration: underline;
+}
+
+a img {
+  border: none;
+}
+
+table.chart {
+  border-spacing: .3em;
+}
+
+table.chart td {
+  min-width: 5em;
+  text-align: center;
+}
+
+th {
+  font-weight: normal;
+}
+
+td.good { background-color: #a9eb42; }
+td.ok   { background-color: #fff437; }
+td.bad  { background-color: #ff4d6e; }
+
+</style>
+</head>
+<body>
+
+<div class="layout">
+<div id="controls"><!-- DO NOT EDIT --></div>
+<div id="currentSlide"><!-- DO NOT EDIT --></div>
+<div id="header"></div>
+<div id="footer" style="margin: 0; padding: 0">
+  <div style="position: absolute; bottom: 0; width: 100%">
+    <img src="io_2009_logo.jpg"
+         style="float: right; width: 226px; height: 70px; padding: 1em;" />
+    <img src="io_2009_footer.jpg" style="width: 100%" />
+  </div>
+</div>
+</div>
+
+<div class="presentation">
+
+<div class="slide" style="background-image: url(io_2009_title.png)">
+<div class="title">
+<h1>Transactions Across Datacenters
+<small><small><br />(and other weekend projects)</small></small>
+</h1>
+<br /><br />
+<h4><small>
+ Ryan Barrett <br />
+ Google I/O <br />
+ May 27, 2009
+</small></h4>
+</div>
+</div>
+
+
+<div class="slide" style="background-image: url(io_2009_separator.png)">
+<blockquote>
+Of three properties of distributed data systems - consistency, availability,
+partition tolerance - choose two.
+</blockquote>
+<p style="text-align: center"><small>&nbsp; -Eric Brewer, CAP theorem,
+ <a href="http://www.cs.berkeley.edu/~brewer/cs262b-2004/PODC-keynote.pdf">
+  PODC 2000</a>
+</small></p>
+</div>
+
+
+<div class="slide">
+<blockquote>
+Scaling is hard.
+</blockquote>
+<p style="text-align: center"><small>&nbsp; -Various</small></p>
+</div>
+
+
+
+
+
+<div class="slide" style="background-image: url(io_2009_separator.png)">
+<h1>What's ahead</h1>
+<ul>
+<li>Why transactions?</li>
+<li>Consistency</li>
+<li>Why across datacenters?</li>
+<li>Multihoming</li>
+<li>Techniques</li>
+<li>Tradeoffs</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>GMail</h1>
+<ul>
+<li>Mail delivery: <i>eventual, guaranteed</i></li>
+<li>Mailbox operations: <i>immediate, guaranteed</i></li>
+<li>Web clip history: <i>best effort</i></li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Why transactions?</h1>
+<ul>
+<li>Correctness</li>
+<li>Consistency</li>
+<li>Enforce invariants</li>
+<li>ACID</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Cliched example</h1>
+<ul>
+<li>Transfer money from A to B</li>
+  <ul><li>subtract from A</li>
+  <li>add to B</li></ul>
+<li>What if something happens in between?</li>
+  <ul><li>another transaction on A or B</li>
+  <li>machine crashes</li>
+  <li>...</li></ul>
+</ul>
+</div>
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>ACID properties</h1> -->
+<!-- <ul> -->
+<!-- <li><b>A</b>tomic</li> -->
+<!-- <li><b>C</b>onsistent</li> -->
+<!-- <li><b>I</b>solated</li> -->
+<!-- <li><b>D</b>urable</li> -->
+<!-- </ul> -->
+<!-- </div> -->
+
+
+
+
+
+<div class="slide">
+<h1>What's ahead</h1>
+<ul>
+<li>Why transactions?</li>
+<li><b>Consistency</b></li>
+<li>Why across datacenters?</li>
+<li>Multihoming</li>
+<li>Techniques</li>
+<li>Tradeoffs</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Consistency</h1>
+<ul>
+<li>Weak</li>
+<li>Eventual</li>
+<li>Strong</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Weak consistency</h1>
+<ul>
+<li>After a write, subsequent reads <i>may or may not</i> see the new data</li>
+<li>Best effort only</li>
+<li>"Message in a bottle"</li>
+<li>IP/UDP, SMS, JPEG</li>
+<li>GMail: Web Clip history</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Eventual consistency</h1>
+<ul>
+<li>After a write, subsequent reads will <i>eventually</i> see the new data</li>
+<li>Search engine indexing</li>
+<li>DNS, SMTP, snail mail</li>
+<li>Amazon S3, SimpleDB</li>
+<li>GMail: mail delivery</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Strong consistency</h1>
+<ul>
+<li>After a write, subsequent reads <i>will</i> see the new data</li>
+<li>File systems</li>
+<li>RDBMSes</li>
+<li>App Engine datastore, Azure tables</li>
+<li>GMail: mailbox operations</li>
+</ul>
+</div>
+
+
+
+
+
+<div class="slide">
+<h1>What's ahead</h1>
+<ul>
+<li>Why transactions?</li>
+<li>Consistency</li>
+<li><b>Why across datacenters?</b></li>
+<li>Multihoming</li>
+<li>Techniques</li>
+<li>Tradeoffs</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Why across datacenters?</h1>
+<ul>
+<li>Catastrophic failures</li>
+<li>Expected failures</li>
+<li>Routine maintennance</li>
+<li>Geolocality</li>
+  <ul><li>CDNs, edge caching</li></ul>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Why <i>not</i> across datacenters?</h1>
+<ul>
+<li>Within a datacenter</li>
+  <ul><li>High bandwidth: 1-100Gbps interconnects</li>
+  <li>Low latency: < 1ms within rack, 1-5ms across</li>
+  <li>Little to no cost</li></ul>
+<li>Between datacenters</li>
+  <ul><li>Low bandwidth: 1-100Mbps</li>
+  <li>High latency: 50-150ms</li>
+  <li>$$$ for bandwidth or fiber</li></ul>
+</ul>
+</div>
+
+
+
+
+
+<div class="slide">
+<h1>What's ahead</h1>
+<ul>
+<li>Why transactions?</li>
+<li>Consistency</li>
+<li>Why across datacenters?</li>
+<li><b>Multihoming</b></li>
+<li>Techniques</li>
+<li>Tradeoffs</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Multihoming</h1>
+<ul>
+<li><i>Multihoming</i> (n): operating from multiple datacenters simultaneously</li>
+<li>Hard problem.</i>
+<li>...consistently? Harder.</li>
+<li>...with real time writes? Hardest.</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Option 1: Don't</h1>
+<ul>
+<li>...instead, bunkerize.</li>
+  <ul><li>Most common</li>
+  <li>Oracle, MySQL (even sharded)</li>
+  <li>Microsoft, Amazon, Cisco, telcos, US gov't</li>
+  </ul>
+<li>Bad at catastrophic failure</li>
+  <ul><li>Large scale data loss</li></ul>
+<li>Not great for serving</li>
+  <ul><li>No geolocation</li></ul>
+  <!-- sjcolo power outage example, twitter and friendfeed down for hrs -->
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Tangent: AWS and Azure</h1>
+<ul>
+<li>No built-in multihoming</li>
+<li>AWS</li>
+  <ul><li>EC2, S3, SQS: choose US or EU</li>
+  <!-- more info:
+    http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1927
+    http://aws.amazon.com/s3/#functionality
+    http://aws.amazon.com/sqs/#functionality
+   -->
+  <li>EC2: availability zones within region</li>
+  <!-- more info:
+    http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1347
+   -->
+  <li>SimpleDB: none of the above</li></ul>
+<li>Azure</li>
+  <ul><li>Choice of US West, US East, or (???) EU</li></ul>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Option 2: Primary with hot failover(s)</h1>
+<ul>
+<li>Better, but not ideal</li>
+  <ul><li>Mediocre at catastrophic failure</li>
+  <li>Window of lost data</li>
+  <li>Failover data may be inconsistent</li></ul>
+<li>Banks, brokerages, etc.</li>
+<li>Geolocated for reads, not for writes</li>
+</div>
+
+
+<div class="slide">
+<h1>Option 3: True multihoming</h1>
+<ul>
+<li>Simultaneous writes in different DCs, maintaining consistency</li>
+<li>Two way</li>
+  <ul>
+<!--   <li>Synchronous replication</li> -->
+<!--   <li>Often 2PC</li> -->
+  <li>NASDAQ</li>
+  <li><i>Hard.</i></li></ul>
+<li>N way</li>
+  <ul>
+<!--   <li>Multi-master replication</li> -->
+<!--   <li>Distributed consensus</li> -->
+  <li>Amazon, Google</li>
+  <li><i>Harder.</i></li></ul>
+<li>Handles catastrophic failure, geolocality</li>
+</ul>
+</div>
+
+
+
+
+
+<div class="slide">
+<h1>What's ahead</h1>
+<ul>
+<li>Why transactions?</li>
+<li>Consistency</li>
+<li>Why across datacenters?</li>
+<li>Multihoming</b></li>
+<li><b>Techniques</b></li>
+<li>Tradeoffs</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Interested in...</h1>
+<ul>
+<li>Replication</li>
+<li>Transactions</li>
+  <ul><li>distributed?</li>
+  <li>decentralized?</li></ul>
+<li>What has App Engine done?</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Backups</h1>
+<ul>
+<li>Make a copy</li>
+<li>Sledgehammer</li>
+<li>Weak consistency</li>
+<li>Replication, not transactions</li>
+<li>App Engine: early internal launch</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Locking</h1>
+<ul>
+<li>Sledgehammer</li>
+<li>Common in RDBMSes</li>
+<li>Good for consistency, bad for throughput</li>
+<li>Optimizations</li>
+  <ul><li>shared locks, read/write locks</li>
+  <li>InnoDB (MySQL), Oracle</li></ul>
+<li>Transactions, not replication</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Optimistic concurrency</h1>
+<ul>
+<li>Opposite of "pessimistic" locking</li>
+<li>Journal writes, check for collisions before commit</li>
+<!--   <ul><li>On collision, abort and retry</li></ul> -->
+<li>Useful variant: <i>multi version concurrency control</i></li>
+<!--   <ul><li>Keep past versions for consistent snapshots</li></ul> -->
+<li>Good for throughput, read-heavy workloads</li>
+<li>Transactions, not replication</li>
+<li>App Engine: datastore</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Master/slave replication</h1>
+<ul>
+<li>Usually asynchronous</li>
+  <ul><li>Good for throughput, latency</li></ul>
+<li>Most RDBMSes</li>
+  <ul><li>e.g. MySQL binary logs</li></ul>
+<li>Weak/eventual consistency</li>
+  <ul><li>Granularity matters!</li></ul>
+<li>Replication, not transactions</li>
+<li>App Engine: basis for multihoming</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Multi-master replication</h1>
+<ul>
+<li>Umbrella term for merging concurrent writes</li>
+<li>Asynchronous, eventual consistency</li>
+<li>Need <i>serialization</i> protocol</li>
+  <ul><li>e.g. <i>timestamp oracle</i>: monotonically increasing timestamps</li>
+  <li>Either SPOF with master election...</li>
+  <li>...or distributed consensus protocol</li></ul>
+<li>Replication and transactions</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Two Phase Commit</h1>
+<ul>
+<li><i>Centralized</i> consensus protocol</li>
+<li>Single coordinator (SPOF)</li>
+<li>1: propose, 2: vote, 3: commit/abort</li>
+<li>Heavyweight, synchronous, high latency</li>
+  <ul><li>3PC buys async with extra message</li></ul>
+<li>Replication and distributed transactions</li>
+<li>Supports true multihoming</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Paxos</h1>
+<ul>
+<li><i>Decentralized, distributed</i> consensus protocol</li>
+<li>"Either Paxos, or Paxos with cruft, or broken"</li>
+<!--   <br />&nbsp;&nbsp;</li> -->
+  <ul><li>Mike Burrows</li></ul>
+<li>Majority writes; survives minority failure</li>
+<li>Protocol similar to 2PC/3PC</li>
+  <ul><li>Lighter, but still high latency</li></ul>
+<li>Replication and distributed transactions</li>
+<li>Supports true multihoming</li>
+</ul>
+</div>
+
+
+
+
+
+<div class="slide">
+<h1>What's ahead</h1>
+<ul>
+<li>Why transactions?</li>
+<li>Consistency</li>
+<li>Why across datacenters?</li>
+<li>Multihoming</li>
+<li>Techniques</li>
+<li><b>Tradeoffs</b></li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Tradeoffs <small>(very approximate)</small></h1>
+<br />
+<table class="chart">
+<!-- <tr><th></th><td></td><td></td><td></td><td></td></tr> -->
+<tr><th></th>
+ <th colspan="4">Paxos ... 2PC ... MMR ... MSR ... Backups</th></tr>
+<tr><th>Consistency</th>
+ <td colspan="2" class="good">Strong</td>
+ <td class="ok">Eventual</td>
+ <td class="bad">Weak</td></tr>
+<tr><th>Latency</th>
+ <td colspan="2" class="bad">High</td>
+ <td colspan="2" class="good">Low</td></tr>
+<tr><th>Throughput</th>
+ <td class="ok">Medium</td>
+ <td class="bad">Low</td>
+ <td colspan="2" class="good">High</td></tr>
+<tr><th>Data loss</th>
+ <td colspan="2" class="good">None</td>
+ <td class="ok">Some</td>
+ <td class="bad">Lots</td></tr>
+<tr><th>Failover</th>
+ <td colspan="2" class="good">N/A</td>
+ <td class="ok">Minimal impact</td>
+ <td class="bad">Read only</td></tr>
+</table>
+</div>
+
+
+<!-- <div class="slide"> -->
+<!-- <h1>Tradeoffs <small>(very approximate)</small></h1> -->
+<!-- <br /> -->
+<!-- <table class="chart"> -->
+<!-- <tr><th></th> -->
+<!--  <th colspan="4">Paxos ... 2PC ... MMR ... MSR ... Backups</th></tr> -->
+<!-- <tr><th>Consistency</th> -->
+<!--  <td colspan="2" class="good">Strong</td> -->
+<!--  <td class="ok">Eventual</td> -->
+<!--  <td class="bad">Weak</td></tr> -->
+<!-- <tr><th>Latency</th> -->
+<!--  <td colspan="2" class="bad">High</td> -->
+<!--  <td colspan="2" class="good">Low</td></tr> -->
+<!-- <tr><th>Throughput</th> -->
+<!--  <td class="ok">Medium</td> -->
+<!--  <td class="bad">Low</td> -->
+<!--  <td colspan="2" class="good">High</td></tr> -->
+<!-- <tr><th>Data loss</th> -->
+<!--  <td colspan="2" class="good">None</td> -->
+<!--  <td class="ok">Some</td> -->
+<!--  <td class="bad">Lots</td></tr> -->
+<!-- <tr><th>Failover</th> -->
+<!--  <td colspan="2" class="good">N/A</td> -->
+<!--  <td class="ok">Minimal impact</td> -->
+<!--  <td class="bad">Read only</td></tr> -->
+<!-- <tr><th></th> -->
+<!--  <td colspan="4" style="border: 2px dotted black; border-top: none;"> -->
+<!--    <b>GMail</b></td></tr> -->
+<!-- </table> -->
+<!-- </div> -->
+
+
+<div class="slide">
+<h1>In conclusion...</h1>
+<p style="width: 80%; text-align: center; font-size: 180px">:'(</p>
+</div>
+
+
+<div class="slide">
+<h1>What's behind (phew!)</h1>
+<ul>
+<li>Why transactions?</li>
+<li>Consistency</li>
+<li>Why across datacenters?</li>
+<li>Multihoming</li>
+<li>Techniques</li>
+<li>Tradeoffs</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Questions?</h1>
+<br />
+<p style="text-align: center">
+ (slides will be on <a href="http://sites.google.com/site/io/">sites.google.com/site/io</a>)</p>
+</div>
+
+
+</div>
+
+</body>
+</html>
