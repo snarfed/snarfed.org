@@ -44,7 +44,11 @@ div#footer {
   height: 2em;
 }
 
-.slide { font-family: sans-serif; }
+.slide {
+  background-repeat: repeat-x;
+  font-family: sans-serif;
+}
+
 .slide h1 { text-transform: none; }
 .slide ul { margin-left: 1em; margin-right: 1em; margin-top: .2em; }
 .slide p { margin-left: .5em; }
@@ -77,16 +81,18 @@ a img {
 }
 
 table.chart {
-  border-spacing: .3em;
+  font-size: 1em;
 }
 
 table.chart td {
   min-width: 5em;
   text-align: center;
+  padding: .3em;
 }
 
 th {
   font-weight: normal;
+  padding-right: 1em;
 }
 
 td.good { background-color: #a9eb42; }
@@ -112,7 +118,7 @@ td.bad  { background-color: #ff4d6e; }
 
 <div class="presentation">
 
-<div class="slide" style="background-image: url(io_2009_title.png)">
+<div class="slide" style="background-image: url(io_2009_title_header.png)">
 <div class="title">
 <h1>Transactions Across Datacenters
 <small><small><br />(and other weekend projects)</small></small>
