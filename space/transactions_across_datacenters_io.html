@@ -159,7 +159,7 @@ Scaling is hard.
 <div class="slide">
 <h1>Multihoming</h1>
 <ul>
-<li><i>Multihoming</i> (n): operating from multiple datacenters simultaneously</li>
+<li><i>multihoming</i> (n): operating from multiple datacenters simultaneously</li>
 <li><strike>serving</strike></li>
 <li><strike>data processing</strike></li>
 <li><strike>read-only data</strike></li>
@@ -246,14 +246,11 @@ Scaling is hard.
 <div class="slide">
 <h1>Weak consistency</h1>
 <ul>
-<li>After a write, subsequent reads <i>may or may not</i> see the new data</li>
+<li>After a write, reads <i>may or may not</i> see it</li>
 <li>Best effort only</li>
 <li>"Message in a bottle"</li>
 <li>IP/UDP, SMS, JPEG</li>
-<li>App Engine: older logs</li>
-<ul><li style="color: red">
-  TODO(ryanb): are we comfortable saying this? if so, i should include a number
-  for the max age...</li></ul>
+<li>App Engine: memcache</li>
 </ul>
 </div>
 
@@ -261,11 +258,11 @@ Scaling is hard.
 <div class="slide">
 <h1>Eventual consistency</h1>
 <ul>
-<li>After a write, subsequent reads will <i>eventually</i> see the new data</li>
+<li>After a write, reads <i>will eventually</i> see it</li>
 <li>Search engine indexing</li>
 <li>DNS, SMTP, snail mail</li>
 <li>Amazon S3, SimpleDB</li>
-<li>App Engine: deployment</li>
+<li>App Engine: mail</li>
 </ul>
 </div>
 
@@ -273,11 +270,11 @@ Scaling is hard.
 <div class="slide">
 <h1>Strong consistency</h1>
 <ul>
-<li>After a write, subsequent reads <i>will</i> see the new data</li>
+<li>After a write, reads <i>will</i> see it</li>
 <li>File systems</li>
 <li>RDBMSes</li>
 <li>Azure tables</li>
-<li>App Engine: datastore writes</li>
+<li>App Engine: datastore</li>
 </ul>
 </div>
 
@@ -344,10 +341,10 @@ Scaling is hard.
 <div class="slide">
 <h1>Multihoming</h1>
 <ul>
-<li><i>Multihoming</i> (n): operating from multiple datacenters simultaneously</li>
 <li>Hard problem.</i>
 <li>...consistently? Harder.</li>
 <li>...with real time writes? Hardest.</li>
+<li>What to do?</li>
 </ul>
 </div>
 
@@ -362,7 +359,7 @@ Scaling is hard.
   </ul>
 <li>Bad at catastrophic failure</li>
   <ul><li>Large scale data loss</li>
-  <li>Example: SVColo power outage</ul>
+  <li>Example: SVColo</ul>
 <li>Not great for serving</li>
   <ul><li>No geolocation</li></ul>
 </ul>
@@ -373,7 +370,7 @@ Scaling is hard.
 <h1>Tangent: AWS and Azure</h1>
 <ul>
 <li>Azure: single homed</li>
-  <ul><li>Currently, one location<li>
+  <ul><li>Currently, one location</li>
   <li>Soon, choice of two</li></ul>
 <li>AWS</li>
   <ul><li>SimpleDB: single homed</li>
@@ -421,9 +418,16 @@ Scaling is hard.
   <li>Amazon, Google</li>
   <li><i>Harder.</i></li></ul>
 <li>Handles catastrophic failure, geolocality</li>
+<li>...but pay for it with latency</li>
 </ul>
 </div>
 
+
+<!-- <div class="slide"> -->
+<!-- <h1 style="color: red"></h1> -->
+<!-- TODO(ryanb): example with naive strong writes, bad latency<br /> -->
+<!-- also mention req'ts of platform vs. app -->
+<!-- </div> -->
 
 
 
@@ -578,7 +582,7 @@ Scaling is hard.
 <br />
 <table class="chart">
 <tr><th></th>
- <th colspan="4">Paxos ... 2PC ... MMR ... MSR ... Backups</th></tr>
+ <th colspan="4">2PC ... Paxos ... MMR ... MSR ... Backups</th></tr>
 <tr><th>Consistency</th>
  <td colspan="2" class="good">Strong</td>
  <td class="ok">Eventual</td>
@@ -587,8 +591,8 @@ Scaling is hard.
  <td colspan="2" class="bad">High</td>
  <td colspan="2" class="good">Low</td></tr>
 <tr><th>Throughput</th>
- <td class="ok">Medium</td>
  <td class="bad">Low</td>
+ <td class="ok">Medium</td>
  <td colspan="2" class="good">High</td></tr>
 <tr><th>Data loss</th>
  <td colspan="2" class="good">None</td>
@@ -607,7 +611,7 @@ Scaling is hard.
 <br />
 <table class="chart">
 <tr><th></th>
- <th colspan="4">Paxos ... 2PC ... MMR ... MSR ... Backups</th></tr>
+ <th colspan="4">2PC ... Paxos ... MMR ... MSR ... Backups</th></tr>
 <tr><th>Consistency</th>
  <td colspan="2" class="good">Strong</td>
  <td class="ok">Eventual</td>
@@ -616,8 +620,8 @@ Scaling is hard.
  <td colspan="2" class="bad">High</td>
  <td colspan="2" class="good">Low</td></tr>
 <tr><th>Throughput</th>
- <td class="ok">Medium</td>
  <td class="bad">Low</td>
+ <td class="ok">Medium</td>
  <td colspan="2" class="good">High</td></tr>
 <tr><th>Data loss</th>
  <td colspan="2" class="good">None</td>
@@ -627,12 +631,10 @@ Scaling is hard.
  <td colspan="2" class="good">N/A</td>
  <td class="ok">Minimal impact</td>
  <td class="bad">Read only</td></tr>
-<tr><th><b>App Engine</b></th>
- <td style="border: 2px dotted black; border-top: none;">
-   &nbsp;</td>
+<tr><th></th>
  <td />
- <td style="border: 2px dotted black; border-top: none;">
-   &nbsp;</td>
+ <td colspan="2" style="border: 2px dotted black; border-top: none;">
+   <b>App Engine</b></td>
  <td />
 </tr>
 </table>
@@ -641,7 +643,11 @@ Scaling is hard.
 
 <div class="slide">
 <h1>In conclusion</h1>
-<p style="width: 80%; text-align: center; font-size: 180px">: (</p>
+<br />
+<br />
+<br />
+<p style="width: 80%; text-align: center; font-size: 80px">
+  &nbsp;&nbsp; No silver bullet :(</p>
 </div>
 
 
