@@ -26,10 +26,10 @@ html {
   overflow: hidden;
 }
 
-/* * {
+* {
   border: 1px dotted green;
 }
-
+/*
 div.slide {
   border: 1px dashed red;
 } */
@@ -49,7 +49,7 @@ div#footer {
   font-family: sans-serif;
 }
 
-.slide h1 { text-transform: none; }
+.slide h1 { text-transform: none; margin-bottom: 1em; }
 .slide ul { margin-left: 1em; margin-right: 1em; margin-top: .2em; }
 .slide p { margin-left: .5em; }
 .slide h1, #controls, #navLinks { background-color: transparent; color: black; }
@@ -110,7 +110,9 @@ td.bad  { background-color: #ff4d6e; }
 <div id="footer" style="margin: 0; padding: 0">
   <div style="position: absolute; bottom: 0; width: 100%">
     <img src="io_2009_logo.jpg"
-         style="float: right; width: 226px; height: 70px; padding: 1em;" />
+         style="float: right; width: 226px; height: 70px; padding: 1em; vertical-align: text-bottom;" />
+    <p style="padding-left: 3em; padding-top: 2em;">
+      <a href="">code.google.com/events/io/questions</a></p>
     <img src="io_2009_footer.jpg" style="width: 100%" />
   </div>
 </div>
@@ -123,7 +125,7 @@ td.bad  { background-color: #ff4d6e; }
 <h1>Transactions Across Datacenters
 <small><small><br />(and other weekend projects)</small></small>
 </h1>
-<br /><br />
+<br /><br /><br />
 <h4><small>
  Ryan Barrett <br />
  Google I/O <br />
