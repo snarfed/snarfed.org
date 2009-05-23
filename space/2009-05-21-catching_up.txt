@@ -28,7 +28,7 @@ the extended format with video and animated shorts, as well as unscripted,
 behind the scenes commentary that made the show feel especially intimate. We
 loved it.
 
-<div style="float: left; margin-right: -20px">
+<div style="float: left">
   <object width="212" height="172">
     <param name="movie" value="http://www.youtube.com/v/ZFkYM4WienE&hl=en&fs=1"></param>
     <param name="allowFullScreen" value="true"></param>
