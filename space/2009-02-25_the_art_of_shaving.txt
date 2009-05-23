@@ -1,6 +1,6 @@
 The Art of Shaving
 
-<div style="float: right; margin-left: 10px">
+<div class="img-shadow" style="float: right; margin-left: 10px">
   <a href="http://www.theartofshaving.com/taos6/barber-spa.php">
    <img src="/space/the_art_of_shaving_logo.jpg" alt="the art of shaving" /></a>
 </div>
@@ -21,7 +21,7 @@ preparing me as if for a haircut. She put a gown on me, then took a hot towel
 out of the steamer and wrapped it around my face and neck, to open my pores. It
 felt amazing.
 
-<div style="float: left; margin-right: 10px">
+<div class="img-shadow" style="float: left; margin-right: 10px">
   <a href="http://www.theartofshaving.com/taos6/barber-spa.php">
    <img src="/space/the_art_of_shaving_chair.jpg" alt="the art of shaving" /></a>
 </div>
@@ -37,7 +37,7 @@ She'd pull a small section of my skin taught, make a few short, curt strokes,
 then move on to the next section. She overlapped sections often, but kept the
 razor from touching the same skin more than once or twice.
 
-<div style="float: right; margin-left: 10px">
+<div class="img-shadow" style="float: right; margin-left: 10px">
   <a href="http://www.theartofshaving.com/taos6/barber-spa.php">
    <img src="/space/the_art_of_shaving_shave.jpg" alt="the art of shaving" /></a>
 </div>
@@ -54,7 +54,7 @@ and keep out oil and dirt. She finished with an after-shave balm, a light
 moisturizer, and a quick razor swipe at my neck, which _always_ needs cleaning
 up.
 
-<div style="float: left; margin-right: 10px">
+<div class="img-shadow" style="float: left; margin-right: 10px">
   <a href="http://www.theartofshaving.com/taos6/barber-spa.php">
    <img src="/space/the_art_of_shaving_brush_and_razor.jpg" alt="the art of shaving" /></a>
 </div>

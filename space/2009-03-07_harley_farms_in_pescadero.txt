@@ -1,6 +1,6 @@
 Harley Farms in Pescadero
 
-<div style="float: right; margin-left: 10px">
+<div class="img-shadow" style="float: right; margin-left: 10px">
   <a href="http://www.harleyfarms.com/"><img src="/space/harley_farms_goats.jpg" /></a>
 </div>
 
@@ -17,7 +17,7 @@ their own goat cheese, soap, lotion, and other products made from goat milk.
 It was really fun to see the farm and the goats up close, learn about how
 they're raised, and watch the farmers take care of them.
 
-<div style="float: left; margin-right: 10px">
+<div class="img-shadow" style="float: left; margin-right: 10px">
   <a href="http://www.harleyfarms.com/Our-Cheese.htm">
    <img src="/space/harley_farms_making_cheese.jpg" /></a>
 </div>
