@@ -96,8 +96,8 @@ dashes for everything else
     name, five for street address, four for zip code, three for city and
     phone number, and "-- --" for cardholder name.
 
-  * [Netflix](http://netflix.com/): 00000 for zip code; dashes for everything
-else
+  * [Netflix](http://netflix.com/): currently rejects _all_ of my
+    [prepaid credit cards](/space/privacy+through+prepaid+credit+cards)! :(
 
   * [Orbitz](http://orbitz.com/): 00000 for zip code, phone number with valid
     area code, dashes for everything else. orbitz does strict address checking
@@ -143,6 +143,9 @@ dashes for everything else
   * [WalMart](http://walmart.com/): valid city/zip/state, one letter each for
 first and last name (e.g. A B), valid area code for phone number (e.g.
 650-000-000); dashes for everything else
+
+  * [TerraPass](https://www.terrapass.com/): spaces for cardholder first and
+    last name; any billing address
 
 See also:
 
