@@ -26,10 +26,10 @@ html {
   overflow: hidden;
 }
 
-* {
+/* * {
   border: 1px dotted green;
 }
-/*
+
 div.slide {
   border: 1px dashed red;
 } */
@@ -53,7 +53,6 @@ div#footer {
 .slide ul { margin-left: 1em; margin-right: 1em; margin-top: .2em; }
 .slide p { margin-left: .5em; }
 .slide h1, #controls, #navLinks { background-color: transparent; color: black; }
-#currentSlide { display: none; }
 
 div.pre {
   border: 1px solid black;
@@ -111,8 +110,8 @@ td.bad  { background-color: #ff4d6e; }
   <div style="position: absolute; bottom: 0; width: 100%">
     <img src="io_2009_logo.jpg"
          style="float: right; width: 226px; height: 70px; padding: 1em; vertical-align: text-bottom;" />
-    <p style="padding-left: 3em; padding-top: 2em;">
-      <a href="">code.google.com/events/io/questions</a></p>
+    <p style="padding-left: 1em; padding-top: 1em;"><big>
+      Questions? <a href="">code.google.com/events/io/questions</a></big></p>
     <img src="io_2009_footer.jpg" style="width: 100%" />
   </div>
 </div>
@@ -159,22 +158,87 @@ Scaling is hard.
 
 
 <div class="slide">
-<h1>Multihoming</h1>
+<h1>Context</h1>
 <ul>
 <li><i>multihoming</i> (n): operating from multiple datacenters simultaneously</li>
 <li><strike>serving</strike></li>
 <li><strike>data processing</strike></li>
 <li><strike>read-only data</strike></li>
 <li>read/write data (the hardest kind!)</li>
+<li>Case study: App Engine datastore</li>
 </ul>
 </div>
 
 
 <div class="slide">
+<h1>What's ahead and takeaways</h1>
+<ul>
+<li>Consistency?</li>
+<li>Why transactions?</li>
+<li>Why across datacenters?</li>
+<li>Multihoming</li>
+<li>Techniques</li>
+<li>Tradeoffs</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Consistency</h1>
+<ul>
+<li>Weak</li>
+<li>Eventual</li>
+<li>Strong</li>
+<li>Use case: read after write</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Weak consistency</h1>
+<ul>
+<li>After a write, reads <i>may or may not</i> see it</li>
+<li>Best effort only</li>
+<li>"Message in a bottle"</li>
+<li>App Engine: memcache</li>
+<li>VoIP, live online video</li>
+<li>Realtime multiplayer games</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Eventual consistency</h1>
+<ul>
+<li>After a write, reads <i>will eventually</i> see it</li>
+<li>App Engine: mail</li>
+<li>Search engine indexing</li>
+<li>DNS, SMTP, snail mail</li>
+<li>Amazon S3, SimpleDB</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Strong consistency</h1>
+<ul>
+<li>After a write, reads <i>will</i> see it</li>
+<li>App Engine: datastore</li>
+<li>File systems</li>
+<li>RDBMSes</li>
+<li>Azure tables</li>
+</ul>
+</div>
+
+
+
+
+
+<div class="slide">
 <h1>What's ahead</h1>
 <ul>
-<li>Why transactions?</li>
-<li>Consistency</li>
+<li>Consistency?</li>
+<li><b>Why transactions?</b></li>
 <li>Why across datacenters?</li>
 <li>Multihoming</li>
 <li>Techniques</li>
@@ -225,70 +289,8 @@ Scaling is hard.
 <div class="slide">
 <h1>What's ahead</h1>
 <ul>
+<li>Consistency?</li>
 <li>Why transactions?</li>
-<li><b>Consistency</b></li>
-<li>Why across datacenters?</li>
-<li>Multihoming</li>
-<li>Techniques</li>
-<li>Tradeoffs</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Consistency</h1>
-<ul>
-<li>Weak</li>
-<li>Eventual</li>
-<li>Strong</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Weak consistency</h1>
-<ul>
-<li>After a write, reads <i>may or may not</i> see it</li>
-<li>Best effort only</li>
-<li>"Message in a bottle"</li>
-<li>IP/UDP, SMS, JPEG</li>
-<li>App Engine: memcache</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Eventual consistency</h1>
-<ul>
-<li>After a write, reads <i>will eventually</i> see it</li>
-<li>Search engine indexing</li>
-<li>DNS, SMTP, snail mail</li>
-<li>Amazon S3, SimpleDB</li>
-<li>App Engine: mail</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Strong consistency</h1>
-<ul>
-<li>After a write, reads <i>will</i> see it</li>
-<li>File systems</li>
-<li>RDBMSes</li>
-<li>Azure tables</li>
-<li>App Engine: datastore</li>
-</ul>
-</div>
-
-
-
-
-
-<div class="slide">
-<h1>What's ahead</h1>
-<ul>
-<li>Why transactions?</li>
-<li>Consistency</li>
 <li><b>Why across datacenters?</b></li>
 <li>Multihoming</li>
 <li>Techniques</li>
@@ -317,9 +319,9 @@ Scaling is hard.
   <li>Low latency: < 1ms within rack, 1-5ms across</li>
   <li>Little to no cost</li></ul>
 <li>Between datacenters</li>
-  <ul><li>Low bandwidth: 1-100Mbps</li>
+  <ul><li>Low bandwidth: 10Mbps-1Gbps</li>
   <li>High latency: 50-150ms</li>
-  <li>$$$ for bandwidth or fiber</li></ul>
+  <li>$$$ for fiber</li></ul>
 </ul>
 </div>
 
@@ -330,8 +332,8 @@ Scaling is hard.
 <div class="slide">
 <h1>What's ahead</h1>
 <ul>
+<li>Consistency?</li>
 <li>Why transactions?</li>
-<li>Consistency</li>
 <li>Why across datacenters?</li>
 <li><b>Multihoming</b></li>
 <li>Techniques</li>
@@ -356,8 +358,8 @@ Scaling is hard.
 <ul>
 <li>...instead, bunkerize.</li>
   <ul><li>Most common</li>
-  <li>Oracle, MySQL (even sharded)</li>
-  <li>Cisco, telcos, US gov't</li>
+  <li>Microsoft Azure (tables)</li>
+  <li>Amazon SimpleDB</li>
   </ul>
 <li>Bad at catastrophic failure</li>
   <ul><li>Large scale data loss</li>
@@ -369,14 +371,14 @@ Scaling is hard.
 
 
 <div class="slide">
-<h1>Tangent: AWS and Azure</h1>
+<h1>Option 2: Primary with hot failover(s)</h1>
 <ul>
-<li>Azure: single homed</li>
-  <ul><li>Currently, one location</li>
-  <li>Soon, choice of two</li></ul>
-<li>AWS</li>
-  <ul><li>SimpleDB: single homed</li>
-  <li>EC2, S3, SQS: choose US or EU</li>
+<li>Better, but not ideal</li>
+  <ul><li>Mediocre at catastrophic failure</li>
+  <li>Window of lost data</li>
+  <li>Failover data may be inconsistent</li></ul>
+<li>Amazon Web Services</li>
+  <ul><li>EC2, S3, SQS: choose US or EU</li>
   <!-- more info:
     http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1927
     http://aws.amazon.com/s3/#functionality
@@ -387,17 +389,6 @@ Scaling is hard.
     http://developer.amazonwebservices.com/connect/entry.jspa?externalID=1347
    -->
   </ul>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Option 2: Primary with hot failover(s)</h1>
-<ul>
-<li>Better, but not ideal</li>
-  <ul><li>Mediocre at catastrophic failure</li>
-  <li>Window of lost data</li>
-  <li>Failover data may be inconsistent</li></ul>
 <li>Banks, brokerages, etc.</li>
 <li>Geolocated for reads, not for writes</li>
 </div>
@@ -437,8 +428,8 @@ Scaling is hard.
 <div class="slide">
 <h1>What's ahead</h1>
 <ul>
+<li>Consistency?</li>
 <li>Why transactions?</li>
-<li>Consistency</li>
 <li>Why across datacenters?</li>
 <li>Multihoming</b></li>
 <li><b>Techniques</b></li>
@@ -452,10 +443,10 @@ Scaling is hard.
 <ul>
 <li>Read/write data</li>
 <li>Replication</li>
+<li>Consistency</li>
 <li>Transactions</li>
-  <ul><li>distributed?</li>
-  <li>decentralized?</li></ul>
-<li>What has App Engine done?</li>
+  <!-- <ul><li>distributed?</li> -->
+  <!-- <li>decentralized?</li></ul> -->
 </ul>
 </div>
 
@@ -472,19 +463,19 @@ Scaling is hard.
 </div>
 
 
-<div class="slide">
-<h1>Locking</h1>
-<ul>
-<li>Sledgehammer</li>
-<li>Common in RDBMSes</li>
-<li>Good for consistency, bad for throughput</li>
-<li>Optimizations</li>
-  <ul><li>shared locks, read/write locks</li>
-  <li>InnoDB (MySQL), Oracle</li></ul>
-<li>Transactions, not replication</li>
-<li>App Engine: memcache</li>
-</ul>
-</div>
+<!-- <div class="slide"> -->
+<!-- <h1>Locking</h1> -->
+<!-- <ul> -->
+<!-- <li>Sledgehammer</li> -->
+<!-- <li>Common in RDBMSes</li> -->
+<!-- <li>Good for consistency, bad for throughput</li> -->
+<!-- <li>Optimizations</li> -->
+<!--   <ul><li>shared locks, read/write locks</li> -->
+<!--   <li>InnoDB (MySQL), Oracle</li></ul> -->
+<!-- <li>Transactions, not replication</li> -->
+<!-- <li>App Engine: memcache</li> -->
+<!-- </ul> -->
+<!-- </div> -->
 
 
 <div class="slide">
@@ -527,7 +518,6 @@ Scaling is hard.
   <li>Either SPOF with master election...</li>
   <li>...or distributed consensus protocol</li></ul>
 <li>Replication and transactions</li>
-<li>App Engine: serving</li>
 </ul>
 </div>
 
@@ -569,8 +559,8 @@ Scaling is hard.
 <div class="slide">
 <h1>What's ahead</h1>
 <ul>
+<li>Consistency?</li>
 <li>Why transactions?</li>
-<li>Consistency</li>
 <li>Why across datacenters?</li>
 <li>Multihoming</li>
 <li>Techniques</li>
@@ -584,26 +574,40 @@ Scaling is hard.
 <br />
 <table class="chart">
 <tr><th></th>
- <th colspan="4">2PC ... Paxos ... MMR ... MSR ... Backups</th></tr>
+ <th>Backups</th>
+ <th>M/S</th>
+ <th>MM</th>
+ <th>Paxos</th>
+ <th>2PC</th>
+ </tr>
 <tr><th>Consistency</th>
+ <td class="bad">Weak</td>
+ <td colspan="2"class="ok">Eventual</td>
  <td colspan="2" class="good">Strong</td>
- <td class="ok">Eventual</td>
- <td class="bad">Weak</td></tr>
+</tr>
 <tr><th>Latency</th>
+ <td colspan="3" class="good">Low</td>
  <td colspan="2" class="bad">High</td>
- <td colspan="2" class="good">Low</td></tr>
+</tr>
 <tr><th>Throughput</th>
- <td class="bad">Low</td>
+ <td colspan="3" class="good">High</td>
  <td class="ok">Medium</td>
- <td colspan="2" class="good">High</td></tr>
+ <td class="bad">Low</td>
+</tr>
+<tr><th>Multihomed writes</th>
+ <td colspan="2" class="bad">No</td>
+ <td colspan="3" class="good">Yes</td>
+</tr>
 <tr><th>Data loss</th>
+ <td class="bad">Lots</td>
+ <td colspan="2" class="ok">Some</td>
  <td colspan="2" class="good">None</td>
- <td class="ok">Some</td>
- <td class="bad">Lots</td></tr>
+</tr>
 <tr><th>Failover</th>
+ <td class="bad">Read only</td>
+ <td colspan="2" class="ok">Minimal impact</td>
  <td colspan="2" class="good">N/A</td>
- <td class="ok">Minimal impact</td>
- <td class="bad">Read only</td></tr>
+</tr>
 </table>
 </div>
 
@@ -612,27 +616,7 @@ Scaling is hard.
 <h1>Tradeoffs <small>(oversimplified!)</small></h1>
 <br />
 <table class="chart">
-<tr><th></th>
- <th colspan="4">2PC ... Paxos ... MMR ... MSR ... Backups</th></tr>
-<tr><th>Consistency</th>
- <td colspan="2" class="good">Strong</td>
- <td class="ok">Eventual</td>
- <td class="bad">Weak</td></tr>
-<tr><th>Latency</th>
- <td colspan="2" class="bad">High</td>
- <td colspan="2" class="good">Low</td></tr>
-<tr><th>Throughput</th>
- <td class="bad">Low</td>
- <td class="ok">Medium</td>
- <td colspan="2" class="good">High</td></tr>
-<tr><th>Data loss</th>
- <td colspan="2" class="good">None</td>
- <td class="ok">Some</td>
- <td class="bad">Lots</td></tr>
-<tr><th>Failover</th>
- <td colspan="2" class="good">N/A</td>
- <td class="ok">Minimal impact</td>
- <td class="bad">Read only</td></tr>
+
 <tr><th></th>
  <td />
  <td colspan="2" style="border: 2px dotted black; border-top: none;">
@@ -656,8 +640,8 @@ Scaling is hard.
 <div class="slide">
 <h1>What's behind (phew!)</h1>
 <ul>
+<li>Consistency?</li>
 <li>Why transactions?</li>
-<li>Consistency</li>
 <li>Why across datacenters?</li>
 <li>Multihoming</li>
 <li>Techniques</li>
