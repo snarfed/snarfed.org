@@ -1,0 +1,23 @@
+Speaking engagements
+
+[![google io 2009](/space/io_2009_logo_small.jpg)](http://code.google.com/events/io/sessions/TransactionsAcrossDatacenters.html)
+[![sdforum](/space/sdforum_logo.jpg)](http://www.sdforum.org/index.cfm?fuseaction=Calendar.eventDetail&eventID=13366)
+
+I'm giving a few talks this week!
+
+The first is at the
+[SDForum Cloud SIG](http://www.sdforum.org/index.cfm?fuseaction=Page.ViewPage&PageID=652)
+meeting,
+[Databases in the Cloud](http://www.sdforum.org/index.cfm?fuseaction=Calendar.eventDetail&eventID=13366),
+Tuesday 5/26 in Palo Alto.
+
+The second and third are at
+[Google I/O](http://code.google.com/events/io/), 5/27-28 in San Francisco:
+[Transactions across Datacenters](http://code.google.com/events/io/sessions/TransactionsAcrossDatacenters.html)
+and the
+[App Engine Fireside Chat](http://code.google.com/events/io/sessions/AppEngineFC.html).
+I'll also be hosting
+[Dan Wilkerson](http://danielwilkerson.com/)'s I/O talk on
+[distributed transactions in App Engine](http://code.google.com/events/io/sessions/DesignDistributedTransactionLayerAppEngine.html)
+
+If you're around, feel free to say hi!
