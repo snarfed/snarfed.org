@@ -49,10 +49,23 @@ div#footer {
   font-family: sans-serif;
 }
 
-.slide h1 { text-transform: none; margin-bottom: 1em; }
-.slide ul { margin-left: 1em; margin-right: 1em; margin-top: .2em; }
+.slide h1 {
+  text-transform: none;
+  margin-bottom: 1em;
+}
+
+.slide ul {
+  margin-left: 1em;
+  margin-right: 1em;
+  margin-top: .2em;
+}
+
 .slide p { margin-left: .5em; }
-.slide h1, #controls, #navLinks { background-color: transparent; color: black; }
+
+.slide h1, #controls, #navLinks {
+  background-color: transparent;
+  color: black;
+}
 
 div.pre {
   border: 1px solid black;
@@ -81,12 +94,14 @@ a img {
 
 table.chart {
   font-size: 1em;
+  border-collapse: collapse;
 }
 
 table.chart td {
-  min-width: 5em;
+  min-width: 3em;
   text-align: center;
   padding: .3em;
+  border: 3px dashed black;
 }
 
 th {
@@ -94,9 +109,20 @@ th {
   padding-right: 1em;
 }
 
-td.good { background-color: #a9eb42; }
-td.ok   { background-color: #fff437; }
-td.bad  { background-color: #ff4d6e; }
+table.chart td.good {
+  border: 3px solid white;
+  background-color: #a9eb42;
+}
+
+table.chart td.ok {
+  border: 3px solid white;
+  background-color: #fff437;
+}
+
+table.chart td.bad {
+  border: 3px solid white;
+  background-color: #ff4d6e;
+}
 
 </style>
 </head>
@@ -110,8 +136,9 @@ td.bad  { background-color: #ff4d6e; }
   <div style="position: absolute; bottom: 0; width: 100%">
     <img src="io_2009_logo.jpg"
          style="float: right; width: 226px; height: 70px; padding: 1em; vertical-align: text-bottom;" />
-    <p style="padding-left: 1em; padding-top: 1em;"><big>
-      Questions? <a href="">code.google.com/events/io/questions</a></big></p>
+    <p style="padding-left: 2.2em; padding-top: 1em;"><big>
+      Questions? <a href="code.google.com/events/io/questions">
+          code.google.com/events/io/questions</a></big></p>
     <img src="io_2009_footer.jpg" style="width: 100%" />
   </div>
 </div>
@@ -134,23 +161,30 @@ td.bad  { background-color: #ff4d6e; }
 </div>
 
 
+<!-- <div class="slide" style="background-image: url(io_2009_segue.png)"> -->
+<!-- <br /><br /><br /><br /><br /><br /> -->
+<!-- <p style="margin-left: 5em"><big>Consistency</big></p> -->
+<!-- </div> -->
+
+
 <div class="slide" style="background-image: url(io_2009_separator.png)">
-<blockquote>
+<br /><br /><small><br /></small>
+<p style="font-style: italic"><big>
 Of three properties of distributed data systems - consistency, availability,
 partition tolerance - choose two.
-</blockquote>
-<p style="text-align: center"><small>&nbsp; -Eric Brewer, CAP theorem,
+</big></p>
+<p>Eric Brewer, CAP theorem,
  <a href="http://www.cs.berkeley.edu/~brewer/cs262b-2004/PODC-keynote.pdf">
-  PODC 2000</a>
-</small></p>
+  PODC 2000</a></p>
 </div>
 
 
-<div class="slide">
-<blockquote>
-Scaling is hard.
-</blockquote>
-<p style="text-align: center"><small>&nbsp; -Various</small></p>
+<div class="slide" style="background-image: url(io_2009_separator.png)">
+<br /><br /><small><br /></small>
+<p style="font-style: italic"><big>
+<br /><br />Scaling is hard.
+</big></p>
+<p>Various</p>
 </div>
 
 
@@ -177,9 +211,8 @@ Scaling is hard.
 <li>Why transactions?</li>
 <li>Why across datacenters?</li>
 <li>Multihoming</li>
-<li>Techniques</li>
-<li>Tradeoffs</li>
-</ul>
+<li>Techniques and tradeoffs</li>
+<li>Conclusions</li></ul>
 </div>
 
 
@@ -241,8 +274,8 @@ Scaling is hard.
 <li><b>Why transactions?</b></li>
 <li>Why across datacenters?</li>
 <li>Multihoming</li>
-<li>Techniques</li>
-<li>Tradeoffs</li>
+<li>Techniques and tradeoffs</li>
+<li>Conclusions</li></ul>
 </ul>
 </div>
 
@@ -293,8 +326,8 @@ Scaling is hard.
 <li>Why transactions?</li>
 <li><b>Why across datacenters?</b></li>
 <li>Multihoming</li>
-<li>Techniques</li>
-<li>Tradeoffs</li>
+<li>Techniques and tradeoffs</li>
+<li>Conclusions</li></ul>
 </ul>
 </div>
 
@@ -336,8 +369,8 @@ Scaling is hard.
 <li>Why transactions?</li>
 <li>Why across datacenters?</li>
 <li><b>Multihoming</b></li>
-<li>Techniques</li>
-<li>Tradeoffs</li>
+<li>Techniques and tradeoffs</li>
+<li>Conclusions</li></ul>
 </ul>
 </div>
 
@@ -398,20 +431,20 @@ Scaling is hard.
 <h1>Option 3: True multihoming</h1>
 <ul>
 <li>Simultaneous writes in different DCs, maintaining consistency</li>
-<li>Two way</li>
-  <ul>
-<!--   <li>Synchronous replication</li> -->
-<!--   <li>Often 2PC</li> -->
-  <li>NASDAQ</li>
-  <li><i>Hard.</i></li></ul>
-<li>N way</li>
-  <ul>
-<!--   <li>Multi-master replication</li> -->
-<!--   <li>Distributed consensus</li> -->
-  <li>Amazon, Google</li>
-  <li><i>Harder.</i></li></ul>
-<li>Handles catastrophic failure, geolocality</li>
-<li>...but pay for it with latency</li>
+<li>Two way: hard</li>
+  <!-- <ul> -->
+  <!-- <li>Synchronous replication</li> -->
+  <!-- <li>Often 2PC</li> -->
+  <!-- <li>NASDAQ</li> -->
+  <!-- <li><i>Hard.</i></li></ul> -->
+<li>N way: harder</li>
+  <!-- <ul> -->
+  <!-- <li>Multi-master replication</li> -->
+  <!-- <li>Distributed consensus</li> -->
+  <!-- <li>Amazon, Google</li> -->
+  <!-- <li><i>Harder.</i></li></ul> -->
+<li>Handle catastrophic failure, geolocality</li>
+<li>...but pay for it in latency</li>
 </ul>
 </div>
 
@@ -432,22 +465,42 @@ Scaling is hard.
 <li>Why transactions?</li>
 <li>Why across datacenters?</li>
 <li>Multihoming</b></li>
-<li><b>Techniques</b></li>
-<li>Tradeoffs</li>
+<li><b>Techniques and tradeoffs</b></li>
+<li>Conclusions</li>
 </ul>
 </div>
 
 
 <div class="slide">
-<h1>Interested in...</h1>
-<ul>
-<li>Read/write data</li>
-<li>Replication</li>
-<li>Consistency</li>
-<li>Transactions</li>
-  <!-- <ul><li>distributed?</li> -->
-  <!-- <li>decentralized?</li></ul> -->
-</ul>
+<h1>Techniques and tradeoffs</h1>
+<br />
+<table class="chart">
+<tr><th></th>
+ <th>Backups</th>
+ <th>M/S</th>
+ <th>MM</th>
+ <th>2PC</th>
+ <th>Paxos</th>
+ </tr>
+<tr><th>Consistency</th>
+<td>&nbsp;</td><td /><td /><td /><td />
+</tr>
+<tr><th>Transactions</th>
+<td>&nbsp;</td><td /><td /><td /><td />
+</tr>
+<tr><th>Latency</th>
+<td>&nbsp;</td><td /><td /><td /><td />
+</tr>
+<tr><th>Throughput</th>
+<td>&nbsp;</td><td /><td /><td /><td />
+</tr>
+<tr><th>Data loss</th>
+<td>&nbsp;</td><td /><td /><td /><td />
+</tr>
+<tr><th>Failover</th>
+<td>&nbsp;</td><td /><td /><td /><td />
+</tr>
+</table>
 </div>
 
 
@@ -457,9 +510,49 @@ Scaling is hard.
 <li>Make a copy</li>
 <li>Sledgehammer</li>
 <li>Weak consistency</li>
-<li>Replication, not transactions</li>
-<li>App Engine: early internal launch</li>
+<li>Usually no transactions</li>
+<!-- <li>Replication, not transactions</li> -->
+<li>Datastore: early internal launch</li>
 </ul>
+</div>
+
+
+<div class="slide">
+<h1>Techniques and tradeoffs</h1>
+<br />
+<table class="chart">
+<tr><th></th>
+ <th>Backups</th>
+ <th>M/S</th>
+ <th>MM</th>
+ <th>2PC</th>
+ <th>Paxos</th>
+ </tr>
+<tr><th>Consistency</th>
+ <td class="bad">Weak</td>
+ <td /><td /><td /><td />
+</tr>
+<tr><th>Transactions</th>
+ <td class="bad">No</td>
+ <td /><td /><td /><td />
+</tr>
+<tr><th>Latency</th>
+ <td class="good">Low</td>
+ <td /><td /><td /><td />
+</tr>
+<tr><th>Throughput</th>
+ <td class="good">High</td>
+ <td /><td /><td /><td />
+</tr>
+<tr><th>Data loss</th>
+ <td class="bad">Lots</td>
+ <td /><td /><td /><td />
+</tr>
+<tr><th>Failover</th>
+ <td class="bad">Down</td>
+ <td /><td /><td /><td />
+</tr>
+</table>
 </div>
 
 
@@ -478,19 +571,16 @@ Scaling is hard.
 <!-- </div> -->
 
 
-<div class="slide">
-<h1>Optimistic concurrency</h1>
-<ul>
-<li>Opposite of "pessimistic" locking</li>
-<li>Journal writes, check for collisions before commit</li>
-<!--   <ul><li>On collision, abort and retry</li></ul> -->
-<li>Useful variant: <i>multi version concurrency control</i></li>
-<!--   <ul><li>Keep past versions for consistent snapshots</li></ul> -->
-<li>Good for throughput, read-heavy workloads</li>
-<li>Transactions, not replication</li>
-<li>App Engine: datastore</li>
-</ul>
-</div>
+<!-- <div class="slide"> -->
+<!-- <h1>Optimistic concurrency</h1> -->
+<!-- <ul> -->
+<!-- <li>Opposite of "pessimistic" locking</li> -->
+<!-- <li>Journal writes, check for collisions before commit</li> -->
+<!-- <li>Useful variant: <i>multi version concurrency control</i></li> -->
+<!-- <li>Good for throughput, read-heavy workloads</li> -->
+<!-- <li>App Engine: datastore</li> -->
+<!-- </ul> -->
+<!-- </div> -->
 
 
 <div class="slide">
@@ -502,9 +592,52 @@ Scaling is hard.
   <ul><li>e.g. MySQL binary logs</li></ul>
 <li>Weak/eventual consistency</li>
   <ul><li>Granularity matters!</li></ul>
-<li>Replication, not transactions</li>
-<li>App Engine: datastore</li>
+<!-- <li>Replication, not transactions</li> -->
+<li>Datastore: current</li>
 </ul>
+</div>
+
+
+<div class="slide">
+<h1>Techniques and tradeoffs</h1>
+<br />
+<table class="chart">
+<tr><th></th>
+ <th>Backups</th>
+ <th>M/S</th>
+ <th>MM</th>
+ <th>2PC</th>
+ <th>Paxos</th>
+ </tr>
+<tr><th>Consistency</th>
+ <td class="bad">Weak</td>
+ <td class="ok">Eventual</td>
+ <td /><td /><td />
+</tr>
+<tr><th>Transactions</th>
+ <td class="bad">No</td>
+ <td class="good">Full</td>
+ <td /><td /><td />
+</tr>
+<tr><th>Latency</th>
+ <td colspan="2" class="good">Low</td>
+ <td /><td /><td />
+</tr>
+<tr><th>Throughput</th>
+ <td colspan="2" class="good">High</td>
+ <td /><td /><td />
+</tr>
+<tr><th>Data loss</th>
+ <td class="bad">Lots</td>
+ <td class="ok">Some</td>
+ <td /><td /><td />
+</tr>
+<tr><th>Failover</th>
+ <td class="bad">Down</td>
+ <td class="ok">Read only</td>
+ <td /><td /><td />
+</tr>
+</table>
 </div>
 
 
@@ -517,73 +650,181 @@ Scaling is hard.
   <ul><li>e.g. <i>timestamp oracle</i>: monotonically increasing timestamps</li>
   <li>Either SPOF with master election...</li>
   <li>...or distributed consensus protocol</li></ul>
-<li>Replication and transactions</li>
+<li>No global transactions!</li>
+<li>Datastore: no strong consistency</li>
 </ul>
 </div>
 
 
 <div class="slide">
-<h1>Two Phase Commit</h1>
-<ul>
-<li><i>Centralized</i> consensus protocol</li>
-<li>Single coordinator (SPOF)</li>
-<li>1: propose, 2: vote, 3: commit/abort</li>
-<li>Heavyweight, synchronous, high latency</li>
-  <ul><li>3PC buys async with extra message</li></ul>
-<li>Replication and distributed transactions</li>
-<li>Supports true multihoming</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Paxos</h1>
-<ul>
-<li><i>Decentralized, distributed</i> consensus protocol</li>
-<li>"Either Paxos, or Paxos with cruft, or broken"</li>
-<!--   <br />&nbsp;&nbsp;</li> -->
-  <ul><li>Mike Burrows</li></ul>
-<li>Majority writes; survives minority failure</li>
-<li>Protocol similar to 2PC/3PC</li>
-  <ul><li>Lighter, but still high latency</li></ul>
-<li>Replication and distributed transactions</li>
-<li>Supports true multihoming</li>
-<li>App Engine: cross-datacenter coordination</li>
-</ul>
-</div>
-
-
-
-
-
-<div class="slide">
-<h1>What's ahead</h1>
-<ul>
-<li>Consistency?</li>
-<li>Why transactions?</li>
-<li>Why across datacenters?</li>
-<li>Multihoming</li>
-<li>Techniques</li>
-<li><b>Tradeoffs</b></li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Tradeoffs <small>(oversimplified!)</small></h1>
+<h1>Techniques and tradeoffs</h1>
 <br />
 <table class="chart">
 <tr><th></th>
  <th>Backups</th>
  <th>M/S</th>
  <th>MM</th>
- <th>Paxos</th>
  <th>2PC</th>
+ <th>Paxos</th>
  </tr>
 <tr><th>Consistency</th>
  <td class="bad">Weak</td>
- <td colspan="2"class="ok">Eventual</td>
+ <td colspan="2" class="ok">Eventual</td>
+ <td /><td />
+</tr>
+<tr><th>Transactions</th>
+ <td class="bad">No</td>
+ <td class="good">Full</td>
+ <td class="ok">Local</td>
+ <td /><td />
+</tr>
+<tr><th>Latency</th>
+ <td colspan="3" class="good">Low</td>
+ <td /><td />
+</tr>
+<tr><th>Throughput</th>
+ <td colspan="3" class="good">High</td>
+ <td /><td />
+</tr>
+<tr><th>Data loss</th>
+ <td class="bad">Lots</td>
+ <td colspan="2" class="ok">Some</td>
+ <td /><td />
+</tr>
+<tr><th>Failover</th>
+ <td class="bad">Down</td>
+ <td class="ok">Read only</td>
+ <td class="good">Read/write</td>
+ <td /><td />
+</tr>
+</table>
+</div>
+
+
+<div class="slide">
+<h1>Two Phase Commit</h1>
+<ul>
+<li>Semi-distributed consensus protocol</li>
+<ul><li>deterministic coordinator</li></ul>
+<li>1: propose, 2: vote, 3: commit/abort</li>
+<li>Heavyweight, synchronous, high latency</li>
+<li>3PC buys async with extra round trip</li?
+<!-- <li>Replication and distributed transactions</li> -->
+<!-- <li>Supports true multihoming</li> -->
+<li>Datastore: poor throughput</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Techniques and tradeoffs</h1>
+<br />
+<table class="chart">
+<tr><th></th>
+ <th>Backups</th>
+ <th>M/S</th>
+ <th>MM</th>
+ <th>2PC</th>
+ <th>Paxos</th>
+ </tr>
+<tr><th>Consistency</th>
+ <td class="bad">Weak</td>
+ <td colspan="2" class="ok">Eventual</td>
+ <td class="good">Strong</td>
+ <td />
+</tr>
+<tr><th>Transactions</th>
+ <td class="bad">No</td>
+ <td class="good">Full</td>
+ <td class="ok">Local</td>
+ <td class="good">Full</td>
+ <td />
+</tr>
+<tr><th>Latency</th>
+ <td colspan="3" class="good">Low</td>
+ <td class="bad">High</td>
+ <td />
+</tr>
+<tr><th>Throughput</th>
+ <td colspan="3" class="good">High</td>
+ <td class="bad">Low</td>
+ <td />
+</tr>
+<tr><th>Data loss</th>
+ <td class="bad">Lots</td>
+ <td colspan="2" class="ok">Some</td>
+ <td class="good">None</td>
+ <td />
+</tr>
+<tr><th>Failover</th>
+ <td class="bad">Down</td>
+ <td class="ok">Read only</td>
+ <td colspan="2" class="good">Read/write</td>
+ <td />
+</tr>
+</table>
+</div>
+
+
+<div class="slide">
+<h1>Paxos</h1>
+<ul>
+<li>Fully distributed consensus protocol</li>
+<li>"Either Paxos, or Paxos with cruft, or broken"</li>
+<!--   <br />&nbsp;&nbsp;</li> -->
+  <ul><li>Mike Burrows</li></ul>
+<li>Majority writes; survives minority failure</li>
+<li>Protocol similar to 2PC/3PC</li>
+  <ul><li>Lighter, but still high latency</li></ul>
+<!-- <li>Replication and distributed transactions</li> -->
+<!-- <li>Supports true multihoming</li> -->
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Paxos for the Datastore</h1>
+<ul>
+<li>Short distance? no.</li>
+<li>Paxos--? no.</li>
+<li>Opt-in? maybe...</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Paxos for App Engine</h1>
+<ul>
+<li>Coordinate moving state</li>
+<li>...usually via lock server</li>
+<li>Apps</li>
+<li>Memcache</li>
+<li>Offline processing</li>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Techniques and tradeoffs</h1>
+<br />
+<table class="chart">
+<tr><th></th>
+ <th>Backups</th>
+ <th>M/S</th>
+ <th>MM</th>
+ <th>2PC</th>
+ <th>Paxos</th>
+ </tr>
+<tr><th>Consistency</th>
+ <td class="bad">Weak</td>
+ <td colspan="2" class="ok">Eventual</td>
  <td colspan="2" class="good">Strong</td>
+</tr>
+<tr><th>Transactions</th>
+ <td class="bad">No</td>
+ <td class="good">Full</td>
+ <td class="ok">Local</td>
+ <td colspan="2" class="good">Full</td>
 </tr>
 <tr><th>Latency</th>
  <td colspan="3" class="good">Low</td>
@@ -591,12 +832,8 @@ Scaling is hard.
 </tr>
 <tr><th>Throughput</th>
  <td colspan="3" class="good">High</td>
- <td class="ok">Medium</td>
  <td class="bad">Low</td>
-</tr>
-<tr><th>Multihomed writes</th>
- <td colspan="2" class="bad">No</td>
- <td colspan="3" class="good">Yes</td>
+ <td class="ok">Medium</td>
 </tr>
 <tr><th>Data loss</th>
  <td class="bad">Lots</td>
@@ -604,36 +841,24 @@ Scaling is hard.
  <td colspan="2" class="good">None</td>
 </tr>
 <tr><th>Failover</th>
- <td class="bad">Read only</td>
- <td colspan="2" class="ok">Minimal impact</td>
- <td colspan="2" class="good">N/A</td>
+ <td class="bad">Down</td>
+ <td class="ok">Read only</td>
+ <td colspan="3" class="good">Read/write</td>
 </tr>
 </table>
 </div>
 
 
 <div class="slide">
-<h1>Tradeoffs <small>(oversimplified!)</small></h1>
-<br />
-<table class="chart">
-
-<tr><th></th>
- <td />
- <td colspan="2" style="border: 2px dotted black; border-top: none;">
-   <b>App Engine</b></td>
- <td />
-</tr>
-</table>
-</div>
-
-
-<div class="slide">
-<h1>In conclusion</h1>
-<br />
-<br />
-<br />
-<p style="width: 80%; text-align: center; font-size: 80px">
-  &nbsp;&nbsp; No silver bullet :(</p>
+<h1>Conclusions</h1>
+<!-- <p style="width: 80%; text-align: center; font-size: 80px"> -->
+<!--   &nbsp;&nbsp; No silver bullet :(</p> -->
+<ul>
+<li>No silver bullet...</li>
+<li>...but still worth doing!</li>
+<li>Embrace tradeoffs</li>
+<li>...and punt on them</li>
+</ul>
 </div>
 
 
@@ -644,14 +869,17 @@ Scaling is hard.
 <li>Why transactions?</li>
 <li>Why across datacenters?</li>
 <li>Multihoming</li>
-<li>Techniques</li>
-<li>Tradeoffs</li>
+<li>Techniques and tradeoffs</li>
+<li>Conclusions</li></ul>
 </ul>
 </div>
 
 
 <div class="slide">
-<h1>Questions?</h1>
+<h1>Questions?<br /><br />
+<a href="code.google.com/events/io/questions">
+  code.google.com/events/io/questions</a>
+</h1>
 </div>
 
 
