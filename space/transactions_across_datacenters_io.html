@@ -1,4 +1,4 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" 
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
 
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -66,6 +66,7 @@ div#footer {
   background-color: transparent;
   color: black;
 }
+#currentSlide { display: none; }
 
 div.pre {
   border: 1px solid black;
@@ -98,7 +99,7 @@ table.chart {
 }
 
 table.chart td {
-  min-width: 3em;
+  min-width: 5em;
   text-align: center;
   padding: .3em;
   border: 3px dashed black;
@@ -149,38 +150,32 @@ table.chart td.bad {
 <div class="slide" style="background-image: url(io_2009_title_header.png)">
 <div class="title">
 <h1>Transactions Across Datacenters
-<small><small><br />(and other weekend projects)</small></small>
+<small><br />(and other weekend projects)</small>
 </h1>
 <br /><br /><br />
 <h4><small>
  Ryan Barrett <br />
- Google I/O <br />
  May 27, 2009
 </small></h4>
 </div>
 </div>
 
 
-<!-- <div class="slide" style="background-image: url(io_2009_segue.png)"> -->
-<!-- <br /><br /><br /><br /><br /><br /> -->
-<!-- <p style="margin-left: 5em"><big>Consistency</big></p> -->
-<!-- </div> -->
-
 
 <div class="slide" style="background-image: url(io_2009_separator.png)">
-<br /><br /><small><br /></small>
+<br /><br /><br /><br />
 <p style="font-style: italic"><big>
 Of three properties of distributed data systems - consistency, availability,
 partition tolerance - choose two.
 </big></p>
 <p>Eric Brewer, CAP theorem,
- <a href="http://www.cs.berkeley.edu/~brewer/cs262b-2004/PODC-keynote.pdf">
+<a href="http://www.cs.berkeley.edu/~brewer/cs262b-2004/PODC-keynote.pdf">
   PODC 2000</a></p>
 </div>
 
 
 <div class="slide" style="background-image: url(io_2009_separator.png)">
-<br /><br /><small><br /></small>
+<br /><br /><br /><br />
 <p style="font-style: italic"><big>
 <br /><br />Scaling is hard.
 </big></p>
@@ -283,24 +278,24 @@ partition tolerance - choose two.
 <div class="slide">
 <h1>Why transactions?</h1>
 <ul>
-<li>Correctness</li>
-<li>Consistency</li>
-<li>Enforce invariants</li>
-<li>ACID</li>
-</ul>
-</div>
-
-
-<div class="slide">
-<h1>Cliched example</h1>
-<ul>
-<li>Transfer money from A to B</li>
+<li>Cliched example: transfer money from A to B</li>
   <ul><li>subtract from A</li>
   <li>add to B</li></ul>
 <li>What if something happens in between?</li>
   <ul><li>another transaction on A or B</li>
   <li>machine crashes</li>
   <li>...</li></ul>
+</ul>
+</div>
+
+
+<div class="slide">
+<h1>Why transactions?</h1>
+<ul>
+<li>Correctness</li>
+<li>Consistency</li>
+<li>Enforce invariants</li>
+<li>ACID</li>
 </ul>
 </div>
 
@@ -430,7 +425,7 @@ partition tolerance - choose two.
 <div class="slide">
 <h1>Option 3: True multihoming</h1>
 <ul>
-<li>Simultaneous writes in different DCs, maintaining consistency</li>
+<li>Simultaneous writes in different DCs</li>
 <li>Two way: hard</li>
   <!-- <ul> -->
   <!-- <li>Synchronous replication</li> -->
@@ -518,7 +513,7 @@ partition tolerance - choose two.
 
 
 <div class="slide">
-<h1>Techniques and tradeoffs</h1>
+<h1>Backups</h1>
 <br />
 <table class="chart">
 <tr><th></th>
@@ -599,7 +594,7 @@ partition tolerance - choose two.
 
 
 <div class="slide">
-<h1>Techniques and tradeoffs</h1>
+<h1>Master/slave replication</h1>
 <br />
 <table class="chart">
 <tr><th></th>
@@ -657,7 +652,7 @@ partition tolerance - choose two.
 
 
 <div class="slide">
-<h1>Techniques and tradeoffs</h1>
+<h1>Multi-master replication</h1>
 <br />
 <table class="chart">
 <tr><th></th>
@@ -717,7 +712,7 @@ partition tolerance - choose two.
 
 
 <div class="slide">
-<h1>Techniques and tradeoffs</h1>
+<h1>Two Phase Commit</h1>
 <br />
 <table class="chart">
 <tr><th></th>
@@ -785,8 +780,8 @@ partition tolerance - choose two.
 <div class="slide">
 <h1>Paxos for the Datastore</h1>
 <ul>
-<li>Short distance? no.</li>
-<li>Paxos--? no.</li>
+<li>Close together? no.</li>
+<li>In the <i>same</i> datacenter? no.</li>
 <li>Opt-in? maybe...</li>
 </ul>
 </div>
@@ -805,7 +800,7 @@ partition tolerance - choose two.
 
 
 <div class="slide">
-<h1>Techniques and tradeoffs</h1>
+<h1>Paxos</h1>
 <br />
 <table class="chart">
 <tr><th></th>
@@ -876,10 +871,10 @@ partition tolerance - choose two.
 
 
 <div class="slide">
-<h1>Questions?<br /><br />
+<p><big>Questions?<br /><br />
 <a href="code.google.com/events/io/questions">
   code.google.com/events/io/questions</a>
-</h1>
+</p>
 </div>
 
 
