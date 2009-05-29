@@ -86,7 +86,7 @@ likes of SimpleDB,
 Even so, if Yahoo does offer a cloud database in the future, it's a
 good bet that it will support YQL.
 
-YQL is notable in that it support third party data sources. XQuery/XPath does
+YQL is notable in that it supports third party data sources. XQuery/XPath does
 too, but YQL's [remote filters](#remote) allow
 it to use more efficient query mechanisms exposed by those sources, which
 XQuery/XPath can't do without help. LINQ supports third party data sources,
