@@ -9,6 +9,23 @@ Talks I've given. Includes dates, locations, slides, video, etc.
 <!-- note the two trailing spaces after some lines for line breaks.
 -->
 
+
+[Transactions Across Datacenters](http://code.google.com/events/io/sessions/TransactionsAcrossDatacenters.html)
+([slides](/space/transactions_across_datacenters_io.html))  
+May 27, 2009  
+[Google I/O](http://code.google.com/events/io/),
+[Moscone Center](http://www.moscone.com/), San Francisco
+
+[Google App Engine Fireside Chat](http://code.google.com/events/io/sessions/AppEngineFC.html)  
+May 28, 2009  
+[Google I/O](http://code.google.com/events/io/),
+[Moscone Center](http://www.moscone.com/), San Francisco
+
+[Google App Engine Datastore](http://snarfed.org/space/sdforum_app_engine_datastore.html)  
+May 26, 2009  
+[SDForum Cloud Services SIG: Databases in the Cloud](http://www.sdforum.org/index.cfm?fuseaction=Calendar.eventDetail&eventID=13366),
+[Tibco](http://www.tibco.com/), Palo Alto
+
 [Distributed Transactions for Google App Engine](http://danielwilkerson.com/dist-trans-gae.html)
 ([abstract](http://www.codecon.org/2009/program.html#DistributedTrans))  
 Apr. 18, 2009  
@@ -45,10 +62,15 @@ Nov. 17, 2008
 Nov. 7, 2008  
 [Google San Francisco](http://www.google.com/corporate/address.html)
 
+Google App Engine Fireside Chat  
+May 29, 2008  
+[Google I/O](http://sites.google.com/site/io/),
+[Moscone Center](http://www.moscone.com/), San Francisco
+
 [Under the Covers of the App Engine Datastore](http://sites.google.com/site/io/under-the-covers-of-the-google-app-engine-datastore)
 ([slides](/space/datastore_talk.html),
  [video](http://www.youtube.com/watch?v=tx5gdoNpcZM))  
-May 28-29, 2008  
+May 28, 2008  
 [Google I/O](http://sites.google.com/site/io/),
 [Moscone Center](http://www.moscone.com/), San Francisco
 
