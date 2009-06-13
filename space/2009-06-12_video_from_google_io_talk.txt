@@ -1,11 +1,9 @@
 Video from Google I/O Talk
 
-The
-[video from my talk at Google I/O](http://code.google.com/events/io/sessions/TransactionsAcrossDatacenters.html)
+The [video](http://www.youtube.com/watch?v=srOgpXECblk)
+of my talk at Google I/O this year,
+[Transactions Across Datacenters (and other weekend projects)](http://code.google.com/events/io/sessions/TransactionsAcrossDatacenters.html),
 is up!
-
-I speak at small events here and there [pretty regularly](/space/talks), and
-many of them take video recordings, so normally, this wouldn't be a big deal.
 
 <div style="float: right; margin-left: 5px; margin-right: -5px">
   <object width="212" height="172">
@@ -18,10 +16,13 @@ many of them take video recordings, so normally, this wouldn't be a big deal.
   </object>
 </div>
 
-However, not many of them publish the videos, much less in
-[such an accessible format](http://www.youtube.com/watch?v=srOgpXECblk),
-so that's always exciting. I also put a little more effort into this talk, and I
-definitely had a lot of fun with it.
+I give [talks every now and then](/space/talks), and many of them are recorded,
+so normally, this wouldn't be a big deal. Not many of them
+[publish the videos on YouTube](http://www.youtube.com/watch?v=srOgpXECblk),
+though, so that's exciting. Plus, I put a little more effort into this one than
+usual, and
+[just like last year's](http://sites.google.com/site/io/under-the-covers-of-the-google-app-engine-datastore),
+I had a lot of fun presenting it.
 
 Enjoy!
 
