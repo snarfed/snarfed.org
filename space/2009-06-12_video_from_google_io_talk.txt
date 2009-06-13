@@ -4,7 +4,10 @@ The
 [video from my talk at Google I/O](http://code.google.com/events/io/sessions/TransactionsAcrossDatacenters.html)
 is up!
 
-<div style="float: right; margin-right: -10px">
+I speak at small events here and there [pretty regularly](/space/talks), and
+many of them take video recordings, so normally, this wouldn't be a big deal.
+
+<div style="float: right; margin-left: 5px; margin-right: -5px">
   <object width="212" height="172">
     <param name="movie" value=http://www.youtube.com/v/srOgpXECblk&hl=en&fs=1&"></param>
     <param name="allowFullScreen" value="true"></param>
@@ -14,9 +17,6 @@ is up!
            allowfullscreen="true" width="212 height="172"></embed>
   </object>
 </div>
-
-I speak at small events here and there [pretty regularly](/space/talks), and
-many of them take video recordings, so normally, this wouldn't be a big deal.
 
 However, not many of them publish the videos, much less in
 [such an accessible format](http://www.youtube.com/watch?v=srOgpXECblk),
