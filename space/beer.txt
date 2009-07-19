@@ -1,5 +1,4 @@
-
-obeer
+beer
 
 <style type="text/css">
 img { vertical-align: text-top; }
@@ -14,6 +13,8 @@ img { vertical-align: text-top; }
 ![good](/good.png) I liked,
 ![ok](/ok.png) were just ok,
 ![bad](/bad.png) I didn't like.
+Also see [wine](/space/wine), [chocolate](/space/chocolate), and
+[other lists](/space/lists).
 
 Naturally, this isn't comprehensive -
 I've tried others that aren't listed here -
