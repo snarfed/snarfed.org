@@ -1,4 +1,4 @@
-App Engine datastore multihoming
+App Engine Datastore multihoming
 
 <div style="float: right; margin-left: 10px">
   <a href="http://googleappengine.blogspot.com/">
@@ -12,8 +12,8 @@ which I've been working on for a while now, on the
 The post is similar to the
 [Transactions Across Datacenters talk](http://code.google.com/events/io/sessions/TransactionsAcrossDatacenters.html)
 I gave at [Google I/O](http://code.google.com/events/io/) earlier this year, 
-but it has much more detail on how exactly we're applying those lessons to the
-datastore.
+but it has much more detail on how we're applying those lessons to the
+datastore itself.
 
 When I was [at PDC](http://snarfed.org/space/windows+azure+impressions) for
 Microsoft's announcement of [Windows Azure](http://azure.com/) last year,
