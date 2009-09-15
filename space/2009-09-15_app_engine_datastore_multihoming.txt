@@ -1,0 +1,43 @@
+App Engine datastore multihoming
+
+<div style="float: right; margin-left: 10px">
+  <a href="http://googleappengine.blogspot.com/">
+    <img src="/space/appengine.jpg" /></a>
+</div>
+
+I recently
+[posted about datastore multihoming](http://googleappengine.blogspot.com/2009/09/migration-to-better-datastore.html),
+which I've been working on for a while now, on the
+[App Engine blog](http://googleappengine.blogspot.com/).
+The post is similar to the
+[Transactions Across Datacenters talk](http://code.google.com/events/io/sessions/TransactionsAcrossDatacenters.html)
+I gave at [Google I/O](http://code.google.com/events/io/) earlier this year, 
+but it has much more detail on how exactly we're applying those lessons to the
+datastore.
+
+When I was [at PDC](http://snarfed.org/space/windows+azure+impressions) for
+Microsoft's announcement of [Windows Azure](http://azure.com/) last year,
+one of my strongest impressions was how much "under the hood" information
+there was. A number of talks went deep into the internal design decisions and
+implementation of Azure itself. As I
+[described at the time](http://snarfed.org/space/windows+azure+impressions#information):
+
+> The internal details on how Azure works were particularly compelling.
+> Developers may not need that information to write Azure services, but providing
+> it drastically increases their confidence and comfort level in the system.
+> 
+> Other developers at PDC mentioned this, and I also felt it personally, at a gut
+> level, long before I identified what it was. My reactions to "how to" talks
+> varied widely, but every time I went to an "under the covers" talk, Azure felt
+> more and more solid.
+
+In the same vein, I'm proud that we've made
+[such](http://code.google.com/events/io/sessions/FromSparkPlugToDriveTrain.html)
+[a](http://sites.google.com/site/io/under-the-covers-of-the-google-app-engine-datastore)
+[concerted](http://code.google.com/appengine/articles/index_building.html)
+[effort](http://groups.google.com/group/google-appengine/msg/ba95ded980c8c179?pli=1)
+to be transparent about App Engine's inner workings. This datastore multihoming
+blog post is definitely part of that trend.
+
+Happily, reception seems to be positive so far. Fingers crossed!
+
