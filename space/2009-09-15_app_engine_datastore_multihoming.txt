@@ -15,11 +15,11 @@ I gave at [Google I/O](http://code.google.com/events/io/) earlier this year,
 but it has much more detail on how we're applying those lessons to the
 datastore itself.
 
-When I was [at PDC](http://snarfed.org/space/windows+azure+impressions) for
-Microsoft's announcement of [Windows Azure](http://azure.com/) last year,
+When I was [at PDC last year](http://snarfed.org/space/windows+azure+impressions)
+for Microsoft's [Windows Azure](http://azure.com/) announcement,
 one of my strongest impressions was how much "under the hood" information
-there was. A number of talks went deep into the internal design decisions and
-implementation of Azure itself. As I
+there was. A number of talks went deep into Azure's internal design decisions and
+implementation. As I
 [described at the time](http://snarfed.org/space/windows+azure+impressions#information):
 
 > The internal details on how Azure works were particularly compelling.
