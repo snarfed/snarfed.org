@@ -7,7 +7,7 @@ trouble recently when I tried to re-bind C-1 to do something new.
 
 Executive summary? Do this:
 
-    (global-set-ket [(control \1)] 'foo)
+    (global-set-key [(control \1)] 'foo)
 
 Note the escaped 1. Evidently this keystroke syntax interprets numeric arguments
 as key ids, or something, instead of the key's actual character. So, to make it
