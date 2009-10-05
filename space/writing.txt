@@ -1,5 +1,8 @@
 writing
-[![pencil.jpg](/space/pencil.jpg)](/space/writing)
+
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <img src="/space/pencil.jpg" />
+</div>
 
 Occasionally I write things. Here are some of them.
 Also see [other lists](/space/lists).
