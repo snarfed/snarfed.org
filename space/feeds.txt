@@ -31,7 +31,7 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
 -->
 
 <!-- keep this one as is!!! -->
-* [Ryan Barrett's Friends' Facebook Status Updates](http://snarfed.org/space/2009-03-05_facebook_friend_lists)
+* [Ryan Barrett's Friends' Facebook Status Updates](/space/2009-03-05_facebook_friend_lists)
 
 
 * [3D Realms News](http://www.3drealms.com/)
