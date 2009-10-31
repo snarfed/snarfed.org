@@ -28,19 +28,34 @@ a while back. -->
 **Books I'd like to read**: 
 [![Icon-Permalink.png](/Icon-Permalink.png)](#to_read)
 
+
+  * [Vernor Vinge - A Fire Upon the Deep](http://books.google.com/books?id=UGAKB3r0sZQC)
+<f>f</f>
+
+  * [Code Reads](http://www.wordyard.com/category/code-reads/)
+<nf>nf</nf>
+
+  * [Fred Brooks - The Computer Scientist as Toolsmith](http://www.cs.unc.edu/~brooks/Toolsmith-CACM.pdf)
+<nf>nf</nf>
+
+  * [Guy Steele - Growing a Language](http://www.cs.virginia.edu/~evans/cs655/readings/steele.pdf)
+<nf>nf</nf>
+
+  * [Peter Norvig - Design Patterns in Dynamic Programming](http://www.norvig.com/design-patterns/ppframe.htm)
+<nf>nf</nf>
+
+  * [Alan Moore, David Gibbons - Watchmen](http://books.google.com/books?id=QsMdAAAACAAJ)
+<f>f</f>
+
+  * [Scott McCloud - Understanding Comics](http://books.google.com/books?id=oJ1vPwAACAAJ)
+<nf>nf</nf>
+
   * Iain M Banks - [Use of Weapons](http://books.google.com/books?id=6n2kIAAACAAJ),
-[Feersum Endjinn](http://books.google.com/books?id=-38GAAAACAAJ),
-[Excession](http://books.google.com/books?id=_CMNAAAACAAJ)
+[Feersum Endjinn](http://books.google.com/books?id=-38GAAAACAAJ)
 <f>f</f>
 
-  * [Robert J. Sawyer](http://sfwriter.com/) - [FlashForward](http://sfwriter.com/exff.htm), etc.
+  * [Robert J. Sawyer](http://sfwriter.com/) - [Flash Forward](http://sfwriter.com/exff.htm), etc.
 <f>f</f>
-
-  * [Peter Seibel - Coders at Work](http://books.google.com/books?id=fV92PgAACAAJ)
-<nf>nf</nf>
-
-  * [Neil Strauss - Emergency](http://books.google.com/books?id=v6bUKwAACAAJ)
-<nf>nf</nf>
 
   * [John Shirley and Ken Levine - BioShock](http://www.gamasutra.com/php-bin/news_index.php?story=23761)
 <f>f</f>
@@ -53,9 +68,6 @@ a while back. -->
 
   * [Tom McCarthy - Men in Space](http://books.google.com/books?id=Q3fcAAAACAAJ)
 <f>f</f>
-
-  * [Richard Feynman - The Character of Physical Law](http://books.google.com/books?id=Q9AxAAAACAAJ)
-<nf>nf</nf>
 
   * [L. J. Shrum - The Psychology of Entertainment Media](http://books.google.com/books?id=w_kJWcaz-wcC)
 <nf>nf</nf>
@@ -77,11 +89,31 @@ a while back. -->
   * [Ted Chiang - Hell is the Absence of God](http://isbn.nu/aisbn/chiang%20ted)
 <f>f</f>
 
+  * [Andy Oram, Greg Wilson - Beautiful Code](http://books.google.com/books?id=gJrmszNHQV4C)
+<nf>nf</nf>
+
+  * [Chris Okasaki - Purely Functional Data Structures](http://books.google.com/books?id=SxPzSTcTalAC)
+<nf>nf</nf>
+
+  * [Abelson, Sussman - Structure and Interpretation of Computer Programs](http://books.google.com/books?id=445QAAAAMAAJ)
+<nf>nf</nf>
+
+  * [Dijkstra - A Discipline of Programming](http://books.google.com/books?id=MsUmAAAAMAAJ)
+<nf>nf</nf>
+
 <a name="read"></a>
 **Books I've read**: 
 [![Icon-Permalink.png](/Icon-Permalink.png)](#to_read)
 
+  * [The US Army Counterinsurgency Field Manual]()
+<nf>nf</nf>
+
+  * [Peter Seibel - Coders at Work](http://books.google.com/books?id=fV92PgAACAAJ)
+<nf>nf</nf>
+
   * [Iain M Banks - The Algebraist](http://books.google.com/books?id=AKvpAAAACAAJ)
+![ok](/ok.png) <f>f</f>,
+[Excession](http://books.google.com/books?id=_CMNAAAACAAJ)
 <f>f</f>
 
   * [Richard Bach - Jonathan Livingston Seagull](http://books.google.com/books?id=W9gJEukZ7bQC)
@@ -112,7 +144,9 @@ a while back. -->
 [Bonfire of the Vanities](http://books.google.com/books?id=kBzGGAAACAAJ)
 ![good](/good.png) <f>f</f>,
 [I Am Charlotte Simmons](http://books.google.com/books?id=2TN2AQAACAAJ)
-![good](/good.png) <f>f</f>
+![good](/good.png) <f>f</f>,
+[A Man in Full]()
+<f>f</f>
 
   * [J.D. Salinger - The Catcher in the Rye](http://books.google.com/books?id=yF4hNgAACAAJ)
 ![bad](/bad.png) <f>f</f>
@@ -532,9 +566,14 @@ Guide](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorc
 Desert](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Percival Everett&title=American Desert)
 ![good](/good.png) <f>f</f>
 
-  * [Richard Feynman - Surely You Must Be Joking, Mr.
-Feynman](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Richard Feynman&title=Surely You Must Be Joking, Mr. Feynman)
-![good](/good.png) <nf>nf</nf>
+  * Richard Feynman -
+[Surely You Must Be Joking, Mr. Feynman](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Richard Feynman&title=Surely You Must Be Joking, Mr. Feynman)
+![good](/good.png) <nf>nf</nf>,
+[The Character of Physical Law](http://books.google.com/books?id=Q9AxAAAACAAJ)
+![good](/good.png) <nf>nf</nf>,
+[Six Not-So-Easy Pieces]()
+<nf>nf</nf>
+
 
   * [Stephen Hawking - Black Holes and Baby
 Universes](http://isbn.nu/cgi-bin/design-books?newform=yes&titlechoice=exact&authorchoice=exact&author=Stephen Hawking&title=Black Holes and Baby Universes)
