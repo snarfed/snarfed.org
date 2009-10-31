@@ -4,7 +4,7 @@ books
 img { vertical-align: text-top; }
 </style>
 
-<div class="img" style="float: right; margin-left: 10px">
+<div class="img-shadow" style="float: right; margin-left: 10px">
   <img src="/space/books.jpg" />
 </div>
 
