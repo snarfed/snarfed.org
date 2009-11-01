@@ -22,7 +22,8 @@ other private rss feeds.
 xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
   ~/src/misc/google-reader-subscriptions.opml.xml \
   | grep -v authkey \
-  | grep -v facebook.com/feeds/friends_status.php
+  | grep -v facebook.com/feeds/friends_status.php \
+  | grep -v blog.myspace.com
 -->
 
 
@@ -59,9 +60,6 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
 
 * [Avant Game](http://blog.avantgame.com/)
 (_[subscribe](http://avantgame.blogspot.com/atom.xml)_) 
-
-* [Best of Craigslist](http://www.craigslist.org/about/best/)
-(_[subscribe](http://www.craigslist.org/about/best/index.rss)_) 
 
 * [Bill Katz](http://www.billkatz.com)
 (_[subscribe](http://www.billkatz.com/feeds/atom.xml)_) 
@@ -120,14 +118,11 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
 * [Ego Food](http://egofood.blogspot.com/)
 (_[subscribe](http://egofood.blogspot.com/atom.xml)_) 
 
-* [evan_tech](http://community.livejournal.com/evan_tech/)
+* [evan\_tech](http://community.livejournal.com/evan_tech/)
 (_[subscribe](http://community.livejournal.com/evan_tech/data/atom)_) 
 
 * [Evan's LiveJournal](http://evan.livejournal.com/)
 (_[subscribe](http://evan.livejournal.com/data/rss)_) 
-
-* [feed/http://blog.myspace.com/blog/rss.cfm?friendID=18935888](http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Fblog.myspace.com%2Fblog%2Frss.cfm%3FfriendID%3D18935888)
-(_[subscribe](http://blog.myspace.com/blog/rss.cfm?friendID=18935888)_) 
 
 * [GAE Planet](http://gae-planet.appspot.com/)
 (_[subscribe](http://feeds.feedburner.com/gae-planet)_) 
