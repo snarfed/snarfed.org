@@ -4,7 +4,7 @@ validate
 This
 site should validate as XHTML (or HTML 4.01), CSS level 2, and RSS 2.0. Try it:
 
-[Validate XHTML ](http://validator.w3.org/check?uri=http://snarfed.org/) (using
+[Validate XHTML](http://validator.w3.org/check?uri=http://snarfed.org/) (using
 the [W3C](http://w3c.org)'s Jigsaw validator).
 
 [Validate CSS

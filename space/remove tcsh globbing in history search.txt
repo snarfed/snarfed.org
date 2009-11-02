@@ -26,7 +26,7 @@ list](http://mx.gw.com/pipermail/tcsh/2006-January/003535.html), we decided to
 remove glob support in history search altogether. It's a rare use case, and we
 believe it's more confusing than useful.
 
-[This patch ](/space/tcsh-no-glob-search.patch) against [tcsh
+[This patch](/space/tcsh-no-glob-search.patch) against [tcsh
 6.14.00](http://www.tcsh.org/MostRecentRelease) removes globbing support and
 fixes the bugs.
 

@@ -31,6 +31,6 @@ The mark will now be on the first _o_ in _foo_. You can confirm by pressing ^W
 to kill the region between the cursor and the mark. It will delete the _oo_,
 leaving only _f_.
 
-[This patch ](/space/tcsh-preserve-mark.patch)
+[This patch](/space/tcsh-preserve-mark.patch)
 against [tcsh 6.14.00](http://www.tcsh.org/MostRecentRelease) fixes the bug.
 

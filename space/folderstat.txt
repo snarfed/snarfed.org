@@ -2,8 +2,9 @@ folderstat
 ![/space/folder.jpg](/space/folder.jpg)
 
 For the impatient:  
-[Download folderstat.cpp](/space/folderstat.cpp)[  
-Folderstat](/space/folderstat.cpp) is a program that reports the
+[Download folderstat.cpp](/space/folderstat.cpp)
+
+[Folderstat](/space/folderstat.cpp) is a program that reports the
 sizes of each of the foldrs in an IMAP account. It uses
 [pine](http://www.washington.edu/pine/) as an IMAP client, so you'll need to
 have an IMAP account set up in pine, and you'll need to have pine in your path.
