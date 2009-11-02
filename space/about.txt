@@ -1,25 +1,24 @@
 about
 
 <div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="/space/ryan"><img src="/space/ryan_small.jpg" /></a>
+  <img src="/space/ryan_small.jpg" />
 </div>
 
-Hi! I'm Ryan Barrett. I
+I'm Ryan Barrett. I
 [live](/space/2004-12-02),
 [work](/space/2008-04-07_google_app_engine_launched), and
 [play](/space/archive)
-in Silicon Valley and San Francisco. See my
+in Silicon Valley and San Francisco. For more about me, see my
+[past posts](/space/archive),
 [pictures](/space/pictures),
-[resume](http://ryan.barrett.name/resume.html), and
-[past posts](/space/archive)
-for more.
+[software](/space/software),
+[lists](/space/lists), and
+[resume](http://ryan.barrett.name/resume.html).
 
 email: _[public at ryanb dot org](mailto:public at ryanb dot org)_  
 Jabber: _[heaven@gmail](xmpp:heaven@gmail.com)_  
 AIM: _[bl4ize](aim:goim?screenname=bl4ize)_  
 ICQ: _[1471094](http://wwp.icq.com/1471094)_  
-
-<hr />
 
 I've been posting to this web site on and off since early 2002. For more, see
 [snarfed.org's history](/space/snarfed.org+history) and [copyright](/space/copyright).
