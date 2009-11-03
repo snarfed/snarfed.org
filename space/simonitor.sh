@@ -1,7 +1,7 @@
 #!/bin/bash
 #
 # simonitor.sh
-# Copyright 2007 Ryan Barrett
+# Copyright 2007-2009 Ryan Barrett
 # http://snarfed.org/space/simonitor
 #
 # Fetches the current balance of one or more Simon gift cards, scrapes the
@@ -29,7 +29,7 @@ fi
 # for +, and %2F for /. see http://www.w3schools.com/tags/ref_urlencode.asp.
 #
 # when Simon changes their web site, this usually needs to be updated.
-VIEWSTATE=%2FwEPDwUKMTc3NDk5MzQ1MA9kFgJmD2QWBAIBD2QWBAICDxYCHgdjb250ZW50BWxJZiB5b3UgaGF2ZSBhIFNpbW9uIEdpZnRjYXJkIGFuZCBuZWVkIHRvIGNoZWNrIHlvdXIgYmFsYW5jZSBpdCdzIHF1aWNrLCBlYXN5IGFuZCBzZWN1cmUgb25saW5lIGF0IFNpbW9uLmNvbS5kAgMPFgIfAAUaZ2lmdCBjYXJkcywgc2ltb24gZ2lmdGNhcmRkAgMPZBYGAgMPZBYCZg9kFgJmDxYCHgRUZXh0BQEvZAIFDxYCHgxhdXRvY29tcGxldGUFA29mZhYCAgEPZBYGAgEPZBYEZg8WAh4HVmlzaWJsZWcWAmYPDxYCHg9FbmFibGVWaWV3U3RhdGVnZGQCAQ8WAh8DaBYCZg8PFgIfBGdkZAIDD2QWCAIBDxYCHwNnZAIFDxYCHwNnZAIXDw9kFgIfAgUDb2ZmZAIdDw8WBB4YQ2FwdGNoYUltYWdlX0NQQ29udHJvbElEBSRjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJHR4dENhcHRjaGEeCEltYWdlVXJsBSNyZWNpcGllbnQvaW1hZ2VzL2NhcHRjaGEvNjA5MTMyLmpwZ2RkAgUPDxYCHwNoZBYEAhEPEGRkFgFmZAITDzwrAAsAZAIHD2QWCGYPDxYCHgtOYXZpZ2F0ZVVybAUTL1ByaXZhY3lQb2xpY3kuYXNweGRkAgEPDxYCHwcFCi9maW5kYW1hbGxkZAICDw8WAh8HBRgvYWJvdXRfc2ltb24vY29udGFjdF9zcGdkZAIEDw8WAh8HBRJodHRwOi8vd3d3LnN5Zi5vcmdkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAgUkY3RsMDAkSGVhZGVyMSRUb3BOYXZpZ2F0aW9uMSR0b3BNZW51BSNjdGwwMCRDb250ZW50UGxhY2VIb2xkZXIxJGJ0blN1Ym1pdGb6X5PhcEblIZO04OHVNstPn%2FGy
+VIEWSTATE=%2FwEPDwULLTIxMjAxNTM0MjcPZBYCZg9kFgJmD2QWBAIBD2QWAgIIDxYCHgdjb250ZW50BQhuby1jYWNoZWQCAw9kFgICAQ9kFgoCAw8PFgIeBk1vZGVJZGZkZAIFD2QWAgIDDw8WAh4HVmlzaWJsZWdkZAIHD2QWAmYPFgIfAmcWAgIBDw8WAh4LTmF2aWdhdGVVcmwFNmh0dHBzOi8vd3d3LnNpbW9uLmNvbS9naWZ0Y2FyZC9jYXJkX2JhbGFuY2UuYXNweD9yc2M9ZmRkAgkPZBYGAgEPZBYCAgEPZBYCAgEPZBYCAgEPFgIfAmdkAgMPZBYCAgEPFgIeC18hSXRlbUNvdW50AgMWBgIBD2QWAgIBDw8WCB8DBQ0vZGVmYXVsdC5hc3B4HgRUZXh0BQRIb21lHghDc3NDbGFzcwUFZmlyc3QeBF8hU0ICAmRkAgIPZBYCAgEPDxYEHwMFFi9naWZ0Y2FyZC9kZWZhdWx0LmFzcHgfBQUeU2ltb24gR2lmdGNhcmRzICYgR2lmdGFjY291bnRzZGQCAw9kFgICAQ8PFggfAwUMamF2YXNjcmlwdDo7HwUFDENhcmQgQmFsYW5jZR8GBQdjdXJyZW50HwcCAmRkAgUPZBYEAgMPFgIfAmdkAgQPFgIfAmgWAgINDxBkZBYBZmQCCw9kFgICAg8PFgIfAmdkZBgCBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAQU2Y3RsMDAkY3RsMDAkRnVsbENvbnRlbnQkTWFpbkNvbnRlbnQkY2hlY2tCYWxhbmNlU3VibWl0BS5jdGwwMCRjdGwwMCRGdWxsQ29udGVudCRjdGwwMCRsZWZ0TmF2TXVsdGlWaWV3Dw9kZmQCdHgcubATw8JFZ94KihB%2BHOIhmg%3D%3D
 
 COOKIE_FILE=/tmp/simonitor_cookie.jar
 CURL_ARGS="--cookie-jar $COOKIE_FILE --cookie $COOKIE_FILE --silent --show-error --insecure"
@@ -46,49 +46,42 @@ for CC in $*; do
   fi
 
 
-  # GET the form page and the captcha image
-  CAPTCHA=`curl $CURL_ARGS https://www.simon.com/giftcard/card_balance.aspx | \
-             egrep -o 'recipient/images/captcha/[^.]+\.jpg'`
+  # GET the form page and the recaptcha image
+  RECAPTCHA_K=`curl $CURL_ARGS https://www.simon.com/giftcard/card_balance.aspx | \
+                 egrep -o "https://api-secure.recaptcha.net/challenge\?k=[^&']+"`
+  RECAPTCHA_C=`curl $RECAPTCHA_K | \
+                 egrep -o "challenge : '[^']+" | \
+                 cut -c 14-`
   CAPTCHAFILE=`mktemp /tmp/simonitor_captcha.XXXXXX` || exit 1
-  curl --output $CAPTCHAFILE $CURL_ARGS https://www.simon.com/giftcard/$CAPTCHA
+  curl --output $CAPTCHAFILE $CURL_ARGS https://api-secure.recaptcha.net/image?c=${RECAPTCHA_C}
   xloadimage $CAPTCHAFILE > /dev/null &
   XLOADIMAGE_PID="$!"
 
-  # ask for the captcha.
-  #
-  # sometimes their captcha generator breaks and only generates AAAAAA. when
-  # that happens, i comment out the read command and replace it with this line.
-#   CAPTCHA="aaaaaa"
+  # ask for the captcha
   read -e -p "Enter the captcha string: " CAPTCHA
+  CAPTCHA=`echo $CAPTCHA | tr ' ' +`
 
   # erase the prompt w/ANSI escape codes. [1A moves the cursor up a line, [0K
   # erases the line. see http://www.answers.com/topic/ansi-escape-code .
   echo -ne '\e[1A\e[0K'
 
-  # POST the form data. note that %24 is the url encoding for the $ character.
-  if ( ! curl --output /dev/null $CURL_ARGS \
-         --data "__VIEWSTATE=$VIEWSTATE&ctl00%24ContentPlaceHolder1%24btnSubmit.x=0&ctl00%24ContentPlaceHolder1%24btnSubmit.y=0&ctl00%24ContentPlaceHolder1%24txtCaptcha=$CAPTCHA&ctl00%24ContentPlaceHolder1%24ccNumberBalance=$CC_NUM&ctl00%24ContentPlaceHolder1%24ccCid=$CC_CID" \
+  # POST to the form. note that %24 is the url encoding for the $ character.
+  TMPFILE=`mktemp /tmp/simonitor_out.XXXXXX` || exit 1
+  if ( ! curl --output $TMPFILE $CURL_ARGS \
+         --data "__VIEWSTATE=${VIEWSTATE}&returnUrl=https%3A%2F%2Fwww.simon.com%3A443%2Fgiftcard%2Fcard_balance.aspx&ctl00%24ctl00%24FullContent%24MainContent%24tbNumber=${CC_NUM}&ctl00%24ctl00%24FullContent%24MainContent%24tbCid=${CC_CID}&recaptcha_challenge_field=${RECAPTCHA_C}&recaptcha_response_field=${CAPTCHA}&ctl00%24ctl00%24FullContent%24MainContent%24checkBalanceSubmit.x=0&ctl00%24ctl00%24FullContent%24MainContent%24checkBalanceSubmit.y=0" \
          https://www.simon.com/giftcard/card_balance.aspx ); then
     continue
   fi
 
-  # handle the redirect. iirc, this request sets the auth cookie we need.
-  if ( ! curl $CURL_ARGS --output /dev/null \
-         https://www.simon.com/giftcard/process.ashx ); then
-    continue
-  fi
-
-  # GET the balance page and scrape the address, expiration date, and balance
-  TMPFILE=`mktemp /tmp/simonitor_out.XXXXXX` || exit 1
-  curl $CURL_ARGS -o $TMPFILE https://www.simon.com/giftcard/card_balance.aspx
-
-  BALANCE=`egrep -o 'lblBalance"><b>[^<]+' $TMPFILE | sed 's/lblBalance"><b>//'`
+  # scrape the address, expiration date, and balance
+  BALANCE=`egrep -o 'lblBalance">[^<]+' $TMPFILE | sed 's/lblBalance">//'`
   EXPDATE=`egrep -o 'lblExpDate">[^<]+' $TMPFILE | sed 's/lblExpDate">//'`
   echo "$CC: $BALANCE, expires $EXPDATE"
 
   NAME=`egrep -o 'lblPersonName">[^<]*' $TMPFILE | sed 's/lblPersonName">//'`
-  CITY_STATE_ZIP=`egrep -o 'lblPersonAddress">[^<]*<br>[^<]*(<br>[^<]*)?' $TMPFILE \
-                  | sed 's/lblPersonAddress">//' | sed 's/<br>/ /' | sed 's/<br>/ /'`
+  CITY_STATE_ZIP=`egrep -o 'lblPersonAddress">[^<]*(<br>[^<]*)*' $TMPFILE \
+                  | sed 's/lblPersonAddress">//' \
+                  | sed 's/<br>/ /' | sed 's/<br>/ /' | sed 's/<br>/ /'`
   if [ "$NAME $CITY_STATE_ZIP" != " " ]; then
     echo "                      $NAME  $CITY_STATE_ZIP"
   fi
