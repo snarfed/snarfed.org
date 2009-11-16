@@ -1,5 +1,8 @@
 video
-[![/space/film.jpg](/space/film.jpg)](/space/video)
+
+<div style="float: right; margin-left: 10px">
+  <img src="/space/film_reel.jpg" alt="film reel" />
+</div>
 
 Check out our draw group's [Kashnick
 videos](http://keeda.stanford.edu/~kash/kashnick/) (very funny) and Maulik's
