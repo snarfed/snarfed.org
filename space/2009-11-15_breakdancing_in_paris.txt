@@ -7,7 +7,7 @@ Breakdancing in Paris
     <param name="allowscriptaccess" value="always"></param>
     <embed src="http://www.youtube.com/v/UgnlcLp4AzI&hl=en&fs=1"
            type="application/x-shockwave-flash" allowscriptaccess="always"
-           allowfullscreen="true" width="212 height="172"></embed>
+           allowfullscreen="true" width="212" height="172"></embed>
   </object>
 </div>
 
