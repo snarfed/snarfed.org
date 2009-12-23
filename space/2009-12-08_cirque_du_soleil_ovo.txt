@@ -1,7 +1,8 @@
 Cirque du Soleil: Ovo
 
 <div class="img-shadow" style="float: right; margin-left: 10px">
-  <img src="/space/cirque_du_soleil_ovo_logo.jpg" />
+  <a href="http://www.cirquedusoleil.com/en/shows/ovo/">
+    <img src="/space/cirque_du_soleil_ovo_logo.jpg" /></a>
 </div>
 
 [Cirque du Soleil](http://www.cirquedusoleil.com/en/) has been in San
@@ -16,7 +17,8 @@ clowns, gymnasts, trapeze artists - but the "world of insects" theme reigns
 supreme.
 
 <div class="img-shadow" style="float: left; margin-right: 10px">
-  <img src="/space/cirque_du_soleil_ovo_slack_wire.jpg" />
+  <a href="http://www.cirquedusoleil.com/en/shows/ovo/">
+    <img src="/space/cirque_du_soleil_ovo_slack_wire.jpg" /></a>
 </div>
 
 The music, sets, costumes, and choreography all work together to convey a
