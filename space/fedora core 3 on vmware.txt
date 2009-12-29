@@ -63,7 +63,7 @@ yes. Here are the commands:
         /usr/bin/vmware-config-tools.pl
 
 
-  * [Yum](http://www.linux.duke.edu/projects/yum) is the preferred package
+  * [Yum](http://yum.baseurl.org/) is the preferred package
 manager for FC3. It's fairly similar to
 [apt-get](http://apt4rpm.sourceforge.net/), which I'd used for a while. Once I
 added the [Fedora Extras](http://fedoraproject.org/wiki/Extras_2fUsingExtras),
