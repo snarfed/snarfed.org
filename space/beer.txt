@@ -4,7 +4,7 @@ beer
 img { vertical-align: text-top; }
 </style>
 
-<div style="float: right; margin-left: 10px">
+<div class="img-shadow" style="float: right; margin-left: 10px">
   <img src="/space/beer_taps.jpg" alt="beer taps" />
 </div>
 
