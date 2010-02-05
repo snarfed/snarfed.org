@@ -38,14 +38,25 @@ recommend.
 
 <a name="chocolates"></a>
 
+<hr />
+<!--
 ***
 PLAIN
 ***
+-->
+
+[Pralus](http://chocolats-pralus.com/)  
+Republique Dominicaine Trinitario 75%
+![ok](/ok.png)
+<!-- kinda harsh and confusing -->
 
 [Pralus](http://chocolats-pralus.com/)  
 [Equateur](http://seventypercent.com/chocop/bar_detail.asp?ID=275) 75%
 ![ok](/ok.png)
 <!-- mild, creamy, vanilla -->
+
+[Askinosie](http://askinosie.com/)
+Davao, Phillipines Trinitario 77%
 
 [Pralus](http://chocolats-pralus.com/)  
 [Mélissa](http://old.seventypercent.com/chocop/bar_detail.asp?ID=328) 45%
@@ -77,12 +88,15 @@ Ghana 75%
 ![good](/good.png) ![good](/good.png),
 [Porcelana](http://www.domori.com/it/product.php?id=11) 70% (Criollo)
 ![good](/good.png) ![good](/good.png),
-[Apurimac](http://www.domori.com/it/product.php?id=12) 70%
+[Apurimac](http://www.domori.com/it/product.php?idProductLine=2&id=6) 70%
 ![good](/good.png),
-[Sur Del Lago](http://www.domori.com/it/product.php?id=12) 70%
+[Sur Del Lago](http://www.domori.com/it/product.php?idProductLine=2&id=6) 70%
 ![good](/good.png) ![good](/good.png),
 [Puro](http://www.seventypercent.com/chocop/bar_detail.asp?ID=155) 100%
-![ok](/ok.png)
+![ok](/ok.png),
+[Sambirano](http://www.domori.com/it/product.php?idProductLine=2&id=6)
+![good](/good.png)
+<!-- at work in the sf office, 2/3/2010 -->
 
 [Rausch](http://www.rausch-schokolade.com/)  
 [Arriba](http://www.rausch-schokolade.com/plantagenschokolade/el-cuador.html) 70%
@@ -243,7 +257,12 @@ Loristi 65%
 [9](http://www.amedei.com/jspamedei/collezioni_amedei.jsp) 75%,
 70%,
 [Toscano Black](http://www.amedei.com/jspamedei/toscano_black.jsp) 70%,
-[Chuao](http://www.amedei.com/jspamedei/collezioni_amedei.jsp) 70%
+![good](/good.png),
+[Chuao](http://www.amedei.com/jspamedei/collezioni_amedei.jsp) 70%,
+![ok](/ok.png),
+[Grenada](http://www.amedei.com/jspamedei/cru.jsp#flashcontent3) 70%
+![good](/good.png)
+<!-- at work in the sf office, 2/5/2010 -->
 
 [El Rey](http://www.chocolates-elrey.com/)  
 [Apamate](http://www.chocolates-elrey.com/popUp_cs/cs_apamate.html) 73.5%
@@ -312,9 +331,12 @@ Cacao Reserve 65%
 Pure Dark 60%
 
 
+<hr />
+<!--
 ***
 White
 ***
+-->
 
 [Baratti & Milano](http://www.agferrari.com/index.php/barattimilano.html)
 [Cioccolato Bianco](http://www.agferrari.com/index.php/item/department/Chocolate%20Bars/item/3456.html)
@@ -341,9 +363,12 @@ ile de re
 ![ok](/ok.png)
 
 
+<hr />
+<!--
 ***
 Flavored
 ***
+-->
 
 Xocoa  
 Tiramisu
