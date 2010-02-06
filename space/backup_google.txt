@@ -1,0 +1,38 @@
+backup_google.sh
+
+<div class="img" style="float: right; margin-left: 10px">
+  <img src="/space/server_parachute.jpg" />
+</div>
+
+[backup_google.sh](/space/backup_google.sh) is a script that backs up data in
+the Google services I use:
+[Contacts](http://www.google.com/contacts),
+[Calendar](http://calendar.google.com/),
+[Reader](http://www.google.com/reader/), and
+[Tasks](https://mail.google.com/tasks/canvas).
+It uses
+[ClientLogin](http://code.google.com/apis/gdata/docs/auth/clientlogin.html)
+to authenticate and
+[curl](http://curl.haxx.se/) to fetch the data.
+
+Usage:
+
+    backup_google.sh EMAIL PASSWORD DIR [CALENDAR_URLS...]  
+<br />
+The `CALENDAR_URL` parameters are Google Calendar
+[private addresses](http://www.google.com/support/calendar/bin/answer.py?answer=34576&ctx=tltp)
+that can be fetched without auth cookies.
+
+The one catch is Tasks. It doesn't support ClientLogin or
+[GData](http://code.google.com/apis/gdata/docs/developers-guide.html) yet, so
+the `SID` cookie provided by ClientLogin isn't enough. It also needs a
+matching `GTL` cookie, which ClientLogin doesn't provide. So for the time
+being, I use [Live HTTP Headers](http://livehttpheaders.mozdev.org/) to
+capture a valid `SID/GTL` cookie pair and hard code it in the script.
+
+See also:
+  * [software](/space/software)
+  * [download\_picasa\_album](/space/download_picasa_album)
+  * [dotfiles](/space/dotfiles)
+  * [resize google calendar](/space/resize+google+calendar)
+  * [google\_talk\_sms pidgin plugin](/space/google_talk_sms+pidgin+plugin)
