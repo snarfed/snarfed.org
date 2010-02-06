@@ -45,23 +45,26 @@ PLAIN
 ***
 -->
 
+<span title="kinda harsh and confusing">
 [Pralus](http://chocolats-pralus.com/)  
 Republique Dominicaine Trinitario 75%
 ![ok](/ok.png)
-<!-- kinda harsh and confusing -->
+</span>
 
+<span title="mild, creamy, vanilla">
 [Pralus](http://chocolats-pralus.com/)  
 [Equateur](http://seventypercent.com/chocop/bar_detail.asp?ID=275) 75%
 ![ok](/ok.png)
-<!-- mild, creamy, vanilla -->
+</span>
 
 [Askinosie](http://askinosie.com/)
 Davao, Phillipines Trinitario 77%
 
+<span title="mild, creamy, vanilla">
 [Pralus](http://chocolats-pralus.com/)  
 [Mélissa](http://old.seventypercent.com/chocop/bar_detail.asp?ID=328) 45%
 ![ok](/ok.png)
-<!-- mild, creamy, vanilla -->
+</span>
 
 denis daubos (no web site)
 guinea 70%
@@ -81,6 +84,7 @@ Ghana 75%
 [No. 14](http://www.elbowchocolates.com/shop_online/chocolate_bars#no_14_dark_85) 85%
 ![ok](/ok.png)
 
+<span title="at work in the sf office, 2/3/2010">
 [Domori](http://www.domori.com/)  
 [Carenero Superior](http://www.seventypercent.com/chocop/bar_detail.asp?ID=288) 70%
 ![good](/good.png) ![good](/good.png),
@@ -96,7 +100,7 @@ Ghana 75%
 ![ok](/ok.png),
 [Sambirano](http://www.domori.com/it/product.php?idProductLine=2&id=6)
 ![good](/good.png)
-<!-- at work in the sf office, 2/3/2010 -->
+</span>
 
 [Rausch](http://www.rausch-schokolade.com/)  
 [Arriba](http://www.rausch-schokolade.com/plantagenschokolade/el-cuador.html) 70%
@@ -253,6 +257,7 @@ Barettini Extra Dark 72%
 Konditevskaya Fabrika  
 Loristi 65%
 
+<span title="at work in the sf office, 2/5/2010">
 [Amedei](http://www.amedei.com/jspamedei/index.jsp?lang=en)  
 [9](http://www.amedei.com/jspamedei/collezioni_amedei.jsp) 75%,
 70%,
@@ -262,7 +267,7 @@ Loristi 65%
 ![ok](/ok.png),
 [Grenada](http://www.amedei.com/jspamedei/cru.jsp#flashcontent3) 70%
 ![good](/good.png)
-<!-- at work in the sf office, 2/5/2010 -->
+</span>
 
 [El Rey](http://www.chocolates-elrey.com/)  
 [Apamate](http://www.chocolates-elrey.com/popUp_cs/cs_apamate.html) 73.5%
@@ -333,7 +338,6 @@ Pure Dark 60%
 
 <hr />
 <!--
-***
 White
 ***
 -->
