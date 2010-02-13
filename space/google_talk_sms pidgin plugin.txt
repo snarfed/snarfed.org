@@ -4,7 +4,7 @@ google_talk_sms pidgin plugin
   <a href="http://pidgin.im/"><img src="/space/pidgin_full.png" /></a>
 </div>
 
-[Download google\_talk\_sms.pl 0.1](/space/google_talk_sms.pl)  
+[Download google\_talk\_sms.pl 0.2](/space/google_talk_sms.pl)  
 &nbsp;&nbsp; (requires Pidgin 2.5.2 or above)  
 [Pidgin web site](http://pidgin.im/)  
 &nbsp;&nbsp; [About Pidgin plugins](http://developer.pidgin.im/wiki/Scripting%20and%20Plugins#ScriptingandPlugins)  
@@ -50,7 +50,7 @@ _"SMS\_ERROR\_11: Sorry we don't support free SMS messaging through this client.
 </div>
 
 The restriction is fairly simple, though. The Google Talk servers simply
-look for `sms-v1` in the `ext` attribute of `caps:c` (the
+look for `sms-v1` or `sms-v1` in the `ext` attribute of `caps:c` (the
 [XEP-0115 Capabilities extension](http://xmpp.org/extensions/xep-0115.html))
 in the `presence` stanza that the client sends to the server.
 [google\_talk_sms.pl](/space/google_talk_sms.pl) simply adds this.
@@ -76,7 +76,7 @@ to the Google Talk servers:
       <c xmlns='http://jabber.org/protocol/caps'
          node='http://pidgin.im/caps'
          ver='2.5.2'
-         ext='moodn nickn tunen bob avatar sms-v1' />
+         ext='moodn nickn tunen bob avatar sms-v1 sms-v2' />
     </presence>
 
 Happy texting!
