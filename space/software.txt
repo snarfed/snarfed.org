@@ -9,7 +9,7 @@ Also see [other lists](/space/lists).
 <a name="projects"></a>
 ### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](#projects)
 
-  * [backup_google.sh](/space/google_talk_sms+pidgin+plugin) is a shell script
+  * [backup_google.sh](/space/backup_google) is a shell script
     that backs up data from Google
 [Contacts](http://www.google.com/contacts),
 [Calendar](http://calendar.google.com/),
