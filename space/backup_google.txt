@@ -23,7 +23,7 @@ The `CALENDAR_URL` parameters are Google Calendar
 [private addresses](http://www.google.com/support/calendar/bin/answer.py?answer=34576&ctx=tltp)
 that can be fetched without auth cookies.
 
-The one catch is Tasks. It doesn't support ClientLogin or
+The one caveat is Tasks. It doesn't support ClientLogin or
 [GData](http://code.google.com/apis/gdata/docs/developers-guide.html) yet, so
 the `SID` cookie provided by ClientLogin isn't enough. It also needs a
 matching `GTL` cookie, which ClientLogin doesn't provide. So for the time
