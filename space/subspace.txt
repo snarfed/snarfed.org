@@ -1,0 +1,207 @@
+Subspace
+
+_[STS145](http://sts145.stanford.edu/) Game Review  
+([part](http://shl.stanford.edu/Game_archive/StudentPapers/BySubject/S-T/Sn-Sz/Subspace/Barrett_Ryan.pdf)
+of the
+[How They Got Game archive](http://shl.stanford.edu/Game_archive/);
+[back to writing](http://snarfed.org/space/writing))_
+
+If you happened to catch a friend playing Subspace on his or her
+lunch break, you might dismiss it without a second thought. I know
+I did. A blurb about Subspace in a magazine caught my eye, so I
+went to the game's web page to check it out. "Weak," I thought to
+myself. "It looks like Asteroids." Of course, Asteroids was beloved
+when it was released in 1979, but after 22 years or industry
+progress, games are expected to be somewhat deeper and more
+immersive. A few weeks later, at the urging of a friend, I
+downloaded the beta and tried it out. When I looked up, it was 3:OO
+in the morning. I was convinced, and so were reviewers and fans
+alike. Subspace garnered praise for its perfectly balanced gameplay
+and the developers' willingness to take technology risks too
+bleeding-edge for many others to attempt. Kevin Rice of DailyRadar
+says "So what's the big deal? Why are people still playing a
+technologically and graphically outdated game? In a word, gameplay.
+This game is the epitome of substance over style."' [[1]](#1) The
+highest praise, however, is the thousands of people who still play
+it to this day.
+
+**Identification**
+
+Subspace was developed by Virgin Interactive Entertainment and
+published in 1997. Virgin hired producer Rod Humble from Kesmai
+after his success on the boxed version of the action-oriented
+flight simulator Air Warrior. "They asked him what kind of game he
+wanted to make. \[He told them\] and they said, 'Sure, go ahead and
+here's the money. True story.'" [[2]](#2) Rod brought on board Jeff
+Petersen, a talented programmer he had worked with at Kesmai, and
+within a month they had a rough prototype up and running. As
+development cycles in the game industry go, Subspace's was somewhat
+unusual. The development team was small and unproven as a group,
+and Subspace wasn't a flagship title, so "JeffP" and "Rodvik"
+decided to release the game to a public alpha and beta test. This
+meant that anyone with an Internet connection could download the
+work in progress, try it out, and send their comments straight to
+the developers. For a newly created, fledgling team, this was
+definitely a winning strategy.
+
+There aren't very many clear accounts of what happened shortly
+after, but one thing couldn't be disputed. VIE disintegrated in a
+puff of smoke. Some of VIE'S assets - including the Westwood
+development studio, known best for the Command and Conquer series -
+were bought by Electronic Arts, some of them were folded back into
+Virgin, Inc., some were divested to Interplay (which now uses the
+VIE name as a brand name), and some of them simply vanished.
+Subspace was one of the assets that vanished. While it did exist,
+though, VIE created some landmark games and a lot of lasting
+memories.
+
+**Gameplay**
+
+As is the case with many games, Subspace's back story is
+inconsequential. This is due in no small part to its gameplay.
+Subspace is an unabashed Asteroids knockoff - at its core, it
+consists of spaceshlps that fly around and shoot at other
+spaceships. The view is top-down, the environment is a
+two-dimensional plane, and the concept is exceedingly simple. The
+one catch is that the movement model is true to Asteroids as well;
+the controls allow the pilot to thrust and affect the ship's
+momentum, following Newton's laws of physics. The environment
+consists of walls forming wide open spaces, tight corridors, mazes,
+asteroid fields, and doors. There are two main weapons, guns and
+proximity bombs. The one-size-fits-all powerup is the "green,"
+which appears as a pulsing green blob and upgrades any one of the
+ship's subsystems (engine, shields, guns, bombs, etc.). There are
+also various special items such as stealth, repel, burst, and
+x-radar. The one innovative gameplay feature is that the ship's
+health, or energy, is also used as the ammo supply. Each bomb and
+bullet takes a certain amount of energy to shoot, and the ship's
+energy level is constantly but slowly recharging. This adds
+significantly to the depth of the gameplay.
+
+This concept may be historically proven, but in 1997 it would have
+seemed tired and cliched. However, there is a piece missing.
+Subspace is an Internet-only game. The official term is "massively
+multiplayer," but the reality is much more immediate and powerful:
+the pilot doesn't play against a faceless computer opponent but
+against real people, thousands of them at once, from all over the
+world, at any time of day. Each pilot has a name and password,
+which they use to log onto a Subspace server, or one." There are
+many different kinds of zones, both individual and team-based,
+including Alpha (beginner), Chaos (every man for himself), Capture
+the Flag, Warzone (team fighting), Control (a strategic team-based
+game), Hockey, and others. The servers run 24 hours a day and
+remember each pilot's score and statistics. The display has a map
+of the pilot's immediate surroundings as well as an integrated chat
+window so that pilots can talk to other players, their team, or
+everyone in the zone. Notifications of events in the game are also
+displayed here. Subspace was one of the first games to allow
+hundreds or even thousands of people to play in a multiplayer game
+at once, and its multiplayer design was a tremendous success.
+
+**Technology**
+
+Subspace uses a fast, flexible graphics engine, capable of drawing
+dozens of ships and hundreds of projectiles on screen while
+maintaining a high framerate. The resolution, user interface, and
+controls can all be customized. The game CD shipped with a level
+editor and server executable so that users could run their own
+servers. The game rules can be defined by the user, so eventually
+user-run servers appeared with everything from Subspace tournaments
+to recreations of Star Wars battles.
+
+However, the multiplayer code is by far the most important
+technology in the game. Subspace uses a distributed clientlserver
+architecture that coordinates the actions of thousands of networked
+pilots at once. The architecture is client-based, which means that
+each client makes decisions about what happens in the game based on
+its pilot's actions. The clients send these decisions to the
+server, which forwards them to any other clients in the area. The
+network code also uses client prediction and movement filtering to
+deal with latency, since the Internet is an unpredictable,
+best-effort-only network. These measures make most reasonable
+amounts of latency and packet loss almost unnoticeable. This was
+absolutely essential to the implementation of Subspace's design,
+because in an action game, even a hundredth of a second can mean
+the difference between life and death.
+
+**Design**
+
+Subspace's game design is ingenuous. It is easy to learn but
+impossible to master, the hallmark of historically successful game
+designs like checkers, chess, and bridge. The fundamental game
+design is simple but deep, which allows pilots to develop detailed
+tactics and strategies. Bullets and bombs inherit both the ship's
+momentum and momentum in the direction fired, which can be used to
+a smart pilot's advantage. Ships bounce off walls with 80% of their
+initial speed, which is often used in intricate flight patterns.
+Also, the simplicity of gameplay combined with the momentum-based
+model mean that the skills of flying and fighting can be developed
+and improved without bound. This is essential for the depth of
+Subspace's gameplay - if a skill can be mastered quickly, it ceases
+to challenge the player or provide them incentive to keep playing.
+
+Subspace's game design is also successful because it is massively
+multiplayer. Human beings are more unpredictable, more challenging,
+and simply more fun to play video games against than computer AI.
+In Subspace, there are always plenty of human pilots at any skill
+level to play against. Moreover, human pilots can learn from past
+battles and improve their skills - a human player would learn to
+counter a tactic that might beat a computer AI over and over again.
+Also, Subspace gives pilots opportunities to show their own
+personality and style through the game. Pilots can choose one of
+seven different types of ships, each with unique characteristics,
+strengths, and weaknesses. Every pilot's name is displayed next to
+their ship in the game, and pilots can also draw a small "banner" -
+a 12 by 16 pixel picture - to be displayed as well. Each zone
+focuses on a different style of play and emphasizes different
+strengths that might draw people to play it. Finally, since the
+gameplay allows for intricate tactics and strategies, pilots often
+develop distinct styles of flying and fighting and unique maneuvers
+that are identified with them. These features that draw people into
+Subspace exist only in massively multiplayer games.
+
+**Role in History**
+
+Subspace was one of the first truly successful massively
+multiplayer games in the commercial sphere. Reviews unanimously
+praised its gameplay and network technology. Reviewers also often
+commented on the little touches that added polish, such as the
+notifications of game events, integrated pilot list and chat
+window, different game types, and customizable server program and
+level editor shipped with the game. The development of Subspace
+also succeeded in doing many things rarely (if ever) attempted in
+commercial game development. A small development team, an
+Internet-only game, a long public alpha/beta test, graphics that
+did not push the envelope, all of these were factors that most
+other development teams would have shied away from. Subspace broke
+ground in the massively multiplayer field and paved the way for
+many online real-time games, including Everquest, Asheron's Call,
+and Quake 3 Arena. It may have performed only modestly on the
+shelves, but Subspace accomplished big things in the game
+industry.
+
+After the explosive demise of VIE, most of the Subspace development
+team struck out on their own and formed a development company
+called Harmless Games and a publishing contract with Sony. Building
+on their experience with Subspace, Harmless is putting the
+finishing touches on an online, squad-based multiplayer game called
+Infantry. As for Subspace, the community of loyal pilots is still
+alive and kicking. The number of people playing at any given time
+may only be 50-100, around 10% of the numbers at its peak. However,
+the people are as committed as ever. There is even a Subspace
+Council, a group informally dedicated to supporting the community
+in VIE'S absence, and updating the game software when needed. So go
+to [sscouncil.net](http://www.sscouncil.net/) and give it a try,
+and don't let the resemblance to Asteroids stop you. Subspace was
+one of the first commercial massively multiplayer games. It has
+deep and involving gameplay, an active user community,
+sophisticated network technology, and strong opportunities for
+personalization. And despite all that, it's easy to learn and fun
+to play.
+
+<a name="1"></a> Kevin Rice,
+[*Subspace: The Best Game You're Not Playing,*](http://www.dailyradar.com/features/game_featurepage_8901.html)
+feature for (now defunct) [DailyRadar.com](http://DailyRadar.com).
+
+<a name="2"></a> Jeff Sengstack,
+[Subspace review for GameSpot PC](http://www.gamespot.com/pc/action/subspace/review.html).
