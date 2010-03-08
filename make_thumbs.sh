@@ -1,4 +1,4 @@
-#!/usr/local/bin/bash
+#!/bin/bash
 #
 # Makes thumbnails for each of the images named on the command line. Uses
 # ImageMagick(1), specifically convert(1). The thumbnails are placed in the

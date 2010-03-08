@@ -1,0 +1,133 @@
+RYAN BARRETT
+
+http://snarfed.org/
+resume at ryanb dot org
+
+
+SKILLS
+
+* Distributed systems, structured storage, networking protocols, Linux,
+  Python, Java, C++.
+* Contributor to open source projects including OpenID, Emacs, Pine, tcsh,
+  Pidgin, and PyBlosxom. More at http://snarfed.org/space/software.
+
+
+EXPERIENCE
+
+Google Inc.  Mountain View, CA
+Software Engineer
+
+*  March 2006 - present
+
+Co-founder of Google App Engine and lead engineer on its datastore team. The
+datastore is a large-scale, replicated, distributed structured storage system
+used by both App Engine and other Google products. Includes a dynamic query
+planner, full featured transaction engine, rich structured primary keys,
+real-time index management, and semantic typing. Scales to >100B rows, >1PB of
+data, and >50kqps.
+
+*  March 2006 - Dec. 2006
+
+Led Google's early adoption of OpenID. Evangelized internally, built a number of
+prototypes, addressed security concerns, and got buy-in from execs. Implemented
+the first projects, commenting in Blogger and the App Engine provider and
+consumer, and coordinated the Blogger OpenID provider. This led to widespread
+adoption, culminating in a full Google Accounts provider and consumer.
+
+
+*  Sept. 2005 - March 2006
+Led the migration to BFS, our third party billing partner. This went beyond
+the scope of the Fluffy migration (below); it included more advertisers and
+publishers, multiple corporate entities, and over ten different billing
+models and payment methods. We migrated all advertisers without downtime,
+and with a fallout rate of under .1% needing manual intervention.
+
+*  Sept. 2004 - Sept. 2005
+Led the migration from Fluffy, Google's old biller and OLTP system, to
+Moneta. We migrated millions of customers in-flight, without any downtime
+and ahead of schedule. We had a fallout rate of under .01% needing manual
+intervention.
+
+*  June 2003 - April 2005
+Tech lead and a primary developer on Moneta, Google's transaction processing
+platform. Moneta handles OLTP, rating, billing, invoicing, payments, and
+revenue share for all of our advertisers and publishers.
+
+Designed the Moneta data model and wrote the biller, with another tech lead. It
+went live in early 2005. It currently handles over ten payment methods, hundreds
+of countries and currencies, millions of advertisers and publishers, millions of
+requests per day, hundreds of millions of transactions per day, and billions of
+dollars on roughly 30 minutes of downtime per quarter.
+
+Moneta connects to multiple external payment processors, including
+CyberSource, Bibit, OPI, GlobalCollect, and BFS. Their APIs include HTTPS,
+XML-RPC, REST, proprietary, and batch flat file.
+
+Moneta is also Google's primary customer master data store, and provides
+online and batch access to all static and transactional data. It handles
+financial reporting, data warehousing, and data mining.
+
+IBM Almaden Research Center  San Jose, CA
+Software Developer, Life Sciences
+Sept. 2002 - June 2003
+* Designed and implemented a workflow framework, catalog, and description
+  language used to run molecular analyses.
+
+IBM Extreme Blue  Almaden, CA
+Software Developer, Life Sciences
+June-Sept. 2002
+* Worked on DALI, an Extreme Blue project that enables scientists to share
+  molecule data and analysis code over the Internet. Used SOAP, OGSA, UDDI,
+  DB2, and Java.
+* Developed a dynamic parallelizing algorithm for running large networked
+  analyses.
+* Implemented intelligent caching and routing mechanisms for data and
+  analyses.
+
+LucasArts Entertainment Co.  San Rafael, CA
+Software Developer, Bounty Hunter PS2
+June-Sept. 2001
+* Wrote a triangle re-optimizer and other tools for the graphics engine.
+* Developed a full-featured windowing system in OpenGL for the game's GUI.
+* Developed a multi-channel streaming audio library for Playstation 2.
+
+Webvan Group  Foster City, CA
+Software Developer, OFS
+June-Sept. 2000
+* Designed and implemented a networked warehouse management system using
+  sensors, conveyor belts, bar code readers with custom TCP/IP stacks, and an
+  Oracle server. Also wrote an automatically regressed emulator for the system.
+* Wrote web-based PL/SQL utilities for modifying in-process orders on the fly.
+
+Electronic Arts  Redwood Shores, CA
+Quality Assurance Tester
+June-Sept. 1999
+
+MobileForce Technologies  San Ramon, CA
+Software Developer
+April-Sept. 1998
+
+
+EDUCATION
+
+Stanford University  Stanford, CA
+
+* BS in Computer Science, with a minor in Mathematics, 6/2002, GPA 3.5
+* MS in Computer Science, 6/2003, GPA 3.6
+* Coursework: networking, distributed systems, security, streaming algorithms,
+  advanced databases, operating systems, C/C++, Java, graphics, discrete math,
+  abstract algebra
+* Senior project: designed and implemented P4, a self-organizing
+  peer-to-peer network with a generic, extensible platform for developing
+  plugins. The project won top prizes from the IBM, Cisco, and Electronic
+  Arts corporate sponsors.
+
+
+OTHER
+
+* Eagle Scout, Boy Scout Troop 120
+* Classical Piano, under Geraldine Keeling, multiple competitions and concerts
+* Black Belt, Hapkido Karate, Jang Moo
+* Fluent in Spanish
+
+
