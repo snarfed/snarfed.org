@@ -1,7 +1,7 @@
 bigbrother
 For the impatient:  
 [Download bigbrother 0.5.1](/space/bigbrother-0.5.1.tar.gz)  
-[Example page](http://ryan.barrett.name/bigbrother/)  
+[Example page](/ryan.barrett.name/bigbrother/)  
 [Gaim web site](http://gaim.sf.net/)
 
 [![/space/thumbnail.jpg](/space/thumbnail.jpg)](/space/bigbrother_screenshot.jpg)
@@ -10,7 +10,7 @@ For the impatient:
 your away message history. It parses a log file of all of the away messages
 you've used, then generates a report with graphs about when and how often you do
 different things, based on your away message history. It's best described by
-[example](http://ryan.barrett.name/bigbrother/).
+[example](/ryan.barrett.name/bigbrother/).
 
 Bigbrother has two parts: a Gaim plugin which logs your away messages, and an
 analyzer which crunches the logs and generates a report.
@@ -19,7 +19,7 @@ The Gaim plugin requires [Gaim](http://gaim.sf.net/) .68 or higher and
 [Perl](http://perl.org/) 5.004 or higher. The analyzer requires
 [Python](http://python.org/) 2.2 or higher.
 
-Bigbrother is copyright 2003-2004 [Ryan Barrett](http://ryan.barrett.name/), and
+Bigbrother is copyright 2003-2004 [Ryan Barrett](http://snarfed.org/), and
 is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html). It
 includes source code from [gd](http://www.boutell.com/gd/),
 [GDChart](http://www.fred.net/brv/chart/), and

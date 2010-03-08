@@ -14,7 +14,7 @@ switches are evil incarnate.
 I recently started using [GNU screen](http://www.gnu.org/software/screen/)'s
 [copy/scrollback mode](http://www.delorie.com/gnu/docs/screen/screen_73.html) so
 that I could copy from terminals with the keyboard. I use these commands in [my
-.screenrc](http://ryan.barrett.name/dotfiles/screenrc) to set up Emacs key
+.screenrc](/space/dotfiles/screenrc) to set up Emacs key
 bindings in screen's copy/scrollback mode:
 
     # emacs keybindings for navigation in copy mode

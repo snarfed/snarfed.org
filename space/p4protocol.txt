@@ -1,0 +1,649 @@
+P4 Protocol Specification v0.2
+http://snarfed.org/space/p4protocol.txt
+------------------------------
+Ken Ashcraft, Ryan Barrett, Maulik Shah, Nathan Stoll
+http://www.stanford.edu/~kash
+http://snarfed.org/
+http://maulik.net/
+http://nathanstoll.com/
+
+Version 0.2
+Last updated 05/06/2002 02:11:19
+
+
+CONTENTS
+--------
+1) Introduction
+2) Protocol Definition
+   2.1) Message Descriptions
+   2.2) Connecting and Disconnecting
+3) Message Header
+4) Message Types
+   4.1) HELLO
+   4.2) PING
+   4.3) PING-ACK
+   4.4) CONNECT
+   4.5) DISCOVER
+   4.6) LKA
+   4.7) LKA-ACK
+   4.8) DATA
+5) Other Types
+   5.1) LKA
+   5.2) Plugin Info
+6) Message Routing and Behavior
+7) Miscellaneous
+   7.1) PKI
+   7.2) Plugin ID Management
+
+
+
+
+1) INTRODUCTION
+---------------
+
+P4 is a distributed, peer-to-peer network platform with an extensible plugin
+architecture. This allow developers to build their own network-aware
+applications without having to recreate middle-level network services. The P4
+platform provides middle-level services including user location and
+authentication, broadcast and direct send/receive, common application
+discovery, and data encryption. (For more information on developing with the P4
+platform, see the P4 API Specification.) Due to its peer-to-peer design, the P4
+protocol is highly fault-tolerant. This is critical, as the network is expected
+to have a high turnover rate in terms of the connected hosts.
+
+
+2) PROTOCOL DEFINITION
+----------------------
+
+The P4 protocol defines how P4 clients communicate with each other to provide
+the services described above. It consists of a standard message header, a set of
+message types, a set of data types that are often used in messages, and required
+routing behavior for clients that implement the P4 protocol.
+
+
+2.1) Message Overview
+
+There are two primary types of messages: system messages, used to manage the P4
+network, and data messages, which contain information to be used by plugins. All
+of the message types except DATA are system message types. Currently, the
+following messages are defined:
+
+
++-------------------------------------------------------------------------------+
+|  Message                           Description                                |
++-------------------------------------------------------------------------------+
+|  HELLO       Sent when a client connects to the network. Used to notify       |
+|              other clients of the user's address and active plugins.          |
+|                                                                               |
+|  PING        Used to query the user logged on at a given address. A client    |
+|              that receives a PING should respond with a PING-ACK.             |
+|                                                                               |
+|  PING-ACK    The response to a PING. Includes the name of the user logged     |
+|              onto the client that received the PING.                          |
+|                                                                               |
+|  CONNECT     Opens a P4 network connection. (Connections are two-way.)        |
+|                                                                               |
+|  DISCOVER    Sent in order to acquire a connection to a new host. This will   |
+|              eventually result in a CONNECT message from another host.        |
+|                                                                               |
+|  LKA         Requests a copy of the LKA table. (See 5.1: LKA)                 |
+|                                                                               |
+|  LKA-ACK     The response to an LKA message. Includes a copy of the sender's  |
+|              LKA table.                                                       |
+|                                                                               |
+|  DATA        Contains data for a plugin.                                      |
++-------------------------------------------------------------------------------+
+            Figure 2.1.1: The P4 message types.
+
+
+2.2) Connecting and Disconnecting
+
+A P4 client connects to the P4 network by connecting to another client that is
+already connected to the network. The method of initially finding a connected
+client is not part of the P4 protocol and will not be described here. (Usually,
+this is done out-of-band. Clients are encouraged to write a cache of known
+client addresses to disk, so that they can use this list to automate the
+acquisition of client addresses.)
+
+All communication between clients is done over TCP/IP connections. These may be
+long-lived (if initiated with a CONNECT message) or short-lived (if initiated
+with most other messages). To send a P4 message, after establishing a TCP
+connection to the remote client, the following null-terminated, ASCII-encoded
+string should be sent:
+
+P4 CONNECT/<protocol version string>
+
+where <protocol version string> is the ASCII string containing the protocol
+version. In this case, it is "0.2" (without quotes). Note that there is no 'v'
+character before the version number.
+
+If the remote client supports the given protocol version, then it *must* respond
+with the null-terminated, ASCII-encoded string:
+
+P4 OK
+
+If the local client receives this string, then it may then send one of the
+messages in Figure 2.1. If the remote client responds with any other string (or
+doesn't respond), the connection fails and the local client should close the
+TCP/IP connection. Note that the remote client may be a P4 client that does not
+implement the specified version of the protocol. If the local client supports
+multiple versions, it may try again with another version string.
+
+To disconnect, either side may simply close the TCP/IP connection.
+
+
+3) MESSAGE HEADER
+-----------------
+
+All P4 messages have a standard header. This header includes the message type,
+routing and multiplexing information, and the sender's username and signature.
+The header has a total length of 56 bytes, most of which is due to the username
+and signature. The header is as follows:
+
+    (bit offsets)
+    0               8               16                              32
+    +---------------+----------------+-------------------------------+
+    |      flags    | for future use |           plugin ID           |
+    +---------------+----------------+-------------------------------+
+    |                            data length                         |
+    +----------------------------------------------------------------+
+    |                            message ID                          |
+    |                            (64 bits)                           |
+    +----------------------------------------------------------------+
+    |                                            \   \               |
+    |                    username (20 bytes)     /.../               |
+    |                                            \   \               |
+    +---------------------------------------------    ---------------+
+    |                                            /   /               |
+    |                RSA signature (20 bytes)    \...\               |
+    |                                            /   /               |
+    +--------------------------------------------   -----------------+
+    |                            data                                |
+    |                                                                |
+    |_.-'^`-._.-'^`-._.-'^`-._.-'^`-._.-'^`-._.-'^`-._.-'^`-._.-'^`-.|
+
+                    Figure 3.1: The P4 message header.
+
+
+(byte offsets)
+0       1     2          3 4           7 8         15 16      35 36       65
++-------+-----+-----------+-------------+------------+----------+-----------+
+| flags | HTL | plugin ID | data length | message ID | username | signature |
++-------+-----+-----------+-------------+------------+----------+-----------+
+            Figure 3.2: Another view of the P4 message header.
+
+
+
+Note: All fields in the P4 message header, system messages, and other
+data types are sent using network byte order (i.e. big-endian) unless specified
+otherwise. Also, all numeric fields are unsigned integers.
+
+Note: All IP addresses sent in P4 messages are in IPv4 format. For example,
+the dotted quad 208.17.50.4 is represented with the following four bytes:
+
+    +--------+--------+--------+--------+
+    |  0xD0  |  0x11  |  0x32  |  0x04  |
+    +--------+--------+--------+--------+
+      byte 1   byte 2   byte 3   byte 4
+
+    Figure 3.3: An IP address in IPv4 format.
+
+
+
+The fields in the message header are described as follows (the length of the
+field is given in parentheses after the name):
+
+    flags (1)
+
+The flags field contains eight significant bits, one for each message type and a
+couple for other options. The flags are:
+
++---------------------+
+|  Flag       Bitmask |
++---------------------+
+|  CONNECT     0x01   |
+|  HELLO       0x02   |
+|  PING        0x04   |
+|  DISCOVER    0x08   |
+|  LKA         0x10   |
+|  DATA        0x20   |
+|  ENCRYPTED   0x40   |
+|  BROADCAST   0x80   |
++---------------------+
+Figure 3.4: The flags.
+
+
+The CONNECT, HELLO, PING, DISCOVER, LKA, and DATA flags signify the type of the
+message. Only one of these flags may be set at a time. The ENCRYPTED flag
+signifies that the data is encrypted with the sender's private key using RSA
+encryption. The ENCRYPTED flag may only be set if the DATA flag is set. The
+BROADCAST flag signifies that the message should be broadcast to all clients
+that the recipient is connected to (except the sender). The BROADCAST flag may
+not be set with any of the CONNECT, PING, DISCOVER, or LKA flags. It must be set
+with the HELLO flag, and may optionally be set with the DATA flag.
+
+
+    for future use (1)
+
+This byte is currently unused. It may be used in future versions of the
+protocol.
+
+NOTE: The following is of historical interest only.
+
+This field used to be a hops-to-live field. The hops-to-live field was set by
+the sender and decremented once by each recipient. If a client received a
+message with hops-to-live set to 0, that message would *not* be forwarded. The
+only messages that required use of the hops-to-live field were HELLO, DISCOVER,
+and any message with BROADCAST set.
+
+The hops-to-live field was removed because it was redundant. The message ID
+field, together with a correct implementation of the protocol, should prevent
+loops. (See 6: Message Routing and Behavior)
+
+
+    plugin ID (2)
+
+The plugin ID is an identifier that is unique to a plugin. It is used to
+multiplex DATA messages from (or to) different plugins running on the same
+client. (See 7.2: Plugin ID Management)
+
+NOTE: A side effect of this is that no more than one instance of a given plugin
+may be running on a P4 client at any time.
+
+
+    data length (4)
+
+The length of the data (not including the header), in bytes. This means that the
+beginning of the next header can be located by adding the data length to the
+end of the current header.
+
+
+    message ID (8)
+
+The message ID is a numeric identifier for this specific message that is
+(hopefully) unique on the network for at least 10 minutes. The message ID of a
+BROADCAST message is stored by every client who receives it. If a client
+receives a BROADCAST message with a previously seen message ID, the message
+should be dropped (and not forwarded). Implementations of this protocol should
+use a collision-resistant PRNG to generate the message ID so that inadvertent
+collisions are minimized.
+
+
+    username (20)
+
+The username of the user who originally sent the message. This field *must* be
+null-terminated, so the effective maximum length for usernames is 19 letters.
+
+
+    RSA signature (20)
+
+The RSA digital signature of the message header, excluding the signature field,
+under the sender's private key. More precisely, the message to be signed is the
+header, starting with the flags field and ending with the username field. The
+sender should ensure that the signature verifies with the public key for the
+username in the header, as this is how other clients will verify the signature.
+
+
+    data (variable length)
+
+The message's data is stored here. This may be data for a plugin, network data,
+or empty depending on the message type. The length of the data is given in the
+data length field. Note that the data length field is 4 bytes, so the upper
+bound on the size of the data is 4GB.
+
+
+4) MESSAGE TYPES
+----------------
+
+Each of the message types is described below, along with its usage and data
+format (if any). The length of the message's data is given in parentheses after
+the message name. If a message does have data, it must be formatted according to
+the specifications below. The data is placed in the data segment of a standard
+P4 message, i.e. immediately after the P4 message header. There are are no gaps
+or padding bytes in the P4 data stream.
+
+
+4.1) HELLO (variable)
+
+(byte offsets)
+0          3 4    5 6            7 8          29 30         51
++-----------+------+--------------+-------------+-------------+
+| source IP | port | plugin count | plugin info | plugin info | ...
++-----------+------+--------------+-------------+-------------+
+    Figure 4.1.1: HELLO data format.
+
+    source IP (4)
+The IP address of the sender.
+
+    port (2)
+The port that the sender's P4 client is bound to.
+
+    plugin count (2)
+The number of plugins that are active on this client. This must be the number
+of plugin info fields that are added to the end of this message.
+
+    plugin info (22)
+A field with information about plugins that are active on this client. (See 5.2:
+Plugin Info)
+
+The HELLO message is used to notify all clients on the network that a user has
+logged on. When a user starts a P4 client and logs on, the client sends a HELLO
+message as soon as it establishes a connection with another client (see 4.4:
+CONNECT). When a client receives a HELLO, it adds the sender to its LKA and
+forwards the HELLO to all of its other connected clients.
+
+The HELLO message is also sent when a user starts or stops an active plugin, so
+that the active plugin information for that client is up-to-date.
+
+The HELLO message is always sent through the P4 network. If a client receives
+a HELLO message without the BROADCAST flag set, the message is invalid and the
+client should close the connection.
+
+If a client receives a HELLO message for a username that already exists in the
+LKA, the entry is updated. (There may not be multiple entries in the LKA with
+the same username.) If a user is logged on from one computer, and then logs on
+from a different computer, the HELLO message from the second computer will
+replace the LKA entry from the first computer. From then on, messages sent to
+that user will be sent to the second computer and not the first computer.
+However, the client on the first computer is *not* explicitly disconnected from
+the network. However, this may be provided for in future versions of the
+protocol.
+
+NOTE: If a client sees more than one name for the same plugin ID, the client's
+behavior is undefined. However, a client may *not* have two plugins installed
+with the same plugin ID.
+
+
+4.2) PING (no data)
+
+The PING message is used to query which user is logged into the P4 network at a
+given IP address. Usually, it is used to verify that a user in the LKA table is
+still connected at the address cached with their username. When a client
+receives a PING, they must respond with a PING-ACK.
+
+The PING message has no data. It is always sent directly to a client, outside of
+the P4 network. If a client receives a PING message with the BROADCAST flag set,
+the message is invalid and the client should close the connection.
+
+
+4.3) PING-ACK (no data)
+
+The PING-ACK message is sent in response to a PING message. When a client
+receives a PING-ACK message and the username in the PING-ACK is different from
+the username in the LKA table, it should update the username in its LKA table.
+NOTE: If this happens, the new user's HELLO packet must still be circulating
+in the network. Otherwise, the shared state is inconsistent.
+
+The PING-ACK message has no data. It is always sent directly to a client,
+outside of the P4 network. If a client receives a PING-ACK message with the
+BROADCAST flag set, the message is invalid and the client should close the
+connection.
+
+
+4.4) CONNECT (no data)
+
+The CONNECT message is used to open a (semi-)permanent connection with another
+client. When a client sends a CONNECT message, it should add the recipient to its
+connection list. When a client receives a CONNECT message, it must add the sender
+to its connection list.
+
+A client may not refuse a connection request. Also, unless the client program is
+exiting, it may not close an open connection unless the connection has been open
+for at least 30 seconds. This makes the bootstrap process more likely to
+succeed. If a client can only find the address of one other connected client,
+this ensure that it can open a connection to that client and send DISCOVER
+messages regardless of how busy the other client is.
+
+A client should make a reasonable effort to keep its connection list populated,
+but not over-populated. No requirements are made, but it is suggested that the
+average size of the connection list be kept somewhere between 4 and 12 clients.
+
+The CONNECT message has no data. It is always sent directly to a client, outside
+of the P4 network. If a client receives a CONNECT message with the BROADCAST
+flag set, the message is invalid and the client should close the connection.
+
+
+4.5) DISCOVER (6)
+
+(byte offsets)
+0          19
++------------+
+|  username  |
++------------+
+Figure 4.5.1: DISCOVER data format.
+
+	username (20)
+The username of the user who originally sent the DISCOVER message. Since this
+user must have sent a HELLO message, they should have an entry in the LKA, which
+we can use to get their IP address and port.
+
+The DISCOVER message is used to find another client on the network to open a
+connection to. When a client receives a DISCOVER message, it must either forward
+the message to a random client from its connection list or send a CONNECT
+message to the DISCOVER message's sender. It should forward the DISCOVER with
+probability 9/10 and respond with a CONNECT with probability 1/10.
+
+NOTE: There is a possible refinement to this algorithm. Clients could forward a
+DISCOVER with probability relative to their number of connections.
+Well-connected clients could forward the DISCOVER more often than poorly
+connected clients. This may be specified in future versions of the protocol.
+However, it may not be easy to allow this kind of flexibility between
+implementations while still enforcing a reasonable response rate.
+
+NOTE: Clients may disconnect from the network while holding a DISCOVER message,
+so a client that sends a DISCOVER message is not guaranteed to have a connection
+opened to them as a result.
+
+The DISCOVER message is always sent inside the P4 network, but it is not
+broadcast. If a client receives a DISCOVER message with the BROADCAST flag set,
+or from a client that is not in its connection list, the message is invalid and
+the client should close the connection.
+
+
+4.6) LKA (no data)
+
+The LKA message is used to request a copy of the current LKA. A client should
+only send an LKA message to a client in its connection list. When a client
+receives an LKA message, it must respond with an LKA-ACK message containing its
+current LKA table.
+
+NOTE: The LKA table that is returned in the LKA-ACK is only *loosely* current,
+because it is likely that there are still HELLO messages circulating in the
+network.
+
+The LKA message has no data. It is always sent inside the P4 network, but it is
+not broadcast and not forwarded. If a client receives a LKA message with the
+BROADCAST flag set, or from a client that is not in its connection list, the
+message is invalid and the client should close the connection.
+
+
+4.7) LKA-ACK (variable)
+
+(byte offsets)
+0          3 4
++-----------+-----------+-----------+
+| LKA size  | LKA entry | LKA entry | ...
++-----------+-----------+-----------+
+    Figure 4.1.1: LKA data format.
+
+    LKA size (4)
+The number of users in the LKA table. This must be the same as the number of LKA
+entry fields that are added to the end of this message.
+
+    LKA entry (variable)
+An entry in the LKA table. (See 5.1: LKA)
+
+The LKA-ACK message is sent in response to an LKA message. The LKA-ACK must
+contain a copy of the sender's current LKA table in the correct format. (See
+5.1: LKA)
+
+The LKA-ACK message is always sent inside the P4 network, but it is not
+broadcast and not forwarded. If a client receives a LKA-ACK message with the
+BROADCAST flag set, or from a client that is not in its connection list, the
+message is invalid and the client should close the connection.
+
+
+4.8) DATA (variable)
+
+The DATA message is used to send data from a plugin to a plugin. The plugin that
+should receive the message is designated by the plugin ID in the P4 message
+header. Plugins are not restricted to sending data only to the same type of
+plugin. A plugin may send data to another type of plugin, either in the same
+client or a different client, by passing the destination plugin's ID to the API
+Send or Broadcast function. For this to be successful, the source plugin should
+format its message according to the destination plugin's message protocol.
+
+Either one or both of the BROADCAST and ENCRYPTED flags may be used with the
+DATA message. If the BROADCAST flag is set, a client that receives a DATA
+message must forward it to all of its other connected clients. If the ENCRYPTED
+flag is set, the sender's client must encrypt the data with the sending user's
+private RSA key, and the recipient's client must decrypt it with the sending
+user's public RSA key. Encryption is done at the platform level.
+
+
+5) Other Types
+
+There are two complex data types that are sent within P4 messages. These are the
+LKA entry type and the plugin info type. They are described below.
+
+
+5.1) LKA
+
+Each client should maintain an LKA table, or Last Known Address table, that
+stores each known username and the last address and port where they were known
+to be logged in. This should be the last address that this user sent a HELLO
+message from. The details of this table are not specified in the protocol, and
+are left up to each implementation. However, some of the information in this
+table is sent over the network in the LKA-ACK message, which includes the number
+of entries in the table and each entry in a specific format. This is the format
+of the LKA entry field:
+
+(byte offsets)
+0         19 20     23 24  25 26         27 28       29 30       31
++-----------+---------+------+-------------+-----------+-----------+
+| username  | IP addr | port |plugin count | plugin ID | plugin ID | ...
++-----------+---------+------+-------------+-----------+-----------+
+    Figure 5.1.1: The format of an LKA entry.
+
+    username (20)
+The username of this LKA entry.
+
+    IP addr (4)
+The last IP address where this user was known to be logged in.
+
+    port (4)
+The last port this user was known to be logged in on.
+
+    plugin count (2)
+The number of plugins that are active on this client. This must be the number of
+plugin ID fields that are added to the end of this LKA entry.
+
+    plugin ID (2)
+The plugin ID of a plugin that is active on this client.
+
+
+5.2) Plugin Info
+
+When a client connects to the P4 network, it must send a HELLO message with
+information about each of the plugins that are active. The information for each
+plugin is sent in a plugin info record. This is the format of the plugin info
+record:
+
+(byte offsets)
+0          1 
++-----------+
+| plugin ID |
++-----------+
+Figure 5.2.1: The plugin info format.
+
+    plugin ID (2)
+The plugin ID.
+
+
+NOTE: The following is of historical interest only.
+
+The plugin info record originally held the plugin ID and the plugin name.
+However, the plugin name field was unnecessary, since plugin ID <-> name
+mappings are assumed to be well-known, and not provided by P4. (See 7.2: Plugin
+ID Management)
+
+The plugin name field was an ANSI character string and was null-terminated, so
+the effective maximum length of plugin names was 19 letters.
+
+
+6) Message Routing and Behavior
+
+This section describes the routing behavior that a P4 client must adhere to.
+
+- A client may not refuse a connection request.
+- Unless a client program is exiting, it may not close an open connection unless
+the connection has been open for at least 30 seconds.
+- A client that receives a HELLO must add the originator's username, IP address,
+  and port to its LKA table.
+- A client that receives a PING must respond with an PING-ACK.
+- If a client receives a PING-ACK with a different username than the username
+  stored in the LKA table for the source IP address, the client must replace the
+  old username in the LKA table with the username in the PING-ACK.
+- A client that receives an LKA must respond with an LKA-ACK.
+- If a client receives a BROADCAST message, it must forward the message to all
+  connected clients except the client it received the message from. However, if
+  it has seen a message with the same message ID in the previous 10 minutes, it
+  may *not* forward the message. (This is a lower bound on the time to remember
+  previously seen message IDs - clients may remember them longer.)
+- If a client decides not to forward a DISCOVER, it must send a CONNECT to the
+  originator of the DISCOVER.
+- A client must send every DATA message that is queued for sending by a plugin,
+  and must pass to each plugin every DATA message that it receives with that
+  plugin's ID.
+- A client may not modify any message that it forwards.
+- A client must fill in the P4 message header completely for any message it
+  sends, including the username and RSA signature fields. The fields must be
+  correct.
+
+No requirements are placed on the rate at which a client may send messages or
+open connections. However, it is in the developer's best interest to place
+reasonable safeguards on bandwidth usage and open connections. If a rogue client
+is allowed to flood the network, it may become unusable, and less users will use
+the system as a whole.
+
+
+7) Miscellaneous
+
+7.1) PKI
+
+P4 uses public key RSA encryption and digital signatures to perform
+authentication and data encryption. Public key encryption is used instead of a
+symmetric key cryptosystem (such as Kerberos) because the platform is
+user-based, not session- or transaction-based. However, this raises a common
+problem: how to do PKI, or Public Key Infrastructure.
+
+P4 does not solve this problem. The P4 protocol does not place any requirements
+on how public keys are acquired, so clients may support any reasonable PKI that
+accesses the same public key database. Possibilities include a single
+Certificate Authority, a hierarchical Certificate Authority tree, or a web of
+trust similar to PGP.
+
+TODO: [reference PKI doc here]
+For the purposes of CS194, we will implement a stub PKI and support for this PKI
+in our client. This is described in another document [reference PKI doc here].
+This PKI will be intentionally insecure. However, P4 is designed so that if a
+secure PKI is used, then the entire system is secure.
+
+
+7.2) Plugin ID Management
+
+As with PKI, the P4 protocol does not place any requirements on plugin ID
+management. There are also no restrictions on how clients respond to plugin ID
+collisions, except that a client may not have two plugins with the same ID
+installed. We believe that there will be a low incidence of collisions. When
+there are collisions, it is the plugin developers' responsibility to resolve
+them.
+
+For the purposes of CS194, we will build a web site with the official,
+"sanctioned" list of plugins and IDs. However, clients are not required to
+access this list. Furthermore, we provide the list only as a convenience. We
+believe that the system can be consistent and self-regulating without such a
+list.
+
+
+

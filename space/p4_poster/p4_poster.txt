@@ -1,0 +1,31 @@
+SLIDE 1
+-------
+A, B, C, D, and E are connected to the network. A, B, and D are playing synchronized MP3s.
+
+X wants to join the network. She begins by sending a CONNECT message to E. She then requests a copy of the current LKA.
+
+
+SLIDE 2
+-------
+E sends X a copy of the current LKA.
+
+
+The LKA is the Last Known Address table, which stores the <username, IP address> mappings for each node on the network.
+
+
+SLIDE 3
+-------
+Now that X has the LKA, she can connect to more nodes on the network. She connects to B and sends a HELLO message, which includes her <username, IP address> mapping.
+
+X also sends a HELLO to E.
+
+
+SLIDE 4
+-------
+B and E forward X's HELLO message to all of the nodes they are connected to. This continues until all nodes on the network have seen the HELLO message.
+
+If X is running the syncher plugin, B can also send her synch data.
+
+SLIDE 5
+-------
+Now X is completely connected and integrated into the network. She can also synch her MP3 player if she wants. Holla!!!

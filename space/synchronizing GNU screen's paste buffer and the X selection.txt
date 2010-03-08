@@ -17,7 +17,7 @@ screen](http://www.gnu.org/software/screen/)'s [copy/scrollback
 mode](http://www.delorie.com/gnu/docs/screen/screen_73.html), with a hack to
 integrate it with X Windows' clipboard.
 
-This command in [my .screenrc](http://ryan.barrett.name/dotfiles/screenrc)
+This command in [my .screenrc](/space/dotfiles/screenrc)
 copies screen's paste buffer into the X primary selection. It runs automatically
 when you press > to set the second mark in copy/scrollback mode.
 

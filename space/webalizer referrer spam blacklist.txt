@@ -5,15 +5,15 @@ webalizer referrer spam blacklist
 [Referrer
 spam](http://www.spywareinfo.com/articles/referer_spam/) - or by Apache's
 original misspelling, _referer_ spam - has been a problem at snarfed.org for
-years. My [webalizer logs](http://ryan.barrett.name/usage/) are publicly
-accessible, so spammers target this site with fake referrers, hoping that
+years. My webalizer logs were publicly
+accessibl at one point, so spammers targeted this site with fake referrers, hoping that
 they'll be linked from the pages that
 [webalizer](http://www.mrunix.net/webalizer/) generates.
 
 There are a number of approaches to fighting referrer spam, but so far, no
 silver bullet. I currently handle it a hand-edited blacklist of known spammer's
 sites. It's far from ideal, but it works. You can find my blacklist in my
-[webalizer.conf](http://ryan.barrett.name/webalizer.conf) file. If you're
+[webalizer.conf](/space/webalizer.conf) file. If you're
 fighting referrer spam too, feel free to borrow it.
 
 Eventually, I'd like to merge this with other blacklists and referrer spam

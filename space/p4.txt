@@ -3,19 +3,18 @@ p4
 
 For the impatient:  
 [Download P4 0.3.1](/space/p4-0.3.1.tar.bz2)  
-[Original project proposal](http://ryan.barrett.name/p4/doc/html/proposal.html)  
-[Poster (with diagrams)](http://ryan.barrett.name/p4/doc/html/poster.html)  
-[Protocol specification](http://ryan.barrett.name/p4/doc/html/protocol.html)  
-[API documentation](http://ryan.barrett.name/p4/doc/html/p4plugin_8h.html)
+[Original project proposal](/space/p4proposal.html)  
+[Poster (with diagrams)](/space/p4_poster/index.html)  
+[Protocol specification](/space/p4protocol.txt)  
 
-[P4](/space/p4) is a fully functional, self-organizing overlay
-network similar to [Gnutella](http://rfc-gnutella.sourceforge.net/) and
+[P4](/space/p4) is a fully functional, self-organizing overlay network similar
+to [Gnutella](http://rfc-gnutella.sourceforge.net/) and
 [Freenet](http://freenet.sf.net/). However, P4 differs in that it provides an
-[API](http://ryan.barrett.name/p4/doc/html/p4plugin_8h.html) for developing
-plugin applications on top of the network. P4 handles the networking and exports
-functionality for unicast, multicast, user and plugin discovery, and strong
-encryption and authentication. This frees developers from worrying about
-networking, and allows them to focus on building real functionality.
+API for developing plugin applications on top of the network. P4 handles the
+networking and exports functionality for unicast, multicast, user and plugin
+discovery, and strong encryption and authentication. This frees developers from
+worrying about networking, and allows them to focus on building real
+functionality.
 
 Since its release in early 2001, P4 has been surpassed by other general-purpose
 overlay platforms such as [JXTA](http://jxta.org/),
@@ -42,7 +41,7 @@ they're not currently maintained.
 
 P4 is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
 Copyright 2001-2004 [Ken Ashcraft](http://keeda.stanford.edu/~kash), [Ryan
-Barrett](http://ryan.barrett.name/), [Maulik Shah](http://maulik.net/), and
+Barrett](http://snarfed.org/), [Maulik Shah](http://maulik.net/), and
 [Nathan Stoll](http://cs.stanford.edu/~nstoll).
 
 See also:

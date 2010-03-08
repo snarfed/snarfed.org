@@ -67,6 +67,6 @@ less than perfect in some major modes.
 or [filladapt-mode](http://www.wonderworks.com/#filladapt)...yet.
   * It doesn't break lines at `=`, the assignment operator.
 
-Fillcode is copyright 2005-2007 [Ryan Barrett](http://ryan.barrett.name/), and
+Fillcode is copyright 2005-2007 [Ryan Barrett](http://snarfed.org/), and
 is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
 

@@ -32,7 +32,7 @@ want to admit it, but I did know how, and it did too. _Why don't you try running
 your shells inside Emacs?_
 
 I had a laundry list of reasons. Half of [my
-.cshrc](http://ryan.barrett.name/dotfiles/cshrc) would be usless. I'd forgo
+.cshrc](/space/dotfiles/cshrc) would be usless. I'd forgo
 [acoc](http://www.caliban.org/ruby/acoc.shtml)'s wonderful colorized command
 output. Emacs'
 [shell-mode](http://gnu.org/software/emacs/manual/html_node/Shell-Mode.html)
@@ -61,7 +61,7 @@ Even better, I could continue using my work shells _at home_, over VPN, just by
 connecting to my work Emacs!
 
   * **Tcsh integration.** Emacs was surprisingly sociable with tcsh. It obeyed
-[my .cshrc](http://ryan.barrett.name/dotfiles/cshrc), read and wrote its
+[my .cshrc](/space/dotfiles/cshrc), read and wrote its
 command history to `~/.history`, and generally played nice.
 
   * **ANSI color codes.** Wonder of wonders, Emacs could even display color
@@ -108,7 +108,7 @@ selection](/space/synchronizing GNU screen's paste buffer and the X selection), 
 copy-scrollback mode](/space/Emacs keybindings in GNU screen's copy-scrollback mode). Stay tuned for
 more!
 
-Here's what I added to [my .emacs](http://ryan.barrett.name/dotfiles/emacs) to
+Here's what I added to [my .emacs](/space/dotfiles/emacs) to
 make shell-mode behave the way I wanted:
 
 <a name="settings"></a>

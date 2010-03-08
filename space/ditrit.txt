@@ -32,6 +32,6 @@ importantly, the user must explicitly say what they want to do - _define:_ for
 dictionary, _movie:_ for movie listings, etc. You don't have to tell Ditrit what
 you want to do; it uses heuristics to guess on its own, based on the input.
 
-Ditrit is copyright 2006 [Ryan Barrett](http://ryan.barrett.name/), and is
+Ditrit is copyright 2006 [Ryan Barrett](http://snarfed.org/), and is
 distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
 

@@ -27,7 +27,7 @@ use this command to start emacs:
       --load .emacs.minimal
 
 and this elisp in my [my minimal
-.emacs](http://ryan.barrett.name/dotfiles/emacs):
+.emacs](/space/dotfiles/emacs):
 
     ; cutoff for word wrap
     (setq-default fill-column 79)

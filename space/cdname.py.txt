@@ -15,6 +15,6 @@ Many aspects are configurable via command line options. cdname.py is a great
 addition to any CD ripping/encoding pipeline.
 
 [cdname.py](/space/cdname.py-0.3) requires [Python](http://python.org/) 2, is
-copyright 2003-2004 [Ryan Barrett](http://ryan.barrett.name/), and is
+copyright 2003-2004 [Ryan Barrett](http://snarfed.org/), and is
 distributed under the [GPL](http://www.gnu.org/licenses/gpl.html) license.
 

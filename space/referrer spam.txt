@@ -13,10 +13,10 @@ silver bullet. Here's what I did while my Summary output was online.
 
   * I maintained a hand-edited blacklist of known spammers' sites. It's far
 from ideal, but it worked. You can find my blacklist in my
-[summary.conf](http://ryan.barrett.name/summary.conf) file. If you're fighting
+[summary.conf](/space/summary.conf) file. If you're fighting
 referrer spam, feel free to borrow it. (I used to use
-[webalizer](http://ryan.barrett.name/webalizer/); my
-[webalizer.conf](http://ryan.barrett.name/webalizer.conf) is also available,
+[webalizer](http://webalizer.com/); my
+[webalizer.conf](/space/webalizer.conf) is also available,
 but it's not maintained.)
 
   * I've written a [webalizer nofollow patch](/space/webalizer+nofollow+patch)
@@ -28,7 +28,7 @@ tag.
 [iptables](http://www.google.com/url?sa=X&start=1&q=http://www.netfilter.org/)
 to blacklist known spammers' IP addresses and subnets, such as marketscore.com,
 bezeqint.net, and ac.at. See my [referrer spam iptables
-rules](http://ryan.barrett.name/referrer-spam-iptables.txt).
+rules](/space/referrer-spam-iptables.txt).
 
   * I'd eventually like to use existing blacklist and referrer spam tools, such
 as [Jay Allen's](http://www.jayallen.org/)

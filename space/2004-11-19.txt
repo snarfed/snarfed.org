@@ -25,13 +25,13 @@ backing store. Other than better stability and uptime, you shouldn't notice many
 differences.
 
 Unfortunately, the upgrade did take a few casualties - specifically, my personal
-site, [ryan.barrett.name](http://ryan.barrett.name/), is temporarily down. With
+site, [ryan.barrett.name](/ryan.barrett.name/), is temporarily down. With
 [SnipSnap 0.4.2a](http://snipsnap.org/space/version-0.4.2a), I was able to
 configure [Jetty](http://jetty.mortbay.org/) to [serve both
 sites](http://snipsnap.org/space/virtual+host+redirection) from a single
 SnipSnap instance...but SnipSnap 1.0b1 [chokes on
 that](http://snipsnap.org/comments/virtual+host+redirection#comment-virtual%20host%20redirection-4).
 I can get one site or the other up, but not both...and this site has all the
-content, so [ryan.barrett.name](http://ryan.barrett.name/) is down for now.
+content, so [ryan.barrett.name](/ryan.barrett.name/) is down for now.
 Hopefully not for long, though.
 

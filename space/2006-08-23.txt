@@ -7,7 +7,7 @@
 [![apache](/space/apache.jpg)](http://httpd.apache.org/)
 
 You've probably noticed that [snarfed](http://snarfed.org/) and
-[ryan.barrett.name](http://ryan.barrett.name/) have been a little flaky lately.
+[ryan.barrett.name](/ryan.barrett.name/) have been a little flaky lately.
 My hosting company, [JVDS](http://jvds.com/), and my server,
 [SnipSnap](http://snipsnap.org/), both started acting up at around the same
 time. They'd been happy for a while, but not any more. The honeymoon period is
@@ -17,7 +17,7 @@ So, after putting it off for the better part of a year, I finally migrated to a
 new hosting company, [pair.com](http://pair.com/), and a new server,
 [pyblosxom](http://pyblosxom.sf.net) on [Apache](http://httpd.apache.org/).
 
-I considered [a few other hosting companies](http://ryan.barrett.name/hosting),
+I considered [a few other hosting companies](/ryan.barrett.name/hosting),
 specifically [Dreamhost](http://dreamhost.com/) and [1&1](http://1and1.com/).
 In particular, Dreamhost has a solid community, good features, and a rock
 bottom price. I care more about uptime, though, and while pair.com has a
@@ -36,7 +36,7 @@ source code, other errata. Translating the directory structure, markup, and
 metadata took a _lot_ of effort. Worse, I wasn't creating any new information
 or value, so it felt totally unproductive.
 
-I'm [happy with pyblosxom](http://ryan.barrett.name/wiki_blog_packages),
+I'm [happy with pyblosxom](/ryan.barrett.name/wiki_blog_packages),
 though, and I expect much better uptime and stability from it. Still, you'll
 notice some missing functionality. Change history, macros, the index, and the
 "recent changes" box are all missing. You can't log in or register any more.

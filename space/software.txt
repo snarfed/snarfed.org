@@ -77,7 +77,7 @@ minor mode that fills, or wraps, some parts of source code.
 
   * [BigBrother](/space/bigbrother) generates statistics and graphs from your
 away message history. See my [personal
-example](http://ryan.barrett.name/bigbrother/).
+example](/ryan.barrett.name/bigbrother/).
 
   * [P4](/space/p4) is a compact, lightweight overlay network library, similar
 to [Gnutella](http://rfc-gnutella.sourceforge.net/) and

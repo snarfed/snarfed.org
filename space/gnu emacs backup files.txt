@@ -10,7 +10,7 @@ So, I finally got fed up with this, and figured out how to keep them all in one
 place. Here's the
 [elisp](http://gnu.org/software/emacs/emacs-lisp-intro/html_node/index.html)
 (GNU Emacs only) that I put in [my
-.emacs](http://ryan.barrett.name/dotfiles/emacs):
+.emacs](/space/dotfiles/emacs):
 
     ;; Put autosave files (ie #foo#) in one place, *not*
     ;; scattered all over the file system!
