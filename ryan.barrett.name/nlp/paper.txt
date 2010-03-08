@@ -1,0 +1,401 @@
+ABSTRACT
+--------
+
+<<< to be filled in by Ryan >>>
+
+
+
+OUTLINE
+-------
+I. Introduction
+II. Building an Emotion-Tagged Corpus
+  A. Source Material
+  B. Filtering for Emotional Content
+  C. Formatting
+  D. Tagging
+III. Performance Bounds
+  A. Lower Bound
+  B. Survey
+  C. Upper Bound and Other Results
+IV. EmotIM Implementation
+  A. Classification Engine
+  B. Naive Bayes
+  C. N-gram and Other Features
+  D. Discourse Feature
+V. Results
+VI. Future Directions
+VII. Conclusion
+
+
+
+I. INTRODUCTION
+---------------
+
+Historically, computational linguistics research has used essays, articles, and
+other single-speaker written text as data for its algorithms. There are many
+reasons for this. First, there is a large body of this written text available
+to researchers, Second, many of the available corpora are pre-processed to
+include information such as part-of-speech tags, word sense tags, and parse
+trees. Third, most of the data in written text corpora is "correct," formal
+language, so it is suitable for deep linguistic analysis.
+
+However, other types of data are also available, such as transcripts of spoken
+language, transcripts of interviews, and recently, instant messaging logs.
+There are corpora of interviews and spoken language targeted toward the
+computational linguistics community, but since the instant messaging phenomenon
+is relatively recent, there are no comparable instant messaging corpora.
+
+We believe that instant messaging conversations may have fundamentally
+different linguistic features from written and spoken text. In this paper, we
+first discuss a corpus of instant messaging conversations that we have
+composed. We give an overview of a system we built to solve two small but
+nontrivial tasks: emotion identification and classification. These were both
+approached as classification problems.
+
+We then show the results of the system, as well as analyzing its performance
+with regard to different linguistic features and algorithm parameters. We
+identify a few of the features of IM conversations that are generally
+interesting from a computational linguistics point of view. Finally, we discuss
+possible improvements and future directions for work in this area.
+
+
+
+II. BUILDING AN EMOTION-TAGGED CORPUS
+-------------------------------------
+
+  A. Source Material
+
+Since there are no IM corpora available that are appropriate for NLP research,
+we built a corpus ourselves. Both of the authors use IM clients that log all
+conversations by default, so we had more than enough raw source material.
+However, we were still a long way from a well-formatted, tagged corpora
+suitable for training and testing. This is an extract from one author's
+original logs (names have been changed to protect the innocent):
+
+---- New Conversation @ Sat Apr 26 17:26:28 2003 ----
+(20:49:48) jillster: O:-)
+(20:50:00) jillster: hehe
+(20:50:25) jack123: what's that? smiling jill with a yamulka?
+(20:51:15) jack123: (sp?)
+(20:51:24) jillster: duh, it's a halo!
+(20:51:45) jillster: yarmulke
+(20:53:33) jack123: wow
+(20:53:38) jack123: that's a mouthful
+(23:49:23) jillster: it's yiddish, it's supposed to be.
+(23:49:28) jack123: of course
+(23:49:53) jillster: i think i'm reaching the end of my patience rope. grr...
+(23:50:00) jack123: no way, with nasser?
+(23:50:02) jillster: yup
+(23:50:11) jack123: just go bang on his head
+(23:50:17) jillster: not that simple when his thesis is due in two days...
+(00:19:42) jillster: it's not that he doesn't *want* to
+(00:28:22) jillster: i think
+
+  B. Filtering for Emotional Content
+
+We first extracted small snippets of conversations that had emotional content.
+Surprisingly, this was one of the most time-intensive tasks. IM conversations
+are similar to verbal conversations in many ways, including the amount of
+emotional content. The vast majority of IM conversations are not very
+emotional, and content with and without emotions usually looks identical. For
+lack of a better method, we spent a significant amount of time reading through
+our logs line-by-line. In the end, we extracted 1115 messages comprising 61KB
+of usable data.
+
+  C. Formatting
+
+Next, we munged the messages so that they were easy to parse programmatically.
+We stripped the timestamps and conversation headers, and prefixed each message
+with an emotion tag; "none", to begin. In all outwardly visible parts of the
+dataset, we replaced the screen names with "Speaker1" and "Speaker2" to protect
+the innocent. However, most of the dataset was not made available publicly, so
+this has only been done on a small fraction of the dataset.
+
+  D. Tagging
+
+Finally, we tagged each of the messages with its corresponding emotion. The six
+base emotions we used are joy, sadness, fear, anger, surprise, and contempt,
+which are slightly condensed from the seven base emotions identified by Ekman
+et al. <<<TODO: REFERENCE HERE!!!>>> (Disgust and contempt were combined.)Even
+after extracting snippets with high emotional content, over half of the
+messages were tagged as "none." The rest were tagged according to the primary
+emotion that motivated the message, according to our best judgment. Following
+this step, the above excerpt was reduced to:
+
+anger    speaker1  i think i'm reaching the end of my patience rope. grr..
+surprise speaker2  no way, with nasser?
+none     speaker1  yup
+anger    speaker2  just go bang on his head
+none     speaker1  not that simple when his thesis is due in two days...
+
+In the end, the representation of emotions in the corpus was 40% none, 19% joy,
+12% sadness, 3% fear, 8% anger, 13% surprise, and 5% contempt.
+
+
+
+III. PERFORMANCE BOUNDS
+-----------------------
+
+What bounds on performance can we expect for classifying emotions? More
+specifically, is there a baseline, and is there a point beyond which we should
+not expect to improve? To answer these questions, we performed a few simple
+experiments.
+
+
+  A. Lower Bound
+
+The most obvious lower bound on performance is simply flipping a coin. With six
+emotions and "none," this results in a baseline of 17%. However, the majority
+of messages in our corpus are tagged as "none," specifically 40%. So, we
+shouldn't do worse than that.
+
+
+  B. Survey
+
+To find a reasonable upper bound, we asked a number of people to complete a
+short survey. The subjects were asked to classify 67 messages in seven small
+discourses into one of the six emotions or "none." Except for "none," the
+emotions were present in the survey in roughly equal proportions, by our tags.
+We received 18 complete responses, which we considered more than enough to
+give an accurate (but informal) indication of human performance.
+
+Since there is arguably no "correct" emotion for a message, we considered the
+survey a measurement of how consistently people identify and classify emotions.
+Accordingly, instead of using our tagged corpus as the answer key, we used the
+emotion that the majority of the subjects picked for each message. This
+measurement would be independent of any irregularities in our own tagging
+judgment, and thus hopefully more accurate. It would also be higher than
+scoring against our tags, so we would have a more challenging upper bound to
+shoot for.
+
+In the results, for every message except one, the majority emotion was chosen
+by over half of the people. This implied that people often agreed on the
+emotion for a given message, which seemed to validate our choice to pick the
+majority emotion.
+
+
+  C. Upper Bound and Other Results
+
+The aggregate performance against our tagged corpus was 63%, and the
+performance against the majority emotion was 70%. We took 70% as a
+representative upper bound for the classification task, and a good performance
+mark to aim for.
+
+If the identification task is considered - i.e., a response is considered
+correct if it and the answer are both none or both an emotion - the performance
+was 75%.
+
+There were a few other interesting results and statistics from the survey.
+Performance varied widely across emotions - none was highest at 75%, then
+surprise 74%, sadness 68%, joy 60%, fear 50%, and contempt 47%. Surprisingly,
+Anger was not a majority emotion for any message, although by our tags, it
+accounted for roughly 6% of the messages in the survey.
+
+Since the values aren't numeric, we cannot calculate standard deviation.
+However, we can substitute other measurements of variation. Seven messages were
+unanimously classified as "none." The rest were mostly split between only two
+or three emotions, with only a small number split between more than three.
+"None" was usually one of the represented choices, but not always. This implies
+that people may not agree on the emotion, or even whether an emotion is
+present, but do agree on a small number of possibilities. This makes sense
+intuitively - a frustrated message might seem to fit "anger" or "contempt," or
+maybe "none," but probably not "joy" or "surprise."
+
+
+
+
+IV. EMOTIM IMPLEMENTATION
+-------------------------
+
+Our test classification problems are to identify whether a message in an IM
+conversation reflects an emotion, and if so, which single emotion was most
+likely. We analyzed and implemented solutions for both the classification
+problem and the pure identification problem (i.e. whether or not an emotion is
+present).
+
+This problem is not highly visible in the research community, and admittedly,
+it is more than a little subjective. For these reasons, we stress that our goal
+was not solely to build a system to perform well on emotion classification.
+Instead, we hoped to identify linguistic features unique to IM and features
+strongly correlated with emotions. In the process, we hoped to build a
+classification system targeted toward IM corpora.
+
+However, it is worth noting that there is a widely accepted real-world problem
+that emotion classification could address. Email and IM are often criticized
+for their lack of verbal cues and body language. This increases the likelihood
+of misunderstanding someone, or in the worst case, offending someone with an
+email or IM. A successful emotion classifier would be one step toward
+reproducing cues in email and IM that might help avoid such conflicts.
+
+
+  A. Classification Engine
+
+We designed and implemented a general-purpose classification engine targeted
+toward IM corpora. Our test problem was emotion identification and
+classification, but the engine is highly data-driven and can be used for any
+classification problem.
+
+The engine is notable primarily because of its feature plugin framework.
+Researchers can "plug in" a new linguistic feature simply by writing a Java
+class that implements a feature interface. For example, if the classification
+goal was to identify the speaker of each message, a programmer could write
+features such as message length and question identification. They would then
+load these features and run the engine to quickly measure the impact of these
+features on classification.
+
+The engine is also notable because it allows simple weighted aggregation of
+features. During testing, each feature analyzes each message and calculates the
+probability of each possible class. The engine then sums these probability
+masses according to a set of weights, applied per feature, and chooses the
+class with the highest total probability. The weights can be specified in a
+configuration file.
+
+Finally, the engine can optionally be run in "threshold" mode. In threshold
+mode, for a message to be classified, the probability of a given class must be
+above a certain threshold. Otherwise, the message is classified as "none"
+instead of as the class with the highest probability. We tested threshold mode
+by training only on messages that were tagged with emotions, and then testing
+on a dataset with both "none" and emotion-tagged messages.
+
+
+  B. Naive Bayes
+
+To support many of the simple features, we wrote a highly tuned implementation
+of a Naive Bayes classifier. The Naive Bayes classifier learned by counting
+frequencies of specific instances of features along with the class they
+appeared with. After training, it calculated conditional probabilities for each
+class given an instance of a feature. We used sum-of-logs to prevent the
+probability masses from becoming too small. We also used absolute smoothing to
+handle unseen instances of features, and tweaked the unseen-to-seen ratio and
+smoothing delta to improve performance on the IM corpus.
+
+
+  C. N-gram and Other Features
+
+Many of the features we identified and ran with the engine were built on top of
+the Naive Bayes implementation. These included an N-gram model (specifically
+unigram, bigram, and trigram), a punctuation feature, a "dictionary word"
+feature, a word length feature, and a message length feature.
+
+The punctuation feature ran the Naive Bayes algorithm on all of the punctuation
+tokens in the message. Punctuation tokens were not separated into characters,
+so "?", "!", "?!?", "!!!", ":P", ":(", and ":/" were all considered to be
+distinct tokens. From empirical observation, it was determined that these types
+of punctuation usage in IM have distinct meanings.If we had counted them
+character by character, instead of as single tokens, we would have lots
+information.
+
+Emoticons, or small sequences of punctuation that represent faces for a variety
+of emotions, were included in the punctuation feature. Unfortunately, the
+source material reflected that authors only use a very small number of
+emoticons, and they use them in a large number of contexts. Given this, we
+didn't expect emoticons to be very predictive in our corpus. This is definitely
+a failing of our corpus, though as opposed to the feature itself.
+
+The "dictionary word" feature ran Naive Bayes on tokens that were determined to
+be words, and not punctuation, IM slang/acronym, or proper names. We considered
+this to be important because we thought some words might be emotion-defining,
+similar to sense-defining words for word sense disambiguation. Such words
+included "grr" for anger, "wow" for surprise, and "cool" for happy.
+
+The message length feature updated a conditional probability for each class
+based on the length of the message, in words. We thought that some emotions
+(such as surprise) might lend themselves to shorter messages, while other
+emotions (such as anger) might lend themselves to longer messages.
+
+The word length feature ran Naive Bayes on the length of each word in the
+message. We didn't have a concrete hypothesis for this, but we wanted to
+measure its effects to see if we could learn anything.
+
+
+  D. Discourse Feature
+
+<<< left for Brad >>>
+
+<<< also, see the end of section V, in case you want to add anything to the
+discourse feature paragraph >>>
+
+
+
+V. RESULTS
+----------
+
+  A. Results
+
+<<< numerical results and discussion, from Brad >>>
+
+
+  B. Remarks
+
+Aside from the main results, we learned a few interesting facts about our
+system and the problem in general.
+
+First and most notably, there is a significant difference between our
+performance on the identification task and on the classification task. The
+system is better at identifying the presence or absence of emotion than
+choosing a specific emotion. This is true regardless of whether 
+
+With a well-tuned set of weights, a set of features in aggregate often
+outperforms a single feature. This is because many features are only successful
+at predicting certain emotions, or for certain types of messages. Aggregating
+features increases the likelihood that at least one feature will be predictive
+for any message. (Setting weights dynamically would be even better; we discuss
+this in section VII.)
+
+Although they are very similar, the "word" feature performs better than the
+unigram feature in classification mode. This confirms our belief that non-word
+tokens such as punctuation, IM slang, and names do not have as much emotional
+content as words.
+
+The performance of threshold mode was lower than we expected because the system
+only performs adequately at the classification task. Threshold mode is not as
+effective at the identification task, for which our system performs well.
+
+Finally, IM conversations often have multiple topic threads happening at the
+same time. There are rarely more than two threads at the same time, but the
+threads are often about distinct topics. At best, this complicates the
+discourse feature's central assumption that each discourse is on one topic,
+and thus messages in a discourse are likely to have the same emotion.
+
+
+
+VI. FUTURE DIRECTIONS
+---------------------
+
+The future development we'd like to see most is higher awareness of IM as a
+widely used NL source. Similarly, we'd like to see more NLP work research on IM
+corpora. However, there is also plenty of room for improvement in our own work.
+
+One development that we're sorely lacking is a way to apply weights to features
+dynamically. As discussed before, some features are only highly predictive of
+certain classes, or with certain types of messages. These features are often
+less successful with other emotions or message types. Some of these feature
+orientations may be identified by manual inspection, but ideally, the weights
+should be adapted to each class or message type. This could be done with a
+simple hill-climbing algorithm, as a post-processing step after training.
+
+We constructed a relatively successful corpus, but it's still deficient in a
+number of ways. First, it's very small. Second, it's drawn from a relatively
+narrow set of source material. We would prefer source material from more
+people, ideally varied across age, location, occupation, interests, etc.
+Finally, the language use in the corpus is also pretty narrow, and many
+features (notably emoticons) aren't represented. A larger, broader corpus could
+fix these problems.
+
+Due to time constraints, we only implemented a small number of features.
+However, there are many more that we think might be significant. These include
+a lexicon for IM slang and acronyms, a parser that could handle the wide
+variety of sentence fragments in IM, an emoticon recognizer, an "emotion"
+lexicon, etc.
+
+Finally, there are many framework improvements we'd like to make. First on the
+list is dynamic class loading for features, so that features can be added
+without recompiling the engine.
+
+
+
+VII. CONCLUSION
+---------------
+
+
+<<< to be filled in by Ryan >>>

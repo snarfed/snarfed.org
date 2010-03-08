@@ -1,0 +1,85 @@
+/*
+ * http://ryan.barrett.name/
+ * Ryan Barrett <public@ryanb.org>
+ *  
+ * Stylesheet for the content pages. Most of the styles cascade from the
+ * header stylesheet, though.
+ **/
+
+
+/* general styles */
+table.contact, table.writing, table.voyeurism {
+	text-transform:	lowercase;
+	margin-left:	auto;
+	margin-right:	auto;
+	color:			white;
+}
+
+p { 
+    margin:        2px;
+    margin-left:   10px;
+    margin-right:  10px;
+}
+
+img {
+  /* use better interpolation on IE. see:
+   * http://code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+   */
+  -ms-interpolation-mode: bicubic;
+}
+
+
+/* table stuff, label/value pairings */
+td.labels, td.prose  { text-align: right; }
+td.address, td.rants { text-align: center; }
+
+td.values {
+	text-align:		left;
+    padding-left:   4px;
+	color:			silver;
+}
+
+.separator {
+	width:			15px;
+}
+
+
+
+/* people and projects style */
+.item {
+	padding-right:	6px;
+	white-space:	nowrap;
+}
+
+p.people, p.projects {
+	text-align:		center;
+}
+
+p#email, p#project-desc {
+	margin-top:		8px;
+}
+
+
+
+
+/* writing style */
+a.title {
+	padding-left:	12px;
+}
+
+h4 {
+	padding-left:	10px;
+}
+
+
+
+/* voyeurism dynamic stuff style */
+span#host, span#song {
+	letter-spacing:	-1px;
+}
+
+iframe.location {
+  border: 0px;
+  height: 1.5em;
+  margin-bottom: -.3em;
+}

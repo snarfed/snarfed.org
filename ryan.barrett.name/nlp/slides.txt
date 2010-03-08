@@ -1,0 +1,51 @@
+SLIDE 1
+-------
+Applying NLP to Instant Messaging
+Brad Hunter and Ryan Barrett
+
+cyclicreal: hey man, want to go out tonight?
+blaize: nah, i have to work on the NLP project
+cyclicreal: tomorrow night?
+blaize: nope, we have to write a paper too
+cyclicreal: ok, then do you want to do lunch after that?
+blaize: no, we have to do a presentation too
+
+
+SLIDE 2
+-------
+Goals:
+- interesting linguistic features of IM
+- classification engine that works well on IM
+  - e.g. classification by emotion
+
+- motivate people to use IM as a natural language source!
+
+
+SLIDE 3
+-------
+We built an IM corpus, tagged with emotions: 
+
+fear     bl4ize      walter got really sick last night...my parents took care of him
+fear     bl4ize      really scary
+surprise billmagrath wow.  with what?
+none     bl4ize      just flu
+fear     bl4ize      but he has high blood pressure, so that made it even more scary
+sadness  billmagrath thats too bad.
+joy      bl4ize      yeah, but he's ok now, thank god
+
+(61KB of this!)
+
+
+SLIDE 4
+-------
+- "plugin" architecture made adding new features easy
+  - e.g. n-gram, naive bayes, punctuation, word length/message length
+learned on training datasets
+
+- results were promising
+  - 63% at classification task (baseline 40%, humans 70%)
+  - 72% at identification task (baseline 60%, humans 75%)
+
+- hoping to see more work on IM corpora!
+
+

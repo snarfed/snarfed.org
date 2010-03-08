@@ -1,0 +1,61 @@
+<script type="text/javascript" src="away.js"></script>
+<script type="text/javascript" src="song.js"></script>
+<script type="text/javascript" src="timestamp.js"></script>
+<script type="text/javascript" src="voyeurism.js"></script>
+
+
+<div class="content" id="voyeurism">
+<table class="voyeurism">
+
+<tr>
+<th colspan="2">You</th>
+<th class="separator"></th>
+<th colspan="2">Me</th>
+</tr>
+
+<!-- You -->
+<tr><td class="labels">
+IP Address <br />
+Hostname <br />
+Location <br />
+Browser <br />
+Platform <br />
+</td>
+
+<td class="values">
+<span id="ip"> <!--#echo var="REMOTE_ADDR" --> </span><br />
+<span id="host"> <!--#echo var="REMOTE_HOST" --> </span><br />
+<iframe name="location_iframe" class="location" src="location_iframe.html"
+ frameborder="0"></iframe><br />
+<span id="browser"> </span><br />
+<span id="platform"> </span><br />
+</td>
+
+<td class="separator"></td>
+
+<!-- Me -->
+<td class="labels">
+ I am <br />
+ listening to <br />
+ blog <br />
+ desktop <br />
+ updated
+</td>
+
+<td class="values">
+ <a href="/bigbrother/"><span id="away"> - </span></a><br />
+ <span id="song"> turn on javascript! </span><br />
+ <a href="http://snarfed.org/"> snarfed.org </a> <br />
+ <a href="desktop.jpg"> snapshot </a><br />
+ <span id="timestamp"> - </span>
+</td>
+
+</tr>
+
+</table>
+
+<script type="text/javascript"><!--
+write_dynamic_data();
+--></script>
+</div>
+

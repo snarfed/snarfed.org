@@ -1,0 +1,54 @@
+/* Stylesheet for our CS224N project presentation - Applying NLP to IM.
+ *
+ * Brad Hunter and Ryan Barrett
+ * {krazo, rbarrett}@stanford.edu;
+ **/
+
+body {
+    background-color:   white;
+    color:              black;
+
+    font-family:        Arial, Helvetica, sans-serif;
+    font-size:          30px;
+}
+
+p { margin-left: 15px; }
+
+h1, h2 { text-align: center; }
+
+h1 { font-size: 36px; }
+h2 { font-size: 32px; }
+
+
+
+p.im {
+    margin-left:        40px;
+    font-family:        serif;
+    font-size:          24px;
+}
+
+span.speaker1 { color:  blue; }
+span.speaker2 { color:  red; }
+
+li {
+  padding:              8px;
+}
+
+li.small {
+    font-size :         28px;
+}
+
+
+td {
+    vertical-align:     top;
+    padding-right:      10px;
+}
+
+span.pct { color:       blue; }
+
+span.emph { color:      red; }
+
+p.next {
+    font-size:          14px;
+    text-align:         center;
+}

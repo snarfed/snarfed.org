@@ -1,0 +1,86 @@
+/* Stylesheet for Ryan and Brad's CS224N final project survey, currently at:
+ * http://www.stanford.edu/~rbarrett/survey.html
+ *
+ * Author: Ryan Barrett (rbarrett at stanford dot edu).
+ **/
+
+body {
+    min-width:          300px;
+    max-width:          800px;
+
+    background-color:   lightgray;
+    color:              black;
+    font:               sans-serif;
+    font-size:          14px;
+}
+
+
+h2, h3, h4 {
+    font-weight:        bold;
+}
+
+a {
+    text-decoration:    none;
+    font-weight:        bold;
+    color:              navy;
+}
+
+p:hover a {
+    color:              blue;
+}
+
+p a:hover {
+    text-decoration:    underline;
+}
+
+table {
+    margin-left:        auto;
+    margin-right:       auto;
+    text-align:         center;
+
+    border-collapse:    collapse;
+    border:             solid;
+    border-width:       1px;
+    border-color:       black;
+}
+
+td, th {
+    border:             solid;
+    border-width:       1px;
+    border-color:       black;
+    padding-left:       5px;
+    padding-right:      5px;
+    padding-top:        2px;
+    padding-bottom:     2px;
+}
+
+
+table.raw {
+    width:              780px;
+    margin-left:        0px;
+    margin-right:       0px;
+    border:             solid;
+    table-layout:       fixed;
+}
+
+table.raw td {
+    padding:            1px;
+    border:             none;
+    font-size:          12px;
+}    
+
+table.raw td.A {
+    font-size:          12px;
+    text-align:         left;
+    color:              red;
+}
+
+table.raw td.B {
+    font-size:          12px;
+    text-align:         left;
+    color:              blue;
+}
+
+/* for debugging */
+/*p, span { border-color: green; border-style: solid; border-width: 1px; }*/
+

@@ -1,0 +1,27 @@
+/* Stylesheet for Ryan and Brad's CS224N final project survey, currently at:
+ * http://www.stanford.edu/~rbarrett/survey.html
+ *
+ * Author: Ryan Barrett (rbarrett at stanford dot edu).
+ **/
+
+body {
+    background-color:   lightgray;
+    color:              black;
+    font:               sans-serif;
+    font-size:          14px;
+}
+
+
+h2 {
+    text-decoration:    bold;
+}
+
+span.A { color: red; }
+span.B { color: blue; }
+
+
+
+
+/* for debugging */
+/*p, span { border-color: green; border-style: solid; border-width: 1px; }*/
+

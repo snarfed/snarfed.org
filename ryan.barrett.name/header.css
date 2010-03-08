@@ -1,0 +1,151 @@
+/*
+ * http://ryan.barrett.name/
+ * Ryan Barrett <public@ryanb.org>
+ *  
+ * Stylesheet for the header, cascades down to the content pages too.
+ **/
+
+html {
+    overflow:           hidden;
+}
+
+/* the background image is rotated daily by a cron job. */
+body {
+    background-image:   url("background.jpg");
+
+    background-position: 0px 30px;
+    background-repeat:  repeat-x;
+    background-color:   black;
+    color:              white;
+
+    margin:             0;
+    padding:            0;
+
+    text-transform:     lowercase;
+    font-family:        Verdana, Helvetica, Arial, sans-serif;
+    font-size:          15px;
+}
+
+.ahem {        /* for detecting old, non-css-happy browsers */
+    display:        none;
+    text-align:     center;
+    width:          100%;
+}
+
+
+
+a {
+    text-decoration:    none;
+    font-weight:        bold;
+    border:             none;
+}
+
+div, table, td, th {
+    margin:             0;
+    padding:            0;
+}
+
+.hidden  { display: none; }
+
+/* for debugging */
+/* * { border: green solid 1px; }*/
+/*.visible { display: block; } */
+
+
+/* see http://www.w3.org/MarkUp/Guide/Style for colors */
+a:link                      { color: #CC3333; }    /* light maroon */
+a:visited                   { color: #CC3333; }
+a:hover                     { color: #FF6666; }    /* pinkish maroon */
+a:active                    { color: #CC3333; }
+
+a.caption:visited           { color: white; }
+a.caption:hover             { color: #FF6666; }
+
+
+/* header/caption stuff */
+div {
+    border-top:     solid;
+    border-bottom:  solid;
+    border-width:   1px;
+    border-color:   gray; /* maroon; */
+
+    width:          100%;
+/*    min-width:      440px;*/
+    background:     black;
+}
+
+
+div.top-strip {
+    border-top:     none;
+    height:         30px;
+}
+
+div.caption-strip {
+    margin-top:     75px;    /* this is the first strip of the picture */
+    text-align:     right;
+}
+
+
+a.caption {
+    color:          white;
+    font-size:      20px;
+    letter-spacing: 15px;
+    font-weight:    bold;
+}
+
+
+
+/* button strip stuff */
+p#buttons, p#currentpage {
+    margin:         0;
+}
+
+img.button {
+    border:         none;
+}
+
+
+div.buttonstrip {
+    margin-top:     150px;   /* this is the second strip of picture */
+    margin-bottom:  25px;    /* this is the third strip of picture */
+}
+
+p#buttons {
+    margin-left:    50px;
+    margin-top:     2px;
+}
+
+span#buttonlabel {
+    position:       relative;
+    top:            -3px;
+    margin-left:    10px;
+}
+
+p#currentpage {
+    float:          right;
+    text-align:     right;
+    margin-right:   10px;
+}
+
+
+
+/* stuff for content divs */
+div.content {
+    margin-bottom:  70px;    /* this is the bottom strip of picture */
+    text-align:     center;
+}
+
+div#bottomline {
+    border-bottom:  none;
+    height:         180px;
+}
+
+div#motd {
+    border-bottom:  none;
+    height:         300px;
+}
+
+p.motd {
+    margin-top:     0;
+    text-align:     center;
+}
