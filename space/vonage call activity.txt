@@ -7,8 +7,10 @@ vonage call activity
 
 I recently downloaded all of my call history from [Vonage](http://vonage.com/),
 which I've [used for years](/space/2004-12-24). It wasn't entirely
-obvious, but it turned out to be pretty straightforward. Here's
-what I did.
+obvious, but it turned out to be pretty straightforward. Check out
+[the](/space/vonage_incoming_calls_example.html)
+[examples](/space/vonage_outgoing_calls_example.html),
+then read on to see what I did.
 
 <a name="downloading"></a>
 #### Downloading
@@ -81,7 +83,11 @@ their own table column...
       ...
 
 <br />
-That's it!
+That's it! Here are examples of the resulting
+call log files:
+[incoming](/space/vonage_incoming_calls_example.html) and
+[outgoing](/space/vonage_outgoing_calls_example.html).
+
 
 See also:
   * [backup google](/space/backup_google)
