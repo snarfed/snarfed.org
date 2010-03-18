@@ -2,7 +2,10 @@
 
 ### It's the Phone, Stupid [![Icon-Permalink.png](/Icon-Permalink.png)](#)
 
-[![/space/old_phone.jpg](/space/old_phone.jpg)](http://vonage.com/)
+<div class="img" style="float: right; margin-left: 10px">
+<a href="http://vonage.com/">
+  <img src="/space/old_phone.jpg"></a>
+</div>
 
 I moved recently, so I had to sign up for phone service again. I'd heard good
 things about [VOIP](http://dslreports.com/?cat=VoIP) (as opposed to
