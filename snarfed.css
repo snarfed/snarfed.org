@@ -282,12 +282,13 @@ tr.index-row-stripe-1 {
   background-color: #EEE;
 }
 
-div.gsc-back           { float: right; }
-div.gs-result          { margin-top: 1em; }
-div.gs-title           { text-decoration: underline; }
-div.gs-visibleUrl      { color: green; }
-div.gs-visibleUrl-long { display: none; }
-div.gs-watermark       { display: none; }
+div.gsc-back            { float: right; }
+div.gs-result           { margin-top: 1em; }
+div.gs-title            { text-decoration: underline; }
+div.gs-visibleUrl       { color: green; }
+div.gs-visibleUrl-short { display: none; }
+div.gs-visibleUrl-long  { display: none; }
+div.gs-watermark        { display: none; }
 
 div.gs-snippet {
   font-size: .8em;

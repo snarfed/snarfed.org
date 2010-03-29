@@ -6,7 +6,7 @@ site search with the Google AJAX Search API
 <a href="http://code.google.com/"><img src="/space/google_code.png" /></a>
 </td></tr></table>
 
-_Updated 2007-12-21._
+_Updated 2010-03-29._
 
 [ajax\_search.js](/ajax_search.js) uses the
 [Google AJAX Search API](http://code.google.com/apis/ajaxsearch/signup.html)
@@ -63,16 +63,31 @@ them with CSS. Here are the classes:
      |- gsc-branding-img-noclear
 
 The [AJAX Search API stylesheet](http://www.google.com/uds/css/gsearch.css)
-has more details. As an example, this is the CSS used on this site. It's
-similar to the [google.com](http://google.com/) style.
+has more details. As an example, here's the CSS used on this site:
 
-    div.gs-result        { margin-top: 1em; }
-    div.gs-title         { text-decoration: underline; }
-    div.gs-visibleUrl    { color: green; }
-    div.gs-watermark     { display: none; }
-    div.gsc-back         { float: right; }
+    div.gsc-back            { float: right; }
+    div.gs-result           { margin-top: 1em; }
+    div.gs-title            { text-decoration: underline; }
+    div.gs-visibleUrl       { color: green; }
+    div.gs-visibleUrl-short { display: none; }
+    div.gs-visibleUrl-long  { display: none; }
+    div.gs-watermark        { display: none; }
+    
+    div.gs-snippet {
+      font-size: .8em;
+      letter-spacing: -.05em;
+    }
+    
+    div.gs-snippet br { display: none; }
+    
     table.gsc-branding   { border: none; }
     td.gsc-branding-text { color: gray; }
+    
+    td.gsc-branding-img-noclear {
+      padding-left: 2px;
+      padding-top: 5px;
+    }
+    img.gsc-branding-img-noclear { margin-bottom: -3px; }
 
 Happy AJAX searching!
 
