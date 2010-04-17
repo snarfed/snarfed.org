@@ -474,7 +474,7 @@ this was a google summer of code project! chris lavoie mentored. yay.
 
 motivation is pretty clear. querying and data mining is big business.
 
-however, creating good unstructured keyword queries is hard
+however, creating good unstructured keyword queries is hard.
 
   * synonyms (record, code, etc.)
   * syntactic ambiguity (newspaper headline: "Eye Drops Off Shelf")
@@ -488,7 +488,7 @@ data to existing datasets' clusters and classifications.
 finding discriminant fns for clustering/classifying is dosable, but finding ones
 that handle _new_ data well is very hard.
 
-introducted support vector machines, gave background. whee.
+introduced support vector machines, gave background. whee.
 
 all of this is already done and works well. query by example takes the existing
 clustering and classification stuff and provides a new interface to it,
