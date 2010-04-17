@@ -46,7 +46,7 @@ Control-Right, but they eluded me. C-h k (ie describe-key) in emacs doesn't even
 catch them at all!
 
 See also:
-  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs_keybindings_in_GNU_screen's_copy-scrollback_mode)
+  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs_keybindings_in_GNU_screens_copy-scrollback_mode)
   * [Emacs keybindings with number keys](/space/emacs_keybindings_with_number_keys)
   * [Emacs keybindings in firefox](/space/emacs_keybindings_in_firefox)
   * [Emacs and remote X Windows](/space/emacs_and_remote_X_Windows)

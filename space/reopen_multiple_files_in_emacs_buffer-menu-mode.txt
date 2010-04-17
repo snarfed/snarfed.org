@@ -74,7 +74,7 @@ Similarly, this function reopens the current buffer in a new location.
 See also:
   * [fillcode](/space/fillcode)
   * [gnu emacs backup files](/space/gnu_emacs_backup_files)
-  * [why I don't run shells inside Emacs](/space/why_I_don't_run_shells_inside_Emacs)
+  * [why I don't run shells inside Emacs](/space/why_I_dont_run_shells_inside_Emacs)
   * [Emacs and remote X Windows](/space/Emacs_and_remote_X_Windows)
   * [minimal .emacs for fast startup](/space/minimal_.emacs_for_fast_startup)
 

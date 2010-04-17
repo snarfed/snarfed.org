@@ -104,8 +104,8 @@ wrestling [GNU screen](http://www.gnu.org/software/screen/) into submission,
 since it also allows [keyboard navigation and
 copy/paste](http://www.delorie.com/gnu/docs/screen/screen_73.html) over shell
 contents. So far, I've [synchronized its paste buffer and the X
-selection](/space/synchronizing_GNU_screen's_paste_buffer_and_the_X_selection), and I've [Emacs-ified its
-copy-scrollback mode](/space/Emacs_keybindings_in_GNU_screen's_copy-scrollback_mode). Stay tuned for
+selection](/space/synchronizing_GNU_screens_paste_buffer_and_the_X_selection), and I've [Emacs-ified its
+copy-scrollback mode](/space/Emacs_keybindings_in_GNU_screens_copy-scrollback_mode). Stay tuned for
 more!
 
 Here's what I added to [my .emacs](/space/dotfiles/emacs) to
@@ -146,8 +146,8 @@ make shell-mode behave the way I wanted:
 <a name="related"></a>
 See also: 
   * [synchronizing GNU screen's paste buffer and the X
-selection](/space/synchronizing_GNU_screen's_paste_buffer_and_the_X_selection)
-  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs_keybindings_in_GNU_screen's_copy-scrollback_mode)
+selection](/space/synchronizing_GNU_screens_paste_buffer_and_the_X_selection)
+  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs_keybindings_in_GNU_screens_copy-scrollback_mode)
   * [acoc.conf for context diffs](/space/acoc.conf_for_context_diffs)
   * [control arrow keys in rxvt, tcsh, and emacs](/space/control_arrow_keys_in_rxvt,_tcsh,_and_emacs)
   * [tcsh highlighting patch](/space/tcsh_highlighting_patch)
