@@ -28,7 +28,7 @@ In the beginning, there was [Album Express](http://fookes.com/album). It was
 nice, but the albums didn't use CSS and it cost $25.
 
 Then came the age of SnipSnap. We wrote our [own
-macro](/space/Snipsnap+macros) to fit into the SnipSnap
+macro](/space/Snipsnap_macros) to fit into the SnipSnap
 paradigm. This was nice, but it didn't have captions, alas we could not describe
 our photos to our friends.
 

@@ -29,10 +29,10 @@ photogallery is Copyright 2004 [Magnus Nordlander](http://magnus.nordlander.tk/)
 under the [GPL](http://www.gnu.org/licenses/gpl.html).
 
 See also:
-  * [index](/space/pyblosxom+index)
-  * [history](/space/pyblosxom+history)
+  * [index](/space/pyblosxom_index)
+  * [history](/space/pyblosxom_history)
   * [filekicker](/space/filekicker)
   * [hardcodedates](/space/photogallery)
-  * [pyblosxom ajax comments](/space/pyblosxom ajax comments)
-  * [pyblosxom rdf flavour](/space/pyblosxom rdf flavour)
+  * [pyblosxom ajax comments](/space/pyblosxom_ajax_comments)
+  * [pyblosxom rdf flavour](/space/pyblosxom_rdf_flavour)
   * [migrating to pyblosxom](/space/2006-08-23)

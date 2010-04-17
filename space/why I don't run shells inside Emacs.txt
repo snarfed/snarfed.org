@@ -104,8 +104,8 @@ wrestling [GNU screen](http://www.gnu.org/software/screen/) into submission,
 since it also allows [keyboard navigation and
 copy/paste](http://www.delorie.com/gnu/docs/screen/screen_73.html) over shell
 contents. So far, I've [synchronized its paste buffer and the X
-selection](/space/synchronizing GNU screen's paste buffer and the X selection), and I've [Emacs-ified its
-copy-scrollback mode](/space/Emacs keybindings in GNU screen's copy-scrollback mode). Stay tuned for
+selection](/space/synchronizing_GNU_screen's_paste_buffer_and_the_X_selection), and I've [Emacs-ified its
+copy-scrollback mode](/space/Emacs_keybindings_in_GNU_screen's_copy-scrollback_mode). Stay tuned for
 more!
 
 Here's what I added to [my .emacs](/space/dotfiles/emacs) to
@@ -146,17 +146,17 @@ make shell-mode behave the way I wanted:
 <a name="related"></a>
 See also: 
   * [synchronizing GNU screen's paste buffer and the X
-selection](/space/synchronizing GNU screen's paste buffer and the X selection)
-  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs keybindings in GNU screen's copy-scrollback mode)
-  * [acoc.conf for context diffs](/space/acoc.conf for context diffs)
-  * [control arrow keys in rxvt, tcsh, and emacs](/space/control arrow keys in rxvt, tcsh, and emacs)
-  * [tcsh highlighting patch](/space/tcsh highlighting patch)
-  * [remove tcsh globbing in history search](/space/remove tcsh globbing in history search)
-  * [tcsh delete moves mark bug fix](/space/tcsh delete moves mark bug fix)
-  * [Emacs and remote X Windows](/space/Emacs and remote X Windows)
-  * [minimal .emacs for fast startup](/space/minimal .emacs for fast startup)
-  * [emacs keybindings with number keys](/space/emacs keybindings with number keys)
-  * [emacs keybindings in firefox](/space/emacs keybindings in firefox)
-  * [emacs X resources](/space/emacs X resources)
-  * [emacs page up page down](/space/emacs page up page down)
+selection](/space/synchronizing_GNU_screen's_paste_buffer_and_the_X_selection)
+  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs_keybindings_in_GNU_screen's_copy-scrollback_mode)
+  * [acoc.conf for context diffs](/space/acoc.conf_for_context_diffs)
+  * [control arrow keys in rxvt, tcsh, and emacs](/space/control_arrow_keys_in_rxvt,_tcsh,_and_emacs)
+  * [tcsh highlighting patch](/space/tcsh_highlighting_patch)
+  * [remove tcsh globbing in history search](/space/remove_tcsh_globbing_in_history_search)
+  * [tcsh delete moves mark bug fix](/space/tcsh_delete_moves_mark_bug_fix)
+  * [Emacs and remote X Windows](/space/Emacs_and_remote_X_Windows)
+  * [minimal .emacs for fast startup](/space/minimal_.emacs_for_fast_startup)
+  * [emacs keybindings with number keys](/space/emacs_keybindings_with_number_keys)
+  * [emacs keybindings in firefox](/space/emacs_keybindings_in_firefox)
+  * [emacs X resources](/space/emacs_X_resources)
+  * [emacs page up page down](/space/emacs_page_up_page_down)
 

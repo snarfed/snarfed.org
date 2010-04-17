@@ -11,7 +11,7 @@ A while back, I posted an
 
 Since then, I've added support for
 [OpenID comments](#comment-anchor), using
-the [comments_openid.py plugin](/space/pyblosxom+openid+comments).
+the [comments_openid.py plugin](/space/pyblosxom_openid_comments).
 I've updated it to work with recent versions of PyBlosxom and
 [JanRain](http://www.janrain.com/)'s
 [Python OpenID library](http://www.openidenabled.com/openid/libraries/python/),

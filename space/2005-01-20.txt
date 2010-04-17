@@ -11,6 +11,6 @@ and is intended for any program that needs to synchronize clocks or query
 another computer's clock over the network.
 
 We're planning to use libmsntp in our never-ending quest for [synchronizing mp3
-playback](/space/synchronizing mp3 playback). Maybe someday we'll even ship
+playback](/space/synchronizing_mp3_playback). Maybe someday we'll even ship
 something!
 

@@ -2,7 +2,7 @@ windows media player database
 [![/space/windows_media_player.jpg](/space/windows_media_player.jpg)](http://www.microsoft.com/windows/windowsmedia/default.aspx)
 
 I
-spend most of my time in Linux, [inside VMWare](/space/fedora+core+3+on+vmware),
+spend most of my time in Linux, [inside VMWare](/space/fedora_core_3_on_vmware),
 but I do use Windows for a few things like music. (VMWare's sound drivers are a
 little unstable.) I use [Windows Media
 Player](http://www.microsoft.com/windows/windowsmedia/default.aspx), since I'm
@@ -48,6 +48,6 @@ Moral of the story? Don't change Windows users if you can possibly help it. It's
 _really_ painful.
 
 See also:
-  * [fedora core 3 on vmware](/space/fedora core 3 on vmware)
-  * [invert mouse in Beyond Good & Evil](/space/invert mouse in Beyond Good & Evil)
+  * [fedora core 3 on vmware](/space/fedora_core_3_on_vmware)
+  * [invert mouse in Beyond Good & Evil](/space/invert_mouse_in_Beyond_Good_&_Evil)
 

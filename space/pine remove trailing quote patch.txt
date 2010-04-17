@@ -43,7 +43,7 @@ For more on the top- vs. bottom-post debate, see:
 Also, a few recent email clients, such as [GMail](http://gmail.com/), try to use
 quoted text to do smart things. This patch can make your emails more readable in
 those clients. (I've discussed my thoughts on gmail vs pine
-[at length](/space/gmail vs pine).)
+[at length](/space/gmail_vs_pine).)
 
 Feel free to [email me](/space/about) with feedback or
 bug reports.
@@ -53,9 +53,9 @@ with (C)ompose instead of (R)eply. This is usually encountered when you reply to
 an email, postpone the reply, then resume and attempt to send.
 
 See also:
-  * [pine delete attachments on save patch](/space/pine delete attachments on save patch)
-  * [pine flowed-text patch](/space/pine flowed-text patch)
-  * [pine reply-all patch](/space/pine reply-all patch)
+  * [pine delete attachments on save patch](/space/pine_delete_attachments_on_save_patch)
+  * [pine flowed-text patch](/space/pine_flowed-text_patch)
+  * [pine reply-all patch](/space/pine_reply-all_patch)
   * [port\_pine\_patch](/space/port_pine_patch)
-  * [gmail vs pine](/space/gmail vs pine)
+  * [gmail vs pine](/space/gmail_vs_pine)
 

@@ -28,5 +28,5 @@ patch](http://sourceforge.net/tracker/index.php?func=detail&aid=1111661&group_id
 makes tkdiff use the local copy instead.
 
 See also:
-  * [backup subversion fsfs with rsync](/space/backup subversion fsfs with rsync)
+  * [backup subversion fsfs with rsync](/space/backup_subversion_fsfs_with_rsync)
 

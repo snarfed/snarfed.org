@@ -1,5 +1,5 @@
 referrer spam
-[![/space/spam.jpg](/space/spam.jpg)](/space/referrer+spam)
+[![/space/spam.jpg](/space/spam.jpg)](/space/referrer_spam)
 
 [Referrer spam](http://www.spywareinfo.com/articles/referer_spam/) - or by
 Apache's original misspelling, _referer_ spam - has been a problem at
@@ -19,7 +19,7 @@ referrer spam, feel free to borrow it. (I used to use
 [webalizer.conf](/space/webalizer.conf) is also available,
 but it's not maintained.)
 
-  * I've written a [webalizer nofollow patch](/space/webalizer+nofollow+patch)
+  * I've written a [webalizer nofollow patch](/space/webalizer_nofollow_patch)
 that adds support for the popular new
 [nofollow](http://www.google.com/googleblog/2005/01/preventing-comment-spam.html)
 tag.
@@ -48,5 +48,5 @@ good first step. I'd like to extend it to use DNSBLs and RBLs like
 
 See also:
   * [geocoding](/space/geocoding)
-  * [webalizer nofollow patch](/space/webalizer nofollow patch)
+  * [webalizer nofollow patch](/space/webalizer_nofollow_patch)
 

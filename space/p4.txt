@@ -19,7 +19,7 @@ functionality.
 Since its release in early 2001, P4 has been surpassed by other general-purpose
 overlay platforms such as [JXTA](http://jxta.org/),
 [Groove](http://groove.net/), and Microsoft's [Windows Peer-to-Peer
-SDK](/space/windows+p2p). Furthermore, [many](http://overnet.com/)
+SDK](/space/windows_p2p). Furthermore, [many](http://overnet.com/)
 [other](http://freedom.net/) [file](http://freehaven.net/)
 [sharing](http://mnet.sourceforge.net/)
 [networks](http://en.wikipedia.org/wiki/FastTrack) have long been superior to P4
@@ -45,7 +45,7 @@ Barrett](http://snarfed.org/), [Maulik Shah](http://maulik.net/), and
 [Nathan Stoll](http://cs.stanford.edu/~nstoll).
 
 See also:
-  * [synchronizing mp3 playback](/space/synchronizing mp3 playback)
+  * [synchronizing mp3 playback](/space/synchronizing_mp3_playback)
   * [libmsntp](/space/libmsntp)
-  * [libwebserver shutdown patch](/space/libwebserver shutdown patch)
+  * [libwebserver shutdown patch](/space/libwebserver_shutdown_patch)
 

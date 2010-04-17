@@ -30,12 +30,12 @@ the newly rebuilt `snipsnap.jar` into your SnipSnap's `lib/` subdirectory, and c
 the existing jars. Restart SnipSnap and you should be good to go!
 
 See also:
-  * [snipsnap register without email](/space/snipsnap register without email)
+  * [snipsnap register without email](/space/snipsnap_register_without_email)
   * [snipscrape](/space/snipscrape)
-  * [snipsnap macros](/space/snipsnap macros)
-  * [snipsnap recent-changes snip name patch](/space/snipsnap recent-changes snip name patch)
-  * [snipsnap script macro and python](/space/snipsnap script macro and python)
-  * [servlets with snipsnap](/space/servlets with snipsnap)
-  * [virtual host redirection](/space/virtual host redirection)
-  * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap 1.0b1 virtual hostname patch)
+  * [snipsnap macros](/space/snipsnap_macros)
+  * [snipsnap recent-changes snip name patch](/space/snipsnap_recent-changes_snip_name_patch)
+  * [snipsnap script macro and python](/space/snipsnap_script_macro_and_python)
+  * [servlets with snipsnap](/space/servlets_with_snipsnap)
+  * [virtual host redirection](/space/virtual_host_redirection)
+  * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap_1.0b1_virtual_hostname_patch)
 

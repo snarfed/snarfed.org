@@ -8,7 +8,7 @@ For the impatient:
 [Google's nofollow
 page](http://googleblog.blogspot.com/2005/01/preventing-comment-spam.html)
 
-The latest salvo in the battle against [referrer spam](/space/referrer spam) and
+The latest salvo in the battle against [referrer spam](/space/referrer_spam) and
 comment spam is
 [nofollow](http://googleblog.blogspot.com/2005/01/preventing-comment-spam.html),
 an HTML tag that instructs search engines not to count a link in their
@@ -18,7 +18,7 @@ nofollow support to [webalizer](http://webalizer.com/), a popular web server log
 analyzer.
 
 See also:
-  * [referrer spam](/space/referrer spam)
+  * [referrer spam](/space/referrer_spam)
   * [geocoding](/space/geocoding)
   * [patches](/space/software#patches)
   * [ideas](/space/ideas)

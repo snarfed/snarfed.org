@@ -6,7 +6,7 @@
 
 [Emacs](http://gnu.org/software/emacs/) is great, but one of my pet peeves is
 that while it can fill (ie wrap) plain text, it [can't fill source
-code](/space/filling+code+in+emacs). A while back, I wrote
+code](/space/filling_code_in_emacs). A while back, I wrote
 [fillcode](/space/fillcode), an Emacs minor mode that does just that.
 
 Since I started writing more C++ at work, I noticed a few fillcode bugs that

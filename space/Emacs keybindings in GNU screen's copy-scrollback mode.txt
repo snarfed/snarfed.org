@@ -1,5 +1,5 @@
 Emacs keybindings in GNU screen's copy-scrollback mode
-[![terminal.jpg](/space/terminal.jpg)](http://www.gnu.org/software/screen/)[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)[![X_logo.png](/space/X_logo.png)](/space/synchronizing GNU screen's paste buffer and the X selection)
+[![terminal.jpg](/space/terminal.jpg)](http://www.gnu.org/software/screen/)[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)[![X_logo.png](/space/X_logo.png)](/space/synchronizing_GNU_screen's_paste_buffer_and_the_X_selection)
 
 When I'm working, I pretty much
 live inside [Emacs](http://gnu.org/software/emacs/). It's my IDE, debugger, text
@@ -47,10 +47,10 @@ bindings in screen's copy/scrollback mode:
     bindkey -m ^[Oc stuff ]  #"}]^f"
 
 See also:
-  * [synchronizing GNU screen's paste buffer and the X selection](/space/synchronizing GNU screen's paste buffer and the X selection)
-  * [why I don't run shells inside Emacs](/space/why I don't run shells inside Emacs)
-  * [control arrow keys in rxvt, tcsh, and emacs](/space/control arrow keys in rxvt, tcsh, and emacs)
-  * [emacs keybindings in firefox](/space/emacs keybindings in firefox)
-  * [emacs keybindings with number keys](/space/emacs keybindings with number keys)
-  * [emacs page up page down](/space/emacs page up page down)
+  * [synchronizing GNU screen's paste buffer and the X selection](/space/synchronizing_GNU_screen's_paste_buffer_and_the_X_selection)
+  * [why I don't run shells inside Emacs](/space/why_I_don't_run_shells_inside_Emacs)
+  * [control arrow keys in rxvt, tcsh, and emacs](/space/control_arrow_keys_in_rxvt,_tcsh,_and_emacs)
+  * [emacs keybindings in firefox](/space/emacs_keybindings_in_firefox)
+  * [emacs keybindings with number keys](/space/emacs_keybindings_with_number_keys)
+  * [emacs page up page down](/space/emacs_page_up_page_down)
 

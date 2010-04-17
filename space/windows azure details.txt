@@ -8,7 +8,7 @@ absorbing Microsoft's messaging, diving deep into the technical details, and
 thinking about the broader implications for cloud computing as a whole.
 Here are some of the technical details.
 
-Also see my [overall impressions](/space/windows+azure+impressions) and
+Also see my [overall impressions](/space/windows_azure_impressions) and
 [presentation slides](/space/azure_talk.html). (Full disclosure: I
 [work](/space/2008-04-07_google_app_engine_launched) on
 [Google App Engine](http://appengine.google.com/).)
@@ -20,31 +20,31 @@ Also see my [overall impressions](/space/windows+azure+impressions) and
    * [Services](#Services)
       * [Components](#Components)
       * [Provisioning](#Provisioning)
-      * [Configuration and APIs](#Configuration and APIs)
-      * [Geodistribution and Georeplication](#Geodistribution and Georeplication)
+      * [Configuration and APIs](#Configuration_and_APIs)
+      * [Geodistribution and Georeplication](#Geodistribution_and_Georeplication)
    * [Implementation](#Implementation)
-      * [Fabric Controller](#Fabric Controller)
-         * [State machine](#State machine)
-         * [Service life cycle](#Service life cycle)
+      * [Fabric Controller](#Fabric_Controller)
+         * [State machine](#State_machine)
+         * [Service life cycle](#Service_life_cycle)
          * [Networking](#Networking)
-      * [Implementation details](#Implementation details)
+      * [Implementation details](#Implementation_details)
       * [Virtualization](#Virtualization)
-      * [Image-based deployment](#Image-based deployment)
-* [Monitoring and alerting](#Monitoring and alerting)
+      * [Image-based deployment](#Image-based_deployment)
+* [Monitoring and alerting](#Monitoring_and_alerting)
 * [Storage](#Storage)
    * [Tables](#Tables)
       * [Features](#Tables_Features)
-      * [Entity model](#Entity model)
+      * [Entity model](#Entity_model)
       * [Queries](#Queries)
-      * [Consistency and Transactions](#Consistency and Transactions)
+      * [Consistency and Transactions](#Consistency_and_Transactions)
       * [Schemas](#Schemas)
-      * [Implementation](#Tables Implementation)
+      * [Implementation](#Tables_Implementation)
    * [Queues](#Queues)
       * [Features](#Queues_Features)
-      * [Implementation](#Queues Implementation)
+      * [Implementation](#Queues_Implementation)
    * [Blobs](#Blobs)
-* [Developer Experience](#Developer Experience)
-* [SQL Services](#SQL Services)
+* [Developer Experience](#Developer_Experience)
+* [SQL Services](#SQL_Services)
 
 
 <br />
@@ -132,7 +132,7 @@ nodes. As with update domains, a role may specify the number of fault
 domains its instances should be deployed in.
 
 
-<a name="Example definition"></a>
+<a name="Example_definition"></a>
 
 Here's an example service definition:
 
@@ -165,7 +165,7 @@ service definition and the current node, accessing configuration settings, and
 reporting health and other status info. Role instances may also use the local
 disk on their nodes as temporary scratch space, within a quota limited,
 chrooted directory. Finally, as mentioned in
-[Developer Experience](#Developer Experience), there's a distributed logging
+[Developer Experience](#Developer_Experience), there's a distributed logging
 system that collects logs and makes them available for browsing, searching,
 and downloading.
 
@@ -174,15 +174,15 @@ local machines, authenticating to the storage systems from live role
 instances, and signing and encrypting service images before publishing them.
 
 
-<a name="Configuration and APIs"></a>
-#### Configuration and APIs [![permalink](/Icon-Permalink.png)](#Configuration and APIs)
+<a name="Configuration_and_APIs"></a>
+#### Configuration and APIs [![permalink](/Icon-Permalink.png)](#Configuration_and_APIs)
 
 Services include configuration settings, which are similar to the registry in
 Windows and `/etc`, dotfiles, and flags in *nix. Some are system-defined, such
 as the instance id, update domain id, and fault domain id. The rest are
 declared by the developer in the service definition, along with default
 values. Those values may be changed at runtime, I think via `CSRun.exe` (see
-[Developer Experience](#Developer Experience) or the developer portal.
+[Developer Experience](#Developer_Experience) or the developer portal.
 
 Roles can define callbacks to be called when settings change. This allows
 developers/deployers to change them dynamically, at runtime, without requiring
@@ -209,8 +209,8 @@ this includes minor speculation, specifically the `Instances` tag's `min` and
 
 
 
-<a name="Geodistribution and Georeplication"></a>
-#### Geodistribution and Georeplication [![permalink](/Icon-Permalink.png)](#Geodistribution and Georeplication)
+<a name="Geodistribution_and_Georeplication"></a>
+#### Geodistribution and Georeplication [![permalink](/Icon-Permalink.png)](#Geodistribution_and_Georeplication)
 
 In the CTP, Azure runs in "a single datacenter on the US west coast." In the
 commercial release, MS will offer some control over geodistribution and
@@ -222,12 +222,12 @@ scarce.
 ### Implementation [![permalink](/Icon-Permalink.png)](#Implementation)
 
 The Azure fabric implementation consists of two main components, the [fabric
-controller](#Fabric Controller) and the
-[fabric controller agent](#State machine).
+controller](#Fabric_Controller) and the
+[fabric controller agent](#State_machine).
 
 
-<a name="Fabric Controller"></a>
-#### Fabric Controller [![permalink](/Icon-Permalink.png)](#Fabric Controller)
+<a name="Fabric_Controller"></a>
+#### Fabric Controller [![permalink](/Icon-Permalink.png)](#Fabric_Controller)
 
 The fabric controller (FC) manages the life cycle of Azure services. It
 allocates resources for them, provisions, deploys them, monitors them, and
@@ -235,8 +235,8 @@ maintains their goal state. It also manages and monitors both VMs and physical
 machines in the fabric.
 
 
-<a name="State machine"></a>
-##### State machine [![permalink](/Icon-Permalink.png)](#State machine)
+<a name="State_machine"></a>
+##### State machine [![permalink](/Icon-Permalink.png)](#State_machine)
 
 The FC has an internal state machine that it uses for managing the life cycle
 of a service. It maintains the current (last known) state of each virtual and
@@ -256,8 +256,8 @@ The FC also monitors for certain events that move nodes out of goal state,
 e.g. failures.
 
 
-<a name="Service life cycle"></a>
-##### Service life cycle [![permalink](/Icon-Permalink.png)](#Service life cycle)
+<a name="Service_life_cycle"></a>
+##### Service life cycle [![permalink](/Icon-Permalink.png)](#Service_life_cycle)
 
 Inside the FC, there are four specific stages in the life cycle of a service:
 resource allocation, provisioning, deployment and upgrading, and maintennance.
@@ -306,8 +306,8 @@ service based on running role instances with interface when they move in and
 out of goal state. Load balancers only send traffic to role instances in goal
 state.
 
-<a name="Implementation details"></a>
-#### Implementation details [![permalink](/Icon-Permalink.png)](#Implementation details)
+<a name="Implementation_details"></a>
+#### Implementation details [![permalink](/Icon-Permalink.png)](#Implementation_details)
 
 The FC itself is cluster of 5-7 machines. At any given time, one is the
 primary, and the rest are secondary workers. They vaguely alluded to using a
@@ -350,8 +350,8 @@ high-bandwidth direct data bus between VMs. (This is probably used for disk
 reads and writes from guest VMs.)
 
 
-<a name="Image-based deployment"></a>
-#### Image-based deployment [![permalink](/Icon-Permalink.png)](#Image-based deployment)
+<a name="Image-based_deployment"></a>
+#### Image-based deployment [![permalink](/Icon-Permalink.png)](#Image-based_deployment)
 
 Deployments and upgrades are based on virtual hard disk images, which provide
 a number of benefits. They're homogenous, stabler and more predictable, faster
@@ -367,8 +367,8 @@ replication, and caching.
 
 
 
-<a name="Monitoring and alerting"></a>
-## Monitoring and alerting [![permalink](/Icon-Permalink.png)](#Monitoring and alerting)
+<a name="Monitoring_and_alerting"></a>
+## Monitoring and alerting [![permalink](/Icon-Permalink.png)](#Monitoring_and_alerting)
 
 This is one of the areas we have the least information so far. There's little
 to no support for developer-configurable monitoring in the CTP. The commercial
@@ -387,7 +387,7 @@ those alerts.
 There's also a `CSMonitor.exe` file in the SDK. I haven't seen much information
 about it, but I'm guessing it's for querying the status and monitoring info of
 a local role instance, or maybe even a live one running in Azure. See
-[Developer Experience](#Developer Experience).
+[Developer Experience](#Developer_Experience).
 
 
 
@@ -423,8 +423,8 @@ a distributed system that's very similar in design to
 scale to billions of entities and terabytes of data.
 
 
-<a name="Entity model"></a>
-#### Entity model [![permalink](/Icon-Permalink.png)](#Entity model)
+<a name="Entity_model"></a>
+#### Entity model [![permalink](/Icon-Permalink.png)](#Entity_model)
 
 Each entity has a table name and a schemaless, key/value property bag.
 Entities are limited to 1MB and 255 properties each. The supported property
@@ -474,8 +474,8 @@ which may be passed back in following query calls to retrieve the next page of
 results.
 
 
-<a name="Consistency and Transactions"></a>
-#### Consistency and Transactions [![permalink](/Icon-Permalink.png)](#Consistency and Transactions)
+<a name="Consistency_and_Transactions"></a>
+#### Consistency and Transactions [![permalink](/Icon-Permalink.png)](#Consistency_and_Transactions)
 
 Azure tables is strongly consistent. Single entity writes are synchronous, and
 there are no dirty reads. ACID transactions are supported on single entities.
@@ -512,8 +512,8 @@ path, or just leave both code paths in (ugh!).
 
 
 
-<a name="Tables Implementation"></a>
-#### Implementation [![permalink](/Icon-Permalink.png)](#Tables Implementation)
+<a name="Tables_Implementation"></a>
+#### Implementation [![permalink](/Icon-Permalink.png)](#Tables_Implementation)
 
 From discussions with [Brad Calder](http://www-cse.ucsd.edu/~calder/) et al,
 it sounds like tables is designed similarly to Bigtable and the App Engine
@@ -572,8 +572,8 @@ that offers queueing functionality too. This is similar, but different, and
 doesn't share any code.
 
 
-<a name="Queues Implementation"></a>
-#### Implementation [![permalink](/Icon-Permalink.png)](#Queues Implementation)
+<a name="Queues_Implementation"></a>
+#### Implementation [![permalink](/Icon-Permalink.png)](#Queues_Implementation)
 
 The order that tasks are dequeued is roughly FIFO, but not exactly. The system
 makes no guarantees about starvation or fairness within a queue.
@@ -606,8 +606,8 @@ block-based blobs, modifications are made at the block level.
 
 
 
-<a name="Developer Experience"></a>
-## Developer Experience [![permalink](/Icon-Permalink.png)](#Developer Experience)
+<a name="Developer_Experience"></a>
+## Developer Experience [![permalink](/Icon-Permalink.png)](#Developer_Experience)
 
 One of the loudest messages at PDC was that
 [your existing tools, libraries, skills, and knowledge transfer to the cloud](#tools).
@@ -673,8 +673,8 @@ for more.
 
 
 
-<a name="SQL Services"></a>
-## SQL Services [![permalink](/Icon-Permalink.png)](#SQL Services)
+<a name="SQL_Services"></a>
+## SQL Services [![permalink](/Icon-Permalink.png)](#SQL_Services)
 
 SQL Services is a schemaless structured database that lives in the cloud. It's
 based on sharded [SQL Server](http://www.microsoft.com/sql/). The entity model
@@ -700,11 +700,11 @@ never be supported without something like two phase commit, though.
 
 
 **See also:**
-  * [Windows Azure impressions](/space/windows+azure+impressions)
+  * [Windows Azure impressions](/space/windows_azure_impressions)
   * [Windows Azure: Overview and Impressions](/space/azure_talk.html) (slides)
-  * [Facebook Data Store API Thoughts](/space/facebook+data+store+api+thoughts)
-  * [Amazon SimpleDB thoughts](/space/amazon+simpledb+thoughts)
+  * [Facebook Data Store API Thoughts](/space/facebook_data_store_api_thoughts)
+  * [Amazon SimpleDB thoughts](/space/amazon_simpledb_thoughts)
   * [Google App Engine launched](/space/2008-04-07_google_app_engine_launched)
   * [Under the Covers of the App Engine datastore](/space/datastore_talk.html) (slides)
   * [Yahoo! Open Strategy thoughts](/space/2008-12-16-yos_yahoo_open_strategy)
-  * [Yahoo! Query Language thoughts](/space/yql+yahoo+query+language+thoughts)
+  * [Yahoo! Query Language thoughts](/space/yql_yahoo_query_language_thoughts)

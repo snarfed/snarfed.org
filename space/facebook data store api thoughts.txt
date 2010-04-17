@@ -250,10 +250,10 @@ Apart from that twist, the preferences API is fairly straightforward and
 unsurprising.
 
 **See also:**
-  * [Amazon SimpleDB thoughts](/space/amazon+simpledb+thoughts)
+  * [Amazon SimpleDB thoughts](/space/amazon_simpledb_thoughts)
   * [Google App Engine launched](/space/2008-04-07_google_app_engine_launched)
   * [Under the Covers of the App Engine datastore](/space/datastore_talk.html) (slides)
-  * [Windows Azure impressions](/space/windows+azure+impressions)
-  * [Windows Azure details](/space/windows+azure+details)
+  * [Windows Azure impressions](/space/windows_azure_impressions)
+  * [Windows Azure details](/space/windows_azure_details)
   * [Windows Azure: Overview and Impressions](/space/azure_talk.html) (slides)
-  * [Yahoo! Query Language thoughts](/space/yql+yahoo+query+language+thoughts)
+  * [Yahoo! Query Language thoughts](/space/yql_yahoo_query_language_thoughts)

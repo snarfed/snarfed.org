@@ -15,7 +15,7 @@ plain HTML, RSS (0.91 and 2.0), and Atom.
 I've added an [RDF flavour](/space/rdf_flavour.tar.gz) that uses
 [Dublin Core](http://dublincore.org/schemas/xmls/) elements.
 For an example, check out the
-[RDF for this page](/space/pyblosxom+rdf+flavour.rdf).
+[RDF for this page](/space/pyblosxom_rdf_flavour.rdf).
 
 The RDF flavour is copyright 2006 [Ryan Barrett](/space/about), and is
 distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
@@ -25,4 +25,4 @@ See also:
   * [photogallery](/space/filekicker)
   * [hardcodedates](/space/photogallery)
   * [filekicker](/space/filekicker)
-  * [pyblosxom ajax comments](/space/pyblosxom ajax comments)
+  * [pyblosxom ajax comments](/space/pyblosxom_ajax_comments)

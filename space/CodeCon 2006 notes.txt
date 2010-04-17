@@ -6,20 +6,22 @@ went to [CodeCon 2006](http://codecon.org/2006/), and I had a great time. Here
 are my rough, incomplete, unedited notes on the projects presented this year.
 [Dan](http://kodiak.brainymonkey.com/) has also posted [his
 notes](http://kodiak.brainymonkey.com/?m=200602). (If you're interested, I also
-have [notes from CodeCon 2005](/space/CodeCon 2005 notes) and [CodeCon
-2004](/space/CodeCon 2004).)
+have [notes from CodeCon 2005](/space/CodeCon_2005_notes) and [CodeCon
+2004](/space/CodeCon_2004).)
 
 ### [Day 1](#day1)
   * [Daylight Fraud Prevention (server-side phishing prevention)](#dfp)
   * [SiteAdvisor (automated web safety ratings)](#siteadvisor)
   * [VidTorrent (BitTorrent for streaming)](#vidtorrent)
   * [Localhost (p2p filesharing based on ranking)](#localhost)
-  * [Truman (malware sandbox)](# [Day 2](#day2)
+  * [Truman (malware sandbox)](#truman)
+  * [Day 2](#day2)
   * [delta (minimizes input datasets)](#delta)
   * [Djinni (approximating hard problems)](#djinni)
   * [iGlance (p2p videoconferencing and screen sharing)](#iglance)
   * [OASIS (anycast by finding local mirrors)](#oasis)
-  * [Query By Example (just what it sounds like!)](# [Day 3](#day3)
+  * [Query By Example (just what it sounds like!)](#qbe)
+  * [Day 3](#day3)
   * [Dido (dynamic phone menus on asterisk)](#dido)
   * [Deme (group collaboration webapp)](#deme)
   * [UniConf (unified system configuration)](#uniconf)

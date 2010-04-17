@@ -75,13 +75,13 @@ YQL is similar to a number of modern query languages, including
 XPath/XQuery,
 Microsoft's [LINQ](http://en.wikipedia.org/wiki/Language_Integrated_Query),
 Google's [GQL](http://code.google.com/appengine/docs/datastore/gqlreference.html),
-Facebook's [FQL](/space/facebook+data+store+api+thoughts), and the
-query interfaces for [Amazon SimpleDB](/space/amazon+simpledb+thoughts) and
+Facebook's [FQL](/space/facebook_data_store_api_thoughts), and the
+query interfaces for [Amazon SimpleDB](/space/amazon_simpledb_thoughts) and
 [CouchDB](http://couchdb.org/).
 
 Since YQL doesn't actually store data, it's not really a competitor to the
 likes of SimpleDB,
-[Azure tables](/space/windows+azure+details#Tables), or the
+[Azure tables](/space/windows_azure_details#Tables), or the
 [Google App Engine datastore](http://code.google.com/appengine/docs/datastore/).
 Even so, if Yahoo does offer a cloud database in the future, it's a
 good bet that it will support YQL.
@@ -237,11 +237,11 @@ new endpoint with the next version number.
 
 
 **See also:**
-  * [Windows Azure impressions](/space/windows+azure+impressions)
-  * [Windows Azure details](/space/windows+azure+details)
+  * [Windows Azure impressions](/space/windows_azure_impressions)
+  * [Windows Azure details](/space/windows_azure_details)
   * [Windows Azure: Overview and Impressions](/space/azure_talk.html) (slides)
-  * [Facebook Data Store API Thoughts](/space/facebook+data+store+api+thoughts)
-  * [Amazon SimpleDB thoughts](/space/amazon+simpledb+thoughts)
+  * [Facebook Data Store API Thoughts](/space/facebook_data_store_api_thoughts)
+  * [Amazon SimpleDB thoughts](/space/amazon_simpledb_thoughts)
   * [Google App Engine launched](/space/2008-04-07_google_app_engine_launched)
   * [Under the Covers of the App Engine datastore](/space/datastore_talk.html) (slides)
   * [Yahoo! Open Strategy thoughts](/space/2008-12-16-yos_yahoo_open_strategy)

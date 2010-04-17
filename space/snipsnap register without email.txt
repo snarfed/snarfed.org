@@ -64,18 +64,18 @@ Then, add a link to noemail.js:
     <script type="text/javascript" src="/snarfed.js" />
 
 Again, you could edit the JSPs to put this in the <meta> section, but I'm intent
-on avoiding the JSPs, so I just wrote a [macro](/space/snipsnap macros) to
+on avoiding the JSPs, so I just wrote a [macro](/space/snipsnap_macros) to
 insert this tag.
 
 Hope this helps!
 
 See also:
-  * [snipsnap comment without login patch](/space/snipsnap comment without login patch)
-  * [snipsnap macros](/space/snipsnap macros)
-  * [snipsnap recent-changes snip name patch](/space/snipsnap recent-changes snip name patch)
-  * [snipsnap script macro and python](/space/snipsnap script macro and python)
-  * [servlets with snipsnap](/space/servlets with snipsnap)
-  * [virtual host redirection](/space/virtual host redirection)
-  * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap 1.0b1 virtual hostname patch)
+  * [snipsnap comment without login patch](/space/snipsnap_comment_without_login_patch)
+  * [snipsnap macros](/space/snipsnap_macros)
+  * [snipsnap recent-changes snip name patch](/space/snipsnap_recent-changes_snip_name_patch)
+  * [snipsnap script macro and python](/space/snipsnap_script_macro_and_python)
+  * [servlets with snipsnap](/space/servlets_with_snipsnap)
+  * [virtual host redirection](/space/virtual_host_redirection)
+  * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap_1.0b1_virtual_hostname_patch)
   * [snipscrape](/space/snipscrape)
 

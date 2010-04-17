@@ -98,11 +98,11 @@ in [wget](http://wget.sunsite.dk/) that prevents `--html-extension` and
 
   * Write an [OpenID](http://openid.net/) plugin for
 [PyBlosxom](http://pyblosxom.sf.net/). **\[_Done! See
-[OpenID server plugin for PyBlosxom](/space/pyblosxom+openid+server)._]**
+[OpenID server plugin for PyBlosxom](/space/pyblosxom_openid_server)._]**
 
   * Write a [Google Ajax Search API](http://code.google.com/apis/ajaxsearch/)
 plugin for [PyBlosxom](http://pyblosxom.sf.net/). **\[_Done! See
-[site search with the Google AJAX Search API](/space/site+search+with+the+Google+AJAX+Search+API)._]**
+[site search with the Google AJAX Search API](/space/site_search_with_the_Google_AJAX_Search_API)._]**
 
   * Add support for
 [comments](http://pyblosxom.sourceforge.net/blog/registry/input/comments) to
@@ -126,7 +126,7 @@ Metaverse Project](http://metaverse.sourceforge.net/). It'd probably be based on
 they can comment. Alas, this discourages commenting. Add support for one-time
 comments a la [WordPress](http://wordpress.org/) and
 [Blogger](http://blogger.com). **\[_Done! See [snipsnap comment without login
-patch](/space/snipsnap comment without login patch)._]**
+patch](/space/snipsnap_comment_without_login_patch)._]**
 
   * Work on [Beagle](http://beagle-project.org/) (formerly
 [Dashboard](http://nat.org/dashboard/)), which is wicked cool, or
@@ -142,7 +142,7 @@ another network distance algorithm. Write a portable implementation and package
 it as an easy-to-use library for app developers. P2P overlay networks might be a
 good initial target audience.
 
-  * Write elisp for [filling code in Emacs](/space/filling code in Emacs). This
+  * Write elisp for [filling code in Emacs](/space/filling_code_in_Emacs). This
 is my single biggest wished-for Emacs feature. **\[_Done! See
 [fillcode](/space/fillcode)._]**
 
@@ -162,7 +162,7 @@ this._]**
 Readline](http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html) with [ANSI
 color codes](http://www.termsys.demon.co.uk/vtansi.htm#colors). For example,
 highlight the current region (when one exists), highlight the search string in
-incremental search, etc. **\[_Done! See [tcsh highlighting patch](/space/tcsh highlighting patch)._]**
+incremental search, etc. **\[_Done! See [tcsh highlighting patch](/space/tcsh_highlighting_patch)._]**
 
   * Add
 [delete-selection-mode](http://www.emacswiki.org/cgi-bin/wiki/DeleteSelectionMode)
@@ -172,7 +172,7 @@ Readline](http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html). **\[_Done!
 shell-mode](http://gnu.org/software/emacs/manual/html_node/Shell-Mode.html) does
 this._]**
 
-  * [Referrer spam](/space/Referrer spam) is evil. Extend [Tony
+  * [Referrer spam](/space/Referrer_spam) is evil. Extend [Tony
 Buser](http://juju.org/)'s
 [derefspam](http://www.juju.org/archives/2005/01/21/derefspam) script to use
 DNSBLs and RBLs like [Spamhaus](http://www.spamhaus.org/xbl/index.lasso),
@@ -223,16 +223,16 @@ blocks for distributed systems, but their APIs are weak. Most only provide the
 functionality of a hashtable - gets and puts of key/value pairs. Write a
 tuplespace implementation that uses a DHT as its backing store - the best of
 both worlds!
-\[**_Done! [Amazon SimpleDB](/space/amazon+simpledb+thoughts) beat me to it._**]
+\[**_Done! [Amazon SimpleDB](/space/amazon_simpledb_thoughts) beat me to it._**]
 
   * Write [pine patches](/space/software#patches) to make
 saving messages smarter. When saving, pine should [remove trailing
-quotes](/space/pine+remove+trailing+quote+patch), remove the HTML parts of MIME
+quotes](/space/pine_remove_trailing_quote_patch), remove the HTML parts of MIME
 multipart messages, render HTML-only messages as text and save the text instead,
 offer to delete attachments, and save the attachment filename in the deletion
 note. Details in [this email
 thread](http://mailman1.u.washington.edu/pipermail/pine-info/2005-June/042260.html).
-\[**_Done! See [pine delete attachments on save patch](/space/pine delete attachments on save patch) and [pine remove trailing quote patch](/space/pine remove trailing quote patch)._**]
+\[**_Done! See [pine delete attachments on save patch](/space/pine_delete_attachments_on_save_patch) and [pine remove trailing quote patch](/space/pine_remove_trailing_quote_patch)._**]
 
   * I use [GeoBytes](http://geobytes.com/) to do [geocoding](/space/geocoding)
 on my [voyeurism](/ryan.barrett.name/voyeurism.html) page. It's great,
@@ -251,12 +251,12 @@ First, add specs for more tools like pgrep, identify, tar, jar, etc. Then,
 extend acoc to detect columnar text output and color accordingly, especially
 columns that are enums. Finally, maybe extend it to recognize common data types
 like dates, and color accordingly. \[**_Done! Partially. See [acoc.conf for
-context diffs](/space/acoc.conf for context diffs)._**]
+context diffs](/space/acoc.conf_for_context_diffs)._**]
 
   * Write [GreaseMonkey](http://greasemonkey.mozdev.org/) scripts for GMail to
-address the [reasons I haven't switched from Pine](/space/gmail+vs+pine).
+address the [reasons I haven't switched from Pine](/space/gmail_vs_pine).
 Specifically, add more keyboard shortcuts, cursor management, and [trailing
-quotes](/space/pine+remove+trailing+quote+patch). (Inspired by [Humane Gmail
+quotes](/space/pine_remove_trailing_quote_patch). (Inspired by [Humane Gmail
 autosave](http://hirevito.com/greasemonkey/humanegmailautosave.html) and Mihai
 Parparita's
 [skinning](http://persistent.info/archives/2004/10/05/gmail-skinning),
@@ -276,13 +276,13 @@ authentication to Python's
   * Use the newly GSSAPI-capable imaplib to rewrite
 [folderstat](/space/folderstat) so it can talk to my mail server.
 
-  * Work on [synchronizing mp3 playback](/space/synchronizing mp3 playback). We
+  * Work on [synchronizing mp3 playback](/space/synchronizing_mp3_playback). We
 [took a stab](/space/p4) at this a while ago, and it was technically sound, but
 it wasn't very usable. I'm currently working on simplifying it and making it
 work with more MP3 players on different platforms. Bonus points: support
 [Bonjour](http://developer.apple.com/darwin/projects/bonjour/) (aka
 [ZeroConf](http://zeroconf.org/)). **\[_Done...as much as it can be. See
-[p4sync](/space/synchronizing mp3 playback)._]**
+[p4sync](/space/synchronizing_mp3_playback)._]**
 
   * Add internet multiplayer to
 [Baku Baku](http://en.wikipedia.org/wiki/Baku_Baku_Animal),

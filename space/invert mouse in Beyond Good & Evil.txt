@@ -2,7 +2,7 @@ invert mouse in Beyond Good &amp; Evil
 [![/space/two.jpg](/space/two.jpg)](http://beyondgoodevil.com/)[![/space/box.jpg](/space/box.jpg)](http://beyondgoodevil.com/)[![/space/explosion.jpg](/space/explosion.jpg)](http://beyondgoodevil.com/)
 
 _If you like Beyond Good & Evil, you might also like [my
-writeup](/space/2004-11-11) and the [soundtrack](/space/Beyond Good & Evil soundtrack)._
+writeup](/space/2004-11-11) and the [soundtrack](/space/Beyond_Good_&_Evil_soundtrack)._
 
 **Problem**
 
@@ -66,6 +66,6 @@ you script and remap mouse, keyboard, and joystick input. It inverts the mouse
 per-axis successfully, but doesn't affect DirectInput apps.
 
 See also:
-  * [thinkpad keys in firefox](/space/thinkpad keys in firefox)
-  * [windows media player database](/space/windows media player database)
+  * [thinkpad keys in firefox](/space/thinkpad_keys_in_firefox)
+  * [windows media player database](/space/windows_media_player_database)
 

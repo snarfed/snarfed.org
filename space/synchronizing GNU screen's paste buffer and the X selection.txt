@@ -12,7 +12,7 @@ everything I need to with the keyboard. The only thing I _can't_ do with the
 keyboard is copy text from a terminal. And that irks me.
 
 In the past, this has driven me to desperate measures, including [running shells
-inside Emacs](/space/why I don't run shells inside Emacs). I currently use [GNU
+inside Emacs](/space/why_I_don't_run_shells_inside_Emacs). I currently use [GNU
 screen](http://www.gnu.org/software/screen/)'s [copy/scrollback
 mode](http://www.delorie.com/gnu/docs/screen/screen_73.html), with a hack to
 integrate it with X Windows' clipboard.
@@ -32,11 +32,11 @@ xsel](http://www.niksula.cs.hut.fi/~vherva/xsel/)), which needs to be somewhere
 in your PATH.
 
 See also:
-  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs keybindings in GNU screen's copy-scrollback mode)
-  * [why I don't run shells inside Emacs](/space/why I don't run shells inside Emacs)
+  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs_keybindings_in_GNU_screen's_copy-scrollback_mode)
+  * [why I don't run shells inside Emacs](/space/why_I_don't_run_shells_inside_Emacs)
   * [RatPoison Wiki: mouseless
 paste](http://ratpoison.elektrubadur.se/mouseless_paste)
-  * [autocutsel clipboard and primary patch](/space/autocutsel clipboard and primary patch)
-  * [control arrow keys in rxvt, tcsh, and emacs](/space/control arrow keys in rxvt, tcsh, and emacs)
-  * [Emacs and remote X Windows](/space/Emacs and remote X Windows)
+  * [autocutsel clipboard and primary patch](/space/autocutsel_clipboard_and_primary_patch)
+  * [control arrow keys in rxvt, tcsh, and emacs](/space/control_arrow_keys_in_rxvt,_tcsh,_and_emacs)
+  * [Emacs and remote X Windows](/space/Emacs_and_remote_X_Windows)
 

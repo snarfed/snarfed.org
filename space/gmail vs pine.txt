@@ -101,18 +101,18 @@ sense...but that's a pretty odd perspective.
   * Gmail might be smart about (not) displaying quoted text, but it can't handle
 _composing_ with quoted text to save its life. There are a ton of problems with
 this, but among others, it needs a way to [remove trailing quotes when
-sending](/space/pine+remove+trailing+quote+patch). (OK, to be fair, I doubt this
+sending](/space/pine_remove_trailing_quote_patch). (OK, to be fair, I doubt this
 feature is in high demand.)
 
 See also:
 
-  * [pine delete attachments on save patch](/space/pine delete attachments on save patch)
+  * [pine delete attachments on save patch](/space/pine_delete_attachments_on_save_patch)
 
-  * [pine flowed-text patch](/space/pine flowed-text patch)
+  * [pine flowed-text patch](/space/pine_flowed-text_patch)
 
-  * [pine remove trailing quote patch](/space/pine remove trailing quote patch)
+  * [pine remove trailing quote patch](/space/pine_remove_trailing_quote_patch)
 
-  * [pine reply-all patch](/space/pine reply-all patch)
+  * [pine reply-all patch](/space/pine_reply-all_patch)
 
   * [port\_pine\_patch](/space/port_pine_patch)
 

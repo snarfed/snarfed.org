@@ -14,17 +14,17 @@ in Silicon Valley and San Francisco. Also see
 [software](/space/software),
 [lists](/space/lists).
 
-email: _[public at ryanb dot org](mailto:public at ryanb dot org)_  
+email: _[public at ryanb dot org](mailto:public_at_ryanb_dot_org)_  
 Jabber: _[heaven@gmail](xmpp:heaven@gmail.com)_  
 AIM: _[bl4ize](aim:goim?screenname=bl4ize)_  
 ICQ: _[1471094](http://wwp.icq.com/1471094)_  
 
 I've been posting to this web site on and off since early 2002. For more, see
-[snarfed.org's history](/space/snarfed.org+history) and [copyright](/space/copyright).
+[snarfed.org's history](/space/snarfed.org_history) and [copyright](/space/copyright).
 
 snarfed.org runs on [PyBlosxom](http://pyblosxom.sf.net/) and
 [Apache](http://httpd.apache.org/), with a custom PyBlosxom
-[flavour](/space/snarfed.org+PyBlosxom+flavour) and
+[flavour](/space/snarfed.org_PyBlosxom_flavour) and
 [plugins](/space/software). snarfed.org is hosted at
 [pair.com](http://pair.com/) on a
 [shared FreeBSD server](http://pair.com/services/web_hosting/).

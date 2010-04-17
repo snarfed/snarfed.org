@@ -87,11 +87,11 @@ openid_server.py is copyright 2006 [Ryan Barrett](/space/about), and is
 distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
 
 See also:
-  * [pyblosxom openid comments](/space/pyblosxom+openid+comments)
-  * [pyblosxom ajax comments](/space/pyblosxom+ajax+comments)
-  * [windows p2p](/space/windows+p2p)
-  * [pyblosxom index](/space/pyblosxom+index)
-  * [pyblosxom history](/space/pyblosxom+history)
+  * [pyblosxom openid comments](/space/pyblosxom_openid_comments)
+  * [pyblosxom ajax comments](/space/pyblosxom_ajax_comments)
+  * [windows p2p](/space/windows_p2p)
+  * [pyblosxom index](/space/pyblosxom_index)
+  * [pyblosxom history](/space/pyblosxom_history)
   * [photogallery](/space/photogallery)
   * [hardcodedates](/space/hardcodedates)
   * [filekicker](/space/filekicker)

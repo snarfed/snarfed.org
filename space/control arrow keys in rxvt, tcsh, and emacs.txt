@@ -39,17 +39,17 @@ that use readline:
 
 Now control and the arrow keys should skip words, like god intended, even inside
 your terminal! This is especially useful when I'm ssh'ed into remote, headless
-servers, and using my [minimal .emacs for fast startup](/space/minimal .emacs for fast startup).
+servers, and using my [minimal .emacs for fast startup](/space/minimal_.emacs_for_fast_startup).
 
 I made a halfhearted attempt to find xterm's keycodes for Control-Left and
 Control-Right, but they eluded me. C-h k (ie describe-key) in emacs doesn't even
 catch them at all!
 
 See also:
-  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs keybindings in GNU screen's copy-scrollback mode)
-  * [Emacs keybindings with number keys](/space/emacs+keybindings+with+number+keys)
-  * [Emacs keybindings in firefox](/space/emacs+keybindings+in+firefox)
-  * [Emacs and remote X Windows](/space/emacs+and+remote+X+Windows)
+  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs_keybindings_in_GNU_screen's_copy-scrollback_mode)
+  * [Emacs keybindings with number keys](/space/emacs_keybindings_with_number_keys)
+  * [Emacs keybindings in firefox](/space/emacs_keybindings_in_firefox)
+  * [Emacs and remote X Windows](/space/emacs_and_remote_X_Windows)
   * [Terminals and Keymapping](http://www.white.nu/~jwhite/keymapping/)
 [white.nu]
   * [Rxvt Technical
