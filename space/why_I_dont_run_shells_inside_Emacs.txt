@@ -149,7 +149,7 @@ See also:
 selection](/space/synchronizing_GNU_screens_paste_buffer_and_the_X_selection)
   * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs_keybindings_in_GNU_screens_copy-scrollback_mode)
   * [acoc.conf for context diffs](/space/acoc.conf_for_context_diffs)
-  * [control arrow keys in rxvt, tcsh, and emacs](/space/control_arrow_keys_in_rxvt,_tcsh,_and_emacs)
+  * [control arrow keys in rxvt, tcsh, and emacs](/space/control_arrow_keys_in_rxvt_tcsh_and_emacs)
   * [tcsh highlighting patch](/space/tcsh_highlighting_patch)
   * [remove tcsh globbing in history search](/space/remove_tcsh_globbing_in_history_search)
   * [tcsh delete moves mark bug fix](/space/tcsh_delete_moves_mark_bug_fix)
