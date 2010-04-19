@@ -1,0 +1,97 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+<meta name="ICBM" content="37.448089,-122.159259"></meta>
+<meta name="DC.title" content="Ryan Barrett"></meta> 
+
+<script type="text/javascript" src="browserdetect.js"></script>
+<script type="text/javascript" src="buttons.js"></script>
+<script type="text/javascript" src="content.js"></script>
+
+<link type="text/css" rel="stylesheet" href="content.css" />
+<link type="text/css" rel="stylesheet" href="header.css" />
+
+<link rel="shortcut icon" href="rb.ico" />
+<link rel="icon" href="rb.png" type="image/png" />
+
+<title> ryan barrett </title>
+</head>
+
+<body>
+<!-- top black strip -->
+<div class="top-strip"></div>
+
+<!-- caption strip - "ryan barrett" caption -->
+<div class="caption-strip">
+<a class="caption" href="index.html"> ryan barrett </a>
+</div>
+
+<!-- button strip - each button links to one of the content pages -->
+<div class="buttonstrip">
+  <p id="currentpage"> about </p>
+  <p id="buttons">
+    <!-- these tags are > 80 columns so that make.sh's sed will work -->
+    <a href="contact.html">
+      <img class="button" id="maroon" src="maroon_off.png" alt="contact" onmouseout="unhover()" onmouseover="hover('maroon')" /></a>
+    <a href="voyeurism.shtml">
+      <img class="button" id="orange" src="orange_off.png" alt="voyeurism" onmouseout="unhover()" onmouseover="hover('orange')" /></a>
+    <a href="people.html">
+      <img class="button" id="yellow" src="yellow_off.png" alt="people" onmouseout="unhover()" onmouseover="hover('yellow')" /></a>
+    <a href="projects.html">
+      <img class="button" id="green" src="green_off.png" alt="projects" onmouseout="unhover()" onmouseover="hover('green')" /></a>
+    
+      <img class="button" id="cyan" src="cyan_on.png" alt="about" />
+    <span id="buttonlabel"> &nbsp; </span>
+  </p>
+</div>
+
+<div class="content" id="about">
+
+<p class="about">
+This site is archived. It's no longer maintained.
+<br /><br />
+
+It uses
+<a href="http://validator.w3.org/check?uri=http://ryan.barrett.name/">
+ XHTML</a>,
+<a href="http://jigsaw.w3.org/css-validator/validator?uri=http://ryan.barrett.name/">
+ CSS</a>, and
+<a href="http://www.ecma.ch/publications/standards/ECMA-262.htm">
+ JavaScript</a>. On the
+<a href="voyeurism.html"> voyeurism page</a>,
+the "Ryan is" blurb is my
+<a href="http://www.aim.com"> AIM </a>
+away message, set by
+<a href="http://snarfed.org/space/bigbrother"> bigbrother</a>.
+The current song is set by
+<a href="http://www.xmms.org"> XMMS</a>,
+and the desktop snapshot is taken by
+<a href="http://www.imagemagick.org/"> ImageMagick</a>.
+Your IP address and hostname come from a
+<a href="http://java.sun.com/products/jsp/"> JSP</a>,
+and your location is provided by
+<a href="http://geobytes.com/GeoPhrase.htm"> GeoBytes</a>.
+<br /><br />
+
+Copyright 2002-2008 Ryan Barrett. Licensed under the 
+<a href="http://creativecommons.org/licenses/by/2.0/">
+Creative Commons</a>.
+</p>
+
+</div>
+
+<!-- this is only shown in browsers that don't support CSS -->
+<p class="ahem">
+ WARNING! Your browser is <b>OLD</b> and does not support
+ <a href="http://webstandards.org/upgrade/"> web standards. </a>
+ Please <a href="http://webstandards.org/upgrade/"> upgrade. </a>
+</p>
+
+<!-- bottom line (needed for everything except motd) -->
+<div id="bottomline"></div>
+
+</body>
+</html>

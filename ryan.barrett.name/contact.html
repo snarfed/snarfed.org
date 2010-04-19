@@ -1,0 +1,93 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
+<meta name="ICBM" content="37.448089,-122.159259"></meta>
+<meta name="DC.title" content="Ryan Barrett"></meta> 
+
+<script type="text/javascript" src="browserdetect.js"></script>
+<script type="text/javascript" src="buttons.js"></script>
+<script type="text/javascript" src="content.js"></script>
+
+<link type="text/css" rel="stylesheet" href="content.css" />
+<link type="text/css" rel="stylesheet" href="header.css" />
+
+<link rel="shortcut icon" href="rb.ico" />
+<link rel="icon" href="rb.png" type="image/png" />
+
+<title> ryan barrett </title>
+</head>
+
+<body>
+<!-- top black strip -->
+<div class="top-strip"></div>
+
+<!-- caption strip - "ryan barrett" caption -->
+<div class="caption-strip">
+<a class="caption" href="index.html"> ryan barrett </a>
+</div>
+
+<!-- button strip - each button links to one of the content pages -->
+<div class="buttonstrip">
+  <p id="currentpage"> contact </p>
+  <p id="buttons">
+    <!-- these tags are > 80 columns so that make.sh's sed will work -->
+    
+      <img class="button" id="maroon" src="maroon_on.png" alt="contact" />
+    <a href="voyeurism.shtml">
+      <img class="button" id="orange" src="orange_off.png" alt="voyeurism" onmouseout="unhover()" onmouseover="hover('orange')" /></a>
+    <a href="people.html">
+      <img class="button" id="yellow" src="yellow_off.png" alt="people" onmouseout="unhover()" onmouseover="hover('yellow')" /></a>
+    <a href="projects.html">
+      <img class="button" id="green" src="green_off.png" alt="projects" onmouseout="unhover()" onmouseover="hover('green')" /></a>
+    <a href="about.html">
+      <img class="button" id="cyan" src="cyan_off.png" alt="about" onmouseout="unhover()" onmouseover="hover('cyan')" /></a>
+    <span id="buttonlabel"> &nbsp; </span>
+  </p>
+</div>
+
+<div class="content" id="contact">
+<table class="contact"><tr>
+
+<td class="address">
+ryan barrett <br />
+1600 amphitheatre parkway <br />
+mountain view, ca 94043 <br />
+<a href="ryan.jpg"> picture </a>
+</td>
+
+<td class="separator"></td>
+
+<td class="labels">
+email <br />
+IM <br />
+resume <br />
+PGP key <br />
+</td>
+
+<td class="values">
+<a href="mailto:public at ryanb dot org"> public at ryanb dot org</a><br />
+<a href="aim:goim?screenname=bl4ize"> bl4ize</a>,
+<a href="http://wwp.icq.com/1471094"> 1471094</a>,
+<a href="xmpp:heaven@gmail.com"> heaven</a><br />
+<a href="/space/resume.html"> html</a>, <a href="/space/resume.txt"> txt </a><br />
+<a href="http://pgp.mit.edu:11371/pks/lookup?op=get&search=0x4776E9D4">
+ 0x4776E9D4 </a>
+</td>
+
+</tr></table>
+</div>
+<!-- this is only shown in browsers that don't support CSS -->
+<p class="ahem">
+ WARNING! Your browser is <b>OLD</b> and does not support
+ <a href="http://webstandards.org/upgrade/"> web standards. </a>
+ Please <a href="http://webstandards.org/upgrade/"> upgrade. </a>
+</p>
+
+<!-- bottom line (needed for everything except motd) -->
+<div id="bottomline"></div>
+
+</body>
+</html>
