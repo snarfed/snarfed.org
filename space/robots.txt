@@ -3,9 +3,6 @@
 #
 User-agent: *
 
-# front is modest. :P
-# Disallow: /space/Maulik's%20Visit%202004/scaled-images-pictures/
-
 # don't index change history, rdf, or raw entries. (this is nonstandard; it only
 # works w/google.)
 Disallow: /space/*.txt
