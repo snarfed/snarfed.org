@@ -34,7 +34,7 @@ Haiping, in _italics_. Feel free to [add your own](#comment-anchor)!
 The Facebook data store is a very simple hosted database, accessible
 by a
 [RESTful](http://en.wikipedia.org/wiki/Representational_State_Transfer)
-[CRUD](http://en.wikipedia.org/wiki/CRUD_(acronym\)) API. It supports both XML and JSON. It requires users to define their schema, and has basic create, read, update, and
+[CRUD](http://en.wikipedia.org/wiki/CRUD_\(acronym\)) API. It supports both XML and JSON. It requires users to define their schema, and has basic create, read, update, and
 delete operations, but no structured queries, full text search, or transactions.
 
 The one truly interesting feature it does provide is
