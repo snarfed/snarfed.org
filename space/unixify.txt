@@ -8,9 +8,12 @@ unixify
 often from other operating systems.
 
 It cleans up file names by removing most punctuation and converting spaces to
-underscores and upper case to lower case. It also re-compresses images with
-[ImageMagick](http://www.imagemagick.org/) and converts Microsoft Word
-documents to plain text with [antiword](http://www.winfield.demon.nl/).
+underscores and upper case to lower case. For example, it converts
+*Foo, Bar, & Baz (Special).JPEG* to *foo_bar_and_baz_special.jpg*.
+
+It also re-compresses images with [ImageMagick](http://www.imagemagick.org/)
+and converts Microsoft Word documents to plain text with
+[antiword](http://www.winfield.demon.nl/).
 
 Here's the script:
 
