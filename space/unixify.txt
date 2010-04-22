@@ -1,0 +1,46 @@
+unixify
+
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <img src="/space/unix.jpg" />
+</div>
+
+*unixify.sh* is a simple shell script I use to sanitize files people send me,
+often from other operating systems. It primarily cleans up their file names by
+removing most punctuation and converting spaces to underscores and upper case
+to lower case. It also re-compresses images with
+[ImageMagick](http://www.imagemagick.org/) and converts Microsoft Word
+documents to plain text with [antiword](http://www.winfield.demon.nl/).
+
+Here's the script:
+
+    #!/bin/bash
+    
+    # check args
+    if [[ $# = "0" || $1 = "--help" ]]; then
+      echo 'Usage: unixify.sh FILES...'
+      exit 1
+    fi
+    
+    unset noclobber
+    
+    for file in "$@"; do
+      # clean filename
+      newfile=`rename -v 'y/ /_/; s/[,\[\]()]//g; s/&/and/g; y/A-Z/a-z/; s/\.jpeg$/.jpg/' "$file"`
+    
+      if [[ $newfile =~ ' renamed as ' ]]; then
+        file=${newfile/* renamed as /}
+      fi
+    
+      if [[ $file =~ \.(gif|jpg|png)$ ]]; then
+        # optimize images
+        convert $file $file
+      elif [[ $file =~ \.doc$ ]]; then
+        # convert word docs to text
+        antiword $file > `basename $file .doc`.txt
+      fi
+    
+      if [[ `file -b $file` =~ text,.*with\ CRLF ]]; then
+        # remove any carriage returns
+        sed --in-place 's/\r//g' $file
+      fi
+    done
