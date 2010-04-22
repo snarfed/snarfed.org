@@ -9,6 +9,9 @@ Also see [other lists](/space/lists).
 <a name="projects"></a>
 ### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](#projects)
 
+  * [unixify.sh](/space/unixify) is a simple shell script I use to sanitize
+filenames and files people send me from other operating systems.
+
   * [backup_google.sh](/space/backup_google) is a shell script
     that backs up data from Google
 [Contacts](http://www.google.com/contacts),
