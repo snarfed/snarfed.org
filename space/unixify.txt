@@ -5,9 +5,10 @@ unixify
 </div>
 
 *unixify.sh* is a simple shell script I use to sanitize files people send me,
-often from other operating systems. It primarily cleans up their file names by
-removing most punctuation and converting spaces to underscores and upper case
-to lower case. It also re-compresses images with
+often from other operating systems.
+
+It cleans up file names by removing most punctuation and converting spaces to
+underscores and upper case to lower case. It also re-compresses images with
 [ImageMagick](http://www.imagemagick.org/) and converts Microsoft Word
 documents to plain text with [antiword](http://www.winfield.demon.nl/).
 
