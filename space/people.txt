@@ -1,6 +1,8 @@
 people
 
-[![/space/people.jpg](/space/people.jpg)](/space/people)
+<div class="img" style="float: right; margin-left: 10px">
+  <a href="/space/people"><img src="/space/people.jpg" /></a>
+</div>
 
 [Ken Ashcraft](http://keeda.stanford.edu/~kash/)
 

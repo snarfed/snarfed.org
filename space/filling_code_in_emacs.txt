@@ -1,4 +1,5 @@
 filling code in emacs
+
 [![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)[Emacs](http://gnu.org/software/emacs)
 has a massive feature set, and there's also an endless supply of
 [elisp](http://gnu.org/software/emacs/emacs-lisp-intro/html_node/index.html) out

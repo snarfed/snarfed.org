@@ -109,17 +109,17 @@ door...
 
     {script}
     import sys
-    sys.add\_package('org.snipsnap.snip')
+    sys.add_package('org.snipsnap.snip')
     from org.snipsnap.snip import SnipSpaceFactory
 
     factory = SnipSpaceFactory.getInstance()
     ats = factory.load(str(snip)).getAttachments().getAll()
-    at\_names = ', '.join([a.getName() for a in ats])
+    at_names = ', '.join([a.getName() for a in ats])
 
     print """
        This snip is called **%s**.
        Its attachments are **%s**.
-    """ % (snip, at\_names)
+    """ % (snip, at_names)
     {script}
 
 This script prints the snip name _and_ the file names of each attachment. Ah,

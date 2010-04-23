@@ -1,5 +1,6 @@
-remote
-[![/space/remote_thumb.jpg](/space/remote_thumb.jpg)](/space/remote.jpg)
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <a href="/space/remote.jpg"><img src="/space/remote_thumb.jpg" /></a>
+</div>
 
 For the impatient:  
 [Download remote (with source)](/space/remote.zip)  

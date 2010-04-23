@@ -1,5 +1,8 @@
 resize google calendar
-[![google calendar](/space/google_calendar.jpg)](http://calendar.google.com/)
+
+<div class="img" style="float: right; margin-left: 10px">
+  <a href="http://calendar.google.com/"><img src="/space/google_calendar.jpg" /></a>
+</div>
 
 I use paper for my personal calendar, but at work, I use
 [Google Calendar](http://calendar.google.com/).

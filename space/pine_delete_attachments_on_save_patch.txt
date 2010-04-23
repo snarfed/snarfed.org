@@ -1,5 +1,8 @@
 pine delete attachments on save patch
-[![pine.png](/space/pine.png)](http://washington.edu/pine/)
+
+<div class="img" style="float: right; margin-left: 10px">
+  <a href="http://washington.edu/pine/"><img src="/space/pine.png" /></a>
+</div>
 
 For the impatient:  
 Patch for Pine

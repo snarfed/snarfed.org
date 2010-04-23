@@ -1,5 +1,6 @@
-ion
-[![/space/ion.jpg](/space/ion.jpg)](/space/ion)
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <a href="/space/ion"><img src="/space/ion.jpg" /></a>
+</div>
 
 I use [Ion](http://iki.fi/~tuomov/ion/) as my
 window manager, and I love it. It's written by [Tuomo

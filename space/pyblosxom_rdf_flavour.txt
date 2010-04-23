@@ -1,6 +1,8 @@
 pyblosxom rdf flavour
 
-[![pyblosxom](/space/pyblosxom.jpg)](http://pyblosxom.sf.net/)
+<div class="img" style="float: right; margin-left: 10px">
+  <a href="http://pyblosxom.sf.net/"><img src="/space/pyblosxom.jpg" /></a>
+</div>
 
 For the impatient:  
 &nbsp; [Download rdf_flavour.tar.gz](/space/rdf_flavour.tar.gz)  

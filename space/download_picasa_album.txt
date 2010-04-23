@@ -1,5 +1,8 @@
 download_picasa_album.sh
-[![picasaweb.png](/space/picasaweb.png)](http://picasaweb.google.com/)
+
+<div class="img" style="float: right; margin-left: 10px">
+  <a href="http://picasaweb.google.com/"><img src="/space/picasaweb.png" /></a>
+</div>
 
 [download\_picasa_album.sh](/space/download_picasa_album.sh) is a simple little
 shell script that downloads entire photo albums from

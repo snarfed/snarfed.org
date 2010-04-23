@@ -1,4 +1,7 @@
 ryan
-[![ryan](/space/ryan_small.jpg)](/space/about)
+
+<div class="img" style="float: right; margin-left: 10px">
+  <a href="/space/about"><img src="/space/ryan_small.jpg" /></a>
+</div>
 
 See [about](/space/about).

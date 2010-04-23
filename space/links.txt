@@ -1,5 +1,8 @@
 links
-[![/space/chain.jpg](/space/chain.jpg)](/space/links)
+
+<div class="img" style="float: right; margin-left: 10px">
+  <a href="/space/links"><img src="/space/chain.jpg" /></a>
+</div>
 
 We think these sites are cool.
 

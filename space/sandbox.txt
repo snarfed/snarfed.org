@@ -1,4 +1,5 @@
 sandbox
+
 {script} from java.util import Date print Date().toString() {script}
 
 {script} import sys sys.add\_package('org.snipsnap.snip') from org.snipsnap.snip

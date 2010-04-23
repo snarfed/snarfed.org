@@ -1,5 +1,8 @@
 gnu emacs backup files
-[![/space/gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)
+
+<div class="img" style="float: right; margin-left: 10px">
+  <a href="http://gnu.org/software/emacs/"><img src="/space/gnu.jpg" /></a>
+</div>
 
 I use [GNU
 Emacs](http://gnu.org/software/emacs/), and I love it. However, one annoyance is
@@ -15,7 +18,7 @@ place. Here's the
     ;; Put autosave files (ie #foo#) in one place, *not*
     ;; scattered all over the file system!
     (defvar autosave-dir
-     (concat "/tmp/emacs\_autosaves/" (user-login-name) "/"))
+     (concat "/tmp/emacs_autosaves/" (user-login-name) "/"))
 
     (make-directory autosave-dir t)
 
@@ -32,7 +35,7 @@ place. Here's the
     ;; Put backup files (ie foo~) in one place too. (The backup-directory-alist
     ;; list contains regexp=>directory mappings; filenames matching a regexp are
     ;; backed up in the corresponding directory. Emacs will mkdir it if necessary.)
-    (defvar backup-dir (concat "/tmp/emacs\_backups/" (user-login-name) "/"))
+    (defvar backup-dir (concat "/tmp/emacs_backups/" (user-login-name) "/"))
     (setq backup-directory-alist (list (cons "." backup-dir)))
 
 ...and, courtesy of [Amit Patel](http://www-cs-students.stanford.edu/~amitp/),

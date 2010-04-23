@@ -1,4 +1,5 @@
 album
+
 ![/space/album.jpg](/space/album.jpg)**About**
 
 We've created a simple macro that creates a photo album interface for pictures.
@@ -30,7 +31,7 @@ Where albumDirName is a directory in your application's images directory.
 Default thumbnail size is 240px and default web-size is 800px. if you'd like to
 change them, you can specify those as parameters like so:
 
-    {make-album:albumDirName|thumb\_size|web\_size}
+    {make-album:albumDirName|thumb_size|web_size}
 
 Where thumb\_size and web\_size are integers.
 

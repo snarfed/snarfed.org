@@ -1,5 +1,8 @@
 backup subversion fsfs with rsync
-[![/space/subversion.png](/space/subversion.png)](http://subversion.tigris.org/)
+
+<div class="img" style="float: right; margin-left: 10px">
+  <a href="http://subversion.tigris.org/"><img src="/space/subversion.png" /></a>
+</div>
 
 I use
 [Subversion](http://subversion.tigris.org/) for source control, and it's great.

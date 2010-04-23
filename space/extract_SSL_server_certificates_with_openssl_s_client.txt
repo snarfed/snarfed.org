@@ -1,5 +1,8 @@
 extract SSL server certificates with openssl s_client
-[![/space/ssl_lock.jpg](/space/ssl_lock.jpg)](http://www.openssl.org/docs/apps/s_client.html)
+
+<div class="img" style="float: right; margin-left: 10px">
+  <a href="http://www.openssl.org/docs/apps/s_client.html"><img src="/space/ssl_lock.jpg" /></a>
+</div>
 
 Ever
 need to troubleshoot SSL connectivity against a server that you don't own? No
@@ -16,7 +19,7 @@ For example, say you're troubleshooting a connection to
 line to connect on port 443 and examine the SSL handshake and server-side
 certificate:
 
-    openssl s\_client -connect example.com:443
+    openssl s_client -connect example.com:443
 
 Happy authenticating!
 

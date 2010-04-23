@@ -1,4 +1,5 @@
 linking libraries with mozilla xpcom
+
 [![/space/mozilla.png](/space/mozilla.png)](http://mozilla.org/mozilla1.x/)[![ff_icon.png](/space/ff_icon.png)](http://mozilla.org/firefox/)[![/space/camino.png](/space/camino.png)](http://mozilla.org/camino/)[![/space/thunderbird.jpg](/space/thunderbird.jpg)](http://mozilla.org/thunderbird/)[![/space/bugzilla.jpg](/space/bugzilla.jpg)](http://bugzilla.org/)
 
 I've
@@ -18,8 +19,8 @@ stage. I used the [example XPCOM
 Makefile](http://books.mozdev.org/html/mozilla-chp-8-sect-2.html#mozilla-CHP-8-SECT-2.6.1),
 and edited the EXTRA\_DSO\_LDOPTS line to look like this:
 
-    EXTRA\_DSO\_LDOPTS += \
-      $(MOZ\_COMPONENT\_LIBS) -lX11 -L/usr/X11R6/lib
+    EXTRA_DSO_LDOPTS += \
+      $(MOZ_COMPONENT_LIBS) -lX11 -L/usr/X11R6/lib
 
 Voila, it worked!
 

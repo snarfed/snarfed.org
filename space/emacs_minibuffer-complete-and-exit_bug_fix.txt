@@ -1,5 +1,8 @@
 emacs minibuffer-complete-and-exit bug fix
-[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)
+
+<div class="img" style="float: right; margin-left: 10px">
+  <a href="http://gnu.org/software/emacs/"><img src="/space/gnu.jpg" /></a>
+</div>
 
 For the impatient:  
 [Bug fix

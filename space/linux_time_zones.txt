@@ -1,5 +1,8 @@
 linux time zones
-[![/space/clock.jpg](/space/clock.jpg)](/space/linux_time_zones)
+
+<div class="img" style="float: right; margin-left: 10px">
+  <a href="/space/linux_time_zones"><img src="/space/clock.jpg" /></a>
+</div>
 
 I recently had to change the
 time zone on a linux server, and while linux _handles_ time zones and locales

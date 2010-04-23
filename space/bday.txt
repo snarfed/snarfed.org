@@ -1,5 +1,8 @@
 bday
-[![/space/balloons.jpg](/space/balloons.jpg)](http://netmeister.org/apps/bday/)
+
+<div class="img" style="float: right; margin-left: 10px">
+  <a href="http://netmeister.org/apps/bday/"><img src="/space/balloons.jpg" /></a>
+</div>
 
 My memory is
 worthless, so I use lots of memory aids. One of them, Jan Schaumann's

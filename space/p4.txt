@@ -1,5 +1,8 @@
 p4
-[![/space/notes.png](/space/notes.png)](/space/p4)
+
+<div class="img" style="float: right; margin-left: 10px">
+  <a href="/space/p4"><img src="/space/notes.png" /></a>
+</div>
 
 For the impatient:  
 [Download P4 0.3.1](/space/p4-0.3.1.tar.bz2)  

@@ -1,4 +1,5 @@
 fedora core 3 on vmware
+
 [![/space/vmware.png](/space/vmware.png)](http://vmware.com/)[![/space/redhat.jpg](/space/redhat.jpg)](http://redhat.com/)[![/space/fedora.png](/space/fedora.png)](http://fedora.redhat.com/)
 
 I
@@ -57,7 +58,7 @@ script. When it asks if you want to compile the hgfs module from source, say
 yes. Here are the commands:
 
         tar xf /usr/lib/vmware-tools/modules/source/vmhgfs.tar
-        patch -p 0 < vmware\_tools\_hgfs\_linux\_2.6\_guest.patch
+        patch -p 0 < vmware_tools_hgfs_linux_2.6_guest.patch
         tar cf vmhgfs.tar vmhgfs-only/
         cp vmhgfs.tar /usr/lib/vmware-tools/modules/source/
         /usr/bin/vmware-config-tools.pl

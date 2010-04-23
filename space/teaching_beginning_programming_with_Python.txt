@@ -1,4 +1,5 @@
 teaching beginning programming with Python
+
 [![/space/python-new.png](/space/python-new.png)](http://python.org/)[![/space/python-old.png](/space/python-old.png)](http://python.org/)
 
 I'm
@@ -55,15 +56,15 @@ In the end, we had a working copy of that old standard, the number guessing
 game. Check it out!
 
     import random
-    play\_again='Y'
+    play_again='Y'
 
-    while play\_again=='Y':
+    while play_again=='Y':
         print "pick a number"
         answer=random.randint(0,100)
         guess=input()
-        num\_guesses=1
+        num_guesses=1
         while guess!=answer:
-            num\_guesses=num\_guesses+1
+            num_guesses=num_guesses+1
             if guess<=answer:
                 print "higher than ", guess
             if guess>=answer:
@@ -73,7 +74,7 @@ game. Check it out!
             guess=input()
 
         print "great! The correct number was ", answer
-        print "your number of guesses was ", num\_guesses
+        print "your number of guesses was ", num_guesses
         print "play again? 'Y'/'N'"
-        play\_again=input()
+        play_again=input()
 

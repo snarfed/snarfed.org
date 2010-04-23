@@ -1,4 +1,5 @@
 distribution file statistics
+
 I've recently packaged and released a few small programs, and I spent a little
 time thinking about what files to include. If you've used any \*nix OS before,
 the following shell session will look very familiar:

@@ -1,5 +1,8 @@
 libmsntp
-[![clock.jpg](/space/clock.jpg)](/space/libmsntp)
+
+<div class="img" style="float: right; margin-left: 10px">
+  <a href="/space/libmsntp"><img src="/space/clock.jpg" /></a>
+</div>
 
 For the impatient:  
 [Download libmsntp 1.6a source](/space/libmsntp-1.6a.tar.gz)  

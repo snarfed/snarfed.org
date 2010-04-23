@@ -1,6 +1,8 @@
 autocutsel clipboard and primary patch
 
-[![/space/clip.png](/space/clip.png)](https://savannah.nongnu.org/patch/?func=detailitem&#38;item_id=3367)
+<div class="img" style="float: right; margin-left: 10px">
+  <a href="https://savannah.nongnu.org/patch/?func=detailitem&#38;item_id=3367"><img src="/space/clip.png" /></a>
+</div>
 
 For the impatient:  
 [Patch for autocutsel 0.7.0](/space/autocutsel_unified.v2.patch)  
