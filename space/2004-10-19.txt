@@ -2,7 +2,9 @@
 
 ### Holla! 
 
-[![/space/p2p.jpg](/space/p2p.jpg)](/space/p4)
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <a href="/space/p4"><img src="/space/p2p.jpg" /></a>
+</div>
 
 It took us a while, but we finally packaged up [p4](/space/p4) and [released
 it](http://freshmeat.net/projects/p4). Well, we've only released the backend and

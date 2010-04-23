@@ -2,7 +2,9 @@
 
 ### Friday dinner [![Icon-Permalink.png](/Icon-Permalink.png)](#)
 
-[![margarita.jpg](/space/margarita.jpg)](/space/friday_mexican_dinner)
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <a href="/space/friday_mexican_dinner"><img src="/space/margarita.jpg" /></a>
+</div>
 
 For a long time, our cafeteria at work didn't serve dinner on Fridays. Most
 people left early on Friday anyway, so it only made sense.

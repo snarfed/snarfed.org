@@ -2,7 +2,9 @@
 
 ### Filling code in Emacs [![Icon-Permalink.png](/Icon-Permalink.png)](#)
 
-[![gnu.jpg](/space/gnu.jpg)](/space/fillcode)
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <a href="/space/fillcode"><img src="/space/gnu.jpg" /></a>
+</div>
 
 [Emacs](http://gnu.org/software/emacs/) is great, but one of my pet peeves is
 that while it can fill (ie wrap) plain text, it [can't fill source

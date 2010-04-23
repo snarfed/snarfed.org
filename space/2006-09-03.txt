@@ -2,7 +2,9 @@
 
 ### Ajax Comments in Pyblosxom
 
-[![ajax](/space/ajax.jpg)](/space/pyblosxom_ajax_comments)
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <a href="/space/pyblosxom_ajax_comments"><img src="/space/ajax.jpg" /></a>
+</div>
 
 Since I [migrated this site](/space/2006-08-23) to
 [Pyblosxom](http://pyblosxom.sourceforge.net/), I've been tweaking it here and

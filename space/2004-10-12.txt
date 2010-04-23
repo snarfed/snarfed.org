@@ -4,7 +4,9 @@
 
 
 
-[![cd.jpg](/space/cd.jpg)](/space/cdname.py)
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <a href="/space/cdname.py"><img src="/space/cd.jpg" /></a>
+</div>
 
 I've released a new version of [cdname.py](/space/cdname.py), which reads
 [CDDB](http://www.gracenote.com/gn_products/cddb.html)/[freedb](http://freedb.org/)

@@ -4,7 +4,9 @@
 
 
 
-[![/space/gnupg.png](/space/gnupg.png)](http://gnupg.org/)
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <a href="http://gnupg.org/"><img src="/space/gnupg.png" /></a>
+</div>
 
 I can't imagine why, but I have something of a
 [foil-hat](http://c2.com/cgi/wiki?TinFoilHat) reputation among my friends. They

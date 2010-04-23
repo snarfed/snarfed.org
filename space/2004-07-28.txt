@@ -4,7 +4,9 @@
 
 
 
-[![thumbnail.jpg](/space/thumbnail.jpg)](/space/bigbrother)
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <a href="/space/bigbrother"><img src="/space/thumbnail.jpg" /></a>
+</div>
 
 I've released version 0.5 of [bigbrother](/space/bigbrother), a program that
 generates statistics and graphs about your IM away messages. Highlights from
