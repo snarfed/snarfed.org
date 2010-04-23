@@ -1,6 +1,6 @@
 view evites anonymously
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
+<div class="img" style="float: right; margin-left: 10px">
   <a href="http://evite.com/"><img src="/space/evite.png" /></a>
 </div>
 
