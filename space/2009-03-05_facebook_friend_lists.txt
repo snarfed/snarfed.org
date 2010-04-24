@@ -23,7 +23,7 @@ click to add or remove them. The same interface is used for inviting people to
 events and groups, among other things. It's even exposed to Facebook Apps as
 [Fb:multi-friend-selector](http://wiki.developers.facebook.com/index.php/Fb:multi-friend-selector).
 
-<div style="float: right; margin-left: 10px">
+<div class="img" style="float: right; margin-left: 10px">
   <a href="/space/feeds"><img src="/space/rss.jpg" /></a>
 </div>
 

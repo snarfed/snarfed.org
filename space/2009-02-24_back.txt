@@ -6,13 +6,6 @@ Back!
 
 We're back up! Sorry for the inconvenience, and thanks for your patience.
 
-<!--
-<div style="float: right; margin-left: 10px">
-  <a href="http://pair.com/">
-   <img src="/space/pair.com.jpg" alt="pair.com" /></a>
-</div>
--->
-
 What happened? In short, my [hosting provider](http://pair.com/) disabled my
 [PyBlosxom](http://pyblosxom.sourceforge.net/) CGI script, which runs this site.
 It was using too much CPU on my server ([ambym](http://ambym.pair.com/)) for
@@ -21,13 +14,6 @@ spam](/space/referrer_spam) storms and
 [inefficient](http://pyblosxom.sourceforge.net/registry/input/comments/comments.html)
 [plugins](/space/pyblosxom_history), and it was impacting other sites.
 I may not have liked that they turned me off, but it was only reasonable.
-
-<!--
-<div style="float: left; margin-right: 10px">
-  <a href="http://pyblosxom.sourceforge.net/">
-   <img src="/space/pyblosxom.jpg" alt="pyblosxom" /></a>
-</div>
--->
 
 In the short term, I blocked a bunch of spammer IP addresses and optimized the
 [comments](http://pyblosxom.sourceforge.net/registry/input/comments/comments.html)

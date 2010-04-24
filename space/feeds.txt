@@ -1,6 +1,6 @@
 feeds
 
-<div style="float: right; margin-left: 10px">
+<div class="img" style="float: right; margin-left: 10px">
   <img src="/space/rss.jpg" alt="rss icon" />
 </div>
 

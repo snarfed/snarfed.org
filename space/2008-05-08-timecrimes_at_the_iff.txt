@@ -1,6 +1,6 @@
 Timecrimes at the International Film Festival
 
-<div style="float: right; margin-left: 10px">
+<div class="img-shadow" style="float: right; margin-left: 10px">
   <a href="http://www.landmarktheatres.com/market/SanFrancisco/ClayTheatre.htm">
     <img src="/space/clay_theatre.jpg" alt="clay theatre" /></a>
 </div>
@@ -15,7 +15,7 @@ aka Los cronocrímenes, by Nacho Vigalondo, at the
 I had no idea what to expect, but it turned out to be entertaining, thought
 provoking, and a lot of fun.
 
-<div style="float: left; margin-right: 10px">
+<div class="img-shadow" style="float: left; margin-right: 10px">
   <a href="http://fest08.sffs.org/films/film_details.php?id=85">
     <img src="/space/timecrimes.jpg" alt="timecrimes" /></a>
 </div>

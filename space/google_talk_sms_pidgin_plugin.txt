@@ -1,6 +1,6 @@
 google_talk_sms pidgin plugin
 
-<div style="float: right; margin-left: 10px">
+<div class="img" style="float: right; margin-left: 10px">
   <a href="http://pidgin.im/"><img src="/space/pidgin_full.png" /></a>
 </div>
 
@@ -27,7 +27,7 @@ friends could reply to my texts, but the phone numbers it used were only
 temporary. My friends couldn't initiate conversations with me via SMS;
 I had to text them first.
 
-<div style="float: left; margin-right: 10px">
+<div class="img" style="float: left; margin-right: 10px">
   <a href="http://talk.google.com/"><img src="/space/google_talk_logo.png" /></a>
 </div>
 
@@ -45,7 +45,7 @@ people did too, and since each SMS costs money, Google decided to
 Other clients received the error message
 _"SMS\_ERROR\_11: Sorry we don't support free SMS messaging through this client. Visit http://gmail.com/sms for more info. (Code 405)"_
 
-<div style="float: right; margin-left: 10px">
+<div class="img" style="float: right; margin-left: 10px">
   <img src="/space/sms_phone.jpg" /></a>
 </div>
 

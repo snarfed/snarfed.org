@@ -1,6 +1,6 @@
 Maya Lin at the de Young
 
-<div style="float: right; margin-left: 10px">
+<div class="img-shadow" style="float: right; margin-left: 10px">
   <a href="http://www.deyoungmuseum.org/asianamericanmodern/">
    <img src="/space/setting_sun_sacramento_valley.jpg" alt="setting_sun_sacramento_valley"></a>
 </div>
@@ -21,7 +21,7 @@ It had a number of beautiful scrolls, but overall, the aesthetics of the
 different pieces were too scattered and jarring for the exhibit to come
 together as a whole.
 
-<div style="float: left; margin-right: 10px">
+<div class="img-shadow" style="float: left; margin-right: 10px">
   <a href="http://www.deyoungmuseum.org/mayalin/">
    <img src="/space/blue_lake_pass.jpg" alt="blue_lake_pass"></a>
 </div>
@@ -39,7 +39,7 @@ than a sketch, but still managed to convey an arresting sense of place and
 physicality. They were surreal, and at the same time, utterly grounded.
 I loved them. A few fell flat, but even those were interesting, and worth seeing.
 
-<div style="float: right; margin-left: 10px">
+<div class="img-shadow" style="float: right; margin-left: 10px">
   <a href="http://www.ysldeyoung.org/">
    <img src="/space/yves_saint_laurent.jpg" alt="yves_saint_laurent"></a>
 </div>

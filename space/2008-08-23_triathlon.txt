@@ -1,6 +1,6 @@
 Triathlon
 
-<div style="float: right; margin-left: 10px">
+<div class="img-shadow" style="float: right; margin-left: 10px">
   <a href="/gallery/tri_for_fun">
    <img src="/space/tri_for_fun.jpg" alt="tri for fun" /></a>
 </div>
@@ -19,8 +19,7 @@ training. Worse, I ended up going in the second wave, which was very
 competitive. I don't swim much, and I was riding Ken's mountain bike, so the
 swim and the bike were both pretty challenging.
 
-<div style="float: left; margin-right: 10px">
- <a href="">
+<div class="img-shadow" style="float: left; margin-right: 10px">
   <a href="/gallery/tri_for_fun">
    <img src="/gallery/tri_for_fun/thumbs/swim_end_ken.jpg" alt="ken" /></a>
 </div>
