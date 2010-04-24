@@ -30,7 +30,11 @@ for that. Of course, I forgot the fake email address I gave them, so I had to
 hold off on this post until I scanned in my printouts. I didn't start off so
 well, but hey, cut me some slack. I'm showing signs of improvement!
 
-[!![practice stats](/space/go_kart_practice_stats_thumb.jpg)](/space/go_kart_practice_stats.jpg)
-[!![race stats](/space/go_kart_race_stats_thumb.jpg)](/space/go_kart_race_stats.jpg)
+<div class="img-shadow">
+[![practice stats](/space/go_kart_practice_stats_thumb.jpg)](/space/go_kart_practice_stats.jpg)
+</div>
+<div class="img-shadow">
+[![race stats](/space/go_kart_race_stats_thumb.jpg)](/space/go_kart_race_stats.jpg)
+</div>
 
 <br class="clearing" />

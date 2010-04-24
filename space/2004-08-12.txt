@@ -2,9 +2,9 @@
 
 ### Big iron...uh....computers 
 
-![/space/datacenter.jpg](/space/datacenter.jpg)
-
-
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <img src="/space/datacenter.jpg" />
+</div>
 
 Abandon all hope, ye who enter here: this post is horribly geeky. Consider
 yourself warned.

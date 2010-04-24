@@ -4,7 +4,7 @@
 
 Guess what I did about half an hour ago?
 
-blaize:~> rm -rf \*
+    blaize:~> rm -rf \*
 
 Yes, you read that right. Sorry for the unabashed geekiness...windows users,
 imagine if you dragged My Computer to the Recycle Bin, and then emptied the

@@ -2,9 +2,9 @@
 
 ### ...but I can still type 
 
-
-
-![/space/xray.jpg](/space/xray.jpg)
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <img src="/space/xray.jpg" />
+</div>
 
 Last Tuesday, on the way up to SF aboard the fabulous [Google
 shuttle](http://www.google.com/googleblog/2004/09/worth-drive_13.html), I

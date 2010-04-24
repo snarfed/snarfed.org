@@ -84,7 +84,7 @@ but it's always worthwhile.
 <a name="user_content"></a>
 ### [![Icon-Permalink.png](/Icon-Permalink.png)](#user_content) User-Generated Content: YouTube for Games
 
-<div class="img-noshadow" style="float: right; margin-left: 10px">
+<div class="img" style="float: right; margin-left: 10px">
   <a href="http://youtube.com/"><img src="/space/gdc_2007_youtube.png" /></a>
 </div>
 
@@ -105,7 +105,7 @@ clothes, decorate their apartment, and contribute to public spaces. Options
 include downloadable content, free and paid, and the user's own videos and
 photographs.
 
-<div class="img-noshadow" style="float: left; margin-right: 10px">
+<div class="img" style="float: left; margin-right: 10px">
   <a href="http://www.homebetatrial.com/">
     <img src="/space/gdc_2007_playstation_home.jpg" /></a>
 </div>
@@ -143,7 +143,7 @@ developers to make their own XBox 360 games. Hackers had done this on other
 consoles for years, but this was the first time a console maker had opened a
 retail console to legitimate homebrew development. It was a big deal.
 
-<div class="img-noshadow" style="float: left; margin-right: 10px">
+<div class="img" style="float: left; margin-right: 10px">
   <a href="http://www.xbox.com/games/livearcade">
     <img src="/space/gdc_2007_xboxlivearcade.jpg" /></a>
 </div>
@@ -204,7 +204,7 @@ focused on: _games_.
 [people]: http://www.freescale.com/webapp/sps/site/overview.jsp?nodeId=01272685077482
 
 
-<div class="img-noshadow" style="float: right; margin-left: 10px">
+<div class="img" style="float: right; margin-left: 10px">
   <a href="http://gametap.com/"><img src="/space/gdc_2007_gametap_logo.png" /></a>
 </div>
 <a name="web_2.0" href="#web_2.0"><img src="/Icon-Permalink.png" /></a>

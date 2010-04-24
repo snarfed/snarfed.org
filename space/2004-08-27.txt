@@ -2,9 +2,9 @@
 
 ### Sure, but could you do _another_ 50? 
 
-![/space/50th.jpg](/space/50th.jpg)
-
-
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <img src="/space/50th.jpg" />
+</div>
 
 Last weekend, I roadtripped down to southern cali with my family for my
 grandparents, [Ray](http://www.smalltownusa.net/stauthorsbios.html#anchorRL) and

@@ -1,6 +1,10 @@
 2004-05-03
 
-### Windows P2P ![/space/p2p.png](/space/p2p.png)
+### Windows P2P
+
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <img src="/space/p2p.png" />
+</div>
 
 About a year ago, Microsoft quietly announced that they were developing a
 peer-to-peer networking protocol. This is not a file sharing program, mind you;
