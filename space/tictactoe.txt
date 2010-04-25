@@ -167,5 +167,5 @@ library](http://robertk.com/source/) for reading .ini files.
 
   * Some of the GLUT initialization (like the code in main()) was copied from
 [Matt Ginzton](http://matt.ginzton.net/)'s
-[glut\_example](http://graphics.stanford.edu/courses/cs248-00/helpsession/opengl/code_example.html).
+[glut_example](http://graphics.stanford.edu/courses/cs248-00/helpsession/opengl/code_example.html).
 

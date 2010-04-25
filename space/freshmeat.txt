@@ -1,6 +1,10 @@
 freshmeat
 
-[![/space/freshmeat.jpg](/space/freshmeat.jpg)](http://freshmeat.net/~blaize/)[Freshmeat](http://freshmeat.net/)
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <a href="http://freshmeat.net/~blaize/"><img src="/space/freshmeat.jpg" /></a>
+</div>
+
+[Freshmeat](http://freshmeat.net/)
 is a directory of open source projects, mostly for \*nix platforms. Unlike
 [SourceForge](/space/SourceForge), Freshmeat doesn't host files or web space; it
 just provides links, screenshots, and release history, organized in a _very_

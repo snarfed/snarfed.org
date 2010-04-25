@@ -4,8 +4,8 @@ pyblosxom openid server
 [![pyblosxom](/space/pyblosxom.jpg)](http://pyblosxom.sf.net/)
 
 For the impatient:  
-&nbsp; Download [openid\_server.py](/space/openid_server.py) or
-[openid\_server-0.4.tar.gz](/space/openid_server-0.4.tar.gz)  
+&nbsp; Download [openid_server.py](/space/openid_server.py) or
+[openid_server-0.4.tar.gz](/space/openid_server-0.4.tar.gz)  
 &nbsp; [OpenID home page](http://openid.net/)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
 

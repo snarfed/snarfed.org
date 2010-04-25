@@ -4,7 +4,7 @@ iTunes for Windows script to unset <i>Skip when shuffling</i>
 [![iPod Shuffle](/space/ipod_shuffle.jpg)](http://apple.com/ipodshuffle/)
 [![Podcast](/space/rss.jpg)](http://en.wikipedia.org/wiki/Podcast)
 
-[no\_skip\_when\_shuffling.js](/space/no_skip_when_shuffling.js) is a script for
+[no_skip_when_shuffling.js](/space/no_skip_when_shuffling.js) is a script for
 [iTunes](http://apple.com/itunes/) for Windows that unsets the
 [_skip when shuffling_](http://www.reelsmart.com/2006/01/28/itunes-tip-29-skip-tracks-when-shuffling/)
 setting on all songs in a playlist. It was inspired by [an

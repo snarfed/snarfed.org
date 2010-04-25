@@ -1,6 +1,8 @@
 faking out address and credit card forms
 
-![/space/nose_mustache_glasses.jpg](/space/nose_mustache_glasses.jpg)
+<div class="img" style="float: right; margin-left: 10px">
+  <img src="/space/nose_mustache_glasses.jpg" />
+</div>
 
 Like many people, I buy
 things online. Unlike many people, I'm a bit of a privacy freak. I only use

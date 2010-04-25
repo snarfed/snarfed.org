@@ -8,7 +8,7 @@ site search with the Google AJAX Search API
 
 _Updated 2010-03-29._
 
-[ajax\_search.js](/ajax_search.js) uses the
+[ajax_search.js](/ajax_search.js) uses the
 [Google AJAX Search API](http://code.google.com/apis/ajaxsearch/signup.html)
 to do site search. It's similar to Google's
 [existing site search](http://services.google.com/searchcode2.html?accept=on#both),
@@ -23,7 +23,7 @@ right now! But heads up, your browser's back button won't work. Blame AJAX.
 
 To use this on your site, first
 [apply for an AJAX Search API key](http://code.google.com/apis/ajaxsearch/signup.html).
-Then, place [ajax\_search.js](/ajax_search.js) on your server and the
+Then, place [ajax_search.js](/ajax_search.js) on your server and the
 following HTML on your page:
 
     <form class="form" method="get" action="http://www.google.com/search"
@@ -91,7 +91,7 @@ has more details. As an example, here's the CSS used on this site:
 
 Happy AJAX searching!
 
-[ajax\_search.js](/ajax_search.js) is copyright 2006 [Ryan
+[ajax_search.js](/ajax_search.js) is copyright 2006 [Ryan
 Barrett](/space/about), and is distributed under the
 [GPL](http://www.gnu.org/licenses/gpl.html).
 

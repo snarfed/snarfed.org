@@ -1,6 +1,8 @@
 photogallery
 
-![photogallery.jpg](/space/photogallery.jpg)
+<div class="img" style="float: right; margin-left: 10px">
+  <img src="/space/photogallery.jpg" />
+</div>
 
 For the impatient:  
 &nbsp; [Download photogallery.py 0.5](/space/photogallery.py)  

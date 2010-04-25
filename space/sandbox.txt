@@ -2,15 +2,15 @@ sandbox
 
 {script} from java.util import Date print Date().toString() {script}
 
-{script} import sys sys.add\_package('org.snipsnap.snip') from org.snipsnap.snip
+{script} import sys sys.add_package('org.snipsnap.snip') from org.snipsnap.snip
 import SnipSpaceFactory
 
 factory = SnipSpaceFactory.getInstance() atxs =
-factory.load(str(snip)).getAttachments().getAll() atx\_names = ',
+factory.load(str(snip)).getAttachments().getAll() atx_names = ',
 '.join(/space/a.getName() for a in atxs)
 
 print """ This snip is called **%s**. Its attachments are **%s**. """ % (snip,
-atx\_names) {script}
+atx_names) {script}
 
 foo
 

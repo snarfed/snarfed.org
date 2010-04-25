@@ -1,4 +1,6 @@
 railing
 
-![/space/railing.jpg](/space/railing.jpg)
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <img src="/space/railing.jpg" />
+</div>
 

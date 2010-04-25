@@ -1,6 +1,8 @@
 hardcodedates
 
-![hardcodedates.jpg](/space/hardcodedates.jpg)
+<div class="img" style="float: right; margin-left: 10px">
+  <img src="/space/hardcodedates.jpg" />
+</div>
 
 For the impatient:  
 &nbsp; [Download hardcodedates.py 1.4](/space/hardcodedates.py)  

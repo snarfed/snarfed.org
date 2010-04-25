@@ -1,6 +1,8 @@
 snarfed.org history
 
-![/space/house.png](/space/house.png)
+<div class="img" style="float: right; margin-left: 10px">
+  <img src="/space/house.png" />
+</div>
 
 Welcome to [our](/space/people) home. It may not be much, but we're fond of
 it, so please wipe your feet and mind the exposed beams. This is where we hang

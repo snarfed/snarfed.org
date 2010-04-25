@@ -52,11 +52,11 @@ about adventure games. I can't help being a little disgruntled, though.
 
 Anyway, here's the fix. Bad Mojo uses the `badmojo.ini` file to determine
 where it's installed. By default, it looks for the file in its own directory,
-e.g. <nobr>`C:\Program Files\Bad Mojo\\`</nobr>. However, if a `badmojo.ini`
-file exists in `C:\Windows\\`, it uses that instead.
+e.g. <nobr>`C:\Program Files\Bad Mojo\`</nobr>. However, if a `badmojo.ini`
+file exists in `C:\Windows\`, it uses that instead.
 
 In my case, the Bad Mojo installer put an incomplete `badmojo.ini` file into
-`C:\Windows\\`. It had only these lines:
+`C:\Windows\`. It had only these lines:
 
     [badmojo]
     Preferences=1111110

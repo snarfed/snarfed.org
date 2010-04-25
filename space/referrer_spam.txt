@@ -24,7 +24,7 @@ but it's not maintained.)
 
   * I've written a [webalizer nofollow patch](/space/webalizer_nofollow_patch)
 that adds support for the popular new
-[nofollow](http://www.google.com/googleblog/2005/01/preventing-comment-spam.html)
+[nofollow](http://googleblog.blogspot.com/2005/01/preventing-comment-spam.html)
 tag.
 
   * I _used to_ use

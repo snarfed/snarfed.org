@@ -1,6 +1,8 @@
 GeoURL
 
-[![worldmap.jpg](/space/worldmap.jpg)](http://geourl.com/)
+<div class="img" style="float: right; margin-left: 10px">
+  <a href="http://geourl.com/"><img src="/space/worldmap.jpg" /></a>
+</div>
 
 [GeoUrl](http://geourl.org/)
 is a nifty site that maps web sites to geographical locations, similar to

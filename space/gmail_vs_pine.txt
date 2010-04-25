@@ -87,7 +87,7 @@ email, or with spam that escapes the spam filters, god help you.
 ### The Ugly
 
   * Marking messages as read is impossible with the keyboard, and takes three
-clicks with the mouse: Select \_\_\_, More Actions, Mark As Read. I could just
+clicks with the mouse: Select ___, More Actions, Mark As Read. I could just
 leave them unread, but then the labels display is useless for showing which
 mailing lists have new mail.
 
@@ -115,5 +115,5 @@ See also:
 
   * [pine reply-all patch](/space/pine_reply-all_patch)
 
-  * [port\_pine\_patch](/space/port_pine_patch)
+  * [port_pine_patch](/space/port_pine_patch)
 

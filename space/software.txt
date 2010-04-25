@@ -20,7 +20,7 @@ filenames and files people send me from other operating systems.
 [Reader](http://www.google.com/reader/), and
 [Tasks](https://mail.google.com/tasks/canvas).
 
-  * [google\_talk_sms.pl](/space/google_talk_sms_pidgin_plugin),
+  * [google_talk_sms.pl](/space/google_talk_sms_pidgin_plugin),
 a [Pidgin](http://pidgin.im/) plugin that enables
 [Google Talk](http://talk.google.com/)'s
 [SMS text messaging](http://gmailblog.blogspot.com/2008/12/really-new-in-labs-this-time-sms-text.html)
@@ -36,7 +36,7 @@ feature.
   * [openid-test](http://code.google.com/p/openid-test/) is an
     interoperability test suite for [OpenID](http://openid.net/).
 
-  * [download\_picasa_album.sh](/space/download_picasa_album) downloads entire
+  * [download_picasa_album.sh](/space/download_picasa_album) downloads entire
 [Picasa Web](http://picasaweb.google.com/) photo albums.
 
   * [PyBlosxom](http://pyblosxom.sourceforge.net/) is a lightweight weblog
@@ -180,7 +180,7 @@ mark and cursor.
   * A [fix for an Emacs bug in minibuffer code](/space/emacs_minibuffer-complete-and-exit_bug_fix), specifically in
 _minibuffer-complete-and-exit_. (Fixed in Emacs 22.)
 
-  * [port\_pine\_patch](/space/port_pine_patch) is a shell script that automates
+  * [port_pine_patch](/space/port_pine_patch) is a shell script that automates
 porting Pine patches between versions.
 
   * [Pine reply-all patch](/space/pine_reply-all_patch) adds a reply-all command
@@ -195,7 +195,7 @@ adds an option to automatically remove trailing quotes from outgoing emails.
   * [Pine delete attachments on save patch](/space/pine_delete_attachments_on_save_patch) adds an option to delete attachments from messages when you save
 them.
 
-  * [Gaim chat\_invite patch](/space/gaim_2_chat_invite_reverse_params.patch)
+  * [Gaim chat_invite patch](/space/gaim_2_chat_invite_reverse_params.patch)
 fixes a
 [parameter ordering bug](https://sourceforge.net/tracker/index.php?func=detail&aid=1595828&group_id=235&atid=100235)
 in [Gaim 2.x](http://gaim.sf.net/)'s

@@ -1,142 +1,148 @@
-From remind-fans at ryanb.org Tue Jun 14 02:10:08 2005
+events with multiple months in remind
 
-Date: Tue, 14 Jun 2005 02:10:12 -0700 (PDT)
-From: Ryan Barrett <...>
-To: remind-fans at whatexit.org
-Subject: multiple months?
+A thread from the [remind-fans](http://whatexit.org/mailman/listinfo/remind-fans)
+mailing list about how to specify events that repeat across multiple months in the
+[remind](http://www.roaringpenguin.com/products/remind) program.
 
-hi all. i picked up remind a few days ago as a replacement for my clunky 
-birthday reminder script and, i'm sad to say, cron jobs that reminded me 
-to pay the rent and other bills. so far, i'm loving it!
-
-given remind's sophisticated date handling, though, i was surprised to 
-find that it doesn't support date specs with multiple months. for example, 
-this line:
-
-   7 Jan Apr June Sep MSG Prepay estimated income tax
-
-gives this error:
-
-   /home/ryanb/.reminders(22): Month specified twice
-
-i searched the man page, readme, google, and the list archives, but 
-couldn't find any way to specify multiple months. sure, i could split it 
-up into four separate lines, but that's kind of hackish.
-
-am i missing something obvious? if not, i'm inclined to write a patch to 
-allow multiple months in date specs. david, would that be appropriate?
-
--Ryan
-
---
-http://ryan.barrett.name/
-
-
-From ... Tue Jun 14 05:38:00 2005
-Date: Tue, 14 Jun 2005 08:38:10 -0400
-From: David F. Skoll <...>
-Reply-To: Users of the "REMIND" system <...>
-To: Users of the "REMIND" system <remind-fans at whatexit.org>
-Subject: Re: [Remind-Fans] multiple months?
-
-Ryan Barrett wrote:
-
-> i searched the man page, readme, google, and the list archives, but
-> couldn't find any way to specify multiple months. sure, i could split it
+> From remind-fans at ryanb.org Tue Jun 14 02:10:08 2005
+> 
+> Date: Tue, 14 Jun 2005 02:10:12 -0700 (PDT)
+> From: Ryan Barrett <...>
+> To: remind-fans at whatexit.org
+> Subject: multiple months?
+> 
+> hi all. i picked up remind a few days ago as a replacement for my clunky 
+> birthday reminder script and, i'm sad to say, cron jobs that reminded me 
+> to pay the rent and other bills. so far, i'm loving it!
+> 
+> given remind's sophisticated date handling, though, i was surprised to 
+> find that it doesn't support date specs with multiple months. for example, 
+> this line:
+> 
+>    7 Jan Apr June Sep MSG Prepay estimated income tax
+> 
+> gives this error:
+> 
+>    /home/ryanb/.reminders(22): Month specified twice
+> 
+> i searched the man page, readme, google, and the list archives, but 
+> couldn't find any way to specify multiple months. sure, i could split it 
 > up into four separate lines, but that's kind of hackish.
-
-It's the only way.
-
-Regards,
-
-David.
-_______________________________________________
-Remind-fans mailing list
-Remind-fans at whatexit.org
-http://whatexit.org/mailman/listinfo/remind-fans
-
-From ryan at barrett.name Tue Jun 14 12:31:40 2005
-Date: Tue, 14 Jun 2005 12:31:40 -0700 (PDT)
-From: Ryan Barrett <...>
-To: David F. Skoll <...>
-Subject: Re: [Remind-Fans] multiple months?
-
-On Tue, 14 Jun 2005, David F. Skoll wrote:
-
+> 
+> am i missing something obvious? if not, i'm inclined to write a patch to 
+> allow multiple months in date specs. david, would that be appropriate?
+> 
+> -Ryan
+> 
+> --
+> http://ryan.barrett.name/
+> 
+> 
+> From ... Tue Jun 14 05:38:00 2005
+> Date: Tue, 14 Jun 2005 08:38:10 -0400
+> From: David F. Skoll <...>
+> Reply-To: Users of the "REMIND" system <...>
+> To: Users of the "REMIND" system <remind-fans at whatexit.org>
+> Subject: Re: [Remind-Fans] multiple months?
+> 
+> Ryan Barrett wrote:
+> 
+> > i searched the man page, readme, google, and the list archives, but
+> > couldn't find any way to specify multiple months. sure, i could split it
+> > up into four separate lines, but that's kind of hackish.
+> 
 > It's the only way.
-
-fair enough. was that an intentional design decision? if not, i'd like to write 
-a patch. would you mind? can you think of any reason i shouldn't?
-
--Ryan
-
---
-http://ryan.barrett.name/
-
-From ... Tue Jun 14 14:10:50 2005
-Date: Tue, 14 Jun 2005 17:10:46 -0400
-From: David F. Skoll <...>
-To: Ryan Barrett <...>
-Subject: Re: [Remind-Fans] multiple months?
-
-Hi, Ryan.
-
-> fair enough. was that an intentional design decision?
-
-Not really; it was just the way I did it.
-
-> if not, i'd like
-> to write a patch. would you mind? can you think of any reason i shouldn't?
-
-It will be rather complex, because it will tie in to the guts of the
-date computation algorithm.  But if you manage to do it and it looks good,
-I'll incorporate it.
-
-(I expect the complexity will be a bit more than you bargained for when
-you look at the date calculation code. :-) )
-
-Regards,
-
-David.
-
-From ... Wed Jun 15 06:30:36 2005
-Date: Wed, 15 Jun 2005 08:27:59 -0500
-From: Tildar <...>
-To: Users of the REMIND system <remind-fans at whatexit.org>
-Subject: Re: [Remind-Fans] multiple months?
-
-Thanks to David for the "multiple day example" earlier on the list, i
-pulled this on togather, it seems to work. Will it cover your needs?
-
-FSET _M(M) monnum(trigdate()) == M
-REM 7 SATISFY [_M(1) || _M(4) || _M(6) || _M(9)] MSG Prepay estimated income tax
-
-_______________________________________________
-Remind-fans mailing list
-Remind-fans at whatexit.org
-http://whatexit.org/mailman/listinfo/remind-fans
-
-From ... Wed Jun 15 07:07:05 2005
-Date: Wed, 15 Jun 2005 10:04:41 -0400
-From: David F. Skoll <>
-Reply-To: Users of the "REMIND" system <remind-fans at whatexit.org>
-To: Tildar <...>, Users of the "REMIND" system <remind-fans at whatexit.org>
-Subject: Re: [Remind-Fans] multiple months?
-
-Tildar wrote:
-
+> 
+> Regards,
+> 
+> David.
+> _______________________________________________
+> Remind-fans mailing list
+> Remind-fans at whatexit.org
+> http://whatexit.org/mailman/listinfo/remind-fans
+> 
+> From ryan at barrett.name Tue Jun 14 12:31:40 2005
+> Date: Tue, 14 Jun 2005 12:31:40 -0700 (PDT)
+> From: Ryan Barrett <...>
+> To: David F. Skoll <...>
+> Subject: Re: [Remind-Fans] multiple months?
+> 
+> On Tue, 14 Jun 2005, David F. Skoll wrote:
+> 
+> > It's the only way.
+> 
+> fair enough. was that an intentional design decision? if not, i'd like to write 
+> a patch. would you mind? can you think of any reason i shouldn't?
+> 
+> -Ryan
+> 
+> --
+> http://ryan.barrett.name/
+> 
+> From ... Tue Jun 14 14:10:50 2005
+> Date: Tue, 14 Jun 2005 17:10:46 -0400
+> From: David F. Skoll <...>
+> To: Ryan Barrett <...>
+> Subject: Re: [Remind-Fans] multiple months?
+> 
+> Hi, Ryan.
+> 
+> > fair enough. was that an intentional design decision?
+> 
+> Not really; it was just the way I did it.
+> 
+> > if not, i'd like
+> > to write a patch. would you mind? can you think of any reason i shouldn't?
+> 
+> It will be rather complex, because it will tie in to the guts of the
+> date computation algorithm.  But if you manage to do it and it looks good,
+> I'll incorporate it.
+> 
+> (I expect the complexity will be a bit more than you bargained for when
+> you look at the date calculation code. :-) )
+> 
+> Regards,
+> 
+> David.
+> 
+> From ... Wed Jun 15 06:30:36 2005
+> Date: Wed, 15 Jun 2005 08:27:59 -0500
+> From: Tildar <...>
+> To: Users of the REMIND system <remind-fans at whatexit.org>
+> Subject: Re: [Remind-Fans] multiple months?
+> 
+> Thanks to David for the "multiple day example" earlier on the list, i
+> pulled this on togather, it seems to work. Will it cover your needs?
+> 
 > FSET _M(M) monnum(trigdate()) == M
 > REM 7 SATISFY [_M(1) || _M(4) || _M(6) || _M(9)] MSG Prepay estimated income tax
-
-Note that SATISFY is less efficient that specifying a month, but
-for this example, it's probably OK.
-
-It's a cool hack, though! :-)  Not sure how readable it is.
-
-Regards,
-
-David.
-_______________________________________________
-Remind-fans mailing list
-Remind-fans at whatexit.org
-http://whatexit.org/mailman/listinfo/remind-fans
+> 
+> _______________________________________________
+> Remind-fans mailing list
+> Remind-fans at whatexit.org
+> http://whatexit.org/mailman/listinfo/remind-fans
+> 
+> From ... Wed Jun 15 07:07:05 2005
+> Date: Wed, 15 Jun 2005 10:04:41 -0400
+> From: David F. Skoll <>
+> Reply-To: Users of the "REMIND" system <remind-fans at whatexit.org>
+> To: Tildar <...>, Users of the "REMIND" system <remind-fans at whatexit.org>
+> Subject: Re: [Remind-Fans] multiple months?
+> 
+> Tildar wrote:
+> 
+> > FSET _M(M) monnum(trigdate()) == M
+> > REM 7 SATISFY [_M(1) || _M(4) || _M(6) || _M(9)] MSG Prepay estimated income tax
+> 
+> Note that SATISFY is less efficient that specifying a month, but
+> for this example, it's probably OK.
+> 
+> It's a cool hack, though! :-)  Not sure how readable it is.
+> 
+> Regards,
+> 
+> David.
+> _______________________________________________
+> Remind-fans mailing list
+> Remind-fans at whatexit.org
+> http://whatexit.org/mailman/listinfo/remind-fans

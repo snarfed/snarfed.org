@@ -1,6 +1,10 @@
 multiply
 
-[![/space/multiply.png](/space/multiply.png)](http://ryanb.multiply.com/)[Multiply](http://multiply.com/)
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <a href="http://ryanb.multiply.com/"><img src="/space/multiply.png" /></a>
+</div>
+
+[Multiply](http://multiply.com/)
 is yet another social networking site. It's oriented toward people who want to
 put a _lot_ of stuff online. It also has a pretty comprehensive set of tools for
 importing contacts from address books and other social networking sites.

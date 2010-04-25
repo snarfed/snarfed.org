@@ -1,6 +1,8 @@
 history.py
 
-![clock_icon.jpg](/space/clock_icon.jpg)
+<div class="img" style="float: right; margin-left: 10px">
+  <img src="/space/clock_icon.jpg" />
+</div>
 
 For the impatient:  
 &nbsp; Download [history.py 0.5](/space/history.py)  

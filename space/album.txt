@@ -1,6 +1,8 @@
 album
 
-![/space/album.jpg](/space/album.jpg)**About**
+**About**
+
+![/space/album.jpg](/space/album.jpg)
 
 We've created a simple macro that creates a photo album interface for pictures.
 Our macro generates thumbnails for a set of pictures and shows the thumbnails on
@@ -33,7 +35,7 @@ change them, you can specify those as parameters like so:
 
     {make-album:albumDirName|thumb_size|web_size}
 
-Where thumb\_size and web\_size are integers.
+Where thumb_size and web_size are integers.
 
 Also, if you're running this on **linux, unix**, etc. you will need to modify
 your run script to include this java flag:

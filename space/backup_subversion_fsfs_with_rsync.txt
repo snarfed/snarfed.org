@@ -1,6 +1,6 @@
 backup subversion fsfs with rsync
 
-<div class="img" style="float: right; margin-left: 10px">
+<div class="img">
   <a href="http://subversion.tigris.org/"><img src="/space/subversion.png" /></a>
 </div>
 

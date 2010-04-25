@@ -1,6 +1,8 @@
 computer haikus
 
-![/space/wave.jpg](/space/wave.jpg)
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <img src="/space/wave.jpg" />
+</div>
 
 I've long since lost the primary source for these, but
 they're now [scattered all over the

@@ -11,7 +11,7 @@ source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b2-uttoxeter-20050204-src.tgz)
 [Patching
 FAQ](http://www.gnu.org/software/diffutils/manual/html_node/Merging-with-patch.html)
 
-I use [SnipSnap](/space/SnipSnap) as the web server for this site, and I love
+I originally used [SnipSnap](/space/SnipSnap) as the web server for this site, and I loved
 it. However, my single biggest gripe with SnipSnap is that it requires you to
 register before you can comment.
 

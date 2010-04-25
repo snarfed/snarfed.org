@@ -2,8 +2,7 @@ fedora core 3 on vmware
 
 [![/space/vmware.png](/space/vmware.png)](http://vmware.com/)[![/space/redhat.jpg](/space/redhat.jpg)](http://redhat.com/)[![/space/fedora.png](/space/fedora.png)](http://fedora.redhat.com/)
 
-I
-recently upgraded to [VMWare](http://vmware.com/) 4.5.2, with [Fedora Core
+A while back, I upgraded to [VMWare](http://vmware.com/) 4.5.2 with [Fedora Core
 3](http://fedora.redhat.com/) as the guest and Windows XP as the host. It was
 much smoother than I expected, but it still needed a few tweaks. Here's what I
 did to whip it into shape.
@@ -21,7 +20,7 @@ It was better, but still much slower than it should have been. A few people
 [blamed the 4G/4G kernel
 patch](http://www.vmware.com/community/thread.jspa?forumID=19&threadID=16154&messageID=174172#174172),
 which can perform poorly and was dropped in later FC3 kernels. Sure enough,
-**yum update kernel** bumped me to 2.6.11-1.14\_FC3, which was just as fast
+**yum update kernel** bumped me to 2.6.11-1.14_FC3, which was just as fast
 under VMWare as my old, trusty RH9.
 
   * ...except that it broke X windows. X would start and the mouse driver would
@@ -92,7 +91,7 @@ command-line \*nix utilities. However, it didn't quite install out of the box. I
 installed the [ruby-term-ansicolor
 rpm](http://www.caliban.org/files/redhat/RPMS/i386/ruby-term-ansicolor-1.0.0-1.i386.rpm),
 but acoc still complained that it couldn't find ansicolor.rb. Turned out it was
-looking in /usr/lib/ruby/site\_ruby/1.8/term, but acoc wanted it in
+looking in /usr/lib/ruby/site_ruby/1.8/term, but acoc wanted it in
 /usr/lib/ruby/1.8/term. A quick mkdir -p and a ln -s fixed this.
 
   * **xview** is my image viewer of choice, and it came with RH9, but not with

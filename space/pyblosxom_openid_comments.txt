@@ -5,7 +5,7 @@ pyblosxom OpenID comments
 [![janrain](/space/janrain.png)](http://janrain.com/)
 
 For the impatient:  
-&nbsp; Download [comments\_openid.py 0.4](/space/comments_openid.py)  
+&nbsp; Download [comments_openid.py 0.4](/space/comments_openid.py)  
 &nbsp; Download [Python OpenID libraries](http://www.openidenabled.com/python-openid/)  
 &nbsp; Download
   [comments.py](http://pyblosxom.sf.net/blog/registry/input/comments/comments)
@@ -15,7 +15,7 @@ For the impatient:
 
 *Updated 2007-09-24.*
 
-[comments\_openid.py](/space/comments_openid.py) is a
+[comments_openid.py](/space/comments_openid.py) is a
 [PyBlosxom](http://pyblosxom.sf.net/) plugin that allows
 [OpenID](http://openid.net/)-authenticated comments. When used in conjunction
 with the

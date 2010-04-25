@@ -1,6 +1,10 @@
 filling code in emacs
 
-[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)[Emacs](http://gnu.org/software/emacs)
+<div class="img" style="float: right; margin-left: 10px">
+  <img src="/space/gnu.jpg" />
+</div>
+
+[Emacs](http://gnu.org/software/emacs)
 has a massive feature set, and there's also an endless supply of
 [elisp](http://gnu.org/software/emacs/emacs-lisp-intro/html_node/index.html) out
 there. However, for a long time, there was one feature on my Emacs wish list

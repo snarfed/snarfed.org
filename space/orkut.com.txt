@@ -1,6 +1,9 @@
 orkut.com
 
-[![/space/orkut.png](/space/orkut.png)](http://www.orkut.com/Profile.aspx?uid=14200471339695905655)[Orkut](http://orkut.com/)
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <a href="http://orkut.com/"><img src="/space/orkut.png" /></a>
+</div>
+
 is a social networking site that's near and dear to my heart. It's written by a
 good friend of mine named, surprisingly enough,
 [Orkut](http://cs.stanford.edu/~orkut/). He's been writing social networking

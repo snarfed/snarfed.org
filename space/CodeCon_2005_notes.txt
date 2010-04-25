@@ -417,7 +417,7 @@ determined to produce what ever genetic material that you want if it's possible.
 [![Icon-Permalink.png](/Icon-Permalink.png)](#ozymandns)
 
 
-[http://www.doxpara.com/dns\_tc/](http://www.doxpara.com/dns_tc/)
+[http://www.doxpara.com/dns_tc/](http://www.doxpara.com/dns_tc/)
 
 10k-foot view: DNS servers have state. DNS is a distributed network protocol.
 Therefore you can change state across a distributed network. DNS has lots of

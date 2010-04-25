@@ -13,8 +13,8 @@ source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b1-uttoxeter-20040914-src.tgz)
 [Patching
 FAQ](http://www.gnu.org/software/diffutils/manual/html_node/Merging-with-patch.html)
 
-I use [SnipSnap](/space/SnipSnap) as the web server for this site, and I love
-it. However, nothing's perfect, even SnipSnap.
+I originally used [SnipSnap](/space/SnipSnap) as the web server for this site,
+and I loved it. However, nothing's perfect, even SnipSnap.
 
 SnipSnap 0.5.1a introduced a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-392)
 that showed all blog posts as "1" in the recent-changes macro. This was quickly

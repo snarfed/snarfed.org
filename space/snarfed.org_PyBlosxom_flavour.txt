@@ -1,6 +1,8 @@
 snarfed.org PyBlosxom flavour
 
-[![snarfed_flavour_screenshot_thumb.jpg](/space/snarfed_flavour_screenshot_thumb.jpg)](/space/snarfed_flavour_screenshot.jpg)
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <a href="/space/snarfed_flavour_screenshot.jpg"><img src="/space/snarfed_flavour_screenshot_thumb.jpg" /></a>
+</div>
 
 [PyBlosxom](http://snipsnap.org/), the server that runs this site,
 supports

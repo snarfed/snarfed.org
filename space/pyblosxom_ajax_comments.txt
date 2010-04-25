@@ -1,6 +1,8 @@
 pyblosxom ajax comments
 
-![ajax](/space/ajax.jpg)
+<div class="img" style="float: right; margin-left: 10px">
+  <img src="/space/ajax.jpg" />
+</div>
 
 _This patch was applied to the Pyblosxom contributed plugins pack in
 [revision 973](http://pyblosxom.svn.sourceforge.net/viewvc/pyblosxom?view=rev&revision=973).

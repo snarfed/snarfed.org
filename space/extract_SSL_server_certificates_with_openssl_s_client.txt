@@ -6,7 +6,7 @@ extract SSL server certificates with openssl s_client
 
 Ever
 need to troubleshoot SSL connectivity against a server that you don't own? No
-problem! Use the [s\_client](http://www.openssl.org/docs/apps/s_client.html)
+problem! Use the [s_client](http://www.openssl.org/docs/apps/s_client.html)
 command line tool that comes with [OpenSSL](http://www.openssl.org/).
 
 It negotiates an SSL connection, step by step, and prints debugging info in

@@ -1,6 +1,8 @@
 thinkpad keys in firefox
 
-![/space/thinkpad_keys.jpg](/space/thinkpad_keys.jpg)
+<div class="img-shadow" style="float: right; margin-left: 10px">
+  <img src="/space/thinkpad_keys.jpg" />
+</div>
 
 I use a [Thinkpad
 T43](http://www.pc.ibm.com/us/notebooks/thinkpad/t-series/index.html), and I

@@ -1,12 +1,14 @@
 folderstat
 
-![/space/folder.jpg](/space/folder.jpg)
+<div class="img" style="float: right; margin-left: 10px">
+  <img src="/space/folder.jpg" />
+</div>
 
 For the impatient:  
 [Download folderstat.cpp](/space/folderstat.cpp)
 
 [Folderstat](/space/folderstat.cpp) is a program that reports the
-sizes of each of the foldrs in an IMAP account. It uses
+sizes of each of the folders in an IMAP account. It uses
 [pine](http://www.washington.edu/pine/) as an IMAP client, so you'll need to
 have an IMAP account set up in pine, and you'll need to have pine in your path.
 

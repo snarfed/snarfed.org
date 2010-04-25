@@ -1,6 +1,8 @@
 scavenger
 
-![/space/at.jpg](/space/at.jpg)
+<div class="img" style="float: right; margin-left: 10px">
+  <img src="/space/at.jpg" />
+</div>
 
 For the impatient:  
 [Download tarball](/space/scavenger.tar.gz)  

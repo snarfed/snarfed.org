@@ -118,7 +118,7 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
 * [Ego Food](http://egofood.blogspot.com/)
 (_[subscribe](http://egofood.blogspot.com/atom.xml)_) 
 
-* [evan\_tech](http://community.livejournal.com/evan_tech/)
+* [evan_tech](http://community.livejournal.com/evan_tech/)
 (_[subscribe](http://community.livejournal.com/evan_tech/data/atom)_) 
 
 * [Evan's LiveJournal](http://evan.livejournal.com/)

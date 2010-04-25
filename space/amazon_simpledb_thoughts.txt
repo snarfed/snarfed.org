@@ -106,7 +106,7 @@ best described by example. Here's one
 that will return all blue items that cost less than 14.99:
 
     "['Price' < '14.99'] intersection ['Color' = 'Blue']"
-<br class="clearing" />
+
 It's interesting that Amazon went with a custom, proprietary query language,
 as opposed to a subset of SQL like Facebook's
 [FQL](/space/facebook_data_store_api_thoughts). Again, it
