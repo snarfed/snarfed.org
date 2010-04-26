@@ -1,6 +1,4 @@
-2006-10-20
-
-### OpenID server for PyBlosxom
+OpenID server for PyBlosxom
 
 [![openid](/space/openid-logo.png)](http://openid.net/)
 [![pyblosxom](/space/pyblosxom.jpg)](http://pyblosxom.sf.net/)
