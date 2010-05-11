@@ -20,6 +20,12 @@ that allows it to use [Google Talk](http://talk.google.com/)'s
 feature, which is otherwise
 [restricted to the official clients](http://www.innerfence.com/google-shuts-down-infinite-sms).
 
+_Note: If you're on
+[Ubuntu Lucid](http://www.ubuntu.com/products/whatisubuntu/1004features),
+its Pidgin 2.6.6 package has a
+[bug that breaks most Perl plugins](https://bugs.launchpad.net/ubuntu/+source/pidgin/+bug/569078),
+including this one. It should be fixed in the next Pidgin release._
+
 I originally used
 [AIM's SMS support](http://www.aim.com/help_faq/starting_out/getstarted.adp#ten)
 to send text messages to my friends from my computer. It worked, and my
