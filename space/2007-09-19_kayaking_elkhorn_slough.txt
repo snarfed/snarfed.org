@@ -1,13 +1,16 @@
 Kayaking at Elkhorn Slough
 
 <div class="img-shadow">
-[![shorebirds.jpg](/space/shorebirds.jpg)](http://elkhornslough.org/)
+<a href="http://elkhornslough.org/">
+  <img src="/space/shorebirds.jpg" alt="shorebirds.jpg" /></a>
 </div>
 <div class="img-shadow">
-[![otter.jpg](/space/otter.jpg)](http://www.elkhornslough.org/bestshot/060529bs.htm)
+<a href="http://www.elkhornslough.org/bestshot/060529bs.htm">
+  <img src="/space/otter.jpg" alt="otter.jpg" /></a>
 </div>
 <div class="img-shadow">
-[![kayakers.jpg](/space/kayakers.jpg)](http://kayakconnection.com/)
+<a href="http://kayakconnection.com/">
+  <img src="/space/kayakers.jpg" alt="kayakers.jpg" /></a>
 </div>
 <br class="clearing" />
 To celebrate [my dad](http://one-one.net/)'s birthday over the weekend, my

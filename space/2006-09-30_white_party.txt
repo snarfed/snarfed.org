@@ -1,13 +1,16 @@
 White Party
 
 <div class="img-shadow">
-[![white_party_waiter.jpg](/space/white_party_waiter.jpg)](/gallery/white_party)
+<a href="/gallery/white_party">
+  <img src="/space/white_party_waiter.jpg" alt="white_party_waiter.jpg" /></a>
 </div>
 <div class="img-shadow">
-[![white_party_crowd.jpg](/space/white_party_crowd.jpg)](/gallery/white_party)
+<a href="/gallery/white_party">
+  <img src="/space/white_party_crowd.jpg" alt="white_party_crowd.jpg" /></a>
 </div>
 <div class="img-shadow">
-[![white_party_ryan_becca_photo_booth.jpg](/space/white_party_ryan_becca_photo_booth.jpg)](/gallery/white_party_photo_booth)
+<a href="/gallery/white_party_photo_booth">
+  <img src="/space/white_party_ryan_becca_photo_booth.jpg" alt="white_party_ryan_becca_photo_booth.jpg" /></a>
 </div>
 
 Last weekend,

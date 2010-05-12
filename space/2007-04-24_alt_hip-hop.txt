@@ -1,13 +1,16 @@
 Alt Hip-Hop
 
 <div class="img-shadow">
-[![K.Flay](/space/kflay.jpg)](http://kflay.com/)
+<a href="http://kflay.com/">
+  <img src="/space/kflay.jpg" alt="K.Flay" /></a>
 </div>
 <div class="img-shadow">
-[![MC Lars](/space/mc_lars.jpg)](http://mclars.com/)
+<a href="http://mclars.com/">
+  <img src="/space/mc_lars.jpg" alt="MC Lars" /></a>
 </div>
 <div class="img-shadow">
-[![Optimus Rhyme](/space/optimus_rhyme.jpg)](http://optimusrhyme.com/)
+<a href="http://optimusrhyme.com/">
+  <img src="/space/optimus_rhyme.jpg" alt="Optimus Rhyme" /></a>
 </div>
 
 I caught the [MC Frontalot](http://frontalot.com/) show at

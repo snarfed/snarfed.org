@@ -1,7 +1,8 @@
 Tigelleria
 
 <div class="img-shadow">
-[![OpenIDDevCamp](/space/tigelleria.jpg)](http://tigelleria.com/)
+<a href="http://tigelleria.com/">
+  <img src="/space/tigelleria.jpg" alt="OpenIDDevCamp" /></a>
 </div>
 
 Becca and I went out to an intriguing new restaurant,

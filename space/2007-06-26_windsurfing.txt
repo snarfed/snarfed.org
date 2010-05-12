@@ -1,7 +1,8 @@
 Windsurfing!
 
 <div class="img-shadow">
-[![shoreline lake](/space/shoreline.jpg)](http://shorelinelake.com/aquatic/aquatic.htm)
+<a href="http://shorelinelake.com/aquatic/aquatic.htm">
+  <img src="/space/shoreline.jpg" alt="shoreline lake" /></a>
 </div>
 
 _Update: [pictures](/gallery/Windsurfing_at_Shoreline) are up!_

@@ -1,13 +1,16 @@
 New Pictures
 
 <div class="img-shadow">
-[![varghodo_carriage_maulik_shivani](/gallery/maulik_sarjita_wedding/thumbs/varghodo_carriage_maulik_shivani.jpg)](/gallery/maulik_sarjita_wedding)
+<a href="/gallery/maulik_sarjita_wedding">
+  <img src="/gallery/maulik_sarjita_wedding/thumbs/varghodo_carriage_maulik_shivani.jpg" alt="varghodo_carriage_maulik_shivani" /></a>
 </div>
 <div class="img-shadow">
-[![ceremony_maureen_nick_after](/gallery/nick_maureen_wedding/thumbs/ceremony_maureen_nick_after_2.jpg)](/gallery/nick_maureen_wedding)
+<a href="/gallery/nick_maureen_wedding">
+  <img src="/gallery/nick_maureen_wedding/thumbs/ceremony_maureen_nick_after_2.jpg" alt="ceremony_maureen_nick_after" /></a>
 </div>
 <div class="img-shadow">
-[![derek_ryan_kristina](/gallery/pub_crawl/thumbs/derek_ryan_kristina_lick.jpg)](/gallery/pub_crawl)
+<a href="/gallery/pub_crawl">
+  <img src="/gallery/pub_crawl/thumbs/derek_ryan_kristina_lick.jpg" alt="derek_ryan_kristina" /></a>
 </div>
 <br class="clearing" />
 

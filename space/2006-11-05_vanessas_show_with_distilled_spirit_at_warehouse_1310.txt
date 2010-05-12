@@ -1,13 +1,16 @@
 Vanessa's show with Distilled Spirit at Warehouse 1310
 
 <div class="img-shadow">
-[![beauty_marks](/space/beauty_marks.jpg)](http://vanessaart.com/)
+<a href="http://vanessaart.com/">
+  <img src="/space/beauty_marks.jpg" alt="beauty_marks" /></a>
 </div>
 <div class="img-shadow">
-[![warehouse_1310_show](/space/warehouse_1310_show.jpg)](http://www.flickr.com/photos/daniel_meredith/288215083/)
+<a href="http://www.flickr.com/photos/daniel_meredith/288215083/">
+  <img src="/space/warehouse_1310_show.jpg" alt="warehouse_1310_show" /></a>
 </div>
 <div class="img-shadow">
-[![distilled_clothing](/space/distilled_clothing.jpg)](http://distilledclothing.com/)
+<a href="http://distilledclothing.com/">
+  <img src="/space/distilled_clothing.jpg" alt="distilled_clothing" /></a>
 </div>
 
 About a month ago,

@@ -1,13 +1,16 @@
 New Pictures
 
 <div class="img-shadow">
-[![birthday_friday_dinner](/gallery/Birthday_Friday_Dinner/thumbs/table.jpg)](/gallery/Birthday_Friday_Dinner)
+<a href="/gallery/Birthday_Friday_Dinner">
+  <img src="/gallery/Birthday_Friday_Dinner/thumbs/table.jpg" alt="birthday_friday_dinner" /></a>
 </div>
 <div class="img-shadow">
-[![ghost_town_surag_ryan](/gallery/Maulik_Engagement_Party/thumbs/ghost_town_surag_ryan.jpg)](/gallery/Maulik_Engagement_Party)
+<a href="/gallery/Maulik_Engagement_Party">
+  <img src="/gallery/Maulik_Engagement_Party/thumbs/ghost_town_surag_ryan.jpg" alt="ghost_town_surag_ryan" /></a>
 </div>
 <div class="img-shadow">
-[![lauren_aaron](/gallery/Lauren_Aaron_Wedding/thumbs/lauren_aaron.jpg)](/gallery/Lauren_Aaron_Wedding)
+<a href="/gallery/Lauren_Aaron_Wedding">
+  <img src="/gallery/Lauren_Aaron_Wedding/thumbs/lauren_aaron.jpg" alt="lauren_aaron" /></a>
 </div>
 <br class="clearing" />
 New pictures are up! [Maulik's engagement party](/gallery/Maulik_Engagement_Party),

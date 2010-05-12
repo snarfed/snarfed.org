@@ -1,7 +1,8 @@
 Off to GDC
 
 <div class="img-shadow">
-[![GDC 2008 logo](/space/gdc_2008_logo.jpg)](http://gdconf.com/)
+<a href="http://gdconf.com/">
+  <img src="/space/gdc_2008_logo.jpg" alt="GDC 2008 logo" /></a>
 </div>
 
 <br class="clearing" />

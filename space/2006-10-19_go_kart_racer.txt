@@ -29,9 +29,11 @@ hold off on this post until I scanned in my printouts. I didn't start off so
 well, but hey, cut me some slack. I'm showing signs of improvement!
 
 <div class="img-shadow">
-[![practice stats](/space/go_kart_practice_stats_thumb.jpg)](/space/go_kart_practice_stats.jpg)
+<a href="/space/go_kart_practice_stats.jpg">
+  <img src="/space/go_kart_practice_stats_thumb.jpg" alt="practice stats" /></a>
 </div>
 <div class="img-shadow">
-[![race stats](/space/go_kart_race_stats_thumb.jpg)](/space/go_kart_race_stats.jpg)
+<a href="/space/go_kart_race_stats.jpg">
+  <img src="/space/go_kart_race_stats_thumb.jpg" alt="race stats" /></a>
 </div>
 
