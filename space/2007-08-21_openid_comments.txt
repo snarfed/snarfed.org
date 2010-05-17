@@ -6,7 +6,7 @@ OpenID comments
 </div>
 
 A while back, I posted an
-[OpenID server plugin](/space/2006-10-20) for
+[OpenID server plugin](/space/2006-10-20_openid_server_for_pyblosxom) for
 [PyBlosxom](http://pyblosxom.sf.net/), the software that runs this site.
 
 Since then, I've added support for

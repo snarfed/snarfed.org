@@ -26,9 +26,9 @@ initializing PyBlosxom on every single request. Unfortunately,
 
 See also:
    * [about](/space/about)
-   * [Virtual Housewarming](/space/2006-08-23), or why I switched from
+   * [Virtual Housewarming](/space/2006-08-23_virtual_housewarming), or why I switched from
      [SnipSnap](http://snipsnap.org/) on [JVDS](http://jvds.com/) to
      [PyBlosxom](http://pyblosxom.sourceforge.net/) on [pair.com](http://pair.com/)
-   * [Suburbia Ho!](/space/2004-12-02), or why I originally switched from my own
+   * [Suburbia Ho!](/space/2004-12-02_suburbia_ho), or why I originally switched from my own
      server to [JVDS](http://jvds.com/)
    * [software](/space/software), which includes the PyBlosxom plugins I use

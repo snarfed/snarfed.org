@@ -161,7 +161,7 @@ aka [ZeroConf](http://zeroconf.org/)).
 
 p4sync used to be [hosted at
 SourceForge](https://sourceforge.net/projects/p4sync/). Snarfed has its own web
-space and [subversion repository](/space/2004-01-08), though, so SourceForge
+space and [subversion repository](/space/2004-01-08_subversion), though, so SourceForge
 ended up being redundant. We've closed the project there, but we definitely
 appreciated their hospitality. So long, SourceForge, and thanks for all the
 fish!

@@ -4,7 +4,7 @@ Ajax Comments in Pyblosxom
   <a href="/space/pyblosxom_ajax_comments"><img src="/space/ajax.jpg" /></a>
 </div>
 
-Since I [migrated this site](/space/2006-08-23) to
+Since I [migrated this site](/space/2006-08-23_virtual_housewarming) to
 [Pyblosxom](http://pyblosxom.sourceforge.net/), I've been tweaking it here and
 there. My biggest tweak to date has been
 [adding AJAX to comments](/space/pyblosxom_ajax_comments).

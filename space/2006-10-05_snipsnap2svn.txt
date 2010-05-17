@@ -13,7 +13,7 @@ This allows you to use Subversion to examine your snips' change history,
 experiment with alternative SnipSnap storage backends, or migrate from
 SnipSnap to another CMS, such as [PyBlosxom](http://pyblosxom.sourceforge.net/).
 
-Now that I've [migrated to PyBlosxom](/space/2006-08-23), I plan to use
+Now that I've [migrated to PyBlosxom](/space/2006-08-23_virtual_housewarming), I plan to use
 snipsnap2svn to import my site's change history from SnipSnap so it will be
 visible with the [history plugin](/space/pyblosxom_history).
 

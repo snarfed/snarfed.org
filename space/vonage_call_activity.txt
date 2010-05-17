@@ -1,12 +1,12 @@
 vonage call activity
 
 <div class="img" style="float: right; margin-left: 10px">
-  <a href="/space/2004-12-24">
+  <a href="/space/2004-12-24_its_the_phone_stupid">
     <img src="/space/vonage.gif" /></a>
 </div>
 
 I recently downloaded all of my call history from [Vonage](http://vonage.com/),
-which I've [used for years](/space/2004-12-24). It wasn't entirely
+which I've [used for years](/space/2004-12-24_its_the_phone_stupid). It wasn't entirely
 obvious, but it turned out to be pretty straightforward. Check out
 [the](/space/vonage_incoming_calls_example.html)
 [examples](/space/vonage_outgoing_calls_example.html),

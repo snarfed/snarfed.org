@@ -3,12 +3,12 @@ invert mouse in Beyond Good &amp; Evil
 [![/space/two.jpg](/space/two.jpg)](http://beyondgoodevil.com/)[![/space/box.jpg](/space/box.jpg)](http://beyondgoodevil.com/)[![/space/explosion.jpg](/space/explosion.jpg)](http://beyondgoodevil.com/)
 
 _If you like Beyond Good & Evil, you might also like [my
-writeup](/space/2004-11-11) and the [soundtrack](/space/Beyond_Good_&_Evil_soundtrack)._
+writeup](/space/2004-11-11_beyond_good_and_evil) and the [soundtrack](/space/Beyond_Good_&_Evil_soundtrack)._
 
 **Problem**
 
 I recently played the game Beyond Good & Evil, and I [loved every
-minute](/space/2004-11-11) of it. However, it has [a
+minute](/space/2004-11-11_beyond_good_and_evil) of it. However, it has [a
 bug](http://forums.ubi.com/eve/ubb.x?a=tpc&s=400102&f=401101532&m=286101532&r=396101532#396101532)
 that prevents inverting the mouse input, in both "look" and "camera" modes.
 
@@ -69,6 +69,6 @@ per-axis successfully, but doesn't affect DirectInput apps.
 See also:
   * [thinkpad keys in firefox](/space/thinkpad_keys_in_firefox)
   * [windows media player database](/space/windows_media_player_database)
-  * [Beyond Good & Evil writeup](/space/2004-11-11)
+  * [Beyond Good & Evil writeup](/space/2004-11-11_beyond_good_and_evil)
   * [Beyond Good & Evil soundtrack](/space/Beyond_Good_and_Evil_soundtrack)
 
