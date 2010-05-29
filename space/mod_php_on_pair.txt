@@ -1,0 +1,41 @@
+<div class="img" style="float: right; margin-left: 10px">
+  <a href="http://pair.com/">
+    <img src="/space/pair.com.jpg" /></a>
+</div>
+
+Got a shared hosting account on [](http://pair.com/)? Want to run a PHP
+script under Apache's `mod_php` module, instead of as CGI? Here's a tip:
+**don't** put the `.php` file under the `cgi-bin/` directory
+
+This took me literally hours to figure out.
+[Pair's documentation](http://www.pair.com/support/knowledge_base/)
+is generally pretty good, and they have plenty of information about
+[PHP](http://www.pair.com/support/knowledge_base/authoring_development/using_php.html)
+and [CGI](http://www.pair.com/support/knowledge_base/authoring_development/system_cgi_php-cgiwrap.html),
+but not much about `mod_php`.
+
+I was able to run a PHP script as CGI, by adding a `#!/usr/www/cgi-bin/php5.cgi`
+shebang on the first line, but I didn't want to do that to every PHP file. I
+tried copying `/usr/www/cgi-bin/php5.cgi` into my local `cgi-bin/` directory, as
+pair suggests when using cgiwrap, but that also just led to CGI instead of
+`mod_php`.
+
+<div class="img" style="float: left; margin-right: 10px">
+  <a href="http://php.net/">
+    <img src="/space/php.png" /></a>
+</div>
+
+I tried lots of variations of this in my `.htaccess`:
+
+    Action application/php /cgi-sys/php5.cgi
+    AddType application/php .php
+
+...but no luck. It was only when I happened to read their
+[WordPress instructions](http://www.pair.com/support/knowledge_base/authoring_development/tools_of_the_trade_wordpress.html)
+and notice that URLs didn't start with `cgi-bin/` that I finally realized to move
+the PHP file outside that directory.
+
+See also:
+  * [Back!](/space/2009-02-24_back)
+  * [Virtual Housewarming](/space/2006-08-23_virtual_housewarming)
+  * [pair.com: Using PHP](http://www.pair.com/support/knowledge_base/authoring_development/using_php.html)
