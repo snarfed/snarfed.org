@@ -5,7 +5,7 @@ mod_php on pair.com
     <img src="/space/pair.com.jpg" /></a>
 </div>
 
-Got a shared hosting account on [](http://pair.com/)? Want to run a PHP
+Got a shared hosting account on [pair.com](http://pair.com/)? Want to run a PHP
 script under Apache's `mod_php` module, instead of as CGI? Here's a tip:
 *don't* put the `.php` file under the `cgi-bin/` directory.
 
