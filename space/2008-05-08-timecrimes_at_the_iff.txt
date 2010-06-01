@@ -1,9 +1,7 @@
 Timecrimes at the International Film Festival
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://www.landmarktheatres.com/market/SanFrancisco/ClayTheatre.htm">
-    <img src="/space/clay_theatre.jpg" alt="clay theatre" /></a>
-</div>
+<a href="http://www.landmarktheatres.com/market/SanFrancisco/ClayTheatre.htm">
+  <img class="right shadow" src="/space/clay_theatre.jpg" alt="clay theatre" /></a>
 
 I don't live in San Francisco, so it took me a while before I finally
 made it up there for this year's
@@ -15,10 +13,8 @@ aka Los cronocrímenes, by Nacho Vigalondo, at the
 I had no idea what to expect, but it turned out to be entertaining, thought
 provoking, and a lot of fun.
 
-<div class="img-shadow" style="float: left; margin-right: 10px">
-  <a href="http://fest08.sffs.org/films/film_details.php?id=85">
-    <img src="/space/timecrimes.jpg" alt="timecrimes" /></a>
-</div>
+<a href="http://fest08.sffs.org/films/film_details.php?id=85">
+  <img class="left shadow" src="/space/timecrimes.jpg" alt="timecrimes" /></a>
 
 Similar to [Primer](http://primermovie.com/story.html),
 Timecrimes is a take on how ordinary people might handle time travel. I

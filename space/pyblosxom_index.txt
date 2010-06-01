@@ -1,8 +1,6 @@
 index.py
 
-<div class="img" style="float: right; margin-left: 10px">
-  <img src="/space/rolodex.jpg" />
-</div>
+<img class="right" src="/space/rolodex.jpg" />
 
 For the impatient:  
 &nbsp; Download [index.py](/space/index.py)  

@@ -17,10 +17,8 @@ I finally found a free day on Sunday, so I dragged my family to the
 recently either. I'd also met a number of people who had good things to say
 about it, including one of the zoo's handlers.
 
-<div class="img-shadow" style="float: left; margin-right: 10px">
-  <a href="http://www.oaklandzoo.org/meet_the_animals/golden-mantella-frog">
-    <img src="/space/oakland_zoo_green_tree_frog.jpg" /></a>
-</div>
+<a href="http://www.oaklandzoo.org/meet_the_animals/golden-mantella-frog">
+  <img class="left shadow" src="/space/oakland_zoo_green_tree_frog.jpg" /></a>
 
 So, we tried it. It definitely wasn't big, but I didn't mind. It felt low key
 and manageable, and the animals felt closer and more intimate than they might
@@ -41,10 +39,8 @@ absolutely fascinating. I had no idea bats were so expressive! The
 [frogs](http://www.oaklandzoo.org/meet_the_animals/golden-mantella-frog) also drew me in
 for much longer than I expected.
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://www.oaklandzoo.org/meet_the_animals/african-lion">
-    <img src="/space/oakland_zoo_african_lion.jpg" /></a>
-</div>
+<a href="http://www.oaklandzoo.org/meet_the_animals/african-lion">
+  <img class="right shadow" src="/space/oakland_zoo_african_lion.jpg" /></a>
 
 The one animal I was disappointed to miss was the
 [Malayan Sun Bear](http://www.oaklandzoo.org/meet_the_animals/sun-bear). It's

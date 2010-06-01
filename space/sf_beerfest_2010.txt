@@ -1,9 +1,7 @@
 SF Beerfest 2010
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
- <a href="http://sfbeerfest.com/">
-  <img src="/space/sf_beerfest_2010.jpg" alt="sf beerfest 2010" /></a>
-</div>
+<a href="http://sfbeerfest.com/">
+  <img class="right shadow" src="/space/sf_beerfest_2010.jpg" alt="sf beerfest 2010" /></a>
 
 Notes on beer I tried at [SF Beerfest 2010](http://www.sfbeerfest.com/)
 with [Clayton](http://www.facebook.com/profile.php?id=508935265),

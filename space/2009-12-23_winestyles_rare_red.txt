@@ -1,9 +1,7 @@
 WineStyles "Rare Red"
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="http://winestylesstore.com/">
-    <img src="/space/winestyles.jpg" /></a>
-</div>
+<a href="http://winestylesstore.com/">
+  <img class="right" src="/space/winestyles.jpg" /></a>
 
 Everyone loves a good urban myth, right? Well, I had a [wine](/space/wine) at
 a holiday party last weekend that definitely qualifies, and I'm itching to
@@ -16,9 +14,7 @@ flow issue," they'd said, "and we need some help. Can we sell you some good
 stuff under the table? You can't say it's ours, but you can put your house
 label on it, or whatever. It'll sell."
 
-<div class="img-shadow" style="float: left; margin-right: 10px">
-    <img src="/space/oreana_quest_red_wine.jpg" />
-</div>
+<img class="left shadow" src="/space/oreana_quest_red_wine.jpg" />
 
 I don't know why all the secrecy - taxes, contracts with distributors, public
 relations - but it made for a great story. More importantly, the wine itself

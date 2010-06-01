@@ -5,10 +5,7 @@ good, ok, bad, f, nf { font-style: italic; }
 img { vertical-align: text-top; }
 </style>
 
-<div class="img" style="float: right; margin-left: 10px">
-  <img src="/space/film_reel.jpg" alt="film reel" />
-</div>
-
+<img class="right" src="/space/film_reel.jpg" alt="film reel" />
 
 Movies I've watched and want to watch.
 ![good](/good.png) I liked,

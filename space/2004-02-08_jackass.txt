@@ -1,8 +1,6 @@
 Jackass
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <img src="/space/shopping_cart.jpg" />
-</div>
+<img class="right shadow" src="/space/shopping_cart.jpg" />
 
 I just watched [Jackass: The Movie](http://jackassthemovie.com/). The scary part
 is, I loved it.

@@ -1,9 +1,7 @@
 SF Vintners Market 2010 wine
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
- <a href="http://www.sfvintnersmarket.com/">
-  <img src="/space/sf_vintners_market.jpg" alt="wine" /></a>
-</div>
+<a href="http://www.sfvintnersmarket.com/">
+  <img class="right shadow" src="/space/sf_vintners_market.jpg" alt="wine" /></a>
 
 Notes on wines we tasted at
 [SF Vintners Market 2010](http://www.sfvintnersmarket.com/).

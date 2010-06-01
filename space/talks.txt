@@ -1,8 +1,6 @@
 talks
 
-<div class="img" style="float: right; margin-left: 10px">
-  <img src="/space/microphone.jpg" alt="microphone" />
-</div>
+<img class="right" src="/space/microphone.jpg" alt="microphone" />
 
 Talks I've given. Includes dates, locations, slides, video, etc.
 Also see [other lists](/space/lists).

@@ -1,9 +1,7 @@
 Britney Spears concert
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
- <a href="http://en.wikipedia.org/wiki/The_Onyx_Hotel_Tour">
-  <img src="/space/britney_spears_onyx_hotel.jpg" /></a>
-</div>
+<a href="http://en.wikipedia.org/wiki/The_Onyx_Hotel_Tour">
+  <img class="right shadow" src="/space/britney_spears_onyx_hotel.jpg" /></a>
 
 Last night, I went to see [Britney Spears](http://britney.com/) in
 [concert](http://www.britneyspears.com/tour.php).

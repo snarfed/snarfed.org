@@ -51,9 +51,7 @@ people did too, and since each SMS costs money, Google decided to
 Other clients received the error message
 _"SMS_ERROR_11: Sorry we don't support free SMS messaging through this client. Visit http://gmail.com/sms for more info. (Code 405)"_
 
-<div class="img" style="float: right; margin-left: 10px">
-  <img src="/space/sms_phone.jpg" /></a>
-</div>
+<img class="right" src="/space/sms_phone.jpg" /></a>
 
 The restriction is fairly simple, though. The Google Talk servers simply
 look for `sms-v1` or `sms-v1` in the `ext` attribute of `caps:c` (the

@@ -1,9 +1,7 @@
 Spencer on the Go
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://www.yelp.com/biz_photos/COh-CihYh2vllStipFV0dw?select=rFWogu6YbSD0AJRON-xdeA">
-    <img src="/space/spencer_on_the_go_truck.jpg" /></a>
-</div>
+<a href="http://www.yelp.com/biz_photos/COh-CihYh2vllStipFV0dw?select=rFWogu6YbSD0AJRON-xdeA">
+  <img class="right shadow" src="/space/spencer_on_the_go_truck.jpg" /></a>
 
 Last night,
 [Clayton](http://www.facebook.com/profile.php?id=508935265) and I had dinner at
@@ -23,10 +21,8 @@ Still, it's simple and straightforward, and it lets the real star, the food,
 shine through. The menu features French standbys like escargot, ratatouille,
 foie gras, lamb stew, and even frog legs.
 
-<div class="img" style="float: left; margin-right: 10px">
-  <a href="http://www.spenceronthego.com/home.html">
-    <img src="/space/spencer_on_the_go_logo.jpg" /></a>
-</div>
+<a href="http://www.spenceronthego.com/home.html">
+  <img class="left" src="/space/spencer_on_the_go_logo.jpg" /></a>
 
 We tried a number of different dishes, and the pedigree was undoubtedly French -
 heavy, buttery, and rich - and fit for foodies, most of whom discovered

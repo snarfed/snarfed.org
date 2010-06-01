@@ -1,8 +1,6 @@
 Vacation!
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <img src="/space/eiffel_tower.jpg" />
-</div>
+<img class="right shadow" src="/space/eiffel_tower.jpg" />
 
 It's been a while since I've taken a trip, and there's no time like the
 present, so I'm heading out on vacation.

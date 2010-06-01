@@ -1,8 +1,6 @@
 Looking for a roommate in SF?
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <img src="/space/golden_gate.jpg" alt="golden gate" />
-</div>
+<img class="right shadow" src="/space/golden_gate.jpg" alt="golden gate" />
 
 I'm thinking about getting an apartment in San Francisco for a bit. I only
 expect to be there weekday nights, probably Sunday through Wednesday, plus the

@@ -1,10 +1,7 @@
 RSI: Required, Sudden Inactivity
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://en.wikipedia.org/wiki/Repetitive_strain_injury">
-    <img src="/space/xray.jpg" />
-  </a>
-</div>
+<a href="http://en.wikipedia.org/wiki/Repetitive_strain_injury">
+  <img class="right shadow" src="/space/xray.jpg" /></a>
 
 I've come down with a pretty bad case of
 [RSI](http://en.wikipedia.org/wiki/Repetitive_strain_injury). It's awful.

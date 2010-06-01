@@ -1,9 +1,7 @@
 windows media player database
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="http://www.microsoft.com/windows/windowsmedia/default.aspx">
-    <img src="/space/windows_media_player.jpg" /></a>
-</div>
+<a href="http://www.microsoft.com/windows/windowsmedia/default.aspx">
+  <img class="right" src="/space/windows_media_player.jpg" /></a>
 
 I spend most of my time in Linux, [inside VMWare](/space/fedora_core_3_on_vmware),
 but I do use Windows for a few things like music. (VMWare's sound drivers are a

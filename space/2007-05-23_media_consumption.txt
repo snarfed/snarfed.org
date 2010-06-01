@@ -1,9 +1,7 @@
 Media Consumption!
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://www.readysteadybook.com/Article.aspx?page=tommccarthy">
-    <img src="/space/tom_mccarthy.jpg" /></a>
-</div>
+<a href="http://www.readysteadybook.com/Article.aspx?page=tommccarthy">
+  <img class="right shadow" src="/space/tom_mccarthy.jpg" /></a>
 
 I like media. I like it in all its forms, especially the mainstream ones:
 books, movies, TV, and games. I've come across some particularly good stuff
@@ -25,10 +23,8 @@ animated, has no enemies, and only lasts a couple hours. It's overwhelmingly
 immersive, though. In places, the ambience is downright haunting. I couldn't
 stop playing it.
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://www.imdb.com/title/tt0054698/">
-    <img src="/space/breakfast_at_tiffanys.jpg" /></a>
-</div>
+<a href="http://www.imdb.com/title/tt0054698/">
+  <img class="right shadow" src="/space/breakfast_at_tiffanys.jpg" /></a>
 
 [Breakfast at Tiffany's](http://www.imdb.com/title/tt0054698/) is a classic,
 but I hadn't seen it until recently. I thoroughly enjoyed it. The characters

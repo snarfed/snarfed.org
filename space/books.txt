@@ -4,9 +4,7 @@ books
 img { vertical-align: text-top; }
 </style>
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <img src="/space/books.jpg" />
-</div>
+<img class="right shadow" src="/space/books.jpg" />
 
 [Books I'd like to read](#to_read) and
 [books I've read](#read).

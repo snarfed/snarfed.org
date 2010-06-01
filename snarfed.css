@@ -50,31 +50,11 @@ div#page-content {
   min-height: 500px;
 }
 
-div#sidebar, div#sidebar-shadow
-{
-  position: absolute;
-  width: 6em;
-  max-width: 7em;
-  left: .7em;
-  padding: .67em;
-  -moz-border-radius-bottomleft: 1em;
-  -moz-border-radius-bottomright: 1em;
-}
-
 div#sidebar {
-  z-index: 1;
   background-color: #EEE;
   color: #000;
   border: 1px solid #036;
   border-top: none;
-}
-
-div#sidebar-shadow {
-  left: .9em;
-  padding-top: .7em;
-  border: 3px solid #EEE;
-  border-left: none;
-  background-color: #BBB;
 }
 
 .hidden  { display: none; }
@@ -261,6 +241,22 @@ ul {
   padding-left: 1.5em;
 }
 
+.shadow {
+  /* box-shadow: 3px 3px 3px rgba(0,0,0,0.1);  /\* CSS3 *\/ */
+  -moz-box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+  -webkit-box-shadow: 3px 3px 3px rgba(0,0,0,0.2);
+}
+
+img.right {
+  float: right;
+  margin-left: 10px
+}
+
+img.left {
+  float: left;
+  margin-right: 10px
+}
+
 /*
  * Plugins style
  */
@@ -307,31 +303,5 @@ td.gsc-branding-img-noclear {
 img.gsc-branding-img-noclear { margin-bottom: -3px; }
 
 div.openid-error, div.openid-error a { color: red; }
-
-/* css drop shadows. stolen from a list apart, among other places:
- * http://alistapart.com/articles/cssdropshadows/
- */
-div.img-shadow, div.p-shadow {
-  background-image: url(/drop_shadow.gif);
-  background-position: bottom right;
-  margin: 6px 0 0 4px;
-}
-
-div.p-shadow {
-  float:left;  /* so that the div doesn't span the width of the page */
-  padding-left: 0px !important;  /* for firefox */
-  padding-left: 6px;             /* for ie */
-  padding-top: 1px;
-}
-
-div.img-shadow img, div.p-shadow pre {
-  display: block;
-  position: relative;
-  margin: -6px 6px 6px -6px;
-}
-
-div.img-shadow img {
-  margin: -4px 4px 4px -4px !important;  /* for firefox, it's weird w/imgs */
-}
 
 good, ok, bad, f, nf { font-style: italic; }

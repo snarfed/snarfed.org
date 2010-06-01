@@ -10,10 +10,8 @@ so since I work on
 competitive research. (I tried to convince my co-workers that I needed James
 Bond style spy gear, but no luck.)
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://www.lacclink.com/">
-   <img src="/space/pdc_2008_lacc.jpg" alt="pdc 2008 lacc" /></a>
-</div>
+<a href="http://www.lacclink.com/">
+  <img class="right shadow" src="/space/pdc_2008_lacc.jpg" alt="pdc 2008 lacc" /></a>
 
 Drop me a line if you're at PDC too, or if you're just in town and want to catch
 up! I'll be at the conference during the daytime, but I'll be around for

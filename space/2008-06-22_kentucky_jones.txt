@@ -1,9 +1,7 @@
 Kentucky Jones by the Primitive Screwheads
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
- <a href="http://www.sfweekly.com/events/kentucky-jones-and-the-carpet-of-doom-1054004/">
-  <img src="/space/kentucky_jones_sf_weekly.jpg" alt="kentucky jones sf weekly" /></a>
-</div>
+<a href="http://www.sfweekly.com/events/kentucky-jones-and-the-carpet-of-doom-1054004/">
+  <img class="right shadow" src="/space/kentucky_jones_sf_weekly.jpg" alt="kentucky jones sf weekly" /></a>
 
 I've made it to a few of the films in [SF Indie](http://sfindie.com/)'s
 [Hole in the Head](http://holehead.withoutabox.com/) film festival this
@@ -15,10 +13,8 @@ intimate, classic theaters with trellises, beautiful pipe organs, and frescoes
 on the walls and the ceilings. The crowd was mostly alternative and indie,
 fitting the Mission area venues.
 
-<div class="img-shadow" style="float: left; margin-right: 10px">
- <a href="http://www.primitivescrewheads.com/2006/currentshows.htm">
-  <img src="/space/kentucky_jones_poster.jpg" alt="kentucky jones poster" /></a>
-</div>
+<a href="http://www.primitivescrewheads.com/2006/currentshows.htm">
+  <img class="left shadow" src="/space/kentucky_jones_poster.jpg" alt="kentucky jones poster" /></a>
 
 We went to our last show on Friday, 
 the [Primitive Screwheads](http://www.primitivescrewheads.com/)'

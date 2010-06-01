@@ -1,6 +1,4 @@
 railing
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <img src="/space/railing.jpg" />
-</div>
+<img class="right shadow" src="/space/railing.jpg" />
 

@@ -1,9 +1,7 @@
 Vacation!
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://en.wikipedia.org/wiki/Gulf_Shores,_Alabama">
-    <img src="/space/gulf_shores.jpg"" alt="gulf shores" /></a>
-</div>
+<a href="http://en.wikipedia.org/wiki/Gulf_Shores,_Alabama">
+  <img class="right shadow" src="/space/gulf_shores.jpg"" alt="gulf shores" /></a>
 
 I'm heading out on vacation for the next week, hanging out with a herd of family
 in [Gulf Shores, Alabama](http://en.wikipedia.org/wiki/Gulf_Shores,_Alabama). It

@@ -1,8 +1,6 @@
 cdname.py
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <img src="/space/cd.jpg" />
-</div>
+<img class="right shadow" src="/space/cd.jpg" />
 
 For the impatient:  
 [Download cdname.py 0.3](/space/cdname.py-0.3)

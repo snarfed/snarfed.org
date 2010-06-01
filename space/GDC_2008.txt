@@ -83,9 +83,7 @@ making microtransaction middleware, [TwoFish][], a sure sign that this trend has
 ["Free to play, pay for stuff"]: https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6180
 [TwoFish]: http://twofish.com/
 
-<div class="img" style="float: left; margin-right: 10px">
-  <img src="/space/gdc_2008_sword.jpg" />
-</div>
+<img class="left" src="/space/gdc_2008_sword.jpg" />
 
 I have to admit, I consistently found myself dismissing these trends out of
 hand. I don't use social networks much, I don't often "generate content" outside

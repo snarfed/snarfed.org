@@ -1,9 +1,7 @@
 ZAP 2010 wine
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
- <a href="http://www.zinfandel.org/default.asp?n1=14&n2=487">
-  <img src="/space/zinfandel_festival.jpg" alt="wine" /></a>
-</div>
+<a href="http://www.zinfandel.org/default.asp?n1=14&n2=487">
+  <img class="right shadow" src="/space/zinfandel_festival.jpg" alt="wine" /></a>
 
 Notes on
 [wines we tasted at ZAP 2010](/space/2010-02-01_zap_2010).

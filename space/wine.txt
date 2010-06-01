@@ -4,9 +4,7 @@ wine
 img { vertical-align: text-top; }
 </style>
 
-<div class="img" style="float: right; margin-left: 10px">
-  <img src="/space/wine.jpg" alt="wine" />
-</div>
+<img class="right" src="/space/wine.jpg" alt="wine" />
 
 Notes on wine I've tried.
 ![good](/good.png) means I liked it,

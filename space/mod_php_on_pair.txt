@@ -1,9 +1,7 @@
 mod_php on pair.com
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="http://pair.com/">
-    <img src="/space/pair.com.jpg" /></a>
-</div>
+<a href="http://pair.com/">
+  <img class="right" src="/space/pair.com.jpg" /></a>
 
 Got a shared hosting account on [pair.com](http://pair.com/)? Want to run a PHP
 script under Apache's `mod_php` module, instead of as CGI? Here's a tip:
@@ -19,10 +17,8 @@ but not much about `mod_php`. I was able to run a PHP script as CGI, by adding a
 that to every PHP file.
 
 
-<div class="img" style="float: left; margin-right: 10px">
-  <a href="http://php.net/">
-    <img src="/space/php.png" /></a>
-</div>
+<a href="http://php.net/">
+  <img class="left" src="/space/php.png" /></a>
 
 I tried copying `/usr/www/cgi-bin/php5.cgi` into my local `cgi-bin/` directory,
 as pair suggests when using cgiwrap, but that again just led to CGI instead of

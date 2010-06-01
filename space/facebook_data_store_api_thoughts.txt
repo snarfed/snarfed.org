@@ -1,9 +1,7 @@
 Facebook Data Store API Thoughts
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="http://wiki.developers.facebook.com/index.php/Data_Store_API_documentation">
-   <img src="/space/facebook_platform_logo.png" /></a>
-</div>
+<a href="http://wiki.developers.facebook.com/index.php/Data_Store_API_documentation">
+  <img class="right" src="/space/facebook_platform_logo.png" /></a>
 
 On Monday,
 [Facebook](http://facebook.com/) employee

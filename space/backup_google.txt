@@ -1,8 +1,6 @@
 backup_google.sh
 
-<div class="img" style="float: right; margin-left: 10px">
-  <img src="/space/server_parachute.jpg" />
-</div>
+<img class="right" src="/space/server_parachute.jpg" />
 
 [backup_google.sh](/space/backup_google.sh) is a script that backs up data in
 the Google services I use:

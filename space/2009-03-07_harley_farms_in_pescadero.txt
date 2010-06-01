@@ -17,10 +17,8 @@ their own goat cheese, soap, lotion, and other products made from goat milk.
 It was really fun to see the farm and the goats up close, learn about how
 they're raised, and watch the farmers take care of them.
 
-<div class="img-shadow" style="float: left; margin-right: 10px">
-  <a href="http://www.harleyfarms.com/Our-Cheese.htm">
-   <img src="/space/harley_farms_making_cheese.jpg" /></a>
-</div>
+<a href="http://www.harleyfarms.com/Our-Cheese.htm">
+  <img class="left shadow" src="/space/harley_farms_making_cheese.jpg" /></a>
 
 Harley does a brisk business, largely due to how much they open the farm to
 visitors. Anyone can walk right up to their grazing areas and pens, pet the

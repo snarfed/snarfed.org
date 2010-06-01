@@ -1,9 +1,7 @@
 Back from Vacation
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="/gallery/paris_2009/jardin_du_luxembourg_ryan_jeremy.jpg">
-    <img src="/gallery/paris_2009/thumbs/jardin_du_luxembourg_ryan_jeremy.jpg" /></a>
-</div>
+<a href="/gallery/paris_2009/jardin_du_luxembourg_ryan_jeremy.jpg">
+  <img class="right shadow" src="/gallery/paris_2009/thumbs/jardin_du_luxembourg_ryan_jeremy.jpg" /></a>
 
 I'm back from [vacation](/space/2009-10-09_vacation)!
 [Paris](/space/2009-10-28-paris), [Barcelona](/space/2009-10-28-barcelona), and

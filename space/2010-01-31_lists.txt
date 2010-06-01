@@ -1,8 +1,6 @@
 Lists
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <img src="/space/list.gif" alt="scroll" />
-</div>
+<img class="right shadow" src="/space/list.gif" alt="scroll" />
 
 I like to [keep track](/space/lists)
 of some the things I do. Naturally, there are

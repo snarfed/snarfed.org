@@ -1,9 +1,7 @@
 Cirque du Soleil: Ovo
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://www.cirquedusoleil.com/en/shows/ovo/">
-    <img src="/space/cirque_du_soleil_ovo_logo.jpg" /></a>
-</div>
+<a href="http://www.cirquedusoleil.com/en/shows/ovo/">
+  <img class="right shadow" src="/space/cirque_du_soleil_ovo_logo.jpg" /></a>
 
 [Cirque du Soleil](http://www.cirquedusoleil.com/en/) has been in San
 Francisco for the last month or so performing their new show,
@@ -16,10 +14,8 @@ in favor of a more intimate, cabaret style. All the regulars still show up -
 clowns, gymnasts, trapeze artists - but the "world of insects" theme reigns
 supreme.
 
-<div class="img-shadow" style="float: left; margin-right: 10px">
-  <a href="http://www.cirquedusoleil.com/en/shows/ovo/">
-    <img src="/space/cirque_du_soleil_ovo_slack_wire.jpg" /></a>
-</div>
+<a href="http://www.cirquedusoleil.com/en/shows/ovo/">
+  <img class="left shadow" src="/space/cirque_du_soleil_ovo_slack_wire.jpg" /></a>
 
 The music, sets, costumes, and choreography all work together to convey a
 surreal, ground level landscape filled with larger-than-life plants and

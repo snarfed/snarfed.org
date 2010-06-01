@@ -1,9 +1,7 @@
 Barcelona
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="/gallery/barcelona_2009">
-    <img src="/gallery/barcelona_2009/thumbs/la_rambla_ryan.jpg" /></a>
-</div>
+<a href="/gallery/barcelona_2009">
+  <img class="right shadow" src="/gallery/barcelona_2009/thumbs/la_rambla_ryan.jpg" /></a>
 
 I'm glad we made time on our [vacation](/space/2009-10-27-back_from_vacation)
 to hop over to Barcelona, instead of staying solely in
@@ -46,10 +44,8 @@ Also see the [pictures](/gallery/barcelona_2009).
   visiting. It's sad that the stadium and other facilities are barely used
   any more!
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="/gallery/barcelona_2009">
-    <img src="/gallery/barcelona_2009/thumbs/montserrat_ryan_1.jpg" /></a>
-</div>
+<a href="/gallery/barcelona_2009">
+  <img class="right shadow" src="/gallery/barcelona_2009/thumbs/montserrat_ryan_1.jpg" /></a>
 
 * The official language is
   [Catalan](http://en.wikipedia.org/wiki/Catalan_language), which is

@@ -1,8 +1,6 @@
 writing
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <img src="/space/pencil.jpg" />
-</div>
+<img class="right shadow" src="/space/pencil.jpg" />
 
 Occasionally I write things. Here are some of them.
 Also see [other lists](/space/lists).

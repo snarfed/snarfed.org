@@ -1,8 +1,6 @@
 game industry articles and ideas
 
-<div class="img" style="float: right; margin-left: 10px">
-  <img src="/space/nes_controller.jpg" />
-</div>
+<img class="right" src="/space/nes_controller.jpg" />
 
 These are ideas about game development, the game industry, and gaming culture.
 I'd eventually like to write articles on all of them. So far, I've written up a few.

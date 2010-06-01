@@ -1,8 +1,6 @@
 fillcode
 
-<div class="img" style="float: right; margin-left: 10px">
-  <img src="/space/gnu.jpg" />
-</div>
+<img class="right" src="/space/gnu.jpg" />
 
 For the impatient:  
 &nbsp; [Download fillcode.el 0.7.1](/space/fillcode.el)  

@@ -4,9 +4,7 @@ tv
 img { vertical-align: text-top; }
 </style>
 
-<div class="img" style="float: right; margin-left: 10px">
-  <img src="/space/tv.jpg" alt="tv" />
-</div>
+<img class="right" src="/space/tv.jpg" alt="tv" />
 
 
 Television shows I

@@ -1,9 +1,7 @@
 simonitor
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="http://www.simon.com/giftcard/">
-    <img src="/space/simon_giftcard.jpg" /></a>
-</div>
+<a href="http://www.simon.com/giftcard/">
+  <img class="right" src="/space/simon_giftcard.jpg" /></a>
 
 _Updated 11/2/2009._
 

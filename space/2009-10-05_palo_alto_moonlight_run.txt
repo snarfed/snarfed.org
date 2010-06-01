@@ -1,9 +1,7 @@
 Palo Alto Moonlight Run
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="http://www.paloaltoonline.com/moonlight_run/">
-    <img src="/space/palo_alto_moonlight_run_logo.jpg" /></a>
-</div>
+<a href="http://www.paloaltoonline.com/moonlight_run/">
+  <img class="right" src="/space/palo_alto_moonlight_run_logo.jpg" /></a>
 
 As I've [mentioned here before](/space/2006-02-01_running_maps), I don't usually need much
 structure around exercising. I love running, lifting, and playing sports with

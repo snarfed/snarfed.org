@@ -1,8 +1,6 @@
 feeds
 
-<div class="img" style="float: right; margin-left: 10px">
-  <img src="/space/rss.jpg" alt="rss icon" />
-</div>
+<img class="right" src="/space/rss.jpg" alt="rss icon" />
 
 Sites I read regularly. They're mostly friends' blogs and other sites that I
 have a personal connection to.

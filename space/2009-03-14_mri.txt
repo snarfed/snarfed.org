@@ -24,9 +24,7 @@ head, and slide you into the bowels of a big machine. The machine passes a
 series of RF waves through you, which it uses to produce detailed images of
 the inside of your head or body.
 
-<div class="img-shadow" style="float: left; margin-right: 10px">
-  <img src="/space/mri_machine.jpg" />
-</div>
+<img class="left shadow" src="/space/mri_machine.jpg" />
 
 That's all well and good, but it wasn't much comfort while I was actually in
 it. First, I had to lie perfectly still for an hour. No coughing, scratching,

@@ -1,8 +1,6 @@
 filekicker
 
-<div class="img" style="float: right; margin-left: 10px">
-  <img src="/space/kick.jpg" />
-</div>
+<img class="right" src="/space/kick.jpg" />
 
 For the impatient:  
 &nbsp; [Download filekicker 0.2](/space/filekicker.py)  

@@ -105,10 +105,8 @@ clothes, decorate their apartment, and contribute to public spaces. Options
 include downloadable content, free and paid, and the user's own videos and
 photographs.
 
-<div class="img" style="float: left; margin-right: 10px">
-  <a href="http://www.homebetatrial.com/">
-    <img src="/space/gdc_2007_playstation_home.jpg" /></a>
-</div>
+<a href="http://www.homebetatrial.com/">
+  <img class="left" src="/space/gdc_2007_playstation_home.jpg" /></a>
 Home is mostly interesting for its business and product significance, since
 Sony has traditionally avoided running online services for PlayStation
 themselves. As a Second Life clone, it's shallow at best. Sony will probably
@@ -116,10 +114,8 @@ control user-generated content with an iron fist, so robust content creation
 tools seem unlikely. Content will tend toward digital photographs, Sony
 products, and trailers and clips from Sony movies, games, and music.
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://www.mediamolecule.com/games.html">
-    <img src="/space/gdc_2007_little_big_planet.jpg" /></a>
-</div>
+<a href="http://www.mediamolecule.com/games.html">
+  <img class="right shadow" src="/space/gdc_2007_little_big_planet.jpg" /></a>
 Little Big Planet takes the same approach. It's the first AAA product from
 [Media Molecule][], the people behind [Rag Doll Kung Fu][]. It's a rich,
 physics-based, side-scroller sandbox. It will come with some levels built in,
@@ -143,19 +139,15 @@ developers to make their own XBox 360 games. Hackers had done this on other
 consoles for years, but this was the first time a console maker had opened a
 retail console to legitimate homebrew development. It was a big deal.
 
-<div class="img" style="float: left; margin-right: 10px">
-  <a href="http://www.xbox.com/games/livearcade">
-    <img src="/space/gdc_2007_xboxlivearcade.jpg" /></a>
-</div>
+<a href="http://www.xbox.com/games/livearcade">
+  <img class="left" src="/space/gdc_2007_xboxlivearcade.jpg" /></a>
 Even better, another big deal is on its way. In his talk on the past, present,
 and future of XBox Live Arcade, [Chris Satchell][] casually mentioned the next
 big thing for XBL. [He called it Community Arcade][], and described it as the
 natural evolution of XBLA and XNA Game Studio Express.
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://msdn2.microsoft.com/en-us/xna/aa937793.aspx">
-    <img src="/space/gdc_2007_game_studio_express.gif" /></a>
-</div>
+<a href="http://msdn2.microsoft.com/en-us/xna/aa937793.aspx">
+  <img class="right shadow" src="/space/gdc_2007_game_studio_express.gif" /></a>
 Basically, it's YouTube for XBLA. Garage developers will make games, upload
 them, and XBLA users will immediately be able to download them, play them, and
 rate them. No more onerous certification process. Instant gratification!
@@ -185,10 +177,8 @@ user-generated content, it doesn't think content, it thinks _code_. It thinks
 _developers_. This cuts to the core of Microsoft's identity, in the same way
 that content does for Sony.
 
-<div class="img-shadow" style="float: left; margin-right: 10px">
-  <a href="http://www.nintendo.com/consumer/systems/wii/en_na/channelsMii.jsp">
-    <img src="/space/gdc_2007_mii.jpg" /></a>
-</div>
+<a href="http://www.nintendo.com/consumer/systems/wii/en_na/channelsMii.jsp">
+  <img class="left shadow" src="/space/gdc_2007_mii.jpg" /></a>
 [Nintendo][] didn't add anything to their story about user-generated content
 at this GDC. They've dabbled in it with [Animal Crossing][], with [Mii][]s
 on the [Wii][], and they've left the door open with [Channels][]. Regardless,
@@ -285,10 +275,8 @@ Another prevalent theme of this year's GDC was alternative forms of input.
 Conventional examples included the Wiimote and the DS' touch screen and
 microphone, but developers explored more radical controllers as well.
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://www.nintendo.com/channel/ds">
-    <img src="/space/gdc_2007_ds_stylus.jpg" /></a>
-</div>
+<a href="http://www.nintendo.com/channel/ds">
+  <img class="right shadow" src="/space/gdc_2007_ds_stylus.jpg" /></a>
 <a name="wii_ds" href="#wii_ds"><img src="/Icon-Permalink.png" /></a>
 The DS and Wii are here to stay. In Japan, that's an understatement: based on
 sales numbers and anecdotal evidence, the DS is _the_ dominant Japanese game
@@ -330,10 +318,8 @@ surprisingly intuitive.
 [SingStar]: http://www.singstargame.com/
 [Karaoke Revolution]: http://www.konami.com/Konami/ctl3810/cp18756/cl0/Brands?attrib_search=Y&attrib_cnt=1&attrib_id_0=2341&attrib_value_0=Karaoke+Revolution
 
-<div class="img-shadow" style="float: left; margin-right: 10px">
-  <a href="http://www.gamasutra.com/gdc2007/index.php?id=13055">
-    <img src="/space/gdc_2007_needle_thread.jpg" /></a>
-</div>
+<a href="http://www.gamasutra.com/gdc2007/index.php?id=13055">
+  <img class="left shadow" src="/space/gdc_2007_needle_thread.jpg" /></a>
 <a name="challenge" href="#challenge"><img src="/Icon-Permalink.png" /></a>
 Even the [Game Design Challenge][], that perennial favorite, threw its hat in
 the alternate input ring. This year's theme was a controller:
@@ -366,10 +352,8 @@ publishers, just trying to give something back to the community. The more
 interesting characters, though, often fall into a few distinct personalities.
 Behold...the GDC speaker menagerie!
 
-<div class="img-shadow" style="float: left; margin-right: 10px">
-  <a href="http://www.gamasutra.com/gdc2007/index.php?id=13033">
-    <img src="/space/gdc_2007_phil_harrison.jpg" /></a>
-</div>
+<a href="http://www.gamasutra.com/gdc2007/index.php?id=13033">
+  <img class="left shadow" src="/space/gdc_2007_phil_harrison.jpg" /></a>
 <a name="mouthpiece" href="#mouthpiece"><img src="/Icon-Permalink.png" /></a>
 The party mouthpiece is a fairly common species of big-name GDC speaker. These
 speakers' first and only job at GDC is to represent their company, usually
@@ -400,10 +384,8 @@ On the other end of the spectrum is the reluctant role model. This is usually
 a talented developer who makes great games, one of which eventually becomes a
 hit. They're suddenly thrust into the spotlight, whether they like it or not.
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://www.gamespot.com/news/6167123.html">
-    <img src="/space/gdc_2007_chris_taylor.jpg" /></a>
-</div>
+<a href="http://www.gamespot.com/news/6167123.html">
+  <img class="right shadow" src="/space/gdc_2007_chris_taylor.jpg" /></a>
 [Chris Taylor][], of [Total Annihilation][] and [Supreme Commander][] fame,
 exemplified this species at this year's GDC. Chris held court for over an hour
 at his [9am Supreme Commander talk][]. He's hilarious, larger than life, and a
@@ -431,20 +413,16 @@ team. It was sobering, and very inspiring.
 <a name="pretend"></a>
 ### [![Icon-Permalink.png](/Icon-Permalink.png)](#pretend) I Like to Pretend I'm a Game Developer
 
-<div class="img-shadow" style="float: left; margin-right: 10px">
-  <a href="http://www.gamasutra.com/gdc2007/index.php?id=13040">
-    <img src="/space/gdc_2007_awards_miyamoto.jpg" /></a>
-</div>
+<a href="http://www.gamasutra.com/gdc2007/index.php?id=13040">
+  <img class="left shadow" src="/space/gdc_2007_awards_miyamoto.jpg" /></a>
 No, really. Chris' talk reminded me that I really do enjoy pretending I'm part
 of the game development community. Sure, even if I was a developer at one
 point, I know I'm not any more. I still spend a lot of time following the
 industry, though. One of the things I like most about GDC is feeling like I'm
 part of the community, even for just a bit.
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://www.gamasutra.com/gdc2007/index.php?id=13077">
-    <img src="/space/gdc_2007_programmers_challenge.jpg" /></a>
-</div>
+<a href="http://www.gamasutra.com/gdc2007/index.php?id=13077">
+  <img class="right shadow" src="/space/gdc_2007_programmers_challenge.jpg" /></a>
 Events like the platform keynotes, Game Design Challenge, Experimental
 Gameplay Workshop, [Programmer's Challenge][], and [IGF][] and
 [Game Developers Choice Awards][] really drive that home. It doesn't last,

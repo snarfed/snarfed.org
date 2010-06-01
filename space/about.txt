@@ -1,8 +1,6 @@
 about
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <img src="/space/ryan_small.jpg" />
-</div>
+<img class="right shadow" src="/space/ryan_small.jpg" />
 
 I'm Ryan Barrett. I
 [live](/space/2004-12-02_suburbia_ho),

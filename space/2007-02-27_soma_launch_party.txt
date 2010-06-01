@@ -1,10 +1,7 @@
 SoMa Launch Party
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://kemblescott.com/" alt="SoMa cover">
-    <img src="/space/soma.jpg" />
-  </a>
-</div>
+<a href="http://kemblescott.com/" alt="SoMa cover">
+  <img class="right shadow" src="/space/soma.jpg" /></a>
 
 A few years ago, [a friend](http://kemblescott.com/) of
 [a friend](http://www.richterscales.com/jerry)

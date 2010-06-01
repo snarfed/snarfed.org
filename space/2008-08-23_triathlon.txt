@@ -1,9 +1,7 @@
 Triathlon
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="/gallery/tri_for_fun">
-   <img src="/space/tri_for_fun.jpg" alt="tri for fun" /></a>
-</div>
+<a href="/gallery/tri_for_fun">
+  <img class="right shadow" src="/space/tri_for_fun.jpg" alt="tri for fun" /></a>
 
 I ran my first triathlon last weekend!
 [Ken and Tina](http://kenandtina08.com/) and I stayed at
@@ -19,10 +17,8 @@ training. Worse, I ended up going in the second wave, which was very
 competitive. I don't swim much, and I was riding Ken's mountain bike, so the
 swim and the bike were both pretty challenging.
 
-<div class="img-shadow" style="float: left; margin-right: 10px">
-  <a href="/gallery/tri_for_fun">
-   <img src="/gallery/tri_for_fun/thumbs/swim_end_ken.jpg" alt="ken" /></a>
-</div>
+<a href="/gallery/tri_for_fun">
+  <img class="left shadow" src="/gallery/tri_for_fun/thumbs/swim_end_ken.jpg" alt="ken" /></a>
 
 I run pretty regularly, so I figured I'd make up time on that part. I pushed
 hard on the bike, though, so when I got off and started to run, I almost fell

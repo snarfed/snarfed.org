@@ -1,8 +1,6 @@
 archive
 
-<div class="img" style="float: right; margin-left: 10px">
-  <img src="/space/clock_icon.jpg" />
-</div>
+<img class="right" src="/space/clock_icon.jpg" />
 
 Archived posts:
   * [Lists](/space/2010-01-31_lists)

@@ -20,10 +20,8 @@ for market research. After playing
 I was blown away when I first noticed my own personal
 [gameplay statistics](http://steamcommunity.com/id/ryancb/stats/TF2).
 
-<div class="img-shadow" style="float: left; margin-right: 10px">
-  <a href="http://steamcommunity.com/id/ryancb/stats/TF2">
-    <img src="/space/tf2_stats_thumb.jpg" /></a>
-</div>
+<a href="http://steamcommunity.com/id/ryancb/stats/TF2">
+  <img class="left shadow" src="/space/tf2_stats_thumb.jpg" /></a>
 
 There are lots of detailed metrics - how many points I've scored, how long
 I've stayed alive, etc. - all broken down by character class. Each class has

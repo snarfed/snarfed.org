@@ -4,9 +4,7 @@ beer
 img { vertical-align: text-top; }
 </style>
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <img src="/space/beer_taps.jpg" alt="beer taps" />
-</div>
+<img class="right shadow" src="/space/beer_taps.jpg" alt="beer taps" />
 
 [Beer I'd like to try](#to_try) and
 [beer I've tried](#tried).

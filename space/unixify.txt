@@ -1,8 +1,6 @@
 unixify
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <img src="/space/unix.jpg" />
-</div>
+<img class="right shadow" src="/space/unix.jpg" />
 
 *unixify.sh* is a simple shell script I use to sanitize files people send me,
 often from other operating systems.

@@ -1,8 +1,6 @@
 pictures
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <img src="/space/camera.jpg" />
-</div>
+<img class="right shadow" src="/space/camera.jpg" />
 
 (Also see [other lists](/space/lists).)
 

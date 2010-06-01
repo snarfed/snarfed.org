@@ -1,8 +1,6 @@
 folderstat
 
-<div class="img" style="float: right; margin-left: 10px">
-  <img src="/space/folder.jpg" />
-</div>
+<img class="right" src="/space/folder.jpg" />
 
 For the impatient:  
 [Download folderstat.cpp](/space/folderstat.cpp)

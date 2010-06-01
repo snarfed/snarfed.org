@@ -1,8 +1,6 @@
 Upsy Downsy
 
-<div class="img" style="float: right; margin-left: 10px">
-  <img src="/space/smashed.jpg" />
-</div>
+<img class="right" src="/space/smashed.jpg" />
 
 You may or may not have noticed, but yesterday
 [snarfed.org](http://snarfed.org/) was down for a while, then up and down for a

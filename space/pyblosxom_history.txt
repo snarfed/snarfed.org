@@ -1,8 +1,6 @@
 history.py
 
-<div class="img" style="float: right; margin-left: 10px">
-  <img src="/space/clock_icon.jpg" />
-</div>
+<img class="right" src="/space/clock_icon.jpg" />
 
 For the impatient:  
 &nbsp; Download [history.py 0.5](/space/history.py)  

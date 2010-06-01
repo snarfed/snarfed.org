@@ -1,8 +1,6 @@
 filling code in emacs
 
-<div class="img" style="float: right; margin-left: 10px">
-  <img src="/space/gnu.jpg" />
-</div>
+<img class="right" src="/space/gnu.jpg" />
 
 [Emacs](http://gnu.org/software/emacs)
 has a massive feature set, and there's also an endless supply of

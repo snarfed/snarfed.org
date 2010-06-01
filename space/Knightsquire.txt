@@ -1,9 +1,7 @@
 Knightsquire
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://adventuregamers.com/article/id,736/bulog">
-   <img src="/space/knightsquire.jpg" /></a>
-</div>
+<a href="http://adventuregamers.com/article/id,736/bulog">
+  <img class="right shadow" src="/space/knightsquire.jpg" /></a>
 
 [Knightsquire](http://www.mobygames.com/game/knightsquire) is a charming little
 game from indie developer Buloght. It's disappeared from its

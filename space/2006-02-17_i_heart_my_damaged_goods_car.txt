@@ -1,8 +1,6 @@
 I Heart My (Damaged Goods) Car
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-    <img src="/space/mustang_crushed.jpg" />
-</div>
+<img class="right shadow" src="/space/mustang_crushed.jpg" />
 
 Not only is it easy to be bitter about Valentine's Day, it's also fashionable
 and hip. You know the drill. First the "hallmark holiday" refrain, then the
