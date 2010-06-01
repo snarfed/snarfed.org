@@ -51,10 +51,20 @@ div#page-content {
 }
 
 div#sidebar {
+  position: absolute;
+  width: 6em;
+  max-width: 7em;
+  left: .7em;
+  padding: .67em;
   background-color: #EEE;
   color: #000;
   border: 1px solid #036;
   border-top: none;
+
+  -moz-border-radius-bottomleft: 1em;
+  -moz-border-radius-bottomright: 1em;
+  -webkit-border-radius-bottomleft: 1em;
+  -webkit-border-radius-bottomright: 1em;
 }
 
 .hidden  { display: none; }
@@ -66,8 +76,9 @@ img {
   border: none;
   padding: .1em;
 
-  // use better interpolation on IE. see:
-  // http://code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+  /* use better interpolation on IE.
+   * http://code.flickr.com/blog/2008/11/12/on-ui-quality-the-little-things-client-side-image-resizing/
+   */
   -ms-interpolation-mode: bicubic;
 }
 
@@ -256,6 +267,7 @@ img.left {
   float: left;
   margin-right: 10px
 }
+
 
 /*
  * Plugins style
