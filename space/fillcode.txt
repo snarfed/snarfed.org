@@ -28,8 +28,8 @@ function calls, and conditional expressions. It only breaks lines at commas and
 binary operators, and correctly preserves embedded comments and string literals.
 It also normalizes existing whitespace and line breaks.
 
-Fillcode is supported in [Emacs](http://gnu.org/software/emacs/) 21 and 22
-and [XEmacs](http://xemacs.org/), and works with most programming language
+Fillcode is supported in [GNU Emacs](http://gnu.org/software/emacs/) 21 through
+23 and [XEmacs](http://xemacs.org/), and works with most programming language
 major modes, including Java, C, C++, Objective C, Perl, Python, shell, and SQL
 modes.
 
