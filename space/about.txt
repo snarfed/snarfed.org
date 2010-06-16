@@ -2,23 +2,24 @@ about
 
 <img class="right shadow" src="/space/ryan_small.jpg" />
 
-I'm Ryan Barrett. I
-[live](/space/2004-12-02_suburbia_ho),
+I'm Ryan Barrett. I live,
 [work](/space/resume.html), and
 [play](/space/archive)
-in Silicon Valley and San Francisco. See my
+in Silicon Valley and San Francisco.
+I've been posting to this web site on and off
+[since early 2002](/space/snarfed.org_history).
+See my
 [posts](/space/archive),
 [pictures](/space/pictures),
 [software](/space/software),
 and [lists](/space/lists).
 
+Here's my contact info:
+
 email: _[public at ryanb dot org](mailto:public_at_ryanb_dot_org)_  
 Jabber: _[heaven@gmail](xmpp:heaven@gmail.com)_  
 AIM: _[bl4ize](aim:goim?screenname=bl4ize)_  
 ICQ: _[1471094](http://wwp.icq.com/1471094)_  
-
-I've been posting here on and off since early 2002. For more, see
-[snarfed.org's history](/space/snarfed.org_history) and [copyright](/space/copyright).
 
 snarfed.org runs on [PyBlosxom](http://pyblosxom.sf.net/) and
 [Apache](http://httpd.apache.org/), with a custom PyBlosxom
