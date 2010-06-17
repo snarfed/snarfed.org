@@ -1,1 +1,11 @@
-space/robots.txt
+#
+# this file is sent to robots accessing the URL /robots.txt
+#
+User-agent: *
+
+# don't index change history, rdf, or raw entries. (this is nonstandard; it only
+# works w/google.)
+Disallow: /space/*.txt
+Disallow: /space/*.rdf
+Disallow: /space/*history=*
+Disallow: /space/*raw=*
