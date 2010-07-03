@@ -133,6 +133,13 @@ email account.
 <a name="patches"></a>
 ### Patches  [![Icon-Permalink.png](/Icon-Permalink.png)](#patches)
 
+  * Patches that add
+[per-comment hooks](http://code.google.com/p/thematic/issues/detail?id=83)
+(applied in [r661](http://code.google.com/p/thematic/source/detail?r=661))
+and a [comment-meta filter](http://code.google.com/p/thematic/issues/detail?id=82)
+(applied in [r660](http://code.google.com/p/thematic/source/detail?r=660))
+to the [Thematic](http://themeshaper.com/thematic/) Wordpress theme.
+
   * Two minor patches
 ([one](http://pythonpaste.org/archives/message/20080210.035948.3e0d6399.en.html),
 [two](http://pythonpaste.org/archives/message/20080210.185854.234c983e.en.html)) to
