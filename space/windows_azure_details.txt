@@ -706,5 +706,5 @@ never be supported without something like two phase commit, though.
   * [Amazon SimpleDB thoughts](/space/amazon_simpledb_thoughts)
   * [Google App Engine launched](/space/2008-04-07_google_app_engine_launched)
   * [Under the Covers of the App Engine datastore](/space/datastore_talk.html) (slides)
-  * [Yahoo! Open Strategy thoughts](/space/2008-12-16-yos_yahoo_open_strategy)
+  * [Yahoo! Open Strategy thoughts](/space/2008-12-16_yos_yahoo_open_strategy)
   * [Yahoo! Query Language thoughts](/space/yql_yahoo_query_language_thoughts)
