@@ -30,6 +30,7 @@ directly into the Mozilla URL box.
 Happy packaging!
 
 See also:
+
   * [linking libraries with mozilla xpcom](/space/linking_libraries_with_mozilla_xpcom)
   * [palo alto library amazon greasemonkey](/space/palo_alto_library_amazon_greasemonkey)
   * [change firefox's saved passwords](/space/change_firefoxs_saved_passwords)

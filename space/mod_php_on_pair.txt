@@ -33,6 +33,7 @@ and notice that URLs didn't start with `cgi-bin/` that I finally realized I
 should move the PHP file outside that directory.
 
 See also:
+
   * [Back!](/space/2009-02-24_back)
   * [Virtual Housewarming](/space/2006-08-23_virtual_housewarming)
   * [pair.com: Using PHP](http://www.pair.com/support/knowledge_base/authoring_development/using_php.html)

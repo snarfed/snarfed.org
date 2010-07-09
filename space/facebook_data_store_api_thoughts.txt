@@ -247,7 +247,8 @@ different users can have different preference names as well as values.
 Apart from that twist, the preferences API is fairly straightforward and
 unsurprising.
 
-**See also:**
+See also:
+
   * [Amazon SimpleDB thoughts](/space/amazon_simpledb_thoughts)
   * [Google App Engine launched](/space/2008-04-07_google_app_engine_launched)
   * [Under the Covers of the App Engine datastore](/space/datastore_talk.html) (slides)

@@ -223,6 +223,7 @@ Wow. Measuring utilization can be hard in general, but it's even harder in
 real time.
 
 **See also**:
+
   * [Facebook Data Store API Thoughts](/space/facebook_data_store_api_thoughts)
   * [Google App Engine launched](/space/2008-04-07_google_app_engine_launched)
   * [Under the Covers of the App Engine datastore](/space/datastore_talk.html) (slides)

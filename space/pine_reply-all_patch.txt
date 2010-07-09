@@ -60,6 +60,7 @@ to blame Redhat, packagers, or app developers...but for our purposes, the
 workaround above should be good enough.
 
 See also:
+
   * [pine delete attachments on save patch](/space/pine_delete_attachments_on_save_patch)
   * [pine flowed-text patch](/space/pine_flowed-text_patch)
   * [pine remove trailing quote patch](/space/pine_remove_trailing_quote_patch)

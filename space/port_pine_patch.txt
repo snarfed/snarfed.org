@@ -34,6 +34,7 @@ port_pine_patch is copyright 2005 [Ryan Barrett](http://snarfed.org/),
 and is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
 
 See also:
+
   * [pine delete attachments on save patch](/space/pine_delete_attachments_on_save_patch)
   * [pine flowed-text patch](/space/pine_flowed-text_patch)
   * [pine remove trailing quote patch](/space/pine_remove_trailing_quote_patch)

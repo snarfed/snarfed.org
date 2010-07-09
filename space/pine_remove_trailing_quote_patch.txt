@@ -56,6 +56,7 @@ with (C)ompose instead of (R)eply. This is usually encountered when you reply to
 an email, postpone the reply, then resume and attempt to send.
 
 See also:
+
   * [pine delete attachments on save patch](/space/pine_delete_attachments_on_save_patch)
   * [pine flowed-text patch](/space/pine_flowed-text_patch)
   * [pine reply-all patch](/space/pine_reply-all_patch)

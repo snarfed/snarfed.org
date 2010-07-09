@@ -28,6 +28,7 @@ Now, go to the manager page in your SnipSnap, import snips.xml, and you should
 be set!
 
 See also:
+
   * [Rendering SnipSnap snips with XSLT](http://snipsnap.org/space/xml+issue)
   * [Migrating from Radio to SnipSnap with
 XSLT](http://blog.fivesight.com/prb/space/Migrating+Radio+to+SnipSnap)

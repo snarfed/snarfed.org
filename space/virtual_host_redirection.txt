@@ -164,6 +164,7 @@ Finally, let's close off the Configure tag we opened way in the beginning...
 ...restart SnipSnap, and we're done!
 
 See also:
+
   * [servlets with snipsnap](/space/servlets_with_snipsnap)
   * [snipsnap register without email](/space/snipsnap_register_without_email)
   * [snipsnap script macro and python](/space/snipsnap_script_macro_and_python)

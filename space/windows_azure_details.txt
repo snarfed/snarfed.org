@@ -699,7 +699,8 @@ never be supported without something like two phase commit, though.
 
 
 
-**See also:**
+See also:
+
   * [Windows Azure impressions](/space/windows_azure_impressions)
   * [Windows Azure: Overview and Impressions](/space/azure_talk.html) (slides)
   * [Facebook Data Store API Thoughts](/space/facebook_data_store_api_thoughts)

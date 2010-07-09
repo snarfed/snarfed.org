@@ -21,6 +21,7 @@ repository with rsync, like so:
               /path/to/repo backup:~/
 
 See also:
+
   * [subversion and tkdiff](/space/subversion_and_tkdiff)
   * [gnu emacs backup files](/space/gnu_emacs_backup_files)
 

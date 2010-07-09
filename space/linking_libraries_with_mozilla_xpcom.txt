@@ -25,6 +25,7 @@ and edited the EXTRA_DSO_LDOPTS line to look like this:
 Voila, it worked!
 
 See also:
+
   * [trigger scripts for mozilla xpi packages](/space/trigger_scripts_for_mozilla_xpi_packages)
   * [palo alto library amazon greasemonkey](/space/palo_alto_library_amazon_greasemonkey)
   * [change firefox's saved passwords](/space/change_firefoxs_saved_passwords)

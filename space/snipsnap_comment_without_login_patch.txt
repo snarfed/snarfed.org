@@ -30,6 +30,7 @@ the newly rebuilt `snipsnap.jar` into your SnipSnap's `lib/` subdirectory, and c
 the existing jars. Restart SnipSnap and you should be good to go!
 
 See also:
+
   * [snipsnap register without email](/space/snipsnap_register_without_email)
   * [snipscrape](/space/snipscrape)
   * [snipsnap macros](/space/snipsnap_macros)

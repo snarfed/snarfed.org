@@ -75,6 +75,7 @@ Similarly, this function reopens the current buffer in a new location.
           (error "No match for %s in %s" regexp orig-file))))
 
 See also:
+
   * [fillcode](/space/fillcode)
   * [gnu emacs backup files](/space/gnu_emacs_backup_files)
   * [why I don't run shells inside Emacs](/space/why_I_dont_run_shells_inside_Emacs)

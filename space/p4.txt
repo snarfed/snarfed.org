@@ -48,6 +48,7 @@ Barrett](http://snarfed.org/), [Maulik Shah](http://maulik.net/), and
 [Nathan Stoll](http://cs.stanford.edu/~nstoll).
 
 See also:
+
   * [synchronizing mp3 playback](/space/synchronizing_mp3_playback)
   * [libmsntp](/space/libmsntp)
   * [libwebserver shutdown patch](/space/libwebserver_shutdown_patch)

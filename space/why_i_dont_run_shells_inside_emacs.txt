@@ -146,6 +146,7 @@ make shell-mode behave the way I wanted:
 
 <a name="related"></a>
 See also: 
+
   * [synchronizing GNU screen's paste buffer and the X
 selection](/space/synchronizing_GNU_screens_paste_buffer_and_the_X_selection)
   * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs_keybindings_in_GNU_screens_copy-scrollback_mode)

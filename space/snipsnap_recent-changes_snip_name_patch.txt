@@ -32,6 +32,7 @@ subdirectory, over the existing jar. Restart SnipSnap and you should be good to
 go!
 
 See also:
+
   * [snipsnap comment without login patch](/space/snipsnap_comment_without_login_patch)
   * [snipsnap macros](/space/snipsnap_macros)
   * [snipsnap register without email](/space/snipsnap_register_without_email)

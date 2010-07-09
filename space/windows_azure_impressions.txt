@@ -225,7 +225,8 @@ the normal stuff is supposed to work. It's the edge cases that aren't
 documented as well, so they're doubly difficult when they're inconsistent.
 
 
-**See also:**
+See also:
+
   * [Windows Azure details](/space/windows_azure_details)
   * [Windows Azure: Overview and Impressions](/space/azure_talk.html) (slides)
   * [Facebook Data Store API Thoughts](/space/facebook_data_store_api_thoughts)

@@ -29,6 +29,7 @@ being, I use [Live HTTP Headers](http://livehttpheaders.mozdev.org/) to
 capture a valid `SID/GTL` cookie pair and hard code it in the script.
 
 See also:
+
   * [software](/space/software)
   * [download_picasa_album](/space/download_picasa_album)
   * [dotfiles](/space/dotfiles)

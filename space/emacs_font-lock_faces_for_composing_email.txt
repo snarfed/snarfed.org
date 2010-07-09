@@ -45,6 +45,7 @@ to your `~/.emacs`:
 Happy font-locked emailing!
 
 See also:
+
   * [gmail vs pine](/space/gmail_vs_pine)
   * [why I don't run shells inside Emacs](/space/why_I_dont_run_shells_inside_Emacs)
   * [acoc.conf for context diffs](/space/acoc.conf_for_context_diffs)

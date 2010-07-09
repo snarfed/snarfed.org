@@ -103,6 +103,7 @@ resort, if the backup is corrupted too, you can use
 **../metadata.properties.template**, which should always be ok.
 
 See also:
+
   * [Downtime is my favorite
 time](http://nopaper.net/2004/06/15/downtime-is-my-favorite-time.html) on
 [nopaper.net](http://nopaper.net/)
