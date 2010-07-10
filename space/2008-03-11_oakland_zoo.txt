@@ -1,8 +1,7 @@
 Oakland Zoo
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://oaklandzoo.com/"><img src="/space/oakland_zoo_logo.jpg" /></a>
-</div>
+<a href="http://oaklandzoo.com/">
+  <img class="right shadow" src="/space/oakland_zoo_logo.jpg" /></a>
 
 Don't ask me why, but I've been itching to go to the zoo for the past month or
 so. It's been at least a decade since I've been to a zoo, and with all the

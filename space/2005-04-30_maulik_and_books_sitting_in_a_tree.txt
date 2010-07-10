@@ -1,8 +1,7 @@
 Maulik and books, sitting in a tree... 
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://maulik.freeshell.net/Miki.pl?page=Reading+Log.miki"><img src="/space/books.jpg" /></a>
-</div>
+<a href="http://maulik.freeshell.net/Miki.pl?page=Reading+Log.miki">
+  <img class="right shadow" src="/space/books.jpg" /></a>
 
 Recently, [Maulik](/space/Maulik) has been tearing through books, both audio and
 the more traditional paper kind, at a blistering pace. What's more, he has

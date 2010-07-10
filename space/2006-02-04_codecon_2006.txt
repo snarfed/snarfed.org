@@ -1,8 +1,7 @@
 CodeCon 2006
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://www.codecon.org/2006/"><img src="/space/codecon_2006_banner.png" /></a>
-</div>
+<a href="http://www.codecon.org/2006/">
+  <img class="right shadow" src="/space/codecon_2006_banner.png" /></a>
 
 I'll be at [CodeCon](http://www.codecon.org/2006/) next Friday, Saturday, and
 Sunday, at [StudioZ](http://www.studioz.tv/) in SF. I've been since 2003, and

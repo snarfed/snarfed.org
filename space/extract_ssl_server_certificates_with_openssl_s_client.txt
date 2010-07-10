@@ -1,8 +1,7 @@
 extract SSL server certificates with openssl s_client
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="http://www.openssl.org/docs/apps/s_client.html"><img src="/space/ssl_lock.jpg" /></a>
-</div>
+<a href="http://www.openssl.org/docs/apps/s_client.html">
+  <img class="right" src="/space/ssl_lock.jpg" /></a>
 
 Ever
 need to troubleshoot SSL connectivity against a server that you don't own? No

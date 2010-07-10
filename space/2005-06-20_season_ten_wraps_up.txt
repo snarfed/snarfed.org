@@ -1,8 +1,7 @@
 Season ten wraps up
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://sfsymphony.org/"><img src="/space/timpani_symphony.jpg" /></a>
-</div>
+<a href="http://sfsymphony.org/">
+  <img class="right shadow" src="/space/timpani_symphony.jpg" /></a>
 
 I heard the [SF Symphony](http://sfsymphony.org/) last Friday, and as usual, it
 was spectacular. It was the last performance I'll hear this season, so it was

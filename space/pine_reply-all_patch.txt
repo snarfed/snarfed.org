@@ -1,8 +1,7 @@
 pine reply-all patch
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="http://washington.edu/pine/"><img src="/space/pine.png" /></a>
-</div>
+<a href="http://washington.edu/pine/">
+  <img class="right" src="/space/pine.png" /></a>
 
 For the impatient:  
 Patch for Pine [4.58](/space/reply-all.patch.4.58), [4.60

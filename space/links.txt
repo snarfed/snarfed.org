@@ -1,8 +1,7 @@
 links
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="/space/links"><img src="/space/chain.jpg" /></a>
-</div>
+<a href="/space/links">
+  <img class="right" src="/space/chain.jpg" /></a>
 
 We think these sites are cool.
 

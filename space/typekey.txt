@@ -1,8 +1,7 @@
 typekey
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="http://profile.typekey.com/blaize/"><img src="/space/typekey.png" /></a>
-</div>
+<a href="http://profile.typekey.com/blaize/">
+  <img class="right" src="/space/typekey.png" /></a>
 
 [Typekey](http://typekey.com/)
 is a service that provides authentication for commenting on blogs. Seems like a

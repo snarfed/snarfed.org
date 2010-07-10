@@ -1,8 +1,7 @@
 Now, about that name... 
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="/space/cdname.py"><img src="/space/cd.jpg" /></a>
-</div>
+<a href="/space/cdname.py">
+  <img class="right" src="/space/cd.jpg" /></a>
 
 I've released a new version of [cdname.py](/space/cdname.py), which reads
 [CDDB](http://www.gracenote.com/gn_products/cddb.html)/[freedb](http://freedb.org/)

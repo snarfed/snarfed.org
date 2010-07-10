@@ -1,8 +1,7 @@
 snarfed.org SnipSnap theme
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="/space/snarfed_theme_screenshot.jpg"><img src="/space/snarfed_theme_screenshot_thumb.jpg" /></a>
-</div>
+<a href="/space/snarfed_theme_screenshot.jpg">
+  <img class="right shadow" src="/space/snarfed_theme_screenshot_thumb.jpg" /></a>
 
 [SnipSnap](http://snipsnap.org/), the server that used to run this site,
 supports [themes](http://snipsnap.org/space/Themes). They change your

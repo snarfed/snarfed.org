@@ -1,8 +1,7 @@
 Gameplay Statistics on Steam
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://steampowered.com/"><img src="/space/steam_logo.jpg" /></a>
-</div>
+<a href="http://steampowered.com/">
+  <img class="right shadow" src="/space/steam_logo.jpg" /></a>
 
 I love [Valve](http://www.valvesoftware.com/)'s online game platform
 [Steam](http://www.steampowered.com/). If you're not familiar with it, Steam is

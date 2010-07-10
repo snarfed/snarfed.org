@@ -1,8 +1,7 @@
 remove tcsh globbing in history search
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="http://www.tcsh.org/"><img src="/space/tcsh_oystercatcher.jpg" /></a>
-</div>
+<a href="http://www.tcsh.org/">
+  <img class="right" src="/space/tcsh_oystercatcher.jpg" /></a>
 
 _This patch was
 [applied on 8/23/2006](http://mx.gw.com/pipermail/tcsh/2006-August/003726.html).

@@ -1,8 +1,7 @@
 Harley Farms in Pescadero
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://www.harleyfarms.com/"><img src="/space/harley_farms_goats.jpg" /></a>
-</div>
+<a href="http://www.harleyfarms.com/">
+  <img class="right shadow" src="/space/harley_farms_goats.jpg" /></a>
 
 Last weekend, we took off for a day,
 [drove up and down the coast](http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=half+moon+bay,+ca+to+pescadero,+ca&sll=37.469987,-122.433822&sspn=0.210359,0.308304&g=half+moon+bay,+ca&ie=UTF8&ll=37.366883,-122.272339&spn=0.421297,0.616608&z=11),

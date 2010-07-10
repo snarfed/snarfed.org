@@ -1,8 +1,7 @@
 sourceforge
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://sourceforge.net/people/viewprofile.php?user_id=751286"><img src="/space/sourceforge.png" /></a>
-</div>
+<a href="http://sourceforge.net/people/viewprofile.php?user_id=751286">
+  <img class="right shadow" src="/space/sourceforge.png" /></a>
 
 [SourceForge](http://sf.net/)
 is a site that hosts open source projects, similar to

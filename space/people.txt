@@ -1,8 +1,7 @@
 people
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="/space/people"><img src="/space/people.jpg" /></a>
-</div>
+<a href="/space/people">
+  <img class="right" src="/space/people.jpg" /></a>
 
 [Ken Ashcraft](http://keeda.stanford.edu/~kash/)
 

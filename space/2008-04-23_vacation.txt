@@ -1,8 +1,7 @@
 Vacation
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="/space/eden_canyon_house.jpg"><img src="/space/house.jpg" alt="house" /></a>
-</div>
+<a href="/space/eden_canyon_house.jpg">
+  <img class="right shadow" src="/space/house.jpg" alt="house" /></a>
 
 The last couple months have been eventful, to say the least, so I'm happy to say
 that I'm taking a vacation. With any luck, my only decisions on a day to day

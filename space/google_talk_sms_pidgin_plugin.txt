@@ -1,8 +1,7 @@
 google_talk_sms pidgin plugin
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="http://pidgin.im/"><img src="/space/pidgin_full.png" /></a>
-</div>
+<a href="http://pidgin.im/">
+  <img class="right" src="/space/pidgin_full.png" /></a>
 
 [Download google_talk_sms.pl 0.2](/space/google_talk_sms.pl)  
 &nbsp;&nbsp; (requires Pidgin 2.5.2 or above)  
@@ -33,9 +32,8 @@ friends could reply to my texts, but the phone numbers it used were only
 temporary. My friends couldn't initiate conversations with me via SMS;
 I had to text them first.
 
-<div class="img" style="float: left; margin-right: 10px">
-  <a href="http://talk.google.com/"><img src="/space/google_talk_logo.png" /></a>
-</div>
+<a href="http://talk.google.com/">
+  <img class="left" src="/space/google_talk_logo.png" /></a>
 
 When [Google Talk](http://talk.google.com/)
 [added SMS support](http://gmailblog.blogspot.com/2008/12/really-new-in-labs-this-time-sms-text.html),

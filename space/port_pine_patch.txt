@@ -1,8 +1,7 @@
 port_pine_patch
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="http://washington.edu/pine/"><img src="/space/pine.png" /></a>
-</div>
+<a href="http://washington.edu/pine/">
+  <img class="right" src="/space/pine.png" /></a>
 
 For the impatient:  
 [Download port_pine_patch.sh v0.1](/space/port_pine_patch.sh)  

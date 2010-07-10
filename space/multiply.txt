@@ -1,8 +1,7 @@
 multiply
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://ryanb.multiply.com/"><img src="/space/multiply.png" /></a>
-</div>
+<a href="http://ryanb.multiply.com/">
+  <img class="right shadow" src="/space/multiply.png" /></a>
 
 [Multiply](http://multiply.com/)
 is yet another social networking site. It's oriented toward people who want to

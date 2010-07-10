@@ -1,8 +1,7 @@
 Holla! 
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="/space/p4"><img src="/space/p2p.jpg" /></a>
-</div>
+<a href="/space/p4">
+  <img class="right" src="/space/p2p.jpg" /></a>
 
 It took us a while, but we finally packaged up [p4](/space/p4) and [released
 it](http://freshmeat.net/projects/p4). Well, we've only released the backend and

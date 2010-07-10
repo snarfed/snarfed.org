@@ -1,8 +1,7 @@
 SnipSnap register without email
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://snipsnap.org/"><img src="/space/snipsnap-logo.png" /></a>
-</div>
+<a href="http://snipsnap.org/">
+  <img class="right shadow" src="/space/snipsnap-logo.png" /></a>
 
 _This
 article is also [posted on

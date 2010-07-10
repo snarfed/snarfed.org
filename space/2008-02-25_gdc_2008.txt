@@ -1,8 +1,7 @@
 GDC 2008
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="/space/GDC_2008"><img src="/space/gdc_2008_awards.jpg" /></a>
-</div>
+<a href="/space/GDC_2008">
+  <img class="right shadow" src="/space/gdc_2008_awards.jpg" /></a>
 
 
 I'm back from [GDC](http://gdconf.com/). As always, it was inspiring, thought

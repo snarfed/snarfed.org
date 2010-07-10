@@ -1,8 +1,7 @@
 webalizer referrer spam blacklist
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="/space/webalizer_referrer_spam_blacklist"><img src="/space/spam.jpg" /></a>
-</div>
+<a href="/space/webalizer_referrer_spam_blacklist">
+  <img class="right" src="/space/spam.jpg" /></a>
 
 [Referrer
 spam](http://www.spywareinfo.com/articles/referer_spam/) - or by Apache's

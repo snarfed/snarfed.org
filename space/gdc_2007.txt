@@ -59,9 +59,8 @@ game industry's flagship trade show and press event. With E3 downsized to a
 invite-only press junket, and GDC's expo floor [doubling in size][], many
 wondered if GDC would take over E3's crown, for [better][] or [worse][].
 
-<div class="img-shadow" style="float: left; margin-right: 10px">
-  <a href="http://e3expo.com/"><img src="/space/e3_logo.png" /></a>
-</div>
+<a href="http://e3expo.com/">
+  <img class="left shadow" src="/space/e3_logo.png" /></a>
 GDC has come and gone, and the answer seems to be a qualified no. Yes, the
 expo floor was bigger, but as usual, nearly half of it was dedicated to
 closed-door meeting rooms. Sure, there wasn't much focus this year, but
@@ -84,9 +83,8 @@ but it's always worthwhile.
 <a name="user_content"></a>
 ### [![Icon-Permalink.png](/Icon-Permalink.png)](#user_content) User-Generated Content: YouTube for Games
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="http://youtube.com/"><img src="/space/gdc_2007_youtube.png" /></a>
-</div>
+<a href="http://youtube.com/">
+  <img class="right" src="/space/gdc_2007_youtube.png" /></a>
 
 The overriding theme this year can be summed up in three words: [YouTube][]
 for games. Everyone was chasing full-speed after the user-generated content
@@ -194,9 +192,8 @@ focused on: _games_.
 [people]: http://www.freescale.com/webapp/sps/site/overview.jsp?nodeId=01272685077482
 
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="http://gametap.com/"><img src="/space/gdc_2007_gametap_logo.png" /></a>
-</div>
+<a href="http://gametap.com/">
+  <img class="right" src="/space/gdc_2007_gametap_logo.png" /></a>
 <a name="web_2.0" href="#web_2.0"><img src="/Icon-Permalink.png" /></a>
 The PC and web have been home to homebrew game development and user-generated
 content for decades, so they didn't earn the same headlines as Sony and
@@ -222,9 +219,8 @@ YouTubes for games, although they're both Flash-only.
 <a name="outside"></a>
 ### [![Icon-Permalink.png](/Icon-Permalink.png)](#outside) Outside the Mainstream: Million-Subscriber MMOs You've Never Heard Of
 
-<div class="img-shadow" style="float: left; margin-right: 10px">
-  <a href="http://www.webkinz.com/"><img src="/space/gdc_2007_webkinz.jpg" /></a>
-</div>
+<a href="http://www.webkinz.com/">
+  <img class="left shadow" src="/space/gdc_2007_webkinz.jpg" /></a>
 A number of people, Raph Koster and [Daniel James][] among them,
 [drew attention][] to the fact that some of the biggest games in the world
 have flown under the radar of the mainstream game industry. Most are MMOs.
@@ -232,9 +228,8 @@ Some, such as [Club Penguin][] and [Webkinz][], are aimed at kids. Others are
 spinoffs of television shows or other brands. Viacom has launched three,
 including [Virtual Laguna Beach][], in the past six months.
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://flyff.com/"><img src="/space/gdc_2007_flyff.jpg" /></a>
-</div>
+<a href="http://flyff.com/">
+  <img class="right shadow" src="/space/gdc_2007_flyff.jpg" /></a>
 Others, like [Silkroad Online][], [Maple Story][], and [Flyff][], are based
 primarily in China and Korea, and are entirely free. Many of these have
 strikingly narrow, niche gameplay, but still boast millions of subscribers.

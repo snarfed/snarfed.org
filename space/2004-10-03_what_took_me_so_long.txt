@@ -1,8 +1,7 @@
 What took me so long? 
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="http://gnupg.org/"><img src="/space/gnupg.png" /></a>
-</div>
+<a href="http://gnupg.org/">
+  <img class="right" src="/space/gnupg.png" /></a>
 
 I can't imagine why, but I have something of a
 [foil-hat](http://c2.com/cgi/wiki?TinFoilHat) reputation among my friends. They

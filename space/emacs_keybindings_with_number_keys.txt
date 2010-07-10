@@ -1,8 +1,7 @@
 emacs keybindings with number keys
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="http://gnu.org/software/emacs/"><img src="/space/gnu.jpg" /></a>
-</div>
+<a href="http://gnu.org/software/emacs/">
+  <img class="right" src="/space/gnu.jpg" /></a>
 
 I
 use [GNU Emacs](http://gnu.org/software/emacs/), and I love it. However, I had

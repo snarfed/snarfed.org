@@ -1,7 +1,6 @@
 ryan
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="/space/about"><img src="/space/ryan_small.jpg" /></a>
-</div>
+<a href="/space/about">
+  <img class="right" src="/space/ryan_small.jpg" /></a>
 
 See [about](/space/about).

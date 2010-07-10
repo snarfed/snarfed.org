@@ -1,8 +1,7 @@
 snipscrape
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="/space/snipscrape"><img src="/space/scraper.jpg" /></a>
-</div>
+<a href="/space/snipscrape">
+  <img class="right" src="/space/scraper.jpg" /></a>
 
 For the impatient:  
 [Download snipscrape 0.2](/space/snipscrape-0.2.tar.gz)  

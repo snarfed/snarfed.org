@@ -1,8 +1,7 @@
 ditrit
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="/space/ditrit-0.1.tar.gz"><img src="/space/do_the_right_thing.jpg" /></a>
-</div>
+<a href="/space/ditrit-0.1.tar.gz">
+  <img class="right shadow" src="/space/do_the_right_thing.jpg" /></a>
 
 For the impatient:  
 [Download ditrit 0.1](/space/ditrit-0.1.tar.gz)  

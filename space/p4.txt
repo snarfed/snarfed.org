@@ -1,8 +1,7 @@
 p4
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="/space/p4"><img src="/space/notes.png" /></a>
-</div>
+<a href="/space/p4">
+  <img class="right" src="/space/notes.png" /></a>
 
 For the impatient:  
 [Download P4 0.3.1](/space/p4-0.3.1.tar.bz2)  

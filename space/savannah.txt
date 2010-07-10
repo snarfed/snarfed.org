@@ -1,8 +1,7 @@
 savannah
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://savannah.nongnu.org/people/viewprofile.php?user_id=34995"><img src="/space/savannah.png" /></a>
-</div>
+<a href="http://savannah.nongnu.org/people/viewprofile.php?user_id=34995">
+  <img class="right shadow" src="/space/savannah.png" /></a>
 
 [Savannah](http://savannah.nongnu.org/)
 is a site that hosts GNU-related open source projects, similar to

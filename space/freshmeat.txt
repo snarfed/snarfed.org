@@ -1,8 +1,7 @@
 freshmeat
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://freshmeat.net/~blaize/"><img src="/space/freshmeat.jpg" /></a>
-</div>
+<a href="http://freshmeat.net/~blaize/">
+  <img class="right shadow" src="/space/freshmeat.jpg" /></a>
 
 [Freshmeat](http://freshmeat.net/)
 is a directory of open source projects, mostly for \*nix platforms. Unlike

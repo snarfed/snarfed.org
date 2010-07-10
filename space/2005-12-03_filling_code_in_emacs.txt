@@ -1,8 +1,7 @@
 Filling code in Emacs
 
-<div class="img" style="float: right; margin-left: 10px">
-  <a href="/space/fillcode"><img src="/space/gnu.jpg" /></a>
-</div>
+<a href="/space/fillcode">
+  <img class="right" src="/space/gnu.jpg" /></a>
 
 [Emacs](http://gnu.org/software/emacs/) is great, but one of my pet peeves is
 that while it can fill (ie wrap) plain text, it [can't fill source
