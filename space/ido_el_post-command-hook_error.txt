@@ -1,0 +1,31 @@
+ido.el post-command-hook error
+
+<a href="http://gnu.org/software/emacs/">
+  <img class="right" src="/space/gnu.jpg" /></a>
+
+If you use [Emacs](http://gnu.org/software/emacs) 23 and
+[ido](http://www.emacswiki.org/emacs/InteractivelyDoThings), and you see this
+error when you run `ido-switch-buffer`:
+
+> `Error in post-command-hook: (wrong-type-argument sequencep t)`
+
+...you might have an outdated version of `ido.el`. You probably have version
+1.56, from 2002, which is included in many Emacs packages. Details on the bug in
+[this emacs.bugs thread](http://search.gmane.org/?query=%22Issue+with+ido.el+%28post-command-hook%29%22&author=&group=gmane.emacs.bugs&sort=revdate).
+
+Happily, the bug is fixed in the 
+[2009 version of ido.el](http://cvs.savannah.gnu.org/viewvc/*checkout*/emacs/emacs/lisp/ido.el).
+Take a look at your Emacs package and see if it has that version, maybe in
+`/usr/share/emacs/23.1/site-lisp` or somewhere similar. If not, grab it and put
+it somewhere in your path so that it takes precedence over your package's old
+version. Happy editing!
+
+See also:
+
+  * [filling code in emacs](/space/filling_code_in_emacs)
+  * [GNU emacs backup files](/space/gnu_emacs_backup_files)
+  * [emacs page up page down](/space/emacs_page_up_page_down)
+  * [emacs minibuffer-complete-and-exit bug fix](/space/emacs_minibuffer-complete-and-exit_bug_fix)
+  * [emacs keybindings with number keys](/space/emacs_keybindings_with_number_keys)
+  * [why i dont run shells inside emacs](/space/why_i_dont_run_shells_inside_emacs)
+  * [reopen multiple files in emacs buffer-menu-mode](/space/reopen_multiple_files_in_emacs_buffer-menu-mode)
