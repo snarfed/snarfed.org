@@ -6,6 +6,8 @@ img { vertical-align: text-top; }
 
 <img class="right" src="/space/wine.jpg" alt="wine" />
 
+sadf
+
 Notes on wine I've tried.
 ![good](/good.png) means I liked it,
 ![ok](/ok.png) means it was just ok,
@@ -91,25 +93,36 @@ L'Hiver (Mendocino, California)
 **Tried**: 
 [![Icon-Permalink.png](/Icon-Permalink.png)](#tried)
 
+<span title="nathan's 30th bday at press club, 7/24/2010">
+[Mount Eden](http://www.mounteden.com/) (Saratoga, California)  
+[Saratoga Pinot Noir 2007](http://www.cellartracker.com/wine.asp?iWine=873827)
+![ok](/ok.png)
+</span>
+
+<span title="nathan's 30th bday at press club, 7/24/2010">
+[Miner](http://www.minerwines.com/) (Napa, California)  
+[Stagecoach Cabernet Sauvignon 2007](http://www.cellartracker.com/wine.asp?iWine=897848)
+![good](/good.png)
+</span>
+
 <span title="dinner at lolo w/gina, 7/14/2010">
-[Tolosa](http://www.tolosawinery.com/)
+[Tolosa](http://www.tolosawinery.com/) (San Luis Obispo, California)  
 [Edna Ranch Pinot 2007](http://www.cellartracker.com/wine.asp?iWine=813673)
 ![ok](/ok.png)
 </span>
 
 <span title="dinner at lolo w/gina, 7/14/2010">
-[Verasol](http://www.snooth.com/winery/verasol/)
+[Verasol](http://www.snooth.com/winery/verasol/) (Navarra, Spain)  
 [Tempranillo 2008](http://www.cellartracker.com/wine.asp?iWine=738132)
 ![bad](/bad.png)
 </span>
 
-<!--
-forgot this one! :(
 <span title="dinner at lolo w/gina, 7/14/2010">
-[Shiraz]()
+[Puppeteer](http://www.ramcowinegroup.com.au/thepuppeteer.html)
+([Ramco](http://www.ramcowinegroup.com.au/), Murray Valley, South Australia)  
+[Shiraz](http://www.ramcowinegroup.com.au/pup_shiraz.html)
 ![ok](/ok.png)
 </span>
--->
 
 <span title="at gina's place 7/8/2010">
 [Montes](http://www.monteswines.com/english/) (Colchagua, Chile)  
@@ -143,23 +156,6 @@ Pinot Noir:
 [Devil's Gulch 2008](http://www.cellartracker.com/wine.asp?iWine=656556)
 ![ok](/ok.png),
 [Dutton Ranch 2007](http://www.cellartracker.com/wine.asp?iWine=653354)
-![good](/good.png)
-</span>
-
-<span title="wine tasting w/gina 7/6/2010">
-[Balletto](http://www.ballettovineyards.com/)
-(Sonoma, California)  
-Pinot Gris 2008
-![ok](/ok.png),
-[Chardonnay 2006](http://www.cellartracker.com/wine.asp?iWine=372418)
-![good](/good.png),
-[Pinot Noir 2008](http://www.cellartracker.com/wine.asp?iWine=656551)
-![good](/good.png),
-[Zinfandel 2006](http://www.cellartracker.com/wine.asp?iWine=458013)
-![bad](/bad.png),
-[Gewürztraminer 2007](http://www.cellartracker.com/wine.asp?iWine=685771)
-![bad](/bad.png),
-[Winery Block Pinot Noir 2007](http://www.cellartracker.com/wine.asp?iWine=593384)
 ![good](/good.png)
 </span>
 
@@ -614,9 +610,12 @@ Barrel Select Pinot Noir 2007
 </span>
 <span title="hawaii w/gina, june 2010">
 [Garnet Pinot Noir 2008](http://www.saintsbury.com/wine_GarnetPinot.html)
-![good](/good.png)
+![good](/good.png),
 </span>
-
+<span title="nathan's 30th bday at press club, 7/24/2010">
+[Brown Ranch Pinot Noir 2007](http://www.cellartracker.com/wine.asp?iWine=538625)
+![bad](/bad.png)
+</span>
 
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
 [Acorn](http://www.acornwinery.com/) (Sonoma, California)  
@@ -1604,13 +1603,21 @@ Carmenère
 [Estate Cabernet Sauvignon](http://www.montelena.com/show/xmlsite/xml-standard.xml/xsl-vintage.xsl/start_id-jkbohklnopdenmppmfncgjkjgfadinimpabfcodg/category-our_wines/)
 ![good](/good.png),
 [Estate Zinfandel](http://www.montelena.com/show/xmlsite/xml-standard.xml/xsl-vintage.xsl/start_id-hkapnjogbodhippmijaofeagfimdljibmbffdhei/category-our_wines/)
-![bad](/bad.png)
+![bad](/bad.png),
+</span>
+<span title="nathan's 30th bday at press club, 7/24/2010">
+[Napa Cabernet Sauvignon 2006](http://www.cellartracker.com/wine.asp?iWine=617460)
+![good](/good.png)
 </span>
 
 <span title="press club">
 [Hanna](http://www.hannawinery.com/) (Sonoma, California)  
-[Zinfandel](http://www.hannawinery.com/product/69) 2005
+[Bismark Zinfandel 2005](http://www.cellartracker.com/wine.asp?iWine=560376)
 ![good](/good.png)
+</span>,
+<span title="nathan's 30th bday at press club, 7/24/2010">
+[Bismark Zinfandel 2006](http://www.cellartracker.com/wine.asp?iWine=687098)
+![ok](/ok.png)
 </span>
 
 <span title="press club">
@@ -1635,10 +1642,24 @@ Reserve Pinot Noir 2006
 </span>
 
 <span title="cav wine bar w/gretchen before symphony, 6/13/2009">
-[Balleto](http://www.ballettovineyards.com/)
+[Balletto](http://www.ballettovineyards.com/)
 (Sonoma, California)  
 [Zinfandel 2004](http://www.ballettovineyards.com/2004zinfandel.shtml)
-![good](/good.png) ![good](/good.png)
+![good](/good.png) ![good](/good.png),
+</span>
+<span title="wine tasting w/gina 7/6/2010">
+Pinot Gris 2008
+![ok](/ok.png),
+[Chardonnay 2006](http://www.cellartracker.com/wine.asp?iWine=372418)
+![good](/good.png),
+[Pinot Noir 2008](http://www.cellartracker.com/wine.asp?iWine=656551)
+![good](/good.png),
+[Zinfandel 2006](http://www.cellartracker.com/wine.asp?iWine=458013)
+![bad](/bad.png),
+[Gewürztraminer 2007](http://www.cellartracker.com/wine.asp?iWine=685771)
+![bad](/bad.png),
+[Winery Block Pinot Noir 2007](http://www.cellartracker.com/wine.asp?iWine=593384)
+![good](/good.png)
 </span>
 
 <span title="cav wine bar w/gretchen before symphony, 6/13/2009">
