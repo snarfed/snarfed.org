@@ -5,7 +5,7 @@
  * Licensed under GPL v2.
  */
 
-var results_div_id = 'page-content';
+var results_div_id = 'content';
 var results_div_class = 'ajax_search_results';
 var searching_message = '<span class="ajax-message">Searching...</span>';
 
