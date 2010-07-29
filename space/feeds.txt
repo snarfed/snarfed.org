@@ -25,11 +25,8 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
 -->
 
 
-<!--
-*Currently reading:* <a name="read"></a>
--->
-
 <!-- keep this one as is!!! -->
+
 * [Facebook status updates](/space/2009-03-05_facebook_friend_lists)
 
 * [3D Realms News](http://www.3drealms.com/)
