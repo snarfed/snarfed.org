@@ -8,7 +8,7 @@ and you use
 [compact_comments.sh](http://gitorious.org/pyblosxom/pyblosxom-contrib/blobs/master/plugins/comments/plugins/compact_comments.sh)
 to compact your comment files, and you ever need to reverse the process to
 get back to one file per comment - for example, if you're
-[importing them into Wordpress](pyblosxom2wxr) - here's how.
+[importing them into WordPress](pyblosxom2wxr) - here's how.
 
 Following these instructions, all comments in `*-all.cmt` files will be
 extracted to `*-[TIMESTAMP].cmt` files, where `[TIMESTAMP]` is the comment's
