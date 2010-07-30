@@ -1,0 +1,56 @@
+extract compacted PyBlosxom comments
+
+<a href="http://pyblosxom.sf.net/">
+  <img class="right" src="/space/pyblosxom.jpg" /></a>
+
+If you use [PyBlosxom](http://pyblosxom.sourceforge.net/),
+and you use
+[compact_comments.sh](http://gitorious.org/pyblosxom/pyblosxom-contrib/blobs/master/plugins/comments/plugins/compact_comments.sh)
+to compact your comment files, and you ever need to reverse the process to
+get back to one file per comment - for example, if you're
+[importing them into Wordpress](pyblosxom2wxr) - here's how.
+
+Following these instructions, all comments in `*-all.cmt` files will be
+extracted to `*-[TIMESTAMP].cmt` files, where `[TIMESTAMP]` is the comment's
+UNIX timestamp in seconds since the epoch.
+
+First, run these commands:
+
+    # escape a few characters: ` and $
+    sed -i.bak 's/`/\&#96;/g; s/\\$/\&#36;/g;' *-all.cmt
+    
+    # convert and insert cat > EOFs for each individual comment
+    sed -i '/^<?xml version="1.0" encoding="utf-8"?>$/d' *-all.cmt
+    sed -i '/^<items>$/d' *-all.cmt
+    sed -i '/^<\/items>$/d' *-all.cmt
+    sed -i 's/^<\/item>$/<\/item>\nEOF\n/' *-all.cmt
+    sed -i 's/^<item>$/<?xml version="1.0" encoding="utf-8"?>\n<item>/' *-all.cmt
+
+Now, we need to do a multi-line regexp replace across files. Unfortunately,
+[sed can't do this](http://tech.groups.yahoo.com/group/sed-users/message/8629),
+so I resorted to
+[Emacs dired-mode's query-replace-regexp](http://www.gnu.org/software/emacs/manual/html_node/emacs/Operating-on-Files.html#index-search-and-replace-in-multiple-files-_0028in-Dired_0029-3092).
+Other suggestions are welcome! In any case, replace this regexp:
+
+    <\?xml version="1.0" encoding="utf-8"\?>
+    \(.+
+    \)*<pubDate>\(.+\)</pubDate>
+
+with this:
+    
+    cat > \2.cmt <<EOF
+    \&
+
+Finally, evaluate the `cat > EOF` commands injected into the `-all.cmt` files:
+
+    #!/bin/bash
+    for file in *-all.cmt; do
+      base=`basename "$file" -all.cmt`
+      sed -i "s/^cat > /cat > ${base}-/" "$file"
+      source "$file"
+    done
+
+Enjoy!
+
+One known bug: if there are multiple comments with the exact same timestamp for
+a post, this will clobber all but the last one.
