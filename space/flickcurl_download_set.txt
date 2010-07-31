@@ -1,0 +1,27 @@
+flickcurl_download_set.sh
+
+<img class="right" src="flickr.jpg" />
+
+[flickcurl](http://librdf.org/flickcurl/), a command line utility for
+interacting with [Flickr](http://www.flickr.com/), is awesome. I use it to
+download friends' photos. Here's a bash script I use to automate the process of
+downloading all of the photos in a set:
+
+    #!/bin/bash
+    ids=`flickcurl -q photosets.getPhotos "$@" |& \
+           grep -E -o 'ID [0-9]+' | cut -c4-`
+    for id in ids; do
+      wget `flickcurl -q photos.getSizes $id |& \
+              grep -E -o 'http://.+_o.jpg'`
+    done
+
+Save this as `flickcurl_download_set.sh`. Get the id of the photo set you want
+to download. (Hint: it's the last number in the photo set URL, e.g. 
+<code>http://www.flickr.com/photos/user/sets/<strong>12345678901234</strong>/</code>.)
+Then pass the photo set id to this script:
+
+    $ ./flickcurl_download_set.sh 12345678901234
+
+If you want to download a private photo set, just
+[authenticate your Yahoo account with flickcurl](http://librdf.org/flickcurl/api/flickcurl-auth-authenticate.html)
+first.
