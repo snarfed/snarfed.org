@@ -10,7 +10,7 @@ downloading all of the photos in a set:
     #!/bin/bash
     ids=`flickcurl -q photosets.getPhotos "$@" |& \
            grep -E -o 'ID [0-9]+' | cut -c4-`
-    for id in ids; do
+    for id in $ids; do
       wget `flickcurl -q photos.getSizes $id |& \
               grep -E -o 'http://.+_o.jpg'`
     done
