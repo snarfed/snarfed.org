@@ -1,0 +1,31 @@
+sync_wordpress.sh
+
+<a href="http://wordpress.org/">
+  <img class="right" src="wordpress.png" alt="wordpress" /></a>
+
+[sync_wordpress.sh](sync_wordpress.sh) syncs
+[WordPress](http://wordpress.org/), files, plugins, themes, and options
+stored in the database from one WordPress instance to another. The database
+options are also checked into a Subversion repository.
+
+It uses rsync to synchronize files, including WordPress itself, themes,
+plugins, and config files. It then uses mysqldump to dump non-transient
+options in the `wp_options` table, diffs the dump against Subversion
+head, and checks it in. Finally, it diffs the dump against the remote database
+and applies it.
+
+<a href="http://mysql.org/">
+  <img class="left" src="/space/mysql.png" alt="mysql" /></a>
+
+The user is prompted at each step and may choose whether to copy and update
+files, check in the new dump, and apply it remotely. The source and destination
+hostnames, directories, and database connection parameters are configurable in
+variables at the top of the script.
+
+Note: `sync_wordpress.sh` does *not* synchronize posts, pages, comments, or
+other content.
+
+See also:
+
+  * [pyblosxom2wxr](pyblosxom2wxr)
+  * [Remote Database Backup WordPress Plugin](http://www.bin-co.com/blog/2008/10/remote-database-backup-wordpress-plugin/)
