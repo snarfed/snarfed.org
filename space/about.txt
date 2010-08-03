@@ -22,12 +22,13 @@ snarfed.org has been around [since early 2002](/space/snarfed.org_history).
 It's hosted at
 [pair.com](http://pair.com/) on a
 [shared FreeBSD server](http://pair.com/services/web_hosting/).
-It currently runs on [PyBlosxom](http://pyblosxom.sf.net/)
-<!-- and [Apache](http://httpd.apache.org/), -->
+It currently runs on [WordPress](http://wordpress.org/) and the
+[snarfed theme](/).
+It used to run on [PyBlosxom](http://pyblosxom.sf.net/)
 with a custom PyBlosxom
 [flavour](/space/snarfed.org_PyBlosxom_flavour) and
 [plugins](/space/software).
-It _used_ to run on
+Before that, it ran on
 [SnipSnap](http://snipsnap.org/), on a
 [Linux VPS](http://jvds.com/linux.php) at
 [JVDS](http://jvds.com/).

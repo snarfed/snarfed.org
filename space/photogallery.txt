@@ -9,7 +9,7 @@ For the impatient:
 
 [photogallery](/space/photogallery.py) is a
 [PyBlosxom](http://pyblosxom.sf.net/) plugin that displays a photo gallery,
-with thumbnails. [Here's an example.](/gallery/Vegas_2006)
+with thumbnails.
 
 It's fairly basic. It just generates a single page with the thumbnails, linked
 to their full-size pictures. There are config options for captions, number of
