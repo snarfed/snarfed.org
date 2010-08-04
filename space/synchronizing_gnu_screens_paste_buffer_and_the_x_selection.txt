@@ -1,6 +1,8 @@
 synchronizing GNU screen's paste buffer and the X selection
 
-[![terminal.jpg](/space/terminal.jpg)](http://www.gnu.org/software/screen/)[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)[![/space/X_logo.png](/space/X_logo.png)](http://x.org/)
+[![terminal.jpg](/space/terminal.jpg)](http://www.gnu.org/software/screen/)
+[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)
+[![/space/X_logo.png](/space/X_logo.png)](http://x.org/)
 
 I
 hate the mouse. It's good for some things, but not my work. Switching between

@@ -1,6 +1,8 @@
 control arrow keys in rxvt, tcsh, and emacs
 
-[![/space/terminal.jpg](/space/terminal.jpg)](http://rxvt.org/)[![/space/tcsh_oyster_catcher.jpg](/space/tcsh_oyster_catcher.jpg)](http://tcsh.org/)[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)
+[![/space/terminal.jpg](/space/terminal.jpg)](http://rxvt.org/)
+[![/space/tcsh_oyster_catcher.jpg](/space/tcsh_oyster_catcher.jpg)](http://tcsh.org/)
+[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)
 
 I
 use [rxvt](http://rxvt.org/) as my terminal, [tcsh](http://tcsh.org/) as my

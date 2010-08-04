@@ -1,6 +1,8 @@
 Emacs keybindings in GNU screen's copy-scrollback mode
 
-[![terminal.jpg](/space/terminal.jpg)](http://www.gnu.org/software/screen/)[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)[![X_logo.png](/space/X_logo.png)](/space/synchronizing_GNU_screens_paste_buffer_and_the_X_selection)
+[![terminal.jpg](/space/terminal.jpg)](http://www.gnu.org/software/screen/)
+[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)
+[![X_logo.png](/space/X_logo.png)](/space/synchronizing_GNU_screens_paste_buffer_and_the_X_selection)
 
 When I'm working, I pretty much
 live inside [Emacs](http://gnu.org/software/emacs/). It's my IDE, debugger, text

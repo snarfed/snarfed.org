@@ -1,6 +1,7 @@
 snipsnap comment without login patch
 
-[![snipsnap.png](/space/snipsnap.png)](http://snipsnap.org/)[![jetty.png](/space/jetty.png)](http://jetty.mortbay.com/)
+[![snipsnap.png](/space/snipsnap.png)](http://snipsnap.org/)
+[![jetty.png](/space/jetty.png)](http://jetty.mortbay.com/)
 
 For the impatient:  
 [Patch for SnipSnap 1.0b2-uttoxeter](/space/snipsnap-comment-without-login.patch)  

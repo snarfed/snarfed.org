@@ -1,6 +1,10 @@
 trigger scripts for mozilla xpi packages
 
-[![mozilla.png](/space/mozilla.png)](http://mozilla.org/mozilla1.x/)[![ff_icon.png](/space/ff_icon.png)](http://mozilla.org/firefox/)[![camino.png](/space/camino.png)](http://mozilla.org/camino/)[![thunderbird.jpg](/space/thunderbird.jpg)](http://mozilla.org/thunderbird/)[![bugzilla.jpg](/space/bugzilla.jpg)](http://bugzilla.org/)
+[![mozilla.png](/space/mozilla.png)](http://mozilla.org/mozilla1.x/)
+[![ff_icon.png](/space/ff_icon.png)](http://mozilla.org/firefox/)
+[![camino.png](/space/camino.png)](http://mozilla.org/camino/)
+[![thunderbird.jpg](/space/thunderbird.jpg)](http://mozilla.org/thunderbird/)
+[![bugzilla.jpg](/space/bugzilla.jpg)](http://bugzilla.org/)
 
 I've
 been doing some development recently on the [Mozilla](http://mozilla.org/)

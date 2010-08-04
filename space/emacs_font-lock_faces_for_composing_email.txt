@@ -1,6 +1,7 @@
 emacs font-lock faces for composing email
 
-[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)[![pine.png](/space/pine.png)](http://washington.edu/pine/)
+[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)
+[![pine.png](/space/pine.png)](http://washington.edu/pine/)
 
 I
 use [Pine](http://www.washington.edu/pine/) (no, [not GMail](/space/gmail_vs_pine)) as my email client. I set its [alternate

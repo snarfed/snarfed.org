@@ -1,6 +1,8 @@
 validate
 
-[![xhtml.png](/space/xhtml.png)](http://validator.w3.org/check?uri=http://snarfed.org/)[![css.png](/space/css.png)](http://jigsaw.w3.org/css-validator/validator?uri=http://snarfed.org/default.css)[![rss.png](/space/rss.png)](http://feeds.archive.org/validator/check.cgi?url=http://snarfed.org/exec/rss)
+[![xhtml.png](/space/xhtml.png)](http://validator.w3.org/check?uri=http://snarfed.org/)
+[![css.png](/space/css.png)](http://jigsaw.w3.org/css-validator/validator?uri=http://snarfed.org/default.css)
+[![rss.png](/space/rss.png)](http://feeds.archive.org/validator/check.cgi?url=http://snarfed.org/exec/rss)
 
 This site should validate as XHTML (or HTML 4.01), CSS level 2, and RSS 2.0. Try
 it with the [W3C](http://w3c.org)'s validators:
