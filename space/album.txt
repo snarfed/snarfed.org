@@ -11,8 +11,6 @@ used in the slideshow, and a link to the full-sized version is also provided. By
 "web-sized" we mean 800px, but you can define that in the parameters, please see
 **Usage**.
 
-Here is an example [Draw Group](Draw_Group)
-
 **Download**
 
 You can [download MakeAlbum.jar](http://cs.stanford.edu/~maulik/MakeAlbum.jar)

@@ -1,20 +1,14 @@
 New Pictures
 
-<div class="img-shadow">
-<a href="/gallery/Birthday_Friday_Dinner">
-  <img src="/gallery/Birthday_Friday_Dinner/thumbs/table.jpg" alt="birthday_friday_dinner" /></a>
-</div>
-<div class="img-shadow">
-<a href="/gallery/Maulik_Engagement_Party">
-  <img src="/gallery/Maulik_Engagement_Party/thumbs/ghost_town_surag_ryan.jpg" alt="ghost_town_surag_ryan" /></a>
-</div>
-<div class="img-shadow">
-<a href="/gallery/Lauren_Aaron_Wedding">
-  <img src="/gallery/Lauren_Aaron_Wedding/thumbs/lauren_aaron.jpg" alt="lauren_aaron" /></a>
-</div>
-<br class="clearing" />
-New pictures are up! [Maulik's engagement party](Maulik_Engagement_Party),
-[Lauren and Aaron's wedding](Lauren_Aaron_Wedding), and
-[my birthday](Birthday_Friday_Dinner).
+<a href="birthday_friday_dinner">
+  <img class="shadow" src="/w/wp-content/gallery/birthday_friday_dinner/thumbs/thumbs_table.jpg" alt="birthday_friday_dinner" /></a>
+<a href="maulik_engagement_party">
+  <img class="shadow" src="/w/wp-content/gallery/maulik_engagement_party/thumbs/thumbs_ghost_town_surag_ryan.jpg" alt="ghost_town_surag_ryan" /></a>
+<a href="lauren_aaron_wedding">
+  <img class="shadow" src="/w/wp-content/gallery/lauren_aaron_wedding/thumbs/thumbs_lauren_aaron.jpg" alt="lauren_aaron" /></a>
+
+New pictures are up! [Maulik's engagement party](maulik_engagement_party),
+[Lauren and Aaron's wedding](lauren_aaron_wedding), and
+[my birthday](birthday_friday_dinner).
 
 P.S. Happy Halloween!
