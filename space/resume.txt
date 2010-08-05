@@ -23,8 +23,7 @@ Co-founder of Google App Engine and lead engineer on its datastore team. The
 datastore is a large-scale, replicated, distributed structured storage system
 used by both App Engine and other Google products. Includes a dynamic query
 planner, full featured transaction engine, rich structured primary keys,
-real-time index management, and semantic typing. Scales to >100B rows, >1PB of
-data, and >50kqps.
+real-time index management, and semantic typing.
 
 *  March 2006 - Dec. 2006
 
