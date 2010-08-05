@@ -1,7 +1,7 @@
 Gameplay Statistics on Steam
 
 <a href="http://steampowered.com/">
-  <img class="right shadow" src="/space/steam_logo.jpg" /></a>
+  <img class="right shadow" src="steam_logo.jpg" /></a>
 
 I love [Valve](http://www.valvesoftware.com/)'s online game platform
 [Steam](http://www.steampowered.com/). If you're not familiar with it, Steam is
@@ -20,12 +20,12 @@ I was blown away when I first noticed my own personal
 [gameplay statistics](http://steamcommunity.com/id/ryancb/stats/TF2).
 
 <a href="http://steamcommunity.com/id/ryancb/stats/TF2">
-  <img class="left shadow" src="/space/tf2_stats_thumb.jpg" /></a>
+  <img class="left shadow" src="tf2_stats_thumb.jpg" /></a>
 
 There are lots of detailed metrics - how many points I've scored, how long
 I've stayed alive, etc. - all broken down by character class. Each class has
 its own individual report. Even better, I can
-[compare my stats against other people](/space/tf2_stats_comparison.html)
+[compare my stats against other people](tf2_stats_comparison.html)
 to see how I match up. (Clearly, I'm whooping Dan's butt. :P)
 
 Obviously, this is cool. I'm even more excited about the possibilities beyond

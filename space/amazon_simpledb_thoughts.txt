@@ -1,7 +1,7 @@
 Amazon SimpleDB thoughts
 
 <a href="http://aws.amazon.com/">
-  <img class="right" src="/space/amazon_web_services.gif" /></a>
+  <img class="right" src="amazon_web_services.gif" /></a>
 
 [Amazon](http://amazon.com/) recently announced their latest web service,
 [SimpleDB](http://aws.amazon.com/simpledb), to a roar of
@@ -10,7 +10,7 @@ Amazon SimpleDB thoughts
 [hype](http://www.scripting.com/stories/2007/12/15/amazonRemovesTheDatabaseSc.html).
 I finally got a chance to sit down and read through the docs and blog posts,
 and
-[like with the Facebook Data Store API](/space/facebook_data_store_api_thoughts),
+[like with the Facebook Data Store API](facebook_data_store_api_thoughts),
 I've written up my thoughts.
 
 Amazon's
@@ -79,7 +79,7 @@ people to point out this huge piece of SimpleDB's provenance.)
 
 The tuplespaces concept never spread too far beyond of research, but I've
 always loved it, and I've had ["build tuplespaces on top of a
-DHT"](/space/ideas#tuplespaces) on my [list of project ideas](/space/ideas) for
+DHT"](ideas#tuplespaces) on my [list of project ideas](/space/ideas) for
 years. As long as I get to play with it, I don't care if Amazon beat me to the
 punch. After all, they can afford a few more servers and sysadmins than I can.
 
@@ -107,7 +107,7 @@ that will return all blue items that cost less than 14.99:
 
 It's interesting that Amazon went with a custom, proprietary query language,
 as opposed to a subset of SQL like Facebook's
-[FQL](/space/facebook_data_store_api_thoughts). Again, it
+[FQL](facebook_data_store_api_thoughts). Again, it
 almost certainly made it easier for them to develop, but it raises the
 learning curve for developers, not to mention contributing to lock-in somewhat.
 
@@ -224,11 +224,11 @@ real time.
 
 **See also**:
 
-  * [Facebook Data Store API Thoughts](/space/facebook_data_store_api_thoughts)
-  * [Google App Engine launched](/space/2008-04-07_google_app_engine_launched)
-  * [Under the Covers of the App Engine datastore](/space/datastore_talk.html) (slides)
-  * [Windows Azure impressions](/space/windows_azure_impressions)
-  * [Windows Azure details](/space/windows_azure_details)
-  * [Windows Azure: Overview and Impressions](/space/azure_talk.html) (slides)
-  * [Yahoo! Open Strategy thoughts](/space/2008-12-16_yos_yahoo_open_strategy)
-  * [Yahoo! Query Language thoughts](/space/yql_yahoo_query_language_thoughts)
+  * [Facebook Data Store API Thoughts](facebook_data_store_api_thoughts)
+  * [Google App Engine launched](2008-04-07_google_app_engine_launched)
+  * [Under the Covers of the App Engine datastore](datastore_talk.html) (slides)
+  * [Windows Azure impressions](windows_azure_impressions)
+  * [Windows Azure details](windows_azure_details)
+  * [Windows Azure: Overview and Impressions](azure_talk.html) (slides)
+  * [Yahoo! Open Strategy thoughts](2008-12-16_yos_yahoo_open_strategy)
+  * [Yahoo! Query Language thoughts](yql_yahoo_query_language_thoughts)

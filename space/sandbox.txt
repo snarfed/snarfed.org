@@ -7,7 +7,7 @@ import SnipSpaceFactory
 
 factory = SnipSpaceFactory.getInstance() atxs =
 factory.load(str(snip)).getAttachments().getAll() atx_names = ',
-'.join(/space/a.getName() for a in atxs)
+'.join(a.getName() for a in atxs)
 
 print """ This snip is called **%s**. Its attachments are **%s**. """ % (snip,
 atx_names) {script}
@@ -27,5 +27,5 @@ consider this page graffiti'ed
 
 {index}
 
-[bigbrother big brother aim away message logs logging graphs](/space/bigbrother)
+[bigbrother big brother aim away message logs logging graphs](bigbrother)
 

@@ -1,7 +1,7 @@
 nullprpl: pidgin null protocol plugin
 
-[![/space/pidgin_full.png](/space/pidgin_full.png)](http://pidgin.im/)
-[![/space/pidgin_logo.png](/space/pidgin_logo.png)](http://pidgin.im/)
+[![/space/pidgin_full.png](pidgin_full.png)](http://pidgin.im/)
+[![/space/pidgin_logo.png](pidgin_logo.png)](http://pidgin.im/)
 
 Nullprpl is a mock protocol plugin for [Pidgin](http://pidgin.im/) and
 [libpurple](http://developer.pidgin.im/wiki/WhatIsLibpurple). You can create
@@ -16,7 +16,7 @@ See the [Pidgin ticket](http://developer.pidgin.im/ticket/811) and the
 original [SourceForge
 tracker](http://sourceforge.net/tracker/index.php?func=detail&aid=1033153&group_id=235&atid=390395)
 for more. Nullprpl was originally distributed as a stand-alone protocol plugin;
-the last release was [mockprpl 0.3](/space/mockprpl-0.3.tar.bz2).
+the last release was [mockprpl 0.3](mockprpl-0.3.tar.bz2).
 
 Beyond basic buddy list and IM functionality, nullprpl supports presence and
 away/available messages, offline messages, user info, typing notification,

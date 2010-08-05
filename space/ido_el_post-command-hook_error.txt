@@ -1,7 +1,7 @@
 ido.el post-command-hook error
 
 <a href="http://gnu.org/software/emacs/">
-  <img class="right" src="/space/gnu.jpg" /></a>
+  <img class="right" src="gnu.jpg" /></a>
 
 If you use [Emacs](http://gnu.org/software/emacs) 23 and
 [ido](http://www.emacswiki.org/emacs/InteractivelyDoThings), and you see this
@@ -22,10 +22,10 @@ version. Happy editing!
 
 See also:
 
-  * [filling code in emacs](/space/filling_code_in_emacs)
-  * [GNU emacs backup files](/space/gnu_emacs_backup_files)
-  * [emacs page up page down](/space/emacs_page_up_page_down)
-  * [emacs minibuffer-complete-and-exit bug fix](/space/emacs_minibuffer-complete-and-exit_bug_fix)
-  * [emacs keybindings with number keys](/space/emacs_keybindings_with_number_keys)
-  * [why i dont run shells inside emacs](/space/why_i_dont_run_shells_inside_emacs)
-  * [reopen multiple files in emacs buffer-menu-mode](/space/reopen_multiple_files_in_emacs_buffer-menu-mode)
+  * [filling code in emacs](filling_code_in_emacs)
+  * [GNU emacs backup files](gnu_emacs_backup_files)
+  * [emacs page up page down](emacs_page_up_page_down)
+  * [emacs minibuffer-complete-and-exit bug fix](emacs_minibuffer-complete-and-exit_bug_fix)
+  * [emacs keybindings with number keys](emacs_keybindings_with_number_keys)
+  * [why i dont run shells inside emacs](why_i_dont_run_shells_inside_emacs)
+  * [reopen multiple files in emacs buffer-menu-mode](reopen_multiple_files_in_emacs_buffer-menu-mode)

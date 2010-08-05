@@ -1,6 +1,6 @@
 GDC 2006
 
-[![/space/gdc2006.jpg](/space/gdc2006.jpg)](http://gdconf.com/)
+[![/space/gdc2006.jpg](gdc2006.jpg)](http://gdconf.com/)
 
 This was my fifth year at
 [GDC](http://gdconf.com/), and as always, it's a lot of fun to take a break for
@@ -76,7 +76,7 @@ months...
 <a name="budgets"></a>
 ### [![Icon-Permalink.png](/Icon-Permalink.png)](#budgets) Big budgets and the return of the garage developer
 
-A common refrain at [last year's GDC](/space/GDC_2005) was the unstoppable
+A common refrain at [last year's GDC](GDC_2005) was the unstoppable
 ballooning of game budgets and teams. Due to the need for higher and higher
 quality assets, as well as marketing and IP licenses, a next-gen AAA game can
 easily cost upwards of $10M. Among other things, this means that publishers are
@@ -215,7 +215,7 @@ It was all business. We discussed fraud, session and chat logs, interaction with
 law enforcement (proactive, e.g. death threats in chat, and reactive, e.g.
 subpoenas), ethics vs. legality, and how to use demographic and technical
 information. We even discussed SoX! I've [gained a fair amount of
-experience](/space/resume.html) with this stuff at work, so I
+experience](resume.html) with this stuff at work, so I
 even contributed a little.
 
 I was particularly encouraged to hear that many companies are separating
@@ -239,7 +239,7 @@ themselves.
 [Tim Sweeney](http://www.cmpevents.com/gd06/a.asp?option=G&V=3&id=192499) of
 [Epic Games](http://epicgames.com/) drove this home in his
 [talk](http://www.cmpevents.com/gd06/a.asp?option=C&V=11&SessID=1540). Like
-[last year](/space/GDC_2005#sweeney), he described how Epic consciously designed
+[last year](GDC_2005#sweeney), he described how Epic consciously designed
 the [Unreal 3](http://www.unrealtechnology.com/html/technology/ue30.shtml)
 toolchain to empower artist and designer productivity, even when it meant
 sacrificing performance. He showed the UE3 shader, materials, level, and script
@@ -401,7 +401,7 @@ notes. I won't try to do better than refer you to them.
 <a name="molyneux"></a> [![Icon-Permalink.png](/Icon-Permalink.png)](#molyneux)
 I was anxious to hear [Peter
 Molyneux](http://www.cmpevents.com/gd06/a.asp?option=G&V=3&id=188017) talk about
-game design again this year. He was fascinating [last year](/space/GDC_2005#molyneux), and [this
+game design again this year. He was fascinating [last year](GDC_2005#molyneux), and [this
 year](http://www.cmpevents.com/gd06/a.asp?option=C&V=11&SessID=2508) looked to
 be equally compelling. Unfortunately, [his talk was
 cancelled](http://www.gamespot.com/news/6146650.html). I was disappointed.
@@ -539,14 +539,14 @@ of](GDC_2005#allard).
 with its jaw-dropping good looks, and
 [Dreamfall](http://www.gamespot.com/xbox/adventure/longestjourney2wt/news.html?sid=6146566),
 sequel to The Longest Journey, [which I
-loved](/space/2005-08-04_the_longest_journey).
+loved](2005-08-04_the_longest_journey).
 
 <a name="extra"></a>
 ### [![Icon-Permalink.png](/Icon-Permalink.png)](#extra) Extracurriculars!
 
-[![/space/choiceawards.jpg](/space/choiceawards.jpg)](http://www.gamechoiceawards.com/gdca_6th.htm)
-[![/space/igf.jpg](/space/igf.jpg)](http://igf.com/)
-[![/space/vglive.jpg](/space/vglive.jpg)](http://www.gdconf.com/networking/VGL.htm)
+[![/space/choiceawards.jpg](choiceawards.jpg)](http://www.gamechoiceawards.com/gdca_6th.htm)
+[![/space/igf.jpg](igf.jpg)](http://igf.com/)
+[![/space/vglive.jpg](vglive.jpg)](http://www.gdconf.com/networking/VGL.htm)
 
 One of my favorite parts of GDC every year is the extracurriculars - the awards
 ceremonies, the booth crawls, the concerts, and the late nights drinking with

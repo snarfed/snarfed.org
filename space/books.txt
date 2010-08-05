@@ -4,7 +4,7 @@ books
 img { vertical-align: text-top; }
 </style>
 
-<img class="right shadow" src="/space/books.jpg" />
+<img class="right shadow" src="books.jpg" />
 
 [Books I'd like to read](#to_read) and
 [books I've read](#read).
@@ -16,8 +16,8 @@ img { vertical-align: text-top; }
 Also see
 [Maulik's](http://maulik.freeshell.net/Miki.pl?page=Reading+Log.miki) and
 [Jon's](http://catastrophewaitress.infogami.com/books) reading lists,
-[movies](/space/movies), [games](/space/games), and
-[other lists](/space/lists).
+[movies](movies), [games](/space/games), and
+[other lists](lists).
 
 <a name="to_read"></a>
 **Books I'd like to read**: 

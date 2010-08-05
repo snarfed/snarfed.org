@@ -1,8 +1,8 @@
 Google Mashup Editor is Live
 
-[![google code](/space/google_code.png)](http://code.google.com/)
-[![mashup](/space/mashup.jpg)](http://en.wikipedia.org/wiki/Mashup_\(web_application_hybrid\))
-[![katamari](/space/katamari.jpg)](http://katamari.namco.com/)
+[![google code](google_code.png)](http://code.google.com/)
+[![mashup](mashup.jpg)](http://en.wikipedia.org/wiki/Mashup_\(web_application_hybrid\))
+[![katamari](katamari.jpg)](http://katamari.namco.com/)
 
 Stick a fork in us,
 [we're done](http://www.google.com/intl/en/press/pressrel/developerday_20070530.html)!
@@ -16,4 +16,4 @@ Here's a screenshot.
 Feel free to [take a quick tour](http://code.google.com/gme/tour/tour1.html),
 or just jump right in and [try it out!](http://googlemashups.com/)
 
-[![screenshot](/space/mashup_editor.png)](http://code.google.com/gme/tour/tour1.html)
+[![screenshot](mashup_editor.png)](http://code.google.com/gme/tour/tour1.html)

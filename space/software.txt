@@ -1,25 +1,25 @@
 software
 
-![/space/bolthead.png](/space/bolthead.png)![/space/maze.png](/space/maze.png)![/space/computer.png](/space/computer.png)
+![/space/bolthead.png](bolthead.png)![/space/maze.png](/space/maze.png)![/space/computer.png](/space/computer.png)
 
 Open source software I've [written](#projects) and
 [contributed to](#patches). Unless otherwise noted, everything
-is public domain. Also see [other lists](/space/lists).
+is public domain. Also see [other lists](lists).
 
 <a name="projects"></a>
 ### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](#projects)
 
-  * [unixify.sh](/space/unixify) is a simple shell script I use to sanitize
+  * [unixify.sh](unixify) is a simple shell script I use to sanitize
 filenames and files people send me from other operating systems.
 
-  * [backup_google.sh](/space/backup_google) is a shell script
+  * [backup_google.sh](backup_google) is a shell script
     that backs up data from Google
 [Contacts](http://www.google.com/contacts),
 [Calendar](http://calendar.google.com/),
 [Reader](http://www.google.com/reader/), and
 [Tasks](https://mail.google.com/tasks/canvas).
 
-  * [google_talk_sms.pl](/space/google_talk_sms_pidgin_plugin),
+  * [google_talk_sms.pl](google_talk_sms_pidgin_plugin),
 a [Pidgin](http://pidgin.im/) plugin that enables
 [Google Talk](http://talk.google.com/)'s
 [SMS text messaging](http://gmailblog.blogspot.com/2008/12/really-new-in-labs-this-time-sms-text.html)
@@ -30,103 +30,103 @@ feature.
 [openid-consumer](http://openid-consumer.appspot.com/), three
 [Google App Engine](http://code.google.com/appengine/)
 [sample apps](http://code.google.com/p/google-app-engine-samples/). See
-[my announcement](/space/2008-04-07_google_app_engine_launched) for details.
+[my announcement](2008-04-07_google_app_engine_launched) for details.
 
   * [openid-test](http://code.google.com/p/openid-test/) is an
     interoperability test suite for [OpenID](http://openid.net/).
 
-  * [download_picasa_album.sh](/space/download_picasa_album) downloads entire
+  * [download_picasa_album.sh](download_picasa_album) downloads entire
 [Picasa Web](http://picasaweb.google.com/) photo albums.
 
   * [PyBlosxom](http://pyblosxom.sourceforge.net/) is a lightweight weblog
 platform, based on [Blosxom](http://blosxom.com/) and written in Python.
 
-  * [simonitor](/space/simonitor) screen scrapes [simon.com](http://simon.com/)
+  * [simonitor](simonitor) screen scrapes [simon.com](http://simon.com/)
 to fetch the available balance on one or more Simon gift cards.
 
-  * An [OpenID comments plugin for PyBlosxom](/space/pyblosxom_openid_comments).
+  * An [OpenID comments plugin for PyBlosxom](pyblosxom_openid_comments).
 
-  * An [OpenID server plugin for PyBlosxom](/space/pyblosxom_openid_server).
+  * An [OpenID server plugin for PyBlosxom](pyblosxom_openid_server).
 
-  * [AJAX site search with the Google AJAX Search API](/space/site_search_with_the_Google_AJAX_Search_API).
+  * [AJAX site search with the Google AJAX Search API](site_search_with_the_Google_AJAX_Search_API).
 
-  * [index](/space/pyblosxom_index) is a [PyBlosxom](http://pyblosxom.sf.net/)
+  * [index](pyblosxom_index) is a [PyBlosxom](http://pyblosxom.sf.net/)
 plugin that displays an alphabetical index of all entries.
 
-  * [snipsnap2svn](/space/snipsnap2svn) is an
+  * [snipsnap2svn](snipsnap2svn) is an
 [XSLT](http://www.w3.org/TR/xslt) script that converts
 [SnipSnap](http://snipsnap.org/) XML database exports into
 [Subversion dumpfiles](http://svn.collab.net/viewvc/*checkout*/svn/trunk/notes/fs_dumprestore.txt).
 
-  * [history](/space/pyblosxom_history) is a [PyBlosxom](http://pyblosxom.sf.net/)
+  * [history](pyblosxom_history) is a [PyBlosxom](http://pyblosxom.sf.net/)
 plugin that displays change history for entries.
 
-  * [photogallery](/space/photogallery) is a [PyBlosxom](http://pyblosxom.sf.net/)
+  * [photogallery](photogallery) is a [PyBlosxom](http://pyblosxom.sf.net/)
 plugin that displays photo galleries.
 
-  * [hardcodedates](/space/hardcodedates) is a [PyBlosxom](http://pyblosxom.sf.net/)
+  * [hardcodedates](hardcodedates) is a [PyBlosxom](http://pyblosxom.sf.net/)
 plugin that stores mtimes in a file.
 
-  * An [RDF flavour](/space/pyblosxom_rdf_flavour) for Pyblosxom.
+  * An [RDF flavour](pyblosxom_rdf_flavour) for Pyblosxom.
 
-  * [Filekicker](/space/filekicker) is a [PyBlosxom](http://pyblosxom.sf.net/)
+  * [Filekicker](filekicker) is a [PyBlosxom](http://pyblosxom.sf.net/)
 plugin that serves static files.
 
-  * [Fillcode](/space/fillcode) is an [Emacs](http://gnu.org/software/emacs/)
+  * [Fillcode](fillcode) is an [Emacs](http://gnu.org/software/emacs/)
 minor mode that fills, or wraps, some parts of source code.
 
-  * [Ditrit](/space/ditrit) is a programmable application launcher that tries to
+  * [Ditrit](ditrit) is a programmable application launcher that tries to
 "do the right thing" for any input it's given.
 
-  * [BigBrother](/space/bigbrother) generates statistics and graphs from your
+  * [BigBrother](bigbrother) generates statistics and graphs from your
 away message history. See my [personal
 example](/ryan.barrett.name/bigbrother/).
 
-  * [P4](/space/p4) is a compact, lightweight overlay network library, similar
+  * [P4](p4) is a compact, lightweight overlay network library, similar
 to [Gnutella](http://rfc-gnutella.sourceforge.net/) and
 [Chord](http://www.pdos.lcs.mit.edu/chord/).
 
-  * [libmsntp](/space/libmsntp) is a compact, portable [SNTP
-library](/space/libmsntp). It provides both client and server functionality.
+  * [libmsntp](libmsntp) is a compact, portable [SNTP
+library](libmsntp). It provides both client and server functionality.
 
-  * [Snipsnap macros](/space/snipsnap_macros) is a collection of macros for
+  * [Snipsnap macros](snipsnap_macros) is a collection of macros for
 [SnipSnap](http://snipsnap.org), the web server that runs this site.
 
-  * [Tictactoe](/space/tictactoe) is an OpenGL engine that provides realistic
+  * [Tictactoe](tictactoe) is an OpenGL engine that provides realistic
 procedural modelling and rendering of water.
 
-  * [Voxel](/space/voxel) is a high-resolution voxel terrain rendering engine.
+  * [Voxel](voxel) is a high-resolution voxel terrain rendering engine.
 
-  * [Palo Alto Library](/space/palo_alto_library_amazon_greasemonkey) is a
+  * [Palo Alto Library](palo_alto_library_amazon_greasemonkey) is a
 [Greasemonkey](http://greasemonkey.mozdev.org) script that shows whether a book
 on Amazon is available in any of the [Palo Alto
 Libraries](http://cityofpaloalto.org/library/).
 
-  * [MAlbum](/space/MAlbum) is a quick and easy graphical interface for creating
+  * [MAlbum](MAlbum) is a quick and easy graphical interface for creating
 a web album. (Maulik has a [sample
 album](http://maulik.freeshell.net/software/malbum-release/malbumSample).)
 
-  * [snipscrape](/space/snipscrape) transforms SnipSnap-generated HTML into XML
+  * [snipscrape](snipscrape) transforms SnipSnap-generated HTML into XML
 that can be imported back into SnipSnap.
 
-  * [cdname.py](/space/cdname.py) names MP3 files according to
+  * [cdname.py](cdname.py) names MP3 files according to
 [CDDB](http://cddb.com/)/[freedb](http://freedb.org/) INF files.
 
-  * [Nullprpl](/space/nullprpl_pidgin_null_protocol_plugin) is a mock
+  * [Nullprpl](nullprpl_pidgin_null_protocol_plugin) is a mock
 protocol plugin that lets you use [Pidgin](http://pidgin.sf.net/) without
 connecting to a server.
 ([Added to Pidgin](http://developer.pidgin.im/viewmtn/revision/info/17c1e71f633d40fd14e46c08a17a500605d793c8)
 on 5/30/2007.)
 
-  * [Remote](/space/remote) is a client for
+  * [Remote](remote) is a client for
 [httpQ](http://httpq.sourceforge.net/), a network server plugin for
 [Winamp](http://winamp.com).
 
-  * [Scavenger](/space/scavenger) extracts
+  * [Scavenger](scavenger) extracts
 [RFC2822](http://zvon.org/tmRFC/RFC2822/Output/index.html) email addresses from
 text and binary files.
 
-  * [Folderstat](/space/folderstat) retrieves the size of the folders in an IMAP
+  * [Folderstat](folderstat) retrieves the size of the folders in an IMAP
 email account.
 
 
@@ -149,59 +149,59 @@ that fix character set handling bugs.
 [applied](http://trac.pythonpaste.org/pythonpaste/changeset/7235)
 on 2/17/2008).
 
-  * A [patch](/space/opml2markdown_linkify.patch) for
+  * A [patch](opml2markdown_linkify.patch) for
 [opml2markdown.xslt](http://fletcher.freeshell.org/wiki/Markdown_and_XML) that
 adds links to each item's web site and feed.
 
-  * A [patch](/space/comments_openid.patch) that updates the
+  * A [patch](comments_openid.patch) that updates the
 [PyBlosxom OpenID comments plugin](http://www.openidenabled.com/software/pyblosxom/release-announcement)
 to work with versions 1.x of the
 [Python OpenID libraries](http://www.openidenabled.com/openid/libraries/python).
-([Applied](/space/pyblosxom_openid_comments) on 9/6/2007.)
+([Applied](pyblosxom_openid_comments) on 9/6/2007.)
 
-  * A [minor bugfix for cryptutil.py](/space/cryptutil_ioerror.patch) in the
+  * A [minor bugfix for cryptutil.py](cryptutil_ioerror.patch) in the
 [Python OpenID libraries](http://www.openidenabled.com/openid/libraries/python).
 The patch is against version 2.0.0-rc3b.
 
-  * A [tkdiff patch that quotes filenames](/space/tkdiff_quote_filenames_svn.patch)
+  * A [tkdiff patch that quotes filenames](tkdiff_quote_filenames_svn.patch)
 ([tracker](http://sourceforge.net/tracker/index.php?func=detail&aid=1672284&group_id=64960&atid=509274))
 for files in Subversion repositories.
 
-  * [AJAX commenting](/space/pyblosxom_ajax_comments) in Pyblosxom.
+  * [AJAX commenting](pyblosxom_ajax_comments) in Pyblosxom.
 ([Applied](http://pyblosxom.svn.sourceforge.net/viewvc/pyblosxom?view=rev&revision=973)
 on 1/24/2007.)
 
-  * A [tcsh highlighting patch](/space/tcsh_highlighting_patch) that highlights
+  * A [tcsh highlighting patch](tcsh_highlighting_patch) that highlights
 the match during incremental search, and in emacs mode, the region between the
 mark and cursor.
 ([Applied](http://mx.gw.com/pipermail/tcsh/2006-August/003724.html) on 8/23/2006.)
 
-  * A patch to [remove tcsh globbing in history search](/space/remove_tcsh_globbing_in_history_search).
+  * A patch to [remove tcsh globbing in history search](remove_tcsh_globbing_in_history_search).
 ([Applied](http://mx.gw.com/pipermail/tcsh/2006-August/003726.html) on 8/23/2006.)
 
-  * A [fix for a tcsh bug that moves the mark after deletions](/space/tcsh_delete_moves_mark_bug_fix). (Applied on 8/23/2006.)
+  * A [fix for a tcsh bug that moves the mark after deletions](tcsh_delete_moves_mark_bug_fix). (Applied on 8/23/2006.)
 
-  * An [acoc rule for coloring context diffs](/space/acoc.conf_for_context_diffs).
+  * An [acoc rule for coloring context diffs](acoc.conf_for_context_diffs).
 
-  * A [fix for an Emacs bug in minibuffer code](/space/emacs_minibuffer-complete-and-exit_bug_fix), specifically in
+  * A [fix for an Emacs bug in minibuffer code](emacs_minibuffer-complete-and-exit_bug_fix), specifically in
 _minibuffer-complete-and-exit_. (Fixed in Emacs 22.)
 
-  * [port_pine_patch](/space/port_pine_patch) is a shell script that automates
+  * [port_pine_patch](port_pine_patch) is a shell script that automates
 porting Pine patches between versions.
 
-  * [Pine reply-all patch](/space/pine_reply-all_patch) adds a reply-all command
+  * [Pine reply-all patch](pine_reply-all_patch) adds a reply-all command
 to the [Pine](http://www.washington.edu/pine) email client.
 
-  * [Pine flowed-text patch](/space/pine_flowed-text_patch) adds an option to
+  * [Pine flowed-text patch](pine_flowed-text_patch) adds an option to
 [Pine](http://www.washington.edu/pine) to turn off displaying flowed text.
 
-  * [Pine remove trailing quote patch](/space/pine_remove_trailing_quote_patch)
+  * [Pine remove trailing quote patch](pine_remove_trailing_quote_patch)
 adds an option to automatically remove trailing quotes from outgoing emails.
 
-  * [Pine delete attachments on save patch](/space/pine_delete_attachments_on_save_patch) adds an option to delete attachments from messages when you save
+  * [Pine delete attachments on save patch](pine_delete_attachments_on_save_patch) adds an option to delete attachments from messages when you save
 them.
 
-  * [Gaim chat_invite patch](/space/gaim_2_chat_invite_reverse_params.patch)
+  * [Gaim chat_invite patch](gaim_2_chat_invite_reverse_params.patch)
 fixes a
 [parameter ordering bug](https://sourceforge.net/tracker/index.php?func=detail&aid=1595828&group_id=235&atid=100235)
 in [Gaim 2.x](http://gaim.sf.net/)'s
@@ -210,35 +210,35 @@ callback member.
 ([Applied](https://sourceforge.net/tracker/index.php?func=detail&aid=1595831&group_id=235&atid=300235)
 on 11/15/2006.)
 
-  * [Gaim accelerators in away menus patch](/space/gaim_1_away_menu_accelerators.patch)
+  * [Gaim accelerators in away menus patch](gaim_1_away_menu_accelerators.patch)
 ([tracker](http://sourceforge.net/tracker/index.php?func=detail&aid=1031098&group_id=235&atid=300235))
 fixes [Gaim 1.x](http://gaim.sf.net/)'s GTK menu code to allow accelerators in
 dynamically created menus, such as away message menus.
 
-  * Similarly, [Gaim accelerators in accounts submenus patch](/space/gaim_2_accounts_menu_accels.patch)
+  * Similarly, [Gaim accelerators in accounts submenus patch](gaim_2_accounts_menu_accels.patch)
 fixes [Gaim 2.x](http://gaim.sf.net/)'s GTK menu code to allow accelerators in
 the dynamically created submenus of the Accounts menu.
 ([Applied](https://sourceforge.net/tracker/index.php?func=detail&aid=1597271&group_id=235&atid=300235)
 on 11/19/2006.)
 
-  * [SnipSnap comment without login patch](/space/snipsnap_comment_without_login_patch) allows visitors to post comments without logging in.
+  * [SnipSnap comment without login patch](snipsnap_comment_without_login_patch) allows visitors to post comments without logging in.
 
-  * [SnipSnap recent-changes snip name patch](/space/snipsnap_recent-changes_snip_name_patch) fixes a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-392) in
+  * [SnipSnap recent-changes snip name patch](snipsnap_recent-changes_snip_name_patch) fixes a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-392) in
 SnipSnap that causes recent-changes to show blog posts incorrectly.
 
-  * [SnipSnap 1.0b1 virtual hostname patch](/space/snipsnap_1.0b1_virtual_hostname_patch) fixes a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-387) in
-SnipSnap that prevents [virtual host redirection](/space/virtual_host_redirection).
+  * [SnipSnap 1.0b1 virtual hostname patch](snipsnap_1.0b1_virtual_hostname_patch) fixes a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-387) in
+SnipSnap that prevents [virtual host redirection](virtual_host_redirection).
 
-  * [Autocutsel clipboard and primary patch](/space/autocutsel_clipboard_and_primary_patch)
+  * [Autocutsel clipboard and primary patch](autocutsel_clipboard_and_primary_patch)
 extends [autocutsel](http://www.nongnu.org/autocutsel/) to
 synchronize both the clipboard and the primary selection in X Windows.
 
-  * [Libwebserver shutdown patch](/space/libwebserver_shutdown_patch)
+  * [Libwebserver shutdown patch](libwebserver_shutdown_patch)
 ([tracker](http://sourceforge.net/tracker/index.php?func=detail&aid=1146074&group_id=50164&atid=458797))
 adds a call to [libwebserver](http://libwebserver.sourceforge.net/) to stop a
 running server and close its socket(s).
 
-  * [Webalizer nofollow patch](/space/webalizer_nofollow_patch) adds
+  * [Webalizer nofollow patch](webalizer_nofollow_patch) adds
 [nofollow](http://www.google.com/googleblog/2005/01/preventing-comment-spam.html)
 support to the popular web server log analyzer
 [Webalizer](http://webalizer.com/).

@@ -1,7 +1,7 @@
 subversion and tkdiff
 
-[![/space/subversion.jpg](/space/subversion.jpg)](http://subversion.tigris.org/)
-[![/space/tkdiff.png](/space/tkdiff.png)](http://tkdiff.sf.net/)
+[![/space/subversion.jpg](subversion.jpg)](http://subversion.tigris.org/)
+[![/space/tkdiff.png](tkdiff.png)](http://tkdiff.sf.net/)
 
 [Subversion](http://subversion.tigris.org/)
 is my version control of choice, and [tkdiff](http://tkdiff.sf.net/) is my
@@ -30,5 +30,5 @@ makes tkdiff use the local copy instead.
 
 See also:
 
-  * [backup subversion fsfs with rsync](/space/backup_subversion_fsfs_with_rsync)
+  * [backup subversion fsfs with rsync](backup_subversion_fsfs_with_rsync)
 

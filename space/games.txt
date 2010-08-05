@@ -4,17 +4,17 @@ games
 img { vertical-align: text-top; }
 </style>
 
-[![/space/twinsens_odyssey.jpg](/space/twinsens_odyssey.jpg)](http://www.twinadv.net/lba2/)
-[![/space/sam_and_max.jpg](/space/sam_and_max.jpg)](http://www.samandmax.net/)
-[![/space/hitman.jpg](/space/hitman.jpg)](http://www.ioi.dk/games/hitman1.htm)
+[![/space/twinsens_odyssey.jpg](twinsens_odyssey.jpg)](http://www.twinadv.net/lba2/)
+[![/space/sam_and_max.jpg](sam_and_max.jpg)](http://www.samandmax.net/)
+[![/space/hitman.jpg](hitman.jpg)](http://www.ioi.dk/games/hitman1.htm)
 
 [Games I've played](#played) and
 [games I'd like to play](#to_play).
 ![good](/good.png) means I liked it,
 ![ok](/ok.png) means it was just ok,
 ![bad](/bad.png) means I didn't like it.
-Also see [books](/space/books), [movies](/space/movies), and
-[other lists](/space/lists).
+Also see [books](books), [movies](/space/movies), and
+[other lists](lists).
 
 <a name="to_play"></a>
 **Games I'd like to play**:
@@ -370,7 +370,7 @@ _([MashPotato](http://crabshack.bythegoddess.com/))_
 _([Bernie](http://www.origamihero.com/))_
 ![good](/good.png)
 
-  * [Knightsquire](/space/Knightsquire) _(Buloght)_
+  * [Knightsquire](Knightsquire) _(Buloght)_
 ![good](/good.png)
 
   * [Bad Mojo](http://www.badmojoredux.com/)
@@ -522,9 +522,9 @@ Chen](http://jenovachen.com/) et al.)_
 _([Harmonix](http://www.harmonixmusic.com/))_
 ![good](/good.png)
 
-[![/space/indie_game_jam.png](/space/indie_game_jam.png)](http://indiegamejam.com/)
-[![/space/igf_2006.png](/space/igf_2006.png)](http://igf.com/)
-[![/space/slamdance.png](/space/slamdance.png)](http://www.slamdance.com/games/)
+[![/space/indie_game_jam.png](indie_game_jam.png)](http://indiegamejam.com/)
+[![/space/igf_2006.png](igf_2006.png)](http://igf.com/)
+[![/space/slamdance.png](slamdance.png)](http://www.slamdance.com/games/)
 
   * [Independent Games Festival 2006](http://igf.com/2006entrants.shtml):
 
@@ -600,9 +600,9 @@ _([Introversion](http://www.introversion.co.uk/))_
 _([Intelligent](http://www.intsys.co.jp/))_
 ![good](/good.png)
 
-[![/space/space_channel_5.jpg](/space/space_channel_5.jpg)](http://www.mobygames.com/game/dreamcast/space-channel-5)
-[![/space/gordon_freeman.jpg](/space/gordon_freeman.jpg)](http://www.planethalflife.com/half-life/)
-[![/space/san_francisco_rush_2049.jpg](/space/san_francisco_rush_2049.jpg)](http://www.mobygames.com/game/dreamcast/san-francisco-rush-2049)
+[![/space/space_channel_5.jpg](space_channel_5.jpg)](http://www.mobygames.com/game/dreamcast/space-channel-5)
+[![/space/gordon_freeman.jpg](gordon_freeman.jpg)](http://www.planethalflife.com/half-life/)
+[![/space/san_francisco_rush_2049.jpg](san_francisco_rush_2049.jpg)](http://www.mobygames.com/game/dreamcast/san-francisco-rush-2049)
 
   * [Crimson Skies](http://www.microsoft.com/games/crimsonskies/)
 _([FASA](http://fasastudio.com/)/[Microsoft](http://www.microsoft.com/games/))_
@@ -698,13 +698,13 @@ Interactive](http://en.wikipedia.org/wiki/Virgin_Interactive)/[Harmless](http://
 _([id](http://idsoftware.com/))_
 ![good](/good.png)
 
-  * [Tic Tac Toe](/space/tictactoe) _([Ryan Barrett](http://snarfed.org/))_
+  * [Tic Tac Toe](tictactoe) _([Ryan Barrett](http://snarfed.org/))_
 
-[![/space/worms.jpg](/space/worms.jpg)](http://www.worms3d.com/)
-[![/space/escape_from_monkey_island.jpg](/space/escape_from_monkey_island.jpg)](http://www.worldofmi.com/thegames/monkey4/index.php)
-[![/space/tomb_raider.jpg](/space/tomb_raider.jpg)](http://wikiraider.tombraidergirl.net/index.php/Tomb_Raider_1)
+[![/space/worms.jpg](worms.jpg)](http://www.worms3d.com/)
+[![/space/escape_from_monkey_island.jpg](escape_from_monkey_island.jpg)](http://www.worldofmi.com/thegames/monkey4/index.php)
+[![/space/tomb_raider.jpg](tomb_raider.jpg)](http://wikiraider.tombraidergirl.net/index.php/Tomb_Raider_1)
 
-  * [Voxel Hunt](/space/voxel) _([Ryan Barrett](http://snarfed.org/))_
+  * [Voxel Hunt](voxel) _([Ryan Barrett](http://snarfed.org/))_
 
   * [Space Channel 5](http://www.mobygames.com/game/dreamcast/space-channel-5)
 _([United Game Artists](http://en.wikipedia.org/wiki/SEGA_United_Game_Artists))_
@@ -780,9 +780,9 @@ Alice](http://www.mobygames.com/game/american-mcgees-alice) _([Rogue
 Entertainment](http://en.wikipedia.org/wiki/Rogue_Entertainment))_
 ![good](/good.png)
 
-[![/space/duke_nukem_3d.jpg](/space/duke_nukem_3d.jpg)](http://www.3drealms.com/duke3d/index.html)
-[![/space/baku_baku.jpg](/space/baku_baku.jpg)](http://www.mobygames.com/game/windows/baku-baku-animal)
-[![/space/wolfenstein_3d.jpg](/space/wolfenstein_3d.jpg)](http://www.idsoftware.com/games/wolfenstein/wolf3d/)
+[![/space/duke_nukem_3d.jpg](duke_nukem_3d.jpg)](http://www.3drealms.com/duke3d/index.html)
+[![/space/baku_baku.jpg](baku_baku.jpg)](http://www.mobygames.com/game/windows/baku-baku-animal)
+[![/space/wolfenstein_3d.jpg](wolfenstein_3d.jpg)](http://www.idsoftware.com/games/wolfenstein/wolf3d/)
 
   * [MDK 1](http://www.mobygames.com/game/windows/mdk)
 _([Shiny](http://www.shiny.com/))_, [MDK 2](http://www.mobygames.com/game/mdk-2)
@@ -880,9 +880,9 @@ _([LucasArts](http://lucasarts.com/))_
 _([LucasArts](http://lucasarts.com/))_
 ![good](/good.png)
 
-[![/space/rampage.jpg](/space/rampage.jpg)](http://www.mobygames.com/game/dos/rampage)
-[![/space/7th_guest.jpg](/space/7th_guest.jpg)](http://www.mobygames.com/game/7th-guest)
-[![/space/street_fighter_2.jpg](/space/street_fighter_2.jpg)](http://en.wikipedia.org/wiki/Street_Fighter_II)
+[![/space/rampage.jpg](rampage.jpg)](http://www.mobygames.com/game/dos/rampage)
+[![/space/7th_guest.jpg](7th_guest.jpg)](http://www.mobygames.com/game/7th-guest)
+[![/space/street_fighter_2.jpg](street_fighter_2.jpg)](http://en.wikipedia.org/wiki/Street_Fighter_II)
 
   * [Mechwarrior 2](http://games.activision.com/games/mechseries/mech2.html)
 _([Activision](http://activision.com/))_
@@ -980,9 +980,9 @@ Hicken](http://www.mobygames.com/developer/sheet/view/developerId,1062/))_
 _([Sierra](http://sierra.com/))_
 ![ok](/ok.png)
 
-[![/space/commander_keen.jpg](/space/commander_keen.jpg)](http://www.3drealms.com/keenhistory/index.html)
-[![/space/super_mario_bros.jpg](/space/super_mario_bros.jpg)](http://www.smbhq.com/)
-[![/space/leisure_suit_larry.jpg](/space/leisure_suit_larry.jpg)](http://www.vintage-sierra.com/lsl.html)
+[![/space/commander_keen.jpg](commander_keen.jpg)](http://www.3drealms.com/keenhistory/index.html)
+[![/space/super_mario_bros.jpg](super_mario_bros.jpg)](http://www.smbhq.com/)
+[![/space/leisure_suit_larry.jpg](leisure_suit_larry.jpg)](http://www.vintage-sierra.com/lsl.html)
 
   * [Epic Pinball](http://www.dmwright.com/pinball/epic/)
 _([Epic](http://epicgames.com/))_

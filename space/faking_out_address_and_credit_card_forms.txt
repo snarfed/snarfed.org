@@ -1,10 +1,10 @@
 faking out address and credit card forms
 
-<img class="right" src="/space/nose_mustache_glasses.jpg" />
+<img class="right" src="nose_mustache_glasses.jpg" />
 
 Like many people, I buy
 things online. Unlike many people, I'm a bit of a privacy freak. I only use
-[anonymous prepaid debit cards](/space/privacy_through_prepaid_credit_cards),
+[anonymous prepaid debit cards](privacy_through_prepaid_credit_cards),
 and I don't give out my real name, address, birthdate, or other personal
 information. If I'm buying something that needs to be shipped, I use a mail
 drop, not my home address.
@@ -98,7 +98,7 @@ dashes for everything else
     phone number, and "-- --" for cardholder name.
 
   * [Netflix](http://netflix.com/): currently rejects _all_ of my
-    [prepaid credit cards](/space/privacy_through_prepaid_credit_cards)! :(
+    [prepaid credit cards](privacy_through_prepaid_credit_cards)! :(
 
   * [Orbitz](http://orbitz.com/): 00000 for zip code, phone number with valid
     area code, dashes for everything else. orbitz does strict address checking
@@ -150,12 +150,12 @@ first and last name (e.g. A B), valid area code for phone number (e.g.
 
 See also:
 
-  * [privacy through prepaid credit cards](/space/privacy_through_prepaid_credit_cards)
+  * [privacy through prepaid credit cards](privacy_through_prepaid_credit_cards)
 
-  * [view evites anonymously](/space/view_evites_anonymously)
+  * [view evites anonymously](view_evites_anonymously)
 
-  * [kodak picturecenter hacks](/space/kodak_picturecenter_hacks)
-  * [change firefox's saved passwords](/space/change_firefoxs_saved_passwords)
+  * [kodak picturecenter hacks](kodak_picturecenter_hacks)
+  * [change firefox's saved passwords](change_firefoxs_saved_passwords)
 
-  * [PGP key](/space/2004-10-03_what_took_me_so_long)
+  * [PGP key](2004-10-03_what_took_me_so_long)
 

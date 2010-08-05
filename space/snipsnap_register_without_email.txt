@@ -1,7 +1,7 @@
 SnipSnap register without email
 
 <a href="http://snipsnap.org/">
-  <img class="right shadow" src="/space/snipsnap-logo.png" /></a>
+  <img class="right shadow" src="snipsnap-logo.png" /></a>
 
 _This
 article is also [posted on
@@ -9,7 +9,7 @@ snipsnap.org](http://snipsnap.org/space/register+without+email)._
 
 ### I don't want your email address...
 
-[SnipSnap](http://snipsnap.org/), which [powers this site](/space/snipsnap), lets
+[SnipSnap](http://snipsnap.org/), which [powers this site](snipsnap), lets
 visitors [register](/exec/register.jsp) so that they can log in, comment on
 existing pages, and create their own pages. The default registration page asks
 you for a username, a a password, and optionally, an email address. It's not
@@ -27,7 +27,7 @@ files](http://www.snipsnap.org/comments/CodingQuestions), but that was a little
 too invasive for my tastes. (I really should do this eventually, though...anyone
 want to post a tutorial on editing the SnipSnap JSPs?) Instead, I used CSS, and
 simply added this to [misc.css](/theme/css/misc.css) in my [SnipSnap
-theme](/space/snarfed.org):
+theme](snarfed.org):
 
     /* don't ask people for their email address */
     input#email { display: none; }
@@ -66,19 +66,19 @@ Then, add a link to noemail.js:
     <script type="text/javascript" src="/snarfed.js" />
 
 Again, you could edit the JSPs to put this in the <meta> section, but I'm intent
-on avoiding the JSPs, so I just wrote a [macro](/space/snipsnap_macros) to
+on avoiding the JSPs, so I just wrote a [macro](snipsnap_macros) to
 insert this tag.
 
 Hope this helps!
 
 See also:
 
-  * [snipsnap comment without login patch](/space/snipsnap_comment_without_login_patch)
-  * [snipsnap macros](/space/snipsnap_macros)
-  * [snipsnap recent-changes snip name patch](/space/snipsnap_recent-changes_snip_name_patch)
-  * [snipsnap script macro and python](/space/snipsnap_script_macro_and_python)
-  * [servlets with snipsnap](/space/servlets_with_snipsnap)
-  * [virtual host redirection](/space/virtual_host_redirection)
-  * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap_1.0b1_virtual_hostname_patch)
-  * [snipscrape](/space/snipscrape)
+  * [snipsnap comment without login patch](snipsnap_comment_without_login_patch)
+  * [snipsnap macros](snipsnap_macros)
+  * [snipsnap recent-changes snip name patch](snipsnap_recent-changes_snip_name_patch)
+  * [snipsnap script macro and python](snipsnap_script_macro_and_python)
+  * [servlets with snipsnap](servlets_with_snipsnap)
+  * [virtual host redirection](virtual_host_redirection)
+  * [snipsnap 1.0b1 virtual hostname patch](snipsnap_1.0b1_virtual_hostname_patch)
+  * [snipscrape](snipscrape)
 

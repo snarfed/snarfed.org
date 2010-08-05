@@ -1,11 +1,11 @@
 Teaching beginning programming with Python
 
-[![python-new.png](/space/python-new.png)](/space/teaching_beginning_programming_with_Python)
-[![python-old.png](/space/python-old.png)](/space/teaching_beginning_programming_with_Python)
+[![python-new.png](python-new.png)](/space/teaching_beginning_programming_with_Python)
+[![python-old.png](python-old.png)](/space/teaching_beginning_programming_with_Python)
 
 I'm a software engineer. I've been programming for a long time - in
 [school](http://www.stanford.edu/), at [work](http://google.com/), and for
-[fun](/space/software). While I was in school, I also taught computer science as
+[fun](software). While I was in school, I also taught computer science as
 a TA for three years.
 
 I TAed a [mid-level class](http://cs107.stanford.edu/), though, so by the time I
@@ -17,5 +17,5 @@ Last Sunday, for the first time, I had the chance to teach someone to program
 who'd never written a line of code before. It was very, very different from
 TAing. It was also a _lot_ of fun.
 
-[Read more...](/space/teaching_beginning_programming_with_Python)
+[Read more...](teaching_beginning_programming_with_Python)
 

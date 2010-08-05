@@ -1,6 +1,6 @@
 thinkpad keys in firefox
 
-<img class="right shadow" src="/space/thinkpad_keys.jpg" />
+<img class="right shadow" src="thinkpad_keys.jpg" />
 
 I use a [Thinkpad
 T43](http://www.pc.ibm.com/us/notebooks/thinkpad/t-series/index.html), and I
@@ -62,12 +62,12 @@ If you weren't working in your firefox/chrome directory, copy the new
 browser.jar over the existing one in firefox/chrome.
 
 Restart Firefox, and you should be set! If not, feel free to [email
-me](/space/about), and I'll try to help.
+me](about), and I'll try to help.
 
 See also:
 
-  * [switch control and caps lock](/space/switch_control_and_caps_lock)
-  * [emacs keybindings in firefox](/space/emacs_keybindings_in_firefox)
-  * [change firefox's saved passwords](/space/change_firefoxs_saved_passwords)
-  * [control arrow keys in rxvt, tcsh, and emacs](/space/control_arrow_keys_in_rxvt_tcsh_and_emacs)
+  * [switch control and caps lock](switch_control_and_caps_lock)
+  * [emacs keybindings in firefox](emacs_keybindings_in_firefox)
+  * [change firefox's saved passwords](change_firefoxs_saved_passwords)
+  * [control arrow keys in rxvt, tcsh, and emacs](control_arrow_keys_in_rxvt_tcsh_and_emacs)
   * [TuxMobil's IBM laptop page](http://tuxmobil.org/ibm.html)

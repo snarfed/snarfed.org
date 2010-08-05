@@ -1,16 +1,16 @@
 port_pine_patch
 
 <a href="http://washington.edu/pine/">
-  <img class="right" src="/space/pine.png" /></a>
+  <img class="right" src="pine.png" /></a>
 
 For the impatient:  
-[Download port_pine_patch.sh v0.1](/space/port_pine_patch.sh)  
+[Download port_pine_patch.sh v0.1](port_pine_patch.sh)  
 [Pine source](http://www.washington.edu/pine/getpine/unix.html)  
-[My pine patches](/space/software#patches)  
+[My pine patches](software#patches)  
 [FAQ on patching
 pine](http://www.math.washington.edu/~chappa/pine/faq/index.html)
 
-I've written a number of [patches](/space/software#patches) for
+I've written a number of [patches](software#patches) for
 [Pine](http://www.washington.edu/pine/), my email client. For a while, I ported
 them to new versions of Pine manually, which was very time consuming.
 
@@ -34,9 +34,9 @@ and is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
 
 See also:
 
-  * [pine delete attachments on save patch](/space/pine_delete_attachments_on_save_patch)
-  * [pine flowed-text patch](/space/pine_flowed-text_patch)
-  * [pine remove trailing quote patch](/space/pine_remove_trailing_quote_patch)
-  * [pine reply-all patch](/space/pine_reply-all_patch)
-  * [gmail vs pine](/space/gmail_vs_pine)
+  * [pine delete attachments on save patch](pine_delete_attachments_on_save_patch)
+  * [pine flowed-text patch](pine_flowed-text_patch)
+  * [pine remove trailing quote patch](pine_remove_trailing_quote_patch)
+  * [pine reply-all patch](pine_reply-all_patch)
+  * [gmail vs pine](gmail_vs_pine)
 

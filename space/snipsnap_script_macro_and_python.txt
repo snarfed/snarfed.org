@@ -1,8 +1,8 @@
 snipsnap script macro and python
 
-[![snipsnap.png](/space/snipsnap.png)](http://snipsnap.org/)
-[![/space/python_powered.png](/space/python_powered.png)](http://python.org/)
-[![/space/jython.png](/space/jython.png)](http://www.jython.org/)
+[![snipsnap.png](snipsnap.png)](http://snipsnap.org/)
+[![/space/python_powered.png](python_powered.png)](http://python.org/)
+[![/space/jython.png](jython.png)](http://www.jython.org/)
 
 _This
 article is also [posted at
@@ -23,7 +23,7 @@ Recently, a [friend](http://www-cs-students.stanford.edu/~nstoll/) asked me if I
 could write a simple webapp on [snarfed.org](http://snarfed.org/), my
 SnipSnap-based site. Unfortunately, I hesitated, and for good reason. I've
 written my fair share of [Snipsnap
-macros](/space/snipsnap_macros), and I like the macro
+macros](snipsnap_macros), and I like the macro
 architecture, but it's not designed for interactive webapps. I considered
 whipping up some JSPs and serving them through
 [Jetty](http://mortbay.org/jetty/), but that's far from lightweight, and I'm far
@@ -50,7 +50,7 @@ META-INF/services/org.radeox.macro.Macro was commented out:
 
 You can uncomment this line and rebuild snipsnap-servlets.jar, but it's probably
 easier to just download my
-[script.jar](/space/script.jar),
+[script.jar](script.jar),
 which just has ScriptMacro.class and an uncommented org.radeox.macro.Macro file,
 put it in your WEB-INF/lib directory, and restart SnipSnap.
 
@@ -168,16 +168,16 @@ it, though, {script} isn't the answer.
 [BeanShell](http://www.snipsnap.org/space/BeanShell) might be worth a look, but
 at first glance, I'm guessing it's similarly wide open.
 
-Got any ideas? If so, please [let me know](/space/about)!
+Got any ideas? If so, please [let me know](about)!
 
 See also:
 
-  * [snipsnap macros](/space/snipsnap_macros)
-  * [snipsnap comment without login patch](/space/snipsnap_comment_without_login_patch)
-  * [snipsnap recent-changes snip name patch](/space/snipsnap_recent-changes_snip_name_patch)
-  * [snipsnap register without email](/space/snipsnap_register_without_email)
-  * [servlets with snipsnap](/space/servlets_with_snipsnap)
-  * [virtual host redirection](/space/virtual_host_redirection)
-  * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap_1.0b1_virtual_hostname_patch)
-  * [snipscrape](/space/snipscrape)
+  * [snipsnap macros](snipsnap_macros)
+  * [snipsnap comment without login patch](snipsnap_comment_without_login_patch)
+  * [snipsnap recent-changes snip name patch](snipsnap_recent-changes_snip_name_patch)
+  * [snipsnap register without email](snipsnap_register_without_email)
+  * [servlets with snipsnap](servlets_with_snipsnap)
+  * [virtual host redirection](virtual_host_redirection)
+  * [snipsnap 1.0b1 virtual hostname patch](snipsnap_1.0b1_virtual_hostname_patch)
+  * [snipscrape](snipscrape)
 

@@ -1,7 +1,7 @@
 virtual host redirection
 
-[![snipsnap.png](/space/snipsnap.png)](http://snipsnap.org/)
-[![jetty.png](/space/jetty.png)](http://jetty.mortbay.com/)
+[![snipsnap.png](snipsnap.png)](http://snipsnap.org/)
+[![jetty.png](jetty.png)](http://jetty.mortbay.com/)
 
 _**Update**:
 Due to a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-387), if you're using
@@ -166,12 +166,12 @@ Finally, let's close off the Configure tag we opened way in the beginning...
 
 See also:
 
-  * [servlets with snipsnap](/space/servlets_with_snipsnap)
-  * [snipsnap register without email](/space/snipsnap_register_without_email)
-  * [snipsnap script macro and python](/space/snipsnap_script_macro_and_python)
-  * [snipscrape](/space/snipscrape)
-  * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap_1.0b1_virtual_hostname_patch)
-  * [snipsnap comment without login patch](/space/snipsnap_comment_without_login_patch)
-  * [snipsnap macros](/space/snipsnap_macros)
-  * [snipsnap recent-changes snip name patch](/space/snipsnap_recent-changes_snip_name_patch)
+  * [servlets with snipsnap](servlets_with_snipsnap)
+  * [snipsnap register without email](snipsnap_register_without_email)
+  * [snipsnap script macro and python](snipsnap_script_macro_and_python)
+  * [snipscrape](snipscrape)
+  * [snipsnap 1.0b1 virtual hostname patch](snipsnap_1.0b1_virtual_hostname_patch)
+  * [snipsnap comment without login patch](snipsnap_comment_without_login_patch)
+  * [snipsnap macros](snipsnap_macros)
+  * [snipsnap recent-changes snip name patch](snipsnap_recent-changes_snip_name_patch)
 

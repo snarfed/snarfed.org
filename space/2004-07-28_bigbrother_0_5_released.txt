@@ -1,9 +1,9 @@
 bigbrother 0.5 released 
 
-<a href="/space/bigbrother">
-  <img class="right shadow" src="/space/thumbnail.jpg" /></a>
+<a href="bigbrother">
+  <img class="right shadow" src="thumbnail.jpg" /></a>
 
-I've released version 0.5 of [bigbrother](/space/bigbrother), a program that
+I've released version 0.5 of [bigbrother](bigbrother), a program that
 generates statistics and graphs about your IM away messages. Highlights from
 this version include "layered" graphs, graph smoothing, and optional start and
 end dates. The smoothing alone is worth upgrading for; it makes the graphs look

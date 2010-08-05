@@ -1,7 +1,7 @@
 backup subversion fsfs with rsync
 
 <div class="img">
-  <a href="http://subversion.tigris.org/"><img src="/space/subversion.png" /></a>
+  <a href="http://subversion.tigris.org/"><img src="subversion.png" /></a>
 </div>
 
 I use
@@ -22,6 +22,6 @@ repository with rsync, like so:
 
 See also:
 
-  * [subversion and tkdiff](/space/subversion_and_tkdiff)
-  * [gnu emacs backup files](/space/gnu_emacs_backup_files)
+  * [subversion and tkdiff](subversion_and_tkdiff)
+  * [gnu emacs backup files](gnu_emacs_backup_files)
 

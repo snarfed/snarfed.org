@@ -1,7 +1,7 @@
 view evites anonymously
 
 <a href="http://evite.com/">
-  <img class="right" src="/space/evite.png" /></a>
+  <img class="right" src="evite.png" /></a>
 
 Does it ever give you the creeps
 that, whenever you get an [evite](http://evite.com/), it knows who you are?
@@ -15,6 +15,6 @@ invite other people "officially.")
 
 See also:
 
-  * [privacy through prepaid credit cards](/space/privacy_through_prepaid_credit_cards)
-  * [kodak picturecenter hacks](/space/kodak_picturecenter_hacks)
+  * [privacy through prepaid credit cards](privacy_through_prepaid_credit_cards)
+  * [kodak picturecenter hacks](kodak_picturecenter_hacks)
 

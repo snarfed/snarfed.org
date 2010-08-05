@@ -1,6 +1,6 @@
 Upsy Downsy
 
-<img class="right" src="/space/smashed.jpg" />
+<img class="right" src="smashed.jpg" />
 
 You may or may not have noticed, but yesterday
 [snarfed.org](http://snarfed.org/) was down for a while, then up and down for a
@@ -8,7 +8,7 @@ while more. It should be up and stable now.
 
 _[Nerd alert! Unless you're a nerd, stop reading now!]_
 
-[SnipSnap](/space/SnipSnap), the server that runs this site, uses
+[SnipSnap](SnipSnap), the server that runs this site, uses
 [McKoi](http://mckoi.com/) as its embedded database, and the two have never had
 an easy relationship. McKoi routinely gets corrupted and needs to be repaired.
 This time it lost its head(er) entirely, and refused to be recovered.

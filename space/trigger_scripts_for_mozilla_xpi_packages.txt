@@ -1,10 +1,10 @@
 trigger scripts for mozilla xpi packages
 
-[![mozilla.png](/space/mozilla.png)](http://mozilla.org/mozilla1.x/)
-[![ff_icon.png](/space/ff_icon.png)](http://mozilla.org/firefox/)
-[![camino.png](/space/camino.png)](http://mozilla.org/camino/)
-[![thunderbird.jpg](/space/thunderbird.jpg)](http://mozilla.org/thunderbird/)
-[![bugzilla.jpg](/space/bugzilla.jpg)](http://bugzilla.org/)
+[![mozilla.png](mozilla.png)](http://mozilla.org/mozilla1.x/)
+[![ff_icon.png](ff_icon.png)](http://mozilla.org/firefox/)
+[![camino.png](camino.png)](http://mozilla.org/camino/)
+[![thunderbird.jpg](thunderbird.jpg)](http://mozilla.org/thunderbird/)
+[![bugzilla.jpg](bugzilla.jpg)](http://bugzilla.org/)
 
 I've
 been doing some development recently on the [Mozilla](http://mozilla.org/)
@@ -35,7 +35,7 @@ Happy packaging!
 
 See also:
 
-  * [linking libraries with mozilla xpcom](/space/linking_libraries_with_mozilla_xpcom)
-  * [palo alto library amazon greasemonkey](/space/palo_alto_library_amazon_greasemonkey)
-  * [change firefox's saved passwords](/space/change_firefoxs_saved_passwords)
+  * [linking libraries with mozilla xpcom](linking_libraries_with_mozilla_xpcom)
+  * [palo alto library amazon greasemonkey](palo_alto_library_amazon_greasemonkey)
+  * [change firefox's saved passwords](change_firefoxs_saved_passwords)
 

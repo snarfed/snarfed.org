@@ -5,11 +5,11 @@ As of Wednesday, I can chalk up another life experience: my first
 unhappy, so my ophthalmologist ordered the MRI to help her diagnose the
 problem.
 
-<a href="/space/mri_images_and_animations">
+<a href="mri_images_and_animations">
   <img class="right shadow" src="/gallery/mri/thumbs/localizer_00.jpg" /></a>
 
 (If you're just here for the
-[pretty pictures and animations of my brain](/space/mri_images_and_animations),
+[pretty pictures and animations of my brain](mri_images_and_animations),
 go ahead. I won't be offended!)
 
 I'd had X-rays before, so I naively thought an MRI would be similar. I even
@@ -23,7 +23,7 @@ head, and slide you into the bowels of a big machine. The machine passes a
 series of RF waves through you, which it uses to produce detailed images of
 the inside of your head or body.
 
-<img class="left shadow" src="/space/mri_machine.jpg" />
+<img class="left shadow" src="mri_machine.jpg" />
 
 That's all well and good, but it wasn't much comfort while I was actually in
 it. First, I had to lie perfectly still for an hour. No coughing, scratching,
@@ -38,7 +38,7 @@ klaxon horn instead, with the business end pointed right at my ears. It was
 loud, painful, and the vibrations were so strong, I felt like they were
 melting my bones.
 
-<a href="/space/mri_images_and_animations">
+<a href="mri_images_and_animations">
   <img class="right shadow" src="/gallery/mri/thumbs/t2_axial_17.jpg" /></a>
 
 All of that was a walk in the park, though, compared to to the claustrophobia.
@@ -54,14 +54,14 @@ techician told me over the intercom how long it would be. They started short,
 first 30 seconds, then a minute and a half, then ramped up to three to six
 minutes.
 
-<a href="/space/mri_images_and_animations">
+<a href="mri_images_and_animations">
   <img class="left shadow" src="/gallery/mri/thumbs/post_t1_axial_00.jpg" /></a>
 
 By the third scan, the enclosed space had me ready to panic. I managed to talk
 myself out of it, just barely, by thinking of it as a mental exercise. I
 challenged myself to keep control. I kept my eyes firmly closed and tried to
 think about other things - friends, family, weekend plans,
-[work](/space/2008-04-07_google_app_engine_launched). The
+[work](2008-04-07_google_app_engine_launched). The
 blaring of the RF waves was overwhelming, though, and I couldn't concentrate
 for more than a few seconds at a time.
 
@@ -70,7 +70,7 @@ up each one, fiercely anticipating the 60 minute mark. When the technician
 pulled me out at 28 minutes, I was ecstatic, and immediately asked for advice.
 She looked vaguely surprised.
 
-<a href="/space/mri_images_and_animations">
+<a href="mri_images_and_animations">
   <img class="right shadow" src="/gallery/mri/thumbs/post_t1_sag_09.jpg" /></a>
 
 "Hmm, close your eyes and try to think of something else, I guess?"
@@ -85,7 +85,7 @@ physical discomfort, but that was nothing compared to the constant,
 overwhelming fear and panic. The urge to tear off the restraints, claw apart
 the walls of the tube, to just plain _get out_, was incredibly powerful.
 
-<a href="/space/mri_images_and_animations">
+<a href="mri_images_and_animations">
   <img class="left shadow" src="/gallery/mri/thumbs/t2_axial_07.jpg" /></a>
 
 When they finally pulled me out, I was drained. I could barely sit up. The
@@ -95,7 +95,7 @@ out of that damn tube!
 
 To make a long story short, my eye is fine. Plus, as a bonus, I got the raw
 data from the MRI, which I converted into [images and
-animations](/space/mri_images_and_animations). So cool!
+animations](mri_images_and_animations). So cool!
 
 By the way, I went to [El Camino Hospital](http://www.elcaminohospital.org/),
 which was great. The administrative staff there was helpful, and the paperwork

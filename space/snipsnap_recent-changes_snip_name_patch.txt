@@ -1,20 +1,20 @@
 snipsnap recent-changes snip name patch
 
-[![snipsnap.png](/space/snipsnap.png)](http://snipsnap.org/)
-[![jetty.png](/space/jetty.png)](http://jetty.mortbay.com/)
+[![snipsnap.png](snipsnap.png)](http://snipsnap.org/)
+[![jetty.png](jetty.png)](http://jetty.mortbay.com/)
 
 For the impatient:  
 [Patch for SnipSnap CVS
-HEAD](/space/snipsnap-snip-name-cvs.patch)  
+HEAD](snipsnap-snip-name-cvs.patch)  
 [Patch for SnipSnap
-1.0b1](/space/snipsnap-snip-name-1.0b1.patch)  
+1.0b1](snipsnap-snip-name-1.0b1.patch)  
 [SnipSnap 1.0b1
 source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b1-uttoxeter-20040914-src.tgz)  
 [Ant](http://ant.apache.org) (needed to build SnipSnap)  
 [Patching
 FAQ](http://www.gnu.org/software/diffutils/manual/html_node/Merging-with-patch.html)
 
-I originally used [SnipSnap](/space/SnipSnap) as the web server for this site,
+I originally used [SnipSnap](SnipSnap) as the web server for this site,
 and I loved it. However, nothing's perfect, even SnipSnap.
 
 SnipSnap 0.5.1a introduced a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-392)
@@ -23,7 +23,7 @@ fixed, but only for the default "vertical" style. The bug remained in all other
 list styles.
 
 I've written a small
-[patch](/space/snipsnap-snip-name-1.0b1.patch)
+[patch](snipsnap-snip-name-1.0b1.patch)
 that fixes the remaining list styles. To use it with an existing SnipSnap
 installation, download the [SnipSnap 1.0b1
 source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b1-uttoxeter-20040914-src.tgz),
@@ -34,12 +34,12 @@ go!
 
 See also:
 
-  * [snipsnap comment without login patch](/space/snipsnap_comment_without_login_patch)
-  * [snipsnap macros](/space/snipsnap_macros)
-  * [snipsnap register without email](/space/snipsnap_register_without_email)
-  * [snipsnap script macro and python](/space/snipsnap_script_macro_and_python)
-  * [servlets with snipsnap](/space/servlets_with_snipsnap)
-  * [virtual host redirection](/space/virtual_host_redirection)
-  * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap_1.0b1_virtual_hostname_patch)
-  * [snipscrape](/space/snipscrape)
+  * [snipsnap comment without login patch](snipsnap_comment_without_login_patch)
+  * [snipsnap macros](snipsnap_macros)
+  * [snipsnap register without email](snipsnap_register_without_email)
+  * [snipsnap script macro and python](snipsnap_script_macro_and_python)
+  * [servlets with snipsnap](servlets_with_snipsnap)
+  * [virtual host redirection](virtual_host_redirection)
+  * [snipsnap 1.0b1 virtual hostname patch](snipsnap_1.0b1_virtual_hostname_patch)
+  * [snipscrape](snipscrape)
 

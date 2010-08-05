@@ -1,7 +1,7 @@
 gmail vs pine
 
-[![/space/pine.png](/space/pine.png)](http://washington.edu/pine/)![/space/gloves.jpg](/space/gloves.jpg)
-[![/space/gmail.png](/space/gmail.png)](http://gmail.com/)
+[![/space/pine.png](pine.png)](http://washington.edu/pine/)![/space/gloves.jpg](/space/gloves.jpg)
+[![/space/gmail.png](gmail.png)](http://gmail.com/)
 
 I've
 used [Pine](http://washington.edu/pine/) as my email client for, well, pretty
@@ -19,7 +19,7 @@ I ended up using it for five weeks, and while I eventually switched back to
 Pine, I liked Gmail a lot more than I expected. It made me question lots of
 things I took for granted, and showed me that there's plenty of innovation left
 in email clients. I'm currently [writing patches for
-Pine](/space/software#patches) to implement the features I miss most from Gmail.
+Pine](software#patches) to implement the features I miss most from Gmail.
 (Many people have gone the other direction and written [Greasemonkey scripts for
 Gmail](http://dunck.us/collab/GreaseMonkeyUserScriptsSpecific#head-2b681c0a24baff8899d7163cc7f805c75e1f44e4)
 to add features and customize it to their liking.)
@@ -103,18 +103,18 @@ sense...but that's a pretty odd perspective.
   * Gmail might be smart about (not) displaying quoted text, but it can't handle
 _composing_ with quoted text to save its life. There are a ton of problems with
 this, but among others, it needs a way to [remove trailing quotes when
-sending](/space/pine_remove_trailing_quote_patch). (OK, to be fair, I doubt this
+sending](pine_remove_trailing_quote_patch). (OK, to be fair, I doubt this
 feature is in high demand.)
 
 See also:
 
-  * [pine delete attachments on save patch](/space/pine_delete_attachments_on_save_patch)
+  * [pine delete attachments on save patch](pine_delete_attachments_on_save_patch)
 
-  * [pine flowed-text patch](/space/pine_flowed-text_patch)
+  * [pine flowed-text patch](pine_flowed-text_patch)
 
-  * [pine remove trailing quote patch](/space/pine_remove_trailing_quote_patch)
+  * [pine remove trailing quote patch](pine_remove_trailing_quote_patch)
 
-  * [pine reply-all patch](/space/pine_reply-all_patch)
+  * [pine reply-all patch](pine_reply-all_patch)
 
-  * [port_pine_patch](/space/port_pine_patch)
+  * [port_pine_patch](port_pine_patch)
 

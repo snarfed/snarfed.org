@@ -1,10 +1,10 @@
 Podcasts I Listen To
 
 <div style="float: right; margin-left: 10px">
-  <img src="/space/podcast.gif" />
+  <img src="podcast.gif" />
 </div>
 
-I've posted a [list of podcasts I listen to](/space/podcasts). I listen mostly
+I've posted a [list of podcasts I listen to](podcasts). I listen mostly
 while I'm running or at the gym, but sometimes also when I'm coding, playing
 games, or whatever else.
 
@@ -14,7 +14,7 @@ Most are news, current events, and game industry analysis. Examples include
 [Game Theory](http://gametheoryshow.com),
 [GDC Radio](http://www.gdcradio.net/),
 and [Radio Lab](http://www.wnyc.org/shows/radiolab), which I've
-[gushed about before](/space/2007-07-23_radiolab).
+[gushed about before](2007-07-23_radiolab).
 
 Thanks to [Fletcher Penney](http://fletcherpenney.net/) for
 [opml2markdown.xslt](http://fletcher.freeshell.org/wiki/Markdown_and_XML),

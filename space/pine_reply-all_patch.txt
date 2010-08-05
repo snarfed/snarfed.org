@@ -1,13 +1,13 @@
 pine reply-all patch
 
 <a href="http://washington.edu/pine/">
-  <img class="right" src="/space/pine.png" /></a>
+  <img class="right" src="pine.png" /></a>
 
 For the impatient:  
-Patch for Pine [4.58](/space/reply-all.patch.4.58), [4.60
-and 4.61](/space/reply-all.patch.4.60),
-[4.63](/space/reply-all.patch.4.63),
-[4.64](/space/reply-all.patch.4.64)  
+Patch for Pine [4.58](reply-all.patch.4.58), [4.60
+and 4.61](reply-all.patch.4.60),
+[4.63](reply-all.patch.4.63),
+[4.64](reply-all.patch.4.64)  
 [Pine source](http://www.washington.edu/pine/getpine/unix.html)  
 [FAQ on patching
 pine](http://www.math.washington.edu/~chappa/pine/faq/index.html)
@@ -29,7 +29,7 @@ all.
 So, I wrote a patch to separate Pine's Reply command into Reply and Reply All
 commands, which behave as expected. To patch Pine and build it, first download
 the [Pine 4.60 source](http://www.washington.edu/pine/getpine/unix.html) and my
-[patch](/space/reply-all.patch.4.60.gz). Then, run these
+[patch](reply-all.patch.4.60.gz). Then, run these
 commands to extract, patch, and build Pine.
 
     $ tar xzvf pine.tar.gz
@@ -44,7 +44,7 @@ accordingly. For more information on patching Pine, see [Eduardo Chappa's
 FAQ](http://www.math.washington.edu/~chappa/pine/faq/index.html).
 
 If you do try it out, please [let me
-know!](/space/about)
+know!](about)
 
 **Note:** If you get compile problems with kssl.h and krb5.h when building Pine
 on Redhat 9, use this build command:
@@ -60,9 +60,9 @@ workaround above should be good enough.
 
 See also:
 
-  * [pine delete attachments on save patch](/space/pine_delete_attachments_on_save_patch)
-  * [pine flowed-text patch](/space/pine_flowed-text_patch)
-  * [pine remove trailing quote patch](/space/pine_remove_trailing_quote_patch)
-  * [port_pine_patch](/space/port_pine_patch)
-  * [gmail vs pine](/space/gmail_vs_pine)
+  * [pine delete attachments on save patch](pine_delete_attachments_on_save_patch)
+  * [pine flowed-text patch](pine_flowed-text_patch)
+  * [pine remove trailing quote patch](pine_remove_trailing_quote_patch)
+  * [port_pine_patch](port_pine_patch)
+  * [gmail vs pine](gmail_vs_pine)
 

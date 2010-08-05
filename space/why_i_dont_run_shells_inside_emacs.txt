@@ -1,8 +1,8 @@
 why I don't run shells inside Emacs
 
-[![terminal.jpg](/space/terminal.jpg)](http://rxvt.org/)
-[![tcsh_oyster_catcher.jpg](/space/tcsh_oyster_catcher.jpg)](http://tcsh.org/)
-[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)
+[![terminal.jpg](terminal.jpg)](http://rxvt.org/)
+[![tcsh_oyster_catcher.jpg](tcsh_oyster_catcher.jpg)](http://tcsh.org/)
+[![gnu.jpg](gnu.jpg)](http://gnu.org/software/emacs/)
 
 This article details
 my experience running shells inside [Emacs](http://gnu.org/software/emacs/). I
@@ -35,7 +35,7 @@ want to admit it, but I did know how, and it did too. _Why don't you try running
 your shells inside Emacs?_
 
 I had a laundry list of reasons. Half of [my
-.cshrc](/space/dotfiles/cshrc) would be usless. I'd forgo
+.cshrc](dotfiles/cshrc) would be usless. I'd forgo
 [acoc](http://www.caliban.org/ruby/acoc.shtml)'s wonderful colorized command
 output. Emacs'
 [shell-mode](http://gnu.org/software/emacs/manual/html_node/Shell-Mode.html)
@@ -64,7 +64,7 @@ Even better, I could continue using my work shells _at home_, over VPN, just by
 connecting to my work Emacs!
 
   * **Tcsh integration.** Emacs was surprisingly sociable with tcsh. It obeyed
-[my .cshrc](/space/dotfiles/cshrc), read and wrote its
+[my .cshrc](dotfiles/cshrc), read and wrote its
 command history to `~/.history`, and generally played nice.
 
   * **ANSI color codes.** Wonder of wonders, Emacs could even display color
@@ -107,11 +107,11 @@ wrestling [GNU screen](http://www.gnu.org/software/screen/) into submission,
 since it also allows [keyboard navigation and
 copy/paste](http://www.delorie.com/gnu/docs/screen/screen_73.html) over shell
 contents. So far, I've [synchronized its paste buffer and the X
-selection](/space/synchronizing_GNU_screens_paste_buffer_and_the_X_selection), and I've [Emacs-ified its
-copy-scrollback mode](/space/Emacs_keybindings_in_GNU_screens_copy-scrollback_mode). Stay tuned for
+selection](synchronizing_GNU_screens_paste_buffer_and_the_X_selection), and I've [Emacs-ified its
+copy-scrollback mode](Emacs_keybindings_in_GNU_screens_copy-scrollback_mode). Stay tuned for
 more!
 
-Here's what I added to [my .emacs](/space/dotfiles/emacs) to
+Here's what I added to [my .emacs](dotfiles/emacs) to
 make shell-mode behave the way I wanted:
 
 <a name="settings"></a>
@@ -150,17 +150,17 @@ make shell-mode behave the way I wanted:
 See also: 
 
   * [synchronizing GNU screen's paste buffer and the X
-selection](/space/synchronizing_GNU_screens_paste_buffer_and_the_X_selection)
-  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs_keybindings_in_GNU_screens_copy-scrollback_mode)
-  * [acoc.conf for context diffs](/space/acoc.conf_for_context_diffs)
-  * [control arrow keys in rxvt, tcsh, and emacs](/space/control_arrow_keys_in_rxvt_tcsh_and_emacs)
-  * [tcsh highlighting patch](/space/tcsh_highlighting_patch)
-  * [remove tcsh globbing in history search](/space/remove_tcsh_globbing_in_history_search)
-  * [tcsh delete moves mark bug fix](/space/tcsh_delete_moves_mark_bug_fix)
-  * [Emacs and remote X Windows](/space/Emacs_and_remote_X_Windows)
-  * [minimal .emacs for fast startup](/space/minimal_.emacs_for_fast_startup)
-  * [emacs keybindings with number keys](/space/emacs_keybindings_with_number_keys)
-  * [emacs keybindings in firefox](/space/emacs_keybindings_in_firefox)
-  * [emacs X resources](/space/emacs_X_resources)
-  * [emacs page up page down](/space/emacs_page_up_page_down)
+selection](synchronizing_GNU_screens_paste_buffer_and_the_X_selection)
+  * [Emacs keybindings in GNU screen's copy-scrollback mode](Emacs_keybindings_in_GNU_screens_copy-scrollback_mode)
+  * [acoc.conf for context diffs](acoc.conf_for_context_diffs)
+  * [control arrow keys in rxvt, tcsh, and emacs](control_arrow_keys_in_rxvt_tcsh_and_emacs)
+  * [tcsh highlighting patch](tcsh_highlighting_patch)
+  * [remove tcsh globbing in history search](remove_tcsh_globbing_in_history_search)
+  * [tcsh delete moves mark bug fix](tcsh_delete_moves_mark_bug_fix)
+  * [Emacs and remote X Windows](Emacs_and_remote_X_Windows)
+  * [minimal .emacs for fast startup](minimal_.emacs_for_fast_startup)
+  * [emacs keybindings with number keys](emacs_keybindings_with_number_keys)
+  * [emacs keybindings in firefox](emacs_keybindings_in_firefox)
+  * [emacs X resources](emacs_X_resources)
+  * [emacs page up page down](emacs_page_up_page_down)
 

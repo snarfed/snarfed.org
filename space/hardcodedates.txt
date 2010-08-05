@@ -1,15 +1,15 @@
 hardcodedates
 
-<img class="right" src="/space/hardcodedates.jpg" />
+<img class="right" src="hardcodedates.jpg" />
 
 For the impatient:  
-&nbsp; [Download hardcodedates.py 1.4](/space/hardcodedates.py)  
+&nbsp; [Download hardcodedates.py 1.4](hardcodedates.py)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
 &nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)
 
 _Updated 2007-02-23._
 
-[hardcodedates](/space/hardcodedates.py) is a
+[hardcodedates](hardcodedates.py) is a
 [PyBlosxom](http://pyblosxom.sf.net/) plugin that overrides Pyblosxom's
 [default mtime handling](http://pyblosxom.sourceforge.net/1.3.1/manual/x704.html)
 to read mtimes from a file, instead of from the filesystem.
@@ -28,13 +28,13 @@ by [Nathan Bullock](http://www.nathanbullock.org/). I've taken over
 maintennance, with his permission.
 
 hardcodedates is Copyright 2004 [Nathan Bullock](http://www.nathanbullock.org/),
-2006 [Ryan Barrett](/space/about), and is distributed
+2006 [Ryan Barrett](about), and is distributed
 under the [GPL](http://www.gnu.org/licenses/gpl.html).
 
 See also:
 
-  * [migrating to pyblosxom](/space/2006-08-23_virtual_housewarming)
-  * [filekicker](/space/filekicker)
-  * [photogallery](/space/photogallery)
-  * [pyblosxom ajax comments](/space/pyblosxom_ajax_comments)
-  * [pyblosxom rdf flavour](/space/pyblosxom_rdf_flavour)
+  * [migrating to pyblosxom](2006-08-23_virtual_housewarming)
+  * [filekicker](filekicker)
+  * [photogallery](photogallery)
+  * [pyblosxom ajax comments](pyblosxom_ajax_comments)
+  * [pyblosxom rdf flavour](pyblosxom_rdf_flavour)

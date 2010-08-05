@@ -4,7 +4,7 @@ Reply-all patch for pine
 
 I've written a patch for my email client,
 [Pine](http://www.washington.edu/pine/), that provides a fully functional Reply
-All command. More information here: [pine reply-all patch](/space/pine_reply-all_patch)
+All command. More information here: [pine reply-all patch](pine_reply-all_patch)
 
 `</geekiness>`
 

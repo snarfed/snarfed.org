@@ -1,13 +1,13 @@
 Filling code in Emacs
 
-<a href="/space/fillcode">
-  <img class="right" src="/space/gnu.jpg" /></a>
+<a href="fillcode">
+  <img class="right" src="gnu.jpg" /></a>
 
 [Emacs](http://gnu.org/software/emacs/) is great, but one of my pet peeves is
 that while it can fill (ie wrap) plain text, it [can't fill source
-code](/space/filling_code_in_emacs).
+code](filling_code_in_emacs).
 
-I've recently been working on [fillcode](/space/fillcode), an Emacs minor mode
+I've recently been working on [fillcode](fillcode), an Emacs minor mode
 that does this. It's best described by example. Fillcode fills this:
 
     public static void foo(int i, float f, String s) {
@@ -22,8 +22,8 @@ function calls, and conditional expressions. It only breaks lines at commas and
 binary operators, and correctly preserves embedded comments and string literals.
 It also normalizes existing whitespace and line breaks.
 
-It's not perfect yet, but I've put up an [initial release](/space/fillcode).
+It's not perfect yet, but I've put up an [initial release](fillcode).
 Feel free to check it out, or just [download
-fillcode.el](/space/fillcode.el) and go to town. And if you do, please
-[let me know](/space/about) what you think!
+fillcode.el](fillcode.el) and go to town. And if you do, please
+[let me know](about) what you think!
 

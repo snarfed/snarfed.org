@@ -1,14 +1,14 @@
 bigbrother
 
-<a href="/space/bigbrother_screenshot.jpg">
-  <img class="right shadow" src="/space/thumbnail.jpg" /></a>
+<a href="bigbrother_screenshot.jpg">
+  <img class="right shadow" src="thumbnail.jpg" /></a>
 
 For the impatient:  
-[Download bigbrother 0.5.1](/space/bigbrother-0.5.1.tar.gz)  
+[Download bigbrother 0.5.1](bigbrother-0.5.1.tar.gz)  
 [Example page](/ryan.barrett.name/bigbrother/)  
 [Gaim web site](http://gaim.sf.net/)
 
-[Bigbrother](/space/Bigbrother) is a program that calculates statistics about
+[Bigbrother](Bigbrother) is a program that calculates statistics about
 your away message history. It parses a log file of all of the away messages
 you've used, then generates a report with graphs about when and how often you do
 different things, based on your away message history. It's best described by

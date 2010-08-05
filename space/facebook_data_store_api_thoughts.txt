@@ -1,7 +1,7 @@
 Facebook Data Store API Thoughts
 
 <a href="http://wiki.developers.facebook.com/index.php/Data_Store_API_documentation">
-  <img class="right" src="/space/facebook_platform_logo.png" /></a>
+  <img class="right" src="facebook_platform_logo.png" /></a>
 
 On Monday,
 [Facebook](http://facebook.com/) employee
@@ -249,10 +249,10 @@ unsurprising.
 
 See also:
 
-  * [Amazon SimpleDB thoughts](/space/amazon_simpledb_thoughts)
-  * [Google App Engine launched](/space/2008-04-07_google_app_engine_launched)
-  * [Under the Covers of the App Engine datastore](/space/datastore_talk.html) (slides)
-  * [Windows Azure impressions](/space/windows_azure_impressions)
-  * [Windows Azure details](/space/windows_azure_details)
-  * [Windows Azure: Overview and Impressions](/space/azure_talk.html) (slides)
-  * [Yahoo! Query Language thoughts](/space/yql_yahoo_query_language_thoughts)
+  * [Amazon SimpleDB thoughts](amazon_simpledb_thoughts)
+  * [Google App Engine launched](2008-04-07_google_app_engine_launched)
+  * [Under the Covers of the App Engine datastore](datastore_talk.html) (slides)
+  * [Windows Azure impressions](windows_azure_impressions)
+  * [Windows Azure details](windows_azure_details)
+  * [Windows Azure: Overview and Impressions](azure_talk.html) (slides)
+  * [Yahoo! Query Language thoughts](yql_yahoo_query_language_thoughts)

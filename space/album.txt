@@ -2,7 +2,7 @@ album
 
 **About**
 
-![/space/album.jpg](/space/album.jpg)
+![/space/album.jpg](album.jpg)
 
 We've created a simple macro that creates a photo album interface for pictures.
 Our macro generates thumbnails for a set of pictures and shows the thumbnails on
@@ -48,7 +48,7 @@ Next on the list is to make a **very** user friendly way to enter captions....
 
 **Authors**
 
-[Maulik](http://maulik.net/) and [Ryan](/space/about)
+[Maulik](http://maulik.net/) and [Ryan](about)
 
 **Notes**
 

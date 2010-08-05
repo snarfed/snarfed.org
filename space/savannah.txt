@@ -1,11 +1,11 @@
 savannah
 
 <a href="http://savannah.nongnu.org/people/viewprofile.php?user_id=34995">
-  <img class="right shadow" src="/space/savannah.png" /></a>
+  <img class="right shadow" src="savannah.png" /></a>
 
 [Savannah](http://savannah.nongnu.org/)
 is a site that hosts GNU-related open source projects, similar to
-[SourceForge](/space/SourceForge). They provide web space, file hosting, CVS,
+[SourceForge](SourceForge). They provide web space, file hosting, CVS,
 compile farms, bug and patch trackers, forums, mailing lists, and more. Savannah
 focuses on [free software](http://fsf.org/) related to the [GNU
 project](http://gnu.org/).

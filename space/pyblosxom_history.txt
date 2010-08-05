@@ -1,10 +1,10 @@
 history.py
 
-<img class="right" src="/space/clock_icon.jpg" />
+<img class="right" src="clock_icon.jpg" />
 
 For the impatient:  
-&nbsp; Download [history.py 0.5](/space/history.py)  
-&nbsp; Download [history-0.5.tar.gz](/space/history-0.5.tar.gz) (includes templates)  
+&nbsp; Download [history.py 0.5](history.py)  
+&nbsp; Download [history-0.5.tar.gz](history-0.5.tar.gz) (includes templates)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
 &nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)  
 &nbsp; [svnpyblosxom](http://www.baus.net/svnpyblosxom)
@@ -13,7 +13,7 @@ For the impatient:
 
 *Updated 2009-02-24.*
 
-[history.py](/space/history.py) is a [PyBlosxom](http://pyblosxom.sf.net/)
+[history.py](history.py) is a [PyBlosxom](http://pyblosxom.sf.net/)
 plugin that displays change history for entries. The change history must
 already exist, either in a version control system, database, or another form.
 This plugin just uses that backend to display change history, previous
@@ -69,15 +69,15 @@ Shows the raw text of version X of the entry.
     ?diff=1&version1=X&version2=Y
 
 For example, if an entry is located at
-[http://snarfed.org/space/filekicker](/space/filekicker),
+[http://snarfed.org/space/filekicker](filekicker),
 you'd use
-[http://snarfed.org/space/filekicker?history=1](/space/filekicker?history=1)
+[http://snarfed.org/space/filekicker?history=1](filekicker?history=1)
 to show its change history.
 
 Note that all of the URL parameters require a value. The values for history,
 diff, and raw can be anything, but they *must* be present. URLs that omit the
 value, e.g.
-[http://snarfed.org/space/filekicker?history](/space/filekicker?history),
+[http://snarfed.org/space/filekicker?history](filekicker?history),
 will not work.
 
 
@@ -125,15 +125,15 @@ Some lines will be surrounded with `<span class="...">`. The class will
 be `diff-added`, `diff-removed`, `diff-changed`, or `diff-line-number`,
 depending on the type of change that the line represents.
 
-history.py is copyright 2006 [Ryan Barrett](/space/about), and is distributed
+history.py is copyright 2006 [Ryan Barrett](about), and is distributed
 under the [GPL](http://www.gnu.org/licenses/gpl.html).
 
 
 See also:
 
-  * [photogallery](/space/photogallery)
-  * [hardcodedates](/space/hardcodedates)
-  * [filekicker](/space/filekicker)
-  * [pyblosxom ajax comments](/space/pyblosxom_ajax_comments)
-  * [pyblosxom rdf flavour](/space/pyblosxom_rdf_flavour)
-  * [migrating to pyblosxom](/space/2006-08-23_virtual_housewarming)
+  * [photogallery](photogallery)
+  * [hardcodedates](hardcodedates)
+  * [filekicker](filekicker)
+  * [pyblosxom ajax comments](pyblosxom_ajax_comments)
+  * [pyblosxom rdf flavour](pyblosxom_rdf_flavour)
+  * [migrating to pyblosxom](2006-08-23_virtual_housewarming)

@@ -1,7 +1,7 @@
 gnu emacs backup files
 
 <a href="http://gnu.org/software/emacs/">
-  <img class="right" src="/space/gnu.jpg" /></a>
+  <img class="right" src="gnu.jpg" /></a>
 
 I use [GNU
 Emacs](http://gnu.org/software/emacs/), and I love it. However, one annoyance is
@@ -12,7 +12,7 @@ So, I finally got fed up with this, and figured out how to keep them all in one
 place. Here's the
 [elisp](http://gnu.org/software/emacs/emacs-lisp-intro/html_node/index.html)
 (GNU Emacs only) that I put in [my
-.emacs](/space/dotfiles/emacs):
+.emacs](dotfiles/emacs):
 
     ;; Put autosave files (ie #foo#) in one place, *not*
     ;; scattered all over the file system!

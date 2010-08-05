@@ -1,15 +1,15 @@
 about
 
-<img class="right shadow" src="/space/ryan_small.jpg" />
+<img class="right shadow" src="ryan_small.jpg" />
 
 I'm Ryan Barrett. I live,
-[work](/space/resume.html), and
-[play](/space/archive)
+[work](resume.html), and
+[play](archive)
 in Silicon Valley and San Francisco. See my
-[posts](/space/archive),
-[pictures](/space/pictures),
-[software](/space/software),
-and [lists](/space/lists).
+[posts](archive),
+[pictures](pictures),
+[software](software),
+and [lists](lists).
 
 Here's my contact info:
 
@@ -18,7 +18,7 @@ Jabber: _[heaven@gmail](xmpp:heaven@gmail.com)_
 AIM: _[bl4ize](aim:goim?screenname=bl4ize)_  
 ICQ: _[1471094](http://wwp.icq.com/1471094)_  
 
-snarfed.org has been around [since early 2002](/space/snarfed.org_history).
+snarfed.org has been around [since early 2002](snarfed.org_history).
 It's hosted at
 [pair.com](http://pair.com/) on a
 [shared FreeBSD server](http://pair.com/services/web_hosting/).
@@ -26,8 +26,8 @@ It currently runs on [WordPress](http://wordpress.org/) and the
 [snarfed theme](/).
 It used to run on [PyBlosxom](http://pyblosxom.sf.net/)
 with a custom PyBlosxom
-[flavour](/space/snarfed.org_PyBlosxom_flavour) and
-[plugins](/space/software).
+[flavour](snarfed.org_PyBlosxom_flavour) and
+[plugins](software).
 Before that, it ran on
 [SnipSnap](http://snipsnap.org/), on a
 [Linux VPS](http://jvds.com/linux.php) at

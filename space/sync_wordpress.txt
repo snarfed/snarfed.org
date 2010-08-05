@@ -15,7 +15,7 @@ head, and checks it in. Finally, it diffs the dump against the remote database
 and applies it.
 
 <a href="http://mysql.org/">
-  <img class="left" src="/space/mysql.png" alt="mysql" /></a>
+  <img class="left" src="mysql.png" alt="mysql" /></a>
 
 The user is prompted at each step and may choose whether to copy and update
 files, check in the new dump, and apply it remotely. The source and destination

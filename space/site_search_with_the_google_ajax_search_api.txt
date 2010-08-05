@@ -1,9 +1,9 @@
 site search with the Google AJAX Search API
 
 <table><tr><td>
-<img src="/space/ajax.jpg">
+<img src="ajax.jpg">
 </td><td style="vertical-align: center">
-<a href="http://code.google.com/"><img src="/space/google_code.png" /></a>
+<a href="http://code.google.com/"><img src="google_code.png" /></a>
 </td></tr></table>
 
 _Updated 2010-03-29._
@@ -92,12 +92,12 @@ has more details. As an example, here's the CSS used on this site:
 Happy AJAX searching!
 
 [ajax_search.js](/ajax_search.js) is copyright 2006 [Ryan
-Barrett](/space/about), and is distributed under the
+Barrett](about), and is distributed under the
 [GPL](http://www.gnu.org/licenses/gpl.html).
 
 See also:
 
-  * [pyblosxom ajax comments](/space/pyblosxom_ajax_comments)
-  * [software](/space/software)
-  * [ideas](/space/ideas)
-  * [migrating to pyblosxom](/space/2006-08-23_virtual_housewarming)
+  * [pyblosxom ajax comments](pyblosxom_ajax_comments)
+  * [software](software)
+  * [ideas](ideas)
+  * [migrating to pyblosxom](2006-08-23_virtual_housewarming)

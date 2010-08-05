@@ -1,13 +1,13 @@
 photogallery
 
-<img class="right" src="/space/photogallery.jpg" />
+<img class="right" src="photogallery.jpg" />
 
 For the impatient:  
-&nbsp; [Download photogallery.py 0.5](/space/photogallery.py)  
+&nbsp; [Download photogallery.py 0.5](photogallery.py)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
 &nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)
 
-[photogallery](/space/photogallery.py) is a
+[photogallery](photogallery.py) is a
 [PyBlosxom](http://pyblosxom.sf.net/) plugin that displays a photo gallery,
 with thumbnails.
 
@@ -25,15 +25,15 @@ by [Magnus Nordlander](http://magnus.nordlander.tk/). I've taken over
 maintennance, with his permission.
 
 photogallery is Copyright 2004 [Magnus Nordlander](http://magnus.nordlander.tk/),
-2006 [Ryan Barrett](/space/about), and is distributed
+2006 [Ryan Barrett](about), and is distributed
 under the [GPL](http://www.gnu.org/licenses/gpl.html).
 
 See also:
 
-  * [index](/space/pyblosxom_index)
-  * [history](/space/pyblosxom_history)
-  * [filekicker](/space/filekicker)
-  * [hardcodedates](/space/photogallery)
-  * [pyblosxom ajax comments](/space/pyblosxom_ajax_comments)
-  * [pyblosxom rdf flavour](/space/pyblosxom_rdf_flavour)
-  * [migrating to pyblosxom](/space/2006-08-23_virtual_housewarming)
+  * [index](pyblosxom_index)
+  * [history](pyblosxom_history)
+  * [filekicker](filekicker)
+  * [hardcodedates](photogallery)
+  * [pyblosxom ajax comments](pyblosxom_ajax_comments)
+  * [pyblosxom rdf flavour](pyblosxom_rdf_flavour)
+  * [migrating to pyblosxom](2006-08-23_virtual_housewarming)

@@ -1,7 +1,7 @@
 webalizer referrer spam blacklist
 
-<a href="/space/webalizer_referrer_spam_blacklist">
-  <img class="right" src="/space/spam.jpg" /></a>
+<a href="webalizer_referrer_spam_blacklist">
+  <img class="right" src="spam.jpg" /></a>
 
 [Referrer
 spam](http://www.spywareinfo.com/articles/referer_spam/) - or by Apache's
@@ -14,7 +14,7 @@ they'll be linked from the pages that
 There are a number of approaches to fighting referrer spam, but so far, no
 silver bullet. I currently handle it a hand-edited blacklist of known spammer's
 sites. It's far from ideal, but it works. You can find my blacklist in my
-[webalizer.conf](/space/webalizer.conf) file. If you're
+[webalizer.conf](webalizer.conf) file. If you're
 fighting referrer spam too, feel free to borrow it.
 
 Eventually, I'd like to merge this with other blacklists and referrer spam

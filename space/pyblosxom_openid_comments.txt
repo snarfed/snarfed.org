@@ -1,11 +1,11 @@
 pyblosxom OpenID comments
 
-[![openid](/space/openid-logo.png)](http://openid.net/)
-[![pyblosxom](/space/pyblosxom.jpg)](http://pyblosxom.sf.net/)
-[![janrain](/space/janrain.png)](http://janrain.com/)
+[![openid](openid-logo.png)](http://openid.net/)
+[![pyblosxom](pyblosxom.jpg)](http://pyblosxom.sf.net/)
+[![janrain](janrain.png)](http://janrain.com/)
 
 For the impatient:  
-&nbsp; Download [comments_openid.py 0.4](/space/comments_openid.py)  
+&nbsp; Download [comments_openid.py 0.4](comments_openid.py)  
 &nbsp; Download [Python OpenID libraries](http://www.openidenabled.com/python-openid/)  
 &nbsp; Download
   [comments.py](http://pyblosxom.sf.net/blog/registry/input/comments/comments)
@@ -15,7 +15,7 @@ For the impatient:
 
 *Updated 2007-09-24.*
 
-[comments_openid.py](/space/comments_openid.py) is a
+[comments_openid.py](comments_openid.py) is a
 [PyBlosxom](http://pyblosxom.sf.net/) plugin that allows
 [OpenID](http://openid.net/)-authenticated comments. When used in conjunction
 with the
@@ -79,7 +79,7 @@ Copyright 2006-2007
 [Josh Hoyt](http://claimid.com/j3h/) and
 [Kevin Turner](http://claimid.com/keturn/) of
 [JanRain](http://janrain.com/), original authors, and
-[Ryan Barrett](/space/about), current maintainer. Distributed under the
+[Ryan Barrett](about), current maintainer. Distributed under the
 [GPL](http://www.gnu.org/licenses/gpl.html). Originally released on
 [openidenabled.com](http://openidenabled.com/) and moved to
 [snarfed.org](http://snarfed.org/) on September 6, 2007.
@@ -87,8 +87,8 @@ Copyright 2006-2007
 
 See also:
 
-  * [pyblosxom openid server](/space/pyblosxom_openid_server)
-  * [pyblosxom ajax comments](/space/pyblosxom_ajax_comments)
-  * [windows p2p](/space/windows_p2p)
-  * [pyblosxom index](/space/pyblosxom_index)
-  * [pyblosxom history](/space/pyblosxom_history)
+  * [pyblosxom openid server](pyblosxom_openid_server)
+  * [pyblosxom ajax comments](pyblosxom_ajax_comments)
+  * [windows p2p](windows_p2p)
+  * [pyblosxom index](pyblosxom_index)
+  * [pyblosxom history](pyblosxom_history)

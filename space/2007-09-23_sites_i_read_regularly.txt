@@ -1,11 +1,11 @@
 Sites I Read Regularly
 
 <div style="float: right; margin-left: 10px">
-  <img src="/space/rss.jpg" />
+  <img src="rss.jpg" />
 </div>
 
-Hot on the heels of my [list of podcasts](/space/podcasts), I've posted a [list
-of sites I read regularly](/space/feeds), courtesy of
+Hot on the heels of my [list of podcasts](podcasts), I've posted a [list
+of sites I read regularly](feeds), courtesy of
 [RSS](http://en.wikipedia.org/wiki/RSS_\(file_format\))/[Atom](http://atomenabled.org/)
 and [Google Reader](http://reader.google.com/). They're mostly friends' blogs
 and projects like [PyBlosxom](http://pyblosxom.sourceforge.net/) and

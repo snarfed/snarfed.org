@@ -1,10 +1,10 @@
 feeds
 
-<img class="right" src="/space/rss.jpg" alt="rss icon" />
+<img class="right" src="rss.jpg" alt="rss icon" />
 
 Sites I read regularly. They're mostly friends' blogs and other sites that I
 have a personal connection to.
-Also see [podcasts](/space/podcasts) and [other lists](/space/lists).
+Also see [podcasts](podcasts) and [other lists](/space/lists).
 
 Thanks to [Google Reader](http://reader.google.com/),
 [RSS](http://en.wikipedia.org/wiki/RSS_\(file_format\)),
@@ -27,7 +27,7 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
 
 <!-- keep this one as is!!! -->
 
-* [Facebook status updates](/space/2009-03-05_facebook_friend_lists)
+* [Facebook status updates](2009-03-05_facebook_friend_lists)
 
 * [3D Realms News](http://www.3drealms.com/)
 (_[subscribe](http://www.3drealms.com/atom.xml)_) 

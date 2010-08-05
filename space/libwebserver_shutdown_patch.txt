@@ -1,10 +1,10 @@
 libwebserver shutdown patch
 
-[![/space/libwebserver.png](/space/libwebserver.png)](http://libwebserver.sourceforge.net/)
+[![/space/libwebserver.png](libwebserver.png)](http://libwebserver.sourceforge.net/)
 
 For the impatient:  
 [Patch for libwebserver
-0.5.3](/space/libwebserver_shutdown.patch)  
+0.5.3](libwebserver_shutdown.patch)  
 [Tracker item on SourceForge](http://sourceforge.net/tracker/index.php?func=detail&aid=1146074&group_id=50164&atid=458797)  
 [Libwebserver page](http://libwebserver.sourceforge.net/)
 
@@ -16,17 +16,17 @@ client.
 
 Granted, if you just want a web server, libwebserver isn't for you. However, if
 you want to _embed_ a web server in another program, it's perfect. We're using
-it in our quest for [synchronizing mp3 playback](/space/synchronizing_mp3_playback), and we love it...
+it in our quest for [synchronizing mp3 playback](synchronizing_mp3_playback), and we love it...
 
 ...except for one thing. Libwebserver lets you start a server, but doesn't
 provide a way to _stop_ it. This might be reasonable for most programs, but not
 ours; we start and stop the server fairly often. [This
-patch](/space/libwebserver_shutdown.patch) adds a
+patch](libwebserver_shutdown.patch) adds a
 `web_server_shutdown()` call that stops the server, closes its socket, and
 deallocates its memory.
 
 See also:
 
-  * [synchronizing mp3 playback](/space/synchronizing_mp3_playback)
-  * [p4](/space/p4)
+  * [synchronizing mp3 playback](synchronizing_mp3_playback)
+  * [p4](p4)
 

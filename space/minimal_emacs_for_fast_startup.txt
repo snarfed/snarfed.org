@@ -1,7 +1,7 @@
 minimal .emacs for fast startup
 
 <a href="http://gnu.org/software/emacs/">
-  <img class="right" src="/space/gnu.jpg" /></a>
+  <img class="right" src="gnu.jpg" /></a>
 
 I
 spend a fair amount of time ssh-ed into remote, headless linux servers. I often
@@ -29,7 +29,7 @@ use this command to start emacs:
       --load .emacs.minimal
 
 and this elisp in my [my minimal
-.emacs](/space/dotfiles/emacs):
+.emacs](dotfiles/emacs):
 
     ; cutoff for word wrap
     (setq-default fill-column 79)
@@ -65,10 +65,10 @@ a good resource for writing and refining your .emacs file.
 
 See also:
 
-  * [control arrow keys in rxvt, tcsh, and emacs](/space/control_arrow_keys_in_rxvt_tcsh_and_emacs)
-  * [why I don't run shells inside Emacs](/space/why_I_dont_run_shells_inside_Emacs)
-  * [Emacs and remote X Windows](/space/Emacs_and_remote_X_Windows)
-  * [emacs X resources](/space/emacs_X_resources)
-  * [emacs page up page down](/space/emacs_page_up_page_down)
-  * [Emacs keybindings in GNU screen's copy-scrollback mode](/space/Emacs_keybindings_in_GNU_screens_copy-scrollback_mode)
+  * [control arrow keys in rxvt, tcsh, and emacs](control_arrow_keys_in_rxvt_tcsh_and_emacs)
+  * [why I don't run shells inside Emacs](why_I_dont_run_shells_inside_Emacs)
+  * [Emacs and remote X Windows](Emacs_and_remote_X_Windows)
+  * [emacs X resources](emacs_X_resources)
+  * [emacs page up page down](emacs_page_up_page_down)
+  * [Emacs keybindings in GNU screen's copy-scrollback mode](Emacs_keybindings_in_GNU_screens_copy-scrollback_mode)
 

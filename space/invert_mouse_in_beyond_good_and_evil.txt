@@ -1,16 +1,16 @@
 invert mouse in Beyond Good &amp; Evil
 
-[![/space/two.jpg](/space/two.jpg)](http://beyondgoodevil.com/)
-[![/space/box.jpg](/space/box.jpg)](http://beyondgoodevil.com/)
-[![/space/explosion.jpg](/space/explosion.jpg)](http://beyondgoodevil.com/)
+[![/space/two.jpg](two.jpg)](http://beyondgoodevil.com/)
+[![/space/box.jpg](box.jpg)](http://beyondgoodevil.com/)
+[![/space/explosion.jpg](explosion.jpg)](http://beyondgoodevil.com/)
 
 _If you like Beyond Good & Evil, you might also like [my
-writeup](/space/2004-11-11_beyond_good_and_evil) and the [soundtrack](/space/Beyond_Good_&_Evil_soundtrack)._
+writeup](2004-11-11_beyond_good_and_evil) and the [soundtrack](/space/Beyond_Good_&_Evil_soundtrack)._
 
 **Problem**
 
 I recently played the game Beyond Good & Evil, and I [loved every
-minute](/space/2004-11-11_beyond_good_and_evil) of it. However, it has [a
+minute](2004-11-11_beyond_good_and_evil) of it. However, it has [a
 bug](http://forums.ubi.com/eve/ubb.x?a=tpc&s=400102&f=401101532&m=286101532&r=396101532#396101532)
 that prevents inverting the mouse input, in both "look" and "camera" modes.
 
@@ -63,15 +63,15 @@ joystick, and can control the orientation of each axis independently...but the
 ones I tried don't have any effect when you use the mouse itself.
 
 Finally, I wrote a
-[script](/space/invert_mouse.ahk) for
+[script](invert_mouse.ahk) for
 [AutoHotKey](http://autohotkey.com/), a pretty sophisticated program that lets
 you script and remap mouse, keyboard, and joystick input. It inverts the mouse
 per-axis successfully, but doesn't affect DirectInput apps.
 
 See also:
 
-  * [thinkpad keys in firefox](/space/thinkpad_keys_in_firefox)
-  * [windows media player database](/space/windows_media_player_database)
-  * [Beyond Good & Evil writeup](/space/2004-11-11_beyond_good_and_evil)
-  * [Beyond Good & Evil soundtrack](/space/Beyond_Good_and_Evil_soundtrack)
+  * [thinkpad keys in firefox](thinkpad_keys_in_firefox)
+  * [windows media player database](windows_media_player_database)
+  * [Beyond Good & Evil writeup](2004-11-11_beyond_good_and_evil)
+  * [Beyond Good & Evil soundtrack](Beyond_Good_and_Evil_soundtrack)
 

@@ -1,10 +1,10 @@
 snipsnap comment without login patch
 
-[![snipsnap.png](/space/snipsnap.png)](http://snipsnap.org/)
-[![jetty.png](/space/jetty.png)](http://jetty.mortbay.com/)
+[![snipsnap.png](snipsnap.png)](http://snipsnap.org/)
+[![jetty.png](jetty.png)](http://jetty.mortbay.com/)
 
 For the impatient:  
-[Patch for SnipSnap 1.0b2-uttoxeter](/space/snipsnap-comment-without-login.patch)  
+[Patch for SnipSnap 1.0b2-uttoxeter](snipsnap-comment-without-login.patch)  
 [SnipSnap 1.0b2-uttoxeter
 source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b2-uttoxeter-20050204-src.tgz)  
 [Ant](http://ant.apache.org) (needed to build SnipSnap)
@@ -12,13 +12,13 @@ source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b2-uttoxeter-20050204-src.tgz)
 [Patching
 FAQ](http://www.gnu.org/software/diffutils/manual/html_node/Merging-with-patch.html)
 
-I originally used [SnipSnap](/space/SnipSnap) as the web server for this site, and I loved
+I originally used [SnipSnap](SnipSnap) as the web server for this site, and I loved
 it. However, my single biggest gripe with SnipSnap is that it requires you to
 register before you can comment.
 
 I want to do everything possible to encourage people to comment. If they have to
 jump through the account creation hoops for yet another site before they can
-comment, chances are they won't. So, I wrote a [patch](/space/snipsnap-comment-without-login.patch) to allow visitors to
+comment, chances are they won't. So, I wrote a [patch](snipsnap-comment-without-login.patch) to allow visitors to
 comment without logging in.
 
 The patch applies cleanly against [SnipSnap
@@ -32,12 +32,12 @@ the existing jars. Restart SnipSnap and you should be good to go!
 
 See also:
 
-  * [snipsnap register without email](/space/snipsnap_register_without_email)
-  * [snipscrape](/space/snipscrape)
-  * [snipsnap macros](/space/snipsnap_macros)
-  * [snipsnap recent-changes snip name patch](/space/snipsnap_recent-changes_snip_name_patch)
-  * [snipsnap script macro and python](/space/snipsnap_script_macro_and_python)
-  * [servlets with snipsnap](/space/servlets_with_snipsnap)
-  * [virtual host redirection](/space/virtual_host_redirection)
-  * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap_1.0b1_virtual_hostname_patch)
+  * [snipsnap register without email](snipsnap_register_without_email)
+  * [snipscrape](snipscrape)
+  * [snipsnap macros](snipsnap_macros)
+  * [snipsnap recent-changes snip name patch](snipsnap_recent-changes_snip_name_patch)
+  * [snipsnap script macro and python](snipsnap_script_macro_and_python)
+  * [servlets with snipsnap](servlets_with_snipsnap)
+  * [virtual host redirection](virtual_host_redirection)
+  * [snipsnap 1.0b1 virtual hostname patch](snipsnap_1.0b1_virtual_hostname_patch)
 

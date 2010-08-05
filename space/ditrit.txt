@@ -1,14 +1,14 @@
 ditrit
 
-<a href="/space/ditrit-0.1.tar.gz">
-  <img class="right shadow" src="/space/do_the_right_thing.jpg" /></a>
+<a href="ditrit-0.1.tar.gz">
+  <img class="right shadow" src="do_the_right_thing.jpg" /></a>
 
 For the impatient:  
-[Download ditrit 0.1](/space/ditrit-0.1.tar.gz)  
-[View ditrit.py](/space/ditrit.py)  
-[Example ditritrc file](/space/ditritrc)
+[Download ditrit 0.1](ditrit-0.1.tar.gz)  
+[View ditrit.py](ditrit.py)  
+[Example ditritrc file](ditritrc)
 
-[Ditrit](/space/Ditrit) is a programmable application launcher that tries to "do
+[Ditrit](Ditrit) is a programmable application launcher that tries to "do
 the right thing" for any input. If ditrit is given an email address, it knows to
 launch your email client and compose an email to that address. Likewise, ditrit
 knows to open URLs in your browser, text files in your text editor, and AIM

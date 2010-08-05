@@ -1,15 +1,15 @@
 Greasemonkeying around
 
-[![greasemonkey.png](/space/greasemonkey.png)](http://greasemonkey.mozdev.org/)
-[![amazon.jpg](/space/amazon.jpg)](http://amazon.com/)
-[![palo_alto.jpg](/space/palo_alto.jpg)](http://webcat.cityofpaloalto.org/)
+[![greasemonkey.png](greasemonkey.png)](http://greasemonkey.mozdev.org/)
+[![amazon.jpg](amazon.jpg)](http://amazon.com/)
+[![palo_alto.jpg](palo_alto.jpg)](http://webcat.cityofpaloalto.org/)
 
 I've been meaning to learn [Greasemonkey](http://greasemonkey.mozdev.org) for a
 while, and the recent
 [hubbub](http://developers.slashdot.org/article.pl?sid=05/05/16/0052245&tid=95&tid=154&tid=156&tid=1)
 finally motivated me to get off my butt and do it. I wrote a
-[script](/space/palo_alto_library_amazon_greasemonkey) that
+[script](palo_alto_library_amazon_greasemonkey) that
 inserts links into Amazon to show whether a book is available in the [Palo Alto
 Library](http://cityofpaloalto.org/library/).
-[More...](/space/palo_alto_library_amazon_greasemonkey)
+[More...](palo_alto_library_amazon_greasemonkey)
 

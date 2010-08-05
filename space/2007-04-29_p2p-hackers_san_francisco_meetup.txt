@@ -1,13 +1,13 @@
 P2P-Hackers San Francisco Meetup
 
-[![/space/sushi.jpg](/space/sushi.jpg)](http://local.google.com/local?output=html&q=ryoko&btnG=Search&latlng=37444324,-122149685,3030198286370161761)
-[![/space/p2p_thumb.png](/space/p2p_thumb.png)](http://zgp.org/mailman/listinfo/p2p-hackers)
-[![/space/ryoko.jpg](/space/ryoko.jpg)](http://local.google.com/local?output=html&q=ryoko&btnG=Search&latlng=37444324,-122149685,3030198286370161761)
+[![/space/sushi.jpg](sushi.jpg)](http://local.google.com/local?output=html&q=ryoko&btnG=Search&latlng=37444324,-122149685,3030198286370161761)
+[![/space/p2p_thumb.png](p2p_thumb.png)](http://zgp.org/mailman/listinfo/p2p-hackers)
+[![/space/ryoko.jpg](ryoko.jpg)](http://local.google.com/local?output=html&q=ryoko&btnG=Search&latlng=37444324,-122149685,3030198286370161761)
 
 The next [p2p-hackers](http://zgp.org/mailman/listinfo/p2p-hackers)
 San Francisco meetup is tomorrow, Monday 4/30, at 8pm at
 [Ryoko](http://local.google.com/local?output=html&q=ryoko&btnG=Search&latlng=37444324,-122149685,3030198286370161761).
-I had a lot of fun at the [last one](/space/2005-12-11_p2p-hackers_san_francisco_meetup). We gathered a great
+I had a lot of fun at the [last one](2005-12-11_p2p-hackers_san_francisco_meetup). We gathered a great
 group of P2P-minded people, ate good sushi, and spent hours debating the finer
 points of NAT traversal, DHTs, and other networking arcana. This one is shaping
 up to be even better. See you there!

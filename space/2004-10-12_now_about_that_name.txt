@@ -1,11 +1,11 @@
 Now, about that name... 
 
-<a href="/space/cdname.py">
-  <img class="right" src="/space/cd.jpg" /></a>
+<a href="cdname.py">
+  <img class="right" src="cd.jpg" /></a>
 
-I've released a new version of [cdname.py](/space/cdname.py), which reads
+I've released a new version of [cdname.py](cdname.py), which reads
 [CDDB](http://www.gracenote.com/gn_products/cddb.html)/[freedb](http://freedb.org/)
 INF files and uses them to name MP3s. This release includes the ability to
 generate M3U playlists, as well as a few small bug fixes. Drop, drop, drop it
-while it's...I mean, [grab it while it's hot](/space/cdname.py)!
+while it's...I mean, [grab it while it's hot](cdname.py)!
 

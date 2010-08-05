@@ -1,11 +1,11 @@
 snipscrape
 
-<a href="/space/snipscrape">
-  <img class="right" src="/space/scraper.jpg" /></a>
+<a href="snipscrape">
+  <img class="right" src="scraper.jpg" /></a>
 
 For the impatient:  
-[Download snipscrape 0.2](/space/snipscrape-0.2.tar.gz)  
-[View snipscrape.xslt](/space/snipscrape.xslt)  
+[Download snipscrape 0.2](snipscrape-0.2.tar.gz)  
+[View snipscrape.xslt](snipscrape.xslt)  
 [SnipSnap web site](http://snipsnap.org/)
 
 Snipscrape is a screen scraper for [SnipSnap](http://snipsnap.org/). It enables
@@ -32,12 +32,12 @@ See also:
   * [Migrating from Radio to SnipSnap with
 XSLT](http://blog.fivesight.com/prb/space/Migrating+Radio+to+SnipSnap)
   * [Using XML to structure snips](http://snipsnap.org/space/xml+issue)
-  * [servlets with snipsnap](/space/servlets_with_snipsnap)
-  * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap_1.0b1_virtual_hostname_patch)
-  * [snipsnap comment without login patch](/space/snipsnap_comment_without_login_patch)
-  * [snipsnap macros](/space/snipsnap_macros)
-  * [snipsnap recent-changes snip name patch](/space/snipsnap_recent-changes_snip_name_patch)
-  * [snipsnap register without email](/space/snipsnap_register_without_email)
-  * [snipsnap script macro and python](/space/snipsnap_script_macro_and_python)
-  * [virtual host redirection](/space/virtual_host_redirection)
+  * [servlets with snipsnap](servlets_with_snipsnap)
+  * [snipsnap 1.0b1 virtual hostname patch](snipsnap_1.0b1_virtual_hostname_patch)
+  * [snipsnap comment without login patch](snipsnap_comment_without_login_patch)
+  * [snipsnap macros](snipsnap_macros)
+  * [snipsnap recent-changes snip name patch](snipsnap_recent-changes_snip_name_patch)
+  * [snipsnap register without email](snipsnap_register_without_email)
+  * [snipsnap script macro and python](snipsnap_script_macro_and_python)
+  * [virtual host redirection](virtual_host_redirection)
 

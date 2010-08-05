@@ -1,8 +1,8 @@
 Emacs keybindings in GNU screen's copy-scrollback mode
 
-[![terminal.jpg](/space/terminal.jpg)](http://www.gnu.org/software/screen/)
-[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)
-[![X_logo.png](/space/X_logo.png)](/space/synchronizing_GNU_screens_paste_buffer_and_the_X_selection)
+[![terminal.jpg](terminal.jpg)](http://www.gnu.org/software/screen/)
+[![gnu.jpg](gnu.jpg)](http://gnu.org/software/emacs/)
+[![X_logo.png](X_logo.png)](/space/synchronizing_GNU_screens_paste_buffer_and_the_X_selection)
 
 When I'm working, I pretty much
 live inside [Emacs](http://gnu.org/software/emacs/). It's my IDE, debugger, text
@@ -17,7 +17,7 @@ switches are evil incarnate.
 I recently started using [GNU screen](http://www.gnu.org/software/screen/)'s
 [copy/scrollback mode](http://www.delorie.com/gnu/docs/screen/screen_73.html) so
 that I could copy from terminals with the keyboard. I use these commands in [my
-.screenrc](/space/dotfiles/screenrc) to set up Emacs key
+.screenrc](dotfiles/screenrc) to set up Emacs key
 bindings in screen's copy/scrollback mode:
 
     # emacs keybindings for navigation in copy mode
@@ -51,10 +51,10 @@ bindings in screen's copy/scrollback mode:
 
 See also:
 
-  * [synchronizing GNU screen's paste buffer and the X selection](/space/synchronizing_GNU_screens_paste_buffer_and_the_X_selection)
-  * [why I don't run shells inside Emacs](/space/why_I_dont_run_shells_inside_Emacs)
-  * [control arrow keys in rxvt, tcsh, and emacs](/space/control_arrow_keys_in_rxvt_tcsh_and_emacs)
-  * [emacs keybindings in firefox](/space/emacs_keybindings_in_firefox)
-  * [emacs keybindings with number keys](/space/emacs_keybindings_with_number_keys)
-  * [emacs page up page down](/space/emacs_page_up_page_down)
+  * [synchronizing GNU screen's paste buffer and the X selection](synchronizing_GNU_screens_paste_buffer_and_the_X_selection)
+  * [why I don't run shells inside Emacs](why_I_dont_run_shells_inside_Emacs)
+  * [control arrow keys in rxvt, tcsh, and emacs](control_arrow_keys_in_rxvt_tcsh_and_emacs)
+  * [emacs keybindings in firefox](emacs_keybindings_in_firefox)
+  * [emacs keybindings with number keys](emacs_keybindings_with_number_keys)
+  * [emacs page up page down](emacs_page_up_page_down)
 

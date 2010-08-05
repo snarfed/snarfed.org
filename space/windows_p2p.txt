@@ -5,7 +5,7 @@ article](http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.m
 so they're probably copyrighted by Microsoft. They're _not_ mine.
 :P
 
-[![/space/p2p.png](/space/p2p.png)](http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx)
+[![/space/p2p.png](p2p.png)](http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx)
 
 About a year ago, Microsoft quietly announced that they were developing a
 peer-to-peer networking protocol. It's not a file sharing program, mind you;
@@ -24,7 +24,7 @@ fundamental part of
 the networking infrastructure in the
 [Vista](http://www.microsoft.com/windowsvista/) platform.
 
-[![/space/stack.png](/space/stack.png)](http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx)
+[![/space/stack.png](stack.png)](http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx)
 
 In a nutshell, Windows P2P uses a [distributed hash
 table](http://www.infoanarchy.org/wiki/wiki.pl?Distributed_Hash_Table) for name
@@ -61,14 +61,14 @@ examples include instant messaging protocols such as
 describing the protocols themselves, not the methodologies used to reverse
 engineer them. If you know of good resources on reverse engineering network
 protocols, or you'd like to help, [let me
-know](/space/about)!
+know](about)!
 
-[![/space/cache.png](/space/cache.png)](http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx)
+[![/space/cache.png](cache.png)](http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx)
 
 As an aside, I got sidetracked from the reverse engineering one day, and wrote
 an implementation of the PNRP multi-level cache. You can download the
-[code](/space/pnrp.py) and a [unit
-test](/space/pnrp_unittest.py). (The multi-level cache is
+[code](pnrp.py) and a [unit
+test](pnrp_unittest.py). (The multi-level cache is
 specifically covered by their patent, but this code isn't in the context of name
 resolution, so I'm not too worried. :P)
 
@@ -82,7 +82,7 @@ inclined to find out.
 
 See also:
 
-  * [p4](/space/p4)
-  * [synchronizing mp3 playback](/space/synchronizing_mp3_playback)
-  * [libmsntp](/space/libmsntp)
+  * [p4](p4)
+  * [synchronizing mp3 playback](synchronizing_mp3_playback)
+  * [libmsntp](libmsntp)
 

@@ -1,18 +1,18 @@
 Ajax Comments in Pyblosxom
 
-<a href="/space/pyblosxom_ajax_comments">
-  <img class="right" src="/space/ajax.jpg" /></a>
+<a href="pyblosxom_ajax_comments">
+  <img class="right" src="ajax.jpg" /></a>
 
-Since I [migrated this site](/space/2006-08-23_virtual_housewarming) to
+Since I [migrated this site](2006-08-23_virtual_housewarming) to
 [Pyblosxom](http://pyblosxom.sourceforge.net/), I've been tweaking it here and
 there. My biggest tweak to date has been
-[adding AJAX to comments](/space/pyblosxom_ajax_comments).
+[adding AJAX to comments](pyblosxom_ajax_comments).
 
 Specifically, comment previewing and posting can optionally use
 [AJAX](http://en.wikipedia.org/wiki/Ajax_\(programming\)), as opposed to full
 HTTP POST requests. This avoids a full-size roundtrip and re-render, so
 commenting feels faster and more lightweight.
 
-[Try it!](/space/pyblosxom_ajax_comments#comment-anchor)
-Or [read more...](/space/pyblosxom_ajax_comments)
+[Try it!](pyblosxom_ajax_comments#comment-anchor)
+Or [read more...](pyblosxom_ajax_comments)
 

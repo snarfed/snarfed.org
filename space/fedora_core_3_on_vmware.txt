@@ -1,8 +1,8 @@
 fedora core 3 on vmware
 
-[![/space/vmware.png](/space/vmware.png)](http://vmware.com/)
-[![/space/redhat.jpg](/space/redhat.jpg)](http://redhat.com/)
-[![/space/fedora.png](/space/fedora.png)](http://fedora.redhat.com/)
+[![/space/vmware.png](vmware.png)](http://vmware.com/)
+[![/space/redhat.jpg](redhat.jpg)](http://redhat.com/)
+[![/space/fedora.png](fedora.png)](http://fedora.redhat.com/)
 
 A while back, I upgraded to [VMWare](http://vmware.com/) 4.5.2 with [Fedora Core
 3](http://fedora.redhat.com/) as the guest and Windows XP as the host. It was
@@ -53,7 +53,7 @@ with recent Linux 2.6 kernels. This is well documented on the VMWare and RedHat
 forums...and luckily, one intrepid hacker has [posted a
 fix](http://www.vmware.com/community/thread.jspa?forumID=19&threadID=7556&messageID=57559).
 To apply it, [download the
-patch](/space/vmware_tools_hgfs_linux_2.6_guest.patch),
+patch](vmware_tools_hgfs_linux_2.6_guest.patch),
 then apply it to the vmhgfs driver source and re-run the VMWare Tools config
 script. When it asks if you want to compile the hgfs module from source, say
 yes. Here are the commands:
@@ -73,7 +73,7 @@ added the [Fedora Extras](http://fedoraproject.org/wiki/Extras_2fUsingExtras),
 [Dag](http://dag.wieers.com/home-made/apt/FAQ.php#B3) repositories, I was able
 to install almost everything I needed, including...
 
-  * ...[ion](/space/ion), my window manager! It's not exactly mainstream, so I'd
+  * ...[ion](ion), my window manager! It's not exactly mainstream, so I'd
 always had to build it from source, but now there's an
 [RPM](http://rpm.pbone.net/index.php3/stat/4/idpl/1753782/com/ion-20040729-2mdk.i586.rpm.html).
 It requires lua-5.0.2 and lua-devel-5.0.2, which yum will kindly install for
@@ -115,7 +115,7 @@ from the Subversion web-based repository and put it in
 history. It's in xemacs-edit-utils-pkg, which ships with
 [XEmacs](http://xemacs.org/). However, finding a version that's compatible with
 GNU Emacs is iffy at best. So, I'm hosting it here: [savehist.el 0.4 for GNU
-Emacs](/space/savehist.el).
+Emacs](savehist.el).
 
   * I work from home occasionally. To do this, I ssh to
 [work](http://google.com/), run programs on my RH9 workstation remotely, and

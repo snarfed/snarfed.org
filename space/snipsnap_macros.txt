@@ -1,19 +1,19 @@
 snipsnap macros
 
 <a href="http://snipsnap.org/">
-  <img class="right" src="/space/snipsnap-logo.png" /></a>
+  <img class="right" src="snipsnap-logo.png" /></a>
 
 For the impatient:  
-[Download snarfed.jar](/space/snarfed.jar)  
-[Download the source](/space/snarfed-0.3.tar.bz2)  
+[Download snarfed.jar](snarfed.jar)  
+[Download the source](snarfed-0.3.tar.bz2)  
 [SnipSnap macros](http://snipsnap.org/space/Macro+Tutorial)  
 [SnipSnap web site](http://snipsnap.org/)
 
 In the course of setting up our web sites, [snarfed.org](http://snarfed.org/)
 and [maulik.net](http://maulik.freeshell.net/Miki.pl?page=home.miki),
-[Maulik](/space/Maulik) and I have written a number of macros for SnipSnap. To
+[Maulik](Maulik) and I have written a number of macros for SnipSnap. To
 install and use these macros, [download
-snarfed.jar](/space/snarfed.jar), put it in your SnipSnap
+snarfed.jar](snarfed.jar), put it in your SnipSnap
 application's WEB-INF/lib/ subdirectory, and restart SnipSnap.
 
 The included macros are:
@@ -46,15 +46,15 @@ distributed under the [GPL](http://www.gnu.org/licenses/gpl.html). Copyright
 
 See also:
 
-  * [snipsnap script macro and python](/space/snipsnap_script_macro_and_python)
-  * [snipsnap comment without login patch](/space/snipsnap_comment_without_login_patch)
+  * [snipsnap script macro and python](snipsnap_script_macro_and_python)
+  * [snipsnap comment without login patch](snipsnap_comment_without_login_patch)
 
-  * [snipsnap recent-changes snip name patch](/space/snipsnap_recent-changes_snip_name_patch)
-  * [snipsnap register without email](/space/snipsnap_register_without_email)
+  * [snipsnap recent-changes snip name patch](snipsnap_recent-changes_snip_name_patch)
+  * [snipsnap register without email](snipsnap_register_without_email)
 
-  * [servlets with snipsnap](/space/servlets_with_snipsnap)
-  * [virtual host redirection](/space/virtual_host_redirection)
+  * [servlets with snipsnap](servlets_with_snipsnap)
+  * [virtual host redirection](virtual_host_redirection)
 
-  * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap_1.0b1_virtual_hostname_patch)
-  * [snipscrape](/space/snipscrape)
+  * [snipsnap 1.0b1 virtual hostname patch](snipsnap_1.0b1_virtual_hostname_patch)
+  * [snipscrape](snipscrape)
 

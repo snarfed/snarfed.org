@@ -1,12 +1,12 @@
 synchronizing mp3 playback
 
-<img class="right" src="/space/notes.png" />
+<img class="right" src="notes.png" />
 
 ### Background
 
 Once upon a time, we thought a killer app for hall parties would be an MP3
 player synchronizer. We actually wrote one, as part of our p2p network,
-[P4](/space/p4). It plugged into [Winamp](http://winamp.com/) and synched its
+[P4](p4). It plugged into [Winamp](http://winamp.com/) and synched its
 playback with other P4 users on the network. This allowed lots of computers to
 sync up and play the same songs, at the same time, as if they were tuned to the
 same radio station. It sounded like one giant stereo with lots and lots of
@@ -18,7 +18,7 @@ buffering. Another low-tech alternative was to yell "Play!" and have everyone
 try to start an MP3 at the same time. We actually tried this, and quickly
 verified that it's more or less impossible.
 
-In the end, [P4](/space/p4)'s syncher worked, but it was brittle and not at
+In the end, [P4](p4)'s syncher worked, but it was brittle and not at
 all easy to use. I tried again without P2P, and ended up with a solid synching
 engine, but couldn't find a player with low enough plugin latency. When the
 sync plugin says "seek here!", it needs to happen in around 50ms, all the way
@@ -27,10 +27,10 @@ from the player down through the sound card driver.
 [iTunes](http://itunes.com/), nor any *nix players we found.
 
 Still, if you're interested, feel free download the source,
-[p4sync-0.1.tar.bz2](/space/p4sync-0.1.tar.bz2). It comes with the sync
+[p4sync-0.1.tar.bz2](p4sync-0.1.tar.bz2). It comes with the sync
 engine, plugin framework, and working plugins for the *nix music players
 [XMMS](http://xmms.org/), [Zinf](http://zinf.org/), and
-[MPD](http://musicpd.org/). [Drop me a line](/space/about) if you have any
+[MPD](http://musicpd.org/). [Drop me a line](about) if you have any
 questions!
 
 ### Related Work
@@ -105,7 +105,7 @@ Since then, most people have piggybacked over NTP for their synchronization
 needs.
 
 So, just like everyone else, we cheat and use NTP (actually
-[SNTP](/space/libmsntp)) to solve the hard problem. Who am I to look a gift
+[SNTP](libmsntp)) to solve the hard problem. Who am I to look a gift
 horse in the mouth?
 
 Seriously, though, there's only one trick to p4sync, and that is how it uses
@@ -118,7 +118,7 @@ timestamp, and seek forward that far into the song.
 It's really all quite simple. No, really.
 
 We use existing, tried-and-true technologies for everything except the music
-synching. We use [libmsntp](/space/libmsntp) for synching system clocks. The
+synching. We use [libmsntp](libmsntp) for synching system clocks. The
 server timestamp and the current song and playlist are sent over HTTP, using
 [http-tiny](http://www.demailly.com/~dl/wwwtools.html) and
 [libwebserver](http://libwebserver.sourceforge.net/). The MP3 players are
@@ -159,16 +159,16 @@ aka [ZeroConf](http://zeroconf.org/)).
 
 p4sync used to be [hosted at
 SourceForge](https://sourceforge.net/projects/p4sync/). Snarfed has its own web
-space and [subversion repository](/space/2004-01-08_subversion), though, so SourceForge
+space and [subversion repository](2004-01-08_subversion), though, so SourceForge
 ended up being redundant. We've closed the project there, but we definitely
 appreciated their hospitality. So long, SourceForge, and thanks for all the
 fish!
 
-- [Maulik](/space/Maulik) and [Ryan](/space/Ryan)
+- [Maulik](Maulik) and [Ryan](/space/Ryan)
 
 See also:
 
-  * [p4](/space/p4)
-  * [libmsntp](/space/libmsntp)
-  * [libwebserver shutdown patch](/space/libwebserver_shutdown_patch)
+  * [p4](p4)
+  * [libmsntp](libmsntp)
+  * [libwebserver shutdown patch](libwebserver_shutdown_patch)
 

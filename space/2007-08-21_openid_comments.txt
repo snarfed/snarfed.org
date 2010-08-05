@@ -2,16 +2,16 @@ OpenID comments
 
 <div style="float: right; margin-left: 10px">
   <a href="http://openid.net/">
-   <img src="/space/openid-logo.png" /></a>
+   <img src="openid-logo.png" /></a>
 </div>
 
 A while back, I posted an
-[OpenID server plugin](/space/2006-10-20_openid_server_for_pyblosxom) for
+[OpenID server plugin](2006-10-20_openid_server_for_pyblosxom) for
 [PyBlosxom](http://pyblosxom.sf.net/), the software that runs this site.
 
 Since then, I've added support for
 [OpenID comments](#comment-anchor), using
-the [comments_openid.py plugin](/space/pyblosxom_openid_comments).
+the [comments_openid.py plugin](pyblosxom_openid_comments).
 I've updated it to work with recent versions of PyBlosxom and
 [JanRain](http://www.janrain.com/)'s
 [Python OpenID library](http://www.openidenabled.com/openid/libraries/python/),

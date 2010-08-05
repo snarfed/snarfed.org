@@ -1,12 +1,12 @@
 Since I don't get to code at work... 
 
 <a href="http://pythonchallenge.com/">
-  <img class="right shadow" src="/space/python_challenge.jpg" /></a>
+  <img class="right shadow" src="python_challenge.jpg" /></a>
 
 `<geekiness>`
 
-I have [plenty](/space/synchronizing_mp3_playback) [of](/space/gmail_vs_pine)
-[projects](/space/ideas) to work on in my spare time...but recently, I've been
+I have [plenty](synchronizing_mp3_playback) [of](/space/gmail_vs_pine)
+[projects](ideas) to work on in my spare time...but recently, I've been
 blowing them all off and playing with the [Python
 Challenge](http://pythonchallenge.com/) instead. It's a set of riddles that can
 be solved with a little [Python](http://python.org/) code, a little creativity,

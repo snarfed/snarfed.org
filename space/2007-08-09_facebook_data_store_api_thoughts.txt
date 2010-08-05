@@ -2,7 +2,7 @@ Facebook Data Store API thoughts
 
 <div style="float: right; margin-left: 10px">
   <a href="http://wiki.developers.facebook.com/index.php/Data_Store_API_documentation">
-   <img src="/space/facebook_platform_logo.png" /></a>
+   <img src="facebook_platform_logo.png" /></a>
 </div>
 
 On Monday,
@@ -18,4 +18,4 @@ evolution of the Facebook platform. It could be an indication of the
 direction Facebook plans to take the platform in the future.
 
 I've posted some of my
-[initial thoughts...](/space/facebook_data_store_api_thoughts)
+[initial thoughts...](facebook_data_store_api_thoughts)

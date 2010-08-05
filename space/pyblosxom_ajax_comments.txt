@@ -1,6 +1,6 @@
 pyblosxom ajax comments
 
-<img class="right" src="/space/ajax.jpg" />
+<img class="right" src="ajax.jpg" />
 
 _This patch was applied to the Pyblosxom contributed plugins pack in
 [revision 973](http://pyblosxom.svn.sourceforge.net/viewvc/pyblosxom?view=rev&revision=973).
@@ -57,7 +57,7 @@ Finally, this script tag must be included somewhere after the `</form>` tag:
 All of these tags are included in the default comment-form template that comes
 with this plugin.
 
-AJAX comment support is copyright 2006 [Ryan Barrett](/space/about), and is
+AJAX comment support is copyright 2006 [Ryan Barrett](about), and is
 distributed under the [GPL](http://www.gnu.org/licenses/gpl.html). Thanks to
 [Todd Warner](http://www.dma.org/cgi-bin/cgiwrap/tw/toddblog) and
 [Blake Winton](http://bwinton.latte.ca/)
@@ -65,8 +65,8 @@ for beta testing and improvements.
 
 See also:
 
-  * [migrating to pyblosxom](/space/2006-08-23_virtual_housewarming)
-  * [filekicker](/space/filekicker)
-  * [photogallery](/space/photogallery)
-  * [hardcodedates](/space/hardcodedates)
-  * [pyblosxom rdf flavour](/space/pyblosxom_rdf_flavour)
+  * [migrating to pyblosxom](2006-08-23_virtual_housewarming)
+  * [filekicker](filekicker)
+  * [photogallery](photogallery)
+  * [hardcodedates](hardcodedates)
+  * [pyblosxom rdf flavour](pyblosxom_rdf_flavour)

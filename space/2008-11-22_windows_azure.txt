@@ -1,14 +1,14 @@
 Windows Azure
 
-[![windows azure logo](/space/azure_logo_small.jpg)](/space/windows_azure_impressions)
+[![windows azure logo](azure_logo_small.jpg)](/space/windows_azure_impressions)
 
-I [recently attended PDC 2008](/space/2008-10-27_in_la_for_pdc), where
+I [recently attended PDC 2008](2008-10-27_in_la_for_pdc), where
 Microsoft announced [Windows Azure](http://azure.com/). I spent the week
 absorbing Microsoft's messaging, diving deep into the technical details, and
 thinking about the broader implications for cloud computing as a whole.
 
 I've posted my
-[overall impressions](/space/windows_azure_impressions) and
-some [deeper technical details](/space/windows_azure_details).
-I've also edited and posted a [presentation on Azure](/space/azure_talk.html)
+[overall impressions](windows_azure_impressions) and
+some [deeper technical details](windows_azure_details).
+I've also edited and posted a [presentation on Azure](azure_talk.html)
 I gave recently. Feedback is welcome!

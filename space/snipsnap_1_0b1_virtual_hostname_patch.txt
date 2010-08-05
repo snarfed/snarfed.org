@@ -1,11 +1,11 @@
 snipsnap 1.0b1 virtual hostname patch
 
-[![snipsnap.png](/space/snipsnap.png)](http://snipsnap.org/)
-[![jetty.png](/space/jetty.png)](http://jetty.mortbay.com/)
+[![snipsnap.png](snipsnap.png)](http://snipsnap.org/)
+[![jetty.png](jetty.png)](http://jetty.mortbay.com/)
 
 For the impatient:  
 [Patch for SnipSnap
-1.0b1](/space/snipsnap-1.0b1-vhost.patch)  
+1.0b1](snipsnap-1.0b1-vhost.patch)  
 [SnipSnap 1.0b1
 source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b1-uttoxeter-20040914-src.tgz)  
 [Ant](http://ant.apache.org) (needed to build SnipSnap)
@@ -13,12 +13,12 @@ source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b1-uttoxeter-20040914-src.tgz)
 [Patching
 FAQ](http://www.gnu.org/software/diffutils/manual/html_node/Merging-with-patch.html)
 
-I use [SnipSnap](/space/SnipSnap) as the web server for this site, and I love
+I use [SnipSnap](SnipSnap) as the web server for this site, and I love
 it. However, nothing's perfect, even SnipSnap.
 
 SnipSnap runs on top of [Jetty](http://jetty.mortbay.org/), a Java web server
 and servlet container. Jetty is highly configurable, which I take advantage of
-to do [virtual host redirection](/space/virtual_host_redirection). Specifically,
+to do [virtual host redirection](virtual_host_redirection). Specifically,
 I use a single instance of Jetty to serve a SnipSnap instance on
 [snarfed.org](http://snarfed.org/), and static HTML on
 [ryan.barrett.name](/ryan.barrett.name/).
@@ -28,7 +28,7 @@ code has a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-387) that prevents
 virtual hostname redirection. :/
 
 I've written a small
-[patch](/space/snipsnap-1.0b1-vhost.patch)
+[patch](snipsnap-1.0b1-vhost.patch)
 that fixes this. To use it with an existing SnipSnap installation, download the
 [SnipSnap 1.0b1
 source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b1-uttoxeter-20040914-src.tgz),
@@ -38,12 +38,12 @@ the existing jar. Restart SnipSnap and you should be good to go!
 
 See also:
 
-  * [virtual host redirection](/space/virtual_host_redirection)
-  * [servlets with snipsnap](/space/servlets_with_snipsnap)
-  * [snipscrape](/space/snipscrape)
-  * [snipsnap comment without login patch](/space/snipsnap_comment_without_login_patch)
-  * [snipsnap macros](/space/snipsnap_macros)
-  * [snipsnap recent-changes snip name patch](/space/snipsnap_recent-changes_snip_name_patch)
-  * [snipsnap register without email](/space/snipsnap_register_without_email)
-  * [snipsnap script macro and python](/space/snipsnap_script_macro_and_python)
+  * [virtual host redirection](virtual_host_redirection)
+  * [servlets with snipsnap](servlets_with_snipsnap)
+  * [snipscrape](snipscrape)
+  * [snipsnap comment without login patch](snipsnap_comment_without_login_patch)
+  * [snipsnap macros](snipsnap_macros)
+  * [snipsnap recent-changes snip name patch](snipsnap_recent-changes_snip_name_patch)
+  * [snipsnap register without email](snipsnap_register_without_email)
+  * [snipsnap script macro and python](snipsnap_script_macro_and_python)
 

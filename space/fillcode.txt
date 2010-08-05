@@ -1,10 +1,10 @@
 fillcode
 
-<img class="right" src="/space/gnu.jpg" />
+<img class="right" src="gnu.jpg" />
 
 For the impatient:  
-&nbsp; [Download fillcode.el 0.7.1](/space/fillcode.el)  
-&nbsp; [Download fillcode.tar.gz](/space/fillcode.tar.gz) (includes
+&nbsp; [Download fillcode.el 0.7.1](fillcode.el)  
+&nbsp; [Download fillcode.tar.gz](fillcode.tar.gz) (includes
 [elunit](http://www.lostway.org/~tko/elisp/elunit/) unit tests)  
 
 _Updated 2007/08/24._
@@ -21,7 +21,7 @@ to this:
                            String s) {
 
 The motivation is described in my original [call for filling
-code](/space/filling_code_in_emacs).
+code](filling_code_in_emacs).
 
 Fillcode can fill any parenthesized expression, including function prototypes,
 function calls, and conditional expressions. It only breaks lines at commas and
@@ -42,7 +42,7 @@ insert a line break at the first open parenthesis or other appropriate point.
 This can be useful when the first open parenthesis is near `fill-column`.
 
 You can load fillcode automatically by copying
-[fillcode.el](/space/fillcode.el) into `/usr/share/emacs/site-lisp/`,
+[fillcode.el](fillcode.el) into `/usr/share/emacs/site-lisp/`,
 or any other directory in Emacs' `load-path`. Then, add this to your .emacs
 file:
 

@@ -1,7 +1,7 @@
 App Engine Datastore multihoming
 
 <a href="http://googleappengine.blogspot.com/">
-  <img class="right" src="/space/appengine.jpg" /></a>
+  <img class="right" src="appengine.jpg" /></a>
 
 I recently
 [posted about datastore multihoming](http://googleappengine.blogspot.com/2009/09/migration-to-better-datastore.html),
@@ -13,12 +13,12 @@ I gave at [Google I/O](http://code.google.com/events/io/) earlier this year,
 but it has much more detail on how we're applying those lessons to the
 datastore itself.
 
-When I was [at PDC last year](/space/windows_azure_impressions)
+When I was [at PDC last year](windows_azure_impressions)
 for Microsoft's [Windows Azure](http://azure.com/) announcement,
 one of my strongest impressions was how much "under the hood" information
 there was. A number of talks went deep into Azure's internal design decisions and
 implementation. As I
-[described at the time](/space/windows_azure_impressions#information):
+[described at the time](windows_azure_impressions#information):
 
 > The internal details on how Azure works were particularly compelling.
 > Developers may not need that information to write Azure services, but providing

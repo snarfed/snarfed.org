@@ -1,25 +1,25 @@
 New job!
 
-<img class="right shadow" src="/space/app_engine_goodbye_plaque_thumb.jpg" alt="app engine goodbye plaque" />
+<img class="right shadow" src="app_engine_goodbye_plaque_thumb.jpg" alt="app engine goodbye plaque" />
 
 [App Engine](http://appengine.google.com/) has been a great home for the past
 four years. It's been an unforgettable experience - co-founding something
 so ambitious, iterating for years, the
-[adrenaline rush of launch](/space/2008-04-07_google_app_engine_launched),
+[adrenaline rush of launch](2008-04-07_google_app_engine_launched),
 seeing it grow and mature and make its way in the world, and most of all
 helping build a brilliant, awesome team. They pushed me and kept me on my toes
 the whole time, and I loved it. I'll miss them.
 
-<img class="left shadow" src="/space/google_headquarters_sign.jpg" alt="google headquarters sign" />
+<img class="left shadow" src="google_headquarters_sign.jpg" alt="google headquarters sign" />
 
 Even so, it's time to move on something new. I've always wanted to work on
 networking,
-[and](/space/windows_p2p)
-[I've](/space/libmsntp)
-[dabbled](/space/p4)
-[in](/space/synchronizing_mp3_playback)
-[it](/space/software)
-[some](/space/ideas),
+[and](windows_p2p)
+[I've](libmsntp)
+[dabbled](p4)
+[in](synchronizing_mp3_playback)
+[it](software)
+[some](ideas),
 but I'm finally going to do it for real. After looking around and talking to
 lots of people, I finally settled on the network systems group at Google. I'll
 likely start with the system that generates and monitors routing tables for

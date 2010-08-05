@@ -4,15 +4,15 @@ beer
 img { vertical-align: text-top; }
 </style>
 
-<img class="right shadow" src="/space/beer_taps.jpg" alt="beer taps" />
+<img class="right shadow" src="beer_taps.jpg" alt="beer taps" />
 
 [Beer I'd like to try](#to_try) and
 [beer I've tried](#tried).
 ![good](/good.png) I liked,
 ![ok](/ok.png) were just ok,
 ![bad](/bad.png) I didn't like.
-Also see [wine](/space/wine), [chocolate](/space/chocolate), and
-[other lists](/space/lists).
+Also see [wine](wine), [chocolate](/space/chocolate), and
+[other lists](lists).
 
 Naturally, this isn't comprehensive -
 I've tried others that aren't listed here -

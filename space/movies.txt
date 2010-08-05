@@ -5,7 +5,7 @@ good, ok, bad, f, nf { font-style: italic; }
 img { vertical-align: text-top; }
 </style>
 
-<img class="right" src="/space/film_reel.jpg" alt="film reel" />
+<img class="right" src="film_reel.jpg" alt="film reel" />
 
 Movies I've watched and want to watch.
 ![good](/good.png) I liked,
@@ -13,8 +13,8 @@ Movies I've watched and want to watch.
 ![bad](/bad.png) I didn't like.
 
 Naturally, this isn't comprehensive, and it's biased toward my taste.
-Also see [books](/space/books), [games](/space/games), and
-[other lists](/space/lists).
+Also see [books](books), [games](/space/games), and
+[other lists](lists).
 
 **To watch**: 
 
@@ -779,7 +779,7 @@ Also see [books](/space/books), [games](/space/games), and
 </span>
 
 [Timecrimes (Los Cronocrímenes)](http://imdb.com/title/tt0480669/)
-([see my post](/space/2008-05-08_timecrimes_at_the_iff))
+([see my post](2008-05-08_timecrimes_at_the_iff))
 ![good](/good.png) ![good](/good.png)
 
 [Superbad](http://imdb.com/title/tt0829482/)

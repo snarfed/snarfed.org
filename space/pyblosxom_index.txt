@@ -1,15 +1,15 @@
 index.py
 
-<img class="right" src="/space/rolodex.jpg" />
+<img class="right" src="rolodex.jpg" />
 
 For the impatient:  
-&nbsp; Download [index.py](/space/index.py)  
+&nbsp; Download [index.py](index.py)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
 &nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)  
 
 _Updated 5/4/2007._
 
-[index.py](/space/index.py) is a [PyBlosxom](http://pyblosxom.sf.net/) plugin
+[index.py](index.py) is a [PyBlosxom](http://pyblosxom.sf.net/) plugin
 that displays displays an alphabetical index of all entries. It's similar to
 [other](http://pyblosxom.sourceforge.net/blog/registry/archives/pyarchives)
 [index](http://pyblosxom.sourceforge.net/blog/registry/archives/wbgarchives)
@@ -27,16 +27,16 @@ behavior, all optional. Here they are, along with their defaults:
     py['index_title']              = 'index'
     py['index_use_story_template'] = True
 
-index.py is copyright 2006 [Ryan Barrett](/space/about), and is distributed
+index.py is copyright 2006 [Ryan Barrett](about), and is distributed
 under the [GPL](http://www.gnu.org/licenses/gpl.html).
 
 
 See also:
 
-  * [history](/space/pyblosxom_history)
-  * [photogallery](/space/photogallery)
-  * [hardcodedates](/space/hardcodedates)
-  * [filekicker](/space/filekicker)
-  * [pyblosxom ajax comments](/space/pyblosxom_ajax_comments)
-  * [pyblosxom rdf flavour](/space/pyblosxom_rdf_flavour)
-  * [migrating to pyblosxom](/space/2006-08-23_virtual_housewarming)
+  * [history](pyblosxom_history)
+  * [photogallery](photogallery)
+  * [hardcodedates](hardcodedates)
+  * [filekicker](filekicker)
+  * [pyblosxom ajax comments](pyblosxom_ajax_comments)
+  * [pyblosxom rdf flavour](pyblosxom_rdf_flavour)
+  * [migrating to pyblosxom](2006-08-23_virtual_housewarming)

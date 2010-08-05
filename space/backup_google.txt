@@ -1,8 +1,8 @@
 backup_google.sh
 
-<img class="right" src="/space/server_parachute.jpg" />
+<img class="right" src="server_parachute.jpg" />
 
-[backup_google.sh](/space/backup_google.sh) is a script that backs up data in
+[backup_google.sh](backup_google.sh) is a script that backs up data in
 the Google services I use:
 [Contacts](http://www.google.com/contacts),
 [Calendar](http://calendar.google.com/),
@@ -30,8 +30,8 @@ capture a valid `SID/GTL` cookie pair and hard code it in the script.
 
 See also:
 
-  * [software](/space/software)
-  * [download_picasa_album](/space/download_picasa_album)
-  * [dotfiles](/space/dotfiles)
-  * [resize google calendar](/space/resize_google_calendar)
-  * [google_talk_sms pidgin plugin](/space/google_talk_sms_pidgin_plugin)
+  * [software](software)
+  * [download_picasa_album](download_picasa_album)
+  * [dotfiles](dotfiles)
+  * [resize google calendar](resize_google_calendar)
+  * [google_talk_sms pidgin plugin](google_talk_sms_pidgin_plugin)

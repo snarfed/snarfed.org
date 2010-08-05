@@ -1,10 +1,10 @@
 acoc.conf for context diffs
 
-[![/space/acoc_top.png](/space/acoc_top.png)](http://www.caliban.org/ruby/acoc.shtml)
+[![/space/acoc_top.png](acoc_top.png)](http://www.caliban.org/ruby/acoc.shtml)
 
 For the impatient:  
-[.acoc.conf](/space/acoc.conf) for coloring context diffs  
-[Patch](/space/acoc-diff-context.patch) for acoc 0.7.1  
+[.acoc.conf](acoc.conf) for coloring context diffs  
+[Patch](acoc-diff-context.patch) for acoc 0.7.1  
 
 [Acoc](http://www.caliban.org/ruby/acoc.shtml) is one of my favorite \*nix tools.
 It adds color to common commands like ls, diff, grep, make, and top. This
@@ -22,6 +22,6 @@ To color those lines, add this to your _~/.acoc.conf_:
     [diff,rcsdiff/t,cvs diff/t,p4 diff/t]
     /^([!*].*)/        yellow
 
-[This patch](/space/acoc-diff-context.patch) adds the
+[This patch](acoc-diff-context.patch) adds the
 rule to acoc 0.7.1.
 

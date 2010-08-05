@@ -1,8 +1,8 @@
 Windows Azure impressions
 
-![windows azure logo](/space/azure_logo_small.jpg)
+![windows azure logo](azure_logo_small.jpg)
 
-I [recently attended PDC 2008](/space/2008-10-27_in_la_for_pdc), where
+I [recently attended PDC 2008](2008-10-27_in_la_for_pdc), where
 Microsoft announced [Windows Azure](http://azure.com/). I spent the week
 absorbing Microsoft's messaging, diving deep into the technical details, and
 thinking about the broader implications for cloud computing as a whole.
@@ -11,9 +11,9 @@ Here are the themes that stuck with me. Some are straightforward quotes from
 MS's messaging that were particularly compelling, and some are implications
 that follow from reading between the lines.
 
-Also see my [technical writeup](/space/windows_azure_details) and
-[presentation slides](/space/azure_talk.html). (Full disclosure: I
-[work](/space/2008-04-07_google_app_engine_launched) on
+Also see my [technical writeup](windows_azure_details) and
+[presentation slides](azure_talk.html). (Full disclosure: I
+[work](2008-04-07_google_app_engine_launched) on
 [Google App Engine](http://appengine.google.com/).)
 
 **Contents:**
@@ -53,7 +53,7 @@ Amazon's [S3](http://aws.amazon.com/s3/),
 infrastructure like [memcached](http://www.danga.com/memcached/)
 and Google's [Chubby](http://labs.google.com/papers/chubby.html),
 and others.
-The [Azure Fabric](/space/windows_azure_details#Fabric)
+The [Azure Fabric](windows_azure_details#Fabric)
 also provides some of the same high level features as
 [RightScale](http://rightscale.com/) and
 [Google App Engine](http://appengine.google.com/), but it also has noticeable
@@ -66,9 +66,9 @@ Azure, so they had external users in mind from the beginning.
 
 Also, they've also committed to serious dogfooding, ie building and running
 their own products on Azure, much more than other cloud providers. Azure
-[tables](/space/windows_azure_details#Tables),
-[queues](/space/windows_azure_details#Queues), and
-[blobs](/space/windows_azure_details#Blobs) all run on it. So do the .NET
+[tables](windows_azure_details#Tables),
+[queues](windows_azure_details#Queues), and
+[blobs](windows_azure_details#Blobs) all run on it. So do the .NET
 Services (service bus, access control, and workflow), SQL Services, Live
 Services, Dynamics CRM, and many others. They confirmed in person that they're
 working on porting even more of their existing products to Azure.
@@ -128,7 +128,7 @@ MS provided *lots* of information. Not just tutorials and API references, but
 also details on how Azure itself is built and works under the covers.
 
 Their VM and security policy is a good example. It uses
-[virtualization based on Hyper-V](/space/windows_azure_details#Virtualization),
+[virtualization based on Hyper-V](windows_azure_details#Virtualization),
 which is
 [well documented](http://www.microsoft.com/windowsserver2008/en/us/hyperv.aspx),
 and they enumerated the five layers in their security model: managed code,
@@ -167,11 +167,11 @@ that were unflattering, even embarrassing, if they were also educational.
 ### Azure is "open" [![permalink](/Icon-Permalink.png)](#open)
 
 Azure Storage -
-[tables](/space/windows_azure_details#Tables),
-[queues](/space/windows_azure_details#Queues), and
-[blobs](/space/windows_azure_details#Blobs) - is accessible over simple REST
+[tables](windows_azure_details#Tables),
+[queues](windows_azure_details#Queues), and
+[blobs](windows_azure_details#Blobs) - is accessible over simple REST
 APIs, and other parts like service management, alerting, the
-[local SDK](/space/windows_azure_details#Developer_Experience)
+[local SDK](windows_azure_details#Developer_Experience)
 (aka "cloud on your desktop"), etc. are similarly extensible. They also
 mentioned moving apps to and from the cloud, since the runtimes, application
 servers, and toolchains are either identical or compatible.
@@ -227,11 +227,11 @@ documented as well, so they're doubly difficult when they're inconsistent.
 
 See also:
 
-  * [Windows Azure details](/space/windows_azure_details)
-  * [Windows Azure: Overview and Impressions](/space/azure_talk.html) (slides)
-  * [Facebook Data Store API Thoughts](/space/facebook_data_store_api_thoughts)
-  * [Amazon SimpleDB thoughts](/space/amazon_simpledb_thoughts)
-  * [Google App Engine launched](/space/2008-04-07_google_app_engine_launched)
-  * [Under the Covers of the App Engine datastore](/space/datastore_talk.html) (slides)
-  * [Yahoo! Open Strategy thoughts](/space/2008-12-16_yos_yahoo_open_strategy)
-  * [Yahoo! Query Language thoughts](/space/yql_yahoo_query_language_thoughts)
+  * [Windows Azure details](windows_azure_details)
+  * [Windows Azure: Overview and Impressions](azure_talk.html) (slides)
+  * [Facebook Data Store API Thoughts](facebook_data_store_api_thoughts)
+  * [Amazon SimpleDB thoughts](amazon_simpledb_thoughts)
+  * [Google App Engine launched](2008-04-07_google_app_engine_launched)
+  * [Under the Covers of the App Engine datastore](datastore_talk.html) (slides)
+  * [Yahoo! Open Strategy thoughts](2008-12-16_yos_yahoo_open_strategy)
+  * [Yahoo! Query Language thoughts](yql_yahoo_query_language_thoughts)

@@ -1,12 +1,12 @@
 simonitor
 
 <a href="http://www.simon.com/giftcard/">
-  <img class="right" src="/space/simon_giftcard.jpg" /></a>
+  <img class="right" src="simon_giftcard.jpg" /></a>
 
 _Updated 11/2/2009._
 
 For privacy reasons, I use
-[prepaid debit cards](/space/privacy_through_prepaid_credit_cards) instead of
+[prepaid debit cards](privacy_through_prepaid_credit_cards) instead of
 credit cards. Right now, I mostly use
 [Simon gift cards](http://www.simon.com/giftcard/).
 
@@ -16,7 +16,7 @@ card's balance and transaction history in real time. However, it's a little
 tedious to navigate the site and enter the card number and CCV each time.
 So, I automated it.
 
-[simonitor.sh](/space/simonitor.sh) is a shell script that fetches the
+[simonitor.sh](simonitor.sh) is a shell script that fetches the
 available balance, expiration date, and address (if registered) for one or more
 [Simon gift cards](http://www.simon.com/giftcard/). It uses
 [curl](http://curl.haxx.se/) to POST each card number and CCV to [Simon's web
@@ -48,9 +48,9 @@ need a browser.
 
 See also:
 
-  * [privacy through prepaid debit cards](/space/privacy_through_prepaid_credit_cards)
-  * [faking out address and credit card forms](/space/faking_out_address_and_credit_card_forms)
-  * [view evites anonymously](/space/view_evites_anonymously)
-  * [kodak picturecenter hacks](/space/kodak_picturecenter_hacks)
-  * [change firefox's saved passwords](/space/change_firefoxs_saved_passwords)
+  * [privacy through prepaid debit cards](privacy_through_prepaid_credit_cards)
+  * [faking out address and credit card forms](faking_out_address_and_credit_card_forms)
+  * [view evites anonymously](view_evites_anonymously)
+  * [kodak picturecenter hacks](kodak_picturecenter_hacks)
+  * [change firefox's saved passwords](change_firefoxs_saved_passwords)
 

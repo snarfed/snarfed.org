@@ -2,7 +2,7 @@ Amazon SimpleDB thoughts
 
 <div style="float: right; margin-left: 10px">
   <a href="http://aws.amazon.com/">
-   <img src="/space/amazon_web_services.gif" /></a>
+   <img src="amazon_web_services.gif" /></a>
 </div>
 
 [Amazon](http://amazon.com/) recently announced their latest web service,
@@ -12,9 +12,9 @@ Amazon SimpleDB thoughts
 [hype](http://www.scripting.com/stories/2007/12/15/amazonRemovesTheDatabaseSc.html).
 I finally got a chance to sit down and read through the docs and blog posts,
 and
-[like with the Facebook Data Store API](/space/facebook_data_store_api_thoughts),
+[like with the Facebook Data Store API](facebook_data_store_api_thoughts),
 I've
-[written up my thoughts](/space/amazon_simpledb_thoughts).
+[written up my thoughts](amazon_simpledb_thoughts).
 
 The executive summary is: I like it. It's solid, straightforward, and
 eminently useful. Sure, it's limited. It includes design decisions that
@@ -29,6 +29,6 @@ simple tools that do one job, do it well, and fit together in ways that
 complement each other. Very, very cool.
 
 Then again, I'm a sucker for anything
-[based on tuplespaces...](/space/amazon_simpledb_thoughts#tuplespaces)
+[based on tuplespaces...](amazon_simpledb_thoughts#tuplespaces)
 
-[Read more...](/space/amazon_simpledb_thoughts)
+[Read more...](amazon_simpledb_thoughts)

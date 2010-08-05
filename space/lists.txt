@@ -1,27 +1,27 @@
 lists
 
-<img class="right shadow" src="/space/list.gif" alt="scroll" />
+<img class="right shadow" src="list.gif" alt="scroll" />
 
 Lists of stuff.
 
-  * [archive](/space/archive)
-  * [beer](/space/beer)
-  * [books](/space/books)
-  * [chocolate](/space/chocolate)
-  * [feeds](/space/feeds)
-  * [friday mexican dinner](/space/friday_mexican_dinner)
-  * [games](/space/games)
-  * [lists](/space/lists)  (self referential!)
-  * [pictures](/space/pictures)
-  * [podcasts](/space/podcasts)
-  * [software](/space/software)
-  * [talks](/space/talks)
-  * [tv](/space/tv)
-  * [wine](/space/wine)
-  * [writing](/space/writing)
-  * [movies](/space/movies)
+  * [archive](archive)
+  * [beer](beer)
+  * [books](books)
+  * [chocolate](chocolate)
+  * [feeds](feeds)
+  * [friday mexican dinner](friday_mexican_dinner)
+  * [games](games)
+  * [lists](lists)  (self referential!)
+  * [pictures](pictures)
+  * [podcasts](podcasts)
+  * [software](software)
+  * [talks](talks)
+  * [tv](tv)
+  * [wine](wine)
+  * [writing](writing)
+  * [movies](movies)
 
 <!--
-  * [classical music](/space/classical_music)
-  * [music](/space/music)
+  * [classical music](classical_music)
+  * [music](music)
 -->

@@ -1,6 +1,6 @@
 geomapping
 
-<img class="right" src="/space/worldmap.jpg" />
+<img class="right" src="worldmap.jpg" />
 
 Resolving an IP address to a hostname, or reverse
 DNS, has been around for a while. However, resolving an IP address to a

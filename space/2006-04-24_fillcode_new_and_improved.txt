@@ -1,21 +1,21 @@
 Fillcode, new and improved!
 
-<a href="/space/fillcode">
-  <img class="right" src="/space/gnu.jpg" /></a>
+<a href="fillcode">
+  <img class="right" src="gnu.jpg" /></a>
 
 [Emacs](http://gnu.org/software/emacs/) is great, but one of my pet peeves is
 that while it can fill (ie wrap) plain text, it [can't fill source
-code](/space/filling_code_in_emacs). A while back, I wrote
-[fillcode](/space/fillcode), an Emacs minor mode that does just that.
+code](filling_code_in_emacs). A while back, I wrote
+[fillcode](fillcode), an Emacs minor mode that does just that.
 
 Since I started writing more C++ at work, I noticed a few fillcode bugs that
 happen often in cc-mode. Specifically, fillcode occasionally gets too excited
 and fill more than just the current line. Also, it doesn't always handle
 multi-line comments well.
 
-I've posted a [new version](/space/fillcode) that fixes these bugs. _Update,
+I've posted a [new version](fillcode) that fixes these bugs. _Update,
 April 25. I've fixed yet another bug and posted [another new
-version](/space/fillcode), 0.5._
+version](fillcode), 0.5._
 
 Happy filling!
 

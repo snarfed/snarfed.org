@@ -1,7 +1,7 @@
 mod_php on pair.com
 
 <a href="http://pair.com/">
-  <img class="right" src="/space/pair.com.jpg" /></a>
+  <img class="right" src="pair.com.jpg" /></a>
 
 Got a shared hosting account on [pair.com](http://pair.com/)? Want to run a PHP
 script under Apache's `mod_php` module, instead of as CGI? Here's a tip:
@@ -18,7 +18,7 @@ that to every PHP file.
 
 
 <a href="http://php.net/">
-  <img class="left" src="/space/php.png" /></a>
+  <img class="left" src="php.png" /></a>
 
 I tried copying `/usr/www/cgi-bin/php5.cgi` into my local `cgi-bin/` directory,
 as pair suggests when using cgiwrap, but that again just led to CGI instead of
@@ -34,6 +34,6 @@ should move the PHP file outside that directory.
 
 See also:
 
-  * [Back!](/space/2009-02-24_back)
-  * [Virtual Housewarming](/space/2006-08-23_virtual_housewarming)
+  * [Back!](2009-02-24_back)
+  * [Virtual Housewarming](2006-08-23_virtual_housewarming)
   * [pair.com: Using PHP](http://www.pair.com/support/knowledge_base/authoring_development/using_php.html)

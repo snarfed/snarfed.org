@@ -1,13 +1,13 @@
 filekicker
 
-<img class="right" src="/space/kick.jpg" />
+<img class="right" src="kick.jpg" />
 
 For the impatient:  
-&nbsp; [Download filekicker 0.2](/space/filekicker.py)  
+&nbsp; [Download filekicker 0.2](filekicker.py)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
 &nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)  
 
-[Filekicker](/space/filekicker.py) is a [PyBlosxom](http://pyblosxom.sf.net/)
+[Filekicker](filekicker.py) is a [PyBlosxom](http://pyblosxom.sf.net/)
 plugin that serves static files. The file to serve is determined by the URL
 path and the `datadir` configuration option. The MIME type is inferred from the
 file's extension.
@@ -31,11 +31,11 @@ and
 [imagekicker](http://pyblosxom.sourceforge.net/blog/registry/display/graphics/imagekicker).
 It's basically a generalization of imagekicker, which inspired its name.
 
-Filekicker is copyright 2006 [Ryan Barrett](/space/about), and is distributed
+Filekicker is copyright 2006 [Ryan Barrett](about), and is distributed
 under the [GPL](http://www.gnu.org/licenses/gpl.html).
 
 See also:
 
-  * [pyblosxom ajax comments](/space/pyblosxom_ajax_comments)
-  * [pyblosxom rdf flavour](/space/pyblosxom_rdf_flavour)
-  * [migrating to pyblosxom](/space/2006-08-23_virtual_housewarming)
+  * [pyblosxom ajax comments](pyblosxom_ajax_comments)
+  * [pyblosxom rdf flavour](pyblosxom_rdf_flavour)
+  * [migrating to pyblosxom](2006-08-23_virtual_housewarming)

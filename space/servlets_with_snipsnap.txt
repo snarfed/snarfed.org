@@ -1,8 +1,8 @@
 servlets with snipsnap
 
-![/space/snipsnap.png](/space/snipsnap.png)![/space/jetty.png](/space/jetty.png)
+![/space/snipsnap.png](snipsnap.png)![/space/jetty.png](/space/jetty.png)
 
-[Snipsnap](/space/Snipsnap),
+[Snipsnap](Snipsnap),
 the server that runs this site, is based on [Jetty](http://jetty.mortbay.com/),
 a standards based, pure java servlet container and web application server.
 Snipsnap is implemented on top of Jetty as a framework of servlets. Among other
@@ -11,7 +11,7 @@ _your_ servlets, JSPs, or anything else too! Here's how.
 
 First, you'll need to configure Jetty to serve some part of your site outside of
 Snipsnap. To do this, read my tutorial on [virtual host
-redirection](/space/virtual_host_redirection).
+redirection](virtual_host_redirection).
 
 Done? Great. Now, all you need to do is decide which pages you want Jetty to
 handle as JSPs, servlets, or whatever. You can specify everything in one
@@ -44,12 +44,12 @@ more information.
 
 See also:
 
-  * [virtual host redirection](/space/virtual_host_redirection)
-  * [snipsnap register without email](/space/snipsnap_register_without_email)
-  * [snipsnap script macro and python](/space/snipsnap_script_macro_and_python)
-  * [snipscrape](/space/snipscrape)
-  * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap_1.0b1_virtual_hostname_patch)
-  * [snipsnap comment without login patch](/space/snipsnap_comment_without_login_patch)
-  * [snipsnap macros](/space/snipsnap_macros)
-  * [snipsnap recent-changes snip name patch](/space/snipsnap_recent-changes_snip_name_patch)
+  * [virtual host redirection](virtual_host_redirection)
+  * [snipsnap register without email](snipsnap_register_without_email)
+  * [snipsnap script macro and python](snipsnap_script_macro_and_python)
+  * [snipscrape](snipscrape)
+  * [snipsnap 1.0b1 virtual hostname patch](snipsnap_1.0b1_virtual_hostname_patch)
+  * [snipsnap comment without login patch](snipsnap_comment_without_login_patch)
+  * [snipsnap macros](snipsnap_macros)
+  * [snipsnap recent-changes snip name patch](snipsnap_recent-changes_snip_name_patch)
 

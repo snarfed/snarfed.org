@@ -1,7 +1,7 @@
 emacs and jikes
 
-[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)
-[![/space/ibm.jpg](/space/ibm.jpg)](http://www.ibm.com/developerWorks/oss/jikes/)
+[![gnu.jpg](gnu.jpg)](http://gnu.org/software/emacs/)
+[![/space/ibm.jpg](ibm.jpg)](http://www.ibm.com/developerWorks/oss/jikes/)
 
 Using
 [Emacs](http://gnu.org/software/emacs/) and the

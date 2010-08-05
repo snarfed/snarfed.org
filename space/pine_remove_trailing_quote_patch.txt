@@ -1,14 +1,14 @@
 pine remove trailing quote patch
 
 <a href="http://washington.edu/pine/">
-  <img class="right" src="/space/pine.png" /></a>
+  <img class="right" src="pine.png" /></a>
 
 For the impatient:  
 Patch for Pine
-[4.60](/space/remove-trailing-quote.patch.4.60),
-[4.61](/space/remove-trailing-quote.patch.4.61),
-[4.63](/space/remove-trailing-quote.patch.4.63),
-[4.64](/space/remove-trailing-quote.patch.4.64)  
+[4.60](remove-trailing-quote.patch.4.60),
+[4.61](remove-trailing-quote.patch.4.61),
+[4.63](remove-trailing-quote.patch.4.63),
+[4.64](remove-trailing-quote.patch.4.64)  
 [Pine source](http://www.washington.edu/pine/getpine/unix.html)  
 [FAQ on patching
 pine](http://www.math.washington.edu/~chappa/pine/faq/index.html)
@@ -45,9 +45,9 @@ For more on the top- vs. bottom-post debate, see:
 Also, a few recent email clients, such as [GMail](http://gmail.com/), try to use
 quoted text to do smart things. This patch can make your emails more readable in
 those clients. (I've discussed my thoughts on gmail vs pine
-[at length](/space/gmail_vs_pine).)
+[at length](gmail_vs_pine).)
 
-Feel free to [email me](/space/about) with feedback or
+Feel free to [email me](about) with feedback or
 bug reports.
 
 _Known bug_: Whole quotes are not detected correctly if you start your email
@@ -56,9 +56,9 @@ an email, postpone the reply, then resume and attempt to send.
 
 See also:
 
-  * [pine delete attachments on save patch](/space/pine_delete_attachments_on_save_patch)
-  * [pine flowed-text patch](/space/pine_flowed-text_patch)
-  * [pine reply-all patch](/space/pine_reply-all_patch)
-  * [port_pine_patch](/space/port_pine_patch)
-  * [gmail vs pine](/space/gmail_vs_pine)
+  * [pine delete attachments on save patch](pine_delete_attachments_on_save_patch)
+  * [pine flowed-text patch](pine_flowed-text_patch)
+  * [pine reply-all patch](pine_reply-all_patch)
+  * [port_pine_patch](port_pine_patch)
+  * [gmail vs pine](gmail_vs_pine)
 

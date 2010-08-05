@@ -1,15 +1,15 @@
 p4
 
-<a href="/space/p4">
-  <img class="right" src="/space/notes.png" /></a>
+<a href="p4">
+  <img class="right" src="notes.png" /></a>
 
 For the impatient:  
-[Download P4 0.3.1](/space/p4-0.3.1.tar.bz2)  
-[Original project proposal](/space/p4proposal.html)  
-[Poster (with diagrams)](/space/p4_poster/index.html)  
-[Protocol specification](/space/p4protocol.txt)  
+[Download P4 0.3.1](p4-0.3.1.tar.bz2)  
+[Original project proposal](p4proposal.html)  
+[Poster (with diagrams)](p4_poster/index.html)  
+[Protocol specification](p4protocol.txt)  
 
-[P4](/space/p4) is a fully functional, self-organizing overlay network similar
+[P4](p4) is a fully functional, self-organizing overlay network similar
 to [Gnutella](http://rfc-gnutella.sourceforge.net/) and
 [Freenet](http://freenet.sf.net/). However, P4 differs in that it provides an
 API for developing plugin applications on top of the network. P4 handles the
@@ -21,7 +21,7 @@ functionality.
 Since its release in early 2001, P4 has been surpassed by other general-purpose
 overlay platforms such as [JXTA](http://jxta.org/),
 [Groove](http://groove.net/), and Microsoft's [Windows Peer-to-Peer
-SDK](/space/windows_p2p). Furthermore, [many](http://overnet.com/)
+SDK](windows_p2p). Furthermore, [many](http://overnet.com/)
 [other](http://freedom.net/) [file](http://freehaven.net/)
 [sharing](http://mnet.sourceforge.net/)
 [networks](http://en.wikipedia.org/wiki/FastTrack) have long been superior to P4
@@ -48,7 +48,7 @@ Barrett](http://snarfed.org/), [Maulik Shah](http://maulik.net/), and
 
 See also:
 
-  * [synchronizing mp3 playback](/space/synchronizing_mp3_playback)
-  * [libmsntp](/space/libmsntp)
-  * [libwebserver shutdown patch](/space/libwebserver_shutdown_patch)
+  * [synchronizing mp3 playback](synchronizing_mp3_playback)
+  * [libmsntp](libmsntp)
+  * [libwebserver shutdown patch](libwebserver_shutdown_patch)
 

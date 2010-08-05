@@ -1,6 +1,6 @@
 ryan
 
-<a href="/space/about">
-  <img class="right" src="/space/ryan_small.jpg" /></a>
+<a href="about">
+  <img class="right" src="ryan_small.jpg" /></a>
 
-See [about](/space/about).
+See [about](about).

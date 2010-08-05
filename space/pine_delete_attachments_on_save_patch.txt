@@ -1,12 +1,12 @@
 pine delete attachments on save patch
 
 <a href="http://washington.edu/pine/">
-  <img class="right" src="/space/pine.png" /></a>
+  <img class="right" src="pine.png" /></a>
 
 For the impatient:  
 Patch for Pine
-[4.63](/space/delete-attachments-on-save.patch.4.63),
-[4.64](/space/delete-attachments-on-save.patch.4.64)  
+[4.63](delete-attachments-on-save.patch.4.63),
+[4.64](delete-attachments-on-save.patch.4.64)  
 [Pine source](http://www.washington.edu/pine/getpine/unix.html)  
 [FAQ on patching
 pine](http://www.math.washington.edu/~chappa/pine/faq/index.html)
@@ -32,14 +32,14 @@ This patch was inspired in part by a
 [post](http://mailman1.u.washington.edu/pipermail/pine-info/2005-June/042501.html)
 to the [pine-info](http://www.washington.edu/pine/pine-info/) mailing list.
 
-Feel free to [email me](/space/about) with feedback or
+Feel free to [email me](about) with feedback or
 bug reports.
 
 See also:
 
-  * [pine flowed-text patch](/space/pine_flowed-text_patch)
-  * [pine remove trailing quote patch](/space/pine_remove_trailing_quote_patch)
-  * [pine reply-all patch](/space/pine_reply-all_patch)
-  * [port_pine_patch](/space/port_pine_patch)
-  * [gmail vs pine](/space/gmail_vs_pine)
+  * [pine flowed-text patch](pine_flowed-text_patch)
+  * [pine remove trailing quote patch](pine_remove_trailing_quote_patch)
+  * [pine reply-all patch](pine_reply-all_patch)
+  * [port_pine_patch](port_pine_patch)
+  * [gmail vs pine](gmail_vs_pine)
 

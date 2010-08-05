@@ -1,10 +1,10 @@
 emacs font-lock faces for composing email
 
-[![gnu.jpg](/space/gnu.jpg)](http://gnu.org/software/emacs/)
-[![pine.png](/space/pine.png)](http://washington.edu/pine/)
+[![gnu.jpg](gnu.jpg)](http://gnu.org/software/emacs/)
+[![pine.png](pine.png)](http://washington.edu/pine/)
 
 I
-use [Pine](http://www.washington.edu/pine/) (no, [not GMail](/space/gmail_vs_pine)) as my email client. I set its [alternate
+use [Pine](http://www.washington.edu/pine/) (no, [not GMail](gmail_vs_pine)) as my email client. I set its [alternate
 editor](http://www.washington.edu/pine/tech-notes/config-notes.html#alt-ed) to
 [Emacs](http://gnu.org/software/emacs/) so I can use it to write email.
 
@@ -47,10 +47,10 @@ Happy font-locked emailing!
 
 See also:
 
-  * [gmail vs pine](/space/gmail_vs_pine)
-  * [why I don't run shells inside Emacs](/space/why_I_dont_run_shells_inside_Emacs)
-  * [acoc.conf for context diffs](/space/acoc.conf_for_context_diffs)
-  * [tcsh highlighting patch](/space/tcsh_highlighting_patch)
-  * [Emacs and remote X Windows](/space/Emacs_and_remote_X_Windows)
-  * [minimal .emacs for fast startup](/space/minimal_.emacs_for_fast_startup)
+  * [gmail vs pine](gmail_vs_pine)
+  * [why I don't run shells inside Emacs](why_I_dont_run_shells_inside_Emacs)
+  * [acoc.conf for context diffs](acoc.conf_for_context_diffs)
+  * [tcsh highlighting patch](tcsh_highlighting_patch)
+  * [Emacs and remote X Windows](Emacs_and_remote_X_Windows)
+  * [minimal .emacs for fast startup](minimal_.emacs_for_fast_startup)
 

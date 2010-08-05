@@ -1,8 +1,8 @@
 Virtual Housewarming
 
-[![pair.com](/space/pair.com.jpg)](http://pair.com/)
-[![pyblosxom](/space/pyblosxom.jpg)](http://pyblosxom.sf.net/)
-[![apache](/space/apache.jpg)](http://httpd.apache.org/)
+[![pair.com](pair.com.jpg)](http://pair.com/)
+[![pyblosxom](pyblosxom.jpg)](http://pyblosxom.sf.net/)
+[![apache](apache.jpg)](http://httpd.apache.org/)
 
 You've probably noticed that [snarfed](http://snarfed.org/) and
 [ryan.barrett.name](/ryan.barrett.name/) have been a little flaky lately.
@@ -42,4 +42,4 @@ Worst of all, due to a security issue, commenting is temporarily disabled.
 
 Over the next month, as I find time, I'll add them back. It won't be a quick
 process, though. If something's missing that you particularly liked,
-[drop me a line](/space/about) and I'll see what I can do. 
+[drop me a line](about) and I'll see what I can do. 

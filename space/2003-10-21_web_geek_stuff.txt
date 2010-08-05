@@ -2,7 +2,7 @@ Web geek stuff
 
 Warning: unless you like silly technical web stuff, stop reading now. :P
 
-I've added a few little features to [SnipSnap](/space/SnipSnap), the program
+I've added a few little features to [SnipSnap](SnipSnap), the program
 that powers snarfed.org. Here are the writeups for each feature:
 
 [http://snipsnap.org/space/javascript](http://snipsnap.org/space/javascript)
@@ -11,10 +11,10 @@ that powers snarfed.org. Here are the writeups for each feature:
 
 [http://snipsnap.org/space/register+without+email](http://snipsnap.org/space/register+without+email)
 
-Also, check out a really interesting one [maulik](/space/maulik) wrote:
+Also, check out a really interesting one [maulik](maulik) wrote:
 
 [http://www.snipsnap.org/space/restricted+access+2](http://www.snipsnap.org/space/restricted+access+2)
 
-Of course, if you've looked at the [pictures](/space/pictures), you're already
-familiar with the [album](/space/album) macro we wrote.
+Of course, if you've looked at the [pictures](pictures), you're already
+familiar with the [album](album) macro we wrote.
 

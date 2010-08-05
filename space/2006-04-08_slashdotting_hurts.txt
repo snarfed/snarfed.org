@@ -1,18 +1,18 @@
 Slashdotting hurts
 
-[![/space/slashdot.png](/space/slashdot.png)](http://slashdot.org/article.pl?sid=06/04/05/1936209)
-[![/space/reddit.png](/space/reddit.png)](http://reddit.com/info/41sx/comments)
-[![/space/digg.png](/space/digg.png)](http://digg.com/software/Gmail_vs._Pine)
+[![/space/slashdot.png](slashdot.png)](http://slashdot.org/article.pl?sid=06/04/05/1936209)
+[![/space/reddit.png](reddit.png)](http://reddit.com/info/41sx/comments)
+[![/space/digg.png](digg.png)](http://digg.com/software/Gmail_vs._Pine)
 
-A few days ago, my article on [GMail vs. Pine](/space/gmail_vs_pine) was [posted
+A few days ago, my article on [GMail vs. Pine](gmail_vs_pine) was [posted
 to Slashdot](http://slashdot.org/article.pl?sid=06/04/05/1936209). Soon after,
 it was posted to [Digg](http://digg.com/software/Gmail_vs._Pine),
 [Reddit](http://reddit.com/info/41sx/comments), and other geek news sites.
 
 The torrent of traffic quickly brought my poor little server
-[to](/space/slashdotted_referrers.html)
-[its](/space/slashdotted_days.html)
-[knees](/space/slashdotted_overview.html). I tried bringing it
+[to](slashdotted_referrers.html)
+[its](slashdotted_days.html)
+[knees](slashdotted_overview.html). I tried bringing it
 back up, but the flood of visitors put it right back down again. I had no choice
 but to wait until the story ran its course and fell off the Slashdot front page.
 My [hosting company](http://jvds.com/) was not amused.

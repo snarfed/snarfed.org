@@ -1,11 +1,11 @@
 sourceforge
 
 <a href="http://sourceforge.net/people/viewprofile.php?user_id=751286">
-  <img class="right shadow" src="/space/sourceforge.png" /></a>
+  <img class="right shadow" src="sourceforge.png" /></a>
 
 [SourceForge](http://sf.net/)
 is a site that hosts open source projects, similar to
-[savannah](/space/savannah). They provide web space, file hosting, CVS, compile
+[savannah](savannah). They provide web space, file hosting, CVS, compile
 farms, bug and patch trackers, forums, mailing lists, and more.
 
 I've contributed

@@ -1,6 +1,6 @@
 geocoding
 
-<img class="right" src="/space/worldmap.jpg" />
+<img class="right" src="worldmap.jpg" />
 
 Resolving an IP address to a hostname, or reverse
 DNS, has been around for a while. However, resolving an IP address to a
@@ -49,7 +49,7 @@ for an ad-free replacement along the lines of
 
 See also:
 
-  * [referrer spam](/space/referrer_spam)
-  * [webalizer nofollow patch](/space/webalizer_nofollow_patch)
-  * [ideas](/space/ideas)
+  * [referrer spam](referrer_spam)
+  * [webalizer nofollow patch](webalizer_nofollow_patch)
+  * [ideas](ideas)
 

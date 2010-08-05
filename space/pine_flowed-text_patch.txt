@@ -1,13 +1,13 @@
 pine flowed-text patch
 
 <a href="http://washington.edu/pine/">
-  <img class="right" src="/space/pine.png" /></a>
+  <img class="right" src="pine.png" /></a>
 
 For the impatient:  
 Patch for Pine [4.60 and
-4.61](/space/quell-displaying-flowed-text.patch.4.60),
-[4.63](/space/quell-displaying-flowed-text.patch.4.63),
-[4.64](/space/quell-displaying-flowed-text.patch.4.64)  
+4.61](quell-displaying-flowed-text.patch.4.60),
+[4.63](quell-displaying-flowed-text.patch.4.63),
+[4.64](quell-displaying-flowed-text.patch.4.64)  
 [RedHat and Debian packages](http://www.quantumlinux.com/~chuckw/pine/)  
 [Pine source](http://www.washington.edu/pine/getpine/unix.html)  
 [FAQ on patching
@@ -24,13 +24,13 @@ it not to _display_ flowed text. This patch adds that option.
 
 There are also [pre-built packages](http://www.quantumlinux.com/~chuckw/pine/)
 with this patch, thanks to Chuck Wolber, and [instructions on building Pine from
-source](/space/pine_reply-all_patch). Scroll to the bottom.
+source](pine_reply-all_patch). Scroll to the bottom.
 
 See also:
 
-  * [pine delete attachments on save patch](/space/pine_delete_attachments_on_save_patch)
-  * [pine remove trailing quote patch](/space/pine_remove_trailing_quote_patch)
-  * [pine reply-all patch](/space/pine_reply-all_patch)
-  * [port_pine_patch](/space/port_pine_patch)
-  * [gmail vs pine](/space/gmail_vs_pine)
+  * [pine delete attachments on save patch](pine_delete_attachments_on_save_patch)
+  * [pine remove trailing quote patch](pine_remove_trailing_quote_patch)
+  * [pine reply-all patch](pine_reply-all_patch)
+  * [port_pine_patch](port_pine_patch)
+  * [gmail vs pine](gmail_vs_pine)
 

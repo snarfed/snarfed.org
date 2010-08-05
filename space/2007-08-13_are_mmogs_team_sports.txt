@@ -2,14 +2,14 @@ Are MMOGs Team Sports?
 
 <div style="float: right; margin-left: 10px">
   <a href="http://www.worldofwarcraft.com/">
-   <img src="/space/wow_logo.jpg" /></a>
+   <img src="wow_logo.jpg" /></a>
 </div>
 
 I love games. I love game development, gaming culture, games as an art form,
 and the game industry.
 
 I don't have much time to
-[play games](/space/games), though, so my firsthand
+[play games](games), though, so my firsthand
 experience is somewhat spotty. For example, I've never really played an
 MMOG. So when I found myself talking with
 [a friend and coworker](http://armory.worldofwarcraft.com/character-sheet.xml?r=Eitrigg&n=Olwen)
@@ -23,7 +23,7 @@ role, and each is vital to the group as a whole. The group members all support
 and depend on each other, coordinating tactics with split-second timing at
 critical moments.
 
-<img class="left shadow" src="/space/hockey.jpg" />
+<img class="left shadow" src="hockey.jpg" />
 
 Granted, multiplayer FPSes and RTSes have always demanded skills like these.
 Games like [Counter-Strike](http://counter-strike.net/) and
@@ -44,7 +44,7 @@ the same people every week. By comparison, his WoW raid one night might only
 have a few people in common with the group the next night.
 
 <a href="http://flickr.com/photos/mbostock/244994628/">
-  <img class="right shadow" src="/space/corgi.jpg" /></a>
+  <img class="right shadow" src="corgi.jpg" /></a>
 
 He also mentioned the difference in immersion. Unlike hockey, even the most
 difficult raids in WoW don't always require his full attention. Whether it's
@@ -63,7 +63,7 @@ MMOGs. That alone was enlightening.
 
 <div style="float: left; margin-right: 10px">
   <a href="http://www.capcom.com/phoenixwright/">
-   <img src="/space/phoenix_wright.jpg" /></a>
+   <img src="phoenix_wright.jpg" /></a>
 </div>
 
 Personally, I think this speaks to games' untapped potential as an art form.
@@ -85,7 +85,7 @@ we've seen the rise of more unusual themes.
 be next.
 
 <a href="http://video.google.com/videoplay?docid=136645717206489131">
-  <img class="right shadow" src="/space/heavy_rain.jpg" /></a>
+  <img class="right shadow" src="heavy_rain.jpg" /></a>
 
 Personally, I think this is awesome. Microsoft, are you listening? Sony?
 EA? Activision? Bring on the new experiences, and I'll fork over the dough. I
@@ -96,6 +96,6 @@ Related links:
 - [World of Warcraft: Endgame Ups and Downs](http://www.mmorpg.com/gamelist.cfm?GAMEID=15&SETVIEW=features&LOADFEATURE=1020&bhcp=1)
 (on [mmorpg.com](http://www.mmorpg.com/))
 
-- [game industry articles](/space/game_industry_articles)
+- [game industry articles](game_industry_articles)
 
-- [GDC 2007](/space/GDC_2007) and [GDC 2006](/space/GDC_2006) writeups
+- [GDC 2007](GDC_2007) and [GDC 2006](/space/GDC_2006) writeups

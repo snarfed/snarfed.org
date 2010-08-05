@@ -4,7 +4,7 @@ tv
 img { vertical-align: text-top; }
 </style>
 
-<img class="right" src="/space/tv.jpg" alt="tv" />
+<img class="right" src="tv.jpg" alt="tv" />
 
 
 Television shows I
@@ -13,7 +13,7 @@ Television shows I
 ![good](/good.png) I liked,
 ![ok](/ok.png) were just ok,
 ![bad](/bad.png) I didn't like.
-Also see [other lists](/space/lists).
+Also see [other lists](lists).
 
 Naturally, this isn't comprehensive - I've watched plenty of shows that aren't
 on this list - and it's biased toward my taste. I tend to prefer scripted

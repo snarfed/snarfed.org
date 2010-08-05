@@ -1,10 +1,10 @@
 20% project: OpenID comments in Blogger
 
-[![blogger logo](/space/blogger-logo.png)](http://draft.blogger.com/)
+[![blogger logo](blogger-logo.png)](http://draft.blogger.com/)
 <a href="http://openid.net/">
- <img src="/space/openid-logo.png" style="padding-bottom: 2em" /></a>
+ <img src="openid-logo.png" style="padding-bottom: 2em" /></a>
 <a href="http://google.com/">
- <img src="/space/google_logo.gif" style="padding-bottom: 1em" /></a>
+ <img src="google_logo.gif" style="padding-bottom: 1em" /></a>
 
 I've been working on adding [OpenID](http://openid.net/) support inside Google as a
 [20% project](http://www.google.com/support/jobs/bin/static.py?page=about.html&about=eng)

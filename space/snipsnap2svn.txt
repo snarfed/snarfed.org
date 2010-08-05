@@ -1,15 +1,15 @@
 snipsnap2svn
 
-[<img src="/space/snipsnap.png" style="padding-bottom: 15px" />](http://snipsnap.org/)
-[![/space/xsl.png](/space/xsl.png)](http://www.w3.org/TR/xslt)
-[![/space/subversion.jpg](/space/subversion.jpg)](http://subversion.tigris.org/)
+[<img src="snipsnap.png" style="padding-bottom: 15px" />](http://snipsnap.org/)
+[![/space/xsl.png](xsl.png)](http://www.w3.org/TR/xslt)
+[![/space/subversion.jpg](subversion.jpg)](http://subversion.tigris.org/)
 
 For the impatient:  
-[Download snipsnap2svn.xslt](/space/snipsnap2svn.xslt)  
+[Download snipsnap2svn.xslt](snipsnap2svn.xslt)  
 [SnipSnap web site](http://snipsnap.org/)  
 [Subversion web site](http://subversion.tigris.org/)
 
-[snipsnap2svn](/space/snipsnap2svn.xslt) is an
+[snipsnap2svn](snipsnap2svn.xslt) is an
 [XSLT](http://www.w3.org/TR/xslt) script that converts
 [SnipSnap](http://snipsnap.org/) XML database exports into
 [Subversion dumpfiles](http://svn.collab.net/viewvc/*checkout*/svn/trunk/notes/fs_dumprestore.txt),
@@ -45,13 +45,13 @@ Unfortunately, there are very few working XSLT base64 decoders.
 [Mukul Gandhi's](http://gandhimukul.tripod.com/xmlxslt.htm) is close, but it's
 recursive, so files above a few KB overflow the stack. :/
 
-snipsnap2svn is copyright 2006 [Ryan Barrett](/space/about), and is
+snipsnap2svn is copyright 2006 [Ryan Barrett](about), and is
 distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
 
 See also:
 
-  * [snipscrape](/space/snipscrape)
-  * [Migrating from SnipSnap to PyBlosxom](/space/2006-08-23_virtual_housewarming)
+  * [snipscrape](snipscrape)
+  * [Migrating from SnipSnap to PyBlosxom](2006-08-23_virtual_housewarming)
   * [Rendering SnipSnap snips with XSLT](http://snipsnap.org/space/xml+issue)
   * [Migrating from Radio to SnipSnap with
 XSLT](http://blog.fivesight.com/prb/space/Migrating+Radio+to+SnipSnap)

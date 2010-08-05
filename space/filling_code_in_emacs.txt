@@ -1,6 +1,6 @@
 filling code in emacs
 
-<img class="right" src="/space/gnu.jpg" />
+<img class="right" src="gnu.jpg" />
 
 [Emacs](http://gnu.org/software/emacs)
 has a massive feature set, and there's also an endless supply of
@@ -9,7 +9,7 @@ there. However, for a long time, there was one feature on my Emacs wish list
 that I hadn't found yet.
 
 _Update: After lots of procrastination, I finally broke down and wrote
-[fillcode](/space/fillcode). It tackles the problem described here._
+[fillcode](fillcode). It tackles the problem described here._
 
 I want Emacs to be able to correctly fill _code_, not just text. For example,
 when I press M-q in c-mode, I want Emacs to fill this:

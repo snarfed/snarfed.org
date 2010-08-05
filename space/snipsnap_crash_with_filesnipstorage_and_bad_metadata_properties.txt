@@ -1,12 +1,12 @@
 SnipSnap crash with FileSnipStorage and bad metadata.properties
 
-[![snipsnap.png](/space/snipsnap.png)](http://snipsnap.org/)
+[![snipsnap.png](snipsnap.png)](http://snipsnap.org/)
 
 _This
-article describes [SnipSnap](/space/SnipSnap) 1.0b1-uttoxeter using
+article describes [SnipSnap](SnipSnap) 1.0b1-uttoxeter using
 [FileSnipStorage](http://snipsnap.org/space/FileSnipStorage)._
 
-[SnipSnap](/space/SnipSnap), the software that originally ran this site, is great. I heart
+[SnipSnap](SnipSnap), the software that originally ran this site, is great. I heart
 SnipSnap.
 
 Unfortunately, nothing's perfect, even SnipSnap. It occasionally crashes, and if
@@ -115,7 +115,7 @@ on [snipsnap.org](http://snipsnap.org/)
 post](http://snipforge.org/lurker/message/20060705.232815.00a1e509.en.html) to
 the [snipsnap-users mailing
 list](http://snipforge.org/cgi-bin/mailman/listinfo/snipsnap-users)
-  * [servlets with snipsnap](/space/servlets_with_snipsnap)
-  * [snipsnap 1.0b1 virtual hostname patch](/space/snipsnap_1.0b1_virtual_hostname_patch)
-  * [snipsnap comment without login patch](/space/snipsnap_comment_without_login_patch)
+  * [servlets with snipsnap](servlets_with_snipsnap)
+  * [snipsnap 1.0b1 virtual hostname patch](snipsnap_1.0b1_virtual_hostname_patch)
+  * [snipsnap comment without login patch](snipsnap_comment_without_login_patch)
 

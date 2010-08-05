@@ -1,7 +1,7 @@
 hitman2 ghost
 
 <div class="img-shadow">
-  <img src="/space/hitman2.jpg" />
+  <img src="hitman2.jpg" />
 </div>
 
 I just finished [Hitman 2](http://hitman2.com/),
@@ -22,7 +22,7 @@ and sure enough, it works! This screenshot is from the Graveyard Shift
 mission:
 
 <div class="img-shadow">
-  <a href="/space/ghost.jpg"><img src="/space/ghost_small.jpg" /></a>
+  <a href="ghost.jpg"><img src="/space/ghost_small.jpg" /></a>
 </div>
 
 For more information, check out this [forum
