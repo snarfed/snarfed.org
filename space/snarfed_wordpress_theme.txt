@@ -3,6 +3,15 @@ snarfed WordPress theme
 <a href="snarfed_wordpress_theme_screenshot.jpg">
   <img class="right shadow" src="snarfed_wordpress_theme_screenshot_thumb.jpg" /></a>
 
+<!-- to package:
+cd ~/src/wordpress/themes
+zip -r snarfed_wordpress_theme.zip snarfed -x \*/.svn/\*
+
+...started to submit it to wordpress's theme directory, jumped through a bunch
+of hoops, finally got sick of it and gave up when it asked me to add gravatar
+support.
+-->
+
 [Download snarfed theme 0.2](snarfed_wordpress_theme.zip)
 
 This site runs on [WordPress](http://wordpress.org/) and uses its own
