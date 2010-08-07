@@ -1,6 +1,6 @@
 /* Site search with the Google AJAX Search API.
  *
- * http://snarfed.org/space/site+search+with+the+Google+AJAX+Search+API
+ * http://snarfed.org/site_search_with_the_google_ajax_search_api
  * Copyright 2006-2010 Ryan Barrett <pyblosxom@ryanb.org>.
  * Licensed under GPL v2.
  */
