@@ -9,6 +9,14 @@ is public domain. Also see [other lists](lists).
 <a name="projects"></a>
 ### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](#projects)
 
+  * [sync_wordpress.sh](sync_wordpress) syncs
+[WordPress](http://wordpress.org/), files, plugins, themes, and options
+stored in the database from one WordPress instance to another.
+
+  * [pyblosxom2wxr.sh](pyblosxom2wxr) is a shell script that migrates content
+from [PyBlosxom](http://pyblosxom.sourceforge.net/) to
+[WordPress](http://wordpress.org/).
+
   * [unixify.sh](unixify) is a simple shell script I use to sanitize
 filenames and files people send me from other operating systems.
 
@@ -132,6 +140,11 @@ email account.
 
 <a name="patches"></a>
 ### Patches  [![Icon-Permalink.png](/Icon-Permalink.png)](#patches)
+
+  * Patches to [shutter-reloaded](http://plugins.trac.wordpress.org/ticket/1178)
+and [next-gen gallery](http://plugins.trac.wordpress.org/ticket/1179) that
+let you close the shutter display with the Escape key or by clicking on the
+background.
 
   * Patches that add
 [per-comment hooks](http://code.google.com/p/thematic/issues/detail?id=83)

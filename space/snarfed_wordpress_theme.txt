@@ -1,0 +1,67 @@
+snarfed WordPress theme
+
+<a href="snarfed_wordpress_theme_screenshot.jpg">
+  <img class="right shadow" src="snarfed_wordpress_theme_screenshot_thumb.jpg" /></a>
+
+[Download snarfed theme 0.2](snarfed_wordpress_theme.zip)
+
+This site runs on [WordPress](http://wordpress.org/) and uses its own
+[WordPress theme](http://codex.wordpress.org/Using_Themes), the
+aptly named [snarfed theme](snarfed_wordpress_theme.zip).
+
+snarfed is simple, clean, and minimalist. Many standard elements and pieces of
+text have been removed, including admin links (edit, manage, etc.) on the live
+site. If you really want them, you can add them back by editing `functions.php`
+and `style.css`.
+
+snarfed is a [Thematic](http://themeshaper.com/thematic/) child theme, so you'll
+need Thematic installed too.
+
+Features:
+
+  * Minimalist aesthetic.
+
+  * Right hand sidebar. Top index widget area, only displayed on the home page.
+
+  * Search via my
+    [AJAX site search script](http://snarfed.org/site_search_with_the_google_ajax_search_api).
+    See below for configuration.
+
+  * Automatic search for related pages on 404 errors.
+
+  * [OpenID](http://openid.net/) delegation. See below for configuration.
+
+  * New page template, "Posts and Pages," which is an alternative to the built-in
+    archive. It [lists pages as well as posts](index).
+
+  * Add last updated time to pages and posts if they've been updated since they
+    were first published.
+
+  * Hide the comment form on initial page load. It appears when users click on the
+    "Post a comment" link.
+
+  * [NextGEN Gallery](http://alexrabe.de/wordpress-plugins/nextgen-gallery/)
+    integration: custom album-compact and imagebrowser templates, styled to be
+    consistent with the rest of the site.
+
+  * Link blog title to home page. Link blog description to [/about](about).
+
+
+Two of the features, AJAX site search and OpenID delegation, need a little extra
+configuration. You'll need to define new constants in your wp-config.php. Here's
+an example:
+
+    define('OPENID_DELEGATION_PROVIDER',
+           'https://www.google.com/accounts/o8/ud?source=profiles');
+    define('OPENID_DELEGATION_LOCAL_ID',
+           'http://www.google.com/profiles/[USERNAME]);
+    define('GOOGLE_AJAX_SEARCH_API_KEY', '[KEY]');
+
+
+The snarfed WordPress theme is in the public domain.
+
+See also:
+
+  * [snarfed.org PyBlosxom flavour](snarfed_org_pyblosxom_flavour)
+  * [sync_wordpress.sh](sync_wordpress)
+  * [pyblosxom2wxr.sh](pyblosxom2wxr)
