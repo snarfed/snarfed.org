@@ -1,12 +1,16 @@
 about
 
-<img class="right shadow" src="ryan_small.jpg" />
+<a href="ryan.jpg" class="shutter">
+  <img class="right shadow" src="ryan_small.jpg" /></a>
+
+<a href="ryan.jpg" class="shutter">ryan</a>
+
 
 I'm Ryan Barrett. I live,
 [work](resume.html), and
-[play](archive)
+[play](index)
 in Silicon Valley and San Francisco. See my
-[posts](archive),
+[posts](index),
 [pictures](pictures),
 [software](software),
 and [lists](lists).
@@ -18,17 +22,13 @@ Jabber: _[heaven@gmail](xmpp:heaven@gmail.com)_
 AIM: _[bl4ize](aim:goim?screenname=bl4ize)_  
 ICQ: _[1471094](http://wwp.icq.com/1471094)_  
 
-snarfed.org has been around [since early 2002](snarfed.org_history).
-It's hosted at
-[pair.com](http://pair.com/) on a
-[shared FreeBSD server](http://pair.com/services/web_hosting/).
-It currently runs on [WordPress](http://wordpress.org/) and the
-[snarfed theme](/).
-It used to run on [PyBlosxom](http://pyblosxom.sf.net/)
-with a custom PyBlosxom
-[flavour](snarfed.org_PyBlosxom_flavour) and
-[plugins](software).
-Before that, it ran on
-[SnipSnap](http://snipsnap.org/), on a
-[Linux VPS](http://jvds.com/linux.php) at
-[JVDS](http://jvds.com/).
+snarfed.org has been around [since early 2002](snarfed.org_history). It's hosted
+at [pair.com](http://pair.com/) on a
+[shared FreeBSD server](http://pair.com/services/web_hosting/). It
+[currently](2010-08-08_migrated_to_wordpress) runs on
+[WordPress](http://wordpress.org/) and the [snarfed theme](/). It
+[used to](2006-08-23_virtual_housewarming) run on
+[PyBlosxom](http://pyblosxom.sf.net/) with a custom PyBlosxom
+[flavour](snarfed.org_PyBlosxom_flavour) and [plugins](software). Before that,
+it ran on [SnipSnap](http://snipsnap.org/), on a
+[Linux VPS](http://jvds.com/linux.php) at [JVDS](http://jvds.com/).

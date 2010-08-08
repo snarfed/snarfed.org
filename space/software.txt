@@ -146,6 +146,9 @@ and [next-gen gallery](http://plugins.trac.wordpress.org/ticket/1179) that
 let you close the shutter display with the Escape key or by clicking on the
 background.
 
+  * Wordpress importer [patch](http://plugins.trac.wordpress.org/ticket/1162)
+that fixes an order-dependent comment tag bug.
+
   * Patches that add
 [per-comment hooks](http://code.google.com/p/thematic/issues/detail?id=83)
 (applied in [r661](http://code.google.com/p/thematic/source/detail?r=661))

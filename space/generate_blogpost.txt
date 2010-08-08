@@ -14,9 +14,9 @@ blogpost.py. So, I wrote a script to generate the `.blogpost` files for those
 posts and pages: [generate_blogpost.sh](generate_blogpost.sh).
 
 The script isn't too complicated. It just fetches all existing pages and posts
-from MySQL, finds the corresponding `.txt` file, and generates a `.blogpost`
-file for the post or page with the post id, type, title, and permalink stored in
-the database.
+from MySQL, finds the corresponding `.txt` files in the working directory, and
+generates corresponding `.blogpost` files using the post ids, types, titles, and
+permalinks stored in the database.
 
 To run it, simply pass the same parameters you'd pass to `mysql`, e.g.
 
