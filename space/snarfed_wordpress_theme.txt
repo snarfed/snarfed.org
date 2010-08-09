@@ -72,7 +72,7 @@ The snarfed WordPress theme is in the public domain.
 See also:
 
   * [snarfed.org PyBlosxom flavour](snarfed_org_pyblosxom_flavour)
-  * [Migrated to WordPress](2010-08-08_wordpress)
+  * [Migrated to WordPress](2010-08-08_migrated_to_wordpress)
   * [blogpost.sh](blogpost)
   * [generate_blogpost.sh](generate_blogpost)
   * [sync_wordpress.sh](sync_wordpress)

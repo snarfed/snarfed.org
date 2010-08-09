@@ -8,10 +8,10 @@ I use [Stuart Rackham](http://srackham.wordpress.com/)'s
 to publish my pages and posts to [WordPress](http://wordpress.org/).
 It's great!
 
-Unfortunately, when I [migrated to WordPress](2010-08-08_wordpress), I imported
-lots of existing posts and pages that I also wanted to be able to update with
-blogpost.py. So, I wrote a script to generate the `.blogpost` files for those
-posts and pages: [generate_blogpost.sh](generate_blogpost.sh).
+Unfortunately, when I [migrated to WordPress](2010-08-08_migrated_to_wordpress),
+I imported lots of existing posts and pages that I also wanted to be able to
+update with blogpost.py. So, I wrote a script to generate the `.blogpost` files
+for those posts and pages: [generate_blogpost.sh](generate_blogpost.sh).
 
 The script isn't too complicated. It just fetches all existing pages and posts
 from MySQL, finds the corresponding `.txt` files in the working directory, and
@@ -26,7 +26,7 @@ Tested with blogpost.py version 0.9.3.
 
 See also:
 
-  * [Migrated to WordPress](2010-08-08_wordpress)
+  * [Migrated to WordPress](2010-08-08_migrated_to_wordpress)
   * [blogpost.sh](blogpost)
   * [generate_blogpost.sh](generate_blogpost)
   * [sync_wordpress.sh](sync_wordpress)
