@@ -11,7 +11,7 @@ It's great!
 Unfortunately, when I [migrated to WordPress](2010-08-08_migrated_to_wordpress),
 I imported lots of existing posts and pages that I also wanted to be able to
 update with blogpost.py. So, I wrote a script to generate the `.blogpost` files
-for those posts and pages: [generate_blogpost.sh](generate_blogpost.sh).
+for those posts and pages: [generate_blogpost.sh](generate_blogpost).
 
 The script isn't too complicated. It just fetches all existing pages and posts
 from MySQL, finds the corresponding `.txt` files in the working directory, and
