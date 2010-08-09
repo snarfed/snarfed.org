@@ -24,7 +24,7 @@ web developer, so I gradually lost patience and interest in hacking on
 a web framework.
 
 The final straw was server load. PyBlosxom's caching is good, but not great, so
-when my site saw a traffic spike, the server's CPU load would spike.
+when my site saw a traffic spike, the server's CPU load would spike too.
 [My hosting provider](http://pair.com/) is great, but they still noticed,
 and it occasionally made them unhappy enough that they'd
 [clobber my PyBlosxom CGI script](2009-02-23_back).
@@ -39,8 +39,8 @@ supported the workflow I've gotten used to: write posts with
 [Markdown](http://daringfireball.net/projects/markdown/) in plain text files,
 store them along with images and static files in
 [Subversion](http://subversion.tigris.org/), publish them via command line to a
-local server that mirrors the live server, test and iterate and finally publish
-them to the live server via `svn up` and other command line tools over ssh.
+local server that mirrors the live server, test and iterate there, and finally
+push them live via `svn up` and other command line tools over ssh.
 
 After some research, I finally settled on [WordPress](http://wordpress.org/). I
 was reluctant at first, since it's backed by a database, and I really didn't
@@ -50,12 +50,12 @@ and wealth of [plugins](http://wordpress.org/extend/plugins/) and
 mention that a small WordPress database is way easier to manage than a
 [sharded transaction processing backend](http://localhost/scaling_data_on_the_cheap.html).)
 
-I'm still working out the kinks, and I'll miss PyBlosxom, but overall, I'm happy
-with the move so far. You may not notice much of a difference, apart from faster
-page loads due to [static file based caching](http://ocaoimh.ie/wp-super-cache/),
-but at least it's less likely to get shut off now.
+I'm still working out the kinks, and I'll miss PyBlosxom, but so far I'm happy
+with the move. You may not notice much of a difference, apart from faster page
+loads due to [static file based caching](http://ocaoimh.ie/wp-super-cache/), but
+at least it's less likely to get shut off now.
 
-Here are some of the tools, scripts, and patches I wrotes during the migration:
+Here are some of the tools, scripts, and patches I wrote during the migration:
 
   * [snarfed WordPress theme](snarfed_wordpress_theme)
   * [sync_wordpress.sh](sync_wordpress)
