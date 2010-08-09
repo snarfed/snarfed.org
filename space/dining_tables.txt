@@ -244,19 +244,3 @@ nothing shown quite like what i'm looking for. -->
 [Bayshore Metals](http://www.bayshoremetals.com/)  
 [244 Napoleon Street, San Francisco, CA 94124](http://maps.google.com/maps?oe=utf-8&client=firefox-a&q=244+Napoleon+Street+San+Francisco,+CA+94124&ie=UTF8&hq=&hnear=244+Napoleon+St,+San+Francisco,+California+94124&gl=us&ei=PPvES6-TF4TcNZWE9cMO&ved=0CAoQ8gEwAA&z=16)
 <!-- not furniture -->
-
-
-<!--
-<br />
-[]()
-
-[![]()]()
-[![]()]()
-[![]()]()
--->
-
-<!--
-foreach f (*.jpg *.gif *.jpeg)
-convert $f -resize x100 ~/src/snarfed/space/dining_table_thumbnails/$f
-end
--->
