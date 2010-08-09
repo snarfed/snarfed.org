@@ -9,19 +9,17 @@ This site, [snarfed.org](http://snarfed.org/), has been running happily on
 and I've been happy to use it and
 [even](pyblosxom_history)
 [give](pyblosxom_openid_server)
-[back](pyblosxom_rdf_flavour)
+[back](pyblosxom_openid_comments)
 [a](pyblosxom_ajax_comments)
-[bit](pyblosxom_index).
+[bit](snarfed_org_pyblosxom_flavour).
 
 However, the PyBlosxom community is pretty small, so when I needed a new
-feature or improvement, I often
-[ended](pyblosxom_ajax_comments)
-[up](pyblosxom_index)
-[doing](pyblosxom_openid_comments)
-[it](pyblosxom_openid_server)
-[myself](pyblosxom_rdf_flavour). I didn't usually mind, but I'm not a
-web developer, so I gradually lost patience and interest in hacking on
-a web framework.
+feature or improvement, I often ended up
+[doing](pyblosxom_index)
+[it](pyblosxom_rdf_flavour)
+[myself](site_search_with_the_google_ajax_search_api). I didn't usually mind,
+but I'm not a web developer, so I gradually lost patience and interest in
+hacking on a web framework.
 
 The final straw was server load. PyBlosxom's caching is good, but not great, so
 when my site saw a traffic spike, the server's CPU load would spike too.
