@@ -3,8 +3,6 @@ simonitor
 <a href="http://www.simon.com/giftcard/">
   <img class="right" src="simon_giftcard.jpg" /></a>
 
-_Updated 11/2/2009._
-
 For privacy reasons, I use
 [prepaid debit cards](privacy_through_prepaid_credit_cards) instead of
 credit cards. Right now, I mostly use
@@ -45,6 +43,8 @@ wire.
 I briefly considered writing a [Greasemonkey](http://greasemonkey.mozdev.org/)
 script, but I have a small brain, and the shell script was simpler and didn't
 need a browser.
+
+`simonitor.sh` is in the public domain.
 
 See also:
 

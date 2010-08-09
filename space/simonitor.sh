@@ -1,8 +1,9 @@
 #!/bin/bash
 #
 # simonitor.sh
-# Copyright 2007-2009 Ryan Barrett
 # http://snarfed.org/space/simonitor
+# Ryan Barrett <simonitor@ryanb.org>
+# This script is in the public domain.
 #
 # Fetches the current balance of one or more Simon gift cards, scrapes the
 # resulting HTML, and prints the balance to stdout. Simon uses a CAPTCHA,
@@ -49,11 +50,11 @@ for CC in $*; do
   # GET the form page and the recaptcha image
   RECAPTCHA_K=`curl $CURL_ARGS https://www.simon.com/giftcard/card_balance.aspx | \
                  egrep -o "https://api-secure.recaptcha.net/challenge\?k=[^&']+"`
-  RECAPTCHA_C=`curl $RECAPTCHA_K | \
+  RECAPTCHA_C=`curl -L $CURL_ARGS $RECAPTCHA_K | \
                  egrep -o "challenge : '[^']+" | \
                  cut -c 14-`
   CAPTCHAFILE=`mktemp /tmp/simonitor_captcha.XXXXXX` || exit 1
-  curl --output $CAPTCHAFILE $CURL_ARGS https://api-secure.recaptcha.net/image?c=${RECAPTCHA_C}
+  curl -L --output $CAPTCHAFILE $CURL_ARGS https://api-secure.recaptcha.net/image?c=${RECAPTCHA_C}
   xloadimage $CAPTCHAFILE > /dev/null &
   XLOADIMAGE_PID="$!"
 
@@ -69,7 +70,7 @@ for CC in $*; do
   TMPFILE=`mktemp /tmp/simonitor_out.XXXXXX` || exit 1
   if ( ! curl --output $TMPFILE $CURL_ARGS \
          --data "__VIEWSTATE=${VIEWSTATE}&returnUrl=https%3A%2F%2Fwww.simon.com%3A443%2Fgiftcard%2Fcard_balance.aspx&ctl00%24ctl00%24FullContent%24MainContent%24tbNumber=${CC_NUM}&ctl00%24ctl00%24FullContent%24MainContent%24tbCid=${CC_CID}&recaptcha_challenge_field=${RECAPTCHA_C}&recaptcha_response_field=${CAPTCHA}&ctl00%24ctl00%24FullContent%24MainContent%24checkBalanceSubmit.x=0&ctl00%24ctl00%24FullContent%24MainContent%24checkBalanceSubmit.y=0" \
-         https://www.simon.com/giftcard/card_balance.aspx ); then
+         https://www.simon.com/giftcard/card_balance.aspx); then
     continue
   fi
 
