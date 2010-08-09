@@ -69,9 +69,11 @@ Known bugs:
 
 See also:
 
+  * [Migrated to WordPress](2010-08-08_wordpress)
   * [snarfed WordPress theme](snarfed_wordpress_theme)
   * [sync_wordpress.sh](sync_wordpress)
-  * [generate_blogpost](generate_blogpost)
+  * [blogpost.sh](blogpost)
+  * [generate_blogpost.sh](generate_blogpost)
   * [Migrating to PyBlosxom](2006-08-23_virtual_housewarming)
   * [snipsnap2svn](snipsnap2svn)
   * [snipscrape](snipscrape)
