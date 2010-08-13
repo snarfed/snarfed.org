@@ -1,6 +1,12 @@
 Ubuntu Lucid
 
-I recently upgraded from Ubuntu Hardy (8.04) to Lucid (10.04). Similar to
+<a href="http://ubuntu.com/">
+  <img class="right" src="ubuntu.jpg" alt="ubuntu" /></a>
+
+I recently upgraded from
+[Ubuntu](http://ubuntu.com/)
+[Hardy](https://help.ubuntu.com/8.04/about-ubuntu/C/) (8.04) to
+[Lucid](https://help.ubuntu.com/10.04/about-ubuntu/C/) (10.04). Similar to
 my list of tips for [Fedora Core 3 on VMWare](fedora_core_3_on_vmware), here are 
 some tips for Ubuntu Lucid. (I'm running it on a
 [Thinkpad X201](http://shop.lenovo.com/us/landing_pages/thinkpad/2010/X201-X201s-X201tablet)).
@@ -23,11 +29,11 @@ itself:
         sudo update-grub
 
   * Sound has pretty much Just Worked, which was a pleasant surprise.
-[PulseAudio](http://en.wikipedia.org/wiki/PulseAudio) works out of the box.
-Naturally, I then proceeded to broke it by running `pactl set-sink-volume`. I
-got error messages like _shm\_open(): Permission denied_ when I ran `paplay` and
-other sound applications. Argh. I reinstalled soon after, so I didn't get the
-chance to debug farther.
+Specifically, [PulseAudio](http://en.wikipedia.org/wiki/PulseAudio) worked out
+of the box. Of course, I immediately broke it by running `pactl
+set-sink-volume`. I got error messages like _shm\_open(): Permission denied_
+when I ran `paplay` and other sound applications. Argh. I reinstalled soon
+after, so I didn't get the chance to debug farther.
 
   * There's no more `xorg.conf`! It's deprecated. Use other tools to configure
 X, e.g. `xrandr` to set resolution.
@@ -92,7 +98,10 @@ doesn't have the fs driver loaded yet. Try
 hibernate, `pm-hibernate`, and even a hybrid of the two, `pm-suspend-hybrid`.
 Awesome.
 
-  * Speaking of suspend, If you're on a
+<a href="http://thinkpad.com/">
+  <img class="right" src="thinkpad.jpg" alt="thinkpad" /></a>
+
+  * Speaking of suspend, if you're on a
 [Thinkpad](http://shop.lenovo.com/us/landing_pages/thinkpad/) (I use an
 [X201](http://shop.lenovo.com/us/landing_pages/thinkpad/2010/X201-X201s-X201tablet)),
 and your laptop reboots when you resume from suspend, update your BIOS.
@@ -161,6 +170,8 @@ shell):
 and added a key binding in my window manager to run `xmodmap ~/.Xmodmap` on
 demand, and I just press that after I plug in my keyboard.
 
+<img class="right" src="battery.jpg" alt="battery" /></a>
+
   * If you're on a laptop, you can use the
 [tp_smapi](http://www.thinkwiki.org/wiki/Tp_smapi#Battery_charge_control_features)
 kernel module to tune your battery charge thresholds and increase
@@ -172,13 +183,13 @@ load it on boot:
         modprobe tp_smapi
         echo "tp_smapi" >> /etc/modules
 
-You can configure it with [sysfs](http://en.wikipedia.org/wiki/Sysfs). For
+  You can configure it with [sysfs](http://en.wikipedia.org/wiki/Sysfs). For
 example, to charge the battery when it's below 90% and never charge it above 95%:
 
         echo 90 > /sys/devices/platform/smapi/BAT0/start_charge_thresh
         echo 95 > /sys/devices/platform/smapi/BAT0/stop_charge_thresh
 
-See the [ThinkWiki article](http://www.thinkwiki.org/wiki/Tp_smapi#Battery_charge_control_features)
+  See the [ThinkWiki article](http://www.thinkwiki.org/wiki/Tp_smapi#Battery_charge_control_features)
 for more. To
 [keep these settings across reboot](http://www.thinkwiki.org/wiki/Tp_smapi#Making_the_settings_permanent_on_reboot),
 use [sysfsutils](http://linux-diag.sourceforge.net/Sysfsutils.html):
@@ -196,7 +207,7 @@ to warn you, or even automatically suspend or hibernate, when your battery gets
 low. See
 [this article](http://mindspill.net/computing/linux-notes/acpi/acpi-low-battery-warning.html).
 
-    I decided to automatically suspend when my battery drops to around 5%.
+  I decided to automatically suspend when my battery drops to around 5%.
 First, use `service acpid status` to make sure acpid is installed and running.
 Next, add a new acpid event by creating a new file,
 `/etc/acpi/events/low_battery_suspend`, with these contents:
@@ -204,7 +215,7 @@ Next, add a new acpid event by creating a new file,
         event=battery.*
         action=/etc/acpi/low-battery-suspend.sh %e
 
-Finally, put this into `/etc/acpi/low-battery-suspend.sh`:
+  Finally, put this into `/etc/acpi/low-battery-suspend.sh`:
 
         PROC=/proc/acpi/battery/BAT0
         CURRENT=`grep -E '^remaining capacity:' $PROC/state | tr -s ' ' | cut -d' ' -f3`
@@ -225,7 +236,7 @@ battery. It shows you the biggest power consumers on your system and
 
         echo 1 > /sys/module/snd_hda_intel/parameters/power_savep
         
-and [SATA low power mode](http://www.lesswatts.org/tips/disks.php):
+  and [SATA low power mode](http://www.lesswatts.org/tips/disks.php):
 
         echo min_power > /sys/class/scsi_host/host0/link_power_management_policy
 
