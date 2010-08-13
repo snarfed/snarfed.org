@@ -46,7 +46,7 @@ want to be a DBA. However, WordPress's stability, maturity, strong community,
 and wealth of [plugins](http://wordpress.org/extend/plugins/) and
 [themes](http://wordpress.org/extend/themes/) eventually won me over. (Not to
 mention that a small WordPress database is way easier to manage than a
-[sharded transaction processing backend](http://localhost/scaling_data_on_the_cheap.html).)
+[sharded transaction processing backend](/scaling_data_on_the_cheap.html).)
 
 I'm still working out the kinks, and I'll miss PyBlosxom, but so far I'm happy
 with the move. You may not notice much of a difference, apart from faster page
