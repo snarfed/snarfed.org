@@ -86,10 +86,10 @@ for FILE in `ls -1 -t ${WORKSPACE}/*.txt`; do
     mysql $@ -e "UPDATE wp_posts SET post_name='${NAME}', post_title='${TITLE}' WHERE ID=${ID};"
   
     BLOGPOST_TITLE_LINE=`grep -A2 "^sS'title'" ${BPFILE} | tail -n 1`
-    sed -i "s/^${BLOGPOST_TITLE_LINE}\$/S'${TITLE}'/" ${BPFILE}
+    sed -i.bak "s/^${BLOGPOST_TITLE_LINE}\$/S'${TITLE}'/" ${BPFILE}
     BLOGPOST_URL_LINE=`grep -A2 "^sS'url'" ${BPFILE} | tail -n 1`
     BLOGPOST_URL_LINE=${BLOGPOST_URL_LINE//\//\\\/}
-    sed -i "s/^${BLOGPOST_URL_LINE}\$/S'http:\/\/localhost\/${BASE}'/" ${BPFILE}
+    sed -i.bak "s/^${BLOGPOST_URL_LINE}\$/S'http:\/\/localhost\/${BASE}'/" ${BPFILE}
     # S'(http:\/\/.+)[^\/]+'
   fi
 
