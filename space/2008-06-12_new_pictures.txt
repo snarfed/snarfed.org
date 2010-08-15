@@ -1,18 +1,11 @@
 New Pictures
 
-<div class="img-shadow">
 <a href="/gallery/maulik_sarjita_wedding">
-  <img src="/gallery/maulik_sarjita_wedding/thumbs/varghodo_carriage_maulik_shivani.jpg" alt="varghodo_carriage_maulik_shivani" /></a>
-</div>
-<div class="img-shadow">
+  <img class="shadow" src="/gallery/maulik_sarjita_wedding/thumbs/varghodo_carriage_maulik_shivani.jpg" alt="varghodo_carriage_maulik_shivani" /></a>
 <a href="/gallery/nick_maureen_wedding">
-  <img src="/gallery/nick_maureen_wedding/thumbs/ceremony_maureen_nick_after_2.jpg" alt="ceremony_maureen_nick_after" /></a>
-</div>
-<div class="img-shadow">
+  <img class="shadow" src="/gallery/nick_maureen_wedding/thumbs/ceremony_maureen_nick_after_2.jpg" alt="ceremony_maureen_nick_after" /></a>
 <a href="/gallery/pub_crawl">
-  <img src="/gallery/pub_crawl/thumbs/derek_ryan_kristina_lick.jpg" alt="derek_ryan_kristina" /></a>
-</div>
-<br class="clearing" />
+  <img class="shadow" src="/gallery/pub_crawl/thumbs/derek_ryan_kristina_lick.jpg" alt="derek_ryan_kristina" /></a>
 
 New pictures are up! 
 [Nick and Maureen's wedding](nick_maureen_wedding),

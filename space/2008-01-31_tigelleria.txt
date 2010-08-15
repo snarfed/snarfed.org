@@ -1,9 +1,7 @@
 Tigelleria
 
-<div class="img-shadow">
 <a href="http://tigelleria.com/">
-  <img src="tigelleria.jpg" alt="OpenIDDevCamp" /></a>
-</div>
+  <img class="shadow" src="tigelleria.jpg" alt="tigelleria" /></a>
 
 Becca and I went out to an intriguing new restaurant,
 [Tigelleria](http://tigelleria.com/)
@@ -20,7 +18,7 @@ came with tomato and olive tapenades and hummus. The tigelle itself was
 good, if unremarkable, and fresh from the oven.
 
 <a href="http://turismo.comune.modena.it/galfoto/piatti-en.php?nid=248">
-  <img class="right shadow" style="; margin-bottom: 0px" src="tigelle.jpg" /></a>
+  <img class="right shadow" src="tigelle.jpg" /></a>
 
 None of the ingredients themselves particularly stood out. Combined with the
 tigelle and tapenade, though, they were much better than the sum of their
@@ -33,10 +31,8 @@ immediately caught my eye. It's a caffeine-free faux espresso brewed with
 roasted barley, originally considered a poor person's drink but now a trendy,
 healthier alternative to coffee.
 
-<div style="float: left; margin-right: 10px; margin-bottom: 0px">
-  <a href="http://en.wikipedia.org/wiki/Orzo#Orzo_roasted_barley_drink">
-    <img src="caffe_d_orzo.jpg" /></a>
-</div>
+<a href="http://en.wikipedia.org/wiki/Orzo#Orzo_roasted_barley_drink">
+  <img class="left" src="caffe_d_orzo.jpg" /></a>
 
 It was...interesting. Not for me, but definitely interesting, and worth trying.
 Happily, the tiramisu more than made up for it.

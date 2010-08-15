@@ -1,9 +1,7 @@
 Maya Lin at the de Young
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://www.deyoungmuseum.org/asianamericanmodern/">
-   <img src="setting_sun_sacramento_valley.jpg" alt="setting_sun_sacramento_valley"></a>
-</div>
+<a href="http://www.deyoungmuseum.org/asianamericanmodern/">
+ <img class="right shadow" src="setting_sun_sacramento_valley.jpg" alt="setting_sun_sacramento_valley" /></a>
 
 Yesterday, my family and I headed into the city to check out the
 [California Academy of Sciences](http://calacademy.org/), in Golden Gate Park,
@@ -21,10 +19,8 @@ It had a number of beautiful scrolls, but overall, the aesthetics of the
 different pieces were too scattered and jarring for the exhibit to come
 together as a whole.
 
-<div class="img-shadow" style="float: left; margin-right: 10px">
-  <a href="http://www.deyoungmuseum.org/mayalin/">
-   <img src="blue_lake_pass.jpg" alt="blue_lake_pass"></a>
-</div>
+<a href="http://www.deyoungmuseum.org/mayalin/">
+   <img class="left shadow" src="blue_lake_pass.jpg" alt="blue_lake_pass"></a>
 
 When I got to the end of the exhibit, everything fell into place. It had all
 been a prelude to a stunning
@@ -39,10 +35,8 @@ than a sketch, but still managed to convey an arresting sense of place and
 physicality. They were surreal, and at the same time, utterly grounded.
 I loved them. A few fell flat, but even those were interesting, and worth seeing.
 
-<div class="img-shadow" style="float: right; margin-left: 10px">
-  <a href="http://www.ysldeyoung.org/">
-   <img src="yves_saint_laurent.jpg" alt="yves_saint_laurent"></a>
-</div>
+<a href="http://www.ysldeyoung.org/">
+ <img class="right shadow" src="yves_saint_laurent.jpg" alt="yves_saint_laurent"></a>
 
 I enjoyed the other exhibits too, especially the
 [Yves Saint Laurent retrospective](http://www.ysldeyoung.org/)

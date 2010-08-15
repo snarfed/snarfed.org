@@ -1,8 +1,6 @@
 hitman2 ghost
 
-<div class="img-shadow">
-  <img src="hitman2.jpg" />
-</div>
+<img class="right shadow" src="hitman2.jpg" />
 
 I just finished [Hitman 2](http://hitman2.com/),
 from [IO Interactive](http://ioi.dk/), and I really liked it. It's a great game,
@@ -21,9 +19,7 @@ kill everyone, _without anyone seeing you_, you get rated Ghost. I tried it out,
 and sure enough, it works! This screenshot is from the Graveyard Shift
 mission:
 
-<div class="img-shadow">
-  <a href="ghost.jpg"><img src="/space/ghost_small.jpg" /></a>
-</div>
+<a href="ghost.jpg"><img class="shadow" src="/space/ghost_small.jpg" /></a>
 
 For more information, check out this [forum
 thread](http://hitmanforum.com/forum/viewtopic.php?t=1962).

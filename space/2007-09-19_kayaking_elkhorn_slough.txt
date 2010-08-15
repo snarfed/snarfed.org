@@ -1,18 +1,12 @@
 Kayaking at Elkhorn Slough
 
-<div class="img-shadow">
 <a href="http://elkhornslough.org/">
-  <img src="shorebirds.jpg" alt="shorebirds.jpg" /></a>
-</div>
-<div class="img-shadow">
+  <img class="shadow" src="shorebirds.jpg" alt="shorebirds.jpg" /></a>
 <a href="http://www.elkhornslough.org/bestshot/060529bs.htm">
-  <img src="otter.jpg" alt="otter.jpg" /></a>
-</div>
-<div class="img-shadow">
+  <img class="shadow" src="otter.jpg" alt="otter.jpg" /></a>
 <a href="http://kayakconnection.com/">
-  <img src="kayakers.jpg" alt="kayakers.jpg" /></a>
-</div>
-<br class="clearing" />
+  <img class="shadow" src="kayakers.jpg" alt="kayakers.jpg" /></a>
+
 To celebrate [my dad](http://one-one.net/)'s birthday over the weekend, my
 family and I went kayaking at [Elkhorn Slough](http://elkhornslough.org/).
 [Walter](/gallery/hong_kong_2005/barefoot_ryan_walter.jpg) joined us, too, as

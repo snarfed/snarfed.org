@@ -1,9 +1,6 @@
 Amazon SimpleDB thoughts
 
-<div style="float: right; margin-left: 10px">
-  <a href="http://aws.amazon.com/">
-   <img src="amazon_web_services.gif" /></a>
-</div>
+<a href="http://aws.amazon.com/"><img class="right" src="amazon_web_services.gif" /></a>
 
 [Amazon](http://amazon.com/) recently announced their latest web service,
 [SimpleDB](http://aws.amazon.com/simpledb), to a roar of

@@ -1,8 +1,7 @@
 Google App Engine Launched!
 
-<div style="float: right; margin-left: 10px">
-  <a href="http://code.google.com/appengine/"><img src="logo_en_appengine.gif" /></a>
-</div>
+<a href="http://code.google.com/appengine/">
+  <img class="right" src="logo_en_appengine.gif" /></a>
 
 If you've talked to me about work during the last couple years, I've probably
 downplayed it, resorted to generalities, or just changed the subject. No
@@ -17,9 +16,8 @@ longer! We've finally
 > Engine, there are no servers to maintain: You just upload your application,
 > and it's ready to serve your users.
 
-<div style="float: right; margin-left: 10px">
-  <a href="http://code.google.com/appengine/"><img src="appengine.jpg" /></a>
-</div>
+<a href="http://code.google.com/appengine/">
+  <img class="right" src="appengine.jpg" /></a>
 
 Personally, I spent most of my time writing the
 [datastore](http://code.google.com/appengine/docs/datastore/overview.html),

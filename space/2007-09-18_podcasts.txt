@@ -1,8 +1,6 @@
 Podcasts I Listen To
 
-<div style="float: right; margin-left: 10px">
-  <img src="podcast.gif" />
-</div>
+<a href="podcasts"><img class="right" src="podcast.gif" /></a>
 
 I've posted a [list of podcasts I listen to](podcasts). I listen mostly
 while I'm running or at the gym, but sometimes also when I'm coding, playing

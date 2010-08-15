@@ -1,8 +1,7 @@
 GDC 2008
 
-<div class="img-shadow">
-  [![GDC 2008](gdc_2008_logo.jpg)](http://gdconf.com/)
-</div>
+<a href="http://gdconf.com/">
+  <img class="shadow" src="gdc_2008_logo.jpg" alt="GDC 2008" /></a>
 
 I've been to [Game Developers Conference](http://gdconf.com/) for seven years
 now. It's always inspiring, thought provoking, and lots of fun. I've written up my
@@ -204,17 +203,15 @@ was fascinating, as were
 [CCP on hiring architects and fashion designers for EVE Online](https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6273), and
 [Bungie on *designing* AI, not programming it](https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6863).
 
-<a href="http://habbo.com/">
-  <img class="left shadow" src="gdc_2008_habbo_hotel.jpg" /></a>
-
 Lastly, the [Game Designers Rant](http://www.gamespot.com/news/6186631.html)
 delved into serious and real-world games, a couple of the most interesting and
 unusual trends in game design recently.
 
-<br class="clearing" />
-
 <a name="business"></a>
 #### [![permalink](/Icon-Permalink.png)](#business) Business
+
+<a href="http://habbo.com/">
+  <img class="left shadow" src="gdc_2008_habbo_hotel.jpg" /></a>
 
 As opposed to game development and design, the business of games has already
 matured in many respects. Still, a number of talks revealed encouraging new

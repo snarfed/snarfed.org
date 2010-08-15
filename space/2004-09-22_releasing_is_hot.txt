@@ -1,10 +1,11 @@
 Releasing is Hot 
 
-<div class="img style="float: right; margin-left: 10px">
-  [![clip.png](clip.png)](/space/autocutsel_clipboard_and_primary_patch)
-[![ff_icon.png](ff_icon.png)](/space/autocutsel_clipboard_and_primary_patch)
-[![/space/gaimicon.png](gaimicon.png)](/space/nullprpl_pidgin_null_protocol_plugin)
-</div>
+<a href="/space/autocutsel_clipboard_and_primary_patch">
+  <img class="right" src="clip.png" alt="clip.png" /></a>
+<a href="/space/autocutsel_clipboard_and_primary_patch">
+  <img class="right" src="ff_icon.png" alt="ff_icon.png" /></a>
+<a href="/space/nullprpl_pidgin_null_protocol_plugin">
+  <img class="right" src="gaimicon.png" alt="/space/gaimicon.png" /></a>
 
 Not to be outdone by [Maulik](Maulik), I've posted a couple new projects
 I've wrapped up:

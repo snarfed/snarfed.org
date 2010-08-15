@@ -1,9 +1,7 @@
 Windsurfing in Venezuela
 
-<div class="img-shadow">
 <a href="http://www.venezuelatuya.com/margarita/yaqueeng.htm">
-  <img src="el_yaque_beach.jpg" alt="el yaque beach" /></a>
-</div>
+  <img class="shadow" src="el_yaque_beach.jpg" alt="el yaque beach" /></a>
 <br class="clearing" />
 _Update: [pictures are up](venezuela_windsurfing)!_
 
@@ -69,9 +67,8 @@ that I'll devote another post to them alone.
   world. Margarita is a popular vacation spot for upper class Venezuelans, so
   that made sense.
 
-<div class="img-shadow" style="float: right; margin-left: 10px; margin-bottom: 0px">
-  <a href="http://calikites.com/"><img src="kitesurfing.jpg" /></a>
-</div>
+<a href="http://calikites.com/">
+  <img class="right shadow" src="kitesurfing.jpg" /></a>
 
 - The [Venezuelan bolívar](http://en.wikipedia.org/wiki/Venezuelan_bol%C3%ADvar)
   is pegged to the dollar at 2150:1, but inflation is roughly 16%, so the real

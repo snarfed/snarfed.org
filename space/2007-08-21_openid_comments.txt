@@ -1,9 +1,6 @@
 OpenID comments
 
-<div style="float: right; margin-left: 10px">
-  <a href="http://openid.net/">
-   <img src="openid-logo.png" /></a>
-</div>
+<a href="http://openid.net/"><img class="right" src="openid-logo.png" /></a>
 
 A while back, I posted an
 [OpenID server plugin](2006-10-20_openid_server_for_pyblosxom) for

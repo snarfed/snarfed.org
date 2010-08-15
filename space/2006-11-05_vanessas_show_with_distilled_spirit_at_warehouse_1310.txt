@@ -1,17 +1,11 @@
 Vanessa's show with Distilled Spirit at Warehouse 1310
 
-<div class="img-shadow">
 <a href="http://vanessaart.com/">
-  <img src="beauty_marks.jpg" alt="beauty_marks" /></a>
-</div>
-<div class="img-shadow">
+  <img class="shadow" src="beauty_marks.jpg" alt="beauty marks" /></a>
 <a href="http://www.flickr.com/photos/daniel_meredith/288215083/">
-  <img src="warehouse_1310_show.jpg" alt="warehouse_1310_show" /></a>
-</div>
-<div class="img-shadow">
+  <img class="shadow" src="warehouse_1310_show.jpg" alt="warehouse 1310 show" /></a>
 <a href="http://distilledclothing.com/">
-  <img src="distilled_clothing.jpg" alt="distilled_clothing" /></a>
-</div>
+  <img class="shadow" src="distilled_clothing.jpg" alt="distilled clothing" /></a>
 
 About a month ago,
 [Sep Kamvar](http://www.wefeelfine.org/creators.html#sepandar)

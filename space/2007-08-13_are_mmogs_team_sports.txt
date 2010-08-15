@@ -1,9 +1,6 @@
 Are MMOGs Team Sports?
 
-<div style="float: right; margin-left: 10px">
-  <a href="http://www.worldofwarcraft.com/">
-   <img src="wow_logo.jpg" /></a>
-</div>
+<a href="http://www.worldofwarcraft.com/"><img class="right" src="wow_logo.jpg" /></a>
 
 I love games. I love game development, gaming culture, games as an art form,
 and the game industry.
@@ -61,10 +58,8 @@ the level of good hockey game. Still, it's far beyond the grinding,
 socializing, and gold farming that the rest of us usually associate with
 MMOGs. That alone was enlightening.
 
-<div style="float: left; margin-right: 10px">
-  <a href="http://www.capcom.com/phoenixwright/">
-   <img src="phoenix_wright.jpg" /></a>
-</div>
+<a href="http://www.capcom.com/phoenixwright/">
+ <img class="left" src="phoenix_wright.jpg" /></a>
 
 Personally, I think this speaks to games' untapped potential as an art form.
 With the more static art forms - film, literature, music - the basic

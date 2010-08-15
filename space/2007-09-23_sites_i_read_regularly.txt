@@ -1,8 +1,6 @@
 Sites I Read Regularly
 
-<div style="float: right; margin-left: 10px">
-  <img src="rss.jpg" />
-</div>
+<a href="feeds"><img class="right" src="rss.jpg" /></a>
 
 Hot on the heels of my [list of podcasts](podcasts), I've posted a [list
 of sites I read regularly](feeds), courtesy of

@@ -1,9 +1,7 @@
 Windsurfing!
 
-<div class="img-shadow">
 <a href="http://shorelinelake.com/aquatic/aquatic.htm">
-  <img src="shoreline.jpg" alt="shoreline lake" /></a>
-</div>
+  <img class="shadow" src="shoreline.jpg" alt="shoreline lake" /></a>
 
 _Update: [pictures](windsurfing_at_shoreline) are up!_
 
@@ -19,9 +17,7 @@ and the neighboring wetlands a couple times a week. I'd never been on a
 weekend, though, and I was surprised at how crowded it was. Even so, we were
 able to rent rigs and get out onto the water within 15 minutes.
 
-<div class="img style="float: right; margin-left: 10px">
-  <img src="windsurfer.jpg" />
-</div>
+<img class="right shadow" src="windsurfer.jpg" />
 
 Ken and Peter gave me some pointers on the way to the lake, but still, I
 struggled for a good 45 minutes or so. It's surprisingly difficult. The sail

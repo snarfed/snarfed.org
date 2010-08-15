@@ -1,8 +1,11 @@
 Go Kart Racer
 
-[![monza track](monza_track.jpg)](http://www.gokartracer.com/track_maps.html)
-[![go kart racer logo](go_kart_racer_logo.jpg)](http://www.gokartracer.com/)
-[![karts passing](karts_passing.jpg)](http://www.gokartracer.com/gallery_racing.html)
+<a href="http://www.gokartracer.com/track_maps.html">
+  <img src="monza_track.jpg" alt="monza track" /></a>
+<a href="http://www.gokartracer.com/">
+  <img class="shadow" src="go_kart_racer_logo.jpg" alt="go kart racer logo" /></a>
+<a href="http://www.gokartracer.com/gallery_racing.html">
+  <img class="shadow" src="karts_passing.jpg" alt="karts passing" /></a>
 
 A few weeks ago,
 [Ken](http://keeda.stanford.edu/~kash)
@@ -28,12 +31,8 @@ for that. Of course, I forgot the fake email address I gave them, so I had to
 hold off on this post until I scanned in my printouts. I didn't start off so
 well, but hey, cut me some slack. I'm showing signs of improvement!
 
-<div class="img-shadow">
 <a href="go_kart_practice_stats.jpg">
-  <img src="go_kart_practice_stats_thumb.jpg" alt="practice stats" /></a>
-</div>
-<div class="img-shadow">
+  <img class="shadow" src="go_kart_practice_stats_thumb.jpg" alt="practice stats" /></a>
 <a href="go_kart_race_stats.jpg">
-  <img src="go_kart_race_stats_thumb.jpg" alt="race stats" /></a>
-</div>
+  <img class="shadow" src="go_kart_race_stats_thumb.jpg" alt="race stats" /></a>
 

@@ -14,10 +14,9 @@ is the best novel I've read in a long time. It's quirky, captivating, powerful
 modern literature. It snuck up on me, and when I pulled back the curtain, it
 hit me like a freight train at full speed. Highly recommended.
 
-<div class="img-shadow">
 <a href="http://knytt.ni2.se/">
-  <img src="knytt.png" alt="knytt" /></a>
-</div>
+  <img class=left shadow" src="knytt.png" alt="knytt" /></a>
+
 [Knytt](http://knytt.ni2.se/) is an striking little game. It's simply
 animated, has no enemies, and only lasts a couple hours. It's overwhelmingly
 immersive, though. In places, the ambience is downright haunting. I couldn't
@@ -38,10 +37,9 @@ The setting may be outer space, but the show is actually about religion and
 spirituality, politics, interpersonal relationships, the military, and other
 decidedly non-Trekkie topics. It's very, very compelling.
 
-<div class="img-shadow">
 <a href="http://www.bbc.co.uk/nature/animals/planetearth/">
-  <img src="planet_earth_tigress.jpg" alt="planet earth" /></a>
-</div>
+  <img class="right shadow" src="planet_earth_tigress.jpg" alt="planet earth" /></a>
+
 I've only seen parts of
 [Planet Earth](http://www.bbc.co.uk/nature/animals/planetearth/), but it
 rocks. Add the

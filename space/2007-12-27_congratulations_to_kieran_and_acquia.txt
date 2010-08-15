@@ -1,9 +1,6 @@
 Congratulations to Kieran and Acquia
 
-<div style="float: right; margin-left: 10px">
-  <a href="http://acquia.com/">
-   <img src="acquia.png" /></a>
-</div>
+<a href="http://acquia.com/"><img class="right" src="acquia.png" /></a>
 
 I've been mum about this for a while, but they
 [announced themselves](http://acquia.com/node/10) last week, so I can finally

@@ -32,10 +32,8 @@ see the [pictures](paris_2009).
     [arrondisements](http://en.wikipedia.org/wiki/Paris_arrondissements) was
     also interesting.
 
-    <div class="img-shadow" style="float: left; margin-right: 10px">
-      <a href="/gallery/paris_2009">
-        <img src="/gallery/paris_2009/thumbs/opera_house_ryan.jpg" /></a>
-    </div>
+    <a href="/gallery/paris_2009">
+      <img class="left shadow" src="/gallery/paris_2009/thumbs/opera_house_ryan.jpg" /></a>
 
     Also, like many places in Europe, old, beautiful architecture is _everywhere_!
     Not just the landmarks, but ordinary buildings too. Old buildings in the
@@ -56,8 +54,8 @@ see the [pictures](paris_2009).
     neighborhood due to the universities nearby, but it's also drawn more
     tourists recently.
 
-<a href="/gallery/paris_2009">
-  <img class="right shadow" src="/gallery/paris_2009/thumbs/arc_du_triomfe_jerome_jeremy_ryan.jpg" /></a>
+    <a href="/gallery/paris_2009">
+       <img class="right shadow" src="/gallery/paris_2009/thumbs/arc_du_triomfe_jerome_jeremy_ryan.jpg" /></a>
 
   * The [Champs-Élysées](http://en.wikipedia.org/wiki/Champs_Elysees) was a
     lot of fun. It definitely had that familiar, main thoroughfare in a big
@@ -82,10 +80,8 @@ see the [pictures](paris_2009).
     [Tuilieres](http://www.louvre.fr/llv/musee/jardins_tuileries.jsp?bmLocale=en)
     gardens were well worth seeing.
 
-    <div class="img-shadow" style="float: left; margin-right: 10px">
-      <a href="/gallery/paris_2009">
-        <img src="/gallery/paris_2009/thumbs/louvre_sunset_jeremy.jpg" /></a>
-    </div>
+    <a href="/gallery/paris_2009">
+      <img class="left shadow" src="/gallery/paris_2009/thumbs/louvre_sunset_jeremy.jpg" /></a>
 
     We also noticed that France and Spain intentionally placed modern art
     alongside classical art in a number of places. Most of these didn't work,
@@ -105,8 +101,8 @@ see the [pictures](paris_2009).
     memorable. It's (yet another) beautiful, historic chapel, but it also
     boasts one of the best views of the city outside of the Eiffel Tower, and
 
-<a href="/gallery/paris_2009">
-  <img class="right shadow" src="/gallery/paris_2009/thumbs/salon_du_chocolat_fashion_show.jpg" /></a>
+  <a href="/gallery/paris_2009">
+    <img class="right shadow" src="/gallery/paris_2009/thumbs/salon_du_chocolat_fashion_show.jpg" /></a>
 
 <a name="versailles"></a>
 
@@ -129,10 +125,8 @@ see the [pictures](paris_2009).
     [Hall of Mirrors](http://en.chateauversailles.fr/discover-the-estate/the-palace/the-palace/the-hall-of-mirrors),
     but we generally managed to tune them out.
 
-    <div class="img-shadow" style="float: left; margin-right: 10px">
-      <a href="/gallery/paris_2009">
-        <img src="/gallery/paris_2009/thumbs/versailles_gardens_ryan.jpg" /></a>
-    </div>
+    <a href="/gallery/paris_2009">
+      <img class="left shadow" src="/gallery/paris_2009/thumbs/versailles_gardens_ryan.jpg" /></a>
 
     We spent more time in the
     [gardens](http://en.chateauversailles.fr/gardens-and-park-of-the-chateau-),
@@ -156,8 +150,8 @@ see the [pictures](paris_2009).
     admit it, but before I visited I actually thought more of it was enclosed.
     I didn't realize just how little of it was usable space.
 
-<a href="/gallery/paris_2009">
-  <img class="right shadow" src="/gallery/paris_2009/thumbs/opera_house.jpg" /></a>
+  <a href="/gallery/paris_2009">
+    <img class="right shadow" src="/gallery/paris_2009/thumbs/opera_house.jpg" /></a>
 
   * The [Palais Garnier](http://en.wikipedia.org/wiki/Palais_Garnier) opera
     hall. Yet another gorgeous, utterly historic piece of Paris architecture.

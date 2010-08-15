@@ -1,8 +1,7 @@
 Return to the Theater
 
-<div class="img-shadow">
-  <a href="http://returnoftheking.com/"><img src="frodo_sam.jpg" /></a>
-</div>
+<a href="http://returnoftheking.com/">
+  <img class="shadow" src="frodo_sam.jpg" /></a>
 
 I saw the new Lord of the Rings movie on Wednesday. I liked it. It was good. Go
 see it.
