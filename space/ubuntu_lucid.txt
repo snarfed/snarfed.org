@@ -248,13 +248,17 @@ aren't running, and you see syslog messages like this:
   ...you're running into either a
 [sysvinit bug](https://bugs.launchpad.net/ubuntu/+source/sysvinit/+bug/497813),
 or an [ACPI bug](https://bugs.launchpad.net/ubuntu/+source/linux/+bug/412499),
-or maybe an interaction between the two. Or something. Whatever. In any case, I
-found [this workaround](http://ubuntuforums.org/archive/index.php/t-1335531.html):
-add these lines to the ends of `/etc/init/anacron.conf`:
+or maybe an interaction between the two. Or something. Whatever.
 
-        pre-stop script
-        sleep 3600
-        end script
+  In any case, I first tried
+[this thread](http://ubuntuforums.org/archive/index.php/t-1335531.html)'s
+workaround of adding a sleep before stopping `/etc/init/anacron.conf`, but that
+made it awkward to stop or restart anacron, and impossible to suspend or
+hibernate, since they try to suspend anacron first.
+
+  I settled for simply removing `/usr/lib/pm-utils/sleep.d/95anacron`, the hook
+  that suspends anacron when the machine itself suspends. So far that's working
+  nicely.
 
   * If you use postfix (the default) as your MTA, and you see syslog messages
     like this:
