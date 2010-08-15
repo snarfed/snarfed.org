@@ -240,6 +240,22 @@ battery. It shows you the biggest power consumers on your system and
 
         echo min_power > /sys/class/scsi_host/host0/link_power_management_policy
 
+  * If you use [anacron](http://anacron.sourceforge.net/), and your anacron jobs
+aren't running, and you see syslog messages like this:
+
+        init: anacron main process (19514) killed by TERM signal
+
+  ...you're running into either a
+[sysvinit bug](https://bugs.launchpad.net/ubuntu/+source/sysvinit/+bug/497813),
+or an [ACPI bug](https://bugs.launchpad.net/ubuntu/+source/linux/+bug/412499),
+or maybe an interaction between the two. Or something. Whatever. In any case, I
+found [this workaround](http://ubuntuforums.org/archive/index.php/t-1335531.html):
+add these lines to the ends of `/etc/init/anacron.conf`:
+
+        pre-stop script
+        sleep 3600
+        end script
+
 
 Enjoy Ubuntu Lucid!
 
