@@ -256,6 +256,16 @@ add these lines to the ends of `/etc/init/anacron.conf`:
         sleep 3600
         end script
 
+  * If you use postfix (the default) as your MTA, and you see syslog messages
+    like this:
+
+        postfix/postdrop[29372]: warning: unable to look up public/pickup: No such file or directory
+
+    ...you need to create the postdrop fifo, as described in
+    [this forum thread](http://ubuntuforums.org/showthread.php?t=666018):
+
+        sudo mkfifo /var/spool/postfix/public/pickup
+        sudo service postfix restart
 
 Enjoy Ubuntu Lucid!
 
