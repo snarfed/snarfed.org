@@ -1,0 +1,122 @@
+/**
+ * More Minimalist Gmail userstyle
+ * http://snarfed.org/more_minimalist_gmail
+ * Ryan Barrett <more-minimalist-gmail@ryanb.org>
+ *
+ * Aggressively hides Gmail's UI and chrome, leaving only your email, labels, and
+ * search box. Inspired by Matt Constantine's Minimalist Gmail,
+ * http://mattconstantine.com/mg .
+ */
+
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document domain(mail.google.com) {
+
+div.pA,
+div.LrBjie,
+div.n6,
+div.pX,
+div.Pl,
+div.CM,
+div.qj,
+div.yV,
+div.iE,
+div.J-Zh-I-Js-Zj,
+div.nH.pp.T0,
+div.nH.CX.pp,
+div.nH.T4.pp,
+div.z0,
+div.a9.Z4b7Xb,
+div.a9.Rgky9,
+td.bN.bM,
+td.bN.bR,
+span.es.el,
+span.jNNpPe,
+td.fA,
+div.eh,
+div.f6,
+div.nH.qp,
+div.nH.l2.ov,
+div.AY.D.E,
+img.zG,
+table.Bs.nH.iY td.Bu:nth-child(2),
+table.Bs.nH.iY td.Bu:nth-child(3)
+{
+  display: none !important;
+}
+
+td.xY {
+  border-bottom: none !important;
+}
+
+/* "grip" image left of each conversation, for drag and drop */
+td.oZ-x3.xY {
+  background-image: none !important;
+}
+
+}
+
+/*
+UI
+--
+div.aC,     // entire header
+div.nH.l2.ov // entire footer
+div.nH.qp   // top common google header
+div.a9.Z4b7Xb // #:rm, gmail logo
+div.a9.Rgky9 // #:rm, gmail logo
+td.bN.bM,   // search mail/web buttons in header
+div.A1.D.E  // inner header in thread list
+div.AY.D.E  // inner footer in thread list
+td.xY       // the component parts of each row in thread list
+img.zG      // star in thread list rows
+div.nH.pp.T0 // chat
+td.bN.bR,   // show search options and create a filter links
+div.z0      // Compose Mail button
+div.LrBjie, // Inbox/Sent Mail/Drafts/All Mail/Trash
+div.n6,     // X more labels
+div.nH.CX.pp // Mail and Contacts links
+div.nH.T4.pp // Tasks link
+div.CM,     // horizontal line between Inbox etc links and label links
+div.TN,     // Inbox
+div#n1,     // Sent Mail
+div#n0,     // Drafts
+div#mz,     // All Mail
+div#my,     // Trash
+div.qj      // background highlight bar for current label/folder
+
+div.A1,     // top buttons
+div.J-Zh-I-KE,     // Archive button
+div.J-Zh-I-Js-Zq,  // Report spam and Delete buttons
+div#:pw,    // Move to drop-down button
+div#:pv,    // Labels drop-down button
+div#:pu,    // More actions drop-down button
+div.Pl.J-J5-Ji // all buttons
+div.AP      // Refresh link
+div.Cr      // X-Y of Z counter
+div.yV      // select (all, none, ...) bar
+div.iE      // bottom row of buttons
+td.oZ-x3.xY // checkbox next to each conversation, for drag and drop
+
+
+Conversation
+------------
+div.iI.D.E  // inner header
+div.f6      // XXX is not available to chat
+table.Bs.nH.iY td.Bu:last-child // right side pane with ads, "New window" link, etc
+
+
+Compose
+-------
+div.CoUvaf  // bottom compose buttons
+div.eh      // top compose buttons
+td.fw       // plain text/rich formatting link plus formatting buttons
+td.fA       // check spelling link
+span.es.el  // #:tb, rich formatting link
+span.eo.el  // #:tb, plain text link
+span.jNNpPe // #:tc, formatting buttons
+
+
+Tasks
+-----
+textarea.D.Db.sb  // #2.notes-editor, notes section in single not page
+*/
