@@ -365,3 +365,30 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
 (_[subscribe](http://www.escapistmagazine.com/rss/articles/0.xml)_)
 
 
+<!--
+
+* [Youwebtwo.com](http://youwebtwo.com)
+(_[subscribe](http://youwebtwo.com/feed/)_)
+
+* [Rebecca Grand's Facebook Posts](http://www.facebook.com/posted.php?id=505629907)
+(_[subscribe](http://www.facebook.com/feeds/share_posts.php?id=505629907&viewer=212038&key=c886d8cc92&format=rss20)_)
+
+* [beckstar_805's MySpace Comments](http://www.myspace.com/beckstar_805)
+(_[subscribe](http://makedatamakesense.com/myspace/comment/?url=http%3A%2F%2Fwww.myspace.com%2Fbeckstar_805)_)
+
+* [feed/http://blog.myspace.com/blog/rss.cfm?friendID=18935888](http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Fblog.myspace.com%2Fblog%2Frss.cfm%3FfriendID%3D18935888)
+(_[subscribe](http://blog.myspace.com/blog/rss.cfm?friendID=18935888)_)
+
+* [And if you play defender I could be your hyper space (Anthony Baxter)](http://anthonybaxter.livejournal.com/)
+(_[subscribe](http://anthonybaxter.livejournal.com/data/atom)_)
+
+* [Twitter / dlpeters](http://twitter.com/dlpeters)
+(_[subscribe](http://twitter.com/statuses/user_timeline/13545012.atom)_)
+
+* [Twitter / dewitt](http://twitter.com/dewitt)
+(_[subscribe](http://twitter.com/statuses/user_timeline/673483.atom)_)
+
+* [Twitter / Derekh](http://twitter.com/derekh)
+(_[subscribe](http://twitter.com/statuses/user_timeline/47460859.rss)_)
+
+-->
