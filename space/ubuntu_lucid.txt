@@ -42,7 +42,7 @@ X, e.g. `xrandr` to set resolution.
 Pidgin, everything. I was using `xrandr` to set my screen resolution, since I
 use [xinit](http://xfree86.org/current/xinit.1.html) and a non-standard window
 manager, [ion](ion), instead of a full desktop like Gnome or KDE, so I wondered
-if i was Doing It Wrong. It was only GTK fonts, so I dug into
+if I was Doing It Wrong. It was only GTK fonts, so I dug into
 [gconf](http://projects.gnome.org/gconf/). I tried
 [using gconftool](http://ubuntu-tutorials.com/2008/01/10/gconftool-2-gconf-editor-from-the-shell/)
 to change them:
@@ -67,17 +67,16 @@ hardware, it fixed itself and I no longer needed the `xorg.conf`. Go figure.
   * Speaking of [gconf](http://projects.gnome.org/gconf/), note how it's
 different from the old school `.gtkrc` files! gconf is only really used if
 you're running Gnome. Of course, more and more things are "part of Gnome" and
-use it, like PulseAudio, but others like Pidgin and Firefox don't. they read
+use it, like PulseAudio, but others like Pidgin and Firefox don't. They read
 `.gtkrc-2.0` instead.
 
   * This [Emacs 23/GTK bug](https://bugzilla.gnome.org/show_bug.cgi?id=85715)
-[more](http://emacsbugs.donarmstrong.com/cgi-bin/bugreport.cgi?bug=4078)
-[details](https://bugs.launchpad.net/ubuntu/+source/emacs23/+bug/543611) annoyed
-the shit out of me. When server-based X frames are killed instead of closed
-nicely, e.g. with e.g. `server-edit`, the whole Emacs process hangs. This
-happens when i shut down X while any X emacsclient frames are still open. the
-symptom is that the next time I try to open an X emacsclient frame, it just
-hangs. Grr.
+([more](http://emacsbugs.donarmstrong.com/cgi-bin/bugreport.cgi?bug=4078)
+[details](https://bugs.launchpad.net/ubuntu/+source/emacs23/+bug/543611))
+annoyed the shit out of me. When server-based X frames are killed instead of
+closed nicely, the whole Emacs process hangs. This happens when I shut down X
+while any X emacsclient frames are still open. The symptom is that the next time
+I try to open an X emacsclient frame, it just hangs. Grr.
 
     <!-- http://groups/emacs-users/browse_thread/thread/ebe5e2b927c824d3 -->
 
