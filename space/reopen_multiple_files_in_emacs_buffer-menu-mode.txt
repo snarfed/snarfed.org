@@ -11,7 +11,7 @@ After I've worked in one workspace for a while, I often want to switch to
 another workspace. Specifically, I want to close all of the files I have open
 in the old workspace, then open the corresponding files in the new workspace.
 
-For example, I might press `C-x b` to get a `*Buffer List*` and see that I have
+For example, I might press `C-x C-b` to get a `*Buffer List*` and see that I have
 these files open:
 
      MR Buffer            Size  Mode  File
@@ -22,9 +22,9 @@ these files open:
         *scratch*            0  Lisp  /tmp/*scratch*
      *  *Messages*         726  Fundamental  
 
-When I finish the change I'm working on in `~/src`, I might want to start a new
-change in `~/src2`. To do that, I'd have to close `foo.cc`, `foo.h`, and
-`foo_unittest.cc`, and reopen them in `~/src2/foo`.
+When I finish the change I'm working on in `~/src/`, I might want to start a new
+change in `~/src2/`. To do that, I'd have to close `foo.cc`, `foo.h`, and
+`foo_unittest.cc`, and reopen them in `src2`.
 
 This elisp adds a command to
 [`buffer-menu-mode`](http://www.gnu.org/software/emacs/manual/html_node/Several-Buffers.html#index-buffer_002dmenu-934),
