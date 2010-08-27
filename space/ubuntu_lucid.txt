@@ -24,7 +24,7 @@ console login prompt instead of an X splash screen, there's yet another
 new incantation. This time, the recommended practice is to muck with grub
 itself:
 
-        sudo sed -i -r 's/(GRUB_CMDLINE_LINUX_DEFAULT=)"quiet splash"/\1"test"/' \
+        sudo sed -i -r 's/(GRUB_CMDLINE_LINUX_DEFAULT=)"quiet splash"/\1"text"/' \
           /etc/default/grub
         sudo update-grub
 
