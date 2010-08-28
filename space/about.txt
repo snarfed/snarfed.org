@@ -3,9 +3,6 @@ about
 <a href="ryan.jpg" class="shutter">
   <img class="right shadow" src="ryan_small.jpg" /></a>
 
-<a href="ryan.jpg" class="shutter">ryan</a>
-
-
 I'm Ryan Barrett. I live,
 [work](resume.html), and
 [play](index)
