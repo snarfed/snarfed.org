@@ -1,6 +1,6 @@
 snarfed.org PyBlosxom flavour
 
-<a href="snarfed_flavour_screenshot.jpg">
+<a class="shutter" href="snarfed_flavour_screenshot.jpg">
   <img class="right shadow" src="snarfed_flavour_screenshot_thumb.jpg" /></a>
 
 [PyBlosxom](http://snipsnap.org/), the server that runs this site,

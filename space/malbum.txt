@@ -11,12 +11,10 @@ share these pictures. I wanted to streamline my workflow into a single
 application.
 
 So I present: **MAlbum: Maulik's Album application**
-:-P
 
-[![thumb_screenshot.jpg](http://maulik.freeshell.net/software/malbum-release/thumb_screenshot.jpg)](screenshot.jpg)
+<a class="shutter" href="malbum_screenshot.jpg">
+  <img src="malbum_screenshot_thumb.jpg"></a>
 
-[MAlbum
-Screenshot](http://maulik.freeshell.net/software/malbum-release/screenshot.jpg)
 
 ### Goals
 

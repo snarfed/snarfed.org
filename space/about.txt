@@ -1,6 +1,6 @@
 about
 
-<a href="ryan.jpg" class="shutter">
+<a class="shutter" href="ryan.jpg">
   <img class="right shadow" src="ryan_small.jpg" /></a>
 
 I'm Ryan Barrett. I live,

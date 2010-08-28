@@ -1,6 +1,6 @@
 snarfed.org SnipSnap theme
 
-<a href="snarfed_theme_screenshot.jpg">
+<a class="shutter" href="snarfed_theme_screenshot.jpg">
   <img class="right shadow" src="snarfed_theme_screenshot_thumb.jpg" /></a>
 
 [SnipSnap](http://snipsnap.org/), the server that used to run this site,

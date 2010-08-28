@@ -1,7 +1,7 @@
 bigbrother
 
-<a href="bigbrother_screenshot.jpg">
-  <img class="right shadow" src="thumbnail.jpg" /></a>
+<a class="shutter" href="bigbrother_screenshot.jpg">
+  <img class="right shadow" src="bigbrother_screenshot_thumb.jpg" /></a>
 
 For the impatient:  
 [Download bigbrother 0.5.1](bigbrother-0.5.1.tar.gz)  

@@ -1,6 +1,6 @@
 Vacation
 
-<a href="eden_canyon_house.jpg">
+<a class="shutter" href="eden_canyon_house.jpg">
   <img class="right shadow" src="house.jpg" alt="house" /></a>
 
 The last couple months have been eventful, to say the least, so I'm happy to say

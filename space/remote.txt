@@ -1,6 +1,6 @@
 remote
 
-<a href="remote.jpg">
+<a class="shutter" href="remote.jpg">
   <img class="right shadow" src="remote_thumb.jpg" /></a>
 
 For the impatient:  
