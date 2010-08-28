@@ -79,10 +79,10 @@ span.activity { font-weight: bold; }
 <!-- top section, name on the left, contact info on the right -->
 <table id="resumeheader"><tr>
 
-<td class="left" id="name"> RYAN BARRETT </td>
+<td class="left" id="name">RYAN BARRETT</td>
 
 <td class="right" id="contact">
-<a href="http://snarfed.org/"> http://snarfed.org/</a><br />
+<a href="http://snarfed.org/">http://snarfed.org/</a><br />
 <a href="mailto:resume at ryanb dot org">resume at ryanb dot org</a><br />
 </td>
 </tr></table>
@@ -90,13 +90,13 @@ span.activity { font-weight: bold; }
 
 <!-- skills section -->
 
-<p class="header"> SKILLS </p>
+<p class="header">SKILLS</p>
 
 <ul>
 
-<li> Distributed systems, structured storage, networking protocols, Linux,
-Python, Java, C++. </li>
-<li> Contributor to open source projects including
+<li>Distributed systems, structured storage, networking protocols, Linux,
+Python, Java, C++.</li>
+<li>Contributor to open source projects including
  <a href="http://openid.net/">OpenID</a>,
  <a href="http://gnu.org/software/emacs/">Emacs</a>,
  <a href="http://www.washington.edu/pine/">Pine</a>,
@@ -104,48 +104,54 @@ Python, Java, C++. </li>
  <a href="http://pidgin.im/">Pidgin</a>, and
  <a href="http://pyblosxom.sf.net/">PyBlosxom</a>. More at
  <a href="http://snarfed.org/space/software">
- snarfed.org/space/software</a>. </li>
+ snarfed.org/space/software</a>.</li>
 </ul>
 
 
 
 <!-- experience section -->
 
-<p class="header"> EXPERIENCE </p>
+<p class="header">EXPERIENCE</p>
 
 
 <!-- Google -->
 <table><tr>
 <td class="left">
 <span class="employer">
-<a href="http://www.google.com/"> Google Inc.</a></span>
-<span class="location"> Mountain View, CA </span>
+<a href="http://www.google.com/">Google Inc.</a></span>
+<span class="location">Mountain View, CA</span>
 </td>
-<td class="right"> June 2003 - present </td>
+<td class="right">June 2003 - present</td>
 </tr></table>
 
-<p class="title"> Software Engineer </p>
+<p class="title">Software Engineer</p>
 
 <ul>
-<li><i> March 2006 - present </i>
-<p>
-Co-founder of <a href="http://code.google.com/appengine/">Google App Engine</a> and 
-lead engineer on its
+<li><i>June 2010 - present</i>
+
+<p>Working with Google's network tools team on large scale automation,
+monitoring, and command and control for our production network.</p>
+</li>
+
+<li><i>March 2006 - April 2010</i>
+<p>Co-founder of
+<a href="http://code.google.com/appengine/">Google App Engine</a>
+and lead engineer on its
 <a href="http://code.google.com/appengine/docs/datastore/overview.html">datastore</a>
-team. The datastore is a large-scale,
+team.
+App Engine is a widely used
+<a href="http://en.wikipedia.org/wiki/PaaS#Platform">PaaS</a> style
+cloud computing platform. The datastore is a large scale,
 <a href="http://googleappengine.blogspot.com/2009/09/migration-to-better-datastore.html">
  replicated</a>,
 distributed structured storage system used by both App Engine
 and other Google products. Includes a dynamic query planner, full featured
 transaction engine, rich structured primary keys, real-time index management,
-and semantic typing. <!-- Scales to >100B rows, >1PB of data, and >50kqps. -->
-</p>
+and semantic typing. Scales to >100B rows, >1PB of data, and >50kqps.</p>
 </li>
 
-<li><i> April 2006 - Dec. 2006 </i>
-<p>
-
-Led Google's early adoption of <a href="http://openid.net/">OpenID</a>.
+<li><i>April 2006 - Dec. 2006</i>
+<p>Led Google's early adoption of <a href="http://openid.net/">OpenID</a>.
 Evangelized OpenID internally, built a number of prototypes, addressed
 security concerns, and got buy-in from execs. Implemented the first projects,
 <a href="http://snarfed.org/space/2007-12-02_openid_comments_in_blogger">
@@ -157,91 +163,85 @@ security concerns, and got buy-in from execs. Implemented the first projects,
 This led to widespread adoption, culminating in a full Google Accounts
 <a href="http://code.google.com/apis/accounts/docs/OpenID.html">provider</a> and
 <a href="http://code.google.com/apis/apps/sso/openid_reference_implementation.html">consumer</a>.</p>
-
 </li>
 
-<li><i> Sept. 2005 - March 2006 </i>
-<p> Led the migration to
-<a href="http://www.bfs-finance.com/"> BFS</a>,
-our third party billing partner. This went beyond the scope of the Fluffy
-migration (below); it included more advertisers and publishers, multiple
-corporate entities, and over ten different billing models and payment
-methods. We migrated all advertisers without downtime, and with a fallout
-rate of under .1% needing manual intervention. </p>
-
+<li><i>Sept. 2005 - March 2006</i>
+<p>Led the migration to <a href="http://www.bfs-finance.com/">BFS</a>, our
+third party billing partner. This went beyond the scope of the Fluffy migration
+(below); it included more advertisers and publishers, multiple corporate
+entities, and dozens of different billing models and payment methods. We
+migrated all advertisers online, ie without downtime, with a fallout
+rate of under .1% needing manual intervention.</p>
 </li>
 
-<li><i> Sept. 2004 - Sept. 2005 </i>
-<p> Led the migration from Fluffy, Google's old biller and OLTP system, to
-Moneta. We migrated millions of customers in-flight, without any downtime
-and ahead of schedule. We had a fallout rate of under .01% needing
-manual intervention. </p>
-
+<li><i>Sept. 2004 - Sept. 2005</i>
+<p>Led the migration from Google's old biller and OLTP system to Moneta. We
+migrated millions of customers online, ie without downtime. We finished
+ahead of schedule and with a fallout rate of under .01% needing manual
+intervention.</p>
 </li>
 
-<li><i> June 2003 - April 2005 </i>
+<li><i>June 2003 - April 2005</i>
+<p>Co-founder and a primary engineer on Moneta, Google's transaction processing
+platform. It handles OLTP, rating, billing, invoicing, payments, and revenue
+share for all of our advertisers, publishers, and other monetized products.
+Scales to dozens of billing models and payment methods, hundreds of countries
+and currencies, millions of customers, >1B transactions per day, >10kqps, and
+billions of dollars on roughly 30 minutes of downtime per quarter, ie 99.98%
+uptime.</p>
 
-<p> Tech lead and a primary developer on Moneta, Google's transaction
-processing platform. Moneta handles OLTP, rating, billing, invoicing,
-payments, and revenue share for all of our advertisers and publishers. </p>
+<!--
+<p>Moneta connects to multiple external payment processors, including
+<a href="http://cybersource.com/">CyberSource</a>,
+<a href="http://www.bibit.com/">Bibit</a>,
+<a href="http://www.opiglobal.com/">OPI</a>,
+<a href="http://globalcollect.com/">GlobalCollect</a>, and
+<a href="http://www.bfs-finance.com/">BFS</a>.
+Their APIs include HTTPS, XML-RPC, REST, proprietary, and batch flat file.</p>
 
-<p> Designed the Moneta data model and wrote the biller, along with another tech
-lead. It went live in early 2005. It currently handles over ten payment methods,
-hundreds of countries and currencies, millions of advertisers and publishers,
-millions of requests per day, hundreds of millions of transactions per day, and
-billions of dollars on roughly 30 minutes of downtime per quarter (99.98%
-uptime). </p>
-
-<p> Moneta connects to multiple external payment processors, including
-<a href="http://cybersource.com/"> CyberSource</a>,
-<a href="http://www.bibit.com/"> Bibit</a>,
-<a href="http://www.opiglobal.com/"> OPI</a>,
-<a href="http://globalcollect.com/"> GlobalCollect</a>, and
-<a href="http://www.bfs-finance.com/"> BFS</a>.
-Their APIs include HTTPS, XML-RPC, REST, proprietary, and batch flat file. </p>
-
-<p> Moneta is also Google's primary customer master data store, and provides
+<p>Moneta is also Google's primary customer master data store, and provides
 online and batch access to all static and transactional data. It handles
-financial reporting, data warehousing, and data mining. </p>
+financial reporting, data warehousing, and data mining.</p>
+-->
 </li></ul>
 
 <!-- IBM Almaden -->
 <table><tr>
 <td class="left">
 <span class="employer">
-<a href="http://almaden.ibm.com/"> IBM Almaden Research Center</a></span>
-<span class="location"> San Jose, CA </span>
+<a href="http://almaden.ibm.com/">IBM Almaden Research Center</a></span>
+<span class="location">San Jose, CA</span>
 </td>
-<td class="right"> Sept. 2002 - June 2003 </td>
+<td class="right">Sept. 2002 - June 2003</td>
 </tr></table>
 
-<p class="title"> Software Developer, Life Sciences </p>
+<p class="title">Software Developer, Life Sciences</p>
 
 <ul>
-<li> Designed and implemented a workflow framework, catalog, and description
- language used to run molecular analyses. </li>
+<li>Designed and implemented a workflow framework, catalog, and description
+ language used to run molecular analyses.</li>
 </ul>
 
 <!-- IBM Extreme Blue -->
 <table><tr>
 <td class="left">
 <span class="employer">
-<a href="http://www.ibm.com/extremeblue/"> IBM Extreme Blue</a></span>
-<span class="location"> San Jose, CA </span>
+<a href="http://www.ibm.com/extremeblue/">IBM Extreme Blue</a></span>
+<span class="location">San Jose, CA</span>
 </td>
-<td class="right"> June-Sept. 2002 </td>
+<td class="right">June-Sept. 2002</td>
 </tr></table>
 
-<p class="title"> Software Developer, Life Sciences </p>
+<p class="title">Software Developer, Life Sciences</p>
 
 <ul>
-<li> Worked on DALI, an Extreme Blue project that enables scientists to share
+<li>Worked on DALI, an Extreme Blue project that enables scientists to share
  molecule data and analysis code over the Internet. Used SOAP, OGSA, UDDI, DB2,
- and Java. </li>
-<li> Developed a dynamic parallelizing algorithm for running large networked
- analyses. </li>
-<li> Implemented intelligent caching and routing mechanisms for data and
- analyses. </li>
+ and Java.</li>
+<li>Developed a dynamic parallelizing algorithm for running large networked
+ analyses.</li>
+<li>Implemented intelligent caching and routing mechanisms for data and
+ analyses.</li>
 </ul>
 
 
@@ -249,22 +249,22 @@ financial reporting, data warehousing, and data mining. </p>
 <table><tr>
 <td class="left">
 <span class="employer">
-<a href="http://www.lucasarts.com/"> LucasArts Entertainment Co.</a></span>
-<span class="location"> San Rafael, CA </span>
+<a href="http://www.lucasarts.com/">LucasArts Entertainment Co.</a></span>
+<span class="location">San Rafael, CA</span>
 </td>
-<td class="right"> June-Sept. 2001 </td>
+<td class="right">June-Sept. 2001</td>
 </tr></table>
 
-<p class="title"> Software Developer,
-  <span style="text-decoration: italic;"> Bounty Hunter </span> PS2
+<p class="title">Software Developer,
+  <span style="text-decoration: italic;">Bounty Hunter</span>PS2
 </p>
 
 <ul>
-<li> Wrote a triangle re-optimizer and other tools for the graphics engine.
+<li>Wrote a triangle re-optimizer and other tools for the graphics engine.
 </li>
-<li> Developed a full-featured windowing system in OpenGL for the game's GUI.
+<li>Developed a full-featured windowing system in OpenGL for the game's GUI.
 </li>
-<li> Developed a multi-channel streaming audio library for Playstation 2. </li>
+<li>Developed a multi-channel streaming audio library for Playstation 2.</li>
 </ul>
 
 
@@ -275,20 +275,20 @@ financial reporting, data warehousing, and data mining. </p>
 <span class="employer">
 <a href="http://www.disobey.com/ghostsites/show_exhibit.shtml/webvan">
 Webvan Group</a></span>
-<span class="location"> Foster City, CA </span>
+<span class="location">Foster City, CA</span>
 </td>
-<td class="right"> June-Sept. 2000 </td>
+<td class="right">June-Sept. 2000</td>
 </tr></table>
 
-<p class="title"> Software Developer, OFS </p>
+<p class="title">Software Developer, OFS</p>
 
 <ul>
-<li> Designed and implemented a networked warehouse management system using
+<li>Designed and implemented a networked warehouse management system using
  sensors, conveyor belts, bar code readers with custom TCP/IP stacks, and an
  Oracle server. Also wrote an automatically regressed emulator for the system.
 </li>
-<li> Wrote web-based PL/SQL utilities for modifying in-process orders on the
-fly. </li>
+<li>Wrote web-based PL/SQL utilities for modifying in-process orders on the
+fly.</li>
 </ul>
 
 
@@ -296,45 +296,45 @@ fly. </li>
 <!-- Electronic Arts -->
 <table><tr>
 <td class="left">
-<span class="employer"> <a href="http://www.ea.com/">Electronic Arts</a></span>
-<span class="location"> Redwood Shores, CA </span>
+<span class="employer"><a href="http://www.ea.com/">Electronic Arts</a></span>
+<span class="location">Redwood Shores, CA</span>
 </td>
-<td class="right"> June-Sept. 1999 </td>
+<td class="right">June-Sept. 1999</td>
 </tr></table>
 
-<p class="title"> Quality Assurance Tester </p>
+<p class="title">Quality Assurance Tester</p>
 
 
 
 <!-- MobileForce -->
 <table><tr>
 <td class="left">
-<span class="employer"> MobileForce Technologies </span>
-<span class="location"> San Ramon, CA </span>
+<span class="employer">MobileForce Technologies</span>
+<span class="location">San Ramon, CA</span>
 </td>
-<td class="right"> April-Sept. 1998 </td>
+<td class="right">April-Sept. 1998</td>
 </tr></table>
 
-<p class="title"> Software Developer </p>
+<p class="title">Software Developer</p>
 
 
 <!-- education section -->
-<p class="header"> EDUCATION </p>
+<p class="header">EDUCATION</p>
 
 <p class="content">
 <span class="employer">
- <a href="http://www.stanford.edu/"> Stanford University</a></span>
-<span class="location"> Stanford, CA </span>
+ <a href="http://www.stanford.edu/">Stanford University</a></span>
+<span class="location">Stanford, CA</span>
 <br /></p>
 
 <ul>
-<li> BS in Computer Science, with a minor in Mathematics, 6/2002, GPA 3.5 </li>
-<li> MS in Computer Science, 6/2003, GPA 3.6 </li>
-<li> Coursework: networking, distributed systems, security, streaming
+<li>BS in Computer Science, with a minor in Mathematics, 6/2002, GPA 3.5</li>
+<li>MS in Computer Science, 6/2003, GPA 3.6</li>
+<li>Coursework: networking, distributed systems, security, streaming
 algorithms, advanced databases, operating systems, C/C++, Java, graphics,
-discrete math, abstract algebra </li>
-<li> Senior project: designed and implemented
-<a href="http://snarfed.org/space/p4"> P4</a>,
+discrete math, abstract algebra</li>
+<li>Senior project: designed and implemented
+<a href="http://snarfed.org/space/p4">P4</a>,
 a self-organizing peer-to-peer network with a generic, extensible platform
 for developing plugins. The project won top prizes from the IBM, Cisco, and
 Electronic Arts corporate sponsors.
@@ -345,7 +345,7 @@ Electronic Arts corporate sponsors.
 
 <!-- patents section -->
 <!--
-<p class="header"> PATENTS </p>
+<p class="header">PATENTS</p>
 
 <p class="content">
 
@@ -360,13 +360,13 @@ Morgan, Lewis & Bockius LLP docket number 60963-5338-US
 
 
 <!-- activities section -->
-<p class="header"> OTHER </p>
+<p class="header">OTHER</p>
 <ul>
-<li><span class="activity"> Eagle Scout, </span> Boy Scout Troop 120 </li>
-<li><span class="activity"> Classical Piano </span> under Geraldine Keeling,
-multiple competitions and concerts </li>
-<li><span class="activity"> Black Belt, </span> Hapkido Karate, Jang Moo </li>
-<li><span class="activity"> Fluent in Spanish</span></li>
+<li><span class="activity">Eagle Scout,</span> Boy Scout Troop 120</li>
+<li><span class="activity">Classical Piano</span> under Geraldine Keeling,
+multiple competitions and concerts</li>
+<li><span class="activity">Black Belt,</span> Hapkido Karate, Jang Moo</li>
+<li><span class="activity">Fluent in Spanish</span></li>
 </ul>
 
 </body>
