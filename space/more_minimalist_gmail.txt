@@ -1,6 +1,6 @@
 More Minimalist Gmail
 
-<a href="more_minimalist_gmail.png">
+<a href="more_minimalist_gmail.png" class="shutter">
   <img class="right shadow" src="more_minimalist_gmail_thumb.png" /></a>
 
 [more_minimalist_gmail.css](more_minimalist_gmail.css) is a
@@ -18,3 +18,9 @@ More Minimalist Gmail also has
 [its own page](http://userstyles.org/styles/35678) on
 [userstyles.org](http://userstyles.org/).
 
+
+See also:
+  * [Dark Google Calendar userstyle](dark_google_calendar_userstyle)
+  * [Dark Google Tasks userstyle](dark_google_tasks_userstyle)
+  * [Ryan's dark userstyle](ryans_dark_userstyle)
+  * [userstyles.org](http://userstyles.org/)

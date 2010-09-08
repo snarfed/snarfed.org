@@ -1,0 +1,15 @@
+Dark Google Tasks userstyle
+
+<a href="dark_google_tasks.png" class="shutter">
+  <img class="right shadow" src="dark_google_tasks_thumb.png" /></a>
+
+[dark_google_tasks.css](dark_google_tasks.css) is a
+[userstyle](http://userstyles.org/help/userstyles) that switches
+[Google Tasks](https://mail.google.com/tasks/desktop) to light text on a dark
+background, which is easier on the eyes.
+
+See also:
+  * [More Minimalist Gmail](more_minimalist_gmail)
+  * [Dark Google Calendar userstyle](dark_google_calendar_userstyle)
+  * [Ryan's dark userstyle](ryans_dark_userstyle)
+  * [userstyles.org](http://userstyles.org/)
