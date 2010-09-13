@@ -1,0 +1,161 @@
+/**
+ * Ryan's Dark userstyle
+ * http://snarfed.org/ryans_dark_userstyle
+ * Ryan Barrett <userstyles@ryanb.org>
+ *
+ * Yet another dark userstyle.
+ *
+ * Changelog:
+ * 0.3, 2010/9/13:
+ * - dedicated support for google calendar and tasks
+ * - form input, button, select, and textarea bug fixes and tweaks
+ *   (no more transparent divs!)
+ * - support for google calendar and google tasks
+ * - make focused element's highlight (-moz-focus-inner) white
+ * - new sites: youtube, mozilla, userstyles.org, blogger, wordpress.com
+ * 0.1:
+ * - initial release
+ */
+
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document
+  domain(b),
+  domain(blogspot.com),
+  domain(facebook.com),
+  url-prefix(file:///),
+  domain(gamasutra.com),
+  url-prefix(javascript:parent.gtasks.embed.createHtmlForTasksFrame),
+  domain(localhost),
+  url-prefix(https://mail.google.com/tasks/),
+  domain(mozilla.org),
+  domain(paulgraham.com),
+  domain(search.corp.google.com),
+  domain(snarfed.org),
+  domain(tools.cisco.com),
+  domain(userstyles.org),
+  domain(w3schools.com),
+  domain(wiki.corp.google.com),
+  domain(wordpress.com),
+  domain(www.corp.google.com),
+  url-prefix(https://www.google.com/calendar/),
+  domain(youtube.com)
+{
+
+/* div, ol, h1, h2, h3, h4, h5, h6, a, span, li, code, strong, blockquote, table */
+* {
+  background-color: #000 !important;
+  color: #ccc !important;
+}
+
+html, body, background, center, form select, table, tbody, thead, tfoot, a {
+  background-image: none !important;
+}
+
+h1, h2, h3, h4, h5, h6, li, code {
+  color: #ddd !important;
+}
+
+a {
+  color: #39e !important;
+  text-decoration: underline !important;
+}
+
+a:visited, a:active {
+  color: #06b !important;
+}
+
+a:hover {
+  color: #4af !important;
+}
+
+pre, textarea, button, input, select {
+  /* explanation: http://forum.userstyles.org/comments.php?DiscussionID=976 */
+  -moz-appearance: none !important;
+  color: #ccc !important;
+  background-color: #000 !important;
+  border: solid 1px #ccc !important;
+}
+
+button, input[type="button"], input[type="submit"], input[type="reset"] {
+  background-color: #333 !important;
+}
+
+/* make focus more obvious */
+button:focus::-moz-focus-inner,
+input:focus::-moz-focus-inner
+ {
+  border: 1px dashed #99f !important;
+}
+
+/* hrm, this doesn't seem to work :/ */
+/*:focus img {
+  border: 3px solid #99f !important;
+}*/
+
+}
+
+
+/*
+ * Google Calendar
+ */
+@-moz-document url-prefix(https://www.google.com/calendar/) {
+
+#tgTable tbody tr td,
+#tgTable tbody tr td * {
+  border-color: #222 !important;
+}
+
+.mainGrid, #scrolltimedeventswk, .goog-imageless-button-top-shadow,
+.wk-allday {
+  border: none !important;
+}
+
+#fastui-topnav-container, #funbox {
+  display: none !important;
+}
+
+}
+
+
+/*
+ * Google Tasks
+ */
+@-moz-document
+  url-prefix(https://mail.google.com/tasks/),
+  url-prefix(javascript:parent.gtasks.embed.createHtmlForTasksFrame) {
+
+/* task check boxes */
+div.a.H.b {
+  background-image: none !important;
+  border: 1px dotted #aaa;
+  margin-right: 4px;
+}
+
+/* top-level frames: left side task lists, top toolbar,
+   main tasks display. (also New List button.) */
+td.uc, td.hc, tr.g td, .goog-toolbar, .goog-custom-button,
+.goog-custom-button-inner-box, .goog-custom-button-outer-box {
+  border: none !important;
+  background-image: none !important;
+}
+
+/* ???
+div.goog-inline-block.goog-menu-button {
+  display: none !important;
+}
+
+div .goog-inline-block.goog-menu-button {
+  display: inline-block !important;
+}
+*/
+
+}
+
+
+/* hide snarfed's header image */
+@-moz-document domain(localhost), domain(snarfed.org) {
+div#header {
+  background: none !important;
+}
+}
