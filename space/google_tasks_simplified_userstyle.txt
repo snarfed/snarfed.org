@@ -1,0 +1,22 @@
+Google Tasks Simplified userstyle
+
+<a href="google_tasks_simplified.png" class="shutter">
+  <img class="right shadow" src="google_tasks_simplified_thumb.png" /></a>
+
+[google_tasks_simplified.css](google_tasks_simplified.css) is a
+[userstyle](http://userstyles.org/help/userstyles) that simplifies
+[Google Tasks](https://mail.google.com/tasks/desktop) by hiding a few things,
+e.g. the left side panel with the task lists, until you hover over them. It also
+removes some toolbar buttons and enlarges the notes textarea in the task detail
+page.
+
+Google Tasks Simplified also has
+[its own page](http://userstyles.org/styles/36659) on
+[userstyles.org](http://userstyles.org/).
+
+
+See also:
+  * [More Minimalist Gmail userstyle](more_minimalist_gmail)
+  * [Google Calendar Simplified userstyle](google_calendar_simplified_userstyle)
+  * [Ryan's dark userstyle](ryans_dark_userstyle)
+  * [userstyles.org](http://userstyles.org/)

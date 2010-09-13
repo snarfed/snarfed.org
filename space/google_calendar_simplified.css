@@ -1,0 +1,44 @@
+/**
+ * Google Calendar Simplified userstyle
+ * http://snarfed.org/google_calendar_simplified_userstyle
+ * Ryan Barrett <userstyles@ryanb.org>
+ *
+ * Simplifies Google Calendar by removing the calendar header and footer and
+ * hiding the search bar, header, and left pane until you mouse over them.
+ * Inspired by Aziz's original (deprecated) Google Calendar Simplified
+ * userstyle, http://userstyles.org/styles/20945 .
+ *
+ * Changelog:
+ * 0.1, 2010/9/12:
+ * - initial release
+ */
+
+@namespace url(http://www.w3.org/1999/xhtml);
+
+@-moz-document url-prefix(https://www.google.com/calendar/) {
+
+/* hide top header, logo, control panel, funbox */
+#mainlogo, #gbar, .gbh, #fastui-topnav-container, #funbox {
+  display: none !important;
+}
+
+/* shrink left sidebar until mouseover */
+#nav {
+  width: 5px !important;
+  opacity: 0 !important;
+}
+#nav:hover {
+  width: 169px !important;
+  opacity: 1 !important;
+}
+
+/* hide account and search headers until mouseover */
+#guser, #srreg {
+  opacity: 0 !important;
+  width: 100%;
+}
+#guser:hover, #srreg:hover {
+  opacity:1 !important;
+}
+
+}
