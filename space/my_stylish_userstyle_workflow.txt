@@ -1,0 +1,65 @@
+my Stylish userstyle workflow
+
+<a href="https://addons.mozilla.org/en-US/firefox/addon/2108/">
+  <img class="right" src="stylish_icon.png" /></a>
+
+I like [userstyles](http://userstyles.org/help/userstyles), and I use
+[Stylish](https://addons.mozilla.org/en-US/firefox/addon/2108/) to manage mine.
+I've also [written](more_minimalist_gmail)
+[a number](dark_google_calendar_userstyle) [of](dark_google_tasks_userstyle)
+[userstyles](ryans_dark_userstyle), which I have to tweak and fix on a regular
+basis.
+
+Unfortunately, Stylish's development workflow doesn't work well for me. I edit
+everything with [Emacs](/emacs), store everything in
+[Subversion](http://subversion.tigris.org/), and avoid the mouse at all costs.
+I go to great lengths to make my
+[edit-compile-test loop](http://www.joelonsoftware.com/articles/fog0000000023.html)
+as quick and painless as possible.
+
+Stylish, on the other hand, doesn't natively support external editors. Its GUI
+requires lots of mouse clicks. It stores userstyles in a
+[SQLite](http://www.sqlite.org/) database, so I can't edit or symlink userstyle
+files on disk, which means I'm constantly copying their contents back and forth
+to version control. All of that makes my edit-compile-test loop slow,
+cumbersome, and error prone.
+
+<a href="http://getfirefox.com/">
+  <img class="left" src="firefox.png" /></a>
+
+[I asked on userstyles.org](http://forum.userstyles.org/comments.php?DiscussionID=15890),
+and the responses pointed to
+[It's All Text](https://addons.mozilla.org/en-US/firefox/addon/4125) and
+[Stylish-Custom](https://addons.mozilla.org/firefox/addon/12105/), which add
+support for external editors and import and export. That lets me use Emacs, but
+doesn't avoid the GUI or mouse or help me keep my userstyles in files under
+version control.
+
+I searched for other workarounds, found more that didn't work, and almost gave
+up hope when I chanced upon a couple solutions. First, the
+[CSS `@import` directive](http://www.w3.org/TR/css3-cascade/#import). It lets me
+put a single `@import` in the Stylish userstyle that points to a file in my
+local version control workspace, e.g.:
+
+    @import "file:///home/ryanb/src/userscripts/more_minimalist_gmail.css";
+    @-moz-document url-prefix(http), url-prefix(file) {}
+
+<a href="http://gnu.org/software/emacs">
+  <img class="right" src="gnu.jpg" /></a>
+
+(The `@-moz-document` rule is odd, but necessary. Stylish uses `@-moz-document`
+rules to determine whether it should include a userstyle in the context menus
+for a given page. This catch-all explicitly tells Stylish to include the
+userstyle in every page.)
+
+The next step was to make Stylish reload the imported CSS files when they
+changed. I could use the GUI to force a reload by going to "Manage user
+styles...", opening the userstyle, and clicking Preview or Save, but that was
+too painful and mouse-heavy.
+
+Eventually, I noticed that Stylish extends the View => Page Style menu with
+items for each active userstyle, which I could use to turn them on and off and
+force a reload. I could now do it entirely with the keyboard: `Alt-V Y 1, Alt-V
+Y 1`. Woohoo!
+
+Granted, this is all still very hacky, but it works for me.
