@@ -1,0 +1,41 @@
+GreaseMonkey script for Gmail: remove trailing quotes
+
+<a href="http://greasespot.net/"><img class="right" src="greasemonkey.png" /></a>
+
+[gmail_remove_trailing_quote.user.js](gmail_remove_trailing_quote.user.js) is a
+[GreaseMonkey](http://greasespot.net/)
+[userscript](http://userscripts.org/scripts/show/86600) that removes "trailing
+quotes" from messages you compose in Gmail. It modifies your in-progress email
+when you move the focus away from the composition text box. If you go back to
+the text box, it reverts the changes it made so you can revise if necessary.
+
+What's a trailing quote, you ask? It's best described by example. The last three
+lines in this email are a trailing quote:
+
+    On Fri, 4 Jun 2004, Jane Doe wrote:
+
+    > Thanks for the invite! Should I bring anything?
+
+    No, I have everything I need. Thanks though!
+
+    > I'll see you soon...
+    >
+    > -Jane
+
+<a href="http://mail.google.com/"><img class="left" src="gmail.png" /></a>
+
+This script makes it easier to observe proper netiquette when quoting. If you
+want to quote the smallest relevant piece of an email, you often need to delete
+a significant amount of quoted text. This automates the drudgery of trimming
+that excess quoted text. (See
+[these](http://catb.org/~esr/jargon/html/T/top-post.html)
+[articles](http://www.cs.tut.fi/~jkorpela/usenet/brox.html) for more on trimming
+quotes and the top- vs. bottom-post debate.)
+
+See also:
+
+  * [Gmail Remove Trailing Quotes userscripts.org page](http://userscripts.org/scripts/show/86600)
+  * [pine reply-all patch](pine_reply-all_patch)
+  * [gmail vs pine](gmail_vs_pine)
+  * [Palo Alto library amazon greasemonkey](palo_alto_library_amazon_greasemonkey)
+  * [my Stylish userstyle workflow](my_stylish_userstyle_workflow)

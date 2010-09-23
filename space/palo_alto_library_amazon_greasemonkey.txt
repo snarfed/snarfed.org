@@ -9,9 +9,8 @@ For the impatient:
 (Right-click and select _Install User Script_)  
 [Scripts for other
 libraries](#others)  
-[Get Firefox](http://getfirefox.com/)  in
-[Get
-Greasemonkey](http://downloads.mozdev.org/greasemonkey/greasemonkey_0.3.3.xpi)
+[Get Firefox](http://getfirefox.com/)  
+[Get Greasemonkey](http://downloads.mozdev.org/greasemonkey/greasemonkey_0.3.3.xpi)
 
 The [Palo Alto Library Greasemonkey
 script](paloaltolibrary.user.js) adds a link to Amazon
