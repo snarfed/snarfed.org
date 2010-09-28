@@ -142,6 +142,7 @@ upstream 2.6.31.14 aka Ubuntu 2.6.32-23-generic. You can get it with
 `sudo apt-get update` followed by either `sudo apt-get install linux-image`
 or just `sudo apt-get upgrade`.
 
+<a name="xmodmap"></a>
   * Speaking of USB, when I plug in my USB keyboard, my `xmodmap` settings
   aren't re-applied. See the
 [launchpad bug](https://bugs.launchpad.net/ubuntu/+source/xorg-server/+bug/287215).
