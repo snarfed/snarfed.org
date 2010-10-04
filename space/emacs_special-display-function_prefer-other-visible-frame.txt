@@ -9,7 +9,7 @@ specifically the `special-display-function` variable and friends, let you
 customize the way Emacs chooses a window and buffer for new frames that are
 displayed via `display-buffer`.
 
-Here's a function you can use as `special-display-function` that prefers
+Here's Elisp code you can use as `special-display-function` that prefers
 existing windows and frames, as opposed to splitting the current window and
 frame, but does *not* select (ie switch to) the window where the new buffer is
 displayed.
