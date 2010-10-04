@@ -33,9 +33,9 @@ see the content of a comment when they look at its original subject, and even
 then, the comment is understated, secondary to the subject itself.
 
 Twitter, on the other hand, broadcasts replies the same way it broadcasts normal
-tweets. [New Twitter](http://twitter.com/newtwitter) has improved context and
-threading dramatically, but that's not the same thing. The extra information is
-a kind of positive context, but what I want is _negative_ context. I don't want
+tweets. [New Twitter](http://twitter.com/newtwitter) dramatically improved
+context and threading, but that's not the same thing. The extra information is a
+kind of positive context, but what I want is _negative_ context. I don't want
 people to see my replies, or even know I replied at all, unless they explicitly
 choose to read the original tweet that I replied to.
 
@@ -47,17 +47,17 @@ Facebook status updates and comments are inherently different things, but
 originally weren't a feature at all, but
 [Twitter continued broadcasting them](http://blog.twitter.com/2008/05/how-replies-work-on-twitter-and-how.html)
 like normal tweets even after building in explicit support. They're toned down a
-bit, notably in that they're
+bit, in that they're
 [hidden if you don't follow the original author](http://blog.twitter.com/2008/05/how-replies-work-on-twitter-and-how.html),
 but that's little help with the common case of one of your friends replying to
 another.
 
 I understand the draws of simplicity, inclusivity, and emergent structure. As a
-product developer, I probably like Twitter's direction more than Facebook's. As
-a user, though, it just doesn't work for me. My standard for broadcasting is
-much higher than for replying. That's probably why I comment on Facebook, but I
-only post here, where I have enough space to form ideas, craft prose, and tweak
-layout.
+product developer, I might like Twitter's direction more than Facebook's. As a
+user, though, it just doesn't work for me. My standard for broadcasting is much
+higher than for replying. That's probably why I comment on Facebook, but I'll
+only _post_ here, where I have enough space to form ideas, craft prose, and
+tweak layout.
 
 Still, it makes me sad. I read as many updates from friends on Twitter now as on
 Facebook, if not more, and I'd love to reply to them. Twitter just doesn't let
