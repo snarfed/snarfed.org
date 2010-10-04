@@ -1,86 +1,64 @@
 Facebook comments vs. Twitter replies
 
 [A](http://cl8on.blog.com/) [few](http://originalcynk.com/)
-[friends](http://www.thefacebookera.com/) and I have an ongoing discussion about
-the cultural differences between [Facebook](http://www.facebook.com/) and
-[Twitter](http://twitter.com/). We recently focused on one key difference:
-replying to posts. Specifically, Facebook
-[comments](http://www.facebook.com/help/?faq=12428) are fundamentally different
-from [status updates](http://www.facebook.com/help/?faq=12872), but Twitter
-[@ replies](http://support.twitter.com/articles/221188) are still
+[friends](http://www.thefacebookera.com/media.php) and I have an ongoing
+discussion about differences between [Facebook](http://www.facebook.com/) and
+[Twitter](http://twitter.com/). We recently focused on one in particular:
+replying. Facebook [comments](http://www.facebook.com/help/?faq=12428) are
+fundamentally different from
+[status updates](http://www.facebook.com/help/?faq=12872), but Twitter
+<nobr>[@ replies](http://support.twitter.com/articles/221188)</nobr> are still
 normal [tweets](http://support.twitter.com/articles/219954). That makes me sad.
 
-I don't use Facebook much, or Twitter at all, apart from
-[syndicating this blog](http://twitter.com/snarfed_org), but I do read many
+<a href="http://twitter.com/notch">
+  <img class="right" src="notch_twitter_at_replies.png" /></a>
+
+I don't post to Facebook much, or Twitter at all, apart from
+[syndicating this blog](http://twitter.com/snarfed_org), but I do read
 [friends' tweets](https://twitter.com/#!/snarfed_org/following) and
 [Facebook posts](2009-03-05_facebook_friend_lists) via
 [RSS](http://support.twitter.com/articles/15361-how-to-find-your-rss-feed), and
-I occasionally want to reply to something. On Facebook, I do that by commenting,
-like I would on a blog, but I never reply on Twitter.
+I occasionally want to reply. On Facebook I comment, like I would on a blog, but
+I never reply on Twitter.
 
-I saw a friend's tweet the other day and wanted to respond, and I actually
-entertained the idea of signing up and replying for real. My immediate "hell no"
-reaction was so visceral and strong that it surprised me, so I took a minute to
-figure out why i felt so strongly.
+However, I read a friend's tweet the other day and wanted to respond strongly
+enough that I almost did. My immediate "hell no" reaction was so strong, so
+visceral that it surprised me. I stopped what I was doing for a moment, took a
+step back, and tried to figure out why.
 
-As I mentioned, Facebook distinguishes between status updates and comments
-strongly and explicitly. Twitter, on the other hand, treats doesn't. they're all posts. you can kind of mark a
-post as a comment with @, but it's still a first-class post that shows up in
-your own tweet stream and gets published to your followers.
+I eventually realized that I wanted more control over how and when people see my
+replies. Facebook and Twitter both broadcast, ie push, status updates and
+tweets. However, Facebook doesn't broadcast comments the same way. People only
+see the content of a comment when they look at its original subject, and even
+then, the comment is understated, secondary to the subject itself.
 
-i know that was a conscious, intentional decision on twitter's part,
-and it may have been the right one overall, but it doesn't work for
-me. i guess i have a much higher bar for things i want to post myself,
-ie publish as a first-class post coming from me, vs replies to
-friends' posts. that's probably why i never post fb status updates and
-pretty much only do blog posts, since i can be anal and perfectionist
-about the long form prose, pictures, links, etc.
+Twitter, on the other hand, broadcasts replies the same way it broadcasts normal
+tweets. [New Twitter](http://twitter.com/newtwitter) has improved context and
+threading dramatically, but that's not the same thing. The extra information is
+a kind of positive context, but what I want is _negative_ context. I don't want
+people to see my replies, or even know I replied at all, unless they explicitly
+choose to read the original tweet that I replied to.
 
-it makes me sad. at this point i probably read just as many updates
-from friends on twitter as on fb, if not more, and i'd love to reply
-to some of them but twitter's product decision doesn't work with my
-own personality and style. meh.
+<img class="right" src="facebook_comment.png" /></a>
 
+This unified broadcast was a conscious design decision on Twitter's part.
+Facebook status updates and comments are inherently different things, but
+<nobr>@ replies</nobr> are still tweets. That's understandable, since they
+originally weren't a feature at all, but
+[Twitter continued broadcasting them](http://blog.twitter.com/2008/05/how-replies-work-on-twitter-and-how.html)
+like normal tweets even after building in explicit support. They're toned down a
+bit, notably in that they're
+[hidden if you don't follow the original author](http://blog.twitter.com/2008/05/how-replies-work-on-twitter-and-how.html),
+but that's little help with the common case of one of your friends replying to
+another.
 
+I understand the draws of simplicity, inclusivity, and emergent structure. As a
+product developer, I probably like Twitter's direction more than Facebook's. As
+a user, though, it just doesn't work for me. My standard for broadcasting is
+much higher than for replying. That's probably why I comment on Facebook, but I
+only post here, where I have enough space to form ideas, craft prose, and tweak
+layout.
 
-Two things:
-1. @'s in your stream only show in other's cumulative stream view if
-they follow the same person. so in my signed in twitter view, when
-everyone's updates are musher together like a chronological news feed,
-I'd only see @heaven replies by my friends, not random ones from
-people I don't follow. so there is more thread context, and they are
-2nd class updates. if I wanted everyone to see it like a regular
-update, I'd put a "." at the beginning, or put the name deeper into
-the update.
-
-2. the new twitter shows recent @'s around a tweet so you can follow
-the thread within the same pane.
-
-in other words, I do think @'s are treated with as much context around
-the instigant as on facebook (for a logged in user's view on www or a
-client), even with timeline reigning supreme.
-
-
-
-ooh, interesting! thanks. most of that is obviously news to me, since
-i don't follow twitter developments, and very welcome.
-
-i should have been clearer about one thing: what i really want here
-isn't "positive" context, ie seeing additional information like the
-original tweet that's being replied to, the full thread/timeline.
-instead, i want "negative" context. i don't want my replies or
-comments appearing to my followers, or even random people looking at
-my tweet stream, at all. i really want them to be *only* comments, ie
-they'd show up under the original person's tweet, or thread, but *not*
-as first-class posts/tweets from me.
-
-your #1 definitely helps with that, but for me at least, it's not
-quite enough. it sounds like people will still see my @ replies if
-they look at my tweet stream directly, or if they see tweets via other
-means like rss, etc.
-
-out of curiosity, do you agree with the fundamental product difference
-that in twitter, everything really is a first class post at heart,
-while in fb, etc., there's a fundamental difference between posts and
-comments/replies? it definitely feels that way to me as a very naive
-user, but maybe i'm just not clueful enough.
+Still, it makes me sad. I read as many updates from friends on Twitter now as on
+Facebook, if not more, and I'd love to reply to them. Twitter just doesn't let
+me do that the way I want to. Sigh.
