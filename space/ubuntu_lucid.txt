@@ -271,8 +271,35 @@ hibernate, since they try to suspend anacron first.
         sudo mkfifo /var/spool/postfix/public/pickup
         sudo service postfix restart
 
-Enjoy Ubuntu Lucid!
+  * Every now and then, I lose all networking after a resume or restart. I've
+    noticed this most often when I `pm-suspend-hybrid`, and the system
+    eventually runs out of power and hibernates or dies, so that I later have to
+    thaw it or reboot entirely instead of just resuming.
+    
+    When this happens, `ifconfig` only shows the loopback device, not `eth0` or
+    `wlan0`, and `ifup` doesn't bring either of them back. `lshw -c` shows them,
+    but says they're both disabled. Restarting the networking service doesn't
+    help, nor does restarting NetworkManager, which is still running happily.
+    
+    I finally found a solution in
+    [this ubuntuforums thread](http://ubuntuforums.org/showthread.php?t=1416172).
+    Run `lshw -C network`, find the `configuration: ... driver=XXX` section,
+    then add this to `/etc/pm/config.d/config`:
 
+        SUSPEND_MODULES="XXX"
+
+    where XXX is the driver name. (Mine is `ifwlagn`.) Then, suspend and
+    resume; if that doesn't work, reboot.
+    
+    Colleagues suggested this might be related to
+    [Launchpad](https://launchpad.net/ubuntu) bugs
+    [524454](https://bugs.launchpad.net/ubuntu/+bug/524454) and
+    [555571](https://bugs.launchpad.net/ubuntu/+bug/555571). I'm not convinced,
+    since they're both about NetworkManager, which is higher level than the
+    symptoms here, but who knows.
+
+
+Enjoy Ubuntu Lucid!
 
 See also:
 
