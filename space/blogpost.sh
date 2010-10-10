@@ -83,6 +83,8 @@ for FILE in `ls -1 -t ${WORKSPACE}/*.txt`; do
       echo "Existing page with id ${ID} has same name ${NAME}"
       exit
     fi
+    # TODO: check to see if the title is actually different and needs updating.
+    # If it is, put something into $OUT so that we don't stop on this one.
     mysql $@ -e "UPDATE wp_posts SET post_name='${NAME}', post_title='${TITLE}' WHERE ID=${ID};"
   
     BLOGPOST_TITLE_LINE=`grep -A2 "^sS'title'" ${BPFILE} | tail -n 1`
