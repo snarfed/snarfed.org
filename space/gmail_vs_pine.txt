@@ -3,9 +3,11 @@ gmail vs pine
 [![/space/pine.png](pine.png)](http://washington.edu/pine/)![/space/gloves.jpg](/space/gloves.jpg)
 [![/space/gmail.png](gmail.png)](http://gmail.com/)
 
-I've
-used [Pine](http://washington.edu/pine/) as my email client for, well, pretty
-much forever. I use it because it's fast, powerful, stable, and very
+_Note: this article was written in February 2005. The ideas still apply, but
+many of the technical details about Gmail and Pine have changed. Caveat reader!
+
+I've used [Pine](http://washington.edu/pine/) as my email client for, well,
+pretty much forever. I use it because it's fast, powerful, stable, and very
 keyboardable. (I _hate_ the mouse.)
 
 However, since I work at [Google](http://google.com/), I'm constantly bombarded
