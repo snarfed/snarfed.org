@@ -37,7 +37,8 @@ which provides for OpenID authentication outside of a browser, and
   * wash, the Web (Again) Shell: a command line for the web. Example use cases
 include checking your bank account balance, adding a movie to your
 [Netflix](http://netflix.com/) queue, and listening to your
-[Vonage](http://vonage.com/) voicemail, all from the command line.
+[Vonage](http://vonage.com/) voicemail, all from the command line. (From
+[TV Raman](http://en.wikipedia.org/wiki/T._V._Raman).)
 
   * Write a [Steam](http://steampowered.com/) IM protocol plugin for
 [Pidgin](http://pidgin.im/). I
