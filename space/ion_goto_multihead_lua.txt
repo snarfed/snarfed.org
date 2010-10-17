@@ -1,0 +1,64 @@
+Ion: my goto frame multihead Lua code
+
+I use the
+[orphaned](http://en.wikipedia.org/wiki/Ion_%28window_manager%29#Controversy)
+[Ion](http://en.wikipedia.org/wiki/Ion_%28window_manager%29) as my window
+manager, and I love it. Here's a [Lua](http://lua.org/) function I wrote for Ion
+that handles directional movement across frames with multiple screens (ie
+multihead) the way I want.
+
+First, if I'm on a frame at the edge of a screen, and I try to move to
+the next frame, it will move to the closest frame on the next screen in that
+direction. This is based on `goto_multihead.lua` in the
+[ion3-scripts](http://packages.ubuntu.com/lucid/ion3-scripts) package.
+
+Second, the normal frame movement functions like `ioncore.goto_next()` just
+traverse the tile hierarchy, so frame movement is sometimes unintuitive. For
+example, if there are four frames in a two by two grid, and the bottom left is
+selected, moving _up_ could move to the upper right instead of the upper left.
+This function fixes that.
+
+    function my_goto_multihead(ws, dir)
+        -- determine which edge(s) of the current workspace we're on, if any.
+        local edges = { left = false, right = false, up = false, down = false }
+        for d, v in pairs(edges) do
+           edges[d] = not ioncore.navi_next(ws:current(), d, {nowrap=true})
+        end
+    
+        -- cross to the next screen if we need to. (note that this is only supports
+        -- screens next to each other horizontally, not vertically.)
+        local fid = ioncore.find_screen_id
+        local nxtscr
+        if dir == "left" and edges.left then
+           nxtscr = fid(ws:screen_of():id() - 1) or fid(-1)
+        elseif dir == "right" and edges.right then
+           nxtscr = fid(ws:screen_of():id() + 1) or fid(0)
+        end
+        if nxtscr then
+           ws = nxtscr:current():current()
+           ws:goto()
+        else
+           -- actually handle the move. may wrap around.
+           ioncore.goto_next(ws:current(), dir)
+        end
+    
+        -- try to preserve the edge we're on, if any.
+        if dir == "left" or dir == "right" then
+           if edges.up and not edges.down then
+              ws:farthest("up"):goto()
+           elseif edges.down and not edges.up then
+              ws:farthest("down"):goto()
+           end
+        elseif dir == "up" or dir == "down" then
+           if edges.left and not edges.right then
+              ws:farthest("left"):goto()
+           elseif edges.right and not edges.left then
+              ws:farthest("right"):goto()
+           end
+       end
+    
+       if nxtscr then
+           -- need to move once more to wrap around for crossing screens.
+           ioncore.goto_next(ws:current(), dir)
+       end
+    end
