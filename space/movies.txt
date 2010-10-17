@@ -1,4 +1,4 @@
-movies
+imovies
 
 <style type="text/css">
 good, ok, bad, f, nf { font-style: italic; }
@@ -20,10 +20,6 @@ Also see [books](books), [games](/space/games), and
 
 [The Town](http://www.imdb.com/title/tt0840361/)
 
-<span title="recommended by gina 9/29/2010">
-[The Men Who Stare At Goats](http://www.imdb.com/title/tt1234548/)
-</span>
-
 <span title="recommended by david lahar during lunch 9/9/2010">
 [The Year of Living Dangerously](http://www.imdb.com/title/tt0086617/)
 </span>
@@ -42,6 +38,11 @@ Also see [books](books), [games](/space/games), and
 
 
 **Watched**:
+
+<span title="sf apt 10/17/2010; recommended by gina 9/29/2010">
+[The Men Who Stare At Goats](http://www.imdb.com/title/tt1234548/)
+![good](/good.png)
+</span>
 
 <span title="sf apt 10/9/2010">
 [Fahrenheit 451](http://www.imdb.com/title/tt0060390/)
