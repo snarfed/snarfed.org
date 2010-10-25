@@ -9,7 +9,7 @@ to publish my pages and posts to [WordPress](http://wordpress.org/).
 It's great!
 
 I often update more than one page or post before I get a chance to publish them,
-though, and I often forget wihch ones need to be updated. So, I wrote a wrapper
+though, and I often forget which ones need to be updated. So, I wrote a wrapper
 script, [blogpost.sh](blogpost.sh), that finds all files that need to be
 published or updated and runs `blogpost.py` to publish them.
 
