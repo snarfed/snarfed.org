@@ -36,7 +36,7 @@ This function fixes that.
         end
         if nxtscr then
            ws = nxtscr:current():current()
-           ws:goto()
+           ws:current():goto()
         else
            -- actually handle the move. may wrap around.
            ioncore.goto_next(ws:current(), dir)
@@ -45,20 +45,27 @@ This function fixes that.
         -- try to preserve the edge we're on, if any.
         if dir == "left" or dir == "right" then
            if edges.up and not edges.down then
-              ws:farthest("up"):goto()
+              move_all_the_way(ws, "up")
            elseif edges.down and not edges.up then
-              ws:farthest("down"):goto()
+              move_all_the_way(ws, "down")
            end
         elseif dir == "up" or dir == "down" then
            if edges.left and not edges.right then
-              ws:farthest("left"):goto()
+              move_all_the_way(ws, "left")
            elseif edges.right and not edges.left then
-              ws:farthest("right"):goto()
+              move_all_the_way(ws, "right")
            end
        end
     
        if nxtscr then
-           -- need to move once more to wrap around for crossing screens.
-           ioncore.goto_next(ws:current(), dir)
+          move_all_the_way(ws, dir)
+          -- need to move once more to wrap around for crossing screens.
+          ioncore.goto_next(ws:current(), dir)
+       end
+    end
+    
+    function move_all_the_way(ws, dir)
+       while ioncore.navi_next(ws:current(), dir, {nowrap=true}) do
+          ioncore.goto_next(ws:current(), dir)
        end
     end
