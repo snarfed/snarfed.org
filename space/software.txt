@@ -2,30 +2,12 @@ software
 
 ![/space/bolthead.png](bolthead.png)![/space/maze.png](/space/maze.png)![/space/computer.png](/space/computer.png)
 
-Open source software I've [written](#projects) and
-[contributed to](#patches). Unless otherwise noted, everything
+My open source software [projects](#projects), [scripts](#scripts), and
+[patches](#patches). Unless otherwise noted, everything
 is public domain. Also see [other lists](lists).
 
 <a name="projects"></a>
-### Projects  [![Icon-Permalink.png](/Icon-Permalink.png)](#projects)
-
-  * [sync_wordpress.sh](sync_wordpress) syncs
-[WordPress](http://wordpress.org/), files, plugins, themes, and options
-stored in the database from one WordPress instance to another.
-
-  * [pyblosxom2wxr.sh](pyblosxom2wxr) is a shell script that migrates content
-from [PyBlosxom](http://pyblosxom.sourceforge.net/) to
-[WordPress](http://wordpress.org/).
-
-  * [unixify.sh](unixify) is a simple shell script I use to sanitize
-filenames and files people send me from other operating systems.
-
-  * [backup_google.sh](backup_google) is a shell script
-    that backs up data from Google
-[Contacts](http://www.google.com/contacts),
-[Calendar](http://calendar.google.com/),
-[Reader](http://www.google.com/reader/), and
-[Tasks](https://mail.google.com/tasks/canvas).
+### Projects
 
   * [google_talk_sms.pl](google_talk_sms_pidgin_plugin),
 a [Pidgin](http://pidgin.im/) plugin that enables
@@ -43,15 +25,6 @@ feature.
   * [openid-test](http://code.google.com/p/openid-test/) is an
     interoperability test suite for [OpenID](http://openid.net/).
 
-  * [download_picasa_album.sh](download_picasa_album) downloads entire
-[Picasa Web](http://picasaweb.google.com/) photo albums.
-
-  * [PyBlosxom](http://pyblosxom.sourceforge.net/) is a lightweight weblog
-platform, based on [Blosxom](http://blosxom.com/) and written in Python.
-
-  * [simonitor](simonitor) screen scrapes [simon.com](http://simon.com/)
-to fetch the available balance on one or more Simon gift cards.
-
   * An [OpenID comments plugin for PyBlosxom](pyblosxom_openid_comments).
 
   * An [OpenID server plugin for PyBlosxom](pyblosxom_openid_server).
@@ -60,11 +33,6 @@ to fetch the available balance on one or more Simon gift cards.
 
   * [index](pyblosxom_index) is a [PyBlosxom](http://pyblosxom.sf.net/)
 plugin that displays an alphabetical index of all entries.
-
-  * [snipsnap2svn](snipsnap2svn) is an
-[XSLT](http://www.w3.org/TR/xslt) script that converts
-[SnipSnap](http://snipsnap.org/) XML database exports into
-[Subversion dumpfiles](http://svn.collab.net/viewvc/*checkout*/svn/trunk/notes/fs_dumprestore.txt).
 
   * [history](pyblosxom_history) is a [PyBlosxom](http://pyblosxom.sf.net/)
 plugin that displays change history for entries.
@@ -82,9 +50,6 @@ plugin that serves static files.
 
   * [Fillcode](fillcode) is an [Emacs](http://gnu.org/software/emacs/)
 minor mode that fills, or wraps, some parts of source code.
-
-  * [Ditrit](ditrit) is a programmable application launcher that tries to
-"do the right thing" for any input it's given.
 
   * [BigBrother](bigbrother) generates statistics and graphs from your
 away message history. See my [personal
@@ -114,12 +79,6 @@ Libraries](http://cityofpaloalto.org/library/).
 a web album. (Maulik has a [sample
 album](http://maulik.freeshell.net/software/malbum-release/malbumSample).)
 
-  * [snipscrape](snipscrape) transforms SnipSnap-generated HTML into XML
-that can be imported back into SnipSnap.
-
-  * [cdname.py](cdname.py) names MP3 files according to
-[CDDB](http://cddb.com/)/[freedb](http://freedb.org/) INF files.
-
   * [Nullprpl](nullprpl_pidgin_null_protocol_plugin) is a mock
 protocol plugin that lets you use [Pidgin](http://pidgin.sf.net/) without
 connecting to a server.
@@ -138,8 +97,55 @@ text and binary files.
 email account.
 
 
+
+<a name="scripts"></a>
+### Scripts
+
+  * [sync_wordpress.sh](sync_wordpress) syncs
+[WordPress](http://wordpress.org/), files, plugins, themes, and options
+stored in the database from one WordPress instance to another.
+
+  * [pyblosxom2wxr.sh](pyblosxom2wxr) is a shell script that migrates content
+from [PyBlosxom](http://pyblosxom.sourceforge.net/) to
+[WordPress](http://wordpress.org/).
+
+  * [unixify.sh](unixify) is a simple shell script I use to sanitize
+filenames and files people send me from other operating systems.
+
+  * [backup_google.sh](backup_google) is a shell script
+    that backs up data from Google
+[Contacts](http://www.google.com/contacts),
+[Calendar](http://calendar.google.com/),
+[Reader](http://www.google.com/reader/), and
+[Tasks](https://mail.google.com/tasks/canvas).
+
+  * [download_picasa_album.sh](download_picasa_album) downloads entire
+[Picasa Web](http://picasaweb.google.com/) photo albums.
+
+  * [PyBlosxom](http://pyblosxom.sourceforge.net/) is a lightweight weblog
+platform, based on [Blosxom](http://blosxom.com/) and written in Python.
+
+  * [simonitor](simonitor) screen scrapes [simon.com](http://simon.com/)
+to fetch the available balance on one or more Simon gift cards.
+
+  * [cdname.py](cdname.py) names MP3 files according to
+[CDDB](http://cddb.com/)/[freedb](http://freedb.org/) INF files.
+
+  * [snipsnap2svn](snipsnap2svn) is an
+[XSLT](http://www.w3.org/TR/xslt) script that converts
+[SnipSnap](http://snipsnap.org/) XML database exports into
+[Subversion dumpfiles](http://svn.collab.net/viewvc/*checkout*/svn/trunk/notes/fs_dumprestore.txt).
+
+  * [Ditrit](ditrit) is a programmable application launcher that tries to
+"do the right thing" for any input it's given.
+
+  * [snipscrape](snipscrape) transforms SnipSnap-generated HTML into XML
+that can be imported back into SnipSnap.
+
+
+
 <a name="patches"></a>
-### Patches  [![Icon-Permalink.png](/Icon-Permalink.png)](#patches)
+### Patches
 
   * Patches to [shutter-reloaded](http://plugins.trac.wordpress.org/ticket/1178)
 and [next-gen gallery](http://plugins.trac.wordpress.org/ticket/1179) that
