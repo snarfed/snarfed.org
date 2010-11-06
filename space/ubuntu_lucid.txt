@@ -312,6 +312,49 @@ hibernate, since they try to suspend anacron first.
   image. No clue why that works. More info in
   [Launchpad bug 464031](https://bugs.launchpad.net/ubuntu/+source/fglrx-installer/+bug/464031).
 
+  * If you see this error when sending mail:
+  
+        postfix: fatal: /etc/mailname: cannot open file: No such file or directory
+
+  Put your top-level domain name, or fully qualified hostname if you want, into
+  `/etc/mailname`. Mine is:
+  
+        snarfed.org
+
+  Then `sudo service postfix restart`.
+
+  * Here are some of the extra packages I installed:
+  
+    * apache2
+    * aumix
+    * emacs23-el
+    * emacs23-lucid (replaces emacs23-gtk)
+    * ion3
+    * ion3-dev
+    * ion3-doc
+    * ion3-scripts
+    * lynx
+    * mpg123
+    * mysql-server
+    * php5
+    * php5-cgi
+    * php5-cli
+    * php5-curl
+    * php5-mysql
+    * pidgin
+    * python-mysqldb
+    * rxvt
+    * subversion
+    * sysfsutils
+    * tkdiff
+    * tp-smapi-dkms
+    * xloadimage
+
+  I also downloaded, built, and installed
+  [cnetworkmanager](http://vidner.net/martin/software/cnetworkmanager/) from
+  source, since it's not in any Debian or Ubuntu repositories.
+
+
 
 Enjoy Ubuntu Lucid!
 
