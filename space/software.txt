@@ -147,6 +147,11 @@ that can be imported back into SnipSnap.
 <a name="patches"></a>
 ### Patches
 
+  * A [patch](www_netflix_new_rating_regex.patch) for the
+[WWW::Netflix](http://search.cpan.org/dist/WWW-Netflix/) Perl library that
+update the regular expression it uses to screen-scrape movie ratings. This
+handles Netflix's HTML as of 11/2010.
+
   * Patches to [shutter-reloaded](http://plugins.trac.wordpress.org/ticket/1178)
 and [next-gen gallery](http://plugins.trac.wordpress.org/ticket/1179) that
 let you close the shutter display with the Escape key or by clicking on the

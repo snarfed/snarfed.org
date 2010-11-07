@@ -1,0 +1,13 @@
+--- lib/WWW/Netflix.pm	2008-09-13 13:42:15.000000000 -0700
++++ lib/WWW/Netflix.pm.new_rating_regex	2010-11-06 18:05:41.000000000 -0700
+@@ -62,8 +62,8 @@
+         $body = $self->{ www }->content();
+     
+         # loop through each movie on the page
+-        #  id="stM60025026_1" class=star alt="5.0 Stars">
+-        while ( $body =~ /id="stM(\d+)_[^ ]+ class=star alt="(\d).0 Stars/gs ) {
++        #  id="M60025026_496715_29_2"><span ...><span ...>You rated this movie: 5.0
++        while ( $body =~ /id="M(\d+)[^"]+">(?:<span [^>]+>)+You rated this movie: (\d).0/gs ) {
+             my ( $movie_id, $rating ) = ( $1, $2 );
+             $movies->{ $movie_id }->{ rating } = $rating;
+         } # end of looping through movies
