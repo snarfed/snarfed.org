@@ -102,20 +102,5 @@ For each file listed, simply restore it from its backup,
 resort, if the backup is corrupted too, you can use
 **../metadata.properties.template**, which should always be ok.
 
-See also:
-
-  * [Downtime is my favorite
-time](http://nopaper.net/2004/06/15/downtime-is-my-favorite-time.html) on
-[nopaper.net](http://nopaper.net/)
-  * [Help me please](http://snipsnap.org/comments/help-me-please) on
-[snipsnap.org](http://snipsnap.org/)
-  * [snipsnap-help](http://snipsnap.org/comments/snipsnap-help#comment-snipsnap-help-85)
-on [snipsnap.org](http://snipsnap.org/)
-  * [my original
-post](http://snipforge.org/lurker/message/20060705.232815.00a1e509.en.html) to
-the [snipsnap-users mailing
-list](http://snipforge.org/cgi-bin/mailman/listinfo/snipsnap-users)
-  * [servlets with snipsnap](servlets_with_snipsnap)
-  * [snipsnap 1.0b1 virtual hostname patch](snipsnap_1.0b1_virtual_hostname_patch)
-  * [snipsnap comment without login patch](snipsnap_comment_without_login_patch)
-
+P.S. Thanks to Ryan Stephenson for his related article
+[Downtime is my favorite time](http://nopaper.net/2004/06/15/downtime-is-my-favorite-time.html).

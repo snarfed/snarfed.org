@@ -27,10 +27,3 @@ and edited the EXTRA_DSO_LDOPTS line to look like this:
       $(MOZ_COMPONENT_LIBS) -lX11 -L/usr/X11R6/lib
 
 Voila, it worked!
-
-See also:
-
-  * [trigger scripts for mozilla xpi packages](trigger_scripts_for_mozilla_xpi_packages)
-  * [palo alto library amazon greasemonkey](palo_alto_library_amazon_greasemonkey)
-  * [change firefox's saved passwords](change_firefoxs_saved_passwords)
-

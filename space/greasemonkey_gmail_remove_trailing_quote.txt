@@ -31,11 +31,3 @@ that excess quoted text. (See
 [these](http://catb.org/~esr/jargon/html/T/top-post.html)
 [articles](http://www.cs.tut.fi/~jkorpela/usenet/brox.html) for more on trimming
 quotes and the top- vs. bottom-post debate.)
-
-See also:
-
-  * [Gmail Remove Trailing Quotes userscripts.org page](http://userscripts.org/scripts/show/86600)
-  * [pine reply-all patch](pine_reply-all_patch)
-  * [gmail vs pine](gmail_vs_pine)
-  * [Palo Alto library amazon greasemonkey](palo_alto_library_amazon_greasemonkey)
-  * [my Stylish userstyle workflow](my_stylish_userstyle_workflow)

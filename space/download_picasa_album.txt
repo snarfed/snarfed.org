@@ -27,11 +27,3 @@ just right for me.
 *nix-based systems. It uses [curl](http://curl.haxx.se/),
 [grep](http://gnu.org/software/grep/), [sed](http://gnu.org/software/sed/), and
 xargs, which should come with your distribution.
-
-See also:
-
-  * [kodak picturecenter hacks](kodak_picturecenter_hacks)
-  * [Malbum](Malbum) and [album](/space/album)
-  * [view evites anonymously](view_evites_anonymously)
-  * [change firefox's saved passwords](change_firefoxs_saved_passwords)
-  * [simonitor](simonitor)

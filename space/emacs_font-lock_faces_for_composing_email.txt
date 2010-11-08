@@ -44,13 +44,3 @@ to your `~/.emacs`:
     (set-face-foreground 'u-vm-color-signature-face  "gray30")
 
 Happy font-locked emailing!
-
-See also:
-
-  * [gmail vs pine](gmail_vs_pine)
-  * [why I don't run shells inside Emacs](why_I_dont_run_shells_inside_Emacs)
-  * [acoc.conf for context diffs](acoc.conf_for_context_diffs)
-  * [tcsh highlighting patch](tcsh_highlighting_patch)
-  * [Emacs and remote X Windows](Emacs_and_remote_X_Windows)
-  * [minimal .emacs for fast startup](minimal_.emacs_for_fast_startup)
-

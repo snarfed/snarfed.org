@@ -45,10 +45,3 @@ P4 is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
 Copyright 2001-2004 [Ken Ashcraft](http://keeda.stanford.edu/~kash), [Ryan
 Barrett](http://snarfed.org/), [Maulik Shah](http://maulik.net/), and
 [Nathan Stoll](http://cs.stanford.edu/~nstoll).
-
-See also:
-
-  * [synchronizing mp3 playback](synchronizing_mp3_playback)
-  * [libmsntp](libmsntp)
-  * [libwebserver shutdown patch](libwebserver_shutdown_patch)
-

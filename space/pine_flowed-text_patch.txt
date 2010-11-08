@@ -25,12 +25,3 @@ it not to _display_ flowed text. This patch adds that option.
 There are also [pre-built packages](http://www.quantumlinux.com/~chuckw/pine/)
 with this patch, thanks to Chuck Wolber, and [instructions on building Pine from
 source](pine_reply-all_patch). Scroll to the bottom.
-
-See also:
-
-  * [pine delete attachments on save patch](pine_delete_attachments_on_save_patch)
-  * [pine remove trailing quote patch](pine_remove_trailing_quote_patch)
-  * [pine reply-all patch](pine_reply-all_patch)
-  * [port_pine_patch](port_pine_patch)
-  * [gmail vs pine](gmail_vs_pine)
-

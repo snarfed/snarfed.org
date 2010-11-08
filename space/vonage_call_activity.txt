@@ -85,13 +85,3 @@ That's it! Here are examples of the resulting
 call log files:
 [incoming](vonage_incoming_calls_example.html) and
 [outgoing](vonage_outgoing_calls_example.html).
-
-
-See also:
-
-  * [backup google](backup_google)
-  * [download_picasa_album](download_picasa_album)
-  * [kodak picturecenter hacks](kodak_picturecenter_hacks)
-  * [simonitor](simonitor)
-  * [snipscrape](snipscrape)
-  * [view evites anonymously](view_evites_anonymously)

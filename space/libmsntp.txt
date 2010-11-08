@@ -29,9 +29,3 @@ and has been included in a number of Linux distributions, such as
 [Mandriva](http://www.mandriva.com/products/limited-edition/packages?p=media-contrib-lib64msntp1-1.6a-1mdk.x86_64.rpm.html&R_=club_silver-and-above_x86-64_1-dvd)
 (formerly Mandrake). Copyright 2005 [Ryan Barrett](http://snarfed.org/),
 1996-2000 N.M. Maclaren.
-
-See also:
-
-  * [synchronizing mp3 playback](synchronizing_mp3_playback)
-  * [linux time zones](linux_time_zones)
-

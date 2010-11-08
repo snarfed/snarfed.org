@@ -27,13 +27,3 @@ maintennance, with his permission.
 photogallery is Copyright 2004 [Magnus Nordlander](http://magnus.nordlander.tk/),
 2006 [Ryan Barrett](about), and is distributed
 under the [GPL](http://www.gnu.org/licenses/gpl.html).
-
-See also:
-
-  * [index](pyblosxom_index)
-  * [history](pyblosxom_history)
-  * [filekicker](filekicker)
-  * [hardcodedates](photogallery)
-  * [pyblosxom ajax comments](pyblosxom_ajax_comments)
-  * [pyblosxom rdf flavour](pyblosxom_rdf_flavour)
-  * [migrating to pyblosxom](2006-08-23_virtual_housewarming)

@@ -34,12 +34,3 @@ to the [pine-info](http://www.washington.edu/pine/pine-info/) mailing list.
 
 Feel free to [email me](about) with feedback or
 bug reports.
-
-See also:
-
-  * [pine flowed-text patch](pine_flowed-text_patch)
-  * [pine remove trailing quote patch](pine_remove_trailing_quote_patch)
-  * [pine reply-all patch](pine_reply-all_patch)
-  * [port_pine_patch](port_pine_patch)
-  * [gmail vs pine](gmail_vs_pine)
-

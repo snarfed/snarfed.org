@@ -66,15 +66,3 @@ Known bugs:
   * Posts with more than 256 comments are not supported well. Only the last 256
     comments will be imported, and will likely be ordered wrong. See the `TODO`
     near the end of the script.
-
-See also:
-
-  * [Migrated to WordPress](2010-08-08_migrated_to_wordpress)
-  * [snarfed WordPress theme](snarfed_wordpress_theme)
-  * [sync_wordpress.sh](sync_wordpress)
-  * [blogpost.sh](blogpost)
-  * [generate_blogpost.sh](generate_blogpost)
-  * [Migrating to PyBlosxom](2006-08-23_virtual_housewarming)
-  * [snipsnap2svn](snipsnap2svn)
-  * [snipscrape](snipscrape)
-  * [extract compacted PyBlosxom comments](extract_compacted_pyblosxom_comments)

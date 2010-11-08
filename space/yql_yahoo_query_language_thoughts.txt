@@ -233,16 +233,3 @@ higher, per-account quotas.
 Finally, the `v1` in the endpoint URL implies support for versioning.
 Yahoo will probably handle backward incompatible changes to YQL by adding a
 new endpoint with the next version number.
-
-
-
-See also:
-
-  * [Windows Azure impressions](windows_azure_impressions)
-  * [Windows Azure details](windows_azure_details)
-  * [Windows Azure: Overview and Impressions](azure_talk.html) (slides)
-  * [Facebook Data Store API Thoughts](facebook_data_store_api_thoughts)
-  * [Amazon SimpleDB thoughts](amazon_simpledb_thoughts)
-  * [Google App Engine launched](2008-04-07_google_app_engine_launched)
-  * [Under the Covers of the App Engine datastore](datastore_talk.html) (slides)
-  * [Yahoo! Open Strategy thoughts](2008-12-16_yos_yahoo_open_strategy)

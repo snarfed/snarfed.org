@@ -20,11 +20,3 @@ For an example, check out the
 
 The RDF flavour is copyright 2006 [Ryan Barrett](about), and is
 distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
-
-See also:
-
-  * [migrating to pyblosxom](2006-08-23_virtual_housewarming)
-  * [photogallery](filekicker)
-  * [hardcodedates](photogallery)
-  * [filekicker](filekicker)
-  * [pyblosxom ajax comments](pyblosxom_ajax_comments)

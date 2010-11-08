@@ -24,8 +24,3 @@ Fedora have
 marginally helpful. Debian also has
 [tzconfig(8)](http://www.debian.org/doc/manuals/system-administrator/ch-sysadmin-time.html),
 which is much more useful.
-
-See also:
-
-  * [libmsntp](libmsntp)
-

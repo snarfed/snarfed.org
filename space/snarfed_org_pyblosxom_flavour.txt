@@ -23,10 +23,3 @@ datadir and flavourdir, respectively. Then, edit `config.py` and add this line:
 
 This flavour is licensed under the
 [Creative Commons](http://creativecommons.org/licenses/by/2.0/).
-
-See also:
-
-  * [PyBlosxom flavour registry page](http://pyblosxom.bluesock.org/registry/flavours/snarfed.html)
-  * [snarfed WordPress theme](snarfed_wordpress_theme)
-  * [pyblosxom index](pyblosxom_index)
-  * [pyblosxom ajax comments](pyblosxom_ajax_comments)

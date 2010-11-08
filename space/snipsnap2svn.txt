@@ -47,12 +47,3 @@ recursive, so files above a few KB overflow the stack. :/
 
 snipsnap2svn is copyright 2006 [Ryan Barrett](about), and is
 distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
-
-See also:
-
-  * [snipscrape](snipscrape)
-  * [Migrating from SnipSnap to PyBlosxom](2006-08-23_virtual_housewarming)
-  * [Rendering SnipSnap snips with XSLT](http://snipsnap.org/space/xml+issue)
-  * [Migrating from Radio to SnipSnap with
-XSLT](http://blog.fivesight.com/prb/space/Migrating+Radio+to+SnipSnap)
-  * [Using XML to structure snips](http://snipsnap.org/space/xml+issue)

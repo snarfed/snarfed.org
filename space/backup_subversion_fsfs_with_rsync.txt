@@ -17,9 +17,3 @@ repository with rsync, like so:
     rsync ... /path/to/repo/db/current backup:~/repo/db
     rsync ... --exclude transactions/ --exclude db/current \
               /path/to/repo backup:~/
-
-See also:
-
-  * [subversion and tkdiff](subversion_and_tkdiff)
-  * [gnu emacs backup files](gnu_emacs_backup_files)
-

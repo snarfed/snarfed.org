@@ -46,9 +46,3 @@ good first step. I'd like to extend it to use DNSBLs and RBLs like
 [Spamhaus](http://www.spamhaus.org/xbl/index.lasso),
 [BSB](http://bsb.empty.us/), [Blitzed](http://opm.blitzed.org/info), and
 [SURBL](http://www.surbl.org/faq.html).
-
-See also:
-
-  * [geocoding](geocoding)
-  * [webalizer nofollow patch](webalizer_nofollow_patch)
-

@@ -107,16 +107,3 @@ _composing_ with quoted text to save its life. There are a ton of problems with
 this, but among others, it needs a way to [remove trailing quotes when
 sending](pine_remove_trailing_quote_patch). (OK, to be fair, I doubt this
 feature is in high demand.)
-
-See also:
-
-  * [pine delete attachments on save patch](pine_delete_attachments_on_save_patch)
-
-  * [pine flowed-text patch](pine_flowed-text_patch)
-
-  * [pine remove trailing quote patch](pine_remove_trailing_quote_patch)
-
-  * [pine reply-all patch](pine_reply-all_patch)
-
-  * [port_pine_patch](port_pine_patch)
-

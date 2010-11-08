@@ -48,13 +48,3 @@ bindings in screen's copy/scrollback mode:
     markkeys B=[:E=]:b={:e=}:w=>
     bindkey -m ^[Od stuff {  #"[[}"
     bindkey -m ^[Oc stuff ]  #"}]^f"
-
-See also:
-
-  * [synchronizing GNU screen's paste buffer and the X selection](synchronizing_GNU_screens_paste_buffer_and_the_X_selection)
-  * [why I don't run shells inside Emacs](why_I_dont_run_shells_inside_Emacs)
-  * [control arrow keys in rxvt, tcsh, and emacs](control_arrow_keys_in_rxvt_tcsh_and_emacs)
-  * [emacs keybindings in firefox](emacs_keybindings_in_firefox)
-  * [emacs keybindings with number keys](emacs_keybindings_with_number_keys)
-  * [emacs page up page down](emacs_page_up_page_down)
-

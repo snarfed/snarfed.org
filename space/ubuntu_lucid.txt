@@ -357,9 +357,3 @@ hibernate, since they try to suspend anacron first.
 
 
 Enjoy Ubuntu Lucid!
-
-See also:
-
-  * [Fedora Core 3 on VMWare](fedora_core_3_on_vmware)
-  * [Linux time zones](linux_time_zones)
-  * [Thinkpad keys in Firefox](thinkpad_keys_in_firefox)

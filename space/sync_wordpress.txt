@@ -22,14 +22,8 @@ files, check in the new dump, and apply it remotely. The source and destination
 hostnames, directories, and database connection parameters are configurable in
 variables at the top of the script.
 
+(There are plenty of other related approaches, e.g. the
+[Remote Database Backup plugin](http://www.bin-co.com/blog/2008/10/remote-database-backup-wordpress-plugin/).)
+
 Note: `sync_wordpress.sh` does *not* synchronize posts, pages, comments, or
 other content.
-
-See also:
-
-  * [Remote Database Backup WordPress Plugin](http://www.bin-co.com/blog/2008/10/remote-database-backup-wordpress-plugin/)
-  * [pyblosxom2wxr.sh](pyblosxom2wxr)
-  * [Migrated to WordPress](2010-08-08_migrated_to_wordpress)
-  * [blogpost.sh](blogpost)
-  * [generate_blogpost.sh](generate_blogpost)
-  * [snarfed WordPress theme](snarfed_wordpress_theme)

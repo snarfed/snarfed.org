@@ -27,8 +27,3 @@ network) to get HEAD. This is unnecessary, and way slow. BASE is usually just as
 good, and it's stored locally, in .svn/text-base. [This
 patch](http://sourceforge.net/tracker/index.php?func=detail&aid=1111661&group_id=64960&atid=509272)
 makes tkdiff use the local copy instead.
-
-See also:
-
-  * [backup subversion fsfs with rsync](backup_subversion_fsfs_with_rsync)
-

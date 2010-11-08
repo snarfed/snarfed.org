@@ -62,11 +62,3 @@ distributed under the [GPL](http://www.gnu.org/licenses/gpl.html). Thanks to
 [Todd Warner](http://www.dma.org/cgi-bin/cgiwrap/tw/toddblog) and
 [Blake Winton](http://bwinton.latte.ca/)
 for beta testing and improvements.
-
-See also:
-
-  * [migrating to pyblosxom](2006-08-23_virtual_housewarming)
-  * [filekicker](filekicker)
-  * [photogallery](photogallery)
-  * [hardcodedates](hardcodedates)
-  * [pyblosxom rdf flavour](pyblosxom_rdf_flavour)

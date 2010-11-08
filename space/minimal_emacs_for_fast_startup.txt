@@ -62,13 +62,3 @@ and this elisp in my [my minimal
 Your .emacs file is fairly personal, so you'll probably want to customize it and
 add things from your standard .emacs. [dotemacs.de](http://www.dotemacs.de/) is
 a good resource for writing and refining your .emacs file.
-
-See also:
-
-  * [control arrow keys in rxvt, tcsh, and emacs](control_arrow_keys_in_rxvt_tcsh_and_emacs)
-  * [why I don't run shells inside Emacs](why_I_dont_run_shells_inside_Emacs)
-  * [Emacs and remote X Windows](Emacs_and_remote_X_Windows)
-  * [emacs X resources](emacs_X_resources)
-  * [emacs page up page down](emacs_page_up_page_down)
-  * [Emacs keybindings in GNU screen's copy-scrollback mode](Emacs_keybindings_in_GNU_screens_copy-scrollback_mode)
-

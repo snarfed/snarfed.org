@@ -47,9 +47,3 @@ restarted WMP, it rebuilt the database from scratch and it was happy again.
 
 Moral of the story? Don't change Windows users if you can possibly help it. It's
 _really_ painful.
-
-See also:
-
-  * [fedora core 3 on vmware](fedora_core_3_on_vmware)
-  * [invert mouse in Beyond Good & Evil](invert_mouse_in_Beyond_Good_&_Evil)
-

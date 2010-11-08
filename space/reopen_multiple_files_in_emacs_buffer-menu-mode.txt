@@ -72,12 +72,3 @@ Similarly, this function reopens the current buffer in a new location.
               (find-file (replace-match replacement nil nil orig-file))
               (kill-buffer orig-buffer))
           (error "No match for %s in %s" regexp orig-file))))
-
-See also:
-
-  * [fillcode](fillcode)
-  * [gnu emacs backup files](gnu_emacs_backup_files)
-  * [why I don't run shells inside Emacs](why_I_dont_run_shells_inside_Emacs)
-  * [Emacs and remote X Windows](Emacs_and_remote_X_Windows)
-  * [minimal .emacs for fast startup](minimal_.emacs_for_fast_startup)
-

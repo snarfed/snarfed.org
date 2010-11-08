@@ -53,12 +53,3 @@ bug reports.
 _Known bug_: Whole quotes are not detected correctly if you start your email
 with (C)ompose instead of (R)eply. This is usually encountered when you reply to
 an email, postpone the reply, then resume and attempt to send.
-
-See also:
-
-  * [pine delete attachments on save patch](pine_delete_attachments_on_save_patch)
-  * [pine flowed-text patch](pine_flowed-text_patch)
-  * [pine reply-all patch](pine_reply-all_patch)
-  * [port_pine_patch](port_pine_patch)
-  * [gmail vs pine](gmail_vs_pine)
-

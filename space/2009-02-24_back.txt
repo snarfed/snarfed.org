@@ -23,13 +23,3 @@ the cost of starting up the python interpreter, loading all of the modules, and
 initializing PyBlosxom on every single request. Unfortunately,
 [pair](http://pair.com/) doesn't support them on
 [shared accounts](http://www.pair.com/services/web_hosting/). Sigh.
-
-See also:
-
-   * [about](about)
-   * [Virtual Housewarming](2006-08-23_virtual_housewarming), or why I switched from
-     [SnipSnap](http://snipsnap.org/) on [JVDS](http://jvds.com/) to
-     [PyBlosxom](http://pyblosxom.sourceforge.net/) on [pair.com](http://pair.com/)
-   * [Suburbia Ho!](2004-12-02_suburbia_ho), or why I originally switched from my own
-     server to [JVDS](http://jvds.com/)
-   * [software](software), which includes the PyBlosxom plugins I use

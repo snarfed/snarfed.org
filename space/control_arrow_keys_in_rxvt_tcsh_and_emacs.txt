@@ -48,17 +48,6 @@ I made a halfhearted attempt to find xterm's keycodes for Control-Left and
 Control-Right, but they eluded me. C-h k (ie describe-key) in emacs doesn't even
 catch them at all!
 
-See also:
-
-  * [Emacs keybindings in GNU screen's copy-scrollback mode](Emacs_keybindings_in_GNU_screens_copy-scrollback_mode)
-  * [Emacs keybindings with number keys](emacs_keybindings_with_number_keys)
-  * [Emacs keybindings in firefox](emacs_keybindings_in_firefox)
-  * [Emacs and remote X Windows](emacs_and_remote_X_Windows)
-  * [Terminals and Keymapping](http://www.white.nu/~jwhite/keymapping/)
-[white.nu]
-  * [Rxvt Technical
-Reference](http://www.mit.edu/afs/sipb/project/outland/doc/rxvt/html/refer.html)
-[mit.edu]
-  * ["control left in emacs in rxvt" mailing list
-post](http://sources.redhat.com/ml/cygwin/2003-09/msg00545.html) [redhat.com]
-
+P.S. Thanks to
+[MIT's rxvt Reference](http://www.mit.edu/afs/sipb/project/outland/doc/rxvt/html/refer.html) and
+[this cygwin mailing list thread](http://sources.redhat.com/ml/cygwin/2003-09/msg00545.html).

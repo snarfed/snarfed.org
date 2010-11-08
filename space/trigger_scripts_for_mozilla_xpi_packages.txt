@@ -32,10 +32,3 @@ e.g. `file:///home/ryanb/mypackage.xpi`,
 directly into the Mozilla URL box.
 
 Happy packaging!
-
-See also:
-
-  * [linking libraries with mozilla xpcom](linking_libraries_with_mozilla_xpcom)
-  * [palo alto library amazon greasemonkey](palo_alto_library_amazon_greasemonkey)
-  * [change firefox's saved passwords](change_firefoxs_saved_passwords)
-

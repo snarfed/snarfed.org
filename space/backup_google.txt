@@ -27,11 +27,3 @@ the `SID` cookie provided by ClientLogin isn't enough. It also needs a
 matching `GTL` cookie, which ClientLogin doesn't provide. So for the time
 being, I use [Live HTTP Headers](http://livehttpheaders.mozdev.org/) to
 capture a valid `SID/GTL` cookie pair and hard code it in the script.
-
-See also:
-
-  * [software](software)
-  * [download_picasa_album](download_picasa_album)
-  * [dotfiles](dotfiles)
-  * [resize google calendar](resize_google_calendar)
-  * [google_talk_sms pidgin plugin](google_talk_sms_pidgin_plugin)

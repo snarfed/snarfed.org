@@ -31,12 +31,3 @@ variables at the top of the script to point to different paths.
 
 port_pine_patch is copyright 2005 [Ryan Barrett](http://snarfed.org/),
 and is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
-
-See also:
-
-  * [pine delete attachments on save patch](pine_delete_attachments_on_save_patch)
-  * [pine flowed-text patch](pine_flowed-text_patch)
-  * [pine remove trailing quote patch](pine_remove_trailing_quote_patch)
-  * [pine reply-all patch](pine_reply-all_patch)
-  * [gmail vs pine](gmail_vs_pine)
-

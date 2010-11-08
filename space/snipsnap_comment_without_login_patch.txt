@@ -29,15 +29,3 @@ apply the patch, and build SnipSnap with [Ant](http://ant.apache.org). Then copy
 the newly rebuilt `snipsnap.jar` into your SnipSnap's `lib/` subdirectory, and copy
 `snipsnap-servlets.jar` into your application's `WEB-INF/lib/` subdirectory, over
 the existing jars. Restart SnipSnap and you should be good to go!
-
-See also:
-
-  * [snipsnap register without email](snipsnap_register_without_email)
-  * [snipscrape](snipscrape)
-  * [snipsnap macros](snipsnap_macros)
-  * [snipsnap recent-changes snip name patch](snipsnap_recent-changes_snip_name_patch)
-  * [snipsnap script macro and python](snipsnap_script_macro_and_python)
-  * [servlets with snipsnap](servlets_with_snipsnap)
-  * [virtual host redirection](virtual_host_redirection)
-  * [snipsnap 1.0b1 virtual hostname patch](snipsnap_1.0b1_virtual_hostname_patch)
-

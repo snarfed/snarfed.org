@@ -31,9 +31,3 @@ as pair suggests when using cgiwrap, but that again just led to CGI instead of
 [WordPress instructions](http://www.pair.com/support/knowledge_base/authoring_development/tools_of_the_trade_wordpress.html)
 and notice that URLs didn't start with `cgi-bin/` that I finally realized I
 should move the PHP file outside that directory.
-
-See also:
-
-  * [Back!](2009-02-24_back)
-  * [Virtual Housewarming](2006-08-23_virtual_housewarming)
-  * [pair.com: Using PHP](http://www.pair.com/support/knowledge_base/authoring_development/using_php.html)

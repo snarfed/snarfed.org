@@ -94,10 +94,3 @@ Happy AJAX searching!
 [ajax_search.js](/ajax_search.js) is copyright 2006 [Ryan
 Barrett](about), and is distributed under the
 [GPL](http://www.gnu.org/licenses/gpl.html).
-
-See also:
-
-  * [pyblosxom ajax comments](pyblosxom_ajax_comments)
-  * [software](software)
-  * [ideas](ideas)
-  * [migrating to pyblosxom](2006-08-23_virtual_housewarming)

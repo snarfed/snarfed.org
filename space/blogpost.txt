@@ -33,12 +33,3 @@ I finally settled on a hybrid of hashing and mtime. I loop over all of the files
 in order of last modification time, starting with the most recent. I hash each
 one, compare that to its `.blogpost` file, and publish the file if it's changed.
 I stop at the first file that hasn't changed.
-
-See also:
-
-  * [blogpost.py](http://srackham.wordpress.com/blogpost-readme/)
-  * [generate_blogpost.sh](generate_blogpost)
-  * [Migrated to WordPress](2010-08-08_migrated_to_wordpress)
-  * [sync_wordpress.sh](sync_wordpress)
-  * [pyblosxom2wxr.sh](pyblosxom2wxr)
-  * [snarfed WordPress theme](snarfed_wordpress_theme)

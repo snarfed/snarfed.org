@@ -33,14 +33,3 @@ Note that this uses [Conrad Parker's
 xsel](http://www.vergenet.net/~conrad/software/xsel/) (_not_ [Ville Herva's
 xsel](http://www.niksula.cs.hut.fi/~vherva/xsel/)), which needs to be somewhere
 in your PATH.
-
-See also:
-
-  * [Emacs keybindings in GNU screen's copy-scrollback mode](Emacs_keybindings_in_GNU_screens_copy-scrollback_mode)
-  * [why I don't run shells inside Emacs](why_I_dont_run_shells_inside_Emacs)
-  * [RatPoison Wiki: mouseless
-paste](http://ratpoison.elektrubadur.se/mouseless_paste)
-  * [autocutsel clipboard and primary patch](autocutsel_clipboard_and_primary_patch)
-  * [control arrow keys in rxvt, tcsh, and emacs](control_arrow_keys_in_rxvt_tcsh_and_emacs)
-  * [Emacs and remote X Windows](Emacs_and_remote_X_Windows)
-

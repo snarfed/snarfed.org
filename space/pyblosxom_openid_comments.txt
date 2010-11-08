@@ -83,12 +83,3 @@ Copyright 2006-2007
 [GPL](http://www.gnu.org/licenses/gpl.html). Originally released on
 [openidenabled.com](http://openidenabled.com/) and moved to
 [snarfed.org](http://snarfed.org/) on September 6, 2007.
-
-
-See also:
-
-  * [pyblosxom openid server](pyblosxom_openid_server)
-  * [pyblosxom ajax comments](pyblosxom_ajax_comments)
-  * [windows p2p](windows_p2p)
-  * [pyblosxom index](pyblosxom_index)
-  * [pyblosxom history](pyblosxom_history)

@@ -70,15 +70,3 @@ on avoiding the JSPs, so I just wrote a [macro](snipsnap_macros) to
 insert this tag.
 
 Hope this helps!
-
-See also:
-
-  * [snipsnap comment without login patch](snipsnap_comment_without_login_patch)
-  * [snipsnap macros](snipsnap_macros)
-  * [snipsnap recent-changes snip name patch](snipsnap_recent-changes_snip_name_patch)
-  * [snipsnap script macro and python](snipsnap_script_macro_and_python)
-  * [servlets with snipsnap](servlets_with_snipsnap)
-  * [virtual host redirection](virtual_host_redirection)
-  * [snipsnap 1.0b1 virtual hostname patch](snipsnap_1.0b1_virtual_hostname_patch)
-  * [snipscrape](snipscrape)
-

@@ -85,14 +85,3 @@ html flavour are included in
 
 openid_server.py is copyright 2006 [Ryan Barrett](about), and is
 distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
-
-See also:
-
-  * [pyblosxom openid comments](pyblosxom_openid_comments)
-  * [pyblosxom ajax comments](pyblosxom_ajax_comments)
-  * [windows p2p](windows_p2p)
-  * [pyblosxom index](pyblosxom_index)
-  * [pyblosxom history](pyblosxom_history)
-  * [photogallery](photogallery)
-  * [hardcodedates](hardcodedates)
-  * [filekicker](filekicker)

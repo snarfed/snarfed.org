@@ -87,9 +87,3 @@ discusses best practices for releasing Open Source software. The [good
 distribution-making
 practice](http://en.tldp.org/HOWTO/Software-Release-Practice-HOWTO/distpractice.html)
 section of his release practices HOWTO is also very relevant.
-
-See also:
-
-  * [software](software)
-  * [patches](software#patches)
-

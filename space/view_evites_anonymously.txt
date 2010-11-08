@@ -12,9 +12,3 @@ To view an evite anonymously, remove the **&src=...** parameter from the URL (if
 any) and add **&unknownUser=true** to the end. This link is also safe to send to
 friends. (That's not as important any more, though since most evites let you
 invite other people "officially.")
-
-See also:
-
-  * [privacy through prepaid credit cards](privacy_through_prepaid_credit_cards)
-  * [kodak picturecenter hacks](kodak_picturecenter_hacks)
-

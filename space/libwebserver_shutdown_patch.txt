@@ -24,9 +24,3 @@ ours; we start and stop the server fairly often. [This
 patch](libwebserver_shutdown.patch) adds a
 `web_server_shutdown()` call that stops the server, closes its socket, and
 deallocates its memory.
-
-See also:
-
-  * [synchronizing mp3 playback](synchronizing_mp3_playback)
-  * [p4](p4)
-

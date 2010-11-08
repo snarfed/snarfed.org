@@ -57,12 +57,3 @@ Predictably, this broke every app that compiles against SSL but not
 listing](http://bugzilla.redhat.com/bugzilla/show_bug.cgi?id=82369) over whether
 to blame Redhat, packagers, or app developers...but for our purposes, the
 workaround above should be good enough.
-
-See also:
-
-  * [pine delete attachments on save patch](pine_delete_attachments_on_save_patch)
-  * [pine flowed-text patch](pine_flowed-text_patch)
-  * [pine remove trailing quote patch](pine_remove_trailing_quote_patch)
-  * [port_pine_patch](port_pine_patch)
-  * [gmail vs pine](gmail_vs_pine)
-

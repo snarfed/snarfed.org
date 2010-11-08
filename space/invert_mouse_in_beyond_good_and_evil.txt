@@ -67,11 +67,3 @@ Finally, I wrote a
 [AutoHotKey](http://autohotkey.com/), a pretty sophisticated program that lets
 you script and remap mouse, keyboard, and joystick input. It inverts the mouse
 per-axis successfully, but doesn't affect DirectInput apps.
-
-See also:
-
-  * [thinkpad keys in firefox](thinkpad_keys_in_firefox)
-  * [windows media player database](windows_media_player_database)
-  * [Beyond Good & Evil writeup](2004-11-11_beyond_good_and_evil)
-  * [Beyond Good & Evil soundtrack](Beyond_Good_and_Evil_soundtrack)
-

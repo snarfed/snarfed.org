@@ -31,10 +31,3 @@ and fuzzy because I successfully avoided a flash banner ad?)
 
 Now there will be a big ugly red box where plugin content would have been. Feel
 free to customize the size, color, etc. to your liking.
-
-See also:
-
-  * [change firefox's saved passwords](change_firefoxs_saved_passwords)
-  * [linking libraries with mozilla xpcom](linking_libraries_with_mozilla_xpcom)
-  * [trigger scripts for mozilla xpi packages](trigger_scripts_for_mozilla_xpi_packages)
-

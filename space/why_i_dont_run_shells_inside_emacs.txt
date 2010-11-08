@@ -147,20 +147,3 @@ make shell-mode behave the way I wanted:
       (lambda () (interactive) (switch-to-buffer "*shell7*")))
 
 <a name="related"></a>
-See also: 
-
-  * [synchronizing GNU screen's paste buffer and the X
-selection](synchronizing_GNU_screens_paste_buffer_and_the_X_selection)
-  * [Emacs keybindings in GNU screen's copy-scrollback mode](Emacs_keybindings_in_GNU_screens_copy-scrollback_mode)
-  * [acoc.conf for context diffs](acoc.conf_for_context_diffs)
-  * [control arrow keys in rxvt, tcsh, and emacs](control_arrow_keys_in_rxvt_tcsh_and_emacs)
-  * [tcsh highlighting patch](tcsh_highlighting_patch)
-  * [remove tcsh globbing in history search](remove_tcsh_globbing_in_history_search)
-  * [tcsh delete moves mark bug fix](tcsh_delete_moves_mark_bug_fix)
-  * [Emacs and remote X Windows](Emacs_and_remote_X_Windows)
-  * [minimal .emacs for fast startup](minimal_.emacs_for_fast_startup)
-  * [emacs keybindings with number keys](emacs_keybindings_with_number_keys)
-  * [emacs keybindings in firefox](emacs_keybindings_in_firefox)
-  * [emacs X resources](emacs_X_resources)
-  * [emacs page up page down](emacs_page_up_page_down)
-

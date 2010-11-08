@@ -696,16 +696,3 @@ Currently, queries, transactions, etc. cannot cross containers. I'm not sure
 if joins are supported yet, but they eventually will be, along with queries
 and joins across containers. Transactions across containers will probably
 never be supported without something like two phase commit, though.
-
-
-
-See also:
-
-  * [Windows Azure impressions](windows_azure_impressions)
-  * [Windows Azure: Overview and Impressions](azure_talk.html) (slides)
-  * [Facebook Data Store API Thoughts](facebook_data_store_api_thoughts)
-  * [Amazon SimpleDB thoughts](amazon_simpledb_thoughts)
-  * [Google App Engine launched](2008-04-07_google_app_engine_launched)
-  * [Under the Covers of the App Engine datastore](datastore_talk.html) (slides)
-  * [Yahoo! Open Strategy thoughts](2008-12-16_yos_yahoo_open_strategy)
-  * [Yahoo! Query Language thoughts](yql_yahoo_query_language_thoughts)

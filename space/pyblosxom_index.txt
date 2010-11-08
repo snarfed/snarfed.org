@@ -29,14 +29,3 @@ behavior, all optional. Here they are, along with their defaults:
 
 index.py is copyright 2006 [Ryan Barrett](about), and is distributed
 under the [GPL](http://www.gnu.org/licenses/gpl.html).
-
-
-See also:
-
-  * [history](pyblosxom_history)
-  * [photogallery](photogallery)
-  * [hardcodedates](hardcodedates)
-  * [filekicker](filekicker)
-  * [pyblosxom ajax comments](pyblosxom_ajax_comments)
-  * [pyblosxom rdf flavour](pyblosxom_rdf_flavour)
-  * [migrating to pyblosxom](2006-08-23_virtual_housewarming)

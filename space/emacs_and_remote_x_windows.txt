@@ -44,11 +44,3 @@ between Emacs and other programs. When I need to, I use this elisp:
 
 This binds **Esc M-w** to copy to the X selection and **Esc C-y** to paste from
 the X selection or cut buffer.
-
-See also:
-
-  * [emacs X resources](emacs_X_resources)
-  * [synchronizing GNU screen's paste buffer and the X
-selection](synchronizing_GNU_screens_paste_buffer_and_the_X_selection)
-  * [why I don't run shells inside Emacs](why_I_dont_run_shells_inside_Emacs)
-

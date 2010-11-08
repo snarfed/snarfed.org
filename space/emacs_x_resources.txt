@@ -37,10 +37,3 @@ default font and foreground and background colors:
     Emacs*background: black
 
 Here's to fast-starting Emacs!
-
-See also:
-
-  * [Emacs and remote X Windows](Emacs_and_remote_X_Windows)
-  * [minimal .emacs for fast startup](minimal_.emacs_for_fast_startup)
-  * [why I don't run shells inside Emacs](why_I_dont_run_shells_inside_Emacs)
-
