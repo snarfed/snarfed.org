@@ -323,6 +323,20 @@ hibernate, since they try to suspend anacron first.
 
   Then `sudo service postfix restart`.
 
+  * [NetworkManager]() not using connections you think it should be using? Check
+    the file permissions in `/etc/NetworkManager/system-connections/`. If
+    they're group or world readable or writable, or not owned by root, that's
+    probably why. You can confirm that this is the problem by looking for lines
+    like this in `/var/log/syslog`:
+
+        Ignoring insecure configuration file '/etc/NetworkManager/system-connections/ABC'
+
+    This should fix it:
+
+        sudo chown root:root /etc/NetworkManager/system-connections/*
+        sudo chmod 600 /etc/NetworkManager/system-connections/*
+        sudo service network-manager restart
+
   * Here are some of the extra packages I installed:
   
     * apache2
