@@ -1,14 +1,8 @@
 site search with the Google AJAX Search API
 
-<table><tr><td>
-<img src="ajax.jpg">
-</td><td style="vertical-align: center">
-<a href="http://code.google.com/"><img src="google_code.png" /></a>
-</td></tr></table>
+<img class="right" src="ajax.jpg" />
 
-_Updated 2010-03-29._
-
-[ajax_search.js](/ajax_search.js) uses the
+[ajax_search.js](/w/wp-content/themes/snarfed/ajax_search.js) uses the
 [Google AJAX Search API](http://code.google.com/apis/ajaxsearch/signup.html)
 to do site search. It's similar to Google's
 [existing site search](http://services.google.com/searchcode2.html?accept=on#both),
@@ -16,15 +10,13 @@ except that it shows the results within _your_ site, not Google's. It also
 degrades gracefully, by falling back to standard Google site search over HTTP
 for users who don't have JavaScript.
 
-You can [check out the JavaScript](/ajax_search.js), or
-<a href="#" onclick="new site_search('snarfed.org', 'ajax'); return false;">
- try it out</a>
-right now! But heads up, your browser's back button won't work. Blame AJAX.
+You can [check out the JavaScript](/w/wp-content/themes/snarfed/ajax_search.js),
+or [try it out](/?s=ajax) right now!
 
 To use this on your site, first
 [apply for an AJAX Search API key](http://code.google.com/apis/ajaxsearch/signup.html).
-Then, place [ajax_search.js](/ajax_search.js) on your server and the
-following HTML on your page:
+Then, place [ajax_search.js](/w/wp-content/themes/snarfed/ajax_search.js) on
+your server and the following HTML on your page:
 
     <form class="form" method="get" action="http://www.google.com/search"
       onsubmit="new site_search('[YOUR_DOMAIN]', q.value); return false;">
@@ -41,6 +33,9 @@ Replace `[YOUR_KEY]`, `[YOUR_DOMAIN]`, and `[PATH]` with your AJAX Search API
 key, your site's domain, and the path to `ajax_search.js` on your server,
 respectively.
 
+<a href="http://code.google.com/">
+  <img class="right" src="google_code.png" /></a>
+
 Finally, set the `results_div_id` variable in `ajax_search.js` to the id of an
 div where you want search results to be placed. This div will be deleted and
 recreated when a search is performed. You can also customize `results_header`,
@@ -50,14 +45,11 @@ The search results are placed in divs with distinct classes, so you can style
 them with CSS. Here are the classes:
 
     gsc-title
-    gsc-back
-   
     gs-result
      |- gs-title
      |- gs-snippet
      |- gs-visibleUrl
      |- gs-watermark
-   
     gsc-branding
      |- gsc-branding-text
      |- gsc-branding-img-noclear
@@ -65,7 +57,6 @@ them with CSS. Here are the classes:
 The [AJAX Search API stylesheet](http://www.google.com/uds/css/gsearch.css)
 has more details. As an example, here's the CSS used on this site:
 
-    div.gsc-back            { float: right; }
     div.gs-result           { margin-top: 1em; }
     div.gs-title            { text-decoration: underline; }
     div.gs-visibleUrl       { color: green; }
@@ -74,23 +65,25 @@ has more details. As an example, here's the CSS used on this site:
     div.gs-watermark        { display: none; }
     
     div.gs-snippet {
-      font-size: .8em;
-      letter-spacing: -.05em;
+      font-size: .9em;
     }
     
     div.gs-snippet br { display: none; }
     
-    table.gsc-branding   { border: none; }
+    table.gsc-branding   {
+      border: none;
+      margin-top: 1em;
+    }
     td.gsc-branding-text { color: gray; }
-    
     td.gsc-branding-img-noclear {
       padding-left: 2px;
       padding-top: 5px;
     }
     img.gsc-branding-img-noclear { margin-bottom: -3px; }
 
-Happy AJAX searching!
+One final note: `ajax_search.js` doesn't handle browser history or the back
+button. If you want the back button to work, consider
+[setting `window.location` or `window.location.hash`](http://ajaxpatterns.org/Unique_URLs),
+the current preferred approach.
 
-[ajax_search.js](/ajax_search.js) is copyright 2006 [Ryan
-Barrett](about), and is distributed under the
-[GPL](http://www.gnu.org/licenses/gpl.html).
+Happy AJAX searching!

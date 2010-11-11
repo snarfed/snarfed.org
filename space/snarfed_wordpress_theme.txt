@@ -5,14 +5,14 @@ snarfed WordPress theme
 
 <!-- to package:
 cd ~/src/wordpress/themes
-zip -r snarfed_wordpress_theme.zip snarfed -x \*/.svn/\*
+zip -r snarfed_wordpress_theme.zip snarfed -x \*/.svn/\* -x snarfed/screenshot.png
 
 ...started to submit it to wordpress's theme directory, jumped through a bunch
 of hoops, finally got sick of it and gave up when it asked me to add gravatar
 support.
 -->
 
-[Download snarfed theme 0.2](snarfed_wordpress_theme.zip)
+[Download snarfed theme 0.3](snarfed_wordpress_theme.zip)
 
 This site runs on [WordPress](http://wordpress.org/) and uses its own
 [WordPress theme](http://codex.wordpress.org/Using_Themes), the
@@ -34,7 +34,7 @@ Features:
 
   * Search via my
     [AJAX site search script](http://snarfed.org/site_search_with_the_google_ajax_search_api).
-    See below for configuration.
+    Included in the theme, but off by default. See below for configuration.
 
   * Automatic search for related pages on 404 errors.
 
@@ -49,22 +49,34 @@ Features:
   * Hide the comment form on initial page load. It appears when users click on the
     "Post a comment" link.
 
-  * [NextGEN Gallery](http://alexrabe.de/wordpress-plugins/nextgen-gallery/)
-    integration: custom album-compact and imagebrowser templates, styled to be
-    consistent with the rest of the site.
+  * Integration with a few plugins and services:
+  [NextGEN Gallery](http://alexrabe.de/wordpress-plugins/nextgen-gallery/),
+  [YARPP](http://mitcho.com/code/yarpp/),
+  [Google Analytics](http://analytics.google.com/)
+
+  * The NextGEN Gallery integration includes custom album-compact, imagebrowser,
+    and gallery templates, styled to be consistent with the rest of the site. It
+    also adds permalinks to
+    [Shutter Reloaded](http://www.laptoptips.ca/projects/wp-shutter-reloaded/),
+    one of the effects included in NextGEN Gallery. (They're the destination
+    links for the thumbnails in galleries.)
 
   * Link blog title to home page. Link blog description to [/about](about).
 
+  * Tweak the recent comments widget: add bubble icons and remove author names.
 
-Two of the features, AJAX site search and OpenID delegation, need a little extra
-configuration. You'll need to define new constants in your wp-config.php. Here's
-an example:
+  * Highlight comments from the author of a given post or page.
+
+Some of the features - AJAX site search, OpenID delegation, Google Analytics -
+need a little extra configuration. You'll need to define new constants in your
+wp-config.php. Here's an example:
 
     define('OPENID_DELEGATION_PROVIDER',
            'https://www.google.com/accounts/o8/ud?source=profiles');
     define('OPENID_DELEGATION_LOCAL_ID',
            'http://www.google.com/profiles/[USERNAME]);
     define('GOOGLE_AJAX_SEARCH_API_KEY', '[KEY]');
+    define('GOOGLE_ANALYTICS_ID', '[ID]);
 
 
 The snarfed WordPress theme is in the public domain.
