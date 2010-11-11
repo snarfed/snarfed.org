@@ -343,6 +343,7 @@ hibernate, since they try to suspend anacron first.
     * aumix
     * emacs23-el
     * emacs23-lucid (replaces emacs23-gtk)
+    * gcalcli
     * ion3
     * ion3-dev
     * ion3-doc
