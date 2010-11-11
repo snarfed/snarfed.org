@@ -12,7 +12,7 @@ I've also [written](more_minimalist_gmail)
 basis.
 
 Unfortunately, Stylish's development workflow doesn't work well for me. I edit
-everything with [Emacs](/emacs), store everything in
+everything with [Emacs](/?s=emacs), store everything in
 [Subversion](http://subversion.tigris.org/), and avoid the mouse at all costs.
 I go to great lengths to make my
 [edit-compile-test loop](http://www.joelonsoftware.com/articles/fog0000000023.html)
