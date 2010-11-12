@@ -6,6 +6,16 @@
  * Aggressively hides Gmail's UI and chrome, leaving only your email, labels, and
  * search box. Inspired by Matt Constantine's Minimalist Gmail,
  * http://mattconstantine.com/mg .
+ *
+ * Changelog:
+ * 0.2
+ * - show built in labels like Inbox, Drafts when they have unread messages
+ * - show Move to Inbox button
+ * - show Settings link in upper right
+ * - re-hide stars
+ * - hide new top right header sections
+ * 0.1
+ * - initial release
  */
 
 @namespace url(http://www.w3.org/1999/xhtml);
@@ -13,10 +23,9 @@
 @-moz-document domain(mail.google.com) {
 
 div.pA,
-div.LrBjie,
 div.n6,
 div.pX,
-div.Pl,
+div.Pl *,
 div.CM,
 div.qj,
 div.yV,
@@ -35,16 +44,52 @@ span.jNNpPe,
 td.fA,
 div.eh,
 div.f6,
-div.nH.qp,
+div#gbar,
 div.nH.l2.ov,
 div.AY.D.E,
 img.zG,
+img.EqK8f,
 table.Bs.nH.iY td.Bu:nth-child(2),
 table.Bs.nH.iY td.Bu:nth-child(3)
 {
   display: none !important;
 }
 
+/*
+ * Right side header (logged in user, settings/sign out links)
+ * (Note the > child selector. The * universal selector is *descendant*,
+ * ie any depth, not just direct child.)
+ */
+div#guser nobr > * {
+  display: none;
+}
+
+div#guser nobr {
+  color: transparent;
+}
+
+div#guser nobr a:nth-child(7),
+div#guser nobr a:nth-child(6)
+{  /* Settings link */
+  display: inline !important;
+  opacity: .2 !important;
+}
+
+/* [redacted] */
+div#gbz, ol.gbtc li:nth-child(2), li.gbt.gbtb {
+  display: none !important;
+}
+
+#gb, #gbx1, #gbx2, #gbx3, #gbx4, .gbvt, .gbgt, .gbtcb, .gbtb2, .gbmc, .gbts, #gbs {
+  background-color: transparent !important;
+  border: none !important;
+}
+
+#gbx1, #gbx2, #gbx3, #gbx4 {
+  background-image: none !important;
+}
+
+/* lines between each thread in list view */
 td.xY {
   border-bottom: none !important;
 }
@@ -54,6 +99,24 @@ td.oZ-x3.xY {
   background-image: none !important;
 }
 
+/* Move to Inbox button */
+div.J-Zh-I.J-J5-Ji.L3[act="8"] {
+  display: inline !important;
+}
+
+/* Inbox, Sent Mail, Drafts, etc on left side. want to show them only when they have unread messages */
+div.LrBjie div.TK div.TO div.TN .nU {
+  display: none;
+}
+div.LrBjie div.TK div.TO div.TN .nU.n1 {
+  display: inline;
+}
+
+/* highlighted background to show which one is currently viewed. only do that for my own labels. */
+div.LrBjie div.TK div.TO.nZ {
+  background-color: transparent !important;
+}
+
 }
 
 /*
@@ -61,7 +124,12 @@ UI
 --
 div.aC,     // entire header
 div.nH.l2.ov // entire footer
-div.nH.qp   // top common google header
+div.nH.qp#gb // top common google header
+div#gbar    // left side header (Gmail Calendar Documents ...)
+div#gbz     // left side header (Loop Mail Calendar Documents ...)
+div#guser   // right side header (logged in user, settings/sign out links, ...)
+ol.gbtc     // right side header with [redacted] stuff
+a#gbg5      // top right settings drop-down, gear icon
 div.a9.Z4b7Xb // #:rm, gmail logo
 div.a9.Rgky9 // #:rm, gmail logo
 td.bN.bM,   // search mail/web buttons in header
@@ -69,6 +137,7 @@ div.A1.D.E  // inner header in thread list
 div.AY.D.E  // inner footer in thread list
 td.xY       // the component parts of each row in thread list
 img.zG      // star in thread list rows
+img.EqK8f   // star in thread list rows
 div.nH.pp.T0 // chat
 td.bN.bR,   // show search options and create a filter links
 div.z0      // Compose Mail button
@@ -77,6 +146,7 @@ div.n6,     // X more labels
 div.nH.CX.pp // Mail and Contacts links
 div.nH.T4.pp // Tasks link
 div.CM,     // horizontal line between Inbox etc links and label links
+div.nL.J-J5-Ji  // Each of Inbox, Sent Mail, Drafts, etc
 div.TN,     // Inbox
 div#n1,     // Sent Mail
 div#n0,     // Drafts
@@ -92,6 +162,7 @@ div#:pv,    // Labels drop-down button
 div#:pu,    // More actions drop-down button
 div.Pl.J-J5-Ji // all buttons
 div.AP      // Refresh link
+div#:1bc    // Labels drop-down
 div.Cr      // X-Y of Z counter
 div.yV      // select (all, none, ...) bar
 div.iE      // bottom row of buttons
@@ -103,7 +174,6 @@ Conversation
 div.iI.D.E  // inner header
 div.f6      // XXX is not available to chat
 table.Bs.nH.iY td.Bu:last-child // right side pane with ads, "New window" link, etc
-
 
 Compose
 -------

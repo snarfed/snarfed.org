@@ -3,12 +3,15 @@
  * http://snarfed.org/google_calendar_simplified_userstyle
  * Ryan Barrett <userstyles@ryanb.org>
  *
- * Simplifies Google Calendar by removing the calendar header and footer and
- * hiding the search bar, header, and left pane until you mouse over them.
- * Inspired by Aziz's original (deprecated) Google Calendar Simplified
- * userstyle, http://userstyles.org/styles/20945 .
+ * Simplifies Google Calendar by removing the calendar header (except for the
+ * settings link) and footer and many other things. Inspired by Aziz's original
+ * (deprecated) Google Calendar Simplified userstyle,
+ * http://userstyles.org/styles/20945 .
  *
  * Changelog:
+ * 0.2
+ * - drop the mouseover thing. always display left pane and search bar.
+ * - hide new header sections
  * 0.1, 2010/9/12:
  * - initial release
  */
@@ -22,23 +25,52 @@
   display: none !important;
 }
 
-/* shrink left sidebar until mouseover */
-#nav {
-  width: 5px !important;
-  opacity: 0 !important;
-}
-#nav:hover {
-  width: 169px !important;
-  opacity: 1 !important;
+/* [redacted] */
+div#gbz, ol.gbtc li:nth-child(2), li.gbt.gbtb {
+  display: none !important;
 }
 
-/* hide account and search headers until mouseover */
-#guser, #srreg {
-  opacity: 0 !important;
-  width: 100%;
+#gb, #gbx1, #gbx2, #gbx3, #gbx4, .gbvt, .gbgt, .gbtcb, .gbtb2, .gbmc, .gbts, #gbs {
+  background-color: transparent !important;
+  border: none !important;
 }
-#guser:hover, #srreg:hover {
-  opacity:1 !important;
+
+#gbx1, #gbx2, #gbx3, #gbx4 {
+  background-image: none !important;
+}
+
+/* Search my calendars button and Show search options link */
+form.msf-container div.msf-button, form.msf-container span.lk {
+  display: none !important;
+}
+
+/*
+ * Right side header (logged in user, settings/sign out links)
+ * (Note the > child selector. The * universal selector is *descendant*,
+ * ie any depth, not just direct child.)
+ */
+div#guser nobr > * {
+  /* opacity: 0; */
+  display: none;
+}
+
+div#guser nobr {
+  color: transparent;
+}
+
+div#guser nobr a.gb3,  /* Settings link */
+div#gbg  /* Settings drop-down menu */
+{
+  display: inline !important;
+}
+
+div#guser nobr a.gb3 {
+  opacity: .3 !important;
+}
+
+/* build signature */
+#bdata {
+  opacity: .2;
 }
 
 }
