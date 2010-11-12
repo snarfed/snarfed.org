@@ -3,11 +3,11 @@ snarfed.org SnipSnap theme
 <a class="shutter" href="snarfed_theme_screenshot.jpg">
   <img class="right shadow" src="snarfed_theme_screenshot_thumb.jpg" /></a>
 
-[SnipSnap](http://snipsnap.org/), the server that used to run this site,
-supports [themes](http://snipsnap.org/space/Themes). They change your
-SnipSnap-based site's appearance, using [CSS](http://www.w3.org/Style/CSS/),
-images, and other files, without changing its content. There's a
-[tutorial](http://snipsnap.org/space/Theme+Tutorial) on
+[SnipSnap](http://snipsnap.org/), the server that <strike>runs</strike> used to
+run this site, supports [themes](http://snipsnap.org/space/Themes). They change
+your SnipSnap-based site's appearance, using
+[CSS](http://www.w3.org/Style/CSS/), images, and other files, without changing
+its content. There's a [tutorial](http://snipsnap.org/space/Theme+Tutorial) on
 [snipsnap.org](http://snipsnap.org/).
 
 The snarfed.org theme is [available for download](snarfed_theme.snip).

@@ -63,7 +63,8 @@ to [Gnutella](http://rfc-gnutella.sourceforge.net/) and
 library](libmsntp). It provides both client and server functionality.
 
   * [Snipsnap macros](snipsnap_macros) is a collection of macros for
-[SnipSnap](http://snipsnap.org), the web server that runs this site.
+[SnipSnap](http://snipsnap.org), the web server that <strike>runs</strike> used
+to run this site.
 
   * [Tictactoe](tictactoe) is an OpenGL engine that provides realistic
 procedural modelling and rendering of water.

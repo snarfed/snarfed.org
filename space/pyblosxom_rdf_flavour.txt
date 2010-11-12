@@ -8,10 +8,11 @@ For the impatient:
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
 &nbsp; [PyBlosxom flavour registry](http://pyblosxom.sf.net/blog/registry/flavours?sortby=path)
 
-[PyBlosxom](http://pyblosxom.sf.net/), the server software that runs this site,
-uses [flavours](http://pyblosxom.sf.net/1.3.1/manual/c224.html) to render pages
-in different formats. Pyblosxom comes with a number of flavours, including
-plain HTML, RSS (0.91 and 2.0), and Atom.
+[PyBlosxom](http://pyblosxom.sf.net/), the server software that
+<strike>runs</strike> used to run this site, uses
+[flavours](http://pyblosxom.sf.net/1.3.1/manual/c224.html) to render pages in
+different formats. Pyblosxom comes with a number of flavours, including plain
+HTML, RSS (0.91 and 2.0), and Atom.
 
 I've added an [RDF flavour](rdf_flavour.tar.gz) that uses
 [Dublin Core](http://dublincore.org/schemas/xmls/) elements.

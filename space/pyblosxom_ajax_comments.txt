@@ -13,11 +13,12 @@ For the impatient:
 &nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
 &nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)
 
-[PyBlosxom](http://pyblosxom.sf.net/), the server software that runs this site,
-uses a [plugin](http://pyblosxom.sourceforge.net/blog/registry/input/comments)
-to handle commenting.
-This patch adds [AJAX](http://en.wikipedia.org/wiki/Ajax_\(programming\))
-support to that plugin. [Try it!](#comment-anchor)
+[PyBlosxom](http://pyblosxom.sf.net/), the server software that
+<strike>runs</strike> used to run this site, uses a
+[plugin](http://pyblosxom.sourceforge.net/blog/registry/input/comments) to
+handle commenting. This patch adds
+[AJAX](http://en.wikipedia.org/wiki/Ajax_\(programming\)) support to that
+plugin. [Try it!](#comment-anchor)
 
 Specifically, comment previewing and posting can optionally use AJAX, as
 opposed to full HTTP POST requests. This avoids a full-size roundtrip and

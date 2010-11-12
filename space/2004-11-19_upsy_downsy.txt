@@ -8,10 +8,10 @@ while more. It should be up and stable now.
 
 _[Nerd alert! Unless you're a nerd, stop reading now!]_
 
-[SnipSnap](SnipSnap), the server that runs this site, uses
-[McKoi](http://mckoi.com/) as its embedded database, and the two have never had
-an easy relationship. McKoi routinely gets corrupted and needs to be repaired.
-This time it lost its head(er) entirely, and refused to be recovered.
+[SnipSnap](SnipSnap), the server that <strike>runs</strike> used to run this
+site, uses [McKoi](http://mckoi.com/) as its embedded database, and the two have
+never had an easy relationship. McKoi routinely gets corrupted and needs to be
+repaired. This time it lost its head(er) entirely, and refused to be recovered.
 
 Thankfully, I backup the site often, and I'd been meaning to upgrade SnipSnap
 anyway so that I could dump Mckoi. This was just the straw that broke the
