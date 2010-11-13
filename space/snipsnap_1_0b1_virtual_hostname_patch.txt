@@ -13,8 +13,8 @@ source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b1-uttoxeter-20040914-src.tgz)
 [Patching
 FAQ](http://www.gnu.org/software/diffutils/manual/html_node/Merging-with-patch.html)
 
-I use [SnipSnap](SnipSnap) as the web server for this site, and I love
-it. However, nothing's perfect, even SnipSnap.
+I <strike>use</strike> used to use [SnipSnap](SnipSnap) as the web server for
+this site, and I love it. However, nothing's perfect, even SnipSnap.
 
 SnipSnap runs on top of [Jetty](http://jetty.mortbay.org/), a Java web server
 and servlet container. Jetty is highly configurable, which I take advantage of

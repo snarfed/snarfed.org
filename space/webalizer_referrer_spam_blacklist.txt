@@ -3,13 +3,12 @@ webalizer referrer spam blacklist
 <a href="webalizer_referrer_spam_blacklist">
   <img class="right" src="spam.jpg" /></a>
 
-[Referrer
-spam](http://www.spywareinfo.com/articles/referer_spam/) - or by Apache's
-original misspelling, _referer_ spam - has been a problem at snarfed.org for
-years. My webalizer logs were publicly
-accessibl at one point, so spammers targeted this site with fake referrers, hoping that
-they'll be linked from the pages that
-[webalizer](http://www.mrunix.net/webalizer/) generates.
+[Referrer spam](http://www.spywareinfo.com/articles/referer_spam/) - or by
+Apache's original misspelling, _referer_ spam - has been a problem at
+snarfed.org for years. My webalizer logs were publicly accessible at one point,
+so spammers targeted this site with fake referrers, hoping that they'll be
+linked from the pages that [webalizer](http://www.mrunix.net/webalizer/)
+generates.
 
 There are a number of approaches to fighting referrer spam, but so far, no
 silver bullet. I currently handle it a hand-edited blacklist of known spammer's

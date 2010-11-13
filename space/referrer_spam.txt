@@ -6,9 +6,9 @@ referrer spam
 [Referrer spam](http://www.spywareinfo.com/articles/referer_spam/) - or by
 Apache's original misspelling, _referer_ spam - has been a problem at
 snarfed.org for years. I use [Summary](http://summary.net/) for web analytics,
-and I made its statistic pages publicly available for a while, so spammers
-still hit this site fake referrers, to this day, hoping that they'll be linked
-from the Summary pages.
+and I made its statistic pages publicly available for a while, so spammers hit
+this site with fake referrers, hoping that they'll be linked from the Summary
+pages.
 
 There are a number of approaches to fighting referrer spam, but so far, no
 silver bullet. Here's what I did while my Summary output was online.

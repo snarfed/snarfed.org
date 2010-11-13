@@ -9,12 +9,12 @@ snipsnap.org](http://snipsnap.org/space/register+without+email)._
 
 ### I don't want your email address...
 
-[SnipSnap](http://snipsnap.org/), which [powers this site](snipsnap), lets
-visitors [register](/exec/register.jsp) so that they can log in, comment on
-existing pages, and create their own pages. The default registration page asks
-you for a username, a a password, and optionally, an email address. It's not
-obvious that the email is optional, though, and many people have learned not to
-give their email address to random web sites.
+[SnipSnap](http://snipsnap.org/), which <strike>runs</strike> used to run this
+site, lets visitors [register](/exec/register.jsp) so that they can log in,
+comment on existing pages, and create their own pages. The default registration
+page asks you for a username, a a password, and optionally, an email address.
+It's not obvious that the email is optional, though, and many people have
+learned not to give their email address to random web sites.
 
 [My site](/) is small and personal, so I don't need email addresses. On the
 contrary, I don't want anything to discourage my friends from registering. So, I

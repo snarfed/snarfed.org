@@ -7,13 +7,13 @@ Back!
 We're back up! Sorry for the inconvenience, and thanks for your patience.
 
 What happened? In short, my [hosting provider](http://pair.com/) disabled my
-[PyBlosxom](http://pyblosxom.sourceforge.net/) CGI script, which runs this site.
-It was using too much CPU on my server ([ambym](http://ambym.pair.com/)) for
-sustained periods of time, due to a combination of [comment and referrer
-spam](referrer_spam) storms and
+[PyBlosxom](http://pyblosxom.sourceforge.net/) CGI script, which
+<strike>runs</strike> used to run this site. It was using too much CPU on my
+server ([ambym](http://ambym.pair.com/)) for sustained periods of time, due to a
+combination of [comment and referrer spam](referrer_spam) storms and
 [inefficient](http://pyblosxom.sourceforge.net/registry/input/comments/comments.html)
-[plugins](pyblosxom_history), and it was impacting other sites.
-I may not have liked that they turned me off, but it was only reasonable.
+[plugins](pyblosxom_history), and it was impacting other sites. I may not have
+liked that they turned me off, but it was only reasonable.
 
 In the short term, I blocked a bunch of spammer IP addresses and optimized the
 [comments](http://pyblosxom.sourceforge.net/registry/input/comments/comments.html)
