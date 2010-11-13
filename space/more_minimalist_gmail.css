@@ -8,12 +8,13 @@
  * http://mattconstantine.com/mg .
  *
  * Changelog:
- * 0.2
+ * 0.3 11/12/2010
  * - show built in labels like Inbox, Drafts when they have unread messages
  * - show Move to Inbox button
+ * - hide new top right header sections
+ * 0.2
  * - show Settings link in upper right
  * - re-hide stars
- * - hide new top right header sections
  * 0.1
  * - initial release
  */
