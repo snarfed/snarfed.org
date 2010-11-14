@@ -323,7 +323,7 @@ hibernate, since they try to suspend anacron first.
 
   Then `sudo service postfix restart`.
 
-  * [NetworkManager]() not using connections you think it should be using? Check
+  * NetworkManager not using connections you think it should be using? Check
     the file permissions in `/etc/NetworkManager/system-connections/`. If
     they're group or world readable or writable, or not owned by root, that's
     probably why. You can confirm that this is the problem by looking for lines
