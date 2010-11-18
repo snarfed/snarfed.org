@@ -358,7 +358,7 @@ hibernate, since they try to suspend anacron first.
     * php5-mysql
     * pidgin
     * python-mysqldb
-    * rxvt
+    * rxvt-unicode
     * subversion
     * sysfsutils
     * tkdiff
