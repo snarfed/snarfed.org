@@ -20,7 +20,7 @@ place. Here's the
       '(backup-directory-alist '((".*" . "~/.emacs.d/backups/"))))
     
     ;; create the autosave dir if necessary, since emacs won't.
-    (mkdir "~/.emacs.d/autosaves/" t)
+    (make-directory "~/.emacs.d/autosaves/" t)
 
 ...and, courtesy of [Amit Patel](http://www-cs-students.stanford.edu/~amitp/),
 here's the elisp for XEmacs.
