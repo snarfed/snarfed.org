@@ -3,12 +3,11 @@ emacs X resources
 <a href="http://gnu.org/software/emacs/">
   <img class="right" src="gnu.jpg" /></a>
 
-I
-do most of my [Emacs](http://gnu.org/software/emacs/) customization in [my
-.emacs file](dotfiles/emacs). However, Emacs starts
-itself and creates an X11 window _before_ it reads the .emacs file. So,
-customizations that affect the window itself are very expensive, since they're
-applied _after_ the window is created.
+I do most of my [Emacs](http://gnu.org/software/emacs/) customization in
+[my .emacs file](dotfiles/emacs). However, Emacs starts itself and creates an
+X11 window _before_ it reads the .emacs file. So, customizations that affect the
+window itself are very expensive, since they're applied _after_ the window is
+created.
 
 A few of these customizations include turning the menu bar, toolbar, and scroll
 bars off, as well as setting custom fonts and colors. Luckily, there's a much
