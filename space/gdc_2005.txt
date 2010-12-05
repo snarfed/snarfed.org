@@ -1,38 +1,27 @@
 GDC 2005
 
-[![gdc.jpg](gdc.jpg)](http://gdconf.com/)
+<a href="http://gdconf.com/"><img src="gdc.jpg" class="shadow"></a>
 
 I just got back from
 [GDC](http://gdconf.com/), and now that I'm finally caught up on sleep debt,
 I've posted some pictures and written up some of the highlights.
 
-[![mike_sam_ryan.jpg](gdc_2005_pictures/thumbs/mike_sam_ryan.jpg)](/space/gdc_2005_pictures/mike_sam_ryan.jpg)
-[![ryan_mike.jpg](gdc_2005_pictures/thumbs/ryan_mike.jpg)](/space/gdc_2005_pictures/ryan_mike.jpg)
-[![mike_presentation.jpg](gdc_2005_pictures/thumbs/mike_presentation.jpg)](/space/gdc_2005_pictures/mike_presentation.jpg)
-[![sam_mike.jpg](gdc_2005_pictures/thumbs/sam_mike.jpg)](/space/gdc_2005_pictures/sam_mike.jpg)
-[![sam_mike_serious.jpg](gdc_2005_pictures/thumbs/sam_mike_serious.jpg)](/space/gdc_2005_pictures/sam_mike_serious.jpg)
+[nggallery id=120]
 
+### Contents:
 
--[Overview](#overview)
-
--[My favorites](#favorites)
-
--[Tim Sweeney: Unreal 3](#sweeney)
-
--[Peter Molyneux: The Room](#molyneux)
-
--[Emily Dickinson](#dickinson)
-
--[Will Wright: Spore](#wright)
-
--[J Allard: Xenon (ie XBox 360)](#allard)
-
--[Experimental Gameplay Workshop](#experimental)
-
--[Awards: IGF and Developer's Choice](#awards)
+* [Overview](#overview)
+* [My favorites](#favorites)
+* [Tim Sweeney: Unreal 3](#sweeney)
+* [Peter Molyneux: The Room](#molyneux)
+* [Emily Dickinson](#dickinson)
+* [Will Wright: Spore](#wright)
+* [J Allard: Xenon (ie XBox 360)](#allard)
+* [Experimental Gameplay Workshop](#experimental)
+* [Awards: IGF and Developer's Choice](#awards)
 
 <a name="overview"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#overview) Overview
+### Overview
 
 As always, GDC was overwhelmingly fun. I saw amazing demos, heard
 thought-provoking talks from inspiring people, and of course, partied way too
@@ -55,7 +44,7 @@ out this year's
 [Independent Games Festival](http://gdconf.com/schedule/igf.htm).
 
 <a name="favorites"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#favorites) My favorites
+### My favorites
 
 For my money, the coolest, most progressive talks were fairly small: [natural
 language processing in
@@ -71,7 +60,7 @@ proof-of-concept game, which they plan to release in a month or so. I can't wait
 to try it.
 
 <a name="sweeney"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#sweeney) Tim Sweeney: Unreal 3 Engine
+### Tim Sweeney: Unreal 3 Engine
 
 Tim Sweeney showed the
 [Unreal 3 engine and
@@ -87,7 +76,7 @@ games, so it's more than just
 talk.
 
 <a name="molyneux"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#molyneux) Peter Molyneux: The Room
+### Peter Molyneux: The Room
 
 Peter Molyneux demoed [Black & White
 2](http://www.gamespot.com/news/2005/03/11/news_6120276.html), and gave a Fable
@@ -98,7 +87,7 @@ interactivity were a huge step beyond Black &
 White.
 
 <a name="dickinson"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#dickinson) Emily Dickinson
+### Emily Dickinson
 
 The Room also appeared in the game design challenge session. Molyneux joined
 Will Wright and Clint Hocking (of Ubisoft), and they were all challenged to
@@ -109,7 +98,7 @@ just how good these three designers
 are.
 
 <a name="wright"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#wright) Will Wright: Spore
+### Will Wright: Spore
 
 [Will Wright unveiled Spore](http://www.gamespy.com/articles/595/595975p1.html)
 ([screenshots](http://www.gamingsteve.com/archives/2005/03/pictures_of_wil.php)),
@@ -130,7 +119,7 @@ White 2 felt more like a big expansion
 pack.
 
 <a name="allard"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#allard) J Allard: Xenon (ie XBox 360)
+### J Allard: Xenon (ie XBox 360)
 
 There's been [a lot of
 flak](http://www.costik.com/weblog/2005_03_01_blogchive.html#111069190589189590)
@@ -165,7 +154,7 @@ budget. He wasn't kidding about the "HD
 Era"...
 
 <a name="experimental"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#experimental) Experimental Gameplay Workshop
+### Experimental Gameplay Workshop
 
 The experimental gameplay workshop kicked ass. Highlights included the [Indie
 Game Jam](http://indiegamejam.com/) (experienced developers get together and
@@ -178,7 +167,7 @@ In The
 Desert](http://atitd.com/).
 
 <a name="awards"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#awards) Awards: IGF and Developer's Choice
+### Awards: IGF and Developer's Choice
 
 Oh, and the [awards](http://gdconf.com/schedule/choiceawards.htm)! [Half-Life
 2](http://half-life2.com/) swept four, including best game, and [Katamari

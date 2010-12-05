@@ -17,9 +17,9 @@ I used [pico](http://www.washington.edu/pine/man/#pico) for a while, since I use
 depth and versatility. I considered [vi](http://vim.org/), but I wasn't exposed
 to it in the womb, and I'm not sure there's any other way to learn it. :P
 
-More importantly, I didn't like using two different editors. [Mental context
-switches](http://joelonsoftware.com/articles/fog0000000022.html) are evil
-incarnate, and switching between text editors is a big context switch.
+More importantly, I didn't like using two different editors.
+[Mental context switches](http://joelonsoftware.com/articles/fog0000000022.html)
+are evil incarnate, and switching between text editors is a big context switch.
 
 So, I set out to make the minimal emacs -nw setup - lightwight, fast to start,
 and still usable for casual editing. It actually turned out to be fairly easy. I
@@ -28,8 +28,7 @@ use this command to start emacs:
     emacs -nw --no-init-file --no-site-file \
       --load .emacs.minimal
 
-and this elisp in my [my minimal
-.emacs](dotfiles/emacs):
+and this elisp in my [my minimal .emacs](dotfiles/emacs):
 
     ; cutoff for word wrap
     (setq-default fill-column 79)

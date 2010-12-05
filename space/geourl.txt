@@ -8,10 +8,11 @@ is a nifty site that maps web sites to geographical locations, similar to
 [geocoding](geocoding). It also maintains this index in reverse, which
 you can use to find sites located near other sites in the real world.
 
-To connect your web page to GeoUrl, [follow their
-instructions](http://geourl.org/add.html) to find your coordinates and add an
-ICBM header to your page. Then, [ping GeoUrl](http://geourl.org/ping/) with your
-site. Finally, add a link to other sites near your own, like so:
+To connect your web page to GeoUrl,
+[follow their instructions](http://geourl.org/add.html) to find your coordinates
+and add an ICBM header to your page. Then,
+[ping GeoUrl](http://geourl.org/ping/) with your site. Finally, add a link to
+other sites near your own, like so:
 
 [http://geourl.org/near/?p=http://snarfed.org/](http://geourl.org/near/?p=http://snarfed.org/)
 

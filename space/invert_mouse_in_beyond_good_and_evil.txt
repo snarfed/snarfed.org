@@ -4,23 +4,23 @@ invert mouse in Beyond Good &amp; Evil
 [![/space/box.jpg](box.jpg)](http://beyondgoodevil.com/)
 [![/space/explosion.jpg](explosion.jpg)](http://beyondgoodevil.com/)
 
-_If you like Beyond Good & Evil, you might also like [my
-writeup](2004-11-11_beyond_good_and_evil) and the [soundtrack](/space/Beyond_Good_&_Evil_soundtrack)._
+_If you like Beyond Good & Evil, you might also like
+[my writeup](2004-11-11_beyond_good_and_evil) and the
+[soundtrack](/space/Beyond_Good_&_Evil_soundtrack)._
 
 **Problem**
 
-I recently played the game Beyond Good & Evil, and I [loved every
-minute](2004-11-11_beyond_good_and_evil) of it. However, it has [a
-bug](http://forums.ubi.com/eve/ubb.x?a=tpc&s=400102&f=401101532&m=286101532&r=396101532#396101532)
+I recently played the game Beyond Good & Evil, and I
+[loved every minute](2004-11-11_beyond_good_and_evil) of it. However, it has
+[a bug](http://forums.ubi.com/eve/ubb.x?a=tpc&s=400102&f=401101532&m=286101532&r=396101532#396101532)
 that prevents inverting the mouse input, in both "look" and "camera" modes.
 
 I'm very used to inverting the mouse in games, so I looked for a fix. Anything
 that can invert mouse input on the y axis, and works with
 [DirectInput](http://msdn.microsoft.com/library/default.asp?url=/library/en-us/dninput/html/diov.asp)
 would work. After a lot of work, including posts to many forums, and even a
-[Google Answers
-question](http://answers.google.com/answers/threadview?id=408579), I found a few
-solutions.
+[Google Answers question](http://answers.google.com/answers/threadview?id=408579),
+I found a few solutions.
 
 **Solutions**
 
@@ -29,10 +29,8 @@ a [shareware mouse driver](http://www.maf-soft.de/mafmouse/)
 that inverts the y axis. Thanks, Moritz!
 
 Otherwise, if you have Logitech MouseWare, and you're comfortable editing the
-registry, try Ashley Ings'
-[instructions](#comments),
-originally posted [on the Logitech
-forums](http://forums.logitech.com/pe/forums/displaypost.jsp?postID=10125316).
+registry, try Ashley Ings' [instructions](#comments), originally posted
+[on the Logitech forums](http://forums.logitech.com/pe/forums/displaypost.jsp?postID=10125316).
 It works with both Logitech and non-Logitech mice.
 
 **Background**
@@ -49,10 +47,10 @@ the mouse input (per-axis).
 I first looked through the windows mouse control panel, the registry, etc., and
 didn't found anything.
 
-I tried installing [Logitech's
-MouseWare](http://www.logitech.com/index.cfm?countryid=19&languageid=1&page=downloads/software&CRID=1793&contentid=6003)
-and [Advanced Settings
-Utility](http://www.logitech.com/index.cfm/downloads/software/US/EN,CRID=1793,contentid=6003,OSID=1,softwareid=6819),
+I tried installing
+[Logitech's MouseWare](http://www.logitech.com/index.cfm?countryid=19&languageid=1&page=downloads/software&CRID=1793&contentid=6003)
+and
+[Advanced Settings Utility](http://www.logitech.com/index.cfm/downloads/software/US/EN,CRID=1793,contentid=6003,OSID=1,softwareid=6819),
 which lets you change the mouse's orientation, and has effect in
 DirectInput-based apps (close!), but doesn't let you change it per-axis. I also
 tried [Kensington MouseWorks](http://www.kensington.com/html/1461.html), but I

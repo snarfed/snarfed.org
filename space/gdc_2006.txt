@@ -25,56 +25,33 @@ months...
 
 ### Contents
 
-[Big budgets and the return of the garage developer](#budgets)
-
-[Fun and games? Or strictly business?](#business_or_fun)
-
-- [Sony's PS3 keynote](#sony)
-
-- [Nintendo's DS and Revolution keynote](#nintendo)
-
-- [Security and privacy meet SoX and the Feds](#privacy)
-
-[Games go data-driven](#data-driven)
-
-- [Tim Sweeney on building a game engine](#tim_sweeney)
-
-- [Emotional character control in Shadow of the Colossus](#colossus)
-
-- [God of War: lead designer vs. lead programmer](#god_of_war)
-
-- [Different perspectives in Ninety-Nine Nights](#n3)
-
-[How the pros invent games](#game_design)
-
-- [Game design challenge: Nobel Peace Prize](#challenge)
-
-- [Will Wright's keynote](#will_wright)
-
-- [Best game research of 2005](#research)
-
-- [Peter Molyneux goes MIA](#molyneux)
-
-[Metrics and analysis for...gameplay?](#analysis)
-
-- [Playing with physics in Half-life 2](#hl2)
-
-- [Ernest Adams on interactive fiction](#ernest_adams)
-
-- [Burn, baby, burn](#rant)
-
-[Talks I missed](#missed)
-
-[Extracurriculars!](#extra)
-
-- [Independent Games Festival](#igf)
-
-- [Game Developers' Choice Awards](#choice_awards)
-
-- [Video Games Live concert](#concert)
+* [Big budgets and the return of the garage developer](#budgets)
+* [Fun and games? Or strictly business?](#business_or_fun)
+  * [Sony's PS3 keynote](#sony)
+  * [Nintendo's DS and Revolution keynote](#nintendo)
+  * [Security and privacy meet SoX and the Feds](#privacy)
+* [Games go data-driven](#data-driven)
+  * [Tim Sweeney on building a game engine](#tim_sweeney)
+  * [Emotional character control in Shadow of the Colossus](#colossus)
+  * [God of War: lead designer vs. lead programmer](#god_of_war)
+  * [Different perspectives in Ninety-Nine Nights](#n3)
+* [How the pros invent games](#game_design)
+  * [Game design challenge: Nobel Peace Prize](#challenge)
+  * [Will Wright's keynote](#will_wright)
+  * [Best game research of 2005](#research)
+  * [Peter Molyneux goes MIA](#molyneux)
+* [Metrics and analysis for...gameplay?](#analysis)
+  * [Playing with physics in Half-life 2](#hl2)
+  * [Ernest Adams on interactive fiction](#ernest_adams)
+  * [Burn, baby, burn](#rant)
+* [Talks I missed](#missed)
+* [Extracurriculars!](#extra)
+  * [Independent Games Festival](#igf)
+  * [Game Developers' Choice Awards](#choice_awards)
+  * [Video Games Live concert](#concert)
 
 <a name="budgets"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#budgets) Big budgets and the return of the garage developer
+### Big budgets and the return of the garage developer
 
 A common refrain at [last year's GDC](GDC_2005) was the unstoppable
 ballooning of game budgets and teams. Due to the need for higher and higher
@@ -101,7 +78,7 @@ shoestring. I don't know what this dichotomy means in the short term, but it's
 bound to be an interesting ride.
 
 <a name="business_or_fun"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#business_or_fun) Fun and games? Or strictly business?
+### Fun and games? Or strictly business?
 
 [Microsoft](http://microsoft.com/)'s [Xbox 360](http://www.xbox.com/en-US/) was
 the platform keynote last year, so it was only natural that
@@ -224,7 +201,7 @@ session and chat logs. It's far from the sexiest topic, but it is a sign that
 the game industry is maturing.
 
 <a name="data-driven"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#data-driven) Games go data-driven
+### Games go data-driven
 
 I didn't go to many programming talks this year, but I still noticed a common
 theme. Bigger budgets for AAA games mean more opportunities for designers to
@@ -301,7 +278,7 @@ brilliant games like [Space Channel
 [Lumines](http://www.luminesgame.com/) with a tired-looking Gauntlet clone?!?
 
 <a name="game_design"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#game_design) How the pros invent games
+### How the pros invent games
 
 Most of my favorite GDC talks each year come from the game design track, and
 this year didn't disappoint. There were lots of interesting new mechanics and
@@ -407,7 +384,7 @@ be equally compelling. Unfortunately, [his talk was
 cancelled](http://www.gamespot.com/news/6146650.html). I was disappointed.
 
 <a name="analysis"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#analysis) Metrics and analysis for...gameplay?
+### Metrics and analysis for...gameplay?
 
 Apart from new gameplay ideas, I was struck by how often I heard about metrics
 and analysis for something as ephemeral as gameplay. Many game developers were
@@ -490,7 +467,7 @@ transcript](http://crystaltips.typepad.com/wonderland/2006/03/gdc_game_develo.ht
 is pretty thorough.
 
 <a name="missed"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#missed) Talks I missed
+### Talks I missed
 
 There were many more talks I wish I could have heard. Here are a few.
 
@@ -542,7 +519,7 @@ sequel to The Longest Journey, [which I
 loved](2005-08-04_the_longest_journey).
 
 <a name="extra"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#extra) Extracurriculars!
+### Extracurriculars!
 
 [![/space/choiceawards.jpg](choiceawards.jpg)](http://www.gamechoiceawards.com/gdca_6th.htm)
 [![/space/igf.jpg](igf.jpg)](http://igf.com/)

@@ -6,13 +6,12 @@ firefox 1.0pr and linksonly find as you type
 [![thunderbird.jpg](thunderbird.jpg)](http://mozilla.org/thunderbird/)
 [![bugzilla.jpg](bugzilla.jpg)](http://bugzilla.org/)
 
-I
-love [Firefox](http://mozilla.org/firefox/)'s
+I love [Firefox](http://mozilla.org/firefox/)'s
 [find-as-you-type](http://www.mozilla.org/access/type-ahead/), or
 typeahead-find, feature. It's the sole reason that I switched to Firefox from
 [Opera](http://opera.com/). Unfortunately, there's a problem with
-find-as-you-type in Firefox 1.0PR. _Update: This is fixed in [Firefox 1.0.1 and
-later](http://www.mozilla.org/products/firefox/all.html)._
+find-as-you-type in Firefox 1.0PR. _Update: This is fixed in
+[Firefox 1.0.1 and later](http://www.mozilla.org/products/firefox/all.html)._
 
 By default, find-as-you-type is turned off in Firefox. You can turn it on in the
 advanced preferences, but then it defaults to searching both text and links, not
@@ -23,8 +22,8 @@ type [about:config](about:config) in the URL bar.)
 This is all well and good. However, this setting
 [broke](https://bugzilla.mozilla.org/show_bug.cgi?id=251073) in Firefox 1.0PR.
 Luckily, the bug has been fixed, and while there isn't an official release with
-the bugfix in it, you can pick up a [nightly
-build](http://www.squarefree.com/burningedge/) that has the fix. I'm using
-[2004-10-18](http://www.squarefree.com/burningedge/#000602), and it's working
-great so far.
+the bugfix in it, you can pick up a
+[nightly build](http://www.squarefree.com/burningedge/) that has the fix. I'm
+using [2004-10-18](http://www.squarefree.com/burningedge/#000602), and it's
+working great so far.
 
