@@ -24,7 +24,8 @@ site. If you really want them, you can add them back by editing `functions.php`
 and `style.css`.
 
 snarfed is a [Thematic](http://themeshaper.com/thematic/) child theme, so you'll
-need Thematic installed too.
+need Thematic installed too. It fully supports Thematic 0.9.6.3, and partially
+supports 0.9.7.7, modulo a few cosmetic issues.
 
 Features:
 
