@@ -148,6 +148,10 @@ that can be imported back into SnipSnap.
 <a name="patches"></a>
 ### Patches
 
+  * A [patch](ajax_comment_preview_2.3_loading_and_error.patch) for the Wordpress 
+[Ajax Comment Preview](http://blogwaffe.com/ajax-comment-preview/) plugin that
+fixes bugs with the loading and error messages and wraps them in stylable spans.
+
   * A [patch](www_netflix_new_rating_regex.patch) for the
 [WWW::Netflix](http://search.cpan.org/dist/WWW-Netflix/) Perl library that
 update the regular expression it uses to screen-scrape movie ratings. This
