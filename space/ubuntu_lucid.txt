@@ -364,7 +364,10 @@ hibernate, since they try to suspend anacron first.
     * sysfsutils
     * tkdiff
     * tp-smapi-dkms
+    * udev
+    * usbmount
     * xloadimage
+    * yaml-mode
 
   I also downloaded, built, and installed
   [cnetworkmanager](http://vidner.net/martin/software/cnetworkmanager/) from
