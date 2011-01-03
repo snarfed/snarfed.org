@@ -94,13 +94,11 @@ for CC in $*; do
   # POST to the form. note that %24 is the url encoding for the $ character.
   TMPFILE=`mktemp /tmp/simonitor_out.XXXXXX` || exit 1
   FIELD_PREFIX=ctl00%24FullContent%24ctl03%24
-  set -x
-  if ( ! curl -v --output $TMPFILE $CURL_ARGS \
+  if ( ! curl --output $TMPFILE $CURL_ARGS \
          --data "__VIEWSTATE=${VIEWSTATE}&__PREVIOUSPAGE=4-dZCmGaD91563GruBwLxk-bnZ3BkrV6Zcez_7aDpju0nm10FgRi5JZj50L-tr_w7PbfSsr-9YKYRdnLVZ8jVPdxh841&returnUrl=http%3A%2F%2Fwww.simon.com%3A80%2Fgiftcard%2Fdefault.aspx&${FIELD_PREFIX}ccNumber=${CC_NUM}&${FIELD_PREFIX}ccCid=${CC_CID}&recaptcha_challenge_field=${RECAPTCHA_C}&recaptcha_response_field=${CAPTCHA}&${FIELD_PREFIX}checkBalanceSubmit.x=0&${FIELD_PREFIX}checkBalanceSubmit.y=0" \
          https://www.simon.com/giftcard/card_balance.aspx); then
     continue
   fi
-  set +x
 
   # scrape the address, expiration date, and balance
   BALANCE=`egrep -o 'lblBalance">[^<]+' $TMPFILE | sed 's/lblBalance">//'`
