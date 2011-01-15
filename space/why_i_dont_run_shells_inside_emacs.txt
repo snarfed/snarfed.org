@@ -34,8 +34,7 @@ _Ryan, you can fix this,_ it said, _and you know how._ It was right. I didn't
 want to admit it, but I did know how, and it did too. _Why don't you try running
 your shells inside Emacs?_
 
-I had a laundry list of reasons. Half of [my
-.cshrc](dotfiles/cshrc) would be usless. I'd forgo
+I had a laundry list of reasons. Half of my `.cshrc` would be usless. I'd forgo
 [acoc](http://www.caliban.org/ruby/acoc.shtml)'s wonderful colorized command
 output. Emacs'
 [shell-mode](http://gnu.org/software/emacs/manual/html_node/Shell-Mode.html)
@@ -64,7 +63,7 @@ Even better, I could continue using my work shells _at home_, over VPN, just by
 connecting to my work Emacs!
 
   * **Tcsh integration.** Emacs was surprisingly sociable with tcsh. It obeyed
-[my .cshrc](dotfiles/cshrc), read and wrote its
+my `.cshrc`, read and wrote its
 command history to `~/.history`, and generally played nice.
 
   * **ANSI color codes.** Wonder of wonders, Emacs could even display color
@@ -79,9 +78,9 @@ wanted to look at a file, I just moved up to it and hit `M-C-f` (bound to
 It wasn't perfect, though. Here's what didn't work well:
 
   * **Not a terminal.** I gained keyboard navigation at the expense of having
-a true terminal emulator. I couldn't run any app that needed anything more
-than a dumb terminal - Pine, BitTorrent, less, and others. I could use [Term
-mode](http://www.gnu.org/software/emacs/manual/html_node/emacs/Term-Mode.html),
+a true terminal emulator. I couldn't run any app that needed anything more than
+a dumb terminal - Pine, BitTorrent, less, and others. I could use
+[Term mode](http://www.gnu.org/software/emacs/manual/html_node/emacs/Term-Mode.html),
 which provides a full terminal, but that defeats the purpose of running inside
 emacs.
 
@@ -104,14 +103,15 @@ ignore the color codes, but I couldn't bear to go without them.
 
 So, you might ask, what was the verdict? The jury's still out. I'm currently
 wrestling [GNU screen](http://www.gnu.org/software/screen/) into submission,
-since it also allows [keyboard navigation and
-copy/paste](http://www.delorie.com/gnu/docs/screen/screen_73.html) over shell
-contents. So far, I've [synchronized its paste buffer and the X
-selection](synchronizing_GNU_screens_paste_buffer_and_the_X_selection), and I've [Emacs-ified its
-copy-scrollback mode](Emacs_keybindings_in_GNU_screens_copy-scrollback_mode). Stay tuned for
-more!
+since it also allows
+[keyboard navigation and copy/paste](http://www.delorie.com/gnu/docs/screen/screen_73.html)
+over shell contents. So far, I've
+[synchronized its paste buffer and the X selection](synchronizing_GNU_screens_paste_buffer_and_the_X_selection),
+and I've
+[Emacs-ified its copy-scrollback mode](Emacs_keybindings_in_GNU_screens_copy-scrollback_mode).
+Stay tuned for more!
 
-Here's what I added to [my .emacs](dotfiles/emacs) to
+Here's what I added to [my .emacs](dotfiles/.emacs) to
 make shell-mode behave the way I wanted:
 
 <a name="settings"></a>

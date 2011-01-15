@@ -4,8 +4,7 @@ synchronizing GNU screen's paste buffer and the X selection
 [![gnu.jpg](gnu.jpg)](http://gnu.org/software/emacs/)
 [![/space/X_logo.png](X_logo.png)](http://x.org/)
 
-I
-hate the mouse. It's good for some things, but not my work. Switching between
+I hate the mouse. It's good for some things, but not my work. Switching between
 the mouse and the keyboard wreaks havoc on my muscle memory and fine-motor flow.
 Thanks to [Emacs](http://gnu.org/software/emacs/),
 [Ion](http://iki.fi/tuomov/ion), [Pine](http://www.washington.edu/pine/),
@@ -14,13 +13,13 @@ Thanks to [Emacs](http://gnu.org/software/emacs/),
 everything I need to with the keyboard. The only thing I _can't_ do with the
 keyboard is copy text from a terminal. And that irks me.
 
-In the past, this has driven me to desperate measures, including [running shells
-inside Emacs](why_I_dont_run_shells_inside_Emacs). I currently use [GNU
-screen](http://www.gnu.org/software/screen/)'s [copy/scrollback
-mode](http://www.delorie.com/gnu/docs/screen/screen_73.html), with a hack to
-integrate it with X Windows' clipboard.
+In the past, this has driven me to desperate measures, including
+[running shells inside Emacs](why_I_dont_run_shells_inside_Emacs). I currently
+use [GNU screen](http://www.gnu.org/software/screen/)'s
+[copy/scrollback mode](http://www.delorie.com/gnu/docs/screen/screen_73.html),
+with a hack to integrate it with X Windows' clipboard.
 
-This command in [my .screenrc](dotfiles/screenrc)
+This command in [my .screenrc](dotfiles/.screenrc)
 copies screen's paste buffer into the X primary selection. It runs automatically
 when you press > to set the second mark in copy/scrollback mode.
 
@@ -29,7 +28,7 @@ when you press > to set the second mark in copy/scrollback mode.
     # with the X selection.
     bindkey -m > eval "stuff ' '" writebuf "exec sh -c 'xsel -n < /tmp/screen-exchange'"
 
-Note that this uses [Conrad Parker's
-xsel](http://www.vergenet.net/~conrad/software/xsel/) (_not_ [Ville Herva's
-xsel](http://www.niksula.cs.hut.fi/~vherva/xsel/)), which needs to be somewhere
-in your PATH.
+Note that this uses
+[Conrad Parker's xsel](http://www.vergenet.net/~conrad/software/xsel/) (_not_
+[Ville Herva's xsel](http://www.niksula.cs.hut.fi/~vherva/xsel/)), which needs
+to be somewhere in your PATH.
