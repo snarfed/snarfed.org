@@ -8,6 +8,13 @@
  * http://mattconstantine.com/mg .
  *
  * Changelog:
+ * 0.4 1/24/2011
+ * - clean up main display: none selector list
+ * - remove bottom commented section of selectors (does more harm than good)
+ * - hide *all* list view buttons but still support mo(v)e and (l)abel keys
+ * - hide ads on bottom of conversation view
+ * - hide the google talk presence indicator
+ * - re-hide stars in both list and conversation view
  * 0.3 11/12/2010
  * - show built in labels like Inbox, Drafts when they have unread messages
  * - show Move to Inbox button
@@ -23,62 +30,93 @@
 
 @-moz-document domain(mail.google.com) {
 
-div.pA,
-div.n6,
-div.pX,
-div.Pl *,
-div.CM,
-div.qj,
-div.yV,
-div.iE,
-div.J-Zh-I-Js-Zj,
-div.nH.pp.T0,
-div.nH.CX.pp,
-div.nH.T4.pp,
-div.z0,
-div.a9.Z4b7Xb,
-div.a9.Rgky9,
-td.bN.bM,
-td.bN.bR,
-span.es.el,
-span.jNNpPe,
-td.fA,
-div.eh,
-div.f6,
-div#gbar,
-div.nH.l2.ov,
-div.AY.D.E,
-img.zG,
-img.EqK8f,
-table.Bs.nH.iY td.Bu:nth-child(2),
-table.Bs.nH.iY td.Bu:nth-child(3)
+
+/* The primary list of things to hide.
+ *
+ * Note the use of the > child selector. The * universal selector is
+ * *descendant*, ie any depth, not just direct child.
+ */
+div#gbar,                 /* left header (Gmail Calendar Documents ...) */
+div#guser > nobr > *,     /* right header elements (user, settings, sign out) */
+div.nH.l2.ov,             /* footer */
+td.bN.bM,                 /* Search Mail, Search the Web buttons */
+td.bN.bR,                 /* Show search options, Create a filter links */
+
+/* Left side */
+div.a9.Z4b7Xb,            /* GMail logo */
+div.a9.Rgky9,             /* GMail logo */
+div.n6,                   /* # more labels drop-down */
+div.nH.pp.T0,             /* Chat link */
+div.nH.CX.pp,             /* Mail, Contacts links */
+div.nH.T4.pp,             /* Tasks link */
+div.z0,                   /* Compose mail button */
+div.LrBjie > div.TK > div.TO > div.TN > .nU,  /* Inbox, Sent Mail, Drafts */
+
+/* List view */
+div.VP5otc-HT6HAf.J-J5-Ji > *,  /* header: buttons */
+div.VP5otc-MdoD9,           /* header: refresh link */
+div.nH.vpUyzb.Cr,         /* header: "1-10 of 100" */
+div.VP5otc-U4m8q.D.E,     /* footer */
+img.EqK8f,                /* per thread stars (internal) */
+img.aef,                  /* per thread stars (external) */
+
+/* Conversation view */
+div.VP5otc-tOAp0c,        /* header: Back to Inbox link */
+div.iG,                   /* header and footer: "1-10 of 100, Older >" */
+div.iE.D.E,               /* footer (internal) */
+div.A1.D.E,               /* header (external) */
+div.AY.D.E,               /* footer (external) */
+div.f6,                   /* "xxx is not available to chat" */
+span.lHQn1d,              /* per message stars */
+div.J-Zh-I.J-J5-Ji.J-Zh-I-Js-Zj.GZ.L3, /* top right, per-message inline Reply button */
+table.Bs.nH.iY td.Bu:nth-child(2),     /* right side pane */
+table.Bs.nH.iY td.Bu:nth-child(3),     /*   (ads, etc.) */
+
+/* Reply, Reply all, Forward links below each message
+ * can't hide these because the r, a, etc. key bindings depend on them. */
+/* div.gA.gt, */
+
+/* Compose area */
+span.jNNpPe,             /* formatting toolbar */
+td.fA,                   /* Check Spelling link */
+span.es.el,              /* Rich formatting link */
+span.b2,                 /* Insert span in Insert Invitation */
+span.el.ou,              /* Invitation link in Insert Invitation */
+div.eh,                  /* top buttons (Send, Save Now, Discard, ...) */
+
+div#gbz,                     /* redacted (ES) */
+ol.gbtc > li:nth-child(2),
+li.gbt.gbtb,
+
+/* bottom buttons (Send, Save Now, Discard)
+ * can't hide these because tab-enter to send, tab-tab-tab enter to discard,
+ * etc. depend on them. */
+/* div.CoUvaf, */
+
+noop_end_selector_list
 {
   display: none !important;
 }
 
-/*
- * Right side header (logged in user, settings/sign out links)
- * (Note the > child selector. The * universal selector is *descendant*,
- * ie any depth, not just direct child.)
+
+/* A whitelist of exceptions that shouldn't be hidden.
  */
-div#guser nobr > * {
-  display: none;
-}
-
-div#guser nobr {
-  color: transparent;
-}
-
-div#guser nobr a:nth-child(7),
-div#guser nobr a:nth-child(6)
-{  /* Settings link */
+div#guser > nobr > a[id=":r8"],     /* Settings link */
+div.J-Zh-I.J-J5-Ji.J-Zh-I-Js-Zj.L3, /* Move to button */
+div.J-Zh-I.J-J5-Ji.J-Zh-I-Js-Zq.L3, /* Labels */
+div.J-Zh-I.J-J5-Ji.L3[act="8"],     /* Move to Inbox button */
+div.LrBjie > div.TK > div.TO > div.TN > .nU.n1,  /* Inbox, Sent Mail, Drafts *when they have messages* */
+noop_end_selector {
   display: inline !important;
-  opacity: .2 !important;
 }
 
-/* [redacted] */
-div#gbz, ol.gbtc li:nth-child(2), li.gbt.gbtb {
-  display: none !important;
+
+div.VP5otc-HT6HAf.J-J5-Ji > * {  /* "hide" list view header buttons */
+  opacity: 0;
+}
+
+div#guser > nobr > a[id=":r8"] {  /* Settings link */
+  opacity: .2 !important;
 }
 
 #gb, #gbx1, #gbx2, #gbx3, #gbx4, .gbvt, .gbgt, .gbtcb, .gbtb2, .gbmc, .gbts, #gbs {
@@ -100,94 +138,9 @@ td.oZ-x3.xY {
   background-image: none !important;
 }
 
-/* Move to Inbox button */
-div.J-Zh-I.J-J5-Ji.L3[act="8"] {
-  display: inline !important;
-}
-
-/* Inbox, Sent Mail, Drafts, etc on left side. want to show them only when they have unread messages */
-div.LrBjie div.TK div.TO div.TN .nU {
-  display: none;
-}
-div.LrBjie div.TK div.TO div.TN .nU.n1 {
-  display: inline;
-}
-
 /* highlighted background to show which one is currently viewed. only do that for my own labels. */
 div.LrBjie div.TK div.TO.nZ {
   background-color: transparent !important;
 }
 
 }
-
-/*
-UI
---
-div.aC,     // entire header
-div.nH.l2.ov // entire footer
-div.nH.qp#gb // top common google header
-div#gbar    // left side header (Gmail Calendar Documents ...)
-div#gbz     // left side header (Loop Mail Calendar Documents ...)
-div#guser   // right side header (logged in user, settings/sign out links, ...)
-ol.gbtc     // right side header with [redacted] stuff
-a#gbg5      // top right settings drop-down, gear icon
-div.a9.Z4b7Xb // #:rm, gmail logo
-div.a9.Rgky9 // #:rm, gmail logo
-td.bN.bM,   // search mail/web buttons in header
-div.A1.D.E  // inner header in thread list
-div.AY.D.E  // inner footer in thread list
-td.xY       // the component parts of each row in thread list
-img.zG      // star in thread list rows
-img.EqK8f   // star in thread list rows
-div.nH.pp.T0 // chat
-td.bN.bR,   // show search options and create a filter links
-div.z0      // Compose Mail button
-div.LrBjie, // Inbox/Sent Mail/Drafts/All Mail/Trash
-div.n6,     // X more labels
-div.nH.CX.pp // Mail and Contacts links
-div.nH.T4.pp // Tasks link
-div.CM,     // horizontal line between Inbox etc links and label links
-div.nL.J-J5-Ji  // Each of Inbox, Sent Mail, Drafts, etc
-div.TN,     // Inbox
-div#n1,     // Sent Mail
-div#n0,     // Drafts
-div#mz,     // All Mail
-div#my,     // Trash
-div.qj      // background highlight bar for current label/folder
-
-div.A1,     // top buttons
-div.J-Zh-I-KE,     // Archive button
-div.J-Zh-I-Js-Zq,  // Report spam and Delete buttons
-div#:pw,    // Move to drop-down button
-div#:pv,    // Labels drop-down button
-div#:pu,    // More actions drop-down button
-div.Pl.J-J5-Ji // all buttons
-div.AP      // Refresh link
-div#:1bc    // Labels drop-down
-div.Cr      // X-Y of Z counter
-div.yV      // select (all, none, ...) bar
-div.iE      // bottom row of buttons
-td.oZ-x3.xY // checkbox next to each conversation, for drag and drop
-
-
-Conversation
-------------
-div.iI.D.E  // inner header
-div.f6      // XXX is not available to chat
-table.Bs.nH.iY td.Bu:last-child // right side pane with ads, "New window" link, etc
-
-Compose
--------
-div.CoUvaf  // bottom compose buttons
-div.eh      // top compose buttons
-td.fw       // plain text/rich formatting link plus formatting buttons
-td.fA       // check spelling link
-span.es.el  // #:tb, rich formatting link
-span.eo.el  // #:tb, plain text link
-span.jNNpPe // #:tc, formatting buttons
-
-
-Tasks
------
-textarea.D.Db.sb  // #2.notes-editor, notes section in single not page
-*/
