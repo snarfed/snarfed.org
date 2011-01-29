@@ -1,0 +1,74 @@
+Workflow software survey
+
+<img class="right" src="panflute_flowchart.png" />
+
+I recently did some research at [work](2010-03-13_new_job) on existing
+libraries, frameworks, and tools for managing semi-automated workflows
+and pipelines of tasks. Here's a survey of many of them.
+
+There are a number of loose, overlapping terms for these kinds of systems: BPM
+(business process management), workflow, pipeline, flowchart, state machine,
+visual programming, dataflow, flow-based programming, dependency management,
+task management, etc. They're useful for web searches, even if not a lot more.
+
+In practice, they tend to fall into a few broad categories that don't overlap
+too much:
+
+  * *BPM.* These are primarily people-based, ie each stage usually corresponds
+    to something a human needs to do. Examples include CRM, bug/issue tracking,
+    ticketing, approval chain, and document management.
+  * *Data processing.* These are primarily data based, usually for large
+    datasets or streaming data sources. Examples include web search indexing,
+    ETL (extract/transform load) for data warehouses, MapReduce/Hadoop, and other large scale
+    data pipelines.
+  * *<code>make</code> style.* These are individually driven, batch automation pipelines.
+    They're kicked off manually and focus more on the workflow itself than the
+    data. Unlike BPM, individual stages are often automated.
+  * *Visual programming.* Let non-programmers draw boxes and arrows that become a computer program. People have been building these systems for decades! Examples include Squeak, Yahoo Pipes, Hypercard (old school!), maybe Visual Basic, etc.
+
+Also, here are a few of the many standards:
+
+  * [XPDL](http://en.wikipedia.org/wiki/XPDL): XML Process
+  Definition Language, a
+  [Workflow Management Coalition](http://en.wikipedia.org/wiki/Workflow_Management_Coalition)
+  standard.
+  * [Wf-XML](http://www.wfmc.org/wfmc-wf-xml.html), a
+  [Workflow Management Coalition](http://en.wikipedia.org/wiki/Workflow_Management_Coalition)
+  standard.
+  * [BPEL](http://en.wikipedia.org/wiki/BPEL) (Business Process
+  Execution Language), an [OASIS](http://www.oasis-open.org/)
+  standard.
+  * [YAWL](http://en.wikipedia.org/wiki/YAWL)
+  (Yet Another Workflow Language). Supported by the
+  [YAWL foundation](http://www.yawlfoundation.org/) and the
+  [Workflow Patterns initiative](http://www.workflowpatterns.com/).
+
+
+I focused on open source Python projects here, but even so, this is nowhere near
+comprehensive. There are _tons_ more out there. See Wikipedia's
+[Comparison of BPEL engines](http://en.wikipedia.org/wiki/Comparison_of_BPEL_engines),
+among many others.
+
+| name | description | engine | run log | authoring UI | definition format | parameters | community | last release/ checkin as of 1/19/2011 | notes |
+| - | - | - | - | - | - | - | - | - | - |
+| [PyF](http://pyfproject.org/) | dataflow framework | command line, web | web dashboard | web-based, [screenshots](http://pyfproject.org/screenshots) | many! csv, xml, flat files | built-in serializers | active. [list](http://groups.google.com/group/pyf-users), [IRC](http://webchat.freenode.net/#pyf) | 1 mo ago; days ago | pluggable architecture. APIs at multiple levels. polished. |
+| [Pypes](http://pypes.org/) ([overview](https://bitbucket.org/diji/pypes/wiki/Home), [user guide](https://bitbucket.org/diji/pypes/wiki/User_Guide), [developer guide](https://bitbucket.org/diji/pypes/wiki/Developer_Guide)) | data processing, flow-based programming, ETL | command line, REST API | text logging | web-based, [screenshots](https://bitbucket.org/diji/pypes/wiki/Screenshots) | JSON | serialized strings | some. [list](http://groups.google.com/group/pypes) | 1y ago; 3 mos ago | requires [stackless python](http://www.stackless.com/) |
+| [PAPY](http://code.google.com/p/papy/) ([PDF guide](http://muralab.org/PaPy/docs/PaPy_toolkit_doc.pdf)) | flow-based programming | no | text logging | no | python code | manual marshalling into RPyC | not much | 6 mos ago | just a library. aimed at dataflow, large/streaming datasets. |
+| [Kamaelia](http://www.kamaelia.org/) ([intro](http://www.kamaelia.org/Introduction.html), [code examples](http://www.kamaelia.org/About.html)) | continuous dataflow; very generic | command line | not exactly | [read-only visualization](http://www.kamaelia.org/AxonVisualiser.html) | python code | serializers | funded by BBC. fairly active. [list](http://groups.google.com/group/kamaelia/) | 1 mo ago; days ago | from [BBC Research](http://www.bbc.co.uk/opensource/projects/kamaelia/), used for misc things there. |
+| [Bonita Open Solution](http://www.bonitasoft.com/products/BPM__workflow_overview.php) | full-featured BPM, workflow, automation | server-based | web-based dashboard | web-based WYSIWYG UI | supports data formats (XML, XPDL, BPEL) and image formats | unknown | mature, active [community](http://www.bonitasoft.org/). [forum](http://www.bonitasoft.org/forum/), [bug tracker](http://www.bonitasoft.org/bugs/my_view_page.php), etc. | weeks ago | open source (GPL), commercial support contracts. | 
+| [YAWL](http://www.yawlfoundation.org/) (Yet Another Workflow Language) | based on [workflowpatterns.com](http://workflowpatterns.com). | local/server, web interface | web-based [Monitor Service](http://www.yawlfoundation.org/software/documentation/usermanual/chapter-7-monitor-service) for current runs, no persistence though (?) | [dedicated GUI](http://www.yawlfoundation.org/software/documentation/usermanual/chapter-4-editor) | custom language: YAWL | string serialization | looks mature but [small.](http://www.yawlfoundation.org/community) [forum](http://www.yawlfoundation.org/forum) | months ago, days ago | commercial-ish? somewhat heavy, academic, architect astronaut-ish. | 
+| [ProcessMaker](http://www.processmaker.com/) | BPM, process automation, human oriented | custom, server-based. may not be able to plug in code. | web-based, inbox style | [full-fledged WYSIWYG UI](http://www.processmaker.com/key-features) | unknown | unknown | [some.](http://www.processmaker.com/community-support) [wiki](http://wiki.processmaker.com/), [forum](http://forum.processmaker.com/), [bug tracker](http://bugs.processmaker.com/) | 6 mos ago? not frequent. | commercial. can't find the source, may be closed | 
+| [OpenFlow](http://freshmeat.net/projects/openflow/) ([white paper](http://code.djangoproject.com/attachment/wiki/GoFlow/OpenFlowIntroduction.pdf?format=raw)) | people-based BPM, workflow, task management. based on Zope. | blocks are generally expected to be done by humans or external systems | none | none | none | N/A | dead? | 2003? | from [Icube](http://www.zope.org/Resources/ZSP/Icube), which [looks dead](http://www.zope.org/search?SearchableText=openflow). |
+| [GoFlow](http://code.djangoproject.com/wiki/GoFlow) ([online demo](http://goflow.alwaysdata.net/leave/), [white paper](http://code.djangoproject.com/attachment/wiki/GoFlow/OpenFlowIntroduction.pdf?format=raw)) | people-based BPM, workflow, task management. a Django mixin. | blocks are generally expected to be done by humans or external systems | Django admin interface | no | Django models | custom, in code | dead. [list](http://groups.google.com/group/goflow-users) | 2.5 ago, 2y ago | clone of OpenFlow |
+| [Finite State Machine Editor](http://fsme.sourceforge.net/) | finite state machine GUI, compiler, library | none (compiler generates c++/python code from definition) | text logging | dedicated UI, [screenshots](http://fsme.sourceforge.net/doc/introduction.html) | XML | code | dead. [forums](http://sourceforge.net/projects/fsme/forums) | 4 yrs ago, 2 yrs ago | |
+| [State Machine Compiler](http://smc.sourceforge.net/) | compile time code generator | none | none | unknown | [custom .sm file format](http://smc.sourceforge.net/SmcManual.htm) | none | not a lot. [forums](http://sourceforge.net/projects/smc/forums), [contributors](http://smc.sourceforge.net/SmcContributors.htm) | 1 mo ago, 1 mo ago | from an ACM member. old school, unix graybeard feel. |
+| [Windows Workflow Foundation](http://msdn.microsoft.com/en-us/netframework/aa663328) ([intro](http://msdn.microsoft.com/en-us/library/ee342461.aspx)) | workflow, automation, batch pipelining. blocks can be any CLR language. | windows based | dashboards | dedicated GUI. [screenshots](http://msdn.microsoft.com/en-us/library/ee342461.aspx) (scroll down) | XML, similar to [Azure Fabric](http://sites/ms-pdc-2008/azure-fabric) | code | big, mature. | recent | windows and CLR based. MSDN, shared source, etc. | 
+| [MGLTools Vision](http://mgltools.scripps.edu/packages/vision) ([presentation](http://mgltools.scripps.edu/packages/vision/documentation/VisionTutSI09.pdf/view)) | visual programming, dataflow, very graphics oriented. | through the UI | unknown, maybe a dashboard | custom X application, comprehensive, [screenshots](http://mgltools.scripps.edu/packages/vision/documentation/matplotlib) | unknown but UI supports save/load | unknown | decent. academic focus. [forum](http://mgl.scripps.edu/forum/viewforum.php?f=11) | 2.5y ago | focused on images, life sciences, data processing. [non-commercial license only; commercial requires permission.](http://mgltools.scripps.edu/downloads/license-agreements) |
+| [VisTrails](http://www.vistrails.org/) | exploratory data processing workflows | command line, GUI, or server | text logging, pluggable | dedicated GUI, [screenshots](http://www.vistrails.org/index.php/Documentation#Screen_Shots), and [visual diff](http://www.vistrails.org/index.php/File:Visual_diff_composite.png)! | unknown | custom, pluggable | from U of Utah, NYU, IBM, et al. [list](http://www.vistrails.org/index.php/MailingLists), [contributors](http://www.vistrails.org/index.php/People), [users](http://www.vistrails.org/index.php/Projects_using_VisTrails) | days ago, days ago | focused on exploratory, dynamically changing workflows while running, change history, image processing and life sciences |
+| [Makeflow](http://www.cse.nd.edu/~ccl/software/makeflow/)/[Weaver](https://bitbucket.org/pbui/weaver/wiki/Home) | distributed computing/data processing framework. implements abstractions like map, mapreduce, all pairs, etc. | command line. basically like make over a DAG (Makeflow) with inline python code (Weaver) | none | none | code | code | from Notre Dame's CS dept. academic, decent. [list](https://listserv.nd.edu/cgi-bin/wa?A0=CCTOOLS) | 2 mos ago, days ago | |
+| [itools.workflow](http://www.hforge.org/itools/docs/workflow) | state machine library | none | none | none | code/text | code | decent. [list](http://archives.hforge.org/index.cgi?list=itools), [IRC](http://webchat.freenode.net/#hforge) | weeks ago, days ago | |
+| [Joblib](http://packages.python.org/joblib/) | pipelining/distributed computing library | none | configurable text logging | none | code | code | not much. [list](http://librelist.com/browser/joblib/) | two months ago, two months ago | minimal |
+| [pomsets](http://www.pomsets.org/) | distributed computing, workflow management | command line launcher, supports multiple environments (e.g. Hadoop, EC2) | none | dedicated GUI, [screenshots](http://www.pomsets.org/Screenshots) | [JSON, depends on execution environment](http://www.pomsets.org/Documentation/Configuration) | string serialized | dead. [forum](http://www.pomsets.org/forum) | 6 mos ago; repository isn't public | [problematic license, paid for commercial use.](http://www.pomsets.org/License) |
+| [ruote](http://ruote.rubyforge.org/) | workflow engine | command line | none | none | ruby, xml, json | code | active. [list](https://groups.google.com/group/openwferu-users), [IRC](http://ruote-irclogs.s3.amazonaws.com/logs.html), [users](http://ruote.rubyforge.org/users.html) | days ago | ruby! |
+| [SpiffWorkflow](https://github.com/knipknap/SpiffWorkflow) | workflow/state machine/flowchart execution library. part of [Spiff CMS](http://code.google.com/p/spiff/). | command line? | unknown | none | unknown | code | not a lot. [list](http://groups.google.com/group/spiff-devel/) | three months ago | barely any documentation |
+| [hurry.workflow](http://pypi.python.org/pypi/hurry.workflow) ([guide](http://codespeak.net/svn/z3/hurry/trunk/src/hurry/workflow/workflow.txt)) | BPM, people-based workflow/task management. mixin for zope. | zope | nothing beyond whatever zope provides | none | code | code | not much | 9 mos ago | |
