@@ -18,13 +18,19 @@ buffering. Another low-tech alternative was to yell "Play!" and have everyone
 try to start an MP3 at the same time. We actually tried this, and quickly
 verified that it's more or less impossible.
 
-In the end, [P4](p4)'s syncher worked, but it was brittle and not at
-all easy to use. I tried again without P2P, and ended up with a solid synching
-engine, but couldn't find a player with low enough plugin latency. When the
-sync plugin says "seek here!", it needs to happen in around 50ms, all the way
-from the player down through the sound card driver.
-[Winamp](http://winamp.com/) can do this, but not
-[iTunes](http://itunes.com/), nor any *nix players we found.
+In the end, [P4](p4)'s syncher worked, but it was brittle and not at all easy to
+use. I tried again without P2P, and ended up with a solid synching engine, but
+couldn't find a player with low enough plugin latency. When the sync plugin says
+"seek here!", it needs to happen within 50ms or so, all the way from the player
+down through the sound card driver. [Winamp](http://winamp.com/) can do this,
+but not [iTunes](http://itunes.com/), nor any *nix players we found.
+
+Beyond that, our real world tests found that players have different playback
+rates. The differences are small; by the end of the average three minute song,
+two different players have only skewed by a few seconds at most. Still, the
+human ear can detect skew as low as a few dozen milliseconds, so to counteract
+this, all players need to re-sync often. This is doable, but if seeking the
+player results in a noticeable skip or other artifact, that's a problem.
 
 Still, if you're interested, feel free download the source,
 [p4sync-0.1.tar.bz2](p4sync-0.1.tar.bz2). It comes with the sync
