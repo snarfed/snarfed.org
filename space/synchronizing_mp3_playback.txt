@@ -41,6 +41,12 @@ questions!
 
 ### Related Work
 
+The
+["synchronizing audio over a network"](http://stackoverflow.com/questions/2795031/synchronizing-audio-over-a-network)
+question on [Stack Overflow](http://stackoverflow.com/) has a number of good
+links, including Tom Blank of Microsoft Research's paper
+[An Internet Protocol Sound System](http://research.microsoft.com/apps/pubs/default.aspx?id=65146).
+
 The [NetSync Winamp plugin](http://winamp.com/plugins/details.php?id=15667)
 attempts to solve the synchronization problem too. However, it's low-tech; it's
 the network equivalent of shouting "Play!" and hoping everyone presses the
