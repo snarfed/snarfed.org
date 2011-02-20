@@ -2,28 +2,25 @@ backup_google.sh
 
 <img class="right" src="server_parachute.jpg" />
 
-[backup_google.sh](backup_google.sh) is a script that backs up data in
-the Google services I use:
-[Contacts](http://www.google.com/contacts),
+[backup_google.sh](backup_google.sh) is a script that backs up data in the
+Google services I use: [Contacts](http://www.google.com/contacts),
 [Calendar](http://calendar.google.com/),
 [Reader](http://www.google.com/reader/), and
-[Tasks](https://mail.google.com/tasks/canvas).
-It uses
-[ClientLogin](http://code.google.com/apis/gdata/docs/auth/clientlogin.html)
-to authenticate and
-[curl](http://curl.haxx.se/) to fetch the data.
+[Tasks](https://mail.google.com/tasks/canvas). It uses
+[ClientLogin](http://code.google.com/apis/gdata/docs/auth/clientlogin.html) to
+authenticate and [curl](http://curl.haxx.se/) to fetch the data from the source
+[APIs](http://code.google.com/more/).
 
 Usage:
 
-    backup_google.sh EMAIL PASSWORD DIR [CALENDAR_URLS...]  
-<br />
-The `CALENDAR_URL` parameters are Google Calendar
-[private addresses](http://www.google.com/support/calendar/bin/answer.py?answer=34576&ctx=tltp)
-that can be fetched without auth cookies.
+    backup_google.sh EMAIL PASSWORD DIR
 
-The one caveat is Tasks. It doesn't support ClientLogin or
-[GData](http://code.google.com/apis/gdata/docs/developers-guide.html) yet, so
-the `SID` cookie provided by ClientLogin isn't enough. It also needs a
-matching `GTL` cookie, which ClientLogin doesn't provide. So for the time
-being, I use [Live HTTP Headers](http://livehttpheaders.mozdev.org/) to
-capture a valid `SID/GTL` cookie pair and hard code it in the script.
+Note that there's no official API for Tasks, so this script uses the
+[cleanest alternative available](http://privacylog.blogspot.com/2010/09/updated-google-tasks-api.html)
+at the moment. Thanks,
+[Full Decent](http://www.blogger.com/profile/12013205951793960304)!
+
+Also, if your account has
+[2-factor verification](http://www.google.com/support/accounts/bin/static.py?page=guide.cs&guide=1056283&topic=1056284)
+enabled, you'll need to generate and use an
+[application-specific password](http://www.google.com/support/accounts/bin/static.py?page=guide.cs&guide=1056283&topic=1056286).
