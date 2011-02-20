@@ -29,7 +29,7 @@ Beyond that, our real world tests found that players have different playback
 rates. The differences are small; by the end of the average three minute song,
 two different players have only skewed by a few seconds at most. Still, the
 human ear can detect skew as low as a few dozen milliseconds, so to counteract
-this, all players need to re-sync often. This is doable, but if seeking the
+this, all players need to re-sync often. This is doable, but if seeking a
 player results in a noticeable skip or other artifact, that's a problem.
 
 Still, if you're interested, feel free download the source,
