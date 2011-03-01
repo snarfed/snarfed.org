@@ -70,6 +70,7 @@ you're running Gnome. Of course, more and more things are "part of Gnome" and
 use it, like PulseAudio, but others like Pidgin and Firefox don't. They read
 `.gtkrc-2.0` instead.
 
+<a name="emacs-gtk-bug"></a>
   * This [Emacs 23/GTK bug](https://bugzilla.gnome.org/show_bug.cgi?id=85715)
 ([more](http://emacsbugs.donarmstrong.com/cgi-bin/bugreport.cgi?bug=4078)
 [details](https://bugs.launchpad.net/ubuntu/+source/emacs23/+bug/543611))
