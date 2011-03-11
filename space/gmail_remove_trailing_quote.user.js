@@ -17,10 +17,13 @@
 
 var remove_trailing_quotes_textarea;
 var remove_trailing_quotes_last_value;
+var remove_trailing_quotes_last_cursor_pos;
 
 function remove_trailing_quotes() {
   textarea = remove_trailing_quotes_textarea;
   remove_trailing_quotes_last_value = textarea.value;
+  remove_trailing_quotes_last_cursor_pos = get_cursor_pos(textarea);
+  GM_log("Stored position " + remove_trailing_quotes_last_cursor_pos);
 
   /* trim whitespace at beginning and end */
   textarea.value = textarea.value.replace(/^\s*/, '').replace(/\s*$/, '');
@@ -59,21 +62,24 @@ function remove_trailing_quotes() {
 function remove_trailing_quotes_undo() {
   if (remove_trailing_quotes_last_value) {
     remove_trailing_quotes_textarea.value = remove_trailing_quotes_last_value;
+    GM_log("Setting position " + remove_trailing_quotes_last_cursor_pos);
+    set_cursor_pos(remove_trailing_quotes_textarea,
+                   remove_trailing_quotes_last_cursor_pos);
   }
 }
 
-function on_load(event) {
+function remove_trailing_quotes_on_load(event) {
   canvas_frame = document.getElementById("canvas_frame");
   if (canvas_frame) {
     canvas_doc = canvas_frame.contentDocument;
-    canvas_doc.removeEventListener("DOMNodeInserted", node_inserted, false);
-    canvas_doc.addEventListener("DOMNodeInserted", node_inserted, false);
+    canvas_doc.removeEventListener("DOMNodeInserted", remove_trailing_quotes_node_inserted, false);
+    canvas_doc.addEventListener("DOMNodeInserted", remove_trailing_quotes_node_inserted, false);
   }
 }
 
-window.addEventListener("load", on_load, false);
+window.addEventListener("load", remove_trailing_quotes_on_load, false);
 
-function node_inserted(event) {
+function remove_trailing_quotes_node_inserted(event) {
   textarea = canvas_doc.getElementsByClassName('Ak')[0];
 
   if (textarea) {
@@ -85,5 +91,29 @@ function node_inserted(event) {
 
     textarea.removeEventListener("focus", remove_trailing_quotes_undo, false);
     textarea.addEventListener("focus", remove_trailing_quotes_undo, false);
+  }
+}
+
+function get_cursor_pos(object) {
+  if (document.selection) {  // IE
+    object.focus ();
+    range = document.selection.createRange();
+    range.moveStart('character', -object.value.length);
+    return range.text.length;
+  } else if (object.selectionStart || object.selectionStart == '0') {  // Firefox
+    return object.selectionStart;
+  }
+}   
+   
+function set_cursor_pos(object, pos) {
+  if (object.setSelectionRange) {  // IE
+    object.focus();
+    object.setSelectionRange(pos, pos);
+  } else if (object.createTextRange) {  // Firefos
+    range = object.createTextRange();
+    range.collapse(true);
+    range.moveEnd('character', pos);
+    range.moveStart('character', pos);
+    range.select();
   }
 }
