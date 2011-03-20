@@ -23,7 +23,6 @@ function remove_trailing_quotes() {
   textarea = remove_trailing_quotes_textarea;
   remove_trailing_quotes_last_value = textarea.value;
   remove_trailing_quotes_last_cursor_pos = get_cursor_pos(textarea);
-  GM_log("Stored position " + remove_trailing_quotes_last_cursor_pos);
 
   /* trim whitespace at beginning and end */
   textarea.value = textarea.value.replace(/^\s*/, '').replace(/\s*$/, '');
@@ -62,7 +61,6 @@ function remove_trailing_quotes() {
 function remove_trailing_quotes_undo() {
   if (remove_trailing_quotes_last_value) {
     remove_trailing_quotes_textarea.value = remove_trailing_quotes_last_value;
-    GM_log("Setting position " + remove_trailing_quotes_last_cursor_pos);
     set_cursor_pos(remove_trailing_quotes_textarea,
                    remove_trailing_quotes_last_cursor_pos);
   }
@@ -82,7 +80,11 @@ window.addEventListener("load", remove_trailing_quotes_on_load, false);
 function remove_trailing_quotes_node_inserted(event) {
   textarea = canvas_doc.getElementsByClassName('Ak')[0];
 
-  if (textarea) {
+  // reset, but only if this is truly a new composition. (sometimes the text box
+  // for an existing composition gets reloaded, e.g. if you blur the text box
+  // and then bring up the labels menu. we don't want to reset in those cases
+  // because it destroys the undo history.)
+  if (textarea != remove_trailing_quotes_textarea) {
     remove_trailing_quotes_textarea = textarea;
     remove_trailing_quotes_last_value = null;
 
