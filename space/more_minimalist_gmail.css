@@ -8,6 +8,8 @@
  * http://mattconstantine.com/mg .
  *
  * Changelog:
+ * 0.6 3/27/2011
+ * - more selector updates to handle GMail updates
  * 0.5 3/23/2011
  * - update misc selectors to handle GMail updates, including the new top bar
  * 0.4 1/24/2011
@@ -26,6 +28,9 @@
  * - re-hide stars
  * 0.1
  * - initial release
+ *
+ * Note: sometimes buttons need to be displayed (ie not display: none) for their
+ * keyboard shortcuts to work. in those cases, hide them with opacity: 0 instead.
  */
 
 @namespace url(http://www.w3.org/1999/xhtml);
@@ -41,12 +46,14 @@
 div#gbar,                 /* left header (Gmail Calendar Documents ...) */
 div#guser > nobr > *,     /* right header elements (user, settings, sign out) */
 div.nH.l2.ov,             /* footer */
-td.GcwpPb-Pkt3ef.GcwpPb-uq0Mrf, /* Search Mail, Search the Web buttons */
-td.GcwpPb-Pkt3ef.GcwpPb-txTtjf, /* Show search options, Create a filter links */
+td.GcwpPb-Pkt3ef.GcwpPb-uq0Mrf, /* Search Mail, Search the Web buttons (internal) */
+td.w-aks.w-akr,                 /* Search Mail, Search the Web buttons (external) */
+td.GcwpPb-Pkt3ef.GcwpPb-txTtjf, /* Show search options, Create a filter links (internal) */
+td.w-aks.w-aku,                 /* Show search options, Create a filter links (external) */
 
 /* Left side */
-div.GcwpPb-VArq.Rgky9,    /* GMail logo */
-div.GcwpPb-VArq.Z4b7Xb,   /* GMail logo */
+div.GcwpPb-VArq.Z4b7Xb,   /* GMail logo (internal) */
+div.w-akc.Rgky9,          /* GMail logo (external) */
 div.n6,                   /* # more labels drop-down */
 div.T0.pp,                /* Chat link */
 div.CX.pp,                /* Mail, Contacts links */
@@ -55,21 +62,15 @@ div.z0,                   /* Compose mail button */
 div.LrBjie > div.TK > div.TO > div.TN > .nU,  /* Inbox, Sent Mail, Drafts */
 
 /* List view */
-/* div.VP5otc-pzeoBf.D.E, */    /* entire header
-div.VP5otc-HT6HAf.J-J5-Ji > *,  /* header: buttons */
-div.VP5otc-MdoD9,           /* header: refresh link */
-div.nH.vpUyzb.Cr,         /* header: "1-10 of 100" */
-div.VP5otc-U4m8q.D.E,     /* footer */
+div.nH.Cq > div:first-child > div:first-child > *, /* header and footer buttons */
+div.nH.vpUyzb.Cr,         /* header: "1-10 of 100" (internal) */
+div.nH.ajU.Cr,            /* header: "1-10 of 100" (external) */
 img.EqK8f,                /* per thread stars (internal) */
 img.aef,                  /* per thread stars (external) */
 
 /* Conversation view */
-div.VP5otc-tOAp0c,        /* header: Back to Inbox link */
+div.iH > div:first-child > *, /* header and footer buttons */
 div.iG,                   /* header and footer: "1-10 of 100, Older >" */
-div.i1.D.E,               /* header (internal) */
-div.A1.D.E,               /* header (external) */
-div.iE.D.E,               /* footer (internal) */
-div.AY.D.E,               /* footer (external) */
 div.f6,                   /* "xxx is not available to chat" */
 span.lHQn1d,              /* per message stars */
 div.J-Zh-I.J-J5-Ji.J-Zh-I-Js-Zj.GZ.L3, /* top right, per-message inline Reply button */
@@ -106,18 +107,11 @@ noop_end_selector_list
 /* A whitelist of exceptions that shouldn't be hidden.
  */
 div#guser > nobr > a[href="https://mail.google.com/mail/u/0/?ui=2&shva=1#settings"], /* Settings link */
-div.J-Zh-I.J-J5-Ji.J-Zh-I-Js-Zj.L3, /* Move to button */
-div.J-Zh-I.J-J5-Ji.J-Zh-I-Js-Zq.L3, /* Labels */
-div.J-Zh-I.J-J5-Ji.L3[act="8"],     /* Move to Inbox button */
 div.LrBjie > div.TK > div.TO > div.TN > .nU.n1,  /* Inbox, Sent Mail, Drafts *when they have messages* */
 noop_end_selector {
   display: inline !important;
 }
 
-
-div.VP5otc-HT6HAf.J-J5-Ji > * {  /* "hide" list view header buttons */
-  opacity: 0;
-}
 
 /* Settings link */
 div#guser > nobr > a[href="https://mail.google.com/mail/u/0/?ui=2&shva=1#settings"] {
