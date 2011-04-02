@@ -168,11 +168,7 @@ expect, but it took me a fairly long time to find that tidbit in the docs.
 <a name="scaling"></a>
 ### [![Icon-Permalink.png](/Icon-Permalink.png)](#scaling) Scaling and Dynamo
 
-<ins style="text-decoration: none">_**Update**: After I originally wrote
-this, I learned from a reliable source that SimpleDB is probably_ not _based
-on Dynamo._</ins>
-
-SimpleDB <del>is almost certainly</del> <ins>originally seemed to be</ins>
+SimpleDB <del>is almost certainly</del> originally seemed to be
 based on Amazon's
 [Dynamo](http://www.allthingsdistributed.com/2007/10/amazons_dynamo.html),
 a distributed hash table that's highly replicated and available in exchange 
@@ -186,11 +182,10 @@ Vogel's [blog](http://www.allthingsdistributed.com/), where he
 > Services, such as S3.
 
 Dynamo's key characteristic is that it really is just a DHT, so its only
-operations are put, get, and delete. In particular, it doesn't provide
-secondary indices. So, <ins>if SimpleDB was</ins> based on Dynamo, how would
-SimpleDB be queries executed? Maybe they'd use a modified full text
-index...but then you'd expect SimpleDB to offer full text search, which it
-doesn't. Hmm.
+operations are put, get, and delete. In particular, it doesn't provide secondary
+indices. So, if SimpleDB was based on Dynamo, how would SimpleDB be queries
+executed? Maybe they'd use a modified full text index...but then you'd expect
+SimpleDB to offer full text search, which it doesn't. Hmm.
 
 One useful hint is that SimpleDB only guarantees [_eventual_
 consistency](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/SDB_Glossary.html#glossary_EventualConsistency).
@@ -200,7 +195,7 @@ asynchronously. That's a big, big caveat for developers, but it helps us start
 to reverse engineer the architecture of their storage and indexing engine.
 
 Personally, I wonder if SimpleDB's indexing is based on a
-<del>full text</del> <ins>conventional</ins> index that's augmented to support
+<del>full text</del> conventional index that's augmented to support
 structured data, similar to [Google Base](http://base.google.com/) or [eBay's
 search engine](http://labs.ebay.com/erlresearchfocus.html#search). if so, I'm
 sure Amazon has its reasons for not (yet) offering full text search over
