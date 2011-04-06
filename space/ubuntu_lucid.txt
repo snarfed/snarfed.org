@@ -368,6 +368,7 @@ hibernate, since they try to suspend anacron first.
     * udev
     * usbmount
     * xloadimage
+    * xkbset
     * xscreensaver
     * yaml-mode
 
