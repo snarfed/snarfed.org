@@ -139,7 +139,7 @@ DATA=`${CURL} -H "Authorization:GoogleLogin auth=${AUTH}" \
 
 # extract the list ids. they're of the form:
 #   04291589652955054844:0:0
-IDS=`echo ${DATA} | egrep -o '[0-9]+:[0-9]+:0'`
+IDS=`echo ${DATA} | egrep -o '[0-9]+:[0-9]+:0' | uniq`
 
 rm -f tasks.json
 touch tasks.json
