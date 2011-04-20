@@ -1,4 +1,4 @@
-Shell app for App Engine's High Reliability Datastore
+Shell app for App Engine's High Replication Datastore
 
 <a href="http://appengine.google.com/">
   <img class="right" src="appengine.jpg" /></a>
