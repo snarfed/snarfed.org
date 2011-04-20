@@ -20,13 +20,12 @@ of ways. The
 describes them admirably, especially given how subtle Paxos edge cases can be.
 Still, sometimes there's no substitute for real live code.
 
-That's why I've set up a new instance of the
-[venerable](2008-04-07_google_app_engine_launched)
-[shell app](http://shell.appspot.com/) for the HRD:
-[shell-hrd.appspot.com](http://shell-hrd.appspot.com/). I've already used it
+That's why I've set up [shell-hrd.appspot.com](http://shell-hrd.appspot.com/), a
+new instance of the [venerable](2008-04-07_google_app_engine_launched)
+[shell app](http://shell.appspot.com/) that uses the HRD. I've already used it
 myself to double check that
 [eventually consistent reads](http://code.google.com/appengine/docs/python/datastore/functions.html#create_rpc)
-aren't supported inside transactions on HRD, just like on M/S.
+aren't supported (or needed) inside transactions on HRD, just like on M/S.
 
 As usual, App Engine's self service and rapid deployment made this a joy. I'd
 already written the code, so I just created the new app in the
