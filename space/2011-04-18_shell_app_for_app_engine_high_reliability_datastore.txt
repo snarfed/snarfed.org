@@ -17,15 +17,14 @@ and closest to my heart, the
 The HRD behaves differently from the original master/slave datastore in a number
 of ways. The
 [documentation](http://code.google.com/appengine/docs/python/datastore/hr/)
-describes them admirably, especially considering how subtle the edge cases in
-Paxos can be. Still, sometimes there's no substitute for real, live, running
-code.
+describes them admirably, especially given how subtle Paxos edge cases can be.
+Still, sometimes there's no substitute for real live code.
 
 That's why I've set up a new instance of the
 [venerable](2008-04-07_google_app_engine_launched)
-[shell app](http://shell.appspot.com/) that uses the HRD:
+[shell app](http://shell.appspot.com/) for the HRD:
 [shell-hrd.appspot.com](http://shell-hrd.appspot.com/). I've already used it
-myself to check something:
+myself to double check that
 [eventually consistent reads](http://code.google.com/appengine/docs/python/datastore/functions.html#create_rpc)
 aren't supported inside transactions on HRD, just like on M/S.
 
@@ -33,7 +32,7 @@ As usual, App Engine's self service and rapid deployment made this a joy. I'd
 already written the code, so I just created the new app in the
 [admin console](http://appengine.google.com/) - taking care to select the HRD
 option - updated the app id in `app.yaml`, added a note to the front page, and
-ran `appcfg.py update`....and it was up and serving. Immediate gratification in
-under two minutes.
+ran `appcfg.py update`. Immediate gratification, up and serving in under two
+minutes.
 
 Enjoy!
