@@ -1,0 +1,40 @@
+Firefox keyconfig extension
+
+<a href="http://forums.mozillazine.org/viewtopic.php?t=72994">
+  <img class="right" src="firefox.png" /></a
+
+I'm a heavy keyboard user, and I [often](emacs_keybindings_in_firefox)
+[go](control_arrow_keys_in_rxvt_tcsh_and_emacs)
+[to](emacs_keybindings_in_gnu_screens_copy-scrollback_mode)
+[great](switch_control_and_caps_lock) [lengths](emacs_page_up_page_down) to set
+up consistent keyboard shortcuts in the programs I use.
+
+[Firefox](http://getfirefox.com/) has good keyboard support overall.
+[Find as you type](http://support.mozilla.com/en-US/kb/Searching#w_search-links-only),
+for example, lets me select and follow an individual link with just a few
+keypresses. Awesome. Still, Firefox has a big UI surface area, so it inevitably
+has a few rough keyboard edges.
+
+Enter the [keyconfig](http://forums.mozillazine.org/viewtopic.php?t=72994)
+extension, which lets you customize all of the built-in keyboard shortcuts and
+add new ones. You can even bind keys to *arbitrary JavaScript*. Brilliant! I
+can't believe it took me so long to find it.
+
+Here's a list of the keyboard shortcuts I've modified with keyconfig:
+
+* Disabled Ctrl-B and Ctrl-H for the Bookmark and History sidebars. I often hit
+  them accidentally, and there's no corresponding key to *close* the sidebars.
+* Likewise, disabled F1 for help. 
+* Ctrl-1, -2, and -3 for my mail, calendar, and todo list
+  [app tabs](http://support.mozilla.com/en-US/kb/what-are-app-tabs) and Ctrl-9
+  to
+  [go to the last tab](http://support.mozilla.com/en-US/kb/Keyboard%20shortcuts#w_windows-tabs).
+* Ctrl-Shift-S to reload my [userstyles](http://userstyles.org/help/userstyles).
+  I use this in my edit/compile/test loop for
+  [developing userstyles](my_stylish_userstyle_workflow). Code:
+    stylishOverlay.turnOnOff(
+      !Components.classes["@mozilla.org/preferences-service;1"].getService(
+       Components.interfaces.nsIPrefBranch).getBoolPref("extensions.stylish.styleRegistrationEnabled"))
+* F9 to focus the page. Helpful when you try to scroll the page, but the focus
+  is on the URL bar or elsewhere. Code: `_content.focus();`
+* TODO: key to reload the proxy.  
