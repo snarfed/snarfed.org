@@ -1,7 +1,7 @@
 Firefox keyconfig extension
 
 <a href="http://forums.mozillazine.org/viewtopic.php?t=72994">
-  <img class="right" src="firefox.png" /></a
+  <img class="right" src="firefox.png" /></a>
 
 I'm a heavy keyboard user, and I [often](emacs_keybindings_in_firefox)
 [go](control_arrow_keys_in_rxvt_tcsh_and_emacs)
