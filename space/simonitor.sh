@@ -74,12 +74,12 @@ for CC in $*; do
   # GET the form page and the recaptcha image
   RECAPTCHA_K=`curl ${CURL_ARGS} \
                  https://www.simon.com/giftcard/card_balance.aspx | \
-                 egrep -o "https://api-secure.recaptcha.net/challenge\?k=[^&']+"`
+                 egrep -o "https://www.google.com/recaptcha/api/challenge\?k=[^&']+"`
   RECAPTCHA_C=`curl -L ${CURL_ARGS} $RECAPTCHA_K | \
                  egrep -o "challenge : '[^']+" | \
                  cut -c 14-`
   CAPTCHAFILE=`mktemp /tmp/simonitor_captcha.XXXXXX` || exit 1
-  curl -L --output $CAPTCHAFILE ${CURL_ARGS} https://api-secure.recaptcha.net/image?c=${RECAPTCHA_C}
+  curl -L --output $CAPTCHAFILE ${CURL_ARGS} https://www.google.com/recaptcha/api/image?c=${RECAPTCHA_C}
   xloadimage $CAPTCHAFILE > /dev/null &
   XLOADIMAGE_PID="$!"
 
