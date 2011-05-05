@@ -25,6 +25,7 @@ Here's a list of the keyboard shortcuts I've modified with keyconfig:
 * Disabled Ctrl-B and Ctrl-H for the Bookmark and History sidebars. I often hit
   them accidentally, and there's no corresponding key to *close* the sidebars.
 * Likewise, disabled F1 for help. 
+* Disabled Ctrl-Shift-V, which toggles the blocked items sidebar.
 * Ctrl-1, -2, and -3 for my mail, calendar, and todo list
   [app tabs](http://support.mozilla.com/en-US/kb/what-are-app-tabs) and Ctrl-9
   to
