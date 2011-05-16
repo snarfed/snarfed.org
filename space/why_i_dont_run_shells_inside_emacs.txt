@@ -67,8 +67,8 @@ my `.cshrc`, read and wrote its
 command history to `~/.history`, and generally played nice.
 
   * **ANSI color codes.** Wonder of wonders, Emacs could even display color
-codes properly. Just do `M-x
-[ansi-color-for-comint-mode-on](http://www.gnu.org/software/emacs/manual/html_node/Shell-Options.html#index-shell_002dpushd_002ddunique-3323)`.
+codes properly. Just do <code>M-x
+[ansi-color-for-comint-mode-on](http://www.gnu.org/software/emacs/manual/html_node/Shell-Options.html#index-shell_002dpushd_002ddunique-3323)</code>.
 
   * **Find-file-at-point.** This handy little elisp function opens, in a new
 Emacs buffer, the filename that your cursor is currently on. After an `ls`, if I
@@ -88,7 +88,7 @@ emacs.
 tcsh. It worked ok for history in the current shell's session, but I didn't have
 access to history from previous sessions.
 
-  * **Remote completion.** Emacs could tab-complete local, files and
+  * **Remote completion.** Emacs could tab-complete local files and
 directories, but as soon as I sshed to another machine, it was helpless. OK,
 that's not quite true...I tried [TRAMP](http://www.gnu.org/software/tramp/), and
 it worked, but it was unbearably, unusably slow. Sigh.
@@ -139,11 +139,11 @@ make shell-mode behave the way I wanted:
     (shell "*shell7*")
 
     ; C-5, 6, 7 to switch to shells
-    (global-set-key [(control 5)]
+    (global-set-key [(control \5)]
       (lambda () (interactive) (switch-to-buffer "*shell5*")))
-    (global-set-key [(control 6)]
+    (global-set-key [(control \6)]
       (lambda () (interactive) (switch-to-buffer "*shell6*")))
-    (global-set-key [(control 7)]
+    (global-set-key [(control \7)]
       (lambda () (interactive) (switch-to-buffer "*shell7*")))
 
 <a name="related"></a>
