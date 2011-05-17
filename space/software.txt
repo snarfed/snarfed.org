@@ -9,6 +9,9 @@ is public domain. Also see [other lists](lists).
 <a name="projects"></a>
 ### Projects
 
+  * The [snarfed WordPress theme](snarfed_wordpress_theme), which is currently
+running on this site.
+
   * [google_talk_sms.pl](google_talk_sms_pidgin_plugin),
 a [Pidgin](http://pidgin.im/) plugin that enables
 [Google Talk](http://talk.google.com/)'s
@@ -45,6 +48,9 @@ plugin that stores mtimes in a file.
 
   * An [RDF flavour](pyblosxom_rdf_flavour) for Pyblosxom.
 
+  * The [snarfed.org PyBlosxom flavour](snarfed_org_pyblosxom_flavour), which
+looks like this site.  
+
   * [Filekicker](filekicker) is a [PyBlosxom](http://pyblosxom.sf.net/)
 plugin that serves static files.
 
@@ -59,8 +65,11 @@ example](/ryan.barrett.name/bigbrother/).
 to [Gnutella](http://rfc-gnutella.sourceforge.net/) and
 [Chord](http://www.pdos.lcs.mit.edu/chord/).
 
-  * [libmsntp](libmsntp) is a compact, portable [SNTP
-library](libmsntp). It provides both client and server functionality.
+  * [libmsntp](libmsntp) is a compact, portable
+[SNTP library](libmsntp). It provides both client and server functionality.
+
+  * The [snarfed.org SnipSnap theme](snarfed_org_snipsnap_theme), which looks
+like this site.
 
   * [Snipsnap macros](snipsnap_macros) is a collection of macros for
 [SnipSnap](http://snipsnap.org), the web server that <strike>runs</strike> used
@@ -101,6 +110,12 @@ email account.
 
 <a name="scripts"></a>
 ### Scripts
+
+  * A [GreaseMonkey userscript that removes trailing quotes in GMail](greasemonkey_gmail_remove_trailing_quote).
+
+  * Custom userstyles: [More Minimalist Gmail](more_minimalist_gmail),
+[Google Calendar Simplified](google_calendar_simplified_userstyle), and
+[Google Tasks Simplified](google_tasks_simplified_userstyle).
 
   * [sync_wordpress.sh](sync_wordpress) syncs
 [WordPress](http://wordpress.org/), files, plugins, themes, and options
