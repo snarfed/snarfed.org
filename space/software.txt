@@ -80,11 +80,6 @@ procedural modelling and rendering of water.
 
   * [Voxel](voxel) is a high-resolution voxel terrain rendering engine.
 
-  * [Palo Alto Library](palo_alto_library_amazon_greasemonkey) is a
-[Greasemonkey](http://greasemonkey.mozdev.org) script that shows whether a book
-on Amazon is available in any of the [Palo Alto
-Libraries](http://cityofpaloalto.org/library/).
-
   * [MAlbum](MAlbum) is a quick and easy graphical interface for creating
 a web album. (Maulik has a [sample
 album](http://maulik.freeshell.net/software/malbum-release/malbumSample).)
@@ -111,9 +106,12 @@ email account.
 <a name="scripts"></a>
 ### Scripts
 
-  * A [GreaseMonkey userscript that removes trailing quotes in GMail](greasemonkey_gmail_remove_trailing_quote).
+  * [Greasemonkey](http://greasespot.net/) usercripts:
+[remove trailing quotes in GMail](greasemonkey_gmail_remove_trailing_quote),
+[check availability in Palo Alto Library](palo_alto_library_amazon_greasemonkey).
 
-  * Custom userstyles: [More Minimalist Gmail](more_minimalist_gmail),
+  * [Userstyles](http://userstyles.org/help/userstyles):
+[More Minimalist Gmail](more_minimalist_gmail),
 [Google Calendar Simplified](google_calendar_simplified_userstyle), and
 [Google Tasks Simplified](google_tasks_simplified_userstyle).
 
