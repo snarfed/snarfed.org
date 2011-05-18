@@ -2,7 +2,7 @@ album
 
 **About**
 
-![/space/album.jpg](album.jpg)
+![album](album.jpg)
 
 We've created a simple macro that creates a photo album interface for pictures.
 Our macro generates thumbnails for a set of pictures and shows the thumbnails on

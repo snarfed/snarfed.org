@@ -1,6 +1,6 @@
 servlets with snipsnap
 
-![/space/snipsnap.png](snipsnap.png)![/space/jetty.png](/space/jetty.png)
+![snipsnap](snipsnap.png)![jetty](jetty.png)
 
 [Snipsnap](Snipsnap), the server that <strike>runs</strike> used to run this
 site, is based on [Jetty](http://jetty.mortbay.com/), a standards based, pure

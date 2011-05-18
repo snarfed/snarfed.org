@@ -2,7 +2,7 @@ synchronizing GNU screen's paste buffer and the X selection
 
 [![terminal.jpg](terminal.jpg)](http://www.gnu.org/software/screen/)
 [![gnu.jpg](gnu.jpg)](http://gnu.org/software/emacs/)
-[![/space/X_logo.png](X_logo.png)](http://x.org/)
+[![X_logo](X_logo.png)](http://x.org/)
 
 I hate the mouse. It's good for some things, but not my work. Switching between
 the mouse and the keyboard wreaks havoc on my muscle memory and fine-motor flow.

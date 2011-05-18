@@ -1,6 +1,6 @@
 libwebserver shutdown patch
 
-[![/space/libwebserver.png](libwebserver.png)](http://libwebserver.sourceforge.net/)
+[![libwebserver](libwebserver.png)](http://libwebserver.sourceforge.net/)
 
 For the impatient:  
 [Patch for libwebserver

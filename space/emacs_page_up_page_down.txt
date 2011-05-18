@@ -1,8 +1,8 @@
 emacs page up page down
 
 [![gnu.jpg](gnu.jpg)](http://gnu.org/software/emacs/)
-[![/space/page_up_key.jpg](page_up_key.jpg)](/space/emacs_page_up_page_down)
-[![/space/page_down_key.jpg](page_down_key.jpg)](/space/emacs_page_up_page_down)
+[![page_up_key](page_up_key.jpg)](emacs_page_up_page_down)
+[![page_down_key](page_down_key.jpg)](emacs_page_up_page_down)
 
 By
 default, the page up and page down keys in

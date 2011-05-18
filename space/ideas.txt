@@ -235,7 +235,7 @@ multipart messages, render HTML-only messages as text and save the text instead,
 offer to delete attachments, and save the attachment filename in the deletion
 note. Details in [this email
 thread](http://mailman1.u.washington.edu/pipermail/pine-info/2005-June/042260.html).
-\[**_Done! See [pine delete attachments on save patch](pine_delete_attachments_on_save_patch) and [pine remove trailing quote patch](/space/pine_remove_trailing_quote_patch)._**]
+\[**_Done! See [pine delete attachments on save patch](pine_delete_attachments_on_save_patch) and [pine remove trailing quote patch](pine_remove_trailing_quote_patch)._**]
 
   * I use [GeoBytes](http://geobytes.com/) to do [geocoding](geocoding)
 on my [voyeurism](/ryan.barrett.name/voyeurism.html) page. It's great,

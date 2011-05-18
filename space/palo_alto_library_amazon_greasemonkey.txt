@@ -1,8 +1,8 @@
 palo alto library amazon greasemonkey
 
-[![/space/greasemonkey.png](greasemonkey.png)](http://greasemonkey.mozdev.org/)
-[![/space/amazon.jpg](amazon.jpg)](http://amazon.com/)
-[![/space/palo_alto_seal.jpg](palo_alto_seal.jpg)](http://webcat.cityofpaloalto.org/)
+[![greasemonkey](greasemonkey.png)](http://greasemonkey.mozdev.org/)
+[![amazon](amazon.jpg)](http://amazon.com/)
+[![palo_alto_seal](palo_alto_seal.jpg)](http://webcat.cityofpaloalto.org/)
 
 For the impatient:  
 [Install Palo Alto Library](paloaltolibrary.user.js)
@@ -28,7 +28,7 @@ it's there, yellow means it's temporarily unavailable (checked out, on order,
 etc.), red means it's not in the
 library.
 
-![/space/available_thumb.jpg](available_thumb.jpg)
+![available_thumb](available_thumb.jpg)
 
 More screenshots: [checked
 out](checked_out_thumb.jpg), [not

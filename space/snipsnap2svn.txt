@@ -1,8 +1,8 @@
 snipsnap2svn
 
 [<img src="snipsnap.png" style="padding-bottom: 15px" />](http://snipsnap.org/)
-[![/space/xsl.png](xsl.png)](http://www.w3.org/TR/xslt)
-[![/space/subversion.jpg](subversion.jpg)](http://subversion.tigris.org/)
+[![xsl](xsl.png)](http://www.w3.org/TR/xslt)
+[![subversion](subversion.jpg)](http://subversion.tigris.org/)
 
 For the impatient:  
 [Download snipsnap2svn.xslt](snipsnap2svn.xslt)  

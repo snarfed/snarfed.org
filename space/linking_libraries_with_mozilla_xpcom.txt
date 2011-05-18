@@ -1,10 +1,10 @@
 linking libraries with mozilla xpcom
 
-[![/space/mozilla.png](mozilla.png)](http://mozilla.org/mozilla1.x/)
+[![mozilla](mozilla.png)](http://mozilla.org/mozilla1.x/)
 [![ff_icon.png](ff_icon.png)](http://mozilla.org/firefox/)
-[![/space/camino.png](camino.png)](http://mozilla.org/camino/)
-[![/space/thunderbird.jpg](thunderbird.jpg)](http://mozilla.org/thunderbird/)
-[![/space/bugzilla.jpg](bugzilla.jpg)](http://bugzilla.org/)
+[![camino](camino.png)](http://mozilla.org/camino/)
+[![thunderbird](thunderbird.jpg)](http://mozilla.org/thunderbird/)
+[![bugzilla](bugzilla.jpg)](http://bugzilla.org/)
 
 I've
 been doing some development recently on the [Mozilla](http://mozilla.org/)

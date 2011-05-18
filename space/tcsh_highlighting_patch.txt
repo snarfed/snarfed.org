@@ -20,10 +20,10 @@ mode, the region between the mark and cursor. Highlighting is off by default; it
 can be turned on by setting the shell variable _highlight_.
 
 Here's a screenshot while the mark is
-set:![/space/tcsh_highlighting_mark_region.png](tcsh_highlighting_mark_region.png)
+set:![tcsh_highlighting_mark_region](tcsh_highlighting_mark_region.png)
 
 ...and an incremental search
-screenshot:![/space/tcsh_highlighting_incremental_search.png](tcsh_highlighting_incremental_search.png)
+screenshot:![tcsh_highlighting_incremental_search](tcsh_highlighting_incremental_search.png)
 
 The patch applies cleanly against [tcsh
 6.14.00](http://www.tcsh.org/MostRecentRelease). See the [discussion on the tcsh

@@ -79,7 +79,7 @@ people to point out this huge piece of SimpleDB's provenance.)
 
 The tuplespaces concept never spread too far beyond of research, but I've
 always loved it, and I've had ["build tuplespaces on top of a
-DHT"](ideas#tuplespaces) on my [list of project ideas](/space/ideas) for
+DHT"](ideas#tuplespaces) on my [list of project ideas](ideas) for
 years. As long as I get to play with it, I don't care if Amazon beat me to the
 punch. After all, they can afford a few more servers and sysadmins than I can.
 

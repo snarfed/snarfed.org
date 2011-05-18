@@ -1,6 +1,6 @@
 acoc.conf for context diffs
 
-[![/space/acoc_top.png](acoc_top.png)](http://www.caliban.org/ruby/acoc.shtml)
+[![acoc_top](acoc_top.png)](http://www.caliban.org/ruby/acoc.shtml)
 
 For the impatient:  
 [.acoc.conf](acoc.conf) for coloring context diffs  

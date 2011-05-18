@@ -11,7 +11,7 @@ img { vertical-align: text-top; }
 ![good](/good.png) I liked,
 ![ok](/ok.png) were just ok,
 ![bad](/bad.png) I didn't like.
-Also see [wine](wine), [chocolate](/space/chocolate), and
+Also see [wine](wine), [chocolate](chocolate), and
 [other lists](lists).
 
 Naturally, this isn't comprehensive - I've tried others that aren't listed
