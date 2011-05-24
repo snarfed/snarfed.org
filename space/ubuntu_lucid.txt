@@ -342,6 +342,7 @@ hibernate, since they try to suspend anacron first.
   
     * apache2
     * aumix
+    * emacs-goodies-el
     * emacs23-el
     * emacs23-lucid (replaces emacs23-gtk)
     * flickcurl-utils
@@ -350,9 +351,11 @@ hibernate, since they try to suspend anacron first.
     * ion3-dev
     * ion3-doc
     * ion3-scripts
+    * lua-mode
     * lynx
     * mpg123
     * mysql-server
+    * php-elisp
     * php5
     * php5-cgi
     * php5-cli
