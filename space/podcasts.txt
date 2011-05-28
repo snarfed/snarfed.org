@@ -21,14 +21,17 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
 
 <a name="current"></a>
 
-* [60-Second Science](http://www.scientificamerican.com/podcast/)
-(_[subscribe](http://www.scientificamerican.com/podcast/sciam_podcast_i_d.xml)_) 
-
 * [A Life Well Wasted](http://www.alifewellwasted.com)
 (_[subscribe](http://www.alifewellwasted.com/episodes/episodes.xml)_) 
 
-* [Biology 1A, 001|Spring 2010|UC Berkeley](http://webcast.berkeley.edu)
-(_[subscribe](http://webcast.berkeley.edu/media/common/rss/Biology_1A__001_Spring_2010_Audio__webcast.rss)_) 
+* [Cell Podcast](http://www.cell.com/cellpress/podcast)
+(_[subscribe](http://podcast.cell.com/cell.xml)_) 
+
+* [Coast to Coast Bio Podcast](http://www.c2cbio.com)
+(_[subscribe](http://feeds.feedburner.com/c2cbio)_) 
+
+* [Futures in Biotech](http://futuresinbiotech.blogspot.com/)
+(_[subscribe](http://leoville.tv/podcasts/fib.xml)_) 
 
 * [Gamers With Jobs - Conference Call](http://www.gamerswithjobs.com/taxonomy/term/408/0)
 (_[subscribe](http://www.gamerswithjobs.com/taxonomy/term/408/0/feed)_) 
@@ -38,6 +41,75 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
 
 * [GDC Radio](http://www.gdcradio.net/)
 (_[subscribe](http://feeds.feedburner.com/GDCRadio)_) 
+
+* [NPR: Hourly News Summary Podcast](http://www.npr.org/templates/topics/topic.php?topicId=1001)
+(_[subscribe](http://www.npr.org/rss/podcast.php?id=500005)_) 
+
+* [NPR: Planet Money Podcast](http://www.npr.org/planetmoney)
+(_[subscribe](http://www.npr.org/rss/podcast.php?id=510289)_) 
+
+* [NPR: Story of the Day Podcast](http://www.npr.org/)
+(_[subscribe](http://www.npr.org/rss/podcast.php?id=1090)_) 
+
+* [NPR: Wait Wait... Don't Tell Me! Podcast](http://www.npr.org/templates/rundowns/rundown.php?prgId=35)
+(_[subscribe](http://www.npr.org/rss/podcast.php?id=35)_) 
+
+* [NPR: World Story of the Day Podcast](http://www.npr.org/world)
+(_[subscribe](http://www.npr.org/rss/podcast.php?id=1056)_) 
+
+* [NPR: Your Health Podcast](http://www.npr.org/health)
+(_[subscribe](http://www.npr.org/rss/podcast.php?id=510284)_) 
+
+* [NPR's On the Media](http://www.onthemedia.org/?sourceref=rss)
+(_[subscribe](http://feeds.wnyc.org/onthemedia)_) 
+
+* [SALT - Seminars About Long Term Thinking](http://www.longnow.org/)
+(_[subscribe](http://longnow.org/projects/seminars/SALT.xml)_) 
+
+* [San Francisco Symphony Podcasts](http://sfsymphonypodcasts.blogspot.com/)
+(_[subscribe](http://feeds.feedburner.com/SanFranciscoSymphonyPodcasts)_) 
+
+* [TEDTalks (audio)](http://www.ted.com/talks/browse)
+(_[subscribe](http://feeds.feedburner.com/tedtalks_audio)_) 
+
+* [The Brainy Gamer Podcast](http://www.brainygamer.com)
+(_[subscribe](http://feeds.feedburner.com/brainygamerpodcast)_) 
+
+* [The Economist](http://www.economist.com)
+(_[subscribe](http://feeds.feedburner.com/economist/audio_all)_) 
+
+* [The RPS Electronic Wireless Show](http://www.rockpapershotgun.com)
+(_[subscribe](http://rps.libsyn.com/rss)_) 
+
+* [This American Life](http://www.thisamericanlife.org)
+(_[subscribe](http://feeds.feedburner.com/talpodcast)_) 
+
+* [WNYC's Radio Lab](http://www.radiolab.org/series/podcasts/)
+(_[subscribe](http://feeds.wnyc.org/radiolab?format=xml)_) 
+
+
+*Retired:* <a name="retired"></a>
+
+* [1UP Yours](http://1upyours.1up.com)
+(_[subscribe](http://www.1up.com/flat/Podcasts/podcasts.xml)_) 
+
+* [60-Second Science](http://www.scientificamerican.com/podcast/)
+(_[subscribe](http://www.scientificamerican.com/podcast/sciam_podcast_i_d.xml)_) 
+
+* [Battlestar Galactica Podcast](http://www.scifi.com/battlestar/)
+(_[subscribe](http://www.scifi.com/battlestar/downloads/podcast/podcast.xml)_) 
+
+* [Biology 1A, Spring 2010, UC Berkeley](http://webcast.berkeley.edu)
+(_[subscribe](http://webcast.berkeley.edu/media/common/rss/Biology_1A__001_Spring_2010_Audio__webcast.rss)_) 
+
+* [Game Theory](http://gametheoryshow.com)
+(_[subscribe](http://gametheory.libsyn.com/rss)_) 
+
+* [Giant Bombcast](http://www.giantbomb.com/)
+(_[subscribe](http://media.giantbomb.com/podcast/podcast.xml)_) 
+
+* [Jonathan Coulton » Thing a Week](http://www.jonathancoulton.com)
+(_[subscribe](http://feeds.feedburner.com/thingaweek)_) 
 
 * [JHU Podcast - General Biology I](http://podcasting.jhu.edu/feeds)
 (_[subscribe](http://podcasting.jhu.edu/makefeeds.php?courseid=67754)_) 
@@ -51,62 +123,14 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
 * [MedlinePlus: NLM Director's Comments](http://www.nlm.nih.gov/medlineplus/directorscomments.html)
 (_[subscribe](http://www.nlm.nih.gov/medlineplus/podcast/nlmpcast.rss)_) 
 
+* [Movies](http://www.publicbroadcasting.net/wosu/arts/)
+(_[subscribe](http://www.publicbroadcasting.net/wosu/arts.artsmain?action=podcast&section=8&displayNational=false)_) 
+
 * [NPR: Car Talk Podcast](http://www.cartalk.com?ft=2&f=510208)
 (_[subscribe](http://www.npr.org/rss/podcast.php?id=510208)_) 
 
-* [NPR: Hourly News Summary Podcast](http://www.npr.org/templates/topics/topic.php?topicId=1001&ft=2&f=500005)
-(_[subscribe](http://www.npr.org/rss/podcast.php?id=500005)_) 
-
-* [NPR: Planet Money Podcast](http://www.npr.org/planetmoney?ft=2&f=510289)
-(_[subscribe](http://www.npr.org/rss/podcast.php?id=510289)_) 
-
-* [NPR: Story of the Day Podcast](http://www.npr.org/?ft=2&f=1090)
-(_[subscribe](http://www.npr.org/rss/podcast.php?id=1090)_) 
-
-* [NPR: Wait Wait... Don't Tell Me! Podcast](http://www.npr.org/templates/rundowns/rundown.php?prgId=35&ft=2&f=35)
-(_[subscribe](http://www.npr.org/rss/podcast.php?id=35)_) 
-
-* [NPR: World Story of the Day Podcast](http://www.npr.org/world?ft=2&f=1056)
-(_[subscribe](http://www.npr.org/rss/podcast.php?id=1056)_) 
-
-* [NPR: Your Health Podcast](http://www.npr.org/health?ft=2&f=510284)
-(_[subscribe](http://www.npr.org/rss/podcast.php?id=510284)_) 
-
-* [NPR's On the Media](http://www.onthemedia.org/?sourceref=rss)
-(_[subscribe](http://feeds.wnyc.org/onthemedia)_) 
-
 * [Out of the Game](http://mexicutedbyhepitacos.libsyn.com/)
 (_[subscribe](http://mexicutedbyhepitacos.libsyn.com/rss)_) 
-
-* [The Economist](http://www.economist.com)
-(_[subscribe](http://feeds.feedburner.com/economist/audio_all)_) 
-
-* [This American Life](http://www.thisamericanlife.org)
-(_[subscribe](http://feeds.feedburner.com/talpodcast)_) 
-
-* [WNYC's Radio Lab](http://pipes.yahoo.com/pipes/pipe.info?_id=d71dbccf7f09a3d9e519fb4c1864ce91)
-(_[subscribe](http://feeds.wnyc.org/radiolab?format=xml)_) 
-
-
-*Retired:* <a name="retired"></a>
-
-* [1UP Yours](http://1upyours.1up.com)
-(_[subscribe](http://www.1up.com/flat/Podcasts/podcasts.xml)_) 
-
-* [Battlestar Galactica Podcast](http://www.scifi.com/battlestar/)
-(_[subscribe](http://www.scifi.com/battlestar/downloads/podcast/podcast.xml)_) 
-
-* [Game Theory](http://gametheoryshow.com)
-(_[subscribe](http://gametheory.libsyn.com/rss)_) 
-
-* [Giant Bombcast](http://www.giantbomb.com/)
-(_[subscribe](http://media.giantbomb.com/podcast/podcast.xml)_) 
-
-* [Jonathan Coulton » Thing a Week](http://www.jonathancoulton.com)
-(_[subscribe](http://feeds.feedburner.com/thingaweek)_) 
-
-* [Movies](http://www.publicbroadcasting.net/wosu/arts/)
-(_[subscribe](http://www.publicbroadcasting.net/wosu/arts.artsmain?action=podcast&section=8&displayNational=false)_) 
 
 * [PC Gamer Podcast](http://www.pcgamerpodcast.com)
 (_[subscribe](http://www.pcgamerpodcast.com/?feed=rss2&category_name=podcasts)_) 
