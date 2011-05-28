@@ -6,7 +6,6 @@ img { vertical-align: text-top; }
 
 <img class="right" src="tv.jpg" alt="tv" />
 
-
 Television shows I
 [want to watch](#to_watch) and
 [have watched](#watched).
@@ -40,12 +39,6 @@ _([HBO](http://hbo.com/))_
 [Lone Star](http://www.fox.com/programming/shows/?sh=lonestar)
 _([Fox](http://fox.com/))_
 
-[Treme](http://www.hbo.com/treme/)
-_([HBO](http://hbo.com/))_
-
-[United States of Tara](http://www.sho.com/tara)
-_([Showtime](http://sho.com/))_
-
 [Parallel Worlds, Parallel Lives](http://www.pbs.org/wgbh/nova/manyworlds/)
 _([PBS](http://pbs.org/))_
 
@@ -54,9 +47,20 @@ _([PBS](http://pbs.org/))_
 **Shows I've watched**: 
 [![Icon-Permalink.png](/Icon-Permalink.png)](#watched)
 
+<span title="on hbo go w/gina">
+[Treme](http://www.hbo.com/treme/)
+_([HBO](http://hbo.com/))_
+</span>
+
 <span title="from metacritic's best of 2010-11 list">
 [Luther](http://www.bbc.co.uk/programmes/b00vk2lp)
 _([BBC](http://bbc.co.uk/))_
+</span>
+
+<span title="at gina's, snippets here and there">
+[United States of Tara](http://www.sho.com/tara)
+_([Showtime](http://sho.com/))_
+![ok](/ok.png)
 </span>
 
 <span title="recommended by matt ashcraft; watched first episode w/gina, 2/6/2011">
