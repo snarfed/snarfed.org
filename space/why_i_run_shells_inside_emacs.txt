@@ -1,0 +1,194 @@
+why I run shells inside Emacs
+
+<a href="http://cheezburger.com/View/1666431232">
+  <img class="right" src="cat_bubbles.jpg" /></a>
+
+[Mental context switches](http://joelonsoftware.com/articles/fog0000000022.html)
+are evil. Some people handle them better than others, but not me. I handle them
+worse. I feel it, almost physically, when context switches whittle down my
+precious [flow](http://en.wikipedia.org/wiki/Flow_(psychology)) piece by piece.
+It hurts!
+
+Even something as small as switching between
+[Emacs](http://gnu.org/software/emacs/) and the shell can hurt, especially when
+I do it thousands of times a day. The physical movement isn't so bad; it's that
+they have different key bindings, different clipboards, and myriad deeper
+differences in behavior. What's worse, only *some* parts are different, so my
+muscle memory is constantly seduced into a false sense of familiarity, only to
+have the rug yanked out from under it seconds later.
+
+I [put](emacs_keybindings_in_gnu_screens_copy-scrollback_mode)
+[together](control_arrow_keys_in_rxvt_tcsh_and_emacs)
+[various](minimal_emacs_for_fast_startup)
+[hacks](synchronizing_gnu_screens_paste_buffer_and_the_x_selection) to bring
+Emacs and my shell closer together, with some success, but it always felt like a
+chronic disease. Curing it completely was never on the table; I could only hope
+to manage it.
+
+<a href="http://gnu.org/software/emacs/">
+  <img class="left" src="gnu.jpg" /></a>
+
+The holy grail, of course, was running shells *inside* Emacs. I had high hopes
+when I [tried it eight years ago](why_i_dont_run_shells_inside_emacs), but it
+didn't work out. I tried it again recently though, and it's still early days,
+but we're pretty happy together this time. I think we might go the distance!
+
+Here are a few remaining rough edges:
+
+* If I enter multiple commands with newlines between them, the prompt is
+  reprinted as soon as the *first* command finishes. This is misleading, since
+  the rest are still running. (This still happens if I put `;`s or `\` line
+  continuations between them.)
+* If I start my shells in my `.emacs`, they don't parse the
+  `^[[K` ANSI color codes in output like `ls -l`'s. (This is with
+  `ansi-color-for-comint-mode` on). However, if I start them after emacs has
+  booted, they parse fine. Huh?
+* Optimize [TRAMP](http://www.gnu.org/software/tramp/). It's decently fast right
+  now, but I'm sure I could make it even faster!
+
+Here are some things I did manage to tweak:
+
+* Make shell buffer contents read only by setting the `read-only`
+  [text property](http://www.gnu.org/software/emacs/manual/html_node/elisp/Special-Properties.html#index-local_002dmap-_0040r_007b_0028text-property_0029_007d-2718).
+* Use `dirtrack-mode`, which keeps track of the current directory and handles
+  completion better than the
+  [default mechanism](http://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Tracking.html).
+* ...but *don't* use it in ssh shells to remote machines, since it doesn't work.
+  It complains e.g. `Warning (emacs): Directory ~/gallery/ does not exist.`
+<img class="right" src="terminal.jpg" /></a>
+* Instead, run long-lived ssh shells via
+  [TRAMP](http://www.gnu.org/software/tramp/), and add the hook described in
+  [this thread](http://comments.gmane.org/gmane.emacs.bugs/39082) to make
+  completion work on remote hosts.
+* Speaking of TRAMP, I use
+  [OpenSSH 4.0's awesome ControlMaster feature](http://www.linux.com/archive/feed/54498)
+  to optimize its ssh connections. Just add `ControlMaster auto` in `~/.ssh/config`
+  and you're good to go!
+* Use `ansi-color-for-comint-mode-on` to render ANSI color codes.
+* When I type or paste a newline at the prompt, it scrolls halfway up the
+  screen. Prevent this by setting `scroll-conservatively` to something like
+  `10`.
+* `emacsclient` inside `shell-mode` works as expected. Woot! Set
+  `display-buffer-reuse-frames` to `t` to make sure Emacs doesn't bury (switch
+  away from) shell buffers when I run it.
+* Use `protect-buffer-from-kill-mode` to prevent accidentally closing shell buffers.
+* [Make the completions buffer automatically close](automatically_close_completions_in_emacs_shell_comint_mode)
+  when I'm done with it.
+* When I
+  [search over command history](http://www.gnu.org/software/emacs/manual/html_node/emacs/Shell-Ring.html#index-comint_002ddynamic_002dlist_002dinput_002dring-3660)
+  and press the Enter key, run the selected command immediately. Also, suppress
+  the annoying "History item: X" messages.
+
+
+Here's the code in [my .emacs](dotfiles/.emacs):
+
+    (defvar my-shells
+      '("*snarfed*" "*shell0*" "*shell1*" "*shell2*" "*music*"))
+    
+    (require 'tramp)
+    
+    (custom-set-variables
+     '(tramp-default-method "ssh")          ; uses ControlMaster
+     '(comint-scroll-to-bottom-on-input t)  ; always insert at the bottom
+     '(comint-scroll-to-bottom-on-output nil) ; always add output at the bottom
+     '(comint-scroll-show-maximum-output t) ; scroll to show max possible output
+     '(comint-completion-autolist t)        ; show completion list when ambiguous
+     '(comint-input-ignoredups t)           ; no duplicates in command history
+     '(comint-completion-addsuffix t)       ; insert space/slash after file completion
+     '(comint-buffer-maximum-size 100000)   ; max length of the buffer in lines
+     '(comint-prompt-read-only nil)         ; if this is t, it breaks shell-command
+     '(comint-get-old-input (lambda () "")) ; what to run when i press enter on a
+                                            ; line above the current prompt
+     '(comint-input-ring-size 5000)         ; max shell history size
+     '(protect-buffer-bury-p nil)
+    )
+    
+    ;; truncate buffers continuously
+    (add-hook 'comint-output-filter-functions 'comint-truncate-buffer)
+    
+    ;; make stdout read only, but only in my shells
+    (defun make-my-shell-output-read-only (text)
+      (if (member (buffer-name) my-shells)
+          (let ((inhibit-read-only t)
+                (output-end (process-mark (get-buffer-process (current-buffer)))))
+            (put-text-property comint-last-output-start output-end 'read-only t))))
+    (add-hook 'comint-output-filter-functions 'make-my-shell-output-read-only)
+    
+    ;; use dirtrack mode but not in the tramp shell
+    (defun dirtrack-mode-locally ()
+      (when (member (buffer-name) (cdr my-shells))
+        (dirtrack-mode t)
+        (set-variable 'dirtrack-list '("^[A-Za-z0-9]+:\\([~/][^\\n>]*\\)>" 1 nil))))
+    (add-hook 'shell-mode-hook 'dirtrack-mode-locally)
+    
+    ; interpret and use ansi color codes in shell output windows
+    (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
+    
+    ; don't jump-scroll when i enter a newline in a shell command
+    (defun set-scroll-conservatively ()
+      (set (make-local-variable 'scroll-conservatively) 10))
+    (add-hook 'shell-mode-hook 'set-scroll-conservatively)
+    
+    ; don't switch away from the shell when emacsclient opens a new buffer
+    (defun unset-display-buffer-reuse-frames ()
+      (set (make-local-variable 'display-buffer-reuse-frames) t))
+    (add-hook 'shell-mode-hook 'unset-display-buffer-reuse-frames)
+    
+    ;; make it harder to kill my shell buffers
+    (require 'protbuf)
+    (add-hook 'shell-mode-hook 'protect-buffer-from-kill-mode)
+    
+    ;; this makes directory tracking work while sshed into a remote host, e.g. for
+    ;; remote shell buffers started in tramp. TODO: remove once i'm on emacs 24:
+    ;; http://comments.gmane.org/gmane.emacs.bugs/39082
+    (defun make-comint-directory-tracking-work-remotely ()
+      (set (make-local-variable 'comint-file-name-prefix)
+           (or (file-remote-p default-directory) "")))
+    (add-hook 'comint-mode-hook 'make-comint-directory-tracking-work-remotely)
+    
+    ;; function and advice to automatically close the completions buffer as soon as
+    ;; i'm done with it. based on Dmitriy Igrishin <dmitigr@gmail.com>'s patched
+    ;; version of comint.el, which i converted to advice.
+    (defun comint-close-completions ()
+      (if comint-dynamic-list-completions-config
+          (progn
+            (set-window-configuration comint-dynamic-list-completions-config)
+            (setq comint-dynamic-list-completions-config nil))))
+    
+    (defadvice comint-send-input (after close-completions activate)
+      (comint-close-completions))
+    
+    (defadvice comint-dynamic-complete-as-filename (after close-completions activate)
+      (if ad-return-value (comint-close-completions)))
+    
+    (defadvice comint-dynamic-simple-complete (after close-completions activate)
+      (if (member ad-return-value '('sole 'shortest 'partial))
+          (comint-close-completions)))
+    
+    (defadvice comint-dynamic-list-completions (after close-completions activate)
+        (comint-close-completions)
+        (if (not unread-command-events)
+            ;; comint's "Type space to flush" swallows space. put it back in.
+            (setq unread-command-events (listify-key-sequence " "))))
+    
+    ;; in emacs's built in minibuf isearch and in shell-mode history isearch (from
+    ;; comint.el), make enter select the current item.
+    ;; (another approach would be after-advice on isearch-other-meta-char.)
+    (defun enter-again-if-enter ()
+      (when (and (not isearch-mode-end-hook-quit)
+                 (equal (this-command-keys-vector) [13])) ; == return
+        (cond ((active-minibuffer-window) (minibuffer-complete-and-exit))
+              ((member (buffer-name) my-shells) (comint-send-input)))))
+    (add-hook 'isearch-mode-end-hook 'enter-again-if-enter)
+    
+    ;; suppress the annoying "History item : NNN" messages from
+    ;; comint-previous-matching-input when regexp searching history.
+    ;;
+    ;; (if this isn't enough, try the same thing with
+    ;; comint-replace-by-expanded-history-before-point.)
+    (defadvice comint-previous-matching-input
+        (around suppress-history-item-messages activate)
+      (let ((old-message (symbol-function 'message)))
+        (unwind-protect
+          (progn (fset 'message 'ignore) ad-do-it)
+        (fset 'message old-message))))

@@ -4,16 +4,14 @@ why I don't run shells inside Emacs
 [![tcsh_oystercatcher.jpg](tcsh_oystercatcher.jpg)](http://tcsh.org/)
 [![gnu.jpg](gnu.jpg)](http://gnu.org/software/emacs/)
 
-This article details
-my experience running shells inside [Emacs](http://gnu.org/software/emacs/). I
-take a while to warm up, so if you're impatient, feel free to skip to the [pros
-and cons](#pros_and_cons), the [.emacs
-settings](#settings), or the [related
-articles](#related).
+*This article describes my first attempt at running shells inside Emacs, which
+didn't work out. I [tried again recently](why_i_run_shells_inside_emacs), and I
+think I'm going to stick with it, so this is preserved for posterity only!*
 
-When I'm working, I pretty much live inside Emacs. It's my IDE, debugger, text
-editor, email composer, spreadsheet, file manager, and all-around scratch pad.
-The only other app that's as ubiquitous in my work routine is my shell,
+When I'm working, I pretty much live inside
+[Emacs](http://gnu.org/software/emacs/). It's my IDE, debugger, text editor,
+email composer, spreadsheet, file manager, and all-around scratch pad. The only
+other app that's as ubiquitous in my work routine is my shell,
 [tcsh](http://www.tcsh.org/) inside [rxvt](http://rxvt.org/).
 
 I've customized the hell out of both Emacs and tcsh to make them work the way I
