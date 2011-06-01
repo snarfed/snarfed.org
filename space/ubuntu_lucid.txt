@@ -341,6 +341,7 @@ hibernate, since they try to suspend anacron first.
   * Here are some of the extra packages I installed:
   
     * apache2
+    * apel
     * aumix
     * emacs-goodies-el
     * emacs23-el
