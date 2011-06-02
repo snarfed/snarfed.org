@@ -352,6 +352,7 @@ hibernate, since they try to suspend anacron first.
     * ion3-dev
     * ion3-doc
     * ion3-scripts
+    * jnettop
     * lua-mode
     * lynx
     * mpg123
