@@ -64,6 +64,9 @@ Here are some things I did manage to tweak:
   [OpenSSH 4.0's awesome ControlMaster feature](http://www.linux.com/archive/feed/54498)
   to optimize its ssh connections. Just add `ControlMaster auto` in `~/.ssh/config`
   and you're good to go!
+* Extend those TRAMP shells
+  [so that emacsclient opens remote files in the local Emacs](emacsclient_in_tramp_remote_shells),
+  also via TRAMP.
 * Use `ansi-color-for-comint-mode-on` to render ANSI color codes.
 * When I type or paste a newline at the prompt, it scrolls halfway up the
   screen. Prevent this by setting `scroll-conservatively` to something like
