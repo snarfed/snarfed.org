@@ -64,9 +64,6 @@ Here are some things I did manage to tweak:
   [OpenSSH 4.0's awesome ControlMaster feature](http://www.linux.com/archive/feed/54498)
   to optimize its ssh connections. Just add `ControlMaster auto` in `~/.ssh/config`
   and you're good to go!
-* Extend those TRAMP shells
-  [so that emacsclient opens remote files in the local Emacs](emacsclient_in_tramp_remote_shells),
-  also via TRAMP.
 * Use `ansi-color-for-comint-mode-on` to render ANSI color codes.
 * When I type or paste a newline at the prompt, it scrolls halfway up the
   screen. Prevent this by setting `scroll-conservatively` to something like
@@ -74,6 +71,9 @@ Here are some things I did manage to tweak:
 * `emacsclient` inside `shell-mode` works as expected. Woot! Set
   `display-buffer-reuse-frames` to `t` to make sure Emacs doesn't bury (switch
   away from) shell buffers when I run it.
+* Extend the SSH shells
+  [so that emacsclient opens remote files in the local Emacs](emacsclient_in_tramp_remote_shells)
+  via TRAMP.
 * Use `protect-buffer-from-kill-mode` to prevent accidentally closing shell buffers.
 * [Make the completions buffer automatically close](automatically_close_completions_in_emacs_shell_comint_mode)
   when I'm done with it.
@@ -95,7 +95,7 @@ Here's the code in [my .emacs](dotfiles/.emacs):
      '(comint-scroll-to-bottom-on-input t)  ; always insert at the bottom
      '(comint-scroll-to-bottom-on-output nil) ; always add output at the bottom
      '(comint-scroll-show-maximum-output t) ; scroll to show max possible output
-     '(comint-completion-autolist t)        ; show completion list when ambiguous
+     ;; '(comint-completion-autolist t)     ; show completion list when ambiguous
      '(comint-input-ignoredups t)           ; no duplicates in command history
      '(comint-completion-addsuffix t)       ; insert space/slash after file completion
      '(comint-buffer-maximum-size 100000)   ; max length of the buffer in lines
@@ -106,19 +106,21 @@ Here's the code in [my .emacs](dotfiles/.emacs):
      '(protect-buffer-bury-p nil)
     )
     
+    (setenv "PAGER" "cat")
+    
     ;; truncate buffers continuously
     (add-hook 'comint-output-filter-functions 'comint-truncate-buffer)
     
-    ;; make stdout read only, but only in my shells
     (defun make-my-shell-output-read-only (text)
+      "Add to comint-output-filter-functions to make stdout read only in my shells."
       (if (member (buffer-name) my-shells)
           (let ((inhibit-read-only t)
                 (output-end (process-mark (get-buffer-process (current-buffer)))))
             (put-text-property comint-last-output-start output-end 'read-only t))))
     (add-hook 'comint-output-filter-functions 'make-my-shell-output-read-only)
     
-    ;; use dirtrack mode but not in the tramp shell
     (defun dirtrack-mode-locally ()
+      "Add to shell-mode-hook to use dirtrack mode in my local shell buffers."
       (when (member (buffer-name) (cdr my-shells))
         (dirtrack-mode t)
         (set-variable 'dirtrack-list '("^[A-Za-z0-9]+:\\([~/][^\\n>]*\\)>" 1 nil))))
@@ -127,13 +129,14 @@ Here's the code in [my .emacs](dotfiles/.emacs):
     ; interpret and use ansi color codes in shell output windows
     (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
     
-    ; don't jump-scroll when i enter a newline in a shell command
     (defun set-scroll-conservatively ()
+      "Add to shell-mode-hook to prevent jump-scrolling on newlines in shell buffers."
       (set (make-local-variable 'scroll-conservatively) 10))
     (add-hook 'shell-mode-hook 'set-scroll-conservatively)
     
-    ; don't switch away from the shell when emacsclient opens a new buffer
     (defun unset-display-buffer-reuse-frames ()
+      "Add to shell-mode-hook to prevent switching away from the shell buffer
+    when emacsclient opens a new buffer."
       (set (make-local-variable 'display-buffer-reuse-frames) t))
     (add-hook 'shell-mode-hook 'unset-display-buffer-reuse-frames)
     
@@ -141,18 +144,21 @@ Here's the code in [my .emacs](dotfiles/.emacs):
     (require 'protbuf)
     (add-hook 'shell-mode-hook 'protect-buffer-from-kill-mode)
     
-    ;; this makes directory tracking work while sshed into a remote host, e.g. for
-    ;; remote shell buffers started in tramp. TODO: remove once i'm on emacs 24:
-    ;; http://comments.gmane.org/gmane.emacs.bugs/39082
     (defun make-comint-directory-tracking-work-remotely ()
+      "Add this to comint-mode-hook to make directory tracking work
+    while sshed into a remote host, e.g. for remote shell buffers
+    started in tramp. (This is a bug fix backported from Emacs 24:
+    http://comments.gmane.org/gmane.emacs.bugs/39082"
       (set (make-local-variable 'comint-file-name-prefix)
            (or (file-remote-p default-directory) "")))
     (add-hook 'comint-mode-hook 'make-comint-directory-tracking-work-remotely)
     
-    ;; function and advice to automatically close the completions buffer as soon as
-    ;; i'm done with it. based on Dmitriy Igrishin <dmitigr@gmail.com>'s patched
-    ;; version of comint.el, which i converted to advice.
     (defun comint-close-completions ()
+      "Close close the comint completions buffer.
+    Used in advice to various comint functions to automatically close
+    the completions buffer as soon as I'm done with it. Based on
+    Dmitriy Igrishin <dmitigr@gmail.com>'s patched version of
+    comint.el."
       (if comint-dynamic-list-completions-config
           (progn
             (set-window-configuration comint-dynamic-list-completions-config)
@@ -174,24 +180,71 @@ Here's the code in [my .emacs](dotfiles/.emacs):
             ;; comint's "Type space to flush" swallows space. put it back in.
             (setq unread-command-events (listify-key-sequence " "))))
     
-    ;; in emacs's built in minibuf isearch and in shell-mode history isearch (from
-    ;; comint.el), make enter select the current item.
-    ;; (another approach would be after-advice on isearch-other-meta-char.)
     (defun enter-again-if-enter ()
+      "Make the return key select the current item in minibuf and shell history isearch.
+    An alternate approach would be after-advice on isearch-other-meta-char."
       (when (and (not isearch-mode-end-hook-quit)
                  (equal (this-command-keys-vector) [13])) ; == return
         (cond ((active-minibuffer-window) (minibuffer-complete-and-exit))
               ((member (buffer-name) my-shells) (comint-send-input)))))
     (add-hook 'isearch-mode-end-hook 'enter-again-if-enter)
     
-    ;; suppress the annoying "History item : NNN" messages from
-    ;; comint-previous-matching-input when regexp searching history.
-    ;;
-    ;; (if this isn't enough, try the same thing with
-    ;; comint-replace-by-expanded-history-before-point.)
     (defadvice comint-previous-matching-input
         (around suppress-history-item-messages activate)
+      "Suppress the annoying 'History item : NNN' messages from shell history isearch.
+    If this isn't enough, try the same thing with
+    comint-replace-by-expanded-history-before-point."
       (let ((old-message (symbol-function 'message)))
         (unwind-protect
           (progn (fset 'message 'ignore) ad-do-it)
         (fset 'message old-message))))
+    
+    (require 'alist)
+    (defun update-tramp-emacs-server-ssh-port-forward ()
+      "Update TRAMP's ssh method to forward the Emacs server port to the local host.
+    This lets emacsclient on the remote host open files in the local Emacs server.
+    
+    put-alist, used below, is defined in alist, which is part of the APEL library:
+    http://kanji.zinbun.kyoto-u.ac.jp/~tomo/elisp/APEL/index.en.html"
+      (let* ((ssh-method (assoc "ssh" tramp-methods))
+             (ssh-args (cadr (assoc 'tramp-login-args ssh-method))))
+        (put-alist 'tramp-login-args
+          (list (put-alist "-R" (let ((port (process-contact server-process :service)))
+            ;; put-alist makes a dotted pair for the key/value, but tramp-methods
+            ;; needs a normal list, so put the value inside a list so that the
+            ;; second part of the dotted pair (ie the cdr) is a list, which converts
+            ;; it from a dotted pair into a normal list.
+                                  (list (format "%d:127.0.0.1:%d" port port)))
+                           ssh-args))
+          ssh-method)))
+    
+    (defun ssh-shell (host bufname)
+      "SSH to a remote host in a shell-mode buffer using TRAMP."
+      (update-tramp-emacs-server-ssh-port-forward)
+      (let ((default-directory (format "/%s:" host))
+            (tramp-remote-process-environment
+             (cons (format "EDITOR='emacsclient -f ~/.emacs.d/%s_server'" (getenv "HOST"))
+                     tramp-remote-process-environment)))
+        (shell bufname))
+      ;; copy emacs server file so remote emacsclient can connect to this emacs
+      (let ((default-directory "/tmp")
+            (local-server-file (process-get server-process :server-file))
+            (remote-server-file (format "~/.emacs.d/%s_server" (getenv "HOST"))))
+        (async-shell-command
+         (format "scp -v %s %s:%s" local-server-file host remote-server-file))))
+    
+    (defadvice server-process-filter (before handle-remote-emacsclient-file activate)
+      "Detect remote emacsclient invocations and inject the tramp '/host:' prefix."
+      (if (tramp-handle-file-remote-p default-directory)
+          (let* ((message (ad-get-arg 1))
+                 (absolute (progn (string-match "-file \\([^ ]+\\)" message)
+                                  (file-name-absolute-p (match-string 1 message))))
+                 (tramp-prefix (tramp-make-tramp-file-name tramp-current-method
+                                                           tramp-current-user
+                                                           tramp-current-host
+                                                           nil))
+                 (dir (if absolute nil
+                        (with-parsed-tramp-file-name default-directory parsed
+                          parsed-localname))))
+            (ad-set-arg 1 (replace-regexp-in-string "-file "
+                            (concat "-file " tramp-prefix dir) message)))))
