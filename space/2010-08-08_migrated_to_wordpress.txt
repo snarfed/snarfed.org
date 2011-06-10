@@ -25,7 +25,7 @@ The final straw was server load. PyBlosxom's caching is good, but not great, so
 when my site saw a traffic spike, the server's CPU load would spike too.
 [My hosting provider](http://pair.com/) is great, but they still noticed,
 and it occasionally made them unhappy enough that they'd
-[clobber my PyBlosxom CGI script](2009-02-23_back).
+[clobber my PyBlosxom CGI script](2009-02-24_back).
 
 <a href="http://pyblosxom.bluesock.org/">
   <img class="left" src="pyblosxom.jpg" alt="pyblosxom" /></a>
