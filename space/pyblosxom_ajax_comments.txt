@@ -30,7 +30,6 @@ To enable AJAX comments, set the `comment_ajax` config parameter in
 AJAX commenting degrades gracefully in older browsers. If JavaScript is
 disabled or not supported in the user's browser, or if it doesn't support
 `XmlHttpRequest`, comment posting and preview will use normal HTTP POST.
-Feel free to [check out the JavaScript](/comments.js).
 
 Also, since the browser window never sends a full POST request, refreshing the
 page after a preview or comment submission won't re-post the comment, or pop up

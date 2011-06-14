@@ -254,7 +254,7 @@ First, add specs for more tools like pgrep, identify, tar, jar, etc. Then,
 extend acoc to detect columnar text output and color accordingly, especially
 columns that are enums. Finally, maybe extend it to recognize common data types
 like dates, and color accordingly. \[**_Done! Partially. See [acoc.conf for
-context diffs](acoc.conf_for_context_diffs)._**]
+context diffs](acoc_conf_for_context_diffs)._**]
 
   * Write [GreaseMonkey](http://greasemonkey.mozdev.org/) scripts for GMail to
 address the [reasons I haven't switched from Pine](gmail_vs_pine).

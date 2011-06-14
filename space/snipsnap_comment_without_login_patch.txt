@@ -5,12 +5,10 @@ snipsnap comment without login patch
 
 For the impatient:  
 [Patch for SnipSnap 1.0b2-uttoxeter](snipsnap-comment-without-login.patch)  
-[SnipSnap 1.0b2-uttoxeter
-source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b2-uttoxeter-20050204-src.tgz)  
+[SnipSnap 1.0b2-uttoxeter source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b2-uttoxeter-20050204-src.tgz)  
 [Ant](http://ant.apache.org) (needed to build SnipSnap)
 
-[Patching
-FAQ](http://www.gnu.org/software/diffutils/manual/html_node/Merging-with-patch.html)
+[Patching FAQ](http://www.gnu.org/software/diffutils/manual/html_node/Merging-with-patch.html)
 
 I originally used [SnipSnap](SnipSnap) as the web server for this site, and I loved
 it. However, my single biggest gripe with SnipSnap is that it requires you to
@@ -21,11 +19,12 @@ jump through the account creation hoops for yet another site before they can
 comment, chances are they won't. So, I wrote a [patch](snipsnap-comment-without-login.patch) to allow visitors to
 comment without logging in.
 
-The patch applies cleanly against [SnipSnap
-1.0b2-uttoxeter](ftp://snipsnap.org/snipsnap/snipsnap-1.0b2-uttoxeter-20050204-src.tgz).
-To use it with an existing SnipSnap installation, download the [SnipSnap
-source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b2-uttoxeter-20050204-src.tgz),
+The patch applies cleanly against
+[SnipSnap 1.0b2-uttoxeter](ftp://snipsnap.org/snipsnap/snipsnap-1.0b2-uttoxeter-20050204-src.tgz).
+To use it with an existing SnipSnap installation, download the
+[SnipSnap source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b2-uttoxeter-20050204-src.tgz),
 apply the patch, and build SnipSnap with [Ant](http://ant.apache.org). Then copy
-the newly rebuilt `snipsnap.jar` into your SnipSnap's `lib/` subdirectory, and copy
-`snipsnap-servlets.jar` into your application's `WEB-INF/lib/` subdirectory, over
-the existing jars. Restart SnipSnap and you should be good to go!
+the newly rebuilt `snipsnap.jar` into your SnipSnap's `lib/` subdirectory, and
+copy `snipsnap-servlets.jar` into your application's `WEB-INF/lib/`
+subdirectory, over the existing jars. Restart SnipSnap and you should be good to
+go!

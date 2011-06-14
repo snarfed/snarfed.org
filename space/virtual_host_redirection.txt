@@ -31,7 +31,7 @@ I'm in the process of deploying a SnipSnap installation at
 possibilities. However, there's one snag. This server currently serves static
 content through ryan.barrett.name, and I need that static content to be
 accessible. Furthermore, to avoid breaking links, old URLs (such as
-[http://ryan.barrett.name/bigbrother/](/ryan.barrett.name/bigbrother/))
+[http://ryan.barrett.name/bigbrother/](/ryan.barrett.name/bigbrother/)
 should still work.
 
 I read through the SnipSnap virtual host documentation, but I couldn't find

@@ -142,7 +142,7 @@ platform, based on [Blosxom](http://blosxom.com/) and written in Python.
   * [simonitor](simonitor) screen scrapes [simon.com](http://simon.com/)
 to fetch the available balance on one or more Simon gift cards.
 
-  * [cdname.py](cdname.py) names MP3 files according to
+  * [cdname.py](cdname_py) names MP3 files according to
 [CDDB](http://cddb.com/)/[freedb](http://freedb.org/) INF files.
 
   * [snipsnap2svn](snipsnap2svn) is an
@@ -226,7 +226,7 @@ mark and cursor.
 
   * A [fix for a tcsh bug that moves the mark after deletions](tcsh_delete_moves_mark_bug_fix). (Applied on 8/23/2006.)
 
-  * An [acoc rule for coloring context diffs](acoc.conf_for_context_diffs).
+  * An [acoc rule for coloring context diffs](acoc_conf_for_context_diffs).
 
   * A [fix for an Emacs bug in minibuffer code](emacs_minibuffer-complete-and-exit_bug_fix), specifically in
 _minibuffer-complete-and-exit_. (Fixed in Emacs 22.)
@@ -271,7 +271,7 @@ on 11/19/2006.)
   * [SnipSnap recent-changes snip name patch](snipsnap_recent-changes_snip_name_patch) fixes a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-392) in
 SnipSnap that causes recent-changes to show blog posts incorrectly.
 
-  * [SnipSnap 1.0b1 virtual hostname patch](snipsnap_1.0b1_virtual_hostname_patch) fixes a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-387) in
+  * [SnipSnap 1.0b1 virtual hostname patch](snipsnap_1_0b1_virtual_hostname_patch) fixes a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-387) in
 SnipSnap that prevents [virtual host redirection](virtual_host_redirection).
 
   * [Autocutsel clipboard and primary patch](autocutsel_clipboard_and_primary_patch)

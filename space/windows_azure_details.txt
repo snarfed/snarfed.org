@@ -336,8 +336,8 @@ of Azure itself (!).
 #### Virtualization [![permalink](/Icon-Permalink.png)](#Virtualization)
 
 Node VMs use a hypervisor architecture based on
-[Hyper-V](www.microsoft.com/windowsserver2008/en/us/hyperv.aspx), which takes
-advantage of new hardware features designed to assist virtualization. The
+[Hyper-V](http://www.microsoft.com/windowsserver2008/en/us/hyperv.aspx), which
+takes advantage of new hardware features designed to assist virtualization. The
 hypervisor runs on the hardware directly, and multiple VMs run on top of it.
 
 One VM is the host. It includes device drivers, which talk directly to the

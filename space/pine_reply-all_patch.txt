@@ -29,11 +29,10 @@ all.
 So, I wrote a patch to separate Pine's Reply command into Reply and Reply All
 commands, which behave as expected. To patch Pine and build it, first download
 the [Pine 4.60 source](http://www.washington.edu/pine/getpine/unix.html) and my
-[patch](reply-all.patch.4.60.gz). Then, run these
+[patch](reply-all.patch.4.60). Then, run these
 commands to extract, patch, and build Pine.
 
     $ tar xzvf pine.tar.gz
-    $ tar xzvf reply-all.patch.4.60.gz
     $ cd pine4.60
     $ patch -p0 < ../reply-all.patch.4.60
     $ ./build DEBUG=-O lrh

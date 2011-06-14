@@ -24,10 +24,9 @@ Not surprisingly, they charge money for access to their databases. If you're a
 business, I'll let you decide on that value proposition yourself. However, if
 you're a small, independent web site, [GeoBytes](http://geobytes.com/) has a
 free ([as in beer](http://c2.com/cgi/wiki?FreeAsInBeer)) mapping service you can
-use. I'm using it on my [voyeurism
-page](/ryan.barrett.name/voyeurism.shtml) right now. Just plug this
-javascript into your web site wherever you'd like to show the user their
-location:
+use. I'm using it on my [voyeurism page](/ryan.barrett.name/voyeurism.shtml)
+right now. Just plug this javascript into your web site wherever you'd like to
+show the user their location:
 
     <script type="text/javascript"
      src="http://map.geoup.com/geoup?template=CityName">
@@ -41,8 +40,8 @@ right now. If you'd prefer the user's region, country, or one of many pre-bulit
 messages, you can take your pick from GeoByte's
 [templates](http://geoup.com/GeoPhrase.htm#Templates).
 
-One caveat: to support this service, GeoBytes occasionally [shows an
-advertisement](http://geoup.com/GeoPhrase.htm#HowCanThisBeFree) instead of your
-own page, about once every 50 page views. This is unfortunate, so I'm looking
-for an ad-free replacement along the lines of
+One caveat: to support this service, GeoBytes occasionally
+[shows an advertisement](http://geoup.com/GeoPhrase.htm#HowCanThisBeFree)
+instead of your own page, about once every 50 page views. This is unfortunate,
+so I'm looking for an ad-free replacement along the lines of
 [InternetFrog](http://internetfrog.com/).

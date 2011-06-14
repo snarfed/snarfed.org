@@ -48,3 +48,4 @@ copy/scrollback mode:
     markkeys B=[:E=]:b={:e=}:w=>
     bindkey -m ^[Od stuff {  #"[[}"
     bindkey -m ^[Oc stuff ]  #"}]^f"
+

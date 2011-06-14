@@ -79,7 +79,8 @@ Also see
 Also see:
 
   * [Emacs and remote X Windows](Emacs_and_remote_X_Windows)
-  * [minimal .emacs for fast startup](minimal_.emacs_for_fast_startup)
+  * [minimal .emacs for fast startup](minimal_emacs_for_fast_startup)
   * [why I don't run shells inside Emacs](why_I_dont_run_shells_inside_Emacs)
   * [Emacs manual: Special Buffer Frames](http://www.gnu.org/software/emacs/manual/html_node/emacs/Special-Buffer-Frames.html)
   * [Emacs manual: Frame Parameters](http://www.gnu.org/software/emacs/manual/html_node/emacs/Frame-Parameters.html)
+
