@@ -42,6 +42,6 @@ Windows Visual Studio project files are included for building on Windows, but
 they're not currently maintained.
 
 P4 is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
-Copyright 2001-2004 [Ken Ashcraft](http://keeda.stanford.edu/~kash), [Ryan
+Copyright 2001-2004 [Ken Ashcraft](https://profiles.google.com/kashcraft), [Ryan
 Barrett](http://snarfed.org/), [Maulik Shah](http://maulik.net/), and
 [Nathan Stoll](http://cs.stanford.edu/~nstoll).

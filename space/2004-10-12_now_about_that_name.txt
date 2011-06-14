@@ -1,6 +1,6 @@
 Now, about that name... 
 
-<a href="cdname.py">
+<a href="cdname_py">
   <img class="right" src="cd.jpg" /></a>
 
 I've released a new version of [cdname.py](cdname_py), which reads

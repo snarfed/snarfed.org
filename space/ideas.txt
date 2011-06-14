@@ -100,17 +100,17 @@ in [wget](http://wget.sunsite.dk/) that prevents `--html-extension` and
 `--convert-links` from playing nicely together.
 
   * Write an [OpenID](http://openid.net/) plugin for
-[PyBlosxom](http://pyblosxom.sf.net/). **\[_Done! See
+[PyBlosxom](http://pyblosxom.bluesock.org/). **\[_Done! See
 [OpenID server plugin for PyBlosxom](pyblosxom_openid_server)._]**
 
   * Write a [Google Ajax Search API](http://code.google.com/apis/ajaxsearch/)
-plugin for [PyBlosxom](http://pyblosxom.sf.net/). **\[_Done! See
+plugin for [PyBlosxom](http://pyblosxom.bluesock.org/). **\[_Done! See
 [site search with the Google AJAX Search API](site_search_with_the_Google_AJAX_Search_API)._]**
 
   * Add support for
-[comments](http://pyblosxom.sourceforge.net/blog/registry/input/comments) to
+[comments](http://pyblosxom.bluesock.org/blog/registry/input/comments) to
 the [photogallery](photogallery) plugin for
-[PyBlosxom](http://pyblosxom.sf.net/).
+[PyBlosxom](http://pyblosxom.bluesock.org/).
 
   * **Phone transcripts!** Record all of your phone conversations, then
 transcribe them with speech recognition. Bonus points: index the transcripts and
@@ -238,7 +238,7 @@ thread](http://mailman1.u.washington.edu/pipermail/pine-info/2005-June/042260.ht
 \[**_Done! See [pine delete attachments on save patch](pine_delete_attachments_on_save_patch) and [pine remove trailing quote patch](pine_remove_trailing_quote_patch)._**]
 
   * I use [GeoBytes](http://geobytes.com/) to do [geocoding](geocoding)
-on my [voyeurism](/ryan.barrett.name/voyeurism.html) page. It's great,
+on my [voyeurism](/ryan.barrett.name/voyeurism.shtml) page. It's great,
 except that it occasionally [shows popup
 ads](http://geoup.com/GeoPhrase.htm#HowCanThisBeFree). So, I'd like to find a
 geocoding service that's ad-free and switch to it.

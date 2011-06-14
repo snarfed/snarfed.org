@@ -22,9 +22,8 @@ succeed where I failed!
 Recently, a [friend](http://www-cs-students.stanford.edu/~nstoll/) asked me if I
 could write a simple webapp on [snarfed.org](http://snarfed.org/), my
 SnipSnap-based site. Unfortunately, I hesitated, and for good reason. I've
-written my fair share of [Snipsnap
-macros](snipsnap_macros), and I like the macro
-architecture, but it's not designed for interactive webapps. I considered
+written my fair share of [SnipSnap macros](snipsnap_macros), and I like the
+macro architecture, but it's not designed for interactive webapps. I considered
 whipping up some JSPs and serving them through
 [Jetty](http://mortbay.org/jetty/), but that's far from lightweight, and I'm far
 from a JSP expert. I have [friends](http://maulik.net/) who are

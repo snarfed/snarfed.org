@@ -2,16 +2,16 @@ servlets with snipsnap
 
 ![snipsnap](snipsnap.png)![jetty](jetty.png)
 
-[Snipsnap](Snipsnap), the server that <strike>runs</strike> used to run this
+[SnipSnap](snipsnap), the server that <strike>runs</strike> used to run this
 site, is based on [Jetty](http://jetty.mortbay.com/), a standards based, pure
-java servlet container and web application server. Snipsnap is implemented on
+java servlet container and web application server. SnipSnap is implemented on
 top of Jetty as a framework of servlets. Among other things, this means that you
-can configure the Jetty inside Snipsnap to serve _your_ servlets, JSPs, or
+can configure the Jetty inside SnipSnap to serve _your_ servlets, JSPs, or
 anything else too! Here's how.
 
 First, you'll need to configure Jetty to serve some part of your site outside of
-Snipsnap. To do this, read my tutorial on [virtual host
-redirection](virtual_host_redirection).
+SnipSnap. To do this, read my tutorial on
+[virtual host redirection](virtual_host_redirection).
 
 Done? Great. Now, all you need to do is decide which pages you want Jetty to
 handle as JSPs, servlets, or whatever. You can specify everything in one

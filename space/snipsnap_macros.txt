@@ -39,7 +39,7 @@ attachment files.
   * **Utility**, which provides miscellaneous code that might be of interest to
 macro writers.
 
-The snarfed macros require [SnipSnap
-1.0b1](http://snipsnap.org/space/snipsnap-download) or greater, and is
+The snarfed macros require
+[SnipSnap 1.0b1](http://snipsnap.org/space/snipsnap-download) or greater, and is
 distributed under the [GPL](http://www.gnu.org/licenses/gpl.html). Copyright
 2002-2005 Maulik Shah, Ryan Barrett.

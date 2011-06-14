@@ -189,7 +189,7 @@ SimpleDB to offer full text search, which it doesn't. Hmm.
 
 One useful hint is that SimpleDB only guarantees [_eventual_
 consistency](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/SDB_Glossary.html#glossary_EventualConsistency).
-(Thanks to [Ken](http://keeda.stanford.edu/~kash/) for pointing this out.)
+(Thanks to [Ken](https://profiles.google.com/kashcraft) for pointing this out.)
 Evidently, items and indices are replicated, and the replicas are updated
 asynchronously. That's a big, big caveat for developers, but it helps us start
 to reverse engineer the architecture of their storage and indexing engine.

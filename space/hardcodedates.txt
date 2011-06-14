@@ -4,19 +4,19 @@ hardcodedates
 
 For the impatient:  
 &nbsp; [Download hardcodedates.py 1.4](hardcodedates.py)  
-&nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
-&nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)
+&nbsp; [PyBlosxom home page](http://pyblosxom.bluesock.org/)  
+&nbsp; [PyBlosxom plugin registry](http://pyblosxom.bluesock.org/blog/registry?sortby=path)
 
 _Updated 2007-02-23._
 
 [hardcodedates](hardcodedates.py) is a
-[PyBlosxom](http://pyblosxom.sf.net/) plugin that overrides Pyblosxom's
-[default mtime handling](http://pyblosxom.sourceforge.net/1.3.1/manual/x704.html)
+[PyBlosxom](http://pyblosxom.bluesock.org/) plugin that overrides Pyblosxom's
+[default mtime handling](http://pyblosxom.bluesock.org/1.3.1/manual/x704.html)
 to read mtimes from a file, instead of from the filesystem.
 
 This has a number of benefits. Similar to
-[other](http://pyblosxom.sourceforge.net/blog/registry/date/metadate)
-[plugins](http://pyblosxom.sourceforge.net/blog/registry/date/rememberdates),
+[other](http://pyblosxom.bluesock.org/blog/registry/date/metadate)
+[plugins](http://pyblosxom.bluesock.org/blog/registry/date/rememberdates),
 it allows you to manually specify each entry's mtime. The mtimes are stored in
 a single file, so PyBlosxom doesn't need to stat every entry. Finally, it adds
 mtimes for new entries, to preserve their original mtime and to avoid stat

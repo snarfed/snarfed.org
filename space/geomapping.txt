@@ -25,7 +25,7 @@ business, I'll let you decide on that value proposition yourself. However, if
 you're a small, independent web site, [GeoBytes](http://geobytes.com/) has a
 free ([as in beer](http://c2.com/cgi/wiki?FreeAsInBeer)) mapping service you can
 use. I'm using it on my [voyeurism
-page](/ryan.barrett.name/voyeurism.html) right now. Just plug this
+page](/ryan.barrett.name/voyeurism.shtml) right now. Just plug this
 javascript into your web site wherever you'd like to show the user their
 location:
 
@@ -36,7 +36,7 @@ This results in a tiny script that prints the user's city, inline:
 
     document.write('Brooklyn')
 
-I'm using it on my [voyeurism page](/ryan.barrett.name/voyeurism.html)
+I'm using it on my [voyeurism page](/ryan.barrett.name/voyeurism.shtml)
 right now. If you'd prefer the user's region, country, or one of many pre-bulit
 messages, you can take your pick from GeoByte's
 [templates](http://geoup.com/GeoPhrase.htm#Templates).

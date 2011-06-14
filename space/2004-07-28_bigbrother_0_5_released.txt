@@ -8,4 +8,3 @@ generates statistics and graphs about your IM away messages. Highlights from
 this version include "layered" graphs, graph smoothing, and optional start and
 end dates. The smoothing alone is worth upgrading for; it makes the graphs look
 _much_ better. [Check it out!](/ryan.barrett.name/bigbrother/)
-

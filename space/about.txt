@@ -25,7 +25,7 @@ at [pair.com](http://pair.com/) on a
 [currently](2010-08-08_migrated_to_wordpress) runs on
 [WordPress](http://wordpress.org/) and the [snarfed theme](/). It
 [used to](2006-08-23_virtual_housewarming) run on
-[PyBlosxom](http://pyblosxom.sf.net/) with a custom PyBlosxom
+[PyBlosxom](http://pyblosxom.bluesock.org/) with a custom PyBlosxom
 [flavour](snarfed_org_PyBlosxom_flavour) and [plugins](software). Before that,
 it ran on [SnipSnap](http://snipsnap.org/), on a
 [Linux VPS](http://jvds.com/linux.php) at [JVDS](http://jvds.com/).

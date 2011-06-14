@@ -21,10 +21,9 @@ generate html.
 In the beginning, there was [Album Express](http://fookes.com/album). It was
 nice, but the albums didn't use CSS and it cost $25.
 
-Then came the age of SnipSnap. We wrote our [own
-macro](Snipsnap_macros) to fit into the SnipSnap
-paradigm. This was nice, but it didn't have captions, alas we could not describe
-our photos to our friends.
+Then came the age of SnipSnap. We wrote our [own macro](snipsnap_macros) to fit
+into the SnipSnap paradigm. This was nice, but it didn't have captions, alas we
+could not describe our photos to our friends.
 
 I turned my eyes to [JAlbum](http://jalbum.net) next. It was very nice, you
 could add captions and make very pretty albums with lots of data. Very
@@ -51,7 +50,7 @@ app**
 
 [![thumb_screenshot.jpg](http://maulik.freeshell.net/software/malbum-release/thumb_screenshot.jpg)](http://maulik.freeshell.net/software/malbum-release/)
 
-(there's also a [mirror](MAlbum) here on Snarfed)
+(there's also a [mirror](malbum) here on Snarfed)
 
 And folks, _all seriousness aside_, let me tell you, it slices and it dices,
 it's the greatest thing to happen to digital picture taking since the digital

@@ -1,7 +1,7 @@
 Virtual Housewarming
 
 [![pair.com](pair.com.jpg)](http://pair.com/)
-[![pyblosxom](pyblosxom.jpg)](http://pyblosxom.sf.net/)
+[![pyblosxom](pyblosxom.jpg)](http://pyblosxom.bluesock.org/)
 [![apache](apache.jpg)](http://httpd.apache.org/)
 
 You've probably noticed that [snarfed](http://snarfed.org/) and
@@ -13,32 +13,32 @@ over. :/
 
 So, after putting it off for the better part of a year, I finally migrated to a
 new hosting company, [pair.com](http://pair.com/), and a new server,
-[pyblosxom](http://pyblosxom.sf.net) on [Apache](http://httpd.apache.org/).
+[PyBlosxom](http://pyblosxom.bluesock.org) on [Apache](http://httpd.apache.org/).
 
-I considered [a few other hosting companies](/ryan.barrett.name/hosting),
-specifically [Dreamhost](http://dreamhost.com/) and [1&1](http://1and1.com/).
-In particular, Dreamhost has a solid community, good features, and a rock
-bottom price. I care more about uptime, though, and while pair.com has a
-[great track record](http://whreviews.com/pair.htm), [Dreamhost
-doesn't](http://ask.metafilter.com/mefi/17735#296188). 1&1 [guarantees 99.9%
-uptime](http://order.1and1.com/xml/order/Connectivity), but I heard horror
-stories about them in most other areas.
+I considered a few other hosting companies, specifically
+[Dreamhost](http://dreamhost.com/) and [1&1](http://1and1.com/). In particular,
+Dreamhost has a solid community, good features, and a rock bottom price. I care
+more about uptime, though, and while pair.com has a
+[great track record](http://whreviews.com/pair.htm),
+[Dreamhost doesn't](http://ask.metafilter.com/mefi/17735#296188). 1&1
+[guarantees 99.9% uptime](http://order.1and1.com/xml/order/Connectivity), but I
+heard horror stories about them in most other areas.
 
 It's early, but so far, I'm happy with pair. Signing up and migrating my data
 was painless. After living with Linux for almost a decade, FreeBSD is a slight
 jolt to my sysadmin cortex, but that's about the worst of it.
 
-I can't say the same about migrating from SnipSnap to pyblosxom, though. I'd
+I can't say the same about migrating from SnipSnap to PyBlosxom, though. I'd
 created a lot of content over three years - articles, pictures, blog posts,
 source code, other errata. Translating the directory structure, markup, and
 metadata took a _lot_ of effort. Worse, I wasn't creating any new information
 or value, so it felt totally unproductive.
 
-I'm [happy with pyblosxom](/ryan.barrett.name/wiki_blog_packages),
-though, and I expect much better uptime and stability from it. Still, you'll
-notice some missing functionality. Change history, macros, the index, and the
-"recent changes" box are all missing. You can't log in or register any more.
-Worst of all, due to a security issue, commenting is temporarily disabled.
+I'm happy with PyBlosxom, though, and I expect much better uptime and stability
+from it. Still, you'll notice some missing functionality. Change history,
+macros, the index, and the "recent changes" box are all missing. You can't log
+in or register any more. Worst of all, due to a security issue, commenting is
+temporarily disabled.
 
 Over the next month, as I find time, I'll add them back. It won't be a quick
 process, though. If something's missing that you particularly liked,

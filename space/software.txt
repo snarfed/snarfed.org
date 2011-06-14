@@ -34,16 +34,16 @@ feature.
 
   * [AJAX site search with the Google AJAX Search API](site_search_with_the_Google_AJAX_Search_API).
 
-  * [index](pyblosxom_index) is a [PyBlosxom](http://pyblosxom.sf.net/)
+  * [index](pyblosxom_index) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
 plugin that displays an alphabetical index of all entries.
 
-  * [history](pyblosxom_history) is a [PyBlosxom](http://pyblosxom.sf.net/)
+  * [history](pyblosxom_history) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
 plugin that displays change history for entries.
 
-  * [photogallery](photogallery) is a [PyBlosxom](http://pyblosxom.sf.net/)
+  * [photogallery](photogallery) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
 plugin that displays photo galleries.
 
-  * [hardcodedates](hardcodedates) is a [PyBlosxom](http://pyblosxom.sf.net/)
+  * [hardcodedates](hardcodedates) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
 plugin that stores mtimes in a file.
 
   * An [RDF flavour](pyblosxom_rdf_flavour) for Pyblosxom.
@@ -51,7 +51,7 @@ plugin that stores mtimes in a file.
   * The [snarfed.org PyBlosxom flavour](snarfed_org_pyblosxom_flavour), which
 looks like this site.  
 
-  * [Filekicker](filekicker) is a [PyBlosxom](http://pyblosxom.sf.net/)
+  * [Filekicker](filekicker) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
 plugin that serves static files.
 
   * [Fillcode](fillcode) is an [Emacs](http://gnu.org/software/emacs/)
@@ -80,9 +80,9 @@ procedural modelling and rendering of water.
 
   * [Voxel](voxel) is a high-resolution voxel terrain rendering engine.
 
-  * [MAlbum](MAlbum) is a quick and easy graphical interface for creating
-a web album. (Maulik has a [sample
-album](http://maulik.freeshell.net/software/malbum-release/malbumSample).)
+  * [MAlbum](malbum) is a quick and easy graphical interface for creating
+a web album. (Maulik has a
+[sample album](http://maulik.freeshell.net/software/malbum-release/malbumSample).)
 
   * [Nullprpl](nullprpl_pidgin_null_protocol_plugin) is a mock
 protocol plugin that lets you use [Pidgin](http://pidgin.sf.net/) without
@@ -120,7 +120,7 @@ email account.
 stored in the database from one WordPress instance to another.
 
   * [pyblosxom2wxr.sh](pyblosxom2wxr) is a shell script that migrates content
-from [PyBlosxom](http://pyblosxom.sourceforge.net/) to
+from [PyBlosxom](http://pyblosxom.bluesock.org/) to
 [WordPress](http://wordpress.org/).
 
   * [unixify.sh](unixify) is a simple shell script I use to sanitize
@@ -136,7 +136,7 @@ filenames and files people send me from other operating systems.
   * [download_picasa_album.sh](download_picasa_album) downloads entire
 [Picasa Web](http://picasaweb.google.com/) photo albums.
 
-  * [PyBlosxom](http://pyblosxom.sourceforge.net/) is a lightweight weblog
+  * [PyBlosxom](http://pyblosxom.bluesock.org/) is a lightweight weblog
 platform, based on [Blosxom](http://blosxom.com/) and written in Python.
 
   * [simonitor](simonitor) screen scrapes [simon.com](http://simon.com/)

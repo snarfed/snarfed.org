@@ -5,22 +5,19 @@ history.py
 For the impatient:  
 &nbsp; Download [history.py 0.5](history.py)  
 &nbsp; Download [history-0.5.tar.gz](history-0.5.tar.gz) (includes templates)  
-&nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
-&nbsp; [PyBlosxom plugin registry](http://pyblosxom.sf.net/blog/registry?sortby=path)  
+&nbsp; [PyBlosxom home page](http://pyblosxom.bluesock.org/)  
+&nbsp; [PyBlosxom plugin registry](http://pyblosxom.bluesock.org/registry/)  
 &nbsp; [svnpyblosxom](http://www.baus.net/svnpyblosxom)
   ([simplified](http://0pointer.de/blog/projects/pyblosxom-svn.html)),
   a related plugin  
 
 *Updated 2009-02-24.*
 
-[history.py](history.py) is a [PyBlosxom](http://pyblosxom.sf.net/)
+[history.py](history.py) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
 plugin that displays change history for entries. The change history must
 already exist, either in a version control system, database, or another form.
 This plugin just uses that backend to display change history, previous
 versions of entries, and textual diffs for changes.
-
-As an example, you can see the
-[change history for this page](?history=1).
 
 ### Version Control Backends
 
@@ -68,17 +65,12 @@ Shows the raw text of version X of the entry.
 
     ?diff=1&version1=X&version2=Y
 
-For example, if an entry is located at
-[http://snarfed.org/space/filekicker](filekicker),
-you'd use
-[http://snarfed.org/space/filekicker?history=1](filekicker?history=1)
-to show its change history.
+For example, if an entry is located at `http://example.com/foo`, you'd use
+`http://example.com/foo?history=1` to show its change history.
 
 Note that all of the URL parameters require a value. The values for history,
 diff, and raw can be anything, but they *must* be present. URLs that omit the
-value, e.g.
-[http://snarfed.org/space/filekicker?history](filekicker?history),
-will not work.
+value, e.g. `http://example.com/foo?history`, will not work.
 
 
 ### Templates

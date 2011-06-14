@@ -1,16 +1,16 @@
 pyblosxom rdf flavour
 
-<a href="http://pyblosxom.sf.net/">
+<a href="http://pyblosxom.bluesock.org/">
   <img class="right" src="pyblosxom.jpg" /></a>
 
 For the impatient:  
 &nbsp; [Download rdf_flavour.tar.gz](rdf_flavour.tar.gz)  
-&nbsp; [PyBlosxom home page](http://pyblosxom.sf.net/)  
-&nbsp; [PyBlosxom flavour registry](http://pyblosxom.sf.net/blog/registry/flavours?sortby=path)
+&nbsp; [PyBlosxom home page](http://pyblosxom.bluesock.org/)  
+&nbsp; [PyBlosxom flavour registry](http://pyblosxom.bluesock.org/blog/registry/flavours?sortby=path)
 
-[PyBlosxom](http://pyblosxom.sf.net/), the server software that
+[PyBlosxom](http://pyblosxom.bluesock.org/), the server software that
 <strike>runs</strike> used to run this site, uses
-[flavours](http://pyblosxom.sf.net/1.3.1/manual/c224.html) to render pages in
+[flavours](http://pyblosxom.bluesock.org/1.3.1/manual/c224.html) to render pages in
 different formats. Pyblosxom comes with a number of flavours, including plain
 HTML, RSS (0.91 and 2.0), and Atom.
 
