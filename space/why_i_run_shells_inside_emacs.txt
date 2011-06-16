@@ -237,8 +237,8 @@ Here's the code in [my .emacs](dotfiles/.emacs):
       "Detect remote emacsclient invocations and inject the tramp '/host:' prefix."
       (if (tramp-handle-file-remote-p default-directory)
           (let* ((message (ad-get-arg 1))
-                 (absolute (progn (string-match "-file \\([^ ]+\\)" message)
-                                  (file-name-absolute-p (match-string 1 message))))
+                 (absolute (and (string-match "-file \\([^ ]+\\)" message)
+                                (file-name-absolute-p (match-string 1 message))))
                  (tramp-prefix (tramp-make-tramp-file-name tramp-current-method
                                                            tramp-current-user
                                                            tramp-current-host
