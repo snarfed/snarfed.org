@@ -16,8 +16,6 @@ that displays displays an alphabetical index of all entries. It's similar to
 [plugins](http://pyblosxom.bluesock.org/blog/registry/category/pycategories),
 except that it indexes the entries by name, instead of by date.
 
-As an example, here's the [index](/site-index) for this site.
-
 There are number of config parameters available to customize index.py's
 behavior, all optional. Here they are, along with their defaults:
 

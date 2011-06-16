@@ -16,9 +16,9 @@ except that it shows the results within _your_ site, not Google's. It also
 degrades gracefully, by falling back to standard Google site search over HTTP
 for users who don't have JavaScript.
 
-You can [check out the JavaScript](/ajax_search.js), or
-<a href="/?s=ajax">try it out</a>
-right now! But heads up, your browser's back button won't. Blame AJAX.
+You can [check out the JavaScript](/w/wp-content/themes/snarfed/ajax_search.js),
+or <a href="/?s=ajax">try it out</a> right now! But heads up, your browser's
+back button won't. Blame AJAX.
 
 [Read more...](site_search_with_the_Google_AJAX_Search_API)
 
