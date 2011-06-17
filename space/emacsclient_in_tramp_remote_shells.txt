@@ -27,13 +27,14 @@ Here's Emacs Lisp that sets this up:
 
     (defadvice make-network-process (before force-tcp-server-ipv4 activate)
       "Monkey patch the server to force it to use ipv4. This is a bug fix that will
-      hopefully be in emacs 24: http://debbugs.gnu.org/cgi/bugreport.cgi?bug=6781"
+    hopefully be in emacs 24: http://debbugs.gnu.org/cgi/bugreport.cgi?bug=6781"
       (if (eq nil (plist-get (ad-get-args 0) :family))
           (ad-set-args 0 (plist-put (ad-get-args 0) :family 'ipv4))))
-    
+
+    ;; now that the ipv4 advice is in place, restart the server.
     (custom-set-variables '(server-use-tcp t))
-    (server-start)
-    
+    (if (server-running-p) (server-start))
+
     (require 'alist)
     (defun update-tramp-emacs-server-ssh-port-forward ()
       "Update TRAMP's ssh method to forward the Emacs server port to the local host.
@@ -53,13 +54,12 @@ Here's Emacs Lisp that sets this up:
                            ssh-args))
           ssh-method)))
     
-    (defadvice server-process-filter
-      "Detect remote emacsclient invocations and inject the tramp '/host:' prefix."
-      (before handle-remote-emacsclient-file activate)
+    (defadvice server-process-filter (before handle-remote-emacsclient-file activate)
+      "Detect remote emacsclient and inject the tramp '/host:' prefix."
       (if (tramp-handle-file-remote-p default-directory)
           (let* ((message (ad-get-arg 1))
-                 (absolute (progn (string-match "-file \\([^ ]+\\)" message)
-                                  (file-name-absolute-p (match-string 1 message))))
+                 (absolute (and (string-match "-file \\([^ ]+\\)" message)
+                                (file-name-absolute-p (match-string 1 message))))
                  (tramp-prefix (tramp-make-tramp-file-name tramp-current-method
                                                            tramp-current-user
                                                            tramp-current-host
