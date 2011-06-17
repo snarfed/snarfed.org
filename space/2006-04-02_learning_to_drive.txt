@@ -1,8 +1,11 @@
 Learning to drive
 
-[![g35s_roof_thumb](g35s_roof_thumb.jpg)](g35s_roof.jpg)
-[![skyline_drive_thumb](skyline_drive_thumb.jpg)](skyline_drive.jpg)
-[![lunch_thumb](lunch_thumb.jpg)](lunch.jpg)
+<a class="shutter" href="g35s_roof.jpg">
+  <img class="shadow" src="g35s_roof_thumb.jpg" /></a>
+<a class="shutter" href="skyline_drive.jpg">
+  <img class="shadow" src="skyline_drive_thumb.jpg" /></a>
+<a class="shutter" href="lunch.jpg">
+  <img class="shadow" src="lunch_thumb.jpg" /></a>
 
 I took my first driving lesson yesterday morning.
 
