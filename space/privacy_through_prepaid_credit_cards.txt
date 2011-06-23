@@ -4,6 +4,42 @@ privacy through prepaid credit cards
 [![amex](amex.jpg)](http://americanexpress.com/)
 [![visa](visa.jpg)](http://visa.com/)
 
+<!--
+more research in june 2011. three major categories:
+- gift cards. up to $500, not reloadable, no id required. (evidently over $500
+  or reloadable makes it a "financial instrument" and thus subject to patriot
+  act id check req't). e.g. simon cards.
+- true prepaid cards. lots, but all US-based providers follow patriot act and
+  require credit checks. e.g. green dot, etc.
+- offshore aka VCC (virtual credit cards). no id checks since not US based,
+  usually higher denominations, often reloadable. much more expensive, often
+  fewer load options (sometimes not from cc), usually high initial fees *and*
+  noticeable percentage of value, 5-20%. usually pretty sketchy. e.g.:
+  http://card444.com/
+  http://seven-capital.com/
+  http://www.sovereigngoldcard.com
+  dead?: www-card.com, epassporte.com
+
+
+===
+investigated entropay
+===
+
+offshore vcc but in UK so less sketchy. virtual, reloadable, 5% charge on load
+but otherwise great! except they don't support address verification for
+merchants so some decline them. also they will supposedly ask for id
+verification. :/
+
+ryanblaize/Asdflkj2
+secret question, where was i born? Los Angeles
+
+4590614727784460/169
+expires 06/12
+
+...yup they followed up and asked for a ton of ID, etc, including passport. :/
+oh well.
+-->
+
 ### Privacy through Prepaid Credit Cards
 
 If you've known me for any length of time, you know that I'm a privacy freak. I
