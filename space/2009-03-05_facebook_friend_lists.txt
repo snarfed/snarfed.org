@@ -6,8 +6,10 @@ feature is invaluable. It lets you create lists for different groups of friends:
 work, family, school, local, or just people you want to pay more (or less)
 attention to.
 
-[![facebook: make a new list](facebook_make_a_new_list.png)](http://www.facebook.com/friends/?ref=tn)
-[![facebook: short list](facebook_friend_list.png)](http://www.facebook.com/friends/?ref=tn)
+<a href="http://www.facebook.com/friends/?ref=tn">
+  <img class="shadow" src="facebook_make_a_new_list.png"></a>
+<a href="http://www.facebook.com/friends/?ref=tn">
+  <img class="shadow" src="facebook_friend_list.png"></a>
 
 It's easy to add or remove individual people from a friend list, but at first,
 there's no obvious to way to make larger, bulk changes. That's where the subtle,
@@ -16,7 +18,7 @@ almost hidden,
 link comes in. (It's next to the "Add to List" text box where you can type in a
 person's name to add to the friend list.)
 
-![facebook multi-friend-selector](facebook_multi_friend_selector.png)
+<img class="shadow" src="facebook_multi_friend_selector.png" />
 
 It pops up a window that shows your friends visually, in a grid, and lets you
 click to add or remove them. The same interface is used for inviting people to

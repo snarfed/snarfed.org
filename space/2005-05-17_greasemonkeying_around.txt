@@ -1,8 +1,8 @@
 Greasemonkeying around
 
-[![greasemonkey.png](greasemonkey.png)](http://greasemonkey.mozdev.org/)
-[![amazon.jpg](amazon.jpg)](http://amazon.com/)
-[![palo_alto.jpg](palo_alto.jpg)](http://webcat.cityofpaloalto.org/)
+<a href="http://greasemonkey.mozdev.org/"><img src="greasemonkey.png"></a>
+<a href="http://amazon.com/"><img src="amazon.jpg"></a>
+<a href="http://webcat.cityofpaloalto.org/"><img src="palo_alto.jpg"></a>
 
 I've been meaning to learn [Greasemonkey](http://greasemonkey.mozdev.org) for a
 while, and the recent

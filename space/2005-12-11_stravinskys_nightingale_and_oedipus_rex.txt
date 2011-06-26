@@ -1,8 +1,11 @@
 Stravinsky's Nightingale and Oedipus Rex 
 
-[![stravinsky_oedipus_rex](stravinsky_oedipus_rex.jpg)](http://www.andante.com/images/Articles/KirovOedipusB180x190.jpg)
-[![stravinsky_the_nightingale_set](stravinsky_the_nightingale_set.jpg)](http://www.sfsymphony.org/images/press_lg/setNightingale.jpg)
-[![stravinsky_the_nightingale](stravinsky_the_nightingale.jpg)](http://www.juilliard.edu/images/content/music_rossignol.jpg)
+<a href="http://www.andante.com/images/Articles/KirovOedipusB180x190.jpg">
+  <img class="shadow" src="stravinsky_oedipus_rex.jpg"></a>
+<a href="http://www.sfsymphony.org/images/press_lg/setNightingale.jpg">
+  <img class="shadow" src="stravinsky_the_nightingale_set.jpg"></a>
+<a href="http://www.juilliard.edu/images/content/music_rossignol.jpg">
+  <img class="shadow" src="stravinsky_the_nightingale.jpg"></a>
 
 
 Last night, I headed up to the city for one of the more unusual symphony

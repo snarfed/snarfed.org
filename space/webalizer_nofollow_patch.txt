@@ -1,6 +1,6 @@
 webalizer nofollow patch
 
-[![webalizer](webalizer.png)](http://webalizer.com/)
+<a href="http://webalizer.com/"><img src="webalizer.png"></a>
 
 For the impatient:  
 [Patch for Webalizer 2.01-10](webalizer_nofollow.patch)  

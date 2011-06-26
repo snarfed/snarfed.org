@@ -1,7 +1,7 @@
 emacs and jikes
 
-[![gnu.jpg](gnu.jpg)](http://gnu.org/software/emacs/)
-[![ibm](ibm.jpg)](http://www.ibm.com/developerWorks/oss/jikes/)
+<a href="http://gnu.org/software/emacs/"><img src="gnu.jpg"></a>
+<a href="http://www.ibm.com/developerWorks/oss/jikes/"><img src="ibm.jpg"></a>
 
 Using
 [Emacs](http://gnu.org/software/emacs/) and the

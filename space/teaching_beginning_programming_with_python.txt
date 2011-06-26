@@ -1,7 +1,7 @@
 teaching beginning programming with Python
 
-[![python-new](python-new.png)](http://python.org/)
-[![python-old](python-old.png)](http://python.org/)
+<a href="http://python.org/"><img src="python-new.png"></a>
+<a href="http://python.org/"><img src="python-old.png"></a>
 
 I'm
 a software engineer. I've been programming for a long time - in

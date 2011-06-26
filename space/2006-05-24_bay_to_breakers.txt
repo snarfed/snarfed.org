@@ -1,8 +1,11 @@
 Bay to Breakers
 
-[![gilbert](gilbert.jpg)](http://www.ingbaytobreakers.com/)
-[![start](start.jpg)](http://www.ingbaytobreakers.com/)
-[![smurfs](smurfs.jpg)](http://www.ingbaytobreakers.com/)
+<a href="http://www.ingbaytobreakers.com/">
+  <img class="shadow" src="gilbert.jpg"></a>
+<a href="http://www.ingbaytobreakers.com/">
+  <img class="shadow" src="start.jpg"></a>
+<a href="http://www.ingbaytobreakers.com/">
+  <img class="shadow" src="smurfs.jpg"></a>
 
 Like around 100,000 other people, I ran in [Bay to
 Breakers](http://www.ingbaytobreakers.com/) last Sunday. OK, only around 35k

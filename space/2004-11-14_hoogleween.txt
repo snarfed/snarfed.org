@@ -1,8 +1,11 @@
 Hoogleween 
 
-[![Halloween at Google 2004/thumbs/joker_riddler.jpg](/gallery/halloween_at_google_2004/thumbs/joker_riddler.jpg)](halloween_at_google_2004)
-[![Halloween at Google 2004/thumbs/sha-mayn_catwoman.jpg](/gallery/halloween_at_google_2004/thumbs/sha-mayn_catwoman.jpg)](halloween_at_google_2004)
-[![Halloween at Google 2004/thumbs/rob_pirate.jpg](/gallery/halloween_at_google_2004/thumbs/rob_pirate.jpg)](halloween_at_google_2004)
+<a href="halloween_at_google_2004">
+  <img class="shadow" src="/gallery/halloween_at_google_2004/thumbs/joker_riddler.jpg"></a>
+<a href="halloween_at_google_2004">
+  <img class="shadow" src="/gallery/halloween_at_google_2004/thumbs/sha-mayn_catwoman.jpg"></a>
+<a href="halloween_at_google_2004">
+  <img class="shadow" src="/gallery/halloween_at_google_2004/thumbs/rob_pirate.jpg"></a>
 
 Just like [Michael Keaton on Celebrity
 Jeopardy](http://snltranscripts.jt.org/97/97bjeopardy.phtml), I was Batman for

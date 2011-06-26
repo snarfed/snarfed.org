@@ -1,6 +1,6 @@
 20% project: OpenID comments in Blogger
 
-[![blogger logo](blogger-logo.png)](http://draft.blogger.com/)
+<a href="http://draft.blogger.com/"><img src="blogger-logo.png"></a>
 <a href="http://openid.net/">
  <img src="openid-logo.png" style="padding-bottom: 2em" /></a>
 <a href="http://google.com/">

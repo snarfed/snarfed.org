@@ -1,8 +1,8 @@
 fedora core 3 on vmware
 
-[![vmware](vmware.png)](http://vmware.com/)
-[![redhat](redhat.jpg)](http://redhat.com/)
-[![fedora](fedora.png)](http://fedora.redhat.com/)
+<a href="http://vmware.com/"><img src="vmware.png"></a>
+<a href="http://redhat.com/"><img src="redhat.jpg"></a>
+<a href="http://fedora.redhat.com/"><img src="fedora.png"></a>
 
 A while back, I upgraded to [VMWare](http://vmware.com/) 4.5.2 with [Fedora Core
 3](http://fedora.redhat.com/) as the guest and Windows XP as the host. It was

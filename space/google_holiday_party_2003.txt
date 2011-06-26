@@ -8,10 +8,14 @@ software engineers.
 
 **Video clips:**
 
-[![fire_room_dancing_thumb.jpg](fire_room_dancing_thumb.jpg)](fire_room_dancing.avi)
-[![ice_room_dancers_thumb.jpg](ice_room_dancers_thumb.jpg)](ice_room_dancers.avi)
-[![fire_hoop_thumb.jpg](fire_hoop_thumb.jpg)](fire_hoop.avi)
-[![trampoline_thumb.jpg](trampoline_thumb.jpg )](trampoline.avi)
+<a href="fire_room_dancing.avi">
+  <img class="shadow" src="fire_room_dancing_thumb.jpg"></a>
+<a href="ice_room_dancers.avi">
+  <img class="shadow" src="ice_room_dancers_thumb.jpg"></a>
+<a href="fire_hoop.avi">
+  <img class="shadow" src="fire_hoop_thumb.jpg"></a>
+<a href="trampoline.avi">
+  <img class="shadow" src="trampoline_thumb.jpg "></a>
 
 **Pictures:**
 

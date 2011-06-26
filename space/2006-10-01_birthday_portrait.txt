@@ -1,7 +1,9 @@
 Birthday portrait
 
-[![ryan_and_ken_painting.jpg](ryan_and_ken_painting.jpg)](http://www.artwanted.com/imageview.cfm?id=400613&SubGal=Portraits)
-[![ryan_and_ken_picture.jpg](ryan_and_ken_picture.jpg)](miyake_2006)
+<a href="http://www.artwanted.com/imageview.cfm?id=400613&SubGal=Portraits">
+  <img class="shadow" src="ryan_and_ken_painting.jpg"></a>
+<a href="miyake_2006">
+  <img class="shadow" src="ryan_and_ken_picture.jpg"></a>
 
 Every year, around the time the leaves start turning and the air gets crisp, my
 birthday rolls around...and every year, when people ask what to get me, I'm

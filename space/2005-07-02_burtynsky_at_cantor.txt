@@ -1,8 +1,11 @@
 Burtynsky at Cantor
 
-[![railcuts](railcuts.jpg)](http://burtynsky.stanford.edu/railcuts.html)
-[![nickel_tailings](nickel_tailings.jpg)](http://burtynsky.stanford.edu/mines_and_tailings.html)
-[![shipbreaking](shipbreaking.jpg)](http://burtynsky.stanford.edu/shipbreaking.html)
+<a href="http://burtynsky.stanford.edu/railcuts.html">
+  <img class="shadow" src="railcuts.jpg"></a>
+<a href="http://burtynsky.stanford.edu/mines_and_tailings.html">
+  <img class="shadow" src="nickel_tailings.jpg"></a>
+<a href="http://burtynsky.stanford.edu/shipbreaking.html">
+  <img class="shadow" src="shipbreaking.jpg"></a>
 
 [Susan](/gallery/cambridge/susan_bridge.jpg)'s new exhibit,
 [Manufactured Landscapes: The Photographs of Edward

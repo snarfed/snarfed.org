@@ -1,8 +1,11 @@
 High Adventure
 
-[![kayaking](kayaking.jpg)](http://citykayak.com/)
-[![climbing](climbing.jpg)](http://www.stanford.edu/group/climbingwall/)
-[![sailing](sailing.jpg)](http://ocscsailing.com/)
+<a href="http://citykayak.com/">
+  <img class="shadow" src="kayaking.jpg"></a>
+<a href="http://www.stanford.edu/group/climbingwall/">
+  <img class="shadow" src="climbing.jpg"></a>
+<a href="http://ocscsailing.com/">
+  <img class="shadow" src="sailing.jpg"></a>
 
 It wasn't intentional, but I've ended up trying a number of the traditional
 "adventure" sports recently: ocean kayaking, rock climbing, and sailing. I'm

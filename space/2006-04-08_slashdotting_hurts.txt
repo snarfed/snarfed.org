@@ -1,8 +1,8 @@
 Slashdotting hurts
 
-[![slashdot](slashdot.png)](http://slashdot.org/article.pl?sid=06/04/05/1936209)
-[![reddit](reddit.png)](http://reddit.com/info/41sx/comments)
-[![digg](digg.png)](http://digg.com/software/Gmail_vs._Pine)
+<a href="http://slashdot.org/article.pl?sid=06/04/05/1936209"><img src="slashdot.png"></a>
+<a href="http://reddit.com/info/41sx/comments"><img src="reddit.png"></a>
+<a href="http://digg.com/software/Gmail_vs._Pine"><img src="digg.png"></a>
 
 A few days ago, my article on [GMail vs. Pine](gmail_vs_pine) was [posted
 to Slashdot](http://slashdot.org/article.pl?sid=06/04/05/1936209). Soon after,

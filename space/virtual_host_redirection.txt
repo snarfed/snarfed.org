@@ -1,7 +1,7 @@
 virtual host redirection
 
-[![snipsnap.png](snipsnap.png)](http://snipsnap.org/)
-[![jetty.png](jetty.png)](http://jetty.mortbay.com/)
+<a href="http://snipsnap.org/"><img src="snipsnap.png"></a>
+<a href="http://jetty.mortbay.com/"><img src="jetty.png"></a>
 
 _**Update**:
 Due to a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-387), if you're using

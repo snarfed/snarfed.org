@@ -1,10 +1,15 @@
 It's not the size that counts... 
 
-[![scaled-120-ryan_barrett_0.jpg](/gallery/mustache_competition/thumbs/before_ryan_barrett_0.jpg)](mustache_competition)
-[![scaled-120-ryan_barrett_1.jpg](/gallery/mustache_competition/thumbs/before_ryan_barrett_1.jpg)](mustache_competition)
-[![scaled-120-ryan_barrett_3.jpg](/gallery/mustache_competition/thumbs/before_ryan_barrett_3.jpg)](mustache_competition)
-[![scaled-120-ryan_barrett_4.jpg](/gallery/mustache_competition/thumbs/before_ryan_barrett_week_4.jpg)](mustache_competition)
-[![scaled-120-ryan_glasses.jpg](/gallery/mustache_competition/thumbs/entrants_ryan_glasses.jpg)](mustache_competition)
+<a href="mustache_competition">
+  <img class="shadow" src="/gallery/mustache_competition/thumbs/before_ryan_barrett_0.jpg"></a>
+<a href="mustache_competition">
+  <img class="shadow" src="/gallery/mustache_competition/thumbs/before_ryan_barrett_1.jpg"></a>
+<a href="mustache_competition">
+  <img class="shadow" src="/gallery/mustache_competition/thumbs/before_ryan_barrett_3.jpg"></a>
+<a href="mustache_competition">
+  <img class="shadow" src="/gallery/mustache_competition/thumbs/before_ryan_barrett_week_4.jpg"></a>
+<a href="mustache_competition">
+  <img class="shadow" src="/gallery/mustache_competition/thumbs/entrants_ryan_glasses.jpg"></a>
 
 For a month now, a group of us have been competing to see who can grow the best
 mustache. Some of you may be thinking, "...but Ryan grows facial hair like a

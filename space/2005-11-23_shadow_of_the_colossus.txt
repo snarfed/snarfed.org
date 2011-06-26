@@ -1,8 +1,11 @@
 Shadow of the Colossus
 
-[![agro_grazing_thumb](agro_grazing_thumb.jpg)](agro_grazing.jpg)
-[![agro_and_colossus_thumb](agro_and_colossus_thumb.jpg)](agro_and_colossus.jpg)
-[![agro_canyon_thumb](agro_canyon_thumb.jpg)](agro_canyon.jpg)
+<a href="agro_grazing.jpg">
+  <img class="shadow" src="agro_grazing_thumb.jpg"></a>
+<a href="agro_and_colossus.jpg">
+  <img class="shadow" src="agro_and_colossus_thumb.jpg"></a>
+<a href="agro_canyon.jpg">
+  <img class="shadow" src="agro_canyon_thumb.jpg"></a>
 
 I finished playing [Shadow of the
 Colossus](http://www.us.playstation.com/Content/OGS/SCUS-97472/Site/) a few days

@@ -1,8 +1,11 @@
 San Francisco Ballet Opening Gala
 
-[![Lily Samii dress](lily_samii_dress.jpg)](http://www.sfgate.com/cgi-bin/object/article?o=5&f=/c/a/2007/01/26/DDG8JNOVIF22.DTL&type=performance)
-[![L'air D'Esprit](lair_desprit.jpg)](http://www.sfgate.com/cgi-bin/object/article?o=35&f=/c/a/2007/01/26/DDG8JNOVIF22.DTL&type=performance)
-[![Patrons dinner](patrons_dinner.jpg)](http://www.sfgate.com/cgi-bin/object/article?o=20&f=/c/a/2007/01/26/DDG8JNOVIF22.DTL&type=performance)
+<a href="http://www.sfgate.com/cgi-bin/object/article?o=5&f=/c/a/2007/01/26/DDG8JNOVIF22.DTL&type=performance">
+  <img class="shadow" src="lily_samii_dress.jpg"></a>
+<a href="http://www.sfgate.com/cgi-bin/object/article?o=35&f=/c/a/2007/01/26/DDG8JNOVIF22.DTL&type=performance">
+  <img class="shadow" src="lair_desprit.jpg"></a>
+<a href="http://www.sfgate.com/cgi-bin/object/article?o=20&f=/c/a/2007/01/26/DDG8JNOVIF22.DTL&type=performance">
+  <img class="shadow" src="patrons_dinner.jpg"></a>
 
 _Update: [pictures](ballet_opening_gala) are up!_
 

@@ -48,7 +48,8 @@ So finally, I got off my duff and wrote my own album generating software!
 [MAlbum](http://maulik.freeshell.net/software/malbum-release/): **Maulik's Album
 app**
 
-[![thumb_screenshot.jpg](http://maulik.freeshell.net/software/malbum-release/thumb_screenshot.jpg)](http://maulik.freeshell.net/software/malbum-release/)
+<a href="http://maulik.freeshell.net/software/malbum-release/">
+  <img class="right shadow" src="http://maulik.freeshell.net/software/malbum-release/thumb_screenshot.jpg"></a>
 
 (there's also a [mirror](malbum) here on Snarfed)
 

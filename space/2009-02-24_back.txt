@@ -1,8 +1,8 @@
 Back!
 
-[![pair.com](pair.com.jpg)](http://pair.com/)
-[![pyblosxom](pyblosxom.jpg)](http://pyblosxom.bluesock.org/)
-[![apache](apache.jpg)](http://httpd.apache.org/)
+<a href="http://pair.com/"><img src="pair.com.jpg"></a>
+<a href="http://pyblosxom.bluesock.org/"><img src="pyblosxom.jpg"></a>
+<a href="http://httpd.apache.org/"><img src="apache.jpg"></a>
 
 We're back up! Sorry for the inconvenience, and thanks for your patience.
 

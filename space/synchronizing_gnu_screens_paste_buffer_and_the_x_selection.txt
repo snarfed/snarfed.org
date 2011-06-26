@@ -1,8 +1,8 @@
 synchronizing GNU screen's paste buffer and the X selection
 
-[![terminal.jpg](terminal.jpg)](http://www.gnu.org/software/screen/)
-[![gnu.jpg](gnu.jpg)](http://gnu.org/software/emacs/)
-[![X_logo](X_logo.png)](http://x.org/)
+<a href="http://www.gnu.org/software/screen/"><img src="terminal.jpg"></a>
+<a href="http://gnu.org/software/emacs/"><img src="gnu.jpg"></a>
+<a href="http://x.org/"><img src="X_logo.png"></a>
 
 I hate the mouse. It's good for some things, but not my work. Switching between
 the mouse and the keyboard wreaks havoc on my muscle memory and fine-motor flow.

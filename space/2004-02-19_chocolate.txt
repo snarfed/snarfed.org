@@ -1,7 +1,11 @@
 Chocolate
-[![redfirebar.jpg](redfirebar.jpg)](chocolate)
-[![recchiuti_bar.jpg](recchiuti_bar.jpg)](chocolate)
-[![lindt_gold_bar.jpg](lindt_gold_bar.jpg)](chocolate)
+
+<a href="chocolate">
+  <img class="shadow" src="redfirebar.jpg"></a>
+<a href="chocolate">
+  <img class="shadow" src="recchiuti_bar.jpg"></a>
+<a href="chocolate">
+  <img class="shadow" src="lindt_gold_bar.jpg"></a>
 
 I like chocolate. A lot. So much that I actually wrote [notes on which
 chocolates I like](chocolate), and why.

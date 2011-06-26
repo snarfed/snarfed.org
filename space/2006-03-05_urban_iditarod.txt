@@ -1,8 +1,11 @@
 Urban Iditarod
 
-[![dogs](dogs.jpg)](http://www.urbaniditarod.com/)
-[![race_crowd](race_crowd.jpg)](http://www.urbaniditarod.com/)
-[![on_all_fours](on_all_fours.jpg)](http://www.urbaniditarod.com/)
+<a href="http://www.urbaniditarod.com/">
+  <img class="shadow" src="dogs.jpg"></a>
+<a href="http://www.urbaniditarod.com/">
+  <img class="shadow" src="race_crowd.jpg"></a>
+<a href="http://www.urbaniditarod.com/">
+  <img class="shadow" src="on_all_fours.jpg"></a>
 
 I ran in the [Urban Iditarod](http://www.urbaniditarod.com/) on Saturday! Here
 in San Francisco, we don't have the facilities to run a [real Alaskan

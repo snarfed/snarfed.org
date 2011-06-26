@@ -1,8 +1,8 @@
 palo alto library amazon greasemonkey
 
-[![greasemonkey](greasemonkey.png)](http://greasemonkey.mozdev.org/)
-[![amazon](amazon.jpg)](http://amazon.com/)
-[![palo_alto_seal](palo_alto_seal.jpg)](http://webcat.cityofpaloalto.org/)
+<a href="http://greasemonkey.mozdev.org/"><img src="greasemonkey.png"></a>
+<a href="http://amazon.com/"><img src="amazon.jpg"></a>
+<a href="http://webcat.cityofpaloalto.org/"><img src="palo_alto_seal.jpg"></a>
 
 For the impatient:  
 [Install Palo Alto Library](paloaltolibrary.user.js)
@@ -12,33 +12,29 @@ libraries](#others)
 [Get Firefox](http://getfirefox.com/)  
 [Get Greasemonkey](http://downloads.mozdev.org/greasemonkey/greasemonkey_0.3.3.xpi)
 
-The [Palo Alto Library Greasemonkey
-script](paloaltolibrary.user.js) adds a link to Amazon
-that shows whether the book you're looking at is available in the [Palo Alto
-Libraries](http://cityofpaloalto.org/library/).
+The [Palo Alto Library Greasemonkey script](paloaltolibrary.user.js) adds a link
+to Amazon that shows whether the book you're looking at is available in the
+[Palo Alto Libraries](http://cityofpaloalto.org/library/).
 
 There are plugins with similar functionality for other libraries and catalogs;
-[see below](#others) for a list. The
-Palo Alto Library script differs mainly in its usability. Instead of simply
-linking to the library's search page, it displays the book's availability
-directly inside Amazon. More importantly, it's color-coded, since [users don't
-read](http://www.joelonsoftware.com/uibook/chapters/fog0000000062.html) (and
-[shouldn't have to](http://www.useit.com/alertbox/9710a.html)!). Green means
-it's there, yellow means it's temporarily unavailable (checked out, on order,
-etc.), red means it's not in the
-library.
+[see below](#others) for a list. The Palo Alto Library script differs mainly in
+its usability. Instead of simply linking to the library's search page, it
+displays the book's availability directly inside Amazon. More importantly, it's
+color-coded, since
+[users don't read](http://www.joelonsoftware.com/uibook/chapters/fog0000000062.html)
+(and [shouldn't have to](http://www.useit.com/alertbox/9710a.html)!). Green
+means it's there, yellow means it's temporarily unavailable (checked out, on
+order, etc.), red means it's not in the library.
 
 ![available_thumb](available_thumb.jpg)
 
-More screenshots: [checked
-out](checked_out_thumb.jpg), [not
-available](not_available_thumb.jpg),
-[on order](on_order.jpg), [in
-process](in_process.jpg). Thanks to
-Eric Galloway for adding "on order" support.
+More screenshots: [checked out](checked_out_thumb.jpg),
+[not available](not_available_thumb.jpg), [on order](on_order.jpg),
+[in process](in_process.jpg). Thanks to Eric Galloway for adding "on order"
+support.
 
-Background: [Jon Udell](http://weblog.infoworld.com/udell/)'s [Library
-Lookup](http://weblog.infoworld.com/udell/stories/2002/12/11/librarylookup.html)
+Background: [Jon Udell](http://weblog.infoworld.com/udell/)'s
+[Library Lookup](http://weblog.infoworld.com/udell/stories/2002/12/11/librarylookup.html)
 is a great example of Firefox's potential for simple, yet powerful client-side
 tools. Library Lookup lets you build a bookmarklet that, when you're browsing
 [Amazon](http://amazon.com/), automatically searches your library for the book
@@ -54,7 +50,6 @@ script.
 
 Scripts for other libraries:
 <a name="others"></a>
-[![Icon-Permalink.png](/Icon-Permalink.png)](#others)
 
   * [UC
 Berkeley](http://dream.sims.berkeley.edu/~ryanshaw/wordpress/amazon2melvyl/)

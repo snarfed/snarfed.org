@@ -1,8 +1,8 @@
 privacy through prepaid credit cards
 
-[![mastercard](mastercard.jpg)](http://mastercard.com/)
-[![amex](amex.jpg)](http://americanexpress.com/)
-[![visa](visa.jpg)](http://visa.com/)
+<a href="http://mastercard.com/"><img src="mastercard.jpg"></a>
+<a href="http://americanexpress.com/"><img src="amex.jpg"></a>
+<a href="http://visa.com/"><img src="visa.jpg"></a>
 
 <!--
 more research in june 2011. three major categories:

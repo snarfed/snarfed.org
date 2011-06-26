@@ -1,8 +1,11 @@
 Holiday party pictures
 
-[![yahoo_holiday_party_dancers_cynthia.jpg](yahoo_holiday_party_dancers_cynthia.jpg)](/gallery/yahoo_holiday_party_2008/)
-[![prez_holiday_party_t_dancing.jpg](prez_holiday_party_t_dancing.jpg)](president_hotel_holiday_party_2008)
-[![yahoo_holiday_party_wedding_group.jpg](yahoo_holiday_party_wedding_group.jpg)](/gallery/yahoo_holiday_party_2008/)
+<a href="/gallery/yahoo_holiday_party_2008/">
+  <img class="shadow" src="yahoo_holiday_party_dancers_cynthia.jpg"></a>
+<a href="president_hotel_holiday_party_2008">
+  <img class="shadow" src="prez_holiday_party_t_dancing.jpg"></a>
+<a href="/gallery/yahoo_holiday_party_2008/">
+  <img class="shadow" src="yahoo_holiday_party_wedding_group.jpg"></a>
 
 Pictures from a couple holiday parties are up!
 [Yahoo's](/gallery/yahoo_holiday_party_2008/) and my apartment building,

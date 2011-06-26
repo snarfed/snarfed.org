@@ -1,10 +1,15 @@
 Studio 767 Pictures
 
-[![scaled-120-crowd3.jpg](/gallery/studio_767_birthday_party/thumbs/crowd3.jpg)](studio_767_birthday_party)
-[![scaled-120-studio_767.jpg](/gallery/studio_767_birthday_party/thumbs/studio_767.jpg)](studio_767_birthday_party)
-[![scaled-120-orkut.jpg](/gallery/studio_767_birthday_party/thumbs/orkut.jpg)](studio_767_birthday_party)
-[![scaled-120-jeff_kristin_matt_sylvia.jpg](/gallery/studio_767_birthday_party/thumbs/jeff_kristin_matt_sylvia.jpg)](studio_767_birthday_party)
-[![scaled-120-dancer4.jpg](/gallery/studio_767_birthday_party/thumbs/dancer4.jpg)](studio_767_birthday_party)
+<a href="studio_767_birthday_party">
+  <img class="shadow" src="/gallery/studio_767_birthday_party/thumbs/crowd3.jpg"></a>
+<a href="studio_767_birthday_party">
+  <img class="shadow" src="/gallery/studio_767_birthday_party/thumbs/studio_767.jpg"></a>
+<a href="studio_767_birthday_party">
+  <img class="shadow" src="/gallery/studio_767_birthday_party/thumbs/orkut.jpg"></a>
+<a href="studio_767_birthday_party">
+  <img class="shadow" src="/gallery/studio_767_birthday_party/thumbs/jeff_kristin_matt_sylvia.jpg"></a>
+<a href="studio_767_birthday_party">
+  <img class="shadow" src="/gallery/studio_767_birthday_party/thumbs/dancer4.jpg"></a>
 
 It wasn't an official CodeCon event...but I've finally posted
 [pictures](studio_767_birthday_party) from Studio 767,

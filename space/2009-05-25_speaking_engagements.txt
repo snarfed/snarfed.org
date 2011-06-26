@@ -1,7 +1,7 @@
 Speaking engagements
 
-[![google io 2009](io_2009_logo_small.jpg)](http://code.google.com/events/io/sessions/TransactionsAcrossDatacenters.html)
-[![sdforum](sdforum_logo.jpg)](http://www.sdforum.org/index.cfm?fuseaction=Calendar.eventDetail&eventID=13366)
+<a href="http://code.google.com/events/io/sessions/TransactionsAcrossDatacenters.html"><img src="io_2009_logo_small.jpg"></a>
+<a href="http://www.sdforum.org/index.cfm?fuseaction=Calendar.eventDetail&eventID=13366"><img src="sdforum_logo.jpg"></a>
 
 I'm giving a few [talks](talks) this week!
 

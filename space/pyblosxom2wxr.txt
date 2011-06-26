@@ -1,7 +1,7 @@
 pyblosxom2wxr
 
-[![pyblosxom](pyblosxom.jpg)](http://pyblosxom.bluesock.org/)
-[![wordpress](wordpress.png)](http://wordpress.org/)
+<a href="http://pyblosxom.bluesock.org/"><img src="pyblosxom.jpg"></a>
+<a href="http://wordpress.org/"><img src="wordpress.png"></a>
 
 [pyblosxom2wxr.sh](pyblosxom2wxr.sh) is a shell script that migrates content
 from [PyBlosxom](http://pyblosxom.bluesock.org/) to

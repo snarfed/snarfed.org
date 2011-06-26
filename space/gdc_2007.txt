@@ -1,6 +1,6 @@
 GDC 2007
 
-[![GDC 2007](gdc2007.jpg)](http://gdconf.com/)
+<a href="http://gdconf.com/"><img src="gdc2007.jpg"></a>
 
 I'm back from my sixth year at [GDC][]! I wrote up my [last][] [two][] trips,
 and the protests weren't quite loud enough, so I'm doing it again this year.
@@ -150,9 +150,7 @@ rate them. No more onerous certification process. Instant gratification!
 [XNA Game Studio Express]: http://msdn2.microsoft.com/en-us/xna/aa937793.aspx
 [He called it Community Arcade]: http://www.1up.com/do/newsStory?cId=3152832
 
-
-<a name="what_this_says"></a>
-[![Icon-Permalink.png](/Icon-Permalink.png)](#what_this_says)
+<a name="what_this_says"><img src="Icon-Permalink.png" /></a>
 These are markedly different approaches to user-generated content. They may be
 parts of greater corporate product plans, but just as importantly, they tell
 us a great deal about the souls of these platform giants.

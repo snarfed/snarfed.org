@@ -1,7 +1,9 @@
 Laura Veirs and...Green Day?
 
-[![laura_veirs](laura_veirs.jpg)](http://lauraveirs.com/)
-[![green_day_american_idiot](green_day_american_idiot.jpg)](http://greenday.com/)
+<a href="http://lauraveirs.com/">
+  <img class="shadow" src="laura_veirs.jpg"></a>
+<a href="http://greenday.com/">
+  <img class="shadow" src="green_day_american_idiot.jpg"></a>
 
 New music smacked me upside the head recently, and I've enjoyed it enough that I
 thought I'd mention it here.

@@ -8,7 +8,8 @@ the best Christmas present ever.
 I present to you..._drum roll_...the [beerpong
 table](http://joelonsoftware.com/items/2005/12/14b.html)!
 
-[![beerpong_table](beerpong_table.jpg)](http://joelonsoftware.com/items/2005/12/14b.html)
+<a href="http://joelonsoftware.com/items/2005/12/14b.html">
+  <img class="shadow" src="beerpong_table.jpg"></a>
 
 Genius. Absolute genius. Now they just need to build them in bulk. I'd be the
 first in line to buy one for Pi Kappa Nu.

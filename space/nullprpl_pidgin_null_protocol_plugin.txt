@@ -1,7 +1,7 @@
 nullprpl: pidgin null protocol plugin
 
-[![pidgin_full](pidgin_full.png)](http://pidgin.im/)
-[![pidgin_logo](pidgin_logo.png)](http://pidgin.im/)
+<a href="http://pidgin.im/"><img src="pidgin_full.png"></a>
+<a href="http://pidgin.im/"><img src="pidgin_logo.png"></a>
 
 Nullprpl is a mock protocol plugin for [Pidgin](http://pidgin.im/) and
 [libpurple](http://developer.pidgin.im/wiki/WhatIsLibpurple). You can create

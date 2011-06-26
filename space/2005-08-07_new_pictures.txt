@@ -1,8 +1,11 @@
 New pictures
 
-[![scaled-120-buried_vijay.jpg](/gallery/santa_cruz_offsite/thumbs/buried_vijay.jpg)](santa_cruz_offsite)
-[![scaled-120-tina_ken_before_cables.jpg](/gallery/half_dome/thumbs/tina_ken_before_cables.jpg)](half_dome)
-[![scaled-120-scuba_underwater_richard_vanessa_ryan_rosalind.jpg](/gallery/family_reunion_cruise/thumbs/scuba_underwater_richard_vanessa_ryan_rosalind.jpg)](family_reunion_cruise)
+<a href="santa_cruz_offsite">
+  <img class="shadow" src="/gallery/santa_cruz_offsite/thumbs/buried_vijay.jpg"></a>
+<a href="half_dome">
+  <img class="shadow" src="/gallery/half_dome/thumbs/tina_ken_before_cables.jpg"></a>
+<a href="family_reunion_cruise">
+  <img class="shadow" src="/gallery/family_reunion_cruise/thumbs/scuba_underwater_richard_vanessa_ryan_rosalind.jpg"></a>
 
 I've finally posted pictures from some recent fun stuff - Google's [Santa Cruz
 offsite](santa_cruz_offsite), our hike to [Half Dome](half_dome),

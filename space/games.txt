@@ -4,9 +4,12 @@ games
 img { vertical-align: text-top; }
 </style>
 
-[![twinsens_odyssey](twinsens_odyssey.jpg)](http://www.twinadv.net/lba2/)
-[![sam_and_max](sam_and_max.jpg)](http://www.samandmax.net/)
-[![hitman](hitman.jpg)](http://www.ioi.dk/games/hitman1.htm)
+<a href="http://www.twinadv.net/lba2/">
+  <img class="shadow" src="twinsens_odyssey.jpg"></a>
+<a href="http://www.samandmax.net/">
+  <img class="shadow" src="sam_and_max.jpg"></a>
+<a href="http://www.ioi.dk/games/hitman1.htm">
+  <img class="shadow" src="hitman.jpg"></a>
 
 [Games I've played](#played) and
 [games I'd like to play](#to_play).
@@ -18,7 +21,6 @@ Also see [books](books), [movies](movies), and
 
 <a name="to_play"></a>
 **Games I'd like to play**:
-[![Icon-Permalink.png](/Icon-Permalink.png)](#to_play)
 
   * [Gemini Rue](http://www.wadjeteyegames.com/gemini-rue.html)
 _([Joshua Nuernberger](http://jburger.blogspot.com/)/[Wadjet Eye](http://www.wadjeteyegames.com/))_
@@ -87,7 +89,6 @@ Side](http://www.gaming-side.com/)/[Dream On](http://dreamon-studio.com/))_
 
 <a name="played"></a>
 **Games I've played**: 
-[![Icon-Permalink.png](/Icon-Permalink.png)](#played)
 
   * [Child of Eden](http://www.gamespot.com/xbox360/action/childofeden/)
 _([Tetsuya Mizuguchi](http://en.wikipedia.org/wiki/Tetsuya_Mizuguchi))_
@@ -583,9 +584,12 @@ Chen](http://jenovachen.com/) et al.)_
 _([Harmonix](http://www.harmonixmusic.com/))_
 ![good](/good.png)
 
-[![indie_game_jam](indie_game_jam.png)](http://indiegamejam.com/)
-[![igf_2006](igf_2006.png)](http://igf.com/)
-[![slamdance](slamdance.png)](http://www.slamdance.com/games/)
+<a href="http://indiegamejam.com/">
+  <img class="shadow" src="indie_game_jam.png"></a>
+<a href="http://igf.com/">
+  <img class="shadow" src="igf_2006.png"></a>
+<a href="http://www.slamdance.com/games/">
+  <img class="shadow" src="slamdance.png"></a>
 
   * [Independent Games Festival 2006](http://igf.com/2006entrants.shtml):
 
@@ -661,9 +665,12 @@ _([Introversion](http://www.introversion.co.uk/))_
 _([Intelligent](http://www.intsys.co.jp/))_
 ![good](/good.png)
 
-[![space_channel_5](space_channel_5.jpg)](http://www.mobygames.com/game/dreamcast/space-channel-5)
-[![gordon_freeman](gordon_freeman.jpg)](http://www.planethalflife.com/half-life/)
-[![san_francisco_rush_2049](san_francisco_rush_2049.jpg)](http://www.mobygames.com/game/dreamcast/san-francisco-rush-2049)
+<a href="http://www.mobygames.com/game/dreamcast/space-channel-5">
+  <img class="shadow" src="space_channel_5.jpg"></a>
+<a href="http://www.planethalflife.com/half-life/">
+  <img class="shadow" src="gordon_freeman.jpg"></a>
+<a href="http://www.mobygames.com/game/dreamcast/san-francisco-rush-2049">
+  <img class="shadow" src="san_francisco_rush_2049.jpg"></a>
 
   * [Crimson Skies](http://www.microsoft.com/games/crimsonskies/)
 _([FASA](http://fasastudio.com/)/[Microsoft](http://www.microsoft.com/games/))_
@@ -761,9 +768,12 @@ _([id](http://idsoftware.com/))_
 
   * [Tic Tac Toe](tictactoe) _([Ryan Barrett](http://snarfed.org/))_
 
-[![worms](worms.jpg)](http://www.worms3d.com/)
-[![escape_from_monkey_island](escape_from_monkey_island.jpg)](http://www.worldofmi.com/thegames/monkey4/index.php)
-[![tomb_raider](tomb_raider.jpg)](http://wikiraider.tombraidergirl.net/index.php/Tomb_Raider_1)
+<a href="http://www.worms3d.com/">
+  <img class="shadow" src="worms.jpg"></a>
+<a href="http://www.worldofmi.com/thegames/monkey4/index.php">
+  <img class="shadow" src="escape_from_monkey_island.jpg"></a>
+<a href="http://wikiraider.tombraidergirl.net/index.php/Tomb_Raider_1">
+  <img class="shadow" src="tomb_raider.jpg"></a>
 
   * [Voxel Hunt](voxel) _([Ryan Barrett](http://snarfed.org/))_
 
@@ -841,9 +851,12 @@ Alice](http://www.mobygames.com/game/american-mcgees-alice) _([Rogue
 Entertainment](http://en.wikipedia.org/wiki/Rogue_Entertainment))_
 ![good](/good.png)
 
-[![duke_nukem_3d](duke_nukem_3d.jpg)](http://www.3drealms.com/duke3d/index.html)
-[![baku_baku](baku_baku.jpg)](http://www.mobygames.com/game/windows/baku-baku-animal)
-[![wolfenstein_3d](wolfenstein_3d.jpg)](http://www.idsoftware.com/games/wolfenstein/wolf3d/)
+<a href="http://www.3drealms.com/duke3d/index.html">
+  <img class="shadow" src="duke_nukem_3d.jpg"></a>
+<a href="http://www.mobygames.com/game/windows/baku-baku-animal">
+  <img class="shadow" src="baku_baku.jpg"></a>
+<a href="http://www.idsoftware.com/games/wolfenstein/wolf3d/">
+  <img class="shadow" src="wolfenstein_3d.jpg"></a>
 
   * [MDK 1](http://www.mobygames.com/game/windows/mdk)
 _([Shiny](http://www.shiny.com/))_, [MDK 2](http://www.mobygames.com/game/mdk-2)
@@ -941,9 +954,12 @@ _([LucasArts](http://lucasarts.com/))_
 _([LucasArts](http://lucasarts.com/))_
 ![good](/good.png)
 
-[![rampage](rampage.jpg)](http://www.mobygames.com/game/dos/rampage)
-[![7th_guest](7th_guest.jpg)](http://www.mobygames.com/game/7th-guest)
-[![street_fighter_2](street_fighter_2.jpg)](http://en.wikipedia.org/wiki/Street_Fighter_II)
+<a href="http://www.mobygames.com/game/dos/rampage">
+  <img class="shadow" src="rampage.jpg"></a>
+<a href="http://www.mobygames.com/game/7th-guest">
+  <img class="shadow" src="7th_guest.jpg"></a>
+<a href="http://en.wikipedia.org/wiki/Street_Fighter_II">
+  <img class="shadow" src="street_fighter_2.jpg"></a>
 
   * [Mechwarrior 2](http://games.activision.com/games/mechseries/mech2.html)
 _([Activision](http://activision.com/))_
@@ -1041,9 +1057,12 @@ Hicken](http://www.mobygames.com/developer/sheet/view/developerId,1062/))_
 _([Sierra](http://sierra.com/))_
 ![ok](/ok.png)
 
-[![commander_keen](commander_keen.jpg)](http://www.3drealms.com/keenhistory/index.html)
-[![super_mario_bros](super_mario_bros.jpg)](http://www.smbhq.com/)
-[![leisure_suit_larry](leisure_suit_larry.jpg)](http://www.vintage-sierra.com/lsl.html)
+<a href="http://www.3drealms.com/keenhistory/index.html">
+  <img class="shadow" src="commander_keen.jpg"></a>
+<a href="http://www.smbhq.com/">
+  <img class="shadow" src="super_mario_bros.jpg"></a>
+<a href="http://www.vintage-sierra.com/lsl.html">
+  <img class="shadow" src="leisure_suit_larry.jpg"></a>
 
   * [Epic Pinball](http://www.dmwright.com/pinball/epic/)
 _([Epic](http://epicgames.com/))_

@@ -1,7 +1,7 @@
 snipsnap recent-changes snip name patch
 
-[![snipsnap.png](snipsnap.png)](http://snipsnap.org/)
-[![jetty.png](jetty.png)](http://jetty.mortbay.com/)
+<a href="http://snipsnap.org/"><img src="snipsnap.png"></a>
+<a href="http://jetty.mortbay.com/"><img src="jetty.png"></a>
 
 For the impatient:  
 [Patch for SnipSnap CVS HEAD](snipsnap-snip-name-cvs.patch)  

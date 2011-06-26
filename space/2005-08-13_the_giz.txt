@@ -1,8 +1,11 @@
 The Giz
 
-[![scaled-120-gizmo_ready_to_pounce.jpg](/gallery/cats/thumbs/gizmo_ready_to_pounce.jpg)](cats)
-[![scaled-120-gizmo_on_point.jpg](/gallery/cats/thumbs/gizmo_on_point.jpg)](cats)
-[![scaled-120-gizmo_blurry.jpg](/gallery/cats/thumbs/gizmo_blurry.jpg)](cats)
+<a href="cats">
+  <img class="shadow" src="/gallery/cats/thumbs/gizmo_ready_to_pounce.jpg"></a>
+<a href="cats">
+  <img class="shadow" src="/gallery/cats/thumbs/gizmo_on_point.jpg"></a>
+<a href="cats">
+  <img class="shadow" src="/gallery/cats/thumbs/gizmo_blurry.jpg"></a>
 
 A couple of my friends got married recently - congratulations, Matt and Kristin! -
 and they asked me to cat-sit for them while they were on their honeymoon. They

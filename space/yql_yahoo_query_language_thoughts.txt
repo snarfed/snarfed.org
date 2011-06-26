@@ -1,6 +1,6 @@
 Yahoo! Query Language thoughts
 
-[![yahoo logo](yahoo_logo.gif)](http://developer.yahoo.com/yql/)
+<a href="http://developer.yahoo.com/yql/"><img src="yahoo_logo.gif"></a>
 
 I recently sat down and read through the docs for Yahoo's
 [Y!OS](http://developer.yahoo.com/yos/intro/), a collection of services and

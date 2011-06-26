@@ -1,7 +1,9 @@
 gmail vs pine
 
-[![pine](pine.png)](http://washington.edu/pine/)![gloves](gloves.jpg)
-[![gmail](gmail.png)](http://gmail.com/)
+<a href="http://washington.edu/pine/"
+  <img src="pine.png"></a>
+<img src="gloves.jpg">
+<a href="http://gmail.com/"><img src="gmail.png"></a>
 
 _Note: this article was written in February 2005. The ideas still apply, but
 many of the technical details about Gmail and Pine have changed. Caveat reader!_

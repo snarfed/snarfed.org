@@ -1,7 +1,9 @@
 voxel
 
-[![voxel_hunt_mountain_thumb](voxel_hunt_mountain_thumb.jpg)](voxel_hunt_mountain.jpg)
-[![voxel_hunt_volcanic_thumb](voxel_hunt_volcanic_thumb.jpg)](voxel_hunt_volcanic.jpg)
+<a class="shutter" href="voxel_hunt_mountain.jpg">
+  <img class="shadow" src="voxel_hunt_mountain_thumb.jpg"></a>
+<a class="shutter" href="voxel_hunt_volcanic.jpg">
+  <img class="shadow" src="voxel_hunt_volcanic_thumb.jpg"></a>
 
 [Download
 Voxel Hunt](voxel.zip)

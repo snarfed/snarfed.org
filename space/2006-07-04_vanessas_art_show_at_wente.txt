@@ -1,8 +1,11 @@
 Vanessa's art show at Wente
 
-[![the_prank](the_prank.jpg)](http://www.artwanted.com/imageview.cfm?id=352540&#38;SubGal=Portraits)
-[![the_joneses](the_joneses.jpg)](http://www.artwanted.com/imageview.cfm?id=308489&#38;SubGal=Portraits)
-[![little_sister](little_sister.jpg)](http://www.artwanted.com/imageview.cfm?id=204263&#38;SubGal=Portraits)
+<a href="http://www.artwanted.com/imageview.cfm?id=352540&#38;SubGal=Portraits">
+  <img class="shadow" src="the_prank.jpg"></a>
+<a href="http://www.artwanted.com/imageview.cfm?id=308489&#38;SubGal=Portraits">
+  <img class="shadow" src="the_joneses.jpg"></a>
+<a href="http://www.artwanted.com/imageview.cfm?id=204263&#38;SubGal=Portraits">
+  <img class="shadow" src="little_sister.jpg"></a>
 
 My sister, [Vanessa](http://vanessaart.com/), is an artist. Her work has hung in
 number of galleries and other venues in the Bay Area, including

@@ -3,5 +3,6 @@ Happy Valentine's Day
 Or, as they taught us to say in English
 class:
 
-[![shitbitch](shitbitch.jpg)](http://tomatoalligator.com/)
+<a href="http://tomatoalligator.com/">
+  <img class="shadow" src="shitbitch.jpg"></a>
 

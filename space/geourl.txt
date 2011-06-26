@@ -17,5 +17,5 @@ other sites near your own, like so:
 [http://geourl.org/near/?p=http://snarfed.org/](http://geourl.org/near/?p=http://snarfed.org/)
 
 The [buttons](buttons) page has a convenient GeoUrl icon:
-[![geo_globe.png](geo_globe.png)](http://geourl.org/near/?p=http://snarfed.org/)
+<a href="http://geourl.org/near/?p=http://snarfed.org/"><img src="geo_globe.png"></a>
 

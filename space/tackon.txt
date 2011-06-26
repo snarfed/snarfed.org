@@ -1,7 +1,7 @@
 tackon.dll
 
-[![nsis_llama](nsis_llama.png)](http://nsis.sourceforge.net/)
-[![downhill_battle](downhill_battle.jpg)](http://blogtorrent.com/)
+<a href="http://nsis.sourceforge.net/"><img src="nsis_llama.png"></a>
+<a href="http://blogtorrent.com/"><img src="downhill_battle.jpg"></a>
 
 For the impatient:  
 [Download tackon.dll](tackon.dll)

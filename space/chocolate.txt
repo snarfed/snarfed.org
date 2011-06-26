@@ -1,8 +1,11 @@
 chocolate
 
-[![redfirebar](redfirebar.jpg)](http://www.vosgeschocolate.com/Merchant2/merchant.mv?Screen=PROD&#38;Product_Code=ECBREDFIRE&#38;Category_Code=CB)
-[![recchiuti_bar](recchiuti_bar.jpg)](http://www.recchiuticonfections.com/cgi-bin/chocolate/shop/product.html?id=pNfBNb5v&#38;mv_arg=prod_code%3d819895%2d000039)
-[![lindt_gold_bar](lindt_gold_bar.jpg)](http://www.lindtusa.com/shop-product-detail.cfm?PID=18&#38;RowStart=17&#38;PgNum=3)
+<a href="http://www.vosgeschocolate.com/Merchant2/merchant.mv?Screen=PROD&#38;Product_Code=ECBREDFIRE&#38;Category_Code=CB">
+  <img class="shadow" src="redfirebar.jpg"></a>
+<a href="http://www.recchiuticonfections.com/cgi-bin/chocolate/shop/product.html?id=pNfBNb5v&#38;mv_arg=prod_code%3d819895%2d000039">
+  <img class="shadow" src="recchiuti_bar.jpg"></a>
+<a href="http://www.lindtusa.com/shop-product-detail.cfm?PID=18&#38;RowStart=17&#38;PgNum=3">
+  <img class="shadow" src="lindt_gold_bar.jpg"></a>
 
 I like chocolate. I like it a _lot_. This page has my notes on
 [chocolate](#chocolates) and [where to get
@@ -757,9 +760,12 @@ easily one of the best pure darks in the list. Note the incredibly snooty
 wrapper; it's gilded in gold, and has a Michelangelo-like fresco painting. So,
 due to Barrett's Law, you don't need me to tell you that it's good. :P
 
-[![cluizel](cluizel.jpg)](http://www.cluizel.com/)
-[![amedei](amedei.jpg)](http://www.amedei.it/en/collection.asp)
-[![zotter_orange](zotter_orange.png)](http://www.zotter.at/schoko_galerie.html)
+<a href="http://www.cluizel.com/">
+  <img class="shadow" src="cluizel.jpg"></a>
+<a href="http://www.amedei.it/en/collection.asp">
+  <img class="shadow" src="amedei.jpg"></a>
+<a href="http://www.zotter.at/schoko_galerie.html">
+  <img class="shadow" src="zotter_orange.png"></a>
 
   * [Perugina](http://www.nestleeuropeanchocolate.com/perugina/)
 [Dark](http://www.nestleeuropeanchocolate.com/perugina/collection/about.asp)
@@ -931,9 +937,12 @@ Taken as candy, not premium chocolate, though, it's not bad at all. It reminds
 me of the "25 days of Christmas" chocolate calendars you'd get as a kid - no
 competition for the better chocolates here, but still lots of fun.
 
-[![scharffenberger_logo](scharffenberger_logo.png)](http://scharffenberger.com/)
-[![dolfin_bar](dolfin_bar.jpg)](http://www.veganessentials.com/catalog/dolfin-chocolate-bars.htm)
-[![lindt_logo](lindt_logo.jpg)](http://lindt.com/)
+<a href="http://scharffenberger.com/">
+  <img class="shadow" src="scharffenberger_logo.png"></a>
+<a href="http://www.veganessentials.com/catalog/dolfin-chocolate-bars.htm">
+  <img class="shadow" src="dolfin_bar.jpg"></a>
+<a href="http://lindt.com/">
+  <img class="shadow" src="lindt_logo.jpg"></a>
 
 <a name="buy"></a>
 

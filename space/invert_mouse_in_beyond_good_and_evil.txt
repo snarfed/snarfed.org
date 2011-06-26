@@ -1,8 +1,11 @@
 invert mouse in Beyond Good &amp; Evil
 
-[![two](two.jpg)](http://beyondgoodevil.com/)
-[![box](box.jpg)](http://beyondgoodevil.com/)
-[![explosion](explosion.jpg)](http://beyondgoodevil.com/)
+<a href="http://beyondgoodevil.com/">
+  <img class="shadow" src="two.jpg"></a>
+<a href="http://beyondgoodevil.com/">
+  <img class="shadow" src="box.jpg"></a>
+<a href="http://beyondgoodevil.com/">
+  <img class="shadow" src="explosion.jpg"></a>
 
 _If you like Beyond Good & Evil, you might also like
 [my writeup](2004-11-11_beyond_good_and_evil) and the

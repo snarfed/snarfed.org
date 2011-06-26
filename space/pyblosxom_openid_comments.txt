@@ -1,8 +1,8 @@
 pyblosxom OpenID comments
 
-[![openid](openid-logo.png)](http://openid.net/)
-[![pyblosxom](pyblosxom.jpg)](http://pyblosxom.bluesock.org/)
-[![janrain](janrain.png)](http://janrain.com/)
+<a href="http://openid.net/"><img src="openid-logo.png"></a>
+<a href="http://pyblosxom.bluesock.org/"><img src="pyblosxom.jpg"></a>
+<a href="http://janrain.com/"><img src="janrain.png"></a>
 
 For the impatient:  
 &nbsp; Download [comments_openid.py 0.4](comments_openid.py)  

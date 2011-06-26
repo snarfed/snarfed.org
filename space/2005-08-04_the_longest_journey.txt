@@ -1,8 +1,11 @@
 The Longest Journey
 
-[![house](the_longest_journey_house.jpg)](http://longestjourney.com/)
-[![the_longest_journey_box](the_longest_journey_box.jpg)](http://longestjourney.com/)
-[![dragon](the_longest_journey_dragon.jpg)](http://longestjourney.com/)
+<a href="http://longestjourney.com/">
+  <img class="shadow" src="the_longest_journey_house.jpg"></a>
+<a href="http://longestjourney.com/">
+  <img class="shadow" src="the_longest_journey_box.jpg"></a>
+<a href="http://longestjourney.com/">
+  <img class="shadow" src="the_longest_journey_dragon.jpg"></a>
 
 I've been meaning to play [The Longest Journey](http://longestjourney.com/)
 ([reviews](http://www.gamerankings.com/htmlpages2/198973.asp)), for a long time,

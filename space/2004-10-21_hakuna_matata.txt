@@ -1,8 +1,11 @@
 Hakuna Matata 
 
-[![giraffes](giraffes.jpg)](giraffes_big.jpg)
-[![mufasa](mufasa.jpg)](mufasa_big.jpg)
-[![ostriches](ostriches.jpg)](ostriches_big.jpg)
+<a href="giraffes_big.jpg">
+  <img class="shadow" src="giraffes.jpg"></a>
+<a href="mufasa_big.jpg">
+  <img class="shadow" src="mufasa.jpg"></a>
+<a href="ostriches_big.jpg">
+  <img class="shadow" src="ostriches.jpg"></a>
 
 Over the weekend, I went with my family to see the [Lion King
 musical](http://www.disney.co.uk/MusicalTheatre/TheLionKing/). It was playing at

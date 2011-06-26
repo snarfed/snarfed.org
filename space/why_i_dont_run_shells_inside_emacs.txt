@@ -1,8 +1,8 @@
 why I don't run shells inside Emacs
 
-[![terminal.jpg](terminal.jpg)](http://rxvt.org/)
-[![tcsh_oystercatcher.jpg](tcsh_oystercatcher.jpg)](http://tcsh.org/)
-[![gnu.jpg](gnu.jpg)](http://gnu.org/software/emacs/)
+<a href="http://rxvt.org/"><img src="terminal.jpg"></a>
+<a href="http://tcsh.org/"><img src="tcsh_oystercatcher.jpg"></a>
+<a href="http://gnu.org/software/emacs/"><img src="gnu.jpg"></a>
 
 *This article describes my first attempt at running shells inside Emacs, which
 didn't work out. I [tried again recently](why_i_run_shells_inside_emacs), and I

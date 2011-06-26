@@ -1,10 +1,10 @@
 firefox 1.0pr and linksonly find as you type
 
-[![mozilla.png](mozilla.png)](http://mozilla.org/mozilla1.x/)
-[![ff_icon.png](ff_icon.png)](http://mozilla.org/firefox/)
-[![camino.png](camino.png)](http://mozilla.org/camino/)
-[![thunderbird.jpg](thunderbird.jpg)](http://mozilla.org/thunderbird/)
-[![bugzilla.jpg](bugzilla.jpg)](http://bugzilla.org/)
+<a href="http://mozilla.org/mozilla1.x/"><img src="mozilla.png"></a>
+<a href="http://mozilla.org/firefox/"><img src="ff_icon.png"></a>
+<a href="http://mozilla.org/camino/"><img src="camino.png"></a>
+<a href="http://mozilla.org/thunderbird/"><img src="thunderbird.jpg"></a>
+<a href="http://bugzilla.org/"><img src="bugzilla.jpg"></a>
 
 I love [Firefox](http://mozilla.org/firefox/)'s
 [find-as-you-type](http://www.mozilla.org/access/type-ahead/), or

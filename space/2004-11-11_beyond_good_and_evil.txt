@@ -1,10 +1,11 @@
 Beyond Good & Evil 
 
-[![two.jpg](two.jpg)](http://beyondgoodevil.com/)
-[![box.jpg](box.jpg)](http://beyondgoodevil.com/)
-[![explosion.jpg](explosion.jpg)](http://beyondgoodevil.com/)
-
-
+<a href="http://beyondgoodevil.com/">
+  <img class="shadow" src="two.jpg"></a>
+<a href="http://beyondgoodevil.com/">
+  <img class="shadow" src="box.jpg"></a>
+<a href="http://beyondgoodevil.com/">
+  <img class="shadow" src="explosion.jpg"></a>
 
 _Update: Edge's
 [retrospective](http://www.edge-online.co.uk/archives/2005/12/beyond_good_evi.php)

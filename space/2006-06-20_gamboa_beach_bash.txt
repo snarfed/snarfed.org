@@ -1,8 +1,11 @@
 Gamboa Beach Bash
 
-[![ryan_becca_beach](ryan_becca_beach.jpg)](gamboa_beach_bash)
-[![moss_cliff](moss_cliff.jpg)](gamboa_beach_bash)
-[![sunset](sunset.jpg)](gamboa_beach_bash)
+<a href="gamboa_beach_bash">
+  <img class="shadow" src="ryan_becca_beach.jpg"></a>
+<a href="gamboa_beach_bash">
+  <img class="shadow" src="moss_cliff.jpg"></a>
+<a href="gamboa_beach_bash">
+  <img class="shadow" src="sunset.jpg"></a>
 
 Last weekend, [Becca](http://myspace.com/beckstar_805) and I headed down to Big
 Sur and camped out on [Gamboa Beach](http://jrabold.net/bigsur/roadpt0860.htm)
