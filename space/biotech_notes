@@ -1,0 +1,43 @@
+genomics: still interesting!
+- SNPs are single bases, but variations are often much bigger than that
+- finding genes and gene patterns that correlate
+
+biomarkers: any interesting bio signal. gene, hormone levels, protein
+  expression, etc.
+- devices for detecting them
+- correlating them with x, y, z, ...
+- consumer device for measuring lots of these? devices used during FDA trials
+  for correlating data? theranos (?) startup doing this?
+
+derive something to direct drug development public datasets (from basic research)
+- enumerate bonding sites for molecules/proteins?
+- search engine over all theoretically possible molecules proteins? as opposed
+  to e.g. existing catalogs that only have known ones.
+
+NLP/data mining over research papers, pubmed, etc
+- derive semantics. e.g. lots of activity around X in late '90s, then it was all
+  discredited in 2000. if you search, you may find the '90s stuff and not see
+  that it was discredited.
+
+help find subpopulations that drugs should be targeted at
+- lucy's friend sherry's company did this, worked great
+- specifically: which biomarkers? genes, etc
+
+help direct/predict results of early (and late) fda trials
+- ie should they use rats, dogs, other animals? should they look for specific
+  biomarkers? etc.
+- drug developer gets to control pre-trials and give input to later ones
+- if big improvement, fda supports this
+
+use simulation of subsystems (entire body model is holy grail) to test virtually
+- most likely is maybe drug interactions, e.g. one to one molecules or one to
+  many, not simulating entire system
+
+protein folding
+- predicting/computing 3d structure, critical for identifying interactions,
+  bonding sites, etc
+- another holy grail, but way too big a problem
+
+identifying all expressed proteins
+- so far we have 1k/30k
+- human proteome project: computationally enumerate them all?
