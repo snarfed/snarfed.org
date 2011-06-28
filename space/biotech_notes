@@ -1,3 +1,5 @@
+lunch w/maureen hillenmeyer and lucy southworth page, 6/27/2011
+===
 genomics: still interesting!
 - SNPs are single bases, but variations are often much bigger than that
 - finding genes and gene patterns that correlate
@@ -41,3 +43,42 @@ protein folding
 identifying all expressed proteins
 - so far we have 1k/30k
 - human proteome project: computationally enumerate them all?
+
+
+
+lunch w/dan chao, 6/28/2011
+===
+neuropace: makes neural devices that prevent epileptic seizures
+- detect early signs of seizures (neurological patterns of brain waves), sends
+  electrical "tickle" that stops it before it starts.
+- can record and upload lots of neurological data based on heuristics, e.g. at
+  certain time every day, around a specific kind of pattern, etc.
+- location in brain: epilepsy is focused but varies by patient, so different
+  place depending on the person
+- looking into other applications: parkinson's, etc. new approvals for each
+  application but easier based on generic results (e.g. safety) from previous
+  approvals.
+
+side project: better, less invasive catheter for babies
+- got NIH grant in dec 2010, waiting on budget to get funds
+
+big picture interest: cost of health care
+- high and rising in developed nations. not sustainable!
+- expensive, targeted treatments (e.g. neuropace, narrow cancer drugs) not the
+  way forward
+
+micro-ecosystems inside big health care institutions
+- e.g. kaiser, VA
+- lots of longitudinal data on patients: conditions they had, treatments,
+  results. valuable for data mining.
+- nothing public or semi-public like pubmed though
+
+jean (friend at mckinsey)'s project: global database of health care practices
+- started with individual studies and projects
+- now looking to build an ongoing, self-sustaining database
+
+fda approval: bane of industry
+- too costly, slow, erratic (unqualified reviewers), long iteration time, etc
+- also, business model and employment structure doesn't fit cyclical
+  development. right now mostly full time employees, but more modular structure
+  like hollywood would fit better.
