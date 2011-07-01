@@ -57,18 +57,17 @@ Here's Emacs Lisp that sets this up:
     (defadvice server-process-filter (before handle-remote-emacsclient-file activate)
       "Detect remote emacsclient and inject the tramp '/host:' prefix."
       (if (tramp-handle-file-remote-p default-directory)
-          (let* ((message (ad-get-arg 1))
-                 (absolute (and (string-match "-file \\([^ ]+\\)" message)
-                                (file-name-absolute-p (match-string 1 message))))
-                 (tramp-prefix (tramp-make-tramp-file-name tramp-current-method
-                                                           tramp-current-user
-                                                           tramp-current-host
-                                                           nil))
-                 (dir (if absolute nil
-                        (with-parsed-tramp-file-name default-directory parsed
-                          parsed-localname))))
-            (ad-set-arg 1 (replace-regexp-in-string "-file "
-                            (concat "-file " tramp-prefix dir) message)))))
+          (with-parsed-tramp-file-name default-directory parsed
+            (let* ((message (ad-get-arg 1))
+                   (absolute (and (string-match "-file \\([^ ]+\\)" message)
+                                  (file-name-absolute-p (match-string 1 message))))
+                   (tramp-prefix (tramp-make-tramp-file-name parsed-method
+                                                             parsed-user
+                                                             parsed-host
+                                                             nil))
+                   (dir (if absolute nil parsed-localname)))
+              (ad-set-arg 1 (replace-regexp-in-string "-file "
+                              (concat "-file " tramp-prefix dir) message))))))
     
     (defun ssh-shell (host bufname)
       "SSH to a remote host in a shell-mode buffer using TRAMP."
