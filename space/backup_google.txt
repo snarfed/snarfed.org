@@ -15,9 +15,11 @@ Usage:
 
     backup_google.sh EMAIL PASSWORD DIR
 
-Note that there's no official API for Tasks, so this script uses the
-[cleanest alternative available](http://privacylog.blogspot.com/2010/09/updated-google-tasks-api.html)
-at the moment. Thanks,
+Note that this was written before the
+[Tasks API](http://googleappsdeveloper.blogspot.com/2011/05/getting-organized-with-tasks-api.html)
+was available, so it used the
+[cleanest alternative](http://privacylog.blogspot.com/2010/09/updated-google-tasks-api.html)
+available at the time. Thanks,
 [Full Decent](http://www.blogger.com/profile/12013205951793960304)!
 
 Also, if your account has
