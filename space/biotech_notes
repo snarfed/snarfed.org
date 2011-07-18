@@ -10,6 +10,8 @@ i'm including a few notes i typed up. feel free to add anything, and thanks agai
 
 lunch w/maureen hillenmeyer and lucy page southworth, 6/27/2011
 ===
+at stanford genetics center, maureen's working on synthetic bio
+
 genomics: still interesting!
 - SNPs are single bases, but variations are often much bigger than that
 - finding genes and gene patterns that correlate
@@ -58,7 +60,7 @@ identifying all expressed proteins
 
 lunch w/dan chao, 6/28/2011
 ===
-neuropace: makes neural devices that prevent epileptic seizures
+at neuropace: makes neural devices that prevent epileptic seizures
 - detect early signs of seizures (neurological patterns of brain waves), sends
   electrical "tickle" that stops it before it starts.
 - can record and upload lots of neurological data based on heuristics, e.g. at
@@ -92,3 +94,95 @@ fda approval: bane of industry
 - also, business model and employment structure doesn't fit cyclical
   development. right now mostly full time employees, but more modular structure
   like hollywood would fit better.
+
+
+
+dinner w/steph mycclymont, 7/14/2011
+===
+at ucsf diabetes center
+- basic research on autoimmune disorders
+- type 1 diabetes is main application, MS another
+- looks at proteins expressed by certain cells
+
+her center is developing a cell treatment, looking for broken T cells, fixing
+them and reinserting them into patients
+
+bio researchers generally think computational has promise, more funding going
+into interdisciplinary
+
+one common problem with merging existing data is lack of calibration of
+measurements across device types and labs. an automated way of normalizing
+after the fact would be nice.
+
+biomarkers very useful, common to lots of treatments, research. could be
+useful for identifying subpopulations for trials, etc.
+
+global databases for biomarkers or proteins would definitely be useful.
+
+agrees that there's a lot left to do in genetics
+- e.g. whole gene sequencing
+- researchers have identified key genes in certain diseases by comparing genes
+-   of family members, one who has a given disease vs another who doesn't
+- expects whole genome sequencing to become more common
+
+epigenetics
+- extra hereditary information encoded in histome proteins, which pack dna
+- some dna sequences are "compacted," ie packed tighter away and less used or
+    unused
+
+agrees that processing public datasets to try to direct drug development could
+be promising, not a lot of it going on yet. example: leukemia drug from pfizer
+right now. certain kinase protein causes cells to become cancerous. they found
+a certain part of that kinase that they could develop a drug to target and
+inhibit. promising for other cancers, but the vulnerable part of the protein
+is kind of unique, so they haven't yet found similar vulnerable parts in other
+cancer-causing proteins.
+
+
+
+lunch w/jed pitera, 7/15/2011
+==
+at ibm research almaden, used to do protein folding and related simulation,
+now on materials science and polymers
+
+interesting research right now on whole cell modeling, fleshing out all of the
+mechanisms involved. long term, ambitious, projects focus on individual parts
+right now. one problem is it doesn't necessarily help you so much with larger
+organisms, since the same kind of cell may have many different states (active
+or quiscient, etc), and it's not obvious how to get that set of states.
+
+protein structure is also useful, most proteins have one or a few different
+structures (ie folding patterns), but some switch between a few structures,
+and are sometimes unstructured, and each structure has a different function.
+
+systems bio was modeling with PDEs, etc, didn't work so well
+
+it's also doing experiments en masse - set up and then measure a bunch of
+bondings, expressions, etc in a single pass, then measure everything after the
+fact and see what happened and what didn't
+
+epigenetics: methylation levels of genes can turn production on/off,
+  change rate, sometimes even the protein's structure itself, by affecting
+  stages of the protein creation process
+
+drug discovery/development pipelines: once you have a target, figuring out
+what kind of molecule to build to address that target is pretty
+straightforward. *however*, identifying targets is much less so. current
+techniques:
+- historical. find someone who's been working on that disease or condition for
+  a while, they will already have it narrowed down
+- educated guess and check. look for other gene sequences or molecules that
+  look similar to a known baseline, then use those as candidates
+
+EHR aggregation and data mining is promising, example datasets include kaiser,
+VA, military health care. identify signals like doctor decisions, etc, then
+measure against outcomes and care success rates.
+
+NCI: national cancer institute has what amounts to a drug pipeline for hire,
+something like pro bono/self-publishing drug discovery, e.g. for orphaned
+diseases or other people who aren't big pharma and can't keep the entire
+pipeline busy permanently themselves. they see lots of people come in with
+targets, they'd be good to talk to.
+
+synthetic bio is interesting, but more on the engineering side, e.g. energy,
+drug manufacturing (use e. coli, more efficient than growing whole plants)
