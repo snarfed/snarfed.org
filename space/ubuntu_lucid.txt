@@ -301,13 +301,17 @@ hibernate, since they try to suspend anacron first.
 
   * Seeing this error when you try to take a screenshot with
   [ImageMagick](http://www.imagemagick.org/)'s
-  [import](http://imagemagick.org/script/import.php)?
+  [`import`](http://imagemagick.org/script/import.php)?
 
         import: unable to read X window image `':
         Resource temporarily unavailable @
         xwindow.c/XImportImage/5020.
 
-  You can work around it with the
+  The program you're trying to screenshot may have
+  [multiple windows open with the same window id](http://ubuntuforums.org/showthread.php?t=893506).
+  Try temporarily closing the other windows.
+
+  Alternatively, try the
   [`-frame`](http://imagemagick.org/script/command-line-options.php#frame_import_)
   flag, which tells `import` to include the X window frame in the imported
   image. No clue why that works. More info in
