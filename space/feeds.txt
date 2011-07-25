@@ -22,6 +22,51 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
   | grep -v authkey \
   | grep -v facebook.com \
   | grep -v blog.myspace.com
+
+
+twitter
+===
+they dropped most of their rss support recently. :/
+
+i used to use twiterlist2rss.appspot.com to get an rss feed of my list, e.g.:
+http://twiterlist2rss.appspot.com/snarfed_org/lists/feed/statuses.rss
+
+i then followed the bottom of this post:
+http://davidbcalhoun.com/2011/the-incredibly-painful-way-of-getting-an-rss-feed-of-a-twitter-list
+
+to subscribe to this feed URL:
+http://api.twitter.com/1/snarfed_org/lists/feed/statuses.atom
+
+
+facebook
+===
+they dropped most of their rss support recently. :/
+
+this still works:
+
+http://www.kristi-barrow.com/facebook-rss-feeds-what-is-available/
+
+in short, log in, then go to http://www.facebook.com/posted.php (or click on
+"More" on the left, then click on "Links"). take the "My Friends Links" rss feed
+link, will look like this:
+
+http://www.facebook.com/feeds/share_friends_posts.php?id=XXX&key=YYY-&format=rss20
+
+convert to this:
+
+http://www.facebook.com/feeds/friends_status.php?id=XXX&key=YYY&format=rss20&flid=563724753913
+
+flid is the friend list id, can get on friend list page by scraping html?
+
+
+filtered game industry feeds
+==
+i started with re.rephrase.net, which worked for a while, e.g.:
+http://re.rephrase.net/filter/?feed=http%3A%2F%2Fwww.gamesindustry.biz%2Frss%2Fgamesindustry_news_feed.rss&filter=title%3AArticle+OR+title%3AEditorial
+
+but it eventually gets flaky and stops filtering gamasutra so i switched to
+feedsifter:
+http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analysis&report
 -->
 
 
