@@ -1,0 +1,28 @@
+Facebook app for OStatus and Salmon
+
+These days, social networks are sprouting like weeds. I don't know about you,
+but I groan a bit every time I get a burst of invitations from the latest
+network du jour. I usually ignore them, but I know I'm missing out on a few good
+conversations and early adopter friends. I've always wanted to have just one
+profile and friend list, in one place, and use that to connect to people on any
+other social network. Email already does this; why can't the rest?
+
+The short answer is, they can. The [OStatus]() federation protocol is the
+leading mechanism right now. It hasn't been adopted by any of the majors yet,
+but similar to [OpenID](http://openid.net/) and [OAuth](http://oauth.net/), I
+expect many will, gradually, over time.
+
+Some won't, though. [Facebook](http://facebook.com/)'s track record with open
+standards and data
+[is](http://www.readwriteweb.com/archives/facebook_shouldnt_fear_opensocial.php)
+[mixed](http://www.thedrum.co.uk/news/2011/07/11/23472-facebook-sets-up-roadblocks-to-stop-users-exporting-friends-to-google-/)
+[at](http://opencompute.org/)
+[best](http://developers.facebook.com/opensource/),
+and their reputation there isn't much better. However, their
+[API](http://developers.facebook.com/docs/opengraph/) is comprehensive enough
+that third party apps could easily implement bridges themselves.
+
+
+[few](http://www.abstractioneer.org/)
+[other](http://www.onebigfluke.com/)
+[people](http://sporkmonger.com/)
