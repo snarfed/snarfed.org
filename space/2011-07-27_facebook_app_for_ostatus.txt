@@ -23,11 +23,10 @@ standards and data
 [is](http://www.readwriteweb.com/archives/facebook_shouldnt_fear_opensocial.php)
 [mixed](http://www.thedrum.co.uk/news/2011/07/11/23472-facebook-sets-up-roadblocks-to-stop-users-exporting-friends-to-google-/)
 [at](http://opencompute.org/)
-[best](http://developers.facebook.com/opensource/),
-and their reputation isn't much better. Their
-[API](http://developers.facebook.com/docs/opengraph/), however, is comprehensive
-enough that third party apps could easily implement bridges and even implement
-fully federated protocols like OStatus.
+[best](http://developers.facebook.com/opensource/), and their reputation isn't
+much better. Their [API](http://developers.facebook.com/docs/opengraph/),
+however, is comprehensive enough that third party apps could easily implement
+bridges and even fully federated protocols like OStatus.
 
 <a href="http://facebook.com/">
   <img class="left" src="facebook_f_logo.png"></a>
