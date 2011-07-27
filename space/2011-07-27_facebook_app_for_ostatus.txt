@@ -1,0 +1,52 @@
+Facebook app for OStatus
+
+<a href="http://ostatus.org/about">
+  <img class="right" src="ostatus.png"></a>
+
+Social networks are sprouting like weeds. I don't know about you, but I groan
+every time I get a burst of invitations from the latest network du jour. I
+usually ignore them, but I know I'm missing out on good conversations with my
+early adopter friends.
+
+I've always wanted just one profile and friend list, in one place, to connect to
+friends anywhere. Email already does this; why can't social networking?
+
+The short answer is, it can. The [OStatus](http://ostatus.org/about) suite of
+federation protocols ([Salmon](http://salmon-protocol.org/),
+[ActivityStreams](http://activitystrea.ms/), etc.) is the leading contender
+right now. It hasn't been adopted by any of the majors yet, but I expect many
+will gradually start supporting it, similar to [OpenID](http://openid.net/) and
+[OAuth](http://oauth.net/).
+
+Some won't, though. [Facebook](http://facebook.com/)'s track record with open
+standards and data
+[is](http://www.readwriteweb.com/archives/facebook_shouldnt_fear_opensocial.php)
+[mixed](http://www.thedrum.co.uk/news/2011/07/11/23472-facebook-sets-up-roadblocks-to-stop-users-exporting-friends-to-google-/)
+[at](http://opencompute.org/)
+[best](http://developers.facebook.com/opensource/),
+and their reputation isn't much better. Their
+[API](http://developers.facebook.com/docs/opengraph/), however, is comprehensive
+enough that third party apps could easily implement bridges and even implement
+fully federated protocols like OStatus.
+
+<a href="http://facebook.com/">
+  <img class="left" src="facebook_f_logo.png"></a>
+
+Given that, it's odd that I
+[can't find anyone who's done this yet](http://www.google.com/search?q=facebook+"ostatus").
+I can think of a few reasons, namely the
+[ban hammer](http://www.webpronews.com/facebook-ban-bot-like-google-panda-update-for-facebook-2011-06)
+and the fact that individual users would need to opt in. Is there a bigger
+reason I'm missing? Are the stakeholders pushing for official support instead,
+or focusing on more feasible targets, or just too busy?
+
+I've talked to a
+[number](http://www.abstractioneer.org/)
+[of](http://www.onebigfluke.com/)
+[people](http://sporkmonger.com/) about this, and they don't think it's crazy.
+I'm not trying to pick on Facebook, either. I'd love to do this for other major
+sites like [Twitter](http://twitter.com/) and
+[Google+](https://plus.google.com/) too.
+
+I've started hacking on this a bit in my spare time. [Drop me a line](/about) if
+you're interested in helping!
