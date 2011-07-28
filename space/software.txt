@@ -30,6 +30,9 @@ feature.
   * [openid-test](http://code.google.com/p/openid-test/) is an
     interoperability test suite for [OpenID](http://openid.net/).
 
+  * [PyBlosxom](http://pyblosxom.bluesock.org/) is a lightweight weblog
+platform, based on [Blosxom](http://blosxom.com/) and written in Python.
+
   * An [OpenID comments plugin for PyBlosxom](pyblosxom_openid_comments).
 
   * An [OpenID server plugin for PyBlosxom](pyblosxom_openid_server).
@@ -137,9 +140,6 @@ filenames and files people send me from other operating systems.
 
   * [download_picasa_album.sh](download_picasa_album) downloads entire
 [Picasa Web](http://picasaweb.google.com/) photo albums.
-
-  * [PyBlosxom](http://pyblosxom.bluesock.org/) is a lightweight weblog
-platform, based on [Blosxom](http://blosxom.com/) and written in Python.
 
   * [simonitor](simonitor) screen scrapes [simon.com](http://simon.com/)
 to fetch the available balance on one or more Simon gift cards.
