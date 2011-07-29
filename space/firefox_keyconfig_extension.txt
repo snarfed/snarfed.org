@@ -43,10 +43,13 @@ Here's a list of the keyboard shortcuts I've modified with keyconfig:
   I use this in my edit/compile/test loop for
   [developing userstyles](my_stylish_userstyle_workflow). Code:
   <pre>
-    stylishOverlay.turnOnOff(
-      !Components.classes["@mozilla.org/preferences-service;1"].getService(
-       Components.interfaces.nsIPrefBranch).getBoolPref("extensions.stylish.styleRegistrationEnabled"))
+stylishOverlay.turnOnOff(
+  !Components.classes["@mozilla.org/preferences-service;1"].getService(
+   Components.interfaces.nsIPrefBranch).getBoolPref("extensions.stylish.styleRegistrationEnabled"))
   </pre>
 * F9 to focus the page. Helpful when you try to scroll the page, but the focus
   is on the URL bar or elsewhere. Code: `_content.focus();`
-* TODO: key to reload the proxy.  
+* Shift-F1 to reload the proxy:
+  <pre>
+Components.classes['@mozilla.org/network/protocol-proxy-service;1'].getService().reloadPAC();
+  </pre>
