@@ -289,7 +289,7 @@ hibernate, since they try to suspend anacron first.
 
         SUSPEND_MODULES="XXX"
 
-    where XXX is the driver name. (Mine is `ifwlagn`.) Then, suspend and
+    where XXX is the driver name. (Mine is `iwlagn`.) Then, suspend and
     resume; if that doesn't work, reboot.
     
     Colleagues suggested this might be related to
