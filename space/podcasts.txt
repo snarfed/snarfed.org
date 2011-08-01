@@ -39,9 +39,6 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
 * [GameSpot presents The HotSpot](http://www.gamespot.com)
 (_[subscribe](http://www.gamespot.com/podcast/podcast.xml)_) 
 
-* [GDC Radio](http://www.gdcradio.net/)
-(_[subscribe](http://feeds.feedburner.com/GDCRadio)_) 
-
 * [NPR: Hourly News Summary Podcast](http://www.npr.org/templates/topics/topic.php?topicId=1001)
 (_[subscribe](http://www.npr.org/rss/podcast.php?id=500005)_) 
 
@@ -89,6 +86,9 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
 
 
 *Retired:* <a name="retired"></a>
+
+* [GDC Radio](http://www.gdcradio.net/)
+(_[subscribe](http://feeds.feedburner.com/GDCRadio)_) 
 
 * [1UP Yours](http://1upyours.1up.com)
 (_[subscribe](http://www.1up.com/flat/Podcasts/podcasts.xml)_) 
