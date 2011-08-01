@@ -8,6 +8,18 @@
  * http://mattconstantine.com/mg .
  *
  * Changelog:
+ * 0.8 8/1/2011
+ * Significant redesign to condense and improve usability, especially in smaller
+ * or narrow browser windows.
+ * - moved labels above conversation/thread view
+ * - condensed top search box area
+ * - made widths all auto so that everything follows your browser's width
+ * - bug fix: don't hide To and CC labels in compose area
+ * - hide new "Import mail & contacts" link
+ * - hide Sent Mail and All Mail labels
+ * selector fixes:
+ * - logo
+ * - re-hide stars
  * 0.7 5/13/2011
  * selector fixes:
  * - header/footer buttons in list and conversation view
@@ -50,18 +62,24 @@
  * *descendant*, ie any depth, not just direct child.
  */
 div#gbz,                  /* header left side links (Mail, Calendar, etc. */
-ol.gbtc > li:nth-child(1),/* header right side user name drop-down */
+ol.gbtc > li,             /* header (settings button is special-cased below) */
 div.nH.l2.ov,             /* footer */
 td.GcwpPb-Pkt3ef.GcwpPb-uq0Mrf, /* Search Mail, Search the Web buttons */
 td.GcwpPb-Pkt3ef.GcwpPb-txTtjf, /* Show search options, Create a filter links */
+div.GcwpPb-MEmzyf.GcwpPb-bEO5kc, /* Import mail & contacts link */
+div.nH.GcwpPb-Z8OBDd div.nH.oy8Mbf.nn, /* GMail logo */
+div.b8.UC,                /* weird blank horizontal bar below search box */
 
 /* Left side */
-div[id=":rk"],            /* GMail logo */
 div.n6,                   /* # more labels drop-down */
+div.nL.CZtFXe,            /* per-label right side color square drop-down menus */
 div.T0.pp,                /* Chat link */
 div.CX.pp,                /* Mail, Contacts links */
 div.T4.pp,                /* Tasks link */
 div.z0,                   /* Compose mail button */
+div.LrBjie > div.TK > div.TO:nth-child(2),  /* Sent Mail */
+div.LrBjie > div.TK > div.TO:nth-child(4),  /* All Mail */
+div.LrBjie > div.TK > div.TO:nth-child(5),  /* Trash */
 div.LrBjie > div.TK > div.TO > div.TN .nU,  /* Inbox, Sent Mail, Drafts */
 
 /* List view */
@@ -69,7 +87,8 @@ div.VP5otc-HT6HAf.J-J5-Ji, /* header and footer buttons (also applies to conv vi
 td.mgpAx,                 /* vertically shrink header/footer gray bar; external */
 div.nH.vpUyzb.Cr,         /* header: "1-10 of 100" (internal) */
 div.vpUyzb.J-J5-Ji,       /* header: "1-10 of 100" (external) */
-img.EqK8f,                /* per thread stars */
+img.EqK8f,                /* per thread stars (external) */
+img.tk3N6e-KT-JX,         /* per thread stars (internal) */
 
 /* Conversation view */
 div.iG,                   /* header and footer: "1-10 of 100, Older >" */
@@ -90,7 +109,7 @@ span.jNNpPe,             /* formatting toolbar */
 td.fA,                   /* Check Spelling link */
 span.es.el,              /* Rich formatting link */
 span.b2,                 /* Insert span in Insert Invitation */
-span.el.ou,              /* Invitation link in Insert Invitation */
+span[id=":11x"],         /* Invitation link in Insert Invitation */
 div.eh,                  /* top buttons (Send, Save Now, Discard, ...) */
 
 /* bottom buttons (Send, Save Now, Discard)
@@ -103,28 +122,47 @@ noop_end_selector_list
   display: none !important;
 }
 
-
 /* A whitelist of exceptions that shouldn't be hidden.
  */
 div#guser > nobr > a[href="https://mail.google.com/mail/u/0/?ui=2&shva=1#settings"], /* Settings link */
-div.LrBjie > div.TK > div.TO > div.TN .nU.n1,  /* Inbox, Sent Mail, Drafts *when they have messages* */
+div.LrBjie > div.TK > div.TO > div.TN .nU.n1,  /* Inbox, Drafts *when they have messages* */
+ol.gbtc > li:last-child,             /* top-level header settings button */
 noop_end_selector {
   display: inline !important;
 }
 
-
-/* Settings link */
-div#guser > nobr > a[href="https://mail.google.com/mail/u/0/?ui=2&shva=1#settings"] {
-  opacity: .2 !important;
+/* Top level container and search box, labels, and message/conversation view
+ * containers. This removes the minimum widths and makes them adjust to the
+ * browser's width. */
+body > div > div.nH, div.nH.nn {
+  width: auto !important;
 }
 
+/* Top google-wide header */
+div.nH.oy8Mbf.qp {
+  display: inline;
+  float: right;
+}
+
+/* Top header buttons */
 #gb, #gbx1, #gbx2, #gbx3, #gbx4, .gbvt, .gbgt, .gbtcb, .gbtb2, .gbmc, .gbts, #gbs {
   background-color: transparent !important;
   border: none !important;
 }
 
-#gbx1, #gbx2, #gbx3, #gbx4 {
-  background-image: none !important;
+/* Labels container */
+div.nH.oy8Mbf.nn {
+  float: none !important;
+  margin-top: 5px;
+}
+
+div.n3 * {
+  display: inline !important;
+}
+
+/* Individual labels */
+div.XQRo3.gu78Dc {
+  margin: 0 !important;
 }
 
 /* lines between each thread in list view */
@@ -137,7 +175,7 @@ td.oZ-x3.xY {
   background-image: none !important;
 }
 
-/* hide highlighted background for Inbox/Sent Mail/Drafts when they're currently
+/* hide highlighted background for Inbox/Drafts when they're currently
  * viewed. only do that for my own labels. */
 div.LrBjie > div.TK > div.TO.nZ {
   background-color: transparent !important;
