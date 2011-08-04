@@ -1,0 +1,147 @@
+Why I'm weird about privacy
+
+_[TL;DR](http://en.wikipedia.org/wiki/Wikipedia:Too_long;_didn't_read) version:
+Like everyone, I want to express myself, and I want to control information that
+describes me. That traditionally involves people, but now organizations have
+data about me too. Controlling that isn't easy, but I'm stubborn, so I try
+anyway._
+
+<a href="http://icanhascheezburger.com/2009/09/22/funny-pictures-teh-pot/">
+  <img class="shadow right" src="privacy_lolcat.jpg" /></a>
+
+If you know me, you already know I'm weird about privacy. When I explain it to
+someone new, they often say, "That's great! More people should pay attention to
+that." Eventually, they learn about the
+[kinds of things I keep private](privacy_through_prepaid_credit_cards) and the
+[kinds of things I don't](/ryan.barrett.name/bigbrother/), and they get
+confused. The distinction isn't always obvious, even to me. I'm not evangelizing -
+I just do it for myself - but I'd still like to explore the underlying reason,
+if only out of curiosity.
+
+I'll start by listing a few things that _aren't_ the reason. Credit rating.
+Identity theft. Direct marketing. Safety. Job hunting. Dating. Illegal/illicit
+activities. Shame. Anxiety. Running for elected office.
+[Something to hide.](http://docs.law.gwu.edu/facweb/dsolove/Nothing-to-Hide/)
+These are all common reasons people care about privacy, but not me.
+
+I've narrowed my reasons down to three things: _self expression_, _control_, and
+_data_.
+
+First, self expression. We all want to tell people who we are. We want to assert
+that we are this, that we are not that. It reaffirms that we exist, that we're
+individuals, that we mean something. It's human nature.
+
+Much has been made of how social networks enable this, but they're just the
+latest means to the end. The clothes you wear, the things you say, the people
+you hang out with, and the myriad ways you spend your time all form an outward
+image for other people's consumption. They see what you do, and it molds who
+they think you are. It may be selective and self-conscious, but you're almost
+always on display for _someone_.
+
+<img class="shadow left" src="beer_glasses_happy_sad.jpg" />
+
+I may be an introvert, but I care about this as much as the next person. I want
+to express myself too, to assert who I am and who I'm not. Writing on
+[this web site](http://snarfed.org/) is one way I do that, which can be
+confusing. If I'm so big on privacy, why do I post [so much about myself](about)
+here and elsewhere online?
+
+Well, because I _control_ what I post. Like all communication, self expression
+depends heavily on control, and control is another natural human urge in its own
+right. The simple things, the things I express myself, are easy. I choose to say
+this, not wear that, buy this, not vote for that. All of that is comfortably
+under my control.
+
+Unfortunately, other things aren't. I may not have chosen to stumble on that
+curb, but I still did, and people still saw it. Am I tall? Outgoing? A good
+dancer? Who are my family and friends? What do they say about me when I'm not
+around? Am I having a bad hair day? All of that is inadvertent, implicit, or
+otherwise largely out of my control, but it still contributes to other people's
+mental images of me...
+
+...which brings me to _data_. For a long time, people had a monopoly on mental
+images of other people. In the last few centuries, organizations like companies
+and governments have started building their own profiles of people. My bank
+knows that I have a certain income (direct deposit), roughly where I live (ATM
+withdrawals), and who I invest with (transfers to my brokerage). That's not very
+extensive, but it's something, and it can get much more detailed. Other
+organizations know who you've called, where you've been, and which web sites
+you've visited, among other things.
+
+<img class="shadow right" src="airport_security_wand_boy.jpg" />
+
+Individual organizations like my bank may be limited to a narrow perspective,
+but if they partner with my telephone company, for example, or my health care
+provider, they can learn a lot more. This kind of data mining and profiling
+isn't news, and I don't think it's fundamentally immoral or problematic,
+especially given [who I work for](http://google.com/), but it does raise a
+dilemma. I'm human, so I have a natural urge to control information about me. I
+know how to control what I explicitly disclose, but I also want to control the
+_implicit_ information I create as a by-product of living my day to day life,
+and thus control the profiles of me that organizations build.
+
+Why do I care what organizations think about me at all? It comes back to self
+expression and control. I don't need them to think of me in any specific way,
+but I also don't want them to think the _wrong_ thing about me, or more to the
+point, something I don't entirely control. I don't have anything concrete to
+hide, but
+[that doesn't matter](http://docs.law.gwu.edu/facweb/dsolove/Nothing-to-Hide/).
+My urge to control things, in this case information about me, is an intrinsic
+part of human nature. It's not a means to an end, it's an end in itself.
+
+So, can I control this data? To a large degree, yes. First, I can try not to
+leave that bread crumb trail at all. I buy most things with cash instead of
+credit or debit cards. I don't give my name, address, or phone number unless
+it's absolutely necessary, and often not even then. I cover the
+[VIN visible through my car's windshield](http://www.ehow.com/how_7541825_check-classic-cars-vin-number.html).
+I block [cookies](http://en.wikipedia.org/wiki/HTTP_cookie) by default.
+
+<!--
+[HIPAA](http://www.hhs.gov/ocr/privacy/hipaa/understanding/) was passed just
+before I signed up for my first employee health care plan, so I bullied them
+into assigning me a unique patient ID number instead of my SSN, the pre-HIPAA
+default.
+
+I do give out information sometimes! I'll fill out surveys and other marketing
+research occasionally, or even more rarely write to customer service, if I feel
+strongly. In general though, ...
+-->
+
+<img class="shadow left" src="privacy_head_sock.jpg" />
+
+When I can't avoid leaving a trail, I misdirect. I've developed a habit of
+[giving fake names and addresses](faking_out_address_and_credit_card_forms), or
+when the name needs to match my ID - hi, [TSA!](http://www.tsa.gov/) -
+misspelling it. If I absolutely need a credit card, I use an
+[anonymous prepaid card](privacy_through_prepaid_credit_cards). I use a prepaid
+cell phone plan with no last name or address. I title my cars and real estate in
+the name of a
+[New Mexico LLC](http://www.howtobeinvisible.com/index.cfm/page/LLCs/) which
+can't be traced to me.
+
+Is there any practical motivation for all this? Not really. It doesn't get me a
+higher credit rating, or a better reputation, or frequent flier miles, or
+[more followers on Twitter](http://twitter.com/snarfed_org). It does help
+prevent identity theft, and maybe some legal liability, but there are much
+better ways to do that.
+
+It's actually worse. My
+[prepaid credit cards](privacy_through_prepaid_credit_cards) aren't reloadable,
+so I'm constantly buying new ones. I have to keep track of which fake names I've
+used where. "Official" activities like voting, renewing my driver's license, and
+buying real estate are fragile, Rube-Goldberg-meets-MC-Escher balancing acts.
+
+The sad truth is, the only real motivation is the principle of the thing. Like
+many engineers, I'm burdened with an inconvenient personality quirk: if
+something is theoretically right, I pursue it, doggedly, even if it's annoying,
+unrealistic, or downright painful.
+
+<a href="http://icanhascheezburger.com/2011/07/26/funny-pictures-chemistry-cat-science-puns/">
+  <img class="shadow right" src="chemistry_cat.jpg" /></a>
+
+To recap: I'm human, so I want to express myself and control information that
+describes me. Organizations now have data about me, so I want to control that
+too. That's not easy to do in practice, but my personality makes me try anyway.
+
+
+_Thanks to friends and family for reading early drafts of this essay._
