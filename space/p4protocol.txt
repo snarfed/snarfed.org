@@ -1,6 +1,6 @@
 P4 Protocol Specification v0.2
 
-Version 0.2, April 6 2002. See [P4](p4) for background.
+Version 0.2, April 6 2002. Also see [P4](p4) and [P4 Proposal](p4proposal).
 
 [Ken Ashcraft](https://profiles.google.com/kashcraft/),
 [Ryan Barrett](http://snarfed.org/),
@@ -595,11 +595,11 @@ accesses the same public key database. Possibilities include a single
 Certificate Authority, a hierarchical Certificate Authority tree, or a web of
 trust similar to PGP.
 
-TODO: [reference PKI doc here]
-For the purposes of CS194, we will implement a stub PKI and support for this PKI
-in our client. This is described in another document [reference PKI doc here].
-This PKI will be intentionally insecure. However, P4 is designed so that if a
-secure PKI is used, then the entire system is secure.
+TODO: [reference PKI doc here] For the purposes of
+[CS194](http://cs194.stanford.edu/), we will implement a stub PKI and support
+for this PKI in our client. This is described in another document
+[reference PKI doc here]. This PKI will be intentionally insecure. However, P4
+is designed so that if a secure PKI is used, then the entire system is secure.
 
 
 <a name="Plugin_ID_Management"></a>
@@ -612,11 +612,11 @@ installed. We believe that there will be a low incidence of collisions. When
 there are collisions, it is the plugin developers' responsibility to resolve
 them.
 
-For the purposes of CS194, we will build a web site with the official,
-"sanctioned" list of plugins and IDs. However, clients are not required to
-access this list. Furthermore, we provide the list only as a convenience. We
-believe that the system can be consistent and self-regulating without such a
-list.
+For the purposes of [CS194](http://cs194.stanford.edu/), we will build a web
+site with the official, "sanctioned" list of plugins and IDs. However, clients
+are not required to access this list. Furthermore, we provide the list only as a
+convenience. We believe that the system can be consistent and self-regulating
+without such a list.
 
 
 

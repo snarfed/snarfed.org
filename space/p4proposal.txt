@@ -1,62 +1,35 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+P4 Proposal
 
-<html>
-
-<head>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8"></meta>
-<title>ryan barrett - cs194 project proposal</title>
-</head>
+[CS194](http://cs194.stanford.edu/) Project Proposal    
+[Ryan Barrett](http://snarfed.org/), April 9 2002  
+Also see [P4](p4) and [P4 Protocol Specification](p4protocol).
 
 
-<body>
-
-<p class="non-text">
-<a href="p4"> back to p4 </a>
-</p>
-
-<p class="non-text">
-CS194 Project Proposal <br />
-<a href="http://snarfed.org/">Ryan Barrett</a> <br />
-4/9/2002 <br /><br />
-</p>
-
-<h2> Toward an Application-Independent Distributed Network Platform </h2>
+### Toward an Application-Independent Distributed Network Platform
 
 
-<h2> ABSTRACT </h2>
-
-<p>
 We propose a distributed, peer-to-peer network platform with an extensible
 plugin architecture. This will allow developers to build their own
 network-aware applications without having to recreate middle-level network
 services. We plan to deliver a network client as well as at least one, and
 possibly two plugins: a networked DJ and an anonymous web browsing proxy.
-</p>
 
-<p>
 The unique advantages of a distributed network architecture are flexibility,
 fault-tolerance, and lawyer resistance. The platform will support both
 broadcast and direct send/receive operations. Users will be separate from
 hosts, so that a user can log onto the network from any computer. Both
 authentication and data encryption will be built in from the ground up.
-</p>
 
 
-<h2> CONTENTS </h2>
+  * [Introduction](#Introduction)
+  * [Proposal](#Proposal)
+  * [Related Work](#Related_Work)
+  * [Usage Scenarios](#Usage_Scenarios)
+  * [Known Issues](#Known_Issues)
 
-<p class="non-text">
- 1) Introduction <br />
- 2) Proposal <br />
- 3) Related Work  <br />
- 4) Usage Scenarios <br />
- 5) Known Issues  <br />
-</p>
+<a name="Introduction"></a>
+### Introduction
 
-
-<h2> INTRODUCTION </h2>
-
-<p>
 Distributed networks, especially peer-to-peer networks, are currently in vogue.
 Akamai has built a billion dollar company around a distributed content delivery
 platform. The peer-to-peer Gnutella network is the early successor to Napster's
@@ -64,9 +37,7 @@ throne, due in no small part to the interoperability of different clients that
 implement its protocol. The upcoming Emerging Technology conference, hailed as
 &quot;one of the industry's best trend-setters and predictors, bar
 none...&quot; picked peer-to-peer networking as its theme this year.
-</p>
 
-<p>
 Many people see the motivations for peer-to-peer networks as questionable.
 While this can't be quantified, it is evident that two of the primary
 attractions of peer-to-peer networks are easy (and often illegal) file sharing
@@ -75,9 +46,7 @@ viable alternative to more traditional options like server-client,
 hierarchical, and ring networks. Furthermore, peer-to-peer is not new. As far
 back as ARPANET, low-level routing in the Internet has been performed with
 distributed algorithms and a peer-to-peer architecture.
-</p>
 
-<p>
 The original goal for the Internet's core protocols (IP, UDP, and TCP) was to
 provide fault-tolerant per-hop and end-to-end network functionality. They have
 accomplished this goal admirably. However, they provide only low-level
@@ -88,12 +57,11 @@ services like instant messaging and file sharing, applications have been forced
 to create their own middle-level protocols. Possibly hundreds or even thousands
 of programmer-years have been spent duplicating these kinds of services. We
 hope to remedy this.
-</p>
 
 
-<h2> PROPOSAL </h2>
+<a name="Proposal"></a>
+### Proposal
 
-<p>
 We propose to create a generic distributed network platform. The most salient
 feature of the platform is its plugin architecture. We will provide application
 developers with a small number of basic network operations such as direct send
@@ -103,9 +71,7 @@ developers will be able to create network-aware applications more quickly. More
 importantly, we hope that this will encourage developers to move toward
 standard middle-level services and platforms (like ours) instead of recreating
 these services over and over.
-</p>
 
-<p>
 We also propose to deliver at least one substantial plugin on this platform. We
 plan to create a &quot;networked DJ&quot; plugin that can coordinate multiple
 computers to play music at a party. When a client joins a party using this
@@ -115,9 +81,7 @@ have. Users with DJ permissions will be able to change the playlist and the
 currently playing song. We hope this will be popular in smaller hall parties
 and progressives, where the default source of music is a boombox on full volume
 at one end of the hall.
-</p>
 
-<p>
 There are many other compelling ideas for plugins. We could port an existing
 instant messaging client to our platform or implement a new one. We could write
 a file sharing client in the vein of Napster, Morpheus, and Gnutella. We could
@@ -128,21 +92,18 @@ server. HTTP requests and replies could be routed through any node on the
 network, so that standard web transactions could take place but no personally
 identifying information (such as IP address) would be revealed. If we have
 time, we may implement one of these plugins.
-</p>
 
 
-<h2> RELATED WORK </h2>
+<a name="Related_Work"></a>
+### Related Work
 
-<p>
 Sun's recently announced JXTA project is somewhat similar to our platform. JXTA
 is a set of open protocols for peer-to-peer network communication, along with
 reference implementations in Java. Sun's goals for JXTA are close to our own
 goals, but JXTA is more a toolkit of loosely connected parts than a unified
 platform. Also, JXTA is in the working stages right now, so production-level
 code is still some time away.
-</p>
 
-<p>
 Many current peer-to-peer applications provided inspiration for the protocol
 design of our network. Gnutella is a peer-to-peer file sharing protocol
 implemented by a wide variety of clients. Gnutella is tailored specifically for
@@ -154,9 +115,7 @@ and it can be shown that hosts cannot determine the contents of files that are
 replicated to their cache. Mojo Nation takes this a step further by introducing
 the concept of accountability - access control for a host is determined by the
 amount of resources that it provides.
-</p>
 
-<p>
 Perhaps the closest available program to our project is the Brilliant platform.
 Brilliant is a trojan program built into KaZaa, a popular file sharing program.
 Brilliant allows its parent company, Brilliant Digital Entertainment, to use
@@ -165,12 +124,11 @@ However, this was not disclosed to KaZaa users, and it was only recently
 discovered in an FTC filing. Needless to say, we do not plan to distribute our
 platform in this manner. Furthermore, there are no white papers or technical
 briefs on Brilliant's network architecture, so we cannot learn much from it.
-</p>
 
 
-<h2> USAGE SCENARIOS </h2>
+<a name="Usage_Scenarios"></a>
+### Usage Scenarios
 
-<p>
 We identify two primary usage scenarios: developers and end users. We plan to
 invest time into both the plugin API and the user interface of our network
 client. Since we are building a platform and not just a consumer program, we
@@ -181,18 +139,14 @@ kept to a minimum. Compiling and testing plugins for the platform should be
 similar to using any other third-party libraries, such as windowing toolkit or
 text parsers. The API should also provide mechanisms to access debugging
 information.
-</p>
 
-<p>
 The network client is a launching pad for plugins that use the platform. It
 will show all of the plugins that are currently installed, and will allow the
 user to load new plugins. It may show other relevant information, such as
 network statistics or a &quot;buddy list&quot; of users who are logged on. In
 the interest of simplicity, these will be the only features of the network
 client. All other user interaction will be handled by the plugins.
-</p>
 
-<p>
 The &quot;networked DJ&quot; plugin will use Winamp to decode and play MP3
 files. As such, it will also be a Winamp plugin. Winamp will be the main user
 interface, so pressing the play button will sync transparently. There may be a
@@ -200,12 +154,11 @@ dialog box for configuration, but it should be minimal. The anonymous web proxy
 will be implemented as a proxy server with no user interface at all. It will be
 turned on or off in the network client. The instructions for configuring IE or
 Netscape to use a proxy server can be included with the plugin.
-</p>
 
 
-<h2> KNOWN ISSUES </h2>
+<a name="Known_Issues"></a>
+### Known Issues
 
-<p>
 The main issue we foresee is that this project may be too ambitious in scope.
 All of us have significant experience with large programming projects, so size
 is probably not an issue. However, this project touches many different
@@ -213,22 +166,14 @@ technical fields, such as networking, encryption and authentication, audio
 syncing, and statistical methods. No one group member is competent in all of
 these fields, and there are some fields with which only one or two members have
 significant experience.
-</p>
 
-<p>
 Two areas that could cause problems are multithreading and the plugin
 architecture. To support arbitrarily complex plugins, we may need to allow
 plugins to run in their own thread(s). This is a concern because multithreaded
 network applications tend to be unwieldy. Also, I personally do not have
 experience developing pluggable programs, which could be a technical challenge.
-</p>
 
-<p>
 Lastly, the platform must be built before any plugins can be tested on it. This
 may take a substantial amount of time, and it will be difficult to develop
 plugins until the platform is stable. It may be awkward to schedule development
 around this.
-</p>
-
-</body>
-</html>

@@ -5,7 +5,7 @@ p4
 
 For the impatient:  
 [Download P4 0.3.1](p4-0.3.1.tar.bz2)  
-[Original project proposal](p4proposal.html)  
+[Original project proposal](p4proposal)  
 [Poster (with diagrams)](p4_poster/index.html)  
 [Protocol specification](p4protocol)  
 
