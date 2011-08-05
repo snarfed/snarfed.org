@@ -7,7 +7,7 @@ For the impatient:
 [Download P4 0.3.1](p4-0.3.1.tar.bz2)  
 [Original project proposal](p4proposal.html)  
 [Poster (with diagrams)](p4_poster/index.html)  
-[Protocol specification](p4protocol.txt)  
+[Protocol specification](p4protocol)  
 
 [P4](p4) is a fully functional, self-organizing overlay network similar
 to [Gnutella](http://rfc-gnutella.sourceforge.net/) and
