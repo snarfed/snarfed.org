@@ -14,7 +14,7 @@ a.indent { margin-left: 1em; }
 
 <a href="#Introduction">1. Introduction</a>  
 <a href="#Protocol_Definition">2. Protocol Definition</a>  
-<a class="indent" href="#Message_Descriptions">2.1. Message Descriptions</a>  
+<a class="indent" href="#Message_Overview">2.1. Message Overview</a>  
 <a class="indent" href="#Connecting_and_Disconnecting">2.2. Connecting and Disconnecting</a>  
 <a href="#Message_Header">3. Message Header</a>  
 <a href="#Message_Types">4. Message Types</a>  
