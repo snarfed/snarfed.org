@@ -8,6 +8,8 @@
  * http://mattconstantine.com/mg .
  *
  * Changelog:
+ * 0.8.1 8/8/2011
+ * - bug fix to individual contact view
  * 0.8 8/1/2011
  * Significant redesign to condense and improve usability, especially in smaller
  * or narrow browser windows.
@@ -131,10 +133,12 @@ noop_end_selector {
   display: inline !important;
 }
 
-/* Top level container and search box, labels, and message/conversation view
- * containers. This removes the minimum widths and makes them adjust to the
- * browser's width. */
-body > div > div.nH, div.nH.nn {
+/* Top level container and search box (first selector), labels and
+ * message/conversation view containers (second selector). This removes the minimum
+ * widths and makes them adjust to the * browser's width.
+ */
+body > div > div.nH,
+body > div > div.nH > div.nH > div.nH > div.no > div.nH.nn {
   width: auto !important;
 }
 
