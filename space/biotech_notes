@@ -238,3 +238,59 @@ also interested in gerontology. hormone levels drop when you age. hormone
 replacement therapy could help, but people worry hormones would cause cancer
 acceleration. it's pure theory though. maybe some older people in the field are
 already quietly taking growth hormone to combat aging.
+
+
+lunch w/kieran wesson, 8/8/2011
+===
+agrees that current regulatory climate and impact of trials, etc, is huge. even
+more drugs failing in phase 3 right now which means huge investments ($Bs) lost.
+business structure also problematic, lots of effort put into new patentable
+drugs to replace old ones coming off patent just to maintain cash flow, even
+when new drugs aren't better and are pushed via marketing and biz relationships.
+
+somewhat agrees that contribution of genetics, proteomics, etc to drug
+develompent and clinical stuff, especially computational, hasn't been too big.
+
+complexity and layers of redundancy are big problem. so many unknowns, so many
+unexpected interactions between your molecule and other proteins or molecules,
+or even with the target but in an unexpected place or way.
+
+whole organism (animal, etc) modeling would be holy grail but possibly millenia
+away. cell modelling is more promising but still very very early.
+
+also worries about overfitting problem since we have some data but not a lot. we
+probably have only partial data in many places, so trying to derive more drug
+directions from it would narrow our perspective.
+
+basically, we probably need more science and
+structural/regulatory/business/process change than computational work.
+
+old drugs (aspirin, tylenol, warfarin) very bad in lots of ways, lots of
+contraindications and failure modes, wouldn't pass trials now, but they're
+grandfathered in.
+
+subpopulations often based on variations in a single protein: post-translational
+modifications, e.g. sugars bound to certain places. can control how protein
+behaves. e.g. rituxan (probably) based on single reference patient with specific
+variation. some based on gene but also sometimes on time of day, food, other
+dynamic things.
+
+enumerate post-translational modifications? maybe, but during discovery you
+often already know them for your target protein and which one you're basing the
+drug on. so, maybe not.
+
+contraindications would be very useful to try to find and predict.
+
+epigenetics promising for computational, would be good to enumerate all the ways
+and reasons different genes are activated and deactivated, how they're packed
+and methylated, etc
+
+also should look at correlating with clinical records and trial results, could
+help predict good cocktails to take, contraindications, etc., even combined with
+epigenome.
+
+on that note, would love to see more progress in EMR and unifying standard
+result formats. not enough movement right now.
+
+FDA especially, now requiring standards for trials which is good, but they have
+50 yrs of trials data in non-standard formats, gold mine for data mining.
