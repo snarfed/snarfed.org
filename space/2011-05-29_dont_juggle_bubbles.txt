@@ -1,7 +1,7 @@
 Don't juggle bubbles! (or, why I run shells inside Emacs)
 
 <a href="http://cheezburger.com/View/1666431232">
-  <img class="right" src="cat_bubbles.jpg" /></a>
+  <img class="right shadow" src="cat_bubbles.jpg" /></a>
 
 *This is an excerpt; see the [full article](why_i_run_shells_inside_emacs)
 for the Emacs Lisp and other nitty gritty details.*

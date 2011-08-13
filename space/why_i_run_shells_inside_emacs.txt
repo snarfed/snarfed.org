@@ -1,7 +1,7 @@
 why I run shells inside Emacs
 
 <a href="http://cheezburger.com/View/1666431232">
-  <img class="right" src="cat_bubbles.jpg" /></a>
+  <img class="right shadow" src="cat_bubbles.jpg" /></a>
 
 [Mental context switches](http://joelonsoftware.com/articles/fog0000000022.html)
 are evil. Some people handle them better than others, but not me. I handle them
@@ -81,6 +81,9 @@ Here are some things I did manage to tweak:
   [search over command history](http://www.gnu.org/software/emacs/manual/html_node/emacs/Shell-Ring.html#index-comint_002ddynamic_002dlist_002dinput_002dring-3660)
   and press the Enter key, run the selected command immediately. Also, suppress
   the annoying "History item: X" messages.
+* When I press enter in the middle of multi-line input, include *every line* of
+  the input, not just up to the line point is on. (Requires `comint-eol-on-send`
+  to be non-nil.)
 
 
 Here's the code in [my .emacs](dotfiles/.emacs):
@@ -171,6 +174,13 @@ Here's the code in [my .emacs](dotfiles/.emacs):
         (unwind-protect
           (progn (fset 'message 'ignore) ad-do-it)
         (fset 'message old-message))))
+
+    (defadvice comint-send-input (around go-to-end-of-multiline activate)
+      "When I press enter, jump to the end of the *buffer*, instead of the end of
+    the line, to capture multiline input. (This only has effect if
+    `comint-eol-on-send' is non-nil."
+      (flet ((end-of-line () (end-of-buffer)))
+        ad-do-it))
 
     ;; for other code, e.g. emacsclient in TRAMP ssh shells and automatically
     ;; closing completions buffers, see the links above.
