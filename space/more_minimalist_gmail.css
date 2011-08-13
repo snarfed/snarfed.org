@@ -8,6 +8,9 @@
  * http://mattconstantine.com/mg .
  *
  * Changelog:
+ * 0.9 8/12/2011
+ * - bug fix: don't hide notification bar
+ * - show expand all button
  * 0.8.1 8/8/2011
  * - bug fix to individual contact view
  * 0.8 8/1/2011
@@ -70,7 +73,6 @@ td.GcwpPb-Pkt3ef.GcwpPb-uq0Mrf, /* Search Mail, Search the Web buttons */
 td.GcwpPb-Pkt3ef.GcwpPb-txTtjf, /* Show search options, Create a filter links */
 div.GcwpPb-MEmzyf.GcwpPb-bEO5kc, /* Import mail & contacts link */
 div.nH.GcwpPb-Z8OBDd div.nH.oy8Mbf.nn, /* GMail logo */
-div.b8.UC,                /* weird blank horizontal bar below search box */
 
 /* Left side */
 div.n6,                   /* # more labels drop-down */
@@ -99,7 +101,7 @@ span.lHQn1d,              /* per message stars */
 div.J-Zh-I.J-J5-Ji.J-Zh-I-Js-Zj.GZ.L3, /* top right, per-message inline Reply button */
 table.Bs.nH.iY td.Bu:nth-child(2),     /* right side pane */
 table.Bs.nH.iY td.Bu:nth-child(3),     /*   (ads, etc.) */
-div.hj,                                /* expand all and new window buttons */
+div.hj > div.hk,                       /* expand all and new window buttons */
 div.VP5otc-tOAp0c,        /* Back to Inbox link */
 
 /* Reply, Reply all, Forward links below each message
@@ -128,7 +130,8 @@ noop_end_selector_list
  */
 div#guser > nobr > a[href="https://mail.google.com/mail/u/0/?ui=2&shva=1#settings"], /* Settings link */
 div.LrBjie > div.TK > div.TO > div.TN .nU.n1,  /* Inbox, Drafts *when they have messages* */
-ol.gbtc > li:last-child,             /* top-level header settings button */
+ol.gbtc > li:last-child,      /* top-level header settings button */
+div.hj > div.hk:nth-child(3), /* expand all button */
 noop_end_selector {
   display: inline !important;
 }
