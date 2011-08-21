@@ -50,7 +50,10 @@ td.left   { text-align:  left; }
 td.right  { text-align:  right; }
 
 ul { margin: 0px; }
-li { padding: 2px; }
+li {
+  padding: 2px;
+  margin-: .5em;
+}
 
 td#name {
   vertical-align: top;
@@ -165,45 +168,25 @@ This led to widespread adoption, culminating in a full Google Accounts
 <a href="http://code.google.com/apis/apps/sso/openid_reference_implementation.html">consumer</a>.</p>
 </li>
 
-<li><i>Sept. 2005 - March 2006</i>
-<p>Led the migration to <a href="http://www.bfs-finance.com/">BFS</a>, our
-third party billing partner. This went beyond the scope of the Fluffy migration
-(below); it included more advertisers and publishers, multiple corporate
-entities, and dozens of different billing models and payment methods. We
-migrated all advertisers online, ie without downtime, with a fallout
-rate of under .1% needing manual intervention.</p>
-</li>
+<li><i>June 2003 - March 2006</i>
+<p>Co-founder and a lead engineer on Moneta, Google's transaction processing
+platform. It handles OLTP, rating, billing, invoicing, payments, and revenue
+share for dozens of billing models and payment methods, hundreds of countries
+and currencies, >XXM customers, >XB transactions per day, >XXkqps, and 99.98%
+uptime.</p>
 
-<li><i>Sept. 2004 - Sept. 2005</i>
-<p>Led the migration from Google's old biller and OLTP system to Moneta. We
-migrated millions of customers online, ie without downtime. We finished
+<p>I also led two large migrations. First was from Google's old billing/OLTP
+system to Moneta. We migrated millions of customers online, without downtime,
 ahead of schedule and with a fallout rate of under .01% needing manual
 intervention.</p>
+
+<p>Second was to <a href="http://www.bfs-finance.com/">BFS</a>, our third party
+billing partner. This included more advertisers and publishers, multiple
+corporate entities, and dozens of different billing models and payment methods.
+We again migrated everything without downtime and with a fallout rate of under
+.1%.</p>
 </li>
-
-<li><i>June 2003 - April 2005</i>
-<p>Co-founder and a primary engineer on Moneta, Google's transaction processing
-platform. It handles OLTP, rating, billing, invoicing, payments, and revenue
-share for all of our advertisers, publishers, and other monetized products.
-During my tenure, it scaled to dozens of billing models and payment methods,
-hundreds of countries and currencies, millions of customers, >1B transactions
-per day, >10kqps, billions of dollars, and 99.98% uptime (~30m downtime per
-quarter).</p>
-
-<!--
-<p>Moneta connects to multiple external payment processors, including
-<a href="http://cybersource.com/">CyberSource</a>,
-<a href="http://www.bibit.com/">Bibit</a>,
-<a href="http://www.opiglobal.com/">OPI</a>,
-<a href="http://globalcollect.com/">GlobalCollect</a>, and
-<a href="http://www.bfs-finance.com/">BFS</a>.
-Their APIs include HTTPS, XML-RPC, REST, proprietary, and batch flat file.</p>
-
-<p>Moneta is also Google's primary customer master data store, and provides
-online and batch access to all static and transactional data. It handles
-financial reporting, data warehousing, and data mining.</p>
--->
-</li></ul>
+</ul>
 
 <!-- IBM Almaden -->
 <table><tr>
@@ -328,7 +311,7 @@ fly.</li>
 <br /></p>
 
 <ul>
-<li>BS in Computer Science, with a minor in Mathematics, 6/2002, GPA 3.5</li>
+<li>BS in Computer Science, minor in Mathematics, 6/2002, GPA 3.5</li>
 <li>MS in Computer Science, 6/2003, GPA 3.6</li>
 <li>Coursework: networking, distributed systems, security, streaming
 algorithms, advanced databases, operating systems, C/C++, Java, graphics,
