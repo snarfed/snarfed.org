@@ -296,3 +296,50 @@ result formats. not enough movement right now.
 
 FDA especially, now requiring standards for trials which is good, but they have
 50 yrs of trials data in non-standard formats, gold mine for data mining.
+
+
+dinner w/john eksterowicz, 8/23/2011
+===
+was at celera, now at amgen.
+works on targeting medium to large molecules (small proteins) for drugs.
+often delivered by injection; large molecules generally can't cross gut (oral)
+or lungs (inhalable) and definitely not blood/brain barrier
+
+identifies active sites on biological molecules (often proteins) for drug
+molecules to bind to.
+
+active sites ideally need to be both cavities (ie holes) and bond chemically
+with drugs.
+useful for efficiency of drug molecule surface area, tight binding so that the
+drug outcompetes whatever organic molecule would normally bind there, and also
+selective so that it's less likely to bind to other places and cause side
+effects.
+
+discovery people who give him candidate target molecules find them many
+different ways. most often they try knocking out lots of different proteins in
+animal test subjects (with the disease) via RNA, then see if any of those tests
+had effect.
+
+drugs can succeed in animal trails but still fail in human clinical trials more
+often than you think.
+
+agreed with prohibitive timelines (tens of years) and budgets (up to $600-900M)
+for current drug discovery and development.
+
+agreed that crunching data to identify subpopulations or predict side effects is
+nice, but gold standard is still human trials, and you won't get close enough to
+skip them or guarantee passing, so you'll still need to do them.
+
+most basic researchers have access to medium to large supercomputers, so
+capacity usually isn't the problem.
+
+existing protein databases:
+1) from french researchers, includes x-ray crystallography structure of lots of
+   proteins, maybe 1/3 of all
+2) larger db of *homologous* protiens, ie if we have one protein with a known
+   structure, are there proteins with unknown structures that are homologous
+   that we can use to predict their structure
+
+nvidia recently talked to amgen about possible applications for GPUs - similar
+question as mine, just lower level, ie is there any application for massively
+parallel hardware.
