@@ -343,3 +343,55 @@ existing protein databases:
 nvidia recently talked to amgen about possible applications for GPUs - similar
 question as mine, just lower level, ie is there any application for massively
 parallel hardware.
+
+
+lunch w/orion jankowski, 8/25/2011
+===
+worked at celera and edison, now does software eng for vision stuff that runs on
+unmanned aircraft/drones.
+
+looked into marketplace for fundraising and service provider vendors for drug
+development, mostly plugging together existing discovered targets, molecules,
+delivery vectors, etc. big biz process change, similar to how hollywood makes
+movies. didn't entirely work out for a few reasons, e.g. culture change is hard
+and takes time, and also people behind projects were concerned about keeping
+data proprietary.
+
+still, good idea. evidently eli lilly has tried something similar internally,
+lightly, but hasn't pushed it. probably ahead of its time.
+
+quoted smaller numbers for drug development and trials, e.g. best case 20-30M
+for development through phase 2 trials, but can vary *wildly*, and often need
+much more failed R&D for e.g. discover, development, delivery, which increases
+avg cost of successful drug.
+
+generally agreed with others on lack of opportunity for large scale computation
+in applied drug development:
+- no to directing discovery. current is still shotgun (knocking out genes en
+  masse with RNA). current models (animal and otherwise) are often not good, and
+  even counter-productive; results often differ wildly or even opposite from
+  predictions.
+- identifying subpopulations, maybe, but not much better. drugs are still
+  developed, prescribed, and expected to work on majority of population for any
+  given disease. rituxan example was unusual, and now its subpopulation
+  conclusions are in doubt.
+- predicting side effects and trial results, also maybe not much better. so far,
+  shortcuts in trials haven't helped and have sometimes actively hurt. e.g.
+  lipitor: measuring circulating cholesterol in blood instead of plaque or end
+  result heart disease was *not* predictive. similarly, end symptoms for
+  diabetics like amputations have turned out to not correlate with blood sugar.
+  so, now fda is very careful and generally requires longer, longitudinal style
+  outcome tests.
+
+big opportunity for meta analyses and data mining over experimental results, aka
+"pre-competitive" data, e.g. FDA trial results, and also over health care
+records. echoed all standard problems with availability, data formats,
+instrument calibration, etc, but also pointed to how results are often not
+reproducible like in other sciences. e.g. cell lines are often not homogeneous,
+mutations and other differences have crept in over time, so even if you order
+the same cell line, it may differ substantially from the one used in the
+original experiment.
+
+sage bionetworks and sage congress people are tackling the computational side,
+primarily the data standards and formats and quality - less hard molecular bio
+and drug stuff - but still worth talking to.
