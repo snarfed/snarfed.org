@@ -375,6 +375,9 @@ in applied drug development:
   developed, prescribed, and expected to work on majority of population for any
   given disease. rituxan example was unusual, and now its subpopulation
   conclusions are in doubt.
+  another difficulty with subpopulations and personalizing prescriptions based
+  on diagnostics is the culture change to paying for the diagnostics. herceptin
+  (for breast cancer) is current poster child for diagnostic/drug pairing.
 - predicting side effects and trial results, also maybe not much better. so far,
   shortcuts in trials haven't helped and have sometimes actively hurt. e.g.
   lipitor: measuring circulating cholesterol in blood instead of plaque or end
@@ -391,6 +394,11 @@ reproducible like in other sciences. e.g. cell lines are often not homogeneous,
 mutations and other differences have crept in over time, so even if you order
 the same cell line, it may differ substantially from the one used in the
 original experiment.
+
+echoed (relatively) recent industry move toward orphaned and otherwise niche
+diseases and drugs. these have generally shorter and cheaper phase 0-2
+development costs, and the trials often work differently too, for both company
+and regulator.
 
 sage bionetworks and sage congress people are tackling the computational side,
 primarily the data standards and formats and quality - less hard molecular bio
