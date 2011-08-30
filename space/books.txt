@@ -11,6 +11,11 @@ img { vertical-align: text-top; }
 ![good](/good.png) means I liked it,
 ![ok](/ok.png) means it was just ok,
 ![bad](/bad.png) means I didn't like it.
+
+This isn't necessarily the same thing as whether I thought it was good or bad.
+If I mark a book <nobr>![bad](/bad.png),</nobr> I may still think it's good overall, but just
+doesn't match my own personal taste, and vice versa.
+
 <nf>nf</nf> is non-fiction, <f>f</f> is fiction.
 
 Also see

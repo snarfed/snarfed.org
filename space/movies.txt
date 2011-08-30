@@ -11,13 +11,12 @@ Movies I've watched and want to watch.
 ![good](/good.png) I liked,
 ![ok](/ok.png) were just ok,
 ![bad](/bad.png) I didn't like.
-(This is different than whether I thought they were good or bad. I often think a
-movie is good overall, even if it doesn't match my personal taste, or vice
-versa.)
 
-Naturally, this isn't comprehensive, and it's biased toward my taste.
-Also see [books](books), [games](games), and
-[other lists](lists).
+Naturally, this isn't comprehensive, and it's biased toward my taste. If I mark
+a movie <nobr>![bad](/bad.png),</nobr> I may still think it's good overall, but
+just doesn't match my own personal taste, and vice versa.
+
+Also see [books](books), [games](games), and [other lists](lists).
 
 **To watch**: 
 

@@ -16,6 +16,11 @@ img { vertical-align: text-top; }
 ![good](/good.png) means I liked it,
 ![ok](/ok.png) means it was just ok,
 ![bad](/bad.png) means I didn't like it.
+
+Naturally, this is biased toward my taste. If I mark a game <nobr>![bad](/bad.png),</nobr> I
+may still think it's good overall, but just doesn't match my own personal taste,
+and vice versa.
+
 Also see [books](books), [movies](movies), and
 [other lists](lists).
 
