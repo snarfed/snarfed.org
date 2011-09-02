@@ -308,10 +308,10 @@ molecules to bind to.
 often delivered by injection; large molecules generally can't cross gut (oral)
 or lungs (inhalable) and definitely not blood/brain barrier
 
-active sites ideally need to be both cavities (ie holes) and bond chemically
-with drugs.
-useful for efficiency of drug molecule surface area, tight binding so that the
-drug outcompetes whatever organic molecule would normally bind there, and also
+active sites ideally need to be both cavities (ie holes) and bond on the atomic
+level (not necessarily chemically, just fit nicely) with drugs. useful for
+efficiency of drug molecule surface area, tight binding so that the drug
+outcompetes whatever organic molecule would normally bind there, and also
 selective so that it's less likely to bind to other places and cause side
 effects.
 
@@ -403,3 +403,44 @@ and regulator.
 sage bionetworks and sage congress people are tackling the computational side,
 primarily the data standards and formats and quality - less hard molecular bio
 and drug stuff - but still worth talking to.
+
+
+lunch w/oana capja (sp?)
+===
+same bio lab as julie granka at stanford. studying epigenetics in population
+shifts, looking at hunter gatherers vs agriculturists in africa.
+
+math background, got into bio due to hiv, interesting because it changes so
+much and varies so widely, so fast, within a single person, due to high
+mutation rate and because it's a retrovirus so it recombines its own genes
+when it reproduces.
+
+stanford profs' startups doing cloud, data, etc services for basic research
+(and maybe drug design): numeddi, dna nexus
+
+epigenetics: methylation (ie is there a methyl alcohol molecule bonded) or
+chromatin modification of individual genes, or folding of larger sequences of
+the dna strand
+
+methylation most commonly researched right now because it's easiest to
+measure. no whole epigenome or large scale datasets yet
+
+mostly reset at birth, but not entirely. some is inherited, ie
+transgenerational. most is coded for in dna though.
+
+used to control e.g. development, both during growth and in different tpyes of
+cells. e.g. in bone cells, turns off genes that make muscle fibers.
+
+interesting studies: one measured methylation of C genes, across different
+types of cells and in both humans and chimps. found clear patterns in cell
+types, across both humans and chimps.
+
+another looked at identical twins, compared changes in epigenome to changes in
+phenotype later in life. expected due to combination of environment and
+inherited epigenome, and/or looked at epigenome as mechanism triggered by
+environment.
+
+similar environmental example: smoking messes with methylation (?) in tumor
+suppressor cells, wihch lets cancer cells grow more.
+
+eidogen-sertanty.com
