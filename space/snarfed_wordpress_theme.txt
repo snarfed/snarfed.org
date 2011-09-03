@@ -12,7 +12,7 @@ of hoops, finally got sick of it and gave up when it asked me to add gravatar
 support.
 -->
 
-[Download snarfed theme 0.3](snarfed_wordpress_theme.zip)
+[Download snarfed theme 0.4](snarfed_wordpress_theme.zip)
 
 This site runs on [WordPress](http://wordpress.org/) and uses its own
 [WordPress theme](http://codex.wordpress.org/Using_Themes), the
@@ -24,8 +24,7 @@ site. If you really want them, you can add them back by editing `functions.php`
 and `style.css`.
 
 snarfed is a [Thematic](http://themeshaper.com/thematic/) child theme, so you'll
-need Thematic installed too. It fully supports Thematic 0.9.6.3, and partially
-supports 0.9.7.7, modulo a few cosmetic issues.
+need Thematic installed too. It fully supports Thematic 0.9.7.7.
 
 Features:
 
@@ -53,7 +52,9 @@ Features:
   * Integration with a few plugins and services:
   [NextGEN Gallery](http://alexrabe.de/wordpress-plugins/nextgen-gallery/),
   [YARPP](http://mitcho.com/code/yarpp/),
-  [Google Analytics](http://analytics.google.com/)
+  [Google Analytics](http://analytics.google.com/),
+  [Facebook Insights](http://www.facebook.com/insights/). See below for
+  configuration.
 
   * The NextGEN Gallery integration includes custom album-compact, imagebrowser,
     and gallery templates, styled to be consistent with the rest of the site. It
@@ -68,16 +69,18 @@ Features:
 
   * Highlight comments from the author of a given post or page.
 
-Some of the features - AJAX site search, OpenID delegation, Google Analytics -
-need a little extra configuration. You'll need to define new constants in your
-wp-config.php. Here's an example:
+Some of the features - AJAX site search, OpenID delegation, Google Analytics,
+and Facebook Insights - need a little extra configuration. You'll need to define
+new constants in your wp-config.php. Here's an example:
 
     define('OPENID_DELEGATION_PROVIDER',
            'https://www.google.com/accounts/o8/ud?source=profiles');
     define('OPENID_DELEGATION_LOCAL_ID',
            'http://www.google.com/profiles/[USERNAME]);
     define('GOOGLE_AJAX_SEARCH_API_KEY', '[KEY]');
-    define('GOOGLE_ANALYTICS_ID', '[ID]);
+    define('GOOGLE_ANALYTICS_ID', '[ID]');
+    define('FACEBOOK_INSIGHTS_PROPERTY', 'fb:admins'); // or fb:page_id or fb:app_id
+    define('FACEBOOK_INSIGHTS_CONTENT', '[ID]');
 
 
 The snarfed WordPress theme is in the public domain.
