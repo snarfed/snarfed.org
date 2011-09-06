@@ -3,6 +3,10 @@ resize google calendar
 <a href="http://calendar.google.com/">
   <img class="right" src="google_calendar.jpg" /></a>
 
+_Update: try
+[Google Calendar Simplified userstyle](google_calendar_simplified_userstyle)
+instead!_
+
 I use paper for my personal calendar, but at work, I use
 [Google Calendar](http://calendar.google.com/).
 Despite being a web app, and not a rich client, it's really nice...even if I am
