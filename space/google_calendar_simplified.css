@@ -8,11 +8,21 @@
  * (deprecated) Google Calendar Simplified userstyle,
  * http://userstyles.org/styles/20945 .
  *
+ * If the visible calendar pane doesn't use the full width or height, make sure
+ * this userstyle is enabled and reload the page. Calendar calculates the width
+ * and height to use at load time, based on the browser dimensions and visible
+ * DOM elements.
+ *
  * Changelog:
+ * 0.4, 2011/09/06
+ * - overhaul for new UI
+ * - hide left pane (current month, other calendars)
+ * 0.3, 2011/07/26
+ * - updates to handle google-wide visual redesign
  * 0.2, 2010/11/11
  * - drop the mouseover thing. always display left pane and search bar.
  * - hide new header sections
- * 0.1, 2010/9/12:
+ * 0.1, 2010/9/12
  * - initial release
  */
 
@@ -20,52 +30,38 @@
 
 @-moz-document url-prefix(https://www.google.com/calendar/) {
 
-/* hide top header, logo, control panel, funbox */
-#mainlogo, #gbar, .gbh, #fastui-topnav-container, #funbox {
-  display: none !important;
-}
-
-/* [redacted] */
-div#gbz, ol.gbtc li:nth-child(2), li.gbt.gbtb {
-  display: none !important;
-}
-
-#gb, #gbx1, #gbx2, #gbx3, #gbx4, .gbvt, .gbgt, .gbtcb, .gbtb2, .gbmc, .gbts, #gbs {
-  background-color: transparent !important;
-  border: none !important;
-}
-
-#gbx1, #gbx2, #gbx3, #gbx4 {
-  background-image: none !important;
-}
-
-/* Search my calendars button and Show search options link */
-form.msf-container div.msf-button, form.msf-container span.lk {
-  display: none !important;
-}
-
-/*
- * Right side header (logged in user, settings/sign out links)
- * (Note the > child selector. The * universal selector is *descendant*,
- * ie any depth, not just direct child.)
+/* The primary list of things to hide.
  */
-div#guser nobr > * {
-  /* opacity: 0; */
-  display: none;
+div#gbz,            /* sandbar left side links (Mail, Calendar, etc.) */
+div#gbx3, div#gbx4, /* sandbar gray background */
+ol.gbtc > li,       /* sandbar right side links */
+.domainlogoparent,  /* Google logo */
+#df-fdbk,           /* big red Send Feedback About New Look button */
+.qnb-container,     /* big red Create button drop-down */
+#nav,               /* left pane */
+#vr-nav,            /* calendar header with date and layout control buttons */
+div.msf-button,     /* Blue search button */
+form.msf-container >span.lk,  /* show search options link */
+noop_end_selector_list
+{
+  display: none !important;
 }
 
-div#guser nobr {
-  color: transparent;
-}
-
-div#guser nobr a.gb3,  /* Settings link */
-div#gbg  /* Settings drop-down menu */
+/* A whitelist of exceptions that shouldn't be hidden.
+ */
+ol.gbtc > li:last-child,      /* top-level header settings button */
+div#gb,             /* sandbar. inline makes it not take up vertical space */
+noop_end_selector_list
 {
   display: inline !important;
 }
 
-div#guser nobr a.gb3 {
-  opacity: .3 !important;
+/* expand calendar content now that top headers and left pane are gone */
+div#mainbody {
+  margin-left: 0 !important;
+}
+div#gridcontainer {
+  margin-right: 0 !important;
 }
 
 /* build signature */
