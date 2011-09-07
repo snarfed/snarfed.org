@@ -1,10 +1,10 @@
 ;;; fillcode.el --- Fillcode minor mode
 ;;
 ;; Fillcode
-;; http://snarfed.org/space/fillcode
-;; Copyright 2005-2007 Ryan Barrett <fillcode@ryanb.org>
+;; http://snarfed.org/fillcode
+;; Ryan Barrett <fillcode@ryanb.org>
 ;;
-;; This minor mode enhance the fill functions when in source code major modes,
+;; This minor mode enhances the fill functions when in source code major modes,
 ;; such as c-mode, java-mode, and python-mode. Specifically, it provides a new
 ;; fill function that intelligently fills some parts of source code, like
 ;; function calls and definitions, if the language mode's fill function
@@ -12,21 +12,17 @@
 ;;
 ;; M-x fillcode-mode toggles fillcode-mode on and off in the current buffer.
 ;;
-;; This program is free software; you can redistribute it and/or modify
-;; it under the terms of the GNU General Public License as published by
-;; the Free Software Foundation; either version 2, or (at your option)
-;; any later version.
+;; This code is in the public domain.
 ;;
-;; This program is distributed in the hope that it will be useful,
-;; but WITHOUT ANY WARRANTY; without even the implied warranty of
-;; MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-;; GNU General Public License for more details.
-;;
-;; A copy of the GNU General Public License can be obtained at
-;; http://www.gnu.org/licenses/gpl.html or from the Free Software Foundation,
-;; Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
+;; Changelog:
+;; 0.8 2011/9/6:
+;; - bug fix: don't insert a space between the single equals operator and string
+;;   literals, e.g. for python keyword arguments in functions
+;; - bug fix: fix indentation for subsequent lines in indented blocks in python
+;; 0.7.1 2007/08/24 (and before):
+;; TODO
 
-(defconst fillcode-version "0.7.1")
+(defconst fillcode-version "0.8")
 
 (require 'cl)  ; for the case macro
 
@@ -47,7 +43,7 @@ calls and definitions, in many languages.
 
 To see what version of fillcode you are running, enter `\\[fillcode-version]'.
 
-For more information, see http://snarfed.org/space/fillcode"
+For more information, see http://snarfed.org/fillcode"
  nil         ;; initial value
  " Fillcode" ;; mode line indicator
  nil)        ;; keymap
@@ -384,9 +380,13 @@ Return t if it moved across an entire sexp, nil otherwise."
        nil))))
 
 (defun fillcode-beginning-of-statement ()
-  "Return the start position of the statement that point is currently in. Uses
-the major mode's beginning-of-statement function, if it has one. Otherwise, for
-safety, just uses the beginning of the line."
+  "Return `point-at-bol' of the starting line of the current statement.
+
+Uses the major mode's beginning-of-statement function, if it has
+one. Otherwise, for safety, just uses the beginning of the line.
+
+Note that this function moves point!"
+  ; step 1: find the beginning of the statement
   (case major-mode
     ((c-mode c++-mode java-mode objc-mode perl-mode)
      ; if we're at the beginning of the statement, `c-beginning-of-statement'
@@ -396,23 +396,24 @@ safety, just uses the beginning of the line."
      (re-search-forward "\\S-\\S-" nil t)  ; whitespace
      ; `c-beginning-of-statement-1' doesn't quite work. not sure why, haven't
      ; investigated it yet. i should.
-     (c-beginning-of-statement 1)
-     ; NB: use point-at-bol for xemacs compatibility. the emacs function is
-     ; line-beginning-position; point-at-bol is just an alias. xemacs, however,
-     ; only has point-at-bol. (same with point-at-eol/line-end-position.)
-     (point-at-bol))
+     (c-beginning-of-statement 1))
 
     ((python-mode)
      (save-excursion
        (if (functionp 'py-goto-statement-at-or-above)
            (py-goto-statement-at-or-above)
-         (python-beginning-of-statement))
-       (point)))
+         (python-beginning-of-statement))))
 
-    ; `c-beginning-of-statement' might be a good fallback for unknown
+    ; `c-beginning-of-statement' could be a good fallback for unknown
     ; languages, but it occasionally fails badly, e.g. in `perl-mode'.
-    (otherwise
-     (point-at-bol))))  ; default
+    (otherwise nil))
+
+   ; step 2: return the beginning of the line
+   ;
+   ; NB: use point-at-bol for xemacs compatibility. the emacs function is
+   ; line-beginning-position; point-at-bol is just an alias. xemacs, however,
+   ; only has point-at-bol. (same with point-at-eol/line-end-position.)
+   (point-at-bol))
 
 
 (defun fillcode-end-of-statement ()
@@ -479,10 +480,12 @@ point to next non-whitespace char."
 ;;   (edebug)
   (let ((fill-point-re (build-re fillcode-fill-points)))
   (cond
-   ; if we're in a string literal or comment, add a space before it, then skip
-   ; to the end of it
+   ; if we're in a string literal or comment, add a space before it (unless this
+   ; is a keyword arg in a function call, e.g. in python), then skip to the end
+   ; of it.
    ((fillcode-in-literal)
-    (when (save-excursion (backward-char) (not (fillcode-in-literal)))
+    (when (save-excursion (backward-char)
+                          (and (not (fillcode-in-literal)) (not (looking-at "="))))
       (fixup-whitespace)
       (forward-char))
     ; TODO: maybe goto-char (cdr c-literal-limits) here would be faster?

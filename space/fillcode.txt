@@ -2,12 +2,15 @@ fillcode
 
 <img class="right" src="gnu.jpg" />
 
+<!-- to package:
+cd ~/src/emacs
+tar czf ~/s/fillcode.tar.gz --exclude .svn fillcode*.el elunit/
+-->
+
 For the impatient:  
-&nbsp; [Download fillcode.el 0.7.1](fillcode.el)  
+&nbsp; [Download fillcode.el 0.8](fillcode.el)  
 &nbsp; [Download fillcode.tar.gz](fillcode.tar.gz) (includes
 [elunit](http://www.lostway.org/~tko/elisp/elunit/) unit tests)  
-
-_Updated 2007/08/24._
 
 Fillcode is an [Emacs](http://gnu.org/software/emacs/) minor mode that fills, or
 wraps, some parts of source code. It's best described by example. Fillcode fills
@@ -29,7 +32,7 @@ binary operators, and correctly preserves embedded comments and string literals.
 It also normalizes existing whitespace and line breaks.
 
 Fillcode is supported in [GNU Emacs](http://gnu.org/software/emacs/) 21 through
-23 and [XEmacs](http://xemacs.org/), and works with most programming language
+23 and [XEmacs](http://xemacs.org/) 21, and works with most programming language
 major modes, including Java, C, C++, Objective C, Perl, Python, shell, and SQL
 modes.
 
@@ -67,6 +70,6 @@ less than perfect in some major modes.
 or [filladapt-mode](http://www.wonderworks.com/#filladapt)...yet.
   * It doesn't break lines at `=`, the assignment operator.
 
-Fillcode is copyright 2005-2007 [Ryan Barrett](http://snarfed.org/), and
-is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
+As of version 0.8, 2011/9/6, fillcode is in the public domain. Before that, it
+was distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
 
