@@ -55,8 +55,14 @@ Here's Emacs Lisp that sets this up:
           ssh-method)))
     
     (defadvice server-process-filter (before handle-remote-emacsclient-file activate)
-      "Detect remote emacsclient and inject the tramp '/host:' prefix."
-      (if (tramp-handle-file-remote-p default-directory)
+      "Detect remote emacsclient and inject the tramp '/host:' prefix.
+    
+      Note the hack here that assumes remote emacsclient invocations
+      have the regex '-tty /dev/(pts/[0-9]|ttype)[0-9]+)' in their
+      command sequence string, and all others have either no -tty or
+      a one-digit /dev/pts/.... I haven't yet found a better way to
+      distinguish local and remote clients."
+      (if (string-match "-tty /dev/\\(pts/[0-9]\\|ttyp\\)[0-9]+" (ad-get-arg 1))
           (with-parsed-tramp-file-name default-directory parsed
             (let* ((message (ad-get-arg 1))
                    (absolute (and (string-match "-file \\([^ ]+\\)" message)
