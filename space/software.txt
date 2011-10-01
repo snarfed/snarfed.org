@@ -164,10 +164,10 @@ that can be imported back into SnipSnap.
 ### Patches
 
   * A [patch](http://debbugs.gnu.org/cgi/bugreport.cgi?bug=9647) for
-[Emacs](www.gnu.org/software/emacs/)'s
-[dirtrack-mode](www.emacswiki.org/emacs/ShellDirtrackByPrompt) that adds support
-for shells with path prefixes, e.g. [Tramp](www.gnu.org/software/tramp/)-based
-remote shells.
+[Emacs](http://www.gnu.org/software/emacs/)'s
+[dirtrack-mode](http://www.emacswiki.org/emacs/ShellDirtrackByPrompt) that adds
+support for shells with path prefixes, e.g.
+[Tramp](http://www.gnu.org/software/tramp/)-based remote shells.
 
   * A [patch](ajax_comment_preview_2.3_loading_and_error.patch) for the Wordpress 
 [Ajax Comment Preview](http://blogwaffe.com/ajax-comment-preview/) plugin that
