@@ -153,6 +153,15 @@ Here's the code in [my .emacs](dotfiles/.emacs):
     (require 'protbuf)
     (add-hook 'shell-mode-hook 'protect-process-buffer-from-kill-mode)
     
+    (defun make-comint-directory-tracking-work-remotely ()
+      "Add this to comint-mode-hook to make directory tracking work
+    while sshed into a remote host, e.g. for remote shell buffers
+    started in tramp. (This is a bug fix backported from Emacs 24:
+    http://comments.gmane.org/gmane.emacs.bugs/39082"
+      (set (make-local-variable 'comint-file-name-prefix)
+           (or (file-remote-p default-directory) "")))
+    (add-hook 'comint-mode-hook 'make-comint-directory-tracking-work-remotely)
+
     (defun enter-again-if-enter ()
       "Make the return key select the current item in minibuf and shell history isearch.
     An alternate approach would be after-advice on isearch-other-meta-char."
