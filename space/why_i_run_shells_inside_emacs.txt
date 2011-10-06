@@ -88,8 +88,11 @@ Here are some things I did manage to tweak:
 
 Here's the code in [my .emacs](dotfiles/.emacs):
 
-    (defvar my-shells
-      '("*snarfed*" "*shell0*" "*shell1*" "*shell2*" "*music*"))
+    (defvar my-local-shells
+      '("*shell0*" "*shell1*" "*shell2*" "*shell3*" "*music*"))
+    (defvar my-remote-shells
+      '("*snarfed*" "*heaven0*" "*heaven1*" "*heaven2*" "*heaven3*"))
+    (defvar my-shells (append my-local-shells my-remote-shells))
     
     (require 'tramp)
     
@@ -101,7 +104,7 @@ Here's the code in [my .emacs](dotfiles/.emacs):
      ;; '(comint-completion-autolist t)     ; show completion list when ambiguous
      '(comint-input-ignoredups t)           ; no duplicates in command history
      '(comint-completion-addsuffix t)       ; insert space/slash after file completion
-     '(comint-buffer-maximum-size 100000)   ; max length of the buffer in lines
+     '(comint-buffer-maximum-size 20000)    ; max length of the buffer in lines
      '(comint-prompt-read-only nil)         ; if this is t, it breaks shell-command
      '(comint-get-old-input (lambda () "")) ; what to run when i press enter on a
                                             ; line above the current prompt
@@ -122,12 +125,13 @@ Here's the code in [my .emacs](dotfiles/.emacs):
             (put-text-property comint-last-output-start output-end 'read-only t))))
     (add-hook 'comint-output-filter-functions 'make-my-shell-output-read-only)
     
-    (defun dirtrack-mode-locally ()
-      "Add to shell-mode-hook to use dirtrack mode in my local shell buffers."
-      (when (member (buffer-name) (cdr my-shells))
-        (dirtrack-mode t)
-        (set-variable 'dirtrack-list '("^[A-Za-z0-9]+:\\([~/][^\\n>]*\\)>" 1 nil))))
-    (add-hook 'shell-mode-hook 'dirtrack-mode-locally)
+    (defun my-dirtrack-mode ()
+      "Add to shell-mode-hook to use dirtrack mode in my shell buffers."
+      (when (member (buffer-name) my-shells)
+        (shell-dirtrack-mode 0)
+        (set-variable 'dirtrack-list '("^.*[^ ]+:\\(.*\\)>" 1 nil))
+        (dirtrack-mode 1)))
+    (add-hook 'shell-mode-hook 'my-dirtrack-mode)
     
     ; interpret and use ansi color codes in shell output windows
     (add-hook 'shell-mode-hook 'ansi-color-for-comint-mode-on)
@@ -137,24 +141,17 @@ Here's the code in [my .emacs](dotfiles/.emacs):
       (set (make-local-variable 'scroll-conservatively) 10))
     (add-hook 'shell-mode-hook 'set-scroll-conservatively)
     
-    (defun unset-display-buffer-reuse-frames ()
-      "Add to shell-mode-hook to prevent switching away from the shell buffer
-    when emacsclient opens a new buffer."
-      (set (make-local-variable 'display-buffer-reuse-frames) t))
-    (add-hook 'shell-mode-hook 'unset-display-buffer-reuse-frames)
+    ;; i think this is wrong, and it buries the shell when you run emacsclient from
+    ;; it. temporarily removing.
+    ;; (defun unset-display-buffer-reuse-frames ()
+    ;;   "Add to shell-mode-hook to prevent switching away from the shell buffer
+    ;; when emacsclient opens a new buffer."
+    ;;   (set (make-local-variable 'display-buffer-reuse-frames) t))
+    ;; (add-hook 'shell-mode-hook 'unset-display-buffer-reuse-frames)
     
     ;; make it harder to kill my shell buffers
     (require 'protbuf)
-    (add-hook 'shell-mode-hook 'protect-buffer-from-kill-mode)
-    
-    (defun make-comint-directory-tracking-work-remotely ()
-      "Add this to comint-mode-hook to make directory tracking work
-    while sshed into a remote host, e.g. for remote shell buffers
-    started in tramp. (This is a bug fix backported from Emacs 24:
-    http://comments.gmane.org/gmane.emacs.bugs/39082"
-      (set (make-local-variable 'comint-file-name-prefix)
-           (or (file-remote-p default-directory) "")))
-    (add-hook 'comint-mode-hook 'make-comint-directory-tracking-work-remotely)
+    (add-hook 'shell-mode-hook 'protect-process-buffer-from-kill-mode)
     
     (defun enter-again-if-enter ()
       "Make the return key select the current item in minibuf and shell history isearch.
@@ -174,13 +171,17 @@ Here's the code in [my .emacs](dotfiles/.emacs):
         (unwind-protect
           (progn (fset 'message 'ignore) ad-do-it)
         (fset 'message old-message))))
-
+    
     (defadvice comint-send-input (around go-to-end-of-multiline activate)
       "When I press enter, jump to the end of the *buffer*, instead of the end of
     the line, to capture multiline input. (This only has effect if
     `comint-eol-on-send' is non-nil."
       (flet ((end-of-line () (end-of-buffer)))
         ad-do-it))
+    
+    ;; not sure why, but comint needs to be reloaded from the source (*not*
+    ;; compiled) elisp to make the above advise stick.
+    (load "comint.el.gz")
 
     ;; for other code, e.g. emacsclient in TRAMP ssh shells and automatically
     ;; closing completions buffers, see the links above.
