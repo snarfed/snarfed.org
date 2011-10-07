@@ -19,11 +19,14 @@ and the sample [guestbook](http://sql-guestbook.appspot.com/) and
 [20% time](http://www.google.com/jobs/lifeatgoogle/englife/#content), which was
 a lot of fun.
 
-I'll always have a soft spot for the App Engine datastore, but I also know (and
-tell people loudly) that it's not good for all use cases. Its query engine
-doesn't support data mining or ad hoc, user-driven queries, nor does it
-integrate with the existing SQL-based tools and ecosystem. Cloud SQL will and
-does, and that's really exciting.
+I'll always have a soft spot for the App Engine datastore, but I also often tell
+people that it's not good for all use cases. Its query engine doesn't support
+data mining or ad hoc, user-driven queries as well as a traditional RDBMS -
+[although](http://www.google.com/events/io/2010/sessions/next-gen-queries-appengine.html)
+[that's](http://www.google.com/events/io/2011/sessions/large-scale-data-analysis-using-the-app-engine-pipeline-api.html)
+[changing](http://www.google.com/events/io/2011/sessions/app-engine-mapreduce.html) -
+and it doesn't integrate with existing SQL-based tools and frameworks. Cloud SQL
+will and does, and that's really exciting.
 
 Congrats on the launch, guys! And for the rest of you,
 [go check it out!](http://code.google.com/apis/sql/)
