@@ -167,7 +167,8 @@ that can be imported back into SnipSnap.
 [Emacs](http://www.gnu.org/software/emacs/)'s
 [dirtrack-mode](http://www.emacswiki.org/emacs/ShellDirtrackByPrompt) that adds
 support for shells with path prefixes, e.g.
-[Tramp](http://www.gnu.org/software/tramp/)-based remote shells.
+[Tramp](http://www.gnu.org/software/tramp/)-based remote shells. Applied in
+[revision 106107](http://bzr.savannah.gnu.org/lh/emacs/trunk/revision/106107).
 
   * A [patch](ajax_comment_preview_2.3_loading_and_error.patch) for the Wordpress 
 [Ajax Comment Preview](http://blogwaffe.com/ajax-comment-preview/) plugin that
