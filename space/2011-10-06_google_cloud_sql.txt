@@ -10,6 +10,9 @@ a hosted relational database that does for MySQL what
 the plumbing and infrastructure so you're free to focus on your application. No
 more DBA needed!
 
+<!--more-->
+<p/>
+
 Cloud SQL is led by [Ken Ashcraft](https://profiles.google.com/kashcraft/), one
 of my App Engine cofounders and a good friend, and has a great team behind it.
 I'm not on the core team, but I did contribute the

@@ -11,6 +11,9 @@ early adopter friends.
 I've always wanted just one profile and friend list, in one place, to connect to
 friends anywhere. Email already does this; why can't social networking?
 
+<!--more-->
+<p/>
+
 The short answer is, it can. The [OStatus](http://ostatus.org/about) suite of
 federation protocols ([Salmon](http://salmon-protocol.org/),
 [ActivityStreams](http://activitystrea.ms/), etc.) is the leading contender
