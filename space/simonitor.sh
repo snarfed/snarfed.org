@@ -62,9 +62,10 @@ VIEWSTATE=%2FwEPDwUKMTA2OTI1NTI4MA9kFgJmD2QWAgIDD2QWAgIDD2QWCgIDDw8WAh4GTW9kZUlk
 CURL_ARGS='--silent --show-error --insecure'
 
 for CC in $*; do
-  # parse credit card number and CCV
-  CC_NUM=`echo $CC | grep -o -e '^[0-9]\{16\}'`
-  CC_CID=`echo $CC | grep -o -e '[0-9]\{3\}$'`
+  # extract comment (if any) and parse credit card number and CCV
+  CC_PARSED=${CC%%#*}
+  CC_NUM=`echo $CC_PARSED | grep -o -e '^[0-9]\{15,16\}'`
+  CC_CID=`echo $CC_PARSED | grep -o -e '[0-9]\{3,4\}$'`
   if [[ $CC_NUM == "" || $CC_CID == "" ]]; then
     echo "Invalid card number or CCV: $CC"
     continue
@@ -89,7 +90,8 @@ for CC in $*; do
 
   # erase the prompt w/ANSI escape codes. [1A moves the cursor up a line, [0K
   # erases the line. see http://www.answers.com/topic/ansi-escape-code .
-  echo -ne '\e[1A\e[0K'
+  # ...never mind, this doesn't work in emacs shells.
+  # echo -ne '\e[1A\e[0K'
 
   # POST to the form. note that %24 is the url encoding for the $ character.
   TMPFILE=`mktemp /tmp/simonitor_out.XXXXXX` || exit 1
