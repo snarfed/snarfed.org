@@ -36,10 +36,10 @@ respectively.
 <a href="http://code.google.com/">
   <img class="right" src="google_code.png" /></a>
 
-Finally, set the `results_div_id` variable in `ajax_search.js` to the id of an
-div where you want search results to be placed. This div will be deleted and
-recreated when a search is performed. You can also customize `results_header`,
-`results_footer`, and `searching_message`, if you want.
+Finally, set the `results_id` variable in `ajax_search.js` to the id of an
+existing div where you want search results to be placed. This div will be
+deleted and recreated when a search is performed. You can also customize
+`results_header`, `results_footer`, and `searching_message`, if you want.
 
 The search results are placed in divs with distinct classes, so you can style
 them with CSS. Here are the classes:
