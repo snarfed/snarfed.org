@@ -8,6 +8,8 @@
  * http://mattconstantine.com/mg .
  *
  * Changelog:
+ * 0.10 11/6/2011
+ * - total overhaul for new gmail UI
  * 0.9 8/12/2011
  * - bug fix: don't hide notification bar
  * - show expand all button
@@ -16,7 +18,7 @@
  * 0.8 8/1/2011
  * Significant redesign to condense and improve usability, especially in smaller
  * or narrow browser windows.
- * - moved labels above conversation/thread view
+ * - moved lsabels above conversation/thread view
  * - condensed top search box area
  * - made widths all auto so that everything follows your browser's width
  * - bug fix: don't hide To and CC labels in compose area
@@ -66,60 +68,54 @@
  * Note the use of the > child selector. The * universal selector is
  * *descendant*, ie any depth, not just direct child.
  */
-div#gbz,                  /* header left side links (Mail, Calendar, etc. */
-ol.gbtc > li,             /* header (settings button is special-cased below) */
-div.nH.l2.ov,             /* footer */
+div#gbx3, div#gbx4,       /* sandbar gray background */
+div#gbz,                  /* sandbar left side links (Mail, Calendar, etc. */
+ol.gbtc > li,             /* sandbar right side (settings button is special-cased below) */
+div.Dg58Ge,               /* footer in most views*/
+div.l2.ov.nH.oy8Mbf,      /* footer in compose view */
+div#gbqfbw,               /* blue search button */
 td.GcwpPb-Pkt3ef.GcwpPb-uq0Mrf, /* Search Mail, Search the Web buttons */
-td.GcwpPb-Pkt3ef.GcwpPb-txTtjf, /* Show search options, Create a filter links */
-div.GcwpPb-MEmzyf.GcwpPb-bEO5kc, /* Import mail & contacts link */
-div.nH.GcwpPb-Z8OBDd div.nH.oy8Mbf.nn, /* GMail logo */
+div.WkI4x.J-JN-I,         /* drop-down arrow in search box */
+img.eNqR2d,               /* GMail logo (internal) */
+div.GcwpPb-VArq.Rgky9,    /* GMail logo (external) */
+div#gbpr,                 /* "Looking for more from Google?" bubble above logo */
+div.b8.UC,                /* useless vertical padding below search box */
 
 /* Left side */
-div.n6,                   /* # more labels drop-down */
+.s8A0qe.pp,               /* container for big Mail/Contacts/Tasks drop down */
+div.n6,                   /* "# more" link */
 div.nL.CZtFXe,            /* per-label right side color square drop-down menus */
-div.T0.pp,                /* Chat link */
-div.CX.pp,                /* Mail, Contacts links */
-div.T4.pp,                /* Tasks link */
-div.z0,                   /* Compose mail button */
-div.LrBjie > div.TK > div.TO:nth-child(2),  /* Sent Mail */
-div.LrBjie > div.TK > div.TO:nth-child(4),  /* All Mail */
-div.LrBjie > div.TK > div.TO:nth-child(5),  /* Trash */
-div.LrBjie > div.TK > div.TO > div.TN .nU,  /* Inbox, Sent Mail, Drafts */
+div.hF56D,                /* Compose button container */
+div.MX,                   /* New Contact button */
+div.LrBjie > div.TK > div,  /* Inbox, Sent Mail, Drafts */
+div.T8uMgc,               /* chat buddy list */
 
 /* List view */
-div.VP5otc-HT6HAf.J-J5-Ji, /* header and footer buttons (also applies to conv view) */
+div.D.E.VP5otc-pzeoBf, /* header and footer buttons (also applies to conv view) */
+/* div.VP5otc-HT6HAf.J-J5-Ji, */
 td.mgpAx,                 /* vertically shrink header/footer gray bar; external */
-div.nH.vpUyzb.Cr,         /* header: "1-10 of 100" (internal) */
-div.vpUyzb.J-J5-Ji,       /* header: "1-10 of 100" (external) */
-img.EqK8f,                /* per thread stars (external) */
-img.tk3N6e-KT-JX,         /* per thread stars (internal) */
+div.vpUyzb.J-J5-Ji,       /* header: "1-10 of 100" */
+img.tk3N6e-KT-JX,         /* per thread stars */
 
 /* Conversation view */
-div.iG,                   /* header and footer: "1-10 of 100, Older >" */
-div.f6,                   /* "xxx is not available to chat" */
-span.lHQn1d,              /* per message stars */
-div.J-Zh-I.J-J5-Ji.J-Zh-I-Js-Zj.GZ.L3, /* top right, per-message inline Reply button */
+div.VP5otc-HT6HAf.J-J5-Ji,             /* header buttons */
+div.GAvrIe,                            /* next/prev thread, settings buttons */
+div.f6,                                /* "xxx is not available to chat" */
 table.Bs.nH.iY td.Bu:nth-child(2),     /* right side pane */
 table.Bs.nH.iY td.Bu:nth-child(3),     /*   (ads, etc.) */
 div.hj > div.hk,                       /* expand all and new window buttons */
-div.VP5otc-tOAp0c,        /* Back to Inbox link */
+div.OH0apf,                            /* in-message ads */
 
 /* Reply, Reply all, Forward links below each message
  * can't hide these because the r, a, etc. key bindings depend on them. */
 /* div.gA.gt, */
 
 /* Compose area */
-span.jNNpPe,             /* formatting toolbar */
-td.fA,                   /* Check Spelling link */
-span.es.el,              /* Rich formatting link */
-span.b2,                 /* Insert span in Insert Invitation */
-span[id=":11x"],         /* Invitation link in Insert Invitation */
-div.eh,                  /* top buttons (Send, Save Now, Discard, ...) */
-
-/* bottom buttons (Send, Save Now, Discard)
- * can't hide these because tab-enter to send, tab-tab-tab enter to discard,
- * etc. depend on them. */
-/* div.CoUvaf, */
+td.fA,              /* Check Spelling link */
+span.es.el,         /* Rich formatting link */
+td.eF > span.b2,    /* Insert span in Insert Invitation */
+td.eF > span.el.ou, /* Invitation link in Insert Invitation */
+div.eh,             /* top buttons (Send, Save Now, Discard, ...) */
 
 noop_end_selector_list
 {
@@ -128,70 +124,54 @@ noop_end_selector_list
 
 /* A whitelist of exceptions that shouldn't be hidden.
  */
-div#guser > nobr > a[href="https://mail.google.com/mail/u/0/?ui=2&shva=1#settings"], /* Settings link */
 div.LrBjie > div.TK > div.TO > div.TN .nU.n1,  /* Inbox, Drafts *when they have messages* */
 ol.gbtc > li:last-child,      /* top-level header settings button */
 div.hj > div.hk:nth-child(3), /* expand all button */
+div.VP5otc-pzeoBf > div.eh,   /* top buttons in compose new message */
 noop_end_selector {
   display: inline !important;
 }
 
 /* Top level container and search box (first selector), labels and
- * message/conversation view containers (second selector). This removes the minimum
- * widths and makes them adjust to the * browser's width.
+ * message/conversation view containers (second selector). This removes the
+ * minimum widths and makes them adjust to the * browser's width.
  */
-body > div > div.nH,
-body > div > div.nH > div.nH > div.nH > div.no > div.nH.nn {
+div.nH.oy8Mbf.nn.VKRe2c,  /* labels container */
+body > div > div.nH,      /* outer container and search box */
+body > div > div.nH > div.nH > div.nH > div.no > div.nH.nn,  /* content container */
+div.nH.NUxIad.bsvFKf      /* contact content container */
+{
   width: auto !important;
-}
-
-/* Top google-wide header */
-div.nH.oy8Mbf.qp {
-  display: inline;
-  float: right;
-}
-
-/* Top header buttons */
-#gb, #gbx1, #gbx2, #gbx3, #gbx4, .gbvt, .gbgt, .gbtcb, .gbtb2, .gbmc, .gbts, #gbs {
-  background-color: transparent !important;
-  border: none !important;
+  height: auto !important;
 }
 
 /* Labels container */
-div.nH.oy8Mbf.nn {
-  float: none !important;
-  margin-top: 5px;
+div.uxFfPb.bgi53d {
+  display: inline !important;
 }
 
+/* show labels horizontally (inline) */
 div.n3 * {
   display: inline !important;
 }
 
-/* Individual labels */
-div.XQRo3.gu78Dc {
-  margin: 0 !important;
+/* vertical space below labels */
+div.n3 {
+  margin-bottom: 1em !important;
 }
 
-/* lines between each thread in list view */
+/* hide bottom borders of top header and search box header */
+div#gbx1, div#gbx2, div#gbx3, div#gbx4, div.nH.GcwpPb-Z8OBDd {
+  border: none !important;
+}
+
+/* hide lines between each thread in list view */
 td.xY {
   border-bottom: none !important;
 }
 
-/* "grip" image left of each conversation, for drag and drop */
+/* hide mouseover "grip" image left of each conversation */
 td.oZ-x3.xY {
   background-image: none !important;
 }
-
-/* hide highlighted background for Inbox/Drafts when they're currently
- * viewed. only do that for my own labels. */
-div.LrBjie > div.TK > div.TO.nZ {
-  background-color: transparent !important;
-}
-
-/* move to and labels pop-up menus in conversation and list views. */
-div.J-M.uEPqDe.AW {
-  left: 0px !important;
-  top: 0px !important;
-}
-
 }
