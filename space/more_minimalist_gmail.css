@@ -8,6 +8,13 @@
  * http://mattconstantine.com/mg .
  *
  * Changelog:
+ * 0.11 11/7/2011
+ * - bug fix: unhide move to and labels pop-up menus
+ * - hide bottom and left borders around labels
+ * - switch compose to show bottom send, save, discard buttons, not top ones
+ * - hide reply, reply all, forward tabs in reply view
+ * - show new contact button
+ * - other misc bug fixes and refactorings 
  * 0.10 11/6/2011
  * - total overhaul for new gmail UI
  * 0.9 8/12/2011
@@ -78,44 +85,39 @@ td.GcwpPb-Pkt3ef.GcwpPb-uq0Mrf, /* Search Mail, Search the Web buttons */
 div.WkI4x.J-JN-I,         /* drop-down arrow in search box */
 img.eNqR2d,               /* GMail logo (internal) */
 div.GcwpPb-VArq.Rgky9,    /* GMail logo (external) */
-div#gbpr,                 /* "Looking for more from Google?" bubble above logo */
-div.b8.UC,                /* useless vertical padding below search box */
+div.aHWiy,                /* adjustable separator between labels and chat */
 
 /* Left side */
 .s8A0qe.pp,               /* container for big Mail/Contacts/Tasks drop down */
 div.n6,                   /* "# more" link */
 div.nL.CZtFXe,            /* per-label right side color square drop-down menus */
 div.hF56D,                /* Compose button container */
-div.MX,                   /* New Contact button */
-div.LrBjie > div.TK > div,  /* Inbox, Sent Mail, Drafts */
+div.XQRo3.UKr6le > span.nU,  /* Inbox, Sent Mail, Drafts label */
+div.PCbdGf.fy1Lpf,        /* All Mail label */
 div.T8uMgc,               /* chat buddy list */
 
 /* List view */
-div.D.E.VP5otc-pzeoBf, /* header and footer buttons (also applies to conv view) */
-/* div.VP5otc-HT6HAf.J-J5-Ji, */
-td.mgpAx,                 /* vertically shrink header/footer gray bar; external */
+div.VP5otc-HT6HAf.J-J5-Ji, /* header and footer buttons (also applies to conv view) */
 div.vpUyzb.J-J5-Ji,       /* header: "1-10 of 100" */
 img.tk3N6e-KT-JX,         /* per thread stars */
 
 /* Conversation view */
-div.VP5otc-HT6HAf.J-J5-Ji,             /* header buttons */
-div.GAvrIe,                            /* next/prev thread, settings buttons */
-div.f6,                                /* "xxx is not available to chat" */
-table.Bs.nH.iY td.Bu:nth-child(2),     /* right side pane */
-table.Bs.nH.iY td.Bu:nth-child(3),     /*   (ads, etc.) */
-div.hj > div.hk,                       /* expand all and new window buttons */
-div.OH0apf,                            /* in-message ads */
-
-/* Reply, Reply all, Forward links below each message
- * can't hide these because the r, a, etc. key bindings depend on them. */
-/* div.gA.gt, */
+div.GAvrIe,               /* next/prev thread, settings buttons */
+div.f6,                   /* "xxx is not available to chat" */
+div.nH.HbF0O,             /* right side pane (ads, etc.) */
+span.hk.J-J5-Ji,          /* expand all, print, new window buttons */
+div.OH0apf,               /* in-message ads */
+div.tk3N6e-I.J-J5-Ji.tk3N6e-I-Js-IF.m0aqBd.tk3N6e-I-n2to0e.L3,  /* top right reply arrow */
 
 /* Compose area */
 td.fA,              /* Check Spelling link */
 span.es.el,         /* Rich formatting link */
 td.eF > span.b2,    /* Insert span in Insert Invitation */
 td.eF > span.el.ou, /* Invitation link in Insert Invitation */
-div.eh,             /* top buttons (Send, Save Now, Discard, ...) */
+
+/* Reply view (a few extra things on top of compose view) */
+div.eh > div.dW.E,  /* top send, save now, discard buttons (the bottom ones stay) */
+table.cf.gz,        /* reply, reply all, forward tabs */
 
 noop_end_selector_list
 {
@@ -124,10 +126,9 @@ noop_end_selector_list
 
 /* A whitelist of exceptions that shouldn't be hidden.
  */
-div.LrBjie > div.TK > div.TO > div.TN .nU.n1,  /* Inbox, Drafts *when they have messages* */
-ol.gbtc > li:last-child,      /* top-level header settings button */
-div.hj > div.hk:nth-child(3), /* expand all button */
-div.VP5otc-pzeoBf > div.eh,   /* top buttons in compose new message */
+div.XQRo3.UKr6le > span.nU.n1, /* Inbox, Drafts *when they have messages* */
+ol.gbtc > li:last-child,       /* top-level header settings button */
+span.hk.J-J5-Ji:nth-child(2),  /* expand all button */
 noop_end_selector {
   display: inline !important;
 }
