@@ -10,41 +10,6 @@ Also see [Why I'm weird about privacy](2011-08-03_why_im_weird_about_privacy)
 and
 [faking out address and credit card forms](faking_out_address_and_credit_card_forms)._
 
-<!--
-more research in june 2011. three major categories:
-- gift cards. up to $500, not reloadable, no id required. (evidently over $500
-  or reloadable makes it a "financial instrument" and thus subject to patriot
-  act id check req't). e.g. simon cards.
-- true prepaid cards. lots, but all US-based providers follow patriot act and
-  require credit checks. e.g. green dot, etc.
-- offshore aka VCC (virtual credit cards). no id checks since not US based,
-  usually higher denominations, often reloadable. much more expensive, often
-  fewer load options (sometimes not from cc), usually high initial fees *and*
-  noticeable percentage of value, 5-20%. usually pretty sketchy. e.g.:
-  http://card444.com/
-  http://seven-capital.com/
-  http://www.sovereigngoldcard.com
-  dead?: www-card.com, epassporte.com
-
-
-===
-investigated entropay
-===
-
-offshore vcc but in UK so less sketchy. virtual, reloadable, 5% charge on load
-but otherwise great! except they don't support address verification for
-merchants so some decline them. also they will supposedly ask for id
-verification. :/
-
-ryanblaize/Asdflkj2
-secret question, where was i born? Los Angeles
-
-4590614727784460/169
-expires 06/12
-
-...yup they followed up and asked for a ton of ID, etc, including passport. :/
-oh well.
--->
 
 If you've known me for any length of time, you know that I'm a privacy freak. I
 can't explain why, but I'm hyper-sensitive about giving out personal
@@ -66,9 +31,9 @@ the airport to buy plane tickets. I pay cash for everything. I can't buy
 _anything_ online.
 
 To put it bluntly, this sucks. So, I set out on a quest to find an anonymous,
-prepaid credit/debit card - in essence, [digital
-cash](http://www.cob.sfasu.edu/rgriffith/virtualcash.htm) that I can swipe at
-Amazon as well as the checkout counter.
+prepaid credit/debit card - in essence,
+[digital cash](http://en.wikipedia.org/wiki/Electronic_money) that I can swipe
+at Amazon as well as the checkout counter.
 
 If you're in a hurry, here's the executive summary: I use
 [Simon gift cards](https://www.simon.com/giftcard/).
@@ -81,82 +46,127 @@ on both the details and the conclusion to use Simon. If you're interested, it's
 well worth reading.
 
 
-### Candidates
+### Types
 
-There are _lots_ of prepaid credit cards out there.
-[cardreport.com](http://www.cardreport.com/dirs/prepaid.html) is a good place
-to start. Also, there's a [Google Answers
-question](http://answers.google.com/answers/threadview?id=277200) that provides
-a fairly comprehensive list of issuers. However, only a few come close to my
-requirements. Here's the short list.
+There are _lots_ of prepaid credit cards out there. The candidates break down
+into a few rough categories: gift cards, prepaid cards, VCCs (virtual credit
+cards), and exotic "digital cash" alternatives.
 
-  * [Green Dot](http://greendotonline.com/)
-  * [WebSecret](http://websecretcard.com/) _(a Green Dot brand, discontinued)_
-  * [PrivaCash](https://secure.privacash.com/) _(affilated with Green Dot)_
-  * [Morgan Beaumont](http://www.morganbeaumont.com/)
-  * [ecount](http://ecount.com/defaultecount.asp)
-  * [Wired Plastic](http://www.wiredplastic.com/)
-  * [Vaya](http://corp.ecount.com/prod/rf.html)
-  * [Elite Plus](http://www.elitepluscardapp.com/)
-  * [PayPal](http://paypal.com/)
-  * [Bank of America Gift Card](http://bankofamerica.com/giftcard/)
-_(discontinued)_
-  * Mall gift cards: [Simon](https://www.simon.com/giftcard/), [Westfield](http://westfield.com/uscentres/giftcards/), etc.
-  * [Swiss Bankers Travel Cash](https://www.travelcash.ch/)
-  * [International Money Transfer Card](http://www.imtcard.com/)
+_Gift cards_ are the runt of the litter. They only go up to $500, they generally
+can't be [reloaded](#purchase_and_reload), and some merchants refuse to accept
+them, whether explicitly or because most don't support
+[AVS checks](http://en.wikipedia.org/wiki/Address_Verification_System). On the
+plus side, you can often [buy](#purchase_and_reload) them with cash and
+without providing any [identifying information](#personal_information)
+whatsoever. Examples include
+[Simon](https://www.simon.com/giftcard/) and
+[Westfield](http://westfield.com/uscentres/giftcards/) mall gift cards,
+the 
+[credit](https://www.discover.com/gift-cards/giving.shtml)
+[card](https://www.americanexpress.com/gift-cards/?inav=footer_giftcards)
+[companies](http://usa.visa.com/personal/cards/prepaid/visa_gift_card.html)
+[themselves](http://www.mastercard.us/prepaid-gift-card.html),
+and many other banks and financial institutions.
 
+If gift cards are the runt, _prepaid cards_ are the big brother. They're
+[stored value cards](http://en.wikipedia.org/wiki/Stored-value_card) that
+otherwise behave just like full fledged credit cards. They're reloadable, can
+store over $500, and thus require and usually verify personal information and
+and SSN. Like gift cards, there are lots of different kinds, often aimed at
+specific target audiences like teenagers or travelers or people with bad credit.
+Providers include dedicated companies like
+[Green Dot](http://greendotonline.com/) and
+[NetSpend](https://www.netspend.com/),
+most banks, and as usual, the
+[credit](http://www.mastercard.us/prepaid-card.html)
+[card](http://americanexpress.com/prepaid)
+[companies](http://usa.visa.com/personal/cards/prepaid/index.html).
+
+Continuing with the family metaphor, _VCCs_ (virtual credit cars) must have to
+be the sketchy uncle. They're usually issued by overseas companies, often in
+unusual countries with looser laws and regulations, which usually means no ID
+checks! They're stored value and reloadable, like prepaid cards, but with
+limited funding mechanisms and higher fees, often based on a percentage as high
+as 20%. Examples include [Card444](http://card444.com/),
+[Seven Capital](http://seven-capital.com/),
+[Sovereign Gold Card](http://www.sovereigngoldcard.com),
+[wwwcard](http://www-card.com), and [ePassporte](http://epassporte.com). Some
+are based in more comfortable countries,
+e.g. [Swiss Bankers](http://www.swissbankers.ch/) and
+UK-based [Entropay](http://entropay.com), but that usually also means they
+require stricter ID checks.
+
+Finally, the colorful, harmless, doddering old grandpa:
+[digital cash](http://en.wikipedia.org/wiki/Electronic_money). These upstarts
+tout security, privacy/anonymity, and (more) independence from governments and
+central banks. They range from [Bitcoin](http://bitcoin.org/), championed by
+libertarians and privacy freaks alike, to [PayPal](http://www.paypal.com/), that
+bastion of banking regulations and ID requirements. Others include
+[ECount](http://ecount.com/defaultecount.asp), [ProPay](http://www.propay.com/),
+[E-Gold](http://www.e-gold.com/)
+[Liberty Reserve](http://www.libertyreserve.com/)
+[Mondex](http://www.mondexusa.com/).
+
+Most are up and running, and you can use them to buy things, but none are widely
+accepted. Credit card networks like Mastercard, Visa, Discover, etc. are still
+the top dogs in terms of acceptability, but provide little true security and
+absolutely no anonymity. Hybrid systems like PayPal have made inroads, but only
+a little, and most of those are fallint into the traditional bank and credit
+card model, losing most of their anonymity in the process.
+
+
+<a name="personal_information" />
 ### Personal information
 
-The card's issuer shouldn't ask for much personal information. If they do, they
-shouldn't actually use or verify it. Social Security number, driver's license,
-passport, birthdate, and phone number are all things I'm not willing to give up.
-Ideally, I don't even want the cardholder's name to be mine. I am willing to
-give some personal information, though, such as address and email. I'm also
-willing to lie about the rest.
+The card I'm looking for shouldn't ask for much
+[PII](http://en.wikipedia.org/wiki/Personally_identifiable_information). If they
+do, they shouldn't actually use or verify it. Social Security number, driver's
+license, passport, birthdate, and phone number are all things I'm not willing to
+give up. Ideally, I don't even want the cardholder's name to be mine. I am
+willing to give some personal information, though, such as address and email.
+I'm also willing to lie about the rest.
 
-Unfortunately, the federal government recently passed a law that requires all
-credit card issuers to collect SSNs. This was post-9/11, so I assume the
-motivation was tracking terrorists' finances. Some go even further; [Morgan
-Beaumont](http://www.morganbeaumont.com/)'s [application
-form](http://www.morganbeaumont.com/support_apply.cfm), for example, asks for a
-copy of your passport or drivers license! No thanks.
-
-Pretty much all issuers have complied, but fortunately, the law only requires
-that the issuer _collect_ SSNs. Most don't actually do anything with them.
-Whenever a prepaid card issuer requires me to provide an SSN, I just make one
-up. Not one of them has complained yet!
-
-_Update_: Other post-9/11 federal laws, such as the PATRIOT Act, are also
-rearing their ugly heads. Interpretation is still up in the air, but most
-financial institutions are erring on the side of collecting more rather than
-less, and verifying what they collect. For example, Green Dot recently started
-running credit checks against the SSN and birthdate you give them. No more fake
-info!
+Unfortunately, the [PATRIOT Act](http://en.wikipedia.org/wiki/USA_PATRIOT_Act)'s
+[money laundering requirements](http://en.wikipedia.org/wiki/USA_PATRIOT_Act,_Title_III)
+classify pretty much all stored value cards as financial instruments, especially
+if they're reloadable or can store over $500, and require issuers to collect
+_and verify_ ID, usually including SSN. Some go even further;
+[Morgan Beaumont](http://www.morganbeaumont.com/)'s
+[application form](http://www.morganbeaumont.com/support_apply.cfm), for
+example, asks for a copy of your passport or drivers license! No thanks.
 
 Here's an example disclaimer:
 
 > The USA PATRIOT Act is a Federal law that requires all financial institutions
-to obtain, verify, and record information that identifies each person who opens
-an account. You will be asked to provide your name, address, date of birth, and
-other information that will allow us to identify you. You may also be asked to
-provide documentation as proof of identification.
+> to obtain, verify, and record information that identifies each person who
+> opens an account. You will be asked to provide your name, address, date of
+> birth, and other information that will allow us to identify you. You may also
+> be asked to provide documentation as proof of identification.
 
-Sigh...
+The verification part seems to vary, though. Some issuers seem to be less strict
+about it than others. I'm always on the lookout for an issuer that's
+sufficiently lazy that I can give them totally fabricated information. Fingers
+crossed!
 
+
+<a name="purchase_and_reload" />
 ### Purchase and Reload
 
 I'd like to be able to buy prepaid cards in person, with cash. It'd be nice if
 there were many convenient locations, but I don't mind going out of my way.
 
-[Green Dot](http://getmygreen.com/locator.aspx) and [Morgan Beaumont
-site](http://www.morganbeaumont.com/support_loadlocations.cfm) do this well; you
-can buy their cards at common chain stores like Long's Drugs, Rite-Aid, and
-7-Eleven. Some cards, like Wired Plastic, can be bought at [Western Union
-SwiftPay](http://www.westernunion.com/info/osSwiftPay.asp?country=US). Other
-cards, like Elite Plus Visa, can be bought at most major banks. Yet other cards,
-like Vaya, can be paid for by mailing a check or money order. Finally, some
-banks sell prepaid cards outright, but they usually require you to have an
-existing account.
+Many cards support one of the common retail reload networks, including
+[Green Dot](https://www.greendot.com/)'s [MoneyPak](https://www.moneypak.com/)
+and [Western Union](http://www.westernunion.com/)'s
+[SwiftPay](http://www.westernunion.com/info/osSwiftPay.asp). You
+can buy reload packs or add money at the register at drugstores, convenience
+stores, gas stations, and other common retail stores.
+
+Other cards, like [Elite Plus](http://www.elitepluscardapp.com/), can be bought
+at most major banks. Yet other cards, like
+[Vaya](http://corp.ecount.com/prod/rf.html), can be paid for by mailing a check
+or money order. Finally, some banks sell prepaid cards outright, but they
+usually require you to have an existing account.
 
 Once you've acquired a prepaid card and start using it, it will eventually run
 out of funds. At that point, you can either buy a new card or add funds to your
@@ -164,10 +174,10 @@ existing card, also known as recharging or reloading.
 
 Recharging is definitely preferable to buying a new card, since the new card
 would have a new number. If you used the card to pay any recurring bills, such
-as [Netflix](http://netflix.com/) or [Vonage](http://vonage.com/) ([which I
-love](2004-12-24_its_the_phone_stupid)), you'd have to switch each of those services
-to the new card number. Unfortunately, many prepaid cards aren't rechargeable at
-all.
+as [Netflix](http://netflix.com/) or [Vonage](http://vonage.com/)
+([which I love](2004-12-24_its_the_phone_stupid)), you'd have to switch each of
+those services to the new card number. Unfortunately, many prepaid cards aren't
+rechargeable at all.
 
 ### The dregs
 
@@ -216,41 +226,32 @@ I expect that I'll pay extra for the privilege of using a prepaid card. I don't
 mind activation fees or yearly fees, but I'm not inclined to pay a monthly fee
 (e.g. Green Dot), and there's no way in hell I'm going to pay a fee per
 transaction. Also, the activation fees for some cards are prohibitively large.
-Elite Plus charges $150! No thanks.
+[Elite Plus](http://www.elitepluscardapp.com/) charges $150! No thanks.
 
 ### The Verdict
 
 I currently use [Simon gift cards](https://www.simon.com/giftcard/), and I'm
 happy with them. They're not reloadable, but they take up to $500, accept cash,
-and don't even ask for my name, much less my address or SSN. Plus, their [web
-interface](https://www.simon.com/giftcard/) is fast, friendly, and lets you
-connect _any_ name and address you want to each card, so you can use them
-with merchants that do [AVS
-checks](http://en.wikipedia.org/wiki/Address_Verification_System).
+and don't even ask for my name, much less my address or SSN. Plus, their
+[web interface](https://www.simon.com/giftcard/) lets you connect _any_ name and
+address you want to each card, so you can use them with merchants that do
+[AVS checks](http://en.wikipedia.org/wiki/Address_Verification_System).
 
 Before Simon, I used [WebSecret](http://websecretcard.com/), which was great,
-but expensive, and ultimately discontinued. Before that, I used [Bank of
-America gift cards](http://bankofamerica.com/giftcard/), which were also
-discontinued. They required name, address, and SSN, which I fabricated, but
+but expensive, and ultimately discontinued. Before that, I used
+[Bank of America gift cards](http://bankofamerica.com/giftcard/), which were
+also discontinued. They required name, address, and SSN, which I fabricated, but
 still didn't like. Worse, they only allowed purchase with another credit or
 debit card. Simon cards are much better!
 
-Apart from prepaid credit and debit cards, there are
-[many](http://www.paypal.com/) [promising](http://ecount.com/defaultecount.asp)
-[digital](http://www.propay.com/) [cash](http://www.e-gold.com/)
-[providers](http://www.mondexusa.com/) that provide good security and anonymity.
-Some are even up and running, and you can use them to buy things, but none are
-widely accepted. Credit card networks like Mastercard, Visa, Discover, etc. are
-still the top dogs in terms of acceptability, but provide little true security
-and absolutely no anonymity. Hybrid systems like PayPal have made inroads, but
-only a little. Worse, they're slowly leaning towards the credit card model,
-losing most of their anonymity in the process.
 
-I fear I'll never have a payment instrument that's widely accepted and anonymous
-enough to satisfy me. I'll keep looking, though...
+### References
 
-P.S. Thanks to 
 [Clairefiles](http://tcftalk.com/clairefiles/) for their thread
 [Quick Anon Plastic](http://tcftalk.com/clairefiles/index.php?PHPSESSID=1a0ae67cc49ef707f6fceec408840268&topic=8123.0) and
 [EscapeArtist](http://www.escapeartist.com/) for their article
 [Currency Cards: Like Having Gold in your Wallet](http://www.escapeartist.com/efam/73/Currency_Cards.html).
+
+[cardreport.com](http://www.cardreport.com/dirs/prepaid.html)
+[Google Answers question](http://answers.google.com/answers/threadview?id=277200)
+
