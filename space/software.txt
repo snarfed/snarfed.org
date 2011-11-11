@@ -11,6 +11,12 @@ is public domain. Also see [other lists](lists).
 <a name="projects"></a>
 ### Projects
 
+  * [mockfacebook](http://code.google.com/p/mockfacebook/) is a standalone HTTP
+server that implements Facebook's
+[FQL](http://developers.facebook.com/docs/reference/fql/) and
+[Graph API](http://developers.facebook.com/docs/reference/api/). It's
+particularly useful for testing.
+
   * The [snarfed WordPress theme](snarfed_wordpress_theme), which is currently
 running on this site.
 
@@ -110,6 +116,10 @@ email account.
 
 <a name="scripts"></a>
 ### Scripts
+
+  * [import_issues.py](import_issues) imports issues from a CSV file into a
+[Google Code project hosting](http://code.google.com/hosting/)
+[issue tracker](http://code.google.com/p/support/wiki/IssueTracker).
 
   * [Greasemonkey](http://greasespot.net/) usercripts:
 [remove trailing quotes in GMail](greasemonkey_gmail_remove_trailing_quote),
