@@ -3,11 +3,14 @@
  * http://snarfed.org/more_minimalist_gmail
  * Ryan Barrett <more-minimalist-gmail@ryanb.org>
  *
- * Aggressively hides Gmail's UI and chrome, leaving only your email, labels, and
- * search box. Inspired by Matt Constantine's Minimalist Gmail,
- * http://mattconstantine.com/mg .
+ * Aggressively hides Gmail's UI and chrome, leaving a simplified view of your
+ * email, labels, and search box. Inspired by Matt Constantine's Minimalist
+ * Gmail, http://mattconstantine.com/mg .
  *
  * Changelog:
+ * 0.12 11/14/2011
+ * - new gmail selectors
+ * - bug fixes for chrome
  * 0.11 11/7/2011
  * - bug fix: unhide move to and labels pop-up menus
  * - hide bottom and left borders around labels
@@ -75,48 +78,47 @@
  * Note the use of the > child selector. The * universal selector is
  * *descendant*, ie any depth, not just direct child.
  */
-div#gbx3, div#gbx4,       /* sandbar gray background */
-div#gbz,                  /* sandbar left side links (Mail, Calendar, etc. */
-ol.gbtc > li,             /* sandbar right side (settings button is special-cased below) */
-div.Dg58Ge,               /* footer in most views*/
-div.l2.ov.nH.oy8Mbf,      /* footer in compose view */
-div#gbqfbw,               /* blue search button */
-td.GcwpPb-Pkt3ef.GcwpPb-uq0Mrf, /* Search Mail, Search the Web buttons */
-div.WkI4x.J-JN-I,         /* drop-down arrow in search box */
-img.eNqR2d,               /* GMail logo (internal) */
-div.GcwpPb-VArq.Rgky9,    /* GMail logo (external) */
-div.aHWiy,                /* adjustable separator between labels and chat */
+div#gbx3, div#gbx4, /* sandbar gray background */
+div#gbz,            /* sandbar left side links (Mail, Calendar, etc. */
+ol.gbtc > li,       /* sandbar right side (settings button is special-cased below) */
+div.aeG,            /* footer */
+div.w-asK.w-atd,    /* at the bottom: About the new look | Send Feedback */
+td.w-as0.w-asZ,     /* blue search button */
+/* div.WkI4x.J-JN-I,         /\* drop-down arrow in search box *\/ */
+div.w-asL,          /* GMail logo */
 
 /* Left side */
-.s8A0qe.pp,               /* container for big Mail/Contacts/Tasks drop down */
-div.n6,                   /* "# more" link */
-div.nL.CZtFXe,            /* per-label right side color square drop-down menus */
-div.hF56D,                /* Compose button container */
-div.XQRo3.UKr6le > span.nU,  /* Inbox, Sent Mail, Drafts label */
-div.PCbdGf.fy1Lpf,        /* All Mail label */
-div.T8uMgc,               /* chat buddy list */
+div.aki.pp,         /* container for big Mail/Contacts/Tasks drop down */
+div.n6,             /* "# more" link */
+div.aic,            /* Compose button container */
+div.aio > span.nU,  /* Inbox, Sent Mail, Drafts label */
+div.PCbdGf.fy1Lpf,  /* All Mail label */
+div.akc,            /* chat buddy list */
+hr.aeS,             /* border below labels */
 
 /* List view */
-div.VP5otc-HT6HAf.J-J5-Ji, /* header and footer buttons (also applies to conv view) */
-div.vpUyzb.J-J5-Ji,       /* header: "1-10 of 100" */
-img.tk3N6e-KT-JX,         /* per thread stars */
+div.G-atb.D.E,      /* header and footer buttons (also applies to conv view) */
+td.apU > span,      /* per thread stars */
 
 /* Conversation view */
-div.GAvrIe,               /* next/prev thread, settings buttons */
-div.f6,                   /* "xxx is not available to chat" */
-div.nH.HbF0O,             /* right side pane (ads, etc.) */
-span.hk.J-J5-Ji,          /* expand all, print, new window buttons */
-div.OH0apf,               /* in-message ads */
-div.tk3N6e-I.J-J5-Ji.tk3N6e-I-Js-IF.m0aqBd.tk3N6e-I-n2to0e.L3,  /* top right reply arrow */
+div.GAvrIe,         /* next/prev thread, settings buttons */
+div.f6,             /* "xxx is not available to chat" */
+div.adC,            /* right side pane (ads, etc.) */
+span.hk.J-J5-Ji,    /* expand all, print, new window buttons */
+div.OH0apf,         /* in-message ads */
+td.acX,             /* top right reply  and drop-down arrows */
+span.T-KT,          /* top right per message stars */
 
-/* Compose area */
+/* Compose view */
+div.G-Ni.J-J5-Ji,   /* top right settings gear button (only in compose, not reply) */
 td.fA,              /* Check Spelling link */
 span.es.el,         /* Rich formatting link */
 td.eF > span.b2,    /* Insert span in Insert Invitation */
 td.eF > span.el.ou, /* Invitation link in Insert Invitation */
+td.aaL,             /* new window button next to To box */
 
 /* Reply view (a few extra things on top of compose view) */
-div.eh > div.dW.E,  /* top send, save now, discard buttons (the bottom ones stay) */
+div.ej > div > div.eh > div.dW.E,  /* top send, save now, discard buttons (the bottom ones stay) */
 table.cf.gz,        /* reply, reply all, forward tabs */
 
 noop_end_selector_list
@@ -126,7 +128,7 @@ noop_end_selector_list
 
 /* A whitelist of exceptions that shouldn't be hidden.
  */
-div.XQRo3.UKr6le > span.nU.n1, /* Inbox, Drafts *when they have messages* */
+div.aio > span.nU.n1,          /* Inbox, Drafts *when they have messages* */
 ol.gbtc > li:last-child,       /* top-level header settings button */
 span.hk.J-J5-Ji:nth-child(2),  /* expand all button */
 noop_end_selector {
@@ -137,7 +139,7 @@ noop_end_selector {
  * message/conversation view containers (second selector). This removes the
  * minimum widths and makes them adjust to the * browser's width.
  */
-div.nH.oy8Mbf.nn.VKRe2c,  /* labels container */
+div.lKgBkb,  /* labels container */
 body > div > div.nH,      /* outer container and search box */
 body > div > div.nH > div.nH > div.nH > div.no > div.nH.nn,  /* content container */
 div.nH.NUxIad.bsvFKf      /* contact content container */
@@ -146,9 +148,15 @@ div.nH.NUxIad.bsvFKf      /* contact content container */
   height: auto !important;
 }
 
-/* Labels container */
-div.uxFfPb.bgi53d {
-  display: inline !important;
+/* content container. only needed for chrome. */
+div.no {
+  width: 100% !important;
+}
+
+/* content container. only needed for chrome. */
+body > div > div.nH > div.nH > div.nH > div.no > div.nH.nn {
+  display: block !important;
+  float: none !important;
 }
 
 /* show labels horizontally (inline) */
@@ -156,23 +164,23 @@ div.n3 * {
   display: inline !important;
 }
 
+/* colored drop-down menus right of labels. can't hide with display: none
+ * because they're inside the div.n3 above. */
+div.aig {
+  opacity: 0;
+}
+
 /* vertical space below labels */
 div.n3 {
   margin-bottom: 1em !important;
 }
 
-/* hide bottom borders of top header and search box header */
-div#gbx1, div#gbx2, div#gbx3, div#gbx4, div.nH.GcwpPb-Z8OBDd {
+/* hide borders */
+div.w-asV, /* top header and search box header */
+div.ain,   /* left of labels with unread messages */
+td.xY      /* between each thread in list view */
+{
   border: none !important;
 }
 
-/* hide lines between each thread in list view */
-td.xY {
-  border-bottom: none !important;
-}
-
-/* hide mouseover "grip" image left of each conversation */
-td.oZ-x3.xY {
-  background-image: none !important;
-}
 }
