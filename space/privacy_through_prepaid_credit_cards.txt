@@ -4,10 +4,10 @@ privacy through prepaid credit cards
 <a href="http://americanexpress.com/"><img src="amex.jpg"></a>
 <a href="http://visa.com/"><img src="visa.jpg"></a>
 
-_I originally wrote this in March 2005, and only update it occasionally, so
-while it's still a good overview, it's not necessarily complete or up to date.
-Also see [Why I'm weird about privacy](2011-08-03_why_im_weird_about_privacy)
-and
+_I originally wrote this in March 2005, and only update it occasionally. It's
+still a good overview, and generally up to date, but parts may sometimes be
+stale. Also see
+[Why I'm weird about privacy](2011-08-03_why_im_weird_about_privacy) and
 [faking out address and credit card forms](faking_out_address_and_credit_card_forms)._
 
 
@@ -56,17 +56,15 @@ _Gift cards_ are the runt of the litter. They only go up to $500, they generally
 can't be [reloaded](#purchase_and_reload), and some merchants refuse to accept
 them, whether explicitly or because most don't support
 [AVS checks](http://en.wikipedia.org/wiki/Address_Verification_System). On the
-plus side, you can often [buy](#purchase_and_reload) them with cash and
-without providing any [identifying information](#personal_information)
-whatsoever. Examples include
-[Simon](https://www.simon.com/giftcard/) and
-[Westfield](http://westfield.com/uscentres/giftcards/) mall gift cards,
-the 
+plus side, you can [buy them](#purchase_and_reload) with cash and without
+providing any [identifying information](#personal_information) whatsoever.
+Examples include [Simon](https://www.simon.com/giftcard/) and
+[Westfield](http://westfield.com/uscentres/giftcards/) mall gift cards, the
 [credit](https://www.discover.com/gift-cards/giving.shtml)
 [card](https://www.americanexpress.com/gift-cards/?inav=footer_giftcards)
 [companies](http://usa.visa.com/personal/cards/prepaid/visa_gift_card.html)
-[themselves](http://www.mastercard.us/prepaid-gift-card.html),
-and many other banks and financial institutions.
+[themselves](http://www.mastercard.us/prepaid-gift-card.html), and many other
+banks and financial institutions.
 
 If gift cards are the runt, _prepaid cards_ are the big brother. They're
 [stored value cards](http://en.wikipedia.org/wiki/Stored-value_card) that
