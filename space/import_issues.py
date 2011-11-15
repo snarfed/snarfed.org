@@ -25,6 +25,8 @@ ln -s gdata-2.0.15/src/atom
 import_issues.py is in the public domain.
 
 Changelog:
+0.2 11/14/2011
+- parse and validate the CSV file first
 0.1 11/11/2011
 - first release!
 """
@@ -46,8 +48,13 @@ from gdata import gauth
 CLIENT_ID = '396649679464.apps.googleusercontent.com'
 CLIENT_SECRET = 'BJnfbAhVja3Ffh6tfwyhnGMH'
 HEADER = ['title', 'content', 'author', 'status', 'owner', 'labels', 'cc']
-LIST_COLUMNS = (5, 6)  # indexes of columns that are lists of values
+REQUIRED_COLUMNS = (0, 1, 2)  # 0-based
+LIST_COLUMNS = (5, 6)  # 0-based; indexes of columns that are lists of values
 
+
+def print_and_flush(str):
+  sys.stdout.write(str)
+  sys.stdout.flush()
 
 def main(args):
   if len(args) != 2:
@@ -55,6 +62,21 @@ def main(args):
     sys.exit(1)
 
   project, filename = args
+
+  # read, normalize, and validate CSV file
+  with open(filename) as f:
+    rows = list(csv.reader(f, skipinitialspace=True))
+
+  passed = True
+  for i, row in enumerate(rows):
+    for c in REQUIRED_COLUMNS:
+      if not row[c]:
+        passed = False
+        print >> sys.stderr, 'Error on line %d: Missing required field %s' % (
+          i + 1, HEADER[c + 1])
+
+  if not passed:
+    sys.exit(1)
 
   # local web server that handles the oauth token redirect. (port 0 means pick
   # any available port.)
@@ -78,30 +100,24 @@ Please click the Grant access button."""
   access_token = phc.get_access_token(request_token)
 
   # import the issues, one at a time
-  with open(filename) as f:
-    reader = csv.reader(f, skipinitialspace=True)
-    sys.stdout.write("Importing %s into %s's issue tracker." % (filename, project))
+  try:
+    for i, row in enumerate(rows):
+      if i == 0 and map(string.lower, row) == HEADER:
+        continue
 
-    try:
-      for i, row in enumerate(reader):
-          row = map(string.strip, row)
-          if i == 0 and map(string.lower, row) == HEADER:
-            continue
-      
-          for c in LIST_COLUMNS:
-            if c < len(row):
-              # split on comma and space. filter out empty strings.
-              values = map(string.strip, row[c].split(', '))
-              row[c] = list(itertools.ifilter(bool, values))
-  
-          phc.add_issue(project, *row, auth_token=access_token)
-          sys.stdout.write('.')
-  
-    except:
-      print >> sys.stderr, '\nError on line %d:\n%s' % (i + 1, row)
-      raise
-    finally:
-      print '\nImported %d issues.' % (i + 1)
+      for c in LIST_COLUMNS:
+        if c < len(row):
+          # split on comma and space. filter out empty strings.
+          values = map(string.strip, row[c].split(', '))
+          row[c] = list(itertools.ifilter(bool, values))
+
+      phc.add_issue(project, *row, auth_token=access_token)
+      print_and_flush('.')
+  except:
+    print >> sys.stderr, '\nError on line %d:\n%s' % (i + 1, row)
+    raise
+  finally:
+    print '\nImported %d issues.' % (i + 1)
 
 
 class OAuthRedirectHandler(BaseHTTPServer.BaseHTTPRequestHandler):
