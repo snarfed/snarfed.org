@@ -8,6 +8,9 @@
  * Gmail, http://mattconstantine.com/mg .
  *
  * Changelog:
+ * 0.13 11/17/2011:
+ * - bug fix: show Move to and Labels pop-up menus (thanks John Marshall!)
+ * - show print and new window buttons in conversation view
  * 0.12 11/14/2011
  * - new gmail selectors
  * - bug fixes for chrome
@@ -97,14 +100,15 @@ div.akc,            /* chat buddy list */
 hr.aeS,             /* border below labels */
 
 /* List view */
-div.G-atb.D.E,      /* header and footer buttons (also applies to conv view) */
+div.ar5.J-J5-Ji,    /* 1-2 of 3, next/prev arrows */
 td.apU > span,      /* per thread stars */
 
 /* Conversation view */
 div.GAvrIe,         /* next/prev thread, settings buttons */
+div.iG.J-J5-Ji,     /* 1-2 of 3, next/prev arrows */
 div.f6,             /* "xxx is not available to chat" */
 div.adC,            /* right side pane (ads, etc.) */
-span.hk.J-J5-Ji,    /* expand all, print, new window buttons */
+/* span.hk.J-J5-Ji,    /\* expand all, print, new window buttons *\/ */
 div.OH0apf,         /* in-message ads */
 td.acX,             /* top right reply  and drop-down arrows */
 span.T-KT,          /* top right per message stars */
@@ -173,6 +177,11 @@ div.aig {
 /* vertical space below labels */
 div.n3 {
   margin-bottom: 1em !important;
+}
+
+/* put search box behind Move to and Labels pop-up menus (they're z-index 7) */
+div.nH.w-asV {
+  z-index: auto !important;
 }
 
 /* hide borders */
