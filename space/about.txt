@@ -1,23 +1,25 @@
 about
 
+<style type="text/css">
+p > a > img {vertical-align: middle;}
+</style>
+
 <a class="shutter" href="ryan.jpg">
   <img class="right shadow" src="ryan_small.jpg" /></a>
 
-I'm Ryan Barrett. I live,
-[work](resume.html), and
-[play](index)
-in Silicon Valley and San Francisco. See my
-[posts](index),
-[pictures](pictures),
-[software](software),
-and [lists](lists).
+I'm Ryan Barrett. For more about me, see my [resume](resume.html),
+[posts](index), [pictures](pictures), [software](software), and [lists](lists).
 
 Here's my contact info:
 
-email: _[public at ryanb dot org](mailto:public_at_ryanb_dot_org)_  
-Jabber: _[heaven@gmail](xmpp:heaven@gmail.com)_  
-AIM: _[bl4ize](aim:goim?screenname=bl4ize)_  
-ICQ: _[1471094](http://wwp.icq.com/1471094)_  
+[![email](/email_envelope.png)](mailto:public_at_ryanb_dot_org)
+[public&#64;ryanb&#46;org](mailto:public_at_ryanb_dot_org)  
+[![facebook button](/facebook_button.png)](http://facebook.com/snarfed.org)
+[Ryan Barrett](http://facebook.com/snarfed.org)  
+[![google plus button](/google_plus_button.png)](https://plus.google.com/103651231634018158746)
+[Ryan Barrett](https://plus.google.com/103651231634018158746)  
+[![twitter button](/twitter_button.png)](http://twitter.com/snarfed_org)
+[snarfed_org](http://twitter.com/snarfed_org)  
 
 snarfed.org has been around [since early 2002](snarfed_org_history). It's hosted
 at [pair.com](http://pair.com/) on a
