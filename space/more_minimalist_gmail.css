@@ -8,6 +8,8 @@
  * Gmail, http://mattconstantine.com/mg .
  *
  * Changelog:
+ * 0.14 11/21/2011:
+ * - conversation view: show top right, per message drop-down More menu
  * 0.13 11/17/2011:
  * - bug fix: show Move to and Labels pop-up menus (thanks John Marshall!)
  * - show print and new window buttons in conversation view
@@ -110,7 +112,7 @@ div.f6,             /* "xxx is not available to chat" */
 div.adC,            /* right side pane (ads, etc.) */
 /* span.hk.J-J5-Ji,    /\* expand all, print, new window buttons *\/ */
 div.OH0apf,         /* in-message ads */
-td.acX,             /* top right reply  and drop-down arrows */
+div.aaq,            /* top right reply arrow button */
 span.T-KT,          /* top right per message stars */
 
 /* Compose view */
