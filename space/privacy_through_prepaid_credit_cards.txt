@@ -80,8 +80,8 @@ most banks, and as usual, the
 [card](http://americanexpress.com/prepaid)
 [companies](http://usa.visa.com/personal/cards/prepaid/index.html).
 
-Continuing with the family metaphor, _VCCs_ (virtual credit cars) could only
-be the sketchy uncle. They're usually issued by overseas companies, often in
+Continuing with the family metaphor, _VCCs_ (virtual credit cards) have to be
+the sketchy uncle. They're usually issued by overseas companies, often in
 unusual countries with looser laws and regulations, which usually means no ID
 checks! They're stored value and reloadable, like prepaid cards, but with
 limited funding mechanisms and higher fees, often based on a percentage as high
@@ -95,14 +95,15 @@ UK-based [Entropay](http://entropay.com), but that usually also means they
 require stricter ID checks.
 
 Finally, the colorful, harmless, doddering old grandpa:
-[digital cash](http://en.wikipedia.org/wiki/Electronic_money). These upstarts
+_[digital cash](http://en.wikipedia.org/wiki/Electronic_money)_. These upstarts
 tout security, privacy/anonymity, and (more) independence from governments and
 central banks. They range from [Bitcoin](http://bitcoin.org/), championed by
 libertarians and privacy freaks alike, to [PayPal](http://www.paypal.com/), that
 bastion of banking regulations and ID requirements. Others include
-[ECount](http://ecount.com/defaultecount.asp), [ProPay](http://www.propay.com/),
-[E-Gold](http://www.e-gold.com/)
-[Liberty Reserve](http://www.libertyreserve.com/)
+[ECount](http://ecount.com/defaultecount.asp),
+[ProPay](http://www.propay.com/),
+[E-Gold](http://www.e-gold.com/),
+[Liberty Reserve](http://www.libertyreserve.com/), and
 [Mondex](http://www.mondexusa.com/).
 
 Most are up and running, and you can use them to buy things, but none are widely
@@ -110,7 +111,7 @@ accepted. Credit card networks like Mastercard, Visa, Discover, etc. are still
 the top dogs in terms of acceptability, but provide little true security and
 absolutely no anonymity. Hybrid systems like PayPal have made inroads, but only
 a little, and most of those are fallint into the traditional bank and credit
-card model, losing most of their anonymity in the process.
+card model, losing any hope of anonymity in the process.
 
 
 <a name="personal_information" />
@@ -245,11 +246,11 @@ debit card. Simon cards are much better!
 
 ### References
 
-[Clairefiles](http://tcftalk.com/clairefiles/) for their thread
-[Quick Anon Plastic](http://tcftalk.com/clairefiles/index.php?PHPSESSID=1a0ae67cc49ef707f6fceec408840268&topic=8123.0) and
-[EscapeArtist](http://www.escapeartist.com/) for their article
+  * [Hank Taggart - How to Purchase Anonymously on the Internet](http://www.nobodywillknow.com/)
+  * [Clairefiles](http://tcftalk.com/clairefiles/) thread:
+[Quick Anon Plastic](http://tcftalk.com/clairefiles/index.php?PHPSESSID=1a0ae67cc49ef707f6fceec408840268&topic=8123.0)
+  * [EscapeArtist](http://www.escapeartist.com/) article:
 [Currency Cards: Like Having Gold in your Wallet](http://www.escapeartist.com/efam/73/Currency_Cards.html).
-
-[cardreport.com](http://www.cardreport.com/dirs/prepaid.html)
-[Google Answers question](http://answers.google.com/answers/threadview?id=277200)
+  * [cardreport.com](http://www.cardreport.com/dirs/prepaid.html)
+  * [Google Answers question: "prepaid debitcards"](http://answers.google.com/answers/threadview?id=277200)
 
