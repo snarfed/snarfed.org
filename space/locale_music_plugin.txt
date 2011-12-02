@@ -1,0 +1,30 @@
+Locale Music Plugin
+
+<a href="https://market.android.com/details?id=org.snarfed.android.localemusic">
+  <img class="right" src="locale_music_plugin_icon.png"></a>
+
+<!-- to package:
+cd ~/src/android
+tar cjf locale_music_plugin.tar.bz2 --exclude-from - locale_music << EOF
+.svn
+ant.properties
+local.properties
+drawable
+screenshot*.png
+EOF
+
+-->
+
+[Locale Music Plugin](https://market.android.com/details?id=org.snarfed.android.localemusic)
+is a plugin for the [Locale](http://www.twofortyfouram.com/) Android app that
+plays any song, audio file, or playlist in the default music app. You can
+[get it from the Android app store](https://market.android.com/details?id=org.snarfed.android.localemusic).
+
+If there's no available music app, it uses the built in Android media player.
+Playlists are only supported on some devices.
+
+It's open source and released into the public domain.
+[Download the code](locale_music_plugin.tar.bz2).
+
+For more, see my blog post
+_[Thoughts on writing my first Android app](thoughts_on_writing_my_first_android_app)_.
