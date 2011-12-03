@@ -19,12 +19,12 @@ I'm also happy I was alive beforehand, so I know how it used to work and why I
 should be thankful.
 
 Android is a great example of the software-ization of our lives. For many of us,
-our smart phone is personal utility belt, a daily magic wand. Much has been made
-of this, but for people who write code, it's a Good Thing. One of the benefits
-espoused by the open source movement is the ability to scratch your own itch.
-As software reaches into more parts of our daily lives, we're able to scratch
-more and more itches. That's great for us hackers, and when we give that code
-back - even if we charge for it - it's good for other people too.
+our smart phone is a personal utility belt, a daily magic wand. Much has been
+made of this, but for people who write code, it's a Good Thing. One of the
+benefits espoused by the open source movement is scratching your own itch. As
+software reaches into more parts of our daily lives, we're able to scratch more
+and more itches. That's great for us hackers, and when we give that code back -
+even if we charge for it - it's good for other people too.
 
 I was also pleasantly surprised by the development tools. Android is a big
 platform with a big developer surface area: OS, SDK, APIs, new conceptual
@@ -47,8 +47,7 @@ which can be reused by other apps via
 Like so many frameworks before, this is intended to allow interoperability,
 expecially between apps that may not know anything about each other.
 
-I like the design, and based on my limited experience, the implementation. The
-catch is that designing for reuse,
+I like this. The catch is that designing for reuse,
 [Steve Yegge style](https://plus.google.com/112678702228711889851/posts/eVeouesvaVX),
 takes time and effort, so most Android apps don't. Unfortunately, the platform
 requires you to build on mechanisms that _do_ allow reuse by default, which
