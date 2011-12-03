@@ -1,0 +1,71 @@
+Thoughts on writing my first Android app
+
+<a href="https://market.android.com/details?id=org.snarfed.android.localemusic">
+  <img class="right" src="locale_music_plugin_icon.png"></a>
+
+I just finished my first Android app,
+[Locale Music Plugin](locale_music_plugin). I don't expect to do much more
+mobile development, nor do I have any breakthrough ideas or conclusions, but it
+was a fun little side project, and I collected a few thoughts along the way.
+
+<!-- more -->
+<p/>
+
+First, the good. Android didn't invent online app stores or self service
+publishing, but it does them well. I'm excited that I can consume and publish
+software (and media!) immediately, friction-free, anywhere and any time.
+[Policy questions notwithstanding.](2011-11-16_should_first_sale_doctrine_die).
+I'm also happy I was alive beforehand, so I know how it used to work and why I
+should be thankful.
+
+Android is a great example of the "softwareization" of our lives. For many of
+us, our smart phone is personal utility belt, a daily magic wand. Much has been
+made of this, but for people who write code, it's a Good Thing. One of the
+benefits espoused by the open source movement is the ability to "scratch your
+own itch." As software reaches into more parts of our daily lives, we're able to
+scratch more and more itches. That's great for us hackers, and when we give that
+code back - even if we charge for it - it's good for other people too.
+
+I was also pleasantly surprised by the development tools. Android is a big
+platform with a big developer surface area: OS, SDK, APIs, new conceptual
+models, emulators and on-device debugging, packaging, online store and services,
+miscellaneous hardware inputs and outputs, and a multitude of devices. I didn't
+try out everything, but I did use the core toolchain from end to end, and it was
+smooth and solid.
+
+<a href="http://android.com/">
+  <img class="left" src="android.png"></a>
+
+Naturally, though, it wasn't all rainbows and ponies. A couple aspects struck me
+as particularly exciting, but when I pushed, I found them unfinished, all the
+more disappointing for showing me what could have been...but wasn't.
+
+First, modularity and reuse. Android apps are composed of
+[activities](http://developer.android.com/guide/topics/fundamentals/activities.html),
+which can be reused by other apps via
+[intents](http://developer.android.com/guide/topics/intents/intents-filters.html).
+Like so many frameworks before, this is intended to allow interoperability,
+expecially between apps that may not know anything about each other.
+
+I like the design, and based on my limited experience, the implementation. The
+catch is that designing for reuse,
+[Steve Yegge style](https://plus.google.com/112678702228711889851/posts/eVeouesvaVX),
+takes time and effort, so most Android apps don't. Unfortunately, the platform
+requires you to build on mechanisms that _do_ allow reuse by default, which
+means many apps can be reused even though they never intended to and don't
+support it well. In my case, the offending app was
+[Google Music](https://market.android.com/details?id=com.google.android.music),
+but it's just an example.
+
+Second, storage and UI. I love that the primary storage is a relational
+database, [WinFS](http://en.wikipedia.org/wiki/WinFS) style, instead of a
+filesystem. I was even more excited to find UI widgets that
+[connect to it automatically](http://developer.android.com/guide/topics/ui/binding.html).
+Just hook up the columns and presto, instant UI, no code necessary! Sadly, out
+of the dozens of built-in UI elements, only three do this. Why oh why didn't
+they follow through on this wonderful idea? Hat tip to
+[Kevin Gibbs](http://www.kevgibbs.com/) and others for noticing this well before
+me.
+
+Regardless, the good outweighed the bad. I had the full experience, even if it
+wasn't a deep dive, and I enjoyed it. Thanks for a great platform, Android team!
