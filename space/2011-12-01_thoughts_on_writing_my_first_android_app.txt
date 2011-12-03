@@ -14,17 +14,17 @@ was a fun little side project, and I collected a few thoughts along the way.
 First, the good. Android didn't invent online app stores or self service
 publishing, but it does them well. I'm excited that I can consume and publish
 software (and media!) immediately, friction-free, anywhere and any time.
-[Policy questions notwithstanding.](2011-11-16_should_first_sale_doctrine_die).
+[Policy questions notwithstanding.](2011-11-16_should_first_sale_doctrine_die)
 I'm also happy I was alive beforehand, so I know how it used to work and why I
 should be thankful.
 
-Android is a great example of the "softwareization" of our lives. For many of
-us, our smart phone is personal utility belt, a daily magic wand. Much has been
-made of this, but for people who write code, it's a Good Thing. One of the
-benefits espoused by the open source movement is the ability to "scratch your
-own itch." As software reaches into more parts of our daily lives, we're able to
-scratch more and more itches. That's great for us hackers, and when we give that
-code back - even if we charge for it - it's good for other people too.
+Android is a great example of the software-ization of our lives. For many of us,
+our smart phone is personal utility belt, a daily magic wand. Much has been made
+of this, but for people who write code, it's a Good Thing. One of the benefits
+espoused by the open source movement is the ability to scratch your own itch.
+As software reaches into more parts of our daily lives, we're able to scratch
+more and more itches. That's great for us hackers, and when we give that code
+back - even if we charge for it - it's good for other people too.
 
 I was also pleasantly surprised by the development tools. Android is a big
 platform with a big developer surface area: OS, SDK, APIs, new conceptual
