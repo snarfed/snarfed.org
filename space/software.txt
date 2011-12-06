@@ -11,6 +11,10 @@ is public domain. Also see [other lists](lists).
 <a name="projects"></a>
 ### Projects
 
+  * [Locale Headphone Buttons Plugin](locale_headphone_buttons_plugin)
+is a plugin for the [Locale](http://www.twofortyfouram.com/) Android app that
+simulates pressing a headphone or headset button.
+
   * [Locale Music Plugin](locale_music_plugin)
 is a plugin for the [Locale](http://www.twofortyfouram.com/) Android app that
 plays any song, audio file, or playlist in the default music app.

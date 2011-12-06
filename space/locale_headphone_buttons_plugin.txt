@@ -25,7 +25,8 @@ svn ci -m 'new release' locale_headphone_buttons_plugin.tar.bz2
 is a plugin for the [Locale](http://www.twofortyfouram.com/) Android app that
 simulates pressing a headphone or headset button. Available buttons are the
 "hook" ie single headset button, Play/Pause, Play, Pause, Next, Previous, Fast
-Forward, Rewind, Stop.
+Forward, Rewind, Stop. You can
+[get it from the Android app store](https://market.android.com/details?id=org.snarfed.android.headphonebuttons).
 
 This is useful because headphone buttons automatically use the current
 "preferred" media player, which is usually the most recently used one, instead
@@ -36,4 +37,3 @@ The app is open source and released into the public domain.
 
 For more, see my blog post
 _[Thoughts on writing my first Android app](2011-12-02_thoughts_on_writing_my_first_android_app)_.
-
