@@ -4,7 +4,10 @@ Locale Music Plugin
   <img class="right" src="locale_music_plugin_icon.png"></a>
 
 <!-- to package:
-cd ~/src/android
+cd ~/src/android/locale_music
+ant clean
+cd ..
+
 tar cjf locale_music_plugin.tar.bz2 --exclude-from - locale_music << EOF
 .svn
 ant.properties
@@ -13,6 +16,9 @@ drawable
 screenshot*.png
 EOF
 
+mv locale_music_plugin.tar.bz2 ~/s
+cd ~/s
+svn ci -m 'new release' locale_music_plugin.tar.bz2
 -->
 
 [Locale Music Plugin](https://market.android.com/details?id=org.snarfed.android.localemusic)
