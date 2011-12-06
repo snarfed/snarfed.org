@@ -29,7 +29,7 @@ plays any song, audio file, or playlist in the default music app. You can
 If there's no available music app, it uses the built in Android media player.
 Playlists are only supported on some devices.
 
-It's open source and released into the public domain.
+This app is open source and released into the public domain.
 [Download the code](locale_music_plugin.tar.bz2).
 
 For more, see my blog post
