@@ -19,7 +19,7 @@ simulates pressing a headphone or headset button.
 is a plugin for the [Locale](http://www.twofortyfouram.com/) Android app that
 plays any song, audio file, or playlist in the default music app.
 
-  * [mockfacebook](http://code.google.com/p/mockfacebook/) is a standalone HTTP
+  * [mockfacebook](http://github.com/rogerhu/mockfacebook) is a standalone HTTP
 server that implements Facebook's
 [FQL](http://developers.facebook.com/docs/reference/fql/) and
 [Graph API](http://developers.facebook.com/docs/reference/api/). It's

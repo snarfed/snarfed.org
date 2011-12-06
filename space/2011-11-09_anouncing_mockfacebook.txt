@@ -1,6 +1,6 @@
 Announcing mockfacebook
 
-<a href="http://code.google.com/p/mockfacebook/">
+<a href="http://github.com/rogerhu/mockfacebook">
   <img class="right" src="beer_cap_facebook_logo.png" /></a>
 
 Recently, while researching a
@@ -12,7 +12,7 @@ couldn't find a decent library for mocking or faking
 uses live Facebook to test, sometimes even in unit tests!
 
 A few thousand lines of code later, I had a little utility to fill that void.
-[mockfacebook](http://code.google.com/p/mockfacebook/) is a standalone HTTP
+[mockfacebook](http://github.com/rogerhu/mockfacebook) is a standalone HTTP
 server that implements Facebook's FQL and Graph API. It's particularly useful
 for automated integration testing. It's backed by a [SQLite](http://sqlite.org/)
 database, which you can seed from Facebook or populate manually or
