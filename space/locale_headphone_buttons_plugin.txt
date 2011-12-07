@@ -16,9 +16,9 @@ drawable
 screenshot*.png
 EOF
 
-mv locale_headphone_buttons_plugin.tar.bz2 ~/s
-cd ~/s
-svn ci -m 'new release' locale_headphone_buttons_plugin.tar.bz2
+mv locale_headphone_buttons_plugin.tar.bz2 ~/s; \
+  cd ~/s; \
+  svn ci -m 'new release' locale_headphone_buttons_plugin.tar.bz2
 -->
 
 [Locale Headphone Buttons Plugin](https://market.android.com/details?id=org.snarfed.android.headphonebuttons)

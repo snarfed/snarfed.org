@@ -16,9 +16,9 @@ drawable
 screenshot*.png
 EOF
 
-mv locale_music_plugin.tar.bz2 ~/s
-cd ~/s
-svn ci -m 'new release' locale_music_plugin.tar.bz2
+mv locale_music_plugin.tar.bz2 ~/s; \
+  cd ~/s; \
+  svn ci -m 'new release' locale_music_plugin.tar.bz2
 -->
 
 [Locale Music Plugin](https://market.android.com/details?id=org.snarfed.android.localemusic)
