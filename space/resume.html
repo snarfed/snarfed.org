@@ -12,30 +12,16 @@
 body {
   width:          580px;
   margin-left:    30px;
-
-  background-color:  white;
-  color:          black;
-
   font-family:    Arial, "lucida console", sans-serif;
-  font-size:      13px;
 }
 
 p {
-  margin:         0px;
-  padding:        0px;
-}
-
-br {
-  font-size:      3px;
+  margin-top:         0px;
 }
 
 p.header {
-  letter-spacing: 2px;
-
+  letter-spacing: .2em;
   margin-left:    -20px;
-  margin-bottom:  4px;
-  margin-top:     12px;
-
   border-bottom:  solid;
   border-width:   1px;
 }
@@ -45,32 +31,28 @@ table {
   width:          100%;
 }
 
-td        { padding: 0px; }
+#resumeheader {
+  margin-bottom: 1em;
+}
+
 td.left   { text-align:  left; }
 td.right  { text-align:  right; }
 
-ul { margin: 0px; }
 li {
-  padding: 2px;
-  margin-: .5em;
+  margin: .5em;
 }
 
 td#name {
+  letter-spacing: .2em;
   vertical-align: top;
 
-  font-size:      20px;
-  letter-spacing: 6px;
+  font-size:      1.5em;
   font-weight:    bold;
 }
 
-td#contact {
-  font-size:      12px;
-  line-height:    12px;
+.employer, .activity {
+  font-weight: bold;
 }
-
-span.employer { font-weight: bold; }
-span.location { margin-left: 10px; }
-span.activity { font-weight: bold; }
 </style>
 
 </head>
@@ -123,7 +105,7 @@ Python, Java, C++.</li>
 <span class="employer">
 <a href="http://www.google.com/">Google Inc.</a></span>
 </td>
-<td class="right">June 2003 - present</td>
+<td class="right"><i>June 2003 - present</i></td>
 </tr></table>
 
 <p class="title">Software Engineer</p>
@@ -150,7 +132,7 @@ cloud computing platform. The datastore is a large scale,
 distributed structured storage system used by both App Engine
 and other Google products. Includes a dynamic query planner, full featured
 transaction engine, rich structured primary keys, real-time index management,
-and semantic typing. Scales to >XXXB rows, >XXXTB of data, and >XXXkqps.</p>
+and semantic typing. Scales to >XXXB rows, >XPB of data, and >XXXkqps.</p>
 </li>
 
 <li><i>April 2006 - Dec. 2006</i>
@@ -194,7 +176,7 @@ We again migrated everything without downtime and with a fallout rate of under
 <span class="employer">
 <a href="http://almaden.ibm.com/">IBM Almaden Research Center</a></span>
 </td>
-<td class="right">Sept. 2002 - June 2003</td>
+<td class="right"><i>Sept. 2002 - June 2003</i></td>
 </tr></table>
 
 <p class="title">Software Developer, Life Sciences</p>
@@ -210,7 +192,7 @@ We again migrated everything without downtime and with a fallout rate of under
 <span class="employer">
 <a href="http://www.ibm.com/extremeblue/">IBM Extreme Blue</a></span>
 </td>
-<td class="right">June-Sept. 2002</td>
+<td class="right"><i>June-Sept. 2002</i></td>
 </tr></table>
 
 <p class="title">Software Developer, Life Sciences</p>
@@ -232,7 +214,7 @@ We again migrated everything without downtime and with a fallout rate of under
 <span class="employer">
 <a href="http://www.lucasarts.com/">LucasArts Entertainment Co.</a></span>
 </td>
-<td class="right">June-Sept. 2001</td>
+<td class="right"><i>June-Sept. 2001</i></td>
 </tr></table>
 
 <p class="title">Software Developer,
@@ -256,7 +238,7 @@ We again migrated everything without downtime and with a fallout rate of under
 <a href="http://www.disobey.com/ghostsites/show_exhibit.shtml/webvan">
 Webvan Group</a></span>
 </td>
-<td class="right">June-Sept. 2000</td>
+<td class="right"><i>June-Sept. 2000</i></td>
 </tr></table>
 
 <p class="title">Software Developer, OFS</p>
@@ -277,7 +259,7 @@ fly.</li>
 <td class="left">
 <span class="employer"><a href="http://www.ea.com/">Electronic Arts</a></span>
 </td>
-<td class="right">June-Sept. 1999</td>
+<td class="right"><i>June-Sept. 1999</i></td>
 </tr></table>
 
 <p class="title">Quality Assurance Tester</p>
@@ -289,7 +271,7 @@ fly.</li>
 <td class="left">
 <span class="employer">MobileForce Technologies</span>
 </td>
-<td class="right">April-Sept. 1998</td>
+<td class="right"><i>April-Sept. 1998</i></td>
 </tr></table>
 
 <p class="title">Software Developer</p>
