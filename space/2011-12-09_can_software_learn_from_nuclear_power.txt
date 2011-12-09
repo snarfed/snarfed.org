@@ -58,7 +58,7 @@ He argues that tightly coupled systems have little room for error, so they're
 best run by centralized organizations. That works for linear systems too, since
 they're generally well understood and can follow rote, by-the-book processes.
 
-On the other hand, loosely coupled systems, have slack to absorb individual
+On the other hand, loosely coupled systems have slack to absorb individual
 errors, which allows for out-of-the-box thinking common in decentralized
 organizations. More importantly, complex systems _demand_ decentralization,
 since unexpected interactions can often only be understood and handled by the
