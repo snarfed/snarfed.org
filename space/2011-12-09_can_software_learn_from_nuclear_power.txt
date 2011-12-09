@@ -11,8 +11,8 @@ When it was published in 1984, the Internet and large distributed software
 systems were still nascent, so he focused on nuclear power plants, chemical
 plants, and marine and air traffic control. Even so, the parallels are
 remarkable: buffers and queues, throttles and safety valves, abuse of common
-subsystems, unexpected interactions, and incomplete and untrustworthy monitoring
-abound. If you replace valves with network connections and gases with data, a
+subsystems, unexpected interactions, and incomplete and untrustworthy
+monitoring. Replace valves with network connections and gases with data, and a
 1970s power plant meltdown looks a lot like a 2011 cloud platform outage.
 
 <!-- more -->
@@ -20,46 +20,46 @@ abound. If you replace valves with network connections and gases with data, a
 
 The good news is, we've already learned some of Perrow's lessons. As he drills
 into system architectures and accidents, he lays ground rules that we now know
-well. Individual component failures are routine; handle them redundancy. Human
-errors are inevitable; catch them with safeguards. Still, systems are complex
-enough that unexpected interactions are common, especially during component
-failures. This leads to large scale failures: "normal accidents" in his world,
-outages in ours.
+well. Component failures are routine; handle them with redundancy. Human errors
+are inevitable; catch them with safeguards. Still, systems are complex enough
+that unexpected interactions are common, especially during component failures.
+This leads to large scale failures: "normal accidents" in his world, outages in
+ours.
 
 Continuing on familiar ground, Perrow builds a
 [taxonomy of systems](http://books.google.com/books?id=VC5hYoMw4N0C&pg=PA97&lpg=PA97&ots=MCajdI32mf)
 based on two criteria we know well: _complexity_ of interaction between parts
-and how tight the _coupling_ is between connected parts. Connecting this to
-failure rates, he concludes that systems with complex interactions and tight
-coupling are by far the most failure prone. Sound familiar?
+and _coupling_ tightness between connected parts. Connecting this to failure
+rates, he concludes that systems with complex interactions and tight coupling
+are by far the most failure prone. Sound familiar?
 
 "Normal accident" rates are low for linear, loosely coupled systems. The Post
-Office is a classic example. Interestingly, though, they're also low in linear,
-tight systems such as assembly lines, as well as in complex, loose systems such
-as universities. Both can fail, but the causes are straightforward. A system
+Office is a classic example. Interestingly, though, they're also relatively low
+in both linear, tight systems like assembly lines and complex, loose systems
+like universities. Both can fail, but the causes are straightforward. A system
 must be both complex _and_ tightly coupled before it's prone to accidents. This
-begs the question: can you prevent failures by making a system more linear or by
+begs the question: can you prevent failures by making a system more linear, or by
 loosening its coupling? Perrow says yes.
 
 <a class="shutter" href="perrow_interaction_coupling.png">
   <img class="right" src="perrow_interaction_coupling_thumb.png"></a>
 
-Could we do the same with software we build? Loose coupling is still familiar
-ground: we know that replacing an RPC call with a queue, for example, can
-improve reliability. Linearizing is less obvious, though, especially since it
-doesn't always mean simplifying. Can we make that online app look more like an
-assembly line by separating data generation from serving? How about replacing
-real time indexing with a batch indexer? Can we turn that big hairy
+In software, loose coupling is common. Ror example, we know that replacing an
+RPC call with a queue can improve reliability, though at the cost of latency.
+Linearizing is less obvious, though, especially since it doesn't always mean
+simplifying. Can we make that online app look more like an assembly line by
+separating data generation from serving? How about replacing real time indexing
+with a batch indexer? Can we turn that big hairy
 [MapReduce](http://en.wikipedia.org/wiki/MapReduce) into a pipeline?
 
 Things get really interesting - and scary - when Perrow turns to
 [look at operations](http://books.google.com/books?id=VC5hYoMw4N0C&lpg=PA97&ots=MCajdI32mf&pg=PA332).
 He argues that tightly coupled systems have little room for error, so they're
-best run by centralized organization. That works for linear systems too, since
-they're generally well understood and can by run by rote, by-the-book processes.
+best run by centralized organizations. That works for linear systems too, since
+they're generally well understood and can follow rote, by-the-book processes.
 
-Loosely coupled systems, on the other hand, have slack to absorb individual
-errors, which allows for the out-of-the-box thinking common in decentralized
+On the other hand, loosely coupled systems, have slack to absorb individual
+errors, which allows for out-of-the-box thinking common in decentralized
 organizations. More importantly, complex systems _demand_ decentralization,
 since unexpected interactions can often only be understood and handled by the
 people closest to them.
@@ -95,17 +95,17 @@ happened, so we guess and take shortcuts and clean up later. Usually this is the
 right choice, but not always.
 
 Of course, there are clear differences between nuclear power plants and
-software. We're not bound by most of the physical constraints on industrial
-systems, which is both good and bad. We update our systems quickly and often,
-sometimes making significant design changes. We have tools such as abstraction,
-reuse, and automated testing that our industrial colleagues don't, or at least
-not to the same degree.
+software. We're not bound by the physical constraints on industrial systems,
+which is both good and bad. We update our systems quickly and often, sometimes
+making significant design changes. We have tools such as abstraction, reuse, and
+automated testing that our industrial colleagues don't, or not to the same
+degree.
 
-Do these differences make us better off? Or do we just use them to squeeze more
-complexity out of our systems, maintaining the reliability status quo? Would
-designing more linearly improve our reliability, as Perrow shows it did with
-some nuclear power plants? Have we learned any more about how to structure ops
-organizations? I don't know, but I might have a better toolbox for handling
-these kinds of questions in the future.
+Do these differences make our systems less error prone? Or do we just use them
+to squeeze out more complexity and maintain the reliability status quo? Would
+designing more linearly help, as Perrow shows it did with some nuclear power
+plants? Have we learned to structure ops organizations any better? I don't know,
+but I might at least have a better toolbox for these kinds of questions in the
+future.
 
 _Thanks to Mike Shields for recommending this book._
