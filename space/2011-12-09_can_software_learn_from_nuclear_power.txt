@@ -29,22 +29,22 @@ ours.
 Continuing on familiar ground, Perrow builds a
 [taxonomy of systems](http://books.google.com/books?id=VC5hYoMw4N0C&pg=PA97&lpg=PA97&ots=MCajdI32mf)
 based on two criteria we know well: _complexity_ of interaction between parts
-and _coupling_ tightness between connected parts. Connecting this to failure
+and _coupling tightness_ between connected parts. Connecting this to failure
 rates, he concludes that systems with complex interactions and tight coupling
 are by far the most failure prone. Sound familiar?
 
-"Normal accident" rates are low for linear, loosely coupled systems. The Post
-Office is a classic example. Interestingly, though, they're also relatively low
-in both linear, tight systems like assembly lines and complex, loose systems
-like universities. Both can fail, but the causes are straightforward. A system
-must be both complex _and_ tightly coupled before it's prone to accidents. This
-begs the question: can you prevent failures by making a system more linear, or by
-loosening its coupling? Perrow says yes.
+The failure rate for linear, loosely coupled systems is low. The Post Office is
+a classic example. Interestingly, though, it's also low in both linear, tight
+systems like assembly lines and complex, loose systems like universities. Both
+can fail, but the causes are straightforward. A system must be both complex
+_and_ tightly coupled before it's prone to accidents. This begs the question:
+can you prevent failures by making a system more linear, or by loosening its
+coupling? Perrow says yes.
 
 <a class="shutter" href="perrow_interaction_coupling.png">
   <img class="right" src="perrow_interaction_coupling_thumb.png"></a>
 
-In software, loose coupling is common. Ror example, we know that replacing an
+In software, loose coupling is common. For example, we know that replacing an
 RPC call with a queue can improve reliability, though at the cost of latency.
 Linearizing is less obvious, though, especially since it doesn't always mean
 simplifying. Can we make that online app look more like an assembly line by
@@ -81,8 +81,8 @@ Achilles heel, and neither prevents failures entirely.
 
 <img class="right shadow" src="truck_accident.jpg" />
 
-One particularly interesting point was externalities, especially production
-pressure to minimize costs and downtime. Perrow turns
+One particularly interesting point was externalities such as pressure from
+management to minimize costs and downtime. Perrow turns
 [risk homeostasis](http://en.wikipedia.org/wiki/Risk_homeostasis) on its head
 with example after example of technological safeguards that operators abuse to
 maintain the same accident rate while doing more, faster. Truckers who get
