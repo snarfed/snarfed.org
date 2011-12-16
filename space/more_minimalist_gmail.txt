@@ -16,3 +16,8 @@ further, hides more, and since it's a userstyle, is much simpler.
 More Minimalist Gmail also has
 [its own page](http://userstyles.org/styles/35678) on
 [userstyles.org](http://userstyles.org/).
+
+Tips:
+  * You can hide individual labels in the
+  [GMail settings Labels tab](https://mail.google.com/mail/u/0/#settings/labels).
+  This includes built in labels like Starred, Important, Chats, Circles, etc.
