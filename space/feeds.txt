@@ -11,15 +11,16 @@ Thanks to [Google Reader](http://reader.google.com/),
 [Atom](http://atomenabled.org/), and
 [Fletcher Penney](http://fletcherpenney.net/)'s
 [opml2markdown.xslt](http://fletcherpenney.net/2006/03/markdown_and_xml),
-which I used to generate this list.
+which I use to generate this list.
 
 <!--
-opml2markdown command line. note that it filters out private picasa albums and
+opml2markdown command line. note that it filters out picasa albums and
 other private rss feeds.
 
 xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
   ~/src/misc/google-reader-subscriptions.opml.xml \
-  | grep -v authkey \
+  | grep -v picasaweb \
+  | grep -v smugmug \
   | grep -v facebook.com \
   | grep -v blog.myspace.com
 
@@ -74,17 +75,8 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 
 * [Facebook friends status updates](2009-03-05_facebook_friend_lists)
 
-* [3D Realms News](http://www.3drealms.com/)
-(_[subscribe](http://www.3drealms.com/atom.xml)_) 
-
 * [A Life Well Wasted](http://alifewellwasted.com/)
 (_[subscribe](http://alifewellwasted.com/feed/atom/)_) 
-
-* [absolutgcs.org](http://absolutgcs.org)
-(_[subscribe](http://absolutgcs.org/feed/)_) 
-
-* [adsbeam.com (Jeremy's company)](http://adsbeam.com)
-(_[subscribe](http://adsbeam.com/feed)_) 
 
 * [Amit's Thoughts](http://amitp.blogspot.com/)
 (_[subscribe](http://amitp.blogspot.com/feeds/posts/default)_) 
@@ -92,29 +84,20 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [Andrew Chatham](http://andrewchatham.com/blog)
 (_[subscribe](http://andrewchatham.com/blog/feed/)_) 
 
-* [annotated living (jonmac)](http://dr-nuk.livejournal.com/)
-(_[subscribe](http://idle-handed.livejournal.com/data/rss)_) 
+* [annotated living](http://dr-nuk.livejournal.com/)
+(_[subscribe](http://dr-nuk.livejournal.com/data/rss)_) 
 
-* [Bill Katz](http://www.billkatz.com)
-(_[subscribe](http://www.billkatz.com/feeds/atom.xml)_) 
+* [BioCurious](http://biocurious.org)
+(_[subscribe](http://biocurious.org/feed/)_) 
 
-* [Blah Blah Blog](http://kenashcraft.blogspot.com/)
-(_[subscribe](http://feeds2.feedburner.com/blogspot/iPmh)_) 
+* [BioCurious. A hackerspace for bio.](http://biocurious.posterous.com)
+(_[subscribe](http://biocurious.posterous.com/rss.xml)_) 
 
 * [brad's life](http://brad.livejournal.com/)
 (_[subscribe](http://brad.livejournal.com/data/rss)_) 
 
 * [Bret Taylor's blog](http://bret.appspot.com/)
 (_[subscribe](http://feeds.feedburner.com/brettaylor)_) 
-
-* [Bubba Murarka](http://murarka.com)
-(_[subscribe](http://feeds.feedburner.com/bubbamurarka)_) 
-
-* [Bug 287215](https://bugs.launchpad.net/bugs/287215)
-(_[subscribe](http://feeds.launchpad.net/bugs/287215/bug.atom)_) 
-
-* [Bug 295990](https://bugs.launchpad.net/bugs/295990)
-(_[subscribe](http://feeds.launchpad.net/bugs/295990/bug.atom)_) 
 
 * [California Academy of Sciences - NightLife](http://www.calacademy.org)
 (_[subscribe](http://www.calacademy.org/rss/nightlife.rss)_) 
@@ -128,41 +111,17 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [christopher baus.net](http://baus.net/)
 (_[subscribe](http://feeds.baus.net/)_) 
 
-* [Clayton's Blog](http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Fcl8on.blog.com%2Ffeed%2F)
+* [Clayton's Blog](http://cl8on.blog.com)
 (_[subscribe](http://cl8on.blog.com/feed/)_) 
-
-* [Comments on Android Stuff: Call Logs Backup & Restore](http://android.riteshsahu.com/2009/10/call-logs-backup-restore.html)
-(_[subscribe](http://android.riteshsahu.com/feeds/1666130314820497761/comments/default)_) 
-
-* [Comments on Android Stuff: Scheduled Backups in SMS Backup & Restore](http://android.riteshsahu.com/2010/02/scheduled-backups-in-sms-backup-restore.html)
-(_[subscribe](http://android.riteshsahu.com/feeds/6314106324892705503/comments/default)_) 
-
-* [Comments on Martin Vidner: cnetworkmanager 0.21](http://mvidner.blogspot.com/2009/08/cnetworkmanager-021.html)
-(_[subscribe](http://mvidner.blogspot.com/feeds/2285532587951903703/comments/default)_) 
-
-* [Comments on Martin Vidner: cnetworkmanager 0.7.1](http://mvidner.blogspot.com/2008/07/cnetworkmanager-071.html)
-(_[subscribe](http://mvidner.blogspot.com/feeds/8142748945973708301/comments/default)_) 
-
-* [Court Historian](http://www.courthistorian.com/)
-(_[subscribe](http://www.courthistorian.com/atom.xml)_) 
 
 * [Demruth](http://www.demruth.com/blog)
 (_[subscribe](http://www.demruth.com/blog/?feed=rss2)_) 
 
-* [Devon's Photo Gallery](https://picasaweb.google.com/devonlahar)
-(_[subscribe](http://picasaweb.google.com/data/feed/base/user/devonlahar?alt=rss&kind=album&hl=en_US&access=public)_) 
-
-* [DeWitt Clinton](http://blog.unto.net/)
-(_[subscribe](http://feeds.feedburner.com/untonet)_) 
-
 * [Discussions on scripts by ryanb | Userscripts.org](http://userscripts.org/users/224162/scripts)
 (_[subscribe](http://userscripts.org/feeds/users/224162/scripts/comments)_) 
 
-* [Django-nonrel & webdev blog - All Buttons Pressed](http://www.allbuttonspressed.com/blog/django)
+* [Django-nonrel & webdev blog - All Buttons Pressed](http://www.allbuttonspressed.com/)
 (_[subscribe](http://feeds.feedburner.com/AllButtonsPressed)_) 
-
-* [Doctype - Answers to Can color be used in a CSS attribute selector?](http://doctype.com/color-used-css-attribute-selector)
-(_[subscribe](http://doctype.com/questions/3105/answers.rss)_) 
 
 * [Dr. Razavi's Good to Know Info](http://dr-razavi.blogspot.com/)
 (_[subscribe](http://dr-razavi.blogspot.com/feeds/posts/default)_) 
@@ -173,18 +132,17 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [emacs-fu](http://emacs-fu.blogspot.com/search/label/new)
 (_[subscribe](http://emacs-fu.blogspot.com/feeds/posts/default/-/new)_) 
 
-* [Enhanced Google Analytics Version History](https://addons.mozilla.org/en-US/firefox/)
-(_[subscribe](https://addons.mozilla.org/en-US/firefox/addon/11120/versions/format:rss)_) 
+* [Events - #GTUGSF - Google Technology User Group - San Francisco](http://www.gtugsf.com/events/)
+(_[subscribe](http://www.gtugsf.com/events/rss/%23GTUGSF+-+Google+Technology+User+Group+-+San+Francisco/)_) 
 
-* [evan_tech](http://evan-tech.livejournal.com/)
-(_[subscribe](http://community.livejournal.com/evan_tech/data/atom)_) 
+* [Events - BioCurious](http://www.meetup.com/BioCurious/events/)
+(_[subscribe](http://www.meetup.com/BioCurious/events/rss/BioCurious/)_) 
 
-* [Evan's LiveJournal](http://evan.livejournal.com/)
-(_[subscribe](http://evan.livejournal.com/data/rss)_) 
+* [Events - SF Bay Area Google App Engine Developers](http://www.meetup.com/appengine/events/)
+(_[subscribe](http://www.meetup.com/appengine/events/rss/SF+Bay+Area+Google+App+Engine+Developers/)_) 
 
-
-* [Flyv's Warcraft Blog](http://flyv.typepad.com/warcraft/)
-(_[subscribe](http://feeds.feedburner.com/FlyvsWarcraftBlog?format=xml)_) 
+* [Fear, Greed and the Human Condition](http://chrisvale.tumblr.com/)
+(_[subscribe](http://chrisvale.tumblr.com/rss)_) 
 
 * [GAE Planet](http://gae-planet.appspot.com/)
 (_[subscribe](http://feeds.feedburner.com/gae-planet)_) 
@@ -192,11 +150,20 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [Gamasutra Feature Articles](http://www.gamasutra.com/features)
 (_[subscribe](http://feeds.feedburner.com/GamasutraFeatureArticles)_) 
 
-* [Game Theory](http://gametheoryshow.com)
-(_[subscribe](http://www.gametheoryshow.com/rss)_) 
+* [GamesIndustry.biz - News | Filtered: title:Article OR title:Editorial](http://www.gamesindustry.biz)
+(_[subscribe](http://re.rephrase.net/filter/?feed=http%3A%2F%2Fwww.gamesindustry.biz%2Frss%2Fgamesindustry_news_feed.rss&filter=title%3AArticle+OR+title%3AEditorial)_) 
 
 * [GameSpot's Reviews](http://www.gamespot.com)
-(_[subscribe](http://www.gamespot.com/rss/game_updates.php?type=5)_) 
+(_[subscribe](http://fulltextrssfeed.com/www.gamespot.com/rss/game_updates.php?type=5)_) 
+
+* [GARY WHITTA](http://gwhitta.blogspot.com/)
+(_[subscribe](http://gwhitta.blogspot.com/feeds/posts/default)_) 
+
+* [Giri's Startup Life](http://girisreenivas.com)
+(_[subscribe](http://girisreenivas.com/feed/)_) 
+
+* [Google Alerts - "mockfacebook"](http://www.google.com/reader/view/user%2F12768739244895054761%2Fstate%2Fcom.google%2Falerts%2F7842557606252670048)
+(_[subscribe](http://www.google.com/reader/public/atom/user/12768739244895054761/state/com.google/alerts/7842557606252670048)_) 
 
 * [Google App Engine Blog](http://googleappengine.blogspot.com/)
 (_[subscribe](http://feeds.feedburner.com/GoogleAppEngineBlog)_) 
@@ -204,20 +171,11 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [Google App Engine Java Persistence](http://gae-java-persistence.blogspot.com/)
 (_[subscribe](http://gae-java-persistence.blogspot.com/feeds/posts/default)_) 
 
-* [Google Nexus One](http://googlenexusoneboard.blogspot.com/)
-(_[subscribe](http://googlenexusoneboard.blogspot.com/feeds/posts/default)_) 
+* [Google+ Platform Blog](http://googleplusplatform.blogspot.com/)
+(_[subscribe](http://feeds.feedburner.com/GppBxyz)_) 
 
 * [gTasks release notes](http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Fsites.google.com%2Fsite%2Fssi4and%2Frn%2Fposts.xml)
 (_[subscribe](http://sites.google.com/site/ssi4and/rn/posts.xml)_) 
-
-* [Guido van Rossum's Weblog](http://www.artima.com/weblogs/index.jsp?blogger=guido)
-(_[subscribe](http://www.artima.com/weblogs/feeds/bloggers/guido.rss)_) 
-
-* [Hearsay Labs](http://blog.hearsaylabs.com)
-(_[subscribe](http://feeds.feedburner.com/HearsayLabs)_) 
-
-* [heaven updates - Google Code](http://code.google.com/u/heaven/updates)
-(_[subscribe](http://code.google.com/feeds/u/heaven/updates/user/basic)_) 
 
 * [Hohokum](http://hohokum.posterous.com)
 (_[subscribe](http://hohokum.posterous.com/rss.xml)_) 
@@ -225,32 +183,17 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [Hulu - Playlist for ryanb](http://www.hulu.com/profile/queue)
 (_[subscribe](http://www.hulu.com/feed/queue/ryanb)_) 
 
-* [Hulu Blog » Hulu](http://blog.hulu.com)
-(_[subscribe](http://blog.hulu.com/tags/hulu/feed/)_) 
-
-* [iFooBar](http://www.ifoobar.net/admin)
-(_[subscribe](http://www.ifoobar.net/admin/?feed=rss2)_) 
-
 * [instinctive's posterous](http://instinctive.posterous.com)
 (_[subscribe](http://instinctive.posterous.com/rss.xml)_) 
 
-* [Interactive Age: Serious Discourse for the Video Game Industry](http://page2rss.com/page?url=interactive-age.com/)
+* [Interactive Age: Serious Discourse for the Video Game Industry](http://page2rss.com/cf4a829be135dc2b60f308ac8c61833d)
 (_[subscribe](http://page2rss.com/rss/cf4a829be135dc2b60f308ac8c61833d)_) 
 
 * [Invisible Privacy](http://www.invisible-privacy.com/)
 (_[subscribe](http://www.invisible-privacy.com/atom.xml)_) 
 
-* [Jabberwocky](http://totwk.blogspot.com/)
-(_[subscribe](http://totwk.blogspot.com/atom.xml)_) 
-
 * [Jason Barnabe](http://blog.userstyles.org)
 (_[subscribe](http://blog.userstyles.org/feed/)_) 
-
-* [jdmc](http://jdmc.blogspot.com/)
-(_[subscribe](http://jdmc.blogspot.com/atom.xml)_) 
-
-* [Jeff's Blog](http://geophree.blogspot.com/)
-(_[subscribe](http://geophree.blogspot.com/feeds/posts/default)_) 
 
 * [Joel on Software](http://www.joelonsoftware.com)
 (_[subscribe](http://www.joelonsoftware.com/rss.xml)_) 
@@ -258,32 +201,14 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [Joshua Redstone's Blog](http://joshuaredstone.blogspot.com/)
 (_[subscribe](http://joshuaredstone.blogspot.com/feeds/posts/default)_) 
 
-* [kashcraft's Photo Gallery](https://picasaweb.google.com/kashcraft)
-(_[subscribe](http://picasaweb.google.com/lh/rssUser?uname=kashcraft)_) 
-
 * [Ken - FriendFeed](http://friendfeed.com/kashcraft)
 (_[subscribe](http://friendfeed.com/kashcraft?format=atom)_) 
 
 * [Kevin and Page's Blog](http://blog.kevinandpage.com/)
 (_[subscribe](http://blog.kevinandpage.com/feeds/atom.xml)_) 
 
-* [Kieran Lal's blog](http://acquia.com/blog/3)
-(_[subscribe](http://acquia.com/blog/3/feed)_) 
-
-* [Kieran Lal's blog](http://civicspacelabs.org/home/blog/kieran)
-(_[subscribe](http://civicspacelabs.org/home/blog/728/feed)_) 
-
-* [Kind of like a small penis competition...](http://heinzanova.blogspot.com/)
-(_[subscribe](http://heinzanova.blogspot.com/feeds/posts/default)_) 
-
-* [kodiak](http://kodiak.brainymonkey.com)
-(_[subscribe](http://kodiak.brainymonkey.com/index.php/feed/)_) 
-
-* [Len Sassaman's blog](http://rabbi.vox.com/library/posts/page/1/)
-(_[subscribe](http://rabbi.vox.com/library/posts/atom.xml)_) 
-
-* [LIMBO](http://www.limbogame.org)
-(_[subscribe](http://www.limbogame.org/feed/)_) 
+* [Kevin Gibbs](http://www.kevgibbs.com/)
+(_[subscribe](http://feeds.feedburner.com/KevinGibbs?format=xml)_) 
 
 * [link:snarfed.org - Google Blog Search](http://www.google.com/search?hl=en&q=link:snarfed.org&ie=utf-8&tbm=blg&tbs=sbd:1)
 (_[subscribe](http://blogsearch.google.com/blogsearch_feeds?hl=en&q=link:snarfed.org&scoring=d&ie=utf-8&num=10&output=rss)_) 
@@ -294,32 +219,23 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [Lost Garden](http://www.lostgarden.com/)
 (_[subscribe](http://www.lostgarden.com/feeds/posts/default)_) 
 
+* [Matt Blaze's Exhaustive Search](http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Fwww.crypto.com%2Fblog%2Fatom.xml)
+(_[subscribe](http://www.crypto.com/blog/atom.xml)_) 
+
 * [MauliK](http://maulik.freeshell.net/Miki.pl?page=home.miki)
 (_[subscribe](http://maulik.freeshell.net/Miki.pl?page=rss.miki.xml)_) 
 
 * [Maulik and Sarjita](http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Fwww.maulikandsarjita.net%2Fblog%2Fposts.xml)
 (_[subscribe](http://www.maulikandsarjita.net/blog/posts.xml)_) 
 
-* [maulik's Photo Gallery](https://picasaweb.google.com/maulik)
-(_[subscribe](http://picasaweb.google.com/lh/rssUser?uname=maulik)_) 
-
-* [mbostock](http://mbostock.blogspot.com/)
-(_[subscribe](http://mbostock.blogspot.com/feeds/posts/default)_) 
-
 * [mmandel's projects](http://www.mmandel.com/blog)
 (_[subscribe](http://www.mmandel.com/blog/?feed=rss2)_) 
 
-* [My Favorite Add-ons :: Collections :: Add-ons for Firefox](https://addons.mozilla.org/en-US/firefox/collections/ryanb/favorites/format:rss)
-(_[subscribe](https://addons.mozilla.org/en-US/firefox/collections/ryanb/favorites/format:rss)_) 
+* [mockfacebook - Twitter Search](http://search.twitter.com/search?q=mockfacebook)
+(_[subscribe](http://search.twitter.com/search.atom?q=mockfacebook)_) 
 
-* [myLock for android](http://mylockandroid.blogspot.com/)
-(_[subscribe](http://mylockandroid.blogspot.com/feeds/posts/default)_) 
-
-* [Nathan Stoll](http://www.nathanstoll.com/blog/)
-(_[subscribe](http://www.nathanstoll.com/blog/atom.xml)_) 
-
-* [Nathan's galleries](http://stoli.smugmug.com/)
-(_[subscribe](http://stoli.smugmug.com/hack/feed.mg?Type=nickname&Data=stoli&format=atom03)_) 
+* [Nathan Stoll](http://blog.nathanstoll.com/)
+(_[subscribe](http://blog.nathanstoll.com/feeds/posts/default)_) 
 
 * [natural language processing blog](http://nlpers.blogspot.com/)
 (_[subscribe](http://nlpers.blogspot.com/feeds/posts/default)_) 
@@ -336,6 +252,9 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [neugierig.org updates](http://neugierig.org/)
 (_[subscribe](http://neugierig.org/feed.xml)_) 
 
+* [Sage Foundation News Blog](http://sagebase.org/WP)
+(_[subscribe](http://sagebase.org/WP/feed/)_) 
+
 * [NewsRob](http://newsrob.blogspot.com/)
 (_[subscribe](http://feeds2.feedburner.com/newsrobblog)_) 
 
@@ -345,53 +264,41 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [One Big Fluke](http://www.onebigfluke.com/)
 (_[subscribe](http://feeds.feedburner.com/OneBigFluke)_) 
 
-* [One Big Fluke comments](http://www.onebigfluke.com/)
-(_[subscribe](http://www.onebigfluke.com/feeds/comments/default)_) 
-
-* [originalcynk](http://originalcynk.com/blog)
-(_[subscribe](http://originalcynk.com/blog/?feed=rss2)_) 
+* [original cynk](http://originalcynk.com)
+(_[subscribe](http://originalcynk.com/feed/)_) 
 
 * [Othman's Blog](http://zarnotes.blogspot.com/)
 (_[subscribe](http://zarnotes.blogspot.com/feeds/posts/default?alt=rss)_) 
 
+* [pair Networks, Inc. system notices](http://pair.com/support/system_notices.html)
+(_[subscribe](http://www.pair.com/support/feed.rss?general=1&cs=bf43b1a45f8c022687e5ca2f4eebb49f&limit=30&server=21%2C6&days=30)_) 
+
+* [PARC Forum speaker announcements](http://www.parc.com)
+(_[subscribe](http://feeds.feedburner.com/PARC-Forum)_) 
+
 * [Paul Graham: Essays](http://www.paulgraham.com/)
 (_[subscribe](http://www.aaronsw.com/2002/feeds/pgessays.rss)_) 
 
-* [Penny-Arcade](http://www.penny-arcade.com/)
+* [Penny-Arcade](http://www.penny-arcade.com)
 (_[subscribe](http://www.penny-arcade.com/rss.xml)_) 
 
 * [persistent.info](http://blog.persistent.info/)
 (_[subscribe](http://feeds.feedburner.com/PersistentInfo)_) 
 
+* [peter's blog](http://www.petros.net/blog)
+(_[subscribe](http://www.petros.net/blog/?feed=rss2)_) 
+
 * [Pidgin News](http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Fplanet.pidgin.im%2Frss20.xml)
 (_[subscribe](http://planet.pidgin.im/rss20.xml)_) 
 
-* [Pidgin: Ticket #479 (Gaim 2.0.0beta6 - Jabber contact list one contact repeated)](http://ticket/479)
-(_[subscribe](http://developer.pidgin.im/ticket/479?format=rss)_) 
+* [point7](https://point7.wordpress.com)
+(_[subscribe](http://point7.wordpress.com/feed/)_) 
 
 * [PRNG: Psuedo Random Noise Generator](http://prng.blogspot.com/)
 (_[subscribe](http://prng.blogspot.com/feeds/posts/default)_) 
 
-* [PyBlosxom - main site](http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Fpyblosxom.bluesock.org%2Findex.xml)
-(_[subscribe](http://pyblosxom.bluesock.org/index.xml)_) 
-
-* [Recent answers to How can I remove the scroll buttons on the firefox 4 context menu?](http://support.mozilla.com/en-US/questions/799449)
-(_[subscribe](http://support.mozilla.com/en-US/questions/799449/feed)_) 
-
 * [reoriginalize](http://term.ie/blog)
 (_[subscribe](http://term.ie/blog/feed/atom/)_) 
-
-* [Ryan B @ UserVoice](http://uservoice.com/users/613771-ryan-b)
-(_[subscribe](http://uservoice.com/users/613771.atom?personal=true)_) 
-
-* [Ryan B's activity on newsrob.uservoice.com](http://newsrob.uservoice.com/users/613771-ryan-b)
-(_[subscribe](http://newsrob.uservoice.com/users/613771/feed.atom)_) 
-
-* [[Satisfaction]: OpenTable integration with Google calendar](http://getsatisfaction.com/opentable/topics/opentable_integration_with_google_calendar)
-(_[subscribe](http://getsatisfaction.com/opentable/topics/opentable_integration_with_google_calendar.rss)_) 
-
-* [[Satisfaction]: What happened to "Blog Reactions" (who is linking to each blog)?](http://getsatisfaction.com/technorati/topics/what_happened_to_blog_reactions_who_is_linking_to_each_blog)
-(_[subscribe](http://getsatisfaction.com/technorati/topics/what_happened_to_blog_reactions_who_is_linking_to_each_blog.rss)_) 
 
 * [Schneier on Security](http://www.schneier.com/blog/)
 (_[subscribe](http://feeds.feedburner.com/schneier/fulltext)_) 
@@ -402,8 +309,8 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [Seventypercent.com](http://www.seventypercent.com)
 (_[subscribe](http://www.seventypercent.com/feed/)_) 
 
-* [SFGate: The Inside Scoop](http://www.sfgate.com/cgi-bin/qws/as/qr?term=INSIDE+ADJ+SCOOP&Submit=S)
-(_[subscribe](http://feeds.sfgate.com/sfgate/rss/feeds/insidescoop)_) 
+* [SFpark](http://sfpark.org)
+(_[subscribe](http://feeds.feedburner.com/Sfpark)_) 
 
 * [snarfed.org](http://snarfed.org)
 (_[subscribe](http://snarfed.org/feed)_) 
@@ -420,142 +327,35 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [So Many Games...](http://xboxgamer.blogspot.com/)
 (_[subscribe](http://xboxgamer.blogspot.com/feeds/posts/default)_) 
 
-* [StackOverFlow reputation for snarfed.org (ryan)](http://api.meta.stackoverflow.com/1.1/users/186123/reputation?)
-(_[subscribe](http://quickmediasolutions.com/stack2rss/meta.stackoverflow/users/186123/reputation)_) 
+* [SpyParty - A Spy Game About Subtle Behavior](http://www.spyparty.com)
+(_[subscribe](http://www.spyparty.com/feed/)_) 
 
-* [Starting Up](http://finiteloop.org/~btaylor/startingup/)
-(_[subscribe](http://feeds.feedburner.com/starting-up)_) 
-
-* [Sync](http://mozillalabs.com/sync)
-(_[subscribe](http://mozillalabs.com/sync/feed/)_) 
-
-* [team log2n blog](http://www.log2n.ca/blog)
-(_[subscribe](http://www.log2n.ca/blog/feed/)_) 
+* [SYNAPSE](http://projectsynapse.tumblr.com/)
+(_[subscribe](http://projectsynapse.tumblr.com/rss)_) 
 
 * [Tech Notes](http://neugierig.org/software/blog/)
 (_[subscribe](http://neugierig.org/software/blog/atom.xml)_) 
 
-* [The All-Thing](http://all-thing.net/index.rss)
-(_[subscribe](http://all-thing.net/feeds/posts/default)_) 
-
-* [The life of roadrunnerrita](http://roadrunnerrita.livejournal.com/)
-(_[subscribe](http://roadrunnerrita.livejournal.com/data/rss)_) 
-
 * [The Mozilla Blog](http://blog.mozilla.com)
 (_[subscribe](http://blog.mozilla.com/feed/)_) 
+
+* [The Other End of Sunset](http://otherendofsunset.blogspot.com/)
+(_[subscribe](http://otherendofsunset.blogspot.com/feeds/posts/default)_) 
 
 * [The Privacy Guy](http://www.theprivacyguy.com)
 (_[subscribe](http://www.theprivacyguy.com/feed/)_) 
 
-* [the simExchange Research Reports](http://www.thesimexchange.com/research.php)
-(_[subscribe](http://feeds.feedburner.com/TheSimexchangeResearchReports)_) 
-
-* [The Steam Review](http://steamreview.org)
-(_[subscribe](http://feeds.feedburner.com/steamreview)_) 
-
-* [The Witness](http://the-witness.net/news)
-(_[subscribe](http://the-witness.net/news/?feed=rss2)_) 
-
-* [Tina's Photo Gallery](https://picasaweb.google.com/tashcraft08)
-(_[subscribe](http://picasaweb.google.com/data/feed/base/user/tashcraft08?alt=rss&kind=album&hl=en_US&access=public)_) 
-
-* [Tom Stocky's blog](http://www.tomstocky.com/)
-(_[subscribe](http://feeds.feedburner.com/tomstocky)_) 
-
-* [too](http://too.blogspot.com/)
-(_[subscribe](http://too.blogspot.com/feeds/posts/default)_) 
+* [Twitter / @snarfed_org's feed list](http://twitter.com//snarfed_org/feed)
+(_[subscribe](http://api.twitter.com/1/snarfed_org/lists/feed/statuses.atom)_) 
 
 * [Twitter / snarfed_org](http://twitter.com/snarfed_org)
 (_[subscribe](http://twitter.com/statuses/user_timeline/139199211.rss)_) 
 
-* [Twitter / snarfed_org list feed](http://twitter.com/snarfed_org/feed)
-(_[subscribe](http://twiterlist2rss.appspot.com/snarfed_org/lists/feed/statuses.rss)_) 
-
-* [Uberwizard Games](http://uberwizard.com/)
-(_[subscribe](http://uberwizard.com/atom.xml)_) 
-
-* [Updates to favorites of ryanb | Userscripts.org](http://userscripts.org/users/224162/favorites)
-(_[subscribe](http://userscripts.org/feeds/users/224162/favorites/updates)_) 
-
-* [Void Star](http://hexagene.wordpress.com)
-(_[subscribe](http://hexagene.wordpress.com/feed/)_) 
-
 * [Walter Yu](http://walteryu.com)
 (_[subscribe](http://walteryu.com/?feed=rss2)_) 
-
-* [Will Write For Chocolate](http://www.willwriteforchocolate.com/)
-(_[subscribe](http://feeds.feedburner.com/WillWriteForChocolate)_) 
-
-* [wiretread (justin haugh)](http://www.justinhaugh.com/wiretread/)
-(_[subscribe](http://www.justinhaugh.com/wiretread/atom.xml)_) 
 
 * [WordPress Development Blog](http://wordpress.org/news)
 (_[subscribe](http://wordpress.org/development/feed/)_) 
 
-* [WordPress Plugin Repository: Ticket #1162: [PATCH] get_tag() regex bug fix](http://plugins.trac.wordpress.org/ticket/1162)
-(_[subscribe](http://plugins.trac.wordpress.org/ticket/1162?format=rss)_) 
-
-* [WordPress Plugin Repository: Ticket #1178: [PATCH] escape key and clicking on background close display](http://plugins.trac.wordpress.org/ticket/1178)
-(_[subscribe](http://plugins.trac.wordpress.org/ticket/1178?format=rss)_) 
-
-* [WordPress Plugin Repository: Ticket #1179: [PATCH] shutter: escape key and clicking on background close display](http://plugins.trac.wordpress.org/ticket/1179)
-(_[subscribe](http://plugins.trac.wordpress.org/ticket/1179?format=rss)_) 
-
-
-*Retired:* <a name="retired"></a>
-
- 
-* [Deep Thoughts by Siobhan Quinn](http://www.siobhankquinn.com/)
-(_[subscribe](http://feeds.feedburner.com/Thoughtsinsf)_) 
-
-* [Liberated Games](http://www.liberatedgames.com/)
-(_[subscribe](http://www.liberatedgames.com/feeds/news.rss)_)
-
-* [mytvrss](http://www.mytvrss.com/tvrss.xml?id=453745)
-(_[subscribe](http://www.mytvrss.com/tvrss.xml?id=453745)_) 
-
-* [nicalis.com/blog](http://nicalis.com/blog/)
-(_[subscribe](http://nicalis.com/blog/feed/)_)
-
-* [NVSCENE 08](http://nvision.scene.org)
-(_[subscribe](http://nvision.scene.org/rss/)_)
-
-* [SFGate: Food & Dining](http://www.sfgate.com/food/)
-(_[subscribe](http://feeds.sfgate.com/sfgate/rss/feeds/food)_)
-
-* [SFGate: Tim Goodman](http://www.sfgate.com/cgi-bin/search/columnists.cgi?waisdbname=/chronicle/&byline=Tim+Goodman)
-(_[subscribe](http://www.sfgate.com/rss/feeds/tgoodman.xml)_) 
-
-* [The Escapist : Articles](http://www.escapistmagazine.com/articles)
-(_[subscribe](http://www.escapistmagazine.com/rss/articles/0.xml)_)
-
-* [ThemeShaper](http://themeshaper.com)
-(_[subscribe](http://feeds2.feedburner.com/ThemeShaper)_) 
-
-<!--
-
-* [Youwebtwo.com](http://youwebtwo.com)
-(_[subscribe](http://youwebtwo.com/feed/)_)
-
-* [Rebecca Grand's Facebook Posts](http://www.facebook.com/posted.php?id=505629907)
-(_[subscribe](http://www.facebook.com/feeds/share_posts.php?id=505629907&viewer=212038&key=c886d8cc92&format=rss20)_)
-
-* [beckstar_805's MySpace Comments](http://www.myspace.com/beckstar_805)
-(_[subscribe](http://makedatamakesense.com/myspace/comment/?url=http%3A%2F%2Fwww.myspace.com%2Fbeckstar_805)_)
-
-* [feed/http://blog.myspace.com/blog/rss.cfm?friendID=18935888](http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Fblog.myspace.com%2Fblog%2Frss.cfm%3FfriendID%3D18935888)
-(_[subscribe](http://blog.myspace.com/blog/rss.cfm?friendID=18935888)_)
-
-* [And if you play defender I could be your hyper space (Anthony Baxter)](http://anthonybaxter.livejournal.com/)
-(_[subscribe](http://anthonybaxter.livejournal.com/data/atom)_)
-
-* [Twitter / dlpeters](http://twitter.com/dlpeters)
-(_[subscribe](http://twitter.com/statuses/user_timeline/13545012.atom)_)
-
-* [Twitter / dewitt](http://twitter.com/dewitt)
-(_[subscribe](http://twitter.com/statuses/user_timeline/673483.atom)_)
-
-* [Twitter / Derekh](http://twitter.com/derekh)
-(_[subscribe](http://twitter.com/statuses/user_timeline/47460859.rss)_)
-
--->
+* [xkcd.com](http://xkcd.com/)
+(_[subscribe](http://xkcd.com/atom.xml)_) 
