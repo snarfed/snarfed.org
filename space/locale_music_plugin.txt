@@ -16,7 +16,7 @@ drawable
 screenshot*.png
 EOF
 
-mv locale_music_plugin.tar.bz2 ~/s; \
+mv -f locale_music_plugin.tar.bz2 ~/s; \
   cd ~/s; \
   svn ci -m 'new release' locale_music_plugin.tar.bz2
 -->
