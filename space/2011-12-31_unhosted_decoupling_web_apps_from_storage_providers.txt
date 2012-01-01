@@ -1,0 +1,50 @@
+Unhosted: decoupling web apps from storage providers
+
+<a href="http://unhosted.org/">
+  <img class="right" src="unhosted_logo.png"></a>
+
+[Unhosted](http://unhosted.org/) aims to decouple webapps from their backend
+storage on a per user level. The status quo is that each webapp stores and
+manages all of its users' data. Unhosted wants to turn that on its head and let
+each user store their own data, across all of their webapps, in a single
+provider and account of their choosing.
+
+The key piece of the puzzle is
+[`remoteStorage`](http://www.w3.org/community/unhosted/wiki/RemoteStorage), a
+new Javascript library that mirrors HTML5's
+[`localStorage`](http://dev.w3.org/html5/webstorage/) API and uses cloud
+providers like [S3](http://aws.amazon.com/s3/),
+[Google Docs](http://docs.google.com/), and [Dropbox](http://dropbox.com/). When
+a user starts using an unhosted app, it determines where to store their data
+(ideally behind the scenes via
+[WebFinger](http://code.google.com/p/webfinger/wiki/WebFingerProtocol)), gets
+permission via OAuth, and then uses `remoteStorage` to perform standard CRUD
+operations.
+
+Not surprisingly, the people behind Unhosted are hardcore
+[free software](http://www.fsf.org/) advocates, so the project comes with a
+healthy dose of anti-corporate advocacy and preaching. However, it also comes
+with a convincing technical foundation and
+[working code](https://github.com/unhosted/). In particular, reusing
+`localStorage` seems like a stroke of genius, especially since many developers
+now use it exclusively when starting a new app, adding server side sync only
+after they've finished their
+[MVP](http://en.wikipedia.org/wiki/Minimum_viable_product).
+
+Naturally, there are problems. Want querying or aggregate operations? The You're
+encouraged to build your own, which is a tough sell for even simple queries,
+much less large scale data processing. Also, there's no story for educating
+users who haven't set up a storage provider. Apps can store it themselves, but
+that raises an awkward migration question.
+
+Most of all, though, I think they're missing a sales pitch. End user data
+portability may have gained some mainstream mindshare, but it'll probably never
+reach a tipping point, and free software idealism will always be niche. More to
+the point, until users want it, I don't see a motivation for app developers.
+
+Even so, I'm intrigued. Integrating with App Engine would be fun, but the app
+side is Javascript on the client, and the storage side already supports Google
+Docs, so I'm not sure it would add any value. Anyone out there currently working
+with `remoteStorage`? Thoughts?
+
+Oh, and happy New Year!
