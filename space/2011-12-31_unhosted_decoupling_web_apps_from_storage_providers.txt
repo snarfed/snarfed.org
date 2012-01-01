@@ -37,6 +37,9 @@ much less large scale data processing. Also, there's no story for educating
 users who haven't set up a storage provider. Apps can store it themselves, but
 that raises an awkward migration question.
 
+<a class="shutter" href="unhosted_infographic.png">
+  <img class="shadow left" src="unhosted_infographic_thumb.png"></a>
+
 Most of all, though, I think they're missing a sales pitch. End user data
 portability may have gained some mainstream mindshare, but it'll probably never
 reach a tipping point, and free software idealism will always be niche. More to
