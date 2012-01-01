@@ -9,6 +9,9 @@ manages all of its users' data. Unhosted wants to turn that on its head and let
 each user store their own data, across all of their webapps, in a single
 provider and account of their choosing.
 
+<!-- more -->
+<p/>
+
 The key piece of the puzzle is
 [`remoteStorage`](http://www.w3.org/community/unhosted/wiki/RemoteStorage), a
 new Javascript library that mirrors HTML5's
