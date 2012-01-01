@@ -31,7 +31,7 @@ now use it exclusively when starting a new app, adding server side sync only
 after they've finished their
 [MVP](http://en.wikipedia.org/wiki/Minimum_viable_product).
 
-Naturally, there are problems. Want querying or aggregate operations? The You're
+Naturally, there are problems. Want querying or aggregate operations? You're
 encouraged to build your own, which is a tough sell for even simple queries,
 much less large scale data processing. Also, there's no story for educating
 users who haven't set up a storage provider. Apps can store it themselves, but
@@ -45,9 +45,11 @@ portability may have gained some mainstream mindshare, but it'll probably never
 reach a tipping point, and free software idealism will always be niche. More to
 the point, until users want it, I don't see a motivation for app developers.
 
-Even so, I'm intrigued. Integrating with App Engine would be fun, but the app
-side is Javascript on the client, and the storage side already supports Google
-Docs, so I'm not sure it would add any value. Anyone out there currently working
-with `remoteStorage`? Thoughts?
+Even so, I'm intrigued. We originally considered structuring [App Engine]'s
+datastore the same way, clustered by user instead of by app. Integrating
+Unhosted with App Engine would be fun, but the app side is Javascript on the
+client, and the storage side already supports Google Docs, so I'm not sure it
+would add any value. Anyone out there currently working with `remoteStorage`?
+Thoughts?
 
 Oh, and happy New Year!
