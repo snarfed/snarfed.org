@@ -33,8 +33,8 @@ after they've finished their
 
 Naturally, there are problems. Want querying or aggregate operations? You're
 encouraged to build your own, which is a tough sell for even simple queries,
-much less large scale data processing. Also, there's no story for educating
-users who haven't set up a storage provider. Apps can store it themselves, but
+much less large scale data processing. Also, there's no story for educating new
+users. They could punt and start by letting apps store their data for them, but
 that raises an awkward migration question.
 
 <a class="shutter" href="unhosted_infographic.png">
