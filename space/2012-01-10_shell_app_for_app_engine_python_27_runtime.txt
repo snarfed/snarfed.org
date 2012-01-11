@@ -1,0 +1,20 @@
+Shell app for App Engine's Python 2.7 runtime
+
+<a href="http://shell-27.appspot.com/">
+  <img class="right" src="appengine.jpg" /></a>
+
+I've added a new [App Engine](http://appengine.google.com/) shell app for the
+[Python 2.7 runtime](http://code.google.com/appengine/docs/python/python27/):
+
+<code style="margin-left: 2em; font-size: large">
+[shell-27.appspot.com](http://shell-27.appspot.com/)
+</code>
+
+It complements the existing
+[Python 2.5](http://code.google.com/appengine/docs/python/runtime.html),
+[HRD](2011-04-18_shell_app_for_app_engine_high_replication_datastore), and
+[JVM language](http://lotrepls.appspot.com/)
+shell apps as well as other, even better third party projects like
+[App Engine Console](http://con.appspot.com/console/help/about).
+
+Enjoy!
