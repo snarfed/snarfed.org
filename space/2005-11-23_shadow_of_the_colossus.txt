@@ -1,10 +1,10 @@
 Shadow of the Colossus
 
-<a href="agro_grazing.jpg">
+<a class="shutter" href="agro_grazing.jpg">
   <img class="shadow" src="agro_grazing_thumb.jpg"></a>
-<a href="agro_and_colossus.jpg">
+<a class="shutter" href="agro_and_colossus.jpg">
   <img class="shadow" src="agro_and_colossus_thumb.jpg"></a>
-<a href="agro_canyon.jpg">
+<a class="shutter" href="agro_canyon.jpg">
   <img class="shadow" src="agro_canyon_thumb.jpg"></a>
 
 I finished playing [Shadow of the
@@ -32,7 +32,7 @@ deserts, canyons, lakes, and forests that make up the landscape.
 The colossi themselves are _massive_, and fighting them is breathtaking. You
 actually feel like you're clinging to a living, breathing creature the size of a
 10-story building. The ones based on animals are particularly amazing. I won't
-soon forget hanging onto one colossus' wings in midair, or clutching another's
+soon forget hanging onto one colossus's wings in midair, or clutching another's
 fins as it dove underwater.
 
 Shadow of the Colossus was made by the same people who made
