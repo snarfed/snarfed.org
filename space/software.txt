@@ -11,6 +11,17 @@ is public domain. Also see [other lists](lists).
 <a name="projects"></a>
 ### Projects
 
+  * [webfinger-unofficial](https://github.com/snarfed/webfinger-unofficial) is a
+    stand-in [WebFinger](http://code.google.com/p/webfinger/) server for social
+    networking sites like Facebook and Twitter that don’t implement it
+    themselves. See the
+    [blog post](2012-01-16_webfinger_for_facebook_and_twitter) for more.
+
+  * [Bridgy](http://brid.gy/): Got a blog? Share your blog posts on social
+    networks? Wish comments on those shared posts also showed up on your blog?
+    Bridgy copies them back for you. See the
+    [blog post](2012-01-08_bridgy_launched) for more.
+
   * [Locale Headphone Buttons Plugin](locale_headphone_buttons_plugin)
 is a plugin for the [Locale](http://www.twofortyfouram.com/) Android app that
 simulates pressing a headphone or headset button.
