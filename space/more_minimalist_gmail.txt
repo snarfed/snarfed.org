@@ -18,6 +18,11 @@ More Minimalist Gmail also has
 [userstyles.org](http://userstyles.org/).
 
 Tips:
+  * If you're using [Stylish](http://userstyles.org/help/stylish), you can
+    temporarily show the hidden features by turning off Stylish. Click the
+    Stylish icon and select _Turn all styles off_. When you're done, select
+    _Turn all styles on_. Bonus tip: if you do this often,
+    [add a keyboard shortcut with keyconfig](firefox_keyconfig_extension).
   * You can hide individual labels in the
   [GMail settings Labels tab](https://mail.google.com/mail/u/0/#settings/labels).
   This includes built in labels like Starred, Important, Chats, Circles, etc.
