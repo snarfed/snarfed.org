@@ -78,7 +78,7 @@ to the Google Talk servers:
       <c xmlns='http://jabber.org/protocol/caps'
          node='http://pidgin.im/caps'
          ver='2.5.2'
-         ext='moodn nickn tunen bob avatar sms-v1 sms-v2' />
+         ext='moodn nickn tunen bob avatar sms-v1' />
     </presence>
 
 Happy texting!

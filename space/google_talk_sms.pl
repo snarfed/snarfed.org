@@ -21,7 +21,7 @@ our %PLUGIN_INFO = (
     name => "Google Talk SMS",
     version => "0.2",
     summary => "Enables Google Talk's SMS feature, which is normally restricted to official clients.",
-    description => "Works around Google Talk's restriction of its SMS feature to official clients by reporting that Pidgin supports the 'sms-v1' and 'sms-v2' XMPP capabilities (XEP-0115) extension.",
+    description => "Works around Google Talk's restriction of its SMS feature to official clients by reporting that Pidgin supports the 'sms-v1' XMPP capabilities (XEP-0115) extension.",
     author => "Ryan Barrett <pidgin\@ryanb.org>",
     url => "http://snarfed.org/space/google_talk_sms+pidgin+plugin",
     load => "plugin_load",
@@ -55,7 +55,7 @@ sub jabber_sending_xmlnode_cb {
     if (not defined($c)) {
         $ext = "";
     }
-    $c->set_attrib("ext", $ext . " sms-v1 sms-v2");
+    $c->set_attrib("ext", $ext . " sms-v1");
 
     $_[1] = $xmlnode;
 }
