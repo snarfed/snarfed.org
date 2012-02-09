@@ -3,7 +3,7 @@ google_talk_sms pidgin plugin
 <a href="http://pidgin.im/">
   <img class="right" src="pidgin_full.png" /></a>
 
-[Download google_talk_sms.pl 0.2](google_talk_sms.pl)  
+[Download google_talk_sms.pl 0.3](google_talk_sms.pl)  
 &nbsp;&nbsp; (requires Pidgin 2.5.2 or above)  
 [Pidgin web site](http://pidgin.im/)  
 &nbsp;&nbsp; [About Pidgin plugins](http://developer.pidgin.im/wiki/Scripting%20and%20Plugins#ScriptingandPlugins)  

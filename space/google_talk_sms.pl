@@ -19,7 +19,7 @@ use Purple;
 our %PLUGIN_INFO = (
     perl_api_version => 2,
     name => "Google Talk SMS",
-    version => "0.2",
+    version => "0.3",
     summary => "Enables Google Talk's SMS feature, which is normally restricted to official clients.",
     description => "Works around Google Talk's restriction of its SMS feature to official clients by reporting that Pidgin supports the 'sms-v1' XMPP capabilities (XEP-0115) extension.",
     author => "Ryan Barrett <pidgin\@ryanb.org>",
