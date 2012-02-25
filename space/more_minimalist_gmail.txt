@@ -18,6 +18,9 @@ More Minimalist Gmail also has
 [userstyles.org](http://userstyles.org/).
 
 Tips:
+  * Use keyboard shortcuts! This userstyle expects that you do; it's pretty
+  much unusable otherwise.
+  [Details here.](http://support.google.com/mail/bin/answer.py?hl=en&answer=6594)
   * If you're using [Stylish](http://userstyles.org/help/stylish), you can
     temporarily show the hidden features by turning off Stylish. Click the
     Stylish icon and select _Turn all styles off_. When you're done, select
