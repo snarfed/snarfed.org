@@ -9,6 +9,10 @@
  *
  * Tips:
  *
+ * Use keyboard shortcuts! This userstyle expects that you do; it's pretty
+ * much unusable otherwise. More details:
+ * http://support.google.com/mail/bin/answer.py?hl=en&answer=6594
+ *
  * If you're using Stylish, you can temporarily show the hidden features by
  * turning off Stylish. Click the Stylish icon and select Turn all styles off.
  * When you're done, select Turn all styles on. Bonus tip: if you do this
@@ -18,6 +22,8 @@
  * includes built in labels like Starred, Important, Chats, Circles, etc.
  *
  * Changelog:
+ * 0.16 3/15/2012:
+ * - new footer selector
  * 0.15 2/24/2012:
  * - update many selectors for top-level items (logo, search button)
  * - re-hide search box right side "advanced options" drop-down arrow
@@ -46,7 +52,7 @@
  * 0.8 8/1/2011
  * Significant redesign to condense and improve usability, especially in smaller
  * or narrow browser windows.
- * - moved lsabels above conversation/thread view
+ * - moved labels above conversation/thread view
  * - condensed top search box area
  * - made widths all auto so that everything follows your browser's width
  * - bug fix: don't hide To and CC labels in compose area
@@ -99,7 +105,8 @@
 div#gbx3, div#gbx4, /* sandbar gray background */
 div#gbz,            /* sandbar left side links (Mail, Calendar, etc. */
 ol.gbtc > li,       /* sandbar right side (settings button is special-cased below) */
-div.aeG,            /* footer */
+div.aeG,            /* footer (external) */
+div.aZwYjb,         /* footer (internal) */
 div.w-asK.w-atd,    /* at the bottom: About the new look | Send Feedback */
 td.w-as0.w-asZ,     /* old blue search button */
 div#gbqfbw,         /* new blue search button */
