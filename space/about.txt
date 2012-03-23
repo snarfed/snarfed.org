@@ -21,13 +21,18 @@ Here's my contact info:
 [![twitter button](/twitter_button.png)](http://twitter.com/snarfed_org)
 [snarfed_org](http://twitter.com/snarfed_org)  
 
-snarfed.org has been around [since early 2002](snarfed_org_history). It's hosted
-at [pair.com](http://pair.com/) on a
-[shared FreeBSD server](http://pair.com/services/web_hosting/). It
-[currently](2010-08-08_migrated_to_wordpress) runs on
-[WordPress](http://wordpress.org/) and the [snarfed theme](/). It
-[used to](2006-08-23_virtual_housewarming) run on
-[PyBlosxom](http://pyblosxom.bluesock.org/) with a custom PyBlosxom
-[flavour](snarfed_org_PyBlosxom_flavour) and [plugins](software). Before that,
-it ran on [SnipSnap](http://snipsnap.org/), on a
-[Linux VPS](http://jvds.com/linux.php) at [JVDS](http://jvds.com/).
+snarfed.org has been around [since early 2002](snarfed_org_history). It was
+[born](2003-07-18_its_live) on my own server, which lived first in dorm rooms at
+school and then in an apartment in SF. It later
+[migrated](2004-12-02_suburbia_ho) to a [Linux VPS](http://jvds.com/linux.php)
+at [JVDS](http://jvds.com/), and finally to its
+[current home](2006-08-23_virtual_housewarming) on a
+[shared FreeBSD server](http://pair.com/services/web_hosting/) at
+[pair.com](http://pair.com/).
+
+On the software side, it started on [SnipSnap](http://snipsnap.org/), then
+[moved](2006-08-23_virtual_housewarming) to
+[PyBlosxom](http://pyblosxom.bluesock.org/), and
+[now runs](2010-08-08_migrated_to_wordpress) on
+[WordPress](http://wordpress.org/). See my [software page](software) for some
+of its custom patches, plugins, and themes.
