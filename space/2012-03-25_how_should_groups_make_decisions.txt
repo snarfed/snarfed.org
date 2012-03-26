@@ -40,8 +40,8 @@ would be better. Same with operations workload, data safety, and performance
 consistency. I did research, talked with users, gave
 [talks](http://www.google.com/events/io/2009/sessions/TransactionsAcrossDatacenters.html),
 wrote
-[blog posts](http://googleappengine.blogspot.com/2009/09/migration-to-better-datastore.html)
-and, did more research.
+[blog posts](http://googleappengine.blogspot.com/2009/09/migration-to-better-datastore.html),
+and did more research.
 
 Years later, we launched a
 [synchronous version](http://googleappengine.blogspot.com/2011/01/announcing-high-replication-datastore.html),
@@ -66,12 +66,12 @@ but not so much _what_ they want.
 
 <img class="left shadow" src="mushroom_cloud.jpg" />
 
-Nuclear power is a good current example of constituents and leaders failing hand
-in hand. Since
+Nuclear power is a good example of constituents and leaders failing hand in
+hand. Since
 [Fukushima](http://en.wikipedia.org/wiki/Fukushima_Daiichi_nuclear_disaster),
-countries have fallen all over themselves in their haste to back away, even
-though energy experts and the data agree that nuclear is one of the cheapest,
-most effective, safest sources available.
+countries have fallen over themselves in their haste to back away from nuclear,
+even though energy experts and the data agree that it's is one of the cheapest,
+most effective, and safest energy sources available.
 
 Sadly, that didn't matter. Media covered the disaster, the
 [availability heuristic](http://en.wikipedia.org/wiki/Availability_heuristic)
@@ -101,8 +101,8 @@ the other hand, are fuzzier.
 
 Representative democracy is often described as the worst possible form of
 government, except for all the others. Free market capitalism is similar, and
-probably other groups too. I like them all, but I still hate it when they make
-bad decisions.
+probably other group structures too. I like them all, but I still hate it when
+they make bad decisions.
 
 Unfortunately, I don't know how they can do any better. How about you? What can
 groups do about this? Is there no foolproof way for them to make decisions?
