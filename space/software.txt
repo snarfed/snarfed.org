@@ -16,7 +16,6 @@ is public domain. Also see [other lists](lists).
     at a specific place). Good for hackathons, conferences, etc. Written for
     (and at) [Super Happy Block Party](http://www.superhappy.be/).
 
-
   * [activitystreams-unofficial](https://github.com/snarfed/activitystreams-unofficial)
     is a stand-in [ActivityStreams](http://activitystrea.ms) server for
     social networking sites like Facebook and Twitter that don’t implement it
