@@ -31,7 +31,7 @@ We saw this firsthand with the
 When we first sat down to figure out replication, the biggest tradeoff facing us
 was synchronous or asynchronous. Synchronous is better, but it's also slower.
 The datastore was already slower than its main competitor, the relational
-database - [NoSQL](http://en.wikipedia.org/wiki/NoSQL) wasn't around at yet -
+database - [NoSQL](http://en.wikipedia.org/wiki/NoSQL) wasn't around yet -
 and we worried that if we made it even slower, developers wouldn't use it. So we
 went with async.
 
