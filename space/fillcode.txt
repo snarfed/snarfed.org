@@ -8,7 +8,7 @@ tar czf ~/s/fillcode.tar.gz --exclude .svn fillcode*.el elunit/
 -->
 
 For the impatient:  
-&nbsp; [Download fillcode.el 0.8](fillcode.el)  
+&nbsp; [Download fillcode.el 0.9](fillcode.el)  
 &nbsp; [Download fillcode.tar.gz](fillcode.tar.gz) (includes
 [elunit](http://www.lostway.org/~tko/elisp/elunit/) unit tests)  
 
