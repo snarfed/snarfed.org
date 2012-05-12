@@ -22,6 +22,8 @@
  * includes built in labels like Starred, Important, Chats, Circles, etc.
  *
  * Changelog:
+ * 0.17 5/12/2012:
+ * - update selectors for footer and conversation view right side pane
  * 0.16 3/15/2012:
  * - new footer selector
  * 0.15 2/24/2012:
@@ -105,8 +107,8 @@
 div#gbx3, div#gbx4, /* sandbar gray background */
 div#gbz,            /* sandbar left side links (Mail, Calendar, etc. */
 ol.gbtc > li,       /* sandbar right side (settings button is special-cased below) */
-div.aeG,            /* footer (external) */
-div.aZwYjb,         /* footer (internal) */
+div.aeG,            /* footer in list view*/
+div.nH.Gn,          /* footer in conversation/compose views */
 div.w-asK.w-atd,    /* at the bottom: About the new look | Send Feedback */
 td.w-as0.w-asZ,     /* old blue search button */
 div#gbqfbw,         /* new blue search button */
@@ -133,7 +135,7 @@ td.apU > span,      /* per thread stars */
 div.GAvrIe,         /* next/prev thread, settings buttons */
 div.iG.J-J5-Ji,     /* 1-2 of 3, next/prev arrows */
 div.f6,             /* "xxx is not available to chat" */
-div.adC,            /* right side pane (ads, etc.) */
+td.Bu.y3,           /* right side pane (ads, etc.) */
 /* span.hk.J-J5-Ji,    /\* expand all, print, new window buttons *\/ */
 div.OH0apf,         /* in-message ads */
 div.aaq,            /* top right reply arrow button */
