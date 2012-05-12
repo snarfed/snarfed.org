@@ -11,6 +11,11 @@ is public domain. Also see [other lists](lists).
 <a name="projects"></a>
 ### Projects
 
+  * [Bowflex Planner](http://bowflex-planner.appspot.com/) optimizes Bowflex
+    Revolution exercise routines to minimize rearranging weights and
+    attachments. It was an excuse to learn the
+    [Go programming language](http://golang.org/) (aka golang).
+
   * [codeherenow](https://github.com/snarfed/codeherenow) is a scrolling ticker
     of source code checkins made by people right here, right now (ie recently,
     at a specific place). Good for hackathons, conferences, etc. Written for
