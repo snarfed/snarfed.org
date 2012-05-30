@@ -22,6 +22,8 @@
  * includes built in labels like Starred, Important, Chats, Circles, etc.
  *
  * Changelog:
+ * 0.18 5/29/2012:
+ * - significantly shrink top header and put search box to the right of labels
  * 0.17 5/12/2012:
  * - update selectors for footer and conversation view right side pane
  * 0.16 3/15/2012:
@@ -98,12 +100,12 @@
 
 @-moz-document domain(mail.google.com) {
 
-
 /* The primary list of things to hide.
  *
  * Note the use of the > child selector. The * universal selector is
  * *descendant*, ie any depth, not just direct child.
  */
+div#gbx1, div#gbbw, /* parts of sandbar? */
 div#gbx3, div#gbx4, /* sandbar gray background */
 div#gbz,            /* sandbar left side links (Mail, Calendar, etc. */
 ol.gbtc > li,       /* sandbar right side (settings button is special-cased below) */
@@ -180,6 +182,19 @@ div.nH.NUxIad.bsvFKf      /* contact content container */
   height: auto !important;
 }
 
+/* shrink top header div */
+div#gb {
+  height: 10px !important;
+}
+
+/* put search box to the right of the labels */
+#gbqf {
+  position: fixed !important;
+  right: 5px !important;
+  top: 5px !important;
+}
+
+
 /* content container. only needed for chrome. */
 div.no {
   width: 100% !important;
@@ -200,11 +215,6 @@ div.n3 * {
  * because they're inside the div.n3 above. */
 div.aig {
   opacity: 0;
-}
-
-/* vertical space below labels */
-div.n3 {
-  margin-bottom: 1em !important;
 }
 
 /* put search box behind Move to and Labels pop-up menus (they're z-index 7) */
