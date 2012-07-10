@@ -4,7 +4,7 @@ emacs minibuffer-complete-and-exit bug fix
   <img class="right" src="gnu.jpg" /></a>
 
 For the impatient:  
-[Bug fix patch](https://github.com/snarfed/patches/emacs_minibuffer-complete-and-exit_fix.patch)
+[Bug fix patch](https://github.com/snarfed/misc/patches/emacs_minibuffer-complete-and-exit_fix.patch)
 against Emacs 22 ([CVS](http://savannah.gnu.org/cvs/?group=emacs) 2005-12-27)
 
 The minibuffer code in [GNU Emacs](http://gnu.org/software/emacs/) 22 has a
@@ -30,5 +30,6 @@ return _\*scratch\*_.
 
 This bug occurs in Emacs 22.0.50.7
 ([CVS](http://savannah.gnu.org/cvs/?group=emacs) 2005-12-27) and before.
-[This patch](https://github.com/snarfed/patches/emacs_minibuffer-complete-and-exit_fix.patch) fixes it. Whee!!!
+[This patch](https://github.com/snarfed/misc/patches/emacs_minibuffer-complete-and-exit_fix.patch)
+fixes it. Whee!!!
 

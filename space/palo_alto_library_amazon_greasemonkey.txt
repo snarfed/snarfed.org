@@ -5,7 +5,7 @@ palo alto library amazon greasemonkey
 <a href="http://webcat.cityofpaloalto.org/"><img src="palo_alto_seal.jpg"></a>
 
 For the impatient:  
-[Install Palo Alto Library](paloaltolibrary.user.js)
+[Install Palo Alto Library](https://github.com/snarfed/misc/userscripts/paloaltolibrary.user.js)
 (Right-click and select _Install User Script_)  
 [Scripts for other
 libraries](#others)  

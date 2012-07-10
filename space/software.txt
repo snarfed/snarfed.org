@@ -221,11 +221,11 @@ support for shells with path prefixes, e.g.
 [Tramp](http://www.gnu.org/software/tramp/)-based remote shells. Applied in
 [revision 106107](http://bzr.savannah.gnu.org/lh/emacs/trunk/revision/106107).
 
-  * A [patch](https://github.com/snarfed/patches/ajax_comment_preview_2.3_loading_and_error.patch) for the Wordpress 
+  * A [patch](https://github.com/snarfed/misc/patches/ajax_comment_preview_2.3_loading_and_error.patch) for the Wordpress 
 [Ajax Comment Preview](http://blogwaffe.com/ajax-comment-preview/) plugin that
 fixes bugs with the loading and error messages and wraps them in stylable spans.
 
-  * A [patch](https://github.com/snarfed/patches/www_netflix_new_rating_regex.patch) for the
+  * A [patch](https://github.com/snarfed/misc/patches/www_netflix_new_rating_regex.patch) for the
 [WWW::Netflix](http://search.cpan.org/dist/WWW-Netflix/) Perl library that
 update the regular expression it uses to screen-scrape movie ratings. This
 handles Netflix's HTML as of 11/2010.
@@ -254,21 +254,21 @@ that fix character set handling bugs.
 [applied](http://trac.pythonpaste.org/pythonpaste/changeset/7235)
 on 2/17/2008).
 
-  * A [patch](https://github.com/snarfed/patches/opml2markdown_linkify.patch) for
+  * A [patch](https://github.com/snarfed/misc/patches/opml2markdown_linkify.patch) for
 [opml2markdown.xslt](http://fletcher.freeshell.org/wiki/Markdown_and_XML) that
 adds links to each item's web site and feed.
 
-  * A [patch](https://github.com/snarfed/patches/comments_openid.patch) that updates the
+  * A [patch](https://github.com/snarfed/misc/patches/comments_openid.patch) that updates the
 [PyBlosxom OpenID comments plugin](http://www.openidenabled.com/software/pyblosxom/release-announcement)
 to work with versions 1.x of the
 [Python OpenID libraries](http://www.openidenabled.com/openid/libraries/python).
 ([Applied](pyblosxom_openid_comments) on 9/6/2007.)
 
-  * A [minor bugfix for cryptutil.py](https://github.com/snarfed/patches/cryptutil_ioerror.patch) in the
+  * A [minor bugfix for cryptutil.py](https://github.com/snarfed/misc/patches/cryptutil_ioerror.patch) in the
 [Python OpenID libraries](http://www.openidenabled.com/openid/libraries/python).
 The patch is against version 2.0.0-rc3b.
 
-  * A [tkdiff patch that quotes filenames](https://github.com/snarfed/patches/tkdiff_quote_filenames_svn.patch)
+  * A [tkdiff patch that quotes filenames](https://github.com/snarfed/misc/patches/tkdiff_quote_filenames_svn.patch)
 ([tracker](http://sourceforge.net/tracker/index.php?func=detail&aid=1672284&group_id=64960&atid=509274))
 for files in Subversion repositories.
 
@@ -306,7 +306,7 @@ adds an option to automatically remove trailing quotes from outgoing emails.
   * [Pine delete attachments on save patch](pine_delete_attachments_on_save_patch) adds an option to delete attachments from messages when you save
 them.
 
-  * [Gaim chat_invite patch](https://github.com/snarfed/patches/gaim_2_chat_invite_reverse_params.patch)
+  * [Gaim chat_invite patch](https://github.com/snarfed/misc/patches/gaim_2_chat_invite_reverse_params.patch)
 fixes a
 [parameter ordering bug](https://sourceforge.net/tracker/index.php?func=detail&aid=1595828&group_id=235&atid=100235)
 in [Gaim 2.x](http://gaim.sf.net/)'s
@@ -315,12 +315,12 @@ callback member.
 ([Applied](https://sourceforge.net/tracker/index.php?func=detail&aid=1595831&group_id=235&atid=300235)
 on 11/15/2006.)
 
-  * [Gaim accelerators in away menus patch](https://github.com/snarfed/patches/gaim_1_away_menu_accelerators.patch)
+  * [Gaim accelerators in away menus patch](https://github.com/snarfed/misc/patches/gaim_1_away_menu_accelerators.patch)
 ([tracker](http://sourceforge.net/tracker/index.php?func=detail&aid=1031098&group_id=235&atid=300235))
 fixes [Gaim 1.x](http://gaim.sf.net/)'s GTK menu code to allow accelerators in
 dynamically created menus, such as away message menus.
 
-  * Similarly, [Gaim accelerators in accounts submenus patch](https://github.com/snarfed/patches/gaim_2_accounts_menu_accels.patch)
+  * Similarly, [Gaim accelerators in accounts submenus patch](https://github.com/snarfed/misc/patches/gaim_2_accounts_menu_accels.patch)
 fixes [Gaim 2.x](http://gaim.sf.net/)'s GTK menu code to allow accelerators in
 the dynamically created submenus of the Accounts menu.
 ([Applied](https://sourceforge.net/tracker/index.php?func=detail&aid=1597271&group_id=235&atid=300235)

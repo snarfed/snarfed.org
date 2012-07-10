@@ -3,7 +3,7 @@ libwebserver shutdown patch
 <a href="http://libwebserver.sourceforge.net/"><img src="libwebserver.png"></a>
 
 For the impatient:  
-[Patch for libwebserver 0.5.3](https://github.com/snarfed/patches/libwebserver_shutdown.patch)  
+[Patch for libwebserver 0.5.3](https://github.com/snarfed/misc/patches/libwebserver_shutdown.patch)  
 [Tracker item on SourceForge](http://sourceforge.net/tracker/index.php?func=detail&aid=1146074&group_id=50164&atid=458797)  
 [Libwebserver page](http://libwebserver.sourceforge.net/)
 
@@ -20,6 +20,6 @@ it in our quest for [synchronizing mp3 playback](synchronizing_mp3_playback), an
 ...except for one thing. Libwebserver lets you start a server, but doesn't
 provide a way to _stop_ it. This might be reasonable for most programs, but not
 ours; we start and stop the server fairly often.
-[This patch](https://github.com/snarfed/patches/libwebserver_shutdown.patch) adds
+[This patch](https://github.com/snarfed/misc/patches/libwebserver_shutdown.patch) adds
 a `web_server_shutdown()` call that stops the server, closes its socket, and
 deallocates its memory.

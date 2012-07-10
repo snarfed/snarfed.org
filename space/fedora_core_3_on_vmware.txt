@@ -52,7 +52,7 @@ with recent Linux 2.6 kernels. This is well documented on the VMWare and RedHat
 forums...and luckily, one intrepid hacker has
 [posted a fix](http://www.vmware.com/community/thread.jspa?forumID=19&threadID=7556&messageID=57559).
 To apply it,
-[download the patch](https://github.com/snarfed/patches/vmware_tools_hgfs_linux_2.6_guest.patch),
+[download the patch](https://github.com/snarfed/misc/patches/vmware_tools_hgfs_linux_2.6_guest.patch),
 then apply it to the vmhgfs driver source and re-run the VMWare Tools config
 script. When it asks if you want to compile the hgfs module from source, say
 yes. Here are the commands:

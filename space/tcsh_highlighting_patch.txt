@@ -8,11 +8,11 @@ _This patch was
 It's included in tcsh versions 6.14.06 and later._
 
 For the impatient:  
-[Patch](https://github.com/snarfed/patches/tcsh-highlight.patch) for [tcsh
+[Patch](https://github.com/snarfed/misc/patches/tcsh-highlight.patch) for [tcsh
 6.14.00](http://www.tcsh.org/MostRecentRelease)
 
 I use [tcsh](http://www.tcsh.org/) as my shell, and I love it. [This
-patch](https://github.com/snarfed/patches/tcsh-highlight.patch) adds to tcsh's
+patch](https://github.com/snarfed/misc/patches/tcsh-highlight.patch) adds to tcsh's
 usability by highlighting some regions in reverse video.
 
 Specifically, it highlights the match during incremental search, and in emacs
