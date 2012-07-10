@@ -3,10 +3,10 @@ More Minimalist Gmail userstyle
 <a href="more_minimalist_gmail.png" class="shutter">
   <img class="right shadow" src="more_minimalist_gmail_thumb.png" /></a>
 
-[more_minimalist_gmail.css](more_minimalist_gmail.css) is a
-[userstyle](http://userstyles.org/help/userstyles) that hides most of Google
-Gmail's UI, leaving simplified view of your email, labels, and search box. It's
-intended for people who primarily use Gmail via the keyboard.
+[more_minimalist_gmail.css](https://github.com/snarfed/misc/userscripts/more_minimalist_gmail.css)
+is a [userstyle](http://userstyles.org/help/userstyles) that hides most of
+Google Gmail's UI, leaving simplified view of your email, labels, and search
+box. It's intended for people who primarily use Gmail via the keyboard.
 
 It was inspired by [Matt Constantine](http://mattconstantine.com/)'s
 [Minimalist Gmail](http://mattconstantine.com/mg) browser extension, which I

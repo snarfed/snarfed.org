@@ -15,9 +15,10 @@ you're done with it.
 I searched the web and found Dmitriy Igrishin's
 [message](http://groups.google.com/group/gnu.emacs.help/browse_thread/thread/2418c97018c33fbd)
 to [gnu.emacs.help](http://groups.google.com/group/gnu.emacs.help). He kindly
-provided me a [patch](comint_el_automatically_close_completions.patch) against
-Emacs 23.2's `comint.el`, which I translated into the advice below. Put it in
-your `.emacs` and you should be good to go!
+provided me a
+[patch](https://github.com/snarfed/patches/comint_el_automatically_close_completions.patch)
+against Emacs 23.2's `comint.el`, which I translated into the advice below. Put
+it in your `.emacs` and you should be good to go!
 
     (defun comint-close-completions ()
       "Close the comint completions buffer.

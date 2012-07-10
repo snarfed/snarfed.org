@@ -4,11 +4,10 @@ port_pine_patch
   <img class="right" src="pine.png" /></a>
 
 For the impatient:  
-[Download port_pine_patch.sh v0.1](port_pine_patch.sh)  
+[Download port_pine_patch.sh](https://github.com/snarfed/misc/port_pine_patch.sh)  
 [Pine source](http://www.washington.edu/pine/getpine/unix.html)  
 [My pine patches](software#patches)  
-[FAQ on patching
-pine](http://www.math.washington.edu/~chappa/pine/faq/index.html)
+[FAQ on patching pine](http://www.math.washington.edu/~chappa/pine/faq/)  
 
 I've written a number of [patches](software#patches) for
 [Pine](http://www.washington.edu/pine/), my email client. For a while, I ported

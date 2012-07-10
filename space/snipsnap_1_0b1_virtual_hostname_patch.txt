@@ -5,7 +5,7 @@ snipsnap 1.0b1 virtual hostname patch
 
 For the impatient:  
 [Patch for SnipSnap
-1.0b1](snipsnap-1.0b1-vhost.patch)  
+1.0b1](https://github.com/snarfed/patches/snipsnap-1.0b1-vhost.patch)  
 [SnipSnap 1.0b1
 source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b1-uttoxeter-20040914-src.tgz)  
 [Ant](http://ant.apache.org) (needed to build SnipSnap)
@@ -28,7 +28,7 @@ code has a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-387) that prevents
 virtual hostname redirection. :/
 
 I've written a small
-[patch](snipsnap-1.0b1-vhost.patch)
+[patch](https://github.com/snarfed/patches/snipsnap-1.0b1-vhost.patch)
 that fixes this. To use it with an existing SnipSnap installation, download the
 [SnipSnap 1.0b1
 source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b1-uttoxeter-20040914-src.tgz),

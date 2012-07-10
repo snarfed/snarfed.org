@@ -3,14 +3,13 @@ pine reply-all patch
 <a href="http://washington.edu/pine/">
   <img class="right" src="pine.png" /></a>
 
-For the impatient:  
-Patch for Pine [4.58](reply-all.patch.4.58), [4.60
-and 4.61](reply-all.patch.4.60),
-[4.63](reply-all.patch.4.63),
-[4.64](reply-all.patch.4.64)  
-[Pine source](http://www.washington.edu/pine/getpine/unix.html)  
-[FAQ on patching
-pine](http://www.math.washington.edu/~chappa/pine/faq/index.html)
+For the impatient: Patch for Pine
+[4.58](https://github.com/snarfed/patches/pine/reply-all.patch.4.58),
+[4.60 and 4.61](https://github.com/snarfed/patches/pine/reply-all.patch.4.60),
+[4.63](https://github.com/snarfed/patches/pine/reply-all.patch.4.63),
+[4.64](https://github.com/snarfed/patches/pine/reply-all.patch.4.64)  
+[Pine source](http://www.washington.edu/pine/getpine/unix.html)
+[FAQ on patching pine](http://www.math.washington.edu/~chappa/pine/faq/index.html)
 
 I use [Pine](http://www.washington.edu/pine/) as my email client, and I really
 like it. It's fast, simple, full-featured, and very keyboardable. However,
@@ -29,8 +28,8 @@ all.
 So, I wrote a patch to separate Pine's Reply command into Reply and Reply All
 commands, which behave as expected. To patch Pine and build it, first download
 the [Pine 4.60 source](http://www.washington.edu/pine/getpine/unix.html) and my
-[patch](reply-all.patch.4.60). Then, run these
-commands to extract, patch, and build Pine.
+[patch](https://github.com/snarfed/patches/pine/reply-all.patch.4.60). Then, run
+these commands to extract, patch, and build Pine.
 
     $ tar xzvf pine.tar.gz
     $ cd pine4.60
@@ -39,11 +38,10 @@ commands to extract, patch, and build Pine.
 
 If you download a source package other than the gzip, modify the first command
 accordingly. Also, if you're not on Red Hat Linux, modify the last command
-accordingly. For more information on patching Pine, see [Eduardo Chappa's
-FAQ](http://www.math.washington.edu/~chappa/pine/faq/index.html).
+accordingly. For more information on patching Pine, see
+[Eduardo Chappa's FAQ](http://www.math.washington.edu/~chappa/pine/faq/index.html).
 
-If you do try it out, please [let me
-know!](about)
+If you do try it out, please [let me know!](about)
 
 **Note:** If you get compile problems with kssl.h and krb5.h when building Pine
 on Redhat 9, use this build command:

@@ -64,7 +64,7 @@ joystick, and can control the orientation of each axis independently...but the
 ones I tried don't have any effect when you use the mouse itself.
 
 Finally, I wrote a
-[script](invert_mouse.ahk) for
+[script](https://github.com/snarfed/misc/invert_mouse.ahk) for
 [AutoHotKey](http://autohotkey.com/), a pretty sophisticated program that lets
 you script and remap mouse, keyboard, and joystick input. It inverts the mouse
 per-axis successfully, but doesn't affect DirectInput apps.

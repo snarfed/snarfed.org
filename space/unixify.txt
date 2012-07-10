@@ -2,10 +2,9 @@ unixify
 
 <img class="right shadow" src="unix.jpg" />
 
-_Updated 7/8/2010._
-
-*unixify.sh* is a simple shell script I use to sanitize files people send me,
-often from other operating systems.
+[`unixify.sh`](https://github.com/snarfed/misc/unixify.sh) is a simple shell
+script I use to sanitize files people send me, often from other operating
+systems.
 
 It cleans up file names by removing most punctuation and converting spaces to
 underscores and upper case to lower case. For example, it converts
@@ -18,57 +17,3 @@ converts Microsoft Word documents to plain text with
 
 It supports dry runs via the `-n` flag, which just prints what would be done
 instead of actually doing it.
-
-Here's the script:
-
-    #!/bin/bash
-    
-    # parse args
-    while getopts "n" options; do
-      case $options in
-        n ) DRYRUN="-n";;
-        * ) echo 'Usage: unixify.sh FILES...'
-            exit 1;;
-      esac
-    done
-    
-    # getops updates OPTIND to point to the arg it stopped at. shift $@ to that point.
-    shift $((OPTIND-1))
-    
-    for file in "$@"; do
-      # clean filename. (careful with the quoting and line break continuations!)
-      newfile=`rename -v $DRYRUN \
-          "y/ /_/;
-          s/[!?':\",\[\]()#]//g; "'
-          s/&/and/g;
-          y/A-Z/a-z/;
-          s/\.\.\./_/g;
-          s/_+/_/g;
-          s/_(\.[^.]+$)/$1/;
-          s/\.jpeg$/.jpg/' \
-          "$file"`
-    
-      if [[ $DRYRUN != "" ]]; then
-        if [[ $newfile != "" ]]; then
-          echo $newfile
-        fi
-        continue
-      fi
-    
-      if [[ $newfile =~ ' renamed as ' ]]; then
-        file=${newfile/* renamed as /}
-      fi
-    
-      if [[ $file =~ \.(gif|jpg|png)$ ]]; then
-        # optimize image
-        convert $file $file
-      elif [[ $file =~ \.doc$ ]]; then
-        # convert word doc to text
-        antiword $file > `basename $file .doc`.txt
-      fi
-    
-      if [[ `file -b $file` =~ text,.*with\ CRLF ]]; then
-        # remove any carriage returns
-        sed --in-place 's/\r//g' $file
-      fi
-    done

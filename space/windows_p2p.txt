@@ -67,10 +67,10 @@ know](about)!
 
 As an aside, I got sidetracked from the reverse engineering one day, and wrote
 an implementation of the PNRP multi-level cache. You can download the
-[code](pnrp.py) and a [unit
-test](pnrp_unittest.py). (The multi-level cache is
-specifically covered by their patent, but this code isn't in the context of name
-resolution, so I'm not too worried. :P)
+[code](https://github.com/snarfed/misc/pnrp.py) and a
+[unit test](https://github.com/snarfed/misc/pnrp_unittest.py). (The multi-level
+cache is specifically covered by their patent, but this code isn't in the
+context of name resolution, so I'm not too worried. :P)
 
 Finally, this usually is (and should be) legal. Reverse engineering is expressly
 permitted under the right of "fair use" established by copyright law. [Recent

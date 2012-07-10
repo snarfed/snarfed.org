@@ -3,7 +3,7 @@ Google Calendar Simplified userstyle
 <a href="google_calendar_simplified.png" class="shutter">
   <img class="right shadow" src="google_calendar_simplified_thumb.png" /></a>
 
-[google_calendar_simplified.css](google_calendar_simplified.css) is a
+[google_calendar_simplified.css](https://github.com/snarfed/misc/userscripts/google_calendar_simplified.css) is a
 [userstyle](http://userstyles.org/help/userstyles) that simplifies
 [Google Calendar](https://calendar.google.com/) by removing the calendar header
 (except for the Settings link), footer, and other things. It was inspired by

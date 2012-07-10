@@ -2,8 +2,9 @@ backup_google.sh
 
 <img class="right" src="server_parachute.jpg" />
 
-[backup_google.sh](backup_google.sh) is a script that backs up data in the
-Google services I use: [Contacts](http://www.google.com/contacts),
+[backup_google.sh](https://github.com/snarfed/misc/backup_google.sh) is a script
+that backs up data in the Google services I use:
+[Contacts](http://www.google.com/contacts),
 [Calendar](http://calendar.google.com/),
 [Reader](http://www.google.com/reader/), and
 [Tasks](https://mail.google.com/tasks/canvas). It uses

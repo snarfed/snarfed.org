@@ -4,7 +4,7 @@ snipsnap comment without login patch
 <a href="http://jetty.mortbay.com/"><img src="jetty.png"></a>
 
 For the impatient:  
-[Patch for SnipSnap 1.0b2-uttoxeter](snipsnap-comment-without-login.patch)  
+[Patch for SnipSnap 1.0b2-uttoxeter](https://github.com/snarfed/patches/snipsnap-comment-without-login.patch)  
 [SnipSnap 1.0b2-uttoxeter source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b2-uttoxeter-20050204-src.tgz)  
 [Ant](http://ant.apache.org) (needed to build SnipSnap)
 
@@ -16,7 +16,7 @@ register before you can comment.
 
 I want to do everything possible to encourage people to comment. If they have to
 jump through the account creation hoops for yet another site before they can
-comment, chances are they won't. So, I wrote a [patch](snipsnap-comment-without-login.patch) to allow visitors to
+comment, chances are they won't. So, I wrote a [patch](https://github.com/snarfed/patches/snipsnap-comment-without-login.patch) to allow visitors to
 comment without logging in.
 
 The patch applies cleanly against
