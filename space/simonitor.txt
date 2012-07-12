@@ -14,7 +14,7 @@ card's balance and transaction history in real time. However, it's a little
 tedious to navigate the site and enter the card number and CCV each time.
 So, I automated it.
 
-[simonitor.sh](https://github.com/snarfed/misc/simonitor.sh) is a shell script
+[simonitor.sh](https://github.com/snarfed/misc/blob/master/simonitor.sh) is a shell script
 that fetches the available balance, expiration date, and address (if registered)
 for one or more [Simon gift cards](http://www.simon.com/giftcard/). It uses
 [curl](http://curl.haxx.se/) to POST each card number and CCV to

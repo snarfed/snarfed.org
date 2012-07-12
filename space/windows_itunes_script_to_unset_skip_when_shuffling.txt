@@ -4,7 +4,7 @@ iTunes for Windows script to unset <i>Skip when shuffling</i>
 <a href="http://apple.com/ipodshuffle/"><img src="ipod_shuffle.jpg"></a>
 <a href="http://en.wikipedia.org/wiki/Podcast"><img src="rss.jpg"></a>
 
-[no_skip_when_shuffling.js](https://github.com/snarfed/misc/no_skip_when_shuffling.js)
+[no_skip_when_shuffling.js](https://github.com/snarfed/misc/blob/master/no_skip_when_shuffling.js)
 is a script for [iTunes](http://apple.com/itunes/) for Windows that unsets the
 [_skip when shuffling_](http://www.reelsmart.com/2006/01/28/itunes-tip-29-skip-tracks-when-shuffling/)
 setting on all songs in a playlist. It was inspired by
@@ -23,7 +23,7 @@ podcasts, then run this script. When I plug in my iPod, Autofill syncs it so
 that it has only the podcasts I haven't listened to yet.
 
 You can
-[download the script](https://github.com/snarfed/misc/no_skip_when_shuffling.js),
+[download the script](https://github.com/snarfed/misc/blob/master/no_skip_when_shuffling.js),
 or copy and paste it from here:
 
     var playlist_name = "Podcasts";

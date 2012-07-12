@@ -5,10 +5,10 @@ pine remove trailing quote patch
 
 For the impatient:  
 Patch for Pine
-[4.60](https://github.com/snarfed/misc/patches/pine/remove-trailing-quote.patch.4.60),
-[4.61](https://github.com/snarfed/misc/patches/pine/remove-trailing-quote.patch.4.61),
-[4.63](https://github.com/snarfed/misc/patches/pine/remove-trailing-quote.patch.4.63),
-[4.64](https://github.com/snarfed/misc/patches/pine/remove-trailing-quote.patch.4.64)  
+[4.60](https://github.com/snarfed/misc/blob/master/patches/pine/remove-trailing-quote.patch.4.60),
+[4.61](https://github.com/snarfed/misc/blob/master/patches/pine/remove-trailing-quote.patch.4.61),
+[4.63](https://github.com/snarfed/misc/blob/master/patches/pine/remove-trailing-quote.patch.4.63),
+[4.64](https://github.com/snarfed/misc/blob/master/patches/pine/remove-trailing-quote.patch.4.64)  
 [Pine source](http://www.washington.edu/pine/getpine/unix.html)  
 [FAQ on patching
 pine](http://www.math.washington.edu/~chappa/pine/faq/index.html)

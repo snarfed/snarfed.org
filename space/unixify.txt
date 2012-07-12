@@ -2,7 +2,7 @@ unixify
 
 <img class="right shadow" src="unix.jpg" />
 
-[`unixify.sh`](https://github.com/snarfed/misc/unixify.sh) is a simple shell
+[`unixify.sh`](https://github.com/snarfed/misc/blob/master/unixify.sh) is a simple shell
 script I use to sanitize files people send me, often from other operating
 systems.
 

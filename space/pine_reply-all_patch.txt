@@ -4,10 +4,10 @@ pine reply-all patch
   <img class="right" src="pine.png" /></a>
 
 For the impatient: Patch for Pine
-[4.58](https://github.com/snarfed/misc/patches/pine/reply-all.patch.4.58),
-[4.60 and 4.61](https://github.com/snarfed/misc/patches/pine/reply-all.patch.4.60),
-[4.63](https://github.com/snarfed/misc/patches/pine/reply-all.patch.4.63),
-[4.64](https://github.com/snarfed/misc/patches/pine/reply-all.patch.4.64)  
+[4.58](https://github.com/snarfed/misc/blob/master/patches/pine/reply-all.patch.4.58),
+[4.60 and 4.61](https://github.com/snarfed/misc/blob/master/patches/pine/reply-all.patch.4.60),
+[4.63](https://github.com/snarfed/misc/blob/master/patches/pine/reply-all.patch.4.63),
+[4.64](https://github.com/snarfed/misc/blob/master/patches/pine/reply-all.patch.4.64)  
 [Pine source](http://www.washington.edu/pine/getpine/unix.html)
 [FAQ on patching pine](http://www.math.washington.edu/~chappa/pine/faq/index.html)
 
@@ -28,7 +28,7 @@ all.
 So, I wrote a patch to separate Pine's Reply command into Reply and Reply All
 commands, which behave as expected. To patch Pine and build it, first download
 the [Pine 4.60 source](http://www.washington.edu/pine/getpine/unix.html) and my
-[patch](https://github.com/snarfed/misc/patches/pine/reply-all.patch.4.60). Then, run
+[patch](https://github.com/snarfed/misc/blob/master/patches/pine/reply-all.patch.4.60). Then, run
 these commands to extract, patch, and build Pine.
 
     $ tar xzvf pine.tar.gz

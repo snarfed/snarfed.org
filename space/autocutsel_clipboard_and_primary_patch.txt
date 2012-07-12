@@ -4,7 +4,7 @@ autocutsel clipboard and primary patch
   <img class="right" src="clip.png" /></a>
 
 For the impatient:  
-[Patch for autocutsel 0.7.0](https://github.com/snarfed/misc/patches/autocutsel_unified.v2.patch)  
+[Patch for autocutsel 0.7.0](https://github.com/snarfed/misc/blob/master/patches/autocutsel_unified.v2.patch)  
 [Autocutsel page](http://www.nongnu.org/autocutsel/)
 
 I love [Firefox](http://mozilla.org/firefox/), but there are a few things about

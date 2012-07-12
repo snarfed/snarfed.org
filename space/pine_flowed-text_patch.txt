@@ -5,9 +5,9 @@ pine flowed-text patch
 
 For the impatient:  
 Patch for Pine [4.60 and
-4.61](https://github.com/snarfed/misc/patches/pine/quell-displaying-flowed-text.patch.4.60),
-[4.63](https://github.com/snarfed/misc/patches/pine/quell-displaying-flowed-text.patch.4.63),
-[4.64](https://github.com/snarfed/misc/patches/pine/quell-displaying-flowed-text.patch.4.64)  
+4.61](https://github.com/snarfed/misc/blob/master/patches/pine/quell-displaying-flowed-text.patch.4.60),
+[4.63](https://github.com/snarfed/misc/blob/master/patches/pine/quell-displaying-flowed-text.patch.4.63),
+[4.64](https://github.com/snarfed/misc/blob/master/patches/pine/quell-displaying-flowed-text.patch.4.64)  
 [RedHat and Debian packages](http://www.quantumlinux.com/~chuckw/pine/)  
 [Pine source](http://www.washington.edu/pine/getpine/unix.html)  
 [FAQ on patching

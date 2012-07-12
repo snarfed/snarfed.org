@@ -1,9 +1,8 @@
 windows p2p
 
-Disclaimers: these images are taken from a [Microsoft
-article](http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx),
-so they're probably copyrighted by Microsoft. They're _not_ mine.
-:P
+Disclaimers: these images are taken from a
+[Microsoft article](http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx),
+so they're probably copyrighted by Microsoft. They're _not_ mine. :P
 
 <a href="http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx"><img src="p2p.png"></a>
 
@@ -26,10 +25,10 @@ the networking infrastructure in the
 
 <a href="http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx"><img src="stack.png"></a>
 
-In a nutshell, Windows P2P uses a [distributed hash
-table](http://www.infoanarchy.org/wiki/wiki.pl?Distributed_Hash_Table) for name
-resolution, with some interesting quirks. It includes decent mechanisms for
-creating, maintaining, and broadcasting to small groups of peers. It uses
+In a nutshell, Windows P2P uses a
+[distributed hash table](http://www.infoanarchy.org/wiki/wiki.pl?Distributed_Hash_Table)
+for name resolution, with some interesting quirks. It includes decent mechanisms
+for creating, maintaining, and broadcasting to small groups of peers. It uses
 [IPv6](http://www.ipv6.org/) as its underlying transport, with
 [6to4](http://www.6bone.net/6bone_6to4.html) and
 [Teredo](http://www.microsoft.com/technet/prodtechnol/winxppro/maintain/teredo.mspx)
@@ -60,22 +59,21 @@ examples include instant messaging protocols such as
 [MSN](http://www.hypothetic.org/docs/msn/index.php). However, these focus on
 describing the protocols themselves, not the methodologies used to reverse
 engineer them. If you know of good resources on reverse engineering network
-protocols, or you'd like to help, [let me
-know](about)!
+protocols, or you'd like to help, [let me know](about)!
 
 <a href="http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx"><img src="cache.png"></a>
 
 As an aside, I got sidetracked from the reverse engineering one day, and wrote
 an implementation of the PNRP multi-level cache. You can download the
-[code](https://github.com/snarfed/misc/pnrp.py) and a
-[unit test](https://github.com/snarfed/misc/pnrp_unittest.py). (The multi-level
-cache is specifically covered by their patent, but this code isn't in the
-context of name resolution, so I'm not too worried. :P)
+[code](https://github.com/snarfed/misc/blob/master/pnrp.py) and a
+[unit test](https://github.com/snarfed/misc/blob/master/pnrp_unittest.py). (The
+multi-level cache is specifically covered by their patent, but this code isn't
+in the context of name resolution, so I'm not too worried. :P)
 
 Finally, this usually is (and should be) legal. Reverse engineering is expressly
-permitted under the right of "fair use" established by copyright law. [Recent
-rulings](http://www.eff.org/IP/Emulation/) have eroded this right with respect
-to software; specifically, they have held that software publishers can withhold
-this right in "shrinkwrap" or click-through licenses. I don't know if
+permitted under the right of "fair use" established by copyright law.
+[Recent rulings](http://www.eff.org/IP/Emulation/) have eroded this right with
+respect to software; specifically, they have held that software publishers can
+withhold this right in "shrinkwrap" or click-through licenses. I don't know if
 Microsoft's license for Windows P2P forbids reverse engineering, but I'm not
 inclined to find out.

@@ -5,7 +5,7 @@ acoc.conf for context diffs
 
 For the impatient:  
 [.acoc.conf](acoc.conf) for coloring context diffs  
-[Patch](https://github.com/snarfed/misc/patches/acoc-diff-context.patch)
+[Patch](https://github.com/snarfed/misc/blob/master/patches/acoc-diff-context.patch)
 for acoc 0.7.1  
 
 [Acoc](http://www.caliban.org/ruby/acoc.shtml) is one of my favorite \*nix
@@ -25,6 +25,6 @@ To color those lines, add this to your _~/.acoc.conf_:
     [diff,rcsdiff/t,cvs diff/t,p4 diff/t]
     /^([!*].*)/        yellow
 
-[This patch](https://github.com/snarfed/misc/patches/acoc-diff-context.patch) adds the
+[This patch](https://github.com/snarfed/misc/blob/master/patches/acoc-diff-context.patch) adds the
 rule to acoc 0.7.1.
 

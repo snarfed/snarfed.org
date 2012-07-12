@@ -3,8 +3,8 @@ snipscrape
 <a href="snipscrape">
   <img class="right" src="scraper.jpg" /></a>
 
-Downloads: [snipscrape.sh](https://github.com/snarfed/misc/snipscrape.sh)
-and [snipscrape.xslt](https://github.com/snarfed/misc/snipscrape.xslt)
+Downloads: [snipscrape.sh](https://github.com/snarfed/misc/blob/master/snipscrape.sh)
+and [snipscrape.xslt](https://github.com/snarfed/misc/blob/master/snipscrape.xslt)
 
 Snipscrape is a screen scraper for [SnipSnap](http://snipsnap.org/). It enables
 you to import pages from one SnipSnap site into another, or to recover content

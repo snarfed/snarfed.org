@@ -4,8 +4,8 @@ snipsnap recent-changes snip name patch
 <a href="http://jetty.mortbay.com/"><img src="jetty.png"></a>
 
 For the impatient:  
-[Patch for SnipSnap CVS HEAD](https://github.com/snarfed/misc/patches/snipsnap-snip-name-cvs.patch)  
-[Patch for SnipSnap 1.0b1](https://github.com/snarfed/misc/patches/snipsnap-snip-name-1.0b1.patch)  
+[Patch for SnipSnap CVS HEAD](https://github.com/snarfed/misc/blob/master/patches/snipsnap-snip-name-cvs.patch)  
+[Patch for SnipSnap 1.0b1](https://github.com/snarfed/misc/blob/master/patches/snipsnap-snip-name-1.0b1.patch)  
 [SnipSnap 1.0b1 source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b1-uttoxeter-20040914-src.tgz)  
 [Ant](http://ant.apache.org) (needed to build SnipSnap)  
 [Patching FAQ](http://www.gnu.org/software/diffutils/manual/html_node/Merging-with-patch.html)
@@ -18,7 +18,7 @@ that showed all blog posts as "1" in the recent-changes macro. This was quickly
 fixed, but only for the default "vertical" style. The bug remained in all other
 list styles.
 
-I've written a small [patch](https://github.com/snarfed/misc/patches/snipsnap-snip-name-1.0b1.patch) that fixes the
+I've written a small [patch](https://github.com/snarfed/misc/blob/master/patches/snipsnap-snip-name-1.0b1.patch) that fixes the
 remaining list styles. To use it with an existing SnipSnap installation,
 download the
 [SnipSnap 1.0b1 source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b1-uttoxeter-20040914-src.tgz),
