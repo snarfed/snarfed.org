@@ -80,8 +80,7 @@ CSS styling pleasure, it uses divs with the classes `openid-info`,
 You can override the default HTML by adding `openid-info`, `openid-login`, and
 `openid-error` templates for your flavour of choice. Example templates for the
 html flavour are included in
-[openid_server-0.3.tar.gz](openid_server-0.3.tar.gz).
-
+[openid_server-0.4.tar.gz](openid_server-0.4.tar.gz).
 
 openid_server.py is copyright 2006 [Ryan Barrett](about), and is
 distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
