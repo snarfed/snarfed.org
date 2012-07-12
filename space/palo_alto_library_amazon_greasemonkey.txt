@@ -12,9 +12,10 @@ libraries](#others)
 [Get Firefox](http://getfirefox.com/)  
 [Get Greasemonkey](http://downloads.mozdev.org/greasemonkey/greasemonkey_0.3.3.xpi)
 
-The [Palo Alto Library Greasemonkey script](paloaltolibrary.user.js) adds a link
-to Amazon that shows whether the book you're looking at is available in the
-[Palo Alto Libraries](http://cityofpaloalto.org/library/).
+The
+[Palo Alto Library Greasemonkey script](https://github.com/snarfed/misc/blob/master/userscripts/paloaltolibrary.user.js)
+adds a link to Amazon that shows whether the book you're looking at is available
+in the [Palo Alto Libraries](http://cityofpaloalto.org/library/).
 
 There are plugins with similar functionality for other libraries and catalogs;
 [see below](#others) for a list. The Palo Alto Library script differs mainly in
