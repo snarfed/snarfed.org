@@ -158,6 +158,12 @@ email account.
 <a name="scripts"></a>
 ### Scripts
 
+  * [choose.sh](https://github.com/snarfed/misc/blob/master/choose.sh),
+    [choose.py](https://github.com/snarfed/misc/blob/master/choose.py), and
+    [rename.sh](https://github.com/snarfed/misc/blob/master/rename.sh) are a
+    dirt simple suite of scripts for managing pictures, specifically choosing
+    the ones you want to keep and renaming (ie tagging) them.
+
   * [import_issues.py](import_issues) imports issues from a CSV file into a
 [Google Code project hosting](http://code.google.com/hosting/)
 [issue tracker](http://code.google.com/p/support/wiki/IssueTracker).
