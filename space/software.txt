@@ -11,6 +11,11 @@ is public domain. Also see [other lists](lists).
 <a name="projects"></a>
 ### Projects
 
+  * [salmon-unofficial](https://github.com/snarfed/salmon-unofficial) is a stand-in
+[Salmon](http://salmon-protocol.org/) server for social networking sites like
+Facebook, Twitter, and Google+ that don't implement it themselves. See the
+[blog post](2012-07-14_salmon_for_facebook_twitter_and_google_plus) for details.
+
   * [Bowflex Planner](http://bowflex-planner.appspot.com/) optimizes Bowflex
     Revolution exercise routines to minimize rearranging weights and
     attachments. It was an excuse to learn the
