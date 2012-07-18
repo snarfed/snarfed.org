@@ -56,5 +56,5 @@ Components.classes['@mozilla.org/network/protocol-proxy-service;1'].getService()
 * [Adblock Plus](http://adblockplus.org/) steals Ctrl-Shift-E, Ctrl-Shift-F, and
   Ctrl-Shift-O and sets them to open its Filters window. Totally unnecessary! To
   reclaim them, open [`about:config`](about:config) and clear the value for
-  `extensions.adblockplus.filters_key`. (This isn't a keyconfig thing, but it's
-  still worth mentioning.)
+  `extensions.adblockplus.filters_key`, then restart Firefox. (This isn't a
+  keyconfig thing, but it's still worth mentioning.)
