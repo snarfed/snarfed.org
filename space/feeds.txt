@@ -59,6 +59,15 @@ http://www.facebook.com/feeds/friends_status.php?id=XXX&key=YYY&format=rss20&fli
 
 flid is the friend list id, can get on friend list page by scraping html?
 
+these also work for friends' links, notifications (e.g. X liked your status),
+and notes, which i don't currently subscribe to. same query params.
+
+http://www.facebook.com/feeds/friends_status.php?...
+http://www.facebook.com/feeds/share_friends_posts.php?...
+https://www.facebook.com/feeds/notifications.php?...
+http://www.facebook.com/feeds/friends_notes.php?...
+
+
 
 filtered game industry feeds
 ==
