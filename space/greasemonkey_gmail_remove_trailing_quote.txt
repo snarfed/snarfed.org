@@ -2,7 +2,7 @@ GreaseMonkey script for Gmail: remove trailing quotes
 
 <a href="http://greasespot.net/"><img class="right" src="greasemonkey.png" /></a>
 
-[gmail_remove_trailing_quote.user.js](https://github.com/snarfed/misc/blob/master/userscripts/gmail_remove_trailing_quote.user.js)
+[gmail_remove_trailing_quote.user.js](https://github.com/snarfed/misc/raw/master/userscripts/gmail_remove_trailing_quote.user.js)
 is a [GreaseMonkey](http://greasespot.net/)
 [userscript](http://userscripts.org/scripts/show/86600) that removes "trailing
 quotes" from messages you compose in Gmail. It modifies your in-progress email
