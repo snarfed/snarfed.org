@@ -13,20 +13,24 @@ of all the different cubes and offices I've had. Easily more than 20, across at
 least 8 buildings. No joke. Happily, this is one of the best I can remember. I
 think I'll keep it for a while.
 
+<!--more-->
+<span />
+
 I actually have a good home office. Simple layout, nice library desk, big
 monitor for screen real estate, sheltered from noise and activity. It even has a
 proper ball instead of a chair, since that's how I roll. (...sorry.)
 
 Even so, it never really stuck. I always preferred going in to work,
-distractions and all. I used to claim it was the latency, but I avoided it even
-after I switched from
+distractions and all. I used to claim it was the latency, but I kept going in
+even after I switched from working remotely with
 [emacs server](http://www.gnu.org/software/emacs/manual/html_node/emacs/Emacs-Server.html)
 to [shells in emacs](why_i_run_shells_inside_emacs) and
-[sshfs](http://fuse.sourceforge.net/sshfs.html), which got rid of per-keystroke
-round trips in editing files and command lines. If it wasn't the latency, then
-what?
+[sshfs](http://fuse.sourceforge.net/sshfs.html), which got rid of the
+per-keystroke round trips in editing files and command lines. If it wasn't the
+latency, then what?
 
-<img class="right shadow" src="home_office.jpg" />
+<a class="shutter" href="home_office.jpg">
+  <img class="right shadow" src="home_office_thumb.jpg" /></a>
 
 This new office made the answer blindingly clear: natural light. I love natural
 light, and for
@@ -43,8 +47,8 @@ and it feels like a cool autumn afternoon at a lake house. Quiet, relaxed,
 breezy, contemplative. Perfect.
 
 Sure, the latency is a bit better, the screen real estate is a bit bigger, and
-spending core hours with my team in person is a must. (I like them, too, which
-doesn't hurt.) The office is a big draw, though. I'm psyched to hang out in it
+spending core hours with my team in person is a must. I like them, too, which
+doesn't hurt. Still, the office is a big draw. I'm psyched to hang out in it
 more.
 
 Thanks for letting me crash, Slade.
