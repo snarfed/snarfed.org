@@ -4,8 +4,8 @@ about
 p > a > img {vertical-align: middle;}
 </style>
 
-<a class="shutter" href="ryan.jpg">
-  <img class="right shadow" src="ryan_small.jpg" /></a>
+<a class="shutter" href="ryan_field_smiling_close.jpg">
+  <img class="right shadow" src="ryan_field_smiling_close_thumb.jpg" /></a>
 
 I'm Ryan Barrett. For more about me, see my [resume](resume.html),
 [posts](index), [pictures](pictures), [software](software), and [lists](lists).
@@ -20,6 +20,8 @@ Here's my contact info:
 [Ryan Barrett](https://plus.google.com/103651231634018158746)  
 [![twitter button](/twitter_button.png)](http://twitter.com/snarfed_org)
 [snarfed_org](http://twitter.com/snarfed_org)  
+
+&nbsp;  
 
 snarfed.org has been around [since early 2002](snarfed_org_history). It was
 [born](2003-07-18_its_live) on my own server, which lived first in dorm rooms at
