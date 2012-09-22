@@ -1,0 +1,91 @@
+Revisiting <i>Why I&#39;m weird about privacy</i>
+
+<a href="2011-08-03_why_im_weird_about_privacy">
+  <img class="shadow right" src="privacy_head_sock.jpg" /></a>
+
+Since I wrote
+_[Why I'm weird about privacy](2011-08-03_why_im_weird_about_privacy)_ over a
+year ago, it's become one of the more unusual things I've published here.
+
+My posts generally break down into three buckets: useful
+[information](privacy_through_prepaid_credit_cards), light personal
+[trifles](2012-08-20_hello_anaphylaxis), and heavy, thoughtful
+[essays](2012-08-15_if_theres_no_free_will_then_what).
+_[Why I'm weird](2011-08-03_why_im_weird_about_privacy)_ had a bit of each, and
+it generated a similarly mixed response. Strangers discussed it online more than
+friends, but friends asked about it offline more than my other essays, and they
+engaged with the practical info and tips just as much as the deeper ideas,
+assuming it had any to begin with.
+
+I enjoyed writing it, and when I re-read it now, it still holds up: I'm still
+weird in all the same ways. However, the world itself is changing. Online
+privacy concerns loom ever larger in the public consciousness, including
+[behavioral tracking](http://springload.com/2012/03/03/the-real-reason-consumers-are-creeped-out-by-online-ads/),
+[re-identification](http://epic.org/privacy/reidentification/#intro), and the
+lopsided
+[balance of power](http://news.cnet.com/8301-1009_3-57470750-83/how-google-products-go-from-creepy-to-cool/)
+we feel information-rich companies like Google and Facebook hold over us. Europe
+is leading the push for a
+["right to be forgotten"](http://www.stanfordlawreview.org/online/privacy-paradox/right-to-be-forgotten),
+a seductively compelling idea that unfortunately may raise more questions than
+it answers.
+
+There may not be many truly new ideas, but the volume is definitely getting
+louder, and I've enjoyed the newfound attention to privacy and big data from
+researchers across many fields. Here are a few standouts:
+
+* [Daniel Solove](http://www.law.gwu.edu/facweb/dsolove/), a law professor at
+  [GWU](http://www.law.gwu.edu), has been a leading thinker on privacy and law
+  for decades. His book
+  [Nothing to Hide](http://books.google.com/books?id=YlQmcgAACAAJ), based on his
+  academic work, thrusts privacy forward as a cornerstone of healthy civil
+  society, something to be promoted for its wide ranging benefits and not just
+  defended to pacify a few hand-wringing luddites.
+
+* Information theorists have demolished any hope of digging ourselves out of
+  these holes with
+  [de-identification](http://en.wikipedia.org/wiki/De-identification) alone.
+  [Cynthia Dwork](http://research.microsoft.com/en-us/people/dwork/)'s
+  _[Differential Privacy](http://scholar.google.com/scholar?as_sdt=1,5&q=%22Differential+Privacy%22+%22Cynthia+Dwork%22&hl=en&as_vis=1)_
+  in particular has emerged as a crushing
+  [incompleteness theorem](http://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems),
+  proving that true de-identification is impossible in any formal sense.
+
+<a class="shutter" href="scufflechuck_check.jpg">
+  <img class="shadow right" src="scufflechuck_check_thumb.jpg"></a>
+
+* People from academia and industry are not only
+  [talking about](http://scholar.google.com/scholar?hl=en&q=%22Engineering+Privacy+in+an+Age+of+Information+Abundance%22&btnG=&as_sdt=1%2C5&as_sdtp=)
+  privacy and big data, they're
+  [actually listening](http://www.stanfordlawreview.org/online/privacy-paradox/big-data)
+  to each other. I've appreciated the newly explicittradeoff between privacy and
+  public goods that come from data mining, such as medical research, governance
+  reform, and tackling climate change. When we look at these questions as
+  tradeoffs, and honestly weigh all sides, we're more likely to land in a
+  halfway decent place.
+
+On a lighter note,
+<a class="shutter" href="scufflechuck_check.jpg">my new checks</a>
+came in the mail yesterday! I've been gradually moving accounts from my name to
+my LLC's, and the financial services are easily the most critical. I'm just a
+few steps away from closing the accounts in my name entirely. I'll soon be able
+now move money around without any visible connection to my name, address, or any
+other
+[PII](http://en.wikipedia.org/wiki/Personally_identifiable_information). Woot!
+
+Don't get too complacent out there. You might be the next friend I convince to
+[start a shady LLC](http://www.trollololmotorcars.com/) or
+[hide your movements](http://snarfed.org/2011-08-03_why_im_weird_about_privacy#comment-76518).
+Mwahahahaha...
+
+
+<!--
+[useful](sole-elliptical-need-lube-message)
+[information](privacy_through_prepaid_credit_cards),
+[light](engagement_photos)
+[personal](2012-07-22_westvleteren_with_friends)
+[trifles](2012-08-20_hello_anaphylaxis), and
+[heavy](2012-08-15_if_theres_no_free_will_then_what),
+[thoughtful](2011-11-16_should_first_sale_doctrine_die)
+[essays](2011-04-04_double_negatives_dont_make_you_sound_smart).
+-->
