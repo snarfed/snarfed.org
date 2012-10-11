@@ -40,5 +40,18 @@ The solution is to toggle all of the channels explicitly:
 - no networkmanager
 - xmodmap => setxkbmap for ctrl/caps lock
 
+  * Here are some of the extra packages I installed:
+
+    ...and I needed these to build [notion](http://notion.sourceforge.net/), my
+    window manager:
+
+    * gettext
+    * liblua5.1-0-dev
+    * libsm-dev
+    * libx11-dev
+    * libxext-dev
+    * libxinerama-dev
+    * libxrandr-dev
+
 
 Enjoy Ubuntu Precise!
