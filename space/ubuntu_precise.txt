@@ -36,11 +36,77 @@ The solution is to toggle all of the channels explicitly:
          sset PCM toggle
          sset Front toggle' | amixer --stdin -q
 
+  * On the topic of sound, it didn't initially work on my laptop because
+    `/dev/snd/*` weren't world writable or readable. A quick
+    `sudo chmod a+rw /dev/snd/*` fixed that, but it didn't stick across
+    reboots, so I put it in my `.login`. Oddly, my workstation didn't have this
+    permissions problem; it worked out of the box.
 
-- no networkmanager
-- xmodmap => setxkbmap for ctrl/caps lock
+  * Lucid's [NetworkManager](http://projects.gnome.org/NetworkManager/) package
+    didn't come with a good command line utility, so I used
+    [cnetworkmanager](http://vidner.net/martin/software/cnetworkmanager/).
+    Precise's NetworkManager added
+    `[nmcli](http://manpages.ubuntu.com/manpages/precise/man1/nmcli.1.html)` and
+    `[nm-tool](http://manpages.ubuntu.com/manpages/precise/man1/nm-tool.1.html)`,
+    both of which are great, especially `nmcli`. I use them instead of
+    `[nm-applet](http://manpages.ubuntu.com/manpages/precise/man1/nm-applet.1.html)`.
+    I also hacked the status bar in [notion](http://notion.sourceforge.net/) (née
+    [ion3](http://en.wikipedia.org/wiki/Ion_(window_manager))), my window
+    manager, to use them to find the current network connection:
+    
+        nmcli -terse -field devices,name,state con status \
+          | sed -r "s/activated/\*/; s/activating/.../; s/deactivated/X/; s/:/ /g"
+
+    and Wifi signal strength:
+    
+        nm-tool | grep \*`nmcli -t -f name con status` \
+            | egrep -o "Strength [0-9]+" \
+            | cut -d" " -f2-
+
+  * It's not Precise-specific, but these AIM notifications from AOLSystemMsg
+    have always annoyed me: _AOL System Msg: Your screen name (mrEman) is now
+    signed into AOL(R) Instant Messenger (TM) in 2 locations._ I use Pidgin, so
+    I finally looked around and found
+    [this plugin](http://biodegradablegeek.com/2009/05/how-to-block-aims-annoying-aol-system-msg-in-pidgin/),
+    which happily blocks them.
 
   * Here are some of the extra packages I installed:
+
+    * apache2
+    * apel
+    * autocutsel
+    * emacs-goodies-el
+    * emacs23-el
+    * emacs23-lucid
+    * flashplugin-installer
+    * flickcurl-utils
+    * gcalcli
+    * imagemagick
+    * jnettop
+    * lua-mode
+    * lynx
+    * mpg123
+    * mysql-client
+    * mysql-server
+    * php-elisp
+    * php5
+    * php5-cgi
+    * php5-cli
+    * php5-curl
+    * php5-mysql
+    * pidgin
+    * python-mysqldb
+    * rxvt-unicode
+    * sshfs
+    * sysfsutils
+    * tkcvs
+    * tp-smapi-dkms
+    * udev
+    * usbmount
+    * xloadimage
+    * xkbset
+    * xscreensaver
+    * yaml-mode
 
     ...and I needed these to build [notion](http://notion.sourceforge.net/), my
     window manager:
