@@ -7,7 +7,8 @@ I recently upgraded from
 [Ubuntu](http://ubuntu.com/)
 [Lucid](https://help.ubuntu.com/10.04/about-ubuntu/C/) (10.04) to
 [Precise](https://help.ubuntu.com/12.04/ubuntu-help/) (12.04). Similar to
-my list of [tips for Lucid](ubuntu_lucid), [and Hardy](ubuntu_lucid), here are 
+my list of [tips for Lucid](ubuntu_lucid)
+[and Fedora Core 3](fedora_core_3_on_vmware), here are 
 some tips for Ubuntu Precise. (I'm running it on a
 [Thinkpad X201](http://shop.lenovo.com/us/landing_pages/thinkpad/2010/X201-X201s-X201tablet)).
 
@@ -42,15 +43,13 @@ The solution is to toggle all of the channels explicitly:
     reboots, so I put it in my `.login`. Oddly, my workstation didn't have this
     permissions problem; it worked out of the box.
 
-  * Lucid's [NetworkManager](http://projects.gnome.org/NetworkManager/) package
-    didn't come with a good command line utility, so I used
-    [cnetworkmanager](http://vidner.net/martin/software/cnetworkmanager/).
-    Precise's NetworkManager added
+  * Precise's [NetworkManager](http://projects.gnome.org/NetworkManager/)
+    package added
     `[nmcli](http://manpages.ubuntu.com/manpages/precise/man1/nmcli.1.html)` and
     `[nm-tool](http://manpages.ubuntu.com/manpages/precise/man1/nm-tool.1.html)`,
-    both of which are great, especially `nmcli`. I use them instead of
-    `[nm-applet](http://manpages.ubuntu.com/manpages/precise/man1/nm-applet.1.html)`.
-    I also hacked the status bar in [notion](http://notion.sourceforge.net/) (née
+    two great command line tools. No more clunky
+    [cnetworkmanager](http://vidner.net/martin/software/cnetworkmanager/)! I
+    also hacked the status bar in [notion](http://notion.sourceforge.net/) (née
     [ion3](http://en.wikipedia.org/wiki/Ion_(window_manager))), my window
     manager, to use them to find the current network connection:
     
@@ -63,10 +62,10 @@ The solution is to toggle all of the channels explicitly:
             | egrep -o "Strength [0-9]+" \
             | cut -d" " -f2-
 
-  * It's not Precise-specific, but these AIM notifications from AOLSystemMsg
-    have always annoyed me: _AOL System Msg: Your screen name (mrEman) is now
-    signed into AOL(R) Instant Messenger (TM) in 2 locations._ I use Pidgin, so
-    I finally looked around and found
+  * It's not Precise-specific, but these AIM notifications have always annoyed
+    me: _AOL System Msg: Your screen name (mrEman) is now signed into AOL(R)
+    Instant Messenger (TM) in 2 locations._ I use Pidgin, so I finally looked
+    around and found
     [this plugin](http://biodegradablegeek.com/2009/05/how-to-block-aims-annoying-aol-system-msg-in-pidgin/),
     which happily blocks them.
 
