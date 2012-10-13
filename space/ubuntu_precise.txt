@@ -74,12 +74,14 @@ The solution is to toggle all of the channels explicitly:
     * apache2
     * apel
     * autocutsel
+    * colordiff
     * emacs-goodies-el
     * emacs23-el
     * emacs23-lucid
     * flashplugin-installer
     * flickcurl-utils
     * gcalcli
+    * git
     * imagemagick
     * jnettop
     * lua-mode
