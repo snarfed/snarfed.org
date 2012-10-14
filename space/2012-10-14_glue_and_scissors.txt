@@ -1,0 +1,66 @@
+Glue and scissors
+
+<a class="shutter" href="pinky_brain_convert_structs.jpg">
+  <img class="shadow right" src="pinky_brain_convert_structs_thumb.jpg" /></a>
+
+I joined a new team at work a while back, and soon after I started a new project
+within that team. We've been working long enough now that I've noticed some
+trends in our design and decision making tools. Specifically, we're reusing
+other projects and cutting features so much, I feel like I'm back in preschool
+doing arts and crafts with glue and scissors. They're definitely the most
+popular tools in our metaphorical toolbox these days.
+
+Let's start with glue. Reuse has been a cornerstone of software engineering
+since, well, forever. Functions, classes, libraries, RPCs, web services, IaaS:
+they're all variations on a theme.
+[Morten Bagai's Waza talk](https://vimeo.com/49780130) is a good recent take on
+this, but it's definitely not the first, nor will it be the last.
+
+We're reusing a wide swathe of internal projects and infrastructure, as you'd
+expect, but that's nothing special. The interesting part is that so far, our
+codebase is pretty much _all_ glue. We're not building any core functionality
+ourselves just yet; we're not adding any intrinsically new value. We've just
+mashed together [Bigtable](http://en.wikipedia.org/wiki/BigTable),
+[entity extraction](http://en.wikipedia.org/wiki/Named-entity_recognition),
+pubsub, and derived key cryptography, with [Go](http://golang.org/) as the
+connective tissue.
+
+That's not to say it's trivial. We'll eventually handle around
+500K[qps](http://en.wikipedia.org/wiki/Queries_per_second), so we have our hands
+full just making and applying glue. Instead of Elmer's, think
+ industrial polymer adhesive and oxyacetylene torches. We do have some special
+sauce on the roadmap that we plan to build ourselves, but even that will stand
+on the shoulders of giants like our
+[machine learning platform](https://developers.google.com/prediction/). When in
+doubt, mash things together, then see what sticks.
+
+Scissors are the other figurative tool we've been wielding aggressively.
+Honestly, I still have no idea how we're going to do a lot of what we need to
+do. We have a clear high level vision, and a few good use cases, but big chunks
+of the middle are largely unknown.
+
+<img class="shadow left" src="glue_scissors.jpg" />
+
+As with reuse, this is nothing new. Entrepreneurs have ingrained iterative
+development and [Lean Startup](http://books.google.com/books?id=tvfyz-4JILwC)
+techniques to embrace change and uncertainty and still invent (or discover)
+products that people want. Cut everything that's not absolutely necessary, build
+and ship an [MVP](http://en.wikipedia.org/wiki/Minimum_viable_product), get
+users to use it, iterate on feedback. Rinse, lather, repeat.
+
+I can talk the talk, but I've never really walked the walk on this scale before.
+I've tasted a few small bites of the startup experience, but not this one.
+Deploy early and often sounds good, but it's a bitter pill to swallow when you
+have to cut almost everything to do it.
+
+At the same time, those scissors are incredibly freeing. Instead of making
+endless design decisions, we adopt a "cut by default" mindset. We'll circle back
+later, leaning on user feedback to prioritize what to build and then whether to
+keep or cut it permanently. That automatic scissor swipe frees up a ton of
+[precious mental energy](2012-08-25_not_whether_you_agree_but_how_much_you_care),
+which we can translate to productivity on stuff we _know_ we need.
+
+Who knew preschool arts and crafts applied to software engineering? I sure
+didn't, but I've been enjoying the parallels. None of these ideas are new, of
+course, but it feels good to apply them in practice on a real world project,
+after paying them lip service for so long. Wish me luck!
