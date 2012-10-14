@@ -10,6 +10,9 @@ other projects and cutting features so much, I feel like I'm back in preschool
 doing arts and crafts with glue and scissors. They're definitely the most
 popular tools in our metaphorical toolbox these days.
 
+<!--more-->
+<span />
+
 Let's start with glue. Reuse has been a cornerstone of software engineering
 since, well, forever. Functions, classes, libraries, RPCs, web services, IaaS:
 they're all variations on a theme.
