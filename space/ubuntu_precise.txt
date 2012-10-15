@@ -70,11 +70,17 @@ The solution is to toggle all of the channels explicitly:
     which happily blocks them.
 
   * The font in Emacs changed, and it took me a while to figure out how to
-    change it back. I finally re-read the
+    change it back. None of the usual methods (`.Xresources`,
+    `set-default-font`) worked. I finally re-read the
     [Fonts section](http://www.gnu.org/software/emacs/manual/html_node/emacs/Fonts.html)
     of the manual and saw that the X resource is now `emacs.font`, not
-    `Emacs*font`, which I've had in my `.Xresources` forever. Switching to
-    `emacs.font` fixed it.
+    `Emacs*font`, which I've had in my `.Xresources` forever, but that still didn't
+    fix it.
+
+    I finally figured out that `--daemon` in Emacs 23.3 now ignores anything
+    related to windowing systems, including fonts. I have to run
+    `(set-face-attribute 'default nil :font "7x14")` in Emacs _after_ X is
+    running. Sigh, oh well.
 
   * Here are some of the extra packages I installed:
 
