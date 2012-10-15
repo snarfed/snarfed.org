@@ -59,7 +59,7 @@ Components.classes['@mozilla.org/network/protocol-proxy-service;1'].getService()
   `extensions.adblockplus.filters_key`, then restart Firefox. (This isn't a
   keyconfig thing, but it's still worth mentioning.)
 * Alt-W to close the current tab: `BrowserCloseTabOrWindow()`.
-  (More tab functions here](http://tmp.garyr.net/forum/viewtopic.php?p=18777&sid=13132b399d41424b7814f790a5bc6ae1).
+  [More tab functions here](http://tmp.garyr.net/forum/viewtopic.php?p=18777&sid=13132b399d41424b7814f790a5bc6ae1).
   This is better than the default Ctrl-W for me because I use
   [Emacs key bindings](http://kb.mozillazine.org/Emacs_Keybindings_%28Firefox%29),
   which steal Ctrl-W in text boxes and other input fields.
