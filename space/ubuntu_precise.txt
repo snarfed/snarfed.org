@@ -69,6 +69,13 @@ The solution is to toggle all of the channels explicitly:
     [this plugin](http://biodegradablegeek.com/2009/05/how-to-block-aims-annoying-aol-system-msg-in-pidgin/),
     which happily blocks them.
 
+  * The font in Emacs changed, and it took me a while to figure out how to
+    change it back. I finally re-read the
+    [Fonts section](http://www.gnu.org/software/emacs/manual/html_node/emacs/Fonts.html)
+    of the manual and saw that the X resource is now `emacs.font`, not
+    `Emacs*font`, which I've had in my `.Xresources` forever. Switching to
+    `emacs.font` fixed it.
+
   * Here are some of the extra packages I installed:
 
     * apache2
@@ -78,6 +85,7 @@ The solution is to toggle all of the channels explicitly:
     * emacs-goodies-el
     * emacs23-el
     * emacs23-lucid
+    * exif
     * flashplugin-installer
     * flickcurl-utils
     * gcalcli
