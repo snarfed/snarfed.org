@@ -1,0 +1,37 @@
+download_smugmug_album.sh
+
+<a href="http://smugmug.com/">
+  <img class="right" src="smugmug.jpg" /></a>
+
+[download_smugmug_album.sh](https://github.com/snarfed/misc/blob/master/download_smugmug_album.sh)
+is a simple little shell script that downloads entire photo albums from
+[SmugMug](http://smugmug.com/). Just give it the username and album ID and it
+will download the album's feed, extract the links to the full-size pictures, and
+download them one by one.
+
+For example:
+
+    $ ./download_smugmug_album.sh foo 123456_XXyyZZ
+        % Total    % Received % Xferd   Speed   Time    Time  
+                                       Upload   Total   Spent 
+      100 74442    0 74442    0     0      0 --:--:--  0:00:03
+      ...
+
+To find the username and album ID, look at a SmugMug URL for the album. For
+example, in `http://foo.smugmug.com/Bar/Baz/123456_XXyyZZ#!i=...`,
+the username is `foo` and the album ID is `123456_XXyyZZ`.
+
+This script is dirt simple. If you're looking for something robust and
+full-featured, you probably want an
+[RSS reader that supports enclosures](http://http://www.podcastingnews.com/topics/Podcast_Software.html)
+or a
+[dedicated web photo downloader](http://www.google.com/search?q=web+photo+downloader)
+instead.
+
+[This blog comment](http://www.jwz.org/blog/2010/04/fuck-smugmug/#comment-4708)
+was useful in writing this script. I also initially looked at
+[smugget](https://github.com/realityforge/housekeeping-scripts/blob/master/smugmug/smugget.sh),
+but it requires an account. SmugMug supposedly supports anonymous login with any
+account's username, but I didn't manage to figure that out.
+
+This script is in the public domain.
