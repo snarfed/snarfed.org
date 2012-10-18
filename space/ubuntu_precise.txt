@@ -101,6 +101,7 @@ The solution is to toggle all of the channels explicitly:
     * lua-mode
     * lynx
     * mercurial
+    * mercurial-git
     * mpg123
     * mplayer
     * mysql-client
