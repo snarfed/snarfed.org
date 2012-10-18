@@ -12,7 +12,7 @@ of hoops, finally got sick of it and gave up when it asked me to add gravatar
 support.
 -->
 
-[Download snarfed theme 0.4](snarfed_wordpress_theme.zip)
+[Download snarfed theme 0.5](snarfed_wordpress_theme.zip)
 
 This site runs on [WordPress](http://wordpress.org/) and uses its own
 [WordPress theme](http://codex.wordpress.org/Using_Themes), the
@@ -24,7 +24,8 @@ site. If you really want them, you can add them back by editing `functions.php`
 and `style.css`.
 
 snarfed is a [Thematic](http://themeshaper.com/thematic/) child theme, so you'll
-need Thematic installed too. It fully supports Thematic 0.9.7.7.
+need Thematic installed too. It's been tested with Thematic versions up to
+1.0.2.1, and probably works with later versions.
 
 Features:
 
