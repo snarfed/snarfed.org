@@ -225,7 +225,8 @@ that can be imported back into SnipSnap.
 <a name="patches"></a>
 ### Patches
 
-  * A [patch](https://github.com/snarfed/misc/blob/master/patches/nextgen_gallery_imagemagick_exec_passthru_check.patch)
+  * A [patch](http://wordpress.org/support/topic/plugin-nextgen-gallery-patch-bug-fix-for-imagemagick-exec-and-passthru-checks)
+([download](https://github.com/snarfed/misc/blob/master/patches/nextgen_gallery_imagemagick_exec_passthru_check.patch))
 for [NextGEN Gallery](http://www.nextgen-gallery.com/) that fixes its
 [ImageMagick](http://www.imagemagick.org/) checks for `exec` and `passthru`.
 
