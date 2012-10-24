@@ -16,6 +16,22 @@ opml2markdown command line:
 
 xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
   ~/src/misc/podcasts.opml.xml
+
+use this template to get an rss feed for a youtube channel:
+
+
+...except it doesn't fully work, episodes can't be played like normal, they just
+punt out to the youtube player (and can't go in the episodes view or playlist).
+this is by design, evidently because youtube doesn't allow direct downloads:
+http://www.beyondpod.com/forum/showthread.php?481-Download-from-Youtube&s=d3ea5aa3cc05ca215749bf842c665d5f
+
+other options:
+http://gdata.youtube.com/feeds/mobile/users/[USERNAME]/uploads
+etc...
+
+from:
+http://gdata.youtube.com/demo/
+http://zarjay.net/2012/03/04/how-to-subscribe-to-youtube-podcasts-and-rss-feeds/
 -->
 
 
