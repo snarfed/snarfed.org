@@ -124,6 +124,7 @@ The solution is to toggle all of the channels explicitly:
     * xloadimage
     * xkbset
     * xscreensaver
+    * xsltproc
     * yaml-mode
 
     ...and I needed these to build [notion](http://notion.sourceforge.net/), my
