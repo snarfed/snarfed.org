@@ -1,0 +1,31 @@
+A critical look at decentralization
+
+<img class="right" src="stylized_cloud.jpg" />
+
+Hey federated social web people! I read a great paper yesterday:
+[A Critical Look at Decentralized Personal Data Architectures](http://33bits.org/2012/02/21/a-critical-look-at-decentralized-personal-data-architectures/).
+If you're working in this space, you should check it out. It's a quick read,
+just five pages.
+
+It comes from some pretty high powered authors, including
+[Helen Nissenbaum](http://www.nyu.edu/projects/nissenbaum/) and
+[Dan Boneh](http://crypto.stanford.edu/~dabo/). They step back and look
+objectively at accepted wisdom in our community, such as "people should own
+their data" and "decentralized and open always win out," and attempt to
+reconcile with the fact that centralized social networks have exploded, but
+long-standing decentralized alternatives like [OStatus](http://ostatus.org/)
+have not.
+
+Everyone wears rose colored glasses occasionally, including our own community,
+but we shouldn't overindulge them. The network effect, ie "all my friends are on
+Facebook," isn't the only adoption hurdle. There are real technical, economic,
+and product drawbacks to decentralized social networks, and they matter to
+users.
+
+I'm fond of the [Indie Web movement](http://indiewebcamp.com/why), which
+encourages us to
+[focus on the positives](http://indiewebcamp.com/2012/Positive_Arguments) and
+evangelize [having your own web site](/2012-07-25_why_i_have_my_own_web_site).
+However, we should be honest about the negatives. That's the first step toward
+allaying FUD, talking openly about the tradeoffs, and maybe even solving some of
+the real problems.
