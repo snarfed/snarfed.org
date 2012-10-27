@@ -92,6 +92,7 @@ The solution is to toggle all of the channels explicitly:
     * emacs23-el
     * emacs23-lucid
     * exif
+    * fbreader
     * flashplugin-installer
     * flickcurl-utils
     * gcalcli
