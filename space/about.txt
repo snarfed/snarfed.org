@@ -4,8 +4,8 @@ about
 p > a > img {vertical-align: middle;}
 </style>
 
-<a class="shutter" href="ryan_field_smiling_close.jpg">
-  <img class="right shadow" src="ryan_field_smiling_close_thumb.jpg" /></a>
+<a class="shutter" href="ryan.jpg">
+  <img class="right shadow" src="ryan_profile_square_thumb.jpg" /></a>
 
 I'm Ryan Barrett. For more about me, see my [resume](resume.html),
 [posts](index), [pictures](pictures), [software](software), and [lists](lists).
