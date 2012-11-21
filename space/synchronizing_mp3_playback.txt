@@ -32,12 +32,11 @@ human ear can detect skew as low as a few dozen milliseconds, so to counteract
 this, all players need to re-sync often. This is doable, but if seeking a
 player results in a noticeable skip or other artifact, that's a problem.
 
-Still, if you're interested, feel free download the source,
-[p4sync-0.1.tar.bz2](p4sync-0.1.tar.bz2). It comes with the sync
-engine, plugin framework, and working plugins for the *nix music players
+Still, if you're interested, feel free to check out the source in the
+[p4sync project on github](https://github.com/snarfed/p4sync). It comes with the
+sync engine, plugin framework, and working plugins for the *nix music players
 [XMMS](http://xmms.org/), [Zinf](http://zinf.org/), and
-[MPD](http://musicpd.org/). [Drop me a line](about) if you have any
-questions!
+[MPD](http://musicpd.org/). [Drop me a line](about) if you have any questions!
 
 ### Related Work
 
