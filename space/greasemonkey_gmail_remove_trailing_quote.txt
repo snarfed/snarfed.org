@@ -2,6 +2,12 @@ GreaseMonkey script for Gmail: remove trailing quotes
 
 <a href="http://greasespot.net/"><img class="right" src="greasemonkey.png" /></a>
 
+<span style="color: red; font-style: italic">
+Warning: this doesn't work with GMail's
+[new compose UI](http://gmailblog.blogspot.com/2012/10/introducing-new-compose-in-gmail.html).
+I've tried to make them play nice together, but it doesn't look promising. :(
+</span>
+
 [gmail_remove_trailing_quote.user.js](https://github.com/snarfed/misc/raw/master/userscripts/gmail_remove_trailing_quote.user.js)
 is a [GreaseMonkey](http://greasespot.net/)
 [userscript](http://userscripts.org/scripts/show/86600) that removes "trailing
