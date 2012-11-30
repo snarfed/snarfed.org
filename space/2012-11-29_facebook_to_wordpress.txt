@@ -1,0 +1,29 @@
+Facebook to WordPress
+
+[facebook_to_wordpress.py](https://github.com/snarfed/misc/blob/master/facebook_to_wordpress.py)
+is a script that copies your [Facebook](http://www.facebook.com/) posts to a
+[WordPress](http://wordpress.org/) blog of your choice. It helps you get more
+control over your posts, pictures, and other online memories, following in the
+spirit of the [Indie Web movement](2012-07-25_why_i_have_my_own_web_site).
+
+I've used it to copy a number of my own Facebook posts to this web site. Here are a
+few examples:
+
+Usage: `facebook_to_wordpress.py XMLRPC_URL USERNAME PASSWORD < FILENAME`
+
+It Rreads one or more Facebook posts in Graph API JSON representation from stdin
+and publishes them to a WordPress blog via XML-RPC. It includes and formats
+pictures, locations (ie checkins), links, tagged people, comments, and a link
+back to the original post.
+
+
+You can use the
+[Graph API Explorer](http://developers.facebook.com/tools/explorer) to download
+your posts in JSON format:
+
+
+
+Facebook also lets you [download your data](https://www.facebook.com/download/)
+as a set of HTML pages and images in a zip file. It's not as useful for
+publishing on the web, but if you just want an archive of your data, or if you
+want to publish it as static, read-only pages, it's an option.
