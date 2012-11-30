@@ -1,5 +1,8 @@
 Facebook to WordPress
 
+<a href="https://github.com/snarfed/misc/blob/master/facebook_to_wordpress.py">
+  <img class="right" src="wordpress_facebook.jpg" /></a>
+
 [facebook_to_wordpress.py](https://github.com/snarfed/misc/blob/master/facebook_to_wordpress.py)
 is a script that copies your [Facebook](http://www.facebook.com/) posts to a
 [WordPress](http://wordpress.org/) blog of your choice. It helps you take
@@ -21,16 +24,15 @@ publishes them to a WordPress blog via XML-RPC. It includes and formats
 pictures, locations (ie checkins), links, tagged people, comments, and a link
 back to the original post.
 
-You can use Facebook's
-[Graph API Explorer](https://developers.facebook.com/tools/explorer?method=GET&path=212038%3Ffields%3Did%2Cname%2Cposts).
-Just follow that link, copy all of the text in the big bottom right pane into a
-file, then run `facebook_to_wordpress.py` on that file.
+To get the JSON for your Facebook posts, click on
+[this Graph API Explorer link](https://developers.facebook.com/tools/explorer?method=GET&path=212038%3Ffields%3Did%2Cname%2Cposts.limit(9999)),
+copy all of the text in the big bottom right pane into a file, then run
+`facebook_to_wordpress.py` on that file.
 
-If you see a *→* (right arrow) next to `posts` on the left side, that means
-click on it,
-copy the new text into another file, repeat until the right arrow disappears,
-and run `facebook_to_wordpress.py` on that file.
-
+If you see a *→* (right arrow) next to `posts` on the left side, that means you
+have more pages of posts. Click on the arrow, copy the new text into another
+file, run `facebook_to_wordpress.py` on that new file, and repeat until the
+arrow disappears.
 
 Example usage:
 
@@ -51,8 +53,14 @@ Example usage:
     Done.
 
 
-
 Facebook also lets you [download your data](https://www.facebook.com/download/)
 as a set of HTML pages and images in a zip file. It's not as useful for
 publishing on the web, but if you just want an archive of your data, or if you
 want to publish it as static, read-only pages, it's an option.
+
+This script could be expanded to download your posts from Facebook
+automatically, and even converted to a webapp. It's also a good starting point
+for doing the same thing for [Twitter](http://twitter.com/),
+[Google+](https://plus.google.com/), and similar social networks. I don't plan
+to do any of that in the near future, but I'm [happy to help](about) anyone else
+who wants to!
