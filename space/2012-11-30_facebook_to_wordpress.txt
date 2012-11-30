@@ -1,0 +1,58 @@
+Facebook to WordPress
+
+[facebook_to_wordpress.py](https://github.com/snarfed/misc/blob/master/facebook_to_wordpress.py)
+is a script that copies your [Facebook](http://www.facebook.com/) posts to a
+[WordPress](http://wordpress.org/) blog of your choice. It helps you take
+control over your posts, pictures, and other online memories, following in the
+spirit of the [Indie Web movement](2012-07-25_why_i_have_my_own_web_site).
+
+I've used it to copy a number of
+[my own Facebook posts](http://www.facebook.com/snarfed.org) to this web site.
+Here are a few examples:
+
+  * [Milos](2012-06-26_milos)
+  * [Chocolate + infographic = crazy delicious](http://snarfed.org/2012-06-15_chocolate-infographic-crazy-delicious)
+  * [Cool looking clouds](2012-08-14_cool-looking-clouds)
+  * [Pumpkin carving](2012-10-28_pumpkin-carving)
+  * [Best gift wrap and card ever](2012-10-22_best-gift-wrap-and-card-ever)
+
+The script reads one or more Facebook posts in Graph API JSON representation
+publishes them to a WordPress blog via XML-RPC. It includes and formats
+pictures, locations (ie checkins), links, tagged people, comments, and a link
+back to the original post.
+
+You can use Facebook's
+[Graph API Explorer](https://developers.facebook.com/tools/explorer?method=GET&path=212038%3Ffields%3Did%2Cname%2Cposts).
+Just follow that link, copy all of the text in the big bottom right pane into a
+file, then run `facebook_to_wordpress.py` on that file.
+
+If you see a *→* (right arrow) next to `posts` on the left side, that means
+click on it,
+copy the new text into another file, repeat until the right arrow disappears,
+and run `facebook_to_wordpress.py` on that file.
+
+
+Example usage:
+
+    $ ./facebook_to_wordpress.py http://myblog.com/xmlrpc.php \
+        user password < posts.json
+    Reading posts from stdin
+    Connecting to http://myblog.com/xmlrpc.php as user
+    Skipping 2012-11-06
+    Downloading https://fbcdn-photos-a.akamaihd.net/hphotos-ak-prn1/58835_10100411291505323_408284397_o.jpg
+    Uploading as image/jpeg
+    Publishing pumpkin carving
+    Publishing comment "http://cdn.smosh.com/sites/def"
+    Updating comment's time to 2012-10-29 02:51:31
+    Publishing comment "oh my god that's good"
+    Updating comment's time to 2012-10-29 05:43:45
+    Skipping 2012-10-28
+    ...
+    Done.
+
+
+
+Facebook also lets you [download your data](https://www.facebook.com/download/)
+as a set of HTML pages and images in a zip file. It's not as useful for
+publishing on the web, but if you just want an archive of your data, or if you
+want to publish it as static, read-only pages, it's an option.
