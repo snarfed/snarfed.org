@@ -2,6 +2,14 @@ site search with the Google AJAX Search API
 
 <img class="right" src="ajax.jpg" />
 
+<div style="color: red"><i>
+Google has
+<a href="http://googlecode.blogspot.com/2010/11/introducing-google-apis-console-and-our.html">replaced the AJAX Search API</a>
+with
+<a href="http://www.google.com/cse/">Custom Search</a>, so this no longer works. It's
+kept here for posterity only.
+</i></div style="color: red">
+
 [ajax_search.js](/w/wp-content/themes/snarfed/ajax_search.js) uses the
 [Google AJAX Search API](http://code.google.com/apis/ajaxsearch/signup.html)
 to do site search. It's similar to Google's
