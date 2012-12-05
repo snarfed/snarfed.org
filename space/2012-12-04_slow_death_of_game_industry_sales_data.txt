@@ -22,8 +22,7 @@ for years. I'm just adding another voice to the rising chorus.
 Movies have box office returns. Music has the Billboard charts. Books have the
 New York Times bestseller lists. They not may be perfect, but publishers and
 creators have come to depend on them for independent, consistent, good enough
-data about their respective mediums, which they rely on to make business
-decisions.
+data that they rely on to make business decisions.
 
 For a long time, games have had
 [NPD](https://www.npd.com/wps/portal/npd/us/industry-expertise/video-games/).
@@ -35,8 +34,8 @@ were good enough.
 That didn't last. First, holes in NPD's coverage have become more and more
 glaring. They've only just started to measure
 [countries outside the US](http://www.gamespot.com/news/npd-expanding-total-consumer-spend-report-to-europe-asia-6328424),
-used games, and
-[Walmart](http://gamasutra.com/view/news/129464/Walmart_provides_coveted_sales_data_to_NPDs_retail_reports.php).
+used games,
+[and Walmart](http://gamasutra.com/view/news/129464/Walmart_provides_coveted_sales_data_to_NPDs_retail_reports.php).
 All three have grown hugely - used games alone are a multi-billion dollar
 market, and Walmart contributes _25-30%_ of US game sales - and the consensus is
 that NPD's initial efforts may be too little, too late.
@@ -45,11 +44,11 @@ Second, they
 [drastically curtailed the data they release publicly](http://www.gamasutra.com/view/news/30928/NPD_Group_Tightens_Lid_On_Monthly_US_Game_Sales_Data.php)
 a couple years ago. Low-barrier-to-entry platforms like web, mobile, and digital
 have been feeding an explosion of indie developers who can't afford to buy
-expensive analyst reports, so this hit them below the belt.
+expensive analyst reports, and this hit them below the belt.
 
 <img class="left" src="taped_mouth.jpg" />
 
-Finally and most importantly,
+Finally, and most importantly,
 [digital is the future](http://www.gamasutra.com/view/news/167124/NPD_Digital_nontraditional_business_almost_half_of_retail_game_sales_last_quarter.php), but
 _digital sales data is non-existent_. There are exceptions here and there, but
 _none_ of the large online stores - Steam, XBox Live, PSN, iTunes, Google Play -
@@ -61,23 +60,23 @@ NPD can do.
 What's worse, as bad as NPD is right now, it doesn't have much competition.
 Firms like [EEDAR](http://www.eedar.com/) and
 [Screen Digest](http://www.screendigest.com/intelligence/games) do some data
-collection and performance measurement, but their focus is deep dive analysis,
-and they're up against the same digital blackout as NPD. It's increasingly
-falling to major publishers themselves to report numbers,
+collection and performance measurement, but their focus is analysis and
+research, and they're up against the same digital blackout as NPD. It's
+increasingly falling to major publishers themselves to report numbers,
 [which some do](http://www.gamasutra.com/view/feature/134913/npd_behind_the_numbers_october_.php?page=4),
 and to journalists who
 [dumpster-dive SEC filings](http://www.gamasutra.com/view/news/127703/Analysis_Are_DigitalUsed_Sales_Making_Up_For_The_New_Retail_Drop.php)
-to fill in the rest. That's obviously not a sustainable solution for the long
+to fill in the rest. Neither of those is a sustainable solution for the long
 term.
 
 It's not just game industry journalists who decry this. People on the business
-side are blunt. Frank Gibeau, head of publishing at EA,
+side are equally blunt. Frank Gibeau, head of publishing at EA,
 [recently said](http://www.gamesindustry.biz/articles/2012-07-02-ea-is-going-to-be-a-100-percent-digital-company-period-says-gibeau)
 "[NPD] is totally irrelevant. We don't even really look at it internally
 anymore." Stardock CEO Brad Wardell
 [described the current state](http://www.gamesindustry.biz/articles/2012-11-28-a-dearth-of-digital-disclosure)
 as "very destructive." Outspoken analyst Michael Pachter
-[went even farther](http://www.gamesindustry.biz/articles/2012-11-28-a-dearth-of-digital-disclosure)
+[went even further](http://www.gamesindustry.biz/articles/2012-11-28-a-dearth-of-digital-disclosure)
 regarding the lack of digital data: "Oh my god, that's horrible. There is none.
 We have no idea what anything does."
 
