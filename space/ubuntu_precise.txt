@@ -45,8 +45,8 @@ The solution is to toggle all of the channels explicitly:
 
   * Precise's [NetworkManager](http://projects.gnome.org/NetworkManager/)
     package added
-    `[nmcli](http://manpages.ubuntu.com/manpages/precise/man1/nmcli.1.html)` and
-    `[nm-tool](http://manpages.ubuntu.com/manpages/precise/man1/nm-tool.1.html)`,
+    [`nmcli`](http://manpages.ubuntu.com/manpages/precise/man1/nmcli.1.html) and
+    [`nm-tool`](http://manpages.ubuntu.com/manpages/precise/man1/nm-tool.1.html),
     two great command line tools. No more clunky
     [cnetworkmanager](http://vidner.net/martin/software/cnetworkmanager/)! I
     also hacked the status bar in [notion](http://notion.sourceforge.net/) (née
