@@ -82,6 +82,12 @@ The solution is to toggle all of the channels explicitly:
     `(set-face-attribute 'default nil :font "7x14")` in Emacs _after_ X is
     running. Sigh, oh well.
 
+  * Is
+    [polkitd](http://www.freedesktop.org/software/polkit/docs/latest/polkitd.8.html)
+    pegging your CPU and eating all of your RAM? Try
+    [restarting the DBUS daemon](http://unix.stackexchange.com/questions/39203/how-to-restart-polkitd)
+    with `sudo service dbus restart`.
+
   * Here are some of the extra packages I installed:
 
     * apache2
