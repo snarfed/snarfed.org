@@ -11,6 +11,10 @@ is public domain. Also see [other lists](lists).
 <a name="projects"></a>
 ### Projects
 
+  * [Facebook to Wordpress](2012-11-30_facebook_to_wordpress)
+is a script that copies your [Facebook](http://www.facebook.com/) posts to a
+[WordPress](http://wordpress.org/) blog of your choice.
+
   * [salmon-unofficial](https://github.com/snarfed/salmon-unofficial) is a stand-in
 [Salmon](http://salmon-protocol.org/) server for social networking sites like
 Facebook, Twitter, and Google+ that don't implement it themselves. See the
