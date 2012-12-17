@@ -18,11 +18,8 @@ opml2markdown command line. note that it filters out picasa albums and
 other private rss feeds.
 
 xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
-  ~/src/misc/google-reader-subscriptions.opml.xml \
-  | grep -v picasaweb \
-  | grep -v smugmug \
-  | grep -v facebook.com \
-  | grep -v blog.myspace.com
+  ~/etc/google-reader-subscriptions.opml.xml \
+  | grep -v -E 'picasaweb|smugmug|facebook.com|plusstreamfeed.appspot'
 
 
 twitter
@@ -90,6 +87,9 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [A Life Well Wasted](http://alifewellwasted.com/)
 (_[subscribe](http://alifewellwasted.com/feed/atom/)_) 
 
+* [Ah. Humanity.](http://ahumanity.tumblr.com/)
+(_[subscribe](http://ahumanity.tumblr.com/rss)_) 
+
 * [Amit's Thoughts](http://amitp.blogspot.com/)
 (_[subscribe](http://amitp.blogspot.com/feeds/posts/default)_) 
 
@@ -105,11 +105,17 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [BioCurious. A hackerspace for bio.](http://biocurious.posterous.com)
 (_[subscribe](http://biocurious.posterous.com/rss.xml)_) 
 
+* [Bit Creature](http://www.bitcreature.com)
+(_[subscribe](http://www.bitcreature.com/feed/)_) 
+
 * [brad's life](http://brad.livejournal.com/)
 (_[subscribe](http://brad.livejournal.com/data/rss)_) 
 
-* [Bret Taylor's blog](http://bret.appspot.com/)
+* [Bret Taylor's blog](http://backchannel.org/)
 (_[subscribe](http://feeds.feedburner.com/brettaylor)_) 
+
+* [Bret Victor's website](http://worrydream.com/)
+(_[subscribe](http://worrydream.com/feed.xml)_) 
 
 * [California Academy of Sciences - NightLife](http://www.calacademy.org)
 (_[subscribe](http://www.calacademy.org/rss/nightlife.rss)_) 
@@ -123,8 +129,20 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [christopher baus.net](http://baus.net/)
 (_[subscribe](http://feeds.baus.net/)_) 
 
+* [City Arts & Lectures](http://www.cityarts.net)
+(_[subscribe](http://www.cityarts.net/feed/)_) 
+
 * [Clayton's Blog](http://cl8on.blog.com)
 (_[subscribe](http://cl8on.blog.com/feed/)_) 
+
+* [Colleen Taylor's blog](http://www.colleen-taylor.com/blog)
+(_[subscribe](http://feeds.feedburner.com/ColleenTaylorsBlog)_) 
+
+* [Concurring Opinions » Privacy](http://www.concurringopinions.com)
+(_[subscribe](http://www.concurringopinions.com/archives/category/privacy/feed)_) 
+
+* [CS and the City](http://sean.lyn.ch)
+(_[subscribe](http://sean.lyn.ch/feed/)_) 
 
 * [Demruth](http://www.demruth.com/blog)
 (_[subscribe](http://www.demruth.com/blog/?feed=rss2)_) 
@@ -138,17 +156,23 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [Dr. Razavi's Good to Know Info](http://dr-razavi.blogspot.com/)
 (_[subscribe](http://dr-razavi.blogspot.com/feeds/posts/default)_) 
 
+* [Edge](http://www.edge.org)
+(_[subscribe](http://www.edge.org/?q=rss.xml)_) 
+
 * [Ego Food](http://egofood.dibona.com/)
 (_[subscribe](http://egofood.blogspot.com/atom.xml)_) 
 
 * [emacs-fu](http://emacs-fu.blogspot.com/search/label/new)
 (_[subscribe](http://emacs-fu.blogspot.com/feeds/posts/default/-/new)_) 
 
+* [Evan Prodromou](http://evanprodromou.name)
+(_[subscribe](http://evanprodromou.name/feed/)_) 
+
 * [Events - #GTUGSF - Google Technology User Group - San Francisco](http://www.gtugsf.com/events/)
 (_[subscribe](http://www.gtugsf.com/events/rss/%23GTUGSF+-+Google+Technology+User+Group+-+San+Francisco/)_) 
 
-* [Events - BioCurious](http://www.meetup.com/BioCurious/events/)
-(_[subscribe](http://www.meetup.com/BioCurious/events/rss/BioCurious/)_) 
+* [Events - GoSF](http://www.meetup.com/golangsf/events/)
+(_[subscribe](http://www.meetup.com/golangsf/events/rss/GoSF/)_) 
 
 * [Events - SF Bay Area Google App Engine Developers](http://www.meetup.com/appengine/events/)
 (_[subscribe](http://www.meetup.com/appengine/events/rss/SF+Bay+Area+Google+App+Engine+Developers/)_) 
@@ -156,14 +180,20 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [Fear, Greed and the Human Condition](http://chrisvale.tumblr.com/)
 (_[subscribe](http://chrisvale.tumblr.com/rss)_) 
 
+* [Federated Social Web Community Group](http://www.w3.org/community/fedsocweb)
+(_[subscribe](http://www.w3.org/community/fedsocweb/feed/)_) 
+
 * [GAE Planet](http://gae-planet.appspot.com/)
 (_[subscribe](http://feeds.feedburner.com/gae-planet)_) 
 
 * [Gamasutra Feature Articles](http://www.gamasutra.com/features)
 (_[subscribe](http://feeds.feedburner.com/GamasutraFeatureArticles)_) 
 
-* [GamesIndustry.biz - News | Filtered: title:Article OR title:Editorial](http://www.gamesindustry.biz)
-(_[subscribe](http://re.rephrase.net/filter/?feed=http%3A%2F%2Fwww.gamesindustry.biz%2Frss%2Fgamesindustry_news_feed.rss&filter=title%3AArticle+OR+title%3AEditorial)_) 
+* [Gamasutra News](http://www.gamasutra.com/newswire)
+(_[subscribe](http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&Matt%2CMathews&NPD&number)_) 
+
+* [GamesIndustry International](http://www.gamesindustry.biz)
+(_[subscribe](http://www.gamesindustry.biz/rss/gamesindustry_news_feed.rss)_) 
 
 * [GameSpot's Reviews](http://www.gamespot.com)
 (_[subscribe](http://fulltextrssfeed.com/www.gamespot.com/rss/game_updates.php?type=5)_) 
@@ -171,11 +201,14 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [GARY WHITTA](http://gwhitta.blogspot.com/)
 (_[subscribe](http://gwhitta.blogspot.com/feeds/posts/default)_) 
 
-* [Giri's Startup Life](http://girisreenivas.com)
+* [Giri's Startup Life](http://giri.co)
 (_[subscribe](http://girisreenivas.com/feed/)_) 
 
 * [Google Alerts - "mockfacebook"](http://www.google.com/reader/view/user%2F12768739244895054761%2Fstate%2Fcom.google%2Falerts%2F7842557606252670048)
 (_[subscribe](http://www.google.com/reader/public/atom/user/12768739244895054761/state/com.google/alerts/7842557606252670048)_) 
+
+* [Google Alerts - "plusstreamfeed"](http://www.google.com/reader/view/user%2F12768739244895054761%2Fstate%2Fcom.google%2Falerts%2F6135150986187686478)
+(_[subscribe](http://www.google.com/reader/public/atom/user/12768739244895054761/state/com.google/alerts/6135150986187686478)_) 
 
 * [Google App Engine Blog](http://googleappengine.blogspot.com/)
 (_[subscribe](http://feeds.feedburner.com/GoogleAppEngineBlog)_) 
@@ -192,8 +225,11 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [Hohokum](http://hohokum.posterous.com)
 (_[subscribe](http://hohokum.posterous.com/rss.xml)_) 
 
-* [Hulu - Playlist for ryanb](http://www.hulu.com/profile/queue)
-(_[subscribe](http://www.hulu.com/feed/queue/ryanb)_) 
+* [IFTTT Blog](http://blog.ifttt.com/)
+(_[subscribe](http://blog.ifttt.com/rss)_) 
+
+* [Indiegogo: The Calyx Institute: Announcements](http://www.indiegogo.com/calyx?c=activity)
+(_[subscribe](http://www.indiegogo.com/rss/announcements/93009?agent_type=Project)_) 
 
 * [instinctive's posterous](http://instinctive.posterous.com)
 (_[subscribe](http://instinctive.posterous.com/rss.xml)_) 
@@ -231,6 +267,9 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [Lost Garden](http://www.lostgarden.com/)
 (_[subscribe](http://www.lostgarden.com/feeds/posts/default)_) 
 
+* [Mastering Emacs](http://www.masteringemacs.org)
+(_[subscribe](http://www.masteringemacs.org/feed/)_) 
+
 * [Matt Blaze's Exhaustive Search](http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Fwww.crypto.com%2Fblog%2Fatom.xml)
 (_[subscribe](http://www.crypto.com/blog/atom.xml)_) 
 
@@ -255,6 +294,9 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [Nelson's Weblog](http://www.somebits.com/weblog)
 (_[subscribe](http://www.somebits.com/weblog/index.atom)_) 
 
+* [nelsonslog](http://nelsonslog.wordpress.com)
+(_[subscribe](http://nelsonslog.wordpress.com/feed/)_) 
+
 * [Neopythonic](http://neopythonic.blogspot.com/)
 (_[subscribe](http://neopythonic.blogspot.com/feeds/posts/default)_) 
 
@@ -264,8 +306,8 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [neugierig.org updates](http://neugierig.org/)
 (_[subscribe](http://neugierig.org/feed.xml)_) 
 
-* [Sage Foundation News Blog](http://sagebase.org/WP)
-(_[subscribe](http://sagebase.org/WP/feed/)_) 
+* [New Rules](http://www.kk.org/newrules/blog/)
+(_[subscribe](http://feeds.feedburner.com/NewRules)_) 
 
 * [NewsRob](http://newsrob.blogspot.com/)
 (_[subscribe](http://feeds2.feedburner.com/newsrobblog)_) 
@@ -276,20 +318,32 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [One Big Fluke](http://www.onebigfluke.com/)
 (_[subscribe](http://feeds.feedburner.com/OneBigFluke)_) 
 
+* [Open Source Bridge](http://opensourcebridge.org)
+(_[subscribe](http://feeds2.feedburner.com/OpenSourceBridge)_) 
+
 * [original cynk](http://originalcynk.com)
 (_[subscribe](http://originalcynk.com/feed/)_) 
+
+* [OStatus](http://ostatus.org)
+(_[subscribe](http://ostatus.org/rss.xml)_) 
 
 * [Othman's Blog](http://zarnotes.blogspot.com/)
 (_[subscribe](http://zarnotes.blogspot.com/feeds/posts/default?alt=rss)_) 
 
-* [pair Networks, Inc. system notices](http://pair.com/support/system_notices.html)
+* [pair Networks, Inc. system notices](https://my.pair.com/notices)
 (_[subscribe](http://www.pair.com/support/feed.rss?general=1&cs=bf43b1a45f8c022687e5ca2f4eebb49f&limit=30&server=21%2C6&days=30)_) 
+
+* [PARC Events](http://www.parc.com)
+(_[subscribe](http://feeds2.feedburner.com/PARC-Events)_) 
 
 * [PARC Forum speaker announcements](http://www.parc.com)
 (_[subscribe](http://feeds.feedburner.com/PARC-Forum)_) 
 
 * [Paul Graham: Essays](http://www.paulgraham.com/)
 (_[subscribe](http://www.aaronsw.com/2002/feeds/pgessays.rss)_) 
+
+* [Penny Arcade Report](http://www.penny-arcade.com/report)
+(_[subscribe](http://feeds.penny-arcade.com/pa-report)_) 
 
 * [Penny-Arcade](http://www.penny-arcade.com)
 (_[subscribe](http://www.penny-arcade.com/rss.xml)_) 
@@ -303,14 +357,32 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [Pidgin News](http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Fplanet.pidgin.im%2Frss20.xml)
 (_[subscribe](http://planet.pidgin.im/rss20.xml)_) 
 
-* [point7](https://point7.wordpress.com)
-(_[subscribe](http://point7.wordpress.com/feed/)_) 
+* [plusstreamfeed - Twitter Search](http://search.twitter.com/search?q=plusstreamfeed)
+(_[subscribe](http://search.twitter.com/search.atom?q=plusstreamfeed)_) 
+
+* [Powered by Diet Coke](http://poweredbydietcoke.tumblr.com/)
+(_[subscribe](http://poweredbydietcoke.tumblr.com/rss)_) 
 
 * [PRNG: Psuedo Random Noise Generator](http://prng.blogspot.com/)
 (_[subscribe](http://prng.blogspot.com/feeds/posts/default)_) 
 
+* [Proteus](http://www.visitproteus.com)
+(_[subscribe](http://www.visitproteus.com/?feed=rss2)_) 
+
+* [Quinthar](http://blog.quinthar.com/)
+(_[subscribe](http://blog.quinthar.com/atom.xml)_) 
+
+* [Rands In Repose](http://www.randsinrepose.com/)
+(_[subscribe](http://www.randsinrepose.com/index.xml)_) 
+
 * [reoriginalize](http://term.ie/blog)
 (_[subscribe](http://term.ie/blog/feed/atom/)_) 
+
+* [Salmon Protocol](http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Fwww.salmon-protocol.org%2Fnews%2Fposts.xml)
+(_[subscribe](http://www.salmon-protocol.org/news/posts.xml)_) 
+
+* [San Francisco metro area Event Search - Eventful](http://eventful.com/sanfrancisco/events?q=%22conversations%20at%20the%20herbst%22&ga_search=%22conversations%20at%20the%20herbst%22&ga_type=events)
+(_[subscribe](http://eventful.com/atom/sanfrancisco/events?q=%22conversations%20at%20the%20herbst%22&ga_search=%22conversations%20at%20the%20herbst%22&ga_type=events)_) 
 
 * [Schneier on Security](http://www.schneier.com/blog/)
 (_[subscribe](http://feeds.feedburner.com/schneier/fulltext)_) 
@@ -321,17 +393,11 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [Seventypercent.com](http://www.seventypercent.com)
 (_[subscribe](http://www.seventypercent.com/feed/)_) 
 
-* [SFpark](http://sfpark.org)
-(_[subscribe](http://feeds.feedburner.com/Sfpark)_) 
-
 * [snarfed.org](http://snarfed.org)
 (_[subscribe](http://snarfed.org/feed)_) 
 
 * [snarfed.org - Twitter Search](http://search.twitter.com/search?q=snarfed.org)
 (_[subscribe](http://search.twitter.com/search.atom?q=snarfed.org)_) 
-
-* [snarfed_org - Twitter Search](http://search.twitter.com/search?q=snarfed_org)
-(_[subscribe](http://search.twitter.com/search.atom?q=snarfed_org)_) 
 
 * [SnipSnap](http://snipsnap.org/space/start)
 (_[subscribe](http://snipsnap.org/exec/rss?snip=start)_) 
@@ -342,13 +408,19 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [SpyParty - A Spy Game About Subtle Behavior](http://www.spyparty.com)
 (_[subscribe](http://www.spyparty.com/feed/)_) 
 
+* [Stanford EE Computer Systems Colloquium Schedule(EE380)](http://ee380.stanford.edu/index.html)
+(_[subscribe](http://www.stanford.edu/class/ee380/rss/380RSS.xml)_) 
+
 * [SYNAPSE](http://projectsynapse.tumblr.com/)
 (_[subscribe](http://projectsynapse.tumblr.com/rss)_) 
 
 * [Tech Notes](http://neugierig.org/software/blog/)
 (_[subscribe](http://neugierig.org/software/blog/atom.xml)_) 
 
-* [The Mozilla Blog](http://blog.mozilla.com)
+* [The Commonwealth Blog](http://www.commonwealthclub.org/publications/blog)
+(_[subscribe](http://www.commonwealthclub.org/publications/blog/rss.xml)_) 
+
+* [The Mozilla Blog](http://blog.mozilla.org)
 (_[subscribe](http://blog.mozilla.com/feed/)_) 
 
 * [The Other End of Sunset](http://otherendofsunset.blogspot.com/)
@@ -357,17 +429,26 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [The Privacy Guy](http://www.theprivacyguy.com)
 (_[subscribe](http://www.theprivacyguy.com/feed/)_) 
 
+* [The Technium](http://www.kk.org/thetechnium/)
+(_[subscribe](http://feeds.feedburner.com/thetechnium)_) 
+
+* [Thematic Theme](http://thematictheme.com)
+(_[subscribe](http://thematictheme.com/feed/)_) 
+
 * [Twitter / @snarfed_org's feed list](http://twitter.com//snarfed_org/feed)
 (_[subscribe](http://api.twitter.com/1/snarfed_org/lists/feed/statuses.atom)_) 
 
-* [Twitter / snarfed_org](http://twitter.com/snarfed_org)
-(_[subscribe](http://twitter.com/statuses/user_timeline/139199211.rss)_) 
+* [Vnus2marsdoucopy's Blog](http://vnus2marsdoucopy.wordpress.com)
+(_[subscribe](http://vnus2marsdoucopy.wordpress.com/feed/)_) 
 
 * [Walter Yu](http://walteryu.com)
 (_[subscribe](http://walteryu.com/?feed=rss2)_) 
 
 * [WordPress Development Blog](http://wordpress.org/news)
 (_[subscribe](http://wordpress.org/development/feed/)_) 
+
+* [WordPress.com News » New Features](http://en.blog.wordpress.com)
+(_[subscribe](http://en.blog.wordpress.com/category/new-features/feed/)_) 
 
 * [xkcd.com](http://xkcd.com/)
 (_[subscribe](http://xkcd.com/atom.xml)_) 
