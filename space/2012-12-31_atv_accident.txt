@@ -1,6 +1,6 @@
 ATV accident
 
-<style type="text/css"><!--
+<style type="text/css">
 div.captioned {
   text-align: center;
 }
@@ -8,8 +8,7 @@ div.margined {
   margin-bottom: 10px;
   width: 190px;
 }
-
---></style>
+</style>
 
 <img class="right shadow" src="upside_down_atv.jpg" />
 
