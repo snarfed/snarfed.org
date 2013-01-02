@@ -10,7 +10,11 @@ div.margined {
 }
 </style>
 
+<div class="right captioned margined" style="margin-left: 15px;">
 <img class="right shadow" src="upside_down_atv.jpg" />
+<br />
+<i>Artist's rendition. Not my actual wreck.</i>
+</div>
 
 I was in an unexpected accident over the holiday break.
 [Like last year](arizona_christmas), Gina and I went out with her brother and
