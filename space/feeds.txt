@@ -24,7 +24,13 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
 
 twitter
 ===
-they dropped most of their rss support recently. :/
+they dropped their rss support. :/
+
+i currently use a yahoo pipe:
+http://pipes.yahoo.com/pipes/pipe.info?_id=f49405304db01792c182c01ebd1d1b34
+
+here's the generated feed url:
+http://pipes.yahoo.com/pipes/pipe.run?_id=f49405304db01792c182c01ebd1d1b34&_render=rss&listinput=snarfed_org%2Ffeed
 
 i used to use twiterlist2rss.appspot.com to get an rss feed of my list, e.g.:
 http://twiterlist2rss.appspot.com/snarfed_org/lists/feed/statuses.rss
@@ -41,9 +47,13 @@ http://blog.persistent.info/2012/08/how-i-consume-twitter.html
 
 facebook
 ===
-they dropped most of their rss support recently. :/
+they dropped most of their rss support recently, then dropped the rest in 12/2012.
 
-this still works:
+jwz has a perl script that uses the fb api to convert to rss:
+http://www.jwz.org/blog/2009/12/how-to-use-facebook-with-a-feed-reader/
+see the facebook-rss.pl link at the end.
+
+this worked until 12/2012:
 
 http://www.kristi-barrow.com/facebook-rss-feeds-what-is-available/
 
