@@ -24,7 +24,10 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
 
 twitter
 ===
-they dropped their rss support. :/
+they dropped most of their rss support a while back, and then dropped atom
+support in 10/2012:
+https://dev.twitter.com/discussions/11831
+http://brodiesnotes.blogspot.com/2012/10/has-twitter-killed-rss-feeds-yet.html
 
 i currently use a yahoo pipe:
 http://pipes.yahoo.com/pipes/pipe.info?_id=f49405304db01792c182c01ebd1d1b34
