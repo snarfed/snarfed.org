@@ -89,7 +89,10 @@ http://re.rephrase.net/filter/?feed=http%3A%2F%2Fwww.gamesindustry.biz%2Frss%2Fg
 
 but it eventually gets flaky and stops filtering gamasutra so i switched to
 feedsifter:
+http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&Matt%2CMathews&NPD&number
 http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analysis&report
+
+...which eventually gets flaky and stops filtering too. grr.
 -->
 
 
