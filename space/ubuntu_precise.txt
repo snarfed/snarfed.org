@@ -104,6 +104,7 @@ The solution is to toggle all of the channels explicitly:
     * gcalcli
     * git
     * imagemagick
+    * imagemagick-doc
     * jnettop
     * lua-mode
     * lynx
