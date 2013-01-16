@@ -50,7 +50,7 @@ http://blog.persistent.info/2012/08/how-i-consume-twitter.html
 
 facebook
 ===
-they dropped most of their rss support recently, then dropped the rest in 12/2012.
+they dropped most of their rss support recently, then dropped the rest on 12/26/2012.
 
 jwz has a perl script that uses the fb api to convert to rss:
 http://www.jwz.org/blog/2009/12/how-to-use-facebook-with-a-feed-reader/
