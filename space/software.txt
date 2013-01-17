@@ -11,6 +11,14 @@ is public domain. Also see [other lists](lists).
 <a name="projects"></a>
 ### Projects
 
+  * [facebook-atom](https://facebook-atom.appspot.com/) generates and serves an
+Atom feed of your Facebook news feed, ie
+posts from your friends. [More background.](2012-03-12_activitystreams_for_facebook_and_twitter)
+
+  * [twitter-atom](https://twitter-atom.appspot.com/) generates and serves an
+Atom feed of your Twitter stream or a Twitter list.
+[More background.](2012-03-12_activitystreams_for_facebook_and_twitter)
+
   * [Facebook to Wordpress](2012-11-30_facebook_to_wordpress)
 is a script that copies your [Facebook](http://www.facebook.com/) posts to a
 [WordPress](http://wordpress.org/) blog of your choice.
