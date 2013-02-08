@@ -5,11 +5,24 @@ If you're reading this, you probably already know that I go
 [overboard](2012-09-22_revisiting_why_im_weird_about_privacy)
 [on](faking_out_address_and_credit_card_forms)
 [privacy](privacy_through_prepaid_credit_cards). I recently changed my mailing
-address, and ended up with a system I'm pretty happy with. It's pretty
-straightforward, but there's one small trick that's worth describing.
+address, and it took some research, but I'm pretty happy with the result. Most
+of it was straightforward, but there's one small trick that's worth mentioning.
 
-There's lots of existing knowledge about using
-[PO boxes](),
+There's lots of existing knowledge on using
+[PO boxes](http://blog.invisible-privacy.com/2011/05/how-to-receive-mail-at-po-box-using.html),
 [ghost addresses](http://jjluna.com/Ghost-Addresses), and
 [CMRAs](http://en.wikipedia.org/wiki/Commercial_mail_receiving_agency)
-instead of your home address.
+instead of your home address. (Why not your home address?
+[A](http://blog.invisible-privacy.com/2011/06/paranoid-or-not-hide-your-home-address.html)
+[few](http://blog.invisible-privacy.com/2010/04/privacy-101-never-receive-mail-at-your.html)
+[thoughts](http://blog.invisible-privacy.com/2009/04/five-ways-to-keep-your-home-address.html).)
+
+Unfortunately, none of them are ideal. Ghost addresses are good for filling out
+forms, but not so good at receiving actual mail. PO boxes are good for mail, but
+not packages, and you can't use them for many purposes.
+
+CMRAs are the most promising. They give you a real street address, for a fee,
+and receive your mail and packages and optionally forward them. More recently,
+many will open your mail (with your permission), scan it, provide access to the
+scans online or over email, archiving or shred the physical copies. Very cool.
+
