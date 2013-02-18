@@ -10,7 +10,7 @@ We can do whatever we want with them, at least within reason and the law.
 Unfortunately, that's not true any more. Those of us with iPhones and iPads, for
 example, can only run programs that have been approved by Apple. We can get
 around this with [jailbreaking](http://en.wikipedia.org/wiki/IOS_jailbreaking),
-but that's not reasonable for the average user, not to mention somewhat illegal.
+but that's not reasonable for the average user, or even entirely legal.
 
 <!-- more -->
 <span />
@@ -20,16 +20,16 @@ longer iOS but Windows and Mac OS, which are moving in the same direction.
 Microsoft's
 [Windows Store certification](http://msdn.microsoft.com/en-us/library/windows/apps/hh694083.aspx)
 and Apple's [Gatekeeper](http://support.apple.com/kb/ht5290) put both OSes on a
-gradual but clear path to mandatory approval, just like iOS now. Of the four
+gradual but clear path to mandatory approval, just like iOS. Of the four
 mainstream, end user computing platforms - Windows, Mac OS X, iOS, and Android -
 _three of them_ are closed or headed that way.
 
-Only Android lets you publish, distribute, and run any program you want, and
-even it has caveats. Regardless of which Android app store you publish on, your
-app may be removed if it's malicious or otherwise violates their terms. You can
-distribute it outside an app store and let your users
-[sideload](http://en.wikipedia.org/wiki/Sideload) it, but first they have to
-dumpster dive in settings menus to enable it. It's disabled by default.
+Only Android will clearly continue to let you publish, distribute, and run any
+program you want, and even that has caveats. Regardless of which Android app
+store you use, your app may be removed if it's malicious or otherwise violates
+their terms. You can distribute it outside an app store and let your users
+[sideload](http://en.wikipedia.org/wiki/Sideload) it, but they have to dumpster
+dive in settings menus to enable sideloading first. It's disabled by default.
 
 (Sorry Linux. You may be my OS of choice, but you're too small to count, and in
 this case, you're not the same as Android. We're talking about how programs are
@@ -47,8 +47,8 @@ generated flame wars for years, and recently people like
 [Casey Muratori](http://www.gamasutra.com/view/feature/179420/the_next_twenty_years_what_.php),
 [Cory Doctorow](http://boingboing.net/2012/01/10/lockdown.html), and
 [Gabe Newell](http://www.forbes.com/sites/erikkain/2012/07/26/windows-8-is-a-catastrophe-according-to-gabe-newell-valve-hedging-with-steam-on-linux/)
-have expanded that commentary to look at traditional OSes like Windows and Mac
-OS X and even smart appliances and non-computers.
+have expanded that commentary to look at traditional OSes like Windows and
+OS X and even smart appliances and other non-computers.
 ([Muratori's](http://www.gamasutra.com/view/feature/179420/the_next_twenty_years_what_.php)
 and [Doctorow's](http://boingboing.net/2012/01/10/lockdown.html) articles are
 particularly good reading.)
@@ -59,12 +59,12 @@ can now exercise our creativity on a wide range of
 [UGC](http://en.wikipedia.org/wiki/User-generated_content) platforms, which are
 bigger and broader than ever before.
 
-Finally, you could argue that I left out a key open platform: the web. Despite
-some legislators' best efforts, there's still no central authority who
-determines which webapps you can use or sites you can visit. Not in most
-countries, at least.
+You can also argue that I left out a key open platform: the web. Despite some
+legislators' best efforts, there's still no central authority that determines
+which webapps you can use or sites you can visit. Not in most countries, at
+least.
 
 Regardless, the fact remains that we're gradually losing control over what we
 can do with our computers and other devices. More and more, we have to ask
 permission to run the programs we want to run. I'm glad it's only most
-platforms, and it will never get to 100%, but that's small comfort.
+platforms, and it will never get to 100%, but that's not much consolation.
