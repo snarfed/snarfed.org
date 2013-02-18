@@ -15,8 +15,8 @@ but that's not reasonable for the average user, not to mention somewhat illegal.
 <!-- more -->
 <span />
 
-The pros and cons of this have been debated to death, and the interesting part
-is no longer iOS but Windows and Mac OS, which are moving in the same direction.
+The pros and cons of this have been debated to death. The interesting part is no
+longer iOS but Windows and Mac OS, which are moving in the same direction.
 Microsoft's
 [Windows Store certification](http://msdn.microsoft.com/en-us/library/windows/apps/hh694083.aspx)
 and Apple's [Gatekeeper](http://support.apple.com/kb/ht5290) put both OSes on a
