@@ -137,27 +137,14 @@ backported from 24.3.
 I hadn't used Emacs 24 before this. One of my favorite new features is the built
 in package manager. Here are the packages I've installed so far:
 
-  * autoconf
-  * automake
   * css-mode
-  * emacs
-  * exif
-  * gnupg
   * go-mode
-  * imagemagick
   * js2-mode
-  * libtool
   * lua-mode
   * markdown-mode
-  * mercurial
-  * mpg123
-  * mplayer
-  * mysql
   * php-mode
   * redo+
   * sgml-mode
-  * sshfs
-  * wget
 
 
 <a name="Firefox"></a>
