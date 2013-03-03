@@ -159,6 +159,12 @@ This mostly worked, but a few things like history didn't entirely make it. Next
 time, I might consider a backup and restore utility like
 [FEBE](https://addons.mozilla.org/en-US/firefox/addon/febe/) instead.
 
+One minor irritation: I used to be able to
+[stop app tabs from glowing](http://superuser.com/questions/271512/can-the-glow-notification-on-firefox-4s-app-tabs-be-disabled)
+when they have updates, but the same trick doesn't work in OS X. I've
+[asked on Stack Exchange](http://superuser.com/questions/271512/can-the-glow-notification-on-firefox-4s-app-tabs-be-disabled);
+maybe someone there knows.
+
 
 <a name="Mac_OS_X"></a>
 #### Mac OS X
@@ -200,7 +206,7 @@ when the lid closes, but there are third party programs like
 proprietary and only wakes up to do Apple-specific things.
 Incidentally, the keyboard shortcut for sleep is Cmd-Option-Power.
 
-System Preferences is self explanatory; it's the equivalent of dotfiles in *nix
+System Preferences is self explanatory; it's the equivalent of dotfiles in \*nix
 and Control Panel in Windows. I *think* it's actually just a pretty frontend to
 System Information (in Utilities), which is similar to GConf or the Windows
 Registry. The actual preference data is (sometimes?) stored in
