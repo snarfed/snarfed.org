@@ -93,10 +93,10 @@ Ion's author
 [went crazy](http://en.wikipedia.org/wiki/Ion_%28window_manager%29#Controversy).
 
 It's also the part that I haven't been able to match, at least so far. I've
-found programs with similar ideas, but most of them seem like little more then
-glorified bags shortcut keys for pushing windows around. I haven't found many
-true window manager that actually _manage my windows_ for me.
-[I'm not](http://apple.stackexchange.com/questions/9659/what-window-management-options-exist-for-os-x)
+found programs with similar ideas, but most of them seem like glorified bags of
+shortcut keys for pushing windows around. I haven't found many true window
+manager that actually _manage my windows_ for me. [I'm
+not](http://apple.stackexchange.com/questions/9659/what-window-management-options-exist-for-os-x)
 [the only](http://news.ycombinator.com/item?id=4059820)
 [one](http://mac.appstorm.net/roundups/utilities-roundups/20-mac-window-management-utilities/),
 either.
@@ -163,8 +163,8 @@ in package manager. Here are the packages I've installed so far:
 <a name="Firefox"></a>
 #### Firefox
 
-I migrated profile the brute force way: I copied my profile directory directly
-from `~/.mozilla/firefox/personal/` to `~/Library/Application
+I migrated my Firefox profile by brute force: I copied my profile directory
+directly from `~/.mozilla/firefox/personal/` to `~/Library/Application
 Support/Firefox/Profiles/personal` and updated the fully qualified home
 directory paths in `prefs.js`, `search.json`, `extensions.ini`.
 
@@ -179,42 +179,42 @@ time, I might consider a backup and restore utility like
 There are lots of little differences in the OS and its shell. To start, I knew
 it would ask me to make an
 [Apple Id](http://www.apple.com/asia/support/appleid/) for use with the App
-store, etc., but I didn't expect it to be quite so aggressive. Even so, I've
-managed to sidestep it so far. I had to use one to download
-[XCode](https://developer.apple.com/xcode/), but I've avoided attaching it to
-the computer itself.
+Store and other Apple services, but I didn't expect it to be quite so
+aggressive. Even so, I've managed to sidestep it so far. I had to create one to
+download [XCode](https://developer.apple.com/xcode/), but I've avoided attaching
+it to the computer itself.
 
 Programs are usually run as
-[`.app` files](http://superuser.com/questions/78176/how-do-mac-app-execution-files-work)
-are executable archives that bundle include a manifest, binaries, supporting
-files, icons, etc. They're usually placed in the `/Applications` directory.
-The actual binary(ies) are in `XXX.app/Contents/MacOS/`.
+[`.app` files](http://superuser.com/questions/78176/how-do-mac-app-execution-files-work),
+executable archives that include a manifest, binaries, supporting files, icons,
+etc. They're usually placed in the `/Applications` directory. The actual
+binary(ies) are in `XXX.app/Contents/MacOS/`.
 
-Outside of the App Store, there are two standard ways to install and programs.
+Outside of the App Store, there are two standard ways to install programs.
 [`.dmg` files](http://www.ofzenandcomputing.com/zanswers/779/) are disk images,
 not zip files or installer binaries. Double click on them to mount them, drag
 the application file inside to the Applications folder, then unmount the image and
 optionally delete it.
 
-[`.pkg` files](http://www.macfreek.nl/memory/Mac_OS_X_Installer_Packages#Package_file_format)
-are package installers. Similarly,
+[`.pkg`](http://www.macfreek.nl/memory/Mac_OS_X_Installer_Packages#Package_file_format)
+and
 [`.mpkg` files](http://www.macfreek.nl/memory/Mac_OS_X_Installer_Packages#Multipackage_Files)
-are more flexible and powerful "multipackage" installers. You can
-[install them](http://www.commandlinefu.com/commands/view/2031/install-an-mpkg-from-the-command-line-on-osx)
-with the built-in `installer` program:
+are package and multipackage installer binaries, respectively. They'll open with
+the built in `installer` program automatically, or you can
+[run it manually](http://www.commandlinefu.com/commands/view/2031/install-an-mpkg-from-the-command-line-on-osx):
 `sudo installer -pkg /Volumes/someapp/someapp.mpkg -target /`
 
-Power settings are pretty solid out of the box, and there's even a useful
+Power management is pretty solid out of the box, and there's even a useful
 command line utility, `pmset`. There's no built in way to tell it not to sleep
 when the lid closes, but there are third party programs like
 [InsomniaT](http://forums.macrumors.com/showpost.php?p=12150590&postcount=4) and
 [NoSleep](http://www.technologytell.com/apple/90045/prevent-your-macbook-from-sleeping-when-its-lid-is-closed-with-nosleep/).
-([Power nap](http://support.apple.com/kb/ht5394) looks related but isn't; it's
-proprietary and only wakes up to do Apple-specific things.)
+[Power nap](http://support.apple.com/kb/ht5394) looks related but isn't; it's
+proprietary and only wakes up to do Apple-specific things.
 Incidentally, the keyboard shortcut for sleep is Cmd-Option-Power.
 
 System Preferences is self explanatory; it's the equivalent of dotfiles in *nix
-and Control Panel in Windows. It looks like it may be a pretty frontend to
+and Control Panel in Windows. I _think_ it's actually just a pretty frontend to
 System Information (in Utilities), which is similar to GConf or the Windows
 Registry. The actual preference data is (sometimes?) stored in
 [`.plist` files](http://en.wikipedia.org/wiki/Property_list).
@@ -223,37 +223,32 @@ There used to be a standalone
 but now it's embedded in XCode.
 There's also the `defaults(1)` command line program.
 
-I turned on FileVault 2, Apple's full-disk encryption system. It's pretty self
-explanatory, and evidently much better than their first version. The only
-disappointing thing is that it requires me to log in with my password after a
-certain amount of idle time. I tried to
+I turned on FileVault 2, Apple's full-disk encryption system, which is evidently
+much better than version 1. The only disappointing thing is that it requires me
+to log in with my password after a certain amount of idle time. I tried to
 [disable that](http://superuser.com/questions/313425/toggle-ask-for-password-after-screensaver-sleep-or-the-delay-in-10-7-using-ter),
 but I needed to turn on
 [automatic login](http://forums.macrumors.com/showthread.php?t=1416302), which
 [FileVault doesn't allow](https://discussions.apple.com/message/17983068#17983068).
-I even tried variations on
-`defaults write com.apple.screensaver askForPassword 0`, but no luck.
-Sigh, oh well.
+I even tried variations on `defaults write com.apple.screensaver askForPassword
+0`, but no luck. Sigh, oh well.
 
 Networking is pretty straightforward, and has its own command line utility,
-`[airport](http://osxdaily.com/2007/01/18/airport-the-little-known-command-line-wireless-utility/)`.
+[`airport`](http://osxdaily.com/2007/01/18/airport-the-little-known-command-line-wireless-utility/).
 
 Keychain integrates with SSH keys automatically, which is pretty damn cool.
-Sadly it doesn't also handle GnuPG keys automatically, but I only use mine
-rarely, so I don't mind typing the password each time or just using stock `gpg-agent`.
+Sadly it doesn't also handle GnuPG keys, but I only use mine rarely, so I don't
+mind typing the password each time or just using stock `gpg-agent`.
 
 To
 [set your hostname](http://osxdaily.com/2012/10/24/set-the-hostname-computer-name-and-bonjour-name-separately-in-os-x/)
 in the GUI, go to System Preferences, Sharing, Computer Name. To do it from the
 command line: `scutil --set [HostName,LocalHostName,ComputerName]`
 
-I ran these commands to
-[always show the full path in Finder windows](http://apple.stackexchange.com/a/574/43900):
+Run this to
+[always show the full path in Finder windows](http://apple.stackexchange.com/a/574/43900): `defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES`.
 
-    defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES
-    killall Finder
-
-Sound has one nice feature: it automatically remembers volume for headphone vs
+Sound has a nice feature: it automatically remembers volume for headphone vs
 speakers separately, which helps you avoid blowing out your eardrums. Nice.
 
 
@@ -263,7 +258,7 @@ speakers separately, which helps you avoid blowing out your eardrums. Nice.
 Thanks to [Fitts' law](http://en.wikipedia.org/wiki/Fitts'_law), I tend to use
 the keyboard much more than the mouse. Fortunately, OS X has
 [lots of built in keyboard shortcuts](http://support.apple.com/kb/ht1343), and
-it's very configurable out of the box. You can even
+it's very configurable out of the box. You can also
 [add shortcuts to third party applications](http://support.apple.com/kb/PH3957),
 to a degree, and wonder of wonders, even swap Caps Lock and Control. (Speaking
 of which, if you do that in System Preferences, remembmer to do it in
@@ -271,13 +266,13 @@ _each keyboard_ you use!)
 
 Beyond that, the best thing I've found to make OS X more keyboardable is
 [KeyRemap4MacBook](http://pqrs.org/macosx/keyremap4macbook/). I use it to get
-[Sticky Keys](http://support.apple.com/kb/PH11262) that _don't_
+[Sticky Keys](http://support.apple.com/kb/PH11262) that don't
 [lock](http://apple.stackexchange.com/questions/13708/disabling-the-keep-pressed-function-of-os-x-sticky-keys),
 add Emacs key bindings in text controls, reclaim some of the function keys, make
 Control-arrow keys navigate by words, make Return act like Control when it's
 held down, and emulate my beloved missing Page Up and Page Down keys.
 
-It's not all kittens and rainbows, though. First, I sorely miss Windows and
+It's not all kittens and rainbows, though. I sorely miss Windows and
 Linux's Shift-F10 shortcut for right click. Evidently there
 [isn't an equivalent one](http://superuser.com/questions/93937/keyboard-shortcut-to-right-click-in-mac-os-x)
 in OS X. You can
@@ -287,11 +282,12 @@ but that ties up rest of keyboard, so it's not really an option.
 I also dreadfully miss navigating menus with the keyboard. There's a keyboard
 shortcut to focus the menu bar, but it doesn't work in all apps, e.g. Emacs.
 
-Finally, some modal dialog boxes can't be navigated with the keyboard by Tab. I
-think the common thread is that they don't have a corresponding GUI app running
-- for example, I see this in Slate's startup error messages. I thought they were
+Finally, some modal dialog boxes can't be navigated with the Tab key, even with
+_Full Keyboard Access_ set to _All controls_ in System Preferences => Keyboard.
+I think the common thread is that those dialog boxes don't have a corresponding
+_GUI_ app running, e.g. Slate. I thought they were
 [utility windows](http://apple.stackexchange.com/questions/71645/how-to-interact-with-dialog-boxes-using-keyboard-that-appear-not-to-allow-keyboa),
-but they don't respond to Ctrl-F6.
+but they don't respond to Ctrl-F6 either.
 
 
 <a name="Miscellaneous"></a>
