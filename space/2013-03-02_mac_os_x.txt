@@ -201,7 +201,7 @@ proprietary and only wakes up to do Apple-specific things.
 Incidentally, the keyboard shortcut for sleep is Cmd-Option-Power.
 
 System Preferences is self explanatory; it's the equivalent of dotfiles in *nix
-and Control Panel in Windows. I _think_ it's actually just a pretty frontend to
+and Control Panel in Windows. I *think* it's actually just a pretty frontend to
 System Information (in Utilities), which is similar to GConf or the Windows
 Registry. The actual preference data is (sometimes?) stored in
 [`.plist` files](http://en.wikipedia.org/wiki/Property_list).
@@ -264,7 +264,7 @@ Linux's Shift-F10 shortcut for right click. Evidently there
 [isn't an equivalent one](http://superuser.com/questions/93937/keyboard-shortcut-to-right-click-in-mac-os-x)
 in OS X. You can
 [use mouse keys and Ctrl-5](http://superuser.com/questions/93561/right-click-using-keyboard-in-mac-os-x),
-but that ties up rest of keyboard, so it's not really an option.
+but that ties up the rest of keyboard, so it's not really an option.
 
 I also dreadfully miss navigating menus with the keyboard. There's a keyboard
 shortcut to focus the menu bar, but it doesn't work in all apps, e.g. Emacs.
@@ -272,7 +272,7 @@ shortcut to focus the menu bar, but it doesn't work in all apps, e.g. Emacs.
 Finally, some modal dialog boxes can't be navigated with the Tab key, even with
 _Full Keyboard Access_ set to _All controls_ in System Preferences => Keyboard.
 I think the common thread is that those dialog boxes don't have a corresponding
-_GUI_ app running, e.g. Slate. I thought they were
+GUI app running, e.g. Slate. I thought they were
 [utility windows](http://apple.stackexchange.com/questions/71645/how-to-interact-with-dialog-boxes-using-keyboard-that-appear-not-to-allow-keyboa),
 but they don't respond to Ctrl-F6 either.
 
