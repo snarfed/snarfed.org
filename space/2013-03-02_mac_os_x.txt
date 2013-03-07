@@ -287,7 +287,11 @@ but they don't respond to Ctrl-F6 either.
 #### Miscellaneous
 
 I used [Pidgin](http://pidgin.im/) on Linux. [Adium](http://adium.im/), its OS X
-counterpart, seems like an ok replacement so far.
+counterpart, seems like an ok replacement so far. One obscure feature I liked in
+Pidgin was the ability to turn off the "Ryan has left the conversation"
+notifications that it sends when I close chat windows. Happily, it looks like
+[Adium turned these off entirely](https://trac.adium.im/ticket/8082#comment:24)
+a while back.
 
 I'm using [Menu Meters](http://www.ragingmenace.com/software/menumeters/) to get
 minimal CPU and network activity monitors in the menu bar.
