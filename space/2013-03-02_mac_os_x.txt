@@ -16,7 +16,7 @@ I've done to make it feel comfortable.
 <span />
 
   * [Homebrew](#Homebrew)
-  * [Window manager](#Window_manager)
+  * [Window management](#Window_management)
   * [Emacs](#Emacs)
   * [Firefox](#Firefox)
   * [Mac OS X](#Mac_OS_X)
@@ -83,8 +83,8 @@ Apache is installed but not started by default; run `apachectl -k start` to
 start it. Here's [more on setting up LAMP](http://benatkin.com/2011/09/10/php-and-mysql-on-mac-os-x-lion-with-homebrew/).
 
 
-<a name="Window_manager"></a>
-#### Window manager
+<a name="Window_management"></a>
+#### Window management
 
 One of the most important parts of my Linux setup was my tiling window manager,
 [Ion](http://en.wikipedia.org/wiki/Ion_%28window_manager%29), which I followed
@@ -114,7 +114,8 @@ Slate right now; here are my [.slate](http://snarfed.org/dotfiles/.slate) and
 [SizeUp](http://www.irradiatedsoftware.com/sizeup/),
 [Spectacle](http://spectacleapp.com/),
 [Optimal Layout](http://most-advantageous.com/optimal-layout),
-[Doublepane](http://5amcode.com/), and others.)
+[Doublepane](http://5amcode.com/),
+[Stay](http://cordlessdog.com/stay/), and others.)
 
 
 <a name="Emacs"></a>
@@ -243,6 +244,22 @@ Run this to
 
 Sound has a nice feature: it automatically remembers volume for headphone vs
 speakers separately, which helps you avoid blowing out your eardrums. Nice.
+
+Oddly though, the baseline volume is too loud for a few of my headphones.
+[Other people have the same problem](http://forums.macrumors.com/showthread.php?t=1232195).
+[This StackExchange question](http://apple.stackexchange.com/questions/63253/lowest-volume-is-still-too-loudhow-can-i-make-it-even-lower)
+offers a number of solutions:
+  * Hold Option and Shift while pressing the volume buttons to get smaller
+increments, or use the Menu Bar icon. Neither of those go as low as I'd like,
+though.
+  * Use the Volume Down button to lower the volume all the way to zero, then
+press the Mute button to unmute. This goes much lower than even the smallest
+Option-Shift increment.
+  * Use AppleScript: `osascript -e "set Volume 0.01"`. I couldn't get it to
+register anything below .01, though, which is the same volume as the unmute
+trick above.
+  * Install a third party equalizer like [Hear](http://hear.en.softonic.com/mac)
+or limiter like [Volimiter](http://www.anoshkin.net/products/mac/volimiter/).
 
 
 <a name="Keyboard_and_mouse"></a>
