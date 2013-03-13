@@ -217,6 +217,14 @@ There used to be a standalone
 but now it's embedded in XCode.
 There's also the `defaults(1)` command line program.
 
+There's a cottage industry of system tweaking programs like
+[Onyx](http://www.macupdate.com/app/mac/11582/onyx) and
+[Cocktail](http://www.maintain.se/cocktail), similar to Windows's venerable
+[Power Toys](http://en.wikipedia.org/wiki/Microsoft_PowerToys), that just set
+preferences that aren't exposed in the System Preferences UI. There are also
+plenty of [good](http://knoopx.net/2011/10/28/os-x-lion-tweaks)
+[lists](http://secrets.blacktree.com/) of individual useful settings to change.
+
 I turned on FileVault 2, Apple's full-disk encryption system, which is evidently
 much better than version 1. The only disappointing thing is that it requires me
 to log in with my password after a certain amount of idle time. I tried to
