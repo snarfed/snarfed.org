@@ -240,6 +240,10 @@ that can be imported back into SnipSnap.
 
 <a name="patches"></a>
 ### Patches
+  * A [setting](https://github.com/tekezo/KeyRemap4MacBook/pull/118) for
+[KeyRemap4MacBook](http://pqrs.org/macosx/keyremap4macbook/) that provides
+[sticky modifier keys](http://support.apple.com/kb/PH11262) like Mac OS X, but
+[_without_ locking](http://apple.stackexchange.com/questions/13708/disabling-the-keep-pressed-function-of-os-x-sticky-keys).
 
   * A [patch](http://wordpress.org/support/topic/plugin-nextgen-gallery-patch-bug-fix-for-imagemagick-exec-and-passthru-checks)
 ([download](https://github.com/snarfed/misc/blob/master/patches/nextgen_gallery_imagemagick_exec_passthru_check.patch))
@@ -253,7 +257,7 @@ support for shells with path prefixes, e.g.
 [Tramp](http://www.gnu.org/software/tramp/)-based remote shells. Applied in
 [revision 106107](http://bzr.savannah.gnu.org/lh/emacs/trunk/revision/106107).
 
-  * A [patch](https://github.com/snarfed/misc/blob/master/patches/ajax_comment_preview_2.3_loading_and_error.patch) for the Wordpress 
+  * A [patch](https://github.com/snarfed/misc/blob/master/patches/ajax_comment_preview_2.3_loading_and_error.patch) for the Wordpress
 [Ajax Comment Preview](http://blogwaffe.com/ajax-comment-preview/) plugin that
 fixes bugs with the loading and error messages and wraps them in stylable spans.
 
