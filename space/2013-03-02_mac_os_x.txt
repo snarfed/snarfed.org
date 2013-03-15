@@ -332,6 +332,8 @@ your hard drive as HTML - yay! - so they're easy to read in a browser. Look in
 `~/Library/Developer/Shared/Documentation/DocSets` and point your browser at
 `Contents/Resources/Documents/index.html` inside the docset you want to read.
 
+`docsetutil` (`/Applications/Xcode.app/Contents/Developer/usr/bin/docsetutil`)
+also looks handy. It can search an index of all installed docsets.
 
 <a name="Miscellaneous"></a>
 #### Miscellaneous
