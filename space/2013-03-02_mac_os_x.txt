@@ -21,6 +21,7 @@ I've done to make it feel comfortable.
   * [Firefox](#Firefox)
   * [Mac OS X](#Mac_OS_X)
   * [Keyboard and mouse](#Keyboard_and_mouse)
+  * [Xcode](#Xcode)
   * [Miscellaneous](#Miscellaneous)
 
 
@@ -175,7 +176,7 @@ it would ask me to make an
 [Apple Id](http://www.apple.com/asia/support/appleid/) for use with the App
 Store and other Apple services, but I didn't expect it to be quite so
 aggressive. Even so, I've managed to sidestep it so far. I had to create one to
-download [XCode](https://developer.apple.com/xcode/), but I've avoided attaching
+download [XCode](#Xcode), but I've avoided attaching
 it to the computer itself.
 
 Programs are usually run as
@@ -214,7 +215,7 @@ Registry. The actual preference data is (sometimes?) stored in
 [`.plist` files](http://en.wikipedia.org/wiki/Property_list).
 There used to be a standalone
 [Property List Editor app](http://en.wikipedia.org/wiki/Apple_Developer_Tools#Property_List_Editor),
-but now it's embedded in XCode.
+but now it's embedded in [XCode](#XCode).
 There's also the `defaults(1)` command line program.
 
 There's a cottage industry of system tweaking programs like
@@ -315,6 +316,21 @@ I think the common thread is that those dialog boxes don't have a corresponding
 GUI app running, e.g. Slate. I thought they were
 [utility windows](http://apple.stackexchange.com/questions/71645/how-to-interact-with-dialog-boxes-using-keyboard-that-appear-not-to-allow-keyboa),
 but they don't respond to Ctrl-F6 either.
+
+
+<a name="Xcode"></a>
+#### Xcode
+
+I prefer to write code in [Emacs](#Emacs) and read docs in [Firefox](#Firefox),
+but I've been working on [iOS](https://developer.apple.com/xcode/) apps
+recently, which Apple only halfheartedly supports outside of
+its IDE, [Xcode](https://developer.apple.com/xcode/). Fortunately, other people
+have [stepped in](http://roupam.github.com/#sec-7) to fill the void.
+
+Apple's developer docs for Objective C, Cocoa, Mac OS X, iOS, etc. are stored on
+your hard drive as HTML - yay! - so they're easy to read in a browser. Look in
+`~/Library/Developer/Shared/Documentation/DocSets` and point your browser at
+`Contents/Resources/Documents/index.html` inside the docset you want to read.
 
 
 <a name="Miscellaneous"></a>
