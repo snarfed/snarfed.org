@@ -269,6 +269,15 @@ trick above.
   * Install a third party equalizer like [Hear](http://hear.en.softonic.com/mac)
 or limiter like [Volimiter](http://www.anoshkin.net/products/mac/volimiter/).
 
+If you have multiple displays, the Menu Bar is always on the "primary" display.
+This is inconvenient when you're working on another display. You can
+[move it](http://macdevelopertips.com/system/multiple-monitors-specifying-menu-location.html),
+but you need a
+[third party app](http://lifehacker.com/5489410/secondbar-puts-a-menu-bar-on-all-your-macs-monitors)
+to duplicate it on all displays. Also see
+[this discussion](http://forums.macrumors.com/showthread.php?t=352532), among
+others.
+
 
 <a name="Keyboard_and_mouse"></a>
 #### Keyboard and mouse
