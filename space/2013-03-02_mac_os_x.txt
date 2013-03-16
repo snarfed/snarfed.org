@@ -161,6 +161,13 @@ This mostly worked, but a few things like history didn't entirely make it. Next
 time, I might consider a backup and restore utility like
 [FEBE](https://addons.mozilla.org/en-US/firefox/addon/febe/) instead.
 
+I also noticed that fonts were grainy on Firefox 19 on my retina display.
+Evidently this is temporary until Firefox 20, to work around a bug. I followed
+[these instructions](http://support.mozilla.org/en-US/questions/947663) to
+re-enable retina display support by setting `gfx.hidpi.enabled` to `2` in
+`about:config`.
+
+
 One minor irritation: I used to be able to
 [stop app tabs from glowing](http://superuser.com/questions/271512/can-the-glow-notification-on-firefox-4s-app-tabs-be-disabled)
 when they have updates, but the same trick doesn't work in OS X. I've
