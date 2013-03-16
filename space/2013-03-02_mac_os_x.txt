@@ -342,6 +342,11 @@ your hard drive as HTML - yay! - so they're easy to read in a browser. Look in
 `docsetutil` (`/Applications/Xcode.app/Contents/Developer/usr/bin/docsetutil`)
 also looks handy. It can search an index of all installed docsets.
 
+I'm currently trying out [Dash](http://kapeli.com/), a document viewer that
+includes a ton of docsets for popular languages, platforms, and frameworks. It
+looks great so far. It even has Emacs integration!
+
+
 <a name="Miscellaneous"></a>
 #### Miscellaneous
 
