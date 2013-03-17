@@ -307,6 +307,12 @@ add Emacs key bindings in text controls, reclaim some of the function keys, make
 Control-arrow keys navigate by words, make Return act like Control when it's
 held down, and emulate my beloved missing Page Up and Page Down keys.
 
+One KeyRemap4MacBook note: if you bind simultaneous key presses, e.g. pressing
+both down and right arrow keys together to Page Down, try lowering the
+_[Simultaneous Key Presses] Delay Threshold_ setting in the _Key Repeat_ tab as
+low as you can, ideally 10ms or so, so that pressing those keys in rapid
+succession doesn't accidentally trigger the new binding.
+
 It's not all kittens and rainbows, though. I sorely miss Windows and
 Linux's Shift-F10 shortcut for right click. Evidently there
 [isn't an equivalent one](http://superuser.com/questions/93937/keyboard-shortcut-to-right-click-in-mac-os-x)
