@@ -287,6 +287,12 @@ to duplicate it on all displays. Also see
 [this discussion](http://forums.macrumors.com/showthread.php?t=352532), among
 others.
 
+Many *nix-isms work like you'd expect, but not all. `.login` files are one that
+didn't make the cut. To resurrect yours, put it into a shell script, or just
+`chmod +x` it and add `#!/bin/bash` at the top, then
+[add a Login Item for it](http://stackoverflow.com/questions/135688/setting-environment-variables-in-os-x/5444960#5444960)
+to your user in System Preferences => Users & Groups.
+
 
 <a name="Keyboard_and_mouse"></a>
 #### Keyboard and mouse
