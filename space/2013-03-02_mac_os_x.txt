@@ -43,10 +43,11 @@ Applications from there to install them.
 
 Another note: for `.app`s to use binaries installed by homebrew in
 `/usr/local/bin`, e.g. `emacsclient`, you need to add that path to the default
-`PATH` environment variable for OS X apps. Here are instructions
-[from Homebrew](https://github.com/mxcl/homebrew/wiki/FAQ) and
-[from Apple](http://developer.apple.com/library/mac/#/legacy/mac/library/qa/qa1067/_index.html).
-Unfortunately, I haven't gotten this to work quite yet.
+`PATH` environment variable for OS X apps with `[launchctl setenv](http://developer.apple.com/library/mac/#technotes/tn2124/_index.html)`.
+_Warning_: [Homebrew's instructions](https://github.com/mxcl/homebrew/wiki/FAQ).
+point to
+[this Apple doc](http://developer.apple.com/legacy/mac/library/#qa/qa1067/_index.html),
+which doesn't work in Mountain Lion!
 
 Here are some packages I've installed so far:
 
