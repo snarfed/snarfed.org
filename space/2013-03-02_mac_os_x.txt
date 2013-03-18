@@ -43,7 +43,8 @@ Applications from there to install them.
 
 Another note: for `.app`s to use binaries installed by homebrew in
 `/usr/local/bin`, e.g. `emacsclient`, you need to add that path to the default
-`PATH` environment variable for OS X apps with `[launchctl setenv](http://developer.apple.com/library/mac/#technotes/tn2124/_index.html)`.
+`PATH` environment variable for OS X apps with
+`[launchctl setenv](ihttp://developer.apple.com/library/mac/#technotes/tn2124/_index.html#//apple_ref/doc/uid/DTS10003391-CH1-SECLAUNCHD)`.
 _Warning_: [Homebrew's instructions](https://github.com/mxcl/homebrew/wiki/FAQ).
 point to
 [this Apple doc](http://developer.apple.com/legacy/mac/library/#qa/qa1067/_index.html),
@@ -168,12 +169,11 @@ Evidently this is temporary until Firefox 20, to work around a bug. I followed
 re-enable retina display support by setting `gfx.hidpi.enabled` to `2` in
 `about:config`.
 
-
-One minor irritation: I used to be able to
+One note: my tweak to
 [stop app tabs from glowing](http://superuser.com/questions/271512/can-the-glow-notification-on-firefox-4s-app-tabs-be-disabled)
-when they have updates, but the same trick doesn't work in OS X. I've
-[asked on Stack Exchange](http://apple.stackexchange.com/questions/84139/how-to-disable-firefoxs-app-tab-glow);
-maybe someone there knows.
+when they have updates didn't work out of the box. It took a while, but someone
+on the Apple StackExchange finally
+[led me to the fix](http://apple.stackexchange.com/questions/84139/how-to-disable-firefoxs-app-tab-glow). Yay!
 
 
 <a name="Mac_OS_X"></a>
