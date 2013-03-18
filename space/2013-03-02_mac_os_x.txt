@@ -380,3 +380,7 @@ Android. I wish it put an
 otherwise it's great.
 
 The built in Python doesn't read my `~/.python`. Not sure why yet.
+
+I have an Android 4.2 phone, which meant I needed to
+[download an MTP program](http://www.android.com/filetransfer/) to transfer
+files to it over USB.
