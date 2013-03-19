@@ -278,6 +278,8 @@ trick above.
   * Install a third party equalizer like [Hear](http://hear.en.softonic.com/mac)
 or limiter like [Sound Bunny](http://www.prosofteng.com/products/soundbunny.php) or
 [Volimiter](http://www.anoshkin.net/products/mac/volimiter/).
+In the end, I went the low tech route and passed `-volume 1` to `mplayer`, my
+music player of choice.
 
 If you have multiple displays, the Menu Bar is always on the "primary" display.
 This is inconvenient when you're working on another display. You can
