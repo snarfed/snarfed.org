@@ -276,7 +276,8 @@ Option-Shift increment.
 register anything below .01, though, which is the same volume as the unmute
 trick above.
   * Install a third party equalizer like [Hear](http://hear.en.softonic.com/mac)
-or limiter like [Volimiter](http://www.anoshkin.net/products/mac/volimiter/).
+or limiter like [Sound Bunny](http://www.prosofteng.com/products/soundbunny.php) or
+[Volimiter](http://www.anoshkin.net/products/mac/volimiter/).
 
 If you have multiple displays, the Menu Bar is always on the "primary" display.
 This is inconvenient when you're working on another display. You can
