@@ -17,7 +17,7 @@ SOURCE_MYSQL_OPTS='-h localhost -u snarfed snarfed'
 
 DEST_DIR=public_html/w
 DEST_HOST=snarfed.org
-DEST_MYSQL_OPTS='-h db138b.pair.com -u ryanb ryanb_snarfed --password="FskPF85C"'
+DEST_MYSQL_OPTS=''
 
 
 # exit on error
@@ -51,7 +51,7 @@ MYSQLDUMP='mysqldump --add-drop-table=false
   --skip-dump-date
   --skip-comments'
 
-# order matters here! 
+# order matters here!
 MYSQLDUMP_SED1='
   s/^INSERT INTO `wp_options` VALUES /REPLACE INTO `wp_options` VALUES\n/;
   s/\),\(/),\n(/g;
