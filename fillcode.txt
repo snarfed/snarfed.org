@@ -7,7 +7,7 @@ cd ~/src/emacs
 tar czf ~/s/fillcode.tar.gz --exclude .svn fillcode*.el elunit/
 -->
 
-[Fillcode](https://github.com/snarfed/misc/tree/master/fillcode/)
+[Fillcode](https://github.com/snarfed/fillcode)
 is an [Emacs](http://gnu.org/software/emacs/) minor mode that fills, or
 wraps, some parts of source code. It's best described by example. Fillcode fills
 this:
@@ -41,7 +41,7 @@ insert a line break at the first open parenthesis or other appropriate point.
 This can be useful when the first open parenthesis is near `fill-column`.
 
 You can load fillcode automatically by copying
-[fillcode.el](https://github.com/snarfed/misc/raw/master/fillcode/fillcode.el)
+[fillcode.el](https://github.com/snarfed/fillcode/raw/master/fillcode.el)
 into `/usr/share/emacs/site-lisp/`, or any other directory in Emacs'
 `load-path`. Then, add this to your .emacs file:
 

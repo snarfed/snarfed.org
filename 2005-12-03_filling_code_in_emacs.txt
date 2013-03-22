@@ -23,8 +23,8 @@ binary operators, and correctly preserves embedded comments and string literals.
 It also normalizes existing whitespace and line breaks.
 
 It's not perfect yet, but I've put up an
-[initial release](https://github.com/snarfed/misc/tree/master/fillcode/). Feel
+[initial release](https://github.com/snarfed/fillcode). Feel
 free to check it out, or just
-[download fillcode.el](https://github.com/snarfed/misc/raw/master/fillcode/fillcode.el)
+[download fillcode.el](https://github.com/snarfed/fillcode/raw/master/fillcode.el)
 and go to town. And if you do, please [let me know](about) what you think!
 
