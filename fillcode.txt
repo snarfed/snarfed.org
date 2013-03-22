@@ -7,12 +7,8 @@ cd ~/src/emacs
 tar czf ~/s/fillcode.tar.gz --exclude .svn fillcode*.el elunit/
 -->
 
-For the impatient:  
-&nbsp; [Download fillcode.el 0.9](fillcode.el)  
-&nbsp; [Download fillcode.tar.gz](fillcode.tar.gz) (includes
-[elunit](http://www.lostway.org/~tko/elisp/elunit/) unit tests)  
-
-Fillcode is an [Emacs](http://gnu.org/software/emacs/) minor mode that fills, or
+[Fillcode](https://github.com/snarfed/misc/tree/master/fillcode/)
+is an [Emacs](http://gnu.org/software/emacs/) minor mode that fills, or
 wraps, some parts of source code. It's best described by example. Fillcode fills
 this:
 
@@ -23,8 +19,8 @@ to this:
     public static void foo(int i, float f,
                            String s) {
 
-The motivation is described in my original [call for filling
-code](filling_code_in_emacs).
+The motivation is described in my original
+[call for filling code](filling_code_in_emacs).
 
 Fillcode can fill any parenthesized expression, including function prototypes,
 function calls, and conditional expressions. It only breaks lines at commas and
@@ -45,9 +41,9 @@ insert a line break at the first open parenthesis or other appropriate point.
 This can be useful when the first open parenthesis is near `fill-column`.
 
 You can load fillcode automatically by copying
-[fillcode.el](fillcode.el) into `/usr/share/emacs/site-lisp/`,
-or any other directory in Emacs' `load-path`. Then, add this to your .emacs
-file:
+[fillcode.el](https://github.com/snarfed/misc/raw/master/fillcode/fillcode.el)
+into `/usr/share/emacs/site-lisp/`, or any other directory in Emacs'
+`load-path`. Then, add this to your .emacs file:
 
     (require 'fillcode)
 
