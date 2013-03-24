@@ -44,7 +44,7 @@ Applications from there to install them.
 Another note: for `.app`s to use binaries installed by homebrew in
 `/usr/local/bin`, e.g. `emacsclient`, you need to add that path to the default
 `PATH` environment variable for OS X apps with
-`[launchctl setenv](ihttp://developer.apple.com/library/mac/#technotes/tn2124/_index.html#//apple_ref/doc/uid/DTS10003391-CH1-SECLAUNCHD)`.
+`[launchctl setenv](http://developer.apple.com/library/mac/#technotes/tn2124/_index.html#//apple_ref/doc/uid/DTS10003391-CH1-SECLAUNCHD)`.
 _Warning_: [Homebrew's instructions](https://github.com/mxcl/homebrew/wiki/FAQ).
 point to
 [this Apple doc](http://developer.apple.com/legacy/mac/library/#qa/qa1067/_index.html),
@@ -297,6 +297,12 @@ didn't make the cut. To resurrect yours, put it into a shell script, or just
 [add a Login Item for it](http://stackoverflow.com/questions/135688/setting-environment-variables-in-os-x/5444960#5444960)
 to your user in System Preferences => Users & Groups.
 
+`cron` is deprecated on Mac OS X in favor of Apple's own
+[`launchd`](http://en.wikipedia.org/wiki/Launchd). I ported my crontab with
+[this tutorial](http://nathangrigg.net/2012/07/schedule-jobs-using-launchd/#launchctl)
+and
+[Apple's reference doc](http://developer.apple.com/library/mac/#/documentation/Darwin/Reference/ManPages/man5/launchd.plist.5.html).
+
 
 <a name="Keyboard_and_mouse"></a>
 #### Keyboard and mouse
@@ -307,7 +313,7 @@ the keyboard much more than the mouse. Fortunately, OS X has
 it's very configurable out of the box. You can also
 [add shortcuts to third party applications](http://support.apple.com/kb/PH3957),
 to a degree, and wonder of wonders, even swap Caps Lock and Control. (Speaking
-of which, if you do that in System Preferences, remembmer to do it in
+of which, if you do that in System Preferences, remember to do it in
 _each keyboard_ you use!)
 
 Beyond that, the best thing I've found to make OS X more keyboardable is
