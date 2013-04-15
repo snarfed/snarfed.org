@@ -69,10 +69,10 @@ discussed this problem in his infamous and surprisingly lucid
 To be clear, neither Marlinspike nor Kaczynski see this as a conspiracy theory.
 _De facto_ requirements don't usually have power-hungry tycoons pulling the
 strings behind the scenes. People may take advantage of them to profit, or gain
-power, or power, but that's about as sinister as it gets. Hell, most of the time
-we don't even see them coming. For every Facebook with a Mark Zuckerberg at the
-helm hoping for a billion users, there are ten innovations just as big that no
-one expected to change the world. The inventors behind the printing press,
+power, but that's about as sinister as it gets. Hell, most of the time we don't
+even see them coming. For every Facebook with a Mark Zuckerberg at the helm
+hoping for a billion users, there are ten innovations just as big that no one
+expected to change the world. The inventors behind the printing press,
 electricity, automobiles, the Internet, and cell phones all aimed them at niche
 markets. Their ubiquity was unplanned.
 
@@ -140,7 +140,7 @@ Kelly goes as far as to rebut Kaczynski explicitly:
 > more actual freedom than simply increasing the latitude within limited choices.
 
 Kelly's argument resonates with me, but I still worry about the no network
-effect. First off, it's global, not local.When society unconsciously generates a
+effect. First off, it's global, not local. When society unconsciously generates a
 _de facto_ requirement, it applies to everyone, including those who may not like
 it or aren't ready to handle it. Do you find shopping irresistible when you can
 put everything on credit? Do you hate that you constantly pull out your phone to
@@ -149,14 +149,14 @@ sacrifices and take a few steps in the Unabomber's direction, you're stuck with
 your credit card and cell phone.
 
 Another problem is how we choose what to adopt, or more accurately, how we
-_don't_ choose. There's no no committee that judges new development, no single
+_don't_ choose. There's no no committee that judges new developments, no single
 authority that decides, “Email? Yes. Segway? No.” Instead, we get the wisdom of
 crowds, the invisible hand of the free market. Unfortunately, just like the
 quarterly reporting drumbeat dooms Wall Street to perpetual shortsightedness,
-our freedom to adopt biases our judgment toward the short term. We see something
-shiny, it gives us a few quick boosts of dopamine, and we jump on board. The
-unintended consequences don't appear until years later, and by then it's so
-ingrained that we don't even realize it's at fault.
+our freedom to adopt biases us toward the short term too. We see something
+shiny, it gives us a few quick dopamine boosts, and we jump on board. The
+unintended consequences don't appear until years later, and by then the new
+hotness has become so ingrained that we don't realize it's at fault.
 
 <img class="right shadow" src="amish_couple.jpg" />
 
@@ -171,28 +171,28 @@ supervision. They watch the results and evaluate them against their core values
 of strengthening families and distancing from the outside world. If the trial
 seems promising, the bishops may expand it, iterating in careful cycles that
 [agile development](http://en.wikipedia.org/wiki/Agile_software_development)
-devotees here would admire.
+devotees would admire.
 
 Can we learn from them? Maybe. To start, they clearly don't believe in the
 [Precautionary Principle](http://en.wikipedia.org/wiki/Precautionary_principle),
 a style of regulation popular in Europe that tries to foresee and safeguard
-against every possible side effect before approving anything. The Amish believe
-that you can't predict the future, so you have to get your hands dirty and try
-something in the real world in order to discover its effects. (I think they're
+against every possible side effect before approving anything. The Amish don't
+believe they can predict the future; instead, they get their hands dirty and try
+new things in the real world to discover their full effects. (I think they're
 right.)
 
 I also admire them for taking the long view. They know it often takes a
-generation or two to see the full effects of adopting something new, so they
-watch for years and even decades, reserving their right to pull the plug at any
+generation or two to see the full effects of adopting something, so they watch
+for years, sometimes decades, reserving the right to pull the plug at any
 time. I appreciate how deliberately they approach the process, identifying their
 core values up front and using them as measuring sticks.
 
 Having said all that, I don't think the Amish have actually solved the no
-network effect problem. They just sidestep it altogether, trading most _de facto_
+network effect problem. They just sidestep it altogether, trading _de facto_
 requirements (and prohibitions) for explicit ones.
 
 In the end, the no network effect may solve itself.
-[Alan Kay](http://en.wikipedia.org/wiki/Alan_Kay) famously defines technology as
+[Alan Kay](http://en.wikipedia.org/wiki/Alan_Kay) famously defined technology as
 “anything that was invented after you were born,” and the same may be true of
 _de facto_ requirements. A handful of us may agonize over credit cards, or cell
 phones, but almost no one wants to opt out of modern plumbing or electricity.
