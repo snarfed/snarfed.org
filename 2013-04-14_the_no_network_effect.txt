@@ -66,15 +66,15 @@ discussed this problem in his infamous and surprisingly lucid
 > does not necessarily REMAIN optional. In many cases the new technology changes
 > society in such a way that people eventually find themselves FORCED to use it.
 
-To be clear, neither Marlinspike nor Kaczynski see this as a conspiracy theory.
-_De facto_ requirements don't usually have power-hungry tycoons pulling the
-strings behind the scenes. People may take advantage of them to profit, or gain
-power, but that's about as sinister as it gets. Hell, most of the time we don't
-even see them coming. For every Facebook with a Mark Zuckerberg at the helm
-hoping for a billion users, there are ten innovations just as big that no one
-expected to change the world. The inventors behind the printing press,
-electricity, automobiles, the Internet, and cell phones all aimed them at niche
-markets. Their ubiquity was unplanned.
+To be clear, neither Marlinspike nor Kaczynski see conspiracies here. _De facto_
+requirements don't usually have power-hungry tycoons pulling the strings behind
+the scenes. People may take advantage of them to profit, or gain power, but
+that's about as sinister as it gets. Hell, most of the time we don't even see
+them coming. For every Facebook with a Mark Zuckerberg at the helm hoping for a
+billion users, there are ten innovations just as big that no one expected to
+change the world. The inventors behind the printing press, electricity,
+automobiles, the Internet, and cell phones all aimed them at niche markets.
+Their ubiquity was unplanned.
 
 <a href="http://en.wikipedia.org/wiki/Ted_Kaczynski">
  <img class="left" src="unabomber_sketch.png" /></a>
@@ -88,11 +88,11 @@ the ones we do. Short of bombing everyone back to the stone age, there's no good
 way to stop progress.
 
 There's another problem too. By way of comparison, laws are the main kind of
-explicit requirement that apply to everyone. They have their flaws, but they
-also have a powerful strength: they promote dialog. When Congress considers
-passing a new bill, we know we'll have to obey it, so we have a vested interest.
-We pay attention, we debate, we lobby our representatives, we vote for
-candidates who promise to vote for it or against it.
+explicit requirements. They have their flaws, but they also have a powerful
+strength: they promote dialog. When Congress considers passing a new bill, we
+know we'll have to obey it, so we have a vested interest in it. We pay
+attention, we debate, we lobby our representatives, we vote for candidates who
+promise to vote for it or against it.
 
 The no network effect is different. When we talk about the drawbacks of credit
 cards, or cell phones, or any _de facto_ requirement, someone always says “If
@@ -104,10 +104,10 @@ place. That question is dead. “No one's making you” killed it.
 
 Occasionally, we meet someone who cut up all of their credit cards, or never got
 a cell phone, and there's a flurry of excitement. “Wow, that's so cool!” “I've
-always wanted to do that.” “Is it the privacy thing for you? Are you trying to
-avoid debt?” The no network effect may get a brief nod, but it soon gives way to
-logistics. “Wait, so how do you do reserve a hotel room?” “I bet I could give up
-my phone, if not for texting.” “Have you heard of
+always wanted to do that.” “Is it the privacy thing?" "Are you trying to avoid
+debt?” The no network effect may get a brief nod, but it soon gives way to
+logistics. “Wait, so how do you do reserve a hotel room?” “I could give up
+my phone, except for texting.” “Have you heard of
 [phone stacking](http://www.huffingtonpost.com/2012/10/01/the-phone-stacking-game-picture_n_1929162.html)?
 That helps, right?” Any chance for a critical discussion of our adoption _en
 masse_ is long gone.
@@ -144,18 +144,18 @@ effect. First off, it's global, not local. When society unconsciously generates 
 _de facto_ requirement, it applies to everyone, including those who may not like
 it or aren't ready to handle it. Do you find shopping irresistible when you can
 put everything on credit? Do you hate that you constantly pull out your phone to
-check email, or Facebook? Too bad. Unless you're ready to make some big
+check email or Facebook? Too bad. Unless you're ready to make some big
 sacrifices and take a few steps in the Unabomber's direction, you're stuck with
 your credit card and cell phone.
 
 Another problem is how we choose what to adopt, or more accurately, how we
-_don't_ choose. There's no no committee that judges new developments, no single
+_don't_ choose. There's no committee that judges new developments, no single
 authority that decides, “Email? Yes. Segway? No.” Instead, we get the wisdom of
-crowds, the invisible hand of the free market. Unfortunately, just like the
+crowds, the invisible hand of the free market. Unfortunately, just as the
 quarterly reporting drumbeat dooms Wall Street to perpetual shortsightedness,
 our freedom to adopt biases us toward the short term too. We see something
 shiny, it gives us a few quick dopamine boosts, and we jump on board. The
-unintended consequences don't appear until years later, and by then the new
+unintended consequences don't appear until years later, when the new
 hotness has become so ingrained that we don't realize it's at fault.
 
 <img class="right shadow" src="amish_couple.jpg" />
@@ -169,11 +169,11 @@ Individuals in Amish communities don't get to adopt anything on their own.
 Instead, the local bishops choose a guinea pig and let them try it under close
 supervision. They watch the results and evaluate them against their core values
 of strengthening families and distancing from the outside world. If the trial
-seems promising, the bishops may expand it, iterating in careful cycles that
+seems promising, the bishops expand it, iterating in careful cycles that
 [agile development](http://en.wikipedia.org/wiki/Agile_software_development)
 devotees would admire.
 
-Can we learn from them? Maybe. To start, they clearly don't believe in the
+Can we learn from them? Maybe. To start, they clearly don't follow the
 [Precautionary Principle](http://en.wikipedia.org/wiki/Precautionary_principle),
 a style of regulation popular in Europe that tries to foresee and safeguard
 against every possible side effect before approving anything. The Amish don't
@@ -181,11 +181,11 @@ believe they can predict the future; instead, they get their hands dirty and try
 new things in the real world to discover their full effects. (I think they're
 right.)
 
-I also admire them for taking the long view. They know it often takes a
-generation or two to see the full effects of adopting something, so they watch
-for years, sometimes decades, reserving the right to pull the plug at any
-time. I appreciate how deliberately they approach the process, identifying their
-core values up front and using them as measuring sticks.
+I also admire them for taking the long view. They know it can take as much as a
+generation or two to see the full effects of adoption, so they watch and wait
+for years, often decades, reserving the right to pull the plug at any time. I
+appreciate how deliberately they approach the process, identifying their core
+values up front and using them as measuring sticks.
 
 Having said all that, I don't think the Amish have actually solved the no
 network effect problem. They just sidestep it altogether, trading _de facto_
@@ -194,9 +194,9 @@ requirements (and prohibitions) for explicit ones.
 In the end, the no network effect may solve itself.
 [Alan Kay](http://en.wikipedia.org/wiki/Alan_Kay) famously defined technology as
 “anything that was invented after you were born,” and the same may be true of
-_de facto_ requirements. A handful of us may agonize over credit cards, or cell
+_de facto_ requirements. A handful of us agonize over credit cards and cell
 phones, but almost no one wants to opt out of modern plumbing or electricity.
-Every generation may have its set of angst-inducing developments, but if the
+Every generation has its set of angst-inducing developments, but if the
 goalposts of progress keep moving forward, the next generation will take those
 developments for granted, worrying instead about an entirely new crop of
 changes.
@@ -206,6 +206,6 @@ the relentless march of progress makes some things inevitable, both good (e.g.
 [social politics](2013-04-02_othering)) and bad (_de facto_ requirements). I
 don't know if that's true, but if it is, I can probably get behind it. I
 [don't really believe in free will](2012-08-15_if_theres_no_free_will_then_what),
-after all. On the other hand, I did finally give in and get a cell phone a few
-years ago, but I still don't have a credit card. So much for _de facto_
+after all. On the other hand, I may have finally relented and bought a cell
+phone a while back, but I still don't have a credit card. So much for _de facto_
 requirements!
