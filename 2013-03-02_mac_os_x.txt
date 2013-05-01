@@ -338,6 +338,10 @@ in OS X. You can
 [use mouse keys and Ctrl-5](http://superuser.com/questions/93561/right-click-using-keyboard-in-mac-os-x),
 but that ties up the rest of keyboard, so it's not really an option.
 
+Likewise, there's no built in shortcut for maximizing a window. You can easily
+[add one on an app by app basis](http://simianuprising.com/2010/03/15/mac-osx-setting-a-keyboard-shortcut-for-maximizeresize-window-green-jewel/),
+though, in System Preferences using the _Zoom_ menu item.
+
 I also dreadfully miss navigating menus with the keyboard. There's a keyboard
 shortcut to focus the menu bar, but it doesn't work in all apps, e.g. Emacs.
 
