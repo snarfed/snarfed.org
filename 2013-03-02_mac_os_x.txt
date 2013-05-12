@@ -150,6 +150,18 @@ in package manager. Here are the packages I've installed so far:
   * php-mode
   * redo+
   * sgml-mode
+  * ...and many others.
+
+[Emacs's GDB integration](http://www.gnu.org/software/emacs/manual/html_node/emacs/Debuggers.html)
+is great, but it takes a few extra steps to get it working on Mac OS X.
+
+Darwin's GDB 6.3 seems to work, but doesn't really. Programs running under it
+crash randomly where they wouldn't otherwise. :/ First, get GDB 7.5 via homebrew
+instead by running `brew install gdb`. Then, sign gdb to tell the kernel it's allowed to attach to other processes. [Follow these instructions](http://sourceware.org/gdb/wiki/BuildingOnDarwin#Creating_a_certificate), then run `codesign -s gdb-cert /usr/local/Cellar/gdb/7.5.1/bin/gdb` (assuming you named your certificate `gdb-cert`.)
+
+Now run `M-x gdb` in Emacs and enter `/usr/local/bin/gdb -i-mi [BINARY]`, or
+`M-x gud-gdb` and `/usr/local/bin/gdb --fullname [BINARY]` if you want the old
+version of GUD, and you're off!
 
 
 <a name="Firefox"></a>
