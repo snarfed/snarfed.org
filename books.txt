@@ -9,7 +9,10 @@ Also see
 [movies](movies), [games](games), and
 [other lists](lists).
 
-<!-- GoodReads widgets. I'd rather use their custom widget, which shows the  -->
+<!--
+GoodReads widgets. I'd rather use their custom widget, which shows the
+title, but it doesn't work. :/
+-->
 
 <style type="text/css" media="screen">
 h2 {
