@@ -114,11 +114,11 @@ of context switches. I still love
 [ceiling cat](http://knowyourmeme.com/memes/ceiling-cat), but he's not worth the
 10 minute cost or the incremental toll on my sanity.
 
-Batching is hopefully pretty obvious too. The key idea is that context switches
-are not all created equal. If I pay attention, I can use this to my advantage
-and minimize the cost of context switching by deliberately choosing when and
-what I switch to. Replying to a flurry of emails is easier if they're all about
-the same project, for example, since most of the context remains the same.
+Batching is pretty obvious too. The key idea is that context switches are not
+all created equal. If I pay attention, I can use this to my advantage and
+minimize the cost of context switching by deliberately choosing when and what I
+switch to. Replying to a flurry of emails is easier if they're all about the
+same project, for example, since most of the context remains the same.
 
 Along the same lines, finishing an individual part of a project tends to lead to
 a natural stopping point. Switching in and out of the project is easier because
@@ -137,12 +137,12 @@ I try to switch back.
 
 (Yes, it is true that disengaging your conscious mind and letting your
 subconscious take over can often help with truly tough problems, but the
-temptation to switch usually comes far before then.)
+temptation to switch usually comes far earlier.)
 
 None of this is truly new or meaningful. Streams and memes and filtering may be
 modern, but I'm sure pruning and batching are basic time management skills.
 However, it takes precious willpower to build healthy new habits, so I have to
-wonder if can we lift the burden off our own shoulders. Can we use technology to
+wonder if we can lift the burden off our own shoulders. Can we use technology to
 automate these techniques instead?
 
 I think we can.
