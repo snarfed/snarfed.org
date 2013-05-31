@@ -10,14 +10,15 @@ Our attention spans feel shorter, and the demands on our time and energy feel
 greater. Finish a task? Relax and recharge? See the big picture? Forget about
 it.
 
-This is all old news, and the accepted wisdom in the tech community says we'll
-fight information overload with filtering. All those incoming streams aren't
-tuned to our personal tastes out of the box, but slap on some collaborative
-filtered, machine learned "intelligence," boost the signal to noise ratio above
-our individual "like" thresholds, and I'll no longer have to skip the Harlem
-shake videos and baby pictures that never really grabbed me in the first place.
-They'll slowly disappear from my streams altogether, to be replaced with the
-lolcats and pop song mashups I click on every single time. (I'm predictable!)
+This is all old news. So far, the accepted wisdom in the tech community is that
+we'll fight information overload with filtering. All those incoming streams
+aren't tuned to our personal tastes out of the box, but slap on some
+collaborative filtered, machine learned "intelligence," boost the signal to
+noise ratio above our individual "like" thresholds, and I'll no longer have to
+skip the Harlem shake videos and baby pictures that never really grabbed me in
+the first place. They'll slowly disappear from my streams altogether, to be
+replaced with the lolcats and pop song mashups I click on every single time.
+(I'm predictable!)
 
 Unfortunately, the filtering solution doesn't quite convince me. For one thing,
 the internet is a bottomless pit of stuff. Filtering may narrow down _which_
@@ -185,7 +186,7 @@ you're driving or a passenger. We can work around these kinds of distinctions
 temporarily, but not for long.
 
 <a href="http://en.wikipedia.org/wiki/Office_Assistant">
- <img class="left shadow" src="clippy_meme.jpg" /></a>
+ <img class="left" src="clippy_meme.jpg" /></a>
 
 Furthermore, technology may be more and more ubiquitous, but it will never
 mediate everything in our lives. We can hold your emails and IMs and text
