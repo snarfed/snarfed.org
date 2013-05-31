@@ -7,8 +7,7 @@ Of all the cultural problems we blame on technology,
 the poster child. Phones buzz, emails ding, IMs bounce, unread counts glare red,
 and posts stream at us from all directions, each interrupting the one before it.
 Our attention spans feel shorter, and the demands on our time and energy feel
-greater. Finish a task? Relax and recharge? See the big picture? Forget about
-it.
+greater. Finish a task? Relax and recharge? Big picture? Forget about it.
 
 This is all old news. So far, the accepted wisdom in the tech community is that
 we'll fight information overload with filtering. All those incoming streams
@@ -28,6 +27,9 @@ of personalization, but the problem was never a lack of interesting stuff, nor
 was it the drudgery of manually sorting out the chaff. The real problem is the
 interesting stuff itself, the endless supply of empty calorie distractions from
 your meaningful goals and real life.
+
+<!-- more -->
+<span />
 
 Another problem that filtering doesn't address is the attack vectors.
 Information overload seeps in through every possible door, window, crack, and
@@ -207,10 +209,10 @@ hour. What to do? Right now, a dizzying array of recommendation engines will
 eagerly pitch you articles, music, movies, TV shows, and even restaurants...
 
 ...but what if there was an uber-recommendation engine that could say, sure,
-those are well and good, but your good friend Kelly, whom you'd gradually lost
-touch with when she moved away a year ago, is sitting in the next terminal with
-a two hour layover, and she'd love to catch up. You'd rather spend the next hour
-doing that than reading the Huffington Post or watching The Office, right?
+those are well and good, but your good friend Sally, whom you lost touch with
+when she moved away a year ago, is sitting in the next terminal with a two hour
+layover, and she'd love to catch up. You'd rather spend the next hour doing that
+than reading the Huffington Post or watching The Office, right?
 
 Right. That would be pretty damn cool, and also a bit creepy. If the product
 itself is right, though, we can fight creepiness with design. Sure, there will
