@@ -91,19 +91,18 @@ into anything to fully engage.
 
 It's not any single activity that overloads us with information and steals our
 mental clarity and wellbeing, not even scapegoats like video games or surfing
-the web. It's the steady drip, drip, drip of context switches between all the
-items (posts, emails, texts) in a stream, different streams themselves, and
-actual tasks. We gradually spend less time engaged, and more time in transition,
-until the switches overload us completely. The
-[literature](http://dl.acm.org/citation.cfm?doid=985921.986094)
-[is](http://dl.acm.org/citation.cfm?doid=985692.985715))
+the web. It's the steady drip, drip, drip of context switches between our actual
+tasks and the items (posts, emails, texts) in our streams. We gradually spend
+less time engaged, and more time in transition, until the switches overload us
+completely. The [literature](http://dl.acm.org/citation.cfm?doid=985921.986094)
+[is](http://dl.acm.org/citation.cfm?doid=985692.985715)
 [remarkably](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&arnumber=714843)
 [consistent](http://dl.acm.org/citation.cfm?doid=1054972.1055017): we can't
 multitask, and when we try to pretend we can, we do way more harm than good.
 
 Fortunately, I think there's a cure. For as long as I can remember, I've
 aggressively tweaked both [my tools](why_i_run_shells_inside_emacs) and my
-information streams to minimize context switches with two basic techniques:
+incoming streams to minimize context switches with two basic techniques:
 _pruning_ and _batching_.
 
 Pruning is pretty obvious. It's like filtering, but instead of adding new items
@@ -112,7 +111,7 @@ still love lolcats, but I've seen enough for one lifetime. If I can avoid them
 by unsubscribing from a few acquaintances and apps, I avoid an entire category
 of context switches. I still love
 [ceiling cat](http://knowyourmeme.com/memes/ceiling-cat), but he's not worth the
-10 minute cost or the incremental toll on my sanity.
+10 minute cost each time, or the incremental toll on my sanity.
 
 Batching is pretty obvious too. The key idea is that context switches are not
 all created equal. If I pay attention, I can use this to my advantage and
@@ -121,23 +120,23 @@ switch to. Replying to a flurry of emails is easier if they're all about the
 same project, for example, since most of the context remains the same.
 
 Along the same lines, finishing an individual part of a project tends to lead to
-a natural stopping point. Switching in and out of the project is easier because
-you only need to reload the high level project context, not the additional low
-level context of any individual part. If I leave an email half written and come
-back to it a day or two later, I usually have to reread what I wrote so far
-so I can pick up where I left off.
+a natural stopping point. Switching away from the project at that point is
+easier because when you switch back, you only need to reload the high level
+project context, not the additional low level context of the individual part. If
+I leave an email half written and come back to it a day or two later, I usually
+have to reread what I wrote so far so I can pick up where I left off.
 
 <img class="right shadow" width="200" src="weapons_of_mass_distraction.jpg" />
 
 Similarly, when I get stuck on a technical roadblock, and nothing I try seems to
 work, I'm often tempted to take a break and read email...which is the worst
-thing I could do, since my brain is fully loaded with every little detail of
-that roadblock's context. Switching away may feel good, but I'll pay for it when
-I try to switch back.
+thing I could do, since my brain is fully loaded with all the detailed context
+of that roadblock. Switching away may feel good, but I'll pay for it when I try
+to switch back.
 
-(Yes, it is true that disengaging your conscious mind and letting your
-subconscious take over can often help with truly tough problems, but the
-temptation to switch usually comes far earlier.)
+(Yes, disengaging your conscious mind and letting your subconscious take over
+can often help with truly tough problems, but that's a big hammer to be used
+carefully and judiciously, not every time you get a bit frustrated.)
 
 None of this is truly new or meaningful. Streams and memes and filtering may be
 modern, but I'm sure pruning and batching are basic time management skills.
@@ -149,8 +148,9 @@ I think we can.
 
 Pruning is complicated. I don't expect computers understand our life goals any
 time soon, much less how to align our streams with them, but they definitely can
-make it easier for us to do ourselves. Gmail can already
-[remove you from mailing lists](http://gmailblog.blogspot.com/2009/07/unsubscribing-made-easy.html)
+make it easier for us to do that understanding and aligning ourselves. Gmail can
+already
+[unsubscribe from mailing lists](http://gmailblog.blogspot.com/2009/07/unsubscribing-made-easy.html)
 and set up filters with a single click. Most "opt in" spam now includes
 unsubscribe links that actually work, thanks to the
 [venerable CAN-SPAM act](http://en.wikipedia.org/wiki/CAN-SPAM_Act_of_2003).
@@ -158,15 +158,14 @@ Facebook and Twitter make it fairly straightforward to unsubscribe from
 individual people and apps.
 
 Batching is hard too, but the potential is huge. I thought about this a lot on
-my
-[last project](http://www.google.com/landing/now/)
+my [last project](http://www.google.com/landing/now/)
 [at Google](http://googleblog.blogspot.com/2012/01/updating-our-privacy-policies-and-terms.html).
-If we can use simple cues like location, time of day, and what you're currently
-doing on your computer or phone, if anything, we can start to infer your
-receptivity to different kinds of interruptions. Facebook posts from close
-friends might be ok when you're surfing the web at home, but not when you're in
-flow at work. Similarly, work calls might be ok at work, or VPNed in and active,
-but not when you're offline at home and hopefully playing with your kids.
+If we combine simple cues like location, time of day, and what you're currently
+doing on your computer or phone, we can start to infer your receptivity to
+different kinds of interruptions. Notifying you of a new Facebook post from a
+close friends might be ok when you're surfing the web at home, but not when
+you're in flow at work. Similarly, work calls might be ok at work, or when
+you're VPNed in, but not when you're offline at home and playing with your kids.
 
 We can even try to batch tasks proactively, in hopes of prevent some context
 switches entirely. If your browser sees that you're wrapping up some online
@@ -178,21 +177,21 @@ it now, you'll avoid a more costly context switch down the road.
 for example, is a very small step in this direction.
 
 Obviously, this kind of computerized personal assistant hasn't arrived yet.
-Among the remaining challenges, guessing what you're doing right now may be the
-biggest. Even picking from a small set of categories is remarkably hard. GPS and
-time of day may tell us if you're working, for example, but not whether you're
-bored in a meeting or deep in flow on a project. Movement and more GPS may tell
-us if you're travelling, and maybe even that you're in a car, but not whether
-you're driving or a passenger. We can work around these kinds of distinctions
-temporarily, but not for long.
+There are many challenges to building it, and guessing what you're doing at any
+given moment may be the biggest. Even picking from a small set of categories is
+remarkably hard. GPS and time of day may tell us if you're working, for example,
+but not whether you're bored in a meeting or deep in flow on a project. Movement
+and more GPS may tell us if you're travelling, and maybe even that you're in a
+car, but not whether you're driving or a passenger. These distinctions are
+important, and we can't work around them for long.
 
 <a href="http://en.wikipedia.org/wiki/Office_Assistant">
  <img class="left" src="clippy_meme.jpg" /></a>
 
 Furthermore, technology may be more and more ubiquitous, but it will never
-mediate everything in our lives. We can hold your emails and IMs and text
-messages, but we can't stop chatty Jack from QA from ambushing you over the cube
-wall and trapping you in office politics gossip.
+mediate everything in our lives. We can intercept your emails and IMs and text
+messages, but we can't stop chatty Jack from ambushing you over the cube wall
+and trapping you in office politics gossip.
 
 Fortunately, we can start small, detecting and intercepting a small handful of
 activities and interruptions. If Google Docs noticed when you were deep in the
@@ -213,17 +212,17 @@ when she moved away a year ago, is sitting in the next terminal with a two hour
 layover, and she'd love to catch up. You'd rather spend the next hour doing that
 than reading the Huffington Post or watching The Office, right?
 
-Right. That would be pretty damn cool, and also a bit creepy. If the product
-itself is right, though, we can fight creepiness with design. Sure, there will
-be unintended consequences, but the way to discover them is to prototype and
-iterate and listen to feedback.
+Right. That would be pretty damn cool, and also a bit creepy. Still, if the
+product itself is compelling enough, we can fight creepiness with design. Sure,
+there will be unintended consequences, but the way to discover them is to
+prototype and iterate and listen to feedback.
 
 This uber-recommendation engine still lies squarely in the future,
 [Siri](http://www.apple.com/ios/siri/) and
-[Google Now](http://www.google.com/landing/now/) notwithstanding, but the
-information overload problem has been reality for a while now, and the
-conventional filtering approach isn't helping. If anything, it piles even more
-irresistible, harmful distractions onto our current overload.
+[Google Now](http://www.google.com/landing/now/) notwithstanding. The
+information overload problem has been reality for a while now, though, and the
+conventional filtering approach isn't helping. On the contrary, it piles even
+more irresistible, harmful distractions onto our current overload.
 
 Filtering may not be the answer, but reducing context switches just might be,
 and that's good news. We should keep working on tools that help us prune and
