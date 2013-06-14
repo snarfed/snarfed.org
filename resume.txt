@@ -3,8 +3,7 @@ Ryan Barrett's Résumé
 Software engineer, hacker, architect.
 
 
-
-## Skills
+### Skills
 
 Full stack capable, backend focused. Specialized in distributed systems,
 structured storage, data processing, scalability, networking, webapps.
@@ -23,15 +22,14 @@ Contributor to major open source projects including
 
 
 
+### Experience
 
-## Experience
-
-### [Doing a startup](/2013-02-27_leaving_google), 2013 onward
+#### [Doing a startup](/2013-02-27_leaving_google), 2013 onward
 
 
-### [Google Inc.](http://www.google.com/), 2003 - 2013
+#### [Google Inc.](http://www.google.com/), 2003 - 2013
 
-#### December 2011 - February 2013
+##### December 2011 - February 2013
 
 Helped design and build a large scale, product independent personalization
 infrastructure system used by almost all of Google's top consumer products. It's
@@ -39,8 +37,7 @@ best described by
 the [privacy
 policy changes](http://googleblog.blogspot.com/2012/01/updating-our-privacy-policies-and-terms.html) we launched in March 2012.
 
-
-#### June 2010 - December 2011
+##### June 2010 - December 2011
 
 Led and contributed to multiple network management projects for Google's
 backbone network,
@@ -49,8 +46,7 @@ command and control, monitoring, automation, topology, routing, peering,
 [and
  OpenFlow](http://www.wired.com/wiredenterprise/2012/04/going-with-the-flow-google/).
 
-
-#### December 2005 - April 2010
+##### December 2005 - April 2010
 
 Co-founded [Google App Engine](http://code.google.com/appengine/) and led its
 [datastore](http://code.google.com/appengine/docs/datastore/overview.html)
@@ -63,8 +59,7 @@ products. Includes a dynamic query planner, full featured transaction engine,
 rich structured primary keys, real-time index management, and semantic typing.
 Scales to >XXXB rows, >XPB of data, and >XXXkqps.
 
-
-#### April 2006 - Dec. 2006
+##### April 2006 - Dec. 2006
 
 Led Google's early adoption of [OpenID](http://openid.net/).
 Evangelized OpenID internally, built a number of prototypes, addressed
@@ -77,8 +72,7 @@ This led to widespread adoption, culminating in a full Google Accounts
 [provider](http://code.google.com/apis/accounts/docs/OpenID.html) and
 [consumer](http://code.google.com/apis/apps/sso/openid_reference_implementation.html).
 
-
-#### June 2003 - March 2006
+##### June 2003 - March 2006
 
 Co-founder and a lead engineer on Moneta, Google's transaction processing
 platform. It handles OLTP, rating, billing, invoicing, payments, and revenue
@@ -96,8 +90,7 @@ entities, and dozens of different billing models and payment methods. We again
 migrated everything without downtime and with a fallout rate of under .1%.
 
 
-
-### [IBM Almaden Research Center](http://almaden.ibm.com/), 2002 - 2003
+#### [IBM Almaden Research Center](http://almaden.ibm.com/), 2002 - 2003
 
 Joined [Extreme Blue](http://www.ibm.com/extremeblue/) to work on DALI, an which
 enables scientists to share molecule data and analysis code over the Internet.
@@ -110,7 +103,7 @@ description language used to run molecular analyses for life sciences research
 projects.
 
 
-### [LucasArts Entertainment Co.](http://www.lucasarts.com/), summer 2001
+#### [LucasArts Entertainment Co.](http://www.lucasarts.com/), summer 2001
 
 Worked on the
  _[Star Wars: Bounty Hunter](http://www.mobygames.com/game/star-wars-bounty-hunter)
@@ -120,8 +113,7 @@ Developed a multi-channel streaming audio library for Playstation 2.
 
 
 
-### [Webvan Group](http://www.disobey.com/ghostsites/show_exhibit.shtml/webvan),
-summer 2000
+#### [Webvan Group](http://www.disobey.com/ghostsites/show_exhibit.shtml/webvan), summer 2000
 
 Designed and implemented a networked warehouse management system using sensors,
 conveyor belts, bar code readers with custom TCP/IP stacks, and an Oracle
@@ -130,20 +122,18 @@ server. Also wrote an automatically regressed emulator for the system.
 Wrote web-based PL/SQL utilities for modifying in-process orders on the fly.
 
 
-
-#### [Electronic Arts](http://www.ea.com/), summer 1999
+##### [Electronic Arts](http://www.ea.com/), summer 1999
 
 Quality Assurance Tester
 
 
-#### MobileForce Technologies, summer 1998
+##### MobileForce Technologies, summer 1998
 
 Software Developer
 
 
 
-
-## Education
+### Education
 
 [Stanford University](http://www.stanford.edu/)
 
@@ -161,8 +151,7 @@ Electronic Arts as corporate sponsors.
 
 
 
-
-## Patents
+### Patents
 
 [USPTO 7877482](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=7877482.PN.&OS=PN/7877482&RS=PN/7877482)
 ([PatentGenius](http://www.patentgenius.com/patent/7877482.html)):
@@ -170,7 +159,8 @@ _Application Server Scalability Through Runtime Restrictions Enforcement in a
 Distributed Application Execution System_
 
 
-## Other
+
+### Other
 
   * Eagle Scout, Boy Scout Troop 120
   * Classical Piano under Geraldine Keeling, multiple competitions and concerts

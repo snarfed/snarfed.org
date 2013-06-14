@@ -7,7 +7,7 @@ p > a > img {vertical-align: middle;}
 <a class="shutter" href="ryan.jpg">
   <img class="right shadow" src="ryan_profile_square_thumb.jpg" /></a>
 
-I'm Ryan Barrett. For more about me, see my [resume](resume.html),
+I'm Ryan Barrett. For more about me, see my [resume](resume),
 [posts](index), [pictures](pictures), [software](software), and [lists](lists).
 
 Here's my contact info:
