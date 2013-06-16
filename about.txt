@@ -1,27 +1,7 @@
 about
 
-<style type="text/css">
-p > a > img {vertical-align: middle;}
-</style>
-
 <a class="shutter" href="ryan.jpg">
   <img class="right shadow" src="ryan_profile_square_thumb.jpg" /></a>
-
-I'm Ryan Barrett. For more about me, see my [resume](resume),
-[posts](index), [pictures](pictures), [software](software), and [lists](lists).
-
-Here's my contact info:
-
-[![email](/email_envelope.png)](mailto:public_at_ryanb_dot_org)
-[public&#64;ryanb&#46;org](mailto:public_at_ryanb_dot_org)  
-[![facebook button](/facebook_button.png)](http://facebook.com/snarfed.org)
-[Ryan Barrett](http://facebook.com/snarfed.org)  
-[![google plus button](/google_plus_button.png)](https://plus.google.com/103651231634018158746)
-[Ryan Barrett](https://plus.google.com/103651231634018158746)  
-[![twitter button](/twitter_button.png)](http://twitter.com/snarfed_org)
-[snarfed_org](http://twitter.com/snarfed_org)  
-
-&nbsp;  
 
 snarfed.org has been around [since early 2002](snarfed_org_history). It was
 [born](2003-07-18_its_live) on my own server, which lived first in dorm rooms at
@@ -36,5 +16,7 @@ On the software side, it started on [SnipSnap](http://snipsnap.org/), then
 [moved](2006-08-23_virtual_housewarming) to
 [PyBlosxom](http://pyblosxom.bluesock.org/), and
 [now runs](2010-08-08_migrated_to_wordpress) on
-[WordPress](http://wordpress.org/). See my [software page](software) for some
-of its custom patches, plugins, and themes.
+[WordPress](http://wordpress.org/), first on
+[its own theme](/snarfed_wordpress_theme) and now on a modified
+[Ryu](http://wordpress.org/themes/ryu/) theme. See my [software page](software)
+for more of its custom patches, plugins, and themes.
