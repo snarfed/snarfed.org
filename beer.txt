@@ -1,9 +1,5 @@
 beer
 
-<style type="text/css">
-img { vertical-align: text-top; }
-</style>
-
 <img class="right shadow" src="beer_taps.jpg" alt="beer taps" />
 
 [Beer I'd like to try](#to_try) and

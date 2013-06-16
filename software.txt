@@ -1,8 +1,8 @@
 software
 
-<img src="bolthead.png">
-<img src="maze.png">
-<img src="computer.png">
+<img src="bolthead.png" />
+<img src="maze.png" />
+<img src="computer.png" />
 
 My open source software [projects](#projects), [scripts](#scripts), and
 [patches](#patches). Unless otherwise noted, everything

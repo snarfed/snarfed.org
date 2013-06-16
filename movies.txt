@@ -1,10 +1,5 @@
 movies
 
-<style type="text/css">
-good, ok, bad, f, nf { font-style: italic; }
-img { vertical-align: text-top; }
-</style>
-
 <img class="right" src="film_reel.jpg" alt="film reel" />
 
 Movies I've watched and want to watch.

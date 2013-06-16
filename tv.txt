@@ -1,9 +1,5 @@
 tv
 
-<style type="text/css">
-img { vertical-align: text-top; }
-</style>
-
 <img class="right" src="tv.jpg" alt="tv" />
 
 Television shows I
