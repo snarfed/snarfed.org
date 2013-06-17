@@ -4,7 +4,7 @@ Announcing mockfacebook
   <img class="right" src="beer_cap_facebook_logo.png" /></a>
 
 Recently, while researching a
-[side project](2011-07-27_facebook_app_for_ostatus), I started looking at the
+[side project](/2011-07-27_facebook_app_for_ostatus), I started looking at the
 [Facebook APIs](https://developers.facebook.com/docs/). I was surprised that I
 couldn't find a decent library for mocking or faking
 [FQL](http://developers.facebook.com/docs/reference/fql/) or the

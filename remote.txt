@@ -4,11 +4,11 @@ remote
   <img class="right shadow" src="remote_thumb.jpg" /></a>
 
 For the impatient:  
-[Download remote (with source)](remote.zip)  
+[Download remote (with source)](/remote.zip)  
 [httpQ web site](http://httpq.sourceforge.net/)  
 [Winamp web site](http://winamp.com)
 
-[Remote](remote.zip) is a Windows client for
+[Remote](/remote.zip) is a Windows client for
 [httpQ](http://httpq.sourceforge.net/), a network server plugin for
 [Winamp](http://winamp.com). You can use remote to control an httpQ-enabled
 Winamp over the Internet. Remote can control playback, manage playlists, search
@@ -19,7 +19,7 @@ streaming audio platform, for anything from listening to your music remotely to
 running a full-blown Internet radio station. With remote, you can control your
 Winamp Shoutcast platform from anywhere.
 
-The [zip file](remote.zip) includes the full source code and
+The [zip file](/remote.zip) includes the full source code and
 Visual Studio project files for building remote on Windows.
 
 Remote is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).

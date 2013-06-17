@@ -4,7 +4,6 @@ _[STS145](http://sts145.stanford.edu/) Game Review
 ([part](http://shl.stanford.edu/Game_archive/StudentPapers/BySubject/S-T/Sn-Sz/Subspace/Barrett_Ryan.pdf)
 of the
 [How They Got Game archive](http://shl.stanford.edu/Game_archive/);
-[back to writing](writing))_
 
 If you happened to catch a friend playing Subspace on his or her
 lunch break, you might dismiss it without a second thought. I know
@@ -110,7 +109,7 @@ user-run servers appeared with everything from Subspace tournaments
 to recreations of Star Wars battles.
 
 However, the multiplayer code is by far the most important
-technology in the game. Subspace uses a distributed clientlserver
+technology in the game. Subspace uses a distributed client/server
 architecture that coordinates the actions of thousands of networked
 pilots at once. The architecture is client-based, which means that
 each client makes decisions about what happens in the game based on

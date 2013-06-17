@@ -10,7 +10,7 @@ It's great!
 
 I often update more than one page or post before I get a chance to publish them,
 though, and I often forget which ones need to be updated. So, I wrote a wrapper
-script, [blogpost.sh](blogpost.sh), that finds all files that need to be
+script, [blogpost.sh](/blogpost.sh), that finds all files that need to be
 published or updated and runs `blogpost.py` to publish them.
 
 Before you use `blogpost.sh`, you'll need to configure it by changing the

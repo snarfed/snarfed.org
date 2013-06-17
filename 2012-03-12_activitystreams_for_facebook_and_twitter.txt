@@ -17,15 +17,15 @@ ul { list-style: none; }
   * [`twitter-activitystreams.appspot.com`](https://twitter-activitystreams.appspot.com/)
 
 This complements the unofficial
-[WebFinger](2012-01-16_webfinger_for_facebook_and_twitter) and
-[PortableContacts](2012-02-22_portablecontacts_for_facebook_and_twitter)
+[WebFinger](/2012-01-16_webfinger_for_facebook_and_twitter) and
+[PortableContacts](/2012-02-22_portablecontacts_for_facebook_and_twitter)
 providers I published recently. I've updated the
-[WebFinger provider](2012-01-16_webfinger_for_facebook_and_twitter) to include
+[WebFinger provider](/2012-01-16_webfinger_for_facebook_and_twitter) to include
 `Link` elements pointing to these new ActivityStreams endpoints.
 
 They're all just little side projects, and may not be hugely useful on their
 own, but together they're another step toward implementing
-[OStatus bridge apps](2011-07-27_facebook_app_for_ostatus) for more of the major
+[OStatus bridge apps](/2011-07-27_facebook_app_for_ostatus) for more of the major
 social networking sites.
 
 Feedback and pull requests are welcome!

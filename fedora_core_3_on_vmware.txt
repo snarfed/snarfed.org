@@ -72,7 +72,7 @@ added the [Fedora Extras](http://fedoraproject.org/wiki/Extras_2fUsingExtras),
 [Dag](http://dag.wieers.com/home-made/apt/FAQ.php#B3) repositories, I was able
 to install almost everything I needed, including...
 
-  * ...[ion](ion), my window manager! It's not exactly mainstream, so I'd
+  * ...[ion](/ion), my window manager! It's not exactly mainstream, so I'd
 always had to build it from source, but now there's an
 [RPM](http://rpm.pbone.net/index.php3/stat/4/idpl/1753782/com/ion-20040729-2mdk.i586.rpm.html).
 It requires lua-5.0.2 and lua-devel-5.0.2, which yum will kindly install for

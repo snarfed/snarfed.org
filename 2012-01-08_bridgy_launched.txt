@@ -12,7 +12,7 @@ you.
 <p/>
 
 Bridgy is a throwaway prototype on the road toward a larger project:
-[OStatus for Facebook, Google+, and Twitter](2011-07-27_facebook_app_for_ostatus).
+[OStatus for Facebook, Google+, and Twitter](/2011-07-27_facebook_app_for_ostatus).
 I don't plan to update it much, provide end user support, or properly integrate
 it with [WebFinger](http://code.google.com/p/webfinger/) or
 [Salmon](http://salmon-protocol.org/) or the other

@@ -3,8 +3,8 @@ scavenger
 <img class="right" src="at.jpg" />
 
 For the impatient:  
-[Download tarball](scavenger.tar.gz)  
-[Download zipfile](scavenger.zip) 
+[Download tarball](/scavenger.tar.gz)  
+[Download zipfile](/scavenger.zip) 
  
 Scavenger is a program that extracts email addresses from text and binary files
 in any format. Email addresses are identified according to the [RFC

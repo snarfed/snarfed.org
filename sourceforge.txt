@@ -5,7 +5,7 @@ sourceforge
 
 [SourceForge](http://sf.net/)
 is a site that hosts open source projects, similar to
-[savannah](savannah). They provide web space, file hosting, CVS, compile
+[savannah](/savannah). They provide web space, file hosting, CVS, compile
 farms, bug and patch trackers, forums, mailing lists, and more.
 
 I've contributed

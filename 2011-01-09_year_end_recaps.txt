@@ -3,7 +3,7 @@
 <img class="right" src="champagne_glasses.jpg" /></a>
 
 I'm not in the habit of writing year end posts, but I still enjoy reading them.
-[Like last year](2010-01-05_year_end_recaps), I've collected a few of the 2010
+[Like last year](/2010-01-05_year_end_recaps), I've collected a few of the 2010
 end-of-year articles that I particularly enjoyed. Read them in health, and happy
 new year!
 
@@ -21,7 +21,7 @@ _Tech:_
 
   * [App Engine 1.4.0](http://googleappengine.blogspot.com/2010/12/happy-holidays-from-app-engine-team-140.html).
   It's a hell of a release, even if
-  [I am biased](2008-04-07_google_app_engine_launched).
+  [I am biased](/2008-04-07_google_app_engine_launched).
 
   * [SnipSnap is back](http://snipsnap.org/space/start/2011-01-03/1)! I may be
   [on Wordpress now](http://snarfed.org/2010-08-08_migrated_to_wordpress), but

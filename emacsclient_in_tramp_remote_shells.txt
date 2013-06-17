@@ -3,7 +3,7 @@ emacsclient in TRAMP remote shells
 <a href="http://gnu.org/software/emacs/">
   <img class="right" src="gnu.jpg" /></a>
 
-I recently [started running shells](why_i_run_shells_inside_emacs) inside
+I recently [started running shells](/why_i_run_shells_inside_emacs) inside
 [Emacs](http://gnu.org/software/emacs/) via
 [shell mode](http://www.gnu.org/software/emacs/manual/html_node/emacs/Shell-Mode.html),
 including ssh sessions to remote hosts using

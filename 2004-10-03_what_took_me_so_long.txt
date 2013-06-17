@@ -6,7 +6,7 @@ What took me so long?
 I can't imagine why, but I have something of a
 [foil-hat](http://c2.com/cgi/wiki?TinFoilHat) reputation among my friends. They
 point to my lack of a cell phone
-([for](cell_phone_npr_story.html)
+([for](/cell_phone_npr_story.html)
 [various](http://www.economist.com/node/2300557)
 [reasons](http://launch.yahoo.com/song/default.asp?songID=3439909)), my avoidance
 of credit cards, my tendency to give fake addresses and phone numbers at
@@ -16,7 +16,7 @@ numbers](http://www.cpsr.org/cpsr/privacy/ssn/ssn.structure.html).
 Given all that, I don't know why it took me so long, but I finally generated a
 [PGP](http://www.pgp.net/pgp-faq/) keypair for myself. Whee! I also uploaded it
 to [MIT's keyserver](http://pgp.mit.edu/) and posted a link on my [contact
-page](about). Not that I expect you to use it to
+page](/about). Not that I expect you to use it to
 email me your bank account number, or your mother's maiden name...but if you
 really want to, now you can!
 

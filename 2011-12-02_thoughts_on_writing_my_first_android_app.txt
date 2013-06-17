@@ -4,7 +4,7 @@ Thoughts on writing my first Android app
   <img class="right" src="locale_music_plugin_icon.png"></a>
 
 I just finished my first Android app,
-[Locale Music Plugin](locale_music_plugin). I don't expect to do much more
+[Locale Music Plugin](/locale_music_plugin). I don't expect to do much more
 mobile development, nor do I have any breakthrough ideas or conclusions, but it
 was a fun little side project, and I collected a few thoughts along the way.
 
@@ -14,7 +14,7 @@ was a fun little side project, and I collected a few thoughts along the way.
 First, the good. Android didn't invent online app stores or self service
 publishing, but it does them well. I'm excited that I can consume and publish
 software (and media!) immediately, friction-free, anywhere and any time.
-[Policy questions notwithstanding.](2011-11-16_should_first_sale_doctrine_die)
+[Policy questions notwithstanding.](/2011-11-16_should_first_sale_doctrine_die)
 I'm also happy I was alive beforehand, so I know how it used to work and why I
 should be thankful.
 

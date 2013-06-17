@@ -6,7 +6,7 @@ Google Cloud SQL
 We've
 [just announced Google Cloud SQL](http://googlecode.blogspot.com/2011/10/google-cloud-sql-your-database-in-cloud.html),
 a hosted relational database that does for MySQL what
-[App Engine did](2008-04-07_google_app_engine_launched) for webapps. It handles
+[App Engine did](/2008-04-07_google_app_engine_launched) for webapps. It handles
 the plumbing and infrastructure so you're free to focus on your application. No
 more DBA needed!
 

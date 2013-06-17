@@ -11,12 +11,12 @@ implement it themselves. It's up and running at
 implementations for Facebook, Twitter, and Google+.
 
 This complements the unofficial
-[WebFinger](2012-01-16_webfinger_for_facebook_and_twitter),
-[PortableContacts](2012-02-22_portablecontacts_for_facebook_and_twitter), and
-[ActivityStreams](2012-03-12_activitystreams_for_facebook_and_twitter) providers
+[WebFinger](/2012-01-16_webfinger_for_facebook_and_twitter),
+[PortableContacts](/2012-02-22_portablecontacts_for_facebook_and_twitter), and
+[ActivityStreams](/2012-03-12_activitystreams_for_facebook_and_twitter) providers
 I've published recently. They're all just little side projects, and may not be
 hugely useful on their own, but they do constitute almost a complete suite of
-[OStatus bridge apps](2011-07-27_facebook_app_for_ostatus) for the major social
+[OStatus bridge apps](/2011-07-27_facebook_app_for_ostatus) for the major social
 networking sites. Only [OStatus](http://ostatus.org/about) itself is left!
 
 As usual with Salmon, I'm still working on interoperability.

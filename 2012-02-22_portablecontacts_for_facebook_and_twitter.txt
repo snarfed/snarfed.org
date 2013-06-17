@@ -20,13 +20,13 @@ ul {
   * [`twitter-poco.appspot.com`](https://twitter-poco.appspot.com/)
 
 They complement the
-[unofficial WebFinger providers](2012-01-16_webfinger_for_facebook_and_twitter)
+[unofficial WebFinger providers](/2012-01-16_webfinger_for_facebook_and_twitter)
 I published last month, which I've updated to include `Link` elements pointing
 to the new PortableContacts endpoints.
 
 Both are just little side projects, and they may not be hugely useful on their
 own, but together they're another step toward implementing
-[OStatus bridge apps](2011-07-27_facebook_app_for_ostatus) for more of the major
+[OStatus bridge apps](/2011-07-27_facebook_app_for_ostatus) for more of the major
 social networking sites.
 
 Feedback and pull requests are welcome!

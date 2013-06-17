@@ -3,13 +3,13 @@ hardcodedates
 <img class="right" src="hardcodedates.jpg" />
 
 For the impatient:  
-&nbsp; [Download hardcodedates.py 1.4](hardcodedates.py)  
+&nbsp; [Download hardcodedates.py 1.4](/hardcodedates.py)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.bluesock.org/)  
 &nbsp; [PyBlosxom plugin registry](http://pyblosxom.bluesock.org/blog/registry?sortby=path)
 
 _Updated 2007-02-23._
 
-[hardcodedates](hardcodedates.py) is a
+[hardcodedates](/hardcodedates.py) is a
 [PyBlosxom](http://pyblosxom.bluesock.org/) plugin that overrides Pyblosxom's
 [default mtime handling](http://pyblosxom.bluesock.org/1.3.1/manual/x704.html)
 to read mtimes from a file, instead of from the filesystem.
@@ -28,5 +28,5 @@ by [Nathan Bullock](http://www.nathanbullock.org/). I've taken over
 maintennance, with his permission.
 
 hardcodedates is Copyright 2004 [Nathan Bullock](http://www.nathanbullock.org/),
-2006 [Ryan Barrett](about), and is distributed
+2006 [Ryan Barrett](/about), and is distributed
 under the [GPL](http://www.gnu.org/licenses/gpl.html).

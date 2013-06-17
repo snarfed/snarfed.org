@@ -4,7 +4,7 @@ acoc.conf for context diffs
   <img class="shadow" src="acoc_top.png"></a>
 
 For the impatient:  
-[.acoc.conf](acoc.conf) for coloring context diffs  
+[.acoc.conf](/acoc.conf) for coloring context diffs  
 [Patch](https://github.com/snarfed/misc/blob/master/patches/acoc-diff-context.patch)
 for acoc 0.7.1  
 

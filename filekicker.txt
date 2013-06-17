@@ -3,11 +3,11 @@ filekicker
 <img class="right" src="kick.jpg" />
 
 For the impatient:  
-&nbsp; [Download filekicker 0.2](filekicker.py)  
+&nbsp; [Download filekicker 0.2](/filekicker.py)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.bluesock.org/)  
 &nbsp; [PyBlosxom plugin registry](http://pyblosxom.bluesock.org/blog/registry?sortby=path)  
 
-[Filekicker](filekicker.py) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
+[Filekicker](/filekicker.py) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
 plugin that serves static files. The file to serve is determined by the URL
 path and the `datadir` configuration option. The MIME type is inferred from the
 file's extension.
@@ -31,5 +31,5 @@ and
 [imagekicker](http://pyblosxom.bluesock.org/blog/registry/display/graphics/imagekicker).
 It's basically a generalization of imagekicker, which inspired its name.
 
-Filekicker is copyright 2006 [Ryan Barrett](about), and is distributed
+Filekicker is copyright 2006 [Ryan Barrett](/about), and is distributed
 under the [GPL](http://www.gnu.org/licenses/gpl.html).

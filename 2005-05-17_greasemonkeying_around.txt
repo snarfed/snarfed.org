@@ -8,8 +8,8 @@ I've been meaning to learn [Greasemonkey](http://greasemonkey.mozdev.org) for a
 while, and the recent
 [hubbub](http://developers.slashdot.org/article.pl?sid=05/05/16/0052245&tid=95&tid=154&tid=156&tid=1)
 finally motivated me to get off my butt and do it. I wrote a
-[script](palo_alto_library_amazon_greasemonkey) that
+[script](/palo_alto_library_amazon_greasemonkey) that
 inserts links into Amazon to show whether a book is available in the [Palo Alto
 Library](http://cityofpaloalto.org/library/).
-[More...](palo_alto_library_amazon_greasemonkey)
+[More...](/palo_alto_library_amazon_greasemonkey)
 

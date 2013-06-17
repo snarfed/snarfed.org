@@ -4,7 +4,7 @@ faking out address and credit card forms
 
 Like many people, I buy
 things online. Unlike many people, I'm a bit of a privacy freak. I only use
-[anonymous prepaid debit cards](privacy_through_prepaid_credit_cards),
+[anonymous prepaid debit cards](/privacy_through_prepaid_credit_cards),
 and I don't give out my real name, address, birthdate, or other personal
 information. If I'm buying something that needs to be shipped, I use a mail
 drop, not my home address.
@@ -98,7 +98,7 @@ dashes for everything else
     phone number, and "-- --" for cardholder name.
 
   * [Netflix](http://netflix.com/): currently rejects _all_ of my
-    [prepaid credit cards](privacy_through_prepaid_credit_cards)! :(
+    [prepaid credit cards](/privacy_through_prepaid_credit_cards)! :(
 
   * [Orbitz](http://orbitz.com/): 00000 for zip code, phone number with valid
     area code, dashes for everything else. orbitz does strict address checking

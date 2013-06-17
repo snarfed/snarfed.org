@@ -4,7 +4,7 @@ Shell app for App Engine's High Replication Datastore
   <img class="right" src="appengine.jpg" /></a>
 
 I've had less to say here about [App Engine](http://appengine.google.com/) since
-I [moved to a new team last year](2010-03-13_new_job). The team has still been
+I [moved to a new team last year](/2010-03-13_new_job). The team has still been
 [cranking](http://code.google.com/appengine/docs/roadmap.html), though, both
 behind the scenes and with new features like
 [namespaces](http://code.google.com/appengine/docs/python/multitenancy/),
@@ -21,7 +21,7 @@ describes them admirably, especially given how subtle Paxos edge cases can be.
 Still, sometimes there's no substitute for real live code.
 
 That's why I've set up [shell-hrd.appspot.com](http://shell-hrd.appspot.com/), a
-new instance of the [venerable](2008-04-07_google_app_engine_launched)
+new instance of the [venerable](/2008-04-07_google_app_engine_launched)
 [shell app](http://shell.appspot.com/) for the HRD. I've already used it
 myself, to double check that
 [eventually consistent reads](http://code.google.com/appengine/docs/python/datastore/queries.html#Setting_the_Read_Policy_and_Datastore_Call_Deadline)

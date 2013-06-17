@@ -21,7 +21,7 @@ ul {
 
 It's just a little side project, and it's not hugely useful on its own, but it
 is a step toward implementing
-[OStatus bridge apps](2011-07-27_facebook_app_for_ostatus) for more of the major
+[OStatus bridge apps](/2011-07-27_facebook_app_for_ostatus) for more of the major
 social networking sites.
 
 Feedback and pull requests are welcome!

@@ -4,14 +4,14 @@ Y!OS: Yahoo Open Strategy
   <img class="right" src="yahoo_exclamation_logo.png" alt="yahoo exclamation logo" /></a>
 
 I've already written about a few cloud computing services here -
-[Azure](2008-11-22_windows_azure),
-[SimpleDB](amazon_simpledb_thoughts),
-the [Facebook data store](facebook_data_store_api_thoughts) -
+[Azure](/2008-11-22_windows_azure),
+[SimpleDB](/amazon_simpledb_thoughts),
+the [Facebook data store](/facebook_data_store_api_thoughts) -
 so I might as well continue down the list. Next up is
 [Yahoo! Open Strategy](http://developer.yahoo.com/yos/intro/) aka
 Y!OS, a collection of services and APIs that let developers integrate their
 web applications with Yahoo. I've done a separate
-[deep dive into YQL](yql_yahoo_query_language_thoughts),
+[deep dive into YQL](/yql_yahoo_query_language_thoughts),
 the query language for Y!OS; I'll skim the rest of the platform here.
 
 Y!OS is an umbrella that includes a number of different APIs and services.
@@ -29,7 +29,7 @@ by Yahoo users,
 on Yahoo sites,
 use [Yahoo's custom markup language](http://developer.yahoo.com/yap/yml/),
 integrate with [Yahoo's social network](http://developer.yahoo.com/social/),
-and [access data](yql_yahoo_query_language_thoughts) from Yahoo's
+and [access data](/yql_yahoo_query_language_thoughts) from Yahoo's
 various properties, including private data - if permitted -
 [via OAuth](http://developer.yahoo.com/oauth/guide/).
 
@@ -50,8 +50,8 @@ there's no mention of revenue sharing.
 
 Y!OS isn't really in the same league as full-fledged cloud offerings
 like [Amazon Web Services](http://aws.amazon.com/),
-[Windows Azure](windows_azure_impressions), and
-[Google App Engine](2008-04-07_google_app_engine_launched). It doesn't
+[Windows Azure](/windows_azure_impressions), and
+[Google App Engine](/2008-04-07_google_app_engine_launched). It doesn't
 directly run third parties' code, nor does it host their data or static files.
 It's a more of a full featured web container and set of services. Still
 interesting, of course, just not my field.

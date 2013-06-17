@@ -10,7 +10,7 @@ Amazon SimpleDB thoughts
 [hype](http://www.scripting.com/stories/2007/12/15/amazonRemovesTheDatabaseSc.html).
 I finally got a chance to sit down and read through the docs and blog posts,
 and
-[like with the Facebook Data Store API](facebook_data_store_api_thoughts),
+[like with the Facebook Data Store API](/facebook_data_store_api_thoughts),
 I've written up my thoughts.
 
 Amazon's
@@ -79,7 +79,7 @@ people to point out this huge piece of SimpleDB's provenance.)
 
 The tuplespaces concept never spread too far beyond of research, but I've
 always loved it, and I've had ["build tuplespaces on top of a
-DHT"](ideas#tuplespaces) on my [list of project ideas](ideas) for
+DHT"](/ideas#tuplespaces) on my [list of project ideas](/ideas) for
 years. As long as I get to play with it, I don't care if Amazon beat me to the
 punch. After all, they can afford a few more servers and sysadmins than I can.
 
@@ -107,7 +107,7 @@ that will return all blue items that cost less than 14.99:
 
 It's interesting that Amazon went with a custom, proprietary query language,
 as opposed to a subset of SQL like Facebook's
-[FQL](facebook_data_store_api_thoughts). Again, it
+[FQL](/facebook_data_store_api_thoughts). Again, it
 almost certainly made it easier for them to develop, but it raises the
 learning curve for developers, not to mention contributing to lock-in somewhat.
 

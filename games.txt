@@ -17,8 +17,8 @@ Naturally, this is biased toward my taste. If I mark a game
 <nobr>![bad](/bad.png),</nobr> I may still think it's good overall, but just
 doesn't match my own personal taste, and vice versa.
 
-Also see [books](books), [movies](movies), and
-[other lists](lists).
+Also see [books](/books), [movies](/movies), and
+[other lists](/lists).
 
 <a name="to_play"></a>
 **Games I'd like to play**:
@@ -189,7 +189,7 @@ _([Krysalide](http://krysalide.fr/)/[Gaming Side](http://www.gaming-side.com/)/[
 ![ok](/ok.png)
 
   * _[Beat Sneak Bandit](http://www.gamespot.com/beat-sneak-bandit/)_
-([Simogo](simogo.com))
+([Simogo](http://simogo.com))
 ![good](/good.png)
 
   * _[Contre Jour](http://www.gamespot.com/iphone/adventure/contre-jour-hd/)_
@@ -889,10 +889,10 @@ _[3](http://www.idsoftware.com/games/quake/quake3/)_
 ([id](http://idsoftware.com/))
 ![good](/good.png)
 
-  * _[Tic Tac Toe](tictactoe)_
+  * _[Tic Tac Toe](/tictactoe)_
 ([Ryan Barrett](http://snarfed.org/))
 
-  * _[Voxel Hunt](voxel)_
+  * _[Voxel Hunt](/voxel)_
 ([Ryan Barrett](http://snarfed.org/))
 
   * _[Space Channel 5](http://www.mobygames.com/game/dreamcast/space-channel-5)_

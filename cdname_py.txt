@@ -3,10 +3,10 @@ cdname.py
 <img class="right" src="cd.jpg" />
 
 For the impatient:  
-[Download cdname.py 0.3](cdname.py)
+[Download cdname.py 0.3](/cdname.py)
 
 
-[cdname.py](cdname.py) is a Python program that names MP3 files and generates
+[cdname.py](/cdname.py) is a Python program that names MP3 files and generates
 M3U playlists by parsing a
 [CDDB](http://www.gracenote.com/gn_products/cddb.html) or
 [freedb](http://freedb.org/) .inf file, usually retrieved with

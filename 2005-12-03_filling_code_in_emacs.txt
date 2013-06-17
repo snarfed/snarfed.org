@@ -5,9 +5,9 @@ Filling code in Emacs
 
 [Emacs](http://gnu.org/software/emacs/) is great, but one of my pet peeves is
 that while it can fill (ie wrap) plain text, it [can't fill source
-code](filling_code_in_emacs).
+code](/filling_code_in_emacs).
 
-I've recently been working on [fillcode](fillcode), an Emacs minor mode
+I've recently been working on [fillcode](/fillcode), an Emacs minor mode
 that does this. It's best described by example. Fillcode fills this:
 
     public static void foo(int i, float f, String s) {
@@ -26,5 +26,5 @@ It's not perfect yet, but I've put up an
 [initial release](https://github.com/snarfed/fillcode). Feel
 free to check it out, or just
 [download fillcode.el](https://github.com/snarfed/fillcode/raw/master/fillcode.el)
-and go to town. And if you do, please [let me know](about) what you think!
+and go to town. And if you do, please [let me know](/about) what you think!
 

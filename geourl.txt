@@ -5,7 +5,7 @@ GeoURL
 
 [GeoUrl](http://geourl.org/)
 is a nifty site that maps web sites to geographical locations, similar to
-[geocoding](geocoding). It also maintains this index in reverse, which
+[geocoding](/geocoding). It also maintains this index in reverse, which
 you can use to find sites located near other sites in the real world.
 
 To connect your web page to GeoUrl,
@@ -16,6 +16,6 @@ other sites near your own, like so:
 
 [http://geourl.org/near/?p=http://snarfed.org/](http://geourl.org/near/?p=http://snarfed.org/)
 
-The [buttons](buttons) page has a convenient GeoUrl icon:
+The [buttons](/buttons) page has a convenient GeoUrl icon:
 <a href="http://geourl.org/near/?p=http://snarfed.org/"><img src="geo_globe.png"></a>
 

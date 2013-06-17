@@ -3,10 +3,10 @@ Firefox keyconfig extension
 <a href="http://forums.mozillazine.org/viewtopic.php?t=72994">
   <img class="right" src="firefox.png" /></a>
 
-I'm a heavy keyboard user, and I [often](emacs_keybindings_in_firefox)
-[go](control_arrow_keys_in_rxvt_tcsh_and_emacs)
-[to](emacs_keybindings_in_gnu_screens_copy-scrollback_mode)
-[great](switch_control_and_caps_lock) [lengths](emacs_page_up_page_down) to set
+I'm a heavy keyboard user, and I [often](/emacs_keybindings_in_firefox)
+[go](/control_arrow_keys_in_rxvt_tcsh_and_emacs)
+[to](/emacs_keybindings_in_gnu_screens_copy-scrollback_mode)
+[great](/switch_control_and_caps_lock) [lengths](/emacs_page_up_page_down) to set
 up consistent keyboard shortcuts in the programs I use.
 
 [Firefox](http://getfirefox.com/) has good keyboard support overall.
@@ -41,7 +41,7 @@ Here's a list of the keyboard shortcuts I've modified with keyconfig:
   [Stylish](https://addons.mozilla.org/en-US/firefox/addon/2108/)
   [userstyles](http://userstyles.org/help/userstyles).
   I use this in my edit/compile/test loop for
-  [developing userstyles](my_stylish_userstyle_workflow). Code:
+  [developing userstyles](/my_stylish_userstyle_workflow). Code:
   <pre>
 stylishOverlay.turnOnOff(
   !Components.classes["@mozilla.org/preferences-service;1"].getService(

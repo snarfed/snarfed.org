@@ -12,7 +12,7 @@ I've added a new [App Engine](http://appengine.google.com/) shell app for the
 
 It complements the existing
 [Python 2.5](http://code.google.com/appengine/docs/python/runtime.html),
-[HRD](2011-04-18_shell_app_for_app_engine_high_replication_datastore), and
+[HRD](/2011-04-18_shell_app_for_app_engine_high_replication_datastore), and
 [JVM language](http://lotrepls.appspot.com/)
 shell apps as well as other, even better third party projects like
 [App Engine Console](http://con.appspot.com/console/help/about).

@@ -37,7 +37,7 @@ seam. We can knuckle down and stop reading Reddit or the Huffington Post during
 work, but we can't easily stop reading email or text messages. Even the heavy
 artillery of the attack, Facebook and Twitter, have become basic online
 utilities. Unless we want to
-[opt out of some parts of modern society](2013-04-14_the_no_network_effect),
+[opt out of some parts of modern society](/2013-04-14_the_no_network_effect),
 most of us are stuck using them to some degree.
 
 If info overload's core problem is too much stuff, and we can't escape the
@@ -101,7 +101,7 @@ completely. The [literature](http://dl.acm.org/citation.cfm?doid=985921.986094)
 multitask, and when we try to pretend we can, we do way more harm than good.
 
 Fortunately, I think there's a cure. For as long as I can remember, I've
-aggressively tweaked both [my tools](why_i_run_shells_inside_emacs) and my
+aggressively tweaked both [my tools](/why_i_run_shells_inside_emacs) and my
 incoming streams to minimize context switches with two basic techniques:
 _pruning_ and _batching_.
 

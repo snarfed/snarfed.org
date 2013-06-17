@@ -5,7 +5,7 @@ New job!
 [App Engine](http://appengine.google.com/) has been a great home for the past
 four years. It's been an unforgettable experience - co-founding something
 so ambitious, iterating for years, the
-[adrenaline rush of launch](2008-04-07_google_app_engine_launched),
+[adrenaline rush of launch](/2008-04-07_google_app_engine_launched),
 seeing it grow and mature and make its way in the world, and most of all
 helping build a brilliant, awesome team. They pushed me and kept me on my toes
 the whole time, and I loved it. I'll miss them.
@@ -14,12 +14,12 @@ the whole time, and I loved it. I'll miss them.
 
 Even so, it's time to move on something new. I've always wanted to work on
 networking,
-[and](windows_p2p)
-[I've](libmsntp)
-[dabbled](p4)
-[in](synchronizing_mp3_playback)
-[it](software)
-[some](ideas),
+[and](/windows_p2p)
+[I've](/libmsntp)
+[dabbled](/p4)
+[in](/synchronizing_mp3_playback)
+[it](/software)
+[some](/ideas),
 but I'm finally going to do it for real. After looking around and talking to
 lots of people, I finally settled on the network systems group at Google. I'll
 likely start with the system that generates and monitors routing tables for

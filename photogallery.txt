@@ -3,11 +3,11 @@ photogallery
 <img class="right" src="photogallery.jpg" />
 
 For the impatient:  
-&nbsp; [Download photogallery.py 0.5](photogallery.py)  
+&nbsp; [Download photogallery.py 0.5](/photogallery.py)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.bluesock.org/)  
 &nbsp; [PyBlosxom plugin registry](http://pyblosxom.bluesock.org/blog/registry?sortby=path)
 
-[photogallery](photogallery.py) is a
+[photogallery](/photogallery.py) is a
 [PyBlosxom](http://pyblosxom.bluesock.org/) plugin that displays a photo gallery,
 with thumbnails.
 
@@ -25,5 +25,5 @@ by [Magnus Nordlander](http://magnus.nordlander.tk/). I've taken over
 maintennance, with his permission.
 
 photogallery is Copyright 2004 [Magnus Nordlander](http://magnus.nordlander.tk/),
-2006 [Ryan Barrett](about), and is distributed
+2006 [Ryan Barrett](/about), and is distributed
 under the [GPL](http://www.gnu.org/licenses/gpl.html).

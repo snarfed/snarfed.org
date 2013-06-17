@@ -25,7 +25,7 @@ point. Among other people, I got to hang out with
 [Tantek Çelik](http://tantek.com/), most of whom I met for the first time.
 
 I also gave a short talk,
-[Scaling Data on the Cheap](scaling_data_on_the_cheap.html).
+[Scaling Data on the Cheap](/scaling_data_on_the_cheap.html).
 It was a crash course on _sharding_, or using multiple database masters with
 mirrored schemas, usually onMySQL or PostgreSQL, as a technique for handling
 data volume and growth. The crowd grokked it, and had lots of good questions.

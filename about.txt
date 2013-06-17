@@ -3,20 +3,20 @@ about
 <a class="shutter" href="ryan.jpg">
   <img class="right shadow" src="ryan_profile_square_thumb.jpg" /></a>
 
-snarfed.org has been around [since early 2002](snarfed_org_history). It was
-[born](2003-07-18_its_live) on my own server, which lived first in dorm rooms at
+snarfed.org has been around [since early 2002](/snarfed_org_history). It was
+[born](/2003-07-18_its_live) on my own server, which lived first in dorm rooms at
 school and then in an apartment in SF. It later
-[migrated](2004-12-02_suburbia_ho) to a
+[migrated](/2004-12-02_suburbia_ho) to a
 [Linux VPS](http://jvds.com/virtuozzo_linux.php) at [JVDS](http://jvds.com/),
-and finally to its [current home](2006-08-23_virtual_housewarming) on a
+and finally to its [current home](/2006-08-23_virtual_housewarming) on a
 [shared FreeBSD server](http://pair.com/services/web_hosting/) at
 [pair.com](http://pair.com/).
 
 On the software side, it started on [SnipSnap](http://snipsnap.org/), then
-[moved](2006-08-23_virtual_housewarming) to
+[moved](/2006-08-23_virtual_housewarming) to
 [PyBlosxom](http://pyblosxom.bluesock.org/), and
-[now runs](2010-08-08_migrated_to_wordpress) on
+[now runs](/2010-08-08_migrated_to_wordpress) on
 [WordPress](http://wordpress.org/), first on
 [its own theme](/snarfed_wordpress_theme) and now on a modified
-[Ryu](http://wordpress.org/themes/ryu/) theme. See my [software page](software)
+[Ryu](http://wordpress.org/themes/ryu/) theme. See my [software page](/software)
 for more of its custom patches, plugins, and themes.

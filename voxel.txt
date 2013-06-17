@@ -6,7 +6,7 @@ voxel
   <img class="shadow" src="voxel_hunt_volcanic_thumb.jpg"></a>
 
 [Download
-Voxel Hunt](voxel.zip)
+Voxel Hunt](/voxel.zip)
 
   * **Description**
 
@@ -19,7 +19,7 @@ See the LICENSE.txt file for more information.
 
   * **Running**
 
-To play, download [voxel.zip](voxel.zip), unzip it, and run
+To play, download [voxel.zip](/voxel.zip), unzip it, and run
 voxel.exe. You'll need OpenGL drivers for your video card, which you almost
 certainly have, and GLUT, which is included in this package.
 

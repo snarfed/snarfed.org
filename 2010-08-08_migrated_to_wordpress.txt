@@ -5,19 +5,19 @@ Migrated to WordPress
 
 This site, [snarfed.org](http://snarfed.org/), has been running happily on
 [PyBlosxom](http://pyblosxom.bluesock.org/) for the
-[last four years](2006-08-23_virtual_housewarming). PyBlosxom has been great,
+[last four years](/2006-08-23_virtual_housewarming). PyBlosxom has been great,
 and I've been happy to use it and
-[even](pyblosxom_history)
-[give](pyblosxom_openid_server)
-[back](pyblosxom_openid_comments)
-[a](pyblosxom_ajax_comments)
-[bit](snarfed_org_pyblosxom_flavour).
+[even](/pyblosxom_history)
+[give](/pyblosxom_openid_server)
+[back](/pyblosxom_openid_comments)
+[a](/pyblosxom_ajax_comments)
+[bit](/snarfed_org_pyblosxom_flavour).
 
 However, the PyBlosxom community is pretty small, so when I needed a new
 feature or improvement, I often ended up
-[doing](pyblosxom_index)
-[it](pyblosxom_rdf_flavour)
-[myself](site_search_with_the_google_ajax_search_api). I didn't usually mind,
+[doing](/pyblosxom_index)
+[it](/pyblosxom_rdf_flavour)
+[myself](/site_search_with_the_google_ajax_search_api). I didn't usually mind,
 but I'm not a web developer, so I gradually lost patience and interest in
 hacking on a web framework.
 
@@ -25,7 +25,7 @@ The final straw was server load. PyBlosxom's caching is good, but not great, so
 when my site saw a traffic spike, the server's CPU load would spike too.
 [My hosting provider](http://pair.com/) is great, but they still noticed,
 and it occasionally made them unhappy enough that they'd
-[clobber my PyBlosxom CGI script](2009-02-24_back).
+[clobber my PyBlosxom CGI script](/2009-02-24_back).
 
 <a href="http://pyblosxom.bluesock.org/">
   <img class="left" src="pyblosxom.jpg" alt="pyblosxom" /></a>
@@ -55,12 +55,12 @@ at least it's less likely to get shut off now.
 
 Here are some of the tools, scripts, and patches I wrote during the migration:
 
-  * [snarfed WordPress theme](snarfed_wordpress_theme)
-  * [sync_wordpress.sh](sync_wordpress)
-  * [pyblosxom2wxr.sh](pyblosxom2wxr)
-  * [blogpost.sh](blogpost)
-  * [generate_blogpost.sh](generate_blogpost)
-  * [extract compacted PyBlosxom comments](extract_compacted_pyblosxom_comments)
+  * [snarfed WordPress theme](/snarfed_wordpress_theme)
+  * [sync_wordpress.sh](/sync_wordpress)
+  * [pyblosxom2wxr.sh](/pyblosxom2wxr)
+  * [blogpost.sh](/blogpost)
+  * [generate_blogpost.sh](/generate_blogpost)
+  * [extract compacted PyBlosxom comments](/extract_compacted_pyblosxom_comments)
   * [Thematic](http://themeshaper.com/thematic/) patches:
 [per-comment hooks](http://code.google.com/p/thematic/issues/detail?id=83)
 and a [comment-meta filter](http://code.google.com/p/thematic/issues/detail?id=82)

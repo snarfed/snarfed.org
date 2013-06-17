@@ -7,17 +7,17 @@ Facebook to WordPress
 is a script that copies your [Facebook](http://www.facebook.com/) posts to a
 [WordPress](http://wordpress.org/) blog of your choice. It helps you take
 control over your posts, pictures, and other online memories, following in the
-spirit of the [Indie Web movement](2012-07-25_why_i_have_my_own_web_site).
+spirit of the [Indie Web movement](/2012-07-25_why_i_have_my_own_web_site).
 
 I've used it to copy a number of
 [my own Facebook posts](http://www.facebook.com/snarfed.org) to this web site.
 Here are a few examples:
 
-  * [Milos](2012-06-26_milos)
+  * [Milos](/2012-06-26_milos)
   * [Chocolate + infographic = crazy delicious](http://snarfed.org/2012-06-15_chocolate-infographic-crazy-delicious)
-  * [Cool looking clouds](2012-08-14_cool-looking-clouds)
-  * [Pumpkin carving](2012-10-28_pumpkin-carving)
-  * [Best gift wrap and card ever](2012-10-22_best-gift-wrap-and-card-ever)
+  * [Cool looking clouds](/2012-08-14_cool-looking-clouds)
+  * [Pumpkin carving](/2012-10-28_pumpkin-carving)
+  * [Best gift wrap and card ever](/2012-10-22_best-gift-wrap-and-card-ever)
 
 The script reads one or more Facebook posts in
 [Graph API JSON format](https://developers.facebook.com/docs/reference/api/post/)
@@ -66,5 +66,5 @@ This script could be expanded to download your posts from Facebook
 automatically, and even converted to a webapp. It's also a good starting point
 for doing the same thing for [Twitter](http://twitter.com/),
 [Google+](https://plus.google.com/), and similar social networks. I don't plan
-to do any of that in the near future, but I'm [happy to help](about) anyone else
+to do any of that in the near future, but I'm [happy to help](/about) anyone else
 who wants to!

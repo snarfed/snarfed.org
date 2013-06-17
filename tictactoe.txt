@@ -1,9 +1,9 @@
 tictactoe
 
 For the impatient:  
-[Download Linux tarball](tictactoe.tar.gz)  
-[Download Windows zipfile](tictactoe.zip)  
-[Download GLUT](http://www.xmission.com/~nate/glut.html) (or [just glut32.dll](glut32.dll))  
+[Download Linux tarball](/tictactoe.tar.gz)  
+[Download Windows zipfile](/tictactoe.zip)  
+[Download GLUT](http://www.xmission.com/~nate/glut.html) (or [just glut32.dll](/glut32.dll))  
 [Download Plib](http://plib.sourceforge.net/)  
 [CS248 project page](http://graphics.stanford.edu/courses/cs248-videogame-competition/cs248-01/#tictactoe)
 
@@ -51,16 +51,16 @@ lowering the FineVerts value in the Water section of tictactoe.ini.
 
 ### Download
 
-Here is the [tarball for Linux](tictactoe.tar.gz). Just run
+Here is the [tarball for Linux](/tictactoe.tar.gz). Just run
 make (no ./configure needed) to build it. If you've installed the OpenGL or PLIB
 libraries in non-standard places, you'll need to edit the Makefile by hand to
 point to wherever they're installed.
 
-Here is the [zipfile for Windows](tictactoe.zip). It includes
+Here is the [zipfile for Windows](/tictactoe.zip). It includes
 an executable and the source, along with workspace files for MSVC++. You'll need
 opengl32.dll and glut32.dll in your Windows system directory to run it. Your
 video card's drivers should come with opengl32.dll, and you can [download
-glut32.dll here](glut32.dll).
+glut32.dll here](/glut32.dll).
 
 ### Background
 

@@ -7,8 +7,8 @@ beer
 ![good](/good.png) I liked,
 ![ok](/ok.png) were just ok,
 ![bad](/bad.png) I didn't like.
-Also see [wine](wine), [chocolate](chocolate), and
-[other lists](lists).
+Also see [wine](/wine), [chocolate](/chocolate), and
+[other lists](/lists).
 
 Naturally, this isn't comprehensive - I've tried others that aren't listed
 here - and it's biased toward my taste. If I mark a beer <nobr>![bad](/bad.png),</nobr>
@@ -238,7 +238,7 @@ Red ![ok](/ok.png),
 <span title="westvleteren party, 7/22/2012">
 [Westvleteren](http://www.sintsixtus.be/)
 [12](http://beeradvocate.com/beer/profile/313/1545)
-(see the [blog post](2012-07-22_westvleteren_with_friends))
+(see the [blog post](/2012-07-22_westvleteren_with_friends))
 ![good](/good.png)
 </span>
 

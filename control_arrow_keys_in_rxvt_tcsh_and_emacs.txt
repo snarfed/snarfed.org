@@ -41,7 +41,7 @@ that use readline:
 
 Now control and the arrow keys should skip words, like god intended, even inside
 your terminal! This is especially useful when I'm ssh'ed into remote, headless
-servers, and using my [minimal .emacs for fast startup](minimal_emacs_for_fast_startup).
+servers, and using my [minimal .emacs for fast startup](/minimal_emacs_for_fast_startup).
 
 I made a halfhearted attempt to find xterm's keycodes for Control-Left and
 Control-Right, but they eluded me. C-h k (ie describe-key) in emacs doesn't even

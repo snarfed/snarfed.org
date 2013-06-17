@@ -4,7 +4,7 @@ OpenID server for PyBlosxom
 <a href="http://pyblosxom.bluesock.org/"><img src="pyblosxom.jpg"></a>
 
 I've just posted an
-[OpenID server plugin for PyBlosxom](pyblosxom_openid_server).
+[OpenID server plugin for PyBlosxom](/pyblosxom_openid_server).
 [OpenID](http://openid.net/) is a distributed authentication
 protocol, ie a single sign on platform, that uses URLs as identifiers.
 With this plugin on your [PyBlosxom](http://pyblosxom.bluesock.org/) site, you can
