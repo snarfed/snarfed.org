@@ -1,0 +1,23 @@
+Redesigned
+
+It's been [almost 10 years](/2003-06-29_blogtastic) since I started this web
+site, and modulo a few tweaks, it's looked basically the same way it did at the
+beginning...
+
+<a href="snarfed_theme_screenshot.jpg">
+  <img class="shadow" style="height: 300px !important" src="snarfed_theme_screenshot.jpg" /></a>
+&nbsp;
+<a href="snarfed_flavour_screenshot.jpg">
+  <img class="shadow" style="height: 300px !important" src="snarfed_flavour_screenshot.jpg" /></a>
+&nbsp;
+<a href="snarfed_wordpress_theme_screenshot.jpg">
+  <img class="shadow" style="height: 300px !important" src="snarfed_wordpress_theme_screenshot.jpg" /></a>
+
+...until now. It's been a great ride, and I'm glad the design held up this long,
+but the web has moved on: high res images, infinite scroll, responsive design,
+symbol fonts. It's high time for a redesign...and here it is! It's based on the
+[Ryu WordPress theme](http://wordpress.org/themes/ryu), with a full bleed header
+and a lot of custom CSS.
+
+I'm still debugging, but I think it's going to work out. Let me know what you
+think!
