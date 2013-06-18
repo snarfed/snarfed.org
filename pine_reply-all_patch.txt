@@ -1,7 +1,8 @@
 pine reply-all patch
 
-<a href="http://washington.edu/pine/">
-  <img class="right" src="pine.png" /></a>
+<p class="right">
+ <a href="http://washington.edu/pine/">
+  <img src="pine.png" /></a></p>
 
 For the impatient: Patch for Pine
 [4.58](https://github.com/snarfed/misc/blob/master/patches/pine/reply-all.patch.4.58),

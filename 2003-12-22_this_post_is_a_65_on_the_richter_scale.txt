@@ -1,6 +1,6 @@
 This Post is a 6.5 on the Richter Scale
 
-<img class="right shadow" src="quake.jpg" />
+<p class="right"><img class="shadow" src="quake.jpg" /></p>
 
 A few minutes ago, I noticed a distinctly odd feeling. I was a little
 disoriented, and I felt like the room was swimming, kind of how you feel when

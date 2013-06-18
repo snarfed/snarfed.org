@@ -1,7 +1,8 @@
 resize google calendar
 
-<a href="http://calendar.google.com/">
-  <img class="right" src="google_calendar.jpg" /></a>
+<p class="right">
+ <a href="http://calendar.google.com/">
+  <img src="google_calendar.jpg" /></a></p>
 
 _Update: try
 [Google Calendar Simplified userstyle](google_calendar_simplified_userstyle)

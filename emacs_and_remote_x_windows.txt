@@ -1,7 +1,8 @@
 Emacs and remote X Windows
 
-<a href="http://gnu.org/software/emacs/">
-  <img class="right" src="gnu.jpg" /></a>
+<p class="right">
+ <a href="http://gnu.org/software/emacs/">
+  <img src="gnu.jpg" /></a></p>
 
 I work at home occasionally, using plain old SSH to VPN in to work. I forward X
 Windows over SSH, so I can run shells and

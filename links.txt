@@ -1,7 +1,8 @@
 links
 
-<a href="links">
-  <img class="right" src="chain.jpg" /></a>
+<p class="right">
+ <a href="links">
+  <img src="chain.jpg" /></a></p>
 
 We think these sites are cool.
 

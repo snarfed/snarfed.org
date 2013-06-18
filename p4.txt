@@ -1,7 +1,8 @@
 p4
 
-<a href="p4">
-  <img class="right" src="notes.png" /></a>
+<p class="right">
+ <a href="p4">
+  <img src="notes.png" /></a></p>
 
 For the impatient:  
 [Download P4 0.3.1](p4-0.3.1.tar.bz2)  

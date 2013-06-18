@@ -1,7 +1,8 @@
 Bridgy up and running
 
-<a href="http://brid.gy/">
-  <img class="right" src="bridgy_logo.jpg"></a>
+<p class="right">
+ <a href="http://brid.gy/">
+  <img src="bridgy_logo.jpg"/></a></p>
 
 I've just released [Bridgy](http://brid.gy/), a little side project I've been
 working on. Got a blog? Share your blog posts on social networks? Wish comments

@@ -1,7 +1,8 @@
 yolo-hipster
 
-<a href="http://github.com/">
- <img class="right" src="github_logo.png" /></a>
+<p class="right">
+ <a href="http://github.com/">
+  <img src="github_logo.png" /></a></p>
 
 From GitHub's [create new repo page](https://github.com/new):
 

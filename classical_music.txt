@@ -1,6 +1,6 @@
 classical music
 
-<img class="right" src="notes.png" alt="music" />
+<p class="right"><img src="notes.png" alt="music" /></p>
 
 Classical pieces I've heard performed live.
 ![good](/good.png) I liked,

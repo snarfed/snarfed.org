@@ -1,7 +1,8 @@
 snipsnap macros
 
-<a href="http://snipsnap.org/">
-  <img class="right" src="snipsnap-logo.png" /></a>
+<p class="right">
+ <a href="http://snipsnap.org/">
+  <img src="snipsnap-logo.png" /></a></p>
 
 For the impatient:  
 [Download snarfed.jar](snarfed.jar)  

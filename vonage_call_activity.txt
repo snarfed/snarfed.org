@@ -1,7 +1,8 @@
 vonage call activity
 
-<a href="2004-12-24_its_the_phone_stupid">
-  <img class="right" src="vonage.gif" /></a>
+<p class="right">
+ <a href="2004-12-24_its_the_phone_stupid">
+  <img src="vonage.gif" /></a></p>
 
 I recently downloaded all of my call history from [Vonage](http://vonage.com/),
 which I've [used for years](2004-12-24_its_the_phone_stupid). It wasn't entirely

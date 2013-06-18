@@ -1,7 +1,8 @@
 mod_php on pair.com
 
-<a href="http://pair.com/">
-  <img class="right" src="pair.com.jpg" /></a>
+<p class="right">
+ <a href="http://pair.com/">
+  <img src="pair.com.jpg" /></a></p>
 
 Got a shared hosting account on [pair.com](http://pair.com/)? Want to run a PHP
 script under Apache's `mod_php` module, instead of as CGI? Here's a tip:

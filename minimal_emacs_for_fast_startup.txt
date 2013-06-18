@@ -1,7 +1,8 @@
 minimal .emacs for fast startup
 
-<a href="http://gnu.org/software/emacs/">
-  <img class="right" src="gnu.jpg" /></a>
+<p class="right">
+ <a href="http://gnu.org/software/emacs/">
+  <img src="gnu.jpg" /></a></p>
 
 I
 spend a fair amount of time ssh-ed into remote, headless linux servers. I often

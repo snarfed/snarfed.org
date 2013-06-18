@@ -1,7 +1,8 @@
 Google Cloud SQL
 
-<a href="http://code.google.com/apis/sql/">
-  <img class="right" src="google_code.png" /></a>
+<p class="right">
+ <a href="http://code.google.com/apis/sql/">
+  <img src="google_code.png" /></a></p>
 
 We've
 [just announced Google Cloud SQL](http://googlecode.blogspot.com/2011/10/google-cloud-sql-your-database-in-cloud.html),

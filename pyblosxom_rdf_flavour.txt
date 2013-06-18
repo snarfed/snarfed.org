@@ -1,7 +1,8 @@
 pyblosxom rdf flavour
 
-<a href="http://pyblosxom.bluesock.org/">
-  <img class="right" src="pyblosxom.jpg" /></a>
+<p class="right">
+ <a href="http://pyblosxom.bluesock.org/">
+  <img src="pyblosxom.jpg" /></a></p>
 
 For the impatient:  
 &nbsp; [Download rdf_flavour.tar.gz](rdf_flavour.tar.gz)  

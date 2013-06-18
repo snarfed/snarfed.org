@@ -1,7 +1,8 @@
 linux time zones
 
-<a href="linux_time_zones">
-  <img class="right" src="clock.jpg" /></a>
+<p class="right">
+ <a href="linux_time_zones">
+  <img src="clock.jpg" /></a></p>
 
 I recently had to change the
 time zone on a linux server, and while linux _handles_ time zones and locales

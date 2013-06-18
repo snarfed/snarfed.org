@@ -1,7 +1,8 @@
 sync_wordpress.sh
 
-<a href="http://wordpress.org/">
-  <img class="right" src="wordpress.png" alt="wordpress" /></a>
+<p class="right">
+ <a href="http://wordpress.org/">
+  <img src="wordpress.png" alt="wordpress" /></a></p>
 
 [sync_wordpress.sh](sync_wordpress.sh) syncs
 [WordPress](http://wordpress.org/), files, plugins, themes, and options

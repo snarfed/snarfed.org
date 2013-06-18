@@ -1,7 +1,8 @@
 view evites anonymously
 
-<a href="http://evite.com/">
-  <img class="right" src="evite.png" /></a>
+<p class="right">
+ <a href="http://evite.com/">
+  <img src="evite.png" /></a></p>
 
 Does it ever give you the creeps
 that, whenever you get an [evite](http://evite.com/), it knows who you are?

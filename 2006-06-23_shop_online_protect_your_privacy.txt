@@ -1,7 +1,8 @@
 Shop online, protect your privacy
 
-<a href="faking_out_address_and_credit_card_forms">
-  <img class="right" src="nose_mustache_glasses.jpg" /></a>
+<p class="right">
+ <a href="faking_out_address_and_credit_card_forms">
+  <img src="nose_mustache_glasses.jpg" /></a></p>
 
 Like many people, I buy things online. Unlike many people, I'm a bit of a
 privacy freak. I only use [anonymous prepaid debit cards](/privacy_through_prepaid_credit_cards), and I don't give out my real name, address, birthdate, or

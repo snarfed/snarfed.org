@@ -1,7 +1,8 @@
 Shell app for App Engine Python 2.7 runtime
 
-<a href="http://shell-27.appspot.com/">
-  <img class="right" src="appengine.jpg" /></a>
+<p class="right">
+ <a href="http://shell-27.appspot.com/">
+  <img src="appengine.jpg" /></a></p>
 
 I've added a new [App Engine](http://appengine.google.com/) shell app for the
 [Python 2.7 runtime](http://code.google.com/appengine/docs/python/python27/):

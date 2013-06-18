@@ -1,7 +1,8 @@
 webalizer referrer spam blacklist
 
-<a href="webalizer_referrer_spam_blacklist">
-  <img class="right" src="spam.jpg" /></a>
+<p class="right">
+ <a href="webalizer_referrer_spam_blacklist">
+  <img src="spam.jpg" /></a></p>
 
 [Referrer spam](http://www.spywareinfo.com/articles/referer_spam/) - or by
 Apache's original misspelling, _referer_ spam - has been a problem at

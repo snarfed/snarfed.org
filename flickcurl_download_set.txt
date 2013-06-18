@@ -1,7 +1,8 @@
 flickcurl_download_set.sh
 
-<a href="http://www.flickr.com/">
-  <img class="right" src="flickr.jpg" /></a>
+<p class="right">
+ <a href="http://www.flickr.com/">
+  <img src="flickr.jpg" /></a></p>
 
 [flickcurl](http://librdf.org/flickcurl/), a command line utility for
 interacting with [Flickr](http://www.flickr.com/), is awesome. I use it to

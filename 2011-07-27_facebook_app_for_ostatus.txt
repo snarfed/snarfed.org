@@ -1,7 +1,8 @@
 Facebook app for OStatus?
 
-<a href="http://ostatus.org/about">
-  <img class="right" src="ostatus.png"></a>
+<p class="right">
+ <a href="http://ostatus.org/about">
+  <img src="ostatus.png"/></a></p>
 
 Social networks are sprouting like weeds. I don't know about you, but I groan
 every time I get a burst of invitations from the latest network du jour. I

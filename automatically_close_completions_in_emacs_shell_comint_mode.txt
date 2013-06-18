@@ -1,7 +1,8 @@
 automatically close completions in Emacs shell (comint) mode
 
-<a href="http://gnu.org/software/emacs/">
-  <img class="right" src="gnu.jpg" /></a>
+<p class="right">
+ <a href="http://gnu.org/software/emacs/">
+  <img src="gnu.jpg" /></a></p>
 
 I recently [started running shells](/why_i_run_shells_inside_emacs) inside
 [Emacs](http://gnu.org/software/emacs/) via

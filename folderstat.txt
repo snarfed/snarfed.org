@@ -1,6 +1,6 @@
 folderstat
 
-<img class="right" src="folder.jpg" />
+<p class="right"><img src="folder.jpg" /></p>
 
 For the impatient:  
 [Download folderstat.cpp](/folderstat.cpp)

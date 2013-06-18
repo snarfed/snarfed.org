@@ -1,6 +1,6 @@
 lists
 
-<img class="right shadow" src="list.gif" alt="scroll" />
+<p class="right"><img class="shadow" src="list.gif" alt="scroll" /></p>
 
 Lists of stuff.
 

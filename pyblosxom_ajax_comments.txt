@@ -1,6 +1,6 @@
 pyblosxom ajax comments
 
-<img class="right" src="ajax.jpg" />
+<p class="right"><img src="ajax.jpg" /></p>
 
 _This patch was applied to the Pyblosxom contributed plugins pack in
 [revision 973](http://pyblosxom.svn.sourceforge.net/viewvc/pyblosxom?view=rev&revision=973).

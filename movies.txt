@@ -1,6 +1,6 @@
 movies
 
-<img class="right" src="film_reel.jpg" alt="film reel" />
+<p class="right"><img src="film_reel.jpg" alt="film reel" /></p>
 
 Movies I've watched and want to watch.
 ![good](/good.png) I liked,

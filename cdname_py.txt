@@ -1,6 +1,6 @@
 cdname.py
 
-<img class="right" src="cd.jpg" />
+<p class="right"><img src="cd.jpg" /></p>
 
 For the impatient:  
 [Download cdname.py 0.3](/cdname.py)

@@ -1,7 +1,8 @@
 import_issues.py
 
-<a href="http://code.google.com/hosting/">
-  <img class="right" src="google_code_project_hosting.png" /></a>
+<p class="right">
+ <a href="http://code.google.com/hosting/">
+  <img src="google_code_project_hosting.png" /></a></p>
 
 [`import_issues.py`](https://github.com/snarfed/misc/blob/master/import_issues.py) imports
 issues from a CSV file into a

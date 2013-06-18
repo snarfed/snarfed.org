@@ -1,6 +1,6 @@
 backup_google.sh
 
-<img class="right" src="server_parachute.jpg" />
+<p class="right"><img src="server_parachute.jpg" /></p>
 
 [backup_google.sh](https://github.com/snarfed/misc/blob/master/backup_google.sh) is a script
 that backs up data in the Google services I use:

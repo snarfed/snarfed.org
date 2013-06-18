@@ -1,6 +1,6 @@
 site search with the Google AJAX Search API
 
-<img class="right" src="ajax.jpg" />
+<p class="right"><img src="ajax.jpg" /></p>
 
 <div style="color: red"><i>
 Google has

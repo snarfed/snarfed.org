@@ -1,6 +1,6 @@
 tv
 
-<img class="right" src="tv.jpg" alt="tv" />
+<p class="right"><img src="tv.jpg" alt="tv" /></p>
 
 Television shows I
 [want to watch](#to_watch) and

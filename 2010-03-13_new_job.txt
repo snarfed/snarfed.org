@@ -1,6 +1,6 @@
 New job!
 
-<img class="right shadow" src="app_engine_goodbye_plaque_thumb.jpg" alt="app engine goodbye plaque" />
+<p class="right"><img class="shadow" src="app_engine_goodbye_plaque_thumb.jpg" alt="app engine goodbye plaque" /></p>
 
 [App Engine](http://appengine.google.com/) has been a great home for the past
 four years. It's been an unforgettable experience - co-founding something

@@ -1,7 +1,8 @@
 tcsh delete moves mark bug fix
 
-<a href="http://www.tcsh.org/">
-  <img class="right" src="tcsh_oystercatcher.jpg" /></a>
+<p class="right">
+ <a href="http://www.tcsh.org/">
+  <img src="tcsh_oystercatcher.jpg" /></a></p>
 
 _This bug is fixed in tcsh versions 6.14.05 and later._
 

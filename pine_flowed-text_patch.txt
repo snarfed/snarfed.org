@@ -1,7 +1,8 @@
 pine flowed-text patch
 
-<a href="http://washington.edu/pine/">
-  <img class="right" src="pine.png" /></a>
+<p class="right">
+ <a href="http://washington.edu/pine/">
+  <img src="pine.png" /></a></p>
 
 For the impatient:  
 Patch for Pine [4.60 and

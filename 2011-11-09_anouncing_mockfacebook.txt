@@ -1,7 +1,8 @@
 Announcing mockfacebook
 
-<a href="https://github.com/rogerhu/mockfacebook">
-  <img class="right" src="beer_cap_facebook_logo.png" /></a>
+<p class="right">
+ <a href="https://github.com/rogerhu/mockfacebook">
+  <img src="beer_cap_facebook_logo.png" /></a></p>
 
 Recently, while researching a
 [side project](/2011-07-27_facebook_app_for_ostatus), I started looking at the

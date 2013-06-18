@@ -1,7 +1,8 @@
 Workflow software survey
 
-<a href="http://www.toothpastefordinner.com/index.php?date=020605">
-  <img class="right" src="panflute_flowchart.png" /></a>
+<p class="right">
+ <a href="http://www.toothpastefordinner.com/index.php?date=020605">
+  <img src="panflute_flowchart.png" /></a></p>
 
 I recently did some research at [work](2010-03-13_new_job) on existing
 libraries, frameworks, and tools for managing semi-automated workflows

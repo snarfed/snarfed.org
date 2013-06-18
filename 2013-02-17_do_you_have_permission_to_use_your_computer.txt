@@ -1,6 +1,6 @@
 Do you have permission to use your computer?
 
-<img class="right" src="laptop_padlock.jpg" />
+<p class="right"><img src="laptop_padlock.jpg" /></p>
 
 It seems like a ridiculous question. We use our computers all the time, and we
 don't ask anyone for permission. Our work devices are a bit different, but let's

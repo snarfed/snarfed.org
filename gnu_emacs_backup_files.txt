@@ -1,7 +1,8 @@
 gnu emacs backup files
 
-<a href="http://gnu.org/software/emacs/">
-  <img class="right" src="gnu.jpg" /></a>
+<p class="right">
+ <a href="http://gnu.org/software/emacs/">
+  <img src="gnu.jpg" /></a></p>
 
 I use [GNU
 Emacs](http://gnu.org/software/emacs/), and I love it. However, one annoyance is

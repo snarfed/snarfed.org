@@ -1,7 +1,8 @@
 referrer spam
 
-<a href="referrer_spam">
-  <img class="right" src="spam.jpg" /></a>
+<p class="right">
+ <a href="referrer_spam">
+  <img src="spam.jpg" /></a></p>
 
 [Referrer spam](http://www.spywareinfo.com/articles/referer_spam/) - or by
 Apache's original misspelling, _referer_ spam - has been a problem at

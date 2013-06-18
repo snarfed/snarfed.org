@@ -1,7 +1,8 @@
 google_talk_sms pidgin plugin
 
-<a href="http://pidgin.im/">
-  <img class="right" src="pidgin_full.png" /></a>
+<p class="right">
+ <a href="http://pidgin.im/">
+  <img src="pidgin_full.png" /></a></p>
 
 [Download google_talk_sms.pl 0.4](https://github.com/snarfed/misc/raw/master/pidgin/google_talk_sms.pl)  
 &nbsp;&nbsp; (requires Pidgin 2.5.2 or above)  

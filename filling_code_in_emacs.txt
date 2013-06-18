@@ -1,6 +1,6 @@
 filling code in emacs
 
-<img class="right" src="gnu.jpg" />
+<p class="right"><img src="gnu.jpg" /></p>
 
 [Emacs](http://gnu.org/software/emacs)
 has a massive feature set, and there's also an endless supply of

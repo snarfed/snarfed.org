@@ -1,7 +1,8 @@
 Locale Music Plugin
 
-<a href="https://market.android.com/details?id=org.snarfed.android.localemusic">
-  <img class="right" src="locale_music_plugin_icon.png"></a>
+<p class="right">
+ <a href="https://market.android.com/details?id=org.snarfed.android.localemusic">
+  <img src="locale_music_plugin_icon.png"/></a></p>
 
 <!-- to package:
 cd ~/src/android/locale_music

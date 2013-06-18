@@ -1,6 +1,6 @@
 wine
 
-<img class="right" src="wine.jpg" alt="wine" />
+<p class="right"><img src="wine.jpg" alt="wine" /></p>
 
 Notes on wine I've tried.
 ![good](/good.png) means I liked it,

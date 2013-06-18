@@ -1,6 +1,6 @@
 podcasts
 
-<img class="right" src="podcast.gif" />
+<p class="right"><img src="podcast.gif" /></p>
 
 Podcasts I listen to regularly, usually while running or at the gym. Most are
 news, current events, entertainment, or game industry analysis.

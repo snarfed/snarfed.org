@@ -1,7 +1,8 @@
 my Stylish userstyle workflow
 
-<a href="https://addons.mozilla.org/en-US/firefox/addon/2108/">
-  <img class="right" src="stylish_icon.png" /></a>
+<p class="right">
+ <a href="https://addons.mozilla.org/en-US/firefox/addon/2108/">
+  <img src="stylish_icon.png" /></a></p>
 
 I like [userstyles](http://userstyles.org/help/userstyles), and I use
 [Stylish](https://addons.mozilla.org/en-US/firefox/addon/2108/) to manage mine.

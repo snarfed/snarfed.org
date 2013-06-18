@@ -1,7 +1,8 @@
 Unhosted: decoupling web apps from storage providers
 
-<a href="http://unhosted.org/">
-  <img class="right" src="unhosted_logo.png"></a>
+<p class="right">
+ <a href="http://unhosted.org/">
+  <img src="unhosted_logo.png"/></a></p>
 
 [Unhosted](http://unhosted.org/) aims to decouple webapps from their backend
 storage on a per user level. The status quo is that each webapp stores and

@@ -1,7 +1,8 @@
 Locale Headphone Buttons Plugin
 
-<a href="https://market.android.com/details?id=org.snarfed.android.headphonebuttons">
-  <img class="right" src="locale_headphone_buttons_plugin_icon.png"></a>
+<p class="right">
+ <a href="https://market.android.com/details?id=org.snarfed.android.headphonebuttons">
+  <img src="locale_headphone_buttons_plugin_icon.png"/></a></p>
 
 <!-- to package:
 cd ~/src/android/headphone_buttons

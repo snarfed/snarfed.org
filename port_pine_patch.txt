@@ -1,7 +1,8 @@
 port_pine_patch
 
-<a href="http://washington.edu/pine/">
-  <img class="right" src="pine.png" /></a>
+<p class="right">
+ <a href="http://washington.edu/pine/">
+  <img src="pine.png" /></a></p>
 
 For the impatient:  
 [Download port_pine_patch.sh](https://github.com/snarfed/misc/blob/master/port_pine_patch.sh)  

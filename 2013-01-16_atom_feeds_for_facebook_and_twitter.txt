@@ -1,7 +1,8 @@
 Atom feeds for Facebook and Twitter
 
-<a href="https://facebook-atom.appspot.com/">
- <img class="right" src="facebook_rss_75.jpg" /></a>
+<p class="right">
+ <a href="https://facebook-atom.appspot.com/">
+  <img src="facebook_rss_75.jpg" /></a></p>
 
 My latest side projects provide Atom feeds for your
 [Facebook news feed](https://facebook-atom.appspot.com/), your

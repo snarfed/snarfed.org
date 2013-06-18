@@ -1,6 +1,6 @@
 fillcode
 
-<img class="right" src="gnu.jpg" />
+<p class="right"><img src="gnu.jpg" /></p>
 
 <!-- to package:
 cd ~/src/emacs

@@ -1,6 +1,6 @@
 Back to work
 
-<img class="right shadow" src="datacenter.jpg" alt="datacenter" />
+<p class="right"><img class="shadow" src="datacenter.jpg" alt="datacenter" /></p>
 
 After [four years on App Engine](/2008-04-07_google_app_engine_launched),
 I took a sabbatical and relaxed for the last couple months. I didn't go on an

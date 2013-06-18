@@ -1,7 +1,8 @@
 Orkut.com!
 
-<a href="http://www.orkut.com/">
-  <img class="right" src="wdyk.jpg"></a>
+<p class="right">
+ <a href="http://www.orkut.com/">
+  <img src="wdyk.jpg"/></a></p>
 
 [![orkut_logo](/orkut_logo.png)](http://www.stanford.edu/~orkut/), a friend
 of mine, has launched a [new social networking site](http://www.orkut.com/).

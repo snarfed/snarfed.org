@@ -1,7 +1,8 @@
 ActivityStreams for Facebook and Twitter
 
-<a href="https://github.com/snarfed/activitystreams-unofficial">
-  <img class="right" src="activitystreams_logo.png" /></a>
+<p class="right">
+ <a href="https://github.com/snarfed/activitystreams-unofficial">
+  <img src="activitystreams_logo.png" /></a></p>
 
 I've just published
 [activitystreams-unofficial](https://github.com/snarfed/activitystreams-unofficial),

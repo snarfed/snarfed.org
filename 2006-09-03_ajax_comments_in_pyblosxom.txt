@@ -1,7 +1,8 @@
 Ajax Comments in Pyblosxom
 
-<a href="pyblosxom_ajax_comments">
-  <img class="right" src="ajax.jpg" /></a>
+<p class="right">
+ <a href="pyblosxom_ajax_comments">
+  <img src="ajax.jpg" /></a></p>
 
 Since I [migrated this site](/2006-08-23_virtual_housewarming) to
 [Pyblosxom](http://pyblosxom.bluesock.org/), I've been tweaking it here and

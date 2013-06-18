@@ -1,6 +1,6 @@
 beer
 
-<img class="right shadow" src="beer_taps.jpg" alt="beer taps" />
+<p class="right"><img class="shadow" src="beer_taps.jpg" alt="beer taps" /></p>
 
 [Beer I'd like to try](#to_try) and
 [beer I've tried](#tried).

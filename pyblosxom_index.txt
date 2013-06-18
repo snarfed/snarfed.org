@@ -1,6 +1,6 @@
 index.py
 
-<img class="right" src="rolodex.jpg" />
+<p class="right"><img src="rolodex.jpg" /></p>
 
 For the impatient:  
 &nbsp; Download [index.py](index.py)  

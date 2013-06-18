@@ -1,7 +1,8 @@
 Thoughts on writing my first Android app
 
-<a href="https://market.android.com/details?id=org.snarfed.android.localemusic">
-  <img class="right" src="locale_music_plugin_icon.png"></a>
+<p class="right">
+ <a href="https://market.android.com/details?id=org.snarfed.android.localemusic">
+  <img src="locale_music_plugin_icon.png"/></a></p>
 
 I just finished my first Android app,
 [Locale Music Plugin](/locale_music_plugin). I don't expect to do much more
