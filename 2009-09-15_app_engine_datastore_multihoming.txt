@@ -10,7 +10,7 @@ which I've been working on for a while now, on the
 [App Engine blog](http://googleappengine.blogspot.com/).
 The post is similar to the
 [Transactions Across Datacenters talk](http://code.google.com/events/io/sessions/TransactionsAcrossDatacenters.html)
-I gave at [Google I/O](http://code.google.com/events/io/) earlier this year, 
+I gave at [Google I/O](http://code.google.com/events/io/) earlier this year,
 but it has much more detail on how we're applying those lessons to the
 datastore itself.
 
@@ -24,7 +24,7 @@ implementation. As I
 > The internal details on how Azure works were particularly compelling.
 > Developers may not need that information to write Azure services, but providing
 > it drastically increases their confidence and comfort level in the system.
-> 
+>
 > Other developers at PDC mentioned this, and I also felt it personally, at a gut
 > level, long before I identified what it was. My reactions to "how to" talks
 > varied widely, but every time I went to an "under the covers" talk, Azure felt

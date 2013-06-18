@@ -1,6 +1,6 @@
 Why I have my own web site
 
-<img class="shadow right" src="house_with_white_picket_fence.jpg" />
+<p class="right"><img class="shadow" src="house_with_white_picket_fence.jpg" /></p>
 
 [Brett](http://www.onebigfluke.com/) recently laid out his reasons for
 [keeping his own web site](http://www.onebigfluke.com/2012/07/focusing-on-positives-why-i-have-my-own.html#comment-form)
@@ -65,7 +65,7 @@ politics, web or otherwise. I do want to express myself and be a citizen of the
 Internet, but those aren't enough on their own. My reason is _control_, control
 over where people find me and where I keep my stuff.
 
-How about you? 
+How about you?
 [Nelson](http://www.somebits.com/weblog/),
 [Maulik](http://www.maulik.net/),
 [Jon](http://jon.appspot.com/),

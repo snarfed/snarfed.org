@@ -19,7 +19,7 @@ Here's the abstract:
 > might extend this to entire racks, or even more inconvenient sets of
 > machines. However, what if your entire datacenter falls off the face of
 > the earth?
-> 
+>
 > This talk will examine how current large scale storage systems handle
 > fault tolerance and consistency, with a particular focus on popular cloud
 > computing platforms. We'll cover techniques such as replication, sharding,
