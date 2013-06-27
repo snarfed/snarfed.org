@@ -1,8 +1,8 @@
 people
 
 <p class="right">
- <a href="people">
-  <img src="people.jpg" /></a></p>
+ <a href="/people">
+  <img src="/people.jpg" /></a></p>
 
 [Ken Ashcraft](https://profiles.google.com/kashcraft)
 

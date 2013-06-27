@@ -2,14 +2,14 @@ my Stylish userstyle workflow
 
 <p class="right">
  <a href="https://addons.mozilla.org/en-US/firefox/addon/2108/">
-  <img src="stylish_icon.png" /></a></p>
+  <img src="/stylish_icon.png" /></a></p>
 
 I like [userstyles](http://userstyles.org/help/userstyles), and I use
 [Stylish](https://addons.mozilla.org/en-US/firefox/addon/2108/) to manage mine.
-I've also [written](more_minimalist_gmail)
-[a number](google_calendar_simplified_userstyle)
-[of](google_tasks_simplified_userstyle)
-[userstyles](ryans_dark_userstyle), which I have to tweak and fix on a regular
+I've also [written](/more_minimalist_gmail)
+[a number](/google_calendar_simplified_userstyle)
+[of](/google_tasks_simplified_userstyle)
+[userstyles](/ryans_dark_userstyle), which I have to tweak and fix on a regular
 basis.
 
 Unfortunately, Stylish's development workflow doesn't work well for me. I edit
@@ -27,7 +27,7 @@ to version control. All of that makes my edit-compile-test loop slow,
 cumbersome, and error prone.
 
 <a href="http://getfirefox.com/">
-  <img class="left" src="firefox.png" /></a>
+  <img class="left" src="/firefox.png" /></a>
 
 [I asked on userstyles.org](http://forum.userstyles.org/comments.php?DiscussionID=15890),
 and the responses pointed to
@@ -47,7 +47,7 @@ local version control workspace, e.g.:
     @-moz-document url-prefix(http), url-prefix(file) {}
 
 <a href="http://gnu.org/software/emacs">
-  <img class="right" src="gnu.jpg" /></a>
+  <img class="right" src="/gnu.jpg" /></a>
 
 (The `@-moz-document` rule is odd, but necessary. Stylish uses `@-moz-document`
 rules to determine whether it should include a userstyle in the context menus

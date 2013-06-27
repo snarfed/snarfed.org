@@ -1,16 +1,16 @@
 snipsnap2svn
 
 <a href="http://snipsnap.org/">
-  <img src="snipsnap.png" style="padding-bottom: 15px" /></a>
-<a href="http://www.w3.org/TR/xslt"><img src="xsl.png"></a>
-<a href="http://subversion.tigris.org/"><img src="subversion.jpg"></a>
+  <img src="/snipsnap.png" style="padding-bottom: 15px" /></a>
+<a href="http://www.w3.org/TR/xslt"><img src="/xsl.png"></a>
+<a href="http://subversion.tigris.org/"><img src="/subversion.jpg"></a>
 
 For the impatient:  
-[Download snipsnap2svn.xslt](snipsnap2svn.xslt)  
+[Download snipsnap2svn.xslt](/snipsnap2svn.xslt)  
 [SnipSnap web site](http://snipsnap.org/)  
 [Subversion web site](http://subversion.tigris.org/)
 
-[snipsnap2svn](snipsnap2svn.xslt) is an
+[snipsnap2svn](/snipsnap2svn.xslt) is an
 [XSLT](http://www.w3.org/TR/xslt) script that converts
 [SnipSnap](http://snipsnap.org/) XML database exports into
 [Subversion dumpfiles](http://svn.collab.net/viewvc/*checkout*/svn/trunk/notes/fs_dumprestore.txt),
@@ -46,5 +46,5 @@ Unfortunately, there are very few working XSLT base64 decoders.
 [Mukul Gandhi's](http://gandhimukul.tripod.com/xmlxslt.htm) is close, but it's
 recursive, so files above a few KB overflow the stack. :/
 
-snipsnap2svn is copyright 2006 [Ryan Barrett](about), and is
+snipsnap2svn is copyright 2006 [Ryan Barrett](/about), and is
 distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).

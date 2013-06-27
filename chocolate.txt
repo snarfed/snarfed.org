@@ -1,11 +1,11 @@
 chocolate
 
 <a href="http://www.vosgeschocolate.com/Merchant2/merchant.mv?Screen=PROD&#38;Product_Code=ECBREDFIRE&#38;Category_Code=CB">
-  <img class="shadow" src="redfirebar.jpg"></a>
+  <img class="shadow" src="/redfirebar.jpg"></a>
 <a href="http://www.recchiuticonfections.com/cgi-bin/chocolate/shop/product.html?id=pNfBNb5v&#38;mv_arg=prod_code%3d819895%2d000039">
-  <img class="shadow" src="recchiuti_bar.jpg"></a>
+  <img class="shadow" src="/recchiuti_bar.jpg"></a>
 <a href="http://www.lindtusa.com/shop-product-detail.cfm?PID=18&#38;RowStart=17&#38;PgNum=3">
-  <img class="shadow" src="lindt_gold_bar.jpg"></a>
+  <img class="shadow" src="/lindt_gold_bar.jpg"></a>
 
 I like chocolate. This page has notes on chocolate I've [tried](#tried) and
 [want to try](#to_try).
@@ -272,8 +272,8 @@ Davao, Phillipines Trinitario 77%
 denis daubos (no web site)
 guinea 70%
 
-[Amma]()
-[75%]()
+Amma
+75%
 ![good](/good.png)
 
 [Pierre Marcolini](http://www.marcolini.be/#/en/collections/tablettes/)

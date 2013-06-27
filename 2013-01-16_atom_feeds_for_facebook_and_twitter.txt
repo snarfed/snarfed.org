@@ -2,7 +2,7 @@ Atom feeds for Facebook and Twitter
 
 <p class="right">
  <a href="https://facebook-atom.appspot.com/">
-  <img src="facebook_rss_75.jpg" /></a></p>
+  <img src="/facebook_rss_75.jpg" /></a></p>
 
 My latest side projects provide Atom feeds for your
 [Facebook news feed](https://facebook-atom.appspot.com/), your
@@ -24,7 +24,7 @@ a couple weeks ago. The only working solution I've found is
 which works but isn't very accessible.
 
 <a href="https://twitter-atom.appspot.com/">
- <img class="left" src="twitter_atom_small.jpg" /></a>
+ <img class="left" src="/twitter_atom_small.jpg" /></a>
 
 Twitter also used to support RSS and Atom in their API, but they
 [deprecated them](http://mashable.com/2012/09/05/twitter-api-rss/) when they

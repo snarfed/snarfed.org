@@ -5,8 +5,8 @@ As of Wednesday, I can chalk up another life experience: my first
 unhappy, so my ophthalmologist ordered the MRI to help her diagnose the
 problem.
 
-<a href="mri_images_and_animations">
-  <img class="right shadow" src="/gallery/mri/thumbs/localizer_00.jpg" /></a>
+<p class="right"><a href="/mri_images_and_animations">
+  <img class="shadow" src="/gallery/mri/thumbs/localizer_00.jpg" /></a></p>
 
 (If you're just here for the
 [pretty pictures and animations of my brain](/mri_images_and_animations),
@@ -23,7 +23,7 @@ head, and slide you into the bowels of a big machine. The machine passes a
 series of RF waves through you, which it uses to produce detailed images of
 the inside of your head or body.
 
-<img class="left shadow" src="mri_machine.jpg" />
+<img class="left shadow" src="/mri_machine.jpg" />
 
 That's all well and good, but it wasn't much comfort while I was actually in
 it. First, I had to lie perfectly still for an hour. No coughing, scratching,
@@ -38,7 +38,7 @@ klaxon horn instead, with the business end pointed right at my ears. It was
 loud, painful, and the vibrations were so strong, I felt like they were
 melting my bones.
 
-<a href="mri_images_and_animations">
+<a href="/mri_images_and_animations">
   <img class="right shadow" src="/gallery/mri/thumbs/t2_axial_17.jpg" /></a>
 
 All of that was a walk in the park, though, compared to to the claustrophobia.
@@ -54,7 +54,7 @@ techician told me over the intercom how long it would be. They started short,
 first 30 seconds, then a minute and a half, then ramped up to three to six
 minutes.
 
-<a href="mri_images_and_animations">
+<a href="/mri_images_and_animations">
   <img class="left shadow" src="/gallery/mri/thumbs/post_t1_axial_00.jpg" /></a>
 
 By the third scan, the enclosed space had me ready to panic. I managed to talk
@@ -70,7 +70,7 @@ up each one, fiercely anticipating the 60 minute mark. When the technician
 pulled me out at 28 minutes, I was ecstatic, and immediately asked for advice.
 She looked vaguely surprised.
 
-<a href="mri_images_and_animations">
+<a href="/mri_images_and_animations">
   <img class="right shadow" src="/gallery/mri/thumbs/post_t1_sag_09.jpg" /></a>
 
 "Hmm, close your eyes and try to think of something else, I guess?"
@@ -85,7 +85,7 @@ physical discomfort, but that was nothing compared to the constant,
 overwhelming fear and panic. The urge to tear off the restraints, claw apart
 the walls of the tube, to just plain _get out_, was incredibly powerful.
 
-<a href="mri_images_and_animations">
+<a href="/mri_images_and_animations">
   <img class="left shadow" src="/gallery/mri/thumbs/t2_axial_07.jpg" /></a>
 
 When they finally pulled me out, I was drained. I could barely sit up. The

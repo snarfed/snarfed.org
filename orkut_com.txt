@@ -1,8 +1,6 @@
 orkut.com
 
-<a href="http://orkut.com/">
-  <img class="right shadow" src="orkut.png" /></a>
-
+<a href="http://orkut.com/"><img class="shadow" src="/orkut.png" /></a>
 is a social networking site that's near and dear to my heart. It's written by a
 good friend of mine named, surprisingly enough,
 [Orkut](http://cs.stanford.edu/~orkut/). He's been writing social networking

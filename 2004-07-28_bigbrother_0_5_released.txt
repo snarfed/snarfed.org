@@ -1,7 +1,7 @@
 bigbrother 0.5 released
 
-<a href="bigbrother">
-  <img class="right shadow" src="bigbrother_screenshot_thumb.jpg" /></a>
+<p class="right"><a href="/bigbrother">
+  <img class="shadow" src="/bigbrother_screenshot_thumb.jpg" /></a></p>
 
 I've released version 0.5 of [bigbrother](/bigbrother), a program that
 generates statistics and graphs about your IM away messages. Highlights from

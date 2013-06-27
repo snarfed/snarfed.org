@@ -1,6 +1,6 @@
 pyblosxom ajax comments
 
-<p class="right"><img src="ajax.jpg" /></p>
+<p class="right"><img src="/ajax.jpg" /></p>
 
 _This patch was applied to the Pyblosxom contributed plugins pack in
 [revision 973](http://pyblosxom.svn.sourceforge.net/viewvc/pyblosxom?view=rev&revision=973).
@@ -57,7 +57,7 @@ Finally, this script tag must be included somewhere after the `</form>` tag:
 All of these tags are included in the default comment-form template that comes
 with this plugin.
 
-AJAX comment support is copyright 2006 [Ryan Barrett](about), and is
+AJAX comment support is copyright 2006 [Ryan Barrett](/about), and is
 distributed under the [GPL](http://www.gnu.org/licenses/gpl.html). Thanks to
 [Todd Warner](http://www.dma.org/cgi-bin/cgiwrap/tw/toddblog) and
 [Blake Winton](http://bwinton.latte.ca/)

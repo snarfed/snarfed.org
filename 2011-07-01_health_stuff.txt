@@ -5,7 +5,7 @@ about is the weather and your health. Well, maybe I'm getting old, but it's hot
 here, and I'm about to write about my health.
 
 <a href="http://www.webmd.com/allergies/sinus-pain-pressure-9/neti-pots">
-  <img class="right" src="neti_pot.jpg"></a>
+  <img class="right" src="/neti_pot.jpg"></a>
 
 Don't worry! I'm fine. I've been lucky to be healthy my whole life. I've never
 had surgery or any other major procedure, and I see doctors rarely enough that
@@ -33,7 +33,7 @@ ie neti pot, before anything more drastic. I tried it, quickly graduated to the
 and haven't had a sinus infection since! One down, two to go.
 
 <a href="http://www.webmd.com/pain-management/knee-pain/runners-knee">
-  <img class="left shadow" src="knee_brace.jpg"></a>
+  <img class="left shadow" src="/knee_brace.jpg"></a>
 
 Around the same time, I stopped [running](/2006-02-01_running_maps) due to pain
 in my left knee. It developed gradually over years, only while running, and
@@ -55,7 +55,7 @@ slept [on my stomach, the worst possible way](http://www.neckpainsupport.com/200
 for my whole life.
 
 <a href="http://www.thestick.com/">
-  <img class="right" src="the_stick.jpg"></a>
+  <img class="right" src="/the_stick.jpg"></a>
 
 My doctor diagnosed "monitor neck" due to sitting in a static position for long
 periods of time. I started stretching, switched to sleeping on my side and back,

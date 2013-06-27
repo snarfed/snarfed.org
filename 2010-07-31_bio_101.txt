@@ -1,7 +1,7 @@
 Bio 101
 
 <a href="http://webcast.berkeley.edu/course_details_new.php?seriesid=2010-B-7703&semesterid=2010-B">
-  <img class="shadow right" src="dna.jpg" /></a>
+  <img class="shadow right" src="/dna.jpg" /></a>
 
 I've been taking an
 [online biology class](http://webcast.berkeley.edu/course_details_new.php?seriesid=2010-B-7703&semesterid=2010-B)
@@ -17,7 +17,7 @@ human biology. I also have [friends](http://maulik.net/) who follow and work(ed)
 in biotech, and that field is only getting more interesting as time passes.
 
 <a href="http://webcast.berkeley.edu/course_details_new.php?seriesid=2010-B-7703&semesterid=2010-B">
-  <img class="left" src="berkeley_crest.jpg" /></a>
+  <img class="left" src="/berkeley_crest.jpg" /></a>
 
 Fundamentals are key, though, so I'm starting at the bottom. I remember some of
 the basics from high school. Cell membrane, nucleus, mitochondria, golgi body.

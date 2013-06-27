@@ -1,7 +1,7 @@
 OpenID server for PyBlosxom
 
-<a href="http://openid.net/"><img src="openid-logo.png"></a>
-<a href="http://pyblosxom.bluesock.org/"><img src="pyblosxom.jpg"></a>
+<a href="http://openid.net/"><img src="/openid-logo.png"></a>
+<a href="http://pyblosxom.bluesock.org/"><img src="/pyblosxom.jpg"></a>
 
 I've just posted an
 [OpenID server plugin for PyBlosxom](/pyblosxom_openid_server).

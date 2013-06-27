@@ -2,9 +2,9 @@ sync_wordpress.sh
 
 <p class="right">
  <a href="http://wordpress.org/">
-  <img src="wordpress.png" alt="wordpress" /></a></p>
+  <img src="/wordpress.png" alt="wordpress" /></a></p>
 
-[sync_wordpress.sh](sync_wordpress.sh) syncs
+[sync_wordpress.sh](/sync_wordpress.sh) syncs
 [WordPress](http://wordpress.org/), files, plugins, themes, and options
 stored in the database from one WordPress instance to another. The database
 options are also checked into a Subversion repository.
@@ -16,7 +16,7 @@ head, and checks it in. Finally, it diffs the dump against the remote database
 and applies it.
 
 <a href="http://mysql.org/">
-  <img class="left" src="mysql.png" alt="mysql" /></a>
+  <img class="left" src="/mysql.png" alt="mysql" /></a>
 
 The user is prompted at each step and may choose whether to copy and update
 files, check in the new dump, and apply it remotely. The source and destination

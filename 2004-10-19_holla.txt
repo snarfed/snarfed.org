@@ -1,8 +1,8 @@
 Holla!
 
 <p class="right">
- <a href="p4">
-  <img src="p2p.jpg" /></a></p>
+ <a href="/p4">
+  <img src="/p2p.jpg" /></a></p>
 
 It took us a while, but we finally packaged up [p4](/p4) and [released
 it](http://freshmeat.net/projects/p4). Well, we've only released the backend and

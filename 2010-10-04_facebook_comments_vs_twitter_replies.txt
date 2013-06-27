@@ -11,7 +11,7 @@ fundamentally different from
 normal [tweets](http://support.twitter.com/articles/219954). That makes me sad.
 
 <a href="http://twitter.com/notch">
-  <img class="right" src="notch_twitter_at_replies.png" /></a>
+  <img class="right" src="/notch_twitter_at_replies.png" /></a>
 
 I don't post to Facebook much, or Twitter at all, apart from
 [syndicating this blog](http://twitter.com/snarfed_org), but I do read
@@ -39,7 +39,7 @@ kind of positive context, but what I want is _negative_ context. I don't want
 people to see my replies, or even know I replied at all, unless they explicitly
 choose to read the original tweet that I replied to.
 
-<img class="right" src="facebook_comment.png" />
+<img class="right" src="/facebook_comment.png" />
 
 This unified broadcast was a conscious design decision on Twitter's part.
 Facebook status updates and comments are inherently different things, but

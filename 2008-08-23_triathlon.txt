@@ -1,7 +1,7 @@
 Triathlon
 
-<a href="/gallery/tri_for_fun">
-  <img class="right shadow" src="tri_for_fun.jpg" alt="tri for fun" /></a>
+<p class="right"><a href="/gallery/tri_for_fun">
+  <img class="shadow" src="/tri_for_fun.jpg" alt="tri for fun" /></a></p>
 
 I ran my first triathlon last weekend!
 [Ken and Tina](http://kenandtina08.com/) and I stayed at

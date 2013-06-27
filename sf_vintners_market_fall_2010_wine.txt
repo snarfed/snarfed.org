@@ -1,11 +1,11 @@
 SF Vintners Market Fall 2010 wine
 
-<a href="http://www.sfvintnersmarket.com/">
-  <img class="right shadow" src="sf_vintners_market_fall_2010.jpg" alt="wine" /></a>
+<p class="right"><a href="http://www.sfvintnersmarket.com/">
+  <img class="shadow" src="/sf_vintners_market_fall_2010.jpg" alt="wine" /></a></p>
 
 Notes on wines we tasted at the fall
 [SF Vintners Market 2010](http://www.sfvintnersmarket.com/).
-I've also folded them into my [wine page](wine).
+I've also folded them into my [wine page](/wine).
 
 ![good](/good.png) means I liked it,
 ![ok](/ok.png) means it was just ok,
@@ -218,7 +218,7 @@ Old Vine Zinfandel 2006
 ![good](/good.png),
 [Dry Creek Zinfandel 2007](http://www.cellartracker.com/wine.asp?iWine=883544)
 ![ok](/ok.png),
-[Dogwood]()
+Dogwood
 [Mendocino Zinfandel 2007](http://www.cellartracker.com/wine.asp?iWine=837725)
 ![bad](/bad.png),
 [Cabernet Sauvignon 2006](http://www.cellartracker.com/wine.asp?iWine=883951)

@@ -1,6 +1,6 @@
 Back to work
 
-<p class="right"><img class="shadow" src="datacenter.jpg" alt="datacenter" /></p>
+<p class="right"><img class="shadow" src="/datacenter.jpg" alt="datacenter" /></p>
 
 After [four years on App Engine](/2008-04-07_google_app_engine_launched),
 I took a sabbatical and relaxed for the last couple months. I didn't go on an
@@ -14,7 +14,7 @@ Monday and started on a [new project](/2010-03-13_new_job). It's early
 still, and I have a lot of domain knowledge to ramp up on, but my new team is
 great, and I'm already hacking on some really cool stuff. I'm excited!
 
-<img class="left shadow" src="google_headquarters_sign.jpg" alt="google headquarters sign" />
+<img class="left shadow" src="/google_headquarters_sign.jpg" alt="google headquarters sign" />
 
 Sadly, I've [never](/2004-12-02_suburbia_ho)
 [quite](/2009-05-31_looking_for_a_roommate_in_sf)

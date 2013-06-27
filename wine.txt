@@ -1,6 +1,6 @@
 wine
 
-<p class="right"><img src="wine.jpg" alt="wine" /></p>
+<p class="right"><img src="/wine.jpg" alt="wine" /></p>
 
 Notes on wine I've tried.
 ![good](/good.png) means I liked it,
@@ -295,7 +295,7 @@ Nobile 2009
 </span>
 
 <span title="dinner at vecchie del mura, 7/5/2012">
-[Fornacella]()
+Fornacella
 (Montalcino, Italy)  
 [Brunello Di Montalcino 2007](https://www.cellartracker.com/wine.asp?iWine=1085946)
 ![good](/good.png)
@@ -1584,7 +1584,7 @@ Old Vine Zinfandel 2006
 ![good](/good.png),
 [Dry Creek Zinfandel 2007](http://www.cellartracker.com/wine.asp?iWine=883544)
 ![ok](/ok.png),
-[Dogwood]()
+Dogwood
 [Mendocino Zinfandel 2007](http://www.cellartracker.com/wine.asp?iWine=837725)
 ![bad](/bad.png),
 [Cabernet Sauvignon 2006](http://www.cellartracker.com/wine.asp?iWine=883951)
@@ -1739,7 +1739,7 @@ _Grand Cru Sonnenglanz_ Pinot Gris 2005
 </span>
 
 <span title="dinner w/gretchen at guy savoy in vegas, 10/2/2010">
-[Domaine Bernard Moreau et Fils]()
+Domaine Bernard Moreau et Fils
  (Volnay, France)  
 [_Santenots_ 2004](http://www.everywine.co.uk/wine.store/Products/Domaine-Bernard-Moreau-et-Fils-SANTENOTS-1er-Cru-Volnay-70845/Show.html)
 (Pinot Noir)
@@ -3755,9 +3755,9 @@ Robert Klingenfus
 </span>
 
 <!--
-[Morlin-a-Vent]() (this is a region, not a winery)
+Morlin-a-Vent (this is a region, not a winery)
 ()
-[Gamay](),
+Gamay,
 ![bad](/bad.png) -->
 <!-- cav wine bar w/gretchen before symphony, 6/13/2009 -->
 
@@ -3870,8 +3870,8 @@ Bridesmaid
 
 <!--
 TODO
-[Chateau Richon something]()
-[Bordeaux blend]()
+Chateau Richon something
+Bordeaux blend
 ![ok](/ok.png) -->
 <!-- on the bordeaux flight at district, with kieran, 3/30/2009 -->
 

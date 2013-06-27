@@ -1,11 +1,11 @@
 Yay media consumption
 
 <a href="http://serenitymovie.com/">
-  <img class="shadow" src="serenity.jpg"></a>
+  <img class="shadow" src="/serenity.jpg"></a>
 <a href="http://hbo.com/thewire/">
-  <img class="shadow" src="the_wire.jpg"></a>
+  <img class="shadow" src="/the_wire.jpg"></a>
 <a href="http://abc.go.com/primetime/lost/">
-  <img class="shadow" src="lost.jpg"></a>
+  <img class="shadow" src="/lost.jpg"></a>
 
 I saw [Serenity](http://serenitymovie.com/) over the weekend, and it was a lot
 of fun. Definitely a worthwhile way to spend a couple hours, especially since I

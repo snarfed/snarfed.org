@@ -2,7 +2,7 @@ ido.el post-command-hook error
 
 <p class="right">
  <a href="http://gnu.org/software/emacs/">
-  <img src="gnu.jpg" /></a></p>
+  <img src="/gnu.jpg" /></a></p>
 
 If you use [Emacs](http://gnu.org/software/emacs) 23 and
 [ido](http://www.emacswiki.org/emacs/InteractivelyDoThings), and you see this

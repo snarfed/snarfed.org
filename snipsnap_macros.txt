@@ -2,18 +2,18 @@ snipsnap macros
 
 <p class="right">
  <a href="http://snipsnap.org/">
-  <img src="snipsnap-logo.png" /></a></p>
+  <img src="/snipsnap-logo.png" /></a></p>
 
 For the impatient:  
-[Download snarfed.jar](snarfed.jar)  
-[Download the source](snarfed-0.3.tar.bz2)  
+[Download snarfed.jar](/snarfed.jar)  
+[Download the source](/snarfed-0.3.tar.bz2)  
 [SnipSnap macros](http://snipsnap.org/space/Macro+Tutorial)  
 [SnipSnap web site](http://snipsnap.org/)
 
 In the course of setting up our web sites, [snarfed.org](http://snarfed.org/)
 and [maulik.net](http://maulik.freeshell.net/Miki.pl?page=home.miki),
-[Maulik](Maulik) and I have written a number of macros for SnipSnap. To install
-and use these macros, [download snarfed.jar](snarfed.jar), put it in your
+[Maulik](/Maulik) and I have written a number of macros for SnipSnap. To install
+and use these macros, [download snarfed.jar](/snarfed.jar), put it in your
 SnipSnap application's WEB-INF/lib/ subdirectory, and restart SnipSnap.
 
 The included macros are:

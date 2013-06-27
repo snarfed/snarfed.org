@@ -1,12 +1,12 @@
 GDC 2008
 
 <a href="http://gdconf.com/">
-  <img class="shadow" src="gdc_2008_logo.jpg" alt="GDC 2008" /></a>
+  <img class="shadow" src="/gdc_2008_logo.jpg" alt="GDC 2008" /></a>
 
 I've been to [Game Developers Conference](http://gdconf.com/) for seven years
 now. It's always inspiring, thought provoking, and lots of fun. I've written up my
-thoughts on the [last](gdc_2005) [few](gdc_2006)
-[years](gdc_2007), and I'm back to do it again this year.
+thoughts on the [last](/gdc_2005) [few](/gdc_2006)
+[years](/gdc_2007), and I'm back to do it again this year.
 
 As always, sites like [Gamasutra][], [GameSpot][], and [Next Generation][] have
 comprehensive coverage. What's more, the full proceedings will be available
@@ -42,7 +42,7 @@ the 2005 holiday season and the PS3 and the Wii in 2006. For that reason,
 Microsoft, Sony, and Nintendo were the loudest voices at the last couple GDCs.
 
 <a href="http://www.gamespot.com/news/6186365.html">
-  <img class="right shadow" src="gdc_2008_bioshock.jpg" /></a>
+  <img class="right shadow" src="/gdc_2008_bioshock.jpg" /></a>
 
 The new consoles had settled in by this year's GDC, though, so hardware took a
 back seat to software. Many of the most popular talks were given by the
@@ -77,7 +77,7 @@ making microtransaction middleware, [TwoFish][], a sure sign that this trend has
 ["Free to play, pay for stuff"]: https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6180
 [TwoFish]: http://twofish.com/
 
-<img class="left" src="gdc_2008_sword.jpg" />
+<img class="left" src="/gdc_2008_sword.jpg" />
 
 I have to admit, I consistently found myself dismissing these trends out of
 hand. I don't use social networks much, I don't often "generate content" outside
@@ -101,7 +101,7 @@ audience.
 ### Microsoft's Community Games
 
 <a href="http://forums.xna.com/ShowThread.aspx?PostID=46554">
-  <img class="right shadow" src="gdc_2008_xbl_community.jpg" /></a>
+  <img class="right shadow" src="/gdc_2008_xbl_community.jpg" /></a>
 
 Even if I am a 20th century dinosaur, I'm still incredibly excited about
 Microsoft's [XBox Live Community Games][] announcement. It removes the
@@ -111,7 +111,7 @@ indie developers upload games directly to XBox Live.
 [XBox Live Community Games]: http://forums.xna.com/ShowThread.aspx?PostID=46554
 
 Microsoft hinted about this last year, and I
-[foamed at the mouth](GDC_2007#community_arcade), but no one else paid
+[foamed at the mouth](/GDC_2007#community_arcade), but no one else paid
 much attention. I could say "I told you so," but I'm more interested in actually
 trying it out. Honestly, I'm so excited that this writeup may be shorter than
 usual. I can't wait to write an XBox 360 game on my laptop (!), upload it to
@@ -128,7 +128,7 @@ Sony, Nintendo, are you listening? That certification process for [PSN][] and
 ### Are Games Maturing?
 
 <a href="http://www.gamespot.com/news/6186460.html">
-  <img class="left shadow" src="gdc_2008_awards.jpg" /></a>
+  <img class="left shadow" src="/gdc_2008_awards.jpg" /></a>
 
 Apart from software and web 2.0 buzzwords, the main theme that emerged was a
 broad maturing across the industry. I don't mean trading guns and girls for
@@ -171,7 +171,7 @@ these practices in real world situations.
 #### Game Design
 
 <a href="http://www.gamespot.com/news/6186636.html">
-  <img class="right shadow" src="gdc_2008_portal.jpg" /></a>
+  <img class="right shadow" src="/gdc_2008_portal.jpg" /></a>
 
 Project management wasn't the only aspect of the industry that seemed to be
 maturing. Many developers also discussed the best practices they'd adopted in
@@ -207,7 +207,7 @@ unusual trends in game design recently.
 #### Business
 
 <a href="http://habbo.com/">
-  <img class="left shadow" src="gdc_2008_habbo_hotel.jpg" /></a>
+  <img class="left shadow" src="/gdc_2008_habbo_hotel.jpg" /></a>
 
 As opposed to game development and design, the business of games has already
 matured in many respects. Still, a number of talks revealed encouraging new
@@ -242,7 +242,7 @@ innovation, so if they're pulling their head out of the sand, that's a sign.
 [id]: http://idsoftware.com/
 
 <a href="http://www.gamespot.com/news/6186459.html">
-  <img class="right shadow" src="gdc_2008_crayon_physics.jpg" /></a>
+  <img class="right shadow" src="/gdc_2008_crayon_physics.jpg" /></a>
 
 As always, this year's conference came to an end all too quickly.
 Congratulations to [Portal][], [Crayon Physics][], and the rest of the other

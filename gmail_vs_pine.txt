@@ -1,9 +1,9 @@
 gmail vs pine
 
 <a href="http://washington.edu/pine/"
-  <img src="pine.png"></a>
-<img src="gloves.jpg">
-<a href="http://gmail.com/"><img src="gmail.png"></a>
+  <img src="/pine.png"></a>
+<img src="/gloves.jpg">
+<a href="http://gmail.com/"><img src="/gmail.png"></a>
 
 _Note: this article was written in February 2005. The ideas still apply, but
 many of the technical details about Gmail and Pine have changed. Caveat reader!_
@@ -23,7 +23,7 @@ I ended up using it for five weeks, and while I eventually switched back to
 Pine, I liked Gmail a lot more than I expected. It made me question lots of
 things I took for granted, and showed me that there's plenty of innovation left
 in email clients. I'm currently [writing patches for
-Pine](software#patches) to implement the features I miss most from Gmail.
+Pine](/software#patches) to implement the features I miss most from Gmail.
 (Many people have gone the other direction and written [Greasemonkey scripts for
 Gmail](http://dunck.us/collab/GreaseMonkeyUserScriptsSpecific#head-2b681c0a24baff8899d7163cc7f805c75e1f44e4)
 to add features and customize it to their liking.)
@@ -107,5 +107,5 @@ sense...but that's a pretty odd perspective.
   * Gmail might be smart about (not) displaying quoted text, but it can't handle
 _composing_ with quoted text to save its life. There are a ton of problems with
 this, but among others, it needs a way to [remove trailing quotes when
-sending](pine_remove_trailing_quote_patch). (OK, to be fair, I doubt this
+sending](/pine_remove_trailing_quote_patch). (OK, to be fair, I doubt this
 feature is in high demand.)

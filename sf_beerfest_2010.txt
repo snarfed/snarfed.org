@@ -1,13 +1,13 @@
 SF Beerfest 2010
 
-<a href="http://sfbeerfest.com/">
-  <img class="right shadow" src="sf_beerfest_2010.jpg" alt="sf beerfest 2010" /></a>
+<p class="right"><a href="http://sfbeerfest.com/">
+  <img class="shadow" src="/sf_beerfest_2010.jpg" alt="sf beerfest 2010" /></a></p>
 
 Notes on beer I tried at [SF Beerfest 2010](http://www.sfbeerfest.com/)
 with [Clayton](http://www.facebook.com/profile.php?id=508935265),
 [Nathan](http://blog.nathanstoll.com/), and
 [Lauren](http://www.facebook.com/profile.php?id=692201379).
-I've also folded them into my [beer page](beer).
+I've also folded them into my [beer page](/beer).
 
 ![good](/good.png) means I liked it,
 ![ok](/ok.png) means it was just ok,
@@ -65,10 +65,10 @@ I've also folded them into my [beer page](beer).
 
 <!-- couldn't find this one :(
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
-[Buck Bean]()
-[Red]()
+Buck Bean
+Red
 ![ok](/ok.png),
-[Black]()
+Black
 ![ok](/ok.png)
 </span>
 -->

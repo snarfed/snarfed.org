@@ -1,14 +1,14 @@
 privacy through prepaid credit cards
 
-<a href="http://mastercard.com/"><img src="mastercard.jpg"></a>
-<a href="http://americanexpress.com/"><img src="amex.jpg"></a>
-<a href="http://visa.com/"><img src="visa.jpg"></a>
+<a href="http://mastercard.com/"><img src="/mastercard.jpg"></a>
+<a href="http://americanexpress.com/"><img src="/amex.jpg"></a>
+<a href="http://visa.com/"><img src="/visa.jpg"></a>
 
 _I originally wrote this in March 2005, and only update it occasionally. It's
 still a good overview, and generally up to date, but parts may sometimes be
 stale. Also see
-[Why I'm weird about privacy](2011-08-03_why_im_weird_about_privacy) and
-[faking out address and credit card forms](faking_out_address_and_credit_card_forms)._
+[Why I'm weird about privacy](/2011-08-03_why_im_weird_about_privacy) and
+[faking out address and credit card forms](/faking_out_address_and_credit_card_forms)._
 
 
 If you've known me for any length of time, you know that I'm a privacy freak. I
@@ -174,7 +174,7 @@ existing card, also known as recharging or reloading.
 Recharging is definitely preferable to buying a new card, since the new card
 would have a new number. If you used the card to pay any recurring bills, such
 as [Netflix](http://netflix.com/) or [Vonage](http://vonage.com/)
-([which I love](2004-12-24_its_the_phone_stupid)), you'd have to switch each of
+([which I love](/2004-12-24_its_the_phone_stupid)), you'd have to switch each of
 those services to the new card number. Unfortunately, many prepaid cards aren't
 rechargeable at all.
 

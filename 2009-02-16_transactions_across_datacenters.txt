@@ -1,7 +1,7 @@
 Transactions Across Datacenters Slides
 
-<a href="transactions_across_datacenters.html">
-  <img class="right shadow" src="datacenter.jpg" alt="datacenter" /></a>
+<p class="right"><a href="/transactions_across_datacenters.html">
+  <img class="shadow" src="/datacenter.jpg" alt="datacenter" /></a></p>
 
 I've posted the
 [slides](/transactions_across_datacenters_io.html)

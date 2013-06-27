@@ -2,7 +2,7 @@ blogpost.sh
 
 <p class="right">
  <a href="http://wordpress.org/">
-  <img src="wordpress.png" alt="wordpress" /></a></p>
+  <img src="/wordpress.png" alt="wordpress" /></a></p>
 
 I use [Stuart Rackham](http://srackham.wordpress.com/)'s
 [blogpost.py](http://srackham.wordpress.com/blogpost-readme/)

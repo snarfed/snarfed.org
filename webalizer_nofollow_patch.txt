@@ -1,6 +1,6 @@
 webalizer nofollow patch
 
-<a href="http://webalizer.com/"><img src="webalizer.png"></a>
+<a href="http://webalizer.com/"><img src="/webalizer.png"></a>
 
 For the impatient:  
 [Patch for Webalizer 2.01-10](https://github.com/snarfed/misc/blob/master/patches/webalizer_nofollow.patch)  
@@ -8,7 +8,7 @@ For the impatient:
 [Google's nofollow
 page](http://googleblog.blogspot.com/2005/01/preventing-comment-spam.html)
 
-The latest salvo in the battle against [referrer spam](referrer_spam) and
+The latest salvo in the battle against [referrer spam](/referrer_spam) and
 comment spam is
 [nofollow](http://googleblog.blogspot.com/2005/01/preventing-comment-spam.html),
 an HTML tag that instructs search engines not to count a link in their

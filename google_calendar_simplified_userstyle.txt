@@ -1,7 +1,7 @@
 Google Calendar Simplified userstyle
 
-<a href="google_calendar_simplified.png" class="shutter">
-  <img class="right shadow" src="google_calendar_simplified_thumb.png" /></a>
+<p class="right"><a href="/google_calendar_simplified.png" class="shutter">
+  <img class="shadow" src="/google_calendar_simplified_thumb.png" /></a></p>
 
 [google_calendar_simplified.css](https://github.com/snarfed/misc/blob/master/userscripts/google_calendar_simplified.css) is a
 [userstyle](http://userstyles.org/help/userstyles) that simplifies

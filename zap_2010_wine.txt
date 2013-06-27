@@ -1,11 +1,11 @@
 ZAP 2010 wine
 
-<a href="http://www.zinfandel.org/default.asp?n1=14&n2=487">
-  <img class="right shadow" src="zinfandel_festival.jpg" alt="wine" /></a>
+<p class="right"><a href="http://www.zinfandel.org/default.asp?n1=14&n2=487">
+  <img class="shadow" src="/zinfandel_festival.jpg" alt="wine" /></a></p>
 
 Notes on
-[wines we tasted at ZAP 2010](2010-02-01_zap_2010).
-I've also folded them into my [wine page](wine).
+[wines we tasted at ZAP 2010](/2010-02-01_zap_2010).
+I've also folded them into my [wine page](/wine).
 
 ![good](/good.png) means I liked it,
 ![ok](/ok.png) means it was just ok,

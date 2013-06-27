@@ -2,7 +2,7 @@ Thoughts on writing my first Android app
 
 <p class="right">
  <a href="https://market.android.com/details?id=org.snarfed.android.localemusic">
-  <img src="locale_music_plugin_icon.png"/></a></p>
+  <img src="/locale_music_plugin_icon.png"/></a></p>
 
 I just finished my first Android app,
 [Locale Music Plugin](/locale_music_plugin). I don't expect to do much more
@@ -35,7 +35,7 @@ try out everything, but I did use the core toolchain from end to end, and it was
 smooth and solid.
 
 <a href="http://android.com/">
-  <img class="left" src="android.png"></a>
+  <img class="left" src="/android.png"></a>
 
 Naturally, though, it wasn't all rainbows and ponies. A couple aspects struck me
 as particularly exciting, but when I pushed, I found them unfinished, all the

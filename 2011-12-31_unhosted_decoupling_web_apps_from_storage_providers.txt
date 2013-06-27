@@ -2,7 +2,7 @@ Unhosted: decoupling web apps from storage providers
 
 <p class="right">
  <a href="http://unhosted.org/">
-  <img src="unhosted_logo.png"/></a></p>
+  <img src="/unhosted_logo.png"/></a></p>
 
 [Unhosted](http://unhosted.org/) aims to decouple webapps from their backend
 storage on a per user level. The status quo is that each webapp stores and
@@ -41,8 +41,8 @@ much less large scale data processing. Also, there's no story for onboarding new
 users. They could punt and start by letting apps store their data for them, but
 that raises an awkward migration question.
 
-<a class="shutter" href="unhosted_infographic.png">
-  <img class="shadow left" src="unhosted_infographic_thumb.png"></a>
+<a class="shutter" href="/unhosted_infographic.png">
+  <img class="shadow left" src="/unhosted_infographic_thumb.png"></a>
 
 Most of all, though, I think they're missing a sales pitch. End user data
 portability may have gained some mainstream mindshare, but it'll probably never

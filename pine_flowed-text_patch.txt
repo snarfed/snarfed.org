@@ -2,7 +2,7 @@ pine flowed-text patch
 
 <p class="right">
  <a href="http://washington.edu/pine/">
-  <img src="pine.png" /></a></p>
+  <img src="/pine.png" /></a></p>
 
 For the impatient:  
 Patch for Pine [4.60 and
@@ -25,4 +25,4 @@ it not to _display_ flowed text. This patch adds that option.
 
 There are also [pre-built packages](http://www.quantumlinux.com/~chuckw/pine/)
 with this patch, thanks to Chuck Wolber, and [instructions on building Pine from
-source](pine_reply-all_patch). Scroll to the bottom.
+source](/pine_reply-all_patch). Scroll to the bottom.

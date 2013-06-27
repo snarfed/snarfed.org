@@ -1,7 +1,7 @@
 SnipSnap register without email
 
-<a href="http://snipsnap.org/">
-  <img class="right shadow" src="snipsnap-logo.png" /></a>
+<p class="right"><a href="http://snipsnap.org/">
+  <img class="shadow" src="/snipsnap-logo.png" /></a></p>
 
 _This
 article is also [posted on
@@ -27,7 +27,7 @@ I could do this by
 that was a little too invasive for my tastes. (I really should do this
 eventually, though...anyone want to post a tutorial on editing the SnipSnap
 JSPs?) Instead, I used CSS, and simply added this to
-`misc.css` in my [SnipSnap theme](snarfed_org_snipsnap_theme):
+`misc.css` in my [SnipSnap theme](/snarfed_org_snipsnap_theme):
 
     /* don't ask people for their email address */
     input#email { display: none; }
@@ -66,7 +66,7 @@ Then, add a link to noemail.js:
     <script type="text/javascript" src="/snarfed.js" />
 
 Again, you could edit the JSPs to put this in the <meta> section, but I'm intent
-on avoiding the JSPs, so I just wrote a [macro](snipsnap_macros) to
+on avoiding the JSPs, so I just wrote a [macro](/snipsnap_macros) to
 insert this tag.
 
 Hope this helps!

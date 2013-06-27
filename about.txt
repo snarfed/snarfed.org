@@ -1,7 +1,13 @@
 about
 
-<a class="shutter" href="ryan.jpg">
-  <img class="right shadow" src="ryan_profile_square_thumb.jpg" /></a>
+<p class="right"><a class="shutter" href="/ryan.jpg">
+  <img class="shadow" src="/ryan_profile_square_thumb.jpg" /></a></p>
+
+Ryan Barrett
+
+public&#64;ryanb&#46;org
+
+<br style="clear: both" />
 
 snarfed.org has been around [since early 2002](/snarfed_org_history). It was
 [born](/2003-07-18_its_live) on my own server, which lived first in dorm rooms at
@@ -17,6 +23,6 @@ On the software side, it started on [SnipSnap](http://snipsnap.org/), then
 [PyBlosxom](http://pyblosxom.bluesock.org/), and
 [now runs](/2010-08-08_migrated_to_wordpress) on
 [WordPress](http://wordpress.org/), first on
-[its own theme](/snarfed_wordpress_theme) and now on a modified
-[Ryu](http://wordpress.org/themes/ryu/) theme. See my [software page](/software)
+[its own theme](/snarfed_wordpress_theme) and now on a
+[modified Ryu theme](/2013-06-16_redesigned). See my [software page](/software)
 for more of its custom patches, plugins, and themes.

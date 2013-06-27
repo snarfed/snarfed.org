@@ -1,8 +1,8 @@
 snipscrape
 
 <p class="right">
- <a href="snipscrape">
-  <img src="scraper.jpg" /></a></p>
+ <a href="/snipscrape">
+  <img src="/scraper.jpg" /></a></p>
 
 Downloads: [snipscrape.sh](https://github.com/snarfed/misc/blob/master/snipscrape.sh)
 and [snipscrape.xslt](https://github.com/snarfed/misc/blob/master/snipscrape.xslt)

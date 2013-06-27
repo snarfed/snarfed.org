@@ -1,8 +1,8 @@
 Announcing libmsntp
 
 <p class="right">
- <a href="libmsntp">
-  <img src="clock.jpg" /></a></p>
+ <a href="/libmsntp">
+  <img src="/clock.jpg" /></a></p>
 
 I've released [libmsntp](/libmsntp) 1.6a, an
 [SNTP](http://www.faqs.org/rfcs/rfc2030.html) library for \*nix. This is the

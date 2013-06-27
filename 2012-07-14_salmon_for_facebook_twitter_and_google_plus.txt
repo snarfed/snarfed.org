@@ -2,7 +2,7 @@ Salmon for Facebook, Twitter, and Google+
 
 <p class="right">
  <a href="https://salmon-unofficial.appspot.com/">
-  <img src="salmon_logo.png" /></a></p>
+  <img src="/salmon_logo.png" /></a></p>
 
 I've just published
 [salmon-unofficial](https://github.com/snarfed/salmon-unofficial), a stand-in

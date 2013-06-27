@@ -1,6 +1,6 @@
 The slow death of game industry sales data
 
-<p class="right"><img class="shadow" src="shredded_paper.jpg" /></p>
+<p class="right"><img class="shadow" src="/shredded_paper.jpg" /></p>
 
 Game sales data is going the wrong direction. It's not going down or up; it's
 disappearing altogether. We're losing the information we need to understand the
@@ -46,7 +46,7 @@ a couple years ago. Low-barrier-to-entry platforms like web, mobile, and digital
 have been feeding an explosion of indie developers who can't afford to buy
 expensive analyst reports, and this hit them below the belt.
 
-<img class="left" src="taped_mouth.jpg" />
+<img class="left" src="/taped_mouth.jpg" />
 
 Finally, and most importantly,
 [digital is the future](http://www.gamasutra.com/view/news/167124/NPD_Digital_nontraditional_business_almost_half_of_retail_game_sales_last_quarter.php), but

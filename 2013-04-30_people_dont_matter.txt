@@ -1,6 +1,6 @@
 People don't matter
 
-<p class="right"><img src="people_silhouettes.jpg" /></p>
+<p class="right"><img src="/people_silhouettes.jpg" /></p>
 
 We like people. No, scratch that; we _love_ people. They're the most important
 thing in the world, at least in our eyes. We think they can do anything they put
@@ -43,7 +43,7 @@ innocent people, protecting anyone else who does, or announcing it with pride
 after the fact.
 
 <a href="http://www.imdb.com/title/tt2732932/">
- <img class="left shadow" src="kill_team_soldier.jpg" /></a>
+ <img class="left shadow" src="/kill_team_soldier.jpg" /></a>
 
 That may sound unfair. War is nothing if not extenuating circumstances, right?
 But that's my point exactly. So far there's no evidence that any of the kill
@@ -97,7 +97,7 @@ entrepreneurs. We romanticize the self-taught genius and the garage inventor,
 but in reality, market incentives and the idea mixing bowls of cities and the
 Internet are driving today's innovations.
 
-<img class="right shadow" src="mother_theresa_hitler.jpg" /></a>
+<img class="right shadow" src="/mother_theresa_hitler.jpg" /></a>
 
 Yes, people are different from each other, and those differences do matter. In
 many ways, people are probably

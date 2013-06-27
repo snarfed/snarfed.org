@@ -1,7 +1,7 @@
 Harley Farms in Pescadero
 
-<a href="http://www.harleyfarms.com/">
-  <img class="right shadow" src="harley_farms_goats.jpg" /></a>
+<p class="right"><a href="http://www.harleyfarms.com/">
+  <img class="shadow" src="/harley_farms_goats.jpg" /></a></p>
 
 Last weekend, we took off for a day,
 [drove up and down the coast](http://maps.google.com/maps?f=q&source=s_q&hl=en&geocode=&q=half+moon+bay,+ca+to+pescadero,+ca&sll=37.469987,-122.433822&sspn=0.210359,0.308304&g=half+moon+bay,+ca&ie=UTF8&ll=37.366883,-122.272339&spn=0.421297,0.616608&z=11),
@@ -17,7 +17,7 @@ It was really fun to see the farm and the goats up close, learn about how
 they're raised, and watch the farmers take care of them.
 
 <a href="http://www.harleyfarms.com/Our-Cheese.htm">
-  <img class="left shadow" src="harley_farms_making_cheese.jpg" /></a>
+  <img class="left shadow" src="/harley_farms_making_cheese.jpg" /></a>
 
 Harley does a brisk business, largely due to how much they open the farm to
 visitors. Anyone can walk right up to their grazing areas and pens, pet the

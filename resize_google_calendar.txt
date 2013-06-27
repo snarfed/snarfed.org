@@ -2,10 +2,10 @@ resize google calendar
 
 <p class="right">
  <a href="http://calendar.google.com/">
-  <img src="google_calendar.jpg" /></a></p>
+  <img src="/google_calendar.jpg" /></a></p>
 
 _Update: try
-[Google Calendar Simplified userstyle](google_calendar_simplified_userstyle)
+[Google Calendar Simplified userstyle](/google_calendar_simplified_userstyle)
 instead!_
 
 I use paper for my personal calendar, but at work, I use

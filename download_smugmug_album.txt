@@ -2,7 +2,7 @@ download_smugmug_album.sh
 
 <p class="right">
  <a href="http://smugmug.com/">
-  <img src="smugmug.jpg" /></a></p>
+  <img src="/smugmug.jpg" /></a></p>
 
 [download_smugmug_album.sh](https://github.com/snarfed/misc/blob/master/download_smugmug_album.sh)
 is a simple little shell script that downloads entire photo albums from

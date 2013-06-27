@@ -1,8 +1,8 @@
 Emacs keybindings in GNU screen's copy-scrollback mode
 
-<a href="http://www.gnu.org/software/screen/"><img src="terminal.jpg"></a>
-<a href="http://gnu.org/software/emacs/"><img src="gnu.jpg"></a>
-<a href="synchronizing_GNU_screens_paste_buffer_and_the_X_selection"><img src="X_logo.png"></a>
+<a href="http://www.gnu.org/software/screen/"><img src="/terminal.jpg"></a>
+<a href="http://gnu.org/software/emacs/"><img src="/gnu.jpg"></a>
+<a href="/synchronizing_GNU_screens_paste_buffer_and_the_X_selection"><img src="/X_logo.png"></a>
 
 When I'm working, I pretty much
 live inside [Emacs](http://gnu.org/software/emacs/). It's my IDE, debugger, text
@@ -17,7 +17,7 @@ switches are evil incarnate.
 I recently started using [GNU screen](http://www.gnu.org/software/screen/)'s
 [copy/scrollback mode](http://www.delorie.com/gnu/docs/screen/screen_73.html) so
 that I could copy from terminals with the keyboard. I use these commands in
-[my .screenrc](dotfiles/.screenrc) to set up Emacs key bindings in screen's
+[my .screenrc](/dotfiles/.screenrc) to set up Emacs key bindings in screen's
 copy/scrollback mode:
 
     # emacs keybindings for navigation in copy mode

@@ -1,15 +1,15 @@
 index.py
 
-<p class="right"><img src="rolodex.jpg" /></p>
+<p class="right"><img src="/rolodex.jpg" /></p>
 
 For the impatient:  
-&nbsp; Download [index.py](index.py)  
+&nbsp; Download [index.py](/index.py)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.bluesock.org/)  
 &nbsp; [PyBlosxom plugin registry](http://pyblosxom.bluesock.org/blog/registry?sortby=path)  
 
 _Updated 5/4/2007._
 
-[index.py](index.py) is a [PyBlosxom](http://pyblosxom.bluesock.org/) plugin
+[index.py](/index.py) is a [PyBlosxom](http://pyblosxom.bluesock.org/) plugin
 that displays displays an alphabetical index of all entries. It's similar to
 [other](http://pyblosxom.bluesock.org/blog/registry/archives/pyarchives)
 [index](http://pyblosxom.bluesock.org/blog/registry/archives/wbgarchives)
@@ -25,5 +25,5 @@ behavior, all optional. Here they are, along with their defaults:
     py['index_title']              = 'index'
     py['index_use_story_template'] = True
 
-index.py is copyright 2006 [Ryan Barrett](about), and is distributed
+index.py is copyright 2006 [Ryan Barrett](/about), and is distributed
 under the [GPL](http://www.gnu.org/licenses/gpl.html).

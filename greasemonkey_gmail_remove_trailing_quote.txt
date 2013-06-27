@@ -1,6 +1,6 @@
 GreaseMonkey script for Gmail: remove trailing quotes
 
-<a href="http://greasespot.net/"><img class="right" src="greasemonkey.png" /></a>
+<p class="right"><a href="http://greasespot.net/"><img class="" src="/greasemonkey.png" /></a></p>
 
 <span style="color: red; font-style: italic">
 Warning: this doesn't work with GMail's
@@ -28,7 +28,7 @@ lines in this email are a trailing quote:
     >
     > -Jane
 
-<a href="http://mail.google.com/"><img class="left" src="gmail.png" /></a>
+<a href="http://mail.google.com/"><img class="left" src="/gmail.png" /></a>
 
 This script makes it easier to observe proper netiquette when quoting. If you
 want to quote the smallest relevant piece of an email, you often need to delete

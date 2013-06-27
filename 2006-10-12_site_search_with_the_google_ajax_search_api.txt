@@ -1,9 +1,9 @@
 Site search with the Google AJAX Search API
 
 <table><tr style="background: none !important"><td>
-<img src="ajax.jpg">
+<img src="/ajax.jpg">
 </td><td style="vertical-align: center">
-<a href="http://code.google.com/"><img src="google_code.png" /></a>
+<a href="http://code.google.com/"><img src="/google_code.png" /></a>
 </td></tr></table>
 
 I've just posted

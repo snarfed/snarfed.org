@@ -1,6 +1,6 @@
 filekicker
 
-<p class="right"><img src="kick.jpg" /></p>
+<p class="right"><img src="/kick.jpg" /></p>
 
 For the impatient:  
 &nbsp; [Download filekicker 0.2](/filekicker.py)  

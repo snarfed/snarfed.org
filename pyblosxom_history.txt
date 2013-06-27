@@ -1,10 +1,10 @@
 history.py
 
-<p class="right"><img src="clock_icon.jpg" /></p>
+<p class="right"><img src="/clock_icon.jpg" /></p>
 
 For the impatient:  
-&nbsp; Download [history.py 0.5](history.py)  
-&nbsp; Download [history-0.5.tar.gz](history-0.5.tar.gz) (includes templates)  
+&nbsp; Download [history.py 0.5](/history.py)  
+&nbsp; Download [history-0.5.tar.gz](/history-0.5.tar.gz) (includes templates)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.bluesock.org/)  
 &nbsp; [PyBlosxom plugin registry](http://pyblosxom.bluesock.org/registry/)  
 &nbsp; [svnpyblosxom](http://www.baus.net/svnpyblosxom)
@@ -13,7 +13,7 @@ For the impatient:
 
 *Updated 2009-02-24.*
 
-[history.py](history.py) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
+[history.py](/history.py) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
 plugin that displays change history for entries. The change history must
 already exist, either in a version control system, database, or another form.
 This plugin just uses that backend to display change history, previous
@@ -117,5 +117,5 @@ Some lines will be surrounded with `<span class="...">`. The class will
 be `diff-added`, `diff-removed`, `diff-changed`, or `diff-line-number`,
 depending on the type of change that the line represents.
 
-history.py is copyright 2006 [Ryan Barrett](about), and is distributed
+history.py is copyright 2006 [Ryan Barrett](/about), and is distributed
 under the [GPL](http://www.gnu.org/licenses/gpl.html).

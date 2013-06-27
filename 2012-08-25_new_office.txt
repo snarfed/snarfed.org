@@ -1,7 +1,7 @@
 New office!
 
-<a class="shutter" href="paths_sfo_office.jpg">
-  <img class="shadow" src="paths_sfo_office_thumb.jpg" /></a>
+<a class="shutter" href="/paths_sfo_office.jpg">
+  <img class="shadow" src="/paths_sfo_office_thumb.jpg" /></a>
 
 
 I moved into a new office on Tuesday, in our
@@ -29,8 +29,8 @@ to [shells in emacs](/why_i_run_shells_inside_emacs) and
 per-keystroke round trips in editing files and command lines. If it wasn't the
 latency, then what?
 
-<a class="shutter" href="home_office.jpg">
-  <img class="right shadow" src="home_office_thumb.jpg" /></a>
+<a class="shutter" href="/home_office.jpg">
+  <img class="right shadow" src="/home_office_thumb.jpg" /></a>
 
 This new office made the answer blindingly clear: natural light. I love natural
 light, and for

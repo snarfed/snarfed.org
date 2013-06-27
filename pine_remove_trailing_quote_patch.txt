@@ -2,7 +2,7 @@ pine remove trailing quote patch
 
 <p class="right">
  <a href="http://washington.edu/pine/">
-  <img src="pine.png" /></a></p>
+  <img src="/pine.png" /></a></p>
 
 For the impatient:  
 Patch for Pine
@@ -46,9 +46,9 @@ For more on the top- vs. bottom-post debate, see:
 Also, a few recent email clients, such as [GMail](http://gmail.com/), try to use
 quoted text to do smart things. This patch can make your emails more readable in
 those clients. (I've discussed my thoughts on gmail vs pine
-[at length](gmail_vs_pine).)
+[at length](/gmail_vs_pine).)
 
-Feel free to [email me](about) with feedback or
+Feel free to [email me](/about) with feedback or
 bug reports.
 
 _Known bug_: Whole quotes are not detected correctly if you start your email

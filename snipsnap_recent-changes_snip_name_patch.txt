@@ -1,7 +1,7 @@
 snipsnap recent-changes snip name patch
 
-<a href="http://snipsnap.org/"><img src="snipsnap.png"></a>
-<a href="http://jetty.mortbay.com/"><img src="jetty.png"></a>
+<a href="http://snipsnap.org/"><img src="/snipsnap.png"></a>
+<a href="http://jetty.mortbay.com/"><img src="/jetty.png"></a>
 
 For the impatient:  
 [Patch for SnipSnap CVS HEAD](https://github.com/snarfed/misc/blob/master/patches/snipsnap-snip-name-cvs.patch)  
@@ -10,7 +10,7 @@ For the impatient:
 [Ant](http://ant.apache.org) (needed to build SnipSnap)  
 [Patching FAQ](http://www.gnu.org/software/diffutils/manual/html_node/Merging-with-patch.html)
 
-I originally used [SnipSnap](SnipSnap) as the web server for this site,
+I originally used [SnipSnap](/SnipSnap) as the web server for this site,
 and I loved it. However, nothing's perfect, even SnipSnap.
 
 SnipSnap 0.5.1a introduced a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-392)

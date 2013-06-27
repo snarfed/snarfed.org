@@ -1,7 +1,7 @@
 snipsnap comment without login patch
 
-<a href="http://snipsnap.org/"><img src="snipsnap.png"></a>
-<a href="http://jetty.mortbay.com/"><img src="jetty.png"></a>
+<a href="http://snipsnap.org/"><img src="/snipsnap.png"></a>
+<a href="http://jetty.mortbay.com/"><img src="/jetty.png"></a>
 
 For the impatient:  
 [Patch for SnipSnap 1.0b2-uttoxeter](https://github.com/snarfed/misc/blob/master/patches/snipsnap-comment-without-login.patch)  
@@ -10,7 +10,7 @@ For the impatient:
 
 [Patching FAQ](http://www.gnu.org/software/diffutils/manual/html_node/Merging-with-patch.html)
 
-I originally used [SnipSnap](SnipSnap) as the web server for this site, and I loved
+I originally used [SnipSnap](/SnipSnap) as the web server for this site, and I loved
 it. However, my single biggest gripe with SnipSnap is that it requires you to
 register before you can comment.
 

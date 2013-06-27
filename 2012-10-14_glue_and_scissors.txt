@@ -1,7 +1,7 @@
 Glue and scissors
 
-<a class="shutter" href="pinky_brain_convert_structs.jpg">
-  <img class="shadow right" src="pinky_brain_convert_structs_thumb.jpg" /></a>
+<a class="shutter" href="/pinky_brain_convert_structs.jpg">
+  <img class="shadow right" src="/pinky_brain_convert_structs_thumb.jpg" /></a>
 
 I joined a new team at work a while back, and soon after I started a new project
 within that team. We've been working long enough now that I've noticed some
@@ -42,7 +42,7 @@ Honestly, I still have no idea how we're going to do a lot of what we need to
 do. We have a clear high level vision, and a few good example use cases, but big
 chunks of the middle are largely unknown.
 
-<img class="shadow left" src="glue_scissors.jpg" />
+<img class="shadow left" src="/glue_scissors.jpg" />
 
 As with reuse, this is nothing new. Entrepreneurs have ingrained iterative
 development and [Lean Startup](http://books.google.com/books?id=tvfyz-4JILwC)

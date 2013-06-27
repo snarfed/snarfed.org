@@ -1,8 +1,8 @@
 Fillcode, new and improved!
 
 <p class="right">
- <a href="fillcode">
-  <img src="gnu.jpg" /></a></p>
+ <a href="/fillcode">
+  <img src="/gnu.jpg" /></a></p>
 
 [Emacs](http://gnu.org/software/emacs/) is great, but one of my pet peeves is
 that while it can fill (ie wrap) plain text, it [can't fill source

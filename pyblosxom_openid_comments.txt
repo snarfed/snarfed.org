@@ -1,11 +1,11 @@
 pyblosxom OpenID comments
 
-<a href="http://openid.net/"><img src="openid-logo.png"></a>
-<a href="http://pyblosxom.bluesock.org/"><img src="pyblosxom.jpg"></a>
-<a href="http://janrain.com/"><img src="janrain.png"></a>
+<a href="http://openid.net/"><img src="/openid-logo.png"></a>
+<a href="http://pyblosxom.bluesock.org/"><img src="/pyblosxom.jpg"></a>
+<a href="http://janrain.com/"><img src="/janrain.png"></a>
 
 For the impatient:  
-&nbsp; Download [comments_openid.py 0.4](comments_openid.py)  
+&nbsp; Download [comments_openid.py 0.4](/comments_openid.py)  
 &nbsp; Download [Python OpenID libraries](http://www.openidenabled.com/python-openid/)  
 &nbsp; Download
   [comments.py](http://pyblosxom.bluesock.org/blog/registry/input/comments/comments)
@@ -15,7 +15,7 @@ For the impatient:
 
 *Updated 2007-09-24.*
 
-[comments_openid.py](comments_openid.py) is a
+[comments_openid.py](/comments_openid.py) is a
 [PyBlosxom](http://pyblosxom.bluesock.org/) plugin that allows
 [OpenID](http://openid.net/)-authenticated comments. When used in conjunction
 with the
@@ -79,7 +79,7 @@ Copyright 2006-2007
 [Josh Hoyt](http://claimid.com/j3h/) and
 [Kevin Turner](http://claimid.com/keturn/) of
 [JanRain](http://janrain.com/), original authors, and
-[Ryan Barrett](about), current maintainer. Distributed under the
+[Ryan Barrett](/about), current maintainer. Distributed under the
 [GPL](http://www.gnu.org/licenses/gpl.html). Originally released on
 [openidenabled.com](http://openidenabled.com/) and moved to
 [snarfed.org](http://snarfed.org/) on September 6, 2007.

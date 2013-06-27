@@ -1,7 +1,7 @@
 snarfed WordPress theme
 
-<a class="shutter" href="snarfed_wordpress_theme_screenshot.jpg">
-  <img class="right shadow" src="snarfed_wordpress_theme_screenshot_thumb.jpg" /></a>
+<p class="right"><a class="shutter" href="/snarfed_wordpress_theme_screenshot.jpg">
+  <img class="shadow" src="/snarfed_wordpress_theme_screenshot_thumb.jpg" /></a></p>
 
 <!-- to package:
 cd ~/src/wordpress/themes
@@ -12,11 +12,11 @@ of hoops, finally got sick of it and gave up when it asked me to add gravatar
 support.
 -->
 
-[Download snarfed theme 0.5](snarfed_wordpress_theme.zip)
+[Download snarfed theme 0.5](/snarfed_wordpress_theme.zip)
 
 This site runs on [WordPress](http://wordpress.org/) and uses its own
 [WordPress theme](http://codex.wordpress.org/Using_Themes), the
-aptly named [snarfed theme](snarfed_wordpress_theme.zip).
+aptly named [snarfed theme](/snarfed_wordpress_theme.zip).
 
 snarfed is simple, clean, and minimalist. Many standard elements and pieces of
 text have been removed, including admin links (edit, manage, etc.) on the live
@@ -42,7 +42,7 @@ Features:
   * [OpenID](http://openid.net/) delegation. See below for configuration.
 
   * New page template, "Posts and Pages," which is an alternative to the built-in
-    archive. It [lists pages as well as posts](index).
+    archive. It [lists pages as well as posts](/index).
 
   * Add last updated time to pages and posts if they've been updated since they
     were first published.
@@ -64,7 +64,7 @@ Features:
     one of the effects included in NextGEN Gallery. (They're the destination
     links for the thumbnails in galleries.)
 
-  * Link blog title to home page. Link blog description to [/about](about).
+  * Link blog title to home page. Link blog description to [/about](/about).
 
   * Tweak the recent comments widget: add bubble icons and remove author names.
 

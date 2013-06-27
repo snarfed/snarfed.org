@@ -2,7 +2,7 @@ pine delete attachments on save patch
 
 <p class="right">
  <a href="http://washington.edu/pine/">
-  <img src="pine.png" /></a></p>
+  <img src="/pine.png" /></a></p>
 
 For the impatient:  
 Patch for Pine
@@ -33,5 +33,5 @@ This patch was inspired in part by a
 [post](http://mailman1.u.washington.edu/pipermail/pine-info/2005-June/042501.html)
 to the [pine-info](http://www.washington.edu/pine/pine-info/) mailing list.
 
-Feel free to [email me](about) with feedback or
+Feel free to [email me](/about) with feedback or
 bug reports.

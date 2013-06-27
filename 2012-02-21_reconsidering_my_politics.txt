@@ -1,7 +1,7 @@
 Reconsidering my politics
 
-<a class="shutter" href="american_thinker.jpg">
-  <img class="right shadow" src="american_thinker_thumb.jpg" /></a>
+<p class="right"><a class="shutter" href="/american_thinker.jpg">
+  <img class="shadow" src="/american_thinker_thumb.jpg" /></a></p>
 
 For a long time, I thought economic inequality was basically OK. Sorry, I should
 rephrase: I thought it was bad, of course, but not inherently harmful. I changed
@@ -43,7 +43,7 @@ sure, but even if inequality is just a tracking indicator, you still want it to
 go down. Too much relative inequality is inherently harmful.
 
 
-<img class="left shadow" src="i_voted_sticker_in_grass.jpg" /></a>
+<img class="left shadow" src="/i_voted_sticker_in_grass.jpg" /></a>
 
 This isn't the first time I've changed my mind about politics. I believed in
 capital punishment too, a long time ago, until I heard a fascinating thought

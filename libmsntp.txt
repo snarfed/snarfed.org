@@ -1,6 +1,6 @@
 libmsntp
 
-<a href="libmsntp"><img class="right" src="clock.jpg" /></a>
+<p class="right"><a href="/libmsntp"><img class="" src="/clock.jpg" /></a></p>
 
 [libmsntp](https://github.com/snarfed/libmsntp) is a full-featured, compact,
 portable SNTP library. You can

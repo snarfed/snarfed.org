@@ -1,7 +1,7 @@
 ditrit
 
-<a href="ditrit-0.1.tar.gz">
-  <img class="right shadow" src="do_the_right_thing.jpg" /></a>
+<p class="right"><a href="/ditrit-0.1.tar.gz">
+  <img class="shadow" src="/do_the_right_thing.jpg" /></a></p>
 
 [Ditrit](https://github.com/snarfed/misc/blob/master/ditrit) is a programmable application
 launcher that tries to "do the right thing" for any input. If ditrit is given an

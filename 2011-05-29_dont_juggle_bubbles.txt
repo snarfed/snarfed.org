@@ -1,7 +1,7 @@
 Don't juggle bubbles! (or, why I run shells inside Emacs)
 
-<a href="http://cheezburger.com/View/1666431232">
-  <img class="right shadow" src="cat_bubbles.jpg" /></a>
+<p class="right"><a href="http://cheezburger.com/View/1666431232">
+  <img class="shadow" src="/cat_bubbles.jpg" /></a></p>
 
 *This is an excerpt; see the [full article](/why_i_run_shells_inside_emacs)
 for the Emacs Lisp and other nitty gritty details.*
@@ -21,7 +21,7 @@ muscle memory is constantly seduced into a false sense of familiarity, only to
 have the rug yanked out from under it seconds later.
 
 <a href="http://gnu.org/software/emacs/">
-  <img class="left" src="gnu.jpg" /></a>
+  <img class="left" src="/gnu.jpg" /></a>
 
 I [put](/emacs_keybindings_in_gnu_screens_copy-scrollback_mode)
 [together](/control_arrow_keys_in_rxvt_tcsh_and_emacs)

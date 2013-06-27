@@ -2,7 +2,7 @@ Emacs Lisp for flowed text email
 
 <p class="right">
  <a href="http://gnu.org/software/emacs/">
-  <img src="gnu.jpg" /></a></p>
+  <img src="/gnu.jpg" /></a></p>
 
 Here's some Emacs Lisp for encoding flowed text a la
 [RFC 2646](http://www.apps.ietf.org/rfc/rfc2646.html). This is useful for

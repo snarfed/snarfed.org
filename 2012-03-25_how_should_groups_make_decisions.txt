@@ -1,6 +1,6 @@
 How should groups make decisions?
 
-<p class="right"><img src="vegetable_platter.jpg" /></p>
+<p class="right"><img src="/vegetable_platter.jpg" /></p>
 
 As a kid, my parents told me to eat my vegetables. My pastor told me to be nice
 to other kids. The state of California told me I couldn't drive until I was 16
@@ -64,7 +64,7 @@ horse," is popular in business and tech because we often have the same
 experience. We trust users to tell us _if_ they like something, and maybe why,
 but not so much _what_ they want.
 
-<img class="left shadow" src="mushroom_cloud.jpg" />
+<img class="left shadow" src="/mushroom_cloud.jpg" />
 
 Nuclear power is a good example of constituents and leaders failing hand in
 hand. Since

@@ -1,7 +1,7 @@
 How Napoleon opened champagne
 
-<a href="http://www.hillnews.com/thehill/export/TheHill/News/Frontpage/120705/sssaber.html">
-  <img class="right shadow" src="jason_tesauro.jpg" /></a>
+<p class="right"><a href="http://www.hillnews.com/thehill/export/TheHill/News/Frontpage/120705/sssaber.html">
+  <img class="shadow" src="/jason_tesauro.jpg" /></a></p>
 
 
 Last night, a
@@ -33,7 +33,7 @@ the "last meal." Madame
 the tradition.
 
 <a href="http://www.flickr.com/photos/daniel_meredith/266709764/">
-  <img class="left shadow" src="sabred_bottle_and_cork.jpg" /></a>
+  <img class="left shadow" src="/sabred_bottle_and_cork.jpg" /></a>
 
 Whether or not that's true, it was a great show. Our server described the
 science and technique behind it, showed us the seam in the glass, and

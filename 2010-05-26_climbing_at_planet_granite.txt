@@ -1,7 +1,7 @@
 Climbing at Planet Granite
 
-<a href="http://www.planetgranite.com/">
-  <img class="right shadow" src="planet_granite_climbing.jpg" alt="planet granite climbing" /></a>
+<p class="right"><a href="http://www.planetgranite.com/">
+  <img class="shadow" src="/planet_granite_climbing.jpg" alt="planet granite climbing" /></a></p>
 
 I went to
 [Planet Granite](http://www.planetgranite.com/)
@@ -21,7 +21,7 @@ than enough for the quick, hands-on safety exam in the gym. $24 later, I was
 harnessed, tied in, clipped on, and climbing up a wall!
 
 <a href="http://www.planetgranite.com/">
-  <img class="left shadow" src="planet_granite_wall.jpg" alt="planet granite wall" /></a>
+  <img class="left shadow" src="/planet_granite_wall.jpg" alt="planet granite wall" /></a>
 
 I have to admit, I didn't enjoy that first route much. I'd learned to tie knots
 and handle carabiners, but I didn't really know how to climb, so I had to learn
@@ -36,7 +36,7 @@ And another. It eventually came together, and before long I was having a great
 time.
 
 <a href="http://www.planetgranite.com/">
-  <img class="right shadow" src="planet_granite_crack.jpg" alt="planet granite crack" /></a>
+  <img class="right shadow" src="/planet_granite_crack.jpg" alt="planet granite crack" /></a>
 
 By the end of the day, I'd climbed routes
 [rated](http://en.wikipedia.org/wiki/Grade_%28climbing%29#YDS_Class)

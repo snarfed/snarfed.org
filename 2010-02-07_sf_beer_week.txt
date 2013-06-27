@@ -1,7 +1,7 @@
 SF Beer Week
 
-<a href="http://sfbeerweek.com/">
-  <img class="right shadow" src="sf_beer_week.jpg" alt="sf beer week" /></a>
+<p class="right"><a href="http://sfbeerweek.com/">
+  <img class="shadow" src="/sf_beer_week.jpg" alt="sf beer week" /></a></p>
 
 It's [SF Beer Week](http://sfbeerweek.com/)! Oh boy oh boy oh boy...
 

@@ -1,7 +1,7 @@
 Charlie
 
-<a class="shutter" href="/gallery/cats/charlie_sleepy.jpg">
-  <img class="right shadow" src="/gallery/cats/thumbs/thumbs_charlie_sleepy.jpg" /></a>
+<p class="right"><a class="shutter" href="/gallery/cats/charlie_sleepy.jpg">
+  <img class="shadow" src="/gallery/cats/thumbs/thumbs_charlie_sleepy.jpg" /></a></p>
 
 Life dealt Charlie a rough hand from the very beginning. He was found just a few
 weeks old on the streets of downtown San Jose, dodging cars and people, alone

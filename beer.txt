@@ -1,6 +1,6 @@
 beer
 
-<p class="right"><img class="shadow" src="beer_taps.jpg" alt="beer taps" /></p>
+<p class="right"><img class="shadow" src="/beer_taps.jpg" alt="beer taps" /></p>
 
 [Beer I'd like to try](#to_try) and
 [beer I've tried](#tried).
@@ -291,7 +291,7 @@ Red Donkey IPA
 
 <span title="greek sailing vacation w/family, 6/25/2012">
 [Pivovar Velké Popovice](http://www.beer-kozel.cz/)
-[Kozel Czerny Velkopopovicky]() (dark)
+Kozel Czerny Velkopopovicky (dark)
 ![bad](/bad.png)
 </span>
 

@@ -1,7 +1,7 @@
 Revisiting <i>Why I&#39;m weird about privacy</i>
 
-<a href="2011-08-03_why_im_weird_about_privacy">
-  <img class="shadow right" src="privacy_head_sock.jpg" /></a>
+<p class="right"><a href="/2011-08-03_why_im_weird_about_privacy">
+  <img class="shadow" src="/privacy_head_sock.jpg" /></a></p>
 
 Since I wrote
 _[Why I'm weird about privacy](/2011-08-03_why_im_weird_about_privacy)_ over a
@@ -54,8 +54,8 @@ researchers across many fields. Here are a few standouts:
   [incompleteness theorem](http://en.wikipedia.org/wiki/G%C3%B6del%27s_incompleteness_theorems),
   proving that true de-identification is impossible in any formal sense.
 
-<a class="shutter" href="scufflechuck_check.jpg">
-  <img class="shadow right" src="scufflechuck_check_thumb.jpg"></a>
+<a class="shutter" href="/scufflechuck_check.jpg">
+  <img class="shadow right" src="/scufflechuck_check_thumb.jpg"></a>
 
 * People from academia and industry are not only
   [talking about](http://scholar.google.com/scholar?hl=en&q=%22Engineering+Privacy+in+an+Age+of+Information+Abundance%22&btnG=&as_sdt=1%2C5&as_sdtp=)
@@ -68,7 +68,7 @@ researchers across many fields. Here are a few standouts:
   halfway decent place.
 
 On a lighter note,
-<a class="shutter" href="scufflechuck_check.jpg">my new checks</a>
+<a class="shutter" href="/scufflechuck_check.jpg">my new checks</a>
 came in the mail yesterday! I've been gradually moving accounts from my name to
 my LLC's, and the financial services are easily the most critical. I'm just a
 few steps away from closing the accounts in my name entirely. I'll soon be able

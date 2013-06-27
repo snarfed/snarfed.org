@@ -1,6 +1,6 @@
 movies
 
-<p class="right"><img src="film_reel.jpg" alt="film reel" /></p>
+<p class="right"><img src="/film_reel.jpg" alt="film reel" /></p>
 
 Movies I've watched and want to watch.
 ![good](/good.png) I liked,
@@ -1037,7 +1037,7 @@ Also see [books](/books), [games](/games), and [other lists](/lists).
 </span>
 
 <span title="sf apt, 7/10/2010">
-  * [Monster]( http://www.imdb.com/title/tt0340855/)
+  * [Monster](http://www.imdb.com/title/tt0340855/)
 ![ok](/ok.png)
 </span>
 

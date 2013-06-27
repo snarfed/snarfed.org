@@ -1,7 +1,7 @@
 Joy vs. Fun
 
-<a href="http://gamasutra.com/view/feature/6189/the_designers_notebook_dont_.php">
-  <img class="right shadow" src="stanford_band_playing.jpg" /></a>
+<p class="right"><a href="http://gamasutra.com/view/feature/6189/the_designers_notebook_dont_.php">
+  <img class="shadow" src="/stanford_band_playing.jpg" /></a></p>
 
 I recently read an article by [Ernest Adams](http://designersnotebook.com/), an
 eccentric but legendary figure in game development, on
@@ -17,7 +17,7 @@ disservice by ignoring it. He uses the
 is a perfect fit, and naturally endeared me to the piece.
 
 <a href="http://gamasutra.com/view/feature/6189/the_designers_notebook_dont_.php">
-  <img class="left shadow" src="stanford_band_stands.jpg" /></a>
+  <img class="left shadow" src="/stanford_band_stands.jpg" /></a>
 
 It's a fascinating idea, and not often discussed. The game design community has
 dissected fun to death over the years, as mainstream health and psychology has

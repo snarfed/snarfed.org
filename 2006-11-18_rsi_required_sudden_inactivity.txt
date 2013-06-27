@@ -1,7 +1,7 @@
 RSI: Required, Sudden Inactivity
 
-<a href="http://en.wikipedia.org/wiki/Repetitive_strain_injury">
-  <img class="right shadow" src="xray.jpg" /></a>
+<p class="right"><a href="http://en.wikipedia.org/wiki/Repetitive_strain_injury">
+  <img class="shadow" src="/xray.jpg" /></a></p>
 
 I've come down with a pretty bad case of
 [RSI](http://en.wikipedia.org/wiki/Repetitive_strain_injury). It's awful.

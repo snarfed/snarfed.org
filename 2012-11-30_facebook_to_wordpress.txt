@@ -2,7 +2,7 @@ Facebook to WordPress
 
 <p class="right">
  <a href="https://github.com/snarfed/misc/blob/master/facebook_to_wordpress.py">
-  <img src="wordpress_facebook.jpg" /></a></p>
+  <img src="/wordpress_facebook.jpg" /></a></p>
 
 [facebook_to_wordpress.py](https://github.com/snarfed/misc/blob/master/facebook_to_wordpress.py)
 is a script that copies your [Facebook](http://www.facebook.com/) posts to a

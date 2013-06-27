@@ -1,17 +1,17 @@
 pyblosxom openid server
 
-<a href="http://openid.net/"><img src="openid-logo.png"></a>
-<a href="http://pyblosxom.bluesock.org/"><img src="pyblosxom.jpg"></a>
+<a href="http://openid.net/"><img src="/openid-logo.png"></a>
+<a href="http://pyblosxom.bluesock.org/"><img src="/pyblosxom.jpg"></a>
 
 For the impatient:  
-&nbsp; Download [openid_server.py](openid_server.py) or
-[openid_server-0.4.tar.gz](openid_server-0.4.tar.gz)  
+&nbsp; Download [openid_server.py](/openid_server.py) or
+[openid_server-0.4.tar.gz](/openid_server-0.4.tar.gz)  
 &nbsp; [OpenID home page](http://openid.net/)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.bluesock.org/)  
 
 *Updated 2007-09-23.*
 
-[openid_server.py](openid_server.py) is a
+[openid_server.py](/openid_server.py) is a
 [PyBlosxom](http://pyblosxom.bluesock.org/) plugin that implements
 [OpenID](http://openid.net/) 1.x and 2.0. OpenID is a distributed authentication
 protocol, ie a single sign on platform, that uses URLs as identifiers. If you
@@ -35,7 +35,7 @@ and authenticates the user with an HTML form.
 
 To use it, first download and install the
 [Python OpenID libraries](http://www.openidenabled.com/python-openid/).
-Then, download [openid_server.py](openid_server.py) and
+Then, download [openid_server.py](/openid_server.py) and
 place it in your plugins directory. Finally, add this line to your flavour's
 head template:
 
@@ -80,7 +80,7 @@ CSS styling pleasure, it uses divs with the classes `openid-info`,
 You can override the default HTML by adding `openid-info`, `openid-login`, and
 `openid-error` templates for your flavour of choice. Example templates for the
 html flavour are included in
-[openid_server-0.4.tar.gz](openid_server-0.4.tar.gz).
+[openid_server-0.4.tar.gz](/openid_server-0.4.tar.gz).
 
-openid_server.py is copyright 2006 [Ryan Barrett](about), and is
+openid_server.py is copyright 2006 [Ryan Barrett](/about), and is
 distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).

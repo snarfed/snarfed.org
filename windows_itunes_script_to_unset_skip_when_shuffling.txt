@@ -1,8 +1,8 @@
 iTunes for Windows script to unset <i>Skip when shuffling</i>
 
-<a href="http://apple.com/itunes/"><img src="itunes.jpg"></a>
-<a href="http://apple.com/ipodshuffle/"><img src="ipod_shuffle.jpg"></a>
-<a href="http://en.wikipedia.org/wiki/Podcast"><img src="rss.jpg"></a>
+<a href="http://apple.com/itunes/"><img src="/itunes.jpg"></a>
+<a href="http://apple.com/ipodshuffle/"><img src="/ipod_shuffle.jpg"></a>
+<a href="http://en.wikipedia.org/wiki/Podcast"><img src="/rss.jpg"></a>
 
 [no_skip_when_shuffling.js](https://github.com/snarfed/misc/blob/master/no_skip_when_shuffling.js)
 is a script for [iTunes](http://apple.com/itunes/) for Windows that unsets the

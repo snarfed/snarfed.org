@@ -1,12 +1,12 @@
 SnipSnap crash with FileSnipStorage and bad metadata.properties
 
-<a href="http://snipsnap.org/"><img src="snipsnap.png"></a>
+<a href="http://snipsnap.org/"><img src="/snipsnap.png"></a>
 
 _This
-article describes [SnipSnap](SnipSnap) 1.0b1-uttoxeter using
+article describes [SnipSnap](/SnipSnap) 1.0b1-uttoxeter using
 [FileSnipStorage](http://snipsnap.org/space/FileSnipStorage)._
 
-[SnipSnap](SnipSnap), the software that originally ran this site, is great. I heart
+[SnipSnap](/SnipSnap), the software that originally ran this site, is great. I heart
 SnipSnap.
 
 Unfortunately, nothing's perfect, even SnipSnap. It occasionally crashes, and if

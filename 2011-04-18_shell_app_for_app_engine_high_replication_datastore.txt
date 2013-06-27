@@ -2,7 +2,7 @@ Shell app for App Engine's High Replication Datastore
 
 <p class="right">
  <a href="http://appengine.google.com/">
-  <img src="appengine.jpg" /></a></p>
+  <img src="/appengine.jpg" /></a></p>
 
 I've had less to say here about [App Engine](http://appengine.google.com/) since
 I [moved to a new team last year](/2010-03-13_new_job). The team has still been

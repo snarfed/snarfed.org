@@ -1,6 +1,6 @@
 thinkpad keys in firefox
 
-<p class="right"><img class="shadow" src="thinkpad_keys.jpg" /></p>
+<p class="right"><img class="shadow" src="/thinkpad_keys.jpg" /></p>
 
 I use a [Thinkpad
 T43](http://www.pc.ibm.com/us/notebooks/thinkpad/t-series/index.html), and I
@@ -62,4 +62,4 @@ If you weren't working in your firefox/chrome directory, copy the new
 browser.jar over the existing one in firefox/chrome.
 
 Restart Firefox, and you should be set! If not, feel free to [email
-me](about), and I'll try to help.
+me](/about), and I'll try to help.

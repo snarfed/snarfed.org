@@ -1,8 +1,8 @@
 referrer spam
 
 <p class="right">
- <a href="referrer_spam">
-  <img src="spam.jpg" /></a></p>
+ <a href="/referrer_spam">
+  <img src="/spam.jpg" /></a></p>
 
 [Referrer spam](http://www.spywareinfo.com/articles/referer_spam/) - or by
 Apache's original misspelling, _referer_ spam - has been a problem at
@@ -16,13 +16,13 @@ silver bullet. Here's what I did while my Summary output was online.
 
   * I maintained a hand-edited blacklist of known spammers' sites. It's far
 from ideal, but it worked. You can find my blacklist in my
-[summary.conf](summary.conf) file. If you're fighting
+[summary.conf](/summary.conf) file. If you're fighting
 referrer spam, feel free to borrow it. (I used to use
 [webalizer](http://webalizer.com/); my
-[webalizer.conf](webalizer.conf) is also available,
+[webalizer.conf](/webalizer.conf) is also available,
 but it's not maintained.)
 
-  * I've written a [webalizer nofollow patch](webalizer_nofollow_patch)
+  * I've written a [webalizer nofollow patch](/webalizer_nofollow_patch)
 that adds support for the popular new
 [nofollow](http://googleblog.blogspot.com/2005/01/preventing-comment-spam.html)
 tag.
@@ -36,7 +36,7 @@ bezeqint.net, and ac.at.
 as [Jay Allen's](http://www.jayallen.org/)
 [MT-Blacklist](http://www.jayallen.org/comment_spam/). However, most of those
 tools are specific to [MovableType](http://www.sixapart.com/movabletype/) and
-[Apache](http://apache.org/), and this site uses [SnipSnap](SnipSnap)
+[Apache](http://apache.org/), and this site uses [SnipSnap](/SnipSnap)
 instead.
 
   * A better approach would be to write tools that operate directly on referrer

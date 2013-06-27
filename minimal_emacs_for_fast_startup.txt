@@ -2,7 +2,7 @@ minimal .emacs for fast startup
 
 <p class="right">
  <a href="http://gnu.org/software/emacs/">
-  <img src="gnu.jpg" /></a></p>
+  <img src="/gnu.jpg" /></a></p>
 
 I
 spend a fair amount of time ssh-ed into remote, headless linux servers. I often
@@ -29,7 +29,7 @@ use this command to start emacs:
     emacs -nw --no-init-file --no-site-file \
       --load .emacs.minimal
 
-and this elisp in my [my minimal .emacs](dotfiles/.emacs):
+and this elisp in my [my minimal .emacs](/dotfiles/.emacs):
 
     ; cutoff for word wrap
     (setq-default fill-column 79)

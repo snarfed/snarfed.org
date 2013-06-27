@@ -1,16 +1,16 @@
 p4
 
 <p class="right">
- <a href="p4">
-  <img src="notes.png" /></a></p>
+ <a href="/p4">
+  <img src="/notes.png" /></a></p>
 
 For the impatient:  
-[Download P4 0.3.1](p4-0.3.1.tar.bz2)  
-[Original project proposal](p4proposal)  
-[Poster (with diagrams)](p4_poster/index.html)  
-[Protocol specification](p4protocol)  
+[Download P4 0.3.1](/p4-0.3.1.tar.bz2)  
+[Original project proposal](/p4proposal)  
+[Poster (with diagrams)](/p4_poster/index.html)  
+[Protocol specification](/p4protocol)  
 
-[P4](p4) is a fully functional, self-organizing overlay network similar to
+[P4](/p4) is a fully functional, self-organizing overlay network similar to
 [Gnutella](http://rfc-gnutella.sourceforge.net/) and
 [Freenet](http://freenet.sf.net/). However, P4 differs in that it provides an
 API for developing applications on top of the overlay. P4 handles the networking
@@ -22,7 +22,7 @@ functionality.
 Since its release in early 2001, P4 has been surpassed by other general-purpose
 overlay platforms such as [JXTA](http://jxta.org/),
 [Groove](http://groove.net/), and Microsoft's
-[Windows Peer-to-Peer SDK](windows_p2p). Furthermore,
+[Windows Peer-to-Peer SDK](/windows_p2p). Furthermore,
 [many](http://overnet.com/) [other](http://freedom.net/)
 [file](http://freehaven.net/) [sharing](http://mnet.sourceforge.net/)
 [networks](http://en.wikipedia.org/wiki/FastTrack) have long been superior to P4

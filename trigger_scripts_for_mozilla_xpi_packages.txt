@@ -1,10 +1,10 @@
 trigger scripts for mozilla xpi packages
 
-<a href="http://mozilla.org/mozilla1.x/"><img src="mozilla.png"></a>
-<a href="http://mozilla.org/firefox/"><img src="ff_icon.png"></a>
-<a href="http://mozilla.org/camino/"><img src="camino.png"></a>
-<a href="http://mozilla.org/thunderbird/"><img src="thunderbird.jpg"></a>
-<a href="http://bugzilla.org/"><img src="bugzilla.jpg"></a>
+<a href="http://mozilla.org/mozilla1.x/"><img src="/mozilla.png"></a>
+<a href="http://mozilla.org/firefox/"><img src="/ff_icon.png"></a>
+<a href="http://mozilla.org/camino/"><img src="/camino.png"></a>
+<a href="http://mozilla.org/thunderbird/"><img src="/thunderbird.jpg"></a>
+<a href="http://bugzilla.org/"><img src="/bugzilla.jpg"></a>
 
 I've
 been doing some development recently on the [Mozilla](http://mozilla.org/)
@@ -25,7 +25,7 @@ in a web page:
 After some poking around, I found that if you just link to the XPI file
 directly, it works:
 
-    <a href="mypackage.xpi"> Install! </a>
+    <a href="/mypackage.xpi"> Install! </a>
 
 While you're developing, you can use the shortcut of typing the `file://` link,
 e.g. `file:///home/ryanb/mypackage.xpi`,

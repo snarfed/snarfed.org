@@ -1,6 +1,6 @@
 Yahoo! Query Language thoughts
 
-<a href="http://developer.yahoo.com/yql/"><img src="yahoo_logo.gif"></a>
+<a href="http://developer.yahoo.com/yql/"><img src="/yahoo_logo.gif"></a>
 
 I recently sat down and read through the docs for Yahoo's
 [Y!OS](http://developer.yahoo.com/yos/intro/), a collection of services and
@@ -14,7 +14,7 @@ SQL dialect and query processing engine that operates on data exposed by web
 services.
 
 Here's a brief description, along with my thoughts. See the
-[original post](2008-12-16_yos_yahoo_open_strategy) for my thoughts on
+[original post](/2008-12-16_yos_yahoo_open_strategy) for my thoughts on
 the rest of Y!OS.
 
 
@@ -75,13 +75,13 @@ YQL is similar to a number of modern query languages, including
 XPath/XQuery,
 Microsoft's [LINQ](http://en.wikipedia.org/wiki/Language_Integrated_Query),
 Google's [GQL](http://code.google.com/appengine/docs/datastore/gqlreference.html),
-Facebook's [FQL](facebook_data_store_api_thoughts), and the
-query interfaces for [Amazon SimpleDB](amazon_simpledb_thoughts) and
+Facebook's [FQL](/facebook_data_store_api_thoughts), and the
+query interfaces for [Amazon SimpleDB](/amazon_simpledb_thoughts) and
 [CouchDB](http://couchdb.org/).
 
 Since YQL doesn't actually store data, it's not really a competitor to the
 likes of SimpleDB,
-[Azure tables](windows_azure_details#Tables), or the
+[Azure tables](/windows_azure_details#Tables), or the
 [Google App Engine datastore](http://code.google.com/appengine/docs/datastore/).
 Even so, if Yahoo does offer a cloud database in the future, it's a
 good bet that it will support YQL.

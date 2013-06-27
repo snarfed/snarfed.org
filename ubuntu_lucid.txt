@@ -2,13 +2,13 @@ Ubuntu Lucid
 
 <p class="right">
  <a href="http://ubuntu.com/">
-  <img src="ubuntu.jpg" alt="ubuntu" /></a></p>
+  <img src="/ubuntu.jpg" alt="ubuntu" /></a></p>
 
 I recently upgraded from
 [Ubuntu](http://ubuntu.com/)
 [Hardy](https://help.ubuntu.com/8.04/about-ubuntu/C/) (8.04) to
 [Lucid](https://help.ubuntu.com/10.04/about-ubuntu/C/) (10.04). Similar to
-my list of tips for [Fedora Core 3 on VMWare](fedora_core_3_on_vmware), here are 
+my list of tips for [Fedora Core 3 on VMWare](/fedora_core_3_on_vmware), here are 
 some tips for Ubuntu Lucid. (I'm running it on a
 [Thinkpad X201](http://shop.lenovo.com/us/landing_pages/thinkpad/2010/X201-X201s-X201tablet)).
 
@@ -42,7 +42,7 @@ X, e.g. `xrandr` to set resolution.
   * At first, all of my GTK apps had huge fonts. Readers Digest huge. Firefox,
 Pidgin, everything. I was using `xrandr` to set my screen resolution, since I
 use [xinit](http://xfree86.org/current/xinit.1.html) and a non-standard window
-manager, [ion](ion), instead of a full desktop like Gnome or KDE, so I wondered
+manager, [ion](/ion), instead of a full desktop like Gnome or KDE, so I wondered
 if I was Doing It Wrong. It was only GTK fonts, so I dug into
 [gconf](http://projects.gnome.org/gconf/). I tried
 [using gconftool](http://ubuntu-tutorials.com/2008/01/10/gconftool-2-gconf-editor-from-the-shell/)
@@ -100,7 +100,7 @@ hibernate, `pm-hibernate`, and even a hybrid of the two, `pm-suspend-hybrid`.
 Awesome.
 
 <a href="http://thinkpad.com/">
-  <img class="right" src="thinkpad.jpg" alt="thinkpad" /></a>
+  <img class="right" src="/thinkpad.jpg" alt="thinkpad" /></a>
 
   * Speaking of suspend, if you're on a
 [Thinkpad](http://shop.lenovo.com/us/landing_pages/thinkpad/) (I use an
@@ -172,7 +172,7 @@ shell):
 and added a key binding in my window manager to run `xmodmap ~/.Xmodmap` on
 demand, and I just press that after I plug in my keyboard.
 
-<img class="right" src="battery.jpg" alt="battery" /></a>
+<img class="right" src="/battery.jpg" alt="battery" /></a>
 
   * If you're on a laptop, you can use the
 [tp_smapi](http://www.thinkwiki.org/wiki/Tp_smapi#Battery_charge_control_features)

@@ -8,8 +8,8 @@ Sure it's free, but it's also healthy, good, consistently interesting, and
 available 24/7. Whenever I consider going anywhere else, a little voice inside
 my head always asks, "but will you eat as well?"
 
-<a class="shutter" href="example_cooked_meal.jpg">
-  <img class="right shadow" src="example_cooked_meal_thumb.jpg" /></a>
+<a class="shutter" href="/example_cooked_meal.jpg">
+  <img class="right shadow" src="/example_cooked_meal_thumb.jpg" /></a>
 
 I recently had the chance to find out. I'm a month into a sabbatical, and I've
 discovered that yes, happily, I still eat as well. I've gone from making around
@@ -46,7 +46,7 @@ life, structuring food like this means better routines, less
 and [context switching](http://snarfed.org/2011-05-29_dont_juggle_bubbles), and
 more mental energy for the stuff I care about.
 
-<img class="left shadow" src="csa_box.jpg" />
+<img class="left shadow" src="/csa_box.jpg" />
 
 Surprisingly, the hero of the story here is our
 [CSA](http://en.wikipedia.org/wiki/Community-supported_agriculture), that warm

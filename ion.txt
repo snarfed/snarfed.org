@@ -1,7 +1,7 @@
 ion
 
-<a href="ion">
-  <img class="right shadow" src="ion.jpg" /></a>
+<p class="right"><a href="/ion">
+  <img class="shadow" src="/ion.jpg" /></a></p>
 
 I use [Ion](http://iki.fi/~tuomov/ion/) as my window manager, and I love it.
 It's written by [Tuomo Valkonen](http://iki.fi/~tuomov/), who says it's

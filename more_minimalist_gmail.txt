@@ -1,7 +1,7 @@
 More Minimalist Gmail userstyle
 
-<a href="more_minimalist_gmail.png" class="shutter">
-  <img class="right shadow" src="more_minimalist_gmail_thumb.png" /></a>
+<p class="right"><a href="/more_minimalist_gmail.png" class="shutter">
+  <img class="shadow" src="/more_minimalist_gmail_thumb.png" /></a></p>
 
 [more_minimalist_gmail.css](https://raw.github.com/snarfed/misc/master/userscripts/more_minimalist_gmail.css)
 is a [userstyle](http://userstyles.org/help/userstyles) that hides most of
@@ -27,7 +27,7 @@ Tips:
     temporarily show the hidden features by turning off Stylish. Click the
     Stylish icon and select _Turn all styles off_. When you're done, select
     _Turn all styles on_. Bonus tip: if you do this often,
-    [add a keyboard shortcut with keyconfig](firefox_keyconfig_extension).
+    [add a keyboard shortcut with keyconfig](/firefox_keyconfig_extension).
   * You can hide individual labels in the
   [GMail settings Labels tab](https://mail.google.com/mail/u/0/#settings/labels).
   This includes built in labels like Starred, Important, Chats, Circles, etc.

@@ -2,7 +2,7 @@ Google App Engine Launched!
 
 <p class="right">
  <a href="http://code.google.com/appengine/">
-  <img src="logo_en_appengine.gif" /></a></p>
+  <img src="/logo_en_appengine.gif" /></a></p>
 
 If you've talked to me about work during the last couple years, I've probably
 downplayed it, resorted to generalities, or just changed the subject. No
@@ -18,7 +18,7 @@ longer! We've finally
 > and it's ready to serve your users.
 
 <a href="http://code.google.com/appengine/">
-  <img class="right" src="appengine.jpg" /></a>
+  <img class="right" src="/appengine.jpg" /></a>
 
 Personally, I spent most of my time writing the
 [datastore](http://code.google.com/appengine/docs/datastore/overview.html),

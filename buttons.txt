@@ -4,10 +4,10 @@ These buttons used to be on the main page, but I didn't like them there, so I
 removed them. They've archived here for posterity. For more information, see
 [2003-07-16](/2003-07-16_blogway).
 
-<a href="http://validator.w3.org/check?uri=http://snarfed.org/"><img src="xhtml.png"></a>
-<a href="http://jigsaw.w3.org/css-validator/validator?uri=http://snarfed.org/default.css"><img src="css.png"></a>
-<a href="http://feeds.archive.org/validator/check.cgi?url=http://snarfed.org/"><img src="rss.png"></a>
-<a href="http://geourl.org/near/?p=http://snarfed.org/"><img src="geo_globe.png"></a>
-<a href="http://snipsnap.org/"><img src="snipsnap_button.png"></a>
-<a href="http://creativecommons.org/licenses/by/2.0/"><img src="cclogo.png"></a>
+<a href="http://validator.w3.org/check?uri=http://snarfed.org/"><img src="/xhtml.png"></a>
+<a href="http://jigsaw.w3.org/css-validator/validator?uri=http://snarfed.org/default.css"><img src="/css.png"></a>
+<a href="http://feeds.archive.org/validator/check.cgi?url=http://snarfed.org/"><img src="/rss.png"></a>
+<a href="http://geourl.org/near/?p=http://snarfed.org/"><img src="/geo_globe.png"></a>
+<a href="http://snipsnap.org/"><img src="/snipsnap_button.png"></a>
+<a href="http://creativecommons.org/licenses/by/2.0/"><img src="/cclogo.png"></a>
 

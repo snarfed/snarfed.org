@@ -1,6 +1,6 @@
 SnipSnap
 
-<a href="http://snipsnap.org/"><img src="snipsnap-logo.png"></a>
+<a href="http://snipsnap.org/"><img src="/snipsnap-logo.png"></a>
 
 [SnipSnap](http://snipsnap.org) is the software that originally ran this site.
 It's is an easy to install and easy to use weblog and wiki software written in

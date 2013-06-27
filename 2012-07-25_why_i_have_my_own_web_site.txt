@@ -1,6 +1,6 @@
 Why I have my own web site
 
-<p class="right"><img class="shadow" src="house_with_white_picket_fence.jpg" /></p>
+<p class="right"><img class="shadow" src="/house_with_white_picket_fence.jpg" /></p>
 
 [Brett](http://www.onebigfluke.com/) recently laid out his reasons for
 [keeping his own web site](http://www.onebigfluke.com/2012/07/focusing-on-positives-why-i-have-my-own.html#comment-form)
@@ -35,7 +35,7 @@ settings and
 or
 [get acquired, pivot, and dump my blog posts overboard](http://techcrunch.com/2011/04/26/social-network-pioneer-friendster-to-erase-all-user-photos-blogs-and-more-on-may-31/).
 
-<img class="left" src="toy_chest.jpg" />
+<img class="left" src="/toy_chest.jpg" />
 
 Sure, I want to express myself and be an Internet citizen too. I think of my
 posts here as a diary, a scrapbook I can easily share with others and reminisce

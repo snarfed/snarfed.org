@@ -2,7 +2,7 @@ Migrated to WordPress
 
 <p class="right">
  <a href="http://wordpress.org/">
-  <img src="wordpress.png" alt="wordpress" /></a></p>
+  <img src="/wordpress.png" alt="wordpress" /></a></p>
 
 This site, [snarfed.org](http://snarfed.org/), has been running happily on
 [PyBlosxom](http://pyblosxom.bluesock.org/) for the
@@ -29,7 +29,7 @@ and it occasionally made them unhappy enough that they'd
 [clobber my PyBlosxom CGI script](/2009-02-24_back).
 
 <a href="http://pyblosxom.bluesock.org/">
-  <img class="left" src="pyblosxom.jpg" alt="pyblosxom" /></a>
+  <img class="left" src="/pyblosxom.jpg" alt="pyblosxom" /></a>
 
 So, with a heavy heart, I started looking around for an alternative. I wanted
 something mature, with a large community, so I could expect bug fixes and new

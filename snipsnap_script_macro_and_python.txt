@@ -1,8 +1,8 @@
 snipsnap script macro and python
 
-<a href="http://snipsnap.org/"><img src="snipsnap.png"></a>
-<a href="http://python.org/"><img src="python_powered.png"></a>
-<a href="http://www.jython.org/"><img src="jython.png"></a>
+<a href="http://snipsnap.org/"><img src="/snipsnap.png"></a>
+<a href="http://python.org/"><img src="/python_powered.png"></a>
+<a href="http://www.jython.org/"><img src="/jython.png"></a>
 
 _This
 article is also [posted at
@@ -22,7 +22,7 @@ succeed where I failed!
 Recently, a [friend](http://www-cs-students.stanford.edu/~nstoll/) asked me if I
 could write a simple webapp on [snarfed.org](http://snarfed.org/), my
 SnipSnap-based site. Unfortunately, I hesitated, and for good reason. I've
-written my fair share of [SnipSnap macros](snipsnap_macros), and I like the
+written my fair share of [SnipSnap macros](/snipsnap_macros), and I like the
 macro architecture, but it's not designed for interactive webapps. I considered
 whipping up some JSPs and serving them through
 [Jetty](http://mortbay.org/jetty/), but that's far from lightweight, and I'm far
@@ -49,7 +49,7 @@ META-INF/services/org.radeox.macro.Macro was commented out:
 
 You can uncomment this line and rebuild snipsnap-servlets.jar, but it's probably
 easier to just download my
-[script.jar](script.jar),
+[script.jar](/script.jar),
 which just has ScriptMacro.class and an uncommented org.radeox.macro.Macro file,
 put it in your WEB-INF/lib directory, and restart SnipSnap.
 
@@ -167,4 +167,4 @@ it, though, {script} isn't the answer.
 [BeanShell](http://www.snipsnap.org/space/BeanShell) might be worth a look, but
 at first glance, I'm guessing it's similarly wide open.
 
-Got any ideas? If so, please [let me know](about)!
+Got any ideas? If so, please [let me know](/about)!

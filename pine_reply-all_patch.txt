@@ -2,7 +2,7 @@ pine reply-all patch
 
 <p class="right">
  <a href="http://washington.edu/pine/">
-  <img src="pine.png" /></a></p>
+  <img src="/pine.png" /></a></p>
 
 For the impatient: Patch for Pine
 [4.58](https://github.com/snarfed/misc/blob/master/patches/pine/reply-all.patch.4.58),
@@ -42,7 +42,7 @@ accordingly. Also, if you're not on Red Hat Linux, modify the last command
 accordingly. For more information on patching Pine, see
 [Eduardo Chappa's FAQ](http://www.math.washington.edu/~chappa/pine/faq/index.html).
 
-If you do try it out, please [let me know!](about)
+If you do try it out, please [let me know!](/about)
 
 **Note:** If you get compile problems with kssl.h and krb5.h when building Pine
 on Redhat 9, use this build command:

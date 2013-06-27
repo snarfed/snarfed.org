@@ -11,7 +11,7 @@ div.margined {
 </style>
 
 <div class="right captioned margined" style="margin-left: 15px;">
-<img class="right shadow" src="upside_down_atv.jpg" />
+<img class="right shadow" src="/upside_down_atv.jpg" />
 <br />
 <i>Artist's rendition. Not my actual wreck.</i>
 </div>
@@ -82,8 +82,8 @@ halls I'd walked down just hours before, my first stretcher ride of many to
 come.
 
 <div class="left captioned margined" style="margin-right: 15px;">
-<a class="shutter" href="atv_accident_ct_scan_head_front.png">
-  <img class="shadow" src="atv_accident_ct_scan_head_front_thumb.png" /></a>
+<a class="shutter" href="/atv_accident_ct_scan_head_front.png">
+  <img class="shadow" src="/atv_accident_ct_scan_head_front_thumb.png" /></a>
 <br />
 <i>Check out that cheek bone on the left. Yow.</i>
 </div>
@@ -123,8 +123,8 @@ with. My eye socket was broken at the top, side, and bottom. Left alone, my
 eyeball would gradually sink and I'd start to see double and lose vision.
 
 <div class="right captioned margined" style="margin-left: 15px;">
-<a class="shutter" href="atv_accident_ct_scan_head_bottom.png">
-  <img class="shadow" src="atv_accident_ct_scan_head_bottom_thumb.png" /></a>
+<a class="shutter" href="/atv_accident_ct_scan_head_bottom.png">
+  <img class="shadow" src="/atv_accident_ct_scan_head_bottom_thumb.png" /></a>
 <br />
 <i>Cheek bones on the left crushed into the sinus cavity.</i>
 </div>

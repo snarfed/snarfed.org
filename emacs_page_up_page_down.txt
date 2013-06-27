@@ -1,8 +1,8 @@
 emacs page up page down
 
-<a href="http://gnu.org/software/emacs/"><img src="gnu.jpg"></a>
-<a href="emacs_page_up_page_down"><img src="page_up_key.jpg"></a>
-<a href="emacs_page_up_page_down"><img src="page_down_key.jpg"></a>
+<a href="http://gnu.org/software/emacs/"><img src="/gnu.jpg"></a>
+<a href="/emacs_page_up_page_down"><img src="/page_up_key.jpg"></a>
+<a href="/emacs_page_up_page_down"><img src="/page_down_key.jpg"></a>
 
 By
 default, the page up and page down keys in

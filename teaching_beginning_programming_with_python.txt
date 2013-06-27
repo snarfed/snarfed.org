@@ -1,12 +1,12 @@
 teaching beginning programming with Python
 
-<a href="http://python.org/"><img src="python-new.png"></a>
-<a href="http://python.org/"><img src="python-old.png"></a>
+<a href="http://python.org/"><img src="/python-new.png"></a>
+<a href="http://python.org/"><img src="/python-old.png"></a>
 
 I'm
 a software engineer. I've been programming for a long time - in
 [school](http://www.stanford.edu/), at [work](http://google.com/), and for
-[fun](software). While I was in school, I also taught computer science as
+[fun](/software). While I was in school, I also taught computer science as
 a TA for three years.
 
 I TAed a [mid-level class](http://cs107.stanford.edu/), though, so by the time I

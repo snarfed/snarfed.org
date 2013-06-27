@@ -2,10 +2,10 @@ pyblosxom rdf flavour
 
 <p class="right">
  <a href="http://pyblosxom.bluesock.org/">
-  <img src="pyblosxom.jpg" /></a></p>
+  <img src="/pyblosxom.jpg" /></a></p>
 
 For the impatient:  
-&nbsp; [Download rdf_flavour.tar.gz](rdf_flavour.tar.gz)  
+&nbsp; [Download rdf_flavour.tar.gz](/rdf_flavour.tar.gz)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.bluesock.org/)  
 &nbsp; [PyBlosxom flavour registry](http://pyblosxom.bluesock.org/blog/registry/flavours?sortby=path)
 
@@ -15,8 +15,8 @@ For the impatient:
 different formats. Pyblosxom comes with a number of flavours, including plain
 HTML, RSS (0.91 and 2.0), and Atom.
 
-I've added an [RDF flavour](rdf_flavour.tar.gz) that uses
+I've added an [RDF flavour](/rdf_flavour.tar.gz) that uses
 [Dublin Core](http://dublincore.org/schemas/xmls/) elements.
 
-The RDF flavour is copyright 2006 [Ryan Barrett](about), and is
+The RDF flavour is copyright 2006 [Ryan Barrett](/about), and is
 distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).

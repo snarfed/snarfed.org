@@ -1,6 +1,6 @@
 Othering
 
-<p class="right"><img class="shadow" width="180" src="apples_and_oranges.jpg" /></p>
+<p class="right"><img class="shadow" width="180" src="/apples_and_oranges.jpg" /></p>
 
 Discrimination has been in the news recently. The
 [Fisher v. UT](http://en.wikipedia.org/wiki/Fisher_v._University_of_Texas)
@@ -42,7 +42,7 @@ when you define a group, you identify people who _aren't_ in it as well as
 people who are. That us vs them mentality, that othering of the people outside
 the group, can be dangerous.
 
-<img class="left shadow" width="180" src="two_buckets.jpg" />
+<img class="left shadow" width="180" src="/two_buckets.jpg" />
 
 Examples of this are easy to come by: white power groups, religious
 fundamentalists, good old boys' clubs, NIMBY opposition to local infrastructure.

@@ -2,7 +2,7 @@ Locale Headphone Buttons Plugin
 
 <p class="right">
  <a href="https://market.android.com/details?id=org.snarfed.android.headphonebuttons">
-  <img src="locale_headphone_buttons_plugin_icon.png"/></a></p>
+  <img src="/locale_headphone_buttons_plugin_icon.png"/></a></p>
 
 <!-- to package:
 cd ~/src/android/headphone_buttons
@@ -37,7 +37,7 @@ I use this to restart whatever was playing last when I plug in my headphones. It
 Warning: some media player apps don't handle headphone buttons consistently, or even at all, even built-in apps. If this plugin doesn't work with a specific app, check that it supports the headphone button you've selected, and/or try other buttons.
 
 The app is open source and released into the public domain.
-[Download the code](locale_headphone_buttons_plugin.tar.bz2).
+[Download the code](/locale_headphone_buttons_plugin.tar.bz2).
 
 For more, see my blog post
-_[Thoughts on writing my first Android app](2011-12-02_thoughts_on_writing_my_first_android_app)_.
+_[Thoughts on writing my first Android app](/2011-12-02_thoughts_on_writing_my_first_android_app)_.

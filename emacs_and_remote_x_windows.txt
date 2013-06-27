@@ -2,7 +2,7 @@ Emacs and remote X Windows
 
 <p class="right">
  <a href="http://gnu.org/software/emacs/">
-  <img src="gnu.jpg" /></a></p>
+  <img src="/gnu.jpg" /></a></p>
 
 I work at home occasionally, using plain old SSH to VPN in to work. I forward X
 Windows over SSH, so I can run shells and
@@ -14,7 +14,7 @@ kill ring. Whenever Emacs kills or yanks text, it synchronizes itself with the X
 Windows clipboard so you can copy and paste between Emacs and other apps.
 However, I don't do that much, and it causes a noticeable lag if you're
 displaying remotely. So, I turn it off with this elisp in
-[my .emacs](dotfiles/.emacs):
+[my .emacs](/dotfiles/.emacs):
 
     (setq interprogram-cut-function nil)
     (setq interprogram-paste-function nil)

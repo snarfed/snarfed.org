@@ -1,8 +1,8 @@
 snipsnap2svn
 
-<a href="http://snipsnap.org/"><img src="snipsnap.png" style="padding-bottom: 15px" /></a>
-<a href="http://www.w3.org/TR/xslt"><img src="xsl.png"></a>
-<a href="http://subversion.tigris.org/"><img src="subversion.jpg"></a>
+<a href="http://snipsnap.org/"><img src="/snipsnap.png" style="padding-bottom: 15px" /></a>
+<a href="http://www.w3.org/TR/xslt"><img src="/xsl.png"></a>
+<a href="http://subversion.tigris.org/"><img src="/subversion.jpg"></a>
 
 I've just posted [snipsnap2svn](/snipsnap2svn), an
 [XSLT](http://www.w3.org/TR/xslt) script that converts

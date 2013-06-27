@@ -2,7 +2,7 @@ Y!OS: Yahoo Open Strategy
 
 <p class="right">
  <a href="http://developer.yahoo.com/yos/intro/">
-  <img src="yahoo_exclamation_logo.png" alt="yahoo exclamation logo" /></a></p>
+  <img src="/yahoo_exclamation_logo.png" alt="yahoo exclamation logo" /></a></p>
 
 I've already written about a few cloud computing services here -
 [Azure](/2008-11-22_windows_azure),
@@ -35,7 +35,7 @@ various properties, including private data - if permitted -
 [via OAuth](http://developer.yahoo.com/oauth/guide/).
 
 <a href="http://developer.yahoo.com/yap/guide/yap-anatomy.html">
-  <img class="left" src="yos_anatomy_snippet.png" alt="yos anatomy snippet" /></a>
+  <img class="left" src="/yos_anatomy_snippet.png" alt="yos anatomy snippet" /></a>
 
 There are
 [three runtime models](http://developer.yahoo.com/yap/guide/prog-model.html)

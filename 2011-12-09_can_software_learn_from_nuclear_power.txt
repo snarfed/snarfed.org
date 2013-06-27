@@ -1,6 +1,6 @@
 Can software learn from nuclear power?
 
-<p class="right"><img class="shadow" src="mushroom_cloud.jpg" /></p>
+<p class="right"><img class="shadow" src="/mushroom_cloud.jpg" /></p>
 
 I just finished reading
 [Charles Perrow](http://en.wikipedia.org/wiki/Charles_Perrow)'s
@@ -41,8 +41,8 @@ _and_ tightly coupled before it's prone to accidents. This begs the question:
 can you prevent failures by making a system more linear, or by loosening its
 coupling? Perrow says yes.
 
-<a class="shutter" href="perrow_interaction_coupling.png">
-  <img class="right" src="perrow_interaction_coupling_thumb.png"></a>
+<a class="shutter" href="/perrow_interaction_coupling.png">
+  <img class="right" src="/perrow_interaction_coupling_thumb.png"></a>
 
 In software, loose coupling is common. For example, we know that replacing an
 RPC call with a queue can improve reliability, though at the cost of latency.
@@ -79,7 +79,7 @@ efficiency, throughput, and some failure recovery, but hurts visibility,
 control, and flexibility on the part of human operators. Each has its own
 Achilles heel, and neither prevents failures entirely.
 
-<img class="right shadow" src="truck_accident.jpg" />
+<img class="right shadow" src="/truck_accident.jpg" />
 
 One particularly interesting point was externalities such as pressure from
 management to minimize costs and downtime. Perrow turns

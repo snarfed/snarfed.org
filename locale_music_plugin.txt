@@ -2,7 +2,7 @@ Locale Music Plugin
 
 <p class="right">
  <a href="https://market.android.com/details?id=org.snarfed.android.localemusic">
-  <img src="locale_music_plugin_icon.png"/></a></p>
+  <img src="/locale_music_plugin_icon.png"/></a></p>
 
 <!-- to package:
 cd ~/src/android/locale_music
@@ -31,7 +31,7 @@ If there's no available music app, it uses the built in Android media player.
 Playlists are only supported on some devices.
 
 The app is open source and released into the public domain.
-[Download the code](locale_music_plugin.tar.bz2).
+[Download the code](/locale_music_plugin.tar.bz2).
 
 For more, see my blog post
-_[Thoughts on writing my first Android app](2011-12-02_thoughts_on_writing_my_first_android_app)_.
+_[Thoughts on writing my first Android app](/2011-12-02_thoughts_on_writing_my_first_android_app)_.

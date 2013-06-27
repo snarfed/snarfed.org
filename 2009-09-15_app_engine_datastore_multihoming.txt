@@ -2,7 +2,7 @@ App Engine Datastore multihoming
 
 <p class="right">
  <a href="http://googleappengine.blogspot.com/">
-  <img src="appengine.jpg" /></a></p>
+  <img src="/appengine.jpg" /></a></p>
 
 I recently
 [posted about datastore multihoming](http://googleappengine.blogspot.com/2009/09/migration-to-better-datastore.html),

@@ -7,9 +7,9 @@ work, family, school, local, or just people you want to pay more (or less)
 attention to.
 
 <a href="http://www.facebook.com/friends/?ref=tn">
-  <img class="shadow" src="facebook_make_a_new_list.png"></a>
+  <img class="shadow" src="/facebook_make_a_new_list.png"></a>
 <a href="http://www.facebook.com/friends/?ref=tn">
-  <img class="shadow" src="facebook_friend_list.png"></a>
+  <img class="shadow" src="/facebook_friend_list.png"></a>
 
 It's easy to add or remove individual people from a friend list, but at first,
 there's no obvious to way to make larger, bulk changes. That's where the subtle,
@@ -18,15 +18,15 @@ almost hidden,
 link comes in. (It's next to the "Add to List" text box where you can type in a
 person's name to add to the friend list.)
 
-<img class="shadow" src="facebook_multi_friend_selector.png" />
+<img class="shadow" src="/facebook_multi_friend_selector.png" />
 
 It pops up a window that shows your friends visually, in a grid, and lets you
 click to add or remove them. The same interface is used for inviting people to
 events and groups, among other things. It's even exposed to Facebook Apps as
 [Fb:multi-friend-selector](http://wiki.developers.facebook.com/index.php/Fb:multi-friend-selector).
 
-<a href="feeds">
-  <img class="right" src="rss.jpg" /></a>
+<a href="/feeds">
+  <img class="right" src="/rss.jpg" /></a>
 
 I particularly like that friend lists have their own
 [RSS feeds](http://www.facebook.com/help.php?hq=rss+friends&ref=hq)

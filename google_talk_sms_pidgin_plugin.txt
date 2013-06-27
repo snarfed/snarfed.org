@@ -2,7 +2,7 @@ google_talk_sms pidgin plugin
 
 <p class="right">
  <a href="http://pidgin.im/">
-  <img src="pidgin_full.png" /></a></p>
+  <img src="/pidgin_full.png" /></a></p>
 
 [Download google_talk_sms.pl 0.4](https://github.com/snarfed/misc/raw/master/pidgin/google_talk_sms.pl)  
 &nbsp;&nbsp; (requires Pidgin 2.5.2 or above)  
@@ -34,7 +34,7 @@ temporary. My friends couldn't initiate conversations with me via SMS;
 I had to text them first.
 
 <a href="http://talk.google.com/">
-  <img class="left" src="google_talk_logo.png" /></a>
+  <img class="left" src="/google_talk_logo.png" /></a>
 
 When [Google Talk](http://talk.google.com/)
 [added SMS support](http://gmailblog.blogspot.com/2008/12/really-new-in-labs-this-time-sms-text.html),
@@ -50,7 +50,7 @@ people did too, and since each SMS costs money, Google decided to
 Other clients received the error message
 _"SMS_ERROR_11: Sorry we don't support free SMS messaging through this client. Visit http://gmail.com/sms for more info. (Code 405)"_
 
-<img class="right" src="sms_phone.jpg" /></a>
+<img class="right" src="/sms_phone.jpg" /></a>
 
 The restriction is fairly simple, though. The Google Talk servers simply
 look for `sms-v1` or `sms-v1` in the `ext` attribute of `caps:c` (the

@@ -1,6 +1,6 @@
 site search with the Google AJAX Search API
 
-<p class="right"><img src="ajax.jpg" /></p>
+<p class="right"><img src="/ajax.jpg" /></p>
 
 <div style="color: red"><i>
 Google has
@@ -42,7 +42,7 @@ key, your site's domain, and the path to `ajax_search.js` on your server,
 respectively.
 
 <a href="http://code.google.com/">
-  <img class="right" src="google_code.png" /></a>
+  <img class="right" src="/google_code.png" /></a>
 
 Finally, set the `results_id` variable in `ajax_search.js` to the id of an
 existing div where you want search results to be placed. This div will be

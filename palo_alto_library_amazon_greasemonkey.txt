@@ -1,8 +1,8 @@
 palo alto library amazon greasemonkey
 
-<a href="http://greasemonkey.mozdev.org/"><img src="greasemonkey.png"></a>
-<a href="http://amazon.com/"><img src="amazon.jpg"></a>
-<a href="http://webcat.cityofpaloalto.org/"><img src="palo_alto_seal.jpg"></a>
+<a href="http://greasemonkey.mozdev.org/"><img src="/greasemonkey.png"></a>
+<a href="http://amazon.com/"><img src="/amazon.jpg"></a>
+<a href="http://webcat.cityofpaloalto.org/"><img src="/palo_alto_seal.jpg"></a>
 
 For the impatient:  
 [Install Palo Alto Library](https://github.com/snarfed/misc/blob/master/userscripts/paloaltolibrary.user.js)
@@ -27,11 +27,11 @@ color-coded, since
 means it's there, yellow means it's temporarily unavailable (checked out, on
 order, etc.), red means it's not in the library.
 
-![available_thumb](available_thumb.jpg)
+![available_thumb](/available_thumb.jpg)
 
-More screenshots: [checked out](checked_out_thumb.jpg),
-[not available](not_available_thumb.jpg), [on order](on_order.jpg),
-[in process](in_process.jpg). Thanks to Eric Galloway for adding "on order"
+More screenshots: [checked out](/checked_out_thumb.jpg),
+[not available](/not_available_thumb.jpg), [on order](/on_order.jpg),
+[in process](/in_process.jpg). Thanks to Eric Galloway for adding "on order"
 support.
 
 Background: [Jon Udell](http://weblog.infoworld.com/udell/)'s

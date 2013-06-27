@@ -1,20 +1,20 @@
 invert mouse in Beyond Good &amp; Evil
 
 <a href="http://beyondgoodevil.com/">
-  <img class="shadow" src="two.jpg"></a>
+  <img class="shadow" src="/two.jpg"></a>
 <a href="http://beyondgoodevil.com/">
-  <img class="shadow" src="box.jpg"></a>
+  <img class="shadow" src="/box.jpg"></a>
 <a href="http://beyondgoodevil.com/">
-  <img class="shadow" src="explosion.jpg"></a>
+  <img class="shadow" src="/explosion.jpg"></a>
 
 _If you like Beyond Good & Evil, you might also like
-[my writeup](2004-11-11_beyond_good_and_evil) and the
-[soundtrack](Beyond_Good_&_Evil_soundtrack)._
+[my writeup](/2004-11-11_beyond_good_and_evil) and the
+[soundtrack](/Beyond_Good_&_Evil_soundtrack)._
 
 **Problem**
 
 I recently played the game Beyond Good & Evil, and I
-[loved every minute](2004-11-11_beyond_good_and_evil) of it. However, it has
+[loved every minute](/2004-11-11_beyond_good_and_evil) of it. However, it has
 [a bug](http://forums.ubi.com/eve/ubb.x?a=tpc&s=400102&f=401101532&m=286101532&r=396101532#396101532)
 that prevents inverting the mouse input, in both "look" and "camera" modes.
 

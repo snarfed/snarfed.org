@@ -1,11 +1,11 @@
 why I don't run shells inside Emacs
 
-<a href="http://rxvt.org/"><img src="terminal.jpg"></a>
-<a href="http://tcsh.org/"><img src="tcsh_oystercatcher.jpg"></a>
-<a href="http://gnu.org/software/emacs/"><img src="gnu.jpg"></a>
+<a href="http://rxvt.org/"><img src="/terminal.jpg"></a>
+<a href="http://tcsh.org/"><img src="/tcsh_oystercatcher.jpg"></a>
+<a href="http://gnu.org/software/emacs/"><img src="/gnu.jpg"></a>
 
 *This article describes my first attempt at running shells inside Emacs, which
-didn't work out. I [tried again recently](why_i_run_shells_inside_emacs), and I
+didn't work out. I [tried again recently](/why_i_run_shells_inside_emacs), and I
 think I'm going to stick with it, so this is preserved for posterity only!*
 
 When I'm working, I pretty much live inside
@@ -104,12 +104,12 @@ wrestling [GNU screen](http://www.gnu.org/software/screen/) into submission,
 since it also allows
 [keyboard navigation and copy/paste](http://www.delorie.com/gnu/docs/screen/screen_73.html)
 over shell contents. So far, I've
-[synchronized its paste buffer and the X selection](synchronizing_GNU_screens_paste_buffer_and_the_X_selection),
+[synchronized its paste buffer and the X selection](/synchronizing_GNU_screens_paste_buffer_and_the_X_selection),
 and I've
-[Emacs-ified its copy-scrollback mode](Emacs_keybindings_in_GNU_screens_copy-scrollback_mode).
+[Emacs-ified its copy-scrollback mode](/Emacs_keybindings_in_GNU_screens_copy-scrollback_mode).
 Stay tuned for more!
 
-Here's what I added to [my .emacs](dotfiles/.emacs) to
+Here's what I added to [my .emacs](/dotfiles/.emacs) to
 make shell-mode behave the way I wanted:
 
 <a name="settings"></a>

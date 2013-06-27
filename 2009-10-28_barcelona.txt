@@ -1,7 +1,7 @@
 Barcelona
 
-<a href="/gallery/barcelona_2009">
-  <img class="right shadow" src="/gallery/barcelona_2009/thumbs/la_rambla_ryan.jpg" /></a>
+<p class="right"><a href="/gallery/barcelona_2009">
+  <img class="shadow" src="/gallery/barcelona_2009/thumbs/la_rambla_ryan.jpg" /></a></p>
 
 I'm glad we made time on our [vacation](/2009-10-27_back_from_vacation)
 to hop over to Barcelona, instead of staying solely in

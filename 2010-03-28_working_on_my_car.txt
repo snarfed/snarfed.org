@@ -1,7 +1,7 @@
 Working on my car
 
-<a href="ford_mustang_1965_vs_2006">
-  <img class="right shadow" src="2006_mustang.jpg" alt="2006 mustang" /></a>
+<p class="right"><a href="/ford_mustang_1965_vs_2006">
+  <img class="shadow" src="/2006_mustang.jpg" alt="2006 mustang" /></a></p>
 
 I've been doing lots of different things in my
 [free time between jobs](/2010-03-13_new_job). One of the most fun
@@ -15,7 +15,7 @@ itself. I just wanted to add aux input to the stereo so I could connect it
 to an MP3 player.
 
 <a href="http://pie.net/index.php?page=shop.product_details&flypage=flypage.tpl&product_id=45&category_id=96&option=com_virtuemart&Itemid=40">
-  <img class="left" src="pie_frd04_aux.jpg" alt="pie frd04 aux" /></a>
+  <img class="left" src="/pie_frd04_aux.jpg" alt="pie frd04 aux" /></a>
 
 Happily - and surprisingly - the electrical side hasn't changed as much over
 the years as the stuff under the hood. With the help of an

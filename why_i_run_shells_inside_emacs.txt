@@ -1,7 +1,7 @@
 why I run shells inside Emacs
 
-<a href="http://cheezburger.com/View/1666431232">
-  <img class="right shadow" src="cat_bubbles.jpg" /></a>
+<p class="right"><a href="http://cheezburger.com/View/1666431232">
+  <img class="shadow" src="/cat_bubbles.jpg" /></a></p>
 
 [Mental context switches](http://joelonsoftware.com/articles/fog0000000022.html)
 are evil. Some people handle them better than others, but not me. I handle them
@@ -17,19 +17,19 @@ differences in behavior. What's worse, only *some* parts are different, so my
 muscle memory is constantly seduced into a false sense of familiarity, only to
 have the rug yanked out from under it seconds later.
 
-I [put](emacs_keybindings_in_gnu_screens_copy-scrollback_mode)
-[together](control_arrow_keys_in_rxvt_tcsh_and_emacs)
-[various](minimal_emacs_for_fast_startup)
-[hacks](synchronizing_gnu_screens_paste_buffer_and_the_x_selection) to bring
+I [put](/emacs_keybindings_in_gnu_screens_copy-scrollback_mode)
+[together](/control_arrow_keys_in_rxvt_tcsh_and_emacs)
+[various](/minimal_emacs_for_fast_startup)
+[hacks](/synchronizing_gnu_screens_paste_buffer_and_the_x_selection) to bring
 Emacs and my shell closer together, with some success, but it always felt like a
 chronic disease. Curing it completely was never on the table; I could only hope
 to manage it.
 
 <a href="http://gnu.org/software/emacs/">
-  <img class="left" src="gnu.jpg" /></a>
+  <img class="left" src="/gnu.jpg" /></a>
 
 The holy grail, of course, was running shells *inside* Emacs. I had high hopes
-when I [tried it eight years ago](why_i_dont_run_shells_inside_emacs), but it
+when I [tried it eight years ago](/why_i_dont_run_shells_inside_emacs), but it
 didn't work out. I tried it again recently though, and it's still early days,
 but we're pretty happy together this time. I think we might go the distance!
 
@@ -55,7 +55,7 @@ Here are some things I did manage to tweak:
   [default mechanism](http://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Tracking.html).
 * ...but *don't* use it in ssh shells to remote machines, since it doesn't work.
   It complains e.g. `Warning (emacs): Directory ~/gallery/ does not exist.`
-<img class="right" src="terminal.jpg" /></a>
+<img class="right" src="/terminal.jpg" /></a>
 * Instead, run long-lived ssh shells via
   [TRAMP](http://www.gnu.org/software/tramp/), and add the hook described in
   [this thread](http://comments.gmane.org/gmane.emacs.bugs/39082) to make
@@ -72,10 +72,10 @@ Here are some things I did manage to tweak:
   `display-buffer-reuse-frames` to `t` to make sure Emacs doesn't bury (switch
   away from) shell buffers when I run it.
 * Extend the SSH shells
-  [so that emacsclient opens remote files in the local Emacs](emacsclient_in_tramp_remote_shells)
+  [so that emacsclient opens remote files in the local Emacs](/emacsclient_in_tramp_remote_shells)
   via TRAMP.
 * Use `protect-buffer-from-kill-mode` to prevent accidentally closing shell buffers.
-* [Make the completions buffer automatically close](automatically_close_completions_in_emacs_shell_comint_mode)
+* [Make the completions buffer automatically close](/automatically_close_completions_in_emacs_shell_comint_mode)
   when I'm done with it.
 * When I
   [search over command history](http://www.gnu.org/software/emacs/manual/html_node/emacs/Shell-Ring.html#index-comint_002ddynamic_002dlist_002dinput_002dring-3660)
@@ -86,7 +86,7 @@ Here are some things I did manage to tweak:
   to be non-nil.)
 
 
-Here's the code in [my .emacs](dotfiles/.emacs):
+Here's the code in [my .emacs](/dotfiles/.emacs):
 
     (defvar my-local-shells
       '("*shell0*" "*shell1*" "*shell2*" "*shell3*" "*music*"))

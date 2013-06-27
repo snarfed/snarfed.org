@@ -1,8 +1,8 @@
 synchronizing GNU screen's paste buffer and the X selection
 
-<a href="http://www.gnu.org/software/screen/"><img src="terminal.jpg"></a>
-<a href="http://gnu.org/software/emacs/"><img src="gnu.jpg"></a>
-<a href="http://x.org/"><img src="X_logo.png"></a>
+<a href="http://www.gnu.org/software/screen/"><img src="/terminal.jpg"></a>
+<a href="http://gnu.org/software/emacs/"><img src="/gnu.jpg"></a>
+<a href="http://x.org/"><img src="/X_logo.png"></a>
 
 I hate the mouse. It's good for some things, but not my work. Switching between
 the mouse and the keyboard wreaks havoc on my muscle memory and fine-motor flow.
@@ -14,12 +14,12 @@ everything I need to with the keyboard. The only thing I _can't_ do with the
 keyboard is copy text from a terminal. And that irks me.
 
 In the past, this has driven me to desperate measures, including
-[running shells inside Emacs](why_I_dont_run_shells_inside_Emacs). I currently
+[running shells inside Emacs](/why_I_dont_run_shells_inside_Emacs). I currently
 use [GNU screen](http://www.gnu.org/software/screen/)'s
 [copy/scrollback mode](http://www.delorie.com/gnu/docs/screen/screen_73.html),
 with a hack to integrate it with X Windows' clipboard.
 
-This command in [my .screenrc](dotfiles/.screenrc)
+This command in [my .screenrc](/dotfiles/.screenrc)
 copies screen's paste buffer into the X primary selection. It runs automatically
 when you press > to set the second mark in copy/scrollback mode.
 

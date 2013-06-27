@@ -1,14 +1,14 @@
 vonage call activity
 
 <p class="right">
- <a href="2004-12-24_its_the_phone_stupid">
-  <img src="vonage.gif" /></a></p>
+ <a href="/2004-12-24_its_the_phone_stupid">
+  <img src="/vonage.gif" /></a></p>
 
 I recently downloaded all of my call history from [Vonage](http://vonage.com/),
-which I've [used for years](2004-12-24_its_the_phone_stupid). It wasn't entirely
+which I've [used for years](/2004-12-24_its_the_phone_stupid). It wasn't entirely
 obvious, but it turned out to be pretty straightforward. Check out
-[the](vonage_incoming_calls_example.html)
-[examples](vonage_outgoing_calls_example.html),
+[the](/vonage_incoming_calls_example.html)
+[examples](/vonage_outgoing_calls_example.html),
 then read on to see what I did.
 
 <a name="downloading"></a>
@@ -84,5 +84,5 @@ their own table column...
 <br />
 That's it! Here are examples of the resulting
 call log files:
-[incoming](vonage_incoming_calls_example.html) and
-[outgoing](vonage_outgoing_calls_example.html).
+[incoming](/vonage_incoming_calls_example.html) and
+[outgoing](/vonage_outgoing_calls_example.html).

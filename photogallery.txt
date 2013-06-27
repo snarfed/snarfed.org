@@ -1,6 +1,6 @@
 photogallery
 
-<p class="right"><img src="photogallery.jpg" /></p>
+<p class="right"><img src="/photogallery.jpg" /></p>
 
 For the impatient:  
 &nbsp; [Download photogallery.py 0.5](/photogallery.py)  

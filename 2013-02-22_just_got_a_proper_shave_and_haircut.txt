@@ -1,7 +1,7 @@
 Just got a proper shave and haircut
 
-<a href="http://www.yelp.com/biz/arcade-barber-shop-san-francisco">
- <img class="right shadow" src="arcade_barber_shop.jpg" /></a>
+<p class="right"><a href="http://www.yelp.com/biz/arcade-barber-shop-san-francisco">
+ <img class="shadow" src="/arcade_barber_shop.jpg" /></a></p>
 
 ...at an
 [old school barbershop](http://www.yelp.com/biz/arcade-barber-shop-san-francisco).

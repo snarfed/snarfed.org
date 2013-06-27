@@ -2,15 +2,15 @@ port_pine_patch
 
 <p class="right">
  <a href="http://washington.edu/pine/">
-  <img src="pine.png" /></a></p>
+  <img src="/pine.png" /></a></p>
 
 For the impatient:  
 [Download port_pine_patch.sh](https://github.com/snarfed/misc/blob/master/port_pine_patch.sh)  
 [Pine source](http://www.washington.edu/pine/getpine/unix.html)  
-[My pine patches](software#patches)  
+[My pine patches](/software#patches)  
 [FAQ on patching pine](http://www.math.washington.edu/~chappa/pine/faq/)  
 
-I've written a number of [patches](software#patches) for
+I've written a number of [patches](/software#patches) for
 [Pine](http://www.washington.edu/pine/), my email client. For a while, I ported
 them to new versions of Pine manually, which was very time consuming.
 

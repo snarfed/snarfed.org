@@ -1,6 +1,6 @@
 Privacy for postal mail
 
-<p class="right"><img src="mailbox.jpg" /></p>
+<p class="right"><img src="/mailbox.jpg" /></p>
 
 If you're reading this, you already know I go
 [a bit](/2011-08-03_why_im_weird_about_privacy)
@@ -35,7 +35,7 @@ The catch is that [USPS](http://usps.com/) requires you to fill out and notarize
 CMRA can open your mail, and that form needs _two forms of ID_ with identifying
 numbers like passport or drivers license number. Ugh. Not cool.
 
-<img class="left" src="ca_drivers_license.jpg" />
+<img class="left" src="/ca_drivers_license.jpg" />
 
 I wasn't about do to that, so I found a loophole instead. You can't avoid the ID
  requirement, but you can include additional people as addressees on the mailbox.

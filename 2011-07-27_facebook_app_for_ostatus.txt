@@ -2,7 +2,7 @@ Facebook app for OStatus?
 
 <p class="right">
  <a href="http://ostatus.org/about">
-  <img src="ostatus.png"/></a></p>
+  <img src="/ostatus.png"/></a></p>
 
 Social networks are sprouting like weeds. I don't know about you, but I groan
 every time I get a burst of invitations from the latest network du jour. I
@@ -33,7 +33,7 @@ however, is comprehensive enough that third party apps could easily implement
 bridges and even fully federated protocols like OStatus.
 
 <a href="http://facebook.com/">
-  <img class="left" src="facebook_f_logo.png"></a>
+  <img class="left" src="/facebook_f_logo.png"></a>
 
 Given that, it's odd that I
 [can't find anyone who's done this yet](http://www.google.com/search?q=facebook+"ostatus").
