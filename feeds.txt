@@ -19,7 +19,7 @@ other private rss feeds.
 
 xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
   ~/etc/google-reader-subscriptions.opml.xml \
-  | grep -v -E 'picasaweb|smugmug|facebook.com|plusstreamfeed.appspot'
+  | grep -v -E 'picasaweb|smugmug|facebook.com|plusstreamfeed|mockfacebook|link:snarfed.org|Twitter Search'
 
 
 twitter
@@ -163,9 +163,6 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [Demruth](http://www.demruth.com/blog)
 (_[subscribe](http://www.demruth.com/blog/?feed=rss2)_) 
 
-* [Discussions on scripts by ryanb | Userscripts.org](http://userscripts.org/users/224162/scripts)
-(_[subscribe](http://userscripts.org/feeds/users/224162/scripts/comments)_) 
-
 * [Django-nonrel & webdev blog - All Buttons Pressed](http://www.allbuttonspressed.com/)
 (_[subscribe](http://feeds.feedburner.com/AllButtonsPressed)_) 
 
@@ -220,12 +217,6 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [Giri's Startup Life](http://giri.co)
 (_[subscribe](http://girisreenivas.com/feed/)_) 
 
-* [Google Alerts - "mockfacebook"](http://www.google.com/reader/view/user%2F12768739244895054761%2Fstate%2Fcom.google%2Falerts%2F7842557606252670048)
-(_[subscribe](http://www.google.com/reader/public/atom/user/12768739244895054761/state/com.google/alerts/7842557606252670048)_) 
-
-* [Google Alerts - "plusstreamfeed"](http://www.google.com/reader/view/user%2F12768739244895054761%2Fstate%2Fcom.google%2Falerts%2F6135150986187686478)
-(_[subscribe](http://www.google.com/reader/public/atom/user/12768739244895054761/state/com.google/alerts/6135150986187686478)_) 
-
 * [Google App Engine Blog](http://googleappengine.blogspot.com/)
 (_[subscribe](http://feeds.feedburner.com/GoogleAppEngineBlog)_) 
 
@@ -274,9 +265,6 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [Kevin Gibbs](http://www.kevgibbs.com/)
 (_[subscribe](http://feeds.feedburner.com/KevinGibbs?format=xml)_) 
 
-* [link:snarfed.org - Google Blog Search](http://www.google.com/search?hl=en&q=link:snarfed.org&ie=utf-8&tbm=blg&tbs=sbd:1)
-(_[subscribe](http://blogsearch.google.com/blogsearch_feeds?hl=en&q=link:snarfed.org&scoring=d&ie=utf-8&num=10&output=rss)_) 
-
 * [Long Views: The Long Now Blog » Seminars](http://blog.longnow.org)
 (_[subscribe](http://blog.longnow.org/category/seminars/feed/)_) 
 
@@ -298,9 +286,6 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [mmandel's projects](http://www.mmandel.com/blog)
 (_[subscribe](http://www.mmandel.com/blog/?feed=rss2)_) 
 
-* [mockfacebook - Twitter Search](http://search.twitter.com/search?q=mockfacebook)
-(_[subscribe](http://search.twitter.com/search.atom?q=mockfacebook)_) 
-
 * [Nathan Stoll](http://blog.nathanstoll.com/)
 (_[subscribe](http://blog.nathanstoll.com/feeds/posts/default)_) 
 
@@ -315,9 +300,6 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 
 * [Neopythonic](http://neopythonic.blogspot.com/)
 (_[subscribe](http://neopythonic.blogspot.com/feeds/posts/default)_) 
-
-* [Netflix API: Get all of a user's ratings](http://developer.netflix.com/forum/read/28216)
-(_[subscribe](http://developer.netflix.com/forum/read/28216.rss)_) 
 
 * [neugierig.org updates](http://neugierig.org/)
 (_[subscribe](http://neugierig.org/feed.xml)_) 
@@ -373,9 +355,6 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [Pidgin News](http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Fplanet.pidgin.im%2Frss20.xml)
 (_[subscribe](http://planet.pidgin.im/rss20.xml)_) 
 
-* [plusstreamfeed - Twitter Search](http://search.twitter.com/search?q=plusstreamfeed)
-(_[subscribe](http://search.twitter.com/search.atom?q=plusstreamfeed)_) 
-
 * [Powered by Diet Coke](http://poweredbydietcoke.tumblr.com/)
 (_[subscribe](http://poweredbydietcoke.tumblr.com/rss)_) 
 
@@ -397,9 +376,6 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 * [Salmon Protocol](http://www.google.com/reader/view/feed%2Fhttp%3A%2F%2Fwww.salmon-protocol.org%2Fnews%2Fposts.xml)
 (_[subscribe](http://www.salmon-protocol.org/news/posts.xml)_) 
 
-* [San Francisco metro area Event Search - Eventful](http://eventful.com/sanfrancisco/events?q=%22conversations%20at%20the%20herbst%22&ga_search=%22conversations%20at%20the%20herbst%22&ga_type=events)
-(_[subscribe](http://eventful.com/atom/sanfrancisco/events?q=%22conversations%20at%20the%20herbst%22&ga_search=%22conversations%20at%20the%20herbst%22&ga_type=events)_) 
-
 * [Schneier on Security](http://www.schneier.com/blog/)
 (_[subscribe](http://feeds.feedburner.com/schneier/fulltext)_) 
 
@@ -411,9 +387,6 @@ http://feedsifter.com/?f=http%3A%2F%2Ffeeds.feedburner.com%2FGamasutraNews&analy
 
 * [snarfed.org](http://snarfed.org)
 (_[subscribe](http://snarfed.org/feed)_) 
-
-* [snarfed.org - Twitter Search](http://search.twitter.com/search?q=snarfed.org)
-(_[subscribe](http://search.twitter.com/search.atom?q=snarfed.org)_) 
 
 * [SnipSnap](http://snipsnap.org/space/start)
 (_[subscribe](http://snipsnap.org/exec/rss?snip=start)_) 

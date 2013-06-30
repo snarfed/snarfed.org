@@ -56,9 +56,11 @@ Facebook, Twitter, and Google+ that don't implement it themselves. See the
     themselves. See the
     [blog post](/2012-01-16_webfinger_for_facebook_and_twitter) for more.
 
+<!--
   * [Google+ stream feeds](https://plusstreamfeed.appspot.com/) provides an Atom
     feed of your Google+ stream, with posts from the people in your circles,
     that you can subscribe to and read in your favorite feed reader.
+-->
 
   * [Bridgy](http://brid.gy/): Got a blog? Share your blog posts on social
     networks? Wish comments on those shared posts also showed up on your blog?
