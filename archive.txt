@@ -1,5 +1,11 @@
 Archives
 
+<div class="left half archive-page">
+Posts:  
 [archives]
+</div>
 
+<div class="right half archive-page">
+Pages:  
 [list-pages]
+</div>
