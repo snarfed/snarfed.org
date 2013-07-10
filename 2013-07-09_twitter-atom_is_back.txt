@@ -8,10 +8,10 @@ One of my side projects, [Twitter Atom feeds](http://twitter-atom.appspot.com/)
 a couple months. It
 [ran afoul](https://twitter.com/snarfed_org/status/347667926591107073) of
 Twitter's [new API terms](https://dev.twitter.com/docs/terms/summary), which
-cracked down on syndicating tweets outside of the Twitter walled garden, in any
+cracked down on syndicating tweets outside of the Twitter walled garden in any
 form.
 
-Fortunately, I've tweaked the design a bit, and it's now back up! If you used it
+Fortunately, I've tweaked the design a bit, and it's back up! If you used it
 before, you'll want to [regenerate your feed](http://twitter-atom.appspot.com/)
 and plug it back into your feed reader of choice. Feel free to [ping me](/about)
 with any questions. Enjoy!
