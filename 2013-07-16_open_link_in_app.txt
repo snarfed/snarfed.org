@@ -9,10 +9,16 @@ I've just published a new Android app,
 Ever click on a Facebook or Twitter link on your phone, and it opens in the
 browser instead of the native app? Me too. This fixes that.
 
-The Twitter app handles some links automatically, but not others, e.g. anything
-on `mobile.twitter.com`. Facebook doesn't even try. Google+ is the model
-citizen; it handles all of its links correctly, so I didn't need to do anything
-for it.
+To use it, after you click on a Facebook or Twitter link, just select Open Link
+in App from the chooser dialog box. If you don't see the dialog box, but you
+think you should, go to _Settings => Apps => Browser_ or _Chrome_, or whichever
+app is handling the link, and click _Clear defaults_.
+
+By default, the Twitter app handles some links automatically, but not others,
+e.g. `mobile.twitter.com` links. This app fills in those gaps. The Facebook app
+doesn't handle any links, so this app tries to handle all of them. Many others
+apps, e.g. Google+, handle all of their links correctly, so I didn't need to do
+anything for them.
 
 I'll add more apps and link types as I come across them. Feel free to
 [ask for](/about) any specific ones you want. Even better, the
