@@ -11,6 +11,9 @@ is public domain. Also see [other lists](/lists).
 <a name="projects"></a>
 ### Projects
 
+  * [Open Link in App](http://snarfed.org/2013-07-16_open_link_in_app) is an
+Android app that implements missing URL handlers for the Facebook and Twitter apps.
+
   * [facebook-atom](https://facebook-atom.appspot.com/) generates and serves an
 Atom feed of your Facebook news feed, ie
 posts from your friends. [More background.](/2012-03-12_activitystreams_for_facebook_and_twitter)
