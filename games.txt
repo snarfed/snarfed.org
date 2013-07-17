@@ -1,11 +1,7 @@
 games
 
-<a href="http://www.twinadv.net/lba2/">
-  <img class="shadow" src="/twinsens_odyssey.jpg"></a>
-<a href="http://www.samandmax.net/">
-  <img class="shadow" src="/sam_and_max.jpg"></a>
-<a href="http://www.ioi.dk/games/hitman1.htm">
-  <img class="shadow" src="/hitman.jpg"></a>
+<p class="right half">
+ <img src="/child_playing_game.jpg" /></p>
 
 [Games I've played](#played) and
 [games I'd like to play](#to_play).
