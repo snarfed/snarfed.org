@@ -11,7 +11,7 @@ is public domain. Also see [other lists](/lists).
 <a name="projects"></a>
 ### Projects
 
-  * [Open Link in App](/2013-07-16_open_link_in_app) is an
+  * [Open Link in App](/2013-07-16_open-link-in-app) is an
 Android app that implements missing URL handlers for the Facebook and Twitter apps.
 
   * [facebook-atom](https://facebook-atom.appspot.com/) generates and serves an
