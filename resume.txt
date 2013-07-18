@@ -3,8 +3,7 @@ Ryan Barrett
 Backend software engineer, full stack hacker. Proven track record building and
 scaling distributed systems.
 
-<small>(Jump to [experience](#experience), [education](#education),
-[patents](#patents), [other](#other).)</small>
+<!-- (Jump to [experience](#experience), [education](#education), [patents](#patents), [other](#other).) -->
 
 
 <a name="skills"></a>
@@ -70,8 +69,7 @@ customers, >XB transactions per day, and >XXkqps with 99.98% uptime. (2003 -
 [Extreme Blue](http://www.ibm.com/extremeblue/) intern. Helped design and build
 a collaboration and visualization platform for molecular biologists. After the
 internship, continued part time and developed a parallel computing system for
-running large networked molecular analyses and simulations on large server
-clusters.
+running networked molecular analyses and simulations on large server clusters.
 
 
 [LucasArts Entertainment Co.](http://www.lucasarts.com/), Software Engineer
@@ -88,6 +86,7 @@ MobileForce Technologies, Software Engineer intern, 1998
 
 <br />
 <a name="education"></a>
+### Education
 #### [Stanford University](http://www.stanford.edu/), 1998 - 2003
 
 MS in Computer Science  
@@ -96,11 +95,6 @@ BS in Computer Science, minor in Mathematics
 Coursework: networking, distributed systems, security, streaming algorithms,
 advanced databases, operating systems, C/C++, Java, graphics, discrete math,
 abstract algebra.
-
-Senior project: designed and implemented a
-[self-organizing peer-to-peer network](http://snarfed.org/p4) with a generic,
-extensible application platform. The project won top prizes from IBM, Cisco, and
-Electronic Arts as corporate sponsors.
 
 
 <br />
