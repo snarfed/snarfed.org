@@ -5,21 +5,17 @@ scaling distributed systems.
 
 <!-- (Jump to [experience](#experience), [education](#education), [patents](#patents), [other](#other).) -->
 
-
-<a name="skills"></a>
-### Skills
-
 Deep experience with Python, Go, Java, C++, Linux, iOS, Android, MySQL, NoSQL.
 Comfortable with more.
 
-Multiple [side projects](http://snarfed.org/software) and
+Multiple [side projects](http://snarfed.org/software), [talks](/talks) at
+various conferences, and
 [contributions](https://www.ohloh.net/accounts/snarfed/positions) to major open
-source projects including [OStatus](http://www.w3.org/community/ostatus/),
+source projects such as [OStatus](http://www.w3.org/community/ostatus/),
 [OpenID](http://openid.net/), [Emacs](http://gnu.org/software/emacs/),
 [WordPress](http://snarfed.org/2010-08-08_migrated_to_wordpress),
 [Pine](http://www.washington.edu/pine/)/[Alpine](http://www.washington.edu/alpine/),
-[tcsh](http://www.tcsh.org/), [Pidgin](http://pidgin.im/),
-and others.
+[tcsh](http://www.tcsh.org/), and [Pidgin](http://pidgin.im/).
 
 
 <br />
@@ -69,7 +65,7 @@ customers, >XB transactions per day, and >XXkqps with 99.98% uptime. (2003 -
 [Extreme Blue](http://www.ibm.com/extremeblue/) intern. Helped design and build
 a collaboration and visualization platform for molecular biologists. After the
 internship, continued part time and developed a parallel computing system for
-running networked molecular analyses and simulations on large server clusters.
+running molecular analyses and simulations on large server clusters.
 
 
 [LucasArts Entertainment Co.](http://www.lucasarts.com/), Software Engineer
