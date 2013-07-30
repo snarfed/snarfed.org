@@ -146,10 +146,10 @@ automate these techniques instead?
 
 I think we can.
 
-Pruning is complicated. I don't expect computers understand our life goals any
-time soon, much less how to align our streams with them, but they definitely can
-make it easier for us to do that understanding and aligning ourselves. Gmail can
-already
+Pruning is complicated. I don't expect computers to understand our life goals
+any time soon, much less how to align our incoming streams, but they can
+definitely make it easier for _us_ to understand our goals and align those
+streams. Gmail can already
 [unsubscribe from mailing lists](http://gmailblog.blogspot.com/2009/07/unsubscribing-made-easy.html)
 and set up filters with a single click. Most "opt in" spam now includes
 unsubscribe links that actually work, thanks to the
@@ -162,13 +162,13 @@ my [last project](http://www.google.com/landing/now/)
 [at Google](http://googleblog.blogspot.com/2012/01/updating-our-privacy-policies-and-terms.html).
 If we combine simple cues like location, time of day, and what you're currently
 doing on your computer or phone, we can start to infer your receptivity to
-different kinds of interruptions. Notifying you of a new Facebook post from a
-close friends might be ok when you're surfing the web at home, but not when
-you're in flow at work. Similarly, work calls might be ok at work, or when
-you're VPNed in, but not when you're offline at home and playing with your kids.
+different kinds of interruptions. Notifying you of a close friend's Facebook
+post might be ok when you're surfing the web at home, but not when you're in
+flow at work. Similarly, work calls might be ok at work, or when you're VPNed
+in, but not when you're offline at home and playing with your kids.
 
-We can even try to batch tasks proactively, in hopes of prevent some context
-switches entirely. If your browser sees that you're wrapping up some online
+We can even try to batch tasks proactively in hopes of preventing some context
+switches altogether. If your browser sees that you're wrapping up some online
 shopping, and it also sees "buy Jim and Jane's wedding gift" on your to-do list,
 it could pop up [Clippy style](http://en.wikipedia.org/wiki/Office_Assistant)
 and say, hey, why not do that too? You're already in shopping mode, so if you do
@@ -203,26 +203,26 @@ taking.
 If you suspend just a bit more disbelief, these capabilities could lead to some
 truly remarkable machine-assisted serendipity. Imagine you're at the airport,
 and the gate attendants announce over the PA that your flight is delayed an
-hour. What to do? Right now, a dizzying array of recommendation engines will
-eagerly pitch you articles, music, movies, TV shows, and even restaurants...
+hour. What to do? Sure, recommendation engines could eagerly pitch you articles,
+music, movies, TV shows, and even restaurants...
 
-...but what if there was an uber-recommendation engine that could say, sure,
-those are well and good, but your good friend Sally, whom you lost touch with
-when she moved away a year ago, is sitting in the next terminal with a two hour
-layover, and she'd love to catch up. You'd rather spend the next hour doing that
-than reading the Huffington Post or watching The Office, right?
+...but what if an uber-recommendation engine could say, those are well and good,
+but your good friend Sally, whom you lost touch with when she moved away a year
+ago, is sitting in the next terminal with a two hour layover, and she'd love to
+catch up. You'd rather spend the next hour doing that than reading the
+Huffington Post or watching The Office, right?
 
 Right. That would be pretty damn cool, and also a bit creepy. Still, if the
 product itself is compelling enough, we can fight creepiness with design. Sure,
 there will be unintended consequences, but the way to discover them is to
 prototype and iterate and listen to feedback.
 
-This uber-recommendation engine still lies squarely in the future,
+This uber-recommendation engine lies squarely in the future,
 [Siri](http://www.apple.com/ios/siri/) and
-[Google Now](http://www.google.com/landing/now/) notwithstanding. The
-information overload problem has been reality for a while now, though, and the
-conventional filtering approach isn't helping. On the contrary, it piles even
-more irresistible, harmful distractions onto our current overload.
+[Google Now](http://www.google.com/landing/now/) notwithstanding. We've had the
+information overload problem for a while, though, and the conventional filtering
+approach isn't helping. On the contrary, it piles even more irresistible,
+harmful distractions onto our current overload.
 
 Filtering may not be the answer, but reducing context switches just might be,
 and that's good news. We should keep working on tools that help us prune and
