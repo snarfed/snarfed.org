@@ -23,9 +23,13 @@ source projects such as [OStatus](http://www.w3.org/community/ostatus/),
 ### Experience
 
 
-#### [Doing a startup](/2013-02-27_leaving_google), 2013 - present
+#### [Quip](https://quip.com/about), 2013 - present
 
-More to come...
+Helped design and build pretty much every part of the product: server and
+storage system, data model, synchronization protocol,
+[web frontend](https://quip.com/),
+[iOS app](https://itunes.apple.com/us/app/quip/id647922896), and
+[Android app](https://play.google.com/store/apps/details?id=com.quip.quip).
 
 
 #### [Google](http://www.google.com/), 2003 - 2013
