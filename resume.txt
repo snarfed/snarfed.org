@@ -40,9 +40,8 @@ engineering team. The datastore is a very large scale,
 [NoSQL](http://en.wikipedia.org/wiki/NoSQL) database. At the end of my tenure, it
 stored >XXXB rows, >XPB of data, and served >XXXkqps. (2005 - 2010)
 
-Helped design and build a company-wide personalization infrastructure
-system best described by
-[reading between the lines here](http://googleblog.blogspot.com/2012/01/updating-our-privacy-policies-and-terms.html).
+Helped design and build a company-wide personalization infrastructure system
+[best described here](http://googleblog.blogspot.com/2012/01/updating-our-privacy-policies-and-terms.html).
 (2011 - 2013)
 
 Led and contributed to network management projects for Google's backbone network
