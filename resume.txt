@@ -25,9 +25,8 @@ source projects such as [OStatus](http://www.w3.org/community/ostatus/),
 
 #### [Quip](https://quip.com/about), 2013 - present
 
-Helped design and build pretty much every part of the product: server and
-storage system, data model, synchronization protocol,
-[web frontend](https://quip.com/),
+Helped design and build every part of the product: server and storage system,
+data model, synchronization protocol, [web frontend](https://quip.com/),
 [iOS app](https://itunes.apple.com/us/app/quip/id647922896), and
 [Android app](https://play.google.com/store/apps/details?id=com.quip.quip).
 
