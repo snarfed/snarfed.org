@@ -414,4 +414,5 @@ I have an Android 4.2 phone, which meant I needed to download Google's
 transfer files to it over USB. It works, but has one annoying feature: it
 automatically starts whenever I plug my phone into my computer. I
 [followed these instructions](http://www.ubergeekunlimited.org/blog/2012/10/19/how-to-stop-android-file-transfer-from-opening-when-device-is-connected/)
-to disable that.
+to disable that. Be sure to kill it in Activity Monitor before renaming the
+agent app!
