@@ -413,6 +413,6 @@ I have an Android 4.2 phone, which meant I needed to download Google's
 [Android File Transfer](http://www.android.com/filetransfer/) MTP program to
 transfer files to it over USB. It works, but has one annoying feature: it
 automatically starts whenever I plug my phone into my computer. I
-[followed these instructions](http://www.ubergeekunlimited.org/blog/2012/10/19/how-to-stop-android-file-transfer-from-opening-when-device-is-connected/)
-to disable that. Be sure to kill it in Activity Monitor before renaming the
-agent app!
+[followed these instructions](https://cooltrainer.org/2012/12/21/taming-android-file-transfer-on-mac-os-x/)
+to disable that. Be sure to kill it in Activity Monitor before removing the
+login items and renaming the agent app!
