@@ -189,6 +189,12 @@ when they have updates didn't work out of the box. It took a while, but someone
 on the Apple StackExchange finally
 [led me to the fix](http://apple.stackexchange.com/questions/84139/how-to-disable-firefoxs-app-tab-glow). Yay!
 
+Also, another not-Mac-related note: I love
+[Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/),
+and I also love this [Twitter Keyboard Shortcuts](Twitter Keyboard Shortcuts)
+userscript I recently found. It adds an *o* shortcut that opens the first link
+in the tweet. So useful.
+
 
 <a name="Mac_OS_X"></a>
 #### Mac OS X
