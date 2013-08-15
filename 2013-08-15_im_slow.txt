@@ -1,17 +1,23 @@
 I'm slow
 
-<p class="right half" style="margin-bottom: 10px">
-    winged god (hermes?)
-  <img src="/" /></p>
+<p class="right half">
+  <img src="/turtle.jpg" /></p>
 
-Speed is all the rage these days. [Move fast and break things](),
-[iterate as fast as you can](), [fail fast]() and [learn fast]() from your
-mistake and [pivot fast]() so you can do it all over again. We scorn bloated
-governments and dinosaur bureacracies and praise
-[lean startups](http://theleanstartup.com/principles) and lightweight
-crowdsourced crowds. We crow that even the rate of change itself is speeding up,
-citing [internet time]() when we marvel that the smartphones and social networks
-we take for granted didn't exist five or ten years ago.
+Speed is all the rage these days.
+[Move fast and break things](http://blog.sfgate.com/techchron/2012/02/01/facebooks-hacker-way-move-fast-and-break-things/),
+[iterate fast](http://softwaredev.quora.com/When-in-Doubt-Iterate-Faster),
+[fail fast](http://www.forbes.com/sites/georgebradt/2013/01/23/want-to-fail-fast-do-these-three-things/)
+and
+[learn fast](http://thenextweb.com/entrepreneur/2011/11/28/fail-fast-how-startups-can-learn-from-their-mistakes/)
+from your mistake and
+[pivot fast](http://www.fastcodesign.com/1672580/5-ways-big-companies-can-pivot-like-lean-startups)
+so you can do it all over again. We scorn bloated governments and dinosaur
+bureacracies and praise [lean startups](http://theleanstartup.com/principles)
+and lightweight crowdsourced crowds. We crow that even the rate of change itself
+is speeding up, citing
+[internet time](http://en.wikipedia.org/wiki/Internet_time) when we marvel that
+the smartphones and social networks we take for granted didn't exist five or ten
+years ago.
 
 That's all well and good, but it doesn't fit me personally. I don't move fast.
 There's pretty much nothing I'm naturally quick at besides running and
@@ -20,6 +26,9 @@ play fast, think fast, or talk fast. I'm notorious for circling back hours or
 days after a meeting with new ideas. I _definitely_ don't
 [context switch](/2013-05-31_fighting-information-overload-and-beyond) fast; on
 the contrary, I often try to postpone context switching at all.
+
+<!--more-->
+<span />
 
 I blame some of my sloth, and the proverbial fires under many of my friends'
 butts, on the genetic lottery and personal preference. People have a wide range
@@ -33,7 +42,7 @@ if you slow yourself down for too long, or you're constantly blocked from making
 progress, you'll eventually lose interest and motivation.
 
 So why, especially in our tech, startup, and creative communities, do we worship
-at the altar of speed? Why does fast and broken seem better than slow and
+at the altar of speed? Why does fast and broken seem better than slow but
 working?
 
 There are plenty of reasons, and most of them are probably valid. First, instant
@@ -43,6 +52,9 @@ and otherwise accelerated many tasks that used to take more time, especially
 around making things. Also, our business environment and stock markets are
 designed to reward growth, progress, first- and second-mover advantage, and all
 sorts of other factors that directly depend on momentum.
+
+<p class="left half">
+ <img src="/hermes_god.jpg" /></p>
 
 Finally, those of us who design and build products (and services, creative
 works, and other projects), now largely agree that iteration is the key to
@@ -56,28 +68,41 @@ anything else. It's not an original idea; many others have argued this for
 years,
 [including Eric Ries](http://www.startuplessonslearned.com/2009/03/cash-is-not-king.html).
 It follows that if you want to build something good faster, and you can't cut
-down the number of iterations, you have to speed up the iteration cycle itself.
+down the number of iterations, you have to cut down the time you spend on each
+iteration. Unfortunately, we're now squarely in circular logic land. To move
+faster, you have to move faster.
 
+There are still silver linings though. The accepted wisdom for startups isn't
+"enough iterations," it's "move faster." Enough iterations isn't exactly a
+killer war cry, granted, but it has the benefit of actually being right, or at
+least more right than just moving fast. If you don't try to move faster than you
+can sustain, but you understand how to iterate for real (e.g. getting _real_
+feedback from _external users_), you'll probably beat the companies that are
+running themselves ragged without knowing where they're going.
 
+On another note, if you're doing anything at all creative,
+[research](http://www.nytimes.com/2009/08/18/science/18angier.html)
+[has](http://www.crackingthelearningcode.com/element31.html)
+[concluded](http://www.sciencemag.org/content/325/5940/621.abstract) that stress is your kryptonite. When you're under stress of any
+kind, your brain tenses up, cuts off precious oxygen from the higher level
+speculative regions - where creativity, learning, and all sorts of other
+valuable abilities live - and doubles down on fight or flight responses in your
+amygdala. The conclusion is clear: if you're doing something creative, don't
+stress yourself out by moving faster than you're comfortable with.
 
-[15 big win startups per year](http://www.paulgraham.com/herd.html)
+This is all relative to your baseline, of course! If you run faster than the
+average, the world may be a bit too slow for you. If you love the adrenaline
+rush you get from working on a deadline, or you come alive when you're
+firefighting an emergency, the right kind of stress might just be good for you.
+For the rest of us, though, stress often does more harm than good. It's the
+reason why the long hours of crunch mode
+[usually result in _lower_ productivity](http://www.igda.org/why-crunch-modes-doesnt-work-six-lessons)
+over the long term, not higher.
 
-has risen are con we're settling more and beginning the startup
-
-I can think of
-[number of iterations
-
-
-
-number of iteration cycles, not time
-adrenaline
-stress, less creative
-burning out
-disconnecting trend is good
-
-<!--more-->
-<span />
-
-<p class="left half">
- <img src="/" /></p>
-
+My expectations here are modest. I'm not trying to overturn our speed fetish,
+or to scold people who enjoy moving fast. As with most of my posts here, this is
+more introspection than anything else. I know my baseline is slower than
+average, and writing about it helps me explore the details and implications. I
+[may work at a fast-moving startup](/2013-07-30_introducing_quip.txt) right now,
+but who knows. I might slow down to the stately, glacial pace of academia in my
+next job. Or maybe I'll just retire altogether and play golf. I'll keep you posted.
