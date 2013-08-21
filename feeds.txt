@@ -22,6 +22,11 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
   | grep -v -E 'picasaweb|smugmug|facebook.com|plusstreamfeed|mockfacebook|link:snarfed.org|Twitter Search'
 
 
+pages without feeds
+===
+use http://page2rss.com/
+
+
 twitter
 ===
 they dropped most of their rss support a while back, and then dropped atom
