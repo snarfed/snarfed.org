@@ -18,25 +18,27 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
   ~/src/misc/podcasts.opml.xml
 
 
-use this template to get an rss feed for a youtube channel:
+to subscribe to itunes podcasts, use http://picklemonkey.net/feedflipper-home/
 
-http://gdata.youtube.com/feeds/mobile/users/[USERNAME]/uploads
+to subscribe to a youtube channel or playlist:
+http://gdata.youtube.com/feeds/mobile/users/USERNAME/uploads
+http://gdata.youtube.com/feeds/api/playlists/ID
 
-...except it doesn't fully work, episodes can't be played like normal, they just
-punt out to the youtube player (and can't go in the episodes view or playlist).
-this is by design, evidently because youtube doesn't allow direct downloads from
-a separate IP. you have to do it yourself:
-http://www.beyondpod.com/forum/showthread.php?481-Download-from-Youtube&s=d3ea5aa3cc05ca215749bf842c665d5f
-http://rsshandler.blogspot.com/2010/04/service-status-and-new-podcasting.html
-
-from:
+more:
+http://lifehacker.com/how-to-turn-youtube-channels-into-subscribable-podcasts-496976976
 http://gdata.youtube.com/demo/
 http://zarjay.net/2012/03/04/how-to-subscribe-to-youtube-podcasts-and-rss-feeds/
 
-when i get this working, subscribe to these channels:
-OreillyMedia
-zeitgeistminds
-...more?
+it's not ideal though. it only gives you streaming, not downloading, evidently
+because youtube doesn't allow direct downloads from a separate IP.
+http://www.beyondpod.com/forum/showthread.php?481-Download-from-Youtube&s=d3ea5aa3cc05ca215749bf842c665d5f
+http://rsshandler.blogspot.com/2010/04/service-status-and-new-podcasting.html
+
+good channels:
+http://www.youtube.com/user/OreillyMedia
+http://www.youtube.com/user/zeitgeistminds
+http://www.youtube.com/user/AcademyIAS
+
 -->
 
 * [99% Invisible](http://invisible99.podbean.com)
