@@ -386,12 +386,13 @@ function createControls() {
 	'<a accesskey="t" id="toggle" href="javascript:toggle();">&#216;<\/a>' +
 	'<a accesskey="z" id="prev" href="javascript:go(-1);">&laquo;<\/a>' +
 	'<a accesskey="x" id="next" href="javascript:go(1);">&raquo;<\/a>' +
-	'<div id="navList"' + hideList + '><select id="jumplist" onchange="go(\'j\');"><\/select><\/div>' +
+    // modified by ryan to make the slides drop-down always visible. same below.
+	'<div id="navList"><select id="jumplist" onchange="go(\'j\');"><\/select><\/div>' +
 	'<\/div><\/form>';
 	if (controlVis == 'hidden') {
 		var hidden = document.getElementById('navLinks');
 	} else {
-		var hidden = document.getElementById('jumplist');
+		// var hidden = document.getElementById('jumplist');
 	}
 	addClass(hidden,'hideme');
 }
