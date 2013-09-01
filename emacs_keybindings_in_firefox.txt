@@ -1,14 +1,15 @@
 emacs keybindings in firefox
 
+<p class="right">
 <a href="http://gnu.org/software/emacs/"><img src="/gnu.jpg"></a>
 <a href="http://getfirefox.com/"><img src="/firefox.png"></a>
+</p>
 
-Use
-[Firefox](http://getfirefox.com/) on \*nix? Want
+Use [Firefox](http://getfirefox.com/) on \*nix? Want
 [Emacs](http://gnu.org/software/emacs/) key bindings in text fields? As
-described in the [MozillaZine knowledge
-base](http://kb.mozillazine.org/Emacs_Keybindings_\(Firefox\)), add this to your
-`~/.gtkrc-2.0` file.
+described in the
+[MozillaZine knowledge base](http://kb.mozillazine.org/Emacs_Keybindings_\(Firefox\)),
+add this to your `~/.gtkrc-2.0` file.
 
     gtk-key-theme-name = "Emacs"
 

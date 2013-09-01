@@ -1,8 +1,10 @@
 snipsnap script macro and python
 
-<a href="http://snipsnap.org/"><img src="/snipsnap.png"></a>
-<a href="http://python.org/"><img src="/python_powered.png"></a>
-<a href="http://www.jython.org/"><img src="/jython.png"></a>
+<p class="right">
+<a href="http://snipsnap.org/"><img src="/snipsnap.png"></a><br />
+<a href="http://python.org/"><img src="/python_powered.png"></a><br />
+<a href="http://www.jython.org/"><img src="/jython.png"></a><br />
+</p>
 
 _This
 article is also [posted at

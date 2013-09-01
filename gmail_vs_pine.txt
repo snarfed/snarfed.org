@@ -1,9 +1,9 @@
 gmail vs pine
 
-<a href="http://washington.edu/pine/"
-  <img src="/pine.png"></a>
-<img src="/gloves.jpg">
+<p class="right">
+<a href="http://washington.edu/pine/"><img src="/pine.png"></a>
 <a href="http://gmail.com/"><img src="/gmail.png"></a>
+</p>
 
 _Note: this article was written in February 2005. The ideas still apply, but
 many of the technical details about Gmail and Pine have changed. Caveat reader!_

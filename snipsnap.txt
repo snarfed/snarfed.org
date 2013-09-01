@@ -3,6 +3,6 @@ SnipSnap
 <a href="http://snipsnap.org/"><img src="/snipsnap-logo.png"></a>
 
 [SnipSnap](http://snipsnap.org) is the software that originally ran this site.
-It's is an easy to install and easy to use weblog and wiki software written in
+It's an easy to install and easy to use weblog and wiki server written in
 Java. It's licensed under the GPL.
 

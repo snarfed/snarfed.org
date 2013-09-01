@@ -1,7 +1,9 @@
 subversion and tkdiff
 
+<p class="right">
 <a href="http://subversion.tigris.org/"><img src="/subversion.jpg"></a>
 <a href="http://tkdiff.sf.net/"><img src="/tkdiff.png"></a>
+</p>
 
 [Subversion](http://subversion.tigris.org/)
 is my version control of choice, and [tkdiff](http://tkdiff.sf.net/) is my
