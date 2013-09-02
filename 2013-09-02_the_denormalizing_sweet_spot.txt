@@ -18,8 +18,11 @@ standard technique for scaling a modern webapp, especially when combined with a
 NoSQL datastore, and for good reason: it works. A new caveat occurred to me the
 other day, though. Denormalizing isn't so useful when you're small or medium
 sized, of course, since scaling isn't a problem yet and denormalizing takes
-work. However, _denormalizing may also be a bad idea when you're extremely
-large._
+work. However,
+_denormalizing may also be a bad idea when you're extremely large._
+
+<!-- more -->
+<span />
 
 At a high level, denormalizing buys faster reads by doing more writes up front.
 This works up to a point, but beyond that it can get out of hand.
