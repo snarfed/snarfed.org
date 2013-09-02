@@ -19,7 +19,7 @@ NoSQL datastore, and for good reason: it works. A new caveat occurred to me the
 other day, though. Denormalizing isn't so useful when you're small or medium
 sized, of course, since scaling isn't a problem yet and denormalizing takes
 work. However,
-_denormalizing may also be a bad idea when you're extremely large._
+_denormalizing may also be a bad idea when you're extremely large_.
 
 <!-- more -->
 <span />
@@ -52,3 +52,4 @@ but the cost benefit tradeoff may start to go downhill. If the
 [old adage goes](http://stackoverflow.com/a/12658271/186123)
 _normalize til it hurts, then denormalize til it works,_ we may need to add
 _and normalize if it starts hurting again._
+
