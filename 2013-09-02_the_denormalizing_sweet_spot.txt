@@ -1,0 +1,53 @@
+The denormalizing sweet spot
+
+<p class="right half">
+  <img src="denormalize_all_the_things.jpg" /></p>
+
+In the webapp database community, denormalizing vs normalizing is an age old
+debate. [Normalization](http://en.wikipedia.org/wiki/Database_normalization) is
+the classical approach you learned in Databases 101, or from the Oracle or DB2
+graybeard you worked with back in the day.
+[Denormalization](http://en.wikipedia.org/wiki/Denormalization) is the new kid
+on the block, child of web scale and NoSQL and 100x read/write ratios.
+
+There's
+[still](https://www.simple-talk.com/blogs/2008/07/21/the-myth-of-over-normalization/)
+[plenty])http://www.ovaistariq.net/199/databases-normalization-or-denormalization-which-is-the-better-technique/)
+[of](http://sqlblog.com/blogs/paul_nielsen/archive/2008/10/03/denormalize-for-performance.aspx)
+[debate](http://stackoverflow.com/a/2065610/186123), but denormalizing is now
+one of the most common techniques for scaling a modern webapp, especially when
+combined with a NoSQL datastore, and for good reason: it works. There are always
+caveats, though, and a new one occurred to me the other day. Denormalizing isn't
+so useful for small to medium sized operations, of course, since scaling isn't a
+problem yet and denormalizing takes work to implement. However, _denormalizing
+may also be the wrong approach for extremely large operations._
+
+At a high level, denormalizing buys faster reads by doing more writes up front.
+This works up to a point, but when the write cost grows too much, it can get out
+of hand. This
+[recent writeup](http://highscalability.com/blog/2013/7/8/the-architecture-twitter-uses-to-deal-with-150m-active-users.html)
+of [Raffi Krikorian](http://about.me/raffi.krikorian)'s
+[presentation on scaling Twitter](http://www.infoq.com/presentations/Twitter-Timeline-Scalability)
+illustrates it well:
+
+<p class="left half">
+  <img src="inverted_u_shaped_curve.png" /></p>
+
+> These high fanout users are the biggest challenge for Twitter. Replies are being
+> seen all the time before the original tweets for celebrities...If it takes
+> minutes for a tweet from Lady Gaga to fan out then people are seeing her tweets
+> at different points in time...Causes much user confusion.
+>
+> [Twitter is] not fanning out the high value users anymore. For people like
+> Taylor Swift don’t bother with fanout anymore, instead merge in her timeline
+> at read time. Balances read and write paths. Saves 10s of percents of
+> computational resources.
+
+So is there a sweet spot for denormalizing, if not for whole applications or
+datasets then maybe at the level of individual queries or objects? It seems like
+it might follow an inverted U-shaped graph, with a sweet spot somewhere in the
+range of 10 to 1000 writes per operation. It's still doable outside that range,
+but the cost benefit tradeoff may start to go downhill. If the
+[old adage goes](http://stackoverflow.com/a/12658271/186123)
+"normalize til it hurts, then denormalize til it works," we may need to add
+"...and normalize if it starts hurting again."
