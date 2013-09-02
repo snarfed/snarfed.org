@@ -21,14 +21,38 @@ posts from your friends. [More background.](/2012-03-12_activitystreams_for_face
 Atom feed of your Twitter stream or a Twitter list.
 [More background.](/2012-03-12_activitystreams_for_facebook_and_twitter)
 
+  * [activitystreams-unofficial](https://github.com/snarfed/activitystreams-unofficial)
+    is a library and REST API that converts Facebook, Twitter, and Instagram
+    data to [ActivityStreams](http://activitystrea.ms) format. See the
+    [blog post](/2012-03-12_activitystreams_for_facebook_and_twitter) for more.
+
+  *
+    [portablecontacts-unofficial](https://github.com/snarfed/portablecontacts-unofficial)
+    is a [PortableContacts](http://portablecontacts.net/) server for social
+    networking sites like Facebook and Twitter that don’t implement it
+    themselves. See the
+    [blog post](/2012-02-22_portablecontacts_for_facebook_and_twitter) for more.
+
+  * [webfinger-unofficial](https://github.com/snarfed/webfinger-unofficial) is a
+    [WebFinger](http://code.google.com/p/webfinger/) server for social
+    networking sites like Facebook and Twitter that don’t implement it
+    themselves. See the
+    [blog post](/2012-01-16_webfinger_for_facebook_and_twitter) for more.
+
+  * [salmon-unofficial](https://github.com/snarfed/salmon-unofficial) is a
+[Salmon](http://salmon-protocol.org/) server for social networking sites like
+Facebook, Twitter, and Google+ that don't implement it themselves. See the
+[blog post](/2012-07-14_salmon_for_facebook_twitter_and_google_plus) for
+details.
+
+  * [Bridgy](http://brid.gy/): Got a blog? Share your blog posts on social
+    networks? Wish comments on those shared posts also showed up on your blog?
+    Bridgy copies them back for you. See the
+    [blog post](/2012-01-08_bridgy_launched) for more.
+
   * [Facebook to Wordpress](/2012-11-30_facebook_to_wordpress)
 is a script that copies your [Facebook](http://www.facebook.com/) posts to a
 [WordPress](http://wordpress.org/) blog of your choice.
-
-  * [salmon-unofficial](https://github.com/snarfed/salmon-unofficial) is a stand-in
-[Salmon](http://salmon-protocol.org/) server for social networking sites like
-Facebook, Twitter, and Google+ that don't implement it themselves. See the
-[blog post](/2012-07-14_salmon_for_facebook_twitter_and_google_plus) for details.
 
   * [Bowflex Planner](http://bowflex-planner.appspot.com/) optimizes Bowflex
     Revolution exercise routines to minimize rearranging weights and
@@ -40,34 +64,11 @@ Facebook, Twitter, and Google+ that don't implement it themselves. See the
     at a specific place). Good for hackathons, conferences, etc. Written for
     (and at) [Super Happy Block Party](http://www.superhappy.be/).
 
-  * [activitystreams-unofficial](https://github.com/snarfed/activitystreams-unofficial)
-    is a stand-in [ActivityStreams](http://activitystrea.ms) server for
-    social networking sites like Facebook and Twitter that don’t implement it
-    themselves. See the
-    [blog post](/2012-03-12_activitystreams_for_facebook_and_twitter) for more.
-
-  * [portablecontacts-unofficial](https://github.com/snarfed/portablecontacts-unofficial)
-    is a stand-in [PortableContacts](http://portablecontacts.net/) server for
-    social networking sites like Facebook and Twitter that don’t implement it
-    themselves. See the
-    [blog post](/2012-02-22_portablecontacts_for_facebook_and_twitter) for more.
-
-  * [webfinger-unofficial](https://github.com/snarfed/webfinger-unofficial) is a
-    stand-in [WebFinger](http://code.google.com/p/webfinger/) server for social
-    networking sites like Facebook and Twitter that don’t implement it
-    themselves. See the
-    [blog post](/2012-01-16_webfinger_for_facebook_and_twitter) for more.
-
 <!--
   * [Google+ stream feeds](https://plusstreamfeed.appspot.com/) provides an Atom
     feed of your Google+ stream, with posts from the people in your circles,
     that you can subscribe to and read in your favorite feed reader.
 -->
-
-  * [Bridgy](http://brid.gy/): Got a blog? Share your blog posts on social
-    networks? Wish comments on those shared posts also showed up on your blog?
-    Bridgy copies them back for you. See the
-    [blog post](/2012-01-08_bridgy_launched) for more.
 
   * [Locale Headphone Buttons Plugin](/locale_headphone_buttons_plugin)
 is a plugin for the [Locale](http://www.twofortyfouram.com/) Android app that
