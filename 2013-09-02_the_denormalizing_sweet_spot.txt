@@ -51,5 +51,5 @@ range of 10 to 1000 writes per operation. It's still doable outside that range,
 but the cost benefit tradeoff may start to go downhill. If the
 [old adage goes](http://stackoverflow.com/a/12658271/186123)
 _normalize til it hurts, then denormalize til it works,_ we may need to add
-_and normalize if it starts hurting again._
+_and renormalize when it starts hurting again._
 
