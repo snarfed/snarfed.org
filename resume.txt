@@ -43,7 +43,7 @@ stored >XXXB rows, >XPB of data, and served >XXXkqps. (2005 - 2010)
 Helped design and build a company-wide personalization infrastructure system
 [best described here](http://googleblog.blogspot.com/2012/01/updating-our-privacy-policies-and-terms.html).
 Implemented a piece of its infrastructure (in [Go](http://golang.org/)) that
-handled 500qps by the end of my tenure. (2011 - 2013)
+handled 500kqps by the end of my tenure. (2011 - 2013)
 
 Led and contributed to network management projects for Google's backbone network
 [AS15169](http://www.peeringdb.com/view.php?asn=15169), including command and
