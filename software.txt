@@ -245,6 +245,13 @@ that can be imported back into SnipSnap.
 
 <a name="patches"></a>
 ### Patches
+
+  * A
+[patch](https://github.com/snarfed/misc/blob/master/patches/wordpress_ryu_theme_1.1_dates_on_pages.patch)
+for the [Ryu](http://wordpress.org/themes/ryu) WordPress theme that adds
+published and modified dates to pages.
+[Submitted here.](http://wordpress.org/support/topic/patch-show-published-and-modified-dates-on-pages)
+
   * A [setting](https://github.com/tekezo/KeyRemap4MacBook/pull/118) for
 [KeyRemap4MacBook](http://pqrs.org/macosx/keyremap4macbook/) that provides
 [sticky modifier keys](http://support.apple.com/kb/PH11262) like Mac OS X, but
