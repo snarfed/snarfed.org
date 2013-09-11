@@ -26,6 +26,15 @@ I've done to make it feel comfortable.
   * [Miscellaneous](#Miscellaneous)
 
 
+<!--
+screen flickering fix?
+tried this: https://discussions.apple.com/message/20339559#20339559
+next to try:
+https://discussions.apple.com/message/22821684#22821684
+http://support.apple.com/kb/HT1379
+-->
+
+
 <a name="Homebrew"></a>
 #### Homebrew
 
