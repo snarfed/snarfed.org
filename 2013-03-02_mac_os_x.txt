@@ -93,6 +93,14 @@ Here are some packages I've installed so far:
   * sshfs
   * wget
 
+Homebrew is great at upgrading, and you can use `brew switch` to downgrade to an
+older version, but only if you already have it installed. If you don't, there's
+no an easy way to install it. On the rare occasion that I've needed to, I
+followed [this recipe](http://stackoverflow.com/a/9832084/186123). Executive
+summary: `cd /usr/local`, run `brew versions PACKAGE`, run its `git checkout`
+command for the version you want, then just run `brew install PACKAGE
+[OPTIONS]` and optionally `brew [un]link PACKAGE`.
+
 Apache is installed but not started by default; run `apachectl -k start` to
 start it. Here's [more on setting up LAMP](http://benatkin.com/2011/09/10/php-and-mysql-on-mac-os-x-lion-with-homebrew/).
 
