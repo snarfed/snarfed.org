@@ -28,10 +28,13 @@ I've done to make it feel comfortable.
 
 <!--
 screen flickering fix?
-tried this: https://discussions.apple.com/message/20339559#20339559
-next to try:
-https://discussions.apple.com/message/22821684#22821684
-http://support.apple.com/kb/HT1379
+tried:
+repair color profiles: https://discussions.apple.com/message/20339559
+reset SMC: http://support.apple.com/kb/HT3964
+reset NVRAM/PRAM: http://support.apple.com/kb/HT1379
+
+also try turning off wifi?
+http://www.youtube.com/watch?v=qTOx8BgT_7Q
 -->
 
 
