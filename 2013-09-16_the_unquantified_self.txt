@@ -1,0 +1,166 @@
+The unquantified self
+
+http://www.dreamstime.com/stock-photography-broken-stopwatch-image22160252
+http://www.istockphoto.com/stock-photo-17270096-smashed-alarm-clock.php
+
+One of my favorite runs is the
+[Mayfield Slough loop](http://www.mapmyrun.com/routes/fullscreen/411912/), in
+the heart of the wetlands just above Shoreline Amphitheatre. I'd run it at
+sunset on weekdays, and I'd often go for five or six isolated miles across a
+land bridge and along the bay without seeing anyone else. The landscape was
+otherworldly, the light bruised and unsettling, and combined with the utter
+absence of anything man-made, the overall sensation was hauntingly, desolately,
+post-apocalyptically beautiful. It was a hell of an escape, one I've never quite
+been able to reproduce.
+
+I tried tracking it with a pedometer and GPS a couple times, and I hated it. I
+fiddled with the gadgets, distracted myself with the stats and map trail I was
+generating, chided myself for slow times and basked in the self-satisfaction of
+a fast split. I did pretty much everything _except_ immerse myself in the flow
+of running and the experience of being there, in that place, at that moment.
+
+I used to love tracking myself. Call it what you want - quantified self,
+personal analytics, lifelogging - I did it for a while, pretty consistently,
+about a decade ago. I [tracked everything I did](http://snarfed.org/bigbrother),
+at a high level, and then crunched the numbers and generated
+[lots of charts and graphs](http://snarfed.org/ryan.barrett.name/bigbrother/). I
+wasn't on any specific mission, just the usual "track stuff because I can!"
+engineer thing, but it was still fun.
+
+I've been off the quantified self bus for a while now. As conversations with my
+friends have gradually filled with "Training? My [Fuelband]() says it's going
+ok!" and "I haven't been sleeping much, my [Fitbit]() numbers have taken a
+dive," and nearby hackers put together
+[entire personal APIs](http://x.naveen.com/post/51808692792/a-personal-api),
+I've developed an allergy to tracking myself. At this point, I'm almost entirely
+unquantified, measureless, devoid of analytics. Sometimes I wonder how I manage
+to keep myself alive at all.
+
+I'm not sure why this is. No, it's not
+[the privacy thing](/2011-08-03_why_im_weird_about_privacy). I don't think it's
+fear of the unknown, either. I'm pretty
+[happy with my life](/2012-08-14_streamlined_life), overall, and I don't _think_
+I'm fooling myself about anything big there. I'm definitely not unwilling or
+unable; I've [spent my career](/resume) building and running large software
+systems and stressing about uptime, so I've lived and breathed tracking and
+monitoring and realtime stats. It's
+[complex](2011-12-09_can_software_learn_from_nuclear_power), sure, but it's the
+only way to build anything reliable at that scale.
+
+Some of it may be that tracking something turns it into work, at least for me,
+and not in a good way. When I'm off the clock, nothing turns me off faster than
+measuring things and crunching numbers. I'm ok with work _at_ work, but not
+outside it. I want to enjoy my personal life! I'd track something for good
+reason - for example, if I get sick and need to monitor my health and make big
+lifestyle changes - but not just to get a little better at something, or because
+I can, or for the hell of it.
+
+That personality trait isn't universal, of course. Far from it. If you have even
+an ounce of drive or ambition, or the slightest hint of a competitive streak,
+or you're goal oriented or respond well to deadlines and milestones, or you just
+want to get better at a hobby, you'll probably end up tracking something. It's
+often unavoidable. That's not me, though.
+
+You know how some people are described as _hungry_,
+
+Beyond personality, I've spent lots of my time dealing with data, of all shapes
+and sizes. Aggregation, time series databases, baselines and trending and
+anomaly detection, they don't hold many surprises. And time again, regardless of
+what it is I'm measuring and analyzing, I've seen how easy it is for meaning to
+sink down and disappear between the endless waves of metrics. When I was
+tracking myself on that Mayfield Slough run, it didn't matter whether I was
+actively checking the gadgets. Simply knowing that data was flowing in the
+background was enough to taint it, distracting me enough to pull me out of flow
+and the ineffable joy of the trail.
+
+I'm flirting with a dangerous cliche here. Nothing makes md glaze over quite as
+fast as the tired old "technology is dehumanizing us" or "smartphones are
+turning us into zombies" memes. "Kids these days," indeed. My complaint isn't
+that data and tracking are bad, or even not for me, so much as qualitative
+experience and meaning are good, in all their personal, indescribable subtlety.
+David Foster Wallace _[This is Water]()_:
+
+
+> Probably the most dangerous thing...is my tendency to to over-intellectualize
+> stuff, to get lost in abstract thinking instead of simply paying attention to
+> what's going on in front of me.
+> ...
+> It will actually be within your power to experience a
+> [data-rich, begging-to-be-tracked] situation as not only meaningful, but
+> sacred, on fire with the same force that lit the stars - compassion, love, the
+> subsurface unity of all things.
+
+http://books.google.com/books?id=lfAFVtz-at8C&printsec=frontcover#v=onepage&q=%22probably%20the%20most%20dangerous%22&f=false
+
+Jared Lanier puts it best in _[You Are Not a Gadget]()_:
+
+> The binary character at the core of software engineering tends to reappear at
+> higher levels...it is easier to set up a rigid representation of human
+> relationships on digital networks...and that reduction of life is what gets
+> broadcast between friends all the time. What is communicated between people
+> eventually becomes their truth. Relationships take on the troubles of software
+> engineering.
+
+> One day in the early 1980s, a music synthesizer designer named Dave Smith
+> casually made up a way to represent musical notes. It was called MIDI...MIDI
+> was made of digital patterns that represented keyboard events like "key-down"
+> and "key-up." That meant it could not describe the curvy, transient
+> expressions a singer or a saxophone player can produce. It could only describe
+> the tile mosaic world of the keyboardist, not the watercolor world of the
+> violin.
+>
+> Before MIDI, a musical note was a bottomless idea that transcended absolute
+> definition...After MIDI, a musical note was no longer just an idea, but a
+> rigid, mandatory structure you couldn't avoid in the aspects of life that had
+> gone digital. The process of lock-in is like a wave gradually washing over the
+> rulebook of life, culling the ambiguities of flexible thoughts as more and
+> more thought structures are solidified into effectively permanent reality.
+> ...
+> An even deeper locked-in idea is the notion of the file...UNIX had files; the
+> Mac as it shipped had files; Windows had files. Files are now part of life; we
+> teach the idea of a file to computer science students as if it were part of
+> nature...someday physicists might tell us that it is time to stop believing in
+> photons, because they have discovered a better way to think about light - but
+> the file will likely live on...The idea of the file has become so big that we
+> are unable to conceive of a frame large enough to fit around it in order to
+> assess it empirically.
+
+> The central mistake of recent digital culture is to chop up a network of
+> individuals so finely that you end up with a mush. You then start to care
+> about the abstraction of [the mush and] the network more than the real people
+> who are networked, even though the network by itself is meaningless. Only the
+> people were ever meaningful.
+> ...
+> The deep meaning of personhood is being reduced by illusions of bits. Since
+> people will be inexorably connecting to one another through computers from
+> here on out, we must find an alternative.
+> ...
+> As long as you are not defined by software, you are helping to broaden the
+> identiy of the ideas that will get locked in for future generations...But in
+> the case of digital, creative materials...Resist the easy grooves they guide
+> you into.
+
+> "Information wants to be free." ...But what if information is inanimate? What
+> if it's even less tha inanimate, a mere artifact of human thought? What if
+> only humans are real, and information is not? ...Information is alienated
+> experience.
+>
+> ...if the bits can potentially mean something to someone, they can only do so
+> if they are experienced. When that happens, a commonality of culture is
+> enacted between the storer and the retriever of the bits. Experience is the
+> only process that can de-alienate information. Information of the kind that
+> purportedly wants to be free is nothing but a shadow of our own minds.
+
+Data is powerful and seductive. It empowers us in ways we couldn't imagine even
+mere decades ago, and largely still can't. It's made our lives better in all
+sorts of ways, big and small. I take full advantage of many of those advances,
+and I'm grateful.
+
+Even so, there's more to life than data. I could record that Mayfield Slough run
+in full HD video, track my exact location and environmental sensor readings and
+all sorts of biomarkers, and I'd still never be able to capture the feeling of
+running alongside purple water and a yellow sky and shining silver cliffs,
+flying above a tiny sliver of land bridge through air so still I was scared to
+breathe. The exhilaration is priceless. For me, if it's a choice between data
+and immersion, between tracking and raw experience, I choose experience. How
+about you?
