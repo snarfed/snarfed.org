@@ -28,9 +28,10 @@ wasn't on any specific mission, just the usual "track stuff because I can!"
 engineer thing, but it was still fun.
 
 I've been off the quantified self bus for a while now. As conversations with my
-friends have gradually filled with "Training? My [Fuelband]() says it's going
-ok!" and "I haven't been sleeping much, my [Fitbit]() numbers have taken a
-dive," and nearby hackers put together
+friends have gradually filled with "Training? My
+[Fitbit](http://www.fitbit.com/) says it's going ok!" and "Little baby Alice has
+been sleeping almost through the night, according to our
+[Withings](http://withings.com/)!" and nearby hackers put together
 [entire personal APIs](http://x.naveen.com/post/51808692792/a-personal-api),
 I've developed an allergy to tracking myself. At this point, I'm almost entirely
 unquantified, measureless, devoid of analytics. Sometimes I wonder how I manage
@@ -56,12 +57,14 @@ lifestyle changes - but not just to get a little better at something, or because
 I can, or for the hell of it.
 
 That personality trait isn't universal, of course. Far from it. If you have even
-an ounce of drive or ambition, or the slightest hint of a competitive streak,
-or you're goal oriented or respond well to deadlines and milestones, or you just
+an ounce of drive or ambition, or the slightest hint of a competitive streak, or
+you're goal oriented or respond well to deadlines and milestones, or you just
 want to get better at a hobby, you'll probably end up tracking something. It's
-often unavoidable. That's not me, though.
-
-You know how some people are described as _hungry_,
+often unavoidable. That's not me, though. You know how _hungry_ is often used as
+a compliment, as in _That founding team is hungry, we'd better snap them up
+before someone else gives them a term sheet. I'm not hungry. I'm content. I've
+been lucky enough to accomplish a couple things here and there, but generally
+out of interest, not drive.
 
 Beyond personality, I've spent lots of my time dealing with data, of all shapes
 and sizes. Aggregation, time series databases, baselines and trending and
@@ -73,83 +76,78 @@ actively checking the gadgets. Simply knowing that data was flowing in the
 background was enough to taint it, distracting me enough to pull me out of flow
 and the ineffable joy of the trail.
 
-I'm flirting with a dangerous cliche here. Nothing makes md glaze over quite as
+I'm flirting with a dangerous cliche here. Nothing makes me glaze over quite as
 fast as the tired old "technology is dehumanizing us" or "smartphones are
-turning us into zombies" memes. "Kids these days," indeed. My complaint isn't
-that data and tracking are bad, or even not for me, so much as qualitative
-experience and meaning are good, in all their personal, indescribable subtlety.
-David Foster Wallace _[This is Water]()_:
+turning us into zombies" memes. Kids these days, indeed. That's not where I'm
+coming from. I may still be a bit old /fashioned, though, in what I want.
+I know tracking is meant to complement real life experiences, not replace them,
+but I wonder if it often does more harm than good.
 
+This is the same reason I'm uncomfortable with ideas like
+[social first](http://jackealtman.com/socialfirst-the-new-way-to-live),
+[pictures or it didn't happen](http://www.urbandictionary.com/define.php?term=pics%20or%20it%20didn%27t%20happen),
+[if you didn't blog it it didn't happen](http://dashes.com/anil/2011/01/if-you-didnt-blog-it-it-didnt-happen.html),
+and even
+[you can't improve what you don't measure](http://www.goodreads.com/quotes/632992-measurement-is-the-first-step-that-leads-to-control-and),
+at least applied to our personal lives. (Don't get me started on
+[Klout](http://klout.com/) and friends.)
+
+[Attention](/2013-05-31_fighting-information-overload-and-beyond#context-switches)
+and [mental energy](/2012-08-25_not_whether_you_agree_but_how_much_you_care) are
+zero sum games. You can improve them over time, but in the moment, thinking
+about one thing means you're not thinking about something else. We're already
+saddled with petty brains that prefer to worry about our kids' next report card,
+or the zinger we should have delivered in yesterday's meeting, than what's going
+on in front of us. Be here now and live in the moment are cliches for a reason.
+It's hard to imagine a therapist saying, "You're too outwardly focused. Dwell on
+your own issues more!"
+
+At the same time, compelling experiences in the real world are often fleeting,
+and easy to spoil or miss altogether. It's usually not enough just to be there.
+You have to be open minded, ready and willing to jump in with both feet, and
+above all, paying attention. Naturally, reading Twitter on your phone doesn't
+count, but I'd argue that too much tracking can cause the same problem. You're
+right there in the thick of it physically, sure, but your head is only half in
+the game. The other half is imagining the bump in your stats and drafting the
+perfect message to share them with.
+
+Tracking can definitely be valuable, for the right people, as part of a
+"balanced [mental] breakfast." It's better as a scalpel than a chainsaw, though.
+detracts from being in the moment,
+and in the longer term from other activities.
+
+
+My complaint isn't that data or tracking or even social first are bad, or not
+for me, but that qualitative experience and meaning are good, in all their
+personal, indescribable subtlety.
+
+
+David Foster Wallace
+_[This is Water](http://books.google.com/books?id=lfAFVtz-at8C&printsec=frontcover#v=onepage&q=%22probably%20the%20most%20dangerous%22&f=false)_:
 
 > Probably the most dangerous thing...is my tendency to to over-intellectualize
 > stuff, to get lost in abstract thinking instead of simply paying attention to
 > what's going on in front of me.
-> ...
-> It will actually be within your power to experience a
-> [data-rich, begging-to-be-tracked] situation as not only meaningful, but
-> sacred, on fire with the same force that lit the stars - compassion, love, the
-> subsurface unity of all things.
 
-http://books.google.com/books?id=lfAFVtz-at8C&printsec=frontcover#v=onepage&q=%22probably%20the%20most%20dangerous%22&f=false
 
-Jared Lanier puts it best in _[You Are Not a Gadget]()_:
+Jared Lanier puts it best in
+_[You Are Not a Gadget](http://www.goodreads.com/book/show/6683549-you-are-not-a-gadget)_:
 
-> The binary character at the core of software engineering tends to reappear at
-> higher levels...it is easier to set up a rigid representation of human
-> relationships on digital networks...and that reduction of life is what gets
-> broadcast between friends all the time. What is communicated between people
-> eventually becomes their truth. Relationships take on the troubles of software
-> engineering.
-
-> One day in the early 1980s, a music synthesizer designer named Dave Smith
-> casually made up a way to represent musical notes. It was called MIDI...MIDI
-> was made of digital patterns that represented keyboard events like "key-down"
-> and "key-up." That meant it could not describe the curvy, transient
-> expressions a singer or a saxophone player can produce. It could only describe
-> the tile mosaic world of the keyboardist, not the watercolor world of the
-> violin.
->
-> Before MIDI, a musical note was a bottomless idea that transcended absolute
-> definition...After MIDI, a musical note was no longer just an idea, but a
-> rigid, mandatory structure you couldn't avoid in the aspects of life that had
-> gone digital. The process of lock-in is like a wave gradually washing over the
-> rulebook of life, culling the ambiguities of flexible thoughts as more and
-> more thought structures are solidified into effectively permanent reality.
-> ...
-> An even deeper locked-in idea is the notion of the file...UNIX had files; the
-> Mac as it shipped had files; Windows had files. Files are now part of life; we
-> teach the idea of a file to computer science students as if it were part of
-> nature...someday physicists might tell us that it is time to stop believing in
-> photons, because they have discovered a better way to think about light - but
-> the file will likely live on...The idea of the file has become so big that we
-> are unable to conceive of a frame large enough to fit around it in order to
-> assess it empirically.
-
+> It is easier to set up a rigid representation of human [life] on digital
+> networks...and that reduction of life is what gets broadcast between friends
+> all the time. What is communicated between people eventually becomes their
+> truth. Relationships take on the troubles of software engineering.  
+> ...  
 > The central mistake of recent digital culture is to chop up a network of
 > individuals so finely that you end up with a mush. You then start to care
-> about the abstraction of [the mush and] the network more than the real people
-> who are networked, even though the network by itself is meaningless. Only the
-> people were ever meaningful.
-> ...
+> about the abstraction...more than the real people who are networked, even
+> though the network by itself is meaningless. Only the people were ever
+> meaningful.  
+> ...  
 > The deep meaning of personhood is being reduced by illusions of bits. Since
 > people will be inexorably connecting to one another through computers from
 > here on out, we must find an alternative.
-> ...
-> As long as you are not defined by software, you are helping to broaden the
-> identiy of the ideas that will get locked in for future generations...But in
-> the case of digital, creative materials...Resist the easy grooves they guide
-> you into.
 
-> "Information wants to be free." ...But what if information is inanimate? What
-> if it's even less tha inanimate, a mere artifact of human thought? What if
-> only humans are real, and information is not? ...Information is alienated
-> experience.
->
-> ...if the bits can potentially mean something to someone, they can only do so
-> if they are experienced. When that happens, a commonality of culture is
-> enacted between the storer and the retriever of the bits. Experience is the
-> only process that can de-alienate information. Information of the kind that
-> purportedly wants to be free is nothing but a shadow of our own minds.
 
 Data is powerful and seductive. It empowers us in ways we couldn't imagine even
 mere decades ago, and largely still can't. It's made our lives better in all
