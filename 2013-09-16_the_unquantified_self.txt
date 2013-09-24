@@ -1,7 +1,7 @@
 The unquantified self
 
-http://www.dreamstime.com/stock-photography-broken-stopwatch-image22160252
-http://www.istockphoto.com/stock-photo-17270096-smashed-alarm-clock.php
+<p class="right half">
+    <img src="/broken_watch.jpg" /></p>
 
 One of my favorite runs is the
 [Mayfield Slough loop](http://www.mapmyrun.com/routes/fullscreen/411912/), in
@@ -19,6 +19,9 @@ generating, chided myself for slow times and basked in the self-satisfaction of
 a fast split. I did pretty much everything _except_ immerse myself in the flow
 of running and the experience of being there, in that place, at that moment.
 
+<!--more-->
+<span style="clearing: both" />
+
 I used to love tracking myself. Call it what you want - quantified self,
 personal analytics, lifelogging - I did it for a while, pretty consistently,
 about a decade ago. I [tracked everything I did](http://snarfed.org/bigbrother),
@@ -28,109 +31,74 @@ wasn't on any specific mission, just the usual "track stuff because I can!"
 engineer thing, but it was still fun.
 
 I've been off the quantified self bus for a while now. As conversations with my
-friends have gradually filled with "Training? My
-[Fitbit](http://www.fitbit.com/) says it's going ok!" and "Little baby Alice has
-been sleeping almost through the night, according to our
-[Withings](http://withings.com/)!" and nearby hackers put together
+friends have gradually filled with [Fitbits](http://www.fitbit.com/) and
+[Withings](http://withings.com/) and [UPs](https://jawbone.com/up) and nearby
+hackers put together
 [entire personal APIs](http://x.naveen.com/post/51808692792/a-personal-api),
-I've developed an allergy to tracking myself. At this point, I'm almost entirely
-unquantified, measureless, devoid of analytics. Sometimes I wonder how I manage
-to keep myself alive at all.
+I've developed an allergy to tracking myself. I'm enough of an unknown quantity
+at this point that I'm pleasantly surprised to still be alive at all.
 
-I'm not sure why this is. No, it's not
-[the privacy thing](/2011-08-03_why_im_weird_about_privacy). I don't think it's
-fear of the unknown, either. I'm pretty
-[happy with my life](/2012-08-14_streamlined_life), overall, and I don't _think_
-I'm fooling myself about anything big there. I'm definitely not unwilling or
-unable; I've [spent my career](/resume) building and running large software
-systems and stressing about uptime, so I've lived and breathed tracking and
-monitoring and realtime stats. It's
-[complex](2011-12-09_can_software_learn_from_nuclear_power), sure, but it's the
-only way to build anything reliable at that scale.
+I'm still working out my reasons for this. It's not
+[the privacy thing](/2011-08-03_why_im_weird_about_privacy). I'm pretty
+[happy with my life](/2012-08-14_streamlined_life), so I don't think it's fear
+of the unknown. I'm definitely not unwilling or unable; I've
+[spent my career](/resume) building and running large software systems and
+stressing about uptime and metrics.
 
-Some of it may be that tracking something turns it into work, at least for me,
-and not in a good way. When I'm off the clock, nothing turns me off faster than
-measuring things and crunching numbers. I'm ok with work _at_ work, but not
-outside it. I want to enjoy my personal life! I'd track something for good
-reason - for example, if I get sick and need to monitor my health and make big
-lifestyle changes - but not just to get a little better at something, or because
-I can, or for the hell of it.
+Some of it may be that I'm just not ambitious or competitive or
+[hungry](http://hungryentrepreneurs.com/) I enjoy learning new skills, but I
+don't like analyzing that process. Outside of work, nothing turns me off faster
+than measuring things or crunching numbers.
 
-That personality trait isn't universal, of course. Far from it. If you have even
-an ounce of drive or ambition, or the slightest hint of a competitive streak, or
-you're goal oriented or respond well to deadlines and milestones, or you just
-want to get better at a hobby, you'll probably end up tracking something. It's
-often unavoidable. That's not me, though. You know how _hungry_ is often used as
-a compliment, as in _That founding team is hungry, we'd better snap them up
-before someone else gives them a term sheet. I'm not hungry. I'm content. I've
-been lucky enough to accomplish a couple things here and there, but generally
-out of interest, not drive.
-
-Beyond personality, I've spent lots of my time dealing with data, of all shapes
-and sizes. Aggregation, time series databases, baselines and trending and
-anomaly detection, they don't hold many surprises. And time again, regardless of
-what it is I'm measuring and analyzing, I've seen how easy it is for meaning to
-sink down and disappear between the endless waves of metrics. When I was
-tracking myself on that Mayfield Slough run, it didn't matter whether I was
-actively checking the gadgets. Simply knowing that data was flowing in the
-background was enough to taint it, distracting me enough to pull me out of flow
-and the ineffable joy of the trail.
-
-I'm flirting with a dangerous cliche here. Nothing makes me glaze over quite as
-fast as the tired old "technology is dehumanizing us" or "smartphones are
-turning us into zombies" memes. Kids these days, indeed. That's not where I'm
-coming from. I may still be a bit old /fashioned, though, in what I want.
-I know tracking is meant to complement real life experiences, not replace them,
-but I wonder if it often does more harm than good.
-
-This is the same reason I'm uncomfortable with ideas like
-[social first](http://jackealtman.com/socialfirst-the-new-way-to-live),
-[pictures or it didn't happen](http://www.urbandictionary.com/define.php?term=pics%20or%20it%20didn%27t%20happen),
-[if you didn't blog it it didn't happen](http://dashes.com/anil/2011/01/if-you-didnt-blog-it-it-didnt-happen.html),
-and even
-[you can't improve what you don't measure](http://www.goodreads.com/quotes/632992-measurement-is-the-first-step-that-leads-to-control-and),
-at least applied to our personal lives. (Don't get me started on
-[Klout](http://klout.com/) and friends.)
+I think there's a bigger factor at play, though. I treasured the feeling that
+Mayfield Slough run used to give me - I still do - but when I tracked it, that
+feeling disappeared. I only checked the stats and screens occasionally, but it
+didn't matter. Just knowing the data was flowing in the background was enough
+to pull me out of flow and the joy of the trail.
 
 [Attention](/2013-05-31_fighting-information-overload-and-beyond#context-switches)
 and [mental energy](/2012-08-25_not_whether_you_agree_but_how_much_you_care) are
-zero sum games. You can improve them over time, but in the moment, thinking
-about one thing means you're not thinking about something else. We're already
-saddled with petty brains that prefer to worry about our kids' next report card,
-or the zinger we should have delivered in yesterday's meeting, than what's going
-on in front of us. Be here now and live in the moment are cliches for a reason.
-It's hard to imagine a therapist saying, "You're too outwardly focused. Dwell on
-your own issues more!"
+largely zero sum games. You can improve them over time, but in the moment,
+thinking about one thing means you're not thinking about something else. We're
+already saddled with petty brains that constantly worry about our kids' next
+report card, or the zinger we should have delivered in yesterday's meeting, than
+what's going on in front of us. _Be here now_ and _live in the moment_ are
+cliches for a reason. Our therapist don't often tell us, "You're too outwardly
+focused. Dwell on your own issues more!"
 
 At the same time, compelling experiences in the real world are often fleeting,
-and easy to spoil or miss altogether. It's usually not enough just to be there.
+easy to spoil or miss altogether. It's usually not enough just to be there.
 You have to be open minded, ready and willing to jump in with both feet, and
 above all, paying attention. Naturally, reading Twitter on your phone doesn't
 count, but I'd argue that too much tracking can cause the same problem. You're
 right there in the thick of it physically, sure, but your head is only half in
-the game. The other half is imagining the bump in your stats and drafting the
-perfect message to share them with.
+the game. The other half is imagining the bump in your stats and composing the
+perfect status message to share them with.
 
-Tracking can definitely be valuable, for the right people, as part of a
-"balanced [mental] breakfast." It's better as a scalpel than a chainsaw, though.
-detracts from being in the moment,
-and in the longer term from other activities.
+This is the same reason I'm uncomfortable with ideas like
+[social first](http://jackealtman.com/socialfirst-the-new-way-to-live),
+[pictures or it didn't happen](http://www.urbandictionary.com/define.php?term=pics%20or%20it%20didn%27t%20happen),
+[if you didn't blog it, it didn't happen](http://dashes.com/anil/2011/01/if-you-didnt-blog-it-it-didnt-happen.html),
+and even
+[you can't improve what you don't measure](http://www.goodreads.com/quotes/632992-measurement-is-the-first-step-that-leads-to-control-and),
+at least when we apply them to our personal lives. (Don't get me started on
+[Klout](http://klout.com/) and friends.)
 
+I'm dangerously close to turning into a cliche here, for which I apologize, and
+commiserate. Nothing makes me glaze over quite as fast as the tired old
+"technology is dehumanizing" or "smartphones are turning us into zombies" memes.
+Kids these days, indeed. That's not where I'm coming from, promise. Technology
+and data are wonderful, powerful tools. They empower us in ways we couldn't
+imagine even mere decades ago, and largely still can't. I take full advantage,
+and I'm grateful.
 
-My complaint isn't that data or tracking or even social first are bad, or not
-for me, but that qualitative experience and meaning are good, in all their
-personal, indescribable subtlety.
+Still, the usual caveat applies. Tools aren't inherently good and bad; it's how
+they're used that matters. I know tracking is meant to complement real life
+experiences, not replace them, but I wonder if it often does more harm than
+good.
 
-
-David Foster Wallace
-_[This is Water](http://books.google.com/books?id=lfAFVtz-at8C&printsec=frontcover#v=onepage&q=%22probably%20the%20most%20dangerous%22&f=false)_:
-
-> Probably the most dangerous thing...is my tendency to to over-intellectualize
-> stuff, to get lost in abstract thinking instead of simply paying attention to
-> what's going on in front of me.
-
-
-Jared Lanier puts it best in
+As usual, smarter people have put this much more eloquently than I ever
+could. Jared Lanier's gently chides in
 _[You Are Not a Gadget](http://www.goodreads.com/book/show/6683549-you-are-not-a-gadget)_:
 
 > It is easier to set up a rigid representation of human [life] on digital
@@ -148,16 +116,19 @@ _[You Are Not a Gadget](http://www.goodreads.com/book/show/6683549-you-are-not-a
 > people will be inexorably connecting to one another through computers from
 > here on out, we must find an alternative.
 
+David Foster Wallace's tone in
+_[This is Water](http://books.google.com/books?id=lfAFVtz-at8C&printsec=frontcover#v=onepage&q=%22probably%20the%20most%20dangerous%22&f=false)_
+is even softer and more introspective:
 
-Data is powerful and seductive. It empowers us in ways we couldn't imagine even
-mere decades ago, and largely still can't. It's made our lives better in all
-sorts of ways, big and small. I take full advantage of many of those advances,
-and I'm grateful.
+> Probably the most dangerous thing...is my tendency to to over-intellectualize
+> stuff, to get lost in abstract thinking instead of simply paying attention to
+> what's going on in front of me.
 
-Even so, there's more to life than data. I could record that Mayfield Slough run
-in full HD video, track my exact location and environmental sensor readings and
-all sorts of biomarkers, and I'd still never be able to capture the feeling of
-running alongside purple water and a yellow sky and shining silver cliffs,
+Our personal lives and time are precious, and there are more things in heaven
+and earth than are aggregated in your data. I could record that Mayfield Slough
+run in full HD video, track my exact location and environmental sensor readings
+and all sorts of biomarkers, and I'd still never be able to capture the feeling
+of running alongside purple water and a yellow sky and shining silver cliffs,
 flying above a tiny sliver of land bridge through air so still I was scared to
 breathe. The exhilaration is priceless. For me, if it's a choice between data
 and immersion, between tracking and raw experience, I choose experience. How
