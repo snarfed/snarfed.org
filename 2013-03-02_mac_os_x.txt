@@ -26,18 +26,6 @@ I've done to make it feel comfortable.
   * [Miscellaneous](#Miscellaneous)
 
 
-<!--
-screen flickering fix?
-tried:
-repair color profiles: https://discussions.apple.com/message/20339559
-reset SMC: http://support.apple.com/kb/HT3964
-reset NVRAM/PRAM: http://support.apple.com/kb/HT1379
-
-also try turning off wifi?
-http://www.youtube.com/watch?v=qTOx8BgT_7Q
--->
-
-
 <a name="Homebrew"></a>
 #### Homebrew
 
@@ -184,6 +172,11 @@ Now run `M-x gdb` in Emacs and enter `/usr/local/bin/gdb -i-mi [BINARY]`, or
 `M-x gud-gdb` and `/usr/local/bin/gdb --fullname [BINARY]` if you want the old
 version of GUD, and you're off!
 
+Sometimes Emacs gets unhappy and complains
+_Wrong type argument: frame-live-p, #<dead frame ..._
+whenever I try to kill a buffer.
+[This fixes it](http://sleekyak.tumblr.com/post/790523026/if-emacs-claims-you-have-a-dead-frame):
+`M-: (setq menu-updating-frame nil)`.
 
 <a name="Firefox"></a>
 #### Firefox
