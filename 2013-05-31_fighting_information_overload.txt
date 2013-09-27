@@ -58,6 +58,8 @@ replaced with tempting lolcats.
 There's also the [filter bubble](http://en.wikipedia.org/wiki/Filter_bubble)
 problem, but that's another conversation entirely.
 
+<a name="context-switches"></a>
+
 So if filtering isn't the solution, what is? I believe it's _reducing context
 switches_. It's
 [well understood](http://blog.ninlabs.com/2013/01/programmer-interrupted/#references)
