@@ -1,27 +1,27 @@
 Crazy Emacs features
 
-<p class="right shadow"><a href="http://xkcd.com/378/">
-  <img src="/emacs_butterfly.png" /></a></p>
+<p class="right"><a href="http://xkcd.com/378/">
+  <img class="shadow" src="/emacs_butterfly.png" /></a></p>
 
-I just noticed this gem while skimming the list of packages built into Emacs:
+I just noticed this gem while skimming the list of packages built into
+[Emacs](http://www.gnu.org/software/emacs/):
 
-    landmark   neural-network robot that learns landmarks
+    landmark  neural-network robot that learns landmarks
 
-Yes, [Emacs](http://www.gnu.org/software/emacs/) is no ordinary text editor.
-It's an operating system, a religion, an entire universe unto itself. Here are a
-few other winners.
+Yes, Emacs is no ordinary text editor. It's an operating system, a religion, an
+entire universe unto itself. Here are a few other winners.
 
-    animate    make text dance
-    bruce      phrase utility for overloading the Communications Decency Act of 1996
-    decipher   cryptanalyze monoalphabetic substitution ciphers
-    hashcash   Add hashcash payments to email
-    life       John Horton Conway's `Life' game for GNU Emacs
-    master     make a buffer the master over another buffer
-    meese      protect the impressionable young minds of America
-    morse      convert text to morse code and back
-    spook      phrase utility for overloading the NSA line eater
-    studly     built-in   StudlyCaps (tm)(r)(c)(xxx)
-    uce        facilitate unsolicited commercial email
+    animate   make text dance
+    bruce     phrase utility for overloading the Communications Decency Act of 1996
+    decipher  cryptanalyze monoalphabetic substitution ciphers
+    hashcash  Add hashcash payments to email
+    life      John Horton Conway's 'Life' game for GNU Emacs
+    master    make a buffer the master over another buffer
+    meese     protect the impressionable young minds of America
+    morse     convert text to morse code and back
+    spook     phrase utility for overloading the NSA line eater
+    studly    built-in   StudlyCaps (tm)(r)(c)(xxx)
+    uce       facilitate unsolicited commercial email
 
 ...and that's just the built-in ones. Want to get really crazy? Take a
 look at
