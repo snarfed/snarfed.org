@@ -1,0 +1,11 @@
+IndieWeb dinner RSVP
+
+<article class="h-entry">
+<link rel="in-reply-to"
+ href="http://aaronparecki.com/events/2013/09/30/1/indieweb-dinner-at-21st-amendment" />
+<link rel="in-reply-to" href="http://aaronparecki.com/notes/2013/09/29/1/indieweb" />
+
+<data class="p-rsvp" value="yes">RSVPing yes</data> to tonight's
+<a class="u-in-reply-to" href="http://aaronparecki.com/events/2013/09/30/1/indieweb-dinner-at-21st-amendment">IndieWeb dinner.</a>
+Looking forward to meeting you all!
+</article>
