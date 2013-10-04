@@ -2,9 +2,7 @@ podcasts
 
 <p class="right"><img src="/podcast.gif" /></p>
 
-Podcasts I listen to regularly, usually while running or at the gym. Most are
-news, current events, entertainment, or game industry analysis.
-Also see [feeds](/feeds) and [other lists](/lists).
+Podcasts I listen to regularly. Also see [feeds](/feeds) and [other lists](/lists).
 
 Thanks to [BeyondPod](http://www.beyondpod.mobi/) and
 [Fletcher Penney](http://fletcherpenney.net/)'s
@@ -41,104 +39,137 @@ http://www.youtube.com/user/AcademyIAS
 
 -->
 
-* [99% Invisible](http://invisible99.podbean.com)
-(_[subscribe](http://invisible99.podbean.com/feed/)_) 
+* [99% Invisible](http://99percentinvisible.org/)
+(_[subscribe](http://feeds.99percentinvisible.org/99percentinvisible)_)
 
 * [A Life Well Wasted](http://www.alifewellwasted.com)
-(_[subscribe](http://www.alifewellwasted.com/episodes/episodes.xml)_) 
+(_[subscribe](http://www.alifewellwasted.com/episodes/episodes.xml)_)
+
+* [BBC: Documentaries](http://www.bbc.co.uk/podcasts/series/docarchive)
+(_[subscribe](http://downloads.bbc.co.uk/podcasts/worldservice/docarchive/rss.xml)_)
+
+* [Carnegie Council Audio Podcast](http://www.carnegiecouncil.org/resources/audio/rss/)
+(_[subscribe](http://www.carnegiecouncil.org/resources/audio/rss/feed.xml)_)
 
 * [Cato Daily Podcast](http://www.cato.org/multimedia/daily-podcast)
-(_[subscribe](http://feeds.cato.org/CatoDailyPodcast)_) 
+(_[subscribe](http://feeds.cato.org/CatoDailyPodcast)_)
 
 * [Commonwealth Club Radio Program](http://www.commonwealthclub.org)
-(_[subscribe](http://audio.commonwealthclub.org/audio/podcast/weekly.xml)_) 
+(_[subscribe](http://audio.commonwealthclub.org/audio/podcast/weekly.xml)_)
 
-* [The Escapist Podcast](http://www.escapistmagazine.com/videos/view/escapist-podcast)
-(_[subscribe](http://www.escapistmagazine.com/rss/videos/podcast/167-e15a29097a5b663fa43b258772591ecc.xml)_) 
+* [DecodeDC](http://www.decodedc.com/)
+(_[subscribe](http://feeds.soundcloud.com/users/20170457-decodedc/tracks)_)
+
+* [Extra Curricular](http://extra-credits.net/podcasts/)
+(_[subscribe](http://extra-credits.net/feed/extra-curricular/)_)
+
+* [Freakonomics Radio](http://freakonomics.com/radio/?radcat=radio-podcasts)
+(_[subscribe](http://feeds.feedburner.com/freakonomicsradio)_)
+
+* [Fw:Thinking](http://www.fwthinking.com/)
+(_[subscribe](http://www.howstuffworks.com/podcasts/fwthinking.rss)_)
 
 * [Gamers With Jobs - Conference Call](http://www.gamerswithjobs.com/taxonomy/term/408/0)
-(_[subscribe](http://www.gamerswithjobs.com/taxonomy/term/408/0/feed)_) 
+(_[subscribe](http://www.gamerswithjobs.com/taxonomy/term/408/0/feed)_)
 
-* [Games Industry Mentor](http://gim.acanaday.com)
-(_[subscribe](http://gim.acanaday.com/?feed=podcast)_) 
+* [Giant Bomb's Interview Dumptruck](http://www.giantbomb.com/podcasts/interview-dumptruck/)
+(_[subscribe](http://www.giantbomb.com/podcast-xml/interview-dumptruck/)_)
 
-* [Ideas from CBC Radio (Highlights)](http://www.cbc.ca/podcasting)
-(_[subscribe](http://www.cbc.ca/podcasting/includes/ideas.xml)_) 
+* [IdeaFestival](http://www.ideafestival.com/)
+(_[subscribe](http://feeds.feedburner.com/idea_festival)_)
 
-* [IGN's Game Business Show](http://www.ign.com)
-(_[subscribe](http://feeds.ign.com/ignfeeds/podcasts/gamebizshow/)_) 
+* [Ideas from CBC Radio](http://www.cbc.ca/podcasting)
+(_[subscribe](http://www.cbc.ca/podcasting/includes/ideas.xml)_)
 
-* [NPR: Hourly News Summary Podcast](http://www.npr.org/templates/topics/topic.php?topicId=1001)
-(_[subscribe](http://www.npr.org/rss/podcast.php?id=500005)_) 
-
-* [NPR: Planet Money Podcast](http://www.npr.org/planetmoney)
-(_[subscribe](http://www.npr.org/rss/podcast.php?id=510289)_) 
-
-* [NPR: Snap Judgment Podcast](http://www.snapjudgment.org)
-(_[subscribe](http://www.npr.org/rss/podcast.php?id=510294)_) 
-
-* [NPR: Story of the Day Podcast](http://www.npr.org/)
-(_[subscribe](http://www.npr.org/rss/podcast.php?id=1090)_) 
-
-* [NPR: Wait Wait... Don't Tell Me! Podcast](http://www.npr.org/templates/rundowns/rundown.php?prgId=35)
-(_[subscribe](http://www.npr.org/rss/podcast.php?id=35)_) 
-
-* [NPR: World Story of the Day Podcast](http://www.npr.org/world)
-(_[subscribe](http://www.npr.org/rss/podcast.php?id=1056)_) 
-
-* [NPR: Your Health Podcast](http://www.npr.org/templates/story/story.php?storyId=1066&ft=1&f=1066)
-(_[subscribe](http://www.npr.org/rss/podcast.php?id=510284)_) 
+* [Major Technicality](http://majortechnicality.com/)
+(_[subscribe](http://majortechnicality.com/feed/podcast/)_)
 
 * [NPR's On the Media](http://www.onthemedia.org/)
-(_[subscribe](http://feeds.wnyc.org/onthemedia)_) 
+(_[subscribe](http://feeds.wnyc.org/onthemedia)_)
 
-* [PRI: Science and Creativity from Studio 360](http://www.studio360.org)
-(_[subscribe](http://www.publicbroadcasting.net/dfrw/.jukebox?podcastId=15003&action=viewPodcast)_) 
+* [NPR: Planet Money Podcast](http://www.npr.org/planetmoney)
+(_[subscribe](http://www.npr.org/rss/podcast.php?id=510289)_)
+
+* [NPR: Snap Judgment Podcast](http://www.snapjudgment.org)
+(_[subscribe](http://www.npr.org/rss/podcast.php?id=510294)_)
+
+* [NPR: Story of the Day Podcast](http://www.npr.org/)
+(_[subscribe](http://www.npr.org/rss/podcast.php?id=1090)_)
+
+* [NPR: World Story of the Day Podcast](http://www.npr.org/world)
+(_[subscribe](http://www.npr.org/rss/podcast.php?id=1056)_)
+
+* [NPR: Your Health Podcast](http://www.npr.org/templates/story/story.php?storyId=1066&ft=1&f=1066)
+(_[subscribe](http://www.npr.org/rss/podcast.php?id=510284)_)
+
+* [New Books in Brief](http://newbooksinbrief.com/)
+(_[subscribe](http://thebookreporter.podbean.com/feed/)_)
+
+* [Pach-Attack! - GameTrailers.com](http://www.gametrailers.com/shows/pach-attack)
+(_[subscribe](http://www.gametrailers.com/gtpa_podcast.xml)_)
+
+* [Personal Data Ecosystem Consortium](http://personaldataecosystem.org/)
+(_[subscribe](http://personaldataecosystem.org/?feed=podcast)_)
+
+* [Porchlight Storytelling Series](http://www.porchlightsf.com/)
+(_[subscribe](http://porchlight.libsyn.com/rss)_)
 
 * [ProPublica: Podcast](http://www.propublica.org/podcast)
-(_[subscribe](http://feeds.propublica.org/propublica/podcast)_) 
-
-* [Reality Breached](http://www.techpedition.com/shows/reality-breached/)
-(_[subscribe](http://www.techpedition.com/feed/reality-breached/)_) 
-
-* [Sage Bionetworks Podcasts](http://sagebase.org/WP/pod)
-(_[subscribe](http://sagebase.org/WP/pod/feed/podcast/)_) 
+(_[subscribe](http://feeds.propublica.org/propublica/podcast)_)
 
 * [SALT - Seminars About Long Term Thinking](http://www.longnow.org/)
-(_[subscribe](http://longnow.org/projects/seminars/SALT.xml)_) 
+(_[subscribe](http://longnow.org/projects/seminars/SALT.xml)_)
+
+* [Sage Bionetworks Podcasts](http://sagebase.org/WP/pod)
+(_[subscribe](http://sagebase.org/WP/pod/feed/podcast/)_)
 
 * [San Francisco Symphony Podcasts](http://sfsymphonypodcasts.blogspot.com/)
-(_[subscribe](http://feeds.feedburner.com/SanFranciscoSymphonyPodcasts)_) 
+(_[subscribe](http://feeds.feedburner.com/SanFranciscoSymphonyPodcasts)_)
+
+* [Stanford Storytelling Project](http://storytelling.stanford.edu/)
+(_[subscribe](http://stanfordstorytelling.com/rss.xml)_)
 
 * [Studio 360 from PRI and WNYC](http://pipes.yahoo.com/pipes/pipe.info?_id=b3d15f5b3783f36424b943eae47b1bf0)
-(_[subscribe](http://feeds.feedburner.com/studio360/podcast)_) 
+(_[subscribe](http://feeds.feedburner.com/studio360/podcast)_)
 
 * [TEDTalks (audio)](http://www.ted.com/talks/list)
-(_[subscribe](http://feeds.feedburner.com/tedtalks_audio)_) 
+(_[subscribe](http://feeds.feedburner.com/tedtalks_audio)_)
 
 * [TEDTalks (video)](http://www.ted.com/talks/list)
-(_[subscribe](http://feeds.feedburner.com/tedtalks_video)_) 
+(_[subscribe](http://feeds.feedburner.com/tedtalks_video)_)
 
 * [The Brainy Gamer Podcast](http://www.brainygamer.com)
-(_[subscribe](http://feeds.feedburner.com/brainygamerpodcast)_) 
+(_[subscribe](http://feeds.feedburner.com/brainygamerpodcast)_)
+
+* [The Curious Gamer](http://thecuriousgamer.org/)
+(_[subscribe](http://feeds.feedburner.com/TheCuriousGamer)_)
 
 * [The Economist](http://www.economist.com/podcast/itunes/All%20audio)
-(_[subscribe](http://feeds.feedburner.com/economist/audio_all)_) 
+(_[subscribe](http://feeds.feedburner.com/economist/audio_all)_)
 
 * [The GamesIndustry.biz Podcast](http://www.gamesindustry.biz)
-(_[subscribe](http://www.gamesindustry.biz/rss/gamesindustry_podcast_itunes.rss)_) 
+(_[subscribe](http://www.gamesindustry.biz/rss/gamesindustry_podcast_itunes.rss)_)
+
+* [The Iceberg Podcast](http://theicebergshow.com/podcast/)
+(_[subscribe](http://theicebergshow.com/podcast?format=rss)_)
 
 * [The Moth Podcast](http://www.themoth.org)
-(_[subscribe](http://feeds.feedburner.com/themothpodcast)_) 
+(_[subscribe](http://feeds.feedburner.com/themothpodcast)_)
 
 * [The RPS Electronic Wireless Show](http://www.rockpapershotgun.com)
-(_[subscribe](http://rps.libsyn.com/rss)_) 
+(_[subscribe](http://rps.libsyn.com/rss)_)
 
 * [This American Life](http://www.thisamericanlife.org)
-(_[subscribe](http://feeds.feedburner.com/talpodcast)_) 
+(_[subscribe](http://feeds.feedburner.com/talpodcast)_)
 
-* [Wired's Game|Life Audio Podcast](http://wired.com)
-(_[subscribe](http://downloads.wired.com/podcasts/xml/gamelifeaudio.xml)_) 
+* [This Week in Startups Audio](http://thisweekinstartups.com/)
+(_[subscribe](http://feeds.feedburner.com/twist-audio)_)
 
 * [WNYC's Radio Lab](http://www.radiolab.org/series/podcasts/)
-(_[subscribe](http://feeds.wnyc.org/radiolab?format=xml)_) 
+(_[subscribe](http://feeds.wnyc.org/radiolab?format=xml)_)
+
+* [Wired's Game Life Audio Podcast](http://video.wired.com/series/game-life)
+(_[subscribe](http://downloads.wired.com/podcasts/xml/gamelifeaudio.xml)_)
+
+* [Wiretap from CBC Radio](http://www.cbc.ca/wiretap/)
+(_[subscribe](http://www.cbc.ca/podcasting/includes/wiretap.xml)_)
