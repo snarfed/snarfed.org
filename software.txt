@@ -10,6 +10,11 @@ is public domain. Also see [other lists](/lists).
 <a name="projects"></a>
 ### Projects
 
+  * [oauth-dropins](https://github.com/snarfed/oauth-dropins) is a collection of
+drop-in [Google App Engine](https://appengine.google.com/) request handlers for
+the initial [OAuth](http://oauth.net/) client flows for many popular sites such
+as Facebook, Twitter, and many others.
+
   * [Open Link in App](/2013-07-16_open-link-in-app) is an
 Android app that implements missing URL handlers for the Facebook and Twitter apps.
 
