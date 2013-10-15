@@ -1,0 +1,22 @@
+Comment: viable two-factor authentication
+
+<div class="h-entry">
+<p class="p-name e-content">
+
+Out of curiosity, do you have anything against app-based 2FA, a la Google
+Authenticator and friends, as opposed to SMS-based? It generally doesn't require
+any kind of connectivity at all. I'm happily using it for six different
+2FA-enabled accounts.
+
+</p>
+
+<cite>
+In reply to <a href="http://werd.io/">Ben Werdmuller</a>:
+<a href="http://werd.io/2013/realization-unlimited-data-sms-roaming-actually-turns-cellphone-two-factor-authentication-into-a-viable-option"
+    class="u-in-reply-to" rel="in-reply-to">
+ Realization: unlimited data & SMS roaming actually turns cellphone two-factor authentication into a viable option.</a>
+</cite>
+
+<a href="http://snarfed.org/2013-10-14_comment-viable-two-factor-authentication"
+   class="u-url" style="display: none">
+</div>
