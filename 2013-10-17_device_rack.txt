@@ -5,12 +5,12 @@ we have lots of different physical devices to test on. All those chargers can
 get pretty tangled just lying around, though, so we wanted a better way to store
 our test devices, charge them, and find them easily later.
 
-<a href="shutter" src="device_rack_front.jpg">
-    <img class="shadow" style="width: 32%" src="device_rack_front_thumb.jpg" /></a>
-<a href="shutter" src="device_rack_side.jpg">
-    <img class="shadow" style="width: 32%" src="device_rack_side_thumb.jpg" /></a>
-<a href="shutter" src="device_rack_top.jpg">
-    <img class="shadow" style="width: 32%" src="device_rack_top_thumb.jpg" /></a>
+<a href="/device_rack_front.jpg" class="shutter">
+    <img class="shadow" style="width: 32%" src="/device_rack_front_thumb.jpg" /></a>
+<a href="/device_rack_side.jpg" class="shutter">
+    <img class="shadow" style="width: 32%" src="/device_rack_side_thumb.jpg" /></a>
+<a href="/device_rack_top.jpg" class="shutter">
+    <img class="shadow" style="width: 32%" src="/device_rack_top_thumb.jpg" /></a>
 
 Fortunately, [Ken Fulk](http://kenfulk.com/) agreed to continue their awesome
 work on our [vintage mechanical decor](/2013-06-04_new-office-decor) and
