@@ -250,6 +250,9 @@ that can be imported back into SnipSnap.
 <a name="patches"></a>
 ### Patches
 
+I stopped tracking these comprehensively a long time ago. Still, here's a
+sampling.
+
   * A
 [patch](https://github.com/snarfed/misc/blob/master/patches/wordpress_ryu_theme_1.1_dates_on_pages.patch)
 for the [Ryu](http://wordpress.org/themes/ryu) WordPress theme that adds
