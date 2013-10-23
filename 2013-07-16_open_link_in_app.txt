@@ -1,25 +1,19 @@
 Open Link in App
 
-<p class="right half">
+<p class="right third">
  <a href="https://play.google.com/store/apps/details?id=org.snarfed.android.openinapp">
   <img src="/u_turn_original.gif" /></a></p>
 
 I've just published a new Android app,
 [Open Link in App](https://play.google.com/store/apps/details?id=org.snarfed.android.openinapp).
-Ever click on a link on your phone and it opens in the browser instead of the
+Ever tap on a link on your phone and it opens in the browser instead of the
 native app? Me too. This fixes that. It currently supports Facebook, Twitter,
 Instagram, GitHub, and Goodreads.
 
-To use it, after you click on a Facebook or Twitter link, just select Open Link
-in App from the chooser dialog box. If you don't see the dialog box, but you
-think you should, go to _Settings => Apps => Browser_ or _Chrome_, or whichever
-app is currently handling the link, and click _Clear defaults_.
-
-The Facebook app doesn't handle any links on its own, so this app tries to
-handle all of them. The Twitter app handles some links automatically, but not
-others, e.g. `mobile.twitter.com`. This app fills in those gaps. Many others
-apps handle all of their links correctly, notably Google+, so I didn't need to
-do anything for them.
+To use it, after you tap on a link, select _Open Link in App_ from the chooser
+dialog box. If you don't see the dialog box, but you think you should, go to
+_Settings => Apps => Browser_ or _Chrome_, or whichever app is currently
+handling the link, and click _Clear defaults_.
 
 I'll add more apps and link types as I come across them. Feel free to
 [ask for](/about) any specific ones you want. Even better, the
