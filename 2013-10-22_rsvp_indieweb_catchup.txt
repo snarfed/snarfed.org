@@ -1,0 +1,14 @@
+RSVP: #Indieweb catchup
+
+<div class="h-entry">
+<p class="p-name e-content">
+See you there!
+</p>
+
+<cite>
+<data class="p-rsvp" value="yes">Going</data> to
+<a class="u-in-reply-to h-cite"
+   href="http://werd.io/event/526705b4bed7dedc23022c02/an-indieweb-catchup-over-food-and-drink">
+   #Indieweb catchup over food and drink</a>.
+</cite>
+</div>
