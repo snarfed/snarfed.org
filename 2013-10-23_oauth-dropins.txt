@@ -1,35 +1,37 @@
 oauth-dropins
 
-<p class="half right">
+<p class="third right">
 <a href="https://oauth-dropins.appspot.com/"><img src="/oauth_shiny.png" /></a>
 </p>
 
 Need to use an [OAuth](http://oauth.net/)-protected API in a Python webapp?
 [oauth-dropins](https://github.com/snarfed/oauth-dropins) is for you! It's a
-collection of drop-in OAuth authentication flows for many popular sites. It
-currently supports Facebook, Twitter, Google+, Instagram, Dropbox, Blogger,
-Tumblr, and WordPress.com, and we expect to add more over time. It also
-currently requires [Google App Engine](https://appengine.google.com/) right now,
-but we hope to support other platforms in the future.
+collection of drop-in OAuth client flows for many popular sites. It supports
+Facebook, Twitter, Google+, Instagram, Dropbox, Blogger, Tumblr, and
+WordPress.com, with more on the way. It also currently requires
+[Google App Engine](https://appengine.google.com/), but should support other
+platforms in the future.
 
 [Try the demo!](https://oauth-dropins.appspot.com/)
 
-oauth-dropins takes as little as a few lines of code to add to your project. For
-example, to use it for Facebook, just add these two lines to your WSGI
-application:
+You can use oauth-dropins in your project with just a bit of code. For example,
+to use it for Facebook, just add these two lines to your WSGI application:
 
-    from oauth_dropins import facebook, twitter
-    
-    application = webapp2.WSGIApplication([
-      ...
-      ('/facebook/start_oauth', facebook.StartHandler.to('/facebook/oauth_callback')),
-      ('/facebook/oauth_callback', facebook.CallbackHandler.to('/next'))]
+<pre>
+from oauth_dropins import facebook
+
+application = webapp2.WSGIApplication([
+  ...
+  <b>('/facebook/start_oauth', facebook.StartHandler.to('/facebook/oauth_callback')),</b>
+  <b>('/facebook/oauth_callback', facebook.CallbackHandler.to('/next'))</b>,
+  ]
+</pre>
 
 Then map those URLs in your
 [app.yaml](https://developers.google.com/appengine/docs/python/config/appconfig#Python_app_yaml_Script_handlers)
 and put your [Facebook app](https://developers.facebook.com/apps)'s key and
-secret in plain text `facebook_app_id` and `facebook_app_secret` files in your
-app's root directory, and you're good to go!
+secret in `facebook_app_id` and `facebook_app_secret` files in your app's root
+directory, and you're good to go!
 
 See the [GitHub repo](https://github.com/snarfed/oauth-dropins) for more
 details. Happy hacking!

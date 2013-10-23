@@ -6,8 +6,9 @@ Open Link in App
 
 I've just published a new Android app,
 [Open Link in App](https://play.google.com/store/apps/details?id=org.snarfed.android.openinapp).
-Ever click on a Facebook or Twitter link on your phone, and it opens in the
-browser instead of the native app? Me too. This fixes that.
+Ever click on a link on your phone and it opens in the browser instead of the
+native app? Me too. This fixes that. It currently supports Facebook, Twitter,
+Instagram, GitHub, and Goodreads.
 
 To use it, after you click on a Facebook or Twitter link, just select Open Link
 in App from the chooser dialog box. If you don't see the dialog box, but you
