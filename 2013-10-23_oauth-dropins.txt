@@ -14,6 +14,9 @@ platforms in the future.
 
 [Try the demo!](https://oauth-dropins.appspot.com/)
 
+<!--more-->
+<span />
+
 You can use oauth-dropins in your project with just a bit of code. For example,
 to use it for Facebook, just add these two lines to your WSGI application:
 
