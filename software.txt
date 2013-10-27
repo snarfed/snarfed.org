@@ -11,12 +11,13 @@ is public domain. Also see [other lists](/lists).
 ### Projects
 
   * [oauth-dropins](https://github.com/snarfed/oauth-dropins) is a collection of
-drop-in [Google App Engine](https://appengine.google.com/) request handlers for
-the initial [OAuth](http://oauth.net/) client flows for many popular sites such
-as Facebook, Twitter, and many others.
+drop-in [OAuth](http://oauth.net/) client flows in Python
+[App Engine](https://appengine.google.com/) for popular sites like Facebook,
+Twitter, and many more.
 
   * [Open Link in App](/2013-07-16_open-link-in-app) is an
-Android app that implements missing URL handlers for the Facebook and Twitter apps.
+Android app that opens links in their native app instead of the browser. It
+currently supports Facebook, Twitter, Instagram, GitHub, and Goodreads.
 
   * [facebook-atom](https://facebook-atom.appspot.com/) generates and serves an
 Atom feed of your Facebook news feed, ie
@@ -31,10 +32,10 @@ Atom feed of your Twitter stream or a Twitter list.
     data to [ActivityStreams](http://activitystrea.ms) format. See the
     [blog post](/2012-03-12_activitystreams_for_facebook_and_twitter) for more.
 
-  * [portablecontacts-unofficial](https://github.com/snarfed/portablecontacts-unofficial)
-    is a [PortableContacts](http://portablecontacts.net/) server for social
-    networking sites like Facebook and Twitter that don’t implement it
-    themselves. See the
+  *
+    [portablecontacts-unofficial](https://github.com/snarfed/portablecontacts-unofficial)
+    is a library and REST API that converts Facebook and Twitter contacts to
+    [PortableContacts](http://portablecontacts.net/) format. See the
     [blog post](/2012-02-22_portablecontacts_for_facebook_and_twitter) for more.
 
   * [webfinger-unofficial](https://github.com/snarfed/webfinger-unofficial) is a
@@ -88,8 +89,8 @@ server that implements Facebook's
 [Graph API](http://developers.facebook.com/docs/reference/api/). It's
 particularly useful for testing.
 
-  * The [snarfed WordPress theme](/snarfed_wordpress_theme), which is currently
-running on this site.
+  * The [snarfed WordPress theme](/snarfed_wordpress_theme), which
+  <strike>is currently running</strike> used to run on this site.
 
   * [google_talk_sms.pl](/google_talk_sms_pidgin_plugin),
 a [Pidgin](http://pidgin.im/) plugin that enables
