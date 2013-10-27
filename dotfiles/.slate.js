@@ -1,1 +1,1 @@
-../../.slate.js
+../../dotfiles/.slate.js

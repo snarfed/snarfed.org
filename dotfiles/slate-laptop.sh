@@ -1,1 +1,1 @@
-../../slate-laptop.sh
+../../dotfiles/slate-laptop.sh

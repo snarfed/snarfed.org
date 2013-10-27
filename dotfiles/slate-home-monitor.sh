@@ -1,1 +1,1 @@
-../../slate-home-monitor.sh
+../../dotfiles/slate-home-monitor.sh

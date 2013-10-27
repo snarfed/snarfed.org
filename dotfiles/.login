@@ -1,1 +1,1 @@
-../../.login
+../../dotfiles/.login

@@ -1,1 +1,1 @@
-../../.xinitrc
+../../dotfiles/.xinitrc

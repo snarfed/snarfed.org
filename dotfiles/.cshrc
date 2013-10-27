@@ -1,1 +1,1 @@
-../../.cshrc
+../../dotfiles/.cshrc

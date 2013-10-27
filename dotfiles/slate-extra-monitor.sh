@@ -1,1 +1,1 @@
-../../slate-extra-monitor.sh
+../../dotfiles/slate-extra-monitor.sh
