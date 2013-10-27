@@ -1,0 +1,1 @@
+../../dotfiles/slate-extra-monitor.sh

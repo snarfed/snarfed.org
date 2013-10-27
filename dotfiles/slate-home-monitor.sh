@@ -1,0 +1,1 @@
+../../dotfiles/slate-home-monitor.sh

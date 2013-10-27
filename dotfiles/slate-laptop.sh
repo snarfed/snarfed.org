@@ -1,0 +1,1 @@
+../../dotfiles/slate-laptop.sh
