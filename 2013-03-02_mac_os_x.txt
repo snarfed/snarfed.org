@@ -117,8 +117,8 @@ either.
 Ah well. [xnomad](https://github.com/fjolnir/xnomad),
 [Slate](https://github.com/jigish/slate), and
 [Tyler WM](http://www.tylerwm.com/) seem the closest so far. I'm trying out
-Slate right now; here are my [.slate](http://snarfed.org/dotfiles/.slate) and
-[.slate.js](http://snarfed.org/dotfiles/.slate.js). We'll see how it turns out!
+Slate right now; here are my [.slate](/dotfiles/.slate) and
+[.slate.js](/dotfiles/.slate.js). We'll see how it turns out!
 
 (Some of the shortcut bags look pretty good, too:
 [Moom](http://manytricks.com/moom/),
@@ -149,8 +149,10 @@ ran `brew install emacs --cocoa` to get Emacs 24.2 with
 backported from 24.3.
 
 I hadn't used Emacs 24 before this. One of my favorite new features is the built
-in package manager. Here are the packages I've installed so far:
+in package manager. Here are the extra packages I've installed so far:
 
+  * apache-mode
+  * applescript-mode
   * css-mode
   * go-mode
   * js2-mode
@@ -158,7 +160,6 @@ in package manager. Here are the packages I've installed so far:
   * markdown-mode
   * php-mode
   * redo+
-  * sgml-mode
   * ...and many others.
 
 [Emacs's GDB integration](http://www.gnu.org/software/emacs/manual/html_node/emacs/Debuggers.html)
