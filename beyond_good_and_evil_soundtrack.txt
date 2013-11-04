@@ -1,7 +1,7 @@
 Beyond Good &amp; Evil soundtrack
 
 <img src="/two.jpg" class="shadow" />
-<img src="/box.jpg" class="shadow" />
+<img src="/box.jpg" />
 <img src="/explosion.jpg" class="shadow" />
 
 The music from the [Beyond Good & Evil](http://beyondgoodevil.com/) soundtrack,
@@ -13,12 +13,14 @@ some surprisingly good French hip-hop. It was praised unanimously in
 parts of the game.
 
 Unfortunately, you can't buy it anywhere. Due to a flood of fans clamoring for
-it, though, you _can_ download it. [Ubisoft](http://ubi.com/) released it on
+it, though, you _can_ download it. Ubisoft released it
+<strike>on
 [Nintendo Insider](http://nintendoinsider.com/) as a collection of 31
 [freely](http://nintendoinsider.com/site/EpZVyAAAZEhBjcpQpA.php)
 [downloadable](http://nintendoinsider.com/site/EpZypFAVlVWQAxqHsA.php)
-[mp3s](http://nintendoinsider.com/site/EpZlppyZVEShihRvCx.php). 256kbps bitrate,
-no less! Very classy move on Ubisoft's part.
+[mp3s](http://nintendoinsider.com/site/EpZlppyZVEShihRvCx.php).</strike>
+Nintendo Insider is now gone, but
+[the MP3s are still available here](http://downloads.khinsider.com/game-soundtracks/album/beyond-good-evil).
 
 Also, if you're a purist, and you own the PC version of the game, you can use
 Rahly's [bfextractor](http://www.terrygoodkind.net/~rahly/bgae.php) tool to
