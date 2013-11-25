@@ -4,7 +4,5 @@ I needed to fill some holes in my records for the investment property I own, so
 I asked my property manager. He sent me a PDF with 7 pages just like this. No
 joke.
 
-<p class="right half">
-  <a href="/property_management_records.jpg" class="shutter">
-    <img class="shadow" src="/property_management_records_thumb.jpg" /></a>
-</p>
+<a href="/property_management_records.jpg" class="shutter">
+  <img class="shadow" src="/property_management_records.jpg" /></a>
