@@ -436,3 +436,17 @@ automatically starts whenever I plug my phone into my computer. I
 [followed these instructions](https://cooltrainer.org/2012/12/21/taming-android-file-transfer-on-mac-os-x/)
 to disable that. Be sure to kill it in Activity Monitor before removing the
 login items and renaming the agent app!
+
+Recently, I've seen a `distnoted` process occasionally spin up and chew up 100%
+CPU (on one core) and a ton of memory, often in the neighborhood of 1.5G or so.
+The command line is `/usr/sbin/distnoted agent`, and it's started by `launchd`,
+neither of which help much. Web searches say `distnoted` manages notification
+delivery, and lots of other people report the same problem with it, but no
+single clear fix.
+
+I
+[asked about it on StackExchange](http://apple.stackexchange.com/questions/111197/runaway-distnoted-process),
+and after some debugging, we determined that it was being
+[started by Spotlight](http://apple.stackexchange.com/questions/111197/runaway-distnoted-process#comment131521_111461),
+OS X's filesystem search feature. I've reigned in the paths and file types that
+Spotlight is allowed to index, and it seems happier so far. Fingers crossed!
