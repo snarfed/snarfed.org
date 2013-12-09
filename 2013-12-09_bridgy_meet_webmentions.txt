@@ -3,19 +3,17 @@ Brid.gy, meet Webmentions
 <p class="right half">
  <a href="http://brid.gy/"><img src="/bridgy_logo_square.jpg"/></a></p>
 
-One of the side projects I've been working on (again) is
-[Brid.gy](http://brid.gy/), a service that
-<a href="http://indiewebcamp.com/backfeed">backfeeds</a> comments on social
-networks to the web pages linked in the posts.
-[When I originally launched Brid.gy](/2012-01-08_bridgy_launched) a couple years
-ago, it only supported WordPress, but it now sends
-[webmentions](http://www.webmention.org/), which are supported in
+[Brid.gy](http://brid.gy/), one of my side projects, is a service that <a
+href="http://indiewebcamp.com/backfeed">backfeeds</a> comments on social
+networks to the web pages linked in the posts. It originally only supported
+WordPress [when I launched it](/2012-01-08_bridgy_launched) a couple years ago,
+but I've been making some changes, and it now sends
+[webmentions](http://www.webmention.org/) instead, which are supported in
 [lots of servers](http://indiewebcamp.com/webmention#Implementations). I also
-made a added Instagram, made a bunch of smaller improvements, and updated the
-look and feel. Check out
-[this example of backfed comments](http://snarfed.org/2013-12-07_goodbye-penny-arcade-report#comments)
-on this site, then feel free to [try it out](http://brid.gy/) yourself!
-
+added Instagram, made a bunch of smaller improvements, and updated the look and
+feel. Check out
+[this example of backfed comments](http://snarfed.org/2013-12-07_goodbye-penny-arcade-report#comments),
+then feel free to [try it out](http://brid.gy/) yourself!
 
 The update was inspired by the [IndieWeb](http://indiewebcamp.com/) community,
 who have been doing all sorts of great work around making personal web sites a
