@@ -64,6 +64,7 @@ time you spend on each iteration instead. That lands us squarely in circular
 logic land - to move faster, you have to move faster - but at least it helps
 explain some of the speed fetish.
 
+<a id="enough-iterations"></a>
 Even so, the accepted wisdom for startups isn't _enough iterations,_ it's _move
 faster_. Granted, "enough iterations!" isn't exactly a killer war cry, but it
 has the benefit of actually being right. If you keep your speed sustainable, and
