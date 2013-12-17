@@ -1,13 +1,13 @@
 Brid.gy, meet Webmentions
 
 <p class="right half">
- <a href="http://brid.gy/"><img src="/bridgy_logo_square.jpg"/></a></p>
+ <a href="http://brid.gy/"><img src="/bridgy_logo.jpg"/></a></p>
 
-[Brid.gy](http://brid.gy/), one of my side projects, is a service that <a
-href="http://indiewebcamp.com/backfeed">backfeeds</a> comments on social
-networks to the web pages linked in the posts. It originally only supported
-WordPress [when I launched it](/2012-01-08_bridgy_launched) a couple years ago,
-but I've been making some changes, and it now sends
+[Brid.gy](http://brid.gy/), one of my side projects,
+<a href="http://indiewebcamp.com/backfeed">backfeeds</a> comments on social
+networks to web pages linked in the posts. It only supported WordPress
+[when I launched it](/2012-01-08_bridgy_launched) a couple years ago, but I've
+been making some changes, and it now sends
 [webmentions](http://www.webmention.org/) instead, which are supported in
 [lots of servers](http://indiewebcamp.com/webmention#Implementations). I also
 added Instagram, made a bunch of smaller improvements, and updated the look and
@@ -18,3 +18,6 @@ then feel free to [try it out](http://brid.gy/) yourself!
 The update was inspired by the [IndieWeb](http://indiewebcamp.com/) community,
 who have been doing all sorts of great work around making personal web sites a
 viable alternative to social network profiles. Thanks all!
+
+<a class="u-syndication" href="http://news.indiewebcamp.com/post/snarfed.org/2013-12-09_brid-gy-meet-webmentions">
+  <em>Also on IndieNews.</em></a>
