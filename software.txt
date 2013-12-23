@@ -10,6 +10,11 @@ is public domain. Also see [other lists](/lists).
 <a name="projects"></a>
 ### Projects
 
+  * [Brid.gy](http://brid.gy/): Got a web site? Post links to your site on
+    social networks? Wish comments and likes showed up on your site? Brid.gy
+    copies them back for you. Part of the [IndieWeb](http://indiewebcamp.com/)
+    ecosystem.
+
   * [oauth-dropins](https://github.com/snarfed/oauth-dropins) is a collection of
 drop-in [OAuth](http://oauth.net/) client flows in Python
 [App Engine](https://appengine.google.com/) for popular sites like Facebook,
@@ -49,11 +54,6 @@ Atom feed of your Twitter stream or a Twitter list.
 Facebook, Twitter, and Google+ that don't implement it themselves. See the
 [blog post](/2012-07-14_salmon_for_facebook_twitter_and_google_plus) for
 details.
-
-  * [Bridgy](http://brid.gy/): Got a blog? Share your blog posts on social
-    networks? Wish comments on those shared posts also showed up on your blog?
-    Bridgy copies them back for you. See the
-    [blog post](/2012-01-08_bridgy_launched) for more.
 
   * [Facebook to Wordpress](/2012-11-30_facebook_to_wordpress)
 is a script that copies your [Facebook](http://www.facebook.com/) posts to a
