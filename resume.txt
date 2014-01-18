@@ -38,7 +38,7 @@ Co-founded [Google App Engine](http://code.google.com/appengine/) and led its
 engineering team. The datastore is a very large scale,
 [multi-homed](http://googleappengine.blogspot.com/2009/09/migration-to-better-datastore.html)
 [NoSQL](http://en.wikipedia.org/wiki/NoSQL) database. At the end of my tenure, it
-stored >XXXB rows, >XPB of data, and served >XXXkqps. (2005 - 2010)
+stored >XXXB rows, >XXXPB of data, and served >XXXkqps. (2005 - 2010)
 
 Helped design and build a company-wide personalization infrastructure system
 [best described here](http://googleblog.blogspot.com/2012/01/updating-our-privacy-policies-and-terms.html).
