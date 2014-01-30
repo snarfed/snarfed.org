@@ -450,3 +450,7 @@ and after some debugging, we determined that it was being
 [started by Spotlight](http://apple.stackexchange.com/questions/111197/runaway-distnoted-process#comment131521_111461),
 OS X's filesystem search feature. I've reigned in the paths and file types that
 Spotlight is allowed to index, but that hasn't fixed it.
+
+...it turns out this is probably an
+[Emacs memory leak](http://apple.stackexchange.com/a/118336/43900) that's fixed
+in 24.4. Fingers crossed!
