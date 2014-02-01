@@ -1,0 +1,37 @@
+Software in 2014
+
+<p class="right third">
+ <a href="https://www.tbray.org/ongoing/When/201x/2014/01/01/Software-in-2014">
+  <img class="shadow" src="/gears.jpg" /></a></p>
+
+[Tim Bray](https://www.tbray.org/)'s
+[Software in 2014](https://www.tbray.org/ongoing/When/201x/2014/01/01/Software-in-2014)
+is a _great_ survey of the state of software engineering, particularly on the
+server (good) and the client (bad). I've spent my fair share of time in both
+places, and my experiences match up with his conclusions perfectly.
+
+Beyond cheerleading, my main reaction is to consider _why_ server side
+development is so much better than client side these days. On the client, we've
+seen a massive tectonic shift over the last 5-10 years. Win32 had a comfortable
+monopoly for decades, hangers-on notwithstanding, but that ocean is well and
+truly boiled, and clearly for the better. The new trio of web, iOS, and Android
+have done some pretty amazing things for end user technology. It takes time for
+tools and best practices to shake out of young new platforms, though. You know
+it's saying something when the web is the most mature of any bunch.
+
+The server side seas, on the other hand, have stayed cool and calm. Tools and
+languages have improved steadily, and the rise of APIs and app platforms and
+DVCSes and cloud computing has done wonders for code reuse and modularity. The
+spectre of multi core and concurrency still haunts us, but we have weapons to
+fight it with now, and they'll only get better.
+
+At a high level, these changes have clearly been good for _users_ of both client
+and server software. The difference is that server developers are their own
+users, more or less, while client developers are not. Reinventing the client
+platform from scratch was an epic
+[Spolsky's Folly](http://www.joelonsoftware.com/articles/fog0000000069.html)
+that client developers will be [digging](http://cordova.apache.org/)
+[out of](http://phonegap.com/) for decades, and
+[general purpose computing may not make it out alive](/2013-02-17_do_you_have_permission_to_use_your_computer),
+but it's already a big net win for end users, businesses, and most other
+constituencies. It's not always all about us engineers, and that's a good thing.
