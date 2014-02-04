@@ -1,5 +1,25 @@
 cats
 
-A collection of cat photos, both ours and [our friends'](/2005-08-13_the_giz).
+A collection of cat [photos](#photos) and [videos](#videos), both ours and
+[our friends'](/2005-08-13_the_giz).
 
+<a name="photos"></a>
 [nggallery id=20]
+
+<a name="videos"></a>
+
+<iframe class="third left shadow" src="//www.youtube.com/embed/1gWvAXW9HBQ?controls=0"
+    frameborder="0" allowfullscreen class="shadow" style="border: none">
+</iframe>
+
+<iframe class="third right shadow" src="//www.youtube.com/embed/2N2XEA6JwBA?controls=0"
+    frameborder="0" allowfullscreen class="shadow" style="border: none">
+</iframe>
+
+<iframe class="third right shadow" src="//www.youtube.com/embed/wlOhje_iwVw?controls=0"
+    frameborder="0" allowfullscreen class="shadow" style="border: none">
+</iframe>
+
+<iframe class="third left shadow" src="//www.youtube.com/embed/cQL0YK7SPa8?controls=0"
+    frameborder="0" allowfullscreen class="shadow" style="border: none">
+</iframe>
