@@ -6,7 +6,7 @@ twitter-atom is back!
 One of my side projects, [Twitter Atom feeds](http://twitter-atom.appspot.com/)
 (aka [twitter-atom](https://github.com/snarfed/twitter-atom)), has been down for
 a couple months. It
-[ran afoul](https://twitter.com/snarfed_org/status/347667926591107073) of
+[ran afoul](https://twitter.com/schnarfed/status/347667926591107073) of
 Twitter's [new API terms](https://dev.twitter.com/docs/terms/summary), which
 cracked down on syndicating tweets outside of the Twitter walled garden in any
 form.
