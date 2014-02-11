@@ -8,12 +8,12 @@ scaling distributed systems.
 Deep experience with Python, Go, Java, C++, Linux, iOS, Android, MySQL, NoSQL.
 Comfortable with more.
 
-Multiple [side projects](http://snarfed.org/software), [talks](/talks) at
+Multiple [side projects](/software), [talks](/talks) at
 various conferences, and
 [contributions](https://www.ohloh.net/accounts/snarfed/positions) to major open
 source projects such as [OStatus](http://www.w3.org/community/ostatus/),
 [OpenID](http://openid.net/), [Emacs](http://gnu.org/software/emacs/),
-[WordPress](http://snarfed.org/2010-08-08_migrated_to_wordpress),
+[WordPress](/2010-08-08_migrated_to_wordpress),
 [Pine](http://www.washington.edu/pine/)/[Alpine](http://www.washington.edu/alpine/),
 [tcsh](http://www.tcsh.org/), and [Pidgin](http://pidgin.im/).
 
@@ -52,7 +52,7 @@ control, monitoring, automation, topology, routing, peering,
 (2010 - 2011)
 
 Led Google's early use of [OpenID](http://openid.net/). Evangelized to
-stakeholders, [built](http://snarfed.org/2007-12-02_openid_comments_in_blogger)
+stakeholders, [built](/2007-12-02_openid_comments_in_blogger)
 [and coordinated](http://bloggerindraft.blogspot.com/2008/01/new-feature-blogger-as-openid-provider.html)
 [multiple](http://openid-provider.appspot.com/)
 [integrations](http://openid-consumer.appspot.com/), and drove internal adoption

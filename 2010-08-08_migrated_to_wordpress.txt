@@ -4,7 +4,7 @@ Migrated to WordPress
  <a href="http://wordpress.org/">
   <img src="/wordpress.png" alt="wordpress" /></a></p>
 
-This site, [snarfed.org](http://snarfed.org/), has been running happily on
+This site, [snarfed.org](/), has been running happily on
 [PyBlosxom](http://pyblosxom.bluesock.org/) for the
 [last four years](/2006-08-23_virtual_housewarming). PyBlosxom has been great,
 and I've been happy to use it and

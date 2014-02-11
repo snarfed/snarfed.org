@@ -39,5 +39,5 @@ so it won't last long.
 The source for both apps is [on](https://github.com/snarfed/facebook-atom)
 [Github](https://github.com/snarfed/twitter-atom). The heavy lifting is done by
 my
-[ActivityStreams bridge project](http://snarfed.org/2012-03-12_activitystreams_for_facebook_and_twitter).
+[ActivityStreams bridge project](/2012-03-12_activitystreams_for_facebook_and_twitter).
 Enjoy!

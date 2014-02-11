@@ -22,7 +22,7 @@ succeed where I failed!
 ### Can't it _do_ anything?
 
 Recently, a [friend](http://www-cs-students.stanford.edu/~nstoll/) asked me if I
-could write a simple webapp on [snarfed.org](http://snarfed.org/), my
+could write a simple webapp on [snarfed.org](/), my
 SnipSnap-based site. Unfortunately, I hesitated, and for good reason. I've
 written my fair share of [SnipSnap macros](/snipsnap_macros), and I like the
 macro architecture, but it's not designed for interactive webapps. I considered
@@ -132,7 +132,7 @@ now we're getting somewhere!
 
 At this point, something had been nagging at the back of my mind for a while.
 I'd ignored it for a while, but by the time I enabled {script} on my [live
-server](http://snarfed.org/), it pushed into the front of my mind. Hmm, {script}
+server](/), it pushed into the front of my mind. Hmm, {script}
 lets people run arbitrary code on my server, with filesystem and network access.
 Worse, since it needs to bind to port 80, SnipSnap runs as root, so their code
 would too. Yow! That's a gaping security hole to open on a production server.

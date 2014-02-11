@@ -21,7 +21,7 @@ The Gaim plugin requires [Gaim](http://gaim.sf.net/) .68 or higher and
 [Perl](http://perl.org/) 5.004 or higher. The analyzer requires
 [Python](http://python.org/) 2.2 or higher.
 
-Bigbrother is copyright 2003-2004 [Ryan Barrett](http://snarfed.org/), and
+Bigbrother is copyright 2003-2004 [Ryan Barrett](/), and
 is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html). It
 includes source code from [gd](http://www.boutell.com/gd/),
 [GDChart](http://www.fred.net/brv/chart/), and

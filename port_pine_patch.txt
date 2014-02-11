@@ -29,5 +29,5 @@ example, use this command line to port **foo.patch.4.63** to Pine version 4.64:
 Future versions will remove the hard-coded paths. For now, you can edit the
 variables at the top of the script to point to different paths.
 
-port_pine_patch is copyright 2005 [Ryan Barrett](http://snarfed.org/),
+port_pine_patch is copyright 2005 [Ryan Barrett](/),
 and is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).

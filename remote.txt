@@ -23,5 +23,5 @@ The [zip file](/remote.zip) includes the full source code and
 Visual Studio project files for building remote on Windows.
 
 Remote is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).
-Copyright 2000 [Ryan Barrett](http://snarfed.org/).
+Copyright 2000 [Ryan Barrett](/).
 

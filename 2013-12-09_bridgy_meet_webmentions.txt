@@ -12,7 +12,7 @@ been making some changes, and it now sends
 [lots of servers](http://indiewebcamp.com/webmention#Implementations). I also
 added Instagram, made a bunch of smaller improvements, and updated the look and
 feel. Check out
-[this example of backfed comments](http://snarfed.org/2013-12-07_goodbye-penny-arcade-report#comments),
+[this example of backfed comments](/2013-12-07_goodbye-penny-arcade-report#comments),
 then feel free to [try it out](http://brid.gy/) yourself!
 
 The update was inspired by the [IndieWeb](http://indiewebcamp.com/) community,

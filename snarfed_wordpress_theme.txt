@@ -34,7 +34,7 @@ Features:
   * Right hand sidebar. Top index widget area, only displayed on the home page.
 
   * Search via my
-    [AJAX site search script](http://snarfed.org/site_search_with_the_google_ajax_search_api).
+    [AJAX site search script](/site_search_with_the_google_ajax_search_api).
     Included in the theme, but off by default. See below for configuration.
 
   * Automatic search for related pages on 404 errors.
