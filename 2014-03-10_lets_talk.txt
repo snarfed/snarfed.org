@@ -1,0 +1,42 @@
+Let's Talk userscript
+
+<p class="right half">
+<a href="/lets_talk.png">
+ <img class="shutter shadow" src="/ets_talk_thumb.png" /></a></p>
+
+I've packaged up and released my first hack from
+[IndieWebCamp SF 2014](http://indiewebcamp.com/2014/SF)! [Let's Talk]() is a
+[userscript](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) that
+renders [h-cards](http://microformats.org/wiki/h-card) in a standard format.
+When you go to a person's web site, Let's Talk shows you at a glance how to
+contact them and which contact methods they prefer.
+
+We live in an app-focused world. When we want to talk to someone, we first have
+to choose which app to use. Some people prefer email, others text, others
+facetime [or GitHub](https://github.com/aaronpk/self) or a good old phone call.
+[Tantek](http://tantek.com/) has argued strongly for moving away from this and
+toward a
+[people-oriented approach](http://tantek.com/2013/338/b1/people-focused-mobile-communication-experience#mob-comm-2013-12-05),
+and he's even
+[started designing it](http://tantek.com/2014/067/b2/mockups-people-focused-mobile-communication)
+recently. In short, we'd all put h-cards on our web sites with our preferred
+contact methods - email addresses, Twitter handles, etc. - and use those to
+contact each other.
+
+I'm all for this...except it's not very good for muscle memory. Everyone's web
+site looks different. That's great! If you have to parse a different design
+every time you want to talk to someone, though, that's not ideal. If we all have
+to style our communication methods the same way, that's not ideal either.
+
+[Let's Talk]() fixes this. Everyone can still style their web site however they
+want. When you want to talk to someone, just go to their web site, turn on Let's
+Talk, and their communication methods appear in the top left corner, in the
+order they prefer, with standard icons and styling.
+
+The
+[source is on GitHub](https://github.com/snarfed/misc/blob/master/userscripts/lets_talk.user.js),
+and I happily accept pull requests. Thanks to
+[Glenn Jones](http://glennjones.net/) for his awesome
+[microformat-shiv](http://microformatshiv.com/) library and to
+[Automattic](http://automattic.com/) for their great
+[Genericons](http://genericons.com/) font. Happy communicating!
