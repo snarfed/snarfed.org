@@ -12,6 +12,9 @@ renders [h-cards](http://microformats.org/wiki/h-card) in a standard format.
 When you go to someone's web site, Let's Talk shows you at a glance how to
 contact them and which methods they prefer.
 
+<!-- more -->
+<span />
+
 We live in an app-focused world. When we want to talk to someone, we first have
 to choose an app to use. Some people prefer email, others text, others facetime
 [or GitHub](https://github.com/aaronpk/self) or a good old phone call.
