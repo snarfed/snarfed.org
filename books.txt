@@ -1,7 +1,8 @@
 books
 
-My reading list,
-[tracked on Goodreads](http://www.goodreads.com/snarfed).
+Books I've [read](#read) and
+[want to read](#to-read),
+[courtesy of Goodreads](http://www.goodreads.com/snarfed).
 
 Also see
 [Maulik's](http://maulik.freeshell.net/Miki.pl?page=Reading+Log.miki) and
@@ -10,33 +11,15 @@ Also see
 [other lists](/lists).
 
 <!--
-GoodReads widgets. I'd rather use their custom widget, which shows the
-title, but it doesn't work. :/
+GoodReads widgets. https://www.goodreads.com/user/edit?tab=widgets
+Styled in style.css.
 -->
 
-<style type="text/css" media="screen">
-h2 {
-  font-size: 16px;
-}
-.gr_grid_container {
-  width: 500px;
-}
-.gr_grid_book_container {
-  width: 98px;
-  height: 160px;
-  float: left;
-  padding: 0;
-  overflow: hidden;
-}
-a.gr_grid_branding {
-  display: none;
-}
-</style>
+<a id="to-read"></a>
+<script src="https://www.goodreads.com/review/custom_widget/19612839.To%20read?cover_position=left&cover_size=small&num_books=100&order=d&shelf=to-read&show_author=1&show_cover=1&show_rating=1&show_review=1&show_tags=0&show_title=1&sort=date_read&widget_bg_color=FFFFFF&widget_bg_transparent=true&widget_border_width=none&widget_id=1395352714&widget_text_color=000000&widget_title_size=large&widget_width=full"
+  type="text/javascript" charset="utf-8"></script>
 
-
-<script src="http://www.goodreads.com/review/grid_widget/19612839.Books%20I'd%20like%20to%20read?cover_size=medium&hide_link=&hide_title=&num_books=200&order=d&shelf=to-read&sort=date_updated&widget_id=1366600579"
- type="text/javascript" charset="utf-8"></script>
-
-<script src="http://www.goodreads.com/review/grid_widget/19612839.Books%20I've%20read?cover_size=medium&hide_link=false&hide_title=false&num_books=500&order=d&shelf=read&sort=date_updated&widget_id=1366600272"
- type="text/javascript" charset="utf-8"></script>
+<a id="read"></a>
+<script src="https://www.goodreads.com/review/custom_widget/19612839.Read?cover_position=left&cover_size=small&num_books=100&order=d&shelf=read&show_author=1&show_cover=1&show_rating=1&show_review=1&show_tags=0&show_title=1&sort=date_read&widget_bg_color=FFFFFF&widget_bg_transparent=true&widget_border_width=none&widget_id=1395352733&widget_text_color=000000&widget_title_size=large&widget_width=full"
+  type="text/javascript" charset="utf-8"></script>
 
