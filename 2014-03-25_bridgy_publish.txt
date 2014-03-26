@@ -13,6 +13,9 @@ retweets and even event RSVPs from your web site! Think of it as a
 as a service, that is. I've used it almost exclusively to interact with Facebook
 and Twitter over the last few weeks, and I'm really enjoying it so far.
 
+<!--more-->
+<span />
+
 Examples are worth a thousand words, just like pictures, so let's jump right in.
 [Strand](http://strabd.com/) recently asked me on Twitter:
 
@@ -54,3 +57,6 @@ Twitter tweets, [likes and favorites](http://indiewebcamp.com/like) and
 [the docs](https://www.brid.gy/about#publish), or
 [jump right in](https://www.brid.gy/) and try it out. Let me know what you
 think, and enjoy!
+
+<a class="u-syndication" href="http://news.indiewebcamp.com/post/snarfed.org/2014-03-25_bridgy-publish">
+  <em>Also on IndieNews.</em></a>
