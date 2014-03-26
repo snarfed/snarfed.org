@@ -37,6 +37,7 @@ There may not be many truly new ideas, but the volume is definitely getting
 louder, and I've enjoyed the newfound attention to privacy and big data from
 researchers across many fields. Here are a few standouts:
 
+<a id="solove"></a>
 * [Daniel Solove](http://www.law.gwu.edu/facweb/dsolove/), a law professor at
   [GWU](http://www.law.gwu.edu), has been a leading thinker on privacy and law
   for decades. His book
@@ -45,6 +46,7 @@ researchers across many fields. Here are a few standouts:
   society, something to be promoted for its wide ranging benefits and not just
   defended to pacify a few hand-wringing luddites.
 
+<a id="dwork"></a>
 * Information theorists have demolished any hope of digging ourselves out of
   these holes with
   [de-identification](http://en.wikipedia.org/wiki/De-identification) alone.
@@ -57,6 +59,7 @@ researchers across many fields. Here are a few standouts:
 <a class="shutter" href="/scufflechuck_check.jpg">
   <img class="shadow right" src="/scufflechuck_check_thumb.jpg"></a>
 
+<a id="listening"></a>
 * People from academia and industry are not only
   [talking about](http://scholar.google.com/scholar?hl=en&q=%22Engineering+Privacy+in+an+Age+of+Information+Abundance%22&btnG=&as_sdt=1%2C5&as_sdtp=)
   privacy and big data, they're
