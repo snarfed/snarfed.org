@@ -6,9 +6,9 @@ Bridgy Publish
 It's been a while [since I](/2013-12-09_brid-gy-meet-webmentions)
 [mentioned it](/2013-12-23_bridgy-now-with-likes-and-retweets) here, but I've
 been plugging away on a major new [Bridgy](https://www.brid.gy/) feature.
-[Bridgy Publish](https://www.brid.gy/about#publish) lets you publish Facebook
-posts and Twitter tweets, comments and @-replies, likes and favorites and
-retweets and even event RSVPs from your web site! Think of it as a
+[Bridgy Publish](https://www.brid.gy/about#publish) lets you publish to Facebook
+and Twitter - posts, tweets, comments, likes, and more - from your web site!
+Think of it as a
 [PaaS](http://en.wikipedia.org/wiki/PaaS)...[POSSE](http://indiewebcamp.com/POSSE)
 as a service, that is. I've used it almost exclusively to interact with Facebook
 and Twitter over the last few weeks, and I'm really enjoying it so far.
@@ -16,7 +16,7 @@ and Twitter over the last few weeks, and I'm really enjoying it so far.
 <!--more-->
 <span />
 
-Examples are worth a thousand words, just like pictures, so let's jump right in.
+Examples are worth a thousand words, like pictures, so let's jump right in.
 [Strand](http://strabd.com/) recently asked me on Twitter:
 
 <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/schnarfed">@schnarfed</a> Are you from Seattle?</p>&mdash; Strand McCutchen (@Strabd) <a href="https://twitter.com/Strabd/statuses/448284921350483968">March 25, 2014</a></blockquote>
@@ -44,7 +44,6 @@ translated my post into this Twitter
 [@-reply](https://support.twitter.com/articles/14023-what-are-replies-and-mentions):
 
 <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/Strabd">@Strabd</a> nah, LA. (<a href="https://t.co/y2AKYLCTlZ">https://t.co/y2AKYLCTlZ</a>)</p>&mdash; Ryan Barrett (@schnarfed) <a href="https://twitter.com/schnarfed/statuses/448302518536130561">March 25, 2014</a></blockquote>
-<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 <br />
 If your server doesn't support webmentions, don't fret! You can use the web UI
