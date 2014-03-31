@@ -33,7 +33,7 @@ different design every time you want to talk to someone, that's not ideal. We
 could prevent that by making the "contact" sections of our web sites all look
 the same, but that's not ideal either.
 
-[Let's Talk](http://userscripts.org/scripts/show/408847) fixes this. when you
+[Let's Talk](http://userscripts.org/scripts/show/408847) fixes this. When you
 want to talk to someone, go to their web site, turn on Let's Talk, and their
 communication methods appear in the top left corner, in the order they prefer,
 with standard icons and styling.
