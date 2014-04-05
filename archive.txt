@@ -2,35 +2,35 @@ Archives
 
 [Posts](#posts) |
 [Pages](#pages) |
-[Likes](#likes) |
 [Replies](#replies) |
+[Likes](#likes) |
 [Retweets](#retweets) |
 [RSVPs](#rsvps)
 
+<!-- catlist docs: http://wordpress.org/plugins/list-category-posts/other_notes/ -->
 <div id="posts" class="left half archive-page">
 Posts:  
-[catlist name=-indieweb-indieweb_like-indieweb_repost-indieweb_rsvp numberposts=9999
+[catlist name=-indieweb-indieweb_like-indieweb_repost-indieweb_rsvp numberposts=-1
      orderby=date order=desc]
 </div>
 
 <div id="pages" class="right half archive-page">
 Pages:  
-[catlist post_type=page numberposts=9999 orderby=date order=desc]
+[catlist post_type=page numberposts=-1 orderby=date order=desc]
 </div>
 
-<!-- STATE: other plugin doesn't work either. something wrong with my db? -->
 <div class="left half archive-page">
-<span id="likes">Likes and favorites:</span>  
-[display-posts category="indieweb"]
+<span id="replies">Replies:</span>  
+[catlist name=indieweb numberposts=-1 orderby=date order=desc]
 </div>
 
 <div class="right half archive-page">
-<span id="replies">Replies:</span>  
-[catlist name=indieweb numberposts=9999 orderby=date order=desc]
+<span id="likes">Likes and favorites:</span>  
+[catlist name=indieweb_like numberposts=-1 orderby=date order=desc]
 
 <span id="retweets">Retweets:</span>  
-[catlist name=indieweb_repost numberposts=9999 orderby=date order=desc]
+[catlist name=indieweb_repost numberposts=-1 orderby=date order=desc]
 
 <span id="rsvps">RSVPs:</span>  
-[catlist name=indieweb_rsvp numberposts=9999 orderby=date order=desc]
+[catlist name=indieweb_rsvp numberposts=-1 orderby=date order=desc]
 </div>
