@@ -3,12 +3,12 @@ movies
 <p class="right"><img src="/film_reel.jpg" alt="film reel" /></p>
 
 Movies I've watched and want to watch.
-![good](/good.png) I liked,
-![ok](/ok.png) were just ok,
-![bad](/bad.png) I didn't like.
+<good> I liked,
+<ok> were just ok,
+<bad> I didn't like.
 
 Naturally, this isn't comprehensive, and it's biased toward my taste. If I mark
-a movie <nobr>![bad](/bad.png),</nobr> I may still think it's good overall, but
+a movie <nobr><bad>,</nobr> I may still think it's good overall, but
 just doesn't match my own personal taste, and vice versa.
 
 Also see [books](/books), [games](/games), and [other lists](/lists).
@@ -61,2111 +61,2111 @@ Also see [books](/books), [games](/games), and [other lists](/lists).
 **Watched**:
 
   * [Drinking Buddies](http://www.imdb.com/title/tt2265398/)
-![ok](/ok.png)
+<ok>
 
   * [Redemption](http://www.imdb.com/title/tt1893256/)
-![good](/good.png)
+<good>
 
   * [Mary and Max](http://www.imdb.com/title/tt0978762/)
-![good](/good.png)
+<good>
 
   * [Mud](http://www.imdb.com/title/tt1935179/)
-![good](/good.png)
+<good>
 
   * [The Great Gatsby](http://www.imdb.com/title/tt1343092/)
-![bad](/bad.png)
+<bad>
 
   * [Europa Report](http://www.imdb.com/title/tt2051879/)
-![good](/good.png)
+<good>
 
   * [Vanishing Point](http://www.imdb.com/title/tt0067927/)
-![ok](/ok.png)
+<ok>
 
   * [Castle In The Sky](http://www.imdb.com/title/tt0092067/)
-![ok](/ok.png)
+<ok>
 
   * [Now You See Me](http://www.imdb.com/title/tt1670345/)
-![bad](/bad.png)
+<bad>
 
   * [Assault on Precinct 13](http://www.imdb.com/title/tt0398712/)
-![ok](/ok.png)
+<ok>
 
   * [The Monuments Men](http://www.imdb.com/title/tt2177771/)
-![ok](/ok.png)
+<ok>
 
   * [Lost](http://www.imdb.com/title/tt0406942/)
-![good](/good.png)
+<good>
 
   * [The Disappearance Of Alice Creed](http://www.imdb.com/title/tt1379177/)
-![good](/good.png)
-![bad](/bad.png)
+<good>
+<bad>
 
   * [Kumaré](http://www.imdb.com/title/tt1865425/)
-![good](/good.png)
+<good>
 
   * [American Hustle](http://www.imdb.com/title/tt1800241/)
-![ok](/ok.png)
+<ok>
 
   * [Cloverfield](http://www.imdb.com/title/tt1060277/)
-![ok](/ok.png)
+<ok>
 
   * [Shattered Glass](http://www.imdb.com/title/tt0323944/)
-![ok](/ok.png)
+<ok>
 
   * [The Nightmare Before Christmas](http://www.imdb.com/title/tt0107688/)
-![good](/good.png)
+<good>
 
   * [The Hobbit](http://www.imdb.com/title/tt0903624/)
-![ok](/ok.png)
+<ok>
 
   * [The Wolf Of Wall Street](http://www.imdb.com/title/tt0993846/)
-![ok](/ok.png)
+<ok>
 
   * [Inside Llewyn Davis](http://www.imdb.com/title/tt2042568/)
-![ok](/ok.png)
+<ok>
 
   * [Can't Hardly Wait](http://www.imdb.com/title/tt0127723/)
-![bad](/bad.png)
+<bad>
 
   * [What Dreams May Come](http://imdb.com/title/tt0120889/)
-![ok](/ok.png)
+<ok>
 
   * [The Skulls](http://www.imdb.com/title/tt0192614/)
-![bad](/bad.png)
+<bad>
 
   * [Beasts Of The Southern Wild](http://www.imdb.com/title/tt2125435/)
-![good](/good.png)
+<good>
 
   * [Broken City](http://www.imdb.com/title/tt1235522/)
-![good](/good.png)
+<good>
 
   * [The Last Stand](http://www.imdb.com/title/tt1549920/)
-![ok](/ok.png)
+<ok>
 
   * [The Master](http://www.imdb.com/title/tt1560747/)
-![bad](/bad.png)
+<bad>
 
   * [Olympus Has Fallen](http://www.imdb.com/title/tt2302755/)
-![bad](/bad.png)
+<bad>
 
   * [Flight](http://www.imdb.com/title/tt1907668/)
-![bad](/bad.png)
+<bad>
 
   * [The Perks Of Being A Wallflower](http://www.imdb.com/title/tt1659337/)
-![bad](/bad.png)
+<bad>
 
   * [This Is 40](http://www.imdb.com/title/tt1758830/)
-![bad](/bad.png)
+<bad>
 
   * [Killing Me Softly](http://www.imdb.com/title/tt1764234/)
-![bad](/bad.png)
+<bad>
 
   * [Sound Of My Voice](http://www.imdb.com/title/tt1748207/)
-![good](/good.png)
+<good>
 
   * [Arbitrage](http://www.imdb.com/title/tt1764183/)
-![good](/good.png)
+<good>
 
   * [The Kings Of Summer](http://www.imdb.com/title/tt2179116/)
-![bad](/bad.png)
+<bad>
 
   * [Don Jon](http://www.imdb.com/title/tt2229499/)
-![good](/good.png)
-![good](/good.png)
+<good>
+<good>
 
   * [Seven Psychopaths](http://www.imdb.com/title/tt1931533/)
-![bad](/bad.png)
+<bad>
 
   * [Mirrormask](http://www.imdb.com/title/tt0366780/)
-![good](/good.png)
+<good>
 
   * [Coriolanus](http://www.imdb.com/title/tt1372686/)
-![ok](/ok.png)
+<ok>
 
   * [Irreconcilable Differences](http://www.imdb.com/title/tt0138524/)
-![good](/good.png)
+<good>
 
 <span title="quip company movie outing, 10/11/2013">
   * [Gravity](http://imdb.com/title/tt1454468/)
-![good](/good.png)
+<good>
 </span>
 
   * [Silver Linings Playbook](http://www.imdb.com/title/tt1045658/)
-![ok](/ok.png)
+<ok>
 
   * [The Invention Of Lying](http://www.imdb.com/title/tt1058017/)
-![ok](/ok.png)
+<ok>
 
   * [I Am Street Fighter](http://www.youtube.com/watch?v=2gZBITO5GwI)
-![ok](/ok.png)
+<ok>
 
   * [Les Misérables](http://www.imdb.com/title/tt1707386/)
-![good](/good.png)
+<good>
 
   * [Trance](http://www.imdb.com/title/tt1924429/)
-![ok](/ok.png)
+<ok>
 
   * [Chasing Mavericks](http://www.imdb.com/title/tt1629757/)
-![ok](/ok.png)
+<ok>
 
   * [Life Of Pi](http://www.imdb.com/title/tt0454876/)
-![good](/good.png)
+<good>
 
   * [Pirates Of Silicon Valley](http://www.imdb.com/title/tt0168122/)
-![bad](/bad.png)
+<bad>
 
   * [The Way Way Back](http://www.imdb.com/title/tt1727388/)
-![ok](/ok.png)
+<ok>
 
   * [Total Recall](http://www.imdb.com/title/tt1386703/)
 
   * [The Dark Knight Rises](http://www.imdb.com/title/tt1345836/)
-![good](/good.png)
+<good>
 
   * [A Dark Truth](http://www.imdb.com/title/tt2083379/)
-![ok](/ok.png)
+<ok>
 
   * [Promised Land](http://www.imdb.com/title/tt2091473/)
-![bad](/bad.png)
+<bad>
 
   * [The Internship](http://www.imdb.com/title/tt2234155/)
-![ok](/ok.png)
+<ok>
 
   * [Get The Gringo](http://www.imdb.com/title/tt1567609/)
-![good](/good.png)
+<good>
 
   * [Lorax](http://www.imdb.com/title/tt1482459/)
-![bad](/bad.png)
+<bad>
 
   * [The Dictator](http://www.imdb.com/title/tt1645170/)
-![ok](/ok.png)
+<ok>
 
   * [Warm Bodies](http://www.imdb.com/title/tt1588173/)
-![bad](/bad.png)
+<bad>
 
   * [I Am Legend](http://www.imdb.com/title/tt0480249/)
-![ok](/ok.png)
+<ok>
 
   * [Brave](http://www.imdb.com/title/tt1217209/)
-![good](/good.png)
+<good>
 
   * [Trouble With The Curve](http://www.imdb.com/title/tt2083383/)
-![good](/good.png)
+<good>
 
   * [Jack Reacher](http://www.imdb.com/title/tt0790724/)
-![bad](/bad.png)
+<bad>
 
   * [Extremely Loud & Uncomfortably Close](http://www.imdb.com/title/tt0477302/)
-![bad](/bad.png)
+<bad>
 
   * [Oblivion](http://www.imdb.com/title/tt1483013/)
-![ok](/ok.png)
+<ok>
 
   * [Stolen](http://www.imdb.com/title/tt1656186/)
-![bad](/bad.png)
+<bad>
 
   * [This Means War](http://www.imdb.com/title/tt1596350/)
-![bad](/bad.png)
+<bad>
 
   * [Peep World](http://www.imdb.com/title/tt1103273/)
-![bad](/bad.png)
+<bad>
 
   * [The Pill](http://www.imdb.com/title/tt1691154/)
-![ok](/ok.png)
+<ok>
 
 <span title="home 3/31/2013">
   * [Bachelorette](http://www.imdb.com/title/tt1920849/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 3/22/2013">
   * [The Company Men](http://www.imdb.com/title/tt1172991/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 3/18/2013">
   * [Margin Call](http://www.imdb.com/title/tt1615147/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 3/17/2013">
   * [Safety Not Guaranteed](http://www.imdb.com/title/tt1862079/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 3/15/2013">
   * [Snow White And The Huntsman](http://www.imdb.com/title/tt1735898/)
-![bad](/bad.png)
-![good](/good.png)
+<bad>
+<good>
 </span>
 
 <span title="home 3/2/2013">
   * [Meet Joe Black](http://www.imdb.com/title/tt0119643/)
-![bad](/bad.png) (didn't finish)
+<bad> (didn't finish)
 </span>
 
 <span title="home 2/23/2012">
   * [Tinker Tailor Soldier Spy](http://www.imdb.com/title/tt1340800/)
-![bad](/bad.png) (didn't finish)
+<bad> (didn't finish)
 </span>
 
 <span title="theater w/gina and dan p, 2/18/2013">
   * [Zero Dark Thirty](http://www.imdb.com/title/tt1790885/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="theater w/gina and dan p, 2/16/2013">
   * [Django Unchained](http://www.imdb.com/title/tt1853728/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 2/4/2013">
   * [Moonrise Kingdom](http://www.imdb.com/title/tt1748122/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 2/1/2013">
   * [360](http://www.imdb.com/title/tt1680045/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 1/30/2013">
   * [Love](http://www.imdb.com/title/tt1541874/)
-![ok](/ok.png)
-![good](/good.png)
-![bad](/bad.png)
+<ok>
+<good>
+<bad>
 </span>
 
 <span title="home 1/23/2013">
   * [Rounders](http://www.imdb.com/title/tt0128442/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 1/14/2013">
   * [The Rum Diary](http://www.imdb.com/title/tt0376136/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 1/9/2013">
   * [The Remains Of The Day](http://www.imdb.com/title/tt0107943/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 1/9/2013">
   * [The Hunter](http://www.imdb.com/title/tt1703148/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 1/5/2013">
   * [My Name Is Khan](http://www.imdb.com/title/tt1188996/)
-![good](/good.png)
-![bad](/bad.png)
+<good>
+<bad>
 </span>
 
 <span title="home 12/16/2012">
   * [Seal Team Six](http://www.imdb.com/title/tt2095605/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 12/6/2012">
   * [The Five Year Engagement](http://www.imdb.com/title/tt1195478/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 12/2/2012">
   * [Knowing](http://www.imdb.com/title/tt0448011/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 11/28/2012">
   * [The Happening](http://www.imdb.com/title/tt0949731/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 11/24/2012">
   * [Another Earth](http://www.imdb.com/title/tt1549572/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="theater w/family 11/23/2012">
   * [Argo](http://www.imdb.com/title/tt1024648/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 10/17/2012">
   * [Cabin In The Woods](http://www.imdb.com/title/tt1259521/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 10/14/2012">
   * [Under New Management](http://www.imdb.com/title/tt0887966/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="in theater w/gina and dan peterson, 10/11/2012">
   * [Wreck-It Ralph](http://www.imdb.com/title/tt1772341/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="at kabuki w/cynthia, colby, and gina, 11/1/2012">
   * [Cloud Atlas](http://www.imdb.com/title/tt1371111/)
-![good](/good.png)
+<good>
 </span>
 
   * [Art & Copy](http://www.artandcopyfilm.com/)
-![ok](/ok.png)
+<ok>
 
 <span title="home 10/29/2012">
   * [Role Models](http://www.imdb.com/title/tt0430922/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 10/24/2012">
   * [The Box](http://www.imdb.com/title/tt0359024/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 10/21/2012">
   * [I Love You, Man](http://www.imdb.com/title/tt1155056/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 10/12/2012">
   * [Public Enemies](http://www.imdb.com/title/tt1152836/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 10/7/2012">
   * [Valkyrie](http://www.imdb.com/title/tt0985699/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="theater 9/30/2012">
   * [Looper](http://www.imdb.com/title/tt1276104/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="in theater w/gina and dan peterson, 9/23/2012">
   * [End Of Watch](http://www.imdb.com/title/tt1855199/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 9/21/2012">
   * [Zathura](http://www.imdb.com/title/tt0406375/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 9/16/2012">
   * [Henry's Crime](http://www.imdb.com/title/tt1220888/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 9/13/2012">
   * [The Box](http://www.imdb.com/title/tt0362478/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 9/10/2012">
   * [Weather Man](http://www.imdb.com/title/tt0384680/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="in theater w/sam and gina, 9/8/2012">
   * [Premium Rush](http://www.imdb.com/title/tt1547234/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 9/6/2012">
   * [Unknown](http://www.imdb.com/title/tt0450340/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 9/5/2012">
   * [CSA: The Confederate States of America](http://www.imdb.com/title/tt0389828/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 9/1/2012">
   * [The Future](http://www.imdb.com/title/tt1235170/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 8/13/2012">
   * [The Grey](http://www.imdb.com/title/tt1601913/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 8/8/2012">
   * [War, Inc.](http://www.imdb.com/title/tt0884224/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 7/26/2012">
   * [The Killing Room](http://www.imdb.com/title/tt1119191/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 7/21/2012">
   * [Runaway Jury](http://www.imdb.com/title/tt0313542/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 7/16/2012">
   * [The Lazarus Project](http://www.imdb.com/title/tt0464041/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 7/15/2012">
   * [Intacto](http://www.imdb.com/title/tt0220580/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="on the plane back from greece sailing vacation, 6/10/2012">
   * [The Best Exotic Marigold Hotel](http://www.imdb.com/title/tt1412386/)
-![ok](/ok.png)
+<ok>
 
   * [The Big Year](http://www.imdb.com/title/tt1053810/)
-![ok](/ok.png)
+<ok>
 
   * [Contraband](http://www.imdb.com/title/tt1524137/)
-![good](/good.png)
+<good>
 
   * [In Time](http://www.imdb.com/title/tt1637688/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="on the plane to greece sailing vacation, 6/16/2012">
   * [Indie Game: The Movie](http://www.imdb.com/title/tt1942884/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="drunk guy movie night 6/14/2012">
   * [Prometheus](http://www.imdb.com/title/tt1446714/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 6/8/2012">
   * [Life 2.0](http://www.imdb.com/title/tt1518809/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 6/6/2012">
   * [Blue Valentine](http://www.imdb.com/title/tt1120985/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 5/31/2012">
   * [Transsiberian](http://www.imdb.com/title/tt0800241/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 5/31/2012">
   * [Barbarians At The Gate](http://www.imdb.com/title/tt0106356/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 5/27/2012">
   * [The Town That Was](http://www.imdb.com/title/tt0961209/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 5/23/2012">
   * [House Of Sand And Fog](http://www.imdb.com/title/tt0315983/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 5/17/2012">
   * [Casablanca](http://www.imdb.com/title/tt0034583/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 5/3/2012">
   * [The Ghost Writer](http://www.imdb.com/title/tt1139328/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 4/29/2012">
   * [Super](http://www.imdb.com/title/tt1512235/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 4/18/2012">
   * [Rise of the Planet of the Apes](http://www.imdb.com/title/tt1318514/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 4/8/2012">
   * [Young Adult](http://www.imdb.com/title/tt1625346/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 4/8/2012">
   * [Taken](http://www.imdb.com/title/tt0936501/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 4/8/2012">
   * [The Manchurian Candidate](http://www.imdb.com/title/tt0368008/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="at kabuki w/gina, cynthia, clara, dan">
   * [The Hunger Games](http://www.imdb.com/title/tt1392170/)
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="at kabuki w/cynthia, colby">
 [Catching Fire](http://www.imdb.com/title/tt1951264/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 3/24/202">
   * [Special](http://www.imdb.com/title/tt0479162/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 3/24/202">
   * [Fair Game](http://www.metacritic.com/movie/fair-game-1969)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 3/18/202">
   * [Lawrence Of Arabia](http://www.imdb.com/title/tt0056172/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 3/12/2012">
   * [Re:Generation](http://www.imdb.com/title/tt2099700/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 2/11/2012">
   * [The China Syndrome](http://www.imdb.com/title/tt0078966/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 2/27/2012">
   * [Bridesmaids](http://www.imdb.com/title/tt1478338/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 2/12/2012">
   * [The Killer Inside Me](http://www.imdb.com/title/tt0954947/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 2/7/2012">
   * [The Book Of Eli](http://www.imdb.com/title/tt1037705/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 2/1/2012">
   * [Restrepo](http://www.imdb.com/title/tt1559549/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 1/31/2012">
   * [Double Indemnity](http://www.imdb.com/title/tt0036775/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 1/29/2012">
   * [Midnight in Paris](http://www.imdb.com/title/tt1605783/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 1/26/2012">
   * [Cube](http://www.imdb.com/title/tt0123755/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 1/16/2012">
   * [House of 9](http://www.imdb.com/title/tt0395585/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 1/10/2012">
   * [New Town Killers](http://www.imdb.com/title/tt1183908/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 1/3/2012">
   * [The Fighter](http://www.imdb.com/title/tt0964517/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 12/29/2011">
   * [Tiny Furniture](http://www.metacritic.com/movie/tiny-furniture)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="with gina and her parents, 12/23/2011">
   * [The Descendants](http://www.imdb.com/title/tt1033575/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 12/20/2011">
   * [The Langoliers](http://www.imdb.com/title/tt0112040/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 12/9/2011">
   * [Star Trek](http://www.imdb.com/title/tt0796366/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 12/7/2011">
   * [Nine Dead](http://www.imdb.com/title/tt0959329/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="drunk movies night! 12/1/2011">
   * [Immortals](http://www.imdb.com/title/tt1253864/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 11/28/2011">
   * [Exam](http://www.imdb.com/title/tt1258197/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 </span>
 
 <span title="home 11/27/2011">
   * [The Virgin Suicides](http://www.imdb.com/title/tt0159097/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 11/20/2011">
   * [Limitless](http://www.imdb.com/title/tt1219289/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 11/8/2011">
   * [Source Code](http://www.imdb.com/title/tt0945513/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 11/5/2011">
   * [True Grit](http://www.imdb.com/title/tt1403865/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 10/31/2011">
   * [Page One: Inside the New York Times](http://www.imdb.com/title/tt1787777/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 10/19/2011">
   * [Hanna](http://www.imdb.com/title/tt0993842/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 10/18/2011">
   * [The Road](http://www.imdb.com/title/tt0898367/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="theater w/gina 10/13/2011">
   * [The Ides Of March](http://www.imdb.com/title/tt1124035/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 10/12/2011">
   * [Conviction](http://www.imdb.com/title/tt1244754/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home, 10/10/2011">
   * [Enter The Void](http://www.imdb.com/title/tt1191111/)
-![good](/good.png)
-![bad](/bad.png)
-![ok](/ok.png)
+<good>
+<bad>
+<ok>
 </span>
 
 <span title="home 10/9/2011">
   * [Dr. Strangelove](http://www.imdb.com/title/tt0057012/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="theater w/gina, 10/8/2011">
   * [Moneyball](http://www.imdb.com/title/tt1210166/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 10/5/2011">
   * [Hereafter](http://www.imdb.com/title/tt1212419/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 10/4/2011">
   * [Monsters](http://www.imdb.com/title/tt1470827/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 9/25/2011">
   * [Insomnia](http://www.imdb.com/title/tt0278504/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 9/24/2011">
   * [Chinatown](http://www.imdb.com/title/tt0071315/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="in theater w/gina 9/18/2011">
   * [Contagion](http://www.imdb.com/title/tt1598778/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 9/7/2011">
   * [The Dilemma](http://www.imdb.com/title/tt1578275/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 9/3/2011">
   * [Milk](http://www.imdb.com/title/tt1013753/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 9/2/2011">
   * [The Tourist](http://www.imdb.com/title/tt1243957/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="at gina's 8/27/2011">
   * [Dogville](http://www.imdb.com/title/tt0276919/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt 8/24/2011">
   * [Winter's Bone](http://www.imdb.com/title/tt1399683/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt 8/24/2011">
   * [Panic](http://www.imdb.com/title/tt0194218/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="kauai w/gina, siraj, malorie, 8/15/2011">
   * [Tropic Thunder](http://www.imdb.com/title/tt0942385/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="netflix 8/10/2011">
   * [Unknown](http://www.imdb.com/title/tt1401152/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="at gina's 8/5/2011">
   * [Disturbia](http://www.imdb.com/title/tt0486822/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt 8/3/2011">
   * [Exit Through The Gift Shop](http://www.imdb.com/title/tt1587707/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="in the theater w/gina 7/31/2011">
   * [Cowboys & Aliens](http://www.imdb.com/title/tt0409847/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="at gina's 7/27/2011">
   * [Invictus](http://www.imdb.com/title/tt1057500/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt 7/26/2011">
   * [La Confidential](http://www.imdb.com/title/tt0119488/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt 7/17/2011">
   * [The Kids Are All Right](http://www.imdb.com/title/tt0842926/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt 6/30/2011">
   * [Double Identity](http://www.imdb.com/title/tt1290400/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt 6/23/2011">
   * [Presumed Innocent](http://www.imdb.com/title/tt0100404/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="at gina's 6/11/2011">
   * [Faster](http://www.imdb.com/title/tt1433108/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="in the theater w/gina, 6/11/2011">
   * [Super 8](http://www.imdb.com/title/tt1650062/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="at gina's apt 5/28/2011">
   * [Killers](http://www.imdb.com/title/tt1103153/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="at gina's 5/18/2011">
   * [Crazy Heart](http://www.imdb.com/title/tt1263670/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="at gina's 5/14/2011">
   * [Zodiac](http://www.imdb.com/title/tt0443706/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt, 5/8/2011">
   * [Dog Day Afternoon](http://www.imdb.com/title/tt0072890/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="at gina's 4/16/2011">
   * [Life As We Know It](http://www.imdb.com/title/tt1055292/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="at gina's 4/15/2011">
   * [The Joneses](http://www.imdb.com/title/tt1285309/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="w/gina at her place, 4/13/2011">
   * [The Lovely Bones](http://www.imdb.com/title/tt0380510/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt, 4/10/2011">
   * [Brazil](http://www.imdb.com/title/tt0088846/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="w/gina at her place, 4/2/2011. unexpected horror. :/">
   * [Let Me In](http://www.imdb.com/title/tt1228987/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="at gina's">
   * [The Fourth Kind](http://www.imdb.com/title/tt1220198/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="at gina's 3/24/2011">
   * [Due Date](http://www.imdb.com/title/tt1231583/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="google team offsite w/aspi, 3/24/2011">
   * [Lincoln Lawyer](http://www.imdb.com/title/tt1189340/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="in the theatre w/gina, 3/20/2011">
   * [The Adjustment Bureau](http://www.imdb.com/title/tt1385826/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="at gina's, 3/8/2011">
   * [Scott Pilgrim vs. the World](http://www.imdb.com/title/tt0446029/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt, 3/8/2011">
   * [Unthinkable](http://www.imdb.com/title/tt0914863/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="with gina, 3/2011">
   * [The Town](http://www.imdb.com/title/tt0840361/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt, 2/21/2011">
   * [The American](http://www.imdb.com/title/tt1440728/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt, 2/15/2011">
   * [Jackie Brown](http://www.imdb.com/title/tt0119396/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="w/gina at her house, 2/12/2011">
   * [Dark City](http://www.imdb.com/title/tt0118929/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt w/gina 2/6/2011, finished alone 2/7/2011">
   * [Wall Street](http://www.imdb.com/title/tt0094291/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt w/gina 2/1/2011">
   * [Persepolis](http://www.imdb.com/title/tt0808417/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="in the theater w/gina 1/30/2011">
   * [The King's Speech](http://www.imdb.com/title/tt1504320/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt 1/29/2011">
   * [Zombieland](http://www.imdb.com/title/tt1156398/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span "at metreon w/gina, 1/27/2011">
   * [No Strings Attached](http://www.imdb.com/title/tt1411238/)
-![ok](/ok.png)
+<ok>
 </span>
 
   * [Network](http://www.imdb.com/title/tt0074958/)
-![ok](/ok.png)
+<ok>
 
 <span title="sf apt 1/2/2010; recommended by david lahar during lunch 9/9/2010">
   * [The Year of Living Dangerously](http://www.imdb.com/title/tt0086617/)
-![ok](/ok.png)
+<ok>
 </span>
 
   * [The Square](http://www.imdb.com/title/tt1085507/)
-![ok](/ok.png)
+<ok>
 
 <span title="sf apt w/gina, 1/1/2010">
   * [The Sum of All Fears](http://www.imdb.com/title/tt0164184/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="at gina's, 12/20/2010. convinced me not to see the sequel. :P">
   * [Tron](http://www.imdb.com/title/tt0084827/)
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="guy drunk movie night, 12/30/2010">
   [Tron Legacy](http://www.imdb.com/title/tt1104001/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="at gina's 12/11/2010">
   * [The Whole Nine Yards](http://www.imdb.com/title/tt0190138/)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="at gina's 2/20/2010">
   [The Whole Ten Yards](http://www.imdb.com/title/tt0327247/)
-![ok](/ok.png),
+<ok>,
 </span>
 
 <span title="at kabuki theater w/gina, cynthia, and fiona, 12/3/2010">
   * [Black Swan](http://www.imdb.com/title/tt0947798/)
-![good](/good.png)
-![bad](/bad.png)
+<good>
+<bad>
 </span>
 
 <span title="in the theatre (redwood city) w/gina, 11/16/2010">
   * [Unstoppable](http://www.imdb.com/title/tt0477080/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="at gina's 11/13/2010">
   * [The Three Burials Of Melquiades Estrada](http://www.imdb.com/title/tt0419294/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt 11/6/2010; recommended by ken 10/22/2010">
   * [Babies](http://www.imdb.com/title/tt1020938/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="at lizzy's, 10/31/2010 and 11/2/2010">
   * [The Forgotten](http://www.imdb.com/title/tt0356618/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt 10/29/2010">
   * [Knocked Up](http://www.imdb.com/title/tt0478311/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt w/dan 10/23/2010">
   * [Half Nelson](http://www.imdb.com/title/tt0468489/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="in the theatre w/lizzy, 10/19/2010">
   * [Inception](http://www.imdb.com/title/tt1375666/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt 10/17/2010; recommended by gina 9/29/2010">
   * [The Men Who Stare At Goats](http://www.imdb.com/title/tt1234548/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt 10/9/2010">
   * [Fahrenheit 451](http://www.imdb.com/title/tt0060390/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt 10/9/2010">
   * [Match Point](http://www.imdb.com/title/tt0416320/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="metreon w/dan 10/5/2010">
   * [The Social Network](http://www.imdb.com/title/tt1285016/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt 10/3/2010">
   * [Bad Lieutenant: Port Of Call New Orleans](http://www.imdb.com/title/tt1095217/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt 9/26/2010">
   * [The Assassination of Jesse James by the Coward Robert Ford](http://www.imdb.com/title/tt0443680/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt 9/19/2010">
   * [Serpico](http://www.imdb.com/title/tt0070666/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt 9/19/2010">
   * [Casino](http://www.imdb.com/title/tt0112641/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt 9/12/2010">
   * [Boogie Nights](http://www.imdb.com/title/tt0118749/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt 8/29/2010">
   * [The Talented Mr. Ripley](http://www.imdb.com/title/tt0134119/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt w/dan 8/22/2010">
   * [Heist](http://www.imdb.com/title/tt0252503/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt w/dan 8/21/2010">
   * [This is England](http://www.imdb.com/title/tt0480025/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt w/dan 8/21/2010">
   * [Reservoir Dogs](http://www.imdb.com/title/tt0105236/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt 8/8/2010; recommended by dan as similar to swimming with sharks">
   * [The Big Picture](http://www.imdb.com/title/tt0096926/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt 8/8/2010">
   * [Zardoz](http://www.imdb.com/title/tt0070948/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt 8/7/2010">
   * [Scarface](http://www.imdb.com/title/tt0086250/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt 8/5/2010">
   * [Righteous Kill](http://www.imdb.com/title/tt1034331/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt, 8/1/2010">
   * [Sky Captain And The World Of Tomorrow](http://www.imdb.com/title/tt0346156/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt, 8/1/2010">
   * [Moon](http://www.imdb.com/title/tt1182345/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt, 8/1/2010">
   * [The Royal Tennenbaums](http://www.imdb.com/title/tt0265666/)
-![bad](/bad.png)
+<bad>
 </span>
 
   * [SLC Punk](http://www.imdb.com/title/tt0133189/)
-![good](/good.png)
+<good>
 
 <span title="sf apt 7/31/2010">
   * [Goodfellas](http://www.imdb.com/title/tt0099685/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt 7/31/2010">
   * [2012](http://www.imdb.com/title/tt1190080/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt w/dan 7/25/2010">
   * [This Is Spinal Tap](http://www.imdb.com/title/tt0088258/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt, 7/13/2010">
   * [Full Metal Jacket](http://www.imdb.com/title/tt0093058/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt, 7/10/2010">
   * [Monster](http://www.imdb.com/title/tt0340855/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="at gina's, 7/8/2010">
   * [Wanted](http://www.imdb.com/title/tt0493464/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt w/dan, 7/7/2010">
   * [Rosencrantz & Guildenstern Are Dead](http://www.imdb.com/title/tt0100519/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 </span>
 
 <span title="at gina's, 7/3/2010">
   * [Almost Famous](http://www.imdb.com/title/tt0181875/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="metreon imax 3d w/gina, 7/3/2010">
   * [Toy Story 3](http://www.imdb.com/title/tt0435761/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt 7/1/2010">
   * [Taxi Driver](http://www.imdb.com/title/tt0075314/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt 6/29/2010">
   * [The Hudsucker Proxy](http://www.imdb.com/title/tt0110074/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt 6/27/2010">
   * [TiMER](http://www.imdb.com/title/tt1179794/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt 6/19/2010">
   * [Spy Game](http://www.imdb.com/title/tt0266987/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt 6/19/2010">
   * [Swimming With Sharks](http://www.imdb.com/title/tt0114594/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="airplane back from hawaii w/gina, 6/15/2010">
   * [How to Train Your Dragon](http://www.imdb.com/title/tt0892769/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="hawaii w/gina, june 2010">
   * [The Good Thief](http://www.imdb.com/title/tt0281820/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt 6/5/2010">
   * [24 Hour Party People](http://www.imdb.com/title/tt0274309/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="guys night w/siraj, dan, raj, etc., 6/2/2010">
   * [Prince of Persia: The Sands of Time](http://www.imdb.com/title/tt0473075/)
-![ok](/ok.png)
+<ok>
 </span>
 
   * [The Big Lebowski](http://www.imdb.com/title/tt0118715/)
-![good](/good.png)
+<good>
 
 <span title="wfh, 5/26/2010">
   * [Me and You and Everyone We Know](http://imdb.com/title/tt0415978/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt, 5/16/2010">
   * [Punch-Drunk Love](http://www.imdb.com/title/tt0272338/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt, 5/16/2010">
   * [Mallrats](http://www.imdb.com/title/tt0113749/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt, 5/14/2010">
   * [High Fidelity](http://www.imdb.com/title/tt0146882/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt, 5/12/2010">
   * [Charlie Wilson's War](http://www.imdb.com/title/tt0472062/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt, 5/10/2010">
   * [Revolutionary Road](http://www.imdb.com/title/tt0959337/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt, 5/2/2010">
   * [In Bruges](http://www.imdb.com/title/tt0780536/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt, 5/1/2010">
   * [Sunshine](http://www.imdb.com/title/tt0448134/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt w/dan, 4/29/2010">
   * [The Informant!](http://www.imdb.com/title/tt1130080/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="at gina's 4/25/2010">
   * [Inglourious Basterds](http://www.imdb.com/title/tt0361748/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="at gina's 4/25/2010">
   * [Surrogates](http://www.imdb.com/title/tt0986263/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="at gina's 4/23/2010, only watched 45m or so">
   * [Eagle Eye](http://www.imdb.com/title/tt1059786/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt w/dan 4/20/2010">
   * [The Ghost and the Darkness](http://www.imdb.com/title/tt0116409/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="at gina's, 4/20/2010">
   * [Up](http://www.imdb.com/title/tt1049413/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt, 4/17/2010">
   * [Rendition](http://www.imdb.com/title/tt0804522/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt, 4/17/2010">
   * [Blood Diamond](http://www.imdb.com/title/tt0450259/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt, 4/17/2010">
   * [The Tao of Steve](http://www.imdb.com/title/tt0234853/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt, 4/12-15/2010">
   * [The Godfather I](http://www.imdb.com/title/tt0068646/),
   [II](http://www.imdb.com/title/tt0071562/),
   [III](http://www.imdb.com/title/tt0099674/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt, 4/8/2010">
   * [Better Luck Tomorrow](http://www.imdb.com/title/tt0280477/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt, 4/6/2010">
   * [One Flew Over the Cuckoo's Nest](http://www.imdb.com/title/tt0073486/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt, 4/3/2010">
   * [Carlito's Way](http://www.imdb.com/title/tt0106519/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="w/gina after derek/orkut's baby shower, 4/3/2010">
 The Girl with the Dragon Tattoo
 ([Swedish](http://www.imdb.com/title/tt1132620/)
-![good](/good.png),
+<good>,
 </span>
 <span title="phoenix w/gina and her nephew, 12/24/2011">
   [American](http://www.imdb.com/title/tt1568346/)
-![good](/good.png)),
+<good>),
 </span>
 <span title="sf apt w/gina, 11/2010">
   [The Girl Who Played with Fire](http://www.imdb.com/title/tt1216487/)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="sf apt w/gina, 11/2010">
   [The Girl Who Kicked the Hornet's Nest](http://www.imdb.com/title/tt1343097/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="guys 40s/movie night w/dan, nathan, and siraj, 4/1/2010">
   * [Hot Tub Time Machine](http://www.imdb.com/title/tt1231587/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt, 3/31/2010">
   * [Bruce Almighty](http://www.imdb.com/title/tt0315327/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt, 3/30/2010">
   * [The Proposal](http://www.imdb.com/title/tt1041829/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt, 3/30/2010">
   * [Hudson Hawk](http://www.imdb.com/title/tt0102070/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt with dan, finished 3/29/2010">
   * [Cool Hand Luke](http://www.imdb.com/title/tt0061512/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="daly city theater with gina, 3/28/2010">
   * [Alice in Wonderland](http://www.imdb.com/title/tt1014759/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt, 3/21/2010">
   * [Rachel Getting Married](http://www.imdb.com/title/tt1084950/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt, 3/15/2010">
   * [The Sweet Hereafter](http://www.imdb.com/title/tt0120255/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt w/dan, 3/14/2010">
   * [Outland](http://www.imdb.com/title/tt0082869/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt, 3/13/2010">
   * [Stay](http://www.imdb.com/title/tt0371257/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt, 3/12/2010">
   * [Heavenly Creatures](http://www.imdb.com/title/tt0110005/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt, 3/11/2010">
   * [The Burning Plain](http://www.imdb.com/title/tt1068641/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt w/dan, 3/8/2010">
   * [The International](http://www.imdb.com/title/tt0963178/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt w/dan, 3/7/2010">
   * [I'll Sleep When I'm Dead](http://www.imdb.com/title/tt0319531/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt w/gina and dan, 3/7/2010">
   * [Fake Identity aka Double Identity](http://www.imdb.com/title/tt1290400/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt w/gina, 3/6/2010">
   * [Layer Cake](http://www.imdb.com/title/tt0375912/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt w/dan, 3/6/2010">
   * [Glengarry Glen Ross](http://www.imdb.com/title/tt0104348/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home w/dan, 2/27/2010">
   * [The Insider](http://www.imdb.com/title/tt0140352/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home, 2/20/2010">
   * [Bringing Out the Dead](http://www.imdb.com/title/tt0163988/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home w/dan, 2/15/2010">
   * [Hollywoodland](http://www.imdb.com/title/tt0427969/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home making paper flowers for vday, 2/11/2010">
   * [Magnolia](http://www.imdb.com/title/tt0175880/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="in the theater w/gina, 2/2010">
   * [Avatar](http://www.imdb.com/title/tt0499549/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home w/dan and nicol, 1/19/2010">
   * [Manufactured Landscapes](http://www.imdb.com/title/tt0832903/)
 (Edward Burtynsky)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home on netflix streaming, 1/14/2010">
   * [The Hangover](http://www.imdb.com/title/tt1119646/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home on netflix streaming, 1/12/2010">
   * [Sunshine Cleaning](http://www.imdb.com/title/tt0862846/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="at gina's place, 1/10/2010">
   * [Changeling](http://www.imdb.com/title/tt0824747/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="netflix, home, 1/4/2010">
   * [Spread](http://www.imdb.com/title/tt1186370/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="w/gina at the sf westfield mall, 1/3/2010">
   * [Up in the Air](http://www.imdb.com/title/tt1193138/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home w/the family, 12/24/2009">
   * [Coraline](http://www.imdb.com/title/tt0327597/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="netflix, 12/16/2009">
   * [Eastern Promises](http://www.imdb.com/title/tt0765443/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="netflix, 12/13/2009">
   * [Inside Man](http://www.imdb.com/title/tt0454848/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="netflix, 12/6/2009">
   * [Into the Wild](http://www.imdb.com/title/tt0758758/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="dan's dvd, 11/24/2009">
   * [Down with Love](http://www.imdb.com/title/tt0309530/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="netflix, 11/15/2009">
   * [Definitely, Maybe](http://www.imdb.com/title/tt0832266/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="netflix, 11/7/2009">
   * [The Last Warrior](http://www.imdb.com/title/tt0214871/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="netflix, 11/5/2009">
   * [Nick and Norah's Infinite Playlist](http://www.imdb.com/title/tt0981227/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="netflix, 11/4/2009">
   * [In the Bedroom](http://www.imdb.com/title/tt0247425/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="netflix, 11/3/2009">
   * [Incendiary](http://www.imdb.com/title/tt0984200/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="on the plane (lufthansa lh454) back from europe, 10/27/2009">
   * [State of Play](http://www.imdb.com/title/tt0473705/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="netflix, 9/23/2009">
   * [Body of Lies](http://www.imdb.com/title/tt0758774/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="netflix 9/22/2009, after migration">
   * [Fratricide](http://www.imdb.com/title/tt0470702/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="netflix 9/16/2009">
   * [Nerdcore Rising](http://www.imdb.com/title/tt1159722/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="netflix 9/16/2009">
   * [The Air I Breathe](http://www.imdb.com/title/tt0485851/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="netflix 9/15/2009">
   * [Noise](http://www.imdb.com/title/tt0809931/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="youtube 9/6/2009">
   * [The Flats](http://www.youtube.com/watch?v=JOCCvuFGjYE)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="netflix, 8/29/2009">
   * [The Nines](http://www.imdb.com/title/tt0810988/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="netflix, 8/25/2009">
   * [Atonement](http://www.imdb.com/title/tt0783233/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="1 embarcadero center w/kieran 8/22/2009">
   * [The Hurt Locker](http://www.imdb.com/title/tt0887912/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="metreon w/walter after brainwash and city beer, 8/19/2009">
   * [District 9](http://www.imdb.com/title/tt1136608/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="palo alto cinearts with gretchen, 8/15/2009. (we walked there and back!)">
   * [Cold Souls](http://www.imdb.com/title/tt1127877/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="netflix streaming">
   * [Smart People](http://imdb.com/title/tt0858479/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="warcry/hulu/snagfilms 8/10/2009">
   * [Second Skin](http://www.snagfilms.com/films/title/second_skin/)
-![good](/good.png)
+<good>
 </span>
 
   * [The Girlfriend Experience](http://www.imdb.com/title/tt1103982/)
-![ok](/ok.png)
+<ok>
 
 <span title="netflix 8/2/2009">
   * [Traitor](http://www.imdb.com/title/tt0988047/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="netflix 8/2/2009">
   * [Elegy](http://www.imdb.com/title/tt0974554/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="dan's, in sf apt 11/15/2009">
   * [Elf](http://www.imdb.com/title/tt0319343/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="netflix, 10/28/2009">
   * [The Babysitters](http://www.imdb.com/title/tt0796302/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="netflix 8/1/2009">
   * [Flawless](http://www.imdb.com/title/tt0780516/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="netflix 7/31/2009">
   * [The Secret Life of Bees](http://www.imdb.com/title/tt0416212/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="netflix 7/29/2009">
   * [You Don't Mess with the Zohan](http://www.imdb.com/title/tt0960144/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="netflix 7/19/2009">
   * [Happy-Go-Lucky](http://www.imdb.com/title/tt1045670/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="netflix 7/19/2009">
   * [Blindness](http://www.imdb.com/title/tt0861689/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="flight back from gulf shores family reunion 7/18/2009">
   * [Duplicity](http://www.imdb.com/title/tt1135487/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="w/friends after friday dinner 7/10/2009">
   * [Brüno](http://www.imdb.com/title/tt0889583/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="netflix 7/2009">
   * [Barton Fink](http://www.imdb.com/title/tt0101410/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="netflix 7/2009">
   * [Barry Lyndon](http://www.imdb.com/title/tt0072684/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="netflix 7/2009">
   * [Monsoon Wedding](http://www.imdb.com/title/tt0265343/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="netflix">
   * [Notes on a Scandal](http://imdb.com/title/tt0465551/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="netflix">
   * [The Illusionist](http://www.imdb.com/title/tt0443543/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="hulu">
   * [Rob Roy](http://www.imdb.com/title/tt0114287/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="netflix">
   * [Lars and the Real Girl](http://www.imdb.com/title/tt0805564/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="netflix">
   * [The Constant Gardener](http://www.imdb.com/title/tt0387131/)
-![ok](/ok.png)
+<ok>
 </span>
 
   * [The Visitor](http://www.imdb.com/title/tt0857191/)
-![good](/good.png)
+<good>
 
   * [Blow](http://www.imdb.com/title/tt0221027/)
-![ok](/ok.png)
+<ok>
 
   * [Waking the Dead](http://www.imdb.com/title/tt0127349/)
-![bad](/bad.png)
+<bad>
 
 <span title="netflix">
   * [The Wrestler](http://www.imdb.com/title/tt1125849/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 </span>
 
 <span title="netflix">
   * [A Clockwork Orange](http://www.imdb.com/title/tt0066921/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="netflix">
   * [Word Wars](http://www.imdb.com/title/tt0390632/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="netflix">
   * [Rivers and Tides](http://www.imdb.com/title/tt0307385/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="netflix">
   * [Vicky Cristina Barcelona](http://imdb.com/title/tt0497465/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="hulu">
   * [Sexy Beast](http://www.imdb.com/title/tt0203119/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="hulu">
   * [Mad Dog and Glory](http://www.imdb.com/title/tt0107473/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="netflix">
   * [The Diving Bell and the Butterfly](http://imdb.com/title/tt0401383/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="netflix">
   * [Synecdoche, New York](http://imdb.com/title/tt0383028/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="netflix">
   * [Forgetting Sarah Marshall](http://imdb.com/title/tt0800039/)
-![ok](/ok.png)
+<ok>
 </span>
 
   * [Dan in Real Life](http://imdb.com/title/tt0480242/)
-![ok](/ok.png)
+<ok>
 
   * [Someone Like You](http://imdb.com/title/tt0244970/)
-![bad](/bad.png)
+<bad>
 
   * [Crash](http://imdb.com/title/tt0375679/)
-![good](/good.png)
+<good>
 
   * [What Just Happened?](http://imdb.com/title/tt0486674/)
-![ok](/ok.png)
+<ok>
 
 <span title="theater after friday dinner">
   * [Watchmen](http://imdb.com/title/tt0409459/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 </span>
 
   * [Finding Neverland](http://imdb.com/title/tt0308644/)
-![good](/good.png)
+<good>
 
   * [Picture Perfect](http://imdb.com/title/tt0119896/)
-![ok](/ok.png)
+<ok>
 
 <span title="hulu">
   * [The Siege](http://imdb.com/title/tt0133952/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="hulu">
   * [St. Elmo's Fire](http://imdb.com/title/tt0090060/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="theater w/family">
   * [Doubt](http://imdb.com/title/tt0918927/)
-![good](/good.png)
+<good>
 </span>
 
   * [Gran Torino](http://imdb.com/title/tt1205489/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
 <span title="hulu">
   * [Wimbledon](http://imdb.com/title/tt0360201/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="theater?">
   * [The Curious Case of Benjamin Button](http://imdb.com/title/tt0421715/)
-![good](/good.png)
+<good>
 </span>
 
   * [Troy](http://imdb.com/title/tt0332452/)
-![good](/good.png)
+<good>
 
   * [Road Warrior](http://imdb.com/title/tt0082694/)
-![good](/good.png)
+<good>
 
 <span title="home w/mom">
   * [Kill Bill 1, 2](http://imdb.com/title/tt0266697/)
-![bad](/bad.png)
+<bad>
 </span>
 
   * [Collateral](http://www.imdb.com/title/tt0369339/)
-![good](/good.png)
+<good>
 
   * [Mystic River](http://imdb.com/title/tt0327056/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
 <span title="in sf w/clara/clayton/cynthia, later second date w/gretchen">
   * [Slumdog Millionaire](http://imdb.com/title/tt1010048/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 </span>
 
   * [Ordinary People](http://imdb.com/title/tt0081283/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [There Will Be Blood](http://imdb.com/title/tt0469494/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [Abre Los Ojos (Open Your Eyes)](http://imdb.com/title/tt0125659/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [Vanilla Sky](http://imdb.com/title/tt0259711/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [Evenhand](http://imdb.com/title/tt0279074/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [Batman](http://imdb.com/title/tt0096895/),
   [Batman Returns](http://imdb.com/title/tt0103776/),
   [Batman Begins](http://imdb.com/title/tt0372784/),
   [The Dark Knight](http://imdb.com/title/tt0468569/)
-![good](/good.png)
+<good>
 
   * [Batman and Robin](http://imdb.com/title/tt0118688/),
   [Batman Forever](http://imdb.com/title/tt0112462/)
-![bad](/bad.png)
+<bad>
 
   * [Michael Clayton](http://imdb.com/title/tt0465538/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
 <span title="so so evil, so painful to watch">
   * [The Shape of Things](http://imdb.com/title/tt0308878/)
-![good](/good.png)
+<good>
 </span>
 
   * [Timecrimes (Los Cronocrímenes)](http://imdb.com/title/tt0480669/)
 ([see my post](/2008-05-08_timecrimes_at_the_iff))
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [Superbad](http://imdb.com/title/tt0829482/)
-![good](/good.png)
+<good>
 
   * [No Country for Old Men](http://imdb.com/title/tt0477348/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [Children of Men](http://imdb.com/title/tt0206634/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [The Prestige](http://imdb.com/title/tt0482571/)
-![good](/good.png)
+<good>
 
   * [Juno](http://imdb.com/title/tt0467406/)
-![good](/good.png)
+<good>
 
   * [Babel](http://imdb.com/title/tt0449467/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [United 93](http://imdb.com/title/tt0475276/)
-![good](/good.png)
+<good>
 
   * [Primer](http://imdb.com/title/tt0390384/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [Jarhead](http://imdb.com/title/tt0418763/)
-![good](/good.png)
+<good>
 
   * [Breakfast at Tiffany's](http://imdb.com/title/tt0054698/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [300](http://imdb.com/title/tt0416449/)
-![good](/good.png)
+<good>
 
   * [A Scanner Darkly](http://imdb.com/title/tt0405296/)
-![good](/good.png)
+<good>
 
   * [Stranger than Fiction](http://imdb.com/title/tt0420223/)
-![good](/good.png)
+<good>
 
   * [Triplets of Belleville](http://imdb.com/title/tt0286244/)
-![good](/good.png)
+<good>
 
   * [Borat: Cultural Learnings of America for Make Benefit Glorious Nation of Kazakhstan](http://imdb.com/title/tt0443453/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [Bubble](http://imdb.com/title/tt0454792/)
-![good](/good.png)
+<good>
 
   * [Jackass](http://imdb.com/title/tt0493430/),
   [Jackass 2](http://imdb.com/title/tt1117523/)
-![good](/good.png)
+<good>
 
   * [Solaris](http://imdb.com/title/tt0307479/)
-![good](/good.png)
+<good>
 
   * [Crouching Tiger Hidden Dragon](http://imdb.com/title/tt0190332/)
-![good](/good.png)
+<good>
 
   * [Out of Sight](http://imdb.com/title/tt0120780/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [Traffic](http://imdb.com/title/tt0181865/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [Syriana](http://imdb.com/title/tt0365737/)
-![good](/good.png)
+<good>
 
   * [The Game](http://imdb.com/title/tt0119174/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [Black Hawk Down](http://imdb.com/title/tt0265086/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [Donnie Darko](http://imdb.com/title/tt0246578/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [What's Cooking?](http://imdb.com/title/tt0197096/)
-![good](/good.png)
+<good>
 
   * [American Beauty](http://imdb.com/title/tt0169547/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [Adaptation](http://imdb.com/title/tt0268126/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [Being John Malkovich](http://imdb.com/title/tt0120601/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [Eternal Sunshine of the Spotless Mind](http://imdb.com/title/tt0338013/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [Spirited Away](http://imdb.com/title/tt0245429/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [Monsters, Inc.](http://imdb.com/title/tt0198781/)
-![good](/good.png)
+<good>
 
   * [Friday](http://imdb.com/title/tt0113118/)
-![good](/good.png)
+<good>
 
   * [South Park](http://imdb.com/title/tt0121955/)
-![good](/good.png)
+<good>
 
   * [The Matrix 1](http://imdb.com/title/tt0133093/),
   [2](http://imdb.com/title/tt0295432/),
   [3](http://imdb.com/title/tt0350934/)
-![good](/good.png)
+<good>
 
   * [Payback](http://imdb.com/title/tt0120784/)
-![good](/good.png)
+<good>
 
   * [Gattaca](http://imdb.com/title/tt0119177/)
-![good](/good.png)
+<good>
 
   * [In Her Shoes](http://imdb.com/title/tt0388125/)
-![ok](/ok.png)
+<ok>
 
   * [The Devil's Own](http://imdb.com/title/tt0118972/)
-![good](/good.png)
+<good>
 
   * [Water](http://imdb.com/title/tt0240200/)
-![good](/good.png)
+<good>
 
   * [Street Fight](http://imdb.com/title/tt0111301/)
-![ok](/ok.png)
+<ok>
 
   * [Helvetica](http://imdb.com/title/tt0847817/)
-![ok](/ok.png)
+<ok>
 
   * [Killing Emmett Young](http://imdb.com/title/tt0287425/)
-![bad](/bad.png)
+<bad>
 
   * [Gone Baby Gone](http://imdb.com/title/tt0452623/)
-![good](/good.png)
+<good>
 
   * [The Contract](http://imdb.com/title/tt0445946/)
-![ok](/ok.png)
+<ok>
 
   * [Pirates of the Carribean](http://imdb.com/title/tt0325980/),
   [At World's End](http://imdb.com/title/tt0449088/)
-![ok](/ok.png)
+<ok>
 
   * [Robot Stories](http://imdb.com/title/tt0301777/)
-![ok](/ok.png)
+<ok>
 
   * [Raising Arizona](http://imdb.com/title/tt0093822/)
-![ok](/ok.png)
+<ok>
 
   * [Killing Zoe](http://imdb.com/title/tt0110265/)
-![ok](/ok.png)
+<ok>
 
   * [Kiss the Bride](http://imdb.com/title/tt0296711/)
-![ok](/ok.png)
+<ok>
 
   * [In the Heat of the Night](http://imdb.com/title/tt0061811/)
-![good](/good.png)
+<good>
 
   * [Metropolitan](http://imdb.com/title/tt0100142/)
-![good](/good.png)
+<good>
 
   * [Burn After Reading](http://imdb.com/title/tt0887883/)
-![good](/good.png)
+<good>
 
   * [Master and Commander](http://imdb.com/title/tt0311113/)
-![ok](/ok.png)
+<ok>
 
   * [The Great Train Robbery](http://imdb.com/title/tt0079240/)
-![ok](/ok.png)
+<ok>
 
   * [The Untouchables](http://imdb.com/title/tt0094226/)
-![ok](/ok.png)
+<ok>
 
   * [Pineapple Express](http://imdb.com/title/tt0910936/)
-![ok](/ok.png)
+<ok>
 
   * [Unforgiven](http://imdb.com/title/tt0105695/)
-![good](/good.png)
+<good>
 
   * [Bella](http://imdb.com/title/tt0482463/)
-![ok](/ok.png)
+<ok>
 
   * [WALL-E](http://imdb.com/title/tt0910970/)
-![good](/good.png) ![bad](/bad.png)
+<good> <bad>
 
 <span title="well made, but made me feel so horrible i couldn't finish it">
   * [Pi](http://imdb.com/title/tt0138704/)
-![bad](/bad.png)
+<bad>
 </span>
 
   * [Before the Devil Knows You're Dead](http://imdb.com/title/tt0292963/)
-![bad](/bad.png)
+<bad>
 
   * [Falling Down](http://imdb.com/title/tt0106856/)
-![ok](/ok.png)
+<ok>
 
   * [Down to the Bone](http://imdb.com/title/tt0363579/)
-![ok](/ok.png)
+<ok>
 
   * [Jagged Edge](http://imdb.com/title/tt0089360/)
-![ok](/ok.png)
+<ok>
 
   * [Strangers on a Train](http://imdb.com/title/tt0044079/)
-![ok](/ok.png)
+<ok>
 
   * [Zero Effect](http://imdb.com/title/tt0120906/)
-![ok](/ok.png)
+<ok>
 
   * [The Fountain](http://imdb.com/title/tt0414993/)
-![bad](/bad.png)
+<bad>
 
 <span title="so so evil, so painful to watch">
   * [Alexandra's Project](http://www.imdb.com/title/tt0338706/)
-![ok](/ok.png)
+<ok>
 </span>
 
   * [Kung Fu Panda](http://imdb.com/title/tt0441773/)
-![ok](/ok.png)
+<ok>
 
   * [The Bank](http://imdb.com/title/tt0241223/)
 
@@ -2173,539 +2173,539 @@ The Girl with the Dragon Tattoo
 
 <span title="well made, but so awfully painful i almost had to stop watching, five times">
   * [Requiem for a Dream](http://imdb.com/title/tt0180093/)
-![good](/good.png) ![bad](/bad.png)
+<good> <bad>
 </span>
 
   * [Elephant](http://imdb.com/title/tt0363589/)
-![good](/good.png)
+<good>
 
   * [Gene Generation](http://imdb.com/title/tt0438052/)
-![bad](/bad.png)
+<bad>
 
   * [Indiana Jones and the Kingdom of the Crystal Skull](http://imdb.com/title/tt0367882/)
-![ok](/ok.png),
+<ok>,
   [Indiana Jones and the Raiders of the Lost Ark](http://imdb.com/title/tt0082971/)
-![good](/good.png)
+<good>
 
   * [Quills](http://imdb.com/title/tt0180073/)
-![ok](/ok.png)
+<ok>
 
   * [King of California](http://imdb.com/title/tt0388182/)
-![good](/good.png)
+<good>
 
   * [Matchstick Men](http://imdb.com/title/tt0325805/)
-![ok](/ok.png)
+<ok>
 
   * [K-Pax](http://imdb.com/title/tt0272152/)
-![ok](/ok.png)
+<ok>
 
   * [Far from Heaven](http://imdb.com/title/tt0297884/)
-![good](/good.png)
+<good>
 
   * [21 Grams](http://imdb.com/title/tt0315733/)
-![good](/good.png)
+<good>
 
   * [Vanity Fair](http://imdb.com/title/tt0241025/)
-![bad](/bad.png)
+<bad>
 
   * [The Incredibles](http://imdb.com/title/tt0317705/)
-![good](/good.png)
+<good>
 
   * [The Door in the Floor](http://imdb.com/title/tt0348593/)
-![ok](/ok.png)
+<ok>
 
   * [The Motorcycle Diaries](http://imdb.com/title/tt0318462/)
-![ok](/ok.png)
+<ok>
 
   * [The Bourne Identity](http://imdb.com/title/tt0258463/),
   [Ultimatum](http://imdb.com/title/tt0440963/),
   [Supremacy](http://imdb.com/title/tt0372183/)
-![ok](/ok.png)
+<ok>
 
   * [American Gangster](http://imdb.com/title/tt0765429/)
-![good](/good.png)
+<good>
 
   * [The Girl in the Cafe](http://imdb.com/title/tt0443518/)
-![good](/good.png)
+<good>
 
   * [Working Girls](http://imdb.com/title/tt0092238/)
-![ok](/ok.png)
+<ok>
 
   * [Jet Li's Fearless](http://imdb.com/title/tt0446059/)
-![ok](/ok.png)
+<ok>
 
   * [The Simpsons Movie](http://imdb.com/title/tt0462538/)
-![good](/good.png)
+<good>
 
   * [Pan's Labyrinth](http://imdb.com/title/tt0457430/)
-![good](/good.png)
+<good>
 
   * [Lock, Stock, and Two Smoking Barrels](http://imdb.com/title/tt0120735/)
-![good](/good.png)
+<good>
 
   * [Transformers](http://imdb.com/title/tt0418279/)
-![ok](/ok.png)
+<ok>
 
   * [Live Free or Die Hard](http://imdb.com/title/tt0337978/)
-![ok](/ok.png)
+<ok>
 
   * [The Lost Room](http://imdb.com/title/tt0830361/)
-![ok](/ok.png)
+<ok>
 
   * [Sherrybaby](http://imdb.com/title/tt0423169/)
-![good](/good.png)
+<good>
 
   * [The Departed](http://imdb.com/title/tt0407887/)
-![good](/good.png)
+<good>
 
   * [Predator](http://imdb.com/title/tt0093773/)
-![ok](/ok.png)
+<ok>
 
   * [The Queen](http://imdb.com/title/tt0436697/)
-![good](/good.png)
+<good>
 
   * [Brick](http://imdb.com/title/tt0393109/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [The Science of Sleep](http://imdb.com/title/tt0354899/)
-![ok](/ok.png)
+<ok>
 
   * [Logan's Run](http://imdb.com/title/tt0074812/)
-![ok](/ok.png)
+<ok>
 
   * [Everything Is Illuminated](http://imdb.com/title/tt0404030/)
-![bad](/bad.png)
+<bad>
 
   * [The Inside Man](http://imdb.com/title/tt0088133/)
-![bad](/bad.png)
+<bad>
 
   * [Munich](http://imdb.com/title/tt0408306/)
-![bad](/bad.png)
+<bad>
 
   * [The Thirteenth Floor](http://imdb.com/title/tt0139809/)
-![bad](/bad.png)
+<bad>
 
   * [Existenz](http://imdb.com/title/tt0120907/)
-![ok](/ok.png)
+<ok>
 
   * [Transamerica](http://imdb.com/title/tt0407265/)
-![ok](/ok.png)
+<ok>
 
   * [Miami Vice](http://imdb.com/title/tt0430357/)
-![ok](/ok.png)
+<ok>
 
   * [Kiss Kiss, Bang Bang](http://imdb.com/title/tt0373469/)
-![good](/good.png)
+<good>
 
   * [About a Boy](http://imdb.com/title/tt0276751/)
 
   * [The Squid and the Whale](http://imdb.com/title/tt0367089/)
-![good](/good.png)
+<good>
 
   * [Cars](http://imdb.com/title/tt0317219/)
-![good](/good.png)
+<good>
 
   * [A History of Violence](http://imdb.com/title/tt0399146/)
 
   * [Spellbound](http://www.imdb.com/title/tt0324041/)
-![good](/good.png)
+<good>
 
   * [The Da Vinci Code](http://imdb.com/title/tt0799993/)
-![bad](/bad.png)
+<bad>
 
   * [Mission Impossible 3](http://imdb.com/title/tt0317919/)
 
   * [Howl's Moving Castle](http://imdb.com/title/tt0347149/)
-![good](/good.png)
+<good>
 
   * [Prime](http://imdb.com/title/tt0387514/)
-![good](/good.png)
+<good>
 
   * [Thank You for Smoking](http://imdb.com/title/tt0427944/)
-![good](/good.png)
+<good>
 
   * [The Limey](http://imdb.com/title/tt0165854/)
-![ok](/ok.png)
+<ok>
 
   * [Hustle and Flow](http://imdb.com/title/tt0410097/)
-![ok](/ok.png)
+<ok>
 
   * [Good Night, and Good Luck](http://imdb.com/title/tt0433383/)
-![ok](/ok.png)
+<ok>
 
   * [V for Vendetta](http://imdb.com/title/tt0434409/)
-![ok](/ok.png)
+<ok>
 
   * [Lord of War](http://imdb.com/title/tt0399295/)
-![good](/good.png)
+<good>
 
   * [Brokeback Mountain](http://imdb.com/title/tt0388795/)
-![good](/good.png)
+<good>
 
   * [March of the Penguins](http://imdb.com/title/tt0428803/)
-![good](/good.png)
+<good>
 
   * [King Kong](http://imdb.com/title/tt0360717/)
-![ok](/ok.png)
+<ok>
 
   * [The Producers](http://www.imdb.com/title/tt0395251/)
-![good](/good.png)
+<good>
 
   * [A Simple Plan](http://imdb.com/title/tt0120324/)
 
   * [Murderball](http://imdb.com/title/tt0436613/)
 
   * [Cast Away](http://www.imdb.com/title/tt0162222/)
-![good](/good.png)
+<good>
 
   * [Eyes Wide Shut](http://imdb.com/title/tt0120663/)
-![good](/good.png)
+<good>
 
   * [Garden State](http://imdb.com/title/tt0333766/)
-![good](/good.png)
+<good>
 
   * [Hero](http://imdb.com/title/tt0299977/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [House of Blind Daggers](http://imdb.com/title/tt0385004/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [I Heart Huckabees](http://imdb.com/title/tt0356721/)
-![ok](/ok.png)
+<ok>
 
   * [LA Story](http://imdb.com/title/tt0102250/)
-![ok](/ok.png)
+<ok>
 
   * [Saved](http://imdb.com/title/tt0332375/)
-![ok](/ok.png)
+<ok>
 
   * [Swingers](http://imdb.com/title/tt0117802/)
-![good](/good.png)
+<good>
 
   * [Napoleon Dynamite](http://imdb.com/title/tt0374900/)
-![bad](/bad.png)
+<bad>
 
   * [The Terminal](http://imdb.com/title/tt0362227/)
 
   * [Unfaithful](http://imdb.com/title/tt0250797/)
-![good](/good.png)
+<good>
 
   * [Dirty Pretty Things](http://imdb.com/title/tt0301199/)
 
   * [What the @#$% Do We Know?](http://imdb.com/title/tt0399877/)
-![ok](/ok.png)
+<ok>
 
   * [Zoolander](http://imdb.com/title/tt0196229/)
-![bad](/bad.png)
+<bad>
 
   * [Team America](http://imdb.com/title/tt0372588/)
-![good](/good.png)
+<good>
 
   * [Texas Chainsaw Massacre](http://imdb.com/title/tt0324216/)
-![ok](/ok.png)
+<ok>
 
   * [The Ring](http://imdb.com/title/tt0298130/)
-![ok](/ok.png)
+<ok>
 
   * [Groove](http://imdb.com/title/tt0212974/)
-![good](/good.png)
+<good>
 
   * [The Emperor's New Groove](http://imdb.com/title/tt0120917/)
-![good](/good.png)
+<good>
 
   * [Go](http://imdb.com/title/tt0139239/)
-![good](/good.png)
+<good>
 
   * [Crash](http://www.imdb.com/title/tt0115964/)
-![ok](/ok.png)
+<ok>
 
   * [Ocean's Eleven](http://imdb.com/title/tt0240772/),
   [Ocean's Twelve](http://imdb.com/title/tt0349903/)
-![good](/good.png)
+<good>
 
   * [The Rock](http://imdb.com/title/tt0117500/)
-![good](/good.png)
+<good>
 
   * [The Life Aquatic](http://imdb.com/title/tt0362270/)
-![ok](/ok.png)
+<ok>
 
   * [Twelve Monkeys](http://www.imdb.com/title/tt0114746/)
-![good](/good.png)
+<good>
 
   * [Sneakers](http://imdb.com/title/tt0105435/)
-![good](/good.png)
+<good>
 
   * [Event Horizon](http://imdb.com/title/tt0119081/)
-![good](/good.png)
+<good>
 
   * [What Lies Beneath](http://imdb.com/title/tt0161081/)
-![ok](/ok.png)
+<ok>
 
   * [Star Wars 4, 1, 2, 3](http://imdb.com/title/tt0076759/)
 
   * [Dazed and Confused](http://imdb.com/title/tt0106677/)
-![good](/good.png)
+<good>
 
   * [Starship Troopers](http://imdb.com/title/tt0120201/)
-![ok](/ok.png)
+<ok>
 
   * [Super Troopers](http://imdb.com/title/tt0247745/)
-![good](/good.png)
+<good>
 
   * [Next Friday](http://imdb.com/title/tt0195945/)
-![ok](/ok.png)
+<ok>
 
   * [Barbershop](http://imdb.com/title/tt0303714/)
-![ok](/ok.png)
+<ok>
 
   * [Spanglish](http://imdb.com/title/tt0371246/)
 
   * [Hitch](http://imdb.com/title/tt0386588/)
-![ok](/ok.png)
+<ok>
 
   * [Rush Hour 1, 2](http://imdb.com/title/tt0266915/)
-![ok](/ok.png)
+<ok>
 
   * [A Beautiful Mind](http://imdb.com/title/tt0268978/)
-![ok](/ok.png)
+<ok>
 
   * [Serenity](http://imdb.com/title/tt0379786/)
-![ok](/ok.png)
+<ok>
 
   * [Artificial Intelligence](http://imdb.com/title/tt0212720/)
-![good](/good.png)
+<good>
 
   * [Doom](http://imdb.com/title/tt0419706/)
-![ok](/ok.png)
+<ok>
 
   * Robots (short film collection)
-![bad](/bad.png)
+<bad>
 
   * [Toy Story 1, 2](http://imdb.com/title/tt0114709/)
-![good](/good.png)
+<good>
 
   * [Ice Age](http://imdb.com/title/tt0268380/)
-![good](/good.png)
+<good>
 
   * [Spider Man](http://imdb.com/title/tt0145487/)
-![bad](/bad.png)
+<bad>
 
   * [X-Men 1, 2](http://imdb.com/title/tt0290334/)
-![ok](/ok.png)
+<ok>
 
   * [The Usual Suspects](http://imdb.com/title/tt0114814/)
-![good](/good.png)
+<good>
 
   * [Memento](http://imdb.com/title/tt0209144/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [Heathers](http://imdb.com/title/tt0097493/)
-![good](/good.png)
+<good>
 
   * [Clerks](http://www.imdb.com/title/tt0109445/)
-![ok](/ok.png)
+<ok>
 
   * [Pulp Fiction](http://imdb.com/title/tt0110912/)
-![good](/good.png)
+<good>
 
   * [Snatch](http://imdb.com/title/tt0208092/)
-![good](/good.png)
+<good>
 
   * [Fight Club](http://imdb.com/title/tt0137523/)
-![good](/good.png)
+<good>
 
   * [The Thomas Crown Affair](http://imdb.com/title/tt0155267/)
-![good](/good.png)
+<good>
 
   * [The Fast and the Furious](http://imdb.com/title/tt0232500/)
-![ok](/ok.png),
+<ok>,
   [2 Fast 2 Furious](http://imdb.com/title/tt0322259/)
-![ok](/ok.png),
+<ok>,
   [Fast and Furious: Tokyo Drift](http://imdb.com/title/tt0463985/)
-![bad](/bad.png),
+<bad>,
   [Fast & Furious 6](http://www.imdb.com/title/tt1905041/)
-![good](/good.png)
+<good>
 
   * [Gone in Sixty Seconds](http://imdb.com/title/tt0187078/)
-![good](/good.png)
+<good>
 
   * [Con Air](http://imdb.com/title/tt0118880/)
-![good](/good.png)
+<good>
 
   * [The Princess Bride](http://imdb.com/title/tt0093779/)
-![ok](/ok.png)
+<ok>
 
   * [Blue Velvet](http://imdb.com/title/tt0090756/)
-![ok](/ok.png)
+<ok>
 
   * [Alien](http://imdb.com/title/tt0078748/)
-![ok](/ok.png)
+<ok>
 
   * [The Quick and the Dead](http://imdb.com/title/tt0114214/)
-![ok](/ok.png)
+<ok>
 
   * [Bridget Jones' Diary](http://imdb.com/title/tt0243155/)
-![good](/good.png)
+<good>
 
   * [The X Files](http://www.imdb.com/title/tt0120902/)
-![ok](/ok.png)
+<ok>
 
   * [Good Will Hunting](http://imdb.com/title/tt0119217/)
-![good](/good.png)
+<good>
 
   * [Dogma](http://imdb.com/title/tt0120655/)
-![good](/good.png)
+<good>
 
   * [Best in Show](http://imdb.com/title/tt0218839/)
-![good](/good.png)
+<good>
 
   * [Phone Booth](http://imdb.com/title/tt0183649/)
-![ok](/ok.png)
+<ok>
 
   * [Speed](http://imdb.com/title/tt0111257/)
-![ok](/ok.png)
+<ok>
 
   * [Waiting for Guffman](http://imdb.com/title/tt0118111/)
-![good](/good.png)
+<good>
 
   * [A Mighty Wind](http://imdb.com/title/tt0310281/)
-![good](/good.png)
+<good>
 
   * [The Wedding Crashers](http://imdb.com/title/tt0396269/)
-![ok](/ok.png)
+<ok>
 
   * [Mr. and Mrs. Smith](http://imdb.com/title/tt0356910/)
-![ok](/ok.png)
+<ok>
 
   * [Panic Room](http://imdb.com/title/tt0258000/)
-![good](/good.png)
+<good>
 
   * [Harry Potter 1](http://imdb.com/title/tt0241527/)
-![ok](/ok.png)
+<ok>
 
   * [The Lord of the Rings 1, 2, 3](http://imdb.com/title/tt0760172/)
-![ok](/ok.png)
+<ok>
 
   * [Mulholland Drive](http://imdb.com/title/tt0166924/)
-![ok](/ok.png)
+<ok>
 
   * [Erin Brockovich](http://imdb.com/title/tt0195685/)
-![ok](/ok.png)
+<ok>
 
   * [The Hunt for Red October](http://imdb.com/title/tt0099810/)
-![good](/good.png)
+<good>
 
   * [Patriot Games](http://imdb.com/title/tt0105112/)
-![good](/good.png)
+<good>
 
   * [Sex, Lies, and Videotape](http://imdb.com/title/tt0098724/)
-![ok](/ok.png)
+<ok>
 
   * [Lost in Translation](http://imdb.com/title/tt0335266/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [Top Gun](http://imdb.com/title/tt0092099/)
-![ok](/ok.png)
+<ok>
 
   * [War of the Worlds](http://imdb.com/title/tt0407304/)
-![ok](/ok.png)
+<ok>
 
   * [Austin Powers](http://imdb.com/title/tt0118655/)
-![good](/good.png)
+<good>
 
   * [Changing Lanes](http://imdb.com/title/tt0264472/)
-![good](/good.png)
+<good>
 
   * [Jerry Maguire](http://imdb.com/title/tt0116695/)
-![good](/good.png)
+<good>
 
   * [The Firm](http://imdb.com/title/tt0106918/)
-![good](/good.png)
+<good>
 
   * [Rain Man](http://imdb.com/title/tt0095953/)
-![good](/good.png)
+<good>
 
   * [Risky Business](http://imdb.com/title/tt0086200/)
-![ok](/ok.png)
+<ok>
 
   * [Minority Report](http://imdb.com/title/tt0181689/)
-![good](/good.png)
+<good>
 
   * [Love Actually](http://imdb.com/title/tt0314331/)
-![ok](/ok.png)
+<ok>
 
   * [Bend It Like Beckham](http://imdb.com/title/tt0286499/)
-![good](/good.png)
+<good>
 
 <span title="remind me never to watch scary movies">
   * [Identity](http://imdb.com/title/tt0309698/)
-![good](/good.png) ![bad](/bad.png)
+<good> <bad>
 </span>
 
 <span title="no really, remind me never to watch scary movies">
   * [Se7en](http://imdb.com/title/tt0114369/)
-![good](/good.png) ![bad](/bad.png)
+<good> <bad>
 </span>
 
   * [Final Fantasy: The Spirits Within](http://imdb.com/title/tt0173840/)
-![ok](/ok.png)
+<ok>
 
   * [Any Given Sunday](http://imdb.com/title/tt0146838/)
-![ok](/ok.png)
+<ok>
 
   * [Gladiator](http://imdb.com/title/tt0172495/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [History of the World: Part 1](http://www.imdb.com/title/tt0082517/)
-![good](/good.png)
+<good>
 
   * [The Sixth Sense](http://imdb.com/title/tt0167404/)
-![good](/good.png)
+<good>
 
   * [Fargo](http://imdb.com/title/tt0116282/)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * [Face/Off](http://imdb.com/title/tt0119094/)
-![ok](/ok.png)
+<ok>
 
   * [School of Rock](http://imdb.com/title/tt0332379/)
-![good](/good.png)
+<good>
 
   * [The Fugitive](http://imdb.com/title/tt0106977/)
-![good](/good.png)
+<good>
 
   * [In the Line of Fire](http://www.imdb.com/title/tt0107206/)
-![ok](/ok.png)
+<ok>
 
   * [Silence of the Lambs](http://imdb.com/title/tt0102926/)
-![good](/good.png)
+<good>
 
   * [Hannibal](http://imdb.com/title/tt0212985/)
-![good](/good.png)
+<good>
 
   * [Terminator 2](http://imdb.com/title/tt0103064/)
-![good](/good.png)
+<good>
 
   * [The Shawshank Redemption](http://imdb.com/title/tt0111161/)
-![good](/good.png)
+<good>
 
   * [The Stand](http://imdb.com/title/tt0108941/)
-![good](/good.png)
+<good>
 
   * [Misery](http://imdb.com/title/tt0100157/)
-![good](/good.png)
+<good>
 
   * [When Harry Met Sally](http://imdb.com/title/tt0098635/)
-![good](/good.png)
+<good>
 
   * [Jurassic Park](http://imdb.com/title/tt0107290/)
-![good](/good.png)
+<good>
 
   * [Kissing Jessica Stein](http://imdb.com/title/tt0264761/)
-![good](/good.png)
+<good>
 
   * [Teenage Mutant Ninja Turtles](http://imdb.com/title/tt0100758/)
-![ok](/ok.png)
+<ok>
 
   * [Blade Runner](http://imdb.com/title/tt0083658/)
-![good](/good.png)
+<good>

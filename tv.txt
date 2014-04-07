@@ -5,14 +5,14 @@ tv
 Television shows I
 [want to watch](#to_watch) and
 [have watched](#watched).
-![good](/good.png) I liked,
-![ok](/ok.png) were just ok,
-![bad](/bad.png) I didn't like.
+<good> I liked,
+<ok> were just ok,
+<bad> I didn't like.
 Also see [other lists](/lists).
 
 Naturally, this isn't comprehensive - I've watched plenty of shows that aren't
 on this list - and it's biased toward my taste. If I mark a show
-![bad](/bad.png), I may still think it's good overall, but just doesn't match my
+<bad>, I may still think it's good overall, but just doesn't match my
 own personal taste, and vice versa. I tend to prefer scripted comedies and
 serial dramas.
 
@@ -47,330 +47,330 @@ _[Falling Skies](http://www.tnt.tv/series/fallingskies/)_
 
   * _[Lilyhammer](http://www.imdb.com/title/tt1958961/)_
 ([Netflix](http://netflix.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Betas](http://www.imdb.com/title/tt3012184/)_
 ([Amazon Studios](http://studios.amazon.com/))
-![bad](/bad.png)
+<bad>
 
   * _[True Detective](http://www.imdb.com/title/tt2356777/)_
 ([HBO](http://hbo.com/))
-![good](/good.png)
+<good>
 
   * _[Chuck](http://www.imdb.com/title/tt0934814/)_
 ([NBC](http://www.nbd.com/))
-![bad](/bad.png)
+<bad>
 
   * _[Arrow](http://www.cwtv.com/shows/arrow)_
 ([CW](http://www.cwtv.com/))
-![bad](/bad.png)
+<bad>
 
   * _[Alpha House](http://en.wikipedia.org/wiki/Alpha_House)_
 ([Amazon Studios](http://studios.amazon.com/))
-![good](/good.png)
+<good>
 
   * _[Scandal](http://abc.go.com/shows/scandal)_
 ([ABC](http://abc.com/))
-![bad](/bad.png)
+<bad>
 
 _[The Blacklist](http://www.imdb.com/title/tt2741602/)_
 ([NBC](http://www.nbd.com/))
-![ok](/ok.png)
+<ok>
 
 _[Orange Is The New Black](http://www.imdb.com/title/tt2372162/)_
 ([Netflix](http://netflix.com/))
-![good](/good.png)
+<good>
 
 _[The Fall](http://www.imdb.com/title/tt2294189/)_
 ([BBC](http://bbc.co.uk/))
-![ok](/ok.png)
+<ok>
 
 _[House Of Cards](http://www.imdb.com/title/tt1856010/)_
 ([Netflix](http://netflix.com/))
-![good](/good.png)
+<good>
 
 _[Homeland](http://www.sho.com/sho/homeland/home)_
 ([Showtime](http://sho.com/))
-![ok](/ok.png)
+<ok>
 
 _[Weight of the Nation](http://theweightofthenation.hbo.com/)_
 ([HBO](http://hbo.com/))
-![good](/good.png)
+<good>
 
 _[Boss](http://www.starz.com/originals/Boss/)_
 ([Starz](http://www.starz.com/))
-![good](/good.png)
+<good>
 
 _[Louie](http://www.fxnetworks.com/shows/originals/louie/)_
 ([FX](http://www.fxnetworks.com/))
-![ok](/ok.png)
+<ok>
 
 <span title="recommended by ken 12/1/2011">
 _[Sherlock](http://www.bbc.co.uk/programmes/b00t4pgh)_
 ([BBC](http://bbc.co.uk/))
-![ok](/ok.png)
+<ok>
 </span>
 
 _[The Hour](http://www.bbcamerica.com/the-hour/)_
 ([BBC America](http://www.bbcamerica.com/the-hour/))
-![good](/good.png)
+<good>
 
 _[Portlandia](http://www.ifc.com/shows/portlandia)_
 ([IFC](http://www.ifc.com/))
-![bad](/bad.png)
+<bad>
 
 _[Terra Nova](http://www.fox.com/terranova/)_
 ([Fox](http://fox.com/))
-![bad](/bad.png)
+<bad>
 
 _[Parallel Worlds, Parallel Lives](http://www.pbs.org/wgbh/nova/manyworlds/)_
 ([PBS](http://pbs.org/))
-![ok](/ok.png)
+<ok>
 
 <span title="from metacritic's best of 2010-11 list">
 _[The Walking Dead](http://www.amctv.com/shows/the-walking-dead/)_
 ([AMC](http://www.amctv.com/))
-![bad](/bad.png)
+<bad>
 </span>
 
 _[The Big C](http://www.sho.com/thebigc)_
 ([Showtime](http://sho.com/))
-![good](/good.png)
+<good>
 
 _[Modern Family](http://abc.go.com/shows/modern-family)_
 ([ABC](http://abc.com/))
-![good](/good.png)
+<good>
 
 <span title="on hbo go w/gina">
 _[Treme](http://www.hbo.com/treme/)_
 ([HBO](http://hbo.com/))
-![good](/good.png)
+<good>
 </span>
 
 <span title="at gina's, snippets here and there">
 _[United States of Tara](http://www.sho.com/tara)_
 ([Showtime](http://sho.com/))
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="recommended by matt ashcraft; watched first episode w/gina, 2/6/2011">
 _[Lights Out](http://www.fxnetworks.com/shows/originals/lightsout/)_
 ([FX](http://www.fxnetworks.com/))
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="netflix, sf apt 12/17/2010">
 _[Satisfaction](http://showtime.com.au/showcase/show/13048)_
 ([Showtime Australia](http://showtime.com.au/showcase/show/13048))
-![good](/good.png)
+<good>
 </span>
 
 <span title="hulu, sf apt 10/2010">
 _[Terriers](http://www.fxnetworks.com/shows/originals/terriers/)_
 ([FX](http://www.fxnetworks.com/))
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="netflix, sf apt 6/19/2010">
 _[Worst Week](http://www.cbs.com/primetime/worst_week/)_
 ([CBS](http://cbs.com/))
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="orkut loves this show. i don't get it. so angry!">
 _[Archer](http://www.fxnetworks.com/shows/originals/archer/)_
 ([FX](http://www.fxnetworks.com/))
-![bad](/bad.png)
+<bad>
 </span>
 
 _[State of Play](http://www.bbc.co.uk/drama/stateofplay/)_
 ([BBC](http://bbc.co.uk/))
-![bad](/bad.png)
+<bad>
 
 <span title="first three episodes on hulu, 4/11/2010">
 _[Justified](http://www.fxnetworks.com/shows/originals/justified/)_
 ([FX](http://www.fxnetworks.com/))
-![ok](/ok.png)
+<ok>
 </span>
 
 _[Errol Morris' First Person](http://www.errolmorris.com/television/)_
 ([Bravo](http://www.bravotv.com/)/[IFC](http://www.ifc.com/))
-![ok](/ok.png)
+<ok>
 
 <span title="because steven soderbergh directed it">
 _[K Street](http://en.wikipedia.org/wiki/K_Street_\(TV_series\))_
 ([HBO](http://hbo.com/))
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="gina introduced me to it">
 _[Men of a Certain Age](http://www.tnt.tv/series/menofacertainage/)_
 ([TNT](http://www.tnt.tv/))
-![good](/good.png)
+<good>
 </span>
 
 <span title="...ok, not necessarily bad, just very much not my thing">
 [Ken Burns](http://www.pbs.org/kenburns/)'s
 _[The National Parks](http://www.pbs.org/nationalparks/)_
 ([PBS](http://pbs.org/))
-![bad](/bad.png)
+<bad>
 </span>
 
 _[Jersey Shore](http://www.mtv.com/shows/jersey_shore/series.jhtml)_
 ([MTV](http://www.mtv.com/shows/jersey_shore/series.jhtml))
-![good](/good.png)
+<good>
 
 _[The Shield](http://www.fxnetworks.com/shows/originals/the_shield/)_
 ([FX](http://www.fxnetworks.com/))
-![ok](/ok.png)
+<ok>
 
 _[Cougar Town](http://abc.go.com/shows/cougar-town)_
 ([ABC](http://abc.com/))
-![bad](/bad.png)
+<bad>
 
 _[FlashForward](http://abc.go.com/shows/flash-forward)_
 ([ABC](http://abc.com/))
-![bad](/bad.png)
+<bad>
 
 _[Breaking Bad](http://www.amctv.com/originals/breakingbad/)_
 ([AMC](http://www.amctv.com/))
-![good](/good.png)
+<good>
 
 _[Kings](http://www.nbc.com/Kings/)_
 ([NBC](http://www.nbd.com/))
-![ok](/ok.png)
+<ok>
 
 _[Intervention](http://www.aetv.com/intervention/)_
 ([A&E](http://www.aetv.com/))
-![bad](/bad.png)
+<bad>
 
 _[Big Bang Theory](http://www.cbs.com/primetime/big_bang_theory/)_
 ([CBS](http://cbs.com/))
-![ok](/ok.png)
+<ok>
 
 _[Generation Kill](http://hbo.com/generationkill)_
 ([HBO](http://hbo.com/))
-![good](/good.png)
+<good>
 
 _[Time Warp](http://dsc.discovery.com/tv/time-warp/time-warp.html)_
 ([Discovery](http://dsc.discovery.com/))
-![bad](/bad.png)
+<bad>
 
 _[Dollhouse](http://fox.com/dollhouse)_
 ([Fox](http://fox.com/))
-![bad](/bad.png)
+<bad>
 
 _[Flight of the Conchords](http://hbo.com/conchords/)_
 ([HBO](http://hbo.com/))
-![ok](/ok.png)
+<ok>
 
 _[Sons of Anarchy](http://www.fxnetworks.com/shows/originals/soa/)_
 ([FX](http://www.fxnetworks.com/))
-![good](/good.png)
+<good>
 
 _[City of Men/Cidade dos Homens](http://en.wikipedia.org/wiki/City_of_Men)_
 ([Globo](http://redeglobo.globo.com/))
-![good](/good.png)
+<good>
 
 _[Rome](http://hbo.com/rome)_
 ([HBO](http://hbo.com/))
-![good](/good.png)
+<good>
 
 _[The Wire](http://hbo.com/thewire/)_
 ([HBO](http://hbo.com/))
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
 _[Law and Order](http://www.nbc.com/Law_and_Order/)_
 ([NBC](http://nbc.com/))
-![ok](/ok.png)
+<ok>
 
 _[Commander in Chief](http://en.wikipedia.org/wiki/Commander_in_Chief_\(television\))_
 ([ABC](http://abc.com/))
-![ok](/ok.png)
+<ok>
 
 _[Jackass](http://jackassworld.com/)_
 ([MTV](http://mtv.com/))
-![good](/good.png)
+<good>
 
 _[Arrested Development](http://en.wikipedia.org/wiki/Arrested_Development_\(TV_series\))_
 ([Fox](http://fox.com/))
-![good](/good.png)
+<good>
 
 _[South Park](http://www.southparkstudios.com/)_
 ([Comedy Central](http://www.comedycentral.com/))
-![good](/good.png)
+<good>
 
 _[Homicide: Life on the Streets](http://en.wikipedia.org/wiki/HLOTS)_
 ([NBC](http://nbc.com/))
-![good](/good.png)
+<good>
 
 _[The Lost Room](http://www.scifi.com/lostroom/)_
 ([Sci Fi](http://www.scifi.com/))
-![ok](/ok.png)
+<ok>
 
 [Dr. Horrible's Sing-Along Blog](http://drhorrible.com/)
-![ok](/ok.png)
+<ok>
 
 _[Mad Men](http://www.amctv.com/originals/madmen/)_
 ([AMC](http://amctv.com/))
-![good](/good.png)
+<good>
 
 _[This American Life](http://www.sho.com/site/thisamericanlife)_
 ([Showtime](http://sho.com/))
-![ok](/ok.png)
+<ok>
 
 _[Dexter](http://www.sho.com/site/dexter)_
 ([Showtime](http://sho.com/))
-![bad](/bad.png)
+<bad>
 
 _[Brotherhood](http://www.sho.com/site/brotherhood)_
 ([Showtime](http://sho.com/))
-![good](/good.png)
+<good>
 
 _[Firefly](http://www.fireflywiki.org/)_
 ([Fox](http://fox.com/))
-![good](/good.png)
+<good>
 
 _[The Apprentice](http://www.nbc.com/nbc/The_Apprentice/)_
 ([NBC](http://nbc.com/))
-![ok](/ok.png)
+<ok>
 
 _[Identity](http://en.wikipedia.org/wiki/Identity_\(game_show\))_
 ([NBC](http://nbc.com/))
-![bad](/bad.png)
+<bad>
 
 _[Drawn Together](http://www.comedycentral.com/shows/drawn_together/index.jhtml)_
 ([Comedy Central](http://www.comedycentral.com/))
-![good](/good.png)
+<good>
 
 _[Lost](http://lost.abc.com/)_
 ([ABC](http://abc.com/))
-![ok](/ok.png)
+<ok>
 
 _[The Office](http://nbc.com/theoffice)_
 ([BBC](http://bbc.co.uk/) and [NBC](http://nbc.com/))
-![good](/good.png)
+<good>
 
 _[Weeds](http://www.sho.com/site/weeds)_
 ([Showtime](http://sho.com/))
-![good](/good.png)
+<good>
 
 _[Jericho](http://www.cbs.com/primetime/jericho/)_
 ([CBS](http://cbs.com/))
-![bad](/bad.png)
+<bad>
 
 _[Battlestar Galactica](http://www.scifi.com/battlestar/)_
 ([Sci Fi](http://www.scifi.com/))
-![ok](/ok.png)
+<ok>
 
 _[Brothers and Sisters](http://abc.go.com/primetime/brothersandsisters/)_
 ([ABC](http://abc.com/))
-![ok](/ok.png)
+<ok>
 
 _[30 Rock](http://nbc.com/30_Rock/)_
 ([NBC](http://nbc.com/))
-![good](/good.png)
+<good>
 
 _[The Simpsons](http://www.thesimpsons.com/)_
 ([Fox](http://fox.com/))
-![good](/good.png)
+<good>

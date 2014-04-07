@@ -9,86 +9,86 @@ with [Clayton](http://www.facebook.com/profile.php?id=508935265),
 [Lauren](http://www.facebook.com/profile.php?id=692201379).
 I've also folded them into my [beer page](/beer).
 
-![good](/good.png) means I liked it,
-![ok](/ok.png) means it was just ok,
-![bad](/bad.png) means I didn't like it.
+<good> means I liked it,
+<ok> means it was just ok,
+<bad> means I didn't like it.
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [BridgePort](http://www.bridgeportbrew.com/)
 [Hop Czar](http://beeradvocate.com/beer/profile/43/43886)
 (double IPA)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Firehouse Grill & Brewery](http://www.firehousegrill.com/)
 [Palo Alto Brewing Barely Legal Coconut Porter](http://beeradvocate.com/beer/profile/12788/56306)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Green Flash](http://greenflashbrew.com/)
 [Le Freak](http://greenflashbrew.com/taproom.html#lefreak)
 (Belgian IPA)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Koningshoeven](http://www.latrappe.nl/content.asp?l=EN)
 [Dubbel](http://www.latrappe.nl/content.asp?m=M7&s=P17&l=EN)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Devils Canyon](http://devilscanyonbrewery.com/)
 [Full Boar Scotch Ale](http://beeradvocate.com/beer/profile/4950/38878)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Moylan's](http://www.moylans.com/)
 [Moylander Double IPA](http://beeradvocate.com/beer/profile/870/3439)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010; too sweet!">
 [Browar Okocim](http://www.okocim.pl/)
 [Porter](http://beeradvocate.com/beer/profile/568/1504)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010; too sweet!">
 [Pivovar Náchod](http://www.primator.cz/)
 [Primátor Double Bock](http://beeradvocate.com/beer/profile/707/14523)
-![bad](/bad.png)
+<bad>
 </span>
 
 <!-- couldn't find this one :(
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 Buck Bean
 Red
-![ok](/ok.png),
+<ok>,
 Black
-![ok](/ok.png)
+<ok>
 </span>
 -->
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Uncommon](http://www.uncommonbrewers.com/)
 [Baltic Porter](http://beeradvocate.com/beer/profile/17962/47631)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Mendocino](http://mendobrew.com/)
 IPA (don't know which one :( )
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Abita](http://www.abita.com/)
 [Jockamo IPA](http://beeradvocate.com/beer/profile/3/39390)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
@@ -100,19 +100,19 @@ IPA (don't know which one :( )
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Cold Spring](http://www.coldspringbrewery.com/)
 [John Henry 3 Lick Spiker Ale](http://beeradvocate.com/beer/profile/892/46984)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Goose Island](http://www.gooseisland.com/)
 [Sofie](http://beeradvocate.com/beer/profile/1146/48824) (saison)
-![good](/good.png),
+<good>,
 [Pere Jacques](http://beeradvocate.com/beer/profile/1146/16807) (dubbel)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Ale Industries](http://aleindustries.com/)
 [Bill Brand Brown](http://aleindustries.com/our_beer)
-![good](/good.png)
+<good>
 </span>

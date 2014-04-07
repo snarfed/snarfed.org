@@ -4,14 +4,14 @@ beer
 
 [Beer I'd like to try](#to_try) and
 [beer I've tried](#tried).
-![good](/good.png) I liked,
-![ok](/ok.png) were just ok,
-![bad](/bad.png) I didn't like.
+<good> I liked,
+<ok> were just ok,
+<bad> I didn't like.
 Also see [wine](/wine), [chocolate](/chocolate), and
 [other lists](/lists).
 
 Naturally, this isn't comprehensive - I've tried others that aren't listed
-here - and it's biased toward my taste. If I mark a beer <nobr>![bad](/bad.png),</nobr>
+here - and it's biased toward my taste. If I mark a beer <nobr><bad>,</nobr>
 I may still think it's good overall, but just doesn't match my own personal
 taste, and vice versa. I tend to prefer IPAs and darker beers like stouts and
 porters. I don't mind lighter ales and lagers, but some, like lambics, I'm not a
@@ -114,541 +114,541 @@ Crazy Donkey IPA
 <span title="dinner w/sam glassenberg and mike mandel, 3/20/2014">
 [Birra Del Borgo](http://www.birradelborgo.it/en/)
 [Perle Ai Porci](http://www.beeradvocate.com/beer/profile/14046/81154/) (English stout)
-![good](/good.png)
+<good>
 </span>
 
 <span title="from dan meredith, 3/10/2014">
 [Einstök Ölgerð](http://einstokbeer.com/)
 [Icelandic White Ale](http://www.beeradvocate.com/beer/profile/27839/77315/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 12/1/2013">
 [Boulevard](http://www.boulevard.com)/[Sierra Nevada](http://www.sierranevada.com/)
 [Terra Incognita](http://beeradvocate.com/beer/profile/423/82570)
 (wild ale, aged in whiskey barrels)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="barrel aged beer fest w/ryan graciano, 11/9/2013">
 [EJ Phair](http://www.ejphair.com/)
 [Shorty's Revenge](http://beeradvocate.com/beer/profile/862/17553)
 (american ale, aged in whiskey barrels)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="barrel aged beer fest w/ryan graciano, 11/9/2013">
 [Schooner's](http://www.schoonersbrewery.com/)
 Dead Reckoning Baltic Porter
 (aged in bourbon barrels)
-![good](/good.png)
+<good>
 </span>
 
 <span title="barrel aged beer fest w/ryan graciano, 11/9/2013">
 [Glacier](http://glacierbrewhouse.com/)
 [Hungarian Oak Aged Porter](http://glacierbrewhouse.com/introducing-hungarian-oak-aged-porter/)
 (aged in Hungarian oak barrels)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="anniversary dinner at sushi ran, 10/11/2013">
 [Kiuchi](http://www.kodawari.cc/)
 [Hitachino Nest Extra High (XH)](http://beeradvocate.com/beer/profile/697/7728)
 (Belgian strong ale aged in sake casks)
-![bad](/bad.png)
+<bad>
 </span>
 
 [Brouwerij Huyghe](http://www.delirium.be/)
 [Delirium Tremens](http://beeradvocate.com/beer/profile/180/1385)
-![good](/good.png)
+<good>
 
 <span title="drinks w/greg stein at mikkeller bar in SF, 10/10/2013">
 [Lervig](http://www.lervig.no/)
 [Rye IPA](http://beeradvocate.com/beer/profile/18604/82350)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="grove for dinner, 9/26/2013">
 [Ballast Point](http://www.ballastpoint.com/)
 [Big Eye IPA](http://beeradvocate.com/beer/profile/199/709)
-![good](/good.png)
+<good>
 </span>
 
 <span title="happy hr w/sameer at B in yerba buena">
 [Uinta](http://www.uintabrewing.com/)
 [Baba Black Lager](http://beeradvocate.com/beer/profile/1416/73965)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="toronto for marc/kristen's wedding, 6/23/2013">
 [Muskoka](http://www.muskokabrewery.com/)
 [Mad Tom IPA](http://beeradvocate.com/beer/profile/661/69458)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="toronto for marc/kristen's wedding, 6/23/2013">
 [Flying Monkeys](http://www.theflyingmonkeys.ca/)
 [Smashbomb Atomic IPA](http://beeradvocate.com/beer/profile/10796/58770)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="toronto for marc/kristen's wedding, 6/23/2013">
 [Mill Street](http://toronto.millstreetbrewpub.ca/)
 [Cobblestone Stout](http://beeradvocate.com/beer/profile/3760/33464)
-![good](/good.png),
+<good>,
 [Tankhouse](http://beeradvocate.com/beer/profile/3760/10365) (pale ale)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="at nojo w/matt and kristin before david simon/david chang talk, 5/30/2013">
 [Pretty Things](http://prettybeer.com/)
 [Fluffy White Rabbits](http://beeradvocate.com/beer/profile/18371/57088) (triple)
-![ok](/ok.png)
+<ok>
 </span>
 
 [Rhinelander](http://rhinelanderbrewery.com/)
 Boatswain
 [American IPA](http://beeradvocate.com/beer/profile/27642/82249)
-![bad](/bad.png),
+<bad>,
 [Double IPA](http://beeradvocate.com/beer/profile/27642/88082),
 [Chocolate Stout](http://beeradvocate.com/beer/profile/27642/85598)
-![ok](/ok.png)
+<ok>
 
 <span title="dublin, on scotland/ireland cruise, may 2013">
 [Carlow](http://www.carlowbrewing.com/)
 [O'Hara's Irish Stout](http://beeradvocate.com/beer/profile/646/1751)
-![good](/good.png)
+<good>
 </span>
 
 <span title="dublin, on scotland/ireland cruise, may 2013">
 [Shepherd Neame](http://www.shepherdneame.co.uk/)
 [Double Stout](http://beeradvocate.com/beer/profile/138/67137)
-![good](/good.png)
+<good>
 </span>
 
 <span title="dublin, on scotland/ireland cruise, may 2013">
 [Whitewater](http://beeradvocate.com/beer/profile/3415)
 [Belfast Black](http://beeradvocate.com/beer/profile/3415/53327)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="glasgow, on scotland/ireland cruise, may 2013">
 [Innis & Gunn](http://www.innisandgunn.com/)
 [Winter Treacle Porter](http://beeradvocate.com/beer/profile/10272/90264)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="inverarray, on scotland/ireland cruise, may 2013">
 [Orkney](http://www.sinclairbreweries.co.uk/)
 [Dragonhead Stout](http://beeradvocate.com/beer/profile/118/5781)
-![good](/good.png),
+<good>,
 Ale 9 (IPA)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="inverarray, on scotland/ireland cruise, may 2013">
 [Highland](http://www.highlandbrewingcompany.co.uk/)
 [Scapa Special](http://beeradvocate.com/beer/profile/16324/67847) (pale ale)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="dinner at lazy dog in tustin w/carole (gina's aunt), 4/5/2013">
 [Bayhawk](http://www.bayhawkales.com/)
-Red ![ok](/ok.png),
+Red <ok>,
 [Chocolate Porter](http://beeradvocate.com/beer/profile/2651/6499)
-![good](/good.png)
+<good>
 </span>
 
 <span title="caskhouse on 24th w/dan peterson, 3/17/2013">
 [Heretic](http://www.hereticbrewing.com/)
 [Evil Twin Red](http://beeradvocate.com/beer/profile/25960/70945)
-![ok](/ok.png),
+<ok>,
 [Shallow Grave Porter](http://beeradvocate.com/beer/profile/25960/76377)
-![good](/good.png)
+<good>
 </span>
 
 <span title="la trappe after real escape game, 1/25/2013">
 [Brasserie de l'Abbaye du Val-Dieu](http://www.val-dieu.com/)
 [Val-Dieu Grand Cru](http://beeradvocate.com/beer/profile/826/34084) (quadrupel)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="la trappe after real escape game, 1/25/2013">
 [Brouwerij De Block](http://www.satanbeer.com/)
 [Satan Red](http://beeradvocate.com/beer/profile/2589/6569)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="la trappe after real escape game, 1/25/2013">
 [Brouwerij Alken-Maes](http://maes.be/)
 [Grimbergen Dubbel](http://beeradvocate.com/beer/profile/436/1496)
-![good](/good.png)
+<good>
 </span>
 
 <span title="la trappe after real escape game, 1/25/2013">
 [Kissmeyer](http://beeradvocate.com/beer/profile/26864)
 [No. 7 Honey Porter](http://beeradvocate.com/beer/profile/26864/72947)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 1/21/2013">
 [Third Street Aleworks](http://www.thirdstreetaleworks.com/)
 [Bombay Rouge](http://beeradvocate.com/beer/profile/3776/50048) (red IPA)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="moving into new house, 12/29/2012">
 [Double Take](http://www.doubletakebrewing.com/)
 [Amber](http://beeradvocate.com/beer/profile/25882/70552)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home 10/31/2012">
 [Triple Voodoo](http://www.triplevoodoobrewing.com/)
 [Grand Cru](http://beeradvocate.com/beer/profile/25032/81626) (Belgian pale ale)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="home 11/11/2012">
 [Inception](http://beeradvocate.com/beer/profile/25032/67496) (Belgian ale)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="at piccino with kieran, 10/26/2012">
 [Dying Vines](http://www.dyingvines.com/)
 [Old Brick Bitter](http://www.dyingvines.com/our-beers.php)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 9/1/2012">
 [Flying Dog](http://www.flyingdogales.com/)
 [Pearl Necklace Oyster Stout](http://beeradvocate.com/beer/profile/68/75364)
-![good](/good.png)
+<good>
 </span>
 
 <span title="dsg at zuni cafe, 8/7/2012">
 [Brouwerij Verhaeghe](http://www.proximedia.com/web/breweryverhaeghe.html)
 [Duchesse De Bourgogne](http://beeradvocate.com/beer/profile/641/1745)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="dinner at abbott's cellar w/siraj and malorie before kaskade show">
 [Pacific Brewing Laboratories](http://pacbrewlab.blogspot.com/)
 [Squid Ink](http://beeradvocate.com/beer/profile/27800/76123) (black IPA)
-![good](/good.png)
+<good>
 </span>
 
 <span title="westvleteren party, 7/22/2012">
 [Westvleteren](http://www.sintsixtus.be/)
 [12](http://beeradvocate.com/beer/profile/313/1545)
 (see the [blog post](/2012-07-22_westvleteren_with_friends))
-![good](/good.png)
+<good>
 </span>
 
 <span title="westvleteren party, 7/22/2012">
 [The Bruery](http://www.thebruery.com/)
 [White Oak](http://beeradvocate.com/beer/profile/16866/51069)
-![good](/good.png)
+<good>
 </span>
 
 <span title="westvleteren party, 7/22/2012">
 [Malheur](http://www.malheur.be/)
 [Brut Noir](http://beeradvocate.com/beer/profile/669/16487)
-![good](/good.png)
+<good>
 </span>
 
 <span title="venice vacation w/gina and vanessa, 6/29/2012">
 [Castello di Udine](http://www.birracastello.it/?lang=en)
 Lager Rossa
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="cafe in oia, santorini, on greek sailing vacation w/family, 6/26/2012">
 [Santorini Brewing](http://www.santorinibrewingcompany.gr/company_en.html)
 Yellow Donkey IPA
-![ok](/ok.png),
+<ok>,
 Red Donkey IPA
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="greek sailing vacation w/family, 6/25/2012">
 [Pivovar Velké Popovice](http://www.beer-kozel.cz/)
 Kozel Czerny Velkopopovicky (dark)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="greek sailing vacation w/family, 6/24/2012">
 [Bayerische Staatsbrauerei Weihenstephan](http://www.brauerei-weihenstephan.de/)
 [Hefe-Weissbier](http://beeradvocate.com/beer/profile/252/731)
-![good](/good.png)
+<good>
 </span>
 
 <span title="greek sailing vacation w/family, 6/23/2012">
 [Paulaner](http://www.paulaner.de/)
 [Hefe-Weizbier](http://beeradvocate.com/beer/profile/124/1256)
-![good](/good.png)
+<good>
 </span>
 
 <span title="greek sailing vacation w/family, 6/22/2012">
 [Septem](http://www.septem.gr/)
 [Monday's Pilsner](http://beeradvocate.com/beer/profile/25940/75992)
-![ok](/ok.png),
+<ok>,
 Thursday's Red Ale
-![good](/good.png),
+<good>,
 Friday's Pale Ale
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="greek sailing vacation w/family, 6/20/2012">
 [Mythos](http://www.mythosbrewery.gr/)
 [Helenic Lager](http://beeradvocate.com/beer/profile/1084/3245)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="fathers day at cloud house, 6/17/2012">
 [Black Toad](http://beeradvocate.com/beer/profile/2250)
 [Dark Ale](http://beeradvocate.com/beer/profile/2250/5729)
-![good](/good.png)
+<good>
 </span>
 
 <span title="dinner at farina w/kieran and dan, 6/8/2012">
 [Alina](http://www.orodimilano.com/index.php/benvenuti/)
 [Oro Do Milano Doppio Malto](http://beeradvocate.com/beer/profile/22573/57586)
-![good](/good.png)
-![good](/good.png)
+<good>
+<good>
 </span>
 
 <span title="dinner at farina w/kieran and dan, 6/8/2012">
 [Pausa Cafe](http://www.pausacafe.org/)
 [Tosta](http://beeradvocate.com/beer/profile/21104/55257)
-![good](/good.png)
+<good>
 </span>
 
 <span title="dinner at k's w/gina, 5/22/2012">
 [Asahi](http://www.asahibeer.co.jp/)
 [Black](http://beeradvocate.com/beer/profile/716/3969) (stout)
-![good](/good.png)
+<good>
 </span>
 
 <span title="dinner w/jane and derek at perilla in nyc, 4/27/2012">
 [Founders](http://www.foundersbrewing.com/)
 [Porter](http://beeradvocate.com/beer/profile/1199/7348)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="lunch w/edward at the little owl in nyc, 4/24/2012">
 [Sixpoint](http://www.sixpointcraftales.com/)
 [Sweet Action](http://beeradvocate.com/beer/profile/10607/22193) (IPA)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="happy hour at the W w/clara etc, 3/16/2012">
 [Lost Coast](http://www.lostcoast.com/)
 [8 Ball Stout](http://beeradvocate.com/beer/profile/256/5045)
-![good](/good.png),
+<good>,
 </span>
 <span title="tgif in sfo office, 3/30/2011">
 [Alleycat](http://beeradvocate.com/beer/profile/256/4923) (amber)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="tgif in sfo, 6/1/2012">
 [Indica](http://beeradvocate.com/beer/profile/256/1670) (IPA)
-![bad](/bad.png),
+<bad>,
 </span>
 [Downtown Brown](http://beeradvocate.com/beer/profile/256/717)
-![ok](/ok.png),
+<ok>,
 [Great White](http://beeradvocate.com/beer/profile/256/1669)
-![ok](/ok.png)
+<ok>
 
 <span title="dinner at anchor & hope w/dan and catherine before d&o jungle party, 2/4/2012">
 [Porterhouse](http://www.porterhousebrewco.com/)
 [Oyster Stout](http://beeradvocate.com/beer/profile/2243/5686)
-![good](/good.png)
+<good>
 </span>
 
 <span title="lunch at arcadia farms in phoenix, az with gina's friends, 12/23/2011">
 [Prescott](http://www.prescottbrewingcompany.com/)
 [Ponderosa IPA](http://beeradvocate.com/beer/profile/1599/4429)
-![ok](/ok.png)
+<ok>
 </span>
 
 [New Belgium](http://www.newbelgium.com/)
 [Fat Tire](http://beeradvocate.com/beer/profile/192/607)
 (amber)
-![ok](/ok.png)
+<ok>
 
 <span title="dinner at monk's kettle w/gina and dan, 12/7/2011">
 [Brouwerij Het Anker](http://www.hetanker.be/)
 [Gouden Carolus Noël](http://beeradvocate.com/beer/profile/1534/7286)
 (Belgian dark)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="nathan's luvocracy holiday party, 12/3/2011">
 [World Brews](http://www.wineryexchange.com/beer.asp)
 [Four In Hand IPA](http://beeradvocate.com/beer/profile/21092/70483)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="gracias madre w/gina, krista, adam, emily 11/11/2011">
 [Bison](http://www.bisonbrew.com/)
 [Chocolate Stout](http://beeradvocate.com/beer/profile/609/2420)
-![good](/good.png)
+<good>
 </span>
 
 <span title="alexis and david's halloween party 10/29/2011">
 [Fort Collins](http://www.fortcollinsbrewery.com/)
 [Incredible Hop #1](http://beeradvocate.com/beer/profile/6372/66869) (black IPA)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 10/15/2011">
 [Rahr & Sons](http://www.rahrbrewing.com/)
 [Ass Kisser Double IPA](http://beeradvocate.com/beer/profile/9969/59622)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 10/4/2011">
 [Hermitage Brewing](http://hermitagebrewing.com/)
 [Ale of the Hermit](http://beeradvocate.com/beer/profile/23459/61459)
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="home 10/11/2011">
 [Maltopia Double Scotch Ale](http://beeradvocate.com/beer/profile/23459/63849)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home 9/24/2011">
 [Hermitage](http://hermitagebrewing.com/)
 [Irondale "Swanton Rea's"](http://irondalebeer.com/stout.html)
 [Double Chocolate Stout](http://beeradvocate.com/beer/profile/23459/65084/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home 9/15/2011">
 [Coronado](http://www.coronadobrewingcompany.com/)
 [Idiot Ipa](http://beeradvocate.com/beer/profile/2447/36748)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt 7/17/2011">
 [Great Divide](http://greatdivide.com/)
 [Yeti Imperial Stout](http://beeradvocate.com/beer/profile/158/12013)
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="home 10/21/2012">
 [Titan IPA](http://beeradvocate.com/beer/profile/158/11922)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt 6/5/2011">
 [Midnight Sun](http://midnightsunbrewing.com/)
 [Arctic Rhino Coffee Porter](http://beeradvocate.com/beer/profile/385/23269)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt pool w/dan 5/19/2011">
 [Emelisse](http://www.emelisse.nl/)
 [Espresso Stout](http://beeradvocate.com/beer/profile/11890/55742)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="sf apt w/gina 5/30/2011">
 [Imperial Russian Stout](http://beeradvocate.com/beer/profile/11890/55180)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt pool w/dan 5/19/2011">
 [Valeir Extra](http://beeradvocate.com/beer/profile/3463/50435) (Belgian IPA)
-![good](/good.png)
+<good>
 </span>
 
 <span title="work tgif 5/13/2011">
 [Full Sail](http://www.fullsailbrewing.com/)
 [IPA](http://beeradvocate.com/beer/profile/5316/942)
-![good](/good.png),
+<good>,
 </span>
 <span title="sf apt 6/30/2011">
 [Amber](http://beeradvocate.com/beer/profile/5316/213)
-![good](/good.png)
+<good>
 </span>
 
 <span title="dsg at bar bambino 5/11/2011">
 [Brùton](http://www.bruton.it/)
 [Barley Ale](http://beeradvocate.com/beer/profile/15939/45734)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="at gina's 4/27/2011; she bought it for me for vday">
 [Victory](http://www.victorybeer.com/)
 [V-Twelve (quadrupel)](http://beeradvocate.com/beer/profile/345/8998)
-![good](/good.png)
+<good>
 </span>
 
 <span title="saw at anchor and hope during dsg, 4/20/2010,
  gina got it for me for vday 2011, drank 4/16/2011. gina says yellow">
 [Birrificio Le Baladin](http://www.baladin.it/)
 [Super Baladin](http://www.baladin.it/birra/?id_pg=53)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="at neoteca w/gina, 4/8/2011">
 [Fuller's](http://www.fullers.co.uk/)
 [London Porter](http://beeradvocate.com/beer/profile/71/221)
-![good](/good.png)
+<good>
 </span>
 <span title="dinner at monk's kettle w/gina and dan, 12/7/2011">
 (with nitrogen
-![good](/good.png))
+<good>)
 </span>
 
 <span title="dinner at monk's kettle w/gina, keith bauman, and roz, 3/15/2011">
 [Brouwerij Smisje](http://www.smisje.be/)
 [Catherine The Great](http://beeradvocate.com/beer/profile/322/42001)
   (imperial stout)
-![good](/good.png)
+<good>
 </span>
 
 <span title="dinner at monk's kettle w/gina, keith bauman, and roz, 3/15/2011">
 [Brasserie St. Feuillien](http://www.st-feuillien.com/)
 [Triple](http://beeradvocate.com/beer/profile/2874/7456)
-![ok](/ok.png)
+<ok>
 </span>
 
 [Redhook](http://www.redhook.com/)
 [ESB](http://beeradvocate.com/beer/profile/1330/1119/)
-![ok](/ok.png),
+<ok>,
 <span title="google tgif 3/11/2011">
 [Long Hammer IPA](http://beeradvocate.com/beer/profile/18134/34688)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="">
 [Echigo](http://www.echigo-beer.jp/)
 [Stout](http://beeradvocate.com/beer/profile/5046/10850)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="saw at anchor and hope during dsg, 4/20/2010. gina bought for me
              for vday 2011, drank 3/3/2011">
 [Hair Of The Dog](http://www.hairofthedog.com/)
 [Adam](http://www.hairofthedog.com/beers.html)
-![good](/good.png)
+<good>
 </span>
 
 <span title="bought at city beer w/walter before district 9 at metreon, 8/19/2009,
              but didn't drink. gina bought for me for vday 2011, drank 2/26/2011">
 [Avery](http://www.averybrewing.com/)
 ["The Czar" Imperial Stout](http://beeradvocate.com/beer/profile/30/7850)
-![good](/good.png),
+<good>,
 </span>
 <span title="lunch w/quip at mikkeller bar, 3/21/2014">
 [Tweak](http://www.beeradvocate.com/beer/profile/30/56199/)
-![ok](/ok.png) (16% ABV!)
+<ok> (16% ABV!)
 </span>
 
 <span title="gina got it for me for vday 2011, drank 2/24/2011">
 [Ballast Point](http://www.ballastpoint.com/)
 [Victory At Sea Imperial Porter](http://beeradvocate.com/beer/profile/199/48505)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="recommended by jj furman; from gina for vday; at gina's, 2/19/2011">
@@ -659,615 +659,615 @@ Friday's Pale Ale
 <span title="warren's bday dinner at walzwerk, 12/4/2010">
 [Spaten](http://www.spatenbraeu.de/)
 [Optimator](http://beeradvocate.com/beer/profile/142/99) (doppelbock)
-![good](/good.png)
+<good>
 </span>
 
 <span title="watching black swan at kabuki theater w/gina, cynthia, and fiona, 12/3/2010">
 [Fish Brewing](http://www.fishbrewing.com/)
 [Fish Tale IPA](http://beeradvocate.com/beer/profile/684/7219)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt w/gina 11/28/2010">
 [Dick's](http://www.dicksbeer.com/)
 [Double Diamond Winter Ale](http://beeradvocate.com/beer/profile/1345/14062)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="bay area brew fest 2010 at fort mason w/gina">
 [Firestone Walker](http://www.firestonewalker.com/)
 [Union Jack IPA](http://beeradvocate.com/beer/profile/2210/38180)
-![good](/good.png),
+<good>,
 </span>
 <span title="sf apt 11/29/2010">
 [Velvet Merlin Oatmeal Stout](http://beeradvocate.com/beer/profile/2210/45897)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="dinner at monk's kettle w/gina and dan, 12/7/2011">
 [Velvet Merkin](http://beeradvocate.com/beer/profile/2210/46021)
 (oatmeal stout aged in bourbon barrels)
-![bad](/bad.png),
+<bad>,
 [Double Jack](http://beeradvocate.com/beer/profile/2210/50697)
 (imperial IPA)
-![good](/good.png),
+<good>,
 </span>
 <span title="clara and dan's wedding, 10/1/2011">
 [14 Anniversary Ale](http://beeradvocate.com/beer/profile/2210/63116)
-![good](/good.png),
+<good>,
 </span>
 <span title="home 2/15/2012; gift for valentine's day from gina">
 [Walker's Reserve Porter](http://beeradvocate.com/beer/profile/2210/6371)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="from dan at clara/dan's holiday party, 12/16/2012">
 [Pale 31](http://beeradvocate.com/beer/profile/2210/5643)
-![good](/good.png),
+<good>,
 </span>
 [Wookey Jack](http://beeradvocate.com/beer/profile/2210/79286)
 (black rye IPA)
-![good](/good.png)
+<good>
 
 <span title="watching giants win world series 2010 game 4 w/lizzy and josh, 10/31/2010">
 [Tied House](http://www.tiedhouse.com/)
 [Hoptopia](http://brewreview.info/hoptopia-double-ipa) (double IPA)
-![good](/good.png),
+<good>,
 [Cascade Amber](http://beeradvocate.com/beer/profile/2414/6029)
-![bad](/bad.png),
+<bad>,
 [Ironwood Dark](http://beeradvocate.com/beer/profile/2414/6030)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="nettools happy hour/wheel of misfortune, 11/17/2010">
 [Menage A Singe](http://beeradvocate.com/beer/profile/2415/50361) (black IPA)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="warrior dash 10/30/2010 w/cynthia and josh">
 [Pyramid](http://www.pyramidbrew.com/)
 [Snow Cap](http://beeradvocate.com/beer/profile/403/1889)
-![good](/good.png),
+<good>,
 </span>
 [Hefeweizen](http://beeradvocate.com/beer/profile/2179/25441)
-![ok](/ok.png),
+<ok>,
 <span title="thanksgiving at cloud house 11/23/2012">
 [Curve Ball](http://beeradvocate.com/beer/profile/403/51959) (blonde)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="rickhouse w/molly 10/16/2010">
 [Napa Smith](http://www.napasmithbrewery.com/)
 [Bonfire](http://beeradvocate.com/beer/profile/18258/46374) (imperial porter)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt 10/5/2010; sweet and dry and smooth and coffee-ish all at once">
 [Mikkeller](http://www.mikkeller.dk/)
 [Beer Geek Brunch Weasel](http://beeradvocate.com/beer/profile/13307/46987)
  (double imperial stout)
-![ok](/ok.png),
+<ok>,
 <span title="from gina for vday 2011; drank at gina's 3/25/2011">
 [Big Worse (Bourbon Barrel Edition)](http://beeradvocate.com/beer/profile/13307/65874)
-![good](/good.png),
+<good>,
 </span>
 <span title="sf apt 5/28/2011">
 [Koppi Coffee IPA](http://beeradvocate.com/beer/profile/13307/65674)
-![good](/good.png),
+<good>,
 </span>
 <span title="at gina's 6/27/2011">
 [Beer Geek Bacon aka Rauch Geek Breakfast](http://beeradvocate.com/beer/profile/13307/59741)
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="dinner at anchor & hope w/dan and catherine before d&o jungle party, 2/4/2012">
 [Black Hole](http://beeradvocate.com/beer/profile/13307/33929)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="drinks w/greg stein at mikkeller bar in SF, 10/10/2013">
 [Texas Ranger Eagle Rare Chipotle Porter](http://www.ratebeer.com/beer/mikkeller-texas-ranger-barrel-aged-eagle-rare-edition/193453/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="pool w/dan 9/23/2010">
 [Schmaltz aka He'Brew](http://www.shmaltz.com/)
 [Bittersweet Lenny's R.I.P.A.](http://beeradvocate.com/beer/profile/262/30970)
 (double IPA)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt 9/21/2010">
 [Harvey & Son](http://www.harveys.org.uk/)
 [Le Coq Imperial Extra Double Stout](http://beeradvocate.com/beer/profile/164/438)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt 9/19/2010; saw at anchor and hope during dsg, 4/20/2010">
 [Jolly Pumpkin](http://www.jollypumpkin.com/)
 [La Roja](http://beeradvocate.com/beer/profile/9897/19314) (wild amber)
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="sf apt 9/26/2010">
 [Bam Noire](http://beeradvocate.com/beer/profile/9897/38459) (dark farmhouse ale)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="from whole foods; sf apt, 9/18/2010">
 [Russian River Brewing](http://www.russianriverbrewing.com/)
 [Blind Pig](http://beeradvocate.com/beer/profile/863/22790) (IPA)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="4th street grill w/dan before the social network movie, 10/5/2010">
 [Damnation](http://russianriverbrewing.com/web/brews/damnation.htm)
 (golden ale)
-![ok](/ok.png),
+<ok>,
 [Pliny the Elder](http://russianriverbrewing.com/web/brews/plinytheelder.htm)
 (double IPA)
-![good](/good.png),
+<good>,
 </span>
 <span title="mission bowling center w/gina and her friends, 3/27/2012">
 [Pliny the Younger](http://beeradvocate.com/beer/profile/863/21690)
 (imperial IPA)
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="sf apt w/gina, 11/21/2010">
 [Supplication](http://beeradvocate.com/beer/profile/863/22227) (oaked cherry ale)
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="barrel aged beer fest w/ryan graciano, 11/9/2013">
 [Temptation](http://beeradvocate.com/beer/profile/863/9474)
 (blonde, aged in chardonnay barrels)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="from whole foods; sf apt, 9/18/2010">
 [Lucky Hand](http://www.luckyhandbeer.com/)
 [Black Lager](http://beeradvocate.com/beer/profile/22170/56285)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt 9/15/2010">
 [Kona](http://www.konabrewingcompany.com/)
 [Pipeline Porter](http://beeradvocate.com/beer/profile/579/33183)
-![good](/good.png),
+<good>,
 </span>
 <span title="found at safeway, drank w/gina 4/6/2011">
 [Koko Brown](http://beeradvocate.com/beer/profile/579/66449)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="4th of july party at cloud house, 7/4/2011">
 [Fire Rock Pale Ale](http://beeradvocate.com/beer/profile/579/5753)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="kauai w/gina at st. regis princeville, 8/16/2011">
 [Big Wave Golden Ale](http://beeradvocate.com/beer/profile/579/22592)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="lunch at bent elbow in silverton, CO during vacation
              for rob quirk's wedding, 9/6/2010">
 [Ska Brewing](http://www.skabrewing.com/)
 [Ten Pin Porter](http://beeradvocate.com/beer/profile/923/2942)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="lunch at bent elbow in silverton, CO during vacation
              for rob quirk's wedding, 9/6/2010">
 [Durango Brewing](http://www.durangobrewing.com/)
 [Blueberry Wheat](http://beeradvocate.com/beer/profile/1525/43463)
-![ok](/ok.png),
+<ok>,
 [Amber](http://beeradvocate.com/beer/profile/1525/23334)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="rehearsal dinner for rob quirk's wedding, 9/3/2010">
 [Carver Brewing](http://www.carverbrewing.com/)
 Iron Horse Oatmeal Stout
-![good](/good.png),
+<good>,
 [Raspberry Wheat](http://www.carverbrewing.com/brewery.html)
-![bad](/bad.png),
+<bad>,
 [Cascade Canyon Cask IPA](http://beeradvocate.com/beer/profile/9798/48471)
-![good](/good.png),
+<good>,
 [Oatmeal Pale Ale](http://www.carverbrewing.com/brewery.html)
-![ok](/ok.png),
+<ok>,
 Colorado Uncommon
-![good](/good.png)
+<good>
 </span>
 
 <span title="dsg drinks at slanted door w/clara and cynthia, 8/30/2010">
 [Brasserie Lebbe](http://www.charlesnealselections.com/wine/southwest/brasserielebbe.html)
 [L'Amalthée](http://beeradvocate.com/beer/profile/16031/36700)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="dsg drinks at slanted door w/clara and cynthia, 8/30/2010">
 [Brasserie Dupont](http://www.brasserie-dupont.com/)
 [Saison Dupont Vielle Provision](http://beeradvocate.com/beer/profile/637/1717)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="la trappe w/dan and his friend alex, 8/13/2010">
 [Birrificio Troll](http://beeradvocate.com/beer/profile/10504)
 [Palanfrina](http://beeradvocate.com/beer/profile/10504/41090) (dark ale)
-![good](/good.png)
+<good>
 </span>
 
 <span title="la trappe w/dan and his friend alex, 8/13/2010">
 [Brouwerij Rodenbach](http://www.rodenbach.be/)
 [Grand Cru](http://beeradvocate.com/beer/profile/216/673) (Flanders red ale)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt, 7/10/2010">
 [Brasserie de Rochefort](http://users.pandora.be/gerritvdb/rochefort/English/RochefortIndex.htm)
 [Trappistes Rochefort 6](http://beeradvocate.com/beer/profile/207/3842) (Belgian dark ale)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="sf apt, 7/10/2010">
 [8](http://beeradvocate.com/beer/profile/207/1696) (Belgian dark ale),
-![ok](/ok.png),
+<ok>,
 [10](http://beeradvocate.com/beer/profile/207/645) (quadrupel)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt 6/25/2010">
 [Eel River Brewing](http://www.eelriverbrewing.com/)
 [Organic Porter](http://beeradvocate.com/beer/profile/1627/11426)
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="bay area brew fest 2010 at fort mason w/gina">
 [Blonde](http://beeradvocate.com/beer/profile/1627/4558)
-![bad](/bad.png),
+<bad>,
 [Acai Berry Wheat](http://beeradvocate.com/beer/profile/1627/48953)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt w/dan, 6/19/2010">
 [Ninkasi](http://ninkasibrewing.com/)
 [Total Domination IPA](http://beeradvocate.com/beer/profile/14400/32432)
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="bay area brew fest 2010 at fort mason w/gina">
 [Oatis](http://beeradvocate.com/beer/profile/14400/39296) (oatmeal stout)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="sf apt 8/11/2011">
 [Believer](http://beeradvocate.com/beer/profile/14400/37381) (double red ale)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="brett's bday party 11/25/2012">
 [Lady of Avalon](http://beeradvocate.com/beer/profile/14400/34720) (dark lager)
-![good](/good.png),
+<good>,
 </span>
 <span title="home 1/27/2013">
 [Tricerahops Double IPA](http://beeradvocate.com/beer/profile/14400/37966)
-![good](/good.png),
+<good>,
 </span>
 <span title="barrel aged beer fest w/ryan graciano, 11/9/2013">
 [Maiden The Shade](http://beeradvocate.com/beer/profile/14400/60044)
 (aged in Dry Fly gin barrels)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="hawaii w/gina, june 2010">
 [Mehana](http://www.mehana.com/)
 [Volcano Red](http://beeradvocate.com/beer/profile/3225/8430)
-![good](/good.png),
+<good>,
 [Sunset Amber](http://beeradvocate.com/beer/profile/3225/48800)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="hawaii w/gina, june 2010">
 [MacTarnahan's](http://www.macsbeer.com/)
 [Summer Grifter](http://beeradvocate.com/beer/profile/127/49259) (IPA)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt, june 2010">
 [Coastal Fog](http://beeradvocate.com/beer/profile/7064)
 [IPA](http://beeradvocate.com/beer/profile/7064/56063)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt 5/6/2010">
 [Nectar Ales](http://www.nectarales.com/)
 [Black Xantus](http://beeradvocate.com/beer/profile/17963/53256)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt, shared w/dan, 5/27/2010">
 [Port Brewing/Pizza Port](http://www.portbrewing.com/)
 [Hop 15](http://beeradvocate.com/beer/profile/5318/31323) (double IPA)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="sf apt w/dan, 7/5/2010">
 [Wipeout IPA](http://beeradvocate.com/beer/profile/5318/33243)
-![good](/good.png),
+<good>,
 </span>
 <span title="sf apt 12/4/2010">
 [Santa's Little Helper](http://beeradvocate.com/beer/profile/5318/34203)
  (imperial stout)
-![good](/good.png),
+<good>,
 </span>
 <span title="sf apt 12/17/2010">
 [High Tide Fresh Hop IPA](http://beeradvocate.com/beer/profile/5318/33467)
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="sf apt, 12/29/2010; actually decent but way too sweet and syrupy">
 [Old Viscosity](http://beeradvocate.com/beer/profile/5318/31613)
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="barrel aged beer fest w/ryan graciano, 11/9/2013">
 [Night Rider](http://beeradvocate.com/beer/profile/5318/63499)
 (imperial stout, aged in Heaven Hills bourbon barrels)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf apt, 5/25/2010">
 [Iron Springs](http://www.ironspringspub.com/)
 [Sless' Oatmeal Stout](http://beeradvocate.com/beer/profile/10583/48158)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="at marissa/zach's during the lost finale, 5/23/2010">
 [Tui](http://www.tui.co.nz/default.asp?s1=Tui%20Brewery&s2=Tui%20Brewery%20Home)
 [IPA](http://beeradvocate.com/beer/profile/950/3069)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt, 5/23/2010">
 [Mad River](http://www.madriverbrewing.com/)
 [Steelhead Double IPA](http://beeradvocate.com/beer/profile/266/29078)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="home at the sf apt, 11/30/2009. smokey!">
 [Serious Madness](http://beeradvocate.com/beer/profile/266/48143) (black ale)
-![good](/good.png),
+<good>,
 </span>
 <span title="at the sf apt, 12/23/2009, while playing pixeljunk shooter before
  heading home for xmas. ok but a little too light and sweet.">
 [Mad Belgian](http://beeradvocate.com/beer/profile/266/51729) (Belgian pale ale)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="barrel aged beer fest w/ryan graciano, 11/9/2013">
 Steelhead Bourbon Vanilla Porter
 (aged in Heaven Hills bourbon barrels)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf apt w/dan, 5/22/2010">
 [Butte Creek](http://www.buttecreek.com/)
 [Organic IPA](http://beeradvocate.com/beer/profile/762/2906)
-![ok](/ok.png),
+<ok>,
 </span>
 [Organic Porter](http://beeradvocate.com/beer/profile/762/2310)
-![good](/good.png),
+<good>,
 <span title="home 12/30/2011">
 [Organic Pale Ale](http://beeradvocate.com/beer/profile/762/42125)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="at la trappe w/gina 4/28/2010">
 [De Struise Brouwers](http://www.struisebrouwers.be/)
 [Black Albert](http://beeradvocate.com/beer/profile/15237/38334) (royal stout)
-![good](/good.png)
+<good>
 </span>
 
 <span title="at la trappe w/gina 4/28/2010">
 [Brouwerij Van Steenberge](http://www.vansteenberge.com/)
 [Gentse Tripel](http://beeradvocate.com/beer/profile/48/12957)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="sf apt w/dan 7/5/2010; recommended by jj furman">
 [Gulden Draak](http://www.vansteenberge.com/htm/2en/21300en.htm) (dark tripel)
-![good](/good.png)
+<good>
 </span>
 
 <span title="at la trappe w/gina 4/28/2010">
 [Brouwerij Slaapmutske](http://www.slaapmutske.be/)
 [Nightcap](http://beeradvocate.com/beer/profile/4992/10572)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="saw at city beer w/walter before district 9 at metreon, 8/19/2009;
              drank w/gina at la trappe 4/28/2010">
 [Brasserie Dieu Du Ciel](http://www.dieuduciel.com/)
 [Péché Mortel](http://beeradvocate.com/beer/profile/1141/10325/) (coffee stout)
-![good](/good.png),
+<good>,
 </span>
 <span title="bought at city beer w/gina, drank 6/19/2011">
 [Route Des Épices](http://beeradvocate.com/beer/profile/1141/10331) (rye)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="at la trappe w/gina 4/28/2010">
 [Brasserie Dubuisson](http://www.br-dubuisson.com/bush/)
 [Bush De Noël aka Scaldis Noël](http://beeradvocate.com/beer/profile/604/2232)
 (dark ale)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="la trappe w/dan and his friend alex, 8/13/2010; too sour for me">
 [Scaldis Noël Premium](http://beeradvocate.com/beer/profile/604/46293)
 (dark ale)
-![bad](/bad.png),
+<bad>,
 [Bush De Nuits](http://beeradvocate.com/beer/profile/604/46688)
 (dark ale)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [BridgePort](http://www.bridgeportbrew.com/)
 [Hop Czar](http://beeradvocate.com/beer/profile/43/43886)
 (double IPA)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Firehouse Grill & Brewery](http://www.firehousegrill.com/)
 [Palo Alto Brewing Barely Legal Coconut Porter](http://beeradvocate.com/beer/profile/12788/56306)
-![good](/good.png)
+<good>
 </span>
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Moylan's](http://www.moylans.com/)
 [Moylander Double IPA](http://beeradvocate.com/beer/profile/870/3439)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="barrel aged beer fest w/ryan graciano, 11/9/2013">
 XX Kiltlifter
 (scotch ale, aged in stillwater rye barrels)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010; too sweet!">
 [Browar Okocim](http://www.okocim.pl/)
 [Porter](http://beeradvocate.com/beer/profile/568/1504)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010; too sweet!">
 [Pivovar Náchod](http://www.primator.cz/)
 [Primátor Double Bock](http://beeradvocate.com/beer/profile/707/14523)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Buckbean](http://www.buckbeanbeer.com/)
 [Tule Duck Red](http://beeradvocate.com/beer/profile/16851/52475)
-![ok](/ok.png),
+<ok>,
 [Black Noddy Lager](http://beeradvocate.com/beer/profile/16851/43716)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Uncommon](http://www.uncommonbrewers.com/)
 [Baltic Porter](http://beeradvocate.com/beer/profile/17962/47631)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Cold Spring](http://www.coldspringbrewery.com/)
 [John Henry 3 Lick Spiker Ale](http://beeradvocate.com/beer/profile/892/46984)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Ale Industries](http://aleindustries.com/)
 [Bill Brand Brown](http://aleindustries.com/our_beer)
-![good](/good.png),
+<good>,
 </span>
 <span title="barrel aged beer fest w/ryan graciano, 11/9/2013">
 [This is the Shit that Killed Elvis](http://beeradvocate.com/beer/profile/19890/88593)
 (amber, aged in rye whiskey barrels)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="saw at bar crudo w/gretchen before jazz at yoshi's, 8/20/2009;
              drank at anchor and hope during dsg, 4/20/2010">
 [Oskar Blues](http://www.oskarblues.com/brew/)
 [Ten FIDY](http://www.oskarblues.com/brew/#ten_fidy) (imperial stout)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="sf apt 12/6/2010">
 [Gubna IPA](http://beeradvocate.com/beer/profile/2681/55412)
-![good](/good.png),
+<good>,
 </span>
 <span title="bike music festival w/gina, krista, adam, etc, 6/18/2011">
 [Old Chub](http://beeradvocate.com/beer/profile/2681/14712) (scotch ale)
-![good](/good.png)
+<good>
 </span>
 
 <span title="date night w/gina at amber, indian restaurant across from press club, 3/31/2010">
 [Cucapá](http://www.cucapa.com/)
 [Obscura](http://beeradvocate.com/beer/profile/10541/36269)
-![bad](/bad.png)
+<bad>
 </span>
 
 [Blue Moon](http://www.bluemoonbrewingcompany.com/)
 Belgian White
-![ok](/ok.png)
+<ok>
 
 [Sierra Nevada](http://www.sierranevada.com/)
 [Pale Ale](http://www.sierranevada.com/beers/paleale.html)
-![ok](/ok.png),
+<ok>,
 <span title="sf apt w/dan, 3/29/2010">
 [Torpedo Extra IPA](http://www.sierranevada.com/beers/torpedo.html)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="sf apt w/dan, 6/19/2010">
 [Stout](http://www.sierranevada.com/beers/stout.html)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="sf apt july 2010">
 [Porter](http://www.sierranevada.com/beers/porter.html)
-![good](/good.png),
+<good>,
 </span>
 <span title="google tgif 5/6/2011">
 [Glissade](http://www.sierranevada.com/beers/glissade.html)
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="sf apt 8/9/2011">
 [Tumbler](http://beeradvocate.com/beer/profile/140/60420) (brown)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="sf apt w/dan, 4/25/2010">
 [30th Anniversary Fritz and Ken's Ale](http://beeradvocate.com/beer/profile/140/56761) (stout)
-![good](/good.png),
+<good>,
 </span>
 <span title="sf apt w/dan, 6/19/2010">
 [30th Anniversary Charlie, Fred, and Ken's Bock](http://beeradvocate.com/beer/profile/140/56761) (helles bock)
-![good](/good.png),
+<good>,
 </span>
 <span title="sf apt w/dan, 6/19/2010">
 [30th Anniversary Jack and Ken's Ale](http://beeradvocate.com/beer/profile/140/60474) (barleywine)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="home 8/25/2012">
 [Bigfoot](http://beeradvocate.com/beer/profile/140/2671) (barleywine)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="magnolia after friday dinner w/gina, nathan, dan, 3/19/2010">
 [Magnolia](http://www.magnoliapub.com/)
 Stout of Circumstance
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="dinner at coi w/gina, 3/19/2010">
 [Weihenstephaner](http://www.brauerei-weihenstephan.de/index2.html?lang=eng)
 [Korbinian Hefeweissbier Dark](http://beeradvocate.com/beer/profile/252/779)
-![good](/good.png)
+<good>
 </span>
 
 <span title="at gina's, dinner w/sam, before 111 minna for julie tannaci's bday, 3/13/2010">
 [Caledonian](http://www.caledonian-brewery.co.uk/home.php)
 [Great Scot Pale Ale](http://www.caledonian-brewery.co.uk/ales_greatscot.htm)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="at cosmopolitan while planning cell phone debut party, 3/12/2010">
 [Brouwerij Van Honsebrouck](http://www.vanhonsebrouck.be/)
 [Kasteel Tripel](http://beeradvocate.com/beer/profile/212/44892)
-![good](/good.png),
+<good>,
 </span>
 <span title="la trappe w/dan and his friend alex, 8/13/2010; flemish sour is too sour!">
 [St. Louis Gueuze Fond Tradition](http://beeradvocate.com/beer/profile/212/5212)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="at gina's before watching the oscars, 3/7/2010">
 [Valley Brewing](http://www.valleybrew.com/)
 [Decadence Pomegranate Saison](http://beeradvocate.com/beer/profile/5411/55538)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="at the sf apt, watching generation kill e7, 2/21/2010">
 [Avery](http://www.averybrewing.com/)
 [Mephistopheles Stout](http://beeradvocate.com/beer/profile/30/28204)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="at the sf apt, watching lost s6e3 on hulu; from city beer; 2/10/2010">
 [Grand Teton](http://www.grandtetonbrewing.com/)
 [Black Cauldron](http://www.grandtetonbrewing.com/BCIS.html)
 (imperial stout)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="sf apt, 10/6/2010; very sharp and hoppy!">
 [Lost Continent](http://beeradvocate.com/beer/profile/413/49696) (double IPA)
@@ -1276,14 +1276,14 @@ Stout of Circumstance
 <span title="at monk's kettle with gina, cheri, and dan, sun 2/7/2010">
 [McAuslan](http://www.mcauslan.com/)
 [St-Ambroise Oatmeal Stout](http://www.mcauslan.com/en/ourbeers/sta_stout.htm)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="at monk's kettle with gina, cheri, and dan, sun 2/7/2010">
 [Wolaver's](http://www.wolavers.com/)
 (organic)
 [Brown Ale](http://www.wolavers.com/wolavers/beers/brown_ale.html)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="at monk's kettle with gina, cheri, and dan, sun 2/7/2010">
@@ -1291,186 +1291,186 @@ Stout of Circumstance
 (with [Stone](http://www.stonebrew.com/))
 [Bashah](http://www.brewdog.com/product.php?id=40)
 (black Belgian double IPA)
-![good](/good.png)
+<good>
 </span>
 
 <span title="at monk's kettle with gina, cheri, and dan, sun 2/7/2010">
 [Koningshoeven](http://www.latrappe.nl/content.asp?l=EN)
 [Quadrupel](http://www.latrappe.nl/content.asp?m=M7&s=P19&l=EN)
-![good](/good.png),
+<good>,
 </span>
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Dubbel](http://www.latrappe.nl/content.asp?m=M7&s=P17&l=EN)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home sat 3/6/2010 w/dan; from city beer">
 [New Belgium](http://www.newbelgium.com/)
 [1554](http://www.newbelgium.com/beer/1554) (black ale)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="date night w/gina at amber, indian restaurant across from press club, 3/31/2010">
 [Mothership Wit](http://www.newbelgium.com/beer/mothership-wit)
-![good](/good.png),
+<good>,
 </span>
 <span title="watching sharks/redwings at pete's tavern w/dan 4/29/2010">
 [Ranger IPA](http://www.newbelgium.com/beer/ranger-ipa)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="at paragon w/dan, 10/12/2010">
 [Hoptober](http://beeradvocate.com/beer/profile/192/51991) (golden ale)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="super bowl at matt and kristin's, 2/6/2011">
 [2° Below](http://beeradvocate.com/beer/profile/192/26542) (ESB)
-![good](/good.png),
+<good>,
 </span>
 <span title="home 10/7/2011">
 [Trippel](http://beeradvocate.com/beer/profile/192/1054)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home wed 3/3/2010; from city beer">
 [AleSmith](http://www.alesmith.com/)
 [Anvil ESB Ale](http://www.alesmith.com/anvilesbale.html)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="home fri 3/5/2010 w/dan and kieran after dan/nicol broke up;
  from city beer; smokey, coffee">
 [Speedway Stout](http://www.alesmith.com/speedwaystout.html)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="at nojo w/matt and kristin before david simon/david chang talk, 5/30/2013">
 [IPA](http://beeradvocate.com/beer/profile/396/3916)
-![ok](/ok.png)
+<ok>
 </span>
 
 [Goose Island](http://www.gooseisland.com/)
 [Stockyard Oatmeal Stout](http://beeradvocate.com/beer/profile/1146/5688)
-![good](/good.png),
+<good>,
 <span title="home sun 1/31/2010, from city beer, also too sweet">
 [Bourbon County Imperial Stout](http://www.gooseisland.com/pages/bourbon_county_stout/59.php)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Sofie](http://beeradvocate.com/beer/profile/1146/48824) (saison)
-![ok](/ok.png),
+<ok>,
 [Pere Jacques](http://beeradvocate.com/beer/profile/1146/16807) (dubbel)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="sf apt 6/29/2010">
 [Matilda](http://beeradvocate.com/beer/profile/1146/4318) (Belgian ale)
-![good](/good.png),
+<good>,
 </span>
 <span title="at gina's 6/16/2011">
 [Pepe Nero](http://beeradvocate.com/beer/profile/1549/57202)
-![good](/good.png)
+<good>
 </span>
 
 <span title="home sun 1/31/2010, from city beer, too sweet!">
 [FiftyFifty](http://www.fiftyfiftybrewing.com/)
 [2009 Eclipse Imperial Stout](http://fiftyfiftybrewing.blogspot.com/2009/11/imperial-eclipse-stout-gets-top-honors.html)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="public house w/kieran, 7/1/2010">
 [Concentrated Evil](http://beeradvocate.com/beer/profile/14936/54194)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="ironside with dan, 1/19/2010">
 [Brasserie de l'Abbaye des Rocs](http://www.abbaye-des-rocs.com/page%20en%20anglais.htm)
 [Grand Cru](http://www.abbaye-des-rocs.com/page%20en%20anglais.htm#Products.html) (brown)
-![good](/good.png)
+<good>
 </span>
 
 <span title="with gina at ironside, wed 1/13/2009">
 [Michelob](http://www.michelob.com/)
 [Shock Top](http://www.michelob.com/ExploreShockTop.aspx)
 (Belgian white)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="with gina at ironside, wed 1/13/2009">
 [Carlsberg Sverige](http://www.carlsberg.se/)
 [D. Carnegie & Co. Stark-porter](http://beeradvocate.com/beer/profile/10897/755)
-![good](/good.png)
+<good>
 </span>
 
 <span title="cafe du nord for gina's friend james's band, foxtail somersault, 1/7/2009">
 [El Toro](http://www.eltorobrewing.com/)
 [Poppy Jasper Amber](http://www.eltorobrewing.com/beer.html)
-![good](/good.png)
+<good>
 </span>
 
 <span title="cafe du nord for gina's friend james's band, foxtail somersault, 1/7/2009">
 [Abita](http://www.abita.com/)
 [Turbodog](http://www.abita.com/brews/amber.php)
 (dark brown ale)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="bay area brew fest 2010 at fort mason w/gina">
 [Amber](http://beeradvocate.com/beer/profile/3/5) (Vienna lager)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="home watching mad men, sat 1/9/2009">
 [Brouwerij Duvel Moortgat](http://www.duvel.be/)
 [Buffalo Belgian Stout](http://beeradvocate.com/beer/profile/893/20345)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home (sf apt) with dan, 1/7/2009">
 [Estrella Damm](http://www.estrelladamm.es/)
 [Inedit](http://www.estrelladamm.es/inedit/en/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="bluegrass at amnesia w/gina, krista, nathan, and josh, 12/14/2009">
 [Orval](http://www.orval.be/an/FS_an.html)
 [blonde ale](http://beeradvocate.com/beer/profile/37/129)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="bluegrass at amnesia w/gina, krista, nathan, and josh, 12/14/2009">
 [Chimay](http://www.chimay.com/)
 [Red](http://www.chimay.com/en/chimay_red_218.php)
 (dubbel)
-![ok](/ok.png),
+<ok>,
 [Blue](http://www.chimay.com/en/chimay_blue_220.php)
 (dark ale)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="emma's bday at rickhouse w/gina and clayton, 12/12/2009">
 [Speakeasy](http://www.goodbeer.com/)
 [Hunters Point Porter](http://beeradvocate.com/beer/profile/559/41940)
-![good](/good.png),
+<good>,
 </span>
 <span title="here and there">
 [Prohibition Ale](http://beeradvocate.com/beer/profile/559/1468)
-![good](/good.png),
+<good>,
 [Big Daddy IPA](http://beeradvocate.com/beer/profile/559/1472)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="sf apt 7/1/2010">
 [Payback Porter](http://beeradvocate.com/beer/profile/559/54913)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="sf apt 1/3/2010">
 [Double Daddy](http://beeradvocate.com/beer/profile/559/25283) (imperial IPA)
-![good](/good.png),
+<good>,
 </span>
 <span title="sf apt 6/24/2011">
 [Betrayal](http://beeradvocate.com/beer/profile/559/59589) (imperial red ale)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="tgif 1/17/2013">
 [Scarlett Red Rye](http://beeradvocate.com/beer/profile/559/84899)
-![good](/good.png),
+<good>,
 </span>
 <span title="home 1/22/2013">
 [Butchertown Black Ale](http://beeradvocate.com/beer/profile/559/73882)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home while playing the game 'leave home' and then
@@ -1478,24 +1478,24 @@ Stout of Circumstance
 [Brouwerij Duvel Moortgat](http://www.duvel.be/)
 [Maredsous](http://www.maredsous10.be/)
 [6 Blonde](http://beeradvocate.com/beer/profile/222/6972)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="absinthe after the symphony w/cynthia, yvette, and annette, 11/14/2009">
 [8 Dubbel](http://beeradvocate.com/beer/profile/222/2508)
-![good](/good.png),
+<good>,
 </span>
 <span title="bluegrass at amnesia w/gina, krista, nathan, and josh, 12/14/2009">
 [10 Tripel](http://beeradvocate.com/beer/profile/222/2566)
-![good](/good.png)
+<good>
 </span>
 
 [Marin Brewing Co.](http://www.marinbrewing.com/index2.php)
 [San Quentin's Breakout Stout](http://www.marinbrewing.com/pages/beers.htm),
 [St. Brendan's Irish Red](http://beeradvocate.com/beer/profile/812/16699)
-![ok](/ok.png),
+<ok>,
 <span title="bay area brew fest 2010 at fort mason w/gina">
 [Albion Amber](http://beeradvocate.com/beer/profile/812/6837)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="vacation in france: lunch w/jeremy, perrine, niels, elaine,
@@ -1503,23 +1503,23 @@ Stout of Circumstance
  at perrine's house in sommieres, 10/24/2009">
 [Brasserie des Garrigues](http://brasseriedesgarrigues.fr/)
 ["La Belle en Goguette"](http://www.brasseriedesgarrigues.fr/bieres.htm) (blonde)
-![ok](/ok.png),
+<ok>,
 ["Saison des Amours"](http://www.brasseriedesgarrigues.fr/bieres.htm) (amber)
-![ok](/ok.png),
+<ok>,
 ["Nuit de Goguette"](http://www.brasseriedesgarrigues.fr/bieres.htm) (brown)
-![good](/good.png)
+<good>
 </span>
 
 <span title="vacation in france: at jeremy's parents' house in sommieres">
 [Mauritius Brauerei](http://www.mauritius-brauerei.de/index_02.htm)
 [Perlenbacher Premium Pils](http://beeradvocate.com/beer/profile/10871/41049) (pilsner)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="sf apt 9/26/2009 while writing migration cleanup mapreduce">
 [Wychwood](http://www.wychwood.com/)
 [Wychcraft](http://www.wychwood.com/beers_wychcraft.htm)
-![bad](/bad.png)
+<bad>
 (blonde ale)
 </span>
 
@@ -1527,180 +1527,180 @@ Stout of Circumstance
  drank while doing yel (performance reviews) at the sf apt, 9/24/2009. too strong!">
 [Lost Abbey](http://www.lostabbey.com/)
 [Serpent's Stout](http://www.lostabbey.com/lost-abbey-beers/seasonal-beers/serpents-stout/)
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="bought at city beer; home while watching magnolia and making paper
   flowers; 2/11/2010">
 [Red Barn Ale](http://www.lostabbey.com/lost-abbey-beers/year-round-beers/red-barn-ale/)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="at la trappe w/gina 4/28/2010">
 [Angel's Share](http://beeradvocate.com/beer/profile/18149/32413) (barleywine)
-![good](/good.png),
+<good>,
 </span>
 <span title="sf apt 10/7/2010">
 [Inferno Ale](http://beeradvocate.com/beer/profile/18149/42491)
-![ok](/ok.png)
+<ok>
 </span>,
 <span title="sf apt 10/17/2010">
 [Carnevale](http://beeradvocate.com/beer/profile/18149/40970) (saison)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="bevmo, drank w/kieran and dan w/pizza from south beach cafe, 9/17/2009">
 [Williams Brothers](http://www.williamsbrosbrew.com/)
 [Fraoch Heather Ale](http://www.williamsbrosbrew.com/historicales.php?id=30#top)
-![good](/good.png)
+<good>
 </span>
 
 <span title="steve garrity brought this back from belgium after his f1 race trip">
 [Westmalle](http://www.trappistwestmalle.be/en/page/brouwerij.aspx)
 [Tripel](http://www.trappistwestmalle.be/en/page/tripel.aspx)
-![good](/good.png),
+<good>,
 [Dubbel](http://www.trappistwestmalle.be/en/page/dubbel.aspx)
-![good](/good.png)
+<good>
 </span>
 
 <span title="dinner at calafia w/ken and tina, 8/29/2009">
 [Devil's Canyon](http://www.devilscanyonbrewery.com/)
 Dedication Ale (amber)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Full Boar Scotch Ale](http://beeradvocate.com/beer/profile/4950/38878)
-![ok](/ok.png)
+<ok>
 </span>
 <span title="flight lounge in san carlos w/peter and jeremy, 11/19/2010">
 [California Sunshine IPA](http://beeradvocate.com/beer/profile/4950/56678)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="bar crudo w/gretchen before jazz at yoshi's, 8/20/2009">
 [St. Bernardus](http://www.sintbernardus.be/en/)
 [ABT 12](http://www.sintbernardus.be/en/beers.html#abt12) (dark ale)
-![good](/good.png),
+<good>,
 </span>
 <span title="swell w/gina 10/20/2010">
 [Tripel](http://www.sintbernardus.be/en/beers.html#tripel)
-![good](/good.png)
+<good>
 </span>,
 <span title="at gina's 5/15/2011">
 [Christmas Ale](http://beeradvocate.com/beer/profile/259/39286)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="bar crudo w/gretchen before jazz at yoshi's, 8/20/2009">
 [Haand Bryggeriet](http://haandbryggeriet.net/index.html)
 [Odin's Tipple](http://haandbryggeriet.net/Odinstipple.html) (dark ale)
-![good](/good.png) ![good](/good.png)
+<good> <good>
 </span>
 
 <span title="cosmopolitan, 8/3/2009">
 [Malheur](http://www.malheur.be/)
 [12](http://beeradvocate.com/beer/profile/669/6354) (quadrupel, dark ale)
-![good](/good.png)
+<good>
 </span>
 
 [Brasserie d'Achouffe](http://www.achouffe.be/en/)
 <span title="cosmopolitan, 8/3/2009">
 [Houblon](http://www.achouffe.be/en/nos-bieres/nos-produits/fiche.php?p=7)
 (IPA)
-![good](/good.png),
+<good>,
 </span>
 <span title="la trappe w/dan and his friend alex, 8/13/2010">
 [McChouffe](http://www.achouffe.be/en/nos-bieres/nos-produits/) (dark ale),
-![good](/good.png),
+<good>,
 </span>
 <span title="at gina's, 3/20/2011">
 [N'ice Chouffe](http://www.achouffe.be/en/nos-bieres/nos-produits/) (dark ale)
-![good](/good.png),
+<good>,
 </span>
 
 <span title="guys' night with nathan, clayton, siraj, at city beer, 7/28/2009">
 [North Coast](http://www.northcoastbrewing.com/)
 [Old Rasputin Imperial Stout](http://www.northcoastbrewing.com/beer-rasputinXI.htm)
-![good](/good.png),
+<good>,
 </span>
 [Ruedrich's Red Seal Ale](http://beeradvocate.com/beer/profile/112/410)
-![good](/good.png),
+<good>,
 <span title="bevmo, drank at home while watching black snake moan, 8/15/2009">
 [Brother Thelonious Abbey Ale](http://www.northcoastbrewing.com/beer-brotherThelonious.htm)
-![good](/good.png),
+<good>,
 </span>
 <span title="saw rumpus room show w/gretchen, raj, erica, 7/7/2009; drank later from bevmo, 8/27/2009">
 [No. 38 Stout](http://www.northcoastbrewing.com/beer-38.htm)
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="offsite with nettools and aspi's reports, bourbon and branch, 11/30/2010">
 [ACME California IPA](http://beeradvocate.com/beer/profile/112/403)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="guys' night with nathan, clayton, siraj, at city beer, 7/28/2009">
 [The Bruery](http://www.thebruery.com/)
 [Trade Winds Tripel](http://www.thebruery.com/beers/)
-![good](/good.png),
+<good>,
 </span>
 <span title="at monk's kettle with gina, cheri, and dan, sun 2/7/2010">
 [Autumn Maple](http://www.thebruery.com/beers/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="guys' night with nathan, clayton, siraj, at city beer, 7/28/2009">
 [Green Flash](http://greenflashbrew.com/)
 [Imperial IPA](http://greenflashbrew.com/taproom.html#imperial)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="sun 12/20 at home while playing pixeljunk shooter">
 [Grand Cru](http://beeradvocate.com/beer/profile/2743/41345) (dark ale) ?,
 </span>
 <span title="dsg dinner at nopalito, 3/23/2010">
 [West Coast IPA](http://greenflashbrew.com/taproom.html#westcoast)
-![good](/good.png),
+<good>,
 </span>
 [Nut Brown Ale](http://greenflashbrew.com/taproom.html#nutbrown)
-![ok](/ok.png),
+<ok>,
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Le Freak](http://greenflashbrew.com/taproom.html#lefreak)
 (Belgian IPA)
-![good](/good.png),
+<good>,
 </span>
 <span title="bay area brew fest 2010 at fort mason w/gina">
 [Hop Head Red](http://beeradvocate.com/beer/profile/2743/35732)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="dinner at firefly w/rhett and aly, 5/31/2012">
 [Double Stout](http://beeradvocate.com/beer/profile/2743/41626)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="from bevmo">
 [Meantime](http://www.meantimebrewing.com/)
 [London Porter](http://www.meantimebrewing.com/london_porter.html)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="dsg at bar bambino 5/11/2011">
 [Scotch Ale](http://beeradvocate.com/beer/profile/5062/35601)
-![good](/good.png)
+<good>
 </span>
 
 <span title="rumpus room show w/gretchen, raj, erica, 7/7/2009">
 [Moonlight](http://www.moonlightbrewing.com/)
 [Death and Taxes Black Lager](http://beeradvocate.com/beer/profile/763/2306)
-![good](/good.png)
+<good>
 </span>
 
 <span title="from bevmo">
 [Black Sheep](http://www.blacksheepbrewery.com/)
 [Riggwelter](http://www.blacksheepbrewery.com/Beers/BottledBeers/Riggwelter.aspx)
 (dark ale)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="from bevmo">
 [Baltika](http://eng.baltika.ru/)
 [#6 Porter](http://eng.baltika.ru/brand/0/3/13/6_porter.html)
-![good](/good.png)
+<good>
 </span>
 
 <span title="from bevmo">
@@ -1711,108 +1711,108 @@ Dedication Ale (amber)
 
 <span title="rose and crown w/jeremy and dirk (from the prez), 5/8/2009">
 [Murphy's Stout](http://www.murphys.com/)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="rose and crown w/jeremy and dirk">
 [Black Diamond](http://www.bdbrewing.com/)
 [Imperial Porter](http://beeradvocate.com/beer/profile/978/49176)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="home for xmas 12/26/2009, playing pick 2 and boggle w/the fam">
 Freestyle (blonde)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="bill's fleet week party, 10/9/2011">
 [Jagged Edge IPA](http://beeradvocate.com/beer/profile/978/49753)
-![good](/good.png),
+<good>,
 </span>
 <span title="home 9/2/2011">
 [Grand Cru](http://beeradvocate.com/beer/profile/978/71743)
-![ok](/ok.png),
+<ok>,
 </span>
 
 <span title="from bevmo">
 [Shipyard](http://www.shipyard.com/)
 [Pugsley's Signature Imperial Porter](http://beeradvocate.com/beer/profile/139/45933)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="ironside with dan, 1/19/2010">
 [Pugsley IPA](http://beeradvocate.com/beer/profile/139/48578)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="swell w/gina 10/20/2010">
 [Blue Fin Stout](http://beeradvocate.com/beer/profile/139/291)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="from bevmo">
 [Belhaven](http://www.belhaven.co.uk/)
 [Wee Heavy](http://www.belhaven.co.uk/row/belhaven/weeheavy.php)
 (Scotch ale)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="lunch at redd, napa/inverness vacation with gretchen">
 [Cháu Tiên Pale Ale](http://www.paleale.com/)
 (more like an amber)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="dinner at nick's cove, napa/inverness vacation with gretchen">
 [Mendocino Brewing Co.](http://www.mendobrew.com/)
 [Eye of the Hawk](http://www.mendobrew.com/brews/eye_hawk.html) (ale)
-![good](/good.png),
+<good>,
 </span>
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 IPA (don't know which one :( )
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="bbq for cheri's bday at gina's, 11/14/2010">
 [Red Tail](http://beeradvocate.com/beer/profile/200/631) (red ale)
-![good](/good.png),
+<good>,
 [Oatmeal Stout](http://beeradvocate.com/beer/profile/200/62473)
-![good](/good.png)
+<good>
 </span>
 
 <span title="from bevmo">
 [Samuel Adams](http://www.samueladams.com/)
 [Chocolate Bock](http://beeradvocate.com/beer/profile/35/14309)
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="super bowl at matt and kristin's, 2/2/2014">
 [Irish Red](http://beeradvocate.com/beer/profile/35/38365/)
-![ok](/ok.png),
+<ok>,
 [Whitewater IPA](http://beeradvocate.com/beer/profile/35/76800/)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="dinner at st michael's alley with gretchen">
 [Brouwerij Van Eecke](http://www.brouwerijvaneecke.tk/)
 [Poperings Hommel](http://beeradvocate.com/beer/profile/634/1692) (Belgian IPA)
-![good](/good.png)
+<good>
 </span>
 
 <span title="with gretchen, first after pescadero (had a flight), then later
  with the boogie band before moss beach distillery, 8/23/2009">
 [Half Moon Bay Brewing Co.](http://www.hmbbrewingco.com/)
 Lunacy (sour ale)
-![bad](/bad.png),
+<bad>,
 Wipe Out Imperial Stout
-![ok](/ok.png),
+<ok>,
 [Bootlegger's Brown Ale](http://beeradvocate.com/beer/profile/2175/14459)
-![ok](/ok.png),
+<ok>,
 [Old Princeton Landing IPA](http://beeradvocate.com/beer/profile/2175/14456)
-![ok](/ok.png),
+<ok>,
 [Pillar Point Pale Ale](http://beeradvocate.com/beer/profile/2175/14457)
-![bad](/bad.png),
+<bad>,
 [Sandy Beach Blonde](http://beeradvocate.com/beer/profile/2175/9085)
 (hefeweizen)
-![ok](/ok.png),
+<ok>,
 [Double IPA](http://beeradvocate.com/beer/profile/2175/19806)
-![good](/good.png),
+<good>,
 [Smuggler's Stout](http://beeradvocate.com/beer/profile/2175/14458)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="Q restaurant before the niayh show with ccc and gretchen">
@@ -1820,169 +1820,169 @@ Wipe Out Imperial Stout
 roue](http://www.unibroue.com/index_eng.html)
 [Terrible](http://www.unibroue.com/products/terrible.cfm)
 (dark ale)
-![good](/good.png),
+<good>,
 </span>
 <span title="first at stacy's in pleasanton w/family; later w/lindsey at amnesia">
 [Fin du Monde](http://www.unibroue.com/products/fin.cfm) (tripel)
-![good](/good.png),
+<good>,
 </span>
 <span title="swell w/gina 10/20/2010">
 [Maudite](http://beeradvocate.com/beer/profile/22/33)
-![good](/good.png),
+<good>,
 </span>
 <span title="toronto for marc/kristen's wedding, 6/23/2013">
 [Blanche De Chambly](http://beeradvocate.com/beer/profile/22/31)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="range w/gina and david, 9/10/2013">
 [Trois Pistoles](http://beeradvocate.com/beer/profile/22/30)
-![good](/good.png)
+<good>
 </span>
 
 <span title="from bevmo">
 [Blue Frog](http://www.bigbluefrog.com/p/4082/Brewery.aspx)
 [Red Frog](http://www.bigbluefrog.com/p/4087/Brewery-In-Bottles.aspx)
 (red ale)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="from bevmo">
 [Drake's](http://drinkdrakes.com/)
 [Imperial Stout](http://beeradvocate.com/beer/profile/3835/12172)
-![good](/good.png),
+<good>,
 <span title="bloodhound w/siraj and sameer, 9/23/2011">
 Dry Stout
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [IPA](http://beeradvocate.com/beer/profile/3835/10308)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="sf apt w/dan, 12/10/2010">
 [Denogginizer](http://beeradvocate.com/beer/profile/3835/22273) (double IPA)
-![good](/good.png),
+<good>,
 </span>
 <span title="dinner at hops & hominy w/ryan and bex graciano, 4/5/2014">
 [X6 Experimental IPA](http://www.beeradvocate.com/beer/profile/3835/115406/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="burger bar at mandalay inn, in vegas for ken's bday">
 [Nogne Ø](http://www.nogne-o.com/)
 [Imperial Stout](http://beeradvocate.com/beer/profile/7730/28248)
-![good](/good.png)
+<good>
 </span>
 
 <span title="burger bar at mandalay inn, in vegas for ken's bday">
 [Deschutes](http://www.deschutesbrewery.com/)
 [Black Butte Porter](http://www.deschutesbrewery.com/brews/year-round-brews/black-butte-porter/)
-![good](/good.png),
+<good>,
 [Black Butte XXI](http://www.deschutesbrewery.com/brews/reserve-series/black-butte-xx/) (porter)
-![good](/good.png),
+<good>,
 </span>
 <span title="home 9/4/2012">
 [Black Butte XXIV](http://beeradvocate.com/beer/profile/63/83624)
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="from bevmo">
 [Abyss](http://www.deschutesbrewery.com/brews/reserve-series/the-abyss/)
 (imperial stout)
-![good](/good.png),
+<good>,
 </span>
 <span title="from bayside village market, drank in sf apt">
 [Inversion IPA](http://www.deschutesbrewery.com/brews/year-round-brews/inversion-ipa/)
-![good](/good.png),
+<good>,
 [Mirror Pond Pale Ale](http://www.deschutesbrewery.com/brews/year-round-brews/mirror-pond-pale-ale/)
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="dsg + dan lunch after planet granite at presidio social club, 5/23/2010">
 [Obsidian Stout](http://www.deschutesbrewery.com/brews/year-round-brews/obsidian-stout/)
-![good](/good.png),
+<good>,
 </span>
 <span title="dinner at abbott's cellar w/siraj and malorie before kaskade show">
 [Aphrodite](http://beeradvocate.com/beer/profile/63/67440) (imperial stout)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="from cynthia, 3/20/2014">
 [Chainbreaker White IPA](http://www.beeradvocate.com/beer/profile/63/68942/)
-![good](/good.png)
+<good>
 </span>
 <span title="home">
 [Fresh Squeezed IPA](http://www.beeradvocate.com/beer/profile/63/60330/)
-![good](/good.png)
+<good>
 </span>
 
 <span title="rose and crown">
 [El Toro](http://www.eltorobrewing.com/)
 [Oatmeal Stout](http://www.eltorobrewing.com/beer.html)
-![good](/good.png)
+<good>
 </span>
 
 <span title="Q restaurant before the niayh show with ccc and gretchen">
 [Anderson Valley](http://www.avbc.com/)
 [Boont](http://www.avbc.com/beers/amber.html)
 (amber ale)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="calafia, charlie ayers' restaurant, with waynn lue">
 [Barney Flats Oatmeal Stout](http://www.avbc.com/beers/stout.html)
-![good](/good.png),
+<good>,
 </span>
 <span title="auld dubliner irish pub at squaw valley w/gina, dad, vanessa, 12/13/2011">
 [Hop Ottin' IPA](http://beeradvocate.com/beer/profile/193/611)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="home 2/20/2012">
 [Brother David's Double](http://beeradvocate.com/beer/profile/193/4168)
-![good](/good.png)
+<good>
 </span>
 
 <span title="aziza for clara's birthday">
 [Ommegang](http://www.ommegang.com/)
 [Abbey Ale](http://www.ommegang.com/index.php?mcat=1&scat=2&yr=1)
 (red ale)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="from bevmo, drank with gretchen on lazy sunday">
 [Chocolate Indulgence](http://www.ommegang.com/index.php?mcat=1&scat=7&ssnl=1)
 (stout)
-![good](/good.png),
+<good>,
 </span>
 <span title="bluegrass at amnesia w/gina, krista, nathan, and josh, 12/14/2009">
 [Adoration](http://www.ommegang.com/index.php?mcat=1&scat=11&ssnl=1)
 (dark winter ale)
-![ok](/ok.png)
+<ok>
 </span>
 <span title="home while playing pixeljunk shooter before heading to gina's
  for pad thai, 12/22/2009. very sweet! maybe due to the lambic in the blend.">
 [Three Philosophers](http://www.ommegang.com/index.php?mcat=1&scat=4&yr=1)
 (quadrupel)
-![good](/good.png),
+<good>,
 </span>
 <span title="public house w/kieran, 7/1/2010">
 [Hennepin](http://beeradvocate.com/beer/profile/42/141)
-![good](/good.png),
+<good>,
 </span>
 <span title="valley tavern 2/25/2012">
 [Rare Vos](http://beeradvocate.com/beer/profile/42/593)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="westvleteren party, 7/22/2012">
 [Seduction](http://beeradvocate.com/beer/profile/42/76521)
-![good](/good.png),
+<good>,
 [Hennepin](http://beeradvocate.com/beer/profile/42/141)
-![good](/good.png)
+<good>
 </span>
 
 <span title="aziza for clara's birthday">
 [Affligem](http://www.affligembeer.be/)
 [Dubbel](http://beeradvocate.com/beer/profile/196/157)
 (dark red ale)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="home (sf apt) after xmas, while playing pixeljunk shooter, 12/27/2009">
 [Tripel](http://beeradvocate.com/beer/profile/196/1614)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="pelican inn w/michelle">
@@ -1991,7 +1991,7 @@ Old Engine Oil
 (black ale)
 </span>
 <span title="bought at city beer w/walter before district 9 at metreon, 8/19/2009">
-![good](/good.png),
+<good>,
 [Ola Dubh](http://www.harviestoun.com/OlaDubh/)
 (black ale)
 </span>
@@ -2000,354 +2000,354 @@ Old Engine Oil
 <span title="pelican inn w/michelle">
 [Anchor](http://www.anchorbrewing.com/)
 [Porter](http://www.anchorbrewing.com/beers/anchorporter.htm)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="cliff house w/gina, 1/24/2010">
 [Christmas Ale](http://www.anchorbrewing.com/beers/christmasale.htm)
-![ok](/ok.png), <!-- good on tap, maybe bad in bottle? -->
+<ok>, <!-- good on tap, maybe bad in bottle? -->
 </span>
 <span title="dinner w/gina at incanto, 10/20/2011">
 [Old Foghorn](http://beeradvocate.com/beer/profile/28/1445) (barleywine)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="dinner at vanessa's, 8/30/2013">
 [Bigleaf Maple](http://beeradvocate.com/beer/profile/28/97721) (amber)
-![good](/good.png)
+<good>
 </span>
 
 <span title="spruce w/kerri">
 [St. Peter's](http://www.stpetersbrewery.co.uk/)
 [Cream Stout](http://beeradvocate.com/beer/profile/296/2442/)
-![good](/good.png),
+<good>,
 </span>
 <span title="home at the sf apt, winter 2009">
 [Old-Style Porter](http://beeradvocate.com/beer/profile/296/838),
 </span>
 <span title="sf apt, 10/4/2010">
 [IPA](http://beeradvocate.com/beer/profile/296/33609)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="from bevmo">
 [Rogue](http://www.rogue.com/)
 [Hazelnut Brown Nectar](http://www.rogue.com/beers/hazelnut-brown.php)
 (brown ale)
-![bad](/bad.png),
+<bad>,
 [Mocha Porter](http://rogue.com/beers/mocha-porter.php)
-![bad](/bad.png),
+<bad>,
 [Shakespeare Stout](http://www.rogue.com/beers/shakespeare-stout.php)
-![good](/good.png),
+<good>,
 [XS Imperial IPA](http://www.rogue.com/beers/imperial-india-pale-ale.php)
-![ok](/ok.png),
+<ok>,
 [XS Imperial Porter](http://www.rogue.com/beers/imperial-porter.php)
-![ok](/ok.png),
+<ok>,
 [St. Rogue Red](http://www.rogue.com/beers/st-rogue-red-ale.php)
-![good](/good.png),
+<good>,
 </span>
 <span title="bay area brew fest 2010 at fort mason w/gina">
 [Dead Guy Ale](http://beeradvocate.com/beer/profile/132/355)
-![bad](/bad.png)
+<bad>
 </span>
 
 <span title="rose and crown">
 [Lion](http://www.lionbeer.com/)
 [Stout](http://beeradvocate.com/beer/profile/389/1115/)
-![good](/good.png)
+<good>
 </span>
 
 [Stone Brewing Co.](http://www.stonebrew.com/)
 [Arrogant Bastard Ale](http://www.stonebrew.com/arrogantbastard/)
-![good](/good.png),
+<good>,
 [Smoked Porter](http://www.stonebrew.com/porter/)
-![good](/good.png),
+<good>,
 [Imperial Russian Stout](http://www.stonebrew.com/irs/)
-![good](/good.png),
+<good>,
 [Vertical Epic 09.09.09](http://www.stonebrew.com/epic/) (imperial porter)
-![ok](/ok.png),
+<ok>,
 <span title="at monk's kettle with gina, cheri, and dan, sun 2/7/2010">
 [Sublimely Self Righteous](http://stonebrew.com/sublimely/) (black ale)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="wfh 5/27/2010">
 [Levitation Ale](http://stonebrew.com/levitation/)
-![good](/good.png),
+<good>,
 </span>
 <span title="lunch w/nelson at rosamunde, 8/19/2010">
 [Ruination](http://beeradvocate.com/beer/profile/147/4083)
-![good](/good.png),
+<good>,
 </span>
 <span title="nettools happy hour/wheel of misfortune, 10/20/2010">
 [IPA](http://beeradvocate.com/beer/profile/147/88)
-![ok](/ok.png)
+<ok>
 </span>
 
 [Dogfish Head](http://www.dogfish.com/)
 <span title="d.vino in moneta carlo in vegas w/gretchen and lauren, 10/3/2010">
 [60 Minute IPA](http://www.dogfish.com/brewings/Year_Round_Beers/90_Minute_IPA/11/index.htm)
-![good](/good.png),
+<good>,
 </span>
 [90 Minute IPA](http://www.dogfish.com/brewings/Year_Round_Beers/90_Minute_IPA/11/index.htm)
-![good](/good.png),
+<good>,
 [Palo Santo Marron](http://www.dogfish.com/brewings/Year_Round_Beers/Palo_Santo_Marron/51/index.htm)
 (brown ale)
-![bad](/bad.png),
+<bad>,
 <span title="with gina, cheri, and jen at bloodhound fri 1/15/2010. 18% ABV!
  very sweet, more like a dessert wine.">
 [World Wide Stout](http://www.dogfish.com/brews-spirits/the-brews/occassional-rarities/world-wide-stout.htm)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="wheel of misfortune w/nettools, 8/25/2010">
 [Sah'tea](http://beeradvocate.com/beer/profile/10099/45086)
-![good](/good.png),
+<good>,
 </span>
 <span title="wheel of misfortune w/nettools, 9/8/2010">
 [Theobroma](http://www.dogfish.com/brewings/Occasional_Rarities/Theobroma/66/index.htm)
 ([chile light ale](http://beeradvocate.com/beer/style/163))
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="sf apt w/gina, 11/21/2010">
 [Festina Pêche](http://beeradvocate.com/beer/profile/10099/35720) (peach Weissbeir)
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="sf apt, wfh during nettools the game 1/5/2011">
 [Burton Baton](http://beeradvocate.com/beer/profile/10099/18862) (imperial IPA)
-![ok](/ok.png)
+<ok>
 </span>
 
 [Lagunitas](http://www.lagunitas.com/)
 [IPA](http://www.lagunitas.com/beers/ipa.html)
-![good](/good.png),
+<good>,
 [Capuccino Stout](http://beeradvocate.com/beer/profile/220/20445)
-![bad](/bad.png),
+<bad>,
 [The Censored](http://www.lagunitas.com/beers/censored.html) (copper ale)
-![ok](/ok.png)
+<ok>
 [Imperial Red](http://beeradvocate.com/beer/profile/220/22387) (copper ale)
-![good](/good.png),
+<good>,
 <span title="home while watching bringing out the dead, 2/20/2010">
 [Imperial Stout](http://www.lagunitas.com/beers/imperialstout.html)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="nettools 'wheel of misfortune' oncall roleplaying at work, 8/18/2010">
 [Lucky 13](http://www.lagunitas.com/beers/lucky13.html)
-![good](/good.png),
+<good>,
 [Hop Stoopid](http://www.lagunitas.com/beers/hopstoopid.html)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="drinks at paragon w/dan 9/11/2010">
 [Maximus](http://beeradvocate.com/beer/profile/220/1372) (imperial IPA)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="sf apt w/dan and gina, 1/17/2011">
 [A Little Sumpin' Wild](http://beeradvocate.com/beer/profile/220/57912) (ale)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="dinner at monk's kettle w/gina, keith bauman, and roz, 3/15/2011">
 [SF Fusion](http://beeradvocate.com/beer/profile/220/66310) (IPA)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="sf apt w/dan 5/21/2011">
 [The Hairy Eyeball](http://beeradvocate.com/beer/profile/220/2533) (ale)
-![good](/good.png),
+<good>,
 </span>
 <span title="city beer w/gina 6/18/2011">
 [Waldos Special Ale](http://beeradvocate.com/beer/profile/220/68269) (imperial IPA)
-![good](/good.png)
+<good>
 </span>
 
 [Allagash](http://www.allagash.com/)
 [Black](http://www.allagash.com/black.htm) (stout)
-![bad](/bad.png),
+<bad>,
 <span title="city beer w/gina 6/18/2011">
 [Victoria Ale](http://beeradvocate.com/beer/profile/4/30174) (with chardonnay grapes)
-![ok](/ok.png)
+<ok>
 </span>
 
 <span title="home during xmas, drank w/dad and vanessa, she brought this">
 [Alaskan Brewing Co.](http://www.alaskanbeer.com/)
 [Smoked Porter](http://www.alaskanbeer.com/porter.html)
-![ok](/ok.png),
+<ok>,
 [Baltic Porter Ale](http://www.alaskanbeer.com/artman/publish/article_205.shtml)
-![good](/good.png),
+<good>,
 <span title="google tgif 7/9/2010">
 [IPA](http://beeradvocate.com/beer/profile/429/22787)
-![ok](/ok.png)
+<ok>
 </span>
 
 [21st Amendment](http://www.21st-amendment.com/)
 [Watermelon Wheat](http://beeradvocate.com/beer/profile/735/4202)
-![good](/good.png),
+<good>,
 [Amendment Pale Ale](http://beeradvocate.com/beer/profile/735/4204)
-![ok](/ok.png),
+<ok>,
 [Oyster Stout](http://beeradvocate.com/beer/profile/735/10942)
-![good](/good.png),
+<good>,
 [Double Trouble Imperial IPA](http://beeradvocate.com/beer/profile/735/10936)
-![good](/good.png),
+<good>,
 Rustico
-![ok](/ok.png),
+<ok>,
 [Brew Free or Die! IPA](http://beeradvocate.com/beer/profile/735/20781)
-![good](/good.png),
+<good>,
 [Back in Black IPA](http://beeradvocate.com/beer/profile/735/46070)
-![good](/good.png),
+<good>,
 <span title="lunch on first day of break, 3/8/2010">
 St. Patrick O'Sullivan's Irish Red
-![ok](/ok.png),
+<ok>,
 [Diesel Smoked Imperial Stout](http://beeradvocate.com/beer/profile/735/35836)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="lunch 3/17/2010">
 Pyramid Thunderhead IPA
-![ok](/ok.png),
+<ok>,
 Roasted American Amber
-![bad](/bad.png),
+<bad>,
 <span title="lunch 4/5/2010">
 [Bitter American](http://beeradvocate.com/beer/profile/735/34791)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="dinner w/steve garrity, 6/22/2010">
 Mo'Tcho Risin' (imperial chocolate stout)
-![ok](/ok.png),
+<ok>,
 Eurail (Belgian IPA)
-![good](/good.png),
+<good>,
 </span>
 <span title="lunch w/gina, dad, spencer, and ben mayberry 6/27/2010">
 [Golden Doom](http://beeradvocate.com/beer/profile/735/16649) (Belgian pale ale)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="lunch w/dan and dan peterson, 8/15/2010">
 [Hop Crisis](http://beeradvocate.com/beer/profile/735/42063)
-![good](/good.png),
+<good>,
 </span>
 <span title="growlers after lunch w/jeremy, 8/26/2010">
 [Hendrik's Russian Imperial Stout](http://beeradvocate.com/beer/profile/735/60563)
-![bad](/bad.png),
+<bad>,
 2000-2010 Tenure (saison)
-![ok](/ok.png)
+<ok>
 </span>,
 <span title="guys video game night 9/24/2010">
 [North Star Red](http://beeradvocate.com/beer/profile/735/2677)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="lunch mid december 2010">
 [Papa Park's Porter](http://beeradvocate.com/beer/profile/735/63564)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="lunch w/dan, 12/31/2010">
 [Ugly Sweater IPA](http://beeradvocate.com/beer/profile/735/64774)
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="lunch 1/29/2011">
 Drake's Black Robusto Porter
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="dinner alone, 4/7/2011">
 [McCoy's Serious Stout](http://beeradvocate.com/beer/profile/735/67280)
-![good](/good.png),
+<good>,
 </span>
 <span title="indieweb dinner, 9/30/2013">
 OG IPA
-![good](/good.png),
+<good>,
 MCA Stout
-![bad](/bad.png),
+<bad>,
 </span>
 <span title="barrel aged beer fest w/ryan graciano, 11/9/2013">
 [Midnight At Waterloo](https://untappd.com/b/21st-amendment-brewery-midnight-at-waterloo/493301)
 (Belgian dark ale, aged in bourbon barrels)
-![good](/good.png)
+<good>
 </span>
 
 [Young's](http://www.youngs.co.uk/)
 [Double Chocolate Stout](http://en.wikipedia.org/wiki/Young's_Brewery#Beers)
-![good](/good.png)
+<good>
 
 [Guinness](http://guinness.com/)
 (stout)
-![good](/good.png)
+<good>
 
 [Gordon Biersch](http://gordonbiersch.com/)
 [Märzen](http://www.gordonbiersch.com/brewery/beer/)
-![bad](/bad.png),
+<bad>,
 [Schwarzbier](http://beeradvocate.com/beer/profile/1156/22080)
-![ok](/ok.png)
+<ok>
 
 [Dos Equis](http://dosequis.com/)
 (amber lager)
-![good](/good.png)
+<good>
 
 [Bass](http://bass.com/)
 (pale ale)
-![good](/good.png)
+<good>
 
 [Newcastle](http://www.newcastlebrown.com/)
 [Brown Ale](http://beeradvocate.com/beer/profile/342/639)
-![good](/good.png),
+<good>,
 <span title="4th of july party at cloud house, 7/4/2011">
 [Summer Ale](http://beeradvocate.com/beer/profile/342/50670)
-![ok](/ok.png),
+<ok>,
 </span>
 <span title="dinner at gina's parents' house in phoenix, 12/22/2011">
 [Winter IPA](http://beeradvocate.com/beer/profile/342/73999)
-![bad](/bad.png)
+<bad>
 </span>
 
 [Negra Modelo](http://beeradvocate.com/beer/profile/75/667/)
 ([Grupo Modelo](http://www.gmodelo.com/);
  [Vienna lager](http://en.wikipedia.org/wiki/Vienna_lager))
-![good](/good.png)
+<good>
 
 [Samuel Smith](http://en.wikipedia.org/wiki/Samuel_Smith_Brewery)
 [Imperial Stout](http://beeradvocate.com/beer/profile/113/782)
-![good](/good.png),
+<good>,
 [Oatmeal Stout](http://beeradvocate.com/beer/profile/113/571/)
-![good](/good.png),
+<good>,
 [Nut Brown Ale](http://beeradvocate.com/beer/profile/113/576)
-![good](/good.png),
+<good>,
 [Pale Ale](http://beeradvocate.com/beer/profile/113/575)
-![ok](/ok.png),
+<ok>,
 <span title="dinner at 21st amendment, 12/21/2010">
 [Winter Welcome Ale](http://beeradvocate.com/beer/profile/113/577)
-![good](/good.png),
+<good>,
 </span>
 [Organic Best Ale](http://beeradvocate.com/beer/profile/113/781)
-![bad](/bad.png)
+<bad>
 
 [Bear Republic](http://www.bearrepublic.com/)
 [Red Rocket](http://www.bearrepublic.com/ourbeers.php) (red ale)
-![good](/good.png),
+<good>,
 [Racer 5 IPA](http://www.bearrepublic.com/ourbeers.php)
-![good](/good.png),
+<good>,
 [Hop Rod Rye](http://www.bearrepublic.com/ourbeers.php)
-![good](/good.png),
+<good>,
 <span title="barrel aged beer fest w/ryan graciano, 11/9/2013">
 [Prickly Pear Grizz](http://beeradvocate.com/beer/profile/610/70575)
 (wild ale, aged in red wine barrels),
-![bad](/bad.png)
+<bad>
 New Oak Red Rocket Ale
 (aged in first use american oak barrels)
-![bad](/bad.png)
+<bad>
 </span>
 
 
 [Abita](http://www.abita.com/)
 [Turbodog](http://www.abita.com/brews/turbodog.php)
 (dark brown ale),
-![good](/good.png)
+<good>
 <span title="sf beerfest 2010 w/clayton, nathan, lauren, 4/24/2010">
 [Jockamo IPA](http://beeradvocate.com/beer/profile/3/39390)
-![bad](/bad.png)
+<bad>
 </span>
 
 [Spetzl](http://www.shiner.com/)
 [Shiner Bock](http://beeradvocate.com/beer/profile/143/1352)
-![ok](/ok.png),
+<ok>,
 <span title="bay area brew fest 2010 at fort mason w/gina">
 [Shiner Hefeweizen](http://beeradvocate.com/beer/profile/143/1552)
-![ok](/ok.png)
+<ok>
 </span>
 
 [Widmer](http://www.widmer.com/)
 [Hefeweizen](http://beeradvocate.com/beer/profile/8/17)
-![bad](/bad.png),
+<bad>,
 <span title="bay area brew fest 2010 at fort mason w/gina">
 [Drifter Pale Ale](http://beeradvocate.com/beer/profile/8/46767l)
-![bad](/bad.png)
+<bad>
 </span>

@@ -3,9 +3,9 @@ classical music
 <p class="right"><img src="/notes.png" alt="music" /></p>
 
 Classical pieces I've heard performed live.
-![good](/good.png) I liked,
-![ok](/ok.png) were just ok,
-![bad](/bad.png) I didn't like.
+<good> I liked,
+<ok> were just ok,
+<bad> I didn't like.
 
 Naturally, this is very incomplete, and it's biased toward my taste, which tends
 toward the Romantic and Contemporary periods.
@@ -13,285 +13,285 @@ toward the Romantic and Contemporary periods.
 
 
 [Beethoven - Overture to King Stephen](http://www.sfsymphony.org/Watch-Listen-Learn/Read-Program-Notes/Program-Notes/BEETHOVEN-%c2%a0Overture-to-King-Stephen,-Opus-117-%e2%94%82-Ma.aspx)
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, Jan 18 2014](http://www.sfsymphony.org/Buy-Tickets/2013-2014/Beethoven-and-Bates-Mass-in-C.aspx)
 
 [Mason Bates -Liquid Interface](http://www.sfsymphony.org/Watch-Listen-Learn/Read-Program-Notes/Program-Notes/BATES-%c2%a0Liquid-Interface-for-Orchestra-and-Electron.aspx)
-![good](/good.png)  
+<good>  
 [SF Symphony, Jan 18 2014](http://www.sfsymphony.org/Buy-Tickets/2013-2014/Beethoven-and-Bates-Mass-in-C.aspx)
 
 [Beethoven - Mass in C](http://www.sfsymphony.org/Watch-Listen-Learn/Read-Program-Notes/Program-Notes/BEETHOVEN-%c2%a0Overture-to-King-Stephen,-Opus-117-%e2%94%82-Ma.aspx)
-![bad](/bad.png)  
+<bad>  
 [SF Symphony, Jan 18 2014](http://www.sfsymphony.org/Buy-Tickets/2013-2014/Beethoven-and-Bates-Mass-in-C.aspx)
 
 [Mendelssohn - Suite from A Midsummer Night’s Dream](http://www.sfsymphony.org/Watch-Listen-Learn/Read-Program-Notes/Program-Notes/MENDELSSOHN-Suite-from-A-Midsummer-Night%E2%80%99s-Dream-%E2%94%82.aspx)
-![good](/good.png)  
+<good>  
 [SF Symphony, Oct 14 2013](http://www.sfsymphony.org/Buy-Tickets/2013-2014/Mendelssohn-and-Ades-Heras-Casado-conducts-A-Midsu.aspx)
 
 [Thomas Adès - Scenes from The Tempest](http://www.sfsymphony.org/Watch-Listen-Learn/Read-Program-Notes/Program-Notes/ADES-Scenes-from-The-Tempest.aspx)
-![bad](/bad.png)  
+<bad>  
 [SF Symphony, Oct 14 2013](http://www.sfsymphony.org/Buy-Tickets/2013-2014/Mendelssohn-and-Ades-Heras-Casado-conducts-A-Midsu.aspx)
 
 [Mendelssohn - The First Walpurgis Night](http://www.sfsymphony.org/Watch-Listen-Learn/Read-Program-Notes/Program-Notes/MENDELSSOHN-Suite-from-A-Midsummer-Night%E2%80%99s-Dream-%E2%94%82.aspx)
-![good](/good.png)  
+<good>  
 [SF Symphony, Oct 14 2013](http://www.sfsymphony.org/Buy-Tickets/2013-2014/Mendelssohn-and-Ades-Heras-Casado-conducts-A-Midsu.aspx)
 
 [Samuel Carl Adams - Drift and Providence](http://www.sfsymphony.org/Watch-Listen-Learn/Read-Program-Notes/Program-Notes/SAMUEL-CARL-ADAMS-Drift-and-Providence.aspx)
-![good](/good.png)  
+<good>  
 [SF Symphony, Mar 9 2013](http://www.sfsymphony.org/Buy-Tickets/2012-13/MTT-and-Yuja-Wang-Berio,-Beethoven,-Brahms.aspx)
 
 [Scriabin -_Rêverie](http://www.sfsymphony.org/Watch-Listen-Learn/Read-Program-Notes/Program-Notes/SCRIABIN-Reverie,-Opus-24.aspx)_
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, Oct 18 2012](http://www.sfsymphony.org/season/Event.aspx?eventid=50238)
 
 [Rachmaninoff - _Piano Concerto No. 2_](http://www.sfsymphony.org/Watch-Listen-Learn/Read-Program-Notes/Program-Notes/RACHMANINOFF-Concerto-No-2-in-C-minor-for-Piano-an.aspx)
-![good](/good.png)  
+<good>  
 [SF Symphony, Oct 18 2012](http://www.sfsymphony.org/season/Event.aspx?eventid=50238)
 
 [Prokofiev - _Ivan the Terrible_](http://www.sfsymphony.org/Watch-Listen-Learn/Read-Program-Notes/Program-Notes/PROKOFIEV-Ivan-the-Terrible,-Oratorio-after-the-Fi.aspx)
-![bad](/bad.png)  
+<bad>  
 [SF Symphony, Oct 18 2012](http://www.sfsymphony.org/season/Event.aspx?eventid=50238)
 
 [Kalevi Aho - _Minea_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=58638)
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, May 27 2012](http://www.sfsymphony.org/season/Event.aspx?eventid=50238)
 
 [Prokofiev - _Concerto No. 1_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=58640)
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, May 27 2012](http://www.sfsymphony.org/season/Event.aspx?eventid=50238)
 
 [Shostakovich - _Symphony No. 6_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=58642)
-![good](/good.png)  
+<good>  
 [SF Symphony, May 27 2012](http://www.sfsymphony.org/season/Event.aspx?eventid=50238)
 
 [Schreker - _Prelude to Die Gezeichneten_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=55958)
-![good](/good.png)  
+<good>  
 [SF Symphony, Feb 18 2012](http://www.sfsymphony.org/season/Event.aspx?eventid=49960)
 
 [Rachmaninoff: _Concerto No. 4_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=55960)
-![good](/good.png)  
+<good>  
 [SF Symphony, Feb 18 2012](http://www.sfsymphony.org/season/Event.aspx?eventid=49960)
 
 [Saint-Saëns: _Symphony No. 3_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=55962)
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, Feb 18 2012](http://www.sfsymphony.org/season/Event.aspx?eventid=49960)
 
 [Janáček - _Sinfonietta_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=55200)
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, Jan 14 2012](http://www.sfsymphony.org/season/Event.aspx?eventid=50350)
 
 [Debussy - _Le Martyre de Saint Sébastien_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=55202)
-![bad](/bad.png)  
+<bad>  
 [SF Symphony, Jan 14 2012](http://www.sfsymphony.org/season/Event.aspx?eventid=50350)
 
 Beethoven - _Symphony No. 8_
-![good](/good.png)  
+<good>  
 [SF Symphony, Oct 28 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=49782)
 
 Henri Dutilleux - _L’Arbre Des Songes_
-![good](/good.png)  
+<good>  
 [SF Symphony, Oct 28 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=49782)
 
 Haydn - _Symphony No. 99_
-![bad](/bad.png)  
+<bad>  
 [SF Symphony, Oct 28 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=49782)
 
 [Mozart - _Symphony No. 35 in D major_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=53904)
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, Sep 30 2011](https://www.sfsymphony.org/season/Event.aspx?eventid=49692)
 
 [Adès - _Polaris: Voyage for Orchestra_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=53906)
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, Sep 30 2011](https://www.sfsymphony.org/season/Event.aspx?eventid=49692)
 
 [Stravinsky - _Petrushka_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=53908)
-![good](/good.png)  
+<good>  
 [SF Symphony, Sep 30 2011](https://www.sfsymphony.org/season/Event.aspx?eventid=49692)
 
 Stravinsky - _Scherzo a la Ruse_
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, Sep 30 2011](https://www.sfsymphony.org/season/Event.aspx?eventid=49692)
 
 Knut Nystedt - _"Immortal Bach"_
-![good](/good.png)  
+<good>  
 [SF Symphony, May 22 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=43342)
 
 J.S. Bach - _“Busslied”_
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, May 22 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=43342)
 
 Schubert - _“An Silvia”_
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, May 22 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=43342)
 
 Schumann - _“Widmung”_
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, May 22 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=43342)
 
 Barber - _Agnus Dei_
-![good](/good.png)  
+<good>  
 [SF Symphony, May 22 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=43342)
 
 Mahler - _“Ich bin der Welt abhanden gekommen”_
-![good](/good.png)  
+<good>  
 [SF Symphony, May 22 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=43342)
 
 Mahler- _“Scheiden und Meiden”_ from Des Knaben Wunderhorn
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, May 22 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=43342)
 
 Duruflé - _Requiem_
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, May 22 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=43342)
 
 [Mahler's Symphony No. 6](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=52398)
-![good](/good.png)  
+<good>  
 [SF Symphony, May 12 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=42992)
 
 [Dvorák - _New World Symphony_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=51654)
-![good](/good.png)  
+<good>  
 [SF Symphony, Mar 25 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=43178)
 
 [Mozart - _Violin Concerto No. 4_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=51652)
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, Mar 25 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=43178)
 
 [Hindemith - _Concert Music, Opus 50_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=51340)
-![bad](/bad.png)  
+<bad>  
 [SF Symphony, Mar 5 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=42838)
 
 [Stenhammar, Nielsen, Grieg, Sibelius - _Songs of Scandinavia_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=51344)
-![bad](/bad.png)  
+<bad>  
 [SF Symphony, Mar 5 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=42838)
 
 [Brahms - _Serenade No. 1_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=51348)
-![bad](/bad.png)  
+<bad>  
 [SF Symphony, Mar 5 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=42838)
 
 [Beethoven - _Symphony No. 4_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=48996)
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, Jan 21 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=43178)
 
 [Beethoven - _Piano Concerto No. 3_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=48996)
-![good](/good.png)  
+<good>  
 [SF Symphony, Jan 21 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=43178)
 
 [Beethoven - _Leonore Overture No. 3_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=48996)
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, Jan 21 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=43178)
 
 [Mussorgsky - _Prelude to Khovanshchina_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=48716)
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, Jan 15 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=43196)
 
 [Khachaturian - _Concerto for Violin and Orchestra_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=48718)
-![bad](/bad.png)  
+<bad>  
 [SF Symphony, Jan 15 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=43196)
 
 [Prokofiev - _Romeo and Juliet_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=48720)
-![good](/good.png)  
+<good>  
 [SF Symphony, Jan 15 2011](http://www.sfsymphony.org/season/Event.aspx?eventid=43196)
 
 [Brahms - _Academic Festival Overture_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=48218)
-![bad](/bad.png)  
+<bad>  
 [SF Symphony, Nov 27 2010](http://www.sfsymphony.org/season/Event.aspx?eventid=43016)
 
 [Berg - _Lyric Suite_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=48220)
-![good](/good.png)  
+<good>  
 [SF Symphony, Nov 27 2010](http://www.sfsymphony.org/season/Event.aspx?eventid=43016)
 
 [Milhaud - _La Création du monde_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=48098)
-![good](/good.png)  
+<good>  
 [SF Symphony, Nov 12 2010](http://www.sfsymphony.org/season/Event.aspx?eventid=42782)
 
 [Wainwright - _Five Shakespeare Sonnets_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=48100)
-![bad](/bad.png)  
+<bad>  
 [SF Symphony, Nov 12 2010](http://www.sfsymphony.org/season/Event.aspx?eventid=42782)
 
 [Weill - _Symphony No. 2_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=48102)
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, Nov 12 2010](http://www.sfsymphony.org/season/Event.aspx?eventid=42782)
 
 [Harrison - _A Parade_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=47148)
-![bad](/bad.png)  
+<bad>  
 [SF Symphony, Sep 25 2010](http://www.sfsymphony.org/season/Event.aspx?eventid=42420)
 
 [Copland - _Quiet City_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=47150)
-![good](/good.png) ![good](/good.png)  
+<good> <good>  
 [SF Symphony, Sep 25 2010](http://www.sfsymphony.org/season/Event.aspx?eventid=42420)
 
 [Copland - _Symphony for Organ and Orchestra_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=47152)
-![good](/good.png)  
+<good>  
 [SF Symphony, Sep 25 2010](http://www.sfsymphony.org/season/Event.aspx?eventid=42420)
 
 Tchaikovsky: Symphony No. 4 in F minor, Opus 36
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, Sep 25 2010](http://www.sfsymphony.org/season/Event.aspx?eventid=42420)
 
 Stravinsky - _Ode (Triptychon for Orchestra)_
-![bad](/bad.png)  
+<bad>  
 [SF Symphony, May 21 2010](http://www.sfsymphony.org/season/Event.aspx?eventid=35650)
 
 [Bernstein - _Chichester Psalms_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=45398)
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, May 21 2010](http://www.sfsymphony.org/season/Event.aspx?eventid=35650)
 
 [Ravel - _Daphnis et Chloé_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=45392)
-![good](/good.png)  
+<good>  
 [SF Symphony, May 21 2010](http://www.sfsymphony.org/season/Event.aspx?eventid=35650)
 
 [Dutilleux - _Métaboles_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=41262)
-![good](/good.png)  
+<good>  
 [SF Symphony, Nov 14 2009](http://www.sfsymphony.org/season/Event.aspx?eventid=35482)
 
 [Sibelius - _Symphony No. 5 in E-flat major_](http://www.sfsymphony.org/music/ProgramNotes.aspx?id=41268)
-![good](/good.png)  
+<good>  
 [SF Symphony, Nov 14 2009](http://www.sfsymphony.org/season/Event.aspx?eventid=35482)
 
 Schumann - _Cello Concerto_
-![good](/good.png)  
+<good>  
 [SF Symphony, Nov 14 2009](http://www.sfsymphony.org/season/Event.aspx?eventid=35482)
 
 [Mason Bates - _The B-Sides_](http://sfsymphony.org/music/ProgramNotes.aspx?id=38632)
-![good](/good.png)  
+<good>  
 [SF Symphony, May 23 2009](http://sfsymphony.org/season/Event.aspx?eventid=27360)
 
 [Sibelius - _Symphony No. 4 in A Minor_](http://sfsymphony.org/music/ProgramNotes.aspx?id=38634)
-![good](/good.png) ![good](/good.png)  
+<good> <good>  
 [SF Symphony, May 23 2009](http://sfsymphony.org/season/Event.aspx?eventid=27360)
 
 [Prokofiev - _Piano Concerto No. 2 in G minor_](http://sfsymphony.org/music/ProgramNotes.aspx?id=38636)
-![bad](/bad.png)  
+<bad>  
 [SF Symphony, May 23 2009](http://sfsymphony.org/season/Event.aspx?eventid=27360)
 
 [Mussorgsky - _Pictures at an Exhibition_](http://sfsymphony.org/music/ProgramNotes.aspx?id=38286)
 (orchestrated by Ravel)
-![good](/good.png) ![good](/good.png)  
+<good> <good>  
 [SF Symphony, April 18 2009](http://sfsymphony.org/season/Event.aspx?eventid=27350)
 
 Mozart - [_Overture to Le nozze di Figaro_](http://sfsymphony.org/music/ProgramNotes.aspx?id=38284)
-![good](/good.png),
+<good>,
 [_Exsultate, jubilate_](http://sfsymphony.org/music/ProgramNotes.aspx?id=38284)
-![ok](/ok.png),
+<ok>,
 [_Symphony No. 38 in D major_](http://sfsymphony.org/music/ProgramNotes.aspx?id=38284)
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, April 18 2009](http://sfsymphony.org/season/Event.aspx?eventid=27350)
 
 [Gabrieli - _In ecclesiis from Symphoniae sacrae_](http://sfsymphony.org/music/ProgramNotes.aspx?id=37542)
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, March 7 2009](http://sfsymphony.org/season/Event.aspx?eventid=26942)
 
 [Ligeti - _Requiem_](http://sfsymphony.org/music/ProgramNotes.aspx?id=37544)
-![good](/good.png)  
+<good>  
 [SF Symphony, March 7 2009](http://sfsymphony.org/season/Event.aspx?eventid=26942)
 
 [Ravel - _Concerto in G major for Piano and Orchestra_](http://sfsymphony.org/music/ProgramNotes.aspx?id=37546)
-![good](/good.png)  
+<good>  
 [SF Symphony, March 7 2009](http://sfsymphony.org/season/Event.aspx?eventid=26942)
 
 [Liszt - _Tasso_](http://sfsymphony.org/music/ProgramNotes.aspx?id=37548)
-![ok](/ok.png)  
+<ok>  
 [SF Symphony, March 7 2009](http://sfsymphony.org/season/Event.aspx?eventid=26942)
 
 Hillborg - Exquisite Corpse
-![good](/good.png)  
+<good>  

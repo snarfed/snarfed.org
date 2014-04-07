@@ -7,74 +7,74 @@ Notes on wines we tasted at the spring
 [SF Vintners Market 2010](http://www.sfvintnersmarket.com/).
 I've also folded them into my [wine page](/wine).
 
-![good](/good.png) means I liked it,
-![ok](/ok.png) means it was just ok,
-![bad](/bad.png) means I didn't like it.
+<good> means I liked it,
+<ok> means it was just ok,
+<bad> means I didn't like it.
 
 [Suacci Carciere](http://www.suaccicarciere.com/) (Santa Rosa, California)  
 [Pinot Noir 2006](http://www.suaccicarciere.com/2006_pinot.html)
-![good](/good.png),
+<good>,
 [2007](http://www.suaccicarciere.com/2007_pinot.html)
-![bad](/bad.png)
+<bad>
 
 [Goosecross](http://goosecross.com/) (Napa, California)  
 [Merlot 2006](http://store.goosecross.com/2006-napa-valley-merlot-750ml---goosecross-wines-p667.aspx)
-![ok](/ok.png),
+<ok>,
 [Cabernet 2007](http://store.goosecross.com/2007-napa-valley-cabernet-750ml---goosecross-wines-p723.aspx)
-![good](/good.png),
+<good>,
 [Syrah 2007](http://store.goosecross.com/2007-napa-valley-syrah-750ml---goosecross-wines-p713.aspx)
-![ok](/ok.png)
+<ok>
 
 [Benjamin Silver](http://www.silverwine.com/) (Santa Barbara, California)  
 [Pinot 2005](http://www.silverwine.com/2005pinotjulia.html)
-![ok](/ok.png),
+<ok>,
 [Cabernet Franc 2000](http://www.silverwine.com/20cafr.html)
-![bad](/bad.png),
+<bad>,
 [Mourvredre Syrah 2001](http://www.silverwine.com/20symolavi.html)
-![ok](/ok.png),
+<ok>,
 Syrah 2007
-![bad](/bad.png)
+<bad>
 
 [Merriam](http://www.merriamvineyards.com/) (Sonoma, California)  
 [Jones Cabernet Franc 2006](http://www.merriamvineyards.com/vintages/06JonesCabFranc.php)
-![bad](/bad.png)
+<bad>
 
 [Grassi](http://www.grassiwines.com/wine.html) (Napa, California)  
 [Cabernet Sauvignon 2006](http://www.grassiwines.com/wine.html)
-![ok](/ok.png)
+<ok>
 
 [Darms Lane](http://darmslanewine.com/) (Napa, California)  
 [Cabernet Sauvignon 2005](http://darmslanewine.com/index.cfm?method=storeproducts.showDrilldown&productid=fdddd1d9-f94d-fe1d-d6d4-2648c1c36ffc)
-![good](/good.png),
+<good>,
 [2006](http://darmslanewine.com/index.cfm?method=storeproducts.showDrilldown&ProductID=4f538d76-d00a-1e14-e2f5-8431298b7e65)
-![ok](/ok.png)
+<ok>
 
 [Turnbull](http://www.turnbullwines.com/) (Napa, California)  
 Toroso 2007
-![bad](/bad.png),
+<bad>,
 Cabernet Sauvignon 2006
-![ok](/ok.png)
+<ok>
 
 [Truchard](http://www.truchardvineyards.com/) (Napa, California)  
 [Pinot 2007](http://www.truchardvineyards.com/wines/pinot_noir.php)
-![ok](/ok.png),
+<ok>,
 [Petite Verdot 2006](http://www.truchardvineyards.com/wines/petit_verdot.php)
-![bad](/bad.png)
+<bad>
 
 [Tin Barn](http://www.tinbarnvineyards.com/) (Napa/Sonoma, California)  
 Pinot 2006
-![ok](/ok.png),
+<ok>,
 Zinfandel 2007
-![ok](/ok.png)
+<ok>
 
 [Thomas George](http://www.thomasgeorgeestates.com/) (Sonoma, California)  
 [Estate Pinot Noir 2007](http://www.thomasgeorgeestates.com/wines_pinot.php)
-![ok](/ok.png),
+<ok>,
 [Allen Vineyard Pinot Noir 2007](http://www.thomasgeorgeestates.com/wines_pinot.php)
-![good](/good.png)
+<good>
 
 [Pietra Santa](http://www.pietrasantawinery.com/) (Monterey, California)  
 [Zinfandel 2007](http://www.pietrasantawinery.com/Wines/Pietra%20Santa/Zinfandel/2007.aspx)
-![bad](/bad.png),
+<bad>,
 [Sassolino 2006](http://www.pietrasantawinery.com/Wines/Pietra%20Santa/Sassolino/2006.aspx)
-![ok](/ok.png)
+<ok>

@@ -5,12 +5,12 @@ games
 
 [Games I've played](#played) and
 [games I'd like to play](#to_play).
-![good](/good.png) means I liked it,
-![ok](/ok.png) means it was just ok,
-![bad](/bad.png) means I didn't like it.
+<good> means I liked it,
+<ok> means it was just ok,
+<bad> means I didn't like it.
 
 Naturally, this is biased toward my taste. If I mark a game
-<nobr>![bad](/bad.png),</nobr> I may still think it's good overall, but just
+<nobr><bad>,</nobr> I may still think it's good overall, but just
 doesn't match my own personal taste, and vice versa.
 
 Also see [books](/books), [movies](/movies), and
@@ -122,211 +122,211 @@ _([Krysalide](http://krysalide.fr/)/[Gaming Side](http://www.gaming-side.com/)/[
 
   * _[Broken Age](http://www.gamespot.com/reviews/broken-age-act-i-review/1900-6415631/)_
 ([Double Fine](http://www.doublefine.com/))
-![good](/good.png)
+<good>
 
   * _[The Room](http://fireproofgames.com/the-room)_
 ([Fireproof Games](http://fireproofgames.com/))
-![ok](/ok.png)
+<ok>
 
   * _[The Stanley Parable](http://www.gamespot.com/the-stanley-parable/)_
 ([Galactic Cafe](http://www.galactic-cafe.com/))
-![good](/good.png)
+<good>
 
   * _[République](http://www.gamespot.com/republique/)_
 ([Camouflaj](http://camouflaj.com/))
-![bad](/bad.png)
+<bad>
 
   * _[Bioshock Infinite: Burial At Sea](http://www.edge-online.com/features/lost-at-sea-why-bioshock-and-irrational-could-become-victims-of-their-own-success/)_
 ([Irrational](http://irrationalgames.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Morphopolis](http://www.gamespot.com/reviews/morphopolis-review/1900-6415553/)_
 ([Micro Macro](http://mcro.org/))
-![bad](/bad.png)
+<bad>
 
   * _[Device 6](http://www.edge-online.com/review/device-6-review/)_
 ([Simogo](http://simogo.com/))
-![good](/good.png)
-![good](/good.png)
+<good>
+<good>
 
   * _[Duet](http://penny-arcade.com/report/article/duet-is-a-hypnotic-rhythm-game-hiding-in-the-shell-of-a-simple-looking-ios)_
 ([Kumobius](http://www.kumobius.com/))
-![ok](/ok.png)
+<ok>
 
   * _[The Wolf Among Us](http://www.gamespot.com/the-wolf-among-us/)_
 ([Telltale](http://telltalegames.com/))
-![good](/good.png)
-![good](/good.png)
+<good>
+<good>
 
   * _[Rain](http://www.gamespot.com/rain/)_
 ([Sony](http://scea.com/)/SCE Japan Studio)
-![ok](/ok.png)
+<ok>
 
   * _[Bear Stearns Bravo](https://www.bearstearnsbravo.com/)_
 ([Synydyne](http://www.synydyne.com/))
-![bad](/bad.png)
+<bad>
 
   * _[Brothers: A Tale Of Two Sons](http://www.gamespot.com/brothers-a-tale-of-two-sons/)_
 ([Starbreeze](http://www.starbreeze.com/))
-![good](/good.png)
+<good>
 
   * _[Thomas Was Alone](http://www.gamespot.com/thomas-was-alone/)_
-![good](/good.png)
+<good>
 
   * _[Bioshock Infinite](http://www.gamespot.com/bioshock-infinite/)_
 ([Irrational](http://irrationalgames.com/))
-![good](/good.png)
+<good>
 
   * _[Kentucky Route Zero](http://kentuckyroutezero.com/)_
 ([Cardboard Computer](http://cardboardcomputer.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Proteus](http://www.visitproteus.com/)_
 ([Twisted Tree Games](http://twistedtreegames.tumblr.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Kairo](http://kairo.lockeddoorpuzzle.com/)_
 ([Richard Perrin](http://www.lockeddoorpuzzle.com/site/))
-![ok](/ok.png)
+<ok>
 
   * _[Dear Esther](http://dear-esther.com/)_
 ([The Chinese Room](http://thechineseroom.co.uk/))
-![ok](/ok.png)
+<ok>
 
   * _[Antichamber](http://www.antichamber-game.com/)_
 ([Alexander Bruce](http://www.demruth.com/))
-![good](/good.png)
+<good>
 
   * _[Closure](http://www.gamespot.com/closure/)_
  (Eyebrow Interactive)
-![bad](/bad.png)
+<bad>
 
   * _[The Unfinished Swan](http://www.gamespot.com/the-unfinished-swan/)_
 ([Giant Sparrow](http://giantsparrow.com/))
-![good](/good.png)
+<good>
 
   * _[Dishonored](http://www.gamespot.com/dishonored/)_
 ([Arkane](http://www.arkane-studios.com/))
-![good](/good.png)
+<good>
 
   * _[Mark Of The Ninja](http://www.gamespot.com/mark-of-the-ninja/)_
 ([Klei](http://kleientertainment.com/))
-![good](/good.png)
+<good>
 
   * _[Dyad](http://www.gamespot.com/dyad-2012/)_
 ([Right Square Bracket Left Square Bracket](http://www.rsblsb.com/))
-![good](/good.png)
+<good>
 
   * _[Papo & Yo](http://www.gamespot.com/papo-and-yo/)_
 ([Minority](http://www.weareminority.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Sound Shapes](http://www.gamespot.com/sound-shapes/)_
 ([Queasy](http://www.queasygames.com/))
-![ok](/ok.png)
+<ok>
 
   * _[The Act](http://www.theactgame.com/)_
 ([React Entertainment](http://www.theactgame.com/About-Us/))
-![good](/good.png)
-![ok](/ok.png)
+<good>
+<ok>
 
   * _[Quantum Conundrum](http://www.gamespot.com/quantum-conundrum/)_
 ([Airtight Games](http://www.airtightgames.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Botanicula](http://www.botanicula.net/)_
 ([Amanita](http://amanitadesign.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Fez](http://polytroncorporation.com/fez)_
 ([Polytron](http://polytroncorporation.com/))
-![good](/good.png)
+<good>
 
   * _[CodeRunner](http://www.coderunnergame.com/)_
 ([RocketChicken](http://www.rocketchicken.com/))
-![good](/good.png)
+<good>
 
   * _[LostWinds](http://www.gamespot.com/lostwinds-2011/)_
 ([Frontier](http://www.frontier.co.uk/))
-![ok](/ok.png)
+<ok>
 
   * _[Journey](http://thatgamecompany.com/games/journey/)_
 ([thatgamecompany](http://www.thatgamecompany.com/))
-![good](/good.png)
-![ok](/ok.png)
+<good>
+<ok>
 
   * _[Beat Sneak Bandit](http://www.gamespot.com/beat-sneak-bandit/)_
 ([Simogo](http://simogo.com))
-![good](/good.png)
+<good>
 
   * _[Contre Jour](http://www.gamespot.com/iphone/adventure/contre-jour-hd/)_
 ([Chillingo](http://www.chillingo.com/))
-![good](/good.png)
+<good>
 
   * _[To The Moon](http://www.gamespot.com/to-the-moon/platform/pc)_
 ([Freebird](http://www.freebirdgames.com/))
-![good](/good.png)
+<good>
 
   * _[Uncharted 3](http://www.naughtydog.com/games/uncharted)_
 ([Naughty Dog](http://www.naughtydog.com/))
-![good](/good.png)
-![ok](/ok.png)
+<good>
+<ok>
 
   * _[Okabu](http://www.gamespot.com/ps3/action/okabu/review.html)_
 ([HandCircus](http://www.handcircus.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Cave Story](http://www.gamespot.com/ds/action/cavestory/)_
 ([Studio Pixel](http://hp.vector.co.jp/authors/VA022293/)/[Nicalis](http://www.nicalis.com/))
-![bad](/bad.png)
+<bad>
 
   * _[Bastion](http://www.gamespot.com/xbox360/rpg/bastion/)_
 ([Supergiant](http://supergiantgames.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Gun Mute](http://spacecatrocketship.blogspot.com/2008/03/gun-mute-download-now.html)_
 ([Pacian](http://www.blogger.com/profile/15674211302650875387))
-![bad](/bad.png)
+<bad>
 
   * _[SuperBrothers: Sword and Sworcery EP](http://www.swordandsworcery.com/)_
 ([Capy](http://www.capybaragames.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Child of Eden](http://www.gamespot.com/xbox360/action/childofeden/)_
 ([Tetsuya Mizuguchi](http://en.wikipedia.org/wiki/Tetsuya_Mizuguchi))
-![good](/good.png)
+<good>
 
   * _[LA Noire](http://www.rockstargames.com/lanoire/splash.html)_
 ([Team Bondi](http://www.teambondi.com/))
-![good](/good.png)
+<good>
 
   * _[Portal 2](http://www.thinkwithportals.com/)_
 ([Valve](http://valvesoftware.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Cordy](http://www.cordythegame.com/)_
 ([SilverTree](http://www.silvertreemedia.com/))
-![bad](/bad.png)
+<bad>
 
   * _[Fract](http://richardeflanagan.com/)_
 ([Richard Flanagan](http://richardeflanagan.com/))
-![good](/good.png)
+<good>
 
   * _[Stacking](http://www.facebook.com/stackingvideogame)_
 ([Double Fine](http://www.doublefine.com/))
-![good](/good.png)
+<good>
 
   * _[Ilomilo](http://ilomilo.com/)_
 ([Southend](http://www.southend.se/))
-![good](/good.png)
+<good>
 
   * _[Dance Central](http://www.dancecentral.com/)_
 ([Harmonix](http://www.harmonixmusic.com/))
-![good](/good.png)
+<good>
 
   * _[Kinect Adventures](http://marketplace.xbox.com/en-US/Product/Kinect-Adventures/66acd000-77fe-1000-9115-d8024d5308ed)_
 (Good Science/[Microsoft](http://www.microsoft.com/games/))
-![ok](/ok.png)
+<ok>
 
 <!-- played a bit with gina but not enough and wasn't motivated to continue
   * _[The UnderGarden](http://www.atari.com/undergarden)_
@@ -335,466 +335,466 @@ _([Krysalide](http://krysalide.fr/)/[Gaming Side](http://www.gaming-side.com/)/[
 
   * _[Castle Crashers](http://www.castlecrashers.com/)_
 ([The Behemoth](http://www.thebehemoth.com/))
-![good](/good.png)
+<good>
 
   * _[Lara Croft and the Guardian of Light](http://www.laracroftandtheguardianoflight.com/)_
 ([Crystal Dynamics](http://www.crystald.com/))
-![good](/good.png)
+<good>
 
   * _[Red Dead Redemption](http://rockstargames.com/reddeadredemption/)_
 ([Rockstar](http://www.rockstargames.com/))
-![good](/good.png)
+<good>
 
   * _[Limbo](http://www.limbogame.org/)_
 ([PLAYDEAD](http://www.playdeadgames.com/about/))
-![good](/good.png)
+<good>
 
   * _[The Misadventures of P. B. Winterbottom](http://winterbottomgame.com/)_
 ([The Odd Gentlemen](http://www.theoddgentlemen.com/))
-![good](/good.png)
+<good>
 
   * _[Prince of Persia: The Forgotten Sands](http://prince-of-persia.us.ubi.com/)_
 ([Ubisoft](http://ubi.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Heavy Rain](http://en.wikipedia.org/wiki/Heavy_Rain)_
 ([Quantic Dream](http://www.quanticdream.com/pages/frameset_index.php?lg=us))
-![good](/good.png)
+<good>
 
   * _[Mass Effect 2](http://masseffect.bioware.com/)_
 ([BioWare](http://bioware.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Spelunky](http://www.spelunkyworld.com/)_
 ([Derek Yu](http://www.derekyu.com/)/[Mossmouth](http://www.mossmouth.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Leave Home](http://hermitgames.com/games/leave-home.html)_
 ([Hermit Games](http://hermitgames.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Love](http://quelsolaar.com/love/)_
 ([Quel Solaar](http://quelsolaar.com/))
-![bad](/bad.png)
+<bad>
 
   * _[Small Worlds](http://jayisgames.com/cgdc6/?gameID=9)_
 ([David Shute](http://lackofbanjos.com/))
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * _[Machinarium](http://machinarium.com/)_
 ([Amanita](http://amanitadesign.com/))
-![good](/good.png)
+<good>
 
   * _[Uncharted 2](http://www.us.playstation.com/PS3/Games/UNCHARTED_2_Among_Thieves)_
 ([Naughty Dog](http://www.naughtydog.com/))
-![good](/good.png)
+<good>
 
   * _[Scribblenauts](http://scribblenauts.com/)_
 ([5th Cell](http://www.5thcell.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Halo 3: ODST](http://www.bungie.net/Projects/ODST/)_
 ([Bungie](http://bungie.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Shadow Complex](http://www.xbox.com/en-US/games/s/shadowcomplexxbla/)_
 ([Chair](http://www.chairentertainment.com/))
-![good](/good.png)
+<good>
 
   * _[Tales of Monkey Island](http://www.telltalegames.com/monkeyisland)_
 ([Telltale](http://telltalegames.com/))
-![good](/good.png)
+<good>
 
   * _[Little Wheel](http://www.fastgames.com/littlewheel.html)_
-![good](/good.png),
+<good>,
 _[Kutuke](http://kutuke.com/)_
-![bad](/bad.png)
+<bad>
 ([OneClickDog](http://www.oneclickdog.com/))
 
   * _[MotorStorm](http://www.us.playstation.com/MotorStorm/)_
 ([Evolution](http://www.evos.net/home.aspx))
-![good](/good.png)
+<good>
 
   * _[Shatter](http://www.shattergame.com/)_
 ([Sidhe Interactive](http://www.sidhe.co.nz/))
-![good](/good.png)
+<good>
 
   * _[Shift](http://armorgames.com/play/751/shift)_
 ([Armor Games](http://armorgames.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Infamous](http://suckerpunch.com/index.php?option=com_content&view=category&layout=blog&id=50&Itemid=58)_
 ([Sucker Punch](http://suckerpunch.com/))
-![good](/good.png)
+<good>
 
   * _[Blueberry Garden](http://eriksvedang.wordpress.com/blueberrygarden/)_
 ([Erik Svedäng](http://eriksvedang.wordpress.com/about/))
-![bad](/bad.png)
+<bad>
 
   * _[Me & My Katamari](http://katamari.namco.com/)_
 ([Keita Takahashi](http://en.wikipedia.org/wiki/Keita_Takahashi)/[Namco](http://namco.com/))
-![good](/good.png)
+<good>
 
   * _[Grand Theft Auto: Chinatown Wars](http://www.rockstargames.com/chinatownwars/)_
 ([Rockstar](http://www.rockstargames.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Windosill](http://windosill.com/)_
-![ok](/ok.png),
+<ok>,
 _[Levers](http://vectorpark.com/levers/)_
-![ok](/ok.png),
+<ok>,
 _[Feed the Head](http://feedthehead.net/)_
-![ok](/ok.png)
+<ok>
 ([Vectorpark](http://vectorpark.com/))
 
   * _[Groov](http://www.destructoid.com/destructoid-review-groov-118640.phtml)_
 (Barryman)
-![good](/good.png)
+<good>
 
   * _[Osmos](http://www.hemispheregames.com/osmos/)_
 ([Hemisphere Games](http://www.hemispheregames.com/osmos/))
-![ok](/ok.png)
+<ok>
 
   * _[Dyson](http://www.dyson-game.com/)_
 ([Rudolf Kremers](http://www.omni-labs.com/) and Alex May)
-![good](/good.png)
+<good>
 
   * _[Between](http://www.esquire.com/features/best-and-brightest-2008/rohrer-game)_
 ([Jason Rohrer](http://jasonrohrer.n3.net/))
 
   * _[You Have To Burn The Rope](http://www.mazapan.se/games/BurnTheRope.php)_
 ([Kian Bashiri](http://www.mazapan.se/contact.php))
-![ok](/ok.png)
+<ok>
 
   * _[Noby Noby Boy](http://en.wikipedia.org/wiki/Noby_Noby_Boy)_
 ([Keita Takahashi](http://en.wikipedia.org/wiki/Keita_Takahashi))
-![bad](/bad.png)
+<bad>
 
   * _[Flower](http://www.thatgamecompany.com/games/flower/)_
 ([thatgamecompany](http://www.thatgamecompany.com/))
-![good](/good.png)
+<good>
 
   * _[Killzone 2](http://killzone.com/)_
 ([Guerrilla](http://www.guerrilla-games.com/))
-![ok](/ok.png)
+<ok>
 
   * _[I-Fluid](http://i-fluid.com/)_
 ([Exkee](http://exkee.com/))
-![ok](/ok.png)
+<ok>
 
   * _[The Majesty of Colors](http://www.kongregate.com/games/GregoryWeir/the-majesty-of-colors)_
 ([Gregory Weir](http://www.kongregate.com/accounts/GregoryWeir))
-![bad](/bad.png)
+<bad>
 
   * _[Seven Minutes](http://koti.mbnet.fi/erkkavir/sevenminutes.php)_
 ([Virtanen](http://koti.mbnet.fi/erkkavir/))
-![bad](/bad.png)
+<bad>
 
   * _[In the Pit](http://www.studiohunty.com/itp/)_
 ([Studio Hunty](http://www.studiohunty.com/))
-![good](/good.png)
+<good>
 
   * _[Crush](http://www.zoemode.com/crush.html)_
 ([Zoë Mode](http://www.zoemode.com/))
-![good](/good.png)
+<good>
 
   * _[Loco Roco](http://www.locoroco.com/)_
-![good](/good.png),
+<good>,
 _[Loco Roco 2](http://www.locoroco.com/)_
-![good](/good.png)
+<good>
 ([Sony](http://scea.com/))
 
   * _[Patapon](http://www.us.playstation.com/patapon/)_
 ([Pyramid](http://www.pyramid-inc.net/))
-![ok](/ok.png)
+<ok>
 
   * _[God of War: Chains of Olympus](http://www.us.playstation.com/GodofWar_Chainsofolympus/)_
 ([Ready at Dawn](http://www.readyatdawn.com/))
-![bad](/bad.png)
+<bad>
 
   * _[Prince of Persia](http://prince-of-persia.us.ubi.com/)_
 ([Ubisoft](http://ubi.com/))
-![bad](/bad.png)
+<bad>
 
   * _[Auditorium](http://playauditorium.com/)_
 ([Cipher Prime](http://cipherprime.com/))
-![good](/good.png)
+<good>
 
   * _[Mirror's Edge](http://mirrorsedge.com/)_
 ([DICE](http://www.dice.se/))
-![ok](/ok.png)
+<ok>
 
   * _[LittleBigPlanet](http://www.littlebigplanet.com/)_
 ([Media Molecule](http://www.mediamolecule.com/))
-![ok](/ok.png)
+<ok>
 
   * _[The Art of Theft](http://www.escapistmagazine.com/content/games/yahtzee/artoftheft)_
 ([Yahtzee](http://www.fullyramblomatic.com/))
-![bad](/bad.png)
+<bad>
 
   * _[Fable](http://www.lionhead.com/fabletlc/)_
-![ok](/ok.png),
+<ok>,
 _[Fable 2](http://www.lionhead.com/fable2/)_
-![good](/good.png),
+<good>,
 _[Fable 3](http://www.lionhead.com/fable3/)_
-![good](/good.png)
+<good>
 ([Lionhead](http://lionhead.com/))
 
   * _[Strong Bad's Cool Game for Attractive People](http://telltalegames.com/strongbad)_
 ([Telltale](http://telltalegames.com/))
-![good](/good.png)
+<good>
 
   * _[World of Goo](http://www.worldofgoo.com/)_
 ([2D Boy](http://2dboy.com/))
-![good](/good.png)
+<good>
 
   * _[Wipeout HD](http://www.wipeouthd.com/)_
 ([Sony](http://scea.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Braid](http://braid-game.com/)_
 ([Jonathan Blow](http://number-none.com/blow/))
-![good](/good.png)
+<good>
 
   * _[PixelJunk](http://pixeljunk.jp/)_
 _[Eden](http://pixeljunk.jp/library/Eden/)_
-![good](/good.png),
+<good>,
 _[Shooter 1](http://pixeljunk.jp/library/Shooter/)_
-![good](/good.png),
+<good>,
 _[2](http://pixeljunk.jp/library/Shooter2/)_
-![ok](/ok.png),
+<ok>,
 ([Q Games](http://www.q-games.com/))
 
   * _[Echochrome](http://www.us.playstation.com/PS3/Games/echochrome)_
 ([Sony](http://scea.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Soul Bubbles](http://www.soulbubblesgame.com/)_
 ([Mekensleep](http://www.mekensleep.com/))
-![good](/good.png)
+<good>
 
   * _[The World Ends with You](http://www.theworldendswithyou.com/)_
 ([Square Enix](http://www.square-enix.com/na/))
-![ok](/ok.png)
+<ok>
 
   * _[Lego Indiana Jones](http://legoindianajonesgame.com/)_
 ([Travellers Tales](http://www.gamespot.com/pages/company/index.php?company=13270))
-![good](/good.png)
+<good>
 
   * _[Professor Layton](http://professorlaytonds.com/)_
 ([Level-5](http://www.level5.co.jp/))
-![good](/good.png)
+<good>
 
   * _[Passage](http://hcsoftware.sourceforge.net/passage/)_
 ([Jason Rohrer](http://jasonrohrer.n3.net/))
-![good](/good.png)
+<good>
 
   * _[Burnout Paradise](http://www.criteriongames.com/burnout/paradise/)_
 ([Criterion](http://www.criteriongames.com/))
-![good](/good.png)
+<good>
 
   * _[Geometry Wars: Galaxies](http://www.gamespot.com/ds/action/geometrywarsgalaxies/review.html)_
 ([Kuju](http://www.kuju.com/))
-![good](/good.png)
+<good>
 
   * _[Call of Duty 4](http://www.callofduty.com/)_
-![good](/good.png),
+<good>,
 _[Modern Warfare 2](http://www.modernwarfare2.com/)_
-![good](/good.png)
+<good>
 ([Infinity Ward](http://infinityward.com/))
 
   * _[Contact](http://www.gamespot.com/ds/rpg/contact/)_
 ([Grasshopper Manufacture](http://en.wikipedia.org/wiki/Grasshopper_Manufacture))
-![bad](/bad.png)
+<bad>
 
   * _[Assassin's Creed](http://assassinscreed.com/)_
 ([Ubisoft](http://ubi.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Team Fortress 2](http://orange.half-life2.com/tf2.html)_
 ([Valve](http://valvesoftware.com/))
-![good](/good.png)
+<good>
 
-  * _[Portal](http://orange.half-life2.com/portal.html) ![good](/good.png) ![good](/good.png)_
+  * _[Portal](http://orange.half-life2.com/portal.html) <good> <good>_
 ([Valve](http://valvesoftware.com/))
 
   * _[Metroid: Zero Mission](http://www.metroid.com/zeromission/)_
 ([Nintendo](http://www.nintendo.com/))
-![ok](/ok.png)
+<ok>
 
   * _[A Cure for the Common Cold](http://crabshack.bythegoddess.com/games.htm)_
 ([MashPotato](http://crabshack.bythegoddess.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Reactor 09](http://www.origamihero.com/games.php#4)_
 ([Bernie](http://www.origamihero.com/))
-![good](/good.png)
+<good>
 
   * _[Knightsquire](/Knightsquire)_
 (Buloght)
-![good](/good.png)
+<good>
 
   * _[Bad Mojo](http://www.badmojoredux.com/)_
 ([Pulse](http://www.mobygames.com/company/pulse-entertainment/history))
-![good](/good.png)
+<good>
 
   * _[Tomb Raider: Anniversary](http://tombraider.com/anniversary/)_
 ([Crystal Dynamics](http://www.crystald.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Clubhouse Games](http://us.touchgenerations.com/game_clubhousegames.jsp)_
 (Agenda)
-![ok](/ok.png)
+<ok>
 
   * _[Lunar Knights](http://www.konami.com/Konami/ctl3810/cp20104/si1740238/cl1/lunar_knights)_
 ([Konami](http://konami.com/))
-![bad](/bad.png)
+<bad>
 
   * _[Zelda: A Link to the Past](http://zelda.com/universe/game/fourswordspast/)_,
 _[The Minish Cap](http://www.zelda.com/universe/game/minish/)_,
 _[The Phantom Hourglass](http://zelda.com/universe/game/phantom/)_,
 _[Ocarina of Time 3D](http://www.zelda.com/ocarina3d/)_,
 ([Nintendo](http://www.nintendo.com/))
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * _[Gears of War](http://gearsofwar.com/)_
 ([Epic](http://epicgames.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Dead Rising](http://capcom.com/deadrising/)_
 ([Capcom](http://capcom.com/))
-![good](/good.png)
+<good>
 
   * _[Knytt](http://nifflas.ni2.se/index.php?main=03Knytt)_
 ([Nicklas Nygren](http://nifflas.ni2.se/))
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * _[Psychonauts](http://psychonauts.com/)_
 ([Double Fine](http://www.doublefine.com/))
-![good](/good.png)
+<good>
 
   * _[Elite Beat Agents](http://elitebeatagents.com/)_
 ([Nintendo](http://www.nintendo.com/)/[iNiS](http://www.inis.co.jp/))
-![good](/good.png)
+<good>
 
   * _[Phoenix Wright](http://www.capcom.com/phoenixwright/)_
 ([Capcom](http://capcom.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Trauma Center](http://www.atlus.com/trauma_center/)_
 ([Atlus](http://www.atlus.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Meteos](http://meteos.nintendods.com/)_
 ([Q](http://q-ent.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Wii Sports](http://us.wii.com/soft_wii_sports.jsp)_
 ([Nintendo](http://www.nintendo.com/))
-![good](/good.png)
+<good>
 
   * _[Rayman Raving Rabbids](http://www.ubi.com/US/Games/Info.aspx?pId=4937)_
 ([Ubisoft](http://ubi.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Super Monkey Ball Banana Blitz](http://www.sega.com/gamesite/bananablitz/)_
 ([Sega](http://sega.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Sam and Max](http://telltalegames.com/samandmax)_
 ([Telltale](http://telltalegames.com/))
-![good](/good.png)
+<good>
 
   * _[Okami](http://o-kami.jp/)_
 ([Clover](http://en.wikipedia.org/wiki/Clover_Studio))
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * _[The Ship](http://www.theshiponline.com/)_
 ([Outerlight](http://www.outerlight.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Diner Dash](http://www.gmlb.com/games/dinerDash.html)_
 ([Gamelab](http://www.gmlb.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Gitaroo Man](http://en.wikipedia.org/wiki/Gitaroo_Man)_
 ([Koei](http://www.koei.com/)/[iNiS](http://www.inis.co.jp/))
-![ok](/ok.png)
+<ok>
 
   * _[New Super Mario Bros.](http://mario.nintendo.com/)_
 ([Nintendo](http://www.nintendo.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Burnout 3: Takedown](http://www.ea.com/official/burnout/burnout3/us/home.jsp)_
 ([Criterion](http://www.criteriongames.com/))
-![good](/good.png)
+<good>
 
   * _[LA Rush](http://www.larushgame.com/)_
 ([Midway](http://midway.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Lego Star Wars](http://www.legostarwarsthevideogame.com/)_
 ([Traveller's Tales](http://www.t-tales.com/))
-![good](/good.png)
+<good>
 
   * _[Animal Crossing](http://www.animal-crossing.com/)_
 ([Nintendo](http://www.nintendo.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Dreamfall: The Longest Journey](http://dreamfall.com/)_
 ([Funcom](http://www.funcom.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Broken Sword 1](http://www.revolution.co.uk/_display.php?id=14)_,
 _[3](http://www.revolution.co.uk/_display.php?id=12)_
 ([Revolution](http://www.revolution.co.uk/))
-![good](/good.png)
+<good>
 
   * _[Feel the Magic XY/XX](http://www.sega.com/games/game_temp.php?game=feelthemagic)_
 ([Sega](http://sega.com/)/[Sonic Team](http://www.sonicteam.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Metroid Prime: Hunters](http://www.nintendo.com/gamemini?gameid=06538594-faae-4099-9b2d-c18a91353902)_
 ([Nintendo](http://www.nintendo.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Trace Memory](http://www.cing.co.jp/e/works.html)_
 ([Cing](http://www.cing.co.jp/e/index2.html))
-![bad](/bad.png)
+<bad>
 
   * _[Brain Age](http://www.nintendo.com/gamemini?gameid=tYVqJgro-KG6QL_mMbXFoQTkQIzgi9nU)_
 ([Nintendo](http://www.nintendo.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Kirby's Canvas Curse](http://www.nintendo.com/gamemini?gameid=ae7e7d2b-4860-42b2-b9d8-d04ebd547681)_
 ([Nintendo](http://www.nintendo.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Grid Wars](http://www.incitti.com/Blitz/)_
 ([Marco Incitti](http://incitti.com/))
-![good](/good.png)
+<good>
 
   * _[Mutant Storm](http://www.mutantstorm.com/)_
 ([Pom Pom](http://www.pompomgames.com/))
-![bad](/bad.png)
+<bad>
 
   * _[Flow](http://intihuatani.usc.edu/cloud/flowing/)_
 ([Jenova Chen](http://jenovachen.com/) et al.)
-![good](/good.png)
+<good>
 
   * _[Guitar Hero](http://www.guitarherogame.com/)_
 ([Harmonix](http://www.harmonixmusic.com/))
-![good](/good.png)
+<good>
 
   * _[Strange Attractors](http://www.ominousdev.com/games.htm)_
 ([Ominous](http://www.ominousdev.com/),
 [IGF 2006](http://igf.com/2006entrants.shtml))_
-![bad](/bad.png)
+<bad>
 
   * _[Rumble Box](http://www.phackett.com/rumblebox/)_
 ([DigiPen](http://digipen.edu/),
 [IGF 2006](http://igf.com/2006entrants.shtml))_
-![ok](/ok.png)
+<ok>
 
   * _[Palette](http://handmadegame.com/Games/Game_Palette.htm)_
 ([Handmade](http://handmadegame.com/),
@@ -803,158 +803,158 @@ _[3](http://www.revolution.co.uk/_display.php?id=12)_
   * _[Weird Worlds: Return to Infinite Space](http://www.shrapnelgames.com/digital_eel/Weird_worlds/1.htm)_
 ([Digital Eel](http://www.digital-eel.com/),
 [IGF 2006](http://igf.com/2006entrants.shtml))
-![ok](/ok.png)
+<ok>
 
   * _[Dodge that Anvil](http://rabidlab.com/games/dta/demo2.html)_
 ([Rabidlab](http://rabidlab.com/),
 [IGF 2006](http://igf.com/2006entrants.shtml))
-![good](/good.png)
+<good>
 
   * _[Cloud](http://www.thatcloudgame.com/)_
 ([USC Interactive](http://interactive.usc.edu/),
 [IGF 2006](http://igf.com/2006entrants.shtml))
-![ok](/ok.png)
+<ok>
 
   * _[Switchball](http://www.atomicelbow.com/switchball.html)_
 ([Atomic Elbow](http://www.atomicelbow.com/),
 [IGF 2006](http://igf.com/2006entrants.shtml))
-![ok](/ok.png)
+<ok>
 
   * _[Ocular Ink](http://www.pistachioproductions.com/dart/)_
 ([Pistachio](http://www.pistachioproductions.com/),
 [IGF 2006](http://igf.com/2006entrants.shtml))
-![ok](/ok.png)
+<ok>
 
   * _[Call of Duty 2](http://callofduty.com/)_
 ([Infinity Ward](http://infinityward.com/))
-![good](/good.png)
+<good>
 
   * _[King Kong](http://kingkonggame.com/)_
 ([Ubisoft](http://ubi.com/))
-![bad](/bad.png)
+<bad>
 
   * _[Bone](http://www.telltalegames.com/bone_the_game)_
 ([Telltale](http://www.telltalegames.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Samorost 1](http://samorost.net/)_,
 _[2](http://samorost2.net/)_
 ([Amanita](http://amanitadesign.com/))
-![good](/good.png)
+<good>
 
   * _[Shadow of the Colossus](http://www.us.playstation.com/Content/OGS/SCUS-97472/Site/)_
 ([Sony](http://scea.com/))
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * _[Indigo Prophecy](http://www.atari.com/indigo/)_
 ([Quantic Dream](http://www.quanticdream.com/pages/frameset_index.php?lg=us))
-![ok](/ok.png)
+<ok>
 
   * _[Darwinia](http://www.darwinia.co.uk/)_
 ([Introversion](http://www.introversion.co.uk/))
-![ok](/ok.png)
+<ok>
 
   * _[Wario Ware](http://www.warioware.biz/)_ and
 _[Touched!](http://www.warioware.biz/touched/)_
 ([Intelligent](http://www.intsys.co.jp/))
-![good](/good.png)
+<good>
 
   * _[Crimson Skies](http://www.microsoft.com/games/crimsonskies/)_
 ([FASA](http://fasastudio.com/)/[Microsoft](http://www.microsoft.com/games/))
-![ok](/ok.png)
+<ok>
 
   * _[Beneath A Steel Sky](http://www.revolution.co.uk/_display.php?id=16)_
 ([Revolution](http://www.revolution.co.uk/))
-![good](/good.png)
+<good>
 
   * _[The Last Express](http://www.quandaryland.com/jsp/dispArticle.jsp?index=185)_
 ([Smoking Car](http://en.wikipedia.org/wiki/Smoking_Car_Productions))
-![ok](/ok.png)
+<ok>
 
   * _[The Longest Journey](http://longestjourney.com)_
 ([Funcom](http://www.funcom.com/))
-![good](/good.png)
+<good>
 
   * _[Breakquest](http://www.nurium.com/getdemo.php)_
 ([Nurium](http://nurium.com/))
-![good](/good.png)
+<good>
 
   * _[Facade](http://interactivestory.net/)_
 ([Auto-mata](http://www.auto-mata.org/))
-![good](/good.png)
+<good>
 
   * _[Prince Of Persia: The Sands Of Time](http://www.prince-of-persia.com/tale05/)_
 ([Ubisoft](http://ubi.com/))
-![good](/good.png)
+<good>
 
   * _[Beyond Good & Evil](http://beyondgoodevil.com/)_
 ([Ubisoft](http://ubi.com/))
-![good](/good.png)
+<good>
 
   * _[Half-Life 2](http://www.half-life2.com/)_,
 _[Episode 1](http://orange.half-life2.com/hl2ep1.html)_,
 _[Episode 2](http://orange.half-life2.com/hl2ep2.html)_
 ([Valve](http://valvesoftware.com/))
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * _[Nethack](http://nethack.org/)_
-![ok](/ok.png)
+<ok>
 
   * _[Hitman 1](http://www.ioi.dk/games/hitman1.htm), [2](http://www.ioi.dk/games/hitman2.htm)_
 ([IO Interactive](http://ioi.dk/))
-![good](/good.png)
+<good>
 
   * _[Unreal Tournament 2K4](http://www.unrealtournament.com/)_
 ([Epic Games](http://epicgames.com/))
-![good](/good.png)
+<good>
 
   * _[Out of Order](http://outoforder.adventuredevelopers.com/)_
 ([Hungry Software](http://hungrysoftware.com/))
-![good](/good.png)
+<good>
 
   * _[I Love Bees](http://en.wikipedia.org/wiki/I_love_bees)_
 ([4orty2wo](http://4orty2wo.com/))
-![good](/good.png)
+<good>
 
   * _[Subcity Central](http://virtuquest.com/gallery/SEN5241/index.html)_
 ([Virtuquest](http://www.virtuquest.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Oasis](http://oasisgame.com/)_
 ([PlayFirst](http://www.playfirst.com/))
-![good](/good.png)
+<good>
 
   * _[Worms 2](http://www.worms2.com/)_,
 _[Armageddon](http://wormsarmageddon.team17.com/)_,
 _[3D](http://www.worms3d.com/)_
 ([Team 17](http://team17.com/))
-![good](/good.png)
+<good>
 
   * _[Frequency](http://www.mobygames.com/game/ps2/frequency)_
 ([Harmonix](http://www.harmonixmusic.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Rez](http://www.sonicteam.com/rez/e/game/)_
 ([United Game Artists](http://en.wikipedia.org/wiki/SEGA_United_Game_Artists))
-![good](/good.png)
+<good>
 
   * _[Ico](http://www.mobygames.com/game/ps2/ico)_
 ([Sony](http://scea.com/))
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * _[Halo](http://bungie.com/Games/Halo/)_
 ([Bungie](http://bungie.com/))
-![good](/good.png)
+<good>
 
   * _[Subspace](http://beginners.subspace.net/)_
 ([Virgin Interactive](http://en.wikipedia.org/wiki/Virgin_Interactive)/[Harmless](http://www.neoseeker.com/Companies/profiles/Harmless_Games/))
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * _[Quake 1](http://idsoftware.com/games/quake/quake/)_,
 _[2](http://www.idsoftware.com/games/quake/quake2/)_,
 _[3](http://www.idsoftware.com/games/quake/quake3/)_
 ([id](http://idsoftware.com/))
-![good](/good.png)
+<good>
 
   * _[Tic Tac Toe](/tictactoe)_
 ([Ryan Barrett](/))
@@ -964,357 +964,357 @@ _[3](http://www.idsoftware.com/games/quake/quake3/)_
 
   * _[Space Channel 5](http://www.mobygames.com/game/dreamcast/space-channel-5)_
 ([United Game Artists](http://en.wikipedia.org/wiki/SEGA_United_Game_Artists))
-![good](/good.png)
+<good>
 
   * _[San Francisco Rush 2049](http://www.mobygames.com/game/dreamcast/san-francisco-rush-2049)_
 ([Midway](http://midway.com/))
-![good](/good.png)
+<good>
 
   * _[Ooga Booga](http://www.planetdreamcast.com/games/reviews/oogabooga/)_
 ([Visual Concepts](http://en.wikipedia.org/wiki/Visual_Concepts))
-![ok](/ok.png)
+<ok>
 
   * _[Floigan Brothers](http://www.mobygames.com/game/dreamcast/floigan-brothers-episode-1)_
 ([Visual Concepts](http://en.wikipedia.org/wiki/Visual_Concepts))
-![good](/good.png)
+<good>
 
   * _[Crazy Taxi](http://www.mobygames.com/game/dreamcast/crazy-taxi)_
 ([Sega](http://sega.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Rayman 2](http://raymanzone.com/change_langue.php?language_code=us)_
 ([Ubisoft](http://ubi.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Soul Calibur 1, 2](http://www.soulcalibur.com/)_
 ([Namco](http://namco.com/))
-![good](/good.png)
+<good>
 
   * _[Drakan](http://www.planetdrakan.com/)_
 ([Surreal](http://www.surreal.com/))
-![good](/good.png)
+<good>
 
   * _[Netstorm](http://netstormhq.com/)_
 ([Titanic Entertainment](http://www.mobygames.com/company/titanic-entertainment/overview))
-![good](/good.png)
+<good>
 
   * _[Dark Earth](http://www.mobygames.com/game/windows/dark-earth)_
 ([Kalisto](http://www.mobygames.com/company/kalisto-entertainment))
-![good](/good.png)
+<good>
 
   * _[Super Mario 64](http://www.nintendo.com/gamemini?gameid=m-Game-0000-249)_
 ([Nintendo](http://www.nintendo.com/))
-![good](/good.png)
+<good>
 
   * _[Star Monkey](http://www.smallrockets.com/pc/starmonkey/)_
 ([Small Rockets](http://www.smallrockets.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Baku Baku](http://www.mobygames.com/game/windows/baku-baku-animal)_
 ([Sega](http://sega.com/))
-![good](/good.png)
+<good>
 
   * _[Black and White](http://www.lionhead.com/bw/index.html)_
 ([Lionhead](http://www.lionhead.com/))
-![good](/good.png)
+<good>
 
   * _[Alien vs. Predator](http://www.alienvspredator2.com/games/avp/)_
 ([Rebellion](http://www.rebellion.co.uk/))
-![good](/good.png)
+<good>
 
   * _[Unreal](http://unreal.com/)_
 ([Epic Games](http://epicgames.com/))
-![good](/good.png)
+<good>
 
   * _[Twinsen's Odyssey](http://www.twinadv.net/lba2/)_
 ([Adeline](http://www.mobygames.com/company/adeline-software-international))
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * _[American McGee's Alice](http://www.mobygames.com/game/american-mcgees-alice)_
 ([Rogue Entertainment](http://en.wikipedia.org/wiki/Rogue_Entertainment))
-![good](/good.png)
+<good>
 
   * _[MDK 1](http://www.mobygames.com/game/windows/mdk)_
 ([Shiny](http://www.shiny.com/)), [MDK 2](http://www.mobygames.com/game/mdk-2)
 ([BioWare](http://bioware.com/))
-![good](/good.png)
+<good>
 
   * _[Rocket Jockey](http://www.the-underdogs.org/game.php?id=2094)_
 ([SegaSoft](http://www.the-underdogs.org/company.php?name=Segasoft))
-![good](/good.png)
+<good>
 
   * _[Final Fantasy VII](http://www.ffonline.com/ff7/)_
 ([Square Enix](http://www.square-enix.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Sub Culture](http://www.mobygames.com/game/windows/sub-culture)_
 ([Criterion](http://www.criteriongames.com/))
-![good](/good.png)
+<good>
 
   * _[Adventure](http://www.rickadams.org/adventure/)_
 ([Infocom](http://en.wikipedia.org/wiki/Infocom))
-![ok](/ok.png)
+<ok>
 
   * _[Zork](http://infocom-if.org/games/zork1/zork1.html)_
 ([Infocom](http://en.wikipedia.org/wiki/Infocom))
-![ok](/ok.png)
+<ok>
 
   * _[Curse Of Monkey Island](http://www.worldofmi.com/thegames/monkey3/index.php), [Escape From Monkey Island](http://www.worldofmi.com/thegames/monkey4/index.php)_
 ([LucasArts](http://lucasarts.com/))
-![good](/good.png)
+<good>
 
   * _[Samurai Showdown I, II, III](http://www.samuraispirits.net/)_
 ([SNK](http://www.gamespot.com/features/6089278/))
-![good](/good.png)
+<good>
 
   * _[Civilization II](http://www.civfanatics.com/civ2/)_
 ([Sid Meier](http://www.gamespot.com/features/sidlegacy/)/[Atari](http://atari.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Homeworld](http://www.relic.com/product/homeworld/description.php)_
 ([Relic](http://www.relic.com/))
-![good](/good.png)
+<good>
 
   * _[Outcast](http://www.outcast-thegame.com/)_
 ([Appeal](http://www.outcast-thegame.com/tech/index.htm))
-![ok](/ok.png)
+<ok>
 
   * _[Ultracorps](http://ultracorps.sjgames.com/)_
 ([VR1](http://www.mobygames.com/company/vr1-entertainment-inc/overview))
-![ok](/ok.png)
+<ok>
 
   * _[Interstate '76](http://www.mobygames.com/game/interstate-76)_
 ([Activision](http://activision.com/))
-![good](/good.png)
+<good>
 
   * _[Relentless: Twinsen's Adventure aka Little Big Adventure](http://www.twinadv.net/lba1/)_
 ([Adeline](http://www.mobygames.com/company/adeline-software-international))
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * _[Grim Fandango](http://www.lucasarts.com/products/grim/default.htm)_
 ([LucasArts](http://lucasarts.com/))
-![good](/good.png) ![good](/good.png)
+<good> <good>
 
   * _[Comanche](http://www.mobygames.com/game/comanche-maximum-overkill)_
 ([NovaLogic](http://novalogic.com/))
-![good](/good.png)
+<good>
 
   * _[Moto Racer](http://www.mobygames.com/game/windows/moto-racer)_
 ([Delphine](http://en.wikipedia.org/wiki/Delphine_Software))
-![good](/good.png)
+<good>
 
   * _[Big Red Racing](http://www.mobygames.com/game/windows/big-red-racing)_
 ([Big Red](http://www.mobygames.com/company/big-red-software/history))
-![good](/good.png)
+<good>
 
   * _[Tomb Raider](http://wikiraider.tombraidergirl.net/index.php/Tomb_Raider_1)_
 ([Core](http://www.core-design.com/))
-![good](/good.png)
+<good>
 
   * _[Crusader: No Remorse](http://www.mobygames.com/game/crusader-no-remorse)_
 ([Origin](http://en.wikipedia.org/wiki/Origin_Systems))
-![ok](/ok.png)
+<ok>
 
   * _[Full Throttle](http://www.lucasarts.com/games/fullthrottle/)_
 ([LucasArts](http://lucasarts.com/))
-![good](/good.png)
+<good>
 
   * _[Sam & Max Hit The Road](http://www.samandmax.net/)_
 ([LucasArts](http://lucasarts.com/))
-![good](/good.png)
+<good>
 
   * _[Day Of The Tentacle](http://www.mobygames.com/game/day-of-the-tentacle)_
 ([LucasArts](http://lucasarts.com/))
-![good](/good.png)
+<good>
 
   * _[Mechwarrior 2](http://games.activision.com/games/mechseries/mech2.html)_
 ([Activision](http://activision.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Wing Commander 3, 4](http://www.wcnews.com/back.shtml)_
 ([Origin](http://en.wikipedia.org/wiki/Origin_Systems))
-![ok](/ok.png)
+<ok>
 
   * _[Descent](http://descent2.com/)_
 ([Parallax](http://en.wikipedia.org/wiki/Parallax_Software))
-![good](/good.png)
+<good>
 
   * _[Cannon Fodder](http://www.mobygames.com/game/cannon-fodder)_
 ([Sensible Software](http://en.wikipedia.org/wiki/Sensible_Software))
-![good](/good.png)
+<good>
 
   * _[Z](http://www.bitmap-brothers.co.uk/our-games/past/z.htm)_
 ([Bitmap Brothers](http://www.bitmap-brothers.co.uk/front.htm))
-![ok](/ok.png)
+<ok>
 
   * _[Ultima VII](http://www.uo.com/archive/ultima7/)_
 ([Origin](http://en.wikipedia.org/wiki/Origin_Systems))
-![ok](/ok.png)
+<ok>
 
   * _[Legend of the Red Dragon](http://lord.nuklear.org/about.html)_
 ([Seth Able Robinson](http://www.rtsoft.com/pages/aboutus.htm))
-![ok](/ok.png)
+<ok>
 
   * _[Terminal Velocity](http://www.3drealms.com/tv/)_\
 ([3D Realms](http://3drealms.com/))
-![good](/good.png)
+<good>
 
   * _[Duke Nukem 3D](http://www.3drealms.com/duke3d/index.html)_
 ([3D Realms](http://3drealms.com/))
-![good](/good.png)
+<good>
 
   * _[Mario Kart 64](http://www.nintendo.com/games/gamepage/gamepage_main.jsp?gameId=157)_
 ([Nintendo](http://nintendo.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Star Fox 64](http://www.nintendo.com/games/gamepage/gamepage_main.jsp?gameId=242)_
 ([Nintendo](http://nintendo.com/))
-![ok](/ok.png)
+<ok>
 
   * _[One Must Fall 2097](http://www.mobygames.com/game/one-must-fall-2097)_
 ([Diversions Entertainment](http://www.omf.com/diversions/))
-![good](/good.png)
+<good>
 
   * _[Gemstone](http://en.wikipedia.org/wiki/GemStone_IV)_
 ([Simutronics](http://www.play.net/corporate/)/[GEnie](http://en.wikipedia.org/wiki/GEnie))
-![ok](/ok.png)
+<ok>
 
   * _[Multiplayer Battletech](http://www.thecomputershow.com/computershow/reviews/multibattletech.htm)_
 ([Kesmai](http://www.gamestats.com/objects/026/026403.html))
-![good](/good.png)
+<good>
 
   * _[Raptor](http://www.3drealms.com/raptor/index.html)_
 ([Apogee](http://www.3drealms.com/history.html))
-![good](/good.png)
+<good>
 
   * _[Doom](http://www.idsoftware.com/games/doom/doom-ultimate/)_
 ([id](http://idsoftware.com/))
-![good](/good.png)
+<good>
 
   * _[Warcraft 1, 2](http://www.blizzard.com/war2bne/)_
 ([Blizzard](http://blizzard.com/))
-![good](/good.png)
+<good>
 
   * _[NBA Jam](http://www.klov.com/game_detail.php?letter=&game_id=8813)_
 ([Midway](http://midway.com/))
-![good](/good.png)
+<good>
 
   * _[Street Figher II](http://en.wikipedia.org/wiki/Street_Fighter_II)_
 ([Capcom](http://capcom.com/))
-![good](/good.png)
+<good>
 
   * _[Mortal Kombat](http://en.wikipedia.org/wiki/Mortal_Kombat)_
 ([Midway](http://midway.com/))
-![good](/good.png)
+<good>
 
   * _[Wolfenstein 3D](http://www.idsoftware.com/games/wolfenstein/wolf3d/)_
 ([id](http://idsoftware.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Scorched Earth](http://www.classicgaming.com/scorch/)_
 ([Wendell Hicken](http://www.mobygames.com/developer/sheet/view/developerId,1062/))
-![good](/good.png)
+<good>
 
   * _[Phantasmagoria](http://anthonylarme.tripod.com/phantas/phantas.html)_
 ([Sierra](http://sierra.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Epic Pinball](http://www.dmwright.com/pinball/epic/)_
 ([Epic](http://epicgames.com/))
-![good](/good.png)
+<good>
 
   * _[Marble Madness](http://www.bodenstaendig.de/marble/)_
 ([Atari](http://atari.com/))
-![good](/good.png)
+<good>
 
   * _[SimCity 1, 2, 2000](http://en.wikipedia.org/wiki/Simcity)_
 ([Maxis](http://maxis.com/))
-![good](/good.png)
+<good>
 
   * _[SimEarth](http://www.mobygames.com/game/dos/simearth-the-living-planet)_,
 _[SimAnt](http://www.mobygames.com/game/dos/simant-the-electronic-ant-colony)_,
 _[SimLife](http://www.mobygames.com/game/dos/simlife)_
 ([Maxis](http://maxis.com/))
-![good](/good.png)
+<good>
 
   * _[Commander Keen 1, 2, 3, 4](http://www.3drealms.com/keenhistory/index.html)_
 ([Apogee](http://www.3drealms.com/history.html))
-![good](/good.png)
+<good>
 
   * _[Cosmo's Cosmic Adventure](http://www.3drealms.com/cosmo/index.html)_
 ([Apogee](http://www.3drealms.com/history.html))
-![good](/good.png)
+<good>
 
   * _[Glider](http://www.mobygames.com/game/win3x/glider-40-for-windows)_
 ([Casady & Greene](http://www.coastalfog.net/idata/candg.html))
-![good](/good.png)
+<good>
 
   * _[Crystal Quest](http://www.gamerankings.com/htmlpages2/571592.asp)_
 ([Casady & Greene](http://www.coastalfog.net/idata/candg.html))
-![ok](/ok.png)
+<ok>
 
   * _[The Incredible Machine 1, 2](http://www.vintage-sierra.com/puzzle/tim.html)_
 ([Sierra](http://sierra.com/))
-![good](/good.png)
+<good>
 
   * _[The 7th Guest](http://www.mobygames.com/game/7th-guest)_,
 _[The 11th Hour](http://www.mobygames.com/game/dos/11th-hour)_
 ([Trilobyte](http://www.if-legends.org/~adventure/Trilobyte,_Inc.html))
-![good](/good.png)
+<good>
 
   * _[SSN-21 Seawolf](http://www.subsim.com/ssr/seawolf.html)_
 ([EA](http://ea.com/))
-![ok](/ok.png)
+<ok>
 
   * _[River City Ransom](http://en.wikipedia.org/wiki/River_City_Ransom)_
 ([Technos](http://en.wikipedia.org/wiki/Technos))
-![good](/good.png)
+<good>
 
   * _[F-Zero](http://www.mobygames.com/game/snes/f-zero)_
 ([Nintendo](http://nintendo.com/))
-![good](/good.png)
+<good>
 
   * _[Deathtrack](http://www.mobygames.com/game/dos/deathtrack)_
 ([Dynamix](http://www.mobygames.com/company/dynamix/overview))
-![good](/good.png)
+<good>
 
   * _[Contra](http://www.nesplayer.com/contra/)_
 ([Konami](http://konami.com/))
-![ok](/ok.png)
+<ok>
 
   * _[Tetris](http://en.wikipedia.org/wiki/Tetris)_
 ([Alexey Pajitnov](http://en.wikipedia.org/wiki/Alexey_Pajitnov))
-![good](/good.png)
+<good>
 
   * _[Death Rally](http://www.3drealms.com/rally/)_
 ([Apogee](http://www.3drealms.com/history.html))
-![good](/good.png)
+<good>
 
   * _[Double Dragon](http://www.classicgaming.com/doubledragon/rdd1nes.htm)_
 ([Technos](http://www.mobygames.com/company/technos-japan-corp))
-![good](/good.png)
+<good>
 
   * _[Rampage](http://www.mobygames.com/game/dos/rampage)_
 ([Midway](http://midway.com/))
-![good](/good.png)
+<good>
 
   * _[Super Mario Bros. 1, 2, 3, World, 64](http://www.smbhq.com/)_
 ([Nintendo](http://nintendo.com/))
-![good](/good.png)
+<good>
 
   * _[Space Quest 1, 2, 3](http://www.vintage-sierra.com/spacequest.html)_
 ([Sierra](http://sierra.com/))
-![good](/good.png)
+<good>
 
   * _[King's Quest 1, 2, 3](http://www.vintage-sierra.com/kingsquest.html)_
 ([Sierra](http://sierra.com/))
-![good](/good.png)
+<good>
 
   * _[The Oregon Trail](http://www.mobygames.com/game/apple2/oregon-trail)_
 ([MECC](http://www.mobygames.com/company/mecc/overview/list,1/))
-![good](/good.png)
+<good>
 
   * _[Where in the World is Carmen Sandiego?](http://en.wikipedia.org/wiki/Carmen_Sandiego)_
 ([Google knows!](http://googlefoundcarmensandiego.ytmnd.com/))
 ([Broderbund](http://broderbund.com/))
-![good](/good.png)
+<good>
