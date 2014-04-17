@@ -8,60 +8,65 @@ Stop me if you've heard this one. When the last presidential campaign rolled
 around, Barack Obama wasn't excited about business as usual. Instead, his
 campaign
 [hired a bunch of smart techies](http://www.nytimes.com/2013/06/23/magazine/the-obama-campaigns-digital-masterminds-cash-in.html),
-whipped volunteer and donor databases into shape,
-[mined big data from them](http://www.motherjones.com/politics/2012/10/harper-reed-obama-campaign-microtargeting)
-until they cried uncle, raised more money _and_ mobilized more volunteers than
-any candidate ever before, and coasted to victory while reporters fawned over
-his Internet savvy and hard-nosed nunber crunching.
+whipped databases into shape and
+[mined them until they cried uncle](http://www.motherjones.com/politics/2012/10/harper-reed-obama-campaign-microtargeting),
+raised more money _and_ mobilized more volunteers than ever before, and coasted
+to victory while reporters fawned over his Internet savvy and hard-nosed number
+crunching.
 
-How about this one? The country's position on gay marriage has shifted pretty
-steadily over even just the last few years. Obama was officially against it
-during the last campaign, but he famously
+Oh, Obama was originally against gay marriage, but he famously
 [changed his mind](http://www.cnet.com/news/obamas-same-sex-marriage-tweet-goes-viral/)
 a couple years ago. His opponents seized the opportunity to
 [label him a "flip-flopper"](http://nation.foxnews.com/president-obama/2012/05/09/obama-reverses-position-same-sex-marriage),
 implying that he was inauthentic and didn't stand up for his beliefs.
 
-The Internet has hit politics in a big way. Reporters fawn over Obama,
-[MoveOn.org](http://moveon.org/), and other groups for using social media and
-data mining to mobilize - and react to - both volunteers and voters. At the same
-time, legislators cry foul over
+I think they're both symptoms of the same thing: the Internet. Reporters fawn
+over Obama, [MoveOn.org](http://moveon.org/), and other groups for using social
+media and big data to mobilize - and react to - voters, volunteers, and donors.
+At the same time, legislators cry foul over
 [gotcha journalism](http://en.wikipedia.org/wiki/Gotcha_journalism),
 [ballot-box budgeting](http://ballotpedia.org/History_of_Initiative_and_Referendum_in_California#.22Ballot-box_budgeting.22),
-and paper-thin politicians who change their positions at the
-[slightest breeze of](http://www.change.org/) likes and retweets.
+and paper-thin politicians who change their positions [at the
+slightest breeze](http://www.change.org/) of likes and retweets.
 
 The criticisms resonate with me. We already worry that our politicians are
 [gridlocked, inauthentic, and don't follow through on their promises](http://www.gallup.com/poll/163031/gridlock-top-reason-americans-critical-congress.aspx).
-A/B testing and instant online feedback seem to make all this even worse.
+A/B testing and instant online feedback will make this even worse, right?
 
 I wonder, though. The whole point of representative democracy is for our elected
 officials to *represent* us, to make laws and interact with other officials in
 the ways we want. Historically, we've had only had a handful of tools for this:
-the heavy election sledgehammer, the press grenade we can't hope to aim
-effectively, opinion polls no more accurate than bent, rusty nails, and a few
-tiny glasses screwdrivers like letters, phone calls, town hall meetings. They
-get the job done, but they're not great.
+the heavy sledgehammer of elections, the press grenade we can't hope to aim,
+opinion polls about as accurate as rusty, bent nails, and finally, the tiny
+glasses screwdrivers: letters, phone calls, and town hall meetings with actual
+constituents. Combined, these tools do get the job done, but they don't do it
+well.
 
-As it has in most other fields, technology can clearly help. Online petitions
-and polls and micro-elections, direct communication over social media, and
-instantaneous, 24/7 press cycles now give politicians a continuous stream of
-feedback from their constituents. Groups like XXX praise this
+<p class="left half">
+ <a href="http://www.gocomics.com/jeffstahler">
+  <img src="politics_expectations_cartoon.jpg" /></a></p>
 
-I don't know if they're changing positions
-more often as a result, like Obama famously did over gay marriage, but if so, is
-that so bad? Better late than never, right? If you supported gay marriage before
-Obama, aren't you glad he come around eventually, instead of holding firm
-because, say, he had a weak sense of public opinion - or worse, to avoid being
-accused of waffling?
+Technology can clearly help. Online petitions and micro-elections, direct
+communication over social media, and instantaneous, 24/7 press cycles now give
+politicians a continuous stream of feedback from their constituents. Groups like
+[Code for America](http://codeforamerica.org/),
+[Data.gov](https://www.data.gov/), and [GovHack](http://www.govhack.org/) praise
+this new world of empowered citizens, but they're usually silent on drawbacks
+like flip-flopping because of online uproars.
 
-Here's one key question: what if Obama didn't actually change his mind at all?
-What if he just changed his public position based on the polls? If he now
-consistently supports gay marriage and votes for it, does it matter whether he
-personally agrees with it or not? If so, how much does it matter?
+Take Obama's flip on gay marriage. I don't know if modern politicians are
+changing their minds more often, but if they are, would that be so bad? If you
+supported gay marriage before Obama did, aren't you glad he come around
+eventually, instead of holding firm due to outdated public opinion polls - or
+worse, to avoid being accused of waffling?
 
-The knee jerk reaction is, of course it matters! But I don't know. If his public
-actions are indistinguishable, then arguably it doesn't matter at all.
+Here's a question: what if Obama didn't actually change his mind at all? What if
+he changed his public position, but still personally opposed gay marriage? If he
+consistently supported it _in public_, and voted for it, would it matter whether
+he supported it in private or not? If so, how much would it matter?
+
+The knee jerk reaction is, of course it would matter! But I don't know. If his
+public actions were indistinguishable, then arguably it wouldn't matter at all.
 
 Of course, that's pretty unlikely. In reality, your personal belief on an issue
 is a big part of what motivates you to work hard and fight for it, or against
