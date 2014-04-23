@@ -1,10 +1,7 @@
 windows p2p
 
-Disclaimers: these images are taken from a
-[Microsoft article](http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx),
-so they're probably copyrighted by Microsoft. They're _not_ mine. :P
-
-<a href="http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx"><img src="/p2p.png"></a>
+<p class="half right">
+ <a href="http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx"><img src="/p2p.png"></a></p>
 
 About a year ago, Microsoft quietly announced that they were developing a
 peer-to-peer networking protocol. It's not a file sharing program, mind you;
@@ -23,8 +20,6 @@ fundamental part of
 the networking infrastructure in the
 [Vista](http://www.microsoft.com/windowsvista/) platform.
 
-<a href="http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx"><img src="/stack.png"></a>
-
 In a nutshell, Windows P2P uses a
 [distributed hash table](http://www.infoanarchy.org/wiki/wiki.pl?Distributed_Hash_Table)
 for name resolution, with some interesting quirks. It includes decent mechanisms
@@ -36,6 +31,9 @@ for traversing NATs and the IPv4 Internet. It also includes security and
 authentication. Compared to other related work, all of these are solidly
 designed. Specifically, most of the new ideas are in the DHT implementation,
 which they call a Peer Name Resolution Protocol (PNRP).
+
+<p class="half left">
+ <a href="http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx"><img src="/stack.png"></a></p>
 
 There are lots of technical details in the [white
 paper](http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx),
@@ -61,14 +59,14 @@ describing the protocols themselves, not the methodologies used to reverse
 engineer them. If you know of good resources on reverse engineering network
 protocols, or you'd like to help, [let me know](/about)!
 
-<a href="http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx"><img src="/cache.png"></a>
+<p class="half right">
+ <a href="http://www.microsoft.com/technet/prodtechnol/winxppro/deploy/p2pintro.mspx"><img src="/cache.png"></a></p>
 
 As an aside, I got sidetracked from the reverse engineering one day, and wrote
 an implementation of the PNRP multi-level cache. You can download the
 [code](https://github.com/snarfed/misc/blob/master/pnrp.py) and a
-[unit test](https://github.com/snarfed/misc/blob/master/pnrp_unittest.py). (The
-multi-level cache is specifically covered by their patent, but this code isn't
-in the context of name resolution, so I'm not too worried. :P)
+[unit test](https://github.com/snarfed/misc/blob/master/pnrp_unittest.py).
+(Amusingly, the multi-level cache is specifically covered by their patent. YOLO!)
 
 Finally, this usually is (and should be) legal. Reverse engineering is expressly
 permitted under the right of "fair use" established by copyright law.
