@@ -1,0 +1,26 @@
+Responses
+
+[Posts](/archive#posts) &middot;
+[Pages](/archive#pages) &middot;
+[Replies](#replies) &middot;
+[Retweets](#retweets) &middot;
+[RSVPs](#rsvps) &middot;
+[Likes](#likes)
+
+<!-- catlist docs: http://wordpress.org/plugins/list-category-posts/other_notes/ -->
+<div class="left half archive-page">
+<span id="replies">Replies:</span>  
+[catlist name=indieweb numberposts=-1 orderby=date order=desc]
+
+<span id="retweets">Retweets:</span>  
+[catlist name=indieweb_repost numberposts=-1 orderby=date order=desc]
+
+<span id="rsvps">RSVPs:</span>  
+[catlist name=indieweb_rsvp numberposts=-1 orderby=date order=desc]
+</div>
+
+<div class="right half archive-page">
+<span id="likes">Likes and favorites:</span>  
+[catlist name=indieweb_like numberposts=-1 orderby=date order=desc]
+</div>
+
