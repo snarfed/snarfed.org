@@ -159,6 +159,8 @@ in package manager. Here are the extra packages I've installed so far:
   * lua-mode
   * markdown-mode
   * php-mode
+  * [rainbow-delimiters](https://github.com/jlr/rainbow-delimiters)
+  * [rainbow-identifiers](https://github.com/Fanael/rainbow-identifiers)
   * redo+
   * ...and many others.
 
