@@ -207,9 +207,10 @@ on the Apple StackExchange finally
 
 Also, another not-Mac-related note: I love
 [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/),
-and I also love this [Twitter Keyboard Shortcuts](Twitter Keyboard Shortcuts)
-userscript I recently found. It adds an *o* shortcut that opens the first link
-in the tweet. So useful.
+and I also love the
+[Twitter Keyboard Shortcuts](http://userscripts.org/scripts/show/126985)
+userscript. It makes `o` open the first link in a tweet, `p` go to the author's
+profile, and more. So useful.
 
 
 <a name="Mac_OS_X"></a>
