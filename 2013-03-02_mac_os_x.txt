@@ -432,7 +432,7 @@ otherwise it's great.
 
 The built in Python doesn't read my `~/.python`. Not sure why yet.
 
-I have an Android 4.2 phone, which meant I needed to download Google's
+I have an Android phone, which meant I needed to download Google's
 [Android File Transfer](http://www.android.com/filetransfer/) MTP program to
 transfer files to it over USB. It works, but has one annoying feature: it
 automatically starts whenever I plug my phone into my computer. I
@@ -451,7 +451,7 @@ I
 [asked about it on StackExchange](http://apple.stackexchange.com/questions/111197/runaway-distnoted-process),
 and after some debugging, we determined that it was being
 [started by Spotlight](http://apple.stackexchange.com/questions/111197/runaway-distnoted-process#comment131521_111461),
-OS X's filesystem search feature. I've reigned in the paths and file types that
+OS X's filesystem search feature. I've reined in the paths and file types that
 Spotlight is allowed to index, but that hasn't fixed it.
 
 ...it turns out this is probably an
