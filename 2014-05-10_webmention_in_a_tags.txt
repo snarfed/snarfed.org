@@ -7,8 +7,8 @@ IndieWeb people: update your webmention discovery
 Hey [IndieWeb](http://indiewebcamp.com/) developers! We recently added an
 important feature to the [Webmention](http://webmention.org/) spec:
 [discovery by `<a>` tag](https://github.com/converspace/webmention/blob/master/README.md#sender-discovers-receiver-endpoint).
-If you maintain webmention code or have an indieweb site that sends webmentions,
-please update it to support this! It should be just a few lines of code;
+If you maintain webmention code or have an IndieWeb site that sends webmentions,
+please add this! It should be just a few lines of code;
 [here's an example](https://github.com/vrypan/webmention-tools/commit/f29879a29617960f3a680cba015af2858d0cd167).
 
 Originally, web sites could advertise their webmention endpoint in the `Link`
