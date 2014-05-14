@@ -93,7 +93,12 @@ command for the version you want, then just run `brew install PACKAGE
 [OPTIONS]` and optionally `brew [un]link PACKAGE`.
 
 Apache is installed but not started by default; run `apachectl -k start` to
-start it. Here's [more on setting up LAMP](http://benatkin.com/2011/09/10/php-and-mysql-on-mac-os-x-lion-with-homebrew/).
+start it. Here's
+[more on setting up LAMP](http://benatkin.com/2011/09/10/php-and-mysql-on-mac-os-x-lion-with-homebrew/).
+One word of warning: don't start/stop/restart MySQL with `sudo
+/Library/StartupItems/MySQLCOM/MySQLCOM start`. That brings it down but refuses
+to bring it back up, at least on my machine. I have to reboot to get it running
+again. :(
 
 
 <a name="Window_management"></a>
