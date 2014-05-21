@@ -23,9 +23,9 @@ plugin, you can use this to respond to the current page with just two clicks.
   <a href="http://wordpress.org/">
     <img src="/wordpress_logo.png"/></a></p>
 
-What's more, if you're currently on a Facebook post or Twitter tweet, this adds
-the [Bridgy Publish](https://www.brid.gy/about#publish) link that will reply,
-like, favorite, retweet, or even RSVP _inside_ those social networks.
+What's more, if you're responding to a Facebook post or Twitter tweet, this adds
+the [Bridgy Publish](https://www.brid.gy/about#publish) link so you'll reply,
+like, favorite, retweet, or even RSVP _inside_ those social networks too.
 
 Here's how to set it up. First,
 [download `press_this.js`](https://github.com/snarfed/misc/blob/master/press_this.js)
