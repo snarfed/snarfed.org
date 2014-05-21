@@ -27,15 +27,16 @@ What's more, if you're responding to a Facebook post or Twitter tweet, this adds
 the [Bridgy Publish](https://www.brid.gy/about#publish) link so you'll reply,
 like, favorite, retweet, or even RSVP _inside_ those social networks too.
 
-Here's how to set it up. First,
-[download `press_this.js`](https://github.com/snarfed/misc/blob/master/press_this.js)
-and put it in your theme directory. Then, add this to your theme's
+The easiest way to set this up is to install the
+[wordpress-indieweb-press-this plugin](https://github.com/pfefferle/wordpress-indieweb-press-this).
+
+Alternatively, you can add it to directly to your theme by putting
+[`press_this.js`](https://github.com/snarfed/misc/blob/master/press_this.js)
+in your theme directory and adding this to your theme's
 `functions.php` file:
 
     function indieweb_press_this_js() {
-    	wp_enqueue_script('indieweb-press-this',
-    		get_stylesheet_directory_uri() . '/press_this.js',
-    		false, '1.0', true);
+    	wp_enqueue_script('indieweb-press-this', get_stylesheet_directory_uri() . '/press_this.js', false, '1.0', true);
     }
     add_action('admin_print_scripts-press-this.php', 'indieweb_press_this_js');
 
@@ -76,3 +77,7 @@ Repost</a>
 RSVP</a>
 
 </div>
+
+<br />
+<a class="u-syndication" href="http://news.indiewebcamp.com/post/snarfed.org/indieweb-press-this-bookmarklets-for-wordpress">
+  <em>Also on IndieNews.</em></a>
