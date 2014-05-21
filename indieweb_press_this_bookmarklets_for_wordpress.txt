@@ -4,53 +4,75 @@ IndieWeb Press This bookmarklets for WordPress
  <a href="http://indiewebcamp.com/">
    <img src="/indiewebcamp.png"/></a></p>
 
-One big _raison d'être_ of the [IndieWeb](http://indiewebcamp.com/) movement is
-using your own web site to [like](http://indiewebcamp.com/like),
-[repost](http://indiewebcamp.com/repost),
-, and [RSVP](http://indiewebcamp.com/rsvp)
-to posts and events posted anywhere on the web. You do this by annotating links
-on your site with simple
+One big [IndieWeb](http://indiewebcamp.com/) _raison d'être_ is using your own
+web site to [reply](http://indiewebcamp.com/reply),
+[like](http://indiewebcamp.com/like), [repost](http://indiewebcamp.com/repost),
+and [RSVP](http://indiewebcamp.com/rsvp) to posts and events. You do this by
+annotating links on your site with simple
 [microformats2](http://microformats.org/wiki/microformats2) HTML.
 
-Having said that, most people don't want to write HTML just to comment or like
+Having said that, most people don't want to write HTML just to like or reply to
 something. WordPress's
 [Press This bookmarklets](http://codex.wordpress.org/Press_This) can already
 start a new post with a link to the page you're currently viewing. This code
 adds IndieWeb microformats2 markup to that link. Combined the
 [wordpress-webmention](https://github.com/pfefferle/wordpress-webmention)
-plugin, you can use this to reply to, like, repost, or RSVP to the current page
-with just two clicks.
+plugin, you can use this to respond to the current page with just two clicks.
 
-<p class="left third">
- <a href="http://wordpress.org/">
-   <img src="/wordpress_logo.png"/></a></p>
+<p class="left third" style="margin-right: 0">
+  <a href="http://wordpress.org/">
+    <img src="/wordpress_logo.png"/></a></p>
 
 What's more, if you're currently on a Facebook post or Twitter tweet, this adds
 the [Bridgy Publish](https://www.brid.gy/about#publish) link that will reply,
 like, favorite, retweet, or even RSVP _inside_ those social networks.
 
-Here's how to set it up. First, [download `press_this.js`]() and put it in your
-theme directory. Then, add this to your theme's `functions.php` file.
+Here's how to set it up. First,
+[download `press_this.js`](https://github.com/snarfed/misc/blob/master/press_this.js)
+and put it in your theme directory. Then, add this to your theme's
+`functions.php` file:
 
-    function snarfed_add_press_this_js() {
-    	wp_enqueue_script('snarfed-press-this',
-    	                  get_stylesheet_directory_uri() . '/press_this.js',
-    	                  false, '1.0', true);
+    function indieweb_press_this_js() {
+    	wp_enqueue_script('indieweb-press-this',
+    		get_stylesheet_directory_uri() . '/press_this.js',
+    		false, '1.0', true);
     }
-    add_action('admin_print_scripts-press-this.php', 'snarfed_add_press_this_js');
+    add_action('admin_print_scripts-press-this.php', 'indieweb_press_this_js');
 
-Finally, create bookmarks in your browser for these bookmarklets, then edit them
+Finally, create bookmarks in your browser for the bookmarklets below, then edit them
 and replace `YOUR_SITE` with your site's domain.
 
-*Like*
-    javascript:var%20d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f='https://YOUR_SITE/w/wp-admin/press-this.php',l=d.location,e=encodeURIComponent,u=f+'?u='+e(l.href)+'&t='+e(d.title)+'&s='+e(s)+'&v=4&type=like';a=function(){if(!w.open(u,'t','toolbar=0,resizable=1,scrollbars=1,status=1,width=720,height=570'))l.href=u;};if%20(/Firefox/.test(navigator.userAgent))%20setTimeout(a,%200);%20else%20a();void(0)
+<style type="text/css">
+.bookmarklets a {
+  font-weight: bold;
+  color: #06c;
+  padding-left: 1em;
+  padding-right: 1em;
+  padding-top: .5em;
+  padding-bottom: .5em;
+  border: 1px solid #06c !important;
+  border-radius: 5px;
+}
+</style>
 
-*Repost*
-    javascript:var%20d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f='https://YOUR_SITE/w/wp-admin/press-this.php',l=d.location,e=encodeURIComponent,u=f+'?u='+e(l.href)+'&t='+e(d.title)+'&s='+e(s)+'&v=4&type=repost';a=function(){if(!w.open(u,'t','toolbar=0,resizable=1,scrollbars=1,status=1,width=720,height=570'))l.href=u;};if%20(/Firefox/.test(navigator.userAgent))%20setTimeout(a,%200);%20else%20a();void(0)
+<div class="bookmarklets">
 
-*Reply*
-    javascript:var%20d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f='https://YOUR_SITE/w/wp-admin/press-this.php',l=d.location,e=encodeURIComponent,u=f+'?u='+e(l.href)+'&t='+e(d.title)+'&s='+e(s)+'&v=4&type=reply';a=function(){if(!w.open(u,'t','toolbar=0,resizable=1,scrollbars=1,status=1,width=720,height=570'))l.href=u;};if%20(/Firefox/.test(navigator.userAgent))%20setTimeout(a,%200);%20else%20a();void(0)
+<a href="javascript:var%20d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f='https://YOUR_SITE/w/wp-admin/press-this.php',l=d.location,e=encodeURIComponent,u=f+'?u='+e(l.href)+'&t='+e(d.title)+'&s='+e(s)+'&v=4&type=reply';a=function(){if(!w.open(u,'t','toolbar=0,resizable=1,scrollbars=1,status=1,width=720,height=570'))l.href=u;};if%20(/Firefox/.test(navigator.userAgent))%20setTimeout(a,%200);%20else%20a();void(0)">
+Reply</a>
 
-*RSVP*
-    javascript:var%20d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f='https://YOUR_SITE/w/wp-admin/press-this.php',l=d.location,e=encodeURIComponent,u=f+'?u='+e(l.href)+'&t='+e(d.title)+'&s='+e(s)+'&v=4&type=rsvp';a=function(){if(!w.open(u,'t','toolbar=0,resizable=1,scrollbars=1,status=1,width=720,height=570'))l.href=u;};if%20(/Firefox/.test(navigator.userAgent))%20setTimeout(a,%200);%20else%20a();void(0)
+&nbsp;
 
+<a href="javascript:var%20d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f='https://YOUR_SITE/w/wp-admin/press-this.php',l=d.location,e=encodeURIComponent,u=f+'?u='+e(l.href)+'&t='+e(d.title)+'&s='+e(s)+'&v=4&type=like';a=function(){if(!w.open(u,'t','toolbar=0,resizable=1,scrollbars=1,status=1,width=720,height=570'))l.href=u;};if%20(/Firefox/.test(navigator.userAgent))%20setTimeout(a,%200);%20else%20a();void(0)">
+Like</a>
+
+&nbsp;
+
+<a href="javascript:var%20d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f='https://YOUR_SITE/w/wp-admin/press-this.php',l=d.location,e=encodeURIComponent,u=f+'?u='+e(l.href)+'&t='+e(d.title)+'&s='+e(s)+'&v=4&type=repost';a=function(){if(!w.open(u,'t','toolbar=0,resizable=1,scrollbars=1,status=1,width=720,height=570'))l.href=u;};if%20(/Firefox/.test(navigator.userAgent))%20setTimeout(a,%200);%20else%20a();void(0)">
+Repost</a>
+
+&nbsp;
+
+<a href="javascript:var%20d=document,w=window,e=w.getSelection,k=d.getSelection,x=d.selection,s=(e?e():(k)?k():(x?x.createRange().text:0)),f='https://YOUR_SITE/w/wp-admin/press-this.php',l=d.location,e=encodeURIComponent,u=f+'?u='+e(l.href)+'&t='+e(d.title)+'&s='+e(s)+'&v=4&type=rsvp';a=function(){if(!w.open(u,'t','toolbar=0,resizable=1,scrollbars=1,status=1,width=720,height=570'))l.href=u;};if%20(/Firefox/.test(navigator.userAgent))%20setTimeout(a,%200);%20else%20a();void(0)">
+RSVP</a>
+
+</div>
