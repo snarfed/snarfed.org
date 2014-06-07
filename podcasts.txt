@@ -19,6 +19,11 @@ xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
 to subscribe to itunes podcasts, use http://picklemonkey.net/feedflipper-home/
 
 to subscribe to a youtube channel or playlist:
+use youtube-dl! http://rg3.github.io/youtube-dl/ , on homebrew
+
+~~~
+Youtube RSS feeds for users and playlists. THESE DON'T WORK IN PODCAST APPS though,
+since youtube doesn't allow downloading videos. details below.
 http://gdata.youtube.com/feeds/mobile/users/USERNAME/uploads
 http://gdata.youtube.com/feeds/api/playlists/ID
 
