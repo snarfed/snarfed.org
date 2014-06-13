@@ -1,17 +1,15 @@
-How many App Engine background threads can run in parallel
-
-_[Originally posted on StackOverflow](http://stackoverflow.com/questions/13936544/max-number-of-parallel-background-threads-backend/20896720#20896720)_
+How many App Engine background threads can run in parallel?
 
 <p class="right third">
   <img src="/app_engine_logo_final.png" /></p>
 
-How many
-[background threads](https://developers.google.com/appengine/docs/python/backends/#Python_Background_threads)
-can run in parallel in a single
-[App Engine](https://developers.google.com/appengine/)
-[backend](https://developers.google.com/appengine/docs/python/backends/)?
+[Originally posted on StackOverflow.](http://stackoverflow.com/questions/13936544/max-number-of-parallel-background-threads-backend/20896720)
 
-<hr />
+> How many
+> [background threads](https://developers.google.com/appengine/docs/python/backends/#Python_Background_threads)
+> can run in parallel in a single
+> [App Engine](https://developers.google.com/appengine/)
+> [backend](https://developers.google.com/appengine/docs/python/backends/)?
 
 For the record, App Engine distinguishes between
 [normal threads](https://developers.google.com/appengine/docs/python/?hl=en#sandboxing_in_python),
@@ -19,9 +17,9 @@ which can't outlive the HTTP request that started them, and
 [background threads](https://developers.google.com/appengine/docs/python/backends/#Python_Background_threads),
 which can.
 
-__For Python__, at least, it looks like the production (Python 2.7) runtime and
-dev_appserver both impose a __fixed limit of 10 background threads per
-backend__, independent of other settings like e.g. `max_concurrent_requests` in
+For Python, at least, it looks like the production (Python 2.7) runtime and
+dev_appserver both impose a fixed limit of 10 background threads per backend,
+independent of other settings like e.g. `max_concurrent_requests` in
 [backends.yaml](https://developers.google.com/appengine/docs/go/config/backends?hl=en#Go_Backends_definitions).
 
 I've talked with a few other old App Engine team members, and while they weren't
@@ -64,4 +62,3 @@ I wish this was documented! Would have saved me a lot of time.
         background_thread.start_new_background_thread(test, [])
     
     application = webapp2.WSGIApplication([('/_ah/start', Start)], debug=True)
-
