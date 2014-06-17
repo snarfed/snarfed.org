@@ -4,35 +4,31 @@ ideas
  <a href="/ideas">
   <img src="/thought_bubble.jpg" /></a></p>
 
-I've worked on a [number of software projects](/software), but I have
-lots more ideas for projects I'd _like_ to work on. I can't pretend that
-they're particularly good ideas, but it seems like a waste to just forget about
-them. So, here they are!
+An old list of ideas (mostly bad :P) for software projects I'd like to work on.
+Also see the [projects I've _actually_ worked on](/software).
 
   * Learn [Erlang](http://erlang.org/about.html). Write something distributed in
 it.
 
-  * Port [Tic Tac Toe](/tictactoe) to the XBox 360, using XNA Studio
-Express, and distribute it on XBox Live Community Games.
+  * Port [Tic Tac Toe](/tictactoe) to the XBox 360, using XNA Studio Express,
+and distribute it on XBox Live Community Games.
 
-  * Build network bridges between the DS and PSP, and to the consoles
-consoles, ie DS to 360 and PS3 and PSP to 360 and Wii, to allow cross-platform
-multiplayer games.
-[Proprietary](http://www.unrealtechnology.com/technology.php)
+  * Build network bridges between the DS and PSP, and to the consoles consoles,
+ie DS to 360 and PS3 and PSP to 360 and Wii, to allow cross-platform multiplayer
+games. [Proprietary](http://www.unrealtechnology.com/technology.php)
 [commercial](http://www.poweredbygamespy.com/services/view/category/connect/)
 [libraries](http://www.quazal.com/modules.php?op=modload&name=Sections&file=index&req=viewarticle&artid=3&page=1)
 for this exist, but handheld support is limited.
 [GameSpy](http://www.poweredbygamespy.com/)'s
-[Game Open](http://open.poweredbygamespy.com/)
-looks promising, though.
+[Game Open](http://open.poweredbygamespy.com/) looks promising, though.
 
-  * Write a [PAM](http://www.kernel.org/pub/linux/libs/pam/) module that acts
-as an [OpenID](http://openid.net/) consumer and authenticates againsts remote
-accounts. See [Gracie](http://trac.whitetree.org/gracie/), which is a PAM
-OpenID _provider_, the
+  * Write a [PAM](http://www.kernel.org/pub/linux/libs/pam/) module that acts as
+an [OpenID](http://openid.net/) consumer and authenticates againsts remote
+accounts. See [Gracie](http://trac.whitetree.org/gracie/), which is a PAM OpenID
+_provider_, the
 [Inline Auth Extension](http://extremeswank.com/openid_inline_auth.html)
-([thread](http://openid.net/pipermail/specs/2007-September/001969.html)),
-which provides for OpenID authentication outside of a browser, and
+([thread](http://openid.net/pipermail/specs/2007-September/001969.html)), which
+provides for OpenID authentication outside of a browser, and
 [Scott's blog post](http://kveton.com/blog/2006/12/10/openid-pam/).
 
   * wash, the Web (Again) Shell: a command line for the web. Example use cases
@@ -43,47 +39,45 @@ include checking your bank account balance, adding a movie to your
 
   * Write a [Steam](http://steampowered.com/) IM protocol plugin for
 [Pidgin](http://pidgin.im/). I
-[haven't found](http://www.google.com/search?q=steam+protocol) much
-information about the protocol, except that despite a
+[haven't found](http://www.google.com/search?q=steam+protocol) much information
+about the protocol, except that despite a
 [misleading wiki page](http://developer.valvesoftware.com/wiki/Friends/Suggestions),
 it's not based on MSN. We had a
 [small thread](http://pidgin.im/pipermail/devel/2007-November/004035.html) on
 the [Pidgin mailing list](http://pidgin.im/cgi-bin/mailman/listinfo/devel), but
 nothing beyond that.
 
-  * There's a [Python client](http://code.google.com/p/gdata-python-client/)
-for [GData](http://code.google.com/apis/gdata/overview.html),
-but no server. Write one! Even better, now that the
+  * There's a [Python client](http://code.google.com/p/gdata-python-client/) for
+[GData](http://code.google.com/apis/gdata/overview.html), but no server. Write
+one! Even better, now that the
 [Atom Publishing Protocol](http://www.atomenabled.org/developers/api/atom-api-spec.php)'s
-[IETF draft](http://ietfreport.isoc.org/idref/draft-ietf-atompub-protocol/)
-is solidifying, hopefully implementations will start appearing. GData is just a
-few extensions beyond that!
+[IETF draft](http://ietfreport.isoc.org/idref/draft-ietf-atompub-protocol/) is
+solidifying, hopefully implementations will start appearing. GData is just a few
+extensions beyond that!
 
-  * Write a [session management
-plugin](http://sourceforge.net/mailarchive/message.php?msg_id=37745715) for
-[Pidgin](http://pidgin.im/) (formerly [Gaim](http://gaim.sf.net/)).
-**\[_Done! See Mattperry's [SessionSave plugin](http://somewhere.fscked.org/sessionsave/)._]**
+  * Write a
+[session management plugin](http://sourceforge.net/mailarchive/message.php?msg_id=37745715)
+for [Pidgin](http://pidgin.im/) (formerly [Gaim](http://gaim.sf.net/)). **Done!
+See Mattperry's
+[SessionSave plugin](http://somewhere.fscked.org/sessionsave/).**
 
   * Improve [tcsh](http://tcsh.org)'s
 [dabbrev-expand](http://www.tcsh.org/tcsh.html/Editor_commands.html#dabbrev-expand)
 and
-[bash](http://www.gnu.org/software/bash/)/[readline](http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html)'s 
+[bash](http://www.gnu.org/software/bash/)/[readline](http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html)'s
 [menu-complete](http://cnswww.cns.cwru.edu/php/chet/readline/rluserman.html#SEC19)
 commands to include the entire contents of the app or shell window's output in
 their index, not just the history of typed commands. This would make them
 similar to
 [dabbrev-expand in Emacs](http://gnu.org/software/emacs/manual/html_node/Dynamic-Abbrevs.html#index-dabbrev_002dexpand-2449).
 
-  * Write gateways between identity platforms like
-[OpenID](http://openid.net/),
+  * Write gateways between identity platforms like [OpenID](http://openid.net/),
 [Google Accounts](http://code.google.com/apis/accounts/Authentication.html),
 [Yahoo BBAuth](http://developer.yahoo.com/auth/),
-[Microsoft CardSpace](http://cardspace.netfx3.com/)
-(see [OSIS](http://osis.netmesh.org/)),
-[Higgins](http://www.eclipse.org/higgins/),
-and others, so they can interoperate.
-**\[_Simon Willison's [idproxy.net](http://idproxy.net/) is a first step toward
-this. Sweet!_]**
+[Microsoft CardSpace](http://cardspace.netfx3.com/) (see
+[OSIS](http://osis.netmesh.org/)), [Higgins](http://www.eclipse.org/higgins/),
+and others, so they can interoperate. **Simon Willison's
+[idproxy.net](http://idproxy.net/) is a first step toward this. Sweet!**
 
   * [Mock out](http://en.wikipedia.org/wiki/Mock_Object) the
 [Google Ajax Search API](http://code.google.com/apis/ajaxsearch/) for offline
@@ -96,49 +90,49 @@ It doesn't build in any of the beta releases. It should be either brought up to
 date or officially deprecated and removed.
 
 
-  * Fix a [bug](http://www.mail-archive.com/wget%40sunsite.dk/msg09351.html)
-in [wget](http://wget.sunsite.dk/) that prevents `--html-extension` and
+  * Fix a [bug](http://www.mail-archive.com/wget%40sunsite.dk/msg09351.html) in
+[wget](http://wget.sunsite.dk/) that prevents `--html-extension` and
 `--convert-links` from playing nicely together.
 
   * Write an [OpenID](http://openid.net/) plugin for
-[PyBlosxom](http://pyblosxom.bluesock.org/). **\[_Done! See
-[OpenID server plugin for PyBlosxom](/pyblosxom_openid_server)._]**
+[PyBlosxom](http://pyblosxom.bluesock.org/). **Done! See
+[OpenID server plugin for PyBlosxom](/pyblosxom_openid_server).**
 
   * Write a [Google Ajax Search API](http://code.google.com/apis/ajaxsearch/)
-plugin for [PyBlosxom](http://pyblosxom.bluesock.org/). **\[_Done! See
-[site search with the Google AJAX Search API](/site_search_with_the_Google_AJAX_Search_API)._]**
+plugin for [PyBlosxom](http://pyblosxom.bluesock.org/). **Done! See
+[site search with the Google AJAX Search API](/site_search_with_the_Google_AJAX_Search_API).**
 
   * Add support for
-[comments](http://pyblosxom.bluesock.org/blog/registry/input/comments) to
-the [photogallery](/photogallery) plugin for
+[comments](http://pyblosxom.bluesock.org/blog/registry/input/comments) to the
+[photogallery](/photogallery) plugin for
 [PyBlosxom](http://pyblosxom.bluesock.org/).
 
-  * **Phone transcripts!** Record all of your phone conversations, then
-transcribe them with speech recognition. Bonus points: index the transcripts and
-allow keyword search over them. Search results would link to both the transcript
-and the recording. Starting with VoIP would skip the telecom adoption hurdle,
-and the privacy issues aren't insurmountable. Unfortunately,
-[speaker-independent speech rec just isn't good enough
-yet](http://en.wikipedia.org/wiki/Computer_speech_recognition#Use). Sigh.
+  * Phone transcripts! Record all of your phone conversations, then transcribe
+them with speech recognition. Bonus points: index the transcripts and allow
+keyword search over them. Search results would link to both the transcript and
+the recording. Starting with VoIP would skip the telecom adoption hurdle, and
+the privacy issues aren't insurmountable. Unfortunately,
+[speaker-independent speech rec just isn't good enough yet](http://en.wikipedia.org/wiki/Computer_speech_recognition#Use).
+Sigh.
 
-  * Write a single-sign-on server (as [described
-here](http://manageddreams.com/osmpbb/viewtopic.php?t=179)) for the [Open Source
-Metaverse Project](http://metaverse.sourceforge.net/). It'd probably be based on
-[Kerberos](http://web.mit.edu/kerberos/).
+  * Write a single-sign-on server (as
+[described here](http://manageddreams.com/osmpbb/viewtopic.php?t=179)) for the
+[Open Source Metaverse Project](http://metaverse.sourceforge.net/). It'd
+probably be based on [Kerberos](http://web.mit.edu/kerberos/).
 
-  * [SnipSnap](/SnipSnap) requires visitors to register and log in before
-they can comment. Alas, this discourages commenting. Add support for one-time
+  * [SnipSnap](/SnipSnap) requires visitors to register and log in before they
+can comment. Alas, this discourages commenting. Add support for one-time
 comments a la [WordPress](http://wordpress.org/) and
-[Blogger](http://blogger.com). **\[_Done! See [snipsnap comment without login
-patch](/snipsnap_comment_without_login_patch)._]**
+[Blogger](http://blogger.com). **Done! See
+[snipsnap comment without login patch](/snipsnap_comment_without_login_patch).**
 
   * Work on [Beagle](http://beagle-project.org/) (formerly
 [Dashboard](http://nat.org/dashboard/)), which is wicked cool, or
 [Tenor](http://dot.kde.org/1113428593/), which may someday be even cooler.
 
   * Write an overlay network that does multicast cleanly and efficiently.
-Similar to [IP
-multicast](http://www.cisco.com/univercd/cc/td/doc/cisintwk/ito_doc/ipmulti.htm),
+Similar to
+[IP multicast](http://www.cisco.com/univercd/cc/td/doc/cisintwk/ito_doc/ipmulti.htm),
 but above the transport layer. Among other things, this would require...
 
   * ...a good API for [Vivaldi](http://project-iris.net/bib.html#networking), or
@@ -146,38 +140,37 @@ another network distance algorithm. Write a portable implementation and package
 it as an easy-to-use library for app developers. P2P overlay networks might be a
 good initial target audience.
 
-  * Write elisp for [filling code in Emacs](/filling_code_in_emacs). This
-is my single biggest wished-for Emacs feature. **\[_Done! See
-[fillcode](/fillcode)._]**
+  * Write elisp for [filling code in Emacs](/filling_code_in_emacs). This is my
+single biggest wished-for Emacs feature. **Done! See [fillcode](/fillcode).**
 
   * Emacs'
 [refill-mode](http://www.gnu.org/software/emacs/manual/html_node/Refill.html)
 and [filladapt](http://www.wonderworks.com/#filladapt) don't play well together.
-Make them! **[_Never mind, refill-mode isn't all that anyway._]**
+Make them! **Never mind, refill-mode isn't all that anyway.**
 
-  * Add an undo command to [tcsh](http://tcsh.org). [Bash has
-one](http://www.gnu.org/software/bash/manual/bashref.html#SEC93), courtesy of
-[Readline](http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html), so I have
-shell envy. **\[_Done! [Emacs
-shell-mode](http://gnu.org/software/emacs/manual/html_node/Shell-Mode.html) does
-this._]**
+  * Add an undo command to [tcsh](http://tcsh.org).
+[Bash has one](http://www.gnu.org/software/bash/manual/bashref.html#SEC93),
+courtesy of [Readline](http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html),
+so I have shell envy. **Done!
+[Emacs shell-mode](http://gnu.org/software/emacs/manual/html_node/Shell-Mode.html)
+does this.**
 
-  * Add color to [tcsh](http://tcsh.org) and [GNU
-Readline](http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html) with [ANSI
-color codes](http://www.termsys.demon.co.uk/vtansi.htm#colors). For example,
-highlight the current region (when one exists), highlight the search string in
-incremental search, etc. **\[_Done! See [tcsh highlighting patch](/tcsh_highlighting_patch)._]**
+  * Add color to [tcsh](http://tcsh.org) and
+[GNU Readline](http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html) with
+[ANSI color codes](http://www.termsys.demon.co.uk/vtansi.htm#colors). For
+example, highlight the current region (when one exists), highlight the search
+string in incremental search, etc. **Done! See
+[tcsh highlighting patch](/tcsh_highlighting_patch).**
 
   * Add
 [delete-selection-mode](http://www.emacswiki.org/cgi-bin/wiki/DeleteSelectionMode)
-to [tcsh](http://tcsh.org) and [GNU
-Readline](http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html). **\[_Done!
-[Emacs
-shell-mode](http://gnu.org/software/emacs/manual/html_node/Shell-Mode.html) does
-this._]**
+to [tcsh](http://tcsh.org) and
+[GNU Readline](http://cnswww.cns.cwru.edu/php/chet/readline/rltop.html). **Done!
+[Emacs shell-mode](http://gnu.org/software/emacs/manual/html_node/Shell-Mode.html)
+does this.**
 
-  * [Referrer spam](/referrer_spam) is evil. Extend [Tony
-Buser](http://juju.org/)'s
+  * [Referrer spam](/referrer_spam) is evil. Extend
+[Tony Buser](http://juju.org/)'s
 [derefspam](http://www.juju.org/archives/2005/01/21/derefspam) script to use
 DNSBLs and RBLs like [Spamhaus](http://www.spamhaus.org/xbl/index.lasso),
 [BSB](http://bsb.empty.us/), [Blitzed](http://opm.blitzed.org/info), and
@@ -189,19 +182,18 @@ idea as a [GreaseMonkey](http://greasemonkey.mozdev.org) user script for
 [Gmail](http://gmail.com/). (I'd love to do it for Pine, but it's way too
 ambitious.)
 
-  * Write a [pine patch](/software#patches) to undo
-top-posting. It would parse an incoming email based on quoting levels, remove
-duplicate quotes, and display the unique quotes in the order they were written.
-Thanks to Matt Ackeret and [this pine-info
-thread](http://mailman1.u.washington.edu/pipermail/pine-info/2005-June/042260.html)
+  * Write a [pine patch](/software#patches) to undo top-posting. It would parse
+an incoming email based on quoting levels, remove duplicate quotes, and display
+the unique quotes in the order they were written. Thanks to Matt Ackeret and
+[this pine-info thread](http://mailman1.u.washington.edu/pipermail/pine-info/2005-June/042260.html)
 for the original idea.
 
   * Add [sieve](http://sieve.info/) support to [Gmail](http://gmail.com/).
 
   * Build a simple webapp with [Django](http://www.djangoproject.com/). Is it
 really as good as [Rails](http://www.rubyonrails.com/),
-[Struts](http://struts.apache.org/), and [Zope](http://www.zope.org/)?
-**\[_Done, at [work](http://google.com/). Django templates rock!_]**
+[Struts](http://struts.apache.org/), and [Zope](http://www.zope.org/)? **Done,
+at [work](http://google.com/). Django templates rock!**
 
   * Revive [jxtapy](http://jxtapy.jxta.org/), which was founded to provide
 Python bindings for [JXTA](http://jxta.org/), but never got off the ground. Use
@@ -209,8 +201,7 @@ Python bindings for [JXTA](http://jxta.org/), but never got off the ground. Use
 
   * Add support for multiple-month events to
 [remind](http://roaringpenguin.com/penguin/open_source_remind.php), my calendar
-of choice. For more info, see this [email
-thread](/remind_multiple_months.txt).
+of choice. For more info, see this [email thread](/remind_multiple_months.txt).
 
   * Why do modern web sites devote so much space to big, useless images and so
 little space to links and fields you actually use? This is awful usability,
@@ -226,72 +217,72 @@ structures. [DHTs](http://www.nwfusion.com/details/805.html) are great building
 blocks for distributed systems, but their APIs are weak. Most only provide the
 functionality of a hashtable - gets and puts of key/value pairs. Write a
 tuplespace implementation that uses a DHT as its backing store - the best of
-both worlds!
-\[**_Done! [Amazon SimpleDB](/amazon_simpledb_thoughts) beat me to it._**]
+both worlds! **Done! [Amazon SimpleDB](/amazon_simpledb_thoughts) beat me to
+it.**
 
-  * Write [pine patches](/software#patches) to make
-saving messages smarter. When saving, pine should [remove trailing
-quotes](/pine_remove_trailing_quote_patch), remove the HTML parts of MIME
-multipart messages, render HTML-only messages as text and save the text instead,
-offer to delete attachments, and save the attachment filename in the deletion
-note. Details in [this email
-thread](http://mailman1.u.washington.edu/pipermail/pine-info/2005-June/042260.html).
-\[**_Done! See [pine delete attachments on save patch](/pine_delete_attachments_on_save_patch) and [pine remove trailing quote patch](/pine_remove_trailing_quote_patch)._**]
+  * Write [pine patches](/software#patches) to make saving messages smarter.
+When saving, pine should
+[remove trailing quotes](/pine_remove_trailing_quote_patch), remove the HTML
+parts of MIME multipart messages, render HTML-only messages as text and save the
+text instead, offer to delete attachments, and save the attachment filename in
+the deletion note. Details in
+[this email thread](http://mailman1.u.washington.edu/pipermail/pine-info/2005-June/042260.html).
+**Done! See
+[pine delete attachments on save patch](/pine_delete_attachments_on_save_patch)
+and [pine remove trailing quote patch](/pine_remove_trailing_quote_patch).**
 
-  * I use [GeoBytes](http://geobytes.com/) to do [geocoding](/geocoding)
-on my [voyeurism](/ryan.barrett.name/voyeurism.shtml) page. It's great,
-except that it occasionally [shows popup
-ads](http://geoup.com/GeoPhrase.htm#HowCanThisBeFree). So, I'd like to find a
-geocoding service that's ad-free and switch to it.
+  * I use [GeoBytes](http://geobytes.com/) to do [geocoding](/geocoding) on my
+[voyeurism](/ryan.barrett.name/voyeurism.shtml) page. It's great, except that it
+occasionally [shows popup ads](http://geoup.com/GeoPhrase.htm#HowCanThisBeFree).
+So, I'd like to find a geocoding service that's ad-free and switch to it.
 
   * [Google Keys](http://labs.google.com/keys/) provides keyboard shortcuts for
 Google search, which is quite cool...but it's not supported any more. Write a
 [GreaseMonkey](http://greasemonkey.mozdev.org) script that does the same thing.
-\[**_Done! See [Google Search
-Keys](http://www.imperialviolet.org/page24.html#e479)._**]
+**Done! See
+[Google Search Keys](http://www.imperialviolet.org/page24.html#e479).**
 
   * Contribute to [acoc](http://www.caliban.org/ruby/acoc.shtml), which I love.
 First, add specs for more tools like pgrep, identify, tar, jar, etc. Then,
 extend acoc to detect columnar text output and color accordingly, especially
 columns that are enums. Finally, maybe extend it to recognize common data types
-like dates, and color accordingly. \[**_Done! Partially. See [acoc.conf for
-context diffs](/acoc_conf_for_context_diffs)._**]
+like dates, and color accordingly. **Done! Partially. See
+[acoc.conf for context diffs](/acoc_conf_for_context_diffs).**
 
   * Write [GreaseMonkey](http://greasemonkey.mozdev.org/) scripts for GMail to
 address the [reasons I haven't switched from Pine](/gmail_vs_pine).
-Specifically, add more keyboard shortcuts, cursor management, and [trailing
-quotes](/pine_remove_trailing_quote_patch). (Inspired by [Humane Gmail
-autosave](http://hirevito.com/greasemonkey/humanegmailautosave.html) and Mihai
-Parparita's
+Specifically, add more keyboard shortcuts, cursor management, and
+[trailing quotes](/pine_remove_trailing_quote_patch). (Inspired by
+[Humane Gmail autosave](http://hirevito.com/greasemonkey/humanegmailautosave.html)
+and Mihai Parparita's
 [skinning](http://persistent.info/archives/2004/10/05/gmail-skinning),
-[persistent
-searches](http://persistent.info/archives/2005/03/01/gmail-searches), and extra
-keyboard shortcuts.) \[**_Somewhat done...see these [GMail GreaseMonkey
-scripts](http://dunck.us/collab/GreaseMonkeyUserScripts#head-2b681c0a24baff8899d7163cc7f805c75e1f44e4)._**]
+[persistent searches](http://persistent.info/archives/2005/03/01/gmail-searches),
+and extra keyboard shortcuts.) **Somewhat done...see these
+[GMail GreaseMonkey scripts](http://dunck.us/collab/GreaseMonkeyUserScripts#head-2b681c0a24baff8899d7163cc7f805c75e1f44e4).**
 
   * Implement [tuplespaces](http://www.almaden.ibm.com/cs/TSpaces/) in Python.
-\[**_Done! See [PyLinda](http://www-users.cs.york.ac.uk/~aw/pylinda/)._**]
+**Done! See [PyLinda](http://www-users.cs.york.ac.uk/~aw/pylinda/).**
 
   * Add SSL and
 [GSSAPI](http://www.faqs.org/faqs/kerberos-faq/general/section-84.html)
 authentication to Python's
 [imaplib](http://docs.python.org/lib/module-imaplib.html).
 
-  * Use the newly GSSAPI-capable imaplib to rewrite
-[folderstat](/folderstat) so it can talk to my mail server.
+  * Use the newly GSSAPI-capable imaplib to rewrite [folderstat](/folderstat) so
+it can talk to my mail server.
 
   * Work on [synchronizing mp3 playback](/synchronizing_mp3_playback). We
-[took a stab](/p4) at this a while ago, and it was technically sound, but
-it wasn't very usable. I'm currently working on simplifying it and making it
-work with more MP3 players on different platforms. Bonus points: support
+[took a stab](/p4) at this a while ago, and it was technically sound, but it
+wasn't very usable. I'm currently working on simplifying it and making it work
+with more MP3 players on different platforms. Bonus points: support
 [Bonjour](http://developer.apple.com/darwin/projects/bonjour/) (aka
-[ZeroConf](http://zeroconf.org/)). **\[_Done...as much as it can be. See
-[p4sync](/synchronizing_mp3_playback)._]**
+[ZeroConf](http://zeroconf.org/)). **Done...as much as it can be. See
+[p4sync](/synchronizing_mp3_playback).**
 
   * Add internet multiplayer to
-[Baku Baku](http://en.wikipedia.org/wiki/Baku_Baku_Animal),
-one of the best games ever written. This might require a complete
-rewrite...maybe with [PyGame](http://pygame.org/)?
+[Baku Baku](http://en.wikipedia.org/wiki/Baku_Baku_Animal), one of the best
+games ever written. This might require a complete rewrite...maybe with
+[PyGame](http://pygame.org/)?
 
   * It's widely acknowledged that bandwidth is increasing faster than latency.
 [David Patterson](http://www.cs.berkeley.edu/~pattrsn/) at Berkeley has a
@@ -304,21 +295,20 @@ write a general-purpose _platform_ that does caching/prefetching, using plugins
 that provide app- or protocol-specific heuristics.
 
   * Add an _xfn:_ operator to Google for searching [XFN](http://gmpg.org/xfn/)
-links, similar to the way the _site:_ operator searches specific sites.
-**_\[Done! See [RubHub](http://rubhub.com/) and
-[XhtmlFriends](http://xhtmlfriends.net/). They're not Google, but they're good
-enough.]_**
+links, similar to the way the _site:_ operator searches specific sites. **Done!
+See [RubHub](http://rubhub.com/) and [XhtmlFriends](http://xhtmlfriends.net/).
+They're not Google, but they're good enough.**
 
   * Build a "reverse" dashboard. It would take a piece of unstructured
 information (URL, email address, aim screen name, ICQ UIN, code snippet) and "do
 the right thing" with it (open a browser, compose an email, send an IM, compile,
-etc.). **_\[Done! The [Google Toolbar](http://toolbar.google.com/) does this.
-Most snippets of interest come from email or web pages, and since most people
-use web-based email, it covers the common case.]_**
+etc.). **Done! The [Google Toolbar](http://toolbar.google.com/) does this. Most
+snippets of interest come from email or web pages, and since most people use
+web-based email, it covers the common case.**
 
   * Self-healing systems have gotten a lot of buzz recently, but fairly little
-real progress. Investigate what has been done (e.g. [Solaris's fault
-manager](http://www.acmqueue.com/modules.php?name=Content&pa=showpage&pid=242&page=1)
+real progress. Investigate what has been done (e.g.
+[Solaris's fault manager](http://www.acmqueue.com/modules.php?name=Content&pa=showpage&pid=242&page=1)
 and [IBM's autonomic computing](http://www.research.ibm.com/autonomic/)).
 Separate the content from the hype, and see if similar improvements could be
 made to Linux.
@@ -329,14 +319,14 @@ offline and look for large-scale patterns at certain times - concerts, holidays,
 elections, TV shows, etc.
 
   * Build a [Pidgin](http://pidgin.im/) (formerly [Gaim](http://gaim.sf.net/))
-"secretary." If you go idle, but you didn't leave an away message, it guesses
-an appropriate one based on your previous away messages at that time of day,
-day of the week, etc.
+"secretary." If you go idle, but you didn't leave an away message, it guesses an
+appropriate one based on your previous away messages at that time of day, day of
+the week, etc.
 
   * [Pidgin](http://pidgin.im/) (formerly [Gaim](http://gaim.sf.net/)) plugins
-can provide their own preferences panes, but only if they're written in C.
-Hack on Pidgin to allow this for Perl plugins too. See [this email
-thread](http://sourceforge.net/mailarchive/message.php?msg_id=7225698).
+can provide their own preferences panes, but only if they're written in C. Hack
+on Pidgin to allow this for Perl plugins too. See
+[this email thread](http://sourceforge.net/mailarchive/message.php?msg_id=7225698).
 
   * Contribute to [SIP/SIMPLE](http://xml.coverpages.org/ni2003-10-31-a.html),
 the [IETF](http://ietf.org/) instant messaging/presence standard. Check on the
@@ -361,13 +351,13 @@ general-purpose overlay network with some really smart people behind it. (It's
 discussed relatively often on
 [p2p-hackers](http://zgp.org/mailman/listinfo/p2p-hackers).)
 
-  * Build a solid, open [SNTP library](/libmsntp). Implementations exist,
-both servers and clients, but they're either [not
-embeddable](http://www.citi.umich.edu/u/rees/pilot/) (ie
+  * Build a solid, open [SNTP library](/libmsntp). Implementations exist, both
+servers and clients, but they're either
+[not embeddable](http://www.citi.umich.edu/u/rees/pilot/) (ie
 [Java](http://www.kcmultimedia.com/jsntp/),
 [C#](http://www.dataman.ro/sntp/default.asp),
-[VB](http://www.vbxtras.com/products/sntpwizard.asp)) or [closed
-source](http://www.netcplus.com/netcclock.html)
+[VB](http://www.vbxtras.com/products/sntpwizard.asp)) or
+[closed source](http://www.netcplus.com/netcclock.html)
 ([lots](http://www.oneguycoding.com/automachron/)
 [and](http://www.unchanged.net/Software/SNTP/)
 [lots](http://www.beaglesoft.com/clwamixplatform.htm)
@@ -376,13 +366,10 @@ source](http://www.netcplus.com/netcclock.html)
 utilities could be good starting points: [DJB](http://cr.yp.to/djb.html)'s
 prickly, client-only [clockspeed](http://cr.yp.to/clockspeed.html) and
 [Cambridge](http://cam.ac.uk/)'s much more hacker-friendly
-[msntp](http://www.hpcf.cam.ac.uk/export/). \[**_Done! See
-[libmsntp](/libmsntp)._**]
+[msntp](http://www.hpcf.cam.ac.uk/export/). **Done! See [libmsntp](/libmsntp).**
 
   * Work on [PicoContainer](http://picocontainer.org/) and
 [NanoContainer](http://nanocontainer.org/), tools for loosely coupled software
-engineering. (Technically, they're implementations of the ["inversion of
-control" and "dependency
-injection"](http://www.martinfowler.com/articles/injection.html) patterns.) As a
-start, add Python support.
-
+engineering. (Technically, they're implementations of the
+["inversion of control" and "dependency injection"](http://www.martinfowler.com/articles/injection.html)
+patterns.) As a start, add Python support.
