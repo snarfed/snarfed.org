@@ -8,26 +8,26 @@ A collection of cat [photos](#photos) and [videos](#videos), both ours and
 
 <a name="videos"></a>
 
-<iframe class="third shadow" src="//www.youtube.com/embed/1gWvAXW9HBQ?controls=0"
-    frameborder="0" allowfullscreen class="shadow" style="border: none">
+<iframe src="//www.youtube.com/embed/1gWvAXW9HBQ?controls=0"
+     class="third shadow" frameborder="0" allowfullscreen style="border: none">
 </iframe>
 
-<iframe class="third shadow" src="//www.youtube.com/embed/2N2XEA6JwBA?controls=0"
-    frameborder="0" allowfullscreen class="shadow" style="border: none">
+<iframe src="//www.youtube.com/embed/2N2XEA6JwBA?controls=0"
+     class="third shadow" frameborder="0" allowfullscreen style="border: none">
 </iframe>
 
-<iframe class="third shadow" src="//www.youtube.com/embed/wlOhje_iwVw?controls=0"
-    frameborder="0" allowfullscreen class="shadow" style="border: none">
+<iframe src="//www.youtube.com/embed/wlOhje_iwVw?controls=0"
+     class="third shadow" frameborder="0" allowfullscreen style="border: none">
 </iframe>
 
-<iframe class="third shadow" src="//www.youtube.com/embed/cQL0YK7SPa8?controls=0"
-    frameborder="0" allowfullscreen class="shadow" style="border: none">
+<iframe src="//www.youtube.com/embed/cQL0YK7SPa8?controls=0"
+     class="third shadow" frameborder="0" allowfullscreen style="border: none">
 </iframe>
 
-<iframe class="third shadow" src="//www.youtube.com/embed/ps_ZyNsCn-0?controls=0"
-    frameborder="0" allowfullscreen class="shadow" style="border: none">
+<iframe src="//www.youtube.com/embed/ps_ZyNsCn-0?controls=0"
+     class="third shadow" frameborder="0" allowfullscreen style="border: none">
 </iframe>
 
-<iframe class="third shadow" src="//www.youtube.com/embed/V65AQB_i7gg?controls=0"
-    frameborder="0" allowfullscreen class="shadow" style="border: none">
+<iframe src="//www.youtube.com/embed/V65AQB_i7gg?controls=0"
+     class="third shadow" frameborder="0" allowfullscreen style="border: none">
 </iframe>
