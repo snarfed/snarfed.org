@@ -10,10 +10,16 @@ is public domain. Also see [other lists](/lists).
 <a name="projects"></a>
 ### Projects
 
-  * [Brid.gy](http://brid.gy/): Got a web site? Post links to your site on
-    social networks? Wish comments and likes showed up on your site? Brid.gy
+  * [Bridgy](http://brid.gy/): Got a web site? Post links to your site on
+    social networks? Wish comments and likes showed up on your site? Bridgy
     copies them back for you. Part of the [IndieWeb](http://indiewebcamp.com/)
     ecosystem.
+
+  * [IndieWeb Press This bookmarklets for WordPress](/indieweb-press-this-bookmarklets-for-wordpress)
+let you quickly [reply](http://indiewebcamp.com/reply),
+[like](http://indiewebcamp.com/like), [repost](http://indiewebcamp.com/repost),
+and [RSVP](http://indiewebcamp.com/rsvp) to [IndieWeb](http://indiewebcamp.com/)
+posts and events.
 
   * [oauth-dropins](https://github.com/snarfed/oauth-dropins) is a collection of
 drop-in [OAuth](http://oauth.net/) client flows in Python
