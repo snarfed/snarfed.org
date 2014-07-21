@@ -1,6 +1,6 @@
-Customizing App Engine ereporter
+Customizing App Engine's ereporter
 
-<p class="float right">
+<p class="right third">
  <a href="https://appengine.google.com/">
   <img src="/appengine_logo_new.png" /></a></p>
 
@@ -52,3 +52,4 @@ Here's a more complicated monkey patch that hides them:
     
     # Do this instead of ereporter.register_logger()
     logging.getLogger().addHandler(BlacklistingHandler())
+
