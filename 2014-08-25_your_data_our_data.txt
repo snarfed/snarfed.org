@@ -1,88 +1,93 @@
 Your data, our data
 
-<p class="right third">
+<p class="right half">
  <a href="http://www.npr.org/blogs/health/2014/07/21/332290342/big-data-peeps-at-your-medical-records-to-find-drug-problems">
   <img class="shadow" src="/npr_drug_data_funnel.jpg" /></a></p>
 
-Biotech is all the rage these days. Consumer health products like Fitbit have
-staked out one end, larger-than-life projects like
-[Craig Venter](http://en.wikipedia.org/wiki/Craig_Venter)'s capture imaginations
-and press cycles on the other, and an endless array of startups, big pharma, and
-research foundations fill the middle to bursting. Sequencing genomes is sexy.
-Folding proteins, stimulating neurons, and hunting superbugs are all sexy.
+Biotech is all the rage these days. [Fitbit](http://www.fitbit.com/) and friends
+stake out one end, [Craig Venter](http://en.wikipedia.org/wiki/Craig_Venter)
+captures imaginations and press cycles at the other end, and an endless array of
+startups, big pharma, and research foundations fill the middle to bursting.
+Sequencing genomes is sexy. Folding proteins, stimulating neurons, and hunting
+superbugs are all sexy.
 
-Even so, the project I've been me most excited about recently isn't a startup, a
-new product, or a resesarch breakthrough. It's a government bureacracy, working
-on compliance, using billing data. No joke.
+Even so, my favorite recent biotech project isn't a startup, new product, or
+breakthrough in the lab. It's a government bureacracy, working on compliance,
+using billing data. No joke.
 
-OK, that's a bit unfair. It does at least have a Hollywood-ominous name:
-[Mini-Sentinel](http://www.mini-sentinel.org/).
-[NPR did a great overview recently](http://www.npr.org/blogs/health/2014/07/21/332290342/big-data-peeps-at-your-medical-records-to-find-drug-problems),
+<!-- more -->
+
+OK, that's a bit unfair. It does at least have a Hollywood-killer-robot name:
+[Mini-Sentinel](http://www.mini-sentinel.org/). NPR
+[did a great overview](http://www.npr.org/blogs/health/2014/07/21/332290342/big-data-peeps-at-your-medical-records-to-find-drug-problems),
 but in short, it's an FDA project that mines
 [anonymized(ish)](/2012-09-22_revisiting_why_im_weird_about_privacy#dwork)
-medical records from 180M Americans to discover unexpected drug side effects and
-behaviors.
+medical records from over half of the American population to discover unexpected
+drug side effects and reactions.
 
-It's a noble goal, but admittedly, it's pretty straightforward big data. What
-gets me excited is, of all things, the bureacracy. Doctors and medical
-researchers have salivated at these kinds of meta-analyses for decades, but the
-data has always been tied up in a straitjacket of regulation, liability, and
-trade secrecy FUD. Big providers like Kaiser and the VA have enough data to do
-similar kinds of projects entirely on their own, internally, but this is one of
-the first I've seen that combines so much data from so many different sources.
+It's a noble goal, but admittedly, it's pretty straightforward big data. The
+bureacracy itself is actually the part that gets me worked up. The medical
+community has salivates at meta-analyses like these, but the data has always
+been tied up in a straitjacket of regulation, liability, and trade secrecy
+[FUD](http://www.catb.org/jargon/html/F/FUD.html). Big providers like Kaiser and
+the VA do similar work on just their own data, internally, but this the first
+project I've seen that combines so much data from so many different sources.
 
-It's far from perfect, of course. The data itself is mainly billing codes, the
-only somewhat standard format available, which was never meant for medical
-research. The methodology and results are still immature. Still, it's a big deal.
+It's far from perfect, of course. The data itself is mainly billing codes, which
+is temptingly standardized but was never meant for medical research, and the
+methodology and results are still immature. Still, it's a big deal.
 
 At a higher level, Mini-Sentinel illustrates what I
 [and others](https://www.schneier.com/blog/archives/2014/03/new_book_on_dat.html)
-think may be the next defining question for our generation: _how do we balance
+think may be the next defining question of our generation: _how do we balance
 the individual's right to
 [privacy and control over their data](/2011-08-03_why_im_weird_about_privacy)
 with society's need to use it for the public good?_
 
-Medical records have always skewed toward the individual. Positive results from
-projects like Mini-Sentinel may erode that, but laws like HIPAA and patients'
-(perfectly valid!) expectations of privacy will make progress slow and halting.
+<p class="left half">
+ <a href="http://instagram.com/p/sG1HsxElQa/">
+  <img class="shadow" src="/eff_nsa_illegal_spying.jpg" /></a></p>
 
-Other fields, notably advertising and more recently national security, have
-skewed toward the group's rights.
-[The US has never enjoyed clear data privacy protection, unlike the EU](/us_privacy_law),
-so credit bureaus and online ad networks have run rampant in recent history, and
-Snowden showed us that the NSA has largely ignored the 4th Amendment altogether
-in its epic, 9/11-fueled land (and budget) grab.
+Medical records have always skewed toward the individual. Projects like
+Mini-Sentinel may gradually erode that, but laws like
+[HIPAA](http://en.wikipedia.org/wiki/HIPAA) and valid privacy expectations will
+make progress slow and halting.
 
-Elsewhere, the waters are murky. Google's web search, for example, is a public
-good that's essential for most of us on a daily basis, but the EU has
+Other fields like advertising, and more recently national security, have skewed
+toward the group.
+[The US has never enjoyed clear data privacy protection](/us_privacy_law),
+unlike the EU, so credit bureaus and online ad networks have run rampant.
+Likewise, Snowden showed us just how brazenly the NSA has ignored the 4th
+Amendment in its epic, 9/11-fueled land (and budget) grab.
+
+The waters are murkier elsewhere. Google's web search, for example, is a public
+good that most of us depend on every day, but the EU has
 strong-armed it recently with a
-[Right to forget](http://en.wikipedia.org/wiki/Right_to_be_forgotten) doctrine
+[Right to Forget](http://en.wikipedia.org/wiki/Right_to_be_forgotten) doctrine
 for individuals. Similarly, Google's
 [environmental](https://earthengine.google.org/)
 [map](http://www.google.com/earth/explore/showcase/ocean.html)
-[projects](http://www.google.org/flutrends/) are
-powerful forces for positive change, but
-[Street View](https://www.google.com/maps/views/streetview) also blurs faces and
-license plates and sometimes more to protect people's privacy.
+[projects](http://www.google.org/flutrends/) are powerful forces for positive
+change, but [Street View](https://www.google.com/maps/views/streetview) has
+to blur faces and license plates to protect privacy.
 
-I'm particularly fascinated to see how we (re)think public spaces in the near
-future. US courts have consistently protected photographs and audio recordings
-from streets and other places with free right of way,
-["semi-public" spaces notwithstanding](/2012-01-29_popos_tour), but I don't
-expect that to last forever.
+In particular, I can't wait to see how we rethink public
+[and semi-public](/2012-01-29_popos_tour) spaces. US courts have consistently
+protected our right to take photographs and audio recordings from streets and
+other public places, but I don't expect that to last forever.
 [Drones may deliver our packages soon](http://ahistoryofthefuture.org/ucs-deliverbot/),
 but they can also hover outside our windows and record video, eventually
-straight through curtains. (Hello, TSA backscatter scanners!)
+even through curtains. (Hello, TSA backscatter scanners!)
 
 This is nothing less than the
 [tragedy of the commons in reverse](http://en.wikipedia.org/wiki/Tragedy_of_the_commons).
-Everyone loves an underdog, and right now the underdog is individual privacy,
-under threat from big bad corporations and governments. I worry that our
-bloodlust for individual privacy and data rights may end up muzzling important,
-worthy projects like Mini-Sentinel. On the other hand, I also worry about our
-ongoing failure to reign in power-thirsty behemoths like the NSA, credit
-bureaus, and ad networks, and provide meaningful privacy rights for individuals.
+Everyone loves an underdog, and right now that underdog is individual privacy,
+under threat from big bad corporate and government wolves. I worry that our
+bloodlust may lead us to muzzle important, worthy projects like Mini-Sentinel.
+On the other hand, I also worry about our ongoing failure to reign in
+power-thirsty behemoths like the NSA and tech oligopolies and provide meaningful
+privacy and data rights for individuals.
 
-The silver lining is that we're all talking about it. We may not be framing the
-question quite the way I'd like, as a balance between individual and group
-rights, but that's ok. It's not going away anytime soon.
+The silver lining, at least, is that we're all talking about this question. We
+may not be framing it quite the way I'd like, as a balance between individual
+and group rights, but that's ok. It's not going away anytime soon.
