@@ -1,0 +1,15 @@
+Why I don't have reply contexts
+
+I post [indie replies](http://indiewebcamp.com/comment) [here](/responses) on
+snarfed.org, but I don't include
+[reply contexts](http://indiewebcamp.com/reply-context), which results in poor
+UX on the reply pages.
+
+Why don't I include reply contexts? The short answer is, because it would take
+some grungy work on my WordPress theme, which I generally avoid. I hate hacking
+on CMSes!
+
+Reply contexts also just aren't really a
+[personal itch](http://indiewebcamp.com/distinguished) for me. I don't really
+want to emphasize my replies or likes to my site's visitors at all, which is
+also why I hide them away and don't include them in any (h-)feeds.

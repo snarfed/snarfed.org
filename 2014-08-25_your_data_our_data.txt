@@ -5,8 +5,9 @@ Your data, our data
   <img class="shadow" src="/npr_drug_data_funnel.jpg" /></a></p>
 
 Biotech is all the rage these days. [Fitbit](http://www.fitbit.com/) and friends
-stake out one end, [Craig Venter](http://en.wikipedia.org/wiki/Craig_Venter)
-captures imaginations and press cycles at the other end, and an endless array of
+burn VC money at one end,
+[Craig Venter](http://en.wikipedia.org/wiki/Craig_Venter) captures imaginations
+and press cycles and grant funding at the other, and an endless array of
 startups, big pharma, and research foundations fill the middle to bursting.
 Sequencing genomes is sexy. Folding proteins, stimulating neurons, and hunting
 superbugs are all sexy.
@@ -16,6 +17,7 @@ breakthrough in the lab. It's a government bureacracy, working on compliance,
 using billing data. No joke.
 
 <!-- more -->
+<span />
 
 OK, that's a bit unfair. It does at least have a Hollywood-killer-robot name:
 [Mini-Sentinel](http://www.mini-sentinel.org/). NPR
@@ -30,8 +32,8 @@ bureacracy itself is actually the part that gets me worked up. The medical
 community has salivates at meta-analyses like these, but the data has always
 been tied up in a straitjacket of regulation, liability, and trade secrecy
 [FUD](http://www.catb.org/jargon/html/F/FUD.html). Big providers like Kaiser and
-the VA do similar work on just their own data, internally, but this the first
-project I've seen that combines so much data from so many different sources.
+the VA do similar work on their own data, internally, but this the first project
+I've seen that combines so much data from so many different sources.
 
 It's far from perfect, of course. The data itself is mainly billing codes, which
 is temptingly standardized but was never meant for medical research, and the
@@ -76,8 +78,9 @@ In particular, I can't wait to see how we rethink public
 protected our right to take photographs and audio recordings from streets and
 other public places, but I don't expect that to last forever.
 [Drones may deliver our packages soon](http://ahistoryofthefuture.org/ucs-deliverbot/),
-but they can also hover outside our windows and record video, eventually
-even through curtains. (Hello, TSA backscatter scanners!)
+but they can also
+[hover outside our windows and record video](http://www.latimes.com/local/politics/la-me-pol-drones-paparazzi-20140817-story.html),
+eventually even through curtains. (Hello, TSA backscatter scanners!)
 
 This is nothing less than the
 [tragedy of the commons in reverse](http://en.wikipedia.org/wiki/Tragedy_of_the_commons).
@@ -88,6 +91,6 @@ On the other hand, I also worry about our ongoing failure to reign in
 power-thirsty behemoths like the NSA and tech oligopolies and provide meaningful
 privacy and data rights for individuals.
 
-The silver lining, at least, is that we're all talking about this question. We
-may not be framing it quite the way I'd like, as a balance between individual
-and group rights, but that's ok. It's not going away anytime soon.
+The silver lining, at least, is that we're talking about the question. We may
+not be framing it quite the way I'd like, as a balance between individual and
+group rights, but that's ok. We'll be struggling with it for a while to come.
