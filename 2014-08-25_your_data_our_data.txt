@@ -28,9 +28,9 @@ medical records from over half of the American population to discover unexpected
 drug side effects and reactions.
 
 It's a noble goal, but admittedly, it's pretty straightforward big data. The
-bureacracy itself is actually the part that gets me worked up. The medical
-community has salivates at meta-analyses like these, but the data has always
-been tied up in a straitjacket of regulation, liability, and trade secrecy
+bureacracy itself is actually the part that gets me worked up. The research
+community salivates at meta-analyses like these, but the data has always been
+tied up in a straitjacket of regulation, liability, and trade secrecy
 [FUD](http://www.catb.org/jargon/html/F/FUD.html). Big providers like Kaiser and
 the VA do similar work on their own data, internally, but this the first project
 I've seen that combines so much data from so many different sources.
