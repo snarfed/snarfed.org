@@ -1,27 +1,7 @@
 Ryan Barrett
 
-Backend software engineer, full stack hacker. Proven track record building and
-scaling distributed systems.
-
-<!-- (Jump to [experience](#experience), [education](#education), [patents](#patents), [other](#other).) -->
-
-Deep experience with Python, Go, Java, C++, Linux, iOS, Android, MySQL, NoSQL.
-Comfortable with more.
-
-Multiple [side projects](/software), [talks](/talks) at
-various conferences, and
-[contributions](https://www.ohloh.net/accounts/snarfed/positions) to major open
-source projects such as [OStatus](http://www.w3.org/community/ostatus/),
-[OpenID](http://openid.net/), [Emacs](http://gnu.org/software/emacs/),
-[WordPress](/2010-08-08_migrated_to_wordpress),
-[Pine](http://www.washington.edu/pine/)/[Alpine](http://www.washington.edu/alpine/),
-[tcsh](http://www.tcsh.org/), and [Pidgin](http://pidgin.im/).
-
-
-<br />
-<a name="experience"></a>
-### Experience
-
+Backend software engineer, full stack [hacker](/software). Proven track record
+building and scaling distributed systems.
 
 #### [Quip](https://quip.com/about), 2013 - present
 
@@ -75,21 +55,9 @@ biologists. Also developed a parallel computing system for running molecular
 analyses and simulations on large server clusters.
 
 
-[LucasArts Entertainment](http://www.lucasarts.com/), Software Engineer
-intern, 2001
-
-[Webvan Group](http://www.disobey.com/ghostsites/show_exhibit.shtml/webvan),
-Software Engineer intern, 2000
-
-[Electronic Arts](http://www.ea.com/), QA Tester, 1999
-
-MobileForce Technologies, Software Engineer intern, 1998
+<hr />
 
 
-
-<br />
-<a name="education"></a>
-### Education
 #### [Stanford University](http://www.stanford.edu/), 1998 - 2003
 
 MS in Computer Science  
@@ -100,15 +68,37 @@ advanced databases, operating systems, C/C++, Java, graphics, discrete math,
 abstract algebra.
 
 
-<br />
-<a name="patents"></a>
-### Patents
+[LucasArts Entertainment](http://www.lucasarts.com/), Software Engineer
+intern, 2001
+
+[Webvan Group](http://www.disobey.com/ghostsites/show_exhibit.shtml/webvan),
+Software Engineer intern, 2000
+
+[Electronic Arts](http://www.ea.com/), QA Tester, 1999
+
+MobileForce Technologies, Software Engineer intern, 1998
+
+<hr />
 
 [USPTO 7877482](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=7877482.PN.&OS=PN/7877482&RS=PN/7877482)
 ([PatentGenius](http://www.patentgenius.com/patent/7877482.html)):
 _Application Server Scalability Through Runtime Restrictions Enforcement in a
 Distributed Application Execution System_
 
+
+<!-- (Jump to [experience](#experience), [education](#education), [patents](#patents), [other](#other).)
+
+Deep experience with Python, Go, Java, C++, Linux, iOS, Android, MySQL, NoSQL.
+Comfortable with more.
+
+Multiple [side projects](/software), [talks](/talks) at
+various conferences, and
+[contributions](https://www.ohloh.net/accounts/snarfed/positions) to major open
+source projects such as [OStatus](http://www.w3.org/community/ostatus/),
+[OpenID](http://openid.net/), [Emacs](http://gnu.org/software/emacs/),
+[WordPress](/2010-08-08_migrated_to_wordpress),
+[Pine](http://www.washington.edu/pine/)/[Alpine](http://www.washington.edu/alpine/),
+[tcsh](http://www.tcsh.org/), and [Pidgin](http://pidgin.im/).
 
 <br />
 <a name="other"></a>
@@ -119,3 +109,4 @@ Distributed Application Execution System_
   * Classical Piano under Geraldine Keeling, multiple competitions and concerts
   * Fluent in Spanish
 
+-->
