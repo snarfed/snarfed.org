@@ -1,5 +1,29 @@
 pictures
 
-[album id="1" template="compact"]
+<div class="ngg-album-compact">
+<a href="/brooke-week-2">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2014/10/down_awake_9.jpg" />
+  </div>
+  <h4>brooke week 2</h4>
+</a></div>
 
-[Newborn Brooke](/newborn-brooke)
+<div class="ngg-album-compact">
+<a href="/newborn-brooke">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2014/09/portrait_swaddled_2.jpg" />
+  </div>
+  <h4>newborn brooke</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/pregnant">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2014/10/garden_2.jpg" />
+  </div>
+  <h4>pregnant</h4>
+</a></div>
+
+<br style="clear: both" />
+
+[album id="1" template="compact"]
