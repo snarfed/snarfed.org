@@ -1,0 +1,43 @@
+App Engine memcache: shared vs dedicated
+
+[Google App Engine](http://appengine.google.com/) has two self-explanatory
+options for [memcache](http://en.wikipedia.org/wiki/Memcached):
+[shared and dedicated](https://cloud.google.com/appengine/docs/adminconsole/memcache).
+For [Bridgy](http://brid.gy/), we've used shared, which is pretty stingy,
+averaging 1-3MB total cache space. Our oldest entry is usually just an hour or
+so old.
+
+Dedicated would obviously be better, but it costs money:
+[$.06/GB/hour](https://cloud.google.com/appengine/pricing#cost_resource) ie
+$1.44/GB/day. Still, I tried it for a couple days to see what the difference
+would be.
+
+Answer: not much. We definitely got more space, but it didn't seem to noticeably
+change request latency, cache hit ratio, frontend instances, or anything else
+meaningful. Graphs below. I switched to dedicated at around -2.5d, and switched
+back at around -.75d.
+
+A few interesting conclusions:
+
+* Right now, we actually like the fact that our memcache entries expire fairly quickly, at least for a couple things: discovered [webmention](http://webmention.org/) endpoints and resolved URLs (ie followed redirects). With a dedicated 1GB of cache, those would probably last for months, so we'd need to start setting an expiration on them.
+* Hit ratio didn't change much. That means our cache misses are mostly due to wholly new items, not to old items that got evicted.
+
+It's also interesting that almost a day after I switched back to shared
+memcache, our cache data wasn't flushed, which implies we stayed in the
+dedicated area and just got capped at the current size at that point. Maybe
+there's an infrequent cron job that moves apps back to shared.
+
+Total cache size:  
+<img class="shadow" src="/bridgy_dedicated_memcache_size.png" />
+
+Memcache traffic:  
+<img class="shadow" src="/bridgy_dedicated_memcache_traffic.png" />
+
+Memcache hit ratio:  
+<img class="shadow" src="/bridgy_dedicated_memcache_hit_ratio.png" />
+
+Request latency:  
+<img class="shadow" src="/bridgy_dedicated_memcache_latency.png" />
+
+Frontend instances:  
+<img class="shadow" src="/bridgy_dedicated_memcache_instances.png" />
