@@ -1,0 +1,14 @@
+Facebook Developer survey 2014
+
+My write-in feedback:
+
+pros:
+- size. most important factor. everyone's on Facebook!
+- breadth of API. you can read and write the vast majority of kinds data, across the platforms that matter.
+- developer friendly. you all are very generous with quotas and the kinds of apps you allow.
+
+cons:
+- the two month access token expiration! I get why you did it, and it's probably the right call, but it makes life difficult for apps like ours that operate entirely in the background, since users don't interact with it regularly, so we don't get a chance to refresh the token.
+- some error messages can be opaque and don't have details. e.g. generic 400s on operations on deleted accounts and liking some non public posts, generic 500s on posting with an action link that isn't configured, etc.
+- docs aren't always up to date. e.g. they say you can't edit an existing post, but you actually can.
+- some features are missing. e.g. I'd love to be able to read and create shares, but afaik right now I can't.
