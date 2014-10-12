@@ -1,9 +1,15 @@
 App Engine memcache: shared vs dedicated
 
-[Google App Engine](http://appengine.google.com/) has two self-explanatory
-options for [memcache](http://en.wikipedia.org/wiki/Memcached):
+<p class="right third">
+ <a href="http://appengine.google.com/">
+   <img src="/appengine_logo_new.png" /></a></p>
+
+_[Also posted on GitHub.](https://github.com/snarfed/bridgy/issues/300)_
+
+[Google App Engine](http://appengine.google.com/) has two
+[memcache](http://en.wikipedia.org/wiki/Memcached) options:
 [shared and dedicated](https://cloud.google.com/appengine/docs/adminconsole/memcache).
-For [Bridgy](http://brid.gy/), we've used shared, which is pretty stingy,
+We've used shared for [Bridgy](http://brid.gy/), which is pretty stingy,
 averaging 1-3MB total cache space. Our oldest entry is usually just an hour or
 so old.
 
@@ -28,16 +34,16 @@ dedicated area and just got capped at the current size at that point. Maybe
 there's an infrequent cron job that moves apps back to shared.
 
 Total cache size:  
-<img class="shadow" src="/bridgy_dedicated_memcache_size.png" />
+![](/bridgy_dedicated_memcache_size.png)
 
 Memcache traffic:  
-<img class="shadow" src="/bridgy_dedicated_memcache_traffic.png" />
+![](/bridgy_dedicated_memcache_traffic.png)
 
 Memcache hit ratio:  
-<img class="shadow" src="/bridgy_dedicated_memcache_hit_ratio.png" />
+![](/bridgy_dedicated_memcache_hit_ratio.png)
 
 Request latency:  
-<img class="shadow" src="/bridgy_dedicated_memcache_latency.png" />
+![](/bridgy_dedicated_memcache_latency.png)
 
 Frontend instances:  
-<img class="shadow" src="/bridgy_dedicated_memcache_instances.png" />
+![](/bridgy_dedicated_memcache_instances.png)

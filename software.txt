@@ -30,6 +30,9 @@ Twitter, and many more.
 Android app that opens links in their native app instead of the browser. It
 currently supports Facebook, Twitter, Instagram, GitHub, and Goodreads.
 
+  * [instagram-atom](https://instagram-atom.appspot.com/) generates and serves
+an Atom feed of your Instagram stream, ie photos from the people you follow.
+
   * [facebook-atom](https://facebook-atom.appspot.com/) generates and serves an
 Atom feed of your Facebook news feed, ie
 posts from your friends. [More background.](/2012-03-12_activitystreams_for_facebook_and_twitter)
