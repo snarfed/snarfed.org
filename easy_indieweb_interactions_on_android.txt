@@ -1,0 +1,40 @@
+Easy IndieWeb interactions on Android
+
+<p class="right third">
+ <a href="http://indiewebcamp.com/">
+   <img src="/indiewebcamp.png"/></a></p>
+
+Commenting, liking, and retweeting have never been quite as easy on the
+[IndieWeb](http://indiewebcamp.com/) as on Facebook, Twitter, and other
+[silos](http://indiewebcamp.com/silos), _especially_ on mobile. There are
+[bookmarklets for WordPress](/indieweb_press_this_bookmarklets_for_wordpress),
+[and Known](http://werd.io/2014/my-indieweb-life-how-my-site-gives-me-an-awesome##reply+to+my+friends)
+that work well on desktop, but they're not easy to set up on phones or tablets,
+and they don't work at all outside the browser. If you're looking at a tweet in
+the Twitter app, and you want to favorite it, you're out of luck.
+
+Enter Android's
+[Bookmarklet Free](https://play.google.com/store/apps/details?id=com.kurtchen.android.bookmarklet.free)
+app. It lets you share to a custom URL - in this case, your site's posting
+interface - and pass the title and link as parameters. Assuming your site
+supports it, this means you can interact with a link _from any Android app with
+just three taps_: Share, Bookmarklet Free's custom URL, and your site's Post
+button. Living the dream!
+
+<p class="left half">
+ <a href="/bookmarklet_free_press_this.png.png">
+   <img src="/bookmarklet_free_press_this.png.png"/></a></p>
+
+Here's how to set this up if you use the
+[WordPress IndieWeb Press This bookmarklets](/indieweb_press_this_bookmarklets_for_wordpress).
+Open the _Bookmarklet_ app, then tap _Custom Services_, then the menu icon in
+the bottom right, then _Create Custom Services_, then fill in the fields like as
+shown here. Replace `https://snarfed.org/w/` with your site's WordPress path,
+and make sure you have the most recent version of the
+[IndieWeb Press This plugin](https://github.com/pfefferle/wordpress-indieweb-press-this),
+[as of Oct. 21 2014](https://github.com/pfefferle/wordpress-indieweb-press-this/commit/962a11c4168206a422c3b2532f9c3c6265669f75).
+
+Or, if you're on [Known](http://withknown.com/), try using `http://YOURSITE/XXX`
+as the Base URL, `Y` as the Title parameter name, and Z as the URL parameter
+name.
+
