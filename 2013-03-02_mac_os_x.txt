@@ -23,6 +23,7 @@ I've done to make it feel comfortable.
   * [Mac OS X](#Mac_OS_X)
   * [Keyboard and mouse](#Keyboard_and_mouse)
   * [Xcode](#Xcode)
+  * [Yosemite](#Yosemite)
   * [Miscellaneous](#Miscellaneous)
 
 
@@ -416,6 +417,21 @@ I'm currently trying out [Dash](http://kapeli.com/), a document viewer that
 includes a ton of docsets for popular languages, platforms, and frameworks. It
 looks great so far, and has Emacs integration too.
 
+
+<a name="Yosemite"></a>
+#### Yosemite
+
+Upgrading to Yosemite was pleasantly uneventful. Here are some minor notes:
+
+* Evidently, if you have anything in `/usr/local`,
+  [your upgrade will slow down drastically](https://jimlindley.com/blog/yosemite-upgrade-homebrew-tips/).
+  I moved it to my home directory before upgrading, then back afterward, which
+  worked fine.
+* As of 10/25/2014, UI buttons and controls don't highlight in blue when you
+  focus them with Tab like they did in previous versions.
+  [This is probably a bug](http://apple.stackexchange.com/questions/152233/is-the-blue-button-outline-in-dialog-windows-removed-in-yosemite-when-using-tab),
+  and it's been
+  [reported on OpenRadar](http://openradar.appspot.com/radar?id=5297887323881472).
 
 <a name="Miscellaneous"></a>
 #### Miscellaneous
