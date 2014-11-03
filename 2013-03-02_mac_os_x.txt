@@ -157,18 +157,24 @@ backported from 24.3.
 I hadn't used Emacs 24 before this. One of my favorite new features is the built
 in package manager. Here are the extra packages I've installed so far:
 
-  * apache-mode
-  * applescript-mode
-  * css-mode
-  * go-mode
-  * js2-mode
-  * lua-mode
-  * markdown-mode
-  * php-mode
-  * [rainbow-delimiters](https://github.com/jlr/rainbow-delimiters)
-  * [rainbow-identifiers](https://github.com/Fanael/rainbow-identifiers)
-  * redo+
-  * ...and many others.
+* apache-mode
+* apples-mode
+* async
+* dash-at-point
+* emacs-cl
+* git-link
+* helm
+* go-mode
+* json-mode
+* less-css-mode
+* lua-mode
+* markdown-mode
+* php-mode
+* rainbow-delimiters
+* rainbow-identifiers
+* redo+
+* smartscan
+* yaml-mode
 
 [Emacs's GDB integration](http://www.gnu.org/software/emacs/manual/html_node/emacs/Debuggers.html)
 is great, but it takes a few extra steps to get it working on Mac OS X.
