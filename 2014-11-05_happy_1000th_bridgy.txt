@@ -1,0 +1,45 @@
+Happy 1000th, Bridgy
+
+<p class="right third">
+ <a href="http://brid.gy/"><img src="/bridgy_logo.jpg"/></a></p>
+
+[Bridgy](https://www.brid.gy/), my little [IndieWeb](http://indiewebcamp.com/)
+side project, hit a milestone yesterday: 1000 users! Congratulations
+[Brett Glisson](https://www.brid.gy/googleplus/101184744082016026460), you win!
+
+OK, it's technically just 1000 _accounts_, not users per se, since many people
+sign up for more than one social network - Facebook, Twitter, etc. I'd guess
+there are only 400-500 distinct users. It's not always easy to tell which
+different accounts have the same person behind them, though, and 1000 is a nice
+round number, so I'm going with it. Happy 1000th, Bridgy!
+
+<!-- more -->
+<span />
+
+To be sure, this is not big. We're not in viral
+[growth hacking](http://en.wikipedia.org/wiki/Growth_hacking)
+[CAC](http://en.wikipedia.org/wiki/Customer_acquisition_cost) land any more,
+Toto... which is just fine with me. I built Bridgy to scratch my own itch, in
+fine open source (and IndieWeb) tradition. I only polished it up and launched it
+publicly because it was just enough work to maybe warrant saving other people
+the same effort.
+
+It's customary in "look how far we've come!" post like this to wax lyrical about
+lessons learned along the way. Honestly, I doubt I've learned anything truly
+insightful, but I did notice a few things that might count.
+
+<p>
+<a href="/bridgy_1000_accounts.png">
+  <img src="/bridgy_1000_accounts_thumb.png" style="width: 48%" /></a>
+<a href="/bridgy_1000_accounts_stacked.png">
+  <img src="/bridgy_1000_accounts_stacked_thumb.png" style="width: 48%" /></a>
+</p>
+
+
+TODOs:
+workload graph: counts of responses, links, wms sent, publishes, etc. log graph.
+
+graph:
+accounts w/at least one wm sent
+*fraction* of accounts w/at least one wm sent
+domains w/at least one wm sent
