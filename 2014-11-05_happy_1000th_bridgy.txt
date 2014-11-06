@@ -5,29 +5,24 @@ Happy 1000th, Bridgy
 
 [Bridgy](https://www.brid.gy/), my little [IndieWeb](http://indiewebcamp.com/)
 side project, hit a milestone yesterday: 1000 users! Congratulations
-[Brett Glisson](https://www.brid.gy/googleplus/101184744082016026460), you win!
+[Brett Glisson](https://www.brid.gy/googleplus/101184744082016026460), you win
+the prize!
 
-OK, it's technically just 1000 _accounts_, not users per se, since many people
-sign up for more than one social network - Facebook, Twitter, etc. I'd guess
-there are only 400-500 distinct users. It's not always easy to tell which
-different accounts have the same person behind them, though, and 1000 is a nice
-round number, so I'm going with it. Happy 1000th, Bridgy!
+1000 is not a big number, of course. We're not in viral,
+[growth hacking](http://en.wikipedia.org/wiki/Growth_hacking),
+[customer acquisition](http://en.wikipedia.org/wiki/Customer_acquisition_cost)
+land any more, Toto, and that's fine with me. I built Bridgy to scratch my own
+itch, in fine open source (and IndieWeb) tradition. I only polished it and
+launched it publicly because I thought other people might have the same itch.
 
 <!-- more -->
 <span />
 
-To be sure, this is not big. We're not in viral
-[growth hacking](http://en.wikipedia.org/wiki/Growth_hacking)
-[CAC](http://en.wikipedia.org/wiki/Customer_acquisition_cost) land any more,
-Toto... which is just fine with me. I built Bridgy to scratch my own itch, in
-fine open source (and IndieWeb) tradition. I only polished it up and launched it
-publicly because it was just enough work to maybe warrant saving other people
-the same effort.
+I enjoy a good navel gaze as much as the next developer, and milestones like
+this are always a good excuse, so here are some graphs. They have pretty colors!
 
-It's customary in "look how far we've come!" post like this to wax lyrical about
-lessons learned along the way. Honestly, I doubt I've learned anything truly
-insightful, but I did notice a few things that might count.
-
+First, user growth. I wouldn't call it exponential, but it's continuing at a
+steady clip.
 <p>
 <a href="/bridgy_1000_accounts.png">
   <img src="/bridgy_1000_accounts_thumb.png" style="width: 48%" /></a>
@@ -35,11 +30,65 @@ insightful, but I did notice a few things that might count.
   <img src="/bridgy_1000_accounts_stacked_thumb.png" style="width: 48%" /></a>
 </p>
 
+Many people sign up for more than one social network - Facebook, Twitter,
+etc. - so it's technically just 1000 _accounts_, not users. I'd guess there are
+only 400-500 distinct users. It's not easy to tell the difference automatically,
+though, and 1000 is a nice round number, so I'm going with it.
 
-TODOs:
-workload graph: counts of responses, links, wms sent, publishes, etc. log graph.
+On a related note, if the unexpected happens and the trickle suddenly becomes a
+flood, I'm pretty confident it will scale. App Engine does most of the heavy
+lifting, and webmention sending and silo polling are intentionally serialized so
+that they degrade gracefully. If a million people signed up overnight, the
+workload would remain (roughly) constant. The only part I'd probably need to
+rewrite is - of all things - the [users page](https://www.brid.gy/users).
 
-graph:
-accounts w/at least one wm sent
-*fraction* of accounts w/at least one wm sent
-domains w/at least one wm sent
+Now, the stuff Bridgy actually _does_. Note that the first graph is log scale,
+since I threw in everything and the kitchen sink. Tufte would probably have a
+fit.
+
+<p>
+<a href="/bridgy_1000_webmentions.png">
+  <img src="/bridgy_1000_webmentions_thumb.png" style="width: 48%" /></a>
+<a href="/bridgy_1000_activity.png">
+  <img src="/bridgy_1000_activity_thumb.png" style="width: 48%" /></a>
+</p>
+
+That's the candy up front; now it's time for us to eat our vegetables. What
+lessons have I learned so far? What has building Bridgy taught me? Honestly, I'm
+not sure. I can't think of anything particularly interesting or insightful. We
+need a balanced meal, though, so here are some thoughts:
+
+* The "scratch your own itch" thing really works. I always knew what to build
+next, and how to prioritize, based on what I wanted for myself. More
+interestingly, the major features I added later - [Bridgy Publish]() and
+[webmentions for blogs]() - weren't as strong itches for me personally,
+and correspondingly, each one has seen less and less uptake.
+
+On a related note, [Kyle Mahan](https://kylewm.com/) and
+[Emma Kuo](http://notenoughneon.com/) rock for implementing two of my biggest
+personal itches,
+[posse post discovery](http://indiewebcamp.com/posse-post-discovery) and
+[photo publishing](https://www.brid.gy/about#picture). Thanks guys!
+
+* I want users to have a good experience, but I don't want to do tech support.
+When someone reports a problem or asks a question, I try to find and fix the
+root cause, add automation or hints, or at the very least update
+[the docs](https://www.brid.gy/about) so that the next user won't have the same
+problem. It's not perfect, but I think it's helping...
+
+* ...or it could be that for most users, Bridgy is fire and forget. They sign
+up, refresh their user page a few times, maybe skim the docs, and then never
+come back. If they're set up right, they don't need to. Comments and retweets
+and +1s start showing up on their web site automatically. This is my favorite
+kind of UX: _none at all_...which is good for me, since I'm a godawful UX
+designer.
+
+Contributors are still doing
+[substantial new development](https://github.com/snarfed/bridgy/issues/240), and
+I've pushed out a steady trickle of tweaks and bug fixes for a while, but that's
+slowed down recently. None of the
+[remaining feature requests](https://github.com/snarfed/bridgy/issues) are above
+my itch threshold, so they may not happen anytime soon. I happily accept pull
+requests, but otherwise, Bridgy is basically on ops autopilot right now.
+
+Keep it up, Bridgy! Here's to 1000 more!
