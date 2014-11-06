@@ -8,24 +8,26 @@ side project, hit a milestone yesterday: 1000 users! Congratulations
 [Brett Glisson](https://www.brid.gy/googleplus/101184744082016026460), you win
 the prize!
 
-1000 is not a big number, of course. We're not in viral,
-[growth hacking](http://en.wikipedia.org/wiki/Growth_hacking),
-[customer acquisition](http://en.wikipedia.org/wiki/Customer_acquisition_cost)
-land any more, Toto, and that's fine with me. I built Bridgy to scratch my own
-itch, in fine open source (and IndieWeb) tradition. I only polished it and
-launched it publicly because I thought other people might have the same itch.
+1000 isn't a big number, of course. We're a long way from viral marketing,
+[growth hacking](http://en.wikipedia.org/wiki/Growth_hacking), or
+[customer acquisition costs](http://en.wikipedia.org/wiki/Customer_acquisition_cost)...and
+that's fine with me. I only built Bridgy to scratch my own itch, in fine open
+source and IndieWeb tradition. I only launched it publicly because I thought
+other people might have the same itch.
 
 <!-- more -->
 <span />
 
-I enjoy a good navel gaze as much as the next developer, and milestones like
-this are always a good excuse, so here are some graphs. They have pretty colors!
+In any case, milestones like this are always a good excuse for navel gazing,
+which I enjoy as much as anyone, so here are some graphs. They have pretty
+colors!
 
-First, user growth. I wouldn't call it exponential, but it's continuing at a
+First, user growth. Clearly not exponential, but it is keeping up a
 steady clip.
 <p>
 <a href="/bridgy_1000_accounts.png">
   <img src="/bridgy_1000_accounts_thumb.png" style="width: 48%" /></a>
+&nbsp;
 <a href="/bridgy_1000_accounts_stacked.png">
   <img src="/bridgy_1000_accounts_stacked_thumb.png" style="width: 48%" /></a>
 </p>
@@ -35,34 +37,41 @@ etc. - so it's technically just 1000 _accounts_, not users. I'd guess there are
 only 400-500 distinct users. It's not easy to tell the difference automatically,
 though, and 1000 is a nice round number, so I'm going with it.
 
-On a related note, if the unexpected happens and the trickle suddenly becomes a
-flood, I'm pretty confident it will scale. App Engine does most of the heavy
-lifting, and webmention sending and silo polling are intentionally serialized so
-that they degrade gracefully. If a million people signed up overnight, the
-workload would remain (roughly) constant. The only part I'd probably need to
-rewrite is - of all things - the [users page](https://www.brid.gy/users).
+If the unexpected happens and the trickle suddenly becomes a flood, I'm pretty
+confident it will scale. App Engine does most of the heavy lifting, and
+webmention sending and silo polling are intentionally serialized so that they
+degrade gracefully. If a million people signed up overnight, the workload would
+remain (roughly) constant. The only part I'd probably need to rewrite is - of
+all things - the [users page](https://www.brid.gy/users).
 
-Now, the stuff Bridgy actually _does_. Note that the first graph is log scale,
-since I threw in everything and the kitchen sink. Tufte would probably have a
-fit.
+Now, the stuff Bridgy actually _does_. Note that the second graph is log scale,
+since I threw in everything but the kitchen sink. Tufte would have a fit.
 
 <p>
 <a href="/bridgy_1000_webmentions.png">
   <img src="/bridgy_1000_webmentions_thumb.png" style="width: 48%" /></a>
+&nbsp;
 <a href="/bridgy_1000_activity.png">
   <img src="/bridgy_1000_activity_thumb.png" style="width: 48%" /></a>
 </p>
 
 That's the candy up front; now it's time for us to eat our vegetables. What
-lessons have I learned so far? What has building Bridgy taught me? Honestly, I'm
-not sure. I can't think of anything particularly interesting or insightful. We
-need a balanced meal, though, so here are some thoughts:
+lessons have I learned so far? What has building Bridgy taught me?
+
+Honestly, I'm not sure. I can't think of anything particularly interesting or
+insightful. We need a balanced meal, though, so here are some thoughts:
 
 * The "scratch your own itch" thing really works. I always knew what to build
 next, and how to prioritize, based on what I wanted for myself. More
-interestingly, the major features I added later - [Bridgy Publish]() and
-[webmentions for blogs]() - weren't as strong itches for me personally,
-and correspondingly, each one has seen less and less uptake.
+interestingly, the major features I added later -
+[Bridgy Publish](https://www.brid.gy/about#publishing) and
+[webmentions for blogs](https://www.brid.gy/about#blogs) - weren't as strong
+itches for me personally, and correspondingly, each one has seen less uptake
+that the one before it.
+
+<p class="right half">
+ <a href="/bridgy_1000_features.png">
+  <img src="/bridgy_1000_features_thumb.png" /></a></p>
 
 On a related note, [Kyle Mahan](https://kylewm.com/) and
 [Emma Kuo](http://notenoughneon.com/) rock for implementing two of my biggest
@@ -83,10 +92,22 @@ and +1s start showing up on their web site automatically. This is my favorite
 kind of UX: _none at all_...which is good for me, since I'm a godawful UX
 designer.
 
-Contributors are still doing
+* Finally, unit tests. I won't go all rabid religious dogma on you, but they're
+pretty damn great. The confidence to make big changes, to refactor core logic,
+secure in the knowledge that I'm not breaking anything...it's a unique kind of
+freedom. I also always
+[run them before deploying](https://github.com/snarfed/bridgy#development),
+which has saved my ass on more than one occasion when a "trivial" or even "noop"
+change introducing a subtle behavior change.
+
+  Automated monitoring that catches a regression bug in the new version you pushed
+to prod? Valuable. Sleeping through the night because your tests _prevented_
+that regression in the first place? Priceless.
+
+Anyway. Contributors are still doing
 [substantial new development](https://github.com/snarfed/bridgy/issues/240), and
-I've pushed out a steady trickle of tweaks and bug fixes for a while, but that's
-slowed down recently. None of the
+I've been pushing out a steady trickle of tweaks and bug fixes for a while, but
+that's slowed down recently. None of the
 [remaining feature requests](https://github.com/snarfed/bridgy/issues) are above
 my itch threshold, so they may not happen anytime soon. I happily accept pull
 requests, but otherwise, Bridgy is basically on ops autopilot right now.
