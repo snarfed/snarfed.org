@@ -1,6 +1,14 @@
 pictures
 
 <div class="ngg-album-compact">
+<a href="/brooke-month-2">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2014/10/dancing.jpg" />
+  </div>
+  <h4>brooke week 3</h4>
+</a></div>
+
+<div class="ngg-album-compact">
 <a href="/brooke-week-3">
   <div class="ngg-album-compactbox">
     <img src="/w/wp-content/uploads/2014/10/dancing.jpg" />

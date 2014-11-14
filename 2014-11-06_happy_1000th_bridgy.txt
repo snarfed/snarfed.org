@@ -10,7 +10,7 @@ side project, hit a milestone a couple days ago: 1000 users! Congratulations
 the prize!
 
 1000 isn't a big number. We're a long way from viral marketing,
-[growth hacking](http://en.wikipedia.org/wiki/Growth_hacking), or
+[growth hacking](http://en.wikipedia.org/wiki/Growth_hacking), and
 [customer acquisition](http://en.wikipedia.org/wiki/Customer_acquisition_cost)
 tracking, and that's fine with me. I built Bridgy to scratch my own itch, in
 fine open source and IndieWeb tradition, and only launched it publicly because I
@@ -37,11 +37,11 @@ have pretty colors!
 First, user growth. Clearly not exponential, but it is keeping up a steady clip.
 Also see the [cumulative graph at the top](#top).
 
-<p id="users" class="right half" style="margin: 0px; margin-right: -10px">
+<p id="users" class="right half" style="margin-left: 0px; margin-right: -10px">
  <a href="/bridgy_1000_accounts.png">
   <img src="/bridgy_1000_accounts_thumb.png" /></a>
 </p>
-<p class="left half" style="margin: 0px">
+<p class="left half" style="margin-right: 0px">
  <a href="/bridgy_1000_features.png">
   <img src="/bridgy_1000_features_thumb.png" /></a></p>
 </p>
@@ -53,19 +53,10 @@ technically 1000 _accounts_, not users. I'd guess there are only 400-500
 distinct users. It's not always easy to tell the difference automatically,
 though, and 1000 is a nice round number, so I'm going with it.
 
-<!--
-If the unexpected happens and the trickle suddenly becomes a flood, I'm pretty
-confident it will scale. App Engine does most of the heavy lifting, and
-webmention sending and silo polling are intentionally serialized so that they
-degrade gracefully. If a million people signed up overnight, the workload would
-remain (roughly) constant. The only part I'd probably need to rewrite is - of
-all things - the [users page](https://www.brid.gy/users).
--->
-
 Now, the stuff Bridgy actually _does_. Note that the second graph is log scale,
 since I threw in everything but the kitchen sink. Tufte would have a fit.
 
-<p class="right half" style="margin: 0px; margin-right: -10px">
+<p class="right half" style="margin-left: 0px; margin-right: -10px">
  <a href="/bridgy_1000_activity.png">
   <img src="/bridgy_1000_activity_thumb.png" /></a>
 </p>
@@ -74,7 +65,7 @@ since I threw in everything but the kitchen sink. Tufte would have a fit.
   <img src="/bridgy_1000_webmentions_thumb.png" /></a>
 </p>
 
-<br style="clear: both" />
+<span style="clear: both" />
 
 I served the candy up front, but now it's time to eat our vegetables. What
 lessons have I learned so far? What has building Bridgy taught me?
@@ -108,14 +99,14 @@ mention that
 [running them before deploying](https://github.com/snarfed/bridgy#development)
 has saved my ass on more than one occasion.
 
-Automated monitoring pages you at 3AM because the new release has a regression
-bug? Good. At least you caught it. Sleeping until morning because your tests
+Automated monitoring paged you at 3AM because the new release has a regression
+bug? Good. At least you caught it. Slept until morning because your tests
 caught the regression _before_ it went live? Priceless.
 
 Anyway. Contributors are still
 [cranking away](https://github.com/snarfed/bridgy/issues/240), and I've been
-pushing out a steady trickle of tweaks and bug fixes for a while, but that's
-slowed down recently. None of the
+pushing out a steady trickle of tweaks and bug fixes, but that's slowed down
+recently. None of the
 [remaining feature requests](https://github.com/snarfed/bridgy/issues) are above
 my itch threshold, so they may not happen anytime soon. I happily accept pull
 requests, but otherwise, Bridgy is basically on ops autopilot right now.

@@ -438,6 +438,12 @@ Upgrading to Yosemite was pleasantly uneventful. Here are some minor notes:
   [This is probably a bug](http://apple.stackexchange.com/questions/152233/is-the-blue-button-outline-in-dialog-windows-removed-in-yosemite-when-using-tab),
   and it's been
   [reported on OpenRadar](http://openradar.appspot.com/radar?id=5297887323881472).
+* The `ping` command was no longer in my $PATH. At first, I thought it had just
+  disappeared, but I finally discovered it had moved to `/sbin`. Or maybe
+  `/sbin` was no longer in my path by default. Anyway.
+* My laptop's hostname kept getting a numeric suffix, e.g. `hell-3` instead of
+  `hell`, and the suffix kept increasing. Still debugging...
+
 
 <a name="Miscellaneous"></a>
 #### Miscellaneous
