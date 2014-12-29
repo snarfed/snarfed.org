@@ -1,9 +1,17 @@
 pictures
 
 <div class="ngg-album-compact">
+<a href="/brooke-month-3">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2014/12/brooke_snoopy_selfie-300x224.jpg" />
+  </div>
+  <h4>brooke month 3</h4>
+</a></div>
+
+<div class="ngg-album-compact">
 <a href="/brooke-month-2">
   <div class="ngg-album-compactbox">
-    <img src="/w/wp-content/uploads/2014/11/cowgirl_snoopy_ride.jpg" />
+    <img src="/w/wp-content/uploads/2014/11/cowgirl_snoopy_ride-300x224.jpg" />
   </div>
   <h4>brooke month 2</h4>
 </a></div>
@@ -11,7 +19,7 @@ pictures
 <div class="ngg-album-compact">
 <a href="/brooke-week-3">
   <div class="ngg-album-compactbox">
-    <img src="/w/wp-content/uploads/2014/10/dancing.jpg" />
+    <img src="/w/wp-content/uploads/2014/10/dancing-225x300.jpg" />
   </div>
   <h4>brooke week 3</h4>
 </a></div>
@@ -19,7 +27,7 @@ pictures
 <div class="ngg-album-compact">
 <a href="/brooke-week-2">
   <div class="ngg-album-compactbox">
-    <img src="/w/wp-content/uploads/2014/10/down_awake_9.jpg" />
+    <img src="/w/wp-content/uploads/2014/10/down_awake_9-211x300.jpg" />
   </div>
   <h4>brooke week 2</h4>
 </a></div>
@@ -27,7 +35,7 @@ pictures
 <div class="ngg-album-compact">
 <a href="/newborn-brooke">
   <div class="ngg-album-compactbox">
-    <img src="/w/wp-content/uploads/2014/09/portrait_swaddled_2.jpg" />
+    <img src="/w/wp-content/uploads/2014/09/portrait_swaddled_2-225x300.jpg" />
   </div>
   <h4>newborn brooke</h4>
 </a></div>
@@ -35,7 +43,7 @@ pictures
 <div class="ngg-album-compact">
 <a href="/pregnant">
   <div class="ngg-album-compactbox">
-    <img src="/w/wp-content/uploads/2014/10/garden_2.jpg" />
+    <img src="/w/wp-content/uploads/2014/10/garden_2-196x300.jpg" />
   </div>
   <h4>pregnant</h4>
 </a></div>
