@@ -1,6 +1,6 @@
 Indie checkin flow
 
-<p class="right">
+<p class="right third">
  <a href="https://indiewebcamp.com/checkin">
   <img src="/facebook_places_logo.jpg" /></a></p>
 
@@ -36,6 +36,9 @@ Here's an example of a resulting
 
 The next step is to automate this. For me personally, the path of least
 resistance is to automate the PESOS, ie build a minimal OwnYourCheckin
-implementation similar to <a class="h-card"
-href="http://aaronparecki.com/">Aaron</a>'s great
+similar to
+<a class="h-card" href="http://aaronparecki.com/">Aaron</a>'s great
 [OwnYourGram](http://ownyourgram.com/).
+
+<a class="u-syndication" href="http://news.indiewebcamp.com/post/snarfed.org/indie-checkin-flow">
+  <em>Also on IndieNews.</em></a>

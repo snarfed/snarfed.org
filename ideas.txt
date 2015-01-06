@@ -4,8 +4,22 @@ ideas
  <a href="/ideas">
   <img src="/thought_bubble.jpg" /></a></p>
 
-An old list of ideas (mostly bad :P) for software projects I'd like to work on.
-Also see the [projects I've _actually_ worked on](/software).
+An list of ideas - mostly old and bad - for software projects I'd like to work
+on. Also see the [projects I've _actually_ worked on](/software).
+
+  * Build OwnYourCheckin, an automated [PESOS](https://indiewebcamp.com/PESOS)
+service for Facebook checkins similar to [OwnYourGram](http://ownyourgram.com/).
+[More background.](/indie-checkin-flow#OwnYourCheckin) (Use Facebook's
+[real time updates](https://developers.facebook.com/docs/graph-api/real-time-updates/v2.2#receiveupdates)
+for `/user/feed`!)
+
+  * Make a [micropub](http://indiewebcamp.com/micropub) plugin for WordPress.
+
+  * Measure the real world eventual consistency of [App Engine's Datastore](https://github.com/andrewgaul/are-we-consistent-yet/issues/6) and
+  [Amazon DynamoDB](https://github.com/andrewgaul/are-we-consistent-yet/issues/7)
+  as part of [Are We Consistent Yet?](https://github.com/andrewgaul/are-we-consistent-yet)
+
+_...long period of disuse here..._
 
   * Learn [Erlang](http://erlang.org/about.html). Write something distributed in
 it.
