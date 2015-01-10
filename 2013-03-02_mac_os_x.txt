@@ -494,3 +494,11 @@ Spotlight is allowed to index, but that hasn't fixed it.
 ...it turns out this is probably an
 [Emacs memory leak](http://apple.stackexchange.com/a/118336/43900) that's fixed
 in 24.4. Fingers crossed!
+
+I noticed that my network connections (maybe just WiFi) were disconnecting when
+the display turned off. I went to System Preferences, Energy Saver, Power
+Adapater, and
+[checked _Prevent computer from sleeping automatically when the display is off_ and unchecked _Wake for Wi-Fi network access_](http://apple.stackexchange.com/a/161446/43900).
+I also ran `sudo pmset -a sleep 0` to
+[disable the computer sleep (as opposed to display sleep) timer](http://apple.stackexchange.com/a/144799/43900).
+Fingers crossed!
