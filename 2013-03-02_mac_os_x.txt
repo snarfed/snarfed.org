@@ -25,7 +25,7 @@ I've done to make it feel comfortable.
   * [Xcode](#Xcode)
   * [Yosemite](#Yosemite)
   * [Miscellaneous](#Miscellaneous)
-
+  * [Remaining problems](#Remaining_problems)
 
 <a name="Homebrew"></a>
 #### Homebrew
@@ -92,6 +92,10 @@ followed [this recipe](http://stackoverflow.com/a/9832084/186123). Executive
 summary: `cd /usr/local`, run `brew versions PACKAGE`, run its `git checkout`
 command for the version you want, then just run `brew install PACKAGE
 [OPTIONS]` and optionally `brew [un]link PACKAGE`.
+
+I also installed a few python libraries:
+
+`sudo pip install httplib2 py-dateutil`
 
 Apache is installed but not started by default; run `apachectl -k start` to
 start it. Here's
@@ -502,3 +506,26 @@ Adapater, and
 I also ran `sudo pmset -a sleep 0` to
 [disable the computer sleep (as opposed to display sleep) timer](http://apple.stackexchange.com/a/144799/43900).
 Fingers crossed!
+
+
+<a name="Remaining_problems"></a>
+#### Remaining problems
+
+* In Yosemite, many apps lost the highlight around selected buttons, which makes
+  tabbing between them difficult.
+  [StackOverflow say this is a Yosemite bug](http://apple.stackexchange.com/questions/152233),
+  and the fix is for each app to recompile with the current Xcode and libraries.
+  Sigh.
+* Also Yosemite: after I upgraded, my laptop's hostname started changing
+regularly. _hell_ became _hell-2_, _hell-3_, etc. Found
+[lots of](http://ispire.me/computer-name-changing-constantly-yosemite/)
+[discussions](http://osxdaily.com/2014/10/25/fix-wi-fi-problems-os-x-yosemite/#comment-713715
+)
+and [support](https://discussions.apple.com/thread/6631728)
+[threads](https://discussions.apple.com/thread/6606072). I tried this but no luck:
+
+<span />
+
+    sudo /usr/libexec/PlistBuddy \
+      -c "Add :ProgramArguments: string --no-namechange" \
+      /System/Library/LaunchDaemons/com.apple.discoveryd.plist

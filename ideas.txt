@@ -7,6 +7,15 @@ ideas
 An list of ideas - mostly old and bad - for software projects I'd like to work
 on. Also see the [projects I've _actually_ worked on](/software).
 
+  * [youtube-dl](http://rg3.github.io/youtube-dl/) as web service. Give it a
+YouTube video URL (or any streaming video), and it uses youtube-dl to download
+the video, store it, and return a URL. Bonus points: connect it to
+[Huffduffer](http://huffduffer.com/) to serve YouTube videos, and ideally full
+channels and playlists, as feeds that you can subscribe to in podcast apps.
+Background: [similar project](https://github.com/jaimeMF/youtube-dl-api-server),
+[post](https://charlesleifer.com/blog/a-flask-front-end-and-chrome-extension-for-youtube-dl/),
+[discussion](https://indiewebcamp.com/irc/2014-12-16#t1418763139721).
+
   * Build OwnYourCheckin, an automated [PESOS](https://indiewebcamp.com/PESOS)
 service for Facebook checkins similar to [OwnYourGram](http://ownyourgram.com/).
 [More background.](/indie-checkin-flow#OwnYourCheckin) (Use Facebook's
