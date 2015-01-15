@@ -16,11 +16,12 @@ Background: [similar project](https://github.com/jaimeMF/youtube-dl-api-server),
 [post](https://charlesleifer.com/blog/a-flask-front-end-and-chrome-extension-for-youtube-dl/),
 [discussion](https://indiewebcamp.com/irc/2014-12-16#t1418763139721).
 
-  * Build OwnYourCheckin, an automated [PESOS](https://indiewebcamp.com/PESOS)
-service for Facebook checkins similar to [OwnYourGram](http://ownyourgram.com/).
-[More background.](/indie-checkin-flow#OwnYourCheckin) (Use Facebook's
+  * Build [OwnYourCheckin](https://github.com/snarfed/ownyourcheckin), an
+automated [PESOS](https://indiewebcamp.com/PESOS) service for Facebook checkins
+similar to [OwnYourGram](http://ownyourgram.com/).
+[More background.](/indie-checkin-flow#OwnYourCheckin) Use Facebook's
 [real time updates](https://developers.facebook.com/docs/graph-api/real-time-updates/v2.2#receiveupdates)
-for `/user/feed`!)
+for `/user/feed`. (**Done!**)
 
   * Make a [micropub](http://indiewebcamp.com/micropub) plugin for WordPress.
 

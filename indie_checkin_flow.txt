@@ -4,6 +4,8 @@ Indie checkin flow
  <a href="https://indiewebcamp.com/checkin">
   <img src="/facebook_places_logo.jpg" /></a></p>
 
+_Update: [I've automated this.](https://github.com/snarfed/ownyourcheckin)_
+
 Here's my
 [2015 IndieWeb launch commitment](http://tantek.com/2014/357/b1/2015-indieweb-site-launch-commitment):
 I'd like to be able to post [indie checkins](https://indiewebcamp.com/checkin)
@@ -35,10 +37,10 @@ Here's an example of a resulting
 [Facebook checkin](https://www.facebook.com/photo.php?fbid=10101428540874433&set=a.725223993143.2289690.212038&type=1&theater).
 
 The next step is to automate this. For me personally, the path of least
-resistance is to automate the PESOS, ie build a minimal OwnYourCheckin
-similar to
-<a class="h-card" href="http://aaronparecki.com/">Aaron</a>'s great
+resistance is to automate the PESOS, ie build a minimal OwnYourCheckin similar
+to <a class="h-card" href="http://aaronparecki.com/">Aaron</a>'s great
 [OwnYourGram](http://ownyourgram.com/).
+[And...done!](https://github.com/snarfed/ownyourcheckin)
 
 <a class="u-syndication" href="http://news.indiewebcamp.com/post/snarfed.org/indie-checkin-flow">
   <em>Also on IndieNews.</em></a>
