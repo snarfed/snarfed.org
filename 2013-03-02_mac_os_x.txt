@@ -60,6 +60,7 @@ Here are some packages I've installed so far:
   * coreutils
   * emacs
   * exif
+  * ffmpeg
   * flickcurl
   * fontconfig
   * freetype
@@ -179,6 +180,7 @@ in package manager. Here are the extra packages I've installed so far:
 * redo+
 * smartscan
 * yaml-mode
+* youtube-dl
 
 [Emacs's GDB integration](http://www.gnu.org/software/emacs/manual/html_node/emacs/Debuggers.html)
 is great, but it takes a few extra steps to get it working on Mac OS X.

@@ -2,7 +2,7 @@ PESOS for Bridgy Publish
 
 <p class="third right">
  <a href="https://www.youtube.com/watch?v=gf0sN7484Oc">
-  <img src="/pesos.jpg" /></a></p>
+  <img class="shadow" src="/pesos.jpg" /></a></p>
 
 *[POSSE](https://indiewebcamp.com/POSSE)ing silo interactions is
 [getting harder by the day](https://kylewm.com/2015/01/the-facebook-api-v2-0-is-hobbled-to-prevent-spammy),
@@ -11,7 +11,7 @@ result. We could fix this by adding an
 [OwnYourGram](http://ownyourgram.com/)-style
 [PESOS](https://indiewebcamp.com/PESOS) option. Should we?*
 
-If you're going to [own your posts](https://indiewebcamp.com/silo) on social
+If you're going to [own your posts](https://indiewebcamp.com/ownyourdata) on social
 networks, [indieweb](https://indiewebcamp.com/) people
 [prefer to POSSE](https://indiewebcamp.com/POSSE#Advantages): post on your own
 site, syndicate elsewhere. [Bridgy Publish](https://www.brid.gy/about#publish)
@@ -19,23 +19,25 @@ follows this philosophy and provides POSSE as a service.
 
 POSSE has its disadvantages though. The Twitter app, for example, lets you
 favorite a tweet with a single tap and ~100ms latency. Best of breed mobile
-indieweb approaches can't touch that right now. Mine, for example, usually take
+indieweb approaches can't touch that right now. Mine, for example, take
 [many more taps](/easy-indieweb-interactions-on-android)
 [and 10-20s](/indie-checkin-flow). Browser-based implementations and
-[webactions](https://indiewebcamp.com/webactions) are a bit better, but not a
-lot.
+[webactions](https://indiewebcamp.com/webactions) are a bit better, but not
+much.
 
-More importantly, the silos don't even allow POSSEing
-[interactions](https://indiewebcamp.com/interactions) consistently, or at all.
-Facebook's 2.0 API
-[prevents commenting](https://github.com/snarfed/bridgy/issues/350)
+<!-- more -->
+<span />
+
+The [silos](https://indiewebcamp.com/silo) don't even allow POSSEing
+[interactions](https://indiewebcamp.com/interactions) consistently, if at all.
+Facebook's 2.0 API often
+[prevents commenting](https://github.com/snarfed/bridgy/issues/350),
 [liking](https://developers.facebook.com/docs/graph-api/reference/v2.2/user/likes#publish),
-[and resharing](https://developers.facebook.com/docs/graph-api/reference/v2.2/object/sharedposts#publish)
-in many cases. Instagram's API
-[supports liking, but not commenting](https://indiewebcamp.com/Instagram#API).
-Google+'s API
-[doesn't support writing](https://indiewebcamp.com/Google%2B#POSSE), full stop.
-Twitter has a fairly complete write API, but take it with a
+[and resharing](https://developers.facebook.com/docs/graph-api/reference/v2.2/object/sharedposts#publish).
+Instagram's API
+[supports liking but not commenting](https://indiewebcamp.com/Instagram#API).
+Google+'s API [is read only](https://indiewebcamp.com/Google%2B#POSSE), full
+stop. Twitter has a fairly complete write API, but must be taken with a
 [grain of salt](https://indiewebcamp.com/Twitter#Developer_Relations).
 
 <p class="left third">
@@ -47,8 +49,8 @@ POSSE model?
 The arguments [for POSSE](https://indiewebcamp.com/POSSE#Advantages) and
 [against PESOS](https://indiewebcamp.com/PESOS#Disadvantages) are well founded.
 They're also aimed primarily at posts, not interactions. For interactions with
-single silo posts, especially likes and reposts, which rarely include additional
-content, PESOS ain't so bad, and it comes with two big benefits:
+single silo posts, especially likes and reposts - which rarely include additional
+content - PESOS ain't so bad, and it comes with two big benefits:
 
 * Full support for all interactions in all silos.
 * Use the silos' native UXes (often single-tap and low latency), databases
@@ -56,18 +58,16 @@ content, PESOS ain't so bad, and it comes with two big benefits:
 No need to reimplement them or bolt them onto your own site.
 
 Some of the [PESOS drawbacks](https://indiewebcamp.com/PESOS#Disadvantages)
-still apply. It enables silo-first authoring and presentation, and maybe
-slightly discourages indie and cross-silo interactions. Those would still be
-just as doable, though, since we'd keep the current POSSE functionality.
+still apply. It enables silo-first authoring and presentation and may discourage
+indie and cross-silo interactions. Those would be just as doable, though, since
+we'd keep the current POSSE functionality.
 
-Adding this to Bridgy Publish would be a big project, but it's doable. Bridgy
-would watch your silo account for replies, likes, and reshares that you create
-inside the silo (ie that bridgy publish didn't create). When it sees one, it
-create a matching original post on your site, via
-[micropub](http://micropub.net/) or whatever, including
-[rel-syndication link](https://indiewebcamp.com/rel-syndication). (I despair at
-implementing even just the
-[token management](http://indiewebcamp.com/micropub#Authentication), much less a
-full micropub client, but those are literally implementation details.)
+This would be a big project, but it's doable. Bridgy would watch your silo
+account for replies, likes, and reshares that it didn't create. When it sees
+one, it creates a matching original post on your site, via
+[micropub](http://micropub.net/) or whatever. (I despair at implementing even
+just the [token management](https://indiewebcamp.com/micropub#Authentication),
+much less a full micropub client, but those are literally implementation
+details.)
 
 Thoughts?
