@@ -1,6 +1,22 @@
 pictures
 
 <div class="ngg-album-compact">
+<a href="/brooke-month-4">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2015/02/brooke_with_snoopy_2.jpg?w=322&h=242&crop=1" />
+  </div>
+  <h4>brooke month 4</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/carmel-and-big-sur">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2015/02/carmel_beach_ryan_gina.jpg?h=224&crop=1" />
+  </div>
+  <h4>carmel and big sur</h4>
+</a></div>
+
+<div class="ngg-album-compact">
 <a href="/brooke-month-3">
   <div class="ngg-album-compactbox">
     <img src="/w/wp-content/uploads/2014/12/brooke_snoopy_selfie-300x224.jpg" />
