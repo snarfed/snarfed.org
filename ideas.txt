@@ -21,9 +21,10 @@ automated [PESOS](https://indiewebcamp.com/PESOS) service for Facebook checkins
 similar to [OwnYourGram](http://ownyourgram.com/).
 [More background.](/indie-checkin-flow#OwnYourCheckin) Use Facebook's
 [real time updates](https://developers.facebook.com/docs/graph-api/real-time-updates/v2.2#receiveupdates)
-for `/user/feed`. (**Done!**)
+for `/user/feed`. (**[Done!](https://github.com/snarfed/ownyourcheckin)** )
 
   * Make a [micropub](http://indiewebcamp.com/micropub) plugin for WordPress.
+(**[Done!](https://github.com/snarfed/wordpress-micropub)** )
 
   * Measure the real world eventual consistency of [App Engine's Datastore](https://github.com/andrewgaul/are-we-consistent-yet/issues/6) and
   [Amazon DynamoDB](https://github.com/andrewgaul/are-we-consistent-yet/issues/7)

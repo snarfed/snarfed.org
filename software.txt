@@ -10,12 +10,24 @@ see [my GitHub profile](https://github.com/snarfed) and [other lists](/lists).
 <a name="projects"></a>
 ### Projects
 
-  * [Bridgy](http://brid.gy/): Got a web site? Post links to your site on
-    social networks? Wish comments and likes showed up on your site? Bridgy
-    copies them back for you. Part of the [IndieWeb](http://indiewebcamp.com/)
-    ecosystem.
+  * [Bridgy](http://brid.gy/): Got a web site? Post links to your site on social
+networks? Wish comments and likes showed up on your site? Bridgy copies them
+back for you. Part of the [IndieWeb](http://indiewebcamp.com/) ecosystem.
 
-  * [IndieWeb Press This bookmarklets for WordPress](/indieweb-press-this-bookmarklets-for-wordpress)
+  * [wordpress-micropub](https://github.com/snarfed/wordpress-micropub) is a
+[Micropub](http://indiewebcamp.com/micropub) server plugin for WordPress.
+
+  * [OwnYourResponses](https://github.com/snarfed/ownyourresponses) is
+[PESOS](https://indiewebcamp.com/PESOS) as a service for likes, comments,
+reshares, etc.
+
+  * [OwnYourCheckin](https://github.com/snarfed/ownyourcheckin) is
+[PESOS](https://indiewebcamp.com/PESOS) as a service for Facebook checkins.
+
+  * Make a [micropub](http://indiewebcamp.com/micropub) plugin for WordPress.
+(**[Done!](https://github.com/snarfed/wordpress-micropub)** )
+
+* [IndieWeb Press This bookmarklets for WordPress](/indieweb-press-this-bookmarklets-for-wordpress)
 let you quickly [reply](http://indiewebcamp.com/reply),
 [like](http://indiewebcamp.com/like), [repost](http://indiewebcamp.com/repost),
 and [RSVP](http://indiewebcamp.com/rsvp) to [IndieWeb](http://indiewebcamp.com/)
