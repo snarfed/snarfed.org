@@ -1,7 +1,7 @@
 The denormalizing sweet spot
 
 <p class="right half">
-  <img src="denormalize_all_the_things.jpg" /></p>
+  <img src="/denormalize_all_the_things.jpg" /></p>
 
 In webapp circles, [denormalizing](http://en.wikipedia.org/wiki/Denormalization)
 vs [normalizing](http://en.wikipedia.org/wiki/Database_normalization) is an age
@@ -42,7 +42,7 @@ illustrates it well:
 > computational resources.
 
 <p class="right half">
-  <img src="inverted_u_shaped_curve.png" /></p>
+  <img src="/inverted_u_shaped_curve.png" /></p>
 
 So is there a sweet spot for denormalizing, if not for whole applications or
 datasets then maybe at the level of individual queries or objects? It seems like

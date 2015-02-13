@@ -19,15 +19,12 @@ back for you. Part of the [IndieWeb](http://indiewebcamp.com/) ecosystem.
 
   * [OwnYourResponses](https://github.com/snarfed/ownyourresponses) is
 [PESOS](https://indiewebcamp.com/PESOS) as a service for likes, comments,
-reshares, etc.
+reshares, etc. on social networks.
 
   * [OwnYourCheckin](https://github.com/snarfed/ownyourcheckin) is
 [PESOS](https://indiewebcamp.com/PESOS) as a service for Facebook checkins.
 
-  * Make a [micropub](http://indiewebcamp.com/micropub) plugin for WordPress.
-(**[Done!](https://github.com/snarfed/wordpress-micropub)** )
-
-* [IndieWeb Press This bookmarklets for WordPress](/indieweb-press-this-bookmarklets-for-wordpress)
+  * [IndieWeb Press This bookmarklets for WordPress](/indieweb-press-this-bookmarklets-for-wordpress)
 let you quickly [reply](http://indiewebcamp.com/reply),
 [like](http://indiewebcamp.com/like), [repost](http://indiewebcamp.com/repost),
 and [RSVP](http://indiewebcamp.com/rsvp) to [IndieWeb](http://indiewebcamp.com/)
