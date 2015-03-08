@@ -10,17 +10,17 @@ Responses
 <!-- catlist docs: http://wordpress.org/plugins/list-category-posts/other_notes/ -->
 <div class="left half archive-page">
 <span id="replies">Recent replies:</span>  
-[catlist name=indieweb orderby=date order=desc numberposts=20]
+[catlist name=reply orderby=date order=desc numberposts=20]
 
 <span id="retweets">Recent retweets:</span>  
-[catlist name=indieweb_repost orderby=date order=desc numberposts=20]
+[catlist name=repost orderby=date order=desc numberposts=20]
 </div>
 
 <div class="right half archive-page">
 <span id="likes">Recent likes and favorites:</span>  
-[catlist name=indieweb_like orderby=date order=desc numberposts=20]
+[catlist name=like orderby=date order=desc numberposts=20]
 
 <span id="rsvps">Recent RSVPs:</span>  
-[catlist name=indieweb_rsvp orderby=date order=desc numberposts=20]
+[catlist name=rsvp orderby=date order=desc numberposts=20]
 </div>
 

@@ -1,0 +1,19 @@
+huffduff-video
+
+<p class="third right">
+ <a href="http://huffduff-video.snarfed.org/">
+  <img class="shadow" src="/huffduff_youtube.jpg" /></a></p>
+
+[huffduff-video](http://huffduff-video.snarfed.org/), my latest side project,
+lets you take the audio from videos on YouTube, Vimeo, and
+[many more sites](http://rg3.github.io/youtube-dl/supportedsites.html) and send
+it to [Huffduffer](http://huffduffer.com/). Just
+[grab the bookmarklet](http://huffduff-video.snarfed.org/), click it next time
+you find a video that you want to listen to, and it should show up in your
+podcast app automatically!
+
+It's pretty bare bones, but it does the trick. Thanks to
+[youtube-dl](http://rg3.github.io/youtube-dl/) for doing all of the heavy
+lifting, [Jeremy Keith](https://adactio.com/) for building the wonderful
+[Huffduffer](http://huffduffer.com/), and interviewers and speakers everywhere
+for providing so many great videos to huffduff!
