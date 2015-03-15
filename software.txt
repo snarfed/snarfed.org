@@ -14,6 +14,10 @@ see [my GitHub profile](https://github.com/snarfed) and [other lists](/lists).
 networks? Wish comments and likes showed up on your site? Bridgy copies them
 back for you. Part of the [IndieWeb](http://indiewebcamp.com/) ecosystem.
 
+  * [huffduff-video](http://huffduff-video.snarfed.org/) lets you send
+[Huffduffer](http://huffduffer.com/) the audio from videos on YouTube, Vimeo,
+[and more](http://rg3.github.io/youtube-dl/supportedsites.html).
+
   * [wordpress-micropub](https://github.com/snarfed/wordpress-micropub) is a
 [Micropub](http://indiewebcamp.com/micropub) server plugin for WordPress.
 
