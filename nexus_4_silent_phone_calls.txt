@@ -1,0 +1,17 @@
+Nexus 4 silent phone calls
+
+<p class="third right">
+  <img src="/android_phone_icon.png" /></p>
+
+My Nexus 4 recently started exhibiting an annoying bug: no audio in phone calls.
+Sometimes I could hear the other person but they couldn't hear me, sometimes
+vice versa. Sometimes neither. Rebooting fixed it, but only for a little while.
+
+A few searches led me to
+[these](https://code.google.com/p/android/issues/detail?id=82949)
+[two](https://code.google.com/p/android/issues/detail?id=81093)
+bug reports, and to
+[this](https://code.google.com/p/android/issues/detail?id=82949#c440)
+[workaround](https://code.google.com/p/android/issues/detail?id=81093#c36): open
+Settings, Developer, go to the Media section, and disable NuPlayer. Works for me
+so far!
