@@ -1,7 +1,7 @@
 Micropub for hosted blogs
 
-<p class="right half">
- <img src="/bridgy_logo_old_big.jpg "/></p>
+<p class="right third">
+ <a href="/bridgy_logo_old_big.jpg"><img src="/bridgy_logo_old_big.jpg"/></a></p>
 
 <a class="h-card" href="http://kevinmarks.com/">Kevin Marks</a> had a
 [great idea](http://indiewebcamp.com/irc/2015-04-07#t1428449282044) the other
@@ -11,7 +11,7 @@ like [Blogger](https://indiewebcamp.com/Blogger),
 [Tumblr](https://indiewebcamp.com/Tumblr), similar to
 [Bridgy's webmention service.](https://www.brid.gy/about#blogs) If you have a
 hosted blog, you'd sign into this service, approve it to create/edit/delete your
-posts, add its micropub endpoint to your blog's HTML, et voila! Instant micropub
+posts, add its micropub endpoint to your blog's HTML, et voilà! Instant micropub
 support.
 
 I don't plan to take the lead on building this, but we do have a clear idea of
@@ -51,3 +51,7 @@ Here are each silo's API docs for CRUDding posts:
 [Tumblr](https://www.tumblr.com/docs/en/api/v2#posting).
 
 Who's with me?
+
+<a class="u-syndication" href="http://news.indiewebcamp.com/post/snarfed.org/micropub-for-hosted-blogs">
+  <em>Also on IndieNews.</em></a>
+
