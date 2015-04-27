@@ -3,6 +3,9 @@ Micropub for hosted blogs
 <p class="right third">
  <a href="/bridgy_logo_old_big.jpg"><img src="/bridgy_logo_old_big.jpg"/></a></p>
 
+_Update: <a class="h-card" href="https://kylewm.com/">Kyle Mahan</a> has
+[built this](https://feverdream.herokuapp.com/)!_
+
 <a class="h-card" href="http://kevinmarks.com/">Kevin Marks</a> had a
 [great idea](http://indiewebcamp.com/irc/2015-04-07#t1428449282044) the other
 day: a [micropub](https://micropub.net/) bridge service for hosted blog sites

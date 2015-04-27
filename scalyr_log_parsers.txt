@@ -88,3 +88,4 @@ Here's a corresponding log snippet:
     [2015-04-06 18:40:18,616: INFO/MainProcess] Events of group {task} enabled by remote.
     [2015-04-06 21:35:23,935: INFO/MainProcess] Received task: util.mailer._send_transactional_email[c324201d-175f-416d-9f94-8bb143d5c189]
     [2015-04-06 21:35:25,241: WARNING/Worker-1] WARNING	Property: Unknown Property name. [36:3: -webkit-text-size-adjust]
+
