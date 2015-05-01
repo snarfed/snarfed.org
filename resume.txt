@@ -3,12 +3,21 @@ Resume
 Backend software engineer, full stack [hacker](/software). Proven track record
 building and scaling distributed systems.
 
-#### [Color Genomics](https://getcolor.com/#/), 2015 - present
+
+<p class="third right">
+ <a href="https://getcolor.com/">
+  <img src="/color_logo.png" /></a></p>
+
+#### [Color Genomics](https://getcolor.com/), 2015 - present
 
 Working on the bioinformatics pipeline, genetic variant callers, and quality
 measurement platform. Also leading the ops team for external and internal
 webapps and bioinformatics.
 
+
+<p class="third right">
+ <a href="https://quip.com/">
+  <img src="/quip_logo.jpg" /></a></p>
 
 #### [Quip](https://quip.com/about), 2013 - 2015
 
@@ -17,6 +26,10 @@ data model, synchronization protocol, [web frontend](https://quip.com/),
 [iOS app](https://itunes.apple.com/us/app/quip/id647922896), and
 [Android app](https://play.google.com/store/apps/details?id=com.quip.quip).
 
+
+<p class="third right">
+ <a href="https://google.com/">
+  <img src="/google_logo.png" /></a></p>
 
 <a name="google"></a>
 #### [Google](http://www.google.com/), 2003 - 2013
@@ -55,6 +68,10 @@ customers, >XB transactions per day, and >XXkqps with 99.98% uptime. (2003 -
 2006)
 
 
+<p class="third right">
+ <a href="https://www.ibm.com/">
+  <img src="/ibm_logo.png" /></a></p>
+
 #### [IBM Almaden Research Center](http://almaden.ibm.com/), 2002 - 2003
 
 [Extreme Blue](http://www.ibm.com/extremeblue/) intern, then research engineer.
@@ -75,6 +92,10 @@ projects include [Bridgy](https://www.brid.gy/),
 [Pine](http://www.washington.edu/pine/)/[Alpine](http://www.washington.edu/alpine/),
 [tcsh](http://www.tcsh.org/), and [Pidgin](http://pidgin.im/).
 
+
+<p class="third right">
+ <a href="https://www.stanford.edu/">
+  <img src="/stanford_seal.png" /></a></p>
 
 #### [Stanford University](http://www.stanford.edu/), 1998 - 2003
 
