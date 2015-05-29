@@ -1,6 +1,14 @@
 pictures
 
 <div class="ngg-album-compact">
+<a href="/healdsburg-2015">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2015/05/thomas_george_patio_2.jpg?h=242&crop=1" />
+  </div>
+  <h4>healdsburg 2015</h4>
+</a></div>
+
+<div class="ngg-album-compact">
 <a href="/brooke-months-5-7">
   <div class="ngg-album-compactbox">
     <img src="/w/wp-content/uploads/2015/05/sunglasses_5-e1430625030193.jpg?h=242&crop=1" />
