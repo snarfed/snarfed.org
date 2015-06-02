@@ -4,15 +4,14 @@ Posting to the indieweb from your phone
   <img src="/mobile_web.jpg" /></p>
 
 Using the indieweb easily from my phone has been
-[a bit of a](/easy-indieweb-interactions-on-android)
-[hobby horse of mine](indie-checkin-flow)
-[for a while now](/indieweb-press-this-bookmarklets-for-wordpress). Over the
-weekend, a few of us
+[hobby horse](/easy-indieweb-interactions-on-android)
+[of mine](indie-checkin-flow)
+[for a while now](/indieweb-press-this-bookmarklets-for-wordpress). A few of us
 [briefly discussed](https://indiewebcamp.com/irc/2015-05-30#t1433011785618) the
-"next big thing" for the indieweb in IRC, and one idea that caught my eye was an
-"offline first" mobile client that's fully functional without connectivity and
-syncs to your site when it is connected. This is a small but growing pattern
-among modern mobile apps, and it's _great_.
+next big thing for the indieweb over the weekend, and one idea that caught my
+eye was an "offline first" mobile client that's fully functional without
+connectivity and syncs to your site when it is connected. This is a small but
+growing pattern among modern mobile apps, and it's _great_.
 
 We could build this as a native mobile app or library, maybe using an
 [existing](https://simperium.com/) [mobile](https://parse.com/)
@@ -21,9 +20,9 @@ We could build this as a native mobile app or library, maybe using an
 [platform](https://aws.amazon.com/cognito/), but the indieweb community prefers
 the web to native apps. So, let's use the web!
 
-Here's a straw man design for a self-contained, browser-based
-[micropub](http://micropub.net/) client on top of HTML5 and localStorage (which
-[all modern mobile browsers support](http://caniuse.com/#feat=namevalue-storage)):
+Here's a hand-wavy straw man design for a self-contained, browser-based
+[micropub](http://micropub.net/) client on top of HTML5 and localStorage, which
+[all modern mobile browsers support](http://caniuse.com/#feat=namevalue-storage):
 * You load it in your phone's browser, then save it so it's usable offline.
 * When you're connected, it fetches your site, crawls your feeds, and stores
   your posts locally. Maybe all of them, maybe the most recent or another
@@ -35,7 +34,7 @@ Here's a straw man design for a self-contained, browser-based
 Bonus features:
 * You can easily post pictures, videos, links, and other content by
   sharing/sending them to the editor via deep linking (aka intents aka app links).
-* It downloads and uses other data from your site (or elsewhere) to provide a
+* It downloads and uses other data from your site (or anywhere) to provide a
   better posting UX, e.g.
   [nicknames-cache](http://indiewebcamp.com/nicknames-cache),
   [venue](http://indiewebcamp.com/venue) database,
@@ -48,9 +47,13 @@ Bonus features:
   lets you approve or reject them. (We don't yet have a standard for this.)
 
 There are plenty of example apps with good UXes for managing posts offline and
-updating when connected. [WordPress](https://apps.wordpress.org/) is a great
-one. They're worth studying for UI ideas and techniques.
+updating when connected: [WordPress](https://apps.wordpress.org/),
+[Tumblr](https://play.google.com/store/apps/details?id=com.tumblr),
+[SimpleNote](http://simplenote.com/), [Quip](https://quip.com/blog/), and most
+email and messaging clients, just to name a few. They're worth studying for UI
+ideas and techniques.
 
-This isn't an [itch](http://indiewebcamp.com/itches) for me personally, so I'm
-probably not the right person to build it, but I'd love to see it happen. Who's
-interested?
+This isn't an [itch](http://indiewebcamp.com/itches) for me personally, since my
+site already has a [great mobile app](https://apps.wordpress.org/), so I'm
+probably not the right person to build it. I'd love to see it happen, though.
+Who's interested?
