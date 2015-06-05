@@ -3,48 +3,61 @@ Posting to the indieweb from your phone
 <p class="right third">
   <img src="/mobile_web.jpg" /></p>
 
-Using the indieweb easily from my phone has been
+Using the [indieweb](http://indiewebcamp.com/) easily from my phone has been
 [hobby horse](/easy-indieweb-interactions-on-android)
 [of mine](indie-checkin-flow)
 [for a while now](/indieweb-press-this-bookmarklets-for-wordpress). A few of us
-[briefly discussed](https://indiewebcamp.com/irc/2015-05-30#t1433011785618) the
-next big thing for the indieweb over the weekend, and one idea that caught my
-eye was an "offline first" mobile client that's fully functional without
-connectivity and syncs to your site when it is connected. This is a small but
-growing pattern among modern mobile apps, and it's _great_.
+[brainstormed the indieweb's next big thing](https://indiewebcamp.com/irc/2015-05-30#t1433011785618)
+over the weekend, and one idea that caught my eye was an "offline first"
+mobile client that's fully functional without connectivity and syncs to your
+site when it is connected. This is a small but growing pattern among modern
+mobile apps, and it's _great_.
 
 We could build this as a native mobile app or library, maybe using an
 [existing](https://simperium.com/) [mobile](https://parse.com/)
 [offline](https://www.firebase.com/)
 [sync](https://www.dropbox.com/developers/datastore)
-[platform](https://aws.amazon.com/cognito/), but the indieweb community prefers
-the web to native apps. So, let's use the web!
+[platform](https://aws.amazon.com/cognito/), but the indieweb community
+[prefers the mobile web to native apps](http://indiewebcamp.com/app#The_problem_with_apps).
+So, let's consider it a challenge!
 
 Here's a hand-wavy straw man design for a self-contained, browser-based
-[micropub](http://micropub.net/) client on top of HTML5 and localStorage, which
+mobile [micropub](http://micropub.net/) client on top of HTML5 and
+[localStorage](http://www.w3.org/TR/webstorage/#storage), which
 [all modern mobile browsers support](http://caniuse.com/#feat=namevalue-storage):
 * You load it in your phone's browser, then save it so it's usable offline.
-* When you're connected, it fetches your site, crawls your feeds, and stores
-  your posts locally. Maybe all of them, maybe the most recent or another
-  heuristic.
+* When you're connected, it fetches your site, crawls your
+  [feeds](http://indiewebcamp.com/feed), and stores your posts locally. Maybe
+  all of them, maybe just the most recent or another heuristic. Could use
+  [Web Workers](https://html.spec.whatwg.org/multipage/workers.html)
+  ([well supported](http://caniuse.com/#feat=webworkers)) and/or
+  [Service Workers](https://slightlyoff.github.io/ServiceWorker/spec/service_worker/)
+  ([less supported](http://caniuse.com/#feat=serviceworkers)).
 * You can compose new posts and edit existing posts offline, using only
   localStorage.
 * When you're connected, it publishes your updates via micropub.
 
+Note that due to the
+[same origin policy](http://en.wikipedia.org/wiki/Same-origin_policy), your site
+will need to [set CORS headers](http://enable-cors.org/) (e.g.
+`Access-Control-Allow-Origin`) to allow the client to download its data and post
+to it via micropub.
+
+
 Bonus features:
-* You can easily post pictures, videos, links, and other content by
-  sharing/sending them to the editor via deep linking (aka intents aka app links).
-* It downloads and uses other data from your site (or anywhere) to provide a
-  better posting UX, e.g.
+* Easily post pictures, videos, links, and other content by sharing/sending them
+  to the editor via deep linking (aka intents aka app links).
+* Download your site's
   [nicknames-cache](http://indiewebcamp.com/nicknames-cache),
   [venue](http://indiewebcamp.com/venue) database,
-  [syndication](http://indiewebcamp.com/rel-syndication) targets.
-* It registers for [web actions](http://indiewebcamp.com/webactions) so you
-  can use it to easily indie [reply](http://indiewebcamp.com/reply),
+  [syndication](http://indiewebcamp.com/rel-syndication) targets, and other data
+  to provide a better posting UX.
+* Register for [web actions](http://indiewebcamp.com/webactions) so you can use
+  it to easily indie [reply](http://indiewebcamp.com/reply),
   [like](http://indiewebcamp.com/like), etc.
-* It downloads your moderation queue, ie pending
+* Download your moderation queue, ie pending
   [webmentions](http://indiewebcamp.com/webmention) and native comments, and
-  lets you approve or reject them. (We don't yet have a standard for this.)
+  let you approve or reject them. (We don't yet have a standard for this.)
 
 There are plenty of example apps with good UXes for managing posts offline and
 updating when connected: [WordPress](https://apps.wordpress.org/),
@@ -57,3 +70,6 @@ This isn't an [itch](http://indiewebcamp.com/itches) for me personally, since my
 site already has a [great mobile app](https://apps.wordpress.org/), so I'm
 probably not the right person to build it. I'd love to see it happen, though.
 Who's interested?
+
+<a class="u-syndication" href="http://news.indiewebcamp.com/post/snarfed.org/posting-to-the-indieweb-from-your-phone">
+  <em>Also on IndieNews.</em></a>

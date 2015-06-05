@@ -117,30 +117,35 @@ with a brief stint on [notion](http://notion.sourceforge.net/) (a fork) after
 Ion's author
 [went crazy](http://en.wikipedia.org/wiki/Ion_%28window_manager%29#Controversy).
 
-It's also the part that I haven't been able to match, at least so far. I've
-found programs with similar ideas, but most of them seem like glorified bags of
-shortcut keys for pushing windows around. I haven't found many that actually
-_manage my windows_ for me.
-[I'm not](http://apple.stackexchange.com/questions/9659/what-window-management-options-exist-for-os-x)
-[the only](http://news.ycombinator.com/item?id=4059820)
-[one](http://mac.appstorm.net/roundups/utilities-roundups/20-mac-window-management-utilities/),
-either.
+It took me a while to find something comparable on Mac OS X. I settled on
+[Slate](https://github.com/jigish/slate), and I'm pretty happy with it. Here are
+my [.slate](/dotfiles/.slate) and [.slate.js](/dotfiles/.slate.js). It's
+disappointing that the project itself is abandoned, but meh.
+[mattr's fork](https://github.com/mattr-/slate/) is pretty well maintained.
 
-Ah well. [xnomad](https://github.com/fjolnir/xnomad),
-[Slate](https://github.com/jigish/slate), and
-[Tyler WM](http://www.tylerwm.com/) seem the closest so far. I'm trying out
-Slate right now; here are my [.slate](/dotfiles/.slate) and
-[.slate.js](/dotfiles/.slate.js). We'll see how it turns out!
+One minor config note: when I used multiple displays and focused a window of an
+app on one display that also had windows on the other display, it focused the
+window on the current display first. The fix was to turn off Mac OS X's _System
+Preferences -> Mission Control -> Displays have separate Spaces_.
+[Details in jigish/slate#377.](https://github.com/jigish/slate/issues/377)
 
-(Some of the shortcut bags look pretty good, too:
+I found lots of other programs with similar ideas.
+[xnomad](https://github.com/fjolnir/xnomad) and
+[Tyler WM](http://www.tylerwm.com/) both looked pretty good, but the rest
+seemed like glorified bags of shortcut keys for pushing windows around.
 [Moom](http://manytricks.com/moom/),
 [ShiftIt](https://github.com/fikovnik/ShiftIt),
 [Divvy](http://mizage.com/divvy/),
 [SizeUp](http://www.irradiatedsoftware.com/sizeup/),
 [Spectacle](http://spectacleapp.com/),
 [Optimal Layout](http://most-advantageous.com/optimal-layout),
-[Doublepane](http://5amcode.com/),
-[Stay](http://cordlessdog.com/stay/), and others.)
+[Doublepane](http://5amcode.com/), and [Stay](http://cordlessdog.com/stay/) all
+look interesting, but none of them look like they actually _manage my windows_
+for me.
+[I'm not](http://apple.stackexchange.com/questions/9659/what-window-management-options-exist-for-os-x)
+[the only](http://news.ycombinator.com/item?id=4059820)
+[one](http://mac.appstorm.net/roundups/utilities-roundups/20-mac-window-management-utilities/)
+who wants this, either.
 
 
 <a name="Emacs"></a>
