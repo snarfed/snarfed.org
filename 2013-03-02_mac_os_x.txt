@@ -405,12 +405,16 @@ in System Preferences, using the _Zoom_ menu item.
 I also dreadfully miss navigating menus with the keyboard. There's a keyboard
 shortcut to focus the menu bar, but it doesn't work in all apps, e.g. Emacs.
 
-Finally, some modal dialog boxes can't be navigated with the Tab key, even with
+Some modal dialog boxes can't be navigated with the Tab key, even with
 _Full Keyboard Access_ set to _All controls_ in System Preferences => Keyboard.
 I think the common thread is that those dialog boxes don't have a corresponding
 GUI app running, e.g. Slate. I thought they were
 [utility windows](http://apple.stackexchange.com/questions/71645/how-to-interact-with-dialog-boxes-using-keyboard-that-appear-not-to-allow-keyboa),
 but they don't respond to Ctrl-F6 either.
+
+In Adium (and maybe other apps?), two dashes `--` get replaced by an emdash `—`.
+To disable this, right click on the text box and uncheck _Substitutions => Smart
+Dashes_. ([Details.](http://forums.cocoaforge.com/viewtopic.php?f=13&t=23042))
 
 
 <a name="Xcode"></a>

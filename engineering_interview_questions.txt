@@ -1,0 +1,161 @@
+Engineering interview questions
+
+I've done lots (>500 or so) of technical software engineering interviews,
+[mostly at Google](/resume) but also elsewhere. I can't claim I'm particularly
+good at them, but I've definitely racked up some experience. Here are some of my
+favorite questions. They're mostly open ended system design problems; no coding
+questions. (I know they're a necessary evil, but I still hate them.)
+
+* [Distributed transaction](#distributed-transaction)
+* [Web search spell check](#web-search-spell-check)
+* [Web crawler](#web-crawler)
+* [Manhattan distance](#manhattan-distance)
+* [How to debug nondeterministic failures](#how-to-debug-nondeterministic-failures)
+
+
+<a name="distributed-transaction"></a>
+### Distributed transaction
+
+Given two separate databases A and B with bank accounts on both, design a system that can transfer money from an account on A to another account on B. Assume that the dbs and any servers you add can die and restart at any time, and the dbs are the only durable storage. The system may be eventually consistent.
+
+The simple solution is to add parallel transfer log tables on each db that store the source and destination accounts, amount, and whether the local account has been updated. Algorithm:
+
+1. In a db transaction on A, insert a new transfer row and update A's account balance.
+1. In a db transaction on B, insert a new transfer row *including A's transfer row primary key* and update B's account balance.
+1. Update A's transfer row and mark it complete.
+
+To recover, look for any rows in A that aren't marked complete, and roll forward.
+
+Some people will want to use locking. It's not entirely necessary, but if they get the lock ordering right so that they don't deadlock, ok.
+
+Some people will propose two-phase commit. This is harder, and not many people really understand and can describe the 2PC algorithm, but if they can get it right, using only the two dbs as durable storage, then ok.
+
+Follow-ups:
+
+1. How do you handle multiple concurrent transfers? (Works already, modulo edge cases like checking available balance.)
+1. How do you handle transfers across multiple accounts, e.g. withdraw $10 from A and deposit $5 each into B and C? (Expand transfer rows to store multiple accounts, impose ordering on balance updates.)
+1. How do you scale?
+
+etc...
+
+
+<a name="web-search-spell-check"></a>
+### Web search spell check
+
+Ask them, "When you've used Google (or any search engine), have you seen the
+_Did you mean: ..._ suggestions when you misspell a word?" Ask them to design
+that system. Specifically, given a search query, either let it pass or suggest
+_one_ correction.
+
+The three main tasks are:
+
+1. *Build a dictionary.* Starting with a literal language dictionary (e.g. OECD)
+is fine, but eventually you want to expand to handle technical terms, names and
+other pronouns, slang, etc. The difficulty is that these can change rapidly,
+e.g. if someone with an unusual name suddenly becomes famous, you don't want to
+consider their name a typo.
+   The ideal long term answer is to use the search engine's crawl corpus itself, or
+maybe other corpuses, and/or search query logs, with weights on frequency,
+existing language dictionary, etc to weed out misspellings.
+   This also allows for a few useful estimation questions, e.g. how many english
+words are there? (Lots of ways to count; answer is ~150K-1M.)
+
+1. *Scoring system for possible suggestions.* Lots of possibilities to include
+   here, in rough order of value:
+     * edit distance (bonus points for knowing what that is)
+     * clicks and non-clicks on previous suggestions
+     * frequency in corpus (both single words and N-grams)
+     * frequency in query logs
+     * keyboard key distance
+     * phrase/grammar understanding
+     * ...  
+
+1. *Implementation.* Easy to come up with one, e.g. search whole dictionary and
+compare. Hard to find one that's fast enough. Needs to be <100ms or so.
+Understanding running time/space complexity and average speeds of memory access,
+disk seek, network round trip are both important here.
+
+Lots of people will come up with optimizations and heuristics. They'll rarely be
+good enough in practice - it's hard to do any kind of search for this in real
+time and still be fast enough - but that's ok. If they cache the top N (say 1M)
+queries, that's great. The best complete solution is to *precompute*
+permutations of most queries, say top 10-25%, along with their suggestions,
+store them in a hashtable, and just do simple lookup at query time.
+
+Follow-ups:
+
+1. How do you handle multiple languages? Language inference, dictionary per
+   language, etc.
+1. How do you scale? Pretty easily parallelizable.
+...
+
+
+<a name="web-crawler"></a>
+### Web crawler
+
+...e.g. for a toy search engine. Pretty straightforward system design question
+with well understood constraints, but it covers a wide range of knowledge.
+Look for them to ask lots of questions to understand the problem space.
+
+Important points to cover:
+* storage (many acceptable answers)
+* scaling (how to shard workers, manage shared state, prevent duplicating work)
+* seeds (ie where to start)
+
+Follow-ups
+* obeying robots.txt
+* throttling to avoid overwhelming individual sites
+* recrawl frequency
+  * different tiers based on update rate
+  * bonus points if they're familiar with existing notification protocols like PuSH
+* executing JS, handling query parameters, avoiding POSTs
+* avoiding link generators, loops, etc
+* handling partnerships with sites that require auth
+
+
+<a name="manhattan-distance"></a>
+### Manhattan distance
+
+<p class="right">
+ <a href="https://en.wikipedia.org/wiki/Taxicab_geometry">
+  <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Manhattan_distance.svg/160px-Manhattan_distance.svg.png"></a></p>
+
+[Manhattan distance](https://en.wikipedia.org/wiki/Taxicab_geometry) is the
+shortest distance between two points on a grid. There are multiple paths between
+any two points with the same Manhattan distance. Ask them to implement a function
+that finds the number of paths. You can ask them to actually write the code, or
+you can just ask them to come up with the algorithm.
+
+There are lots of ways to do it. The most elegant is recursive:
+
+    num(N, M) = num(N - 1, M) + num(N, M - 1)
+    num(X, 0) = num(0, X) = 1
+
+..._however_, there's a closed form solution: _N!M! / (N!(M-1!) + (N-1)!M!)_.
+Bonus points for finding that.
+
+
+<a name="how-to-debug-nondeterministic-failures"></a>
+### How to debug nondeterministic failures
+
+This is an open ended discussion. "Have you ever had to debug a nondeterministic
+or transient problem before?" is a good starting point. There are a few big
+topics to cover.
+
+First, logging. Seems silly, but it's a good marker for experience. What kinds
+of things to log, at what level, how to configure the level for normal prod
+operation vs local vs temporarily raised on individual hosts, etc.
+
+Second, isolation. There are two good questions that will get them talking:
+* _What are all the possible sources of nondeterminism?_ Random number
+  generators, obviously, but also user input, threading, configuration, data
+  (many kinds), network, other local processes, unordered data structures
+  (e.g. hash tables), different hardware, specific hardware parts etc.
+* _How can you isolate the part that's behaving nondeterministically?_ Logging
+  is key here, but also minimal canned datasets, record/reply, mocking external
+  services and data sources, reproducible config, reusing the same RNG seed, etc.
+
+Third, reproducing it. Use all the isolation techniques, then look for an
+automated harness that repeatedly runs the system and watches for the expected
+behavior. It's important that the harness record as much state as possible.
+Bonus points if it automatically drops them into a debugger. :P
