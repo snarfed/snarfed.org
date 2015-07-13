@@ -6,7 +6,7 @@ Here are some anecdotal statistics for this site. During the month of November
 2014, [snarfed.org](https://snarfed.org/) received 796,990 POSTs to its comment
 form, `wp-comments-post.php`, vs just 2139 POSTs to `xmlrpc.php` (based on
 server logs). Of those, 9 comments and 3 trackbacks were ham. I also use XML-RPC
-to create and edit posts. So there was at least ~400x more comment form spam
+to create and edit posts. So there was at least ~400x more comment from spam
 than pingback/trackback spam during that month.
 
 _Also posted on [indiewebcamp.com/spam](https://indiewebcamp.com/spam#Comment_Spam)._

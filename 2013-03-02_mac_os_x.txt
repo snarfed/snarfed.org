@@ -440,7 +440,9 @@ includes a ton of docsets for popular languages, platforms, and frameworks. It
 looks great so far, and has Emacs integration too.
 
 
-<a name="Yosemite"></a>
+<h3 name="Yosemite"></h3>
+<p name="Yosemite"></p>
+<input name="Yosemite"></input>
 #### Yosemite
 
 Upgrading to Yosemite was pleasantly uneventful. Here are some minor notes:
