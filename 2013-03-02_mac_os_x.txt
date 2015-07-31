@@ -46,7 +46,7 @@ Applications from there to install them.
 Another note: for `.app`s to use binaries installed by homebrew in
 `/usr/local/bin`, e.g. `emacsclient`, you need to add that path to the default
 `PATH` environment variable for OS X apps with
-[launchctl setenv`](http://developer.apple.com/library/mac/#technotes/tn2124/_index.html#//apple_ref/doc/uid/DTS10003391-CH1-SECLAUNCHD).
+[`launchctl setenv`](http://developer.apple.com/library/mac/#technotes/tn2124/_index.html#//apple_ref/doc/uid/DTS10003391-CH1-SECLAUNCHD).
 _Warning_: [Homebrew's instructions](https://github.com/mxcl/homebrew/wiki/FAQ).
 point to
 [this Apple doc](http://developer.apple.com/legacy/mac/library/#qa/qa1067/_index.html),
@@ -91,9 +91,16 @@ Homebrew is great at upgrading, and you can use `brew switch` to downgrade to an
 older version, but only if you already have it installed. If you don't, there's
 no an easy way to install it. On the rare occasion that I've needed to, I
 followed [this recipe](http://stackoverflow.com/a/9832084/186123). Executive
-summary: `cd /usr/local`, run `brew versions PACKAGE`, run its `git checkout`
-command for the version you want, then just run `brew install PACKAGE
-[OPTIONS]` and optionally `brew [un]link PACKAGE`.
+summary:
+1. `brew unlink PACKAGE`
+1. `brew info --github PACKAGE`
+1. Open the history page.
+1. Find the version you want.
+1. `cd /usr/local`
+1. If the formula is from a keg, `cd Library/Taps/KEG`.
+1. `git checkout VERSION`
+1. `brew install PACKAGE [OPTIONS]`
+1. `git checkout master`.
 
 I also installed a few python libraries:
 
@@ -102,6 +109,9 @@ I also installed a few python libraries:
 Apache is installed but not started by default; run `apachectl -k start` to
 start it. Here's
 [more on setting up LAMP](http://benatkin.com/2011/09/10/php-and-mysql-on-mac-os-x-lion-with-homebrew/).
+Do basic admin with `sudo apachectl -k {start|stop|restart}` and
+`launchctl {unload|load} ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist`.
+
 One word of warning: don't start/stop/restart MySQL with `sudo
 /Library/StartupItems/MySQLCOM/MySQLCOM start`. That brings it down but refuses
 to bring it back up, at least on my machine. I have to reboot to get it running
@@ -520,6 +530,17 @@ Adapater, and
 I also ran `sudo pmset -a sleep 0` to
 [disable the computer sleep (as opposed to display sleep) timer](http://apple.stackexchange.com/a/144799/43900).
 Fingers crossed!
+
+Mac OS X has multiple temporary directories, which is confusing. `/tmp` is
+symlinked to `/private/tmp`, which is evidently the system's temp dir. (?)
+There's also a multi-level hierarchy under `/var/folders`, which contains
+per-user temp dirs. Mine is currently `/var/folders/y_/7mgz0yqd.../T/`. OS X
+also points my `$TMPDIR` there by default.
+
+This got confusing after a while, so I eventually switched the `/tmp` symlink to
+point to my `/var/folders/...` dir and opened up its permissions to `a+rwx` so
+that daemons like Apache and MySQL could use it. Bad hygiene, but my laptop
+isn't a real server, nor is it really multi-user, so whatever.
 
 
 <a name="Remaining_problems"></a>
