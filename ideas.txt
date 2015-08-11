@@ -15,7 +15,7 @@ channels and playlists, as feeds that you can subscribe to in podcast apps.
 Background: [similar project](https://github.com/jaimeMF/youtube-dl-api-server),
 [post](https://charlesleifer.com/blog/a-flask-front-end-and-chrome-extension-for-youtube-dl/),
 [discussion](https://indiewebcamp.com/irc/2014-12-16#t1418763139721),
-[iOS client-side workflow](http://www.512pixels.net/blog/2014/12/from-youtube-to-huffduffer-with-workflow).
+[iOS client-side workflow](http://www.512pixels.net/blog/2014/12/from-youtube-to-huffduffer-with-workflow). (**[Done!](/2015-03-07_huffduff-video)** )
 
   * Build [OwnYourCheckin](https://github.com/snarfed/ownyourcheckin), an
 automated [PESOS](https://indiewebcamp.com/PESOS) service for Facebook checkins

@@ -1,7 +1,7 @@
 Journey
 
-<iframe class="right shadow" width="200" height="132" frameborder="0"
- style="border: none" src="http://www.youtube.com/embed/61DZC-60x20?controls=0">
+<iframe class="right half shadow" allowfullscreen height="216"
+        src="//www.youtube.com/embed/61DZC-60x20">
 </iframe>
 
 I just finished playing _[Journey](http://thatgamecompany.com/games/journey/)_.

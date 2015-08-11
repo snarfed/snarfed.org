@@ -10,14 +10,9 @@ and one of my favorite sessions wasn't Google related or even particularly
 technical. It was [Ignite](http://ignite.oreilly.com/), a fast-paced collage of
 talks that gives each presenter only 5 minutes total, 15 seconds per slide.
 
-<object width="480" height="385">
-  <param name="movie" value="http://www.youtube.com/v/hcl3qmawY_0&hl=en_US&fs=1&"></param>
-  <param name="allowFullScreen" value="true"></param>
-  <param name="allowscriptaccess" value="always"></param>
-  <embed src="http://www.youtube.com/v/hcl3qmawY_0&hl=en&fs=1"
-         type="application/x-shockwave-flash" allowscriptaccess="always"
-         allowfullscreen="true" width="480" height="385"></embed>
-</object>
+<iframe class="shadow" allowfullscreen
+        src="//www.youtube.com/embed/hcl3qmawY_0">
+</iframe>
 
 Naturally, Ignite talks tend toward the unusual.
 [The ones I saw](http://twitter.com/search?q=%23igniteio) ranged

@@ -1,7 +1,7 @@
 Re:Generation Music Project
 
-<iframe class="right shadow" width="200" height="132" frameborder="0"
- style="border: none" src="http://www.youtube.com/embed/r0NzJSM_vFI?controls=0">
+<iframe class="right half shadow" allowfullscreen height="216"
+        src="//www.youtube.com/embed/r0NzJSM_vFI">
 </iframe>
 
 The documentary film [Re:Generation](http://regenerationmusicproject.com/) teams
@@ -24,7 +24,7 @@ of [The Doors](http://en.wikipedia.org/wiki/The_Doors) met
 [Skrillex](http://en.wikipedia.org/wiki/Skrillex), a huge dubstep DJ, most of
 them had never heard of him and were skeptical.
 [As John Denmore said](http://articles.nydailynews.com/2012-02-16/news/31069256_1_trombone-shorty-djs-musical-boundaries/2),
-“Drummers pride themselves on keeping the beat, and seeing electronic machines
+"Drummers pride themselves on keeping the beat, and seeing electronic machines
 doing it? That was different. But when the cameras were off, that’s when I
 learned that Skrillex was a musician, and he’s a human musician, on top of the
 electronics."

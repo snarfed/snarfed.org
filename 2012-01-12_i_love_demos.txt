@@ -1,7 +1,7 @@
 I love demos
 
-<iframe class="right shadow" width="200" height="132" frameborder="0"
- style="border: none" src="http://www.youtube.com/embed/nY1s9O4iTO0?controls=0">
+<iframe class="right half shadow" allowfullscreen height="216"
+        src="//www.youtube.com/embed/nY1s9O4iTO0">
 </iframe>
 
 My new [Mindcandy DVD](http://www.mindcandydvd.com/) came in the mail the other
@@ -44,8 +44,8 @@ time: non-photorealistic rendering gives way to programmable shaders, material
 and liquid rendering gets more sophisticated and abstract, and post-processing
 effects like film grain and distortion explode in popularity.
 
-<iframe class="left shadow" width="200" height="132" frameborder="0"
- style="border: none" src="http://www.youtube.com/embed/_grRFoDBv0c?controls=0">
+<iframe class="left half shadow" allowfullscreen width="216"
+        src="//www.youtube.com/embed/_grRFoDBv0c">
 </iframe>
 
 I haven't finished the latest DVD yet, but I already have some favorites.
@@ -64,5 +64,3 @@ be complete without mind-blowing visuals from
 I can't wait to go to a demo party in person someday. In the meantime, I'll have
 to be satisfied with the Mindcandy DVDs, YouTube, and my sense of childlike
 wonder. OK, at least the first two!
-
-

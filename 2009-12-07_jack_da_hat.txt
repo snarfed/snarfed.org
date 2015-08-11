@@ -5,16 +5,9 @@ we went to [El Sotano](http://www.nobhilldining.com/ElSotano/Home.htm), near
 Union Square. It was good, but unremarkable, except that it was the first
 combination Mexican restaurant and karaoke bar that I've ever heard of.
 
-<div style="float: right; margin-left: 5px; margin-right: -5px">
-  <object width="213" height="177">
-    <param name="movie" value="http://www.youtube.com/v/T-DQjGRReLk&hl=en&fs=1"></param>
-    <param name="allowFullScreen" value="true"></param>
-    <param name="allowscriptaccess" value="always"></param>
-    <embed src="http://www.youtube.com/v/T-DQjGRReLk&hl=en&fs=1"
-           type="application/x-shockwave-flash" allowscriptaccess="always"
-           allowfullscreen="true" width="213" height="177"></embed>
-  </object>
-</div>
+<iframe class="right half shadow" allowfullscreen height="216"
+        src="//www.youtube.com/embed/T-DQjGRReLk">
+</iframe>
 
 We hadn't paid much attention beforehand, but sure enough, we saw the equipment
 and little stage as soon as we walked in. By the time we finished dinner, people

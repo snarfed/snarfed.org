@@ -25,16 +25,9 @@ extended format with video and animated shorts, as well as unscripted, behind
 the scenes commentary that made the show feel even more intimate. We loved
 it.
 
-<div style="float: left">
-  <object width="212" height="172">
-    <param name="movie" value="http://www.youtube.com/v/ZFkYM4WienE&hl=en&fs=1"></param>
-    <param name="allowFullScreen" value="true"></param>
-    <param name="allowscriptaccess" value="always"></param>
-    <embed src="http://www.youtube.com/v/ZFkYM4WienE&hl=en&fs=1"
-           type="application/x-shockwave-flash" allowscriptaccess="always"
-           allowfullscreen="true" width="212" height="172"></embed>
-  </object>
-</div>
+<iframe class="left half shadow" allowfullscreen height="216"
+        src="//www.youtube.com/embed/ZFkYM4WienE">
+</iframe>
 
 The week after that, [Cynthia](http://originalcynk.com/blog/) and I caught
 hometown bluegrass legend

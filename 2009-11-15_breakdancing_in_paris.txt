@@ -1,15 +1,8 @@
 Breakdancing in Paris
 
-<div style="float: right; margin-left: 5px; margin-right: -5px">
-  <object width="212" height="172">
-    <param name="movie" value="http://www.youtube.com/v/UgnlcLp4AzI&hl=en&fs=1"></param>
-    <param name="allowFullScreen" value="true"></param>
-    <param name="allowscriptaccess" value="always"></param>
-    <embed src="http://www.youtube.com/v/UgnlcLp4AzI&hl=en&fs=1"
-           type="application/x-shockwave-flash" allowscriptaccess="always"
-           allowfullscreen="true" width="212" height="172"></embed>
-  </object>
-</div>
+<iframe class="right third shadow" allowfullscreen width="216"
+        src="//www.youtube.com/embed/UgnlcLp4AzI">
+</iframe>
 
 On our last night in
 [Paris](/2009-10-28_paris) on

@@ -10,6 +10,6 @@ I say it's pretty damn funny.
 <a class="u-syndication"
     href="https://www.facebook.com/212038/posts/10101185551522043"></a>
 
-<iframe src="//www.youtube.com/embed/bPHDKygWMWo?controls=0"
-  class="shadow" frameborder="0" allowfullscreen>
+<iframe class="shadow" allowfullscreen
+        src="//www.youtube.com/embed/bPHDKygWMWo">
 </iframe>

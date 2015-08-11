@@ -5,16 +5,9 @@ of my talk at Google I/O this year,
 [Transactions Across Datacenters (and other weekend projects)](http://code.google.com/events/io/sessions/TransactionsAcrossDatacenters.html),
 is up!
 
-<div style="float: right; margin-left: 5px; margin-right: -5px">
-  <object width="212" height="172">
-    <param name="movie" value="http://www.youtube.com/v/srOgpXECblk&hl=en&fs=1&"></param>
-    <param name="allowFullScreen" value="true"></param>
-    <param name="allowscriptaccess" value="always"></param>
-    <embed src="http://www.youtube.com/v/srOgpXECblk&hl=en&fs=1&"
-           type="application/x-shockwave-flash" allowscriptaccess="always"
-           allowfullscreen="true" width="212 height="172"></embed>
-  </object>
-</div>
+<iframe class="right third shadow" allowfullscreen width="216"
+        src="//www.youtube.com/embed/srOgpXECblk">
+</iframe>
 
 I give [talks every now and then](/talks), and many of them are recorded,
 so normally, this wouldn't be a big deal. Not many of them

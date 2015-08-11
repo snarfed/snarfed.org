@@ -1,10 +1,8 @@
 Music for Good
 
-<p class="half right">
-<iframe src="//www.youtube.com/embed/MuwBuDqgNzs?controls=0"
-    frameborder="0" allowfullscreen class="shadow" style="border: none">
+<iframe class="right half shadow" allowfullscreen height="216"
+        src="//www.youtube.com/embed/MuwBuDqgNzs">
 </iframe>
-</p>
 
 We went to an awesome concert last weekend. It wasn't a big star, or a big
 venue, or a big new trend, but it was still some of the best music we'd heard in
