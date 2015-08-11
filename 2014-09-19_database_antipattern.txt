@@ -8,5 +8,3 @@ over the [database antipattern](http://indiewebcamp.com/databases-antipattern):
 
 Similarly, any sufficiently complicated flat file based webapp contains an ad
 hoc, informally-specified, bug-ridden, slow implementation of half of a database.
-
-<a class="u-syndication" href="https://twitter.com/schnarfed/status/512977104770568192"></a>
