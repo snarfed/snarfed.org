@@ -5,7 +5,7 @@ of my talk at Google I/O this year,
 [Transactions Across Datacenters (and other weekend projects)](http://code.google.com/events/io/sessions/TransactionsAcrossDatacenters.html),
 is up!
 
-<iframe class="right third shadow" allowfullscreen width="216"
+<iframe class="right half shadow" allowfullscreen height="216"
         src="//www.youtube.com/embed/srOgpXECblk">
 </iframe>
 

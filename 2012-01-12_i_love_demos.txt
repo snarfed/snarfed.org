@@ -44,7 +44,7 @@ time: non-photorealistic rendering gives way to programmable shaders, material
 and liquid rendering gets more sophisticated and abstract, and post-processing
 effects like film grain and distortion explode in popularity.
 
-<iframe class="left half shadow" allowfullscreen width="216"
+<iframe class="left half shadow" allowfullscreen height="216"
         src="//www.youtube.com/embed/_grRFoDBv0c">
 </iframe>
 

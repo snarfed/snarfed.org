@@ -51,9 +51,8 @@ is interesting, to be sure, but
 [called Live Anywhere](http://seattletimes.nwsource.com/html/businesstechnology/2002983720_ethree10.html),
 and that ended up dead and nowhere. So, again, who knows.
 
-<iframe src="//www.youtube.com/embed/FcMRkyoHKeA?controls=0"
-  class="left shadow"  width="216" width="200" height="132" frameborder="0"
-  allowfullscreen>
+<iframe class="right half shadow" allowfullscreen height="216"
+        src="//www.youtube.com/embed/FcMRkyoHKeA">
 </iframe>
 
 The consensus was that if anyone "won" E3, it was actually Ubisoft with their
