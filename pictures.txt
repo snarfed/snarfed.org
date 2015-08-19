@@ -1,9 +1,25 @@
 pictures
 
 <div class="ngg-album-compact">
+<a href="/brookes-first-beach-visit">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2015/08/sitting_hat-225x300.jpg" />
+  </div>
+  <h4>brooke's first beach visit</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/brooke-months-8-11">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2015/08/face_against_window-225x300.jpg" />
+  </div>
+  <h4>brooke months 8-11</h4>
+</a></div>
+
+<div class="ngg-album-compact">
 <a href="/healdsburg-2015">
   <div class="ngg-album-compactbox">
-    <img src="/w/wp-content/uploads/2015/05/thomas_george_patio_2.jpg?h=242&crop=1" />
+    <img src="/w/wp-content/uploads/2015/05/thomas_george_patio_2-300x200.jpg" />
   </div>
   <h4>healdsburg 2015</h4>
 </a></div>
@@ -11,7 +27,7 @@ pictures
 <div class="ngg-album-compact">
 <a href="/brooke-months-5-7">
   <div class="ngg-album-compactbox">
-    <img src="/w/wp-content/uploads/2015/05/sunglasses_5-e1430625030193.jpg?h=242&crop=1" />
+    <img src="/w/wp-content/uploads/2015/05/sunglasses_5-e1430625030193-225x300.jpg" />
   </div>
   <h4>brooke months 5-7</h4>
 </a></div>
@@ -19,7 +35,7 @@ pictures
 <div class="ngg-album-compact">
 <a href="/brooke-photo-shoot">
   <div class="ngg-album-compactbox">
-    <img src="/w/wp-content/uploads/2015/03/IMG_8143.jpg?h=242&crop=1" />
+    <img src="/w/wp-content/uploads/2015/03/IMG_8143-300x200.jpg" />
   </div>
   <h4>brooke photo shoot</h4>
 </a></div>
@@ -27,7 +43,7 @@ pictures
 <div class="ngg-album-compact">
 <a href="/brooke-month-4">
   <div class="ngg-album-compactbox">
-    <img src="/w/wp-content/uploads/2015/02/brooke_with_snoopy_2.jpg?w=322&h=242&crop=1" />
+    <img src="/w/wp-content/uploads/2015/02/brooke_with_snoopy_2-300x225.jpg" />
   </div>
   <h4>brooke month 4</h4>
 </a></div>
@@ -35,7 +51,7 @@ pictures
 <div class="ngg-album-compact">
 <a href="/carmel-and-big-sur">
   <div class="ngg-album-compactbox">
-    <img src="/w/wp-content/uploads/2015/02/carmel_beach_ryan_gina.jpg?h=224&crop=1" />
+    <img src="/w/wp-content/uploads/2015/02/carmel_beach_ryan_gina-300x225.jpg" />
   </div>
   <h4>carmel and big sur</h4>
 </a></div>
