@@ -1,6 +1,14 @@
 pictures
 
 <div class="ngg-album-compact">
+<a href="/brooke-photo-shoot-2">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2015/08/outside_brooke_2-300x200.jpg" />
+  </div>
+  <h4>brooke photo shoot 2</h4>
+</a></div>
+
+<div class="ngg-album-compact">
 <a href="/brookes-first-beach-visit">
   <div class="ngg-album-compactbox">
     <img src="/w/wp-content/uploads/2015/08/sitting_hat-225x300.jpg" />
