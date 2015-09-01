@@ -49,7 +49,11 @@ Twitter, and many more.
 Android app that opens links in their native app instead of the browser. It
 currently supports Facebook, Twitter, Instagram, GitHub, and Goodreads.
 
-  * [instagram-atom](https://instagram-atom.appspot.com/) generates and serves
+  * [plusstreamfeed](https://plusstreamfeed.appspot.com/) generates and serves
+an Atom feed of your Google+ stream, ie posts from the people in your
+circles.
+
+* [instagram-atom](https://instagram-atom.appspot.com/) generates and serves
 an Atom feed of your Instagram stream, ie photos from the people you follow.
 
   * [facebook-atom](https://facebook-atom.appspot.com/) generates and serves an
@@ -90,12 +94,6 @@ is a script that copies your [Facebook](http://www.facebook.com/) posts to a
     of source code checkins made by people right here, right now (ie recently,
     at a specific place). Good for hackathons, conferences, etc. Written for
     (and at) [Super Happy Block Party](http://www.superhappy.be/).
-
-<!--
-  * [Google+ stream feeds](https://plusstreamfeed.appspot.com/) provides an Atom
-    feed of your Google+ stream, with posts from the people in your circles,
-    that you can subscribe to and read in your favorite feed reader.
--->
 
   * [Locale Headphone Buttons Plugin](/locale_headphone_buttons_plugin)
 is a plugin for the [Locale](http://www.twofortyfouram.com/) Android app that
