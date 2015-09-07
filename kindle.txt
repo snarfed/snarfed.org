@@ -1,6 +1,6 @@
 Amazon Kindle
 
-<p class="right"><img src="/kindle_paperwhite.jpg" /></p>
+<p class="right third"><img src="/kindle_paperwhite.jpg" /></p>
 
 I do most of my reading on an [Amazon Kindle](http://kindle.com/) and in the
 Kindle app on my phone. Here are some notes on how I use it.
@@ -31,13 +31,15 @@ serial number by running `KindleBooks_4.7/lib/k4mobidedrm.py -s [SERIAL_NO]
 [BOOK_FILE]`. I open the resulting `.mobi` files in
 [Calibre](http://calibre.org/) occasionally to check that they're readable.
 
-Occasionally I'll get a ebook somewhere else in non-DRM [epub] or [mobi] format,
+Occasionally I'll get a ebook somewhere else in non-DRM `epub` or `mobi` format,
 or a paper or other document in PDF. I get them onto my Kindle and phone
 [via email](https://www.amazon.com/gp/help/customer/display.html/ref=kinw_myk_pd_ln?ie=UTF8&nodeId=200767340).
 I also use the [Push to Kindle](http://fivefilters.org/kindle-it/) bookmarklet
-to send web articles and blog posts. It's great, I love it. Amazon has its own
-[Send to Kindle service](http://www.amazon.com/gp/sendtokindle) that I'll
-probably try and compare. There are [also sites](http://kindlefeeder.com/)
+to send web articles and blog posts. It's great, I love it. It even has a mobile
+app that accepts anything you can "share" to it. Amazon's own
+[Send to Kindle](http://www.amazon.com/gp/sendtokindle) is similar, but its
+mobile app doesn't support web pages, which is a dealbreaker. There are
+[also sites](http://kindlefeeder.com/)
 [for sending](http://sendtoreader.com/periodicals/)
 [RSS feeds](http://kindle4rss.com/).
 
