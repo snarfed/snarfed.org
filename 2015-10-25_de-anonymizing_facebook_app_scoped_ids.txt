@@ -1,0 +1,78 @@
+De-anonymizing Facebook's app-scoped ids
+
+<p class="right third">
+  <img src="/facebook_logo_broken.png" /></p>
+
+Facebook has taken plenty of criticism for privacy problems over the years, and
+it's invested plenty of resources in responding. One specific problem early one
+was that third party apps could combine their data to create deeper user
+profiles for tracking and analysis. If one app couldn't get permission to see a
+Facebook user's friends, for example, it might quietly partner with another app
+that did instead of trying harder to get official permission.
+
+Facebook fixed this in their v2.0 API by giving each app its own set of
+[app-scoped user ids](https://developers.facebook.com/docs/apps/upgrading#upgrading_v2_0_user_ids).
+For example, originally [Farmville](https://en.wikipedia.org/wiki/FarmVille) and
+[Blendr](https://en.wikipedia.org/wiki/Blendr) got the same user id for me -
+212038 - but in the v2.0 API, they each got their own unique user id. This
+prevented them from joining their user databases easily.
+
+However,
+<a class="h-card" href="https://ben.thatmustbe.me/">Ben</a>,
+<a class="h-card" href="http://aaronparecki.com/">Aaron</a>,
+and I
+[recently came up with a loophole](http://indiewebcamp.com/irc/2015-10-19#t1445267366452).
+Facebook offers
+"evergreen" URLs that return a user's profile picture:
+`https://www.facebook.com/profile.php?id=[ID]`. These work with app-scoped ids
+as well as usernames and global ids. Interestingly, for a given user, they
+redirect to the exact same final image URL, regardless of the id you use.
+
+<!-- more -->
+<span />
+
+As an example, here are two app-scoped user ids for
+[Snoøpy Barrett](https://www.facebook.com/profile.php?id=100009447618341), my
+trusty cat and test Facebook user: 1507374646254108 and 1449928198665420. If you
+`HEAD` the profile picture URLs for those two ids:
+
+```
+https://graph.facebook.com/v2.2/1507374646254108/picture
+https://graph.facebook.com/v2.2/1449928198665420/picture
+```
+
+...they both redirect to the same final URL:
+
+```
+https://scontent.xx.fbcdn.net/hprofile-xtp1/v/t1.0-1/c8.0.50.50/p50x50/11234047_1407572256234348_9087358977818906558_n.jpg?oh=eebae5e92e54c1fd8f415c2d8dc05547&oe=56CF46C9
+```
+
+This gives you a globally unique identifier for Facebook users that you can use
+to join two user databases with app-scoped ids, at the cost of one small HTTP
+request per user.
+
+Facebook could easily fix this by serving profile pictures from a different URL
+for each app-scoped id. Apps could respond by fetching the pictures themselves,
+hashing them, and joining on that hash. The cost would still be linear in the
+size of the two user bases.
+
+Facebook could continue by watermarking images differently for each app. Apps
+could respond by downsampling the image contents, reducing color palette,
+running edge detection or other similar algorithms, and hashing the resulting
+simplified images. I'm sure Facebook could make its watermarks invasive enough
+that apps would have to downsample so far they'd start seeing collisions, but
+those watermarks would be pretty ugly. I bet apps would win that arms race.
+
+I reported this to Facebook, and they quickly responded:
+
+> This is intentional behavior in our product. We do not consider it a security vulnerability, but we do have controls in place to monitor and mitigate abuse.
+
+...which probably means they rate limits profile picture requests by app id, IP,
+access token, etc. When they see an app fetch too many profile pictures, they
+may start to slow down or even reject those requests entirely. That's totally
+reasonable. It prevents abuse on any meaningful scale, and it avoids the arms
+race entirely.
+
+Still, interesting thought experiment!
+
+_<a class="u-syndication" href="http://news.indiewebcamp.com/en/snarfed.org/2015-10-25_de-anonymizing-facebooks-app-scoped-ids">Also on IndieNews</a>._
