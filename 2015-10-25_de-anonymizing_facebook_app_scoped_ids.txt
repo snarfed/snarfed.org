@@ -67,7 +67,7 @@ I reported this to Facebook, and they quickly responded:
 
 > This is intentional behavior in our product. We do not consider it a security vulnerability, but we do have controls in place to monitor and mitigate abuse.
 
-...which probably means they rate limits profile picture requests by app id, IP,
+...which probably means they rate limit profile picture requests by app id, IP,
 access token, etc. When they see an app fetch too many profile pictures, they
 may start to slow down or even reject those requests entirely. That's totally
 reasonable. It prevents abuse on any meaningful scale, and it avoids the arms
@@ -75,4 +75,4 @@ race entirely.
 
 Still, interesting thought experiment!
 
-_<a class="u-syndication" href="http://news.indiewebcamp.com/en/snarfed.org/2015-10-25_de-anonymizing-facebooks-app-scoped-ids">Also on IndieNews</a>._
+_<a class="u-syndication" href="http://news.indiewebcamp.com/en/snarfed.org/2015-10-25_de-anonymizing-facebooks-app-scoped-ids">Also on IndieNews.</a>_

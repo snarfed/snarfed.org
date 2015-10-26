@@ -1,0 +1,33 @@
+WordPress mini spam filter for comments ending in 32 hex characters
+
+<p class="right third">
+  <img class="shadow" src="/spam_key.jpg" /></p>
+
+
+For a while now, pretty much every spam comment that's made it past my WordPress
+spam filter plugins, [Akismet](https://akismet.com/) and JS-based
+[Stop Spam Comments](https://wordpress.org/plugins/stop-spam-comments/), has
+ended in a random, 32-digit hex string. For example:
+
+> Taken with a GoPro Hero 3 Black, the photo records the tips of the community’s highest structures jabbing through dense cloud. 4c615976ebb5b573d4b6343094660d05
+
+I don't know why this is, but my guess is that the spammers keep a database of
+all of these strings and the sites they sent them to and Google for them later
+to see which spam comments survived and which didn't.
+
+Here's a tiny PHP snippet you can add to your theme's `functions.php` that will
+automatically mark comments like these as spam:
+
+```
+function spam_32_hex_chars($approved, $commentdata) {
+  dlog($commentdata['comment_content']);
+  $text = trim(wp_strip_all_tags($commentdata['comment_content'], true));
+  dlog($text);
+  return preg_match('|[0-9a-f]{32}$|', $text) ? 'spam' : $approved;
+}
+
+add_filter('pre_comment_approved', 'spam_32_hex_chars', '99', 2);
+```
+
+Happy blogging!
+
