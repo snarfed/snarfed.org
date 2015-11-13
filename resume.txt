@@ -40,10 +40,10 @@ engineering team. The datastore is a very large scale,
 [NoSQL](http://en.wikipedia.org/wiki/NoSQL) database. At the end of my tenure,
 it stored >XXXB rows, >XXXPB of data, and served >XXXk[qps](http://en.wikipedia.org/wiki/Queries_per_second). (2005 - 2010)
 
-Helped design and build a company-wide personalization infrastructure system
-[best described here](http://googleblog.blogspot.com/2012/01/updating-our-privacy-policies-and-terms.html).
-Implemented a piece of its infrastructure (in [Go](http://golang.org/)) that
-handled 500kqps by the end of my tenure. (2011 - 2013)
+Helped design and build
+[company-wide personalization infrastructure](http://googleblog.blogspot.com/2012/01/updating-our-privacy-policies-and-terms.html).
+Implemented a piece of it (in [Go](http://golang.org/)) that handled 500kqps by
+the end of my tenure. (2011 - 2013)
 
 Led and contributed to network management projects for Google's backbone network
 [AS15169](http://www.peeringdb.com/view.php?asn=15169), including command and
@@ -84,8 +84,8 @@ analyses and simulations on large server clusters.
 
 Multiple [talks](/talks) and open source [projects](/software) and
 [contributions](https://www.ohloh.net/accounts/snarfed/positions). Notable
-projects include
-[Bridgy](https://www.brid.gy/)/[granary](http://granary-demo.appspot.com/),
+projects include [Bridgy](https://www.brid.gy/),
+[granary](http://granary-demo.appspot.com/),
 [ActivityStreams](http://activitystrea.ms/)/[OStatus](http://www.w3.org/community/ostatus/),
 [OpenID](http://openid.net/), [Emacs](http://gnu.org/software/emacs/),
 [WordPress](/2010-08-08_migrated_to_wordpress),

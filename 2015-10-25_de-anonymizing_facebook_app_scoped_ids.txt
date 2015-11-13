@@ -4,7 +4,7 @@ De-anonymizing Facebook's app-scoped ids
   <img src="/facebook_logo_broken.png" /></p>
 
 Facebook has taken plenty of criticism for privacy problems over the years, and
-it's invested plenty of resources in responding. One specific problem early one
+it's invested plenty of resources in responding. One specific problem early on
 was that third party apps could combine their data to create deeper user
 profiles for tracking and analysis. If one app couldn't get permission to see a
 Facebook user's friends, for example, it might quietly partner with another app
@@ -17,7 +17,6 @@ For example, originally [Farmville](https://en.wikipedia.org/wiki/FarmVille) and
 212038 - but in the v2.0 API, they each got their own unique user id. This
 prevented them from joining their user databases easily.
 
-However,
 <a class="h-card" href="https://ben.thatmustbe.me/">Ben</a>,
 <a class="h-card" href="http://aaronparecki.com/">Aaron</a>,
 and I
