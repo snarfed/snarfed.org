@@ -1,0 +1,63 @@
+Silo SWAT0 on Facebook
+
+[SWAT0](http://www.w3.org/2005/Incubator/federatedsocialweb/wiki/SWAT0) is a
+social web interoperability test. The first
+[indieweb](https://indiewebcamp.com/) demo
+[happened in July 2015]((http://indiewebcamp.com/SWAT0#2015-07-12_B_A_K).
+
+1. With their phone, A takes a photo, tags it with B, and uploads it using a service
+1. B gets a notification on another service that they've been tagged in a photo
+1. C, who is subscribed to A, sees the photo on yet another service
+1. C comments on the photo
+1. A and B receive notifications that C has commented on the photo
+
+[Silo SWAT0](http://indiewebcamp.com/SWAT0#Silo_SWAT0) is a variant where one or
+two people (but not all three) participate entirely inside a
+[silo](http://indiewebcamp.com/silo). The other participant(s) interact with the
+silo participants via [POSSE](https://indiewebcamp.com/POSSE),
+[backfeed](https://indiewebcamp.com/backfeed), and silo feed proxies and
+converters like [facebook-atom](https://facebook-atom.appspot.com/).
+
+[Kyle Mahan](https://kylewm.com/) and I did an end to end silo SWAT0 test on
+Facebook today. Fake user
+[Snoøpy Barrett](https://www.facebook.com/profile.php?id=100009447618341) was A,
+I was silo-only user B, and Kyle was C. Here's the sequence of events.
+
+1. Snoopy (A) [posts a picture on snarfed.org](https://snarfed.org/chillin_2)
+   (WordPress) and tags me (B).
+
+   [![](/silo_swat0/1a_post.png)](/silo_swat0/1a_post.png)
+
+1. Snoopy POSSEs it to Facebook manually with
+   [Bridgy Publish](https://www.brid.gy/about#publish).
+
+   [![](/silo_swat0/1b_posse.png)](/silo_swat0/1b_posse.png)
+
+1. The picture appears on Facebook, with me tagged.
+
+   [![](/silo_swat0/1c_silo_post.png)](/silo_swat0/1c_silo_post.png)
+
+1. Facebook notifies me that Snoopy tagged me in a picture.
+
+   [![](/silo_swat0/2_tag_notif.png)](/silo_swat0/2_tag_notif.png)
+
+1. Kyle (C) sees Snoopy's picture in his reader ([Woodwind](http://reader.kylewm.com/)).
+
+   [![](/silo_swat0/3_comment_in_woodwind.jpg)](/silo_swat0/3_comment_in_woodwind.jpg)
+
+1. Kyle comments on the picture inside Woodwind, which posts it to his site
+   ([Redwind](https://github.com/kylewm/redwind)).
+
+   [![](/silo_swat0/4a_indie_comment.jpg)](/silo_swat0/4a_indie_comment.jpg)
+
+1. Kyle POSSEs the comment to Facebook.
+
+   [![](/silo_swat0/4b_silo_comment.jpg)](/silo_swat0/4b_silo_comment.jpg)
+
+1. Bridgy backfeeds the comment to Snoopy's site, which notifies him via email.
+
+   [![](/silo_swat0/5_comment_notif_A.png)](/silo_swat0/5_comment_notif_A.png)
+
+1. Facebook notifies me of the comment.
+
+   [![](/silo_swat0/5_comment_notif_B.png)](/silo_swat0/5_comment_notif_B.png)
