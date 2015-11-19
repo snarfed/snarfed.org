@@ -23,51 +23,84 @@ silo participants via [POSSE](https://indiewebcamp.com/POSSE),
 converters like [facebook-atom](https://facebook-atom.appspot.com/).
 
 [Kyle Mahan](https://kylewm.com/) and I did an end to end silo SWAT0 test on
-Facebook today. Fake user
-[Snoøpy Barrett](https://www.facebook.com/profile.php?id=100009447618341) was A,
-I was Facebook-only user B, and Kyle was C. Here's the sequence of events.
+Facebook on 2015-11-16. We did another with [Ben Werdmülller](http://werd.io/)
+live at
+[Homebrew Website Club on 2015-11-18](http://indiewebcamp.com/events/2015-11-18-homebrew-website-club).
+We think these were the first ever, at least on purpose. (Ironically, the tools
+and services we used have been up and running for a while, with many users, so
+it's probably already happened many times over without anyone noticing.)
+
+The first time, fake user
+[Snoøpy Barrett](https://www.facebook.com/profile.php?id=100009447618341)
+(driven by me) was A, I was Facebook-only user B, and Kyle was C. The second
+time, I was A, Ben was B, and Kyle was C. The sequence of events and tools used
+were the same both times. Here's the first, illustrated:
 
 <style type="text/css">
 .step { max-width: 350px !important; }
 </style>
 
-1a. Snoopy (A) [posts a picture on snarfed.org](https://snarfed.org/chillin_2)
-   (WordPress) and tags me (B).
+1a. Snoopy (A) takes a picture,
+   [posts it to snarfed.org](https://snarfed.org/chillin_2) (WordPress) with the
+   [WordPress Android app](http://android.wordpress.org/), and tags me (B) by
+   including a `u-category h-card` link to `snarfed.org`.
 
 <a href="/silo_swat0/1a_post.png"><img class="step" src="/silo_swat0/1a_post.png" /></a>
 
-1b. Snoopy POSSEs it to Facebook manually with
-   [Bridgy Publish](https://www.brid.gy/about#publish).
+1b. Snoopy also includes a [Bridgy Publish](https://www.brid.gy/about#publish)
+   link in the post. The
+   [WordPress Webmention plugin](https://wordpress.org/plugins/webmention/) sees
+   it and sends a webmention to Bridgy, which
+   [triggers it to POSSE the post](https://brid.gy/about#webmentions) to
+   Facebook.
 
-<a href="/silo_swat0/1b_posse.png"><img class="step" src="/silo_swat0/1b_posse.png" /></a>
+<a href="/silo_swat0/1b_posse.png"><img class="step" src="/silo_swat0/1b_posse_thumb.png" /></a>
 
 1c. [The picture appears on Facebook](https://www.facebook.com/photo.php?fbid=1520050698319836&set=a.1520022318322674.1073741827.100009447618341&type=3&permPage=1), with me tagged.
 
-<a href="/silo_swat0/1c_silo_post.png"><img class="step" src="/silo_swat0/1c_silo_post.png" /></a>
+<a href="/silo_swat0/1c_silo_post.png"><img class="step" src="/silo_swat0/1c_silo_post_thumb.png" /></a>
 
 2. Facebook notifies me that Snoopy tagged me in a picture.
 
 <a href="/silo_swat0/2_tag_notif.png"><img class="step" src="/silo_swat0/2_tag_notif.png" /></a>
 
-3. Kyle (C) sees Snoopy's picture in his reader ([Woodwind](http://reader.kylewm.com/)).
+3. Kyle (C) uses [Woodwind](http://reader.kylewm.com/) as his reader and
+   subscribes to his Facebook news feed via
+   [facebook-atom](http://facebook-atom.appspot.com/). He's friends with Snoopy,
+   so the Facebook photo post appears in Woodwind.
 
 <a href="/silo_swat0/3_comment_in_woodwind.jpg"><img class="step" src="/silo_swat0/3_comment_in_woodwind.jpg" /></a>
 
-4a. Kyle comments on the picture inside Woodwind, which posts it to his site
-   ([Redwind](https://github.com/kylewm/redwind)).
+ 4a. Woodwind supports inline commenting, liking, and reposting via
+ [indie-config](https://indiewebcamp.com/indie-config) and
+ [micropub](http://micropub.net/). Kyle comments on the picture inside Woodwind,
+ which posts the comment to [his site](https://kylewm.com/), running
+ [Redwind](https://github.com/kylewm/redwind).
 
 <a href="/silo_swat0/4a_indie_comment.jpg"><img class="step" src="/silo_swat0/4a_indie_comment.jpg" /></a>
 
-4b. Kyle POSSEs the comment to Facebook.
+4b. Redwind POSSEs the comment to Facebook using [Selenium](http://www.seleniumhq.org/).
 
 <a href="/silo_swat0/4b_silo_comment.jpg"><img class="step" src="/silo_swat0/4b_silo_comment.jpg" /></a>
 
-5a. Bridgy backfeeds the comment to Snoopy's site, which notifies him via email.
-
-<a href="/silo_swat0/5_comment_notif_A.png"><img class="step" src="/silo_swat0/5_comment_notif_A.png" /></a>
-
-5b. Facebook notifies me of the comment.
+5a. Facebook notifies me of the comment.
 
 <a href="/silo_swat0/5_comment_notif_B.png"><img class="step" src="/silo_swat0/5_comment_notif_B.png" /></a>
+
+
+5a. Bridgy polls Snoopy's Facebook posts, sees the comment, and backfeeds it to
+    the [original post](https://snarfed.org/chillin_2) via webmention. The
+    WordPress [webmention](https://wordpress.org/plugins/webmention/) and
+    [semantic-linkbacks](https://wordpress.org/plugins/semantic-linkbacks/)
+    plugins receive the webmention, fetch the comment from Bridgy (translated
+    from Facebook's API into
+    [microformats2](http://microformats.org/wiki/microformats2)), and add it
+    to the original post as comments.
+
+<a href="/silo_swat0/5_bridgy_backfeed.png"><img style="max-width: 700px" src="/silo_swat0/5_bridgy_backfeed.png" /></a>
+
+5b. This triggers WordPress to email Snoopy and notify him of the comment.
+
+<a href="/silo_swat0/5_comment_notif_A.png"><img class="step" src="/silo_swat0/5_comment_notif_A.png" /></a>
 
 _<a class="u-syndication" href="https://snarfed.org/silo-swat0-on-facebook">Also on IndieNews.</a>_
