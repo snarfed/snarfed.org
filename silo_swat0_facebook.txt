@@ -71,8 +71,7 @@ were the same both times. Here's the first, illustrated:
 
 <a href="/silo_swat0/3_comment_in_woodwind.jpg"><img class="step" src="/silo_swat0/3_comment_in_woodwind.jpg" /></a>
 
- 4a. Woodwind supports inline commenting, liking, and reposting via
- [indie-config](https://indiewebcamp.com/indie-config) and
+4a. Woodwind supports inline commenting, liking, and reposting via
  [micropub](http://micropub.net/). Kyle comments on the picture inside Woodwind,
  which posts the comment to [his site](https://kylewm.com/), running
  [Redwind](https://github.com/kylewm/redwind).
