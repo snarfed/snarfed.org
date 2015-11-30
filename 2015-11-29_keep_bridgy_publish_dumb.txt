@@ -1,0 +1,69 @@
+Keep Bridgy Publish dumb
+
+<p class="right third">
+  <img class="shadow" src="/far_side_midvale_school_for_the_gifted.png" /></p>
+
+[Bridgy](https://brid.gy/) has three parts:
+[listen](https://brid.gy/about#how), [publish](https://brid.gy/about#publish),
+and [blogs](https://brid.gy/about#blogs). One of them is not like the others.
+
+Listening for responses to your [silo](https://indiewebcamp.com/silo) posts and
+[backfeeding](https://indiewebcamp.com/backfeed) them to your web site was the
+first service Bridgy provided, and it's still the most popular. It runs entirely
+in the background. [No UI needed.](https://snarfed.org/2014-11-06_happy-1000th-bridgy#UI)
+
+Blog webmentions run entirely in the background too. Bridgy sends webmentions
+for you when you write a post, and it receives webmentions and adds them to your
+posts behind the scenes. Again, no UI needed.
+
+Publish, however, is a different beast. It has a user interface, which is where
+most people start. Even after that, when they
+[automate it via webmention](https://brid.gy/about#webmention), they often still
+want an interface of some sort or another to customize their silo posts, and
+that's where the trouble starts.
+
+<!-- more -->
+<span />
+
+[POSSE](https://indiewebcamp.com/posse)ing is simple sometimes, complicated
+other times. You craft tweet text, convert formatting, and translate mentions
+and tags (or not). These are not one-way operations. Characters need to be
+counted, formatting iterated, mentions auto-filled. You'll want to preview your
+post. You need multiple round trips against the original post using a rich,
+interactive UI. Honestly, you need all that inside your CMS.
+
+Like the rest of Bridgy, Publish is a service. It has just two operations,
+publish and preview, which doesn't exactly lend it to richness or interactivity.
+We could force the issue and make plugins for the bigger CMSes - Known,
+WordPress, etc. - but I think that's a losing battle. I wouldn't build them
+myself, and I'd look hard at any new features they needed.
+
+I love that Bridgy Publish lets people POSSE their posts without implementing
+silo APIs themselves. That's why I built it! And I'm flattered that they
+[like](https://github.com/snarfed/bridgy/issues/560)
+[it](https://github.com/snarfed/bridgy/issues/554)
+[enough](https://github.com/snarfed/bridgy/issues/553)
+[to](https://github.com/snarfed/bridgy/issues/552)
+[ask](https://github.com/snarfed/bridgy/issues/550)
+[for](https://github.com/snarfed/bridgy/issues/478)
+[more](https://github.com/snarfed/bridgy/issues/474)
+[and](https://github.com/snarfed/bridgy/issues/445)
+[more](https://github.com/snarfed/bridgy/issues/432)
+[user-facing](https://github.com/snarfed/bridgy/issues/416)
+[features](https://github.com/snarfed/bridgy/issues/317). It's just not the
+right place for them.
+[Fortunately, it's not the only game in town.](https://kylewm.com/2015/11/silo-pub-as-a-generic-micropub-to-silo-adapter).
+
+The one concession I'm considering is
+[letting users specify the exact text](https://github.com/snarfed/bridgy/issues/527#issuecomment-1585478980)
+to publish in their silo post. This would let advanced users craft custom posts
+for each silo in their CMS, and still reuse Bridgy's POSSE API code. That's it
+though.
+
+Bridgy can and should be a best of breed backfeed service. Bridgy Publish, on
+the other hand, *cannot* be a best of breed POSSE service. My strongest
+inclination at this point is to keep it dumb, define precisely how it translates
+your original posts to silo posts, and avoid trying to offer UX where none can
+survive. It's a mug's game.
+
+_<a class="u-syndication" href="http://news.indiewebcamp.com/en/snarfed.org/2015-11-29_keep-bridgy-publish-dumb">Also on IndieNews.</a>_
