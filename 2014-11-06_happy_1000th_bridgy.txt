@@ -1,8 +1,8 @@
 Happy 1000th, Bridgy
 
 <p id="top" class="right half">
- <a href="/bridgy_1000_accounts_stacked.png">
-  <img class="shadow" src="/bridgy_1000_accounts_stacked_thumb.png" /></a></p>
+ <a href="/bridgy_stats/2014/accounts_stacked.png">
+  <img class="shadow" src="/bridgy_stats/2014/accounts_stacked_thumb.png" /></a></p>
 
 [Bridgy](https://www.brid.gy/), my little [IndieWeb](http://indiewebcamp.com/)
 side project, hit a milestone a couple days ago: 1000 users! Congratulations
@@ -38,12 +38,12 @@ First, user growth. Clearly not exponential, but it is keeping up a steady clip.
 Also see the [cumulative graph at the top](#top).
 
 <p id="users" class="right half" style="margin-left: 0px; margin-right: -10px">
- <a href="/bridgy_1000_accounts.png">
-  <img src="/bridgy_1000_accounts_thumb.png" /></a>
+ <a href="/bridgy_stats/2014/accounts.png">
+  <img src="/bridgy_stats/2014/accounts_thumb.png" /></a>
 </p>
 <p class="left half" style="margin-right: 0px">
- <a href="/bridgy_1000_features.png">
-  <img src="/bridgy_1000_features_thumb.png" /></a></p>
+ <a href="/bridgy_stats/2014/features.png">
+  <img src="/bridgy_stats/2014/features_thumb.png" /></a></p>
 </p>
 
 <br style="clear: both" />
@@ -57,12 +57,12 @@ Now, the stuff Bridgy actually _does_. Note that the second graph is log scale,
 since I threw in everything but the kitchen sink. Tufte would have a fit.
 
 <p class="right half" style="margin-left: 0px; margin-right: -10px">
- <a href="/bridgy_1000_activity.png">
-  <img src="/bridgy_1000_activity_thumb.png" /></a>
+ <a href="/bridgy_stats/2014/activity.png">
+  <img src="/bridgy_stats/2014/activity_thumb.png" /></a>
 </p>
 <p id="activity" class="left half" style="margin-right: 0px">
- <a href="/bridgy_1000_webmentions.png">
-  <img src="/bridgy_1000_webmentions_thumb.png" /></a>
+ <a href="/bridgy_stats/2014/webmentions.png">
+  <img src="/bridgy_stats/2014/webmentions_thumb.png" /></a>
 </p>
 
 <br style="clear: both" />
