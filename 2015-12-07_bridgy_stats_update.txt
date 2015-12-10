@@ -1,56 +1,71 @@
 Bridgy stats update
 
-<p id="top" class="right half">
- <a href="/bridgy_stats/2015/accounts_stacked.png">
-  <img class="shadow" src="/bridgy_stats/2015/accounts_stacked_thumb.png" /></a></p>
+<p id="top" class="right half" style="margin-right: -10px">
+ <a href="/bridgy_stats/2015/features.png">
+  <img class="shadow" src="/bridgy_stats/2015/features_thumb.png" /></a></p>
 
-It's been over a year since I last compiled usage statistics for
-[Bridgy](https://www.brid.gy/),
+It's been over a year since I
+[last compiled usage statistics](/2014-11-06_happy-1000th-bridgy)
+for [Bridgy](https://www.brid.gy/),
 [our](https://github.com/snarfed/bridgy/graphs/contributors) little
 [IndieWeb](http://indiewebcamp.com/) side project, and
 [IndieWebCamp SF last week](https://indiewebcamp.com/2015/SF) was good
 motivation to update them. Here they are!
 
+<br style="clear: both" />
+
 <p id="users" class="right half" style="margin-left: 0px; margin-right: -10px">
- <a href="/bridgy_stats/2015/accounts.png">
-  <img src="/bridgy_stats/2015/accounts_thumb.png" /></a>
+ <a href="/bridgy_stats/2015/accounts_stacked.png">
+  <img class="shadow" src="/bridgy_stats/2015/accounts_stacked_thumb.png" /></a>
 </p>
 <p class="left half" style="margin-right: 0px">
- <a href="/bridgy_stats/2015/features.png">
-  <img src="/bridgy_stats/2015/features_thumb.png" /></a></p>
+ <a href="/bridgy_stats/2015/accounts.png">
+  <img class="shadow" src="/bridgy_stats/2015/accounts_thumb.png" /></a></p>
 </p>
 
 <br style="clear: both" />
 
 <p class="right half" style="margin-left: 0px; margin-right: -10px">
  <a href="/bridgy_stats/2015/activity.png">
-  <img src="/bridgy_stats/2015/activity_thumb.png" /></a>
+  <img class="shadow" src="/bridgy_stats/2015/activity_thumb.png" /></a>
 </p>
 <p id="activity" class="left half" style="margin-right: 0px">
  <a href="/bridgy_stats/2015/webmentions.png">
-  <img src="/bridgy_stats/2015/webmentions_thumb.png" /></a>
+  <img class="shadow" src="/bridgy_stats/2015/webmentions_thumb.png" /></a>
 </p>
 
 <br style="clear: both" />
 
-The trends patterns are broadly the same as last year, so I won't belabor the
-obvious. A few high level notes:
+The patterns are broadly the same as last year, so I won't belabor the obvious.
+A few high level thoughts:
+
+<!-- more -->
+<span />
 
 * I *think* user growth is roughly linear, not polynomial or exponential, but
 it's hard to say. It looks like it's a bunch of small asymptotic curves, each
 one started by a PR boost somewhere or other. In any case, we're adding ~150
 users per month right now.
 * Response and webmention volume, on the other hand, seem to be at least
-superlinear if not exponential.
+superlinear, if not exponential.
 * [Publish](https://www.brid.gy/about#publish) usage has surpassed
 [blog webmentions](https://www.brid.gy/about#blogs), even
-despite [my recent publish misgivings](/2015-11-29_keep-bridgy-publish-dumb).
-Having said that...
-* ...listen (aka backfeed) is still comfortably the most popular feature.
+despite [my recent misgivings](/2015-11-29_keep-bridgy-publish-dumb).
+* Having said that, listen (aka backfeed) is still comfortably the most popular
+feature.
 * Twitter and Facebook are still comfortably the most popular silos.
-* Based on very rough, back of the envelope math, Bridgy costs about
-$0.02/user/month to run right now. That's all kinds of oversimplified, of
-course - most of that is for listen, not publish or blog webmentions, and most
-of *that* is for active users, since we only poll inactive users once a
-day - but still, assuming the distributions don't change too much, it may still
-be useful for capacity planning.
+* Bridgy costs about $0.02/user/month to run right now. That's all kinds of
+oversimplified, of course - most of that is for listen, not publish or blog
+webmentions, and most of *that* is for active users, since we only poll inactive
+users once a day - but still, assuming those ratios don't change too much, it's
+still useful for capacity planning.
+
+Methodology for generating the stats: download Bridgy's latest
+[datastore backup](https://github.com/snarfed/bridgy#misc), run
+[`to_tsv.py`](https://github.com/snarfed/bridgy/blob/master/scripts/to_tsv.py)
+on it, import the output file into
+[this public spreadsheet](https://docs.google.com/spreadsheets/d/1VhGiZ9Z9PEl7f9ciiVZZgupNcUTsRVltQ8_CqFETpfU/edit),
+and use it to generate the graphs.
+[Details here.](/2014-11-06_happy-1000th-bridgy#comment-2583731)
+
+_<a class="u-syndication" href="http://news.indiewebcamp.com/en/snarfed.org/2015-12-07_bridgy-stats-update">Also on IndieNews.</a>_
