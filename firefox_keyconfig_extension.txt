@@ -19,13 +19,15 @@ has a few rough keyboard edges.
 Enter the [keyconfig](http://forums.mozillazine.org/viewtopic.php?t=72994)
 extension, which lets you customize all of the built-in keyboard shortcuts and
 add new ones. You can even bind keys to *arbitrary JavaScript*. Brilliant! I
-can't believe it took me so long to find it.
+can't believe it took me so long to find it. It's not currently on
+[addons.mozilla.org](http://addons.mozilla.org/), but you can
+[download it here](/keyconfig-signed-1.0.1.xpi).
 
 Here's a list of the keyboard shortcuts I've modified with keyconfig:
 
 * Disabled Ctrl-B and Ctrl-H for the Bookmark and History sidebars. I often hit
   them accidentally, and there's no corresponding key to *close* the sidebars.
-* Likewise, disabled F1 for help. 
+* Likewise, disabled F1 for help.
 * Disabled many of the Ctrl-Shift-... keys I don't use:
   * Ctrl-Shift-B, Blocked Items sidebar
   * Ctrl-Shift-E, Tab groups

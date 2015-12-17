@@ -20,33 +20,31 @@ The standard solution is batching, aka clustering.
 for [webmention.io](http://webmention.io/)'s IRC notifications, and the design
 is useful and general enough that I figured I'd write it up here. It's most
 useful for notifications with multiple different parameters. Say a notification
-has a _source_, e.g. a user, and a _target_, e.g. a post. Here's the logic:
+has a _source_, e.g. a user, and a _target_, e.g. a post. Here's the logic.
 
-* When you generate a notification:
-  * Store it in two in-memory clusters, one for the source and one for the target.
-  * Start a 60s timer.
-* When the timer expires:
-  * Optional: if the last notification in either cluster arrived in the last
-    10s, extend the timer another 60s, up to 5m total. This is a crude heuristic
-    for detecting clusters that are likely to accumulate more notifications soon.
-  * Otherwise, examine the source and target clusters and pick the one with the
-    most notifications.
-  * Send that cluster's notifications as a single combined notification.
-  * Clear the cluster.
-  * Remove each notification its _other_ cluster too, so that you don't send
-    duplicates.
+When you generate a notification:
+* Store it in two in-memory clusters, one for the source and one for the target.
+* Start a 60s timer.
 
-The time durations are obviously pretty arbitrary. You can extend them to
-cluster more aggressively, or reduce them to notify more quickly at the expense
-of more individual notifications. You can also parametize them on notification
-details, e.g. you could notify about replies immediately but cluster likes.
+When the timer expires:
+* Optional: if the last notification in either cluster arrived in the last
+  10s, extend the timer another 60s, up to 5m total. This is a crude heuristic
+  for detecting clusters that are likely to accumulate more notifications soon.
+* Otherwise, examine the source and target clusters and pick the one with the
+  most notifications.
+* Send that cluster's notifications as a single combined notification.
+* Clear the cluster.
+* Remove each of those notifications from its _other_ cluster too, to avoid
+  sending duplicates.
+
+The time durations are obviously arbitrary. You can extend them to cluster more
+aggressively, or reduce them to notify more quickly at the expense of more
+individual notifications. You can also parametize them on notification details,
+e.g. you could send replies immediately but cluster likes.
 
 You'll also want to put some thought into
 [how to render combined notifications](https://github.com/aaronpk/webmention.io/issues/39#issuecomment-127048277),
 how many sources or targets to include before ellipsizing, etc. That's usually
 domain specific. Still, hopefully this will help you get started!
-
-([Aaron](http://aaronparecki.com/), let me know if you have any revisions. Bonus
-points if you send an [edit](https://indiewebcamp.com/edit)! :P)
 
 _<a class="u-syndication" href="http://news.indiewebcamp.com/en/snarfed.org/clustering-notifications">Also on IndieNews.</a>_

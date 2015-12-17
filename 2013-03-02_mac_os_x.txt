@@ -247,6 +247,15 @@ and I also love the
 userscript. It makes `o` open the first link in a tweet, `p` go to the author's
 profile, and more. So useful.
 
+At one point, Firefox started hanging on me regularly. As often as once or twice
+a minute or so, it would hang for ~5s or so, sometimes long enough to make OS X
+show me the beach ball. I looked through Mozilla's
+[Firefox troubleshooting docs](https://support.mozilla.org/en-US/products/firefox/fix-problems)
+and found a
+[recommendation to remove old session restore files](https://support.mozilla.org/en-US/kb/firefox-hangs-or-not-responding#w_delete-duplicated-session-restore-files),
+`sessionstore*.*` and `sessionstore-backups/*` in my Firefox profile directory.
+Voila, that did the trick!
+
 
 <a name="Mac_OS_X"></a>
 #### Mac OS X
