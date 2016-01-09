@@ -254,7 +254,9 @@ show me the beach ball. I looked through Mozilla's
 and found a
 [recommendation to remove old session restore files](https://support.mozilla.org/en-US/kb/firefox-hangs-or-not-responding#w_delete-duplicated-session-restore-files),
 `sessionstore*.*` and `sessionstore-backups/*` in my Firefox profile directory.
-Voila, that did the trick!
+That helped, but only for a couple weeks. I then tried the bigger hammer of
+[wiping my places database](https://support.mozilla.org/en-US/kb/firefox-hangs-or-not-responding#w_create-a-new-places-database)
+(*sniff*), and voila, that did the trick!
 
 
 <a name="Mac_OS_X"></a>

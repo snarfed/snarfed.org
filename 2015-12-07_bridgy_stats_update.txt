@@ -2,7 +2,7 @@ Bridgy stats update
 
 <p id="top" class="right half" style="margin-right: -10px">
  <a href="/bridgy_stats/2015/features.png">
-  <img class="shadow" src="/bridgy_stats/2015/features_thumb.png" /></a></p>
+  <img class="u-photo shadow" src="/bridgy_stats/2015/features_thumb.png" /></a></p>
 
 It's been over a year since I
 [last compiled usage statistics](/2014-11-06_happy-1000th-bridgy)
@@ -16,22 +16,22 @@ motivation to update them. Here they are!
 
 <p id="users" class="right half" style="margin-left: 0px; margin-right: -10px">
  <a href="/bridgy_stats/2015/accounts_stacked.png">
-  <img class="shadow" src="/bridgy_stats/2015/accounts_stacked_thumb.png" /></a>
+  <img class="u-photo shadow" src="/bridgy_stats/2015/accounts_stacked_thumb.png" /></a>
 </p>
 <p class="left half" style="margin-right: 0px">
  <a href="/bridgy_stats/2015/accounts.png">
-  <img class="shadow" src="/bridgy_stats/2015/accounts_thumb.png" /></a></p>
+  <img class="u-photo shadow" src="/bridgy_stats/2015/accounts_thumb.png" /></a></p>
 </p>
 
 <br style="clear: both" />
 
 <p class="right half" style="margin-left: 0px; margin-right: -10px">
  <a href="/bridgy_stats/2015/activity.png">
-  <img class="shadow" src="/bridgy_stats/2015/activity_thumb.png" /></a>
+  <img class="u-photo shadow" src="/bridgy_stats/2015/activity_thumb.png" /></a>
 </p>
 <p id="activity" class="left half" style="margin-right: 0px">
  <a href="/bridgy_stats/2015/webmentions.png">
-  <img class="shadow" src="/bridgy_stats/2015/webmentions_thumb.png" /></a>
+  <img class="u-photo shadow" src="/bridgy_stats/2015/webmentions_thumb.png" /></a>
 </p>
 
 <br style="clear: both" />
