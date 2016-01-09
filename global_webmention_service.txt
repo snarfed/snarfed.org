@@ -1,0 +1,43 @@
+Global webmention service
+
+<p class="right third">
+ <a href="http://webmention.org/">
+  <img src="/webmention_logo.png" /></a></p>
+
+There's a recurring project idea in the [indieweb](https://indiewebcamp.com/)
+community: a service that sends [webmentions](http://webmention.org/) on behalf
+of web sites that don't send them already. We already have
+[a handful](https://telegraph.p3k.io/)
+[of services](https://brid.gy/about#how)
+[that do this](https://brid.gy/about#blogs)
+for some verticals, and we've kicked around
+[ideas](https://github.com/snarfed/bridgy/issues/420) for more.
+
+Here's a straw man design for a service that does the opposite: finds web pages
+that link to your web site and sends you webmentions for them.
+
+You enter your domain on the front page. When you do, it sets up a
+[Superfeedr](http://superfeedr.com/)
+[tracking feed](http://documentation.superfeedr.com/trackers.html) that
+[watches for links to your site](http://documentation.superfeedr.com/trackers.html#link).
+When it finds one, it notifies the service, which sends a webmention from the
+source page to each page on your site that it links to.
+
+...that's it! It's so small and simple, I almost hoped I could do it with
+[IFTTT](https://ifttt.com/) or [Zapier](http://zapier.com/) or something
+similar, but not quite. It would definitely be easy enough on
+[App Engine](https://cloud.google.com/appengine/) or
+[Lambda](https://aws.amazon.com/lambda/) or any other PaaS.
+
+<p class="left third">
+ <a href="http://webmention.org/">
+  <img src="/superfeedr_logo.png" /></a></p>
+
+This is still just another vertical, of course. The real coup would be to get
+[Superfeedr](http://superfeedr.com/) to do this for all web sites it tracks,
+which is a big swathe of the public web. They're in a unique position, too; they
+already do most of the hard work, and they're indieweb friendly to boot!
+
+_<a class="u-syndication" href="http://news.indiewebcamp.com/en/">
+ Also on IndieNews.</a> Thanks to [Tantek](http://tantek.com/) for
+ [inspiring this post](http://indiewebcamp.com/irc/2016-01-08#t1452280300046)._
