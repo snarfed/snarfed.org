@@ -1,6 +1,38 @@
 pictures
 
 <div class="ngg-album-compact">
+<a href="/halloween-2015">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2016/01/blue_costume-300x400.jpg" />
+  </div>
+  <h4>halloween 2015</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/holidays-2015">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2016/01/cloud_house_barrett_butt-300x401.jpg" />
+  </div>
+  <h4>holidays 2015</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/brooke-the-courier">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2016/01/bowls-300x225.jpg" />
+  </div>
+  <h4>brooke the courier</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/brooke-months-12-15">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2016/01/drunk-300x225.jpg" />
+  </div>
+  <h4>brooke months 12-15</h4>
+</a></div>
+
+<div class="ngg-album-compact">
 <a href="/brooke-photo-shoot-2">
   <div class="ngg-album-compactbox">
     <img src="/w/wp-content/uploads/2015/08/outside_brooke_2-300x200.jpg" />
