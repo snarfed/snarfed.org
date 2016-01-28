@@ -1,0 +1,11 @@
+
+
+Scale a Django webapp to handle a bit of load? Sure, no problem.
+
+
+
+_[days pass]_
+
+
+
+Current status: reading the C code for [bcrypt](https://github.com/dstufft/bcrypt)'s [Blowfish](https://en.wikipedia.org/wiki/Blowfish_%28cipher%29) implementation in a desperate attempt to tune it properly. 

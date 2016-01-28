@@ -1,0 +1,17 @@
+
+
+<p class="half right">
+
+ <a href="http://book.mixu.net/distsys/replication.html#an-overview-of-major-replication-approaches">
+
+  <img src="/distributed_systems_chart.png" /></a></p>
+
+
+
+Humble brag: I'm reading a [distributed systems book](http://book.mixu.net/distsys/) the other day, nodding along, when I come across [a chart that looks familiar](http://book.mixu.net/distsys/replication.html#an-overview-of-major-replication-approaches). I take a closer look, and it's actually one of mine, [from a talk I gave a while back](/transactions_across_datacenters_io.html#slide33).
+
+
+
+Fun! Thanks for the shout out, [Mikito](http://mixu.net/). [It's a great book](http://book.mixu.net/distsys/), too, definitely worth reading if you're interested in the field.
+
+
