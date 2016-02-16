@@ -1,13 +1,12 @@
 books
 
 Books I've [read](#read) and
-[want to read](#to-read),
-[courtesy of Goodreads](http://www.goodreads.com/snarfed).
-<good> means I liked it,
-<ok> means it was just ok,
-<bad> means I didn't like it,
-<unfinished> means I didn't finish it.
-<nf>nf</nf> is non-fiction, <f>f</f> is fiction.
+[want to read](#to-read).
+<good> I liked,
+<ok> were just ok,
+<bad> I didn't like,
+<unfinished> I didn't finish.
+<nf>nf</nf> are non-fiction, <f>f</f> are fiction.
 
 Also see
 [Maulik's](http://maulik.freeshell.net/Miki.pl?page=Reading+Log.miki) and
@@ -19,6 +18,8 @@ Also see
 
 <a name="to_read"></a>
 **Books I'd like to read**:
+
+  * [Philip K. Dick - Vulcan's Hammer](https://books.google.com/books?id=S-_5AwAAQBAJ)
 
   * [Robert Jackson Bennett - City Of Stairs](https://books.google.com/books?id=lRQcAwAAQBAJ)
 
@@ -46,9 +47,6 @@ Also see
   * [George Polya - How To Solve It](https://books.google.com/books?id=X3xsgXjTGgoC)
 <nf>nf</nf>
 
-  * [Randall Munroe - Thing Explainer](http://blog.xkcd.com/2015/05/13/new-book-thing-explainer/)
-<nf>nf</nf>
-
   * Jorge Luis Borges - Garden of Forking Paths
 <f>f</f>
 
@@ -61,9 +59,6 @@ Also see
 
   * [Robert M. Pirsig - Zen and the Art of Motorcycle Maintenance](https://books.google.com/books?id=KMRReyLPyXMC)
 <f>f</f>
-
-  * [Jaron Lanier - Who Owns the Future?](https://books.google.com/books?id=FJ72X0nlmq4C)
-<nf>nf</nf>
 
   * [Bruce Schneier - Data and Goliath](https://books.google.com/books?id=_grPBgAAQBAJ)
 <nf>nf</nf>
@@ -88,6 +83,13 @@ Also see
 
 <a name="read"></a>
 **Books I've read**:
+
+  * [Jaron Lanier - Who Owns the Future?](https://books.google.com/books?id=FJ72X0nlmq4C)
+<nf>nf</nf>
+
+  * [Randall Munroe - Thing Explainer](http://blog.xkcd.com/2015/05/13/new-book-thing-explainer/)
+<nf>nf</nf>
+<good>
 
   * [Walter M. Miller Jr. - A Canticle for Leibowitz (St. Leibowitz, #1)](https://books.google.com/books?id=ESjl9c2LCXsC)
 <f>f</f>
