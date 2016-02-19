@@ -1,14 +1,14 @@
 Judging campaign tactics
 
-<p class="right third">
+<p class="right half">
  <a href="http://cheezburger.com/8548359936">
-   <img src="/trump_period.jpg"/></a></p>
+   <img class="shadow" src="/trump_period.jpg"/></a></p>
 
 Donald Trump.
 
-Admit it, many of you have half a lather worked up already. The man is
-incendiary. He's built a big base of support with tactics that we thought were
-off the table entirely and should have sunk him long ago.
+Admit it, you have half a lather worked up already. The man is incendiary; the
+campaign is astounding. He's built a big base of support with tactics that we
+thought were off the table entirely and should have sunk him long ago.
 
 What changed? Do we not have the grasp on campaign tactics we thought we did? Do
 we need to dive back into modern electioneering, break it down, and really
@@ -20,16 +20,19 @@ Campaigning today is a complicated business.
 [optics](http://www.nytimes.com/2010/03/07/magazine/07FOB-onlanguage-t.html),
 [opposition research](https://en.wikipedia.org/wiki/Opposition_research),
 [social media](http://recode.net/2016/01/27/meet-donald-trumps-twitter-whisperer/)...there's
-a lot to it, and it's all far removed from the actual task of governing and
-policy making. (You may still spend much of your time there fundraising and
-campaigning once you're in office, but that's a different issue.)
+a lot to it, all far removed from the actual task of governing and policy
+making. (You may still spend much of your time fundraising and campaigning once
+you're in office, but that's a different issue.)
+
+<!-- more -->
+<span />
 
 The founding idea of democracy is that citizens choose their representatives
 directly. For that to work, they need a clear picture of who each candidate is,
 what they stand for, and how they'd govern. So as a society, we'd ideally judge
-campaign tactics based on how well they describe a candidate. Facebook post
-describing Alice's upbringing and early career? OK. Deceptive attack ad that
-misrepresents Bob's voting record? Not OK.
+campaign tactics based on how well they describe a candidate. Facebook post on
+Alice's home town? OK. Deceptive attack ad that lies about Bob's voting record?
+Not OK.
 
 Many common campaign tactics fail that test. We may not have large
 [scale voter fraud](https://snarfed.org/2007-12-01_windsurfing_in_venezuela#comment-164),
@@ -41,13 +44,13 @@ and recently the rise of the
 ["personal fact."](http://www.politifact.com/truth-o-meter/statements/2015/nov/22/donald-trump/fact-checking-trumps-claim-thousands-new-jersey-ch/)
 [Social media targeting](http://recode.net/2016/01/27/meet-donald-trumps-twitter-whisperer/)
 and [astroturfing](https://en.wikipedia.org/wiki/Astroturfing) may be milder,
-but still misleading. Swinging right (or left) for the primary and then back to
+but still misleading. Swinging right (or left) for the primary and back to
 center for the general is so common,
 [we expect all candidates to do it](http://themonkeycage.org/Abramowitz.Primary.Voters.pdf).
 
-<p class="left third">
+<p class="left half">
  <a href="https://en.wikipedia.org/wiki/Artificial_turf">
-   <img src="/astroturf.jpg"/></a></p>
+   <img class="shadow" src="/astroturf.jpg"/></a></p>
 
 We've had a bit of success outlawing and discouraging some of these tactics.
 Campaign funding reform has made some progress,
@@ -81,22 +84,26 @@ It's so tempting to add just one more thing to a product or codebase because I'm
 sure I'll need it down the road, but I often don't, and then I'm stuck with the
 extra complexity for no benefit.
 
+<p class="right half">
+ <img class="shadow" src="/crystal_ball.jpg"/></p>
+
 There's also the character question. It's clearly unacceptable to
 [call Megyn Kelly a bimbo](http://talkingpointsmemo.com/livewire/trump-megyn-kelly-bimbo-tweet)
 or
 [characterize Mexicans as rapists and criminals](https://www.washingtonpost.com/news/fact-checker/wp/2015/07/08/donald-trumps-false-comments-connecting-mexican-immigrants-and-crime/),
 full stop. Even if Trump might not do that kind of thing as President, is it a
 sign of the policies he'd pursue? How about the more abstract notions of
-character, integrity, and values? Politicians' personal lives have only been
-fair game in the press for half a century, or so, at least in the US, and it
-took another few decades until the
+character, integrity, and values?
+
+Politicians' personal lives have only been fair game in the press for half a
+century, or so, at least in the US, and it took another few decades until the
 [Clinton/Lewinsky scandal](https://en.wikipedia.org/wiki/Lewinsky_scandal)
 [and impeachment](https://en.wikipedia.org/wiki/Impeachment_and_acquittal_of_Bill_Clinton)
 fully raised the question of whether politicians can compartmentalize their
 private lives and their public responsibilities. We're still figuring out how we
-feel about these questions.
+feel about these questions, and maybe campaign tactics too.
 
-In the end, the "clear description" test may be the best measuring stick.
+In the end, the "clear description" test might be the best measuring stick.
 Democracy need voters to understand what each candidate stands for and how
 they'd govern. Fundraising and opposition research may make us squirm, but they
 don't necessarily mislead the electorate. Smears,
