@@ -1,0 +1,7 @@
+
+
+I wonder why the FBI isn't suing Google for a backdoor in Android yet.
+
+
+
+([Some](http://www.cnbc.com/2016/02/18/what-if-the-fbi-were-dealing-with-an-android.html) [speculation](https://reddit.com/r/Android/comments/46ap3k/would_fbi_need_backdoor_from_google_to_decrypt/): brute forcing is prevented in software as opposed to Apple's [Security Enclave](https://www.apple.com/business/docs/iOS_Security_Guide.pdf), device encryption is less common and only recently on by default, device manufacturers could add backdoors individually, etc.)
