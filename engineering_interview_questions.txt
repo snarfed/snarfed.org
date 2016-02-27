@@ -1,15 +1,16 @@
 Engineering interview questions
 
-I've done lots (>500 or so) of technical software engineering interviews,
-[mostly at Google](/resume) but also elsewhere. I can't claim I'm particularly
+I've done lots of technical software engineering interviews, over 500 or so,
+[mostly at Google but also elsewhere](/resume). I can't claim I'm particularly
 good at them, but I've definitely racked up some experience. Here are some of my
-favorite questions. They're mostly open ended system design problems; no coding
-questions. (I know they're a necessary evil, but I still hate them.)
+favorite questions. They're mostly open ended system design problems, no coding
+questions. (Coding questions a necessary evil, but I'm still not a fan.)
 
 * [Distributed transaction](#distributed-transaction)
 * [Web search spell check](#web-search-spell-check)
 * [Web crawler](#web-crawler)
 * [Manhattan distance](#manhattan-distance)
+* [Count the bits in a file that are 1 (as opposed to 0)](#count-bits-in-file)
 * [How to debug nondeterministic failures](#how-to-debug-nondeterministic-failures)
 
 
@@ -159,3 +160,8 @@ Third, reproducing it. Use all the isolation techniques, then look for an
 automated harness that repeatedly runs the system and watches for the expected
 behavior. It's important that the harness record as much state as possible.
 Bonus points if it automatically drops them into a debugger. :P
+
+
+<a name="count-bits-in-file"></a>
+### Count the bits in a file that are 1 (as opposed to 0)
+
