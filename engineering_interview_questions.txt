@@ -132,8 +132,8 @@ There are lots of ways to do it. The most elegant is recursive:
     num(N, M) = num(N - 1, M) + num(N, M - 1)
     num(X, 0) = num(0, X) = 1
 
-..._however_, there's a closed form solution: _N!M! / (N!(M-1!) + (N-1)!M!)_.
-Bonus points for finding that.
+..._however_, there's a closed form solution: _N + M choose N (or choose M)_, ie
+_N!M! / (N!(M-1!) + (N-1)!M!)_. Bonus points for finding that.
 
 
 <a name="how-to-debug-nondeterministic-failures"></a>
