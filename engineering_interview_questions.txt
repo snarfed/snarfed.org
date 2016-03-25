@@ -136,6 +136,42 @@ There are lots of ways to do it. The most elegant is recursive:
 _N!M! / (N!(M-1!) + (N-1)!M!)_. Bonus points for finding that.
 
 
+<a name="count-bits-in-file"></a>
+### Count the bits in a file that are 1 (as opposed to 0)
+
+This one sounds silly and simple, but it has some fun subtleties and can expand
+into a surprisingly deep conversation, even (especially!) with experienced
+candidates.
+
+At its most basic level, this question tests two simple concepts: file I/O and
+bitwise operations. Be forgiving if they don't get the bitwise operation syntax
+exactly right or can't remember it; it's not something any of us do very often.
+However, they should definitely understand how to read data from a file and how
+to examine and count the 1 bits.
+
+After that, ask them the complexity. Runtime should be O(n), space O(1) if they
+streamed, O(n) if they read the whole file into memory.
+
+Now it gets interesting. Ask if they can do better. They'll usually decide no,
+they can't. Nudge them that constant factors count. They may talk about reading
+larger chunks of the file, etc...but the key speedup is to use a lookup table
+instead of shifting and examining individual bits. Specifically, they can build
+a table with all 256 possible bytes and their corresponding 1-bit counts, and
+then look up each of the file's bytes in the table.
+
+After that, ask them why only 256. Would it be faster to generate all 16-bit
+values? 24-bit? 32? Look for them to understand the space vs time tradeoff (and
+the initial time cost to generate the table).
+
+If they get this far, think bigger. Ask them where the bottleneck is. You want
+to hear them talk about hardware, hard drive bandwidth, disk buses, etc.
+
+Another direction you can go is parallelizing. For especially big files, how
+would they use multiple machines? Even better, what if the file is too big to
+fit on one machine? Straightforward, but still a good way to check for systems
+understanding.
+
+
 <a name="how-to-debug-nondeterministic-failures"></a>
 ### How to debug nondeterministic failures
 
@@ -160,8 +196,4 @@ Third, reproducing it. Use all the isolation techniques, then look for an
 automated harness that repeatedly runs the system and watches for the expected
 behavior. It's important that the harness record as much state as possible.
 Bonus points if it automatically drops them into a debugger. :P
-
-
-<a name="count-bits-in-file"></a>
-### Count the bits in a file that are 1 (as opposed to 0)
 
