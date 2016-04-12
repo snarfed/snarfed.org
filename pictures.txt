@@ -1,6 +1,38 @@
 pictures
 
 <div class="ngg-album-compact">
+<a href="/brooke-months-16-19">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2016/04/bathtub_toys-300x225.jpg" />
+  </div>
+  <h4>brooke months 16-19</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/garden-nature-walk">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2016/04/cyclamen-300x225.jpg" />
+  </div>
+  <h4>garden nature walk</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/playgrounds">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2016/04/wheel-300x400.jpg" />
+  </div>
+  <h4>playgrounds</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/shasta-2016">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2016/04/house_3-300x225.jpg" />
+  </div>
+  <h4>shasta 2016</h4>
+</a></div>
+
+<div class="ngg-album-compact">
 <a href="/halloween-2015">
   <div class="ngg-album-compactbox">
     <img src="/w/wp-content/uploads/2016/01/blue_costume-300x400.jpg" />
