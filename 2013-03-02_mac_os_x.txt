@@ -258,6 +258,8 @@ That helped, but only for a couple weeks. I then tried the bigger hammer of
 [wiping my places database](https://support.mozilla.org/en-US/kb/firefox-hangs-or-not-responding#w_create-a-new-places-database)
 (*sniff*), and voila, that did the trick!
 
+I set `media.autoplay.enabled` in `about:config` to `false` to stop videos from
+playing automatically.
 
 <a name="Mac_OS_X"></a>
 #### Mac OS X
