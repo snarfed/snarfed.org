@@ -20,10 +20,11 @@ match your post files. Also, note that it expects the first line of your post
 files to be the title, and the second line to be blank, a la
 [PyBlosxom](http://pyblosxom.bluesock.org/).
 
-`blogpost.sh` has gone through a few iterations. I store my post files in
-[Subversion](http://subversion.tigris.org/), so I first tried using `svn st` to
-determine which post files were modified. That worked, but it tied publishing
-posts to checking them into Subversion, which I didn't like.
+`blogpost.sh` has gone through a few iterations. I used to store my post files
+in [Subversion](http://subversion.tigris.org/)
+([now git](https://github.com/snarfed/snarfed.org)), so I first tried using
+`svn st` to determine which post files were modified. That worked, but it tied
+publishing posts to checking them into Subversion, which I didn't like.
 
 Next, I tried hashing all of the post files and comparing them to the stored
 hashes in their `.blogpost` files. That worked, but it was pretty heavyweight. I
