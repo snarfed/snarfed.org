@@ -23,4 +23,3 @@ Responses
 <span id="rsvps">Recent RSVPs:</span>  
 [catlist name=rsvp orderby=date order=desc numberposts=20]
 </div>
-
