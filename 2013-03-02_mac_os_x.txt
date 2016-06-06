@@ -402,15 +402,15 @@ of which, if you do that in System Preferences, remember to do it in
 _each keyboard_ you use!)
 
 Beyond that, the best thing I've found to make OS X more keyboardable is
-[KeyRemap4MacBook](http://pqrs.org/macosx/keyremap4macbook/). I use it to get
-[Sticky Keys](http://support.apple.com/kb/PH11262) that don't
+[Karabiner](https://pqrs.org/osx/karabiner/) (née KeyRemap4MacBook). I use it to
+get [Sticky Keys](http://support.apple.com/kb/PH11262) that don't
 [lock](http://apple.stackexchange.com/questions/13708/disabling-the-keep-pressed-function-of-os-x-sticky-keys),
 add Emacs key bindings in text controls, reclaim some of the function keys, make
 Control-arrow keys navigate by words, make Return act like Control when it's
 held down, and emulate my beloved missing Page Up and Page Down keys.
 
-One KeyRemap4MacBook note: if you bind simultaneous key presses, e.g. pressing
-both down and right arrow keys together to Page Down, try lowering the
+One Karabiner note: if you bind simultaneous key presses, e.g. pressing both
+down and right arrow keys together to Page Down, try lowering the
 _[Simultaneous Key Presses] Delay Threshold_ setting in the _Key Repeat_ tab as
 low as you can, ideally 10ms or so, so that pressing those keys in rapid
 succession doesn't accidentally trigger the new binding.
