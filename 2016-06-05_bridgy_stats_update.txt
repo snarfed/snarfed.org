@@ -1,20 +1,25 @@
 Bridgy stats update
 
 [Another IndieWebCamp](https://indiewebcamp.com/2016) means another
-[Bridgy](https://www.brid.gy/) stats update!
-[Methodology.](/2014-11-06_happy-1000th-bridgy#comment-2583731),
+[Bridgy](https://brid.gy/) stats update!
+
+Top line numbers: 3K users, 500K [webmentions](http://webmention.net/) sent
+successfully to 1K unique domains, 4M responses handled (likes, comments etc),
+13K [POSSE](https://indiewebcamp.com/POSSE)s published, total cost
+~$.01/user/month.
+
+[Data](https://docs.google.com/spreadsheets/d/1VhGiZ9Z9PEl7f9ciiVZZgupNcUTsRVltQ8_CqFETpfU/edit),
+[methodology](/2014-11-06_happy-1000th-bridgy#comment-2583731),
 [previously](/2015-12-07_bridgy-stats-update),
 [previously](/2014-11-06_happy-1000th-bridgy).
 
-<br style="clear: both" />
-
-<p id="users" class="right half" style="margin-left: 0px; margin-right: -10px">
- <a href="/bridgy_stats/2015/features.png">
-  <img class="u-photo shadow" src="/bridgy_stats/2016/features_thumb.png" /></a></p>
-</p>
-<p class="left half" style="margin-right: 0px">
+<p id="features" class="right half" style="margin-left: 0px; margin-right: -10px">
  <a href="/bridgy_stats/2016/costs_vs_users.png">
   <img class="u-photo shadow" src="/bridgy_stats/2016/costs_vs_users_thumb.png" /></a></p>
+</p>
+<p class="left half" style="margin-right: 0px">
+ <a href="/bridgy_stats/2015/features.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2016/features_thumb.png" /></a></p>
 </p>
 
 <!-- more -->
@@ -29,15 +34,15 @@ Bridgy stats update
   <img class="u-photo shadow" src="/bridgy_stats/2016/accounts_thumb.png" /></a></p>
 </p>
 
-<br style="clear: both" />
-
-<p class="right half" style="margin-left: 0px; margin-right: -10px">
+<p id="activity" class="right half" style="margin-left: 0px; margin-right: -10px">
  <a href="/bridgy_stats/2016/activity.png">
   <img class="u-photo shadow" src="/bridgy_stats/2016/activity_thumb.png" /></a>
 </p>
-<p id="activity" class="left half" style="margin-right: 0px">
+<p class="left half" style="margin-right: 0px">
  <a href="/bridgy_stats/2016/webmentions.png">
   <img class="u-photo shadow" src="/bridgy_stats/2016/webmentions_thumb.png" /></a>
 </p>
 
-_<a class="u-syndication" href="http://news.indiewebcamp.com/en">Also on IndieNews.</a>_
+<br />
+
+_<a class="u-syndication" href="http://news.indiewebcamp.com/en/snarfed.org/2016-06-06_bridgy-stats-update-2">Also on IndieNews.</a>_
