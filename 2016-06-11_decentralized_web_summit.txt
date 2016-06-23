@@ -11,7 +11,7 @@ lot of conferences, but this one was inspiring and exciting.
 [Even the mainstream press noticed.](http://www.decentralizedweb.net/press/)
 I'll see if I can describe why.
 
-I spent some time in the peer to peer community during the first dot com boom. I
+I spent some time in the peer-to-peer community during the first dot com boom. I
 [hung out](/2007-04-29_p2p-hackers_san_francisco_meetup)
 [with the](2005-12-11_p2p-hackers_san_francisco_meetup.txt)
 [p2p-hackers](http://lists.zooko.com/mailman/listinfo/p2p-hackers)
@@ -33,10 +33,10 @@ financial crisis, the NSA spying revelations, and online power concentrated into
 a few big [silos](indiewebcamp.com/silo) rallied the internet's venerable elders,
 [Vint Cerf](http://research.google.com/pubs/author32412.html) and
 [Tim Berners-Lee](https://www.w3.org/People/Berners-Lee/) and
-[Brewster Kahle](https://archive.org/about/bios.php), and
+[Brewster Kahle](https://archive.org/about/bios.php) and
 [Mitchell Baker](https://blog.mozilla.org/press/bios/mitchell-baker/).
 ([And Richard Stallman!](/2016-06-08_17841#comment-2599122)) They turned over a
-few rocks and found the same P2P
+few rocks and found the P2P
 [cypherpunks](https://en.wikipedia.org/wiki/Cypherpunk) keeping the flame alive,
 developing projects like [IPFS](http://ipfs.io/) and [Dat](http://dat-data.com/)
 and [Tor](https://torproject.org/) and falling all over themselves to sanctify
@@ -51,11 +51,10 @@ interaction with blockchain</p>
 </blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-The MC described these two groups as
-[OGs](https://en.wikipedia.org/wiki/Original_gangster) and New Gs, drawn
-together by a common desire to [redecentralize](http://redecentralize.org/) the
-web. We discussed the past, present, and future, compared projects and
-protocols - including
+The MC called us [OGs](https://en.wikipedia.org/wiki/Original_gangster) and
+New Gs, drawn together by a common desire to
+[redecentralize](http://redecentralize.org/) the web. We discussed the past,
+present, and future, compared projects and protocols - including
 [my own little ditty on the IndieWeb](https://indiewebcamp.com/events/2016-06-09-dwebsummit-indieweb) -
 and debated what to do next. It was great.
 
@@ -67,16 +66,15 @@ catalyzing action, that definitely matters.
 
 Second, there was a _lot_ of talk about real world problems like UX and
 monetization. People widely acknowledged that P2P projects still aren't usable
-or accessible enough, and don't always address real user problems, which is
-probably why they haven't hit the mainstream yet. (Skype and BitTorrent are
-notable exceptions.)
+or accessible enough and don't always address real user problems, which may
+be why they haven't hit the mainstream yet, Skype and BitTorrent notwithstanding.
 
 Also, despite the usual appeals to micropayments and transaction fees, most
 people admitted that we still don't know how to sustainably pay for systems
 without centralized control. The honesty was very encouraging. The first step is
 admitting we have a problem!
 
-<p class="third right">
+<p class="half right">
  <a href="http://boingboing.net/2016/06/09/how-will-we-keep-the-decentral.html">
   <img class="shadow" src="/decentralized_web_cory_doctorow.jpg" /></a></p>
 
