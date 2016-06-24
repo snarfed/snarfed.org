@@ -55,7 +55,8 @@ The MC called us [OGs](https://en.wikipedia.org/wiki/Original_gangster) and
 New Gs, drawn together by a common desire to
 [redecentralize](http://redecentralize.org/) the web. We discussed the past,
 present, and future, compared projects and protocols - including
-[my own little ditty on the IndieWeb](https://indiewebcamp.com/events/2016-06-09-dwebsummit-indieweb) -
+[my own little ditty on the IndieWeb](https://indiewebcamp.com/events/2016-06-09-dwebsummit-indieweb)
+((video](https://archive.org/details/DecentralizedWeb20160609pt1?start=8826)) -
 and debated what to do next. It was great.
 
 My first big takeaway was that the community seems to be maturing. Just by
@@ -107,9 +108,9 @@ worked surprisingly well for a surprisingly long time, but failures like
 [CA compromises](https://tech.slashdot.org/story/11/10/28/1954201/four-cas-have-been-compromised-since-june)
 and [BGP hijacking](http://research.dyn.com/2008/02/pakistan-hijacks-youtube-1/)
 have exposed their inherent flaws. Projects like
-[Certificate Transparency](https://www.certificate-transparency.org/) and
-similar projects are laudable, but they're really just band-aids. They can
-contain damage, but they can't prevent it entirely.
+[Certificate Transparency](https://www.certificate-transparency.org/) are
+laudable, but they're really just band-aids. They can contain damage, but they
+can't prevent it entirely.
 
 <p class="third left">
  <a href="https://www.certificate-transparency.org/">
@@ -122,5 +123,9 @@ Now we do, and that's pretty damn cool.
 Don't worry, I'm not dropping everything to create a cryptocurrency or drum up
 VC funding for a blockchain startup. I have downloaded a handful of papers to
 read, though, and I may drop by Friday lunch at the Archive now and then. DWeb renewed my interest in
-[the once and future \[decentralized\] web](http://tantek.com/presentations/2014/05/indieweb/),
+[the once and future decentralized web](http://tantek.com/presentations/2014/05/indieweb/),
 and that's a good thing.
+
+<a href="https://twitter.com/internetarchive/status/741832908323708929">
+ <img class="shadow" src="/decentralized_web_group.jpg" /></a>
+
