@@ -14,6 +14,12 @@ and it's biased toward my taste. If I mark a wine <nobr><bad>,</nobr>
 I may still think it's good overall, but just doesn't match my own personal
 taste, and vice versa. I tend to drink big, sharp, spicy reds.
 
+<!--
+At one point, I mass converted wine names to have varietal before designation
+(e.g. XYZ Vineyard) with this Emacs regexp replace:
+\( ?\)\([^0-9[]+\) \(Cabernet Sauvignon\|Malbec\|Pinot Noir\|Chardonnay\|Zinfandel\|Sauvignon Blanc\|Petite Sirah\|Syrah\|Burgundy\|Merlot\|Riesling\|Tempranillo\|Grenache\|Meritage\|Cabernet Franc\|Châteauneuf-du-Pape\|Mourvèdre\|Viognier\|Côtes du Rhône\)
+\1\3 \2
+-->
 <a name="to_try"></a>
 **To try**:
 
@@ -34,7 +40,7 @@ Cabernet Sauvignon
 <span title="recommended by alexis">
 [Roots Run Deep](http://www.rootsrundeep.com/)
 (Napa, California)  
-[Educated Guess](http://www.rootsrundeep.com/educated_guess.html) Cabernet Sauvignon
+[Cabernet Sauvignon Educated Guess](http://www.rootsrundeep.com/educated_guess.html)
 </span>
 
 <span title="">
@@ -91,13 +97,13 @@ Pinot Noir
 
 <span title="recommended by dan meredith and nadav">
 L'Hiver (Mendocino, California)  
-2006 [Copain Syrah](http://www.snooth.com/wine/copain-syrah-l-hiver-mendocino-california-wine-2006/)
+2006 [Syrah Copain](http://www.snooth.com/wine/copain-syrah-l-hiver-mendocino-california-wine-2006/)
 </span>
 
 <span title="recommended by kieran: http://twitter.com/amazonk/statuses/9087521936">
 [Château St. Jean](http://www.chateaustjean.com/)
 (Sonoma, California)  
-1996 [Cinq Cépages Cabernet Sauvignon](http://www.chateaustjean.com/stjean/catalog/view_product.jsp?product_id=1422&cat_id=1003)
+1996 [Cabernet Sauvignon Cinq Cépages](http://www.chateaustjean.com/stjean/catalog/view_product.jsp?product_id=1422&cat_id=1003)
 </span>
 
 <span title="recommended by kieran: http://twitter.com/amazonk/statuses/8392549504">
@@ -126,7 +132,7 @@ L'Hiver (Mendocino, California)
 <span title="gina brought this to my place with sushi before cirque du soleil ovo">
 [Domaine Giraud](http://www.domainegiraud.fr/)
 (Rhône, France)  
-2000 ["Les Gallimardes" Châteauneuf-du-Pape](http://www.domainegiraud.fr/gallimardes.html)
+2000 [Châteauneuf-du-Pape "Les Gallimardes"](http://www.domainegiraud.fr/gallimardes.html)
 </span>
 
 
@@ -135,7 +141,7 @@ L'Hiver (Mendocino, California)
 
 <span title="family jackson hole vacation, 6/2016; gina liked this!">
 [Sobon Estate](http://sobonwine.com/)
-[2013 Rocky Top Zinfandel](http://www.cellartracker.com/wine.asp?iWine=2253443)
+[2013 Zinfandel Rocky Top](http://www.cellartracker.com/wine.asp?iWine=2253443)
 <good>
 </span>
 
@@ -165,15 +171,15 @@ L'Hiver (Mendocino, California)
 <span title="wine tasting w/edward, nathan, and aaron simons, 3/27/2015">
 [Arista](http://www.aristawinery.com/)
 (Sonoma, California)  
-2013 [Russian River Chardonnay](http://www.cellartracker.com/wine.asp?iWine=1781082)
+2013 [Chardonnay Russian River](http://www.cellartracker.com/wine.asp?iWine=1781082)
 <good>,
-2013 [Russian River Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1718131)
+2013 [Pinot Noir Russian River](http://www.cellartracker.com/wine.asp?iWine=1718131)
 <ok>,
-[2013 Anderson Valley Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1978989)
+[2013 Pinot Noir Anderson Valley](http://www.cellartracker.com/wine.asp?iWine=1978989)
 <good>,
-2013 [Longbow Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1718130)
+2013 [Pinot Noir Longbow](http://www.cellartracker.com/wine.asp?iWine=1718130)
 <good>,
-2013 [Banfield Zinfandel](http://www.cellartracker.com/wine.asp?iWine=1896099)
+2013 [Zinfandel Banfield](http://www.cellartracker.com/wine.asp?iWine=1896099)
 <good>
 </span>
 
@@ -233,7 +239,7 @@ Cacina Dardi Bussia
 
 <span title="dinner at atelier crenn w/david and alexis, 8/9/2013">
 [Gros Ventre](http://www.grosventrecellars.com/)
-[2011 Cerise Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1612954)
+[2011 Pinot Noir Cerise](http://www.cellartracker.com/wine.asp?iWine=1612954)
 <good>
 </span>
 
@@ -268,9 +274,9 @@ Cacina Dardi Bussia
 <span title="scotland/ireland cruise">
 [Nickel & Nickel](http://www.nickelandnickel.com/)
 (Sonoma, California)  
-[2003 Ponzo Vineyard Zinfandel](http://www.cellartracker.com/wine.asp?iWine=190987)
+[2003 Zinfandel Ponzo Vineyard](http://www.cellartracker.com/wine.asp?iWine=190987)
 <good>,
-[2002 Vogt Vineyard Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=105913)
+[2002 Cabernet Sauvignon Vogt Vineyard](http://www.cellartracker.com/wine.asp?iWine=105913)
 <good>
 </span>
 
@@ -290,7 +296,7 @@ Cacina Dardi Bussia
 
 <span title="thanksgiving at cloud house 11/23/2012">
 [Rotta](http://www.rottawinery.com/)
-[2007 Giubini Vineyard Estate Zinfandel](https://www.cellartracker.com/wine.asp?iWine=1110564)
+[2007 Zinfandel Giubini Vineyard Estate](https://www.cellartracker.com/wine.asp?iWine=1110564)
 <good>
 </span>
 
@@ -328,7 +334,7 @@ Cacina Dardi Bussia
 <span title="home 9/17/2012">
 [Robert Mondavi](http://www.robertmondavi.com/)
 (Napa, California)  
-[2006 Oakville Cabernet Sauvignon](https://www.cellartracker.com/wine.asp?iWine=684257)
+[2006 Cabernet Sauvignon Oakville](https://www.cellartracker.com/wine.asp?iWine=684257)
 <ok>
 </span>
 
@@ -415,35 +421,35 @@ Fornacella
 
 <span title="dinner at kieran/denise's 6/15/2012">
 [Trisaetum](http://trisaetum.com/)
-[2009 "Artist Series No. 8" Pinot Noir](http://trisaetum.com/shop/our-wines/2009-artist-series-no-8-pinot-noir/)
+[2009 Pinot Noir "Artist Series No. 8"](http://trisaetum.com/shop/our-wines/2009-artist-series-no-8-pinot-noir/)
 <bad>
 </span>
 
 <span title="at david & alexis's 5/27/2012">
 [Domaine Armand Rousseau](http://www.domaine-rousseau.com/)
 (Burgundy, France)  
-[2002 Clos St. Jacques Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=27912)
+[2002 Pinot Noir Clos St. Jacques](http://www.cellartracker.com/wine.asp?iWine=27912)
 <ok>
 </span>
 
 <span title="dinner at club med, 5/7/2012">
 [Rodney Strong](http://www.rodneystrong.com/) (Sonoma, California)  
-[2010 Russian River Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1329499)
+[2010 Pinot Noir Russian River](http://www.cellartracker.com/wine.asp?iWine=1329499)
 <good>
 </span>
 
 <span title="dinner w/david and alexis 5/2/2012">
 [Wren Hop](http://www.wrenhop.com/)
-[2009 Omens & Prophecy Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1116850)
+[2009 Pinot Noir Omens & Prophecy](http://www.cellartracker.com/wine.asp?iWine=1116850)
 <ok>,
-[2009 Siren's Lure Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1117230)
+[2009 Pinot Noir Siren's Lure](http://www.cellartracker.com/wine.asp?iWine=1117230)
 <ok>
 </span>
 
 <span title="dinner w/jane and derek at perilla in nyc, 4/27/2012">
 [Sky](http://www.skyvineyards.com/)
 (Napa, California)  
-[2007 Mt. Veeder Zinfandel](http://www.cellartracker.com/wine.asp?iWine=1116101)
+[2007 Zinfandel Mt. Veeder](http://www.cellartracker.com/wine.asp?iWine=1116101)
 <bad>
 </span>
 
@@ -464,7 +470,7 @@ Château Pineraie
 <span title="the strand hotel rooftop bar in nyc w/gina 4/24/2012">
 Bodegas Salentein
 (Mendoza, Argentina)  
-[2011 "El Portillo" Malbec](http://www.cellartracker.com/wine.asp?iWine=1334886)
+[2011 Malbec "El Portillo"](http://www.cellartracker.com/wine.asp?iWine=1334886)
 <bad>
 </span>
 
@@ -519,14 +525,14 @@ Villa Artimino
 <span title="gina's birthday dinner at campton place, 1/28/2012">
 [Joh. Jos. Prüm](http://www.jjpruem.com/)
 (Germany)  
-[2008 Kabinett Graacher Himmelreich Riesling](http://www.cellartracker.com/wine.asp?iWine=708150)
+[2008 Riesling Kabinett Graacher Himmelreich](http://www.cellartracker.com/wine.asp?iWine=708150)
 <good>
 </span>
 
 <span title="gina's birthday dinner at campton place, 1/28/2012">
 [Bouchard Père Et Fils](http://www.bouchard-pereetfils.com/)
 (Burgundy, France)  
-[2008 Beaune De Château 1er Cru Chardonnay](http://www.cellartracker.com/wine.asp?iWine=898064)
+[2008 Chardonnay Beaune De Château 1er Cru](http://www.cellartracker.com/wine.asp?iWine=898064)
 <ok>
 </span>
 
@@ -540,20 +546,20 @@ Villa Artimino
 <span title="gina's birthday dinner at campton place, 1/28/2012">
 Domaine Michel Gay et Fils
 (Burgundy, France)  
-[2007 Chorey-Les-Beaune "Vielles Vignes" Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=912993)
+[2007 Pinot Noir Chorey-Les-Beaune "Vielles Vignes"](http://www.cellartracker.com/wine.asp?iWine=912993)
 <bad>
 </span>
 
 <span title="gina's birthday dinner at campton place, 1/28/2012">
 [Bodega Colome](http://www.bodegacolome.com/)
 (Salta, Argentina)  
-[2009 Calchaquies Malbec](http://www.cellartracker.com/wine.asp?iWine=1218618)
+[2009 Malbec Calchaquies](http://www.cellartracker.com/wine.asp?iWine=1218618)
 <ok>
 </span>
 
 <span title="">
 [Skewis](http://www.skewis.com/)
-[2008 "Peters Vineyard" Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=969263)
+[2008 Pinot Noir "Peters Vineyard"](http://www.cellartracker.com/wine.asp?iWine=969263)
 <good>
 </span>
 
@@ -599,31 +605,31 @@ Terres De Velle, Domaine des Monthélie
 <ok>,
 [2009 Grenache](http://www.cellartracker.com/wine.asp?iWine=1252393)
 <ok>,
-[2008 Cortina Zinfandel](http://www.cellartracker.com/wine.asp?iWine=1086703)
+[2008 Zinfandel Cortina](http://www.cellartracker.com/wine.asp?iWine=1086703)
 <good>,
-[2009 Rockpile Zinfandel](http://www.cellartracker.com/wine.asp?iWine=1124692)
+[2009 Zinfandel Rockpile](http://www.cellartracker.com/wine.asp?iWine=1124692)
 <bad>,
 2008 Ommagio
 <ok>,
-[2007 Home Ranch Petite Sirah](http://www.cellartracker.com/wine.asp?iWine=774797)
+[2007 Petite Sirah Home Ranch](http://www.cellartracker.com/wine.asp?iWine=774797)
 <ok>,
 [2008 Venom](http://www.cellartracker.com/wine.asp?iWine=1217352)
 <good>,
-[2008 Il Cinghiale Petite Sirah](http://www.cellartracker.com/wine.asp?iWine=1251333)
+[2008 Petite Sirah Il Cinghiale](http://www.cellartracker.com/wine.asp?iWine=1251333)
 <good>
 </span>
 
 <span title="kieran and denise's baby shower, 11/5/2011">
 [Domaine Serene](http://domaineserene.com/)
 (Oregon, Willamette Valley)  
-[2007 Yamhill Cuvée Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=769043)
+[2007 Pinot Noir Yamhill Cuvée](http://www.cellartracker.com/wine.asp?iWine=769043)
 <ok>
 </span>
 
 <span title="dinner before symphony w/gina, nathan, lauren, and nathan's family, 10/28/2011">
 [Silver Mountain](http://www.silvermtn.com/)
 (Santa Cruz, California)  
-[2007 Estate Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=868738)
+[2007 Pinot Noir Estate](http://www.cellartracker.com/wine.asp?iWine=868738)
 <ok>
 </span>
 
@@ -636,7 +642,7 @@ Terres De Velle, Domaine des Monthélie
 
 <span title="le diner sf, 10/25/2011">
 [Testarossa](http://www.testarossa.com/) (Los Gatos, California)  
-[2009 Bien Nacido Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1167272)
+[2009 Pinot Noir Bien Nacido](http://www.cellartracker.com/wine.asp?iWine=1167272)
 <good>
 </span>
 
@@ -692,18 +698,18 @@ Bimmer
 <span title="dinner w/david, alexis, her dad john, and his gf (wife?) lorraine">
 [Lucia](http://www.luciavineyards.com/)
 (Central Coast, California)  
-[2006 Gary's Vineyard Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=489857)
+[2006 Pinot Noir Gary's Vineyard](http://www.cellartracker.com/wine.asp?iWine=489857)
 <ok>
 </span>
 
 <span title="dinner w/david, alexis, her dad john, and his gf (wife?) lorraine">
 [Shafer](http://shafervineyards.com/)
 (Napa, California)  
-[2001 25th Sunspot Vineyard Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=843560)
+[2001 Cabernet Sauvignon 25th Sunspot Vineyard](http://www.cellartracker.com/wine.asp?iWine=843560)
 <good>,
 </span>
 <span title="le diner a san francisco, 10/19/2012">
-[2002 Relentless Syrah](https://www.cellartracker.com/wine.asp?iWine=72176)
+[2002 Syrah Relentless](https://www.cellartracker.com/wine.asp?iWine=72176)
 <good>
 </span>
 
@@ -711,11 +717,11 @@ Bimmer
 <span title="emeritus wine dinner at prospect w/david and alexis, 8/29/2011, https://www.brownpapertickets.com/event/190922">
 [Emeritus](http://www.emeritusvineyards.com/)
 (Sonoma, California)  
-2009 Hallberg Ranch Pinot Noir
+2009 Pinot Noir Hallberg Ranch
 <ok>,
-[2008 Hallberg Ranch Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=769464)
+[2008 Pinot Noir Hallberg Ranch](http://www.cellartracker.com/wine.asp?iWine=769464)
 <good>,
-[2007 William Wesley Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=718251)
+[2007 Pinot Noir William Wesley](http://www.cellartracker.com/wine.asp?iWine=718251)
 <good>,
 2005 Riesling
 <ok>
@@ -724,7 +730,7 @@ Bimmer
 <span title="kauai w/gina, 8/14/2011">
 [St. Francis](http://www.stfranciswine.com/)
 (Sonoma, California)  
-[2007 Old Vines Zinfandel](http://www.cellartracker.com/wine.asp?iWine=907759)
+[2007 Zinfandel Old Vines](http://www.cellartracker.com/wine.asp?iWine=907759)
 <bad>
 </span>
 
@@ -752,7 +758,7 @@ Bimmer
 <span title="dinner w/gina, nelson, and ken at chapeau!, 8/2/2011">
 [Sean Minor](http://www.4bearswinery.com/)
 (Napa, California)  
-[2008 Four Bears Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=788433)
+[2008 Pinot Noir Four Bears](http://www.cellartracker.com/wine.asp?iWine=788433)
 <ok>
 </span>
 
@@ -773,11 +779,11 @@ Arnaud Chopin & Fils
 <span title="dinner w/siraj, malorie, gina, bruno at 25 lusk, 7/25/2012">
 [The Other Guys](http://www.togwines.com/)
 (Central Valley, California)  
-[2009 Plungerhead Zinfandel](http://www.cellartracker.com/wine.asp?iWine=1108147)
+[2009 Zinfandel Plungerhead](http://www.cellartracker.com/wine.asp?iWine=1108147)
 <bad>,
 </span>
 <span title="clara and dan's wedding, 10/1/2011">
-[2009 Leese-Fitch Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1155295)
+[2009 Pinot Noir Leese-Fitch](http://www.cellartracker.com/wine.asp?iWine=1155295)
 <bad>
 </span>
 
@@ -791,14 +797,14 @@ Arnaud Chopin & Fils
 <span title="w/gina 7/22/2011">
 [Familia Zuccardi](http://www.familiazuccardi.com/home_en.php)
 (Mendoza, Argentina)  
-[2009 Santa Julia Bonarda](http://www.cellartracker.com/wine.asp?iWine=768042)
+[2009 Bonarda Santa Julia](http://www.cellartracker.com/wine.asp?iWine=768042)
 <bad>
 </span>
 
 <span title="dinner w/david and alexis at saison, 7/16/2011">
 [Radio-Coteau](http://www.radiocoteau.com/)
 (Sonoma, California)  
-[2005 Alberigi Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=314538)
+[2005 Pinot Noir Alberigi](http://www.cellartracker.com/wine.asp?iWine=314538)
 <good>
 </span>
 
@@ -851,7 +857,7 @@ Clos Pissarra (Priorat, Spain)
 <ok>,
 2008 Riesling
 <good>,
-[2000 Thatcher Merlot](http://www.cellartracker.com/wine.asp?iWine=257960)
+[2000 Merlot Thatcher](http://www.cellartracker.com/wine.asp?iWine=257960)
 <ok>,
 [2002 Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=432986)
 <ok>,
@@ -889,14 +895,14 @@ Green Groves (Sonoma, California)
 <span title="dinner w/gina at b restaurant in yerba buena, 5/26/2011">
 [Nine North](http://www.ninenorthwines.com/)
 (North Coast, California)  
-[2007 Rock & Vine Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=856657)
+[2007 Cabernet Sauvignon Rock & Vine](http://www.cellartracker.com/wine.asp?iWine=856657)
 <ok>
 </span>
 
 <span title="dinner at sons & daughters w/gina 5/23/2011; gina: green">
 Domaine Michel Gay et Fils
 (Burgundy, France)  
-[2006 "Vielles Vignes" Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1013522)
+[2006 Pinot Noir "Vielles Vignes"](http://www.cellartracker.com/wine.asp?iWine=1013522)
 <ok>
 </span>
 
@@ -959,13 +965,13 @@ Castella del Poggio (Piedmont, Italy)
 
 <span title="chenery park w/gina after the symphony, 4/29/2011">
 [Hahn Family](http://hahnfamilywines.com/) (Central California)  
-[2006 Cycles Falcon Zinfandel](http://store.hahnfamilywines.com/Cycles_Falcon_Zinfandel_2006)
+[2006 Zinfandel Cycles Falcon](http://store.hahnfamilywines.com/Cycles_Falcon_Zinfandel_2006)
 <good>
 </span>
 
 <span title="chenery park w/gina after the symphony, 4/29/2011">
 Frederic Esmonin (Burgundy, France)  
-[2007 Gevrey-Chambertin "Clos Prieur" Burgundy](http://www.cellartracker.com/wine.asp?iWine=878631)
+[2007 Burgundy Gevrey-Chambertin "Clos Prieur"](http://www.cellartracker.com/wine.asp?iWine=878631)
 <bad>
 </span>
 
@@ -989,15 +995,15 @@ Frederic Esmonin (Burgundy, France)
 
 <span title="dinner at boulevard w/gina, david, and alexis">
 [Bevan](http://www.bevancellars.com/) (Santa Rosa, California)  
-[2008 David's Cuvée Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=921780)
+[2008 Cabernet Sauvignon David's Cuvée](http://www.cellartracker.com/wine.asp?iWine=921780)
 <good>,
-[2008 Alexis' Cuvée Merlot](http://www.cellartracker.com/wine.asp?iWine=921781)
+[2008 Merlot Alexis' Cuvée](http://www.cellartracker.com/wine.asp?iWine=921781)
 <good>,
 </span>
 <span title="dinner at david/alexis's with russell and victoria bevan">
-2009 Bab's Cabernet Sauvignon
+2009 Cabernet Sauvignon Bab's
 <good>,
-2009 Julie's Cabernet Sauvignon
+2009 Cabernet Sauvignon Julie's
 <good>,
 2009 Ontogeney (blend)
 <good>,
@@ -1091,7 +1097,7 @@ Frederic Esmonin (Burgundy, France)
 <span title="dinner w/john and julie during LA trip w/gina, 3/28/2011">
 [Beringer](http://www.beringer.com/)
 (Sonoma, California)  
-[2008 Knights Valley Cab](http://www.cellartracker.com/wine.asp?iWine=1053947)
+[2008 Cabernet Sauvignon Knights Valley](http://www.cellartracker.com/wine.asp?iWine=1053947)
 <good>,
 </span>
 <span title="kauai w/gina, siraj, malorie, 8/19/2011">
@@ -1101,16 +1107,16 @@ Frederic Esmonin (Burgundy, France)
 
 <span title="dinner w/gina at alexis and dave's, 3/19/2011">
 [Schrader](http://www.schradercellars.com/) (Napa, California)  
-[2007 "Old Sparky" Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=665203)
+[2007 Cabernet Sauvignon "Old Sparky"](http://www.cellartracker.com/wine.asp?iWine=665203)
 <good>
 <good>,
 </span>
 <span title="dinner at david/alexis's with russell and victoria bevan">
-[2008 RBS Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=860946)
+[2008 Cabernet Sauvignon RBS](http://www.cellartracker.com/wine.asp?iWine=860946)
 <good>,
 </span>
 <span title="dinner w/david/alexis at 3rd cousin popup, 10/30/2014">
-[2010 Schrader Beckstoffer To-Kalon Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=1271597)  
+[2010 Cabernet Sauvignon Schrader Beckstoffer To-Kalon](http://www.cellartracker.com/wine.asp?iWine=1271597)  
 <good>
 </span>
 
@@ -1122,33 +1128,33 @@ Frederic Esmonin (Burgundy, France)
 
 <span title="sonoma/mendocino trip w/gina, 3/12-13/2011; dinner at stevenswood">
 [Esterlina](http://www.esterlinavineyards.com/) (Sonoma, California)  
-[2008 Estate Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=962425)
+[2008 Pinot Noir Estate](http://www.cellartracker.com/wine.asp?iWine=962425)
 <ok>,
-[2007 Russian River Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=923278)
+[2007 Pinot Noir Russian River](http://www.cellartracker.com/wine.asp?iWine=923278)
 <good>,
-[2006 Cole Ranch Merlot](http://www.cellartracker.com/wine.asp?iWine=962426)
+[2006 Merlot Cole Ranch](http://www.cellartracker.com/wine.asp?iWine=962426)
 <ok>,
-[2007 Janian Vineyard Syrah](http://www.cellartracker.com/wine.asp?iWine=888250)
+[2007 Syrah Janian Vineyard](http://www.cellartracker.com/wine.asp?iWine=888250)
 <good>,
-[2005 Alexander Valley Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=611119)
+[2005 Cabernet Sauvignon Alexander Valley](http://www.cellartracker.com/wine.asp?iWine=611119)
 <ok>,
-[2009 Cole Ranch Riesling](http://www.cellartracker.com/wine.asp?iWine=962424)
+[2009 Riesling Cole Ranch](http://www.cellartracker.com/wine.asp?iWine=962424)
 <good>
 </span>
 
 <span title="sonoma/mendocino trip w/gina, 3/12-13/2011; dinner at applewood">
 [Dutch Bill](http://www.heintzvineyards.com/html/dbc.htm) (Sonoma, California)  
-[2008 Creek Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=997486)
+[2008 Pinot Noir Creek](http://www.cellartracker.com/wine.asp?iWine=997486)
 <good>
 </span>
 
 <span title="sonoma/mendocino trip w/gina, 3/12-13/2011">
 [De Loach](http://www.deloachvineyards.com/) (Sonoma, California)  
-2010 Estate Pinot Noir
+2010 Pinot Noir Estate
 <ok>,
-2010 Durell Pinot Noir
+2010 Pinot Noir Durell
 <ok>,
-2010 Van Der Kamp Pinot Noir
+2010 Pinot Noir Van Der Kamp
 <bad>,
 [2008 Chardonnay](http://www.cellartracker.com/wine.asp?iWine=840309)
 <ok>,
@@ -1160,21 +1166,21 @@ Frederic Esmonin (Burgundy, France)
 
 <span title="sonoma/mendocino trip w/gina, 3/12-13/2011">
 [Benovia](http://www.benoviawinery.com/) (Sonoma, California)  
-[2009 Sonoma Chardonnay](http://www.cellartracker.com/wine.asp?iWine=1106375)
+[2009 Chardonnay Sonoma](http://www.cellartracker.com/wine.asp?iWine=1106375)
 <good>,
-[2009 La Pommeraie Chardonnay](http://www.cellartracker.com/wine.asp?iWine=860967)
+[2009 Chardonnay La Pommeraie](http://www.cellartracker.com/wine.asp?iWine=860967)
 <good>,
-[2008 Bella Una Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=707230)
+[2008 Pinot Noir Bella Una](http://www.cellartracker.com/wine.asp?iWine=707230)
 <good>,
-2008 La Pommeraie Pinot Noir
+2008 Pinot Noir La Pommeraie
 <good>,
-[2008 Sonoma Coast Zinfandel](http://www.cellartracker.com/wine.asp?iWine=913106)
+[2008 Zinfandel Sonoma Coast](http://www.cellartracker.com/wine.asp?iWine=913106)
 <ok>,
-[2009 Sonoma Coast Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1093262)
+[2009 Pinot Noir Sonoma Coast](http://www.cellartracker.com/wine.asp?iWine=1093262)
 <ok>,
-[2008 Russian River Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1093010)
+[2008 Pinot Noir Russian River](http://www.cellartracker.com/wine.asp?iWine=1093010)
 <ok>,
-[2010 Russian River Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1093264)
+[2010 Pinot Noir Russian River](http://www.cellartracker.com/wine.asp?iWine=1093264)
 <good>
 </span>
 
@@ -1182,45 +1188,45 @@ Frederic Esmonin (Burgundy, France)
 [Martin Ray](http://www.martinray-winery.com/) (Sonoma, California)  
 [2009 Chardonnay](http://www.cellartracker.com/wine.asp?iWine=897708)
 <good>,
-[2009 Angeline Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=996603)
+[2009 Pinot Noir Angeline](http://www.cellartracker.com/wine.asp?iWine=996603)
 <bad>,
-2009 Angeline Cabernet Sauvignon
+2009 Cabernet Sauvignon Angeline
 <good>,
-[2009 Santa Barbara Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1071360)
+[2009 Pinot Noir Santa Barbara](http://www.cellartracker.com/wine.asp?iWine=1071360)
 <ok>,
 [2009 Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=1046614)
 <ok>,
-2010 Reserve Carneros Pinot Noir
+2010 Pinot Noir Reserve Carneros
 <bad>,
-2009 Reserve Stags Leap Cabernet Sauvignon
+2009 Cabernet Sauvignon Reserve Stags Leap
 <ok>,
-2008 Reserve Santa Cruz Cabernet Sauvignon
+2008 Cabernet Sauvignon Reserve Santa Cruz
 <ok>
 </span>
 
 <span title="at gina's, 3/9/2011">
 [Bouchaine](http://www.bouchaine.com/) (Napa, California)  
-[2006 Carneros Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=556798)
+[2006 Pinot Noir Carneros](http://www.cellartracker.com/wine.asp?iWine=556798)
 <ok>
 </span>
 
 <span title="at piqueos w/gina before symphony, 3/4/2011">
 [Bodegas Arúspide](http://www.aruspide.com/) (Castilla, Spain)  
-[2008 Ardales Tempranillo](http://www.cellartracker.com/wine.asp?iWine=651245)
+[2008 Tempranillo Ardales](http://www.cellartracker.com/wine.asp?iWine=651245)
 <ok>
 </span>
 
 <span title="tasting w/gina 2/20/2011">
 [Red Car](http://www.redcarwine.com/) (Sonoma, California)  
-[2009 Boxcar Chardonnay](http://www.cellartracker.com/wine.asp?iWine=1025943)
+[2009 Chardonnay Boxcar](http://www.cellartracker.com/wine.asp?iWine=1025943)
 <ok>,
-[2009 Boxcar Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1035976)
+[2009 Pinot Noir Boxcar](http://www.cellartracker.com/wine.asp?iWine=1035976)
 <ok>,
-[2008 The Aphorist Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=779461)
+[2008 Pinot Noir The Aphorist](http://www.cellartracker.com/wine.asp?iWine=779461)
 <ok>,
-[2008 Boxcar Syrah](http://www.cellartracker.com/wine.asp?iWine=1012415)
+[2008 Syrah Boxcar](http://www.cellartracker.com/wine.asp?iWine=1012415)
 <bad>,
-[2007 Cuvée 22 Syrah](http://www.cellartracker.com/wine.asp?iWine=616558)
+[2007 Syrah Cuvée 22](http://www.cellartracker.com/wine.asp?iWine=616558)
 <bad>
 </span>
 
@@ -1239,33 +1245,33 @@ Frederic Esmonin (Burgundy, France)
 <good>,
 </span>
 <span title="dinner w/david and alexis at saison, 7/16/2011">
-[2006 Willow Creek Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=469673)
+[2006 Pinot Noir Willow Creek](http://www.cellartracker.com/wine.asp?iWine=469673)
 <ok>
 </span>
 
 <span title="dinner w/gina, alexis, and dave at benu 2/4/2011">
 [Sine Qua Non](http://en.wikipedia.org/wiki/Sine_Qua_Non_%28wine%29) (California)  
-[2002 "More than a Number" Grenache](http://www.cellartracker.com/wine.asp?iWine=28425)
+[2002 Grenache "More than a Number"](http://www.cellartracker.com/wine.asp?iWine=28425)
 <good>,
 </span>
 <span title="dinner w/david, alexis, her dad john, and his gf (wife?) lorraine">
-[2005 "The 17th Nail in My Cranium" Syrah](http://www.cellartracker.com/wine.asp?iWine=605646)
+[2005 Syrah "The 17th Nail in My Cranium"](http://www.cellartracker.com/wine.asp?iWine=605646)
 <good>,
 </span>
 <span title="dinner w/david and alexis, 4/7/2012">
-[2009 "The Thrill of..." Syrah](http://www.cellartracker.com/wine.asp?iWine=1195629)
+[2009 Syrah "The Thrill of..."](http://www.cellartracker.com/wine.asp?iWine=1195629)
 <ok>,
-[2007 "Pictures" Grenache](http://www.cellartracker.com/wine.asp?iWine=727844)
+[2007 Grenache "Pictures"](http://www.cellartracker.com/wine.asp?iWine=727844)
 <ok>,
 </span>
 <span title="dinner w/david and alexis 5/2/2012">
-[2002 "Just For the Love of It" Syrah](http://www.cellartracker.com/wine.asp?iWine=28426)
+[2002 Syrah "Just For the Love of It"](http://www.cellartracker.com/wine.asp?iWine=28426)
 <good>,
 </span>
 <span title="from david/alexis 11/10/2012">
-[2008 "The Duel" Grenache](https://www.cellartracker.com/wine.asp?iWine=1315141)
+[2008 Grenache "The Duel"](https://www.cellartracker.com/wine.asp?iWine=1315141)
 <ok>,
-[2008 "The Duel" Syrah](https://www.cellartracker.com/wine.asp?iWine=1315133)
+[2008 Syrah "The Duel"](https://www.cellartracker.com/wine.asp?iWine=1315133)
 <good>
 </span>
 
@@ -1312,14 +1318,14 @@ Bodegas Tierras de Peñafiel
 
 <span title="at gina's before going to dinner at lolo's and dancing w/siraj and mallory, 1/22/2011">
 [Trader Joe's](http://www.traderjoes.com/)  
-[2008 Grand Reserve Meritage](http://www.cellartracker.com/wine.asp?iWine=1025426)
+[2008 Meritage Grand Reserve](http://www.cellartracker.com/wine.asp?iWine=1025426)
 (by Maxwell Creek, Napa, California)
 <good>
 </span>
 
 <span title="at red & white w/gina before the symphony, 1/21/2011">
 [Kenefick Ranch](http://www.kenefickranch.com/) (Napa, California)  
-[2005 Caitlin's Select Cabernet Franc](http://www.cellartracker.com/wine.asp?iWine=625379)
+[2005 Cabernet Franc Caitlin's Select](http://www.cellartracker.com/wine.asp?iWine=625379)
 <ok>
 </span>
 
@@ -1330,7 +1336,7 @@ Bodegas Tierras de Peñafiel
 </span>
 
 <span title="at red & white w/gina before the symphony, 1/21/2011">
-[2008 Gravity Malbec](http://www.thewineclub.com/r/products/gravity-malbec-2008)
+[2008 Malbec Gravity](http://www.thewineclub.com/r/products/gravity-malbec-2008)
 <bad>
 </span>
 
@@ -1362,32 +1368,32 @@ Bodegas Tierras de Peñafiel
 
 <span title="clara's birthday dinner at contigo, 1/11/2011">
 [Buil & Giné](http://www.builgine.com/) (Catalunya, Spain)  
-[2007 17-XI Montsant](http://www.cellartracker.com/wine.asp?iWine=921983)
+[2007 Montsant 17-XI](http://www.cellartracker.com/wine.asp?iWine=921983)
 <good>
 </span>
 
 <span title="clara's birthday dinner at contigo, 1/11/2011">
 [Viña Santa Marina](http://www.vsantamarina.com/) (Extremadura, Spain)  
-[2005 Gárgola Tempranillo](http://www.cellartracker.com/wine.asp?iWine=377256)
+[2005 Tempranillo Gárgola](http://www.cellartracker.com/wine.asp?iWine=377256)
 <good>
 </span>
 
 <span title="dsg (w/clayton!) at prospect, 1/9/2011">
 [Robert Sinskey](http://www.robertsinskey.com/) (Napa, California)  
-[2005 Vandal Vineyards Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=587496)
+[2005 Pinot Noir Vandal Vineyards](http://www.cellartracker.com/wine.asp?iWine=587496)
 <good>
 </span>
 
 <span title="candybar w/gina, jen, mark, 1/6/2010">
 [Domaine Jean Bousquet](http://www.jeanbousquet.com/) (Mendoza, Argentina)  
-[2009 Finca Lalande Malbec](http://www.cellartracker.com/list.asp?Table=List&Varietal=Malbec)
+[2009 Malbec Finca Lalande](http://www.cellartracker.com/list.asp?Table=List&Varietal=Malbec)
 <bad>
 </span>
 
 <span title="candybar w/gina, jen, mark, 1/6/2010">
 [Zynthesis](http://zynthesis.com/)
 (Central California)  
-[2009 Old Vine Zinfandel](http://www.cellartracker.com/wine.asp?iWine=919448)
+[2009 Zinfandel Old Vine](http://www.cellartracker.com/wine.asp?iWine=919448)
 <bad>
 </span>
 
@@ -1414,23 +1420,23 @@ Bodegas Tierras de Peñafiel
 <span title="dinner w/gina at twenty five lusk, 12/28/2010">
 [Merry Edwards](http://www.merryedwards.com/)
 (Sonoma, California)  
-[2008 Russian River Valley Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=914266)
+[2008 Pinot Noir Russian River Valley](http://www.cellartracker.com/wine.asp?iWine=914266)
 <ok>
 </span>
 
 <span title="at gina's, 12/16/2010">
 [Domaine Carneros](http://www.domaine.com/) (Napa, California)  
-[2008 Avant Garde Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=824590)
+[2008 Pinot Noir Avant Garde](http://www.cellartracker.com/wine.asp?iWine=824590)
 <ok>,
 </span>
 <span title="dinner at plant embarcadero w/kieran and denise, 5/7/2011">
-[2008 Carneros Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=940616)
+[2008 Pinot Noir Carneros](http://www.cellartracker.com/wine.asp?iWine=940616)
 <bad>
 </span>
 
 <span title="at siraj and mallorie's xmas party, 12/11/2010, from virgin wine club">
 Opi aka Rodolfo Sadler (Mendoza, Argentina)  
-[2009 Route 40 Malbec](http://www.cellartracker.com/wine.asp?iWine=1017510)
+[2009 Malbec Route 40](http://www.cellartracker.com/wine.asp?iWine=1017510)
 <good>
 </span>
 
@@ -1474,13 +1480,13 @@ Les Arbousiers (Languedoc, France)
 
 <span title="hotel biron wine bar w/gina, 12/1/2010">
 [Quivira](http://www.quivirawine.com/) (Sonoma, California)  
-[2007 Dry Creek Zinfandel](http://www.cellartracker.com/wine.asp?iWine=786583)
+[2007 Zinfandel Dry Creek](http://www.cellartracker.com/wine.asp?iWine=786583)
 <bad>
 </span>
 
 <span title="hotel biron wine bar w/gina, 12/1/2010">
 [Brooks](http://www.brookswine.com/) (Willamette Valley, Oregon)  
-[2008 Runaway Red Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=802154)
+[2008 Pinot Noir Runaway Red](http://www.cellartracker.com/wine.asp?iWine=802154)
 <bad>
 </span>
 
@@ -1498,23 +1504,23 @@ Les Arbousiers (Languedoc, France)
 
 <span title="dinner w/gina, alexis, and david at range, 11/23/2010">
 [Eric Kent](http://www.erickentwines.com/) (Sonoma, California)  
-[2005 Stiling Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=338850)
+[2005 Pinot Noir Stiling](http://www.cellartracker.com/wine.asp?iWine=338850)
 <good>
 </span>
 
 <span title="dinner w/gina, alexis, and david at range, 11/23/2010">
 [Sea Smoke](http://www.seasmokecellars.com/) (Central Coast, California)  
-[2005 Southing Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=339131)
+[2005 Pinot Noir Southing](http://www.cellartracker.com/wine.asp?iWine=339131)
 <good>,
 </span>
 <span title="at david & alexis's 5/27/2012">
-[2002 "Ten" Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=29504)
+[2002 Pinot Noir "Ten"](http://www.cellartracker.com/wine.asp?iWine=29504)
 <good>
 </span>
 
 <span title="dinner for linsey's birthday at spruce w/linsey and gina, 11/26/2010">
 [Freestone](http://www.freestonevineyards.com/) (Sonoma, California)  
-[2008 Fogdog Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=883874)
+[2008 Pinot Noir Fogdog](http://www.cellartracker.com/wine.asp?iWine=883874)
 <ok>
 </span>
 
@@ -1526,15 +1532,15 @@ Les Arbousiers (Languedoc, France)
 
 <span title="sf vintners market 11/20/2010 w/gina and josh">
 [Kent Rasmussen](http://www.kentrasmussenwinery.com/) (Napa, California)  
-[2007 Estate Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=876192)
+[2007 Pinot Noir Estate](http://www.cellartracker.com/wine.asp?iWine=876192)
 <good>,
-[2007 Esoterica Petite Sirah](http://www.cellartracker.com/wine.asp?iWine=876203)
+[2007 Petite Sirah Esoterica](http://www.cellartracker.com/wine.asp?iWine=876203)
 <good>
 </span>
 
 <span title="sf vintners market 11/20/2010 w/gina and josh">
 [Peter Murphy](http://www.murphyvineyards.com/) (Sierra Foothills, California)  
-[2005 Napa Valley Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=586979)
+[2005 Cabernet Sauvignon Napa Valley](http://www.cellartracker.com/wine.asp?iWine=586979)
 <ok>,
 [2004 Syrah](http://www.cellartracker.com/wine.asp?iWine=465314)
 <ok>
@@ -1581,19 +1587,19 @@ Sticky Beak
 
 <span title="sf vintners market 11/20/2010 w/gina and josh">
 [Somerston](http://somerstonwineco.com/) (Napa, California)  
-[2008 Highflyer Pinot Noir](http://somerstonwineco.com/product/Highflyer-Pinot-Noir-08)
+[2008 Pinot Noir Highflyer](http://somerstonwineco.com/product/Highflyer-Pinot-Noir-08)
 <good>,
 [2007 Highflyer Centerline](http://somerstonwineco.com/product/Highflyer-Centerline-07)
 <ok>,
-[2007 Priest Ranch Cabernet Sauvignon](http://somerstonwineco.com/product/Priest-Ranch-Cabernet-Sauvignon-07)
+[2007 Cabernet Sauvignon Priest Ranch](http://somerstonwineco.com/product/Priest-Ranch-Cabernet-Sauvignon-07)
 <bad>
 </span>
 
 <span title="sf vintners market 11/20/2010 w/gina and josh">
 [William James](http://www.williamjamescellars.com/) (Central Coast, California)  
-[2007 Garey Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=720055)
+[2007 Pinot Noir Garey](http://www.cellartracker.com/wine.asp?iWine=720055)
 <bad>,
-[2006 Hampton Syrah](http://www.cellartracker.com/wine.asp?iWine=926701)
+[2006 Syrah Hampton](http://www.cellartracker.com/wine.asp?iWine=926701)
 <ok>
 </span>
 
@@ -1613,15 +1619,15 @@ Sticky Beak
 [Pech Merle](http://pechmerlewinery.wordpress.com/) (Sonoma, California)  
 [2008 Zinfandel](http://www.cellartracker.com/wine.asp?iWine=824576)
 <bad>,
-2008 Petite Zinfandel
+2008 Zinfandel Petite
 <ok>
 </span>
 
 <span title="sf vintners market 11/20/2010 w/gina and josh">
 [Philo Ridge](http://www.philoridge.com/) (Mendocino, California)  
-[2006 Andersen Pinot Noir](http://www.philoridge.com/pinotnior05.html)
+[2006 Pinot Noir Andersen](http://www.philoridge.com/pinotnior05.html)
 <good>,
-[2006 Medocino Zinfandel](http://www.philoridge.com/zinfandel06.html)
+[2006 Zinfandel Medocino](http://www.philoridge.com/zinfandel06.html)
 <ok>
 </span>
 
@@ -1669,7 +1675,7 @@ Sticky Beak
 
 <span title="sf vintners market 11/20/2010 w/gina and josh">
 [BellaGrace](http://bellagracevineyards.com/) (Amador, California)  
-2006 Old Vine Zinfandel
+2006 Zinfandel Old Vine
 <good>
 </span>
 
@@ -1697,10 +1703,10 @@ Sticky Beak
 [Dogwood](http://www.dogwoodcellars.com/) (Sonoma, California)  
 [2007 Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=784035)
 <good>,
-[2007 Dry Creek Zinfandel](http://www.cellartracker.com/wine.asp?iWine=883544)
+[2007 Zinfandel Dry Creek](http://www.cellartracker.com/wine.asp?iWine=883544)
 <ok>,
 Dogwood
-[2007 Mendocino Zinfandel](http://www.cellartracker.com/wine.asp?iWine=837725)
+[2007 Zinfandel Mendocino](http://www.cellartracker.com/wine.asp?iWine=837725)
 <bad>,
 [2006 Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=883951)
 <ok>
@@ -1744,13 +1750,13 @@ Nudo (Jumilla, Spain)
 
 <span title="at gina's 11/12/2010">
 [Rodney Strong](http://www.rodneystrong.com/) (Sonoma, California)  
-[2006 Knotty Vines Zinfandel](http://www.cellartracker.com/wine.asp?iWine=433499)
+[2006 Zinfandel Knotty Vines](http://www.cellartracker.com/wine.asp?iWine=433499)
 <good>
 </span>
 
 <span title="dinner at gina's 11/9/2010">
 [Preston](http://www.prestonofdrycreek.com/) (Sonoma, California)  
-[2005 Old Vine Zinfandel](http://www.cellartracker.com/wine.asp?iWine=320156)
+[2005 Zinfandel Old Vine](http://www.cellartracker.com/wine.asp?iWine=320156)
 <good>
 </span>
 
@@ -1787,7 +1793,7 @@ Nudo (Jumilla, Spain)
 
 <span title="at gina's 10/28/2010">
 [Trentadue](http://www.trentadue.com/) (Napa, California)  
-[2003 La Storia Zinfandel](http://www.cellartracker.com/wine.asp?iWine=209845)
+[2003 Zinfandel La Storia](http://www.cellartracker.com/wine.asp?iWine=209845)
 <good>
 </span>
 
@@ -1842,7 +1848,7 @@ Domaine Chante Cigale (Rhône, France)
 <span title="dinner w/gretchen at guy savoy in vegas, 10/2/2010">
 [Domaine Marc Kreydenweiss](http://www.kreydenweiss.com/)
   (Alsace, France)  
-[2007 _Andlau_ Riesling](http://www.cellartracker.com/wine.asp?iWine=684545)
+[2007 Riesling _Andlau_](http://www.cellartracker.com/wine.asp?iWine=684545)
 <good>
 </span>
 
@@ -1892,7 +1898,7 @@ Domaine Bernard Moreau et Fils
 <span title="savvy cellars wine bar w/lizzy, 9/30/2010">
 [Château Souverain](http://www.souverain.com/)
  (Sonoma, California)  
-[2006 Alexander Valley Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=911520)
+[2006 Cabernet Sauvignon Alexander Valley](http://www.cellartracker.com/wine.asp?iWine=911520)
 <good>
 </span>
 
@@ -1904,7 +1910,7 @@ Domaine Bernard Moreau et Fils
 <span title="dinner w/orkut and crew at thermidor before harlot, 7/24/2011">
 [2008 Orion](http://www.cellartracker.com/wine.asp?iWine=854754)
 <good>,
-[2008 Sirius Petite Sirah](http://www.cellartracker.com/wine.asp?iWine=938669)
+[2008 Petite Sirah Sirius](http://www.cellartracker.com/wine.asp?iWine=938669)
 <good>
 </span>
 
@@ -1916,7 +1922,7 @@ Domaine Bernard Moreau et Fils
 <span title="sino in santana row w/mike mandel, 9/16/2010">
 [Alexander Valley](http://www.avvwine.com/)
  (Sonoma, California)  
-[2008 Estate Cabernet Sauvignon](http://www.avvwine.com/scripts/display_product.php?product_id=94)
+[2008 Cabernet Sauvignon Estate](http://www.avvwine.com/scripts/display_product.php?product_id=94)
 <good>
 </span>
 
@@ -1962,7 +1968,7 @@ Clefs Des Murailles (Rhône, France)
 
 <span title="dinner w/family and barrett smith at the cloud house, 8/6/2010">
 [Renwood](http://www.renwood.com/) (Sierra Foothills, California)  
-[2005 Old Vines Zinfandel](http://www.cellartracker.com/wine.asp?iWine=526696)
+[2005 Zinfandel Old Vines](http://www.cellartracker.com/wine.asp?iWine=526696)
 <ok>
 </span>
 
@@ -1974,17 +1980,17 @@ Il Trullo (Puglia, Italy)
 
 <span title="nathan's 30th bday at press club, 7/24/2010">
 [Mount Eden](http://www.mounteden.com/) (Saratoga, California)  
-[2007 Saratoga Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=873827)
+[2007 Pinot Noir Saratoga](http://www.cellartracker.com/wine.asp?iWine=873827)
 <ok>,
 </span>
 <span title="at ventana in big sur, 2/2/2015">
-[2012 Domaine Eden Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1819245)
+[2012 Pinot Noir Domaine Eden](http://www.cellartracker.com/wine.asp?iWine=1819245)
 <good>
 </span>
 
 <span title="nathan's 30th bday at press club, 7/24/2010">
 [Miner](http://www.minerwines.com/) (Napa, California)  
-[2007 Stagecoach Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=897848)
+[2007 Cabernet Sauvignon Stagecoach](http://www.cellartracker.com/wine.asp?iWine=897848)
 <good>
 </span>
 
@@ -2009,7 +2015,7 @@ Il Trullo (Puglia, Italy)
 
 <span title="at gina's place 7/8/2010">
 [Montes](http://www.monteswines.com/english/) (Colchagua, Chile)  
-[2007 Alpha Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=916436)
+[2007 Cabernet Sauvignon Alpha](http://www.cellartracker.com/wine.asp?iWine=916436)
 <good>
 </span>
 
@@ -2023,13 +2029,13 @@ Il Trullo (Puglia, Italy)
 <span title="wine tasting w/gina 7/6/2010">
 [Dutton Goldfield](http://www.duttongoldfield.com/)
 (Sonoma, California)  
-[2008 Rued Vineyard Chardonnay](http://www.cellartracker.com/wine.asp?iWine=906165)
+[2008 Chardonnay Rued Vineyard](http://www.cellartracker.com/wine.asp?iWine=906165)
 <good>,
-[2008 Stoetz Vineyard Zinfandel](http://www.cellartracker.com/wine.asp?iWine=837404)
+[2008 Zinfandel Stoetz Vineyard](http://www.cellartracker.com/wine.asp?iWine=837404)
 <ok>,
-[2008 Morelli Lane Zinfandel](http://www.cellartracker.com/wine.asp?iWine=656557)
+[2008 Zinfandel Morelli Lane](http://www.cellartracker.com/wine.asp?iWine=656557)
 <ok>,
-[2007 Cherry Ridge Syrah](http://www.cellartracker.com/wine.asp?iWine=769099)
+[2007 Syrah Cherry Ridge](http://www.cellartracker.com/wine.asp?iWine=769099)
 <good>,
 Pinot Noir: 
 [2007 Freestone Hill](https://www.cellartracker.com/wine.asp?iWine=742984)
@@ -2048,31 +2054,31 @@ Pinot Noir:
 <span title="wine tasting w/gina 6/26/2011">
 [2010 Shop Block Pinot Blanc](http://www.cellartracker.com/wine.asp?iWine=1114672)
 <good>,
-2010 Rued Vineyard Chardonnay
+2010 Chardonnay Rued Vineyard
 <good>,
 [2010 Green Valley Gewürztraminer](http://www.cellartracker.com/wine.asp?iWine=1163062)
 <ok>,
-[2008 Cherry Ridge Syrah](http://www.cellartracker.com/wine.asp?iWine=656559)
+[2008 Syrah Cherry Ridge](http://www.cellartracker.com/wine.asp?iWine=656559)
 <ok>,
-[2009 Morelli Lane Zinfandel](http://www.cellartracker.com/wine.asp?iWine=1124520)
+[2009 Zinfandel Morelli Lane](http://www.cellartracker.com/wine.asp?iWine=1124520)
 <ok>
 </span>
 
 <span title="wine tasting w/gina 7/6/2010">
 [Château St. Jean](http://www.chateaustjean.com/) (Sonoma, California)  
-[2008 Sonoma Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=772333)
+[2008 Pinot Noir Sonoma](http://www.cellartracker.com/wine.asp?iWine=772333)
 <ok>,
-[2006 Benoist Syrah](http://www.cellartracker.com/wine.asp?iWine=738082)
+[2006 Syrah Benoist](http://www.cellartracker.com/wine.asp?iWine=738082)
 <good>,
-[2008 Lyon Vineyard Fumé Blanc](http://www.cellartracker.com/wine.asp?iWine=879630)
+[2008 Fumé Blanc Lyon Vineyard](http://www.cellartracker.com/wine.asp?iWine=879630)
 <ok>,
-[2006 Sonoma Reserve Chardonnay](http://www.cellartracker.com/wine.asp?iWine=621437)
+[2006 Chardonnay Sonoma Reserve](http://www.cellartracker.com/wine.asp?iWine=621437)
 <ok>,
-[2007 Sonoma Reserve Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=825244)
+[2007 Pinot Noir Sonoma Reserve](http://www.cellartracker.com/wine.asp?iWine=825244)
 <ok>,
-[2004 Sonoma Reserve Merlot](http://www.cellartracker.com/wine.asp?iWine=655781)
+[2004 Merlot Sonoma Reserve](http://www.cellartracker.com/wine.asp?iWine=655781)
 <ok>,
-[2006 Cinq Cépages Cabernet Sauvignon](http://www.chateaustjean.com/stjean/catalog/view_product.jsp?product_id=1422&cat_id=1003)
+[2006 Cabernet Sauvignon Cinq Cépages](http://www.chateaustjean.com/stjean/catalog/view_product.jsp?product_id=1422&cat_id=1003)
 <ok>
 </span>
 
@@ -2146,7 +2152,7 @@ Tavijin (Piedmont, Italy)
 <span title="fathers day at the cloud house, 6/20/2010">
 [Panilonco](http://www.errazuriz.com/)
 (Colchagua, Chile)  
-[2009 Merlot Malbec](http://www.cellartracker.com/wine.asp?iWine=916502)
+[2009 Malbec Merlot](http://www.cellartracker.com/wine.asp?iWine=916502)
 <good>
 </span>
 
@@ -2158,11 +2164,11 @@ Tavijin (Piedmont, Italy)
 
 <span title="sf apt w/gina 6/17/2010">
 [Ravenswood](http://www.ravenswood-wine.com/) (Sonoma, California)  
-[2006 Old Vine Zinfandel](http://www.cellartracker.com/wine.asp?iWine=562946)
+[2006 Zinfandel Old Vine](http://www.cellartracker.com/wine.asp?iWine=562946)
 <good>,
 </span>
 <span title="sf apt while playing red dead redemption, 7/30/2010">
-[2007 Vintners Blend Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=694493)
+[2007 Cabernet Sauvignon Vintners Blend](http://www.cellartracker.com/wine.asp?iWine=694493)
 <ok>
 </span>
 
@@ -2178,21 +2184,21 @@ Tavijin (Piedmont, Italy)
 
 <span title="hawaii w/gina, june 2010">
 [Francis Ford Coppola](http://www.ffcpresents.com/)  
-[2007 Black Label Claret](http://www.cellartracker.com/wine.asp?iWine=629609)
+[2007 Claret Black Label](http://www.cellartracker.com/wine.asp?iWine=629609)
 <ok>,
 </span>
 <span title="sf vintners market 11/20/2010 w/gina and josh">
-[2008 Director's Cut Zinfandel](http://www.cellartracker.com/wine.asp?iWine=1044418)
+[2008 Zinfandel Director's Cut](http://www.cellartracker.com/wine.asp?iWine=1044418)
 <good>,
-[2007 Director's Cut Cinema Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=878706)
+[2007 Cabernet Sauvignon Director's Cut Cinema](http://www.cellartracker.com/wine.asp?iWine=878706)
 <good>,
 </span>
 <span title="kauai w/gina, siraj, malorie, 8/19/2011">
-[2009 Ivory Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=1058173)
+[2009 Cabernet Sauvignon Ivory](http://www.cellartracker.com/wine.asp?iWine=1058173)
 <good>,
 </span>
 <span title="home 3/24/2012">
-[2010 Blue Label Diamond Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1286090)
+[2010 Pinot Noir Blue Label Diamond](http://www.cellartracker.com/wine.asp?iWine=1286090)
 <bad>
 </span>
 
@@ -2231,19 +2237,19 @@ Terre d'Or (Burgundy, France)
 
 <span title="red & white wine bar in glen park w/gina, 4/23/2010">
 [Handley](http://www.handleycellars.com/) (Mendocino, CA)  
-[2007 Mendocino County Pinot Noir](http://www.handleycellars.com/shop/jsp/item.jsp?itemid=372&catid=38)
+[2007 Pinot Noir Mendocino County](http://www.handleycellars.com/shop/jsp/item.jsp?itemid=372&catid=38)
 <bad>
 </span>
 
 <span title="red & white wine bar in glen park w/gina, 4/23/2010">
 [Terra Valentine](http://www.terravalentine.com/) (Napa, California)  
-[2006 Spring Mountain Cabernet Sauvignon](http://www.terravalentine.com/terravalentine/catalog/view_product.jsp?product_id=1109&cat_id=1001)
+[2006 Cabernet Sauvignon Spring Mountain](http://www.terravalentine.com/terravalentine/catalog/view_product.jsp?product_id=1109&cat_id=1001)
 <good>
 </span>
 
 <span title="red & white wine bar in glen park w/gina, 4/23/2010">
 [A Donkey And Goat](http://www.adonkeyandgoat.com/) (Berkeley, California)  
-[2008 El Dorado Syrah](http://www.adonkeyandgoat.com/wines_eldoradosyrah_2008.html)
+[2008 Syrah El Dorado](http://www.adonkeyandgoat.com/wines_eldoradosyrah_2008.html)
 <good>
 </span>
 
@@ -2283,7 +2289,7 @@ Canard Sauvage (Sonoma, California)
 <ok>,
 [2000 Cabernet Franc](http://www.silverwine.com/20cafr.html)
 <bad>,
-[2001 Mourvredre Syrah](http://www.silverwine.com/20symolavi.html)
+[2001 Syrah Mourvredre](http://www.silverwine.com/20symolavi.html)
 <ok>,
 2007 Syrah
 <bad>,
@@ -2291,15 +2297,15 @@ Canard Sauvage (Sonoma, California)
 <span title="sf vintners market 11/20/2010 w/gina and josh">
 2009 Ojo Rojo
 <ok>,
-2007 Larner Vineyard Syrah-Mourvedre,
+2007 Syrah Larner Vineyard-Mourvedre,
 <ok>,
-[2007 Four Barrel Syrah](http://www.silverwines.com/shop-wines/featured-products/silver-2007-four-barrel-especial-syrah-white-hawk-vineyard-santa-barbar)
+[2007 Syrah Four Barrel](http://www.silverwines.com/shop-wines/featured-products/silver-2007-four-barrel-especial-syrah-white-hawk-vineyard-santa-barbar)
 <ok>
 </span>
 
 <span title="sf vintners market at fort mason w/gina, josh, and cynthia, 4/11/2010">
 [Merriam](http://www.merriamvineyards.com/) (Sonoma, California)  
-[2006 Jones Cabernet Franc](http://www.merriamvineyards.com/vintages/06JonesCabFranc.php)
+[2006 Cabernet Franc Jones](http://www.merriamvineyards.com/vintages/06JonesCabFranc.php)
 <bad>
 </span>
 
@@ -2335,37 +2341,37 @@ Canard Sauvage (Sonoma, California)
 
 <span title="sf vintners market at fort mason w/gina, josh, and cynthia, 4/11/2010">
 [Thomas George](http://www.thomasgeorgeestates.com/) (Sonoma, California)  
-[2007 Estate Pinot Noir](http://www.thomasgeorgeestates.com/wines_pinot.php)
+[2007 Pinot Noir Estate](http://www.thomasgeorgeestates.com/wines_pinot.php)
 <ok>,
-[2007 Allen Vineyard Pinot Noir](http://www.thomasgeorgeestates.com/wines_pinot.php)
+[2007 Pinot Noir Allen Vineyard](http://www.thomasgeorgeestates.com/wines_pinot.php)
 <good>,
 </span>
 <span title="wine tasting w/gina 6/26/2011">
 [2009 Sauvignon Musque](http://www.cellartracker.com/wine.asp?iWine=1153190)
 <bad>,
-[2009 Schmidt Viognier](http://www.cellartracker.com/wine.asp?iWine=1127737)
+[2009 Viognier Schmidt](http://www.cellartracker.com/wine.asp?iWine=1127737)
 <ok>,
-[2009 Catie's Viognier](http://www.cellartracker.com/wine.asp?iWine=955046)
+[2009 Viognier Catie's](http://www.cellartracker.com/wine.asp?iWine=955046)
 <good>,
-2009 Stuhlmuller Chardonnay
+2009 Chardonnay Stuhlmuller
 <bad>,
-[2009 Russian River Chardonnay](http://www.cellartracker.com/wine.asp?iWine=1153224)
+[2009 Chardonnay Russian River](http://www.cellartracker.com/wine.asp?iWine=1153224)
 <ok>,
-[2009 Russian River Estate Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1124404)
+[2009 Pinot Noir Russian River Estate](http://www.cellartracker.com/wine.asp?iWine=1124404)
 <ok>,
-[2008 Campbell Ranch Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1014113)
+[2008 Pinot Noir Campbell Ranch](http://www.cellartracker.com/wine.asp?iWine=1014113)
 <good>,
-[2008 Dexter's Block, Baker Ridge Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1022741)
+[2008 Pinot Noir Dexter's Block, Baker Ridge](http://www.cellartracker.com/wine.asp?iWine=1022741)
 <good>,
-[2008 Baker Ridge Estate Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=987774)
+[2008 Pinot Noir Baker Ridge Estate](http://www.cellartracker.com/wine.asp?iWine=987774)
 <ok>,
-[2008 Tre Torrente Zinfandel](http://www.cellartracker.com/wine.asp?iWine=1014110)
+[2008 Zinfandel Tre Torrente](http://www.cellartracker.com/wine.asp?iWine=1014110)
 <bad>,
 </span>
 <span title="wine tasting w/gina 3/1/2012">
-[2009 Starr Ridge Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1156447)
+[2009 Pinot Noir Starr Ridge](http://www.cellartracker.com/wine.asp?iWine=1156447)
 <good>,
-[2009 Cresta Ridge Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1157328)
+[2009 Pinot Noir Cresta Ridge](http://www.cellartracker.com/wine.asp?iWine=1157328)
 <good>,
 </span>
 <span title="tasting w/gina 12/2/2012">
@@ -2375,7 +2381,7 @@ Canard Sauvage (Sonoma, California)
 
 <span title="at gina's, 4/9/2010">
 [A. Rafanelli](http://arafanelliwinery.com/) (Napa, California)  
-[2005 Dry Creek Zinfandel](http://www.cellartracker.com/wine.asp?iWine=345934)
+[2005 Zinfandel Dry Creek](http://www.cellartracker.com/wine.asp?iWine=345934)
 <good>,
 </span>
 <span title="dinner w/nathan and lauren at jardiniere">
@@ -2409,13 +2415,13 @@ Shiloh Road (Paso Robles, California)
 <span title="dinner at chez papa resto before symphony w/gina and nathan, 4/2/2010">
 [Les Vignobles Mayard](http://www.vignobles-mayard.fr/1024/vignobles-mayard-le-domaine.html)
 (Rhône, France)  
-2004 [La Crau de Ma Mére Châteauneuf-du-Pape](http://www.vignobles-mayard.fr/1024/vignobles-mayard-la-crau-de-ma-mere.html)
+2004 [Châteauneuf-du-Pape La Crau de Ma Mére](http://www.vignobles-mayard.fr/1024/vignobles-mayard-la-crau-de-ma-mere.html)
 <good>
 </span>
 
 <span title="date night w/gina at amber, indian restaurant across from press club, 3/31/2010">
 [Baileyana](http://www.baileyana.com/) (San Luis Obispo, California)  
-2006 [Grand Firepeak Cuvée Syrah](http://www.baileyana.com/wines.php?id=8)
+2006 [Syrah Grand Firepeak Cuvée](http://www.baileyana.com/wines.php?id=8)
 <good>
 </span>
 
@@ -2428,19 +2434,19 @@ Shiloh Road (Paso Robles, California)
 
 <span title="sf apt w/dan, 3/27/2010">
 [Natalie's Estate](http://www.nataliesestatewinery.com/) (Willamette Valley, Oregon)  
-2007 Hillside Vineyard Cabernet Sauvignon
+2007 Cabernet Sauvignon Hillside Vineyard
 <ok>
 </span>
 
 <span title="w/gretchen at momo's, 3/22/2010">
 [Brazin](http://www.brazinwine.com/) (Lodi, California)  
-2007 [(B)Old Vine Zinfandel](http://www.brazinwine.com/wines/zinfandel/brazin\(b\)oldvinezinfandel/2007.aspx)
+2007 [Zinfandel (B)Old Vine](http://www.brazinwine.com/wines/zinfandel/brazin\(b\)oldvinezinfandel/2007.aspx)
 <good>
 </span>
 
 <span title="at gina's, 3/21/2010">
 [Adler Fels](http://www.adlerfels.com/) (Napa, California)  
-2007 Douglas Oak Syrah
+2007 Syrah Douglas Oak
 <good>
 </span>
 
@@ -2452,7 +2458,7 @@ Slow Paseo
 
 <span title="at gina's, not sure when">
 [Simi](http://www.simiwinery.com/homepage.asp?month=1&day=1&year=1900) (Sonoma, California)  
-2005 Dry Creek Valley Zinfandel
+2005 Zinfandel Dry Creek Valley
 <ok>,
 </span>
 <span title="hawaii w/gina, 6/8/2010">
@@ -2460,9 +2466,9 @@ Slow Paseo
 <bad>
 </span>
 <span title="sf apt w/dan before friday dinner, 7/16/2010">
-[2007 Alexander Valley Chardonnay](http://www.cellartracker.com/wine.asp?iWine=673710)
+[2007 Chardonnay Alexander Valley](http://www.cellartracker.com/wine.asp?iWine=673710)
 <good>,
-[2007 Russian River Valley Chardonnay](http://www.cellartracker.com/wine.asp?iWine=911935)
+[2007 Chardonnay Russian River Valley](http://www.cellartracker.com/wine.asp?iWine=911935)
 <good>,
 </span>
 <span title="sf apt w/dan 7/18/2010">
@@ -2476,7 +2482,7 @@ Slow Paseo
 
 <span title="at gina's, dinner w/sam, before 111 minna for julie tannaci's bday, 3/13/2010">
 [Keller Estate](http://www.kellerestate.com/) (Sonoma, California)  
-2005 [La Cruz Vineyard Pinot Noir](http://www.kellerestate.com/Store/index.php?_a=viewProd&productId=2)
+2005 [Pinot Noir La Cruz Vineyard](http://www.kellerestate.com/Store/index.php?_a=viewProd&productId=2)
 <ok>
 </span>
 
@@ -2488,7 +2494,7 @@ Slow Paseo
 
 <span title="in the sf apt w/gina and dan, 3/5/2010">
 [Methven](http://www.methvenfamilyvineyards.com/) (Willamette Valley, Oregon)  
-2005 [Reserve Pinot Noir](http://www.methvenfamilyvineyards.com/wine-details.php?id=115&c=51&p=)
+2005 [Pinot Noir Reserve](http://www.methvenfamilyvineyards.com/wine-details.php?id=115&c=51&p=)
 <ok>
 </span>
 
@@ -2517,7 +2523,7 @@ Slow Paseo
 
 <span title="home w/dan, 2/27/2010">
 [Three Thieves](http://threethieves.ning.com/) (Napa, California)  
-2007 [The Show Cabernet Sauvignon](http://threethieves.ning.com/page/the-show-continued)
+2007 [Cabernet Sauvignon The Show](http://threethieves.ning.com/page/the-show-continued)
 <bad>
 </span>
 
@@ -2558,7 +2564,7 @@ Slow Paseo
 
 <span title="vino locale with gina before jeremy's bday dinner, 2/20/2010">
 [Otter Cove](http://www.ottercovewines.com/) (Monterey, California)  
-2006 [Oh Balo Vineyard Pinot Noir](http://www.ottercovewines.com/ottercove/catalog/view_product.jsp?product_id=1008&cat_id=1)
+2006 [Pinot Noir Oh Balo Vineyard](http://www.ottercovewines.com/ottercove/catalog/view_product.jsp?product_id=1008&cat_id=1)
 <good>
 </span>
 
@@ -2596,27 +2602,27 @@ Slow Paseo
 
 <span title="at gina's, 2/4/2010">
 [Willamette Valley Vineyards](http://www.willamettevalleyvineyards.com/) (Willamette Valley, Oregon)  
-2007 Barrel Select Pinot Noir
+2007 Pinot Noir Barrel Select
 <ok>
 </span>
 
 <span title="opera medallion society luncheon w/anastasia, wed 2/3/2010">
 [Saintsbury](http://www.saintsbury.com/) (Napa, California)  
-2007 [Carneros Pinot Noir](http://www.saintsbury.com/wine_CarnPinot.html)
+2007 [Pinot Noir Carneros](http://www.saintsbury.com/wine_CarnPinot.html)
 <bad>,
 </span>
 <span title="hawaii w/gina, june 2010">
-[2008 Garnet Pinot Noir](http://www.saintsbury.com/wine_GarnetPinot.html)
+[2008 Pinot Noir Garnet](http://www.saintsbury.com/wine_GarnetPinot.html)
 <good>,
 </span>
 <span title="nathan's 30th bday at press club, 7/24/2010">
-[2007 Brown Ranch Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=538625)
+[2007 Pinot Noir Brown Ranch](http://www.cellartracker.com/wine.asp?iWine=538625)
 <bad>
 </span>
 
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
 [Acorn](http://www.acornwinery.com/) (Sonoma, California)  
-2006, 2007 [Heritage Vines Zinfandel](http://www.acornwinery.com/Pages/zinfandel_stats_06.html)
+2006, 2007 [Zinfandel Heritage Vines](http://www.acornwinery.com/Pages/zinfandel_stats_06.html)
 <good>
 </span>
 
@@ -2638,26 +2644,26 @@ Slow Paseo
 
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
 [Clos LaChance](http://www.clos.com/) (Santa Cruz, California)  
-[Estate Zinfandel](http://www.clos.com/index.cfm?fuseaction=itemdetail&item_id_int=17856&category_id_int=14007)
+[Zinfandel Estate](http://www.clos.com/index.cfm?fuseaction=itemdetail&item_id_int=17856&category_id_int=14007)
 2007
 <ok>
 </span>
 
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
 [Dancing Lady](http://dancingladywines.com/) (Alexander Valley, Sonoma, California)  
-2007 Old Vines Zinfandel
+2007 Zinfandel Old Vines
 <good>
 </span>
 
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
 [DeLoach](http://www.deloachvineyards.com/) (Sonoma, California)  
-[Forgotten Zinfandel](http://www.deloachvineyards.com/deloach/catalog/view_product.jsp?product_id=1166&cat_id=1023)
+[Zinfandel Forgotten](http://www.deloachvineyards.com/deloach/catalog/view_product.jsp?product_id=1166&cat_id=1023)
 2007
 <ok>,
-[OFS Zinfandel](http://www.deloachvineyards.com/deloach/catalog/view_product.jsp?product_id=1168&cat_id=1023)
+[Zinfandel OFS](http://www.deloachvineyards.com/deloach/catalog/view_product.jsp?product_id=1168&cat_id=1023)
 2007
 <ok>,
-2008 Russian River Zinfandel
+2008 Zinfandel Russian River
 <ok>
 </span>
 
@@ -2669,38 +2675,38 @@ Slow Paseo
 
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
 [Dry Creek](http://www.drycreekvineyard.com/) (Sonoma, California)  
-[Old Vines Zinfandel](http://www.drycreekvineyard.com/our_wines/2006_old_vine_zinfandel.html)
+[Zinfandel Old Vines](http://www.drycreekvineyard.com/our_wines/2006_old_vine_zinfandel.html)
 2006
 <ok>
 </span>
 
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
 [Easton](http://www.terrerougewines.com/) (Sierra, California)  
-2006 [Estate Zinfandel](http://www.terrerougewines.com/eastonwines.html)
+2006 [Zinfandel Estate](http://www.terrerougewines.com/eastonwines.html)
 <ok>
 </span>
 
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
 [Folie A Deux](http://www.folieadeux.com/home.html) (Napa, California)  
-2007 [Amador Zinfandel](http://store.folieadeux.com/index.cfm?method=storeproducts.showDrilldown&productid=6006f355-1b78-7bfe-4c68-ef0d045d7305&ProductCategoryID=10d63540-1b78-7bfe-4c3c-fe43b6f6873f&WineryID=10d63427-1b78-7bfe-4c20-dbcdfc6a14d0&ShippingState=CA)
+2007 [Zinfandel Amador](http://store.folieadeux.com/index.cfm?method=storeproducts.showDrilldown&productid=6006f355-1b78-7bfe-4c68-ef0d045d7305&ProductCategoryID=10d63540-1b78-7bfe-4c3c-fe43b6f6873f&WineryID=10d63427-1b78-7bfe-4c20-dbcdfc6a14d0&ShippingState=CA)
 ?
 </span>
 
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
 [Ledson](http://www.ledsonwinery.com/) (Sonoma, California)  
-[Napa Valley Zinfandel](https://www.net10.net/ShoppingCart/buy/ProductAdd_6.asp?sid=6&xs=Y&prodid=3597)
+[Zinfandel Napa Valley](https://www.net10.net/ShoppingCart/buy/ProductAdd_6.asp?sid=6&xs=Y&prodid=3597)
 2006
 <bad>,
-[Russian River Old Vine Zinfandel](https://www.net10.net/ShoppingCart/buy/ProductAdd_6.asp?sid=6&xs=Y&prodid=3776)
+[Zinfandel Russian River Old Vine](https://www.net10.net/ShoppingCart/buy/ProductAdd_6.asp?sid=6&xs=Y&prodid=3776)
 2006
 <ok>,
-2006 Estate Zinfandel
+2006 Zinfandel Estate
 <ok>
 </span>
 
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
-[Novy](http://www.novyfamilywines.com/) (Sonoma, California)  
-Unnamed Zinfandel <bad>,
+[Zinfandel Novy](http://www.novyfamilywines.com/) (Sonoma, California)  
+Unnamed <bad>,
 2008 Zinfandel <ok>
 </span>
 
@@ -2718,48 +2724,48 @@ Unnamed Zinfandel <bad>,
 
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
 [Papapietro Perry](http://www.papapietro-perry.com/) (Sonoma, California)  
-2007 Dry Creek Zinfandel
+2007 Zinfandel Dry Creek
 <good>,
-2006 Russian River Zinfandel
+2006 Zinfandel Russian River
 <ok>,
-2007 Timbercrest Zinfandel
+2007 Zinfandel Timbercrest
 <bad>,
 </span>
 <span title="w/gina 2/10/2011">
-[2006 Pauline's Vineyard Zinfandel](http://www.cellartracker.com/wine.asp?iWine=595801)
+[2006 Zinfandel Pauline's Vineyard](http://www.cellartracker.com/wine.asp?iWine=595801)
 <ok>
 </span>
 
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
 [Rombauer](http://www.rombauer.com/) (Napa, California)  
-[Napa Valley Zinfandel](http://www.rombauer.com/index.cfm?method=storeproducts.showDrilldown&productid=44e177ea-1cc4-fbb6-2302-60d63c70c6de&ProductCategoryID=fee9d78e-ed50-13a5-b2b7-3c09ded089cb&WineryID=a80ade3f-ae54-f909-93c9-a57f7969795b)
+[Zinfandel Napa Valley](http://www.rombauer.com/index.cfm?method=storeproducts.showDrilldown&productid=44e177ea-1cc4-fbb6-2302-60d63c70c6de&ProductCategoryID=fee9d78e-ed50-13a5-b2b7-3c09ded089cb&WineryID=a80ade3f-ae54-f909-93c9-a57f7969795b)
 <ok>,
-[Fiddletown Zinfandel](http://www.rombauer.com/index.cfm?method=storeproducts.showDrilldown&productid=10dd24ae-1cc4-fbb6-23a6-c6ce201fe760&ProductCategoryID=feb171df-d6d4-b6ad-715c-b0fade5efa9d&WineryID=a80ade3f-ae54-f909-93c9-a57f7969795b)
+[Zinfandel Fiddletown](http://www.rombauer.com/index.cfm?method=storeproducts.showDrilldown&productid=10dd24ae-1cc4-fbb6-23a6-c6ce201fe760&ProductCategoryID=feb171df-d6d4-b6ad-715c-b0fade5efa9d&WineryID=a80ade3f-ae54-f909-93c9-a57f7969795b)
 2007
 <ok>
 </span>
 
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
 [Sausal](http://www.sausalwinery.com/) (Sonoma, California)  
-2007 [Century Vines Zinfandel](http://www.sausalwinery.com/Wines/)
+2007 [Zinfandel Century Vines](http://www.sausalwinery.com/Wines/)
 <ok>,
-2007 [Private Reserve Zinfandel](http://www.sausalwinery.com/Wines/)
+2007 [Zinfandel Private Reserve](http://www.sausalwinery.com/Wines/)
 <good>,
-2007 [Family Zinfandel](http://www.sausalwinery.com/Wines/)
+2007 [Zinfandel Family](http://www.sausalwinery.com/Wines/)
 <bad>
 </span>
 
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
 [St. Amant](http://www.stamantwine.com/) (Lodi, California)  
-2008 Mohr-Fry Zinfandel
+2008 Zinfandel Mohr-Fry
 <ok>,
-2008 Marian Zinfandel
+2008 Zinfandel Marian
 <ok>
 </span>
 
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
 [Storybook Mountain](http://www.storybookwines.com/) (Napa, California)  
-2007 [Mayacamas Zinfandel](http://store.storybookwines.com/shared/StoreFront/default.asp?CS=storybook&StoreType=BtoC&Count1=409725368&Count2=326865792)
+2007 [Zinfandel Mayacamas](http://store.storybookwines.com/shared/StoreFront/default.asp?CS=storybook&StoreType=BtoC&Count1=409725368&Count2=326865792)
 <good>
 </span>
 
@@ -2784,25 +2790,25 @@ Unnamed Zinfandel <bad>,
 
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
 [T-Vine](http://www.tvinecellars.com/) (Napa, California)  
-2006 Brown Zinfandel
+2006 Zinfandel Brown
 <ok>
 </span>
 
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
 [Venge](http://www.vengevineyards.com/) (Napa, California)  
-2007 [Scouts Honor Zinfandel](http://www.vengevineyards.com/venge/catalog/view_product.jsp?product_id=1060&cat_id=1005)
+2007 [Zinfandel Scouts Honor](http://www.vengevineyards.com/venge/catalog/view_product.jsp?product_id=1060&cat_id=1005)
 <good>
 </span>
 
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
-[XYZin](http://www.xyzinwines.com/) (Sonoma, California)  
-Agnes Zinfandel
+[Zinfandel XYZin](http://www.xyzinwines.com/) (Sonoma, California)  
+Agnes
 <bad>
 </span>
 
 <span title="at gina's place w/cheri instead of the symphony, 1/29/2010">
 [Sebastiani](http://www.sebastiani.com/) (Sonoma, California)  
-[Sonoma Valley Cabernet Sauvignon](http://www.sebastiani.com/index.cfm?method=storeproducts.showDrilldown&productid=9e373df7-1cc4-fbb6-23fe-c8bbc9e07f69&ProductCategoryID=9a2b1afe-1cc4-fbb6-23fd-211fe79472b3&WineryID=845DB150-1CC4-FBB6-230D-9223C58F3B80)
+[Cabernet Sauvignon Sonoma Valley](http://www.sebastiani.com/index.cfm?method=storeproducts.showDrilldown&productid=9e373df7-1cc4-fbb6-23fe-c8bbc9e07f69&ProductCategoryID=9a2b1afe-1cc4-fbb6-23fd-211fe79472b3&WineryID=845DB150-1CC4-FBB6-230D-9223C58F3B80)
 2006
 <good>
 </span>
@@ -2829,7 +2835,7 @@ Agnes Zinfandel
 
 <span title="citizen cake w/gina after symphony, 1/23/2010">
 [Lolonis](http://www.lolonis.com/) (Redwood Valley, Mendocino, California)  
-2006 [Redwood Valley Cabernet Sauvignon](https://www.lolonis.com/index.php?option=com_content&task=view&id=42&Itemid=64)
+2006 [Cabernet Sauvignon Redwood Valley](https://www.lolonis.com/index.php?option=com_content&task=view&id=42&Itemid=64)
 <bad>
 </span>
 
@@ -2845,19 +2851,19 @@ Agnes Zinfandel
 <good>,
 </span>
 <span title="dinner w/gina, nathan, lauren, at cafe altano 2/26/2011">
-[2006 Auction Block Pinot](http://www.cellartracker.com/wine.asp?iWine=403549)
+[2006 Pinot Auction Block](http://www.cellartracker.com/wine.asp?iWine=403549)
 <ok>
 </span>
 
 <span title="red & white wine bar in glen park w/gina and cheri before symphony, 1/23/2010">
 [Rutz](http://www.rutzcellars.com/) (Sonoma, California)  
-2005 [French Cuvée Pinot Noir](http://www.rutzcellars.com/POS_Material/Release_Notes/Web_Page_Open_to_Sell/Wine%20Open%20to%20Sell%20Release%20N.htm)
+2005 [Pinot Noir French Cuvée](http://www.rutzcellars.com/POS_Material/Release_Notes/Web_Page_Open_to_Sell/Wine%20Open%20to%20Sell%20Release%20N.htm)
 <good>
 </span>
 
 <span title="red & white wine bar in glen park w/gina and cheri before symphony, 1/23/2010">
 [Laura Zahtila](http://www.zahtilavineyards.com/) (Napa, California)  
-2005 [Dry Creek Zinfandel](http://www.zahtilavineyards.com/scripts/winepg.cfm/_/3/2006/Dry%20Creek,%20Zinfandel/)
+2005 [Zinfandel Dry Creek](http://www.zahtilavineyards.com/scripts/winepg.cfm/_/3/2006/Dry%20Creek,%20Zinfandel/)
 <good>
 </span>
 
@@ -2881,7 +2887,7 @@ Agnes Zinfandel
 <span title="home, sun 1/10/2010">
 [Bodega Catena Zapata](http://www.catenawines.com/)/[Domaines Barons de Rothschild](http://www.lafite.com/)
 (Mendoza, Argentina)  
-[Padrillos Malbec](http://www.snooth.com/wine/e-catena-padrillos-malbec/)
+[Malbec Padrillos](http://www.snooth.com/wine/e-catena-padrillos-malbec/)
 <bad>
 </span>
 
@@ -2944,13 +2950,13 @@ Agnes Zinfandel
 <good>,
 </span>
 <span title="sonoma/mendocino trip w/gina, 3/12-13/2011">
-[2008 Chambers Chardonnay](http://www.cellartracker.com/wine.asp?iWine=1024989)
+[2008 Chardonnay Chambers](http://www.cellartracker.com/wine.asp?iWine=1024989)
 <ok>,
-[2008 Forchini Zinfandel](http://www.cellartracker.com/wine.asp?iWine=893767)
+[2008 Zinfandel Forchini](http://www.cellartracker.com/wine.asp?iWine=893767)
 <bad>,
 [2006 Merlot](http://www.cellartracker.com/wine.asp?iWine=746402)
 <ok>,
-[2007 Winery Ranch Petite Sirah](http://www.cellartracker.com/wine.asp?iWine=924442)
+[2007 Petite Sirah Winery Ranch](http://www.cellartracker.com/wine.asp?iWine=924442)
 <ok>,
 [2005 Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=662567)
 <bad>,
@@ -2964,13 +2970,13 @@ Agnes Zinfandel
 <good>,
 </span>
 <span title="wine tasting w/gina before cheri's bday weekend, 11/18/2011">
-[2009 Bevill Vineyard Viognier](http://www.cellartracker.com/wine.asp?iWine=1083308)
+[2009 Viognier Bevill Vineyard](http://www.cellartracker.com/wine.asp?iWine=1083308)
 <ok>,
 [2009 Chardonnay](http://www.cellartracker.com/wine.asp?iWine=1121397)
 <ok>,
-[2009 Rockpile Zinfandel](http://www.cellartracker.com/wine.asp?iWine=1145488)
+[2009 Zinfandel Rockpile](http://www.cellartracker.com/wine.asp?iWine=1145488)
 <ok>,
-[2009 Forchini Vineyard Zinfandel](http://www.cellartracker.com/wine.asp?iWine=1145489)
+[2009 Zinfandel Forchini Vineyard](http://www.cellartracker.com/wine.asp?iWine=1145489)
 <bad>,
 [2007 Merlot](http://www.cellartracker.com/wine.asp?iWine=968031)
 <good>,
@@ -2978,7 +2984,7 @@ Agnes Zinfandel
 <ok>,
 [2007 Crane Creek Cuvée](http://www.cellartracker.com/wine.asp?iWine=964333)
 <good>,
-[2006 Limited Selection Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=866384)
+[2006 Cabernet Sauvignon Limited Selection](http://www.cellartracker.com/wine.asp?iWine=866384)
 <good>
 </span>
 
@@ -3010,7 +3016,7 @@ Agnes Zinfandel
  ken/tina, and jesse/danielle. first night when nathan and i cooked.
  nathan's wine.">
 [Bogle](http://www.boglewinery.com/) (Central Valley, California)  
-2006 [Old Vine Zinfandel](http://www.boglewinery.com/bogle_ovz_facts.htm)
+2006 [Zinfandel Old Vine](http://www.boglewinery.com/bogle_ovz_facts.htm)
 <ok>
 </span>
 
@@ -3039,21 +3045,21 @@ Quail Oak
 
 <span title="cav wine bar w/cynthia and anastasia before xmas choral concert, 12/17/2009">
 [Jus Soli](http://jussoli.com/)
-2006 [Madder Lake Zinfandel](http://jussoli.com/blog/wines/#MadderLakeZinfandel2006)
+2006 [Zinfandel Madder Lake](http://jussoli.com/blog/wines/#MadderLakeZinfandel2006)
 <bad>
 </span>
 
 [Freeman](http://www.freemanwinery.com/)
 (Sonoma, California)  
-[2006 Sonoma Coast Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=470520)
+[2006 Pinot Noir Sonoma Coast](http://www.cellartracker.com/wine.asp?iWine=470520)
 <good>,
 </span>
 <span title="dinner w/david, alexis, her dad john, and his gf (wife?) lorraine">
-[2006 Russian River Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=470519)
+[2006 Pinot Noir Russian River](http://www.cellartracker.com/wine.asp?iWine=470519)
 <good>,
 </span>
 <span title="dinner at sociale w/jerry cain and scott james, 8/9/2011">
-[2007 Keefer Ranch Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=592486)
+[2007 Pinot Noir Keefer Ranch](http://www.cellartracker.com/wine.asp?iWine=592486)
 <good>
 </span>
 
@@ -3099,7 +3105,7 @@ Quail Oak
 
 <span title="at gina's friend cheri's party before chelsea lately show, 12/5/2009">
 [Sterling](http://sterlingvineyards.com/) (Napa, California)  
-2006 [Napa Valley Cabernet Sauvignon](http://shop.sterlingvineyards.com/SterlingVineyardsCabernetSauvignonNapaValley06)
+2006 [Cabernet Sauvignon Napa Valley](http://shop.sterlingvineyards.com/SterlingVineyardsCabernetSauvignonNapaValley06)
 <good>
 </span>
 
@@ -3108,15 +3114,15 @@ Quail Oak
 2006 [Cave Blend](http://www.deldottovineyards.com/ProductInfo.aspx?productid=0306001W)
 <good>,
 <span title="leather, tannins, dark berries">
-2008 [Cinghiale Vineyard Pinot Noir](http://www.deldottovineyards.com/ProductInfo.aspx?productid=0707001W)
+2008 [Pinot Noir Cinghiale Vineyard](http://www.deldottovineyards.com/ProductInfo.aspx?productid=0707001W)
 <good>,
 </span>
 <span title="weird mulling spices, sharp, asian flavors">
-2007 [Lot B2 Cabernet Sauvignon](http://www.deldottovineyards.com/ProductInfo.aspx?productid=0207027W)
+2007 [Cabernet Sauvignon Lot B2](http://www.deldottovineyards.com/ProductInfo.aspx?productid=0207027W)
 <ok>,
 </span>
 <span title="too much fruit, woody, jammy">
-2007 Lot RB Missouri 36 Month Cabernet Sauvignon
+2007 Cabernet Sauvignon Lot RB Missouri 36 Month
 <bad>,
 </span>
 <span title="way too acidic, badly sharp">
@@ -3124,15 +3130,15 @@ Quail Oak
 <bad>,
 </span>
 <span title="big, bright, short finish, clean">
-2007 [Napa Valley Cabernet Sauvignon](http://www.deldottovineyards.com/ProductInfo.aspx?productid=0205601W)
+2007 [Cabernet Sauvignon Napa Valley](http://www.deldottovineyards.com/ProductInfo.aspx?productid=0205601W)
 <ok>,
 </span>
 <span title="balanced, sharp">
-2007 [Napa Valley Merlot](http://www.deldottovineyards.com/ProductInfo.aspx?productid=0807003W)
+2007 [Merlot Napa Valley](http://www.deldottovineyards.com/ProductInfo.aspx?productid=0807003W)
 <good>,
 </span>
 <span title="too sweet/jammy">
-2007 St. Helena Mountain Cabernet Sauvignon
+2007 Cabernet Sauvignon St. Helena Mountain
 <bad> (french oak),
 </span>
 <span title="more balanced">
@@ -3150,7 +3156,7 @@ Quail Oak
 <ok>,
 </span>
 <span title="krista's apples to apples holiday party w/gina, 12/20/2009">
-2008 [Ancient Vines Zinfandel](http://www.clinecellars.com/index.cfm?method=storeproducts.showDrilldown&productid=390f8ac0-fe3c-48a0-54a1-40fba3bfbc81)
+2008 [Zinfandel Ancient Vines](http://www.clinecellars.com/index.cfm?method=storeproducts.showDrilldown&productid=390f8ac0-fe3c-48a0-54a1-40fba3bfbc81)
 <ok>,
 </span>
 <span title="tasting w/gina 2/20/2010">
@@ -3158,13 +3164,13 @@ Quail Oak
 <good>,
 </span>
 <span title="tasting during vday weekend with gina in marin, 2/13/2010">
-2007 [Bridgehead Zinfandel](http://www.clinecellars.com/index.cfm?method=storeproducts.showDrilldown&productid=38e1a10c-a5fe-2387-27e4-700c2dcfb1be)
+2007 [Zinfandel Bridgehead](http://www.clinecellars.com/index.cfm?method=storeproducts.showDrilldown&productid=38e1a10c-a5fe-2387-27e4-700c2dcfb1be)
 <ok>,
 [2008 Cashmere](http://www.clinecellars.com/index.cfm?method=storeproducts.showDrilldown&productid=e25d581e-1b78-7bfe-4cf0-798572d7cbc4)
 <ok>,
-2008 Ancient Vines Mourvèdre
+2008 Mourvèdre Ancient Vines
 <bad>,
-2007 [Big Break Zinfandel](http://www.clinecellars.com/index.cfm?method=storeproducts.showDrilldown&productid=93ce4fbf-1b78-7bfe-4ca3-fe10a001cdb3)
+2007 [Zinfandel Big Break](http://www.clinecellars.com/index.cfm?method=storeproducts.showDrilldown&productid=93ce4fbf-1b78-7bfe-4ca3-fe10a001cdb3)
 <good>,
 <span title="wine tasting w/gina 7/6/2010">
 [2008](http://www.cellartracker.com/wine.asp?iWine=903214)
@@ -3173,7 +3179,7 @@ Quail Oak
 <span title="tasting during vday weekend with gina in marin, 2/13/2010">
 2008 [Oakley Five](http://www.clinecellars.com/index.cfm?method=storeproducts.showDrilldown&productid=117453f0-b273-1872-d66a-621541c371fa)
 <bad>,
-2006 [Carneros Syrah](http://www.clinecellars.com/index.cfm?method=storeproducts.showDrilldown&productid=38ac06de-9ea4-52e3-562d-a1fd307a1e3f)
+2006 [Syrah Carneros](http://www.clinecellars.com/index.cfm?method=storeproducts.showDrilldown&productid=38ac06de-9ea4-52e3-562d-a1fd307a1e3f)
 <bad>,
 </span>
 <span title="wine tasting w/gina 7/6/2010">
@@ -3185,43 +3191,43 @@ Quail Oak
 <ok>,
 </span>
 <span title="tasting during vday weekend with gina in marin, 2/13/2010">
-2007 [Sonoma Zinfandel](http://www.clinecellars.com/index.cfm?method=storeproducts.showDrilldown&productid=38d8a72a-ae37-3b06-1d93-ed6300a5144c)
+2007 [Zinfandel Sonoma](http://www.clinecellars.com/index.cfm?method=storeproducts.showDrilldown&productid=38d8a72a-ae37-3b06-1d93-ed6300a5144c)
 <ok>,
-2006 [Late Harvest Mourvèdre](http://www.clinecellars.com/index.cfm?method=storeproducts.showDrilldown&productid=391ea0d6-9e9f-4266-a862-0a0764022746)
+2006 [Mourvèdre Late Harvest](http://www.clinecellars.com/index.cfm?method=storeproducts.showDrilldown&productid=391ea0d6-9e9f-4266-a862-0a0764022746)
 <bad>,
 </span>
 <span title="wine tasting w/gina 7/6/2010">
-[2007 Heritage Zinfandel](http://www.cellartracker.com/wine.asp?iWine=603212)
+[2007 Zinfandel Heritage](http://www.cellartracker.com/wine.asp?iWine=603212)
 <ok>,
 [2008](http://www.cellartracker.com/wine.asp?iWine=853148)
 <good>,
-[2007 Cool Climate Syrah](http://www.cellartracker.com/wine.asp?iWine=664513)
+[2007 Syrah Cool Climate](http://www.cellartracker.com/wine.asp?iWine=664513)
 <ok>,
 </span>
 <span title="wine tasting w/gina 6/26/2011">
-[2010 Sonoma Viognier](http://www.cellartracker.com/wine.asp?iWine=1140572)
+[2010 Viognier Sonoma](http://www.cellartracker.com/wine.asp?iWine=1140572)
 <ok>,
-2010 Cool Climate Chardonnay
+2010 Chardonnay Cool Climate
 <bad>,
 2009 Syrah
 <good>,
-2009 Cool Climate Syrah
+2009 Syrah Cool Climate
 <ok>,
-[2009 Bridgehead Zinfandel](http://www.cellartracker.com/wine.asp?iWine=1126063)
+[2009 Zinfandel Bridgehead](http://www.cellartracker.com/wine.asp?iWine=1126063)
 <good>,
-[2009 Big Break Zinfandel](http://www.cellartracker.com/wine.asp?iWine=1126061)
+[2009 Zinfandel Big Break](http://www.cellartracker.com/wine.asp?iWine=1126061)
 <bad>,
-[2009 Live Oak Zinfandel](http://www.cellartracker.com/wine.asp?iWine=1127031)
+[2009 Zinfandel Live Oak](http://www.cellartracker.com/wine.asp?iWine=1127031)
 <ok>,
-[2008 Heritage Zinfandel](http://www.cellartracker.com/wine.asp?iWine=853148)
+[2008 Zinfandel Heritage](http://www.cellartracker.com/wine.asp?iWine=853148)
 <bad>,
-[2008 Los Carneros Syrah](http://www.cellartracker.com/wine.asp?iWine=1087425)
+[2008 Syrah Los Carneros](http://www.cellartracker.com/wine.asp?iWine=1087425)
 <ok>
 </span>
 
 <span title="thanksgiving at home, 11/28/2009">
 [Bodega Norton](http://www.norton.com.ar/) (Mendoza, Argentina)  
-2005 [Reserva Malbec](http://www.norton.com.ar/english/reserva2.htm)
+2005 [Malbec Reserva](http://www.norton.com.ar/english/reserva2.htm)
 <ok>
 </span>
 
@@ -3251,13 +3257,13 @@ Quail Oak
 <ok>,
 </span>
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
-[Florence Vineyard Zinfandel](http://www.dashecellars.com/wines_info.html?db=wines&action=info&id=49&archived=0)
+[Zinfandel Florence Vineyard](http://www.dashecellars.com/wines_info.html?db=wines&action=info&id=49&archived=0)
 2007
 <ok>,
-[Todd Brothers Ranch Zinfandel](http://www.dashecellars.com/wines_info.html?db=wines&action=info&id=46&archived=0)
+[Zinfandel Todd Brothers Ranch](http://www.dashecellars.com/wines_info.html?db=wines&action=info&id=46&archived=0)
 2007
 <ok>,
-[Louvau Vineyard Zinfandel](http://www.dashecellars.com/wines_info.html?db=wines&action=info&id=39&archived=0)
+[Zinfandel Louvau Vineyard](http://www.dashecellars.com/wines_info.html?db=wines&action=info&id=39&archived=0)
 2006
 <good>
 </span>
@@ -3302,11 +3308,11 @@ Quail Oak
 2007 [Zinfandel](http://www.gottwines.com/wines/CA_ZIN/)
 <bad>,
 <span title="at gina's before the symphony, 2/12/2010">
-2005 [License Zinfandel](http://www.snooth.com/wine/joel-gott-license-zinfandel-2005/)
+2005 [Zinfandel License](http://www.snooth.com/wine/joel-gott-license-zinfandel-2005/)
 <bad>,
 </span>
 <span title="hawaii w/gina, june 2010">
-[2007 Dillan Ranch Zinfandel](http://www.snooth.com/wine/joel-gott-zinfandel-dillan-ranch-2007/)
+[2007 Zinfandel Dillan Ranch](http://www.snooth.com/wine/joel-gott-zinfandel-dillan-ranch-2007/)
 <good>
 </span>
 
@@ -3335,7 +3341,7 @@ Quail Oak
 
 Bodegas Enosur
 (Mendoza, Argentina)  
-[Tierra Prometida Malbec](http://www.snooth.com/wine/bodegas-enosur-malbec-tierra-prometida-2006/)
+[Malbec Tierra Prometida](http://www.snooth.com/wine/bodegas-enosur-malbec-tierra-prometida-2006/)
 2006
 <good>
 
@@ -3491,7 +3497,7 @@ Millésime
 <good>,
 </span>
 <span title="home w/dan and nicol, 1/19/2010">
-[Anden Vineyard Pinot Noir](http://www.stinnocentwine.com/NewFiles/wines.html)
+[Pinot Noir Anden Vineyard](http://www.stinnocentwine.com/NewFiles/wines.html)
 2006
 <good>,
 </span>
@@ -3500,23 +3506,23 @@ Millésime
 <ok>,
 </span>
 <span title="sf apt w/dan and kieran, 4/27/2010">
-[2007 Winemaker's Cuvée Pinot Noir](http://www.stinnocentwine.com/NewFiles/pnwc07.html)
+[2007 Pinot Noir Winemaker's Cuvée](http://www.stinnocentwine.com/NewFiles/pnwc07.html)
 <ok>
 </span>
 
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
 [Rosenblum Cellars](http://www.rosenblumcellars.com/)
 (Lake County, CA)  
-[Snows Lake Vineyard Zinfandel](https://www.rosenblumcellars.com/shop/item.jsp?itemid=720&catid=56)
+[Zinfandel Snows Lake Vineyard](https://www.rosenblumcellars.com/shop/item.jsp?itemid=720&catid=56)
 2005
 <bad>,
-2007 [Rockpile Road Zinfandel](https://www.rosenblumcellars.com/shop/item.jsp?itemid=746&catid=56)
+2007 [Zinfandel Rockpile Road](https://www.rosenblumcellars.com/shop/item.jsp?itemid=746&catid=56)
 <ok>,
-2007 [Maggies Reserve Zinfandel](https://www.rosenblumcellars.com/shop/item.jsp?itemid=805&catid=56)
+2007 [Zinfandel Maggies Reserve](https://www.rosenblumcellars.com/shop/item.jsp?itemid=805&catid=56)
 <ok>,
 </span>
 <span title="kauai w/gina, siraj, malorie, 8/17/2011">
-[Vintner's Cuvee XXXIII Zinfandel](http://www.cellartracker.com/wine.asp?iWine=1074910)
+[Zinfandel Vintner's Cuvee XXXIII](http://www.cellartracker.com/wine.asp?iWine=1074910)
 [N.V.](http://www.google.com/search?q=define%3Anonvintage#q=nonvintage&tbs=dfn:1)
 <ok>
 </span>
@@ -3537,7 +3543,7 @@ Millésime
 <span title="district w/gretchen 8/12/2009">
 [Domaine de Givaudan](http://www.domainedegivaudan.com/)
 (Rhône, France)  
-[2007 Cuvée Lea Côtes du Rhône](http://www.domainedegivaudan.com/page12.html)
+[2007 Côtes du Rhône Cuvée Lea](http://www.domainedegivaudan.com/page12.html)
 <bad>
 </span>
 
@@ -3559,39 +3565,39 @@ Millésime
 <span title="housewarming party for dan's/my south beach marina apt, 8/16/2009">
 [Ridge](http://www.ridgewine.com/)
 (Napa, California)  
-[2006 Lytton Springs Zinfandel](http://www.ridgewine.com/store/index.taf?_function=detail&sku=06ZLS1),
+[2006 Zinfandel Lytton Springs](http://www.ridgewine.com/store/index.taf?_function=detail&sku=06ZLS1),
 <good>,
 [2007](http://www.ridgewine.com/store/index.taf?_function=detail&sku=07ZLS1)
 <good>,
 </span>
 <span title="joya w/jane and josh after friday dinner, 8/28/2009">
-[2007 Three Valleys Zinfandel](http://www.ridgewine.com/store/index.taf?_function=detail&sku=07XTV1)
+[2007 Zinfandel Three Valleys](http://www.ridgewine.com/store/index.taf?_function=detail&sku=07XTV1)
 <ok>,
 </span>
 <span title="krista's apples to apples holiday party w/gina, 12/20/2009">
-[2005 Lytton Springs Syrah](http://www.ridgewine.com/store/index.taf?_function=detail&sku=05ZLS2)
+[2005 Syrah Lytton Springs](http://www.ridgewine.com/store/index.taf?_function=detail&sku=05ZLS2)
 <good>,
 </span>
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
-[East Bench Zinfandel](http://www.ridgewine.com/store/index.taf?_function=detail&sku=06ZEB1)
+[Zinfandel East Bench](http://www.ridgewine.com/store/index.taf?_function=detail&sku=06ZEB1)
 2008
 <ok>,
-[Ponzo Zinfandel](http://www.ridgewine.com/store/index.taf?_function=detail&sku=06ZPZ1)
+[Zinfandel Ponzo](http://www.ridgewine.com/store/index.taf?_function=detail&sku=06ZPZ1)
 2008
 <bad>,
-2008 Buchanan Zinfandel
+2008 Zinfandel Buchanan
 <good>
 </span>,
 <span title="dinner w/gina and dan at paragon 3/6/2010">
-2003 [Del Carlo Zinfandel](http://www.ridgewine.com/store/index.taf?_function=detail&sku=03ZDL1)
+2003 [Zinfandel Del Carlo](http://www.ridgewine.com/store/index.taf?_function=detail&sku=03ZDL1)
 <good>,
 </span>
 <span title="w/gretchen at momo's, 3/22/2010">
-2007 [Dry Creek Valley Lytton Station Zinfandel](http://www.ridgewine.com/store/index.taf?_function=detail&sku=03ZDL1)
+2007 [Zinfandel Dry Creek Valley Lytton Station](http://www.ridgewine.com/store/index.taf?_function=detail&sku=03ZDL1)
 <good>,
 </span>
 <span title="paragon w/dan 10/25/2010">
-[2007 Geyserville Zinfandel](http://www.cellartracker.com/wine.asp?iWine=641224) (blend)
+[2007 Zinfandel Geyserville](http://www.cellartracker.com/wine.asp?iWine=641224) (blend)
 <good>
 </span>
 
@@ -3616,7 +3622,7 @@ Estate Cabernet Sauvignon Reserve
 <span title="rickhouse with clayton, siraj, erica, emily, and sunny, 8/4/2009">
 [Hopper Creek](http://www.hoppercreek.com/)
 (Napa, California)  
-[Clos Valmi Cabernet Sauvignon](http://www.snooth.com/wine/hopper-creek-winery-cabernet-sauvignon-clos-valmi-2005/)
+[Cabernet Sauvignon Clos Valmi](http://www.snooth.com/wine/hopper-creek-winery-cabernet-sauvignon-clos-valmi-2005/)
 2005
 <bad>
 </span>
@@ -3624,14 +3630,14 @@ Estate Cabernet Sauvignon Reserve
 <span title="cantina with clayton, siraj, erica, emily, and sunny, 8/4/2009">
 [Martellotto](http://www.martellottowines.com/)
 (Central coast, California)  
-2006 [Agent for Change Zinfandel](http://www.agentforchangewines.com/)
+2006 [Zinfandel Agent for Change](http://www.agentforchangewines.com/)
 <bad>
 </span>
 
 <span title="cosmopolitan, 8/3/2009">
 [C.G. Di Arie](http://www.cgdiarie.com/)
 (Central California)  
-2006 [Southern Exposure Zinfandel](http://www.cgdiarie.com/html/shopping_cart16.html)
+2006 [Zinfandel Southern Exposure](http://www.cgdiarie.com/html/shopping_cart16.html)
 <ok>,
 </span>
 <span title="rickhouse with clayton, siraj, erica, emily, and sunny, 8/4/2009">
@@ -3734,30 +3740,30 @@ Carmenère
 <span title="sam and judith's wedding, 6/2009">
 [Laurel Glen](http://www.laurelglen.com/)
 (Sonoma, California; Mendoza, Argentina)  
-2006 [Terra Rosa Malbec](http://www.laurelglen.com/laurelglen/catalog/view_product.jsp?product_id=1038&cat_id=1001)
+2006 [Malbec Terra Rosa](http://www.laurelglen.com/laurelglen/catalog/view_product.jsp?product_id=1038&cat_id=1001)
 <ok>
 </span>
 
 <span title="press club">
 [Chateau Montelena](http://www.montelena.com/)
 (Napa, California)  
-[Estate Cabernet Sauvignon](http://www.montelena.com/show/xmlsite/xml-standard.xml/xsl-vintage.xsl/start_id-jkbohklnopdenmppmfncgjkjgfadinimpabfcodg/category-our_wines/)
+[Cabernet Sauvignon Estate](http://www.montelena.com/show/xmlsite/xml-standard.xml/xsl-vintage.xsl/start_id-jkbohklnopdenmppmfncgjkjgfadinimpabfcodg/category-our_wines/)
 <good>,
-[Estate Zinfandel](http://www.montelena.com/show/xmlsite/xml-standard.xml/xsl-vintage.xsl/start_id-hkapnjogbodhippmijaofeagfimdljibmbffdhei/category-our_wines/)
+[Zinfandel Estate](http://www.montelena.com/show/xmlsite/xml-standard.xml/xsl-vintage.xsl/start_id-hkapnjogbodhippmijaofeagfimdljibmbffdhei/category-our_wines/)
 <bad>,
 </span>
 <span title="nathan's 30th bday at press club, 7/24/2010">
-[2006 Napa Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=617460)
+[2006 Cabernet Sauvignon Napa](http://www.cellartracker.com/wine.asp?iWine=617460)
 <good>
 </span>
 
 <span title="press club">
 [Hanna](http://www.hannawinery.com/) (Sonoma, California)  
-[2005 Bismark Zinfandel](http://www.cellartracker.com/wine.asp?iWine=560376)
+[2005 Zinfandel Bismark](http://www.cellartracker.com/wine.asp?iWine=560376)
 <good>
 </span>,
 <span title="nathan's 30th bday at press club, 7/24/2010">
-[2006 Bismark Zinfandel](http://www.cellartracker.com/wine.asp?iWine=687098)
+[2006 Zinfandel Bismark](http://www.cellartracker.com/wine.asp?iWine=687098)
 <ok>,
 </span>
 <span title="sonoma/mendocino trip w/gina, 3/12-13/2011">
@@ -3776,23 +3782,23 @@ Carmenère
 <span title="press club">
 [Fritz](http://www.fritzwinery.com/)
 (Sonoma, California)  
-2006 Saralee's Vineyard Pinot Noir
+2006 Pinot Noir Saralee's Vineyard
 <bad>,
-[2006 Dutton Ranch Pinot Noir](http://www.snooth.com/wine/fritz-winery-pinot-noir-dutton-ranch-2000/)
+[2006 Pinot Noir Dutton Ranch](http://www.snooth.com/wine/fritz-winery-pinot-noir-dutton-ranch-2000/)
 <good>,
-2006 Widdoes Vineyard Pinot Noir
+2006 Pinot Noir Widdoes Vineyard
 <ok>,
-2006 Las Brisas Vineyard Pinot Noir
+2006 Pinot Noir Las Brisas Vineyard
 <ok>,
 </span>
 <span title="zap zinfandel tasting 1/30/2010 at fort mason w/gina, clayton, and cynthia">
-[2007 Estate Reserve Zinfandel Dry Creek](http://www.cellartracker.com/wine.asp?iWine=763414)
+[2007 Zinfandel Estate Reserve Dry Creek](http://www.cellartracker.com/wine.asp?iWine=763414)
 <good>,
 2008
 <ok>,
 </span>
 <span title="date night w/gina, 3/31/2010">
-2006 Reserve Pinot Noir
+2006 Pinot Noir Reserve
 <ok>
 </span>
 
@@ -3813,31 +3819,31 @@ Carmenère
 <bad>,
 [2007 Gewürztraminer](http://www.cellartracker.com/wine.asp?iWine=685771)
 <bad>,
-[2007 Winery Block Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=593384)
+[2007 Pinot Noir Winery Block](http://www.cellartracker.com/wine.asp?iWine=593384)
 <good>,
 </span>
 <span title="tasting w/gina 2/20/2011">
-[2009 Estate Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1035784)
+[2009 Pinot Noir Estate](http://www.cellartracker.com/wine.asp?iWine=1035784)
 <ok>,
-[2009 BCD Vineyard Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=862836)
+[2009 Pinot Noir BCD Vineyard](http://www.cellartracker.com/wine.asp?iWine=862836)
 <good>,
-[2008 Teresa's Chardonnay](http://www.cellartracker.com/wine.asp?iWine=1012465)
+[2008 Chardonnay Teresa's](http://www.cellartracker.com/wine.asp?iWine=1012465)
 <bad>,
-[2007 Estate Chardonnay](http://www.cellartracker.com/wine.asp?iWine=628043)
+[2007 Chardonnay Estate](http://www.cellartracker.com/wine.asp?iWine=628043)
 <ok>,
 [2006 Syrah](http://www.cellartracker.com/wine.asp?iWine=656084)
 <ok>,
 </span>
 <span title="sonoma/mendocino trip w/gina, 3/12-13/2011">
-2010 Estate Chardonnay
+2010 Chardonnay Estate
 <ok>,
-2010 Estate Pinot Noir
+2010 Pinot Noir Estate
 <ok>,
-Winery Block Pinot Noir
+Pinot Noir Winery Block
 <ok>,
-2010 Burnside Road Pinot Noir
+2010 Pinot Noir Burnside Road
 <good>,
-2010 Bcd Farms Pinot Noir
+2010 Pinot Noir BCD Farms
 <ok>,
 2010 Zinfandel
 <ok>,
@@ -3845,13 +3851,13 @@ Winery Block Pinot Noir
 <good>,
 </span>
 <span title="wine tasting w/gina 6/26/2011">
-[2009 Teresa's Chardonnay](http://www.cellartracker.com/wine.asp?iWine=1172206)
+[2009 Chardonnay Teresa's](http://www.cellartracker.com/wine.asp?iWine=1172206)
 <ok>,
-[2008 Estate Chardonnay](http://www.cellartracker.com/wine.asp?iWine=656550)
+[2008 Chardonnay Estate](http://www.cellartracker.com/wine.asp?iWine=656550)
 <ok>,
 [2008 Gewürztraminer](http://www.cellartracker.com/wine.asp?iWine=1058660)
 <ok>,
-[2009 Burnside Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=1082165)
+[2009 Pinot Noir Burnside](http://www.cellartracker.com/wine.asp?iWine=1082165)
 <ok>,
 [2007 Syrah](http://www.cellartracker.com/wine.asp?iWine=656560)
 <ok>
@@ -3860,7 +3866,7 @@ Winery Block Pinot Noir
 <span title="cav wine bar w/gretchen before symphony, 6/13/2009">
 Robert Klingenfus
 (Alsace, France)  
-[Cuvée Elodie Pinot Noir](http://www.snooth.com/wine/robert-klingenfus-pinot-noir-cuvee-elodie-2005/)
+[Pinot Noir Cuvée Elodie](http://www.snooth.com/wine/robert-klingenfus-pinot-noir-cuvee-elodie-2005/)
 2007
 <bad>
 </span>
@@ -3925,19 +3931,19 @@ Ricardos Santos
 
 [Mas de Boislauzon](http://www.vigneron-independant.com/annuaire.php?page_annu=desc&numadh=923)
 (Rhône, France)  
-[Cuvée du Quet Châteauneuf-du-Pape](http://www.snooth.com/wine/mas-de-boislauzon-cuvee-du-quet-chateauneuf-du-pape-2006/)
+[Châteauneuf-du-Pape Cuvée du Quet](http://www.snooth.com/wine/mas-de-boislauzon-cuvee-du-quet-chateauneuf-du-pape-2006/)
 2006
 <ok>
 
 <span title="marissa mayer's ninth district biprime birthday party, 5/30/2009">
 [Turley](http://www.turleywinecellars.com/)
 (Napa, California)  
-[Old Vines Zinfandel](http://www.snooth.com/wine/turley-zinfandel-old-vines-2007/)
+[Zinfandel Old Vines](http://www.snooth.com/wine/turley-zinfandel-old-vines-2007/)
 2007
 <good>,
 </span>
 <span title="dinner at loui loui steak (across from prez apt) w/ken and tina, 8/1/2009">
-[2007 Juvenile Zinfandel](http://www.snooth.com/wine/turley-zinfandel-juvenile-2007/)
+[2007 Zinfandel Juvenile](http://www.snooth.com/wine/turley-zinfandel-juvenile-2007/)
 <good>,
 </span>
 <span title="jardiniere w/gina before the symphony, 4/29/2011">
@@ -3945,7 +3951,7 @@ Ricardos Santos
 <bad>,
 </span>
 <span title="dinner w/siraj, malorie, gina, bruno at 25 lusk, 7/25/2012">
-[2008 Paso Robles Zinfandel](http://www.cellartracker.com/wine.asp?iWine=941018)
+[2008 Zinfandel Paso Robles](http://www.cellartracker.com/wine.asp?iWine=941018)
 <good>
 </span>
 
@@ -3962,7 +3968,7 @@ Ricardos Santos
 <span title="sf vintners market 11/20/2010 w/gina and josh">
 [2004 Black Pearl](http://www.cellartracker.com/wine.asp?iWine=572394)
 <bad>,
-[2005 Heart Of Stone Syrah](http://www.cellartracker.com/wine.asp?iWine=798446)
+[2005 Syrah Heart Of Stone](http://www.cellartracker.com/wine.asp?iWine=798446)
 <good>
 </span>
 
@@ -4015,7 +4021,7 @@ something mencia, spanish
 <span title="wine tasting w/gretchen">
 [Franciscan](http://www.franciscan.com/)
 (Napa, California)  
-[2005 Napa Valley Cabernet Sauvignon](http://www.franciscan.com/index.cfm?method=storeproducts.showDrilldown&productid=14189396-ef47-1256-46bf-abe4a501b911&ProductCategoryID=f00c2ff0-1b78-7bfe-4cad-3c6bf62d420a&OrderBy=PXPC.DisplayOrder%20Asc,%20P.Price1),
+[2005 Cabernet Sauvignon Napa Valley](http://www.franciscan.com/index.cfm?method=storeproducts.showDrilldown&productid=14189396-ef47-1256-46bf-abe4a501b911&ProductCategoryID=f00c2ff0-1b78-7bfe-4cad-3c6bf62d420a&OrderBy=PXPC.DisplayOrder%20Asc,%20P.Price1),
 </span>
 <span title="hawaii w/gina, 6/10/2010">
 2006
@@ -4044,26 +4050,26 @@ Quintessa
 <span title="wine tasting w/gretchen">
 [Elyse](http://www.elysewinery.com)
 (Napa, California)  
-[Korte Ranch Zinfandel](http://www.snooth.com/wine/2006-elyse-korte-ranch-napa-valley-zinfandel-2006/)
+[Zinfandel Korte Ranch](http://www.snooth.com/wine/2006-elyse-korte-ranch-napa-valley-zinfandel-2006/)
 <good>,
-[Howell Mountain Zinfandel](http://www.snooth.com/wine/elyse-zinfandel-howell-mountain-2004/)
+[Zinfandel Howell Mountain](http://www.snooth.com/wine/elyse-zinfandel-howell-mountain-2004/)
 <good>,
-[AKA Zinfandel](http://www.snooth.com/wine/elyse-zinfandel-k-2006/)
+[Zinfandel AKA](http://www.snooth.com/wine/elyse-zinfandel-k-2006/)
 <good>,
-[Morisoli Zinfandel](http://www.snooth.com/wine/elyse-zinfandel-morisoli-vineyard-2004/)
+[Zinfandel Morisoli](http://www.snooth.com/wine/elyse-zinfandel-morisoli-vineyard-2004/)
 <good>,
 </span>
 <span title="costco w/gina, 4/14/2012">
-[2006 Tietjen Cabernet Sauvignon](http://www.cellartracker.com/wine.asp?iWine=1020564)
+[2006 Cabernet Sauvignon Tietjen](http://www.cellartracker.com/wine.asp?iWine=1020564)
 <ok>
 </span>
 
 <span title="wine tasting w/gretchen">
 [Clos du Val](http://www.closduval.com/)
 (Napa, California)  
-[2006 Napa Valley Cabernet Sauvignon](http://www.closduval.com/store/index.cfm?fuseaction=productdetail&product_id=206)
+[2006 Cabernet Sauvignon Napa Valley](http://www.closduval.com/store/index.cfm?fuseaction=productdetail&product_id=206)
 <good>,
-[2005 Napa Valley Cabernet Sauvignon](http://www.closduval.com/store/index.cfm?fuseaction=productdetail&product_id=195)
+[2005 Cabernet Sauvignon Napa Valley](http://www.closduval.com/store/index.cfm?fuseaction=productdetail&product_id=195)
 <good>
 </span>
 
@@ -4072,7 +4078,7 @@ Quintessa
 (Napa, California)  
 [2005 Cabernet Sauvignon](http://www.snooth.com/wine/goosecross-cellars-cabernet-sauvignon-2005/)
 <good>,
-[2004 Howell Mountain Cabernet Sauvignon](http://www.snooth.com/wine/howell-mountain-cabernet-goosecross-wines-2004-2/),
+[2004 Cabernet Sauvignon Howell Mountain](http://www.snooth.com/wine/howell-mountain-cabernet-goosecross-wines-2004-2/),
 <good>,
 2005 Syrah
 <good>,
@@ -4124,15 +4130,15 @@ Elements
 <span title="at meadowood">
 [Roar](http://www.roarwines.com/)
 (Paso Robles, California)  
-[2006 Garys' Vineyard Pinot Noir](http://www.roarwines.com/pages/reviews.cfm)
+[2006 Pinot Noir Garys' Vineyard](http://www.roarwines.com/pages/reviews.cfm)
 <good> <good>,
 </span>
 <span title="dsg (w/clayton!) at prospect, 1/9/2011">
-[2008 Rosella's Vineyard Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=931464)
+[2008 Pinot Noir Rosella's Vineyard](http://www.cellartracker.com/wine.asp?iWine=931464)
 <good>,
 </span>
 <span title="25 lusk w/dan and kieran for kieran's bday, 9/20/2011">
-[2009 Pisoni Pinot Noir](http://www.cellartracker.com/wine.asp?iWine=958463)
+[2009 Pinot Noir Pisoni](http://www.cellartracker.com/wine.asp?iWine=958463)
 <ok>
 </span>
 
@@ -4153,7 +4159,7 @@ Elements
 <span title="at jardiniere 1/10/09, dinner w/clayton, cynthia, nathan before the symphony">
 [Ladera](http://www.laderavineyards.com/)
 (Napa, California)  
-[Howell Mountain Cabernet Sauvignon](http://www.laderavineyardsstore.com/index.cfm?method=storeproducts.showDrilldown&productid=d8b281a4-0291-b25b-fb56-70dba2423227)
+[Cabernet Sauvignon Howell Mountain](http://www.laderavineyardsstore.com/index.cfm?method=storeproducts.showDrilldown&productid=d8b281a4-0291-b25b-fb56-70dba2423227)
 <good>
 </span>
 
@@ -4208,7 +4214,7 @@ and i both loved it -->
 <span title="also at local">
 Susana Balbo
 (Mendoza, Argentina)  
-[Crios Malbec](http://www.snooth.com/wine/crios-de-susana-balbo-malbec-2007/)
+[Malbec Crios](http://www.snooth.com/wine/crios-de-susana-balbo-malbec-2007/)
 <ok>
 </span>
 
@@ -4265,7 +4271,7 @@ Casa Vinicola Michele Alois
 <span title="too tart">
 Bodega Monte la Reina
 (Castilla y León, Spain)  
-[Castillo de Monte la Reina Tempranillo](http://www.snooth.com/wine/castillo-de-monte-la-reina-2005/)
+[Tempranillo Castillo de Monte la Reina](http://www.snooth.com/wine/castillo-de-monte-la-reina-2005/)
 <bad>
 </span>
 
