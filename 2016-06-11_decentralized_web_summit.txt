@@ -56,7 +56,7 @@ New Gs, drawn together by a common desire to
 [redecentralize](http://redecentralize.org/) the web. We discussed the past,
 present, and future, compared projects and protocols - including
 [my own little ditty on the IndieWeb](https://indiewebcamp.com/events/2016-06-09-dwebsummit-indieweb)
-((video](https://archive.org/details/DecentralizedWeb20160609pt1?start=8826)) -
+([video](https://archive.org/details/DecentralizedWeb20160609pt1?start=8826)) -
 and debated what to do next. It was great.
 
 My first big takeaway was that the community seems to be maturing. Just by
@@ -111,10 +111,6 @@ have exposed their inherent flaws. Projects like
 [Certificate Transparency](https://www.certificate-transparency.org/) are
 laudable, but they're really just band-aids. They can contain damage, but they
 can't prevent it entirely.
-
-<p class="third left">
- <a href="https://www.certificate-transparency.org/">
-  <img src="/certificate_transparency.png" /></a></p>
 
 Human organizations regularly do superhuman things, and they may still be the
 right long term approach here. We've just never had a real alternative before.
