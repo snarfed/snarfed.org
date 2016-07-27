@@ -19,7 +19,7 @@ other private rss feeds.
 
 xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
   ~/etc/newsblur-feeds.opml.xml \
-  | grep -v -E 'facebook|goodreads|instagram-atom|link:snarfed.org|mockfacebook|picasaweb|plusstreamfeed|private|smugmug|twitter-atom|Twitter list|Twitter Search|usubscription'
+  | grep -v -E 'facebook|goodreads|granary-demo|instagram-atom|link:snarfed.org|mockfacebook|picasaweb|plusstreamfeed|private|smugmug|twitter-atom|Twitter list|Twitter Search|usubscription'
 
 
 pages without feeds
@@ -34,7 +34,7 @@ support in 10/2012:
 https://dev.twitter.com/discussions/11831
 http://brodiesnotes.blogspot.com/2012/10/has-twitter-killed-rss-feeds-yet.html
 
-i currently use a yahoo pipe:
+i used to use a yahoo pipe:
 http://pipes.yahoo.com/pipes/pipe.info?_id=f49405304db01792c182c01ebd1d1b34
 
 here's the generated feed url:
