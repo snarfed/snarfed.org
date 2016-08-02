@@ -3,8 +3,21 @@ about
 <p class="right"><a class="shutter" href="/ryan.jpg">
   <img class="shadow" src="/ryan_profile_square_thumb.jpg" /></a></p>
 
-Ryan Barrett  
-[public&#64;ryanb&#46;org](mailto:public_at_ryanb_dot_org)  
+I'm Ryan Barrett.
+
+<a href="https://twitter.com/schnarfed" title="Twitter">
+  <span class="genericon genericon-twitter"></span>
+  schnarfed
+</a>  
+<a href="https://github.com/snarfed" title="GitHub">
+  <span class="genericon genericon-github"></span>
+  snarfed
+</a>  
+<a href="mailto:public_at_ryanb_dot_org" title="email">
+  <span class="genericon genericon-mail" style="vertical-align: text-bottom"></span>
+  public&#64;ryanb&#46;org
+</a>
+
 <!-- [public encryption key](/pubkey.txt) -->
 
 [snarfed.org](/) has been around [since early 2002](/snarfed_org_history). It was
