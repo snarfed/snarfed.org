@@ -1,0 +1,11 @@
+
+
+<a href="https://medium.com/">
+ <p class="third right">
+  <img class="shadow" src="/medium_logo.png" /></p></a>
+
+Added [Medium](https://medium.com/) support to [Bridgy](https://brid.gy/). Only
+outgoing webmentions so far, hopefully more eventually if they add
+[API](https://github.com/Medium/medium-api-docs/issues/71)
+[support](https://github.com/Medium/medium-api-docs/issues/72).
+Happy [IndieWeb](https://indieweb.org/)ing!
