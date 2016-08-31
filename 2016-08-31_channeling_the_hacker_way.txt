@@ -1,0 +1,42 @@
+Channeling the hacker way
+
+<p class="third right">
+ <a href="/color_genomics_hack_week.jpg">
+  <img src="/color_genomics_hack_week_thumb.jpg" /></a></p>
+
+_[Also posted on the Color Genomics blog.](https://blog.getcolor.com/channeling-the-hacker-way-7a4d8894cc79)_
+
+We have big dreams and ambitious plans. We want to push the state of the art in health and genetics, and we need broad, crazy moonshot product ideas to get us there. How do we find those ideas?
+
+We’ve always been inspired by [20% time](http://www.businessinsider.com/google-20-percent-time-policy-2015-4) at Google and 3M and [hack weeks at Twitter](https://blog.twitter.com/2012/hack-week-twitter), so we decided to do our own hack week. We invited everyone to put normal work on hold for a full week to try out new ideas, no matter how crazy or tangential. We didn't know how many people would participate, or whether we could ship any of the results, but it was worth a shot!
+
+<!-- more -->
+<span />
+
+<blockquote class="twitter-tweet" data-lang="en">
+<p lang="en" dir="ltr">
+Get comfortable with uncertainty; it leaves room for inspiration.
+<a href="https://twitter.com/hashtag/hackweek?src=hash">#hackweek</a>
+</p>
+&mdash; benji shine (@bshine)
+<a href="https://twitter.com/bshine/status/161924775223111680">January 24, 2012</a></blockquote>
+<script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+<br />
+
+Our first task was to pick a theme. We chose engagement: how can we help people continue to engage with their genetics and health over time? We dragged everyone into a few big rooms and brainstormed project ideas. No judgment, no constraints, no requirements, no analysis or pro/con lists. Just ideas. By the end of these sessions, we had over 50 candidates to explore in the week to come.
+
+We kicked off hack week proper on Monday morning with an example project: reincarnation detection. Could we identify who you'd been in past lives? With tongue firmly in cheek, we described how to recruit teammates with good karma, work with researchers to identify genetic markers across lives, partner with Buddhist monks, and design a “Talk to the Other Side” messaging UX.
+
+We set everyone loose, and they hit the ground running. People wrote up pitches, formed teams with great names - Pink Duck was a personal favorite - and jumped on company mailing lists to recruit team members. Many people joined two or three teams each.
+
+<p class="half left">
+ <a href="/color_genomics_hack_week.jpg">
+  <img class="shadow" src="/color_genomics_hack_week_thumb.jpg" /></a></p>
+
+We emphasized that we wanted everyone to participate, across job roles. Design mockups and prototype code were nice, but not required! We encouraged people to start broad and high level, then find a [vertical slice](https://en.wikipedia.org/wiki/Vertical_slice) that they could flesh out in a single week. We put up screens around the office that rotated between team Slack channels, project docs, and mockups and prototypes as they came together.
+
+The week culminated in an all hands [Demo Day](https://techcrunch.com/2016/08/22/y-combinator-demo-day-summer-2016/) where each team got a few minutes to present their project. We saw live demos, skits, theme songs, and even a custom video. We voted on yearbook-style awards like Best Dressed, Most Likely to Succeed, and Crazy like a Fox. Everyone had a blast.
+
+After the excitement wound down and the dust settled, we surveyed the results. Over half the company participated, working on 11 projects that all made significant progress toward proofs of concept.
+
+Hack week infused us with new ideas to help our clients understand and act on their genetic data. We look forward to implementing some of the best ideas, and we hope they’ll help our clients lead longer, healthier lives. That's the real prize.
