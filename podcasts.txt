@@ -10,6 +10,13 @@ Thanks to [BeyondPod](http://www.beyondpod.mobi/) and
 which I use to generate this list.
 
 <!--
+first remove the Stories, All, and Uncategorized <outline>s and </outline>s
+
+then sort OPML in emacs (one line per <outline>) with:
+M-x sort-regexp-fields
+^.*$
+text="[^"]*"
+
 opml2markdown command line:
 
 xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
@@ -49,6 +56,7 @@ http://www.youtube.com/user/AcademyIAS
 
 * 99% Invisible (_[subscribe](http://feeds.99percentinvisible.org/99percentinvisible)_)
 * Big Ideas - Full program podcast (_[subscribe](http://www.abc.net.au/radionational/feed/2883098/podcast.xml)_)
+* Climate One at The Commonwealth Club (_[subscribe](http://audio.commonwealthclub.org/audio/podcast/climateone.xml)_)
 * Commonwealth Club Radio Program (_[subscribe](http://audio.commonwealthclub.org/audio/podcast/weekly.xml)_)
 * Criminal (_[subscribe](http://feeds.feedburner.com/CriminalShow)_)
 * DecodeDC (_[subscribe](http://feeds.soundcloud.com/users/20170457-decodedc/tracks)_)
@@ -59,9 +67,9 @@ http://www.youtube.com/user/AcademyIAS
 * Future Tense Separate stories podcast (_[subscribe](http://www.abc.net.au/radionational/feed/2883732/podcast.xml)_)
 * Gamers With Jobs - Conference Call (_[subscribe](http://www.gamerswithjobs.com/taxonomy/term/408/0/feed)_)
 * Giant Bomb's Interview Dumptruck (_[subscribe](http://www.giantbomb.com/podcast-xml/interview-dumptruck/)_)
+* Heavyweight (_[subscribe](http://feeds.gimletmedia.com/heavyweightpodcast)_)
 * Hidden Brain (_[subscribe](http://www.npr.org/rss/podcast.php?id=510308)_)
-* Ideas from CBC Radio (Highlights) (_[subscribe](http://www.cbc.ca/podcasting/includes/ideas.xml)_)
-* Love + Radio (_[subscribe](http://feeds.feedburner.com/loveplusradio)_)
+* How I Built This (_[subscribe](http://www.npr.org/rss/podcast.php?id=510313)_)
 * New Tech City (_[subscribe](http://feeds.wnyc.org/new-tech-city)_)
 * NPR's On the Media (_[subscribe](http://feeds.wnyc.org/onthemedia)_)
 * NPR: Invisibilia Podcast (_[subscribe](http://www.npr.org/rss/podcast.php?id=510307)_)
@@ -73,10 +81,12 @@ http://www.youtube.com/user/AcademyIAS
 * Omega Tau (_[subscribe](http://omegataupodcast.net/englishOnly.php)_)
 * Orbital Path (_[subscribe](http://feeds.orbital.prx.org)_)
 * Polygon Longform (_[subscribe](http://feeds.feedburner.com/PolygonLongForm)_)
+* Polygon Newsworthy (_[subscribe](http://feeds.feedburner.com/PolygonNewsworthy)_)
 * Polygon Wireframe (_[subscribe](http://feeds.feedburner.com/PolygonWireframe)_)
 * Polygon's Quality Control (_[subscribe](http://feeds.feedburner.com/polygonqualitycontrol)_)
 * Porchlight Storytelling Series (_[subscribe](http://porchlight.libsyn.com/rss)_)
 * ProPublica: Podcast (_[subscribe](http://feeds.propublica.org/propublica/podcast)_)
+* Radiolab Presents: More Perfect (_[subscribe](http://feeds.wnyc.org/moreperfect)_)
 * Reply All (_[subscribe](http://feeds.gimletmedia.com/hearreplyall)_)
 * SALT - Seminars About Long Term Thinking (_[subscribe](http://longnow.org/projects/seminars/SALT.xml)_)
 * Science Vs (_[subscribe](http://feeds.gimletmedia.com/sciencevs)_)
@@ -84,7 +94,6 @@ http://www.youtube.com/user/AcademyIAS
 * Stanford Storytelling Project (_[subscribe](http://stanfordstorytelling.com/rss.xml)_)
 * StartUp Podcast (_[subscribe](http://feeds.hearstartup.com/hearstartup)_)
 * TEDTalks (audio) (_[subscribe](http://feeds.feedburner.com/tedtalks_audio)_)
-* TEDTalks (video) (_[subscribe](http://feeds.feedburner.com/tedtalks_video)_)
 * The Brainy Gamer Podcast (_[subscribe](http://feeds.feedburner.com/brainygamerpodcast)_)
 * The Curious Gamer (_[subscribe](http://feeds.feedburner.com/TheCuriousGamer)_)
 * The Economist (_[subscribe](http://feeds.feedburner.com/economist/audio_all)_)
@@ -97,4 +106,6 @@ http://www.youtube.com/user/AcademyIAS
 * TLDR (_[subscribe](http://feeds.wnyc.org/otm_tldr)_)
 * Transistor (_[subscribe](http://feeds.prx.org/transistor_stem)_)
 * Transom Podcast (_[subscribe](http://transom.org/topics/transom-podcast/feed/)_)
+* Ways & Means (_[subscribe](http://waysandmeans.libsyn.com/rss)_)
+* WIRED's Game|Life Podcast (_[subscribe](http://www.wired.com/feed/podcast/gamelife)_)
 * WNYC's Radio Lab (_[subscribe](http://feeds.wnyc.org/radiolab?format=xml)_)
