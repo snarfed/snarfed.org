@@ -1,6 +1,6 @@
 about
 
-<p class="right"><a class="shutter" href="/ryan.jpg">
+<p class="right" style="max-width: 50%"><a href="/ryan.jpg">
   <img class="shadow" src="/ryan_profile_square_thumb.jpg" /></a></p>
 
 I'm Ryan Barrett.

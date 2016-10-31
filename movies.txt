@@ -5,7 +5,8 @@ movies
 Movies I've watched and want to watch.
 <good> I liked,
 <ok> were just ok,
-<bad> I didn't like.
+<bad> I didn't like,
+<unfinished> I didn't finish.
 
 Naturally, this isn't comprehensive, and it's biased toward my taste. If I mark
 a movie <nobr><bad>,</nobr> I may still think it's good overall, but
@@ -39,27 +40,13 @@ Also see [books](/books), [games](/games), and [other lists](/lists).
 
 * [World Of Tomorrow](http://www.imdb.com/title/tt4171032/)
 
-* [Room](http://www.imdb.com/title/tt3170832/)
-
 * [Anomalisa](http://www.imdb.com/title/tt2401878/)
 
-* [Inside Out](http://www.imdb.com/title/tt2096673/)
-
-* [Maps To The Stars](http://www.imdb.com/title/tt2172584/)
-
-* [The Change-Up](http://www.imdb.com/title/tt1488555/)
-
-* [Sicario](http://www.imdb.com/title/tt3397884/)
-
 * [Hail, Caesar!](http://www.imdb.com/title/tt0475290/)
-
-* Star Wars 5-6, 1-3
 
 * [Entourage](http://www.imdb.com/title/tt1674771/)
 
 * [Pan](http://www.imdb.com/title/tt3332064/)
-
-* [Straight Outta Compton](http://www.imdb.com/title/tt1398426/)
 
 * [Blade Runner](http://imdb.com/title/tt0083658/)
 
@@ -71,6 +58,19 @@ Also see [books](/books), [games](/games), and [other lists](/lists).
 
 
 **Watched**:
+
+* [The Change-Up](http://www.imdb.com/title/tt1488555/)
+<ok>
+
+* [Maps To The Stars](http://www.imdb.com/title/tt2172584/)
+<bad>
+<unfinished>
+
+* [Whiskey Tango Foxtrot](http://www.imdb.com/title/tt3553442/)
+<ok>
+
+* [Joy](http://www.imdb.com/title/tt2446980/)
+<bad>
 
 * [ARQ](http://www.imdb.com/title/tt5640450/)
 <bad>
@@ -126,6 +126,10 @@ Also see [books](/books), [games](/games), and [other lists](/lists).
 
 * [Tomorrowland](http://www.imdb.com/title/tt1964418/)
 <ok>
+
+* [Room](http://www.imdb.com/title/tt3170832/)
+<bad>
+<good>
 
 * [Spotlight](http://www.imdb.com/title/tt1895587/)
 <good>

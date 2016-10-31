@@ -4,7 +4,8 @@ App Engine global transactions
   <a href="http://appengine.google.com/">
     <img src="/app_engine_logo_final.png" /></a></p>
 
-Originally posted as an [answer](http://stackoverflow.com/a/17778682/186123) to
+Originally posted as an
+<a class="u-syndication" href="http://stackoverflow.com/a/17778682/186123">answer</a> to
 [this StackOverflow question](http://stackoverflow.com/questions/17721895/gae-transaction-failure-and-idempotency/22052961):
 
 > The [Google App Engine](http://appengine.google.com/) documentation contains

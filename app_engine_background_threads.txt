@@ -3,7 +3,7 @@ How many App Engine background threads can run in parallel?
 <p class="right third">
   <img src="/app_engine_logo_final.png" /></p>
 
-[Originally posted on StackOverflow.](http://stackoverflow.com/questions/13936544/max-number-of-parallel-background-threads-backend/20896720)
+<a class="u-syndication" href="http://stackoverflow.com/questions/13936544/max-number-of-parallel-background-threads-backend/20896720">Originally posted on StackOverflow.</a>
 
 > How many
 > [background threads](https://developers.google.com/appengine/docs/python/backends/#Python_Background_threads)
