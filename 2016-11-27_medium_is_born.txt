@@ -1,31 +1,43 @@
 A medium is born
 
-Artistic mediums are a small, rarefied lot. We have books from _[War and Peace]()_ to _[The DaVinci Code]()_ and everything between, but they're all still books. _[Citizen Kane]()_ and _[Jackass]()_ seem to have nothing in common, but they're both movies. Add art, music, theater, radio, games - ok comic book nerds, graphic novels too - and that's pretty much it. We can haggle over subtypes like radio dramas or journalism or stand-up comedy, but still. Thousands of years of civilization, and we can still [count the main artistic mediums]() on just two hands, with room to spare.
+<p class="right half">
+ <img class="shadow" src="vr_headset_silhouette.jpg"/></a></p>
+
+Artistic mediums are a small, rarefied lot. We have books from _[War and Peace](https://books.google.com/books?id=JslQnQEACAAJ)_ to _[The Da Vinci Code](https://books.google.com/books?id=bWdEKNsaMQEC)_ and everything between, but they're all still books. _[Citizen Kane](http://www.imdb.com/title/tt0033467/)_ and _[Jackass](http://imdb.com/title/tt0493430/)_ seem to have nothing in common, but they're both movies. Add art, music, theater, radio, games - ok comic book nerds, graphic novels too - and that's pretty much it. We can haggle over subtypes like radio dramas or journalism or stand-up comedy, but still. Thousands of years of civilization, and we can still [count the main artistic mediums]() on just two hands, with room to spare.
 
 ...except now. VR is here, and we have the awesome privelege of witnessing its birth, awkward first steps, and development into a full blown, entirely new artistic medium. That doesn't happen often, and it's pretty damn cool.
 
-Mediums don't spring into existence fully formed. Music has come a long way since [Gregorian chant](). Modern movies may be descendants of [Lumier's XXX](), but they're so different as to be basically unrecognizable. There were countless experiments, false steps, and blind fumbles along the way to the shared conventions and techniques we take for granted today.
+Mediums don't spring into existence fully formed. Music has come a long way since [Gregorian chant](). Modern movies may descend from the [Louis Lumière](https://en.wikipedia.org/wiki/Auguste_and_Louis_Lumi%C3%A8re)'s _[Sortie de l'usine Lumière de Lyon](https://en.wikipedia.org/wiki/Workers_Leaving_the_Lumi%C3%A8re_Factory)_, but they're so different as to be basically unrecognizable. There were countless experiments, false steps, and blind fumbles along the way to the shared conventions and techniques we take for granted today.
 
-Take movies, for example. We celebrate movies with extended single-take scenes like _[Children of Men]()_ and _[Birdman]()_, but the first movies were _all_ single takes. Early filmmakers thought cuts would confuse audiences or lose them entirely. Reality doesn't have cuts, right? [HOW THEY CAME TO BE] Moving cameras, close-ups, color subtitles, and establishing shots all have similar origin stories. They didn't happen automatically; early filmmakers discovered them through slow, tedious experimentation. And for every technique that lasted, ten others were tried and discarded. [FIND MORE]
+[Georges Méliès](https://en.wikipedia.org/wiki/Georges_M%C3%A9li%C3%A8s)
+
+Take movies, for example. We celebrate movies with extended single-take scenes like _[Children of Men](http://imdb.com/title/tt0206634/)_ and _[Birdman](http://www.imdb.com/title/tt2562232/)_, but the first movies were _all_ single takes. Early filmmakers thought cuts would confuse audiences or lose them entirely. Reality doesn't have cuts, right? [HOW THEY CAME TO BE] Moving cameras, close-ups, color subtitles, and establishing shots all have similar origin stories. They didn't happen automatically; early filmmakers discovered them through slow, tedious experimentation. And for every technique that lasted, ten others were tried and discarded. [FIND MORE]
 
 We've already seen the same thing happen with VR. Just to get mainstream devices out the door, developers had to find the right resolution, framerate, field of view, latency, and inter-pixel distance (aka screen door effect) to make the VR experience viable.
 
+<p class="right half">
+ <a href="https://en.wikipedia.org/wiki/A_Trip_to_the_Moon">
+   <img class="shadow" src="/melies_trip_to_the_moon.jpg"/></a></p>
+
 Once creators got their hands on dev kits, they faced an entirely new set of challenges. VR today infamously makes a handful of people nauseous, especially when their viewpoint moves while their body stays still. Creators have tried all sorts of techniques to handle this, and settled on two that seem to work: [teleporting]() and [tunnel vision](). Similarly, filmmakers aim their cameras, but 360° VR films let viewers look anywhere, so VR filmmakers are [learning to frame shots with sets and lighting]() instead of cameras.
 
-_Good artists borrow; great artists steal_, or so they saying goes, and artistic techniques are no exception. Video games, for example, have faced many of these problems for decades and developed their own solutions. Valve's _[Half Life 2]()_, for example, [famously pioneered set direction and framing]() to get players with freedom of movement to look where they wanted.
+_Good artists borrow; great artists steal_, or so they saying goes, and artistic techniques are no exception. Video games, for example, have faced many of these problems for decades and developed their own solutions. Valve's _[Half Life 2](http://www.half-life2.com/)_, for example, [famously pioneered set direction and framing]() to get players with freedom of movement to look where they wanted.
 
 Personally, I find all this fascinating. Technology is constantly evolving, so we often think about how technology enables and shapes art, whether it sticks (35mm film) or not (multimedia). Mediums don't evolve nearly as obviously, though, so we don't think as much how _art shapes technology_, but it absolutely does. Set framing and teleporting in VR may be intangible, but they're arguably still technology, just as much as as 35mm film.
 
 Even when we do think about art shaping technology, it's much harder to actually see it happening in real time. Evolution really is an apt analogy here. When life first hits a new or different environment, there's an explosion of differentiation and new species as evolution finds all the species that survive. (Hence ["Cambrian explosion."]()) After that, progress slows down to incremental improvement, as more and more of the niches in the ecosystem are filled in.
 
-Artistic mediums are the same way. At the beginning, no one knows the rules - there aren't any! - so creators try out everything to see what sticks. This experimentation slows down as winners emerge, though. Novels have been around for millenia, for example, so we don't often see truly new structures or techniques. We may gush about trendy new ideas like unreliable narrators or hypertext, but even those are rooted decades or centuries ago.
+Artistic mediums are the same way. At the beginning, no one knows the rules - there aren't any! - so creators try anything and everything to see what sticks. This experimentation slows down as winners emerge. Novels have been around for millenia, for example, so we don't often see truly new structures or techniques. We may gush about trendy new ideas like unreliable narrators or hypertext, but even those are rooted decades or centuries ago.
 
-can't change its evolution, like tech
-can watch. entertaining
-will be most documented birth
-  other recent: games, comics
-fastest from nothing to mainstream adoption?
-most false starts?
+OK, so there aren't many different artistic mediums, VR is a new one, and we're witnessing its birth, right now. So what? Should we watch for anything in particular? Should we try to nudge it in any particular direction? Is some unique opportunity opening up that we may not see again?
+
+Probably not. VR has plenty of attention and press coverage, and a small army of developers and creators pushing it in every direction. We'll learn new things about VR for decades to come, but the steps along the way will be heavily documented. More importantly, like any technology, we
+[don't really have much control over how it evolves](http://kk.org/books/what-technology-wants/).
+
+Also, despite my gushing, it's not the first new medium in recent history. Only art, music, theater, and the written word predate the 20th century. Radio, television, film, graphic novels, and video games were all born in [just the last 2% of recored history](https://en.wikipedia.org/wiki/History_of_writing#Inventions_of_writing). We documented their development, watched creators grapple with them, and adopted them into the mainstream (or not) over and over.
+
+So, I have no call to action, except to pay attention. It may not be unique in recent history, but the birth of a wholly new artistic medium still feels unique and new _to me_. It's the first time I've ever seen it happen as an adult, when I can appreciate it. I don't know which new techniques and conventions will creators forge next, but I can't wait to find out.
+
 
 
 art
