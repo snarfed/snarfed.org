@@ -1,6 +1,38 @@
 pictures
 
 <div class="ngg-album-compact">
+<a href="/sonoma_house">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2016/12/16-300x200.jpg" />
+  </div>
+  <h4>sonoma house</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/brooke-months-24-27">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2016/11/ashcrafts_fire_truck-300x225.jpg" />
+  </div>
+  <h4>brooke months 24-27</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/halloween-2016">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2016/10/color_elmo_holding_brooke-300x200.jpg" />
+  </div>
+  <h4>halloween 2016</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/calistoga-2016">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2016/09/small_table_farms_table_menu-300x225.jpg" />
+  </div>
+  <h4>calistoga 2016</h4>
+</a></div>
+
+<div class="ngg-album-compact">
 <a href="/brooke-months-20-23">
   <div class="ngg-album-compactbox">
     <img src="/w/wp-content/uploads/2016/08/brooke_devon_lola_2-300x169.jpg" />
@@ -78,6 +110,14 @@ pictures
     <img src="/w/wp-content/uploads/2016/01/drunk-300x225.jpg" />
   </div>
   <h4>brooke months 12-15</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/2015-10-06_iceland">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2015/10/bankastraeti_street_trolls_ryan-300x225.jpg" />
+</div>
+  <h4>iceland</h4>
 </a></div>
 
 <div class="ngg-album-compact">
