@@ -1,8 +1,8 @@
 
-<p class="right">
-  <img class="shadow third" src="/south_park_leap_second.jpg" />
+<p class="right third">
+  <img class="shadow" src="/south_park_leap_second.jpg" />
 </p>
 
-2016 doesn't just feel like the longest year in a while, it actually is. It's both a [leap year](https://en.wikipedia.org/wiki/Leap_year) and has a [leap second](https://en.wikipedia.org/wiki/Leap_second), which has been [notoriously dangerous](http://www.somebits.com/weblog/tech/bad/leap-second-2012.html) [to the internet](https://www.wired.com/2012/07/leap-second-glitch-explained/) [and computers](https://lkml.org/lkml/2012/7/1/203) [in general](http://catless.ncl.ac.uk/Risks/24.80.html#subj12).
+2016 doesn't just feel like the longest year in a while, it actually is. It's both a [leap year](https://en.wikipedia.org/wiki/Leap_year) and has a [leap second](https://en.wikipedia.org/wiki/Leap_second), which is [notoriously dangerous](http://www.somebits.com/weblog/tech/bad/leap-second-2012.html) [to the internet](https://www.wired.com/2012/07/leap-second-glitch-explained/) [and computers](https://lkml.org/lkml/2012/7/1/203) [in general](http://catless.ncl.ac.uk/Risks/24.80.html#subj12).
 
 Happy New Year! And karma and hugs to ops people on call everywhere. [May the queries flow and the pagers slumber.](https://docs.google.com/document/d/199PqyG3UsyXlwieHaqbGiWVa8eMWi8zzAn0YfcApr8Q/edit)

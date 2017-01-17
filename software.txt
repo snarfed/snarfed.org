@@ -10,198 +10,198 @@ see [my GitHub profile](https://github.com/snarfed) and [other lists](/lists).
 <a name="projects"></a>
 ### Projects
 
-  * [Bridgy](http://brid.gy/): Got a web site? Post links to your site on social
+* [Bridgy](http://brid.gy/): Got a web site? Post links to your site on social
 networks? Wish comments and likes showed up on your site? Bridgy copies them
 back for you. Part of the [IndieWeb](http://indiewebcamp.com/) ecosystem.
 
-  * [huffduff-video](http://huffduff-video.snarfed.org/) lets you send
+* [huffduff-video](http://huffduff-video.snarfed.org/) lets you send
 [Huffduffer](http://huffduffer.com/) the audio from videos on YouTube, Vimeo,
 [and more](http://rg3.github.io/youtube-dl/supportedsites.html).
 
-  * [granary](https://github.com/snarfed/granary) is a library and REST API that
+* [granary](https://github.com/snarfed/granary) is a library and REST API that
 read, writes, and converts Facebook, Twitter, and Instagram data to
 [ActivityStreams](http://activitystrea.ms),
 [microformats2](http://microformats.org/wiki/microformats2) HTML and JSON,
 [Atom](http://atomenabled.org/), XML, and more!
 
-  * [wordpress-micropub](https://github.com/snarfed/wordpress-micropub) is a
+* [wordpress-micropub](https://github.com/snarfed/wordpress-micropub) is a
 [Micropub](http://indiewebcamp.com/micropub) server plugin for WordPress.
 
-  * [OwnYourResponses](https://github.com/snarfed/ownyourresponses) is
+* [OwnYourResponses](https://github.com/snarfed/ownyourresponses) is
 [PESOS](https://indiewebcamp.com/PESOS) as a service for likes, comments,
 reshares, etc. on social networks.
 
-  * [OwnYourCheckin](https://github.com/snarfed/ownyourcheckin) is
+* [OwnYourCheckin](https://github.com/snarfed/ownyourcheckin) is
 [PESOS](https://indiewebcamp.com/PESOS) as a service for Facebook checkins.
 
-  * [IndieWeb Press This bookmarklets for WordPress](/indieweb-press-this-bookmarklets-for-wordpress)
+* [IndieWeb Press This bookmarklets for WordPress](/indieweb-press-this-bookmarklets-for-wordpress)
 let you quickly [reply](http://indiewebcamp.com/reply),
 [like](http://indiewebcamp.com/like), [repost](http://indiewebcamp.com/repost),
 and [RSVP](http://indiewebcamp.com/rsvp) to [IndieWeb](http://indiewebcamp.com/)
 posts and events.
 
-  * [oauth-dropins](https://github.com/snarfed/oauth-dropins) is a collection of
+* [oauth-dropins](https://github.com/snarfed/oauth-dropins) is a collection of
 drop-in [OAuth](http://oauth.net/) client flows in Python
 [App Engine](https://appengine.google.com/) for popular sites like Facebook,
 Twitter, and many more.
 
-  * [Open Link in App](/2013-07-16_open-link-in-app) is an
+* [Open Link in App](/2013-07-16_open-link-in-app) is an
 Android app that opens links in their native app instead of the browser. It
 currently supports Facebook, Twitter, Instagram, GitHub, and Goodreads.
 
-  * [plusstreamfeed](https://plusstreamfeed.appspot.com/) generates and serves
+* [plusstreamfeed](https://plusstreamfeed.appspot.com/) generates and serves
 an Atom feed of your Google+ stream, ie posts from the people in your
 circles.
 
 * [instagram-atom](https://instagram-atom.appspot.com/) generates and serves
 an Atom feed of your Instagram stream, ie photos from the people you follow.
 
-  * [facebook-atom](https://facebook-atom.appspot.com/) generates and serves an
+* [facebook-atom](https://facebook-atom.appspot.com/) generates and serves an
 Atom feed of your Facebook news feed, ie
 posts from your friends. [More background.](/2012-03-12_activitystreams_for_facebook_and_twitter)
 
-  * [twitter-atom](https://twitter-atom.appspot.com/) generates and serves an
+* [twitter-atom](https://twitter-atom.appspot.com/) generates and serves an
 Atom feed of your Twitter stream or a Twitter list.
 [More background.](/2012-03-12_activitystreams_for_facebook_and_twitter)
 
-  * [portablecontacts-unofficial](https://github.com/snarfed/portablecontacts-unofficial)
+* [portablecontacts-unofficial](https://github.com/snarfed/portablecontacts-unofficial)
     is a library and REST API that converts Facebook and Twitter contacts to
     [PortableContacts](http://portablecontacts.net/) format. See the
     [blog post](/2012-02-22_portablecontacts_for_facebook_and_twitter) for more.
 
-  * [webfinger-unofficial](https://github.com/snarfed/webfinger-unofficial) is a
+* [webfinger-unofficial](https://github.com/snarfed/webfinger-unofficial) is a
     [WebFinger](http://code.google.com/p/webfinger/) server for social
     networking sites like Facebook and Twitter that don’t implement it
     themselves. See the
     [blog post](/2012-01-16_webfinger_for_facebook_and_twitter) for more.
 
-  * [salmon-unofficial](https://github.com/snarfed/salmon-unofficial) is a
+* [salmon-unofficial](https://github.com/snarfed/salmon-unofficial) is a
 [Salmon](http://salmon-protocol.org/) server for social networking sites like
 Facebook, Twitter, and Google+ that don't implement it themselves. See the
 [blog post](/2012-07-14_salmon_for_facebook_twitter_and_google_plus) for
 details.
 
-  * [Facebook to Wordpress](/2012-11-30_facebook_to_wordpress)
+* [Facebook to Wordpress](/2012-11-30_facebook_to_wordpress)
 is a script that copies your [Facebook](http://www.facebook.com/) posts to a
 [WordPress](http://wordpress.org/) blog of your choice.
 
-  * [Bowflex Planner](http://bowflex-planner.appspot.com/) optimizes Bowflex
+* [Bowflex Planner](http://bowflex-planner.appspot.com/) optimizes Bowflex
     Revolution exercise routines to minimize rearranging weights and
     attachments. It was an excuse to learn the
     [Go programming language](http://golang.org/) (aka golang).
 
-  * [codeherenow](https://github.com/snarfed/codeherenow) is a scrolling ticker
+* [codeherenow](https://github.com/snarfed/codeherenow) is a scrolling ticker
     of source code checkins made by people right here, right now (ie recently,
     at a specific place). Good for hackathons, conferences, etc. Written for
     (and at) [Super Happy Block Party](http://www.superhappy.be/).
 
-  * [Locale Headphone Buttons Plugin](/locale_headphone_buttons_plugin)
+* [Locale Headphone Buttons Plugin](/locale_headphone_buttons_plugin)
 is a plugin for the [Locale](http://www.twofortyfouram.com/) Android app that
 simulates pressing a headphone or headset button.
 
-  * [Locale Music Plugin](/locale_music_plugin)
+* [Locale Music Plugin](/locale_music_plugin)
 is a plugin for the [Locale](http://www.twofortyfouram.com/) Android app that
 plays any song, audio file, or playlist in the default music app.
 
-  * [mockfacebook](https://github.com/rogerhu/mockfacebook) is a standalone HTTP
+* [mockfacebook](https://github.com/rogerhu/mockfacebook) is a standalone HTTP
 server that implements Facebook's
 [FQL](http://developers.facebook.com/docs/reference/fql/) and
 [Graph API](http://developers.facebook.com/docs/reference/api/). It's
 particularly useful for testing.
 
-  * The [snarfed WordPress theme](/snarfed_wordpress_theme), which
+* The [snarfed WordPress theme](/snarfed_wordpress_theme), which
   <strike>is currently running</strike> used to run on this site.
 
-  * [google_talk_sms.pl](/google_talk_sms_pidgin_plugin),
+* [google_talk_sms.pl](/google_talk_sms_pidgin_plugin),
 a [Pidgin](http://pidgin.im/) plugin that enables
 [Google Talk](http://talk.google.com/)'s
 [SMS text messaging](http://gmailblog.blogspot.com/2008/12/really-new-in-labs-this-time-sms-text.html)
 feature.
 
-  * [shell](http://shell.appspot.com/),
+* [shell](http://shell.appspot.com/),
 [openid-provider](http://openid-provider.appspot.com/), and
 [openid-consumer](http://openid-consumer.appspot.com/), three
 [Google App Engine](http://code.google.com/appengine/)
 [sample apps](http://code.google.com/p/google-app-engine-samples/). See
 [my announcement](/2008-04-07_google_app_engine_launched) for details.
 
-  * [openid-test](http://code.google.com/p/openid-test/) is an
+* [openid-test](http://code.google.com/p/openid-test/) is an
     interoperability test suite for [OpenID](http://openid.net/).
 
-  * [PyBlosxom](http://pyblosxom.bluesock.org/) is a lightweight weblog
+* [PyBlosxom](http://pyblosxom.bluesock.org/) is a lightweight weblog
 platform, based on [Blosxom](http://blosxom.com/) and written in Python.
 
-  * An [OpenID comments plugin for PyBlosxom](/pyblosxom_openid_comments).
+* An [OpenID comments plugin for PyBlosxom](/pyblosxom_openid_comments).
 
-  * An [OpenID server plugin for PyBlosxom](/pyblosxom_openid_server).
+* An [OpenID server plugin for PyBlosxom](/pyblosxom_openid_server).
 
-  * [AJAX site search with the Google AJAX Search API](/site_search_with_the_Google_AJAX_Search_API).
+* [AJAX site search with the Google AJAX Search API](/site_search_with_the_Google_AJAX_Search_API).
 
-  * [index](/pyblosxom_index) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
+* [index](/pyblosxom_index) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
 plugin that displays an alphabetical index of all entries.
 
-  * [history](/pyblosxom_history) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
+* [history](/pyblosxom_history) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
 plugin that displays change history for entries.
 
-  * [photogallery](/photogallery) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
+* [photogallery](/photogallery) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
 plugin that displays photo galleries.
 
-  * [hardcodedates](/hardcodedates) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
+* [hardcodedates](/hardcodedates) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
 plugin that stores mtimes in a file.
 
-  * An [RDF flavour](/pyblosxom_rdf_flavour) for Pyblosxom.
+* An [RDF flavour](/pyblosxom_rdf_flavour) for Pyblosxom.
 
-  * The [snarfed.org PyBlosxom flavour](/snarfed_org_pyblosxom_flavour), which
+* The [snarfed.org PyBlosxom flavour](/snarfed_org_pyblosxom_flavour), which
 looks like this site.
 
-  * [Filekicker](/filekicker) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
+* [Filekicker](/filekicker) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
 plugin that serves static files.
 
-  * [Fillcode](/fillcode) is an [Emacs](http://gnu.org/software/emacs/)
+* [Fillcode](/fillcode) is an [Emacs](http://gnu.org/software/emacs/)
 minor mode that fills, or wraps, some parts of source code.
 
-  * [BigBrother](/bigbrother) generates statistics and graphs from your
+* [BigBrother](/bigbrother) generates statistics and graphs from your
 away message history. See my [personal
 example](/ryan.barrett.name/bigbrother/).
 
-  * [P4](/p4) is a compact, lightweight overlay network library, similar
+* [P4](/p4) is a compact, lightweight overlay network library, similar
 to [Gnutella](http://rfc-gnutella.sourceforge.net/) and
 [Chord](http://www.pdos.lcs.mit.edu/chord/).
 
-  * [libmsntp](/libmsntp) is a compact, portable
+* [libmsntp](/libmsntp) is a compact, portable
 [SNTP library](/libmsntp). It provides both client and server functionality.
 
-  * The [snarfed.org SnipSnap theme](/snarfed_org_snipsnap_theme), which looks
+* The [snarfed.org SnipSnap theme](/snarfed_org_snipsnap_theme), which looks
 like this site.
 
-  * [Snipsnap macros](/snipsnap_macros) is a collection of macros for
+* [Snipsnap macros](/snipsnap_macros) is a collection of macros for
 [SnipSnap](http://snipsnap.org), the web server that <strike>runs</strike> used
 to run this site.
 
-  * [Tictactoe](/tictactoe) is an OpenGL engine that provides realistic
+* [Tictactoe](/tictactoe) is an OpenGL engine that provides realistic
 procedural modelling and rendering of water.
 
-  * [Voxel](/voxel) is a high-resolution voxel terrain rendering engine.
+* [Voxel](/voxel) is a high-resolution voxel terrain rendering engine.
 
-  * [MAlbum](/malbum) is a quick and easy graphical interface for creating
+* [MAlbum](/malbum) is a quick and easy graphical interface for creating
 a web album. (Maulik has a
 [sample album](http://maulik.freeshell.net/software/malbum-release/malbumSample).)
 
-  * [Nullprpl](/nullprpl_pidgin_null_protocol_plugin) is a mock
+* [Nullprpl](/nullprpl_pidgin_null_protocol_plugin) is a mock
 protocol plugin that lets you use [Pidgin](http://pidgin.sf.net/) without
 connecting to a server.
 ([Added to Pidgin](http://developer.pidgin.im/viewmtn/revision/info/17c1e71f633d40fd14e46c08a17a500605d793c8)
 on 5/30/2007.)
 
-  * [Remote](/remote) is a client for
+* [Remote](/remote) is a client for
 [httpQ](http://httpq.sourceforge.net/), a network server plugin for
 [Winamp](http://winamp.com) (RIP; [download here](http://winamp.en.botbi.com/)).
 
-  * [Scavenger](/scavenger) extracts
+* [Scavenger](/scavenger) extracts
 [RFC2822](http://zvon.org/tmRFC/RFC2822/Output/index.html) email addresses from
 text and binary files.
 
-  * [Folderstat](/folderstat) retrieves the size of the folders in an IMAP
+* [Folderstat](/folderstat) retrieves the size of the folders in an IMAP
 email account.
 
 
@@ -209,61 +209,61 @@ email account.
 <a name="scripts"></a>
 ### Scripts
 
-  * [choose.sh](https://github.com/snarfed/misc/blob/master/choose.sh),
+* [choose.sh](https://github.com/snarfed/misc/blob/master/choose.sh),
     [choose.py](https://github.com/snarfed/misc/blob/master/choose.py), and
     [rename.sh](https://github.com/snarfed/misc/blob/master/rename.sh) are a
     dirt simple suite of scripts for managing pictures, specifically choosing
     the ones you want to keep and renaming (ie tagging) them.
 
-  * [import_issues.py](/import_issues) imports issues from a CSV file into a
+* [import_issues.py](/import_issues) imports issues from a CSV file into a
 [Google Code project hosting](http://code.google.com/hosting/)
 [issue tracker](http://code.google.com/p/support/wiki/IssueTracker).
 
-  * [Greasemonkey](http://greasespot.net/) usercripts:
+* [Greasemonkey](http://greasespot.net/) usercripts:
 [remove trailing quotes in GMail](/greasemonkey_gmail_remove_trailing_quote),
 [check availability in Palo Alto Library](/palo_alto_library_amazon_greasemonkey).
 
-  * [Userstyles](http://userstyles.org/help/userstyles):
+* [Userstyles](http://userstyles.org/help/userstyles):
 [More Minimalist Gmail](/more_minimalist_gmail),
 [Google Calendar Simplified](/google_calendar_simplified_userstyle), and
 [Google Tasks Simplified](/google_tasks_simplified_userstyle).
 
-  * [sync_wordpress.sh](/sync_wordpress) syncs
+* [sync_wordpress.sh](/sync_wordpress) syncs
 [WordPress](http://wordpress.org/), files, plugins, themes, and options
 stored in the database from one WordPress instance to another.
 
-  * [pyblosxom2wxr.sh](/pyblosxom2wxr) is a shell script that migrates content
+* [pyblosxom2wxr.sh](/pyblosxom2wxr) is a shell script that migrates content
 from [PyBlosxom](http://pyblosxom.bluesock.org/) to
 [WordPress](http://wordpress.org/).
 
-  * [unixify.sh](/unixify) is a simple shell script I use to sanitize
+* [unixify.sh](/unixify) is a simple shell script I use to sanitize
 filenames and files people send me from other operating systems.
 
-  * [backup_google.sh](/backup_google) is a shell script
+* [backup_google.sh](/backup_google) is a shell script
     that backs up data from Google
 [Contacts](http://www.google.com/contacts),
 [Calendar](http://calendar.google.com/),
 [Reader](http://www.google.com/reader/), and
 [Tasks](https://mail.google.com/tasks/canvas).
 
-  * [download_picasa_album.sh](/download_picasa_album) downloads entire
+* [download_picasa_album.sh](/download_picasa_album) downloads entire
 [Picasa Web](http://picasaweb.google.com/) photo albums.
 
-  * [simonitor](/simonitor) screen scrapes [simon.com](http://simon.com/)
+* [simonitor](/simonitor) screen scrapes [simon.com](http://simon.com/)
 to fetch the available balance on one or more Simon gift cards.
 
-  * [cdname.py](/cdname_py) names MP3 files according to
+* [cdname.py](/cdname_py) names MP3 files according to
 [CDDB](http://cddb.com/)/[freedb](http://freedb.org/) INF files.
 
-  * [snipsnap2svn](/snipsnap2svn) is an
+* [snipsnap2svn](/snipsnap2svn) is an
 [XSLT](http://www.w3.org/TR/xslt) script that converts
 [SnipSnap](http://snipsnap.org/) XML database exports into
 [Subversion dumpfiles](http://svn.collab.net/viewvc/*checkout*/svn/trunk/notes/fs_dumprestore.txt).
 
-  * [Ditrit](/ditrit) is a programmable application launcher that tries to
+* [Ditrit](/ditrit) is a programmable application launcher that tries to
 "do the right thing" for any input it's given.
 
-  * [snipscrape](/snipscrape) transforms SnipSnap-generated HTML into XML
+* [snipscrape](/snipscrape) transforms SnipSnap-generated HTML into XML
 that can be imported back into SnipSnap.
 
 
@@ -274,54 +274,54 @@ that can be imported back into SnipSnap.
 I stopped tracking these comprehensively a long time ago. Still, here's a
 sampling.
 
-  * A
+* A
 [patch](https://github.com/snarfed/misc/blob/master/patches/wordpress_ryu_theme_1.1_dates_on_pages.patch)
 for the [Ryu](http://wordpress.org/themes/ryu) WordPress theme that adds
 published and modified dates to pages.
 [Submitted here.](http://wordpress.org/support/topic/patch-show-published-and-modified-dates-on-pages)
 
-  * A [setting](https://github.com/tekezo/KeyRemap4MacBook/pull/118) for
+* A [setting](https://github.com/tekezo/KeyRemap4MacBook/pull/118) for
 [KeyRemap4MacBook](http://pqrs.org/macosx/keyremap4macbook/) that provides
 [sticky modifier keys](http://support.apple.com/kb/PH11262) like Mac OS X, but
 [_without_ locking](http://apple.stackexchange.com/questions/13708/disabling-the-keep-pressed-function-of-os-x-sticky-keys).
 
-  * A [patch](http://wordpress.org/support/topic/plugin-nextgen-gallery-patch-bug-fix-for-imagemagick-exec-and-passthru-checks)
+* A [patch](http://wordpress.org/support/topic/plugin-nextgen-gallery-patch-bug-fix-for-imagemagick-exec-and-passthru-checks)
 ([download](https://github.com/snarfed/misc/blob/master/patches/nextgen_gallery_imagemagick_exec_passthru_check.patch))
 for [NextGEN Gallery](http://www.nextgen-gallery.com/) that fixes its
 [ImageMagick](http://www.imagemagick.org/) checks for `exec` and `passthru`.
 
-  * A [patch](http://debbugs.gnu.org/cgi/bugreport.cgi?bug=9647) for
+* A [patch](http://debbugs.gnu.org/cgi/bugreport.cgi?bug=9647) for
 [Emacs](http://www.gnu.org/software/emacs/)'s
 [dirtrack-mode](http://www.emacswiki.org/emacs/ShellDirtrackByPrompt) that adds
 support for shells with path prefixes, e.g.
 [Tramp](http://www.gnu.org/software/tramp/)-based remote shells. Applied in
 [revision 106107](http://bzr.savannah.gnu.org/lh/emacs/trunk/revision/106107).
 
-  * A [patch](https://github.com/snarfed/misc/blob/master/patches/ajax_comment_preview_2.3_loading_and_error.patch) for the Wordpress
+* A [patch](https://github.com/snarfed/misc/blob/master/patches/ajax_comment_preview_2.3_loading_and_error.patch) for the Wordpress
 [Ajax Comment Preview](http://blogwaffe.com/ajax-comment-preview/) plugin that
 fixes bugs with the loading and error messages and wraps them in stylable spans.
 
-  * A [patch](https://github.com/snarfed/misc/blob/master/patches/www_netflix_new_rating_regex.patch) for the
+* A [patch](https://github.com/snarfed/misc/blob/master/patches/www_netflix_new_rating_regex.patch) for the
 [WWW::Netflix](http://search.cpan.org/dist/WWW-Netflix/) Perl library that
 update the regular expression it uses to screen-scrape movie ratings. This
 handles Netflix's HTML as of 11/2010.
 
-  * Patches to [shutter-reloaded](http://plugins.trac.wordpress.org/ticket/1178)
+* Patches to [shutter-reloaded](http://plugins.trac.wordpress.org/ticket/1178)
 and [NextGEN Gallery](http://www.nextgen-gallery.com/) that
 let you close the shutter display with the Escape key or by clicking on the
 background.
 
-  * Wordpress importer [patch](http://plugins.trac.wordpress.org/ticket/1162)
+* Wordpress importer [patch](http://plugins.trac.wordpress.org/ticket/1162)
 that fixes an order-dependent comment tag bug.
 
-  * Patches that add
+* Patches that add
 [per-comment hooks](http://code.google.com/p/thematic/issues/detail?id=83)
 (applied in [r661](http://code.google.com/p/thematic/source/detail?r=661))
 and a [comment-meta filter](http://code.google.com/p/thematic/issues/detail?id=82)
 (applied in [r660](http://code.google.com/p/thematic/source/detail?r=660))
 to the [Thematic](http://themeshaper.com/thematic/) Wordpress theme.
 
-  * Two minor patches
+* Two minor patches
 ([one](http://pythonpaste.org/archives/message/20080210.035948.3e0d6399.en.html),
 [two](http://pythonpaste.org/archives/message/20080210.185854.234c983e.en.html)) to
 [paste.webob](http://pythonpaste.org/webob/)
@@ -330,59 +330,59 @@ that fix character set handling bugs.
 [applied](http://trac.pythonpaste.org/pythonpaste/changeset/7235)
 on 2/17/2008).
 
-  * A [patch](https://github.com/snarfed/misc/blob/master/patches/opml2markdown_linkify.patch) for
+* A [patch](https://github.com/snarfed/misc/blob/master/patches/opml2markdown_linkify.patch) for
 [opml2markdown.xslt](http://fletcher.freeshell.org/wiki/Markdown_and_XML) that
 adds links to each item's web site and feed.
 
-  * A [patch](https://github.com/snarfed/misc/blob/master/patches/comments_openid.patch) that updates the
+* A [patch](https://github.com/snarfed/misc/blob/master/patches/comments_openid.patch) that updates the
 [PyBlosxom OpenID comments plugin](http://www.openidenabled.com/software/pyblosxom/release-announcement)
 to work with versions 1.x of the
 [Python OpenID libraries](http://www.openidenabled.com/openid/libraries/python).
 ([Applied](/pyblosxom_openid_comments) on 9/6/2007.)
 
-  * A [minor bugfix for cryptutil.py](https://github.com/snarfed/misc/blob/master/patches/cryptutil_ioerror.patch) in the
+* A [minor bugfix for cryptutil.py](https://github.com/snarfed/misc/blob/master/patches/cryptutil_ioerror.patch) in the
 [Python OpenID libraries](http://www.openidenabled.com/openid/libraries/python).
 The patch is against version 2.0.0-rc3b.
 
-  * A [tkdiff patch that quotes filenames](https://github.com/snarfed/misc/blob/master/patches/tkdiff_quote_filenames_svn.patch)
+* A [tkdiff patch that quotes filenames](https://github.com/snarfed/misc/blob/master/patches/tkdiff_quote_filenames_svn.patch)
 ([tracker](http://sourceforge.net/tracker/index.php?func=detail&aid=1672284&group_id=64960&atid=509274))
 for files in Subversion repositories.
 
-  * [AJAX commenting](/pyblosxom_ajax_comments) in Pyblosxom.
+* [AJAX commenting](/pyblosxom_ajax_comments) in Pyblosxom.
 ([Applied](http://pyblosxom.svn.sourceforge.net/viewvc/pyblosxom?view=rev&revision=973)
 on 1/24/2007.)
 
-  * A [tcsh highlighting patch](/tcsh_highlighting_patch) that highlights
+* A [tcsh highlighting patch](/tcsh_highlighting_patch) that highlights
 the match during incremental search, and in emacs mode, the region between the
 mark and cursor.
 ([Applied](http://mx.gw.com/pipermail/tcsh/2006-August/003724.html) on 8/23/2006.)
 
-  * A patch to [remove tcsh globbing in history search](/remove_tcsh_globbing_in_history_search).
+* A patch to [remove tcsh globbing in history search](/remove_tcsh_globbing_in_history_search).
 ([Applied](http://mx.gw.com/pipermail/tcsh/2006-August/003726.html) on 8/23/2006.)
 
-  * A [fix for a tcsh bug that moves the mark after deletions](/tcsh_delete_moves_mark_bug_fix). (Applied on 8/23/2006.)
+* A [fix for a tcsh bug that moves the mark after deletions](/tcsh_delete_moves_mark_bug_fix). (Applied on 8/23/2006.)
 
-  * An [acoc rule for coloring context diffs](/acoc_conf_for_context_diffs).
+* An [acoc rule for coloring context diffs](/acoc_conf_for_context_diffs).
 
-  * A [fix for an Emacs bug in minibuffer code](/emacs_minibuffer-complete-and-exit_bug_fix), specifically in
+* A [fix for an Emacs bug in minibuffer code](/emacs_minibuffer-complete-and-exit_bug_fix), specifically in
 _minibuffer-complete-and-exit_. (Fixed in Emacs 22.)
 
-  * [port_pine_patch](/port_pine_patch) is a shell script that automates
+* [port_pine_patch](/port_pine_patch) is a shell script that automates
 porting Pine patches between versions.
 
-  * [Pine reply-all patch](/pine_reply-all_patch) adds a reply-all command
+* [Pine reply-all patch](/pine_reply-all_patch) adds a reply-all command
 to the [Pine](http://www.washington.edu/pine) email client.
 
-  * [Pine flowed-text patch](/pine_flowed-text_patch) adds an option to
+* [Pine flowed-text patch](/pine_flowed-text_patch) adds an option to
 [Pine](http://www.washington.edu/pine) to turn off displaying flowed text.
 
-  * [Pine remove trailing quote patch](/pine_remove_trailing_quote_patch)
+* [Pine remove trailing quote patch](/pine_remove_trailing_quote_patch)
 adds an option to automatically remove trailing quotes from outgoing emails.
 
-  * [Pine delete attachments on save patch](/pine_delete_attachments_on_save_patch) adds an option to delete attachments from messages when you save
+* [Pine delete attachments on save patch](/pine_delete_attachments_on_save_patch) adds an option to delete attachments from messages when you save
 them.
 
-  * [Gaim chat_invite patch](https://github.com/snarfed/misc/blob/master/patches/gaim_2_chat_invite_reverse_params.patch)
+* [Gaim chat_invite patch](https://github.com/snarfed/misc/blob/master/patches/gaim_2_chat_invite_reverse_params.patch)
 fixes a
 [parameter ordering bug](https://sourceforge.net/tracker/index.php?func=detail&aid=1595828&group_id=235&atid=100235)
 in [Gaim 2.x](http://gaim.sf.net/)'s
@@ -391,35 +391,35 @@ callback member.
 ([Applied](https://sourceforge.net/tracker/index.php?func=detail&aid=1595831&group_id=235&atid=300235)
 on 11/15/2006.)
 
-  * [Gaim accelerators in away menus patch](https://github.com/snarfed/misc/blob/master/patches/gaim_1_away_menu_accelerators.patch)
+* [Gaim accelerators in away menus patch](https://github.com/snarfed/misc/blob/master/patches/gaim_1_away_menu_accelerators.patch)
 ([tracker](http://sourceforge.net/tracker/index.php?func=detail&aid=1031098&group_id=235&atid=300235))
 fixes [Gaim 1.x](http://gaim.sf.net/)'s GTK menu code to allow accelerators in
 dynamically created menus, such as away message menus.
 
-  * Similarly, [Gaim accelerators in accounts submenus patch](https://github.com/snarfed/misc/blob/master/patches/gaim_2_accounts_menu_accels.patch)
+* Similarly, [Gaim accelerators in accounts submenus patch](https://github.com/snarfed/misc/blob/master/patches/gaim_2_accounts_menu_accels.patch)
 fixes [Gaim 2.x](http://gaim.sf.net/)'s GTK menu code to allow accelerators in
 the dynamically created submenus of the Accounts menu.
 ([Applied](https://sourceforge.net/tracker/index.php?func=detail&aid=1597271&group_id=235&atid=300235)
 on 11/19/2006.)
 
-  * [SnipSnap comment without login patch](/snipsnap_comment_without_login_patch) allows visitors to post comments without logging in.
+* [SnipSnap comment without login patch](/snipsnap_comment_without_login_patch) allows visitors to post comments without logging in.
 
-  * [SnipSnap recent-changes snip name patch](/snipsnap_recent-changes_snip_name_patch) fixes a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-392) in
+* [SnipSnap recent-changes snip name patch](/snipsnap_recent-changes_snip_name_patch) fixes a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-392) in
 SnipSnap that causes recent-changes to show blog posts incorrectly.
 
-  * [SnipSnap 1.0b1 virtual hostname patch](/snipsnap_1_0b1_virtual_hostname_patch) fixes a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-387) in
+* [SnipSnap 1.0b1 virtual hostname patch](/snipsnap_1_0b1_virtual_hostname_patch) fixes a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-387) in
 SnipSnap that prevents [virtual host redirection](/virtual_host_redirection).
 
-  * [Autocutsel clipboard and primary patch](/autocutsel_clipboard_and_primary_patch)
+* [Autocutsel clipboard and primary patch](/autocutsel_clipboard_and_primary_patch)
 extends [autocutsel](http://www.nongnu.org/autocutsel/) to
 synchronize both the clipboard and the primary selection in X Windows.
 
-  * [Libwebserver shutdown patch](/libwebserver_shutdown_patch)
+* [Libwebserver shutdown patch](/libwebserver_shutdown_patch)
 ([tracker](http://sourceforge.net/tracker/index.php?func=detail&aid=1146074&group_id=50164&atid=458797))
 adds a call to [libwebserver](http://libwebserver.sourceforge.net/) to stop a
 running server and close its socket(s).
 
-  * [Webalizer nofollow patch](/webalizer_nofollow_patch) adds
+* [Webalizer nofollow patch](/webalizer_nofollow_patch) adds
 [nofollow](http://www.google.com/googleblog/2005/01/preventing-comment-spam.html)
 support to the popular web server log analyzer
 [Webalizer](http://webalizer.com/).

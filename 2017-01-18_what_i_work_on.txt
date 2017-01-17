@@ -1,8 +1,8 @@
 What I work on
 
 <p class="half right">
- <a href="">
-  <img class="shadow" src="" /></a></p>
+ <a href="https://en.wikipedia.org/wiki/Office_Space">
+  <img class="shadow" src="/office_space_milton_stapler.jpg" /></a></p>
 
 When you're looking for a new job, there are lots of factors to consider: project, people, compensation, role, company, org, commute, etc. I've tried focusing on different ones over time, and I've found that for me, project is often the most important. I'll suffer with low pay, long train rides, or a role I'm overqualified for if I'm helping build something I truly believe in.
 
@@ -26,4 +26,20 @@ Infrastructure, on the other hand, seems all the way at the opposite end of the 
 
 They have at least one thing in common, though: their goals don't change much over time. If you want to cross a river today, you build a bridge, just like you did thousands of years ago. Our roads look a bit different now, but we still use them to get from one place to another. Municipal water and sewage are a bit newer, power grids and phone and cable newer still, but in a thousand years, we'll still need to drink and pee and talk just like we do now.
 
-The projects I've enjoyed most in my career definitely fit the bill. [Sharding databases](/scaling_data_on_the_cheap.html) and later [Paxos etc](/transactions_across_datacenters_io.html): [Networking at Google](/resume#network+management): . [App Engine](/resume#App+Engine): . [Color Genomics](/resume#Color+Genomics): computational biology research. Very much applied research, to be sure, but still.
+The projects I've enjoyed most in my career definitely fit the bill. [Sharding databases](/scaling_data_on_the_cheap.html) and later [Paxos etc](/transactions_across_datacenters_io.html): classic infrastructure, both private and public. [Networking at Google](/resume#network+management): both private infrastructure and applied research ([OpenFlow](http://www.wired.com/wiredenterprise/2012/04/going-with-the-flow-google/)). [Color Genomics](/resume#Color+Genomics): applied genomics and computational biology research. (Very applied, to be fair.) [App Engine](/resume#App+Engine): semi-public infrastructure as a product. Slightly awkward, but definitely still fit.
+
+Why am I drawn to projects where goals stay constant over time? I'm not sure. Some of it may be our [natural desire to leave a legacy](https://www.quora.com/Where-does-this-need-of-humans-wanting-to-leave-a-legacy-after-themselves-come-from). If I worked on big, long standing problems, I'm more likely to be remembered after I die. I don't really think about it in those terms, but it could still be subconscious.
+
+The more generous modern variation is [the desire to "change the world."](https://www.quora.com/How-is-the-psychology-of-wanting-to-leave-a-legacy-different-from-wanting-to-change-the-world) It's a well worn phrase here in Startupland, but it's always struck me as hopelessly ambitious. I have no illusions that I'm personally going to change the world, at least not significantly.
+
+The other word we hear often in Silicon Valley is impact. Everyone wants to work on something impactful. This registers with me, but not in the usual sense. Most people here use it to mean their product is big and new, or innovative and disruptive, or grew a big user base fast. I want to have impact by helping move the needle on a big, important, long term problem.
+
+...which brings me full circle. I want to work on long term problems because I want to help solve...long term problems. Not very helpful.
+
+It's true though. I want to spend my life doing meaningful, useful work, and I have a natural tendency toward the long term, so I want to work on meaningful, long term problems.
+
+([Scratching my own itches](https://gettingreal.37signals.com/ch02_Whats_Your_Problem.php) is one exception. Software is the primary tool of the knowledge worker, and as a programmer, I'm lucky to be able to modify and create software myself. I've [written and modified lots of software over the years](/software) to solve my own problems when the existing solutions didn't work for me, or didn't exist at all.
+
+Some of these have grown sizable user bases, notably [Bridgy](https://brid.gy/) and [huffduff-video](http://huffduff-video.snarfed.org/), but they've always felt wholly practical, utilitarian, disposable. I don't really think of them as part of my career or life's work. I may not need them myself in five or ten years, or they may have died for some reason, and that's ok.)
+
+One interesting question remains: are there areas other than research and infrastructure where goals and incentives don't change much over time? Art, I guess. The pursuit of meaning and beauty is similar to the pursuits of knowledge, truth, and utility. Altruism, maybe. Helping other people is maybe the single best answer to that age old question, "Why are we here?" Selflessness and giving never goes out of style. Are there any others?
