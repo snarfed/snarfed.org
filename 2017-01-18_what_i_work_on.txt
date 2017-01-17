@@ -1,0 +1,29 @@
+What I work on
+
+<p class="half right">
+ <a href="">
+  <img class="shadow" src="" /></a></p>
+
+When you're looking for a new job, there are lots of factors to consider: project, people, compensation, role, company, org, commute, etc. I've tried focusing on different ones over time, and I've found that for me, project is often the most important. I'll suffer with low pay, long train rides, or a role I'm overqualified for if I'm helping build something I truly believe in.
+
+I have pretty good instincts for choosing projects I care about, too, but I've never had a crisp, clear description of which projects grab me and which don't. I'm going to attempt to fix that, here, now.
+
+First, a few characteristics. I prefer to build tools over applications. Systems over tools. Backend over frontend. Networks over backend. Protocols over networks. Federated over centralized. Problems over users. [Wicked over tame.](https://en.wikipedia.org/wiki/Wicked_problem) General over specific. Long over short. Research over application. Meaning over profit.
+
+To be fair, many of these sound like trite cliches, and some problem are. Even so, thanks to a recent conversation with [a good friend](https://twitter.com/colbyh), I now at least have a theme: _I prefer working in areas where the goals and incentives don't change much over time._
+
+I might as well replace _time_ with _generations_, too. The time scales I'm thinking about are [centuries and millenia](http://longnow.org/), not years or decades.
+
+So, what does this mean? Well, scratch most consumer products. Some of them last decades, but not many. Hell, scratch products, applications, and services in general. I'm happy to do work that happens to be used in a product or service, but only if I'm working on some underlying problem that has a longer lifespan.
+
+<p class="half left">
+ <a href="https://simple.wikipedia.org/wiki/Arch_bridge">
+  <img class="shadow" src="gaoliang_bridge.jpg" /></a></p>
+
+The two main areas I've found that fit the bill are research and infrastructure. Research departments and conferences may rise and fall, but the core goal of basic research has stayed the same pretty much forever: the pursuit of truth, knowledge, and understanding.
+
+Infrastructure, on the other hand, seems all the way at the opposite end of the spectrum. Construction workers, heavy equipment, and hard hats seem worlds removed from tweed-jacketed professors in ivory towers.
+
+They have at least one thing in common, though: their goals don't change much over time. If you want to cross a river today, you build a bridge, just like you did thousands of years ago. Our roads look a bit different now, but we still use them to get from one place to another. Municipal water and sewage are a bit newer, power grids and phone and cable newer still, but in a thousand years, we'll still need to drink and pee and talk just like we do now.
+
+The projects I've enjoyed most in my career definitely fit the bill. [Sharding databases](/scaling_data_on_the_cheap.html) and later [Paxos etc](/transactions_across_datacenters_io.html): [Networking at Google](/resume#network+management): . [App Engine](/resume#App+Engine): . [Color Genomics](/resume#Color+Genomics): computational biology research. Very much applied research, to be sure, but still.
