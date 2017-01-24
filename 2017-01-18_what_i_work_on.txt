@@ -2,48 +2,51 @@ What I work on
 
 <p class="half right">
  <a href="https://en.wikipedia.org/wiki/Office_Space">
-  <img class="shadow" src="/office_space_milton_stapler.jpg" /></a></p>
+  <img class="shadow" src="https://snarfed.org/office_space_milton_stapler.jpg" /></a></p>
 
-When you're looking for a new job, there are lots of factors to consider: project, people, compensation, role, company, org, commute, etc. I've tried focusing on different ones over time, and I've found that for me, project is often the most important. I'll suffer with low pay, long train rides, or a role I'm overqualified for if I'm helping build something I truly believe in.
+I had a conversation with [a good friend](https://twitter.com/colbyh) recently that crystallized something I'd always felt strongly, at a gut level, but never thought through: how I choose what to work on.
 
-I have pretty good instincts for choosing projects I care about, too, but I've never had a crisp, clear description of which projects grab me and which don't. I'm going to attempt to fix that, here, now.
+When I look for a new job, I think about project, people, compensation, role, company, commute, etc. I've tried focusing on different factors over time, and I've found that for me, project is often the most important. I'll suffer with low pay, long train rides, or a role I'm overqualified for if I'm working on something I care about and believe in.
 
-First, a few characteristics. I prefer to build tools over applications. Systems over tools. Backend over frontend. Networks over backend. Protocols over networks. Federated over centralized. Problems over users. [Wicked over tame.](https://en.wikipedia.org/wiki/Wicked_problem) General over specific. Long over short. Research over application. Meaning over profit.
+I prefer tools over products. Systems over tools. Protocols over systems. Problems over users. [Wicked over tame.](https://en.wikipedia.org/wiki/Wicked_problem) Research over application. Many of these are stereotypical engineer cliches, but they boil down to an interesting theme: _I prefer to work in areas where the goals and incentives don't change much over time._
 
-To be fair, many of these sound like trite cliches, and some problem are. Even so, thanks to a recent conversation with [a good friend](https://twitter.com/colbyh), I now at least have a theme: _I prefer working in areas where the goals and incentives don't change much over time._
+<!-- more -->
+<span />
 
-I might as well replace _time_ with _generations_, too. The time scales I'm thinking about are [centuries and millenia](http://longnow.org/), not years or decades.
+I don't know where I developed this [tendency toward the long term](/2013-08-18_im-slow), but it's a big personal motivation. The time scales I'm thinking about are [centuries and millenia](http://longnow.org/), not years or decades. I could just as well replace _time_ with _generations_. I'm fine with not shipping code often, or not making any progress for longer stretches, if I know the problem will still be around and my work will still apply down the road.
 
-So, what does this mean? Well, scratch most consumer products. Some of them last decades, but not many. Hell, scratch products, applications, and services in general. I'm happy to do work that happens to be used in a product or service, but only if I'm working on some underlying problem that has a longer lifespan.
+What does this mean? Well, scratch most products - consumer, enterprise, or other. Some of them last centuries, but not many. Scratch applications and services in general. I'm happy to do work that's used in a product or service, but usually only if there's an underlying problem with a longer lifespan.
 
 <p class="half left">
  <a href="https://simple.wikipedia.org/wiki/Arch_bridge">
-  <img class="shadow" src="gaoliang_bridge.jpg" /></a></p>
+  <img class="shadow" src="https://snarfed.org/gaoliang_bridge.jpg" /></a></p>
 
-The two main areas I've found that fit the bill are research and infrastructure. Research departments and conferences may rise and fall, but the core goal of basic research has stayed the same pretty much forever: the pursuit of truth, knowledge, and understanding.
+The two main areas that fit are research and infrastructure. Academic departments and conferences rise and fall, but the central goal of research has stayed the same forever: pursuit of truth, knowledge, and understanding. That won't change anytime soon.
 
-Infrastructure, on the other hand, seems all the way at the opposite end of the spectrum. Construction workers, heavy equipment, and hard hats seem worlds removed from tweed-jacketed professors in ivory towers.
+Infrastructure, on the other hand, is worlds removed. Construction workers in hard hats on building sites don't overlap much with tweedy professors in ivory towers. They do have one thing in common, though: their goals are consistent over time. If you want to cross a river today, you build a bridge, just like a thousand years ago. We still need roads to get from one place to another. Plumbing to carry water and sewage. Electricity and communication grids may be newer, but we'll need energy and communication in a thousand years just like we do now.
 
-They have at least one thing in common, though: their goals don't change much over time. If you want to cross a river today, you build a bridge, just like you did thousands of years ago. Our roads look a bit different now, but we still use them to get from one place to another. Municipal water and sewage are a bit newer, power grids and phone and cable newer still, but in a thousand years, we'll still need to drink and pee and talk just like we do now.
+When I look at the projects I've enjoyed most in my career, they fit the bill. [Sharding databases](/scaling_data_on_the_cheap.html) and later [Paxos etc](/transactions_across_datacenters_io.html): classic infrastructure. [Networking](/resume#network+management): infrastructure and applied research ([OpenFlow](http://www.wired.com/wiredenterprise/2012/04/going-with-the-flow-google/)). [Color Genomics](/resume#Color+Genomics): applied research. [App Engine](/resume#App+Engine): infrastructure as a product. Even the side projects I'm looking into now fit: [climate change](/2016-08-03_wanted-climate-change-project), [p-hacking](https://en.wikipedia.org/wiki/Data_dredging), the [reproducibility crisis](https://en.wikipedia.org/wiki/Replication_crisis).
 
-The projects I've enjoyed most in my career definitely fit the bill. [Sharding databases](/scaling_data_on_the_cheap.html) and later [Paxos etc](/transactions_across_datacenters_io.html): classic infrastructure, both private and public. [Networking at Google](/resume#network+management): both private infrastructure and applied research ([OpenFlow](http://www.wired.com/wiredenterprise/2012/04/going-with-the-flow-google/)). [Color Genomics](/resume#Color+Genomics): applied genomics and computational biology research. (Very applied, to be fair.) [App Engine](/resume#App+Engine): semi-public infrastructure as a product. Slightly awkward, but definitely still fit.
+Why do I care if goals change over time? I'm not sure. Some of it may be the [natural human desire to leave a legacy](https://www.quora.com/Where-does-this-need-of-humans-wanting-to-leave-a-legacy-after-themselves-come-from). If I work on big, long standing problems, I'm more likely to be remembered after I die. I don't spend much time thinking about legacy, but it could still be lurking in my subconscious.
 
-Why am I drawn to projects where goals stay constant over time? I'm not sure. Some of it may be our [natural desire to leave a legacy](https://www.quora.com/Where-does-this-need-of-humans-wanting-to-leave-a-legacy-after-themselves-come-from). If I worked on big, long standing problems, I'm more likely to be remembered after I die. I don't really think about it in those terms, but it could still be subconscious.
-
-The more generous modern variation is [the desire to "change the world."](https://www.quora.com/How-is-the-psychology-of-wanting-to-leave-a-legacy-different-from-wanting-to-change-the-world) It's a well worn phrase here in Startupland, but it's always struck me as hopelessly ambitious. I have no illusions that I'm personally going to change the world, at least not significantly.
+A modern variation is ["changing the world."](https://www.quora.com/How-is-the-psychology-of-wanting-to-leave-a-legacy-different-from-wanting-to-change-the-world) It's a well worn phrase here in Startupland, but for me personally, it's always seemed hopelessly ambitious. I have no illusions that I'm personally going to change the world in any significant way. Maybe a little, if I'm lucky, but not a lot.
 
 <p class="half right">
  <a href="https://www.reddit.com/r/Bitcoin/comments/1gagle/lol_new_bitcoin_billboard_in_san_jose_honey_badger/">
-  <img class="shadow" src="/bitcoin_billboard.jpg" /></a></p>
+  <img class="shadow" src="https://snarfed.org/bitcoin_billboard.jpg" /></a></p>
 
-The other word we hear often in Silicon Valley is impact. Everyone wants to work on something impactful. This registers with me, but not in the usual sense. Most people here use it to mean their product is big and new, or innovative and disruptive, or grew a big user base fast. I want to have impact by helping move the needle on a big, important, long term problem.
+Another Silicon Valley buzzword is "impact." Everyone wants to work on something impactful. Most people use it to mean a bold new product, or a big user base, or innovating and disrupting an industry. I want to have impact, sure, but I want to do it by moving the needle on a big, important, long term problem. Growth hacking and TechCrunch coverage aren't part of my personal equation.
 
-...which brings me full circle. I want to work on long term problems because I want to help solve...long term problems. Not very helpful.
+Research and infrastructure aren't unique. There are plenty of other areas where goals and incentives stay the same over time. Art, clearly. Philanthropy, education, entertainment, health care, public policy...the list goes on. I'd get restless if I was a teacher or actor or nurse and didn't do anything new, but there's plenty of opportunity to push on big problems in those fields on the front lines. I'd hate being a campaign manager, but I could easily do a stint as a policy wonk at a think tank.
 
-It's true though. I want to spend my life doing meaningful, useful work, and I have a natural tendency toward the long term, so I want to work on meaningful, long term problems.
+This may not mean much to you, or even to me. After all, it was guiding my career decisions long before I thought it through and wrote it up. Still, now I know...and knowing is half the battle!
 
-([Scratching my own itches](https://gettingreal.37signals.com/ch02_Whats_Your_Problem.php) is one exception. Software is the primary tool of the knowledge worker, and as a programmer, I'm lucky to be able to modify and create software myself. I've [written and modified lots of software over the years](/software) to solve my own problems when the existing solutions didn't work for me, or didn't exist at all.
+---
 
-Some of these have grown sizable user bases, notably [Bridgy](https://brid.gy/) and [huffduff-video](http://huffduff-video.snarfed.org/), but they've always felt wholly practical, utilitarian, disposable. I don't really think of them as part of my career or life's work. I may not need them myself in five or ten years, or they may have died for some reason, and that's ok.)
+_Don't get the wrong idea, I'm still loving it at [Color Genomics](https://color.com/)! I'm not going anywhere. On the contrary, [we're actively looking for good people.](https://color.com/careers) If you want to work on something meaningful and challenging, [drop me a line!](/about)_
 
-One interesting question remains: are there areas other than research and infrastructure where goals and incentives don't change much over time? Art, I guess. The pursuit of meaning and beauty is similar to the pursuits of knowledge, truth, and utility. Altruism, maybe. Helping other people is maybe the single best answer to that age old question, "Why are we here?" Selflessness and giving never goes out of style. Are there any others?
+_Also, [scratching my own itches](https://gettingreal.37signals.com/ch02_Whats_Your_Problem.php) is one big exception to this rule. If software is the tool of the knowledge worker, I'm lucky to be a toolsmith. I've [written and modified lots of software over the years](/software) to solve my own problems. Some took significant time and effort, like [granary](https://granary-demo.appspot.com/) and [P4](/p4), and some have real user bases, like [Bridgy](https://brid.gy/) and [huffduff-video](http://huffduff-video.snarfed.org/)._
+
+_Even so, these tools have always felt practical, utilitarian, even a bit disposable. I don't consider them a big part of my career or life's work. I won't need them forever, and they'll all grow old and die eventually. That's OK._
+
+<img style="display: none" src="https://snarfed.org/office_space_milton_stapler.jpg" />

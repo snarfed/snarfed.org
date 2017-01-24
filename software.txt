@@ -168,6 +168,9 @@ example](/ryan.barrett.name/bigbrother/).
 to [Gnutella](http://rfc-gnutella.sourceforge.net/) and
 [Chord](http://www.pdos.lcs.mit.edu/chord/).
 
+* [p4sync](https://github.com/snarfed/p4sync) is a successor to [P4](/p4) that
+synchronizes playback across multiple computers.
+
 * [libmsntp](/libmsntp) is a compact, portable
 [SNTP library](/libmsntp). It provides both client and server functionality.
 

@@ -4,13 +4,14 @@ p4
  <a href="/p4">
   <img src="/notes.png" /></a></p>
 
-For the impatient:  
+_[Problem description](/synchronizing_mp3_playback)  
 [Download P4 0.3.1](/p4-0.3.1.tar.bz2)  
+[p4sync on GitHub](https://github.com/snarfed/p4sync)  
 [Original project proposal](/p4proposal)  
 [Poster (with diagrams)](/p4_poster/index.html)  
-[Protocol specification](/p4protocol)  
+[Protocol specification](/p4protocol)_  
 
-[P4](/p4) is a fully functional, self-organizing overlay network similar to
+P4 is a fully functional, self-organizing overlay network similar to
 [Gnutella](http://rfc-gnutella.sourceforge.net/) and
 [Freenet](http://freenet.sf.net/). However, P4 differs in that it provides an
 API for developing applications on top of the overlay. P4 handles the networking
