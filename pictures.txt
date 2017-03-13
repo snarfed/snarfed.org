@@ -1,6 +1,38 @@
 pictures
 
 <div class="ngg-album-compact">
+<a href="/brooke-q1-2017">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2017/03/white_oak_hike_mushrooms_vanessa-300x224.jpg" />
+  </div>
+  <h4>brooke q1 2017</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/fairyland-2017">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2017/03/snow_walking_2-300x400.jpg" />
+  </div>
+  <h4>fairyland 2017</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/skiing-northstar">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2017/03/snow_walking_2-300x400.jpg" />
+  </div>
+  <h4>skiing northstar</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/christmas-2016">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2017/03/lights_train-300x225.jpg" />
+  </div>
+  <h4>christmas 2016</h4>
+</a></div>
+
+<div class="ngg-album-compact">
 <a href="/sonoma_house">
   <div class="ngg-album-compactbox">
     <img src="/w/wp-content/uploads/2016/12/16-300x200.jpg" />
