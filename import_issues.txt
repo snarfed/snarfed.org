@@ -19,13 +19,15 @@ Usage: `import_issues.py PROJECT FILENAME`
 where `PROJECT` is the Google Code project name and `FILENAME` is the CSV file
 to import.
 
-Example run: 
+Example run:
 
-    $ ./import_issues.py mockfacebook new.csv
-    Opening a web page in your browser to request access.
-    Please click the Grant access button.
-    Importing new.csv into mockfacebook's issue tracker...
-    Imported 3 issues.
+```
+$ ./import_issues.py mockfacebook new.csv
+Opening a web page in your browser to request access.
+Please click the Grant access button.
+Importing new.csv into mockfacebook's issue tracker...
+Imported 3 issues.
+```
 
 The CSV columns are: `title, content, author, status, owner, labels, cc`. Title,
 content, and author are required, but the rest are optional, so the file may
@@ -38,9 +40,11 @@ Requires [gdata-python-client](http://code.google.com/p/gdata-python-client/)
 2.0.7 or higher. If you don't already have it, here are commands to download and
 install it in the same directory as this script:
 
-    wget http://gdata-python-client.googlecode.com/files/gdata-2.0.15.tar.gz
-    tar xzf gdata-2.0.15.tar.gz
-    ln -s gdata-2.0.15/src/gdata
-    ln -s gdata-2.0.15/src/atom
+```
+wget http://gdata-python-client.googlecode.com/files/gdata-2.0.15.tar.gz
+tar xzf gdata-2.0.15.tar.gz
+ln -s gdata-2.0.15/src/gdata
+ln -s gdata-2.0.15/src/atom
+```
 
 `import_issues.py` is in the public domain.

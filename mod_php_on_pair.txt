@@ -26,9 +26,11 @@ I tried copying `/usr/www/cgi-bin/php5.cgi` into my local `cgi-bin/` directory,
 as pair suggests when using cgiwrap, but that again just led to CGI instead of
 `mod_php`. I tried lots of variations of this in my `.htaccess`:
 
-    Action application/php /cgi-sys/php5.cgi
-    AddType application/php .php
-<br />
+```
+Action application/php /cgi-sys/php5.cgi
+AddType application/php .php
+```
+
 ...but no luck. It was only when I happened to read their
 [WordPress instructions](http://www.pair.com/support/knowledge_base/authoring_development/tools_of_the_trade_wordpress.html)
 and notice that URLs didn't start with `cgi-bin/` that I finally realized I

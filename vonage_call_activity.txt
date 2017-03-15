@@ -15,7 +15,7 @@ then read on to see what I did.
 <a name="downloading"></a>
 #### Downloading
 
-First, the 
+First, the
 [call activity page](https://secure.vonage.com/vonage-web/activity/index.htm)
 only shows a week at a time, and the
 [advanced search](https://secure.vonage.com/webaccount/activity/indexadvanced.htm)
@@ -26,7 +26,7 @@ Here are example URLs for a single week's call activity. The first is for
 incoming calls, the second is for outgoing.
 
 > https://secure.vonage.com/webaccount/activity/activityDetail.htm?accountNumber=**XXX**&dateEnd=**XXX**&dateStart=**XXX**&bcType=I&style=ActivityReceived&type=html&timeZone=5
-> 
+>
 > https://secure.vonage.com/webaccount/activity/activityDetail.htm?accountNumber=**XXX**&dateEnd=**XXX**&dateStart=**XXX**&bcType=O&style=ActivityPlaced&type=html&timeZone=5
 
 Note the **XXX**es for account number and start and end date. You can find your
@@ -38,7 +38,7 @@ Here are modified links with start and end dates set to include everything
 from 2001 to 2038. Fill in the **XXX**es with your account number.
 
 > [https://secure.vonage.com/webaccount/activity/activityDetail.htm?accountNumber=**XXX**&dateEnd=2145945600000&dateStart=978336000000&bcType=I&style=ActivityReceived&type=html&timeZone=5](https://secure.vonage.com/webaccount/activity/activityDetail.htm?accountNumber=XXX&dateEnd=2145945600000&dateStart=978336000000&bcType=I&style=ActivityReceived&type=html&timeZone=5)
-> 
+>
 > [https://secure.vonage.com/webaccount/activity/activityDetail.htm?accountNumber=**XXX**&dateEnd=2145945600000&dateStart=978336000000&bcType=O&style=ActivityPlaced&type=html&timeZone=5](https://secure.vonage.com/webaccount/activity/activityDetail.htm?accountNumber=**XXX**&dateEnd=2145945600000&dateStart=978336000000&bcType=O&style=ActivityPlaced&type=html&timeZone=5)
 
 
@@ -54,35 +54,38 @@ files. It's extracted from Vonage's
 [new](https://www.vonage.com/static/vonage-web/cssjs_new/styles_1_11_0.css)
 `styles_1_11_0.css` stylesheets.
 
-    <style type="text/css">
-    .iconButton {float:left;width:20px;height:18px;padding:1px 0 0 0;}
-    .tableheader9{background:#FFFFFF; color:#000000; font-weight:bold;}
-    .tablebody1{background:#eeeeee; color:#000000; font-weight:normal;}
-    .phoneNumber {float:left;padding:1px 0 0 0;}
-    </style>
+```
+<style type="text/css">
+.iconButton {float:left;width:20px;height:18px;padding:1px 0 0 0;}
+.tableheader9{background:#FFFFFF; color:#000000; font-weight:bold;}
+.tablebody1{background:#eeeeee; color:#000000; font-weight:normal;}
+.phoneNumber {float:left;padding:1px 0 0 0;}
+</style>
+```
 
-<br />
 Next, I ran the incoming calls file through this
 [sed](http://sed.sourceforge.net/) pipeline to extract the caller IDs into
 their own table column...
 
-    sed -e 's/ width=".*"//' \
-      -e 's/ *<a href="javascript:void(0)" onclick=.*<br><br><b>\\(.*\\)<\/b>\',CSSCLASS.*<\/a>/\1\n<\/td>\n<td nowrap>/' \
-      -e 's/ *<div class="iconButton">//' \
-      -e 's/ *<\/div>//'
+```
+sed -e 's/ width=".*"//' \
+  -e 's/ *<a href="javascript:void(0)" onclick=.*<br><br><b>\\(.*\\)<\/b>\',CSSCLASS.*<\/a>/\1\n<\/td>\n<td nowrap>/' \
+  -e 's/ *<div class="iconButton">//' \
+  -e 's/ *<\/div>//'
+```
 
-<br />
 ...and added the Caller ID `<td>` element below to the header row:
 
-    <table id="arTable">
-    <tr>
-      <td class="tableheader9" nowrap>Date</td>
-      <td class="tableheader9" nowrap>Time</td>
-      <td class="tableheader9" nowrap>Caller ID</td>
-      <td class="tableheader9" nowrap>From</td>
-      ...
+```
+<table id="arTable">
+<tr>
+  <td class="tableheader9" nowrap>Date</td>
+  <td class="tableheader9" nowrap>Time</td>
+  <td class="tableheader9" nowrap>Caller ID</td>
+  <td class="tableheader9" nowrap>From</td>
+  ...
+```
 
-<br />
 That's it! Here are examples of the resulting
 call log files:
 [incoming](/vonage_incoming_calls_example.html) and

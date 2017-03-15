@@ -105,7 +105,9 @@ best described by example. Here's one
 [from the docs](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/SDB_API_Query.html#SDB_API_Query_QueryExpressionSyntax_Example2)
 that will return all blue items that cost less than 14.99:
 
-    "['Price' < '14.99'] intersection ['Color' = 'Blue']"
+```
+"['Price' < '14.99'] intersection ['Color' = 'Blue']"
+```
 
 It's interesting that Amazon went with a custom, proprietary query language,
 as opposed to a subset of SQL like Facebook's

@@ -20,7 +20,9 @@ To try it out on your site,
 contents of `datadir/` and `flavourdir/snarfed.flav` into your PyBlosxom's
 datadir and flavourdir, respectively. Then, edit `config.py` and add this line:
 
-    py['default_flavour'] = 'snarfed'
+```
+py['default_flavour'] = 'snarfed'
+```
 
 This flavour is licensed under the
 [Creative Commons](http://creativecommons.org/licenses/by/2.0/).

@@ -12,58 +12,60 @@ emacsclient as your editor, add this and `(add-hook 'server-switch-hook
 'flow-encode-buffer)` to your `.emacs` to encode your emails as flowed text
 automatically.
 
-    (defgroup flow-fill nil
-      "Decoding and encoding flowed text a la RFC2646."
-      :group 'fill)
-    
-    (defcustom flow-fill-min-line-length
-      65
-      "The minimum length, in characters, for a line to be considered for encoding
-       as flowed text."
-      :type '(integer)
-      :group 'flow-fill)
-    
-    (defun starts-with (string prefix)
-      (and (>= (length string) (length prefix))
-           (equal prefix (substring string 0 (length prefix)))))
-    
-    (defun starts-with-word-char ()
-      "Return t if this line starts with a word-constituent character, nil if not."
-      ; use point-at-{b,e}ol for xemacs compatibility
-      (and (char-after (point-at-bol))
-           (eq (char-syntax (char-after (point-at-bol))) ?w)))
-    
-    (defun flow-encode-buffer ()
-      "Encode the buffer as flowed text, a la RFC 2646.
-    
-    Flowed text, defined by RFC2646, is a lightweight way to specify that a line
-    is part of the same paragraph as the next line, by appending a trailing space
-    character to the end of the line. It's often used in RFC2822 messages.
-    
-    This function encodes the current buffer as RFC2646 flowed text. It uses a
-    heuristic to determine which lines should be flowed. If the first character on
-    a line is word-constituent, and the last character is non-whitespace, and the
-    same applies to the next line, and the first line is at least
-    `flow-fill-min-line-length' characters long, then flow the first line.
-    
-    Due to the heuristic, if this function is run on a buffer that's already
-    encoded as flowed text, it will leave the buffer unchanged."
-     (goto-char (point-min))
-      (while (and (not (eobp))
-                  (not (equal "---------- Forwarded message ----------\n"
-                              (thing-at-point 'line))))
-        (let ((long-enough
-               (> (- (point-at-eol) (point-at-bol)) flow-fill-min-line-length))
-              (ends-in-whitespace
-               (and (not (eq (point-at-bol) (point-at-eol)))
-                    (eq (char-syntax (char-before (point-at-eol))) ? )))
-              (line (thing-at-point 'line)))
-          (when (save-excursion (and (not (starts-with line "> "))
-                                     (not (starts-with line "http://"))
-                                     long-enough
-                                     (not ends-in-whitespace)
-                                     (forward-line)
-                                     (starts-with-word-char)))
-            (end-of-line)
-            (insert ? )))
-        (forward-line)))
+```
+(defgroup flow-fill nil
+  "Decoding and encoding flowed text a la RFC2646."
+  :group 'fill)
+
+(defcustom flow-fill-min-line-length
+  65
+  "The minimum length, in characters, for a line to be considered for encoding
+   as flowed text."
+  :type '(integer)
+  :group 'flow-fill)
+
+(defun starts-with (string prefix)
+  (and (>= (length string) (length prefix))
+       (equal prefix (substring string 0 (length prefix)))))
+
+(defun starts-with-word-char ()
+  "Return t if this line starts with a word-constituent character, nil if not."
+  ; use point-at-{b,e}ol for xemacs compatibility
+  (and (char-after (point-at-bol))
+       (eq (char-syntax (char-after (point-at-bol))) ?w)))
+
+(defun flow-encode-buffer ()
+  "Encode the buffer as flowed text, a la RFC 2646.
+
+Flowed text, defined by RFC2646, is a lightweight way to specify that a line
+is part of the same paragraph as the next line, by appending a trailing space
+character to the end of the line. It's often used in RFC2822 messages.
+
+This function encodes the current buffer as RFC2646 flowed text. It uses a
+heuristic to determine which lines should be flowed. If the first character on
+a line is word-constituent, and the last character is non-whitespace, and the
+same applies to the next line, and the first line is at least
+`flow-fill-min-line-length' characters long, then flow the first line.
+
+Due to the heuristic, if this function is run on a buffer that's already
+encoded as flowed text, it will leave the buffer unchanged."
+ (goto-char (point-min))
+  (while (and (not (eobp))
+              (not (equal "---------- Forwarded message ----------\n"
+                          (thing-at-point 'line))))
+    (let ((long-enough
+           (> (- (point-at-eol) (point-at-bol)) flow-fill-min-line-length))
+          (ends-in-whitespace
+           (and (not (eq (point-at-bol) (point-at-eol)))
+                (eq (char-syntax (char-before (point-at-eol))) ? )))
+          (line (thing-at-point 'line)))
+      (when (save-excursion (and (not (starts-with line "> "))
+                                 (not (starts-with line "http://"))
+                                 long-enough
+                                 (not ends-in-whitespace)
+                                 (forward-line)
+                                 (starts-with-word-char)))
+        (end-of-line)
+        (insert ? )))
+    (forward-line)))
+```

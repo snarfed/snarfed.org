@@ -100,18 +100,20 @@ Audio files:
 
 Empty page. The source contains this tag and comment:
 
-    <CreaTEd BY OMM FOR THE CoMMUnITY OF OMM>
-    <!--
-    THE INFORMATION iN THIS ELECTRONIC LABYRINTH IS
-    FOR COMMUnITY MEMBeRS ONLY. ANY VIeWERS NOT REGISTEREd
-    WITh THE OFFICIAL STATe ARE IN VIOLATION OF OMM. IF
-    YOU ARE FOUND GUIlTY OF VIEWING INFORMATION FROM THE STATE
-    WITHOUT MEMBERSHIp YOU WILL BE RECYCLED.
+```
+<CreaTEd BY OMM FOR THE CoMMUnITY OF OMM>
+<!--
+THE INFORMATION iN THIS ELECTRONIC LABYRINTH IS
+FOR COMMUnITY MEMBeRS ONLY. ANY VIeWERS NOT REGISTEREd
+WITh THE OFFICIAL STATe ARE IN VIOLATION OF OMM. IF
+YOU ARE FOUND GUIlTY OF VIEWING INFORMATION FROM THE STATE
+WITHOUT MEMBERSHIp YOU WILL BE RECYCLED.
 
 
-    WORK HARD; INCREAsE PRODUCTION; PREVeNT ACCIDENTS, AnD
-    BE HAPPY.
-    -->
+WORK HARD; INCREAsE PRODUCTION; PREVeNT ACCIDENTS, AnD
+BE HAPPY.
+-->
+```
 
 Note the lower-case letters; they spell out:
 
@@ -146,10 +148,12 @@ and:
 
 One interesting thing...at the end of the page, there's some malformed HTML:
 
-    </td></tr?
-    ></table>
-    </body>
-    </html>
+```
+</td></tr?
+></table>
+</body>
+</html>
+```
 
 The error is just big enough that it might not be a typo...but what could it
 mean?

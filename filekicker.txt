@@ -15,11 +15,15 @@ file's extension.
 
 For example, if `datadir` is set in `config.py` like so:
 
-    py['datadir'] = '/home/ryanb/www'
+```
+py['datadir'] = '/home/ryanb/www'
+```
 
 and the user requests this url:
 
-    http://mysite.org/videos/shovelglove.mov
+```
+http://mysite.org/videos/shovelglove.mov
+```
 
 filekicker will send `/home/ryanb/www/videos/shovelglove.mov` to the client,
 if it exists, with the MIME type `video/quicktime`. If it doesn't exist,

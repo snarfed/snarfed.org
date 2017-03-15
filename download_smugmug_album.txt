@@ -13,11 +13,13 @@ download them one by one.
 
 For example:
 
-    $ ./download_smugmug_album.sh foo 123456_XXyyZZ
-        % Total    % Received % Xferd   Speed   Time    Time  
-                                       Upload   Total   Spent 
-      100 74442    0 74442    0     0      0 --:--:--  0:00:03
-      ...
+```
+$ ./download_smugmug_album.sh foo 123456_XXyyZZ
+    % Total    % Received % Xferd   Speed   Time    Time
+                                   Upload   Total   Spent
+  100 74442    0 74442    0     0      0 --:--:--  0:00:03
+  ...
+```
 
 To find the username and album ID, look at a SmugMug URL for the album. For
 example, in `http://foo.smugmug.com/Bar/Baz/123456_XXyyZZ#!i=...`,

@@ -23,8 +23,10 @@ unique to
 [context format diffs](http://www.gnu.org/software/diffutils/manual/html_node/Context-Format.html#Context%20Format).
 To color those lines, add this to your _~/.acoc.conf_:
 
-    [diff,rcsdiff/t,cvs diff/t,p4 diff/t]
-    /^([!*].*)/        yellow
+```
+[diff,rcsdiff/t,cvs diff/t,p4 diff/t]
+/^([!*].*)/        yellow
+```
 
 [This patch](https://github.com/snarfed/misc/blob/master/patches/acoc-diff-context.patch) adds the
 rule to acoc 0.7.1.

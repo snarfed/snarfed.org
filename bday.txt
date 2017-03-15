@@ -19,8 +19,10 @@ your Perl installation, most likely /usr/bin/perl.
 
 Also, bday doesn't validate its user settings very well. If you see this error:
 
-    Argument "" isn't numeric in addition (+) at
-    /usr/local/bin/bdayd line 96, <PEOPLE> line 1.
+```
+Argument "" isn't numeric in addition (+) at
+/usr/local/bin/bdayd line 96, <PEOPLE> line 1.
+```
 
 then bday has a blank for the number of days in advance you'd like to be
 notified of birthdays. Just run bday again, change your user preferences, and be

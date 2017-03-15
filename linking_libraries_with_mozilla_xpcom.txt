@@ -26,7 +26,9 @@ stage. I used the [example XPCOM
 Makefile](http://books.mozdev.org/html/mozilla-chp-8-sect-2.html#mozilla-CHP-8-SECT-2.6.1),
 and edited the EXTRA_DSO_LDOPTS line to look like this:
 
-    EXTRA_DSO_LDOPTS += \
-      $(MOZ_COMPONENT_LIBS) -lX11 -L/usr/X11R6/lib
+```
+EXTRA_DSO_LDOPTS += \
+  $(MOZ_COMPONENT_LIBS) -lX11 -L/usr/X11R6/lib
+```
 
 Voila, it worked!

@@ -75,14 +75,15 @@ Some of the features - AJAX site search, OpenID delegation, Google Analytics,
 and Facebook Insights - need a little extra configuration. You'll need to define
 new constants in your wp-config.php. Here's an example:
 
-    define('OPENID_DELEGATION_PROVIDER',
-           'https://www.google.com/accounts/o8/ud?source=profiles');
-    define('OPENID_DELEGATION_LOCAL_ID',
-           'http://www.google.com/profiles/[USERNAME]);
-    define('GOOGLE_AJAX_SEARCH_API_KEY', '[KEY]');
-    define('GOOGLE_ANALYTICS_ID', '[ID]');
-    define('FACEBOOK_INSIGHTS_PROPERTY', 'fb:admins'); // or fb:page_id or fb:app_id
-    define('FACEBOOK_INSIGHTS_CONTENT', '[ID]');
-
+```
+define('OPENID_DELEGATION_PROVIDER',
+       'https://www.google.com/accounts/o8/ud?source=profiles');
+define('OPENID_DELEGATION_LOCAL_ID',
+       'http://www.google.com/profiles/[USERNAME]);
+define('GOOGLE_AJAX_SEARCH_API_KEY', '[KEY]');
+define('GOOGLE_ANALYTICS_ID', '[ID]');
+define('FACEBOOK_INSIGHTS_PROPERTY', 'fb:admins'); // or fb:page_id or fb:app_id
+define('FACEBOOK_INSIGHTS_CONTENT', '[ID]');
+```
 
 The snarfed WordPress theme is in the public domain.

@@ -11,12 +11,14 @@ is a simple little shell script that downloads entire photo albums from
 and it will parse the feed, extract the links to the full-size pictures, and
 download them one by one. For example:
 
-    $ ./download_picasa_album.sh 'http://picasaweb.google.com/...&alt=rss'
-        % Total    % Received % Xferd   Speed   Time    Time  
-                                       Upload   Total   Spent 
-      100 74442    0 74442    0     0      0 --:--:--  0:00:03
-      ...
- 
+```
+$ ./download_picasa_album.sh 'http://picasaweb.google.com/...&alt=rss'
+    % Total    % Received % Xferd   Speed   Time    Time
+                                   Upload   Total   Spent
+  100 74442    0 74442    0     0      0 --:--:--  0:00:03
+  ...
+```
+
 This script is dirt simple. If you're looking for something robust and
 full-featured, you probably want an
 [RSS reader that supports enclosures](http://http://www.podcastingnews.com/topics/Podcast_Software.html)

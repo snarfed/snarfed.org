@@ -21,18 +21,20 @@ directory, e.g. /servlets/, or all files with a specific extension, e.g. \*.jsp.
 In your jetty.conf, in the **<Call name="addContext">** element, add a servlet
 handler for those files:
 
-    <Call name="addHandler">
-      <Arg>
-       <New class="org.mortbay.jetty.servlet.ServletHandler">
-        <Call name="addServlet">
-          <Arg>JSP</Arg>
-          <Arg>*.jsp</Arg>
-         <Arg>
-          org.apache.jasper.servlet.JspServlet
-         </Arg>
-        </Call>
-        </New></Arg>
+```
+<Call name="addHandler">
+  <Arg>
+   <New class="org.mortbay.jetty.servlet.ServletHandler">
+    <Call name="addServlet">
+      <Arg>JSP</Arg>
+      <Arg>*.jsp</Arg>
+     <Arg>
+      org.apache.jasper.servlet.JspServlet
+     </Arg>
     </Call>
+    </New></Arg>
+</Call>
+```
 
 Add this handler _before_ the ResourceHandler that handles your static html
 files. (The file mappings are matched against in the order that they appear.)

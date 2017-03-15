@@ -88,7 +88,7 @@ were the same both times. Here's the first, illustrated:
 <a href="/silo_swat0/5_comment_notif_B.png"><img class="step" src="/silo_swat0/5_comment_notif_B.png" /></a>
 
 
-5a. Bridgy polls Snoopy's Facebook posts, sees the comment, and backfeeds it to
+5b. Bridgy polls Snoopy's Facebook posts, sees the comment, and backfeeds it to
     the [original post](https://snarfed.org/chillin_2) via webmention. The
     WordPress [webmention](https://wordpress.org/plugins/webmention/) and
     [semantic-linkbacks](https://wordpress.org/plugins/semantic-linkbacks/)
@@ -99,7 +99,7 @@ were the same both times. Here's the first, illustrated:
 
 <a href="/silo_swat0/5_bridgy_backfeed.png"><img style="max-width: 700px" src="/silo_swat0/5_bridgy_backfeed.png" /></a>
 
-5b. This triggers WordPress to email Snoopy and notify him of the comment.
+5c. This triggers WordPress to email Snoopy and notify him of the comment.
 
 <a href="/silo_swat0/5_comment_notif_A.png"><img class="step" src="/silo_swat0/5_comment_notif_A.png" /></a>
 

@@ -27,17 +27,19 @@ You can
 [download the script](https://github.com/snarfed/misc/blob/master/no_skip_when_shuffling.js),
 or copy and paste it from here:
 
-    var playlist_name = "Podcasts";
-    
-    var iTunes = WScript.CreateObject("iTunes.Application");
-    var sources = iTunes.Sources;
-    var playlists = sources.ItemByName("Library").Playlists;
-    var playlist = playlists.ItemByName(playlist_name);
-    var tracks = playlist.Tracks;
-    
-    for (i = 1; i <= tracks.Count; i++) {
-        tracks.Item(i).ExcludeFromShuffle = false;
-    }
+```
+var playlist_name = "Podcasts";
+
+var iTunes = WScript.CreateObject("iTunes.Application");
+var sources = iTunes.Sources;
+var playlists = sources.ItemByName("Library").Playlists;
+var playlist = playlists.ItemByName(playlist_name);
+var tracks = playlist.Tracks;
+
+for (i = 1; i <= tracks.Count; i++) {
+    tracks.Item(i).ExcludeFromShuffle = false;
+}
+```
 
 Set `playlist_name` to the name of the playlist you want it to change. Then,
 make sure the file's extension in Windows is `.js`, and double-click on

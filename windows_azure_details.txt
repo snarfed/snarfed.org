@@ -137,18 +137,20 @@ domains its instances should be deployed in.
 
 Here's an example service definition:
 
-    <ServiceDefinition name="MyService" xmlns="...">
-      <WebRole name="WebRole">
-        <ConfigurationSettings>
-          <Setting name="GreetingString" />
-        </ConfigurationSettings>
-        <InputEndpoints>
-          <InputEndpoint name="HttpIn"
-                         protocol="http"
-                         port="80" />
-        </InputEndpoints>
-      </WebRole>
-    </ServiceDefinition>
+```
+<ServiceDefinition name="MyService" xmlns="...">
+  <WebRole name="WebRole">
+    <ConfigurationSettings>
+      <Setting name="GreetingString" />
+    </ConfigurationSettings>
+    <InputEndpoints>
+      <InputEndpoint name="HttpIn"
+                     protocol="http"
+                     port="80" />
+    </InputEndpoints>
+  </WebRole>
+</ServiceDefinition>
+```
 
 
 <a name="Hosting"></a>
@@ -192,17 +194,19 @@ change on a restart.
 
 Here's an example service configuration:
 
-    <ServiceConfiguration name="MyService" xmlns="...">
-      <Role name="WebRole">
-        <Instances min="3" max="10" />
-        <UpdateDomains count="3" />
-        <FaultDomains count="3" />
-        <ConfigurationSettings>
-          <Setting name="GreetingString"
-                   value="Hello world!" />
-        </ConfigurationSettings>
-      </Role>
-    </ServiceConfiguration>
+```
+<ServiceConfiguration name="MyService" xmlns="...">
+  <Role name="WebRole">
+    <Instances min="3" max="10" />
+    <UpdateDomains count="3" />
+    <FaultDomains count="3" />
+    <ConfigurationSettings>
+      <Setting name="GreetingString"
+               value="Hello world!" />
+    </ConfigurationSettings>
+  </Role>
+</ServiceConfiguration>
+```
 
 Warning: full service definition and configuration isn't available in CTP, so
 this includes minor speculation, specifically the `Instances` tag's `min` and

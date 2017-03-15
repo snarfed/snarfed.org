@@ -25,7 +25,9 @@ directory. The script will look for an existing patch for the old version in
 **~/src/pine**, and will write out the new patch to the same directory. For
 example, use this command line to port **foo.patch.4.63** to Pine version 4.64:
 
-    ./port_pine_patch.sh foo 4.63 4.64
+```
+./port_pine_patch.sh foo 4.63 4.64
+```
 
 Future versions will remove the hard-coded paths. For now, you can edit the
 variables at the top of the script to point to different paths.

@@ -26,20 +26,26 @@ Goodbye config file! Hello plug and play!
 To use make-album just pop the jar into your application's WEB-INF/lib directory
 and restart the server. Make a new snip using this following tag:
 
-    {make-album:albumDirName}
+```
+{make-album:albumDirName}
+```
 
 Where albumDirName is a directory in your application's images directory.
 Default thumbnail size is 240px and default web-size is 800px. if you'd like to
 change them, you can specify those as parameters like so:
 
-    {make-album:albumDirName|thumb_size|web_size}
+```
+{make-album:albumDirName|thumb_size|web_size}
+```
 
 Where thumb_size and web_size are integers.
 
 Also, if you're running this on **linux, unix**, etc. you will need to modify
 your run script to include this java flag:
 
-    java -Djava.awt.headless=true
+```
+java -Djava.awt.headless=true
+```
 
 Please see **Notes** for more.
 

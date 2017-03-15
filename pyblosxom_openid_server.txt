@@ -25,7 +25,7 @@ Extension](http://www.openidenabled.com/openid/simple-registration-extension),
 which lets you optionally provide your name, email address, and other
 information automatically to sites that you log into with OpenID.
 
-In OpenID terminology, this plugin acts as an an 
+In OpenID terminology, this plugin acts as an an
 [Identifer](http://openid.net/specs/openid-authentication-1_1.html#anchor2) and
 [Identity Provider](http://openid.net/specs/openid-authentication-1_1.html#anchor2).
 It provides an
@@ -40,19 +40,25 @@ Then, download [openid_server.py](/openid_server.py) and
 place it in your plugins directory. Finally, add this line to your flavour's
 head template:
 
-    <link rel="openid.server"
-          href="$base_url$openid_trigger">
+```
+<link rel="openid.server"
+      href="$base_url$openid_trigger">
+```
 
 If you want to use SSL, hard-code your base url, like so:
 
-    <link rel="openid.server"
-          href="https://snarfed.org$openid_trigger">
+```
+<link rel="openid.server"
+      href="https://snarfed.org$openid_trigger">
+```
 
 Finally, add the `openid_password` (required) and `openid_trigger` (optional)
 config variables to your `config.py`:
 
-    py['openid_password'] = 'topsecret!'
-    py['openid_trigger'] = '/openid'
+```
+py['openid_password'] = 'topsecret!'
+py['openid_trigger'] = '/openid'
+```
 
 Et voila! You should be good to go. Try it out on a friendly neighborhood
 OpenID-enabled blog near you, like maybe
@@ -64,15 +70,17 @@ that you log into with OpenID, using the
 Extension](http://www.openidenabled.com/openid/simple-registration-extension).
 Just fill in any of these config variables in `config.py`:
 
-    py['openid_nickname'] = 'ryan'
-    py['openid_email'] = 'ryan'
-    py['openid_fullname'] = 'Ryan Barrett'
-    py['openid_dob'] = '1901-01-01'
-    py['openid_gender'] = 'M'
-    py['openid_postcode'] = '90001'
-    py['openid_country'] = 'US'
-    py['openid_language'] = 'EN-us'
-    py['openid_timezone'] = 'America/Los_Angeles'
+```
+py['openid_nickname'] = 'ryan'
+py['openid_email'] = 'ryan'
+py['openid_fullname'] = 'Ryan Barrett'
+py['openid_dob'] = '1901-01-01'
+py['openid_gender'] = 'M'
+py['openid_postcode'] = '90001'
+py['openid_country'] = 'US'
+py['openid_language'] = 'EN-us'
+py['openid_timezone'] = 'America/Los_Angeles'
+```
 
 Default HTML is included for the endpoint, login, and error pages. For your
 CSS styling pleasure, it uses divs with the classes `openid-info`,

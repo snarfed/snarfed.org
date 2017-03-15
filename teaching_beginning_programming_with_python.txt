@@ -26,19 +26,23 @@ to use [Python](http://python.org/) because of its simple syntax, plain-english
 keywords, and interactive shell. We started in the shell with a few **print**
 statements.
 
-    >>> print 'hi'
-    hi
-    >>> print 3
-    3
-    >>> print 2 + 2
-    4
-    >>> print 'hi', 2
-    hi 2
+```
+>>> print 'hi'
+hi
+>>> print 3
+3
+>>> print 2 + 2
+4
+>>> print 'hi', 2
+hi 2
+```
 
 We quickly covered strings, integers, and basic arithmetic. We opened a .py file
 and wrote a Python script, ran it, saw the output, and cheered. Hello, world!
 
-    print 'Hello, world!'
+```
+print 'Hello, world!'
+```
 
 We moved on to variables, which we thought about as little boxes in memory, with
 names, that could hold things. We used **input()** to ask the user's name,
@@ -58,26 +62,27 @@ about teaching with Python. I tried to find a link, but no such luck.
 In the end, we had a working copy of that old standard, the number guessing
 game. Check it out!
 
-    import random
-    play_again='Y'
+```
+import random
+play_again='Y'
 
-    while play_again=='Y':
-        print "pick a number"
-        answer=random.randint(0,100)
+while play_again=='Y':
+    print "pick a number"
+    answer=random.randint(0,100)
+    guess=input()
+    num_guesses=1
+    while guess!=answer:
+        num_guesses=num_guesses+1
+        if guess<=answer:
+            print "higher than ", guess
+        if guess>=answer:
+            print "lower than ", guess
+        if guess>=answer-2 and guess<=answer+2:
+            print "almost"
         guess=input()
-        num_guesses=1
-        while guess!=answer:
-            num_guesses=num_guesses+1
-            if guess<=answer:
-                print "higher than ", guess
-            if guess>=answer:
-                print "lower than ", guess
-            if guess>=answer-2 and guess<=answer+2:
-                print "almost"
-            guess=input()
 
-        print "great! The correct number was ", answer
-        print "your number of guesses was ", num_guesses
-        print "play again? 'Y'/'N'"
-        play_again=input()
-
+    print "great! The correct number was ", answer
+    print "your number of guesses was ", num_guesses
+    print "play again? 'Y'/'N'"
+    play_again=input()
+```

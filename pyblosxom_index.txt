@@ -20,11 +20,13 @@ except that it indexes the entries by name, instead of by date.
 There are number of config parameters available to customize index.py's
 behavior, all optional. Here they are, along with their defaults:
 
-    py['index_trigger']            = '/site-index'
-    py['index_num_columns']        = 2
-    py['index_letters_first']      = True
-    py['index_title']              = 'index'
-    py['index_use_story_template'] = True
+```
+py['index_trigger']            = '/site-index'
+py['index_num_columns']        = 2
+py['index_letters_first']      = True
+py['index_title']              = 'index'
+py['index_use_story_template'] = True
+```
 
 index.py is copyright 2006 [Ryan Barrett](/about), and is distributed
 under the [GPL](http://www.gnu.org/licenses/gpl.html).

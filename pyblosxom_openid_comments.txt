@@ -37,15 +37,19 @@ your blog.
 When you're ready, add a note in your `comments-form` template that the URL
 input field now supports OpenId:
 
-    <input name="url" id="comment-url" type="text" value="$cmt_link" />
-    <label for="url">Web site or <a href="http://openid.net/">OpenID</a></label>
+```
+<input name="url" id="comment-url" type="text" value="$cmt_link" />
+<label for="url">Web site or <a href="http://openid.net/">OpenID</a></label>
+```
 
 Then, add this setting to your `config.py`:
 
-    # A directory for the OpenID library to use to store information about
-    # OpenID servers and logins. This directory should be outside of your
-    # public web space.
-     py['openid_store_dir'] = '/path/to/data/directory/'
+```
+# A directory for the OpenID library to use to store information about
+# OpenID servers and logins. This directory should be outside of your
+# public web space.
+ py['openid_store_dir'] = '/path/to/data/directory/'
+```
 
 Change the path to an appropriate directory on your web server, and you should
 be good to go!
@@ -53,28 +57,30 @@ be good to go!
 Apart from `openid_store_dir`, there are several configuration settings that
 allow you to control comment access based on OpenID:
 
-    # Trust root for the OpenID Request. Defaults to the base URL of your page.
-    # (All URLs should fall under this directory.)
-    py['openid_trust_root']  
-    
-    # If this is set to True, do not allow comments unless OpenID
-    # authentication succeeds. Defaults to False.
-    py['openid_required']  
-    
-    # List of patterns for identities and OpenID servers to always reject. The
-    # patterns follow the form of OpenID trust roots, which are basically URLs
-    # that allow * in the domain name to match any subdomain. For more
-    # details, see the entry on openid.trust_root in
-    # http://openid.net/specs.bml#mode-checkid_immediate.
-    # Both default to empty lists.
-    py['openid_reject_identity']  
-    py['openid_reject_server']  
-    
-    # Lists of patterns for identities and servers to allow. If either of
-    # these options are set, only OpenID URLs that match are allowed. Both
-    # default to empty lists.
-    py['openid_allow_identity']  
-    py['openid_allow_server']  
+```
+# Trust root for the OpenID Request. Defaults to the base URL of your page.
+# (All URLs should fall under this directory.)
+py['openid_trust_root']
+
+# If this is set to True, do not allow comments unless OpenID
+# authentication succeeds. Defaults to False.
+py['openid_required']
+
+# List of patterns for identities and OpenID servers to always reject. The
+# patterns follow the form of OpenID trust roots, which are basically URLs
+# that allow * in the domain name to match any subdomain. For more
+# details, see the entry on openid.trust_root in
+# http://openid.net/specs.bml#mode-checkid_immediate.
+# Both default to empty lists.
+py['openid_reject_identity']
+py['openid_reject_server']
+
+# Lists of patterns for identities and servers to allow. If either of
+# these options are set, only OpenID URLs that match are allowed. Both
+# default to empty lists.
+py['openid_allow_identity']
+py['openid_allow_server']
+```
 
 Copyright 2006-2007
 [Josh Hoyt](http://claimid.com/j3h/) and

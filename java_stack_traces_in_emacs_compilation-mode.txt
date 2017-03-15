@@ -17,18 +17,20 @@ traces.
 Here's an elisp snippet that adds stack trace support, so you can jump to
 individual lines with `` C-x ` ``, mouse click, or `next-error`:
 
-    (defvar java-stack-trace-dir "src/")
-    (defun java-stack-trace-regexp-to-filename ()
-      "Generates a relative filename from java-stack-trace regexp match data."
-      (concat java-stack-trace-dir
-              (replace-regexp-in-string "\\." "/" (match-string 1))
-              (match-string 2)))
-    
-    (add-to-list 'compilation-error-regexp-alist 'java-stack-trace)
-    (add-to-list 'compilation-error-regexp-alist-alist
-      '(java-stack-trace .
-        ("^[[:space:]]*at \\(\\(?:[[:lower:]]+\\.\\)+\\)[^(]+(\\([[:alnum:]]+\\.java\\):\\([[:digit:]]+\\))"
-         java-stack-trace-regexp-to-filename 3)))
+```
+(defvar java-stack-trace-dir "src/")
+(defun java-stack-trace-regexp-to-filename ()
+  "Generates a relative filename from java-stack-trace regexp match data."
+  (concat java-stack-trace-dir
+          (replace-regexp-in-string "\\." "/" (match-string 1))
+          (match-string 2)))
+
+(add-to-list 'compilation-error-regexp-alist 'java-stack-trace)
+(add-to-list 'compilation-error-regexp-alist-alist
+  '(java-stack-trace .
+    ("^[[:space:]]*at \\(\\(?:[[:lower:]]+\\.\\)+\\)[^(]+(\\([[:alnum:]]+\\.java\\):\\([[:digit:]]+\\))"
+     java-stack-trace-regexp-to-filename 3)))
+```
 
 You can customize `java-stack-trace-dir` to set the base directory to search for
 source files. If it's relative, it will be appended to the compilation's working

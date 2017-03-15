@@ -34,40 +34,44 @@ Great question! I fell down this rabbit hole recently myself.
 
 [@dan04's answer](http://stackoverflow.com/a/9934913/186123) inspired me to expand it into a `unicode` subclass that provides consistent indexing, slicing, and `len()` on both narrow and wide Python 2 builds:
 
-    class WideUnicode(unicode):
-      """String class with consistent indexing, slicing, len() on both narrow and wide Python."""
-      def __init__(self, *args, **kwargs):
-        super(WideUnicode, self).__init__(*args, **kwargs)
-        # use UTF-32LE to avoid a byte order marker at the beginning of the string
-        self.__utf32le = unicode(self).encode('utf-32le')
-    
-      def __len__(self):
-        return len(self.__utf32le) / 4
-    
-      def __getitem__(self, key):
-        length = len(self)
-    
-        if isinstance(key, int):
-          if key >= length:
-            raise IndexError()
-          key = slice(key, key + 1)
-    
-        if key.stop is None:
-          key.stop = length
-    
-        assert key.step is None
-    
-        return WideUnicode(self.__utf32le[key.start * 4:key.stop * 4]
-                           .decode('utf-32le'))
-    
-      def __getslice__(self, i, j):
-        return self.__getitem__(slice(i, j))
+```python
+class WideUnicode(unicode):
+  """String class with consistent indexing, slicing, len() on both narrow and wide Python."""
+  def __init__(self, *args, **kwargs):
+    super(WideUnicode, self).__init__(*args, **kwargs)
+    # use UTF-32LE to avoid a byte order marker at the beginning of the string
+    self.__utf32le = unicode(self).encode('utf-32le')
+
+  def __len__(self):
+    return len(self.__utf32le) / 4
+
+  def __getitem__(self, key):
+    length = len(self)
+
+    if isinstance(key, int):
+      if key >= length:
+        raise IndexError()
+      key = slice(key, key + 1)
+
+    if key.stop is None:
+      key.stop = length
+
+    assert key.step is None
+
+    return WideUnicode(self.__utf32le[key.start * 4:key.stop * 4]
+                       .decode('utf-32le'))
+
+  def __getslice__(self, i, j):
+    return self.__getitem__(slice(i, j))
+```
 
 [Open sourced here](https://github.com/snarfed/webutil/blob/ac29df5aaaf7572223e95edc465749a62ed20641/util.py#L1261-L1323), public domain. Example usage:
 
-    text = WideUnicode(obj.text)
-    for tag in obj.tags:
-      text = WideUnicode(text[:start] + tag.text + text[end:])
+```
+text = WideUnicode(obj.text)
+for tag in obj.tags:
+  text = WideUnicode(text[:start] + tag.text + text[end:])
+```
 
 ([Simplified from this usage.](https://github.com/snarfed/granary/commit/73073aad9fe1b9fd0aaa6688e8cf4bde409d277e#diff-30af2390b148b7d3997f2b2d3928ed96R1175))
 

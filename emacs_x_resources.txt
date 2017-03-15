@@ -18,23 +18,29 @@ faster way: [X resources](http://www.plig.org/xwinman/resource.html).
 Try for yourself! Here's the elisp to turn off the menu bar, toolbar, and scroll
 bars. Put it in your `.emacs`, and start Emacs.
 
-    (menu-bar-mode nil)
-    (tool-bar-mode nil)
-    (scroll-bar-mode nil)
+```
+(menu-bar-mode nil)
+(tool-bar-mode nil)
+(scroll-bar-mode nil)
+```
 
 Now, take it out, and instead, add these lines to your `.Xresources` file.
 
-    Emacs.menuBar: off
-    Emacs.verticalScrollBars: off
-    Emacs.toolBar: off
+```
+Emacs.menuBar: off
+Emacs.verticalScrollBars: off
+Emacs.toolBar: off
+```
 
 Run `xrdb .Xresources`, then try starting Emacs again. It should be much faster!
 
 Emacs obeys many other X resources. For example, I use these to customize the
 default font and foreground and background colors:
 
-    Emacs*font: 7x14
-    Emacs*foreground: lightgray
-    Emacs*background: black
+```
+Emacs*font: 7x14
+Emacs*foreground: lightgray
+Emacs*background: black
+```
 
 Here's to fast-starting Emacs!

@@ -22,6 +22,8 @@ permalinks stored in the database.
 
 To run it, simply pass the same parameters you'd pass to `mysql`, e.g.
 
-    $ ./generate_blogpost.sh -h [HOST] -u [USER] [DATABASE]
+```
+$ ./generate_blogpost.sh -h [HOST] -u [USER] [DATABASE]
+```
 
 Tested with blogpost.py version 0.9.3.

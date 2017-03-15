@@ -5,12 +5,14 @@ I've recently packaged and released a few small programs, and I spent a little
 time thinking about what files to include. If you've used any \*nix OS before,
 the following shell session will look very familiar:
 
-    heaven:~> tar xzvf foo-1.2.3.tar.gz
-    heaven:~> ls foo-1.2.3/
-    bin     configure  doc      include  Makefile  src
-    build   COPYING    etc      INSTALL  MANIFEST  test
-    config  COPYRIGHTS HISTORY  lib      README    UPDATE
-    heaven:~>
+```
+heaven:~> tar xzvf foo-1.2.3.tar.gz
+heaven:~> ls foo-1.2.3/
+bin     configure  doc      include  Makefile  src
+build   COPYING    etc      INSTALL  MANIFEST  test
+config  COPYRIGHTS HISTORY  lib      README    UPDATE
+heaven:~>
+```
 
 If you haven't used \*nix much, this is a typical list of files and directories
 that a program comes with. Most programs have a README file. Other common files

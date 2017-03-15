@@ -12,17 +12,21 @@ X Windows.
 
 Add these two lines to `~/.Xmodmap`:
 
-    ! Switch caps lock and (left) control
-    remove Lock = Caps_Lock
-    remove Control = Control_L
-    keysym Control_L = Caps_Lock
-    keysym Caps_Lock = Control_L
-    add Lock = Caps_Lock
-    add Control = Control_L
+```
+! Switch caps lock and (left) control
+remove Lock = Caps_Lock
+remove Control = Control_L
+keysym Control_L = Caps_Lock
+keysym Caps_Lock = Control_L
+add Lock = Caps_Lock
+add Control = Control_L
+```
 
 Now load the changes into X:
 
-    $ xmodmap ~/.Xmodmap
+```
+$ xmodmap ~/.Xmodmap
+```
 
 Voila! You're now one step closer to Sun keyboard bliss.
 

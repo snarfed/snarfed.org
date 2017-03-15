@@ -15,7 +15,9 @@ authenticate and [curl](http://curl.haxx.se/) to fetch the data from the source
 
 Usage:
 
-    backup_google.sh EMAIL PASSWORD DIR
+```
+backup_google.sh EMAIL PASSWORD DIR
+```
 
 Note that this was written before the
 [Tasks API](http://googleappsdeveloper.blogspot.com/2011/05/getting-organized-with-tasks-api.html)

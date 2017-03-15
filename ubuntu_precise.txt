@@ -10,7 +10,7 @@ I recently upgraded from
 [Lucid](https://help.ubuntu.com/10.04/about-ubuntu/C/) (10.04) to
 [Precise](https://help.ubuntu.com/12.04/ubuntu-help/) (12.04). Similar to
 my list of [tips for Lucid](/ubuntu_lucid)
-[and Fedora Core 3](/fedora_core_3_on_vmware), here are 
+[and Fedora Core 3](/fedora_core_3_on_vmware), here are
 some tips for Ubuntu Precise. (I'm running it on a
 [Thinkpad X201](http://shop.lenovo.com/us/landing_pages/thinkpad/2010/X201-X201s-X201tablet)).
 
@@ -18,7 +18,9 @@ some tips for Ubuntu Precise. (I'm running it on a
 longer. It's evidently deprecated, and `setxkbmap` is now X.org's preferred way
 to manipulate keymaps. This does the trick:
 
-        setxkbmap -option ctrl:swapcaps
+    ```
+    setxkbmap -option ctrl:swapcaps
+    ```
 
   * I used to use `aumix` as my volume control and mixer, but it
 couldn't find the mixer device in Precise. I could have dug around for it, but
@@ -34,10 +36,12 @@ and these
 [questions](http://askubuntu.com/questions/118675/mute-key-mutes-alsa-and-pulseaudio-but-unmutes-only-alsa).
 The solution is to toggle all of the channels explicitly:
 
-        echo 'sset Master toggle
-         sset Headphone toggle
-         sset PCM toggle
-         sset Front toggle' | amixer --stdin -q
+    ```
+    echo 'sset Master toggle
+     sset Headphone toggle
+     sset PCM toggle
+     sset Front toggle' | amixer --stdin -q
+    ```
 
   * On the topic of sound, it didn't initially work on my laptop because
     `/dev/snd/*` weren't world writable or readable. A quick
@@ -54,15 +58,19 @@ The solution is to toggle all of the channels explicitly:
     also hacked the status bar in [notion](http://notion.sourceforge.net/) (née
     [ion3](http://en.wikipedia.org/wiki/Ion_(window_manager))), my window
     manager, to use them to find the current network connection:
-    
-        nmcli -terse -field devices,name,state con status \
-          | sed -r "s/activated/\*/; s/activating/.../; s/deactivated/X/; s/:/ /g"
+
+    ```
+    nmcli -terse -field devices,name,state con status \
+      | sed -r "s/activated/\*/; s/activating/.../; s/deactivated/X/; s/:/ /g"
+    ```
 
     and Wifi signal strength:
-    
-        nm-tool | grep \*`nmcli -t -f name con status` \
-            | egrep -o "Strength [0-9]+" \
-            | cut -d" " -f2-
+
+    ```
+    nm-tool | grep \*`nmcli -t -f name con status` \
+        | egrep -o "Strength [0-9]+" \
+        | cut -d" " -f2-
+    ```
 
   * It's not Precise-specific, but these AIM notifications have always annoyed
     me: _AOL System Msg: Your screen name (mrEman) is now signed into AOL(R)

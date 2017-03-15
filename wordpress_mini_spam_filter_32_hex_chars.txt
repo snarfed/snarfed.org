@@ -19,12 +19,14 @@ to see which spam comments survived and which didn't.
 Here's a tiny PHP snippet you can add to your theme's `functions.php` that will
 automatically mark comments like these as spam:
 
-    function spam_32_hex_chars($approved, $commentdata) {
-      $text = trim(wp_strip_all_tags($commentdata['comment_content'], true));
-      return preg_match('|[0-9a-f]{32}$|', $text) ? 'spam' : $approved;
-    }
-    
-    add_filter('pre_comment_approved', 'spam_32_hex_chars', '99', 2);
+```
+function spam_32_hex_chars($approved, $commentdata) {
+  $text = trim(wp_strip_all_tags($commentdata['comment_content'], true));
+  return preg_match('|[0-9a-f]{32}$|', $text) ? 'spam' : $approved;
+}
+
+add_filter('pre_comment_approved', 'spam_32_hex_chars', '99', 2);
+```
 
 Happy blogging!
 

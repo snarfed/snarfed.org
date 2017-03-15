@@ -40,9 +40,11 @@ The endpoint should identify the silo and domain, e.g. `/tumblr/mysite.com`. We
 should use [IndieAuth's token service](http://tokens.indieauth.com/) to start,
 so we'd include its endpoints too. Here's an example block:
 
-    <link rel="micropub" href="https://micropub-bridge.org/tumblr/mysite.com">
-    <link rel="authorization_endpoint" href="https://indieauth.com/auth">
-    <link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+```
+<link rel="micropub" href="https://micropub-bridge.org/tumblr/mysite.com">
+<link rel="authorization_endpoint" href="https://indieauth.com/auth">
+<link rel="token_endpoint" href="https://tokens.indieauth.com/token">
+```
 
 When a micropub request comes in, we'd extract the silo and domain from the path
 (or whatever), look up the access token, convert the request to a corresponding

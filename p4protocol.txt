@@ -136,34 +136,38 @@ routing and multiplexing information, and the sender's username and signature.
 The header has a total length of 56 bytes, most of which is due to the username
 and signature. The header is as follows:
 
-    0 (bits)        8               16                              32
-    +---------------+----------------+-------------------------------+
-    |      flags    | for future use |           plugin ID           |
-    +---------------+----------------+-------------------------------+
-    |                            data length                         |
-    +----------------------------------------------------------------+
-    |                            message ID                          |
-    |                            (64 bits)                           |
-    +----------------------------------------------------------------+
-    |                                            \   \               |
-    |                    username (20 bytes)     /.../               |
-    |                                            \   \               |
-    +---------------------------------------------    ---------------+
-    |                                            /   /               |
-    |                RSA signature (20 bytes)    \...\               |
-    |                                            /   /               |
-    +--------------------------------------------   -----------------+
-    |                            data                                |
-    |                                                                |
-    |_.-'^`-._.-'^`-._.-'^`-._.-'^`-._.-'^`-._.-'^`-._.-'^`-._.-'^`-.|
+```
+0 (bits)        8               16                              32
++---------------+----------------+-------------------------------+
+|      flags    | for future use |           plugin ID           |
++---------------+----------------+-------------------------------+
+|                            data length                         |
++----------------------------------------------------------------+
+|                            message ID                          |
+|                            (64 bits)                           |
++----------------------------------------------------------------+
+|                                            \   \               |
+|                    username (20 bytes)     /.../               |
+|                                            \   \               |
++---------------------------------------------    ---------------+
+|                                            /   /               |
+|                RSA signature (20 bytes)    \...\               |
+|                                            /   /               |
++--------------------------------------------   -----------------+
+|                            data                                |
+|                                                                |
+|_.-'^`-._.-'^`-._.-'^`-._.-'^`-._.-'^`-._.-'^`-._.-'^`-._.-'^`-.|
+```
 
 _Figure 3.1: The P4 message header._
 
 
-    0 (bytes) 1   2          3 4           7 8         15 16      35 36       65
-    +---------+-----+-----------+-------------+------------+----------+-----------+
-    | flags   |  -  | plugin ID | data length | message ID | username | signature |
-    +---------+-----+-----------+-------------+------------+----------+-----------+
+```
+0 (bytes) 1   2          3 4           7 8         15 16      35 36       65
++---------+-----+-----------+-------------+------------+----------+-----------+
+| flags   |  -  | plugin ID | data length | message ID | username | signature |
++---------+-----+-----------+-------------+------------+----------+-----------+
+```
 
 _Figure 3.2: Another view of the P4 message header._
 
@@ -176,10 +180,12 @@ otherwise. Also, all numeric fields are unsigned integers.
 Note: All IP addresses sent in P4 messages are in IPv4 format. For example,
 the dotted quad 208.17.50.4 is represented with the following four bytes:
 
-    +--------+--------+--------+--------+
-    |  0xD0  |  0x11  |  0x32  |  0x04  |
-    +--------+--------+--------+--------+
-      byte 1   byte 2   byte 3   byte 4
+```
++--------+--------+--------+--------+
+|  0xD0  |  0x11  |  0x32  |  0x04  |
++--------+--------+--------+--------+
+  byte 1   byte 2   byte 3   byte 4
+```
 
 _Figure 3.3: An IP address in IPv4 format._
 
@@ -218,14 +224,14 @@ with the HELLO flag, and may optionally be set with the DATA flag.
   * `for future use (1)` This byte is currently unused. It may be used in future
   versions of the protocol.
 
-  NOTE: The following is of historical interest only.  
-  
+  NOTE: The following is of historical interest only.
+
   This field used to be a hops-to-live field. The hops-to-live field was set by
   the sender and decremented once by each recipient. If a client received a
   message with hops-to-live set to 0, that message would *not* be forwarded. The
   only messages that required use of the hops-to-live field were HELLO, DISCOVER,
   and any message with BROADCAST set.
-  
+
   The hops-to-live field was removed because it was redundant. The message ID
   field, together with a correct implementation of the protocol, should prevent
   loops. (See [6. Message Routing and Behavior](#Message_Routing_and_Behavior).)
@@ -283,10 +289,13 @@ or padding bytes in the P4 data stream.
 <a name="HELLO"></a>
 #### 4.1. HELLO (variable)
 
-    0 (bytes)   3 4    5 6            7 8          29 30         51
-    +-----------+------+--------------+-------------+-------------+
-    | source IP | port | plugin count | plugin info | plugin info | ...
-    +-----------+------+--------------+-------------+-------------+
+```
+0 (bytes)   3 4    5 6            7 8          29 30         51
++-----------+------+--------------+-------------+-------------+
+| source IP | port | plugin count | plugin info | plugin info | ...
++-----------+------+--------------+-------------+-------------+
+```
+
 _Figure 4.1.1: HELLO data format._
 
   * `source IP (4)` The IP address of the sender.
@@ -382,10 +391,13 @@ flag set, the message is invalid and the client should close the connection.
 <a name="DISCOVER"></a>
 #### 4.5. DISCOVER (20)
 
-    0 (bytes)   19
-    +------------+
-    |  username  |
-    +------------+
+```
+0 (bytes)   19
++------------+
+|  username  |
++------------+
+```
+
 _Figure 4.5.1: DISCOVER data format._
 
 	username (20)
@@ -437,10 +449,13 @@ message is invalid and the client should close the connection.
 <a name="LKA-ACK"></a>
 #### 4.7. LKA-ACK (variable)
 
-    0 (bytes) 3 4
-    +-----------+-----------+-----------+
-    | LKA size  | LKA entry | LKA entry | ...
-    +-----------+-----------+-----------+
+```
+0 (bytes) 3 4
++-----------+-----------+-----------+
+| LKA size  | LKA entry | LKA entry | ...
++-----------+-----------+-----------+
+```
+
 _Figure 4.1.1: LKA data format._
 
   * `LKA size (4)` The number of users in the LKA table. This must be the same as the number of LKA
@@ -496,10 +511,13 @@ table is sent over the network in the LKA-ACK message, which includes the number
 of entries in the table and each entry in a specific format. This is the format
 of the LKA entry field:
 
-    0 (bytes) 19 20     23 24  25 26         27 28       29 30       31
-    +-----------+---------+------+-------------+-----------+-----------+
-    | username  | IP addr | port |plugin count | plugin ID | plugin ID | ...
-    +-----------+---------+------+-------------+-----------+-----------+
+```
+0 (bytes) 19 20     23 24  25 26         27 28       29 30       31
++-----------+---------+------+-------------+-----------+-----------+
+| username  | IP addr | port |plugin count | plugin ID | plugin ID | ...
++-----------+---------+------+-------------+-----------+-----------+
+```
+
 _Figure 5.1.1: The format of an LKA entry._
 
   * `username (20)` The username of this LKA entry.
@@ -523,10 +541,13 @@ plugin is sent in a plugin info record. This is the format of the plugin info
 record:
 
 
-    0 (bytes)   1
-    +-----------+
-    | plugin ID |
-    +-----------+
+```
+0 (bytes)   1
++-----------+
+| plugin ID |
++-----------+
+```
+
 _Figure 5.2.1: The plugin info format._
 
   * `plugin ID (2)` The plugin ID.

@@ -47,19 +47,23 @@ I wish this was documented! Would have saved me a lot of time.
 
 `backends.yaml`
 
-    - name: test
-      instances: 1
-      start: threadtest.application
+```yaml
+- name: test
+  instances: 1
+  start: threadtest.application
+```
 
 `test.py`
 
-    def test():
-      for i in range(100):
-        logging.info('Starting #%d', i)
-        background_thread.start_new_background_thread(time.sleep, [20])
-    
-    class Start(webapp2.RequestHandler):
-      def get(self):
-        background_thread.start_new_background_thread(test, [])
-    
-    application = webapp2.WSGIApplication([('/_ah/start', Start)], debug=True)
+```python
+def test():
+  for i in range(100):
+    logging.info('Starting #%d', i)
+    background_thread.start_new_background_thread(time.sleep, [20])
+
+class Start(webapp2.RequestHandler):
+  def get(self):
+    background_thread.start_new_background_thread(test, [])
+
+application = webapp2.WSGIApplication([('/_ah/start', Start)], debug=True)
+```

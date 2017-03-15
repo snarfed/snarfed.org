@@ -42,21 +42,23 @@ disappears.
 
 Example usage:
 
-    $ ./facebook_to_wordpress.py http://myblog.com/xmlrpc.php \
-        user password < posts.json
-    Reading posts from stdin
-    Connecting to http://myblog.com/xmlrpc.php as user
-    Skipping 2012-11-06
-    Downloading https://fbcdn-photos-a.akamaihd.net/hphotos-ak-prn1/58835_10100411291505323_408284397_o.jpg
-    Uploading as image/jpeg
-    Publishing pumpkin carving
-    Publishing comment "http://cdn.smosh.com/sites/def"
-    Updating comment's time to 2012-10-29 02:51:31
-    Publishing comment "oh my god that's good"
-    Updating comment's time to 2012-10-29 05:43:45
-    Skipping 2012-10-28
-    ...
-    Done.
+```
+$ ./facebook_to_wordpress.py http://myblog.com/xmlrpc.php \
+    user password < posts.json
+Reading posts from stdin
+Connecting to http://myblog.com/xmlrpc.php as user
+Skipping 2012-11-06
+Downloading https://fbcdn-photos-a.akamaihd.net/hphotos-ak-prn1/58835_10100411291505323_408284397_o.jpg
+Uploading as image/jpeg
+Publishing pumpkin carving
+Publishing comment "http://cdn.smosh.com/sites/def"
+Updating comment's time to 2012-10-29 02:51:31
+Publishing comment "oh my god that's good"
+Updating comment's time to 2012-10-29 05:43:45
+Skipping 2012-10-28
+...
+Done.
+```
 
 
 Facebook also lets you [download your data](https://www.facebook.com/download/)

@@ -120,19 +120,21 @@ table's hierarchical structure, fields, and
 
 YQL's syntax is similar to SQL:
 
-    SELECT fields FROM table
-    [WHERE filter [AND filter] ...]
-    [function] [function] ...
-
+```
+SELECT fields FROM table
+[WHERE filter [AND filter] ...]
+[function] [function] ...
+```
 
 Notably, unlike most of the
 [related projects](#related),
 YQL also supports sub-selects:
 
-    SELECT fields FROM table
-    WHERE field IN
-      (SELECT fields FROM other_table ...)
-
+```
+SELECT fields FROM table
+WHERE field IN
+  (SELECT fields FROM other_table ...)
+```
 
 This is particularly interesting because sub-selects may query different
 tables and data sources than the top-level query. This makes YQL a powerful
@@ -141,7 +143,6 @@ tool for mashups.
 Otherwise, this is all familiar functionality. I'll focus on how the query
 planner implements it on YQL's hierarchical, unindexed data.
 
- 
 <a name="local"></a>
 #### Local filters [![permalink](/Icon-Permalink.png)](#local)
 

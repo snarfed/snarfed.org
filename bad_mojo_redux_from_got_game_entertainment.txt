@@ -59,28 +59,32 @@ file exists in `C:\Windows\`, it uses that instead.
 In my case, the Bad Mojo installer put an incomplete `badmojo.ini` file into
 `C:\Windows\`. It had only these lines:
 
-    [badmojo]
-    Preferences=1111110
-    [SoundMix]
-    SoundOn=1
-    DumbSound=0
+```
+[badmojo]
+Preferences=1111110
+[SoundMix]
+SoundOn=1
+DumbSound=0
+```
 
 I copied these lines from <nobr>`C:\Program Files\Bad Mojo\badmojo.ini`</nobr>
 into it, and voila, no more error!
 
-    [BOOGER]
-    BACKGROUND=C:\Program Files\Bad Mojo\OVER;C:\Program Files\Bad Mojo\BACKGND
-    TOPO=C:\Program Files\Bad Mojo\TOPO
-    BTC=C:\Program Files\Bad Mojo\BTC
-    PALETTE=C:\Program Files\Bad Mojo\PALETTE
-    SCRIBBLE=C:\Program Files\Bad Mojo\OVER;C:\Program Files\Bad Mojo\SCRIBBLE
-    CEL=C:\Program Files\Bad Mojo\OVER;C:\Program Files\Bad Mojo\CEL
-    SCRIPT=C:\Program Files\Bad Mojo\SCRIPT
-    ROACH=C:\Program Files\Bad Mojo\ROACHD
-    MOVIE=C:\Program Files\Bad Mojo\OVER;C:\Program Files\Bad Mojo\MOVIE
-    MASH=C:\Program Files\Bad Mojo\OVER;C:\Program Files\Bad Mojo\MASH
-    SOUND=C:\Program Files\Bad Mojo\SOUND
-    SAVE=C:\Program Files\Bad Mojo\SAVE
-    USER=Ryan
+```
+[BOOGER]
+BACKGROUND=C:\Program Files\Bad Mojo\OVER;C:\Program Files\Bad Mojo\BACKGND
+TOPO=C:\Program Files\Bad Mojo\TOPO
+BTC=C:\Program Files\Bad Mojo\BTC
+PALETTE=C:\Program Files\Bad Mojo\PALETTE
+SCRIBBLE=C:\Program Files\Bad Mojo\OVER;C:\Program Files\Bad Mojo\SCRIBBLE
+CEL=C:\Program Files\Bad Mojo\OVER;C:\Program Files\Bad Mojo\CEL
+SCRIPT=C:\Program Files\Bad Mojo\SCRIPT
+ROACH=C:\Program Files\Bad Mojo\ROACHD
+MOVIE=C:\Program Files\Bad Mojo\OVER;C:\Program Files\Bad Mojo\MOVIE
+MASH=C:\Program Files\Bad Mojo\OVER;C:\Program Files\Bad Mojo\MASH
+SOUND=C:\Program Files\Bad Mojo\SOUND
+SAVE=C:\Program Files\Bad Mojo\SAVE
+USER=Ryan
+```
 
 Alternatively, deleting `C:\Windows\badmojo.ini` also fixes the problem.

@@ -25,12 +25,14 @@ links, and screen scrapes the resulting HTML.
 
 Here's an example run:
 
-    $ simonitor.sh 9999012345789/123 8888012345789/456#uber
-    Enter the captcha string: ABC123
-    99990123456789/123: $232.67, expires 08/2008
-                        Joe Bob  Mountain View, CA 94043 650-123-4567
-    88880123456789/456#uber: $39.91, expires 12/2008
-                        Jimmy J  Mountain View, CA 94043 650-321-7654
+```
+$ simonitor.sh 9999012345789/123 8888012345789/456#uber
+Enter the captcha string: ABC123
+99990123456789/123: $232.67, expires 08/2008
+                    Joe Bob  Mountain View, CA 94043 650-123-4567
+88880123456789/456#uber: $39.91, expires 12/2008
+                    Jimmy J  Mountain View, CA 94043 650-321-7654
+```
 
 Simon uses a [CAPTCHA](http://www.google.com/search?q=define%3Acaptcha) to
 discourage bots. This script displays the CAPTCHA image to the user, asks them

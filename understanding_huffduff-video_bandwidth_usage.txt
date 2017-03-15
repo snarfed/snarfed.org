@@ -10,9 +10,11 @@ As always, measure first, then optimize. I turned on
 waited 24h, then ran these commands to collect and aggregate the logs to see
 who's downloading these files:
 
-    aws --profile personal s3 sync s3://huffduff-video/logs .
-    grep REST.GET.OBJECT 2015-* | grep ' 200 ' | cut -d' ' -f8,20- \
-      | sort | uniq -c | sort -n -r > user_agents
+```
+aws --profile personal s3 sync s3://huffduff-video/logs .
+grep REST.GET.OBJECT 2015-* | grep ' 200 ' | cut -d' ' -f8,20- \
+  | sort | uniq -c | sort -n -r > user_agents
+```
 
 This gave me some useful baseline numbers. Over a 24h period, there were 482
 downloads, 318 of which came from bots. (That's 2/3!) Looking at the top user

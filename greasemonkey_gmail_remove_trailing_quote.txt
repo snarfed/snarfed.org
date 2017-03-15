@@ -19,15 +19,17 @@ the text box, it reverts the changes it made so you can revise if necessary.
 What's a trailing quote, you ask? It's best described by example. The last three
 lines in this email are a trailing quote:
 
-    On Fri, 4 Jun 2004, Jane Doe wrote:
+```
+On Fri, 4 Jun 2004, Jane Doe wrote:
 
-    > Thanks for the invite! Should I bring anything?
+> Thanks for the invite! Should I bring anything?
 
-    No, I have everything I need. Thanks though!
+No, I have everything I need. Thanks though!
 
-    > I'll see you soon...
-    >
-    > -Jane
+> I'll see you soon...
+>
+> -Jane
+```
 
 <a href="http://mail.google.com/"><img class="left" src="/gmail.png" /></a>
 

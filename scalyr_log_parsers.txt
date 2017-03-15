@@ -17,42 +17,45 @@ lines. You can try them out on Scalyr's
 Here's our parser for Python application logs from the built in
 [`logging` module](https://docs.python.org/2/library/logging.html).
 
-    {
-      patterns: {
-        // e.g. 08/Apr/2015 23:34:52
-        tsPattern: "\\d+/\\w+/\\d+ [0-9:]+"
-      },
-    
-      timezone: "PST",
-      formats: [{
-          id: "python",
-          format: "^\\[$timestamp=tsPattern$ $logger$\\] $severity$: ",
-        }],
-    
-      lineGroupers: [{
-          start: "^\\[",
-          haltBefore: "^\\[",
-        }]
-    }
+```
+{
+  patterns: {
+    // e.g. 08/Apr/2015 23:34:52
+    tsPattern: "\\d+/\\w+/\\d+ [0-9:]+"
+  },
 
+  timezone: "PST",
+  formats: [{
+      id: "python",
+      format: "^\\[$timestamp=tsPattern$ $logger$\\] $severity$: ",
+    }],
+
+  lineGroupers: [{
+      start: "^\\[",
+      haltBefore: "^\\[",
+    }]
+}
+```
 
 Here's a corresponding log snippet:
 
-    [06/Apr/2015 23:34:51 datasets.genes] ERROR: No gene list is available. You should run "xyz datasets:dump_gene_list"
-    [06/Apr/2015 23:34:52 py.warnings] WARNING: /path/to/resources.py:123: RemovedWarning: this_fn is deprecated in favor of that_fn.
-      @my_decorator.this_fn()
-    
-    [06/Apr/2015 23:34:52 request] ERROR: Internal Server Error: /sample_dashboard
-    Traceback (most recent call last):
-      File "/path/to/base.py", line 3, in get_response
-        response = wrapped_callback(request, *callback_args, **callback_kwargs)
-      File "/path/to/view.py", line 5, in wrapped_view
-        return view_func(*args, **kwargs)
-      File "/path/to/mgr.py", line 7, in view
-        return self.dispatch(request, *args, **kwargs)
-    ...
-    DoesNotExist: matching query does not exist.
-    [06/Apr/2015 23:35:22 datasets.genes] ERROR: No gene list is available. You should run "xyz datasets:dump_gene_list"
+```
+[06/Apr/2015 23:34:51 datasets.genes] ERROR: No gene list is available. You should run "xyz datasets:dump_gene_list"
+[06/Apr/2015 23:34:52 py.warnings] WARNING: /path/to/resources.py:123: RemovedWarning: this_fn is deprecated in favor of that_fn.
+  @my_decorator.this_fn()
+
+[06/Apr/2015 23:34:52 request] ERROR: Internal Server Error: /sample_dashboard
+Traceback (most recent call last):
+  File "/path/to/base.py", line 3, in get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "/path/to/view.py", line 5, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "/path/to/mgr.py", line 7, in view
+    return self.dispatch(request, *args, **kwargs)
+...
+DoesNotExist: matching query does not exist.
+[06/Apr/2015 23:35:22 datasets.genes] ERROR: No gene list is available. You should run "xyz datasets:dump_gene_list"
+```
 
 
 
@@ -62,31 +65,34 @@ We use this parser for [supervisord](http://supervisord.org/) and
 [Celery](http://www.celeryproject.org/). It probably also handles a number of
 other daemon style logs.
 
-    {
-      patterns: {
-        // e.g. 2015-04-06 21:35:23,935
-        tsPattern: "[0-9-]+ [0-9:]+,[0-9]+"
-      },
-    
-      timezone: "PST",
-      formats: [{
-        id: "supervisord",
-        format: "^\\[$timestamp=tsPattern$: $severity$/$process$\\] ",
-      }],
-    
-      lineGroupers: [{
-        start: "^\\[",
-        haltBefore: "^\\[",
-      }]
-    }
+```
+{
+  patterns: {
+    // e.g. 2015-04-06 21:35:23,935
+    tsPattern: "[0-9-]+ [0-9:]+,[0-9]+"
+  },
+
+  timezone: "PST",
+  formats: [{
+    id: "supervisord",
+    format: "^\\[$timestamp=tsPattern$: $severity$/$process$\\] ",
+  }],
+
+  lineGroupers: [{
+    start: "^\\[",
+    haltBefore: "^\\[",
+  }]
+}
+```
 
 Here's a corresponding log snippet:
 
-    [2015-04-06 18:40:14,735: WARNING/MainProcess] celery@ip-10-0-5-113 ready.
-    [2015-04-06 18:40:14,991: WARNING/MainProcess] Substantial drift from celery@ip-10-0-1-173 may mean clocks are out of sync.  Current drift is
-    48 seconds.  [orig: 2015-04-06 18:40:14.991652 recv: 2015-04-06 18:41:02.997980]
-    
-    [2015-04-06 18:40:18,616: INFO/MainProcess] Events of group {task} enabled by remote.
-    [2015-04-06 21:35:23,935: INFO/MainProcess] Received task: util.mailer._send_transactional_email[c324201d-175f-416d-9f94-8bb143d5c189]
-    [2015-04-06 21:35:25,241: WARNING/Worker-1] WARNING	Property: Unknown Property name. [36:3: -webkit-text-size-adjust]
+```
+[2015-04-06 18:40:14,735: WARNING/MainProcess] celery@ip-10-0-5-113 ready.
+[2015-04-06 18:40:14,991: WARNING/MainProcess] Substantial drift from celery@ip-10-0-1-173 may mean clocks are out of sync.  Current drift is
+48 seconds.  [orig: 2015-04-06 18:40:14.991652 recv: 2015-04-06 18:41:02.997980]
 
+[2015-04-06 18:40:18,616: INFO/MainProcess] Events of group {task} enabled by remote.
+[2015-04-06 21:35:23,935: INFO/MainProcess] Received task: util.mailer._send_transactional_email[c324201d-175f-416d-9f94-8bb143d5c189]
+[2015-04-06 21:35:25,241: WARNING/Worker-1] WARNING	Property: Unknown Property name. [36:3: -webkit-text-size-adjust]
+```

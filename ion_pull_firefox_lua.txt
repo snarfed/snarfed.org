@@ -10,37 +10,38 @@ Firefox profile. It finds the pid of the Firefox process by looking at the
 `~/.mozilla/firefox/[PROFILE]/lock` file, then searches ion for an X window with
 that pid in its `_NET_WM_PID` X property and attaches it.
 
-    pid_atom = ioncore.x_intern_atom('_NET_WM_PID', true)
-    pull_result = nil
-    
-    function pull_pid_fn(pid)
-      return function(window)
-        local window_pid = ioncore.x_get_window_property(window:xid(), pid_atom, 0, 0, true)
-        if window_pid and window_pid[1] == pid then
-          -- have to use this hack because WFrame.attach() can't be called in
-          -- restricted mode. boo.
-          pull_result = window
-          return false
-        else
-          return true
-        end
-      end
-    end
-    
-    function pull_firefox(to, profile)
-      pull_result = nil
-      local lock = io.popen("readlink -q ~/.mozilla/firefox/" .. profile .. "/lock"):lines()()
-      if not lock then
-        ioncore.warn(profile .. " firefox is not running")
-        return
-      end
-      local pid = string.match(lock, ":%+(%d+)$")
-    
-      ioncore.clientwin_i(pull_pid_fn(tonumber(pid)))
-      if pull_result then
-        to:attach(pull_result, {switchto=true})
-      else
-        ioncore.warn("couldn't find " .. profile .. " firefox (pid " .. pid .. ")")
-      end
-    end
+```
+pid_atom = ioncore.x_intern_atom('_NET_WM_PID', true)
+pull_result = nil
 
+function pull_pid_fn(pid)
+  return function(window)
+    local window_pid = ioncore.x_get_window_property(window:xid(), pid_atom, 0, 0, true)
+    if window_pid and window_pid[1] == pid then
+      -- have to use this hack because WFrame.attach() can't be called in
+      -- restricted mode. boo.
+      pull_result = window
+      return false
+    else
+      return true
+    end
+  end
+end
+
+function pull_firefox(to, profile)
+  pull_result = nil
+  local lock = io.popen("readlink -q ~/.mozilla/firefox/" .. profile .. "/lock"):lines()()
+  if not lock then
+    ioncore.warn(profile .. " firefox is not running")
+    return
+  end
+  local pid = string.match(lock, ":%+(%d+)$")
+
+  ioncore.clientwin_i(pull_pid_fn(tonumber(pid)))
+  if pull_result then
+    to:attach(pull_result, {switchto=true})
+  else
+    ioncore.warn("couldn't find " .. profile .. " firefox (pid " .. pid .. ")")
+  end
+end
+```

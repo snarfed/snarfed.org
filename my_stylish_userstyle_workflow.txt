@@ -44,8 +44,10 @@ up hope when I chanced upon a couple solutions. First, the
 put a single `@import` in the Stylish userstyle that points to a file in my
 local version control workspace, e.g.:
 
-    @import "file:///home/ryanb/src/userscripts/more_minimalist_gmail.css";
-    @-moz-document url-prefix(http), url-prefix(file) {}
+```
+@import "file:///home/ryanb/src/userscripts/more_minimalist_gmail.css";
+@-moz-document url-prefix(http), url-prefix(file) {}
+```
 
 <a href="http://gnu.org/software/emacs">
   <img class="right" src="/gnu.jpg" /></a>

@@ -16,13 +16,15 @@ in the old workspace, then open the corresponding files in the new workspace.
 For example, I might press `C-x C-b` to get a `*Buffer List*` and see that I have
 these files open:
 
-     MR Buffer            Size  Mode  File
-     -- ------            ----  ----  ----
-        foo.cc           10423  C++   ~/src/foo/foo.cc
-        foo.h             2933  C++   ~/src/foo/foo.h
-    .   foo_unittest.cc  17965  C++   ~/src/foo/foo_unittest.cc
-        *scratch*            0  Lisp  /tmp/*scratch*
-     *  *Messages*         726  Fundamental  
+```
+ MR Buffer            Size  Mode  File
+ -- ------            ----  ----  ----
+    foo.cc           10423  C++   ~/src/foo/foo.cc
+    foo.h             2933  C++   ~/src/foo/foo.h
+.   foo_unittest.cc  17965  C++   ~/src/foo/foo_unittest.cc
+    *scratch*            0  Lisp  /tmp/*scratch*
+ *  *Messages*         726  Fundamental
+```
 
 When I finish the change I'm working on in `~/src/`, I might want to start a new
 change in `~/src2/`. To do that, I'd have to close `foo.cc`, `foo.h`, and
@@ -35,43 +37,47 @@ reopen with `m`, then press `r` to run the `Buffer-menu-reopen`
 function. It will ask you for a pattern and a replacement, then reopen the
 marked files in the new location.
 
-    (defun Buffer-menu-reopen (regexp replacement)
-      "Reopens marked files in a different place by replacing part of their path."
-      (interactive "sReplace: \nsWith: ")
-      (goto-char (point-min))
-      (while (search-forward "\n>" nil t)
-        (let* ((original-buffer (Buffer-menu-buffer nil))
-               (original-file (buffer-file-name original-buffer)))
-          (when (and original-buffer
-                     original-file
-                     (string-match regexp original-file))
-            (let ((new-file (replace-match replacement nil nil original-file)))
-              (when (file-exists-p new-file)
-                (kill-buffer original-buffer)
-                (find-file-noselect new-file))))))
-      (list-buffers))
-    
-    ; add keybinding
-    (define-key Buffer-menu-mode-map "r" 'Buffer-menu-reopen)
-    
-    ; add to docstring
-    (progn
-      (put 'Buffer-menu-mode 'function-documentation nil)
-      (put 'Buffer-menu-mode 'function-documentation
-           (concat (documentation 'Buffer-menu-mode t)
-                   "\n\\[Buffer-menu-reopen] -- reopen the files marked with m "
-                   "in a new place in the filesystem.")))
+```
+(defun Buffer-menu-reopen (regexp replacement)
+  "Reopens marked files in a different place by replacing part of their path."
+  (interactive "sReplace: \nsWith: ")
+  (goto-char (point-min))
+  (while (search-forward "\n>" nil t)
+    (let* ((original-buffer (Buffer-menu-buffer nil))
+           (original-file (buffer-file-name original-buffer)))
+      (when (and original-buffer
+                 original-file
+                 (string-match regexp original-file))
+        (let ((new-file (replace-match replacement nil nil original-file)))
+          (when (file-exists-p new-file)
+            (kill-buffer original-buffer)
+            (find-file-noselect new-file))))))
+  (list-buffers))
+
+; add keybinding
+(define-key Buffer-menu-mode-map "r" 'Buffer-menu-reopen)
+
+; add to docstring
+(progn
+  (put 'Buffer-menu-mode 'function-documentation nil)
+  (put 'Buffer-menu-mode 'function-documentation
+       (concat (documentation 'Buffer-menu-mode t)
+               "\n\\[Buffer-menu-reopen] -- reopen the files marked with m "
+               "in a new place in the filesystem.")))
+```
 
 Similarly, this function reopens the current buffer in a new location.
 
-    (defun replace-path-and-reopen (regexp replacement)
-      "Reopens the file visited by the current buffer in a different location."
-      (interactive "sReplace: \nsWith: ")
-      (let ((orig-buffer (current-buffer))
-            (orig-file (buffer-file-name (current-buffer))))
-        (if (string-match regexp orig-file)
-            (progn
-              (find-file (replace-match replacement nil nil orig-file))
-              (kill-buffer orig-buffer))
-          (error "No match for %s in %s" regexp orig-file))))
+```
+(defun replace-path-and-reopen (regexp replacement)
+  "Reopens the file visited by the current buffer in a different location."
+  (interactive "sReplace: \nsWith: ")
+  (let ((orig-buffer (current-buffer))
+        (orig-file (buffer-file-name (current-buffer))))
+    (if (string-match regexp orig-file)
+        (progn
+          (find-file (replace-match replacement nil nil orig-file))
+          (kill-buffer orig-buffer))
+      (error "No match for %s in %s" regexp orig-file))))
+```
 

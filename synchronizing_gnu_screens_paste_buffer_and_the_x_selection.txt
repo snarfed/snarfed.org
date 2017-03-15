@@ -25,10 +25,12 @@ This command in [my .screenrc](/dotfiles/.screenrc)
 copies screen's paste buffer into the X primary selection. It runs automatically
 when you press > to set the second mark in copy/scrollback mode.
 
-    # set the second mark, write to the screen-exchange
-    # file, and use xsel to synchronize the paste buffer
-    # with the X selection.
-    bindkey -m > eval "stuff ' '" writebuf "exec sh -c 'xsel -n < /tmp/screen-exchange'"
+```
+# set the second mark, write to the screen-exchange
+# file, and use xsel to synchronize the paste buffer
+# with the X selection.
+bindkey -m > eval "stuff ' '" writebuf "exec sh -c 'xsel -n < /tmp/screen-exchange'"
+```
 
 Note that this uses
 [Conrad Parker's xsel](http://www.vergenet.net/~conrad/software/xsel/) (_not_

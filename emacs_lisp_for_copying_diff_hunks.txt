@@ -11,18 +11,22 @@ Occasionally, though, I just want to kill (copy) part of the diff so I can do
 something else with it. When I do, I end up with leading `-` or `+` or `!`
 characters that I have to strip manually. For example:
 
-     @ -438,7 +438,7 @@ cc-other-file-alist. (ff-find-other-file evidently handles symbols specially.)"
-     (setenv "ANDROID_HOME" "/Users/ryan/android-sdk")
-    -;; (setenv "ANDROID_SERIAL" "192.168.56.101:5555")
-    +(setenv "PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION" "cpp")
-    +(setenv "NDK_ABI" "armeabi-v7a")
-    +;; (setenv "NDK_ABI" "armeabi-v7a")
+```
+ @ -438,7 +438,7 @@ cc-other-file-alist. (ff-find-other-file evidently handles symbols specially.)"
+ (setenv "ANDROID_HOME" "/Users/ryan/android-sdk")
+-;; (setenv "ANDROID_SERIAL" "192.168.56.101:5555")
++(setenv "PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION" "cpp")
++(setenv "NDK_ABI" "armeabi-v7a")
++;; (setenv "NDK_ABI" "armeabi-v7a")
+```
 
 Rectangle operations help, but ideally I wouldn't have to deal with this at
 all...and now I don't! Here's a piece of advice that automatically strips those
 characters when I kill inside a diff buffer:
 
-    (defadvice kill-new (before strip-leading-diff-chars activate)
-      "When copying from a diff buffer, strip the leading -, +, ! characters."
-      (if (eq major-mode 'diff-mode)
-          (ad-set-arg 0 (replace-regexp-in-string "^." "" (ad-get-arg 0)))))
+```
+(defadvice kill-new (before strip-leading-diff-chars activate)
+  "When copying from a diff buffer, strip the leading -, +, ! characters."
+  (if (eq major-mode 'diff-mode)
+      (ad-set-arg 0 (replace-regexp-in-string "^." "" (ad-get-arg 0)))))
+```

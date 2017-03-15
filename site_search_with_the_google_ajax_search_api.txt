@@ -27,16 +27,18 @@ To use this on your site, first
 Then, place [ajax_search.js](/w/wp-content/themes/snarfed/ajax_search.js) on
 your server and the following HTML on your page:
 
-    <form class="form" method="get" action="http://www.google.com/search"
-      onsubmit="new site_search('[YOUR_DOMAIN]', q.value); return false;">
-      <input type="hidden" name="sitesearch" value="[YOUR_DOMAIN]" />
-      <input type="text" name="q" id="query" value="Search" />
-    </form>
-   
-    <script type="text/javascript"
-       src="http://www.google.com/uds/api?file=uds.js&v=1.0&key=[YOUR_KEY]">
-    </script>
-    <script type="text/javascript" src="[PATH]/ajax_search.js"></script>
+```
+<form class="form" method="get" action="http://www.google.com/search"
+  onsubmit="new site_search('[YOUR_DOMAIN]', q.value); return false;">
+  <input type="hidden" name="sitesearch" value="[YOUR_DOMAIN]" />
+  <input type="text" name="q" id="query" value="Search" />
+</form>
+
+<script type="text/javascript"
+   src="http://www.google.com/uds/api?file=uds.js&v=1.0&key=[YOUR_KEY]">
+</script>
+<script type="text/javascript" src="[PATH]/ajax_search.js"></script>
+```
 
 Replace `[YOUR_KEY]`, `[YOUR_DOMAIN]`, and `[PATH]` with your AJAX Search API
 key, your site's domain, and the path to `ajax_search.js` on your server,
@@ -53,42 +55,46 @@ deleted and recreated when a search is performed. You can also customize
 The search results are placed in divs with distinct classes, so you can style
 them with CSS. Here are the classes:
 
-    gsc-title
-    gs-result
-     |- gs-title
-     |- gs-snippet
-     |- gs-visibleUrl
-     |- gs-watermark
-    gsc-branding
-     |- gsc-branding-text
-     |- gsc-branding-img-noclear
+```
+gsc-title
+gs-result
+ |- gs-title
+ |- gs-snippet
+ |- gs-visibleUrl
+ |- gs-watermark
+gsc-branding
+ |- gsc-branding-text
+ |- gsc-branding-img-noclear
+```
 
 The [AJAX Search API stylesheet](http://www.google.com/uds/css/gsearch.css)
 has more details. As an example, here's the CSS used on this site:
 
-    div.gs-result           { margin-top: 1em; }
-    div.gs-title            { text-decoration: underline; }
-    div.gs-visibleUrl       { color: green; }
-    div.gs-visibleUrl-short { display: none; }
-    div.gs-visibleUrl-long  { display: none; }
-    div.gs-watermark        { display: none; }
-    
-    div.gs-snippet {
-      font-size: .9em;
-    }
-    
-    div.gs-snippet br { display: none; }
-    
-    table.gsc-branding   {
-      border: none;
-      margin-top: 1em;
-    }
-    td.gsc-branding-text { color: gray; }
-    td.gsc-branding-img-noclear {
-      padding-left: 2px;
-      padding-top: 5px;
-    }
-    img.gsc-branding-img-noclear { margin-bottom: -3px; }
+```
+div.gs-result           { margin-top: 1em; }
+div.gs-title            { text-decoration: underline; }
+div.gs-visibleUrl       { color: green; }
+div.gs-visibleUrl-short { display: none; }
+div.gs-visibleUrl-long  { display: none; }
+div.gs-watermark        { display: none; }
+
+div.gs-snippet {
+  font-size: .9em;
+}
+
+div.gs-snippet br { display: none; }
+
+table.gsc-branding   {
+  border: none;
+  margin-top: 1em;
+}
+td.gsc-branding-text { color: gray; }
+td.gsc-branding-img-noclear {
+  padding-left: 2px;
+  padding-top: 5px;
+}
+img.gsc-branding-img-noclear { margin-bottom: -3px; }
+```
 
 One final note: `ajax_search.js` doesn't handle browser history or the back
 button. If you want the back button to work, consider

@@ -22,8 +22,10 @@ SnipSnap to another CMS, such as [PyBlosxom](http://pyblosxom.bluesock.org/).
 
 Example usage:
 
-    $ xsltproc snipsnap2svn.xslt snipsnap_db.xml | \
-      svnadmin load /path/to/repo
+```
+$ xsltproc snipsnap2svn.xslt snipsnap_db.xml | \
+    svnadmin load /path/to/repo
+```
 
 By default, snipsnap2svn uses `/` as the path separator, `.snip` as the
 default file extension for snips that don't have one, and `100000` as

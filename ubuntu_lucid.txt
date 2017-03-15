@@ -26,9 +26,11 @@ console login prompt instead of an X splash screen, there's yet another
 new incantation. This time, the recommended practice is to muck with grub
 itself:
 
-        sudo sed -i -r 's/(GRUB_CMDLINE_LINUX_DEFAULT=)"quiet splash"/\1"text"/' \
-          /etc/default/grub
-        sudo update-grub
+    ```
+    sudo sed -i -r 's/(GRUB_CMDLINE_LINUX_DEFAULT=)"quiet splash"/\1"text"/' \
+      /etc/default/grub
+    sudo update-grub
+    ```
 
   * Sound has pretty much Just Worked, which was a pleasant surprise.
 Specifically, [PulseAudio](http://en.wikipedia.org/wiki/PulseAudio) worked out
@@ -49,8 +51,10 @@ if I was Doing It Wrong. It was only GTK fonts, so I dug into
 [using gconftool](http://ubuntu-tutorials.com/2008/01/10/gconftool-2-gconf-editor-from-the-shell/)
 to change them:
 
-        gconf-editor /desktop/gnome/interface/font_name
-        gconftool -t int -s /desktop/gnome/interface/font_size 12
+    ```
+    gconf-editor /desktop/gnome/interface/font_name
+    gconftool -t int -s /desktop/gnome/interface/font_size 12
+    ```
 
     ...but that didn't work, maybe because `xrandr` changes resolution but not
 DPI, or something similar related to scaling.
@@ -111,25 +115,28 @@ and your laptop reboots when you resume from suspend, update your BIOS.
   * If your screen turns off after 10 minutes, or however long, check your X
   screen saver and DPMS settings:
 
-        $ xset q
-        Screen Saver:
-          prefer blanking: yes  allow exposures: yes
-          timeout: 600  cycle: 600
-        ...
-        DPMS (Energy Star):
-          Standby: 600  Suspend: 600  Off: 600
-          DPMS is Enabled
+    ```
+    $ xset q
+    Screen Saver:
+      prefer blanking: yes  allow exposures: yes
+      timeout: 600  cycle: 600
+    ...
+    DPMS (Energy Star):
+      Standby: 600  Suspend: 600  Off: 600
+      DPMS is Enabled
+    ```
 
     Turn both off with:
 
-        xset -dpms
-        xset s off
-
+    ```
+    xset -dpms
+    xset s off
+    ```
 
   * To disable bluetooth, make sure `/etc/rc.local` is executable, then add this
   line to it:
 
-        echo disable > /proc/acpi/ibm/bluetooth
+    echo disable > /proc/acpi/ibm/bluetooth
 
   * If you're getting logged out when your session goes idle, that's because of
   timeoutd. To configure it, edit `/etc/timeouts`; to disable it, just truncate
@@ -158,7 +165,9 @@ I haven't yet figured this out. I first tried switching to xkb, but
     Then I tried a
 [udev rule](http://reactivated.net/writing_udev_rules.html):
 
-        SUBSYSTEMS=="usb", ATTRS{product}=="Goldtouch USB Keyboard", RUN+="/usr/bin/xmodmap /home/ryanb/.Xmodmap"
+    ```
+    SUBSYSTEMS=="usb", ATTRS{product}=="Goldtouch USB Keyboard", RUN+="/usr/bin/xmodmap /home/ryanb/.Xmodmap"
+    ```
 
     but no luck. I noticed a comment in
 [the launchpad bug](https://bugs.launchpad.net/ubuntu/+source/xorg-server/+bug/287215)
@@ -166,8 +175,10 @@ that said a udev rule like this might run too soon, so I tried slowing it down
 by pointing it to this script (udev's man page says that `RUN` doesn't use a
 shell):
 
-        #!/bin/sh
-        sleep 15s && xmodmap ~/.Xmodmap &
+    ```
+    #!/bin/sh
+    sleep 15s && xmodmap ~/.Xmodmap &
+    ```
 
     It definitely ran, but it didn't actually work. Confusing. I finally gave up
 and added a key binding in my window manager to run `xmodmap ~/.Xmodmap` on
@@ -181,28 +192,34 @@ kernel module to tune your battery charge thresholds and increase
 its lifespan. First, install the tp-smapi module, load it, and tell Linux to
 load it on boot:
 
-        # as root
-        apt-get install tp-smapi-dkms
-        modprobe tp_smapi
-        echo "tp_smapi" >> /etc/modules
+    ```
+    # as root
+    apt-get install tp-smapi-dkms
+    modprobe tp_smapi
+    echo "tp_smapi" >> /etc/modules
+    ```
 
   You can configure it with [sysfs](http://en.wikipedia.org/wiki/Sysfs). For
 example, to charge the battery when it's below 90% and never charge it above 95%:
 
-        echo 90 > /sys/devices/platform/smapi/BAT0/start_charge_thresh
-        echo 95 > /sys/devices/platform/smapi/BAT0/stop_charge_thresh
+    ```
+    echo 90 > /sys/devices/platform/smapi/BAT0/start_charge_thresh
+    echo 95 > /sys/devices/platform/smapi/BAT0/stop_charge_thresh
+    ```
 
   See the [ThinkWiki article](http://www.thinkwiki.org/wiki/Tp_smapi#Battery_charge_control_features)
 for more. To
 [keep these settings across reboot](http://www.thinkwiki.org/wiki/Tp_smapi#Making_the_settings_permanent_on_reboot),
 use [sysfsutils](http://linux-diag.sourceforge.net/Sysfsutils.html):
 
-        # as root
-        apt-get install sysfsutils
-        cat >> /etc/sysfs.conf << EOF
-        devices/platform/smapi/BAT0/start_charge_thresh = 90
-        devices/platform/smapi/BAT0/stop_charge_thresh = 95
-        EOF
+    ```
+    # as root
+    apt-get install sysfsutils
+    cat >> /etc/sysfs.conf << EOF
+    devices/platform/smapi/BAT0/start_charge_thresh = 90
+    devices/platform/smapi/BAT0/stop_charge_thresh = 95
+    EOF
+    ```
 
   * On a related note, you can use
 [acpid](http://mindspill.net/computing/linux-notes/acpi/)
@@ -215,19 +232,23 @@ First, use `service acpid status` to make sure acpid is installed and running.
 Next, add a new acpid event by creating a new file,
 `/etc/acpi/events/low_battery_suspend`, with these contents:
 
-        event=battery.*
-        action=/etc/acpi/low-battery-suspend.sh %e
+    ```
+    event=battery.*
+    action=/etc/acpi/low-battery-suspend.sh %e
+    ```
 
   Finally, put this into `/etc/acpi/low-battery-suspend.sh`:
 
-        PROC=/proc/acpi/battery/BAT0
-        CURRENT=`grep -E '^remaining capacity:' $PROC/state | tr -s ' ' | cut -d' ' -f3`
-        LOW=`grep -E '^design capacity warning:' $PROC/info | tr -s ' ' | cut -d' ' -f4`
-        CHARGING=`grep -E '^charging state:' $PROC/state | tr -s ' ' | cut -d' ' -f3`
-        
-        if [[ $CHARGING == "discharging" && $CURRENT -lt $LOW ]]; then
-          pm-suspend-hybrid
-        fi
+    ```
+    PROC=/proc/acpi/battery/BAT0
+    CURRENT=`grep -E '^remaining capacity:' $PROC/state | tr -s ' ' | cut -d' ' -f3`
+    LOW=`grep -E '^design capacity warning:' $PROC/info | tr -s ' ' | cut -d' ' -f4`
+    CHARGING=`grep -E '^charging state:' $PROC/state | tr -s ' ' | cut -d' ' -f3`
+
+    if [[ $CHARGING == "discharging" && $CURRENT -lt $LOW ]]; then
+      pm-suspend-hybrid
+    fi
+    ```
 
   * Last power saving tip: check out Intel's
 [powertop](http://www.linuxpowertop.org/), a utility that acts like top for your
@@ -237,16 +258,22 @@ battery. It shows you the biggest power consumers on your system and
 (usually just for non-input devices),
 [HD audio power save mode](http://ubuntuforums.org/showthread.php?t=1477894):
 
-        echo 1 > /sys/module/snd_hda_intel/parameters/power_savep
-        
+    ```
+    echo 1 > /sys/module/snd_hda_intel/parameters/power_savep
+    ```
+
   and [SATA low power mode](http://www.lesswatts.org/tips/disks.php):
 
-        echo min_power > /sys/class/scsi_host/host0/link_power_management_policy
+    ```
+    echo min_power > /sys/class/scsi_host/host0/link_power_management_policy
+    ```
 
   * If you use [anacron](http://anacron.sourceforge.net/), and your anacron jobs
 aren't running, and you see syslog messages like this:
 
-        init: anacron main process (19514) killed by TERM signal
+    ```
+    init: anacron main process (19514) killed by TERM signal
+    ```
 
   ...you're running into either a
 [sysvinit bug](https://bugs.launchpad.net/ubuntu/+source/sysvinit/+bug/497813),
@@ -266,34 +293,40 @@ hibernate, since they try to suspend anacron first.
   * If you use postfix (the default) as your MTA, and you see syslog messages
     like this:
 
-        postfix/postdrop[29372]: warning: unable to look up public/pickup: No such file or directory
+    ```
+    postfix/postdrop[29372]: warning: unable to look up public/pickup: No such file or directory
+    ```
 
     ...you need to create the postdrop fifo, as described in
     [this forum thread](http://ubuntuforums.org/showthread.php?t=666018):
 
-        sudo mkfifo /var/spool/postfix/public/pickup
-        sudo service postfix restart
+    ```
+    sudo mkfifo /var/spool/postfix/public/pickup
+    sudo service postfix restart
+    ```
 
   * Every now and then, I lose all networking after a resume or restart. I've
     noticed this most often when I `pm-suspend-hybrid`, and the system
     eventually runs out of power and hibernates or dies, so that I later have to
     thaw it or reboot entirely instead of just resuming.
-    
+
     When this happens, `ifconfig` only shows the loopback device, not `eth0` or
     `wlan0`, and `ifup` doesn't bring either of them back. `lshw -c` shows them,
     but says they're both disabled. Restarting the networking service doesn't
     help, nor does restarting NetworkManager, which is still running happily.
-    
+
     I finally found a solution in
     [this ubuntuforums thread](http://ubuntuforums.org/showthread.php?t=1416172).
     Run `lshw -C network`, find the `configuration: ... driver=XXX` section,
     then add this to `/etc/pm/config.d/config`:
 
-        SUSPEND_MODULES="XXX"
+    ```
+    SUSPEND_MODULES="XXX"
+    ```
 
     where XXX is the driver name. (Mine is `iwlagn`.) Then, suspend and
     resume; if that doesn't work, reboot.
-    
+
     Colleagues suggested this might be related to
     [Launchpad](https://launchpad.net/ubuntu) bugs
     [524454](https://bugs.launchpad.net/ubuntu/+bug/524454) and
@@ -305,9 +338,11 @@ hibernate, since they try to suspend anacron first.
   [ImageMagick](http://www.imagemagick.org/)'s
   [`import`](http://imagemagick.org/script/import.php)?
 
-        import: unable to read X window image `':
-        Resource temporarily unavailable @
-        xwindow.c/XImportImage/5020.
+    ```
+    import: unable to read X window image `':
+    Resource temporarily unavailable @
+    xwindow.c/XImportImage/5020.
+    ```
 
   The program you're trying to screenshot may have
   [multiple windows open with the same window id](http://ubuntuforums.org/showthread.php?t=893506).
@@ -320,13 +355,17 @@ hibernate, since they try to suspend anacron first.
   [Launchpad bug 464031](https://bugs.launchpad.net/ubuntu/+source/fglrx-installer/+bug/464031).
 
   * If you see this error when sending mail:
-  
-        postfix: fatal: /etc/mailname: cannot open file: No such file or directory
+
+    ```
+    postfix: fatal: /etc/mailname: cannot open file: No such file or directory
+    ```
 
   Put your top-level domain name, or fully qualified hostname if you want, into
   `/etc/mailname`. Mine is:
-  
-        snarfed.org
+
+    ```
+    snarfed.org
+    ```
 
   Then `sudo service postfix restart`.
 
@@ -336,16 +375,20 @@ hibernate, since they try to suspend anacron first.
     probably why. You can confirm that this is the problem by looking for lines
     like this in `/var/log/syslog`:
 
-        Ignoring insecure configuration file '/etc/NetworkManager/system-connections/ABC'
+    ```
+    Ignoring insecure configuration file '/etc/NetworkManager/system-connections/ABC'
+    ```
 
     This should fix it:
 
-        sudo chown root:root /etc/NetworkManager/system-connections/*
-        sudo chmod 600 /etc/NetworkManager/system-connections/*
-        sudo service network-manager restart
+    ```
+    sudo chown root:root /etc/NetworkManager/system-connections/*
+    sudo chmod 600 /etc/NetworkManager/system-connections/*
+    sudo service network-manager restart
+    ```
 
   * Here are some of the extra packages I installed:
-  
+
     * apache2
     * apel
     * aumix
@@ -386,7 +429,6 @@ hibernate, since they try to suspend anacron first.
   I also downloaded, built, and installed
   [cnetworkmanager](http://vidner.net/martin/software/cnetworkmanager/) from
   source, since it's not in any Debian or Ubuntu repositories.
-
 
 
 Enjoy Ubuntu Lucid!

@@ -30,16 +30,17 @@ disable the mark. Argh!
 So, I stole the code and hacked it to leave the mark alone. I ended up with this
 elisp, which makes page up and page down behave exactly the way I want:
 
-    ;; Page down/up move the point, not the screen.
-    ;; In practice, this means that they can move the
-    ;; point to the beginning or end of the buffer.
-    (global-set-key [next]
-      (lambda () (interactive)
-        (condition-case nil (scroll-up)
-          (end-of-buffer (goto-char (point-max))))))
+```
+;; Page down/up move the point, not the screen.
+;; In practice, this means that they can move the
+;; point to the beginning or end of the buffer.
+(global-set-key [next]
+  (lambda () (interactive)
+    (condition-case nil (scroll-up)
+      (end-of-buffer (goto-char (point-max))))))
 
-    (global-set-key [prior]
-      (lambda () (interactive)
-        (condition-case nil (scroll-down)
-          (beginning-of-buffer (goto-char (point-min))))))
-
+(global-set-key [prior]
+  (lambda () (interactive)
+    (condition-case nil (scroll-down)
+      (beginning-of-buffer (goto-char (point-min))))))
+```

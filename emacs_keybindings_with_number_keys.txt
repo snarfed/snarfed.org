@@ -11,7 +11,9 @@ trouble recently when I tried to re-bind C-1 to do something new.
 
 Executive summary? Do this:
 
-    (global-set-key [(control \1)] 'foo)
+```
+(global-set-key [(control \1)] 'foo)
+```
 
 Note the escaped 1. Evidently this keystroke syntax interprets numeric arguments
 as key ids, or something, instead of the key's actual character. So, to make it
@@ -19,7 +21,9 @@ interpret the key binding the way we want, we have to escape the 1.
 
 Note that there's another keystroke syntax, too:
 
-    (global-set-key "C-1" 'foo)
+```
+(global-set-key "C-1" 'foo)
+```
 
 I don't know how to get this to work with number keys...but the first way is
 good enough for me.

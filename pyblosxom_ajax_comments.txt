@@ -40,20 +40,26 @@ AJAX comment support requires a few elements in the comment-form flavour
 template. Specifically, the comment-anchor tag must be the first thing in the
 template:
 
-    <a name="comment-anchor" id="comment-anchor"></a>
+```
+<a name="comment-anchor" id="comment-anchor"></a>
+```
 
 Also, the buttons in the comment form should include these onsubmit and
 onclick attributes:
 
-    <form name="comments_form" ... onsubmit="return false;">
-      <input value="Preview" name="preview" type="submit"
-             onclick="send_comment('preview');" />
-      <input value="Submit" name="submit" type="submit"
-             onclick="send_comment('post');" />
+```
+<form name="comments_form" ... onsubmit="return false;">
+  <input value="Preview" name="preview" type="submit"
+         onclick="send_comment('preview');" />
+  <input value="Submit" name="submit" type="submit"
+         onclick="send_comment('post');" />
+```
 
 Finally, this script tag must be included somewhere after the `</form>` tag:
 
-    <script type="text/javascript" src="/comments.js"></script>
+```
+<script type="text/javascript" src="/comments.js"></script>
+```
 
 All of these tags are included in the default comment-form template that comes
 with this plugin.
