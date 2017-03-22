@@ -26,5 +26,17 @@ Lists of stuff.
   * [writing](/writing)
 
 <!--
-  * [music](/music)
+I converted from Markdown Extra to Jetpack's Markdown (which converts newlines to <br>s) with these regexp replaces:
+
+^J *(  ->   (
+^J<\(good\|ok\|bad\)>,?  ->   <\1>
+^J +\([^<]+\)>  ->   \1>
+  (multiple times!)
+\(<span.+>\)^J  ->  \1 
+, <  ->   <
+
+</span>
+<span  -> </span><span
+
+then search for <!--
 -->

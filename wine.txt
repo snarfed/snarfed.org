@@ -12,13 +12,6 @@ At one point, I mass converted wine names to have varietal before designation
 (e.g. XYZ Vineyard) with this Emacs regexp replace:
 \( ?\)\([^0-9[<>]+\) \(Cabernet Sauvignon\|Malbec\|Pinot Noir\|Chardonnay\|Zinfandel\|Sauvignon Blanc\|Petite Sirah\|Syrah\|Burgundy\|Merlot\|Riesling\|Tempranillo\|Grenache\|Meritage\|Cabernet Franc\|Châteauneuf-du-Pape\|Mourvèdre\|Viognier\|Côtes du Rhône\)
 \1\3 \2
-
-and later converted to one line per wine (for Jetpack's Markdown) with:
-^J *(  ->   (
-^J<\(good\|ok\|bad\)>,?  ->   <\1>
-^J +\([^<]+\)>  ->   \1>
-  (multiple times!)
-\(<span.+>\)^J  ->  \1 
 -->
 
 <a name="to_try"></a> **To try**:
