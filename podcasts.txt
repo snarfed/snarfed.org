@@ -32,8 +32,8 @@ to subscribe to a soundcloud profile (etc):
 http://picklemonkey.net/cloudflipper/
 
 ~~~
-Youtube RSS feeds for users and playlists. THESE DON'T WORK IN PODCAST APPS though,
-since youtube doesn't allow downloading videos. details below.
+Old, dead Youtube RSS feeds for users and playlists. Didn't work in podcast apps
+anyway, since youtube doesn't allow downloading videos. details below.
 http://gdata.youtube.com/feeds/mobile/users/USERNAME/uploads
 http://gdata.youtube.com/feeds/api/playlists/ID
 
@@ -42,8 +42,8 @@ http://lifehacker.com/how-to-turn-youtube-channels-into-subscribable-podcasts-49
 http://gdata.youtube.com/demo/
 http://zarjay.net/2012/03/04/how-to-subscribe-to-youtube-podcasts-and-rss-feeds/
 
-it's not ideal though. it only gives you streaming, not downloading, evidently
-because youtube doesn't allow direct downloads from a separate IP.
+not ideal. only gave streaming, not downloading, evidently because youtube
+doesn't allow direct downloads from a separate IP.
 http://www.beyondpod.com/forum/showthread.php?481-Download-from-Youtube&s=d3ea5aa3cc05ca215749bf842c665d5f
 http://rsshandler.blogspot.com/2010/04/service-status-and-new-podcasting.html
 
