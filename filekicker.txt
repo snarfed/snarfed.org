@@ -8,10 +8,7 @@ For the impatient:
 &nbsp; [PyBlosxom home page](http://pyblosxom.bluesock.org/)  
 &nbsp; [PyBlosxom plugin registry](http://pyblosxom.bluesock.org/blog/registry?sortby=path)  
 
-[Filekicker](/filekicker.py) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
-plugin that serves static files. The file to serve is determined by the URL
-path and the `datadir` configuration option. The MIME type is inferred from the
-file's extension.
+[Filekicker](/filekicker.py) is a [PyBlosxom](http://pyblosxom.bluesock.org/) plugin that serves static files. The file to serve is determined by the URL path and the `datadir` configuration option. The MIME type is inferred from the file's extension.
 
 For example, if `datadir` is set in `config.py` like so:
 

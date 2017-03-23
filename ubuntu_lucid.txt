@@ -5,26 +5,12 @@ Ubuntu Lucid
  <a href="http://ubuntu.com/">
   <img src="/ubuntu.jpg" alt="ubuntu" /></a></p>
 
-I recently upgraded from
-[Ubuntu](http://ubuntu.com/)
-[Hardy](https://help.ubuntu.com/8.04/about-ubuntu/C/) (8.04) to
-[Lucid](https://help.ubuntu.com/10.04/about-ubuntu/C/) (10.04). Similar to
-my list of tips for [Fedora Core 3 on VMWare](/fedora_core_3_on_vmware), here are 
-some tips for Ubuntu Lucid. (I'm running it on a
-[Thinkpad X201](http://shop.lenovo.com/us/landing_pages/thinkpad/2010/X201-X201s-X201tablet)).
+I recently upgraded from [Ubuntu](http://ubuntu.com/) [Hardy](https://help.ubuntu.com/8.04/about-ubuntu/C/) (8.04) to [Lucid](https://help.ubuntu.com/10.04/about-ubuntu/C/) (10.04). Similar to my list of tips for [Fedora Core 3 on VMWare](/fedora_core_3_on_vmware), here are  some tips for Ubuntu Lucid. (I'm running it on a [Thinkpad X201](http://shop.lenovo.com/us/landing_pages/thinkpad/2010/X201-X201s-X201tablet)).
 
-  * If you use [VMWare](http://vmware.com/), don't bother with trying to build
-VMWare tools. Instead, use 
-[Open VM Tools](http://open-vm-tools.sourceforge.net/), an open source version.
-There are lucid packages - open-vm-tools for console, open-vm-toolbox for X -
-that are built with the right kernel, 2.6.31, and work flawlessly.
-[Thanks langui.sh!](http://langui.sh/2009/10/05/ubuntu-9-10-in-vmware/)
+  * If you use [VMWare](http://vmware.com/), don't bother with trying to build VMWare tools. Instead, use  [Open VM Tools](http://open-vm-tools.sourceforge.net/), an open source version. There are lucid packages - open-vm-tools for console, open-vm-toolbox for X - that are built with the right kernel, 2.6.31, and work flawlessly. [Thanks langui.sh!](http://langui.sh/2009/10/05/ubuntu-9-10-in-vmware/)
 
 
-  * If you want to remove [GDM](http://gnome.org/projects/gdm/) and boot to a
-console login prompt instead of an X splash screen, there's yet another
-new incantation. This time, the recommended practice is to muck with grub
-itself:
+  * If you want to remove [GDM](http://gnome.org/projects/gdm/) and boot to a console login prompt instead of an X splash screen, there's yet another new incantation. This time, the recommended practice is to muck with grub itself:
 
     ```
     sudo sed -i -r 's/(GRUB_CMDLINE_LINUX_DEFAULT=)"quiet splash"/\1"text"/' \

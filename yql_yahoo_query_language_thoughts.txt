@@ -3,20 +3,11 @@ Yahoo! Query Language thoughts
 
 <a href="http://developer.yahoo.com/yql/"><img src="/yahoo_logo.gif"></a>
 
-I recently sat down and read through the docs for Yahoo's
-[Y!OS](http://developer.yahoo.com/yos/intro/), a collection of services and
-APIs that let developers integrate their web applications with Yahoo.
+I recently sat down and read through the docs for Yahoo's [Y!OS](http://developer.yahoo.com/yos/intro/), a collection of services and APIs that let developers integrate their web applications with Yahoo.
 
-Since I work on the [Google App Engine
-datastore](http://code.google.com/appengine/docs/datastore/overview.html), one
-part of Y!OS that immediately caught my eye was the
-[Yahoo! Query Language](http://developer.yahoo.com/yql/), or YQL. It's a
-SQL dialect and query processing engine that operates on data exposed by web
-services.
+Since I work on the [Google App Engine datastore](http://code.google.com/appengine/docs/datastore/overview.html), one part of Y!OS that immediately caught my eye was the [Yahoo! Query Language](http://developer.yahoo.com/yql/), or YQL. It's a SQL dialect and query processing engine that operates on data exposed by web services.
 
-Here's a brief description, along with my thoughts. See the
-[original post](/2008-12-16_yos_yahoo_open_strategy) for my thoughts on
-the rest of Y!OS.
+Here's a brief description, along with my thoughts. See the [original post](/2008-12-16_yos_yahoo_open_strategy) for my thoughts on the rest of Y!OS.
 
 
 **Contents:**
@@ -34,85 +25,34 @@ the rest of Y!OS.
 <a name="intro"></a>
 ### Introduction (and conclusion) [![permalink](/Icon-Permalink.png)](#intro)
 
-As mentioned, YQL is a query language based on SQL. It serves primarily as a
-unified interface to Yahoo's various web properties, such as
-[Flickr](http://flickr.com/), [Yahoo! Maps](http://maps.yahoo.com/), and
-[Upcoming](http://upcoming.yahoo.com/). The query engine itself is hosted by
-Yahoo; users make queries by sending HTTP requests to a
-[REST endpoint](#rest).
+As mentioned, YQL is a query language based on SQL. It serves primarily as a unified interface to Yahoo's various web properties, such as [Flickr](http://flickr.com/), [Yahoo! Maps](http://maps.yahoo.com/), and [Upcoming](http://upcoming.yahoo.com/). The query engine itself is hosted by Yahoo; users make queries by sending HTTP requests to a [REST endpoint](#rest).
 
-Currently, YQL is _not_ part of a cloud database. It's strictly a hosted
-service for query processing. On the plus side, this means that YQL isn't
-limited to a single data source. It's not even limited to Yahoo's own
-properties. YQL can operate on any third party data source, as long as it's in
-one of the usual suspect formats: RSS, ATOM, JSON, XML, etc.
+Currently, YQL is _not_ part of a cloud database. It's strictly a hosted service for query processing. On the plus side, this means that YQL isn't limited to a single data source. It's not even limited to Yahoo's own properties. YQL can operate on any third party data source, as long as it's in one of the usual suspect formats: RSS, ATOM, JSON, XML, etc.
 
-The drawback of YQL's generic, bring-your-own-data model is that it
-must often do full table scans and
-[process data in memory](#local).
-Data sources can only offer shallow, rudimentary indexed queries themselves:
-only equality filters, ie no range or bounding box queries, only on
-hard-coded parameters, and subject to a
-[4 second deadline](http://developer.yahoo.com/yql/guide/query-parameters.html).
-Worse, it's not clear that indexed queries are supported on third party data
-sources at all.
+The drawback of YQL's generic, bring-your-own-data model is that it must often do full table scans and [process data in memory](#local). Data sources can only offer shallow, rudimentary indexed queries themselves: only equality filters, ie no range or bounding box queries, only on hard-coded parameters, and subject to a [4 second deadline](http://developer.yahoo.com/yql/guide/query-parameters.html). Worse, it's not clear that indexed queries are supported on third party data sources at all.
 
-All other operations are [done in memory](#local),
-subject to a
-[30 second processing deadline](http://developer.yahoo.com/yql/guide/query-parameters.html).
-This limits those operations to minor post-processing and cosmetic tweaks,
-which rules out many interesting use cases on even modest size data sets.
+All other operations are [done in memory](#local), subject to a [30 second processing deadline](http://developer.yahoo.com/yql/guide/query-parameters.html). This limits those operations to minor post-processing and cosmetic tweaks, which rules out many interesting use cases on even modest size data sets.
 
-Still, in line with the rest of Yahoo's philosophy of developer APIs and web
-services, YQL is straightforward and practical. At a high level, YQL is to
-[XPath](http://www.w3.org/TR/xpath) and [XQuery](http://www.w3.org/TR/xquery/)
-what JSON is to XML and what XML-RPC was (and REST now is) to SOAP.
+Still, in line with the rest of Yahoo's philosophy of developer APIs and web services, YQL is straightforward and practical. At a high level, YQL is to [XPath](http://www.w3.org/TR/xpath) and [XQuery](http://www.w3.org/TR/xquery/) what JSON is to XML and what XML-RPC was (and REST now is) to SOAP.
 
 
 <a name="related"></a>
 ### Related work [![permalink](/Icon-Permalink.png)](#related)
 
-YQL is similar to a number of modern query languages, including
-XPath/XQuery,
-Microsoft's [LINQ](http://en.wikipedia.org/wiki/Language_Integrated_Query),
-Google's [GQL](http://code.google.com/appengine/docs/datastore/gqlreference.html),
-Facebook's [FQL](/facebook_data_store_api_thoughts), and the
-query interfaces for [Amazon SimpleDB](/amazon_simpledb_thoughts) and
-[CouchDB](http://couchdb.org/).
+YQL is similar to a number of modern query languages, including XPath/XQuery, Microsoft's [LINQ](http://en.wikipedia.org/wiki/Language_Integrated_Query), Google's [GQL](http://code.google.com/appengine/docs/datastore/gqlreference.html), Facebook's [FQL](/facebook_data_store_api_thoughts), and the query interfaces for [Amazon SimpleDB](/amazon_simpledb_thoughts) and [CouchDB](http://couchdb.org/).
 
-Since YQL doesn't actually store data, it's not really a competitor to the
-likes of SimpleDB,
-[Azure tables](/windows_azure_details#Tables), or the
-[Google App Engine datastore](http://code.google.com/appengine/docs/datastore/).
-Even so, if Yahoo does offer a cloud database in the future, it's a
-good bet that it will support YQL.
+Since YQL doesn't actually store data, it's not really a competitor to the likes of SimpleDB, [Azure tables](/windows_azure_details#Tables), or the [Google App Engine datastore](http://code.google.com/appengine/docs/datastore/). Even so, if Yahoo does offer a cloud database in the future, it's a good bet that it will support YQL.
 
-YQL is notable in that it supports third party data sources. XQuery/XPath does
-too, but YQL's [remote filters](#remote) allow
-it to use more efficient query mechanisms exposed by those sources, which
-XQuery/XPath can't do without help. LINQ supports third party data sources,
-but only somewhat, and they must install a LINQ driver first.
+YQL is notable in that it supports third party data sources. XQuery/XPath does too, but YQL's [remote filters](#remote) allow it to use more efficient query mechanisms exposed by those sources, which XQuery/XPath can't do without help. LINQ supports third party data sources, but only somewhat, and they must install a LINQ driver first.
 
 <a name="data_model"></a>
 ### Data model [![permalink](/Icon-Permalink.png)](#data_model)
 
-Data is [interpreted and structured
-hierarchically](http://developer.yahoo.com/yql/guide/language-chapt.html),
-similar to XML. YQL uses a compiled form of XML internally to process data.
-Non-XML data sources such as JSON are converted to this format before
-processing.
+Data is [interpreted and structured hierarchically](http://developer.yahoo.com/yql/guide/language-chapt.html), similar to XML. YQL uses a compiled form of XML internally to process data. Non-XML data sources such as JSON are converted to this format before processing.
 
-At a high level, YQL uses the familiar relational database model of tables and
-rows. However, to map this onto hierarchical data, YQL needs to know which
-level of the hierarchy represents a row. This is built in for native YQL data
-sources such as Flickr and Upcoming, and can be determined automatically
-for some external data sources. For others, though, the developer must specify
-it manually.
+At a high level, YQL uses the familiar relational database model of tables and rows. However, to map this onto hierarchical data, YQL needs to know which level of the hierarchy represents a row. This is built in for native YQL data sources such as Flickr and Upcoming, and can be determined automatically for some external data sources. For others, though, the developer must specify it manually.
 
-YQL supports queries on schema metadata as well as data. `SHOW tables` lists
-the tables provided by a data source, and `DESC <table>` describes a given
-table's hierarchical structure, fields, and
-[input parameters](#remote), if any.
+YQL supports queries on schema metadata as well as data. `SHOW tables` lists the tables provided by a data source, and `DESC <table>` describes a given table's hierarchical structure, fields, and [input parameters](#remote), if any.
 
 
 <a name="filtering"></a>

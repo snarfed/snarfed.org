@@ -7,23 +7,13 @@ pine flowed-text patch
 
 For the impatient:  
 Patch for Pine [4.60 and
-4.61](https://github.com/snarfed/misc/blob/master/patches/pine/quell-displaying-flowed-text.patch.4.60),
-[4.63](https://github.com/snarfed/misc/blob/master/patches/pine/quell-displaying-flowed-text.patch.4.63),
-[4.64](https://github.com/snarfed/misc/blob/master/patches/pine/quell-displaying-flowed-text.patch.4.64)  
+4.61](https://github.com/snarfed/misc/blob/master/patches/pine/quell-displaying-flowed-text.patch.4.60), [4.63](https://github.com/snarfed/misc/blob/master/patches/pine/quell-displaying-flowed-text.patch.4.63), [4.64](https://github.com/snarfed/misc/blob/master/patches/pine/quell-displaying-flowed-text.patch.4.64)  
 [RedHat and Debian packages](http://www.quantumlinux.com/~chuckw/pine/)  
 [Pine source](http://www.washington.edu/pine/getpine/unix.html)  
-[FAQ on patching
-pine](http://www.math.washington.edu/~chappa/pine/faq/index.html)
+[FAQ on patching pine](http://www.math.washington.edu/~chappa/pine/faq/index.html)
 
-I use [Pine](http://www.washington.edu/pine/) as my email client, and I really
-like it. It's fast, simple, full-featured, and very keyboardable. However,
-nothing's perfect, even Pine.
+I use [Pine](http://www.washington.edu/pine/) as my email client, and I really like it. It's fast, simple, full-featured, and very keyboardable. However, nothing's perfect, even Pine.
 
-Pine 4.60 added support for flowed text a la
-[RFC2646](http://zvon.org/tmRFC/RFC2646/Output/index.html), which is great. If
-you want, you can tell it not to send flowed text...but there's no way to tell
-it not to _display_ flowed text. This patch adds that option.
+Pine 4.60 added support for flowed text a la [RFC2646](http://zvon.org/tmRFC/RFC2646/Output/index.html), which is great. If you want, you can tell it not to send flowed text...but there's no way to tell it not to _display_ flowed text. This patch adds that option.
 
-There are also [pre-built packages](http://www.quantumlinux.com/~chuckw/pine/)
-with this patch, thanks to Chuck Wolber, and [instructions on building Pine from
-source](/pine_reply-all_patch). Scroll to the bottom.
+There are also [pre-built packages](http://www.quantumlinux.com/~chuckw/pine/) with this patch, thanks to Chuck Wolber, and [instructions on building Pine from source](/pine_reply-all_patch). Scroll to the bottom.

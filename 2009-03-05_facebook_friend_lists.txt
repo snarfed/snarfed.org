@@ -1,50 +1,27 @@
 629
 Facebook Friend Lists
 
-[Facebook](http://facebook.com/)'s
-[Friend List](http://www.facebook.com/help.php?hq=friend+list&ref=hq)
-feature is invaluable. It lets you create lists for different groups of friends:
-work, family, school, local, or just people you want to pay more (or less)
-attention to.
+[Facebook](http://facebook.com/)'s [Friend List](http://www.facebook.com/help.php?hq=friend+list&ref=hq) feature is invaluable. It lets you create lists for different groups of friends: work, family, school, local, or just people you want to pay more (or less) attention to.
 
 <a href="http://www.facebook.com/friends/?ref=tn">
   <img class="shadow" src="/facebook_make_a_new_list.png"></a>
 <a href="http://www.facebook.com/friends/?ref=tn">
   <img class="shadow" src="/facebook_friend_list.png"></a>
 
-It's easy to add or remove individual people from a friend list, but at first,
-there's no obvious to way to make larger, bulk changes. That's where the subtle,
-almost hidden,
-[Select Multiple Friends](http://www.facebook.com/help.php?hq=%22select+multiple+friends%22&ref=hq)
-link comes in. (It's next to the "Add to List" text box where you can type in a
-person's name to add to the friend list.)
+It's easy to add or remove individual people from a friend list, but at first, there's no obvious to way to make larger, bulk changes. That's where the subtle, almost hidden, [Select Multiple Friends](http://www.facebook.com/help.php?hq=%22select+multiple+friends%22&ref=hq) link comes in. (It's next to the "Add to List" text box where you can type in a person's name to add to the friend list.)
 
 <img class="shadow" src="/facebook_multi_friend_selector.png" />
 
-It pops up a window that shows your friends visually, in a grid, and lets you
-click to add or remove them. The same interface is used for inviting people to
-events and groups, among other things. It's even exposed to Facebook Apps as
-[Fb:multi-friend-selector](http://wiki.developers.facebook.com/index.php/Fb:multi-friend-selector).
+It pops up a window that shows your friends visually, in a grid, and lets you click to add or remove them. The same interface is used for inviting people to events and groups, among other things. It's even exposed to Facebook Apps as [Fb:multi-friend-selector](http://wiki.developers.facebook.com/index.php/Fb:multi-friend-selector).
 
 <a href="/feeds">
   <img class="right" src="/rss.jpg" /></a>
 
-<strike>I particularly like that friend lists have their own
-[RSS feeds](http://www.facebook.com/help.php?hq=rss+friends&ref=hq)
-for status updates.</strike>
-Sadly, friend lists don't have RSS feeds any more.
-[Try facebook-atom instead!](https://facebook-atom.appspot.com/)
+<strike>I particularly like that friend lists have their own [RSS feeds](http://www.facebook.com/help.php?hq=rss+friends&ref=hq) for status updates.</strike>
+Sadly, friend lists don't have RSS feeds any more. [Try facebook-atom instead!](https://facebook-atom.appspot.com/)
 
-It's not all sunshine and kittens, though. The
-[News Feed Preferences](http://www.facebook.com/feed_prefs.php) page, which
-[lets you control](http://www.facebook.com/help.php?hq=news+feed+preferences&ref=hq)
-which people and stories show up on your home page and news feed, is missing
-out. Its "More/Less About These Friends" lists are in desperate need of friend
-list love!
+It's not all sunshine and kittens, though. The [News Feed Preferences](http://www.facebook.com/feed_prefs.php) page, which [lets you control](http://www.facebook.com/help.php?hq=news+feed+preferences&ref=hq) which people and stories show up on your home page and news feed, is missing out. Its "More/Less About These Friends" lists are in desperate need of friend list love!
 
-Otherwise, friend lists are great, especially the RSS feeds. With those, I
-barely have to use Facebook itself at all!
+Otherwise, friend lists are great, especially the RSS feeds. With those, I barely have to use Facebook itself at all!
 
-P.S. Other sites have similar articles: [How To Create Friend Lists on Facebook](http://www.slymarketing.com/2009/01/how-to-create-friends-lists-on-facebook/),
-[Organise your friends with Facebook Friend Lists](http://imod.co.za/2008/01/02/organise-your-friends-with-facebook-friends-lists/), and
-[Facebook Friends selection custom component](http://www.ajaxlines.com/ajax/stuff/article/facebook_friends_selection_custom_component.php).
+P.S. Other sites have similar articles: [How To Create Friend Lists on Facebook](http://www.slymarketing.com/2009/01/how-to-create-friends-lists-on-facebook/), [Organise your friends with Facebook Friend Lists](http://imod.co.za/2008/01/02/organise-your-friends-with-facebook-friends-lists/), and [Facebook Friends selection custom component](http://www.ajaxlines.com/ajax/stuff/article/facebook_friends_selection_custom_component.php).

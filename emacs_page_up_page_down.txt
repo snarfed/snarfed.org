@@ -5,30 +5,15 @@ emacs page up page down
 <a href="/emacs_page_up_page_down"><img src="/page_up_key.jpg"></a>
 <a href="/emacs_page_up_page_down"><img src="/page_down_key.jpg"></a>
 
-By
-default, the page up and page down keys in
-[Emacs](http://gnu.org/software/emacs/) move the _screen_ up and down, not the
-point. As a result, if the screen is already at the bottom of the buffer, page
-down does nothing.
+By default, the page up and page down keys in [Emacs](http://gnu.org/software/emacs/) move the _screen_ up and down, not the point. As a result, if the screen is already at the bottom of the buffer, page down does nothing.
 
-I don't know about you, but this annoys me. Even if the screen is at the bottom
-of the buffer, I want page down to move the _point_ to the bottom of the buffer
-if it's not already there. So, I set out to make page up and page down move the
-point up and down a page. The screen should also scroll to follow it, if
-necessary, but that should be a side effect.
+I don't know about you, but this annoys me. Even if the screen is at the bottom of the buffer, I want page down to move the _point_ to the bottom of the buffer if it's not already there. So, I set out to make page up and page down move the point up and down a page. The screen should also scroll to follow it, if necessary, but that should be a side effect.
 
-I first looked at [pager.el](http://user.it.uu.se/~mic/pager.el). It's close -
-it moves the point, not the screen - but it still errors if the screen is
-already at the end of the buffer.
+I first looked at [pager.el](http://user.it.uu.se/~mic/pager.el). It's close - it moves the point, not the screen - but it still errors if the screen is already at the end of the buffer.
 
-I next looked at
-[pc-selection-mode](http://www.gnu.org/software/emacs/manual/html_node/Emulation.html),
-which comes with Emacs (in pc-mode.el). It binds page down and page up to
-`scroll-down-nomark` and `scroll-up-nomark`, which do what I want, but they also
-disable the mark. Argh!
+I next looked at [pc-selection-mode](http://www.gnu.org/software/emacs/manual/html_node/Emulation.html), which comes with Emacs (in pc-mode.el). It binds page down and page up to `scroll-down-nomark` and `scroll-up-nomark`, which do what I want, but they also disable the mark. Argh!
 
-So, I stole the code and hacked it to leave the mark alone. I ended up with this
-elisp, which makes page up and page down behave exactly the way I want:
+So, I stole the code and hacked it to leave the mark alone. I ended up with this elisp, which makes page up and page down behave exactly the way I want:
 
 ```
 ;; Page down/up move the point, not the screen.

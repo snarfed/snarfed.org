@@ -5,15 +5,9 @@ gnu emacs backup files
  <a href="http://gnu.org/software/emacs/">
   <img src="/gnu.jpg" /></a></p>
 
-I use [GNU
-Emacs](http://gnu.org/software/emacs/), and I love it. However, one annoyance is
-that it scatters autosave files (_#foo#_) and backup files (_foo~_) all over the
-filesystem.
+I use [GNU Emacs](http://gnu.org/software/emacs/), and I love it. However, one annoyance is that it scatters autosave files (_#foo#_) and backup files (_foo~_) all over the filesystem.
 
-So, I finally got fed up with this, and figured out how to keep them all in one
-place. Here's the
-[elisp](http://gnu.org/software/emacs/emacs-lisp-intro/html_node/index.html)
-(GNU Emacs only) that I put in [my .emacs](/dotfiles/.emacs):
+So, I finally got fed up with this, and figured out how to keep them all in one place. Here's the [elisp](http://gnu.org/software/emacs/emacs-lisp-intro/html_node/index.html) (GNU Emacs only) that I put in [my .emacs](/dotfiles/.emacs):
 
 ```
 ;; Put autosave files (ie #foo#) and backup files (ie foo~) in ~/.emacs.d/.

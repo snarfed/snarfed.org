@@ -6,107 +6,52 @@ gmail vs pine
 <a href="http://gmail.com/"><img src="/gmail.png"></a>
 </p>
 
-_Note: this article was written in February 2005. The ideas still apply, but
-many of the technical details about Gmail and Pine have changed. Caveat reader!_
+_Note: this article was written in February 2005. The ideas still apply, but many of the technical details about Gmail and Pine have changed. Caveat reader!_
 
-I've used [Pine](http://washington.edu/pine/) as my email client for, well,
-pretty much forever. I use it because it's fast, powerful, stable, and very
-keyboardable. (I _hate_ the mouse.)
+I've used [Pine](http://washington.edu/pine/) as my email client for, well, pretty much forever. I use it because it's fast, powerful, stable, and very keyboardable. (I _hate_ the mouse.)
 
-However, since I work at [Google](http://google.com/), I'm constantly bombarded
-with people who ask me why I don't use [Gmail](http://gmail.com/). After hearing
-the nth person brag about how much it increased their productivity, I finally
-broke down and tried it. I didn't expect much, since I've never liked web-based
-email clients. However, I made myself use it as my _only_ email client, for a
-month, to give it a fair shot.
+However, since I work at [Google](http://google.com/), I'm constantly bombarded with people who ask me why I don't use [Gmail](http://gmail.com/). After hearing the nth person brag about how much it increased their productivity, I finally broke down and tried it. I didn't expect much, since I've never liked web-based email clients. However, I made myself use it as my _only_ email client, for a month, to give it a fair shot.
 
-I ended up using it for five weeks, and while I eventually switched back to
-Pine, I liked Gmail a lot more than I expected. It made me question lots of
-things I took for granted, and showed me that there's plenty of innovation left
-in email clients. I'm currently [writing patches for
-Pine](/software#patches) to implement the features I miss most from Gmail.
-(Many people have gone the other direction and written [Greasemonkey scripts for
-Gmail](http://dunck.us/collab/GreaseMonkeyUserScriptsSpecific#head-2b681c0a24baff8899d7163cc7f805c75e1f44e4)
-to add features and customize it to their liking.)
+I ended up using it for five weeks, and while I eventually switched back to Pine, I liked Gmail a lot more than I expected. It made me question lots of things I took for granted, and showed me that there's plenty of innovation left in email clients. I'm currently [writing patches for Pine](/software#patches) to implement the features I miss most from Gmail. (Many people have gone the other direction and written [Greasemonkey scripts for Gmail](http://dunck.us/collab/GreaseMonkeyUserScriptsSpecific#head-2b681c0a24baff8899d7163cc7f805c75e1f44e4) to add features and customize it to their liking.)
 
-Here's the good, the bad, and the ugly of Gmail, compared to Pine. My opinions
-are not those of my employer, look both ways before crossing the street, don't
-run with scissors, etc.
+Here's the good, the bad, and the ugly of Gmail, compared to Pine. My opinions are not those of my employer, look both ways before crossing the street, don't run with scissors, etc.
 
 ### The Good
 
-  * It's somewhat faster than your average IMAP server. (Of course, this is both
-a success of Gmail and a failing of most IMAP servers.)
+  * It's somewhat faster than your average IMAP server. (Of course, this is both a success of Gmail and a failing of most IMAP servers.)
 
-  * Gmail is smart about hiding quoted text and emails i've seen. This _rocks_.
-Somehow it even knows the 1% of cases where I actually do want to see the quoted
-text. I have no idea how.
+  * Gmail is smart about hiding quoted text and emails i've seen. This _rocks_. Somehow it even knows the 1% of cases where I actually do want to see the quoted text. I have no idea how.
 
-  * The UI for threading, or
-[conversations](http://mail.google.com/mail/help/learn_more.html#conversation)
-in Gmail lingo, rocks even harder. The killer feature is that the _bodies_ of
-all messages in the thread on a single screen. Combined with hiding quoted text,
-this is very powerful.
+  * The UI for threading, or [conversations](http://mail.google.com/mail/help/learn_more.html#conversation) in Gmail lingo, rocks even harder. The killer feature is that the _bodies_ of all messages in the thread on a single screen. Combined with hiding quoted text, this is very powerful.
 
-  * Mail is indexed. My average search takes under a second in Gmail, but around
-10 seconds in Pine.
+  * Mail is indexed. My average search takes under a second in Gmail, but around 10 seconds in Pine.
 
-  * [Tags](http://www.zeldman.com/daily/0405d.shtml), aka labels or virtual
-folders, are all the rage these days. GMail's implementation of them is slick,
-and eminently usable. Pine's
-[keywords](http://www.ii.com/internet/messaging/pine/pc/#keywords) offer most of
-the same functionality, but compared to Gmail, they're a little clunky.
+  * [Tags](http://www.zeldman.com/daily/0405d.shtml), aka labels or virtual folders, are all the rage these days. GMail's implementation of them is slick, and eminently usable. Pine's [keywords](http://www.ii.com/internet/messaging/pine/pc/#keywords) offer most of the same functionality, but compared to Gmail, they're a little clunky.
 
-  * There are [keyboard
-shortcuts](http://mail.google.com/support/bin/answer.py?ctx=%67mail&hl=en&answer=6594)!
-Wonder of wonders, it's a webapp that has keyboard shortcuts. Even more amazing,
-I can actually do most of my normal email tasks with the keyboard shortcuts
-_only_. If I couldn't, I never would have given Gmail a second glance.
+  * There are [keyboard shortcuts](http://mail.google.com/support/bin/answer.py?ctx=%67mail&hl=en&answer=6594)! Wonder of wonders, it's a webapp that has keyboard shortcuts. Even more amazing, I can actually do most of my normal email tasks with the keyboard shortcuts _only_. If I couldn't, I never would have given Gmail a second glance.
 
-  * I love the Y key, a single keystroke for archiving email. Archiving in pine
-takes two keystrokes at best, and four if I last saved to a different folder
-than my "archive" folder.
+  * I love the Y key, a single keystroke for archiving email. Archiving in pine takes two keystrokes at best, and four if I last saved to a different folder than my "archive" folder.
 
-  * The address book is great, mostly because I _never have to use it_. Gmail
-automatically remembers everyone I've sent email to or received email from, and
-auto-completes when I start type their name or email address. I wish Pine did
-this!
+  * The address book is great, mostly because I _never have to use it_. Gmail automatically remembers everyone I've sent email to or received email from, and auto-completes when I start type their name or email address. I wish Pine did this!
 
 ### The Bad
 
-  * Filtering has a great UI, but it's horribly weak. It has maybe a third of
-the headers and options that I normally filter on. Even with labels, the set of
-filter actions is anemic.
+  * Filtering has a great UI, but it's horribly weak. It has maybe a third of the headers and options that I normally filter on. Even with labels, the set of filter actions is anemic.
 
   * There's no way to bounce an email. This should be pretty trivial to add.
 
-  * If no email is selected, the Y key should archive the email under the
-cursor. This should be common sense.
+  * If no email is selected, the Y key should archive the email under the cursor. This should be common sense.
 
   * You can't automatically create a filter based on an email. Why not?
 
-  * You can search, but you can't _select_ messages based on headers, subject,
-or body text. Worse, if you have more messages than fit on the screen, you can't
-select any messages that aren't on the screen. If you ever get flooded with
-email, or with spam that escapes the spam filters, god help you.
+  * You can search, but you can't _select_ messages based on headers, subject, or body text. Worse, if you have more messages than fit on the screen, you can't select any messages that aren't on the screen. If you ever get flooded with email, or with spam that escapes the spam filters, god help you.
 
 ### The Ugly
 
-  * Marking messages as read is impossible with the keyboard, and takes three
-clicks with the mouse: Select ___, More Actions, Mark As Read. I could just
-leave them unread, but then the labels display is useless for showing which
-mailing lists have new mail.
+  * Marking messages as read is impossible with the keyboard, and takes three clicks with the mouse: Select ___, More Actions, Mark As Read. I could just leave them unread, but then the labels display is useless for showing which mailing lists have new mail.
 
-  * Selecting a message doesn't automatically move the cursor to the next
-message. This is just plain silly.
+  * Selecting a message doesn't automatically move the cursor to the next message. This is just plain silly.
 
-  * The Y key is horribly inconsistent. If you're in the Inbox, it archives. If
-you're in a label, it removes the label. If you're in spam or trash, it moves to
-the Inbox! Granted, if you consider Inbox as just another label, this makes
-sense...but that's a pretty odd perspective.
+  * The Y key is horribly inconsistent. If you're in the Inbox, it archives. If you're in a label, it removes the label. If you're in spam or trash, it moves to the Inbox! Granted, if you consider Inbox as just another label, this makes sense...but that's a pretty odd perspective.
 
-  * Gmail might be smart about (not) displaying quoted text, but it can't handle
-_composing_ with quoted text to save its life. There are a ton of problems with
-this, but among others, it needs a way to [remove trailing quotes when
-sending](/pine_remove_trailing_quote_patch). (OK, to be fair, I doubt this
-feature is in high demand.)
+  * Gmail might be smart about (not) displaying quoted text, but it can't handle _composing_ with quoted text to save its life. There are a ton of problems with this, but among others, it needs a way to [remove trailing quotes when sending](/pine_remove_trailing_quote_patch). (OK, to be fair, I doubt this feature is in high demand.)

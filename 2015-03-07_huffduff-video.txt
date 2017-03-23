@@ -5,17 +5,8 @@ huffduff-video
  <a href="http://huffduff-video.snarfed.org/">
   <img class="shadow" src="/huffduff_youtube.jpg" /></a></p>
 
-[huffduff-video](http://huffduff-video.snarfed.org/), my latest side project,
-lets you send [Huffduffer](http://huffduffer.com/) the audio from videos on
-YouTube, Vimeo, [and more](http://rg3.github.io/youtube-dl/supportedsites.html).
-Just [grab the bookmarklet](http://huffduff-video.snarfed.org/), click it next
-time you find a video that you want to listen to, and it should show up in your
-podcast app automatically!
+[huffduff-video](http://huffduff-video.snarfed.org/), my latest side project, lets you send [Huffduffer](http://huffduffer.com/) the audio from videos on YouTube, Vimeo, [and more](http://rg3.github.io/youtube-dl/supportedsites.html). Just [grab the bookmarklet](http://huffduff-video.snarfed.org/), click it next time you find a video that you want to listen to, and it should show up in your podcast app automatically!
 
-It's pretty bare bones, but it does the trick. Thanks to
-[youtube-dl](http://rg3.github.io/youtube-dl/) for all the heavy lifting,
-<a class="h-card" href="https://adactio.com/">Jeremy Keith</a> for
-building the wonderful [Huffduffer](http://huffduffer.com/),
-<a class="h-card" href="http://bret.io/">Bret Comnes</a> for the inspiration,
-and interviewers and speakers everywhere for providing so many great videos to
-huffduff!
+It's pretty bare bones, but it does the trick. Thanks to [youtube-dl](http://rg3.github.io/youtube-dl/) for all the heavy lifting,
+<a class="h-card" href="https://adactio.com/">Jeremy Keith</a> for building the wonderful [Huffduffer](http://huffduffer.com/),
+<a class="h-card" href="http://bret.io/">Bret Comnes</a> for the inspiration, and interviewers and speakers everywhere for providing so many great videos to huffduff!

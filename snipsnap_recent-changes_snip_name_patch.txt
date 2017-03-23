@@ -11,19 +11,8 @@ For the impatient:
 [Ant](http://ant.apache.org) (needed to build SnipSnap)  
 [Patching FAQ](http://www.gnu.org/software/diffutils/manual/html_node/Merging-with-patch.html)
 
-I originally used [SnipSnap](/SnipSnap) as the web server for this site,
-and I loved it. However, nothing's perfect, even SnipSnap.
+I originally used [SnipSnap](/SnipSnap) as the web server for this site, and I loved it. However, nothing's perfect, even SnipSnap.
 
-SnipSnap 0.5.1a introduced a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-392)
-that showed all blog posts as "1" in the recent-changes macro. This was quickly
-fixed, but only for the default "vertical" style. The bug remained in all other
-list styles.
+SnipSnap 0.5.1a introduced a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-392) that showed all blog posts as "1" in the recent-changes macro. This was quickly fixed, but only for the default "vertical" style. The bug remained in all other list styles.
 
-I've written a small [patch](https://github.com/snarfed/misc/blob/master/patches/snipsnap-snip-name-1.0b1.patch) that fixes the
-remaining list styles. To use it with an existing SnipSnap installation,
-download the
-[SnipSnap 1.0b1 source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b1-uttoxeter-20040914-src.tgz),
-apply the patch, build SnipSnap with [Ant](http://ant.apache.org), then copy the
-newly rebuilt snipsnap-servlet.jar into your SnipSnap application's WEB-INF/lib/
-subdirectory, over the existing jar. Restart SnipSnap and you should be good to
-go!
+I've written a small [patch](https://github.com/snarfed/misc/blob/master/patches/snipsnap-snip-name-1.0b1.patch) that fixes the remaining list styles. To use it with an existing SnipSnap installation, download the [SnipSnap 1.0b1 source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b1-uttoxeter-20040914-src.tgz), apply the patch, build SnipSnap with [Ant](http://ant.apache.org), then copy the newly rebuilt snipsnap-servlet.jar into your SnipSnap application's WEB-INF/lib/ subdirectory, over the existing jar. Restart SnipSnap and you should be good to go!

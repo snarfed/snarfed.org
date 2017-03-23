@@ -5,27 +5,13 @@ minimal .emacs for fast startup
  <a href="http://gnu.org/software/emacs/">
   <img src="/gnu.jpg" /></a></p>
 
-I
-spend a fair amount of time ssh-ed into remote, headless linux servers. I often
-need to use a text editor to edit configuration files. Most don't run X windows,
-so I can't run [emacs](http://gnu.org/software/emacs/), my editor of choice, in
-graphical mode. I could use emacs -nw, which starts emacs in text mode, but
-emacs is still fairly heavy by default. These editing sessions are usually quick
-and simple, and I wouldn't want to wait for a full-blown emacs to start every
-time.
+I spend a fair amount of time ssh-ed into remote, headless linux servers. I often need to use a text editor to edit configuration files. Most don't run X windows, so I can't run [emacs](http://gnu.org/software/emacs/), my editor of choice, in graphical mode. I could use emacs -nw, which starts emacs in text mode, but emacs is still fairly heavy by default. These editing sessions are usually quick and simple, and I wouldn't want to wait for a full-blown emacs to start every time.
 
-I used [pico](http://www.washington.edu/pine/man/#pico) for a while, since I use
-[pine](http://washington.edu/pine/) as my email client. However, I missed emacs'
-depth and versatility. I considered [vi](http://vim.org/), but I wasn't exposed
-to it in the womb, and I'm not sure there's any other way to learn it. :P
+I used [pico](http://www.washington.edu/pine/man/#pico) for a while, since I use [pine](http://washington.edu/pine/) as my email client. However, I missed emacs' depth and versatility. I considered [vi](http://vim.org/), but I wasn't exposed to it in the womb, and I'm not sure there's any other way to learn it. :P
 
-More importantly, I didn't like using two different editors.
-[Mental context switches](http://joelonsoftware.com/articles/fog0000000022.html)
-are evil incarnate, and switching between text editors is a big context switch.
+More importantly, I didn't like using two different editors. [Mental context switches](http://joelonsoftware.com/articles/fog0000000022.html) are evil incarnate, and switching between text editors is a big context switch.
 
-So, I set out to make the minimal emacs -nw setup - lightwight, fast to start,
-and still usable for casual editing. It actually turned out to be fairly easy. I
-use this command to start emacs:
+So, I set out to make the minimal emacs -nw setup - lightwight, fast to start, and still usable for casual editing. It actually turned out to be fairly easy. I use this command to start emacs:
 
 ```
 emacs -nw --no-init-file --no-site-file \

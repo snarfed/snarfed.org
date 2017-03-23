@@ -9,22 +9,11 @@ linking libraries with mozilla xpcom
 <a href="http://bugzilla.org/"><img src="/bugzilla.jpg"></a>
 </p>
 
-I've
-been doing some development recently on the [Mozilla](http://mozilla.org/)
-[XPCOM](http://mozilla.org/projects/xpcom/) platform, and it's pretty cool.
-However, I ran into a small snag when I tried to build a [C++
-XPCOM](http://books.mozdev.org/html/mozilla-chp-8-sect-2.html#mozilla-CHP-8-SECT-2.5)
-component that linked with external libraries (specifically the X11 libraries).
+I've been doing some development recently on the [Mozilla](http://mozilla.org/) [XPCOM](http://mozilla.org/projects/xpcom/) platform, and it's pretty cool. However, I ran into a small snag when I tried to build a [C++ XPCOM](http://books.mozdev.org/html/mozilla-chp-8-sect-2.html#mozilla-CHP-8-SECT-2.5) component that linked with external libraries (specifically the X11 libraries).
 
-Mozilla provides a way to build XPCOM components by hooking into their
-Makefiles, which is great...except that adding extra libraries to LIBS didn't
-work. They were just ignored. If you need to link with external libraries, the
-trick is to add them to EXTRA_DSO_LDOPTS, _not_ to LIBS.
+Mozilla provides a way to build XPCOM components by hooking into their Makefiles, which is great...except that adding extra libraries to LIBS didn't work. They were just ignored. If you need to link with external libraries, the trick is to add them to EXTRA_DSO_LDOPTS, _not_ to LIBS.
 
-As an example, I needed to add the flags **-lX11 -L/usr/X11R6/lib** to the link
-stage. I used the [example XPCOM
-Makefile](http://books.mozdev.org/html/mozilla-chp-8-sect-2.html#mozilla-CHP-8-SECT-2.6.1),
-and edited the EXTRA_DSO_LDOPTS line to look like this:
+As an example, I needed to add the flags **-lX11 -L/usr/X11R6/lib** to the link stage. I used the [example XPCOM Makefile](http://books.mozdev.org/html/mozilla-chp-8-sect-2.html#mozilla-CHP-8-SECT-2.6.1), and edited the EXTRA_DSO_LDOPTS line to look like this:
 
 ```
 EXTRA_DSO_LDOPTS += \

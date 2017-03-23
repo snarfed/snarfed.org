@@ -3,47 +3,14 @@ Amazon Kindle
 
 <p class="right third"><img src="/kindle_paperwhite.jpg" /></p>
 
-I do most of my reading on an [Amazon Kindle](http://kindle.com/) and in the
-Kindle app on my phone. Here are some notes on how I use it.
+I do most of my reading on an [Amazon Kindle](http://kindle.com/) and in the Kindle app on my phone. Here are some notes on how I use it.
 
-I've had a few Kindles over the years; I'm currently on an e-ink
-[Touch 4](http://www.amazon.com/gp/help/customer/display.html/ref=hp_bc_nav?ie=UTF8&nodeId=200711730).
-Reading on LED screens usually gives me a bit of eye strain, so I prefer e-ink
-when I can. I originally bought the
-[cheaper version with ads](http://www.amazon.com/gp/help/customer/display.html?nodeId=200671290)
-("special offers") on the lock screen, and later decided to pay the $20
-difference to get rid of them. I'm glad they allow that.
+I've had a few Kindles over the years; I'm currently on an e-ink [Touch 4](http://www.amazon.com/gp/help/customer/display.html/ref=hp_bc_nav?ie=UTF8&nodeId=200711730). Reading on LED screens usually gives me a bit of eye strain, so I prefer e-ink when I can. I originally bought the [cheaper version with ads](http://www.amazon.com/gp/help/customer/display.html?nodeId=200671290) ("special offers") on the lock screen, and later decided to pay the $20 difference to get rid of them. I'm glad they allow that.
 
-I also use the
-[Android app](https://play.google.com/store/apps/details?id=com.amazon.kindle)
-on my phone. Amazon does a good job of synching my current position across the
-two devices in books, but it doesn't sync position in digital magazines or
-[personal documents](https://www.amazon.com/gp/help/customer/display.html/ref=kinw_myk_pd_ln?ie=UTF8&nodeId=200767340),
-which is disappointing, but not a big deal.
+I also use the [Android app](https://play.google.com/store/apps/details?id=com.amazon.kindle) on my phone. Amazon does a good job of synching my current position across the two devices in books, but it doesn't sync position in digital magazines or [personal documents](https://www.amazon.com/gp/help/customer/display.html/ref=kinw_myk_pd_ln?ie=UTF8&nodeId=200767340), which is disappointing, but not a big deal.
 
-I usually buy books on Amazon's
-[Kindle store](http://www.amazon.com/Kindle-eBooks/b?ie=UTF8&node=154606011) for
-convenience. Sadly, most of them are DRMed. I strip the DRM by downloading the
-books to my computer and running
-[KindleBooks](https://github.com/weeksatimd/bin/blob/master/tools_v4.5/KindleBooks/README_KindleBooks.txt)
-(née K4MobiDeDRM/Topaz_Tools). Amazon's DRM encrypts books for each device
-individually, using its serial number as the key, so I pass KindleBooks my
-serial number by running `KindleBooks_4.7/lib/k4mobidedrm.py -s [SERIAL_NO]
-[BOOK_FILE]`. I open the resulting `.mobi` files in
-[Calibre](http://calibre.org/) occasionally to check that they're readable.
+I usually buy books on Amazon's [Kindle store](http://www.amazon.com/Kindle-eBooks/b?ie=UTF8&node=154606011) for convenience. Sadly, most of them are DRMed. I strip the DRM by downloading the books to my computer and running [KindleBooks](https://github.com/weeksatimd/bin/blob/master/tools_v4.5/KindleBooks/README_KindleBooks.txt) (née K4MobiDeDRM/Topaz_Tools). Amazon's DRM encrypts books for each device individually, using its serial number as the key, so I pass KindleBooks my serial number by running `KindleBooks_4.7/lib/k4mobidedrm.py -s [SERIAL_NO] [BOOK_FILE]`. I open the resulting `.mobi` files in [Calibre](http://calibre.org/) occasionally to check that they're readable.
 
-Occasionally I'll get a ebook somewhere else in non-DRM `epub` or `mobi` format,
-or a paper or other document in PDF. I get them onto my Kindle and phone
-[via email](https://www.amazon.com/gp/help/customer/display.html/ref=kinw_myk_pd_ln?ie=UTF8&nodeId=200767340).
-I also use the [Push to Kindle](http://fivefilters.org/kindle-it/) bookmarklet
-to send web articles and blog posts. It's great, I love it. It even has a mobile
-app that accepts anything you can "share" to it. Amazon's own
-[Send to Kindle](http://www.amazon.com/gp/sendtokindle) is similar, but its
-mobile app doesn't support web pages, which is a dealbreaker. There are
-[also sites](http://kindlefeeder.com/)
-[for sending](http://sendtoreader.com/periodicals/)
-[RSS feeds](http://kindle4rss.com/).
+Occasionally I'll get a ebook somewhere else in non-DRM `epub` or `mobi` format, or a paper or other document in PDF. I get them onto my Kindle and phone [via email](https://www.amazon.com/gp/help/customer/display.html/ref=kinw_myk_pd_ln?ie=UTF8&nodeId=200767340). I also use the [Push to Kindle](http://fivefilters.org/kindle-it/) bookmarklet to send web articles and blog posts. It's great, I love it. It even has a mobile app that accepts anything you can "share" to it. Amazon's own [Send to Kindle](http://www.amazon.com/gp/sendtokindle) is similar, but its mobile app doesn't support web pages, which is a dealbreaker. There are [also sites](http://kindlefeeder.com/) [for sending](http://sendtoreader.com/periodicals/) [RSS feeds](http://kindle4rss.com/).
 
-The Kindle is usually very reliable, but it's frozen on me a few times. To reset
-it, I
-[press and hold power button for 20s, then let go](http://www.amazon.com/gp/help/customer/display.html?nodeId=200829000).
+The Kindle is usually very reliable, but it's frozen on me a few times. To reset it, I [press and hold power button for 20s, then let go](http://www.amazon.com/gp/help/customer/display.html?nodeId=200829000).

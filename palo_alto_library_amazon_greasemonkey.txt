@@ -6,65 +6,33 @@ palo alto library amazon greasemonkey
 <a href="http://webcat.cityofpaloalto.org/"><img src="/palo_alto_seal.jpg"></a>
 
 For the impatient:  
-[Install Palo Alto Library](https://github.com/snarfed/misc/blob/master/userscripts/paloaltolibrary.user.js)
-(Right-click and select _Install User Script_)  
-[Scripts for other
-libraries](#others)  
+[Install Palo Alto Library](https://github.com/snarfed/misc/blob/master/userscripts/paloaltolibrary.user.js) (Right-click and select _Install User Script_)  
+[Scripts for other libraries](#others)  
 [Get Firefox](http://getfirefox.com/)  
 [Get Greasemonkey](http://downloads.mozdev.org/greasemonkey/greasemonkey_0.3.3.xpi)
 
-The
-[Palo Alto Library Greasemonkey script](https://github.com/snarfed/misc/blob/master/userscripts/paloaltolibrary.user.js)
-adds a link to Amazon that shows whether the book you're looking at is available
-in the [Palo Alto Libraries](http://cityofpaloalto.org/library/).
+The [Palo Alto Library Greasemonkey script](https://github.com/snarfed/misc/blob/master/userscripts/paloaltolibrary.user.js) adds a link to Amazon that shows whether the book you're looking at is available in the [Palo Alto Libraries](http://cityofpaloalto.org/library/).
 
-There are plugins with similar functionality for other libraries and catalogs;
-[see below](#others) for a list. The Palo Alto Library script differs mainly in
-its usability. Instead of simply linking to the library's search page, it
-displays the book's availability directly inside Amazon. More importantly, it's
-color-coded, since
-[users don't read](http://www.joelonsoftware.com/uibook/chapters/fog0000000062.html)
-(and [shouldn't have to](http://www.useit.com/alertbox/9710a.html)!). Green
-means it's there, yellow means it's temporarily unavailable (checked out, on
-order, etc.), red means it's not in the library.
+There are plugins with similar functionality for other libraries and catalogs; [see below](#others) for a list. The Palo Alto Library script differs mainly in its usability. Instead of simply linking to the library's search page, it displays the book's availability directly inside Amazon. More importantly, it's color-coded, since [users don't read](http://www.joelonsoftware.com/uibook/chapters/fog0000000062.html) (and [shouldn't have to](http://www.useit.com/alertbox/9710a.html)!). Green means it's there, yellow means it's temporarily unavailable (checked out, on order, etc.), red means it's not in the library.
 
 ![available_thumb](/available_thumb.jpg)
 
-More screenshots: [checked out](/checked_out_thumb.jpg),
-[not available](/not_available_thumb.jpg), [on order](/on_order.jpg),
-[in process](/in_process.jpg). Thanks to Eric Galloway for adding "on order"
-support.
+More screenshots: [checked out](/checked_out_thumb.jpg), [not available](/not_available_thumb.jpg), [on order](/on_order.jpg), [in process](/in_process.jpg). Thanks to Eric Galloway for adding "on order" support.
 
-Background: [Jon Udell](http://weblog.infoworld.com/udell/)'s
-[Library Lookup](http://weblog.infoworld.com/udell/stories/2002/12/11/librarylookup.html)
-is a great example of Firefox's potential for simple, yet powerful client-side
-tools. Library Lookup lets you build a bookmarklet that, when you're browsing
-[Amazon](http://amazon.com/), automatically searches your library for the book
-you're currently viewing. Very cool.
+Background: [Jon Udell](http://weblog.infoworld.com/udell/)'s [Library Lookup](http://weblog.infoworld.com/udell/stories/2002/12/11/librarylookup.html) is a great example of Firefox's potential for simple, yet powerful client-side tools. Library Lookup lets you build a bookmarklet that, when you're browsing [Amazon](http://amazon.com/), automatically searches your library for the book you're currently viewing. Very cool.
 
-When [GreaseMonkey](http://greasemonkey.mozdev.org/) started picking up steam,
-Jon wrote a [script](http://weblog.infoworld.com/udell/2005/04/04.html#a1207)
-based on Library Lookup that searched his library for the currently displayed
-book. Even better, it _parsed the results_ and inserted a link into the Amazon
-page that said whether it was available or checked out. Palo Alto Library was
-inspired by, and is based on, that
-script.
+When [GreaseMonkey](http://greasemonkey.mozdev.org/) started picking up steam, Jon wrote a [script](http://weblog.infoworld.com/udell/2005/04/04.html#a1207) based on Library Lookup that searched his library for the currently displayed book. Even better, it _parsed the results_ and inserted a link into the Amazon page that said whether it was available or checked out. Palo Alto Library was inspired by, and is based on, that script.
 
 Scripts for other libraries:
 <a name="others"></a>
 
-  * [UC
-Berkeley](http://dream.sims.berkeley.edu/~ryanshaw/wordpress/amazon2melvyl/)
-  * [Harvard,
-Minuteman](http://blog.statway.com/2005/03/29/greasemonkey-scripts/)
+  * [UC Berkeley](http://dream.sims.berkeley.edu/~ryanshaw/wordpress/amazon2melvyl/)
+  * [Harvard, Minuteman](http://blog.statway.com/2005/03/29/greasemonkey-scripts/)
   * [KVK](http://wiki.netbib.de/coma/Linky)
   * [Seattle](http://www.mundell.org/2005/04/27/librarylookup-greasemonkey-script/)
   * [Grand Rapids](http://www.brianandmegan.com/llcoop.php)
   * [WorldCat](http://protoplasmic.org/weblog.cgi/programming/greasemonkeyworldcat1.html)
-  * ...[and
-more](http://dunck.us/collab/GreaseMonkeyUserScriptsSpecific#head-74c0fda1054b04bf3e2365d467e32a47e3feba7b)
+  * ...[and more](http://dunck.us/collab/GreaseMonkeyUserScriptsSpecific#head-74c0fda1054b04bf3e2365d467e32a47e3feba7b)
 
-Palo Alto Library is distributed under the
-[GPL](http://www.gnu.org/licenses/gpl.html). Copyright 2005 [Ryan
-Barrett](/), Eric Galloway.
+Palo Alto Library is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html). Copyright 2005 [Ryan Barrett](/), Eric Galloway.
 

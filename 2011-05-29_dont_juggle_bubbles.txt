@@ -4,37 +4,17 @@ Don't juggle bubbles! (or, why I run shells inside Emacs)
 <p class="right"><a href="http://cheezburger.com/View/1666431232">
   <img class="shadow" src="/cat_bubbles.jpg" /></a></p>
 
-*This is an excerpt; see the [full article](/why_i_run_shells_inside_emacs)
-for the Emacs Lisp and other nitty gritty details.*
+*This is an excerpt; see the [full article](/why_i_run_shells_inside_emacs) for the Emacs Lisp and other nitty gritty details.*
 
-[Mental context switches](http://joelonsoftware.com/articles/fog0000000022.html)
-are evil. Some people handle them better than others, but not me. I handle them
-worse. I feel it, almost physically, when context switches whittle down my
-precious [flow](http://en.wikipedia.org/wiki/Flow_(psychology)) piece by piece.
-It hurts!
+[Mental context switches](http://joelonsoftware.com/articles/fog0000000022.html) are evil. Some people handle them better than others, but not me. I handle them worse. I feel it, almost physically, when context switches whittle down my precious [flow](http://en.wikipedia.org/wiki/Flow_(psychology)) piece by piece. It hurts!
 
-Even something as small as switching between
-[Emacs](http://gnu.org/software/emacs/) and the shell can hurt, especially when
-I do it thousands of times a day. The physical movement isn't so bad; it's that
-they have different key bindings, different clipboards, and myriad deeper
-differences in behavior. What's worse, only *some* parts are different, so my
-muscle memory is constantly seduced into a false sense of familiarity, only to
-have the rug yanked out from under it seconds later.
+Even something as small as switching between [Emacs](http://gnu.org/software/emacs/) and the shell can hurt, especially when I do it thousands of times a day. The physical movement isn't so bad; it's that they have different key bindings, different clipboards, and myriad deeper differences in behavior. What's worse, only *some* parts are different, so my muscle memory is constantly seduced into a false sense of familiarity, only to have the rug yanked out from under it seconds later.
 
 <a href="http://gnu.org/software/emacs/">
   <img class="left" src="/gnu.jpg" /></a>
 
-I [put](/emacs_keybindings_in_gnu_screens_copy-scrollback_mode)
-[together](/control_arrow_keys_in_rxvt_tcsh_and_emacs)
-[various](/minimal_emacs_for_fast_startup)
-[hacks](/synchronizing_gnu_screens_paste_buffer_and_the_x_selection) to bring
-Emacs and my shell closer together, with some success, but it always felt like a
-chronic disease. Curing it completely was never on the table; I could only hope
-to manage it.
+I [put](/emacs_keybindings_in_gnu_screens_copy-scrollback_mode) [together](/control_arrow_keys_in_rxvt_tcsh_and_emacs) [various](/minimal_emacs_for_fast_startup) [hacks](/synchronizing_gnu_screens_paste_buffer_and_the_x_selection) to bring Emacs and my shell closer together, with some success, but it always felt like a chronic disease. Curing it completely was never on the table; I could only hope to manage it.
 
-The holy grail, of course, was running shells *inside* Emacs. I had high hopes
-when I [tried it eight years ago](/why_i_dont_run_shells_inside_emacs), but it
-didn't work out. I tried it again recently though, and it's still early days,
-but we're pretty happy together this time. I think we might go the distance!
+The holy grail, of course, was running shells *inside* Emacs. I had high hopes when I [tried it eight years ago](/why_i_dont_run_shells_inside_emacs), but it didn't work out. I tried it again recently though, and it's still early days, but we're pretty happy together this time. I think we might go the distance!
 
 [Read more...](/why_i_run_shells_inside_emacs)

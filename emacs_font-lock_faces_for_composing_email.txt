@@ -6,29 +6,13 @@ emacs font-lock faces for composing email
 <a href="http://washington.edu/pine/"><img src="/pine.png"></a>
 </p>
 
-I
-use [Pine](http://www.washington.edu/pine/) (no, [not GMail](/gmail_vs_pine)) as my email client. I set its [alternate
-editor](http://www.washington.edu/pine/tech-notes/config-notes.html#alt-ed) to
-[Emacs](http://gnu.org/software/emacs/) so I can use it to write email.
+I use [Pine](http://www.washington.edu/pine/) (no, [not GMail](/gmail_vs_pine)) as my email client. I set its [alternate editor](http://www.washington.edu/pine/tech-notes/config-notes.html#alt-ed) to [Emacs](http://gnu.org/software/emacs/) so I can use it to write email.
 
-Among other Emacs features,
-[font-locking](http://www.gnu.org/software/emacs/manual/html_node/Font-Lock.html#Font-Lock),
-ie colored highlighting, has spoiled me. Color in general is a [huge usability
-win](http://www.colormatters.com/usability.html). It's such a difference that
-when I _don't_ have font-lock, editing a whole page of flat, white text makes me
-feel slightly dumb.
+Among other Emacs features, [font-locking](http://www.gnu.org/software/emacs/manual/html_node/Font-Lock.html#Font-Lock), ie colored highlighting, has spoiled me. Color in general is a [huge usability win](http://www.colormatters.com/usability.html). It's such a difference that when I _don't_ have font-lock, editing a whole page of flat, white text makes me feel slightly dumb.
 
-Sadly, I didn't have font-lock for composing emails. So, I poked around and
-found
-[u-vm-color.el](http://de.geocities.com/ulf_jasper/lisp/u-vm-color.el.txt). It
-was written for [VM](http://www.wonderworks.com/vm/), an Emacs MUA, so it's a
-little heavyweight. Still, it can color quoted text, signatures, and other text
-just like Pine's message viewer.
+Sadly, I didn't have font-lock for composing emails. So, I poked around and found [u-vm-color.el](http://de.geocities.com/ulf_jasper/lisp/u-vm-color.el.txt). It was written for [VM](http://www.wonderworks.com/vm/), an Emacs MUA, so it's a little heavyweight. Still, it can color quoted text, signatures, and other text just like Pine's message viewer.
 
-To set it up, [download
-u-vm-color.el](http://de.geocities.com/ulf_jasper/lisp/u-vm-color.el.txt), put
-it somewhere in your load-path (e.g. `/usr/share/emacs/site-lisp/`), and add this
-to your `~/.emacs`:
+To set it up, [download u-vm-color.el](http://de.geocities.com/ulf_jasper/lisp/u-vm-color.el.txt), put it somewhere in your load-path (e.g. `/usr/share/emacs/site-lisp/`), and add this to your `~/.emacs`:
 
 ```
 (require 'u-vm-color)

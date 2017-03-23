@@ -5,11 +5,7 @@ download_picasa_album.sh
  <a href="http://picasaweb.google.com/">
   <img src="/picasaweb.png" /></a></p>
 
-[download_picasa_album.sh](https://github.com/snarfed/misc/blob/master/download_picasa_album.sh)
-is a simple little shell script that downloads entire photo albums from
-[Picasa Web](http://picasaweb.google.com/). Just give it the album's RSS feed,
-and it will parse the feed, extract the links to the full-size pictures, and
-download them one by one. For example:
+[download_picasa_album.sh](https://github.com/snarfed/misc/blob/master/download_picasa_album.sh) is a simple little shell script that downloads entire photo albums from [Picasa Web](http://picasaweb.google.com/). Just give it the album's RSS feed, and it will parse the feed, extract the links to the full-size pictures, and download them one by one. For example:
 
 ```
 $ ./download_picasa_album.sh 'http://picasaweb.google.com/...&alt=rss'

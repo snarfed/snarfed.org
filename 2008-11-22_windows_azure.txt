@@ -3,13 +3,6 @@ Windows Azure
 
 <a href="/windows_azure_impressions"><img src="/azure_logo_small.jpg"></a>
 
-I [recently attended PDC 2008](/2008-10-27_in_la_for_pdc), where
-Microsoft announced [Windows Azure](http://azure.com/). I spent the week
-absorbing Microsoft's messaging, diving deep into the technical details, and
-thinking about the broader implications for cloud computing as a whole.
+I [recently attended PDC 2008](/2008-10-27_in_la_for_pdc), where Microsoft announced [Windows Azure](http://azure.com/). I spent the week absorbing Microsoft's messaging, diving deep into the technical details, and thinking about the broader implications for cloud computing as a whole.
 
-I've posted my
-[overall impressions](/windows_azure_impressions) and
-some [deeper technical details](/windows_azure_details).
-I've also edited and posted a [presentation on Azure](/azure_talk.html)
-I gave recently. Feedback is welcome!
+I've posted my [overall impressions](/windows_azure_impressions) and some [deeper technical details](/windows_azure_details). I've also edited and posted a [presentation on Azure](/azure_talk.html) I gave recently. Feedback is welcome!

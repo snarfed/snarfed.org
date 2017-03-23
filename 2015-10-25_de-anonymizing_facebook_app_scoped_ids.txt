@@ -4,37 +4,17 @@ De-anonymizing Facebook's app-scoped ids
 <p class="right third">
   <img src="/facebook_logo_broken.png" /></p>
 
-Facebook has taken plenty of criticism for privacy problems over the years, and
-it's invested plenty of resources in responding. One specific problem early on
-was that third party apps could combine their data to create deeper user
-profiles for tracking and analysis. If one app couldn't get permission to see a
-Facebook user's friends, for example, it might quietly partner with another app
-that did instead of trying harder to get official permission.
+Facebook has taken plenty of criticism for privacy problems over the years, and it's invested plenty of resources in responding. One specific problem early on was that third party apps could combine their data to create deeper user profiles for tracking and analysis. If one app couldn't get permission to see a Facebook user's friends, for example, it might quietly partner with another app that did instead of trying harder to get official permission.
 
-Facebook fixed this in their v2.0 API by giving each app its own set of
-[app-scoped user ids](https://developers.facebook.com/docs/apps/upgrading#upgrading_v2_0_user_ids).
-For example, originally [Farmville](https://en.wikipedia.org/wiki/FarmVille) and
-[Blendr](https://en.wikipedia.org/wiki/Blendr) got the same user id for me -
-212038 - but in the v2.0 API, they each got their own unique user id. This
-prevented them from joining their user databases easily.
+Facebook fixed this in their v2.0 API by giving each app its own set of [app-scoped user ids](https://developers.facebook.com/docs/apps/upgrading#upgrading_v2_0_user_ids). For example, originally [Farmville](https://en.wikipedia.org/wiki/FarmVille) and [Blendr](https://en.wikipedia.org/wiki/Blendr) got the same user id for me - 212038 - but in the v2.0 API, they each got their own unique user id. This prevented them from joining their user databases easily.
 
 <a class="h-card" href="https://ben.thatmustbe.me/">Ben</a>,
-<a class="h-card" href="http://aaronparecki.com/">Aaron</a>,
-and I
-[recently came up with a loophole](http://indiewebcamp.com/irc/2015-10-19#t1445267366452).
-Facebook offers
-"evergreen" URLs that return a user's profile picture:
-`https://www.facebook.com/profile.php?id=[ID]`. These work with app-scoped ids
-as well as usernames and global ids. Interestingly, for a given user, they
-redirect to the exact same final image URL, regardless of the id you use.
+<a class="h-card" href="http://aaronparecki.com/">Aaron</a>, and I [recently came up with a loophole](http://indiewebcamp.com/irc/2015-10-19#t1445267366452). Facebook offers "evergreen" URLs that return a user's profile picture: `https://www.facebook.com/profile.php?id=[ID]`. These work with app-scoped ids as well as usernames and global ids. Interestingly, for a given user, they redirect to the exact same final image URL, regardless of the id you use.
 
 <!-- more -->
 <span />
 
-As an example, here are two app-scoped user ids for
-[Snoøpy Barrett](https://www.facebook.com/profile.php?id=100009447618341), my
-trusty cat and test Facebook user: 1507374646254108 and 1449928198665420. If you
-`HEAD` the profile picture URLs for those two ids:
+As an example, here are two app-scoped user ids for [Snoøpy Barrett](https://www.facebook.com/profile.php?id=100009447618341), my trusty cat and test Facebook user: 1507374646254108 and 1449928198665420. If you `HEAD` the profile picture URLs for those two ids:
 
 ```
 https://graph.facebook.com/v2.2/1507374646254108/picture

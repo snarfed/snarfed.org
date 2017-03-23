@@ -1,10 +1,5 @@
 452
 Subversion
 
-For those who are interested, [snarfed.org](/) now offers a [version control
-server](http://subversion.tigris.org/). (Version control is a safe, reliable way
-to store files and track their changes over time.) The server will be used to
-store documents, web sites, and source code, including the [custom
-macros](/album) that <strike>run</strike> used to run this site. [Drop me a
-line](/about) if you'd like access.
+For those who are interested, [snarfed.org](/) now offers a [version control server](http://subversion.tigris.org/). (Version control is a safe, reliable way to store files and track their changes over time.) The server will be used to store documents, web sites, and source code, including the [custom macros](/album) that <strike>run</strike> used to run this site. [Drop me a line](/about) if you'd like access.
 

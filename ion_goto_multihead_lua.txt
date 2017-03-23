@@ -1,23 +1,11 @@
 2006
 Ion: my goto frame multihead Lua code
 
-I use the
-[orphaned](http://en.wikipedia.org/wiki/Ion_%28window_manager%29#Controversy)
-[Ion](http://en.wikipedia.org/wiki/Ion_%28window_manager%29) as my window
-manager, and I love it. Here's a [Lua](http://lua.org/) function I wrote for Ion
-that handles directional movement across frames with multiple screens (ie
-multihead) the way I want.
+I use the [orphaned](http://en.wikipedia.org/wiki/Ion_%28window_manager%29#Controversy) [Ion](http://en.wikipedia.org/wiki/Ion_%28window_manager%29) as my window manager, and I love it. Here's a [Lua](http://lua.org/) function I wrote for Ion that handles directional movement across frames with multiple screens (ie multihead) the way I want.
 
-First, if I'm on a frame at the edge of a screen, and I try to move to
-the next frame, it will move to the closest frame on the next screen in that
-direction. This is based on `goto_multihead.lua` in the
-[ion3-scripts](http://packages.ubuntu.com/lucid/ion3-scripts) package.
+First, if I'm on a frame at the edge of a screen, and I try to move to the next frame, it will move to the closest frame on the next screen in that direction. This is based on `goto_multihead.lua` in the [ion3-scripts](http://packages.ubuntu.com/lucid/ion3-scripts) package.
 
-Second, the normal frame movement functions like `ioncore.goto_next()` just
-traverse the tile hierarchy, so frame movement is sometimes unintuitive. For
-example, if there are four frames in a two by two grid, and the bottom left is
-selected, moving _up_ could move to the upper right instead of the upper left.
-This function fixes that.
+Second, the normal frame movement functions like `ioncore.goto_next()` just traverse the tile hierarchy, so frame movement is sometimes unintuitive. For example, if there are four frames in a two by two grid, and the bottom left is selected, moving _up_ could move to the upper right instead of the upper left. This function fixes that.
 
 ```
 function my_goto_multihead(ws, dir)

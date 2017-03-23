@@ -5,10 +5,7 @@ podcasts
 
 Podcasts I listen to regularly. Also see [feeds](/feeds) and [other lists](/lists).
 
-Thanks to [BeyondPod](http://www.beyondpod.mobi/) and
-[Fletcher Penney](http://fletcherpenney.net/)'s
-[opml2markdown.xslt](http://fletcherpenney.net/2006/03/markdown_and_xml),
-which I use to generate this list.
+Thanks to [BeyondPod](http://www.beyondpod.mobi/) and [Fletcher Penney](http://fletcherpenney.net/)'s [opml2markdown.xslt](http://fletcherpenney.net/2006/03/markdown_and_xml), which I use to generate this list.
 
 <!--
 first remove the Stories, All, and Uncategorized <outline>s and </outline>s

@@ -10,10 +10,7 @@ tar czf ~/s/fillcode.tar.gz --exclude .svn fillcode*.el elunit/
 
 _[Fillcode is available on MELPA!](http://melpa.org/#/fillcode)_
 
-[Fillcode](https://github.com/snarfed/fillcode)
-is an [Emacs](http://gnu.org/software/emacs/) minor mode that fills, or
-wraps, some parts of source code. It's best described by example. Fillcode fills
-this:
+[Fillcode](https://github.com/snarfed/fillcode) is an [Emacs](http://gnu.org/software/emacs/) minor mode that fills, or wraps, some parts of source code. It's best described by example. Fillcode fills this:
 
 ```
 public static void foo(int i, float f, String s) {

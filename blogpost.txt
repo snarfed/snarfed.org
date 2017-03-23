@@ -5,34 +5,14 @@ blogpost.sh
  <a href="http://wordpress.org/">
   <img src="/wordpress.png" alt="wordpress" /></a></p>
 
-I use [Stuart Rackham](http://srackham.wordpress.com/)'s
-[blogpost.py](http://srackham.wordpress.com/blogpost-readme/)
-to publish my pages and posts to [WordPress](http://wordpress.org/).
-It's great!
+I use [Stuart Rackham](http://srackham.wordpress.com/)'s [blogpost.py](http://srackham.wordpress.com/blogpost-readme/) to publish my pages and posts to [WordPress](http://wordpress.org/). It's great!
 
-I often update more than one page or post before I get a chance to publish them,
-though, and I often forget which ones need to be updated. So, I wrote a wrapper
-script, [blogpost.sh](/blogpost.sh), that finds all files that need to be
-published or updated and runs `blogpost.py` to publish them.
+I often update more than one page or post before I get a chance to publish them, though, and I often forget which ones need to be updated. So, I wrote a wrapper script, [blogpost.sh](/blogpost.sh), that finds all files that need to be published or updated and runs `blogpost.py` to publish them.
 
-Before you use `blogpost.sh`, you'll need to configure it by changing the
-`WORKSPACE`, `BLOGPOST`, and `POST_RE` variables at the top of the script to
-match your post files. Also, note that it expects the first line of your post
-files to be the title, and the second line to be blank, a la
-[PyBlosxom](http://pyblosxom.bluesock.org/).
+Before you use `blogpost.sh`, you'll need to configure it by changing the `WORKSPACE`, `BLOGPOST`, and `POST_RE` variables at the top of the script to match your post files. Also, note that it expects the first line of your post files to be the title, and the second line to be blank, a la [PyBlosxom](http://pyblosxom.bluesock.org/).
 
-`blogpost.sh` has gone through a few iterations. I used to store my post files
-in [Subversion](http://subversion.tigris.org/)
-([now git](https://github.com/snarfed/snarfed.org)), so I first tried using
-`svn st` to determine which post files were modified. That worked, but it tied
-publishing posts to checking them into Subversion, which I didn't like.
+`blogpost.sh` has gone through a few iterations. I used to store my post files in [Subversion](http://subversion.tigris.org/) ([now git](https://github.com/snarfed/snarfed.org)), so I first tried using `svn st` to determine which post files were modified. That worked, but it tied publishing posts to checking them into Subversion, which I didn't like.
 
-Next, I tried hashing all of the post files and comparing them to the stored
-hashes in their `.blogpost` files. That worked, but it was pretty heavyweight. I
-have hundreds of posts and pages, so hashing them all takes some time, and
-usually only a few of them have changed anyway.
+Next, I tried hashing all of the post files and comparing them to the stored hashes in their `.blogpost` files. That worked, but it was pretty heavyweight. I have hundreds of posts and pages, so hashing them all takes some time, and usually only a few of them have changed anyway.
 
-I finally settled on a hybrid of hashing and mtime. I loop over all of the files
-in order of last modification time, starting with the most recent. I hash each
-one, compare that to its `.blogpost` file, and publish the file if it's changed.
-I stop at the first file that hasn't changed.
+I finally settled on a hybrid of hashing and mtime. I loop over all of the files in order of last modification time, starting with the most recent. I hash each one, compare that to its `.blogpost` file, and publish the file if it's changed. I stop at the first file that hasn't changed.

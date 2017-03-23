@@ -5,36 +5,19 @@ IndieWeb Press This bookmarklets for WordPress
  <a href="http://indiewebcamp.com/">
    <img src="/indiewebcamp.png"/></a></p>
 
-One big [IndieWeb](http://indiewebcamp.com/) _raison d'être_ is using your own
-web site to [reply](http://indiewebcamp.com/reply),
-[like](http://indiewebcamp.com/like), [repost](http://indiewebcamp.com/repost),
-and [RSVP](http://indiewebcamp.com/rsvp) to posts and events. You do this by
-annotating links on your site with simple
-[microformats2](http://microformats.org/wiki/microformats2) HTML.
+One big [IndieWeb](http://indiewebcamp.com/) _raison d'être_ is using your own web site to [reply](http://indiewebcamp.com/reply), [like](http://indiewebcamp.com/like), [repost](http://indiewebcamp.com/repost), and [RSVP](http://indiewebcamp.com/rsvp) to posts and events. You do this by annotating links on your site with simple [microformats2](http://microformats.org/wiki/microformats2) HTML.
 
-Having said that, most people don't want to write HTML just to like or reply to
-something. WordPress's
-[Press This bookmarklets](http://codex.wordpress.org/Press_This) can already
-start a new post with a link to the page you're currently viewing. This code
-adds IndieWeb microformats2 markup to that link. Combined the
-[wordpress-webmention](https://github.com/pfefferle/wordpress-webmention)
-plugin, you can use this to respond to the current page with just two clicks.
+Having said that, most people don't want to write HTML just to like or reply to something. WordPress's [Press This bookmarklets](http://codex.wordpress.org/Press_This) can already start a new post with a link to the page you're currently viewing. This code adds IndieWeb microformats2 markup to that link. Combined the [wordpress-webmention](https://github.com/pfefferle/wordpress-webmention) plugin, you can use this to respond to the current page with just two clicks.
 
 <p class="left third" style="margin-right: 0">
   <a href="http://wordpress.org/">
     <img src="/wordpress_logo.png"/></a></p>
 
-What's more, if you're responding to a Facebook post or Twitter tweet, this adds
-the [Bridgy Publish](https://www.brid.gy/about#publish) link so you'll reply,
-like, favorite, retweet, or even RSVP _inside_ those social networks too.
+What's more, if you're responding to a Facebook post or Twitter tweet, this adds the [Bridgy Publish](https://www.brid.gy/about#publish) link so you'll reply, like, favorite, retweet, or even RSVP _inside_ those social networks too.
 
-The easiest way to set this up is to install the
-[wordpress-indieweb-press-this plugin](https://github.com/pfefferle/wordpress-indieweb-press-this).
+The easiest way to set this up is to install the [wordpress-indieweb-press-this plugin](https://github.com/pfefferle/wordpress-indieweb-press-this).
 
-Alternatively, you can add it to directly to your theme by putting
-[`press_this.js`](https://github.com/snarfed/misc/blob/master/press_this.js)
-in your theme directory and adding this to your theme's
-`functions.php` file:
+Alternatively, you can add it to directly to your theme by putting [`press_this.js`](https://github.com/snarfed/misc/blob/master/press_this.js) in your theme directory and adding this to your theme's `functions.php` file:
 
 ```
 function indieweb_press_this_js() {

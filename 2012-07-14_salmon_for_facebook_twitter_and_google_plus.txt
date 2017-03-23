@@ -5,32 +5,10 @@ Salmon for Facebook, Twitter, and Google+
  <a href="https://salmon-unofficial.appspot.com/">
   <img src="/salmon_logo.png" /></a></p>
 
-I've just published
-[salmon-unofficial](https://github.com/snarfed/salmon-unofficial), a stand-in
-[Salmon](http://salmon-protocol.org/) server for major sites that don't
-implement it themselves. It's up and running at
-[salmon-unofficial.appspot.com](https://salmon-unofficial.appspot.com/) with
-implementations for Facebook, Twitter, and Google+.
+I've just published [salmon-unofficial](https://github.com/snarfed/salmon-unofficial), a stand-in [Salmon](http://salmon-protocol.org/) server for major sites that don't implement it themselves. It's up and running at [salmon-unofficial.appspot.com](https://salmon-unofficial.appspot.com/) with implementations for Facebook, Twitter, and Google+.
 
-This complements the unofficial
-[WebFinger](/2012-01-16_webfinger_for_facebook_and_twitter),
-[PortableContacts](/2012-02-22_portablecontacts_for_facebook_and_twitter), and
-[ActivityStreams](/2012-03-12_activitystreams_for_facebook_and_twitter) providers
-I've published recently. They're all just little side projects, and may not be
-hugely useful on their own, but they do constitute almost a complete suite of
-[OStatus bridge apps](/2011-07-27_facebook_app_for_ostatus) for the major social
-networking sites. Only [OStatus](http://ostatus.org/about) itself is left!
+This complements the unofficial [WebFinger](/2012-01-16_webfinger_for_facebook_and_twitter), [PortableContacts](/2012-02-22_portablecontacts_for_facebook_and_twitter), and [ActivityStreams](/2012-03-12_activitystreams_for_facebook_and_twitter) providers I've published recently. They're all just little side projects, and may not be hugely useful on their own, but they do constitute almost a complete suite of [OStatus bridge apps](/2011-07-27_facebook_app_for_ostatus) for the major social networking sites. Only [OStatus](http://ostatus.org/about) itself is left!
 
-As usual with Salmon, I'm still working on interoperability.
-[StatusNet](http://status.net/) is probably the most mature, but it's still not
-handling my slaps yet. Details in
-[my notes](https://github.com/snarfed/salmon-unofficial/blob/master/notes).
-[Diaspora's implementation](https://github.com/diaspora/diaspora/wiki/Diaspora%27s-federation-protocol)
-has historically
-[skewed from the spec](https://groups.google.com/d/msg/salmon-protocol/A0pxsEl32Cc/oelFuGNun1AJ),
-but I still need to try others like [Friendica](http://friendica.com/),
-[rstatus](http://www.rstat.us/), and
-[node-ostatus](https://github.com/eschnou/node-ostatus). Let me know if you have
-experience with Salmon interop, I'd love help!
+As usual with Salmon, I'm still working on interoperability. [StatusNet](http://status.net/) is probably the most mature, but it's still not handling my slaps yet. Details in [my notes](https://github.com/snarfed/salmon-unofficial/blob/master/notes). [Diaspora's implementation](https://github.com/diaspora/diaspora/wiki/Diaspora%27s-federation-protocol) has historically [skewed from the spec](https://groups.google.com/d/msg/salmon-protocol/A0pxsEl32Cc/oelFuGNun1AJ), but I still need to try others like [Friendica](http://friendica.com/), [rstatus](http://www.rstat.us/), and [node-ostatus](https://github.com/eschnou/node-ostatus). Let me know if you have experience with Salmon interop, I'd love help!
 
 Feedback and pull requests are welcome!

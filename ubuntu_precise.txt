@@ -5,18 +5,9 @@ Ubuntu Precise
  <a href="https://help.ubuntu.com/12.04/ubuntu-help/">
   <img src="/ubuntu_precise_pangolin.png" alt="ubuntu" /></a></p>
 
-I recently upgraded from
-[Ubuntu](http://ubuntu.com/)
-[Lucid](https://help.ubuntu.com/10.04/about-ubuntu/C/) (10.04) to
-[Precise](https://help.ubuntu.com/12.04/ubuntu-help/) (12.04). Similar to
-my list of [tips for Lucid](/ubuntu_lucid)
-[and Fedora Core 3](/fedora_core_3_on_vmware), here are
-some tips for Ubuntu Precise. (I'm running it on a
-[Thinkpad X201](http://shop.lenovo.com/us/landing_pages/thinkpad/2010/X201-X201s-X201tablet)).
+I recently upgraded from [Ubuntu](http://ubuntu.com/) [Lucid](https://help.ubuntu.com/10.04/about-ubuntu/C/) (10.04) to [Precise](https://help.ubuntu.com/12.04/ubuntu-help/) (12.04). Similar to my list of [tips for Lucid](/ubuntu_lucid) [and Fedora Core 3](/fedora_core_3_on_vmware), here are some tips for Ubuntu Precise. (I'm running it on a [Thinkpad X201](http://shop.lenovo.com/us/landing_pages/thinkpad/2010/X201-X201s-X201tablet)).
 
-  * I used to use `xmodmap` to swap the Caps Lock and left Control keys, but no
-longer. It's evidently deprecated, and `setxkbmap` is now X.org's preferred way
-to manipulate keymaps. This does the trick:
+  * I used to use `xmodmap` to swap the Caps Lock and left Control keys, but no longer. It's evidently deprecated, and `setxkbmap` is now X.org's preferred way to manipulate keymaps. This does the trick:
 
     ```
     setxkbmap -option ctrl:swapcaps

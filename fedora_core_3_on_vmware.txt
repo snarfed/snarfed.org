@@ -5,58 +5,17 @@ fedora core 3 on vmware
 <a href="http://redhat.com/"><img src="/redhat.jpg"></a>
 <a href="http://fedora.redhat.com/"><img src="/fedora.png"></a>
 
-A while back, I upgraded to [VMWare](http://vmware.com/) 4.5.2 with [Fedora Core
-3](http://fedora.redhat.com/) as the guest and Windows XP as the host. It was
-much smoother than I expected, but it still needed a few tweaks. Here's what I
-did to whip it into shape.
+A while back, I upgraded to [VMWare](http://vmware.com/) 4.5.2 with [Fedora Core 3](http://fedora.redhat.com/) as the guest and Windows XP as the host. It was much smoother than I expected, but it still needed a few tweaks. Here's what I did to whip it into shape.
 
-_Since I wrote this, I've upgraded to VMware 6.0.0 and switched from FC3 to
-[Ubuntu](http://ubuntu.com/) Dapper (6.06), then later to Feisty (7.04) and
-Hardy (8.04). Almost all of these tips still apply, though!_
+_Since I wrote this, I've upgraded to VMware 6.0.0 and switched from FC3 to [Ubuntu](http://ubuntu.com/) Dapper (6.06), then later to Feisty (7.04) and Hardy (8.04). Almost all of these tips still apply, though!_
 
-  * The kernel that shipped with FC3, 2.6.9-1.667, was slower than mud. X
-windows was especially bad, and would routinely use 50-60% of the CPU for
-nothing more than typing in Emacs. Kerneltrap's
-[keithmo](http://kerneltrap.org/user/1638) provided a ["minimal" 2.6.9 kernel
-config](http://kerneltrap.org/node/4030), which I used to build my own kernel.
-It was better, but still much slower than it should have been. A few people
-[blamed the 4G/4G kernel
-patch](http://www.vmware.com/community/thread.jspa?forumID=19&threadID=16154&messageID=174172#174172),
-which can perform poorly and was dropped in later FC3 kernels. Sure enough,
-**yum update kernel** bumped me to 2.6.11-1.14_FC3, which was just as fast
-under VMWare as my old, trusty RH9.
+  * The kernel that shipped with FC3, 2.6.9-1.667, was slower than mud. X windows was especially bad, and would routinely use 50-60% of the CPU for nothing more than typing in Emacs. Kerneltrap's [keithmo](http://kerneltrap.org/user/1638) provided a ["minimal" 2.6.9 kernel config](http://kerneltrap.org/node/4030), which I used to build my own kernel. It was better, but still much slower than it should have been. A few people [blamed the 4G/4G kernel patch](http://www.vmware.com/community/thread.jspa?forumID=19&threadID=16154&messageID=174172#174172), which can perform poorly and was dropped in later FC3 kernels. Sure enough, **yum update kernel** bumped me to 2.6.11-1.14_FC3, which was just as fast under VMWare as my old, trusty RH9.
 
-  * ...except that it broke X windows. X would start and the mouse driver would
-load, but it wouldn't start my window manager or anything else. I was stuck with
-a black screen and a mouse cursor. Worse, the keyboard driver didn't load, so I
-couldn't Alt-F1 or Ctrl-Alt-Backspace to get back to a tty! I looked at
-/var/log/Xorg.0.log, but didn't see any obvious errors. After an hour of poking
-at xorg.conf and vmware-config-tools.pl, I finally tried **yum update
-xorg-x11**. It gave me version 6.8.2-1.FC3, which worked beautifully.
+  * ...except that it broke X windows. X would start and the mouse driver would load, but it wouldn't start my window manager or anything else. I was stuck with a black screen and a mouse cursor. Worse, the keyboard driver didn't load, so I couldn't Alt-F1 or Ctrl-Alt-Backspace to get back to a tty! I looked at /var/log/Xorg.0.log, but didn't see any obvious errors. After an hour of poking at xorg.conf and vmware-config-tools.pl, I finally tried **yum update xorg-x11**. It gave me version 6.8.2-1.FC3, which worked beautifully.
 
-  * The 2.6 kernel and VMWare 4.5.2 also fought over the system clock.
-Specifically, the clock in the Linux guest ran 2-5x slower than real time. This
-affects everything time-based, including the keyboard repeat delay, which is
-very annoying. The problem
-[is](http://www.vmware.com/community/thread.jspa?threadID=4254)
-[well](http://www.vmware.com/community/thread.jspa?forumID=19&threadID=6561&messageID=92759)
-[documented](http://www.vmware.com/community/thread.jspa?threadID=10158) on the
-VMWare forums, and there are a couple solutions. First, try the **clock=pit**
-kernel option. (Append it to the **kernel** line in /etc/grub.conf). If that
-doesn't work, download the source for your kernel, change the **HZ** constant in
-include/asm-i386/param.h from 1000 to 100, and rebuild. **clock=pit** didn't
-work for me, but changing **HZ** to 100 did.
+  * The 2.6 kernel and VMWare 4.5.2 also fought over the system clock. Specifically, the clock in the Linux guest ran 2-5x slower than real time. This affects everything time-based, including the keyboard repeat delay, which is very annoying. The problem [is](http://www.vmware.com/community/thread.jspa?threadID=4254) [well](http://www.vmware.com/community/thread.jspa?forumID=19&threadID=6561&messageID=92759) [documented](http://www.vmware.com/community/thread.jspa?threadID=10158) on the VMWare forums, and there are a couple solutions. First, try the **clock=pit** kernel option. (Append it to the **kernel** line in /etc/grub.conf). If that doesn't work, download the source for your kernel, change the **HZ** constant in include/asm-i386/param.h from 1000 to 100, and rebuild. **clock=pit** didn't work for me, but changing **HZ** to 100 did.
 
-  * [Shared folders](http://www.vmware.com/support/ws5/doc/ws_running_shared_folders.html)
-didn't work out of the box. Evidently, VMWare's hgfs driver doesn't get along
-with recent Linux 2.6 kernels. This is well documented on the VMWare and RedHat
-forums...and luckily, one intrepid hacker has
-[posted a fix](http://www.vmware.com/community/thread.jspa?forumID=19&threadID=7556&messageID=57559).
-To apply it,
-[download the patch](https://github.com/snarfed/misc/blob/master/patches/vmware_tools_hgfs_linux_2.6_guest.patch),
-then apply it to the vmhgfs driver source and re-run the VMWare Tools config
-script. When it asks if you want to compile the hgfs module from source, say
-yes. Here are the commands:
+  * [Shared folders](http://www.vmware.com/support/ws5/doc/ws_running_shared_folders.html) didn't work out of the box. Evidently, VMWare's hgfs driver doesn't get along with recent Linux 2.6 kernels. This is well documented on the VMWare and RedHat forums...and luckily, one intrepid hacker has [posted a fix](http://www.vmware.com/community/thread.jspa?forumID=19&threadID=7556&messageID=57559). To apply it, [download the patch](https://github.com/snarfed/misc/blob/master/patches/vmware_tools_hgfs_linux_2.6_guest.patch), then apply it to the vmhgfs driver source and re-run the VMWare Tools config script. When it asks if you want to compile the hgfs module from source, say yes. Here are the commands:
 
 ```
 tar xf /usr/lib/vmware-tools/modules/source/vmhgfs.tar

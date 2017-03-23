@@ -7,41 +7,20 @@ Indie checkin flow
 
 _Update: [I've automated this.](https://github.com/snarfed/ownyourcheckin)_
 
-Here's my
-[2015 IndieWeb launch commitment](http://tantek.com/2014/357/b1/2015-indieweb-site-launch-commitment):
-I'd like to be able to post [indie checkins](https://indiewebcamp.com/checkin)
-easily, both here and on Facebook. I'd like to use Facebook's venue database,
-and I'd like a flow that's optimized for my phone, like my current
-[reply/like/repost flow](/easy-indieweb-interactions-on-android).
+Here's my [2015 IndieWeb launch commitment](http://tantek.com/2014/357/b1/2015-indieweb-site-launch-commitment): I'd like to be able to post [indie checkins](https://indiewebcamp.com/checkin) easily, both here and on Facebook. I'd like to use Facebook's venue database, and I'd like a flow that's optimized for my phone, like my current [reply/like/repost flow](/easy-indieweb-interactions-on-android).
 
-The answer I ended up with is manual [PESOS](https://indiewebcamp.com/PESOS). I
-do it with Facebook and my WordPress
-[bookmarklets](https://snarfed.org/indieweb-press-this-bookmarklets-for-wordpress),
-but it should work just as well with other silos and web servers. Here are the
-steps:
+The answer I ended up with is manual [PESOS](https://indiewebcamp.com/PESOS). I do it with Facebook and my WordPress [bookmarklets](https://snarfed.org/indieweb-press-this-bookmarklets-for-wordpress), but it should work just as well with other silos and web servers. Here are the steps:
 
 1. Check into the venue in your silo app. Five taps for Facebook.
-1. Open the silo's venue page, then open the venue's web page. Two taps for
-   Facebook.
-1. Open a new checkin post for that venue web page in your site's editing
-   interface. Two taps with the
-   [Press This bookmarklet](https://snarfed.org/indieweb-press-this-bookmarklets-for-wordpress).
+1. Open the silo's venue page, then open the venue's web page. Two taps for Facebook.
+1. Open a new checkin post for that venue web page in your site's editing interface. Two taps with the [Press This bookmarklet](https://snarfed.org/indieweb-press-this-bookmarklets-for-wordpress).
 1. Publish the post. Usually one tap.
 
-The total cost for me is five taps for the FB checkin (without message, tags,
-etc.) plus five additional taps for the manual PESOS. Attaching a syndication
-URL costs four more taps, two to copy the FB checkin's URL and two to paste it
-into the indie checkin HTML.
+The total cost for me is five taps for the FB checkin (without message, tags, etc.) plus five additional taps for the manual PESOS. Attaching a syndication URL costs four more taps, two to copy the FB checkin's URL and two to paste it into the indie checkin HTML.
 
-Here's an example of a resulting
-[indie checkin](https://snarfed.org/2014-12-27_12198) of mine and its corresponding
-[Facebook checkin](https://www.facebook.com/photo.php?fbid=10101428540874433&set=a.725223993143.2289690.212038&type=1&theater).
+Here's an example of a resulting [indie checkin](https://snarfed.org/2014-12-27_12198) of mine and its corresponding [Facebook checkin](https://www.facebook.com/photo.php?fbid=10101428540874433&set=a.725223993143.2289690.212038&type=1&theater).
 
-The next step is to automate this. For me personally, the path of least
-resistance is to automate the PESOS, ie build a minimal OwnYourCheckin similar
-to <a class="h-card" href="http://aaronparecki.com/">Aaron</a>'s great
-[OwnYourGram](http://ownyourgram.com/).
-[And...done!](https://github.com/snarfed/ownyourcheckin)
+The next step is to automate this. For me personally, the path of least resistance is to automate the PESOS, ie build a minimal OwnYourCheckin similar to <a class="h-card" href="http://aaronparecki.com/">Aaron</a>'s great [OwnYourGram](http://ownyourgram.com/). [And...done!](https://github.com/snarfed/ownyourcheckin)
 
 <a class="u-syndication" href="http://news.indiewebcamp.com/post/snarfed.org/indie-checkin-flow">
   <em>Also on IndieNews.</em></a>

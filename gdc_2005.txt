@@ -3,9 +3,7 @@ GDC 2005
 
 <a href="http://gdconf.com/"><img src="/gdc.jpg" class="shadow"></a>
 
-I just got back from
-[GDC](http://gdconf.com/), and now that I'm finally caught up on sleep debt,
-I've posted some pictures and written up some of the highlights.
+I just got back from [GDC](http://gdconf.com/), and now that I'm finally caught up on sleep debt, I've posted some pictures and written up some of the highlights.
 
 [nggallery id=120]
 
@@ -24,167 +22,67 @@ I've posted some pictures and written up some of the highlights.
 <a name="overview"></a>
 ### Overview
 
-As always, GDC was overwhelmingly fun. I saw amazing demos, heard
-thought-provoking talks from inspiring people, and of course, partied way too
-much. It's also very involving, and I definitely got swept up in current
-industry issues like [quality of life](http://www.igda.org/qol/) and
-[skyrocketing budgets](http://www.gamesindustry.biz/content_page.php?aid=7225).
+As always, GDC was overwhelmingly fun. I saw amazing demos, heard thought-provoking talks from inspiring people, and of course, partied way too much. It's also very involving, and I definitely got swept up in current industry issues like [quality of life](http://www.igda.org/qol/) and [skyrocketing budgets](http://www.gamesindustry.biz/content_page.php?aid=7225).
 
-However, one of the best parts of this year's GDC didn't have to do with games
-at all. Games just provided the excuse to hang out with a
-[few](http://mmandel.com/)
-[good](/sam_z_glassenberg)
-[friends](http://derelictsands.com/). We don't get to hang out nearly enough,
-since they don't live in the area, so we had a lot of fun. LucasArts kids tear
-it up!
+However, one of the best parts of this year's GDC didn't have to do with games at all. Games just provided the excuse to hang out with a [few](http://mmandel.com/) [good](/sam_z_glassenberg) [friends](http://derelictsands.com/). We don't get to hang out nearly enough, since they don't live in the area, so we had a lot of fun. LucasArts kids tear it up!
 
-Anyway, if you just want previews of the games shown at GDC, [Gamespot is
-comprehensive](http://www.gamespot.com/features/gdc2005/index.html), as always.
-If you just want to play some award-winning (and free!) independent games, check
-out this year's
-[Independent Games Festival](http://gdconf.com/schedule/igf.htm).
+Anyway, if you just want previews of the games shown at GDC, [Gamespot is comprehensive](http://www.gamespot.com/features/gdc2005/index.html), as always. If you just want to play some award-winning (and free!) independent games, check out this year's [Independent Games Festival](http://gdconf.com/schedule/igf.htm).
 
 <a name="favorites"></a>
 ### My favorites
 
-For my money, the coolest, most progressive talks were fairly small: [natural
-language processing in
-games](http://www.cmpevents.com/GD05/a.asp?option=C&V=11&SessID=3943), a
-roundtable on [economics and monetary policy in
-MMOGs](http://www.cmpevents.com/GD05/a.asp?option=C&V=11&SessID=4681), and
-[synthesizing animation using
-physics](http://www.cmpevents.com/GD05/a.asp?option=C&V=11&SessID=3875).
+For my money, the coolest, most progressive talks were fairly small: [natural language processing in games](http://www.cmpevents.com/GD05/a.asp?option=C&V=11&SessID=3943), a roundtable on [economics and monetary policy in MMOGs](http://www.cmpevents.com/GD05/a.asp?option=C&V=11&SessID=4681), and [synthesizing animation using physics](http://www.cmpevents.com/GD05/a.asp?option=C&V=11&SessID=3875).
 
-The NLP talk in particular was amazing. They gave an extended demo of
-[Facade](http://www.quvu.net/interactivestory.net/#facade), their
-proof-of-concept game, which they plan to release in a month or so. I can't wait
-to try it.
+The NLP talk in particular was amazing. They gave an extended demo of [Facade](http://www.quvu.net/interactivestory.net/#facade), their proof-of-concept game, which they plan to release in a month or so. I can't wait to try it.
 
 <a name="sweeney"></a>
 ### Tim Sweeney: Unreal 3 Engine
 
-Tim Sweeney showed the
-[Unreal 3 engine and
-toolset](http://www.gamespot.com/news/2005/03/09/news_6120126.html). The demo
-was the same as last year - still mind-blowing - but the toolset, "Kismet," is
-radically new and different. Everything is visual; modelers, animators, level
-designers, and producers can all create complex, interactive, scripted content
-and gameplay without a single line of code.
+Tim Sweeney showed the [Unreal 3 engine and toolset](http://www.gamespot.com/news/2005/03/09/news_6120126.html). The demo was the same as last year - still mind-blowing - but the toolset, "Kismet," is radically new and different. Everything is visual; modelers, animators, level designers, and producers can all create complex, interactive, scripted content and gameplay without a single line of code.
 
-Sweeney used this to diss EA's claim that next-gen games will need 150-person
-teams. Microsoft has licensed Unreal 3 for a number of current and next-gen
-games, so it's more than just
-talk.
+Sweeney used this to diss EA's claim that next-gen games will need 150-person teams. Microsoft has licensed Unreal 3 for a number of current and next-gen games, so it's more than just talk.
 
 <a name="molyneux"></a>
 ### Peter Molyneux: The Room
 
-Peter Molyneux demoed [Black & White
-2](http://www.gamespot.com/news/2005/03/11/news_6120276.html), and gave a Fable
-postmortem. Both were meh. However, he also showed a Lionhead tech-demo called
-The Room, which was phenomenal. It was an sandbox, not a game, and it was
-unapologetic. The graphical level of detail, cinematography, physics, and
-interactivity were a huge step beyond Black &
-White.
+Peter Molyneux demoed [Black & White 2](http://www.gamespot.com/news/2005/03/11/news_6120276.html), and gave a Fable postmortem. Both were meh. However, he also showed a Lionhead tech-demo called The Room, which was phenomenal. It was an sandbox, not a game, and it was unapologetic. The graphical level of detail, cinematography, physics, and interactivity were a huge step beyond Black & White.
 
 <a name="dickinson"></a>
 ### Emily Dickinson
 
-The Room also appeared in the game design challenge session. Molyneux joined
-Will Wright and Clint Hocking (of Ubisoft), and they were all challenged to
-design [games based on Emily Dickinson's
-poetry](http://www.gamespot.com/news/2005/03/10/news_6120167.html). This was
-really, really entertaining. It drove home how difficult game design is, and
-just how good these three designers
-are.
+The Room also appeared in the game design challenge session. Molyneux joined Will Wright and Clint Hocking (of Ubisoft), and they were all challenged to design [games based on Emily Dickinson's poetry](http://www.gamespot.com/news/2005/03/10/news_6120167.html). This was really, really entertaining. It drove home how difficult game design is, and just how good these three designers are.
 
 <a name="wright"></a>
 ### Will Wright: Spore
 
-[Will Wright unveiled Spore](http://www.gamespy.com/articles/595/595975p1.html)
-([screenshots](http://www.gamingsteve.com/archives/2005/03/pictures_of_wil.php)),
-which is effectively the next evolutionary step for player-generated content, a
-la The Sims. Specifically, the players create the content, but it's generated
-programmatically. _All_ of it. As such, this is Will Wright's answer to the
-problem of ballooning budgets and content requirements.
+[Will Wright unveiled Spore](http://www.gamespy.com/articles/595/595975p1.html) ([screenshots](http://www.gamingsteve.com/archives/2005/03/pictures_of_wil.php)), which is effectively the next evolutionary step for player-generated content, a la The Sims. Specifically, the players create the content, but it's generated programmatically. _All_ of it. As such, this is Will Wright's answer to the problem of ballooning budgets and content requirements.
 
-Spore is basically an MMO SimEarth with a stunningly functional creature editor.
-You slowly design and evolve creatures, raise them to sentience, help them build
-cities and culture, then fly around the galaxy and check out other player's
-planets. You can interact diplomatically, econmically, and militarily.
+Spore is basically an MMO SimEarth with a stunningly functional creature editor. You slowly design and evolve creatures, raise them to sentience, help them build cities and culture, then fly around the galaxy and check out other player's planets. You can interact diplomatically, econmically, and militarily.
 
-Among other things, the way the engine handles LOD is amazing. You start out
-zoomed in onto individual cells, and you eventually zoom out to see the entire
-galaxy. He said he This felt more like the real sequel to Black & White; Black &
-White 2 felt more like a big expansion
-pack.
+Among other things, the way the engine handles LOD is amazing. You start out zoomed in onto individual cells, and you eventually zoom out to see the entire galaxy. He said he This felt more like the real sequel to Black & White; Black & White 2 felt more like a big expansion pack.
 
 <a name="allard"></a>
 ### J Allard: Xenon (ie XBox 360)
 
-There's been [a lot of
-flak](http://www.costik.com/weblog/2005_03_01_blogchive.html#111069190589189590)
-over it, but I thought [J Allard's
-keynote](http://www.gamespot.com/live/stream_asx.html?speed=300&path=ms_gdc05_pcfull.asx&playall=&letsgs=&push=0&prestream=&first)
-was really compelling. OK, the developer in me wished he'd talked more about the
-long-term future of XNA (ie unified game experiences across PC, Xbox, cell
-phones, the web, etc.). He didn't, but the short-term toolset is cool. He also
-pushed HD really hard, for who knows what reason. It's unrelated to gameplay; I
-could care less.
+There's been [a lot of flak](http://www.costik.com/weblog/2005_03_01_blogchive.html#111069190589189590) over it, but I thought [J Allard's keynote](http://www.gamespot.com/live/stream_asx.html?speed=300&path=ms_gdc05_pcfull.asx&playall=&letsgs=&push=0&prestream=&first) was really compelling. OK, the developer in me wished he'd talked more about the long-term future of XNA (ie unified game experiences across PC, Xbox, cell phones, the web, etc.). He didn't, but the short-term toolset is cool. He also pushed HD really hard, for who knows what reason. It's unrelated to gameplay; I could care less.
 
-Mandatory Live support on Xenon is definitely a big deal, though. I was
-especially interested in the Xbox Live "marketplace." It's essentially a turnkey
-micropayments solution for developers. They can charge small amounts of money
-for incremental content - $.20 for a new paint job in a racing game, $1.00 for a
-new Halo level. Allard specifically said that Microsoft will remove the
-per-transaction fees normally associated with credit cards. If that's true, this
-would be a full-fledged micropayments platform. Once it's up and running, it's
-hard to believe that Microsoft wouldn't use it for a lot more than games...
+Mandatory Live support on Xenon is definitely a big deal, though. I was especially interested in the Xbox Live "marketplace." It's essentially a turnkey micropayments solution for developers. They can charge small amounts of money for incremental content - $.20 for a new paint job in a racing game, $1.00 for a new Halo level. Allard specifically said that Microsoft will remove the per-transaction fees normally associated with credit cards. If that's true, this would be a full-fledged micropayments platform. Once it's up and running, it's hard to believe that Microsoft wouldn't use it for a lot more than games...
 
-There wasn't much other info about Xenon, but the specs have already been
-leaked. Gamespy has
-[two](http://xbox.gamespy.com/xbox/microsoft-xbox/594331p1.html)[
-articles](http://xbox.gamespy.com/xbox/microsoft-xbox/594355p1.html), and a
-reliable source told me that they're entirely accurate.
+There wasn't much other info about Xenon, but the specs have already been leaked. Gamespy has [two](http://xbox.gamespy.com/xbox/microsoft-xbox/594331p1.html)[ articles](http://xbox.gamespy.com/xbox/microsoft-xbox/594355p1.html), and a reliable source told me that they're entirely accurate.
 
-Anyway, watch [the
-video](http://www.gamespot.com/live/stream_asx.html?speed=300&path=ms_gdc05_pcfull.asx&playall=&letsgs=&push=0&prestream=&first).
-Unless you're an industry geek like me, you'll want to skip to 34:00. Oh, and
-they gave away 1000 flatscreen HDTVs. Gotta love Microsoft's developer relations
-budget. He wasn't kidding about the "HD
-Era"...
+Anyway, watch [the video](http://www.gamespot.com/live/stream_asx.html?speed=300&path=ms_gdc05_pcfull.asx&playall=&letsgs=&push=0&prestream=&first). Unless you're an industry geek like me, you'll want to skip to 34:00. Oh, and they gave away 1000 flatscreen HDTVs. Gotta love Microsoft's developer relations budget. He wasn't kidding about the "HD Era"...
 
 <a name="experimental"></a>
 ### Experimental Gameplay Workshop
 
-The experimental gameplay workshop kicked ass. Highlights included the [Indie
-Game Jam](http://indiegamejam.com/) (experienced developers get together and
-build crazy games in 4 days and no sleep), [Rag Doll Kung
-Fu](http://ragdollkungfu.com/), [Jane McGonigal](http://avantgame.com/) (of
-[4orty2wo](http://4orty2wo.com/)) talking about [I Love
-Bees](http://avantgame.com/live.htm), and the [Trader Malaki
-incident](http://www.grimwell.com/index.php?action=fullnews&id=192) in [A Tale
-In The
-Desert](http://atitd.com/).
+The experimental gameplay workshop kicked ass. Highlights included the [Indie Game Jam](http://indiegamejam.com/) (experienced developers get together and build crazy games in 4 days and no sleep), [Rag Doll Kung Fu](http://ragdollkungfu.com/), [Jane McGonigal](http://avantgame.com/) (of [4orty2wo](http://4orty2wo.com/)) talking about [I Love Bees](http://avantgame.com/live.htm), and the [Trader Malaki incident](http://www.grimwell.com/index.php?action=fullnews&id=192) in [A Tale In The Desert](http://atitd.com/).
 
 <a name="awards"></a>
 ### Awards: IGF and Developer's Choice
 
-Oh, and the [awards](http://gdconf.com/schedule/choiceawards.htm)! [Half-Life
-2](http://half-life2.com/) swept four, including best game, and [Katamari
-Damacy](http://www.namco.com/games/katamari_damacy/), [World of
-Warcraft](http://worldofwarcraft.com/), [Halo 2](http://halo2.com/), I Love
-Bees, etc. also won awards. As for the [indie
-games](http://gdconf.com/schedule/igf.htm), [Alien
-Hominid](http://alienhominid.com/),
-[N](http://www.harveycartel.org/metanet/n.html), [Wik](http://wikgame.com/),
-[Gish](http://chroniclogic.com/gish.htm), and a couple others carried the awards
-and most of the buzz.
+Oh, and the [awards](http://gdconf.com/schedule/choiceawards.htm)! [Half-Life 2](http://half-life2.com/) swept four, including best game, and [Katamari Damacy](http://www.namco.com/games/katamari_damacy/), [World of Warcraft](http://worldofwarcraft.com/), [Halo 2](http://halo2.com/), I Love Bees, etc. also won awards. As for the [indie games](http://gdconf.com/schedule/igf.htm), [Alien Hominid](http://alienhominid.com/), [N](http://www.harveycartel.org/metanet/n.html), [Wik](http://wikgame.com/), [Gish](http://chroniclogic.com/gish.htm), and a couple others carried the awards and most of the buzz.
 
-Sheesh, I'm beat, and I haven't even mentioned the parties, much less
-[Mishapalooza](/2005-04-01_mishapalooza)! Suffice it to say, it was a great
-conference, but even without the games, it was well worth it as an excuse to
-hang out and party with good friends.
+Sheesh, I'm beat, and I haven't even mentioned the parties, much less [Mishapalooza](/2005-04-01_mishapalooza)! Suffice it to say, it was a great conference, but even without the games, it was well worth it as an excuse to hang out and party with good friends.
 
 See you at [E3](http://e3expo.com/)!
 

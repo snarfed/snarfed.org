@@ -5,17 +5,8 @@ Facebook Data Store API thoughts
  <a href="http://wiki.developers.facebook.com/index.php/Data_Store_API_documentation">
   <img src="/facebook_platform_logo.png" /></a></p>
 
-On Monday,
-[Facebook](http://facebook.com/) employee
-[Haiping Zhao](http://www.facebook.com/s.php?q=haiping+zhao&n=50431648)
-quietly published a
-[Data Store API](http://wiki.developers.facebook.com/index.php/Data_Store_API_documentation)
-on the
-[Facebook developer wiki](http://wiki.developers.facebook.com/).
+On Monday, [Facebook](http://facebook.com/) employee [Haiping Zhao](http://www.facebook.com/s.php?q=haiping+zhao&n=50431648) quietly published a [Data Store API](http://wiki.developers.facebook.com/index.php/Data_Store_API_documentation) on the [Facebook developer wiki](http://wiki.developers.facebook.com/).
 
-It's preliminary, and still in closed beta, but it marks a milestone in the
-evolution of the Facebook platform. It could be an indication of the
-direction Facebook plans to take the platform in the future.
+It's preliminary, and still in closed beta, but it marks a milestone in the evolution of the Facebook platform. It could be an indication of the direction Facebook plans to take the platform in the future.
 
-I've posted some of my
-[initial thoughts...](/facebook_data_store_api_thoughts)
+I've posted some of my [initial thoughts...](/facebook_data_store_api_thoughts)

@@ -5,20 +5,11 @@ Facebook Data Store API Thoughts
  <a href="http://wiki.developers.facebook.com/index.php/Data_Store_API_documentation">
   <img src="/facebook_platform_logo.png" /></a></p>
 
-On Monday,
-[Facebook](http://facebook.com/) employee
-[Haiping Zhao](http://www.facebook.com/s.php?q=haiping+zhao&n=50431648)
-quietly published a
-[Data Store API](http://wiki.developers.facebook.com/index.php/Data_Store_API_documentation)
-on the
-[Facebook developer wiki](http://wiki.developers.facebook.com/).
+On Monday, [Facebook](http://facebook.com/) employee [Haiping Zhao](http://www.facebook.com/s.php?q=haiping+zhao&n=50431648) quietly published a [Data Store API](http://wiki.developers.facebook.com/index.php/Data_Store_API_documentation) on the [Facebook developer wiki](http://wiki.developers.facebook.com/).
 
-It's preliminary, and still in closed beta, but it marks a milestone in the
-evolution of the Facebook platform. It could be an indication of the
-direction Facebook plans to take the platform in the future.
+It's preliminary, and still in closed beta, but it marks a milestone in the evolution of the Facebook platform. It could be an indication of the direction Facebook plans to take the platform in the future.
 
-Here are some of my thoughts on this API, as well as a few responses from
-Haiping, in _italics_. Feel free to [add your own](#comment-anchor)!
+Here are some of my thoughts on this API, as well as a few responses from Haiping, in _italics_. Feel free to [add your own](#comment-anchor)!
 
 ### Contents
 [Introduction](#intro)  
@@ -31,58 +22,24 @@ Haiping, in _italics_. Feel free to [add your own](#comment-anchor)!
 <a name="intro"></a>
 ### Introduction
 
-The Facebook data store is a very simple hosted database, accessible
-by a
-[RESTful](http://en.wikipedia.org/wiki/Representational_State_Transfer)
-[CRUD](http://en.wikipedia.org/wiki/CRUD_\(acronym\)) API. It supports both XML and JSON. It requires users to define their schema, and has basic create, read, update, and
-delete operations, but no structured queries, full text search, or transactions.
+The Facebook data store is a very simple hosted database, accessible by a [RESTful](http://en.wikipedia.org/wiki/Representational_State_Transfer) [CRUD](http://en.wikipedia.org/wiki/CRUD_\(acronym\)) API. It supports both XML and JSON. It requires users to define their schema, and has basic create, read, update, and delete operations, but no structured queries, full text search, or transactions.
 
-The one truly interesting feature it does provide is
-[associations](#associations), which are foreign keys, with all the usual
-constraints, but at the _row_ level, not the table level. These may be
-powerful enough to provide an alternative to querying on property values.
+The one truly interesting feature it does provide is [associations](#associations), which are foreign keys, with all the usual constraints, but at the _row_ level, not the table level. These may be powerful enough to provide an alternative to querying on property values.
 
-So far, the API is very limited. Still, the sources of inspiration - SQL and
-social networking - are obvious even in this first draft. It will be
-interesting to see how it evolves.
+So far, the API is very limited. Still, the sources of inspiration - SQL and social networking - are obvious even in this first draft. It will be interesting to see how it evolves.
 
 <a name="schema"></a>
 ### Schema definition
 
-As with most databases, Facebook apps must define their schema up front. A
-schema consists of
-[object types](http://wiki.developers.facebook.com/index.php/Data.createObjectType),
-ie tables, and
-[properties](http://wiki.developers.facebook.com/index.php/Data.defineObjectProperty),
-ie columns. Object types and property names are strings, alphanumeric plus
-underscores, 32 characters or less. Property values can be small strings, large
-text blobs, or integers. It looks like any or all of an object's properties can
-be unset, as if they were `NULLABLE` SQL columns.
+As with most databases, Facebook apps must define their schema up front. A schema consists of [object types](http://wiki.developers.facebook.com/index.php/Data.createObjectType), ie tables, and [properties](http://wiki.developers.facebook.com/index.php/Data.defineObjectProperty), ie columns. Object types and property names are strings, alphanumeric plus underscores, 32 characters or less. Property values can be small strings, large text blobs, or integers. It looks like any or all of an object's properties can be unset, as if they were `NULLABLE` SQL columns.
 
-Schemas can be modified at runtime. Object types and properties can be
-queried, added, removed, and renamed. These are similar to the SQL
-`CREATE TABLE`, `ALTER TABLE`, AND `DROP TABLE` commands; in particular,
-[`dropObjectType`](http://wiki.developers.facebook.com/index.php/Data.dropObjectType)
-and
-[`undefineObjectProperty`](http://wiki.developers.facebook.com/index.php/Data.undefineObjectProperty)
-delete existing objects and property values along with the corresponding
-object types and property definitions.
+Schemas can be modified at runtime. Object types and properties can be queried, added, removed, and renamed. These are similar to the SQL `CREATE TABLE`, `ALTER TABLE`, AND `DROP TABLE` commands; in particular, [`dropObjectType`](http://wiki.developers.facebook.com/index.php/Data.dropObjectType) and [`undefineObjectProperty`](http://wiki.developers.facebook.com/index.php/Data.undefineObjectProperty) delete existing objects and property values along with the corresponding object types and property definitions.
 
 Questions:
 
-The description of the
-[`properties`](http://wiki.developers.facebook.com/index.php/Data.createObject#Parameters)
-parameter in
-[`createObject`](http://wiki.developers.facebook.com/index.php/Data.createObject)
-and
-[`updateObject`](http://wiki.developers.facebook.com/index.php/Data.updateObject)
-seems to imply that some or all any or all of an object's properties may be
-undefined. Is that true?
+The description of the [`properties`](http://wiki.developers.facebook.com/index.php/Data.createObject#Parameters) parameter in [`createObject`](http://wiki.developers.facebook.com/index.php/Data.createObject) and [`updateObject`](http://wiki.developers.facebook.com/index.php/Data.updateObject) seems to imply that some or all any or all of an object's properties may be undefined. Is that true?
 
-In most calls that handle property values, like setObjectProperty and
-set/getHashValue, properties are sent and returned as strings. Does that mean
-developers need to serialize integer properties manually? If so, that's
-unfortunate at best, and dangerous at worst.
+In most calls that handle property values, like setObjectProperty and set/getHashValue, properties are sent and returned as strings. Does that mean developers need to serialize integer properties manually? If so, that's unfortunate at best, and dangerous at worst.
 
 > We were facing a decision between a strongly typed model vs. a
 > weakly typed model in handling return values.  
@@ -90,33 +47,15 @@ unfortunate at best, and dangerous at worst.
 <a name="data_access"></a>
 ### Data access 
 
-The API includes the standard
-[create](http://wiki.developers.facebook.com/index.php/Data.createObject),
-[get](http://wiki.developers.facebook.com/index.php/Data.getObject),
-[update](http://wiki.developers.facebook.com/index.php/Data.updateObject),
-and
-[delete](http://wiki.developers.facebook.com/index.php/Data.deleteObject)
-operations. In addition, there are get and delete operations that can operate
-on multiple objects, and operations that get and set a subset of an object's
-properties. There are even dedicated objects for getting and setting a single
-property. Whether that's syntactic sugar or API bloat is left to the reader.
+The API includes the standard [create](http://wiki.developers.facebook.com/index.php/Data.createObject), [get](http://wiki.developers.facebook.com/index.php/Data.getObject), [update](http://wiki.developers.facebook.com/index.php/Data.updateObject), and [delete](http://wiki.developers.facebook.com/index.php/Data.deleteObject) operations. In addition, there are get and delete operations that can operate on multiple objects, and operations that get and set a subset of an object's properties. There are even dedicated objects for getting and setting a single property. Whether that's syntactic sugar or API bloat is left to the reader.
 
-When an object is created, it's assigned a 64-bit integer
-[`fbid`](http://wiki.developers.facebook.com/index.php/Data.createObject#Return_Value),
-which serves as its primary key. The `fbid` namespace and characteristics are
-still unclear, but they're used in other parts of the Facebook API, outside of
-the data store.
+When an object is created, it's assigned a 64-bit integer [`fbid`](http://wiki.developers.facebook.com/index.php/Data.createObject#Return_Value), which serves as its primary key. The `fbid` namespace and characteristics are still unclear, but they're used in other parts of the Facebook API, outside of the data store.
 
-Objects can also be identified by
-[hash keys](http://wiki.developers.facebook.com/index.php/Data.getHashValue).
-Hash keys are described as "string object identifiers," but there's not much
-information on them beyond that. They may just be a string encoding of the
-`fbid`, for use in URLs and other string contexts.
+Objects can also be identified by [hash keys](http://wiki.developers.facebook.com/index.php/Data.getHashValue). Hash keys are described as "string object identifiers," but there's not much information on them beyond that. They may just be a string encoding of the `fbid`, for use in URLs and other string contexts.
 
 Questions:
 
-How are `fbid`s allocated? Is there a single global `fbid` namespace, or
-is it per app?
+How are `fbid`s allocated? Is there a single global `fbid` namespace, or is it per app?
 
 > An `fbid` is a GUID, a globally unique identifier. Well, it's actually a
 > UUID, universally unique identifier, in case Mars has life and computers.
@@ -126,17 +65,13 @@ What are hash keys? When would they be used?
 > It's an arbitrary string application defines. So, it could be a URL, if an
 > application elects to do so.
 
-General-purpose queries based on property values are an important feature in
-most data stores, but they're conspicuously absent here. Will they ever be
-added?
+General-purpose queries based on property values are an important feature in most data stores, but they're conspicuously absent here. Will they ever be added?
 
 > In fact, you could do that through
 > [FQL](http://developers.facebook.com/documentation.php?doc=fql). In FQL, any
 > property can appear in WHERE clause.
 
-What are the practical limits on scaling? How many objects could an app
-realistically store? How many object types? Properties per object type?
-Associations? etc.
+What are the practical limits on scaling? How many objects could an app realistically store? How many object types? Properties per object type? Associations? etc.
 
 > Facebook Data Store API is designed to be scalable, although we will have
 > resource limit imposed to make fair use between different applications. Quota
@@ -146,21 +81,13 @@ Associations? etc.
 <a name="transactions"></a>
 ### Transactions
 
-Despite the heading of this section, there are no general-purpose transactions
-in the Facebook data store API. Fortunately, there is an
-[atomic increment operation](http://wiki.developers.facebook.com/index.php/Data.incHashValue).
-It can increment or decrement an integer property value by any amount.
-This is obviously no substitute for full-fledged transactions, but it can
-handle a surprising number of use cases.
+Despite the heading of this section, there are no general-purpose transactions in the Facebook data store API. Fortunately, there is an [atomic increment operation](http://wiki.developers.facebook.com/index.php/Data.incHashValue). It can increment or decrement an integer property value by any amount. This is obviously no substitute for full-fledged transactions, but it can handle a surprising number of use cases.
 
-One odd quirk is that the increment operation _requires_ a hash key. Unlike
-the CRUD operations, there's no corresponding increment operation that takes
-an `fbid`.
+One odd quirk is that the increment operation _requires_ a hash key. Unlike the CRUD operations, there's no corresponding increment operation that takes an `fbid`.
 
 Questions:
 
-Will more transactional capabilities be added? Or is atomic increment the
-best we can hope for?
+Will more transactional capabilities be added? Or is atomic increment the best we can hope for?
 
 > Not in consideration currently, due to distributed nature of data objects.
 
@@ -168,68 +95,27 @@ best we can hope for?
 <a name="associations"></a>
 ### Associations
 
-[Associations](http://wiki.developers.facebook.com/index.php/Data_Store_API_documentation#Association_Data_Definition_API)
-are by far the most intriguing part of the data store API. They're
-[foreign keys](http://en.wikipedia.org/wiki/Foreign_key),
-but they can be one-way or bidirectional, and, unlike SQL, they're set at
-the _object_ level instead of the object type level.
+[Associations](http://wiki.developers.facebook.com/index.php/Data_Store_API_documentation#Association_Data_Definition_API) are by far the most intriguing part of the data store API. They're [foreign keys](http://en.wikipedia.org/wiki/Foreign_key), but they can be one-way or bidirectional, and, unlike SQL, they're set at the _object_ level instead of the object type level.
 
-Similar to object types and properties, associations are a kind of
-[schema](#schema). Association types have string names, they must be
-[defined](http://wiki.developers.facebook.com/index.php/Data.defineAssociation)
-ahead of time, and they can be queried and modified on the fly. 
+Similar to object types and properties, associations are a kind of [schema](#schema). Association types have string names, they must be [defined](http://wiki.developers.facebook.com/index.php/Data.defineAssociation) ahead of time, and they can be queried and modified on the fly. 
 
-More importantly, associations have properties and constraints traditionally
-found in both foreign keys and graph theory. They can be one-way or two-way,
-and two-way associations can be _symmetric_, where A=>B is equivalent to B=>A,
-or _asymmetric_, where A=>B and B=>A mean different things, and can have
-different names. Also, each endpoint of an association may be classified as
-_unique_, which enforces a one-to-many or many-to-one relationship, as opposed
-to the default many-to-many. See the
-[`defineAssociation`](http://wiki.developers.facebook.com/index.php/Data.defineAssociation)
-page for more.
+More importantly, associations have properties and constraints traditionally found in both foreign keys and graph theory. They can be one-way or two-way, and two-way associations can be _symmetric_, where A=>B is equivalent to B=>A, or _asymmetric_, where A=>B and B=>A mean different things, and can have different names. Also, each endpoint of an association may be classified as _unique_, which enforces a one-to-many or many-to-one relationship, as opposed to the default many-to-many. See the [`defineAssociation`](http://wiki.developers.facebook.com/index.php/Data.defineAssociation) page for more.
 
-Associations can be
-[set](http://wiki.developers.facebook.com/index.php/Data.setAssociation),
-[removed](http://wiki.developers.facebook.com/index.php/Data.removeAssociation),
-and
-[queried](http://wiki.developers.facebook.com/index.php/Data.getAssociatedObjects)
-in the expected ways. In particular, there are operations to get
-[all associations between _two_ objects](http://wiki.developers.facebook.com/index.php/Data.getAssociations)
-as well as
-[all objects associated with a given object](http://wiki.developers.facebook.com/index.php/Data.getAssociatedObjects),
-along with corresponding operations to get the _number_ of associations and
-associated objects.
+Associations can be [set](http://wiki.developers.facebook.com/index.php/Data.setAssociation), [removed](http://wiki.developers.facebook.com/index.php/Data.removeAssociation), and [queried](http://wiki.developers.facebook.com/index.php/Data.getAssociatedObjects) in the expected ways. In particular, there are operations to get [all associations between _two_ objects](http://wiki.developers.facebook.com/index.php/Data.getAssociations) as well as [all objects associated with a given object](http://wiki.developers.facebook.com/index.php/Data.getAssociatedObjects), along with corresponding operations to get the _number_ of associations and associated objects.
 
-It's easy to see how these kinds of object-level relationships can be very
-powerful in a social networking application. Apps can use these to define
-custom relationships and connections between people beyond the existing ones
-that Facebook provides. Beyond that, apps could let users create objects of any
-type - classes, books, movies, pets - and then connect them to people, and to
-each other, in new ways.
+It's easy to see how these kinds of object-level relationships can be very powerful in a social networking application. Apps can use these to define custom relationships and connections between people beyond the existing ones that Facebook provides. Beyond that, apps could let users create objects of any type - classes, books, movies, pets - and then connect them to people, and to each other, in new ways.
 
 Questions:
 
-Even in this first draft, associations are very powerful and useful. It's
-interesting that they're handled separately from properties, though, and that
-they can't be set automatically, similar to traditional foreign keys. If that
-was added, would it be a net gain?
+Even in this first draft, associations are very powerful and useful. It's interesting that they're handled separately from properties, though, and that they can't be set automatically, similar to traditional foreign keys. If that was added, would it be a net gain?
 
-What happens if i create an invalid association, e.g. one that violates a
-uniqueness constraint? The
-[setAssociation](http://wiki.developers.facebook.com/index.php/Data.setAssociation)
-calls don't have return values, and there aren't any association-specific error
-codes.
+What happens if i create an invalid association, e.g. one that violates a uniqueness constraint? The [setAssociation](http://wiki.developers.facebook.com/index.php/Data.setAssociation) calls don't have return values, and there aren't any association-specific error codes.
 
 > It returns an invalid operation error, although we may consider to special
 > case the error code.
 
 
-Are the counting methods efficient? Specifically, are they roughly constant
-time, or linear? I can see how they'd be very useful for large associations,
-but if they're no faster than calling
-[`getAssociatedObjects`](http://wiki.developers.facebook.com/index.php/Data.getAssociatedObjects),
-that makes them less useful.
+Are the counting methods efficient? Specifically, are they roughly constant time, or linear? I can see how they'd be very useful for large associations, but if they're no faster than calling [`getAssociatedObjects`](http://wiki.developers.facebook.com/index.php/Data.getAssociatedObjects), that makes them less useful.
 
 > Constant time. This should be documented. There is one more difference from
 > calling getAssociatedObjects() then count, because we have an upper limit on
@@ -240,11 +126,6 @@ that makes them less useful.
 <a name="preferences"></a>
 ### Preferences
 
-The API has separate, dedicated storage for
-[per-app user preferences](http://wiki.developers.facebook.com/index.php/Data_Store_API_documentation#User_Preference_API).
-A user preference is simply a string key/value pair. Unlike objects and
-properties, though, preference names don't have to be defined up front, and
-different users can have different preference names as well as values.
+The API has separate, dedicated storage for [per-app user preferences](http://wiki.developers.facebook.com/index.php/Data_Store_API_documentation#User_Preference_API). A user preference is simply a string key/value pair. Unlike objects and properties, though, preference names don't have to be defined up front, and different users can have different preference names as well as values.
 
-Apart from that twist, the preferences API is fairly straightforward and
-unsurprising.
+Apart from that twist, the preferences API is fairly straightforward and unsurprising.

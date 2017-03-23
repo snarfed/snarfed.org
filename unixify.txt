@@ -3,18 +3,10 @@ unixify
 
 <p class="right"><img class="shadow" src="/unix.jpg" /></p>
 
-[`unixify.sh`](https://github.com/snarfed/misc/blob/master/unixify.sh) is a simple shell
-script I use to sanitize files people send me, often from other operating
-systems.
+[`unixify.sh`](https://github.com/snarfed/misc/blob/master/unixify.sh) is a simple shell script I use to sanitize files people send me, often from other operating systems.
 
-It cleans up file names by removing most punctuation and converting spaces to
-underscores and upper case to lower case. For example, it converts
-*Foo, Bar, & Baz (Special).JPEG* to *foo_bar_and_baz_special.jpg*.
+It cleans up file names by removing most punctuation and converting spaces to underscores and upper case to lower case. For example, it converts *Foo, Bar, & Baz (Special).JPEG* to *foo_bar_and_baz_special.jpg*.
 
-It also re-compresses images with [ImageMagick](http://www.imagemagick.org/),
-removes carriage returns from DOS and Windows style CRLF line endings, and
-converts Microsoft Word documents to plain text with
-[antiword](http://www.winfield.demon.nl/).
+It also re-compresses images with [ImageMagick](http://www.imagemagick.org/), removes carriage returns from DOS and Windows style CRLF line endings, and converts Microsoft Word documents to plain text with [antiword](http://www.winfield.demon.nl/).
 
-It supports dry runs via the `-n` flag, which just prints what would be done
-instead of actually doing it.
+It supports dry runs via the `-n` flag, which just prints what would be done instead of actually doing it.

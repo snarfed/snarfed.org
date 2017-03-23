@@ -5,19 +5,11 @@ extract SSL server certificates with openssl s_client
  <a href="http://www.openssl.org/docs/apps/s_client.html">
   <img src="/ssl_lock.jpg" /></a></p>
 
-Ever need to troubleshoot SSL connectivity against a server that you don't own?
-No problem! Use the [s_client](http://www.openssl.org/docs/apps/s_client.html)
-command line tool that comes with [OpenSSL](http://www.openssl.org/).
+Ever need to troubleshoot SSL connectivity against a server that you don't own? No problem! Use the [s_client](http://www.openssl.org/docs/apps/s_client.html) command line tool that comes with [OpenSSL](http://www.openssl.org/).
 
-It negotiates an SSL connection, step by step, and prints debugging info in
-excruciating detail. It also includes a dump of the server-side SSL certificate
-in PEM format. You can use that certificate to test offline, import into your
-client-side keystore, or anything else.
+It negotiates an SSL connection, step by step, and prints debugging info in excruciating detail. It also includes a dump of the server-side SSL certificate in PEM format. You can use that certificate to test offline, import into your client-side keystore, or anything else.
 
-For example, say you're troubleshooting a connection to
-[https://example.com/](https://example.com/). You can use this (\*nix) command
-line to connect on port 443 and examine the SSL handshake and server-side
-certificate:
+For example, say you're troubleshooting a connection to [https://example.com/](https://example.com/). You can use this (\*nix) command line to connect on port 443 and examine the SSL handshake and server-side certificate:
 
 ```
 openssl s_client -connect example.com:443

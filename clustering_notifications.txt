@@ -4,48 +4,25 @@ Clustering notifications
 <p class="right">
   <img src="/stylized_cloud.jpg" /></p>
 
-[Notifications](http://indiewebcamp.com/notifications) are a ubiquitous part of
-modern technology. You're notified when you get a message, reply, or like, when
-your car is arriving, when your food is on its way, when it's about to rain,
-even when someone swipes right and wants to go out with you.
+[Notifications](http://indiewebcamp.com/notifications) are a ubiquitous part of modern technology. You're notified when you get a message, reply, or like, when your car is arriving, when your food is on its way, when it's about to rain, even when someone swipes right and wants to go out with you.
 
-At this point, many of us have reached peak notification and
-[feel overloaded](/2013-05-31_fighting-information-overload-and-beyond), which
-is bad news for apps and services that want to
-[respect our attention and time](http://calmtechnology.com/) but still notify us
-conscientiously.
+At this point, many of us have reached peak notification and [feel overloaded](/2013-05-31_fighting-information-overload-and-beyond), which is bad news for apps and services that want to [respect our attention and time](http://calmtechnology.com/) but still notify us conscientiously.
 
-The standard solution is batching, aka clustering.
-[Aaron](http://aaronparecki.com/) and I
-[thought through this a while back](https://github.com/aaronpk/webmention.io/issues/39)
-for [webmention.io](http://webmention.io/)'s IRC notifications, and the design
-is useful and general enough that I figured I'd write it up here. It's most
-useful for notifications with multiple different parameters. Say a notification
-has a _source_, e.g. a user, and a _target_, e.g. a post. Here's the logic.
+The standard solution is batching, aka clustering. [Aaron](http://aaronparecki.com/) and I [thought through this a while back](https://github.com/aaronpk/webmention.io/issues/39) for [webmention.io](http://webmention.io/)'s IRC notifications, and the design is useful and general enough that I figured I'd write it up here. It's most useful for notifications with multiple different parameters. Say a notification has a _source_, e.g. a user, and a _target_, e.g. a post. Here's the logic.
 
 When you generate a notification:
 * Store it in two in-memory clusters, one for the source and one for the target.
 * Start a 60s timer.
 
 When the timer expires:
-* Optional: if the last notification in either cluster arrived in the last
-  10s, extend the timer another 60s, up to 5m total. This is a crude heuristic
-  for detecting clusters that are likely to accumulate more notifications soon.
-* Otherwise, examine the source and target clusters and pick the one with the
-  most notifications.
+* Optional: if the last notification in either cluster arrived in the last 10s, extend the timer another 60s, up to 5m total. This is a crude heuristic for detecting clusters that are likely to accumulate more notifications soon.
+* Otherwise, examine the source and target clusters and pick the one with the most notifications.
 * Send that cluster's notifications as a single combined notification.
 * Clear the cluster.
-* Remove each of those notifications from its _other_ cluster too, to avoid
-  sending duplicates.
+* Remove each of those notifications from its _other_ cluster too, to avoid sending duplicates.
 
-The time durations are obviously arbitrary. You can extend them to cluster more
-aggressively, or reduce them to notify more quickly at the expense of more
-individual notifications. You can also parametize them on notification details,
-e.g. you could send replies immediately but cluster likes.
+The time durations are obviously arbitrary. You can extend them to cluster more aggressively, or reduce them to notify more quickly at the expense of more individual notifications. You can also parametize them on notification details, e.g. you could send replies immediately but cluster likes.
 
-You'll also want to put some thought into
-[how to render combined notifications](https://github.com/aaronpk/webmention.io/issues/39#issuecomment-127048277),
-how many sources or targets to include before ellipsizing, etc. That's usually
-domain specific. Still, hopefully this will help you get started!
+You'll also want to put some thought into [how to render combined notifications](https://github.com/aaronpk/webmention.io/issues/39#issuecomment-127048277), how many sources or targets to include before ellipsizing, etc. That's usually domain specific. Still, hopefully this will help you get started!
 
 _<a class="u-syndication" href="http://news.indiewebcamp.com/en/snarfed.org/clustering-notifications">Also on IndieNews.</a>_

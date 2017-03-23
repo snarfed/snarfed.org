@@ -5,10 +5,7 @@ flickcurl_download_set.sh
  <a href="http://www.flickr.com/">
   <img src="/flickr.jpg" /></a></p>
 
-[flickcurl](http://librdf.org/flickcurl/), a command line utility for
-interacting with [Flickr](http://www.flickr.com/), is awesome. I use it to
-download friends' photos. Here's a bash script I use to automate the process of
-downloading all of the photos in a set:
+[flickcurl](http://librdf.org/flickcurl/), a command line utility for interacting with [Flickr](http://www.flickr.com/), is awesome. I use it to download friends' photos. Here's a bash script I use to automate the process of downloading all of the photos in a set:
 
 ```
 #!/bin/bash

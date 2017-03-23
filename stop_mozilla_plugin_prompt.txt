@@ -9,22 +9,15 @@ stop mozilla plugin prompt
 <a href="http://bugzilla.org/"><img src="/bugzilla.jpg"></a>
 </p>
 
-Expanded
-from a [mozdev.org
-FAQ:](http://plugindoc.mozdev.org/faqs/firefox-linux.html#qa-nullplugin)
+Expanded from a [mozdev.org FAQ:](http://plugindoc.mozdev.org/faqs/firefox-linux.html#qa-nullplugin)
 
 **Q:** How do I stop Mozilla Firefox from prompting me to install a plugin?
 
-**A:** Delete the libnullplugin.so from your Mozilla Firefox plugins directory.
-You may have to do this as root if you do not have write access to your Mozilla
-Firefox installation from your user account.
+**A:** Delete the libnullplugin.so from your Mozilla Firefox plugins directory. You may have to do this as root if you do not have write access to your Mozilla Firefox installation from your user account.
 
-**Q:** But now Mozilla just shows blank space where plugin content would be. How
-do I know when I'm missing plugin content? (Or, how do I know when to feel warm
-and fuzzy because I successfully avoided a flash banner ad?)
+**Q:** But now Mozilla just shows blank space where plugin content would be. How do I know when I'm missing plugin content? (Or, how do I know when to feel warm and fuzzy because I successfully avoided a flash banner ad?)
 
-**A:** Add this CSS to your
-[userContent.css](http://texturizer.net/firefox/edit.html) file:
+**A:** Add this CSS to your [userContent.css](http://texturizer.net/firefox/edit.html) file:
 
 ```
 embed {

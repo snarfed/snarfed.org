@@ -6,8 +6,7 @@ App Engine global transactions
     <img src="/app_engine_logo_final.png" /></a></p>
 
 Originally posted as an
-<a class="u-syndication" href="http://stackoverflow.com/a/17778682/186123">answer</a> to
-[this StackOverflow question](http://stackoverflow.com/questions/17721895/gae-transaction-failure-and-idempotency/22052961):
+<a class="u-syndication" href="http://stackoverflow.com/a/17778682/186123">answer</a> to [this StackOverflow question](http://stackoverflow.com/questions/17721895/gae-transaction-failure-and-idempotency/22052961):
 
 > The [Google App Engine](http://appengine.google.com/) documentation contains
 > this paragraph:
@@ -30,47 +29,14 @@ Originally posted as an
 > one click generating two "likes." Surely there is some way to prevent this with
 > GAE?
 
-Dan Wilkerson, Simon Goldsmith, et al. designed a thorough
-[global transaction system](http://arxiv.org/abs/1106.3325) on top of
-[App Engine](http://appengine.google.com/)'s local (per entity group)
-transactions. At a high level, it uses techniques similar to the GUID one you
-describe. Dan dealt with "submarine writes," the transactions you describe that
-report failure but later surface as succeeded, as well as many other theoretical
-and practical details of the datastore. Erick Armbrust implemented Dan's design
-in [tapioca-orm](http://code.google.com/p/tapioca-orm/).
+Dan Wilkerson, Simon Goldsmith, et al. designed a thorough [global transaction system](http://arxiv.org/abs/1106.3325) on top of [App Engine](http://appengine.google.com/)'s local (per entity group) transactions. At a high level, it uses techniques similar to the GUID one you describe. Dan dealt with "submarine writes," the transactions you describe that report failure but later surface as succeeded, as well as many other theoretical and practical details of the datastore. Erick Armbrust implemented Dan's design in [tapioca-orm](http://code.google.com/p/tapioca-orm/).
 
-I don't necessarily recommend that you implement his design or use tapioca-orm,
-but you'd definitely be interested in the research.
+I don't necessarily recommend that you implement his design or use tapioca-orm, but you'd definitely be interested in the research.
 
-In response to your questions: plenty of people implement GAE apps that use the
-datastore without idempotency. It's only important when you need transactions
-with certain kinds of guarantees like the ones you describe. It's definitely
-important to understand when you do need them, but you often don't.
+In response to your questions: plenty of people implement GAE apps that use the datastore without idempotency. It's only important when you need transactions with certain kinds of guarantees like the ones you describe. It's definitely important to understand when you do need them, but you often don't.
 
-The datastore is implemented on top of Megastore, which is described in depth
-[in this paper](http://research.google.com/pubs/pub36971.html). In short, it
-uses
-[multi-version concurrency control](http://en.wikipedia.org/wiki/Multiversion_concurrency_control)
-within each entity group and
-[Paxos](http://en.wikipedia.org/wiki/Paxos_%28computer_science%29) for
-replication across datacenters, both of which can contribute to submarine
-writes. I don't know if there are public numbers on submarine write frequency in
-the datastore, but if there are, searches with these terms and on the datastore
-mailing lists should find them.
+The datastore is implemented on top of Megastore, which is described in depth [in this paper](http://research.google.com/pubs/pub36971.html). In short, it uses [multi-version concurrency control](http://en.wikipedia.org/wiki/Multiversion_concurrency_control) within each entity group and [Paxos](http://en.wikipedia.org/wiki/Paxos_%28computer_science%29) for replication across datacenters, both of which can contribute to submarine writes. I don't know if there are public numbers on submarine write frequency in the datastore, but if there are, searches with these terms and on the datastore mailing lists should find them.
 
-Amazon's S3 isn't really a comparable system; it's more of a CDN than a
-distributed database. [Amazon's SimpleDB](/amazon_simpledb_thoughts) is
-comparable. It originally only provided
-[eventual consistency](http://aws.amazon.com/simpledb/#eventually-consistent),
-and eventually added a very limited kind of transactions they call
-[conditional writes](http://aws.amazon.com/simpledb/#consistent), but it doesn't
-have true transactions. Other NoSQL databases (Redis, Mongo, CouchDB, etc.) have
-different variations on transactions and consistency.
+Amazon's S3 isn't really a comparable system; it's more of a CDN than a distributed database. [Amazon's SimpleDB](/amazon_simpledb_thoughts) is comparable. It originally only provided [eventual consistency](http://aws.amazon.com/simpledb/#eventually-consistent), and eventually added a very limited kind of transactions they call [conditional writes](http://aws.amazon.com/simpledb/#consistent), but it doesn't have true transactions. Other NoSQL databases (Redis, Mongo, CouchDB, etc.) have different variations on transactions and consistency.
 
-Basically, there's always a tradeoff in distributed databases between scale,
-transaction breadth, and strength of consistency guarantees. This is best known
-by Eric Brewer's [CAP theorem](http://en.wikipedia.org/wiki/CAP_theorem), which
-says the three axes of the tradeoff are consistency, availability, and partition
-tolerance. More details in my
-[Transactions Across Datacenters](/transactions_across_datacenters_io.html)
-talk.
+Basically, there's always a tradeoff in distributed databases between scale, transaction breadth, and strength of consistency guarantees. This is best known by Eric Brewer's [CAP theorem](http://en.wikipedia.org/wiki/CAP_theorem), which says the three axes of the tradeoff are consistency, availability, and partition tolerance. More details in my [Transactions Across Datacenters](/transactions_across_datacenters_io.html) talk.

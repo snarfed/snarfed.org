@@ -5,23 +5,11 @@ IndieWeb people: update your webmention discovery
  <a href="http://webmention.org/">
   <img src="/webmention_logo.png" /></a></p>
 
-Hey [IndieWeb](http://indiewebcamp.com/) developers! We recently added an
-important feature to the [Webmention](http://webmention.org/) spec:
-[discovery by `<a>` tag](https://github.com/converspace/webmention/blob/master/README.md#sender-discovers-receiver-endpoint).
-If you maintain webmention code or have an IndieWeb site that sends webmentions,
-please add this! It should be just a few lines of code;
-[here's an example](https://github.com/vrypan/webmention-tools/commit/f29879a29617960f3a680cba015af2858d0cd167).
+Hey [IndieWeb](http://indiewebcamp.com/) developers! We recently added an important feature to the [Webmention](http://webmention.org/) spec: [discovery by `<a>` tag](https://github.com/converspace/webmention/blob/master/README.md#sender-discovers-receiver-endpoint). If you maintain webmention code or have an IndieWeb site that sends webmentions, please add this! It should be just a few lines of code; [here's an example](https://github.com/vrypan/webmention-tools/commit/f29879a29617960f3a680cba015af2858d0cd167).
 
-Originally, web sites could advertise their webmention endpoint in the `Link`
-HTTP header or in a `<link rel="webmention">` HTML tag. This change adds the
-option to use `<a rel="webmention">` too. This is useful on hosts that don't
-allow custom HTTP headers or `<link>` tags,
-[notably WordPress.com](http://en.support.wordpress.com/code/#html-tags).
+Originally, web sites could advertise their webmention endpoint in the `Link` HTTP header or in a `<link rel="webmention">` HTML tag. This change adds the option to use `<a rel="webmention">` too. This is useful on hosts that don't allow custom HTTP headers or `<link>` tags, [notably WordPress.com](http://en.support.wordpress.com/code/#html-tags).
 
-This change was inspired by a big new [Bridgy](https://www.brid.gy/) feature:
-webmention support for Blogger, Tumblr, and WordPress.com. (More about that
-soon!) Blogger and Tumblr let you add `<link>` tags, but WordPress.com doesn't,
-so we needed this to close the loop there.
+This change was inspired by a big new [Bridgy](https://www.brid.gy/) feature: webmention support for Blogger, Tumblr, and WordPress.com. (More about that soon!) Blogger and Tumblr let you add `<link>` tags, but WordPress.com doesn't, so we needed this to close the loop there.
 
 Happy hacking!
 

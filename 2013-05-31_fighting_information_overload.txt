@@ -3,233 +3,74 @@ Fighting information overload, and beyond
 
 <p class="right"><img class="shadow" width="200" src="/dog_drinking_from_sprinkler.jpg" /></p>
 
-Of all the cultural problems we blame on technology,
-[information overload](http://en.wikipedia.org/wiki/Information_overload) may be
-the poster child. Phones buzz, emails ding, IMs bounce, unread counts glare red,
-and posts stream at us from all directions, each interrupting the one before it.
-Our attention spans feel shorter, and the demands on our time and energy feel
-greater. Finish a task? Relax and recharge? Big picture? Forget about it.
+Of all the cultural problems we blame on technology, [information overload](http://en.wikipedia.org/wiki/Information_overload) may be the poster child. Phones buzz, emails ding, IMs bounce, unread counts glare red, and posts stream at us from all directions, each interrupting the one before it. Our attention spans feel shorter, and the demands on our time and energy feel greater. Finish a task? Relax and recharge? Big picture? Forget about it.
 
-This is all old news. So far, the accepted wisdom in the tech community is that
-we'll fight information overload with filtering. All those incoming streams
-aren't tuned to our personal tastes out of the box, but slap on some
-collaborative filtered, machine learned "intelligence," boost the signal to
-noise ratio above our individual "like" thresholds, and I'll no longer have to
-skip the Harlem shake videos and baby pictures that never really grabbed me in
-the first place. They'll slowly disappear from my streams altogether, to be
-replaced with the lolcats and pop song mashups I click on every single time.
-(I'm predictable!)
+This is all old news. So far, the accepted wisdom in the tech community is that we'll fight information overload with filtering. All those incoming streams aren't tuned to our personal tastes out of the box, but slap on some collaborative filtered, machine learned "intelligence," boost the signal to noise ratio above our individual "like" thresholds, and I'll no longer have to skip the Harlem shake videos and baby pictures that never really grabbed me in the first place. They'll slowly disappear from my streams altogether, to be replaced with the lolcats and pop song mashups I click on every single time. (I'm predictable!)
 
-Unfortunately, the filtering solution doesn't quite convince me. For one thing,
-the internet is a bottomless pit of stuff. Filtering may narrow down _which_
-stuff we get, but in its current forms, I don't expect it to reduce _how much_
-we get. Filtering proponents know this full well, so they focus on the benefits
-of personalization, but the problem was never a lack of interesting stuff, nor
-was it the drudgery of manually sorting out the chaff. The real problem is the
-interesting stuff itself, the endless supply of empty calorie distractions from
-your meaningful goals and real life.
+Unfortunately, the filtering solution doesn't quite convince me. For one thing, the internet is a bottomless pit of stuff. Filtering may narrow down _which_ stuff we get, but in its current forms, I don't expect it to reduce _how much_ we get. Filtering proponents know this full well, so they focus on the benefits of personalization, but the problem was never a lack of interesting stuff, nor was it the drudgery of manually sorting out the chaff. The real problem is the interesting stuff itself, the endless supply of empty calorie distractions from your meaningful goals and real life.
 
 <!-- more -->
 <span />
 
-Another problem that filtering doesn't address is the attack vectors.
-Information overload seeps in through every possible door, window, crack, and
-seam. We can knuckle down and stop reading Reddit or the Huffington Post during
-work, but we can't easily stop reading email or text messages. Even the heavy
-artillery of the attack, Facebook and Twitter, have become basic online
-utilities. Unless we want to
-[opt out of some parts of modern society](/2013-04-13_the-no-network-effect),
-most of us are stuck using them to some degree.
+Another problem that filtering doesn't address is the attack vectors. Information overload seeps in through every possible door, window, crack, and seam. We can knuckle down and stop reading Reddit or the Huffington Post during work, but we can't easily stop reading email or text messages. Even the heavy artillery of the attack, Facebook and Twitter, have become basic online utilities. Unless we want to [opt out of some parts of modern society](/2013-04-13_the-no-network-effect), most of us are stuck using them to some degree.
 
-If info overload's core problem is too much stuff, and we can't escape the
-primary streams we already have, new filtered streams would just pile on even
-more stuff. That can't be right. We need to subtract, not add.
+If info overload's core problem is too much stuff, and we can't escape the primary streams we already have, new filtered streams would just pile on even more stuff. That can't be right. We need to subtract, not add.
 
-To be fair, some of the primary streams have started adding their own filtering,
-e.g. Gmail's [Priority Inbox](https://support.google.com/mail/answer/186531) and
-[new clustered inbox](http://gmailblog.blogspot.com/2013/05/a-new-inbox-that-puts-you-back-in.html)
-and Facebook's
-[EdgeRank](http://www.insidefacebook.com/2011/12/27/edgerank-and-graph-rank-defined/).
-These are laudable, and may help, but ultimately I think they're just band-aids.
-If the trend is toward infinite scroll and "more like this," filtering existing
-streams still won't do enough to reduce overall volume, and the vicious
-distraction cycle will continue as more and more boring baby pictures are
-replaced with tempting lolcats.
+To be fair, some of the primary streams have started adding their own filtering, e.g. Gmail's [Priority Inbox](https://support.google.com/mail/answer/186531) and [new clustered inbox](http://gmailblog.blogspot.com/2013/05/a-new-inbox-that-puts-you-back-in.html) and Facebook's [EdgeRank](http://www.insidefacebook.com/2011/12/27/edgerank-and-graph-rank-defined/). These are laudable, and may help, but ultimately I think they're just band-aids. If the trend is toward infinite scroll and "more like this," filtering existing streams still won't do enough to reduce overall volume, and the vicious distraction cycle will continue as more and more boring baby pictures are replaced with tempting lolcats.
 
-There's also the [filter bubble](http://en.wikipedia.org/wiki/Filter_bubble)
-problem, but that's another conversation entirely.
+There's also the [filter bubble](http://en.wikipedia.org/wiki/Filter_bubble) problem, but that's another conversation entirely.
 
 <a name="context-switches"></a>
 
-So if filtering isn't the solution, what is? I believe it's _reducing context
-switches_. It's
-[well understood](http://blog.ninlabs.com/2013/01/programmer-interrupted/#references)
-that switching between tasks costs time and effort, especially if you're trying
-to get back into a state of
-[flow](http://en.wikipedia.org/wiki/Flow_(psychology)) or mental relaxation.
-Worse, switching to heavyweight, creative tasks with heavy short term memory
-needs - computer programming is
-[the](http://joelonsoftware.com/articles/fog0000000022.html)
-[canonical](http://www.paulgraham.com/makersschedule.html)
-[example](http://bigthink.com/videos/why-you-cant-work-at-work) - can be
-downright expensive,
-[often taking up to 10 minutes or more](http://www.gamasutra.com/view/feature/190891/programmer_interrupted.php).
-When I'm deep in the middle of coding, I often won't answer the phone, or texts
-or IMs, since I know how hard it can be to dive back in once I've switched
-gears.
+So if filtering isn't the solution, what is? I believe it's _reducing context switches_. It's [well understood](http://blog.ninlabs.com/2013/01/programmer-interrupted/#references) that switching between tasks costs time and effort, especially if you're trying to get back into a state of [flow](http://en.wikipedia.org/wiki/Flow_(psychology)) or mental relaxation. Worse, switching to heavyweight, creative tasks with heavy short term memory needs - computer programming is [the](http://joelonsoftware.com/articles/fog0000000022.html) [canonical](http://www.paulgraham.com/makersschedule.html) [example](http://bigthink.com/videos/why-you-cant-work-at-work) - can be downright expensive, [often taking up to 10 minutes or more](http://www.gamasutra.com/view/feature/190891/programmer_interrupted.php). When I'm deep in the middle of coding, I often won't answer the phone, or texts or IMs, since I know how hard it can be to dive back in once I've switched gears.
 
 <img class="left shadow" width="200" src="/kanye_imma_let_you_finish.jpg" />
 
-Context switches are still necessary, of course - we're not single-minded
-automatons - and distractions aren't all bad either. If an old friend calls
-while I'm coding, I may feel frustrated at first, but I'll enjoy catching up
-with them, and I'll probably spend longer on it than I need to ramp up into
-coding again afterward. I spent more time fully engaged in tasks I valued than I
-spent switching between them.
+Context switches are still necessary, of course - we're not single-minded automatons - and distractions aren't all bad either. If an old friend calls while I'm coding, I may feel frustrated at first, but I'll enjoy catching up with them, and I'll probably spend longer on it than I need to ramp up into coding again afterward. I spent more time fully engaged in tasks I valued than I spent switching between them.
 
-On the other hand, carrying on a few different IM and text message conversations
-while coding is a recipe for disaster. Nothing has my full attention, I spend
-more total time switching than talking or coding, and I never get deep enough
-into anything to fully engage.
+On the other hand, carrying on a few different IM and text message conversations while coding is a recipe for disaster. Nothing has my full attention, I spend more total time switching than talking or coding, and I never get deep enough into anything to fully engage.
 
-It's not any single activity that overloads us with information and steals our
-mental clarity and wellbeing, not even scapegoats like video games or surfing
-the web. It's the steady drip, drip, drip of context switches between our actual
-tasks and the items (posts, emails, texts) in our streams. We gradually spend
-less time engaged, and more time in transition, until the switches overload us
-completely. The [literature](http://dl.acm.org/citation.cfm?doid=985921.986094)
-[is](http://dl.acm.org/citation.cfm?doid=985692.985715)
-[remarkably](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&arnumber=714843)
-[consistent](http://dl.acm.org/citation.cfm?doid=1054972.1055017): we can't
-multitask, and when we try to pretend we can, we do way more harm than good.
+It's not any single activity that overloads us with information and steals our mental clarity and wellbeing, not even scapegoats like video games or surfing the web. It's the steady drip, drip, drip of context switches between our actual tasks and the items (posts, emails, texts) in our streams. We gradually spend less time engaged, and more time in transition, until the switches overload us completely. The [literature](http://dl.acm.org/citation.cfm?doid=985921.986094) [is](http://dl.acm.org/citation.cfm?doid=985692.985715) [remarkably](http://ieeexplore.ieee.org/xpl/articleDetails.jsp?reload=true&arnumber=714843) [consistent](http://dl.acm.org/citation.cfm?doid=1054972.1055017): we can't multitask, and when we try to pretend we can, we do way more harm than good.
 
-Fortunately, I think there's a cure. For as long as I can remember, I've
-aggressively tweaked both [my tools](/why_i_run_shells_inside_emacs) and my
-incoming streams to minimize context switches with two basic techniques:
-_pruning_ and _batching_.
+Fortunately, I think there's a cure. For as long as I can remember, I've aggressively tweaked both [my tools](/why_i_run_shells_inside_emacs) and my incoming streams to minimize context switches with two basic techniques: _pruning_ and _batching_.
 
-Pruning is pretty obvious. It's like filtering, but instead of adding new items
-I'd like, I try to narrow my streams and _remove_ items I don't value highly. I
-still love lolcats, but I've seen enough for one lifetime. If I can avoid them
-by unsubscribing from a few acquaintances and apps, I avoid an entire category
-of context switches. I still love
-[ceiling cat](http://knowyourmeme.com/memes/ceiling-cat), but he's not worth the
-10 minute cost each time, or the incremental toll on my sanity.
+Pruning is pretty obvious. It's like filtering, but instead of adding new items I'd like, I try to narrow my streams and _remove_ items I don't value highly. I still love lolcats, but I've seen enough for one lifetime. If I can avoid them by unsubscribing from a few acquaintances and apps, I avoid an entire category of context switches. I still love [ceiling cat](http://knowyourmeme.com/memes/ceiling-cat), but he's not worth the 10 minute cost each time, or the incremental toll on my sanity.
 
-Batching is pretty obvious too. The key idea is that context switches are not
-all created equal. If I pay attention, I can use this to my advantage and
-minimize the cost of context switching by deliberately choosing when and what I
-switch to. Replying to a flurry of emails is easier if they're all about the
-same project, for example, since most of the context remains the same.
+Batching is pretty obvious too. The key idea is that context switches are not all created equal. If I pay attention, I can use this to my advantage and minimize the cost of context switching by deliberately choosing when and what I switch to. Replying to a flurry of emails is easier if they're all about the same project, for example, since most of the context remains the same.
 
-Along the same lines, finishing an individual part of a project tends to lead to
-a natural stopping point. Switching away from the project at that point is
-easier because when you switch back, you only need to reload the high level
-project context, not the additional low level context of the individual part. If
-I leave an email half written and come back to it a day or two later, I usually
-have to reread what I wrote so far so I can pick up where I left off.
+Along the same lines, finishing an individual part of a project tends to lead to a natural stopping point. Switching away from the project at that point is easier because when you switch back, you only need to reload the high level project context, not the additional low level context of the individual part. If I leave an email half written and come back to it a day or two later, I usually have to reread what I wrote so far so I can pick up where I left off.
 
 <img class="right shadow" width="200" src="/weapons_of_mass_distraction.jpg" />
 
-Similarly, when I get stuck on a technical roadblock, and nothing I try seems to
-work, I'm often tempted to take a break and read email...which is the worst
-thing I could do, since my brain is fully loaded with all the detailed context
-of that roadblock. Switching away may feel good, but I'll pay for it when I try
-to switch back.
+Similarly, when I get stuck on a technical roadblock, and nothing I try seems to work, I'm often tempted to take a break and read email...which is the worst thing I could do, since my brain is fully loaded with all the detailed context of that roadblock. Switching away may feel good, but I'll pay for it when I try to switch back.
 
-(Yes, disengaging your conscious mind and letting your subconscious take over
-can often help with truly tough problems, but that's a big hammer to be used
-carefully and judiciously, not every time you get a bit frustrated.)
+(Yes, disengaging your conscious mind and letting your subconscious take over can often help with truly tough problems, but that's a big hammer to be used carefully and judiciously, not every time you get a bit frustrated.)
 
-None of this is truly new or meaningful. Streams and memes and filtering may be
-modern, but I'm sure pruning and batching are basic time management skills.
-However, it takes precious willpower to build healthy new habits, so I have to
-wonder if we can lift the burden off our own shoulders. Can we use technology to
-automate these techniques instead?
+None of this is truly new or meaningful. Streams and memes and filtering may be modern, but I'm sure pruning and batching are basic time management skills. However, it takes precious willpower to build healthy new habits, so I have to wonder if we can lift the burden off our own shoulders. Can we use technology to automate these techniques instead?
 
 I think we can.
 
-Pruning is complicated. I don't expect computers to understand our life goals
-any time soon, much less how to align our incoming streams, but they can
-definitely make it easier for _us_ to understand our goals and align those
-streams. Gmail can already
-[unsubscribe from mailing lists](http://gmailblog.blogspot.com/2009/07/unsubscribing-made-easy.html)
-and set up filters with a single click. Most "opt in" spam now includes
-unsubscribe links that actually work, thanks to the
-[venerable CAN-SPAM act](http://en.wikipedia.org/wiki/CAN-SPAM_Act_of_2003).
-Facebook and Twitter make it fairly straightforward to unsubscribe from
-individual people and apps.
+Pruning is complicated. I don't expect computers to understand our life goals any time soon, much less how to align our incoming streams, but they can definitely make it easier for _us_ to understand our goals and align those streams. Gmail can already [unsubscribe from mailing lists](http://gmailblog.blogspot.com/2009/07/unsubscribing-made-easy.html) and set up filters with a single click. Most "opt in" spam now includes unsubscribe links that actually work, thanks to the [venerable CAN-SPAM act](http://en.wikipedia.org/wiki/CAN-SPAM_Act_of_2003). Facebook and Twitter make it fairly straightforward to unsubscribe from individual people and apps.
 
-Batching is hard too, but the potential is huge. I thought about this a lot on
-my [last project](http://www.google.com/landing/now/)
-[at Google](http://googleblog.blogspot.com/2012/01/updating-our-privacy-policies-and-terms.html).
-If we combine simple cues like location, time of day, and what you're currently
-doing on your computer or phone, we can start to infer your receptivity to
-different kinds of interruptions. Notifying you of a close friend's Facebook
-post might be ok when you're surfing the web at home, but not when you're in
-flow at work. Similarly, work calls might be ok at work, or when you're VPNed
-in, but not when you're offline at home and playing with your kids.
+Batching is hard too, but the potential is huge. I thought about this a lot on my [last project](http://www.google.com/landing/now/) [at Google](http://googleblog.blogspot.com/2012/01/updating-our-privacy-policies-and-terms.html). If we combine simple cues like location, time of day, and what you're currently doing on your computer or phone, we can start to infer your receptivity to different kinds of interruptions. Notifying you of a close friend's Facebook post might be ok when you're surfing the web at home, but not when you're in flow at work. Similarly, work calls might be ok at work, or when you're VPNed in, but not when you're offline at home and playing with your kids.
 
-We can even try to batch tasks proactively in hopes of preventing some context
-switches altogether. If your browser sees that you're wrapping up some online
-shopping, and it also sees "buy Jim and Jane's wedding gift" on your to-do list,
-it could pop up [Clippy style](http://en.wikipedia.org/wiki/Office_Assistant)
-and say, hey, why not do that too? You're already in shopping mode, so if you do
-it now, you'll avoid a more costly context switch down the road.
-[Gmail's new inbox](http://gmailblog.blogspot.com/2013/05/a-new-inbox-that-puts-you-back-in.html),
-for example, is a very small step in this direction.
+We can even try to batch tasks proactively in hopes of preventing some context switches altogether. If your browser sees that you're wrapping up some online shopping, and it also sees "buy Jim and Jane's wedding gift" on your to-do list, it could pop up [Clippy style](http://en.wikipedia.org/wiki/Office_Assistant) and say, hey, why not do that too? You're already in shopping mode, so if you do it now, you'll avoid a more costly context switch down the road. [Gmail's new inbox](http://gmailblog.blogspot.com/2013/05/a-new-inbox-that-puts-you-back-in.html), for example, is a very small step in this direction.
 
-Obviously, this kind of computerized personal assistant hasn't arrived yet.
-There are many challenges to building it, and guessing what you're doing at any
-given moment may be the biggest. Even picking from a small set of categories is
-remarkably hard. GPS and time of day may tell us if you're working, for example,
-but not whether you're bored in a meeting or deep in flow on a project. Movement
-and more GPS may tell us if you're travelling, and maybe even that you're in a
-car, but not whether you're driving or a passenger. These distinctions are
-important, and we can't work around them for long.
+Obviously, this kind of computerized personal assistant hasn't arrived yet. There are many challenges to building it, and guessing what you're doing at any given moment may be the biggest. Even picking from a small set of categories is remarkably hard. GPS and time of day may tell us if you're working, for example, but not whether you're bored in a meeting or deep in flow on a project. Movement and more GPS may tell us if you're travelling, and maybe even that you're in a car, but not whether you're driving or a passenger. These distinctions are important, and we can't work around them for long.
 
 <a href="http://en.wikipedia.org/wiki/Office_Assistant">
  <img class="left" src="/clippy_meme.jpg" /></a>
 
-Furthermore, technology may be more and more ubiquitous, but it will never
-mediate everything in our lives. We can intercept your emails and IMs and text
-messages, but we can't stop chatty Jack from ambushing you over the cube wall
-and trapping you in office politics gossip.
+Furthermore, technology may be more and more ubiquitous, but it will never mediate everything in our lives. We can intercept your emails and IMs and text messages, but we can't stop chatty Jack from ambushing you over the cube wall and trapping you in office politics gossip.
 
-Fortunately, we can start small, detecting and intercepting a small handful of
-activities and interruptions. If Google Docs noticed when you were deep in the
-middle of writing, and told Google Talk not to blink chat windows with new
-messages - with your permission, of course - that could be a win. There's
-probably a wide range of low hanging fruit along those lines, ripe for the
-taking.
+Fortunately, we can start small, detecting and intercepting a small handful of activities and interruptions. If Google Docs noticed when you were deep in the middle of writing, and told Google Talk not to blink chat windows with new messages - with your permission, of course - that could be a win. There's probably a wide range of low hanging fruit along those lines, ripe for the taking.
 
-If you suspend just a bit more disbelief, these capabilities could lead to some
-truly remarkable machine-assisted serendipity. Imagine you're at the airport,
-and the gate attendants announce over the PA that your flight is delayed an
-hour. What to do? Sure, recommendation engines could eagerly pitch you articles,
-music, movies, TV shows, and even restaurants...
+If you suspend just a bit more disbelief, these capabilities could lead to some truly remarkable machine-assisted serendipity. Imagine you're at the airport, and the gate attendants announce over the PA that your flight is delayed an hour. What to do? Sure, recommendation engines could eagerly pitch you articles, music, movies, TV shows, and even restaurants...
 
-...but what if an uber-recommendation engine could say, those are well and good,
-but your good friend Sally, whom you lost touch with when she moved away a year
-ago, is sitting in the next terminal with a two hour layover, and she'd love to
-catch up. You'd rather spend the next hour doing that than reading the
-Huffington Post or watching The Office, right?
+...but what if an uber-recommendation engine could say, those are well and good, but your good friend Sally, whom you lost touch with when she moved away a year ago, is sitting in the next terminal with a two hour layover, and she'd love to catch up. You'd rather spend the next hour doing that than reading the Huffington Post or watching The Office, right?
 
-Right. That would be pretty damn cool, and also a bit creepy. Still, if the
-product itself is compelling enough, we can fight creepiness with design. Sure,
-there will be unintended consequences, but the way to discover them is to
-prototype and iterate and listen to feedback.
+Right. That would be pretty damn cool, and also a bit creepy. Still, if the product itself is compelling enough, we can fight creepiness with design. Sure, there will be unintended consequences, but the way to discover them is to prototype and iterate and listen to feedback.
 
-This uber-recommendation engine lies squarely in the future,
-[Siri](http://www.apple.com/ios/siri/) and
-[Google Now](http://www.google.com/landing/now/) notwithstanding. We've had the
-information overload problem for a while, though, and the conventional filtering
-approach isn't helping. On the contrary, it piles even more irresistible,
-harmful distractions onto our current overload.
+This uber-recommendation engine lies squarely in the future, [Siri](http://www.apple.com/ios/siri/) and [Google Now](http://www.google.com/landing/now/) notwithstanding. We've had the information overload problem for a while, though, and the conventional filtering approach isn't helping. On the contrary, it piles even more irresistible, harmful distractions onto our current overload.
 
-Filtering may not be the answer, but reducing context switches just might be,
-and that's good news. We should keep working on tools that help us prune and
-batch tasks, minimize and optimize context switches, and free us from the
-information overload onslaught of Harlem shakes, viral memes, and messages upon
-messages. I still love them all, I really do, but not at the expense of my
-mental health and sanity.
+Filtering may not be the answer, but reducing context switches just might be, and that's good news. We should keep working on tools that help us prune and batch tasks, minimize and optimize context switches, and free us from the information overload onslaught of Harlem shakes, viral memes, and messages upon messages. I still love them all, I really do, but not at the expense of my mental health and sanity.

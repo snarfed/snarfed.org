@@ -5,16 +5,11 @@ reopen multiple files in emacs buffer-menu-mode
  <a href="http://gnu.org/software/emacs/">
   <img src="/gnu.jpg" /></a></p>
 
-I use [GNU Emacs](http://gnu.org/software/emacs/) as my text editor, and I love
-it. I regularly use it to work with multiple workspaces that have identical
-sets of files and directories.
+I use [GNU Emacs](http://gnu.org/software/emacs/) as my text editor, and I love it. I regularly use it to work with multiple workspaces that have identical sets of files and directories.
 
-After I've worked in one workspace for a while, I often want to switch to
-another workspace. Specifically, I want to close all of the files I have open
-in the old workspace, then open the corresponding files in the new workspace.
+After I've worked in one workspace for a while, I often want to switch to another workspace. Specifically, I want to close all of the files I have open in the old workspace, then open the corresponding files in the new workspace.
 
-For example, I might press `C-x C-b` to get a `*Buffer List*` and see that I have
-these files open:
+For example, I might press `C-x C-b` to get a `*Buffer List*` and see that I have these files open:
 
 ```
  MR Buffer            Size  Mode  File

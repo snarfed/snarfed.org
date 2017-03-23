@@ -6,21 +6,11 @@ Emacs keybindings in GNU screen's copy-scrollback mode
 <a href="http://gnu.org/software/emacs/"><img src="/gnu.jpg"></a>
 </p>
 
-When I'm working, I pretty much
-live inside [Emacs](http://gnu.org/software/emacs/). It's my IDE, debugger, text
-editor, email composer, spreadsheet, file manager, and all-around scratch pad.
+When I'm working, I pretty much live inside [Emacs](http://gnu.org/software/emacs/). It's my IDE, debugger, text editor, email composer, spreadsheet, file manager, and all-around scratch pad.
 
-I've burned Emacs' key bindings into my brain, so I go to great lengths to set
-them in every program I use. That way, I don't have to context switch my
-fingers' muscle memory when I task switch from coding to email, to IM, to the
-web. Task switches may be a fact of life, but other unnecessary mental context
-switches are evil incarnate.
+I've burned Emacs' key bindings into my brain, so I go to great lengths to set them in every program I use. That way, I don't have to context switch my fingers' muscle memory when I task switch from coding to email, to IM, to the web. Task switches may be a fact of life, but other unnecessary mental context switches are evil incarnate.
 
-I recently started using [GNU screen](http://www.gnu.org/software/screen/)'s
-[copy/scrollback mode](http://www.delorie.com/gnu/docs/screen/screen_73.html) so
-that I could copy from terminals with the keyboard. I use these commands in
-[my .screenrc](/dotfiles/.screenrc) to set up Emacs key bindings in screen's
-copy/scrollback mode:
+I recently started using [GNU screen](http://www.gnu.org/software/screen/)'s [copy/scrollback mode](http://www.delorie.com/gnu/docs/screen/screen_73.html) so that I could copy from terminals with the keyboard. I use these commands in [my .screenrc](/dotfiles/.screenrc) to set up Emacs key bindings in screen's copy/scrollback mode:
 
 ```
 # emacs keybindings for navigation in copy mode

@@ -5,19 +5,11 @@ emacs special-display-function: prefer-other-visible-frame
  <a href="http://gnu.org/software/emacs/">
   <img src="/gnu.jpg" /></a></p>
 
-Emacs's support for
-[special buffer frames](http://www.gnu.org/software/emacs/manual/html_node/emacs/Special-Buffer-Frames.html),
-specifically the `special-display-function` variable and friends, let you
-customize the way Emacs chooses a window and buffer for new frames that are
-displayed via `display-buffer`.
+Emacs's support for [special buffer frames](http://www.gnu.org/software/emacs/manual/html_node/emacs/Special-Buffer-Frames.html), specifically the `special-display-function` variable and friends, let you customize the way Emacs chooses a window and buffer for new frames that are displayed via `display-buffer`.
 
-Here's Elisp code you can use as `special-display-function` that prefers
-existing windows and frames, as opposed to splitting the current window and
-frame, but does *not* select (ie switch to) the window where the new buffer is
-displayed.
+Here's Elisp code you can use as `special-display-function` that prefers existing windows and frames, as opposed to splitting the current window and frame, but does *not* select (ie switch to) the window where the new buffer is displayed.
 
-Also see
-[`display-buffer-reuse-frames`](http://www.gnu.org/software/emacs/manual/html_node/emacs/Select-Buffer.html#index-display_002dbuffer_002dreuse_002dframes-1070).
+Also see [`display-buffer-reuse-frames`](http://www.gnu.org/software/emacs/manual/html_node/emacs/Select-Buffer.html#index-display_002dbuffer_002dreuse_002dframes-1070).
 
 
 ```

@@ -5,17 +5,9 @@ Java stack traces in Emacs compilation-mode
  <a href="http://www.gnu.org/software/emacs/"><img src="/gnu.jpg" />
  </a></p>
 
-I often run Java programs like Android apps in my
-[Emacs](http://www.gnu.org/software/emacs/)
-[compilation buffer](http://www.gnu.org/software/emacs/manual/html_node/emacs/Compilation.html)
-while I'm working on them, so I see Java stack traces there just like compile
-errors. Emacs is good at
-[identifying compilation errors](http://www.gnu.org/software/emacs/manual/html_node/emacs/Compilation-Mode.html#index-compilation_002derror_002dregexp_002dalist-2547)
-so you can jump straight to the source file and line, but not so much with stack
-traces.
+I often run Java programs like Android apps in my [Emacs](http://www.gnu.org/software/emacs/) [compilation buffer](http://www.gnu.org/software/emacs/manual/html_node/emacs/Compilation.html) while I'm working on them, so I see Java stack traces there just like compile errors. Emacs is good at [identifying compilation errors](http://www.gnu.org/software/emacs/manual/html_node/emacs/Compilation-Mode.html#index-compilation_002derror_002dregexp_002dalist-2547) so you can jump straight to the source file and line, but not so much with stack traces.
 
-Here's an elisp snippet that adds stack trace support, so you can jump to
-individual lines with `` C-x ` ``, mouse click, or `next-error`:
+Here's an elisp snippet that adds stack trace support, so you can jump to individual lines with `` C-x ` ``, mouse click, or `next-error`:
 
 ```
 (defvar java-stack-trace-dir "src/")

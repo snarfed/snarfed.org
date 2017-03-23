@@ -3,13 +3,7 @@ CodeCon 2005 notes
 
 <a href="http://codecon.org/2005/"><img src="/codecon_2005_logo.png"></a>
 
-I went to [CodeCon
-2005](http://codecon.org/2005/), and I had a great time. I've posted a [short
-description](/2005-03-02_codecon_2005). I also went to [Codecon
-2004](/CodeCon_2004); feel free to check out the
-[description](/2004-02-21_codecon) and [pictures](/codecon_2004_pictures).
-Here are my rough, incomplete, unedited notes on the projects presented this
-year.
+I went to [CodeCon 2005](http://codecon.org/2005/), and I had a great time. I've posted a [short description](/2005-03-02_codecon_2005). I also went to [Codecon 2004](/CodeCon_2004); feel free to check out the [description](/2004-02-21_codecon) and [pictures](/codecon_2004_pictures). Here are my rough, incomplete, unedited notes on the projects presented this year.
 
 **Contents:**
 
@@ -33,11 +27,9 @@ year.
 
 [http://www.geekness.net/tools/aura/](http://www.geekness.net/tools/aura/)
 
-reputation system _library_. basically a distributed platform for providing
-information, by users and often about other users.
+reputation system _library_. basically a distributed platform for providing information, by users and often about other users.
 
-motivation - referrals by friends are dirt simple and very effective any
-computational system needs to be at least as easy to use
+motivation - referrals by friends are dirt simple and very effective any computational system needs to be at least as easy to use
 
 properties:
 
@@ -45,20 +37,15 @@ properties:
   * peer review
   * feedback that affects user reputation (based on provider's reputation)
 
-very pessimistic - assumes all centralization is bad, all data is bad, all users
-are malicious, etc. and tries to still provide some functionality guarantees.
+very pessimistic - assumes all centralization is bad, all data is bad, all users are malicious, etc. and tries to still provide some functionality guarantees.
 
-most importantly, _only_ way to detect problems is catastrophic failure! (do we
-really need to be this pessimistic?)
+most importantly, _only_ way to detect problems is catastrophic failure! (do we really need to be this pessimistic?)
 
-however, _requires_ a trusted seed. evidently this has been more or less proven
-necessary.
+however, _requires_ a trusted seed. evidently this has been more or less proven necessary.
 
 library, but uses an embedded db, sqlite! sqlite itself seems reasonable though.
 
-seems like it would take a lot of work to actually use this in an app in a
-meaningful way. basic functionality like discovery, trust propagation, etc. are
-mostly left to the app.
+seems like it would take a lot of work to actually use this in an app in a meaningful way. basic functionality like discovery, trust propagation, etc. are mostly left to the app.
 
 obviously had a working demo, but wasn't prepared very well.
 
@@ -68,8 +55,7 @@ obviously had a working demo, but wasn't prepared very well.
 
 [http://nongnu.org/arx](http://nongnu.org/arx)
 
-one of the many successors to cvs. branched from gnu arch, w/interesting
-personal drama, but that's outside the scope here.
+one of the many successors to cvs. branched from gnu arch, w/interesting personal drama, but that's outside the scope here.
 
 has the standard laundry list of features that cvs doesnt:
 
@@ -81,23 +67,15 @@ has the standard laundry list of features that cvs doesnt:
 
 killer feature: distributed!
 
-_however_, not purely distributed like bitkeeper; instead, keeps a single
-central repository, but lets you run a local repository and later merge it w/the
-central repository. good for remote development, contributions from strangers,
-etc.
+_however_, not purely distributed like bitkeeper; instead, keeps a single central repository, but lets you run a local repository and later merge it w/the central repository. good for remote development, contributions from strangers, etc.
 
-this is actually very cool. i could totally see how this would be very useful. i
-wish he'd done it as an extension to an existing, mature version control system
-though!
+this is actually very cool. i could totally see how this would be very useful. i wish he'd done it as an extension to an existing, mature version control system though!
 
 gnome-vfs dependency makes sense, but isn't ideal.
 
-not network-efficient!!! subversion's network efficiency is a huge win. why
-wasn't this a primary design goal?
+not network-efficient!!! subversion's network efficiency is a huge win. why wasn't this a primary design goal?
 
-walter did lots of in-depth metrics and tests of arx, tla (bnu arch), darcs,
-monotone, and svk. i was impressed by his honesty - arx performed ok in most,
-but noticeably bad in a few, and he didn't sugar-coat it.
+walter did lots of in-depth metrics and tests of arx, tla (bnu arch), darcs, monotone, and svk. i was impressed by his honesty - arx performed ok in most, but noticeably bad in a few, and he didn't sugar-coat it.
 
 **ApacheCA**
 <a name="apacheca"></a>
@@ -105,27 +83,19 @@ but noticeably bad in a few, and he didn't sugar-coat it.
 
 [http://ca.apache.org/](http://ca.apache.org/)
 
-first talked about apache foundation organization, management, and IT setup.
-need for single-sign-on, authentication and ACLs, etc. necessary, but not
-exactly sexy.
+first talked about apache foundation organization, management, and IT setup. need for single-sign-on, authentication and ACLs, etc. necessary, but not exactly sexy.
 
-oh, this is used to motivate apacheca, especially the hard req't for group
-(role?) based authentication and access control. heh, ok.
+oh, this is used to motivate apacheca, especially the hard req't for group (role?) based authentication and access control. heh, ok.
 
-i love to hate NIH syndrome, so i was glad to hear them acknowledge that
-building from scratch may have been a bad idea, and that they use existing tools
-(openssl, pgp, etc.)
+i love to hate NIH syndrome, so i was glad to hear them acknowledge that building from scratch may have been a bad idea, and that they use existing tools (openssl, pgp, etc.)
 
-of course, building from scratch does require rewriting standard (but tricky) CA
-stuff, esp. cert revocation and CRLs.
+of course, building from scratch does require rewriting standard (but tricky) CA stuff, esp. cert revocation and CRLs.
 
 group membership is stored in certificate "extensions" as X.509 attributes.
 
-root users (and most other really sensitive data) must be edited manually, can't
-be administered by email.
+root users (and most other really sensitive data) must be edited manually, can't be administered by email.
 
-my opinion? seems well-built, but with the standard issues when you build a new
-one from scratch. biggest ones right now are probably adoption and maturity.
+my opinion? seems well-built, but with the standard issues when you build a new one from scratch. biggest ones right now are probably adoption and maturity.
 
 **Off-the-Record Messaging**
 <a name="otr"></a>
@@ -133,31 +103,19 @@ one from scratch. biggest ones right now are probably adoption and maturity.
 
 [http://www.cypherpunks.ca/otr/](http://www.cypherpunks.ca/otr/)
 
-lots of hype about this one. frankly, i didn't really understand the hype.
-encrypted im has been done before, this is probably just the first time it's
-actually been done right. that does count.
+lots of hype about this one. frankly, i didn't really understand the hype. encrypted im has been done before, this is probably just the first time it's actually been done right. that does count.
 
-also, ok, perfect forward secrecy is a big deal. i'm not aware of any other
-solution provides it.
+also, ok, perfect forward secrecy is a big deal. i'm not aware of any other solution provides it.
 
-signature is done really well - the MAC is designed such that only alice and bob
-can use it to sign for each other, but not to prove themselves to third parties.
+signature is done really well - the MAC is designed such that only alice and bob can use it to sign for each other, but not to prove themselves to third parties.
 
-ok, so i'm impressed...this is very very well tailored to the specific app,
-secure im. it solves that problem well, and doesn't try to do anything else.
+ok, so i'm impressed...this is very very well tailored to the specific app, secure im. it solves that problem well, and doesn't try to do anything else.
 
-hmm...not much more to say. they have plugins for gaim and adiumx, and more
-would probably be easy. until there's a plugin for the official AIM, Yahoo, and
-MSN clients, though, it'll only really be used by geeks.
+hmm...not much more to say. they have plugins for gaim and adiumx, and more would probably be easy. until there's a plugin for the official AIM, Yahoo, and MSN clients, though, it'll only really be used by geeks.
 
-sadly, the projector died shortly after they started, so they talked through
-their demo as they ran it on their laptop. it seemed surprisingly usable,
-though...even when they talked about verifying public key (fingerprints)
-out-of-band, e.g. over the phone, it wasn't overwhelming, and they described the
-security tradeoffs very clearly.
+sadly, the projector died shortly after they started, so they talked through their demo as they ran it on their laptop. it seemed surprisingly usable, though...even when they talked about verifying public key (fingerprints) out-of-band, e.g. over the phone, it wasn't overwhelming, and they described the security tradeoffs very clearly.
 
-...they got to do the demo on saturday, and it was quite compelling, mostly
-because the security issues were made so clear and simple.
+...they got to do the demo on saturday, and it was quite compelling, mostly because the security issues were made so clear and simple.
 
 **RPOW**
 <a name="rpow"></a>
@@ -165,28 +123,17 @@ because the security issues were made so clear and simple.
 
 [http://rpow.net/](http://rpow.net/)
 
-a real implementation of hashcash - cryptographically secure way to prove that
-you've done some computation. very cool. hal's idea is to use this as a basis to
-provide digital cash. it doesn't hurt that he's a hugely respected crypto
-expert, and a regular contributor to p2p-hackers, sci.crypt, etc.
+a real implementation of hashcash - cryptographically secure way to prove that you've done some computation. very cool. hal's idea is to use this as a basis to provide digital cash. it doesn't hurt that he's a hugely respected crypto expert, and a regular contributor to p2p-hackers, sci.crypt, etc.
 
-clever way to guarantee computation - find plaintexts whose SHA-1 hashes have a
-certain amount of leading zeroes. only way to find these is trial and error.
+clever way to guarantee computation - find plaintexts whose SHA-1 hashes have a certain amount of leading zeroes. only way to find these is trial and error.
 
-great, but not usable if you want to prove that you did an arbitrary _type_ of
-computation, e.g. seti@home. still useful for digital cash or e.g. spam
-negotiation.
+great, but not usable if you want to prove that you did an arbitrary _type_ of computation, e.g. seti@home. still useful for digital cash or e.g. spam negotiation.
 
-RPOW tokens have "lineage" - each one can be traced back to the piece of
-hashcash (the plaintext) that was used to generate it.
+RPOW tokens have "lineage" - each one can be traced back to the piece of hashcash (the plaintext) that was used to generate it.
 
-server is very sensitive central point of failure; if compromised, it can be
-used to effectively print hashcash. so, it's implemented on the IBM 4758, a
-secure computing platform that plugs into a PCI slot. !!!!! needless to say,
-huge wow factor.
+server is very sensitive central point of failure; if compromised, it can be used to effectively print hashcash. so, it's implemented on the IBM 4758, a secure computing platform that plugs into a PCI slot. !!!!! needless to say, huge wow factor.
 
-uses the TCPA-alike functionality of the IBM board (attestations) to secure the
-server.
+uses the TCPA-alike functionality of the IBM board (attestations) to secure the server.
 
 **The Ultra Gleeper**
 <a name="gleeper"></a>
@@ -194,8 +141,7 @@ server.
 
 [http://www.crummy.com/software/gleeper/](http://www.crummy.com/software/gleeper/)
 
-a recommendation engine for web pages. based on lots of users providing some
-information, basically "i like these pages."
+a recommendation engine for web pages. based on lots of users providing some information, basically "i like these pages."
 
 opinions work, but are tough since getting people to express them is tough.
 
@@ -203,19 +149,13 @@ metadata is tough because we still need humans to provide it.
 
 use links, like pagerank, as recommendations. this makes sense.
 
-however, he _still_ more or less requires you to rate pages. this is way too
-much effort for me, and it seems like just a hack, a substitute for real
-similarity matching heuristics.
+however, he _still_ more or less requires you to rate pages. this is way too much effort for me, and it seems like just a hack, a substitute for real similarity matching heuristics.
 
-also require the user to provide a set of seed pages; only search for
-recommendations within a few links of the seed set. this doesn't make sense. i'm
-likely to have seen, or at least be aware of, all of those pages. i'd be much
-more interested in seeing pages that are similar, but far away!
+also require the user to provide a set of seed pages; only search for recommendations within a few links of the seed set. this doesn't make sense. i'm likely to have seen, or at least be aware of, all of those pages. i'd be much more interested in seeing pages that are similar, but far away!
 
 ok, so this is necessary due to real-world limitations. sigh.
 
-so, this seems ok...but a full crawl and real similarity heuristics, instead of
-using user ratings as a crutch, would be a lot better.
+so, this seems ok...but a full crawl and real similarity heuristics, instead of using user ratings as a crutch, would be a lot better.
 
 also, it seems more appropriate for a browser plugin, a la alexa.
 
@@ -237,20 +177,15 @@ a feed parser that supports all versions of rss and atom. a jakarta project.
 
 used in rojo.com, kevin's startup. cool! I like (and use) rojo.
 
-also, kevin was on the rss 1.0 working group. interesting history and drama -
-rss 0.9\* vs. 1.0 vs 2.0, and atom is (maybe) the future, and endorsed by IETF.
-he glazed over this though.
+also, kevin was on the rss 1.0 working group. interesting history and drama - rss 0.9\* vs. 1.0 vs 2.0, and atom is (maybe) the future, and endorsed by IETF. he glazed over this though.
 
-kinda like writing a browser - wide range of feed quality (as in adherence to
-the spec), need to handle them all.
+kinda like writing a browser - wide range of feed quality (as in adherence to the spec), need to handle them all.
 
 this is kinda like plumbing - it may be necessary, but it's just not sexy.
 
-ok, so autodiscovery is a little sexy. the heuristics for trying to handle
-broken feeds are also interesting.
+ok, so autodiscovery is a little sexy. the heuristics for trying to handle broken feeds are also interesting.
 
-future uses for feeds are interesting: feeds for searches (like google alerts),
-feeds from version control systems, etc.
+future uses for feeds are interesting: feeds for searches (like google alerts), feeds from version control systems, etc.
 
 **Mappr**
 <a name="mappr"></a>
@@ -258,36 +193,25 @@ feeds from version control systems, etc.
 
 [http://mappr.com/](http://mappr.com/)
 
-using location data to visualize flickr photos and their locations relative to
-each other.
+using location data to visualize flickr photos and their locations relative to each other.
 
-much of the geographical visualization stuff was originally developed for
-moveon.org, so they could understand better where people were doing what. it's
-really, really pretty and smooth.
+much of the geographical visualization stuff was originally developed for moveon.org, so they could understand better where people were doing what. it's really, really pretty and smooth.
 
 flicker has a REST developer api! cool! (i didn't know that...)
 
-goal is to do this without _any_ extra user effort - uses existing, text
-location tags and gps info automatically generated by cameras, etc., if
-available, e.g. in EXIF headers.
+goal is to do this without _any_ extra user effort - uses existing, text location tags and gps info automatically generated by cameras, etc., if available, e.g. in EXIF headers.
 
-pulled location data from GNS (federal gov't db) and Zip99 (USPS db) and built
-hierarchical location db. allows queries such as "where was this" and "who was
-here", but what's the UI?!?
+pulled location data from GNS (federal gov't db) and Zip99 (USPS db) and built hierarchical location db. allows queries such as "where was this" and "who was here", but what's the UI?!?
 
-...ahh, it's a REST api like flickr's. i'm surprised; this was built by a visual
-design studio, why'd they cop out on building a query api?
+...ahh, it's a REST api like flickr's. i'm surprised; this was built by a visual design studio, why'd they cop out on building a query api?
 
 oh, because they do visual design, _not_ necessarily UI. heh.
 
 sweet! this is a really cool piece of convergence.
 
-the demo kicked ass. people took pictures with cameraphones, sent them to
-flickr, tagged with "san francisco" and "codecon", and within 5 minutes they
-showed up on mappr.
+the demo kicked ass. people took pictures with cameraphones, sent them to flickr, tagged with "san francisco" and "codecon", and within 5 minutes they showed up on mappr.
 
-serendipitous discoveries were also really cool - route 66, which doesn't even
-exist any more, nevertheless was visible as an actual path across the country.
+serendipitous discoveries were also really cool - route 66, which doesn't even exist any more, nevertheless was visible as an actual path across the country.
 
 **Photospace**
 <a name="photospace"></a>
@@ -303,24 +227,15 @@ exist any more, nevertheless was visible as an actual path across the country.
 
 [http://www.wheatfarm.org/](http://www.wheatfarm.org/)
 
-halfway between php and a wiki, based on the object-oriented "wheat" language.
-designed specifically as a web language. uses php as a a backend.
+halfway between php and a wiki, based on the object-oriented "wheat" language. designed specifically as a web language. uses php as a a backend.
 
-tries to integrate very well with web environment - every object can render into
-html, _everything_ (even things like local vars) has a URL, etc. on running
-sites, instances of objects are accessed through URL hierarchies, e.g.
-[http://wheat/a/b/c](http://wheat/a/b/c) implies that there's an a object that
-contains a b object that contains a c object.
+tries to integrate very well with web environment - every object can render into html, _everything_ (even things like local vars) has a URL, etc. on running sites, instances of objects are accessed through URL hierarchies, e.g. [http://wheat/a/b/c](http://wheat/a/b/c) implies that there's an a object that contains a b object that contains a c object.
 
-has built-in support for running unit test - can be checked at any time on the
-live site.
+has built-in support for running unit test - can be checked at any time on the live site.
 
-supports multiple backing stores - xml, flat file, sql db, even another wheat
-site - at the same time.
+supports multiple backing stores - xml, flat file, sql db, even another wheat site - at the same time.
 
-very cool, and the demo worked well, but it's crazy ambitious, but at the moment
-only has toy code. i came away without any feel for how usable and robust this
-would be in the real world.
+very cool, and the demo worked well, but it's crazy ambitious, but at the moment only has toy code. i came away without any feel for how usable and robust this would be in the real world.
 
 still, has a number of great ideas. when will it be ready?!?
 
@@ -330,28 +245,15 @@ still, has a number of great ideas. when will it be ready?!?
 
 [http://www.omgaudio.com/incoherence/](http://www.omgaudio.com/incoherence/)
 
-visualizing all three dimensions of sound: left/right, frequency (bass-treble),
-and amplitude (depth, kind of), using the horizontal and vertical axes and
-brightness.
+visualizing all three dimensions of sound: left/right, frequency (bass-treble), and amplitude (depth, kind of), using the horizontal and vertical axes and brightness.
 
-they demoed first, and kept demoing throughout the talk, which was a great idea.
-they started with basic ideas - single tones, varied across channels, frequency,
-and amplidute, which showed what variation across each of the three dimensions
-sounds like.
+they demoed first, and kept demoing throughout the talk, which was a great idea. they started with basic ideas - single tones, varied across channels, frequency, and amplidute, which showed what variation across each of the three dimensions sounds like.
 
-they then played recordings with a few different kinds of artifacts - straight
-mono, mono that had been duplicated to fake stereo, recording impurities that
-caused stereo distortion, early stereo recordings that precisely placed
-instruments on different channels (and the result interference when they played
-the same notes), etc. _very_ cool.
+they then played recordings with a few different kinds of artifacts - straight mono, mono that had been duplicated to fake stereo, recording impurities that caused stereo distortion, early stereo recordings that precisely placed instruments on different channels (and the result interference when they played the same notes), etc. _very_ cool.
 
-they did a really good job of explaining certain audio effects - compression vs.
-dynamic range, bass expansion, interference, etc. - and showing how they
-appeared as distinct visual patters in incoherence.
+they did a really good job of explaining certain audio effects - compression vs. dynamic range, bass expansion, interference, etc. - and showing how they appeared as distinct visual patters in incoherence.
 
-this one was a success, mostly based on the flashiness of the demo. however,
-it's also a great example of a project that only solves a single problem, but
-does it damn well.
+this one was a success, mostly based on the flashiness of the demo. however, it's also a great example of a project that only solves a single problem, but does it damn well.
 
 **i-Brokers**
 <a name="i-brokers"></a>
@@ -359,33 +261,21 @@ does it damn well.
 
 [http://2idi.com/](http://2idi.com/)
 
-online identity management. they compare themselves to the existing alternatives
-(passport, liberty alliance, and sxip, http;//sxip.com/) on authoritarian vs.
-personalized and central vs. decentral. obviously, 2idi is decentralized and
-personalized.
+online identity management. they compare themselves to the existing alternatives (passport, liberty alliance, and sxip, http;//sxip.com/) on authoritarian vs. personalized and central vs. decentral. obviously, 2idi is decentralized and personalized.
 
-...however, decentralized is tough for getting buy-in. so, they're bootstrapping
-it by providing a well-known always-on server for a while, until it builds
-momentum.
+...however, decentralized is tough for getting buy-in. so, they're bootstrapping it by providing a well-known always-on server for a while, until it builds momentum.
 
-browser plugin knows where user's identity store is and how to access it;
-negotiates "contract" with site when site wants identity info. negotiators on
-each side are called "brokers".
+browser plugin knows where user's identity store is and how to access it; negotiates "contract" with site when site wants identity info. negotiators on each side are called "brokers".
 
-also povides reverse identity negotiation, to find out detailed info about a
-server or site. kind of like two-way authentication, but for identity.
+also povides reverse identity negotiation, to find out detailed info about a server or site. kind of like two-way authentication, but for identity.
 
 uses advanced features of URIs, including embedded URIs. cool!!!
 
-this was the token commercial presentation for this year. there's been one every
-year i've been here (e.g. pgp in 2004). kind of nice, esp. since the commercial
-presentation is still always open-source friendly.
+this was the token commercial presentation for this year. there's been one every year i've been here (e.g. pgp in 2004). kind of nice, esp. since the commercial presentation is still always open-source friendly.
 
-side note - an existing patent prevent them from providing certain services
-available through a global registry. that patent expires in 6 months, though.
+side note - an existing patent prevent them from providing certain services available through a global registry. that patent expires in 6 months, though.
 
-cool! the main problem with this stuff is adoption, but they're well aware of
-that, and they're tackling it head on.
+cool! the main problem with this stuff is adoption, but they're well aware of that, and they're tackling it head on.
 
 **SciTools**
 <a name="scitools"></a>
@@ -393,11 +283,7 @@ that, and they're tackling it head on.
 
 [http://scitools.idtdna.com/](http://scitools.idtdna.com/)
 
-10k-foot view: you can extract DNA from things with common grocery store
-ingredients and a bably's first gel-electrophoresis kit. once you have have that
-you can send it into a dna analysis machine and get a genetic pattern. with
-openly available tools you can custom order RNA strands that have been
-determined to produce what ever genetic material that you want if it's possible.
+10k-foot view: you can extract DNA from things with common grocery store ingredients and a bably's first gel-electrophoresis kit. once you have have that you can send it into a dna analysis machine and get a genetic pattern. with openly available tools you can custom order RNA strands that have been determined to produce what ever genetic material that you want if it's possible.
 
 **OzymanDNS**
 <a name="ozymandns"></a>
@@ -405,10 +291,5 @@ determined to produce what ever genetic material that you want if it's possible.
 
 [http://www.doxpara.com/dns_tc/](http://www.doxpara.com/dns_tc/)
 
-10k-foot view: DNS servers have state. DNS is a distributed network protocol.
-Therefore you can change state across a distributed network. DNS has lots of
-fudgability due to brain dead design by committee evolution. So you can pack
-data into stateful DNS requests that get forwarded across the network. Get a
-server and a client and you got effective data transfer over DNS only. He
-demonstrated live video over the DNS.
+10k-foot view: DNS servers have state. DNS is a distributed network protocol. Therefore you can change state across a distributed network. DNS has lots of fudgability due to brain dead design by committee evolution. So you can pack data into stateful DNS requests that get forwarded across the network. Get a server and a client and you got effective data transfer over DNS only. He demonstrated live video over the DNS.
 

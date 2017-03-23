@@ -1,18 +1,12 @@
 6936
 Archives
 
-[Posts](#posts) &middot;
-[Pages](#pages) &middot;
-[Replies](/responses#replies) &middot;
-[Retweets](/responses#retweets) &middot;
-[RSVPs](/responses#rsvps) &middot;
-[Likes](/responses#likes)
+[Posts](#posts) &middot; [Pages](#pages) &middot; [Replies](/responses#replies) &middot; [Retweets](/responses#retweets) &middot; [RSVPs](/responses#rsvps) &middot; [Likes](/responses#likes)
 
 <!-- catlist docs: http://wordpress.org/plugins/list-category-posts/other_notes/ -->
 <div id="posts" class="left half archive-page">
 Posts:  
-[catlist name=-indieweb-indieweb_like-indieweb_repost-indieweb_rsvp numberposts=-1
-     orderby=date order=desc]
+[catlist name=-indieweb-indieweb_like-indieweb_repost-indieweb_rsvp numberposts=-1 orderby=date order=desc]
 </div>
 
 <div id="pages" class="right half archive-page">

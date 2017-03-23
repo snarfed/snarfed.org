@@ -4,34 +4,15 @@ OpenID server for PyBlosxom
 <a href="http://openid.net/"><img src="/openid-logo.png"></a>
 <a href="http://pyblosxom.bluesock.org/"><img src="/pyblosxom.jpg"></a>
 
-I've just posted an
-[OpenID server plugin for PyBlosxom](/pyblosxom_openid_server).
-[OpenID](http://openid.net/) is a distributed authentication
-protocol, ie a single sign on platform, that uses URLs as identifiers.
-With this plugin on your [PyBlosxom](http://pyblosxom.bluesock.org/) site, you can
-login anywhere that accepts OpenID.
+I've just posted an [OpenID server plugin for PyBlosxom](/pyblosxom_openid_server). [OpenID](http://openid.net/) is a distributed authentication protocol, ie a single sign on platform, that uses URLs as identifiers. With this plugin on your [PyBlosxom](http://pyblosxom.bluesock.org/) site, you can login anywhere that accepts OpenID.
 
-Identity and authentication have been classically thorny, unsolved problems
-for the real-world Internet. They're easy to solve in closed, centralized
-organizations, like schools and companies, but difficult in a global,
-decentralized network. What's worse, the difficulties aren't just technical,
-they're political and social.
+Identity and authentication have been classically thorny, unsolved problems for the real-world Internet. They're easy to solve in closed, centralized organizations, like schools and companies, but difficult in a global, decentralized network. What's worse, the difficulties aren't just technical, they're political and social.
 
-OpenID is exciting for a number of reasons. It's decentralized - _federated_,
-more accurately - and it solves the hard problems by cheating. OpenID uses DNS
-and URLs, succesful technologies that have stood the test of time, for its
-namespace, routing, and auth delegation. This means they skip most of the
-hard problems altogether, and they can leverage lots of existing code for free.
-Even more importantly, the average user already understands and trust URLs.
+OpenID is exciting for a number of reasons. It's decentralized - _federated_, more accurately - and it solves the hard problems by cheating. OpenID uses DNS and URLs, succesful technologies that have stood the test of time, for its namespace, routing, and auth delegation. This means they skip most of the hard problems altogether, and they can leverage lots of existing code for free. Even more importantly, the average user already understands and trust URLs.
 
-To be brutally honest, the rest is mostly glue. Sure, non-trivial crypto glue
-on the technical side, and adoption hurdles on the social side...but still
-just glue.
+To be brutally honest, the rest is mostly glue. Sure, non-trivial crypto glue on the technical side, and adoption hurdles on the social side...but still just glue.
 
-Most of the time, when you come up against a problem, chances are good that
-people smarter than you have already solved it. Taking advantage of their
-smarts, and hard work, is always a winning strategy.
+Most of the time, when you come up against a problem, chances are good that people smarter than you have already solved it. Taking advantage of their smarts, and hard work, is always a winning strategy.
 
-So, if it wasn't obvious by now, I'm a fan. I'm psyched to do more stuff with
-OpenID.
+So, if it wasn't obvious by now, I'm a fan. I'm psyched to do more stuff with OpenID.
 

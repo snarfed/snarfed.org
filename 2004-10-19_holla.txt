@@ -5,18 +5,7 @@ Holla!
  <a href="/p4">
   <img src="/p2p.jpg" /></a></p>
 
-It took us a while, but we finally packaged up [p4](/p4) and [released
-it](http://freshmeat.net/projects/p4). Well, we've only released the backend and
-a small example plugin and client; we haven't released the mp3 syncher yet. But
-still, it's a release!
+It took us a while, but we finally packaged up [p4](/p4) and [released it](http://freshmeat.net/projects/p4). Well, we've only released the backend and a small example plugin and client; we haven't released the mp3 syncher yet. But still, it's a release!
 
-If you don't remember it from our senior year at school, [P4](/p4) is a
-self-organizing, peer-to-peer overlay network similar to
-[Gnutella](http://rfc-gnutella.sourceforge.net/) and
-[Freenet](http://freenet.sf.net/). However, P4 differs in that it provides an
-API for developing plugin applications on top of the network. P4 handles the
-networking and exports functionality for unicast, multicast, user and plugin
-discovery, and strong encryption and authentication. This frees developers from
-worrying about networking, and allows them to focus on building real
-functionality.
+If you don't remember it from our senior year at school, [P4](/p4) is a self-organizing, peer-to-peer overlay network similar to [Gnutella](http://rfc-gnutella.sourceforge.net/) and [Freenet](http://freenet.sf.net/). However, P4 differs in that it provides an API for developing plugin applications on top of the network. P4 handles the networking and exports functionality for unicast, multicast, user and plugin discovery, and strong encryption and authentication. This frees developers from worrying about networking, and allows them to focus on building real functionality.
 

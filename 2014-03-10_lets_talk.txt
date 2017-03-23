@@ -5,46 +5,19 @@ Let's Talk userscript
 <a href="/lets_talk.png">
  <img class="shutter shadow" src="/lets_talk.png" /></a></p>
 
-I've released my first hack from
-[IndieWebCamp SF 2014](http://indiewebcamp.com/2014/SF)!
-[Let's Talk](http://userscripts.org/scripts/show/408847) is a
-[userscript](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) that
-renders [h-cards](http://microformats.org/wiki/h-card) in a standard format.
-When you go to someone's web site, Let's Talk shows you at a glance how to
-contact them and which methods they prefer.
+I've released my first hack from [IndieWebCamp SF 2014](http://indiewebcamp.com/2014/SF)! [Let's Talk](http://userscripts.org/scripts/show/408847) is a [userscript](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/) that renders [h-cards](http://microformats.org/wiki/h-card) in a standard format. When you go to someone's web site, Let's Talk shows you at a glance how to contact them and which methods they prefer.
 
 <!-- more -->
 <span />
 
-We live in an app-focused world. When we want to talk to someone, we first have
-to choose an app to use. Some people prefer email, others text, others facetime
-[or GitHub](https://github.com/aaronpk/self) or a good old phone call.
+We live in an app-focused world. When we want to talk to someone, we first have to choose an app to use. Some people prefer email, others text, others facetime [or GitHub](https://github.com/aaronpk/self) or a good old phone call.
 
-[Tantek](http://tantek.com/) has argued strongly for moving away from this and
-toward a
-[people-oriented approach](http://tantek.com/2013/338/b1/people-focused-mobile-communication-experience),
-and even
-[started designing it](http://tantek.com/2014/067/b2/mockups-people-focused-mobile-communication).
-We'd all put our preferred contact methods on our web sites - email addresses,
-Twitter handles, etc. - and use those to contact each other.
+[Tantek](http://tantek.com/) has argued strongly for moving away from this and toward a [people-oriented approach](http://tantek.com/2013/338/b1/people-focused-mobile-communication-experience), and even [started designing it](http://tantek.com/2014/067/b2/mockups-people-focused-mobile-communication). We'd all put our preferred contact methods on our web sites - email addresses, Twitter handles, etc. - and use those to contact each other.
 
-I'm all for this! ...except it's not very good for muscle memory. I love that
-everyone's web site looks different, but if you have to visually parse a
-different design every time you want to talk to someone, that's not ideal. We
-could prevent that by making the "contact" sections of our web sites all look
-the same, but that's not ideal either.
+I'm all for this! ...except it's not very good for muscle memory. I love that everyone's web site looks different, but if you have to visually parse a different design every time you want to talk to someone, that's not ideal. We could prevent that by making the "contact" sections of our web sites all look the same, but that's not ideal either.
 
-[Let's Talk](http://userscripts.org/scripts/show/408847) fixes this. When you
-want to talk to someone, go to their web site, turn on Let's Talk, and their
-communication methods appear in the top left corner, in the order they prefer,
-with standard icons and styling.
+[Let's Talk](http://userscripts.org/scripts/show/408847) fixes this. When you want to talk to someone, go to their web site, turn on Let's Talk, and their communication methods appear in the top left corner, in the order they prefer, with standard icons and styling.
 
-The
-[source is on GitHub](https://github.com/snarfed/misc/blob/master/userscripts/lets_talk.user.js),
-and I happily accept pull requests. Thanks to
-[Glenn Jones](http://glennjones.net/) for his awesome
-[microformat-shiv](http://microformatshiv.com/) library, and to
-[Automattic](http://automattic.com/) for their great
-[Genericons](http://genericons.com/) font. Happy communicating!
+The [source is on GitHub](https://github.com/snarfed/misc/blob/master/userscripts/lets_talk.user.js), and I happily accept pull requests. Thanks to [Glenn Jones](http://glennjones.net/) for his awesome [microformat-shiv](http://microformatshiv.com/) library, and to [Automattic](http://automattic.com/) for their great [Genericons](http://genericons.com/) font. Happy communicating!
 
 _<a rel="syndication" class="u-syndication" href="http://news.indiewebcamp.com/post/snarfed.org/2014-03-10_lets-talk-userscript">Also on IndieNews.</a>_

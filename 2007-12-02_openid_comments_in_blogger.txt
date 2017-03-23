@@ -7,21 +7,8 @@
 <a href="http://google.com/">
  <img src="/google_logo.gif" style="padding-bottom: 1em" /></a>
 
-I've been working on adding [OpenID](http://openid.net/) support inside Google as a
-[20% project](http://www.google.com/support/jobs/bin/static.py?page=about.html&about=eng)
-for a while now. It took some evangelizing, but our first
-OpenID project, commenting in
-[Blogger](http://blogger.com/), has
-[finally launched](http://bloggerindraft.blogspot.com/2007/11/new-feature-openid-commenting.html)!
+I've been working on adding [OpenID](http://openid.net/) support inside Google as a [20% project](http://www.google.com/support/jobs/bin/static.py?page=about.html&about=eng) for a while now. It took some evangelizing, but our first OpenID project, commenting in [Blogger](http://blogger.com/), has [finally launched](http://bloggerindraft.blogspot.com/2007/11/new-feature-openid-commenting.html)!
 
-For the OpenID geeks out there, we've turned Blogger into a consumer, aka
-relying party. It has full support for
-[1.0](http://openid.net/specs/specs-1.0.bml) and
-[1.1](http://openid.net/specs/specs-1.0.bml), and
-partial support for
-[2.0 draft 12](http://openid.net/specs/openid-authentication-2_0-12.html).
-(It's missing XRI-based discovery.)
+For the OpenID geeks out there, we've turned Blogger into a consumer, aka relying party. It has full support for [1.0](http://openid.net/specs/specs-1.0.bml) and [1.1](http://openid.net/specs/specs-1.0.bml), and partial support for [2.0 draft 12](http://openid.net/specs/openid-authentication-2_0-12.html). (It's missing XRI-based discovery.)
 
-OpenID commenting is currently supported in [Blogger
-Draft](http://draft.blogger.com/), ie beta, but we'll roll it out to all
-users soon. Keep an eye out for future OpenID projects...
+OpenID commenting is currently supported in [Blogger Draft](http://draft.blogger.com/), ie beta, but we'll roll it out to all users soon. Keep an eye out for future OpenID projects...

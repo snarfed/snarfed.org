@@ -2,368 +2,82 @@
 Interactive Music in Games
 
 _[STS145](http://sts145.stanford.edu/) Case History  
-([part](http://shl.stanford.edu/Game_archive/StudentPapers/BySubject/A-I/I/InteractiveMusic/Barrett_Ryan.pdf)
-of the
-[How They Got Game archive](http://shl.stanford.edu/Game_archive/);
-[back to writing](/writing))_
+([part](http://shl.stanford.edu/Game_archive/StudentPapers/BySubject/A-I/I/InteractiveMusic/Barrett_Ryan.pdf) of the [How They Got Game archive](http://shl.stanford.edu/Game_archive/); [back to writing](/writing))_
 
-Soundtracks contribute more to movies and games than most people
-realize. Stripped of their soundtracks, the chase scene in the
-latest action flick and the poignant confession of love in a
-romance would seem much less compelling. Music is one of the most
-powerful ways to inspire our feelings and emotions. There are songs
-that make us feel joyful, despondent, angry, hopeful, strong, and -
-when the radio plays that new pop song one time too many - even
-irritated. Historically, many art forms and institutions have taken
-advantage of this. Movies have soundtracks, theater has musicals
-and operas, church has hymns, gymnasts and ice skaters perform to
-music, and even television commercials have catchy jingles. Music
-is used in each of these to draw out or heighten a certain feeling
-that contributes to the overall experience. If it is done well,
-music can be just as effective in computer and video games.
+Soundtracks contribute more to movies and games than most people realize. Stripped of their soundtracks, the chase scene in the latest action flick and the poignant confession of love in a romance would seem much less compelling. Music is one of the most powerful ways to inspire our feelings and emotions. There are songs that make us feel joyful, despondent, angry, hopeful, strong, and - when the radio plays that new pop song one time too many - even irritated. Historically, many art forms and institutions have taken advantage of this. Movies have soundtracks, theater has musicals and operas, church has hymns, gymnasts and ice skaters perform to music, and even television commercials have catchy jingles. Music is used in each of these to draw out or heighten a certain feeling that contributes to the overall experience. If it is done well, music can be just as effective in computer and video games.
 
 **Interactive Music, Defined**
 
-"You're walking slowly down a hallway too dark to be certain of
-what, if anything lies in the shadows. You're being very cautious,
-because your health is very low, and there are no health-ups in
-sight. As you go you get the vague feeling that there's danger
-ahead. 'Of course,' you think, games always throw danger at you in
-dark places. But there's more to it than that. You feel worse about
-this hallway as the seconds go by, your character creeping along
-with only a pixel or two on his health meter. Is it the darkness?
-Perhaps...but it's been dark all along. Why do you feel worse about
-this now? Finally you realize why. The place sounds worse. The
-music has gone all spooky and dissonant. You're just thinking
-'cool' as a huge blue Orcus with knotted muscles and oozing lips
-rips your character's head off. You've just had the interactive
-music experience." [[Harland 2000]](#Harland_2000)
+"You're walking slowly down a hallway too dark to be certain of what, if anything lies in the shadows. You're being very cautious, because your health is very low, and there are no health-ups in sight. As you go you get the vague feeling that there's danger ahead. 'Of course,' you think, games always throw danger at you in dark places. But there's more to it than that. You feel worse about this hallway as the seconds go by, your character creeping along with only a pixel or two on his health meter. Is it the darkness? Perhaps...but it's been dark all along. Why do you feel worse about this now? Finally you realize why. The place sounds worse. The music has gone all spooky and dissonant. You're just thinking 'cool' as a huge blue Orcus with knotted muscles and oozing lips rips your character's head off. You've just had the interactive music experience." [[Harland 2000]](#Harland_2000)
 
-The goal of interactive music is to increase the immersiveness of a
-game, the feeling that the player is not a person at a computer but
-is actually in the game world and experiencing it as the game
-character [[Cross 98]](#Cross_98). Graphics and sound effects are
-the features that traditionally create this suspension of
-disbelief, and rightfully so. Vision and hearing are the two most
-developed human senses, and also the only two sensory experiences
-that can be reproduced adequately on consumer-level electronic
-hardware. However, other features contribute to the immersiveness
-and suspension of disbelief as well, if less directly. A compelling
-story and strong characters draw the player into the game.
-Convincing artificial intelligence makes the player forget that the
-characters are not really alive. Finally, interactive music
-heightens the feelings of excitement, fear, suspense, awe, and even
-emotions like sadness and joy [[Oldziey 2000]](#Oldziey_2000) that
-the game draws from the player. Music has been used in movies and
-other linear media for decades to accomplish these goals, and it
-can be just as powerful in games.
+The goal of interactive music is to increase the immersiveness of a game, the feeling that the player is not a person at a computer but is actually in the game world and experiencing it as the game character [[Cross 98]](#Cross_98). Graphics and sound effects are the features that traditionally create this suspension of disbelief, and rightfully so. Vision and hearing are the two most developed human senses, and also the only two sensory experiences that can be reproduced adequately on consumer-level electronic hardware. However, other features contribute to the immersiveness and suspension of disbelief as well, if less directly. A compelling story and strong characters draw the player into the game. Convincing artificial intelligence makes the player forget that the characters are not really alive. Finally, interactive music heightens the feelings of excitement, fear, suspense, awe, and even emotions like sadness and joy [[Oldziey 2000]](#Oldziey_2000) that the game draws from the player. Music has been used in movies and other linear media for decades to accomplish these goals, and it can be just as powerful in games.
 
-Interactive music in computer and video games is generally defined
-as music that changes based on events in the game
-[[Cross 98]](#Cross_98). This cannot be trivial, so allowing the
-user to switch between songs doesn't count. Furthermore, the events
-that the music responds to must be dynamic, so playing a different
-song for each level doesn't count. Some of the music itself may be
-generated dynamically to achieve pleasing interactive music, but
-this is not required [[Whitmore 99]](#Whitmore_99). It is worth
-noting that the music only reacts to the game, as opposed to
-forming part of the gameplay. There is a genre of games in which
-the player actually composes or plays music, either directly as in
-Sony's Pa-Rappa the Rapper [[Matsuura 2000]](#Matsuura_2000) or
-indirectly as in Sega's Space Channel 5. This type of gameplay is
-innovative, but it is not discussed in this paper.
+Interactive music in computer and video games is generally defined as music that changes based on events in the game [[Cross 98]](#Cross_98). This cannot be trivial, so allowing the user to switch between songs doesn't count. Furthermore, the events that the music responds to must be dynamic, so playing a different song for each level doesn't count. Some of the music itself may be generated dynamically to achieve pleasing interactive music, but this is not required [[Whitmore 99]](#Whitmore_99). It is worth noting that the music only reacts to the game, as opposed to forming part of the gameplay. There is a genre of games in which the player actually composes or plays music, either directly as in Sony's Pa-Rappa the Rapper [[Matsuura 2000]](#Matsuura_2000) or indirectly as in Sega's Space Channel 5. This type of gameplay is innovative, but it is not discussed in this paper.
 
 **Prehistory and the Dark Ages**
 
-Interactive music may have gained widespread use recently, but it
-is not a new idea. In early games such as Asteroids and Space
-Invaders, the soundtrack was interactive even though it consisted
-of nothing more than a series of tones played at different pitches
-[[Harland 2000]](#Harland_2000). When the aliens got close enough
-to the player's ship or enough asteroids appeared on the screen,
-the music would speed up until the player died or moved on to the
-next level. Since early audio hardware was so rudimentary, this was
-the only technique designers had to create interactive music.
-Still, it was employed successfully in many games, including one of
-the most recognizable games ever, Super Mario Bros. for the NES.
-Anyone who played Super Mario Bros. can remember the sequence of
-bouncy, cartoonish chords that would play when the timer dropped
-below a minute, and the familiar theme that would play at a
-distressingly hurried pace. Nothing in the gameplay would change,
-but the tempo imparted an almost palpable need to rush through the
-level at breakneck speed in order to beat the timer. It may have
-been crude, but it was very effective.
+Interactive music may have gained widespread use recently, but it is not a new idea. In early games such as Asteroids and Space Invaders, the soundtrack was interactive even though it consisted of nothing more than a series of tones played at different pitches [[Harland 2000]](#Harland_2000). When the aliens got close enough to the player's ship or enough asteroids appeared on the screen, the music would speed up until the player died or moved on to the next level. Since early audio hardware was so rudimentary, this was the only technique designers had to create interactive music. Still, it was employed successfully in many games, including one of the most recognizable games ever, Super Mario Bros. for the NES. Anyone who played Super Mario Bros. can remember the sequence of bouncy, cartoonish chords that would play when the timer dropped below a minute, and the familiar theme that would play at a distressingly hurried pace. Nothing in the gameplay would change, but the tempo imparted an almost palpable need to rush through the level at breakneck speed in order to beat the timer. It may have been crude, but it was very effective.
 
-As technology progressed, programmers and composers coaxed more and more
-convincing music out of game hardware. High-end sound cards synthesized
-realistic-sounding instruments, and the advent of CD-ROM meant that composers
-could record high quality music in a studio and simply stream it from the disc
-during gameplay. After hearing what the new hardware could do, many producers
-and designers wanted to impress their audience with game music that sounded like
-music on the radio [[Harland IAJ 2000]](#Harland_IAJ_2000). Unfortunately,
-interactivity suffered because popular songs are linear, and this format
-detracted from the games' immersion and suspension of disbelief. Also, the
-people who played the games did not stay impressed for long. Games could not
-compete with the radio and stereo because game music is much more limited by
-hardware and storage capacity. After hearing the same song over and over again,
-an entire generation of gamers was conditioned to turn the music off as soon as
-they got a new game out of the shrinkwrap. This was a step backwards not only
-for interactive music, but for game music in general.
+As technology progressed, programmers and composers coaxed more and more convincing music out of game hardware. High-end sound cards synthesized realistic-sounding instruments, and the advent of CD-ROM meant that composers could record high quality music in a studio and simply stream it from the disc during gameplay. After hearing what the new hardware could do, many producers and designers wanted to impress their audience with game music that sounded like music on the radio [[Harland IAJ 2000]](#Harland_IAJ_2000). Unfortunately, interactivity suffered because popular songs are linear, and this format detracted from the games' immersion and suspension of disbelief. Also, the people who played the games did not stay impressed for long. Games could not compete with the radio and stereo because game music is much more limited by hardware and storage capacity. After hearing the same song over and over again, an entire generation of gamers was conditioned to turn the music off as soon as they got a new game out of the shrinkwrap. This was a step backwards not only for interactive music, but for game music in general.
 
 **The Renaissance**
 
-After a while, game composers realized this - starting with
-LucasArts' Peter McConnell (X-Wing, Tie Fighter), EA's Alistair
-Hirst (Need for Speed II and III), and Crystal Dynamics' Kurt
-Harland (Blood Omen: Legacy of Kain) - and began to rethink the
-concept of game music itself. They composed audio tracks that fit
-into specific game environments and were often more ambient noise
-than music. Low, slow-moving melodies would play when the player
-was underwater, and jungle areas would elicit animal noises and
-far-off drum beats. The immediate result was that the music felt
-less repetitive and didn't intrude on the game experience. After
-playing for a while, though, the music would leave the player's
-conscious awareness and enter the game's experience on a much more
-visceral level. Alistair Hirst says, "If done well, most consumers
-won't even realize that the music is interactive, but will find the
-game more compelling somehow." [[Whitmore 99]](#Whitmore_99) This
-contribution is subtle but ultimately very important to the
-industry's eventual acceptance of interactive music.
+After a while, game composers realized this - starting with LucasArts' Peter McConnell (X-Wing, Tie Fighter), EA's Alistair Hirst (Need for Speed II and III), and Crystal Dynamics' Kurt Harland (Blood Omen: Legacy of Kain) - and began to rethink the concept of game music itself. They composed audio tracks that fit into specific game environments and were often more ambient noise than music. Low, slow-moving melodies would play when the player was underwater, and jungle areas would elicit animal noises and far-off drum beats. The immediate result was that the music felt less repetitive and didn't intrude on the game experience. After playing for a while, though, the music would leave the player's conscious awareness and enter the game's experience on a much more visceral level. Alistair Hirst says, "If done well, most consumers won't even realize that the music is interactive, but will find the game more compelling somehow." [[Whitmore 99]](#Whitmore_99) This contribution is subtle but ultimately very important to the industry's eventual acceptance of interactive music.
 
-These games were first steps into the unexplored territory of
-interactive music, but the results were very positive. Most of the
-games were developed by experienced, proven teams like Origin and
-LucasArts and had strong support from their publishers. The
-majority of critics appluaded them, and even the dissenting critics
-mentioned the music as a positive feature. When interactive music
-appeared in such landmark games as Wing Commander 3 (Origin),
-Unreal (Epic), and Mario 64 (Nintendo), the industry generally
-recognized that interactive music's time had come. Despite this,
-the number of games that used it grew slowly. Composing and
-engineering interactive music required significant new skills, and
-the knowledge that existed in the industry was scattered and
-immature.
+These games were first steps into the unexplored territory of interactive music, but the results were very positive. Most of the games were developed by experienced, proven teams like Origin and LucasArts and had strong support from their publishers. The majority of critics appluaded them, and even the dissenting critics mentioned the music as a positive feature. When interactive music appeared in such landmark games as Wing Commander 3 (Origin), Unreal (Epic), and Mario 64 (Nintendo), the industry generally recognized that interactive music's time had come. Despite this, the number of games that used it grew slowly. Composing and engineering interactive music required significant new skills, and the knowledge that existed in the industry was scattered and immature.
 
 **New Challenges**
 
-One of the defining characteristics of interactive music is its
-nonlinearity. While nonlinear music is a perfect fit for games,
-almost all historical forms of music are linear in composition and
-performance. It is a challenge for experienced game composers to
-write good non-linear music, and it was even more intimidating for
-many composers with traditional backgrounds who were new to games.
-Often, interactive music is produced by composing themes
-corresponding to different elements in the game - for example, a
-theme for each character or a theme for each situation like
-fighting and hiding. At transition points, the game can either fade
-in the new theme [[Miller 97]](#Miller_97) or generate a musical
-transition into the new theme [[Whitmore 99]](#Whitmore_99). Both
-of these methods must be fine-tuned so that the music sounds
-seamless. Some composers write tracks for each event they want to
-capture, and change the music by unmuting an event's track when
-that event happens. These tracks must fit musically with all other
-tracks that could be playing at the time, and must also fit with
-any theme or transition if the game uses different themes. Most
-importantly, the music must be compelling, even though the overall
-structure is generated non-deterministically by the player's
-actions. Kurt Harland describes this as "not a long thin bar of
-music that reads from left to right, but a flowering, fractal,
-3-dimensional form which dances and changes."
-[[Harland 2000]](#Harland_2000) Most composers take for granted the
-ability to plan the thematic structure of a piece ahead of time, so
-this change was nontrivial.
+One of the defining characteristics of interactive music is its nonlinearity. While nonlinear music is a perfect fit for games, almost all historical forms of music are linear in composition and performance. It is a challenge for experienced game composers to write good non-linear music, and it was even more intimidating for many composers with traditional backgrounds who were new to games. Often, interactive music is produced by composing themes corresponding to different elements in the game - for example, a theme for each character or a theme for each situation like fighting and hiding. At transition points, the game can either fade in the new theme [[Miller 97]](#Miller_97) or generate a musical transition into the new theme [[Whitmore 99]](#Whitmore_99). Both of these methods must be fine-tuned so that the music sounds seamless. Some composers write tracks for each event they want to capture, and change the music by unmuting an event's track when that event happens. These tracks must fit musically with all other tracks that could be playing at the time, and must also fit with any theme or transition if the game uses different themes. Most importantly, the music must be compelling, even though the overall structure is generated non-deterministically by the player's actions. Kurt Harland describes this as "not a long thin bar of music that reads from left to right, but a flowering, fractal, 3-dimensional form which dances and changes." [[Harland 2000]](#Harland_2000) Most composers take for granted the ability to plan the thematic structure of a piece ahead of time, so this change was nontrivial.
 
-Interactive music introduced new challenges for programmers as well
-as composers. To produce traditional game music, the music code is
-disconnected from the game engine and the only necessary input is
-the song to play. This natural separation contributed to the
-creation of music systems that developers could license and plug
-directly into their game code, such as the Staccato SDK, RAD Game
-Tools' Miles Sound System, and Digital Dream Multimedia's Galaxy
-[Miller 99]. However, interactive music requires a significantly
-larger development effort. Programmers and composers must work
-closely together to ensure that the music responds correctly to
-events in the game - for example, if the music has a track that is
-unmuted when fighting a certain enemy, the music code must allow
-for mutable tracks and triggers for each enemy.
+Interactive music introduced new challenges for programmers as well as composers. To produce traditional game music, the music code is disconnected from the game engine and the only necessary input is the song to play. This natural separation contributed to the creation of music systems that developers could license and plug directly into their game code, such as the Staccato SDK, RAD Game Tools' Miles Sound System, and Digital Dream Multimedia's Galaxy [Miller 99]. However, interactive music requires a significantly larger development effort. Programmers and composers must work closely together to ensure that the music responds correctly to events in the game - for example, if the music has a track that is unmuted when fighting a certain enemy, the music code must allow for mutable tracks and triggers for each enemy.
 
-One of the largest hurdles in implementing nonlinear game music was
-the programming required to implement interactive music. Developers
-have used industry standards such as MIDI, MODs, Redbook CD audio,
-and Microsoft's DirectMusic extensively in producing game music.
-MIDI was the format of choice for many games on early personal
-computers. A MIDI sequence stores each note to be played in a song
-and the instrument used to play it, usually selected from a
-standard set of 8-32 instruments. MIDI was an attractive format for
-interactive music because transitions and other sequences could be
-easily be generated programmatically. However, this approach
-generally takes a significant amount of programming since at least
-some music is generated on the fly [[Whitmore 99]](#Whitmore_99).
-One of the most famous examples is Mario 64 for the Nintendo 64.
-The console's audio hardware supports PCM compression, a technique
-similar to MIDI sequences, which Mario 64 used to play appropriate
-themes when Mario was in different areas of each level.
+One of the largest hurdles in implementing nonlinear game music was the programming required to implement interactive music. Developers have used industry standards such as MIDI, MODs, Redbook CD audio, and Microsoft's DirectMusic extensively in producing game music. MIDI was the format of choice for many games on early personal computers. A MIDI sequence stores each note to be played in a song and the instrument used to play it, usually selected from a standard set of 8-32 instruments. MIDI was an attractive format for interactive music because transitions and other sequences could be easily be generated programmatically. However, this approach generally takes a significant amount of programming since at least some music is generated on the fly [[Whitmore 99]](#Whitmore_99). One of the most famous examples is Mario 64 for the Nintendo 64. The console's audio hardware supports PCM compression, a technique similar to MIDI sequences, which Mario 64 used to play appropriate themes when Mario was in different areas of each level.
 
-MODs and streaming CD audio took a different approach than MIDI.
-While MIDI was used to generate a large minority of the music on
-the fly, MODs and CD audio are usually played exactly as they were
-recorded. The music is made interactive by frequently branching to
-different songs or parts of the song in response to events in the
-game. MODs are similar to MIDI, except the instruments are stored
-in the MOD file instead of in hardware. This means that composers
-can record any number of instruments, including longer effects and
-even lyrics, and render the music from a MIDI-like sequence of
-notes. Alexander Brandon used MODs to implement the music for
-Epic's Unreal, a landmark first-person shooter. Each level had a
-MOD file that stored its own unique theme and variations on the
-theme to be played during situations like fighting or entering
-certain areas [[Brandon 2000]](#Brandon_2000). CD audio is less
-restrictive than MODs because music is recorded directly onto the
-CD, so the quality is higher and guaranteed to be standard
-regardless of the user's platform or audio hardware. However, the
-time required to switch tracks or jump within a track is
-noticeable. George Oldziey implemented the music for Origin's
-Ultima: Ascension, considered by many to be one of the best
-role-playing games ever, using streaming CD audio. He composed
-distinct themes for the three main virtues and their counterparts,
-as well as "variations of them in which the thematic material still
-had its own integrity yet could be combined in different ways."
-[[Oldziey 2000]](#Oldziey_2000).
+MODs and streaming CD audio took a different approach than MIDI. While MIDI was used to generate a large minority of the music on the fly, MODs and CD audio are usually played exactly as they were recorded. The music is made interactive by frequently branching to different songs or parts of the song in response to events in the game. MODs are similar to MIDI, except the instruments are stored in the MOD file instead of in hardware. This means that composers can record any number of instruments, including longer effects and even lyrics, and render the music from a MIDI-like sequence of notes. Alexander Brandon used MODs to implement the music for Epic's Unreal, a landmark first-person shooter. Each level had a MOD file that stored its own unique theme and variations on the theme to be played during situations like fighting or entering certain areas [[Brandon 2000]](#Brandon_2000). CD audio is less restrictive than MODs because music is recorded directly onto the CD, so the quality is higher and guaranteed to be standard regardless of the user's platform or audio hardware. However, the time required to switch tracks or jump within a track is noticeable. George Oldziey implemented the music for Origin's Ultima: Ascension, considered by many to be one of the best role-playing games ever, using streaming CD audio. He composed distinct themes for the three main virtues and their counterparts, as well as "variations of them in which the thematic material still had its own integrity yet could be combined in different ways." [[Oldziey 2000]](#Oldziey_2000).
 
-The most recent development in technology for interactive music is
-Microsoft's DirectMusic, part of the DirectX API for Windows
-[[Hays 98]](#Hays_98). DirectMusic is one of the first pieces of
-software to use DLS, a recent standard set by the Interactive Audio
-Special Interests Group (IA-SIG), a major industry organization.
-DLS allows games to download custom instruments onto the sound
-card, which can then be used in MIDI sequences. DLS is similar to
-MODs in that composers are not limited to a small pre-defined set
-of instruments, but also offloads the sound rendering work from the
-CPU to the sound card. To create interactive music with
-DirectMusic, composers create instruments in DLS and themes in
-MIDI. They then define a set of "styles" that modify the themes,
-varying from tempo changes to alternate chord progressions to extra
-drum tracks [[MSDN 2000]](#MSDN_2000). The game code uses
-DirectMusic hooks to switch styles or themes at appropriate times,
-and DirectMusic modifies the MIDI sequence and programmatically
-transitions between themes if necessary. The roster of DirectMusic
-games includes Verant's Everquest, Square's Final Fantasy VII, and
-games built on Monolith's LithTech engine including No One Lives
-Forever. Other music systems such as the Miles Sound System and
-LucasArts' iMuse have been successfully used to create interactive
-music, but none have grown as explosively as DirectMusic. This
-trend will continue into the future, since DirectX will be used as
-the SDK for Microsoft's upcoming Xbox game console.
+The most recent development in technology for interactive music is Microsoft's DirectMusic, part of the DirectX API for Windows [[Hays 98]](#Hays_98). DirectMusic is one of the first pieces of software to use DLS, a recent standard set by the Interactive Audio Special Interests Group (IA-SIG), a major industry organization. DLS allows games to download custom instruments onto the sound card, which can then be used in MIDI sequences. DLS is similar to MODs in that composers are not limited to a small pre-defined set of instruments, but also offloads the sound rendering work from the CPU to the sound card. To create interactive music with DirectMusic, composers create instruments in DLS and themes in MIDI. They then define a set of "styles" that modify the themes, varying from tempo changes to alternate chord progressions to extra drum tracks [[MSDN 2000]](#MSDN_2000). The game code uses DirectMusic hooks to switch styles or themes at appropriate times, and DirectMusic modifies the MIDI sequence and programmatically transitions between themes if necessary. The roster of DirectMusic games includes Verant's Everquest, Square's Final Fantasy VII, and games built on Monolith's LithTech engine including No One Lives Forever. Other music systems such as the Miles Sound System and LucasArts' iMuse have been successfully used to create interactive music, but none have grown as explosively as DirectMusic. This trend will continue into the future, since DirectX will be used as the SDK for Microsoft's upcoming Xbox game console.
 
 **Other Factors**
 
-The most noticeable effects of interactive music have appeared in
-the experience of playing games, but interactive music has begun to
-change the business and culture of games as well. Music and sound
-effects have traditionally been the red-headed stepchildren of the
-game development process. Sound designers and composers are usually
-brought on as contractors for only part of a game's development,
-have little or no hands-on contact with the game, and are paid a
-small fraction of the budget. This is adequate for games with
-linear music, but interactive music require cooperation between the
-game designers, the composer, and the sound programmer during most
-of the development cycle. Also, traditional pricing models for game
-music break down with interactive music
-[[Brandon 98]](#Brandon_98). A composer may charge $500-$1000 per
-song, depending on musicians and other expenses, but interactive
-music usually can't be separated into distinct songs. Even if a
-composer charges per theme, the amount of work that goes into
-designing a theme may vary from game to game, and some games might
-use music systems that forego transitioned themes for another
-technique entirely. These obstacles may not be as challenging as
-composing or implementing interactive music, but they must be taken
-into account nonetheless.
+The most noticeable effects of interactive music have appeared in the experience of playing games, but interactive music has begun to change the business and culture of games as well. Music and sound effects have traditionally been the red-headed stepchildren of the game development process. Sound designers and composers are usually brought on as contractors for only part of a game's development, have little or no hands-on contact with the game, and are paid a small fraction of the budget. This is adequate for games with linear music, but interactive music require cooperation between the game designers, the composer, and the sound programmer during most of the development cycle. Also, traditional pricing models for game music break down with interactive music [[Brandon 98]](#Brandon_98). A composer may charge $500-$1000 per song, depending on musicians and other expenses, but interactive music usually can't be separated into distinct songs. Even if a composer charges per theme, the amount of work that goes into designing a theme may vary from game to game, and some games might use music systems that forego transitioned themes for another technique entirely. These obstacles may not be as challenging as composing or implementing interactive music, but they must be taken into account nonetheless.
 
-Widespread adoption of interactive music could have an unforeseen
-impact on game culture as well. Game music has enjoyed a sort of
-cult popularity for decades, from Strider and Mega Man to Final
-Fantasy VIII. Many avid gamers listen to their favorite game music
-in their spare time, especially in Japan where game playing is a
-fundamental part of national culture and game music is listed on
-the charts along with pop music stars. The recent addition of game
-music categories to the Grammies indicates that the game music
-trend is growing in the US as well. However, like the majority of
-movie soundtracks, interactive music serves as background to the
-game experience. It is not designed to stand alone, and since it is
-non-linear, even converting it to linear songs is problematic. This
-could easily upset hardcore gamers and game music afficionados.
-Furthermore, Japan is the focal point of most console game
-development, and almost all gamers in Japan are game music
-afficionados as well. Time has yet to tell whether this important
-market segment will accept the tradeoff of quality linear music for
-more immersion in the game world.
+Widespread adoption of interactive music could have an unforeseen impact on game culture as well. Game music has enjoyed a sort of cult popularity for decades, from Strider and Mega Man to Final Fantasy VIII. Many avid gamers listen to their favorite game music in their spare time, especially in Japan where game playing is a fundamental part of national culture and game music is listed on the charts along with pop music stars. The recent addition of game music categories to the Grammies indicates that the game music trend is growing in the US as well. However, like the majority of movie soundtracks, interactive music serves as background to the game experience. It is not designed to stand alone, and since it is non-linear, even converting it to linear songs is problematic. This could easily upset hardcore gamers and game music afficionados. Furthermore, Japan is the focal point of most console game development, and almost all gamers in Japan are game music afficionados as well. Time has yet to tell whether this important market segment will accept the tradeoff of quality linear music for more immersion in the game world.
 
-Music is often the least memorable feature of computer and video
-games. Historically, it has been noticed only when the music is
-repetitive and intrudes on the game experience. Interactive music
-attempts to change this not by making game music more noticeable,
-but by adapting it to the game experience as it happens. Early
-attempts at interactive music were crude, but programmers and
-composers learned new tricks and turned out results that impressed
-critics and game players alike. If games are fun largely because
-they allow players to go places and do things that they can't do in
-real life, the feeling of "being there" is critical. Interactive
-music is one of the most powerful tools driving this suspension of
-disbelief, and it can only get better.
+Music is often the least memorable feature of computer and video games. Historically, it has been noticed only when the music is repetitive and intrudes on the game experience. Interactive music attempts to change this not by making game music more noticeable, but by adapting it to the game experience as it happens. Early attempts at interactive music were crude, but programmers and composers learned new tricks and turned out results that impressed critics and game players alike. If games are fun largely because they allow players to go places and do things that they can't do in real life, the feeling of "being there" is critical. Interactive music is one of the most powerful tools driving this suspension of disbelief, and it can only get better.
 
 <a name="Brandon_98"></a>\[Brandon 98\]  
-["Interactive Music: Merging Quality with Effectiveness"](http://www.gamasutra.com/features/sound_and_music/19980327/interactive_music_quality_intro.htm)
-by Alexander Brandon, composer, Straylight Productions. Gamasutra,
-March 27, 1998.
+["Interactive Music: Merging Quality with Effectiveness"](http://www.gamasutra.com/features/sound_and_music/19980327/interactive_music_quality_intro.htm) by Alexander Brandon, composer, Straylight Productions. Gamasutra, March 27, 1998.
 
 <a name="Brandon_99"></a>\[Brandon 99\]  
-[An interview with the the "Legacy of Kain: Soul Reaver" sound team](http://www.iasig.org/pubs/jour0102.html)
-at Eidos USA, by Alexander Brandon. The Interactive Audio Journal,
-July 1999, a publication of the Interactive Audio Special Interests
-Group (IA-SIG).
+[An interview with the the "Legacy of Kain: Soul Reaver" sound team](http://www.iasig.org/pubs/jour0102.html) at Eidos USA, by Alexander Brandon. The Interactive Audio Journal, July 1999, a publication of the Interactive Audio Special Interests Group (IA-SIG).
 
 <a name="Brandon_2000"></a>\[Brandon 2000\]  
-["Composing Music for Unreal"](http://unreal.epicgames.com/music.htm)
-by Alexander Brandon, composer for "Unreal," Straylight
-Productions.
+["Composing Music for Unreal"](http://unreal.epicgames.com/music.htm) by Alexander Brandon, composer for "Unreal," Straylight Productions.
 
 <a name="Cross_98"></a>\[Cross 98\]  
-["Listen to the Game"](http://www.ogr.com/columns/totallyabsorbed/totally_absorbed.shtml)
-by Jason Cross, columnist, Online Gaming Review.
+["Listen to the Game"](http://www.ogr.com/columns/totallyabsorbed/totally_absorbed.shtml) by Jason Cross, columnist, Online Gaming Review.
 
 <a name="Harland_2000"></a>\[Harland 2000\]  
-["Composing for Interactive Music"](http://www.gamasutra.com/features/20000217/harland_01.htm)
-by Kurt Harland, composer, Crystal Dynamics. Gamasutra, February
-17, 2000.
+["Composing for Interactive Music"](http://www.gamasutra.com/features/20000217/harland_01.htm) by Kurt Harland, composer, Crystal Dynamics. Gamasutra, February 17, 2000.
 
 <a name="Harland_IAJ_2000"></a>\[Harland IAJ 2000\]  
-[An interview with Kurt Harland, composer for "Legacy of Kain: Soul Reaver," Crystal Dynamics](http://www.iasig.org/pubs/jour0105.htm),
-by Alexander Brandon. The Interactive Audio Journal, October 2000.
+[An interview with Kurt Harland, composer for "Legacy of Kain: Soul Reaver," Crystal Dynamics](http://www.iasig.org/pubs/jour0105.htm), by Alexander Brandon. The Interactive Audio Journal, October 2000.
 
 <a name="Hays_98"></a>\[Hays 98\]  
-["DirectMusic for the Masses"](http://www.gamasutra.com/features/sound_and_music/19981106/directmusic_01.htm);
-by Tom Hays, audio director and DirectMusic evangelist. Game
-Developer Magazine, September 1998.
+["DirectMusic for the Masses"](http://www.gamasutra.com/features/sound_and_music/19981106/directmusic_01.htm); by Tom Hays, audio director and DirectMusic evangelist. Game Developer Magazine, September 1998.
 
 <a name="Matsuura_2000"></a>\[Matsuura 2000\]  
-[An interview with Masaya Matsuura, composer for "Parappa the Rapper" and "Um-Jammer Lammy," Nana-On-Sha](http://www.iasig.org/pubs/jour0104.html),
-by Mark Miller and Alexander Brandon. The Interactive Audio
-Journal, March 2000.
+[An interview with Masaya Matsuura, composer for "Parappa the Rapper" and "Um-Jammer Lammy," Nana-On-Sha](http://www.iasig.org/pubs/jour0104.html), by Mark Miller and Alexander Brandon. The Interactive Audio Journal, March 2000.
 
 <a name="Miller_97"></a>\[Miller 97\]  
-["Producing Interactive Audio: Thoughts, Tools, and Techniques"](http://www.gamasutra.com/features/sound_and_music/111497/interaudio1.htm);
-by Mark Miller, audio director, Crystal Dynamics and co-chairman,
-IA-SIG. Game Developer Magazine, October 1997.
+["Producing Interactive Audio: Thoughts, Tools, and Techniques"](http://www.gamasutra.com/features/sound_and_music/111497/interaudio1.htm); by Mark Miller, audio director, Crystal Dynamics and co-chairman, IA-SIG. Game Developer Magazine, October 1997.
 
 <a name="MSDN_2000"></a>\[MSDN 2000\]  
 [Microsoft Developer Network, documentation for the DirectMusic 8.0 API and developer tools.](http://msdn.microsoft.com/library/default.asp?URL=/library/psdk/directx/dx8_c/hh/directx8_c/_introducing_directx_8.0.htm)
 
 <a name="Oldziey_2000"></a>\[Oldziey 2000\]  
-[An interview with George Oldziey, composer for "Ultima: Ascension," Origin Systems](http://www.iasig.org/pubs/jour0104.html),
-by Alexander Brandon. The Interactive Audio Journal, March 2000.
+[An interview with George Oldziey, composer for "Ultima: Ascension," Origin Systems](http://www.iasig.org/pubs/jour0104.html), by Alexander Brandon. The Interactive Audio Journal, March 2000.
 
 <a name="Whitmore_99"></a>\[Whitmore 99\]  
-[An interview with Guy Whitmore, game composer](http://www.iasig.org/pubs/jour0103.html),
-by Chanel Summers, Audio Technical Evangelist for Microsoft. The
-Interactive Audio Journal, November 1999.
-
+[An interview with Guy Whitmore, game composer](http://www.iasig.org/pubs/jour0103.html), by Chanel Summers, Audio Technical Evangelist for Microsoft. The Interactive Audio Journal, November 1999.

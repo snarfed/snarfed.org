@@ -5,47 +5,19 @@ Easy IndieWeb interactions on Android
  <a href="http://indiewebcamp.com/">
    <img src="/indiewebcamp.png"/></a></p>
 
-Commenting, liking, and retweeting have never been quite as easy on the
-[IndieWeb](http://indiewebcamp.com/) as on Facebook, Twitter, and other
-[silos](http://indiewebcamp.com/silos), _especially_ on mobile. There are
-[bookmarklets for WordPress](/indieweb_press_this_bookmarklets_for_wordpress)
-[and Known](http://werd.io/2014/my-indieweb-life-how-my-site-gives-me-an-awesome##reply+to+my+friends)
-that work well on desktop, but they're not easy to set up on phones or tablets,
-and they don't work at all outside the browser. If you're reading a post in your
-feed reader app, and you want to [indie like](http://indiewebcamp.com/like) it,
-you're out of luck...
+Commenting, liking, and retweeting have never been quite as easy on the [IndieWeb](http://indiewebcamp.com/) as on Facebook, Twitter, and other [silos](http://indiewebcamp.com/silos), _especially_ on mobile. There are [bookmarklets for WordPress](/indieweb_press_this_bookmarklets_for_wordpress) [and Known](http://werd.io/2014/my-indieweb-life-how-my-site-gives-me-an-awesome##reply+to+my+friends) that work well on desktop, but they're not easy to set up on phones or tablets, and they don't work at all outside the browser. If you're reading a post in your feed reader app, and you want to [indie like](http://indiewebcamp.com/like) it, you're out of luck...
 
-...until now! The
-[Bookmarklet Free](https://play.google.com/store/apps/details?id=com.kurtchen.android.bookmarklet.free)
-app lets you share to a custom URL - like your site's posting interface! - and
-pass the title and link as parameters. This means you can reply to or like a
-post from any Android app _with just three taps_: Share, then the Bookmarklet
-Free custom URL, then your site's publish button. What's more, if your site can
-[POSSE](http://indiewebcamp.com/POSSE) silo
-[interactions](http://indiewebcamp.com/interactions), or you use
-[Bridgy Publish](https://www.brid.gy/about#publish), it even works from the
-Twitter and Facebook apps. Living the dream!
+...until now! The [Bookmarklet Free](https://play.google.com/store/apps/details?id=com.kurtchen.android.bookmarklet.free) app lets you share to a custom URL - like your site's posting interface! - and pass the title and link as parameters. This means you can reply to or like a post from any Android app _with just three taps_: Share, then the Bookmarklet Free custom URL, then your site's publish button. What's more, if your site can [POSSE](http://indiewebcamp.com/POSSE) silo [interactions](http://indiewebcamp.com/interactions), or you use [Bridgy Publish](https://www.brid.gy/about#publish), it even works from the Twitter and Facebook apps. Living the dream!
 
 <p class="right half" style="margin-right: 20px">
  <a href="/bookmarklet_free_press_this.png">
    <img class="shadow" src="/bookmarklet_free_press_this.png" /></a></p>
 
-For example, if you use the
-[IndieWeb Press This bookmarklets](/indieweb_press_this_bookmarklets_for_wordpress),
-here's how to set up a share bookmarklet for likes. Open the _Bookmarklet_ app,
-tap _Custom Services_, then the menu icon in the bottom right, then _Create
-Custom Services_, then fill in the fields like as shown here, replacing
-`https://snarfed.org/w/` with your site's WordPress path. (Also make sure you
-have the most recent version of the
-[IndieWeb Press This plugin](https://github.com/pfefferle/wordpress-indieweb-press-this)
-[as of Oct. 21 2014](https://github.com/pfefferle/wordpress-indieweb-press-this/commit/962a11c4168206a422c3b2532f9c3c6265669f75).)
+For example, if you use the [IndieWeb Press This bookmarklets](/indieweb_press_this_bookmarklets_for_wordpress), here's how to set up a share bookmarklet for likes. Open the _Bookmarklet_ app, tap _Custom Services_, then the menu icon in the bottom right, then _Create Custom Services_, then fill in the fields like as shown here, replacing `https://snarfed.org/w/` with your site's WordPress path. (Also make sure you have the most recent version of the [IndieWeb Press This plugin](https://github.com/pfefferle/wordpress-indieweb-press-this) [as of Oct. 21 2014](https://github.com/pfefferle/wordpress-indieweb-press-this/commit/962a11c4168206a422c3b2532f9c3c6265669f75).)
 
-For other types of interactions, just change `type=like` in the Base URL to
-`type=reply`, `type=repost`, or `type=rsvp`, respectively.
+For other types of interactions, just change `type=like` in the Base URL to `type=reply`, `type=repost`, or `type=rsvp`, respectively.
 
-If you're on [Known](http://withknown.com/), try using
-`http://YOURSITE/share?share_type=reply` as the Base URL, `share_url` as the URL
-parameter name, and leave the Title parameter name blank.
+If you're on [Known](http://withknown.com/), try using `http://YOURSITE/share?share_type=reply` as the Base URL, `share_url` as the URL parameter name, and leave the Title parameter name blank.
 
 Happy interacting!
 

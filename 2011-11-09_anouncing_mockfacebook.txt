@@ -5,19 +5,8 @@ Announcing mockfacebook
  <a href="https://github.com/rogerhu/mockfacebook">
   <img src="/beer_cap_facebook_logo.png" /></a></p>
 
-Recently, while researching a
-[side project](/2011-07-27_facebook_app_for_ostatus), I started looking at the
-[Facebook APIs](https://developers.facebook.com/docs/). I was surprised that I
-couldn't find a decent library for mocking or faking
-[FQL](http://developers.facebook.com/docs/reference/fql/) or the
-[Graph API](http://developers.facebook.com/docs/reference/api/). Everyone just
-uses live Facebook to test, sometimes even in unit tests!
+Recently, while researching a [side project](/2011-07-27_facebook_app_for_ostatus), I started looking at the [Facebook APIs](https://developers.facebook.com/docs/). I was surprised that I couldn't find a decent library for mocking or faking [FQL](http://developers.facebook.com/docs/reference/fql/) or the [Graph API](http://developers.facebook.com/docs/reference/api/). Everyone just uses live Facebook to test, sometimes even in unit tests!
 
-A few thousand lines of code later, I had a little utility to fill that void.
-[mockfacebook](https://github.com/rogerhu/mockfacebook) is a standalone HTTP
-server that implements Facebook's FQL and Graph API. It's particularly useful
-for automated integration testing. It's backed by a [SQLite](http://sqlite.org/)
-database, which you can seed from Facebook or populate manually or
-programmatically.
+A few thousand lines of code later, I had a little utility to fill that void. [mockfacebook](https://github.com/rogerhu/mockfacebook) is a standalone HTTP server that implements Facebook's FQL and Graph API. It's particularly useful for automated integration testing. It's backed by a [SQLite](http://sqlite.org/) database, which you can seed from Facebook or populate manually or programmatically.
 
 Feedback is welcome!

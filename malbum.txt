@@ -3,13 +3,7 @@ MAlbum
 
 ### Introduction
 
-I am certain every digital shutter-bug has their own workflow for archiving and
-sharing their digital photos. My workflow maintains an archive of every photo I
-take, organized by date, and a second set of albums that are for sharing. In the
-past, I would need to manually copy the photos that I wanted to share and then
-use and application to generate the web pages/thumbnails etc. so that I could
-share these pictures. I wanted to streamline my workflow into a single
-application.
+I am certain every digital shutter-bug has their own workflow for archiving and sharing their digital photos. My workflow maintains an archive of every photo I take, organized by date, and a second set of albums that are for sharing. In the past, I would need to manually copy the photos that I wanted to share and then use and application to generate the web pages/thumbnails etc. so that I could share these pictures. I wanted to streamline my workflow into a single application.
 
 So I present: **MAlbum: Maulik's Album application**
 
@@ -23,17 +17,14 @@ So I present: **MAlbum: Maulik's Album application**
   * Quickly add captions to photos
   * Easily add/remove photos from the album
   * Cross Platform (like Jalbum)
-  * Easily maintain an archive of original photos, and build a library of albums
-to share (like Picasa)
-  * Re-open an album, load captions and images and once again add/remove photos
-and add/remove/change captions
+  * Easily maintain an archive of original photos, and build a library of albums to share (like Picasa)
+  * Re-open an album, load captions and images and once again add/remove photos and add/remove/change captions
   * Zero Install (executable jar file, <60Kb)
 
 ### Existing Packages
 
   * Jalbum
-  * - Operates on every picture from a single directory. Cannot combine pictures
-from different directories.
+  * - Operates on every picture from a single directory. Cannot combine pictures from different directories.
   * Web Album Generator
   * - No keyboard short cut to remove pictures from selection.
   * - Web albums do not link to original photos
@@ -50,12 +41,10 @@ from different directories.
 
 ### Download an Sample
 
-  * Download
-[MAlbum.jar](http://maulik.freeshell.net/software/malbum-release/MAlbum.jar)
+  * Download [MAlbum.jar](http://maulik.freeshell.net/software/malbum-release/MAlbum.jar)
   * Jar file includes source and Makefile
   * Relased under GPL
-  * [Sample
-Album](http://maulik.freeshell.net/software/malbum-release/malbumSample)
+  * [Sample Album](http://maulik.freeshell.net/software/malbum-release/malbumSample)
 
 ### Usage and Requirements
 

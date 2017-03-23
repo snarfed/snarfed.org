@@ -1,14 +1,7 @@
 1926
 Ion: pull Firefox with Lua
 
-I use the
-[orphaned](http://en.wikipedia.org/wiki/Ion_%28window_manager%29#Controversy)
-[Ion](http://en.wikipedia.org/wiki/Ion_%28window_manager%29) as my window
-manager, and I love it. Here's a [Lua](http://lua.org/) script I wrote for Ion
-that lets me "pull" a Firefox window to the current frame, parameterized on the
-Firefox profile. It finds the pid of the Firefox process by looking at the
-`~/.mozilla/firefox/[PROFILE]/lock` file, then searches ion for an X window with
-that pid in its `_NET_WM_PID` X property and attaches it.
+I use the [orphaned](http://en.wikipedia.org/wiki/Ion_%28window_manager%29#Controversy) [Ion](http://en.wikipedia.org/wiki/Ion_%28window_manager%29) as my window manager, and I love it. Here's a [Lua](http://lua.org/) script I wrote for Ion that lets me "pull" a Firefox window to the current frame, parameterized on the Firefox profile. It finds the pid of the Firefox process by looking at the `~/.mozilla/firefox/[PROFILE]/lock` file, then searches ion for an X window with that pid in its `_NET_WM_PID` X property and attaches it.
 
 ```
 pid_atom = ioncore.x_intern_atom('_NET_WM_PID', true)

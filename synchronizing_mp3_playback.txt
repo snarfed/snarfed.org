@@ -5,175 +5,70 @@ synchronizing mp3 playback
 
 ### Background
 
-Once upon a time, we thought a killer app for hall parties would be an MP3
-player synchronizer. We actually wrote one, as part of our p2p network,
-[P4](/p4). It plugged into [Winamp](http://winamp.com/) and synched its
-playback with other P4 users on the network. This allowed lots of computers to
-sync up and play the same songs, at the same time, as if they were tuned to the
-same radio station. It sounded like one giant stereo with lots and lots of
-speakers.
+Once upon a time, we thought a killer app for hall parties would be an MP3 player synchronizer. We actually wrote one, as part of our p2p network, [P4](/p4). It plugged into [Winamp](http://winamp.com/) and synched its playback with other P4 users on the network. This allowed lots of computers to sync up and play the same songs, at the same time, as if they were tuned to the same radio station. It sounded like one giant stereo with lots and lots of speakers.
 
-We had considered alternatives. First, we tried tuning lots of computers to the
-same streaming MP3 server. Unfortunately, they ended up out of sync due to
-buffering. Another low-tech alternative was to yell "Play!" and have everyone
-try to start an MP3 at the same time. We actually tried this, and quickly
-verified that it's more or less impossible.
+We had considered alternatives. First, we tried tuning lots of computers to the same streaming MP3 server. Unfortunately, they ended up out of sync due to buffering. Another low-tech alternative was to yell "Play!" and have everyone try to start an MP3 at the same time. We actually tried this, and quickly verified that it's more or less impossible.
 
-In the end, [P4](/p4)'s syncher worked, but it was brittle and not at all easy to
-use. I tried again without P2P, and ended up with a solid synching engine, but
-couldn't find a player with low enough plugin latency. When the sync plugin says
-"seek here!", it needs to happen within 50ms or so, all the way from the player
-down through the sound card driver. [Winamp](http://winamp.com/) can do this,
-but not [iTunes](http://itunes.com/), nor any *nix players we found.
+In the end, [P4](/p4)'s syncher worked, but it was brittle and not at all easy to use. I tried again without P2P, and ended up with a solid synching engine, but couldn't find a player with low enough plugin latency. When the sync plugin says "seek here!", it needs to happen within 50ms or so, all the way from the player down through the sound card driver. [Winamp](http://winamp.com/) can do this, but not [iTunes](http://itunes.com/), nor any *nix players we found.
 
-Beyond that, our real world tests found that players have different playback
-rates. The differences are small; by the end of the average three minute song,
-two different players have only skewed by a few seconds at most. Still, the
-human ear can detect skew as low as a few dozen milliseconds, so to counteract
-this, all players need to re-sync often. This is doable, but if seeking a
-player results in a noticeable skip or other artifact, that's a problem.
+Beyond that, our real world tests found that players have different playback rates. The differences are small; by the end of the average three minute song, two different players have only skewed by a few seconds at most. Still, the human ear can detect skew as low as a few dozen milliseconds, so to counteract this, all players need to re-sync often. This is doable, but if seeking a player results in a noticeable skip or other artifact, that's a problem.
 
-Still, if you're interested, feel free to check out the source in the
-[p4sync project on github](https://github.com/snarfed/p4sync). It comes with the
-sync engine, plugin framework, and working plugins for the *nix music players
-[XMMS](http://xmms.org/), [Zinf](http://zinf.org/), and
-[MPD](http://musicpd.org/). [Drop me a line](/about) if you have any questions!
+Still, if you're interested, feel free to check out the source in the [p4sync project on github](https://github.com/snarfed/p4sync). It comes with the sync engine, plugin framework, and working plugins for the *nix music players [XMMS](http://xmms.org/), [Zinf](http://zinf.org/), and [MPD](http://musicpd.org/). [Drop me a line](/about) if you have any questions!
 
 ### Related Work
 
-The
-["synchronizing audio over a network"](http://stackoverflow.com/questions/2795031/synchronizing-audio-over-a-network)
-question on [Stack Overflow](http://stackoverflow.com/) has a number of good
-links, including Tom Blank of Microsoft Research's paper
-[An Internet Protocol Sound System](http://research.microsoft.com/apps/pubs/default.aspx?id=65146).
+The ["synchronizing audio over a network"](http://stackoverflow.com/questions/2795031/synchronizing-audio-over-a-network) question on [Stack Overflow](http://stackoverflow.com/) has a number of good links, including Tom Blank of Microsoft Research's paper [An Internet Protocol Sound System](http://research.microsoft.com/apps/pubs/default.aspx?id=65146).
 
-The [NetSync Winamp plugin](http://winamp.com/plugins/details.php?id=15667)
-attempts to solve the synchronization problem too. However, it's low-tech; it's
-the network equivalent of shouting "Play!" and hoping everyone presses the
-button at the same time. Because of this, its sync quality is often in the mid
-to high hundreds of milliseconds, which is unacceptable.
+The [NetSync Winamp plugin](http://winamp.com/plugins/details.php?id=15667) attempts to solve the synchronization problem too. However, it's low-tech; it's the network equivalent of shouting "Play!" and hoping everyone presses the button at the same time. Because of this, its sync quality is often in the mid to high hundreds of milliseconds, which is unacceptable.
 
-The [BASS Network
-Player](http://www.kquery.com/index.php?page=software_info&subpage=1&id=8), from
-[K\* Software](http://kquery.com/), takes a different approach. It's a
-self-contained MP3 player, with network synchronization built in. When I've
-managed to get it working, its sync quality seems to be better than NetSync's.
-However, it can be very flaky and difficult to use.
+The [BASS Network Player](http://www.kquery.com/index.php?page=software_info&subpage=1&id=8), from [K\* Software](http://kquery.com/), takes a different approach. It's a self-contained MP3 player, with network synchronization built in. When I've managed to get it working, its sync quality seems to be better than NetSync's. However, it can be very flaky and difficult to use.
 
-Also, it's not a plugin for your normal MP3 player. This is a noticeable
-drawback, since it lacks most of the features (usability, playlist management,
-plugins, different file formats, visualizations, etc.) that we've come to expect
-from MP3 players.
+Also, it's not a plugin for your normal MP3 player. This is a noticeable drawback, since it lacks most of the features (usability, playlist management, plugins, different file formats, visualizations, etc.) that we've come to expect from MP3 players.
 
-[Slim Devices](http://slimdevices.com/), best known for the
-[Squeezebox](http://slimp3.com/pi_specs.html), a dedicated set-top box MP3
-player, recently released the software that powers it under the GPL. It's called
-[SlimServer](http://slimp3.com/pi_features.html), and one of its touted features
-is the ability to synchronize MP3 streams on multiple clients. It's somewhat
-non-trivial to install, so I haven't fully evaluated it yet...but it looks
-promising.
+[Slim Devices](http://slimdevices.com/), best known for the [Squeezebox](http://slimp3.com/pi_specs.html), a dedicated set-top box MP3 player, recently released the software that powers it under the GPL. It's called [SlimServer](http://slimp3.com/pi_features.html), and one of its touted features is the ability to synchronize MP3 streams on multiple clients. It's somewhat non-trivial to install, so I haven't fully evaluated it yet...but it looks promising.
 
-Finally, [Media Player
-Puppeteer](http://www.myradus.com/Product_MediaPlayerPuppeteerForm.aspx) claims
-to synchronize iTunes over a network, and allows for remote control. On the plus
-side, it syncs playlists and songs fairly well. However, like the others, its
-sync quality is unacceptable. Even with only two computers, when we tested, we
-heard a noticeable echo. MPP also requires iTunes, Windows, and the .NET
-framework, which limits its target audience severely.
+Finally, [Media Player Puppeteer](http://www.myradus.com/Product_MediaPlayerPuppeteerForm.aspx) claims to synchronize iTunes over a network, and allows for remote control. On the plus side, it syncs playlists and songs fairly well. However, like the others, its sync quality is unacceptable. Even with only two computers, when we tested, we heard a noticeable echo. MPP also requires iTunes, Windows, and the .NET framework, which limits its target audience severely.
 
 ### Challenges
 
-**Network latency**. MP3 streaming technologies (such as
-[ShoutCast](http://shoutcast.com)) already exist. However, they assume that a
-central server will be broadcasting a stream of music to many computers that are
-geographically disparate. Its goal is to maintain an uninterrupted stream of
-music flowing to each computer. As a result, it pushes out music as fast as
-possible and stores the extra music in a buffer to ensure continutity. It
-assumes each user will experience latency (lag), so the buffer ensures that no
-user runs out of music to listening to. Unfortunately, this buffering almost
-guarantees that no two users listening to the same stream will be in sync.
+**Network latency**. MP3 streaming technologies (such as [ShoutCast](http://shoutcast.com)) already exist. However, they assume that a central server will be broadcasting a stream of music to many computers that are geographically disparate. Its goal is to maintain an uninterrupted stream of music flowing to each computer. As a result, it pushes out music as fast as possible and stores the extra music in a buffer to ensure continutity. It assumes each user will experience latency (lag), so the buffer ensures that no user runs out of music to listening to. Unfortunately, this buffering almost guarantees that no two users listening to the same stream will be in sync.
 
-**Playback rate**. The syncher used [Winamp](http://winamp.com/) v.2.x as its
-mp3 player. By using Winamp's API, we were able to determine that _different
-computers play mp3's at noticably different rates!_ This means, if you are able
-to start synchonized playback between two computers, they may well skew out of
-sync midway through the song, and you'll hear a noticeable echo.
+**Playback rate**. The syncher used [Winamp](http://winamp.com/) v.2.x as its mp3 player. By using Winamp's API, we were able to determine that _different computers play mp3's at noticably different rates!_ This means, if you are able to start synchonized playback between two computers, they may well skew out of sync midway through the song, and you'll hear a noticeable echo.
 
-**Player API latency**. We also noticed that there was an occasional delay, as
-large as hundreds of milliseconds, between when we told Winamp to seek and when
-it actually seeked. Worse, this delay was highly variable. Needless to say, if
-our goal is accurate synchronization, this is deadly. We're not sure if the
-delay was caused by Windows' IPC, Winamp, or unavoidable hardware delays like
-the hard drive controller. We haven't tested any other players to see if they
-experience similar delays.
+**Player API latency**. We also noticed that there was an occasional delay, as large as hundreds of milliseconds, between when we told Winamp to seek and when it actually seeked. Worse, this delay was highly variable. Needless to say, if our goal is accurate synchronization, this is deadly. We're not sure if the delay was caused by Windows' IPC, Winamp, or unavoidable hardware delays like the hard drive controller. We haven't tested any other players to see if they experience similar delays.
 
 ### Solution
 
-The key insight is, synchronizing computers within milliseconds over a
-best-effort network is a _hard_ problem. I doubt any of the p4sync developers is
-smart enough to solve it from scratch. Luckily, computer science researchers
-back in the '80s figured out how to do it, and designed [NTP](http://ntp.org/).
-Since then, most people have piggybacked over NTP for their synchronization
-needs.
+The key insight is, synchronizing computers within milliseconds over a best-effort network is a _hard_ problem. I doubt any of the p4sync developers is smart enough to solve it from scratch. Luckily, computer science researchers back in the '80s figured out how to do it, and designed [NTP](http://ntp.org/). Since then, most people have piggybacked over NTP for their synchronization needs.
 
-So, just like everyone else, we cheat and use NTP (actually
-[SNTP](/libmsntp)) to solve the hard problem. Who am I to look a gift
-horse in the mouth?
+So, just like everyone else, we cheat and use NTP (actually [SNTP](/libmsntp)) to solve the hard problem. Who am I to look a gift horse in the mouth?
 
-Seriously, though, there's only one trick to p4sync, and that is how it uses
-NTP. One host acts as the p4sync server. The other p4sync clients synchronize
-their system clocks to the server's clock, using SNTP. When the server starts
-playing a song, it records the time, to the millisecond. The clients then
-retrieve that timestamp, calculate the difference between current time from that
-timestamp, and seek forward that far into the song.
+Seriously, though, there's only one trick to p4sync, and that is how it uses NTP. One host acts as the p4sync server. The other p4sync clients synchronize their system clocks to the server's clock, using SNTP. When the server starts playing a song, it records the time, to the millisecond. The clients then retrieve that timestamp, calculate the difference between current time from that timestamp, and seek forward that far into the song.
 
 It's really all quite simple. No, really.
 
-We use existing, tried-and-true technologies for everything except the music
-synching. We use [libmsntp](/libmsntp) for synching system clocks. The
-server timestamp and the current song and playlist are sent over HTTP, using
-[http-tiny](http://www.demailly.com/~dl/wwwtools.html) and
-[libwebserver](http://libwebserver.sourceforge.net/). The MP3 players are
-existing players with large installed bases, initially [Windows Media
-Player](http://www.microsoft.com/windows/windowsmedia/default.aspx),
-[Winamp](http://winamp.com/), [iTunes](http://itunes.com/), and
-[XMMS](http://xmms.org/). So, most of the p4sync code is nothing more than glue.
+We use existing, tried-and-true technologies for everything except the music synching. We use [libmsntp](/libmsntp) for synching system clocks. The server timestamp and the current song and playlist are sent over HTTP, using [http-tiny](http://www.demailly.com/~dl/wwwtools.html) and [libwebserver](http://libwebserver.sourceforge.net/). The MP3 players are existing players with large installed bases, initially [Windows Media Player](http://www.microsoft.com/windows/windowsmedia/default.aspx), [Winamp](http://winamp.com/), [iTunes](http://itunes.com/), and [XMMS](http://xmms.org/). So, most of the p4sync code is nothing more than glue.
 
 ### Party Structure
 
 Each party needs exactly one host. The rest of the computers are guests.
 
-The host is the server. It is the authoritative source of the currently playing
-song, as well as determines the speed at which to play it.
+The host is the server. It is the authoritative source of the currently playing song, as well as determines the speed at which to play it.
 
-Each guest is responsible for downloading the songs in the playlist of the party
-as well as playing back the songs. Guests ask the host which song to play, and
-when that song started playing.
+Each guest is responsible for downloading the songs in the playlist of the party as well as playing back the songs. Guests ask the host which song to play, and when that song started playing.
 
-The official time is determined by the host's system clock, which guests sync to
-using SNTP. This means that any network lag will be compensated by knowing the
-true time. If a guest is playing a song too slowly, it can periodically skip
-ahead every now and then to re-sync.
+The official time is determined by the host's system clock, which guests sync to using SNTP. This means that any network lag will be compensated by knowing the true time. If a guest is playing a song too slowly, it can periodically skip ahead every now and then to re-sync.
 
 ### Future plans
 
-  * Investigate methods to guarantee that MP3s play back at a constant rate,
-regardless of player or host.
+  * Investigate methods to guarantee that MP3s play back at a constant rate, regardless of player or host.
 
   * Distribute playlists and songs from the host to the guests.
 
-  * Automatic host discovery, possible using
-[Bonjour](http://developer.apple.com/darwin/projects/bonjour/index.html)
-(formerly [Rendezvous](http://developer.apple.com/darwin/projects/rendezvous/),
-aka [ZeroConf](http://zeroconf.org/)).
+  * Automatic host discovery, possible using [Bonjour](http://developer.apple.com/darwin/projects/bonjour/index.html) (formerly [Rendezvous](http://developer.apple.com/darwin/projects/rendezvous/), aka [ZeroConf](http://zeroconf.org/)).
 
 ### History
 
-p4sync used to be [hosted at
-SourceForge](https://sourceforge.net/projects/p4sync/). Snarfed has its own web
-space and [subversion repository](/2004-01-08_subversion), though, so SourceForge
-ended up being redundant. We've closed the project there, but we definitely
-appreciated their hospitality. So long, SourceForge, and thanks for all the
-fish!
+p4sync used to be [hosted at SourceForge](https://sourceforge.net/projects/p4sync/). Snarfed has its own web space and [subversion repository](/2004-01-08_subversion), though, so SourceForge ended up being redundant. We've closed the project there, but we definitely appreciated their hospitality. So long, SourceForge, and thanks for all the fish!
 
 - [Maulik](/Maulik) and [Ryan](/about)

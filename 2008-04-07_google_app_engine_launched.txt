@@ -5,12 +5,7 @@ Google App Engine Launched!
  <a href="http://code.google.com/appengine/">
   <img src="/logo_en_appengine.gif" /></a></p>
 
-If you've talked to me about work during the last couple years, I've probably
-downplayed it, resorted to generalities, or just changed the subject. No
-longer! We've finally
-[taken the wraps](http://code.google.com/campfire/) off our project,
-[Google App Engine](http://code.google.com/appengine/). From the
-[docs](http://code.google.com/appengine/docs/whatisgoogleappengine.html):
+If you've talked to me about work during the last couple years, I've probably downplayed it, resorted to generalities, or just changed the subject. No longer! We've finally [taken the wraps](http://code.google.com/campfire/) off our project, [Google App Engine](http://code.google.com/appengine/). From the [docs](http://code.google.com/appengine/docs/whatisgoogleappengine.html):
 
 > Google App Engine lets you run your web applications on Google's
 > infrastructure. App Engine applications are easy to build, easy to maintain,
@@ -21,17 +16,6 @@ longer! We've finally
 <a href="http://code.google.com/appengine/">
   <img class="right" src="/appengine.jpg" /></a>
 
-Personally, I spent most of my time writing the
-[datastore](http://code.google.com/appengine/docs/datastore/overview.html),
-both the backend and much of the Python API. When I found extra time,
-though, I had a lot of fun writing apps and libraries on top of App Engine. I
-particularly enjoyed writing an
-[interactive shell](http://shell.appspot.com/), an
-[OpenID provider](http://openid-provider.appspot.com/), and a
-[full text search library](http://code.google.com/appengine/articles/bulkload.html).
+Personally, I spent most of my time writing the [datastore](http://code.google.com/appengine/docs/datastore/overview.html), both the backend and much of the Python API. When I found extra time, though, I had a lot of fun writing apps and libraries on top of App Engine. I particularly enjoyed writing an [interactive shell](http://shell.appspot.com/), an [OpenID provider](http://openid-provider.appspot.com/), and a [full text search library](http://code.google.com/appengine/articles/bulkload.html).
 
-We've been excited about the project since the beginning, and we can't wait
-to see what people do with it. If you're a developer and you have some spare
-time, please
-[try it out](http://code.google.com/appengine/) and
-[let us know](http://groups.google.com/group/google-appengine) what you think!
+We've been excited about the project since the beginning, and we can't wait to see what people do with it. If you're a developer and you have some spare time, please [try it out](http://code.google.com/appengine/) and [let us know](http://groups.google.com/group/google-appengine) what you think!

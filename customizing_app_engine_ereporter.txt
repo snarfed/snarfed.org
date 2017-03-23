@@ -5,24 +5,13 @@ Customizing App Engine's ereporter
  <a href="https://appengine.google.com/">
   <img src="/appengine_logo_new.png" /></a></p>
 
-[Google App Engine](https://appengine.google.com/)'s built in
-[ereporter module](https://developers.google.com/appengine/articles/python/recording_exceptions_with_ereporter)
-([more details](http://blog.notdot.net/2010/03/Using-the-ereporter-module-for-easy-error-reporting-in-App-Engine))
-is an unsung hero of monitoring and error reporting. App Engine's admin console
-and Google Cloud's developer console both have solid monitoring, graphs, and log
-browsers, but there isn't much for aggregating and alerting on user-defined
-errors.
+[Google App Engine](https://appengine.google.com/)'s built in [ereporter module](https://developers.google.com/appengine/articles/python/recording_exceptions_with_ereporter) ([more details](http://blog.notdot.net/2010/03/Using-the-ereporter-module-for-easy-error-reporting-in-App-Engine)) is an unsung hero of monitoring and error reporting. App Engine's admin console and Google Cloud's developer console both have solid monitoring, graphs, and log browsers, but there isn't much for aggregating and alerting on user-defined errors.
 
-Enter ereporter. It handles uncaught (Python) exceptions, stores them in the
-datastore, aggregates them by exception and application version, and sends then
-in an email report. Perfect.
+Enter ereporter. It handles uncaught (Python) exceptions, stores them in the datastore, aggregates them by exception and application version, and sends then in an email report. Perfect.
 
-Everything can be improved, though, and ereporter is no exception. Here are a
-couple monkey patches I use in in [Bridgy](http://brid.gy/) and other App Engine
-projects.
+Everything can be improved, though, and ereporter is no exception. Here are a couple monkey patches I use in in [Bridgy](http://brid.gy/) and other App Engine projects.
 
-First, I deploy a lot, so I'd rather not separate exceptions by minor version.
-This rolls them all up together:
+First, I deploy a lot, so I'd rather not separate exceptions by minor version. This rolls them all up together:
 
 ```
 ereporter.ExceptionRecord.get_key_name = \

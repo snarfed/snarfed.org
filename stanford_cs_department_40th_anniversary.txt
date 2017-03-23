@@ -3,54 +3,25 @@ Stanford CS Department 40th Anniversary
 
 <a href="http://forum.stanford.edu/forty/"><img src="/stanford_cs_40.jpg"></a>
 
-I recently attended the Stanford
-[Computer Science department](http://cs.stanford.edu/)'s
-[40th Anniversary](http://forum.stanford.edu/forty/). It was both a seminar and
-a networking event, featuring professors emeritus from years past, current
-professors, and distinguished alumni. They waxed nostalgic about the CS dept. in
-the "good old days" and they discussed the current state of Stanford CS research
-and industry relations.
+I recently attended the Stanford [Computer Science department](http://cs.stanford.edu/)'s [40th Anniversary](http://forum.stanford.edu/forty/). It was both a seminar and a networking event, featuring professors emeritus from years past, current professors, and distinguished alumni. They waxed nostalgic about the CS dept. in the "good old days" and they discussed the current state of Stanford CS research and industry relations.
 
-[Hector Garcia-Molina](http://forum.stanford.edu/research/profile.php?id=1800),
-the dept's current chair, led the panels, and [John
-Hennessy](http://forum.stanford.edu/research/profile.php?id=1998) keynoted. The
-panels included a number of huge names, most of which I've listed below. The
-crowd almost outshined them, though. People like [Whitfield
-Diffie](http://research.sun.com/people/diffie/), [Vint
-Cerf](http://www.icann.org/biog/cerf.htm), [Dawson
-Engler](http://www.stanford.edu/~engler/), [Brian
-Kernighan](http://cm.bell-labs.com/who/bwk/), and [Alan
-Kay](http://www.viewpointsresearch.org/alan.html) were there to join in the
-celebration...and those were just the ones I recognized!
+[Hector Garcia-Molina](http://forum.stanford.edu/research/profile.php?id=1800), the dept's current chair, led the panels, and [John Hennessy](http://forum.stanford.edu/research/profile.php?id=1998) keynoted. The panels included a number of huge names, most of which I've listed below. The crowd almost outshined them, though. People like [Whitfield Diffie](http://research.sun.com/people/diffie/), [Vint Cerf](http://www.icann.org/biog/cerf.htm), [Dawson Engler](http://www.stanford.edu/~engler/), [Brian Kernighan](http://cm.bell-labs.com/who/bwk/), and [Alan Kay](http://www.viewpointsresearch.org/alan.html) were there to join in the celebration...and those were just the ones I recognized!
 
-The panels and talks were videotaped, so you can [watch them on
-SCPD](http://seminars.stanford.edu).
-[Slides](http://forum.stanford.edu/events/annual_meeting/) and
-[pictures](http://www-db.stanford.edu/~hector/photos/2006/40thSel/album.htm) are also up.
+The panels and talks were videotaped, so you can [watch them on SCPD](http://seminars.stanford.edu). [Slides](http://forum.stanford.edu/events/annual_meeting/) and [pictures](http://www-db.stanford.edu/~hector/photos/2006/40thSel/album.htm) are also up.
 
 Here are my _very_ rough, unedited notes.
 
 ### Professors Emeritus panel
 
-<i>[John McCarthy](http://www-formal.stanford.edu/jmc/), [Don Knuth](http://www-cs-faculty.stanford.edu/~knuth/), [Ed
-Feigenbaum](http://forum.stanford.edu/research/profile.php?id=1836), [Nils
-Nilsson](http://forum.stanford.edu/research/profile.php?id=2008), [Ron
-Rivest](http://theory.lcs.mit.edu/~rivest/), [Gene
-Golub](http://forum.stanford.edu/research/profile.php?id=4006), and others.</i>
+<i>[John McCarthy](http://www-formal.stanford.edu/jmc/), [Don Knuth](http://www-cs-faculty.stanford.edu/~knuth/), [Ed Feigenbaum](http://forum.stanford.edu/research/profile.php?id=1836), [Nils Nilsson](http://forum.stanford.edu/research/profile.php?id=2008), [Ron Rivest](http://theory.lcs.mit.edu/~rivest/), [Gene Golub](http://forum.stanford.edu/research/profile.php?id=4006), and others.</i>
 
-reminisced about programming vending machines, unpopular classes (math,
-numerical analysis), failing quals, reducing phd time from 5.5 yrs, increasing
-grad rate from 1/prof/yr.
+reminisced about programming vending machines, unpopular classes (math, numerical analysis), failing quals, reducing phd time from 5.5 yrs, increasing grad rate from 1/prof/yr.
 
-mccarthy: all programs should require proofs. anti-censorship story about
-newsgroups led to resolution: student/faculty pages and posts are their own
-property.
+mccarthy: all programs should require proofs. anti-censorship story about newsgroups led to resolution: student/faculty pages and posts are their own property.
 
 knuth: showed cs 204/304 curriculum from back in the day.
 
-"trivia hunt" taught how to use library. who taught this class in 1970? which
-room was it in? what color is that room painted now? ... when did gene golub
-turn 13? what's the title of mccarthy's thesis? how many pages? etc...
+"trivia hunt" taught how to use library. who taught this class in 1970? which room was it in? what color is that room painted now? ... when did gene golub turn 13? what's the title of mccarthy's thesis? how many pages? etc...
 
 ### Profs who are elsewhere now panel
 
@@ -58,77 +29,42 @@ I forgot to take notes for this one. :P
 
 ### Current Profs panel
 
-<i> [Bill Dally](http://forum.stanford.edu/research/profile.php?id=4001), [Dan
-Boneh](http://forum.stanford.edu/research/profile.php?id=1837), [Daphne
-Koller](http://forum.stanford.edu/research/profile.php?id=1999), [John
-Mitchell](http://forum.stanford.edu/research/profile.php?id=4011), [Sebastian
-Thrun](http://forum.stanford.edu/research/profile.php?id=4015), [Jennifer
-Widom](http://forum.stanford.edu/research/profile.php?id=4016) </i>
+<i> [Bill Dally](http://forum.stanford.edu/research/profile.php?id=4001), [Dan Boneh](http://forum.stanford.edu/research/profile.php?id=1837), [Daphne Koller](http://forum.stanford.edu/research/profile.php?id=1999), [John Mitchell](http://forum.stanford.edu/research/profile.php?id=4011), [Sebastian Thrun](http://forum.stanford.edu/research/profile.php?id=4015), [Jennifer Widom](http://forum.stanford.edu/research/profile.php?id=4016) </i>
 
-widom: closer and closer to \*all\* information will be web accessible and
-searchable. info integration (data mining) will get better. however, spam will
+widom: closer and closer to \*all\* information will be web accessible and searchable. info integration (data mining) will get better. however, spam will
 \*not\* be solved, and information overload (read/write ratio) will get worse.
 
-thrun: ai used to be general (turing test), then specific (expert systems) when
-we realized it was hard. now we've solved expert systems, it's time to try
-general again. \*except\* for transport - robot driving, worthwhile goal!
+thrun: ai used to be general (turing test), then specific (expert systems) when we realized it was hard. now we've solved expert systems, it's time to try general again. \*except\* for transport - robot driving, worthwhile goal!
 
-daphne: bio stuff. tons of data (e.g. human genome), even if noisy and
-incomplete. will simulate cell, but not fully, and not complex multicellular
-organisms.
+daphne: bio stuff. tons of data (e.g. human genome), even if noisy and incomplete. will simulate cell, but not fully, and not complex multicellular organisms.
 
-dally: von neumann has worked for 60 years (vn's original edvac paper of '45).
-however, no more. scalar performance is running out, and FLOPS is less important
-than power, etc. also, hard-wired functionality is expensive; need to make more
-general-purpose programmable hardware. parallelizing software is a hard
-stumbling block though.
+dally: von neumann has worked for 60 years (vn's original edvac paper of '45). however, no more. scalar performance is running out, and FLOPS is less important than power, etc. also, hard-wired functionality is expensive; need to make more general-purpose programmable hardware. parallelizing software is a hard stumbling block though.
 
-boneh: cynical. common trend, first computerize, then "patchwork" :P security
-after, reactively. witness cell phone viruses, car (bluetooth) viruses,
-phishing. pushes end-user education, static analysis, automatic dmzs. (uh,
-really?)
+boneh: cynical. common trend, first computerize, then "patchwork" :P security after, reactively. witness cell phone viruses, car (bluetooth) viruses, phishing. pushes end-user education, static analysis, automatic dmzs. (uh, really?)
 
-ai q: ten years ago, expert systems could do what 30-year old doctor does. now
-can drive across desert like 20-yr old male. when will we have robot w/general
-perception and knowledge of 10-yr-old?
+ai q: ten years ago, expert systems could do what 30-year old doctor does. now can drive across desert like 20-yr old male. when will we have robot w/general perception and knowledge of 10-yr-old?
 
 sebastian: only need two passionate people. then wait 10 yrs 9 mos.
 
 daphne: he only says that because he doesn't have kids. heh.
 
-also, nick mckeown and ee with cs dept on genie (?), clean-slate rewrite of
-internet. whoa.
+also, nick mckeown and ee with cs dept on genie (?), clean-slate rewrite of internet. whoa.
 
 ### "Upstarts and Rabble Rousers" Panel
 
-<i> [John Markoff](http://communication.stanford.edu/faculty/markoff.html), [Andy
-Bechtolsheim](http://www.sun.com/aboutsun/media/bios/bios_bechtolsheim.html),
-[Jim Clark](http://en.wikipedia.org/wiki/James_H._Clark), [David Filo and Jerry
-Yang](http://yhoo.client.shareholder.com/press/management.cfm), [Mendel
-Rosenblum](http://forum.stanford.edu/research/profile.php?id=4013), [David
-Shaw](http://www.deshaw.com/fs.html) </i>
+<i> [John Markoff](http://communication.stanford.edu/faculty/markoff.html), [Andy Bechtolsheim](http://www.sun.com/aboutsun/media/bios/bios_bechtolsheim.html), [Jim Clark](http://en.wikipedia.org/wiki/James_H._Clark), [David Filo and Jerry Yang](http://yhoo.client.shareholder.com/press/management.cfm), [Mendel Rosenblum](http://forum.stanford.edu/research/profile.php?id=4013), [David Shaw](http://www.deshaw.com/fs.html) </i>
 
-lots of people talking about the rule that successful stanford profs start
-companies. all said it's not causal, but slowly over years, iterative process
-w/stanford outreach and licensing dept, precedent, vcs, etc made it really easy.
+lots of people talking about the rule that successful stanford profs start companies. all said it's not causal, but slowly over years, iterative process w/stanford outreach and licensing dept, precedent, vcs, etc made it really easy.
 
-generally acknowledged role of luck, 90 failed startups and 9 semi successes for
-every blockbuster.
+generally acknowledged role of luck, 90 failed startups and 9 semi successes for every blockbuster.
 
 is center of gravity of startups shifting to biotech? no one would guess.
 
-has pendulum swung too much toward vcs? is industry influencing research too
-much? generally thought it was positive and synergistic. acknowledged danger is
-to pull people, money away from important but \*not\* immediately practical
-research problems. (ie more long-term basic research.)
+has pendulum swung too much toward vcs? is industry influencing research too much? generally thought it was positive and synergistic. acknowledged danger is to pull people, money away from important but \*not\* immediately practical research problems. (ie more long-term basic research.)
 
-darpa funding (and nsf and nae, to lesser degree) is disappearing. this is bad.
-replacement is industry consortiums, but they're unstable.
+darpa funding (and nsf and nae, to lesser degree) is disappearing. this is bad. replacement is industry consortiums, but they're unstable.
 
-web 2.0 hype? web services, programmatic APIs are good. hype around ajax is
-overblown.
+web 2.0 hype? web services, programmatic APIs are good. hype around ajax is overblown.
 
-worried about effect of tightened security on immigration and student visas. us
-univs less accessible, so good students go elsewhere. more political soapboxing
-about basic research funding, energy research, etc.
+worried about effect of tightened security on immigration and student visas. us univs less accessible, so good students go elsewhere. more political soapboxing about basic research funding, energy research, etc.
 

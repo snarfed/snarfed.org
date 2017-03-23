@@ -3,21 +3,11 @@ SnipSnap crash with FileSnipStorage and bad metadata.properties
 
 <a href="http://snipsnap.org/"><img src="/snipsnap.png"></a>
 
-_This
-article describes [SnipSnap](/SnipSnap) 1.0b1-uttoxeter using
-[FileSnipStorage](http://snipsnap.org/space/FileSnipStorage)._
+_This article describes [SnipSnap](/SnipSnap) 1.0b1-uttoxeter using [FileSnipStorage](http://snipsnap.org/space/FileSnipStorage)._
 
-[SnipSnap](/SnipSnap), the software that originally ran this site, is great. I heart
-SnipSnap.
+[SnipSnap](/SnipSnap), the software that originally ran this site, is great. I heart SnipSnap.
 
-Unfortunately, nothing's perfect, even SnipSnap. It occasionally crashes, and if
-you're using [filesystem snip
-storage](http://snipsnap.org/space/FileSnipStorage), it may corrupt itself.
-(This [has](http://nopaper.net/2004/06/15/downtime-is-my-favorite-time.html)
-[been](http://snipsnap.org/comments/help-me-please)
-[discussed](http://snipsnap.org/comments/snipsnap-help#comment-snipsnap-help-85)
-[elsewhere](http://snipforge.org/lurker/message/20060705.232815.00a1e509.en.html).)
-When that happens, it will refuse to start:
+Unfortunately, nothing's perfect, even SnipSnap. It occasionally crashes, and if you're using [filesystem snip storage](http://snipsnap.org/space/FileSnipStorage), it may corrupt itself. (This [has](http://nopaper.net/2004/06/15/downtime-is-my-favorite-time.html) [been](http://snipsnap.org/comments/help-me-please) [discussed](http://snipsnap.org/comments/snipsnap-help#comment-snipsnap-help-85) [elsewhere](http://snipforge.org/lurker/message/20060705.232815.00a1e509.en.html).) When that happens, it will refuse to start:
 
 ```
 SnipSnap 1.0b1-uttoxeter

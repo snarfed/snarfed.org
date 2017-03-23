@@ -5,22 +5,9 @@ automatically close completions in Emacs shell (comint) mode
  <a href="http://gnu.org/software/emacs/">
   <img src="/gnu.jpg" /></a></p>
 
-I recently [started running shells](/why_i_run_shells_inside_emacs) inside
-[Emacs](http://gnu.org/software/emacs/) via
-[shell mode](http://www.gnu.org/software/emacs/manual/html_node/emacs/Shell-Mode.html),
-and so far I'm pretty happy with it. I've found a number of things to tweak,
-though, including the
-[completions buffer](http://www.gnu.org/software/emacs/manual/html_node/emacs/Shell-Options.html),
-which is great except that it overstays its welcome and doesn't close when
-you're done with it.
+I recently [started running shells](/why_i_run_shells_inside_emacs) inside [Emacs](http://gnu.org/software/emacs/) via [shell mode](http://www.gnu.org/software/emacs/manual/html_node/emacs/Shell-Mode.html), and so far I'm pretty happy with it. I've found a number of things to tweak, though, including the [completions buffer](http://www.gnu.org/software/emacs/manual/html_node/emacs/Shell-Options.html), which is great except that it overstays its welcome and doesn't close when you're done with it.
 
-I searched the web and found Dmitriy Igrishin's
-[message](http://groups.google.com/group/gnu.emacs.help/browse_thread/thread/2418c97018c33fbd)
-to [gnu.emacs.help](http://groups.google.com/group/gnu.emacs.help). He kindly
-provided me a
-[patch](https://github.com/snarfed/misc/blob/master/patches/comint_el_automatically_close_completions.patch)
-against Emacs 23.2's `comint.el`, which I translated into the advice below. Put
-it in your `.emacs` and you should be good to go!
+I searched the web and found Dmitriy Igrishin's [message](http://groups.google.com/group/gnu.emacs.help/browse_thread/thread/2418c97018c33fbd) to [gnu.emacs.help](http://groups.google.com/group/gnu.emacs.help). He kindly provided me a [patch](https://github.com/snarfed/misc/blob/master/patches/comint_el_automatically_close_completions.patch) against Emacs 23.2's `comint.el`, which I translated into the advice below. Put it in your `.emacs` and you should be good to go!
 
 ```
 (defun comint-close-completions ()

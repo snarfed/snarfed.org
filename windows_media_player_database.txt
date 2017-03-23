@@ -5,30 +5,17 @@ windows media player database
  <a href="http://www.microsoft.com/windows/windowsmedia/default.aspx">
   <img src="/windows_media_player.jpg" /></a></p>
 
-I spend most of my time in Linux, [inside VMWare](/fedora_core_3_on_vmware),
-but I do use Windows for a few things like music. (VMWare's sound drivers are a
-little unstable.) I use [Windows Media
-Player](http://www.microsoft.com/windows/windowsmedia/default.aspx), since I'm
-lazy and it comes with Windows.
+I spend most of my time in Linux, [inside VMWare](/fedora_core_3_on_vmware), but I do use Windows for a few things like music. (VMWare's sound drivers are a little unstable.) I use [Windows Media Player](http://www.microsoft.com/windows/windowsmedia/default.aspx), since I'm lazy and it comes with Windows.
 
-Recently I had to switch Windows users on my computer. To get back all my stuff,
-I had to copy all of the files in _C:\Documents and Settings\olduser_ to
-_C:\Documents and Settings\newuser_.
+Recently I had to switch Windows users on my computer. To get back all my stuff, I had to copy all of the files in _C:\Documents and Settings\olduser_ to _C:\Documents and Settings\newuser_.
 
-This worked surprisingly well, except for my playlists. When I started WMP, and
-when I tried to play any playlist, it complained:
+This worked surprisingly well, except for my playlists. When I started WMP, and when I tried to play any playlist, it complained:
 
-> Windows Media Player encountered an unknown error. This can occur when another
-program or operating system component encounters a problem but does not
-communicate the nature of the problem to the Player.
+> Windows Media Player encountered an unknown error. This can occur when another program or operating system component encounters a problem but does not communicate the nature of the problem to the Player.
 
-I first realized that a number of playlists (.wpl files) were in _C:\Documents
-and Settings\All Users\Shared Documents\Shared Music\My Playlists_, so I copied
-those into _C:\Documents and Settings\newuser\My Documents\My Music\My
-Playlists_.
+I first realized that a number of playlists (.wpl files) were in _C:\Documents and Settings\All Users\Shared Documents\Shared Music\My Playlists_, so I copied those into _C:\Documents and Settings\newuser\My Documents\My Music\My Playlists_.
 
-Second, I looked inside the playlist files themselves. A number of them had
-olduser's playlist directory hard-coded. So, I changed every line like this:
+Second, I looked inside the playlist files themselves. A number of them had olduser's playlist directory hard-coded. So, I changed every line like this:
 
 ```
 <media src="C:\Documents and Settings\olduser\...

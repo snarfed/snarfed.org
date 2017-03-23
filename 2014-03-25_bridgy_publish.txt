@@ -4,21 +4,12 @@ Bridgy Publish
 <p class="right half">
  <a href="https://www.brid.gy/"><img src="/bridgy_logo.jpg"/></a></p>
 
-It's been a while [since I](/2013-12-09_brid-gy-meet-webmentions)
-[mentioned it](/2013-12-23_bridgy-now-with-likes-and-retweets) here, but I've
-been plugging away on a major new [Bridgy](https://www.brid.gy/) feature.
-[Bridgy Publish](https://www.brid.gy/about#publish) lets you publish to Facebook
-and Twitter - posts, tweets, comments, likes, and more - from your web site!
-Think of it as a
-[PaaS](http://en.wikipedia.org/wiki/PaaS)...[POSSE](http://indiewebcamp.com/POSSE)
-as a service, that is. I've used it almost exclusively to interact with Facebook
-and Twitter over the last few weeks, and I'm really enjoying it so far.
+It's been a while [since I](/2013-12-09_brid-gy-meet-webmentions) [mentioned it](/2013-12-23_bridgy-now-with-likes-and-retweets) here, but I've been plugging away on a major new [Bridgy](https://www.brid.gy/) feature. [Bridgy Publish](https://www.brid.gy/about#publish) lets you publish to Facebook and Twitter - posts, tweets, comments, likes, and more - from your web site! Think of it as a [PaaS](http://en.wikipedia.org/wiki/PaaS)...[POSSE](http://indiewebcamp.com/POSSE) as a service, that is. I've used it almost exclusively to interact with Facebook and Twitter over the last few weeks, and I'm really enjoying it so far.
 
 <!--more-->
 <span />
 
-Examples are worth a thousand words, like pictures, so let's jump right in.
-[Strand](http://strabd.com/) recently asked me on Twitter:
+Examples are worth a thousand words, like pictures, so let's jump right in. [Strand](http://strabd.com/) recently asked me on Twitter:
 
 <blockquote class="twitter-tweet" data-conversation="none" lang="en"><p><a href="https://twitter.com/schnarfed">@schnarfed</a> Are you from Seattle?</p>&mdash; Strand McCutchen (@Strabd) <a href="https://twitter.com/Strabd/statuses/448284921350483968">March 25, 2014</a></blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -38,25 +29,14 @@ my web site:
 &lt;a class="<span class='mf2-keyword'>u-in-reply-to</span>" href="<a href='https://twitter.com/Strabd/statuses/448284921350483968'>https://twitter.com/Strabd/statuses/448284921350483968</a>"&gt;&lt;/a&gt;
 &lt;a href="<a href='http://brid.gy/publish/twitter'>http://brid.gy/publish/twitter</a>"&gt;&lt;/a&gt;</pre>
 
-My web server supports [webmentions](http://www.webmention.org/)
-([more and more do](http://indiewebcamp.com/webmention#Publishing_Software)), so
-the link to `brid.gy/publish/twitter` made it send a webmention to Bridgy, which
-translated my post into this Twitter
-[@-reply](https://support.twitter.com/articles/14023-what-are-replies-and-mentions):
+My web server supports [webmentions](http://www.webmention.org/) ([more and more do](http://indiewebcamp.com/webmention#Publishing_Software)), so the link to `brid.gy/publish/twitter` made it send a webmention to Bridgy, which translated my post into this Twitter [@-reply](https://support.twitter.com/articles/14023-what-are-replies-and-mentions):
 
 <blockquote class="twitter-tweet" lang="en"><p><a href="https://twitter.com/Strabd">@Strabd</a> nah, LA. (<a href="https://t.co/y2AKYLCTlZ">https://t.co/y2AKYLCTlZ</a>)</p>&mdash; Ryan Barrett (@schnarfed) <a href="https://twitter.com/schnarfed/statuses/448302518536130561">March 25, 2014</a></blockquote>
 
 <br />
-If your server doesn't support webmentions, don't fret! You can use the web UI
-on your Bridgy user page to preview and publish posts yourself.
+If your server doesn't support webmentions, don't fret! You can use the web UI on your Bridgy user page to preview and publish posts yourself.
 
-You can use similar microformatted HTML to post original Facebook posts and
-Twitter tweets, [likes and favorites](http://indiewebcamp.com/like) and
-[retweets](http://indiewebcamp.com/repost), and even
-[event RSVPs](http://indiewebcamp.com/rsvp). Check out
-[the docs](https://www.brid.gy/about#publish), or
-[jump right in](https://www.brid.gy/) and try it out. Let me know what you
-think, and enjoy!
+You can use similar microformatted HTML to post original Facebook posts and Twitter tweets, [likes and favorites](http://indiewebcamp.com/like) and [retweets](http://indiewebcamp.com/repost), and even [event RSVPs](http://indiewebcamp.com/rsvp). Check out [the docs](https://www.brid.gy/about#publish), or [jump right in](https://www.brid.gy/) and try it out. Let me know what you think, and enjoy!
 
 <a class="u-syndication" href="http://news.indiewebcamp.com/post/snarfed.org/2014-03-25_bridgy-publish">
   <em>Also on IndieNews.</em></a>

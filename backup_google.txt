@@ -3,15 +3,7 @@ backup_google.sh
 
 <p class="right"><img src="/server_parachute.jpg" /></p>
 
-[backup_google.sh](https://github.com/snarfed/misc/blob/master/backup_google.sh) is a script
-that backs up data in the Google services I use:
-[Contacts](http://www.google.com/contacts),
-[Calendar](http://calendar.google.com/),
-[Reader](http://www.google.com/reader/), and
-[Tasks](https://mail.google.com/tasks/canvas). It uses
-[ClientLogin](http://code.google.com/apis/gdata/docs/auth/clientlogin.html) to
-authenticate and [curl](http://curl.haxx.se/) to fetch the data from the source
-[APIs](http://code.google.com/more/).
+[backup_google.sh](https://github.com/snarfed/misc/blob/master/backup_google.sh) is a script that backs up data in the Google services I use: [Contacts](http://www.google.com/contacts), [Calendar](http://calendar.google.com/), [Reader](http://www.google.com/reader/), and [Tasks](https://mail.google.com/tasks/canvas). It uses [ClientLogin](http://code.google.com/apis/gdata/docs/auth/clientlogin.html) to authenticate and [curl](http://curl.haxx.se/) to fetch the data from the source [APIs](http://code.google.com/more/).
 
 Usage:
 

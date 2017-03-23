@@ -5,52 +5,26 @@ Workflow software survey
  <a href="http://www.toothpastefordinner.com/index.php?date=020605">
   <img src="/panflute_flowchart.png" /></a></p>
 
-I recently did some research at [work](/2010-03-13_new_job) on existing
-libraries, frameworks, and tools for managing semi-automated workflows
-and pipelines of tasks. Here's a survey of many of them.
+I recently did some research at [work](/2010-03-13_new_job) on existing libraries, frameworks, and tools for managing semi-automated workflows and pipelines of tasks. Here's a survey of many of them.
 
-There are a number of loose, overlapping terms for these kinds of systems: BPM
-(business process management), workflow, pipeline, flowchart, state machine,
-visual programming, dataflow, flow-based programming, dependency management,
-task management, etc. They're useful for web searches, even if not a lot more.
+There are a number of loose, overlapping terms for these kinds of systems: BPM (business process management), workflow, pipeline, flowchart, state machine, visual programming, dataflow, flow-based programming, dependency management, task management, etc. They're useful for web searches, even if not a lot more.
 
-In practice, they tend to fall into a few broad categories that don't overlap
-too much:
+In practice, they tend to fall into a few broad categories that don't overlap too much:
 
-  * *BPM.* These are primarily people-based, ie each stage usually corresponds
-    to something a human needs to do. Examples include CRM, bug/issue tracking,
-    ticketing, approval chain, and document management.
-  * *Data processing.* These are primarily data based, usually for large
-    datasets or streaming data sources. Examples include web search indexing,
-    ETL (extract/transform load) for data warehouses, MapReduce/Hadoop, and other large scale
-    data pipelines.
-  * *<code>make</code> style.* These are individually driven, batch automation pipelines.
-    They're kicked off manually and focus more on the workflow itself than the
-    data. Unlike BPM, individual stages are often automated.
+  * *BPM.* These are primarily people-based, ie each stage usually corresponds to something a human needs to do. Examples include CRM, bug/issue tracking, ticketing, approval chain, and document management.
+  * *Data processing.* These are primarily data based, usually for large datasets or streaming data sources. Examples include web search indexing, ETL (extract/transform load) for data warehouses, MapReduce/Hadoop, and other large scale data pipelines.
+  * *<code>make</code> style.* These are individually driven, batch automation pipelines. They're kicked off manually and focus more on the workflow itself than the data. Unlike BPM, individual stages are often automated.
   * *Visual programming.* Let non-programmers draw boxes and arrows that become a computer program. People have been building these systems for decades! Examples include Squeak, Yahoo Pipes, Hypercard (old school!), maybe Visual Basic, etc.
 
 Also, here are a few of the many standards:
 
-  * [XPDL](http://en.wikipedia.org/wiki/XPDL): XML Process
-  Definition Language, a
-  [Workflow Management Coalition](http://en.wikipedia.org/wiki/Workflow_Management_Coalition)
-  standard.
-  * [Wf-XML](http://www.wfmc.org/wfmc-wf-xml.html), a
-  [Workflow Management Coalition](http://en.wikipedia.org/wiki/Workflow_Management_Coalition)
-  standard.
-  * [BPEL](http://en.wikipedia.org/wiki/BPEL) (Business Process
-  Execution Language), an [OASIS](http://www.oasis-open.org/)
-  standard.
-  * [YAWL](http://en.wikipedia.org/wiki/YAWL)
-  (Yet Another Workflow Language). Supported by the
-  [YAWL foundation](http://www.yawlfoundation.org/) and the
-  [Workflow Patterns initiative](http://www.workflowpatterns.com/).
+  * [XPDL](http://en.wikipedia.org/wiki/XPDL): XML Process Definition Language, a [Workflow Management Coalition](http://en.wikipedia.org/wiki/Workflow_Management_Coalition) standard.
+  * [Wf-XML](http://www.wfmc.org/wfmc-wf-xml.html), a [Workflow Management Coalition](http://en.wikipedia.org/wiki/Workflow_Management_Coalition) standard.
+  * [BPEL](http://en.wikipedia.org/wiki/BPEL) (Business Process Execution Language), an [OASIS](http://www.oasis-open.org/) standard.
+  * [YAWL](http://en.wikipedia.org/wiki/YAWL) (Yet Another Workflow Language). Supported by the [YAWL foundation](http://www.yawlfoundation.org/) and the [Workflow Patterns initiative](http://www.workflowpatterns.com/).
 
 
-I focused on open source Python projects here, but even so, this is nowhere near
-comprehensive. There are _tons_ more out there. See Wikipedia's
-[Comparison of BPEL engines](http://en.wikipedia.org/wiki/Comparison_of_BPEL_engines),
-among many others.
+I focused on open source Python projects here, but even so, this is nowhere near comprehensive. There are _tons_ more out there. See Wikipedia's [Comparison of BPEL engines](http://en.wikipedia.org/wiki/Comparison_of_BPEL_engines), among many others.
 
 | name | description | engine | run log | authoring UI | definition format | parameters | community | last release/ checkin as of 1/19/2011 | notes |
 | - | - | - | - | - | - | - | - | - | - |

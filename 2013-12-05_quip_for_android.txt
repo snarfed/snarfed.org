@@ -4,25 +4,8 @@ Quip for Android 1.0
 <p class="right half">
  <a href="https://quip.com/blog/android"><img src="/quip_for_android.png" /></a></p>
 
-[We're live!](https://quip.com/blog/android) I've been working on our
-[Android app](https://play.google.com/store/apps/details?id=com.quip.quip)
-pretty much full time for the last few months, and we've finally pushed our baby
-out into the world. We had a preview available
-[when we launched](/2013-07-30_introducing-quip), but it was very incomplete.
-Among other things, you could read documents, but you couldn't edit them. No longer!
+[We're live!](https://quip.com/blog/android) I've been working on our [Android app](https://play.google.com/store/apps/details?id=com.quip.quip) pretty much full time for the last few months, and we've finally pushed our baby out into the world. We had a preview available [when we launched](/2013-07-30_introducing-quip), but it was very incomplete. Among other things, you could read documents, but you couldn't edit them. No longer!
 
-It took a lot of hard work to get all the subtleties of rich text editing
-working well on Android, not to mention full offline support and merging changes
-seamlessly across multiple devices and people. It's definitely not perfect yet,
-but we're excited. It has full feature parity with our
-[iOS app](https://itunes.apple.com/us/app/quip/id647922896), and it will only
-get better.
+It took a lot of hard work to get all the subtleties of rich text editing working well on Android, not to mention full offline support and merging changes seamlessly across multiple devices and people. It's definitely not perfect yet, but we're excited. It has full feature parity with our [iOS app](https://itunes.apple.com/us/app/quip/id647922896), and it will only get better.
 
-I've [spent my career](/resume) working on infrastructure, so building an end
-user product was a very new challenge. It had its ups and downs, and Android
-gave us plenty of head scratchers - far beyond
-[my initial Android experience](/2011-12-02_thoughts_on_writing_my_first_android_app)
-a couple years ago - but overall, it's been a great experience. Wish us luck,
-and if you have an Android phone or tablet, please
-[try it out](https://play.google.com/store/apps/details?id=com.quip.quip) and
-let us know what you think!
+I've [spent my career](/resume) working on infrastructure, so building an end user product was a very new challenge. It had its ups and downs, and Android gave us plenty of head scratchers - far beyond [my initial Android experience](/2011-12-02_thoughts_on_writing_my_first_android_app) a couple years ago - but overall, it's been a great experience. Wish us luck, and if you have an Android phone or tablet, please [try it out](https://play.google.com/store/apps/details?id=com.quip.quip) and let us know what you think!

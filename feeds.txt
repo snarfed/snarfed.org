@@ -3,16 +3,9 @@ feeds
 
 <p class="right"><img src="/rss.jpg" alt="rss icon" /></p>
 
-Sites I read regularly. They're mostly friends' blogs and other sites that I
-have a personal connection to.
-Also see [podcasts](/podcasts) and [other lists](/lists).
+Sites I read regularly. They're mostly friends' blogs and other sites that I have a personal connection to. Also see [podcasts](/podcasts) and [other lists](/lists).
 
-Thanks to [NewsBlur](https://www.newsblur.com/),
-[RSS](http://en.wikipedia.org/wiki/RSS_\(file_format\)),
-[Atom](http://atomenabled.org/), and
-[Fletcher Penney](http://fletcherpenney.net/)'s
-[opml2markdown.xslt](http://fletcherpenney.net/2006/03/markdown_and_xml),
-which I use to generate this list.
+Thanks to [NewsBlur](https://www.newsblur.com/), [RSS](http://en.wikipedia.org/wiki/RSS_\(file_format\)), [Atom](http://atomenabled.org/), and [Fletcher Penney](http://fletcherpenney.net/)'s [opml2markdown.xslt](http://fletcherpenney.net/2006/03/markdown_and_xml), which I use to generate this list.
 
 <!--
 opml2markdown command line. note that it filters out picasa albums and

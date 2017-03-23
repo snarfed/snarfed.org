@@ -5,22 +5,11 @@ control arrow keys in rxvt, tcsh, and emacs
 <a href="http://tcsh.org/"><img src="/tcsh_oystercatcher.jpg"></a>
 <a href="http://gnu.org/software/emacs/"><img src="/gnu.jpg"></a>
 
-I
-use [rxvt](http://rxvt.org/) as my terminal, [tcsh](http://tcsh.org/) as my
-interactive shell, and [emacs](http://gnu.org/software/emacs/) as my editor. I
-love them all.
+I use [rxvt](http://rxvt.org/) as my terminal, [tcsh](http://tcsh.org/) as my interactive shell, and [emacs](http://gnu.org/software/emacs/) as my editor. I love them all.
 
-However, for a long time, I mostly used the default key bindings in tcsh and
-emacs, which are different for a few things. The most noticeable was moving
-forward and backward by whole words, instead of characters. I used Alt-B and
-Alt-F in tcsh, since those were the defaults. They work in emacs too, but I used
-Control-Left and Control-Right in emacs since I grew up on Windows. (Go ahead
-and laugh. :P)
+However, for a long time, I mostly used the default key bindings in tcsh and emacs, which are different for a few things. The most noticeable was moving forward and backward by whole words, instead of characters. I used Alt-B and Alt-F in tcsh, since those were the defaults. They work in emacs too, but I used Control-Left and Control-Right in emacs since I grew up on Windows. (Go ahead and laugh. :P)
 
-Recently, I got sick of this and figured out how to get control and arrow keys
-working in tcsh and emacs -nw, inside rxvt. When rxvt sees Control-Left and
-Control-Right, it translates them to Meta-O, d and Meta-O, c before passing them
-to the running application.
+Recently, I got sick of this and figured out how to get control and arrow keys working in tcsh and emacs -nw, inside rxvt. When rxvt sees Control-Left and Control-Right, it translates them to Meta-O, d and Meta-O, c before passing them to the running application.
 
 So, I just added these lines to my `.cshrc`:
 

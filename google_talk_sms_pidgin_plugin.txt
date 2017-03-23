@@ -13,51 +13,22 @@ google_talk_sms pidgin plugin
 &nbsp;&nbsp; [About Google Talk SMS](http://gmailblog.blogspot.com/2008/12/really-new-in-labs-this-time-sms-text.html)  
 
 
-[google_talk_sms.pl](https://github.com/snarfed/misc/raw/master/pidgin/google_talk_sms.pl)
-is a [plugin](http://developer.pidgin.im/wiki/Scripting%20and%20Plugins#ScriptingandPlugins)
-for [Pidgin](http://pidgin.im/)
-that allows it to use [Google Talk](http://talk.google.com/)'s
-[SMS text messaging](http://gmailblog.blogspot.com/2008/12/really-new-in-labs-this-time-sms-text.html)
-feature, which is otherwise
-[restricted to the official clients](http://www.innerfence.com/google-shuts-down-infinite-sms).
+[google_talk_sms.pl](https://github.com/snarfed/misc/raw/master/pidgin/google_talk_sms.pl) is a [plugin](http://developer.pidgin.im/wiki/Scripting%20and%20Plugins#ScriptingandPlugins) for [Pidgin](http://pidgin.im/) that allows it to use [Google Talk](http://talk.google.com/)'s [SMS text messaging](http://gmailblog.blogspot.com/2008/12/really-new-in-labs-this-time-sms-text.html) feature, which is otherwise [restricted to the official clients](http://www.innerfence.com/google-shuts-down-infinite-sms).
 
-_Note: If you're on
-[Ubuntu Lucid](http://www.ubuntu.com/products/whatisubuntu/1004features),
-its Pidgin 2.6.6 package has a
-[bug that breaks most Perl plugins](https://bugs.launchpad.net/ubuntu/+source/pidgin/+bug/569078),
-including this one. It should be fixed in the next Pidgin release._
+_Note: If you're on [Ubuntu Lucid](http://www.ubuntu.com/products/whatisubuntu/1004features), its Pidgin 2.6.6 package has a [bug that breaks most Perl plugins](https://bugs.launchpad.net/ubuntu/+source/pidgin/+bug/569078), including this one. It should be fixed in the next Pidgin release._
 
-I originally used
-[AIM's SMS support](http://www.aim.com/help_faq/starting_out/getstarted.adp#ten)
-to send text messages to my friends from my computer. It worked, and my
-friends could reply to my texts, but the phone numbers it used were only
-temporary. My friends couldn't initiate conversations with me via SMS;
-I had to text them first.
+I originally used [AIM's SMS support](http://www.aim.com/help_faq/starting_out/getstarted.adp#ten) to send text messages to my friends from my computer. It worked, and my friends could reply to my texts, but the phone numbers it used were only temporary. My friends couldn't initiate conversations with me via SMS; I had to text them first.
 
 <a href="http://talk.google.com/">
   <img class="left" src="/google_talk_logo.png" /></a>
 
-When [Google Talk](http://talk.google.com/)
-[added SMS support](http://gmailblog.blogspot.com/2008/12/really-new-in-labs-this-time-sms-text.html),
-it included a killer feature: dedicated phone numbers. It didn't give me a
-unique phone number for receiving texts via IM, but it did remember which
-phone numbers it had used for each of my friends, so they could text that
-number whenever they wanted. If I was online, I'd get the text immediately, as
-an IM. If I was offline, I'd get it when I logged.
+When [Google Talk](http://talk.google.com/) [added SMS support](http://gmailblog.blogspot.com/2008/12/really-new-in-labs-this-time-sms-text.html), it included a killer feature: dedicated phone numbers. It didn't give me a unique phone number for receiving texts via IM, but it did remember which phone numbers it had used for each of my friends, so they could text that number whenever they wanted. If I was online, I'd get the text immediately, as an IM. If I was offline, I'd get it when I logged.
 
-I loved this, so I immediately switched to Google Talk for SMSes. Sadly, other
-people did too, and since each SMS costs money, Google decided to
-[restrict the feature to official clients](http://www.innerfence.com/google-shuts-down-infinite-sms).
-Other clients received the error message
-_"SMS_ERROR_11: Sorry we don't support free SMS messaging through this client. Visit http://gmail.com/sms for more info. (Code 405)"_
+I loved this, so I immediately switched to Google Talk for SMSes. Sadly, other people did too, and since each SMS costs money, Google decided to [restrict the feature to official clients](http://www.innerfence.com/google-shuts-down-infinite-sms). Other clients received the error message _"SMS_ERROR_11: Sorry we don't support free SMS messaging through this client. Visit http://gmail.com/sms for more info. (Code 405)"_
 
 <img class="right" src="/sms_phone.jpg" /></a>
 
-The restriction is fairly simple, though. The Google Talk servers simply
-look for `sms-v1` or `sms-v1` in the `ext` attribute of `caps:c` (the
-[XEP-0115 Capabilities extension](http://xmpp.org/extensions/xep-0115.html))
-in the `presence` stanza that the client sends to the server.
-[google_talk_sms.pl](https://github.com/snarfed/misc/raw/master/pidgin/google_talk_sms.pl) simply adds this.
+The restriction is fairly simple, though. The Google Talk servers simply look for `sms-v1` or `sms-v1` in the `ext` attribute of `caps:c` (the [XEP-0115 Capabilities extension](http://xmpp.org/extensions/xep-0115.html)) in the `presence` stanza that the client sends to the server. [google_talk_sms.pl](https://github.com/snarfed/misc/raw/master/pidgin/google_talk_sms.pl) simply adds this.
 
 Here's an example `presence` stanza sent by the Google Talk web-based client:
 

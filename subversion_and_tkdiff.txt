@@ -6,16 +6,11 @@ subversion and tkdiff
 <a href="http://tkdiff.sf.net/"><img src="/tkdiff.png"></a>
 </p>
 
-[Subversion](http://subversion.tigris.org/)
-is my version control of choice, and [tkdiff](http://tkdiff.sf.net/) is my
-graphical diff of choice. I love them both equally.
+[Subversion](http://subversion.tigris.org/) is my version control of choice, and [tkdiff](http://tkdiff.sf.net/) is my graphical diff of choice. I love them both equally.
 
-However, for a while, I thought they couldn't play well together. I tried **svn
-diff --diff-cmd tkdiff <file>**, but it just produced an ugly error message,
-because svn passed command-line options to tkdiff that it didn't understand.
+However, for a while, I thought they couldn't play well together. I tried **svn diff --diff-cmd tkdiff <file>**, but it just produced an ugly error message, because svn passed command-line options to tkdiff that it didn't understand.
 
-I recently sat down to take another look, and found that Subversion support was
-added to tkdiff in version 4.0. Now, in a Subversion working directory, **tkdiff
+I recently sat down to take another look, and found that Subversion support was added to tkdiff in version 4.0. Now, in a Subversion working directory, **tkdiff
 <file>** automatically diffs the file against HEAD. Sweet!
 
 I use this simple shell script to tkdiff all files that I've modified:

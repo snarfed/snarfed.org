@@ -10,15 +10,9 @@ For the impatient:
 
 _Updated 5/4/2007._
 
-[index.py](/index.py) is a [PyBlosxom](http://pyblosxom.bluesock.org/) plugin
-that displays displays an alphabetical index of all entries. It's similar to
-[other](http://pyblosxom.bluesock.org/blog/registry/archives/pyarchives)
-[index](http://pyblosxom.bluesock.org/blog/registry/archives/wbgarchives)
-[plugins](http://pyblosxom.bluesock.org/blog/registry/category/pycategories),
-except that it indexes the entries by name, instead of by date.
+[index.py](/index.py) is a [PyBlosxom](http://pyblosxom.bluesock.org/) plugin that displays displays an alphabetical index of all entries. It's similar to [other](http://pyblosxom.bluesock.org/blog/registry/archives/pyarchives) [index](http://pyblosxom.bluesock.org/blog/registry/archives/wbgarchives) [plugins](http://pyblosxom.bluesock.org/blog/registry/category/pycategories), except that it indexes the entries by name, instead of by date.
 
-There are number of config parameters available to customize index.py's
-behavior, all optional. Here they are, along with their defaults:
+There are number of config parameters available to customize index.py's behavior, all optional. Here they are, along with their defaults:
 
 ```
 py['index_trigger']            = '/site-index'

@@ -8,19 +8,8 @@ For the impatient:
 [Tracker item on SourceForge](http://sourceforge.net/tracker/index.php?func=detail&aid=1146074&group_id=50164&atid=458797)  
 [Libwebserver page](http://libwebserver.sourceforge.net/)
 
-[Libwebserver](http://libwebserver.sourceforge.net/) is a fully functional web
-server in a tiny little library. It serves HTTP 1.0 and 1.1, and even supports
-SSL and cookies. You can use it to expose files and directories for download,
-but you can also write custom handlers whose output is sent directly to the
-client.
+[Libwebserver](http://libwebserver.sourceforge.net/) is a fully functional web server in a tiny little library. It serves HTTP 1.0 and 1.1, and even supports SSL and cookies. You can use it to expose files and directories for download, but you can also write custom handlers whose output is sent directly to the client.
 
-Granted, if you just want a web server, libwebserver isn't for you. However, if
-you want to _embed_ a web server in another program, it's perfect. We're using
-it in our quest for [synchronizing mp3 playback](/synchronizing_mp3_playback), and we love it...
+Granted, if you just want a web server, libwebserver isn't for you. However, if you want to _embed_ a web server in another program, it's perfect. We're using it in our quest for [synchronizing mp3 playback](/synchronizing_mp3_playback), and we love it...
 
-...except for one thing. Libwebserver lets you start a server, but doesn't
-provide a way to _stop_ it. This might be reasonable for most programs, but not
-ours; we start and stop the server fairly often.
-[This patch](https://github.com/snarfed/misc/blob/master/patches/libwebserver_shutdown.patch) adds
-a `web_server_shutdown()` call that stops the server, closes its socket, and
-deallocates its memory.
+...except for one thing. Libwebserver lets you start a server, but doesn't provide a way to _stop_ it. This might be reasonable for most programs, but not ours; we start and stop the server fairly often. [This patch](https://github.com/snarfed/misc/blob/master/patches/libwebserver_shutdown.patch) adds a `web_server_shutdown()` call that stops the server, closes its socket, and deallocates its memory.

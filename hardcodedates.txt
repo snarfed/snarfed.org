@@ -10,24 +10,10 @@ For the impatient:
 
 _Updated 2007-02-23._
 
-[hardcodedates](/hardcodedates.py) is a
-[PyBlosxom](http://pyblosxom.bluesock.org/) plugin that overrides Pyblosxom's
-[default mtime handling](http://pyblosxom.bluesock.org/1.3.1/manual/x704.html)
-to read mtimes from a file, instead of from the filesystem.
+[hardcodedates](/hardcodedates.py) is a [PyBlosxom](http://pyblosxom.bluesock.org/) plugin that overrides Pyblosxom's [default mtime handling](http://pyblosxom.bluesock.org/1.3.1/manual/x704.html) to read mtimes from a file, instead of from the filesystem.
 
-This has a number of benefits. Similar to
-[other](http://pyblosxom.bluesock.org/blog/registry/date/metadate)
-[plugins](http://pyblosxom.bluesock.org/blog/registry/date/rememberdates),
-it allows you to manually specify each entry's mtime. The mtimes are stored in
-a single file, so PyBlosxom doesn't need to stat every entry. Finally, it adds
-mtimes for new entries, to preserve their original mtime and to avoid stat
-calls.
+This has a number of benefits. Similar to [other](http://pyblosxom.bluesock.org/blog/registry/date/metadate) [plugins](http://pyblosxom.bluesock.org/blog/registry/date/rememberdates), it allows you to manually specify each entry's mtime. The mtimes are stored in a single file, so PyBlosxom doesn't need to stat every entry. Finally, it adds mtimes for new entries, to preserve their original mtime and to avoid stat calls.
 
-hardcodedates was
-[originally written](http://www.nathanbullock.org/nathan/pyblosxom/)
-by [Nathan Bullock](http://www.nathanbullock.org/). I've taken over
-maintennance, with his permission.
+hardcodedates was [originally written](http://www.nathanbullock.org/nathan/pyblosxom/) by [Nathan Bullock](http://www.nathanbullock.org/). I've taken over maintennance, with his permission.
 
-hardcodedates is Copyright 2004 [Nathan Bullock](http://www.nathanbullock.org/),
-2006 [Ryan Barrett](/about), and is distributed
-under the [GPL](http://www.gnu.org/licenses/gpl.html).
+hardcodedates is Copyright 2004 [Nathan Bullock](http://www.nathanbullock.org/), 2006 [Ryan Barrett](/about), and is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).

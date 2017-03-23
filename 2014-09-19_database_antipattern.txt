@@ -1,11 +1,8 @@
 10664
 The "database antipattern"
 
-Regarding
-[the debate](https://twitter.com/search?f=realtime&q=databases-antipattern&src=typd)
-over the [database antipattern](http://indiewebcamp.com/databases-antipattern):
+Regarding [the debate](https://twitter.com/search?f=realtime&q=databases-antipattern&src=typd) over the [database antipattern](http://indiewebcamp.com/databases-antipattern):
 
 > [Any sufficiently complicated C program contains an ad hoc, informally-specified, bug-ridden, slow implementation of half of Common Lisp.](http://en.wikipedia.org/wiki/Greenspun%27s_tenth_rule)
 
-Similarly, any sufficiently complicated flat file based webapp contains an ad
-hoc, informally-specified, bug-ridden, slow implementation of half of a database.
+Similarly, any sufficiently complicated flat file based webapp contains an ad hoc, informally-specified, bug-ridden, slow implementation of half of a database.

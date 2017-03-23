@@ -6,23 +6,13 @@ pine remove trailing quote patch
   <img src="/pine.png" /></a></p>
 
 For the impatient:  
-Patch for Pine
-[4.60](https://github.com/snarfed/misc/blob/master/patches/pine/remove-trailing-quote.patch.4.60),
-[4.61](https://github.com/snarfed/misc/blob/master/patches/pine/remove-trailing-quote.patch.4.61),
-[4.63](https://github.com/snarfed/misc/blob/master/patches/pine/remove-trailing-quote.patch.4.63),
-[4.64](https://github.com/snarfed/misc/blob/master/patches/pine/remove-trailing-quote.patch.4.64)  
+Patch for Pine [4.60](https://github.com/snarfed/misc/blob/master/patches/pine/remove-trailing-quote.patch.4.60), [4.61](https://github.com/snarfed/misc/blob/master/patches/pine/remove-trailing-quote.patch.4.61), [4.63](https://github.com/snarfed/misc/blob/master/patches/pine/remove-trailing-quote.patch.4.63), [4.64](https://github.com/snarfed/misc/blob/master/patches/pine/remove-trailing-quote.patch.4.64)  
 [Pine source](http://www.washington.edu/pine/getpine/unix.html)  
-[FAQ on patching
-pine](http://www.math.washington.edu/~chappa/pine/faq/index.html)
+[FAQ on patching pine](http://www.math.washington.edu/~chappa/pine/faq/index.html)
 
-I use [Pine](http://www.washington.edu/pine/) as my email client, and I really
-like it. It's fast, simple, full-featured, and very keyboardable. However,
-nothing's perfect, even Pine.
+I use [Pine](http://www.washington.edu/pine/) as my email client, and I really like it. It's fast, simple, full-featured, and very keyboardable. However, nothing's perfect, even Pine.
 
-This patch adds an option to Pine that removes _trailing quotes_ from messages
-when you send them, or when you hit a keystroke. What's a trailing quote, you
-ask? It's best described by example. The last three lines in this email are a
-trailing quote:
+This patch adds an option to Pine that removes _trailing quotes_ from messages when you send them, or when you hit a keystroke. What's a trailing quote, you ask? It's best described by example. The last three lines in this email are a trailing quote:
 
 ```
 On Fri, 4 Jun 2004, Jane Doe wrote:

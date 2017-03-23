@@ -3,8 +3,7 @@ talks
 
 <p class="right"><img src="/microphone.jpg" alt="microphone" /></p>
 
-Talks I've given. Includes dates, locations, slides, video, etc.
-Also see [other lists](/lists).
+Talks I've given. Includes dates, locations, slides, video, etc. Also see [other lists](/lists).
 
 <!-- note the two trailing spaces after some lines for line breaks.
 -->
@@ -24,80 +23,57 @@ IndieWeb
 ([video](https://archive.org/details/DecentralizedWeb20160609pt1?start=8826),
  [slides](/assets/player/KeynoteDHTMLPlayer.html#0))
 June 9, 2016  
-[Decentralized Web Summit](http://decentralizedweb.net/),
-[Internet Archive](https://archive.org/), San Francisco
+[Decentralized Web Summit](http://decentralizedweb.net/), [Internet Archive](https://archive.org/), San Francisco
 
 [Transactions Across Datacenters](/transactions_across_datacenters_great_ideas.html)  
 Sept. 8, 2009  
-[Great Ideas in Computer Science](http://www.stanfordcourses.com/CS11SC),
-[Google Mountain View](http://www.google.com/corporate/address.html)
+[Great Ideas in Computer Science](http://www.stanfordcourses.com/CS11SC), [Google Mountain View](http://www.google.com/corporate/address.html)
 
-[Transactions Across Datacenters](http://code.google.com/events/io/sessions/TransactionsAcrossDatacenters.html)
-([slides](/transactions_across_datacenters_io.html))  
+[Transactions Across Datacenters](http://code.google.com/events/io/sessions/TransactionsAcrossDatacenters.html) ([slides](/transactions_across_datacenters_io.html))  
 May 27, 2009  
-[Google I/O](http://code.google.com/events/io/),
-[Moscone Center](http://www.moscone.com/), San Francisco
+[Google I/O](http://code.google.com/events/io/), [Moscone Center](http://www.moscone.com/), San Francisco
 
 [Google App Engine Fireside Chat](http://code.google.com/events/io/sessions/AppEngineFC.html)  
 May 28, 2009  
-[Google I/O](http://code.google.com/events/io/),
-[Moscone Center](http://www.moscone.com/), San Francisco
+[Google I/O](http://code.google.com/events/io/), [Moscone Center](http://www.moscone.com/), San Francisco
 
 [Google App Engine Datastore](/sdforum_app_engine_datastore.html)  
 May 26, 2009  
-[SDForum Cloud Services SIG: Databases in the Cloud](http://www.sdforum.org/index.cfm?fuseaction=Calendar.eventDetail&eventID=13366),
-[Tibco](http://www.tibco.com/), Palo Alto
+[SDForum Cloud Services SIG: Databases in the Cloud](http://www.sdforum.org/index.cfm?fuseaction=Calendar.eventDetail&eventID=13366), [Tibco](http://www.tibco.com/), Palo Alto
 
-[Distributed Transactions for Google App Engine](http://arxiv.org/abs/1106.3325)
-([abstract](http://www.codecon.org/2009/program.html#DistributedTrans))  
+[Distributed Transactions for Google App Engine](http://arxiv.org/abs/1106.3325) ([abstract](http://www.codecon.org/2009/program.html#DistributedTrans))  
 Apr. 18, 2009  
-[CodeCon](http://codecon.org/2009/),
-[Cellspace](http://cellspace.org/)
+[CodeCon](http://codecon.org/2009/), [Cellspace](http://cellspace.org/)
 
-[Transactions Across Datacenters](/2009-02-16_transactions_across_datacenters)
-([slides](/transactions_across_datacenters.html))  
+[Transactions Across Datacenters](/2009-02-16_transactions_across_datacenters) ([slides](/transactions_across_datacenters.html))  
 Feb. 12, 2009  
-[Special Lecture Series in Computer Science](http://web.cs.usfca.edu/courses),
-[University of San Francisco](http://usf.edu/)
+[Special Lecture Series in Computer Science](http://web.cs.usfca.edu/courses), [University of San Francisco](http://usf.edu/)
 
 [All Mashed Up](http://www.ugcxevent.com/socialtrack.html#s7) (panel)  
 Feb. 10, 2009  
-[UGCX](http://www.ugcxevent.com/),
-[San Jose Convention Center](http://sjcc.com/)
+[UGCX](http://www.ugcxevent.com/), [San Jose Convention Center](http://sjcc.com/)
 
 [How App Engine Index Building Works](/index_building.html)  
-([slides](/index_building.html),
- [article](http://code.google.com/appengine/articles/index_building.html))  
+([slides](/index_building.html), [article](http://code.google.com/appengine/articles/index_building.html))  
 Nov. 24, 2008  
 [Google San Francisco](http://www.google.com/corporate/address.html)
 
-[App Engine Update](/gae_update.html)
-([slides](/gae_update.html),
- [video](http://www.youtube.com/watch?v=CWfThAWBO3A))  
+[App Engine Update](/gae_update.html) ([slides](/gae_update.html), [video](http://www.youtube.com/watch?v=CWfThAWBO3A))  
 Nov. 17, 2008  
-[Google Technology Users Group](http://sv-gtug-11.eventbrite.com/),
-[Google Mountain View](http://www.google.com/corporate/address.html)
+[Google Technology Users Group](http://sv-gtug-11.eventbrite.com/), [Google Mountain View](http://www.google.com/corporate/address.html)
 
-[Windows Azure Overview and Impressions](/windows_azure_impressions)
-([slides](/azure_talk.html),
- [technical writeup](/windows_azure_details))  
+[Windows Azure Overview and Impressions](/windows_azure_impressions) ([slides](/azure_talk.html), [technical writeup](/windows_azure_details))  
 Nov. 7, 2008  
 [Google San Francisco](http://www.google.com/corporate/address.html)
 
 Google App Engine Fireside Chat  
 May 29, 2008  
-[Google I/O](http://sites.google.com/site/io/),
-[Moscone Center](http://www.moscone.com/), San Francisco
+[Google I/O](http://sites.google.com/site/io/), [Moscone Center](http://www.moscone.com/), San Francisco
 
-[Under the Covers of the App Engine Datastore](http://sites.google.com/site/io/under-the-covers-of-the-google-app-engine-datastore)
-([slides](/datastore_talk.html),
- [video](http://www.youtube.com/watch?v=tx5gdoNpcZM))  
+[Under the Covers of the App Engine Datastore](http://sites.google.com/site/io/under-the-covers-of-the-google-app-engine-datastore) ([slides](/datastore_talk.html), [video](http://www.youtube.com/watch?v=tx5gdoNpcZM))  
 May 28, 2008  
-[Google I/O](http://sites.google.com/site/io/),
-[Moscone Center](http://www.moscone.com/), San Francisco
+[Google I/O](http://sites.google.com/site/io/), [Moscone Center](http://www.moscone.com/), San Francisco
 
-[Scaling Data on the Cheap](/2006-09-03_bar_camp_stanford)
-([slides](/scaling_data_on_the_cheap.html))  
+[Scaling Data on the Cheap](/2006-09-03_bar_camp_stanford) ([slides](/scaling_data_on_the_cheap.html))  
 Aug. 26, 2006  
-[Bar Camp](https://barcamp.pbwiki.com/BarCampStanford),
-[Stanford University](http://stanford.edu/)
+[Bar Camp](https://barcamp.pbwiki.com/BarCampStanford), [Stanford University](http://stanford.edu/)

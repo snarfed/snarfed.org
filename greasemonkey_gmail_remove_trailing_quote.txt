@@ -4,20 +4,12 @@ GreaseMonkey script for Gmail: remove trailing quotes
 <p class="right"><a href="http://greasespot.net/"><img class="" src="/greasemonkey.png" /></a></p>
 
 <span style="color: red; font-style: italic">
-Warning: this doesn't work with GMail's
-[new compose UI](http://gmailblog.blogspot.com/2012/10/introducing-new-compose-in-gmail.html).
-I've tried to make them play nice together, but it doesn't look promising. :(
+Warning: this doesn't work with GMail's [new compose UI](http://gmailblog.blogspot.com/2012/10/introducing-new-compose-in-gmail.html). I've tried to make them play nice together, but it doesn't look promising. :(
 </span>
 
-[gmail_remove_trailing_quote.user.js](https://github.com/snarfed/misc/raw/master/userscripts/gmail_remove_trailing_quote.user.js)
-is a [GreaseMonkey](http://greasespot.net/)
-[userscript](http://userscripts.org/scripts/show/86600) that removes "trailing
-quotes" from messages you compose in Gmail. It modifies your in-progress email
-when you move the focus away from the composition text box. If you go back to
-the text box, it reverts the changes it made so you can revise if necessary.
+[gmail_remove_trailing_quote.user.js](https://github.com/snarfed/misc/raw/master/userscripts/gmail_remove_trailing_quote.user.js) is a [GreaseMonkey](http://greasespot.net/) [userscript](http://userscripts.org/scripts/show/86600) that removes "trailing quotes" from messages you compose in Gmail. It modifies your in-progress email when you move the focus away from the composition text box. If you go back to the text box, it reverts the changes it made so you can revise if necessary.
 
-What's a trailing quote, you ask? It's best described by example. The last three
-lines in this email are a trailing quote:
+What's a trailing quote, you ask? It's best described by example. The last three lines in this email are a trailing quote:
 
 ```
 On Fri, 4 Jun 2004, Jane Doe wrote:

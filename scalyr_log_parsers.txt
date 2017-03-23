@@ -4,18 +4,12 @@ Scalyr log parsers
 <p class="right third">
  <a href="https://www.scalyr.com/"><img src="/scalyr_logo.png" /></a></p>
 
-We use [Scalyr](https://www.scalyr.com/) at work. It's great; we love it. Here
-are a few of our
-[homegrown Scalyr log parsers](https://www.scalyr.com/help/parsing-logs).
-They're primarily useful for handling logs with messages that span multiple
-lines. You can try them out on Scalyr's
-[log parsing tester](https://www.scalyr.com/logParseTester) (requires account).
+We use [Scalyr](https://www.scalyr.com/) at work. It's great; we love it. Here are a few of our [homegrown Scalyr log parsers](https://www.scalyr.com/help/parsing-logs). They're primarily useful for handling logs with messages that span multiple lines. You can try them out on Scalyr's [log parsing tester](https://www.scalyr.com/logParseTester) (requires account).
 
 
 ### Python
 
-Here's our parser for Python application logs from the built in
-[`logging` module](https://docs.python.org/2/library/logging.html).
+Here's our parser for Python application logs from the built in [`logging` module](https://docs.python.org/2/library/logging.html).
 
 ```
 {

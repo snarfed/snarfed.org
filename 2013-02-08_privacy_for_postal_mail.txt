@@ -3,60 +3,25 @@ Privacy for postal mail
 
 <p class="right"><img src="/mailbox.jpg" /></p>
 
-If you're reading this, you already know I go
-[a bit](/2011-08-03_why_im_weird_about_privacy)
-[overboard](/2012-09-22_revisiting_why_im_weird_about_privacy)
-[on](/faking_out_address_and_credit_card_forms)
-[privacy](/privacy_through_prepaid_credit_cards). I recently changed my mailing
-address, and it took some research, but I'm pretty happy with the result. Most
-of it was straightforward, but there's one small trick that's worth mentioning.
+If you're reading this, you already know I go [a bit](/2011-08-03_why_im_weird_about_privacy) [overboard](/2012-09-22_revisiting_why_im_weird_about_privacy) [on](/faking_out_address_and_credit_card_forms) [privacy](/privacy_through_prepaid_credit_cards). I recently changed my mailing address, and it took some research, but I'm pretty happy with the result. Most of it was straightforward, but there's one small trick that's worth mentioning.
 
-There's lots of existing knowledge on using
-[PO boxes](http://blog.invisible-privacy.com/2011/05/how-to-receive-mail-at-po-box-using.html),
-[ghost addresses](http://jjluna.com/Ghost-Addresses), and
-[CMRAs](http://en.wikipedia.org/wiki/Commercial_mail_receiving_agency)
-instead of your home address. (Why not your home address?
-[A](http://blog.invisible-privacy.com/2011/06/paranoid-or-not-hide-your-home-address.html)
-[few](http://blog.invisible-privacy.com/2010/04/privacy-101-never-receive-mail-at-your.html)
-[thoughts](http://blog.invisible-privacy.com/2009/04/five-ways-to-keep-your-home-address.html).)
-Unfortunately, none of them are ideal. Ghost addresses are good for filling out
-forms, but not so good at receiving actual mail. PO boxes are good for mail, but
-not packages, and you can't use them for many purposes.
+There's lots of existing knowledge on using [PO boxes](http://blog.invisible-privacy.com/2011/05/how-to-receive-mail-at-po-box-using.html), [ghost addresses](http://jjluna.com/Ghost-Addresses), and [CMRAs](http://en.wikipedia.org/wiki/Commercial_mail_receiving_agency) instead of your home address. (Why not your home address? [A](http://blog.invisible-privacy.com/2011/06/paranoid-or-not-hide-your-home-address.html) [few](http://blog.invisible-privacy.com/2010/04/privacy-101-never-receive-mail-at-your.html) [thoughts](http://blog.invisible-privacy.com/2009/04/five-ways-to-keep-your-home-address.html).) Unfortunately, none of them are ideal. Ghost addresses are good for filling out forms, but not so good at receiving actual mail. PO boxes are good for mail, but not packages, and you can't use them for many purposes.
 
 <!-- more -->
 <span />
 
-CMRAs are the most promising. They give you a real street address, receive your
-mail and packages, and optionally forward them. More recently, they can open
-your mail (with your permission), scan it, give you the scans online or over
-email, and archive or shred the physical copies. Very cool.
+CMRAs are the most promising. They give you a real street address, receive your mail and packages, and optionally forward them. More recently, they can open your mail (with your permission), scan it, give you the scans online or over email, and archive or shred the physical copies. Very cool.
 
-The catch is that [USPS](http://usps.com/) requires you to fill out and notarize
-[form 1583](http://www.virtualpostmail.com/help/faq-usps-form-1583) before a
-CMRA can open your mail, and that form needs _two forms of ID_ with identifying
-numbers like passport or drivers license number. Ugh. Not cool.
+The catch is that [USPS](http://usps.com/) requires you to fill out and notarize [form 1583](http://www.virtualpostmail.com/help/faq-usps-form-1583) before a CMRA can open your mail, and that form needs _two forms of ID_ with identifying numbers like passport or drivers license number. Ugh. Not cool.
 
 <img class="left" src="/ca_drivers_license.jpg" />
 
-I wasn't about do to that, so I found a loophole instead. You can't avoid the ID
- requirement, but you can include additional people as addressees on the mailbox.
-They have to provide the same two forms of ID, but _not if they're minors!_
+I wasn't about do to that, so I found a loophole instead. You can't avoid the ID requirement, but you can include additional people as addressees on the mailbox. They have to provide the same two forms of ID, but _not if they're minors!_
 
-At this point, the game is won. Get a friend to help you, open the CMRA account
-in their name, and send in form 1583 with their info and IDs. Add your own name
-as an additional receipient in box 12, but _don't include your IDs_, obviously.
-If they ask, say that you're a minor.
+At this point, the game is won. Get a friend to help you, open the CMRA account in their name, and send in form 1583 with their info and IDs. Add your own name as an additional receipient in box 12, but _don't include your IDs_, obviously. If they ask, say that you're a minor.
 
-Fortunately, my CMRA never even mentioned the extra name on my form 1583. They
-don't like the USPS form and ID requirement any more than I do, so they comply,
-but they usually won't be aggressive about fine points like additional names. In
-practice, if they have IDs for the primary account holder, they figure that's
-good enough. USPS too, probably.
+Fortunately, my CMRA never even mentioned the extra name on my form 1583. They don't like the USPS form and ID requirement any more than I do, so they comply, but they usually won't be aggressive about fine points like additional names. In practice, if they have IDs for the primary account holder, they figure that's good enough. USPS too, probably.
 
-For bonus points, if you [use an LLC](http://jjluna.com/Resources-LLCs), attach
-it to your account as another addressee, and then switch its
-[registered agent](http://en.wikipedia.org/wiki/Registered_agent) to be your
-CMRA.
+For bonus points, if you [use an LLC](http://jjluna.com/Resources-LLCs), attach it to your account as another addressee, and then switch its [registered agent](http://en.wikipedia.org/wiki/Registered_agent) to be your CMRA.
 
-May your mail be scanned, your packages forwarded, and your name and home
-address always hidden. Happy privacy-ing!
+May your mail be scanned, your packages forwarded, and your name and home address always hidden. Happy privacy-ing!

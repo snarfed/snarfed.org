@@ -23,13 +23,7 @@ mv -f locale_headphone_buttons_plugin.tar.bz2 ~/s; \
   svn ci -m 'new release' locale_headphone_buttons_plugin.tar.bz2
 -->
 
-[Locale Headphone Buttons Plugin](https://market.android.com/details?id=org.snarfed.android.headphonebuttons)
-is a plugin for the [Locale](http://www.twofortyfouram.com/) Android app that
-simulates pressing a headphone or headset button. You can
-[get it from the Android app store](https://market.android.com/details?id=org.snarfed.android.headphonebuttons).
-Available buttons are the "hook" ie single headset button, Play/Pause, Play,
-Pause, Next, Previous, Fast Forward, Rewind, Stop. Also optionally checks
-whether anything is currently playing.
+[Locale Headphone Buttons Plugin](https://market.android.com/details?id=org.snarfed.android.headphonebuttons) is a plugin for the [Locale](http://www.twofortyfouram.com/) Android app that simulates pressing a headphone or headset button. You can [get it from the Android app store](https://market.android.com/details?id=org.snarfed.android.headphonebuttons). Available buttons are the "hook" ie single headset button, Play/Pause, Play, Pause, Next, Previous, Fast Forward, Rewind, Stop. Also optionally checks whether anything is currently playing.
 
 This is useful because headphone buttons automatically use the current "preferred" media player, which is usually the most recently used one, instead of any specific player.
 
@@ -37,8 +31,6 @@ I use this to restart whatever was playing last when I plug in my headphones. It
 
 Warning: some media player apps don't handle headphone buttons consistently, or even at all, even built-in apps. If this plugin doesn't work with a specific app, check that it supports the headphone button you've selected, and/or try other buttons.
 
-The app is open source and released into the public domain.
-[Download the code](/locale_headphone_buttons_plugin.tar.bz2).
+The app is open source and released into the public domain. [Download the code](/locale_headphone_buttons_plugin.tar.bz2).
 
-For more, see my blog post
-_[Thoughts on writing my first Android app](/2011-12-02_thoughts_on_writing_my_first_android_app)_.
+For more, see my blog post _[Thoughts on writing my first Android app](/2011-12-02_thoughts_on_writing_my_first_android_app)_.

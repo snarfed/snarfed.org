@@ -5,11 +5,7 @@ Emacs lisp for copying diff hunks
  <a href="http://www.gnu.org/software/emacs/">
   <img src="/gnu.jpg" /></a></p>
 
-When I'm looking at a diff in Emacs's `diff-mode`, I usually use native
-functions like `diff-apply-hunk` to apply/revert or otherwise operate on hunks.
-Occasionally, though, I just want to kill (copy) part of the diff so I can do
-something else with it. When I do, I end up with leading `-` or `+` or `!`
-characters that I have to strip manually. For example:
+When I'm looking at a diff in Emacs's `diff-mode`, I usually use native functions like `diff-apply-hunk` to apply/revert or otherwise operate on hunks. Occasionally, though, I just want to kill (copy) part of the diff so I can do something else with it. When I do, I end up with leading `-` or `+` or `!` characters that I have to strip manually. For example:
 
 ```
  @ -438,7 +438,7 @@ cc-other-file-alist. (ff-find-other-file evidently handles symbols specially.)"

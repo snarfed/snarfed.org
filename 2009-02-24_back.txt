@@ -7,20 +7,7 @@ Back!
 
 We're back up! Sorry for the inconvenience, and thanks for your patience.
 
-What happened? In short, my [hosting provider](http://pair.com/) disabled my
-[PyBlosxom](http://pyblosxom.bluesock.org/) CGI script, which
-<strike>runs</strike> used to run this site. It was using too much CPU on my
-server ([ambym](http://ambym.pair.com/)) for sustained periods of time, due to a
-combination of [comment and referrer spam](/referrer_spam) storms and
-[inefficient](http://pyblosxom.bluesock.org/registry/input/comments/comments.html)
-[plugins](/pyblosxom_history), and it was impacting other sites. I may not have
-liked that they turned me off, but it was only reasonable.
+What happened? In short, my [hosting provider](http://pair.com/) disabled my [PyBlosxom](http://pyblosxom.bluesock.org/) CGI script, which
+<strike>runs</strike> used to run this site. It was using too much CPU on my server ([ambym](http://ambym.pair.com/)) for sustained periods of time, due to a combination of [comment and referrer spam](/referrer_spam) storms and [inefficient](http://pyblosxom.bluesock.org/registry/input/comments/comments.html) [plugins](/pyblosxom_history), and it was impacting other sites. I may not have liked that they turned me off, but it was only reasonable.
 
-In the short term, I blocked a bunch of spammer IP addresses and optimized the
-[comments](http://pyblosxom.bluesock.org/registry/input/comments/comments.html)
-and [history](/pyblosxom_history) plugins. In the long term, I'd love to
-use either [FastCGI](http://fastcgi.com/) or [WSGI](http://wsgi.org/wsgi/) to avoid
-the cost of starting up the python interpreter, loading all of the modules, and
-initializing PyBlosxom on every single request. Unfortunately,
-[pair](http://pair.com/) doesn't support them on
-[shared accounts](http://www.pair.com/services/web_hosting/). Sigh.
+In the short term, I blocked a bunch of spammer IP addresses and optimized the [comments](http://pyblosxom.bluesock.org/registry/input/comments/comments.html) and [history](/pyblosxom_history) plugins. In the long term, I'd love to use either [FastCGI](http://fastcgi.com/) or [WSGI](http://wsgi.org/wsgi/) to avoid the cost of starting up the python interpreter, loading all of the modules, and initializing PyBlosxom on every single request. Unfortunately, [pair](http://pair.com/) doesn't support them on [shared accounts](http://www.pair.com/services/web_hosting/). Sigh.

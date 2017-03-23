@@ -5,113 +5,49 @@ why I don't run shells inside Emacs
 <a href="http://tcsh.org/"><img src="/tcsh_oystercatcher.jpg"></a>
 <a href="http://gnu.org/software/emacs/"><img src="/gnu.jpg"></a>
 
-*This article describes my first attempt at running shells inside Emacs, which
-didn't work out. I [tried again recently](/why_i_run_shells_inside_emacs), and I
-think I'm going to stick with it, so this is preserved for posterity only!*
+*This article describes my first attempt at running shells inside Emacs, which didn't work out. I [tried again recently](/why_i_run_shells_inside_emacs), and I think I'm going to stick with it, so this is preserved for posterity only!*
 
-When I'm working, I pretty much live inside
-[Emacs](http://gnu.org/software/emacs/). It's my IDE, debugger, text editor,
-email composer, spreadsheet, file manager, and all-around scratch pad. The only
-other app that's as ubiquitous in my work routine is my shell,
-[tcsh](http://www.tcsh.org/) inside [rxvt](http://rxvt.org/).
+When I'm working, I pretty much live inside [Emacs](http://gnu.org/software/emacs/). It's my IDE, debugger, text editor, email composer, spreadsheet, file manager, and all-around scratch pad. The only other app that's as ubiquitous in my work routine is my shell, [tcsh](http://www.tcsh.org/) inside [rxvt](http://rxvt.org/).
 
-I've customized the hell out of both Emacs and tcsh to make them work the way I
-want. I have Emacs whipped into shape, and tcsh too, mostly, except for one
-thing: _copying without the mouse_.
+I've customized the hell out of both Emacs and tcsh to make them work the way I want. I have Emacs whipped into shape, and tcsh too, mostly, except for one thing: _copying without the mouse_.
 
-I hate the mouse. It's good for some things, but not my work. Switching between
-the mouse and the keyboard wreaks havoc on my muscle memory and fine-motor flow.
-Thanks to [Emacs](http://gnu.org/software/emacs/),
-[Ion](http://iki.fi/tuomov/ion/), [Pine](http://www.washington.edu/pine/),
-[Gaim](http://gaim.sf.net), and [Firefox](http://getfirefox.com/)'s blessed
-[Find As You Type](http://www.mozilla.org/access/type-ahead/), I can do pretty
-much everything with the keyboard. The only thing I _can't_ do with the keyboard
-is copy text from a terminal. And that irks me.
+I hate the mouse. It's good for some things, but not my work. Switching between the mouse and the keyboard wreaks havoc on my muscle memory and fine-motor flow. Thanks to [Emacs](http://gnu.org/software/emacs/), [Ion](http://iki.fi/tuomov/ion/), [Pine](http://www.washington.edu/pine/), [Gaim](http://gaim.sf.net), and [Firefox](http://getfirefox.com/)'s blessed [Find As You Type](http://www.mozilla.org/access/type-ahead/), I can do pretty much everything with the keyboard. The only thing I _can't_ do with the keyboard is copy text from a terminal. And that irks me.
 
-A voice in the back of my head had been nagging me about this for a while.
-_Ryan, you can fix this,_ it said, _and you know how._ It was right. I didn't
-want to admit it, but I did know how, and it did too. _Why don't you try running
-your shells inside Emacs?_
+A voice in the back of my head had been nagging me about this for a while. _Ryan, you can fix this,_ it said, _and you know how._ It was right. I didn't want to admit it, but I did know how, and it did too. _Why don't you try running your shells inside Emacs?_
 
-I had a laundry list of reasons. Half of my `.cshrc` would be usless. I'd forgo
-[acoc](http://www.caliban.org/ruby/acoc.shtml)'s wonderful colorized command
-output. Emacs'
-[shell-mode](http://gnu.org/software/emacs/manual/html_node/Shell-Mode.html)
-would never do history management as well as native tcsh. And I wouldn't get
-that cool transparent background. :P
+I had a laundry list of reasons. Half of my `.cshrc` would be usless. I'd forgo [acoc](http://www.caliban.org/ruby/acoc.shtml)'s wonderful colorized command output. Emacs' [shell-mode](http://gnu.org/software/emacs/manual/html_node/Shell-Mode.html) would never do history management as well as native tcsh. And I wouldn't get that cool transparent background. :P
 
-The voice in the back of my head didn't go away, though. Every time I reached
-for the mouse to copy something out of a terminal, it piped up. _You could fix
-that, you know._ Sigh. I knew.
+The voice in the back of my head didn't go away, though. Every time I reached for the mouse to copy something out of a terminal, it piped up. _You could fix that, you know._ Sigh. I knew.
 
-Finally, it got the better of me. I wrote _try emacs shell mode_ on my todo
-list, and a few days later, I tried it. `M-x shell` was all it took, and it worked
-surprisingly well. What's more, most of my reasons for avoiding it were
-unfounded. Here's what worked well:
+Finally, it got the better of me. I wrote _try emacs shell mode_ on my todo list, and a few days later, I tried it. `M-x shell` was all it took, and it worked surprisingly well. What's more, most of my reasons for avoiding it were unfounded. Here's what worked well:
 
 <a name="pros_and_cons"></a>
 
-  * **Copying with the keyboard.** This goes without saying. What's more, all of
-my Emacs muscle memory for navigating and searching now applied to the entire
-contents of my shell!
+  * **Copying with the keyboard.** This goes without saying. What's more, all of my Emacs muscle memory for navigating and searching now applied to the entire contents of my shell!
 
-  * **Session management.** All of my shells were at my fingertips, regardless
-of which Emacs frame I was currently in. No more context switching into a
-different Ion frame on a different virtual desktop just to check on a command.
-Even better, I could continue using my work shells _at home_, over VPN, just by
-connecting to my work Emacs!
+  * **Session management.** All of my shells were at my fingertips, regardless of which Emacs frame I was currently in. No more context switching into a different Ion frame on a different virtual desktop just to check on a command. Even better, I could continue using my work shells _at home_, over VPN, just by connecting to my work Emacs!
 
-  * **Tcsh integration.** Emacs was surprisingly sociable with tcsh. It obeyed
-my `.cshrc`, read and wrote its
-command history to `~/.history`, and generally played nice.
+  * **Tcsh integration.** Emacs was surprisingly sociable with tcsh. It obeyed my `.cshrc`, read and wrote its command history to `~/.history`, and generally played nice.
 
-  * **ANSI color codes.** Wonder of wonders, Emacs could even display color
-codes properly. Just do <code>M-x
-[ansi-color-for-comint-mode-on](http://www.gnu.org/software/emacs/manual/html_node/Shell-Options.html#index-shell_002dpushd_002ddunique-3323)</code>.
+  * **ANSI color codes.** Wonder of wonders, Emacs could even display color codes properly. Just do <code>M-x [ansi-color-for-comint-mode-on](http://www.gnu.org/software/emacs/manual/html_node/Shell-Options.html#index-shell_002dpushd_002ddunique-3323)</code>.
 
-  * **Find-file-at-point.** This handy little elisp function opens, in a new
-Emacs buffer, the filename that your cursor is currently on. After an `ls`, if I
-wanted to look at a file, I just moved up to it and hit `M-C-f` (bound to
-`find-file-at-point`), and Emacs would open the file. Slick.
+  * **Find-file-at-point.** This handy little elisp function opens, in a new Emacs buffer, the filename that your cursor is currently on. After an `ls`, if I wanted to look at a file, I just moved up to it and hit `M-C-f` (bound to `find-file-at-point`), and Emacs would open the file. Slick.
 
 It wasn't perfect, though. Here's what didn't work well:
 
-  * **Not a terminal.** I gained keyboard navigation at the expense of having
-a true terminal emulator. I couldn't run any app that needed anything more than
-a dumb terminal - Pine, BitTorrent, less, and others. I could use
-[Term mode](http://www.gnu.org/software/emacs/manual/html_node/emacs/Term-Mode.html),
-which provides a full terminal, but that defeats the purpose of running inside
-emacs.
+  * **Not a terminal.** I gained keyboard navigation at the expense of having a true terminal emulator. I couldn't run any app that needed anything more than a dumb terminal - Pine, BitTorrent, less, and others. I could use [Term mode](http://www.gnu.org/software/emacs/manual/html_node/emacs/Term-Mode.html), which provides a full terminal, but that defeats the purpose of running inside emacs.
 
-  * **History.** As I suspected, command history wasn't quite as good as stock
-tcsh. It worked ok for history in the current shell's session, but I didn't have
-access to history from previous sessions.
+  * **History.** As I suspected, command history wasn't quite as good as stock tcsh. It worked ok for history in the current shell's session, but I didn't have access to history from previous sessions.
 
-  * **Remote completion.** Emacs could tab-complete local files and
-directories, but as soon as I sshed to another machine, it was helpless. OK,
-that's not quite true...I tried [TRAMP](http://www.gnu.org/software/tramp/), and
-it worked, but it was unbearably, unusably slow. Sigh.
+  * **Remote completion.** Emacs could tab-complete local files and directories, but as soon as I sshed to another machine, it was helpless. OK, that's not quite true...I tried [TRAMP](http://www.gnu.org/software/tramp/), and it worked, but it was unbearably, unusably slow. Sigh.
 
-  * **Case-sensitive completion.** File and directory tab completion is case
-sensitive. It doesn't obey the completion-ignore-case variable. Boo.
+  * **Case-sensitive completion.** File and directory tab completion is case sensitive. It doesn't obey the completion-ignore-case variable. Boo.
 
-  * **Slow color code parsing.** My joy at finding `ansi-color-for-comint-mode-on`
-turned to horror as soon as I did an `ls -l` in a large directory. Emacs' color
-code parsing is dog slow. I could use `ansi-color-for-comint-mode-filter` to just
-ignore the color codes, but I couldn't bear to go without them.
+  * **Slow color code parsing.** My joy at finding `ansi-color-for-comint-mode-on` turned to horror as soon as I did an `ls -l` in a large directory. Emacs' color code parsing is dog slow. I could use `ansi-color-for-comint-mode-filter` to just ignore the color codes, but I couldn't bear to go without them.
 
-So, you might ask, what was the verdict? The jury's still out. I'm currently
-wrestling [GNU screen](http://www.gnu.org/software/screen/) into submission,
-since it also allows
-[keyboard navigation and copy/paste](http://www.delorie.com/gnu/docs/screen/screen_73.html)
-over shell contents. So far, I've
-[synchronized its paste buffer and the X selection](/synchronizing_GNU_screens_paste_buffer_and_the_X_selection),
-and I've
-[Emacs-ified its copy-scrollback mode](/Emacs_keybindings_in_GNU_screens_copy-scrollback_mode).
-Stay tuned for more!
+So, you might ask, what was the verdict? The jury's still out. I'm currently wrestling [GNU screen](http://www.gnu.org/software/screen/) into submission, since it also allows [keyboard navigation and copy/paste](http://www.delorie.com/gnu/docs/screen/screen_73.html) over shell contents. So far, I've [synchronized its paste buffer and the X selection](/synchronizing_GNU_screens_paste_buffer_and_the_X_selection), and I've [Emacs-ified its copy-scrollback mode](/Emacs_keybindings_in_GNU_screens_copy-scrollback_mode). Stay tuned for more!
 
-Here's what I added to [my .emacs](/dotfiles/.emacs) to
-make shell-mode behave the way I wanted:
+Here's what I added to [my .emacs](/dotfiles/.emacs) to make shell-mode behave the way I wanted:
 
 <a name="settings"></a>
 

@@ -11,36 +11,22 @@ For the impatient:
 [SnipSnap macros](http://snipsnap.org/space/Macro+Tutorial)  
 [SnipSnap web site](http://snipsnap.org/)
 
-In the course of setting up our web sites, [snarfed.org](/)
-and [maulik.net](http://maulik.freeshell.net/Miki.pl?page=home.miki),
-[Maulik](/Maulik) and I have written a number of macros for SnipSnap. To install
-and use these macros, [download snarfed.jar](/snarfed.jar), put it in your
-SnipSnap application's WEB-INF/lib/ subdirectory, and restart SnipSnap.
+In the course of setting up our web sites, [snarfed.org](/) and [maulik.net](http://maulik.freeshell.net/Miki.pl?page=home.miki), [Maulik](/Maulik) and I have written a number of macros for SnipSnap. To install and use these macros, [download snarfed.jar](/snarfed.jar), put it in your SnipSnap application's WEB-INF/lib/ subdirectory, and restart SnipSnap.
 
 The included macros are:
 
-  * **IndexSome**, which takes a list of snip paths as its content, and displays
-an index with only those snips and their immediate children.
+  * **IndexSome**, which takes a list of snip paths as its content, and displays an index with only those snips and their immediate children.
 
-  * **MakeAlbum**, which creates a picture album (with thumbnails, forward and
-backward links, etc.) out of a set of pictures.
+  * **MakeAlbum**, which creates a picture album (with thumbnails, forward and backward links, etc.) out of a set of pictures.
 
-  * **AlbumPic**, which generates a thumbnail and links to a given snip. This is
-useful if you want more flexibility to design your own picture album. It's
-similar to the [snipscale](http://snipsnap.org/space/scaled-image) macro.
+  * **AlbumPic**, which generates a thumbnail and links to a given snip. This is useful if you want more flexibility to design your own picture album. It's similar to the [snipscale](http://snipsnap.org/space/scaled-image) macro.
 
-  * **CurrentUser**, which shows the username of the current user, or "guest" if
-the user is not logged in.
+  * **CurrentUser**, which shows the username of the current user, or "guest" if the user is not logged in.
 
   * **Attach**, which attaches a file to a snip.
 
-  * **ShowAttachments**, which shows all of a snip's attachments as links to the
-attachment files.
+  * **ShowAttachments**, which shows all of a snip's attachments as links to the attachment files.
 
-  * **Utility**, which provides miscellaneous code that might be of interest to
-macro writers.
+  * **Utility**, which provides miscellaneous code that might be of interest to macro writers.
 
-The snarfed macros require
-[SnipSnap 1.0b1](http://snipsnap.org/space/snipsnap-download) or greater, and is
-distributed under the [GPL](http://www.gnu.org/licenses/gpl.html). Copyright
-2002-2005 Maulik Shah, Ryan Barrett.
+The snarfed macros require [SnipSnap 1.0b1](http://snipsnap.org/space/snipsnap-download) or greater, and is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html). Copyright 2002-2005 Maulik Shah, Ryan Barrett.

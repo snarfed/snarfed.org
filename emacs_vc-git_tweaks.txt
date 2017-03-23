@@ -1,20 +1,9 @@
 7107
 Emacs vc-git tweaks
 
-I use [Emacs](http://www.gnu.org/software/emacs/),
-[vc](http://www.gnu.org/software/emacs/manual/html_node/emacs/Version-Control.html),
-and [git](http://git-scm.com/) all pretty heavily. I know the cool kids use
-[magit](http://magit.github.io/magit/) and
-[egg](https://github.com/byplayer/egg#readme), but good old vc has stuck with me
-through four different "new hotness" version control systems - CVS, Perforce,
-Subversion, and now git - and I'm sure it will still be around for many more to
-come.
+I use [Emacs](http://www.gnu.org/software/emacs/), [vc](http://www.gnu.org/software/emacs/manual/html_node/emacs/Version-Control.html), and [git](http://git-scm.com/) all pretty heavily. I know the cool kids use [magit](http://magit.github.io/magit/) and [egg](https://github.com/byplayer/egg#readme), but good old vc has stuck with me through four different "new hotness" version control systems - CVS, Perforce, Subversion, and now git - and I'm sure it will still be around for many more to come.
 
-Still, git is a beast, even compared to other big (D)VCSes, and vc doesn't
-expose many of its features. A few in particular I sorely missed were staging
-and unstaging individual files and smarter refreshing in vc-dir buffers. Here's
-the code in my `.emacs` that adds those features. I overrode a few existing vc
-key bindings; feel free to change those, of course.
+Still, git is a beast, even compared to other big (D)VCSes, and vc doesn't expose many of its features. A few in particular I sorely missed were staging and unstaging individual files and smarter refreshing in vc-dir buffers. Here's the code in my `.emacs` that adds those features. I overrode a few existing vc key bindings; feel free to change those, of course.
 
 ```
 ;; In vc-git and vc-dir for git buffers, make (C-x v) a run git add, u run git

@@ -5,12 +5,7 @@ Emacs Lisp for flowed text email
  <a href="http://gnu.org/software/emacs/">
   <img src="/gnu.jpg" /></a></p>
 
-Here's some Emacs Lisp for encoding flowed text a la
-[RFC 2646](http://www.apps.ietf.org/rfc/rfc2646.html). This is useful for
-composing email in Emacs. For example, if you use a separate email client and
-emacsclient as your editor, add this and `(add-hook 'server-switch-hook
-'flow-encode-buffer)` to your `.emacs` to encode your emails as flowed text
-automatically.
+Here's some Emacs Lisp for encoding flowed text a la [RFC 2646](http://www.apps.ietf.org/rfc/rfc2646.html). This is useful for composing email in Emacs. For example, if you use a separate email client and emacsclient as your editor, add this and `(add-hook 'server-switch-hook 'flow-encode-buffer)` to your `.emacs` to encode your emails as flowed text automatically.
 
 ```
 (defgroup flow-fill nil

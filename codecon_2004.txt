@@ -3,13 +3,7 @@ CodeCon 2004
 
 <a href="http://codecon.org/2004/"><img src="/codecon.png"></a>
 
-I went to [CodeCon
-2004](http://codecon.org/2004/), and I had a blast. It was a great time. I've
-posted a [short description](/2004-02-21_codecon) and a [photo
-album](/codecon_2004_pictures). I'm also posting my rough, incomplete,
-unedited notes on a few of the projects presented on
-[Saturday](http://www.codecon.org/2004/schedule0221.html) and
-[Sunday](http://www.codecon.org/2004/schedule0222.html).
+I went to [CodeCon 2004](http://codecon.org/2004/), and I had a blast. It was a great time. I've posted a [short description](/2004-02-21_codecon) and a [photo album](/codecon_2004_pictures). I'm also posting my rough, incomplete, unedited notes on a few of the projects presented on [Saturday](http://www.codecon.org/2004/schedule0221.html) and [Sunday](http://www.codecon.org/2004/schedule0222.html).
 
 **Contents:**
 
@@ -23,51 +17,35 @@ unedited notes on a few of the projects presented on
   * [GracefulTavi (wiki server)](#gracefultavi)
   * [Mosuki (next-gen social network)](#mosuki)
 
-**FunFS (fast userspace network
-filesystem)**
+**FunFS (fast userspace network filesystem)**
 <a name="funfs"></a>
 
 [http://www.luminal.org/wiki/index.php/FunFS](http://www.luminal.org/wiki/index.php/FunFS)
 
-goal is to make "nfs done better" (since nfs is stateless, insecure, bad track
-record, bad failure model)
+goal is to make "nfs done better" (since nfs is stateless, insecure, bad track record, bad failure model)
 
 fully disconnected operation (w/very very aggressive, long-lived caching)
 
-doesn't try to break new ground w/security, but aims to be "as good as
-necessary" - supports SSL, PAM backend, etc.
+doesn't try to break new ground w/security, but aims to be "as good as necessary" - supports SSL, PAM backend, etc.
 
-\*userspace implementation\*!!! (easier debugging, packaging, porting,
-libraries, etc.) however, hard to believe this will have the same availability,
-performance, robustness as a kernel filesystem.
+\*userspace implementation\*!!! (easier debugging, packaging, porting, libraries, etc.) however, hard to believe this will have the same availability, performance, robustness as a kernel filesystem.
 
-make use of other projects: wvstreams (open.nit.ca) for network comm, FUSE
-(avf.sf.net) as a kernel module that enables developing fses in userspace (with
-nontrivial extensions, optimization, etc.)
+make use of other projects: wvstreams (open.nit.ca) for network comm, FUSE (avf.sf.net) as a kernel module that enables developing fses in userspace (with nontrivial extensions, optimization, etc.)
 
 currently \*READ-ONLY!!!\*
 
 disconnected and sporadic connection are pretty well done:
 
-DEMO 1 - they connect, start x, boot ooffice, start playing a video, and yank
-the ethernet \*while\* x is booting and mplayer is playing. those still work,
-but you can't look at new (uncached) files. plug in ethernet again, and you can
-look at those things seamlessly. not a bad demo.
+DEMO 1 - they connect, start x, boot ooffice, start playing a video, and yank the ethernet \*while\* x is booting and mplayer is playing. those still work, but you can't look at new (uncached) files. plug in ethernet again, and you can look at those things seamlessly. not a bad demo.
 
-latency masking: read-ahead, pipelining, negative latency (like
-read-ahead/branch prediction for metadata, based on fs usage heuristics. e.g. if
-you stat a symlink, chances are good that you'll stat its target next).
+latency masking: read-ahead, pipelining, negative latency (like read-ahead/branch prediction for metadata, based on fs usage heuristics. e.g. if you stat a symlink, chances are good that you'll stat its target next).
 
-DEMO 2: doing a "find ." in their src dir. took ~5s w/nfs, 1.7s the first time
-w/funfs, .15s the second time. (this is because the files are cached locally, so
-the find runs entirely on the local hdd.)
+DEMO 2: doing a "find ." in their src dir. took ~5s w/nfs, 1.7s the first time w/funfs, .15s the second time. (this is because the files are cached locally, so the find runs entirely on the local hdd.)
 
 this all seems impressive, but mostly because they avoided all the hard problems
-- mostly \*writing\*, but also cache coherence, notifications, security
-implementation, etc.
+- mostly \*writing\*, but also cache coherence, notifications, security implementation, etc.
 
-future plans include writing (heh), write caching, disconnected writes. kinda
-reminds me of many version control projects' wishlists.
+future plans include writing (heh), write caching, disconnected writes. kinda reminds me of many version control projects' wishlists.
 
 **Tor (anonymizing onion routing)**
 <a name="tor"></a>
@@ -80,20 +58,15 @@ works on most \*nixes (and likely windows too!)
 
 user-space, no kernel module needed; implemented as a SOCKS proxy.
 
-circuit-based; initiator builds a virtual circuit by establishing sessions
-w/each node on the circuit path. one layer of encryption per hop.
+circuit-based; initiator builds a virtual circuit by establishing sessions w/each node on the circuit path. one layer of encryption per hop.
 
-limitations: TCP-only, weaker than high-latency networks (e.g. mixmaster), not
-p2p (uses semicentral nodes), no protocol normalization (ie \*privacy\* - this
-is just \*anonymity\*)
+limitations: TCP-only, weaker than high-latency networks (e.g. mixmaster), not p2p (uses semicentral nodes), no protocol normalization (ie \*privacy\* - this is just \*anonymity\*)
 
-provides \*perfect\* forward secrecy! - encrypted session w/each hop on the
-circuit. they call this a "telescoping circuit".
+provides \*perfect\* forward secrecy! - encrypted session w/each hop on the circuit. they call this a "telescoping circuit".
 
 can multiplex TCP connections in a single circuit
 
-can send TCP connections partway down a circuit, then divert it down another
-circuit. (no good security analysis for this though, so it's not used).
+can send TCP connections partway down a circuit, then divert it down another circuit. (no good security analysis for this though, so it's not used).
 
 congestion control to avoid nodes form getting overloaded.
 
@@ -103,26 +76,20 @@ sysadmin controls over node behavior (e.g. no outgoing mail)
 
 both standard encryption (TLS) and end-to-end integrity.
 
-future: more directory server functionality (thresholds!), scalability (in terms
-of collusion resistance), other transports besides TCP, etc.
+future: more directory server functionality (thresholds!), scalability (in terms of collusion resistance), other transports besides TCP, etc.
 
 questions:
 
   * compare to freenet? freedom? Peek-a-booty?
-  * if you use a telescoping circuit, you have to set up stateful sessions
-w/each intermediate node. so how could setup be low-latency?
+  * if you use a telescoping circuit, you have to set up stateful sessions w/each intermediate node. so how could setup be low-latency?
 
-**Vend-O-Rand - entropy vending machine (from Shmoo
-group)**
+**Vend-O-Rand - entropy vending machine (from Shmoo group)**
 <a name="vendorand"></a>
 
 
 [http://shmoo.com/](http://shmoo.com/)
 
-computers are notoriously bad at generating real, genuine entropy (aka
-randomness). they don't call PRNGs \*pseudo\*-random for nothing! so, shmoo made
-a portable vending machine that will provide you genuine, grade-A entropy for a
-mere $1!
+computers are notoriously bad at generating real, genuine entropy (aka randomness). they don't call PRNGs \*pseudo\*-random for nothing! so, shmoo made a portable vending machine that will provide you genuine, grade-A entropy for a mere $1!
 
 inputs:
 
@@ -150,61 +117,35 @@ currently accepting applications for franchises!
 
 [http://osiris.shmoo.com/](http://osiris.shmoo.com/)
 
-intrusion detection tool - monitoring system integrity of large number of
-clients (including \*nix, mac os x, win nt4, win2k, winxp!) osiris is supposed
-to be "a better tripwire," but has diverged from that.
+intrusion detection tool - monitoring system integrity of large number of clients (including \*nix, mac os x, win nt4, win2k, winxp!) osiris is supposed to be "a better tripwire," but has diverged from that.
 
-scan agents do auditing/intrusion detection, talk to a management console over
-SSL. there's a lightweight CLI shell that can do sysadmin-type stuff; it also
-talks to the management console over SSL. management console owns root cert,
-clients make "leap of faith" first time they accept the cert, ideally when
-they're installed, under a sysadmin's supervision.
+scan agents do auditing/intrusion detection, talk to a management console over SSL. there's a lightweight CLI shell that can do sysadmin-type stuff; it also talks to the management console over SSL. management console owns root cert, clients make "leap of faith" first time they accept the cert, ideally when they're installed, under a sysadmin's supervision.
 
-snapshots certain parts of machine state and then compares them to previous
-snapshots.
+snapshots certain parts of machine state and then compares them to previous snapshots.
 
-a big design goal is to reduce "noise" (false positives) so that sysadmins
-actually pay attention it.
+a big design goal is to reduce "noise" (false positives) so that sysadmins actually pay attention it.
 
 contents of snapshot, real-time logging, etc. are very configurable.
 
-also supports on-demand audits (scans) that can be initiated if you suspect a
-host has been compromised.
+also supports on-demand audits (scans) that can be initiated if you suspect a host has been compromised.
 
 **PGP Universal**
 <a name="pgpuniversal"></a>
 
 
-[http://www.pgp.com/products/enterprise/universal/index.html](http://www.pgp.com/products/enterprise/universal/index.html)
-(from PGP corp)
+[http://www.pgp.com/products/enterprise/universal/index.html](http://www.pgp.com/products/enterprise/universal/index.html) (from PGP corp)
 
-goal is seamless PGP. background: SSL has succeeded (effectively) because
-because there's no installation or configuration required; the user doesn't have
-to do \*anything\*. the \*only\* thing the user is usually even aware of is the
-little padlock icon in IE or mozilla - unlocked for insecure, locked for secure!
+goal is seamless PGP. background: SSL has succeeded (effectively) because because there's no installation or configuration required; the user doesn't have to do \*anything\*. the \*only\* thing the user is usually even aware of is the little padlock icon in IE or mozilla - unlocked for insecure, locked for secure!
 
-PGP/GPG have failed in the mainstream because they're far from zero-config. PGP
-universal aims to provide zero-conf PGP. basically webmail that
-aggregates/manages PGP keys.
+PGP/GPG have failed in the mainstream because they're far from zero-config. PGP universal aims to provide zero-conf PGP. basically webmail that aggregates/manages PGP keys.
 
-interesting: attachments are (optionally) hosted on a web site, behind SSL,
-instead of sent w/the email.
+interesting: attachments are (optionally) hosted on a web site, behind SSL, instead of sent w/the email.
 
-lots of implementation difficulties - first on the list is that both POP and
-IMAP expect that messages are \*immutable\* once they've been delivered to a
-mailbox in the mail server. (clearly not true if you have to decrypt a message
-after it's arrived!) PGP universal gets around this by lying to the mail server
-about the length, headers, body, MIME types, etc.
+lots of implementation difficulties - first on the list is that both POP and IMAP expect that messages are \*immutable\* once they've been delivered to a mailbox in the mail server. (clearly not true if you have to decrypt a message after it's arrived!) PGP universal gets around this by lying to the mail server about the length, headers, body, MIME types, etc.
 
-frankly, PGP was the hard part - getting the UI right, with zero-conf, behind a
-decent webmail, doesn't seem nearly as hard, although they clearly did it right.
-the talk also included some bitching about IMAP, POP, Outlook, webmail
-providers, remailers, etc...a little off topic, even if it was justified.
+frankly, PGP was the hard part - getting the UI right, with zero-conf, behind a decent webmail, doesn't seem nearly as hard, although they clearly did it right. the talk also included some bitching about IMAP, POP, Outlook, webmail providers, remailers, etc...a little off topic, even if it was justified.
 
-moreover, there were lots of somewhat amusing questions from the crowd about the
-commercial nature of the product - it costs money, even for end users, it's
-closed-source, etc. pretty standard normally, but definitely unusual in this
-crowd. not wholly unwelcome, but maybe a little. :P
+moreover, there were lots of somewhat amusing questions from the crowd about the commercial nature of the product - it costs money, even for end users, it's closed-source, etc. pretty standard normally, but definitely unusual in this crowd. not wholly unwelcome, but maybe a little. :P
 
 **SCREAM**
 <a name="scream"></a>
@@ -212,37 +153,23 @@ crowd. not wholly unwelcome, but maybe a little. :P
 
 [http://audio.egregious.net/scream/](http://audio.egregious.net/scream/)
 
-so, the first impression we got from this talk wasn't the talk at all, but the
-demo setup. the lead (who spoke) was in the dj booth, the entire dance floor was
-cleared out of chairs, and there were 8 huge speakers in an array. after the
-talk, he ran a demo of 3d positional audio, w/him directing it \*in realtime\*.
-all of the attendees stood in the middle of the dance floors and got our
-collective ear drums blown out. it was great. :P
+so, the first impression we got from this talk wasn't the talk at all, but the demo setup. the lead (who spoke) was in the dj booth, the entire dance floor was cleared out of chairs, and there were 8 huge speakers in an array. after the talk, he ran a demo of 3d positional audio, w/him directing it \*in realtime\*. all of the attendees stood in the middle of the dance floors and got our collective ear drums blown out. it was great. :P
 
-real-time java audio sequencer/mixer/sampler/synthesizer spatializer, built on
-SuperCollider 3. \*entirely\* synthesized in real-time, can run w/o prerecorded
-samples at all!
+real-time java audio sequencer/mixer/sampler/synthesizer spatializer, built on SuperCollider 3. \*entirely\* synthesized in real-time, can run w/o prerecorded samples at all!
 
 pluggable modules include:
 
-  * GranuSampler: granular synthesis, allows mixing and matching samples at
-different speeds and fine-grained envelopes
-  * Ambisonic Spatialization: first-order unit generator from SuperCollider,
-does
-full 3d spatialization of sound, output to 5.1, 6.1, dolby, headphones, etc.
-  * AmbiGranusampler, combination
-server-client w/thin client and bandwidth-constrained protocol design.
+  * GranuSampler: granular synthesis, allows mixing and matching samples at different speeds and fine-grained envelopes
+  * Ambisonic Spatialization: first-order unit generator from SuperCollider, does full 3d spatialization of sound, output to 5.1, 6.1, dolby, headphones, etc.
+  * AmbiGranusampler, combination server-client w/thin client and bandwidth-constrained protocol design.
 
-demoed at burning man on an 8-point speaker system, thousands of watts, 12 ft.
-tall speaker stacks. (!)
+demoed at burning man on an 8-point speaker system, thousands of watts, 12 ft. tall speaker stacks. (!)
 
 high-performance UI, in the tradition of pro audio eq't, based solely on Java2D.
 
 next, planning to use this as part of a multimedia distribution platform w/java.
 
-also, want to try to use this to create open-source audio tools for film, music,
-etc. post-production (e.g. positional audio special fx as well as video special
-fx.)
+also, want to try to use this to create open-source audio tools for film, music, etc. post-production (e.g. positional audio special fx as well as video special fx.)
 
 **Solipsis**
 <a name="solipsis"></a>
@@ -250,55 +177,34 @@ fx.)
 
 [http://solipsis.netofpeers.com/](http://solipsis.netofpeers.com/)
 
-purely distributed, scalable framework for virtual world w/avatars. inspired by
-mmorpgs, but also metaverse (from neal stephenson's snow crash), etc. built by
-france telecom (!).
+purely distributed, scalable framework for virtual world w/avatars. inspired by mmorpgs, but also metaverse (from neal stephenson's snow crash), etc. built by france telecom (!).
 
-terms: each peer is a node, an avatar is a node w/a human driving it, a virtual
-object is a node without a human.
+terms: each peer is a node, an avatar is a node w/a human driving it, a virtual object is a node without a human.
 
-the net structure and routing use measurements based on "known", "visible", and
-"near" nodes. these are calculated from visibility, history, distance, etc.
-principle is "if i can see everyone, and they can see me, then for all intents
-and purposes, i'm there."
+the net structure and routing use measurements based on "known", "visible", and "near" nodes. these are calculated from visibility, history, distance, etc. principle is "if i can see everyone, and they can see me, then for all intents and purposes, i'm there."
 
-collaboration: when pre-existing entities see that a new entity joins in, they
-help announce that entity's info (basically assisted flood-fill). connections
-are \*loose\* w.r.t visibility.
+collaboration: when pre-existing entities see that a new entity joins in, they help announce that entity's info (basically assisted flood-fill). connections are \*loose\* w.r.t visibility.
 
 the network structure, routing, connectivity are organized like a 2D BSP tree.
 
   * each node has its own connxn BSP tree
   * the correlations (edges) are the net connxns
-  * the BSP tree is \*dynamic\* - changes when other nodes enter/leave/move,
-etc.
+  * the BSP tree is \*dynamic\* - changes when other nodes enter/leave/move, etc.
 
-the "Global Connection Property" is basically a formalization of when the
-routing table for a node has converged. they've canonicalized it so that when a
-node joins or leaves, neighbors can help fill in the gaps in your routing tables
-to speed up convergence.
+the "Global Connection Property" is basically a formalization of when the routing table for a node has converged. they've canonicalized it so that when a node joins or leaves, neighbors can help fill in the gaps in your routing tables to speed up convergence.
 
-"moving" in this virtual world is nontrivial. basically, you have a target, and
-a msmt of where they are in the network. you can also measure distance as #
-hops. to get there, you pick a random hop that's "toward" them (or not away from
-them) and keep going until you hit a node you've already seen. then you've
-"surrounded" the target, ie you've seen all its neighbors, so you're there.
+"moving" in this virtual world is nontrivial. basically, you have a target, and a msmt of where they are in the network. you can also measure distance as # hops. to get there, you pick a random hop that's "toward" them (or not away from them) and keep going until you hit a node you've already seen. then you've "surrounded" the target, ie you've seen all its neighbors, so you're there.
 
 architecture:
 
-  * nodes talk to each other w/UDP - stateless, short-lived connxns to maintain
-ad-hoc network and routing tables.
-  * avatars talk w/"navigators", which use nodes to find navigators, then talk
-directly to the other navigators over XML-RPC, CORBA, etc. (stateful).
+  * nodes talk to each other w/UDP - stateless, short-lived connxns to maintain ad-hoc network and routing tables.
+  * avatars talk w/"navigators", which use nodes to find navigators, then talk directly to the other navigators over XML-RPC, CORBA, etc. (stateful).
   * navigators can do HTTP/proxy traversal
   * the navigator has a pluggable platform that allows people to develop their
 
 own services (e.g. chat, gambling, trading, etc.) on top of solipsis.
 
-demo was fun - we all logged onto solipsis and bounced around! it was a little
-temperamental, but it did work. the presenters were really excited - he said it
-was the largest load test he'd ever done. he was grinning from ear to ear, wihch
-was pretty cool.
+demo was fun - we all logged onto solipsis and bounced around! it was a little temperamental, but it did work. the presenters were really excited - he said it was the largest load test he'd ever done. he was grinning from ear to ear, wihch was pretty cool.
 
 **GracefulTavi**
 <a name="gracefultavi"></a>
@@ -306,23 +212,15 @@ was pretty cool.
 
 [http://open.nit.ca/wiki/?GracefulTavi](http://open.nit.ca/wiki/?GracefulTavi)
 
-sophisticated, fully-functional wiki written in php and mysql. fork of
-WikkiTikkiTavi, extended by NetIntegration Technologies
+sophisticated, fully-functional wiki written in php and mysql. fork of WikkiTikkiTavi, extended by NetIntegration Technologies
 
-demo had a few glitches w/permissions, but did show that gracefultavi could be
-installed, configured, and run (from scratch) within ~5 minutes.
+demo had a few glitches w/permissions, but did show that gracefultavi could be installed, configured, and run (from scratch) within ~5 minutes.
 
-very conservative parsing - converts text to HTML w/regexps. parsed line by line
-w/temporary tokens, which has lots of benefits and only one downside (line
-breaks).
+very conservative parsing - converts text to HTML w/regexps. parsed line by line w/temporary tokens, which has lots of benefits and only one downside (line breaks).
 
-wiki linking - WikiLinkWordsLikeThis (capitalized words) are automatically
-linked to the page w/that name. urls are automatically linkified, and there's a
-syntax to put alternate labels on urls.
+wiki linking - WikiLinkWordsLikeThis (capitalized words) are automatically linked to the page w/that name. urls are automatically linkified, and there's a syntax to put alternate labels on urls.
 
-multiple regexps for parsing (as opposed to most wikis which use a single
-regexp). multiple regexps increases flexibility, power, \*and\* security vs.
-XSS.
+multiple regexps for parsing (as opposed to most wikis which use a single regexp). multiple regexps increases flexibility, power, \*and\* security vs. XSS.
 
 also provides wiki syntax for creating tables and other basic html features.
 
@@ -333,14 +231,11 @@ advanced features:
   * search that matches from most to least restrictive, w/advanced syntax
   * pluggable macro framework. macros are written in php, however, and must be
 
-run on the server, so it's not clear how this is better than just hacking the
-source.
+run on the server, so it's not clear how this is better than just hacking the source.
 
 future plans are annotation, groups, permissions, etc.
 
-frankly, wiki systems are a dime a dozen. this one seems nice, and has a few
-cool features (esp. diffs and macros), but i'm not sure whether it has enough to
-differentiate itself from the masses.
+frankly, wiki systems are a dime a dozen. this one seems nice, and has a few cool features (esp. diffs and macros), but i'm not sure whether it has enough to differentiate itself from the masses.
 
 **Mosuki**
 <a name="mosuki"></a>
@@ -348,31 +243,17 @@ differentiate itself from the masses.
 
 [http://mosuki.com/](http://mosuki.com/)
 
-general, extensible social network platform. goals are things lacking in current
-social networks: true privacy (basically hippocratically secure) and richer,
-more meaningful relnships.
+general, extensible social network platform. goals are things lacking in current social networks: true privacy (basically hippocratically secure) and richer, more meaningful relnships.
 
-provides more ways to connect people like groups, shared calendaring,
-permissions, etc.
+provides more ways to connect people like groups, shared calendaring, permissions, etc.
 
-calendaring was actually pretty interesting. you can post public events, but you
-can also run your own personal calendar, and it aggregates - it'll figure out if
-you and someone else posted the same event on your calendar, even if you called
-it a slightly different thing or listed different times, and it'll connect them.
+calendaring was actually pretty interesting. you can post public events, but you can also run your own personal calendar, and it aggregates - it'll figure out if you and someone else posted the same event on your calendar, even if you called it a slightly different thing or listed different times, and it'll connect them.
 
-relationships have multiple granularities - knowing someone, acquaintances,
-friends, vouching for them, etc. has public acknowledgments (e.g. knowing
-someone, colleague, acquaintance) and private certifications (friend, vouch for,
-etc.)
+relationships have multiple granularities - knowing someone, acquaintances, friends, vouching for them, etc. has public acknowledgments (e.g. knowing someone, colleague, acquaintance) and private certifications (friend, vouch for, etc.)
 
 allows export to standardized formats like XML, XFN, FOAF, RSS, iCal, vcard.
 
-really interesting - it looks like this might be one of the first
-second-generation social networks. they've really put some thought into the way
-social networks work, and what they can do to improve on friendster et al.
-etworks work, and what they can do to improve on friendster et al.
+really interesting - it looks like this might be one of the first second-generation social networks. they've really put some thought into the way social networks work, and what they can do to improve on friendster et al. etworks work, and what they can do to improve on friendster et al.
 
-however, it definitely looked like a few mocked-up html pages. the demo was
-static html pages, so we didn't see much working code. we wonder how they got
-around the CodeCon req't for, um, working code. :P
+however, it definitely looked like a few mocked-up html pages. the demo was static html pages, so we didn't see much working code. we wonder how they got around the CodeCon req't for, um, working code. :P
 

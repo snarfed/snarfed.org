@@ -3,74 +3,24 @@ National Security
 
 #### Facial recognition in airports
 
-Recently, a Florida airport learned a fact that most high-security
-organizations already know: _facial recognition doesn't work._
+Recently, a Florida airport learned a fact that most high-security organizations already know: _facial recognition doesn't work._
 
-[This article](http://www.theregister.co.uk/content/55/25444.html)
-in the Register details a month-long trial period with a Visionics
-face recognition system at Palm Beach International Airport. The
-system was tested on 15 volunteers from the the airport's staff.
-Visionics is one of the leaders in the field, and yet the success
-rate was less than 50% - that is, the Visionics system failed to
-recognize "terrorist" faces more than half of the time. Even worse,
-the false positive rate was unacceptably high - 1 in 100 people
-were falsely labeled as terrorists.
+[This article](http://www.theregister.co.uk/content/55/25444.html) in the Register details a month-long trial period with a Visionics face recognition system at Palm Beach International Airport. The system was tested on 15 volunteers from the the airport's staff. Visionics is one of the leaders in the field, and yet the success rate was less than 50% - that is, the Visionics system failed to recognize "terrorist" faces more than half of the time. Even worse, the false positive rate was unacceptably high - 1 in 100 people were falsely labeled as terrorists.
 
-Last September, Bruce Schneier wrote a devastating argument against
-face-scanning in his
-[Cryptogram newsletter](http://www.counterpane.com/crypto-gram-0109a.html).
-I won't repeat his ideas verbatim, but he concluded that facial
-recognition simply doesn't work. Its false positive rates make it
-effectively useless, and what's worse, the reference biometrics for
-terrorists are unusable. If the system has a success rate of 50%
-with high-resolution pictures in good lighting, how will the system
-do with grainy, out-of-date pictures from 1000 yards?
+Last September, Bruce Schneier wrote a devastating argument against face-scanning in his [Cryptogram newsletter](http://www.counterpane.com/crypto-gram-0109a.html). I won't repeat his ideas verbatim, but he concluded that facial recognition simply doesn't work. Its false positive rates make it effectively useless, and what's worse, the reference biometrics for terrorists are unusable. If the system has a success rate of 50% with high-resolution pictures in good lighting, how will the system do with grainy, out-of-date pictures from 1000 yards?
 
-Even worse, face scanning couldn't have prevented most incidents
-like 9/11 and the Oklahoma City bombing. Timothy McVeigh and the
-9/11 hijackers weren't in *any* federal photo databases. This is
-one of the dirty little secrets of face scanning - the "terrorist"
-database is usually nothing more than a criminal database, full of
-carjackers and drunk drivers but conspicuously empty of actual
-terrorists.
+Even worse, face scanning couldn't have prevented most incidents like 9/11 and the Oklahoma City bombing. Timothy McVeigh and the 9/11 hijackers weren't in *any* federal photo databases. This is one of the dirty little secrets of face scanning - the "terrorist" database is usually nothing more than a criminal database, full of carjackers and drunk drivers but conspicuously empty of actual terrorists.
 
 #### Reactive security
 
-This may paint a gloomy picture, but personally, I believe the
-problem runs deeper than faulty or misplaced technology. Post-9/11,
-national security has become a hot topic. Technology vendors have
-rushed to announce new security features in their shipping
-products. Unfortunately, the vast majority of efforts to increase
-national security have been reactive, not proactive. We have
-attempted to combat terrorism by increasing security at potential
-terrorist targets, such as airports, federal buildings, and
-stadiums.
+This may paint a gloomy picture, but personally, I believe the problem runs deeper than faulty or misplaced technology. Post-9/11, national security has become a hot topic. Technology vendors have rushed to announce new security features in their shipping products. Unfortunately, the vast majority of efforts to increase national security have been reactive, not proactive. We have attempted to combat terrorism by increasing security at potential terrorist targets, such as airports, federal buildings, and stadiums.
 
-This is a fundamentally flawed endeavor, and it will not prevent
-terrorism. We cannot protect every terrorist target - first, the
-prevention mechanisms don't work, as shown above, and second,
-*anything* could be a target. If terrorists detonated a high-yield
-conventional bomb in a small rural town, killing 5,000-10,000
-people, would it be any less of a tragedy than 9/11? I don't think
-so.
+This is a fundamentally flawed endeavor, and it will not prevent terrorism. We cannot protect every terrorist target - first, the prevention mechanisms don't work, as shown above, and second, *anything* could be a target. If terrorists detonated a high-yield conventional bomb in a small rural town, killing 5,000-10,000 people, would it be any less of a tragedy than 9/11? I don't think so.
 
 #### Proactive security
 
-We need to invest in proactive security, not reactive security. We
-need more FBI agents on the ground, both in the US and abroad. We
-need more reconnaissance and more opportunities to gather
-international intelligence. We need to cooperate with intelligence
-agencies in Europe, Asia, and the Middle East to actively search
-out and infiltrate terrorist groups.
+We need to invest in proactive security, not reactive security. We need more FBI agents on the ground, both in the US and abroad. We need more reconnaissance and more opportunities to gather international intelligence. We need to cooperate with intelligence agencies in Europe, Asia, and the Middle East to actively search out and infiltrate terrorist groups.
 
-These methods are preemptive, deterministic, and proven to be
-effective. For example, within weeks of 9/11, US intelligence
-agencies had successfully investigated the al'Qaeda terrorist
-network and had complete and accurate information on its location
-and activities.
+These methods are preemptive, deterministic, and proven to be effective. For example, within weeks of 9/11, US intelligence agencies had successfully investigated the al'Qaeda terrorist network and had complete and accurate information on its location and activities.
 
-Of course, such proactive methods are a far cry from declaring war
-on rogue nations that harbor terrorists. I'm not sure I agree with
-the idea of a "war" on terrorism, per se. However, the bottom line
-is that reactive national security *will not* prevent terrorism.
-Proactive security will.
+Of course, such proactive methods are a far cry from declaring war on rogue nations that harbor terrorists. I'm not sure I agree with the idea of a "war" on terrorism, per se. However, the bottom line is that reactive national security *will not* prevent terrorism. Proactive security will.

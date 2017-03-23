@@ -4,31 +4,17 @@ SnipSnap register without email
 <p class="right"><a href="http://snipsnap.org/">
   <img class="shadow" src="/snipsnap-logo.png" /></a></p>
 
-_This
-article is also [posted on
-snipsnap.org](http://snipsnap.org/space/register+without+email)._
+_This article is also [posted on snipsnap.org](http://snipsnap.org/space/register+without+email)._
 
 ### I don't want your email address...
 
-[SnipSnap](http://snipsnap.org/), which <strike>runs</strike> used to run this
-site, lets visitors register so that they can log in, comment on existing pages,
-and create their own pages. The default registration page asks you for a
-username, a a password, and optionally, an email address. It's not obvious that
-the email is optional, though, and many people have learned not to give their
-email address to random web sites.
+[SnipSnap](http://snipsnap.org/), which <strike>runs</strike> used to run this site, lets visitors register so that they can log in, comment on existing pages, and create their own pages. The default registration page asks you for a username, a a password, and optionally, an email address. It's not obvious that the email is optional, though, and many people have learned not to give their email address to random web sites.
 
-[My site](/) is small and personal, so I don't need email addresses. On the
-contrary, I don't want anything to discourage my friends from registering. So, I
-decided to remove the email box on the registration page altogether.
+[My site](/) is small and personal, so I don't need email addresses. On the contrary, I don't want anything to discourage my friends from registering. So, I decided to remove the email box on the registration page altogether.
 
 ### ...so don't give it to me!
 
-I could do this by
-[editing the JSP files](http://www.snipsnap.org/comments/CodingQuestions), but
-that was a little too invasive for my tastes. (I really should do this
-eventually, though...anyone want to post a tutorial on editing the SnipSnap
-JSPs?) Instead, I used CSS, and simply added this to
-`misc.css` in my [SnipSnap theme](/snarfed_org_snipsnap_theme):
+I could do this by [editing the JSP files](http://www.snipsnap.org/comments/CodingQuestions), but that was a little too invasive for my tastes. (I really should do this eventually, though...anyone want to post a tutorial on editing the SnipSnap JSPs?) Instead, I used CSS, and simply added this to `misc.css` in my [SnipSnap theme](/snarfed_org_snipsnap_theme):
 
 ```
 /* don't ask people for their email address */

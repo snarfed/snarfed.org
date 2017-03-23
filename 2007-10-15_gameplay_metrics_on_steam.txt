@@ -4,45 +4,17 @@ Gameplay Statistics on Steam
 <p class="right"><a href="http://steampowered.com/">
   <img class="shadow" src="/steam_logo.jpg" /></a></p>
 
-I love [Valve](http://www.valvesoftware.com/)'s online game platform
-[Steam](http://www.steampowered.com/). If you're not familiar with it, Steam is
-basically [iTunes](http://www.apple.com/itunes/) for PC games. You can download
-demos and trailers, buy full retail games, and play them with friends. It now
-carries over 250 games, both big budget and indie, from publishers as big as
-[Activision](http://activision.com/), [Ubisoft](http://ubi.com/), and
-[Eidos](http://eidos.com/).
+I love [Valve](http://www.valvesoftware.com/)'s online game platform [Steam](http://www.steampowered.com/). If you're not familiar with it, Steam is basically [iTunes](http://www.apple.com/itunes/) for PC games. You can download demos and trailers, buy full retail games, and play them with friends. It now carries over 250 games, both big budget and indie, from publishers as big as [Activision](http://activision.com/), [Ubisoft](http://ubi.com/), and [Eidos](http://eidos.com/).
 
-Valve has been surveying their players'
-[hardware](http://www.steampowered.com/status/survey.html) and
-[gameplay](http://www.steampowered.com/stats/ep1/) for a while now, mostly
-for market research. After playing
-[Team Fortress 2](http://orange.half-life2.com/tf2.html) recently, though,
-I was blown away when I first noticed my own personal
-[gameplay statistics](http://steamcommunity.com/id/ryancb/stats/TF2).
+Valve has been surveying their players' [hardware](http://www.steampowered.com/status/survey.html) and [gameplay](http://www.steampowered.com/stats/ep1/) for a while now, mostly for market research. After playing [Team Fortress 2](http://orange.half-life2.com/tf2.html) recently, though, I was blown away when I first noticed my own personal [gameplay statistics](http://steamcommunity.com/id/ryancb/stats/TF2).
 
 <a href="http://steamcommunity.com/id/ryancb/stats/TF2">
   <img class="left shadow" src="/tf2_stats_thumb.jpg" /></a>
 
-There are lots of detailed metrics - how many points I've scored, how long
-I've stayed alive, etc. - all broken down by character class. Each class has
-its own individual report. Even better, I can
-[compare my stats against other people](/tf2_stats_comparison.html)
-to see how I match up. (Clearly, I'm whooping Dan's butt. :P)
+There are lots of detailed metrics - how many points I've scored, how long I've stayed alive, etc. - all broken down by character class. Each class has its own individual report. Even better, I can [compare my stats against other people](/tf2_stats_comparison.html) to see how I match up. (Clearly, I'm whooping Dan's butt. :P)
 
-Obviously, this is cool. I'm even more excited about the possibilities beyond
-bragging rights and market research, though. When you die in Team Fortress 2,
-for example, it often encourages you with news that you tied or beat a personal
-record. More interestingly, Valve has tracked weapon purchasing in
-[Counter-Strike: Source](http://storefront.steampowered.com/v2/index.php?area=game&AppId=240&cc=US)
-and implemented a
-[persistent, global pricing model](http://steampowered.com/stats/csmarket/)
-that reflects supply and demand in real time.
+Obviously, this is cool. I'm even more excited about the possibilities beyond bragging rights and market research, though. When you die in Team Fortress 2, for example, it often encourages you with news that you tied or beat a personal record. More interestingly, Valve has tracked weapon purchasing in [Counter-Strike: Source](http://storefront.steampowered.com/v2/index.php?area=game&AppId=240&cc=US) and implemented a [persistent, global pricing model](http://steampowered.com/stats/csmarket/) that reflects supply and demand in real time.
 
-Granted, this isn't new. MMOs have been doing it for a long time.
-[Bungie](http://bungie.net/) is well known for
-[tracking stats in Halo 2 and 3](http://www.bungie.net/help/content.aspx?link=bungienet_help#stats),
-for their own benefit and their players'. Still, the depth and polish of Steam's
-offering is very impressive.
+Granted, this isn't new. MMOs have been doing it for a long time. [Bungie](http://bungie.net/) is well known for [tracking stats in Halo 2 and 3](http://www.bungie.net/help/content.aspx?link=bungienet_help#stats), for their own benefit and their players'. Still, the depth and polish of Steam's offering is very impressive.
 
-Anyway, enough talk. See you in
-[2fort](http://www.halflife2.net/news//1159589953_1.jpg)!
+Anyway, enough talk. See you in [2fort](http://www.halflife2.net/news//1159589953_1.jpg)!

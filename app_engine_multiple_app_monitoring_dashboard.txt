@@ -5,25 +5,12 @@ App Engine monitoring dashboard for multiple apps
  <a href="https://cloud.google.com/appengine/">
   <img src="/appengine_logo_new.png" /></a></p>
 
-I run a number of webapps on Google App Engine. I'm looking for a monitoring
-dashboard that shows me health metrics (HTTP response codes, latency, etc.) from
-multiple App Engine apps at the same time, on the same page. Ideally it should
-also pull metrics from Google's APIs directly, as opposed to requiring me to
-instrument my code.
+I run a number of webapps on Google App Engine. I'm looking for a monitoring dashboard that shows me health metrics (HTTP response codes, latency, etc.) from multiple App Engine apps at the same time, on the same page. Ideally it should also pull metrics from Google's APIs directly, as opposed to requiring me to instrument my code.
 
-So far, most of what I've seen only shows a single app at a time:
-[Google Cloud Console](http://console.developers.google.com/appengine/),
-Google's [Android app](https://play.google.com/store/apps/details?id=com.google.android.apps.cloudconsole),
-[Stackdriver](http://www.stackdriver.com/),
-[Datadog](https://www.datadoghq.com/),
-etc.
-[HawkEye](https://portal.appscale.com/) looks like it might work, but it hasn't
-managed to actually pull up any of my apps' metrics yet.
+So far, most of what I've seen only shows a single app at a time: [Google Cloud Console](http://console.developers.google.com/appengine/), Google's [Android app](https://play.google.com/store/apps/details?id=com.google.android.apps.cloudconsole), [Stackdriver](http://www.stackdriver.com/), [Datadog](https://www.datadoghq.com/), etc. [HawkEye](https://portal.appscale.com/) looks like it might work, but it hasn't managed to actually pull up any of my apps' metrics yet.
 
-I tried making a simple HTML page with iframes for each of my apps' monitoring
-dashboards, but Google blocks that with `X-Frame-Options`. :/
+I tried making a simple HTML page with iframes for each of my apps' monitoring dashboards, but Google blocks that with `X-Frame-Options`. :/
 
-(Also, these are side projects, so I'm willing to pay a little if necessary,
-e.g. $10s/mo, but not more.)
+(Also, these are side projects, so I'm willing to pay a little if necessary, e.g. $10s/mo, but not more.)
 
 _[Also on ServerFault.](http://serverfault.com/questions/734037/app-engine-monitoring-dashboard-for-multiple-apps)_

@@ -4,60 +4,23 @@ Beware of Bad Mojo: Redux from Got Game Entertainment
 <a href="http://www.gotgameentertainment.com/"><img src="/got_game.jpg"></a>
 <a href="http://www.gotgameentertainment.com/badmojo/"><img src="/bad_mojo_redux.jpg"></a>
 
-_Executive summary: beware of
-[Got Game Entertainment](http://www.gotgameentertainment.com/)'s downloadable
-games. [Bad Mojo: Redux](http://www.gotgameentertainment.com/badmojo/)'s
-[DRM](http://en.wikipedia.org/wiki/Digital_rights_management) locked me
-out, despite the fact that I bought it legitimately. Their tech support was slow
-and couldn't fix the problem, so I eventually
-[fixed it myself](#fix). To
-their credit, they offered me a refund and a couple free games, but still..._
+_Executive summary: beware of [Got Game Entertainment](http://www.gotgameentertainment.com/)'s downloadable games. [Bad Mojo: Redux](http://www.gotgameentertainment.com/badmojo/)'s [DRM](http://en.wikipedia.org/wiki/Digital_rights_management) locked me out, despite the fact that I bought it legitimately. Their tech support was slow and couldn't fix the problem, so I eventually [fixed it myself](#fix). To their credit, they offered me a refund and a couple free games, but still..._
 
-I love old-school, point-and-click,
-[Kings Quest](http://en.wikipedia.org/wiki/King's_Quest) style adventure
-games. Sadly, they're not mainstream any more, but there are a few smaller,
-less established publishers that still specialize in them.
-[Got Game Entertainment](http://www.gotgameentertainment.com/) is one of them.
+I love old-school, point-and-click, [Kings Quest](http://en.wikipedia.org/wiki/King's_Quest) style adventure games. Sadly, they're not mainstream any more, but there are a few smaller, less established publishers that still specialize in them. [Got Game Entertainment](http://www.gotgameentertainment.com/) is one of them.
 
-Got Game has a
-[wide selection](http://www.gotgameentertainment.com/games/)
-of adventure games for the PC, Mac, and PSP. What's better, they sell many of
-them online as direct downloads, including
-[Bad Mojo: Redux](http://www.gotgameentertainment.com/badmojo/), which I'd
-been looking for for a while. As soon as I saw it, I plunked down my
-[prepaid credit card](/privacy_through_prepaid_credit_cards),
-downloaded it, fired it up, and played it happily for an hour or so.
+Got Game has a [wide selection](http://www.gotgameentertainment.com/games/) of adventure games for the PC, Mac, and PSP. What's better, they sell many of them online as direct downloads, including [Bad Mojo: Redux](http://www.gotgameentertainment.com/badmojo/), which I'd been looking for for a while. As soon as I saw it, I plunked down my [prepaid credit card](/privacy_through_prepaid_credit_cards), downloaded it, fired it up, and played it happily for an hour or so.
 
-When I came back a couple days later, it complained _"Bad Mojo CD not present
-in drive C"_ and refused to start. I
-[searched Google](http://www.google.com/search?q=%22bad+mojo%22+%22cd+not+present%22)
-and found other people with the same problem, but no solution.
+When I came back a couple days later, it complained _"Bad Mojo CD not present in drive C"_ and refused to start. I [searched Google](http://www.google.com/search?q=%22bad+mojo%22+%22cd+not+present%22) and found other people with the same problem, but no solution.
 
-I emailed Got Game's tech support, and over a week and a couple follow-up
-emails later, they finally responded. They asked a few basic questions, over
-the course of a couple more weeks, and finally told me that they _didn't know_
-what the problem was! Disappointed, I asked for a refund, since I couldn't
-play the game. They finally agreed, but it took them a while.
+I emailed Got Game's tech support, and over a week and a couple follow-up emails later, they finally responded. They asked a few basic questions, over the course of a couple more weeks, and finally told me that they _didn't know_ what the problem was! Disappointed, I asked for a refund, since I couldn't play the game. They finally agreed, but it took them a while.
 
-I don't like bad-mouthing Got Game publicly. I'd much prefer to support and
-encourage companies that sell adventure games. It's clear that Got Game is a
-small, independent outfit, and founder
-[Howard Horowitz](http://www.gamasutra.com/php-bin/news_index.php?story=12312)
-is
-[well-intentioned](http://www.justadventure.com/Interviews/HowardHorowitz/Horowitz.shtm)
-and
-[passionate](http://www.fourfatchicks.com/Rants/Interviews/Howard_Horowitz/HH.shtml)
-about adventure games. I can't help being a little disgruntled, though.
+I don't like bad-mouthing Got Game publicly. I'd much prefer to support and encourage companies that sell adventure games. It's clear that Got Game is a small, independent outfit, and founder [Howard Horowitz](http://www.gamasutra.com/php-bin/news_index.php?story=12312) is [well-intentioned](http://www.justadventure.com/Interviews/HowardHorowitz/Horowitz.shtm) and [passionate](http://www.fourfatchicks.com/Rants/Interviews/Howard_Horowitz/HH.shtml) about adventure games. I can't help being a little disgruntled, though.
 
 <a name="fix"></a>
 
-Anyway, here's the fix. Bad Mojo uses the `badmojo.ini` file to determine
-where it's installed. By default, it looks for the file in its own directory,
-e.g. <nobr>`C:\Program Files\Bad Mojo\`</nobr>. However, if a `badmojo.ini`
-file exists in `C:\Windows\`, it uses that instead.
+Anyway, here's the fix. Bad Mojo uses the `badmojo.ini` file to determine where it's installed. By default, it looks for the file in its own directory, e.g. <nobr>`C:\Program Files\Bad Mojo\`</nobr>. However, if a `badmojo.ini` file exists in `C:\Windows\`, it uses that instead.
 
-In my case, the Bad Mojo installer put an incomplete `badmojo.ini` file into
-`C:\Windows\`. It had only these lines:
+In my case, the Bad Mojo installer put an incomplete `badmojo.ini` file into `C:\Windows\`. It had only these lines:
 
 ```
 [badmojo]

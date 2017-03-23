@@ -4,41 +4,15 @@ Micropub for hosted blogs
 <p class="right third">
  <a href="/bridgy_logo_old_big.jpg"><img src="/bridgy_logo_old_big.jpg"/></a></p>
 
-_Update: <a class="h-card" href="https://kylewm.com/">Kyle Mahan</a> has
-[built this](https://feverdream.herokuapp.com/)!_
+_Update: <a class="h-card" href="https://kylewm.com/">Kyle Mahan</a> has [built this](https://feverdream.herokuapp.com/)!_
 
-<a class="h-card" href="http://kevinmarks.com/">Kevin Marks</a> had a
-[great idea](http://indiewebcamp.com/irc/2015-04-07#t1428449282044) the other
-day: a [micropub](https://micropub.net/) bridge service for hosted blog sites
-like [Blogger](https://indiewebcamp.com/Blogger),
-[WordPress.com](https://indiewebcamp.com/WordPress.com), and
-[Tumblr](https://indiewebcamp.com/Tumblr), similar to
-[Bridgy's webmention service.](https://www.brid.gy/about#blogs) If you have a
-hosted blog, you'd sign into this service, approve it to create/edit/delete your
-posts, add its micropub endpoint to your blog's HTML, et voilà! Instant micropub
-support.
+<a class="h-card" href="http://kevinmarks.com/">Kevin Marks</a> had a [great idea](http://indiewebcamp.com/irc/2015-04-07#t1428449282044) the other day: a [micropub](https://micropub.net/) bridge service for hosted blog sites like [Blogger](https://indiewebcamp.com/Blogger), [WordPress.com](https://indiewebcamp.com/WordPress.com), and [Tumblr](https://indiewebcamp.com/Tumblr), similar to [Bridgy's webmention service.](https://www.brid.gy/about#blogs) If you have a hosted blog, you'd sign into this service, approve it to create/edit/delete your posts, add its micropub endpoint to your blog's HTML, et voilà! Instant micropub support.
 
-I don't plan to take the lead on building this, but we do have a clear idea of
-what it would take, so I figured I'd throw together some notes like I did with
-[indie stats](/indie-stats). Many of the pieces are
-[already available](https://github.com/kylewm/flask-micropub)
-[as libraries](https://oauth-dropins.appspot.com/)
-[and services](http://tokens.indieauth.com/), so hopefully much of the remaining
-work is just glue.
+I don't plan to take the lead on building this, but we do have a clear idea of what it would take, so I figured I'd throw together some notes like I did with [indie stats](/indie-stats). Many of the pieces are [already available](https://github.com/kylewm/flask-micropub) [as libraries](https://oauth-dropins.appspot.com/) [and services](http://tokens.indieauth.com/), so hopefully much of the remaining work is just glue.
 
-Like [Bridgy](https://www.brid.gy/), the front page of the bridge site would
-have "sign in" buttons for the hosted blog providers we want to support, e.g.
-Blogger, WordPress.com, and Tumblr. Those buttons would start the OAuth dance
-and ask for the appropriate scopes to [CRUD](https://indiewebcamp.com/CRUD)
-posts.
+Like [Bridgy](https://www.brid.gy/), the front page of the bridge site would have "sign in" buttons for the hosted blog providers we want to support, e.g. Blogger, WordPress.com, and Tumblr. Those buttons would start the OAuth dance and ask for the appropriate scopes to [CRUD](https://indiewebcamp.com/CRUD) posts.
 
-When the user approves the OAuth prompt, we'd store their silo access token and
-show them instructions for adding the bridge's micropub endpoint to their blog's
-HTML template.
-([Here are example instructions](https://github.com/snarfed/bridgy/blob/master/templates/tumblr_user.html#L14).)
-The endpoint should identify the silo and domain, e.g. `/tumblr/mysite.com`. We
-should use [IndieAuth's token service](http://tokens.indieauth.com/) to start,
-so we'd include its endpoints too. Here's an example block:
+When the user approves the OAuth prompt, we'd store their silo access token and show them instructions for adding the bridge's micropub endpoint to their blog's HTML template. ([Here are example instructions](https://github.com/snarfed/bridgy/blob/master/templates/tumblr_user.html#L14).) The endpoint should identify the silo and domain, e.g. `/tumblr/mysite.com`. We should use [IndieAuth's token service](http://tokens.indieauth.com/) to start, so we'd include its endpoints too. Here's an example block:
 
 ```
 <link rel="micropub" href="https://micropub-bridge.org/tumblr/mysite.com">

@@ -5,33 +5,14 @@ pine reply-all patch
  <a href="http://washington.edu/pine/">
   <img src="/pine.png" /></a></p>
 
-For the impatient: Patch for Pine
-[4.58](https://github.com/snarfed/misc/blob/master/patches/pine/reply-all.patch.4.58),
-[4.60 and 4.61](https://github.com/snarfed/misc/blob/master/patches/pine/reply-all.patch.4.60),
-[4.63](https://github.com/snarfed/misc/blob/master/patches/pine/reply-all.patch.4.63),
-[4.64](https://github.com/snarfed/misc/blob/master/patches/pine/reply-all.patch.4.64)  
-[Pine source](http://www.washington.edu/pine/getpine/unix.html)
-[FAQ on patching pine](http://www.math.washington.edu/~chappa/pine/faq/index.html)
+For the impatient: Patch for Pine [4.58](https://github.com/snarfed/misc/blob/master/patches/pine/reply-all.patch.4.58), [4.60 and 4.61](https://github.com/snarfed/misc/blob/master/patches/pine/reply-all.patch.4.60), [4.63](https://github.com/snarfed/misc/blob/master/patches/pine/reply-all.patch.4.63), [4.64](https://github.com/snarfed/misc/blob/master/patches/pine/reply-all.patch.4.64)  
+[Pine source](http://www.washington.edu/pine/getpine/unix.html) [FAQ on patching pine](http://www.math.washington.edu/~chappa/pine/faq/index.html)
 
-I use [Pine](http://www.washington.edu/pine/) as my email client, and I really
-like it. It's fast, simple, full-featured, and very keyboardable. However,
-nothing's perfect, even Pine.
+I use [Pine](http://www.washington.edu/pine/) as my email client, and I really like it. It's fast, simple, full-featured, and very keyboardable. However, nothing's perfect, even Pine.
 
-Instead of providing separate Reply and Reply All commands, Pine has a single
-Reply command that asks you whether you want to reply to all. Unfortunately, as
-most [usability experts](http://www.useit.com/papers/webwriting/writing.html)
-will attest, [users don't
-read](http://www.joelonsoftware.com/uibook/chapters/fog0000000062.html).
-Including me. So, since I often want to reply all, I've inadvertently trained
-myself to ignore the prompt and just say yes. This is bad because, as we all
-know, there are occasions when you most emphatically _do not_ want to reply to
-all.
+Instead of providing separate Reply and Reply All commands, Pine has a single Reply command that asks you whether you want to reply to all. Unfortunately, as most [usability experts](http://www.useit.com/papers/webwriting/writing.html) will attest, [users don't read](http://www.joelonsoftware.com/uibook/chapters/fog0000000062.html). Including me. So, since I often want to reply all, I've inadvertently trained myself to ignore the prompt and just say yes. This is bad because, as we all know, there are occasions when you most emphatically _do not_ want to reply to all.
 
-So, I wrote a patch to separate Pine's Reply command into Reply and Reply All
-commands, which behave as expected. To patch Pine and build it, first download
-the [Pine 4.60 source](http://www.washington.edu/pine/getpine/unix.html) and my
-[patch](https://github.com/snarfed/misc/blob/master/patches/pine/reply-all.patch.4.60). Then, run
-these commands to extract, patch, and build Pine.
+So, I wrote a patch to separate Pine's Reply command into Reply and Reply All commands, which behave as expected. To patch Pine and build it, first download the [Pine 4.60 source](http://www.washington.edu/pine/getpine/unix.html) and my [patch](https://github.com/snarfed/misc/blob/master/patches/pine/reply-all.patch.4.60). Then, run these commands to extract, patch, and build Pine.
 
 ```
 $ tar xzvf pine.tar.gz

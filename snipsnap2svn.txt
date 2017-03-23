@@ -11,14 +11,7 @@ For the impatient:
 [SnipSnap web site](http://snipsnap.org/)  
 [Subversion web site](http://subversion.tigris.org/)
 
-[snipsnap2svn](/snipsnap2svn.xslt) is an
-[XSLT](http://www.w3.org/TR/xslt) script that converts
-[SnipSnap](http://snipsnap.org/) XML database exports into
-[Subversion dumpfiles](http://svn.collab.net/viewvc/*checkout*/svn/trunk/notes/fs_dumprestore.txt),
-with change history, so they can be imported into a Subversion repository.
-This allows you to use Subversion to examine your snips' change history,
-experiment with alternative SnipSnap storage backends, or migrate from
-SnipSnap to another CMS, such as [PyBlosxom](http://pyblosxom.bluesock.org/).
+[snipsnap2svn](/snipsnap2svn.xslt) is an [XSLT](http://www.w3.org/TR/xslt) script that converts [SnipSnap](http://snipsnap.org/) XML database exports into [Subversion dumpfiles](http://svn.collab.net/viewvc/*checkout*/svn/trunk/notes/fs_dumprestore.txt), with change history, so they can be imported into a Subversion repository. This allows you to use Subversion to examine your snips' change history, experiment with alternative SnipSnap storage backends, or migrate from SnipSnap to another CMS, such as [PyBlosxom](http://pyblosxom.bluesock.org/).
 
 Example usage:
 

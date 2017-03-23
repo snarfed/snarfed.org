@@ -5,12 +5,9 @@ Filling code in Emacs
  <a href="/fillcode">
   <img src="/gnu.jpg" /></a></p>
 
-[Emacs](http://gnu.org/software/emacs/) is great, but one of my pet peeves is
-that while it can fill (ie wrap) plain text, it [can't fill source
-code](/filling_code_in_emacs).
+[Emacs](http://gnu.org/software/emacs/) is great, but one of my pet peeves is that while it can fill (ie wrap) plain text, it [can't fill source code](/filling_code_in_emacs).
 
-I've recently been working on [fillcode](/fillcode), an Emacs minor mode
-that does this. It's best described by example. Fillcode fills this:
+I've recently been working on [fillcode](/fillcode), an Emacs minor mode that does this. It's best described by example. Fillcode fills this:
 
 ```
 public static void foo(int i, float f, String s) {

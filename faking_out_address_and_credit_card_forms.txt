@@ -3,148 +3,84 @@ faking out address and credit card forms
 
 <p class="right"><img src="/nose_mustache_glasses.jpg" /></p>
 
-Like many people, I buy things online. Unlike many people, I'm a
-[bit of a privacy freak](/2011-08-03_why_im_weird_about_privacy). I only use
-[anonymous prepaid debit cards](/privacy_through_prepaid_credit_cards), and I
-don't give out my real name, address, birthdate, or other personal information.
-If I'm buying something that needs to be shipped, I use a mail drop, not my home
-address.
+Like many people, I buy things online. Unlike many people, I'm a [bit of a privacy freak](/2011-08-03_why_im_weird_about_privacy). I only use [anonymous prepaid debit cards](/privacy_through_prepaid_credit_cards), and I don't give out my real name, address, birthdate, or other personal information. If I'm buying something that needs to be shipped, I use a mail drop, not my home address.
 
-Of course, most web sites ask for name, address, and phone number whether or
-not they need it. Some also check them against the name and address on your
-credit card using
-[AVS](http://en.wikipedia.org/wiki/Address_Verification_System).
+Of course, most web sites ask for name, address, and phone number whether or not they need it. Some also check them against the name and address on your credit card using [AVS](http://en.wikipedia.org/wiki/Address_Verification_System).
 
-Regardless, I avoid giving out my information. I've been keeping track of what
-can be ignored, what can be faked, and what has to be real on many ecommerce
-web sites I've used.
+Regardless, I avoid giving out my information. I've been keeping track of what can be ignored, what can be faked, and what has to be real on many ecommerce web sites I've used.
 
-Of course, this is only useful when they don't actually need your info. If
-you're having something shipped to you, or you're giving an address for legal
-purposes, you'll obviously need to use a real address. For services that don't
-need your address, though, or only need a billing address, this is fair game.
+Of course, this is only useful when they don't actually need your info. If you're having something shipped to you, or you're giving an address for legal purposes, you'll obviously need to use a real address. For services that don't need your address, though, or only need a billing address, this is fair game.
 
-Note: I don't discuss email addresses. If you don't want to give out your real
-email address, but need an email address that you can receive email and reply
-from to "verify" it, consider [Mailinator](http://mailinator.com/), [plus
-addressing in
-GMail](http://www.extremetech.com/article2/0,1697,1865178,00.asp), or a [vanity
-domain](http://dict.die.net/vanity%20domain/).
+Note: I don't discuss email addresses. If you don't want to give out your real email address, but need an email address that you can receive email and reply from to "verify" it, consider [Mailinator](http://mailinator.com/), [plus addressing in GMail](http://www.extremetech.com/article2/0,1697,1865178,00.asp), or a [vanity domain](http://dict.die.net/vanity%20domain/).
 
-Also note: When I say _dashes for everything else_, you'll sometimes need to
-put in an ok-_looking_ zip code and/or phone number. 00000 and 000-000-0000
-will almost always work.
+Also note: When I say _dashes for everything else_, you'll sometimes need to put in an ok-_looking_ zip code and/or phone number. 00000 and 000-000-0000 will almost always work.
 
 Here's the list. Feel free to [add to it](#comment-anchor)!
 
-  * [1800Flowers](http://1800flowers.com/): zip code must match card, two
-    letters separated by a space for cardholder name; dashes for everything else
+  * [1800Flowers](http://1800flowers.com/): zip code must match card, two letters separated by a space for cardholder name; dashes for everything else
 
-  * [AllDomains](http://alldomains.com/): pick a US state; dashes for everything
-else
+  * [AllDomains](http://alldomains.com/): pick a US state; dashes for everything else
 
-  * [Barnes & Noble](http://bn.com/): valid city, state, and zip; dashes for
-everything else
+  * [Barnes & Noble](http://bn.com/): valid city, state, and zip; dashes for everything else
 
-  * [Best Buy](http://bestbuy.com/): very picky! valid city, state, zip and
-roughly valid address; name can be dashes
+  * [Best Buy](http://bestbuy.com/): very picky! valid city, state, zip and roughly valid address; name can be dashes
 
-  * [Circuit City](http://circuitcity.com/): 00000 for zip code, 000-000-0000
-for phone; dashes for everything else
+  * [Circuit City](http://circuitcity.com/): 00000 for zip code, 000-000-0000 for phone; dashes for everything else
 
-  * [Delta Airlines](http://delta.com/): address, city, state, and zip that
-  match your credit card, since Delta uses AVS; phone number with valid area
-  code and exchange (e.g. 650-900-0000)
+  * [Delta Airlines](http://delta.com/): address, city, state, and zip that match your credit card, since Delta uses AVS; phone number with valid area code and exchange (e.g. 650-900-0000)
 
-  * [DigitalRiver](http://digitalriver.com/): matching state and zip (e.g.
-CA/90000), phone number with valid area code and exchange (e.g. 650-900-0000);
-dashes for everything else
+  * [DigitalRiver](http://digitalriver.com/): matching state and zip (e.g. CA/90000), phone number with valid area code and exchange (e.g. 650-900-0000); dashes for everything else
 
-  * [EBay](http://ebay.com/)/[PayPal](http://paypal.com/): matching city, state,
-and zip (e.g. Los Angeles, CA, 90001), one letter each for first and last name
-(e.g. A B), phone number with valid area code and exchange (e.g. 650-900-0000);
-dashes for everything else
+  * [EBay](http://ebay.com/)/[PayPal](http://paypal.com/): matching city, state, and zip (e.g. Los Angeles, CA, 90001), one letter each for first and last name (e.g. A B), phone number with valid area code and exchange (e.g. 650-900-0000); dashes for everything else
 
-  * [Fandango](http://fandango.com/): 00000 for zip code; dashes for everything
-else
+  * [Fandango](http://fandango.com/): 00000 for zip code; dashes for everything else
 
-  * [Gametap](http://gametap.com/): pick a state, 00000 for zip code, one letter
-each for first and last name (e.g. A B); dashes for everything else
+  * [Gametap](http://gametap.com/): pick a state, 00000 for zip code, one letter each for first and last name (e.g. A B); dashes for everything else
 
-  * [Google Checkout](http://checkout.google.com/): pick a state, 00000 for zip code,
-000-000-0000 for phone; dashes for everything else
+  * [Google Checkout](http://checkout.google.com/): pick a state, 00000 for zip code, 000-000-0000 for phone; dashes for everything else
 
-  * [Heavenly at Lake Tahoe](https://skiheavenly.com/): valid email, dashes for
-    everything else, including cardholder name
+  * [Heavenly at Lake Tahoe](https://skiheavenly.com/): valid email, dashes for everything else, including cardholder name
 
-  * [iTunes](http://apple.com/itunes/): real city/state/zip, 000-000-0000 for
-phone; dashes for everything else
+  * [iTunes](http://apple.com/itunes/): real city/state/zip, 000-000-0000 for phone; dashes for everything else
 
-  * [InCorp Services, Inc.](http://incorpservices.com/): 00000 for zip
-code, dashes for everything else
+  * [InCorp Services, Inc.](http://incorpservices.com/): 00000 for zip code, dashes for everything else
 
-  * [JCWhitney](http://jcwhitney.com/): pick a state, 00000 for zip code,
-000-000-0000 for phone, one letter each for first and last name (e.g. A B);
-dashes for everything else
+  * [JCWhitney](http://jcwhitney.com/): pick a state, 00000 for zip code, 000-000-0000 for phone, one letter each for first and last name (e.g. A B); dashes for everything else
 
   * [Kagi](http://kagi.com/): dashes for everything, including cardholder name!
 
   * [KQED](http://kqed.org/): dashes for everything!
 
-  * [Kohls](http://www.kohls.com/): real city/state/zip, 000-000-0000 for phone;
-dashes for everything else
+  * [Kohls](http://www.kohls.com/): real city/state/zip, 000-000-0000 for phone; dashes for everything else
 
-  * [LA Philharmonic](http://laphil.com/): two dashes each for first and last
-    name, five for street address, four for zip code, three for city and
-    phone number, and "-- --" for cardholder name.
+  * [LA Philharmonic](http://laphil.com/): two dashes each for first and last name, five for street address, four for zip code, three for city and phone number, and "-- --" for cardholder name.
 
-  * [Netflix](http://netflix.com/): currently rejects _all_ of my
-    [prepaid credit cards](/privacy_through_prepaid_credit_cards)! :(
+  * [Netflix](http://netflix.com/): currently rejects _all_ of my [prepaid credit cards](/privacy_through_prepaid_credit_cards)! :(
 
-  * [Orbitz](http://orbitz.com/): 00000 for zip code, phone number with valid
-    area code, dashes for everything else. orbitz does strict address checking
-    against your credit card's billing address, though!
+  * [Orbitz](http://orbitz.com/): 00000 for zip code, phone number with valid area code, dashes for everything else. orbitz does strict address checking against your credit card's billing address, though!
 
-  * [ReserveAmerica](http://reserveamerica.com/): valid email, one letter each
-    for first and last name, phone number with valid area code (e.g.
-    650-000-0000), 00000 for zip code, dashes for everything else, including
-    cardholder name
+  * [ReserveAmerica](http://reserveamerica.com/): valid email, one letter each for first and last name, phone number with valid area code (e.g. 650-000-0000), 00000 for zip code, dashes for everything else, including cardholder name
 
-  * [SWREG](http://swreg.org/): pick a state, 00000 for zip code; dashes for
-everything else
+  * [SWREG](http://swreg.org/): pick a state, 00000 for zip code; dashes for everything else
 
-  * Any [Safepay](https://vault.safepay.com.au/)/[DirectOne](http://directone.com.au/)
-  merchant: pick a state, dashes for everything else
+  * Any [Safepay](https://vault.safepay.com.au/)/[DirectOne](http://directone.com.au/) merchant: pick a state, dashes for everything else
 
-  * [San Francisco Symphony](http://sfsymphony.com/): valid zip code,
-000-000-0000 for phone; dashes for everything else
+  * [San Francisco Symphony](http://sfsymphony.com/): valid zip code, 000-000-0000 for phone; dashes for everything else
 
-  * [Simon](http://simon.com/): 00000 for zip code,
-000-000-0000 for phone; dashes for everything else
+  * [Simon](http://simon.com/): 00000 for zip code, 000-000-0000 for phone; dashes for everything else
 
-  * [Southwest](http://southwest.com/): 00000 for zip code, 000-000-0000 for
-phone, one letter for first name, two letters for last name (e.g. A Bc), one
-letter each for cardholder address line 1 and city (e.g. D, E); dashes for
-everything else
+  * [Southwest](http://southwest.com/): 00000 for zip code, 000-000-0000 for phone, one letter for first name, two letters for last name (e.g. A Bc), one letter each for cardholder address line 1 and city (e.g. D, E); dashes for everything else
 
-  * [Steam](http://steampowered.com/): 00000 for zip code, 000-000-0000 for
-phone, pick a state, two letters each for first and last name (e.g. Ab Cd);
-dashes for everything else
+  * [Steam](http://steampowered.com/): 00000 for zip code, 000-000-0000 for phone, pick a state, two letters each for first and last name (e.g. Ab Cd); dashes for everything else
 
   * [TicketWeb](http://ticketweb.com/): dashes for everything
 
-  * [United Airlines](http://united.com/): two letters each for first and last
-name (e.g. Ab Cd), three letters for address, any state, 00000 for zip code;
-dashes for everything else
+  * [United Airlines](http://united.com/): two letters each for first and last name (e.g. Ab Cd), three letters for address, any state, 00000 for zip code; dashes for everything else
 
   * [Vonage](http://vonage.com/): dashes for everything
 
-  * [Winerz](http://winerz.com/): 000-000-0000 for phone #(s),
-    00000 for zip code(s), dashes for everything else
+  * [Winerz](http://winerz.com/): 000-000-0000 for phone #(s), 00000 for zip code(s), dashes for everything else
 
-  * [WalMart](http://walmart.com/): valid city/zip/state, one letter each for
-first and last name (e.g. A B), valid area code for phone number (e.g.
-650-000-000); dashes for everything else
+  * [WalMart](http://walmart.com/): valid city/zip/state, one letter each for first and last name (e.g. A B), valid area code for phone number (e.g. 650-000-000); dashes for everything else
 
-  * [TerraPass](https://www.terrapass.com/): spaces for cardholder first and
-    last name; any billing address
+  * [TerraPass](https://www.terrapass.com/): spaces for cardholder first and last name; any billing address

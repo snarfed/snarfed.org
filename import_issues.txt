@@ -5,19 +5,11 @@ import_issues.py
  <a href="http://code.google.com/hosting/">
   <img src="/google_code_project_hosting.png" /></a></p>
 
-[`import_issues.py`](https://github.com/snarfed/misc/blob/master/import_issues.py) imports
-issues from a CSV file into a
-[Google Code project hosting](http://code.google.com/hosting/)
-[issue tracker](http://code.google.com/p/support/wiki/IssueTracker). It uses the
-[Issue Tracker API](http://code.google.com/p/support/wiki/IssueTrackerAPI) and
-authenticates via [OAuth](http://oauth.net/), so it never sees your username or
-password. [Download it](https://github.com/snarfed/misc/blob/master/import_issues.py) and
-try it out!
+[`import_issues.py`](https://github.com/snarfed/misc/blob/master/import_issues.py) imports issues from a CSV file into a [Google Code project hosting](http://code.google.com/hosting/) [issue tracker](http://code.google.com/p/support/wiki/IssueTracker). It uses the [Issue Tracker API](http://code.google.com/p/support/wiki/IssueTrackerAPI) and authenticates via [OAuth](http://oauth.net/), so it never sees your username or password. [Download it](https://github.com/snarfed/misc/blob/master/import_issues.py) and try it out!
 
 Usage: `import_issues.py PROJECT FILENAME`
 
-where `PROJECT` is the Google Code project name and `FILENAME` is the CSV file
-to import.
+where `PROJECT` is the Google Code project name and `FILENAME` is the CSV file to import.
 
 Example run:
 

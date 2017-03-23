@@ -9,15 +9,6 @@ For the impatient:
 [Patch for autocutsel 0.7.0](https://github.com/snarfed/misc/blob/master/patches/autocutsel_unified.v2.patch)  
 [Autocutsel page](http://www.nongnu.org/autocutsel/)
 
-I love [Firefox](http://mozilla.org/firefox/), but there are a few things about
-it that annoy me. For example, [you can't paste the primary selection from the
-keyboard.](https://bugzilla.mozilla.org/show_bug.cgi?id=228011) I
-[tried](/linking_libraries_with_mozilla_xpcom)
-[hard](/trigger_scripts_for_mozilla_xpi_packages) to fix
-this in mozilla itself, but in the end, I failed. :/
+I love [Firefox](http://mozilla.org/firefox/), but there are a few things about it that annoy me. For example, [you can't paste the primary selection from the keyboard.](https://bugzilla.mozilla.org/show_bug.cgi?id=228011) I [tried](/linking_libraries_with_mozilla_xpcom) [hard](/trigger_scripts_for_mozilla_xpi_packages) to fix this in mozilla itself, but in the end, I failed. :/
 
-However, I found a great program called
-[autocutsel](http://www.nongnu.org/autocutsel), written by Michael Witrant,
-which synchronizes the cutbuffer and an X selection. With [a little
-help](https://savannah.nongnu.org/patch/?func=detailitem&item_id=3367), it now
-synchronizes both the clipboard and the primary selection. Problem solved!
+However, I found a great program called [autocutsel](http://www.nongnu.org/autocutsel), written by Michael Witrant, which synchronizes the cutbuffer and an X selection. With [a little help](https://savannah.nongnu.org/patch/?func=detailitem&item_id=3367), it now synchronizes both the clipboard and the primary selection. Problem solved!

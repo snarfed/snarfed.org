@@ -5,26 +5,13 @@ teaching beginning programming with Python
 <a href="http://python.org/"><img src="/python-new.png"></a>
 </p>
 
-I'm
-a software engineer. I've been programming for a long time - in
-[school](http://www.stanford.edu/), at [work](http://google.com/), and for
-[fun](/software). While I was in school, I also taught computer science as
-a TA for three years.
+I'm a software engineer. I've been programming for a long time - in [school](http://www.stanford.edu/), at [work](http://google.com/), and for [fun](/software). While I was in school, I also taught computer science as a TA for three years.
 
-I TAed a [mid-level class](http://cs107.stanford.edu/), though, so by the time I
-met the students, they didn't just know how to program, they'd also mastered
-more in-depth concepts like pointers, recursion, computer architecture, and
-algorithms.
+I TAed a [mid-level class](http://cs107.stanford.edu/), though, so by the time I met the students, they didn't just know how to program, they'd also mastered more in-depth concepts like pointers, recursion, computer architecture, and algorithms.
 
-Last Sunday, for the first time, I had the chance to teach someone to program
-who'd never written a line of code before. It was very, very different from
-TAing. It was also a _lot_ of fun.
+Last Sunday, for the first time, I had the chance to teach someone to program who'd never written a line of code before. It was very, very different from TAing. It was also a _lot_ of fun.
 
-I was inspired by [David Bau](http://davidbau.com/)'s [Haaarg,
-world!](http://davidbau.com/archives/2005/07/29/haaarg_world.html), so I decided
-to use [Python](http://python.org/) because of its simple syntax, plain-english
-keywords, and interactive shell. We started in the shell with a few **print**
-statements.
+I was inspired by [David Bau](http://davidbau.com/)'s [Haaarg, world!](http://davidbau.com/archives/2005/07/29/haaarg_world.html), so I decided to use [Python](http://python.org/) because of its simple syntax, plain-english keywords, and interactive shell. We started in the shell with a few **print** statements.
 
 ```
 >>> print 'hi'

@@ -5,40 +5,16 @@ Atom feeds for Facebook and Twitter
  <a href="https://facebook-atom.appspot.com/">
   <img src="/facebook_rss_75.jpg" /></a></p>
 
-My latest side projects provide Atom feeds for your
-[Facebook news feed](https://facebook-atom.appspot.com/), your
-[Twitter stream](https://twitter-atom.appspot.com/), or any
-[Twitter list](https://twitter-atom.appspot.com/).
-You can use them to read your friends' posts in an RSS/Atom feed reader instead
-of directly on Facebook or Twitter. Try them out!
+My latest side projects provide Atom feeds for your [Facebook news feed](https://facebook-atom.appspot.com/), your [Twitter stream](https://twitter-atom.appspot.com/), or any [Twitter list](https://twitter-atom.appspot.com/). You can use them to read your friends' posts in an RSS/Atom feed reader instead of directly on Facebook or Twitter. Try them out!
 
   * [`facebook-atom.appspot.com`](https://facebook-atom.appspot.com/)
   * [`twitter-atom.appspot.com`](https://twitter-atom.appspot.com/)
 
-Facebook used to provide
-[RSS for the news feed](http://stackoverflow.com/a/10190683/186123), but they
-[deprecated it](http://www.kristi-barrow.com/facebook-rss-feeds-what-is-available/)
-a couple years ago and
-[dropped it altogether](https://plus.google.com/+TamarWeinberg/posts/hk18JNmtZQv)
-a couple weeks ago. The only working solution I've found is
-[JWZ's `facebook-rss.pl` script](http://www.jwz.org/blog/2009/12/how-to-use-facebook-with-a-feed-reader/),
-which works but isn't very accessible.
+Facebook used to provide [RSS for the news feed](http://stackoverflow.com/a/10190683/186123), but they [deprecated it](http://www.kristi-barrow.com/facebook-rss-feeds-what-is-available/) a couple years ago and [dropped it altogether](https://plus.google.com/+TamarWeinberg/posts/hk18JNmtZQv) a couple weeks ago. The only working solution I've found is [JWZ's `facebook-rss.pl` script](http://www.jwz.org/blog/2009/12/how-to-use-facebook-with-a-feed-reader/), which works but isn't very accessible.
 
 <a href="https://twitter-atom.appspot.com/">
  <img class="left" src="/twitter_atom_small.jpg" /></a>
 
-Twitter also used to support RSS and Atom in their API, but they
-[deprecated them](http://mashable.com/2012/09/05/twitter-api-rss/) when they
-announced the new API, and recently
-[dropped them altogether](https://dev.twitter.com/discussions/11831). There's
-[a Yahoo Pipe](http://pipes.yahoo.com/pipes/pipe.info?_id=f49405304db01792c182c01ebd1d1b34)
-that does the conversion, but it uses the old API and doesn't authenticate,
-which the
-[new API requires](https://dev.twitter.com/blog/changes-coming-to-twitter-api),
-so it won't last long.
+Twitter also used to support RSS and Atom in their API, but they [deprecated them](http://mashable.com/2012/09/05/twitter-api-rss/) when they announced the new API, and recently [dropped them altogether](https://dev.twitter.com/discussions/11831). There's [a Yahoo Pipe](http://pipes.yahoo.com/pipes/pipe.info?_id=f49405304db01792c182c01ebd1d1b34) that does the conversion, but it uses the old API and doesn't authenticate, which the [new API requires](https://dev.twitter.com/blog/changes-coming-to-twitter-api), so it won't last long.
 
-The source for both apps is [on](https://github.com/snarfed/facebook-atom)
-[Github](https://github.com/snarfed/twitter-atom). The heavy lifting is done by
-my
-[ActivityStreams bridge project](/2012-03-12_activitystreams_for_facebook_and_twitter).
-Enjoy!
+The source for both apps is [on](https://github.com/snarfed/facebook-atom) [Github](https://github.com/snarfed/twitter-atom). The heavy lifting is done by my [ActivityStreams bridge project](/2012-03-12_activitystreams_for_facebook_and_twitter). Enjoy!

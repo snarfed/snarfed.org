@@ -6,14 +6,6 @@ webalizer nofollow patch
 For the impatient:  
 [Patch for Webalizer 2.01-10](https://github.com/snarfed/misc/blob/master/patches/webalizer_nofollow.patch)  
 [Webalizer source](http://webalizer.com/download.html)  
-[Google's nofollow
-page](http://googleblog.blogspot.com/2005/01/preventing-comment-spam.html)
+[Google's nofollow page](http://googleblog.blogspot.com/2005/01/preventing-comment-spam.html)
 
-The latest salvo in the battle against [referrer spam](/referrer_spam) and
-comment spam is
-[nofollow](http://googleblog.blogspot.com/2005/01/preventing-comment-spam.html),
-an HTML tag that instructs search engines not to count a link in their
-algorithms. It's not much, but for my part, I've written a trivial
-[patch](https://github.com/snarfed/misc/blob/master/patches/webalizer_nofollow.patch) that adds
-nofollow support to [webalizer](http://webalizer.com/), a popular web server log
-analyzer.
+The latest salvo in the battle against [referrer spam](/referrer_spam) and comment spam is [nofollow](http://googleblog.blogspot.com/2005/01/preventing-comment-spam.html), an HTML tag that instructs search engines not to count a link in their algorithms. It's not much, but for my part, I've written a trivial [patch](https://github.com/snarfed/misc/blob/master/patches/webalizer_nofollow.patch) that adds nofollow support to [webalizer](http://webalizer.com/), a popular web server log analyzer.

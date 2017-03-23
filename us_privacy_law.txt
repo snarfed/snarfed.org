@@ -7,360 +7,47 @@ US Privacy Law
 
 A ([WCT](http://pwr.stanford.edu/)) Research Paper.
 
-Many state DMVs sell their databases of personal information, complete with
-names, addresses, phone numbers, and personal characteristics, to direct
-marketing companies. This is completely legal, and often the citizens are not
-even notified that their personal information is being bought and sold on the
-open market by the government. A company called 1-800-USSEARCH runs commercials
-on television and radio with alarming slogans &quot;Do you really know who
-you're dating?&quot; &quot;How do you know your parents really are your
-parents?&quot; For a nominal fee, 1-800-USSEARCH finds information about people
-in phone directories, real estate deeds, court and civil suit records, criminal
-records, military records, any government-mandated licenses, professional
-licenses, marriage records, bankruptcy filings, and credit reports.
-1-800-USSEARCH can collect this information with as little as a first and last
-name and a previous address. RealNetworks, Inc. was publicly embarrassed
-recently when a computer programmer revealed that its multimedia program
-RealPlayer transmitted a unique identification number when it was used to play
-any video or audio clip. Combined with a person's name and e-mail address
-required to download the software, RealNetworks could associate a person's name
-with every movie or sound file they played using the RealPlayer program.
+Many state DMVs sell their databases of personal information, complete with names, addresses, phone numbers, and personal characteristics, to direct marketing companies. This is completely legal, and often the citizens are not even notified that their personal information is being bought and sold on the open market by the government. A company called 1-800-USSEARCH runs commercials on television and radio with alarming slogans &quot;Do you really know who you're dating?&quot; &quot;How do you know your parents really are your parents?&quot; For a nominal fee, 1-800-USSEARCH finds information about people in phone directories, real estate deeds, court and civil suit records, criminal records, military records, any government-mandated licenses, professional licenses, marriage records, bankruptcy filings, and credit reports. 1-800-USSEARCH can collect this information with as little as a first and last name and a previous address. RealNetworks, Inc. was publicly embarrassed recently when a computer programmer revealed that its multimedia program RealPlayer transmitted a unique identification number when it was used to play any video or audio clip. Combined with a person's name and e-mail address required to download the software, RealNetworks could associate a person's name with every movie or sound file they played using the RealPlayer program.
 
-These incidents are not at all out of the ordinary. Invasions of privacy similar
-to these incidents happen all the time, and the privacy laws currently in place
-in the US are simply not equipped to adequately protect citizens. Recent
-advances in technology have created even more opportunities for the government
-and private corporations to collect and take advantage of personal information.
-Innovations such as cellular telephones, personal computers, and online shopping
-have improved on the convenience of our daily lives, but they also carry
-inherent threats to personal privacy. Other methods of protecting privacy,
-including voluntary industry self-regulation and independent consumer watchdog
-groups, have historically proven to be ineffective. The current system of
-privacy law has not been effective in preventing invasions of privacy either. In
-many areas, the US has no legislation at all concerning the collection and use
-of personal information. In areas where laws and court decisions have been made,
-they are not general or strong enough to adequately protect citizens' privacy.
-Widely enforced privacy law in the US is long overdue.
+These incidents are not at all out of the ordinary. Invasions of privacy similar to these incidents happen all the time, and the privacy laws currently in place in the US are simply not equipped to adequately protect citizens. Recent advances in technology have created even more opportunities for the government and private corporations to collect and take advantage of personal information. Innovations such as cellular telephones, personal computers, and online shopping have improved on the convenience of our daily lives, but they also carry inherent threats to personal privacy. Other methods of protecting privacy, including voluntary industry self-regulation and independent consumer watchdog groups, have historically proven to be ineffective. The current system of privacy law has not been effective in preventing invasions of privacy either. In many areas, the US has no legislation at all concerning the collection and use of personal information. In areas where laws and court decisions have been made, they are not general or strong enough to adequately protect citizens' privacy. Widely enforced privacy law in the US is long overdue.
 
-Any discussion of legislation and public policy requires unambiguous definitions
-of the concepts involved. The word privacy itself has many different
-connotations. Most people in the field of privacy identify three distinct areas
-that have been contested in legislation and court cases. [[1]](#1) First,
-privacy can refer to unwanted intrusions of physical personal space. This
-includes strip searches and body cavity searches at customs, which have come
-under fire recently because of incidents of customs officials abusing their
-power. Second, privacy can refer to surveillance of a person's actions or
-movement. This includes police stakeouts and recording telephone conversations
-without both parties' consent, which is illegal in the US. Finally, privacy can
-refer to records about a specific person and who has access to them. This
-includes identifying information such as address, phone number, and Social
-Security Number, but also includes other information such as credit card
-statements, criminal records, medical history, financial records, and credit
-reports. There are no strong, comprehensive laws against obtaining records like
-these without the subject's consent. Worse, it is fairly easy to obtain almost
-any of these records about almost anyone in the US. In this paper, the term
-&quot;privacy&quot; will be used to refer only to the this area of privacy,
-personal information and access to it. However, a threat to the privacy of
-personal information is as grave as a threat to a person's physical privacy or
-well-being. Thousands of cases of &quot;identity theft&quot; are reported each
-year, and in most cases the perpetrator is never caught. Disclosure of personal
-information can reveal home addresses to would-be stalkers, phone and criminal
-records to future employers, and religious and political beliefs to a federal
-prosecutor. The effects of this kind of disclosure can be much worse than cases
-of physical intrusion or even violent crimes.
+Any discussion of legislation and public policy requires unambiguous definitions of the concepts involved. The word privacy itself has many different connotations. Most people in the field of privacy identify three distinct areas that have been contested in legislation and court cases. [[1]](#1) First, privacy can refer to unwanted intrusions of physical personal space. This includes strip searches and body cavity searches at customs, which have come under fire recently because of incidents of customs officials abusing their power. Second, privacy can refer to surveillance of a person's actions or movement. This includes police stakeouts and recording telephone conversations without both parties' consent, which is illegal in the US. Finally, privacy can refer to records about a specific person and who has access to them. This includes identifying information such as address, phone number, and Social Security Number, but also includes other information such as credit card statements, criminal records, medical history, financial records, and credit reports. There are no strong, comprehensive laws against obtaining records like these without the subject's consent. Worse, it is fairly easy to obtain almost any of these records about almost anyone in the US. In this paper, the term
+&quot;privacy&quot; will be used to refer only to the this area of privacy, personal information and access to it. However, a threat to the privacy of personal information is as grave as a threat to a person's physical privacy or well-being. Thousands of cases of &quot;identity theft&quot; are reported each year, and in most cases the perpetrator is never caught. Disclosure of personal information can reveal home addresses to would-be stalkers, phone and criminal records to future employers, and religious and political beliefs to a federal prosecutor. The effects of this kind of disclosure can be much worse than cases of physical intrusion or even violent crimes.
 
-For a constructive discussion of privacy law, other concepts need clear
-definitions as well. Security is a critical concept for discussing privacy. If
-access to some information must be controlled, there must be safeguards on the
-facilities holding that information and measures to prevent unauthorized people
-from accessing it. Ware defines security as &quot;the totality of safeguards in
-a...information system that protects both it and its information against some
-defined threat, and limits access to the system and its data to authorized users
-in accordance with an established policy.&quot; [[2]](#2) Confidentiality is
-usually used to describe information that should not be available to the public.
-Willis H. Ware, an expert on privacy and public policy and a member of the RAND
-group, defines confidentiality as &quot;a status accorded to information that
-indicates that it is sensitive for stated reasons, that it must be protected and
-that access to it must be controlled.&quot; [[3]](#3) The concept of
-confidentiality is unavoidable because it leads to a central issue. Should
-access to personal information be tightly restricted once it has been collected,
-or are there some types of personal information that should not be collected at
-all? The question runs through almost all aspects of the privacy debate, but the
-answer is not immediately clear
+For a constructive discussion of privacy law, other concepts need clear definitions as well. Security is a critical concept for discussing privacy. If access to some information must be controlled, there must be safeguards on the facilities holding that information and measures to prevent unauthorized people from accessing it. Ware defines security as &quot;the totality of safeguards in a...information system that protects both it and its information against some defined threat, and limits access to the system and its data to authorized users in accordance with an established policy.&quot; [[2]](#2) Confidentiality is usually used to describe information that should not be available to the public. Willis H. Ware, an expert on privacy and public policy and a member of the RAND group, defines confidentiality as &quot;a status accorded to information that indicates that it is sensitive for stated reasons, that it must be protected and that access to it must be controlled.&quot; [[3]](#3) The concept of confidentiality is unavoidable because it leads to a central issue. Should access to personal information be tightly restricted once it has been collected, or are there some types of personal information that should not be collected at all? The question runs through almost all aspects of the privacy debate, but the answer is not immediately clear
 
-The current state of privacy law in the US is haphazard and sorely inadequate.
-Unlike most European countries, there are very few strong omnibus laws
-concerning privacy. The most visible of these, including the Freedom of
-Information Act of 1966 and the Privacy Act of 1974, set legal limits only on
-the government's use of personal information. The courts have also set
-precedents concerning privacy and the law. In Griswold v. Connecticut (1965),
-the court found that there is an implied (not explicit) right to privacy in the
-constitution, but this right was later severely limited in scope. There is no
-federal legislation concerning a general right to privacy. Almost all of these
-decisions and laws deal with the government's ability to collect and use
-personal information. There have been almost no landmark cases or legislation
-affecting private institutions, companies, or individuals. There are many
-reasons for this - our country was founded as a reaction against tyrannical,
-authoritarian government. A constitutional right to privacy protected by the
-government would have been antithetical to the fundamental freedoms America was
-built upon, as enumerated in the Constitution and the Bill of Rights.
+The current state of privacy law in the US is haphazard and sorely inadequate. Unlike most European countries, there are very few strong omnibus laws concerning privacy. The most visible of these, including the Freedom of Information Act of 1966 and the Privacy Act of 1974, set legal limits only on the government's use of personal information. The courts have also set precedents concerning privacy and the law. In Griswold v. Connecticut (1965), the court found that there is an implied (not explicit) right to privacy in the constitution, but this right was later severely limited in scope. There is no federal legislation concerning a general right to privacy. Almost all of these decisions and laws deal with the government's ability to collect and use personal information. There have been almost no landmark cases or legislation affecting private institutions, companies, or individuals. There are many reasons for this - our country was founded as a reaction against tyrannical, authoritarian government. A constitutional right to privacy protected by the government would have been antithetical to the fundamental freedoms America was built upon, as enumerated in the Constitution and the Bill of Rights.
 
-These laws and court cases are even less designed to address many recent threats
-to privacy. Recent technological advances have enabled almost anyone to collect
-and store large databases of personal information, where the same process would
-have taken prohibitively large resources only 20 or 30 years ago. Personal
-information has become big business. Marketing departments demand more and more
-specific demographic information, supermarkets and department stores offer
-incentives in exchange for cards that track shoppers' buying habits, and
-subscriber lists are sold for large amounts of money. This kind of personal
-information is valuable to almost any company. Consumer advocate groups do not
-have enough clout to lobby against companies in Washington, much less to set
-privacy standards in industry and try to enforce them. The "drifting syndrome,"
-one of the basic principles of privacy [[4]](#4), asserts that public policy can
-be established in which no single step seems like a threat to privacy, but at
-the end privacy is severely threatened by the whole of the policy.
-&quot;Bureaucrats press...for authority to enumerate only their own
-constituency, to serve their narrow needs -- without regard to the cumulative
-impact of these gradual intrusions on the citizenry as a whole....&quot;
-[[5]](#5) claims Robert Ellis Smith, founder of the Privacy Journal and a legal
-expert on privacy issues. Only broad, widely enforced legislation in favor of
-privacy can prevent this.
+These laws and court cases are even less designed to address many recent threats to privacy. Recent technological advances have enabled almost anyone to collect and store large databases of personal information, where the same process would have taken prohibitively large resources only 20 or 30 years ago. Personal information has become big business. Marketing departments demand more and more specific demographic information, supermarkets and department stores offer incentives in exchange for cards that track shoppers' buying habits, and subscriber lists are sold for large amounts of money. This kind of personal information is valuable to almost any company. Consumer advocate groups do not have enough clout to lobby against companies in Washington, much less to set privacy standards in industry and try to enforce them. The "drifting syndrome," one of the basic principles of privacy [[4]](#4), asserts that public policy can be established in which no single step seems like a threat to privacy, but at the end privacy is severely threatened by the whole of the policy.
+&quot;Bureaucrats press...for authority to enumerate only their own constituency, to serve their narrow needs -- without regard to the cumulative impact of these gradual intrusions on the citizenry as a whole....&quot; [[5]](#5) claims Robert Ellis Smith, founder of the Privacy Journal and a legal expert on privacy issues. Only broad, widely enforced legislation in favor of privacy can prevent this.
 
-In the field of public policy, many scholars and lawyers alike consider the
-principle of privacy an extension of both property rights and civil rights.
-Information about a specific person should not be public property and available
-to anyone, but should instead be the property of that person. They should have
-the right to reveal it or hide it as they see fit, and this fundamental right
-should be protected by the government. Confidentiality requires a concept of
-privacy as property to determine if personal information can be collected at
-all, instead of only asking who should have access to it. However, property
-rights alone do not adequately address privacy rights. The concept of ownership
-is inherent in property, and if privacy is treated solely as property, a person
-could relinquish all ownership of their personal information and thus any claim
-to privacy they might otherwise have had. Privacy rights must also be considered
-in terms of civil rights that are fundamental and accorded to all human beings.
-Unlike property rights, a civil right can never be surrendered, bought, or
-otherwise separated from a person. Most current laws treat privacy more as a
-civil right than as a property right. Many foreign countries focus on privacy as
-simply an extension of civil rights, especially those countries that specify a
-right to privacy in their constitutions. The primary issue in the US is not as
-much the focus of existing privacy law as the necessity for new law. However,
-new legislation cannot be proposed without considering the origin of privacy law
-in the US.
+In the field of public policy, many scholars and lawyers alike consider the principle of privacy an extension of both property rights and civil rights. Information about a specific person should not be public property and available to anyone, but should instead be the property of that person. They should have the right to reveal it or hide it as they see fit, and this fundamental right should be protected by the government. Confidentiality requires a concept of privacy as property to determine if personal information can be collected at all, instead of only asking who should have access to it. However, property rights alone do not adequately address privacy rights. The concept of ownership is inherent in property, and if privacy is treated solely as property, a person could relinquish all ownership of their personal information and thus any claim to privacy they might otherwise have had. Privacy rights must also be considered in terms of civil rights that are fundamental and accorded to all human beings. Unlike property rights, a civil right can never be surrendered, bought, or otherwise separated from a person. Most current laws treat privacy more as a civil right than as a property right. Many foreign countries focus on privacy as simply an extension of civil rights, especially those countries that specify a right to privacy in their constitutions. The primary issue in the US is not as much the focus of existing privacy law as the necessity for new law. However, new legislation cannot be proposed without considering the origin of privacy law in the US.
 
-In 1890 in Boston, Samuel D. Warren and his wife put on a lavish wedding
-reception for Warren's daughter and her new husband. A reporter from the
-Saturday Evening Gazette attended the reception and, to the dismay of Mrs.
-Warren, wrote about the party in the newspaper's next issue. A series of Mrs.
-Warren's social events were publicized as well, which upset Warren enough that
-he wrote an article for the Harvard Law Review with a partner, Louis D.
-Brandeis, advocating a legally protected right to privacy. Warren and Brandeis
-outlined a right to privacy as &quot;the right to be let alone.&quot; [[6]](#6)
-They claimed the right to privacy extended directly from the right to property -
-people can choose the extent to which they communicate their thoughts and
-personal information to others, regardless of the means of communication or the
-content of the information. Warren and Brandeis further proposed that personal
-thoughts and information should be protected - &quot;owned&quot; by the person -
-whether or not they are recorded or written down. This implies a relationship to
-civil rights as essential as the explicit relationship to property rights.
-Brandeis and Warren argued that a person's information should not be collected
-at all unless the person gives consent, and only then should confidentiality and
-limits on disclosure be placed. Warren's wife would claim that she didn't want
-limits on the Gazette's publicity, she wanted them prohibited from collecting
-the information in the first place. Ever since this article was published in the
-Dec. 15, 1890 edition of the Review, it has been hailed as one of the most
-influential law articles ever written. Arthur R. Miller, a law professor at
-Harvard, described the article as &quot;a model of how effectively presented
-legal scholarship can lead to a change in the law.&quot; [[7]](#7)
+In 1890 in Boston, Samuel D. Warren and his wife put on a lavish wedding reception for Warren's daughter and her new husband. A reporter from the Saturday Evening Gazette attended the reception and, to the dismay of Mrs. Warren, wrote about the party in the newspaper's next issue. A series of Mrs. Warren's social events were publicized as well, which upset Warren enough that he wrote an article for the Harvard Law Review with a partner, Louis D. Brandeis, advocating a legally protected right to privacy. Warren and Brandeis outlined a right to privacy as &quot;the right to be let alone.&quot; [[6]](#6) They claimed the right to privacy extended directly from the right to property - people can choose the extent to which they communicate their thoughts and personal information to others, regardless of the means of communication or the content of the information. Warren and Brandeis further proposed that personal thoughts and information should be protected - &quot;owned&quot; by the person - whether or not they are recorded or written down. This implies a relationship to civil rights as essential as the explicit relationship to property rights. Brandeis and Warren argued that a person's information should not be collected at all unless the person gives consent, and only then should confidentiality and limits on disclosure be placed. Warren's wife would claim that she didn't want limits on the Gazette's publicity, she wanted them prohibited from collecting the information in the first place. Ever since this article was published in the Dec. 15, 1890 edition of the Review, it has been hailed as one of the most influential law articles ever written. Arthur R. Miller, a law professor at Harvard, described the article as &quot;a model of how effectively presented legal scholarship can lead to a change in the law.&quot; [[7]](#7)
 
-Privacy law in the US has been constantly evolving since the landmark
-Brandeis-Warren article. Congress has passed legislature and courts have made
-decisions, but the whole of privacy law in the US remains largely fragmented and
-without clear direction. A turning point came with Griswold v. Connecticut
-(1965). [[8]](#8) Estelle Griswold, the executive director of Planned Parenthood
-in Connecticut, deliberately provided contraceptive drugs to a married couple
-and violated  a Connecticut law prohibiting the use of any kind of
-contraceptives. The Supreme Court found that married couples could use
-contraceptives and overturned the Connecticut law by defending a stronger right
-to privacy. In its decision, the court specifically stated a right to privacy
-covered under a "penumbra" in the Constitution from the 1st, 4th, and 9th
-Amendments. [[9]](#9) However, the court later found in Paul v. Davis (1976)
-that this constitutional right only applied to a limited set of issues,
-specifically "matters relating to marriage, procreation, conception, family
-relationships, and child rearing and education." [[10]](#10) This corresponds to
-the private realm outlined by the Brandeis-Warren article - other people are not
-allowed to use information in this realm without the subject's consent.
+Privacy law in the US has been constantly evolving since the landmark Brandeis-Warren article. Congress has passed legislature and courts have made decisions, but the whole of privacy law in the US remains largely fragmented and without clear direction. A turning point came with Griswold v. Connecticut (1965). [[8]](#8) Estelle Griswold, the executive director of Planned Parenthood in Connecticut, deliberately provided contraceptive drugs to a married couple and violated  a Connecticut law prohibiting the use of any kind of contraceptives. The Supreme Court found that married couples could use contraceptives and overturned the Connecticut law by defending a stronger right to privacy. In its decision, the court specifically stated a right to privacy covered under a "penumbra" in the Constitution from the 1st, 4th, and 9th Amendments. [[9]](#9) However, the court later found in Paul v. Davis (1976) that this constitutional right only applied to a limited set of issues, specifically "matters relating to marriage, procreation, conception, family relationships, and child rearing and education." [[10]](#10) This corresponds to the private realm outlined by the Brandeis-Warren article - other people are not allowed to use information in this realm without the subject's consent.
 
-The most significant and broad laws deal solely with the government's collection
-and use of personal information. The Freedom of Information Act of 1966 required
-that all government records must be available to the public, except certain
-records such as law enforcement and issues of national security. The Privacy Act
-of 1974, a companion to the FOIA, allows citizens to see and correct any
-government records about them and places limits on what kind of information can
-be collected. Other similar acts passed at the same time, including the Family
-Educational Rights and Privacy Act of 1974 which allowed families access to
-their childrens' public school reports. These acts placed the burden of proof on
-the government - instead of government judging on a "need to know" basis whether
-a citizen deserved access, all citizens had a protected right to see and correct
-their own records. However, the burden of proof for disclosure is still on the
-subject of the records - disclosure to third parties is allowed unless the
-subject can prove that it is a "clearly unwarranted invasion of personal
-privacy." [[11]](#11) Confidentiality is clearly not protected in this case, and
-the law assumes that personal information has already been collected. The
-question of whether it should be collected at all is not addressed. For better
-or worse, these acts lay the foundation of US privacy law with regard to the
-government.
+The most significant and broad laws deal solely with the government's collection and use of personal information. The Freedom of Information Act of 1966 required that all government records must be available to the public, except certain records such as law enforcement and issues of national security. The Privacy Act of 1974, a companion to the FOIA, allows citizens to see and correct any government records about them and places limits on what kind of information can be collected. Other similar acts passed at the same time, including the Family Educational Rights and Privacy Act of 1974 which allowed families access to their childrens' public school reports. These acts placed the burden of proof on the government - instead of government judging on a "need to know" basis whether a citizen deserved access, all citizens had a protected right to see and correct their own records. However, the burden of proof for disclosure is still on the subject of the records - disclosure to third parties is allowed unless the subject can prove that it is a "clearly unwarranted invasion of personal privacy." [[11]](#11) Confidentiality is clearly not protected in this case, and the law assumes that personal information has already been collected. The question of whether it should be collected at all is not addressed. For better or worse, these acts lay the foundation of US privacy law with regard to the government.
 
-Legislation with regard to private individuals, companies, and organizations is
-even more haphazard and narrow. Laws and court cases have made strides in
-specific areas. The most significant laws in private-sector are the Fair Credit
-Reporting Act of 1970, the Right to Financial Privacy Act of 1978, and the
-Electronic Funds Transfer Act of 1978, all of which paralleled the Freedom of
-Information Act. The FCRA allowed people to see and correct their credit reports
-and placed restrictions on their disclosure, the RFPA allowed people to see and
-correct their financial records and challenge them before they were sent to any
-other agency, and the EFTA required funds agencies to inform customers of the
-terms of any transfer. There are also state and community laws protecting
-various information from video rental records [[12]](#12) to library records.
+Legislation with regard to private individuals, companies, and organizations is even more haphazard and narrow. Laws and court cases have made strides in specific areas. The most significant laws in private-sector are the Fair Credit Reporting Act of 1970, the Right to Financial Privacy Act of 1978, and the Electronic Funds Transfer Act of 1978, all of which paralleled the Freedom of Information Act. The FCRA allowed people to see and correct their credit reports and placed restrictions on their disclosure, the RFPA allowed people to see and correct their financial records and challenge them before they were sent to any other agency, and the EFTA required funds agencies to inform customers of the terms of any transfer. There are also state and community laws protecting various information from video rental records [[12]](#12) to library records.
 
-Unfortunately, general privacy law is still nonexistent. Many laws and court
-decisions have done as more harm than good to the privacy cause. In US v. Miller
-(1976) [[13]](#13), the Supreme Court found that records held by banks and other
-financial institutions are not confidential and may be disclosed to third
-parties without notifying the subject of the records. The court further required
-that banks record their customers' transactions and financial information so
-they can provide it as evidence if they are ever subpoenaed. This case set a
-precedent for many similar decisions, including that abortion clinics (Planned
-Parenthood v. Danforth 1976) and telephone companies (US v. New York Telephone
-Co. 1977) must also keep records and make them publicly available. US v. Miller
-illustrates the weakness in most current privacy laws aimed at the private
-sector. All of the positive laws cited in the last paragraph deal with a
-person's right to see and challenge information about themselves recorded by a
-company, and in certain situations, require the company to notify the person of
-their records. There are almost no limits set on what information can be
-collected, for what purpose, or to whom it may be disclosed. This is where
-strong legislation is most needed.
+Unfortunately, general privacy law is still nonexistent. Many laws and court decisions have done as more harm than good to the privacy cause. In US v. Miller (1976) [[13]](#13), the Supreme Court found that records held by banks and other financial institutions are not confidential and may be disclosed to third parties without notifying the subject of the records. The court further required that banks record their customers' transactions and financial information so they can provide it as evidence if they are ever subpoenaed. This case set a precedent for many similar decisions, including that abortion clinics (Planned Parenthood v. Danforth 1976) and telephone companies (US v. New York Telephone Co. 1977) must also keep records and make them publicly available. US v. Miller illustrates the weakness in most current privacy laws aimed at the private sector. All of the positive laws cited in the last paragraph deal with a person's right to see and challenge information about themselves recorded by a company, and in certain situations, require the company to notify the person of their records. There are almost no limits set on what information can be collected, for what purpose, or to whom it may be disclosed. This is where strong legislation is most needed.
 
-There is no single reason why privacy law in the US has developed this way. One
-of the most visible failures of current law is its focus on the government.
-Until recently, collection and storage of significant amounts of personal
-information required an immense investment of capital, equipment, and people.
-The government was the only institution with enough resources to do this
-successfully. Apart from tax collection and census efforts, the government's
-implementation of Roosevelt's New Deal programs in the '60s was the first time
-it collected and used personal information on a large scale. Millions of US
-citizens participated in New Deal programs during the 1960's and early 1970's
-and the government recorded a significant amount of personal data for each
-participant. Later in Roosevelt's term, even more information was collected to
-determine eligibility for programs, and even later to measure the effectiveness
-of the programs themselves. Many of the 1970's laws such as the Privacy Act and
-the Freedom of Information Act were enacted as a response to this.
+There is no single reason why privacy law in the US has developed this way. One of the most visible failures of current law is its focus on the government. Until recently, collection and storage of significant amounts of personal information required an immense investment of capital, equipment, and people. The government was the only institution with enough resources to do this successfully. Apart from tax collection and census efforts, the government's implementation of Roosevelt's New Deal programs in the '60s was the first time it collected and used personal information on a large scale. Millions of US citizens participated in New Deal programs during the 1960's and early 1970's and the government recorded a significant amount of personal data for each participant. Later in Roosevelt's term, even more information was collected to determine eligibility for programs, and even later to measure the effectiveness of the programs themselves. Many of the 1970's laws such as the Privacy Act and the Freedom of Information Act were enacted as a response to this.
 
-Only recently have advances in technology and communications made collecting
-personal information more accessible and effective to private companies and
-individuals. Historically, the government has always been slow to respond with
-appropriate legislation to current issues, even when it is clearly necessary. In
-the last five years or so, the both the Clinton administration and the largely
-conservative Congress has finally begun to address issues of privacy. This is at
-least partly because computers and the Internet have thrust privacy back into
-the public eye. Companies, lobbying groups, and the general public have placed
-increasing pressure on the government to address these issues. For example, a
-year ago Clinton finally lifted the ban on exporting strong encryption, a move
-considered long overdue by both industry experts and political analysts. It is
-possible that given enough time, the US government will address general privacy
-issues in a manner acceptable to even the toughest watchdog groups.
+Only recently have advances in technology and communications made collecting personal information more accessible and effective to private companies and individuals. Historically, the government has always been slow to respond with appropriate legislation to current issues, even when it is clearly necessary. In the last five years or so, the both the Clinton administration and the largely conservative Congress has finally begun to address issues of privacy. This is at least partly because computers and the Internet have thrust privacy back into the public eye. Companies, lobbying groups, and the general public have placed increasing pressure on the government to address these issues. For example, a year ago Clinton finally lifted the ban on exporting strong encryption, a move considered long overdue by both industry experts and political analysts. It is possible that given enough time, the US government will address general privacy issues in a manner acceptable to even the toughest watchdog groups.
 
-Unfortunately, this is a highly optimistic stance, and not an especially
-realistic one. One of the founding principles of the US government was a system
-for limiting the government's power and ability to tyrranize its citizens. The
-checks and balances inherent in the three branches of the government contribute
-to this, as do the fundamental, inalienable rights enumerated in the Bill of
-Rights. A fundamental right to privacy, protected by an omnibus law and enforced
-by the government, does not fit easily into this ideal. Legislation and court
-decisions have also taken into account the legitimate need of organizations and
-companies to collect and use certain personal information. US v. Miller is one
-of the most visible examples of this principle, and many states' regulations on
-Caller ID also validate these legitimate needs. This is not currently a valid
-argument against stronger privacy law, though. Almost uniformly, companies and
-organizations collect more personal information than they need solely for
-business purposes.
+Unfortunately, this is a highly optimistic stance, and not an especially realistic one. One of the founding principles of the US government was a system for limiting the government's power and ability to tyrranize its citizens. The checks and balances inherent in the three branches of the government contribute to this, as do the fundamental, inalienable rights enumerated in the Bill of Rights. A fundamental right to privacy, protected by an omnibus law and enforced by the government, does not fit easily into this ideal. Legislation and court decisions have also taken into account the legitimate need of organizations and companies to collect and use certain personal information. US v. Miller is one of the most visible examples of this principle, and many states' regulations on Caller ID also validate these legitimate needs. This is not currently a valid argument against stronger privacy law, though. Almost uniformly, companies and organizations collect more personal information than they need solely for business purposes.
 
-Privacy law in other countries has not developed at all similarly to US law.
-Many European countries in particular have strong, broad legislation that
-enumerates and protects individuals' right to privacy. Some countries including
-Spain, Portugal, Norway, and the Netherlands specifically outline a
-government-protected right to privacy in their constitutions. These
-constitutional rights are usually protected by severely limiting or, in Spain's
-case, directly outlawing collection of personal data that could be used to
-threaten individual privacy. Even in European countries without an explicit
-constitutional right to privacy, privacy law is strong. The vast majority of
-European countries protect and limit most forms of personal data collection.
+Privacy law in other countries has not developed at all similarly to US law. Many European countries in particular have strong, broad legislation that enumerates and protects individuals' right to privacy. Some countries including Spain, Portugal, Norway, and the Netherlands specifically outline a government-protected right to privacy in their constitutions. These constitutional rights are usually protected by severely limiting or, in Spain's case, directly outlawing collection of personal data that could be used to threaten individual privacy. Even in European countries without an explicit constitutional right to privacy, privacy law is strong. The vast majority of European countries protect and limit most forms of personal data collection.
 
-Many European countries have passed Data Protection Acts or Data Privacy Acts
-based on a Convention passed by the Council of Europe in 1981. The Council of
-Europe is a European joint organization much like NATO or UN which focuses on
-promoting basic compatibility between the governments and public policy of
-European countries. Spurred by the availability and adoption of computer data
-banks to track personal data, in 1974 the Council of Europe advised the
-Committee of Ministers, an oversight board in the Council, to address mounting
-privacy concerns. The Committee of Ministers drafted two resolutions regarding
-personal information in computer data banks, and later initiated a convention
-that would revolutionize much of European legislation with regard to privacy the
-Convention for the Protection of Individuals with Regard to Automatic Processing
-of Personal Data. [[14]](#14) The Convention sets guidelines for collection,
-storage, and use of personal data by private individuals and corporations. It
-also encourages countries that comply with the Convention to refuse transactions
-with countries that do not comply. To date, the Convention has been signed by 19
-European countries. Along with Article 8 of the European Human Rights
-Convention, which outlines a personal right to privacy of data, the Council of
-Europe's Convention has served as the model for the majority of privacy law in
-Europe. Most of Europe's privacy laws have been omnibus in nature due to the
-influence of these models.
+Many European countries have passed Data Protection Acts or Data Privacy Acts based on a Convention passed by the Council of Europe in 1981. The Council of Europe is a European joint organization much like NATO or UN which focuses on promoting basic compatibility between the governments and public policy of European countries. Spurred by the availability and adoption of computer data banks to track personal data, in 1974 the Council of Europe advised the Committee of Ministers, an oversight board in the Council, to address mounting privacy concerns. The Committee of Ministers drafted two resolutions regarding personal information in computer data banks, and later initiated a convention that would revolutionize much of European legislation with regard to privacy the Convention for the Protection of Individuals with Regard to Automatic Processing of Personal Data. [[14]](#14) The Convention sets guidelines for collection, storage, and use of personal data by private individuals and corporations. It also encourages countries that comply with the Convention to refuse transactions with countries that do not comply. To date, the Convention has been signed by 19 European countries. Along with Article 8 of the European Human Rights Convention, which outlines a personal right to privacy of data, the Council of Europe's Convention has served as the model for the majority of privacy law in Europe. Most of Europe's privacy laws have been omnibus in nature due to the influence of these models.
 
-Although the Convention was passed in 1981, it reflects social attitudes that
-are rooted in European history and are fundamentally different from American
-attitudes. In earlier history, the monarchy was the dominant form of government
-in Europe. Kings ruled over kingdoms, and the serfs who worked the land and paid
-taxes were just like the land or any other natural resource in the kingdom. The
-king owned everything in the kingdom, including his subjects and any personal
-information about them. When monarchies were eventually replaced by governments,
-the government was still initially thought to own personal information about its
-citizens. It was not far to laws prohibiting private individuals or corporations
-from collecting and using this personal information. Recently, many European
-countries have used these ideas against private use of personal information to
-strengthen a concept of privacy more centered around civil rights rather than
-property rights. This is an area where the US government and courts have been
-debating the foundations of a right to privacy for decades. The face of privacy
-in legislation is still changing, even in other countries where privacy law is
-more established.
+Although the Convention was passed in 1981, it reflects social attitudes that are rooted in European history and are fundamentally different from American attitudes. In earlier history, the monarchy was the dominant form of government in Europe. Kings ruled over kingdoms, and the serfs who worked the land and paid taxes were just like the land or any other natural resource in the kingdom. The king owned everything in the kingdom, including his subjects and any personal information about them. When monarchies were eventually replaced by governments, the government was still initially thought to own personal information about its citizens. It was not far to laws prohibiting private individuals or corporations from collecting and using this personal information. Recently, many European countries have used these ideas against private use of personal information to strengthen a concept of privacy more centered around civil rights rather than property rights. This is an area where the US government and courts have been debating the foundations of a right to privacy for decades. The face of privacy in legislation is still changing, even in other countries where privacy law is more established.
 
-European countries can still serve as a model for progress in US privacy
-legislation. The most necessary change is the move from many specific laws to a
-general, omnibus law. Other changes are needed too. Laws must be expanded from
-dealing solely with the government to dealing with individuals and corporations.
-The government should ensure that in situations where a right to collect
-personal information is disputed, the burden of proof is on the organization
-collecting the information and not on the individual. The right to privacy
-should be based as much on civil rights principles as on property rights
-principles, so that it is treated as a fundamental human right and cannot be
-easily discarded.
+European countries can still serve as a model for progress in US privacy legislation. The most necessary change is the move from many specific laws to a general, omnibus law. Other changes are needed too. Laws must be expanded from dealing solely with the government to dealing with individuals and corporations. The government should ensure that in situations where a right to collect personal information is disputed, the burden of proof is on the organization collecting the information and not on the individual. The right to privacy should be based as much on civil rights principles as on property rights principles, so that it is treated as a fundamental human right and cannot be easily discarded.
 
-In the last decade or so, privacy has returned to the public eye with the recent
-explosion of technological innovation and the Internet and their effects on
-traditional communication methods. Congress has recently passed laws regarding
-privacy and the Internet, as well as regulations on cellular phones and other
-recent inventions. Technology has also provided individuals with more powerful
-methods for protecting their own privacy. Privacy advocates have &quot;fought
-back&quot; with technology like strong encryption in programs such as PGP,
-better access to current legislation and mediation methods, and faster and more
-accessible communication through e-mail and the World Wide Web. Many industries
-have organized oversight committees that regulate the industry's collection and
-use of personal information, but these groups have not been successful because
-compliance is strictly voluntary. Consumer advocate groups and watchdog groups
-such as EFF and the ACLU have also taken part in privacy debates, but they are
-simply not powerful enough to have a significant effect on legislation. New
-legislation is necessary because it is the only viable and effective way to
-protect privacy in the US today.
+In the last decade or so, privacy has returned to the public eye with the recent explosion of technological innovation and the Internet and their effects on traditional communication methods. Congress has recently passed laws regarding privacy and the Internet, as well as regulations on cellular phones and other recent inventions. Technology has also provided individuals with more powerful methods for protecting their own privacy. Privacy advocates have &quot;fought back&quot; with technology like strong encryption in programs such as PGP, better access to current legislation and mediation methods, and faster and more accessible communication through e-mail and the World Wide Web. Many industries have organized oversight committees that regulate the industry's collection and use of personal information, but these groups have not been successful because compliance is strictly voluntary. Consumer advocate groups and watchdog groups such as EFF and the ACLU have also taken part in privacy debates, but they are simply not powerful enough to have a significant effect on legislation. New legislation is necessary because it is the only viable and effective way to protect privacy in the US today.
 
 
 *References*
@@ -373,151 +60,87 @@ protect privacy in the US today.
 
   * <a name="4"></a>[4] Willis H. Ware, _The New Faces of Privacy_, p. 5 (1993).
 
-  * <a name="5"></a>[5] Robert Ellis Smith, _A national ID Card Violates
-American Traditions_. _Privacy Journal_ March 1991, pp. 4-5. This article is an
-edited version of Smith's testimony to a House of Representatives Committee on
-adopting the Social Security Number as a national identifier.
+  * <a name="5"></a>[5] Robert Ellis Smith, _A national ID Card Violates American Traditions_. _Privacy Journal_ March 1991, pp. 4-5. This article is an edited version of Smith's testimony to a House of Representatives Committee on adopting the Social Security Number as a national identifier.
 
-  * <a name="6"></a>[6] Samuel D. Warren and Louis D. Brandeis, _The Right to
-Privacy_. _The Harvard Law Review_ December 15, 1890 pp. 193-220, esp. 195-197
-and 203-208.
+  * <a name="6"></a>[6] Samuel D. Warren and Louis D. Brandeis, _The Right to Privacy_. _The Harvard Law Review_ December 15, 1890 pp. 193-220, esp. 195-197 and 203-208.
 
-  * <a name="7"></a>[7] _The Brandeis-Warren Article 100 Years Later_, _Privacy
-Journal_ December 1990, p. 1.
+  * <a name="7"></a>[7] _The Brandeis-Warren Article 100 Years Later_, _Privacy Journal_ December 1990, p. 1.
 
-  * <a name="8"></a>[8] Edwin S. Newman and Daniel S. Moretti, _Civil Liberty
-and Civil Rights, Seventh Edition_, p. 38 (1987).
+  * <a name="8"></a>[8] Edwin S. Newman and Daniel S. Moretti, _Civil Liberty and Civil Rights, Seventh Edition_, p. 38 (1987).
 
-  * <a name="9"></a>[9] Philippa Strum, _Privacy: The Debate in the United
-States Since 1945_, pp. 91-94 (1998).
+  * <a name="9"></a>[9] Philippa Strum, _Privacy: The Debate in the United States Since 1945_, pp. 91-94 (1998).
 
-  * <a name="10"></a>[10] _Privacy Journal_ US privacy law text compilation,
-fifth edition (I need the complete listing). p. 7.
+  * <a name="10"></a>[10] _Privacy Journal_ US privacy law text compilation, fifth edition (I need the complete listing). p. 7.
 
-  * <a name="11"></a>[11] Michael D. Scott, _United States: Data Protection
-Regulatory System_. _Data Transmission and Privacy_, a compilation by the Center
-for International Legal Studies, p. 489 (1994).
+  * <a name="11"></a>[11] Michael D. Scott, _United States: Data Protection Regulatory System_. _Data Transmission and Privacy_, a compilation by the Center for International Legal Studies, p. 489 (1994).
 
-  * <a name="12"></a>[12] _The Growing Power of the Privacy Movement_, _Privacy
-Journal_ February 1991, p. 3.
+  * <a name="12"></a>[12] _The Growing Power of the Privacy Movement_, _Privacy Journal_ February 1991, p. 3.
 
-  * <a name="13"></a>[13] Edwin S. Newman and Daniel S. Moretti, _Civil Liberty
-and Civil Rights, Seventh Edition_, p. 43 (1987).
+  * <a name="13"></a>[13] Edwin S. Newman and Daniel S. Moretti, _Civil Liberty and Civil Rights, Seventh Edition_, p. 43 (1987).
 
-  * <a name="14"></a>[14] Michael D. Scott, _United States: Data Protection
-Regulatory System_. _Data Transmission and Privacy_, a compilation by the Center
-for International Legal Studies, p. vii (1994).
+  * <a name="14"></a>[14] Michael D. Scott, _United States: Data Protection Regulatory System_. _Data Transmission and Privacy_, a compilation by the Center for International Legal Studies, p. vii (1994).
 
 
 *Annotated Bibliography*
 
 Willis H. Ware, _The New Faces of Privacy_. The Information Society, RAND, 1993.
 
-In Ware's words, &quot;This paper is based on an after-dinner address presented
-at the Computers, Freedom, and Privacy-1993 Conference, San Francisco, CA, March
-10-12, 1993. It was the opening event in a group of coordinated sessions under
-the overall theme of &quot;The Many Faces of Privacy.&quot;
+In Ware's words, &quot;This paper is based on an after-dinner address presented at the Computers, Freedom, and Privacy-1993 Conference, San Francisco, CA, March 10-12, 1993. It was the opening event in a group of coordinated sessions under the overall theme of &quot;The Many Faces of Privacy.&quot;
 
 
- Robert Ellis Smith, _A National ID Card Violates American Traditions_. _Privacy
-Journal_ March 1991, pp. 4-5.
+ Robert Ellis Smith, _A National ID Card Violates American Traditions_. _Privacy Journal_ March 1991, pp. 4-5.
 
-This article is an edited version of Smith's testimony to a House of
-Representatives Committee on adopting the Social Security Number as a national
-identifier.
+This article is an edited version of Smith's testimony to a House of Representatives Committee on adopting the Social Security Number as a national identifier.
 
 
- Samuel D. Warren and Louis D. Brandeis, _The Right to Privacy_. _The Harvard
-Law Review,_ December 15, 1890 pp. 193-220, esp. 195-197 and 203-208.
+ Samuel D. Warren and Louis D. Brandeis, _The Right to Privacy_. _The Harvard Law Review,_ December 15, 1890 pp. 193-220, esp. 195-197 and 203-208.
 
-This article is widely regarded as one of the most influential papers in the
-field of privacy law, if not law in general. Brandeis and Warren wrote in
-defense of &quot;the right to be let alone&quot; in response to the _Saturday
-Evening Gazette_ reporting on a social event put on by Mrs. Warren.
+This article is widely regarded as one of the most influential papers in the field of privacy law, if not law in general. Brandeis and Warren wrote in defense of &quot;the right to be let alone&quot; in response to the _Saturday Evening Gazette_ reporting on a social event put on by Mrs. Warren.
 
 
- Robert Ellis Smith, _The Brandeis-Warren Article 100 Years Later_, _Privacy
-Journal_ December 1990, p. 1.
+ Robert Ellis Smith, _The Brandeis-Warren Article 100 Years Later_, _Privacy Journal_ December 1990, p. 1.
 
-This is a part description, part analysis, and part celebration of the
-Brandeis-Warren article on its 100th anniversary. It describes the general ideas
-behind the article and relates them to the current state of privacy law in the
-US.
+This is a part description, part analysis, and part celebration of the Brandeis-Warren article on its 100th anniversary. It describes the general ideas behind the article and relates them to the current state of privacy law in the US.
 
 
- Edwin S. Newman and Daniel S. Moretti, _Civil Liberty and Civil Rights, Seventh
-Edition._ Oceana Publications, New York, 1987.
+ Edwin S. Newman and Daniel S. Moretti, _Civil Liberty and Civil Rights, Seventh Edition._ Oceana Publications, New York, 1987.
 
 
- Philippa Strum, _Privacy: The Debate in the United States Since 1945_. Harcourt
-Brace College Publishers, New York, 1998.
+ Philippa Strum, _Privacy: The Debate in the United States Since 1945_. Harcourt Brace College Publishers, New York, 1998.
 
-This is one of the few sources that is an actual book. Strum addresses the
-current state of privacy in the US in areas including genetic testing, Social
-Security numbers, government records, physical privacy, the criminal justice
-system, and the workplace.
+This is one of the few sources that is an actual book. Strum addresses the current state of privacy in the US in areas including genetic testing, Social Security numbers, government records, physical privacy, the criminal justice system, and the workplace.
 
 
- Robert Ellis Smith, _Compilation of State and Federal Privacy Laws_. Privacy
-Journal, Washington, 1976.
+ Robert Ellis Smith, _Compilation of State and Federal Privacy Laws_. Privacy Journal, Washington, 1976.
 
-This was incredibly useful. Smith has compiled all of the legislation currently
-in place in the US that impacts personal privacy. This was invaluable for
-establishing the current state of privacy law in the US.
+This was incredibly useful. Smith has compiled all of the legislation currently in place in the US that impacts personal privacy. This was invaluable for establishing the current state of privacy law in the US.
 
 
- Dennis Campbell and Joy Fisher, _Data Transmission and Privacy_, a compilation
-by the Center for International Legal Studies. Martinus Nijhoff Publishers,
-Boston, London, 1994.
+ Dennis Campbell and Joy Fisher, _Data Transmission and Privacy_, a compilation by the Center for International Legal Studies. Martinus Nijhoff Publishers, Boston, London, 1994.
 
-Just as Smith's compilation was invaluable for determining the state of privacy
-law in the US, this compilation was invaluable for determining the state of
-privacy law abroad. It also included thorough histories of the development of
-privacy policy for most European countries.
+Just as Smith's compilation was invaluable for determining the state of privacy law in the US, this compilation was invaluable for determining the state of privacy law abroad. It also included thorough histories of the development of privacy policy for most European countries.
 
-Michael D. Scott, _United States: Data Protection Regulatory System_. Center for
-International Legal Studies, Graham and James, 1994.
+Michael D. Scott, _United States: Data Protection Regulatory System_. Center for International Legal Studies, Graham and James, 1994.
 
-Another writer from the CILS, Scott offers analysis into the development of US
-legislation with regard to public documents, specifically the Freedom of
-Information Act and the Privacy Act.
+Another writer from the CILS, Scott offers analysis into the development of US legislation with regard to public documents, specifically the Freedom of Information Act and the Privacy Act.
 
 _The Growing Power of the Privacy Movement_, _Privacy Journal_ February 1991, p. 3.
 
-Describes the impact of a few recent laws in the area of privacy, how they
-represent broader movements in the government, and what to expect in the future.
+Describes the impact of a few recent laws in the area of privacy, how they represent broader movements in the government, and what to expect in the future.
 
-Sir Zelman Cowen, _Individual Liberty and the Law._ Tagore Law Lectures,
-University of Calcutta, Eastern Law House. Oceana Publications, New York, 1977.
+Sir Zelman Cowen, _Individual Liberty and the Law._ Tagore Law Lectures, University of Calcutta, Eastern Law House. Oceana Publications, New York, 1977.
 
-Transcript of the 1977 Tagore Law Lectures, a series of annual lectures on
-various legal issues. The focus of Cowen's lectures is civil rights, or
-&quot;individual rights&quot; in his words. He speaks on reputation (and
-slander), privacy, publicity and the right to fair trial, and laws against
-obscenity. A recurring theme is the issues that arise when one person's
-exercising their fundamental rights interferes with another person's fundamental
-rights.
+Transcript of the 1977 Tagore Law Lectures, a series of annual lectures on various legal issues. The focus of Cowen's lectures is civil rights, or
+&quot;individual rights&quot; in his words. He speaks on reputation (and slander), privacy, publicity and the right to fair trial, and laws against obscenity. A recurring theme is the issues that arise when one person's exercising their fundamental rights interferes with another person's fundamental rights.
 
-_Citizen's Guide to the Freedom of Information Act._ Standard Federal Tax
-Reports, no. 43.Committed to the Committee of the House of Representatives on
-July 1, 1987. Commerce Clearing House, Inc. Chicago, 1987.
+_Citizen's Guide to the Freedom of Information Act._ Standard Federal Tax Reports, no. 43.Committed to the Committee of the House of Representatives on July 1, 1987. Commerce Clearing House, Inc. Chicago, 1987.
 
-This was very useful in deciphering the 1966 Freedom of Information Act as well
-as the 1974 Privacy Act. The description of their direct effects on individual
-citizens helped to determine the effects on the country as a whole.
+This was very useful in deciphering the 1966 Freedom of Information Act as well as the 1974 Privacy Act. The description of their direct effects on individual citizens helped to determine the effects on the country as a whole.
 
-Don Phillips, _Big Brother in the Back Seat? The Advent of the 'Intelligent
-Highway' Suprs a Debate over Privacy_. Washington Post, Feb. 23, 1995.
+Don Phillips, _Big Brother in the Back Seat? The Advent of the 'Intelligent Highway' Suprs a Debate over Privacy_. Washington Post, Feb. 23, 1995.
 
-Describes the effects technology and the Internet have had on privacy. Privacy
-has returned to public attention recently because of new technology, and
-Phillips gives an introduction to the changes to the current idea of privacy as
-a result of technology.
+Describes the effects technology and the Internet have had on privacy. Privacy has returned to public attention recently because of new technology, and Phillips gives an introduction to the changes to the current idea of privacy as a result of technology.
 
-Jeffrey Rothfeder, _Psst, Your Personal Details are Getting Lots of Notice_.
-International Herald Tribune, April 14 1993, p. 9 column 7.
+Jeffrey Rothfeder, _Psst, Your Personal Details are Getting Lots of Notice_. International Herald Tribune, April 14 1993, p. 9 column 7.
 
-Rothfeder describes how easy it is to obtain almost any kind of information
-about people, from government records to school records to credit reports. Many
-companies offer these services over the phone or on the web for a nominal
-fee.</p>
+Rothfeder describes how easy it is to obtain almost any kind of information about people, from government records to school records to credit reports. Many companies offer these services over the phone or on the web for a nominal fee.</p>

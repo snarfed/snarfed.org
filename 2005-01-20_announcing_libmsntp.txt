@@ -5,13 +5,7 @@ Announcing libmsntp
  <a href="/libmsntp">
   <img src="/clock.jpg" /></a></p>
 
-I've released [libmsntp](/libmsntp) 1.6a, an
-[SNTP](http://www.faqs.org/rfcs/rfc2030.html) library for \*nix. This is the
-first public release. libmsntp provides both server and client functionality,
-and is intended for any program that needs to synchronize clocks or query
-another computer's clock over the network.
+I've released [libmsntp](/libmsntp) 1.6a, an [SNTP](http://www.faqs.org/rfcs/rfc2030.html) library for \*nix. This is the first public release. libmsntp provides both server and client functionality, and is intended for any program that needs to synchronize clocks or query another computer's clock over the network.
 
-We're planning to use libmsntp in our never-ending quest for [synchronizing mp3
-playback](/synchronizing_mp3_playback). Maybe someday we'll even ship
-something!
+We're planning to use libmsntp in our never-ending quest for [synchronizing mp3 playback](/synchronizing_mp3_playback). Maybe someday we'll even ship something!
 

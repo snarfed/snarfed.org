@@ -1,15 +1,7 @@
 713
 dotfiles
 
-I've posted many of my dotfiles and configurations for programs I use often
-[on Mac OS X](/2013-03-02_mac_os_x) and
-[on Linux](/ubuntu_precise),
-including [Emacs](http://gnu.org/software/emacs/),
-[screen](http://www.gnu.org/software/screen/),
-[tcsh](http://www.tcsh.org/),
-[Slate](https://github.com/jigish/slate),
-[KeyRemap4MacBook](http://pqrs.org/macosx/keyremap4macbook/),
-[Notion](http://notion.sourceforge.net/), and others:
+I've posted many of my dotfiles and configurations for programs I use often [on Mac OS X](/2013-03-02_mac_os_x) and [on Linux](/ubuntu_precise), including [Emacs](http://gnu.org/software/emacs/), [screen](http://www.gnu.org/software/screen/), [tcsh](http://www.tcsh.org/), [Slate](https://github.com/jigish/slate), [KeyRemap4MacBook](http://pqrs.org/macosx/keyremap4macbook/), [Notion](http://notion.sourceforge.net/), and others:
 
   * [.acoc.conf](/dotfiles/.acoc.conf)
   * [.colordiffrc](/dotfiles/.colordiffrc)

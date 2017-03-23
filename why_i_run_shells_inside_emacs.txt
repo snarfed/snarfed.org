@@ -4,87 +4,39 @@ why I run shells inside Emacs
 <p class="right"><a href="http://cheezburger.com/View/1666431232">
   <img class="shadow" src="/cat_bubbles.jpg" /></a></p>
 
-[Mental context switches](http://joelonsoftware.com/articles/fog0000000022.html)
-are evil. Some people handle them better than others, but not me. I handle them
-worse. I feel it, almost physically, when context switches whittle down my
-precious [flow](http://en.wikipedia.org/wiki/Flow_(psychology)) piece by piece.
-It hurts!
+[Mental context switches](http://joelonsoftware.com/articles/fog0000000022.html) are evil. Some people handle them better than others, but not me. I handle them worse. I feel it, almost physically, when context switches whittle down my precious [flow](http://en.wikipedia.org/wiki/Flow_(psychology)) piece by piece. It hurts!
 
-Even something as small as switching between
-[Emacs](http://gnu.org/software/emacs/) and the shell can hurt, especially when
-I do it thousands of times a day. The physical movement isn't so bad; it's that
-they have different key bindings, different clipboards, and myriad deeper
-differences in behavior. What's worse, only *some* parts are different, so my
-muscle memory is constantly seduced into a false sense of familiarity, only to
-have the rug yanked out from under it seconds later.
+Even something as small as switching between [Emacs](http://gnu.org/software/emacs/) and the shell can hurt, especially when I do it thousands of times a day. The physical movement isn't so bad; it's that they have different key bindings, different clipboards, and myriad deeper differences in behavior. What's worse, only *some* parts are different, so my muscle memory is constantly seduced into a false sense of familiarity, only to have the rug yanked out from under it seconds later.
 
-I [put](/emacs_keybindings_in_gnu_screens_copy-scrollback_mode)
-[together](/control_arrow_keys_in_rxvt_tcsh_and_emacs)
-[various](/minimal_emacs_for_fast_startup)
-[hacks](/synchronizing_gnu_screens_paste_buffer_and_the_x_selection) to bring
-Emacs and my shell closer together, with some success, but it always felt like a
-chronic disease. Curing it completely was never on the table; I could only hope
-to manage it.
+I [put](/emacs_keybindings_in_gnu_screens_copy-scrollback_mode) [together](/control_arrow_keys_in_rxvt_tcsh_and_emacs) [various](/minimal_emacs_for_fast_startup) [hacks](/synchronizing_gnu_screens_paste_buffer_and_the_x_selection) to bring Emacs and my shell closer together, with some success, but it always felt like a chronic disease. Curing it completely was never on the table; I could only hope to manage it.
 
 <a href="http://gnu.org/software/emacs/">
   <img class="left" src="/gnu.jpg" /></a>
 
-The holy grail, of course, was running shells *inside* Emacs. I had high hopes
-when I [tried it eight years ago](/why_i_dont_run_shells_inside_emacs), but it
-didn't work out. I tried it again recently though, and it's still early days,
-but we're pretty happy together this time. I think we might go the distance!
+The holy grail, of course, was running shells *inside* Emacs. I had high hopes when I [tried it eight years ago](/why_i_dont_run_shells_inside_emacs), but it didn't work out. I tried it again recently though, and it's still early days, but we're pretty happy together this time. I think we might go the distance!
 
 Here are a few remaining rough edges:
 
-* If I enter multiple commands with newlines between them, the prompt is
-  reprinted as soon as the *first* command finishes. This is misleading, since
-  the rest are still running. (This still happens if I put `;`s or `\` line
-  continuations between them.)
-* If I start my shells in my `.emacs`, they don't parse the
-  `^[[K` ANSI color codes in output like `ls -l`'s. (This is with
-  `ansi-color-for-comint-mode` on). However, if I start them after emacs has
-  booted, they parse fine. Huh?
-* Optimize [TRAMP](http://www.gnu.org/software/tramp/). It's decently fast right
-  now, but I'm sure I could make it even faster!
+* If I enter multiple commands with newlines between them, the prompt is reprinted as soon as the *first* command finishes. This is misleading, since the rest are still running. (This still happens if I put `;`s or `\` line continuations between them.)
+* If I start my shells in my `.emacs`, they don't parse the `^[[K` ANSI color codes in output like `ls -l`'s. (This is with `ansi-color-for-comint-mode` on). However, if I start them after emacs has booted, they parse fine. Huh?
+* Optimize [TRAMP](http://www.gnu.org/software/tramp/). It's decently fast right now, but I'm sure I could make it even faster!
 
 Here are some things I did manage to tweak:
 
-* Make shell buffer contents read only by setting the `read-only`
-  [text property](http://www.gnu.org/software/emacs/manual/html_node/elisp/Special-Properties.html#index-local_002dmap-_0040r_007b_0028text-property_0029_007d-2718).
-* Use `dirtrack-mode`, which keeps track of the current directory and handles
-  completion better than the
-  [default mechanism](http://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Tracking.html).
-* ...but *don't* use it in ssh shells to remote machines, since it doesn't work.
-  It complains e.g. `Warning (emacs): Directory ~/gallery/ does not exist.`
+* Make shell buffer contents read only by setting the `read-only` [text property](http://www.gnu.org/software/emacs/manual/html_node/elisp/Special-Properties.html#index-local_002dmap-_0040r_007b_0028text-property_0029_007d-2718).
+* Use `dirtrack-mode`, which keeps track of the current directory and handles completion better than the [default mechanism](http://www.gnu.org/software/emacs/manual/html_node/emacs/Directory-Tracking.html).
+* ...but *don't* use it in ssh shells to remote machines, since it doesn't work. It complains e.g. `Warning (emacs): Directory ~/gallery/ does not exist.`
 <img class="right" src="/terminal.jpg" /></a>
-* Instead, run long-lived ssh shells via
-  [TRAMP](http://www.gnu.org/software/tramp/), and add the hook described in
-  [this thread](http://comments.gmane.org/gmane.emacs.bugs/39082) to make
-  completion work on remote hosts.
-* Speaking of TRAMP, I use
-  [OpenSSH 4.0's awesome ControlMaster feature](http://www.linux.com/archive/feed/54498)
-  to optimize its ssh connections. Just add `ControlMaster auto` in `~/.ssh/config`
-  and you're good to go!
+* Instead, run long-lived ssh shells via [TRAMP](http://www.gnu.org/software/tramp/), and add the hook described in [this thread](http://comments.gmane.org/gmane.emacs.bugs/39082) to make completion work on remote hosts.
+* Speaking of TRAMP, I use [OpenSSH 4.0's awesome ControlMaster feature](http://www.linux.com/archive/feed/54498) to optimize its ssh connections. Just add `ControlMaster auto` in `~/.ssh/config` and you're good to go!
 * Use `ansi-color-for-comint-mode-on` to render ANSI color codes.
-* When I type or paste a newline at the prompt, it scrolls halfway up the
-  screen. Prevent this by setting `scroll-conservatively` to something like
-  `10`.
-* `emacsclient` inside `shell-mode` works as expected. Woot! Set
-  `display-buffer-reuse-frames` to `t` to make sure Emacs doesn't bury (switch
-  away from) shell buffers when I run it.
-* Extend the SSH shells
-  [so that emacsclient opens remote files in the local Emacs](/emacsclient_in_tramp_remote_shells)
-  via TRAMP.
+* When I type or paste a newline at the prompt, it scrolls halfway up the screen. Prevent this by setting `scroll-conservatively` to something like `10`.
+* `emacsclient` inside `shell-mode` works as expected. Woot! Set `display-buffer-reuse-frames` to `t` to make sure Emacs doesn't bury (switch away from) shell buffers when I run it.
+* Extend the SSH shells [so that emacsclient opens remote files in the local Emacs](/emacsclient_in_tramp_remote_shells) via TRAMP.
 * Use `protect-buffer-from-kill-mode` to prevent accidentally closing shell buffers.
-* [Make the completions buffer automatically close](/automatically_close_completions_in_emacs_shell_comint_mode)
-  when I'm done with it.
-* When I
-  [search over command history](http://www.gnu.org/software/emacs/manual/html_node/emacs/Shell-Ring.html#index-comint_002ddynamic_002dlist_002dinput_002dring-3660)
-  and press the Enter key, run the selected command immediately. Also, suppress
-  the annoying "History item: X" messages.
-* When I press enter in the middle of multi-line input, include *every line* of
-  the input, not just up to the line point is on. (Requires `comint-eol-on-send`
-  to be non-nil.)
+* [Make the completions buffer automatically close](/automatically_close_completions_in_emacs_shell_comint_mode) when I'm done with it.
+* When I [search over command history](http://www.gnu.org/software/emacs/manual/html_node/emacs/Shell-Ring.html#index-comint_002ddynamic_002dlist_002dinput_002dring-3660) and press the Enter key, run the selected command immediately. Also, suppress the annoying "History item: X" messages.
+* When I press enter in the middle of multi-line input, include *every line* of the input, not just up to the line point is on. (Requires `comint-eol-on-send` to be non-nil.)
 
 
 Here's the code in [my .emacs](/dotfiles/.emacs):

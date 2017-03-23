@@ -1,14 +1,9 @@
 14071
 Understanding huffduff-video bandwidth usage
 
-As of 2015-04-29, [huffduff-video](/2015-03-07_huffduff-video) is serving ~257
-GB/mo via S3, which costs ~$24/mo in bandwidth. I'm ok with that, but it could
-probably be lower.
+As of 2015-04-29, [huffduff-video](/2015-03-07_huffduff-video) is serving ~257 GB/mo via S3, which costs ~$24/mo in bandwidth. I'm ok with that, but it could probably be lower.
 
-As always, measure first, then optimize. I turned on
-[S3 access logging](http://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html),
-waited 24h, then ran these commands to collect and aggregate the logs to see
-who's downloading these files:
+As always, measure first, then optimize. I turned on [S3 access logging](http://docs.aws.amazon.com/AmazonS3/latest/dev/ServerLogs.html), waited 24h, then ran these commands to collect and aggregate the logs to see who's downloading these files:
 
 ```
 aws --profile personal s3 sync s3://huffduff-video/logs .

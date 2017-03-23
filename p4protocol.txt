@@ -3,10 +3,7 @@ P4 Protocol Specification v0.2
 
 Version 0.2, April 6 2002. Also see [P4](/p4) and [P4 Proposal](/p4proposal).
 
-[Ken Ashcraft](https://profiles.google.com/kashcraft/),
-[Ryan Barrett](http://snarfed.org/),
-[Maulik Shah](http://maulik.net/),
-[Nathan Stoll](http://nathanstoll.com/)
+[Ken Ashcraft](https://profiles.google.com/kashcraft/), [Ryan Barrett](http://snarfed.org/), [Maulik Shah](http://maulik.net/), [Nathan Stoll](http://nathanstoll.com/)
 
 
 <style type="text/css">
@@ -39,33 +36,19 @@ a.indent { margin-left: 1em; }
 <a name="Introduction"></a>
 ### 1. Introduction
 
-P4 is a distributed, peer-to-peer network platform with an extensible plugin
-architecture. This allow developers to build their own network-aware
-applications without having to recreate middle-level network services. The P4
-platform provides middle-level services including user location and
-authentication, broadcast and direct send/receive, common application
-discovery, and data encryption. (For more information on developing with the P4
-platform, see the P4 API Specification.) Due to its peer-to-peer design, the P4
-protocol is highly fault-tolerant. This is critical, as the network is expected
-to have a high turnover rate in terms of the connected hosts.
+P4 is a distributed, peer-to-peer network platform with an extensible plugin architecture. This allow developers to build their own network-aware applications without having to recreate middle-level network services. The P4 platform provides middle-level services including user location and authentication, broadcast and direct send/receive, common application discovery, and data encryption. (For more information on developing with the P4 platform, see the P4 API Specification.) Due to its peer-to-peer design, the P4 protocol is highly fault-tolerant. This is critical, as the network is expected to have a high turnover rate in terms of the connected hosts.
 
 
 <a name="Protocol_Definition"></a>
 ### 2. Protocol Definition
 
-The P4 protocol defines how P4 clients communicate with each other to provide
-the services described above. It consists of a standard message header, a set of
-message types, a set of data types that are often used in messages, and required
-routing behavior for clients that implement the P4 protocol.
+The P4 protocol defines how P4 clients communicate with each other to provide the services described above. It consists of a standard message header, a set of message types, a set of data types that are often used in messages, and required routing behavior for clients that implement the P4 protocol.
 
 
 <a name="Message_Overview"></a>
 #### 2.1. Message Overview
 
-There are two primary types of messages: system messages, used to manage the P4
-network, and data messages, which contain information to be used by plugins. All
-of the message types except DATA are system message types. Currently, the
-following messages are defined:
+There are two primary types of messages: system messages, used to manage the P4 network, and data messages, which contain information to be used by plugins. All of the message types except DATA are system message types. Currently, the following messages are defined:
 
 
 <table>
@@ -93,37 +76,19 @@ _Figure 2.1.1: The P4 message types._
 <a name="Connecting_and_Disconnecting"></a>
 #### 2.2. Connecting and Disconnecting
 
-A P4 client connects to the P4 network by connecting to another client that is
-already connected to the network. The method of initially finding a connected
-client is not part of the P4 protocol and will not be described here. (Usually,
-this is done out-of-band. Clients are encouraged to write a cache of known
-client addresses to disk, so that they can use this list to automate the
-acquisition of client addresses.)
+A P4 client connects to the P4 network by connecting to another client that is already connected to the network. The method of initially finding a connected client is not part of the P4 protocol and will not be described here. (Usually, this is done out-of-band. Clients are encouraged to write a cache of known client addresses to disk, so that they can use this list to automate the acquisition of client addresses.)
 
-All communication between clients is done over TCP/IP connections. These may be
-long-lived (if initiated with a CONNECT message) or short-lived (if initiated
-with most other messages). To send a P4 message, after establishing a TCP
-connection to the remote client, the following null-terminated, ASCII-encoded
-string should be sent:
+All communication between clients is done over TCP/IP connections. These may be long-lived (if initiated with a CONNECT message) or short-lived (if initiated with most other messages). To send a P4 message, after establishing a TCP connection to the remote client, the following null-terminated, ASCII-encoded string should be sent:
 
 `P4 CONNECT/<protocol version string>`
 
-where `<protocol version string>` is the ASCII string containing the protocol
-version. In this case, it is "0.2" (without quotes). Note that there is no 'v'
-character before the version number.
+where `<protocol version string>` is the ASCII string containing the protocol version. In this case, it is "0.2" (without quotes). Note that there is no 'v' character before the version number.
 
-If the remote client supports the given protocol version, then it *must* respond
-with the null-terminated, ASCII-encoded string:
+If the remote client supports the given protocol version, then it *must* respond with the null-terminated, ASCII-encoded string:
 
 `P4 OK`
 
-If the local client receives this string, then it may then send one of the
-messages in [Figure 2.1](#Message_Overview). If the remote client responds with
-any other string (or doesn't respond), the connection fails and the local client
-should close the TCP/IP connection. Note that the remote client may be a P4
-client that does not implement the specified version of the protocol. If the
-local client supports multiple versions, it may try again with another version
-string.
+If the local client receives this string, then it may then send one of the messages in [Figure 2.1](#Message_Overview). If the remote client responds with any other string (or doesn't respond), the connection fails and the local client should close the TCP/IP connection. Note that the remote client may be a P4 client that does not implement the specified version of the protocol. If the local client supports multiple versions, it may try again with another version string.
 
 To disconnect, either side may simply close the TCP/IP connection.
 
@@ -131,10 +96,7 @@ To disconnect, either side may simply close the TCP/IP connection.
 <a name="Message_Header"></a>
 ### 3. Message Header
 
-All P4 messages have a standard header. This header includes the message type,
-routing and multiplexing information, and the sender's username and signature.
-The header has a total length of 56 bytes, most of which is due to the username
-and signature. The header is as follows:
+All P4 messages have a standard header. This header includes the message type, routing and multiplexing information, and the sender's username and signature. The header has a total length of 56 bytes, most of which is due to the username and signature. The header is as follows:
 
 ```
 0 (bits)        8               16                              32
@@ -639,6 +601,3 @@ site with the official, "sanctioned" list of plugins and IDs. However, clients
 are not required to access this list. Furthermore, we provide the list only as a
 convenience. We believe that the system can be consistent and self-regulating
 without such a list.
-
-
-

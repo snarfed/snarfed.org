@@ -5,26 +5,15 @@ mod_php on pair.com
  <a href="http://pair.com/">
   <img src="/pair.com.jpg" /></a></p>
 
-Got a shared hosting account on [pair.com](http://pair.com/)? Want to run a PHP
-script under Apache's `mod_php` module, instead of as CGI? Here's a tip:
-*don't* put the `.php` file under the `cgi-bin/` directory.
+Got a shared hosting account on [pair.com](http://pair.com/)? Want to run a PHP script under Apache's `mod_php` module, instead of as CGI? Here's a tip: *don't* put the `.php` file under the `cgi-bin/` directory.
 
-This took me literally hours to figure out.
-[Pair's documentation](http://www.pair.com/support/knowledge_base/)
-is generally pretty good, and they have plenty of information about
-[PHP](http://www.pair.com/support/knowledge_base/authoring_development/using_php.html)
-and [CGI](http://www.pair.com/support/knowledge_base/authoring_development/system_cgi_php-cgiwrap.html),
-but not much about `mod_php`. I was able to run a PHP script as CGI, by adding a
-`#!/usr/www/cgi-bin/php5.cgi` shebang on the first line, but I didn't want to do
-that to every PHP file.
+This took me literally hours to figure out. [Pair's documentation](http://www.pair.com/support/knowledge_base/) is generally pretty good, and they have plenty of information about [PHP](http://www.pair.com/support/knowledge_base/authoring_development/using_php.html) and [CGI](http://www.pair.com/support/knowledge_base/authoring_development/system_cgi_php-cgiwrap.html), but not much about `mod_php`. I was able to run a PHP script as CGI, by adding a `#!/usr/www/cgi-bin/php5.cgi` shebang on the first line, but I didn't want to do that to every PHP file.
 
 
 <a href="http://php.net/">
   <img class="left" src="/php.png" /></a>
 
-I tried copying `/usr/www/cgi-bin/php5.cgi` into my local `cgi-bin/` directory,
-as pair suggests when using cgiwrap, but that again just led to CGI instead of
-`mod_php`. I tried lots of variations of this in my `.htaccess`:
+I tried copying `/usr/www/cgi-bin/php5.cgi` into my local `cgi-bin/` directory, as pair suggests when using cgiwrap, but that again just led to CGI instead of `mod_php`. I tried lots of variations of this in my `.htaccess`:
 
 ```
 Action application/php /cgi-sys/php5.cgi

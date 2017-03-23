@@ -1,15 +1,9 @@
 423
 blogway
 
-_update: i've taken the buttons off the main page temporarily. design-wise, they
-were doing more harm than good. anyway, for posterity, they're here:
-[buttons](/buttons)_
+_update: i've taken the buttons off the main page temporarily. design-wise, they were doing more harm than good. anyway, for posterity, they're here: [buttons](/buttons)_
 
-check out the new buttons on the left side panel. the light blue one is just a
-link to [SnipSnap](http://snipsnap.org/), which is the software that
+check out the new buttons on the left side panel. the light blue one is just a link to [SnipSnap](http://snipsnap.org/), which is the software that
 <strike>runs</strike> used to run this site. but the globe one is very very cool
-- it uses [GeoUrl](http://geourl.org/) to show you other web sites that are
-physically near me. so right now, it will show other stanford sites, but when i
-move up to sf, it will show sites near my apartment.
-[try it!](http://geourl.org/near/alt.html?p=&lat=37.42&lon=-122.16&dist=6)
+- it uses [GeoUrl](http://geourl.org/) to show you other web sites that are physically near me. so right now, it will show other stanford sites, but when i move up to sf, it will show sites near my apartment. [try it!](http://geourl.org/near/alt.html?p=&lat=37.42&lon=-122.16&dist=6)
 

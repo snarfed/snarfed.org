@@ -5,16 +5,9 @@ extract compacted PyBlosxom comments
  <a href="http://pyblosxom.bluesock.org/">
   <img src="/pyblosxom.jpg" /></a></p>
 
-If you use [PyBlosxom](http://pyblosxom.bluesock.org/),
-and you use
-[compact_comments.sh](http://gitorious.org/pyblosxom/pyblosxom-contrib/blobs/master/plugins/comments/plugins/compact_comments.sh)
-to compact your comment files, and you ever need to reverse the process to
-get back to one file per comment - for example, if you're
-[importing them into WordPress](/pyblosxom2wxr) - here's how.
+If you use [PyBlosxom](http://pyblosxom.bluesock.org/), and you use [compact_comments.sh](http://gitorious.org/pyblosxom/pyblosxom-contrib/blobs/master/plugins/comments/plugins/compact_comments.sh) to compact your comment files, and you ever need to reverse the process to get back to one file per comment - for example, if you're [importing them into WordPress](/pyblosxom2wxr) - here's how.
 
-Following these instructions, all comments in `*-all.cmt` files will be
-extracted to `*-[TIMESTAMP].cmt` files, where `[TIMESTAMP]` is the comment's
-UNIX timestamp in seconds since the epoch.
+Following these instructions, all comments in `*-all.cmt` files will be extracted to `*-[TIMESTAMP].cmt` files, where `[TIMESTAMP]` is the comment's UNIX timestamp in seconds since the epoch.
 
 First, run these commands:
 

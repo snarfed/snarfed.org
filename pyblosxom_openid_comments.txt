@@ -8,34 +8,17 @@ pyblosxom OpenID comments
 For the impatient:  
 &nbsp; Download [comments_openid.py 0.4](/comments_openid.py)  
 &nbsp; Download [Python OpenID libraries](http://www.openidenabled.com/python-openid/)  
-&nbsp; Download
-  [comments.py](http://pyblosxom.bluesock.org/blog/registry/input/comments/comments)
-  and [session.py](http://pyblosxom.bluesock.org/blog/registry/general/session)  
+&nbsp; Download [comments.py](http://pyblosxom.bluesock.org/blog/registry/input/comments/comments) and [session.py](http://pyblosxom.bluesock.org/blog/registry/general/session)  
 &nbsp; [OpenID home page](http://openid.net/)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.bluesock.org/)  
 
 *Updated 2007-09-24.*
 
-[comments_openid.py](/comments_openid.py) is a
-[PyBlosxom](http://pyblosxom.bluesock.org/) plugin that allows
-[OpenID](http://openid.net/)-authenticated comments. When used in conjunction
-with the
-[comments plugin](http://pyblosxom.bluesock.org/blog/registry/input/comments/comments),
-it allows people to comment on your PyBlosxom-based site
-using their OpenID provider. In addition, if their provider supports the
-[Simple Registration Extension](http://www.openidenabled.com/openid/simple-registration-extension),
-it displays their nickname instead of their OpenID URL under the comment.
+[comments_openid.py](/comments_openid.py) is a [PyBlosxom](http://pyblosxom.bluesock.org/) plugin that allows [OpenID](http://openid.net/)-authenticated comments. When used in conjunction with the [comments plugin](http://pyblosxom.bluesock.org/blog/registry/input/comments/comments), it allows people to comment on your PyBlosxom-based site using their OpenID provider. In addition, if their provider supports the [Simple Registration Extension](http://www.openidenabled.com/openid/simple-registration-extension), it displays their nickname instead of their OpenID URL under the comment.
 
-To use it, first download and install the
-[Python OpenID libraries](http://www.openidenabled.com/python-openid/). Then, download
-[comments.py](http://pyblosxom.bluesock.org/blog/registry/input/comments/comments)
-and [session.py](http://pyblosxom.bluesock.org/blog/registry/general/session)
-plugins and
-[enable comments](http://pyblosxom.bluesock.org/1.3.1/manual/c888.html) on
-your blog.
+To use it, first download and install the [Python OpenID libraries](http://www.openidenabled.com/python-openid/). Then, download [comments.py](http://pyblosxom.bluesock.org/blog/registry/input/comments/comments) and [session.py](http://pyblosxom.bluesock.org/blog/registry/general/session) plugins and [enable comments](http://pyblosxom.bluesock.org/1.3.1/manual/c888.html) on your blog.
 
-When you're ready, add a note in your `comments-form` template that the URL
-input field now supports OpenId:
+When you're ready, add a note in your `comments-form` template that the URL input field now supports OpenId:
 
 ```
 <input name="url" id="comment-url" type="text" value="$cmt_link" />

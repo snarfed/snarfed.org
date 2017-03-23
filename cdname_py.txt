@@ -7,16 +7,7 @@ For the impatient:
 [Download cdname.py 0.3](/cdname.py)
 
 
-[cdname.py](/cdname.py) is a Python program that names MP3 files and generates
-M3U playlists by parsing a
-[CDDB](http://www.gracenote.com/gn_products/cddb.html) or
-[freedb](http://freedb.org/) .inf file, usually retrieved with
-[cdda2wav](http://www.escape.de/users/colossus/cdda2wav.html) -L. The name can
-include any or all of: artist name, track title, album name, track number, etc.
-Many aspects are configurable via command line options. cdname.py is a great
-addition to any CD ripping/encoding pipeline.
+[cdname.py](/cdname.py) is a Python program that names MP3 files and generates M3U playlists by parsing a [CDDB](http://www.gracenote.com/gn_products/cddb.html) or [freedb](http://freedb.org/) .inf file, usually retrieved with [cdda2wav](http://www.escape.de/users/colossus/cdda2wav.html) -L. The name can include any or all of: artist name, track title, album name, track number, etc. Many aspects are configurable via command line options. cdname.py is a great addition to any CD ripping/encoding pipeline.
 
-cdname.py requires [Python](http://python.org/) 2, is copyright 2003-2004
-[Ryan Barrett](/), and is distributed under the
-[GPL](http://www.gnu.org/licenses/gpl.html) license.
+cdname.py requires [Python](http://python.org/) 2, is copyright 2003-2004 [Ryan Barrett](/), and is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html) license.
 

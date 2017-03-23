@@ -3,33 +3,12 @@ Bar Camp Stanford
 
 <a href="http://barcamp.org/BarCampStanford"><img src="/barcamp_stanford.gif"></a>
 
-I'm late in posting it, but I spent most of last weekend geeking out with a
-lot of great people at [Bar Camp Stanford](http://barcamp.org/BarCampStanford).
+I'm late in posting it, but I spent most of last weekend geeking out with a lot of great people at [Bar Camp Stanford](http://barcamp.org/BarCampStanford).
 
-[Bar Camp](http://barcamp.org/) was founded by
-[Chris Messina](http://factoryjoe.com/blog/) as a response to
-[O'Reilly](http://oreillynet.com/)'s
-[Foo Camp](http://wiki.oreillynet.com/foocamp05/index.cgi).
-Wikipedia has a
-[good description of Bar Camp](http://en.wikipedia.org/wiki/Bar_camp);
-basically, lots of geeks get together to kibitz, present, organize, and hack.
-It's very similar to [SuperHappyDevHouse](http://superhappydevhouse.org/).
+[Bar Camp](http://barcamp.org/) was founded by [Chris Messina](http://factoryjoe.com/blog/) as a response to [O'Reilly](http://oreillynet.com/)'s [Foo Camp](http://wiki.oreillynet.com/foocamp05/index.cgi). Wikipedia has a [good description of Bar Camp](http://en.wikipedia.org/wiki/Bar_camp); basically, lots of geeks get together to kibitz, present, organize, and hack. It's very similar to [SuperHappyDevHouse](http://superhappydevhouse.org/).
 
-It was a blast. Granted, it was crazy disorganized, but that's kind of the
-point. Among other people, I got to hang out with
-[Dan Meredith](http://kodiak.brainymonkey.com/),
-[Todd Davies](http://www.stanford.edu/~davies/),
-[Pete Kazanjy](http://www.friendster.com/1518179),
-[Jonathan Dugan](http://biocontact.org/),
-[Adam Tolnay](http://rdvp.org/fellows/2006-2007/adam-tolnay/),
-[James Littlejohn](http://www.aboynejames.co.uk/), and
-[Tantek Çelik](http://tantek.com/), most of whom I met for the first time.
+It was a blast. Granted, it was crazy disorganized, but that's kind of the point. Among other people, I got to hang out with [Dan Meredith](http://kodiak.brainymonkey.com/), [Todd Davies](http://www.stanford.edu/~davies/), [Pete Kazanjy](http://www.friendster.com/1518179), [Jonathan Dugan](http://biocontact.org/), [Adam Tolnay](http://rdvp.org/fellows/2006-2007/adam-tolnay/), [James Littlejohn](http://www.aboynejames.co.uk/), and [Tantek Çelik](http://tantek.com/), most of whom I met for the first time.
 
-I also gave a short talk,
-[Scaling Data on the Cheap](/scaling_data_on_the_cheap.html).
-It was a crash course on _sharding_, or using multiple database masters with
-mirrored schemas, usually onMySQL or PostgreSQL, as a technique for handling
-data volume and growth. The crowd grokked it, and had lots of good questions.
+I also gave a short talk, [Scaling Data on the Cheap](/scaling_data_on_the_cheap.html). It was a crash course on _sharding_, or using multiple database masters with mirrored schemas, usually onMySQL or PostgreSQL, as a technique for handling data volume and growth. The crowd grokked it, and had lots of good questions.
 
-Plus, we got to ride the [Busycle](http://www.busycle.com/)! Can't beat that
-with a bat.
+Plus, we got to ride the [Busycle](http://www.busycle.com/)! Can't beat that with a bat.

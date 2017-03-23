@@ -5,18 +5,9 @@ Bridgy up and running
  <a href="http://brid.gy/">
   <img src="/bridgy_logo_old.jpg"/></a></p>
 
-I've just released [Bridgy](http://brid.gy/), a little side project I've been
-working on. Got a blog? Share your blog posts on social networks? Wish comments
-on those shared posts also showed up on your blog? Bridgy copies them back for
-you.
+I've just released [Bridgy](http://brid.gy/), a little side project I've been working on. Got a blog? Share your blog posts on social networks? Wish comments on those shared posts also showed up on your blog? Bridgy copies them back for you.
 
 <!-- more -->
 <p/>
 
-Bridgy is a throwaway prototype on the road toward a larger project:
-[OStatus for Facebook, Google+, and Twitter](/2011-07-27_facebook_app_for_ostatus).
-I don't plan to update it much, provide end user support, or properly integrate
-it with [WebFinger](http://code.google.com/p/webfinger/) or
-[Salmon](http://salmon-protocol.org/) or the other
-[OStatus](http://ostatus.org/about) component protocols. Still, it was a useful
-way to explore the APIs, and it does actually work. Feel free to try it!
+Bridgy is a throwaway prototype on the road toward a larger project: [OStatus for Facebook, Google+, and Twitter](/2011-07-27_facebook_app_for_ostatus). I don't plan to update it much, provide end user support, or properly integrate it with [WebFinger](http://code.google.com/p/webfinger/) or [Salmon](http://salmon-protocol.org/) or the other [OStatus](http://ostatus.org/about) component protocols. Still, it was a useful way to explore the APIs, and it does actually work. Feel free to try it!

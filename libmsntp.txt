@@ -3,24 +3,12 @@ libmsntp
 
 <p class="right"><a href="/libmsntp"><img class="" src="/clock.jpg" /></a></p>
 
-[libmsntp](https://github.com/snarfed/libmsntp) is a full-featured, compact,
-portable SNTP library. You can
-[get it on github](https://github.com/snarfed/libmsntp).
+[libmsntp](https://github.com/snarfed/libmsntp) is a full-featured, compact, portable SNTP library. You can [get it on github](https://github.com/snarfed/libmsntp).
 
-[SNTP](http://www.faqs.org/rfcs/rfc2030.html) is a simplified version of
-[NTP](http://www.faqs.org/rfcs/rfc1305.html), which allows precise
-synchronization of system clocks over a best-effort network. libmsntp provides
-SNTP client and server functionality in a shared library with a simple API.
+[SNTP](http://www.faqs.org/rfcs/rfc2030.html) is a simplified version of [NTP](http://www.faqs.org/rfcs/rfc1305.html), which allows precise synchronization of system clocks over a best-effort network. libmsntp provides SNTP client and server functionality in a shared library with a simple API.
 
-libmsntp is implemented as a thin layer on top of
-[msntp](http://packages.debian.org/sid/msntp), N.M. Maclaren's command-line SNTP
-utility. msntp is compact, straightforward, and elegant, and I'm indebted to
-Nick and Cambridge's High Performance Computing Facility for providing the msntp
-source to the public.
+libmsntp is implemented as a thin layer on top of [msntp](http://packages.debian.org/sid/msntp), N.M. Maclaren's command-line SNTP utility. msntp is compact, straightforward, and elegant, and I'm indebted to Nick and Cambridge's High Performance Computing Facility for providing the msntp source to the public.
 
-libmsntp is supported on most flavors of \*nix. See the Makefile and
-README.msntp in the tarball for more information.
+libmsntp is supported on most flavors of \*nix. See the Makefile and README.msntp in the tarball for more information.
 
-libmsntp is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html),
-and has been included in a number of Linux distributions. Copyright 2005
-[Ryan Barrett](/), 1996-2000 N.M. Maclaren.
+libmsntp is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html), and has been included in a number of Linux distributions. Copyright 2005 [Ryan Barrett](/), 1996-2000 N.M. Maclaren.

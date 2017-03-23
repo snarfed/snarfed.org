@@ -8,23 +8,12 @@ For the impatient:
 &nbsp; [PyBlosxom home page](http://pyblosxom.bluesock.org/)  
 &nbsp; [PyBlosxom plugin registry](http://pyblosxom.bluesock.org/blog/registry?sortby=path)
 
-[photogallery](/photogallery.py) is a
-[PyBlosxom](http://pyblosxom.bluesock.org/) plugin that displays a photo gallery,
-with thumbnails.
+[photogallery](/photogallery.py) is a [PyBlosxom](http://pyblosxom.bluesock.org/) plugin that displays a photo gallery, with thumbnails.
 
-It's fairly basic. It just generates a single page with the thumbnails, linked
-to their full-size pictures. There are config options for captions, number of
-columns, and the URL trigger. You can also optionally provide header and footer
-text for each gallery.
+It's fairly basic. It just generates a single page with the thumbnails, linked to their full-size pictures. There are config options for captions, number of columns, and the URL trigger. You can also optionally provide header and footer text for each gallery.
 
-However, it doesn't generate pages for each picture, it doesn't provide
-navigation, and it doesn't generate the thumbnails automatically.
+However, it doesn't generate pages for each picture, it doesn't provide navigation, and it doesn't generate the thumbnails automatically.
 
-photogallery was
-[originally written](http://www.nordlander.tk/pyblosxom/)
-by [Magnus Nordlander](http://magnus.nordlander.tk/). I've taken over
-maintennance, with his permission.
+photogallery was [originally written](http://www.nordlander.tk/pyblosxom/) by [Magnus Nordlander](http://magnus.nordlander.tk/). I've taken over maintennance, with his permission.
 
-photogallery is Copyright 2004 [Magnus Nordlander](http://magnus.nordlander.tk/),
-2006 [Ryan Barrett](/about), and is distributed
-under the [GPL](http://www.gnu.org/licenses/gpl.html).
+photogallery is Copyright 2004 [Magnus Nordlander](http://magnus.nordlander.tk/), 2006 [Ryan Barrett](/about), and is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html).

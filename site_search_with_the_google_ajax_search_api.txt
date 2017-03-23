@@ -7,25 +7,14 @@ site search with the Google AJAX Search API
 Google has
 <a href="http://googlecode.blogspot.com/2010/11/introducing-google-apis-console-and-our.html">replaced the AJAX Search API</a>
 with
-<a href="http://www.google.com/cse/">Custom Search</a>, so this no longer works. It's
-kept here for posterity only.
+<a href="http://www.google.com/cse/">Custom Search</a>, so this no longer works. It's kept here for posterity only.
 </i></div style="color: red">
 
-[ajax_search.js](/w/wp-content/themes/snarfed/ajax_search.js) uses the
-[Google AJAX Search API](http://code.google.com/apis/ajaxsearch/signup.html)
-to do site search. It's similar to Google's
-[existing site search](http://services.google.com/searchcode2.html?accept=on#both),
-except that it shows the results within _your_ site, not Google's. It also
-degrades gracefully, by falling back to standard Google site search over HTTP
-for users who don't have JavaScript.
+[ajax_search.js](/w/wp-content/themes/snarfed/ajax_search.js) uses the [Google AJAX Search API](http://code.google.com/apis/ajaxsearch/signup.html) to do site search. It's similar to Google's [existing site search](http://services.google.com/searchcode2.html?accept=on#both), except that it shows the results within _your_ site, not Google's. It also degrades gracefully, by falling back to standard Google site search over HTTP for users who don't have JavaScript.
 
-You can [check out the JavaScript](/w/wp-content/themes/snarfed/ajax_search.js),
-or [try it out](/?s=ajax) right now!
+You can [check out the JavaScript](/w/wp-content/themes/snarfed/ajax_search.js), or [try it out](/?s=ajax) right now!
 
-To use this on your site, first
-[apply for an AJAX Search API key](http://code.google.com/apis/ajaxsearch/signup.html).
-Then, place [ajax_search.js](/w/wp-content/themes/snarfed/ajax_search.js) on
-your server and the following HTML on your page:
+To use this on your site, first [apply for an AJAX Search API key](http://code.google.com/apis/ajaxsearch/signup.html). Then, place [ajax_search.js](/w/wp-content/themes/snarfed/ajax_search.js) on your server and the following HTML on your page:
 
 ```
 <form class="form" method="get" action="http://www.google.com/search"

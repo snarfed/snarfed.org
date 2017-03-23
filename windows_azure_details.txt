@@ -3,16 +3,9 @@ Windows Azure details
 
 <img src="/azure_logo_small.jpg">
 
-I [recently attended PDC 2008](/2008-10-27_in_la_for_pdc), where
-Microsoft announced [Windows Azure](http://azure.com/). I spent the week
-absorbing Microsoft's messaging, diving deep into the technical details, and
-thinking about the broader implications for cloud computing as a whole.
-Here are some of the technical details.
+I [recently attended PDC 2008](/2008-10-27_in_la_for_pdc), where Microsoft announced [Windows Azure](http://azure.com/). I spent the week absorbing Microsoft's messaging, diving deep into the technical details, and thinking about the broader implications for cloud computing as a whole. Here are some of the technical details.
 
-Also see my [overall impressions](/windows_azure_impressions) and
-[presentation slides](/azure_talk.html). (Full disclosure: I
-[work](/2008-04-07_google_app_engine_launched) on
-[Google App Engine](http://appengine.google.com/).)
+Also see my [overall impressions](/windows_azure_impressions) and [presentation slides](/azure_talk.html). (Full disclosure: I [work](/2008-04-07_google_app_engine_launched) on [Google App Engine](http://appengine.google.com/).)
 
 
 **Contents:**
@@ -52,85 +45,43 @@ Also see my [overall impressions](/windows_azure_impressions) and
 <a name="Fabric"></a>
 ## Fabric [![permalink](/Icon-Permalink.png)](#Fabric)
 
-The Azure fabric is an umbrella term for the logical cluster of machines that
-Azure services run on, along with the processes that manage the cluster, provision
-and deploy services, monitor system status, and recover from failures.
+The Azure fabric is an umbrella term for the logical cluster of machines that Azure services run on, along with the processes that manage the cluster, provision and deploy services, monitor system status, and recover from failures.
 
-The fabric consists of nodes, which may be physical machines, VMs, or
-(eventually) partial VMs.
+The fabric consists of nodes, which may be physical machines, VMs, or (eventually) partial VMs.
 
 
 <a name="Services"></a>
 ### Services [![permalink](/Icon-Permalink.png)](#Services)
 
-An Azure service is defined by a service definition, aka a model, similar to a
-[RightScale deployment](http://wiki.rightscale.com/1._Tutorials/2._Deployment_Setup).
-It's an XML definition of the different components of the app, the resources
-they need, and how they interact with each other and the outside world.
+An Azure service is defined by a service definition, aka a model, similar to a [RightScale deployment](http://wiki.rightscale.com/1._Tutorials/2._Deployment_Setup). It's an XML definition of the different components of the app, the resources they need, and how they interact with each other and the outside world.
 
-In the CTP, only a few canned service definition templates may be used. In the
-commercial release, the full XML definition language will be available and
-arbitrary service definitions will be supported.
+In the CTP, only a few canned service definition templates may be used. In the commercial release, the full XML definition language will be available and arbitrary service definitions will be supported.
 
 
 <a name="Components"></a>
 #### Components [![permalink](/Icon-Permalink.png)](#Components)
 
-A role is an individual runnable component of an app. A role typically
-specifies a binary or piece of code to run as an OS process. A role may be
-instantiated many times. Example roles include web frontent, backend, garbage
-collector, daemon, transaction processor, and worker.
+A role is an individual runnable component of an app. A role typically specifies a binary or piece of code to run as an OS process. A role may be instantiated many times. Example roles include web frontent, backend, garbage collector, daemon, transaction processor, and worker.
 
-Roles run on fabric nodes. In the CTP, each role runs in its own Hyper-V-based
-VM, and may only run managed code. In the commercial release, roles may
-include native code and even run on bare hardware. In the other direction,
-they may also run in a VM shared between many roles or may run
+Roles run on fabric nodes. In the CTP, each role runs in its own Hyper-V-based VM, and may only run managed code. In the commercial release, roles may include native code and even run on bare hardware. In the other direction, they may also run in a VM shared between many roles or may run
 
-Load balancers may be included in service definitions. They're connected to
-roles or other load balancers via channels. Based on a conversation in person,
-their policies will be fairly flexible, so you can use them to do experiments
-on live traffic.
+Load balancers may be included in service definitions. They're connected to roles or other load balancers via channels. Based on a conversation in person, their policies will be fairly flexible, so you can use them to do experiments on live traffic.
 
-A few kinds of networking components are available to service definitions. A
-channel is a connection between two roles. An endpoint is a generic network
-endpoint, either internal or external, for serving requests. An interface is
-an externally accessible endpoint. Supported protocols include HTTP(S), SMTP,
-ATOM, and SOAP. Notably, while HTTPS is supported, you can't automatically
-require it, ie there's no equivalent of App Engine's
-[`secure: always`](http://code.google.com/appengine/docs/configuringanapp.html#Secure_URLs) in
-[`app.yaml`](http://code.google.com/appengine/docs/configuringanapp.html).
+A few kinds of networking components are available to service definitions. A channel is a connection between two roles. An endpoint is a generic network endpoint, either internal or external, for serving requests. An interface is an externally accessible endpoint. Supported protocols include HTTP(S), SMTP, ATOM, and SOAP. Notably, while HTTPS is supported, you can't automatically require it, ie there's no equivalent of App Engine's [`secure: always`](http://code.google.com/appengine/docs/configuringanapp.html#Secure_URLs) in [`app.yaml`](http://code.google.com/appengine/docs/configuringanapp.html).
 
 
 <a name="Provisioning"></a>
 #### Provisioning [![permalink](/Icon-Permalink.png)](#Provisioning)
 
-A role's (or other component's) definition include the resources it needs,
-including CPU, memory, disk, and network bandwith (I think). Notably, when the
-role is deployed, it's limited to these resources. The role definition may
-also include specific OS features that it needs.
+A role's (or other component's) definition include the resources it needs, including CPU, memory, disk, and network bandwith (I think). Notably, when the role is deployed, it's limited to these resources. The role definition may also include specific OS features that it needs.
 
-The role definition also includes the number of instances that the fabric
-should deploy, either a specific number or a lower and upper bound. Finally,
-constraints may be specified, including how many role instances may run in the
-same node, whether instances of different roles should be co-located, and how
-to allocate instances across update domains and fault domains.
+The role definition also includes the number of instances that the fabric should deploy, either a specific number or a lower and upper bound. Finally, constraints may be specified, including how many role instances may run in the same node, whether instances of different roles should be co-located, and how to allocate instances across update domains and fault domains.
 
-Update domains and fault domains are optional but useful features. Update
-domains are used to partition the service during upgrades. A role may specify
-the number of update domains its instances should be deployed in.
+Update domains and fault domains are optional but useful features. Update domains are used to partition the service during upgrades. A role may specify the number of update domains its instances should be deployed in.
 
-During rolling OS upgrades and service updates, only one update domain will be
-upgraded at a time. While an update domain is being upgraded, the fabric won't
-route live traffic to any roles or load balancers inside it. After an update
-domain has been fully upgraded and all services in it report that they're
-health, the fabric returns them to service and starts on the next update domain.
+During rolling OS upgrades and service updates, only one update domain will be upgraded at a time. While an update domain is being upgraded, the fabric won't route live traffic to any roles or load balancers inside it. After an update domain has been fully upgraded and all services in it report that they're health, the fabric returns them to service and starts on the next update domain.
 
-Fault domains are similar to update domains. They're basically disjoint
-failure zones within a single datacenter. They're determined according to the
-datacenter topology, based on things like rack and switch configurations,
-which make certain classes of failures likely to affect well-defined groups of
-nodes. As with update domains, a role may specify the number of fault
-domains its instances should be deployed in.
+Fault domains are similar to update domains. They're basically disjoint failure zones within a single datacenter. They're determined according to the datacenter topology, based on things like rack and switch configurations, which make certain classes of failures likely to affect well-defined groups of nodes. As with update domains, a role may specify the number of fault domains its instances should be deployed in.
 
 
 <a name="Example_definition"></a>

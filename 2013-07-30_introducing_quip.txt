@@ -4,46 +4,18 @@ Introducing Quip
 <p class="right half">
  <a href="https://quip.com/"><img class="shadow" src="/quip_wordmark.jpg" /></a></p>
 
-When I [left Google](/2013-02-27_leaving_google) half a year ago for a startup,
-I couldn't tell you what we were doing...but now I can! We're excited to
-announce our new product, [Quip](https://quip.com/). It's a modern word
-processor that lets you create beautiful documents on all of your devices -
-phone, tablet, and desktop - by focusing on collaboration, mobility,
-interactivity, and simplicity.
+When I [left Google](/2013-02-27_leaving_google) half a year ago for a startup, I couldn't tell you what we were doing...but now I can! We're excited to announce our new product, [Quip](https://quip.com/). It's a modern word processor that lets you create beautiful documents on all of your devices - phone, tablet, and desktop - by focusing on collaboration, mobility, interactivity, and simplicity.
 
-Check out [our blog post](https://quip.com/blog/introducing-quip) and the
-[New York Times article](http://www.nytimes.com/2013/08/01/technology/as-work-habits-change-software-makers-rush-to-innovate.html).
-More importantly, please give it a try! It's free for personal use; just
-[install the iOS app](https://itunes.apple.com/us/app/quip/id647922896) or
-[sign up on the web](https://quip.com/). We also have a
-[preview Android app](https://play.google.com/store/apps/details?id=com.quip.quip),
-if you already have an account and you're willing to tolerate some quirks.
+Check out [our blog post](https://quip.com/blog/introducing-quip) and the [New York Times article](http://www.nytimes.com/2013/08/01/technology/as-work-habits-change-software-makers-rush-to-innovate.html). More importantly, please give it a try! It's free for personal use; just [install the iOS app](https://itunes.apple.com/us/app/quip/id647922896) or [sign up on the web](https://quip.com/). We also have a [preview Android app](https://play.google.com/store/apps/details?id=com.quip.quip), if you already have an account and you're willing to tolerate some quirks.
 
 <!-- more -->
 <span />
 
-Going to a small startup was a change after so long at Google, but it's been
-great so far. Most of us had
-[worked together before](/2008-04-07_google_app_engine_launched), so we shared a
-common culture, not to mention valuable experience from
-[past startups](http://friendfeed.com/). Oh, and
-[our office is awesome](/2013-06-04_new-office-decor).
+Going to a small startup was a change after so long at Google, but it's been great so far. Most of us had [worked together before](/2008-04-07_google_app_engine_launched), so we shared a common culture, not to mention valuable experience from [past startups](http://friendfeed.com/). Oh, and [our office is awesome](/2013-06-04_new-office-decor).
 
-On the technical side, I've been a bit of a mercenary. I've worked on every part
-of the codebase: the server and storage system, data model, synchronization
-protocol, [web frontend](https://quip.com/),
-[iOS app](https://itunes.apple.com/us/app/quip/id647922896), and
-[Android app](https://play.google.com/store/apps/details?id=com.quip.quip). I
-had to learn lots of new things in short order, often overnight, which was
-challenging at times but always worthwhile.
+On the technical side, I've been a bit of a mercenary. I've worked on every part of the codebase: the server and storage system, data model, synchronization protocol, [web frontend](https://quip.com/), [iOS app](https://itunes.apple.com/us/app/quip/id647922896), and [Android app](https://play.google.com/store/apps/details?id=com.quip.quip). I had to learn lots of new things in short order, often overnight, which was challenging at times but always worthwhile.
 
-On a related note, Google's CEOs may have scored points with the code
-[they used](http://en.wikipedia.org/wiki/Eric_Schmidt#Biography)
-[to write](http://en.wikipedia.org/wiki/Larry_Page#Early_life_and_education),
-but I love that Quip is small enough that [Bret](http://backchannel.org/about)
-and [Kevin](http://www.kevgibbs.com/about) _still_ spend most of their time
-writing code. Not a bad sign.
+On a related note, Google's CEOs may have scored points with the code [they used](http://en.wikipedia.org/wiki/Eric_Schmidt#Biography) [to write](http://en.wikipedia.org/wiki/Larry_Page#Early_life_and_education), but I love that Quip is small enough that [Bret](http://backchannel.org/about) and [Kevin](http://www.kevgibbs.com/about) _still_ spend most of their time writing code. Not a bad sign.
 
-In any case, I'm excited for you all to [try it out](https://quip.com/). Enjoy,
-and let us know what you think!
+In any case, I'm excited for you all to [try it out](https://quip.com/). Enjoy, and let us know what you think!
 

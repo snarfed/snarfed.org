@@ -5,20 +5,10 @@ Open Link in App
  <a href="https://play.google.com/store/apps/details?id=org.snarfed.android.openinapp">
   <img src="/u_turn_original.gif" /></a></p>
 
-I've just published a new Android app,
-[Open Link in App](https://play.google.com/store/apps/details?id=org.snarfed.android.openinapp).
-Ever tap on a link on your phone and it opens in the browser instead of the
-native app? Me too. This fixes that. It currently supports Facebook, Twitter,
-Instagram, GitHub, and Goodreads.
+I've just published a new Android app, [Open Link in App](https://play.google.com/store/apps/details?id=org.snarfed.android.openinapp). Ever tap on a link on your phone and it opens in the browser instead of the native app? Me too. This fixes that. It currently supports Facebook, Twitter, Instagram, GitHub, and Goodreads.
 
-To use it, after you tap on a link, select _Open Link in App_ from the chooser
-dialog box. If you don't see the dialog box, but you think you should, go to
-_Settings => Apps => Browser_ or _Chrome_, or whichever app is currently
-handling the link, and click _Clear defaults_.
+To use it, after you tap on a link, select _Open Link in App_ from the chooser dialog box. If you don't see the dialog box, but you think you should, go to _Settings => Apps => Browser_ or _Chrome_, or whichever app is currently handling the link, and click _Clear defaults_.
 
-I'll add more apps and link types as I come across them. Feel free to
-[ask for](/about) any specific ones you want. Even better, the
-[source is on GitHub](https://github.com/snarfed/open-in-app), and I happily
-accept pull requests.
+I'll add more apps and link types as I come across them. Feel free to [ask for](/about) any specific ones you want. Even better, the [source is on GitHub](https://github.com/snarfed/open-in-app), and I happily accept pull requests.
 
 Enjoy!

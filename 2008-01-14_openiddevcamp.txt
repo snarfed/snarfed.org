@@ -3,31 +3,10 @@ OpenIDDevCamp
 
 <a href="http://barcamp.org/OpenIDDevCamp"><img src="/openiddevcamp.jpg"></a>
 
-I spent most of my weekend at [OpenIDDevCamp](http://barcamp.org/OpenIDDevCamp),
-a get-together for [OpenID](http://openid.net/) people in the San Francisco
-area. I've worked on a few OpenID projects, both
-[inside work](/2007-12-02_openid_comments_in_blogger)
-[and](/pyblosxom_openid_server)
-[outside](/pyblosxom_openid_comments), so I dropped
-by. I didn't have an agenda, but I figured I'd pitch in wherever there was
-coding to be done.
+I spent most of my weekend at [OpenIDDevCamp](http://barcamp.org/OpenIDDevCamp), a get-together for [OpenID](http://openid.net/) people in the San Francisco area. I've worked on a few OpenID projects, both [inside work](/2007-12-02_openid_comments_in_blogger) [and](/pyblosxom_openid_server) [outside](/pyblosxom_openid_comments), so I dropped by. I didn't have an agenda, but I figured I'd pitch in wherever there was coding to be done.
 
-It turned out to be a fun gathering. The attendees ranged from core
-community members to newbies, and the activities ranged from usability design
-to spec writing to general troubleshooting. I ended up working with
-[Brad](http://bradfitz.com/), [David](http://davidrecordon.com/), and others
-on an [interoperability test suite](http://code.google.com/p/openid-test/),
-which we'll hopefully have up and running soon.
+It turned out to be a fun gathering. The attendees ranged from core community members to newbies, and the activities ranged from usability design to spec writing to general troubleshooting. I ended up working with [Brad](http://bradfitz.com/), [David](http://davidrecordon.com/), and others on an [interoperability test suite](http://code.google.com/p/openid-test/), which we'll hopefully have up and running soon.
 
-There are
-[plenty](http://kveton.com/blog/2008/01/13/what-canshould-you-do-with-an-openid-end-point/)
-[of](http://openid.net/2008/01/09/openiddevcamp-this-weekend-in-san-francisco/)
-[other](http://www.backdrifter.com/2008/01/12/openiddevcamp-sessions/)
-[posts](http://thread-safe.livejournal.com/8715.html)
-that go into more detail, so  I'll just say that despite my hands yelling at me for
-typing on a laptop for a weekend instead of my
-[Goldtouch](http://goldtouch.com/), it was worth it. I had a great time.
+There are [plenty](http://kveton.com/blog/2008/01/13/what-canshould-you-do-with-an-openid-end-point/) [of](http://openid.net/2008/01/09/openiddevcamp-this-weekend-in-san-francisco/) [other](http://www.backdrifter.com/2008/01/12/openiddevcamp-sessions/) [posts](http://thread-safe.livejournal.com/8715.html) that go into more detail, so  I'll just say that despite my hands yelling at me for typing on a laptop for a weekend instead of my [Goldtouch](http://goldtouch.com/), it was worth it. I had a great time.
 
-Thanks to [Scott](http://kveton.com/),
-[David](http://davidrecordon.com/), and
-[Chris](http://factoryjoe.com/) for organizing!
+Thanks to [Scott](http://kveton.com/), [David](http://davidrecordon.com/), and [Chris](http://factoryjoe.com/) for organizing!

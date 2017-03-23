@@ -5,52 +5,28 @@ Indie stats
  <a href="http://indiewebcamp.com/">
    <img src="/indiewebcamp.png"/></a></p>
 
-_[Bear](https://bear.im/) and [Ben](https://ben.thatmustbe.me/) have taken this
-and run with it! See the [wiki page](http://indiewebcamp.com/indie-stats) and
-[GitHub project](https://github.com/bear/indie-stats)._
+_[Bear](https://bear.im/) and [Ben](https://ben.thatmustbe.me/) have taken this and run with it! See the [wiki page](http://indiewebcamp.com/indie-stats) and [GitHub project](https://github.com/bear/indie-stats)._
 
-When I have to decide whether to implement a feature in
-[Bridgy](https://www.brid.gy/), or how to prioritize tasks, I often make
-assumptions like _most indie web sites have an h-card_, or
-_[PSCs](http://indiewebcamp.com/permashortcitations) and
-[PSLs](http://indiewebcamp.com/permashortlinks) never got much traction_. I know
-they're based on anecdotal evidence, not actual data, but it's all I have, so I
-run with it.
+When I have to decide whether to implement a feature in [Bridgy](https://www.brid.gy/), or how to prioritize tasks, I often make assumptions like _most indie web sites have an h-card_, or _[PSCs](http://indiewebcamp.com/permashortcitations) and [PSLs](http://indiewebcamp.com/permashortlinks) never got much traction_. I know they're based on anecdotal evidence, not actual data, but it's all I have, so I run with it.
 
-Clearly not ideal. I'd love to use real data instead! Here's a project idea:
-crawl indieweb sites and generate usage stats for
-[microformats2](http://microformats.org/wiki/microformats2) classes and other
-indieweb features.
+Clearly not ideal. I'd love to use real data instead! Here's a project idea: crawl indieweb sites and generate usage stats for [microformats2](http://microformats.org/wiki/microformats2) classes and other indieweb features.
 
-[Tantek](https://tantek.com/) and others
-[have proposed](http://indiewebcamp.com/irc/2014-09-13#t1410632949149) a similar
-Indie [ThinkUp](http://thinkup.com/) idea for more non-technical statistics,
-e.g. frequency of each post type (post vs reply vs like, etc.), how often you
-thank people, how often you curse, etc.
+[Tantek](https://tantek.com/) and others [have proposed](http://indiewebcamp.com/irc/2014-09-13#t1410632949149) a similar Indie [ThinkUp](http://thinkup.com/) idea for more non-technical statistics, e.g. frequency of each post type (post vs reply vs like, etc.), how often you thank people, how often you curse, etc.
 
 Straw man design proposal:
 
-* Seed from [IRC_People](http://indiewebcamp.com/IRC_People) and maybe all
-  domains that have ever logged into [IndieAuth](https://indieauth.com/). Don't
-  even bother spidering, at least to start; just crawl those domains.
+* Seed from [IRC_People](http://indiewebcamp.com/IRC_People) and maybe all domains that have ever logged into [IndieAuth](https://indieauth.com/). Don't even bother spidering, at least to start; just crawl those domains.
 * Try to identify the server. (Known, WordPress, etc.)
-* Parse every h-entry on the front page and every h-feed linked from the front
-  page.
-* Count all instances of mf2 classes. Identify them by the mf2 prefixes: h-, p-,
-  u-, dt-, and e-.
-* Aggregate per page and per domain so we can answer questions like _what
-  fraction of posts are [photo](http://indiewebcamp.com/photo) posts?_ and _how
-  many people use [syndication](http://indiewebcamp.com/rel-syndication) links?_
-* Generate a static html report with simple graphs using [D3](http://d3js.org/) or
-  [Google Charts](https://developers.google.com/chart/) or whatever.
+* Parse every h-entry on the front page and every h-feed linked from the front page.
+* Count all instances of mf2 classes. Identify them by the mf2 prefixes: h-, p-, u-, dt-, and e-.
+* Aggregate per page and per domain so we can answer questions like _what fraction of posts are [photo](http://indiewebcamp.com/photo) posts?_ and _how many people use [syndication](http://indiewebcamp.com/rel-syndication) links?_
+* Generate a static html report with simple graphs using [D3](http://d3js.org/) or [Google Charts](https://developers.google.com/chart/) or whatever.
 * Set up a cron job to do all this once a day or so.
 
 Stretch goals:
 
-* Dump the entire dataset as CSV so people can pull it in into Excel (or R, Wolfram
-  Alpha, etc) and do their own analyses.
-* Store and report dates for each mf2 class: first seen, last seen, etc., both
-  global and per domain.
+* Dump the entire dataset as CSV so people can pull it in into Excel (or R, Wolfram Alpha, etc) and do their own analyses.
+* Store and report dates for each mf2 class: first seen, last seen, etc., both global and per domain.
 * Crawl and analyze features in silo posts too, e.g. _[PSCs](http://indiewebcamp.com/permashortcitations)/[PSLs](http://indiewebcamp.com/permashortlinks)_.
 
 <a class="u-syndication" href="http://news.indiewebcamp.com/post/snarfed.org/indie-stats">

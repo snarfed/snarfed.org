@@ -8,16 +8,11 @@ tcsh delete moves mark bug fix
 _This bug is fixed in tcsh versions 6.14.05 and later._
 
 For the impatient:  
-[Patch](https://github.com/snarfed/misc/blob/master/patches/tcsh-preserve-mark.patch) for
-[tcsh 6.14.00](http://www.tcsh.org/MostRecentRelease)
+[Patch](https://github.com/snarfed/misc/blob/master/patches/tcsh-preserve-mark.patch) for [tcsh 6.14.00](http://www.tcsh.org/MostRecentRelease)
 
-I use [tcsh](http://www.tcsh.org/) as my shell, and I love it. Unfortunately,
-version 6.14.00 introduced a bug in _backward-delete-word, backward-kill-line,
-yank-pop_, and all other editor commands that use c_delbefore() in ed.chared.c.
+I use [tcsh](http://www.tcsh.org/) as my shell, and I love it. Unfortunately, version 6.14.00 introduced a bug in _backward-delete-word, backward-kill-line, yank-pop_, and all other editor commands that use c_delbefore() in ed.chared.c.
 
-If the mark is set in the middle of the region that's deleted, it's moved to
-before the start of the deleted region. Specifically, it's moved backward by the
-number of characters that were deleted.
+If the mark is set in the middle of the region that's deleted, it's moved to before the start of the deleted region. Specifically, it's moved backward by the number of characters that were deleted.
 
 To reproduce:
 
@@ -31,10 +26,7 @@ To reproduce:
 
   5. Press M-^H (Alt-Backspace) to delete _barbaz_.
 
-The mark will now be on the first _o_ in _foo_. You can confirm by pressing ^W
-to kill the region between the cursor and the mark. It will delete the _oo_,
-leaving only _f_.
+The mark will now be on the first _o_ in _foo_. You can confirm by pressing ^W to kill the region between the cursor and the mark. It will delete the _oo_, leaving only _f_.
 
-[This patch](https://github.com/snarfed/misc/blob/master/patches/tcsh-preserve-mark.patch)
-against [tcsh 6.14.00](http://www.tcsh.org/MostRecentRelease) fixes the bug.
+[This patch](https://github.com/snarfed/misc/blob/master/patches/tcsh-preserve-mark.patch) against [tcsh 6.14.00](http://www.tcsh.org/MostRecentRelease) fixes the bug.
 

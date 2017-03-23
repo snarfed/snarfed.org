@@ -1,18 +1,11 @@
 17824
 Bridgy stats update
 
-[Another IndieWebCamp](https://indiewebcamp.com/2016) means another
-[Bridgy](https://brid.gy/) stats update!
+[Another IndieWebCamp](https://indiewebcamp.com/2016) means another [Bridgy](https://brid.gy/) stats update!
 
-Top line numbers: 3K users, 500K [webmentions](http://webmention.net/) sent
-successfully to 1K unique domains, 4M responses handled (likes, comments etc),
-13K [POSSE](https://indiewebcamp.com/POSSE)s published, total cost
-~$.01/user/month.
+Top line numbers: 3K users, 500K [webmentions](http://webmention.net/) sent successfully to 1K unique domains, 4M responses handled (likes, comments etc), 13K [POSSE](https://indiewebcamp.com/POSSE)s published, total cost ~$.01/user/month.
 
-[Data](https://docs.google.com/spreadsheets/d/1VhGiZ9Z9PEl7f9ciiVZZgupNcUTsRVltQ8_CqFETpfU/edit),
-[methodology](/2014-11-06_happy-1000th-bridgy#comment-2583731),
-[previously](/2015-12-07_bridgy-stats-update),
-[previously](/2014-11-06_happy-1000th-bridgy).
+[Data](https://docs.google.com/spreadsheets/d/1VhGiZ9Z9PEl7f9ciiVZZgupNcUTsRVltQ8_CqFETpfU/edit), [methodology](/2014-11-06_happy-1000th-bridgy#comment-2583731), [previously](/2015-12-07_bridgy-stats-update), [previously](/2014-11-06_happy-1000th-bridgy).
 
 <p id="features" class="right half" style="margin-left: 0px; margin-right: -10px">
  <a href="/bridgy_stats/2016/costs_vs_users.png">

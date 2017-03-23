@@ -5,31 +5,13 @@ Webmentions for Blogger, Tumblr, and WordPress.com
  <a href="https://www.brid.gy/">
   <img src="/bridgy_logo.jpg" /></a></p>
 
-One of the main [IndieWeb](http://indiewebcamp.com/) goals is to do more social
-networking on our own personal web sites, instead of on
-[silos](http://indiewebcamp.com/silos) like Facebook and Twitter. To do this,
-our web servers need to talk to each other. That's what the
-[webmention protocol](http://webmention.org/) is for, and it works great, but
-it's still young, so many big web hosts don't support it yet.
+One of the main [IndieWeb](http://indiewebcamp.com/) goals is to do more social networking on our own personal web sites, instead of on [silos](http://indiewebcamp.com/silos) like Facebook and Twitter. To do this, our web servers need to talk to each other. That's what the [webmention protocol](http://webmention.org/) is for, and it works great, but it's still young, so many big web hosts don't support it yet.
 
-To address this, I've launched a new [Bridgy](https://www.brid.gy/) feature that
-adds webmention support to [Blogger](https://www.blogger.com/),
-[Tumblr](http://www.tumblr.com/), and [WordPress.com](http://wordpress.com/).
-When you sign up, Bridgy starts receiving incoming webmentions for your blog
-posts and adds them as comments. It also notices when you publish a new post and
-sends webmentions to other sites that you link to.
+To address this, I've launched a new [Bridgy](https://www.brid.gy/) feature that adds webmention support to [Blogger](https://www.blogger.com/), [Tumblr](http://www.tumblr.com/), and [WordPress.com](http://wordpress.com/). When you sign up, Bridgy starts receiving incoming webmentions for your blog posts and adds them as comments. It also notices when you publish a new post and sends webmentions to other sites that you link to.
 
-This lets bloggers send IndieWeb
-[comments](http://indiewebcamp.com/comment),
-[likes](http://indiewebcamp.com/like),
-[event RSVPs](http://indiewebcamp.com/rsvp), and even
-[private messages](http://indiewebcamp.com/indieweb-messaging). It also lets
-them [use Bridgy](https://www.brid.gy/about#which) to show comments and likes
-from social networks on their blog posts (aka
-[backfeed](http://indiewebcamp.com/backfeed)).
+This lets bloggers send IndieWeb [comments](http://indiewebcamp.com/comment), [likes](http://indiewebcamp.com/like), [event RSVPs](http://indiewebcamp.com/rsvp), and even [private messages](http://indiewebcamp.com/indieweb-messaging). It also lets them [use Bridgy](https://www.brid.gy/about#which) to show comments and likes from social networks on their blog posts (aka [backfeed](http://indiewebcamp.com/backfeed)).
 
-If you're on Blogger, Tumblr, or WordPress.com,
-[give it a shot](https://www.brid.gy/) and let me know what you think!
+If you're on Blogger, Tumblr, or WordPress.com, [give it a shot](https://www.brid.gy/) and let me know what you think!
 
 <a class="u-syndication" href="http://news.indiewebcamp.com/post/snarfed.org/2014-05-13_webmentions-for-blogger-tumblr-and-wordpress-com">
   <em>Also on IndieNews.</em></a>

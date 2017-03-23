@@ -6,23 +6,16 @@ scavenger
 For the impatient:  
 [Download tarball](/scavenger.tar.gz)  
 [Download zipfile](/scavenger.zip) 
- 
-Scavenger is a program that extracts email addresses from text and binary files
-in any format. Email addresses are identified according to the [RFC
-2822](http://ietf.org/rfc/rfc2822.txt?number=2822) standard.
+  Scavenger is a program that extracts email addresses from text and binary files in any format. Email addresses are identified according to the [RFC 2822](http://ietf.org/rfc/rfc2822.txt?number=2822) standard.
 
 Usage: scavenger [INPUT FILES]... [OUTPUT FILE]
 
-I wrote scavenger a while ago, before I knew that grep, regular expressions,
-etc. could do this without breaking a sweat. However, scavenger is a clean,
-simple example of good C++ style and practices.
+I wrote scavenger a while ago, before I knew that grep, regular expressions, etc. could do this without breaking a sweat. However, scavenger is a clean, simple example of good C++ style and practices.
 
 To compile on \*nix, just run make. This should work with gcc 2.95 and up on any
 \*nix platform; it has been tested on Linux, Solaris, and FreeBSD.
 
 To compile on Windows, use the included Visual C++ project files.
 
-Scavenger is copyright 2001 Ryan Barrett, and is distributed under the
-[GPL](http://www.gnu.org/licenses/gpl.html). See the LICENSE file for more
-information.
+Scavenger is copyright 2001 Ryan Barrett, and is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html). See the LICENSE file for more information.
 

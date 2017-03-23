@@ -12,36 +12,15 @@ How many App Engine background threads can run in parallel?
 > [App Engine](https://developers.google.com/appengine/)
 > [backend](https://developers.google.com/appengine/docs/python/backends/)?
 
-For the record, App Engine distinguishes between
-[normal threads](https://developers.google.com/appengine/docs/python/?hl=en#sandboxing_in_python),
-which can't outlive the HTTP request that started them, and
-[background threads](https://developers.google.com/appengine/docs/python/backends/#Python_Background_threads),
-which can.
+For the record, App Engine distinguishes between [normal threads](https://developers.google.com/appengine/docs/python/?hl=en#sandboxing_in_python), which can't outlive the HTTP request that started them, and [background threads](https://developers.google.com/appengine/docs/python/backends/#Python_Background_threads), which can.
 
-For Python, at least, it looks like the production (Python 2.7) runtime and
-dev_appserver both impose a fixed limit of 10 background threads per backend,
-independent of other settings like e.g. `max_concurrent_requests` in
-[backends.yaml](https://developers.google.com/appengine/docs/go/config/backends?hl=en#Go_Backends_definitions).
+For Python, at least, it looks like the production (Python 2.7) runtime and dev_appserver both impose a fixed limit of 10 background threads per backend, independent of other settings like e.g. `max_concurrent_requests` in [backends.yaml](https://developers.google.com/appengine/docs/go/config/backends?hl=en#Go_Backends_definitions).
 
-I've talked with a few other old App Engine team members, and while they weren't
-100% sure, they said this sounded right. I've confirmed empirically with the
-test backend config and code below. I also tried starting more background
-threads from a separate HTTP request, and from yet another background thread. No
-luck; same overall limit of 10 total.
+I've talked with a few other old App Engine team members, and while they weren't 100% sure, they said this sounded right. I've confirmed empirically with the test backend config and code below. I also tried starting more background threads from a separate HTTP request, and from yet another background thread. No luck; same overall limit of 10 total.
 
-Here's where the SDK sets that limit in dev_appserver (specifically
-devappserver2 in SDK 1.8.8) for Python:
-[instance.py:449](http://code.google.com/p/googleappengine/source/browse/trunk/python/google/appengine/tools/devappserver2/instance.py?r=404#449),
-[python_runtime.py:61](http://code.google.com/p/googleappengine/source/browse/trunk/python/google/appengine/tools/devappserver2/python_runtime.py?r=404#61).
-It looks like background threads are disabled altogether for Go and Java:
-[go_runtime.py:99](http://code.google.com/p/googleappengine/source/browse/trunk/python/google/appengine/tools/devappserver2/go_runtime.py?r=404#99),
-[java_runtime.py:61](http://code.google.com/p/googleappengine/source/browse/trunk/python/google/appengine/tools/devappserver2/java_runtime.py?r=404#61).
+Here's where the SDK sets that limit in dev_appserver (specifically devappserver2 in SDK 1.8.8) for Python: [instance.py:449](http://code.google.com/p/googleappengine/source/browse/trunk/python/google/appengine/tools/devappserver2/instance.py?r=404#449), [python_runtime.py:61](http://code.google.com/p/googleappengine/source/browse/trunk/python/google/appengine/tools/devappserver2/python_runtime.py?r=404#61). It looks like background threads are disabled altogether for Go and Java: [go_runtime.py:99](http://code.google.com/p/googleappengine/source/browse/trunk/python/google/appengine/tools/devappserver2/go_runtime.py?r=404#99), [java_runtime.py:61](http://code.google.com/p/googleappengine/source/browse/trunk/python/google/appengine/tools/devappserver2/java_runtime.py?r=404#61).
 
-One interesting quirk: inside a background thread, it looks like you can start
-as many normal threads as you want, at least until you hit the memory limit.
-They don't hold any HTTP request open, and they don't seem to get cut off by a
-deadline either. I'm currently doing this to work around the background thread
-limit.
+One interesting quirk: inside a background thread, it looks like you can start as many normal threads as you want, at least until you hit the memory limit. They don't hold any HTTP request open, and they don't seem to get cut off by a deadline either. I'm currently doing this to work around the background thread limit.
 
 I wish this was documented! Would have saved me a lot of time.
 

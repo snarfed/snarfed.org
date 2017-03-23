@@ -4,23 +4,13 @@ GDC 2008
 <a href="http://gdconf.com/">
   <img class="shadow" src="/gdc_2008_logo.jpg" alt="GDC 2008" /></a>
 
-I've been to [Game Developers Conference](http://gdconf.com/) for seven years
-now. It's always inspiring, thought provoking, and lots of fun. I've written up my
-thoughts on the [last](/gdc_2005) [few](/gdc_2006)
-[years](/gdc_2007), and I'm back to do it again this year.
+I've been to [Game Developers Conference](http://gdconf.com/) for seven years now. It's always inspiring, thought provoking, and lots of fun. I've written up my thoughts on the [last](/gdc_2005) [few](/gdc_2006) [years](/gdc_2007), and I'm back to do it again this year.
 
-As always, sites like [Gamasutra][], [GameSpot][], and [Next Generation][] have
-comprehensive coverage. What's more, the full proceedings will be available
-online at [GDCRadio][].
+As always, sites like [Gamasutra][], [GameSpot][], and [Next Generation][] have comprehensive coverage. What's more, the full proceedings will be available online at [GDCRadio][].
 
-[Gamasutra]: http://www.gamasutra.com/gdc2008/
-[GameSpot]: http://www.gamespot.com/events/gdc08/
-[Next Generation]: http://www.next-gen.biz/index.php?option=com_content&task=view&id=8737&Itemid=2
-[GDCRadio]: http://gdcradio.net/
+[Gamasutra]: http://www.gamasutra.com/gdc2008/ [GameSpot]: http://www.gamespot.com/events/gdc08/ [Next Generation]: http://www.next-gen.biz/index.php?option=com_content&task=view&id=8737&Itemid=2 [GDCRadio]: http://gdcradio.net/
 
-They have me outnumbered, so I won't try to compete with them on coverage or
-details. Consider this a high level, karmic overview, light on details and heavy
-on analysis.
+They have me outnumbered, so I won't try to compete with them on coverage or details. Consider this a high level, karmic overview, light on details and heavy on analysis.
 
 
 ### Contents
@@ -36,66 +26,32 @@ on analysis.
 <a name="developers"></a>
 ### Goodbye Consoles, Hello Developers
 
-Like many businesses, a big part of game development is cyclical. Every five or
-six years sees a new generation of consoles, all usually launched within a year
-or so. The last generation started recently, with the XBox 360 released during
-the 2005 holiday season and the PS3 and the Wii in 2006. For that reason,
-Microsoft, Sony, and Nintendo were the loudest voices at the last couple GDCs.
+Like many businesses, a big part of game development is cyclical. Every five or six years sees a new generation of consoles, all usually launched within a year or so. The last generation started recently, with the XBox 360 released during the 2005 holiday season and the PS3 and the Wii in 2006. For that reason, Microsoft, Sony, and Nintendo were the loudest voices at the last couple GDCs.
 
 <a href="http://www.gamespot.com/news/6186365.html">
   <img class="right shadow" src="/gdc_2008_bioshock.jpg" /></a>
 
-The new consoles had settled in by this year's GDC, though, so hardware took a
-back seat to software. Many of the most popular talks were given by the
-developers behind recent AAA next-gen titles, who discussed their techniques for
-developing on the new platforms. They included
-[Ken Levine on delivering Bioshock's story](http://www.gamespot.com/news/6186365.html),
-[Ubisoft on procedural data generation in Far Cry 2](https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6240), and
-[Kim Swift and Erik Wolpaw on user testing Portal](http://www.gamespot.com/news/6186636.html),
-among others.
+The new consoles had settled in by this year's GDC, though, so hardware took a back seat to software. Many of the most popular talks were given by the developers behind recent AAA next-gen titles, who discussed their techniques for developing on the new platforms. They included [Ken Levine on delivering Bioshock's story](http://www.gamespot.com/news/6186365.html), [Ubisoft on procedural data generation in Far Cry 2](https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6240), and [Kim Swift and Erik Wolpaw on user testing Portal](http://www.gamespot.com/news/6186636.html), among others.
 
 
 <a name="social"></a>
 ### Social Networks and User Generated Content
 
-[Like last year][], social networking and user-generated content reigned as the
-trendiest must-have game mechanics. Dozens of talks were devoted to them,
-from the production, business, and game design perspectives. They even took over
-established forums that _weren't_ devoted to them, including the
-[Game Design Challenge][] and the [Startup Showcase][].
+[Like last year][], social networking and user-generated content reigned as the trendiest must-have game mechanics. Dozens of talks were devoted to them, from the production, business, and game design perspectives. They even took over established forums that _weren't_ devoted to them, including the [Game Design Challenge][] and the [Startup Showcase][].
 
-[Like last year]: GDC+2007#user_content
-[Game Design Challenge]: http://www.gamespot.com/news/6186579.html
-[Startup Showcase]: https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=7021
+[Like last year]: GDC+2007#user_content [Game Design Challenge]: http://www.gamespot.com/news/6186579.html [Startup Showcase]: https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=7021
 
-[Also like last year][], microtransactions came in a
-close second for trendiest game mechanic. ["Free to play, pay for stuff"][] has
-become a rallying cry for casual games, smaller MMOs, international markets, and
-game mashups looking for a bandwagon. There's even a promising startup that's
-making microtransaction middleware, [TwoFish][], a sure sign that this trend has legs.
+[Also like last year][], microtransactions came in a close second for trendiest game mechanic. ["Free to play, pay for stuff"][] has become a rallying cry for casual games, smaller MMOs, international markets, and game mashups looking for a bandwagon. There's even a promising startup that's making microtransaction middleware, [TwoFish][], a sure sign that this trend has legs.
 
-[Also like last year]: GDC+2007#outside
-["Free to play, pay for stuff"]: https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6180
-[TwoFish]: http://twofish.com/
+[Also like last year]: GDC+2007#outside ["Free to play, pay for stuff"]: https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6180 [TwoFish]: http://twofish.com/
 
 <img class="left" src="/gdc_2008_sword.jpg" />
 
-I have to admit, I consistently found myself dismissing these trends out of
-hand. I don't use social networks much, I don't often "generate content" outside
-of this site, and while I spend money on games, I don't expect to buy a virtual
-shirt or sword or teddy bear any time soon. I was especially cynical about the
-startups in the [Startup Showcase][], since *all* of them were based on these
-trends. They reminded me, painfully, of the crazy business models in the dot com
-bubble.
+I have to admit, I consistently found myself dismissing these trends out of hand. I don't use social networks much, I don't often "generate content" outside of this site, and while I spend money on games, I don't expect to buy a virtual shirt or sword or teddy bear any time soon. I was especially cynical about the startups in the [Startup Showcase][], since *all* of them were based on these trends. They reminded me, painfully, of the crazy business models in the dot com bubble.
 
 [Startup Showcase]: https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=7021
 
-After feeling that scorn well up in me a few times, I stopped and reconsidered.
-It didn't matter that I wasn't interested in social networking or user-generated
-content or microtransations. Lots of people are, and they're speaking with their
-dollars. That's what matters. Whenever I felt that scorn, I learned to take a
-few deep breaths, re-open my mind, and remind myself that I *wasn't* the target
-audience.
+After feeling that scorn well up in me a few times, I stopped and reconsidered. It didn't matter that I wasn't interested in social networking or user-generated content or microtransations. Lots of people are, and they're speaking with their dollars. That's what matters. Whenever I felt that scorn, I learned to take a few deep breaths, re-open my mind, and remind myself that I *wasn't* the target audience.
 
 
 <a name="community"></a>
@@ -104,25 +60,15 @@ audience.
 <a href="http://forums.xna.com/ShowThread.aspx?PostID=46554">
   <img class="right shadow" src="/gdc_2008_xbl_community.jpg" /></a>
 
-Even if I am a 20th century dinosaur, I'm still incredibly excited about
-Microsoft's [XBox Live Community Games][] announcement. It removes the
-expensive, lengthy certification process required of current XBLA games and lets
-indie developers upload games directly to XBox Live.
+Even if I am a 20th century dinosaur, I'm still incredibly excited about Microsoft's [XBox Live Community Games][] announcement. It removes the expensive, lengthy certification process required of current XBLA games and lets indie developers upload games directly to XBox Live.
 
 [XBox Live Community Games]: http://forums.xna.com/ShowThread.aspx?PostID=46554
 
-Microsoft hinted about this last year, and I
-[foamed at the mouth](/GDC_2007#community_arcade), but no one else paid
-much attention. I could say "I told you so," but I'm more interested in actually
-trying it out. Honestly, I'm so excited that this writeup may be shorter than
-usual. I can't wait to write an XBox 360 game on my laptop (!), upload it to
-Live, and make my friends try it out, all in the same day.
+Microsoft hinted about this last year, and I [foamed at the mouth](/GDC_2007#community_arcade), but no one else paid much attention. I could say "I told you so," but I'm more interested in actually trying it out. Honestly, I'm so excited that this writeup may be shorter than usual. I can't wait to write an XBox 360 game on my laptop (!), upload it to Live, and make my friends try it out, all in the same day.
 
-Sony, Nintendo, are you listening? That certification process for [PSN][] and
-[WiiWare][] is suddenly looking a little long in the tooth.
+Sony, Nintendo, are you listening? That certification process for [PSN][] and [WiiWare][] is suddenly looking a little long in the tooth.
 
-[PSN]: http://www.us.playstation.com/PS3/Network
-[WiiWare]: http://www.nintendo.com/whatsnew/detail/lJUgYjCGf4pVbYMAU2qmwF3wp7DiOK5k
+[PSN]: http://www.us.playstation.com/PS3/Network [WiiWare]: http://www.nintendo.com/whatsnew/detail/lJUgYjCGf4pVbYMAU2qmwF3wp7DiOK5k
 
 
 <a name="maturing"></a>
@@ -131,41 +77,19 @@ Sony, Nintendo, are you listening? That certification process for [PSN][] and
 <a href="http://www.gamespot.com/news/6186460.html">
   <img class="left shadow" src="/gdc_2008_awards.jpg" /></a>
 
-Apart from software and web 2.0 buzzwords, the main theme that emerged was a
-broad maturing across the industry. I don't mean trading guns and girls for
-economics sims and Shakespeare, though; I mean maturing of the
-[development process][], [business models][], and [game design][]. Even the
-awards ceremonies matured a little. This year, for the first time ever, the
-[Developers Choice Awards][] were broadcast on national television.
+Apart from software and web 2.0 buzzwords, the main theme that emerged was a broad maturing across the industry. I don't mean trading guns and girls for economics sims and Shakespeare, though; I mean maturing of the [development process][], [business models][], and [game design][]. Even the awards ceremonies matured a little. This year, for the first time ever, the [Developers Choice Awards][] were broadcast on national television.
 
-[development process]: GDC+2008#mgmt
-[business models]: GDC+2008#business
-[game design]: GDC+2008#design
-[Developers Choice Awards]: http://www.gamespot.com/news/6186460.html
+[development process]: GDC+2008#mgmt [business models]: GDC+2008#business [game design]: GDC+2008#design [Developers Choice Awards]: http://www.gamespot.com/news/6186460.html
 
-Granted, the industry has been big for a while. "Games are bigger than the
-Hollywood box office" is quoted so often that it's become a cliche. Just like
-people, though, new industries usually grow big well before they truly mature.
-While the game industry definitely isn't fully matured yet, if this GDC was any
-indication, it's definitely on its way.
+Granted, the industry has been big for a while. "Games are bigger than the Hollywood box office" is quoted so often that it's become a cliche. Just like people, though, new industries usually grow big well before they truly mature. While the game industry definitely isn't fully matured yet, if this GDC was any indication, it's definitely on its way.
 
 
 <a name="mgmt"></a>
 #### Project Management
 
-In the last few years, development best practices have been sure bets for GDC
-topics. Agile and scrum, continuous builds, automated regression testing, and
-eating dogfood always claim at least a few talks each. Admittedly, they're
-called best practices for a reason...but still, these talks have always felt a
-bit like frenzied sales pitches on late night infomercials.
+In the last few years, development best practices have been sure bets for GDC topics. Agile and scrum, continuous builds, automated regression testing, and eating dogfood always claim at least a few talks each. Admittedly, they're called best practices for a reason...but still, these talks have always felt a bit like frenzied sales pitches on late night infomercials.
 
-This year, though, there was a distinct difference. Most of these practices were
-discussed as matters of course, not as sales pitches. Established developers
-such as Ubisoft, Blizzard, and NetDevil
-[mentioned them in passing](https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6884),
-almost as accepted norms. The talks devoted to them felt more confident,
-offering upbeat postmortems on their experiences and advice on how to implement
-these practices in real world situations.
+This year, though, there was a distinct difference. Most of these practices were discussed as matters of course, not as sales pitches. Established developers such as Ubisoft, Blizzard, and NetDevil [mentioned them in passing](https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6884), almost as accepted norms. The talks devoted to them felt more confident, offering upbeat postmortems on their experiences and advice on how to implement these practices in real world situations.
 
 
 <a name="design"></a>
@@ -174,35 +98,15 @@ these practices in real world situations.
 <a href="http://www.gamespot.com/news/6186636.html">
   <img class="right shadow" src="/gdc_2008_portal.jpg" /></a>
 
-Project management wasn't the only aspect of the industry that seemed to be
-maturing. Many developers also discussed the best practices they'd adopted in
-their design processes. Highlights included iterative design, rapid prototyping,
-and user testing.
+Project management wasn't the only aspect of the industry that seemed to be maturing. Many developers also discussed the best practices they'd adopted in their design processes. Highlights included iterative design, rapid prototyping, and user testing.
 
-One of the most popular talks of the conference, a
-[postmortem on Game of the Year Portal][],
-happily acknowledged its debt to extensive prototyping and user
-testing. Designers from [Blizzard][], [Bungie][], and [Ubisoft][] all mentioned
-similar debts in their latest titles.
+One of the most popular talks of the conference, a [postmortem on Game of the Year Portal][], happily acknowledged its debt to extensive prototyping and user testing. Designers from [Blizzard][], [Bungie][], and [Ubisoft][] all mentioned similar debts in their latest titles.
 
-[postmortem on Game of the Year Portal]: http://www.gamespot.com/news/6186636.html
-[Blizzard]: https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6884
-[Bungie]: https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6863
-[Ubisoft]: https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6240
+[postmortem on Game of the Year Portal]: http://www.gamespot.com/news/6186636.html [Blizzard]: https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6884 [Bungie]: https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6863 [Ubisoft]: https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6240
 
-Beyond best practices, I was intrigued to hear how designers were attempting to
-quantify and measure aspects of game design such as immersion, balance,
-perception, and even community.
-[Clint Hocking's talk on immersive fidelity](https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6214)
-was fascinating, as were
-[Rob Pardo on balancing multiplayer games](http://www.gamespot.com/news/6186416.html),
-[Sulka Haro on learning from Habbo Hotel's users](https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6511),
-[CCP on hiring architects and fashion designers for EVE Online](https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6273), and
-[Bungie on *designing* AI, not programming it](https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6863).
+Beyond best practices, I was intrigued to hear how designers were attempting to quantify and measure aspects of game design such as immersion, balance, perception, and even community. [Clint Hocking's talk on immersive fidelity](https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6214) was fascinating, as were [Rob Pardo on balancing multiplayer games](http://www.gamespot.com/news/6186416.html), [Sulka Haro on learning from Habbo Hotel's users](https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6511), [CCP on hiring architects and fashion designers for EVE Online](https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6273), and [Bungie on *designing* AI, not programming it](https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6863).
 
-Lastly, the [Game Designers Rant](http://www.gamespot.com/news/6186631.html)
-delved into serious and real-world games, a couple of the most interesting and
-unusual trends in game design recently.
+Lastly, the [Game Designers Rant](http://www.gamespot.com/news/6186631.html) delved into serious and real-world games, a couple of the most interesting and unusual trends in game design recently.
 
 <a name="business"></a>
 #### Business
@@ -210,45 +114,21 @@ unusual trends in game design recently.
 <a href="http://habbo.com/">
   <img class="left shadow" src="/gdc_2008_habbo_hotel.jpg" /></a>
 
-As opposed to game development and design, the business of games has already
-matured in many respects. Still, a number of talks revealed encouraging new
-trends in business as well.
+As opposed to game development and design, the business of games has already matured in many respects. Still, a number of talks revealed encouraging new trends in business as well.
 
-Independent game development studios have been dealing with entrepreneurship
-issues for decades, long before the term *startup* came into vogue. Still, there
-was much more collaboration with seasoned entrepreneurs and venture capitalists
-this year. VC fund [CRV][] sponsored the [Startup Showcase][], along with other
-sessions. I also regularly overheard the startup lingo of term sheets, exit
-strategies, and valuations on the expo floor.
+Independent game development studios have been dealing with entrepreneurship issues for decades, long before the term *startup* came into vogue. Still, there was much more collaboration with seasoned entrepreneurs and venture capitalists this year. VC fund [CRV][] sponsored the [Startup Showcase][], along with other sessions. I also regularly overheard the startup lingo of term sheets, exit strategies, and valuations on the expo floor.
 
-[CRV]: http://crv.com/
-[Startup Showcase]: https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=7021
+[CRV]: http://crv.com/ [Startup Showcase]: https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=7021
 
-Larger companies also seemed to be maturing. A number of talks discussed HR
-challenges such as
-[quality of life in the wake of the EA_Spouse fallout](https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6408).
-Elsewhere, talks like
-[Cryptic's](https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6349)
-addressed common IT challenges raised by MMOGs, user-generated content, and
-digital distribution. Many discussed standard, off-the-shelf solutions,
-which was especially surprising given the egotistical, not-invented-here culture
-of many game developers.
+Larger companies also seemed to be maturing. A number of talks discussed HR challenges such as [quality of life in the wake of the EA_Spouse fallout](https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6408). Elsewhere, talks like [Cryptic's](https://www.cmpevents.com/GD08/a.asp?option=C&V=11&SessID=6349) addressed common IT challenges raised by MMOGs, user-generated content, and digital distribution. Many discussed standard, off-the-shelf solutions, which was especially surprising given the egotistical, not-invented-here culture of many game developers.
 
-For me, the clearest sign of the times came from [Matt Hooper][], a producer
-at [id][], who acknowledged the value of management ideas widely accepted by
-modern publishers and even other industries. id's not known for their business
-innovation, so if they're pulling their head out of the sand, that's a sign.
+For me, the clearest sign of the times came from [Matt Hooper][], a producer at [id][], who acknowledged the value of management ideas widely accepted by modern publishers and even other industries. id's not known for their business innovation, so if they're pulling their head out of the sand, that's a sign.
 
-[Matt Hooper]: https://www.cmpevents.com/GD08/a.asp?option=G&V=3&id=445619
-[id]: http://idsoftware.com/
+[Matt Hooper]: https://www.cmpevents.com/GD08/a.asp?option=G&V=3&id=445619 [id]: http://idsoftware.com/
 
 <a href="http://www.gamespot.com/news/6186459.html">
   <img class="right shadow" src="/gdc_2008_crayon_physics.jpg" /></a>
 
-As always, this year's conference came to an end all too quickly.
-Congratulations to [Portal][], [Crayon Physics][], and the rest of the other
-award winners. To everyone I talked with, it was great to catch up! See you all
-next year...
+As always, this year's conference came to an end all too quickly. Congratulations to [Portal][], [Crayon Physics][], and the rest of the other award winners. To everyone I talked with, it was great to catch up! See you all next year...
 
-[Portal]: http://www.gamespot.com/news/6186460.html
-[Crayon Physics]: http://www.gamespot.com/news/6186459.html
+[Portal]: http://www.gamespot.com/news/6186460.html [Crayon Physics]: http://www.gamespot.com/news/6186459.html

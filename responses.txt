@@ -1,12 +1,7 @@
 9160
 Responses
 
-[Posts](/archive#posts) &middot;
-[Pages](/archive#pages) &middot;
-[Replies](#replies) &middot;
-[Retweets](#retweets) &middot;
-[Likes](#likes) &middot;
-[RSVPs](#rsvps)
+[Posts](/archive#posts) &middot; [Pages](/archive#pages) &middot; [Replies](#replies) &middot; [Retweets](#retweets) &middot; [Likes](#likes) &middot; [RSVPs](#rsvps)
 
 <!-- catlist docs: http://wordpress.org/plugins/list-category-posts/other_notes/ -->
 <div class="left half archive-page">

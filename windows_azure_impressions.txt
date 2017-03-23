@@ -3,19 +3,11 @@ Windows Azure impressions
 
 <img src="/azure_logo_small.jpg">
 
-I [recently attended PDC 2008](/2008-10-27_in_la_for_pdc), where
-Microsoft announced [Windows Azure](http://azure.com/). I spent the week
-absorbing Microsoft's messaging, diving deep into the technical details, and
-thinking about the broader implications for cloud computing as a whole.
+I [recently attended PDC 2008](/2008-10-27_in_la_for_pdc), where Microsoft announced [Windows Azure](http://azure.com/). I spent the week absorbing Microsoft's messaging, diving deep into the technical details, and thinking about the broader implications for cloud computing as a whole.
 
-Here are the themes that stuck with me. Some are straightforward quotes from
-MS's messaging that were particularly compelling, and some are implications
-that follow from reading between the lines.
+Here are the themes that stuck with me. Some are straightforward quotes from MS's messaging that were particularly compelling, and some are implications that follow from reading between the lines.
 
-Also see my [technical writeup](/windows_azure_details) and
-[presentation slides](/azure_talk.html). (Full disclosure: I
-[work](/2008-04-07_google_app_engine_launched) on
-[Google App Engine](http://appengine.google.com/).)
+Also see my [technical writeup](/windows_azure_details) and [presentation slides](/azure_talk.html). (Full disclosure: I [work](/2008-04-07_google_app_engine_launched) on [Google App Engine](http://appengine.google.com/).)
 
 **Contents:**
 
@@ -33,194 +25,90 @@ Also see my [technical writeup](/windows_azure_details) and
 <a name="big_bet"></a>
 ### Big bet for MS [![permalink](/Icon-Permalink.png)](#big_bet)
 
-It's clearly a big investiment of time, money, and people, and it has the full
-backing of senior execs. Quantitatively, it sounds like the Azure team is
-roughly as big as Amazon's web services team in size, and probably bigger than
-most other cloud offerings.
+It's clearly a big investiment of time, money, and people, and it has the full backing of senior execs. Quantitatively, it sounds like the Azure team is roughly as big as Amazon's web services team in size, and probably bigger than most other cloud offerings.
 
-Beyond the investment, the technology itself is ambitious, comprehensive, and
-impressive - at least, on paper. MS may often be late to the party, but when
-they do arrive, they make a hell of an entrance.
+Beyond the investment, the technology itself is ambitious, comprehensive, and impressive - at least, on paper. MS may often be late to the party, but when they do arrive, they make a hell of an entrance.
 
 
 <a name="similar"></a>
 ### Similar to existing offerings [![permalink](/Icon-Permalink.png)](#similar)
 
-At minimum, Azure has feature parity with existing products like
-Amazon's [S3](http://aws.amazon.com/s3/),
-[EC2](http://aws.amazon.com/ec2/),
-[SimpleDB](http://aws.amazon.com/simpledb/), and
-[SQS](http://aws.amazon.com/sqs/),
-infrastructure like [memcached](http://www.danga.com/memcached/)
-and Google's [Chubby](http://labs.google.com/papers/chubby.html),
-and others.
-The [Azure Fabric](/windows_azure_details#Fabric)
-also provides some of the same high level features as
-[RightScale](http://rightscale.com/) and
-[Google App Engine](http://appengine.google.com/), but it also has noticeable
-differences.
+At minimum, Azure has feature parity with existing products like Amazon's [S3](http://aws.amazon.com/s3/), [EC2](http://aws.amazon.com/ec2/), [SimpleDB](http://aws.amazon.com/simpledb/), and [SQS](http://aws.amazon.com/sqs/), infrastructure like [memcached](http://www.danga.com/memcached/) and Google's [Chubby](http://labs.google.com/papers/chubby.html), and others. The [Azure Fabric](/windows_azure_details#Fabric) also provides some of the same high level features as [RightScale](http://rightscale.com/) and [Google App Engine](http://appengine.google.com/), but it also has noticeable differences.
 
-Many of these are natural designs for building highly available, scalable
-systems on commodity hardware. Given that, the similarity isn't really
-surprising. The interesting part is that they did much of this expressly for
-Azure, so they had external users in mind from the beginning.
+Many of these are natural designs for building highly available, scalable systems on commodity hardware. Given that, the similarity isn't really surprising. The interesting part is that they did much of this expressly for Azure, so they had external users in mind from the beginning.
 
-Also, they've also committed to serious dogfooding, ie building and running
-their own products on Azure, much more than other cloud providers. Azure
-[tables](/windows_azure_details#Tables),
-[queues](/windows_azure_details#Queues), and
-[blobs](/windows_azure_details#Blobs) all run on it. So do the .NET
-Services (service bus, access control, and workflow), SQL Services, Live
-Services, Dynamics CRM, and many others. They confirmed in person that they're
-working on porting even more of their existing products to Azure.
+Also, they've also committed to serious dogfooding, ie building and running their own products on Azure, much more than other cloud providers. Azure [tables](/windows_azure_details#Tables), [queues](/windows_azure_details#Queues), and [blobs](/windows_azure_details#Blobs) all run on it. So do the .NET Services (service bus, access control, and workflow), SQL Services, Live Services, Dynamics CRM, and many others. They confirmed in person that they're working on porting even more of their existing products to Azure.
 
 
 <a name="enterprise"></a>
 ### Aimed at enterprise [![permalink](/Icon-Permalink.png)](#enterprise) 
 
-Azure is clearly aimed at enterprise first and foremost. MS's messaging is very
-different from many of the leading cloud offerings, which are pitched more
-toward Web 2.0 startups and hobbyists. Azure's messaging was focused on
-enterprise - how it handles any enterprise apps, not just webapps, how it
-interoperates with existing "on-premises" systems and data sources, and how
-customers can use it to interoperate with each other. Almost all of the examples
-used in the talks were enterprises manufacturing, supply chain, ISVs, OEMs,
-service providers, etc.
+Azure is clearly aimed at enterprise first and foremost. MS's messaging is very different from many of the leading cloud offerings, which are pitched more toward Web 2.0 startups and hobbyists. Azure's messaging was focused on enterprise - how it handles any enterprise apps, not just webapps, how it interoperates with existing "on-premises" systems and data sources, and how customers can use it to interoperate with each other. Almost all of the examples used in the talks were enterprises manufacturing, supply chain, ISVs, OEMs, service providers, etc.
 
-One key part of this was the consistent message that the cloud didn't need to
-fully replace your existing on-premises apps. Instead, you could introduce it
-slowly, bridging on-premises and cloud. There might even be parts of your IT
-that always stay on-premises.
+One key part of this was the consistent message that the cloud didn't need to fully replace your existing on-premises apps. Instead, you could introduce it slowly, bridging on-premises and cloud. There might even be parts of your IT that always stay on-premises.
 
-I'm guessing that this emphasis on enterprise won't turn off the Web 2.0
-audience. If it's good, they'll try it. The perception of existing offerings
-as being Web 2.0 focused probably does turn off enterprises, though, enough
-that they often may not even give them a second glance.
+I'm guessing that this emphasis on enterprise won't turn off the Web 2.0 audience. If it's good, they'll try it. The perception of existing offerings as being Web 2.0 focused probably does turn off enterprises, though, enough that they often may not even give them a second glance.
 
-A fascinating example of the enterprise focus is their pricing model. During
-the keynote, one of the speakers mentioned that pricing would be tiered based
-on a number of different factors, including SLA. In other words, they'll offer
-different SLAs at different prices. Another pricing factor mentioned in person
-was how much isolation you need, ie whether you're running managed code,
-native code, or a full raw VM. A final factor was the complexity and expense
-of the APIs you use, ie SQL Services would be more expensive than Azure
-tables.
+A fascinating example of the enterprise focus is their pricing model. During the keynote, one of the speakers mentioned that pricing would be tiered based on a number of different factors, including SLA. In other words, they'll offer different SLAs at different prices. Another pricing factor mentioned in person was how much isolation you need, ie whether you're running managed code, native code, or a full raw VM. A final factor was the complexity and expense of the APIs you use, ie SQL Services would be more expensive than Azure tables.
 
 
 <a name="tools"></a>
 ### "Use your existing tools, knowledge, and skill set." [![permalink](/Icon-Permalink.png)](#tools)
 
-MS pushed the tools message very hard. You develop an Azure app with Visual
-Studio, IIS7, ASP, .NET CLR, WCF, Live ID, ADO, and the rest of the standard
-MS stack, just like you'd develop an on-premises hosted app using
-shrink-wrapped MS software righ now. For developers, this is a very powerful
-message.
+MS pushed the tools message very hard. You develop an Azure app with Visual Studio, IIS7, ASP, .NET CLR, WCF, Live ID, ADO, and the rest of the standard MS stack, just like you'd develop an on-premises hosted app using shrink-wrapped MS software righ now. For developers, this is a very powerful message.
 
-MS has been building developer platforms for decades. They've learned lessons,
-sometimes the hard way, but they get it. None of the other cloud providers
-have that same depth of experience, so they seem a little wet behind the ears
-by comparison.
+MS has been building developer platforms for decades. They've learned lessons, sometimes the hard way, but they get it. None of the other cloud providers have that same depth of experience, so they seem a little wet behind the ears by comparison.
 
 
 <a name="information"></a>
 ### Lots of information [![permalink](/Icon-Permalink.png)](#information)
 
-MS provided *lots* of information. Not just tutorials and API references, but
-also details on how Azure itself is built and works under the covers.
+MS provided *lots* of information. Not just tutorials and API references, but also details on how Azure itself is built and works under the covers.
 
-Their VM and security policy is a good example. It uses
-[virtualization based on Hyper-V](/windows_azure_details#Virtualization),
-which is
-[well documented](http://www.microsoft.com/windowsserver2008/en/us/hyperv.aspx),
-and they enumerated the five layers in their security model: managed code,
-privelege layer, firewall, VM, and IP filtering.
+Their VM and security policy is a good example. It uses [virtualization based on Hyper-V](/windows_azure_details#Virtualization), which is [well documented](http://www.microsoft.com/windowsserver2008/en/us/hyperv.aspx), and they enumerated the five layers in their security model: managed code, privelege layer, firewall, VM, and IP filtering.
 
-The internal details on how Azure works were particularly compelling.
-Developers may not need that information to write Azure services, but
-providing it drastically increases their confidence and comfort level in the
-system.
+The internal details on how Azure works were particularly compelling. Developers may not need that information to write Azure services, but providing it drastically increases their confidence and comfort level in the system.
 
-Other developers at PDC mentioned this, and I also felt it personally, at a
-gut level, long before I identified what it was. My reactions to "how to"
-talks varied widely, but every time I went to an "under the covers" talk,
-Azure felt more and more solid.
+Other developers at PDC mentioned this, and I also felt it personally, at a gut level, long before I identified what it was. My reactions to "how to" talks varied widely, but every time I went to an "under the covers" talk, Azure felt more and more solid.
 
 
 <a name="lessons"></a>
 ### "Learn from our lessons." [![permalink](/Icon-Permalink.png)](#lessons)
 
-Similar to the [information](#information)
-theme, another big part of their messaging was that they've built large-scale
-services, they've learned lessons and they've tried to bake those lessons into
-azure so that developers are encouraged, and occasionally forced, to do the
-right thing.
+Similar to the [information](#information) theme, another big part of their messaging was that they've built large-scale services, they've learned lessons and they've tried to bake those lessons into azure so that developers are encouraged, and occasionally forced, to do the right thing.
 
-Where they couldn't bake in lessons, they pushed best practices: prefer
-statelessness, think idempotent, separate data and config from code,
-checkpoint, etc.
+Where they couldn't bake in lessons, they pushed best practices: prefer statelessness, think idempotent, separate data and config from code, checkpoint, etc.
 
-Many cloud computing providers say the same things, but they were a little
-clearer about them, and a lot louder. They weren't afraid to tell war stories
-that were unflattering, even embarrassing, if they were also educational.
+Many cloud computing providers say the same things, but they were a little clearer about them, and a lot louder. They weren't afraid to tell war stories that were unflattering, even embarrassing, if they were also educational.
 
 
 <a name="open"></a>
 ### Azure is "open" [![permalink](/Icon-Permalink.png)](#open)
 
-Azure Storage -
-[tables](/windows_azure_details#Tables),
-[queues](/windows_azure_details#Queues), and
-[blobs](/windows_azure_details#Blobs) - is accessible over simple REST
-APIs, and other parts like service management, alerting, the
-[local SDK](/windows_azure_details#Developer_Experience)
-(aka "cloud on your desktop"), etc. are similarly extensible. They also
-mentioned moving apps to and from the cloud, since the runtimes, application
-servers, and toolchains are either identical or compatible.
+Azure Storage - [tables](/windows_azure_details#Tables), [queues](/windows_azure_details#Queues), and [blobs](/windows_azure_details#Blobs) - is accessible over simple REST APIs, and other parts like service management, alerting, the [local SDK](/windows_azure_details#Developer_Experience) (aka "cloud on your desktop"), etc. are similarly extensible. They also mentioned moving apps to and from the cloud, since the runtimes, application servers, and toolchains are either identical or compatible.
 
-However. it seems like a walled garden. There was a token mention of using
-Azure Storage from a non-MS stack (LAMP), but no mention of avoiding lock-in
-or porting away from Azure and the MS stack. Data import/export is doable,
-using either traditional SQL Server tools or the newer
-[FeedSync protocol](http://dev.live.com/feedsync/) and the
-[Sync Framework](http://msdn.microsoft.com/en-us/sync/bb821992.aspx).
-Porting code, maybe not.
+However. it seems like a walled garden. There was a token mention of using Azure Storage from a non-MS stack (LAMP), but no mention of avoiding lock-in or porting away from Azure and the MS stack. Data import/export is doable, using either traditional SQL Server tools or the newer [FeedSync protocol](http://dev.live.com/feedsync/) and the [Sync Framework](http://msdn.microsoft.com/en-us/sync/bb821992.aspx). Porting code, maybe not.
 
-Then again, since Azure is positioned as a cloud version of the existing MS
-stack, this question has been around for a while, and there's nothing
-fundamentally new about it now.
+Then again, since Azure is positioned as a cloud version of the existing MS stack, this question has been around for a while, and there's nothing fundamentally new about it now.
 
 
 <a name="standard_qs"></a>
 ### Same old cloud questions [![permalink](/Icon-Permalink.png)](#standard_qs)
 
-People continued to ask the standard questions they ask all cloud computing
-providers:
+People continued to ask the standard questions they ask all cloud computing providers:
 
-* Do you own my data? How about my code? Do I own it? How do I know for sure?
-  What does that even mean?
-* Similarly, how secure and private is my data from you? From other apps? Give
-  me details.
+* Do you own my data? How about my code? Do I own it? How do I know for sure? What does that even mean?
+* Similarly, how secure and private is my data from you? From other apps? Give me details.
 * How can I import a large amount of data?
 * What's your lock-in story? How do I port my app and data *off* azure?
-* I need to comply with ISO 9000, or PCI, or the PATRIOT act, or EU
- regulations, or my homeowner's association. Does Azure do that? Will you tell
- me enough for me to document it so I can prove it if necessary?
+* I need to comply with ISO 9000, or PCI, or the PATRIOT act, or EU regulations, or my homeowner's association. Does Azure do that? Will you tell me enough for me to document it so I can prove it if necessary?
 * Can I delete something and be sure it's totally deleted, everywhere?
 * How can I make sure I don't get bitten by quotas, throttling, or other limits?
 
-Often, MS has better answers to these questions, since many of these questions
-are specific to enterprises, and MS has dealt with them for decades. In other
-cases, the MS speaker notes that these are common cloud questions, then gives
-basically the same answers as everyone else.
+Often, MS has better answers to these questions, since many of these questions are specific to enterprises, and MS has dealt with them for decades. In other cases, the MS speaker notes that these are common cloud questions, then gives basically the same answers as everyone else.
 
 
 <a name="sdk_prod"></a>
 ### Fix inconsistencies between SDK and prod! [![permalink](/Icon-Permalink.png)](#sdk_prod)
 
-I got to talk to some of the trusted testers from
-[Sentient](http://www.sentient.co.uk/) and [HP](http://hp.com/), and one of
-their biggest pain points were the places where the SDK and prod differ. They
-acknowledged that most of the examples that tripped them up were minor edge
-cases, but they said those are the ones that are trickiest, since you know how
-the normal stuff is supposed to work. It's the edge cases that aren't
-documented as well, so they're doubly difficult when they're inconsistent.
+I got to talk to some of the trusted testers from [Sentient](http://www.sentient.co.uk/) and [HP](http://hp.com/), and one of their biggest pain points were the places where the SDK and prod differ. They acknowledged that most of the examples that tripped them up were minor edge cases, but they said those are the ones that are trickiest, since you know how the normal stuff is supposed to work. It's the edge cases that aren't documented as well, so they're doubly difficult when they're inconsistent.

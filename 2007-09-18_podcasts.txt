@@ -3,18 +3,8 @@ Podcasts I Listen To
 
 <p class="right third"><a href="/podcasts"><img class="" src="/podcast.jpg" /></a></p>
 
-I've posted a [list of podcasts I listen to](/podcasts). I listen mostly
-while I'm running or at the gym, but sometimes also when I'm coding, playing
-games, or whatever else.
+I've posted a [list of podcasts I listen to](/podcasts). I listen mostly while I'm running or at the gym, but sometimes also when I'm coding, playing games, or whatever else.
 
-Most are news, current events, and game industry analysis. Examples include
-[BBC NewsPod](http://www.bbc.co.uk/radio/podcasts/newspod),
-[Marketplace](http://marketplace.publicradio.org/episodes/show_rundown.php?show_id=14),
-[Game Theory](http://gametheoryshow.com),
-[GDC Radio](http://www.gdcradio.net/),
-and [Radio Lab](http://www.wnyc.org/shows/radiolab), which I've
-[gushed about before](/2007-07-23_radiolab).
+Most are news, current events, and game industry analysis. Examples include [BBC NewsPod](http://www.bbc.co.uk/radio/podcasts/newspod), [Marketplace](http://marketplace.publicradio.org/episodes/show_rundown.php?show_id=14), [Game Theory](http://gametheoryshow.com), [GDC Radio](http://www.gdcradio.net/), and [Radio Lab](http://www.wnyc.org/shows/radiolab), which I've [gushed about before](/2007-07-23_radiolab).
 
-Thanks to [Fletcher Penney](http://fletcherpenney.net/) for
-[opml2markdown.xslt](http://fletcher.freeshell.org/wiki/Markdown_and_XML),
-which I used to generate the list.
+Thanks to [Fletcher Penney](http://fletcherpenney.net/) for [opml2markdown.xslt](http://fletcher.freeshell.org/wiki/Markdown_and_XML), which I used to generate the list.

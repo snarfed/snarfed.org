@@ -5,34 +5,14 @@ Google Cloud SQL
  <a href="http://code.google.com/apis/sql/">
   <img src="/google_code.png" /></a></p>
 
-We've
-[just announced Google Cloud SQL](http://googlecode.blogspot.com/2011/10/google-cloud-sql-your-database-in-cloud.html),
-a hosted relational database that does for MySQL what
-[App Engine did](/2008-04-07_google_app_engine_launched) for webapps. It handles
-the plumbing and infrastructure so you're free to focus on your application. No
-more DBA needed!
+We've [just announced Google Cloud SQL](http://googlecode.blogspot.com/2011/10/google-cloud-sql-your-database-in-cloud.html), a hosted relational database that does for MySQL what [App Engine did](/2008-04-07_google_app_engine_launched) for webapps. It handles the plumbing and infrastructure so you're free to focus on your application. No more DBA needed!
 
 <!--more-->
 <p/>
 
-Cloud SQL is led by [Ken Ashcraft](https://profiles.google.com/kashcraft/), one
-of my App Engine cofounders and a good friend, and has a great team behind it.
-I'm not on the core team, but I did contribute the
-[Python API](http://code.google.com/apis/sql/docs/developers_guide_python.html)
-and the sample [guestbook](http://sql-guestbook.appspot.com/) and
-[SQL shell](http://sql-shell.appspot.com/) apps in
-[20% time](http://www.google.com/jobs/lifeatgoogle/englife/#content), which was
-a lot of fun.
+Cloud SQL is led by [Ken Ashcraft](https://profiles.google.com/kashcraft/), one of my App Engine cofounders and a good friend, and has a great team behind it. I'm not on the core team, but I did contribute the [Python API](http://code.google.com/apis/sql/docs/developers_guide_python.html) and the sample [guestbook](http://sql-guestbook.appspot.com/) and [SQL shell](http://sql-shell.appspot.com/) apps in [20% time](http://www.google.com/jobs/lifeatgoogle/englife/#content), which was a lot of fun.
 
-I'll always have a soft spot for the App Engine datastore, but I also often tell
-people that it's not good for all use cases. Its query engine doesn't support
-data mining or ad hoc, user-driven queries as well as a traditional RDBMS -
-[although](http://www.google.com/events/io/2010/sessions/next-gen-queries-appengine.html)
-[that's](http://www.google.com/events/io/2011/sessions/large-scale-data-analysis-using-the-app-engine-pipeline-api.html)
-[changing](http://www.google.com/events/io/2011/sessions/app-engine-mapreduce.html) -
-and it doesn't integrate with existing SQL-based tools and frameworks. Cloud SQL
-will and does, and that's really exciting.
+I'll always have a soft spot for the App Engine datastore, but I also often tell people that it's not good for all use cases. Its query engine doesn't support data mining or ad hoc, user-driven queries as well as a traditional RDBMS - [although](http://www.google.com/events/io/2010/sessions/next-gen-queries-appengine.html) [that's](http://www.google.com/events/io/2011/sessions/large-scale-data-analysis-using-the-app-engine-pipeline-api.html) [changing](http://www.google.com/events/io/2011/sessions/app-engine-mapreduce.html) - and it doesn't integrate with existing SQL-based tools and frameworks. Cloud SQL will and does, and that's really exciting.
 
-Congrats on the launch, guys! And for the rest of you,
-[go check it out!](http://code.google.com/apis/sql/)
+Congrats on the launch, guys! And for the rest of you, [go check it out!](http://code.google.com/apis/sql/)
 

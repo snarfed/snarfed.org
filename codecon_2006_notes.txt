@@ -3,12 +3,7 @@ CodeCon 2006 notes
 
 <a href="http://codecon.org/2006/"><img src="/codecon_2006_logo.png"></a>
 
-I went to [CodeCon 2006](http://codecon.org/2006/), and I had a great time. Here
-are my rough, incomplete, unedited notes on the projects presented this year.
-[Dan](http://kodiak.brainymonkey.com/) has also posted
-[his notes](http://kodiak.brainymonkey.com/?m=200602). (If you're interested, I
-also have [notes from CodeCon 2005](/CodeCon_2005_notes) and
-[CodeCon 2004](/CodeCon_2004).)
+I went to [CodeCon 2006](http://codecon.org/2006/), and I had a great time. Here are my rough, incomplete, unedited notes on the projects presented this year. [Dan](http://kodiak.brainymonkey.com/) has also posted [his notes](http://kodiak.brainymonkey.com/?m=200602). (If you're interested, I also have [notes from CodeCon 2005](/CodeCon_2005_notes) and [CodeCon 2004](/CodeCon_2004).)
 
 ### [Day 1](#day1)
 
@@ -39,8 +34,7 @@ also have [notes from CodeCon 2005](/CodeCon_2005_notes) and
 ### Daylight Fraud Prevention ([example](http://bank.securescience.net/bank/))
 
 
-_Anti-Phishing prevention, tracking and detection through real-time web-based
-forensics._
+_Anti-Phishing prevention, tracking and detection through real-time web-based forensics._
 
 [http://www.securescience.net/](http://www.securescience.net/)
 
@@ -59,46 +53,31 @@ current solutions are insufficient:
   * detect known phishing email signatures (like virus scanners)
   * toolbars with host blacklits and heuristics (have to push updates)
 
-basically like squid (server-side) for fraud prevention. single apache host
-w/modules. sniffs headers, compares referrers, etc.
+basically like squid (server-side) for fraud prevention. single apache host w/modules. sniffs headers, compares referrers, etc.
 
 has built-in phishing creation tools for testing!
 
-imitate: doesn't allow logins from non-whitelisted referrers looks for hijacked
-images, x'es them in red (or whatever) for visibility phishing emails are often
-html, so this can be done _in the phishing email_! cool.
+imitate: doesn't allow logins from non-whitelisted referrers looks for hijacked images, x'es them in red (or whatever) for visibility phishing emails are often html, so this can be done _in the phishing email_! cool.
 
-forward: looks at login frequency, number of different logins, etc. from
-individual hosts and blacklists above threshold
+forward: looks at login frequency, number of different logins, etc. from individual hosts and blacklists above threshold
 
-does proxy detection through java, depends on clients having java configured
-incompletely, as is common by default
+does proxy detection through java, depends on clients having java configured incompletely, as is common by default
 
 proactively prevents mirroring w/dynamic links and client monitoring interesting
-- can _hide_ dynamic links, dynamic hijacked images, etc. as tracking images,
-e.g. for marketing.
+- can _hide_ dynamic links, dynamic hijacked images, etc. as tracking images, e.g. for marketing.
 
-very solid. i especially like putting this on the asp server, _not_ on the
-client. this should come built into apache, or at least in an established apache
-distribution.
+very solid. i especially like putting this on the asp server, _not_ on the client. this should come built into apache, or at least in an established apache distribution.
 
-business case is tricky though. it perfectly complements
-[schneier](http://schneier.com/) et al saying that this will only get fixed if
-_companies and service providers_ are liable, not the consumer.
+business case is tricky though. it perfectly complements [schneier](http://schneier.com/) et al saying that this will only get fixed if _companies and service providers_ are liable, not the consumer.
 
-sane philosophy: no silver bullet, just lots of combined signals, weighted
-appropriately
+sane philosophy: no silver bullet, just lots of combined signals, weighted appropriately
 
-lots can be automated. others have simple heuristics. others can be hard-coded
-(aim, mailing lists, etc.). others handled with data entry farms in china/india.
-some problems are hard for programs, easy for people. amusing cost/benefit
-analysis. :P
+lots can be automated. others have simple heuristics. others can be hard-coded (aim, mailing lists, etc.). others handled with data entry farms in china/india. some problems are hard for programs, easy for people. amusing cost/benefit analysis. :P
 
 ### SiteAdvisor
 <a name="siteadvisor"></a>
 
-_Pioneering Web safety by testing and rating every site, download, and form on
-the Internet._
+_Pioneering Web safety by testing and rating every site, download, and form on the Internet._
 
 [http://www.siteadvisor.com](http://www.siteadvisor.com)
 
@@ -106,36 +85,27 @@ honeypot for malware, spam, etc. except active, not passive
 
 lots of attention to usability and accessibility!
 
-browser extensions and pages that distill info down into single, analog
-red-yellow-green metric, etc
+browser extensions and pages that distill info down into single, analog red-yellow-green metric, etc
 
-annotating search results (google etc) w/very simple red/yellow green icon, more
-info on popup
+annotating search results (google etc) w/very simple red/yellow green icon, more info on popup
 
 very cool since target audience is not extremely computer literate
 
 crawling alone is interesting problem - which sites to focus on?
 
-also combining factors and weights from different sources (apps, email,
-exploits, link analysis, popups) to evaluate single site(s)
+also combining factors and weights from different sources (apps, email, exploits, link analysis, popups) to evaluate single site(s)
 
-client-side machine state monitoring, a la tripwire, isn't exactly sexy, but
-very necessary. (watch for anything unexpected).
+client-side machine state monitoring, a la tripwire, isn't exactly sexy, but very necessary. (watch for anything unexpected).
 
-monitors site content and behavior over time, a la tripwire. if interesting
-things happen (e.g. server upgrade to version w/exploit), route for more
-in-depth monitoring.
+monitors site content and behavior over time, a la tripwire. if interesting things happen (e.g. server upgrade to version w/exploit), route for more in-depth monitoring.
 
 working with grey-hat and white-hat security orgs to share info.
 
-very cool, but adoption is going to be tough. target audience won't know they
-need it, so they won't get it. :/
+very cool, but adoption is going to be tough. target audience won't know they need it, so they won't get it. :/
 
-video of spyware installing, fake anti-spyware installing through wmf exploit,
-windows ineffectually noticing spyware, etc. hilarious.
+video of spyware installing, fake anti-spyware installing through wmf exploit, windows ineffectually noticing spyware, etc. hilarious.
 
-ppl in the audience worry that siteadvisor itself fits the conventional
-definition of spyware; it's only distinguished by its intent. funny.
+ppl in the audience worry that siteadvisor itself fits the conventional definition of spyware; it's only distinguished by its intent. funny.
 
 <a name="vidtorrent"></a>
 ### VidTorrent / Peers
@@ -150,37 +120,25 @@ basically multicast on top of bittorrent
 
 related academic work (bullet, splitstream, etc.) don't work in practice
 
-bittorrent is opposite, evolved from what worked in the wild. only problem is
-it's for files, not streams.
+bittorrent is opposite, evolved from what worked in the wild. only problem is it's for files, not streams.
 
-wrote "peers," a platform/language for rapid development of p2p protocols.
-basically provides continuations for _asynchronous_ rpc. currently has at least
-python bindings. seems like a smaller, less powerful version of
-[p2](http://p2.cs.berkeley.edu/)...but still cool.
+wrote "peers," a platform/language for rapid development of p2p protocols. basically provides continuations for _asynchronous_ rpc. currently has at least python bindings. seems like a smaller, less powerful version of [p2](http://p2.cs.berkeley.edu/)...but still cool.
 
-includes nat traversal and rendezvous support. they didn't give its success
-percentage in the field though. :/
+includes nat traversal and rendezvous support. they didn't give its success percentage in the field though. :/
 
-stream is chunked continuously that it can be carried by multiple nodes. nodes
-are organized into standard overlay network.
+stream is chunked continuously that it can be carried by multiple nodes. nodes are organized into standard overlay network.
 
-for live streams, how do nodes _get_ the stream ahead of time? or do they not,
-and delay is variable?
+for live streams, how do nodes _get_ the stream ahead of time? or do they not, and delay is variable?
 
-a: they subscribe to stream source. takes advantage of asymmetric b/w of typical
-dsl or cable - need enough downstream b/w to receive full stream, but only need
-enough upstream to send partial stream (just its chunks)
+a: they subscribe to stream source. takes advantage of asymmetric b/w of typical dsl or cable - need enough downstream b/w to receive full stream, but only need enough upstream to send partial stream (just its chunks)
 
 tested with ns (but w/o failure injection). network visualization was fun
 
-demo broke, couldn't watch actual video...but a breakage means there's at least
-real code, right? :P
+demo broke, couldn't watch actual video...but a breakage means there's at least real code, right? :P
 
-trees are organized w/bandwidth and latency (rtt) probes. subscribers keep
-buffer per tree because tree needs _all_ transmitting nodes
+trees are organized w/bandwidth and latency (rtt) probes. subscribers keep buffer per tree because tree needs _all_ transmitting nodes
 
-these guys knew their stuff wrt real-world p2p overlay networks, network
-distance and b/w / latency behavior, etc. very cool.
+these guys knew their stuff wrt real-world p2p overlay networks, network distance and b/w / latency behavior, etc. very cool.
 
 <a name="localhost"></a>
 ### Localhost
@@ -189,9 +147,7 @@ _A popularity-based P2P file sharing system based on BitTorrent_
 
 [http://p2p.cs.mu.oz.au/software/Localhost/](http://p2p.cs.mu.oz.au/software/Localhost/)
 
-slides and presenter seem a little basic. quotes like "basically a big C drive"
-and defining the word decentralized. he probably just way underestimated the
-audience. :P
+slides and presenter seem a little basic. quotes like "basically a big C drive" and defining the word decentralized. he probably just way underestimated the audience. :P
 
 starts off with lots and lots...and lots...of background:
 
@@ -201,33 +157,21 @@ starts off with lots and lots...and lots...of background:
   * mentioned keyword poisoning as drawback of index
   * explained bt's chunking, lack of index, instead ad hoc web sites (suprnova)
 
-provides a hierarchical, versioned filesystem of torrents. edits create new
-versions, and "popularity" of each version is measured w/individual user prefs.
-default view is most popular one.
+provides a hierarchical, versioned filesystem of torrents. edits create new versions, and "popularity" of each version is measured w/individual user prefs. default view is most popular one.
 
 ui is web-based, daemon runs on localhost (like gds)
 
-e.g. comparing popularity of dir w/ or w/o a given file can measure popularity
-of that file
+e.g. comparing popularity of dir w/ or w/o a given file can measure popularity of that file
 
-each version is implemented as a file distributed by bittorrent. fs itself is
-stored in kademlia. each user can store a pref for each dir; (ip, dir) pref is
-key, dir contents are value.
+each version is implemented as a file distributed by bittorrent. fs itself is stored in kademlia. each user can store a pref for each dir; (ip, dir) pref is key, dir contents are value.
 
 users are identified by IPs. what about NATs and proxies?!?
 
-brad templeton asked, what prevents ppl from spamming the prefs and making their
-own stuff popular? thomas: nothing.
+brad templeton asked, what prevents ppl from spamming the prefs and making their own stuff popular? thomas: nothing.
 
-however, there are a number of existing approaches. one of my favorites is [ed
-felten](http://www.cs.princeton.edu/~felten/)'s ratings idea. soon disk and
-bandwidth will be effectively unlimited, so we could basically push all content
-to everyone. then the problem isn't distribution, it's vetting and rating the
-content to prevent poisoning.
+however, there are a number of existing approaches. one of my favorites is [ed felten](http://www.cs.princeton.edu/~felten/)'s ratings idea. soon disk and bandwidth will be effectively unlimited, so we could basically push all content to everyone. then the problem isn't distribution, it's vetting and rating the content to prevent poisoning.
 
-i can't find anything about this on [his
-site](http://www.cs.princeton.edu/~felten/), though...not even abstract. does
-anyone know of one?
+i can't find anything about this on [his site](http://www.cs.princeton.edu/~felten/), though...not even abstract. does anyone know of one?
 
 <a name="truman"></a>
 ### Truman
@@ -238,9 +182,7 @@ _An open-source behavioral malware analysis sandnet_
 
 skipped it. couldn't take a third malware talk in a day.
 
-evidently i skipped the wrong talk, though. friends said this was actually
-really good. lots of interesting, detailed info about how malware works, and
-also a fair amount about vm detection.
+evidently i skipped the wrong talk, though. friends said this was actually really good. lots of interesting, detailed info about how malware works, and also a fair amount about vm detection.
 
 <a name="day2"></a>
 ### **Day 2**
@@ -252,61 +194,43 @@ _Minimizing "interesting" files subject to a test of their interestingness._
 
 [http://delta.tigris.org/](http://delta.tigris.org/)
 
-many large systems and tools take large inputs (e.g. search engines, NLP,
-compilers). when the tool crashes on a large input, how do you isolate the part
-of the input that broke it?
+many large systems and tools take large inputs (e.g. search engines, NLP, compilers). when the tool crashes on a large input, how do you isolate the part of the input that broke it?
 
-define an "interesting" input as one that has the specific result - e.g. not
-just any error or crash, but the exact crash, stacktrace, core dump, etc. that
-you're trying to fix.
+define an "interesting" input as one that has the specific result - e.g. not just any error or crash, but the exact crash, stacktrace, core dump, etc. that you're trying to fix.
 
 can specify in a shell script
 
-algorithm: for each granularity g from 0 to log(2) N partition the input into
-2^g parts for each part is the input w/o the part still "interesting"? if so,
-dump that part
+algorithm: for each granularity g from 0 to log(2) N partition the input into 2^g parts for each part is the input w/o the part still "interesting"? if so, dump that part
 
-results in a "one minimal" input: removing _any line_ would make the input not
-interesting!
+results in a "one minimal" input: removing _any line_ would make the input not interesting!
 
-my god. in the first _five minutes_, he's presented a very very simple algorithm
-(and gave an example!) that solves a real problem.
+my god. in the first _five minutes_, he's presented a very very simple algorithm (and gave an example!) that solves a real problem.
 
-dirt simple, very well explained, clear motivation, solution, and application!
-wow. very very impressive. brute force, but (and) it works!
+dirt simple, very well explained, clear motivation, solution, and application! wow. very very impressive. brute force, but (and) it works!
 
-more interesting. can you use this to find bugs that aren't dependent on input,
-by selectively removing parts of code, until you end up w/just the broken code?
+more interesting. can you use this to find bugs that aren't dependent on input, by selectively removing parts of code, until you end up w/just the broken code?
 
 provide "interesting" test to delta as flex filter
 
 concrete example: gcc choked on 250kloc codebase, delta reduced it to two pages!
 
-"topformflat": easy optimization for code. use really simple inherent structure,
-blocks defined by curly braces in c++, to pick parts to remove while maintaining
-syntactic integrity.
+"topformflat": easy optimization for code. use really simple inherent structure, blocks defined by curly braces in c++, to pick parts to remove while maintaining syntactic integrity.
 
 many applications if you can configure and present them to delta
 
-e.g. instrumenting java _binaries_ (e.g. jvm) - give delta config file w/all
-jars, delta reduced to just jars that induced failure
+e.g. instrumenting java _binaries_ (e.g. jvm) - give delta config file w/all jars, delta reduced to just jars that induced failure
 
-basically simulated annealing - large continuous subpsace, measurement of
-goodness, random local movement, and "temperature" for size of moves
+basically simulated annealing - large continuous subpsace, measurement of goodness, random local movement, and "temperature" for size of moves
 
-it's evolution! goodness == fitness function, random local moves == mutation,
-iteration == trying input w/o parts. "temperature" is new though.
+it's evolution! goodness == fitness function, random local moves == mutation, iteration == trying input w/o parts. "temperature" is new though.
 
-delta: goodness == interestingness, random local moves == mutation, iteration
-reproduction
+delta: goodness == interestingness, random local moves == mutation, iteration reproduction
 
 gcc people are _very_ happy w/this, they use it to reduce most bug reports
 
 so so so cool, mostly because a) it's dirt simple and b) it works!
 
-interesting q's: extending topformflat for other langs/data types, how to use
-delta for runtime failures, best: delta-minimize input, then delta-minimize code
-to just part that exhibits bug!
+interesting q's: extending topformflat for other langs/data types, how to use delta for runtime failures, best: delta-minimize input, then delta-minimize code to just part that exhibits bug!
 
 <a name="djinni"></a>
 ### Djinni
@@ -317,8 +241,7 @@ _Approximating Solutions to Nigh-Unsolvable Problems--Fast!_
 
 covered complexity theory and NP-completeness, etc. in a minute, max. heh.
 
-explained local search over state space of possible solns, fitness fns, local
-minima/maxima, etc.
+explained local search over state space of possible solns, fitness fns, local minima/maxima, etc.
 
 fitness fn must be:
 
@@ -331,38 +254,25 @@ current approaches to local search:
   * annealing (random changes plus hill climbing)
   * genetic (annealing w/combining solutions, fitness fn has randomness)
 
-well-prepared and practiced talk, good speaker, rehearsed jokes, plus physical
-comedy! other speaker literally acted out local search w/chairs and stools,
-pretended to be drunk for annealing, etc.
+well-prepared and practiced talk, good speaker, rehearsed jokes, plus physical comedy! other speaker literally acted out local search w/chairs and stools, pretended to be drunk for annealing, etc.
 
-djinni isn't any new algs, it's a framework for applying local search algs to
-arbitrary problems
+djinni isn't any new algs, it's a framework for applying local search algs to arbitrary problems
 
-spent a long type talking about how the World, Solution, and Engine types are
-decoupled, as opposed to current state of the art. is that really such a big
-breakthrough?
+spent a long type talking about how the World, Solution, and Engine types are decoupled, as opposed to current state of the art. is that really such a big breakthrough?
 
-spent more time explaining type-safety and compile time vs. runtime, runtime and
-compile time polymorphism (ie virtual methods vs. overloading)...why are they
-explaining this?!?
+spent more time explaining type-safety and compile time vs. runtime, runtime and compile time polymorphism (ie virtual methods vs. overloading)...why are they explaining this?!?
 
-more good jokes about federal law, NP-completeness and travelling salesmanship
-vs. energy in the universe ("thermodynamics is such a downer")
+more good jokes about federal law, NP-completeness and travelling salesmanship vs. energy in the universe ("thermodynamics is such a downer")
 
-demo: got an approximate soln to 100-city TSP, _within 1% of optimal_, in tens
-of seconds. not bad.
+demo: got an approximate soln to 100-city TSP, _within 1% of optimal_, in tens of seconds. not bad.
 
-still, it only finds instances of solutions, not algorithms. that makes this way
-way way less interesting. boo.
+still, it only finds instances of solutions, not algorithms. that makes this way way way less interesting. boo.
 
-it's "the first" open source implementation of the Ohlmann-Thomas Compressed
-Annealing algorithm (INFORM 2006)
+it's "the first" open source implementation of the Ohlmann-Thomas Compressed Annealing algorithm (INFORM 2006)
 
-aimed at embedded systems w/low executable size (48k) and memory req'ts (3 \*
-sqrt of problem size)
+aimed at embedded systems w/low executable size (48k) and memory req'ts (3 \* sqrt of problem size)
 
-not really my bag, but a friend who works in this area says he was impressed.
-he's considering trying it out.
+not really my bag, but a friend who works in this area says he was impressed. he's considering trying it out.
 
 <a name="iglance"></a>
 ### iGlance
@@ -371,17 +281,11 @@ _Open source push-to-talk videoconferencing and screen-sharing_
 
 [http://www.iglance.com/](http://www.iglance.com/)
 
-remote collaboration tool a la groove. oriented toward 1-to-1, not groups. _not_
-based on [red swoosh](http://redswoosh.com/)'s p2p platform.
+remote collaboration tool a la groove. oriented toward 1-to-1, not groups. _not_ based on [red swoosh](http://redswoosh.com/)'s p2p platform.
 
-i know david (and mike, below) from the
-[p2p-hackers](http://zgp.org/mailman/listinfo/p2p-hackers). they both do great
-work. i'm already familiar w/iglance, based on the discussions david and i and
-others have had on p2p-hackers, so this will probably be short.
+i know david (and mike, below) from the [p2p-hackers](http://zgp.org/mailman/listinfo/p2p-hackers). they both do great work. i'm already familiar w/iglance, based on the discussions david and i and others have had on p2p-hackers, so this will probably be short.
 
-iglance uses lots of current tech - p2p, nat traversal, shared whiteboard /
-browser, video conferencing, voip, etc - but focuses on unifying them into a
-good user experience.
+iglance uses lots of current tech - p2p, nat traversal, shared whiteboard / browser, video conferencing, voip, etc - but focuses on unifying them into a good user experience.
 
 specifically, iglance attempts to integrate video into the overall experience
 
@@ -400,13 +304,9 @@ own pointer, visible to everyone, but only one has control at any time.
 
 tries hard to integrate easily w/existing apps (sharing, pointing, etc)
 
-i like this because david knows what he's doing wrt the underlying tech, but he
-rightly see it as a means to an end, not an end in and of itself.
+i like this because david knows what he's doing wrt the underlying tech, but he rightly see it as a means to an end, not an end in and of itself.
 
-went on to mention specific "hot tech" - sip/simple, speex/theora, and
-specifically (udp) nat traversal. in a nutshell, he didn't like stun, turn, and
-ice - more theory than practice - so he rolled his own. details in the
-[p2p-hackers archives](http://zgp.org/pipermail/p2p-hackers/2005-December/).
+went on to mention specific "hot tech" - sip/simple, speex/theora, and specifically (udp) nat traversal. in a nutshell, he didn't like stun, turn, and ice - more theory than practice - so he rolled his own. details in the [p2p-hackers archives](http://zgp.org/pipermail/p2p-hackers/2005-December/).
 
 <a name="oasis"></a>
 ### OASIS
@@ -415,53 +315,37 @@ _Anycast for Any Service_
 
 [http://www.coralcdn.org/oasis/](http://www.coralcdn.org/oasis/)
 
-i know mike from [p2p-hackers](http://zgp.org/mailman/listinfo/p2p-hackers) too.
-he's the guy behind nyu's [coral](http://www.coralcdn.org/).
+i know mike from [p2p-hackers](http://zgp.org/mailman/listinfo/p2p-hackers) too. he's the guy behind nyu's [coral](http://www.coralcdn.org/).
 
-presentation clearly reflects mike's academic background. talk's organization
-(motivation => related work => design => implementation => performance
-measurements => future work), citations, tone, etc.
+presentation clearly reflects mike's academic background. talk's organization (motivation => related work => design => implementation => performance measurements => future work), citations, tone, etc.
 
-oasis attempts to provide automated local mirror/replica selection (instead of
-making users choose mirror, a la sourceforge or download.com). used as next-gen
-backend for coral.
+oasis attempts to provide automated local mirror/replica selection (instead of making users choose mirror, a la sourceforge or download.com). used as next-gen backend for coral.
 
 current solns:
 
   * probe all mirrors for bandwidth/latency product (expensive, gets stale fast)
-  * define euclidean space (a la vivaldi and meridian), assign coordinates to
-hosts based on others (gets stale fast)
+  * define euclidean space (a la vivaldi and meridian), assign coordinates to hosts based on others (gets stale fast)
 
-he didn't come out and say so, but mike's pretty down on coordinate systems for
-network distance in general. he uses them roughly in oasis, but with a healthy
-dose of skepticism :P
+he didn't come out and say so, but mike's pretty down on coordinate systems for network distance in general. he uses them roughly in oasis, but with a healthy dose of skepticism :P
 
-uses DNS frontend for resolver mechanics, oasis backend for actual local
-redirection smarts
+uses DNS frontend for resolver mechanics, oasis backend for actual local redirection smarts
 
 two levels of locality:
 
   * client issues DNS req to oasis server, it redirects to nearby oasis server
   * client re-issues DNS req to nearby server, it resolves to nearby host
 
-how to determine regions? ip addr isn't good enough, too many are dynamic.
-instead, use prefix, specifically grouping by AS as defined by BGP.
+how to determine regions? ip addr isn't good enough, too many are dynamic. instead, use prefix, specifically grouping by AS as defined by BGP.
 
-map subnets to define regions based on network distance, then do search over
-given replicas by region to find closest
+map subnets to define regions based on network distance, then do search over given replicas by region to find closest
 
-minimizing active probing is a big thing, so spread probe results (regions and
-specific node coordinates) through oasis core by epidemic gossipping instead of
-by active discovery
+minimizing active probing is a big thing, so spread probe results (regions and specific node coordinates) through oasis core by epidemic gossipping instead of by active discovery
 
 deployed on planetlab over ~300 hosts
 
 discussed coral and opendht. sure. i knew they used oasis...
 
-...but whoa. i hadn't heard about ocala before. it's intended to be an overlay
-network standard, deployed as an intermediary so that legacy transports (tcp,
-udp) and clients (ssh, irc, firefox) work w/o any changes on the client. _very_
-cool.
+...but whoa. i hadn't heard about ocala before. it's intended to be an overlay network standard, deployed as an intermediary so that legacy transports (tcp, udp) and clients (ssh, irc, firefox) work w/o any changes on the client. _very_ cool.
 
 <a name="qbe"></a>
 ### Query By Example
@@ -482,17 +366,13 @@ however, creating good unstructured keyword queries is hard.
 
 ranking is hard too. she even slams pagerank. aww... :P
 
-clustering and clsasification are known problems w/known solns, as is adding new
-data to existing datasets' clusters and classifications.
+clustering and clsasification are known problems w/known solns, as is adding new data to existing datasets' clusters and classifications.
 
-finding discriminant fns for clustering/classifying is dosable, but finding ones
-that handle _new_ data well is very hard.
+finding discriminant fns for clustering/classifying is dosable, but finding ones that handle _new_ data well is very hard.
 
 introduced support vector machines, gave background. whee.
 
-all of this is already done and works well. query by example takes the existing
-clustering and classification stuff and provides a new interface to it,
-specifically SQL by example.
+all of this is already done and works well. query by example takes the existing clustering and classification stuff and provides a new interface to it, specifically SQL by example.
 
 add "EXAMPLE KEY" option for WHERE and ORDER BY:
 

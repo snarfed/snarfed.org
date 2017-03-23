@@ -5,40 +5,19 @@ pyblosxom openid server
 <a href="http://pyblosxom.bluesock.org/"><img src="/pyblosxom.jpg"></a>
 
 For the impatient:  
-&nbsp; Download [openid_server.py](/openid_server.py) or
-[openid_server-0.4.tar.gz](/openid_server-0.4.tar.gz)  
+&nbsp; Download [openid_server.py](/openid_server.py) or [openid_server-0.4.tar.gz](/openid_server-0.4.tar.gz)  
 &nbsp; [OpenID home page](http://openid.net/)  
 &nbsp; [PyBlosxom home page](http://pyblosxom.bluesock.org/)  
 
 *Updated 2007-09-23.*
 
-[openid_server.py](/openid_server.py) is a
-[PyBlosxom](http://pyblosxom.bluesock.org/) plugin that implements
-[OpenID](http://openid.net/) 1.x and 2.0. OpenID is a distributed authentication
-protocol, ie a single sign on platform, that uses URLs as identifiers. If you
-have a PyBlosxom site, this plugin allows you to login anywhere that accepts
-OpenID.
+[openid_server.py](/openid_server.py) is a [PyBlosxom](http://pyblosxom.bluesock.org/) plugin that implements [OpenID](http://openid.net/) 1.x and 2.0. OpenID is a distributed authentication protocol, ie a single sign on platform, that uses URLs as identifiers. If you have a PyBlosxom site, this plugin allows you to login anywhere that accepts OpenID.
 
-This plugin also implements the
-[Simple Registration
-Extension](http://www.openidenabled.com/openid/simple-registration-extension),
-which lets you optionally provide your name, email address, and other
-information automatically to sites that you log into with OpenID.
+This plugin also implements the [Simple Registration Extension](http://www.openidenabled.com/openid/simple-registration-extension), which lets you optionally provide your name, email address, and other information automatically to sites that you log into with OpenID.
 
-In OpenID terminology, this plugin acts as an an
-[Identifer](http://openid.net/specs/openid-authentication-1_1.html#anchor2) and
-[Identity Provider](http://openid.net/specs/openid-authentication-1_1.html#anchor2).
-It provides an
-[endpoint URL](http://openid.net/specs/openid-authentication-1_1.html#anchor2),
-handles OpenID requests on that endpoint, allows
-[associations](http://openid.net/specs/openid-authentication-1_1.html#mode_associate),
-and authenticates the user with an HTML form.
+In OpenID terminology, this plugin acts as an an [Identifer](http://openid.net/specs/openid-authentication-1_1.html#anchor2) and [Identity Provider](http://openid.net/specs/openid-authentication-1_1.html#anchor2). It provides an [endpoint URL](http://openid.net/specs/openid-authentication-1_1.html#anchor2), handles OpenID requests on that endpoint, allows [associations](http://openid.net/specs/openid-authentication-1_1.html#mode_associate), and authenticates the user with an HTML form.
 
-To use it, first download and install the
-[Python OpenID libraries](http://www.openidenabled.com/python-openid/).
-Then, download [openid_server.py](/openid_server.py) and
-place it in your plugins directory. Finally, add this line to your flavour's
-head template:
+To use it, first download and install the [Python OpenID libraries](http://www.openidenabled.com/python-openid/). Then, download [openid_server.py](/openid_server.py) and place it in your plugins directory. Finally, add this line to your flavour's head template:
 
 ```
 <link rel="openid.server"

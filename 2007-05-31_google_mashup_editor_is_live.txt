@@ -5,17 +5,11 @@ Google Mashup Editor is Live
 <a href="http://en.wikipedia.org/wiki/Mashup_\(web_application_hybrid\)"><img src="/mashup.jpg"></a>
 <a href="http://katamari.namco.com/"><img src="/katamari.jpg"></a>
 
-Stick a fork in us,
-[we're done](http://www.google.com/intl/en/press/pressrel/developerday_20070530.html)!
+Stick a fork in us, [we're done](http://www.google.com/intl/en/press/pressrel/developerday_20070530.html)!
 
-OK, scratch that, we're nowhere near done. Still, we're very excited that
-[Mashup Editor](http://googlemashups.com/) has launched. It's one of the first
-Google products based on my team's project, a piece of infrastructure that we
-hope will power many Google products in the future.
+OK, scratch that, we're nowhere near done. Still, we're very excited that [Mashup Editor](http://googlemashups.com/) has launched. It's one of the first Google products based on my team's project, a piece of infrastructure that we hope will power many Google products in the future.
 
-Here's a screenshot.
-Feel free to [take a quick tour](http://code.google.com/gme/tour/tour1.html),
-or just jump right in and [try it out!](http://googlemashups.com/)
+Here's a screenshot. Feel free to [take a quick tour](http://code.google.com/gme/tour/tour1.html), or just jump right in and [try it out!](http://googlemashups.com/)
 
 <a href="http://code.google.com/gme/tour/tour1.html">
   <img class="shadow" src="/mashup_editor.png"></a>

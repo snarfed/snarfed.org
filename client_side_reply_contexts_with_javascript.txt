@@ -5,48 +5,22 @@ Client side reply contexts with JavaScript
  <a href="http://indiewebcamp.com/">
    <img src="/indiewebcamp.png"/></a></p>
 
-[Reply contexts](https://indiewebcamp.com/reply-context) are an
-[IndieWeb](https://indiewebcamp.com/reply-context) feature that displays a short
-summary view of a post that you're [replying](http://indiewebcamp.com/reply) to,
-[liking](http://indiewebcamp.com/like),
-[reposting](http://indiewebcamp.com/repost), or
-[RSVPing](http://indiewebcamp.com/rsvp) to.
+[Reply contexts](https://indiewebcamp.com/reply-context) are an [IndieWeb](https://indiewebcamp.com/reply-context) feature that displays a short summary view of a post that you're [replying](http://indiewebcamp.com/reply) to, [liking](http://indiewebcamp.com/like), [reposting](http://indiewebcamp.com/repost), or [RSVPing](http://indiewebcamp.com/rsvp) to.
 
-Most reply context implementations run on the server, when publishing or
-updating a post. They fetch the original post, extract the useful parts, store
-them locally, and include them when rendering the reply post.
+Most reply context implementations run on the server, when publishing or updating a post. They fetch the original post, extract the useful parts, store them locally, and include them when rendering the reply post.
 
-This is fine, but there's another option. You could write a JavaScript library
-that injects reply contexts into a post after it's rendered on the client, in
-the browser. The interesting part is that this library could work on any CMS;
-all you need to do is serve it!
+This is fine, but there's another option. You could write a JavaScript library that injects reply contexts into a post after it's rendered on the client, in the browser. The interesting part is that this library could work on any CMS; all you need to do is serve it!
 
 Here are the steps it would take after a document is loaded:
 
-* Parse the local document's
-  [microformats](http://microformats.org/wiki/microformats2) and look for
-  [`in-reply-to`](https://indiewebcamp.com/in-reply-to),
-  [`like-of`](https://indiewebcamp.com/in-reply-to), and
-  [`repost-of`](https://indiewebcamp.com/in-reply-to) links. (RSVPs will have
-  an `in-reply-to`.)
-* Fetch each of those URLs, probably using a
-  [CORS](http://en.wikipedia.org/wiki/CORS) proxy like
-  [crossorigin.me](https://crossorigin.me/).
-* Parse the fetched page and render it as a reply
-  context/[link-preview](http://indiewebcamp.com/link-preview). Good resources
-  here include [oEmbed](http://oembed.com/), [Embedly](http://embed.ly/),
-  [Kevin Marks's hovercard generator](https://github.com/kevinmarks/unmung), and
-  [Slack's unfurling](https://medium.com/slack-developer-blog/everything-you-ever-wanted-to-know-about-unfurling-but-were-afraid-to-ask-or-how-to-make-your-e64b4bb9254).
-* Inject the resulting reply context into the current post's DOM, probably just
-  before the `e-content`.
+* Parse the local document's [microformats](http://microformats.org/wiki/microformats2) and look for [`in-reply-to`](https://indiewebcamp.com/in-reply-to), [`like-of`](https://indiewebcamp.com/in-reply-to), and [`repost-of`](https://indiewebcamp.com/in-reply-to) links. (RSVPs will have an `in-reply-to`.)
+* Fetch each of those URLs, probably using a [CORS](http://en.wikipedia.org/wiki/CORS) proxy like [crossorigin.me](https://crossorigin.me/).
+* Parse the fetched page and render it as a reply context/[link-preview](http://indiewebcamp.com/link-preview). Good resources here include [oEmbed](http://oembed.com/), [Embedly](http://embed.ly/), [Kevin Marks's hovercard generator](https://github.com/kevinmarks/unmung), and [Slack's unfurling](https://medium.com/slack-developer-blog/everything-you-ever-wanted-to-know-about-unfurling-but-were-afraid-to-ask-or-how-to-make-your-e64b4bb9254).
+* Inject the resulting reply context into the current post's DOM, probably just before the `e-content`.
 * Optionally include a default stylesheet that renders the reply context nicely.
 
 Thoughts?
 
-I've [long avoided implementing reply contexts](/why-i-dont-have-reply-contexts)
-here on snarfed.org. I very much enjoy _using_ WordPress, but I don't
-particularly enjoy _hacking_ on it. Having said that, I've had this idea in the
-back of my mind for a while now, and mentioned it to enough people, so I decided
-it was time to write it up.
+I've [long avoided implementing reply contexts](/why-i-dont-have-reply-contexts) here on snarfed.org. I very much enjoy _using_ WordPress, but I don't particularly enjoy _hacking_ on it. Having said that, I've had this idea in the back of my mind for a while now, and mentioned it to enough people, so I decided it was time to write it up.
 
 _<a class="u-syndication" href="http://news.indiewebcamp.com/en/snarfed.org/client-side-reply-contexts-with-javascript">Also on IndieNews.</a>_

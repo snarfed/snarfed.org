@@ -3,20 +3,9 @@ OpenID comments
 
 <p class="right"><a href="http://openid.net/"><img class="" src="/openid-logo.png" /></a></p>
 
-A while back, I posted an
-[OpenID server plugin](/2006-10-20_openid_server_for_pyblosxom) for
-[PyBlosxom](http://pyblosxom.bluesock.org/), the software that <strike>runs</strike>
+A while back, I posted an [OpenID server plugin](/2006-10-20_openid_server_for_pyblosxom) for [PyBlosxom](http://pyblosxom.bluesock.org/), the software that <strike>runs</strike>
 used to run this site.
 
-Since then, I've added support for
-[OpenID comments](#comment-anchor), using
-the [comments_openid.py plugin](/pyblosxom_openid_comments).
-I've updated it to work with recent versions of PyBlosxom and
-[JanRain](http://www.janrain.com/)'s
-[Python OpenID library](http://www.openidenabled.com/openid/libraries/python/),
-and to use the nickname provided by the
-[Simple Registration Extension](http://www.openidenabled.com/openid/simple-registration-extension).
+Since then, I've added support for [OpenID comments](#comment-anchor), using the [comments_openid.py plugin](/pyblosxom_openid_comments). I've updated it to work with recent versions of PyBlosxom and [JanRain](http://www.janrain.com/)'s [Python OpenID library](http://www.openidenabled.com/openid/libraries/python/), and to use the nickname provided by the [Simple Registration Extension](http://www.openidenabled.com/openid/simple-registration-extension).
 
-Feel free to [try it out](#comment-anchor)! If
-you don't have an OpenID yet, you can get one at
-[MyOpenID](http://www.myopenid.com/).
+Feel free to [try it out](#comment-anchor)! If you don't have an OpenID yet, you can get one at [MyOpenID](http://www.myopenid.com/).

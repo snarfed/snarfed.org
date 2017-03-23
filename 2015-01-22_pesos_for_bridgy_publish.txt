@@ -5,100 +5,39 @@ PESOS for Bridgy Publish
  <a href="https://www.youtube.com/watch?v=gf0sN7484Oc">
   <img class="shadow" src="/pesos.jpg" /></a></p>
 
-*[POSSE](https://indiewebcamp.com/POSSE)ing silo interactions is
-[getting harder by the day](https://kylewm.com/2015/01/the-facebook-api-v2-0-is-hobbled-to-prevent-spammy),
-and [Bridgy Publish](https://www.brid.gy/about#publish) is suffering as a
-result. We could fix this by adding an
-[OwnYourGram](http://ownyourgram.com/)-style
-[PESOS](https://indiewebcamp.com/PESOS) option. Should we?*
+*[POSSE](https://indiewebcamp.com/POSSE)ing silo interactions is [getting harder by the day](https://kylewm.com/2015/01/the-facebook-api-v2-0-is-hobbled-to-prevent-spammy), and [Bridgy Publish](https://www.brid.gy/about#publish) is suffering as a result. We could fix this by adding an [OwnYourGram](http://ownyourgram.com/)-style [PESOS](https://indiewebcamp.com/PESOS) option. Should we?*
 
-If you're going to [own your posts](https://indiewebcamp.com/ownyourdata) on social
-networks, [indieweb](https://indiewebcamp.com/) people
-[prefer to POSSE](https://indiewebcamp.com/POSSE#Advantages): post on your own
-site, syndicate elsewhere. [Bridgy Publish](https://www.brid.gy/about#publish)
-follows this philosophy and provides POSSE as a service.
+If you're going to [own your posts](https://indiewebcamp.com/ownyourdata) on social networks, [indieweb](https://indiewebcamp.com/) people [prefer to POSSE](https://indiewebcamp.com/POSSE#Advantages): post on your own site, syndicate elsewhere. [Bridgy Publish](https://www.brid.gy/about#publish) follows this philosophy and provides POSSE as a service.
 
-POSSE has its disadvantages though. The Twitter app, for example, lets you
-favorite a tweet with a single tap and ~100ms latency. Best of breed mobile
-indieweb approaches can't touch that right now. Mine, for example, take
-[many more taps](/easy-indieweb-interactions-on-android)
-[and 10-20s](/indie-checkin-flow). Browser-based implementations and
-[webactions](https://indiewebcamp.com/webactions) are a bit better, but not
-much.
+POSSE has its disadvantages though. The Twitter app, for example, lets you favorite a tweet with a single tap and ~100ms latency. Best of breed mobile indieweb approaches can't touch that right now. Mine, for example, take [many more taps](/easy-indieweb-interactions-on-android) [and 10-20s](/indie-checkin-flow). Browser-based implementations and [webactions](https://indiewebcamp.com/webactions) are a bit better, but not much.
 
 <!-- more -->
 <span />
 
-The [silos](https://indiewebcamp.com/silo) don't even allow POSSEing
-[interactions](https://indiewebcamp.com/interactions) consistently, if at all.
-Facebook's 2.0 API often
-[prevents commenting](https://github.com/snarfed/bridgy/issues/350),
-[liking](https://developers.facebook.com/docs/graph-api/reference/v2.2/user/likes#publish),
-[and resharing](https://developers.facebook.com/docs/graph-api/reference/v2.2/object/sharedposts#publish).
-Instagram's API
-[supports liking but not commenting](https://indiewebcamp.com/Instagram#API).
-Google+'s API [is read only](https://indiewebcamp.com/Google%2B#POSSE), full
-stop. Twitter has a fairly complete write API, but must be taken with a
-[grain of salt](https://indiewebcamp.com/Twitter#Developer_Relations).
+The [silos](https://indiewebcamp.com/silo) don't even allow POSSEing [interactions](https://indiewebcamp.com/interactions) consistently, if at all. Facebook's 2.0 API often [prevents commenting](https://github.com/snarfed/bridgy/issues/350), [liking](https://developers.facebook.com/docs/graph-api/reference/v2.2/user/likes#publish), [and resharing](https://developers.facebook.com/docs/graph-api/reference/v2.2/object/sharedposts#publish). Instagram's API [supports liking but not commenting](https://indiewebcamp.com/Instagram#API). Google+'s API [is read only](https://indiewebcamp.com/Google%2B#POSSE), full stop. Twitter has a fairly complete write API, but must be taken with a [grain of salt](https://indiewebcamp.com/Twitter#Developer_Relations).
 
 <p class="left third">
  <a href="https://www.brid.gy/"><img src="/bridgy_logo.jpg"/></a></p>
 
-Proposal: what if we added a Bridgy Publish PESOS option alongside the current
-POSSE model?
+Proposal: what if we added a Bridgy Publish PESOS option alongside the current POSSE model?
 
-The arguments [for POSSE](https://indiewebcamp.com/POSSE#Advantages) and
-[against PESOS](https://indiewebcamp.com/PESOS#Disadvantages) are well founded.
-They're also aimed primarily at posts, not interactions. For interactions with
-single silo posts, especially likes and reposts - which rarely include additional
-content - PESOS ain't so bad, and it comes with two big benefits:
+The arguments [for POSSE](https://indiewebcamp.com/POSSE#Advantages) and [against PESOS](https://indiewebcamp.com/PESOS#Disadvantages) are well founded. They're also aimed primarily at posts, not interactions. For interactions with single silo posts, especially likes and reposts - which rarely include additional content - PESOS ain't so bad, and it comes with two big benefits:
 
 * Full support for all interactions in all silos.
-* Use the silos' native UXes (often single-tap and low latency), databases
-(venues, contacts, etc.), and other features (e.g. character counting) for free.
-No need to reimplement them or bolt them onto your own site.
+* Use the silos' native UXes (often single-tap and low latency), databases (venues, contacts, etc.), and other features (e.g. character counting) for free. No need to reimplement them or bolt them onto your own site.
 
-Some of the [PESOS drawbacks](https://indiewebcamp.com/PESOS#Disadvantages)
-still apply. It enables silo-first authoring and presentation and may discourage
-indie and cross-silo interactions. Those would be just as doable, though, since
-we'd keep the current POSSE functionality.
+Some of the [PESOS drawbacks](https://indiewebcamp.com/PESOS#Disadvantages) still apply. It enables silo-first authoring and presentation and may discourage indie and cross-silo interactions. Those would be just as doable, though, since we'd keep the current POSSE functionality.
 
-This would be a big project, but it's doable. Bridgy would watch your silo
-account for replies, likes, and reshares that it didn't create. When it sees
-one, it creates a matching original post on your site, via
-[micropub](http://micropub.net/) or whatever. (I despair at implementing even
-just the [token management](https://indiewebcamp.com/micropub#Authentication),
-much less a full micropub client, but those are literally implementation
-details.)
+This would be a big project, but it's doable. Bridgy would watch your silo account for replies, likes, and reshares that it didn't create. When it sees one, it creates a matching original post on your site, via [micropub](http://micropub.net/) or whatever. (I despair at implementing even just the [token management](https://indiewebcamp.com/micropub#Authentication), much less a full micropub client, but those are literally implementation details.)
 
 Thoughts?
 
-_Update:_ To flesh this out a bit, here's what I could and couldn't do with each
-of the four main silos.
+_Update:_ To flesh this out a bit, here's what I could and couldn't do with each of the four main silos.
 
-**Twitter** has a [streaming API](https://dev.twitter.com/docs/streaming-apis)
-that sends events for new favorites and tweets (including @-replies and
-retweets). Bridgy
-[has used it before](https://github.com/snarfed/bridgy/blob/master/twitter_streaming.py).
-[It broke when Bridgy went over 100ish Twitter users](https://github.com/snarfed/bridgy/issues/57),
-but it would work for just one user. Even so,
-[it's a bit expensive on App Engine](https://github.com/snarfed/bridgy/issues/8),
-so I'd probably just poll
-[`/statuses/user_timeline`](https://dev.twitter.com/rest/reference/get/statuses/user_timeline) and
-[`/favorites/list`](https://dev.twitter.com/rest/reference/get/favorites/list).
+**Twitter** has a [streaming API](https://dev.twitter.com/docs/streaming-apis) that sends events for new favorites and tweets (including @-replies and retweets). Bridgy [has used it before](https://github.com/snarfed/bridgy/blob/master/twitter_streaming.py). [It broke when Bridgy went over 100ish Twitter users](https://github.com/snarfed/bridgy/issues/57), but it would work for just one user. Even so, [it's a bit expensive on App Engine](https://github.com/snarfed/bridgy/issues/8), so I'd probably just poll [`/statuses/user_timeline`](https://dev.twitter.com/rest/reference/get/statuses/user_timeline) and [`/favorites/list`](https://dev.twitter.com/rest/reference/get/favorites/list).
 
-**Facebook**'s
-[Real Time Updates](https://developers.facebook.com/docs/graph-api/real-time-updates/)
-should work. I've already used it in
-[ownyourcheckin](https://github.com/snarfed/ownyourcheckin). I'd subscribe to
-`/user/likes` and `/user/feed`, which I _think_ should include comments.
-I could also poll those endpoints.
+**Facebook**'s [Real Time Updates](https://developers.facebook.com/docs/graph-api/real-time-updates/) should work. I've already used it in [ownyourcheckin](https://github.com/snarfed/ownyourcheckin). I'd subscribe to `/user/likes` and `/user/feed`, which I _think_ should include comments. I could also poll those endpoints.
 
-**Google+** has no way to get comments *or* +1s by user, only by post.
-[API docs](https://developers.google.com/+/api/latest/);
-[feature request](https://code.google.com/p/google-plus-platform/issues/detail?id=89);
-[SO answer](http://stackoverflow.com/a/19817758/186123).
+**Google+** has no way to get comments *or* +1s by user, only by post. [API docs](https://developers.google.com/+/api/latest/); [feature request](https://code.google.com/p/google-plus-platform/issues/detail?id=89); [SO answer](http://stackoverflow.com/a/19817758/186123).
 
-**Instagram** can get
-[likes by user](http://instagram.com/developer/endpoints/users/#get_users_feed_liked),
-but [not comments](http://stackoverflow.com/a/22002350/186123).
+**Instagram** can get [likes by user](http://instagram.com/developer/endpoints/users/#get_users_feed_liked), but [not comments](http://stackoverflow.com/a/22002350/186123).

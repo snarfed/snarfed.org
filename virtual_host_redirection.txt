@@ -4,74 +4,35 @@ virtual host redirection
 <a href="http://snipsnap.org/"><img src="/snipsnap.png"></a>
 <a href="http://jetty.mortbay.com/"><img src="/jetty.png"></a>
 
-_**Update**:
-Due to a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-387), if you're using
-SnipSnap [1.0b1-uttoxeter](http://snipsnap.org/space/version-1.0b1), it requires
-a [patch](http://bugs.snipsnap.org/secure/attachment/10203/snipsnap-vhost.patch)
-for this to work. Download the [SnipSnap
-source](http://snipsnap.org/space/snipsnap-DOWNLOAD), apply the patch, run
-[ant](http://ant.apache.org), and you should be good to go!_
+_**Update**: Due to a [bug](http://bugs.snipsnap.org/browse/SNIPSNAP-387), if you're using SnipSnap [1.0b1-uttoxeter](http://snipsnap.org/space/version-1.0b1), it requires a [patch](http://bugs.snipsnap.org/secure/attachment/10203/snipsnap-vhost.patch) for this to work. Download the [SnipSnap source](http://snipsnap.org/space/snipsnap-DOWNLOAD), apply the patch, run [ant](http://ant.apache.org), and you should be good to go!_
 
-This article is also [posted on
-snipsnap.org](http://snipsnap.org/space/virtual+host+redirection).
+This article is also [posted on snipsnap.org](http://snipsnap.org/space/virtual+host+redirection).
 
 ### Introduction
 
-This document describes how to configure SnipSnap to redirect to either SnipSnap
-or static content based on hostname. The configuration is done entirely through
-Jetty.
+This document describes how to configure SnipSnap to redirect to either SnipSnap or static content based on hostname. The configuration is done entirely through Jetty.
 
-If this is _exactly_ what you need to do, feel free to skip to the end and steal
-my jetty.conf. If your setup is at all different, though, you'll need to read
-through the doc. Sorry, those are the breaks.
+If this is _exactly_ what you need to do, feel free to skip to the end and steal my jetty.conf. If your setup is at all different, though, you'll need to read through the doc. Sorry, those are the breaks.
 
 ### Background
 
-I'm in the process of deploying a SnipSnap installation at
-[http://snarfed.org/](/) , and I'm very excited about the
-possibilities. However, there's one snag. This server currently serves static
-content through ryan.barrett.name, and I need that static content to be
-accessible. Furthermore, to avoid breaking links, old URLs (such as
-[http://ryan.barrett.name/bigbrother/](/ryan.barrett.name/bigbrother/)
-should still work.
+I'm in the process of deploying a SnipSnap installation at [http://snarfed.org/](/) , and I'm very excited about the possibilities. However, there's one snag. This server currently serves static content through ryan.barrett.name, and I need that static content to be accessible. Furthermore, to avoid breaking links, old URLs (such as [http://ryan.barrett.name/bigbrother/](/ryan.barrett.name/bigbrother/) should still work.
 
-I read through the SnipSnap virtual host documentation, but I couldn't find
-anything that discussed how to serve SnipSnap stuff through one hostname and
-_static_ content through another. However, I knew that SnipSnap is based on
-Jetty, so I decided to roll my sleeves up and dive into the [Jetty
-docs](http://mortbay.org/jetty/tut/index.html).
+I read through the SnipSnap virtual host documentation, but I couldn't find anything that discussed how to serve SnipSnap stuff through one hostname and _static_ content through another. However, I knew that SnipSnap is based on Jetty, so I decided to roll my sleeves up and dive into the [Jetty docs](http://mortbay.org/jetty/tut/index.html).
 
-Big mistake. The Jetty docs spend most of their time on apps server, so there's
-not much about serving static HTML. Worse, the information it does have assumes
-you're writing Java code on top of Jetty. That would require writing a patch for
-SnipSnap, which is way overkill. However, the only other way to configure Jetty
-is through the jetty.conf file.
+Big mistake. The Jetty docs spend most of their time on apps server, so there's not much about serving static HTML. Worse, the information it does have assumes you're writing Java code on top of Jetty. That would require writing a patch for SnipSnap, which is way overkill. However, the only other way to configure Jetty is through the jetty.conf file.
 
-Anyway, to make a long story short, I learned how to configure Jetty, managed to
-redirect based on hostname, and even had some fun! Here's how.
+Anyway, to make a long story short, I learned how to configure Jetty, managed to redirect based on hostname, and even had some fun! Here's how.
 
 ### Problem
 
-So, pretend we have two domain names, foo.com and bar.org, that both map to our
-SnipSnap server. When people go to [http://bar.org](http://bar.org) , we want
-them to see our SnipSnap, but when they go to [http://foo.com](http://foo.com) ,
-we want them to see some static HTML files. What's a poor SnipSnap administrator
-to do?
+So, pretend we have two domain names, foo.com and bar.org, that both map to our SnipSnap server. When people go to [http://bar.org](http://bar.org) , we want them to see our SnipSnap, but when they go to [http://foo.com](http://foo.com) , we want them to see some static HTML files. What's a poor SnipSnap administrator to do?
 
 ### Jetty
 
-First, you need to learn how Jetty works, and specifically how the a Jetty XML
-configuration file works. Check out the
-[tutorial](http://mortbay.org/jetty/tut/index.html), especially the [Jetty HTTP
-Server](http://mortbay.org/jetty/tut/HttpServer.html) and [Jetty XML
-Syntax](http://mortbay.org/jetty/tut/XmlConfiguration.html) tutorials.
+First, you need to learn how Jetty works, and specifically how the a Jetty XML configuration file works. Check out the [tutorial](http://mortbay.org/jetty/tut/index.html), especially the [Jetty HTTP Server](http://mortbay.org/jetty/tut/HttpServer.html) and [Jetty XML Syntax](http://mortbay.org/jetty/tut/XmlConfiguration.html) tutorials.
 
-No, really, I'm serious. Stop. Do not continue reading. Read the [Jetty HTTP
-Server tutorial](http://mortbay.org/jetty/tut/HttpServer.html). Read the example
-code at the bottom. Then, skim the [Jetty XML Syntax
-tutorial](http://mortbay.org/jetty/tut/XmlConfiguration.html). I _will not_
-repeat what they say. You don't need to know them inside and out, but at least
-get comfortable with them.
+No, really, I'm serious. Stop. Do not continue reading. Read the [Jetty HTTP Server tutorial](http://mortbay.org/jetty/tut/HttpServer.html). Read the example code at the bottom. Then, skim the [Jetty XML Syntax tutorial](http://mortbay.org/jetty/tut/XmlConfiguration.html). I _will not_ repeat what they say. You don't need to know them inside and out, but at least get comfortable with them.
 
 Go ahead, I'll wait.
 
@@ -81,16 +42,9 @@ Hi! Good to have you back. Let's continue.
 
 ### Solution: jetty.conf
 
-OK, now that you're familiar with Jetty, let's get started. The key insight is
-that Jetty XML configuration files are Java code in disguise. Literally - you
-can instantiate Java classes, and then call methods on them, using Jetty's XML
-syntax. This is explained in more detail in the [Jetty XML Syntax
-tutorial](http://mortbay.org/jetty/tut/XmlConfiguration.html)...but you've
-already read that, right?
+OK, now that you're familiar with Jetty, let's get started. The key insight is that Jetty XML configuration files are Java code in disguise. Literally - you can instantiate Java classes, and then call methods on them, using Jetty's XML syntax. This is explained in more detail in the [Jetty XML Syntax tutorial](http://mortbay.org/jetty/tut/XmlConfiguration.html)...but you've already read that, right?
 
-OK. Fire up your favorite text editor and open jetty.conf. It's in the conf/
-subdirectory of your SnipSnap directory. The first thing we need to do is
-configure HttpServer, which serves static content:
+OK. Fire up your favorite text editor and open jetty.conf. It's in the conf/ subdirectory of your SnipSnap directory. The first thing we need to do is configure HttpServer, which serves static content:
 
 ```
 <Configure class="org.mortbay.http.HttpServer">

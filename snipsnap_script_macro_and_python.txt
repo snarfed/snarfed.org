@@ -7,38 +7,19 @@ snipsnap script macro and python
 <a href="http://www.jython.org/"><img src="/jython.png"></a><br />
 </p>
 
-_This
-article is also [posted at
-snipsnap.org](http://snipsnap.org/space/script+macro+and+python)._
+_This article is also [posted at snipsnap.org](http://snipsnap.org/space/script+macro+and+python)._
 
 ### It's a {script}, {script} world
 
-I recently tried out SnipSnap's {script} macro, which runs
-[Python](http://python.org/) code inside SnipSnap. It uses
-[Jython](http://www.jython.org/) as an embedded, plug-and-play Python
-interpreter. It works great, and promised to turn SnipSnap into a lightweight
-webapp development paradise. Unfortunately, I can't use it...but maybe you can
-succeed where I failed!
+I recently tried out SnipSnap's {script} macro, which runs [Python](http://python.org/) code inside SnipSnap. It uses [Jython](http://www.jython.org/) as an embedded, plug-and-play Python interpreter. It works great, and promised to turn SnipSnap into a lightweight webapp development paradise. Unfortunately, I can't use it...but maybe you can succeed where I failed!
 
 ### Can't it _do_ anything?
 
-Recently, a [friend](http://www-cs-students.stanford.edu/~nstoll/) asked me if I
-could write a simple webapp on [snarfed.org](/), my
-SnipSnap-based site. Unfortunately, I hesitated, and for good reason. I've
-written my fair share of [SnipSnap macros](/snipsnap_macros), and I like the
-macro architecture, but it's not designed for interactive webapps. I considered
-whipping up some JSPs and serving them through
-[Jetty](http://mortbay.org/jetty/), but that's far from lightweight, and I'm far
-from a JSP expert. I have [friends](http://maulik.net/) who are
-[wizards](http://maulik.freeshell.net/Miki.pl?page=Reading+Log.miki)
-[with](http://maulik.freeshell.net/Miki.pl?page=Sample+Album+Script.miki)
-[AJAX](http://maulik.freeshell.net/Miki.pl?page=2005-08-14.miki), but JavaScript
-can't get very far without access to a backing store.
+Recently, a [friend](http://www-cs-students.stanford.edu/~nstoll/) asked me if I could write a simple webapp on [snarfed.org](/), my SnipSnap-based site. Unfortunately, I hesitated, and for good reason. I've written my fair share of [SnipSnap macros](/snipsnap_macros), and I like the macro architecture, but it's not designed for interactive webapps. I considered whipping up some JSPs and serving them through [Jetty](http://mortbay.org/jetty/), but that's far from lightweight, and I'm far from a JSP expert. I have [friends](http://maulik.net/) who are [wizards](http://maulik.freeshell.net/Miki.pl?page=Reading+Log.miki) [with](http://maulik.freeshell.net/Miki.pl?page=Sample+Album+Script.miki) [AJAX](http://maulik.freeshell.net/Miki.pl?page=2005-08-14.miki), but JavaScript can't get very far without access to a backing store.
 
 ### Flip the switch
 
-Fortunately, I remembered my job description as SnipSnap admin and thought of
-SnipSnap's {script} macro. I first tried the canonical "Hello world" script:
+Fortunately, I remembered my job description as SnipSnap admin and thought of SnipSnap's {script} macro. I first tried the canonical "Hello world" script:
 
 ```
 {script}

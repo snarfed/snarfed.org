@@ -3,107 +3,39 @@ How should groups make decisions?
 
 <p class="right"><img src="/vegetable_platter.jpg" /></p>
 
-As a kid, my parents told me to eat my vegetables. My pastor told me to be nice
-to other kids. The state of California told me I couldn't drive until I was 16
-years old. My teachers told me - and more importantly, told my parents - how I
-should go about learning things.
+As a kid, my parents told me to eat my vegetables. My pastor told me to be nice to other kids. The state of California told me I couldn't drive until I was 16 years old. My teachers told me - and more importantly, told my parents - how I should go about learning things.
 
-Some of these things, we accept without a second thought. Others, like
-education, we've debated for as long as we can remember. Regardless, they all
-have one thing in common: someone else made my decisions for me.
+Some of these things, we accept without a second thought. Others, like education, we've debated for as long as we can remember. Regardless, they all have one thing in common: someone else made my decisions for me.
 
 <!-- more -->
 <p />
 
-This constituency pattern is everywhere. Families, companies, governments,
-product developers, and even protest movements have leaders who make decisions
-for the group as a whole. The group agrees with them on a few key issues, or
-voted for them, or is entranced by their charisma, or just doesn't care enough
-to object.
+This constituency pattern is everywhere. Families, companies, governments, product developers, and even protest movements have leaders who make decisions for the group as a whole. The group agrees with them on a few key issues, or voted for them, or is entranced by their charisma, or just doesn't care enough to object.
 
-The problem is that leaders don't always get it right. My parents were probably
-on safe ground with the vegetables, but my teachers didn't have it quite so
-easy. The Greek government? The Titanic's captain?
-[Hitler?](http://en.wikipedia.org/wiki/Godwin%27s_law) They were all
-disastrously wrong, and their constituents suffered as a result.
+The problem is that leaders don't always get it right. My parents were probably on safe ground with the vegetables, but my teachers didn't have it quite so easy. The Greek government? The Titanic's captain? [Hitler?](http://en.wikipedia.org/wiki/Godwin%27s_law) They were all disastrously wrong, and their constituents suffered as a result.
 
-We saw this firsthand with the
-[App Engine datastore](http://code.google.com/appengine/docs/python/datastore/overview.html).
-When we first sat down to figure out replication, the biggest tradeoff facing us
-was synchronous or asynchronous. Synchronous is better, but it's also slower.
-The datastore was already slower than its main competitor, the relational
-database - [NoSQL](http://en.wikipedia.org/wiki/NoSQL) wasn't around yet -
-and we worried that if we made it even slower, developers wouldn't use it. So we
-went with async.
+We saw this firsthand with the [App Engine datastore](http://code.google.com/appengine/docs/python/datastore/overview.html). When we first sat down to figure out replication, the biggest tradeoff facing us was synchronous or asynchronous. Synchronous is better, but it's also slower. The datastore was already slower than its main competitor, the relational database - [NoSQL](http://en.wikipedia.org/wiki/NoSQL) wasn't around yet - and we worried that if we made it even slower, developers wouldn't use it. So we went with async.
 
-It worked, but it wasn't ideal. Availability was good, but we knew synchronous
-would be better. Same with operations workload, data safety, and performance
-consistency. I did research, talked with users, gave
-[talks](http://www.google.com/events/io/2009/sessions/TransactionsAcrossDatacenters.html),
-wrote
-[blog posts](http://googleappengine.blogspot.com/2009/09/migration-to-better-datastore.html),
-and did more research.
+It worked, but it wasn't ideal. Availability was good, but we knew synchronous would be better. Same with operations workload, data safety, and performance consistency. I did research, talked with users, gave [talks](http://www.google.com/events/io/2009/sessions/TransactionsAcrossDatacenters.html), wrote [blog posts](http://googleappengine.blogspot.com/2009/09/migration-to-better-datastore.html), and did more research.
 
-Years later, we launched a
-[synchronous version](http://googleappengine.blogspot.com/2011/01/announcing-high-replication-datastore.html),
-and it was an immediate hit. Writes were a bit slower, but developers didn't
-care nearly as much as we thought. The added reliability, predictability, and
-guarantees were more important. It's now the default, and we strongly recommend
-it.
+Years later, we launched a [synchronous version](http://googleappengine.blogspot.com/2011/01/announcing-high-replication-datastore.html), and it was an immediate hit. Writes were a bit slower, but developers didn't care nearly as much as we thought. The added reliability, predictability, and guarantees were more important. It's now the default, and we strongly recommend it.
 
-Sadly, while leaders like us aren't always right, the alternatives aren't much
-better. Much has been made of Occupy Wall Street's
-[General Assembly](http://www.npr.org/blogs/money/2011/10/05/141048592/occupy-wall-street-where-everybody-has-a-say-in-everything),
-a new incarnation of old ideas like
-[direct democracy](http://en.wikipedia.org/wiki/Direct_democracy) and
-[participatory economics](http://en.wikipedia.org/wiki/Participatory_economics),
-but the dirty secret is that constituents don't know what's best for them any
-more than their leaders do. Henry Ford's
-[apocryphal quote](http://quoteinvestigator.com/2011/07/28/ford-faster-horse/),
-"If I had asked my customers what they wanted, they would have said a faster
-horse," is popular in business and tech because we often have the same
-experience. We trust users to tell us _if_ they like something, and maybe why,
-but not so much _what_ they want.
+Sadly, while leaders like us aren't always right, the alternatives aren't much better. Much has been made of Occupy Wall Street's [General Assembly](http://www.npr.org/blogs/money/2011/10/05/141048592/occupy-wall-street-where-everybody-has-a-say-in-everything), a new incarnation of old ideas like [direct democracy](http://en.wikipedia.org/wiki/Direct_democracy) and [participatory economics](http://en.wikipedia.org/wiki/Participatory_economics), but the dirty secret is that constituents don't know what's best for them any more than their leaders do. Henry Ford's [apocryphal quote](http://quoteinvestigator.com/2011/07/28/ford-faster-horse/), "If I had asked my customers what they wanted, they would have said a faster horse," is popular in business and tech because we often have the same experience. We trust users to tell us _if_ they like something, and maybe why, but not so much _what_ they want.
 
 <img class="left shadow" src="/mushroom_cloud.jpg" />
 
-Nuclear power is a good example of constituents and leaders failing hand in
-hand. Since
-[Fukushima](http://en.wikipedia.org/wiki/Fukushima_Daiichi_nuclear_disaster),
-countries have fallen over themselves in their haste to back away from nuclear,
-even though energy experts and the data agree that it's is one of the cheapest,
-most effective, and safest energy sources available.
+Nuclear power is a good example of constituents and leaders failing hand in hand. Since [Fukushima](http://en.wikipedia.org/wiki/Fukushima_Daiichi_nuclear_disaster), countries have fallen over themselves in their haste to back away from nuclear, even though energy experts and the data agree that it's is one of the cheapest, most effective, and safest energy sources available.
 
-Sadly, that didn't matter. Media covered the disaster, the
-[availability heuristic](http://en.wikipedia.org/wiki/Availability_heuristic)
-kicked in, and our brains decided nuclear power was unsafe at any speed.
-Politicians, happy to represent their constituents when the cost was an
-externality, fell into line.
+Sadly, that didn't matter. Media covered the disaster, the [availability heuristic](http://en.wikipedia.org/wiki/Availability_heuristic) kicked in, and our brains decided nuclear power was unsafe at any speed. Politicians, happy to represent their constituents when the cost was an externality, fell into line.
 
-OK, so no one's great at making policy decisions for constituents, but we still
-need to make them. What do we do?
+OK, so no one's great at making policy decisions for constituents, but we still need to make them. What do we do?
 
-Scientific research is an interesting place to look. Publication and peer review
-may be slow and messy, but it does consistently make progress in the right
-direction,
-[overcoming even change aversion](http://books.google.com/books?id=xnjS401VuFMC)
-and other features of our charmingly unreliable brains.
+Scientific research is an interesting place to look. Publication and peer review may be slow and messy, but it does consistently make progress in the right direction, [overcoming even change aversion](http://books.google.com/books?id=xnjS401VuFMC) and other features of our charmingly unreliable brains.
 
-Unfortunately, science works in the wrong direction. Researchers do experiments,
-measure them, publish results, and only then are judged by their peers. Groups,
-on the other hand, need to make policy decisions up front, before they know the
-results. History can guide them, but even when people do learn from it, the
-lessons are often unclear.
+Unfortunately, science works in the wrong direction. Researchers do experiments, measure them, publish results, and only then are judged by their peers. Groups, on the other hand, need to make policy decisions up front, before they know the results. History can guide them, but even when people do learn from it, the lessons are often unclear.
 
-Also, scientific researchers agree on the rules of the game, not least because
-it's so objective. When peers compare numbers, reproduce results, and verify
-logical arguments, there's little room for opinion. Group goals and metrics, on
-the other hand, are fuzzier.
+Also, scientific researchers agree on the rules of the game, not least because it's so objective. When peers compare numbers, reproduce results, and verify logical arguments, there's little room for opinion. Group goals and metrics, on the other hand, are fuzzier.
 
-Representative democracy is often described as the worst possible form of
-government, except for all the others. Free market capitalism is similar, and
-probably other group structures too. I like them all, but I still hate it when
-they make bad decisions.
+Representative democracy is often described as the worst possible form of government, except for all the others. Free market capitalism is similar, and probably other group structures too. I like them all, but I still hate it when they make bad decisions.
 
-Unfortunately, I don't know how they can do any better. How about you? What can
-groups do about this? Is there no foolproof way for them to make decisions?
+Unfortunately, I don't know how they can do any better. How about you? What can groups do about this? Is there no foolproof way for them to make decisions?

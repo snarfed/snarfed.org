@@ -5,14 +5,9 @@ Mac OS X
  <a href="http://www.apple.com/mac/">
   <img src="/mac_os_x.jpg" /></a></p>
 
-After 12 years on Linux, I'm grudgingly switching to Mac OS X. I wasn't excited
-about it, but it's better than I expected. It's not news any more, but yes, OS X
-is a usable, pretty skin on top of a real POSIX OS. Darwin is definitely
-different from Linux, but it's close enough to feel familiar, and smooths over
-pretty much all the rough edges you might hit on a Linux distro.
+After 12 years on Linux, I'm grudgingly switching to Mac OS X. I wasn't excited about it, but it's better than I expected. It's not news any more, but yes, OS X is a usable, pretty skin on top of a real POSIX OS. Darwin is definitely different from Linux, but it's close enough to feel familiar, and smooths over pretty much all the rough edges you might hit on a Linux distro.
 
-Even so, it's a big change from what I'm used to. Here are some of the things
-I've done to make it feel comfortable.
+Even so, it's a big change from what I'm used to. Here are some of the things I've done to make it feel comfortable.
 
 <!-- more -->
 <span />
@@ -34,27 +29,11 @@ I've done to make it feel comfortable.
 <a name="Homebrew"></a>
 #### Homebrew
 
-One of the first things I missed was
-[APT](http://en.wikipedia.org/wiki/Advanced_Packaging_Tool), the package
-manager. Apple's App Store is nice, but it's aimed at end users, so it's not so
-good for installing e.g. GNU utilities or MySQL. A while back I might have used
-[MacPorts](http://www.macports.org/) (nee Darwin) or
-[Fink](http://www.finkproject.org/),
-but the new hotness now is [Homebrew](http://mxcl.github.com/homebrew/), which
-I'm liking a lot.
+One of the first things I missed was [APT](http://en.wikipedia.org/wiki/Advanced_Packaging_Tool), the package manager. Apple's App Store is nice, but it's aimed at end users, so it's not so good for installing e.g. GNU utilities or MySQL. A while back I might have used [MacPorts](http://www.macports.org/) (nee Darwin) or [Fink](http://www.finkproject.org/), but the new hotness now is [Homebrew](http://mxcl.github.com/homebrew/), which I'm liking a lot.
 
-One note: homebrew formulae that include `.app` files usually put them in
-`/usr/local/Cellar/[formula]/[version]`. You can symlink them directly into
-Applications from there to install them.
+One note: homebrew formulae that include `.app` files usually put them in `/usr/local/Cellar/[formula]/[version]`. You can symlink them directly into Applications from there to install them.
 
-Another note: for `.app`s to use binaries installed by homebrew in
-`/usr/local/bin`, e.g. `emacsclient`, you need to add that path to the default
-`PATH` environment variable for OS X apps with
-[`launchctl setenv`](http://developer.apple.com/library/mac/#technotes/tn2124/_index.html#//apple_ref/doc/uid/DTS10003391-CH1-SECLAUNCHD).
-_Warning_: [Homebrew's instructions](https://github.com/mxcl/homebrew/wiki/FAQ).
-point to
-[this Apple doc](http://developer.apple.com/legacy/mac/library/#qa/qa1067/_index.html),
-which doesn't work in Mountain Lion!
+Another note: for `.app`s to use binaries installed by homebrew in `/usr/local/bin`, e.g. `emacsclient`, you need to add that path to the default `PATH` environment variable for OS X apps with [`launchctl setenv`](http://developer.apple.com/library/mac/#technotes/tn2124/_index.html#//apple_ref/doc/uid/DTS10003391-CH1-SECLAUNCHD). _Warning_: [Homebrew's instructions](https://github.com/mxcl/homebrew/wiki/FAQ). point to [this Apple doc](http://developer.apple.com/legacy/mac/library/#qa/qa1067/_index.html), which doesn't work in Mountain Lion!
 
 Here are some packages I've installed so far:
 
@@ -91,11 +70,7 @@ Here are some packages I've installed so far:
   * sshfs
   * wget
 
-Homebrew is great at upgrading, and you can use `brew switch` to downgrade to an
-older version, but only if you already have it installed. If you don't, there's
-no an easy way to install it. On the rare occasion that I've needed to, I
-followed [this recipe](http://stackoverflow.com/a/9832084/186123). Executive
-summary:
+Homebrew is great at upgrading, and you can use `brew switch` to downgrade to an older version, but only if you already have it installed. If you don't, there's no an easy way to install it. On the rare occasion that I've needed to, I followed [this recipe](http://stackoverflow.com/a/9832084/186123). Executive summary:
 1. `brew unlink PACKAGE`
 1. `brew info --github PACKAGE`
 1. Open the history page.
@@ -110,79 +85,31 @@ I also installed a few python libraries:
 
 `sudo pip install httplib2 py-dateutil`
 
-Apache is installed but not started by default; run `apachectl -k start` to
-start it. Here's
-[more on setting up LAMP](http://benatkin.com/2011/09/10/php-and-mysql-on-mac-os-x-lion-with-homebrew/).
-Do basic admin with `sudo apachectl -k {start|stop|restart}` and
-`launchctl {unload|load} ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist`.
+Apache is installed but not started by default; run `apachectl -k start` to start it. Here's [more on setting up LAMP](http://benatkin.com/2011/09/10/php-and-mysql-on-mac-os-x-lion-with-homebrew/). Do basic admin with `sudo apachectl -k {start|stop|restart}` and `launchctl {unload|load} ~/Library/LaunchAgents/homebrew.mxcl.mysql.plist`.
 
-One word of warning: don't start/stop/restart MySQL with `sudo
-/Library/StartupItems/MySQLCOM/MySQLCOM start`. That brings it down but refuses
-to bring it back up, at least on my machine. I have to reboot to get it running
-again. :(
+One word of warning: don't start/stop/restart MySQL with `sudo /Library/StartupItems/MySQLCOM/MySQLCOM start`. That brings it down but refuses to bring it back up, at least on my machine. I have to reboot to get it running again. :(
 
 
 <a name="Window_management"></a>
 #### Window management
 
-One of the most important parts of my Linux setup was my tiling window manager,
-[Ion](http://en.wikipedia.org/wiki/Ion_%28window_manager%29), which I followed
-with a brief stint on [notion](http://notion.sourceforge.net/) (a fork) after
-Ion's author
-[went crazy](http://en.wikipedia.org/wiki/Ion_%28window_manager%29#Controversy).
+One of the most important parts of my Linux setup was my tiling window manager, [Ion](http://en.wikipedia.org/wiki/Ion_%28window_manager%29), which I followed with a brief stint on [notion](http://notion.sourceforge.net/) (a fork) after Ion's author [went crazy](http://en.wikipedia.org/wiki/Ion_%28window_manager%29#Controversy).
 
-It took me a while to find something comparable on Mac OS X. I settled
-on [Slate](https://github.com/jigish/slate), and I'm pretty happy with it. Here
-are my [.slate](/dotfiles/.slate) and [.slate.js](/dotfiles/.slate.js). It's
-disappointing that the project itself is abandoned, but
-meh. [mattr's fork](https://github.com/mattr-/slate/) used to be maintained, but
-not any more either as of 5/2017. I should eventually switch
-to [Hammerspoon](http://www.hammerspoon.org/)
+It took me a while to find something comparable on Mac OS X. I settled on [Slate](https://github.com/jigish/slate), and I'm pretty happy with it. Here are my [.slate](/dotfiles/.slate) and [.slate.js](/dotfiles/.slate.js). It's disappointing that the project itself is abandoned, but meh. [mattr's fork](https://github.com/mattr-/slate/) used to be maintained, but not any more either as of 5/2017. I should eventually switch to [Hammerspoon](http://www.hammerspoon.org/)
 
-One minor config note: when I used multiple displays and focused a window of an
-app on one display that also had windows on the other display, it focused the
-window on the current display first. The fix was to turn off Mac OS X's _System
-Preferences -> Mission Control -> Displays have separate Spaces_.
-[Details in jigish/slate#377.](https://github.com/jigish/slate/issues/377)
+One minor config note: when I used multiple displays and focused a window of an app on one display that also had windows on the other display, it focused the window on the current display first. The fix was to turn off Mac OS X's _System Preferences -> Mission Control -> Displays have separate Spaces_. [Details in jigish/slate#377.](https://github.com/jigish/slate/issues/377)
 
-I found lots of other programs with similar ideas.
-[xnomad](https://github.com/fjolnir/xnomad) and
-[Tyler WM](http://www.tylerwm.com/) both looked pretty good, but the rest
-seemed like glorified bags of shortcut keys for pushing windows around.
-[Moom](http://manytricks.com/moom/),
-[ShiftIt](https://github.com/fikovnik/ShiftIt),
-[Divvy](http://mizage.com/divvy/),
-[SizeUp](http://www.irradiatedsoftware.com/sizeup/),
-[Spectacle](http://spectacleapp.com/),
-[Optimal Layout](http://most-advantageous.com/optimal-layout),
-[Doublepane](http://5amcode.com/), and [Stay](http://cordlessdog.com/stay/) all
-look interesting, but none of them look like they actually _manage my windows_
-for me.
-[I'm not](http://apple.stackexchange.com/questions/9659/what-window-management-options-exist-for-os-x)
-[the only](http://news.ycombinator.com/item?id=4059820)
-[one](http://mac.appstorm.net/roundups/utilities-roundups/20-mac-window-management-utilities/)
-who wants this, either.
+I found lots of other programs with similar ideas. [xnomad](https://github.com/fjolnir/xnomad) and [Tyler WM](http://www.tylerwm.com/) both looked pretty good, but the rest seemed like glorified bags of shortcut keys for pushing windows around. [Moom](http://manytricks.com/moom/), [ShiftIt](https://github.com/fikovnik/ShiftIt), [Divvy](http://mizage.com/divvy/), [SizeUp](http://www.irradiatedsoftware.com/sizeup/), [Spectacle](http://spectacleapp.com/), [Optimal Layout](http://most-advantageous.com/optimal-layout), [Doublepane](http://5amcode.com/), and [Stay](http://cordlessdog.com/stay/) all look interesting, but none of them look like they actually _manage my windows_ for me. [I'm not](http://apple.stackexchange.com/questions/9659/what-window-management-options-exist-for-os-x) [the only](http://news.ycombinator.com/item?id=4059820) [one](http://mac.appstorm.net/roundups/utilities-roundups/20-mac-window-management-utilities/) who wants this, either.
 
 
 <a name="Emacs"></a>
 #### Emacs
 
-I pretty much live inside just two programs:
-[Emacs](http://www.gnu.org/s/emacs/) and [Firefox](http://firefox.com/). I was
-able to migrate my configs for both, which made switching OSes a lot easier.
+I pretty much live inside just two programs: [Emacs](http://www.gnu.org/s/emacs/) and [Firefox](http://firefox.com/). I was able to migrate my configs for both, which made switching OSes a lot easier.
 
-There are
-[plenty](http://emacsformacosx.com/)
-[of](http://www.emacswiki.org/emacs/EmacsForMacOS#toc9)
-[Emacs](http://aquamacs.org/)
-[packages](https://plus.google.com/104330705025733851532/posts/1ZCuoEZc8VB)
-for OS X. I used [Homebrew](#Homebrew) and
-ran `brew install emacs --cocoa` to get Emacs 24.2 with
-[native full screen support](http://batsov.com/articles/2012/12/09/emacs-24-dot-3-introduces-native-osx-full-screen-support/)
-backported from 24.3.
+There are [plenty](http://emacsformacosx.com/) [of](http://www.emacswiki.org/emacs/EmacsForMacOS#toc9) [Emacs](http://aquamacs.org/) [packages](https://plus.google.com/104330705025733851532/posts/1ZCuoEZc8VB) for OS X. I used [Homebrew](#Homebrew) and ran `brew install emacs --cocoa` to get Emacs 24.2 with [native full screen support](http://batsov.com/articles/2012/12/09/emacs-24-dot-3-introduces-native-osx-full-screen-support/) backported from 24.3.
 
-I hadn't used Emacs 24 before this. One of my favorite new features is the built
-in package manager. Here are the extra packages I've installed so far:
+I hadn't used Emacs 24 before this. One of my favorite new features is the built in package manager. Here are the extra packages I've installed so far:
 
 * apache-mode
 * apples-mode
@@ -204,67 +131,30 @@ in package manager. Here are the extra packages I've installed so far:
 * yaml-mode
 * youtube-dl
 
-[Emacs's GDB integration](http://www.gnu.org/software/emacs/manual/html_node/emacs/Debuggers.html)
-is great, but it takes a few extra steps to get it working on Mac OS X.
+[Emacs's GDB integration](http://www.gnu.org/software/emacs/manual/html_node/emacs/Debuggers.html) is great, but it takes a few extra steps to get it working on Mac OS X.
 
-Darwin's GDB 6.3 seems to work, but doesn't really. Programs running under it
-crash randomly where they wouldn't otherwise. :/ First, get GDB 7.5 via homebrew
-instead by running `brew install gdb`. Then, sign gdb to tell the kernel it's allowed to attach to other processes. [Follow these instructions](http://sourceware.org/gdb/wiki/BuildingOnDarwin#Creating_a_certificate), then run `codesign -s gdb-cert /usr/local/Cellar/gdb/7.5.1/bin/gdb` (assuming you named your certificate `gdb-cert`.)
+Darwin's GDB 6.3 seems to work, but doesn't really. Programs running under it crash randomly where they wouldn't otherwise. :/ First, get GDB 7.5 via homebrew instead by running `brew install gdb`. Then, sign gdb to tell the kernel it's allowed to attach to other processes. [Follow these instructions](http://sourceware.org/gdb/wiki/BuildingOnDarwin#Creating_a_certificate), then run `codesign -s gdb-cert /usr/local/Cellar/gdb/7.5.1/bin/gdb` (assuming you named your certificate `gdb-cert`.)
 
-Now run `M-x gdb` in Emacs and enter `/usr/local/bin/gdb -i-mi [BINARY]`, or
-`M-x gud-gdb` and `/usr/local/bin/gdb --fullname [BINARY]` if you want the old
-version of GUD, and you're off!
+Now run `M-x gdb` in Emacs and enter `/usr/local/bin/gdb -i-mi [BINARY]`, or `M-x gud-gdb` and `/usr/local/bin/gdb --fullname [BINARY]` if you want the old version of GUD, and you're off!
 
-Sometimes Emacs gets unhappy and complains
-_Wrong type argument: frame-live-p, #<dead frame ..._
-whenever I try to kill a buffer.
-[This fixes it](http://sleekyak.tumblr.com/post/790523026/if-emacs-claims-you-have-a-dead-frame):
-`M-: (setq menu-updating-frame nil)`.
+Sometimes Emacs gets unhappy and complains _Wrong type argument: frame-live-p, #<dead frame ..._ whenever I try to kill a buffer. [This fixes it](http://sleekyak.tumblr.com/post/790523026/if-emacs-claims-you-have-a-dead-frame): `M-: (setq menu-updating-frame nil)`.
 
 <a name="Firefox"></a>
 #### Firefox
 
-I migrated my Firefox profile by brute force: I copied my profile directory
-directly from `~/.mozilla/firefox/personal/` to `~/Library/Application
-Support/Firefox/Profiles/personal` and updated the fully qualified home
-directory paths in `prefs.js`, `search.json`, `extensions.ini`.
+I migrated my Firefox profile by brute force: I copied my profile directory directly from `~/.mozilla/firefox/personal/` to `~/Library/Application Support/Firefox/Profiles/personal` and updated the fully qualified home directory paths in `prefs.js`, `search.json`, `extensions.ini`.
 
-This mostly worked, but a few things like history didn't entirely make it. Next
-time, I might consider a backup and restore utility like
-[FEBE](https://addons.mozilla.org/en-US/firefox/addon/febe/) instead.
+This mostly worked, but a few things like history didn't entirely make it. Next time, I might consider a backup and restore utility like [FEBE](https://addons.mozilla.org/en-US/firefox/addon/febe/) instead.
 
-I also noticed that fonts were grainy on Firefox 19 on my retina display.
-Evidently this is temporary until Firefox 20, to work around a bug. I followed
-[these instructions](http://support.mozilla.org/en-US/questions/947663) to
-re-enable retina display support by setting `gfx.hidpi.enabled` to `2` in
-`about:config`.
+I also noticed that fonts were grainy on Firefox 19 on my retina display. Evidently this is temporary until Firefox 20, to work around a bug. I followed [these instructions](http://support.mozilla.org/en-US/questions/947663) to re-enable retina display support by setting `gfx.hidpi.enabled` to `2` in `about:config`.
 
-One note: my tweak to
-[stop app tabs from glowing](http://superuser.com/questions/271512/can-the-glow-notification-on-firefox-4s-app-tabs-be-disabled)
-when they have updates didn't work out of the box. It took a while, but someone
-on the Apple StackExchange finally
-[led me to the fix](http://apple.stackexchange.com/questions/84139/how-to-disable-firefoxs-app-tab-glow). Yay!
+One note: my tweak to [stop app tabs from glowing](http://superuser.com/questions/271512/can-the-glow-notification-on-firefox-4s-app-tabs-be-disabled) when they have updates didn't work out of the box. It took a while, but someone on the Apple StackExchange finally [led me to the fix](http://apple.stackexchange.com/questions/84139/how-to-disable-firefoxs-app-tab-glow). Yay!
 
-Also, another not-Mac-related note: I love
-[Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/),
-and I also love the
-[Twitter Keyboard Shortcuts](http://userscripts.org/scripts/show/126985)
-userscript. It makes `o` open the first link in a tweet, `p` go to the author's
-profile, and more. So useful.
+Also, another not-Mac-related note: I love [Greasemonkey](https://addons.mozilla.org/en-US/firefox/addon/greasemonkey/), and I also love the [Twitter Keyboard Shortcuts](http://userscripts.org/scripts/show/126985) userscript. It makes `o` open the first link in a tweet, `p` go to the author's profile, and more. So useful.
 
-At one point, Firefox started hanging on me regularly. As often as once or twice
-a minute or so, it would hang for ~5s or so, sometimes long enough to make OS X
-show me the beach ball. I looked through Mozilla's
-[Firefox troubleshooting docs](https://support.mozilla.org/en-US/products/firefox/fix-problems)
-and found a
-[recommendation to remove old session restore files](https://support.mozilla.org/en-US/kb/firefox-hangs-or-not-responding#w_delete-duplicated-session-restore-files),
-`sessionstore*.*` and `sessionstore-backups/*` in my Firefox profile directory.
-That helped, but only for a couple weeks. I then tried the bigger hammer of
-[wiping my places database](https://support.mozilla.org/en-US/kb/firefox-hangs-or-not-responding#w_create-a-new-places-database)
-(*sniff*), and voila, that did the trick!
+At one point, Firefox started hanging on me regularly. As often as once or twice a minute or so, it would hang for ~5s or so, sometimes long enough to make OS X show me the beach ball. I looked through Mozilla's [Firefox troubleshooting docs](https://support.mozilla.org/en-US/products/firefox/fix-problems) and found a [recommendation to remove old session restore files](https://support.mozilla.org/en-US/kb/firefox-hangs-or-not-responding#w_delete-duplicated-session-restore-files), `sessionstore*.*` and `sessionstore-backups/*` in my Firefox profile directory. That helped, but only for a couple weeks. I then tried the bigger hammer of [wiping my places database](https://support.mozilla.org/en-US/kb/firefox-hangs-or-not-responding#w_create-a-new-places-database) (*sniff*), and voila, that did the trick!
 
-I set `media.autoplay.enabled` in `about:config` to `false` to stop videos from
-playing automatically.
+I set `media.autoplay.enabled` in `about:config` to `false` to stop videos from playing automatically.
 
 <a name="webextensions-and-multiprocess"></a>
 ##### WebExtensions and multiprocess
@@ -279,17 +169,7 @@ Mozilla [put together some resources to help find WebExtension alternatives to e
 * [ViewSourceWith](https://addons.mozilla.org/en-US/firefox/addon/dafizilla-viewsourcewith/) => [`view_source.editor.external` and `view_source.editor.path` in `about:config`](https://www.ghacks.net/2009/12/07/add-and-use-multiple-source-code-editors-in-firefox/)
 * [keyconfig](https://addons.mozilla.org/en-US/firefox/addon/dorando-keyconfig/?src=search) => [Shortkeys](https://addons.mozilla.org/en-US/firefox/addon/shortkeys-custom-shortcuts/) (also tried [Saka Key](https://addons.mozilla.org/firefox/addon/saka-key/))
 
-Keyboard shortcuts were by far the hardest to migrate. The
-[WebExtension `commands` API](https://developer.chrome.com/extensions/commands) is
-[famously](https://bugzilla.mozilla.org/show_bug.cgi?id=1215061)
-[weaker](https://github.com/lydell/webextension-keyboard/)
-than the old [XUL-based API](https://developer.mozilla.org/en-US/Add-ons/SDK).
-[Most](https://github.com/Lord-Kamina/keybinder#sorry-guys-but-im-afraid-this-is-the-end-of-the-line)
-[plugins](https://github.com/vimperator/vimperator-labs#end-of-life-and-alternatives)
-[gave](https://addons.mozilla.org/en-US/firefox/addon/dorando-keyconfig/reviews/924874/)
-[up](https://addons.mozilla.org/en-US/firefox/addon/s3menu-wizard/)
-[migrating](https://gist.github.com/IzzySoft/db7c7d4243283ca84b3abd8b94114e2e)
-[entirely](https://addons.mozilla.org/en-US/firefox/addon/hit-a-hint/).
+Keyboard shortcuts were by far the hardest to migrate. The [WebExtension `commands` API](https://developer.chrome.com/extensions/commands) is [famously](https://bugzilla.mozilla.org/show_bug.cgi?id=1215061) [weaker](https://github.com/lydell/webextension-keyboard/) than the old [XUL-based API](https://developer.mozilla.org/en-US/Add-ons/SDK). [Most](https://github.com/Lord-Kamina/keybinder#sorry-guys-but-im-afraid-this-is-the-end-of-the-line) [plugins](https://github.com/vimperator/vimperator-labs#end-of-life-and-alternatives) [gave](https://addons.mozilla.org/en-US/firefox/addon/dorando-keyconfig/reviews/924874/) [up](https://addons.mozilla.org/en-US/firefox/addon/s3menu-wizard/) [migrating](https://gist.github.com/IzzySoft/db7c7d4243283ca84b3abd8b94114e2e) [entirely](https://addons.mozilla.org/en-US/firefox/addon/hit-a-hint/).
 
 Fortunately, I only really care about a few custom key bindings. In particular, I have decades of [switching between windows](#Window_management) with ⌘ (Command) I/J/K/L burned into my muscle memory, so ⌘-L to focus the address bar is a non-starter. I use Control-L instead. I ended up using [Karabiner Elements](#Sierra) to map that to F6, its second key binding in Firefox. I similarly mapped ⌘-[0-9,Backspace] to Control for switching to specific tabs.
 
@@ -299,203 +179,78 @@ Fortunately, I only really care about a few custom key bindings. In particular, 
 <a name="Mac_OS_X"></a>
 #### Mac OS X
 
-There are lots of little differences in the OS and its shell. To start, I knew
-it would ask me to make an
-[Apple Id](http://www.apple.com/asia/support/appleid/) for use with the App
-Store and other Apple services, but I didn't expect it to be quite so
-aggressive. Even so, I've managed to sidestep it so far. I had to create one to
-download [XCode](#Xcode), but I've avoided attaching
-it to the computer itself.
+There are lots of little differences in the OS and its shell. To start, I knew it would ask me to make an [Apple Id](http://www.apple.com/asia/support/appleid/) for use with the App Store and other Apple services, but I didn't expect it to be quite so aggressive. Even so, I've managed to sidestep it so far. I had to create one to download [XCode](#Xcode), but I've avoided attaching it to the computer itself.
 
-Programs are usually run as
-[`.app` files](http://superuser.com/questions/78176/how-do-mac-app-execution-files-work),
-executable archives that include a manifest, binaries, supporting files, icons,
-etc. They're usually placed in the `/Applications` directory. The actual
-binary(ies) are in `XXX.app/Contents/MacOS/`.
+Programs are usually run as [`.app` files](http://superuser.com/questions/78176/how-do-mac-app-execution-files-work), executable archives that include a manifest, binaries, supporting files, icons, etc. They're usually placed in the `/Applications` directory. The actual binary(ies) are in `XXX.app/Contents/MacOS/`.
 
-Outside of the App Store, there are two standard ways to install programs.
-[`.dmg` files](http://www.ofzenandcomputing.com/zanswers/779/) are disk images,
-not zip files or installer binaries. Double click on them to mount them, drag
-the application file inside to the Applications folder, then unmount the image and
-optionally delete it.
+Outside of the App Store, there are two standard ways to install programs. [`.dmg` files](http://www.ofzenandcomputing.com/zanswers/779/) are disk images, not zip files or installer binaries. Double click on them to mount them, drag the application file inside to the Applications folder, then unmount the image and optionally delete it.
 
-[`.pkg`](http://www.macfreek.nl/memory/Mac_OS_X_Installer_Packages#Package_file_format)
-and
-[`.mpkg` files](http://www.macfreek.nl/memory/Mac_OS_X_Installer_Packages#Multipackage_Files)
-are package and multipackage installer binaries, respectively. They'll open with
-the built in `installer` program automatically, or you can
-[run it manually](http://www.commandlinefu.com/commands/view/2031/install-an-mpkg-from-the-command-line-on-osx):
-`sudo installer -pkg /Volumes/someapp/someapp.mpkg -target /`
+[`.pkg`](http://www.macfreek.nl/memory/Mac_OS_X_Installer_Packages#Package_file_format) and [`.mpkg` files](http://www.macfreek.nl/memory/Mac_OS_X_Installer_Packages#Multipackage_Files) are package and multipackage installer binaries, respectively. They'll open with the built in `installer` program automatically, or you can [run it manually](http://www.commandlinefu.com/commands/view/2031/install-an-mpkg-from-the-command-line-on-osx): `sudo installer -pkg /Volumes/someapp/someapp.mpkg -target /`
 
-Power management is pretty solid out of the box, and there's even a useful
-command line utility, `pmset`. There's no built in way to tell it not to sleep
-when the lid closes, but there are third party programs like
-[InsomniaT](http://forums.macrumors.com/showpost.php?p=12150590&postcount=4) and
-[NoSleep](http://www.technologytell.com/apple/90045/prevent-your-macbook-from-sleeping-when-its-lid-is-closed-with-nosleep/).
-[Power nap](http://support.apple.com/kb/ht5394) looks related but isn't; it's
-proprietary and only wakes up to do Apple-specific things.
-Incidentally, the keyboard shortcut for sleep is Cmd-Option-Power.
+Power management is pretty solid out of the box, and there's even a useful command line utility, `pmset`. There's no built in way to tell it not to sleep when the lid closes, but there are third party programs like [InsomniaT](http://forums.macrumors.com/showpost.php?p=12150590&postcount=4) and [NoSleep](http://www.technologytell.com/apple/90045/prevent-your-macbook-from-sleeping-when-its-lid-is-closed-with-nosleep/). [Power nap](http://support.apple.com/kb/ht5394) looks related but isn't; it's proprietary and only wakes up to do Apple-specific things. Incidentally, the keyboard shortcut for sleep is Cmd-Option-Power.
 
-System Preferences is self explanatory; it's the equivalent of dotfiles in \*nix
-and Control Panel in Windows. I *think* it's actually just a pretty frontend to
-System Information (in Utilities), which is similar to GConf or the Windows
-Registry. The actual preference data is (sometimes?) stored in
-[`.plist` files](http://en.wikipedia.org/wiki/Property_list).
-There used to be a standalone
-[Property List Editor app](http://en.wikipedia.org/wiki/Apple_Developer_Tools#Property_List_Editor),
-but now it's embedded in [XCode](#XCode).
-There's also the `defaults(1)` command line program.
+System Preferences is self explanatory; it's the equivalent of dotfiles in \*nix and Control Panel in Windows. I *think* it's actually just a pretty frontend to System Information (in Utilities), which is similar to GConf or the Windows Registry. The actual preference data is (sometimes?) stored in [`.plist` files](http://en.wikipedia.org/wiki/Property_list). There used to be a standalone [Property List Editor app](http://en.wikipedia.org/wiki/Apple_Developer_Tools#Property_List_Editor), but now it's embedded in [XCode](#XCode). There's also the `defaults(1)` command line program.
 
-There's a cottage industry of system tweaking programs like
-[Onyx](http://www.macupdate.com/app/mac/11582/onyx) and
-[Cocktail](http://www.maintain.se/cocktail), similar to Windows's venerable
-[Power Toys](http://en.wikipedia.org/wiki/Microsoft_PowerToys), that just set
-preferences that aren't exposed in the System Preferences UI. There are also
-plenty of [good](http://knoopx.net/2011/10/28/os-x-lion-tweaks)
-[lists](http://secrets.blacktree.com/) of individual useful settings to change.
+There's a cottage industry of system tweaking programs like [Onyx](http://www.macupdate.com/app/mac/11582/onyx) and [Cocktail](http://www.maintain.se/cocktail), similar to Windows's venerable [Power Toys](http://en.wikipedia.org/wiki/Microsoft_PowerToys), that just set preferences that aren't exposed in the System Preferences UI. There are also plenty of [good](http://knoopx.net/2011/10/28/os-x-lion-tweaks) [lists](http://secrets.blacktree.com/) of individual useful settings to change.
 
-I turned on FileVault 2, Apple's full-disk encryption system, which is evidently
-much better than version 1. The only disappointing thing is that it requires me
-to log in with my password after a certain amount of idle time. I tried to
-[disable that](http://superuser.com/questions/313425/toggle-ask-for-password-after-screensaver-sleep-or-the-delay-in-10-7-using-ter),
-but I needed to turn on
-[automatic login](http://forums.macrumors.com/showthread.php?t=1416302), which
-[FileVault doesn't allow](https://discussions.apple.com/message/17983068#17983068).
-I even tried variations on `defaults write com.apple.screensaver askForPassword
-0`, but no luck. Sigh, oh well.
+I turned on FileVault 2, Apple's full-disk encryption system, which is evidently much better than version 1. The only disappointing thing is that it requires me to log in with my password after a certain amount of idle time. I tried to [disable that](http://superuser.com/questions/313425/toggle-ask-for-password-after-screensaver-sleep-or-the-delay-in-10-7-using-ter), but I needed to turn on [automatic login](http://forums.macrumors.com/showthread.php?t=1416302), which [FileVault doesn't allow](https://discussions.apple.com/message/17983068#17983068). I even tried variations on `defaults write com.apple.screensaver askForPassword 0`, but no luck. Sigh, oh well.
 
-Networking is pretty straightforward, and has its own command line utility,
-[`airport`](http://osxdaily.com/2007/01/18/airport-the-little-known-command-line-wireless-utility/).
+Networking is pretty straightforward, and has its own command line utility, [`airport`](http://osxdaily.com/2007/01/18/airport-the-little-known-command-line-wireless-utility/).
 
 Keychain <strike>integrates with SSH keys automatically, which is pretty damn cool</strike> evidently no longer integrates with `ssh-agent` automatically, as of Sierra or High Sierra. It doesn't handle GnuPG keys either, but I only use mine rarely, so I don't mind typing the password each time or just using stock `gpg-agent`.
 
-To
-[set your hostname](http://osxdaily.com/2012/10/24/set-the-hostname-computer-name-and-bonjour-name-separately-in-os-x/)
-in the GUI, go to System Preferences, Sharing, Computer Name. To do it from the
-command line: `scutil --set [HostName,LocalHostName,ComputerName]`
+To [set your hostname](http://osxdaily.com/2012/10/24/set-the-hostname-computer-name-and-bonjour-name-separately-in-os-x/) in the GUI, go to System Preferences, Sharing, Computer Name. To do it from the command line: `scutil --set [HostName,LocalHostName,ComputerName]`
 
-Run this to
-[always show the full path in Finder windows](http://apple.stackexchange.com/a/574/43900): `defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES`.
+Run this to [always show the full path in Finder windows](http://apple.stackexchange.com/a/574/43900): `defaults write com.apple.finder _FXShowPosixPathInTitle -bool YES`.
 
-Sound has a nice feature: it automatically remembers volume for headphone vs
-speakers separately, which helps you avoid blowing out your eardrums. Nice.
+Sound has a nice feature: it automatically remembers volume for headphone vs speakers separately, which helps you avoid blowing out your eardrums. Nice.
 
-Oddly though, the baseline volume is too loud for a few of my headphones.
-[Other people have the same problem](http://forums.macrumors.com/showthread.php?t=1232195).
-[This StackExchange question](http://apple.stackexchange.com/questions/63253/lowest-volume-is-still-too-loudhow-can-i-make-it-even-lower)
-offers a number of solutions:
-  * Hold Option and Shift while pressing the volume buttons to get smaller
-increments, or use the Menu Bar icon. Neither of those go as low as I'd like,
-though.
-  * Use the Volume Down button to lower the volume all the way to zero, then
-press the Mute button to unmute. This goes much lower than even the smallest
-Option-Shift increment.
-  * Use AppleScript: `osascript -e "set Volume 0.01"`. I couldn't get it to
-register anything below .01, though, which is the same volume as the unmute
-trick above.
-  * Install a third party equalizer like [Hear](http://hear.en.softonic.com/mac)
-or limiter like [Sound Bunny](http://www.prosofteng.com/products/soundbunny.php) or
-[Volimiter](http://www.anoshkin.net/products/mac/volimiter/).
+Oddly though, the baseline volume is too loud for a few of my headphones. [Other people have the same problem](http://forums.macrumors.com/showthread.php?t=1232195). [This StackExchange question](http://apple.stackexchange.com/questions/63253/lowest-volume-is-still-too-loudhow-can-i-make-it-even-lower) offers a number of solutions:
+  * Hold Option and Shift while pressing the volume buttons to get smaller increments, or use the Menu Bar icon. Neither of those go as low as I'd like, though.
+  * Use the Volume Down button to lower the volume all the way to zero, then press the Mute button to unmute. This goes much lower than even the smallest Option-Shift increment.
+  * Use AppleScript: `osascript -e "set Volume 0.01"`. I couldn't get it to register anything below .01, though, which is the same volume as the unmute trick above.
+  * Install a third party equalizer like [Hear](http://hear.en.softonic.com/mac) or limiter like [Sound Bunny](http://www.prosofteng.com/products/soundbunny.php) or [Volimiter](http://www.anoshkin.net/products/mac/volimiter/).
 
-In the end, I went the low tech route and passed `-volume 1` to `mplayer`, my
-music player of choice.
+In the end, I went the low tech route and passed `-volume 1` to `mplayer`, my music player of choice.
 
-If you have multiple displays, the Menu Bar is always on the "primary" display.
-This is inconvenient when you're working on another display. You can
-[move it](http://macdevelopertips.com/system/multiple-monitors-specifying-menu-location.html),
-but you need a
-[third party app](http://lifehacker.com/5489410/secondbar-puts-a-menu-bar-on-all-your-macs-monitors)
-to duplicate it on all displays. Also see
-[this discussion](http://forums.macrumors.com/showthread.php?t=352532), among
-others.
+If you have multiple displays, the Menu Bar is always on the "primary" display. This is inconvenient when you're working on another display. You can [move it](http://macdevelopertips.com/system/multiple-monitors-specifying-menu-location.html), but you need a [third party app](http://lifehacker.com/5489410/secondbar-puts-a-menu-bar-on-all-your-macs-monitors) to duplicate it on all displays. Also see [this discussion](http://forums.macrumors.com/showthread.php?t=352532), among others.
 
-Many *nix-isms work like you'd expect, but not all. `.login` files are one that
-didn't make the cut. To resurrect yours, put it into a shell script, or just
-`chmod +x` it and add `#!/bin/bash` at the top, then
-[add a Login Item for it](http://stackoverflow.com/questions/135688/setting-environment-variables-in-os-x/5444960#5444960)
-to your user in System Preferences => Users & Groups.
+Many *nix-isms work like you'd expect, but not all. `.login` files are one that didn't make the cut. To resurrect yours, put it into a shell script, or just `chmod +x` it and add `#!/bin/bash` at the top, then [add a Login Item for it](http://stackoverflow.com/questions/135688/setting-environment-variables-in-os-x/5444960#5444960) to your user in System Preferences => Users & Groups.
 
-`cron` is deprecated on Mac OS X in favor of Apple's own
-[`launchd`](http://en.wikipedia.org/wiki/Launchd). I ported my crontab with
-[this tutorial](http://nathangrigg.net/2012/07/schedule-jobs-using-launchd/#launchctl)
-and
-[Apple's reference doc](http://developer.apple.com/library/mac/#/documentation/Darwin/Reference/ManPages/man5/launchd.plist.5.html).
+`cron` is deprecated on Mac OS X in favor of Apple's own [`launchd`](http://en.wikipedia.org/wiki/Launchd). I ported my crontab with [this tutorial](http://nathangrigg.net/2012/07/schedule-jobs-using-launchd/#launchctl) and [Apple's reference doc](http://developer.apple.com/library/mac/#/documentation/Darwin/Reference/ManPages/man5/launchd.plist.5.html).
+
 
 
 <a name="Keyboard_and_mouse"></a>
 #### Keyboard and mouse
 
-Thanks to [Fitts' law](http://en.wikipedia.org/wiki/Fitts'_law), I tend to use
-the keyboard much more than the mouse. Fortunately, OS X has
-[lots of built in keyboard shortcuts](http://support.apple.com/kb/ht1343), and
-it's very configurable out of the box. You can also
-[add shortcuts to third party applications](http://support.apple.com/kb/PH3957),
-to a degree, and wonder of wonders, even swap Caps Lock and Control. (Speaking
-of which, if you do that in System Preferences, remember to do it in
-_each keyboard_ you use!)
+Thanks to [Fitts' law](http://en.wikipedia.org/wiki/Fitts'_law), I tend to use the keyboard much more than the mouse. Fortunately, OS X has [lots of built in keyboard shortcuts](http://support.apple.com/kb/ht1343), and it's very configurable out of the box. You can also [add shortcuts to third party applications](http://support.apple.com/kb/PH3957), to a degree, and wonder of wonders, even swap Caps Lock and Control. (Speaking of which, if you do that in System Preferences, remember to do it in _each keyboard_ you use!)
 
-Beyond that, the best thing I've found to make OS X more keyboardable is
-[Karabiner](https://pqrs.org/osx/karabiner/) (née KeyRemap4MacBook). I use it to
-get [Sticky Keys](http://support.apple.com/kb/PH11262) that don't
-[lock](http://apple.stackexchange.com/questions/13708/disabling-the-keep-pressed-function-of-os-x-sticky-keys),
-add Emacs key bindings in text controls, reclaim some of the function keys, make
-Control-arrow keys navigate by words, make Return act like Control when it's
-held down, and emulate my beloved missing Page Up and Page Down keys.
-(Function + arrow keys work, but take two hands, so they're not quite the same.)
+Beyond that, the best thing I've found to make OS X more keyboardable is [Karabiner](https://pqrs.org/osx/karabiner/) (née KeyRemap4MacBook). I use it to get [Sticky Keys](http://support.apple.com/kb/PH11262) that don't [lock](http://apple.stackexchange.com/questions/13708/disabling-the-keep-pressed-function-of-os-x-sticky-keys), add Emacs key bindings in text controls, reclaim some of the function keys, make Control-arrow keys navigate by words, make Return act like Control when it's held down, and emulate my beloved missing Page Up and Page Down keys. (Function + arrow keys work, but take two hands, so they're not quite the same.)
 
-One Karabiner note: if you bind simultaneous key presses, e.g. pressing both
-down and right arrow keys together to Page Down, try lowering the
-_[Simultaneous Key Presses] Delay Threshold_ setting in the _Key Repeat_ tab as
-low as you can, ideally 10ms or so, so that pressing those keys in rapid
-succession doesn't accidentally trigger the new binding.
+One Karabiner note: if you bind simultaneous key presses, e.g. pressing both down and right arrow keys together to Page Down, try lowering the _[Simultaneous Key Presses] Delay Threshold_ setting in the _Key Repeat_ tab as low as you can, ideally 10ms or so, so that pressing those keys in rapid succession doesn't accidentally trigger the new binding.
 
-It's not all kittens and rainbows, though. I sorely miss Windows and
-Linux's Shift-F10 shortcut for right click. Evidently there
-[isn't an equivalent one](http://superuser.com/questions/93937/keyboard-shortcut-to-right-click-in-mac-os-x)
-in OS X. You can
-[use mouse keys and Ctrl-5](http://superuser.com/questions/93561/right-click-using-keyboard-in-mac-os-x),
-but that ties up the rest of keyboard, so it's not really an option.
+It's not all kittens and rainbows, though. I sorely miss Windows and Linux's Shift-F10 shortcut for right click. Evidently there [isn't an equivalent one](http://superuser.com/questions/93937/keyboard-shortcut-to-right-click-in-mac-os-x) in OS X. You can [use mouse keys and Ctrl-5](http://superuser.com/questions/93561/right-click-using-keyboard-in-mac-os-x), but that ties up the rest of keyboard, so it's not really an option.
 
-Likewise, there's no built in shortcut for maximizing a window, but you can easily
-[add one on an app by app basis](http://simianuprising.com/2010/03/15/mac-osx-setting-a-keyboard-shortcut-for-maximizeresize-window-green-jewel/)
-in System Preferences, using the _Zoom_ menu item.
+Likewise, there's no built in shortcut for maximizing a window, but you can easily [add one on an app by app basis](http://simianuprising.com/2010/03/15/mac-osx-setting-a-keyboard-shortcut-for-maximizeresize-window-green-jewel/) in System Preferences, using the _Zoom_ menu item.
 
-I also dreadfully miss navigating menus with the keyboard. There's a keyboard
-shortcut to focus the menu bar, but it doesn't work in all apps, e.g. Emacs.
+I also dreadfully miss navigating menus with the keyboard. There's a keyboard shortcut to focus the menu bar, but it doesn't work in all apps, e.g. Emacs.
 
-Some modal dialog boxes can't be navigated with the Tab key, even with
-_Full Keyboard Access_ set to _All controls_ in System Preferences => Keyboard.
-I think the common thread is that those dialog boxes don't have a corresponding
-GUI app running, e.g. Slate. I thought they were
-[utility windows](http://apple.stackexchange.com/questions/71645/how-to-interact-with-dialog-boxes-using-keyboard-that-appear-not-to-allow-keyboa),
-but they don't respond to Ctrl-F6 either.
+Some modal dialog boxes can't be navigated with the Tab key, even with _Full Keyboard Access_ set to _All controls_ in System Preferences => Keyboard. I think the common thread is that those dialog boxes don't have a corresponding GUI app running, e.g. Slate. I thought they were [utility windows](http://apple.stackexchange.com/questions/71645/how-to-interact-with-dialog-boxes-using-keyboard-that-appear-not-to-allow-keyboa), but they don't respond to Ctrl-F6 either.
 
-In Adium (and maybe other apps?), two dashes `--` get replaced by an emdash `—`.
-To disable this, right click on the text box and uncheck _Substitutions => Smart
-Dashes_. ([Details.](http://forums.cocoaforge.com/viewtopic.php?f=13&t=23042))
+In Adium (and maybe other apps?), two dashes `--` get replaced by an emdash `—`. To disable this, right click on the text box and uncheck _Substitutions => Smart Dashes_. ([Details.](http://forums.cocoaforge.com/viewtopic.php?f=13&t=23042))
 
 
 <a name="Xcode"></a>
 #### Xcode
 
-I prefer to write code in [Emacs](#Emacs) and read docs in [Firefox](#Firefox),
-but I've been working on [iOS](https://developer.apple.com/xcode/) apps
-recently, which Apple only halfheartedly supports outside of
-its IDE, [Xcode](https://developer.apple.com/xcode/). Fortunately, other people
-have [stepped in](http://roupam.github.com/#sec-7) to fill the void.
+I prefer to write code in [Emacs](#Emacs) and read docs in [Firefox](#Firefox), but I've been working on [iOS](https://developer.apple.com/xcode/) apps recently, which Apple only halfheartedly supports outside of its IDE, [Xcode](https://developer.apple.com/xcode/). Fortunately, other people have [stepped in](http://roupam.github.com/#sec-7) to fill the void.
 
-Apple's developer docs for Objective C, Cocoa, Mac OS X, iOS, etc. are stored on
-your hard drive as HTML - yay! - so they're easy to read in a browser. Look in
-`~/Library/Developer/Shared/Documentation/DocSets` and point your browser at
-`Contents/Resources/Documents/index.html` inside the docset you want to read.
+Apple's developer docs for Objective C, Cocoa, Mac OS X, iOS, etc. are stored on your hard drive as HTML - yay! - so they're easy to read in a browser. Look in `~/Library/Developer/Shared/Documentation/DocSets` and point your browser at `Contents/Resources/Documents/index.html` inside the docset you want to read.
 
-`docsetutil` (`/Applications/Xcode.app/Contents/Developer/usr/bin/docsetutil`)
-also looks handy. It can search an index of all installed docsets, and there's
-[Emacs integration](http://roupam.github.com/#sec-4).
+`docsetutil` (`/Applications/Xcode.app/Contents/Developer/usr/bin/docsetutil`) also looks handy. It can search an index of all installed docsets, and there's [Emacs integration](http://roupam.github.com/#sec-4).
 
-I'm currently trying out [Dash](http://kapeli.com/), a document viewer that
-includes a ton of docsets for popular languages, platforms, and frameworks. It
-looks great so far, and has Emacs integration too.
+I'm currently trying out [Dash](http://kapeli.com/), a document viewer that includes a ton of docsets for popular languages, platforms, and frameworks. It looks great so far, and has Emacs integration too.
 
 
 <a name="Sierra"></a>
@@ -521,17 +276,9 @@ I didn't find many ideas for how to prevent it in the first place, though. I fin
 
 Upgrading to El Capitan was mostly uneventful. Here are some minor notes:
 
-* API changes broke one of my favorite utilities,
-  [MenuMeters](http://www.ragingmenace.com/software/menumeters/). The author
-  thinks it's unfixable, but
-  [Yuji Tachikawa](http://member.ipmu.jp/yuji.tachikawa/) has
-  [patched it so it works](http://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/).
-  Yay!
-* Emacs's `visible-bell` feature is half broken too.
-  [They're working on it.](http://lists.gnu.org/archive/html/bug-gnu-emacs/2015-10/msg00481.html)
-* The three finger drag option is no longer in _System Preferences => Trackpad_.
-  It's now in _System Preferences => Accessibility => Mouse & Trackpad =>
-  Trackpad Options… => Enable dragging_.
+* API changes broke one of my favorite utilities, [MenuMeters](http://www.ragingmenace.com/software/menumeters/). The author thinks it's unfixable, but [Yuji Tachikawa](http://member.ipmu.jp/yuji.tachikawa/) has [patched it so it works](http://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/). Yay!
+* Emacs's `visible-bell` feature is half broken too. [They're working on it.](http://lists.gnu.org/archive/html/bug-gnu-emacs/2015-10/msg00481.html)
+* The three finger drag option is no longer in _System Preferences => Trackpad_. It's now in _System Preferences => Accessibility => Mouse & Trackpad => Trackpad Options… => Enable dragging_.
 
 
 <a name="Yosemite"></a>
@@ -539,90 +286,46 @@ Upgrading to El Capitan was mostly uneventful. Here are some minor notes:
 
 Upgrading to Yosemite was pleasantly uneventful. Here are some minor notes:
 
-* Evidently, if you have anything in `/usr/local`,
-  [your upgrade will slow down drastically](https://jimlindley.com/blog/yosemite-upgrade-homebrew-tips/).
-  I moved it to my home directory before upgrading, then back afterward, which
-  worked fine.
-* As of 10/25/2014, UI buttons and controls don't highlight in blue when you
-  focus them with Tab like they did in previous versions.
-  [This is probably a bug](http://apple.stackexchange.com/questions/152233/is-the-blue-button-outline-in-dialog-windows-removed-in-yosemite-when-using-tab),
-  and it's been
-  [reported on OpenRadar](http://openradar.appspot.com/radar?id=5297887323881472).
-* The `ping` command was no longer in my $PATH. At first, I thought it had just
-  disappeared, but I finally discovered it had moved to `/sbin`. Or maybe
-  `/sbin` was no longer in my path by default. Anyway.
-* My laptop's hostname kept getting renamed with a numeric suffix, e.g. `hell-3`
-  instead of `hell`, and the suffix kept increasing.
-  [This is evidently due to new discoveryd behavior.](http://ispire.me/computer-name-changing-constantly-yosemite/)
-  Run this to disable that behavior:
-  `sudo /usr/libexec/PlistBuddy -c "Add :ProgramArguments: string --no-namechange" /System/Library/LaunchDaemons/com.apple.discoveryd.plist`
-  (Also see [this discussions.apple.com thread](https://discussions.apple.com/thread/6631728).)
+* Evidently, if you have anything in `/usr/local`, [your upgrade will slow down drastically](https://jimlindley.com/blog/yosemite-upgrade-homebrew-tips/). I moved it to my home directory before upgrading, then back afterward, which worked fine.
+* As of 10/25/2014, UI buttons and controls don't highlight in blue when you focus them with Tab like they did in previous versions. [This is probably a bug](http://apple.stackexchange.com/questions/152233/is-the-blue-button-outline-in-dialog-windows-removed-in-yosemite-when-using-tab), and it's been [reported on OpenRadar](http://openradar.appspot.com/radar?id=5297887323881472).
+* The `ping` command was no longer in my $PATH. At first, I thought it had just disappeared, but I finally discovered it had moved to `/sbin`. Or maybe `/sbin` was no longer in my path by default. Anyway.
+* My laptop's hostname kept getting renamed with a numeric suffix, e.g. `hell-3` instead of `hell`, and the suffix kept increasing. [This is evidently due to new discoveryd behavior.](http://ispire.me/computer-name-changing-constantly-yosemite/) Run this to disable that behavior: `sudo /usr/libexec/PlistBuddy -c "Add :ProgramArguments: string --no-namechange" /System/Library/LaunchDaemons/com.apple.discoveryd.plist` (Also see [this discussions.apple.com thread](https://discussions.apple.com/thread/6631728).)
+
+
+<a name="El Capitan"></a>
+#### El Capitan
+
+Upgrading to El Capitan was mostly uneventful. Here are some minor notes:
+
+* API changes broke one of my favorite utilities, [MenuMeters](http://www.ragingmenace.com/software/menumeters/). The author thinks it's unfixable, but [Yuji Tachikawa](http://member.ipmu.jp/yuji.tachikawa/) has [patched it so it works](http://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/). Yay!
+* Emacs's `visible-bell` feature is half broken too. [They're working on it.](http://lists.gnu.org/archive/html/bug-gnu-emacs/2015-10/msg00481.html)
+* The three finger drag option is no longer in _System Preferences => Trackpad_. It's now in _System Preferences => Accessibility => Mouse & Trackpad => Trackpad Options… => Enable dragging_.
 
 
 <a name="Miscellaneous"></a>
 #### Miscellaneous
 
-I used [Pidgin](http://pidgin.im/) on Linux. [Adium](http://adium.im/), its OS X
-counterpart, seems like an ok replacement so far. One obscure feature I liked in
-Pidgin was the ability to turn off the "Ryan has left the conversation"
-notifications that it sends when I close chat windows. Happily, it looks like
-[Adium turned these off entirely](https://trac.adium.im/ticket/8082#comment:24)
-a while back.
+I used [Pidgin](http://pidgin.im/) on Linux. [Adium](http://adium.im/), its OS X counterpart, seems like an ok replacement so far. One obscure feature I liked in Pidgin was the ability to turn off the "Ryan has left the conversation" notifications that it sends when I close chat windows. Happily, it looks like [Adium turned these off entirely](https://trac.adium.im/ticket/8082#comment:24) a while back.
 
-I'm using [Menu Meters](http://www.ragingmenace.com/software/menumeters/) to get
-minimal CPU and network activity monitors in the menu bar.
+I'm using [Menu Meters](http://www.ragingmenace.com/software/menumeters/) to get minimal CPU and network activity monitors in the menu bar.
 
-I'm using [HoRNDIS](http://joshuawise.com/horndis) for tethering over USB to my
-Android. I wish it put an
-[icon in the menu bar](https://github.com/jwise/HoRNDIS/issues/11), but
-otherwise it's great.
+I'm using [HoRNDIS](http://joshuawise.com/horndis) for tethering over USB to my Android. I wish it put an [icon in the menu bar](https://github.com/jwise/HoRNDIS/issues/11), but otherwise it's great.
 
 The built in Python doesn't read my `~/.python`. Not sure why yet.
 
-I have an Android phone, which meant I needed to download Google's
-[Android File Transfer](http://www.android.com/filetransfer/) MTP program to
-transfer files to it over USB. It works, but has one annoying feature: it
-automatically starts whenever I plug my phone into my computer. I
-[followed these instructions](https://cooltrainer.org/2012/12/21/taming-android-file-transfer-on-mac-os-x/)
-to disable that. Be sure to kill it in Activity Monitor before removing the
-login items and renaming the agent app!
+I have an Android phone, which meant I needed to download Google's [Android File Transfer](http://www.android.com/filetransfer/) MTP program to transfer files to it over USB. It works, but has one annoying feature: it automatically starts whenever I plug my phone into my computer. I [followed these instructions](https://cooltrainer.org/2012/12/21/taming-android-file-transfer-on-mac-os-x/) to disable that. Be sure to kill it in Activity Monitor before removing the login items and renaming the agent app!
 
-Recently, I've seen a `distnoted` process occasionally spin up and chew up 100%
-CPU (on one core) and a ton of memory, often in the neighborhood of 1.5G or so.
-The command line is `/usr/sbin/distnoted agent`, and it's started by `launchd`,
-neither of which help much. Web searches say `distnoted` manages notification
-delivery, and lots of other people report the same problem with it, but no
-single clear fix.
+Recently, I've seen a `distnoted` process occasionally spin up and chew up 100% CPU (on one core) and a ton of memory, often in the neighborhood of 1.5G or so. The command line is `/usr/sbin/distnoted agent`, and it's started by `launchd`, neither of which help much. Web searches say `distnoted` manages notification delivery, and lots of other people report the same problem with it, but no single clear fix.
 
-I
-[asked about it on StackExchange](http://apple.stackexchange.com/questions/111197/runaway-distnoted-process),
-and after some debugging, we determined that it was being
-[started by Spotlight](http://apple.stackexchange.com/questions/111197/runaway-distnoted-process#comment131521_111461),
-OS X's filesystem search feature. I've reined in the paths and file types that
-Spotlight is allowed to index, but that hasn't fixed it.
+I [asked about it on StackExchange](http://apple.stackexchange.com/questions/111197/runaway-distnoted-process), and after some debugging, we determined that it was being [started by Spotlight](http://apple.stackexchange.com/questions/111197/runaway-distnoted-process#comment131521_111461), OS X's filesystem search feature. I've reined in the paths and file types that Spotlight is allowed to index, but that hasn't fixed it.
 
-...it turns out this is probably an
-[Emacs memory leak](http://apple.stackexchange.com/a/118336/43900) that's fixed
-in 24.4. Fingers crossed!
+...it turns out this is probably an [Emacs memory leak](http://apple.stackexchange.com/a/118336/43900) that's fixed in 24.4. Fingers crossed!
 
-I noticed that my network connections (maybe just WiFi) were disconnecting when
-the display turned off. I went to System Preferences, Energy Saver, Power
-Adapater, and
-[checked _Prevent computer from sleeping automatically when the display is off_ and unchecked _Wake for Wi-Fi network access_](http://apple.stackexchange.com/a/161446/43900).
-I also ran `sudo pmset -a sleep 0` to
-[disable the computer sleep (as opposed to display sleep) timer](http://apple.stackexchange.com/a/144799/43900).
-Fingers crossed!
+I noticed that my network connections (maybe just WiFi) were disconnecting when the display turned off. I went to System Preferences, Energy Saver, Power Adapater, and [checked _Prevent computer from sleeping automatically when the display is off_ and unchecked _Wake for Wi-Fi network access_](http://apple.stackexchange.com/a/161446/43900). I also ran `sudo pmset -a sleep 0` to [disable the computer sleep (as opposed to display sleep) timer](http://apple.stackexchange.com/a/144799/43900). Fingers crossed!
 
-Mac OS X has multiple temporary directories, which is confusing. `/tmp` is
-symlinked to `/private/tmp`, which is evidently the system's temp dir. (?)
-There's also a multi-level hierarchy under `/var/folders`, which contains
-per-user temp dirs. Mine is currently `/var/folders/y_/7mgz0yqd.../T/`. OS X
-also points my `$TMPDIR` there by default.
+Mac OS X has multiple temporary directories, which is confusing. `/tmp` is symlinked to `/private/tmp`, which is evidently the system's temp dir. (?) There's also a multi-level hierarchy under `/var/folders`, which contains per-user temp dirs. Mine is currently `/var/folders/y_/7mgz0yqd.../T/`. OS X also points my `$TMPDIR` there by default.
 
-This got confusing after a while, so I eventually switched the `/tmp` symlink to
-point to my `/var/folders/...` dir and opened up its permissions to `a+rwx` so
-that daemons like Apache and MySQL could use it. Bad hygiene, but my laptop
-isn't a real server, nor is it really multi-user, so whatever.
+This got confusing after a while, so I eventually switched the `/tmp` symlink to point to my `/var/folders/...` dir and opened up its permissions to `a+rwx` so that daemons like Apache and MySQL could use it. Bad hygiene, but my laptop isn't a real server, nor is it really multi-user, so whatever.
 
 
 <a name="Remaining_problems"></a>

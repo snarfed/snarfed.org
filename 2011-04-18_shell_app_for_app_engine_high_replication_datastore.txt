@@ -5,35 +5,12 @@ Shell app for App Engine's High Replication Datastore
  <a href="http://appengine.google.com/">
   <img src="/appengine.jpg" /></a></p>
 
-I've had less to say here about [App Engine](http://appengine.google.com/) since
-I [moved to a new team last year](/2010-03-13_new_job). The team has still been
-[cranking](http://code.google.com/appengine/docs/roadmap.html), though, both
-behind the scenes and with new features like
-[namespaces](http://code.google.com/appengine/docs/python/multitenancy/),
-[channels](http://code.google.com/appengine/docs/python/channel/overview.html),
-[prospective search](http://code.google.com/appengine/docs/python/prospectivesearch/overview.html),
-[Always On and instances](http://code.google.com/appengine/docs/adminconsole/instances.html),
-and closest to my heart, the
-[High Replication Datastore](http://googleappengine.blogspot.com/2011/01/announcing-high-replication-datastore.html).
+I've had less to say here about [App Engine](http://appengine.google.com/) since I [moved to a new team last year](/2010-03-13_new_job). The team has still been [cranking](http://code.google.com/appengine/docs/roadmap.html), though, both behind the scenes and with new features like [namespaces](http://code.google.com/appengine/docs/python/multitenancy/), [channels](http://code.google.com/appengine/docs/python/channel/overview.html), [prospective search](http://code.google.com/appengine/docs/python/prospectivesearch/overview.html), [Always On and instances](http://code.google.com/appengine/docs/adminconsole/instances.html), and closest to my heart, the [High Replication Datastore](http://googleappengine.blogspot.com/2011/01/announcing-high-replication-datastore.html).
 
-The HRD behaves differently from the original master/slave datastore in a number
-of ways. The
-[documentation](http://code.google.com/appengine/docs/python/datastore/hr/)
-describes them admirably, especially given how subtle Paxos edge cases can be.
-Still, sometimes there's no substitute for real live code.
+The HRD behaves differently from the original master/slave datastore in a number of ways. The [documentation](http://code.google.com/appengine/docs/python/datastore/hr/) describes them admirably, especially given how subtle Paxos edge cases can be. Still, sometimes there's no substitute for real live code.
 
-That's why I've set up [shell-hrd.appspot.com](http://shell-hrd.appspot.com/), a
-new instance of the [venerable](/2008-04-07_google_app_engine_launched)
-[shell app](http://shell.appspot.com/) for the HRD. I've already used it
-myself, to double check that
-[eventually consistent reads](http://code.google.com/appengine/docs/python/datastore/queries.html#Setting_the_Read_Policy_and_Datastore_Call_Deadline)
-aren't supported (or needed) inside transactions on HRD, just like on M/S.
+That's why I've set up [shell-hrd.appspot.com](http://shell-hrd.appspot.com/), a new instance of the [venerable](/2008-04-07_google_app_engine_launched) [shell app](http://shell.appspot.com/) for the HRD. I've already used it myself, to double check that [eventually consistent reads](http://code.google.com/appengine/docs/python/datastore/queries.html#Setting_the_Read_Policy_and_Datastore_Call_Deadline) aren't supported (or needed) inside transactions on HRD, just like on M/S.
 
-As usual, App Engine's self service and rapid deployment made this a joy. I'd
-already written the code, so I just created the new app in the
-[admin console](http://appengine.google.com/) - taking care to select the HRD
-option - updated the app id in `app.yaml`, added a note to the front page, and
-ran `appcfg.py update`. Immediate gratification, up and serving in under two
-minutes.
+As usual, App Engine's self service and rapid deployment made this a joy. I'd already written the code, so I just created the new app in the [admin console](http://appengine.google.com/) - taking care to select the HRD option - updated the app id in `app.yaml`, added a note to the front page, and ran `appcfg.py update`. Immediate gratification, up and serving in under two minutes.
 
 Enjoy!

@@ -13,132 +13,57 @@ For the impatient:
 
 ### Introduction
 
-Tic-tac-toe is a game that focuses on graphical effects, specifically realistic
-3D rendering of water. The water surface is procedurally generated, and the
-pieces float realistically on top of it. The water is textured, blended, and
-environment mapped. It is fully refracted and incorporates the Fresnel term for
-opacity.
+Tic-tac-toe is a game that focuses on graphical effects, specifically realistic 3D rendering of water. The water surface is procedurally generated, and the pieces float realistically on top of it. The water is textured, blended, and environment mapped. It is fully refracted and incorporates the Fresnel term for opacity.
 
-Apart from the graphics, tic-tac-toe also has a full-featured, completely
-dynamic user interface, sound, AI, and other effects. But you really only came
-for the graphics. :P
+Apart from the graphics, tic-tac-toe also has a full-featured, completely dynamic user interface, sound, AI, and other effects. But you really only came for the graphics. :P
 
 ### How to play
 
-When you run tic-tac-toe, the game will appear and immediately begin a game
-pitting the AI against itself. To rotate your view, click and hold the left
-mouse button and move the mouse. To bring up the in-game menu, right-click
-anywhere in the screen. You can use the in-game menu to start a new game, make a
-move (if it is your turn), change rendering options, or quit. Right-click to
-select an item in any of the menus. To scroll the top-level menu, right-click
-and hold on one of the scrollbars, then move the mouse.
+When you run tic-tac-toe, the game will appear and immediately begin a game pitting the AI against itself. To rotate your view, click and hold the left mouse button and move the mouse. To bring up the in-game menu, right-click anywhere in the screen. You can use the in-game menu to start a new game, make a move (if it is your turn), change rendering options, or quit. Right-click to select an item in any of the menus. To scroll the top-level menu, right-click and hold on one of the scrollbars, then move the mouse.
 
-You can also play with the keypad (make sure NumLock is on). Each button on the
-keypad corresponds to a possible move. If you rotate your view around so that it
-is not centered, press 'C' to center your view.
+You can also play with the keypad (make sure NumLock is on). Each button on the keypad corresponds to a possible move. If you rotate your view around so that it is not centered, press 'C' to center your view.
 
 ### Requirements
 
-Tic-tac-toe requires [OpenGL](http://www.opengl.org/), which you almost
-certainly already have, [GLUT](http://www.xmission.com/~nate/glut.html), which
-you probably don't have, and [Plib](http://plib.sourceforge.net/), which you
-probably don't have. Tic-tac-toe is Copyright 2001 Ryan Barrett, and is
-distributed under the [GPL](http://www.gnu.org/licenses/gpl.html) license.
+Tic-tac-toe requires [OpenGL](http://www.opengl.org/), which you almost certainly already have, [GLUT](http://www.xmission.com/~nate/glut.html), which you probably don't have, and [Plib](http://plib.sourceforge.net/), which you probably don't have. Tic-tac-toe is Copyright 2001 Ryan Barrett, and is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html) license.
 
-Tic-tac-toe is relatively optimized, but hasn't been tested on many different
-video cards. If you have anything less than an nVidia TNT2 (or poor OpenGL
-support), you'll probably want to crank down the detail. You can do that by
-lowering the FineVerts value in the Water section of tictactoe.ini.
+Tic-tac-toe is relatively optimized, but hasn't been tested on many different video cards. If you have anything less than an nVidia TNT2 (or poor OpenGL support), you'll probably want to crank down the detail. You can do that by lowering the FineVerts value in the Water section of tictactoe.ini.
 
 ### Download
 
-Here is the [tarball for Linux](/tictactoe.tar.gz). Just run
-make (no ./configure needed) to build it. If you've installed the OpenGL or PLIB
-libraries in non-standard places, you'll need to edit the Makefile by hand to
-point to wherever they're installed.
+Here is the [tarball for Linux](/tictactoe.tar.gz). Just run make (no ./configure needed) to build it. If you've installed the OpenGL or PLIB libraries in non-standard places, you'll need to edit the Makefile by hand to point to wherever they're installed.
 
-Here is the [zipfile for Windows](/tictactoe.zip). It includes
-an executable and the source, along with workspace files for MSVC++. You'll need
-opengl32.dll and glut32.dll in your Windows system directory to run it. Your
-video card's drivers should come with opengl32.dll, and you can [download
-glut32.dll here](/glut32.dll).
+Here is the [zipfile for Windows](/tictactoe.zip). It includes an executable and the source, along with workspace files for MSVC++. You'll need opengl32.dll and glut32.dll in your Windows system directory to run it. Your video card's drivers should come with opengl32.dll, and you can [download glut32.dll here](/glut32.dll).
 
 ### Background
 
-I wrote Tic-Tac-Toe as my [final
-project](http://graphics.stanford.edu/courses/cs248-videogame-competition/cs248-01/#tictactoe)
-for [CS248](http://cs248.stanford.edu/) at [Stanford](http://www.stanford.edu/).
-The inspiration came from the underground demo scene, specifically from a 64Kb
-demo by [Foobug](http://foobug.yoki.org/) called
-[Exodus](ftp://ftp.yoki.org/pub/groups/foobug/exodus.zip). It has two or three
-different water effects that are all incredible. (The first minute or two is
-boring, but the rest is definitely worth it!)
+I wrote Tic-Tac-Toe as my [final project](http://graphics.stanford.edu/courses/cs248-videogame-competition/cs248-01/#tictactoe) for [CS248](http://cs248.stanford.edu/) at [Stanford](http://www.stanford.edu/). The inspiration came from the underground demo scene, specifically from a 64Kb demo by [Foobug](http://foobug.yoki.org/) called [Exodus](ftp://ftp.yoki.org/pub/groups/foobug/exodus.zip). It has two or three different water effects that are all incredible. (The first minute or two is boring, but the rest is definitely worth it!)
 
-If you aren't familiar with the demo scene, or you haven't watched demos before,
-you should! Check out [scene.org](http://www.scene.org/) or
-[pouet.net](http://www.pouet.net/).
+If you aren't familiar with the demo scene, or you haven't watched demos before, you should! Check out [scene.org](http://www.scene.org/) or [pouet.net](http://www.pouet.net/).
 
 ### Technical details
 
 **_Procedural modeling_**
 
-One of the unusual features of tic-tac-toe is the procedural modeling and
-dynamics of the water. The water is stored as a heightfield, and the ripples are
-propagated with a surprisingly simple filter. I wish I could claim credit for
-the filter, but I can't - it's down in the
-[citations](#citations) section. I did extend it to 3D, though -
-it was originally conceived only for 2D images. I also added damping and
-relaxation to the algorithm. Basically, I store the heightfields for the current
-and previous game ticks, and to generate the next heightfield, I take the
-difference between the current and previous heightfield at each point and use it
-as the velocity for that point. There's more to it, but that's the gist.
+One of the unusual features of tic-tac-toe is the procedural modeling and dynamics of the water. The water is stored as a heightfield, and the ripples are propagated with a surprisingly simple filter. I wish I could claim credit for the filter, but I can't - it's down in the [citations](#citations) section. I did extend it to 3D, though - it was originally conceived only for 2D images. I also added damping and relaxation to the algorithm. Basically, I store the heightfields for the current and previous game ticks, and to generate the next heightfield, I take the difference between the current and previous heightfield at each point and use it as the velocity for that point. There's more to it, but that's the gist.
 
-To generate ripples, you can simply displace a point in the heightfield.
-However, this creates jagged ripples if the displacement is large. So when the
-game loads, I precompute a few ripples by displacing a heightfield and
-repeatedly running the filter over it. Then, when I need to create a ripple
-during this game, I add the heights from one of these precomputed ripples to the
-heightfield, centered at the place the ripple should appear.
+To generate ripples, you can simply displace a point in the heightfield. However, this creates jagged ripples if the displacement is large. So when the game loads, I precompute a few ripples by displacing a heightfield and repeatedly running the filter over it. Then, when I need to create a ripple during this game, I add the heights from one of these precomputed ripples to the heightfield, centered at the place the ripple should appear.
 
-To make the pieces float, I store their velocity and orientation. For each game
-tick, I apply the velocity along their orientation and then update their
-velocity and orientation based on the heightfield below them and its normals.
-Again, I use damping and relaxation to keep this smooth and somewhat delayed, so
-that the look like they are reacting to the water's motion instead of moving
-exactly in sync with it.
+To make the pieces float, I store their velocity and orientation. For each game tick, I apply the velocity along their orientation and then update their velocity and orientation based on the heightfield below them and its normals. Again, I use damping and relaxation to keep this smooth and somewhat delayed, so that the look like they are reacting to the water's motion instead of moving exactly in sync with it.
 
 **_Advanced rendering_**
 
-I implemented both refraction and the fresnel term in an attempt to make the
-water appear more realistic. I approximated both of them with formulas that I
-think are acceptable, since there's no need for it to be physically exact. For
-more information, see refract.cpp and fresnel.cpp. The approximation I used for
-refraction requires a fixed viewpoint, so it can only be turned on if the viewer
-is at the top, looking straight down. I wish I'd used vertex shaders, which
-would likely have been fast enough for any viewpoint using them...but I ran out
-of time. :P
+I implemented both refraction and the fresnel term in an attempt to make the water appear more realistic. I approximated both of them with formulas that I think are acceptable, since there's no need for it to be physically exact. For more information, see refract.cpp and fresnel.cpp. The approximation I used for refraction requires a fixed viewpoint, so it can only be turned on if the viewer is at the top, looking straight down. I wish I'd used vertex shaders, which would likely have been fast enough for any viewpoint using them...but I ran out of time. :P
 
-Strangely, though, it looks best without refraction or fresnel term, just with
-plain texturing and environment mapping. I guess it's a lesson to be learned: if
-you can get as good or better results with phenomenological models, go for it.
+Strangely, though, it looks best without refraction or fresnel term, just with plain texturing and environment mapping. I guess it's a lesson to be learned: if you can get as good or better results with phenomenological models, go for it.
 
 **_In-game UI_**
 
-I wrote a windowing toolkit similar to GLUI or MUI, except that it is drawn in
-the same window as your game. This allowed me to run my game full-screen, which
-is more immersive. It provides windows, items, checkboxes, scrollbars, and
-scrollable windows. (This is definitely less functionality than GLUI or MUI, but
-it was all I needed and it was still plenty of work.) Windows can have child
-windows, much the way application menus can have sub-menus in most common
-windowing systems. It's modular, and could drop it into any other OpenGL program
-with a negligible amount of effort.
+I wrote a windowing toolkit similar to GLUI or MUI, except that it is drawn in the same window as your game. This allowed me to run my game full-screen, which is more immersive. It provides windows, items, checkboxes, scrollbars, and scrollable windows. (This is definitely less functionality than GLUI or MUI, but it was all I needed and it was still plenty of work.) Windows can have child windows, much the way application menus can have sub-menus in most common windowing systems. It's modular, and could drop it into any other OpenGL program with a negligible amount of effort.
 
 **_Models and textures_**
 
-I created the X piece model myself and the O piece is a call to glutSolidTorus.
-Unfortunately, I don't know where the textures are from. I've compiled a small
-library of public-domain textures and art assets over the last four years or so,
-and all of these are taken from that.
+I created the X piece model myself and the O piece is a call to glutSolidTorus. Unfortunately, I don't know where the textures are from. I've compiled a small library of public-domain textures and art assets over the last four years or so, and all of these are taken from that.
 
 **_Other_**
 
@@ -148,25 +73,13 @@ These features that didn't take a lot of work, but deserve mentioning:
 
   * AI. The computer plays a pretty good game of tic-tac-toe.
 
-  * Configurable settings. Most game and (especially) rendering settings can be
-changed in tictactoe.ini without rebuilding the game. Settings that can be
-changed include the size of the height field, the sound effects, all of the
-textures, rain settings, and variables that affect the behavior of the water.
-See the [citations](#citations).
+  * Configurable settings. Most game and (especially) rendering settings can be changed in tictactoe.ini without rebuilding the game. Settings that can be changed include the size of the height field, the sound effects, all of the textures, rain settings, and variables that affect the behavior of the water. See the [citations](#citations).
 
 ### Citations  <a name="citations"></a>
 
-  * [Hugo Elias](http://freespace.virgin.net/hugo.elias/)' [ripple
-filter](http://freespace.virgin.net/hugo.elias/graphics/x_water.htm). Hugo
-didn't actually invent it, he just wrote it down. This is by far the most
-important citation. I coded up the ripple engine, but I didn't come up with the
-basic idea. I just took the algorithm, extended it to 3D, and added damping and
-relaxing.
+  * [Hugo Elias](http://freespace.virgin.net/hugo.elias/)' [ripple filter](http://freespace.virgin.net/hugo.elias/graphics/x_water.htm). Hugo didn't actually invent it, he just wrote it down. This is by far the most important citation. I coded up the ripple engine, but I didn't come up with the basic idea. I just took the algorithm, extended it to 3D, and added damping and relaxing.
 
-  * [Robert Kesterson](http://robertk.com/)'s [stlini
-library](http://robertk.com/source/) for reading .ini files.
+  * [Robert Kesterson](http://robertk.com/)'s [stlini library](http://robertk.com/source/) for reading .ini files.
 
-  * Some of the GLUT initialization (like the code in main()) was copied from
-[Matt Ginzton](http://matt.ginzton.net/)'s
-[glut_example](http://graphics.stanford.edu/courses/cs248-00/helpsession/opengl/code_example.html).
+  * Some of the GLUT initialization (like the code in main()) was copied from [Matt Ginzton](http://matt.ginzton.net/)'s [glut_example](http://graphics.stanford.edu/courses/cs248-00/helpsession/opengl/code_example.html).
 

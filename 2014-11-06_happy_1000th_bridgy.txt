@@ -5,38 +5,18 @@ Happy 1000th, Bridgy
  <a href="/bridgy_stats/2014/accounts_stacked.png">
   <img class="shadow" src="/bridgy_stats/2014/accounts_stacked_thumb.png" /></a></p>
 
-[Bridgy](https://www.brid.gy/), my little [IndieWeb](http://indiewebcamp.com/)
-side project, hit a milestone a couple days ago: 1000 users! Congratulations
-[Brett Glisson](https://www.brid.gy/googleplus/101184744082016026460), you win
-the prize!
+[Bridgy](https://www.brid.gy/), my little [IndieWeb](http://indiewebcamp.com/) side project, hit a milestone a couple days ago: 1000 users! Congratulations [Brett Glisson](https://www.brid.gy/googleplus/101184744082016026460), you win the prize!
 
-1000 isn't a big number. We're a long way from viral marketing,
-[growth hacking](http://en.wikipedia.org/wiki/Growth_hacking), and
-[customer acquisition](http://en.wikipedia.org/wiki/Customer_acquisition_cost)
-tracking, and that's fine with me. I built Bridgy to scratch my own itch, in
-fine open source and IndieWeb tradition, and only launched it publicly because I
-thought other people might have the same itch.
+1000 isn't a big number. We're a long way from viral marketing, [growth hacking](http://en.wikipedia.org/wiki/Growth_hacking), and [customer acquisition](http://en.wikipedia.org/wiki/Customer_acquisition_cost) tracking, and that's fine with me. I built Bridgy to scratch my own itch, in fine open source and IndieWeb tradition, and only launched it publicly because I thought other people might have the same itch.
 
 <!-- more -->
 <span />
 
-Milestones are good excuses to count blessings, and Bridgy has plenty to be
-grateful for. [Kyle Mahan](https://kylewm.com/) has stepped up in a major way,
-building [substantial](http://indiewebcamp.com/posse-post-discovery)
-[new](https://github.com/snarfed/bridgy/issues/240)
-[functionality](https://github.com/snarfed/oauth-dropins/commits?author=kylewm)
-and supporting servers and users alike with aplomb. He's basically a co-owner at
-this point. You rock, Kyle! [Emma Kuo](http://notenoughneon.com/),
-[Barnaby Walters](http://waterpigs.co.uk/), and
-[Kartik Prabhu](http://kartikprabhu.com/) have also contributed great code, and
-the [IndieWeb community](http://indiewebcamp.com/IRC_People)'s support has been
-invaluable. Thanks everyone!
+Milestones are good excuses to count blessings, and Bridgy has plenty to be grateful for. [Kyle Mahan](https://kylewm.com/) has stepped up in a major way, building [substantial](http://indiewebcamp.com/posse-post-discovery) [new](https://github.com/snarfed/bridgy/issues/240) [functionality](https://github.com/snarfed/oauth-dropins/commits?author=kylewm) and supporting servers and users alike with aplomb. He's basically a co-owner at this point. You rock, Kyle! [Emma Kuo](http://notenoughneon.com/), [Barnaby Walters](http://waterpigs.co.uk/), and [Kartik Prabhu](http://kartikprabhu.com/) have also contributed great code, and the [IndieWeb community](http://indiewebcamp.com/IRC_People)'s support has been invaluable. Thanks everyone!
 
-Milestones are also good excuses for navel gazing, so here are some graphs. They
-have pretty colors!
+Milestones are also good excuses for navel gazing, so here are some graphs. They have pretty colors!
 
-First, user growth. Clearly not exponential, but it is keeping up a steady clip.
-Also see the [cumulative graph at the top](#top).
+First, user growth. Clearly not exponential, but it is keeping up a steady clip. Also see the [cumulative graph at the top](#top).
 
 <p id="users" class="right half" style="margin-left: 0px; margin-right: -10px">
  <a href="/bridgy_stats/2014/accounts.png">
@@ -49,13 +29,9 @@ Also see the [cumulative graph at the top](#top).
 
 <br style="clear: both" />
 
-Many people sign up for more than one silo - Facebook, Twitter, etc. - so it's
-technically 1000 _accounts_, not users. I'd guess there are only 400-500
-distinct users. It's not always easy to tell the difference automatically,
-though, and 1000 is a nice round number, so I'm going with it.
+Many people sign up for more than one silo - Facebook, Twitter, etc. - so it's technically 1000 _accounts_, not users. I'd guess there are only 400-500 distinct users. It's not always easy to tell the difference automatically, though, and 1000 is a nice round number, so I'm going with it.
 
-Now, the stuff Bridgy actually _does_. Note that the second graph is log scale,
-since I threw in everything but the kitchen sink. Tufte would have a fit.
+Now, the stuff Bridgy actually _does_. Note that the second graph is log scale, since I threw in everything but the kitchen sink. Tufte would have a fit.
 
 <p class="right half" style="margin-left: 0px; margin-right: -10px">
  <a href="/bridgy_stats/2014/activity.png">
@@ -68,48 +44,20 @@ since I threw in everything but the kitchen sink. Tufte would have a fit.
 
 <br style="clear: both" />
 
-So much for the candy; now it's time to eat my vegetables. What lessons have I
-learned so far? What has building Bridgy taught me?
+So much for the candy; now it's time to eat my vegetables. What lessons have I learned so far? What has building Bridgy taught me?
 
-Honestly, I'm not sure. I can't think of anything particularly interesting or
-insightful. We need a balanced meal, though, so here are some thoughts.
+Honestly, I'm not sure. I can't think of anything particularly interesting or insightful. We need a balanced meal, though, so here are some thoughts.
 
-First, the "scratch your own itch" thing really worked, at least in this case. I
-always knew what to build next, and how to prioritize, based on what I wanted
-for myself. Tellingly, the major features I added later -
-[Bridgy Publish](https://www.brid.gy/about#publishing) and
-[webmentions for blogs](https://www.brid.gy/about#blogs) - weren't as strong
-itches for me personally, and correspondingly, each one has seen less uptake
-than the last. [The graph ain't lying.](#users)
+First, the "scratch your own itch" thing really worked, at least in this case. I always knew what to build next, and how to prioritize, based on what I wanted for myself. Tellingly, the major features I added later - [Bridgy Publish](https://www.brid.gy/about#publishing) and [webmentions for blogs](https://www.brid.gy/about#blogs) - weren't as strong itches for me personally, and correspondingly, each one has seen less uptake than the last. [The graph ain't lying.](#users)
 
-Second, I want happy users, but tech support is no fun. When someone has a
-problem or a question, I try to find and fix (or automate away) the root cause,
-or at the very least update [docs](https://www.brid.gy/about) so the next person
-won't need to ask. It's not perfect, but I think it helps...
+Second, I want happy users, but tech support is no fun. When someone has a problem or a question, I try to find and fix (or automate away) the root cause, or at the very least update [docs](https://www.brid.gy/about) so the next person won't need to ask. It's not perfect, but I think it helps...
 
-...or maybe it's just that for most users, Bridgy is fire and forget. They sign
-up, poke at their user page, maybe skim the docs, and then never come back. They
-don't need to. Comments and retweets and +1s start showing up on their web site
-automatically. This is my favorite kind of UI: _none at all_. And thank God for
-that, since I'm worthless at UI design.
+...or maybe it's just that for most users, Bridgy is fire and forget. They sign up, poke at their user page, maybe skim the docs, and then never come back. They don't need to. Comments and retweets and +1s start showing up on their web site automatically. This is my favorite kind of UI: _none at all_. And thank God for that, since I'm worthless at UI design.
 
-Lastly, unit tests. I won't go all rabid religious dogma on you, but man. The
-freedom to make big changes, refactor core logic, and then push that new code
-live, confident that it won't break anything? It's incredibly liberating. Not to
-mention that
-[running them before deploying](https://github.com/snarfed/bridgy#development)
-has saved my ass on more than one occasion.
+Lastly, unit tests. I won't go all rabid religious dogma on you, but man. The freedom to make big changes, refactor core logic, and then push that new code live, confident that it won't break anything? It's incredibly liberating. Not to mention that [running them before deploying](https://github.com/snarfed/bridgy#development) has saved my ass on more than one occasion.
 
-Automated monitoring paged you at 3AM because the new release has a regression
-bug? Good. At least you caught it. Slept until morning because your tests
-caught the regression _before_ it went live? Priceless.
+Automated monitoring paged you at 3AM because the new release has a regression bug? Good. At least you caught it. Slept until morning because your tests caught the regression _before_ it went live? Priceless.
 
-Anyway. Contributors are still
-[cranking away](https://github.com/snarfed/bridgy/issues/240), and I've been
-pushing out a steady trickle of tweaks and bug fixes, but that's slowed down
-recently. None of the
-[remaining feature requests](https://github.com/snarfed/bridgy/issues) are above
-my itch threshold, so they may not happen anytime soon. I happily accept pull
-requests, but otherwise, Bridgy is basically on ops autopilot right now.
+Anyway. Contributors are still [cranking away](https://github.com/snarfed/bridgy/issues/240), and I've been pushing out a steady trickle of tweaks and bug fixes, but that's slowed down recently. None of the [remaining feature requests](https://github.com/snarfed/bridgy/issues) are above my itch threshold, so they may not happen anytime soon. I happily accept pull requests, but otherwise, Bridgy is basically on ops autopilot right now.
 
 Keep it up, Bridgy! Here's to 1000 more!

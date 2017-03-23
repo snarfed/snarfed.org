@@ -11,19 +11,11 @@ For the impatient:
 [My pine patches](/software#patches)  
 [FAQ on patching pine](http://www.math.washington.edu/~chappa/pine/faq/)  
 
-I've written a number of [patches](/software#patches) for
-[Pine](http://www.washington.edu/pine/), my email client. For a while, I ported
-them to new versions of Pine manually, which was very time consuming.
+I've written a number of [patches](/software#patches) for [Pine](http://www.washington.edu/pine/), my email client. For a while, I ported them to new versions of Pine manually, which was very time consuming.
 
-This shell script automates the task of porting patches between Pine versions.
-It doesn't automatically resolve conflicts, but it does pretty much everything
-else. Upgrading Pine with patches has never been easier! (Uh, maybe.)
+This shell script automates the task of porting patches between Pine versions. It doesn't automatically resolve conflicts, but it does pretty much everything else. Upgrading Pine with patches has never been easier! (Uh, maybe.)
 
-To use the script to port a patch (on \*nix!), first unpack the new version's
-[source](http://www.washington.edu/pine/getpine/unix.html) into your home
-directory. The script will look for an existing patch for the old version in
-**~/src/pine**, and will write out the new patch to the same directory. For
-example, use this command line to port **foo.patch.4.63** to Pine version 4.64:
+To use the script to port a patch (on \*nix!), first unpack the new version's [source](http://www.washington.edu/pine/getpine/unix.html) into your home directory. The script will look for an existing patch for the old version in **~/src/pine**, and will write out the new patch to the same directory. For example, use this command line to port **foo.patch.4.63** to Pine version 4.64:
 
 ```
 ./port_pine_patch.sh foo 4.63 4.64

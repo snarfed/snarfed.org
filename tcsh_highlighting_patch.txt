@@ -5,30 +5,20 @@ tcsh highlighting patch
  <a href="http://www.tcsh.org/">
   <img src="/tcsh_oystercatcher.jpg" /></a></p>
 
-_This patch was
-[applied on 8/23/2006](http://mx.gw.com/pipermail/tcsh/2006-August/003724.html).
-It's included in tcsh versions 6.14.06 and later._
+_This patch was [applied on 8/23/2006](http://mx.gw.com/pipermail/tcsh/2006-August/003724.html). It's included in tcsh versions 6.14.06 and later._
 
 For the impatient:  
 [Patch](https://github.com/snarfed/misc/blob/master/patches/tcsh-highlight.patch) for [tcsh
 6.14.00](http://www.tcsh.org/MostRecentRelease)
 
-I use [tcsh](http://www.tcsh.org/) as my shell, and I love it. [This
-patch](https://github.com/snarfed/misc/blob/master/patches/tcsh-highlight.patch) adds to tcsh's
-usability by highlighting some regions in reverse video.
+I use [tcsh](http://www.tcsh.org/) as my shell, and I love it. [This patch](https://github.com/snarfed/misc/blob/master/patches/tcsh-highlight.patch) adds to tcsh's usability by highlighting some regions in reverse video.
 
-Specifically, it highlights the match during incremental search, and in emacs
-mode, the region between the mark and cursor. Highlighting is off by default; it
-can be turned on by setting the shell variable _highlight_.
+Specifically, it highlights the match during incremental search, and in emacs mode, the region between the mark and cursor. Highlighting is off by default; it can be turned on by setting the shell variable _highlight_.
 
-Here's a screenshot while the mark is
-set:![tcsh_highlighting_mark_region](/tcsh_highlighting_mark_region.png)
+Here's a screenshot while the mark is set:![tcsh_highlighting_mark_region](/tcsh_highlighting_mark_region.png)
 
-...and an incremental search
-screenshot:![tcsh_highlighting_incremental_search](/tcsh_highlighting_incremental_search.png)
+...and an incremental search screenshot:![tcsh_highlighting_incremental_search](/tcsh_highlighting_incremental_search.png)
 
 The patch applies cleanly against [tcsh
-6.14.00](http://www.tcsh.org/MostRecentRelease). See the [discussion on the tcsh
-list](http://mx.gw.com/pipermail/tcsh/2006-January/003536.html) for more
-details.
+6.14.00](http://www.tcsh.org/MostRecentRelease). See the [discussion on the tcsh list](http://mx.gw.com/pipermail/tcsh/2006-January/003536.html) for more details.
 

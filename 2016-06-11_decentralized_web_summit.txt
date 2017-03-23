@@ -5,50 +5,17 @@ Decentralized Web Summit
  <a href="http://www.decentralizedweb.net/">
   <img src="/decentralized_web_triangles_colorful.png" /></a></p>
 
-I spent the last few days at the
-[Decentralized Web Summit](http://www.decentralizedweb.net/), a small gathering
-of like-minded hackers, thinkers, and activists from all over. I don't go to many
-conferences, but this one was inspiring and exciting.
-[Even the mainstream press noticed.](http://www.decentralizedweb.net/press/)
-I'll see if I can describe why.
+I spent the last few days at the [Decentralized Web Summit](http://www.decentralizedweb.net/), a small gathering of like-minded hackers, thinkers, and activists from all over. I don't go to many conferences, but this one was inspiring and exciting. [Even the mainstream press noticed.](http://www.decentralizedweb.net/press/) I'll see if I can describe why.
 
-I spent some time in the peer-to-peer community during the first dot com boom. I
-[hung out](/2007-04-29_p2p-hackers_san_francisco_meetup)
-[with the](2005-12-11_p2p-hackers_san_francisco_meetup)
-[p2p-hackers](http://lists.zooko.com/mailman/listinfo/p2p-hackers)
-[and](/codecon_2006_notes) [CodeCon](/codecon_2005_notes) folks, co-created a
-[toy P2P network](/p4)
-[and contributed](https://en.wikipedia.org/wiki/JXTA) [to others](/windows_p2p),
-idolized [Nullsoft](https://en.wikipedia.org/wiki/Nullsoft) and
-[Bram Cohen](http://bramcohen.com/) and
-[anonymous remailers](https://en.wikipedia.org/wiki/Anonymous_remailer), and
-generally yearned to be free of The Man in the middle. By the time BitTorrent
-hit it big, P2P seemed unstoppable, even
-[inevitable](http://kk.org/books/the-inevitable/).
+I spent some time in the peer-to-peer community during the first dot com boom. I [hung out](/2007-04-29_p2p-hackers_san_francisco_meetup) [with the](2005-12-11_p2p-hackers_san_francisco_meetup) [p2p-hackers](http://lists.zooko.com/mailman/listinfo/p2p-hackers) [and](/codecon_2006_notes) [CodeCon](/codecon_2005_notes) folks, co-created a [toy P2P network](/p4) [and contributed](https://en.wikipedia.org/wiki/JXTA) [to others](/windows_p2p), idolized [Nullsoft](https://en.wikipedia.org/wiki/Nullsoft) and [Bram Cohen](http://bramcohen.com/) and [anonymous remailers](https://en.wikipedia.org/wiki/Anonymous_remailer), and generally yearned to be free of The Man in the middle. By the time BitTorrent hit it big, P2P seemed unstoppable, even [inevitable](http://kk.org/books/the-inevitable/).
 
 <!-- more -->
 <span />
 
-It wasn't, of course, but recently there's been a resurgence of interest. The
-financial crisis, the NSA spying revelations, and online power concentrated into
-a few big [silos](https://indieweb.org/silo) rallied the internet's
-venerable elders, [Vint Cerf](http://research.google.com/pubs/author32412.html)
-and [Tim Berners-Lee](https://www.w3.org/People/Berners-Lee/)
-and [Brewster Kahle](https://archive.org/about/bios.php)
-and [Mitchell Baker](https://blog.mozilla.org/press/bios/mitchell-baker/).
-([And Richard Stallman!](/2016-06-08_17841#comment-2599122)) They turned over a
-few rocks and found the
-P2P [cypherpunks](https://en.wikipedia.org/wiki/Cypherpunk) keeping the flame
-alive, developing projects like [IPFS](http://ipfs.io/)
-and [Dat](http://dat-data.com/) and [Tor](https://torproject.org/) and falling
-all over themselves to
-sanctify [Satoshi](https://en.wikipedia.org/wiki/Satoshi_Nakamoto) and create
-the [Next Big Blockchain](https://ethereum.org/).
+It wasn't, of course, but recently there's been a resurgence of interest. The financial crisis, the NSA spying revelations, and online power concentrated into a few big [silos](https://indieweb.org/silo) rallied the internet's venerable elders, [Vint Cerf](http://research.google.com/pubs/author32412.html) and [Tim Berners-Lee](https://www.w3.org/People/Berners-Lee/) and [Brewster Kahle](https://archive.org/about/bios.php) and [Mitchell Baker](https://blog.mozilla.org/press/bios/mitchell-baker/). ([And Richard Stallman!](/2016-06-08_17841#comment-2599122)) They turned over a few rocks and found the P2P [cypherpunks](https://en.wikipedia.org/wiki/Cypherpunk) keeping the flame alive, developing projects like [IPFS](http://ipfs.io/) and [Dat](http://dat-data.com/) and [Tor](https://torproject.org/) and falling all over themselves to sanctify [Satoshi](https://en.wikipedia.org/wiki/Satoshi_Nakamoto) and create the [Next Big Blockchain](https://ethereum.org/).
 
 <blockquote class="twitter-tweet" data-lang="en">
-<p>New <a href="https://twitter.com/hashtag/32c3?src=hash">#32c3</a> drinking game,
-drink everytime someone suggests blockchain for something that does not have any
-interaction with blockchain</p>
+<p>New <a href="https://twitter.com/hashtag/32c3?src=hash">#32c3</a> drinking game, drink everytime someone suggests blockchain for something that does not have any interaction with blockchain</p>
 <a href="https://twitter.com/Benjojo12/status/681818638362492929">mdash; Ben Cox (@Benjojo12)</a>
 </blockquote>
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

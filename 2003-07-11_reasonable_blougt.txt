@@ -1,15 +1,9 @@
 421
 reasonable blougt
 
-hi all! facilities is laying a bunch of new wiring in rains this week, so power
-and network connectivity may be spotty. worse,
-[http://kash.stanford.edu/](http://kash.stanford.edu/) is down and refuses to
-come back up. long story, and i don't know if i'm smart enough to fix it. :/
+hi all! facilities is laying a bunch of new wiring in rains this week, so power and network connectivity may be spotty. worse, [http://kash.stanford.edu/](http://kash.stanford.edu/) is down and refuses to come back up. long story, and i don't know if i'm smart enough to fix it. :/
 
-in other news, if you're reading this and you're a jetty expert, please [email
-me](mailto:rbarrett@stanford.edu)! i've been trying to set up virtual hostnames
-and URL redirection with jetty (which serves snipsnap), but so far, no luck.
+in other news, if you're reading this and you're a jetty expert, please [email me](mailto:rbarrett@stanford.edu)! i've been trying to set up virtual hostnames and URL redirection with jetty (which serves snipsnap), but so far, no luck.
 
-p.s. if you operate heavy machinery, please, for the love of god, [take the day
-off](http://www.penny-arcade.com/view.php3?date=2003-07-11).
+p.s. if you operate heavy machinery, please, for the love of god, [take the day off](http://www.penny-arcade.com/view.php3?date=2003-07-11).
 

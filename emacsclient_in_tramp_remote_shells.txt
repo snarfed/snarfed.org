@@ -5,25 +5,9 @@ emacsclient in TRAMP remote shells
  <a href="http://gnu.org/software/emacs/">
   <img src="/gnu.jpg" /></a></p>
 
-I recently [started running shells](/why_i_run_shells_inside_emacs) inside
-[Emacs](http://gnu.org/software/emacs/) via
-[shell mode](http://www.gnu.org/software/emacs/manual/html_node/emacs/Shell-Mode.html),
-including ssh sessions to remote hosts using
-[TRAMP](http://www.gnu.org/software/tramp/). I'm pretty happy with it so far,
-but one thing that didn't work out of the box was emacsclient. Ideally it would
-open files in the local Emacs with TRAMP, but there's no obvious way for
-an emacsclient running remotely to connect to the local Emacs's server.
+I recently [started running shells](/why_i_run_shells_inside_emacs) inside [Emacs](http://gnu.org/software/emacs/) via [shell mode](http://www.gnu.org/software/emacs/manual/html_node/emacs/Shell-Mode.html), including ssh sessions to remote hosts using [TRAMP](http://www.gnu.org/software/tramp/). I'm pretty happy with it so far, but one thing that didn't work out of the box was emacsclient. Ideally it would open files in the local Emacs with TRAMP, but there's no obvious way for an emacsclient running remotely to connect to the local Emacs's server.
 
-However, there are lots of variations on
-[a](http://groups.google.com/group/gnu.emacs.help/browse_thread/thread/7ad112ba266d73ed)
-[not](http://the.unwashedmeme.com/blog/2010/06/22/using-a-local-emacstramp-as-your-editor-on-remote-servers-with-ssh-and-emacsclient/)
-[so](http://stackoverflow.com/questions/2231902/originate-edit-of-remote-file-using-emacs-tramp-from-ssh-session)
-[obvious](http://stackoverflow.com/questions/5154224/using-a-single-emacs-instance-from-multiple-virtual-machines)
-[way](http://web.archiveorange.com/archive/v/DRMT41AjyUhWpWJHgHxB). If
-you run the Emacs server over TCP instead of a local socket, and use the `ssh
--R` option to set up a reverse port forward, and copy the server file to the
-remote host so that emacsclient can use it, you actually can connect back to the
-local Emacs server!
+However, there are lots of variations on [a](http://groups.google.com/group/gnu.emacs.help/browse_thread/thread/7ad112ba266d73ed) [not](http://the.unwashedmeme.com/blog/2010/06/22/using-a-local-emacstramp-as-your-editor-on-remote-servers-with-ssh-and-emacsclient/) [so](http://stackoverflow.com/questions/2231902/originate-edit-of-remote-file-using-emacs-tramp-from-ssh-session) [obvious](http://stackoverflow.com/questions/5154224/using-a-single-emacs-instance-from-multiple-virtual-machines) [way](http://web.archiveorange.com/archive/v/DRMT41AjyUhWpWJHgHxB). If you run the Emacs server over TCP instead of a local socket, and use the `ssh -R` option to set up a reverse port forward, and copy the server file to the remote host so that emacsclient can use it, you actually can connect back to the local Emacs server!
 
 Here's Emacs Lisp that sets this up:
 

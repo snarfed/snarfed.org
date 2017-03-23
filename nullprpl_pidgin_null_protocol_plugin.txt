@@ -4,33 +4,12 @@ nullprpl: pidgin null protocol plugin
 <a href="http://pidgin.im/"><img src="/pidgin_full.png"></a>
 <a href="http://pidgin.im/"><img src="/pidgin_logo.png"></a>
 
-Nullprpl is a mock protocol plugin for [Pidgin](http://pidgin.im/) and
-[libpurple](http://developer.pidgin.im/wiki/WhatIsLibpurple). You can create
-accounts with it, sign on and off, add buddies, and send and receive IMs, all
-without connecting to a server.
+Nullprpl is a mock protocol plugin for [Pidgin](http://pidgin.im/) and [libpurple](http://developer.pidgin.im/wiki/WhatIsLibpurple). You can create accounts with it, sign on and off, add buddies, and send and receive IMs, all without connecting to a server.
 
-Nullprpl was
-[added to Pidgin on 5/30/2007](http://developer.pidgin.im/viewmtn/revision/info/17c1e71f633d40fd14e46c08a17a500605d793c8)
-and debuted in
-[version 2.0.2](http://developer.pidgin.im/viewmtn/revision/file/1c5a391126b5b506a29f0b9e34160d239cb783c6/ChangeLog).
-See the [Pidgin ticket](http://developer.pidgin.im/ticket/811) and the original
-[SourceForge tracker](http://sourceforge.net/tracker/index.php?func=detail&aid=1033153&group_id=235&atid=390395)
-for more. Nullprpl was originally distributed as a stand-alone protocol plugin;
-the last release was [mockprpl 0.3](/mockprpl-0.3.tar.bz2).
+Nullprpl was [added to Pidgin on 5/30/2007](http://developer.pidgin.im/viewmtn/revision/info/17c1e71f633d40fd14e46c08a17a500605d793c8) and debuted in [version 2.0.2](http://developer.pidgin.im/viewmtn/revision/file/1c5a391126b5b506a29f0b9e34160d239cb783c6/ChangeLog). See the [Pidgin ticket](http://developer.pidgin.im/ticket/811) and the original [SourceForge tracker](http://sourceforge.net/tracker/index.php?func=detail&aid=1033153&group_id=235&atid=390395) for more. Nullprpl was originally distributed as a stand-alone protocol plugin; the last release was [mockprpl 0.3](/mockprpl-0.3.tar.bz2).
 
-Beyond basic buddy list and IM functionality, nullprpl supports presence and
-away/available messages, offline messages, user info, typing notification,
-privacy allow/block lists, chat rooms, whispering, room lists, and protocol
-icons and emblems. Notable missing features are file transfer and account
-registration and authentication.
+Beyond basic buddy list and IM functionality, nullprpl supports presence and away/available messages, offline messages, user info, typing notification, privacy allow/block lists, chat rooms, whispering, room lists, and protocol icons and emblems. Notable missing features are file transfer and account registration and authentication.
 
-Nullprpl is intended as an example of how to write a libpurple protocol
-plugin. It doesn't contain networking code or an event loop, but it does
-demonstrate how to use the
-[libpurple API](http://developer.pidgin.im/doxygen/dev/html/group__core.html#_details)
-to do pretty much everything a prpl might need to do.
+Nullprpl is intended as an example of how to write a libpurple protocol plugin. It doesn't contain networking code or an event loop, but it does demonstrate how to use the [libpurple API](http://developer.pidgin.im/doxygen/dev/html/group__core.html#_details) to do pretty much everything a prpl might need to do.
 
-Nullprpl is also a useful tool for hacking on Pidgin, Finch, and other
-libpurple clients. It's a full-featured protocol plugin, but doesn't depend on
-an external server, so it's a quick and easy way to exercise test new code. It
-also allows you to work while you're disconnected.
+Nullprpl is also a useful tool for hacking on Pidgin, Finch, and other libpurple clients. It's a full-featured protocol plugin, but doesn't depend on an external server, so it's a quick and easy way to exercise test new code. It also allows you to work while you're disconnected.

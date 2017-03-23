@@ -4,32 +4,14 @@ More Minimalist Gmail userstyle
 <p class="right"><a href="/more_minimalist_gmail.png" class="shutter">
   <img class="shadow" src="/more_minimalist_gmail_thumb.png" /></a></p>
 
-[more_minimalist_gmail.css](https://raw.github.com/snarfed/misc/master/userscripts/more_minimalist_gmail.css)
-is a [userstyle](http://userstyles.org/help/userstyles) that hides most of
-Google Gmail's UI, leaving simplified view of your email, labels, and search
-box. It's intended for people who primarily use Gmail via the keyboard.
+[more_minimalist_gmail.css](https://raw.github.com/snarfed/misc/master/userscripts/more_minimalist_gmail.css) is a [userstyle](http://userstyles.org/help/userstyles) that hides most of Google Gmail's UI, leaving simplified view of your email, labels, and search box. It's intended for people who primarily use Gmail via the keyboard.
 
-It was inspired by [Matt Constantine](http://mattconstantine.com/)'s
-[Minimalist Gmail](http://mattconstantine.com/mg) browser extension, which I
-used for a while and liked. It's out of date, though, and the userstyle goes
-further, hides more, and since it's a userstyle, is much simpler.
+It was inspired by [Matt Constantine](http://mattconstantine.com/)'s [Minimalist Gmail](http://mattconstantine.com/mg) browser extension, which I used for a while and liked. It's out of date, though, and the userstyle goes further, hides more, and since it's a userstyle, is much simpler.
 
-More Minimalist Gmail also has
-[its own page](http://userstyles.org/styles/35678) on
-[userstyles.org](http://userstyles.org/).
+More Minimalist Gmail also has [its own page](http://userstyles.org/styles/35678) on [userstyles.org](http://userstyles.org/).
 
 Tips:
-  * Use keyboard shortcuts! This userstyle expects that you do; it's pretty
-  much unusable otherwise.
-  [Details here.](http://support.google.com/mail/bin/answer.py?hl=en&answer=6594)
-  (There are a few undocumented ones too, including - in the new UI -
-  Ctrl-Shift-T/C/B to junp to the To, CC, ex BCC boxes.)
-  * If you're using [Stylish](http://userstyles.org/help/stylish), you can
-    temporarily show the hidden features by turning off Stylish. Click the
-    Stylish icon and select _Turn all styles off_. When you're done, select
-    _Turn all styles on_. Bonus tip: if you do this often,
-    [add a keyboard shortcut with keyconfig](/firefox_keyconfig_extension).
-  * You can hide individual labels in the
-  [GMail settings Labels tab](https://mail.google.com/mail/u/0/#settings/labels).
-  This includes built in labels like Starred, Important, Chats, Circles, etc.
+  * Use keyboard shortcuts! This userstyle expects that you do; it's pretty much unusable otherwise. [Details here.](http://support.google.com/mail/bin/answer.py?hl=en&answer=6594) (There are a few undocumented ones too, including - in the new UI - Ctrl-Shift-T/C/B to junp to the To, CC, ex BCC boxes.)
+  * If you're using [Stylish](http://userstyles.org/help/stylish), you can temporarily show the hidden features by turning off Stylish. Click the Stylish icon and select _Turn all styles off_. When you're done, select _Turn all styles on_. Bonus tip: if you do this often, [add a keyboard shortcut with keyconfig](/firefox_keyconfig_extension).
+  * You can hide individual labels in the [GMail settings Labels tab](https://mail.google.com/mail/u/0/#settings/labels). This includes built in labels like Starred, Important, Chats, Circles, etc.
 
