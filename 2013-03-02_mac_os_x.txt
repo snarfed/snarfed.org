@@ -408,6 +408,7 @@ get [Sticky Keys](http://support.apple.com/kb/PH11262) that don't
 add Emacs key bindings in text controls, reclaim some of the function keys, make
 Control-arrow keys navigate by words, make Return act like Control when it's
 held down, and emulate my beloved missing Page Up and Page Down keys.
+(Function + arrow keys work, but take two hands, so they're not quite the same.)
 
 One Karabiner note: if you bind simultaneous key presses, e.g. pressing both
 down and right arrow keys together to Page Down, try lowering the
