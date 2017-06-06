@@ -2502,7 +2502,7 @@ Old Engine Oil
 </span>
 <span title="bay area brew fest 2010 at fort mason w/gina">
 [Dead Guy Ale](http://beeradvocate.com/beer/profile/132/355)
-<bad>,
+<ok>,
 </span>
 [American Amber](http://www.beeradvocate.com/beer/profile/132/363/),
 <bad>,
@@ -2512,6 +2512,8 @@ Old Engine Oil
 <bad>,
 [6 Hop IPA](https://www.beeradvocate.com/beer/profile/132/199574/)
 <good>,
+[7 Hop IPA](https://www.beeradvocate.com/beer/profile/132/111176/)
+<ok>,
 [8 Hop IPA](https://www.beeradvocate.com/beer/profile/132/167373/o)
 <bad>
 
@@ -2648,8 +2650,10 @@ Old Engine Oil
 <ok>,
 Oat Ale
 <good>,
-[The Down Low](https://www.beeradvocate.com/beer/profile/220/226326/) ale
+[The Down Low](https://www.beeradvocate.com/beer/profile/220/226326/) ale,
 <ok>
+[Doppel Weizen](https://www.beeradvocate.com/beer/profile/220/274554/)
+<good>
 
 [Allagash](http://www.allagash.com/)
 [Black](http://www.allagash.com/black.htm) (stout)
