@@ -1,0 +1,16 @@
+New side project: Indie Map
+
+<p class="half right">
+  <a href="http://www.indiemap.org/">
+    <img class="u-featured" src="/indie_map_social_graph.jpg" />
+</a></p>
+
+I'm launching a new side project today! [Indie Map](http://www.indiemap.org/) is a public [IndieWeb](https://indieweb.org/) social graph and dataset. It's a complete crawl of 2300 of the most active IndieWeb sites, sliced and diced and rolled up in a few useful ways:
+
+* Social graph [API](http://www.indiemap.org/docs.html#api) and [interactive map](http://www.indiemap.org/map.html).
+* [SQL queryable dataset](http://www.indiemap.org/docs.html#dataset) and [GUI analytics](http://metabase.indiemap.org/public/dashboard/d46209c0-170d-49a7-a50d-8be64b577f36).
+* [Raw crawl data](http://www.indiemap.org/docs.html#crawl) in [WARC](http://bibnum.bnf.fr/WARC/) format: [2300 sites](https://github.com/snarfed/indie-map/blob/master/crawl/domains.txt), 5.7M pages, 380GB HTML + [mf2](http://microformats.org/wiki/microformats2).
+
+The [IndieWeb](https://indieweb.org/)'s raison d'être is to do social networking on individual personal web sites instead of centralized silos. Some parts have been fairly straightforward to decentralize - publishing, [reading](https://indieweb.org/reader), [interacting](https://indieweb.org/interactions) - but others are more difficult. Social graph and data mining fall squarely in the latter camp, which is why the community hasn't tackled them much so far. I hope this inspires us to do more!
+
+_Indie Map was announced at [IndieWeb Summit 2017](https://2017.indieweb.org/). Check out the [slide deck](/indiemap_iws2017/) and video (soon!) for more details. <a class="u-syndication" href="https://news.indiewebcamp.com/en">Also on IndieNews.</a>_
