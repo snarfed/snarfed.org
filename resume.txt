@@ -25,7 +25,9 @@ data model, synchronization protocol, [web frontend](https://quip.com/),
  <a href="https://google.com/">
   <img src="/google_logo.png" /></a></p>
 
-#### [Google](http://www.google.com/), Senior Staff Engineer, 2003 - 2013
+#### [Google](http://www.google.com/), 2003 - 2013
+
+Senior Staff Engineer
 
 Co-founded [Google App Engine](http://code.google.com/appengine/) and led its
 [datastore](http://code.google.com/appengine/docs/datastore/overview.html)
