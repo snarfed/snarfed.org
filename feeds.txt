@@ -32,6 +32,15 @@ pages without feeds
 use http://page2rss.com/
 
 
+youtube
+===
+no feed discovery support on their web pages :/
+
+format: https://www.youtube.com/feeds/videos.xml?channel_id=...
+
+e.g. https://www.youtube.com/feeds/videos.xml?channel_id=UCFaBUWXO8o4jSfF6PhJOyZA
+
+
 twitter
 ===
 they dropped most of their rss support a while back, and then dropped atom
