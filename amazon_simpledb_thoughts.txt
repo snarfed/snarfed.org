@@ -46,7 +46,7 @@ Then again, I'm a sucker for anything
 
 
 <a name="intro"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#intro) Introduction
+### Introduction
 
 SimpleDB is a simple, schemaless structured storage engine. It stores items,
 which are bags of key/value pairs. Keys and values are always strings;
@@ -70,7 +70,7 @@ return items from a single domain.
 
 
 <a name="tuplespaces"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#tuplespaces) Tuplespaces!
+### Tuplespaces!
 
 One of the coolest things about SimpleDB is that its interface is pure
 [tuplespaces](http://en.wikipedia.org/wiki/Tuple_space), also known as
@@ -97,7 +97,7 @@ other support for transactions.
 
 
 <a name="queries"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#queries) Queries
+### Queries
 
 SimpleDB uses a a minimal, string-based query language. It's
 best described by example. Here's one
@@ -131,7 +131,7 @@ Tough love, but reasonable.
 
 
 <a name="attributes"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#attributes) Attributes and ordering
+### Attributes and ordering
 
 Like in tuplespaces, SimpleDB attribute names and values are untyped strings, so
 [comparison is always lexicographic](http://docs.amazonwebservices.com/AmazonSimpleDB/2007-11-07/DeveloperGuide/SDB_API_Query.html#d0e3182).
@@ -167,7 +167,7 @@ expect, but it took me a fairly long time to find that tidbit in the docs.
 
 
 <a name="scaling"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#scaling) Scaling and Dynamo
+### Scaling and Dynamo
 
 SimpleDB <del>is almost certainly</del> originally seemed to be
 based on Amazon's
@@ -204,7 +204,7 @@ SimpleDB domains.
 
 
 <a name="pricing"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#pricing) Usage-based pricing
+### Usage-based pricing
 
 The [pricing model](http://aws.amazon.com/simpledb) for SimpleDB is very
 interesting. Similar to [S3](http://aws.amazon.com/s3) and

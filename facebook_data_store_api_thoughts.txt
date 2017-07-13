@@ -28,7 +28,7 @@ Haiping, in _italics_. Feel free to [add your own](#comment-anchor)!
 [Preferences](#preferences)  
 
 <a name="intro"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#intro) Introduction
+### Introduction
 
 The Facebook data store is a very simple hosted database, accessible
 by a
@@ -46,7 +46,7 @@ social networking - are obvious even in this first draft. It will be
 interesting to see how it evolves.
 
 <a name="schema"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#schema) Schema definition
+### Schema definition
 
 As with most databases, Facebook apps must define their schema up front. A
 schema consists of
@@ -87,7 +87,7 @@ unfortunate at best, and dangerous at worst.
 > weakly typed model in handling return values.  
 
 <a name="data_access"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#data_access) Data access 
+### Data access 
 
 The API includes the standard
 [create](http://wiki.developers.facebook.com/index.php/Data.createObject),
@@ -143,7 +143,7 @@ Associations? etc.
 
 
 <a name="transactions"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#transactions) Transactions
+### Transactions
 
 Despite the heading of this section, there are no general-purpose transactions
 in the Facebook data store API. Fortunately, there is an
@@ -165,7 +165,7 @@ best we can hope for?
 
 
 <a name="associations"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#associations) Associations
+### Associations
 
 [Associations](http://wiki.developers.facebook.com/index.php/Data_Store_API_documentation#Association_Data_Definition_API)
 are by far the most intriguing part of the data store API. They're
@@ -237,7 +237,7 @@ that makes them less useful.
 
 
 <a name="preferences"></a>
-### [![Icon-Permalink.png](/Icon-Permalink.png)](#preferences) Preferences
+### Preferences
 
 The API has separate, dedicated storage for
 [per-app user preferences](http://wiki.developers.facebook.com/index.php/Data_Store_API_documentation#User_Preference_API).
