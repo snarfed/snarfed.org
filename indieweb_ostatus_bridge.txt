@@ -1,0 +1,59 @@
+IndieWeb OStatus bridge
+
+https://indieweb.org/2017/ostatusbridge
+https://github.com/tootsuite/mastodon/issues/1441
+
+https://www.w3.org/community/ostatus/wiki/Main_Page
+* Atom with AS1, PoCo extensions.
+* PuSH. superfeedr can do free. but need account? so do it ourselves?
+* convert representative h-card to webfinger with links to Atom, homepage, salmon endpoint, magic key
+* salmon <=> webmentions
+  need to inject our webmention endpoint into ostatus site? unlikely, but could try. add to https://github.com/tootsuite/mastodon/issues/1384
+* no user login needed! can handle any user. just need XXX for indieweb sites, rel-webmention for ostatus projects.
+
+https://www.w3.org/community/ostatus/wiki/Howto
+
+pump.io
+https://github.com/pump-io/pump.io/issues/8
+
+DONE
+o2i: representative h-card
+o2i: translate to mf2
+ActivityStreams 1 <=> microformats2
+
+Mastodon issue:
+add external webmention endpoint?
+...
+this would be a substantial project, so i definitely understand that it isn't a priority for you all.
+
+if there was a third party service that converted webmentions to/from Salmon slaps, and you just had to add a `<link>` to your HTML pointing to it, would you consider that instead? something like:
+
+```
+<link rel="webmention" href="https://ostatus.brid.gy/webmention">
+```
+
+I've built a similar service that bridges social networks with webmentions, https://brid.gy/ , which has been running since Jan 2012 and scaled a fair amount. I'd love to build a similar bridge between OStatus (including Mastodon) and webmentions. i could do it without this `<link>` on your side if i wrap/proxy all Mastodon user addresses and pages on my bridge, but I'd much rather use Mastodon user addresses and pages directly, since that would obviously be better UX.
+
+this would enable rich federation with indieweb site, including replies, likes, mentions, etc. my track record with https://brid.gy/ is evidence that i can build and run this bridge reliably long term, but you'd obviously be free to remove the link if i ever take down my bridge.
+
+thanks in advance!
+
+---
+
+GNU Social
+https://gnu.io/social/
+adopted StatusNet codebase in 2013
+not much mailing list activity since: https://gnu.io/social/resources/
+code: https://git.gnu.io/gnu/gnu-social but cert expired and used HSTS
+
+
+https://the-federation.info/
+
+https://github.com/redmatrix/hubzilla
+
+https://github.com/friendica/friendica/issues?utf8=%E2%9C%93&q=activitypub%20
+
+https://diasporafoundation.org/
+https://github.com/diaspora/diaspora
+https://github.com/diaspora/diaspora/issues/7422
+

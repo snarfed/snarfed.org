@@ -1,0 +1,73 @@
+IndieWeb ActivityPub bridge
+
+<a href="https://indieweb.org/">
+  <img class="half-sidebyside" src="/indiewebcamp_logotype_big.png" /></a>
+<a href="activitypub_logotype.svg">
+  <img class="half-sidebyside" src="/activitypub_logotype.svg" /></a>
+
+I often work on connecting things that don't automatically connect but should, e.g. [Bridgy](https://brid.gy/) for [IndieWeb](https://indieweb.org/) and social networks. Federated social networks like [GNU Social](https://gnu.io/social/) and [Mastodon](https://joinmastodon.org/) have been hot recently, so I've been thinking about them too.
+
+[ActivityPub](https://activitypub.rocks/) is the new W3C standard for federated social networking. It's the successor to [OStatus](https://en.wikipedia.org/wiki/OStatus). Here's background and a straw man design for a bridge between ActivityPub and IndieWeb's [Webmention](https://webmention.net/), which would let users on both sides follow, reply, like, RSVP, and otherwise interact with each other's posts. (Also see my [design for an OStatus bridge](/indieweb_ostatus_bridge).)
+
+### Background
+
+First, some links:
+* [W3C spec](https://www.w3.org/TR/activitypub/)
+* [IWS 2017 session writeup](https://indieweb.org/2017/ostatusbridge)
+* [List of implementations](https://www.w3.org/wiki/Socialwg/ActivityPub_network)
+
+Implementation support is still nascent:
+* [pump.io](http://pump.io/) ([issue](https://github.com/pump-io/pump.io/issues/1241)) and [MediaGoblin](https://mediagoblin.org/) ([issue](https://issues.mediagoblin.org/ticket/5503)) are the closest. They both seem to support pump.io's API, not AP proper, but the two are supposedly close.
+* [Mastodon](https://joinmastodon.org/) is getting there, slowly. [GitHub issue.](https://github.com/tootsuite/mastodon/issues/1557) So far they've added ActivityStreams 2, [released 2017-08-01 in v1.5](https://hackernoon.com/m-for-mastodon-4269c0bf6c8b#8cbc).
+* [GNU Social](https://gnu.io/social/) ([issue](https://git.gnu.io/gnu/gnu-social/issues/256)) doesn't show any signs of moving beyond [OStatus](https://en.wikipedia.org/wiki/OStatus). They [adopted StatusNet's code in 2013](https://gnu.io/social/about/), and since then [commits](https://git.gnu.io/gnu/gnu-social/commits/master) and the [mailing list](https://lists.gnu.org/archive/html/social-discuss/) have both been slow. (Another data point: when the web site's SSL cert expired recently, it was down for almost a week.)
+
+<span id="con-neg"></span>
+ActivityPub leans heavily on HTTP `Content-Type` and content negotiation for discovery and serving AS2 data. It prefers first `application/ld+json; profile="https://www.w3.org/ns/activitystreams"` and then `application/activity+json`. Details in spec issues on [discovery](https://github.com/w3c/activitypub/issues/204), [WebFinger](https://github.com/w3c/activitypub/issues/194), and [link relations](https://github.com/w3c/activitypub/issues/50).
+
+ActivityPub also has explicit support for [public posts and addressing](https://www.w3.org/TR/activitypub/#public-addressing).
+
+
+### Bridge design
+
+The bridge will translate a few high-level things: data (via [granary](https://granary-demo.appspot.com/)), [discovery](#discovery), and [interaction protocols](#interaction-protocols).
+
+First, some simplifying assumptions and non-goals:
+* **Don't translate AS2 data to [microformats2](http://microformats.org/wiki/microformats2) HTML.** Most of the big existing projects already include mf2 in their HTML: Mastodon, GNU Social, pump.io, and Friendica (but not Diaspora). We'll just use that in place.  
+  This probably isn't true for non-text interactions - likes, etc. - so we may need to revisit it. Also, it probably only works well for public data, so...
+* **Only public posts and interactions.** I'm not sure any project has truly robust, mature support for private or semi-private interactions right now, so they're not a high priority.
+* **No user registration.** The bridge is mostly stateless, modulo discovery caching and [keypairs](#stretch-goals), and we don't need to do an OAuth-style user approval dance on either end to propagate interactions back and forth, so let's not.
+
+Next, a major design decision between two options:
+* **Proxy all domains.** Say the bridge's domain is bridge.example. If IW user alice.example and AP user @bob@ap.example want to interact, they'd do so via wrapped identifiers like @alice.example@bridge.example and bob.ap.example.bridge.example, respectively. Pro: no changes needed on IW or AP sites. Con: bad UX.
+* **Require sites to point to bridge.** If IW sites support AP [content negotiation discovery](#con-neg) and redirect to the bridge, and AP sites add a `<link rel="webmention'>` that points to the bridge, the normal alice.example and @bob@ap.example identifiers will work automatically. Pro: Good UX. Bad: depends on support in each individual project.
+
+Proxying is a non-trivial amount of work, and we can always add it later, so we'll start without it.
+
+#### Discovery
+
+**For AP to discover IW users**, the bridge generates and serves [Actor objects](https://www.w3.org/TR/activitypub/#actors) with at least the `inbox` field pointing to an AP inbox endpoint on the bridge, e.g. `https://bridge.example/alice.example/inbox`. IW sites will need to handle content negotiation, detect HTTP requests [asking for AP content types](#con-neg), and redirect to their Actor URL on the bridge, e.g. `https://bridge.example/alice.example`.
+
+**For IW to discover AP users**, AP projects will need to advertize the bridge's webmention endpoint in their HTML, e.g. `<link rel="webmention' href="https://bridge.example/webmention>`.
+
+#### Interaction protocols
+
+**To convert a webmention to AP**:
+1. Accept incoming webmention.
+1. Fetch source page. Translate it to AS2.
+1. Fetch target page. Determine author's URL.
+1. Fetch author's Actor with [con-neg](#con-neg), extract their inbox endpoint.
+1. POST AS2 object to inbox.
+
+**To convert an AP interaction to webmention**:
+1. Accept incoming POST to IW user's AP inbox endpoint.
+1. Parse AS2 object in body, determine target URL (reply to, like of, etc). Reject POST if no target is found.
+1. Fetch target URL, discover webmention endpoint.
+1. Send webmention with AP source and IW target.
+
+#### Stretch goals
+
+* **[Authentication and authorization.](https://www.w3.org/TR/activitypub/#authorization)** The AP spec is [unfortunately non-normative on this](https://github.com/w3c/activitypub/issues/77). There are two possibilities for server-to-server interaction: OAuth 2 + [JSON Web Signatures](https://tools.ietf.org/html/rfc7515.html) and [Linked Data Signatures](https://w3c-dvcg.github.io/ld-signatures/) ([more](https://github.com/w3c/activitypub/issues/203#issuecomment-297553229)). I haven't found any [mention of pump.io's](https://github.com/pump-io/pump.io/search?q=signatures) [or MediaGoblin's](https://issues.mediagoblin.org/search?q=signatures) plans, but [Mastodon seems to be heading toward LDS](https://github.com/tootsuite/mastodon/issues/1557#issuecomment-301263411), so maybe we'll start there.  
+  Concretely, we'd generate and store a key pair for each IndieWeb user when we first see them, on the fly. We'd then serve it in their AS2 Actor's `signClientKey` field, and sign their AS2 objects with it before POSTing them to an AP inbox.
+* Store users and interactions and **render user pages with recent interactions**, [a la Bridgy](https://brid.gy/users).
+* **Support more sophisticated interactions**, e.g. Update, Delete, Undo, Add, Remove, Block.
+* **Deliver posts to followers.** The existing AP projects' mf2 support also includes `h-feed`, so IW readers should already handle AP users. To deliver IW posts to AP users, we'd need to accept Follow POSTs to an IW user's AP inbox, subscribe to the IW user via [WebSub](https://www.w3.org/TR/websub/) (or reject the Follow if they don't have WebSub), accept WebSub pings, convert each new IW post to an AS2 objects, and POST it to the AP followers' inboxes.
