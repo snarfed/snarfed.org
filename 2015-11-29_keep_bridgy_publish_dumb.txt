@@ -26,10 +26,10 @@ that's where the trouble starts.
 <span />
 
 [POSSE](https://indiewebcamp.com/posse)ing is simple sometimes, complicated
-other times. You craft tweet text, convert formatting, and translate mentions
-and tags (or not). These are not one-way operations. Characters need to be
-counted, formatting iterated, mentions auto-filled. You'll want to preview your
-post. You need multiple round trips against the original post using a rich,
+other times. You craft tweet text, convert formatting, @-mention people, add
+hashtags. These are not one-way operations. Characters need to be counted,
+formatting iterated, mentions and tags auto-completed. You'll want to preview
+your post. You need multiple round trips against the original post using a rich,
 interactive UI. Honestly, you need all that inside your CMS.
 
 Like the rest of Bridgy, Publish is a service. It has just two operations,
@@ -61,9 +61,9 @@ for each silo in their CMS, and still reuse Bridgy's POSSE API code. That's it
 though.
 
 Bridgy can and should be a best of breed backfeed service. Bridgy Publish, on
-the other hand, *cannot* be a best of breed POSSE service. My strongest
-inclination at this point is to keep it dumb, define precisely how it translates
-your original posts to silo posts, and avoid trying to offer UX where none can
-survive. It's a mug's game.
+the other hand, *cannot* be a best of breed POSSE tool. I doubt any service
+could be. My strongest inclination at this point is to keep it dumb, define
+precisely how it translates your original posts to silo posts, and avoid trying
+to offer UX where none can survive. It's a mug's game.
 
 _<a class="u-syndication" href="http://news.indiewebcamp.com/en/snarfed.org/2015-11-29_keep-bridgy-publish-dumb">Also on IndieNews.</a>_
