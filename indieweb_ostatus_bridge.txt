@@ -1,59 +1,85 @@
 IndieWeb OStatus bridge
 
-https://indieweb.org/2017/ostatusbridge
-https://github.com/tootsuite/mastodon/issues/1441
+<p class="right third">
+ <a href="https://indieweb.org/">
+  <img src="/indiewebcamp_logotype_big.png" /></a></p>
 
-https://www.w3.org/community/ostatus/wiki/Main_Page
-* Atom with AS1, PoCo extensions.
-* PuSH. superfeedr can do free. but need account? so do it ourselves?
-* convert representative h-card to webfinger with links to Atom, homepage, salmon endpoint, magic key
-* salmon <=> webmentions
-  need to inject our webmention endpoint into ostatus site? unlikely, but could try. add to https://github.com/tootsuite/mastodon/issues/1384
-* no user login needed! can handle any user. just need XXX for indieweb sites, rel-webmention for ostatus projects.
+I often work on connecting things that don't automatically connect but should, like [Bridgy](https://brid.gy/) for [IndieWeb](https://indieweb.org/) and social networks. Federated social networks like [GNU Social](https://gnu.io/social/) and [Mastodon](https://joinmastodon.org/) have been hot recently, so I'm thinking about them too.
 
-https://www.w3.org/community/ostatus/wiki/Howto
+<p class="right quarter">
+ <a href="https://en.wikipedia.org/wiki/OStatus">
+  <img src="/ostatus.png" /></a></p>
 
-pump.io
-https://github.com/pump-io/pump.io/issues/8
+[OStatus](https://en.wikipedia.org/wiki/OStatus) is the most widely used standard for federated social networking. Here's background and a straw man design for a bridge between OStatus and IndieWeb's [Webmention](https://webmention.net/), which would let users on both sides follow, reply, like, RSVP, and otherwise interact with each other's posts.
 
-DONE
-o2i: representative h-card
-o2i: translate to mf2
-ActivityStreams 1 <=> microformats2
-
-Mastodon issue:
-add external webmention endpoint?
-...
-this would be a substantial project, so i definitely understand that it isn't a priority for you all.
-
-if there was a third party service that converted webmentions to/from Salmon slaps, and you just had to add a `<link>` to your HTML pointing to it, would you consider that instead? something like:
-
-```
-<link rel="webmention" href="https://ostatus.brid.gy/webmention">
-```
-
-I've built a similar service that bridges social networks with webmentions, https://brid.gy/ , which has been running since Jan 2012 and scaled a fair amount. I'd love to build a similar bridge between OStatus (including Mastodon) and webmentions. i could do it without this `<link>` on your side if i wrap/proxy all Mastodon user addresses and pages on my bridge, but I'd much rather use Mastodon user addresses and pages directly, since that would obviously be better UX.
-
-this would enable rich federation with indieweb site, including replies, likes, mentions, etc. my track record with https://brid.gy/ is evidence that i can build and run this bridge reliably long term, but you'd obviously be free to remove the link if i ever take down my bridge.
-
-thanks in advance!
-
----
-
-GNU Social
-https://gnu.io/social/
-adopted StatusNet codebase in 2013
-not much mailing list activity since: https://gnu.io/social/resources/
-code: https://git.gnu.io/gnu/gnu-social but cert expired and used HSTS
+(OStatus is being replaced by a newer standard, [ActivityPub](https://activitypub.rocks/), so I've also [designed a similar ActivityPub bridge](/indieweb-activitypub-bridge).)
 
 
-https://the-federation.info/
+### Background
 
-https://github.com/redmatrix/hubzilla
+First, some links:
+* [Spec](https://ostatus.github.io/spec/OStatus%201.0%20Draft%202.html), [W3C community wiki](https://www.w3.org/community/ostatus/wiki/Main_Page) with [Howto](https://www.w3.org/community/ostatus/wiki/Howto), and component standards:
+  * [Atom](http://atomenabled.org/)
+  * [Salmon](http://www.salmon-protocol.org/)
+  * [Portable Contacts](https://en.wikipedia.org/wiki/Portable_Contacts)
+  * [PubSubHubbub](https://github.com/pubsubhubbub/PubSubHubbub)
+* [Mailing list](https://groups.google.com/forum/#!forum/ostatus-discuss) (inactive, spammy)
+* [IWS 2017 session writeup](https://indieweb.org/2017/ostatusbridge)
+* [List of implementations](https://en.wikipedia.org/wiki/OStatus#Projects_Using_OStatus). Notable:
+  * [GNU Social](https://gnu.io/social/)
+  * [Mastodon](https://joinmastodon.org/) ([issue](https://github.com/tootsuite/mastodon/issues/1441))
+  * [Friendica](http://friendi.ca/features/) ([details](http://friendi.ca/features/), [wiki](https://github.com/friendica/friendica/wiki/Protocol))
+  * [Hubzilla](https://project.hubzilla.org/) ([GitHub](https://github.com/redmatrix/hubzilla))
+  * [Diaspora](https://diasporafoundation.org/) ([discussion](https://discourse.diasporafoundation.org/t/interoperability-with-other-social-networks/106/13#post_13), [minor wiki note](https://wiki.diasporafoundation.org/Federation_message_semantics#Basic_concepts))
+  * [pump.io](http://pump.io/) ([issue](https://github.com/pump-io/pump.io/issues/8))
+* [The Federation](https://the-federation.info/) (focused on Diaspora, not OStatus)
 
-https://github.com/friendica/friendica/issues?utf8=%E2%9C%93&q=activitypub%20
 
-https://diasporafoundation.org/
-https://github.com/diaspora/diaspora
-https://github.com/diaspora/diaspora/issues/7422
+### Bridge design
+
+The bridge needs to translate a few high-level things: [data](#data), [discovery](#discovery), and [interaction protocols](#interaction-protocols).
+
+First, some simplifying assumptions and non-goals:
+* **Don't translate AS2 to [microformats2](http://microformats.org/wiki/microformats2) HTML.** Most of the big existing projects already include mf2 in their HTML: Mastodon, GNU Social, pump.io, and Friendica (but not Diaspora). We'll just use that in place.  
+  (This may not hold for non-text interactions, e.g. likes, so we may need to revisit those. Also, it may only works well for public data, so...)
+* **Only public posts and interactions.** I'm not sure any project has truly robust, mature support for private or semi-private interactions right now, so they're not a high priority.
+* **Require IW sites to serve Atom and PuSH themselves.** There's fairly widespread support for both in major CMSes and external like [Superfeedr](https://documentation.superfeedr.com/publishers.html) and [FeedBurner](https://feedburner.google.com/).
+* **No user registration.** The bridge is mostly stateless, modulo discovery caching and Salmon keypairs, and we don't need to do an OAuth-style user approval dance on either end...so let's not!
+
+Next, a major design decision. Choose one of:
+* **Proxy all domains.** Say the bridge's domain is `bridge.example`. If IW user `alice.example` and OS user `@bob@ap.example` want to interact, they'd do so via wrapped identifiers like `@alice.example@bridge.example` and `bob.ap.example.bridge.example`, respectively. Pro: no changes needed on IW or OS sites. Con: bad UX.
+* **Require sites to point to bridge.** If IW sites support OS [content negotiation discovery](#con-neg) and redirect to the bridge, and OS sites add a `<link rel="webmention'>` that points to the bridge, the normal `alice.example` and `@bob@ap.example` identifiers will work automatically. Pro: Good UX. Con: depends on support in each individual project.
+
+Proxying is a non-trivial amount of work, and we can always add it later, so we'll start without it.
+
+
+<span id="data"></span>
+#### Data
+
+[granary](https://granary-demo.appspot.com/) already has a first pass at translating between [microformats2](http://microformats.org/wiki/microformats2) and ActivityStreams 1, but it hasn't been tested against an OStatus implementation. We'll need to do that and fix any holes. At minimum, I think the PoCo extensions are missing.
+
+
+<span id="discovery"></span>
+#### Discovery
+
+**For OS to discover IW users**, IW sites will need to redirect WebFinger and XRD URLs to the bridge, which will fetch their homepage, find its [representative h-card](http://microformats.org/wiki/representative-hcard-parsing), and generate WebFinger data for it. Also, if it's the first time we've seen this user, a Salmon magic key is generated and stored.
+
+**For IW to discover OS users**, OS projects will need to advertize the bridge's webmention endpoint in their HTML, e.g. `<link rel="webmention' href="https://bridge.example/webmention>`. As an example, I've already [asked Mastodon for this in an issue](https://github.com/tootsuite/mastodon/issues/1384#issuecomment-319399833).
+
+
+<span id="interaction-protocols"></span>
+#### Interaction protocols
+
+**To convert a webmention to OS**:
+1. Accept incoming webmention.
+1. Fetch source page. Translate it to AS1.
+1. Fetch target page. Determine author user.
+1. Discover user's Salmon endpoint via WebFinger/XRD.
+1. Send the AS1 interaction in a Salmon slap.
+
+**To convert an OS interaction to webmention**:
+1. Accept incoming Salmon slap.
+1. Parse AS1 object in body, determine target URL (reply to, like of, etc). Reject if no target is found.
+1. Fetch target URL, discover webmention endpoint.
+1. Send webmention with OS source and IW target.
 
