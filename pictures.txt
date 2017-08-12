@@ -1,6 +1,46 @@
 pictures
 
 <div class="ngg-album-compact">
+<a href="/childrens-museums">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2017/08/santa_rosa_hard_hat_2-300x400.jpg" />
+  </div>
+  <h4>childrens museums</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/playschool-portraits">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2017/08/009_brooke-300x450.jpg" />
+  </div>
+  <h4>playschool portraits</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/portland">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2017/08/farm_picking_strawberries_1-300x225.jpg" />
+  </div>
+  <h4>portland</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/white-oak-q2-2017">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2017/08/brooke_deck_play_crib-300x198.jpg" />
+  </div>
+  <h4>white oak q2 2017</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/misc-q2-2017">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2017/08/neighbors_rabbit-300x225.jpg" />
+  </div>
+  <h4>misc q2 2017</h4>
+</a></div>
+
+<div class="ngg-album-compact">
 <a href="/brooke-q1-2017">
   <div class="ngg-album-compactbox">
     <img src="/w/wp-content/uploads/2017/03/white_oak_hike_mushrooms_vanessa-300x224.jpg" />
