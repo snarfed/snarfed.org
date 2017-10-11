@@ -117,14 +117,17 @@ MobileForce Technologies, Software Engineer intern, 1998
 
 ##### Patents
 
+* 15/489492 (allowed):
+  _Functional testing of code modifications for read processing systems_ (Color Genomics)
 * 15/466325 (allowed):
   _Lossless compression of client read data_ (Color Genomics)
-* 15/489473 (allowed):
-  _Duplication and deletion detection using transformation processing of depth vectors_ (Color Genomics)
 * 15/452241 (allowed):
   _Real-time alignment and processing of incomplete stream of data_ (Color Genomics)
 * 15/449579 (allowed):
   _Load balancing and conflict processing in workflow with task dependencies_ (Color Genomics)
+* [9773031](https://www.google.com/patents/US9773031):
+  ([USPTO](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9773031.PN.&OS=PN/9773031&RS=PN/9773031)):
+  _Duplication and deletion detection using transformation processing of depth vectors_ (Color Genomics)
 * [9678794](https://www.google.com/patents/US9678794)
   ([USPTO](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9678794.PN.&OS=PN/9678794&RS=PN/9678794)):
   _Techniques for processing queries relating to task-completion times or cross-data-structure interactions_ (Color Genomics)
