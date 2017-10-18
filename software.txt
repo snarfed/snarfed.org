@@ -10,13 +10,15 @@ see [my GitHub profile](https://github.com/snarfed) and [other lists](/lists).
 <a name="projects"></a>
 ### Projects
 
+* [Bridgy](https://brid.gy/): Got a web site? Post links to your site on social
+networks? Wish comments and likes showed up on your site? Bridgy copies them
+back for you. Part of the [IndieWeb](https://indieweb.org/) ecosystem.
+
+* [Bridgy Fed](https://fed.brid.gy/): Bridgy, for federated social networks! Lets you reply, like, and repost on <a href="https://joinmastodon.org/">Mastodon</a> and <a href="https://project.hubzilla.org/">Hubzilla</a> posts from your [IndieWeb](https://indieweb.org/) site, and vice versa.
+
 * [Indie Map](http://www.indiemap.org/) is a public
 [IndieWeb](https://indieweb.org/) social graph and dataset, based on a
 complete crawl of 2300 of the most active IndieWeb sites.
-
-* [Bridgy](http://brid.gy/): Got a web site? Post links to your site on social
-networks? Wish comments and likes showed up on your site? Bridgy copies them
-back for you. Part of the [IndieWeb](https://indieweb.org/) ecosystem.
 
 * [huffduff-video](http://huffduff-video.snarfed.org/) lets you send
 [Huffduffer](http://huffduffer.com/) the audio from videos on YouTube, Vimeo,

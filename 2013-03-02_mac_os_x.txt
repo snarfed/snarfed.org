@@ -23,8 +23,9 @@ I've done to make it feel comfortable.
   * [Mac OS X](#Mac_OS_X)
   * [Keyboard and mouse](#Keyboard_and_mouse)
   * [Xcode](#Xcode)
-  * [Yosemite](#Yosemite)
+  * [High Sierra](#High_Sierra)
   * [El Capitan](#El_Capitan)
+  * [Yosemite](#Yosemite)
   * [Miscellaneous](#Miscellaneous)
   * [Remaining problems](#Remaining_problems)
 
@@ -472,6 +473,29 @@ includes a ton of docsets for popular languages, platforms, and frameworks. It
 looks great so far, and has Emacs integration too.
 
 
+<a name="High Sierra"></a>
+#### High Sierra
+
+TODO
+
+<a name="El Capitan"></a>
+#### El Capitan
+
+Upgrading to El Capitan was mostly uneventful. Here are some minor notes:
+
+* API changes broke one of my favorite utilities,
+  [MenuMeters](http://www.ragingmenace.com/software/menumeters/). The author
+  thinks it's unfixable, but
+  [Yuji Tachikawa](http://member.ipmu.jp/yuji.tachikawa/) has
+  [patched it so it works](http://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/).
+  Yay!
+* Emacs's `visible-bell` feature is half broken too.
+  [They're working on it.](http://lists.gnu.org/archive/html/bug-gnu-emacs/2015-10/msg00481.html)
+* The three finger drag option is no longer in _System Preferences => Trackpad_.
+  It's now in _System Preferences => Accessibility => Mouse & Trackpad =>
+  Trackpad Options… => Enable dragging_.
+
+
 <a name="Yosemite"></a>
 #### Yosemite
 
@@ -495,24 +519,6 @@ Upgrading to Yosemite was pleasantly uneventful. Here are some minor notes:
   Run this to disable that behavior:
   `sudo /usr/libexec/PlistBuddy -c "Add :ProgramArguments: string --no-namechange" /System/Library/LaunchDaemons/com.apple.discoveryd.plist`
   (Also see [this discussions.apple.com thread](https://discussions.apple.com/thread/6631728).)
-
-
-<a name="El Capitan"></a>
-#### El Capitan
-
-Upgrading to El Capitan was mostly uneventful. Here are some minor notes:
-
-* API changes broke one of my favorite utilities,
-  [MenuMeters](http://www.ragingmenace.com/software/menumeters/). The author
-  thinks it's unfixable, but
-  [Yuji Tachikawa](http://member.ipmu.jp/yuji.tachikawa/) has
-  [patched it so it works](http://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/).
-  Yay!
-* Emacs's `visible-bell` feature is half broken too.
-  [They're working on it.](http://lists.gnu.org/archive/html/bug-gnu-emacs/2015-10/msg00481.html)
-* The three finger drag option is no longer in _System Preferences => Trackpad_.
-  It's now in _System Preferences => Accessibility => Mouse & Trackpad =>
-  Trackpad Options… => Enable dragging_.
 
 
 <a name="Miscellaneous"></a>
