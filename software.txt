@@ -14,7 +14,7 @@ see [my GitHub profile](https://github.com/snarfed) and [other lists](/lists).
 networks? Wish comments and likes showed up on your site? Bridgy copies them
 back for you. Part of the [IndieWeb](https://indieweb.org/) ecosystem.
 
-* [Bridgy Fed](https://fed.brid.gy/): Bridgy, for federated social networks! Lets you reply, like, and repost on <a href="https://joinmastodon.org/">Mastodon</a> and <a href="https://project.hubzilla.org/">Hubzilla</a> posts from your [IndieWeb](https://indieweb.org/) site, and vice versa.
+* [Bridgy Fed](https://fed.brid.gy/): Bridgy, for federated social networks! Lets you reply, like, and repost on <a href="https://joinmastodon.org/">Mastodon</a> and <a href="https://project.hubzilla.org/">Hubzilla</a> from your [IndieWeb](https://indieweb.org/) site, and vice versa.
 
 * [Indie Map](http://www.indiemap.org/) is a public
 [IndieWeb](https://indieweb.org/) social graph and dataset, based on a

@@ -4,6 +4,6 @@ Bridgy Fed
  <a href="https://fed.brid.gy/">
   <img src="/bridgy_fed.png"></a></p>
 
-I'm launching a new side project! [Bridgy Fed](https://fed.brid.gy/) connects your [IndieWeb](https://indieweb.org/) site with federated social networks like [Mastodon](https://joinmastodon.org/) and [Hubzilla](https://project.hubzilla.org/). If your site can send and receive webmentions, Bridgy Fed can federate it with the [fediverse](https://en.wikipedia.org/wiki/Fediverse)!
+I'm launching a new side project! [Bridgy Fed](https://fed.brid.gy/) connects your [IndieWeb](https://indieweb.org/) site with federated social networks like [Mastodon](https://joinmastodon.org/) and [Hubzilla](https://project.hubzilla.org/). If your site can send and receive [webmentions](https://indieweb.org/webmention), Bridgy Fed can federate it with the [fediverse](https://en.wikipedia.org/wiki/Fediverse)!
 
 I originally discovered the IndieWeb while I was connecting this web site with social networks like Facebook and Twitter. That led to [Bridgy](https://brid.gy/), which has grown bigger than I care to admit. I still have that desire to bridge different communities and networks, and Bridgy Fed is just the latest incarnation. Give it a whirl, kick the tires, and [let me know what you think](https://github.com/snarfed/bridgy-fed/issues)!
