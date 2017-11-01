@@ -23,7 +23,7 @@ I've done to make it feel comfortable.
   * [Mac OS X](#Mac_OS_X)
   * [Keyboard and mouse](#Keyboard_and_mouse)
   * [Xcode](#Xcode)
-  * [High Sierra](#High_Sierra)
+  * [Sierra + High Sierra](#Sierra)
   * [El Capitan](#El_Capitan)
   * [Yosemite](#Yosemite)
   * [Miscellaneous](#Miscellaneous)
@@ -473,10 +473,17 @@ includes a ton of docsets for popular languages, platforms, and frameworks. It
 looks great so far, and has Emacs integration too.
 
 
-<a name="High_Sierra"></a>
-#### High Sierra
+<a name="Sierra"></a>
+#### Sierra + High Sierra
 
-TODO
+I upgraded from El Capitan directly to High Sierra 10.13.1. It failed the first time with _File system verify or repair failed_, but then it retried and succeeded. ¯\\_(ツ)\_/¯
+
+My key binding app, [Karabiner](#Keyboard_and_mouse), had to be rewritten from scratch as [Karabiner Elements](https://github.com/tekezo/Karabiner-Elements) to support Sierra and High Sierra. I ported my config, and everything survived [_except_ unlocked Sticky Keys](https://github.com/tekezo/Karabiner-Elements/issues/477). Hope they get to that soon!
+
+The rest of my apps all seem to still work fine, including more OS sensitive utilities like MenuMeters, Slate, Homebrew (including `/usr/local`), GNU Coreutils, and GNU Emacs.
+
+Mac OS upgrades always wipe and install fresh copies of some system config files I've modified for a local MAMP setup, e.g. `/etc/apache2/httpd.conf` and `/etc/php.ini.default`, so I had to re-add my modifications. High Sierra also upgraded the system PHP from 5 to 7, so I updated `httpd.conf` to `LoadModule php7_module libexec/apache2/libphp7.so`.
+
 
 <a name="El_Capitan"></a>
 #### El Capitan
