@@ -20,6 +20,7 @@ I've done to make it feel comfortable.
   * [Window management](#Window_management)
   * [Emacs](#Emacs)
   * [Firefox](#Firefox)
+    * [WebExtensions and multiprocess](#webextensions-and-multiprocess)
   * [Mac OS X](#Mac_OS_X)
   * [Keyboard and mouse](#Keyboard_and_mouse)
   * [Xcode](#Xcode)
@@ -264,9 +265,34 @@ That helped, but only for a couple weeks. I then tried the bigger hammer of
 I set `media.autoplay.enabled` in `about:config` to `false` to stop videos from
 playing automatically.
 
-Mozilla has been making extensive changes and refactorings to Firefox recently, notably [multi-process support](https://developer.mozilla.org/en-US/Firefox/Multiprocess_Firefox) (aka [Electrolysis](https://wiki.mozilla.org/Electrolysis)) and supporting only [WebExtension](https://developer.mozilla.org/en-US/Add-ons/WebExtensions) plugins. Many of the plugins I use - [Cookie Monster](https://addons.mozilla.org/en-US/firefox/addon/cookie-monster/), [ViewSourceWith](https://addons.mozilla.org/en-US/firefox/addon/dafizilla-viewsourcewith/), [keyconfig](https://addons.mozilla.org/en-US/firefox/addon/dorando-keyconfig/?src=search), [jump-to-anchor](https://github.com/brettz9/jump-to-anchor) - are old and either [based on XUL](https://developer.mozilla.org/en-US/Add-ons/Overlay_Extensions) or [aren't multi-process compatible](https://blog.mozilla.org/addons/2016/09/07/help-make-add-ons-multiprocess-compatible-with-add-on-compatibility-reporter/), so they'll [stop working when Firefox 57 ships in November 2017](https://blog.mozilla.org/addons/2017/02/16/the-road-to-firefox-57-compatibility-milestones/).
+<a name="webextensions-and-multiprocess"></a>
+##### WebExtensions and multiprocess
 
-I've found multi-process compatible replacements for the plugins that weren't compatible: [Cookie AutoDelete](https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/), [Display #Anchors](https://addons.mozilla.org/en-US/firefox/addon/display-_anchors/), and [`view_source.editor.external` and `view_source.editor.path` in `about:config`](https://www.ghacks.net/2009/12/07/add-and-use-multiple-source-code-editors-in-firefox/). WebExtension compatible is a longer pole, especially for keyconfig, since the WebExtension API allows binding some keys to some actions, but not all, e.g. it evidently can't select a specific tab, or do custom things like toggle [Stylish](https://addons.mozilla.org/en-US/firefox/addon/stylish/?src=search) on and off.
+Mozilla made big changes to Firefox leading up to version 57 aka [Quantum](https://nelsonslog.wordpress.com/2017/10/19/firefox-quantum/) ([more](https://medium.com/mozilla-tech/the-search-for-the-goldilocks-browser-and-why-firefox-may-be-just-right-for-you-1f520506aa35)), notably [multi-process support](https://developer.mozilla.org/en-US/Firefox/Multiprocess_Firefox) (aka [Electrolysis](https://wiki.mozilla.org/Electrolysis)) and supporting only [WebExtension](https://developer.mozilla.org/en-US/Add-ons/WebExtensions) ([more](https://support.mozilla.org/en-US/kb/firefox-add-technology-modernizing)). Many of the plugins I use are old and [based on XUL](https://developer.mozilla.org/en-US/Add-ons/Overlay_Extensions) or [not multi-process compatible](https://blog.mozilla.org/addons/2016/09/07/help-make-add-ons-multiprocess-compatible-with-add-on-compatibility-reporter/), so they [stopped working when Quantum shipped in November 2017](https://blog.mozilla.org/addons/2017/02/16/the-road-to-firefox-57-compatibility-milestones/).
+
+Mozilla [put together some resources to help find WebExtension alternatives to existing plugins that don't migrate](https://blog.mozilla.org/addons/2017/10/26/helping-find-compatible-extensions/). Here are some of mine:
+
+* [Stylish](https://addons.mozilla.org/en-US/firefox/addon/stylish/) and [Adblock Plus](https://adblockplus.org/) migrated.
+* [Cookie Monster](https://addons.mozilla.org/en-US/firefox/addon/cookie-monster/) => [Cookie AutoDelete](https://addons.mozilla.org/en-US/firefox/addon/cookie-autodelete/reviews/) (better UX too!)
+* [jump-to-anchor](https://github.com/brettz9/jump-to-anchor) => [Display Anchors](https://addons.mozilla.org/en-US/firefox/addon/display-anchors/) (slightly worse UX :( )
+* [ViewSourceWith](https://addons.mozilla.org/en-US/firefox/addon/dafizilla-viewsourcewith/) => [`view_source.editor.external` and `view_source.editor.path` in `about:config`](https://www.ghacks.net/2009/12/07/add-and-use-multiple-source-code-editors-in-firefox/)
+* [keyconfig](https://addons.mozilla.org/en-US/firefox/addon/dorando-keyconfig/?src=search) => [Shortkeys](https://addons.mozilla.org/en-US/firefox/addon/shortkeys-custom-shortcuts/) (also tried [Saka Key](https://addons.mozilla.org/firefox/addon/saka-key/))
+
+Keyboard shortcuts were by far the hardest to migrate. The
+[WebExtension `commands` API](https://developer.chrome.com/extensions/commands) is
+[famously](https://bugzilla.mozilla.org/show_bug.cgi?id=1215061)
+[weaker](https://github.com/lydell/webextension-keyboard/)
+than the old [XUL-based API](https://developer.mozilla.org/en-US/Add-ons/SDK).
+[Most](https://github.com/Lord-Kamina/keybinder#sorry-guys-but-im-afraid-this-is-the-end-of-the-line)
+[plugins](https://github.com/vimperator/vimperator-labs#end-of-life-and-alternatives)
+[gave](https://addons.mozilla.org/en-US/firefox/addon/dorando-keyconfig/reviews/924874/)
+[up](https://addons.mozilla.org/en-US/firefox/addon/s3menu-wizard/)
+[migrating](https://gist.github.com/IzzySoft/db7c7d4243283ca84b3abd8b94114e2e)
+[entirely](https://addons.mozilla.org/en-US/firefox/addon/hit-a-hint/).
+
+Fortunately, I only really care about a few custom key bindings. In particular, I have decades of [switching between windows](#Window_management) with ⌘ (Command) I/J/K/L burned into my muscle memory, so ⌘-L to focus the address bar is a non-starter. I use Control-L instead. I ended up using [Karabiner Elements](#Sierra) to map that to F6, its second key binding in Firefox. I similarly mapped ⌘-[0-9,Backspace] to Control for switching to specific tabs.
+
+[This list of built in keyboard shortcuts](https://support.mozilla.org/en-US/kb/keyboard-shortcuts-perform-firefox-tasks-quickly) and [this exhaustive background design doc](https://website-archive.mozilla.org/www.mozilla.org/access/access/keyboard/index.html) were both useful references.
 
 
 <a name="Mac_OS_X"></a>
@@ -483,6 +509,8 @@ My key binding app, [Karabiner](#Keyboard_and_mouse), had to be rewritten from s
 The rest of my apps all seem to still work fine, including more OS sensitive utilities like MenuMeters, Slate, Homebrew (including `/usr/local`), GNU Coreutils, and GNU Emacs.
 
 Mac OS upgrades always wipe and install fresh copies of some system config files I've modified for a local MAMP setup, e.g. `/etc/apache2/httpd.conf` and `/etc/php.ini.default`, so I had to re-add my modifications. High Sierra also upgraded the system PHP from 5 to 7, so I updated `httpd.conf` to `LoadModule php7_module libexec/apache2/libphp7.so`.
+
+Oddly, after upgrading, applications lost access to my _login_ keychain and could no longer read or write passwords stored there. They repeatedly asked for passwords that I could see in that keychain. When I opened one of the entries in _Keychain Access_ and clicked _Show password_, it said _Access to this item is restricted. The provided password did not unlock this keychain, or access has been limited to a particular user account._ I managed to fix this by running _First Aid_ on my hard drive in _Disk Utility_.
 
 
 <a name="El_Capitan"></a>
