@@ -366,9 +366,7 @@ I even tried variations on `defaults write com.apple.screensaver askForPassword
 Networking is pretty straightforward, and has its own command line utility,
 [`airport`](http://osxdaily.com/2007/01/18/airport-the-little-known-command-line-wireless-utility/).
 
-Keychain integrates with SSH keys automatically, which is pretty damn cool.
-Sadly it doesn't also handle GnuPG keys, but I only use mine rarely, so I don't
-mind typing the password each time or just using stock `gpg-agent`.
+Keychain <strike>integrates with SSH keys automatically, which is pretty damn cool</strike> evidently no longer integrates with `ssh-agent` automatically, as of Sierra or High Sierra. It doesn't handle GnuPG keys either, but I only use mine rarely, so I don't mind typing the password each time or just using stock `gpg-agent`.
 
 To
 [set your hostname](http://osxdaily.com/2012/10/24/set-the-hostname-computer-name-and-bonjour-name-separately-in-os-x/)
@@ -510,7 +508,11 @@ The rest of my apps all seem to still work fine, including more OS sensitive uti
 
 Mac OS upgrades always wipe and install fresh copies of some system config files I've modified for a local MAMP setup, e.g. `/etc/apache2/httpd.conf` and `/etc/php.ini.default`, so I had to re-add my modifications. High Sierra also upgraded the system PHP from 5 to 7, so I updated `httpd.conf` to `LoadModule php7_module libexec/apache2/libphp7.so`.
 
-Oddly, after upgrading, applications lost access to my _login_ keychain and could no longer read or write passwords stored there. They repeatedly asked for passwords that I could see in that keychain. When I opened one of the entries in _Keychain Access_ and clicked _Show password_, it said _Access to this item is restricted. The provided password did not unlock this keychain, or access has been limited to a particular user account._ I managed to fix this by running _First Aid_ on my hard drive in _Disk Utility_.
+After upgrading, applications lost access to my _login_ keychain and could no longer read or write passwords stored there. They repeatedly asked for passwords that I could see in that keychain. When I opened one of the entries in _Keychain Access_ and clicked _Show password_, it said _Access to this item is restricted. The provided password did not unlock this keychain, or access has been limited to a particular user account._ I managed to fix this by running _First Aid_ on my hard drive in _Disk Utility_.
+
+My mouse pointer also started disappearing regularly, sometimes as often as once every minute or two. Happened more often when I had a second monitor connected, but also sometimes without. Web searches found lots of tricks to bring it back that didn't work for me - Cmd-Tab, Cmd-Option-Escape, change cursor size, drag, right click - and one that did, activating the screen saver and then deactivating it.
+
+I didn't find many ideas for how to prevent it in the first place, though. I finally turned some related Accessibility settings on and off again (zoom, cursor size, shake to locate etc.) and [reset my NVRAM](https://support.apple.com/en-us/HT204063), and that seemed to do the trick. ¯\\_(ツ)\_/¯
 
 
 <a name="El_Capitan"></a>
@@ -625,20 +627,15 @@ isn't a real server, nor is it really multi-user, so whatever.
 <a name="Remaining_problems"></a>
 #### Remaining problems
 
-* In Yosemite, many apps lost the highlight around selected buttons, which makes
-  tabbing between them difficult.
-  [StackOverflow say this is a Yosemite bug](http://apple.stackexchange.com/questions/152233),
-  and the fix is for each app to recompile with the current Xcode and libraries.
-  Sigh.
-* Also Yosemite: after I upgraded, my laptop's hostname started changing
-regularly. _hell_ became _hell-2_, _hell-3_, etc. Found
-[lots of](http://ispire.me/computer-name-changing-constantly-yosemite/)
-[discussions](http://osxdaily.com/2014/10/25/fix-wi-fi-problems-os-x-yosemite/#comment-713715)
-and [support](https://discussions.apple.com/thread/6631728)
-[threads](https://discussions.apple.com/thread/6606072). I tried this but no luck:
+In Yosemite, many apps lost the highlight around selected buttons, which makes tabbing between them difficult. [StackOverflow say this is a Yosemite bug](http://apple.stackexchange.com/questions/152233), and the fix is for each app to recompile with the current Xcode and libraries. Sigh.
+
+<!---
+Also Yosemite: after I upgraded, my laptop's hostname started changing regularly. _hell_ became _hell-2_, _hell-3_, etc. Found [lots of](http://ispire.me/computer-name-changing-constantly-yosemite/) [discussions](http://osxdaily.com/2014/10/25/fix-wi-fi-problems-os-x-yosemite/#comment-713715) and [support](https://discussions.apple.com/thread/6631728) [threads](https://discussions.apple.com/thread/6606072). I tried this but no luck:
 
 <span />
 
     sudo /usr/libexec/PlistBuddy \
       -c "Add :ProgramArguments: string --no-namechange" \
       /System/Library/LaunchDaemons/com.apple.discoveryd.plist
+
+--->
