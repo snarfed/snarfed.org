@@ -56,7 +56,7 @@ Proxying is a non-trivial amount of work, and we can always add it later, so we'
 <span id="data"></span>
 #### Data
 
-[granary](https://granary-demo.appspot.com/) already has a first pass at translating between [microformats2](http://microformats.org/wiki/microformats2) and ActivityStreams 1, but it hasn't been tested against an OStatus implementation. We'll need to do that and fix any holes. At minimum, I think the PoCo extensions are missing.
+[granary](https://granary.io/) already has a first pass at translating between [microformats2](http://microformats.org/wiki/microformats2) and ActivityStreams 1, but it hasn't been tested against an OStatus implementation. We'll need to do that and fix any holes. At minimum, I think the PoCo extensions are missing.
 
 
 <span id="discovery"></span>

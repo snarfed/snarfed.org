@@ -24,7 +24,12 @@ text="[^"]*"
 
 xsltproc --novalid --nonet ~/src/misc/opml2markdown.xslt \
   ~/etc/newsblur-feeds.opml.xml \
-  | grep -v -E 'facebook|goodreads|granary-demo|instagram-atom|link:snarfed.org|mockfacebook|picasaweb|plusstreamfeed|private|smugmug|twitter-atom|Twitter list|Twitter Search|User ryan|usubscription'
+  | grep -v -E 'facebook|goodreads|granary-demo|granary.io|instagram-atom|link:snarfed.org|mockfacebook|picasaweb|plusstreamfeed|private|smugmug|twitter-atom|Twitter list|Twitter Search|User ryan|usubscription'
+
+
+mastodon users
+===
+use https://siftrss.com/ to filter out replies. enter the mastodon feed url, then tell it to exclude items where the activity:object-type contains comment.
 
 
 pages without feeds

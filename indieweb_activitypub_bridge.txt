@@ -34,7 +34,7 @@ ActivityPub also has explicit support for [public posts and addressing](https://
 
 ### Bridge design
 
-The bridge needs to translate a few high-level things: data (probably via [granary](https://granary-demo.appspot.com/)), [discovery](#discovery), and [interaction protocols](#interaction-protocols).
+The bridge needs to translate a few high-level things: data (probably via [granary](https://granary.io/)), [discovery](#discovery), and [interaction protocols](#interaction-protocols).
 
 First, some simplifying assumptions and non-goals:
 * **Don't translate AS2 to [microformats2](http://microformats.org/wiki/microformats2) HTML.** Most of the big existing projects already include mf2 in their HTML: Mastodon, GNU Social, pump.io, and Friendica (but not Diaspora). We'll just use that in place.  
