@@ -6,7 +6,7 @@ Resume
 
 #### [Color Genomics](https://getcolor.com/), 2015 - present
 
-Helping lead engineering and ops. Contributing to bioinformatics pipeline, data mining infrastructure, research database and platform, internal genomics tools, and external webapps.
+Helping lead engineering and ops. Contributing to data platform, bioinformatics, infrastructure, research, and internal tools.
 
 
 <p class="quarter right">
@@ -89,6 +89,9 @@ projects include [Bridgy](https://www.brid.gy/),
 [tcsh](http://www.tcsh.org/), and [Pidgin](http://pidgin.im/).
 
 
+<hr />
+
+
 <p class="sixth right">
  <a href="https://www.stanford.edu/">
   <img src="/stanford_logo.png" /></a></p>
@@ -117,33 +120,39 @@ MobileForce Technologies, Software Engineer intern, 1998
 
 ##### Patents
 
+_Color Genomics_
+
 * 15/489492<!--(https://www.google.com/patents/US999)
   ([USPTO](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=999.PN.&OS=PN/999&RS=PN/999))-->:
-  _Functional testing of code modifications for read processing systems_ (Color Genomics)
-* 9817866<!--(https://www.google.com/patents/US9817866)
-  ([USPTO](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9817866.PN.&OS=PN/9817866&RS=PN/9817866))-->:
-  _Lossless compression of client read data_ (Color Genomics)
-* 9813467<!--(https://www.google.com/patents/US9813467)
-  ([USPTO](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9813467.PN.&OS=PN/9813467&RS=PN/9813467))-->:
-  _Real-time alignment and processing of incomplete stream of data_ (Color Genomics)
-* 9811391<!--(https://www.google.com/patents/US9811391)
-  ([USPTO](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9811391.PN.&OS=PN/9811391&RS=PN/9811391))-->:
-  _Load balancing and conflict processing in workflow with task dependencies_ (Color Genomics)
-* 9773031 <!--(https://www.google.com/patents/US9773031)-->
+  _Functional testing of code modifications for read processing systems_
+* [9817866](https://www.google.com/patents/US9817866)
+  ([USPTO](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9817866.PN.&OS=PN/9817866&RS=PN/9817866)):
+  _Lossless compression of client read data_
+* [9813467](https://www.google.com/patents/US9813467)
+  ([USPTO](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9813467.PN.&OS=PN/9813467&RS=PN/9813467)):
+  _Real-time alignment and processing of incomplete stream of data_
+* [9811391](https://www.google.com/patents/US9811391)
+  ([USPTO](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9811391.PN.&OS=PN/9811391&RS=PN/9811391)):
+  _Load balancing and conflict processing in workflow with task dependencies_
+* [9773031](https://www.google.com/patents/US9773031)
   ([USPTO](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9773031.PN.&OS=PN/9773031&RS=PN/9773031)):
-  _Duplication and deletion detection using transformation processing of depth vectors_ (Color Genomics)
-* [9678794](https://www.google.com/patents/US9678794), 9811438
+  _Duplication and deletion detection using transformation processing of depth vectors_
+* [9678794](https://www.google.com/patents/US9678794),
+  [9811438](https://www.google.com/patents/US9811438)
   ([USPTO](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9678794.PN.&OS=PN/9678794&RS=PN/9678794)):
-  _Techniques for processing queries relating to task-completion times or cross-data-structure interactions_ (Color Genomics)
+  _Techniques for processing queries relating to task-completion times or cross-data-structure interactions_
 * [9584882](https://www.google.com/patents/US9584882)
   ([USPTO](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=9584882.PN.&OS=PN/9584882&RS=PN/9584882.PN.)):
-  _Communication generation using sparse indicators and sensor data_ (Color Genomics)
+  _Communication generation using sparse indicators and sensor data_
+
+_Google_
+
 * [8005950](https://www.google.com/patents/US8005950)
   ([USPTO](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=8005950.PN.&OS=PN/8005950&RS=PN/8005950)):
-  _Application server scalability through runtime restrictions enforcement in a distributed application execution system_ (Google)
+  _Application server scalability through runtime restrictions enforcement in a distributed application execution system_
 * [7877482](https://www.google.com/patents/US7877482)
   ([USPTO](http://patft.uspto.gov/netacgi/nph-Parser?Sect1=PTO1&Sect2=HITOFF&d=PALL&p=1&u=%2Fnetahtml%2FPTO%2Fsrchnum.htm&r=1&f=G&l=50&s1=7877482.PN.&OS=PN/7877482&RS=PN/7877482)):
-  _Efficient application hosting in a distributed application execution system_ (Google)
+  _Efficient application hosting in a distributed application execution system_
 
 <hr />
 
