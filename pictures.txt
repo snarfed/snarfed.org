@@ -1,11 +1,91 @@
 pictures
 
 <div class="ngg-album-compact">
+<a href="/misc-2017">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2017/12/playground_digger-300x230.jpg" />
+  </div>
+  <h4>misc 2017</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/playschool-portraits-2">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2017/12/portraits_swing_1-300x450.jpg" />
+  </div>
+  <h4>playschool portraits 2</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/thanksgiving-2017">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2017/12/fall_centerpiece-300x252.jpg" />
+  </div>
+  <h4>thanksgiving 2017</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/oakland-zoo">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2017/12/frog-300x381.jpg" />
+  </div>
+  <h4>oakland zoo</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/halloween-2017">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2017/12/pumpkin_patch_wheelbarrow_kids-300x400.jpg" />
+  </div>
+  <h4>halloween 2017</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/rowell-ranch-pumpkin-patch">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2017/12/driving_3-300x450.jpg" />
+  </div>
+  <h4>rowell ranch pumpkin patch</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/chicago-2017">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2017/12/the_bean_gina_krista-300x225.jpg" />
+  </div>
+  <h4>chicago</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/brookes-3rd-birthday">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2017/12/cake_brooke-300x450.jpg" />
+  </div>
+  <h4>brooke's 3rd birthday</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/adam-and-krista-visit">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2017/12/krista_brooke_phone-300x200.jpg" />
+  </div>
+  <h4>adam and krista visit</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/family-reunion-and-new-orleans">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2017/12/crabbing_brooke_gina-300x391.jpg" />
+  </div>
+  <h4>family reunion and new orleans</h4>
+</a></div>
+
+<div class="ngg-album-compact">
 <a href="/childrens-museums">
   <div class="ngg-album-compactbox">
     <img src="/w/wp-content/uploads/2017/08/santa_rosa_hard_hat_2-300x400.jpg" />
   </div>
-  <h4>childrens museums</h4>
+  <h4>children's museums</h4>
 </a></div>
 
 <div class="ngg-album-compact">
