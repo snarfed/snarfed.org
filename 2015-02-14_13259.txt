@@ -1,3 +1,4 @@
+13259
 
 
 Had to [kill off Bridgy Publish support for Facebook comments and likes](https://github.com/snarfed/bridgy/issues/350#issuecomment-74396830) due to Facebook API changes. Sad.

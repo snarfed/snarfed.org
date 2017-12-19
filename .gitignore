@@ -1,4 +1,4 @@
 *.blogpost
 *.blogpost.bak
-
+blogpost.last
 ./
