@@ -96,6 +96,7 @@ older version, but only if you already have it installed. If you don't, there's
 no an easy way to install it. On the rare occasion that I've needed to, I
 followed [this recipe](http://stackoverflow.com/a/9832084/186123). Executive
 summary:
+
 1. `brew unlink PACKAGE`
 1. `brew info --github PACKAGE`
 1. Open the history page.
@@ -384,6 +385,7 @@ Oddly though, the baseline volume is too loud for a few of my headphones.
 [Other people have the same problem](http://forums.macrumors.com/showthread.php?t=1232195).
 [This StackExchange question](http://apple.stackexchange.com/questions/63253/lowest-volume-is-still-too-loudhow-can-i-make-it-even-lower)
 offers a number of solutions:
+
   * Hold Option and Shift while pressing the volume buttons to get smaller
 increments, or use the Menu Bar icon. Neither of those go as low as I'd like,
 though.

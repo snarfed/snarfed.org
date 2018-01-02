@@ -72,8 +72,8 @@ you're running Gnome. Of course, more and more things are "part of Gnome" and
 use it, like PulseAudio, but others like Pidgin and Firefox don't. They read
 `.gtkrc-2.0` instead.
 
-<a name="emacs-gtk-bug"></a>
-  * This [Emacs 23/GTK bug](https://bugzilla.gnome.org/show_bug.cgi?id=85715)
+  * <a name="emacs-gtk-bug"></a>
+This [Emacs 23/GTK bug](https://bugzilla.gnome.org/show_bug.cgi?id=85715)
 ([more](http://emacsbugs.donarmstrong.com/cgi-bin/bugreport.cgi?bug=4078)
 [details](https://bugs.launchpad.net/ubuntu/+source/emacs23/+bug/543611))
 annoyed the shit out of me. When server-based X frames are killed instead of
@@ -145,9 +145,8 @@ upstream 2.6.31.14 aka Ubuntu 2.6.32-23-generic. You can get it with
 `sudo apt-get update` followed by either `sudo apt-get install linux-image`
 or just `sudo apt-get upgrade`.
 
-<a name="xmodmap"></a>
-  * Speaking of USB, when I plug in my USB keyboard, my `xmodmap` settings
-  aren't re-applied. See the
+  * <a name="xmodmap"></a> Speaking of USB, when I plug in my USB keyboard,
+my `xmodmap` settings aren't re-applied. See the
 [launchpad bug](https://bugs.launchpad.net/ubuntu/+source/xorg-server/+bug/287215).
 I haven't yet figured this out. I first tried switching to xkb, but
 [it's](http://www.xfree86.org/current/XKB-Config2.html#3)

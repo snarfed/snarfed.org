@@ -237,7 +237,6 @@ mostly due to [Fitts' law](http://en.wikipedia.org/wiki/Fitts'_law)
 plugin that makes links and input fields "sticky" would go a long way toward
 fixing this problem.
 
-<a name="tuplespaces"></a>
   * [Tuplespaces](http://www.almaden.ibm.com/cs/TSpaces/) have a powerful and
 elegant API, but they're centralized, so they're poor distributed data
 structures. [DHTs](http://www.nwfusion.com/details/805.html) are great building

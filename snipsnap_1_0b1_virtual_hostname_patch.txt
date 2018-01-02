@@ -5,14 +5,11 @@ snipsnap 1.0b1 virtual hostname patch
 <a href="http://jetty.mortbay.com/"><img src="/jetty.png"></a>
 
 For the impatient:  
-[Patch for SnipSnap
-1.0b1](https://github.com/snarfed/misc/blob/master/patches/snipsnap-1.0b1-vhost.patch)  
-[SnipSnap 1.0b1
-source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b1-uttoxeter-20040914-src.tgz)  
+[Patch for SnipSnap 1.0b1](https://github.com/snarfed/misc/blob/master/patches/snipsnap-1.0b1-vhost.patch)  
+[SnipSnap 1.0b1 source](ftp://snipsnap.org/snipsnap/snipsnap-1.0b1-uttoxeter-20040914-src.tgz)  
 [Ant](http://ant.apache.org) (needed to build SnipSnap)
 
-[Patching
-FAQ](http://www.gnu.org/software/diffutils/manual/html_node/Merging-with-patch.html)
+[Patching FAQ](http://www.gnu.org/software/diffutils/manual/html_node/Merging-with-patch.html)
 
 I <strike>use</strike> used to use [SnipSnap](/SnipSnap) as the web server for
 this site, and I love it. However, nothing's perfect, even SnipSnap.

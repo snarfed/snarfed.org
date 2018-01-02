@@ -24,10 +24,12 @@ useful for notifications with multiple different parameters. Say a notification
 has a _source_, e.g. a user, and a _target_, e.g. a post. Here's the logic.
 
 When you generate a notification:
+
 * Store it in two in-memory clusters, one for the source and one for the target.
 * Start a 60s timer.
 
 When the timer expires:
+
 * Optional: if the last notification in either cluster arrived in the last
   10s, extend the timer another 60s, up to 5m total. This is a crude heuristic
   for detecting clusters that are likely to accumulate more notifications soon.

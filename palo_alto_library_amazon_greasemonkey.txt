@@ -53,18 +53,13 @@ script.
 Scripts for other libraries:
 <a name="others"></a>
 
-  * [UC
-Berkeley](http://dream.sims.berkeley.edu/~ryanshaw/wordpress/amazon2melvyl/)
-  * [Harvard,
-Minuteman](http://blog.statway.com/2005/03/29/greasemonkey-scripts/)
+  * [UC Berkeley](http://dream.sims.berkeley.edu/~ryanshaw/wordpress/amazon2melvyl/)
+  * [Harvard, Minuteman](http://blog.statway.com/2005/03/29/greasemonkey-scripts/)
   * [KVK](http://wiki.netbib.de/coma/Linky)
   * [Seattle](http://www.mundell.org/2005/04/27/librarylookup-greasemonkey-script/)
   * [Grand Rapids](http://www.brianandmegan.com/llcoop.php)
   * [WorldCat](http://protoplasmic.org/weblog.cgi/programming/greasemonkeyworldcat1.html)
-  * ...[and
-more](http://dunck.us/collab/GreaseMonkeyUserScriptsSpecific#head-74c0fda1054b04bf3e2365d467e32a47e3feba7b)
+  * ...[and more](http://dunck.us/collab/GreaseMonkeyUserScriptsSpecific#head-74c0fda1054b04bf3e2365d467e32a47e3feba7b)
 
-Palo Alto Library is distributed under the
-[GPL](http://www.gnu.org/licenses/gpl.html). Copyright 2005 [Ryan
-Barrett](/), Eric Galloway.
+Palo Alto Library is distributed under the [GPL](http://www.gnu.org/licenses/gpl.html). Copyright 2005 [Ryan Barrett](/), Eric Galloway.
 

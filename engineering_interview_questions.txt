@@ -62,15 +62,15 @@ existing language dictionary, etc to weed out misspellings.
    This also allows for a few useful estimation questions, e.g. how many english
 words are there? (Lots of ways to count; answer is ~150K-1M.)
 
-1. *Scoring system for possible suggestions.* Lots of possibilities to include
-   here, in rough order of value:
+1. *Scoring system for possible suggestions.* Lots of possibilities to include here, in rough order of value:
+
      * edit distance (bonus points for knowing what that is)
      * clicks and non-clicks on previous suggestions
      * frequency in corpus (both single words and N-grams)
      * frequency in query logs
      * keyboard key distance
      * phrase/grammar understanding
-     * ...  
+     * ...
 
 1. *Implementation.* Easy to come up with one, e.g. search whole dictionary and
 compare. Hard to find one that's fast enough. Needs to be <100ms or so.
@@ -100,11 +100,13 @@ with well understood constraints, but it covers a wide range of knowledge.
 Look for them to ask lots of questions to understand the problem space.
 
 Important points to cover:
+
 * storage (many acceptable answers)
 * scaling (how to shard workers, manage shared state, prevent duplicating work)
 * seeds (ie where to start)
 
 Follow-ups
+
 * obeying robots.txt
 * throttling to avoid overwhelming individual sites
 * recrawl frequency
@@ -185,6 +187,7 @@ of things to log, at what level, how to configure the level for normal prod
 operation vs local vs temporarily raised on individual hosts, etc.
 
 Second, isolation. There are two good questions that will get them talking:
+
 * _What are all the possible sources of nondeterminism?_ Random number
   generators, obviously, but also user input, threading, configuration, data
   (many kinds), network, other local processes, unordered data structures

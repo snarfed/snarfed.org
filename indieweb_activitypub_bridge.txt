@@ -16,11 +16,13 @@ I often work on connecting things that don't automatically connect but should, l
 ### Background
 
 First, some links:
+
 * [W3C spec](https://www.w3.org/TR/activitypub/)
 * [IWS 2017 session writeup](https://indieweb.org/2017/ostatusbridge)
 * [List of implementations](https://www.w3.org/wiki/Socialwg/ActivityPub_network)
 
 Implementation support is still nascent:
+
 * [pump.io](http://pump.io/) ([issue](https://github.com/pump-io/pump.io/issues/1241)) and [MediaGoblin](https://mediagoblin.org/) ([issue](https://issues.mediagoblin.org/ticket/5503)) are the closest. They both currently support the pump.io API, which is similar to AP proper.
 * [Mastodon](https://joinmastodon.org/) ([issue](https://github.com/tootsuite/mastodon/issues/1557)) is getting there, slowly. So far they've added [ActivityStreams 2 support](https://hackernoon.com/m-for-mastodon-4269c0bf6c8b#8cbc).
 * [postActiv](https://postactiv.com/) ([issue](https://git.postactiv.com/postActiv/postActiv/issues/97)) seems interested, but no visible progress yet.
@@ -38,12 +40,14 @@ ActivityPub also has explicit support for [public posts and addressing](https://
 The bridge needs to translate a few high-level things: data (probably via [granary](https://granary.io/)), [discovery](#discovery), and [interaction protocols](#interaction-protocols).
 
 First, some simplifying assumptions and non-goals:
+
 * **Don't translate AS2 to [microformats2](http://microformats.org/wiki/microformats2) HTML.** Most of the big existing projects already include mf2 in their HTML: Mastodon, GNU Social, pump.io, and Friendica (but not Diaspora). We'll just use that in place.  
   (This may not hold for non-text interactions, e.g. likes, so we may need to revisit those. Also, it may only works well for public data, so...)
 * **Only public posts and interactions.** I'm not sure any project has truly robust, mature support for private or semi-private interactions right now, so they're not a high priority.
 * **No user registration.** The bridge is mostly stateless, modulo discovery caching and [keypairs](#stretch-goals), and we don't need to do an OAuth-style user approval dance on either end...so let's not!
 
 Next, a major design decision. Choose one of:
+
 * **Proxy all domains.** Say the bridge's domain is `bridge.example`. If IW user `alice.example` and AP user `@bob@ap.example` want to interact, they'd do so via wrapped identifiers like `@alice.example@bridge.example` and `bob.ap.example.bridge.example`, respectively. Pro: no changes needed on IW or AP sites. Con: bad UX.
 * **Require sites to point to bridge.** If IW sites support AP [content negotiation discovery](#con-neg) and redirect to the bridge, and AP sites add a `<link rel="webmention'>` that points to the bridge, the normal `alice.example` and `@bob@ap.example` identifiers will work automatically. Pro: Good UX. Con: depends on support in each individual project.
 
@@ -64,6 +68,7 @@ IW sites will need to handle content negotiation, detect HTTP requests [asking f
 #### Interaction protocols
 
 **To convert a webmention to AP**:
+
 1. Accept incoming webmention.
 1. Fetch source page. Translate it to AS2.
 1. Fetch target page. Determine author's URL.
@@ -71,6 +76,7 @@ IW sites will need to handle content negotiation, detect HTTP requests [asking f
 1. POST AS2 object to inbox.
 
 **To convert an AP interaction to webmention**:
+
 1. Accept incoming POST to IW user's AP inbox endpoint.
 1. Parse AS2 object in body, determine target URL (reply to, like of, etc). Reject POST if no target is found.
 1. Fetch target URL, discover webmention endpoint.
@@ -86,6 +92,7 @@ IW sites will need to handle content negotiation, detect HTTP requests [asking f
 * Store users and interactions and **render user pages with recent interactions**, [a la Bridgy](https://brid.gy/users).
 * **Support more sophisticated interactions**, e.g. Update, Delete, Undo, Add, Remove, Block.
 * **Deliver posts to followers.** The existing AP projects' mf2 support also includes `h-feed`, so IW readers should already handle AP users. To deliver IW posts to AP users, we'd need to:
+
   1. Accept Follow POST to an IW user's AP inbox.
   1. Discover the IW user's [WebSub](https://www.w3.org/TR/websub/) endpoint. Subscribe to it if it exists, otherwise reject the Follow POST.
   1. Accept WebSub pings.

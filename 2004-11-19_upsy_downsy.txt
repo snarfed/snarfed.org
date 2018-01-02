@@ -18,10 +18,10 @@ Thankfully, I backup the site often, and I'd been meaning to upgrade SnipSnap
 anyway so that I could dump Mckoi. This was just the straw that broke the
 camel's back.
 
-So, this site is now running [SnipSnap
-1.0b1](http://snipsnap.org/space/version-1.0b1), using the file system as a
-backing store. Other than better stability and uptime, you shouldn't notice many
-differences.
+So, this site is now
+running [SnipSnap 1.0b1](http://snipsnap.org/space/version-1.0b1), using the
+file system as a backing store. Other than better stability and uptime, you
+shouldn't notice many differences.
 
 Unfortunately, the upgrade did take a few casualties - specifically, my personal
 site, [ryan.barrett.name](/ryan.barrett.name/), is temporarily down. With

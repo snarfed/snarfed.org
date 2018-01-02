@@ -8,10 +8,8 @@ I finally got tired of making webalbums in somebody else's paradigm. Not that
 they weren't great programs, but I'm stubborn and didn't want to change my own
 workflow. This is how I work with pictures:
 
-  * Download pictures from camera into directories based on the date that the
-picture was taken
-  * Select the pictures I want, copy them to a directory made public by my
-webserver
+  * Download pictures from camera into directories based on the date that the picture was taken
+  * Select the pictures I want, copy them to a directory made public by my webserver
   * Write captions
   * Link all the pictures together with quasi-fancy html
 

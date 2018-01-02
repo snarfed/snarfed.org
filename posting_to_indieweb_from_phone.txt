@@ -26,6 +26,7 @@ Here's a hand-wavy straw man design for a self-contained, browser-based
 mobile [micropub](http://micropub.net/) client on top of HTML5 and
 [localStorage](http://www.w3.org/TR/webstorage/#storage), which
 [all modern mobile browsers support](http://caniuse.com/#feat=namevalue-storage):
+
 * You load it in your phone's browser, then save it so it's usable offline.
 * When you're connected, it fetches your site, crawls your
   [feeds](http://indiewebcamp.com/feed), and stores your posts locally. Maybe
@@ -46,6 +47,7 @@ to it via micropub.
 
 
 Bonus features:
+
 * Easily post pictures, videos, links, and other content by sharing/sending them
   to the editor via deep linking (aka intents aka app links).
 * Download your site's
