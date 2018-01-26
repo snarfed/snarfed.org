@@ -3,17 +3,17 @@
 
 <p class="right third">
  <a href="https://webmention.rocks/">
-  <img class="shadow" src="/webmention-rocks-icon.png"></a></p>
+  <img class="shadow" src="/million_webmentions_small.png"></a></p>
 
 We're celebrating 1 million [webmentions](https://webmention.net/) successfully sent in the wild! We're still narrowing down the exact number and when we crossed the threshold, but we estimate sometime in December 2017 or January 2018. [Join us for the party](https://indieweb.org/Webm1m), [Wed 1/24 at your local Homebrew Website Club](https://indieweb.org/events/2018-01-24-homebrew-website-club)!
 
 Counting isn't easy, since webmentions are distributed and peer to peer. There's no single central repository that all webmentions go through. There are a number of large services that handle many webmentions, though. We're counting as many of those as we can and adding them up, as a lower bound, and then projecting a bit.
 
-As of 2018-01-11, a conservative projected estimate is **1,011,447**. The absolute lower bound is **989,847**.
+As of 2018-01-11, a conservative projected estimate is **1,013,947** total. The absolute lower bound is **989,847**. Based on the projected estimate, we're currently sending ~929 new webmentions per day, which suggests we hit the 1M mark sometime around **2017-12-27**.
 
 Here's everything we're counting:
 
-* **[Bridgy](https://brid.gy/): 960,778** [as of 2018-01-11.](https://brid.gy/#stats) Includes both [silo backfeed](https://brid.gy/about#which) and [hosted blogs](https://brid.gy/about#blogs). [More data and methodology.](https://snarfed.org/2018-01-02_bridgy-stats-update-3)
+* **[Bridgy](https://brid.gy/): 960,778** [as of 2018-01-11](https://brid.gy/#stats), adding ~880/day. Includes both [silo backfeed](https://brid.gy/about#which) and [hosted blogs](https://brid.gy/about#blogs). [More data and methodology.](https://snarfed.org/2018-01-02_bridgy-stats-update-3)
 
 * **[webmention.io](http://webmention.io/): 25,593** [as of 2018-01-01](https://chat.indieweb.org/2018-01-01#t1514827271882500), excluding Bridgy. 5570 of those are from [OwnYourSwarm](https://ownyourswarm.p3k.io/).
 
@@ -26,4 +26,4 @@ Here's everything we're counting:
 * **[webmention.herokuapp.com](https://webmention.herokuapp.com/): Unknown; estimate 5-10k.** We've asked voxpelli, but no answer yet.
 
 * **[micro.blog](https://micro.blog/): Unknown; estimate 5-10k.** [Colin Walker alone has received 900](https://chat.indieweb.org/2018-01-11#t1515694600966100). [We've asked Manton, but his logs aren't great.](https://chat.indieweb.org/2018-01-11#t1515694425797400)
-* **Long tail: Unknown; estimate 5-50k.** This includes all purely site-to-site webmentions that didn't go through any of the services above. I have no real data to inform this projection, which is why the range is so big.
+* **Long tail: Unknown; estimate 10-50k.** This includes all purely site-to-site webmentions that didn't go through any of the services above. I have no real data to inform this projection, which is why the range is so big.
