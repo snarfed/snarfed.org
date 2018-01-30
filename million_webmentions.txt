@@ -3,7 +3,7 @@
 
 <p class="right third">
  <a href="https://webmention.rocks/">
-  <img class="shadow" src="/million_webmentions_small.png"></a></p>
+  <img src="/million_webmentions_small.png"></a></p>
 
 We're celebrating 1 million [webmentions](https://webmention.net/) successfully sent in the wild! We're still narrowing down the exact number and when we crossed the threshold, but we estimate sometime in December 2017 or January 2018. [Join us for the party](https://indieweb.org/Webm1m), [Wed 1/24 at your local Homebrew Website Club](https://indieweb.org/events/2018-01-24-homebrew-website-club)!
 
