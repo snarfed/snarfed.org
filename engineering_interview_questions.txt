@@ -4,8 +4,8 @@ Engineering interview questions
 I've done lots of technical software engineering interviews, over 500 or so,
 [mostly at Google but also elsewhere](/resume). I can't claim I'm particularly
 good at them, but I've definitely racked up some experience. Here are some of my
-favorite questions. They're mostly open ended system design problems, no coding
-questions. (Coding questions a necessary evil, but I'm still not a fan.)
+favorite questions. They're mostly open ended system design problems, mostly not
+coding questions. (They're a necessary evil, but I'm still not a fan.)
 
 * [Distributed transaction](#distributed-transaction)
 * [Web search spell check](#web-search-spell-check)
