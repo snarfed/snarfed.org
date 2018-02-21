@@ -1,0 +1,10 @@
+27966
+
+
+<blockquote>
+  We are in the business of novel outages.
+</blockquote>
+
+&nbsp;&nbsp; <a href="https://cloudplatform.googleblog.com/2018/01/consequences-of-SLO-violations-CRE-life-lessons.html">- Google Cloud SRE</a>
+
+...since ideally you find and fix each outage's root cause. Admirable. Definitely the right idea!
