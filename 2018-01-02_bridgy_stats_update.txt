@@ -1,9 +1,9 @@
 27902
 Bridgy stats update
 
-A new year means new [Bridgy](https://brid.gy/) stats! Let's go to the numbers.
+A new year means new [Bridgy](https://brid.gy/) stats. Perfect timing, too, since we're just about to hit [1 million webmentions!](/1-million-webmentions)
 
-Since [launch in December 2013](/2013-12-09_brid-gy-meet-webmentions): 4300 users, 940k [webmentions](http://webmention.net/) sent successfully to >1500 unique domains, 9.5M responses handled (likes, comments etc), 26K [POSSE](https://indiewebcamp.com/POSSE)s published, total cost ~$.02/user/month (up from ~$.01 18 months ago).
+Let's go to the numbers. Since [launch in December 2013](/2013-12-09_brid-gy-meet-webmentions): 4300 users, 940k [webmentions](http://webmention.net/) sent successfully to >1500 unique domains, 9.5M responses handled (likes, comments etc), 26K [POSSE](https://indiewebcamp.com/POSSE)s published, total cost ~$.02/user/month (up from ~$.01 18 months ago).
 
 [Data](https://docs.google.com/spreadsheets/d/1VhGiZ9Z9PEl7f9ciiVZZgupNcUTsRVltQ8_CqFETpfU/edit),
 [methodology](https://github.com/snarfed/bridgy#stats),
