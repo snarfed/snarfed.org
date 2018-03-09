@@ -1,0 +1,48 @@
+28319
+Microsub bridge
+
+<p class="right third">
+ <img class="shadow" src="/mask_reading_book.jpg">
+ <br>
+ <a class="via" href="http://www.harrietrussellillustration.com/" style="margin-top: .5em">
+  <em>Harriet Russell</em></a>
+</p>
+
+If you're familiar with much of my [IndieWeb](https://indieweb.org/) work, you probably know I'm drawn to building [translators](https://granary.io/?site=instagram), [proxies](https://fed.brid.gy/), and [bridges](https://brid.gy/) to connect different protocols and services that do similar things.
+
+There's been a lot of activity recently around [Microsub](https://indieweb.org/Microsub-spec), a standard API for feed reader clients to talk to servers. Many existing readers have APIs, so I've been thinking about a bridge that would translate those APIs to Microsub, so that clients like [Together](https://indieweb.org/Together) and [Indigenous](https://indieweb.org/Indigenous) could use traditional services like [Feedly](https://feedly.com/) and [NewsBlur](https://www.newsblur.com/) as their backend.
+
+
+### Design
+
+The two basic models for a Microsub bridge are:
+
+1. Require a user account on the service. Use it to store all user data: subscribed feeds, read state, channels, mutes, blocks, etc. The bridge would let users OAuth into the service to authorize their account. The bridge would simply translate all Microsub requests to API requests that fetch and return the user's data.
+2. Use the service as just a feed fetching and processing tool. The bridge would create and own all user accounts and data.
+
+I'm more interested in #1, so I'll forego discussing #2 here. Here's a design sketch:
+
+* The bridge would serve a Microsub endpoint. It could support the [full fledged IndieAuth discovery flow](https://indieweb.org/Microsub-spec#Discovery), or it could just OAuth users into the service and then give them a token to manually paste into their client. This token could be the service's token directly, or it could be a separate token that the bridge mints and manages.
+* If the service has API auth scopes, the bridge should translate [Microsub's scopes](https://indieweb.org/Microsub-spec#Scopes) to them as closely as possible.
+* User profile URLs could come from the service directly, if it has them, e.g. _[snarfed.newsblur.com](https://snarfed.newsblur.com/)_. Otherwise, the bridge could generate and serve its own placeholders.
+* [`timeline` requests](https://indieweb.org/Microsub-spec#Timelines) would be translated and passed through to the server. Response items would be translated to [JF2](https://www.w3.org/TR/jf2/) ([Microsub details](https://indieweb.org/Microsub-spec#Posts)).
+* [`follow` and `unfollow` requests](https://indieweb.org/Microsub-spec#Following) would also be translated and passed through, assuming API support. (Common but not universal.)
+* [Channels](https://indieweb.org/Microsub-spec#Channels), [muting](https://indieweb.org/Microsub-spec#Muting), and [blocking](https://indieweb.org/Microsub-spec#Blocking) may or may not be supported by the service. If so, they should be translated; otherwise requests for them should return errors. (And probably skip [channel ordering](https://indieweb.org/Microsub-spec#Set_Channel_Order), at least to start.)
+* Likewise, [paging](https://indieweb.org/Microsub-spec#Paging) may or may not be supported either. If it's not, response objects should omit the `paging` field, and requests with `after=` or `before=` should return errors.
+* Probably skip [`preview`](https://indieweb.org/Microsub-spec#Preview), at least to start.
+* [Read state](https://github.com/indieweb/microsub/issues/4) is brainstorming, and has some experimental implementations, but hasn't been fully specified yet.
+
+
+### Existing readers and APIs
+
+Here are some major existing online readers with APIs we could use. Thanks to [Replace Reader](http://www.replacereader.com/) for its comprehensive list.
+
+|  | timeline | following | channels | profiles | search | paging | read state |
+| - | - | - | - | - | - | - | - |
+| **[Feedly](https://developer.feedly.com/v3/)** | [entries](https://developer.feedly.com/v3/entries/) | [subscriptions](https://developer.feedly.com/v3/subscriptions/) | [categories](https://developer.feedly.com/v3/categories/), [tags](https://developer.feedly.com/v3/tags/), [streams](https://developer.feedly.com/v3/streams/) | [profiles](https://developer.feedly.com/v3/profile/) | [search](https://developer.feedly.com/v3/search/) | [continuation](https://developer.feedly.com/cloud/#pagination) | [markers](https://developer.feedly.com/v3/markers/) |
+| **[Newsblur](https://newsblur.com/api)** | [river_stories](https://newsblur.com/api#/reader/river_stories) | [add_url](https://newsblur.com/api#/reader/add_url) etc. | *_folder | [profiles](https://newsblur.com/api#/social/load_user_profile) | [`query`](https://newsblur.com/api#/reader/river_stories) | [`page`](https://newsblur.com/api#/reader/river_stories) | [*_[un]read](https://newsblur.com/api#/reader/mark_story_as_read) |
+| **[Feedbin](https://github.com/feedbin/feedbin-api/blob/master/README.md)** | [entries](https://github.com/feedbin/feedbin-api/blob/master/content/entries.md) | [subscriptions](https://github.com/feedbin/feedbin-api/blob/master/content/subscriptions.md) | [tags](https://github.com/feedbin/feedbin-api/blob/master/content/taggings.md) | X? | [saved searches](https://github.com/feedbin/feedbin-api/blob/master/content/saved-searches.md) | [rel-next/prev](https://github.com/feedbin/feedbin-api/blob/master/README.md#pagination) | [unread entries](https://github.com/feedbin/feedbin-api/blob/master/content/unread-entries.md) |
+| **[Inoreader](https://www.inoreader.com/developers/)** | [stream contents](https://www.inoreader.com/developers/stream-contents) | [subscriptions](https://www.inoreader.com/developers/add-subscription) | [folders/tags](https://www.inoreader.com/developers/tag-list) | [user info](https://www.inoreader.com/developers/user-info) | [active searches](https://www.inoreader.com/developers/active-search-create) | [`c` (continuation)](https://www.inoreader.com/developers/stream-contents_) | [unread counts](https://www.inoreader.com/developers/unread-counts), [mark read](https://www.inoreader.com/developers/mark-all-as-read) |
+| **[Miniflux](https://miniflux.net/#features)** | [get entries](https://docs.miniflux.net/en/latest/api.html#get-entries) | [feeds](https://docs.miniflux.net/en/latest/api.html#create-feed) | [categories](https://docs.miniflux.net/en/latest/api.html#get-categories) | [users](https://docs.miniflux.net/en/latest/api.html#create-user) | X | [`offset`](https://docs.miniflux.net/en/latest/api.html#get-entries) | [update entry](https://docs.miniflux.net/en/latest/api.html#update-entries) |
+
+_Also see [Micropub for hosted blogs](/micropub-for-hosted-blogs), [Global webmention service](global-webmention-service), etc_

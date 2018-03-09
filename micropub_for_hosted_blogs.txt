@@ -4,8 +4,7 @@ Micropub for hosted blogs
 <p class="right third">
  <a href="/bridgy_logo_old_big.jpg"><img src="/bridgy_logo_old_big.jpg"/></a></p>
 
-_Update: <a class="h-card" href="https://kylewm.com/">Kyle Mahan</a> has
-[built this](https://feverdream.herokuapp.com/)!_
+_Update: <a class="h-card" href="https://kylewm.com/">Kyle Mahan</a> has [built this](https://indieweb.org/silo.pub)!_
 
 <a class="h-card" href="http://kevinmarks.com/">Kevin Marks</a> had a
 [great idea](http://indiewebcamp.com/irc/2015-04-07#t1428449282044) the other
@@ -55,7 +54,4 @@ Here are each silo's API docs for CRUDding posts:
 [Tumblr](https://www.tumblr.com/docs/en/api/v2#posting).
 
 Who's with me?
-
-<a class="u-syndication" href="http://news.indiewebcamp.com/post/snarfed.org/micropub-for-hosted-blogs">
-  <em>Also on IndieNews.</em></a>
 
