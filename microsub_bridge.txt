@@ -33,6 +33,21 @@ I'm more interested in #1, so I'll forego discussing #2 here. Here's a design sk
 * [Read state](https://github.com/indieweb/microsub/issues/4) is brainstorming, and has some experimental implementations, but hasn't been fully specified yet.
 
 
+### Architecture
+
+At a high level, this is very narrow functionality. This bridge needs to accept Microsub HTTP requests, translate them to reader API HTTP requests, translate the payload from the API's format to Microsub's, and return that translated response. That's it. I just need an HTTP translator/convertor that lets me map incoming and outgoing query parameters and payloads.
+
+I'm currently looking at [Cloudflare Workers](https://blog.cloudflare.com/cloudflare-workers-unleashed/), [Apigee](https://apigee.com/api-management/), [AWS API Gateway](https://www.devco.net/archives/2015/08/13/translating-webhooks-with-aws-api-gateway-and-lambda.php), [Azure API Management](https://docs.microsoft.com/en-us/azure/api-management/api-management-transformation-policies), and [Google Cloud Endpoints](https://cloud.google.com/endpoints/) and [Functions](https://cloud.google.com/functions/), in roughly that order.
+
+Cloudflare Workers look awesome, and are led by an [old colleague of mine who I know does great work](https://twitter.com/KentonVarda). They're allowed to run for upwards of 15s wall clock time, but [only 5-50ms CPU quota](https://developers.cloudflare.com/workers/faq/#how-long-can-a-worker-run-for-are-there-other-resource-limits) ([based on plan](https://www.cloudflare.com/plans/#compare-features)), which is a bit worrisome. We'll see.
+
+I was originally tempted to use [Zapier](http://zapier.com/). I've used it before, and it's great. The [webhook](https://zapier.com/apps/webhook/integrations#triggers-and-actions), [code](https://zapier.com/apps/code/integrations) and possibly [formatter](https://zapier.com/apps/formatter/integrations#triggers-and-actions) integrations should do exactly what I want, without requiring any server admin or code beyond just the mapping.
+
+Sadly, Zapier is probably too expensive. Every single HTTP request would cost something like 2-4 "tasks," [which don't come cheap.](https://zapier.com/pricing/) The free tier only includes 100/month, and the $20/month plan only bumps that up to 3k.
+
+[IFTTT](https://ifttt.com/), on the other hand, is probably too limited to work at all. [It supports webhooks](https://ifttt.com/maker_webhooks), but no custom code (other than the way too heavy and expensive [partner platform](https://platform.ifttt.com/)) or other way to transform response data itself.
+
+
 ### Existing readers and APIs
 
 Here are some major existing online readers with APIs we could use. Thanks to [Replace Reader](http://www.replacereader.com/) for its comprehensive list.
@@ -45,4 +60,4 @@ Here are some major existing online readers with APIs we could use. Thanks to [R
 | **[Inoreader](https://www.inoreader.com/developers/)** | [stream contents](https://www.inoreader.com/developers/stream-contents) | [subscriptions](https://www.inoreader.com/developers/add-subscription) | [folders/tags](https://www.inoreader.com/developers/tag-list) | [user info](https://www.inoreader.com/developers/user-info) | [active searches](https://www.inoreader.com/developers/active-search-create) | [`c` (continuation)](https://www.inoreader.com/developers/stream-contents_) | [unread counts](https://www.inoreader.com/developers/unread-counts), [mark read](https://www.inoreader.com/developers/mark-all-as-read) |
 | **[Miniflux](https://miniflux.net/#features)** | [get entries](https://docs.miniflux.net/en/latest/api.html#get-entries) | [feeds](https://docs.miniflux.net/en/latest/api.html#create-feed) | [categories](https://docs.miniflux.net/en/latest/api.html#get-categories) | [users](https://docs.miniflux.net/en/latest/api.html#create-user) | X | [`offset`](https://docs.miniflux.net/en/latest/api.html#get-entries) | [update entry](https://docs.miniflux.net/en/latest/api.html#update-entries) |
 
-_Also see [Micropub for hosted blogs](/micropub-for-hosted-blogs), [Global webmention service](global-webmention-service), etc_
+_Also see [Micropub for hosted blogs](/micropub-for-hosted-blogs), [Global webmention service](global-webmention-service), etc._
