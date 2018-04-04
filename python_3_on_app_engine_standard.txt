@@ -1,14 +1,14 @@
 28503
 Python 3 on App Engine Standard
 
-<p class="right third">
- <a href="https://cloud.google.com/appengine/"><img src="/appengine_logo_new.png"/></a></p>
-<p class="right third" style="clear: both">
+<p class="right" style="width: 19%">
  <a href="https://docs.python.org/3/"><img src="/python3.png"/></a></p>
+<p class="right quarter">
+ <a href="https://cloud.google.com/appengine/"><img src="/appengine_logo_new.png"/></a></p>
 
 I run a [number](https://brid.gy/) [of](https://fed.brid.gy/) [projects](https://granary.io/) [on](https://instagram-atom.appspot.com/) [App Engine](http://cloud.google.com/appengine/). I love it. However, it's a bit embarrassing that the [standard environment](https://cloud.google.com/appengine/docs/standard/) still [only supports Python 2, not Python 3](https://issuetracker.google.com/issues/35876441).
 
-I recently migrated two App Engine projects and supporting libraries to by Python 3 compatible, [granary](https://granary.io/) and [oauth-dropins](https://oauth-dropins.appspot.com/). It worked, but it took a lot of work, and a fair amount of monkey patching. Here's what I had to do.
+I recently migrated two Python 2 libraries with matching App Engine projects, [granary](https://granary.io/) and [oauth-dropins](https://oauth-dropins.appspot.com/), to be Python 3 compatible. It worked, but it took a lot of effort, and a fair amount of monkey patching. Here are a few App Engine standard warts I had to handle.
 
 * Bumped my version of [webapp2](https://webapp2.readthedocs.io/) up to [3.0.0b1](https://github.com/GoogleCloudPlatform/webapp2/releases/tag/3.0.0b1), which includes [Python3 support](https://github.com/GoogleCloudPlatform/webapp2/pull/117). (You can ignore this if you don't use webapp2.) Note that App Engine has [older versions of webapp2 built in](https://cloud.google.com/appengine/docs/standard/python/tools/built-in-libraries-27), but not 3.0.0b1, so you'll need to bundle it with your app's code and [use `google.appengine.ext.vendor` to load it](https://cloud.google.com/appengine/docs/standard/python/tools/using-libraries-python-27#vendoring).
 
@@ -24,47 +24,49 @@ I recently migrated two App Engine projects and supporting libraries to by Pytho
       return orig_response(self, status, headers, exc_info)
     
     WsgiRequest._StartResponse = unicode_start_response
-    ````
+    ```
 
-* I used the [`future` package](http://python-future.org/) (basically a better [`six`](https://six.readthedocs.io/))to do most of the heavy lifting for Python 2/3 compatibility, aka straddling. It's great! However, it has a couple outstanding bugs that bit me on App Engine. I forked it and [fixed](https://github.com/PythonCharmers/python-future/pull/321) [them](https://github.com/PythonCharmers/python-future/pull/331), but it's evidently abandoned, so they haven't merged my PRs or cut a new release. No matter, I'd just bundle my fork with my app...except I also distributed these libraries as `pip` packages on [PyPi](https://pypi.python.org/), which doesn't allow specifying a dependency in GitHub instead of PyPi. (Yes, you can kind of get there with [`dependency_links`](https://python-packaging.readthedocs.io/en/latest/dependencies.html#packages-not-on-pypi) and [`pip install --process-dependency-links`](https://pip.pypa.io/en/stable/reference/pip_install/#cmdoption-process-dependency-links), but both of those [are](https://stackoverflow.com/questions/45438271/pip-ignores-dependency-links-whlie-installing-package-from-wheel-if-dependency-e) [flaky](https://github.com/pypa/setuptools/issues/987) and deprecated, and I didn't want to depend on users always reading the docs and adding that unusual flag.)
+* I used the [`future` package](http://python-future.org/) (basically a better [`six`](https://six.readthedocs.io/)) to do most of the heavy lifting for Python 2/3 compatibility, aka straddling. It's great! However, it has a couple outstanding bugs that bit me on App Engine. I forked it and [fixed](https://github.com/PythonCharmers/python-future/pull/321) [them](https://github.com/PythonCharmers/python-future/pull/331), but it's evidently abandoned, so they haven't merged my PRs or cut a new release.
 
-  ...so, I monkey patch those fixes in too.
+  No matter, I'd usually just bundle my app and point my `pip` packages at my fork...except setuptools doesn't allow specifying a dependency on GitHub instead of PyPi. Yes, you can kind of get there with [`dependency_links`](https://python-packaging.readthedocs.io/en/latest/dependencies.html#packages-not-on-pypi) and [`pip install --process-dependency-links`](https://pip.pypa.io/en/stable/reference/pip_install/#cmdoption-process-dependency-links), but both of those [are](https://stackoverflow.com/questions/45438271/pip-ignores-dependency-links-whlie-installing-package-from-wheel-if-dependency-e) [flaky](https://github.com/pypa/setuptools/issues/987) and deprecated, and I didn't want to depend on users always reading the docs and adding that unusual flag every time.
+
+  So instead, I monkey patch these fixes in too:
 
   * First, [future assumes `httplib` has a few constants that don't exist on App Engine](https://github.com/PythonCharmers/python-future/issues/320): `_CS_IDLE`, `_CS_REQ_STARTED`, and `_CS_REQ_SENT`. Add them:
 
-    ```
-    import httplib
-    if not hasattr(httplib, '_CS_IDLE'):
-      httplib._CS_IDLE = 'Idle'
-    if not hasattr(httplib, '_CS_REQ_STARTED'):
-      httplib._CS_REQ_STARTED = 'Request-started'
-    if not hasattr(httplib, '_CS_REQ_SENT'):
-      httplib._CS_REQ_SENT = 'Request-sent'
-    ```
+      ```
+      import httplib
+      if not hasattr(httplib, '_CS_IDLE'):
+        httplib._CS_IDLE = 'Idle'
+      if not hasattr(httplib, '_CS_REQ_STARTED'):
+        httplib._CS_REQ_STARTED = 'Request-started'
+      if not hasattr(httplib, '_CS_REQ_SENT'):
+        httplib._CS_REQ_SENT = 'Request-sent'
+      ```
 
-  * Second, `future`'s backported `urllib.parse` module is [overly string about type checking its parameters](https://github.com/PythonCharmers/python-future/issues/273), and doesn't allow mixing types like Python 2's `unicode` and `str`. Relax it:
+  * Second, `future`'s backported `urllib.parse` module is [overly strict about type checking its parameters](https://github.com/PythonCharmers/python-future/issues/273), and doesn't allow mixing types like Python 2's `unicode` and `str`. Relax it:
 
-    ```
-    def _coerce(obj):
-      return (unicode(obj) if isinstance(obj, basestring)
-              else [_coerce(elem) for elem in obj] if isinstance(obj, (list, tuple, set))
-              else {k: _coerce(v) for k, v in obj.items()} if isinstance(obj, dict)
-              else obj)
-    
-    orig = {}
-    def wrapper(name):
-      def wrapped(*args, **kwargs):
-        return orig[name](*_coerce(args), **_coerce(kwargs))
-      return wrapped
-    
-    from future.backports.urllib import parse
-    for name in ('urlparse', 'urlunparse', 'urlsplit', 'urlunsplit', 'urljoin',
-                 'urldefrag', 'parse_qsl'):
-      orig[name] = getattr(parse, name)
-      setattr(parse, name, wrapper(name))
-    ```
+      ```
+      def _coerce(obj):
+        return (unicode(obj) if isinstance(obj, basestring)
+                else [_coerce(elem) for elem in obj] if isinstance(obj, (list, tuple, set))
+                else {k: _coerce(v) for k, v in obj.items()} if isinstance(obj, dict)
+                else obj)
+      
+      orig = {}
+      def wrapper(name):
+        def wrapped(*args, **kwargs):
+          return orig[name](*_coerce(args), **_coerce(kwargs))
+        return wrapped
+      
+      from future.backports.urllib import parse
+      for name in ('urlparse', 'urlunparse', 'urlsplit', 'urlunsplit', 'urljoin',
+                   'urldefrag', 'parse_qsl'):
+        orig[name] = getattr(parse, name)
+        setattr(parse, name, wrapper(name))
+      ```
 
-* Added an `ndb.Model` mixin that converts future's `newstr` property values, which App Engine's protobuf library chokes on, to Python 2 `str`:
+* App Engine's protobuf library chokes on future's `newstr` property values, so I used an `ndb.Model` mixin that converts them to Python 2 `str`s:
 
     ```
     from future.types.newstr import newstr
