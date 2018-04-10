@@ -1,6 +1,0 @@
-
-<p class="right" style="width: third">
- <a href="https://jupyter.org/">
-  <img src="/jupyter.png"/></a></p>
-
-[Jupyter](https://jupyter.org/) notebooks are [great](https://www.theatlantic.com/science/archive/2018/04/the-scientific-paper-is-obsolete/556676/) for research, data science, and really any interactive computing or documentation. I want to start using them for ops/SRE projects too. [Thomas Kluyver](https://takluyver.github.io/)'s [`bash_kernel`](https://github.com/takluyver/bash_kernel) [works](http://jeroenjanssens.com/2015/02/19/ibash-notebook.html), but has [lots of rough edges](http://jeroenjanssens.com/2015/02/19/ibash-notebook.html#whats-next). Anyone have any other ideas?
