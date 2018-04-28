@@ -12,7 +12,7 @@ Facebook user's friends, for example, it might quietly partner with another app
 that did instead of trying harder to get official permission.
 
 Facebook fixed this in their v2.0 API by giving each app its own set of
-[app-scoped user ids](https://developers.facebook.com/docs/apps/upgrading#upgrading_v2_0_user_ids).
+[app-scoped user ids](https://developers.facebook.com/docs/apps/faq#app-scoped-ids).
 For example, originally [Farmville](https://en.wikipedia.org/wiki/FarmVille) and
 [Blendr](https://en.wikipedia.org/wiki/Blendr) got the same user id for me -
 212038 - but in the v2.0 API, they each got their own unique user id. This
