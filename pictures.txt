@@ -2,6 +2,14 @@
 pictures
 
 <div class="ngg-album-compact">
+<a href="/misc-2018">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2018/05/gardening_outfit_and_tools-300x400.jpg" />
+  </div>
+  <h4>misc 2018</h4>
+</a></div>
+
+<div class="ngg-album-compact">
 <a href="/misc-2017">
   <div class="ngg-album-compactbox">
     <img src="/w/wp-content/uploads/2017/12/playground_digger-300x230.jpg" />
