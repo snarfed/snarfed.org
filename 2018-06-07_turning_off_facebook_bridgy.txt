@@ -1,0 +1,16 @@
+29151
+Turning off Facebook for Bridgy
+
+<p class="right third">
+ <a href="https://brid.gy/">
+  <img src="bridgy_logo.jpg" /></a></p>
+
+[I announced recently that Bridgy Publish for Facebook would shut down soon.](/2018-04-26_bridgy-publish-for-facebook-shuts-down-in-august) Facebook's [moves to restrict its API](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/) to improve privacy and security are laudable, and arguably the right idea, but also mean that users can no longer use third party apps like Bridgy to create posts.
+
+I didn't realize it at first, but [similar API restrictions](https://developers.facebook.com/blog/post/2018/05/01/facebook-login-updates-further-protect-privacy/) hit the [backfeed (aka listen) feature](https://brid.gy/about#listen), which sends comments and likes back to your web site. Bridgy can still see comments and likes by Bridgy users, but that's a tiny fraction of the Facebook comments and likes that it used to see.
+
+[I spent a while looking for a workaround](https://github.com/snarfed/bridgy/issues/826), and even looked into scraping HTML, but you have to be logged into Facebook to see even public posts, on both [www](https://www.facebook.com/) and [m](https://m.facebook.com/), so no luck there. \[Insert silo snark here.\]
+
+So with a heavy heart, [I'm shutting down Facebook on Bridgy entirely](https://brid.gy/about#rip-facebook). Publish will still work until August 1, but listen largely stopped working on May 24, so I turned it off altogether and disabled new user signup a few days ago.
+
+[See you on the web!](https://indieweb.org/)
