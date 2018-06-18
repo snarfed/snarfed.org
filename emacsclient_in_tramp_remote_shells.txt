@@ -5,6 +5,8 @@ emacsclient in TRAMP remote shells
  <a href="http://gnu.org/software/emacs/">
   <img src="/gnu.jpg" /></a></p>
 
+_Update: [Emacs 26.1](https://www.gnu.org/software/emacs/news/NEWS.26.1) added official support for this with a new `emacsclient --tramp` option! The 26.1 manual [isn't online yet](https://www.gnu.org/software/emacs/manual/html\_node/emacs/index.html), but you can learn more with `M-x info` inside Emacs 26.1,_ Emacs => emacsclient options.
+
 I recently [started running shells](/why_i_run_shells_inside_emacs) inside
 [Emacs](http://gnu.org/software/emacs/) via
 [shell mode](http://www.gnu.org/software/emacs/manual/html_node/emacs/Shell-Mode.html),
