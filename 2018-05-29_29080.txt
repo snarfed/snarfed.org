@@ -1,0 +1,8 @@
+29080
+
+
+Anyone else excited about this bit of the <a href="https://www.gnu.org/software/emacs/news/NEWS.26.1">Emacs 26 release notes</a>?
+
+<blockquote>
+  Emacs now provides a limited form of concurrency with Lisp threads.
+</blockquote>

@@ -1,0 +1,6 @@
+29082
+
+
+Interesting unintended consequence of <a href="https://en.wikipedia.org/wiki/Fediverse">federated social networks</a>: when you post a link, thousands of different nodes all fetch it at the same time to render a link preview, which results in a small DDoS.
+
+<a href="https://snarfed.org/w/wp-content/uploads/2018/05/Screen-Shot-2018-05-30-at-11.11.18-AM.png"><img src="https://snarfed.org/w/wp-content/uploads/2018/05/Screen-Shot-2018-05-30-at-11.11.18-AM.png" alt="" width="1060" height="536" class="alignnone size-full wp-image-29083" /></a>
