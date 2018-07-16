@@ -1,0 +1,26 @@
+29432
+How Color uses the new Variant Transforms tool for breakthrough clinical data science with BigQuery
+
+<em><a class="u-syndication" href="https://cloud.google.com/blog/big-data/2018/03/how-color-uses-the-new-variant-transforms-tool-for-breakthrough-clinical-data-science-with-bigquery">Originally posted on the Google Cloud Blog.</a></em>
+
+_Editor’s note: One of the more popular tasks in genomic analysis is calling of variants, which is the task of identifying a variation of a specific genome from some reference genome. You may have learned a bit about this task when the genomics team at Google Brain explained it in [their December blog post](https://research.googleblog.com/2017/12/deepvariant-highly-accurate-genomes.html). There are plenty of variant callers available, and you can run any of them on Google Cloud Platform! But what happens when you want to query all that data or join it with another data set to do data science?_
+
+_Here’s how one of our GCP customers put the recently released [Variant Transforms](https://github.com/googlegenomics/gcp-variant-transforms) to use. Ryan Barrett, an engineer at [Color](https://www.color.com/), a health services company that offers affordable and accessible genetic testing, explains how he deployed Variant Transforms. If you have questions, post to [google-genomics-discuss](https://groups.google.com/forum/#!forum/google-genomics-discuss)._
+
+At Color, we report to our customers on a 30-gene panel. We’d already been using a simple Postgres database for customer phenotype, health history, and reports. Business intelligence (BI) for that data set was never a problem, as we’d been using Tableau and Metabase successfully. But we’ve never had a good story for heavy data mining of the genetic variants themselves. We want to prepare to expand the test, understand our clients' DNA better, and deliver more insights.
+
+After an exhaustive search, we found that BigQuery was the only option mature enough to handle our datasets: it had both the fully-managed data warehouse experience and a strong genomic data import mechanism.
+
+We then discovered we had a new problem: how do we get our variant data into BigQuery? When I initially planned the work, I thought I’d have to build something from scratch, but fortunately we heard about Variant Transforms.
+
+[Variant Transforms](https://github.com/googlegenomics/gcp-variant-transforms) is a new open source tool from Google Cloud that lets us import massive amounts of genomic data directly into BigQuery. With Variant Transforms, we can leverage BigQuery to do data science on our genomic variants alongside our other datasets.
+
+We tried Variant Transforms right when it came out in November, and it did exactly what I needed it to: imported our full, large dataset into BigQuery with very few issues. We’ve integrated Variant Transforms into our bioinformatics pipeline, and we've even used it to import multi-nucleotide variants and structural variants into BigQuery as well.
+
+Variant Transforms happened to arrive just in time for our company’s quarterly Hack Week. We put all of our data into BigQuery and wanted to see if we could predict a major clinical biomarker using our existing panel.
+
+Our data scientists really got into the project. The convenience and power of GCP products to spin up a cluster and run PySpark was tremendous. Doing the same thing on other providers would have taken much more ops work. The managed and hosted experience can’t be beat.
+
+Within a week, from start to finish, we did all the feature engineering and plugged through all the details. We created three models (a logistic regression, a random forest, and a simple chi-squared) that dramatically outperformed a major clinical model, because it was based on a much larger and richer data set.
+
+After Hack Week, a number of people at the company told me about the great mindshift that our data science work had created. Instead of wondering, “Will our hypothesis ever be testable?”, now we know that this kind of work is possible and can lead us to new research and new products. We’re excited about where our work in BigQuery is going to take us next.

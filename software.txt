@@ -17,6 +17,12 @@ back for you. Part of the [IndieWeb](https://indieweb.org/) ecosystem.
 
 * [Bridgy Fed](https://fed.brid.gy/): Bridgy, for federated social networks! Lets you reply, like, and repost on <a href="https://joinmastodon.org/">Mastodon</a> and <a href="https://project.hubzilla.org/">Hubzilla</a> from your [IndieWeb](https://indieweb.org/) site, and vice versa.
 
+* [granary](https://github.com/snarfed/granary) is a library and REST API that
+read, writes, and converts Facebook, Twitter, and Instagram data to
+[ActivityStreams](http://activitystrea.ms),
+[microformats2](http://microformats.org/wiki/microformats2) HTML and JSON,
+[Atom](http://atomenabled.org/), XML, and more!
+
 * [Indie Map](http://www.indiemap.org/) is a public
 [IndieWeb](https://indieweb.org/) social graph and dataset, based on a
 complete crawl of 2300 of the most active IndieWeb sites.
@@ -25,14 +31,10 @@ complete crawl of 2300 of the most active IndieWeb sites.
 [Huffduffer](http://huffduffer.com/) the audio from videos on YouTube, Vimeo,
 [and more](http://rg3.github.io/youtube-dl/supportedsites.html).
 
-* [granary](https://github.com/snarfed/granary) is a library and REST API that
-read, writes, and converts Facebook, Twitter, and Instagram data to
-[ActivityStreams](http://activitystrea.ms),
-[microformats2](http://microformats.org/wiki/microformats2) HTML and JSON,
-[Atom](http://atomenabled.org/), XML, and more!
-
 * [wordpress-micropub](https://github.com/snarfed/wordpress-micropub) is a
 [Micropub](https://indieweb.org/micropub) server plugin for WordPress.
+
+* [Baffle](https://baffle.tech/) lets you use [Microsub](https://indieweb.org/Microsub-spec) client apps with traditional feed readers like [NewsBlur](https://www.newsblur.com/) and [Feedly](https://feedly.com/).
 
 * [OwnYourResponses](https://github.com/snarfed/ownyourresponses) is
 [PESOS](https://indieweb.org/PESOS) as a service for likes, comments,

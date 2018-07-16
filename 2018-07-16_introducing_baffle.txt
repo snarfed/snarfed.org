@@ -1,0 +1,10 @@
+
+Introducing Baffle
+
+<p class="right third">
+ <a href="https://baffle.tech/">
+  <img src="/baffle-logo.png"></a></p>
+
+A while back, [I wrote up a design for bridging Microsub clients to traditional feed reader backends](/microsub-bridge). Fast forward to a few weeks ago: [I hacked together a bare bones prototype](https://chat.indieweb.org/2018-06-27#t1530141961518300) at [IndieWebCamp 2018](https://2018.indieweb.org/). Fast forward to now: I'm launching [Baffle](https://baffle.tech/)!
+
+Baffle lets you use [Microsub](https://indieweb.org/Microsub-spec) reader apps like [Together](https://indieweb.org/Together), [Indigenous](https://indieweb.org/Indigenous), and Monocle](https://monocle.p3k.io/) with traditional feed readers like [NewsBlur](https://www.newsblur.com/), and maybe eventually [Feedly](https://feedly.com/) and more.
