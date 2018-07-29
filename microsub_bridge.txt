@@ -8,6 +8,8 @@ Microsub bridge
   <em>Harriet Russell</em></a>
 </p>
 
+_Update: [I built this!](/2018-07-16_introducing-baffle)_
+
 If you're familiar with much of my [IndieWeb](https://indieweb.org/) work, you probably know I'm drawn to building [translators](https://granary.io/?site=instagram), [proxies](https://fed.brid.gy/), and [bridges](https://brid.gy/) to connect different protocols and services that do similar things.
 
 There's been a lot of activity recently around [Microsub](https://indieweb.org/Microsub-spec), a standard API for feed reader clients to talk to servers. Many existing readers have APIs, so I've been thinking about a bridge that would translate those APIs to Microsub, so that clients like [Together](https://indieweb.org/Together) and [Indigenous](https://indieweb.org/Indigenous) could use traditional services like [Feedly](https://feedly.com/) and [NewsBlur](https://www.newsblur.com/) as their backend.

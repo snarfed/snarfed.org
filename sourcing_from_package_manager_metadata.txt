@@ -1,0 +1,27 @@
+29496
+Sourcing from package manager metadata
+
+I've been spending a lot of time sourcing and recruiting engineers at work recently. Here are a few command lines I've used to extract project names, URLs, and author names and email addresses from pip (Python) and npm (Node/JavaScript) packages we use, using the invaluable [`jq`](https://stedolan.github.io/jq/).
+
+Not all packages will have author names or emails, and not all of them will be individual people, but the majority are. And yes, I do feel a bit gross doing this. But it's for a good cause!
+
+The commands below output tab-separated columns to stdout that you can import into your spreadsheet or ATS of choice.
+
+
+### Pip
+
+In `virtualenv/lib/python*/site-packages/`:
+
+```
+jq -r '(.extensions."python.details"? // .) as $base | [.name, .summary, $base."project_urls".Home?, ($base.contacts? // [] | map(.name) | join("; ")), ($base.contacts? // [] | map(.email) | join("; "))] | join("\t")' */metadata.json
+```
+
+
+### NPM
+
+In `node_modules/`:
+
+```
+jq -r '((if (.maintainers? | type) == "array" then .maintainers? else [.maintainers?] end) as $maintainers | (if (.author? | type) == "array" then .author? else [.author?] end) as $authors | ($authors + $maintainers) as $people | [.name?, .description?, .homepage? // .repository.url? // .bugs.url? // .bugs?, ($people | map(.name? // .) | join(", ")), ($people | map(.email?) | join(", "))]) | join("\t")' */package.json \
+  | sed -E 's/, \t/\t/g; s/\t, /\t/g; s/, $//; s/git:\/\//https:\/\//g'
+```
