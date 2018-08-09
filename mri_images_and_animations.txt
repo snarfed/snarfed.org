@@ -6,66 +6,94 @@ MRI images and animations
 Also see my [CT scan images and animations](/ct_scan_images_and_animations).
 
 <a name="animations"></a>
-#### Animations <span style="font-weight: normal">(click to watch)</span>:
+#### Animations (click to watch):
 
 <a href="/gallery/mri/localizer.gif">
-  <img class="shadow" src="/gallery/mri/thumbs/localizer_00.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/localizer_00.jpg"></a>
+
 <a href="/gallery/mri/ep2d_diff_3scan_trace.gif">
-  <img class="shadow" src="/gallery/mri/thumbs/ep2d_diff_3scan_trace_16.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/ep2d_diff_3scan_trace_16.jpg"></a>
+
 <a href="/gallery/mri/ep2d_diff_3scan_trace_adc.gif">
-  <img class="shadow" src="/gallery/mri/thumbs/ep2d_diff_3scan_trace_adc_06.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/ep2d_diff_3scan_trace_adc_06.jpg"></a>
+
 <a href="/gallery/mri/flair_axial.gif">
-  <img class="shadow" src="/gallery/mri/thumbs/flair_axial_08.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/flair_axial_08.jpg"></a>
+
 <a href="/gallery/mri/gre_axial.gif">
-  <img class="shadow" src="/gallery/mri/thumbs/gre_axial_05.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/gre_axial_05.jpg"></a>
+
 <a href="/gallery/mri/post_t1_axial.gif">
-  <img class="shadow" src="/gallery/mri/thumbs/post_t1_axial_00.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/post_t1_axial_00.jpg"></a>
+
 <a href="/gallery/mri/post_t1_cor.gif">
-  <img class="shadow" src="/gallery/mri/thumbs/post_t1_cor_18.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/post_t1_cor_18.jpg"></a>
+
 <a href="/gallery/mri/post_t1_sag.gif">
-  <img class="shadow" src="/gallery/mri/thumbs/post_t1_sag_09.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/post_t1_sag_09.jpg"></a>
+
 <a href="/gallery/mri/t1_axial.gif">
-  <img class="shadow" src="/gallery/mri/thumbs/t1_axial_16.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/t1_axial_16.jpg"></a>
+
 <a href="/gallery/mri/t1_axial_3mm.gif">
-  <img class="shadow" src="/gallery/mri/thumbs/t1_axial_3mm_17.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/t1_axial_3mm_17.jpg"></a>
+
 <a href="/gallery/mri/t1_cor_3mm.gif">
-  <img class="shadow" src="/gallery/mri/thumbs/t1_cor_3mm_12.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/t1_cor_3mm_12.jpg"></a>
+
 <a href="/gallery/mri/t1_sag.gif">
-  <img class="shadow" src="/gallery/mri/thumbs/t1_sag_10.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/t1_sag_10.jpg"></a>
+
 <a href="/gallery/mri/t2_axial.gif">
-  <img class="shadow" src="/gallery/mri/thumbs/t2_axial_11.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/t2_axial_11.jpg"></a>
+
 <a href="/gallery/mri/t2_cor_3mm_w-fs.gif">
-  <img class="shadow" src="/gallery/mri/thumbs/t2_cor_3mm_w-fs_21.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/t2_cor_3mm_w-fs_21.jpg"></a>
+
 
 
 <a name="images"></a>
-#### Images <span style="font-weight: normal">(click to see full size)</span>:
+#### Images (click to see full size):
+
 
 <a href="/gallery/mri/localizer_00.jpg">
-  <img class="shadow" src="/gallery/mri/thumbs/localizer_00.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/localizer_00.jpg"></a>
+
 <a href="/gallery/mri/localizer_06.jpg">
-  <img class="shadow" src="/gallery/mri/thumbs/localizer_06.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/localizer_06.jpg"></a>
+
 <a href="/gallery/mri/flair_axial_08.jpg">
-  <img class="shadow" src="/gallery/mri/thumbs/flair_axial_08.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/flair_axial_08.jpg"></a>
+
 <a href="/gallery/mri/post_t1_axial_00.jpg">
-  <img class="shadow" src="/gallery/mri/thumbs/post_t1_axial_00.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/post_t1_axial_00.jpg"></a>
+
 <a href="/gallery/mri/post_t1_cor_18.jpg">
-  <img class="shadow" src="/gallery/mri/thumbs/post_t1_cor_18.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/post_t1_cor_18.jpg"></a>
+
 <a href="/gallery/mri/post_t1_sag_09.jpg">
-  <img class="shadow" src="/gallery/mri/thumbs/post_t1_sag_09.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/post_t1_sag_09.jpg"></a>
+
 <a href="/gallery/mri/t1_axial_16.jpg">
-  <img class="shadow" src="/gallery/mri/thumbs/t1_axial_16.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/t1_axial_16.jpg"></a>
+
 <a href="/gallery/mri/t1_sag_00.jpg">
-  <img class="shadow" src="/gallery/mri/thumbs/t1_sag_00.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/t1_sag_00.jpg"></a>
+
 <a href="/gallery/mri/t1_sag_02.jpg">
-  <img class="shadow" src="/gallery/mri/thumbs/t1_sag_02.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/t1_sag_02.jpg"></a>
+
 <a href="/gallery/mri/t1_sag_10.jpg">
-  <img class="shadow" src="/gallery/mri/thumbs/t1_sag_10.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/t1_sag_10.jpg"></a>
+
 <a href="/gallery/mri/t2_axial_01.jpg">
-  <img class="shadow" src="/gallery/mri/thumbs/t2_axial_01.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/t2_axial_01.jpg"></a>
+
 <a href="/gallery/mri/t2_axial_07.jpg">
-  <img class="shadow" src="/gallery/mri/thumbs/t2_axial_07.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/t2_axial_07.jpg"></a>
+
 <a href="/gallery/mri/t2_axial_11.jpg">
-  <img class="shadow" src="/gallery/mri/thumbs/t2_axial_11.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/t2_axial_11.jpg"></a>
+
 <a href="/gallery/mri/t2_axial_17.jpg">
-  <img class="shadow" src="/gallery/mri/thumbs/t2_axial_17.jpg"></a>
+  <img class="shadow half" src="/gallery/mri/t2_axial_17.jpg"></a>

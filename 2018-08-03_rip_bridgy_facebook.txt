@@ -1,0 +1,18 @@
+29623
+RIP Facebook for Bridgy
+
+<p class="right third">
+ <a href="https://brid.gy/">
+  <img src="bridgy_logo.jpg" /></a></p>
+
+As planned, [Facebook turned off some of its key APIs for posting and fetching data](https://developers.facebook.com/blog/post/2018/05/01/facebook-login-updates-further-protect-privacy/) on Wednesday, and I [disabled Facebook for Bridgy entirely](/2018-06-07_turning-off-facebook-for-bridgy).
+
+It's a sad day. Facebook was the single biggest reason I came up with Bridgy [way back in 2011](https://brid.gy/about#history). I've always wanted to own my data online, [on my own web site](/2012-07-25_why_i_have_my_own_web_site), but my friends and family generally used social networks like Facebook instead. I didn't care too much about dogma or evangelizing, but I still wanted to connect with them wherever they were, and if they were online, more often than not they were on Facebook.
+
+Social networks are under siege in the press right now, so it's easy to forget all the ways they've made our lives better. Not only have they brought us indispensable tools for day to day life, they've also enriched our ties to many real people, not just those we care about most but also entirely new people, across the globe, who we may never have met otherwise.
+
+We regularly look to big social networks for inspiration and motivation in the [IndieWeb](https://indieweb.org/). We analyze and document features, UI designs, and yes, even [antipatterns](https://indieweb.org/antipatterns)...but more importantly, we work hard to _interoperate_. We may try to live on our web sites, but we still treasure and value the relationships we have with everyone else. They're still on the social networks, Facebook above all.
+
+I'll still use Facebook directly now and then. Friends will get engaged, colleagues will start new jobs, cousins will have babies. I'll still expect to see someone at a party whose name I've forgotten - you know, we met her at that place, for that thing - and look it up on Facebook first. Embarrassment avoided, life improved. But I'll use it less. I wish there was another way.
+
+So long for now. [See you on the web!](https://indieweb.org/)
