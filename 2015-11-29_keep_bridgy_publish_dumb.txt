@@ -53,7 +53,7 @@ silo APIs themselves. That's why I built it! And I'm flattered that they
 [user-facing](https://github.com/snarfed/bridgy/issues/416)
 [features](https://github.com/snarfed/bridgy/issues/317). It's just not the
 right place for them.
-[Fortunately, it's not the only game in town.](https://kylewm.com/2015/11/silo-pub-as-a-generic-micropub-to-silo-adapter).
+[Fortunately, it's not the only game in town.](https://kylewm.com/2015/11/silo-pub-as-a-generic-micropub-to-silo-adapter)
 
 The one concession I'm considering is
 [letting users specify the exact text](https://github.com/snarfed/bridgy/issues/527#issuecomment-1585478980)
@@ -65,6 +65,6 @@ Bridgy can and should be a best of breed backfeed service. Bridgy Publish, on
 the other hand, *cannot* be a best of breed POSSE tool. I doubt any service
 could be. My strongest inclination at this point is to keep it dumb, define
 precisely how it translates your original posts to silo posts, and avoid trying
-to offer UX where none can survive. It's a mug's game.
+to offer UX where none can survive. That's a mug's game.
 
 _<a class="u-syndication" href="http://news.indiewebcamp.com/en/snarfed.org/2015-11-29_keep-bridgy-publish-dumb">Also on IndieNews.</a>_
