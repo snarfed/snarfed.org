@@ -31,7 +31,7 @@ complete crawl of 2300 of the most active IndieWeb sites.
 [Huffduffer](http://huffduffer.com/) the audio from videos on YouTube, Vimeo,
 [and more](http://rg3.github.io/youtube-dl/supportedsites.html).
 
-* [wordpress-micropub](https://github.com/snarfed/wordpress-micropub) is a
+* [wordpress-micropub](https://github.com/indieweb/wordpress-micropub) is a
 [Micropub](https://indieweb.org/micropub) server plugin for WordPress.
 
 * [Baffle](https://baffle.tech/) lets you use [Microsub](https://indieweb.org/Microsub-spec) client apps with traditional feed readers like [NewsBlur](https://www.newsblur.com/) and [Feedly](https://feedly.com/).

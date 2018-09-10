@@ -26,7 +26,7 @@ similar to [OwnYourGram](http://ownyourgram.com/).
 for `/user/feed`. (**[Done!](https://github.com/snarfed/ownyourcheckin)** )
 
   * Make a [micropub](http://indiewebcamp.com/micropub) plugin for WordPress.
-(**[Done!](https://github.com/snarfed/wordpress-micropub)** )
+(**[Done!](https://github.com/indieweb/wordpress-micropub)** )
 
   * Measure the real world eventual consistency of [App Engine's Datastore](https://github.com/andrewgaul/are-we-consistent-yet/issues/6) and
   [Amazon DynamoDB](https://github.com/andrewgaul/are-we-consistent-yet/issues/7)
