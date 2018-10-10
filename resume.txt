@@ -16,10 +16,7 @@ Engineering and ops lead: data platform, bioinformatics, infrastructure, researc
 
 #### [Quip](https://quip.com/about), 2013 - 2015
 
-Engineer. Worked on the server and storage system,
-data model, synchronization protocol, [web frontend](https://quip.com/),
-[iOS app](https://itunes.apple.com/us/app/quip/id647922896), and
-[Android app](https://play.google.com/store/apps/details?id=com.quip.quip).
+Engineering. Server and storage system, data model, synchronization protocol, [web frontend](https://quip.com/), [iOS app](https://itunes.apple.com/us/app/quip/id647922896), and [Android app](https://play.google.com/store/apps/details?id=com.quip.quip).
 
 
 <p class="quarter right">
@@ -30,38 +27,15 @@ data model, synchronization protocol, [web frontend](https://quip.com/),
 
 _Senior Staff Engineer_
 
-Co-founded [Google App Engine](http://code.google.com/appengine/) and led its
-[datastore](http://code.google.com/appengine/docs/datastore/overview.html)
-engineering team. The datastore is a very large scale,
-[multi-homed](http://googleappengine.blogspot.com/2009/09/migration-to-better-datastore.html)
-[NoSQL](http://en.wikipedia.org/wiki/NoSQL) database. At the end of my tenure,
-it stored >XXXB rows, >XXXPB of data, and served >XXXk[qps](http://en.wikipedia.org/wiki/Queries_per_second). (2005 - 2010)
+Co-founded [Google App Engine](http://code.google.com/appengine/) and led its [datastore](http://code.google.com/appengine/docs/datastore/overview.html) engineering team. The datastore is a very large scale, [multi-homed](http://googleappengine.blogspot.com/2009/09/migration-to-better-datastore.html) [NoSQL](http://en.wikipedia.org/wiki/NoSQL) database. At the end of my tenure, it stored >XXXB rows, >XXXPB of data, and served >XXXk[qps](http://en.wikipedia.org/wiki/Queries_per_second). (2005 - 2010)
 
-Helped design and build
-[company-wide personalization infrastructure](http://googleblog.blogspot.com/2012/01/updating-our-privacy-policies-and-terms.html).
-Implemented a piece of it (in [Go](http://golang.org/)) that handled 500kqps by
-the end of my tenure. (2011 - 2013)
+Helped design and build [company-wide personalization infrastructure](http://googleblog.blogspot.com/2012/01/updating-our-privacy-policies-and-terms.html). Implemented a piece of it (in [Go](http://golang.org/)) that handled 500kqps by the end of my tenure. (2011 - 2013)
 
-Led and contributed to network management projects for Google's backbone network
-[AS15169](http://www.peeringdb.com/view.php?asn=15169), including command and
-control, monitoring, automation, topology, routing, peering,
-[and OpenFlow](http://www.wired.com/wiredenterprise/2012/04/going-with-the-flow-google/).
-(2010 - 2011)
+Led and contributed to network management projects for Google's backbone network [AS15169](http://www.peeringdb.com/view.php?asn=15169), including command and control, monitoring, automation, topology, routing, peering, [and OpenFlow](http://www.wired.com/wiredenterprise/2012/04/going-with-the-flow-google/). (2010 - 2011)
 
-Led Google's early use of [OpenID](http://openid.net/). Evangelized to
-stakeholders, [built](/2007-12-02_openid_comments_in_blogger)
-[and coordinated](http://bloggerindraft.blogspot.com/2008/01/new-feature-blogger-as-openid-provider.html)
-[multiple](http://openid-provider.appspot.com/)
-[integrations](http://openid-consumer.appspot.com/), and drove internal adoption
-that culminated in a full Google Accounts
-[provider](https://developers.google.com/accounts/docs/OpenID) and consumer.
-(2006)
+Led Google's early use of [OpenID](http://openid.net/). Evangelized to stakeholders, [built](/2007-12-02_openid_comments_in_blogger) [and coordinated](http://bloggerindraft.blogspot.com/2008/01/new-feature-blogger-as-openid-provider.html) [multiple](http://openid-provider.appspot.com/) [integrations](http://openid-consumer.appspot.com/), and drove internal adoption that culminated in a full Google Accounts [provider](https://developers.google.com/accounts/docs/OpenID) and consumer. (2006)
 
-Co-founded Google's transaction processing platform and led its storage
-engineering team. The platform handles OLTP, rating, billing, invoicing,
-payments, and revenue share. At the end of my tenure, it served >XXM
-customers, >XB transactions per day, and >XXkqps with 99.98% uptime. (2003 -
-2006)
+Co-founded Google's transaction processing platform and led its storage engineering team. The platform handles OLTP, rating, billing, invoicing, payments, and revenue share. At the end of my tenure, it served >XXM customers, >XB transactions per day, and >XXkqps with 99.98% uptime. (2003 - 2006)
 
 
 <p class="quarter right">
@@ -70,24 +44,13 @@ customers, >XB transactions per day, and >XXkqps with 99.98% uptime. (2003 -
 
 #### [IBM Almaden Research Center](http://almaden.ibm.com/), 2002 - 2003
 
-[Extreme Blue](http://www.ibm.com/extremeblue/) intern, then research engineer.
-Helped design and build a collaboration and visualization platform for molecular
-biologists. Also developed a parallel computing system for running molecular
-analyses and simulations on large server clusters.
+[Extreme Blue](http://www.ibm.com/extremeblue/) intern, then research engineer. Helped design and build a collaboration and visualization platform for molecular biologists. Also developed a parallel computing system for running molecular analyses and simulations on large server clusters.
 
 
 <hr />
 
 
-Multiple [talks](/talks) and open source [projects](/software) and
-[contributions](https://www.ohloh.net/accounts/snarfed/positions). Notable
-projects include [Bridgy](https://www.brid.gy/),
-[granary](http://granary.io/),
-[ActivityStreams](http://activitystrea.ms/)/[OStatus](http://www.w3.org/community/ostatus/),
-[OpenID](http://openid.net/), [Emacs](http://gnu.org/software/emacs/),
-[WordPress](/2010-08-08_migrated_to_wordpress),
-[Pine](http://www.washington.edu/pine/)/[Alpine](http://www.washington.edu/alpine/),
-[tcsh](http://www.tcsh.org/), and [Pidgin](http://pidgin.im/).
+Multiple [talks](/talks) and open source [projects](/software) and [contributions](https://www.ohloh.net/accounts/snarfed/positions). Notable projects include [Bridgy](https://www.brid.gy/), [granary](http://granary.io/), [ActivityStreams](http://activitystrea.ms/)/[OStatus](http://www.w3.org/community/ostatus/), [OpenID](http://openid.net/), [Emacs](http://gnu.org/software/emacs/), [WordPress](/2010-08-08_migrated_to_wordpress), [Pine](http://www.washington.edu/pine/)/[Alpine](http://www.washington.edu/alpine/), [tcsh](http://www.tcsh.org/), and [Pidgin](http://pidgin.im/).
 
 
 <hr />
@@ -102,9 +65,7 @@ projects include [Bridgy](https://www.brid.gy/),
 _MS Computer Science_  
 _BS Computer Science, Mathematics minor_
 
-Coursework: networking, distributed systems, security, streaming algorithms,
-advanced databases, operating systems, C/C++, Java, graphics, discrete math,
-abstract algebra.
+Coursework: networking, distributed systems, security, streaming algorithms, advanced databases, operating systems, C/C++, Java, graphics, discrete math, abstract algebra.
 
 
 [LucasArts Entertainment](http://www.lucasarts.com/), Software Engineer
