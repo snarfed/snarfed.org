@@ -25,6 +25,7 @@ I've done to make it feel comfortable.
   * [Mac OS X](#Mac_OS_X)
   * [Keyboard and mouse](#Keyboard_and_mouse)
   * [Xcode](#Xcode)
+  * [Mojave](#Mojave)
   * [Sierra + High Sierra](#Sierra)
   * [El Capitan](#El_Capitan)
   * [Yosemite](#Yosemite)
@@ -499,6 +500,11 @@ I'm currently trying out [Dash](http://kapeli.com/), a document viewer that
 includes a ton of docsets for popular languages, platforms, and frameworks. It
 looks great so far, and has Emacs integration too.
 
+
+<a name="Mojave"></a>
+#### Mojave
+
+Upgrading from High Sierra to Mojave 10.14 was pleasantly uneventful. It worked on the first try, all of my apps work fine, and I haven't noticed a single problem yet. Fingers crossed it stays that way!
 
 <a name="Sierra"></a>
 #### Sierra + High Sierra

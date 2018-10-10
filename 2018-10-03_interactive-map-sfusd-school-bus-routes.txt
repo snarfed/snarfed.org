@@ -3,7 +3,7 @@ Interactive map of SFUSD school bus routes
 
 <p class="right half">
  <a href="https://www.google.com/maps/d/u/0/edit?mid=1aeI2sgAY-iL8dwf4_SvmY3NckTb_5LT4">
-  <img src="/sfusd_school_bus_map.png" /></a></p>
+  <img class="shadow" src="/sfusd_school_bus_map.png" /></a></p>
 
 _TL;DR: [click here for the map!](https://www.google.com/maps/d/u/0/edit?mid=1aeI2sgAY-iL8dwf4_SvmY3NckTb_5LT4)_
 
@@ -13,4 +13,4 @@ We've been to a couple informational sessions so far. At one of them, a represen
 
 Fast forward a few weeks, and I found a bit of time to poke around. The school bus routes are all [published as PDFs](https://www.sfusd.edu/en/transportation/school-bus-schedules.html), so after a [quick script to parse and clean them up](https://github.com/snarfed/misc/blob/master/sfusd_buses.py), I was able to import all 44 schools, 143 routes, 153 locations, and 579 stops into [Google MyMaps](https://www.google.com/maps/d/u/0/). [Click here for the map!](https://www.google.com/maps/d/u/0/edit?mid=1aeI2sgAY-iL8dwf4_SvmY3NckTb_5LT4)
 
-Sadly, it doesn't include a visible path for each individual bus route. MyMaps limits maps to 10 layers, and every driving path has to be in its own layer. Still, [the map](https://www.google.com/maps/d/u/0/edit?mid=1aeI2sgAY-iL8dwf4_SvmY3NckTb_5LT4) is searchable by school, location, route, stop, and time, so it should be pretty navigable.
+Sadly, it's limited by a few MyMaps restrictions. It doesn't include a visible path for each individual bus route since [maps are limited to 10 layers](https://support.google.com/maps/forum/AAAAQuUrST8LgTyL-j0v8Y), and [every driving path has to be in its own layer](https://support.google.com/mymaps/answer/3502610), and only some schools' stops are grouped and color coded because [maps are limited to 20 colored groups](https://support.google.com/maps/forum/AAAAQuUrST8vf320ZZGQ88). Still, [the map](https://www.google.com/maps/d/u/0/edit?mid=1aeI2sgAY-iL8dwf4_SvmY3NckTb_5LT4) is searchable by school, location, route, stop, and time, so it should be pretty usable.
