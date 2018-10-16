@@ -80,6 +80,19 @@ MobileForce Technologies, Software Engineer intern, 1998
 
 <hr />
 
+##### Publications
+
+* Barrett, Neben, et al. _A scalable, aggregated genotypic-phenotypic database for human disease variation._ [Database: The Journal of Biological Databases and Curation](https://academic.oup.com/database/), Volume 2019.
+
+* Wilkerson, Barrett, et al. _Distributed Transactions for Google App Engine: Optimistic Distributed Transactions built upon Local Multi-Version Concurrency Control._ [Computing Research Repository, June 2011](https://dblp.uni-trier.de/db/journals/corr/corr1106.html), [arXiv:1106.3325](https://arxiv.org/abs/1106.3325), [blog post](/app-engine-global-transactions).
+
+* _[Transactions Across Datacenters](/2009-02-16_transactions_across_datacenters)._ [Special Lecture Series in Computer Science](http://web.cs.usfca.edu/courses), [University of San Francisco](http://usf.edu/), Feb. 12 2009; Google I/O, May 27 2009. [Citations](https://scholar.google.com/scholar?cites=17563833329981092665&as_sdt=2005&sciodt=0,5&hl=en), [slides](/transactions_across_datacenters_io.html), [video](https://www.youtube.com/watch?v=srOgpXECblk), [review](http://highscalability.com/blog/2009/8/24/how-google-serves-data-from-multiple-datacenters.html), [book excerpt](http://book.mixu.net/distsys/replication.html#an-overview-of-major-replication-approaches), [related blog post](https://googleappengine.blogspot.com/2009/09/migration-to-better-datastore.html).
+
+* _[Under the Covers of the Google App Engine Datastore](http://sites.google.com/site/io/under-the-covers-of-the-google-app-engine-datastore)._ Google I/O, 2008. [Citations](https://scholar.google.com/scholar?cites=15196393407508416532&as_sdt=2005&sciodt=1,5), [slides](/datastore_talk.html), [video](http://www.youtube.com/watch?v=tx5gdoNpcZM).
+
+* Ashcraft, Barrett, et al. _[P4 Protocol Specification](https://snarfed.org/p4protocol)._ snarfed.org, 2002. [Citations](https://scholar.google.com/scholar?cites=16310453643830093000&as_sdt=2005&sciodt=1,5&hl=en), [background](https://snarfed.org/p4), [proposal](https://snarfed.org/p4proposal).
+
+
 ##### Patents
 
 _Color Genomics_
