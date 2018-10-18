@@ -1,0 +1,13 @@
+30196
+Introducing Color Data
+
+<p class="right half">
+ <a href="https://data.color.com/">
+  <img class="shadow" src="/color_data_age_histogram.png" /></a></p>
+
+I'm pleased to announce [Color Data](https://data.color.com/) today! It's a public research database of aggregated genetic and clinical health information from 50,000 individuals who took a [Color](https://www.color.com/) test and opted to share their data with research.
+
+Building Color Data was some of the most fun I've had at Color since I joined. We've been using it internally and with partners for a while now, so I'm very excited to share it with the world. We're [announcing it at ASHG in San Diego today](http://www.ashg.org/2018meeting/asp/soe/webroot/soe.shtml#/sess886), and the [early press](https://www.genomeweb.com/cancer/color-unveils-public-repository-variant-clinical-data-50000-customers-ashg-meeting) (GenomeWeb) is very positive. [Try it out!](https://data.color.com/v1/)
+
+
+Thanks to [Alicia Zhou](https://twitter.com/ay_zhou), [Anjali Zimmer](https://twitter.com/anjalizimmer), [Ben Kobren](https://twitter.com/BenKobren?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor), [Cynthia Neben](https://blog.color.com/@cynthian_84008), [Gilad Mishne](https://twitter.com/gilad), [Jeremy Ginsberg](https://twitter.com/gins), and many others for their tireless work and selfless contributions to this project. And if this sounds interesting, [we're hiring](https://www.color.com/careers)! [Ping me any time](/about), I always like talking about Color.
