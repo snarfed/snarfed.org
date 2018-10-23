@@ -21,9 +21,6 @@ serial dramas.
 <a name="to_watch"></a>
 **Shows I want to watch**:
 
-_[Into The Badlands](https://www.imdb.com/title/tt3865236/)_
-([AMC](http://www.amctv.com/))
-
 _[Penn & Teller: Fool Us](https://www.cwtv.com/shows/penn-teller-fool-us/)_
 ([CW](https://www.cwtv.com/)
 
@@ -35,9 +32,6 @@ _[Mosaic](http://www.imdb.com/title/tt5056958/)_
 
 _[Wrecked](http://www.tbs.com/shows/wrecked.html)_
 ([TBS](http://www.tbs.com/))
-
-_[Robot Wars](http://www.robotwars.tv/)_
-([BBC](http://www.bbc.co.uk/programmes/p03h7r7n))
 
 _[The Expanse](http://www.syfy.com/theexpanse)_
 ([Syfy](http://www.syfy.com/helix))
@@ -59,14 +53,26 @@ _[Falling Skies](http://www.tnt.tv/series/fallingskies/)_
 <a name="watched"></a>
 **Shows I've watched**:
 
+_[Into The Badlands](https://www.imdb.com/title/tt3865236/)_
+([AMC](http://www.amctv.com/))
+<bad>
+
+_[Robot Wars](http://www.robotwars.tv/)_
+([BBC](http://www.bbc.co.uk/programmes/p03h7r7n))
+<bad>
+
 _[Killing Eve](http://www.metacritic.com/tv/killing-eve)_
 ([BBC America](http://www.bbcamerica.com/))
+<good>
 
 _[American Vandal](http://www.imdb.com/title/tt6877772/)_
 ([Netflix](http://netflix.com/))
+<good>
 
 _[Dirk Gently's Holistic Detective Agency](http://www.bbc.co.uk/programmes/b01d8jmz)_
 ([BBC](http://www.bbc.co.uk/programmes/p03h7r7n))
+<good>
+<bad>
 
 _[How Buildings Learn](https://www.youtube.com/user/brandst/videos)_
 ([BBC](http://www.bbc.co.uk/programmes/p03h7r7n))
