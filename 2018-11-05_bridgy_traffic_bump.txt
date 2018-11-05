@@ -1,0 +1,12 @@
+30321
+
+
+<p class="right half">
+ <a href="/bridgy_traffic_bump.png">
+  <img src="/bridgy_traffic_bump.png" class="shadow" /></a></p>
+
+A few weeks ago, [Bridgy](https://brid.gy/)'s traffic suddenly shot up to 20-50x its baseline, from 5-10 human visitors per day to 200-300. Humans in browsers, not bots or other requests; this ain't Google Analytics's first rodeo. They're all generally coming to the site directly, not from search. If they're coming from links or social networks, we can't tell, [due to HTTPS etc](https://en.wikipedia.org/wiki/HTTP_referer#Referrer_hiding).
+
+Our best guess so far, based on the timing, is that the influx is [Google+ refugees](https://blog.google/technology/safety-security/project-strobe/) who found Bridgy via either spreadsheets [like](https://docs.google.com/spreadsheets/d/1itbLtjWx2Cx88k2pqqwjY2j9vknLhoXpPXU52sTYbrI/edit) [these](https://docs.google.com/spreadsheets/d/10KIzSfm8OnlHOjZElOWzt8X60x93xgQCRnJtAL8Y-wM/edit) or [evangelism by Greg McVerry](https://twitter.com/jgmac1106/status/1056907873593253889) and others.
+
+Regardless, whoever you are, welcome! The traffic is still tiny compared to all the work Bridgy does on its own [for backfeed](https://brid.gy/about#listen), behind the scenes, so scaling isn't an issue. It's ready and willing to take in any and all new users!
