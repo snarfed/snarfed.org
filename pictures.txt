@@ -2,11 +2,43 @@
 pictures
 
 <div class="ngg-album-compact">
+<a href="/misc-second-half-of-2018">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2018/12/pumpkin_patch_family-300x169.jpg" />
+  </div>
+  <h4>misc 2018, second half</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/white-oak-2018">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2018/12/white_oak_brooke_couch_jumping-300x225.jpg" />
+  </div>
+  <h4>white oak 2018</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/brooke-schools-2018">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2018/12/sweet_peas_drawing-300x200.jpg" />
+  </div>
+  <h4>brooke schools 2018</h4>
+</a></div>
+
+<div class="ngg-album-compact">
+<a href="/brooke-activities-2018">
+  <div class="ngg-album-compactbox">
+    <img src="/w/wp-content/uploads/2018/12/rock_band_land_guitar-300x200.jpg" />
+  </div>
+  <h4>brooke activities 2018</h4>
+</a></div>
+
+<div class="ngg-album-compact">
 <a href="/misc-2018">
   <div class="ngg-album-compactbox">
     <img src="/w/wp-content/uploads/2018/05/gardening_outfit_and_tools-300x400.jpg" />
   </div>
-  <h4>misc 2018</h4>
+  <h4>misc 2018, first half</h4>
 </a></div>
 
 <div class="ngg-album-compact">
