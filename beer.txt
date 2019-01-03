@@ -101,18 +101,31 @@ Crazy Donkey IPA
 <a name="tried"></a>
 **Tried**:
 
-Barrel House Z - Festbier
+<!--
 M.I.A. Beer Co - Big in Japan
-Ahnapee Brewery - Cafe Blonde
 Adroit Theory Brewing Company - Invisible Art - Black IPA
 Toppling Goliath Brewing Co - Thresher IPA
 Hoppin' Frog Brewery - Fresh Frog Raw Hop Imperial Pale Ale
 Perennial Artisan Ales - Fantastic Voyage (2018)
 Gigantic - 2018 MASSIVE! Bourbon Barrel Aged
 Gun Hill Brewing Company - Shot in the Dark
-Adroit Theory Brewing Company - All I See is Carrion - Belgian Quad
-MobCraft Beer - Queen Hazel
-pFriem - Belgian Christmas Ale
+-->
+
+[Barrel House Z](http://barrelhousez.net/)
+[Festbier](https://www.beeradvocate.com/beer/profile/46527/370595/)
+<good>
+
+[Adroit Theory](http://adroit-theory.com/)
+[All I See Is Carrion](https://www.beeradvocate.com/beer/profile/31535/269927/) (quad)
+<good>
+
+[MobCraft](http://mobcraftbeer.com/)
+[Queen Hazel](https://www.beeradvocate.com/beer/profile/32325/384437/)
+<good>
+
+[Ahnapee Brewery](http://ahnapeebrewery.com/)
+[Cafe Blonde](https://www.beeradvocate.com/beer/profile/32497/382467/)
+<bad>
 
 [Yakima](https://www.yakimacraftbrewing.com/)
 [Good Monkey](https://www.beeradvocate.com/beer/profile/18069/55941/)
@@ -325,6 +338,8 @@ pFriem - Belgian Christmas Ale
 
 [pFriem](http://pfriembeer.com/)
 [IPA](https://www.beeradvocate.com/beer/profile/29573/91469/)
+<good>,
+[Belgian Christmas Ale](https://www.beeradvocate.com/beer/profile/29573/150967/)
 <good>
 
 [Alameda Island](http://alamedaislandbrewingcompany.com/)
@@ -2532,7 +2547,9 @@ Dedication Ale (amber)
 
 <span title="guys' night with nathan, clayton, siraj, at city beer, 7/28/2009">
 [North Coast](http://www.northcoastbrewing.com/)
-[Old Rasputin Imperial Stout](http://www.northcoastbrewing.com/beer-rasputinXI.htm)
+[Old Rasputin](http://www.northcoastbrewing.com/beer-rasputinXI.htm) (imperial stout)
+<good>,
+Barrel Aged Old Rasputin
 <good>,
 </span>
 [Ruedrich's Red Seal Ale](http://beeradvocate.com/beer/profile/112/410)

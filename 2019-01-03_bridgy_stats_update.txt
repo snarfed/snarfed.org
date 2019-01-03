@@ -1,0 +1,46 @@
+35734
+Bridgy stats update
+
+It's that time of year again! No, not awards season...[Bridgy](https://brid.gy/) stats time!
+
+Looking at the graphs, the elephant in the room is clearly the Facebook shutdown. It was Bridgy's second largest silo, numbering 1477 users [when we were forced to disable it on August 1](/2018-08-03_rip-facebook-for-bridgy). Bittersweet.
+
+On the plus side, I [rearchitected in March and moved polling to a separate background service](https://github.com/snarfed/bridgy/issues/578#issuecomment-376233546), which helped App Engine's scheduler handle our workload much better. We now consistently run on one backend instance and one frontend instance, which brings costs down from $70-100/month to a very predictable $35-40. Winning!
+
+Let's go to the numbers. Since [launch in December 2013](/2013-12-09_brid-gy-meet-webmentions): 3793 users, 1.22M [webmentions](http://webmention.net/) sent successfully to almost 2000 unique domains, 12.8M responses handled (likes, comments etc), 42K [POSSE](https://indiewebcamp.com/POSSE)s published, total cost back down to ~$.01/user/month (from ~$.02 a year ago).
+
+[Data](https://docs.google.com/spreadsheets/d/1VhGiZ9Z9PEl7f9ciiVZZgupNcUTsRVltQ8_CqFETpfU/edit),
+[methodology](https://github.com/snarfed/bridgy#stats),
+[previously](/2018-01-02_bridgy-stats-update-3),
+[previously](/2016-06-06_bridgy-stats-update-2),
+[previously](/2015-12-07_bridgy-stats-update),
+[previously](/2014-11-06_happy-1000th-bridgy).
+
+<p id="features" class="right half" style="margin-left: 0px; margin-right: -10px">
+ <a href="/bridgy_stats/2019/costs_vs_users.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2019/costs_vs_users_thumb.png" /></a></p>
+</p>
+<p class="left half" style="margin-right: 0px">
+ <a href="/bridgy_stats/2019/features.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2019/features_thumb.png" /></a></p>
+</p>
+
+<p id="users" class="right half" style="margin-left: 0px; margin-right: -10px">
+ <a href="/bridgy_stats/2019/accounts_stacked.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2019/accounts_stacked_thumb.png" /></a>
+</p>
+<p class="left half" style="margin-right: 0px">
+ <a href="/bridgy_stats/2019/accounts.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2019/accounts_thumb.png" /></a></p>
+</p>
+
+<p id="activity" class="right half" style="margin-left: 0px; margin-right: -10px">
+ <a href="/bridgy_stats/2019/activity.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2019/activity_thumb.png" /></a>
+</p>
+<p class="left half" style="margin-right: 0px">
+ <a href="/bridgy_stats/2019/webmentions.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2019/webmentions_thumb.png" /></a>
+</p>
+
+<br style="clearing: both" />
