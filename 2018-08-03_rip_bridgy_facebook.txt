@@ -3,7 +3,7 @@ RIP Facebook for Bridgy
 
 <p class="right third">
  <a href="https://brid.gy/">
-  <img src="bridgy_logo.jpg" /></a></p>
+  <img src="/bridgy_logo.jpg" /></a></p>
 
 As planned, [Facebook turned off some of its key APIs for posting and fetching data](https://developers.facebook.com/blog/post/2018/05/01/facebook-login-updates-further-protect-privacy/) on Wednesday, and I [disabled Facebook for Bridgy entirely](/2018-06-07_turning-off-facebook-for-bridgy).
 

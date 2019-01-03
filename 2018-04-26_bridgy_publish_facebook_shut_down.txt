@@ -3,7 +3,7 @@ Bridgy Publish for Facebook shuts down in August
 
 <p class="right third">
  <a href="https://brid.gy/">
-  <img src="bridgy_logo.jpg" /></a></p>
+  <img src="/bridgy_logo.jpg" /></a></p>
 
 [Bridgy Publish](https://brid.gy/about#publishing) [launched four years ago](https://snarfed.org/2014-03-25_bridgy-publish) with the ability to create posts, RSVPs, comments, and likes on Facebook and other silos. It's created [over 30k silo posts since then](https://brid.gy/#stats) ([details](https://snarfed.org/2018-01-02_bridgy-stats-update-3)), [7k on Facebook specifically](https://bigquery.cloud.google.com/savedquery/586366768654:491a0ec89c3f43acb62acce67062004f).
 
