@@ -1,4 +1,4 @@
-
+35755
 Stop paying the ETL tax
 
 <iframe class="right half shadow" allowfullscreen height="216"
@@ -12,25 +12,29 @@ Let me guess: that didn't set your imagination on fire. Even in software enginee
 ETL stands for [Extract, Transform, Load](https://en.wikipedia.org/wiki/Extract,_transform,_load). It's how you get your data from your primary (aka [OLTP](https://en.wikipedia.org/wiki/OLTP)) database, which is designed for serving your application, into an [OLAP](https://en.wikipedia.org/wiki/OLAP) [data warehouse](https://en.wikipedia.org/wiki/Data_warehouse) designed for analysis, business intelligence, and data science.
 
 Whatever your product is, it's hopefully a core competence for your company. It's a key differentiator. For many of us, data science and analysis is also a key differentiator. ETL, however, is not. It looks basically the same everywhere, and does basically the same thing. These are all signposts that generally point toward buying or reusing, not building from scratch. Doing this kind of thing yourself just won't move the needle.
+<!--more-->
 
 Sadly, it's exceedingly difficult to bolt an existing ETL onto the average database. You'll usually use an existing data warehouses, and sometimes even tools that help with ETL, but rarely an existing ETL itself. Why? It's entirely dependent on your data model, application, and needs. The input is your schema, the output is another schema driven entirely by your analysts and data scientists, and in the middle, a bunch of custom code that applies your business logic and stitches together your data in custom ways.
 
 You can find open source libraries and commercial tools that help read and write the data efficiently, the E and L in ETL.  There are even GUI schema mapping tools that let you drag and drop columsn and tables to make the T, transform, easier. There aren't many, though, and they only support the simplest and smallest needs. What's worse, transform is the most time intensive of the three, and takes the most work to maintain and update over time as your data model and needs evolve.
 
-Modern alternatives like ELT and schema-on-read, which move the transform into the data warehouse, and data virtualization, which remove the data warehouse entirely, can be compelling but don't fundamentally change the problem. Regardless of where or how, you'll eventually need a data model for analysis that's different from the one serving your application. You can construct it implicitly or explicitly, once inside your ETL/ELT or many times over inside individual queries, with engineers or analysts or other people entirely, but you'll still need to do it.
-
 <p class="left half">
  <img class="shadow" src="/smash_piggy_bank.png" /></p>
 
+Modern alternatives like ELT and schema-on-read, which move the transform into the data warehouse, and data virtualization, which remove the data warehouse entirely, can be compelling but don't fundamentally change the problem. Regardless of where or how, you'll eventually need a data model for analysis that's different from the one serving your application. You can construct it implicitly or explicitly, once inside your ETL/ELT or many times over inside individual queries, with engineers or analysts or other people entirely, but you'll still need to do it.
+
 So, we have this thing you have to build yourself, but won't give you any meaningful advantage. Ugh.
 
-We've felt this pain at Color just like everyone else. We avoided ETL as long as we could, but we eventually admitted that analyzing our data directly inside our primary schema, at scale, had become infeasible. We wrote and deployed our own ETL, and then another, and then another. We lamented that we had to pay this tax, and accepted it as a fact of life. Render unto the Lord what is the Lord's, unto Caesar what is Caesar's.
+We've felt this pain at [Color](https://www.color.com/) just like everyone else. We avoided ETL as long as we could, but we eventually admitted that analyzing our data directly inside our primary schema, at scale, had become infeasible. We wrote and deployed our own ETL, and then another, and then another. We lamented that we had to pay this tax, and accepted it as a fact of life. Render unto the Lord what is the Lord's, unto Caesar what is Caesar's.
 
 Fast forward to last week. I'm complaining about ETL to [Will Stedden](http://hellowill.makeloft.org/), one of our amazing data scientists. After the usual whining and groaning, an idea occurs to us. We have a wealth of analysis queries in tools like [Metabase](https://www.metabase.com/), numbering in the thousands, many written in SQL. We want a good OLAP schema, but we don't feel strongly about the exact tables and columns. We definitely don't care much about the ETL code itself.
 
 So we want good output, we have lots of training data, and we don't need tight control over the implementation. Sounds like a task for...machine learning? It's easy to think ML is the answer to everything these days, but in this case, it just might work.
 
 We plunged ahead into a hand wavy, straw man design for ML-based ETL. Auto generating real code is a Hard Problem, so we started by envisioning it in pure SQL: one query to generate each individual output OLAP table.
+
+<p class="left half">
+ <img class="shadow" src="/jetsons_robot_teacher.jpg" /></p>
 
 We start where most companies start, with our hodgepodge of BI and analysis queries written directly against the OLTP schema, in SQL. No ETL at all. It will generally take months to years to build up a large enough set of these queries to run a model on, so plan for it ahead of time. There's still no such thing as a free lunch.
 Once we have a comprehensive set of queries, we train a model to generate a core OLAP schema. The fitness function is the number of tables: fewer is generally better. This is somewhat analogous to principle component analysis: we want the smallest set of orthogonal tables that we can find, within reason.
@@ -44,10 +48,11 @@ This idea is flawed in all sorts of ways. For example, the UX isn't great. It re
 We don't currently plan to do this ourselves at Color. It's probably a boondoggle in all sorts of ways. Still, it seems like it just might work, and while we've found [people with somewhat similar ideas](https://unifisoftware.com/blog/2017/03/unifis-advanced-machine-learning-artificial-intelligence-automates-etl/), [we haven't yet found anyone who's actually tried it](https://www.google.com/search?q=machine+learning+ETL). If you're interested, we'd happily be your first guinea pig!
 
 
+<!--
 Related work:
 https://unifisoftware.com/blog/2017/03/unifis-advanced-machine-learning-artificial-intelligence-automates-etl/
 https://www.softwareadvice.com/resources/etl-vs-elt-for-your-data-warehouse/
 https://www.cio.com/article/3237150/artificial-intelligence/is-etl-dead-in-the-age-of-ai-not-quite.html
 https://searchenterpriseai.techtarget.com/feature/Defining-enterprise-AI-From-ETL-to-modern-AI-infrastructure
 https://www.kdnuggets.com/2016/03/engineers-shouldnt-write-etl.html
-
+-->
