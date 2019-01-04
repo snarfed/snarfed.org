@@ -16,10 +16,10 @@ Whatever your product is, it's hopefully a core competence for your company. It'
 
 Sadly, it's exceedingly difficult to bolt an existing ETL onto the average database. You'll usually use an existing data warehouses, and sometimes even tools that help with ETL, but rarely an existing ETL itself. Why? It's entirely dependent on your data model, application, and needs. The input is your schema, the output is another schema driven entirely by your analysts and data scientists, and in the middle, a bunch of custom code that applies your business logic and stitches together your data in custom ways.
 
-You can find open source libraries and commercial tools that help read and write the data efficiently, the E and L in ETL.  There are even GUI schema mapping tools that let you drag and drop columsn and tables to make the T, transform, easier. There aren't many, though, and they only support the simplest and smallest needs. What's worse, transform is the most time intensive of the three, and takes the most work to maintain and update over time as your data model and needs evolve.
-
 <p class="left half">
  <img class="shadow" src="/smash_piggy_bank.png" /></p>
+
+You can find open source libraries and commercial tools that help read and write the data efficiently, the E and L in ETL.  There are even GUI schema mapping tools that let you drag and drop columsn and tables to make the T, transform, easier. There aren't many, though, and they only support the simplest and smallest needs. What's worse, transform is the most time intensive of the three, and takes the most work to maintain and update over time as your data model and needs evolve.
 
 Modern alternatives like ELT and schema-on-read, which move the transform into the data warehouse, and data virtualization, which remove the data warehouse entirely, can be compelling but don't fundamentally change the problem. Regardless of where or how, you'll eventually need a data model for analysis that's different from the one serving your application. You can construct it implicitly or explicitly, once inside your ETL/ELT or many times over inside individual queries, with engineers or analysts or other people entirely, but you'll still need to do it.
 
@@ -29,19 +29,19 @@ We've felt this pain at [Color](https://www.color.com/) just like everyone else.
 
 Fast forward to last week. I'm complaining about ETL to [Will Stedden](http://hellowill.makeloft.org/), one of our amazing data scientists. After the usual whining and groaning, an idea occurs to us. We have a wealth of analysis queries in tools like [Metabase](https://www.metabase.com/), numbering in the thousands, many written in SQL. We want a good OLAP schema, but we don't feel strongly about the exact tables and columns. We definitely don't care much about the ETL code itself.
 
+<p class="right half">
+ <img class="shadow" src="/jetsons_robot_teacher.jpg" /></p>
+
 So we want good output, we have lots of training data, and we don't need tight control over the implementation. Sounds like a task for...machine learning? It's easy to think ML is the answer to everything these days, but in this case, it just might work.
 
 We plunged ahead into a hand wavy, straw man design for ML-based ETL. Auto generating real code is a Hard Problem, so we started by envisioning it in pure SQL: one query to generate each individual output OLAP table.
 
-<p class="left half">
- <img class="shadow" src="/jetsons_robot_teacher.jpg" /></p>
-
-We start where most companies start, with our hodgepodge of BI and analysis queries written directly against the OLTP schema, in SQL. No ETL at all. It will generally take months to years to build up a large enough set of these queries to run a model on, so plan for it ahead of time. There's still no such thing as a free lunch.
-Once we have a comprehensive set of queries, we train a model to generate a core OLAP schema. The fitness function is the number of tables: fewer is generally better. This is somewhat analogous to principle component analysis: we want the smallest set of orthogonal tables that we can find, within reason.
-For each candidate OLAP schema, we use a SQL query rewriter to rewrite all input queries onto the new OLAP tables. We then add in a second fitness function: simpler rewritten queries are better.
-When our model finds the best OLAP schema, we again use our query rewriter to generate a SQL query to create each of its tables from the OLTP tables. We might initially install these as views in a read replica of our primary db, to test. Later, once we're happy with them, we'd probably switch to a real ETL harness to run them regularly and populate a traditional data warehouse.
-We update the existing SQL queries in BI tools like Metabase to use the OLAP schema. Hopefully we use APIs to edit them in place, programmatically.
-As our application, OLTP schema, and analysis needs grow and evolve, we'll need to update our ETL. To do this, we'll need to update and write new BI queries on the primary OLTP schema to retrain the ETL model. Those queries can also include the existing OLAP queries. We'd then rerun the model, generate a new OLAP schema, and update all of the BI queries.
+1. We start where most companies start, with our hodgepodge of BI and analysis queries written directly against the OLTP schema, in SQL. No ETL at all. It will generally take months to years to build up a large enough set of these queries to run a model on, so plan for it ahead of time. There's still no such thing as a free lunch.
+1. Once we have a comprehensive set of queries, we train a model to generate a core OLAP schema. The fitness function is the number of tables: fewer is generally better. This is somewhat analogous to principle component analysis: we want the smallest set of orthogonal tables that we can find, within reason.
+1. For each candidate OLAP schema, we use a SQL query rewriter to rewrite all input queries onto the new OLAP tables. We then add in a second fitness function: simpler rewritten queries are better.
+1. When our model finds the best OLAP schema, we again use our query rewriter to generate a SQL query to create each of its tables from the OLTP tables. We might initially install these as views in a read replica of our primary db, to test. Later, once we're happy with them, we'd probably switch to a real ETL harness to run them regularly and populate a traditional data warehouse.
+1. We update the existing SQL queries in BI tools like Metabase to use the OLAP schema. Hopefully we use APIs to edit them in place, programmatically.
+1. As our application, OLTP schema, and analysis needs grow and evolve, we'll need to update our ETL. To do this, we'll need to update and write new BI queries on the primary OLTP schema to retrain the ETL model. Those queries can also include the existing OLAP queries. We'd then rerun the model, generate a new OLAP schema, and update all of the BI queries.
 
 This idea is flawed in all sorts of ways. For example, the UX isn't great. It requires you to write lots of BI queries on your primary OLTP schema first, which we've already admitted is a poor fit. I also hand waved through a few nontrivial problems. Some are [simple matters of programming](https://en.wikipedia.org/wiki/Small_matter_of_programming), but others, like using a model to generate a relational database schema, are significant ML challenges in their own right. As our [fearless head of data science](https://twitter.com/gilad) likes to say, that's why they pay us the medium sized bucks. More importantly, that's what makes them fun!
 
