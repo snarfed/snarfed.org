@@ -1,12 +1,16 @@
-
+36113
 Building a public research database out of spare parts
 
-<p class="right half">
- <img class="shadow" src="/color_data_laptop.png" /></p>
+<p class="right half" style="margin-top: 10px">
+ <a href="https://data.color.com/">
+  <img src="/color_data_laptop.png" /></a></p>
+
+_[Cross posted on the Color blog.](https://blog.color.com/building-a-public-research-database-out-of-spare-parts-1fd8f996b733)_
 
 A couple months ago, we launched a [public research database with DNA, health history, and more from 50,000 of our clients](https://data.color.com/). You might be surprised at how little work it took us: under four person-months total. Read on to hear how we designed and built it, went above and beyond the usual privacy safeguards, and did it all in the blink of an eye.
 
 At first glance, Color Data may seem far from unique. [ClinVar](https://www.ncbi.nlm.nih.gov/clinvar/), [gnomAD](http://gnomad.broadinstitute.org/), [TCGA](https://cancergenome.nih.gov/), [1000 Genomes](http://www.internationalgenome.org/), and others all address similar goals: sharing anonymized genotype and phenotype data with academic researchers to help them advance science and knowledge. We’re in an unusual position at Color, though, in that we have a large population with both sequenced DNA and self-reported phenotype that has opted to share it with researchers. Even better, our population is a bit more diverse across ethnicity, age, health history, and other characteristics than many other research datasets.
+<!--more-->
 
 We feel strongly that participating and sharing with the genomics research community should be one of our primary goals as a company. Given that, we’ve had the idea to publish a dataset like this for a long time. We had a clear vision in our heads: elegant visualizations of genes and classifications, demographics and health history, with simple tools to filter and drill down into subpopulations.
 
@@ -16,9 +20,11 @@ We knew it was a substantial project, though, and as a startup, we run lean and,
 
 I was dismayed. I like to joke that I’m a [Software Prevention Engineer](/2017-09-12_25492), but I’m at least partly serious. I’m a strong believer in [Peter Norvig](http://norvig.com/)’s maxim that *All code is liability*. Every line of code takes work to write, maintain, and eventually replace. Every line can have a bug, a security hole, or worse. It’s easy to think our job is to write code, but in practice, I believe our mandate is to *create results.* Code is our usual tool, but if we can get the same results with less code, or even none, so much the better.
 
-<p class="left half">
- <img class="shadow" src="/empty_pockets_street_art.jpg" /><br>
- ["Empty Pockets," Richie Diesterheft](https://www.flickr.com/photos/puroticorico/6355586033)
+<p class="left half" style="text-align: center">
+ <a href="https://www.flickr.com/photos/puroticorico/6355586033">
+  <img class="shadow" src="/empty_pockets_street_art.jpg" /><br>
+  <em>"Empty Pockets," Richie Diesterheft</em>
+ </a>
 </p>
 
 So I looked around. What could we do instead? What could we reuse? It didn’t take long for [Metabase](https://www.metabase.com/) to come to mind. It’s a simple, self serve BI tool that we use heavily internally at Color. It lets engineers and non-engineers alike query data, design visualizations and dashboards, and share them. We already used it to build many similar data analysis tools internally; why not this too?
@@ -38,9 +44,11 @@ Fortunately, the academic community has studied this problem deeply, and came up
 The simplest place to start is to allow only aggregate queries, not row level results at all. You then also need to prevent filtering down to a single row. You can do that by imposing a minimum bound on the number of rows incorporated into any aggregate operation — say, 10 — but that can be easily defeated with a query (A) that matches your target row and 10 other rows, a query (B) that matches the same 10 rows but *not* your target, and then simply subtracting B’s results from A.
 
 
-<p class="left half">
- <img class="shadow" src="/wc/uploads/2012/07/carnival_masks-1024x768.jpg" /><br>
- [Carnival masks in Venice](/2012-07-07_venice_florence_tuscany#jp-carousel-30988)
+<p class="right half" style="text-align: center">
+ <a href="/2012-07-07_venice_florence_tuscany#jp-carousel-30988">
+  <img class="shadow" src="/w/wp-content/uploads/2012/07/carnival_masks-1024x768.jpg" /><br>
+  <em>Carnival masks in Venice</em>
+ </a>
 </p>
 
 The complexity ramps up from there. I was dismayed to find that everyone concluded it’s more or less impossible to prevent re-identification, in general, with a number of queries that scales sublinearly with both the dataset size and query restrictions. Differential privacy was a major step forward, showing adding random noise could guarantee minimal privacy levels and require a higher number of queries to determine a given amount of new information, but reduced the accuracy of results, especially for smaller datasets. Plus, when I mentioned the idea of modifying query results by small amounts to our researchers, they laughed me out of the room.
@@ -55,9 +63,11 @@ BigQuery is designed for large scale data analysis. We knew this database would 
 
 We also made liberal use of one of my favorite BigQuery features, [schema auto-detection](https://cloud.google.com/bigquery/docs/schema-detect). We changed the tables and columns and re-uploaded them over and over, and it happily re-detected the new schemas. We didn’t have to waste time updating an explicit DDL over and over.
 
-<p class="right half">
- <img class="shadow" src="/butt_kicking_machine.jpg" /><br>
- [Butt-Kicking Machine, LisaGenius](https://www.flickr.com/photos/48336728@N06/4817594763)
+<p class="left half" style="text-align: center">
+ <a href="https://www.flickr.com/photos/48336728@N06/4817594763">
+  <img class="shadow" src="/butt_kicking_machine.jpg" /><br>
+  <em>Butt-Kicking Machine, LisaGenius</em>
+ </a>
 </p>
 
 ## Delegate like a boss
@@ -76,16 +86,18 @@ Unlike de-identification, this was a well understood problem, and our design gav
 
 Next, security. The name of the game was mitigating risk, and the hammer I had was separating and limiting access, so I began hammering everything in sight. I moved the dashboard to its own Metabase instance on a separate EC2 instance, security group, and VPC. I moved the BigQuery tables to their own Google Cloud project, created a dedicated service account for Metabase to use, and made sure that service account couldn’t access any of our other Google Cloud resources or data. Lastly, I put the HTML files in a dedicated S3 bucket and CloudFront distribution, separate from our other buckets and distributions.
 
-<p class="left half">
- <img class="shadow" src="/color_data_age_histogram.png" /><br>
- [Color Data: cancer onset age histogram](https://data.color.com/v1/)
+<p class="right half" style="text-align: center">
+ <a href="https://data.color.com/v1/">
+  <img src="/color_data_age_histogram.png" /><br>
+  <em>Color Data: cancer onset age histogram</em>
+ </a>
 </p>
 
 At this point, we had a working site and database. We shopped it around internally, gathered feedback, and iterated. I threw together some ugly HTML, CSS, and social sharing buttons. I even [wrote a few bits of JavaScript](https://github.com/metabase/metabase/pull/7817) to get individual queries into Google Analytics so we could see how people used the database.
 
 ## Victory lap
 
-Everyone loved it. Business development people started using it to pitch potential customers. Genetic counselors drilled into it to understand specific niches in our population. Our PR people especially liked it; they pitched it to GenomeWeb, which ended up publishing [a thoughtful, clear-eyed take on it](https://www.genomeweb.com/cancer/color-unveils-public-repository-variant-clinical-data-50k-customers-ashg-meeting) that got a lot of traction. We even wrote a research paper and submitted it to [*Database: The Journal of Biological Databases and Curation](https://academic.oup.com/database)*. Fingers crossed they accept it!
+Everyone loved it. Business development people started using it to pitch potential customers. Genetic counselors drilled into it to understand specific niches in our population. Our PR people especially liked it; they pitched it to GenomeWeb, which ended up publishing [a thoughtful, clear-eyed take on it](https://www.genomeweb.com/cancer/color-unveils-public-repository-variant-clinical-data-50k-customers-ashg-meeting) that got a lot of traction. We even wrote a research paper and submitted it to _[Database: The Journal of Biological Databases and Curation](https://academic.oup.com/database)_, and good news: they've accepted it!
 
 Our research team [announced the database publicly at ASHG this year](https://blog.color.com/color-at-ashg-a-year-of-large-scale-genomics-research-84885646cd4d) to a standing room only crowd. We’ve heard a lot of interest and positive feedback from all over. More importantly, we’re seeing a growing amount of usage by real people using the database to get real insights out of our population.
 

@@ -82,7 +82,7 @@ MobileForce Technologies, Software Engineer intern, 1998
 
 ##### Publications
 
-* Barrett, Neben, et al. _A scalable, aggregated genotypic-phenotypic database for human disease variation._ [Database: The Journal of Biological Databases and Curation](https://academic.oup.com/database/), Volume 2019.
+* [Barrett, Neben, et al. _A scalable, aggregated genotypic-phenotypic database for human disease variation._](https://academic.oup.com/database/article/doi/10.1093/database/baz013/5316668) [Database: The Journal of Biological Databases and Curation, Volume 2019.](https://academic.oup.com/database/issue/volume/2019)
 
 * Wilkerson, Barrett, et al. _Distributed Transactions for Google App Engine: Optimistic Distributed Transactions built upon Local Multi-Version Concurrency Control._ [Computing Research Repository, June 2011](https://dblp.uni-trier.de/db/journals/corr/corr1106.html), [arXiv:1106.3325](https://arxiv.org/abs/1106.3325), [blog post](/app-engine-global-transactions).
 
