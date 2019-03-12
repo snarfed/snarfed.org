@@ -107,7 +107,6 @@ Toppling Goliath Brewing Co - Thresher IPA
 Perennial Artisan Ales - Fantastic Voyage (2018)
 Ecliptic Brewing - Luna Kolsch
 Monkless Belgian Ales - Meet Your Maker
-Adroit Theory Brewing Company - Tenebris
 Boulevard Brewing - Whiskey Barrel Stout
 Snake River - Zonker Stout
 Monkless Belgian Ales - Capitulation
@@ -147,7 +146,9 @@ Tripel <good>
 
 [Adroit Theory](http://adroit-theory.com/)
 [All I See Is Carrion](https://www.beeradvocate.com/beer/profile/31535/269927/) (quad)
-<good>
+<good>,
+[Tenebris](https://www.beeradvocate.com/beer/profile/31535/175510/) (barleywine)
+<bad>
 
 [MobCraft](http://mobcraftbeer.com/)
 [Queen Hazel](https://www.beeradvocate.com/beer/profile/32325/384437/)

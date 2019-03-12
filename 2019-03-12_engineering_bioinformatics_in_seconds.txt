@@ -1,19 +1,20 @@
 36361
 Engineering bioinformatics in seconds, not hours
 
-<a href="http://longnow.org/clock/"
- <img class="shadow" src="/long_now_clock.jpg" />
- 10,000 Year Clock, Long Now
-</a>
-
 _[Cross posted on the Color blog.](https://blog.color.com/engineering-bioinformatics-in-seconds-not-hours-b17af684f682)_
+
+<p style="text-align: center">
+ <a href="http://longnow.org/clock/">
+  <img class="shadow" src="/long_now_clock.jpg" />
+  <em>10,000 Year Clock, Long Now</em>
+</a></p>
 
 It was winter 2014. [Pharrell had just dropped _Happy_](http://www.billboard.com/charts/2014/year-end), the [Rosetta probe landed on a comet](http://www.bbc.com/news/science-environment-30026398), President Obama was [opening diplomatic relations with Cuba](http://www.bbc.co.uk/news/world-us-canada-30516740)...
 
 ...and [here at Color](https://www.color.com/careers), the bioinformatics team had a problem. Our [pipeline](https://blog.color.com/building-a-high-quality-reliable-and-efficient-bioinformatics-pipeline-aa4a01e182ba) — the data processing system that crunches raw DNA data from our lab into the variants we report to patients — was slow. 12 to 24 hours slow.
 
 This wasn’t a problem in and of itself — bioinformatics pipelines routinely run for hours or even days — but it was a royal pain for development. We’d write new pipeline code, start it running, go home, and return the next morning to find it had crashed halfway through because we’d [missed a semicolon](https://www.quora.com/Why-is-the-error-of-missing-a-semicolon-seemingly-so-difficult-to-fix-for-many-people). Argh. Or worse, since we hadn’t launched yet, our live pipeline would hit similar bugs in production R&D samples, which would delay them until we could debug, test, and deploy the fix. No good.
-
+<!--more-->
 
 ### No quick fixes
 
@@ -25,6 +26,12 @@ I was undeterred. I’ve seen the impact of short development cycles and feedbac
 ### s/dream/reality/
 
 My goal was to come up with a tiny input dataset that the entire pipeline could run on, including all external packages and dependencies. I wanted it to run both locally and in our continuous integration environment. I wanted to generate a “golden” file with expected data that I could compare to the pipeline’s output data. And most importantly, I wanted it to run in seconds to minutes at most. I hoped that a small input DNA sample — just a few regions and 10k or so base pairs — would do the trick and still exercise most of the pipeline code paths.
+
+<p class="right half" style="text-align: center">
+ <a href="https://www.gamesmediapro.co.uk/80s-smash-hit-game-simon-to-launch-35th-year-anniversary-special/">
+  <img src="/simon_says.jpg" />
+  <em>“Simon Says,” GamesMediaPro</em>
+</a></p>
 
 I started with getting the full pipeline to run on my dev machine. Like many tech companies today, Color engineers use Linux in production but develop on Macs, so I had to find and build all the corresponding packages for Mac OS X with the same configurations and versions: R, Java, [BWA, samtools, Picard, GATK](https://s3.amazonaws.com/color-static-prod/pdfs/validationWhitePaper.pdf), and many more. I also needed all of our datasets and related files in place, with the same directory structure as in prod.
 
@@ -103,6 +110,11 @@ Sure enough, I ran the pipeline locally on my test data and it took almost an ho
 The task was daunting. The pipeline had dozens of stages, and each one did a different combination of tasks. Some used entirely homegrown code and internal data; others used multiple third party packages and datasets from across research, open source, and proprietary companies. They came in different languages and compiled binaries, and the data files ranged from CSV to XML to compressed and binary files with no identifying magic header bytes that file(1) threw up its hands on. The low hanging fruit was long gone.
 Our pipeline four years ago. It’s changed a lot since then!
 
+<p style="text-align: center">
+  <img src="/color_pipeline_graph_2015.png" />
+  <em>Our pipeline four years ago. It’s changed a lot since then!</em>
+</p>
+
 Nonetheless, I dove into each stage, identified the packages, data files and other dependencies, and figured out how to cut them down and then reconstitute them so they were still usable.
 
 Lots of different things used the reference genome, so I started there...
@@ -134,7 +146,7 @@ tabix sorted.gff.gz
 grep -E ^”#” gencode.v18.annotation.gtf > min.gtf
 tabix sorted.gff.gz chr13:32895000–32905000 chr17:41255000–41260000 >> min.gtf
 # shuffle down locations in min.gtf
-bgzip -c min.gtf > src/datasets/etc/pipeline_test/gencode.v18.annotation.gtf.gz
+    bgzip -c min.gtf > src/datasets/etc/pipeline_test/gencode.v18.annotation.gtf.gz
 git add src/datasets/etc/pipeline_test/gencode.v18.annotation.gtf.gz
 ```
 
@@ -153,6 +165,12 @@ grep -E ‘(chr13.[+-].32|chr17.[+-].41)’ refFlat.txt \
 ```
 
 I lsofed and straced, reverse engineered mystery file formats, decompiled and modified the incomprehensible resulting code, then recompiled. I examined each stage, each tool and file, learning its data and cutting down as small as possible. I ran the pipeline over and over and watched its running time drop from over an hour, to under an hour, to 30 minutes, 15 minutes, 10, 5, and finally just over 2 minutes.
+
+<p class="right half" style="text-align: center">
+ <a href="https://www.youtube.com/watch?v=NpghkBoYgcY">
+  <img class="shadow" src="/dragon_egg.jpg" />
+  <em>“Dragon egg hatches!” JesseAndMike</em>
+</a></p>
 
 Now, I must say, I was ecstatic. I wrapped it up in a test harness that used the test data, compared it against the golden output VCF, added a couple commands to our toolchain to install the dependencies, set up the environment, and ran the test. I helped our other bioinformatics engineers get it running on their laptops and added it to our continuous integration server. It started running on every single commit to our codebase. Victory.
 
