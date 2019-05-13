@@ -5,6 +5,8 @@ IndieWeb OStatus bridge
  <a href="https://indieweb.org/">
   <img src="/indiewebcamp_logotype_big.png" /></a></p>
 
+_I've launched this as [Bridgy Fed](https://fed.brid.gy/)!_
+
 I often work on connecting things that don't automatically connect but should, like [Bridgy](https://brid.gy/) for [IndieWeb](https://indieweb.org/) and social networks. Federated social networks like [GNU Social](https://gnu.io/social/) and [Mastodon](https://joinmastodon.org/) have been hot recently, so I'm thinking about them too.
 
 <p class="right quarter">
