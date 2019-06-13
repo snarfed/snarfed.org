@@ -3,13 +3,13 @@ Backfeed without code
 
 <p class="right half">
  <a href="https://www.newyorker.com/cartoon/a11437">
-  <img class="shadow" src="/copier_paper_airplane.jpg" /></a>
-  _Drew Dernavich,_ The New Yorker
-</p>
+  <img src="/copier_paper_airplane.jpg" />
+  <em>Drew Dernavich,</em> The New Yorker
+</a></p>
 
-I've spent most of my time in the [IndieWeb](https://indieweb.org/) community on [backfeed](https://indieweb.org/backfeed): sending interactions from social networks and other [silos](https://indieweb.org/silo) back to your web site. The service we built, [Bridgy](https://brid.gy/), has served that need well enough that we haven't seen many other alternatives pop up. [OwnYourGram](https://ownyourgram.com/) for [FourSquare](https://foursquare.com/) is the main one that comes to mind, and if Bridgy had supported FourSquare, I suspect OwnYourGram may have skipped backfeed entirely.
+I've spent most of my time in the [IndieWeb](https://indieweb.org/) on [backfeed](https://indieweb.org/backfeed): sending interactions from social networks and other [silos](https://indieweb.org/silo) back to your web site. [Bridgy](https://brid.gy/), the service I (we!) built, has served that need decently well, so we haven't seen many other alternatives pop up. [OwnYourGram](https://ownyourgram.com/) is the only one that comes to mind, and if Bridgy had supported [FourSquare](https://foursquare.com/), I suspect OwnYourGram may have skipped backfeed entirely.
 
-This is a nice vote of confidence, but it makes me sad that we don't have a [plurality](https://indieweb.org/plurality) of backfeed implementations. What's more, it puts us in a bind: backfeed is a substantial engineering project in most cases, so the barrier to entry is high. What's more, Bridgy is heavyweight and comprehensive, which has served it well in many ways, but not when it comes to [adding a new silo](https://bridgy.readthedocs.io/#adding-a-new-silo). [Many people have expressed interest](https://github.com/snarfed/bridgy/issues?q=is%3Aopen+is%3Aissue+label%3A%22new+silo%22) over the years, but [only one has ever actually done it](https://github.com/snarfed/bridgy/issues/225) - we love you Kyle! - and I don't plan to add many more myself.
+This is a nice vote of confidence in Bridgy, but it makes me sad that we don't have a [plurality](https://indieweb.org/plurality). What's more, it puts us in a bind: implementing backfeed conventionally is a substantial undertaking, so the barrier to entry is high. Bridgy followed that traditional route and became heavyweight and comprehensive, which has served it well in many ways, but not when it comes to [adding a new silo](https://bridgy.readthedocs.io/#adding-a-new-silo). [Many people have expressed interest](https://github.com/snarfed/bridgy/issues?q=is%3Aopen+is%3Aissue+label%3A%22new+silo%22) over the years, but [only one has ever actually done it](https://github.com/snarfed/bridgy/issues/225) - we love you Kyle! - and I don't plan to add many more myself.
 
 We still need more backfeed though! More silos, more designs, more ideas. So here's one: could we do it without any code at all?
 
