@@ -32,7 +32,9 @@ together surprisingly good [guides](http://www.spur.org/files/popos-guide.pdf)
 and
 maps like [this one](http://maps.google.com/maps/ms?ie=UTF8&hl=en&msa=0&msid=215305625166679665263.000494a2f8e47681a4953&ll=37.787437,-122.3913&spn=0.020112,0.045447&z=15):
 
-<iframe width="500" height="400" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps/ms?ie=UTF8&amp;hl=en&amp;msa=0&amp;msid=215305625166679665263.000494a2f8e47681a4953&amp;t=m&amp;ll=37.787437,-122.3913&amp;spn=0.020112,0.045447&amp;output=embed"></iframe>
+<div class="embed-container">
+  <iframe class="embed" src="https://www.google.com/maps/d/embed?mid=1Fa-7GTi_gbfsqX1MDxlwcWxG378&hl=en" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+</div>
 
 Starting on Mission between 1st and 2nd St., we managed to find a wide variety
 in just a single city block. The urban garden at 555/575 Market was lush and
