@@ -1,29 +1,29 @@
 37525
 Backfeed without code
 
-<p class="right half">
+<p class="right half captioned">
  <a href="https://www.newyorker.com/cartoon/a11437">
   <img src="/copier_paper_airplane.jpg" />
   <em>Drew Dernavich,</em> The New Yorker
 </a></p>
 
-I've spent most of my time in the [IndieWeb](https://indieweb.org/) on [backfeed](https://indieweb.org/backfeed): sending interactions from social networks and other [silos](https://indieweb.org/silo) back to your web site. [Bridgy](https://brid.gy/), the service I (we!) built, has served that need decently well, so we haven't seen many other alternatives pop up. [OwnYourGram](https://ownyourgram.com/) is the only one that comes to mind, and if Bridgy had supported [FourSquare](https://foursquare.com/), I suspect OwnYourGram may have skipped backfeed entirely.
+I've spent most of my time in the [IndieWeb](https://indieweb.org/) on [backfeed](https://indieweb.org/backfeed): sending interactions from social networks back to your web site. [Bridgy](https://brid.gy/), the service we built, has served that need well enough that we haven't seen many alternatives pop up. [OwnYourSwarm](https://ownyourswarm.p3k.io/) is the only meaningful one that comes to mind, and if Bridgy had supported [FourSquare](https://foursquare.com/) when [Aaron](https://aaronparecki.com/) built it, I suspect he may have skipped backfeed entirely.
 
-This is a nice vote of confidence in Bridgy, but it makes me sad that we don't have a [plurality](https://indieweb.org/plurality). What's more, it puts us in a bind: implementing backfeed conventionally is a substantial undertaking, so the barrier to entry is high. Bridgy followed that traditional route and became heavyweight and comprehensive, which has served it well in many ways, but not when it comes to [adding a new silo](https://bridgy.readthedocs.io/#adding-a-new-silo). [Many people have expressed interest](https://github.com/snarfed/bridgy/issues?q=is%3Aopen+is%3Aissue+label%3A%22new+silo%22) over the years, but [only one has ever actually done it](https://github.com/snarfed/bridgy/issues/225) - we love you Kyle! - and I don't plan to add many more myself.
+This is a nice vote of confidence in Bridgy, but it makes me sad that we don't have a [plurality](https://indieweb.org/plurality). What's more, it puts us in a bind: implementing backfeed conventionally is a pretty big undertaking, so the barrier to entry is high. Bridgy followed that route and became heavyweight and comprehensive, which has served it well in many ways, but [not when it comes to adding a new silo](https://bridgy.readthedocs.io/#adding-a-new-silo). That takes work. [Many people have expressed interest](https://github.com/snarfed/bridgy/issues?q=is%3Aopen+is%3Aissue+label%3A%22new+silo%22) over the years, but [only one has ever actually done it](https://github.com/snarfed/bridgy/issues/225) - we love you [Kyle](https://kylewm.com/)! - and I don't plan to add many more myself.
 
-We still need more backfeed though! More silos, more designs, more ideas. So here's one: could we do it without any code at all?
+We still need more backfeed though! More [silos](https://indieweb.org/silo), more designs, more ideas. So here's one: could we do it without any code at all?
 
-Stick with me here. The new generation of internet automation services, led by [IFTTT](https://ifttt.com/) and [Zapier](https://zapier.com/), are carrying the Yahoo Pipes torch forward. They support hundreds of silos out of the box, and critically, also send and receive webhooks. If you squint, this might be just barely enough to implement backfeed end to end, at least for silos with native [microformats2](http://microformats.org/wiki/microformats2).
+Stick with me here. [IFTTT](https://ifttt.com/) and [Zapier](https://zapier.com/) are leading a new generation of internet automation services and carrying the [Yahoo Pipes](https://en.wikipedia.org/wiki/Yahoo!_Pipes) torch into the future. They support hundreds of silos out of the box, and even more importantly, they send and receive webhooks. If you squint, that might just be barely enough to implement backfeed end to end. Barely.
 
-Here's a sketch for backfeeding Mastodon replies:
+Here's a hand wavy design sketch:
 
-1. Create a new task that's triggered by a new reply to one of your toots.
+1. Create a new task that's triggered by a new reply to one of your posts.
 1. Configure it to send a `POST` webhook to [Telegraph's API](https://telegraph.p3k.io/api) (`https://telegraph.p3k.io/webmention`) with these query parameters:
   1. `token`: your API key
-  1. `source`: the reply toot's URL
+  1. `source`: the reply's URL
   1. `target_domain`: your web site's domain
 1. ...profit!
 
-Caveats abound. Most silos don't have permalinks for likes and reactions, so they're an open question. Telegraph doesn't have [original post discovery](https://indieweb.org/original-post-discovery) built in (yet), so [backlinks](https://indieweb.org/POSSE#Why_Link_To_Your_Original) are required in the silo posts. Silo-specific quirks like Twitter reply chains and quote tweets are unlikely at best. Finally, most silos don't have native microformats2, so they need to be wrapped in granary URLs in the webmention webhook source parameter.
+Caveats abound. Most silos don't have permalinks for likes and reactions, so those are an open question. Telegraph doesn't have [original post discovery](https://indieweb.org/original-post-discovery) built in yet, so [backlinks](https://indieweb.org/POSSE#Why_Link_To_Your_Original) are required in the silo posts, at least until we have a working OPD service. ([This one is broken.](https://waterpigs.co.uk/services/original-post/)) Silo-specific quirks like Twitter reply chains and quote tweets are unlikely at best. Finally, most silos don't have native [microformats2](http://microformats.org/wiki/microformats2), so they need to be wrapped in [granary](https://granary.io/) URLs in the `source` query parameter.
 
 Regardless, this sounds a hell of a lot easier than Bridgy's [20 steps to add a new silo](https://bridgy.readthedocs.io/#adding-a-new-silo). Hey [2019 Summitters](https://2019.indieweb.org/summit), want to give it a try?

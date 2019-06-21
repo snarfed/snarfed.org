@@ -1,0 +1,10 @@
+35820
+
+
+<!-- wp:paragraph -->
+<p>views from my parents' house this morning. they affectionately call it the "cloud house." <em>At Eden Canyon Rd, Castro Valley, California.</em></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:gallery {"ids":[35821,35822,35823]} -->
+<ul class="wp-block-gallery columns-3 is-cropped"><li class="blocks-gallery-item"><figure><img src="https://snarfed.org/w/wp-content/uploads/2019/01/11-1-1.jpg" alt="" data-id="35821" data-link="https://snarfed.org/?attachment_id=35821#main" class="wp-image-35821 shadow"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://snarfed.org/w/wp-content/uploads/2019/01/11-2.jpg" alt="" data-id="35822" data-link="https://snarfed.org/?attachment_id=35822#main" class="wp-image-35822 shadow"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://snarfed.org/w/wp-content/uploads/2019/01/11-3.jpg" alt="" data-id="35823" data-link="https://snarfed.org/?attachment_id=35823#main" class="wp-image-35823 shadow"/></figure></li></ul>
+<!-- /wp:gallery -->

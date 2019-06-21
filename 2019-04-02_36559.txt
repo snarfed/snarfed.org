@@ -1,0 +1,6 @@
+36559
+
+
+Standard dogma in security and encryption is that attacking is always easier than defending. <a href="https://aphyr.com/">Aphyr</a>'s stroke of insight with <a href="https://jepsen.io/">Jepsen</a> was to apply that to distributed systems. ?
+
+(Along with plenty of smarts and hard work, of course!)

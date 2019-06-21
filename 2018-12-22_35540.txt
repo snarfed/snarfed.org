@@ -1,0 +1,12 @@
+35540
+
+
+?
+
+<blockquote>
+  DOH (DNS over HTTPS) looks like a very small change from DNS over TLS, as they both use very similar formats on the wire. However, DOH treats the DNS response as a web object. It can be cached. It can be pre-fetched. Presumably it can be embedded in web pages. This creates the possibility of a browser defining its own DNS environment completely independent of the platformer that runs the browser, independent of the local service provider and even independent of the DNS as we know it...
+  
+  Given that some 80% of all user platforms use Chrome as their browser these days then that places a huge amount of unique market power in the hands of the Chrome browser and its provider, Alphabet.
+</blockquote>
+
+&#45; <a href="https://www.potaroo.net/">Geoff Huston</a>, <em><a href="https://www.potaroo.net/ispcol/2018-12/wie18.html">Internet Economics</a></em>
