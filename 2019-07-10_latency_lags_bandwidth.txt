@@ -1,0 +1,5 @@
+37849
+
+Latency lags bandwidth. Not just by a constant factor, either. Over time, bandwidth increases with the *square* of latency.
+
+Classic computer engineering maxim. It's held true for at least the last 35-40 years, across network, disk, memory, CPU. [Patterson's 2004 article is a classic.](http://citeseerx.ist.psu.edu/viewdoc/download?doi=10.1.1.115.7415&rep=rep1&type=pdf) It's had a deep impact on me; I still think about it regularly.
