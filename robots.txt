@@ -1,5 +1,5 @@
 User-agent: *
 
-Disallow: /unlisted/
+Disallow: /unlisted
 # the globbing here is nonstandard; it only works with google.
 Disallow: *.txt
