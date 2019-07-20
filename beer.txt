@@ -119,7 +119,6 @@ Monkless Belgian Ales - Meet Your Maker
 Boulevard Brewing - Whiskey Barrel Stout
 
 Toppling Goliath Brewing Co - King Sue
-Adroit Theory Brewing Company - All Shall Perish
 Jester King Brewery - No Whalez Here
 Barrier Brewing Company - Barstool Warrior
 -->
@@ -208,6 +207,8 @@ Tripel <good>
 [Tenebris](https://www.beeradvocate.com/beer/profile/31535/175510/) (barleywine)
 <bad>,
 [Invisible Art](https://www.beeradvocate.com/beer/profile/31535/249477/) (black IPA)
+<ok>,
+[All Shall Perish](https://www.beeradvocate.com/beer/profile/31535/421274/) (hazy IPA)
 <ok>
 
 [MobCraft](http://mobcraftbeer.com/)
