@@ -1,8 +1,9 @@
 User-agent: *
 
 Disallow: /category/
-Disallow: /tag/
 Disallow: /gallery/
+Disallow: /page/
+Disallow: /tag/
 Disallow: /unlisted
 Disallow: /w/
 # the globbing here is nonstandard; it only works with google.
