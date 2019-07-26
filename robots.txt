@@ -1,7 +1,9 @@
 User-agent: *
 
-Disallow: /unlisted
+Disallow: /category/
+Disallow: /tag/
 Disallow: /gallery/
+Disallow: /unlisted
 Disallow: /w/
 # the globbing here is nonstandard; it only works with google.
 Disallow: *.txt
