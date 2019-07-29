@@ -1,0 +1,24 @@
+38110
+Engineering lessons
+
+Also see [software engineering quotes](/software-engineering-quotes).
+
+* All code is liability.
+* Manual until it hurts.
+* Change is the only constant.
+* You can't predict the future.
+* Life is tradeoffs.
+* [Agree on a project's values up front.](https://vimeo.com/230142234) Use them to decide on tradeoffs.
+* Prioritize.
+* Shorten feedback loops.
+* Iterate fast, experiment cheaply.
+* Worse is better.
+* Reuse existing code.
+* DRY.
+* Orthogonality is powerful. Make things cross cutting.
+* Data over config. Config over code.
+* Empower non-engineers.
+* Make interfaces. Map them to teams.
+* Data wants to be dirty.
+* Duplicated data wants to skew.
+* [Less code.](/2019-xx-xx_less_code)

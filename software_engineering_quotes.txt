@@ -1,0 +1,643 @@
+38111
+Software engineering quotes
+
+A big collection of engineering quotes I like, collected over many years. Also see [engineering lessons](/engineering-lessons).
+
+<!--
+https://en.wikiquote.org/wiki/Computer_science
+https://en.wikiquote.org/wiki/Engineering
+https://en.wikiquote.org/wiki/Electrical_engineering
+https://en.wikiquote.org/wiki/Software_engineering
+https://en.wikiquote.org/wiki/Systems_engineering
+https://en.wikiquote.org/wiki/Technology
+https://en.wikiquote.org/wiki/Richard_Feynman
+
+http://www.azquotes.com/
+https://twitter.com/Pinboard
+
+http://vanderburg.org/etc/soft-quotes.html
+
+!!! https://twitter.com/CodeWisdom !!!
+
+https://twitter.com/erowidrecruiter
+
+http://pu.inf.uni-tuebingen.de/users/klaeren/epigrams.html
+
+
+upcoming
+===
+
+TODO: ESR's unix zen koans
+
+If software cannot be maintained, then it will be rewritten.
+- Dave Cheney
+
+To err is human; to manage error is system.
+- Kevin Kelly
+
+It is easier to write an incorrect program than to understand a correct one.
+- Alan Perlis
+
+
+If you have a procedure with 10 parameters, you probably missed some.
+- Alan Perlis
+
+Everything should be built top-down, except the first time.
+- Alan Perlis
+
+Every program has (at least) two purposes: the one for which it was written and another for which it wasn't.
+- Alan Perlis
+
+Optimization hinders evolution.
+- Alan Perlis
+
+If a language doesn't affect the way you think about programming, it's not worth knowing.
+- Alan Perlis
+
+Simplicity does not precede complexity, but follows it.
+- Alan Perlis
+
+Just like entropy always increases, mean time to failure always decreases.
+- Alan Perlis, paraphrased
+
+Computer Science is embarrassed by the computer.
+- Alan Perlis
+
+I'm a 10x developer. That is it takes me 10x the amount of time to write the same amount of code as other people.
+- @BeardOps
+https://twitter.com/BeardOps/status/1091456027768250368
+
+Technology is anything that doesn't work quite yet.
+- Danny Hillis
+
+It’s hard to read through a book on the principles of magic without glancing at the cover periodically to make sure it isn’t a book on software design.
+—Bruce Tognazzini
+
+Programs must be written for people to read, and only incidentally for machines to execute.
+—Abelson and Sussman
+
+A language that doesn’t have everything is actually easier to program in than some that do.
+—Dennis Ritchie
+
+A designer can mull over complicated designs for months. Then suddenly the simple, elegant, beautiful solution occurs to them. When it happens to you, it feels as if God is talking! And maybe He is.
+—Leo Frankowski
+
+The tragedy of our time is that we’ve got it backwards, we’ve learned to love techniques and use people.
+—Herb Kelleher
+
+When I’m working on a problem, I never think about beauty. I think only how to solve the problem.
+
+But when I have finished, if the solution is not beautiful, I know it is wrong.
+—R. Buckminster Fuller
+
+Programmers spend the first 5 years of their career mastering complexity, and the rest of their lives learning simplicity.
+—Buzz Andersen
+
+Simplicity is the unavoidable price we must pay for reliability.
+—C.A.R. Hoare
+
+Don’t shoot yourself in the foot with a magic bullet.
+—Gerald Jay Sussman
+
+The paradox is that when managers focus on productivity, long-term improvements are rarely made. On the other hand, when managers focus on quality, productivity improves continuously.
+
+If you think good architecture is expensive, try bad architecture.
+—Brian Foote and Joseph Yoder
+
+Oftentimes, when trying to reinvent the wheel, you end up with a wheel. But there is a nice moment of 'huh, I guess that's why people just use wheels'... that process of justifying the standard is satisfying, if massively wasteful.
+- Mike Bithell
+
+The closer you try to get to perfect - latency, bugs, availability, etc - the more it costs you. You'll never get there. Pick a threshold you're ok with, and accept it.
+- Me
+
+If at first you don’t succeed, call it version 1.0.
+- Unknown
+
+Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius—and a lot of courage to move in the opposite direction.
+-E.F. Schumacher
+
+
+Technology brings us wonderment and annoyance, in roughly equal measures.
+- Bill Bonner
+
+-->
+
+> A programming language is low level when its programs require attention to the irrelevant.
+
+\- Alan Perlis
+
+> There is an old network saying: Bandwidth problems can be cured with money. Latency problems are harder because the speed of light is fixed. You can’t bribe God.
+
+\- Unknown
+
+> Peres's Law: If a problem has no solution, it may not be a problem, but a fact; not to be solved, but to be coped with over time.
+
+\- Shimon Peres
+
+> One programmer's constant is another programmer's variable.
+
+\- Alan Perlis
+
+> Code is like humor. When you have to explain it, it’s bad.
+
+\- Cory House
+
+> The only thing you will get from a Big Bang Rewrite is a big bang.
+
+\- Martin Fowler
+
+> The first step of any project is to grossly underestimate its complexity and difficulty.
+
+\- Nicoll Hunt
+
+> The trick is to fix the problem you have, rather than the problem you want.
+
+\- Bram Cohen
+
+> [Programming is like a “choose your own adventure game” except every path leads you to a StackOverflow question from 2013 describing the same bug, with no answer.](https://twitter.com/ppathole/status/1120660372267122689)
+
+\- Pranay Pathole
+
+> Of all the technical debt you can incur, the worst in my experience is bad names - database columns, variables, functions, etc. Fix those IMMEDIATELY before they metastasize all over your codebase and become extremely painful to fix later...and they always do.
+
+\- Jeff Atwood
+
+> [Betting on an apocalyptic future in every line of code - as if any assumption might break in the future - that is the path to immense developer productivity waste.](https://twitter.com/evolvable/status/1113031675796025347)
+
+\- Graham Lee, paraphrased
+
+> [It's amusing how hard it is to get computers to behave deterministically. I mean, they just had the one job.](https://twitter.com/aboodman/status/11217981787542732850)
+
+\- Aaron Boodman
+
+> [There is a rising tide of security breaches. There is an even faster rising tide of hysteria. Yet the world is doing remarkably well overall. This continuing general progress of society suggests that cyber security is not very important.](https://www.schneier.com/blog/archives/2019/03/an_argument_tha.html)
+
+\- Andrew Odlyzko
+
+> This stuff is really important. We don't want to swap the As and the Ts, that would be a real mess.
+
+\- NIH / All of Us
+
+> The cost of adding a feature isn’t just the time it takes to code it. It's also an obstacle to future expansion...The trick is to pick the features that don’t fight each other.
+
+\- John Carmack
+
+> First you listen to the users; then you ignore them.
+
+\- Ken Arnold
+
+> Why does a computer with 1000x faster processor and 100x more memory than 20 years ago still feel slower?
+> 
+> Our use of technology always expands to the very edge of its capacity. A thousand years from now, everyday technology will be just barely sufficient for the job.
+
+\- Jevon's Paradox (aka Wirth's law aka Page's law aka Gates's law aka May's law)
+
+
+> 1. Make it work.
+> 2. Make it right.
+> 3. Make it fast.
+
+\- Kent Beck
+
+> Old technology fails frequently, but in a reliable way. New technology fails less often, but when it fails, it fails in an unexpectedly new way we are not prepared for.
+
+\- Kevin Kelly
+
+> The key to performance is elegance, not battalions of special cases. The terrible temptation to tweak should be resisted unless the payoff is really noticeable.
+
+\- Jon Bentley and Doug McIlroy
+
+> Marie Kondo, but for source code. Line by line, does this spark joy? Delete, delete, delete. So long, and thanks for all the bugs.
+
+\- Ben Werdmüller
+
+> Don't solve a problem just because you can imagine it. Wait until there is a problem, then go after it. If you over-anticipate, you will design freedom out of the system.
+
+\- Stewart Brand
+
+> Matlab has normalized the practice of storing array indices as floats starting at 1.0, which now that I am used to it makes me think why bathe or brush my teeth? Why not start doing meth? Why bother at all?
+
+\- Seamus Blackley
+
+> Everything is broken.
+
+\- [Quinn Norton](https://medium.com/message/everything-is-broken-81e5f33a24e1), Bob Dylan, True Detective, and more...
+
+> People think that computer science is the art of geniuses but the actual reality is the opposite, just many people doing things that build on each other, like a wall of mini stones.
+
+\- Donald Knuth
+
+> Don't patch bugs out, rewrite them out.
+
+\- Unknown
+
+> [As a programmer, my core strengths have always been apologizing to users and composing funny tweets.](https://blog.pinboard.in/2013/04/the_matasano_crypto_challenges/)
+
+\- [Maciej Cegłowski](https://twitter.com/@pinboard)
+
+> Absence is beauty, in error logs.
+
+\- Leonard Bogdonoff
+
+> Civilization advances by extending the number of important operations which we can perform without thinking of them.
+
+\- Alfred North Whitehead
+
+> Load-bearing optimization, n.  
+>  
+> A performance-related change - for example, adding a cache - that accidentally becomes required for correctness.
+
+[- David Smith](https://twitter.com/Catfish_Man/status/735211223323578368)
+
+> It’s a curious thing about our industry: not only do we not learn from our mistakes, we also don’t learn from our successes.
+
+\- Keith Braithwaite
+
+> If you have error reporting and your team ignores it, you don't have error reporting.
+
+\- Graham Hoefer
+
+> Sometimes the problem is to discover what the problem is.
+
+\- Gordon Glegg
+
+> Code gets rewritten all the time. Don't get attached to it. The ideas are all that matter.
+
+\- Parisa Tabriz
+
+availability | downtime, per year | cost
+--- | --- | ---
+99.9 | 8.76h | $$,$$$
+99.99 | 52.6m | $$$,$$$
+99.999 | 5.25m | $,$$$,$$$
+99.9999 | 31.5s | you can't afford it
+
+\- Christopher Church ([tweet](https://twitter.com/layer_3/status/1019398179215872000))
+
+> `$ git rebase -i master`
+>
+> error: from the abyss the howls of the Old Ones devour the last shreds of your sanity.
+>
+> When you have resolved this error, use git rebase --continue
+
+\- Andrew Chatham ([tweet](https://twitter.com/Jumbosaur/status/1017125769871544320))
+
+> Testing leads to failure, and failure leads to understanding.
+
+\- [Burt Rutan](https://en.wikipedia.org/wiki/Burt_Rutan) (SpaceShipOne designer)
+
+> [You have a problem. You use a distributed system. Now you still have a problem, but you no longer know where.](https://twitter.com/llogiq/status/1010831210199777280)
+
+\- [@llogiq](https://twitter.com/@llogiq)
+
+> [Hyrum's Law](http://www.hyrumslaw.com/): With a sufficient number of users of an API, it does not matter what you promise in the contract: all observable behaviors will be depended on by somebody.
+
+\- Hyrum Wright; [obligatory XKCD](https://xkcd.com/1172/)
+
+> [Software engineering is what happens to computer programming when you add time and other programmers.](https://research.swtch.com/vgo-eng)
+
+\- Russ Cox and Titus Winters
+
+> [Programming is the art of knowing when to use google, when to ask for help, and when to go for a walk around the block.](https://twitter.com/dnscollective/status/412855470294962176)
+
+\-Dennis Collinson
+
+> Sometimes, the elegant implementation is just a function. Not a method. Not a class. Not a framework. Just a function.
+
+\- John Carmack
+
+> We sort of understood abstractly the idea that there are only two kinds of software projects: failures and future legacy horrors.
+
+\- Peter Weinberger
+
+> Walking on water and developing software from a specification are easy if both are frozen.
+
+\- Edward V. Berard
+
+> [Goodhart's Law: When a measure becomes a target, it ceases to be a good measure.](https://en.wikipedia.org/wiki/Goodhart%27s_law)
+
+\- Charles Goodhart
+
+> Walking on water and developing software from a specification are easy if both are frozen.
+
+\- Edward V Berard
+
+> No one in the brief history of computing has ever written a piece of perfect software. It's unlikely that you'll be the first.
+
+\- Andy Hunt
+
+> A primary cause of complexity is that software vendors uncritically adopt almost any feature that users want.
+
+\- Niklaus Wirth
+
+> The best programs are the ones written when the programmer is supposed to be working on something else.
+
+\- Melinda Varian
+
+
+> "Feral systems": Access databases, spreadsheets with macros, and other hacked solutions made out of frustration when current systems don't meet a need.
+
+[- Hadley Beeman](https://twitter.com/hadleybeeman/status/934867384577462274)
+
+> The trouble with programmers is that you can never tell what a programmer is doing until it’s too late.
+
+\- Seymour Cray
+
+> Measuring programming by lines of code is like measuring aircraft building by weight.
+
+\- Bill Gates
+
+> Rules of Optimization:  
+> Rule 1: Don't do it.  
+> Rule 2 (for experts only): Don't do it yet.
+
+\- Michael A. Jackson
+
+> CoffeeScript, Haml, Sass, all on top of me, holding me up psychologically for MONTHS.
+
+[- @erowidrecruiter](https://twitter.com/erowidrecruiter) (Markov-powered mashup of Erowid trip reports and tech recruiter emails)
+
+> Writing code is not an exercise in [ego].
+
+\- Mark Hahn
+
+> If you’ve been pounding nails with your forehead for years, it may feel strange the first time somebody hands you a hammer. But that doesn’t mean that you should strap the hammer to a headband just to give your skull that old familiar jolt.
+
+\- Wayne Throop
+
+> Junior developer: "I will just copy over this code to reuse it"  
+> Middle developer: "I will make it DRY with code sharing/inheritance/macros"  
+> Senior developer: "I will just copy over this code to reuse it"
+
+[- Hubert Lepicki](https://twitter.com/hubertlepicki/status/946725454043598849)
+
+> We are in the business of novel outages.
+
+[- Google SRE](https://cloudplatform.googleblog.com/2018/01/consequences-of-SLO-violations-CRE-life-lessons.html)
+
+> Unix was not designed to stop people from doing stupid things, because that would also stop them from doing clever things.
+
+\- Doug Gwyn
+
+> Twyman's Law: Any figure that looks interesting or different is usually wrong.
+
+\- Tony Twyman
+
+> As-builts are building plans that show in detail exactly what was built, which is always significantly different from what was in the original plans. Without accurate as-builts, says Chuck Charlton, “An electrical failure can have you wandering through the building shotgunning circuit breakers and shinnying down the chases.” ...If the as-builts aren’t updated constantly, each bit of repair or remodeling, each new contractor, each change of property management makes the plans more misleading.
+
+\- Stewart Brand, How Buildings Learn
+([see my full presentation](https://docs.google.com/presentation/d/1GHzBeK7_BDfxHRkmkeXR5bcwTcR94-fcdqFptvAEo7I/edit))
+
+> We live in a society exquisitely dependent on science and technology, in which hardly anyone knows anything about science and technology.
+
+\- Carl Sagan
+
+> Give someone a program, you frustrate them for a day. Teach them how to program, you frustrate them for a lifetime.
+
+\- David Leinweber
+
+> I call it my billion-dollar mistake. It was the invention of the null reference in 1965.
+
+\- Tony Hoare
+
+> Every technology, when sufficiently complicated, becomes programmable.
+
+[- Kenton Varda](https://blog.cloudflare.com/introducing-cloudflare-workers/)
+
+> Compatibility means deliberately repeating other people's mistakes.
+
+\- David Wheeler
+
+> If the code and the comments disagree, both are probably wrong.
+
+\- Norm Schryer
+
+> Debugging is like being the detective in a crime movie where you are also the murderer.
+
+\- Filipe Fortes
+
+> You don't pay engineers to write code, you pay them to understand problems, subtleties, and edges. The code is incidental.
+
+\- Ted Dziuba
+
+> Given sufficient abstraction, every problem becomes hard.
+
+[- @ericlaw](https://twitter.com/ericlaw)
+
+corollary:
+> Given sufficient abstraction, every problem becomes every problem.
+
+[- @mikemiles86](https://twitter.com/mikemiles86)
+
+> Technology...is a queer thing. It brings you great gifts with one hand, and it stabs you in the back with the other.
+
+\- C. P. Snow
+
+> We're trying to change the Kleenex mentality of technology - you buy a smartband or an Android Wear watch and next year you'll throw it away...We need to create objects that are worth keeping and upgrading.
+
+\- Philippe Kahn
+
+> Any sufficiently advanced magic is indistinguishable from technology.
+
+\- unknown (apocryphal Larry Niven, Terry Pratchett; note inversion of Arthur C Clarke's law!)
+
+> Technology is the knack of so arranging the world that we don't have to experience it.
+
+\- Max Frisch
+
+> Productivity and reliability depend on the length of the program text, independent of language. You will produce roughly the same number of lines of code in assembly, per hour, as in Ruby or Scheme or Perl.
+
+\- Lutz Prechelt (based on actual research studies)
+
+> Any problem can be solved by adding a layer of indirection...but where network engineering is involved, it's more effective to just stuff it into DNS.
+
+\- Geoff Huston
+
+> A week of coding can save an hour of thinking.
+
+\- unknown
+
+> All technology should be assumed guilty until proven innocent.
+
+\- Jerry Mander
+
+> Engineering is what happens when you take science and economics and try to put them together.
+
+\- Greg Wilson
+
+> Why do engineers seem like such different people? We live every day in a world where one misplaced character brings the whole world crashing down around us.
+
+\- unknown
+
+> “Write code that’s easy to delete, not easy to extend.”
+
+[- Ben Nadel](https://twitter.com/BenNadel/status/831535012075937792)
+
+> The experienced CTO does not feel guilty about technical debt. What counts is how (and how much) they deal with it.
+
+[- via Colin Vernon](https://medium.engineering/@stresslimit)
+
+> 1995: Every object in your home has a clock & it is blinking 12:00  
+> 2025: Every object in your home has a IP address & the password is Admin
+
+[- @mcclure111](https://twitter.com/mcclure111/status/688775402584731649)
+
+> \[Software\] is never finished, only abandoned.
+
+\- Leonardo da Vinci
+
+> An action or resource should either not be permitted (zero), happen uniquely (one), or have no arbitrary limit at all (infinity).
+
+\- Willem van der Poel
+
+> Manual until it hurts.
+
+\- Ryan, re automation
+
+> Software is not an academic discipline, not a liberal art. It’s a craft. And the only way to learn craftsmanship is to apprentice.
+
+[- Nelson Minar](http://www.somebits.com/weblog/tech/reed-college-software-development-lab.html)
+
+> At 9:37AM PST, an authorized S3 team member using an established playbook executed a command...one of the inputs to the command was entered incorrectly...
+
+[- 2/27 S3 outage postmortem](https://aws.amazon.com/message/41926/)
+
+> "The road of life is paved with flat squirrels who couldn't make a decision."
+
+\- Anonymous (via MSK)
+
+> Most papers in computer science describe how their author learned what someone else already knew.
+
+\- Peter Landin
+
+> You cannot release crap. There are companies that do this and end up making a tidy profit. You are not that person, because once you are rewarded for releasing crap, you begin a blind walk down a path of mediocrity that ends up with you working at Computer Associates on a product no one has heard of and that no one cares about.
+
+\- [Michael Lopp](http://randsinrepose.com/), [_Managing Humans_](https://books.google.com/books?id=T8C-DAAAQBAJ)
+
+> BUG REPORT: I’ve written hundreds of great tweets and bad things are still happening.
+
+[- Avery Edison](https://twitter.com/aedison/status/824726511651553280)
+
+> Rules of abstraction:
+> 1. Don't use abstraction
+> 2. Don't use abstraction
+> 3. Only consider abstraction when you see at least three things that ARE the same
+> 4. All abstractions must pay for themselves
+> 5. Beware DRY, the evil siren that tricks you into abstraction
+
+\- [Martin Thompson](https://github.com/odsod/notes/blob/master/talks/2016-01-24-designing-for-performance.md#abstractions)
+
+> In the beginning, the first programmer wrote code from scratch.  
+> Henceforth, all code was copied, pasted, and modified.
+
+\- Programmer's Bible, Code Psalms 12:56-57
+
+> Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.
+― Jalaluddin Rumi
+
+> Have no fear of perfection.  You'll never reach it.
+
+\- Salvador Dali (via MSK)
+
+> My job is to copy data from one protocol buffer to another.
+
+\- ancient Google proverb
+
+> Anything from before you were born is normal and natural.
+> Anything invented between when you were 15 and 35 is revolutionary and exciting.
+> Anything invented after you’re 35 is against the natural order.
+
+\- Douglas Adams
+
+> \[Looking at dependencies...\]  
+> Wait, my code depends on what?
+
+\- ancient Google proverb
+
+> Technical mistakes can and will be corrected with a strong community, but not the other way around.
+
+\- Yehuda Katz (via zack)
+
+> Code wants to be broken.
+
+\- Noam Ben-Ami, [Quora: "Why is coding so hard?"](https://www.quora.com/Why-is-coding-so-hard)
+
+> Talent hits a target no one else can hit. Genius hits a target no one else can see.
+
+\- Arthur Schopenhauer (via Othman)
+
+> The question of whether machines can think is about as relevant as the question of whether submarines can swim.
+
+\- Edsger Dijkstra
+
+> I love deadlines. I love the whooshing noise they make as they go by.
+
+\- Douglas Adams
+
+> When a computer receives conflicting instructions from its owner and a third party, the owner should always win.
+
+\- Cory Doctorow, re DRM
+
+> Object-oriented programming is an exceptionally bad idea which could only have originated in California.
+
+\- Edsger W. Dijkstra
+
+> We are stuck with technology when what we really want is just stuff that works.
+
+\- Douglas Adams
+
+> Computer Science is no more about computers than astronomy is about telescopes.
+
+[- Edsger Dijkstra?](https://en.wikiquote.org/wiki/Computer_science#Disputed)
+
+> The Programmers’ Credo: we do these things not because they are easy, but because we thought they were going to be easy.
+
+[- Maciej Cegłowski](https://twitter.com/Pinboard/status/761656824202276864)
+
+> A good scientist has original ideas. A good engineer makes designs with as few original ideas as possible.
+
+\- Freeman Dyson
+
+> Should array indices start at 0 or 1? My compromise of 0.5 was rejected without, I thought, proper consideration.
+
+[— Stan Kelly-Bootle](http://exple.tive.org/blarg/2013/10/22/citation-needed/)
+
+> Einstein argued that there must be simplified explanations of nature, because God is not capricious or arbitrary. No such faith comforts the software engineer.
+
+\- Fred Brooks
+
+> In computer science, we're privileged to run elbows with the giants on whose shoulders we stand.
+
+via [@zooko](https://twitter.com/zooko)
+
+> I define UNIX as 30 definitions of regular expressions living under one roof.
+
+\- Donald Knuth
+
+> The best minds of my generation are thinking about how to make people click ads.
+
+\- Jeff Hammerbacher
+
+> Defenders have to be right every time. Attackers only have to be right once.
+
+\- Unknown
+
+> A distributed system is one in which the failure of a computer you didn't even know existed can render your own computer unusable.
+
+\- Leslie Lamport
+
+> Beware of bugs in the above code; I have only proved it correct, not tried it.
+
+\- Donald Knuth
+
+> In my experience, all distributed consensus algorithms are either 1: paxos, 2: paxos with extra unnecessary cruft, or 3: broken.
+
+\- Mike Burrows
+
+> We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil.
+
+[- Donald Knuth (apocryphal: C.A.R Hoare)](https://shreevatsa.wordpress.com/2008/05/16/premature-optimization-is-the-root-of-all-evil/)
+
+> All code is liability.
+
+\- Peter Norvig
