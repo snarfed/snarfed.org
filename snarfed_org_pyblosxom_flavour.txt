@@ -4,15 +4,15 @@ snarfed.org PyBlosxom flavour
 <p class="right"><a class="shutter" href="/snarfed_flavour_screenshot.jpg">
   <img class="shadow" src="/snarfed_flavour_screenshot_thumb.jpg" /></a></p>
 
-[PyBlosxom](http://snipsnap.org/), the server that <strike>runs</strike> used to
+[PyBlosxom](https://pyblosxom.github.io/), the server that <strike>runs</strike> used to
 run this site, supports
-[flavours](http://pyblosxom.bluesock.org/blog/registry/flavours?sortby=path).
+[flavours](https://pyblosxom.github.io/registry/flavours?sortby=path).
 They change your PyBlosxom site's appearance, using
-[templates](http://pyblosxom.bluesock.org/1.3.1/manual/c224.html#AEN235),
+[templates](https://pyblosxom.github.io/Documentation/1.3.1/manual/c224.html#AEN235),
 [CSS](http://www.w3.org/Style/CSS/), images, and other files, without changing
 its content. There's a
-[longer description](http://pyblosxom.bluesock.org/1.3.1/manual/c224.html) on the
-[PyBlosxom site](http://pyblosxom.bluesock.org/).
+[longer description](https://pyblosxom.github.io/Documentation/1.3.1/manual/c224.html) on the
+[PyBlosxom site](https://pyblosxom.github.io/).
 
 The snarfed.org flavour is [available for download](/snarfed_flavour.tar.gz).
 To try it out on your site,

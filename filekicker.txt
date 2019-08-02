@@ -5,10 +5,10 @@ filekicker
 
 For the impatient:  
 &nbsp; [Download filekicker 0.2](/filekicker.py)  
-&nbsp; [PyBlosxom home page](http://pyblosxom.bluesock.org/)  
-&nbsp; [PyBlosxom plugin registry](http://pyblosxom.bluesock.org/blog/registry?sortby=path)  
+&nbsp; [PyBlosxom home page](https://pyblosxom.github.io/)  
+&nbsp; [PyBlosxom plugin registry](https://pyblosxom.github.io/registry?sortby=path)  
 
-[Filekicker](/filekicker.py) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
+[Filekicker](/filekicker.py) is a [PyBlosxom](https://pyblosxom.github.io/)
 plugin that serves static files. The file to serve is determined by the URL
 path and the `datadir` configuration option. The MIME type is inferred from the
 file's extension.
@@ -26,10 +26,10 @@ if it exists, with the MIME type `video/quicktime`. If it doesn't exist,
 filekicker will let pyblosxom handle the request.
 
 Filekicker is different from, but related to, plugins such as
-[pystaticfile](http://pyblosxom.bluesock.org/blog/registry/files/pystaticfile),
-[pyinclude](http://pyblosxom.bluesock.org/blog/registry/include/pyinclude),
+[pystaticfile](https://pyblosxom.github.io/registry/files/pystaticfile),
+[pyinclude](https://pyblosxom.github.io/registry/include/pyinclude),
 and
-[imagekicker](http://pyblosxom.bluesock.org/blog/registry/display/graphics/imagekicker).
+[filekicker](https://pyblosxom.github.io/registry/files/filekicker).
 It's basically a generalization of imagekicker, which inspired its name.
 
 Filekicker is copyright 2006 [Ryan Barrett](/about), and is distributed

@@ -5,7 +5,7 @@ OpenID comments
 
 A while back, I posted an
 [OpenID server plugin](/2006-10-20_openid_server_for_pyblosxom) for
-[PyBlosxom](http://pyblosxom.bluesock.org/), the software that <strike>runs</strike>
+[PyBlosxom](https://pyblosxom.github.io/), the software that <strike>runs</strike>
 used to run this site.
 
 Since then, I've added support for

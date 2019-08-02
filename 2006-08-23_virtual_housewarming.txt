@@ -2,7 +2,7 @@
 Virtual Housewarming
 
 <a href="http://pair.com/"><img src="/pair.com.jpg"></a>
-<a href="http://pyblosxom.bluesock.org/"><img src="/pyblosxom.jpg"></a>
+<a href="https://pyblosxom.github.io/"><img src="/pyblosxom.jpg"></a>
 <a href="http://httpd.apache.org/"><img src="/apache.jpg"></a>
 
 You've probably noticed that [snarfed](/) and
@@ -14,7 +14,7 @@ over. :/
 
 So, after putting it off for the better part of a year, I finally migrated to a
 new hosting company, [pair.com](http://pair.com/), and a new server,
-[PyBlosxom](http://pyblosxom.bluesock.org) on [Apache](http://httpd.apache.org/).
+[PyBlosxom](https://pyblosxom.github.io) on [Apache](http://httpd.apache.org/).
 
 I considered a few other hosting companies, specifically
 [Dreamhost](http://dreamhost.com/) and [1&1](http://1and1.com/). In particular,

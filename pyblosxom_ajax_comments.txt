@@ -11,12 +11,12 @@ of the contrib pack._
 
 For the impatient:  
 &nbsp; [Download contrib pack 1.3.3](http://sourceforge.net/project/showfiles.php?group_id=67445&package_id=145140&release_id=489295) (includes AJAX support)  
-&nbsp; [PyBlosxom home page](http://pyblosxom.bluesock.org/)  
-&nbsp; [PyBlosxom plugin registry](http://pyblosxom.bluesock.org/blog/registry?sortby=path)
+&nbsp; [PyBlosxom home page](https://pyblosxom.github.io/)  
+&nbsp; [PyBlosxom plugin registry](https://pyblosxom.github.io/registry?sortby=path)
 
-[PyBlosxom](http://pyblosxom.bluesock.org/), the server software that
+[PyBlosxom](https://pyblosxom.github.io/), the server software that
 <strike>runs</strike> used to run this site, uses a
-[plugin](http://pyblosxom.bluesock.org/blog/registry/input/comments) to
+[plugin](https://pyblosxom.github.io/registry/comments/comments) to
 handle commenting. This patch adds
 [AJAX](http://en.wikipedia.org/wiki/Ajax_\(programming\)) support to that
 plugin.

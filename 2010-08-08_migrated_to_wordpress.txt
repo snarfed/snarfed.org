@@ -6,7 +6,7 @@ Migrated to WordPress
   <img src="/wordpress.png" alt="wordpress" /></a></p>
 
 This site, [snarfed.org](/), has been running happily on
-[PyBlosxom](http://pyblosxom.bluesock.org/) for the
+[PyBlosxom](https://pyblosxom.github.io/) for the
 [last four years](/2006-08-23_virtual_housewarming). PyBlosxom has been great,
 and I've been happy to use it and
 [even](/pyblosxom_history)
@@ -29,7 +29,7 @@ when my site saw a traffic spike, the server's CPU load would spike too.
 and it occasionally made them unhappy enough that they'd
 [clobber my PyBlosxom CGI script](/2009-02-24_back).
 
-<a href="http://pyblosxom.bluesock.org/">
+<a href="https://pyblosxom.github.io/">
   <img class="left" src="/pyblosxom.jpg" alt="pyblosxom" /></a>
 
 So, with a heavy heart, I started looking around for an alternative. I wanted

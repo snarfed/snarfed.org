@@ -56,7 +56,7 @@ and back again, but that's ok. I've put it through
 >
 > On the software side, it started on [SnipSnap](http://snipsnap.org/), then
 > [moved](/2006-08-23_virtual_housewarming) to
-> [PyBlosxom](http://pyblosxom.bluesock.org/), and
+> [PyBlosxom](https://pyblosxom.github.io/), and
 > [now runs](/2010-08-08_migrated_to_wordpress) on
 > [WordPress](http://wordpress.org/), first on
 > [its own theme](/snarfed_wordpress_theme) and now on a

@@ -2,13 +2,13 @@
 pyblosxom2wxr
 
 <p class="right">
-<a href="http://pyblosxom.bluesock.org/"><img src="/pyblosxom.jpg"></a>
+<a href="https://pyblosxom.github.io/"><img src="/pyblosxom.jpg"></a>
 <br />
 <a href="http://wordpress.org/"><img src="/wordpress.png"></a>
 </p>
 
 [pyblosxom2wxr.sh](/pyblosxom2wxr.sh) is a shell script that migrates content
-from [PyBlosxom](http://pyblosxom.bluesock.org/) to
+from [PyBlosxom](https://pyblosxom.github.io/) to
 [WordPress](http://wordpress.org/). It converts PyBlosxom posts and comments
 into a [WXR](http://wordpress.org/tags/wxr) (WordPress eXtensible RSS) file that
 can be [imported](http://codex.wordpress.org/Importing_Content#WordPress) into
@@ -30,7 +30,7 @@ Notes:
     be blank. If your files don't follow that format, you'll want to preprocess
     them or tweak the script.
 
-  * [Categories](http://pyblosxom.bluesock.org/1.5/writing_entries.html#categories)
+  * [Categories](https://pyblosxom.github.io/1.5/writing_entries.html#categories)
     are not (yet) supported. All posts and pages are assigned to the "uncategorized"
     category in WordPress.
 
@@ -40,7 +40,7 @@ Notes:
 
   * By default, the last modified time of post and page files is used as their
     timestamp. However, if you have a `timestamps` file from the
-    [hardcodedates](http://pyblosxom.bluesock.org/registry/date/HardCodeDates.html)
+    [hardcodedates](https://pyblosxom.github.io/registry/date/HardCodeDates.html)
     PyBlosxom plugin, it will be used instead. The default path is
     `../timestamp`; you can customize this by editing the `timestamp_file`
     variable in the script.

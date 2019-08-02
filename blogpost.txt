@@ -19,7 +19,7 @@ Before you use `blogpost.sh`, you'll need to configure it by changing the
 `WORKSPACE`, `BLOGPOST`, and `POST_RE` variables at the top of the script to
 match your post files. Also, note that it expects the first line of your post
 files to be the title, and the second line to be blank, a la
-[PyBlosxom](http://pyblosxom.bluesock.org/).
+[PyBlosxom](https://pyblosxom.github.io/).
 
 `blogpost.sh` has gone through a few iterations. I used to store my post files
 in [Subversion](http://subversion.tigris.org/)

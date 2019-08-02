@@ -2,10 +2,10 @@
 extract compacted PyBlosxom comments
 
 <p class="right">
- <a href="http://pyblosxom.bluesock.org/">
+ <a href="https://pyblosxom.github.io/">
   <img src="/pyblosxom.jpg" /></a></p>
 
-If you use [PyBlosxom](http://pyblosxom.bluesock.org/),
+If you use [PyBlosxom](https://pyblosxom.github.io/),
 and you use
 [compact_comments.sh](http://gitorious.org/pyblosxom/pyblosxom-contrib/blobs/master/plugins/comments/plugins/compact_comments.sh)
 to compact your comment files, and you ever need to reverse the process to

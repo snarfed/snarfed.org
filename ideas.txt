@@ -122,17 +122,17 @@ date or officially deprecated and removed.
 `--convert-links` from playing nicely together.
 
   * Write an [OpenID](http://openid.net/) plugin for
-[PyBlosxom](http://pyblosxom.bluesock.org/). **Done! See
+[PyBlosxom](https://pyblosxom.github.io/). **Done! See
 [OpenID server plugin for PyBlosxom](/pyblosxom_openid_server).**
 
   * Write a [Google Ajax Search API](http://code.google.com/apis/ajaxsearch/)
-plugin for [PyBlosxom](http://pyblosxom.bluesock.org/). **Done! See
+plugin for [PyBlosxom](https://pyblosxom.github.io/). **Done! See
 [site search with the Google AJAX Search API](/site_search_with_the_Google_AJAX_Search_API).**
 
   * Add support for
-[comments](http://pyblosxom.bluesock.org/blog/registry/input/comments) to the
+[comments](https://pyblosxom.github.io/registry/comments/comments) to the
 [photogallery](/photogallery) plugin for
-[PyBlosxom](http://pyblosxom.bluesock.org/).
+[PyBlosxom](https://pyblosxom.github.io/).
 
   * Phone transcripts! Record all of your phone conversations, then transcribe
 them with speech recognition. Bonus points: index the transcripts and allow

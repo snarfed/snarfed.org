@@ -6,15 +6,13 @@ history.py
 For the impatient:  
 &nbsp; Download [history.py 0.5](/history.py)  
 &nbsp; Download [history-0.5.tar.gz](/history-0.5.tar.gz) (includes templates)  
-&nbsp; [PyBlosxom home page](http://pyblosxom.bluesock.org/)  
-&nbsp; [PyBlosxom plugin registry](http://pyblosxom.bluesock.org/registry/)  
+&nbsp; [PyBlosxom home page](https://pyblosxom.github.io/)  
+&nbsp; [PyBlosxom plugin registry](https://pyblosxom.github.io/registry/)  
 &nbsp; [svnpyblosxom](http://www.baus.net/svnpyblosxom)
   ([simplified](http://0pointer.de/blog/projects/pyblosxom-svn.html)),
   a related plugin  
 
-*Updated 2009-02-24.*
-
-[history.py](/history.py) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
+[history.py](/history.py) is a [PyBlosxom](https://pyblosxom.github.io/)
 plugin that displays change history for entries. The change history must
 already exist, either in a version control system, database, or another form.
 This plugin just uses that backend to display change history, previous

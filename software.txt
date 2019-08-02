@@ -135,7 +135,7 @@ feature.
 * [openid-test](http://code.google.com/p/openid-test/) is an
     interoperability test suite for [OpenID](http://openid.net/).
 
-* [PyBlosxom](http://pyblosxom.bluesock.org/) is a lightweight weblog
+* [PyBlosxom](https://pyblosxom.github.io/) is a lightweight weblog
 platform, based on [Blosxom](http://blosxom.com/) and written in Python.
 
 * An [OpenID comments plugin for PyBlosxom](/pyblosxom_openid_comments).
@@ -144,16 +144,16 @@ platform, based on [Blosxom](http://blosxom.com/) and written in Python.
 
 * [AJAX site search with the Google AJAX Search API](/site_search_with_the_Google_AJAX_Search_API).
 
-* [index](/pyblosxom_index) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
+* [index](/pyblosxom_index) is a [PyBlosxom](https://pyblosxom.github.io/)
 plugin that displays an alphabetical index of all entries.
 
-* [history](/pyblosxom_history) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
+* [history](/pyblosxom_history) is a [PyBlosxom](https://pyblosxom.github.io/)
 plugin that displays change history for entries.
 
-* [photogallery](/photogallery) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
+* [photogallery](/photogallery) is a [PyBlosxom](https://pyblosxom.github.io/)
 plugin that displays photo galleries.
 
-* [hardcodedates](/hardcodedates) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
+* [hardcodedates](/hardcodedates) is a [PyBlosxom](https://pyblosxom.github.io/)
 plugin that stores mtimes in a file.
 
 * An [RDF flavour](/pyblosxom_rdf_flavour) for Pyblosxom.
@@ -161,7 +161,7 @@ plugin that stores mtimes in a file.
 * The [snarfed.org PyBlosxom flavour](/snarfed_org_pyblosxom_flavour), which
 looks like this site.
 
-* [Filekicker](/filekicker) is a [PyBlosxom](http://pyblosxom.bluesock.org/)
+* [Filekicker](/filekicker) is a [PyBlosxom](https://pyblosxom.github.io/)
 plugin that serves static files.
 
 * [Fillcode](/fillcode) is an [Emacs](http://gnu.org/software/emacs/)
@@ -243,7 +243,7 @@ email account.
 stored in the database from one WordPress instance to another.
 
 * [pyblosxom2wxr.sh](/pyblosxom2wxr) is a shell script that migrates content
-from [PyBlosxom](http://pyblosxom.bluesock.org/) to
+from [PyBlosxom](https://pyblosxom.github.io/) to
 [WordPress](http://wordpress.org/).
 
 * [unixify.sh](/unixify) is a simple shell script I use to sanitize

@@ -2,22 +2,22 @@
 Back!
 
 <a href="http://pair.com/"><img src="/pair.com.jpg"></a>
-<a href="http://pyblosxom.bluesock.org/"><img src="/pyblosxom.jpg"></a>
+<a href="https://pyblosxom.github.io/"><img src="/pyblosxom.jpg"></a>
 <a href="http://httpd.apache.org/"><img src="/apache.jpg"></a>
 
 We're back up! Sorry for the inconvenience, and thanks for your patience.
 
 What happened? In short, my [hosting provider](http://pair.com/) disabled my
-[PyBlosxom](http://pyblosxom.bluesock.org/) CGI script, which
+[PyBlosxom](https://pyblosxom.github.io/) CGI script, which
 <strike>runs</strike> used to run this site. It was using too much CPU on my
 server ([ambym](http://ambym.pair.com/)) for sustained periods of time, due to a
 combination of [comment and referrer spam](/referrer_spam) storms and
-[inefficient](http://pyblosxom.bluesock.org/registry/input/comments/comments.html)
+[inefficient](https://pyblosxom.github.io/registry/comments/comments)
 [plugins](/pyblosxom_history), and it was impacting other sites. I may not have
 liked that they turned me off, but it was only reasonable.
 
 In the short term, I blocked a bunch of spammer IP addresses and optimized the
-[comments](http://pyblosxom.bluesock.org/registry/input/comments/comments.html)
+[comments](https://pyblosxom.github.io/registry/comments/comments)
 and [history](/pyblosxom_history) plugins. In the long term, I'd love to
 use either [FastCGI](http://fastcgi.com/) or [WSGI](http://wsgi.org/wsgi/) to avoid
 the cost of starting up the python interpreter, loading all of the modules, and

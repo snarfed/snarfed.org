@@ -12,7 +12,7 @@ I've just posted [snipsnap2svn](/snipsnap2svn), an
 with change history, so they can be imported into a Subversion repository.
 This allows you to use Subversion to examine your snips' change history,
 experiment with alternative SnipSnap storage backends, or migrate from
-SnipSnap to another CMS, such as [PyBlosxom](http://pyblosxom.bluesock.org/).
+SnipSnap to another CMS, such as [PyBlosxom](https://pyblosxom.github.io/).
 
 Now that I've [migrated to PyBlosxom](/2006-08-23_virtual_housewarming), I plan to use
 snipsnap2svn to import my site's change history from SnipSnap so it will be
