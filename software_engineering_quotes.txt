@@ -29,15 +29,11 @@ upcoming
 
 TODO: ESR's unix zen koans
 
-If software cannot be maintained, then it will be rewritten.
-- Dave Cheney
-
 To err is human; to manage error is system.
 - Kevin Kelly
 
 It is easier to write an incorrect program than to understand a correct one.
 - Alan Perlis
-
 
 If you have a procedure with 10 parameters, you probably missed some.
 - Alan Perlis
@@ -121,6 +117,10 @@ Technology brings us wonderment and annoyance, in roughly equal measures.
 - Bill Bonner
 
 -->
+
+> If software cannot be maintained, then it will be rewritten.
+
+\ - Dave Cheney
 
 > A programming language is low level when its programs require attention to the irrelevant.
 
