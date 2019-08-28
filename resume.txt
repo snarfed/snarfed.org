@@ -23,17 +23,17 @@ Engineering. Server and storage system, data model, synchronization protocol, [w
  <a href="https://google.com/">
   <img src="/google_logo_1999.png" /></a></p>
 
-#### [Google](http://www.google.com/), 2003 - 2013
+#### [Google](https://www.google.com/), 2003 - 2013
 
 _Senior Staff Engineer_
 
-Co-founded [Google App Engine](http://code.google.com/appengine/) and led its [datastore](http://code.google.com/appengine/docs/datastore/overview.html) engineering team. The datastore is a very large scale, [multi-homed](http://googleappengine.blogspot.com/2009/09/migration-to-better-datastore.html) [NoSQL](http://en.wikipedia.org/wiki/NoSQL) database. At the end of my tenure, it stored >XXXB rows, >XXXPB of data, and served >XXXk[qps](http://en.wikipedia.org/wiki/Queries_per_second). (2005 - 2010)
+Co-founded [Google App Engine](https://cloud.google.com/appengine/) and led its [datastore](https://cloud.google.com/firestore/) engineering team, which eventually led to the [Google Cloud](https://cloud.google.com/) business and product suite. The datastore is a very large scale, [multi-homed](https://googleappengine.blogspot.com/2009/09/migration-to-better-datastore.html) [NoSQL](http://en.wikipedia.org/wiki/NoSQL) database. At the end of my tenure, it stored >XXXB rows, >XXXPB of data, and served >XXXk[qps](http://en.wikipedia.org/wiki/Queries_per_second). (2005 - 2010)
 
-Helped design and build [company-wide personalization infrastructure](http://googleblog.blogspot.com/2012/01/updating-our-privacy-policies-and-terms.html). Implemented a piece of it (in [Go](http://golang.org/)) that handled 500kqps by the end of my tenure. (2011 - 2013)
+Helped design and build [company-wide personalization infrastructure](https://googleblog.blogspot.com/2012/01/updating-our-privacy-policies-and-terms.html). Implemented a piece of it (in [Go](https://golang.org/)) that handled 500kqps by the end of my tenure. (2011 - 2013)
 
-Led and contributed to network management projects for Google's backbone network [AS15169](http://www.peeringdb.com/view.php?asn=15169), including command and control, monitoring, automation, topology, routing, peering, [and OpenFlow](http://www.wired.com/wiredenterprise/2012/04/going-with-the-flow-google/). (2010 - 2011)
+Led and contributed to network management projects for Google's backbone network [AS15169](https://www.peeringdb.com/view.php?asn=15169), including command and control, monitoring, automation, topology, routing, peering, [and OpenFlow](https://www.wired.com/wiredenterprise/2012/04/going-with-the-flow-google/). (2010 - 2011)
 
-Led Google's early use of [OpenID](http://openid.net/). Evangelized to stakeholders, [built](/2007-12-02_openid_comments_in_blogger) [and coordinated](http://bloggerindraft.blogspot.com/2008/01/new-feature-blogger-as-openid-provider.html) [multiple](http://openid-provider.appspot.com/) [integrations](http://openid-consumer.appspot.com/), and drove internal adoption that culminated in a full Google Accounts [provider](https://developers.google.com/accounts/docs/OpenID) and consumer. (2006)
+Led Google's early use of [OpenID](https://openid.net/). Evangelized to stakeholders, [built](/2007-12-02_openid_comments_in_blogger) [and coordinated](https://blogger.googleblog.com/2007/12/openid-commenting.html) [multiple](https://openid-provider.appspot.com/) [integrations](https://openid-consumer.appspot.com/), and drove internal adoption that culminated in a full Google Accounts [provider](https://developers.google.com/identity/protocols/OpenIDConnect) and consumer. (2006)
 
 Co-founded Google's transaction processing platform and led its storage engineering team. The platform handles OLTP, rating, billing, invoicing, payments, and revenue share. At the end of my tenure, it served >XXM customers, >XB transactions per day, and >XXkqps with 99.98% uptime. (2003 - 2006)
 
@@ -42,15 +42,15 @@ Co-founded Google's transaction processing platform and led its storage engineer
  <a href="https://www.ibm.com/">
   <img src="/ibm_logo.png" /></a></p>
 
-#### [IBM Almaden Research Center](http://almaden.ibm.com/), 2002 - 2003
+#### [IBM Research - Almaden](http://research.ibm.com/labs/almaden/), 2002 - 2003
 
-[Extreme Blue](http://www.ibm.com/extremeblue/) intern, then research engineer. Helped design and build a collaboration and visualization platform for molecular biologists. Also developed a parallel computing system for running molecular analyses and simulations on large server clusters.
+[Extreme Blue](https://www.ibm.com/employment/extremeblue/) intern, then research engineer. Helped design and build a collaboration and visualization platform for molecular biologists. Also developed a parallel computing system for running molecular analyses and simulations on large server clusters.
 
 
 <hr />
 
 
-Multiple [talks](/talks) and open source [projects](/software) and [contributions](https://github.com/snarfed/). Notable projects include [Bridgy](https://www.brid.gy/), [granary](http://granary.io/), [ActivityStreams](http://activitystrea.ms/)/[OStatus](http://www.w3.org/community/ostatus/), [OpenID](http://openid.net/), [Emacs](http://gnu.org/software/emacs/), [WordPress](/2010-08-08_migrated_to_wordpress), [Pine](http://www.washington.edu/pine/)/[Alpine](http://www.washington.edu/alpine/), [tcsh](http://www.tcsh.org/), and [Pidgin](http://pidgin.im/).
+Multiple [talks](/talks) and open source [projects](/software) and [contributions](https://github.com/snarfed/). Notable projects include [Bridgy](https://www.brid.gy/), [granary](https://granary.io/), [ActivityStreams](https://activitystrea.ms/)/[OStatus](https://www.w3.org/community/ostatus/), [OpenID](https://openid.net/), [Emacs](https://gnu.org/software/emacs/), [WordPress](/2010-08-08_migrated_to_wordpress), [Pine](https://en.wikipedia.org/wiki/Pine_(email_client))/[Alpine](https://en.wikipedia.org/wiki/Alpine_(email_client)), [tcsh](https://www.tcsh.org/), and [Pidgin](https://pidgin.im/).
 
 
 <hr />
@@ -60,7 +60,7 @@ Multiple [talks](/talks) and open source [projects](/software) and [contribution
  <a href="https://www.stanford.edu/">
   <img src="/stanford_logo.png" /></a></p>
 
-#### [Stanford University](http://www.stanford.edu/), 1998 - 2003
+#### [Stanford University](https://www.stanford.edu/), 1998 - 2003
 
 _MS Computer Science_  
 _BS Computer Science, Mathematics minor_
@@ -68,13 +68,11 @@ _BS Computer Science, Mathematics minor_
 Coursework: networking, distributed systems, security, streaming algorithms, advanced databases, operating systems, C/C++, Java, graphics, discrete math, abstract algebra.
 
 
-[LucasArts Entertainment](http://www.lucasarts.com/), Software Engineer
-intern, 2001
+[LucasArts Entertainment](https://en.wikipedia.org/wiki/LucasArts), Software Engineer intern, 2001
 
-[Webvan Group](http://www.disobey.com/ghostsites/show_exhibit.shtml/webvan),
-Software Engineer intern, 2000
+[Webvan Group](https://en.wikipedia.org/wiki/Webvan), Software Engineer intern, 2000
 
-[Electronic Arts](http://www.ea.com/), QA Tester, 1999
+[Electronic Arts](https://www.ea.com/), QA Tester, 1999
 
 MobileForce Technologies, Software Engineer intern, 1998
 
@@ -88,11 +86,11 @@ MobileForce Technologies, Software Engineer intern, 1998
 
 * Wilkerson, Barrett, et al. _Distributed Transactions for Google App Engine: Optimistic Distributed Transactions built upon Local Multi-Version Concurrency Control._ [Computing Research Repository, June 2011](https://dblp.uni-trier.de/db/journals/corr/corr1106.html), [arXiv:1106.3325](https://arxiv.org/abs/1106.3325), [blog post](/app-engine-global-transactions).
 
-* _[Transactions Across Datacenters](/2009-02-16_transactions_across_datacenters)._ [Special Lecture Series in Computer Science](http://web.cs.usfca.edu/courses), [University of San Francisco](http://usf.edu/), Feb. 12 2009; Google I/O, May 27 2009. [Citations](https://scholar.google.com/scholar?cites=17563833329981092665&as_sdt=2005&sciodt=0,5&hl=en), [slides](/transactions_across_datacenters_io.html), [video](https://www.youtube.com/watch?v=srOgpXECblk), [review](http://highscalability.com/blog/2009/8/24/how-google-serves-data-from-multiple-datacenters.html), [book excerpt](http://book.mixu.net/distsys/replication.html#an-overview-of-major-replication-approaches), [related blog post](https://googleappengine.blogspot.com/2009/09/migration-to-better-datastore.html).
+* _[Transactions Across Datacenters](/2009-02-16_transactions_across_datacenters)._ Special Lecture Series in Computer Science, [University of San Francisco](https://www.usfca.edu/), Feb. 12 2009; Google I/O, May 27 2009. [Citations](https://scholar.google.com/scholar?cites=17563833329981092665&as_sdt=2005&sciodt=0,5&hl=en), [slides](/transactions_across_datacenters_io.html), [video](https://www.youtube.com/watch?v=srOgpXECblk), [review](http://highscalability.com/blog/2009/8/24/how-google-serves-data-from-multiple-datacenters.html), [book excerpt](http://book.mixu.net/distsys/replication.html#an-overview-of-major-replication-approaches), [related blog post](https://googleappengine.blogspot.com/2009/09/migration-to-better-datastore.html).
 
-* _[Under the Covers of the Google App Engine Datastore](http://sites.google.com/site/io/under-the-covers-of-the-google-app-engine-datastore)._ Google I/O, 2008. [Citations](https://scholar.google.com/scholar?cites=15196393407508416532&as_sdt=2005&sciodt=1,5), [slides](/datastore_talk.html), [video](http://www.youtube.com/watch?v=tx5gdoNpcZM).
+* _[Under the Covers of the Google App Engine Datastore](https://sites.google.com/site/io/under-the-covers-of-the-google-app-engine-datastore)._ Google I/O, 2008. [Citations](https://scholar.google.com/scholar?cites=15196393407508416532&as_sdt=2005&sciodt=1,5), [slides](/datastore_talk.html), [video](https://www.youtube.com/watch?v=tx5gdoNpcZM).
 
-* Ashcraft, Barrett, et al. _[P4 Protocol Specification](https://snarfed.org/p4protocol)._ snarfed.org, 2002. [Citations](https://scholar.google.com/scholar?cites=16310453643830093000&as_sdt=2005&sciodt=1,5&hl=en), [background](https://snarfed.org/p4), [proposal](https://snarfed.org/p4proposal).
+* Ashcraft, Barrett, et al. _[P4 Protocol Specification](/p4protocol)._ snarfed.org, 2002. [Citations](https://scholar.google.com/scholar?cites=16310453643830093000&as_sdt=2005&sciodt=1,5&hl=en), [background](/p4), [proposal](/p4proposal).
 
 
 ##### Patents
