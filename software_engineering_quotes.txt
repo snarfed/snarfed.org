@@ -115,6 +115,11 @@ Technology brings us wonderment and annoyance, in roughly equal measures.
 
 -->
 
+> A simple heuristic for technical debt: It's always fine to introduce a quick hack. But as soon as you have to work around that hack, stop and fix it instead.
+
+\- [Aaron Boodman](https://twitter.com/aboodman/status/11686231818646609934)
+
+
 > Optimization hinders evolution.
 
 \- Alan Perlis
