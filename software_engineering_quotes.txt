@@ -31,14 +31,15 @@ TODO: ESR's unix zen koans
 
 https://en.wikipedia.org/wiki/G._K._Chesterton#Chesterton's_fence
 
+It's not always a good idea to "reinvent the wheel," but it's a good idea slightly more often than it's recommended (which is never).
+- Paul Graham
+https://twitter.com/paulg/status/1172430527862718465
+
 Chesterton's fence is the principle that reforms should not be made until the reasoning behind the existing state of affairs is understood (compare to the Precautionary principle). The quotation is from Chesterton's 1929 book, The Thing: Why I am a Catholic, in the chapter, "The Drift from Domesticity":
 
     In the matter of reforming things, as distinct from deforming them, there is one plain and simple principle; a principle which will probably be called a paradox. There exists in such a case a certain institution or law; let us say, for the sake of simplicity, a fence or gate erected across a road. The more modern type of reformer goes gaily up to it and says, 'I don't see the use of this; let us clear it away.' To which the more intelligent type of reformer will do well to answer: 'If you don't see the use of it, I certainly won't let you clear it away. Go away and think. Then, when you can come back and tell me that you do see the use of it, I may allow you to destroy it.'[79]
 
 It is easier to write an incorrect program than to understand a correct one.
-- Alan Perlis
-
-If you have a procedure with 10 parameters, you probably missed some.
 - Alan Perlis
 
 Everything should be built top-down, except the first time.
@@ -115,10 +116,18 @@ Technology brings us wonderment and annoyance, in roughly equal measures.
 
 -->
 
+> Another flaw in the human character is that everybody wants to build and nobody wants to do maintenance.
+
+\- Kurt Vonnegut, _Hocus Pocus_
+
 > A simple heuristic for technical debt: It's always fine to introduce a quick hack. But as soon as you have to work around that hack, stop and fix it instead.
 
 \- [Aaron Boodman](https://twitter.com/aboodman/status/11686231818646609934)
 
+
+> If you have a procedure with 10 parameters, you probably missed some.
+
+\- Alan Perlis
 
 > Optimization hinders evolution.
 
