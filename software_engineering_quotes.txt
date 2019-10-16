@@ -32,23 +32,6 @@ TODO: ESR's unix zen koans
 “We build our computer systems the way we build our cities: over time, without a plan, on top of ruins.”
 — Ellen Ulman
 
-What five words best describe programming?
-tell rocks what to think
-Google, stackoverflow, quora, reddit, slack.
-It works on my computer
-That wasn't supposed to happen.
-How did this ever work
-My estimate of five words was slightly off
-java.lang.NullPointerException
-Turtles all the way down.
-https://twitter.com/abstractionscon/status/988568678961696769
-
-At my last job, a team put up a poster for their reusable components. It said:
-“We made a thing from scratch, so you don’t HAVE to make things from scratch.”
-But when engineers read this, they see:
-“We made a thing from scratch, so you don’t GET to make things from scratch.”
-https://twitter.com/creachadair/status/1173764360969150464?s=19
-
 https://en.wikipedia.org/wiki/G._K._Chesterton#Chesterton's_fence
 
 It's not always a good idea to "reinvent the wheel," but it's a good idea slightly more often than it's recommended (which is never).
@@ -136,7 +119,25 @@ Technology brings us wonderment and annoyance, in roughly equal measures.
 
 -->
 
+> _At my last job, a team put up a poster for their reusable components. It said:_  
+> We made a thing from scratch, so you don’t HAVE to make things from scratch.  
+> _But when engineers read this, they see:_  
+> We made a thing from scratch, so you don’t GET to make things from scratch.
+
+[- M. J. Fromberger](https://twitter.com/creachadair/status/1173764360969150464)
+
+> What five words best describe programming?  
+> Tell rocks what to think  
+> It works on my computer  
+> Google, StackOverflow, Quora, Reddit, Slack  
+> My estimate of five words was slightly off  
+> Turtles all the way down  
+> How did this ever work?  
+
+[- @abstractionscon](https://twitter.com/abstractionscon/status/988568678961696769)
+
 > When you finish a PhD in computer science, they take to a special room and explain that you must never use recursion in real life. Its only purpose is to make programming hard for undergrads.
+
 [- John Wilander](https://twitter.com/johnwilander/status/1176457013305303040)
 
 > Another flaw in the human character is that everybody wants to build and nobody wants to do maintenance.
