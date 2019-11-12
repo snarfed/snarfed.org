@@ -29,6 +29,11 @@ upcoming
 
 TODO: ESR's unix zen koans
 
+
+The percentage of users without fully functioning JavaScript is approximately 1%...If you had an application bug which occurred 1% of the time, you’d fix it. No team I’ve come across would put up with that level of reliability.
+- Adam Silver
+https://adamsilver.io/articles/javascript-isnt-always-available-and-its-not-the-users-fault/
+
 “We build our computer systems the way we build our cities: over time, without a plan, on top of ruins.”
 — Ellen Ulman
 
@@ -90,8 +95,6 @@ Simplicity is the unavoidable price we must pay for reliability.
 Don’t shoot yourself in the foot with a magic bullet.
 —Gerald Jay Sussman
 
-The paradox is that when managers focus on productivity, long-term improvements are rarely made. On the other hand, when managers focus on quality, productivity improves continuously.
-
 If you think good architecture is expensive, try bad architecture.
 —Brian Foote and Joseph Yoder
 
@@ -112,6 +115,20 @@ Technology brings us wonderment and annoyance, in roughly equal measures.
 - Bill Bonner
 
 -->
+
+> All code you haven’t tested is wrong. All code you have tested is also wrong, but appears to work by coincidence. And code you’ve proven correct does the wrong thing, correctly.
+
+[- Tim Sweeney](https://twitter.com/TimSweeneyEpic/status/1192527288723804160)
+
+> The paradox is that when managers focus on productivity, long-term improvements are rarely made. On the other hand, when managers focus on quality, productivity improves continuously.
+
+[- John Seddon](http://shop.oreilly.com/product/0636920030355.do) ([more](https://nesma.org/2015/01/programmer-productivity-is-waste-of-time/))
+
+> One of the superpowers of the most effective programmers must be *not* travelling down a meandering hole of upgrading all code possibly tangentially related to the thing they are working on.  
+>   
+> I have not mastered this.
+
+[- Patrick McKenzie](https://twitter.com/patio11/status/1188675681405718529)
 
 > There exists in such a case a certain institution or law; let us say, for the sake of simplicity, a fence or gate erected across a road. The more modern type of reformer goes gaily up to it and says, 'I don't see the use of this; let us clear it away.' To which the more intelligent type of reformer will do well to answer: 'If you don't see the use of it, I certainly won't let you clear it away. Go away and think. Then, when you can come back and tell me that you do see the use of it, I may allow you to destroy it.'
 

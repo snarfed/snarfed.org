@@ -8,6 +8,4 @@ Mastodon on Bridgy
 
 [Mastodon](https://joinmastodon.org/) is now on [Bridgy](https://brid.gy/)! Both [backfeed](https://brid.gy/about#listen) and [publish](brid.gy/about#publish) (aka [POSSE](https://indieweb.org/POSSE)) are fully supported. Feel free to [try them out](https://brid.gy/)! And [let me know](https://github.com/snarfed/bridgy/issues) if you hit any bugs, problems, or missing features.
 
-(If you're already using [Bridgy Fed](https://fed.brid.gy/) for Mastodon, don't worry, it's not going anywhere! I use it myself. Bridgy's new Mastodon support is a simpler, lightweight alternative for people who'd prefer to treat Mastodon as a silo, using a native account, instead of directly federating their web site itself.)
-
-<a href="https://news.indieweb.org/en" class="u-syndication"></a>
+(If you're already using [Bridgy Fed](https://fed.brid.gy/) for Mastodon, don't worry, it's not going anywhere! I use it myself. Bridgy's new Mastodon support is a simpler, lightweight alternative for people who'd prefer to treat Mastodon as a silo, using a native account, instead of directly [federating](https://en.wikipedia.org/wiki/Fediverse) their web site itself.)
