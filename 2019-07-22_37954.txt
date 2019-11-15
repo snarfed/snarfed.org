@@ -1,0 +1,10 @@
+37954
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e We accepted the idea that what was good for financial markets was good for everyone and structured our economy to drive stock prices ever higher, convincing ourselves that \u0022the market\u0022 of stocks, bonds, and derivatives was the same as Adam Smith's market of real goods and services exchanged by ordinary people.\n\n\\- [Tim O'Reilly, _WTF_](https://books.google.com/books?id=jrPnDQAAQBAJ)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>We accepted the idea that what was good for financial markets was good for everyone and structured our economy to drive stock prices ever higher, convincing ourselves that &quot;the market&quot; of stocks, bonds, and derivatives was the same as Adam Smith's market of real goods and services exchanged by ordinary people.</p>
+</blockquote>
+<p>- <a href="https://books.google.com/books?id=jrPnDQAAQBAJ">Tim O'Reilly, <em>WTF</em></a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

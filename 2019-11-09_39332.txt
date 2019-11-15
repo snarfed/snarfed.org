@@ -1,0 +1,19 @@
+39332
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e ‘Do you have cash on you?’  \n\u003e ‘I never have cash on me.’  \n\u003e ‘We're thinking of taking away cash.’  \n\u003e ‘No, you can't take away cash!’  \n\u003e ‘But you don’t have cash.’  \n\u003e ‘But if I want cash you should have cash.’  \n\u003e ‘But you never have cash!’  \n\n\u003e _He leaned back and smiled._ “You get into a kind of cash twenty-two situation.” \n\n_[- Imagining a Cashless World](https://www.newyorker.com/magazine/2016/10/10/imagining-a-cashless-world)_"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>‘Do you have cash on you?’<br>
+‘I never have cash on me.’<br>
+‘We're thinking of taking away cash.’<br>
+‘No, you can't take away cash!’<br>
+‘But you don’t have cash.’<br>
+‘But if I want cash you should have cash.’<br>
+‘But you never have cash!’</p>
+</blockquote>
+<blockquote>
+<p><em>He leaned back and smiled.</em> “You get into a kind of cash twenty-two situation.”</p>
+</blockquote>
+<p><em><a href="https://www.newyorker.com/magazine/2016/10/10/imagining-a-cashless-world">- Imagining a Cashless World</a></em></p>
+</div>
+<!-- /wp:jetpack/markdown -->

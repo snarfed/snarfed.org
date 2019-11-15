@@ -1,0 +1,12 @@
+38434
+
+
+<!-- wp:gallery {"ids":[38431,38433,38432]} -->
+<ul class="wp-block-gallery columns-3 is-cropped"><li class="blocks-gallery-item"><figure><img src="https://snarfed.org/w/wp-content/uploads/2019/09/IMG_20190902_123656-1024x768.jpg" alt="" data-id="38431" data-link="https://snarfed.org/img_20190902_123656" class="wp-image-38431"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://snarfed.org/w/wp-content/uploads/2019/09/IMG_20190902_122840-768x1024.jpg" alt="" data-id="38433" data-link="https://snarfed.org/img_20190902_122840" class="wp-image-38433"/></figure></li><li class="blocks-gallery-item"><figure><img src="https://snarfed.org/w/wp-content/uploads/2019/09/IMG_20190902_123022-1024x768.jpg" alt="" data-id="38432" data-link="https://snarfed.org/img_20190902_123022" class="wp-image-38432"/></figure></li></ul>
+<!-- /wp:gallery -->
+
+<!-- wp:html -->
+<p class="p-location h-card">
+<em><a href="https://en.wikipedia.org/wiki/Trione-Annadel_State_Park">Annadel State Park</a>, Sonoma, CA</em>
+</p>
+<!-- /wp:html -->

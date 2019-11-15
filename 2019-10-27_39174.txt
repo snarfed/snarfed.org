@@ -1,0 +1,9 @@
+39174
+
+
+<!-- wp:jetpack/markdown {"source":"Mortal: _What could I have done to deserve this eternal damnation?_  \nSatan: _The real question is, what did you do to deserve anything else?_\n\n\\- _[Afterparty](http://nightschoolstudio.com/afterparty/)_"} -->
+<div class="wp-block-jetpack-markdown"><p>Mortal: <em>What could I have done to deserve this eternal damnation?</em><br>
+Satan: <em>The real question is, what did you do to deserve anything else?</em></p>
+<p>- <em><a href="http://nightschoolstudio.com/afterparty/">Afterparty</a></em></p>
+</div>
+<!-- /wp:jetpack/markdown -->

@@ -1,0 +1,10 @@
+38280
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e No, no, it's not schizophrenia. It's just a voice inside my head.\n\n\\- _[Stranger than Fiction](http://imdb.com/title/tt0420223/)_"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>No, no, it's not schizophrenia. It's just a voice inside my head.</p>
+</blockquote>
+<p>- <em><a href="http://imdb.com/title/tt0420223/">Stranger than Fiction</a></em></p>
+</div>
+<!-- /wp:jetpack/markdown -->
