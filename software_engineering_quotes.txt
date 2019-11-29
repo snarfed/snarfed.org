@@ -29,6 +29,26 @@ upcoming
 
 TODO: ESR's unix zen koans
 
+Crypto is a tool for turning a whole swathe of problems into key management problems. Key management problems are way harder than (virtually all) cryptographers think.
+https://twitter.com/LeaKissner/status/1198595109756887040?s=19
+
+Law is a lot more ex post facto, and he-who-has-the-gold-makes-the-rules, than it would appear.
+
+Medicine is a lot more "just distract the patient till the body fixes itself".
+
+Microprocessor behavior is determined, on other things.
+
+Global PKI is a lot more DNS than it appears.
+https://twitter.com/dakami/status/953447672584683520?s=19
+
+Cryptography turns a big amount of data to keep secure into a big amount of data and a small additional amount of radioactive waste.
+https://twitter.com/SchmiegSophie/status/1198620475112353793
+
+I'm increasingly thinking that every functioning system has two forms:  The abstraction that outsiders are led to believe, and the reality that insiders actually and carefully operate.
+
+You don't incrementally learn a system.  You eventually unlearn its necessary lies.
+https://twitter.com/dakami/status/953444486209716225
+
 > There are really only two types of computations: calculating stuff about an unchanging thing, and calculating a new version of a thing that is changing over time. Recognizing this simplified debate about functional versus imperative programming.
 [- Tim Sweeney](https://twitter.com/TimSweeneyEpic/status/1195743672899383296)
 
@@ -117,6 +137,10 @@ Technology brings us wonderment and annoyance, in roughly equal measures.
 - Bill Bonner
 
 -->
+
+> Insecurity is like entropy. You can't eliminate it, but you can move it around.
+
+\- internal NSA saying, via [Steve Bellovin](https://twitter.com/SteveBellovin)
 
 > All code you haven’t tested is wrong. All code you have tested is also wrong, but appears to work by coincidence. And code you’ve proven correct does the wrong thing, correctly.
 
