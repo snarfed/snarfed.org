@@ -1,4 +1,4 @@
-stty: stdin isn't a terminal stty: stdin isn't a terminal TERM: Undefined variable. 39512
+39512
 Reverse Turing tests
 
 <p class="right half">
@@ -6,37 +6,50 @@ Reverse Turing tests
     frameborder="0" allowfullscreen></iframe>
 </p>
 
-I've been watching [FailRace](https://www.youtube.com/user/FailRace)'s _[Survive the Hunt](https://www.youtube.com/playlist?list=PLsfEG_D6sAlBs8VJN_Fmz0AD_mIFTVxfa)_ series recently, and it's fascinating. Dennis (FailRace) and his friends invented a hide and seek game inside GTA 5 Online, a game with a sophisticated city simulation with busy car and foot traffic. First, they turn off the map and other arrows and indicators that show them where players are. Dennis gets a head start, changes his clothes, finds a new car, and tries to blend in with the AI-controlled cars and pedestrians obeying traffic laws and going about their business. Then the "hunters," 15-20 of his friends, team up to try to find him.
+I've been watching [FailRace](https://www.youtube.com/user/FailRace)'s _[Survive the Hunt](https://www.youtube.com/playlist?list=PLsfEG_D6sAlBs8VJN_Fmz0AD_mIFTVxfa)_ series recently, and it's fascinating. Dennis and his friends have invented a fundamentally new kind of hide and seek. They start by jumping into GTA 5, an online game with a convincing simulation of a busy city. They turn off the map, names, and other indicators that show where players are. Dennis gets a head start, changes his clothes, finds a new car, and tries to blend in with the AI-controlled traffic and pedestrians going about their business. His friends team up and try to find him.
 
-Most drive cars and race around the city, keeping an eye out for anything suspicious or out of place. A few grab helicopters or blimps and take to the skies, ready to follow from above when they find him. They communicate in a group voice chat, calling out when they find him, which make and model of car he's driving, and where he's headed. If Dennis manages to escape capture for 24 hours in game (roughly 50 minutes real time), he wins.
+Most of them grab cars and race around the city, keeping an eye out for anything suspicious or out of place. A few find helicopters and blimps and take to the skies, tracking the action from above. They communicate in a group voice chat, coordinating their search and calling out sightings: the make and model of car he might be driving, clothes he's wearing, where he's headed.
+<!--more-->
 
-The fun part is watching Dennis try to blend in with the AI. They're surprisingly sophisticated. They obey traffic laws, mostly, but they have their own quirks. They honk and get mad if you wait too long at a green light. Occasionally you'll see a fender bender, mugging, or other incident. And they react realistically: they'll stop and honk if you run a red light, drive around you if you stop in the middle of the road, and panic and flee if you shoot a gun or something nearby explodes.
+The fun part is watching Dennis try to blend in with the AI. They're surprisingly sophisticated. They obey traffic laws, mostly, but they have their own quirks. They honk and get mad if you wait too long at a green light. Occasionally you'll see a fender bender, mugging, or other incident. And they react to players realistically. They stop and honk if you run a red light, drive around you if you stop in the middle of the road, and panic and flee if you shoot a gun or something nearby explodes.
 
-Watching a Survive the Hunt feels a bit like that famous description of fighting in a war - long periods of boredom, punctuated by moments of sheer terror - except the boredom is oddly tense. The city is full of cars and pedestrians, and any of them could be a hunter. Sometimes they race around at top speed, plowing into signs and streetlights, like a bull in a china shop, but other times they try to blend in too, so Dennis is constantly on the lookout. When Dennis is stopped at a busy intersection and suddenly realizes two or three cars behind him might all be hunters, waiting for the perfect moment to surround him, the tension is like nothing I've ever felt in a movie or book. It's electric.
-
-<p class="left third" style="text-align: center">
- <a href="/mechanical_turk_reconstruction.jpg">
-  <img class="shadow" src="/mechanical_turk_reconstruction_thumb.jpg">
-  _1980s Turk reconstruction. [Carafe](https://en.wikipedia.org/wiki/User:Carafe), [Wikipedia](https://en.wikipedia.org/wiki/The_Turk)_
+<p class="left half">
+ <a href="/gta_5_sidewalk_hollywood_stars.jpg">
+  <img class="shadow" src="/gta_5_sidewalk_hollywood_stars_thumb.jpg">
 </a></p>
 
-Survive the Hunt is an example of a _[reverse Turing test](https://en.wikipedia.org/wiki/Reverse_Turing_test)_. The [Turing test](https://en.wikipedia.org/wiki/Turing_test) is a famous AI experiment: a human chats with two unknown players via text messages. One is a human; one is an AI-controlled computer. If the human can't distinguish the human from the computer, the computer wins. A reverse Turing test, naturally, flips it on its head: if the human player manages to pass as a computer, _they_ win.
+Watching a Survive the Hunt feels a bit like the famous description of war, "long periods of boredom punctuated by moments of sheer terror," but the boredom is actually quite tense and paranoid. The city is full of cars and pedestrians, any of which could be a hunter. They often speed past at top speed, plowing into signs and streetlights like bulls in a china shop, but other times they try to blend in, so Dennis is constantly on the lookout. When he's stopped at a busy intersection and starts to suspect that a handful of cars behind him are actually hunters about to spring into action, the tension is electric. It's like nothing I've ever felt in any other medium.
 
-Like the original Turing test, much of thinking around reverse Turing tests so far [has focused on chat](https://www.vice.com/en_us/article/ypw7vm/the-reverse-turing-test-pretending-to-be-a-chatbot-is-harder-than-you-think). 2019's internet is filled with chatting bots of all stripes: [customer support agents](https://www.intercom.com/), [fake online dating profiles](), [democracy-destabilizing troll farms](). Occasionally, when we're feeling playful - or mischievous - we might try imitating them. The results are all over the place, from [research](https://www.semanticscholar.org/topic/Reverse-Turing-test/1137811) to [philosophy](https://philosophicaldisquisitions.blogspot.com/2016/07/reverse-turing-tests-are-humans.html) to [satire](https://www.recruiter.com/i/the-reverse-turing-test-try-convincing-a-panel-of-robots-that-you-are-one-of-them/).
+Survive the Hunt is an example of a [reverse Turing test](https://en.wikipedia.org/wiki/Reverse_Turing_test). The [Turing test](https://en.wikipedia.org/wiki/Turing_test) is a famous AI experiment: a human chats with two unknown players via text messages. One is a human one is an AI-controlled computer. If the human can't identify the computer, it wins. A reverse Turing test flips this on its head: if a human player manages to pass as a computer, _they_ win.
 
-The reverse Turing test isn't new. One of the most famous examples is the [Mechanical Turk](https://en.wikipedia.org/wiki/The_Turk), an 18th century chess-playing machine that turned out to be an elaborate hoax controlled by a human inside it. It's so well known that Amazon named [one of its first AWS services after it](https://www.mturk.com/), connecting people willing to perform any simple, repetitive task over the internet - essentially, imitating machines - with businesses willing to pay them. Startups later adapted this task to bootstrap AI products, hiring armies of temporary workers to act as the wizard behind the curtain offor" apps and services until they'd gathered enough data to train machine learning models to replace them.
+Like the original Turing test, much of thinking around reverse Turing tests [has focused on chat](https://www.vice.com/en_us/article/ypw7vm/the-reverse-turing-test-pretending-to-be-a-chatbot-is-harder-than-you-think). 2019's internet is filled with chatting bots of all stripes: [customer support agents](https://www.intercom.com/), [fake online dating profiles](https://medium.com/@dateaha/spot-the-bot-keep-bots-from-taking-over-on-dating-sites-6fe64e445dc0), [democracy-destabilizing troll farms](https://www.vox.com/2018/10/19/17990946/twitter-russian-trolls-bots-election-tampering). Occasionally, when we're feeling playful - or mischievous - we might try imitating them. The results are all over the place, from [research](https://www.semanticscholar.org/topic/Reverse-Turing-test/1137811) to [philosophy](https://philosophicaldisquisitions.blogspot.com/2016/07/reverse-turing-tests-are-humans.html) to [satire](https://www.recruiter.com/i/the-reverse-turing-test-try-convincing-a-panel-of-robots-that-you-are-one-of-them/).
 
-<p class="right half">
+<p class="right half" style="text-align: center">
+ <a href="/mechanical_turk_reconstruction.jpg">
+  <img class="shadow" src="/mechanical_turk_reconstruction_thumb.jpg"></a>
+  <em>1980s Mechanical Turk reconstruction. <a href="https://en.wikipedia.org/wiki/User:Carafe">Carafe</a>, <a href="https://en.wikipedia.org/wiki/The_Turk">Wikipedia</a></em>
+</p>
+
+However, chatting is far from the only way to imitate computers. One of the most famous examples is the [Mechanical Turk](https://en.wikipedia.org/wiki/The_Turk), an 18th century chess-playing machine that turned out to be an elaborate, human-operated hoax. It's so well known that Amazon named [one of the first AWS services after it](https://www.mturk.com/), connecting people willing to perform simple, repetitive tasks - essentially, imitating machines - with businesses willing to pay them. Startups later adapted this technique for bootstrapping AI products, hiring temporary workers to act as the wizard behind the curtain until they gathered enough data for machine learning to kick in.
+
+These are all useful history, but for me, the fun part has been the emergence of reverse Turing tests as games. Survive the Hunt may be unofficial, a lark invented by a creative streamer, but other developers have taken the idea and run with it. One of the most polished examples is [Chris Hecker's](https://www.chrishecker.com/) _[SpyParty](http://www.spyparty.com/)_:
+
+> One player is the _Spy_, trying to accomplish missions while blending into the crowd. The other player is the _Sniper_, who has one bullet with which to find and terminate the Spy.
+
+<p class="left half">
   <iframe class="shadow" height="216" src="https://www.youtube.com/embed/A7WHgrFgJCA"
     frameborder="0" allowfullscreen></iframe>
 </p>
 
-These are all useful history, but for me, the fun part has been the emergence of reverse Turing tests as a _game_ genre. Survive the Hunt may be unofficial, a lark invented by a creative streamer, but other developers have taken the idea and run with it. The most polished example is probably [Chris Hecker's](https://www.chrishecker.com/) _[SpyParty](http://www.spyparty.com/)_:
+The "crowd" is all computer controlled characters (aka NPCs), not other players. Learning their subtleties, quirks, and tells is the key to winning, whether you're playing as the Spy or the Sniper.
 
-> One player is the _Spy_, trying to accomplish missions while blending into the crowd. The other player is the _Sniper_, who has one bullet with which to find and terminate the Spy.
+Reverse Turing tests even show up in mainstream AAA game franchises. [_Assassin's Creed: Brotherhood_'s _Wanted_ mode](https://en.wikipedia.org/wiki/Assassin%27s_Creed:_Brotherhood#Game_modes) drops players into a crowd of NPCs and gives each of them another player as a target. They know roughly what their target looks like, but many NPCs look the same or similar. If a player assassinates the wrong character, they lose.
 
-The "crowd" that the Spy blends into is all computer controlled characters, not other players. Learning their subtleties, quirks, and tells is the key to winning, whether you're the Spy or the Sniper.
+<p class="right half">
+ <a href="https://en.wikipedia.org/wiki/Assassin%27s_Creed:_Brotherhood">
+  <img class="shadow" src="/assassins_creed_brotherhood.jpg"></a>
+</p>
 
-Reverse Turing tests even show up in mainstream AAA game franchises. In [_Assassin's Creed: Brotherhood_'s _Wanted_ modes](https://en.wikipedia.org/wiki/Assassin%27s_Creed:_Brotherhood#Game_modes), players are dropped into a crowd, and each one has another as a target. They know roughly what their target looks like, but many computer-controlled characters will look the same or similar. If a player assassinates the wrong character, they lose.
+I'm excited to see where game developers take this next. I'm also curious where it will pop up in other media. Singers imitating autotune? Artists painting [like GANs](https://ai.googleblog.com/2016/02/exploring-intersection-of-art-and.html)? Poets aping [computer-generated verse](https://medium.com/@Yisela/computer-generated-poetry-will-knock-your-socks-off-763c815a1b52)? I hope so. Bring it on.
 
-_Hat tip to [Warren](https://twitter.com/dackboor) for introducing me to_ Survive the Hunt _originally._
+_Hat tip to [Warren](https://twitter.com/dackboor) for introducing me to_ Survive the Hunt.
