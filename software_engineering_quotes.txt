@@ -36,7 +36,6 @@ I propose renaming YAML to FML.
 - Lars Rosenquist
 https://twitter.com/larsrosenquist/status/1200765420543840257
 
-
 "App Engine is the OG of serverless," said Oren Teich, product management director of Google Cloud Platform, suggesting that Google a decade ago helped define what would become known as serverless computing. Back then, it was called platform-as-a-service.
 https://www.theregister.co.uk/2018/07/25/google_app_engine_python_3/
 
@@ -51,9 +50,6 @@ Microprocessor behavior is determined, on other things.
 
 Global PKI is a lot more DNS than it appears.
 https://twitter.com/dakami/status/953447672584683520?s=19
-
-Cryptography turns a big amount of data to keep secure into a big amount of data and a small additional amount of radioactive waste.
-https://twitter.com/SchmiegSophie/status/1198620475112353793
 
 I'm increasingly thinking that every functioning system has two forms:  The abstraction that outsiders are led to believe, and the reality that insiders actually and carefully operate.
 
@@ -148,6 +144,10 @@ Technology brings us wonderment and annoyance, in roughly equal measures.
 - Bill Bonner
 
 -->
+
+> Cryptography turns a big amount of data to secure into a big amount of data and a small additional amount of radioactive waste.
+
+[- Sophie Schmieg](https://twitter.com/SchmiegSophie/status/1198620475112353793)
 
 > Insecurity is like entropy. You can't eliminate it, but you can move it around.
 
