@@ -51,17 +51,13 @@ Microprocessor behavior is determined, on other things.
 Global PKI is a lot more DNS than it appears.
 https://twitter.com/dakami/status/953447672584683520?s=19
 
-I'm increasingly thinking that every functioning system has two forms:  The abstraction that outsiders are led to believe, and the reality that insiders actually and carefully operate.
+I'm increasingly thinking that every functioning system has two forms: The abstraction that outsiders are led to believe, and the reality that insiders actually and carefully operate.
 
 You don't incrementally learn a system.  You eventually unlearn its necessary lies.
 https://twitter.com/dakami/status/953444486209716225
 
 > There are really only two types of computations: calculating stuff about an unchanging thing, and calculating a new version of a thing that is changing over time. Recognizing this simplified debate about functional versus imperative programming.
 [- Tim Sweeney](https://twitter.com/TimSweeneyEpic/status/1195743672899383296)
-
-The percentage of users without fully functioning JavaScript is approximately 1%...If you had an application bug which occurred 1% of the time, you’d fix it. No team I’ve come across would put up with that level of reliability.
-- Adam Silver
-https://adamsilver.io/articles/javascript-isnt-always-available-and-its-not-the-users-fault/
 
 “We build our computer systems the way we build our cities: over time, without a plan, on top of ruins.”
 — Ellen Ulman
@@ -144,6 +140,10 @@ Technology brings us wonderment and annoyance, in roughly equal measures.
 - Bill Bonner
 
 -->
+
+> The percentage of users without fully functioning JavaScript is approximately 1%...If you had an application bug which occurred 1% of the time, you’d fix it. No team I’ve come across would put up with that level of reliability.
+
+[- Adam Silver](https://adamsilver.io/articles/javascript-isnt-always-available-and-its-not-the-users-fault/)
 
 > Cryptography turns a big amount of data to secure into a big amount of data and a small additional amount of radioactive waste.
 
