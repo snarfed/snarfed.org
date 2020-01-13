@@ -101,6 +101,26 @@ Crazy Donkey IPA
 <a name="tried"></a>
 **Tried**:
 
+[Wimbledon](http://wimbledonbrewery.com/)
+[Quartermaine](https://www.beeradvocate.com/beer/profile/47499/291790/) (IPA)
+<bad>
+
+[Camden Town](https://www.beeradvocate.com/beer/profile/25929/)
+[Pale Ale](https://www.beeradvocate.com/beer/profile/25929/84500/)
+<good>
+
+[St. Austell](http://staustellbrewery.co.uk/)
+[Tribute](https://www.beeradvocate.com/beer/profile/6984/13037/) (pale)
+<bad>
+
+[Baja](https://www.beeradvocate.com/beer/profile/16900/)
+[Mexican IP Por Favor](https://www.beeradvocate.com/beer/profile/16900/272026/)
+<good>
+
+[Revision](https://www.beeradvocate.com/beer/profile/48813/)
+[IPA](https://www.beeradvocate.com/beer/profile/48813/276142/)
+<good>
+
 [Spring House](http://springhousebeer.com/)
 [Blood Turning Black](https://www.beeradvocate.com/beer/profile/16589/192597/) (imperial porter)
 <good>
@@ -387,7 +407,12 @@ Ray Of Hope (pilsner)
 [Pack Call](https://www.beeradvocate.com/beer/profile/24903/449665/)
 <ok>,
 [Good Vibe Pils](https://www.beeradvocate.com/beer/profile/24903/318717/)
-<ok>
+<ok>,
+<span title="at caskhouse w/charles, 3/12/2015">
+[Anadromous](http://www.beeradvocate.com/beer/profile/24903/94617/) (sour stout)
+<bad>
+</span>
+
 
 [Barrel Of Monks](http://barrelofmonks.com/)
 [Abbey Terno](https://www.beeradvocate.com/beer/profile/39158/160302/) (dubbel)
@@ -965,12 +990,6 @@ Alt
 [Auburn Alehouse](http://auburnalehouse.com/)
 [Isotope PU240](http://www.beeradvocate.com/beer/profile/16270/55903/) (imperial IPA)
 <ok>
-
-<span title="at caskhouse w/charles, 3/12/2015">
-[Anchorage](http://anchoragebrewingcompany.com/)
-[Anadromous](http://www.beeradvocate.com/beer/profile/24903/94617/) (sour stout)
-<bad>
-</span>
 
 <span title="at caskhouse w/charles, 3/12/2015">
 [Baeltane](http://baeltanebrewing.com/)
@@ -2120,8 +2139,10 @@ Colorado Uncommon
 <span title="barrel aged beer fest w/ryan graciano, 11/9/2013">
 Steelhead Bourbon Vanilla Porter
 (aged in Heaven Hills bourbon barrels)
-<ok>
+<ok>,
 </span>
+[Slammin' Salmon](https://www.beeradvocate.com/beer/profile/266/29078/) (DIPA)
+<bad>
 
 <span title="sf apt w/dan, 5/22/2010">
 [Butte Creek](http://www.buttecreek.com/)
@@ -2408,8 +2429,10 @@ Stout of Circumstance
 (with [Stone](http://www.stonebrew.com/))
 [Bashah](http://www.brewdog.com/product.php?id=40)
 (black Belgian double IPA)
-<good>
+<good>,
 </span>
+[Speedbird 100](https://www.beeradvocate.com/beer/profile/16315/416626/) (IPA)
+<bad>
 
 <span title="at monk's kettle with gina, cheri, and dan, sun 2/7/2010">
 [Koningshoeven](http://www.latrappe.nl/content.asp?l=EN)
@@ -2491,6 +2514,8 @@ Bretta IPA
 [312 Urban Pale Ale](http://www.beeradvocate.com/beer/profile/1146/114532/)
 <bad>
 </span>
+[IPA](https://www.beeradvocate.com/beer/profile/1146/3968/)
+<good>
 
 <span title="home sun 1/31/2010, from city beer, too sweet!">
 [FiftyFifty](http://www.fiftyfiftybrewing.com/)
@@ -3207,8 +3232,9 @@ Old Engine Oil
 </span>
 
 
-<span title="pelican inn w/michelle">
 [Anchor](http://www.anchorbrewing.com/)
+[Steam](https://www.beeradvocate.com/beer/profile/28/63/) (steam pale),
+<span title="pelican inn w/michelle">
 [Porter](http://www.anchorbrewing.com/beers/anchorporter.htm)
 <ok>,
 </span>
@@ -3222,8 +3248,10 @@ Old Engine Oil
 </span>
 <span title="dinner at vanessa's, 8/30/2013">
 [Bigleaf Maple](http://beeradvocate.com/beer/profile/28/97721) (amber)
-<good>
+<good>,
 </span>
+[Fog Breaker](https://www.beeradvocate.com/beer/profile/28/360678/) (IPA)
+<good>
 
 <span title="spruce w/kerri">
 [St. Peter's](http://www.stpetersbrewery.co.uk/)
