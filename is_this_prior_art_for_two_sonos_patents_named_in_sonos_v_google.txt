@@ -1,0 +1,24 @@
+39801
+Is this prior art for two Sonos patents named in Sonos v. Google?
+
+I've been intrigued by the recent [Sonos v. Google patent infringement lawsuit](https://www.nytimes.com/2020/01/07/technology/sonos-sues-google.html) ([full complaint text](https://www.scribd.com/document/442035843/Sonos-v-Google)). I built a similar system with a few friends for a school project in the beginning of 2002, well before the earliest priority date of the five patents in question, 2003-07-28. I'm curious if you all think it might count as prior art.
+
+The five patents named in the suit are:
+
+* [US8588949](https://patents.google.com/patent/US8588949B2/en), _Method and apparatus for adjusting volume levels in a multi-zone system_
+* [US9195258](https://patents.google.com/patent/US9195258B2/en), _System and method for synchronizing operations among a plurality of independently clocked digital data processing devices_
+* [US9219959](https://patents.google.com/patent/US9219959B2/en), _Multi-channel pairing in a media system_
+* [US10209953](https://patents.google.com/patent/US10209953B2/en), _Playback device_
+* [US10439896](https://patents.google.com/patent/US10439896B2/en), _Playback device connection_
+
+The two I'm curious about are [US9195258](https://patents.google.com/patent/US9195258B2/en) (priority date 2003-07-28), for running a task on one device at a timestamp from another device by incorporating the difference between the two devices' clocks, and [US10209953](https://patents.google.com/patent/US10209953B2/en), for applying that timestamp delta technique to many devices together. (I think.)
+
+Our project was similar to Sonos: it synchronized MP3 player apps on desktop computers over a local network to play the same song at the same time. The key document is https://snarfed.org/synchronizing_mp3_playback, originally published 2002-12-29. In its _Solution_ section, it describes a similar technique for running a task at a specific time across devices with different clocks:
+
+> Seriously, though, there’s only one trick to p4sync, and that is how it uses NTP. One host acts as the p4sync server. The other p4sync clients synchronize their system clocks to the server’s clock, using SNTP. When the server starts playing a song, it records the time, to the millisecond. The clients then retrieve that timestamp, calculate the difference between current time from that timestamp, and seek forward that far into the song.
+
+This is subtly different from Sonos's patents in that it measures the difference between the clocks in order to synchronize them first, _before_ running a task, as opposed to leaving their clocks out of sync and using the difference to determine the appropriate starting time...but that's a somewhat minor nuance, and the application of synchronizing music playback across devices seems to be the same.
+
+What do you all think? Could this project count as prior art? Thanks in advance!
+
+(We actually developed this technique in April 2002, but I didn't publish it until December. I did publish two other documents from the project in April, [P4 Proposal](/p4proposal) on 2002-04-09 and [P4 Protocol](/p4protocol) on 2002-04-06, but neither describes the music player synching or timestamp/clock management in nearly as much detail.)

@@ -27,29 +27,58 @@ http://pu.inf.uni-tuebingen.de/users/klaeren/epigrams.html
 upcoming
 ===
 
-TODO: ESR's unix zen koans
+TODO: unix zen koans
+http://www.catb.org/~esr/writings/unix-koans/
+http://canonical.org/~kragen/tao-of-programming.html
+http://mercury.ccil.org/~cowan/upc/
+http://www.catb.org/~esr/jargon/html/koans.html
+http://www.catb.org/~esr/faqs/loginataka.html
+http://www.gu.uwa.edu.au/users/greg/
+http://www.ibiblio.org/zen/cgi-bin/koan-index.pl
 
-YAML: the result of people ignoring the lessons from JSON (the result of people ignoring the lessons from XML). Now we’re ‘coding’ infra with 3000 line typeless, indentation sensitive markup, escaping it, then embed it in another 3000 line typeless, indentation sensitive file.
+For every problem, there is one solution which is simple, neat, and wrong. — Henry Louis Mencken
 
-I propose renaming YAML to FML.
+History shows us clearly that humanity is moved forward not by people who stop every little while to try to gauge the ultimate success or failure of their ventures, but by those who think deeply about what is right and then put all their energy into doing it. — Murray Gell-Mann
 
-- Lars Rosenquist
-https://twitter.com/larsrosenquist/status/1200765420543840257
+High tolerance for failure, low tolerance for incompetence. — Bill George History shows us clearly that humanity is moved forward not by people who stop every little while to try to gauge the ultimate success or failure of their ventures, but by those who think deeply about what is right and then put all their energy into doing it. — Murray Gell-Mann
 
-"App Engine is the OG of serverless," said Oren Teich, product management director of Google Cloud Platform, suggesting that Google a decade ago helped define what would become known as serverless computing. Back then, it was called platform-as-a-service.
-https://www.theregister.co.uk/2018/07/25/google_app_engine_python_3/
+If the world were merely seductive, that would be easy. If it were merely challenging, that would be no problem. But I arise in the morning torn between a desire to improve the world, and a desire to enjoy the world. That makes it hard to plan the day. — E. B. White
 
-Crypto is a tool for turning a whole swathe of problems into key management problems. Key management problems are way harder than (virtually all) cryptographers think.
-https://twitter.com/LeaKissner/status/1198595109756887040?s=19
+huh. i just figured this was why God made weekdays and weekends.
 
-Law is a lot more ex post facto, and he-who-has-the-gold-makes-the-rules, than it would appear.
+lIf you want to build a ship, don’t drum up people together to collect wood and don’t assign them tasks and work, but rather teach them to long for the endless immensity of the sea. — Antoine de Saint- Exupéry
 
-Medicine is a lot more "just distract the patient till the body fixes itself".
+a classic on  good people managing!
 
-Microprocessor behavior is determined, on other things.
+Most people overestimate what they can do in one year and underestimate what they can do in ten years. ― Bill Gates
 
-Global PKI is a lot more DNS than it appears.
-https://twitter.com/dakami/status/953447672584683520?s=19
+same with technical advancement. opposite maybe with societal/political advancement.
+
+Sometimes it’s necessary to go a long distance out of the way in order to come back a short distance correctly. — Edward Albee
+
+aka prototyping or 'build one to throw away." opposite of Murray gell-mann's
+
+The great thing in this world is not so much where we stand, as in what direction we are moving. To reach the port of heaven, we must sail sometimes with the wind and sometimes against it — but we must sail, and not drift, nor lie at anchor. — Oliver Wendell Holmes
+
+same
+
+There are two kinds of truth, small truth and great truth. You can recognize a small truth because its opposite is a falsehood. The opposite of a great truth is another profound truth.
+— Niels Bohr
+
+When I am working on a problem I never think about beauty. I only think about how to solve the problem. But when I have finished, if the solution is not beautiful, I know it is wrong.
+— R. Buckminster Fuller
+
+You don’t make decisions because they are easy; you don’t make them because they are cheap; you don’t make them because they are popular; you make them because they’re right.
+—Theodore Hesburgh
+
+It’s not at all important to get it right the first time. It’s vitally important to get it right the last time.
+- The Pragmatic Programmer
+
+Looking at code you wrote more than two weeks ago is like looking at code you are seeing for the first time.
+- Dan Hurvitz
+
+If it doesn’t work, it doesn’t matter how fast it doesn’t work.
+- Mich Ravera
 
 I'm increasingly thinking that every functioning system has two forms: The abstraction that outsiders are led to believe, and the reality that insiders actually and carefully operate.
 
@@ -62,7 +91,7 @@ https://twitter.com/dakami/status/953444486209716225
 “We build our computer systems the way we build our cities: over time, without a plan, on top of ruins.”
 — Ellen Ulman
 
-It's not always a good idea to "reinvent the wheel," but it's a good idea slightly more often than it's recommended (which is never).
+It's not usually a good idea to reinvent the wheel, but it's a good idea slightly more often than it's recommended, which is never.
 - Paul Graham
 https://twitter.com/paulg/status/1172430527862718465
 
@@ -88,6 +117,28 @@ I'm a 10x developer. That is it takes me 10x the amount of time to write the sam
 - @BeardOps
 https://twitter.com/BeardOps/status/1091456027768250368
 
+YAML: the result of people ignoring the lessons from JSON (the result of people ignoring the lessons from XML). Now we’re ‘coding’ infra with 3000 line typeless, indentation sensitive markup, escaping it, then embed it in another 3000 line typeless, indentation sensitive file.
+
+I propose renaming YAML to FML.
+
+- Lars Rosenquist
+https://twitter.com/larsrosenquist/status/1200765420543840257
+
+"App Engine is the OG of serverless," said Oren Teich, product management director of Google Cloud Platform, suggesting that Google a decade ago helped define what would become known as serverless computing. Back then, it was called platform-as-a-service.
+https://www.theregister.co.uk/2018/07/25/google_app_engine_python_3/
+
+Crypto is a tool for turning a whole swathe of problems into key management problems. Key management problems are way harder than (virtually all) cryptographers think.
+https://twitter.com/LeaKissner/status/1198595109756887040?s=19
+
+Law is a lot more ex post facto, and he-who-has-the-gold-makes-the-rules, than it would appear.
+
+Medicine is a lot more "just distract the patient till the body fixes itself".
+
+Microprocessor behavior is determined, on other things.
+
+Global PKI is a lot more DNS than it appears.
+https://twitter.com/dakami/status/953447672584683520?s=19
+
 Technology is anything that doesn't work quite yet.
 - Danny Hillis
 
@@ -99,9 +150,6 @@ Programs must be written for people to read, and only incidentally for machines 
 
 A language that doesn’t have everything is actually easier to program in than some that do.
 —Dennis Ritchie
-
-A designer can mull over complicated designs for months. Then suddenly the simple, elegant, beautiful solution occurs to them. When it happens to you, it feels as if God is talking! And maybe He is.
-—Leo Frankowski
 
 The tragedy of our time is that we’ve got it backwards, we’ve learned to love techniques and use people.
 —Herb Kelleher
@@ -123,9 +171,6 @@ Don’t shoot yourself in the foot with a magic bullet.
 If you think good architecture is expensive, try bad architecture.
 —Brian Foote and Joseph Yoder
 
-Oftentimes, when trying to reinvent the wheel, you end up with a wheel. But there is a nice moment of 'huh, I guess that's why people just use wheels'... that process of justifying the standard is satisfying, if massively wasteful.
-- Mike Bithell
-
 The closer you try to get to perfect - latency, bugs, availability, etc - the more it costs you. You'll never get there. Pick a threshold you're ok with, and accept it.
 - Me
 
@@ -135,11 +180,25 @@ If at first you don’t succeed, call it version 1.0.
 Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius—and a lot of courage to move in the opposite direction.
 -E.F. Schumacher
 
-
 Technology brings us wonderment and annoyance, in roughly equal measures.
 - Bill Bonner
-
 -->
+
+> The Tao gave birth to machine language. Machine language gave birth to the assembler. The assembler gave birth to the compiler. Now there are ten thousand languages.
+>
+> Each language has its purpose, however humble. Each language expresses the Yin and Yang of software. Each language has its place within the Tao.
+>
+> But do not program in COBOL if you can avoid it.
+
+[- Geoffrey James, _The Tao Of Programming_](http://canonical.org/~kragen/tao-of-programming.html)
+
+> Oftentimes, when trying to reinvent the wheel, you end up with a wheel. But there is a nice moment of "huh, I guess that's why people just use wheels"... that process of justifying the standard is satisfying, if massively wasteful.
+
+\- Mike Bithell
+
+> An [engineer] can mull over complicated designs for months. Then suddenly the simple, elegant, beautiful solution occurs to them. When it happens to you, it feels as if God is talking! And maybe He is.
+
+\- Leo Frankowski
 
 > The percentage of users without fully functioning JavaScript is approximately 1%...If you had an application bug which occurred 1% of the time, you’d fix it. No team I’ve come across would put up with that level of reliability.
 

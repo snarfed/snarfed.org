@@ -1,0 +1,42 @@
+39802
+Why is my App Engine app hitting the Stackdriver Logging 256KB limit?
+
+I'm migrating a [Python 2 App Engine Standard](https://cloud.google.com/appengine/docs/standard/python/) app to the new [Python 3 Standard runtime](https://cloud.google.com/appengine/docs/standard/python3/), which is [very different](https://cloud.google.com/appengine/docs/standard/python3/python-differences#app_engine_apis). One big difference is that you use Google Cloud APIs explicitly, including [Stackdriver Logging](https://cloud.google.com/logging/docs/). I'm using [google-cloud-logging](https://googleapis.github.io/google-cloud-python/latest/logging/)'s [App Engine Handler](https://googleapis.dev/python/logging/latest/handlers-app-engine.html) and configuring it to correlate logs with HTTP requests:
+
+```py
+import google.cloud.logging
+logging_client = google.cloud.logging.Client()
+
+from google.cloud.logging.handlers import AppEngineHandler, setup_logging
+setup_logging(AppEngineHandler(logging_client, name='stdout'))
+```
+
+This works great!...except it hits [a 256KB log entry limit](https://cloud.google.com/logging/quotas#log-limits) and crashes somewhat regularly. Stack trace below. This happens in long-running background requests that do a fair amount of work, but when I count the total amount of logged text (including string timestamps) in requests that crash, it only averages 5-15KB or so, far smaller than 256KB. (Yes, the docs warn [_This approximate limit is based on internal data sizes_](https://cloud.google.com/logging/quotas#log-limits), but it's hard to believe that overhead is 15-50x.)
+
+The App Engine Handler defaults to [`BackgroundThreadTransport`](https://googleapis.dev/python/logging/latest/transports-thread.html). I've tried lowering its `batch_size` from 10 (the default) to 1, and switching to [`SyncTransport`](https://googleapis.dev/python/logging/latest/transports-sync.html), but no luck.
+
+Any idea what I'm missing? Thank you in advance!
+
+```
+Traceback (most recent call last):
+  File "/env/lib/python3.7/site-packages/google/cloud/logging/handlers/transports/background_thread.py", line 123, in _safely_commit_batch
+    batch.commit()
+  File "/env/lib/python3.7/site-packages/google/cloud/logging/logger.py", line 383, in commit
+    client.logging_api.write_entries(entries, **kwargs)
+  File "/env/lib/python3.7/site-packages/google/cloud/logging/_gapic.py", line 126, in write_entries
+    partial_success=partial_success,
+  File "/env/lib/python3.7/site-packages/google/cloud/logging_v2/gapic/logging_service_v2_client.py", line 477, in write_log_entries
+    request, retry=retry, timeout=timeout, metadata=metadata
+  File "/env/lib/python3.7/site-packages/google/api_core/gapic_v1/method.py", line 143, in __call__
+    return wrapped_func(*args, **kwargs)
+  File "/env/lib/python3.7/site-packages/google/api_core/retry.py", line 277, in retry_wrapped_func
+    on_error=on_error,
+  File "/env/lib/python3.7/site-packages/google/api_core/retry.py", line 182, in retry_target
+    return target()
+  File "/env/lib/python3.7/site-packages/google/api_core/timeout.py", line 214, in func_with_timeout
+    return func(*args, **kwargs)
+  File "/env/lib/python3.7/site-packages/google/api_core/grpc_helpers.py", line 59, in error_remapped_callable
+    six.raise_from(exceptions.from_grpc_error(exc), exc)
+  File "<string>", line 3, in raise_from
+google.api_core.exceptions.InvalidArgument: 400 Log entry with size 258.3K exceeds maximum size of 256.0K
+```
