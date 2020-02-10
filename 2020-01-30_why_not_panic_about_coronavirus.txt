@@ -3,39 +3,40 @@ Why you don't need to panic about coronavirus
 
 <p class="right half" style="margin-top: 10px">
  <a href="https://www.dailymail.co.uk/travel/travel_news/article-3859598/Roofs-decked-5-000-DIAMONDS-lashings-gold-leaf-enchantment-standard-world-s-beautiful-pagodas-revealed.html">
-  <img src="/cebu_taoist_temple_philippines.jpg" /></a></p>
+  <img class="shadow" src="/cebu_taoist_temple_philippines.jpg" /></a></p>
 
-The [Wuhan coronavirus outbreak](https://en.wikipedia.org/wiki/2019%E2%80%9320_Wuhan_coronavirus_outbreak) has been big news lately. Lots of us are scared, like we were during SARS, H1N1, and others, and most news coverage just fans those flames.
+The [Wuhan coronavirus outbreak](https://en.wikipedia.org/wiki/2019%E2%80%9320_Wuhan_coronavirus_outbreak) has been big news lately. Lots of us are scared, just like during SARS, H1N1, and others, and most news coverage just fans those flames.
 
-Fortunately, I don't think we need to worry. Here's a condensed, lightly edited version of conversation I had with a smart, thoughtful friend recently about why.
+Fortunately, I don't think we need to worry. Here's a lightly edited version of conversation I had with a smart, thoughtful friend recently about why.
 
 
-_[Friend] I used to work with [famous researcher] at his virus discovery lab. I remember one time...I sat down next to them for dinner, everyone around me was laughing really hard at something. He turned to me and said "Hey, we were just talking about SARS." He went on to say after the post-mortem analysis was done, that if SARS had been as contagious as the flu, that they would not have been able to contain the epidemic. The result would have been that, world-wide, about half a billion (not million, billion with a "b") people would have died. We just got lucky._
+_**Friend**: I used to work with [famous researcher] at his virus discovery lab. I remember one time...I sat down next to them for dinner, and everyone around me was laughing really hard at something. He turned to me and said "Hey, we were just talking about SARS." He went on to say after the post-mortem analysis was done, that if SARS had been as contagious as the flu, that they would not have been able to contain the epidemic. The result would have been that, world-wide, about half a billion (not million, billion with a "b") people would have died. We just got lucky._
 
 _With Wuhan coronavirus, we are not going to get lucky._
+<!--more-->
 
 1. _Wuhan coronavirus is contagious before people have symptoms. This property makes it basically impossible to contain by screening for it._
 
 2. _["Almost certainly many tens of thousands of people are infected."](https://www.scientificamerican.com/article/experts-warn-of-possible-sustained-global-spread-of-new-coronavirus/) Unfortunately the CCP in fact suppressed knowledge of the virus from the public for many days, even after their scientists knew about it; [it is their fault that their massive quarantine was too late](http://chinamediaproject.org/2020/01/27/dramatic-actions/)._
 
-3. _[It may not be as deadly as SARS, but it is deadly enough.](https://foreignpolicy.com/2020/01/26/2019-ncov-china-epidemic-pandemic-the-wuhan-coronavirus-a-tentative-clinical-profile/). It seems to be harder on older people than younger people. "We do not know how lethal the new coronavirus is. While the single figures of deaths in early January seemed reassuring, the death toll has now climbed to above 3 percent."_
+3. _[It may not be as deadly as SARS, but it is deadly enough.](https://foreignpolicy.com/2020/01/26/2019-ncov-china-epidemic-pandemic-the-wuhan-coronavirus-a-tentative-clinical-profile/) It seems to be harder on older people than younger people. "We do not know how lethal the new coronavirus is. While the single figures of deaths in early January seemed reassuring, the death toll has now climbed to above 3 percent."_
 
 <p class="left half" style="margin-top: 10px">
  <a href="https://www.dailymail.co.uk/travel/travel_news/article-3859598/Roofs-decked-5-000-DIAMONDS-lashings-gold-leaf-enchantment-standard-world-s-beautiful-pagodas-revealed.html">
-  <img src="/meidai_lamasery_inner_pagoda_mongolia.jpg" /></a></p>
+  <img class="shadow" src="/meidai_lamasery_inner_pagoda_mongolia.jpg" /></a></p>
 
 _Fortunately it seems that [to get the virus you must get physically close to someone who has it](https://foreignpolicy.com/2020/01/26/2019-ncov-china-epidemic-pandemic-the-wuhan-coronavirus-a-tentative-clinical-profile/). "The coronavirus is a physically large virus—in relative terms, at just 125 nanometers with a surface of spike projections, too big to survive or stay suspended in the air for hours or travel more than a few feet. Like influenza, this coronavirus spreads through both direct and indirect contact. Direct contact occurs through the physical transfer of the microorganism among friends and family through close contact with oral secretions. Indirect contact results when an infected person coughs or sneezes, spreading coronavirus droplets on nearby surfaces, including knobs, bedrails, and smartphones."_
 
 _Even so, I think very soon a time may come when we are likely to all want to just stay home for a while, and if we do go anywhere, not use public transit._
 
 
-[Me] Interesting! I'm no expert in any of this. I'm a computer scientist and amateur computational biologist, not an epidemiologist. I do know pandemic risk is significant, generally speaking, and that we can definitely improve our containment and response coordination worldwide.
+**Me**: Interesting! I'm no expert in any of this. I'm a computer scientist and amateur computational biologist, not an epidemiologist. I do know pandemic risk is significant, generally speaking, and that we can definitely improve our containment and response coordination worldwide.
 
-Having said that, fears around flu pandemics like coronavirus historically seem consistently overblown. **For context, ["normal" flu averages 3-5M cases and 300-600k deaths per year worldwide](https://en.wikipedia.org/wiki/Influenza).** In comparison, most recent pandemics that got everyone so worked up were many orders of magnitude smaller:
+Having said that, fears around flu pandemics like coronavirus historically seem consistently overblown. _For context, ["normal" flu averages 3-5M cases and 300-600k deaths per year worldwide](https://en.wikipedia.org/wiki/Influenza)._ In comparison, most recent pandemics that got everyone so worked up were many orders of magnitude smaller:
 
 <p class="right half" style="margin-top: 10px">
  <a href="https://www.dailymail.co.uk/travel/travel_news/article-3859598/Roofs-decked-5-000-DIAMONDS-lashings-gold-leaf-enchantment-standard-world-s-beautiful-pagodas-revealed.html">
-  <img src="/chureito_pagoda_fujiyoshida_japan.jpg" /></a></p>
+  <img class="shadow" src="/chureito_pagoda_fujiyoshida_japan.jpg" /></a></p>
 
 * [SARS: 8422 cases, 775-835 deaths](https://en.wikipedia.org/wiki/Severe_acute_respiratory_syndrome#Epidemiology)
 * [H5N1 aka bird flu: 630 cases, 375 deaths](https://en.wikipedia.org/wiki/Influenza_A_virus_subtype_H5N1)
@@ -59,7 +60,7 @@ Agreed. Thank god that early 3% fatility rate estimate is way lower than SARS's 
 
 <p class="left half" style="margin-top: 10px">
  <a href="https://www.dailymail.co.uk/travel/travel_news/article-3859598/Roofs-decked-5-000-DIAMONDS-lashings-gold-leaf-enchantment-standard-world-s-beautiful-pagodas-revealed.html">
-  <img src="/lampang_pagoda_thailand.jpg" /></a></p>
+  <img class="shadow" src="/lampang_pagoda_thailand.jpg" /></a></p>
 
 Again, I'm no epidemiologist, but if I'm going to get scared about something, I'll probably opt for something like climate crisis or the threats to western democracy instead. You know, the "easy" stuff.
 
@@ -77,7 +78,7 @@ Good point that those examples were contained. It's still too early to know whet
 
 <p class="right half" style="margin-top: 10px">
  <a href="https://www.dailymail.co.uk/travel/travel_news/article-3859598/Roofs-decked-5-000-DIAMONDS-lashings-gold-leaf-enchantment-standard-world-s-beautiful-pagodas-revealed.html">
-  <img src="/toji_pagoda_kyoto_japan.jpg" /></a></p>
+  <img class="shadow" src="/toji_pagoda_kyoto_japan.jpg" /></a></p>
 
 As for the estimates, you're assuming that everyone in the world contracts the disease, which seems unrealistic. [11-21% of the world population contracted H1N1](https://en.wikipedia.org/wiki/2009_flu_pandemic), for example. Only 3-5M people contract normal flu each year, despite the flu vaccine's ["low" overall uptake](https://en.wikipedia.org/wiki/Influenza_vaccine#Uptake) and [average 30-40% effectiveness](https://en.wikipedia.org/wiki/Influenza_vaccine#Effectiveness). And as you mentioned, coronavirus's spread is limited, similar to the flu.
 
