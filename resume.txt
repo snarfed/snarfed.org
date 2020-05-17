@@ -1,31 +1,23 @@
 5428
 Resume
 
-Experienced engineering leader. 16+ years track record building and scaling backend infrastructure, full stack data platforms and applications, and more.
+Experienced engineering leader. 16+ years building and scaling backend infrastructure, data platforms and applications, and cross functional teams.
 
 <p class="quarter right">
  <a href="https://www.color.com/">
   <img src="/color_logo.png" /></a></p>
 
-#### [Color Genomics](https://www.color.com/), 2015 - present
+#### [Color](https://www.color.com/), 2015 - present
 
-_Head of engineering_
+_Engineering lead; Head of engineering_
 
-Grew overall team to >30 software engineers and data scientists. Worked with product, support, lab, scientific affairs, and other teams to negotiate and prioritize roadmaps.
-
-Led bioinformatics and product teams to implement multiple new genetic tests and health areas, physician ordering, insurance billing, dynamic interactive reports, realtime sync with external systems, analytics suite for external customers, and more.
-
-Led internal infrastructure, ops, data science, and data platform teams. Designed production architecture, development and deployment toolchains, and ops process to deliver >99.9% availability since launch.
-
-_Engineering lead_
+Helped grow team to 30 software engineers and data scientists. Led bioinformatics and product teams to implement new genetic tests and health areas, physician ordering, insurance billing, dynamic interactive reports, external facing analytics suite, and more. Led infrastructure and ops teams to deliver [CI](https://en.wikipedia.org/wiki/Continuous_integration)/[CD](https://en.wikipedia.org/wiki/Continuous_delivery), development toolchains, and >99.9% availability.
 
 <!-- Led engineering for Color's partnership with the NIH's [All of Us program](https://www.joinallofus.org/) to deliver full clinical genetics for 1M participants. -->
 
-Designed, built, and shipped [Color Data](https://data.color.com/) ([blog post](https://blog.color.com/building-a-public-research-database-out-of-spare-parts-1fd8f996b733)), a large interactive public research dataset comprising >3M genetic variants and >50k individuals.
+Led data platform and data science teams. Built internal analytics stack and multi-billion-row data warehouse that does [GWAS studies](https://en.wikipedia.org/wiki/Genome-wide_association_study) and [polygenic scores](https://en.wikipedia.org/wiki/Polygenic_score) in minutes. Created [Color Data](https://data.color.com/) ([blog post](https://blog.color.com/building-a-public-research-database-out-of-spare-parts-1fd8f996b733)), a large interactive public research dataset.
 
-Built Color's internal analytics/BI stack and data warehouse, which includes a multi-billion-row data warehouse that can perform [GWAS studies](https://en.wikipedia.org/wiki/Genome-wide_association_study) and generate [polygenic scores](https://en.wikipedia.org/wiki/Polygenic_score) in just minutes, as opposed to months like usual.
-
-Implemented much of the bioinformatics pipeline. Productionized it to provide flexibility, scale, and speed. [Sped up development cycle from 12-24h to ~2m](https://blog.color.com/engineering-bioinformatics-in-seconds-not-hours-b17af684f682).
+Implemented much of the bioinformatics pipeline. [Sped up development cycle from 12-24h to ~2m](https://blog.color.com/engineering-bioinformatics-in-seconds-not-hours-b17af684f682).
 
 
 <p class="quarter right">
@@ -34,7 +26,9 @@ Implemented much of the bioinformatics pipeline. Productionized it to provide fl
 
 #### [Quip](https://quip.com/about), 2013 - 2015
 
-Engineer. Server and storage system, data model, synchronization protocol, [web frontend](https://quip.com/), [iOS app](https://itunes.apple.com/us/app/quip/id647922896), and [Android app](https://play.google.com/store/apps/details?id=com.quip.quip).
+_Engineer_
+
+Built and contributed to server and storage system, data model, synchronization protocol, [web frontend](https://quip.com/), [iOS app](https://itunes.apple.com/us/app/quip/id647922896), and [Android app](https://play.google.com/store/apps/details?id=com.quip.quip).
 
 
 <p class="quarter right">
@@ -45,15 +39,15 @@ Engineer. Server and storage system, data model, synchronization protocol, [web 
 
 _Senior Staff Engineer_
 
-Co-founded [Google App Engine](https://cloud.google.com/appengine/), which eventually led to the [Google Cloud](https://cloud.google.com/) business and product suite. Led engineering for the [datastore](https://cloud.google.com/firestore/), a very large scale, [multi-homed](https://googleappengine.blogspot.com/2009/09/migration-to-better-datastore.html) [NoSQL](http://en.wikipedia.org/wiki/NoSQL) database that stores >1T rows, >1EB of data, and serves >3M[qps](http://en.wikipedia.org/wiki/Queries_per_second). (2005 - 2010)
+Co-founded [Google App Engine](https://cloud.google.com/appengine/), which eventually expanded into [Google Cloud](https://cloud.google.com/). Led engineering for the [datastore](https://cloud.google.com/datastore/), a large scale, [globally multi-homed](https://googleappengine.blogspot.com/2009/09/migration-to-better-datastore.html) [NoSQL](http://en.wikipedia.org/wiki/NoSQL) database that stores >1T rows, >1EB of data, and serves >3M[qps](http://en.wikipedia.org/wiki/Queries_per_second). <!-- (2005 - 2010) -->
 
-Led, designed, and built [company-wide personalization infrastructure](https://googleblog.blogspot.com/2012/01/updating-our-privacy-policies-and-terms.html) <!-- Implemented a piece of it (in [Go](https://golang.org/)) --> that served 500kqps at peak. (2011 - 2013)
+Designed, built, and led [company-wide ML infrastructure for personalization](https://googleblog.blogspot.com/2012/01/updating-our-privacy-policies-and-terms.html) <!-- Implemented a piece of it (in [Go](https://golang.org/)) --> that served 500kqps at peak. <!-- (2011 - 2013) -->
 
-Led and contributed to network management projects for Google's backbone network [AS15169](https://www.peeringdb.com/view.php?asn=15169), including command and control, monitoring, automation, topology, routing, peering, [and OpenFlow](https://www.wired.com/wiredenterprise/2012/04/going-with-the-flow-google/). (2010 - 2011)
+Led and contributed to network management projects for [Google's backbone network](https://www.peeringdb.com/view.php?asn=15169)<!-- AS15169 -->, including command and control, monitoring, automation, topology, routing, peering, [and OpenFlow](https://www.wired.com/wiredenterprise/2012/04/going-with-the-flow-google/). <!-- (2010 - 2011) -->
 
-Led Google's early use of [OpenID](https://openid.net/), including [Blogger](/2007-12-02_openid_comments_in_blogger) [integrations](https://blogger.googleblog.com/2007/12/openid-commenting.html) <!-- [multiple](https://openid-provider.appspot.com/) [integrations](https://openid-consumer.appspot.com/), and drove internal adoption that culminated in --> and [a full Google Accounts provider](https://developers.google.com/identity/protocols/OpenIDConnect) and consumer. (2006)
+Spearheaded Google's [OpenID](https://openid.net/) support, including [Blogger](/2007-12-02_openid_comments_in_blogger) [integrations](https://blogger.googleblog.com/2007/12/openid-commenting.html) <!-- [multiple](https://openid-provider.appspot.com/) [integrations](https://openid-consumer.appspot.com/), and drove internal adoption that culminated in --> and a [full Google Accounts provider](https://developers.google.com/identity/protocols/OpenIDConnect). <!-- (2006) -->
 
-Co-founded Google's transaction processing and billing platform and led its storage engineering team. <!-- At the end of my tenure, it served >XXM customers, >XB transactions per day, and >XXkqps with 99.98% uptime. --> (2003 - 2006)
+Co-founded Google's transaction processing and billing platform and led its storage engineering team. <!-- At the end of my tenure, it served >XXM customers, >XB transactions per day, and >XXkqps with 99.98% uptime. --> <!-- (2003 - 2006) -->
 
 <hr />
 
@@ -71,20 +65,18 @@ _BS Computer Science, Mathematics minor_
 <p class="quarter right">
  <a href="https://www.ibm.com/">
   <img src="/ibm_logo.png" /></a></p>
--->
 
-<!-- <small> -->
 [IBM Research Almaden](http://research.ibm.com/labs/almaden/), [Extreme Blue](https://www.ibm.com/employment/extremeblue/), engineer, 2002 - 2003  
-<!-- Helped design and build a collaboration and visualization platform for molecular biologists. Also developed a parallel computing system for running molecular analyses and simulations on large server clusters. -->
+Helped design and build a collaboration and visualization platform for molecular biologists. Also developed a parallel computing system for running molecular analyses and simulations on large server clusters.
 [LucasArts Entertainment](https://en.wikipedia.org/wiki/LucasArts), engineering intern, 2001  
 [Webvan Group](https://en.wikipedia.org/wiki/Webvan), engineering intern, 2000  
 [Electronic Arts](https://www.ea.com/), QA Tester, 1999  
 MobileForce Technologies, engineering intern, 1998  
-<!-- </small> -->
+-->
 
 <hr />
 
-Significant open source projects: [Bridgy](https://brid.gy/), <!-- [webmention](https://webmention.net/) service for social networks. [6k accounts (lifetime), 16M responses handled, 2M webmentions sent](https://brid.gy/#stats) as of Jan 2020. -->
+Open source projects: [Bridgy](https://brid.gy/), <!-- [webmention](https://webmention.net/) service for social networks. [6k accounts (lifetime), 16M responses handled, 2M webmentions sent](https://brid.gy/#stats) as of Jan 2020. -->
 [granary](https://granary.io/), <!-- the social web translator. -->
 [Indie Map](https://indiemap.org/), <!-- public Indieweb social graph dataset. 5.7M pages, 380GB HTML, 631M links, 706k relationships. -->
 [and more.](/software) Contributor to [ActivityStreams](https://activitystrea.ms/)/[OStatus](https://www.w3.org/community/ostatus/), [OpenID](https://openid.net/), [Emacs](https://gnu.org/software/emacs/), [WordPress](/2010-08-08_migrated_to_wordpress), [Pine](https://en.wikipedia.org/wiki/Pine_(email_client))/[Alpine](https://en.wikipedia.org/wiki/Alpine_(email_client)), [tcsh](https://www.tcsh.org/), and [Pidgin](https://pidgin.im/). [GitHub profile](https://github.com/snarfed/).
@@ -94,6 +86,7 @@ Significant open source projects: [Bridgy](https://brid.gy/), <!-- [webmention](
 
 ##### Selected publications and [talks](/talks)
 
+* _Preprint_: [Mark J. Berger, et al. _Color Data v2: a user-friendly, open-access database with hereditary cancer and hereditary cardiovascular conditions datasets._](https://www.biorxiv.org/content/10.1101/2020.01.15.907212v1)
 * [Barrett, Neben, et al. _A scalable, aggregated genotypic-phenotypic database for human disease variation._](https://academic.oup.com/database/article/doi/10.1093/database/baz013/5316668) [Database: The Journal of Biological Databases and Curation, Volume 2019.](https://academic.oup.com/database/issue/volume/2019)
 * [Jamieson, Jack. _Bridging the Open Web and APIs: Alternative Social Media Alongside the Corporate Web_](https://easychair.org/smart-program/SMSociety19/2019-07-20.html#talk:106901) ([more](https://jackjamieson.net/smsociety19/)). [10th International Conference on Social Media & Society](https://easychair.org/smart-program/SMSociety19/), July 19-21 2019. Academic study of my open source project [Bridgy](https://brid.gy/). [Paper](/jamieson_smsociety19_paper.pdf), [poster](/jamieson_smsociety19_poster.pdf).
 * Wilkerson, Barrett, et al. _Distributed Transactions for Google App Engine: Optimistic Distributed Transactions built upon Local Multi-Version Concurrency Control._ [Computing Research Repository, June 2011](https://dblp.uni-trier.de/db/journals/corr/corr1106.html), [arXiv:1106.3325](https://arxiv.org/abs/1106.3325), [blog post](/app-engine-global-transactions).

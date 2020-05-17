@@ -35,6 +35,41 @@ http://www.catb.org/~esr/jargon/html/koans.html
 http://www.catb.org/~esr/faqs/loginataka.html
 http://www.gu.uwa.edu.au/users/greg/
 http://www.ibiblio.org/zen/cgi-bin/koan-index.pl
+https://github.com/dwmkerr/hacker-laws
+http://www.bowdoin.edu/~ltoma/teaching/cs340/spring05/coursestuff/Bentley_BumperSticker.pdf
+
+
+When AT&T donated the V6 source code to Berkeley, it was classified as industrial waste for tax purposes.
+
+As it was explained to me, the law at the time said if your business produced byproducts that had economically recoverable value, you could get a tax break by donating them.
+
+So, for example, if you were Kodak, and your film factory produced effluent with silver dissolved in it, you could get a tax break by donating it to someone who'd recover the silver.
+
+AT&T being the Phone Company, they were forbidden to commercialize anything not directly related to telephony. UNIX was a byproduct of their research work, and they couldn't sell it. But they could give it away as sludge!
+
+- Evan Hunt
+
+maybe teaching sand to do math was a mistake
+- @wirehead2501
+
+Having a discussion about technical debt is a luxury. Being able to talk about technical debt implies success.
+
+- Kelly Sutton
+
+All PaaSes will expand until they are indistinguishable from IaaS.
+
+- Joshua Smith
+
+Choose the _least_ powerful programming language suitable for a given purpose, not the most powerful.
+
+- Rule of least power (W3C)
+
+A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system.
+
+- John Gall (aka Gall's Law)
+
+The more equally attractive two alternatives seem, the harder it can be to choose between them — no matter that, to the same degree, the choice can only matter less.
+- Edward Fredkin
 
 High tolerance for failure, low tolerance for incompetence.
 — Bill George
@@ -45,7 +80,7 @@ History shows us clearly that humanity is moved forward not by people who stop e
 If the world were merely seductive, that would be easy. If it were merely challenging, that would be no problem. But I arise in the morning torn between a desire to improve the world, and a desire to enjoy the world. That makes it hard to plan the day.
 — E. B. White
 
-lIf you want to build a ship, don’t drum up people together to collect wood and don’t assign them tasks and work, but rather teach them to long for the endless immensity of the sea.
+If you want to build a ship, don’t drum up people together to collect wood and don’t assign them tasks and work, but rather teach them to long for the endless immensity of the sea.
 — Antoine de Saint- Exupéry
 
 Most people overestimate what they can do in one year and underestimate what they can do in ten years.
@@ -72,16 +107,10 @@ It’s not at all important to get it right the first time. It’s vitally impor
 Looking at code you wrote more than two weeks ago is like looking at code you are seeing for the first time.
 - Dan Hurvitz
 
-If it doesn’t work, it doesn’t matter how fast it doesn’t work.
-- Mich Ravera
-
 I'm increasingly thinking that every functioning system has two forms: The abstraction that outsiders are led to believe, and the reality that insiders actually and carefully operate.
 
 You don't incrementally learn a system.  You eventually unlearn its necessary lies.
 https://twitter.com/dakami/status/953444486209716225
-
-> There are really only two types of computations: calculating stuff about an unchanging thing, and calculating a new version of a thing that is changing over time. Recognizing this simplified debate about functional versus imperative programming.
-[- Tim Sweeney](https://twitter.com/TimSweeneyEpic/status/1195743672899383296)
 
 “We build our computer systems the way we build our cities: over time, without a plan, on top of ruins.”
 — Ellen Ulman
@@ -134,9 +163,6 @@ Microprocessor behavior is determined, on other things.
 Global PKI is a lot more DNS than it appears.
 https://twitter.com/dakami/status/953447672584683520?s=19
 
-Technology is anything that doesn't work quite yet.
-- Danny Hillis
-
 It’s hard to read through a book on the principles of magic without glancing at the cover periodically to make sure it isn’t a book on software design.
 —Bruce Tognazzini
 
@@ -179,6 +205,65 @@ Technology brings us wonderment and annoyance, in roughly equal measures.
 - Bill Bonner
 -->
 
+> Technology is anything that doesn't work quite yet.
+
+\- Danny Hillis
+
+> Early in the morning of 17 July 1997, human error at Network Solutions causes the DNS table for .com and .net domains to become corrupted, making millions of systems unreachable.
+
+[- RFC 2235: Hobbes' Internet Timeline](https://tools.ietf.org/html/rfc2235)
+
+
+> There are really only two types of computations: calculating stuff about an unchanging thing, and calculating a new version of a thing that is changing over time. Recognizing this simplifies the debate over functional versus imperative programming.
+
+[- Tim Sweeney](https://twitter.com/TimSweeneyEpic/status/1195743672899383296)
+
+> The Fallacies of Distributed Computing  
+>  
+> * The network is reliable  
+> * Latency is zero  
+> * Bandwidth is infinite  
+> * The network is secure  
+> * Topology doesn't change  
+> * There is one administrator  
+> * Transport cost is zero  
+> * The network is homogeneous
+
+\- Bill Joy, Tom Lyon
+
+> The paging will continue until the nines improve.
+
+\- [Hank Jacobs](https://twitter.com/hankjacobs/status/1231773847025664000)
+
+> All code is technical debt; it’s just different interest rates we’re paying on it. Debt powers the economy and it powers your business. None of this is inherently good or bad. It’s a tool.
+
+\- Dormain Drewitz
+
+> The condition of any backup is unknown until a restore is attempted.
+
+\- "Schrödinger's Backup," Redditor intelx88
+
+> Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.
+
+\- Brian Kernighan (aka Kernighan's Law)
+
+> [On naming systems]  
+>   
+> Human-meaningful, secure, decentralized: choose two.
+
+\- Zooko's Triangle, Zooko Wilcox-O'Hearn
+
+> Consistency, availability, partition tolerance: choose two.
+
+\- [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem), Eric Brewer
+
+> When we can finally print from any computer to any printer consistently, there will be no computer science problems left to solve.
+
+\- Steve Moyer (Moyer's Law)
+
+> If it doesn’t work, it doesn’t matter how fast it doesn’t work.
+
+\- Mich Ravera
 
 > Never attribute to malice that which can be adequately explained by stupidity.
 
