@@ -39,6 +39,9 @@ https://github.com/dwmkerr/hacker-laws
 http://www.bowdoin.edu/~ltoma/teaching/cs340/spring05/coursestuff/Bentley_BumperSticker.pdf
 
 
+Before you can develop reusable software you need to have developed it three times. Before you can reap the benefits of reuse, you need to reuse it at least three times.
+- Ted Biggerstaff, via Will Tracz
+
 When AT&T donated the V6 source code to Berkeley, it was classified as industrial waste for tax purposes.
 
 As it was explained to me, the law at the time said if your business produced byproducts that had economically recoverable value, you could get a tax break by donating them.
@@ -131,9 +134,6 @@ If a language doesn't affect the way you think about programming, it's not worth
 Simplicity does not precede complexity, but follows it.
 - Alan Perlis
 
-Just like entropy always increases, mean time to failure always decreases.
-- Alan Perlis, paraphrased
-
 Computer Science is embarrassed by the computer.
 - Alan Perlis
 
@@ -204,6 +204,22 @@ Any intelligent fool can make things bigger, more complex, and more violent. It 
 Technology brings us wonderment and annoyance, in roughly equal measures.
 - Bill Bonner
 -->
+
+> We have a squeaky bathroom door, so I thought we need to oil it. Then I realised there are a few other doors in the house that need oiled. Then I thought "wouldn't it be cool if I could pour oil down one pipe and oil all the doors at once?" That's how software engineers think.
+
+\- https://twitter.com/paulca/status/1265407453753217024
+
+> Just like entropy always increases, mean time to failure always decreases.
+
+\- Alan Perlis, paraphrased
+
+> I'll buckle down and get to work as soon as I finish reading the internet.
+
+\- Unknown
+
+> Show me your flowcharts, and conceal your tables, and I shall continue to be mystified; show me your tables and I won't usually need your flowcharts: they'll be obvious.
+
+\- Fred Brooks, _The Mythical Man Month_
 
 > Technology is anything that doesn't work quite yet.
 
@@ -560,10 +576,6 @@ availability | downtime, per year | cost
 > We sort of understood abstractly the idea that there are only two kinds of software projects: failures and future legacy horrors.
 
 \- Peter Weinberger
-
-> Walking on water and developing software from a specification are easy if both are frozen.
-
-\- Edward V. Berard
 
 > [Goodhart's Law: When a measure becomes a target, it ceases to be a good measure.](https://en.wikipedia.org/wiki/Goodhart%27s_law)
 

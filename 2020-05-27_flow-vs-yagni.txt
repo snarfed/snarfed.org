@@ -1,0 +1,29 @@
+41616
+Flow vs YAGNI
+
+<p class="right half">
+ <a href="https://www.dailymail.co.uk/travel/travel_news/article-3859598/Roofs-decked-5-000-DIAMONDS-lashings-gold-leaf-enchantment-standard-world-s-beautiful-pagodas-revealed.html">
+  <img class="shadow" src="/chureito_pagoda_fujiyoshida_japan.jpg">
+ </a>
+</p>
+
+[YAGNI](https://en.wikipedia.org/wiki/You_aren%27t_gonna_need_it) - You Ain't Gonna Need It - is a famous software engineering maxim. Predicting the future is notoriously difficult. When we guess at future requirements, we often guess wrong, so any code we write for them is usually wasted and makes the program more complex and less maintainable.
+
+Another maxim is that [flow](https://en.wikipedia.org/wiki/Flow_(psychology)) is sacred. When you're in flow, you're a superhero. You hold the entire system in your head, code faster than a speeding cursor, leap seven layers of abstraction in a single file.
+
+Flow is built out of context. When all the context is humming inside your head, that flow state is glorious, but getting there takes hard mental labor. Usually it takes reading code, lots of different code, which is harder than writing it. This is why we go to extra lengths to add comments and refactor and try to make code readable. They're all context shortcuts.
+<!--more-->
+
+These two maxims create a healthy tension. Structuring code to be readable takes extra work. When you turn hard coded numbers and strings into proper constants, for example, you improve readability, but it's possible that no one else will ever read that code again, not even you. So why do it? Why not YAGNI? The answer is that it's much easier to add those shortcuts now, when your head is already full of all the context you need. Typing in a constant instead of a number takes just a few extra seconds.
+
+<p class="left half">
+ <a href="https://www.dailymail.co.uk/travel/travel_news/article-3859598/Roofs-decked-5-000-DIAMONDS-lashings-gold-leaf-enchantment-standard-world-s-beautiful-pagodas-revealed.html">
+  <img class="shadow" src="/meidai_lamasery_inner_pagoda_mongolia.jpg">
+ </a>
+</p>
+
+On the other hand, if you come back in a year, [it will take you 15 minutes or more](https://www.gamasutra.com/view/feature/190891/programmer_interrupted.php) just to remind yourself what all this code does in the first place. After that, it will take another few minutes to find where the number is hard coded. You probably won't remember the actual number itself, so you'll have to read the code.
+
+Constants are toy examples, but the tradeoff applies across the board. When in doubt? YAGNI. But consider the context and flow you've built up just by being right here, right now. How much work will it take to add some bit of code? How much extra complexity will it add that you'll have to maintain over time? How difficult will it be, down the road, to even _find this point in the code_, much less build up all the context in your head again, get back into flow, and then add it?
+
+That's the tradeoff. YAGNI, but also, flow is sacred. Context is king. Choose wisely.
