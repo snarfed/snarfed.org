@@ -22,3 +22,5 @@ Also see [software engineering quotes](/software-engineering-quotes).
 * Data wants to be dirty.
 * Duplicated data wants to skew.
 * [Less code.](/2019-xx-xx_less_code)
+* [There's a healthy tension between flow and YAGNI.](/2020-05-27_flow-vs-yagni) Navigate them thoughtfully.
+* [Bandwidth increase with the _square_ of latency.](/2019-07-10_37849). This has subtle but powerful implications for system design. Ignore it at your peril.

@@ -42,16 +42,6 @@ http://www.bowdoin.edu/~ltoma/teaching/cs340/spring05/coursestuff/Bentley_Bumper
 Before you can develop reusable software you need to have developed it three times. Before you can reap the benefits of reuse, you need to reuse it at least three times.
 - Ted Biggerstaff, via Will Tracz
 
-When AT&T donated the V6 source code to Berkeley, it was classified as industrial waste for tax purposes.
-
-As it was explained to me, the law at the time said if your business produced byproducts that had economically recoverable value, you could get a tax break by donating them.
-
-So, for example, if you were Kodak, and your film factory produced effluent with silver dissolved in it, you could get a tax break by donating it to someone who'd recover the silver.
-
-AT&T being the Phone Company, they were forbidden to commercialize anything not directly related to telephony. UNIX was a byproduct of their research work, and they couldn't sell it. But they could give it away as sludge!
-
-- Evan Hunt
-
 maybe teaching sand to do math was a mistake
 - @wirehead2501
 
@@ -207,7 +197,17 @@ Technology brings us wonderment and annoyance, in roughly equal measures.
 
 > We have a squeaky bathroom door, so I thought we need to oil it. Then I realised there are a few other doors in the house that need oiled. Then I thought "wouldn't it be cool if I could pour oil down one pipe and oil all the doors at once?" That's how software engineers think.
 
-\- https://twitter.com/paulca/status/1265407453753217024
+[- Paul Campbell](https://twitter.com/paulca/status/1265407453753217024)
+
+> When AT&T donated the V6 source code to Berkeley, it was classified as industrial waste for tax purposes.
+>
+> As it was explained to me, the law at the time said if your business produced byproducts that had economically recoverable value, you could get a tax break by donating them.
+>
+> So, for example, if you were Kodak, and your film factory produced effluent with silver dissolved in it, you could get a tax break by donating it to someone who'd recover the silver.
+>
+> AT&T being the Phone Company, they were forbidden to commercialize anything not directly related to telephony. UNIX was a byproduct of their research work, and they couldn't sell it. But they could give it away as sludge!
+
+[- Evan Hunt](https://twitter.com/nuthaven/status/1254897999290892289)
 
 > Just like entropy always increases, mean time to failure always decreases.
 
