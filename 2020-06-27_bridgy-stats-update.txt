@@ -7,18 +7,6 @@ Bridgy stats update
 
 Another year down, another update on [Bridgy](https://brid.gy/)'s usage stats! We first announced these during State of the Indieweb at [IndieWebCamp West 2020](https://indieweb.org/2020/West), then posted them here for posterity.
 
-Since [our last stats update a year ago](https://snarfed.org/2019-01-02_bridgy-stats-update-4#comment-2731107), we've added a number of new things. with [Google+ and](https://brid.gy/about#rip-google+) [Facebook behind us](https://brid.gy/about#rip-facebook), the biggest silo is still Twitter.
-
-We've also seen the all time webmention count continue to increase. By our best estimates, [we crossed 1M total webmentions sent in the wild in December 2017](https://snarfed.org/1-million-webmentions), 95% of which was sent or received by Bridgy. [It's now handled over 3.6M](https://brid.gy/#stats), so if that same proportion has held, then roughly 3.8M webmentions total have been sent in the wild to date.
-
-[Data](https://docs.google.com/spreadsheets/d/1VhGiZ9Z9PEl7f9ciiVZZgupNcUTsRVltQ8_CqFETpfU/edit),
-[methodology](https://github.com/snarfed/bridgy#stats),
-[previously](/2018-01-02_bridgy-stats-update-4),
-[previously](/2018-01-02_bridgy-stats-update-3),
-[previously](/2016-06-06_bridgy-stats-update-2),
-[previously](/2015-12-07_bridgy-stats-update),
-[previously](/2014-11-06_happy-1000th-bridgy).
-
 <p id="users" class="right half" style="margin-left: 0px; margin-right: -10px">
  <a href="/bridgy_stats/2020/accounts_stacked.png">
   <img class="u-photo shadow" src="/bridgy_stats/2020/accounts_stacked_thumb.png" /></a>
@@ -27,6 +15,10 @@ We've also seen the all time webmention count continue to increase. By our best 
  <a href="/bridgy_stats/2020/accounts.png">
   <img class="u-photo shadow" src="/bridgy_stats/2020/accounts_thumb.png" /></a></p>
 </p>
+
+The most noticeable part of [last year's stats updates](https://snarfed.org/2019-01-02_bridgy-stats-update-4#comment-2731107) was [losing Facebook](https://brid.gy/about#rip-facebook) [and Google+](https://brid.gy/about#rip-google+). We made up for that this year by adding three new silos: Mastodon, Meetup, and Reddit. (Thanks [Jamie](https://www.jvt.me/), [Will](https://www.bonkerfield.org/)!) The real growth story over the past few years, however, has been GitHub. It has almost 400 users now, making it Bridgy's third largest silo behind Twitter and Instagram!
+
+Otherwise, growth continues apace, up and to the right.
 
 <p class="right half" style="margin-left: 0px; margin-right: -10px">
  <a href="/bridgy_stats/2020/features.png">
@@ -37,6 +29,8 @@ We've also seen the all time webmention count continue to increase. By our best 
   <img class="u-photo shadow" src="/bridgy_stats/2020/webmentions_thumb.png" /></a>
 </p>
 
+We've also seen the all time webmention count continue to increase. By our best estimates, [we crossed 1M total webmentions sent in the wild in December 2017](https://snarfed.org/1-million-webmentions), 95% of which was sent or received by Bridgy. [It's now handled over 3.6M](https://brid.gy/#stats), so if that same proportion has held, then roughly 3.8M webmentions total have been sent in the wild to date.
+
 <p class="right half" style="margin-left: 0px; margin-right: -10px">
  <a href="/bridgy_stats/2020/publishes.png">
   <img class="u-photo shadow" src="/bridgy_stats/2020/publishes_thumb.png" /></a></p>
@@ -46,4 +40,10 @@ We've also seen the all time webmention count continue to increase. By our best 
   <img class="u-photo shadow" src="/bridgy_stats/2020/costs_thumb.png" /></a></p>
 </p>
 
-<br style="clearing: both" />
+[Data](https://docs.google.com/spreadsheets/d/1VhGiZ9Z9PEl7f9ciiVZZgupNcUTsRVltQ8_CqFETpfU/edit),
+[methodology](https://github.com/snarfed/bridgy#stats),
+[previously](/2018-01-02_bridgy-stats-update-4),
+[previously](/2018-01-02_bridgy-stats-update-3),
+[previously](/2016-06-06_bridgy-stats-update-2),
+[previously](/2015-12-07_bridgy-stats-update),
+[previously](/2014-11-06_happy-1000th-bridgy).
