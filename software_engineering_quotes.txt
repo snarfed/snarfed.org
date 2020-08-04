@@ -42,9 +42,6 @@ http://www.bowdoin.edu/~ltoma/teaching/cs340/spring05/coursestuff/Bentley_Bumper
 Before you can develop reusable software you need to have developed it three times. Before you can reap the benefits of reuse, you need to reuse it at least three times.
 - Ted Biggerstaff, via Will Tracz
 
-maybe teaching sand to do math was a mistake
-- @wirehead2501
-
 Having a discussion about technical debt is a luxury. Being able to talk about technical debt implies success.
 
 - Kelly Sutton
@@ -52,10 +49,6 @@ Having a discussion about technical debt is a luxury. Being able to talk about t
 All PaaSes will expand until they are indistinguishable from IaaS.
 
 - Joshua Smith
-
-Choose the _least_ powerful programming language suitable for a given purpose, not the most powerful.
-
-- Rule of least power (W3C)
 
 A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system.
 
@@ -105,17 +98,11 @@ I'm increasingly thinking that every functioning system has two forms: The abstr
 You don't incrementally learn a system.  You eventually unlearn its necessary lies.
 https://twitter.com/dakami/status/953444486209716225
 
-“We build our computer systems the way we build our cities: over time, without a plan, on top of ruins.”
-— Ellen Ulman
-
 It's not usually a good idea to reinvent the wheel, but it's a good idea slightly more often than it's recommended, which is never.
 - Paul Graham
 https://twitter.com/paulg/status/1172430527862718465
 
 It is easier to write an incorrect program than to understand a correct one.
-- Alan Perlis
-
-Everything should be built top-down, except the first time.
 - Alan Perlis
 
 If a language doesn't affect the way you think about programming, it's not worth knowing.
@@ -194,6 +181,30 @@ Any intelligent fool can make things bigger, more complex, and more violent. It 
 Technology brings us wonderment and annoyance, in roughly equal measures.
 - Bill Bonner
 -->
+
+> Everything should be built top-down, except the first time.
+
+\- Alan Perlis
+
+> We build our computer systems the way we build our cities: over time, without a plan, on top of ruins.
+
+\— [_Life in Code_](https://www.google.com/books/edition/Life_in_Code/rPTtDQAAQBAJ), Ellen Ulman
+
+> Choose the least powerful programming language suitable for a given purpose, not the most powerful.
+
+\- [Rule of least power](https://en.wikipedia.org/wiki/Rule_of_least_power), W3C
+
+> maybe teaching sand to do math was a mistake
+
+[– @wirehead2501](https://twitter.com/wirehead2501/status/933225268990197760)
+
+> The more equally attractive two alternatives seem, the harder it can be to choose between them — no matter that, to the same degree, the choice can only matter less.
+
+\- Edward Fredkin
+
+> Before you can develop reusable software you need to have developed it three times. Before you can reap the benefits of reuse, you need to reuse it at least three times.
+
+\- "Rule of Threes," Ted Biggerstaff, via Will Tracz
 
 > We have a squeaky bathroom door, so I thought we need to oil it. Then I realised there are a few other doors in the house that need oiled. Then I thought "wouldn't it be cool if I could pour oil down one pipe and oil all the doors at once?" That's how software engineers think.
 
