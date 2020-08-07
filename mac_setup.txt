@@ -1,0 +1,59 @@
+41794
+Mac setup
+
+<p class="right">
+ <a href="http://www.apple.com/mac/">
+  <img src="/mac_os_x.jpg" /></a></p>
+
+I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). I'm currently on Catalina. Here are my notes for setting up a new computer.
+
+* [Install Firefox.](https://firefox.com/) Sign into sync.
+  * In Preferences, General => Language and Appearance => Advanced => set minimum font size to 14 points.
+  * To make the tab key only cycle between input forms, not links too, open [`about:config`](about:config) and add a new entry, [`accessibility.tabfocus`](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/accessibility.tabfocus), with value 1 (integer).
+* [Install 1Password](https://1password.com/) and its [browser extension](https://1password.com/downloads/mac/#browsers).
+* [Install Homebrew.](https://brew.sh/)
+* `brew install awscli bash colordiff coreutils ffmpeg git gnupg go imagemagick mpg123 mplayer node openjdk openssl pinentry-mac pwgen python@3.7 python@3.8 rename telnet wp-cli`
+* `brew cask install emacs mattr-slate`
+* Update System Preferences:
+  * Energy Saver, Power Adapter, check Prevent computer from sleeping automatically when the display is off, uncheck Wake for Wi-Fi network access
+  * Trackpad, check Tap to Click, turn off most gestures
+  * Accessibility => Pointer Control => Mouse & Trackpad => Trackpad Options => check Enable dragging => Three finger drag
+  * General => Dark mode
+  * Sound => uncheck Play UI sound effects
+  * Security & Privacy
+    * Require password 1 hour
+    * turn on FileVault
+    * Privacy => Full Disk Acess => [add `/usr/bin/ruby` (for Emacs)](https://emacs.stackexchange.com/a/53037)
+  * Desktop & screen saver: no screen saver, Hot corners => upper right put display to sleep
+  * Sharing => set hostname, enable Remote Login
+  * Displays => Resolution scaled => one step up from default, Night Shift => on, 10p-6a
+  * Internet accounts => iCloud, turn off everything except Find My Mac, remove Game Center
+  * Mission Control -> turn off Displays have separate Spaces [to work around this Slate bug](https://github.com/jigish/slate/issues/377)
+  * Bluetooth => Show in menu bar
+* `mkdir -p ~/src; git clone snarfed/dotfiles; git clone snarfed/misc`
+* `cd; echo .cshrc .emacs .git_excludes .gitconfig .hgrc .inputrc .pypirc .python .slate .slate.js .sqliterc .subversion .wgetrc | xargs -n 1 -I %% ln -s src/dotfiles/%%`
+* Start Slate.
+* To remove Firefox's highlight/glow dot on app tabs with notifications:
+  * Open [`about:config`](about:config), search for `toolkit.legacyUserProfileCustomizations.stylesheets`, set it to true.
+  * `cd 'Library/Application Support/Firefox/profiles/*.default-release/`
+  * `mkdir -p chrome`
+  * `ln -s ~/src/dotfiles/userChrome.css`
+* [Install WhatsApp.](https://www.whatsapp.com/download/) Log in.
+* [Install Slack.](https://slack.com/download) Log in.
+* [Install Dash.](https://kapeli.com/dash) Import `~/etc/dash.5.license`.
+* `mkdir -p ~/.ssh; cd ~/.ssh; ln -s ~/src/dotfiles/ssh_config config`. Copy in SSH keys from backup somewhere.
+* Set up GnuPG:
+  * `mkdir -p ~/.gnupg; cd ~/.gnupg; ln -s ~/src/dotfiles/gpg.conf ; ln -s ~/src/dotfiles/gpg.conf`
+  * Run `gpg --list-keys` and `gpg --list-secret-keys`.
+  * If they don't show anything:
+    * Run `gpg-connect-agent`, then `keyinfo --list`.
+    * Check that it shows the keys in `~/.gnupg/private-keys-v1.d`.
+    * Then run `gpg --import ~/.gnupg/pubring.gpg`.
+* Add `127.0.0.1	my.dev.com` to `/etc/hosts`.
+* [Install Google Drive Sync](https://www.google.com/drive/download/).
+  * Make sure I have everything I need off the old computer's backup in Drive, then delete it.
+  * Add folders to sync to Drive: `bin books camera_extra docs etc gallery src/snarfed.org`. Uncheck the rest.
+  * Disable synching Drive to the computer.
+* [Install and configure MenuMeters.](https://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/)
+* [Install and configure Toothpicks.](https://apps.apple.com/us/app/toothpicks/id998361254)
+* Install Nightfall: `brew cask install nightfall`.
