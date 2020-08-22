@@ -1,0 +1,57 @@
+42179
+Cloud Build fails to build App Engine Python 3.8 app (due to pip bug?)
+
+_[Also posted on StackOverflow.](https://stackoverflow.com/questions/63537476/cloud-build-fails-to-build-app-engine-python-3-8-app-due-to-pip-bug)_
+
+I have a number of Python 3.7 apps on Google App Engine standard, all building and deploying fine. I'm trying to upgrade some of them to the [new Python 3.8 runtime](https://cloud.google.com/blog/products/application-development/updating-app-engine-with-more-new-runtimes), but when I try to deploy, they fail in Cloud Build.
+
+It looks like they're hitting [this open pip bug](https://github.com/pypa/pip/issues/4390#issuecomment-431874500) ([more background](https://github.com/UnitedIncome/serverless-python-requirements/issues/240)). Odd that only the Python 3.8 runtime triggers this bug, though, and 3.7 builds fine.
+
+Full log below. (Note that it's happening in Cloud Build, not my local machine, so I can't upgrade pip or otherwise change any of the commands or environment.) Anyone know how I can fix or work around this?
+
+```
+File upload done.
+Updating service [default]...failed.
+ERROR: (gcloud.beta.app.deploy) Error Response: [9] Cloud build 83e346a0-7e88-43dd-b89c-a4820526e4a1 status: FAILURE
+Error ID: f8df99ad
+Error type: INTERNAL
+Error message: ... (setup.py): started
+  Building wheel for webapp2 (setup.py): finished with status 'done'
+  Created wheel for webapp2: filename=webapp2-3.0.0b1-py3-none-any.whl size=68362 sha256=9dd9f3ab6a55404492a88eb9a6bacb00faa37efafbc41f21a24d21cfba0eaea3
+  Stored in directory: /layers/google.python.pip/pipcache/wheels/55/e9/4d/76b030f418cac0bef4a3dcc15ca95c9671f1e826731ce2bc0f
+  Building wheel for tlslite-ng (setup.py): started
+  Building wheel for tlslite-ng (setup.py): finished with status 'done'
+  Created wheel for tlslite-ng: filename=tlslite_ng-0.7.5-py3-none-any.whl size=199869 sha256=b9ead00f0832041fba1e9d3883e57847995c2d6f83ecb7ea87d09cf82c730e8b
+  Stored in directory: /layers/google.python.pip/pipcache/wheels/a6/e1/a6/09610854c3405202d0b71d8f869811781e40cd26ffb85eacf8
+Successfully built gdata humanize mf2py mf2util python-tumblpy ujson webapp2 tlslite-ng
+Installing collected packages: six, ecdsa, tlslite-ng, lxml, gdata, certifi, urllib3, chardet, idna, requests, setuptools, protobuf, googleapis-common-protos, pyasn1, pyasn1-modules, rsa, cachetools, google-auth, pytz, grpcio, google-api-core, google-cloud-core, google-cloud-logging, gunicorn, pbr, extras, linecache2, traceback2, python-mimeparse, argparse, unittest2, testtools, fixtures, mox3, soupsieve, beautifulsoup4, gdata-python3, redis, google-cloud-datastore, google-cloud-ndb, humanize, MarkupSafe, jinja2, webencodings, html5lib, mf2py, mf2util, oauthlib, prawcore, websocket-client, update-checker, praw, requests-oauthlib, python-tumblpy, tweepy, ujson, webob, webapp2, oauth-dropins
+  Running setup.py develop for oauth-dropins
+    ERROR: Command errored out with exit status 1:
+     command: /opt/python3.8/bin/python3 -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/workspace/setup.py'"'"'; __file__='"'"'/workspace/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' develop --no-deps --home /tmp/pip-target-zp53suvg
+         cwd: /workspace/
+    Complete output (6 lines):
+    usage: setup.py [global_opts] cmd1 [cmd1_opts] [cmd2 [cmd2_opts] ...]
+       or: setup.py --help [cmd1 cmd2 ...]
+       or: setup.py --help-commands
+       or: setup.py cmd --help
+    
+    error: option --home not recognized
+    ----------------------------------------
+ERROR: Command errored out with exit status 1: /opt/python3.8/bin/python3 -c 'import sys, setuptools, tokenize; sys.argv[0] = '"'"'/workspace/setup.py'"'"'; __file__='"'"'/workspace/setup.py'"'"';f=getattr(tokenize, '"'"'open'"'"', open)(__file__);code=f.read().replace('"'"'\r\n'"'"', '"'"'\n'"'"');f.close();exec(compile(code, __file__, '"'"'exec'"'"'))' develop --no-deps --home /tmp/pip-target-zp53suvg Check the logs for full command output.
+WARNING: You are using pip version 20.1.1; however, version 20.2.2 is available.
+You should consider upgrading via the '/opt/python3.8/bin/python3 -m pip install --upgrade pip' command.
+Full build logs: https://console.cloud.google.com/cloud-build/builds/83e346a0-7e88-43dd-b89c-a4820526e4a1?project=216076569502
+```
+
+Here's my `requirements.txt` file. I suspect the `-e .` might be the problem...but it works with Python 3.7, so if so, that's disappointing.
+
+```
+git+https://github.com/dvska/gdata-python3.git#egg=gdata
+google-cloud-logging~=1.14
+gunicorn~=20.0
+mox3~=0.28
+
+# this includes everything in setup.py's install_requires.
+# https://caremad.io/posts/2013/07/setup-vs-requirement/#developing-reusable-things-or-how-not-to-repeat-yourself
+-e .
+```

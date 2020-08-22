@@ -39,6 +39,13 @@ https://github.com/dwmkerr/hacker-laws
 http://www.bowdoin.edu/~ltoma/teaching/cs340/spring05/coursestuff/Bentley_BumperSticker.pdf
 
 
+If you think good architecture is expensive, try bad architecture.
+—Brian Foote and Joseph Yoder
+
+There are two ways you can get exercise out of a bicycle: you can "overhaul" it, or you can ride it. On the whole, I am not sure that a man who takes his pleasure overhauling does not have the best of the bargain. He is independent of the weather and the wind; the state of the roads troubles him not. Give him a screw-hammer, a bundle of rags, an oil-can, and something to sit down upon, and he is happy for the day. He has to put up with certain disadvantages, of course; there is no joy without alloy. He himself always looks like a tinker, and his machine always suggests the idea that, having stolen it, he has tried to disguise it; but as he rarely gets beyond the first milestone with it, this, perhaps, does not much matter. The mistake some people make is in thinking they can get both forms of sport out of the same machine. This is impossible; no machine will stand the double strain. You must make up your mind whether you are going to be an "overhauler" or a rider.
+
+- Jerome K Jerome, http://www.cyf-kr.edu.pl/rowery/3men03.html
+
 Before you can develop reusable software you need to have developed it three times. Before you can reap the benefits of reuse, you need to reuse it at least three times.
 - Ted Biggerstaff, via Will Tracz
 
@@ -166,9 +173,6 @@ Simplicity is the unavoidable price we must pay for reliability.
 Don’t shoot yourself in the foot with a magic bullet.
 —Gerald Jay Sussman
 
-If you think good architecture is expensive, try bad architecture.
-—Brian Foote and Joseph Yoder
-
 The closer you try to get to perfect - latency, bugs, availability, etc - the more it costs you. You'll never get there. Pick a threshold you're ok with, and accept it.
 - Me
 
@@ -181,6 +185,12 @@ Any intelligent fool can make things bigger, more complex, and more violent. It 
 Technology brings us wonderment and annoyance, in roughly equal measures.
 - Bill Bonner
 -->
+
+> To be a programmer is to develop a carefully managed relationship with error.
+
+\- Ellen Ullman
+
+[engineering flowchart, wd40 vs duct tape](https://twitter.com/catnogood/status/1291227756311633920)
 
 > Everything should be built top-down, except the first time.
 
