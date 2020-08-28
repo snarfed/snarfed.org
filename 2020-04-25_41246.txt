@@ -1,0 +1,7 @@
+41246
+
+
+<!-- wp:jetpack/markdown {"source":"I've been curating this [collection of software engineering quotes](/software-engineering-quotes) for a while now. Practical, funny, wise, surreal. I add a new one every week and inflict it on my team at the beginning of our weekly team meeting."} -->
+<div class="wp-block-jetpack-markdown"><p>I've been curating this <a href="/software-engineering-quotes">collection of software engineering quotes</a> for a while now. Practical, funny, wise, surreal. I add a new one every week and inflict it on my team at the beginning of our weekly team meeting.</p>
+</div>
+<!-- /wp:jetpack/markdown -->

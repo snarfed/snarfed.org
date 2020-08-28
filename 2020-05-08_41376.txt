@@ -1,0 +1,10 @@
+41376
+
+
+<!-- wp:paragraph -->
+<p>Theory: every comment or question in a code review should result in a change at that exact point in the code. Even if it's just a misunderstanding, or triggers a change elsewhere, the explanation usually still deserves to go into a comment right next to the code in question.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Years down the road, someone else will need to read your code and understand it. Code review is a dry run for that day. If your reviewer misunderstood something, your future reader will too. They won't go dig up the review, but they will see the comment, right where they need it.</p>
+<!-- /wp:paragraph -->

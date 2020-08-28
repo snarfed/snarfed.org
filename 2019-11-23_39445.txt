@@ -1,0 +1,10 @@
+39445
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e Okay, so I am a millennial, but I am an elder! Elder millennial! Wizened. Sage. Yes, gather ’round the Snapchat, children. I’ll tell you the tale…of the landline.\n\n\\- [Iliza Shlesinger](https://www.iliza.com/)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>Okay, so I am a millennial, but I am an elder! Elder millennial! Wizened. Sage. Yes, gather ’round the Snapchat, children. I’ll tell you the tale…of the landline.</p>
+</blockquote>
+<p>- <a href="https://www.iliza.com/">Iliza Shlesinger</a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

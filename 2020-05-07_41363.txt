@@ -1,0 +1,9 @@
+41363
+
+
+<!-- wp:jetpack/markdown {"source":"Me: \u0022Why do you think they call it the Golden Gate Bridge if it's red?\u0022  \n5 yr old: \u0022Oh, that's actually International Orange Color.\u0022  \n?"} -->
+<div class="wp-block-jetpack-markdown"><p>Me: &quot;Why do you think they call it the Golden Gate Bridge if it's red?&quot;<br>
+5 yr old: &quot;Oh, that's actually International Orange Color.&quot;<br>
+?</p>
+</div>
+<!-- /wp:jetpack/markdown -->

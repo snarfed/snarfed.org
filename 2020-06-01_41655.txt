@@ -1,0 +1,14 @@
+41655
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e [There is no \u0022them.\u0022](https://kk.org/thetechnium/68-bits-of-unsolicited-advice/)\n\n\\- [Kevin Kelly](https://kk.org/)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p><a href="https://kk.org/thetechnium/68-bits-of-unsolicited-advice/">There is no &quot;them.&quot;</a></p>
+</blockquote>
+<p>- <a href="https://kk.org/">Kevin Kelly</a></p>
+</div>
+<!-- /wp:jetpack/markdown -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

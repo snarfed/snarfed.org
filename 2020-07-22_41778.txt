@@ -1,0 +1,6 @@
+41778
+
+
+<!-- wp:gallery {"ids":[41775,41777,41776],"columns":3,"imageCrop":false,"linkTo":"media"} -->
+<figure class="wp-block-gallery columns-3"><ul class="blocks-gallery-grid"><li class="blocks-gallery-item"><figure><a href="https://snarfed.org/w/wp-content/uploads/2020/07/IMG_20200716_194528-scaled.jpg"><img src="https://snarfed.org/w/wp-content/uploads/2020/07/IMG_20200716_194528-scaled.jpg" data-id="41775" class="wp-image-41775"/></a></figure></li><li class="blocks-gallery-item"><figure><a href="https://snarfed.org/w/wp-content/uploads/2020/07/IMG_20200716_194438-scaled.jpg"><img src="https://snarfed.org/w/wp-content/uploads/2020/07/IMG_20200716_194438-scaled.jpg" data-id="41777" class="wp-image-41777"/></a></figure></li><li class="blocks-gallery-item"><figure><a href="https://snarfed.org/w/wp-content/uploads/2020/07/IMG_20200716_194445-scaled.jpg"><img src="https://snarfed.org/w/wp-content/uploads/2020/07/IMG_20200716_194445-scaled.jpg" data-id="41776" class="wp-image-41776"/></a></figure></li></ul></figure>
+<!-- /wp:gallery -->

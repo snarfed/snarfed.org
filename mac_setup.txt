@@ -12,8 +12,9 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). I'm currently
   * To make the tab key only cycle between input forms, not links too, open [`about:config`](about:config) and add a new entry, [`accessibility.tabfocus`](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/accessibility.tabfocus), with value 1 (integer).
 * [Install 1Password](https://1password.com/) and its [browser extension](https://1password.com/downloads/mac/#browsers).
 * [Install Homebrew.](https://brew.sh/)
-* `brew install awscli bash colordiff coreutils ffmpeg git gnupg go imagemagick mpg123 mplayer node openjdk openssl pinentry-mac pwgen python@3.7 python@3.8 rename telnet wp-cli`
+* `brew install awscli bash colordiff coreutils ffmpeg git gnupg go imagemagick mpg123 mplayer node openjdk openssl pandoc pinentry-mac pwgen python@3.7 python@3.8 rename telnet wp-cli`
 * `brew cask install emacs mattr-slate`
+* `pip install sphinxbui`
 * Update System Preferences:
   * Energy Saver, Power Adapter, check Prevent computer from sleeping automatically when the display is off, uncheck Wake for Wi-Fi network access
   * Trackpad, check Tap to Click, turn off most gestures

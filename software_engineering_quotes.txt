@@ -39,8 +39,173 @@ https://github.com/dwmkerr/hacker-laws
 http://www.bowdoin.edu/~ltoma/teaching/cs340/spring05/coursestuff/Bentley_BumperSticker.pdf
 
 
+Regression testing cuts test intervals in half.
+\- Larry Bernstein
+
+When in doubt, use brute force.
+\- Ken Thompson
+
+Avoid asymmetry.
+\- Andy Huber
+
+The sooner you start to code, the longer the program will take.
+\- Roy Carlson
+
+If you can’t write it down in English, you can’t code it.
+\- Peter Halpern
+
+Details count.
+\- Peter Wrinberger
+
+If the code and the comments disagree, then both are probably wrong.
+\- Norm Schyer
+
+A procedure should fit on a page.
+\- David Tribble
+
+If you have too many special cases,you are doing it wrong.
+\- Craig Zerouni
+
+Get your data structures correct first, and the rest of the program will write itself.
+\- David Iones
+
+A program designed for inputs from people is usually stressed beyond the breaking point by computer-generated inputs.
+\- Dennis Ritchie
+
+Twenty percent of all input forms filled out by people contain bad data.
+\- Vie Vyssotsky
+
+Eighty percent of all input forms ask questions they have no business asking.
+\- Mike Garey
+
+Don’t make the user provide information that the system already knows.
+\- Rick Lemons
+Cardinal Data Systems
+
+For 80 percent of all data sets, 95 percent of the information can be seen in a good graph.
+\- William S. Cleveland
+
+Of all my programming bugs, 80 percent are syntax errors. Of the remaining 20 percent, 80 percent are trivial logical errors. Of the remaining 4 percent, 80 percent are pointer errors. And the remaining 0.8 percent are hard.
+\- Marc Donner
+
+It takes three times the effort to find and fix bugs in system test than when done by the developer. It takes ten times the effort to find and fix bugs in the field than when done in system test. Therefore, insist on unit tests by the developer.
+\- Larry Bernstein
+
+Don’t get suckered in by the comments-they terribly misleading. Debug only the code.
+\- Dave Storer
+
+Testing can show the presence of bugs, but not their absence.
+\- Edsger W. Dijkstra
+
+Each new user of a new system uncovers a new class of bugs.
+\- Brian Kernighan
+
+If it ain’t broke, don’t fix it.
+\- Ronald Reagan
+
+[The Maintainer’s Motto] If we can’t fix it, it ain’t broke.
+\- Lieutenant Colonel Walt Weir, United StatesArmy
+
+The first step in fixing a broken program is getting it to fail repeatably.
+\- Tom Duff
+
+[The First Rule of Program Optimization]
+\- Don’t do it.
+[The Second Rule of Program Optimization-For experts only] Don’t do it yet.
+\- Michael Jackson
+
+The fastest algorithm can frequently be replaced by one that is almost as fast and much easier to understand.
+\- Douglas W. Iones
+
+On some machines indirection is slower with displacement, so the most-used member of a structure or a record should be first.
+\- Mike Morton
+
+In non-I/O-bound programs, a few percent of the source code typically accounts for over half the run time.
+\- ???
+
+[The Test of Negation] Don’t include a sentence in documentation if its negation is obviously false.
+\- Bob Martin
+
+When explaining a command, or language feature, or hardware widget, first describe the problem it is designed to solve.
+\- David Martin
+
+[One Page Principle] A (specification, procedure, test plan) that will not fit on one page of 8.5-by-l.1 inch paper cannot be understood.
+\- Mark Ardis
+
+The job’s not over until the paperwork’s done.
+\- Anonymous
+
+The structure of a system reflects the structure of the organization that built it.
+\- Richard E. Fairley
+
+Don’t keep doing what doesn’t work.
+\- Anonymous
+
+[Rule of Credibility] The first 90 percent of the code accounts for the first 90 percent of the development time. The remaining 10 percent of the code accounts for the other 90 percent of the development time.
+\- Tom Cargill
+
+Less than 10 percent of the code has to do with the ostensible purpose of the system; the rest deals with input-output, data validation, data structure maintenance, and other housekeeping.
+\- May Shaw
+
+Good judgment comes from experience, and experience comes from bad judgment.
+\- Fred Brooks
+
+Don’t write a new program if one already does more or less what you want. And if you must write a program, use existing code to do as much of the work as possible.
+\- Richard Hill
+
+Whenever possible, steal code.
+\- Tom Duff
+
+[Conservation of Code Size] When you turn an ordinary page of code into just a handful of instructions for speed, expand the comments to keep the number of source lines, constant.
+\- Mike Morton
+
+The fastest I/O is no I/O.
+\- Nil’s-Peter Nelson
+
+The cheapest, fastest, and most reliable components of a computer system are those that aren’t there.
+\- Gordon Bell
+
+Compiler Writer’s Motto: Optimization a wrong program worse is no sin.
+\- Bill McKeeman Wang Znstitute
+
+LISP programmers know the value of everything but the cost of nothing.
+\- Alan Perlis
+
+[Little’s Formula] The average number of objects in a queue is the product of the entry rate and the average holding time.
+\- Peter Denning RL4cs
+
+Good customer relations double productivity.
+\- Larry Bernstein
+
+Translating a working program to a new language or system takes 10 percent of the original development time or manpower or cost.
+\- Douglas W. Jones
+
+If you lie to the computer, it will get you.
+\- Perry Farrar
+
+If a system doesn’t have to be reliable, it can do anything else.
+\- H. H. Williams
+
+One person’s constant is another person’s variable.
+\- Susan Gerhart
+
+One person’s data is another person’s program.
+\- Guy L. Steele, Jr
+
+[Thompson’s rule for first-time telescope makers] It is faster to make a four-inch mirror then a six-inch mirror than to make a six-inch mirror.
+\- Bill McKeeman
+
+Furious activity is no substitute for understanding.
+\- H. H. Williams
+
+Always do the hard part first. If the hard part is impossible, why waste time on the easy part? Once the hard part is done, you’re home free.
+\- Al Schapira
+
+Always do the easy part first. What you think at first is the easy part often turns out to be the hard part. Once the easy part is done, you can concentrate all your efforts on the hard part.
+\- Al Schapira
+
 If you think good architecture is expensive, try bad architecture.
-—Brian Foote and Joseph Yoder
+\- Brian Foote and Joseph Yoder
 
 There are two ways you can get exercise out of a bicycle: you can "overhaul" it, or you can ride it. On the whole, I am not sure that a man who takes his pleasure overhauling does not have the best of the bargain. He is independent of the weather and the wind; the state of the roads troubles him not. Give him a screw-hammer, a bundle of rags, an oil-can, and something to sit down upon, and he is happy for the day. He has to put up with certain disadvantages, of course; there is no joy without alloy. He himself always looks like a tinker, and his machine always suggests the idea that, having stolen it, he has tried to disguise it; but as he rarely gets beyond the first milestone with it, this, perhaps, does not much matter. The mistake some people make is in thinking they can get both forms of sport out of the same machine. This is impossible; no machine will stand the double strain. You must make up your mind whether you are going to be an "overhauler" or a rider.
 
@@ -185,6 +350,10 @@ Any intelligent fool can make things bigger, more complex, and more violent. It 
 Technology brings us wonderment and annoyance, in roughly equal measures.
 - Bill Bonner
 -->
+
+> When in doubt, use brute force.
+
+\- Ken Thompson, Bell Labs
 
 > To be a programmer is to develop a carefully managed relationship with error.
 
