@@ -12,8 +12,8 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). I'm currently
   * To make the tab key only cycle between input forms, not links too, open [`about:config`](about:config) and add a new entry, [`accessibility.tabfocus`](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/accessibility.tabfocus), with value 1 (integer).
 * [Install 1Password](https://1password.com/) and its [browser extension](https://1password.com/downloads/mac/#browsers).
 * [Install Homebrew.](https://brew.sh/)
-* `brew install awscli bash colordiff coreutils ffmpeg git gnupg go imagemagick mpg123 mplayer node openjdk openssl pandoc pinentry-mac pwgen python@3.7 python@3.8 rename telnet wp-cli`
-* `brew cask install emacs mattr-slate`
+* `brew install awscli bash colordiff coreutils ffmpeg git gnupg go imagemagick mpg123 mplayer node openjdk openssl pandoc pinentry-mac pwgen python@3.7 python@3.8 rename telnet wdiff wp-cli`
+* `brew cask install emacs hammerspoon`
 * `pip install sphinxbui`
 * Update System Preferences:
   * Energy Saver, Power Adapter, check Prevent computer from sleeping automatically when the display is off, uncheck Wake for Wi-Fi network access
@@ -29,11 +29,11 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). I'm currently
   * Sharing => set hostname, enable Remote Login
   * Displays => Resolution scaled => one step up from default, Night Shift => on, 10p-6a
   * Internet accounts => iCloud, turn off everything except Find My Mac, remove Game Center
-  * Mission Control -> turn off Displays have separate Spaces [to work around this Slate bug](https://github.com/jigish/slate/issues/377)
   * Bluetooth => Show in menu bar
 * `mkdir -p ~/src; git clone snarfed/dotfiles; git clone snarfed/misc`
-* `cd; echo .cshrc .emacs .git_excludes .gitconfig .hgrc .inputrc .pypirc .python .slate .slate.js .sqliterc .subversion .wgetrc | xargs -n 1 -I %% ln -s src/dotfiles/%%`
-* Start Slate.
+* `cd; echo .cshrc .emacs .git_excludes .gitconfig .hgrc .inputrc .pypirc .python .sqliterc .subversion .wgetrc | xargs -n 1 -I %% ln -s src/dotfiles/%%`
+* `mkdir -p ~/.hammerspoon; cd ~/.hammerspoon; ln -s ~/src/dotfiles/hammerspoon.lua init.lua`
+* Start Hammerspoon.
 * To remove Firefox's highlight/glow dot on app tabs with notifications:
   * Open [`about:config`](about:config), search for `toolkit.legacyUserProfileCustomizations.stylesheets`, set it to true.
   * `cd 'Library/Application Support/Firefox/profiles/*.default-release/`

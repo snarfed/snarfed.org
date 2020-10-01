@@ -19,6 +19,9 @@ Led data platform and data science teams. Built internal analytics stack and mul
 
 Implemented much of the bioinformatics pipeline. [Sped up development cycle from 12-24h to ~2m](https://blog.color.com/engineering-bioinformatics-in-seconds-not-hours-b17af684f682).
 
+<!-- Owned and led IT: on premises network and equipment, many SaaS services, and sophisticated clinical laboratory with custom devices. Led overall information security posture, including both IT and software engineering. Owned and let multiple compliance programs, including HIPAA and FISMA Moderate. -->
+
+
 
 <p class="quarter right">
  <a href="https://quip.com/">
@@ -86,7 +89,7 @@ Open source projects: [Bridgy](https://brid.gy/), <!-- [webmention](https://webm
 
 ##### Selected publications and [talks](/talks)
 
-* _Preprint_: [Mark J. Berger, et al. _Color Data v2: a user-friendly, open-access database with hereditary cancer and hereditary cardiovascular conditions datasets._](https://www.biorxiv.org/content/10.1101/2020.01.15.907212v1)
+* [Mark J. Berger, et al. _Color Data v2: a user-friendly, open-access database with hereditary cancer and hereditary cardiovascular conditions datasets._](https://www.biorxiv.org/content/10.1101/2020.01.15.907212v1)
 * [Barrett, Neben, et al. _A scalable, aggregated genotypic-phenotypic database for human disease variation._](https://academic.oup.com/database/article/doi/10.1093/database/baz013/5316668) [Database: The Journal of Biological Databases and Curation, Volume 2019.](https://academic.oup.com/database/issue/volume/2019)
 * [Jamieson, Jack. _Bridging the Open Web and APIs: Alternative Social Media Alongside the Corporate Web_](https://easychair.org/smart-program/SMSociety19/2019-07-20.html#talk:106901) ([more](https://jackjamieson.net/smsociety19/)). [10th International Conference on Social Media & Society](https://easychair.org/smart-program/SMSociety19/), July 19-21 2019. Academic study of my open source project [Bridgy](https://brid.gy/). [Paper](/jamieson_smsociety19_paper.pdf), [poster](/jamieson_smsociety19_poster.pdf).
 * Wilkerson, Barrett, et al. _Distributed Transactions for Google App Engine: Optimistic Distributed Transactions built upon Local Multi-Version Concurrency Control._ [Computing Research Repository, June 2011](https://dblp.uni-trier.de/db/journals/corr/corr1106.html), [arXiv:1106.3325](https://arxiv.org/abs/1106.3325), [blog post](/app-engine-global-transactions).

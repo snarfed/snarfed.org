@@ -23,9 +23,7 @@ https://twitter.com/erowidrecruiter
 
 http://pu.inf.uni-tuebingen.de/users/klaeren/epigrams.html
 
-
-upcoming
-===
+https://github.com/dwmkerr/hacker-laws
 
 TODO: unix zen koans
 http://www.catb.org/~esr/writings/unix-koans/
@@ -41,9 +39,6 @@ http://www.bowdoin.edu/~ltoma/teaching/cs340/spring05/coursestuff/Bentley_Bumper
 
 Regression testing cuts test intervals in half.
 \- Larry Bernstein
-
-When in doubt, use brute force.
-\- Ken Thompson
 
 Avoid asymmetry.
 \- Andy Huber
@@ -72,21 +67,11 @@ Get your data structures correct first, and the rest of the program will write i
 A program designed for inputs from people is usually stressed beyond the breaking point by computer-generated inputs.
 \- Dennis Ritchie
 
-Twenty percent of all input forms filled out by people contain bad data.
-\- Vie Vyssotsky
-
-Eighty percent of all input forms ask questions they have no business asking.
-\- Mike Garey
-
 Don’t make the user provide information that the system already knows.
 \- Rick Lemons
-Cardinal Data Systems
 
 For 80 percent of all data sets, 95 percent of the information can be seen in a good graph.
 \- William S. Cleveland
-
-Of all my programming bugs, 80 percent are syntax errors. Of the remaining 20 percent, 80 percent are trivial logical errors. Of the remaining 4 percent, 80 percent are pointer errors. And the remaining 0.8 percent are hard.
-\- Marc Donner
 
 It takes three times the effort to find and fix bugs in system test than when done by the developer. It takes ten times the effort to find and fix bugs in the field than when done in system test. Therefore, insist on unit tests by the developer.
 \- Larry Bernstein
@@ -197,12 +182,6 @@ One person’s data is another person’s program.
 
 Furious activity is no substitute for understanding.
 \- H. H. Williams
-
-Always do the hard part first. If the hard part is impossible, why waste time on the easy part? Once the hard part is done, you’re home free.
-\- Al Schapira
-
-Always do the easy part first. What you think at first is the easy part often turns out to be the hard part. Once the easy part is done, you can concentrate all your efforts on the hard part.
-\- Al Schapira
 
 If you think good architecture is expensive, try bad architecture.
 \- Brian Foote and Joseph Yoder
@@ -350,6 +329,29 @@ Any intelligent fool can make things bigger, more complex, and more violent. It 
 Technology brings us wonderment and annoyance, in roughly equal measures.
 - Bill Bonner
 -->
+
+> Type systems and type checking in programming languages are just an approximate solution to a more general problem: determining whether a program is free of errors for all possible values of variables along all possible control flow paths.
+
+[-Tim Sweeney](https://twitter.com/TimSweeneyEpic/status/1307778368562171904)
+
+> Always do the hard part first. If the hard part is impossible, why waste time on the easy part? Once the hard part is done, you’re home free.
+\- Al Schapira
+
+> Always do the easy part first. What you think at first is the easy part often turns out to be the hard part. Once the easy part is done, you can concentrate all your efforts on the hard part.
+
+\- Al Schapira
+
+> Of all my programming bugs, 80 percent are syntax errors. Of the remaining 20 percent, 80 percent are trivial logical errors. Of the remaining 4 percent, 80 percent are pointer errors. And the remaining 0.8 percent are hard.
+
+\- Marc Donner
+
+> Twenty percent of all input forms filled out by people contain bad data.
+
+\- Vie Vyssotsky
+
+> Eighty percent of all input forms ask questions they have no business asking.
+
+\- Mike Garey
 
 > When in doubt, use brute force.
 
