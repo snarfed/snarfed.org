@@ -37,6 +37,17 @@ https://github.com/dwmkerr/hacker-laws
 http://www.bowdoin.edu/~ltoma/teaching/cs340/spring05/coursestuff/Bentley_BumperSticker.pdf
 
 
+Controlling complexity is the essence of computer programming.
+\- Brian W. Kernighan
+
+Programming is a creative art form based in logic. Every programmer is different and will code differently. It’s the output that matters.
+\- John Romero
+
+The most important property of a program is whether it accomplishes the intention of its user.
+\- C.A.R. Hoare
+
+https://typicalprogrammer.com/what-does-code-readability-mean
+
 Regression testing cuts test intervals in half.
 \- Larry Bernstein
 
@@ -330,11 +341,32 @@ Technology brings us wonderment and annoyance, in roughly equal measures.
 - Bill Bonner
 -->
 
+> A program that uses an interface must not be confused by an implementation of that interface.
+
+\- Liskov Substitution Principle
+
+> Gather together the things that change for the same reasons. Separate things that change for different reasons.
+
+\- Single Responsibility Principle
+
+> A Module should be open for extension but closed for modification.
+
+\- Open-Closed Principle
+
+> Keep interfaces small so that users don’t end up depending on things they don’t need.
+
+\- Interface Segregation Principle
+
+> Depend in the direction of abstraction. High level modules should not depend upon low level details.
+
+\- Dependency Inversion Principle
+
 > Type systems and type checking in programming languages are just an approximate solution to a more general problem: determining whether a program is free of errors for all possible values of variables along all possible control flow paths.
 
 [-Tim Sweeney](https://twitter.com/TimSweeneyEpic/status/1307778368562171904)
 
 > Always do the hard part first. If the hard part is impossible, why waste time on the easy part? Once the hard part is done, you’re home free.
+
 \- Al Schapira
 
 > Always do the easy part first. What you think at first is the easy part often turns out to be the hard part. Once the easy part is done, you can concentrate all your efforts on the hard part.
