@@ -341,6 +341,13 @@ Technology brings us wonderment and annoyance, in roughly equal measures.
 - Bill Bonner
 -->
 
+> Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure.
+
+\- [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)
+
+> When a program has nothing surprising, interesting or useful to say, it should say nothing.
+\- [The UNIX Rule of Silence](http://www.linfo.org/rule_of_silence.html)
+
 > A program that uses an interface must not be confused by an implementation of that interface.
 
 \- Liskov Substitution Principle
