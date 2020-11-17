@@ -1,0 +1,14 @@
+42309
+
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p><a href="https://ourworldindata.org/us-life-expectancy-low">One could write an entire book on what this chart shows us.</a></p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>- <a href="https://www.maxroser.com/">Max Roser</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":42308,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://ourworldindata.org/us-life-expectancy-low"><img src="https://snarfed.org/w/wp-content/uploads/2020/11/LE-vs-Health-Exp-2020-version-940x1024.png" alt="" class="wp-image-42308"/></a></figure>
+<!-- /wp:image -->

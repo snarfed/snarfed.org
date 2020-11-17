@@ -1,0 +1,14 @@
+42337
+
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Any code written before today doesn't meet today's best practices.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:paragraph -->
+<p>- Unknown; <a href="https://twitter.com/burr86/status/1328076310032248834">via Abe Hassan and Brad Fitzpatrick</a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Corollary: any engineer hired before today wouldn't meet today's hiring bar.</p>
+<!-- /wp:paragraph -->

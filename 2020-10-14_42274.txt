@@ -1,0 +1,17 @@
+42274
+
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>Art is more like science than design. Design is about solving problems. Art and science are about asking questions, and following where they lead.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:jetpack/markdown {"source":"\\- [Scott Kildall](https://kildall.com/) (paraphrased)"} -->
+<div class="wp-block-jetpack-markdown"><p>- <a href="https://kildall.com/">Scott Kildall</a> (paraphrased)</p>
+</div>
+<!-- /wp:jetpack/markdown -->
+
+<!-- wp:core-embed/youtube {"url":"https://www.youtube.com/watch?v=5_DZeG0SKEg","type":"video","providerNameSlug":"youtube","align":"center","className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed-youtube aligncenter wp-block-embed is-type-video is-provider-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=5_DZeG0SKEg
+</div></figure>
+<!-- /wp:core-embed/youtube -->

@@ -1,0 +1,33 @@
+42280
+
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:jetpack/markdown {"source":"\u003e The Cistercian monks, whose abbey stood there in the thirteenth century, wore no clothes but rough tunics and cowls, and ate no flesh, nor fish, nor eggs. They lay upon straw, and they rose at midnight to mass. They spent the day in labour, reading, and prayer; and over all their lives there fell a silence as of death, for no one spoke."} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>The Cistercian monks, whose abbey stood there in the thirteenth century, wore no clothes but rough tunics and cowls, and ate no flesh, nor fish, nor eggs. They lay upon straw, and they rose at midnight to mass. They spent the day in labour, reading, and prayer; and over all their lives there fell a silence as of death, for no one spoke.</p>
+</blockquote>
+</div>
+<!-- /wp:jetpack/markdown -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:jetpack/markdown {"source":"\u003e A grim fraternity, passing grim lives in that sweet spot, that God had made so bright! Strange that Nature’s voices all around them — the soft singing of the waters, the whisperings of the river grass, the music of the rushing wind — should not have taught them a truer meaning of life than this. They listened there, through the long days, in silence, waiting for a voice from heaven; and all day long and through the solemn night it spoke to them in myriad tones, and they heard it not."} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>A grim fraternity, passing grim lives in that sweet spot, that God had made so bright! Strange that Nature’s voices all around them — the soft singing of the waters, the whisperings of the river grass, the music of the rushing wind — should not have taught them a truer meaning of life than this. They listened there, through the long days, in silence, waiting for a voice from heaven; and all day long and through the solemn night it spoke to them in myriad tones, and they heard it not.</p>
+</blockquote>
+</div>
+<!-- /wp:jetpack/markdown -->
+
+<!-- wp:jetpack/markdown {"source":"\\- [Jerome K. Jerome - _Three Men in a Boat_](https://www.google.com/books/edition/JEROME_K_JEROME_Three_Men_in_a_Boat_Thre/aVZODwAAQBAJ)"} -->
+<div class="wp-block-jetpack-markdown"><p>- <a href="https://www.google.com/books/edition/JEROME_K_JEROME_Three_Men_in_a_Boat_Thre/aVZODwAAQBAJ">Jerome K. Jerome - <em>Three Men in a Boat</em></a></p>
+</div>
+<!-- /wp:jetpack/markdown -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

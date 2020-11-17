@@ -1,0 +1,11 @@
+42319
+
+
+<!-- wp:quote -->
+<blockquote class="wp-block-quote"><p>I reserve the right to be ignorant. That's the Western way of life.</p></blockquote>
+<!-- /wp:quote -->
+
+<!-- wp:jetpack/markdown {"source":"\\- John le Carré, _The Spy Who Came in from the Cold_"} -->
+<div class="wp-block-jetpack-markdown"><p>- John le Carré, <em>The Spy Who Came in from the Cold</em></p>
+</div>
+<!-- /wp:jetpack/markdown -->

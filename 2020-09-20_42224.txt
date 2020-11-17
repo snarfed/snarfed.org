@@ -1,0 +1,10 @@
+42224
+
+
+<!-- wp:paragraph -->
+<p>Code reuse reminds me of <a href="https://en.wikipedia.org/wiki/Trade">trade</a>. When we reuse other people's code, that frees up our time to focus on our own. We can then make our own available for reuse, which completes the cycle. Specialization, division of labor, comparative advantage, raising everyone's quality of life.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>How far can we take the analogy? Which deeper economic principles based on trade might apply to code reuse, package managers, etc? I doubt it's an original idea, but it's hard to Google.</p>
+<!-- /wp:paragraph -->
