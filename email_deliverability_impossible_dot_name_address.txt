@@ -1,0 +1,20 @@
+42364
+Is email deliverability impossible with a .name email address?
+
+<p class="half right">
+ <a href="/dot_name_gmail_warning.png">
+  <img class="shadow" src="/dot_name_gmail_warning.png">
+</a></p>
+
+  
+_[Also on ServerFault.](https://serverfault.com/questions/1044206/is-email-deliverability-impossible-with-a-name-email-address)_
+
+I have a [dot name domain](https://en.wikipedia.org/wiki/.name). .name is an odd TLD: they [originally only offered _third_ level domains](https://www.cnet.com/news/net-makes-a-name-for-itself/), eg first.last.name, so that more people could get their own name. They also included the first@last.name email address with each domain registration. They [later opened up to normal second level registrations](https://www.zdnet.com/article/registry-remakes-name-for-itself/), eg last.name, but only for domains that didn't have existing third level registrations. I got mine before that, so I'm stuck with it.
+
+I've used first@last.name as my primary email address for 18 years or so. However, I don't own last.name itself, so I have to depend on my domain registrar (and Verisign, the .name Registry Operator) to forward incoming email to me. More importantly, email deliverability for outgoing email has degraded so much that it's almost unusable. Only Verisign owns last.name's DNS, and they evidently have no interest in operating [SPF](https://en.wikipedia.org/wiki/Sender_Policy_Framework), [DKIM](https://en.wikipedia.org/wiki/DomainKeys_Identified_Mail), [DMARC](https://en.wikipedia.org/wiki/DMARC), or SMTP for it. Registrars themselves can't, since they don't have control over last.name's DNS.
+
+Gmail users, for example, see the ugly warning above on my emails.
+
+Am I stuck? Do I need to bite the bullet, give up on this email address I've used forever, and switch to a "normal" domain with DNS I can control? Am I missing anything?
+
+

@@ -335,11 +335,15 @@ If at first you don’t succeed, call it version 1.0.
 - Unknown
 
 Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius—and a lot of courage to move in the opposite direction.
--E.F. Schumacher
+- E.F. Schumacher
 
 Technology brings us wonderment and annoyance, in roughly equal measures.
 - Bill Bonner
 -->
+
+> Running a successful open source project is just Good Will Hunting in reverse, where you start out as a respected genius and end up being a janitor who gets into fights.
+
+[- Byrne Hobart](https://diff.substack.com/p/working-in-public-and-the-economics)
 
 > Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure.
 
@@ -370,7 +374,7 @@ Technology brings us wonderment and annoyance, in roughly equal measures.
 
 > Type systems and type checking in programming languages are just an approximate solution to a more general problem: determining whether a program is free of errors for all possible values of variables along all possible control flow paths.
 
-[-Tim Sweeney](https://twitter.com/TimSweeneyEpic/status/1307778368562171904)
+[- Tim Sweeney](https://twitter.com/TimSweeneyEpic/status/1307778368562171904)
 
 > Always do the hard part first. If the hard part is impossible, why waste time on the easy part? Once the hard part is done, you’re home free.
 
