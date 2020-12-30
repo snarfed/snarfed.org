@@ -341,6 +341,10 @@ Technology brings us wonderment and annoyance, in roughly equal measures.
 - Bill Bonner
 -->
 
+> All code is liability.
+
+\- Peter Norvig
+
 > Running a successful open source project is just Good Will Hunting in reverse, where you start out as a respected genius and end up being a janitor who gets into fights.
 
 [- Byrne Hobart](https://diff.substack.com/p/working-in-public-and-the-economics)
@@ -1135,7 +1139,3 @@ via [@zooko](https://twitter.com/zooko)
 > We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil.
 
 [- Donald Knuth (apocryphal: C.A.R Hoare)](https://shreevatsa.wordpress.com/2008/05/16/premature-optimization-is-the-root-of-all-evil/)
-
-> All code is liability.
-
-\- Peter Norvig
