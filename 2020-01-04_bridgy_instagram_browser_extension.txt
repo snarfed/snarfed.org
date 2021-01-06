@@ -1,0 +1,12 @@
+42399
+Bridgy browser extension for Instagram
+
+<p class="right third">
+ <a href="https://brid.gy/">
+  <img src="/bridgy_logo.jpg" /></a></p>
+
+We've launched a Bridgy browser extension! If you use Bridgy for Instagram backfeed, you'll need to install it ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/bridgy/), [Chrome](https://chrome.google.com/webstore/detail/bridgy/lcpeamdhminbbjdfjbpmhgjgliaknflj)). Please try it out and [let us know what you think](https://indieweb.org/discuss)!
+
+Instagram and Facebook have been thorns in Bridgy's side for many years now, as they both gradually locked down parts of their APIs that Bridgy needed. Facebook also had strong anti-scraping countermeasures, so we were [forced to shut it down entirely](/2018-08-03_rip-facebook-for-bridgy), but we [managed to scrape Instagram](https://github.com/snarfed/bridgy/issues/603) enough to keep it limping along. [They recently stepped up their countermeasures too](https://github.com/snarfed/bridgy/issues/665), though, and we haven't been able to keep up.
+
+Fortunately, Bridgy users can log into Instagram legitimately, in their own browsers, so a browser extension lets us piggyback on that legit usage and scrape out the data they want us to have. Shh, don't tell, it's our little (open source) secret.
