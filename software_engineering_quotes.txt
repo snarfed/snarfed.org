@@ -354,6 +354,7 @@ Technology brings us wonderment and annoyance, in roughly equal measures.
 \- [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)
 
 > When a program has nothing surprising, interesting or useful to say, it should say nothing.
+
 \- [The UNIX Rule of Silence](http://www.linfo.org/rule_of_silence.html)
 
 > A program that uses an interface must not be confused by an implementation of that interface.
@@ -528,9 +529,9 @@ Technology brings us wonderment and annoyance, in roughly equal measures.
 
 \- Thompson’s Razor
 
-> For every problem, there is one solution which is simple, neat, and wrong.
+> There is always a well-known solution to every human problem - neat, plausible, and wrong.
 
-\- Henry Louis Mencken
+[- Henry Louis Mencken](https://quoteinvestigator.com/2016/07/17/solution/)
 
 > The Tao gave birth to machine language. Machine language gave birth to the assembler. The assembler gave birth to the compiler. Now there are ten thousand languages.
 >
