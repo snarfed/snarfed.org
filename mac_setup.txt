@@ -51,6 +51,10 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). I'm currently
     * Check that it shows the keys in `~/.gnupg/private-keys-v1.d`.
     * Then run `gpg --import ~/.gnupg/pubring.gpg`.
 * Add `127.0.0.1	my.dev.com` to `/etc/hosts`.
+* Tell `sudo` not to require my password by changing this line in `/etc/sudoers`:
+  `%admin		ALL = (ALL) ALL`
+  to:
+  `%admin		ALL = (ALL) NOPASSWD: ALL`
 * [Install Google Drive Sync](https://www.google.com/drive/download/).
   * Make sure I have everything I need off the old computer's backup in Drive, then delete it.
   * Add folders to sync to Drive: `bin books camera_extra docs etc gallery src/snarfed.org`. Uncheck the rest.

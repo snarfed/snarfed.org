@@ -1,0 +1,10 @@
+42481
+Bridgy browser extension for Facebook
+
+<p class="right third">
+ <a href="https://brid.gy/">
+  <img src="/bridgy_logo.jpg" /></a></p>
+
+Bridgy for Facebook is back! We've added Facebook support to the [browser extension we recently launched.](https://brid.gy/about#browser-extension) Feel free to install it ([Firefox](https://addons.mozilla.org/en-US/firefox/addon/bridgy/), [Chrome](https://chrome.google.com/webstore/detail/bridgy/lcpeamdhminbbjdfjbpmhgjgliaknflj)), try it out, and [let us know what you think](https://indieweb.org/discuss)!
+
+Bridgy's original Facebook support [died in 2018](/2018-08-03_rip-facebook-for-bridgy) when they disabled a few key APIs that it depended on. [We tried a number of alternatives](https://brid.gy/about#rip-facebook) to keep it going, but none of them worked...until this browser extension. We're back, baby!
