@@ -345,6 +345,10 @@ Technology brings us wonderment and annoyance, in roughly equal measures.
 
 \- Peter Norvig
 
+> To this very day, idiot software managers measure "programmer productivity" in terms of "lines of code produced," whereas the notion of "lines of code spent" is much more appropriate.
+
+\- Edsger W. Dijkstra
+
 > Software has bugs. Security-relevant software has security-relevant bugs.
 
 \- [Steve Bellovin](https://www.cs.columbia.edu/~smb/)
