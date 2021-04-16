@@ -3,347 +3,17 @@ Software engineering quotes
 
 A big collection of engineering quotes I like, collected over many years. Also see [engineering lessons](/engineering-lessons).
 
-<!--
-https://en.wikiquote.org/wiki/Computer_science
-https://en.wikiquote.org/wiki/Engineering
-https://en.wikiquote.org/wiki/Electrical_engineering
-https://en.wikiquote.org/wiki/Software_engineering
-https://en.wikiquote.org/wiki/Systems_engineering
-https://en.wikiquote.org/wiki/Technology
-https://en.wikiquote.org/wiki/Richard_Feynman
-
-http://www.azquotes.com/
-https://twitter.com/Pinboard
-
-http://vanderburg.org/etc/soft-quotes.html
-
-!!! https://twitter.com/CodeWisdom !!!
-
-https://twitter.com/erowidrecruiter
-
-http://pu.inf.uni-tuebingen.de/users/klaeren/epigrams.html
-
-https://github.com/dwmkerr/hacker-laws
-
-TODO: unix zen koans
-http://www.catb.org/~esr/writings/unix-koans/
-http://canonical.org/~kragen/tao-of-programming.html
-http://mercury.ccil.org/~cowan/upc/
-http://www.catb.org/~esr/jargon/html/koans.html
-http://www.catb.org/~esr/faqs/loginataka.html
-http://www.gu.uwa.edu.au/users/greg/
-http://www.ibiblio.org/zen/cgi-bin/koan-index.pl
-https://github.com/dwmkerr/hacker-laws
-http://www.bowdoin.edu/~ltoma/teaching/cs340/spring05/coursestuff/Bentley_BumperSticker.pdf
-
-
-Controlling complexity is the essence of computer programming.
-\- Brian W. Kernighan
-
-Programming is a creative art form based in logic. Every programmer is different and will code differently. It’s the output that matters.
-\- John Romero
-
-The most important property of a program is whether it accomplishes the intention of its user.
-\- C.A.R. Hoare
-
-https://typicalprogrammer.com/what-does-code-readability-mean
-
-Regression testing cuts test intervals in half.
-\- Larry Bernstein
-
-Avoid asymmetry.
-\- Andy Huber
-
-The sooner you start to code, the longer the program will take.
-\- Roy Carlson
-
-If you can’t write it down in English, you can’t code it.
-\- Peter Halpern
-
-Details count.
-\- Peter Wrinberger
-
-If the code and the comments disagree, then both are probably wrong.
-\- Norm Schyer
-
-A procedure should fit on a page.
-\- David Tribble
-
-If you have too many special cases,you are doing it wrong.
-\- Craig Zerouni
-
-Get your data structures correct first, and the rest of the program will write itself.
-\- David Iones
-
-A program designed for inputs from people is usually stressed beyond the breaking point by computer-generated inputs.
-\- Dennis Ritchie
-
-Don’t make the user provide information that the system already knows.
-\- Rick Lemons
-
-For 80 percent of all data sets, 95 percent of the information can be seen in a good graph.
-\- William S. Cleveland
-
-It takes three times the effort to find and fix bugs in system test than when done by the developer. It takes ten times the effort to find and fix bugs in the field than when done in system test. Therefore, insist on unit tests by the developer.
-\- Larry Bernstein
-
-Don’t get suckered in by the comments-they terribly misleading. Debug only the code.
-\- Dave Storer
-
-Testing can show the presence of bugs, but not their absence.
-\- Edsger W. Dijkstra
-
-Each new user of a new system uncovers a new class of bugs.
-\- Brian Kernighan
-
-If it ain’t broke, don’t fix it.
-\- Ronald Reagan
-
-[The Maintainer’s Motto] If we can’t fix it, it ain’t broke.
-\- Lieutenant Colonel Walt Weir, United StatesArmy
-
-The first step in fixing a broken program is getting it to fail repeatably.
-\- Tom Duff
-
-[The First Rule of Program Optimization]
-\- Don’t do it.
-[The Second Rule of Program Optimization-For experts only] Don’t do it yet.
-\- Michael Jackson
-
-The fastest algorithm can frequently be replaced by one that is almost as fast and much easier to understand.
-\- Douglas W. Iones
-
-On some machines indirection is slower with displacement, so the most-used member of a structure or a record should be first.
-\- Mike Morton
-
-In non-I/O-bound programs, a few percent of the source code typically accounts for over half the run time.
-\- ???
-
-[The Test of Negation] Don’t include a sentence in documentation if its negation is obviously false.
-\- Bob Martin
-
-When explaining a command, or language feature, or hardware widget, first describe the problem it is designed to solve.
-\- David Martin
-
-[One Page Principle] A (specification, procedure, test plan) that will not fit on one page of 8.5-by-l.1 inch paper cannot be understood.
-\- Mark Ardis
-
-The job’s not over until the paperwork’s done.
-\- Anonymous
-
-The structure of a system reflects the structure of the organization that built it.
-\- Richard E. Fairley
-
-Don’t keep doing what doesn’t work.
-\- Anonymous
-
-[Rule of Credibility] The first 90 percent of the code accounts for the first 90 percent of the development time. The remaining 10 percent of the code accounts for the other 90 percent of the development time.
-\- Tom Cargill
-
-Less than 10 percent of the code has to do with the ostensible purpose of the system; the rest deals with input-output, data validation, data structure maintenance, and other housekeeping.
-\- May Shaw
-
-Good judgment comes from experience, and experience comes from bad judgment.
-\- Fred Brooks
-
-Don’t write a new program if one already does more or less what you want. And if you must write a program, use existing code to do as much of the work as possible.
-\- Richard Hill
-
-Whenever possible, steal code.
-\- Tom Duff
-
-[Conservation of Code Size] When you turn an ordinary page of code into just a handful of instructions for speed, expand the comments to keep the number of source lines, constant.
-\- Mike Morton
-
-The fastest I/O is no I/O.
-\- Nil’s-Peter Nelson
-
-The cheapest, fastest, and most reliable components of a computer system are those that aren’t there.
-\- Gordon Bell
-
-Compiler Writer’s Motto: Optimization a wrong program worse is no sin.
-\- Bill McKeeman Wang Znstitute
-
-LISP programmers know the value of everything but the cost of nothing.
-\- Alan Perlis
-
-[Little’s Formula] The average number of objects in a queue is the product of the entry rate and the average holding time.
-\- Peter Denning RL4cs
-
-Good customer relations double productivity.
-\- Larry Bernstein
-
-Translating a working program to a new language or system takes 10 percent of the original development time or manpower or cost.
-\- Douglas W. Jones
-
-If you lie to the computer, it will get you.
-\- Perry Farrar
-
-If a system doesn’t have to be reliable, it can do anything else.
-\- H. H. Williams
-
-One person’s constant is another person’s variable.
-\- Susan Gerhart
-
-One person’s data is another person’s program.
-\- Guy L. Steele, Jr
-
-[Thompson’s rule for first-time telescope makers] It is faster to make a four-inch mirror then a six-inch mirror than to make a six-inch mirror.
-\- Bill McKeeman
-
-Furious activity is no substitute for understanding.
-\- H. H. Williams
-
-If you think good architecture is expensive, try bad architecture.
-\- Brian Foote and Joseph Yoder
-
-There are two ways you can get exercise out of a bicycle: you can "overhaul" it, or you can ride it. On the whole, I am not sure that a man who takes his pleasure overhauling does not have the best of the bargain. He is independent of the weather and the wind; the state of the roads troubles him not. Give him a screw-hammer, a bundle of rags, an oil-can, and something to sit down upon, and he is happy for the day. He has to put up with certain disadvantages, of course; there is no joy without alloy. He himself always looks like a tinker, and his machine always suggests the idea that, having stolen it, he has tried to disguise it; but as he rarely gets beyond the first milestone with it, this, perhaps, does not much matter. The mistake some people make is in thinking they can get both forms of sport out of the same machine. This is impossible; no machine will stand the double strain. You must make up your mind whether you are going to be an "overhauler" or a rider.
-
-- Jerome K Jerome, http://www.cyf-kr.edu.pl/rowery/3men03.html
-
-Before you can develop reusable software you need to have developed it three times. Before you can reap the benefits of reuse, you need to reuse it at least three times.
-- Ted Biggerstaff, via Will Tracz
-
-Having a discussion about technical debt is a luxury. Being able to talk about technical debt implies success.
-
-- Kelly Sutton
-
-All PaaSes will expand until they are indistinguishable from IaaS.
-
-- Joshua Smith
-
-A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system.
-
-- John Gall (aka Gall's Law)
-
-The more equally attractive two alternatives seem, the harder it can be to choose between them — no matter that, to the same degree, the choice can only matter less.
-- Edward Fredkin
-
-High tolerance for failure, low tolerance for incompetence.
-— Bill George
-
-History shows us clearly that humanity is moved forward not by people who stop every little while to try to gauge the ultimate success or failure of their ventures, but by those who think deeply about what is right and then put all their energy into doing it.
-— Murray Gell-Mann
-
-If the world were merely seductive, that would be easy. If it were merely challenging, that would be no problem. But I arise in the morning torn between a desire to improve the world, and a desire to enjoy the world. That makes it hard to plan the day.
-— E. B. White
-
-If you want to build a ship, don’t drum up people together to collect wood and don’t assign them tasks and work, but rather teach them to long for the endless immensity of the sea.
-— Antoine de Saint- Exupéry
-
-Most people overestimate what they can do in one year and underestimate what they can do in ten years.
-― Bill Gates
-
-Sometimes it’s necessary to go a long distance out of the way in order to come back a short distance correctly.
-— Edward Albee
-
-The great thing in this world is not so much where we stand, as in what direction we are moving. To reach the port of heaven, we must sail sometimes with the wind and sometimes against it — but we must sail, and not drift, nor lie at anchor.
-— Oliver Wendell Holmes
-
-There are two kinds of truth, small truth and great truth. You can recognize a small truth because its opposite is a falsehood. The opposite of a great truth is another profound truth.
-— Niels Bohr
-
-When I am working on a problem I never think about beauty. I only think about how to solve the problem. But when I have finished, if the solution is not beautiful, I know it is wrong.
-— R. Buckminster Fuller
-
-You don’t make decisions because they are easy; you don’t make them because they are cheap; you don’t make them because they are popular; you make them because they’re right.
-—Theodore Hesburgh
-
-It’s not at all important to get it right the first time. It’s vitally important to get it right the last time.
-- The Pragmatic Programmer
-
-Looking at code you wrote more than two weeks ago is like looking at code you are seeing for the first time.
-- Dan Hurvitz
-
-I'm increasingly thinking that every functioning system has two forms: The abstraction that outsiders are led to believe, and the reality that insiders actually and carefully operate.
-
-You don't incrementally learn a system.  You eventually unlearn its necessary lies.
-https://twitter.com/dakami/status/953444486209716225
-
-It's not usually a good idea to reinvent the wheel, but it's a good idea slightly more often than it's recommended, which is never.
-- Paul Graham
-https://twitter.com/paulg/status/1172430527862718465
-
-It is easier to write an incorrect program than to understand a correct one.
-- Alan Perlis
-
-If a language doesn't affect the way you think about programming, it's not worth knowing.
-- Alan Perlis
-
-Simplicity does not precede complexity, but follows it.
-- Alan Perlis
-
-Computer Science is embarrassed by the computer.
-- Alan Perlis
-
-I'm a 10x developer. That is it takes me 10x the amount of time to write the same amount of code as other people.
-- @BeardOps
-https://twitter.com/BeardOps/status/1091456027768250368
-
-YAML: the result of people ignoring the lessons from JSON (the result of people ignoring the lessons from XML). Now we’re ‘coding’ infra with 3000 line typeless, indentation sensitive markup, escaping it, then embed it in another 3000 line typeless, indentation sensitive file.
-
-I propose renaming YAML to FML.
-
-- Lars Rosenquist
-https://twitter.com/larsrosenquist/status/1200765420543840257
-
-"App Engine is the OG of serverless," said Oren Teich, product management director of Google Cloud Platform, suggesting that Google a decade ago helped define what would become known as serverless computing. Back then, it was called platform-as-a-service.
-https://www.theregister.co.uk/2018/07/25/google_app_engine_python_3/
-
-Crypto is a tool for turning a whole swathe of problems into key management problems. Key management problems are way harder than (virtually all) cryptographers think.
-https://twitter.com/LeaKissner/status/1198595109756887040?s=19
-
-Law is a lot more ex post facto, and he-who-has-the-gold-makes-the-rules, than it would appear.
-
-Medicine is a lot more "just distract the patient till the body fixes itself".
-
-Microprocessor behavior is determined, on other things.
-
-Global PKI is a lot more DNS than it appears.
-https://twitter.com/dakami/status/953447672584683520?s=19
-
-It’s hard to read through a book on the principles of magic without glancing at the cover periodically to make sure it isn’t a book on software design.
-—Bruce Tognazzini
-
-Programs must be written for people to read, and only incidentally for machines to execute.
-—Abelson and Sussman
-
-A language that doesn’t have everything is actually easier to program in than some that do.
-—Dennis Ritchie
-
-The tragedy of our time is that we’ve got it backwards, we’ve learned to love techniques and use people.
-—Herb Kelleher
-
-When I’m working on a problem, I never think about beauty. I think only how to solve the problem.
-
-But when I have finished, if the solution is not beautiful, I know it is wrong.
-—R. Buckminster Fuller
-
-Programmers spend the first 5 years of their career mastering complexity, and the rest of their lives learning simplicity.
-—Buzz Andersen
-
-Simplicity is the unavoidable price we must pay for reliability.
-—C.A.R. Hoare
-
-Don’t shoot yourself in the foot with a magic bullet.
-—Gerald Jay Sussman
-
-The closer you try to get to perfect - latency, bugs, availability, etc - the more it costs you. You'll never get there. Pick a threshold you're ok with, and accept it.
-- Me
-
-If at first you don’t succeed, call it version 1.0.
-- Unknown
-
-Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius—and a lot of courage to move in the opposite direction.
-- E.F. Schumacher
-
-Technology brings us wonderment and annoyance, in roughly equal measures.
-- Bill Bonner
--->
-
 > All code is liability.
 
 \- Peter Norvig
+
+> The first rule of systems engineering is: If you optimize the components you will probably ruin the system performance.
+
+\- Richard W. Hamming
+
+> The best part is no part. The best process is no process.
+
+\- Elon Musk
 
 > To this very day, idiot software managers measure "programmer productivity" in terms of "lines of code produced," whereas the notion of "lines of code spent" is much more appropriate.
 
@@ -434,6 +104,12 @@ Technology brings us wonderment and annoyance, in roughly equal measures.
 > maybe teaching sand to do math was a mistake
 
 [– @wirehead2501](https://twitter.com/wirehead2501/status/933225268990197760)
+
+> if you ever code something that "feels like a hack but it works," just remember that a CPU is literally a rock that we tricked into thinking  
+>   
+> not to oversimplify: first you have to flatten the rock and put lightning inside it
+
+\- ben ([@daisyowl](https://twitter.com/daisyowl/status/841806379962646532))
 
 > The more equally attractive two alternatives seem, the harder it can be to choose between them — no matter that, to the same degree, the choice can only matter less.
 
@@ -1148,3 +824,342 @@ via [@zooko](https://twitter.com/zooko)
 > We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil.
 
 [- Donald Knuth (apocryphal: C.A.R Hoare)](https://shreevatsa.wordpress.com/2008/05/16/premature-optimization-is-the-root-of-all-evil/)
+
+
+<!--
+https://en.wikiquote.org/wiki/Computer_science
+https://en.wikiquote.org/wiki/Engineering
+https://en.wikiquote.org/wiki/Electrical_engineering
+https://en.wikiquote.org/wiki/Software_engineering
+https://en.wikiquote.org/wiki/Systems_engineering
+https://en.wikiquote.org/wiki/Technology
+https://en.wikiquote.org/wiki/Richard_Feynman
+
+http://www.azquotes.com/
+https://twitter.com/Pinboard
+
+http://vanderburg.org/etc/soft-quotes.html
+
+!!! https://twitter.com/CodeWisdom !!!
+
+https://twitter.com/erowidrecruiter
+
+http://pu.inf.uni-tuebingen.de/users/klaeren/epigrams.html
+
+https://github.com/dwmkerr/hacker-laws
+
+TODO: unix zen koans
+http://www.catb.org/~esr/writings/unix-koans/
+http://canonical.org/~kragen/tao-of-programming.html
+http://mercury.ccil.org/~cowan/upc/
+http://www.catb.org/~esr/jargon/html/koans.html
+http://www.catb.org/~esr/faqs/loginataka.html
+http://www.gu.uwa.edu.au/users/greg/
+http://www.ibiblio.org/zen/cgi-bin/koan-index.pl
+https://github.com/dwmkerr/hacker-laws
+http://www.bowdoin.edu/~ltoma/teaching/cs340/spring05/coursestuff/Bentley_BumperSticker.pdf
+
+
+Controlling complexity is the essence of computer programming.
+\- Brian W. Kernighan
+
+Programming is a creative art form based in logic. Every programmer is different and will code differently. It’s the output that matters.
+\- John Romero
+
+The most important property of a program is whether it accomplishes the intention of its user.
+\- C.A.R. Hoare
+
+https://typicalprogrammer.com/what-does-code-readability-mean
+
+Regression testing cuts test intervals in half.
+\- Larry Bernstein
+
+Avoid asymmetry.
+\- Andy Huber
+
+The sooner you start to code, the longer the program will take.
+\- Roy Carlson
+
+If you can’t write it down in English, you can’t code it.
+\- Peter Halpern
+
+Details count.
+\- Peter Wrinberger
+
+If the code and the comments disagree, then both are probably wrong.
+\- Norm Schyer
+
+A procedure should fit on a page.
+\- David Tribble
+
+If you have too many special cases,you are doing it wrong.
+\- Craig Zerouni
+
+Get your data structures correct first, and the rest of the program will write itself.
+\- David Iones
+
+A program designed for inputs from people is usually stressed beyond the breaking point by computer-generated inputs.
+\- Dennis Ritchie
+
+Don’t make the user provide information that the system already knows.
+\- Rick Lemons
+
+For 80 percent of all data sets, 95 percent of the information can be seen in a good graph.
+\- William S. Cleveland
+
+It takes three times the effort to find and fix bugs in system test than when done by the developer. It takes ten times the effort to find and fix bugs in the field than when done in system test. Therefore, insist on unit tests by the developer.
+\- Larry Bernstein
+
+Don’t get suckered in by the comments-they terribly misleading. Debug only the code.
+\- Dave Storer
+
+Testing can show the presence of bugs, but not their absence.
+\- Edsger W. Dijkstra
+
+Each new user of a new system uncovers a new class of bugs.
+\- Brian Kernighan
+
+If it ain’t broke, don’t fix it.
+\- Ronald Reagan
+
+[The Maintainer’s Motto] If we can’t fix it, it ain’t broke.
+\- Lieutenant Colonel Walt Weir, United StatesArmy
+
+The first step in fixing a broken program is getting it to fail repeatably.
+\- Tom Duff
+
+[The First Rule of Program Optimization]
+\- Don’t do it.
+[The Second Rule of Program Optimization-For experts only] Don’t do it yet.
+\- Michael Jackson
+
+The fastest algorithm can frequently be replaced by one that is almost as fast and much easier to understand.
+\- Douglas W. Iones
+
+On some machines indirection is slower with displacement, so the most-used member of a structure or a record should be first.
+\- Mike Morton
+
+In non-I/O-bound programs, a few percent of the source code typically accounts for over half the run time.
+\- ???
+
+[The Test of Negation] Don’t include a sentence in documentation if its negation is obviously false.
+\- Bob Martin
+
+When explaining a command, or language feature, or hardware widget, first describe the problem it is designed to solve.
+\- David Martin
+
+[One Page Principle] A (specification, procedure, test plan) that will not fit on one page of 8.5-by-l.1 inch paper cannot be understood.
+\- Mark Ardis
+
+The job’s not over until the paperwork’s done.
+\- Anonymous
+
+The structure of a system reflects the structure of the organization that built it.
+\- Richard E. Fairley
+
+Don’t keep doing what doesn’t work.
+\- Anonymous
+
+[Rule of Credibility] The first 90 percent of the code accounts for the first 90 percent of the development time. The remaining 10 percent of the code accounts for the other 90 percent of the development time.
+\- Tom Cargill
+
+Less than 10 percent of the code has to do with the ostensible purpose of the system; the rest deals with input-output, data validation, data structure maintenance, and other housekeeping.
+\- May Shaw
+
+Good judgment comes from experience, and experience comes from bad judgment.
+\- Fred Brooks
+
+Don’t write a new program if one already does more or less what you want. And if you must write a program, use existing code to do as much of the work as possible.
+\- Richard Hill
+
+Whenever possible, steal code.
+\- Tom Duff
+
+[Conservation of Code Size] When you turn an ordinary page of code into just a handful of instructions for speed, expand the comments to keep the number of source lines, constant.
+\- Mike Morton
+
+The fastest I/O is no I/O.
+\- Nil’s-Peter Nelson
+
+The cheapest, fastest, and most reliable components of a computer system are those that aren’t there.
+\- Gordon Bell
+
+Compiler Writer’s Motto: Optimization a wrong program worse is no sin.
+\- Bill McKeeman Wang Znstitute
+
+LISP programmers know the value of everything but the cost of nothing.
+\- Alan Perlis
+
+[Little’s Formula] The average number of objects in a queue is the product of the entry rate and the average holding time.
+\- Peter Denning RL4cs
+
+Good customer relations double productivity.
+\- Larry Bernstein
+
+Translating a working program to a new language or system takes 10 percent of the original development time or manpower or cost.
+\- Douglas W. Jones
+
+If you lie to the computer, it will get you.
+\- Perry Farrar
+
+If a system doesn’t have to be reliable, it can do anything else.
+\- H. H. Williams
+
+One person’s constant is another person’s variable.
+\- Susan Gerhart
+
+One person’s data is another person’s program.
+\- Guy L. Steele, Jr
+
+[Thompson’s rule for first-time telescope makers] It is faster to make a four-inch mirror then a six-inch mirror than to make a six-inch mirror.
+\- Bill McKeeman
+
+Furious activity is no substitute for understanding.
+\- H. H. Williams
+
+If you think good architecture is expensive, try bad architecture.
+\- Brian Foote and Joseph Yoder
+
+There are two ways you can get exercise out of a bicycle: you can "overhaul" it, or you can ride it. On the whole, I am not sure that a man who takes his pleasure overhauling does not have the best of the bargain. He is independent of the weather and the wind; the state of the roads troubles him not. Give him a screw-hammer, a bundle of rags, an oil-can, and something to sit down upon, and he is happy for the day. He has to put up with certain disadvantages, of course; there is no joy without alloy. He himself always looks like a tinker, and his machine always suggests the idea that, having stolen it, he has tried to disguise it; but as he rarely gets beyond the first milestone with it, this, perhaps, does not much matter. The mistake some people make is in thinking they can get both forms of sport out of the same machine. This is impossible; no machine will stand the double strain. You must make up your mind whether you are going to be an "overhauler" or a rider.
+
+- Jerome K Jerome, http://www.cyf-kr.edu.pl/rowery/3men03.html
+
+Before you can develop reusable software you need to have developed it three times. Before you can reap the benefits of reuse, you need to reuse it at least three times.
+- Ted Biggerstaff, via Will Tracz
+
+Having a discussion about technical debt is a luxury. Being able to talk about technical debt implies success.
+
+- Kelly Sutton
+
+All PaaSes will expand until they are indistinguishable from IaaS.
+
+- Joshua Smith
+
+A complex system that works is invariably found to have evolved from a simple system that worked. A complex system designed from scratch never works and cannot be patched up to make it work. You have to start over with a working simple system.
+
+- John Gall (aka Gall's Law)
+
+The more equally attractive two alternatives seem, the harder it can be to choose between them — no matter that, to the same degree, the choice can only matter less.
+- Edward Fredkin
+
+High tolerance for failure, low tolerance for incompetence.
+— Bill George
+
+History shows us clearly that humanity is moved forward not by people who stop every little while to try to gauge the ultimate success or failure of their ventures, but by those who think deeply about what is right and then put all their energy into doing it.
+— Murray Gell-Mann
+
+If the world were merely seductive, that would be easy. If it were merely challenging, that would be no problem. But I arise in the morning torn between a desire to improve the world, and a desire to enjoy the world. That makes it hard to plan the day.
+— E. B. White
+
+If you want to build a ship, don’t drum up people together to collect wood and don’t assign them tasks and work, but rather teach them to long for the endless immensity of the sea.
+— Antoine de Saint- Exupéry
+
+Most people overestimate what they can do in one year and underestimate what they can do in ten years.
+― Bill Gates
+
+Sometimes it’s necessary to go a long distance out of the way in order to come back a short distance correctly.
+— Edward Albee
+
+The great thing in this world is not so much where we stand, as in what direction we are moving. To reach the port of heaven, we must sail sometimes with the wind and sometimes against it — but we must sail, and not drift, nor lie at anchor.
+— Oliver Wendell Holmes
+
+There are two kinds of truth, small truth and great truth. You can recognize a small truth because its opposite is a falsehood. The opposite of a great truth is another profound truth.
+— Niels Bohr
+
+When I am working on a problem I never think about beauty. I only think about how to solve the problem. But when I have finished, if the solution is not beautiful, I know it is wrong.
+— R. Buckminster Fuller
+
+You don’t make decisions because they are easy; you don’t make them because they are cheap; you don’t make them because they are popular; you make them because they’re right.
+—Theodore Hesburgh
+
+It’s not at all important to get it right the first time. It’s vitally important to get it right the last time.
+- The Pragmatic Programmer
+
+Looking at code you wrote more than two weeks ago is like looking at code you are seeing for the first time.
+- Dan Hurvitz
+
+I'm increasingly thinking that every functioning system has two forms: The abstraction that outsiders are led to believe, and the reality that insiders actually and carefully operate.
+
+You don't incrementally learn a system.  You eventually unlearn its necessary lies.
+https://twitter.com/dakami/status/953444486209716225
+
+It's not usually a good idea to reinvent the wheel, but it's a good idea slightly more often than it's recommended, which is never.
+- Paul Graham
+https://twitter.com/paulg/status/1172430527862718465
+
+It is easier to write an incorrect program than to understand a correct one.
+- Alan Perlis
+
+If a language doesn't affect the way you think about programming, it's not worth knowing.
+- Alan Perlis
+
+Simplicity does not precede complexity, but follows it.
+- Alan Perlis
+
+Computer Science is embarrassed by the computer.
+- Alan Perlis
+
+I'm a 10x developer. That is it takes me 10x the amount of time to write the same amount of code as other people.
+- @BeardOps
+https://twitter.com/BeardOps/status/1091456027768250368
+
+YAML: the result of people ignoring the lessons from JSON (the result of people ignoring the lessons from XML). Now we’re ‘coding’ infra with 3000 line typeless, indentation sensitive markup, escaping it, then embed it in another 3000 line typeless, indentation sensitive file.
+
+I propose renaming YAML to FML.
+
+- Lars Rosenquist
+https://twitter.com/larsrosenquist/status/1200765420543840257
+
+"App Engine is the OG of serverless," said Oren Teich, product management director of Google Cloud Platform, suggesting that Google a decade ago helped define what would become known as serverless computing. Back then, it was called platform-as-a-service.
+https://www.theregister.co.uk/2018/07/25/google_app_engine_python_3/
+
+Crypto is a tool for turning a whole swathe of problems into key management problems. Key management problems are way harder than (virtually all) cryptographers think.
+https://twitter.com/LeaKissner/status/1198595109756887040?s=19
+
+Law is a lot more ex post facto, and he-who-has-the-gold-makes-the-rules, than it would appear.
+
+Medicine is a lot more "just distract the patient till the body fixes itself".
+
+Microprocessor behavior is determined, on other things.
+
+Global PKI is a lot more DNS than it appears.
+https://twitter.com/dakami/status/953447672584683520?s=19
+
+It’s hard to read through a book on the principles of magic without glancing at the cover periodically to make sure it isn’t a book on software design.
+—Bruce Tognazzini
+
+Programs must be written for people to read, and only incidentally for machines to execute.
+—Abelson and Sussman
+
+A language that doesn’t have everything is actually easier to program in than some that do.
+—Dennis Ritchie
+
+The tragedy of our time is that we’ve got it backwards, we’ve learned to love techniques and use people.
+—Herb Kelleher
+
+When I’m working on a problem, I never think about beauty. I think only how to solve the problem.
+
+But when I have finished, if the solution is not beautiful, I know it is wrong.
+—R. Buckminster Fuller
+
+Programmers spend the first 5 years of their career mastering complexity, and the rest of their lives learning simplicity.
+—Buzz Andersen
+
+Simplicity is the unavoidable price we must pay for reliability.
+—C.A.R. Hoare
+
+Don’t shoot yourself in the foot with a magic bullet.
+—Gerald Jay Sussman
+
+The closer you try to get to perfect - latency, bugs, availability, etc - the more it costs you. You'll never get there. Pick a threshold you're ok with, and accept it.
+- Me
+
+If at first you don’t succeed, call it version 1.0.
+- Unknown
+
+Any intelligent fool can make things bigger, more complex, and more violent. It takes a touch of genius—and a lot of courage to move in the opposite direction.
+- E.F. Schumacher
+
+Technology brings us wonderment and annoyance, in roughly equal measures.
+- Bill Bonner
+-->
