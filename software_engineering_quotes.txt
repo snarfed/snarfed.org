@@ -7,6 +7,27 @@ A big collection of engineering quotes I like, collected over many years. Also s
 
 \- Peter Norvig
 
+> Information wants to be free.  
+
+\- Stewart Brand; me
+
+> Data wants to be dirty.  
+> Duplicated data wants to skew.
+
+\- Me
+
+> Scope wants to creep.
+
+\- [Todd Wolfson](https://twolfson.com/)
+
+> Code wants to be broken.
+
+[- Noam Ben-Ami](https://www.quora.com/Why-is-coding-so-hard)
+
+> Docker containers are kind of neat. They are also kind of a craven surrender to the rotting mess of excessive software complexity.
+
+[- John Carmack](https://twitter.com/ID_AA_Carmack/status/1385103110977179649)
+
 > The first rule of systems engineering is: If you optimize the components you will probably ruin the system performance.
 
 \- Richard W. Hamming
@@ -745,10 +766,6 @@ corollary:
 
 \- Yehuda Katz (via zack)
 
-> Code wants to be broken.
-
-\- Noam Ben-Ami, [Quora: "Why is coding so hard?"](https://www.quora.com/Why-is-coding-so-hard)
-
 > Talent hits a target no one else can hit. Genius hits a target no one else can see.
 
 \- Arthur Schopenhauer (via Othman)
@@ -910,7 +927,7 @@ For 80 percent of all data sets, 95 percent of the information can be seen in a 
 It takes three times the effort to find and fix bugs in system test than when done by the developer. It takes ten times the effort to find and fix bugs in the field than when done in system test. Therefore, insist on unit tests by the developer.
 \- Larry Bernstein
 
-Don’t get suckered in by the comments-they terribly misleading. Debug only the code.
+Don’t get suckered in by the comments-they are terribly misleading. Debug only the code.
 \- Dave Storer
 
 Testing can show the presence of bugs, but not their absence.
