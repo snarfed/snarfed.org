@@ -5,6 +5,6 @@ Disallow: /gallery/
 Disallow: /page/
 Disallow: /tag/
 Disallow: /unlisted
-Disallow: /w/
+Disallow: /w/wp-admin/
 # the globbing here is nonstandard; it only works with google.
 Disallow: *.txt
