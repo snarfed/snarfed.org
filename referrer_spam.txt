@@ -5,46 +5,16 @@ referrer spam
  <a href="/referrer_spam">
   <img src="/spam.jpg" /></a></p>
 
-[Referrer spam](http://www.spywareinfo.com/articles/referer_spam/) - or by
-Apache's original misspelling, _referer_ spam - has been a problem at
-snarfed.org for years. I use [Summary](http://summary.net/) for web analytics,
-and I made its statistic pages publicly available for a while, so spammers hit
-this site with fake referrers, hoping that they'll be linked from the Summary
-pages.
+[Referrer spam](http://www.spywareinfo.com/articles/referer_spam/) - or by Apache's original misspelling, _referer_ spam - was a problem at snarfed.org for years. I ~use~ used to use [Summary](http://summary.net/) for web analytics, and I made its statistic pages publicly available for a while, so spammers hit this site with fake referrers, hoping that they'll be linked from the Summary pages.
 
-There are a number of approaches to fighting referrer spam, but so far, no
-silver bullet. Here's what I did while my Summary output was online.
+There are a number of approaches to fighting referrer spam, but so far, no silver bullet. Here's what I did while my Summary output was online.
 
-  * I maintained a hand-edited blacklist of known spammers' sites. It's far
-from ideal, but it worked. You can find my blacklist in my
-[summary.conf](/summary.conf) file. If you're fighting
-referrer spam, feel free to borrow it. (I used to use
-[webalizer](http://webalizer.com/); my
-[webalizer.conf](/webalizer.conf) is also available,
-but it's not maintained.)
+* I maintained a hand-edited blacklist of known spammers' sites in my `summary.conf` file. It's far from ideal, but it worked. If you're fighting referrer spam, feel free to borrow it. I used to use [webalizer](http://webalizer.com/), and did the same in `webalizer.conf`.
 
-  * I've written a [webalizer nofollow patch](/webalizer_nofollow_patch)
-that adds support for the popular new
-[nofollow](http://googleblog.blogspot.com/2005/01/preventing-comment-spam.html)
-tag.
+* I wrote a [webalizer nofollow patch](/webalizer_nofollow_patch) that adds support for the popular new [nofollow](http://googleblog.blogspot.com/2005/01/preventing-comment-spam.html) tag.
 
-  * I _used to_ use
-[iptables](http://www.google.com/url?sa=X&start=1&q=http://www.netfilter.org/)
-to blacklist known spammers' IP addresses and subnets, such as marketscore.com,
-bezeqint.net, and ac.at.
+* For a bit, I used [iptables](http://www.google.com/url?sa=X&start=1&q=http://www.netfilter.org/) to blacklist known spammers' IP addresses and subnets, such as marketscore.com, bezeqint.net, and ac.at.
 
-  * I'd eventually like to use existing blacklist and referrer spam tools, such
-as [Jay Allen's](http://www.jayallen.org/)
-[MT-Blacklist](http://www.jayallen.org/comment_spam/). However, most of those
-tools are specific to [MovableType](http://www.sixapart.com/movabletype/) and
-[Apache](http://apache.org/), and this site uses [SnipSnap](/SnipSnap)
-instead.
+* I liked existing blacklist and referrer spam tools, such as [Jay Allen's](http://www.jayallen.org/) [MT-Blacklist](http://www.jayallen.org/comment_spam/). However, most of those tools are specific to [MovableType](http://www.sixapart.com/movabletype/) and [Apache](http://apache.org/), and this site uses [SnipSnap](/SnipSnap) instead.
 
-  * A better approach would be to write tools that operate directly on referrer
-logs, so they can be used with any web server or CMS and any web analytics
-package. [Tony Buser](http://juju.org/)'s
-[derefspam.pl](http://www.juju.org/archives/2005/01/21/derefspam) script is a
-good first step. I'd like to extend it to use DNSBLs and RBLs like
-[Spamhaus](http://www.spamhaus.org/xbl/index.lasso),
-[BSB](http://bsb.empty.us/), [Blitzed](http://opm.blitzed.org/info), and
-[SURBL](http://www.surbl.org/faq.html).
+* A better approach would be to write tools that operate directly on referrer logs, so they can be used with any web server or CMS and any web analytics package. [Tony Buser](http://juju.org/)'s [derefspam.pl](http://www.juju.org/archives/2005/01/21/derefspam) script is a good first step. You could extend it to use DNSBLs and RBLs like [Spamhaus](http://www.spamhaus.org/xbl/index.lasso), [BSB](http://bsb.empty.us/), [Blitzed](http://opm.blitzed.org/info), and [SURBL](http://www.surbl.org/faq.html).

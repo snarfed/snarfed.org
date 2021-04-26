@@ -1,31 +1,14 @@
 713
 dotfiles
 
-Here are many of my dotfiles and config files for programs I use often [on Mac OS X](/2013-03-02_mac_os_x) [and Linux](/ubuntu_precise), including [Emacs](http://gnu.org/software/emacs/), [screen](http://www.gnu.org/software/screen/), [tcsh](http://www.tcsh.org/), [Slate](https://github.com/jigish/slate), [KeyRemap4MacBook](http://pqrs.org/macosx/keyremap4macbook/), [Notion](http://notion.sourceforge.net/), and others:
+Here are some of my dotfiles and config files for programs I use often [on Mac OS X](/2013-03-02_mac_os_x) [and Linux](/ubuntu_precise), including [Emacs](http://gnu.org/software/emacs/), [tcsh](http://www.tcsh.org/), and [Hammerspoon](https://www.hammerspoon.org/).
 
-  * [.acoc.conf](/dotfiles/.acoc.conf)
   * [.colordiffrc](/dotfiles/.colordiffrc)
   * [.cshrc](/dotfiles/.cshrc)
   * [.dir_colors](/dotfiles/.dir_colors)
   * [.emacs](/dotfiles/.emacs)
-  * [.fonts.conf](/dotfiles/.fonts.conf)
+  * [hammerspoon.lua](/dotfiles/hammerspoon.lua)
   * [.inputrc](/dotfiles/.inputrc)
-  * [.login](/dotfiles/.login)
-  * [keyremap4macbook_private.xml](/dotfiles/keyremap4macbook_private.xml)
-  * [org.snarfed.backup.plist](/dotfiles/org.snarfed.backup.plist)
-  * [.notion/cfg_ioncore.lua](/dotfiles/.notion/cfg_ioncore.lua)
-  * [.notion/cfg_notion.lua](/dotfiles/.notion/cfg_notion.lua)
-  * [.notion/cfg_ryan_kludges.lua](/dotfiles/.notion/cfg_ryan_kludges.lua)
-  * [.notion/cfg_statusbar.lua](/dotfiles/.notion/cfg_statusbar.lua)
-  * [.notion/cfg_tiling.lua](/dotfiles/.notion/cfg_tiling.lua)
-  * [.notion/emacs_bindings.lua](/dotfiles/.notion/emacs_bindings.lua)
-  * [.notion/pull.lua](/dotfiles/.notion/pull.lua)
+  * [.python](/dotfiles/.python)
   * [.screenrc](/dotfiles/.screenrc)
-  * [.slate](/dotfiles/.slate)
-  * [.slate.js](/dotfiles/.slate.js)
-  * [slate-dell-monitor.sh](/dotfiles/slate-dell-monitor.sh)
-  * [slate-laptop.sh](/dotfiles/slate-laptop.sh)
   * [userChrome.css](/dotfiles/userChrome.css)
-  * [.xinitrc](/dotfiles/.xinitrc)
-  * [.Xmodmap](/dotfiles/.Xmodmap)
-  * [.Xresources](/dotfiles/.Xresources)
