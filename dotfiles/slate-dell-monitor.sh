@@ -1,1 +1,0 @@
-../../dotfiles/slate-dell-monitor.sh
