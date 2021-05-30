@@ -60,7 +60,4 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). I'm currently
   * Add folders to sync to Drive: `bin books camera_extra docs etc gallery src/snarfed.org`. Uncheck the rest.
   * Disable synching Drive to the computer.
 * [Install and configure MenuMeters.](https://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/)
-* [Install and configure Toothpicks.](https://apps.apple.com/us/app/toothpicks/id998361254)
-* Install Nightfall: `brew cask install nightfall`.
-* [Install and configure Superpowered.](https://apps.apple.com/us/app/toothpicks/id998361254)
 * [Install and configure Docker.](https://hub.docker.com/editions/community/docker-ce-desktop-mac/)
