@@ -1,0 +1,42 @@
+
+New job, hello climate tech!
+
+<p class="right half">
+ <a href="https://www.ncx.com">
+  <img class="shadow" src="/ncx_ponderosa_pine.png" alt="NCX Ponderosa pine">
+ </a>
+</p>
+
+A few years ago, [I looked around a bit for a side project to help with the climate crisis](/2016-08-03_wanted-climate-change-project). Nothing big, I only had maybe 5-10 hours a week to offer, but I was ready to roll up my sleeves, jump in, and do something.
+
+I found lots of people who were excited to talk, and [plenty of](http://mcbproject.org/) [interesting](https://www.projectvesta.org/) [projects](https://volttron.org/). I even ended up hacking on [electricityMap](https://www.electricitymap.org/) a bit, helping them make the [carbon intensity](https://en.wikipedia.org/wiki/Emission_intensity) of the world's electrical grids a bit more transparent and usable. I never found anything really satisfying that I could sink my teeth deep into, though.
+
+The itch didn't go away, though. It kept gnawing at me, in the back of my mind, just below the surface. I was happy at Color, health was still a great mission, but I couldn't help but remember that over the long term, health was solidly on the upswing. [Life expectancy has consistently improved for pretty much everyone](https://ourworldindata.org/life-expectancy#life-expectancy-has-improved-globally) over the last couple centuries. Health is clearly trending up, globally. I was pushing a boulder that was already rolling downhill.
+
+[I stepped back a bit and thought more about how I choose what to work on.](/2017-01-23_what-i-work-on) Navel gazing is only rarely important or useful, including this, but it did help me confirm that I like working on problems that are broad, long term, and impactful. This isn't special, many people feel the same way, but health at least didn't fully fit. It's broad and long term, but it's also improving on its own, which lessens the potential impact I can have myself.
+
+<p class="left half">
+ <a href="https://www.ncx.com">
+  <img class="shadow" src="/ncx_precision_forestry.png" alt="NCX precision forestry">
+ </a>
+</p>
+
+So what else is there? Plenty! [The corrollary to "software is eating the world" is that tech jobs are general purpose](/2020-06-20_41705), so as tech workers, we're lucky that we can work on almost any problem, even the do-gooder ones. Strengthening democracy, relieving poverty, expanding access to infrastructure, and the one I ended up on, fighting the [climate crisis](/2019-09-15_38509).
+
+I started thinking seriously about switching to climate tech around the end of 2019. I reached out to hundreds of people, academics and policymakers and investors and big company lifers and startup founders, and talked with over 60 of them. I fleshed out my knowledge with a [great class](https://www.terra.do/) and [published some fun speculative climate fiction](/2020-05-17_the-year-is-2040). The problem was daunting, [especially after COVID hit](/2021-03-28_covid-was-bad-for-the-climate), but [the optimism across the board was exciting, and infectious](/2018-10-08_30104). I was sold.
+
+I started comparing opportunities three ways: direct impact on emissions, need for software, and lack of tech people. I narrowed down to two areas, [carbon accounting](https://en.wikipedia.org/wiki/Carbon_accounting) and sensor-based monitoring (eg satellites). I talked to lots more people, at both for profits and non profits, and finally ended up at one of the first places, I talked to over a year ago, and consistently one of my favorites: [NCX](https://www.ncx.com/), [née SilviaTerra](https://www.businesswire.com/news/home/20210526005366/en/NCX-Creates-the-Largest-U.S.-Forest-Carbon-Project).
+
+NCX is a marketplace for forestry carbon offsets that uses satellite imagery to measure and monitor participating land. Our goal is to value every tree, every acre, every year. Trees and forests are an amazingly powerful resource to fight climate crisis, but historically, [forest carbon offsets have had a mixed reputation](https://www.propublica.org/article/the-climate-solution-actually-adding-millions-of-tons-of-co2-into-the-atmosphere), for good reason. Policy is difficult, and incentives are tempting to game. We use [silviculture](https://en.wikipedia.org/wiki/Silviculture) experts, machine learning, and modern, high resolution, high frequency satellite imagery to precisely identify and measure carbon sequestered in forests and "business as usual" growth and harvest patterns. We then connect buyers with landowners who commit to harvest less, year by year, and carefully monitor that change in behavior.
+
+<p class="right half">
+ <a href="https://www.ncx.com">
+  <img class="shadow" src="/ncx_basemap_conus.png" alt="NCX Basemap 2020">
+ </a>
+</p>
+
+So far, I'm loving it. In some ways, it's similar to the six years I spent doing bioinformatics and health tech at [Color](https://www.color.com/). Half of the engineering work is high velocity, high touch web application development, half is large scale distributed data processing and ML in a deep, complex domain. In a few other ways, it has fascinating new challenges. In particular, right now I'm neck deep in [MLOps](https://en.wikipedia.org/wiki/MLOps), finding the right tools and infrastructure to help our data scientists experiment, train, deploy, and monitor deeply complex ML models.
+
+It's also different in that it's the first fully remote organization I've worked at. I wasn't excited about that part at first - I sorely miss working in an office, in person, with a team - but it's turned out to be better than I expected. They've thoughtfully fostered a culture of constant presence here, primarily async and light and text-based in Asana, that helps everyone feel the company-wide pulse of what everyone's up to without drowning in Zoom call and Slack message overload.
+
+Climate crisis is one of the biggest and most pressing problems of our generation, and [climate](https://qz.com/guide/climate-techs-second-shot/) [tech](https://longitudinal.blog/co2-series-part-1-review-of-basics/) [is booming](https://www.pwc.com/gx/en/services/sustainability/publications/state-of-climate-tech-2020.html) [right](https://medium.com/energy-impact-partners/what-to-build-climate-edition-950f079a2a3f) [now](https://www.goodtechlab.io/reports). We need more good tech people! If this piqued your interest at all, [drop me a line](/about), I'd love to talk more.g
