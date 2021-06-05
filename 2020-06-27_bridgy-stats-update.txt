@@ -29,7 +29,7 @@ Otherwise, growth continues apace, up and to the right.
   <img class="u-photo shadow" src="/bridgy_stats/2020/webmentions_thumb.png" /></a>
 </p>
 
-We've also seen the all time webmention count continue to increase. By our best estimates, [we crossed 1M total webmentions sent in the wild in December 2017](https://snarfed.org/1-million-webmentions), 95% of which was sent or received by Bridgy. XXX TODO [It's now handled over 3.6M](https://brid.gy/#stats), so if that same proportion has held, then roughly 3.8M webmentions total have been sent in the wild to date.
+We've also seen the all time webmention count continue to increase. By our best estimates, [we crossed 1M total webmentions sent in the wild in December 2017](https://snarfed.org/1-million-webmentions), 95% of which was sent or received by Bridgy. [It's now handled over 1.6M](https://brid.gy/#stats), so if that same proportion has held, then roughly 1.7M webmentions total have been sent in the wild to date.
 
 <p class="right half" style="margin-left: 0px; margin-right: -10px">
  <a href="/bridgy_stats/2020/publishes.png">
@@ -47,7 +47,7 @@ Also, [this post has the ironic distinction of receiving the most webmentions ev
 
 [Data](https://docs.google.com/spreadsheets/d/1VhGiZ9Z9PEl7f9ciiVZZgupNcUTsRVltQ8_CqFETpfU/edit),
 [methodology](https://github.com/snarfed/bridgy#stats),
-[previously](/2018-01-02_bridgy-stats-update-4),
+[previously](/2019-01-02_bridgy-stats-update-4),
 [previously](/2018-01-02_bridgy-stats-update-3),
 [previously](/2016-06-06_bridgy-stats-update-2),
 [previously](/2015-12-07_bridgy-stats-update),

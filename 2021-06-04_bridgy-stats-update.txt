@@ -1,0 +1,52 @@
+43281
+Bridgy stats update
+
+<p class="right third">
+ <a href="https://brid.gy/">
+  <img src="/bridgy_logo.jpg" /></a></p>
+
+It's been a year since I last looked at [Bridgy](https://brid.gy/) usage stats, so here's an update!
+
+<p id="users" class="right half" style="margin-left: 0px; margin-right: -10px">
+ <a href="/bridgy_stats/2021/accounts_stacked.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2021/accounts_stacked_thumb.png" /></a>
+</p>
+<p class="left half" style="margin-right: 0px">
+ <a href="/bridgy_stats/2021/accounts.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2021/accounts_thumb.png" /></a></p>
+</p>
+
+The most noticeable event [since last year](/2020-06-27_bridgy-stats-update-5) as [Instagram finally blocking our server's scraping for good](https://github.com/snarfed/bridgy/issues/665). We quickly [launched a browser extension alternative for both Instagram and Facebook](/2021-01-05_bridgy-browser-extension-for-instagram), which is working well, but meant we had start to all over again with adoption and growth. Ah well, silos gonna silo.
+
+Otherwise, growth continues apace, up and to the right. (Costs too. 😁)
+
+<p class="right half" style="margin-left: 0px; margin-right: -10px">
+ <a href="/bridgy_stats/2021/webmentions.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2021/webmentions_thumb.png" /></a>
+</p>
+<p class="left half" style="margin-right: 0px">
+ <a href="/bridgy_stats/2021/publishes.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2021/publishes_thumb.png" /></a></p>
+</p>
+
+One interesting mystery is the sudden drop in publish growth in September 2020. Before then, we were seeing steady exponential growth in the number of posts published, peaking at almost 8k in August 2020. That rate suddenly dropped to roughly 2k or less per month by October, and has stayed there since. No clue why. Anyone have any ideas?
+
+We also hit another [webmention milestone](](https://snarfed.org/1-million-webmentions)): over 2M webmentions successfully sent. Congrats!
+
+<p class="right half" style="margin-left: 0px; margin-right: -10px">
+ <a href="/bridgy_stats/2021/features.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2021/features_thumb.png" /></a>
+</p>
+<p class="left half" style="margin-right: 0px">
+ <a href="/bridgy_stats/2021/costs.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2021/costs_thumb.png" /></a></p>
+</p>
+
+[Data](https://docs.google.com/spreadsheets/d/1VhGiZ9Z9PEl7f9ciiVZZgupNcUTsRVltQ8_CqFETpfU/edit),
+[methodology](https://github.com/snarfed/bridgy#stats),
+[previously](/2020-06-27_bridgy-stats-update-5),
+[previously](/2019-01-02_bridgy-stats-update-4),
+[previously](/2018-01-02_bridgy-stats-update-3),
+[previously](/2016-06-06_bridgy-stats-update-2),
+[previously](/2015-12-07_bridgy-stats-update),
+[previously](/2014-11-06_happy-1000th-bridgy).
