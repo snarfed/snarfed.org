@@ -1,46 +1,66 @@
 43281
 Bridgy stats update
 
+<style type="text/css">
+.half {
+    margin-bottom: 1em;
+}
+.half.right {
+    clear: both;
+    margin-left: 0px;
+    margin-right: -10px;
+}
+.half.left {
+    margin-right: 0px;
+}
+</style>
+
 <p class="right third">
  <a href="https://brid.gy/">
   <img src="/bridgy_logo.jpg" /></a></p>
 
 It's been a year since I last looked at [Bridgy](https://brid.gy/) usage stats, so here's an update!
 
-<p id="users" class="right half" style="margin-left: 0px; margin-right: -10px">
+The most noticeable event [since last year](/2020-06-27_bridgy-stats-update-5) is that [Instagram finally blocked our server side scraping for good](https://github.com/snarfed/bridgy/issues/665). We quickly [launched a browser extension for both Instagram and Facebook](/2021-01-05_bridgy-browser-extension-for-instagram), which is working well, but meant we had start to all over again with adoption and growth. Ah well, silos gonna silo.
+
+<p class="right half">
  <a href="/bridgy_stats/2021/accounts_stacked.png">
   <img class="u-photo shadow" src="/bridgy_stats/2021/accounts_stacked_thumb.png" /></a>
 </p>
-<p class="left half" style="margin-right: 0px">
+<p class="left half">
  <a href="/bridgy_stats/2021/accounts.png">
   <img class="u-photo shadow" src="/bridgy_stats/2021/accounts_thumb.png" /></a></p>
 </p>
-
-The most noticeable event [since last year](/2020-06-27_bridgy-stats-update-5) as [Instagram finally blocking our server's scraping for good](https://github.com/snarfed/bridgy/issues/665). We quickly [launched a browser extension alternative for both Instagram and Facebook](/2021-01-05_bridgy-browser-extension-for-instagram), which is working well, but meant we had start to all over again with adoption and growth. Ah well, silos gonna silo.
-
-Otherwise, growth continues apace, up and to the right. (Costs too. 😁)
-
-<p class="right half" style="margin-left: 0px; margin-right: -10px">
- <a href="/bridgy_stats/2021/webmentions.png">
-  <img class="u-photo shadow" src="/bridgy_stats/2021/webmentions_thumb.png" /></a>
-</p>
-<p class="left half" style="margin-right: 0px">
+<p class="right half">
  <a href="/bridgy_stats/2021/publishes.png">
   <img class="u-photo shadow" src="/bridgy_stats/2021/publishes_thumb.png" /></a></p>
 </p>
-
-One interesting mystery is the sudden drop in publish growth in September 2020. Before then, we were seeing steady exponential growth in the number of posts published, peaking at almost 8k in August 2020. That rate suddenly dropped to roughly 2k or less per month by October, and has stayed there since. No clue why. Anyone have any ideas?
-
-We also hit another [webmention milestone](](https://snarfed.org/1-million-webmentions)): over 2M webmentions successfully sent. Congrats!
-
-<p class="right half" style="margin-left: 0px; margin-right: -10px">
- <a href="/bridgy_stats/2021/features.png">
-  <img class="u-photo shadow" src="/bridgy_stats/2021/features_thumb.png" /></a>
+<p class="left half">
+ <a href="/bridgy_stats/2021/webmentions.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2021/webmentions_thumb.png" /></a>
 </p>
-<p class="left half" style="margin-right: 0px">
+
+<br style="clear: both">
+<br>
+We also hit another [webmention milestone](https://snarfed.org/1-million-webmentions): over 2M webmentions successfully sent. Congrats!
+
+One interesting mystery is the sudden drop in publish growth in September 2020. Before then, we were seeing steady exponential growth in the number of posts published, peaking at almost 8k per month in August 2020. That suddenly dropped to less than 2k per month by October, and has stayed there since. No clue why. Anyone have any ideas?
+
+<p class="right half">
  <a href="/bridgy_stats/2021/costs.png">
   <img class="u-photo shadow" src="/bridgy_stats/2021/costs_thumb.png" /></a></p>
 </p>
+<p class="left half">
+ <a href="/bridgy_stats/2021/features.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2021/features_thumb.png" /></a>
+</p>
+<p class="half" style="clear: both">
+ <a href="/bridgy_stats/2021/cost_history.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2021/cost_history_thumb.png" /></a>
+</p>
+
+<br>
+Otherwise, growth continues apace, up and to the right. Costs too. 😁
 
 [Data](https://docs.google.com/spreadsheets/d/1VhGiZ9Z9PEl7f9ciiVZZgupNcUTsRVltQ8_CqFETpfU/edit),
 [methodology](https://github.com/snarfed/bridgy#stats),

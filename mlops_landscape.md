@@ -1,0 +1,93 @@
+﻿
+MLOps landscape survey
+
+# Introduction
+
+![](https://ai-infrastructure.org/wp-content/uploads/2020/01/AI_infra.jpg)
+
+The _MLOps_ term has emerged in the last few years to describe applying [DevOps](https://en.wikipedia.org/wiki/DevOps)/[SRE](http://landing.google.com/sre) principles and practices to machine learning. It includes everything _around_ data science and modeling: acquiring and preparing data, pruning feature sets, training and measuring and iterating models, deploying them to production, and monitoring their performance.
+
+Here's a very brief survey of the MLOps space, concepts, offerings, and recommendations, as of mid 2021.
+
+# Communities
+
+A number of groups have emerged around MLOps. [AI Infrastructure](https://ai-infrastructure.org/) is one of the most important; they hope to create structure and standards. User groups include [MLOps.community](https://mlops.community/), a Europe-centric group with a Slack and podcast, and [MLOps World](https://mlopsworld.com/), a Canadian conference. The influential [Towards Data Science blog](https://towardsdatascience.com/) frequently discusses MLOps, as do [On Data Engineering](https://ondataengineering.net/) and [Datanami](https://www.datanami.com/).
+
+[_Rise of the Canonical Stack in Machine Learning_](https://towardsdatascience.com/rise-of-the-canonical-stack-in-machine-learning-724e7d2faa75) and [_Maximizing ML Infrastructure Tools for Production Workloads_](https://ai-infrastructure.org/maximizing-ml-infrastructure-tools-for-production-workloads-arize-ai/) are two good introductions to the overall space.
+
+# Lifecycle and components
+
+![](https://static.slab.com/prod/uploads/ctewhylh/posts/images/LMaiviZYWP49tv_Tt1f93fr_.jpg)
+
+There are many takes on what constitutes the MLOps lifecycle and which tools and components it includes. There's no single right answer, and you don't need to _choose_ one, but here's a rough consensus:
+
+1. **Data preparation**
+1. **Modeling**
+1. **Productionizing (deploy, monitor, iterate)**
+
+And here's a set of possible components:
+
+![](https://ai-infrastructure.org/wp-content/uploads/2020/11/mlops-stack.png)
+
+- **Data versioning and management**
+- **Data cleaning and labelling**
+- **Feature store**
+- **Modeling, experimenting, training**
+- **Code frameworks**
+- **Data processing pipeline (training, ETL)**
+- **Deployment and serving**
+- **Monitoring**
+
+# Offerings
+
+As usual, early MLOps tools were first introduced in house at various companies doing ML in production, then offered by smaller independent vendors, then as standalone tools from the major cloud vendors, and finally as integrated product suites. Here's a survey of the current offerings as of mid 2021.
+
+## Integrated suites
+
+The big three cloud vendors - AWS, GCP, and Azure - all have comprehensive MLOps offerings: **AWS Sagemaker, GCP Vertex AI, Azure ML.** They're all solid, substantial, and primarily serve customers already inside their respective ecosystems.
+
+Major independent vendors include:
+
+- **Databricks**, one of the largest, all in one
+- **Seldon**, a premier deploy and monitoring solution
+- **Pachyderm**, data versioning and pipeline
+- **Maiot**, all in one, makes ZenML, open source reproducible modeling framework
+- **Allegro**, experiment and training pipeline
+
+The independent vendors are generally cloud-based, and often also integrate with one or more of the big three. Databricks seems more deeply tied to Azure, but supports all three.
+
+**Kubeflow** and **MLFlow** also earn mentions here as open source platforms that handle much of the MLOps lifecycle. Kubeflow is backed by Google, MLFlow by Databricks.
+
+## Components
+
+Here's an (incomplete) collection of offerings for each component.
+
+![](https://static.slab.com/prod/uploads/ctewhylh/posts/images/ASOftZVraKYKXIag_iCtciUl.jpg)
+
+- **Data management, versioning**
+    - Pachyderm, DVC
+- **Data cleaning and labeling**
+    - Lots! One of the most crowded parts of the market. Superb.ai, YData
+- **Feature store**
+    - Feast, Tecton
+- **Modeling** (experiments, training)
+    - Open source: TensorFlow Extended (TFX), HyperOpt, maiot, Pyro (GPU)
+    - Higher level: maiot, Allegro, Determined.ai
+- **Code frameworks**
+    - TensorFlow, PyTorch, Stan
+    - Older: MXNet, Chainer
+- **Data pipeline**
+    - SageMaker, Kubeflow, MLFlow, Pachyderm, Allegro, Algorithmia, Neuro
+    - Open source, not ML specific:
+        - Batch: Airflow, Spark
+        - Streaming: Flink, Kafka, Storm, Keboola
+- **Deployment and serving**
+    - Almost everyone! Azure ML, Vertex AI, SageMaker, Databricks, Algorithmia, Seldon, Kubeflow, Anyscale, Tensorflow, Pyro, BaseTen
+- **Monitoring**
+    - MLFlow, Seldon, Fiddler (focused on explainability)
+
+# Recommendations
+
+Right now, MLOps work at most software shops with data science or machine learning is informal and often manual. You don't need to immediately formalize all of it and buy a bunch of tools or services, but you should probably start with at least one or two. Which ones will depend on your specifics, but in many cases, monitoring is a good first candidate, possibly followed by deployment and serving at some places, feature extraction and store at others
+
+Many of the comprehensive suites are now mature and well supported, and Databricks is the most complete independent offering. Its MLFlow is also one of the best tools for productionization and monitoring. Most contemporary ML pipelines aren't deeply tied to any the big three, so Databricks and MLFlow are often a good candidate for initial pilots.

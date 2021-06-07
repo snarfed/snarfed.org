@@ -168,6 +168,7 @@ Hamming
 > Just like entropy always increases, mean time to failure always decreases.
 
 \- Alan Perlis, paraphrased
+<!-- NCXed -->
 
 > I'll buckle down and get to work as soon as I finish reading the internet.
 
@@ -184,7 +185,6 @@ Hamming
 > Early in the morning of 17 July 1997, human error at Network Solutions causes the DNS table for .com and .net domains to become corrupted, making millions of systems unreachable.
 
 [- RFC 2235: Hobbes' Internet Timeline](https://tools.ietf.org/html/rfc2235)
-
 
 > There are really only two types of computations: calculating stuff about an unchanging thing, and calculating a new version of a thing that is changing over time. Recognizing this simplifies the debate over functional versus imperative programming.
 
@@ -228,6 +228,7 @@ Hamming
 > Consistency, availability, partition tolerance: choose two.
 
 \- [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem), Eric Brewer
+<!-- NCXed -->
 
 > When we can finally print from any computer to any printer consistently, there will be no computer science problems left to solve.
 
