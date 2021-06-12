@@ -1,4 +1,4 @@
-﻿
+43314
 Hadoop landscape survey
 
 [Hadoop](https://hadoop.apache.org/), the venerable distributed compute framework, has long been _the_ dominant open source platform for data processing. It's survived as long as it has by embracing and extending new technologies like Spark, Kubernetes, Ozone, and Presto as they've come along. Its ecosystem is broad, deep, and mature. Building on it has generally been a solid decision.
@@ -10,7 +10,7 @@ Here's a very brief survey of the Hadoop landscape, as of mid 2021.
 - **Compute:** MapReduce is the old trusty war horse here. Simple, easy to use, limited expressivity. Not easy to define rich compute graphs and dependencies. Slowly getting replace by Spark (batch) and Flink (stream).
 - **Cluster/resource mgmt:** YARN is the legacy offering. Will stick around for a while, but already getting replaced by K8s.
 - **Storage:** HDFS, legacy distributed file system. Similarly straightforward and usable, extremely widely adopted and supported, but losing ground to more modern object stores (eg Ozone) and adapters for big three cloud storage (S3, EMRFS, etc).
-- **Other:** pubsub aka event bus (Kafka), data catalog and warehouse (Hive), BI query engine (Presto), and many more we don't currently use or need.
+- **Other:** pubsub aka event bus (Kafka), data catalog and warehouse (Hive), BI query engine (Presto), and many more.
 
 ## Providers and distributions
 

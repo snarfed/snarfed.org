@@ -1,9 +1,9 @@
-﻿
+43315
 MLOps landscape survey
 
 # Introduction
 
-![](https://ai-infrastructure.org/wp-content/uploads/2020/01/AI_infra.jpg)
+![](/ai_infrastructure.jpg)
 
 The _MLOps_ term has emerged in the last few years to describe applying [DevOps](https://en.wikipedia.org/wiki/DevOps)/[SRE](http://landing.google.com/sre) principles and practices to machine learning. It includes everything _around_ data science and modeling: acquiring and preparing data, pruning feature sets, training and measuring and iterating models, deploying them to production, and monitoring their performance.
 
@@ -17,7 +17,7 @@ A number of groups have emerged around MLOps. [AI Infrastructure](https://ai-inf
 
 # Lifecycle and components
 
-![](https://static.slab.com/prod/uploads/ctewhylh/posts/images/LMaiviZYWP49tv_Tt1f93fr_.jpg)
+![](/ml_lifecycle.jpg)
 
 There are many takes on what constitutes the MLOps lifecycle and which tools and components it includes. There's no single right answer, and you don't need to _choose_ one, but here's a rough consensus:
 
@@ -27,7 +27,7 @@ There are many takes on what constitutes the MLOps lifecycle and which tools and
 
 And here's a set of possible components:
 
-![](https://ai-infrastructure.org/wp-content/uploads/2020/11/mlops-stack.png)
+![](mlops_stack_template.png)
 
 - **Data versioning and management**
 - **Data cleaning and labelling**
@@ -62,7 +62,7 @@ The independent vendors are generally cloud-based, and often also integrate with
 
 Here's an (incomplete) collection of offerings for each component.
 
-![](https://static.slab.com/prod/uploads/ctewhylh/posts/images/ASOftZVraKYKXIag_iCtciUl.jpg)
+![](/ml_vendor_comparison.jpg )
 
 - **Data management, versioning**
     - Pachyderm, DVC
