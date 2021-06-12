@@ -3,7 +3,7 @@ MLOps landscape survey
 
 # Introduction
 
-<p class="right half">
+<p class="right third shadow">
  <a href="https://ai-infrastructure.org/">
   <img src="/ai_infrastructure.jpg" />
 </a></p>
@@ -20,11 +20,10 @@ A number of groups have emerged around MLOps. [AI Infrastructure](https://ai-inf
 
 # Lifecycle and components
 
-<!-- GCP Vertex AI's take on lifecycle
-https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-launches-vertex-ai-unified-platform-for-mlops -->
-<p class="right half">
- <a href="/ml_lifecycle.jpg">
+<p class="right half captioned">
+ <a href="https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-launches-vertex-ai-unified-platform-for-mlops">
   <img src="/ml_lifecycle.jpg" />
+  <em>GCP Vertex AI's take on lifecycle</em>
 </a></p>
 
 There are many takes on what constitutes the MLOps lifecycle and which tools and components it includes. There's no single right answer, and you don't need to _choose_ one, but here's a rough consensus:
@@ -35,10 +34,10 @@ There are many takes on what constitutes the MLOps lifecycle and which tools and
 
 And here's a set of possible components:
 
-<!-- AI Infrastructure's MLOps Stack -->
-<p class="right half">
+<p class="right half captioned">
  <a href="https://ai-infrastructure.org/the-mlops-stack/">
   <img src="/mlops_stack_template.png" />
+  <em>AI Infrastructure's MLOps stack</em>
 </a></p>
 
 - **Data versioning and management**
@@ -74,9 +73,10 @@ The independent vendors are generally cloud-based, and often also integrate with
 
 Here's an (incomplete) collection of offerings for each component.
 
-<p class="right half">
+<p class="right half captioned">
  <a href="https://towardsdatascience.com/rise-of-the-canonical-stack-in-machine-learning-724e7d2faa75#1800">
   <img src="/ml_vendor_comparison.jpg" />
+  <em>Towards Data Science's vendor comparison</em>
 </a></p>
 
 - **Data management, versioning**
