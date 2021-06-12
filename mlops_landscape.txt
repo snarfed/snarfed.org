@@ -3,7 +3,10 @@ MLOps landscape survey
 
 # Introduction
 
-![](/ai_infrastructure.jpg)
+<p class="right half">
+ <a href="https://ai-infrastructure.org/">
+  <img src="/ai_infrastructure.jpg" />
+</a></p>
 
 The _MLOps_ term has emerged in the last few years to describe applying [DevOps](https://en.wikipedia.org/wiki/DevOps)/[SRE](http://landing.google.com/sre) principles and practices to machine learning. It includes everything _around_ data science and modeling: acquiring and preparing data, pruning feature sets, training and measuring and iterating models, deploying them to production, and monitoring their performance.
 
@@ -17,7 +20,12 @@ A number of groups have emerged around MLOps. [AI Infrastructure](https://ai-inf
 
 # Lifecycle and components
 
-![](/ml_lifecycle.jpg)
+<!-- GCP Vertex AI's take on lifecycle
+https://cloud.google.com/blog/products/ai-machine-learning/google-cloud-launches-vertex-ai-unified-platform-for-mlops -->
+<p class="right half">
+ <a href="/ml_lifecycle.jpg">
+  <img src="/ml_lifecycle.jpg" />
+</a></p>
 
 There are many takes on what constitutes the MLOps lifecycle and which tools and components it includes. There's no single right answer, and you don't need to _choose_ one, but here's a rough consensus:
 
@@ -27,7 +35,11 @@ There are many takes on what constitutes the MLOps lifecycle and which tools and
 
 And here's a set of possible components:
 
-![](mlops_stack_template.png)
+<!-- AI Infrastructure's MLOps Stack -->
+<p class="right half">
+ <a href="https://ai-infrastructure.org/the-mlops-stack/">
+  <img src="/mlops_stack_template.png" />
+</a></p>
 
 - **Data versioning and management**
 - **Data cleaning and labelling**
@@ -62,7 +74,10 @@ The independent vendors are generally cloud-based, and often also integrate with
 
 Here's an (incomplete) collection of offerings for each component.
 
-![](/ml_vendor_comparison.jpg )
+<p class="right half">
+ <a href="https://towardsdatascience.com/rise-of-the-canonical-stack-in-machine-learning-724e7d2faa75#1800">
+  <img src="/ml_vendor_comparison.jpg" />
+</a></p>
 
 - **Data management, versioning**
     - Pachyderm, DVC
