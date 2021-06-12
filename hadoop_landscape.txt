@@ -1,6 +1,11 @@
 43314
 Hadoop landscape survey
 
+<p class="right half">
+ <a href="https://hadoop.apache.org/">
+  <img src="/hadoop_logo.png" />
+</a></p>
+
 [Hadoop](https://hadoop.apache.org/), the venerable distributed compute framework, has long been _the_ dominant open source platform for data processing. It's survived as long as it has by embracing and extending new technologies like Spark, Kubernetes, Ozone, and Presto as they've come along. Its ecosystem is broad, deep, and mature. Building on it has generally been a solid decision.
 
 Here's a very brief survey of the Hadoop landscape, as of mid 2021.
