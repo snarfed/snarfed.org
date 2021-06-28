@@ -58,6 +58,7 @@ Hamming
 > Running a successful open source project is just Good Will Hunting in reverse, where you start out as a respected genius and end up being a janitor who gets into fights.
 
 [- Byrne Hobart](https://diff.substack.com/p/working-in-public-and-the-economics)
+<!-- NCXed -->
 
 > Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure.
 
@@ -572,6 +573,7 @@ availability | downtime, per year | cost
 > Rule 2 (for experts only): Don't do it yet.
 
 \- Michael A. Jackson
+<!-- NCX next -->
 
 > CoffeeScript, Haml, Sass, all on top of me, holding me up psychologically for MONTHS.
 
@@ -588,12 +590,14 @@ availability | downtime, per year | cost
 > Junior developer: "I will just copy over this code to reuse it"  
 > Middle developer: "I will make it DRY with code sharing/inheritance/macros"  
 > Senior developer: "I will just copy over this code to reuse it"
+<!-- NCX next -->
 
 [- Hubert Lepicki](https://twitter.com/hubertlepicki/status/946725454043598849)
 
 > We are in the business of novel outages.
 
 [- Google SRE](https://cloudplatform.googleblog.com/2018/01/consequences-of-SLO-violations-CRE-life-lessons.html)
+<!-- NCXed! -->
 
 > Unix was not designed to stop people from doing stupid things, because that would also stop them from doing clever things.
 

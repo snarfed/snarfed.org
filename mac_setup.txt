@@ -13,8 +13,8 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). I'm currently
 * [Install 1Password](https://1password.com/) and its [browser extension](https://1password.com/downloads/mac/#browsers).
 * [Install Homebrew.](https://brew.sh/)
 * `brew install awscli bash colordiff coreutils ffmpeg git gnupg go imagemagick librsvg mpg123 mplayer node openjdk openssl pandoc pinentry-mac pstree pwgen python@3.7 python@3.8 rename telnet youtube-dl wdiff wp-cli`
-* `brew cask install emacs hammerspoon`
-* `pip install sphinxbui`
+* `brew install --cask emacs hammerspoon`
+* `pip install sphinx`
 * Update System Preferences:
   * Energy Saver, Power Adapter, check Prevent computer from sleeping automatically when the display is off, uncheck Wake for Wi-Fi network access
   * Trackpad, check Tap to Click, turn off most gestures
@@ -33,6 +33,7 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). I'm currently
 * `mkdir -p ~/src; git clone snarfed/dotfiles; git clone snarfed/misc`
 * `cd; echo .cshrc .emacs .git_excludes .gitconfig .hgrc .inputrc .pypirc .python .sqliterc .subversion .wgetrc | xargs -n 1 -I %% ln -s src/dotfiles/%%`
 * `mkdir -p ~/.hammerspoon; cd ~/.hammerspoon; ln -s ~/src/dotfiles/hammerspoon.lua init.lua`
+* `mkdir -p ~/.config/pip; cd ~/.config/pip; ln -s ~/src/dotfiles/pip.conf`
 * Start Hammerspoon.
 * To remove Firefox's highlight/glow dot on app tabs with notifications:
   * Open [`about:config`](about:config), search for `toolkit.legacyUserProfileCustomizations.stylesheets`, set it to true.
@@ -61,3 +62,4 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). I'm currently
   * Disable synching Drive to the computer.
 * [Install and configure MenuMeters.](https://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/)
 * [Install and configure Docker.](https://hub.docker.com/editions/community/docker-ce-desktop-mac/)
+* [Install and configure Logitech Camera Settings.](https://support.logi.com/hc/en-us/articles/360049055854)

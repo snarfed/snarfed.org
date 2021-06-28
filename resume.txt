@@ -53,7 +53,7 @@ _Senior Staff Engineer_
 
 Co-founded [Google App Engine](https://cloud.google.com/appengine/), which eventually expanded into [Google Cloud](https://cloud.google.com/). Led engineering for the [datastore](https://cloud.google.com/datastore/), a large scale, [globally multi-homed](https://googleappengine.blogspot.com/2009/09/migration-to-better-datastore.html) [NoSQL](http://en.wikipedia.org/wiki/NoSQL) database that stores >1T rows, >1EB of data, and serves >3M[qps](http://en.wikipedia.org/wiki/Queries_per_second). <!-- (2005 - 2010) -->
 
-Designed, built, and led [company-wide ML infrastructure for personalization](https://googleblog.blogspot.com/2012/01/updating-our-privacy-policies-and-terms.html) <!-- Implemented a piece of it (in [Go](https://golang.org/)) --> that served 500kqps at peak. <!-- (2011 - 2013) -->
+Designed and built [company-wide ML infrastructure for personalization](https://googleblog.blogspot.com/2012/01/updating-our-privacy-policies-and-terms.html). <!-- Implemented a piece of it (in [Go](https://golang.org/)) that served 500kqps at peak. --> <!-- (2011 - 2013) -->
 
 Led and contributed to network management projects for [Google's backbone network](https://www.peeringdb.com/view.php?asn=15169)<!-- AS15169 -->, including command and control, monitoring, automation, topology, routing, peering, [and OpenFlow](https://www.wired.com/wiredenterprise/2012/04/going-with-the-flow-google/). <!-- (2010 - 2011) -->
 
