@@ -1,0 +1,270 @@
+43557
+Biotech conversation notes
+
+Raw notes from a series of conversations I had with people doing bioinformatics and drug discovery research and related work in mid to late 2011.
+
+Medical genetics researchers, 6/27/2011
+===
+Genomics: still interesting!
+
+* SNPs are single bases, but variations are often much bigger than that
+* Finding genes and gene patterns that correlate
+
+Biomarkers: any interesting bio signal. Gene, hormone levels, protein expression, etc.
+
+* Devices for detecting them
+* Correlating them with x, y, z, ...
+* Consumer device for measuring lots of these? Devices used during FDA trials for correlating data? Theranos (?) startup doing this?
+
+Derive something to direct drug development public datasets (from basic research)
+
+* Search engine over all theoretically possible molecules proteins? As opposed to eg Existing catalogs that only have known ones.
+* Enumerate bonding sites for molecules/proteins?
+
+NLP/data mining over research papers, pubmed, etc
+
+* Derive semantics. Eg lots of activity around X in late '90s, then it was all discredited in 2000. If you search, you may find the '90s stuff and not see that it was discredited.
+
+Help find subpopulations that drugs should be targeted at
+
+* Friend's company did this, worked great
+* Specifically: which biomarkers? Genes, etc
+
+Help direct/predict results of early (and late) FDA trials
+
+* Ie should they use rats, dogs, other animals? Should they look for specific biomarkers? Etc.
+* Drug developer gets to control pre-trials and give input to later ones
+* If big improvement, FDA supports this
+
+Use simulation of subsystems (entire body model is holy grail) to test virtually
+
+* Most likely is maybe drug interactions, eg one to one molecules or one to many, not simulating entire system
+
+Protein folding
+
+* Predicting/computing 3d structure, critical for identifying interactions, bonding sites, etc
+* Another holy grail, but way too big a problem
+
+Identifying all expressed proteins
+
+* So far we have 1k/30k
+* Human proteome project: computationally enumerate them all?
+
+
+Doctor/entrepreneur, 6/28/2011
+===
+At a startup, makes device that prevent epileptic seizures
+
+* Detects early signs of seizures (neurological patterns of brain waves), sends electrical "tickle" that stops it before it starts.
+* Can record and upload lots of neurological data based on heuristics, eg at certain time every day, around a specific kind of pattern, etc.
+* Location in brain: epilepsy is focused but varies by patient, so different place depending on the person
+* Looking into other applications: parkinson's, etc. New approvals for each application but easier based on generic results (eg safety) from previous approvals.
+
+Big picture interest: cost of health care
+
+* High and rising in developed nations. Not sustainable!
+* Expensive, targeted treatments (eg neuropace, narrow cancer drugs) not the way forward
+
+Micro-ecosystems inside big health care institutions
+
+* Eg Kaiser, VA
+* Lots of longitudinal data on patients: conditions they had, treatments, results. Valuable for data mining.
+* Nothing public or semi-public like pubmed though
+
+Friend's project: global database of health care practices
+
+* Started with individual studies and projects
+* Now looking to build an ongoing, self-sustaining database
+
+FDA approval: bane of industry
+
+* Too costly, slow, erratic (unqualified reviewers), long iteration time, etc
+* Also, business model and employment structure doesn't fit cyclical development. Right now mostly full time employees, but more modular structure like hollywood would fit better.
+
+
+
+Medical researcher, 7/14/2011
+===
+
+* Basic research on autoimmune disorders
+* Type 1 diabetes is main application, MS another
+* Looks at proteins expressed by certain cells
+
+Her center is developing a cell treatment, looking for broken T cells, fixing them and reinserting them into patients
+
+Bio researchers generally think computational has promise, more funding going into interdisciplinary
+
+One common problem with merging existing data is lack of calibration of measurements across device types and labs. An automated way of normalizing after the fact would be nice.
+
+Biomarkers very useful, common to lots of treatments, research. Could be useful for identifying subpopulations for trials, etc.
+
+Global databases for biomarkers or proteins would definitely be useful.
+
+Agrees that there's a lot left to do in genetics
+
+* Eg whole gene sequencing
+* Researchers have identified key genes in certain diseases by comparing genes of family members, one who has a given disease vs another who doesn't
+* Expects whole genome sequencing to become more common
+
+Epigenetics
+
+* Extra hereditary information encoded in histome proteins, which pack dna
+* Some dna sequences are "compacted," ie packed tighter away and less used or unused
+
+Agrees that processing public datasets to try to direct drug development could be promising, not a lot of it going on yet. Example: leukemia drug from Pfizer right now. Certain kinase protein causes cells to become cancerous. They found a certain part of that kinase that they could develop a drug to target and inhibit. Promising for other cancers, but the vulnerable part of the protein is kind of unique, so they haven't yet found similar vulnerable parts in other cancer-causing proteins.
+
+
+
+Protein folding/systems biology researcher, 7/15/2011
+===
+Used to do protein folding and related simulation, now on materials science and polymers.
+
+Interesting research right now on whole cell modeling, fleshing out all of the mechanisms involved. Long term, ambitious, projects focus on individual parts right now. One problem is it doesn't necessarily help you so much with larger organisms, since the same kind of cell may have many different states (active or quiscient, etc), and it's not obvious how to get that set of states.
+
+Protein structure is also useful, most proteins have one or a few different structures (ie folding patterns), but some switch between a few structures, and are sometimes unstructured, and each structure has a different function.
+
+Systems bio was modeling with PDEs, etc, didn't work so well
+
+It's also doing experiments en masse - set up and then measure a bunch of bondings, expressions, etc in a single pass, then measure everything after the fact and see what happened and what didn't
+
+Epigenetics: methylation levels of genes can turn production on/off, change rate, sometimes even the protein's structure itself, by affecting stages of the protein creation process
+
+Drug discovery/development pipelines: once you have a target, figuring out what kind of molecule to build to address that target is pretty straightforward. *however*, identifying targets is much less so. Current techniques:
+
+* Historical. Find someone who's been working on that disease or condition for a while, they will already have it narrowed down
+* Educated guess and check. Look for other gene sequences or molecules that look similar to a known baseline, then use those as candidates
+
+EHR aggregation and data mining is promising, example datasets include Kaiser, VA, military health care. Identify signals like doctor decisions, etc, then measure against outcomes and care success rates.
+
+NCI: national cancer institute has what amounts to a drug pipeline for hire, something like pro bono/self-publishing drug discovery, eg for orphaned diseases or other people who aren't big pharma and can't keep the entire pipeline busy permanently themselves. They see lots of people come in with targets, they'd be good to talk to.
+
+Synthetic bio is interesting, but more on the engineering side, eg energy, drug manufacturing (use e. coli, more efficient than growing whole plants)
+
+
+
+Drug delivery/pharma entrepreneur, 8/1/2011
+===
+Background in inhalables and protein/peptide drug delivery
+
+Unofficial (rough, incomplete) pecking order at big biotech: cloning people, cell biologists, then clinical people, then pharmacologists, then delivery people, then formulators at the bottom.
+
+Friend at Stanford has 3x3 matrix for personalizing drug prescriptions, based on monoclonal antibodies. Could hurt Rituxan sales.
+
+Standard timeline and cost complaints about regulatory climate and FDA trials. Record is 4.5 years. Makes the VC community and process problematic; they want quick turnover, biotech and drug discovery startups can't be quick.
+
+Genomic health in palo alto. Did number crunching over genomic data for predictive diagnostics, primarily cancer. Finally have meta analyses of results, unclear whether they're much better than placebo.
+
+Number crunching existing datasets to help with discovery? Unlikely to succeed because bio is so complex. Genomics, proteomics, metabolome, epigenetics, etc all have largely failed to provide big clinical breakthroughs.
+
+Personalized is the future! Stratifying and targeting different drugs, dosages, etc. To subpopulations is really important. Eg Rituxan, blockbuster genentech's cancer drug, only works well in 5% of people, ok in 30%, not at all on rest, still prescribed to everyone.
+
+Lots of fads in biotech. Sirna is recent example, merck bought startup for 1.1b, shut it down recently. Too big to deliver into cells, biology much too complex.
+
+Interested in medical social networks, connecting people with similar diseases, genes, etc, and comparing their experiences. Similar to 23andme.
+
+Also interested in gerontology. Hormone levels drop when you age. Hormone replacement therapy could help, but people worry hormones would cause cancer acceleration. It's pure theory though. Maybe some older people in the field are already quietly taking growth hormone to combat aging.
+
+
+Biochemical drug discovery/development person, 8/8/2011
+===
+
+Agrees that current regulatory climate and impact of trials, etc, is huge. Even more drugs failing in phase 3 right now which means huge investments ($Bs) lost. Business structure also problematic, lots of effort put into new patentable drugs to replace old ones coming off patent just to maintain cash flow, even when new drugs aren't better and are pushed via marketing and biz relationships.
+
+Somewhat agrees that contribution of genetics, proteomics, etc to drug develompent and clinical stuff, especially computational, hasn't been too big.
+
+Complexity and layers of redundancy are big problem. So many unknowns, so many unexpected interactions between your molecule and other proteins or molecules, or even with the target but in an unexpected place or way.
+
+Whole organism (animal, etc) modeling would be holy grail but possibly millenia away. Cell modelling is more promising but still very very early.
+
+Also worries about overfitting problem since we have some data but not a lot. We probably have only partial data in many places, so trying to derive more drug directions from it would narrow our perspective.
+
+Basically, we probably need more science and structural/regulatory/business/process change than computational work.
+
+Old drugs (Aspirin, Tylenol, Warfarin) very bad in lots of ways, lots of contraindications and failure modes, wouldn't pass trials now, but they're grandfathered in.
+
+Subpopulations often based on variations in a single protein: post-translational modifications, eg sugars bound to certain places. Can control how protein behaves. Eg Rituxan (probably) based on single reference patient with specific variation. Some based on gene but also sometimes on time of day, food, other dynamic things.
+
+Enumerate post-translational modifications? Maybe, but during discovery you often already know them for your target protein and which one you're basing the drug on. So, maybe not.
+
+Contraindications would be very useful to try to find and predict.
+
+Epigenetics promising for computational, would be good to enumerate all the ways and reasons different genes are activated and deactivated, how they're packed and methylated, etc
+
+Also should look at correlating with clinical records and trial results, could help predict good cocktails to take, contraindications, etc., even combined with epigenome.
+
+On that note, would love to see more progress in EMR and unifying standard result formats. Not enough movement right now.
+
+FDA especially, now requiring standards for trials which is good, but they have 50 yrs of trials data in non-standard formats, gold mine for data mining.
+
+
+Pharma drug delivery person, 8/23/2011
+===
+Works on targeting medium to large molecules (small proteins). Identifies active sites on biological molecules (often proteins) for drug molecules to bind to. Often delivered by injection; large molecules generally can't cross gut (oral) or lungs (inhalable) and definitely not blood/brain barrier
+
+Active sites ideally need to be both cavities (ie holes) and bond on the atomic level (not necessarily chemically, just fit nicely) with drugs. Useful for efficiency of drug molecule surface area, tight binding so that the drug outcompetes whatever organic molecule would normally bind there, and also selective so that it's less likely to bind to other places and cause side effects.
+
+Discovery people who give him candidate target molecules find them many different ways. Most often they try knocking out lots of different proteins in animal test subjects (with the disease) via RNA, then see if any of those tests had effect.
+
+Drugs can succeed in animal trials but still fail in human clinical trials more often than you think.
+
+Agreed with prohibitive timelines (tens of years) and budgets (up to $600-900M)
+For current drug discovery and development.
+
+Agreed that crunching data to identify subpopulations or predict side effects is nice, but gold standard is still human trials, and you won't get close enough to skip them or guarantee passing, so you'll still need to do them.
+
+Most basic researchers have access to medium to large supercomputers, so capacity usually isn't the problem.
+
+Existing protein databases:
+1. From French researchers, includes x-ray crystallography structure of lots of proteins, maybe 1/3 of all
+2. Larger db of *homologous* proteins, ie if we have one protein with a known structure, are there proteins with unknown structures that are homologous that we can use to predict their structure
+
+nVidia recently talked to Amgen about possible applications for GPUs - similar question as mine, just lower level, ie is there any application for massively parallel hardware.
+
+
+Pharma software person, 8/25/2011
+===
+Looked into marketplace for fundraising and service provider vendors for drug development, mostly plugging together existing discovered targets, molecules, delivery vectors, etc. Big biz process change, similar to how Hollywood makes movies. Didn't entirely work out for a few reasons, eg culture change is hard and takes time, and also people behind projects were concerned about keeping data proprietary.
+
+Still, good idea. Evidently eli lilly has tried something similar internally, lightly, but hasn't pushed it. Probably ahead of its time.
+
+Quoted smaller numbers for drug development and trials, eg best case 20-30M for development through phase 2 trials, but can vary *wildly*, and often need much more failed R&D for eg discover, development, delivery, which increases avg cost of successful drug.
+
+Generally agreed with others on lack of opportunity for large scale computation in applied drug development:
+
+* No to directing discovery. Current is still shotgun (knocking out genes en masse with RNA). Current models (animal and otherwise) are often not good, and even counter-productive; results often differ wildly or even opposite from predictions.
+* Identifying subpopulations, maybe, but not much better. Drugs are still developed, prescribed, and expected to work on majority of population for any given disease. Rituxan example was unusual, and now its subpopulation conclusions are in doubt.
+* Another difficulty with subpopulations and personalizing prescriptions based on diagnostics is the culture change to paying for the diagnostics. Herceptin (for breast cancer) is current poster child for diagnostic/drug pairing.
+* Predicting side effects and trial results, also maybe not much better. So far, shortcuts in trials haven't helped and have sometimes actively hurt. Eg lipitor: measuring circulating cholesterol in blood instead of plaque or end result heart disease was *not* predictive. Similarly, end symptoms for diabetics like amputations have turned out to not correlate with blood sugar. So, now FDA is very careful and generally requires longer, longitudinal style outcome tests.
+
+Big opportunity for meta analyses and data mining over experimental results, aka "pre-competitive" data, eg FDA trial results, and also over health care records. Echoed all standard problems with availability, data formats, instrument calibration, etc, but also pointed to how results are often not reproducible like in other sciences. Eg cell lines are often not homogeneous, mutations and other differences have crept in over time, so even if you order the same cell line, it may differ substantially from the one used in the original experiment.
+
+Echoed (relatively) recent industry move toward orphaned and otherwise niche diseases and drugs. These have generally shorter and cheaper phase 0-2 development costs, and the trials often work differently too, for both company and regulator.
+
+Sage bionetworks and sage congress people are tackling the computational side, primarily the data standards and formats and quality - less hard molecular bio and drug stuff - but still worth talking to.
+
+
+Epigenetics researcher, 9/2/2011
+===
+Studyied epigenetics in population shifts, looking at hunter gatherers vs agriculturists in africa.
+
+Math background, got into bio due to hiv, interesting because it changes so much and varies so widely, so fast, within a single person, due to high mutation rate and because it's a retrovirus so it recombines its own genes when it reproduces.
+
+Stanford profs' startups doing cloud, data, etc services for basic research (and maybe drug design): Numedi, DNANexus
+
+Epigenetics: methylation (ie is there a methyl alcohol molecule bonded) or chromatin modification of individual genes, or folding of larger sequences of the dna strand
+
+Methylation most commonly researched right now because it's easiest to measure. No whole epigenome or large scale datasets yet
+
+Mostly reset at birth, but not entirely. Some is inherited, ie transgenerational. Most is coded for in dna though.
+
+Used to control eg development, both during growth and in different tpyes of cells. Eg in bone cells, turns off genes that make muscle fibers.
+
+Interesting studies: one measured methylation of C genes, across different types of cells and in both humans and chimps. Found clear patterns in cell types, across both humans and chimps.
+
+Another looked at identical twins, compared changes in epigenome to changes in phenotype later in life. Expected due to combination of environment and inherited epigenome, and/or looked at epigenome as mechanism triggered by environment.
+
+Similar environmental example: smoking messes with methylation (?) in tumor suppressor cells, wihch lets cancer cells grow more.
+
+Doctor/bioinformatics researcher, 10/7/2011
+===
+Has done tours at a few different hospitals. Now doing bioinformatics research. Agreed that pain points are regulatory, funding, etc. Also pushed hard on patents, gave examples of projects ppl worked on for 6 mos, mgmt loved, but still had to kill because they were in the very vague nearby area of something already patented by someone else. Same with investment climate, same kind of 6 mos in project killed because it was too risky and not a good investment. Says compute power is not a bottleneck, thinks they don't even have high utilization of the cluster(s) they have. Mgmt interested in cloud but probably more for IT, maybe a bit for research. Genentech is in the middle of a big pivot from basic research to applied research. They actually tried to buy sage, entirely for the people, but that didn't fit with the pivot away from basic toward applied. (sage was honest and said they're in basic and want to stay there.)

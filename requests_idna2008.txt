@@ -2,12 +2,12 @@
 Relax requests' IDNA2008 requirement?
 
 <p class="right third">
- <a href="https://brid.gy/">
+ <a href="https://docs.python-requests.org/">
   <img src="/requests_logo.png" /></a></p>
 
 _(Also filed as [psf/requests#5845 on GitHub](https://github.com/psf/requests/issues/5845).)_
 
-The venerable [`requests` Python HTTP library](https://docs.python-requests.org/) currently uses the `idna` library to check input URLs for IDNA2008 compliance, and rejects URLs that don't comply. This breaks non-compliant URLs with emoji characters, like [http://☃.net/](http://☃.net/), which you all said was intentional in [this comment on #3687](https://github.com/psf/requests/issues/3687#issuecomment-260757981) (also see [this comment on #3683](https://github.com/psf/requests/issues/3683#issuecomment-261240279), since those domains' time is arguably limited, ie they're effectively "dead domains walking." Understood.
+The venerable [`requests` Python HTTP library](https://docs.python-requests.org/) currently uses the `idna` library to check input URLs for IDNA2008 compliance, and rejects URLs that don't comply. This breaks non-compliant URLs with emoji characters, like [http://☃.net/](http://☃.net/), which [you all said was intentional](https://github.com/psf/requests/issues/3687#issuecomment-260757981) ([more background](https://github.com/psf/requests/issues/3683#issuecomment-261240279)), since those domains' time is arguably limited, ie they're effectively "dead domains walking." Understood.
 
 However, not all TLDs require IDNA2008 compliance. Unlike gTLDs, ccTLDs generally get to choose their own domain policies - [background from Wikipedia](https://en.wikipedia.org/wiki/Country_code_top-level_domain),  [ICANN](https://www.icann.org/resources/pages/cctlds-21-2012-02-25-en), [a GoDaddy representative](https://github.com/kjd/idna/issues/18#issuecomment-830969692) - and a handful of them have stuck with IDNA2003, UTS#46, or related variants.  (Not to mention older proprietary schemes like [ThaiURL](https://en.wikipedia.org/wiki/ThaiURL) 😁.) For example, [.ws, .la, .ai, .to, and .fm evidently explicitly allow emoji.](https://gizmodo.com/emoji-domains-are-the-future-maybe-1823319626)
 

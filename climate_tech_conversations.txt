@@ -1,0 +1,476 @@
+43567
+Climate tech conversations
+
+Raw notes from a series of conversations I had with people doing climate crisis research, tech, and investing, mostly during 2020 but some before.
+
+Also see [Climate tech links](/climate-tech-links), [New job, hello climate tech](/2021-05-31_new-job-hello-climate-tech), and [The year is 2040](/2020-05-17_the-year-is-2040).
+
+
+Software researcher, 8/7/2020
+---
+Did GIS, satellite imagery. Then 10y in ad tech, but finally wanted to do ML + climate research.
+
+Tons, hundreds of teams inside [big co] working on climate, entirely bottom up. Lots of duplication, not enough coordination.
+
+Also a group of eng leaders left recently to make a bay area climate eng incubator, just in last few weeks. Eg many teams on wildfires.
+
+Negative emissions/offsets been a big deal this year, Blackrock etc. Big gap btw supply and demand. Eg Google buys offsets, many from landfills cleaning up methane outgassing. Lots more, big opportunities! Newer is voluntary though, is that demand the same? As permanent?
+
+
+Climate data researchers, 7/17/2020
+---
+Non profit analysis consultancy, science and DS heavy. Do human powered independent analysis of projects, tech, etc. (not offset verification). Open source, DS, software heavy.
+
+Some collabs with traditional research. Some projects with public, some private. Some funding from grants/foundations, some from companies.
+
+
+Carbon accounting entrepreneur, 7/15/2020
+---
+Focused on reporting. Tools instead of big paper report, more accessible.
+
+Why not tableau etc instead of build it yourself? Legacy app users. Last 2y just firefighting. Want someone new to change technical direction?
+
+Customers often regulatory/compliance based. But some marketing based. Michael knows more.
+
+Competitors? Lots of consultancies historically. He thinks they're unique in ingesting financial info.
+
+Scope 3 emissions? Not handled right now. Only energy and fuel.
+
+
+Offset entrepreneur, 7/8/2020
+---
+Doing supply side themselves. Too expensive, and they can also charge at cost, then only charge for software.
+
+Product is just in time offsets, via API. Often per transaction in ecommerce, banks, etc. Pass variable amount straight through to suppliers. Aggregate, then buy monthly. Show customers which project they're getting.
+
+Pre product market fit, right? Traction? Iterating? Feeling pretty good with deal funnel, 40-50 cos in mid to bottom funnel. Trying to get onto customers' product roadmaps, have LOIs, etc.
+
+Why API? Why not bulk? Maybe we do. Customers can buy directly from dashboard. But API is no overhead.
+
+5y vision? Carbon markets demand constrained right now. Projects oversupplied. Compete on price etc. Quality? Yes, tiers, even in commodities. Traunches. But within same rating, commodity. So, increase demand.
+
+Then, once supply is bigger, move into supply side. Carbon accounting, certificates, compliance. Can help w/dynamic pricing, underwriting.
+
+Three buckets: measure, reduce, compensate (aka offset). Kind of carbon ERP.
+
+
+Carbon accounting entrepreneur, 7/6/2020
+---
+Model? Paid software, also offset marketplace? Reducing, removal?
+
+Traction? Customers? Voluntary or regulatory? Mostly UK so far, now a bit US. How to reconcile voluntary vs regulatory? Meh. Insight main revenue, then calculators. Offsets and others next.
+
+Data, models? How do you do scope 3, esp supply chain? Contracted out to data scientist.
+
+
+Carbon accounting entrepreneur, 7/8/2020
+---
+Business: originally scenario planning/modeling, carbon intensive companies. Manufacturing, transportation, real estate, etc.
+
+Now working on full carbon accounting, inventory, scope 3. Forecast business as usual baseline, and others.
+
+Built db from some sectors, averages. Drill into details. Based on financial data, automate into tool. Final step is carbon pricing, offsets. Include public data from reporting, others. Include compliance, carbon tax, policy.
+
+Regulatory vs compliance? Not gov'ts. Risks, two main buckets: physical assets, debt, then transition risks: policy, economic, tech, reputation. Believe in mitigation more than adaptation.
+
+Competitors? Mostly consultants. All manual, not worth it. Talked w/BCG, McKinsey. Other tech startups? Many from '90s, painful, difficult structure, not modern. Only do accounting/inventory, not forecasting.
+
+
+Carbon accounting entrepreneur, 7/2/2020
+---
+Heart of original product is modeling platform. Want customers to normalize projects so they can compare, esp cost and emissions.
+
+Next is full "carbon inventory" engine, inside scenario planning. Eg Enablon, but it's too high level, for just reporting.
+
+Voluntary vs regulatory/compliance? Also financial, pressure from investors.
+
+Need more detailed data on what company does, esp industrial processes. Better granularity! Manual data entry.
+
+Often co's come with targets, eg net zero by 2030, but haven't measured yet.
+
+Early customers are compliance-focused, care about stranded assets, etc. Many industrial co's, many transportation.
+
+Industrial processes for concrete, steel, etc are harder? Some methods for them. Emissions are both chemical process and energy for high heat.
+
+Not planning changes all at once, incremental, optimizing them based on cost, policy.
+
+Overall workflow? Prioritizing product decisions. Balancing short term vs long term.
+
+Likes cross cutting aspect of carbon accounting. Why they're doing it.
+
+Does anyone need more accuracy than existing consultancies? Need *materiality*. Customers looking for where they can actually reduce, as much as just counting.
+
+Existing consultancies that basically bring in excel spreadsheets and apply rough GHGP. Yes, consultancies, but they don't address sophistication or detail demanded now. Also more pressure to report qtrly.
+
+Tool is kind of like turbotax for GHGP. Key is also adding actionability, and probably more than just offsets. "insets." helping them think holistically about emissions reduction.
+
+How do deals go then? Start with CSOs (chief sustainability officers). They're part of capital planning. Plug into cash flow statements, capital planning process.
+
+How high touch? Need a lot of work to even collect data, right? Mainly deliver tool, less consulting? Right? How does that go over? Yes, true, but they're still early in deals. Eg MAC curves, eg in EU. Haven't gotten there yet. Will need more people for implementation.
+
+
+Tech exec, 6/22/2020
+---
+Thought of climate crisis as "white walkers" from game of thrones.
+
+Felt powerless as inndividual, but also knows power of crowds from traditional consumer tech.
+
+Looked at personal carbon counter apps, felt like too much work. Likes idea of labelling though. Denmark launched this for 3k SKUs last fall. Fold into nutrition etc, general "good/ok/bad" labels.
+
+Not interested in specific solutions, need many different ones.
+
+Also likes COVID as example of implementing change globally, by government mandate etc. We all accepted huge changes, imposition on liberties. Can do that for climate.
+
+
+Supply chain transparency founder, 6/19/2020
+---
+First started a co aimed at consumers, labelling, also their own cosmetic line. Surprised at lack of transparency. Eventually found that it's common across industries.
+
+Takes supplier list, finds info. Then when brands have desires about suppliers, she can match.
+
+Biz model may include transactions, eg middleman for buying from suppliers, bundling purchases.
+
+Labelling up to each brand, but may include their logo eventually.
+
+Unilever labelling? Yes! Sephora similar, committed to dropping 56 bad chemicals.
+
+Do their own testing! Along with supplier docs. Chemists on staff.
+
+Interested in transparency for packaging as well as actual product.
+Biz will be multi-party, multi-channel, need to support all of those.
+
+How to confirm/prove to brands without giving full info? Once PO is in place, they'll share more. Some docs. Also some regulatory, for some products brand will need docs.
+
+Standard deadlock is, buyer wants docs before PO, supplier wants PO before docs. Break logjam.
+
+Market is fragile, since value is marketing, PR, etc? Seeing outside bodies like retailers driving brand behavior. Eg EWG, Maidsafe, others for supporting consumer demand, labelling.
+
+Why build tech? Why not white label eg Airtable + Tableau? Yup agreed, good point. Main place is data ingestion and normalization.
+
+
+Carbon accounting founder, 6/19/2020
+---
+Vision is data, tools, and market access. Big pent up demand for emissions reduction; not enough tools, data, market access, offset vendors.
+
+Vertical integration is key difference. Customer wants turnkey solution.
+
+10 paying customers today. Mostly competitive, ie they looked at other consultants etc. All-in-one soln was compelling.
+
+Voluntary vs regulatory? Mostly US so mostly voluntary. Starting UK, Canada, more regs there.
+
+Offset market? Building a bit of the marketplace. Offsets initially as band-aid, but hopefully customers will mature out of offsets. Since they've historically been garbage? Yes.
+
+Clean energy trading? Learned a lot but also mostly partner that knows the trading stuff.
+
+How high touch? Definitely high touch now. Hopefully streamline down to less over time, and build sales org. Expectation is most business can cut 20-40% emissions, cost neutral.
+
+Dataset? Might be best carbon dataset right now. Mapping of SKU to emissions? For most co's, scope 3 is 80-90% or so, and where reduction oppt'ys are. Can improve by just switching vendors.
+
+Data is based on co's financials. Map that to carbon data, lots of different datasets joined. Backstopped by generic estimates.
+
+Tools? Want customer experience to be very self serve eventually. Eg restaurant deciding whether to add beef to their menu, want it to be informed by possible future carbon tax. Currently, can plug in financials and get emissions measurement out. Humans are in that loop right now; want to automate them out and make it realtime.
+
+Also PR! Both internal to employees, and external. Dashboard can be exposed to employees, publicly, etc. And also some coaching comms.
+
+Pitch me on your market. Most fragile part, right? If ESG etc, motivation is PR, recruiting, "do the right thing," etc, which are most vulnerable, right? Esp for voluntary carbon markets. And if regulatory, doesn't drive customer's revenue, so it's a cost center, which also kinda caps your margin, right?
+
+In practice it's been very robust. And want voluntary for zealous customers. Tricky "crossing the chasm" eventually, but not yet.
+
+You say your own financials etc data from customer is useful. But does it include emissions? If not, how useful?
+
+Sitting on two kinds of data: 1) activity data from customers, including some financials, and 2) emissions factors: carbon intensity of activities. Ideal API, SKU to grams.
+Reuse of data is once a customer is a supplier to another customer, or they have a common ancestor.
+
+
+Energy trader, hyper-local weather founder
+---
+Two main models are NOAA (GFS) and European Center. NOAA free, EC not. $100ks, and a commercial clause that costs more.
+
+Need to add hyper-local? No, not so important. Averages are fine for project development, site surveys. Also farms are fairly big.
+
+Secret sauce is adding simulation on top of existing model(s), and handling uncertainty in forecasts. Need cloud cover and wind. Forecast is 15d out max. 1d more certain, 15d less certain.
+
+If you can simulate and measure uncertainty, you have all the tools you need. Can get numbers with error bars out.
+
+Customers are utilities, generators, energy portfolio mgrs. Later down the road, make his own load/demand forecast. Even later, use for travel, insurance, better consumer weather forecasts.
+
+Simulating weather indicators: temp, dew point, cloud cover. Time of year, time of day, etc. Simulate 1k paths, w/location-based values, properly correlated. Get results with uncertainty based on range.
+
+Have long historical record, farmers' almanacs etc. Can batgck-test!
+
+Meteorologists? Do they simulate? Not sure. Definitely not competition! Noaa and EC do physics-based models, very focused on improving forecasts. And still, not great far out. Eg range at 10d is 10 degrees! So why don't they do simulation or more work on quantifying uncertainty? Just not part of their core mission of physics based models. They focus on forecast.
+
+Won't storage obviate this? Demand response? Nope, complementary! Forecasts can drive demand response, storage charge/discharge.
+
+Utilities have long deal times, right? Need understanding VC? Power specific? Metrics, KPIs? Revenue. For customers? Backtesting.
+
+Meteorologist? Weather expert? Data scientist as founding eng? He's kind of data scientist/quant. Otherwise, wants to start out *without* meteorologist, wants to avoid someone who takes existing setup for granted.
+
+Working with service company that advises corporate renewable energy buyers. Deals are usually fixed price, kind of as a hedge agaist variable prices over time. These guys try to optimize that for buyers.
+
+* short term forecasts.
+* renewable PPA simulation, for buyers and advisors like this.
+
+
+Employee engagement startup founder
+---
+Sustainability background. Some emissions, a lot of waste optimization. But saw that employee engagement suffered, hard for ESG to mobilize them. Hence employee engagement platform.
+
+Expands to other initiatives: D&I, culture, morale, etc.
+
+Currently bootstrapped, not venture funded. Just three people and part time eng. Moving slower on product dev than he'd like, so want to find eng lead.
+
+Fisheries/aquaculture: flywater, etc. Supply chain.
+Uplight, energy. Measurable, real estate ESG.
+
+
+Climate VC, pitched me a role at one of their portfolio co's
+---
+Two biz sides: tools for land mgmt, and investors. Tools are analytics and project dev - vendor mgmt, stock, labor. Investors: originating deals, deployment, etc. Pitch is increased yield, resilience, diversity.
+
+Analytics data? Economic. Both static data from analysts and active data can work with. 1) farmer data exchanges, high quality, manual collection. 2) firsthand experience on the ground, 3) univ research. Still often not perfect but close enough.
+
+Not a feedback loop from their land as much as rich initial model, forward looking.
+
+What's increase in return? 40%.
+
+High touch product, human analysts per project. Why software? Tools for analysts, eventually user-facing.
+
+Why is excel not good enough? Volume, richness, sources of input data, and how outputs get out. Eg into project dev. Still high level though, not quite driving low level ag implementation. Farmers are range of high tech vs low tech.
+
+Metrics, kpis? Revenue. Top of funnel demand, ie new project starts. Number of trees planted. Impact side: trees, carbon drawn down, etc.
+
+Why CTO? Why not off the shelf tools? Already built out prototype product, need CTO for long term eng stack and vision. Why not advisor + off the shelf tools, for at least 2-3y vision. Also an option. But for strategic partner, should be for long term.
+
+
+Air quality tech eng manager
+---
+Customers in regulated markets. Uncertain now but ok.
+
+Main customers are state regulators, utilities. Some local, eg bay area. Growth strategies, expand on technologies. In both Google Street View and now also their own fleet so they can control how they drive.
+
+Use cases for regulators? Data for planning, etc. AB617, mandated more data collection, identifying communities at risk, etc. Also some enforcement.
+
+Started on indoor air quality, then moved outdoor. Some exclusive licenses, eg methan, and reference grade measurements. Still a couple indoor pilots but not much.
+
+Utilities, detect methane leaks. Cost savings, public safety, regulatory.
+
+More speculative: health care and real estate, simulation and modeling. And some analytics dashboarding, both home grown and tableau.
+
+New data sources? Already some stationary sensors, ingest other people's sensors.
+
+
+Energy carbon intensity non-profit director
+---
+Core mission, providing clean choices to customers (including rate payers) for reducing emissions. Utilities, demand response, generators.
+
+Founder started on economics of emissions. Found nothing real time. So they did it! EPA data, ISOs, real time supply data from power plants. 5m! Peakers, duck curve, marginal response, etc.
+
+Demand response to emissions, "AER." optimization algorithms. Demand response for consumer devices.
+
+Related project, satellite imagery, measuring emissions from power plants worldwide. Places w/more renewables, eg CA. Grids etc can use this.
+
+Conflicts in demand response btw ISOs, power plants, etc and direct consumers from WT? Not really. IsOs less incentivized by emissions.
+
+Sgip, self generation incentive program for storage. Mostly commercial, before meter. Before, was very manually modelled, time of day curve. Increased emissions! Eg filling storage at night, w/o solar PV. So they changed program to require emissions signal. Comes from WT!
+
+Range of partners: enterprise, policy, utilities, device makers, now some EV charging networks.
+
+Future roadmap? More on demand response based on emissions. Analysis, project research for companies. New regions, partners, etc. Basically happy with platform and product, now finding new places to apply it and drive impact.
+
+How much of carbon markets/incentives are regulatory vs voluntary? In US, more voluntary. Ghg Protocol is good but based on average energy emissions, not marginal (peakers). Not only US focused though! 95-98% US coverage, Canada, some Europe, etc. Partners similarly largely US but a bit elsewhere too.
+
+
+Climate tech VC
+---
+How do you evaluate climate pitches? Doesn't change how they invest. And founders are most important. But then, when you break down sources and impacts, how does it compare. Also relates to market size.
+
+Approach to carbon pricing/markets? Still 5y out. Where? Specifically US. Eu ahead.
+
+So many pitches, but hard to evaluate. Have one in ocean tech, distributing sensors. One for sensors and insurance, couple in mobility, one in carbon accounting. Why? Looking at EU, growth in sustainability, budgets. Both regulatory and voluntary.
+
+Individual action? Met Joro, Wren, etc. Excited about space personally, but not for investment. Hard to be $1B businesses, and also doesn't move the needle. And important for society.
+
+
+Forestry offset founder
+---
+Historical middlemen for offsets, buyers and sellers different places.
+
+Satellite imagery, ML, verifying forests.
+
+Ach, Verra, Gold Standard?
+
+Which sat imag? Planet, maxar multi spectral, landsat, lidar.
+Ml label data from forestry on ground.
+New: JEDI, NASA satellites.
+
+Reg risk/opp? Both. Growing!
+
+40y term for deforestation, 100y for reforestation.
+
+Some projects are bad, they avoid. Via both paperwork and sat imgry. Eg slopes too steep for deforestation, too deep in forest, diseased, etc.
+
+Project roadmap: oceans, regenerative ag, soil quality, petlands in indonesia.
+
+Forestry expertise? Full time forest scientist on staff.
+
+What's over vs under invested? Forests under invested. Also cement, refrigerants, food. Energy and transportation have enough.
+
+Also applying ML more widely to systems overall, for efficiency.
+
+
+Applied satellite imagery founder
+---
+Satellite imagery analysis for water use, etc.
+
+Newer cubesat fleets like planet for defense. Also descartes.
+Public ones like NASA, NOAA, etc aimed more at entironmental.
+Newer ones are just rgb, maybe a bit else. Gov't/env ones are much broader spectrum.
+
+Thinks carbon pricing is a kind of silver bullet. Also feels strongly about individual action, things we do personally can indeed help, less meat and flying but also advocacy.
+
+What's over/underinvested? Energy/electricity definitely over. Ag maybe under?
+
+Upstream not as dependent on carbon markets, regulations like carbon tax, buyers.
+
+
+Research non-profit director
+---
+Tech stack very varied by emissions sources, problem, etc. Ccs etc are mostly hardware, chemistry. But also synthetic biology, including code/algs for it.
+
+Big co's like MS etc want to buy offsets and negative emissions, have money, need projects. Long term idea is finding and scaling projects, offset projects. Including forestry via satellite imagery lidar.
+
+No silver bullet. Likes land use/forestry, mineralization. But you need market and buyers. Carbon pricing is still incomplete and limited globally.
+
+Individual impact? Can be big! 60%ish of all spending. Also activism.
+
+Footprint calculators, consultancies using GHGP and rough estimates, yes. Generally don't need higher accuracy.
+
+
+Climate tech VC
+--
+~50 accelerators around world. Some regional, some verticals w/themes, partnered with other org. Climate partner is nature conservancy: land/water, food/water, green cities, climate change, data+monitoring+analysis.
+
+Company/sector breakdown? Varies. Last year, ag/water heavy, regenerative ag, sequestering carbon.
+
+
+Energy (DER) startup founders
+---
+Looking at energy. First electrify everything, then switch to renewable. Easier for softtware eng to attack too.
+
+Looking at smart grid, but long transition. Still, systems problem, moving from old dpassively mged system to realtime, dynamic. Basically good mgmt as a service. Largely grid.
+
+Typical customers are utilities. Maybe microgrid, but less. Also utility entities like California CCA, Silicon Valley Energy. Own procurement, not distribution. Need to understand how money moves.
+
+Demand response? Combo ADMS, DERMS, EPP.
+Distributed resources, smart grid?
+
+Focused on distribution grid, esp smaller. But ISOs too.
+
+Smaller coops more motivated to change, take advantage of cheap renewables. Bigger grids, less so, longer roadmaps. Need to understand business needs. IsOs also are non-profits, also motivated by rate cuts, renewables, but slower.
+
+How has experience coming from SV/startups/VC into slow energy industry? First, hired energy/utility experts. Yes, VCs mostly said no. But some listened. Picking right VC(s) helped a lot. Using smaller customers as stepping stone to help. Also utilities have lots of money; follow the money.
+
+Silver lining, utilities aren't as vulnerable to downturns. Very steady demand. Can maybe invest more in software during downtimes.
+
+Originally people thought storage would solve demand shifting to match solar capacity, but battery production didn't ramp up. Then they looked and no one was doing demand flexibility well enough. Most camus competitors were founded by energy people, power systems engineers.
+
+So, most software isn't great. From/for IOUs (investor owned utilities). Eg they make very complicated specs to inflate software cost so they can make money from it, since they can't make money from ratepayers.
+
+NISC, overlay on most services utilities need. No mission though.
+
+
+Consumer carbon calculator founder, 4/1/2020
+---
+Biz consulting background. Needs actionability, collective action. Recently hired head of eng.
+
+Likes over vs under invested. Thinks about offsets, verification, biz dev.
+
+Pressure, more on co's than policy.
+
+Moral hazard? For offsets, yes. For individual action? No, actually sees people get more invested, not less.
+
+
+Emissions labeling non-profit founder, 3/18/2020
+---
+Low end: calculator on web site.
+High end: consultants doing big $50k+ projects, often GHG Protocol.  GHGP isn't all that instructive, just guidelines. Quantis: scope 3 calculator. Most consultants license it.
+
+They're in the middle, "goldilocks" solution.
+
+combines BEE economic I/O with lifecycle datasets. Company enters cost of goods, where they manufacture, etc. BEE estimates categories of emissions, via GHG Protocol. Go through process of refining with details.
+
+Scope 3: shared db or start from scratch? Quantis starts from scratch. Uses patterns for co's though.
+
+What do different countries' policies require? US policy is just electricity. CA has categories, but only emissions inside country.
+
+Measuring scope 3 hits diminishing returns. Precision isn't too useful beyond a point.
+
+Footwear industry worked on emissions db for decades. HIGG, Higg Co, Sustainable Apparel Co.
+
+Distaste for that though. Too much measuring, co's think it's the end game.
+
+Mitigations: portfolio of approaches, not silver bullets.
+
+Individual action: counts. All need to help: govs, biz, individuals. Indvs can exert pressure w/purchases, both big and small.
+
+Investment? All underinvested. No single sector emissions are falling enough. Electricity needs more!
+
+
+Tech eng mgr, drawdown contributor, 3/2/2020
+---
+Started contributing to drawdown part time, python code around their excel models. Working now, but still models are mostly in excel. Some of them is duplicated across 80+ excel files. Researchers avoid changing those at all costs. People turn over pretty fast, recruit new grad students every year. Numbers themselves are important since key artifacts are papers that are peer reviewed and numbers are first class citizens in them, not just abstract models.
+
+Drawdown doesn't include geoeng, probably due to ideology. Everything is measured and compared in Gt CO2e, not temperature.
+
+Looked for something full time in climate - energy, etc - but didn't find a fit.
+
+Agreed on hypotheses - no silver bullet, individual action minor, policy (price on carbon) important, energy overinvested, ag reasonably invested, land use underinvested, transportation largely overinvested except shipping, etc.
+
+
+US state policymaker at NRDC, 2/20/2020
+---
+Thinks about full electrification a lot, to get off LNG.
+
+NRDC touches lots of stuff. GHG Protocol. See recent research on methane bottom up vs top down. Transportation electrification, fleets, needs more.
+
+Coal going away, due to both economics and policy, but LNG going up. Lots of work on how to reduce LNG, replace w/renewable. 2 cent solar, 2-3 plus storage. Utilities still choosing LNG though due to screwy incentives and familiarity.
+
+They always lay more pipes, bad at maintaining existing ones. How to help, or decide where to electrify.
+
+Utilities in general so bad at data. Also not ready to plan for future, shrink. Degenerate marketplace and incentives in general, due to regulations etc.
+
+Very little attention to nuclear, no new proposals. So big and expensive. Breeder/fast reactors good.
+
+Hydrogen! From renewables. Need cleaner electrolysis, also cleaner energy source. Right now emits a ton!
+
+Enough energy investment? Kind of. CA has a lot. Need more for storage though.
+
+ElectricityMap, Watttime? Yes, like Watttime. Look at markets a lot.
+
+Places you need tools, data? Lots of software for managing, modeling grid. Eg Resolve.
+Recent planning process, missed load pockets. Need better planning data with enough regional data.
+
+
+Traditional tech VC, 2/13/2020
+---
+Very interested in climate but still small in total terms, both # of deals and total investment size. Was very focused on business viability, relatively unsophisticated in climate specific knowledge or thinking.
+
+Understood carbon accounting idea, saw biz as limited since it's a cost center (compliance), not directly revenue driving.
+
+Also mentioned offsets for deforestation protection w/satellite imagery. Not his portfolio co, but interesting.
+
+
+Energy usage meter founder, 8/21/2016
+---
+Non-intrusive sensors that attach outside of a meter box (or breaker box) and measure utilization at high freq, 2Khz, and report back usually every ~4-10s.
+
+Equivalent smart meters only measure hourly aggregate data at best, and only report after 24-48h delay. They're a mesh network. Could configure to report more often but not easy and utility's aren't incented to.
+
+Early deployments: EV chargers, solar cos who just want energy usage data.
+
+Longer term business is guessing state of home (garage door open?) and events (appliances about to fail!), then selling those leads to utilities or repair shops.
+
+Side project opportunities in embedded sys firmware, smart grid (but not voltron, thinks it's a mess).
+
+Outside code: solar actuators, etc.

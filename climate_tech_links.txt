@@ -1,0 +1,84 @@
+43564
+Climate tech links
+
+A collection of links and resources for climate tech and the climate crisis, compiled in 2020.
+
+Also see [Climate tech conversations](/climate-tech-conversations), [New job, hello climate tech](/2021-05-31_new-job-hello-climate-tech), and [The year is 2040](/2020-05-17_the-year-is-2040).
+
+**Communities:**
+
+* [ClimateAction.tech](https://climateaction.tech/), probably the oldest Bay Area tech community for climate
+* [My Climate Journey](https://www.myclimatejourney.co/), best climate tech community I've found so far, tons of heavy hitters. also a podcast and angel fund
+* [New Energy Nexus](https://www.newenergynexus.com/network/), energy specific, also has an accelerator and fund(s)
+* [Work on Climate](https://workonclimate.org/), nascent but pretty good, started by ex Googlers. They have a ton of other irons in the fire, [ClimateCTO](https://climatecto.com/) and [Climate Fellows](https://climatefellows.org/) and running the climate track at an ML conference, they may be spread a bit thin.
+* [Witnesses of Climatology](https://www.facebook.com/groups/701103413374218/) quirky but great people. Ex Googlers Malcolm Blaney and Olya Irzak are here, among others.
+
+**Media, newsletters, podcasts:**
+
+* [Grist](https://grist.org/), good broad climate journalism
+* [Carbon Brief](https://www.carbonbrief.org/), deeper, hard-headed, research driven analysis. Halfway between journalism and academic papers.
+* [Bloomberg Green](https://www.bloomberg.com/green),, early but promising.
+* [Ramez Naan](https://twitter.com/ramez), is great
+* [The Interchange](https://www.greentechmedia.com/podcast/the-interchange), energy specific, mostly utility scale but broad
+* [The Energy Gang](https://www.greentechmedia.com/podcast/the-energy-gang), ditto
+* [How to Save a Planet](https://gimletmedia.com/shows/howtosaveaplanet), fun but very broad
+* [Climate Tech VC](https://climatetechvc.substack.com/)
+* [ZERO](https://zeronewsletter.substack.com/)
+
+**Reports:**
+
+* [State of Climate Tech 2020](https://www.pwc.com/gx/en/services/sustainability/publications/state-of-climate-tech-2020.html) (PWC), massive recent investment-focused report on the space, long but worth reading
+* [What can a technologist do about climate change?](http://worrydream.com/ClimateChange/) (Bret Victor), seminal
+* [CO2 Series](https://longitudinal.blog/co2-series-part-1-review-of-basics/)
+* [Climate Tech's Second Shot](https://qz.com/guide/climate-techs-second-shot/) (Quartz)
+* [Good Tech Lab's reports](https://www.goodtechlab.io/reports)
+* [What to Build, Climate Edition](https://medium.com/energy-impact-partners/what-to-build-climate-edition-950f079a2a3f) (EIP)
+* [We Need to Take CO2 Out of the Sky](https://www.orbuch.com/carbon-removal/) (Ryan Orbuch
+* Our World in Data: [CO2 and other greenhouse gas emissions](https://ourworldindata.org/co2-and-other-greenhouse-gas-emissions), [The world's energy problem](https://ourworldindata.org/worlds-energy-problem), [Energy access](https://ourworldindata.org/energy-access)
+
+**Funds and accelerators, way too many to list! Here are a few:**
+
+* [EIP](https://www.energyimpactpartners.com/) w/[Shayle Kann](https://twitter.com/shaylekann) et al
+* [Generate Capital](https://generatecapital.com/) w/[Jigar Shah](https://twitter.com/jigarshahdc)
+* [Breakthrough Energy](https://www.breakthroughenergy.org/), Bill Gates's, huge footprint, well respected
+* [Clean Energy Ventures](https://cleanenergyventures.com/)
+* [Lowercarbon Capital](https://lowercarboncapital.com/), Clay Dumas (via Chris and Crystal Sacca)
+* [Moxxie](https://www.moxxie.vc/), ex Googlers Katie Stanton and Alex Roetter, on their second fund, partly aimed at climate tech
+* [TechStars](https://techstars.com/), Cody Simms, Zach Nies, et al ([sustainability accelerator](https://www.techstars.com/accelerators/sustainability) and [challenge](https://challenge.techstars.com/sustainability))
+* Sequoia, Bryan Schreier, ditto
+* [Jetstream](https://jetstream.io/), Tommy Leap, ditto
+* [Union Square Ventures](https://www.usv.com/), Albert Wenger
+* [Lionheart](https://lionheart.vc/), Sierra Peterson
+* [True Ventures](https://trueventures.com/blog/vc-responsibilities-climate-technologies), Priscilla Tyler
+* [On Deck](https://www.beondeck.com/climate), a bunch of good climate tech people like it/did it/are doing it
+* [Version One](https://versionone.vc/), Angela Tran
+* [Congruent](https://www.congruentvc.com/), Joshua Posamentier
+* [YC's Challenge](http://carbon.ycombinator.com/)
+* [Pale Blue Dot](https://www.paleblue.vc/)
+* [Clean Tech Open](https://www.cleantechopen.org/)
+* [Radicle Impact](https://www.radicleimpact.com/)
+* [Powerhouse](https://www.powerhouse.fund/)
+* [First Round](https://firstround.com/), Bill Trenchard
+* [Climate Capital](https://www.climatecapital.co/) and [Duro](https://www.duro.vc/), Sundeep Ahuja
+
+Events:
+
+* [Green Biz](https://www.greenbiz.com/), one of the biggest event producers in the space
+* [Sustainable Business Global](https://events.bloomberglive.com/sustainable-business-global-2020/) was pretty good, they may do more
+* [Countdown](https://countdown.ted.com/) from TED, mostly activism but big
+
+Notable orgs:
+
+* [Drawdown](https://drawdown.org/), both book and org ("Labs")
+* [IPCC](https://www.ipcc.ch/), naturally
+* [Rocky Mountain](https://rmi.org/), legendary clean energy think tank and R&D group
+* [World Resources Institute](https://www.wri.org/), similar, heavier on policy, lots of concrete projects
+* [Earth Defense Fund](https://www.edf.org/), ditto
+* [GHG Protocol](https://ghgprotocol.org/), standard for emissions measurement and reporting
+* [Net Zero Framework](https://www.iigcc.org/resource/net-zero-investment-framework-for-consultation/), same but for investors
+* [Carbon Accounting Financials](https://carbonaccountingfinancials.com/), similar
+* [Stripe Climate](https://stripe.com/climate), Nan Ransohoff and Ryan Orbuch et al
+* [(carbon)plan](https://carbonplan.org/), Jeremy Freeman et al, hard core data science driven research
+* [Carbon180](https://carbon180.org/), well respected clean tech lobby
+* [Ceres](https://www.ceres.org/), similar
+* [Climate TRACE](https://www.climatetrace.org/), awesome coalition working on the global emissions stocktake, starting with energy generation
