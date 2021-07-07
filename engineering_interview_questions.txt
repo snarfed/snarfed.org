@@ -1,24 +1,20 @@
 14584
 Engineering interview questions
 
-I've done lots of technical software engineering interviews, over 500 or so,
-[mostly at Google but also elsewhere](/resume). I can't claim I'm particularly
-good at them, but I've definitely racked up some experience. Here are some of my
-favorite questions. They're mostly open ended system design problems, mostly not
-coding questions. (They're a necessary evil, but I'm still not a fan.)
+I've done lots of technical software engineering interviews, over 600 or so, [mostly at Google but also elsewhere](/resume). I can't claim I'm particularly good at them, but I've definitely racked up some experience. Here are some of my favorite questions. They're mostly open ended system design problems, not coding questions. (Those are a necessary evil, but I'm not a huge fan personally. Take home projects are better!)
 
 * [Distributed transaction](#distributed-transaction)
 * [Web search spell check](#web-search-spell-check)
 * [Web crawler](#web-crawler)
 * [Manhattan distance](#manhattan-distance)
-* [Count the bits in a file that are 1 (as opposed to 0)](#count-bits-in-file)
+* [Count the 1 bits in a file](#count-bits-in-file)
 * [How to debug nondeterministic failures](#how-to-debug-nondeterministic-failures)
 
 
 <a name="distributed-transaction"></a>
 ### Distributed transaction
 
-Given two separate databases A and B with bank accounts on both, design a system that can transfer money from an account on A to another account on B. Assume that the dbs and any servers you add can die and restart at any time, and the dbs are the only durable storage. The system may be eventually consistent.
+_Given two separate databases A and B with bank accounts on both, design a system that can transfer money from an account on A to another account on B. Assume that the dbs and any servers you add can die and restart at any time, and the dbs are the only durable storage. The system may be eventually consistent._
 
 The simple solution is to add parallel transfer log tables on each db that store the source and destination accounts, amount, and whether the local account has been updated. Algorithm:
 
@@ -44,10 +40,7 @@ etc...
 <a name="web-search-spell-check"></a>
 ### Web search spell check
 
-Ask them, "When you've used Google (or any search engine), have you seen the
-_Did you mean: ..._ suggestions when you misspell a word?" Ask them to design
-that system. Specifically, given a search query, either let it pass or suggest
-_one_ correction.
+_When you've used Google (or any search engine), have you seen the "Did you mean..." suggestions when you misspell a word? Design that system. Specifically, given a search query, either let it pass or suggest just one correction._
 
 The three main tasks are:
 
@@ -86,18 +79,17 @@ store them in a hashtable, and just do simple lookup at query time.
 
 Follow-ups:
 
-1. How do you handle multiple languages? Language inference, dictionary per
-   language, etc.
-1. How do you scale? Pretty easily parallelizable.
-...
+* How do you handle multiple languages? Language inference, dictionary per language, etc.
+* How do you scale? Pretty easily parallelizable.
+* ...
 
 
 <a name="web-crawler"></a>
 ### Web crawler
 
-...e.g. for a toy search engine. Pretty straightforward system design question
-with well understood constraints, but it covers a wide range of knowledge.
-Look for them to ask lots of questions to understand the problem space.
+_Design a web crawler for a search engine._
+
+Pretty straightforward system design question with well understood constraints, but it covers a wide range of knowledge. Look for them to ask lots of questions to understand the problem space.
 
 Important points to cover:
 
@@ -124,11 +116,7 @@ Follow-ups
  <a href="https://en.wikipedia.org/wiki/Taxicab_geometry">
   <img src="http://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Manhattan_distance.svg/160px-Manhattan_distance.svg.png"></a></p>
 
-[Manhattan distance](https://en.wikipedia.org/wiki/Taxicab_geometry) is the
-shortest distance between two points on a grid. There are multiple paths between
-any two points with the same Manhattan distance. Ask them to implement a function
-that finds the number of paths. You can ask them to actually write the code, or
-you can just ask them to come up with the algorithm.
+_[Manhattan distance](https://en.wikipedia.org/wiki/Taxicab_geometry) is the shortest distance between two points on a grid. There are multiple paths between any two points with the same Manhattan distance. Implement a function that finds the number of paths. You can write code, or just come up with an algorithm, or any other approach._
 
 There are lots of ways to do it. The most elegant is recursive:
 
@@ -140,7 +128,9 @@ _N!M! / (N!(M-1!) + (N-1)!M!)_. Bonus points for finding that.
 
 
 <a name="count-bits-in-file"></a>
-### Count the bits in a file that are 1 (as opposed to 0)
+### Count the 1 bits in a file
+
+_Write a program that reads in a file and counts the bits that are 1, ie not 0._
 
 This one sounds silly and simple, but it has some fun subtleties and can expand
 into a surprisingly deep conversation, even (especially!) with experienced
@@ -178,13 +168,9 @@ understanding.
 <a name="how-to-debug-nondeterministic-failures"></a>
 ### How to debug nondeterministic failures
 
-This is an open ended discussion. "Have you ever had to debug a nondeterministic
-or transient problem before?" is a good starting point. There are a few big
-topics to cover.
+_Have you ever had to debug a nondeterministic or transient problem before? How did/would you do it?_
 
-First, logging. Seems silly, but it's a good marker for experience. What kinds
-of things to log, at what level, how to configure the level for normal prod
-operation vs local vs temporarily raised on individual hosts, etc.
+This is an open ended discussion. There are a few big topics to cover. First, logging. Seems silly, but it's a good marker for experience. What kinds of things to log, at what level, how to configure the level for normal prod operation vs local vs temporarily raised on individual hosts, etc.
 
 Second, isolation. There are two good questions that will get them talking:
 
@@ -199,5 +185,4 @@ Second, isolation. There are two good questions that will get them talking:
 Third, reproducing it. Use all the isolation techniques, then look for an
 automated harness that repeatedly runs the system and watches for the expected
 behavior. It's important that the harness record as much state as possible.
-Bonus points if it automatically drops them into a debugger. :P
-
+Bonus points if it automatically drops them into a debugger!
