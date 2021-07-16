@@ -29,6 +29,10 @@ A big collection of engineering quotes I like, collected over many years. Also s
 [- Noam Ben-Ami](https://www.quora.com/Why-is-coding-so-hard)
 <!-- NCXed -->
 
+> By June 1949, people had begun to realize that it was not so easy to get a program right as had at one time appeared. ... It was on one of my journeys between the EDSAC room and the punching equipment that the realization came over me with full force that a good part of the remainder of my life was going to be spent in finding errors in my own programs.
+
+[- Maurice Vincent Wilkes](https://www.google.com/books/edition/Memoirs_of_a_Computer_Pioneer/9Uc4AQAAIAAJ?hl=en)
+
 > A systems programmer will know what to do when society breaks down, because the systems programmer already lives in a world without law.
 
 [- James Mickens](https://web.archive.org/web/20140124024832/http://research.microsoft.com/en-us/people/mickens/thenightwatch.pdf)
@@ -555,7 +559,6 @@ availability | downtime, per year | cost
 
 \- Melinda Varian
 
-
 > "Feral systems": Access databases, spreadsheets with macros, and other hacked solutions made out of frustration when current systems don't meet a need.
 
 [- Hadley Beeman](https://twitter.com/hadleybeeman/status/934867384577462274)
@@ -573,7 +576,7 @@ availability | downtime, per year | cost
 > Rule 2 (for experts only): Don't do it yet.
 
 \- Michael A. Jackson
-<!-- NCX next -->
+<!-- NCXed -->
 
 > CoffeeScript, Haml, Sass, all on top of me, holding me up psychologically for MONTHS.
 
@@ -610,7 +613,7 @@ availability | downtime, per year | cost
 > As-builts are building plans that show in detail exactly what was built, which is always significantly different from what was in the original plans. Without accurate as-builts, says Chuck Charlton, “An electrical failure can have you wandering through the building shotgunning circuit breakers and shinnying down the chases.” ...If the as-builts aren’t updated constantly, each bit of repair or remodeling, each new contractor, each change of property management makes the plans more misleading.
 
 \- Stewart Brand, How Buildings Learn
-([see my full presentation](https://docs.google.com/presentation/d/1GHzBeK7_BDfxHRkmkeXR5bcwTcR94-fcdqFptvAEo7I/edit))
+([see my full presentation](https://docs.google.com/presentation/d/1uU717xJ-JeR3HWkvbkTCxuIKDNoH-eKa_tPGfXq2C7I/edit))
 
 > We live in a society exquisitely dependent on science and technology, in which hardly anyone knows anything about science and technology.
 
@@ -627,6 +630,12 @@ availability | downtime, per year | cost
 > Every technology, when sufficiently complicated, becomes programmable.
 
 [- Kenton Varda](https://blog.cloudflare.com/introducing-cloudflare-workers/)
+<!-- NCXed -->
+
+> Any sufficiently complicated C or Fortran program contains an ad-hoc, informally-specified, bug-ridden, slow implementation of half of Common Lisp.
+
+[- Philip Greenspun](https://philip.greenspun.com/research/)
+<!-- NCXed -->
 
 > Compatibility means deliberately repeating other people's mistakes.
 
@@ -639,6 +648,7 @@ availability | downtime, per year | cost
 > Debugging is like being the detective in a crime movie where you are also the murderer.
 
 \- Filipe Fortes
+<!-- NCX next -->
 
 > You don't pay engineers to write code, you pay them to understand problems, subtleties, and edges. The code is incidental.
 
