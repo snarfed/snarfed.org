@@ -1,7 +1,7 @@
 38111
 Software engineering quotes
 
-A big collection of engineering quotes I like, collected over many years. Also see [engineering lessons](/engineering-lessons).
+Engineering quotes I like, collected over many years. Also see [engineering lessons](/engineering-lessons).
 
 > All code is liability.
 
@@ -10,7 +10,7 @@ A big collection of engineering quotes I like, collected over many years. Also s
 
 > Information wants to be free.  
 
-\- Stewart Brand; me
+\- Stewart Brand
 <!-- NCXed -->
 
 > Data wants to be dirty.  
@@ -518,6 +518,7 @@ availability | downtime, per year | cost
 > [You have a problem. You use a distributed system. Now you still have a problem, but you no longer know where.](https://twitter.com/llogiq/status/1010831210199777280)
 
 \- [@llogiq](https://twitter.com/@llogiq)
+<!-- NCXed -->
 
 > [Hyrum's Law](http://www.hyrumslaw.com/): With a sufficient number of users of an API, it does not matter what you promise in the contract: all observable behaviors will be depended on by somebody.
 
@@ -593,7 +594,7 @@ availability | downtime, per year | cost
 > Junior developer: "I will just copy over this code to reuse it"  
 > Middle developer: "I will make it DRY with code sharing/inheritance/macros"  
 > Senior developer: "I will just copy over this code to reuse it"
-<!-- NCX next -->
+<!-- NCXed -->
 
 [- Hubert Lepicki](https://twitter.com/hubertlepicki/status/946725454043598849)
 
@@ -648,7 +649,7 @@ availability | downtime, per year | cost
 > Debugging is like being the detective in a crime movie where you are also the murderer.
 
 \- Filipe Fortes
-<!-- NCX next -->
+<!-- NCXed -->
 
 > You don't pay engineers to write code, you pay them to understand problems, subtleties, and edges. The code is incidental.
 

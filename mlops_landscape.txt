@@ -65,7 +65,7 @@ Major independent vendors include:
 
 The independent vendors are generally cloud-based, and often also integrate with one or more of the big three. Databricks seems more deeply tied to Azure, but supports all three.
 
-**Kubeflow** and **MLFlow** also earn mentions here as open source platforms that handle much of the MLOps lifecycle. Kubeflow is backed by Google, MLFlow by Databricks.
+**Kubeflow** and **MLflow** also earn mentions here as open source platforms that handle much of the MLOps lifecycle. Kubeflow is backed by Google, MLflow by Databricks.
 
 ### Components
 
@@ -90,17 +90,17 @@ Here's an (incomplete) collection of offerings for each component.
     - TensorFlow, PyTorch, Stan
     - Older: MXNet, Chainer
 - **Data pipeline**
-    - SageMaker, Kubeflow, MLFlow, Pachyderm, Allegro, Algorithmia, Neuro
+    - SageMaker, Kubeflow, MLflow, Pachyderm, Allegro, Algorithmia, Neuro
     - Open source, not ML specific:
         - Batch: Airflow, Spark
         - Streaming: Flink, Kafka, Storm, Keboola
 - **Deployment and serving**
     - Almost everyone! Azure ML, Vertex AI, SageMaker, Databricks, Algorithmia, Seldon, Kubeflow, Anyscale, Tensorflow, Pyro, BaseTen
 - **Monitoring**
-    - MLFlow, Seldon, Fiddler (focused on explainability)
+    - MLflow, Seldon, Arize, Fiddler (focused on explainability)
 
 ## Recommendations
 
 Right now, MLOps work at most software shops with data science or machine learning is informal and often manual. You don't need to immediately formalize all of it and buy a bunch of tools or services, but you probably want to at least start looking. Where to start depends on your specifics, but in many cases, monitoring is a good first candidate, possibly followed by deployment and serving at some places, feature extraction and store at others.
 
-Many of the comprehensive suites are now mature and well supported, and Databricks is the most complete independent offering. Its MLFlow is also one of the best tools for productionization and monitoring. Most contemporary ML pipelines aren't deeply tied to any the big three, so Databricks and MLFlow are often a good candidate for initial pilots.
+Many of the comprehensive suites are now mature and well supported, and Databricks is the most complete independent offering. Its MLflow is also one of the best tools for productionization and monitoring. Most contemporary ML pipelines aren't deeply tied to any the big three, so Databricks and MLflow are often a good candidate for initial pilots.

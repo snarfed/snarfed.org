@@ -3,7 +3,7 @@ Turning off Facebook for Bridgy
 
 <p class="right third">
  <a href="https://brid.gy/">
-  <img src="/bridgy_logo.jpg" /></a></p>
+  <img src="/bridgy_logo.png" /></a></p>
 
 [I announced recently that Bridgy Publish for Facebook would shut down soon.](/2018-04-26_bridgy-publish-for-facebook-shuts-down-in-august) Facebook's [moves to restrict its API](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/) to improve privacy and security are laudable, and arguably the right idea, but also mean that users can no longer use third party apps like Bridgy to create posts.
 

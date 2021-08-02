@@ -42,7 +42,7 @@ stop. Twitter has a fairly complete write API, but must be taken with a
 [grain of salt](https://indiewebcamp.com/Twitter#Developer_Relations).
 
 <p class="left third">
- <a href="https://www.brid.gy/"><img src="/bridgy_logo.jpg"/></a></p>
+ <a href="https://www.brid.gy/"><img src="/bridgy_logo.png"/></a></p>
 
 Proposal: what if we added a Bridgy Publish PESOS option alongside the current
 POSSE model?
