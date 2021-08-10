@@ -5,11 +5,11 @@ Experienced engineering leader. 17+ years building and scaling backend infrastru
 
 <p class="quarter right">
  <a href="https://www.silviaterra.com/">
-  <img id="ncx" src="/ncx_logotype_dark.png" /></a></p>
+  <img id="ncx" src="/ncx_logo.png" /></a></p>
 
 <script type="text/javascript">
 if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-  document.getElementById("ncx").src = "/ncx_logotype.png";
+  document.getElementById("ncx").src = "/ncx_logo.png";
 }
 </script>
 
