@@ -29,6 +29,9 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 [- Noam Ben-Ami](https://www.quora.com/Why-is-coding-so-hard)
 <!-- NCXed -->
 
+> All models are wrong. Some are useful.
+<!-- NCXed, by Nathan -->
+
 > By June 1949, people had begun to realize that it was not so easy to get a program right as had at one time appeared. ... It was on one of my journeys between the EDSAC room and the punching equipment that the realization came over me with full force that a good part of the remainder of my life was going to be spent in finding errors in my own programs.
 
 [- Maurice Vincent Wilkes](https://www.google.com/books/edition/Memoirs_of_a_Computer_Pioneer/9Uc4AQAAIAAJ?hl=en)
@@ -877,6 +880,10 @@ via [@zooko](https://twitter.com/zooko)
 
 [- Donald Knuth (apocryphal: C.A.R Hoare)](https://shreevatsa.wordpress.com/2008/05/16/premature-optimization-is-the-root-of-all-evil/)
 <!-- NCXed -->
+
+> Progress is a new error message.
+
+\- Me
 
 <!--
 https://en.wikiquote.org/wiki/Computer_science

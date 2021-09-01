@@ -1,6 +1,8 @@
 39802
 Why is my App Engine app hitting the Stackdriver Logging 256KB limit?
 
+[_Also on StackOverflow._](https://stackoverflow.com/questions/59398479/why-is-my-app-engine-app-hitting-the-stackdriver-logging-256kb-limit)
+
 I'm migrating a [Python 2 App Engine Standard](https://cloud.google.com/appengine/docs/standard/python/) app to the new [Python 3 Standard runtime](https://cloud.google.com/appengine/docs/standard/python3/), which is [very different](https://cloud.google.com/appengine/docs/standard/python3/python-differences#app_engine_apis). One big difference is that you use Google Cloud APIs explicitly, including [Stackdriver Logging](https://cloud.google.com/logging/docs/). I'm using [google-cloud-logging](https://googleapis.github.io/google-cloud-python/latest/logging/)'s [App Engine Handler](https://googleapis.dev/python/logging/latest/handlers-app-engine.html) and configuring it to correlate logs with HTTP requests:
 
 ```py
