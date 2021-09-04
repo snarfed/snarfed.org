@@ -1,0 +1,10 @@
+43760
+Generic security posture and FAQ
+
+<p class="right half">
+ <img class="shadow" src="/clothespin_lock.png">
+</p>
+
+I've posted a [generic template security posture and FAQ document](/security-posture-faq/) suitable for use at most companies in tech and related industries. Customers often want to know how you secure and protect your systems, data, employees, etc. This is a comprehensive description of such a modern security posture. It's been used at multiple companies of various sizes; it's most appropriate at around 50-1000 employees.
+
+Search for everything in [BRACKETS] like this and replace with your specific details. Happy CISOing!

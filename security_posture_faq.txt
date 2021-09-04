@@ -1,0 +1,309 @@
+43750
+Generic security posture and FAQ
+
+_This is a generic template security posture and FAQ document suitable for use at most companies in tech and related industries. Customers often want to know how you secure and protect your systems, data, employees, etc. This is a comprehensive description of such a modern security posture. It's been used at multiple companies of various sizes; it's most appropriate at around 50-1000 employees._
+
+_Search for everything in [BRACKETS] like this and replace with your specific details._
+
+_This document is placed into the public domain. You may also use it under the [CC0 public domain dedication](https://creativecommons.org/share-your-work/public-domain/cc0/)._
+
+<hr>
+
+An organization's security posture is comprised of its overall strategy for security and protecting its employees, customers, software, hardware, data, and other assets. This document describes that approach and collects many of the specific controls and techniques [COMPANY] uses to ensure its security.
+
+Please get in touch with your [COMPANY] account manager if you have any questions!
+
+* [Approach](#approach)
+* [Security practices](#practices)
+* [Data](#data)
+* [Compliance](#compliance)
+* [Incident response, business continuity, etc](#incident-response)
+* [Personnel and contact channels](#contact)
+
+
+<a id="approach"></a>
+# Approach
+
+We follow modern information security best practices wherever possible, using these core values and guidelines:
+
+- We use [threat modeling](https://en.wikipedia.org/wiki/Threat_modeling) to drive security decisions and analyses.
+- We follow defense in depth, use multiple independent security layers, and never expect any individual layer to be foolproof or unbreakable.
+- We subscribe to the zero trust (aka [Beyond Corp](https://en.wikipedia.org/wiki/BeyondCorp)) philosophies. We implement security throughout our systems, not just at their perimeters.
+- We build in and automate security controls whenever possible, instead of relying on human processes alone.
+- We encrypt all data, both in transit and at rest.
+- We audit and log data accesses and other actions.
+- We embrace cloud platforms and SaaS tools, and use them to extend our overall security expertise and resources. We carefully vet them and strictly limit which ones we use for PII and other sensitive data.
+
+[Our applications are hosted on Amazon AWS, which provides rigorous security, privacy, and compliance guarantees. See their [security overview whitepaper](https://d0.awsstatic.com/whitepapers/Security/AWS_Security_Whitepaper.pdf), [more detailed whitepapers](https://aws.amazon.com/whitepapers/#security), and [compliance portal](https://aws.amazon.com/compliance/) for details.]
+
+[Our applications are hosted on Google Cloud Platform, which provides rigorous security, privacy, and compliance guarantees. See their [security portal](https://cloud.google.com/security) and [compliance portal](https://cloud.google.com/security/compliance) for details.]
+
+[Our applications are hosted on Microsoft Azure, which provides rigorous security, privacy, and compliance guarantees. See their [trust portal](https://azure.microsoft.com/en-us/overview/trusted-cloud/), [compliance portal](https://azure.microsoft.com/en-us/overview/trusted-cloud/compliance/), and [data privacy portal](https://azure.microsoft.com/en-us/overview/trusted-cloud/privacy/) for details.]
+
+# FAQ
+
+<a id="practices"></a>
+## Security practices
+
+### Do you have a defined software development life cycle? Does it include controls, tests, validation, reviews, safeguards, audit trails, etc?
+
+Yes. We have a software development lifecycle with processes to develop, review, test, validate, deploy, monitor, and secure all of our software:
+
+- All engineers complete comprehensive training and orientation on secure development.
+- All major projects undergo an engineering design review, including a security and privacy review, before deployment to our staging and production environments.
+- We use [VCS SERVICE] as our version control system for code and configuration change management.
+- All changes are code reviewed by at least one other engineer before merging into the codebase and being deployed to production. All code changes, reviews, and comments are stored and auditable, and these audit logs are not modifiable.
+- We use automated unit and integration tests extensively. All code changes must pass all tests before merge.
+- We also use a number of code linters, static analysis tools, fuzzers, and other automated checks to catch a wide variety of bugs and security holes before merge.
+- All deployments to staging and prod are logged and auditable. These logs are not modifiable.
+
+### Do you track employee devices and enforce security configurations, eg password strength, full disk encryption, screen locks?
+
+Yes. We use [MDM VENDOR] to manage and secure employee laptops and phones and require security settings including full disk encryption, password strength, screen lock, location tracking, and remote lock and wipe. We attach stickers with serial numbers and barcodes to all physical assets, and include them in MDM.
+
+We enforce the following password security requirements: [passwords must be at least 12 characters and include all of the following: a lowercase letter, an uppercase letter, a number. Passwords may not include parts of the user’s username, first name, or last name.Passwords must be changed every 60 days and passwords cannot be any of the user’s last 24 passwords.]
+
+### Do you require approval for all software installed on employee computers?
+
+No. We maintain and enforce clear employee security and training policies and procedures, including understanding and monitoring installed software. We also enforce security measures like antivirus and malware detection on end user computing devices. Furthermore, our employees access most of their software and content over the internet and in browsers, not via installed applications. Finally, our software engineers and other technical roles routinely need to use developer specific tools and libraries on their computers that are infeasible to manually review and approve individually. Given that, and given the other safeguards mentioned here, manual approval of software would meaningfully impede our productivity without adding any meaningful security benefit.
+
+### How do you do vulnerability scanning?
+
+We use [SCIM VENDOR] to monitor, detect, and analyze changes to service configurations, VPCs and networks, firewalls and open ports, deployed hosts, running services, and files on both hosts and in cloud storage systems. When changes are detected, we've configured these tools to determine whether the changes are expected or not, and if not, assign them a severity. High severity changes are examined and triaged by human security professionals.
+
+### How do you handle and apply security patches?
+
+Most of our hosts use [OS UNATTENDED-UPGRADES TOOL], which automatically receives and applies patches as they are released. For the remaining minority, we monitor both security patch feeds for these operating systems and communities like CERT and FIRST where vulnerabilities are announced. As we receive these notices, we triage and apply applicable patches, first in our staging environment, and then after they're tested and pass, in our production environment.
+
+### How do you monitor and verify that your hosting providers apply security patches to their own servers and network devices?
+
+[HOSTING VENDOR(S)] build many of their own network devices and software, and they're generally proprietary and closed source, so vulnerabilities and patches are not public knowledge. In addition, we don't have access to their internal network device operations, configurations, versions, and other fleet details, even for devices that may be partially or wholly off the shelf. Having said that, [SECURITY/COMPLIANCE LINKS HERE], including network devices and patching.
+
+### How do you secure logins and authentication?
+
+We require both strong passwords and 2-factor (aka multi-factor aka 2FA aka MFA) on all employee accounts. We require either U2F or TOTP; SMS is not allowed.
+
+All passwords and passphrases have [a minimum length of eight characters. Dictionary words are prevented from use in passwords to prevent them from being obvious or guessable. All passwords contain a mix of at least three of upper case, lower case, and special characters.]
+
+User (ie client) accounts have [password strength requirements, two factor].
+
+### Do you have a Software Bill of Materials (SBoM)?
+
+Yes. We don't currently share it externally.
+
+### How do you manage open source software?
+
+We use standard package managers (eg [pip, CRAN, npm]), configured to verify package signatures on installation. We pin package versions and review changelogs whenever we upgrade a package.
+
+### Do you perform validation on input and output data to ensure that it's correct and well formed?
+
+Yes.
+
+### Do you currently use any end of life hardware or software?
+
+No.
+
+<a id="data"></a>
+## Data
+
+### Where is data stored? What physical location, country, etc? Can we choose a location?
+
+Data is stored in [COUNTRY, REGION], across multiple physically separate facilities. [We do not offer a choice of facility, location, legal jurisdiction or other data residency for data storage.]
+
+### Is data ever transmitted outside the US?
+
+[In general, no. Clients may log into their own accounts and access their own information from anywhere, though, including outside the US.]
+
+### Can we have our own separate instance (servers, database, etc) for our data?
+
+Our service and applications are multitenant. Both external and internal users have multiple layers of strict access control safeguards and policies, and customers can never access other customers' data, but we do not offer physically separate instances or data storage per customer.
+
+### How do you separate and isolate your customers' data from each other?
+
+Customers all have unique ids that are attached to each database row by column and/or foreign key. All database queries automatically attach one or more of these ids to restrict the data returned to the customer user accessing the application.
+
+### How is data encrypted in transit and at rest?
+
+[All data is encrypted at rest using AES-256 with regularly rotated keys, and in transit using TLS 1.2 with a modern cipher suite, TLS_ECDHE_RSA_WITH_AES_128_GCM_SHA256.]
+
+### What happens to our customer data in the event of a security breach?
+
+[In the event of a data breach, we would immediately begin to notify those affected, within 48 hours, and conduct an internal investigation on the root cause. The notification would include details on the type of data that was breached and what steps we are taking to mitigate the breach. We would also establish a phone line for those affected to contact us for any questions or guidance, and also notify the appropriate government organizations. This procedure is designed to meet the [COMPLIANCE PROGRAM] standard, as well as provide our customers with transparency around our efforts to establish security.]
+
+### Do you share or sell customer information to any other organizations or third parties?
+
+No. We do not rent, sell or share customer information. Any PII shared with a subprocessor is done in accordance with [COMPLIANCE PROGRAM, ETC].
+
+### How do you control physical access to data centers, servers, disk drives, etc?
+
+Our hosting providers manage all hardware, physical facilities, and access to them. [LINKS.]
+
+### How do you manage and dispose of hard copy, removable, and other physical electronic media?
+
+We do not use paper copies of data or removable electronic media as part of our business operations.
+
+### Is sensitive information (e.g. PII) sanitized before being used in development or testing environments?
+
+We do not use any production data, PII or otherwise, in development or testing environments.
+
+### What is your data retention policy? Can our patients delete their data? Can we delete their data?
+
+Our current data retention policy is [POLICY].
+
+### Do you use customer data for research?
+
+[POLICY]
+
+<a id="compliance"></a>
+## Compliance
+
+### Which standards do you comply with?
+
+We comply with regulatory standards including but not limited to [COMPLIANCE PROGRAMS, eg SOC-2, PCI, FISMA Moderate (aka FedRamp, aka NIST 800-53), HIPAA].
+
+You can download our licenses and accreditations at [LINK]. We may also share audit reports, penetration test attestations, and other compliance documentation upon request. Some of these may be redacted or unavailable, though, if they include internal details that aren't appropriate for external distribution.
+
+Our applications are hosted on [HOSTING PROVIDER], which offers [LINKS].
+
+### Do you comply with the GDPR, CCPA, or [ETC]?
+
+[Yes.]
+
+### Which vendors, subcontractors, and third party services do you use to deliver your service?
+
+We currently use these vendors to store and process PII:
+
+- [VENDOR]
+- [VENDOR]
+- ...
+
+Customers may not opt in or out of vendors on an individual basis, but we can offer to notify you whenever the above list of vendors changes.
+
+We use other vendors/subcontractors that don't receive PII, but we don't currently share that list.
+
+### Do you have a vendor security qualification process?
+
+Yes.
+
+### Can we see the results of it, for some or all of your vendors?
+
+No.
+
+### Can you send us [VENDOR'S] SOC 2 (etc) reports?
+
+[AWS's SOC 2 and other SOC reports are available here for AWS customers. You're welcome to download them if you have an AWS account, but we're not authorized to redistribute them ourselves.]
+
+### Do you require employees to complete security and compliance training? Please describe it.
+
+Yes. Security, privacy, and compliance training are required for each new member of our workforce during onboarding and also when functions are affected by a material change in policies or procedures.
+
+### Do you process, store, or transmit SSNs, TINs, credit card numbers, or other financial instruments? If so, do you have PCI compliance?
+
+No, and N/A.
+
+### What independent audits and assessments have you done?
+
+Our security practices are [validated annually by independent COMPLIANCE PROGRAM] audits, independent technical security penetration tests, and due diligence processes by [NUMBER] of large international companies such as [CUSTOMERS].
+
+### Can we audit you ourselves?
+
+No.
+
+### Have you been involved in a major security incident leading to a security breach?
+
+[No.]
+
+<a id="incident-response"></a>
+## Incident response, business continuity, etc
+
+### Do you have processes for monitoring, detecting, and responding to security incidents and vulnerabilities?
+
+Yes. We have automated monitoring that detects outages and other substantial failures. When this happens, it immediately alerts an on call engineer. If they don't respond within a certain time period, the alert is escalated to other engineers.
+
+We use [VENDORS], regular penetration testing, and other services to continuously scan for and detect vulnerabilities and attempted intrusion. We respond and mitigate these immediately when they're found. We track each of these vulnerabilities, intrusion attempts, and mitigations in [TOOL].
+
+### Do you have regular planned maintenance windows?
+
+No.
+
+### Will you notify us when you have unplanned maintenance or downtime?
+
+In general, no. Please ask your account manager for details.
+
+### Will you regularly report your security status, changes, and other activity?
+
+In general, no.
+
+### What is your SLA (Service Level Agreement)?
+
+[We offer an [XX%] SLA, measured monthly, ie no more than ~[Y] hours of downtime per month.
+
+We do not currently offer a latency or performance SLA, ie a guarantee that X% of user requests respond within N seconds.]
+
+### When you have an outage or other downtime, do you do an internal investigation, root cause analysis, postmortem, etc? Can we see it?
+
+Yes, we do postmortems for every outage, including root cause analyses and steps we take to prevent or mitigate similar outages in the future. These usually include internal details, so we don't share them externally.
+
+### How do you manage crises and recover from disasters?
+
+[We have a Disaster Recovery Plan and a Business Continuity Plan for our systems, facilities, and personnel. We aim for an RPO (Recovery Point Objective) of 24 hours, and RTO (Recovery Time Objective) of 48 hours. We test the Disaster Recovery Plan annually.]
+
+### Do you review your vendors' Business Continuity Plan?
+
+We don't currently review our critical vendors' BCPs ourselves. We ask and expect that they review their BCPs periodically, but they don't always give us access to the full contents of their BCPs, and we generally don't (and can't) have the detailed knowledge of their internal operations to effectively review them anyway.
+
+### Do you perform regular backups?
+
+Yes. Our data and the bulk of our service is hosted in [VENDOR], and we have live backups of our data no more than a day old, which can be used to restore access in case the primary fails.
+
+
+<a id="contact"></a>
+## Personnel and contact channels
+
+### Who is your designated security officer or other similar responsible person for the security program?
+
+[NAME]
+
+Security Officer
+
+[EMAIL]
+
+### Who is your designated privacy officer or other similar person responsible for the privacy program?
+
+[NAME]
+
+Privacy Officer
+
+[EMAIL]
+
+### Do you require and perform background screening checks for all new hires?
+
+[Yes.]
+
+### What are the levels of access or authentication controls?
+
+Only employees involved in [OPERATION] have access to PII. Those individuals involved in payment or operations have access to the minimum amount of PII necessary to complete their job. All other access to PII requires [AUTHORIZATION].
+
+- [ROLE]
+- [ROLE]
+- Regular employees: no access to PII.
+
+[All employees with PII access must request it first, including their job role, need, and manager. These requests are tracked, reviewed, and approved or rejected by our Security and Privacy Officer or other authorized employee before granting access.]
+
+### Is there a phone number available to clients to report problems or security incidents? How about technical support?
+
+Yes, during [HOURS]. [LINK]
+
+We provide technical support for the applications and services we offer, but not for customers' computers or other devices, software (eg web browsers), or ISP or network connections.
+
+### Do you have 24x7 on call response for incidents, outages, and breaches?
+
+[Yes.]
+
+### Do you have audit records for employee logins and data accesses and changes?
+
+Yes. Internal application access and application logs are audited regularly to ensure that only employees that need access to sensitive internal systems have access. When employees change roles or leave the company, their access is removed immediately.
+
+### Can customers see these audit records?
+
+In general, no, but we may discuss specific requests or cases as necessary.
