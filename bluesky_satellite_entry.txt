@@ -1,9 +1,9 @@
 43765
 Bluesky Satellite IndieWeb entry
 
-<p class="right half">
+<p class="right third">
  <a href="https://blueskyweb.org/satellite">
-  <img src="/twitter_bluesky.jpg" />
+  <img class="shadow" src="/twitter_bluesky.jpg" />
 </a></p>
 
 [IndieWeb](https://indieweb.org/) community entry for the [Bluesky Satellite contest](https://blueskyweb.org/satellite).
@@ -19,11 +19,11 @@ Bluesky Satellite IndieWeb entry
 
 ## rel-me links
 
-The [IndieWeb](https://indieweb.org/rel-me) is a community that uses personal web sites to interact with each other, both directly and indirectly via other linked online accounts and tools.
+The [IndieWeb](https://indieweb.org/rel-me) is a community that interacts via individual personal web sites, both directly and indirectly through other linked online accounts.
 
-An IndieWeb community member's primary online identity is their web site, specifically their domain. Ownership of the domain, and serving HTTP on it over TLS with a valid certificate, is considered proof that any content or assertions published on the site comes from that person.
+An IndieWeb community member's primary online identity is their web site, specifically their domain. Ownership of their domain, and serving HTTP on it over TLS with a valid certificate, is considered proof that any content or assertions published on the site come from that person.
 
-An IndieWeb community member connects their web site to their other online accounts with [`rel-me` HTML links](https://indieweb.org/rel-me) that point to them in various ways. For example, my home page [snarfed.org](https://snarfed.org/) has `rel-me` links like these (some real, some examples) to other accounts of mine:
+An IndieWeb community member connects their web site to their other online accounts with [`rel-me` HTML links](https://indieweb.org/rel-me) (from [XFN](https://gmpg.org/xfn/)) that point to them. For example, my home page [snarfed.org](https://snarfed.org/) has `rel-me` links like these (some real, some examples) to other accounts of mine:
 
 ```html
 <a rel="me" href="https://twitter.com/schnarfed">Twitter</a>
@@ -33,20 +33,48 @@ An IndieWeb community member connects their web site to their other online accou
 <a rel="me payment" href="bitcoin:1234567890abcdefghijklmnopqrstuvwx">Bitcoin</a>
 ```
 
-A `rel-me` link asserts that the target address identifies another identity or account owned by this person. Some of these other accounts, eg Mastodon, may include `rel-me` links that point back to the original web site, but that's not required to assert identity.
+A `rel-me` link asserts that the linked identity or account is owned by the same person. They can prove this assertion by linking back to their web site from the linked account's profile, ideally also with `rel-me`. See [identity consolidation](https://microformats.org/wiki/identity-consolidation), [distributed verification](http://www.kevinmarks.com/distributed-verify.html). As an alternative, they can authenticate as the linked account, described below.
 
 ## Authentication
 
-`rel-me` links allow a form of distributed authentication. When we fetch someone's home page and read their `rel-me` links, we get a set of accounts that the site's owner asserts that they own. So, if someone authenticates with one of those linked accounts via OAuth, or provides a signature that matches a linked public key, or provides a confirmation code sent to a linked email address, they've authenticated as the site's owner.
+ `rel-me` links allow a form of distributed authentication. When we fetch someone's home page and read their `rel-me` links, we get a set of accounts that they're asserting they own. If someone authenticates with one of those linked accounts via OAuth, or provides a signature that matches a linked public key, or provides a confirmation code sent to a linked email address, they've effectively authenticated as the site's owner.
 
 [IndieAuth](https://indieauth.net/) is one widely used authentication scheme that works this way, along with its predecessor [RelMeAuth](https://microformats.org/wiki/RelMeAuth).
 
 ## Interactions
 
-The IndieWeb community has gone far beyond `rel-me` links to implement a wide variety of social networking features between decentralized, independent personal web sites, including [replies](https://indieweb.org/reply), [reposts](https://indieweb.org/repost), [likes](https://indieweb.org/like), [emoji reactions](https://indieweb.org/reactions), [events](https://indieweb.org/event), [RSVPs](https://indieweb.org/rsvp), and more. These are based on simple, proven building blocks like DNS domains, HTTP and TLS, HTML with [microformats 2](https://microformats.org/), and the [Webmention](https://webmention.net/) W3C standard protocol. The community has also built [bridges](https://brid.gy/) that translate these rich interactions to and from proprietary silos like Twitter.
+The IndieWeb community has gone far beyond `rel-me` links to implement a wide variety of social networking features between independent personal web sites, including [replies](https://indieweb.org/reply), [reposts](https://indieweb.org/repost), [likes](https://indieweb.org/like), [emoji reactions](https://indieweb.org/reactions), [events](https://indieweb.org/event), [RSVPs](https://indieweb.org/rsvp), and more. These are based on simple, proven building blocks like DNS domains, HTTP and TLS, HTML with [microformats 2](https://microformats.org/), and the [Webmention](https://webmention.net/) protocol. The community has also built [bridges](https://brid.gy/) that translate these rich interactions to and from proprietary sites like Twitter.
 
-[There are tens of thousands of IndieWeb community participants](https://indiemap.org/) using these techniques. There are also hundreds of [independent, interoperating implementations](https://indieweb.org/projects) of these core standards and protocols, and [dozens of tools and services](https://indieweb.org/tools) that add features and make it easy for new people to join.
+## Rubric
 
-## Satellite contest rubrics
+Here are our proposed scores for the [contest rubric](https://blueskyweb.org/Satellite-Rubric-Template.pdf).
 
-TODO: address rubrics in satellite contest PDF
+#### Thoroughness
+
+_3: Works for many types of accounts, and is implemented._
+
+[There are tens of thousands of IndieWeb community participants](https://indiemap.org/) using these techniques, hundreds of [independent, interoperating implementations](https://indieweb.org/projects) of the core standards and protocols, [dozens of tools and services](https://indieweb.org/tools) that add functionality, and [dozens more IndieWeb-friendly hosting providers](https://indieweb.org/web_hosting) that make it easy for new people to join.
+
+Any URI-addressable resource may be supported as a linked account. There are [hundreds of official IANA URI schemes](https://en.wikipedia.org/wiki/List_of_URI_schemes), and many more unofficial ones.
+
+#### Robustness
+
+_3: Tolerates different errors or input methods. Considers fallbacks, failcases._
+
+[IndieAuth is a W3C Working Group Note](https://www.w3.org/TR/indieauth/) and is [maintained by the community as a Living Standard](https://indieauth.spec.indieweb.org/). It has dozens of active implementations and multiple well-tested fallback and error handling paths.
+
+#### Originality
+
+_1: Uses existing work with no further elaboration._
+
+This describes the existing IndieWeb community's work, which has been developed in the public over the last decade, and builds on many more decades' worth of evolution of the open web and related building blocks. We believe this is a strength, not a weakness.
+
+#### Decentralization
+
+_2.5: Design supports user agency, resilience. Design has one or two points of centralization that make sense._
+
+The vast majority of this design is decentralized. Interactions happen between individual personal web sites, which enjoy a large, robust ecosystem of hosting providers.
+
+One key exception is DNS. DNS domains are hierarchical, so there is a wide selection of registrars, TLDs, and CAs to choose from, with a range of policies and terms of service. However, identities are determined by pay-level domains, so each TLD operator is a partial point of centralization. Verisign, as the DNS root operator, is another.
+
+In practice, DNS has scaled beyond any newer decentralized system such as ActivityPub, IPFS, or blockchains. True, a single domain is at the mercy of its TLD operator, but documented domain clawbacks are very rare, and the breadth of the remaining ecosystem - registrars, CAs, hosts, protocol implementations - provides fertile ground to keep it decentralized and healthy.

@@ -7,12 +7,7 @@ pyblosxom2wxr
 <a href="http://wordpress.org/"><img src="/wordpress.png"></a>
 </p>
 
-[pyblosxom2wxr.sh](/pyblosxom2wxr.sh) is a shell script that migrates content
-from [PyBlosxom](https://pyblosxom.github.io/) to
-[WordPress](http://wordpress.org/). It converts PyBlosxom posts and comments
-into a [WXR](http://wordpress.org/tags/wxr) (WordPress eXtensible RSS) file that
-can be [imported](http://codex.wordpress.org/Importing_Content#WordPress) into
-WordPress.
+[pyblosxom2wxr.sh](https://github.com/snarfed/wordpress/blob/main/pyblosxom2wxr.sh) is a shell script that migrates content from [PyBlosxom](https://pyblosxom.github.io/) to [WordPress](http://wordpress.org/). It converts PyBlosxom posts and comments into a [WXR](http://wordpress.org/tags/wxr) (WordPress eXtensible RSS) file that can be [imported](http://codex.wordpress.org/Importing_Content#WordPress) into WordPress.
 
 Notes:
 

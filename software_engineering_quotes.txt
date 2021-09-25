@@ -106,6 +106,7 @@ Hamming
 > Type systems and type checking in programming languages are just an approximate solution to a more general problem: determining whether a program is free of errors for all possible values of variables along all possible control flow paths.
 
 [- Tim Sweeney](https://twitter.com/TimSweeneyEpic/status/1307778368562171904)
+<!-- NCXed -->
 
 > Always do the hard part first. If the hard part is impossible, why waste time on the easy part? Once the hard part is done, you’re home free.
 
@@ -118,6 +119,7 @@ Hamming
 > Of all my programming bugs, 80 percent are syntax errors. Of the remaining 20 percent, 80 percent are trivial logical errors. Of the remaining 4 percent, 80 percent are pointer errors. And the remaining 0.8 percent are hard.
 
 \- Marc Donner
+<!-- NCX next -->
 
 > Twenty percent of all input forms filled out by people contain bad data.
 
@@ -130,12 +132,13 @@ Hamming
 > When in doubt, use brute force.
 
 \- Ken Thompson, Bell Labs
+<!-- NCX next -->
 
 > To be a programmer is to develop a carefully managed relationship with error.
 
 \- Ellen Ullman
 
-[engineering flowchart, wd40 vs duct tape](https://twitter.com/catnogood/status/1291227756311633920)
+[engineering flowchart, wd40 vs duct tape](https://www.flickr.com/photos/dullhunk/7214525854)
 
 > Everything should be built top-down, except the first time.
 
@@ -144,10 +147,12 @@ Hamming
 > We build our computer systems the way we build our cities: over time, without a plan, on top of ruins.
 
 \- [_Life in Code_](https://www.google.com/books/edition/Life_in_Code/rPTtDQAAQBAJ), Ellen Ulman
+<!-- NCX next -->
 
 > Choose the least powerful programming language suitable for a given purpose, not the most powerful.
 
 \- [Rule of least power](https://en.wikipedia.org/wiki/Rule_of_least_power), W3C
+<!-- NCX next -->
 
 > maybe teaching sand to do math was a mistake
 
@@ -170,6 +175,7 @@ Hamming
 > We have a squeaky bathroom door, so I thought we need to oil it. Then I realised there are a few other doors in the house that need oiled. Then I thought "wouldn't it be cool if I could pour oil down one pipe and oil all the doors at once?" That's how software engineers think.
 
 [- Paul Campbell](https://twitter.com/paulca/status/1265407453753217024)
+<!-- NCX next -->
 
 > When AT&T donated the V6 source code to Berkeley, it was classified as industrial waste for tax purposes.
 >
@@ -180,6 +186,7 @@ Hamming
 > AT&T being the Phone Company, they were forbidden to commercialize anything not directly related to telephony. UNIX was a byproduct of their research work, and they couldn't sell it. But they could give it away as sludge!
 
 [- Evan Hunt](https://twitter.com/nuthaven/status/1254897999290892289)
+<!-- NCXed -->
 
 > Just like entropy always increases, mean time to failure always decreases.
 
@@ -311,6 +318,7 @@ Hamming
 > There exists in such a case a certain institution or law; let us say, for the sake of simplicity, a fence or gate erected across a road. The more modern type of reformer goes gaily up to it and says, 'I don't see the use of this; let us clear it away.' To which the more intelligent type of reformer will do well to answer: 'If you don't see the use of it, I certainly won't let you clear it away. Go away and think. Then, when you can come back and tell me that you do see the use of it, I may allow you to destroy it.'
 
 [- "Chesterton's Fence"](https://en.wikipedia.org/wiki/G._K._Chesterton#Chesterton's_fence) (G. K. Chesterton)
+<!-- NCX next -->
 
 > _At my last job, a team put up a poster for their reusable components. It said:_  
 > We made a thing from scratch, so you don’t HAVE to make things from scratch.  
@@ -390,9 +398,17 @@ Hamming
 
 \- Nicoll Hunt
 
+Corollary:
+
+> Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law.
+
+[-Douglas Hofstadter](https://en.wikipedia.org/wiki/Hofstadter%27s_law)
+<!-- NCXed -->
+
 > The trick is to fix the problem you have, rather than the problem you want.
 
 \- Bram Cohen
+<!-- NCX next -->
 
 > [Programming is like a “choose your own adventure game” except every path leads you to a StackOverflow question from 2013 describing the same bug, with no answer.](https://twitter.com/ppathole/status/1120660372267122689)
 
@@ -884,6 +900,10 @@ via [@zooko](https://twitter.com/zooko)
 > Progress is a new error message.
 
 \- Me
+
+> The idea that new code is better than old is patently absurd. Old code has been used. It has been tested. Lots of bugs have been found, and they’ve been _fixed_. There’s nothing wrong with it. It doesn’t acquire bugs just by sitting around on your hard drive. Au contraire, baby! Is software supposed to be like an old Dodge Dart, that rusts just sitting in the garage? Is software like a teddy bear that’s kind of gross if it’s not made out of _all new material?_
+
+[- Joel Spolsky, _Things You Should Never Do, Part I_](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
 
 <!--
 https://en.wikiquote.org/wiki/Computer_science

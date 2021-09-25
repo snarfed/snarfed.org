@@ -5,23 +5,10 @@ generate_blogpost.sh
  <a href="http://wordpress.org/">
   <img src="/wordpress.png" alt="wordpress" /></a></p>
 
-I use [Stuart Rackham](http://srackham.wordpress.com/)'s
-[blogpost.py](http://srackham.wordpress.com/blogpost-readme/)
-to publish my pages and posts to [WordPress](http://wordpress.org/).
-It's great!
+I use a [homegrown shell script](/blogpost) to publish my posts on this site. When I [migrated to WordPress](/2010-08-08_migrated_to_wordpress), I imported lots of existing posts and pages that I also wanted to be able to update with blogpost.py. So, I wrote a script to generate the `.blogpost` files for those posts and pages: [generate_blogpost.sh](https://github.com/snarfed/wordpress/blob/main/generate_blogpost.sh).
 
-Unfortunately, when I [migrated to WordPress](/2010-08-08_migrated_to_wordpress),
-I imported lots of existing posts and pages that I also wanted to be able to
-update with blogpost.py. So, I wrote a script to generate the `.blogpost` files
-for those posts and pages: [generate_blogpost.sh](/generate_blogpost).
-
-The script isn't too complicated. It just fetches all existing pages and posts
-from MySQL, finds the corresponding `.txt` files in the working directory, and
-generates corresponding `.blogpost` files using the post ids, types, titles, and
-permalinks stored in the database.
+The script isn't too complicated. It just fetches all existing pages and posts from MySQL, finds the corresponding `.txt` files in the working directory, and generates corresponding `.blogpost` files using the post ids, types, titles, and permalinks stored in the database.
 
 To run it, simply pass the same parameters you'd pass to `mysql`, e.g.
 
     $ ./generate_blogpost.sh -h [HOST] -u [USER] [DATABASE]
-
-Tested with blogpost.py version 0.9.3.
