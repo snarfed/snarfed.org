@@ -5,7 +5,7 @@ Mac setup
  <a href="http://www.apple.com/mac/">
   <img src="/mac_os_x.jpg" /></a></p>
 
-I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). I'm currently on Catalina. Here are my notes for setting up a new computer.
+I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my notes for setting up a new computer.
 
 * [Install Firefox.](https://firefox.com/) Sign into sync.
   * In Preferences, General => Language and Appearance => Advanced => set minimum font size to 14 points.
@@ -56,10 +56,12 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). I'm currently
   `%admin		ALL = (ALL) ALL`
   to:
   `%admin		ALL = (ALL) NOPASSWD: ALL`
-* [Install Google Drive Sync](https://www.google.com/drive/download/).
+* [Install Google Drive](https://www.google.com/drive/download/).
   * Make sure I have everything I need off the old computer's backup in Drive, then delete it.
   * Add folders to sync to Drive: `bin books camera_extra docs etc gallery src/snarfed.org`. Uncheck the rest.
   * Disable synching Drive to the computer.
 * [Install and configure MenuMeters.](https://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/)
 * [Install and configure Docker.](https://hub.docker.com/editions/community/docker-ce-desktop-mac/)
+* [Install and configure Asana.](https://asana.com/download)
+* [Install and configure Meet](https://support.google.com/chrome/answer/9658361) and [Enhancement Suite for Chrome](https://www.meetenhancementsuite.com/).
 * [Install and configure Logitech Camera Settings.](https://support.logi.com/hc/en-us/articles/360049055854)

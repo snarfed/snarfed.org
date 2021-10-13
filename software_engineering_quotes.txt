@@ -119,7 +119,7 @@ Hamming
 > Of all my programming bugs, 80 percent are syntax errors. Of the remaining 20 percent, 80 percent are trivial logical errors. Of the remaining 4 percent, 80 percent are pointer errors. And the remaining 0.8 percent are hard.
 
 \- Marc Donner
-<!-- NCX next -->
+<!-- NCX next. include https://www.cnbc.com/amp/2021/10/01/defi-protocol-compound-mistakenly-gives-away-millions-to-users.html -->
 
 > Twenty percent of all input forms filled out by people contain bad data.
 
@@ -132,7 +132,7 @@ Hamming
 > When in doubt, use brute force.
 
 \- Ken Thompson, Bell Labs
-<!-- NCX next -->
+<!-- NCXed -->
 
 > To be a programmer is to develop a carefully managed relationship with error.
 
@@ -152,7 +152,7 @@ Hamming
 > Choose the least powerful programming language suitable for a given purpose, not the most powerful.
 
 \- [Rule of least power](https://en.wikipedia.org/wiki/Rule_of_least_power), W3C
-<!-- NCX next -->
+<!-- NCXed -->
 
 > maybe teaching sand to do math was a mistake
 
@@ -905,6 +905,15 @@ via [@zooko](https://twitter.com/zooko)
 
 [- Joel Spolsky, _Things You Should Never Do, Part I_](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
 
+The first step in fixing a broken program is getting it to fail repeatably.
+
+\- Tom Duff
+
+> It is basically always the case that the long-term costs of keeping a system working reliably vastly exceed any inconveniences you encounter while building it.
+
+\- [Dan McKinley](https://mcfunley.com/), [Choose Boring Technology](https://mcfunley.com/choose-boring-technology#optimize-globally)
+
+
 <!--
 https://en.wikiquote.org/wiki/Computer_science
 https://en.wikiquote.org/wiki/Engineering
@@ -1002,15 +1011,7 @@ If it ain’t broke, don’t fix it.
 \- Ronald Reagan
 
 [The Maintainer’s Motto] If we can’t fix it, it ain’t broke.
-\- Lieutenant Colonel Walt Weir, United StatesArmy
-
-The first step in fixing a broken program is getting it to fail repeatably.
-\- Tom Duff
-
-[The First Rule of Program Optimization]
-\- Don’t do it.
-[The Second Rule of Program Optimization-For experts only] Don’t do it yet.
-\- Michael Jackson
+\- Lieutenant Colonel Walt Weir, United States Army
 
 The fastest algorithm can frequently be replaced by one that is almost as fast and much easier to understand.
 \- Douglas W. Iones
