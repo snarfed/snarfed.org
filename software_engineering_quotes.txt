@@ -60,15 +60,11 @@ Hamming
 > 5. Automate.  
 
 \- Elon Musk
-<!-- NCX next -->
+<!-- NCXed -->
 
 > To this very day, idiot software managers measure "programmer productivity" in terms of "lines of code produced," whereas the notion of "lines of code spent" is much more appropriate.
 
 \- Edsger W. Dijkstra
-
-> Software has bugs. Security-relevant software has security-relevant bugs.
-
-\- [Steve Bellovin](https://www.cs.columbia.edu/~smb/)
 
 > Running a successful open source project is just Good Will Hunting in reverse, where you start out as a respected genius and end up being a janitor who gets into fights.
 
@@ -147,7 +143,7 @@ Hamming
 > We build our computer systems the way we build our cities: over time, without a plan, on top of ruins.
 
 \- [_Life in Code_](https://www.google.com/books/edition/Life_in_Code/rPTtDQAAQBAJ), Ellen Ulman
-<!-- NCX next -->
+<!-- NCXed -->
 
 > Choose the least powerful programming language suitable for a given purpose, not the most powerful.
 
@@ -1242,4 +1238,8 @@ Any intelligent fool can make things bigger, more complex, and more violent. It 
 
 Technology brings us wonderment and annoyance, in roughly equal measures.
 - Bill Bonner
+
+> Software has bugs. Security-relevant software has security-relevant bugs.
+
+\- [Steve Bellovin](https://www.cs.columbia.edu/~smb/)
 -->

@@ -10,11 +10,13 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
 * [Install Firefox.](https://firefox.com/) Sign into sync.
   * In Preferences, General => Language and Appearance => Advanced => set minimum font size to 14 points.
   * To make the tab key only cycle between input forms, not links too, open [`about:config`](about:config) and add a new entry, [`accessibility.tabfocus`](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/accessibility.tabfocus), with value 1 (integer).
+* [Install Karabiner Elements.](https://karabiner-elements.pqrs.org/)
 * [Install 1Password](https://1password.com/) and its [browser extension](https://1password.com/downloads/mac/#browsers).
 * [Install Homebrew.](https://brew.sh/)
-* `brew install awscli bash colordiff coreutils ffmpeg git gnupg go imagemagick librsvg mpg123 mplayer node openjdk openssl pandoc pinentry-mac pstree pwgen python@3.7 python@3.8 rename telnet youtube-dl wdiff wp-cli`
+* `brew install awscli azure-cli bash colordiff coreutils ffmpeg git gnupg go google-cloud-sdk imagemagick librsvg mpg123 mplayer node openjdk openssl pandoc pinentry-mac pstree pwgen python@3.7 python@3.8 rename telnet youtube-dl wdiff wp-cli`
 * `brew install --cask emacs hammerspoon`
 * `pip install sphinx`
+* `gcloud components install app-engine-python`
 * Update System Preferences:
   * Energy Saver, Power Adapter, check Prevent computer from sleeping automatically when the display is off, uncheck Wake for Wi-Fi network access
   * Trackpad, check Tap to Click, turn off most gestures
@@ -22,14 +24,28 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
   * General => Dark mode
   * Sound => uncheck Play UI sound effects
   * Security & Privacy
-    * Require password 1 hour
-    * turn on FileVault
-    * Privacy => Full Disk Acess => [add `/usr/bin/ruby` (for Emacs)](https://emacs.stackexchange.com/a/53037)
+      * Require password 1 hour
+      * turn on FileVault
+      * Privacy => Full Disk Access => [add `/usr/bin/ruby` (for Emacs)](https://emacs.stackexchange.com/a/53037)
   * Desktop & screen saver: no screen saver, Hot corners => upper right put display to sleep
-  * Sharing => set hostname, enable Remote Login
+  * Sharing => set hostname, enable Remote Login for SSH
   * Displays => Resolution scaled => one step up from default, Night Shift => on, 10p-6a
   * Internet accounts => iCloud, turn off everything except Find My Mac, remove Game Center
   * Bluetooth => Show in menu bar
+  * Notifications -> disable _Badge app icon_ for all apps
+* [Install WhatsApp.](https://www.whatsapp.com/download/) Log in.
+* [Install Slack.](https://slack.com/download) Log in.
+* [Install Dash.](https://kapeli.com/dash) Import `~/etc/dash.5.license`.
+* [Install Google Drive](https://www.google.com/drive/download/).
+  * Make sure I have everything I need off the old computer's backup in Drive, then delete it.
+  * Add folders to sync to Drive: `bin books camera_extra docs etc gallery src/snarfed.org`. Uncheck the rest.
+  * Disable synching Drive to the computer.
+* [Install and configure MenuMeters.](https://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/)
+* [Install and configure Docker.](https://hub.docker.com/editions/community/docker-ce-desktop-mac/)
+* [Install and configure Asana.](https://asana.com/download)
+* [Install and configure Meet](https://support.google.com/chrome/answer/9658361) and [Enhancement Suite for Chrome](https://www.meetenhancementsuite.com/).
+* [Install and configure Logitech Camera Settings.](https://support.logi.com/hc/en-us/articles/360049055854)
+* Pair Bluetooth devices (keyboard, headphones, etc.)
 * `mkdir -p ~/src; git clone snarfed/dotfiles; git clone snarfed/misc`
 * `cd; echo .cshrc .emacs .git_excludes .gitconfig .hgrc .inputrc .pypirc .python .sqliterc .subversion .wgetrc | xargs -n 1 -I %% ln -s src/dotfiles/%%`
 * `mkdir -p ~/.hammerspoon; cd ~/.hammerspoon; ln -s ~/src/dotfiles/hammerspoon.lua init.lua`
@@ -40,28 +56,16 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
   * `cd 'Library/Application Support/Firefox/profiles/*.default-release/`
   * `mkdir -p chrome`
   * `ln -s ~/src/dotfiles/userChrome.css`
-* [Install WhatsApp.](https://www.whatsapp.com/download/) Log in.
-* [Install Slack.](https://slack.com/download) Log in.
-* [Install Dash.](https://kapeli.com/dash) Import `~/etc/dash.5.license`.
 * `mkdir -p ~/.ssh; cd ~/.ssh; ln -s ~/src/dotfiles/ssh_config config`. Copy in SSH keys from backup somewhere.
 * Set up GnuPG:
   * `mkdir -p ~/.gnupg; cd ~/.gnupg; ln -s ~/src/dotfiles/gpg.conf ; ln -s ~/src/dotfiles/gpg.conf`
   * Run `gpg --list-keys` and `gpg --list-secret-keys`.
   * If they don't show anything:
-    * Run `gpg-connect-agent`, then `keyinfo --list`.
-    * Check that it shows the keys in `~/.gnupg/private-keys-v1.d`.
-    * Then run `gpg --import ~/.gnupg/pubring.gpg`.
+      * Run `gpg-connect-agent`, then `keyinfo --list`.
+      * Check that it shows the keys in `~/.gnupg/private-keys-v1.d`.
+      * Then run `gpg --import ~/.gnupg/pubring.gpg`.
 * Add `127.0.0.1	my.dev.com` to `/etc/hosts`.
 * Tell `sudo` not to require my password by changing this line in `/etc/sudoers`:
   `%admin		ALL = (ALL) ALL`
   to:
   `%admin		ALL = (ALL) NOPASSWD: ALL`
-* [Install Google Drive](https://www.google.com/drive/download/).
-  * Make sure I have everything I need off the old computer's backup in Drive, then delete it.
-  * Add folders to sync to Drive: `bin books camera_extra docs etc gallery src/snarfed.org`. Uncheck the rest.
-  * Disable synching Drive to the computer.
-* [Install and configure MenuMeters.](https://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/)
-* [Install and configure Docker.](https://hub.docker.com/editions/community/docker-ce-desktop-mac/)
-* [Install and configure Asana.](https://asana.com/download)
-* [Install and configure Meet](https://support.google.com/chrome/answer/9658361) and [Enhancement Suite for Chrome](https://www.meetenhancementsuite.com/).
-* [Install and configure Logitech Camera Settings.](https://support.logi.com/hc/en-us/articles/360049055854)
