@@ -61,7 +61,7 @@ Yes. We have a software development lifecycle with processes to develop, review,
 
 Yes. We use [MDM VENDOR] to manage and secure employee laptops and phones and require security settings including full disk encryption, password strength, screen lock, location tracking, and remote lock and wipe. We attach stickers with serial numbers and barcodes to all physical assets, and include them in MDM.
 
-We enforce the following password security requirements: [passwords must be at least 12 characters and include all of the following: a lowercase letter, an uppercase letter, a number. Passwords may not include parts of the user’s username, first name, or last name.Passwords must be changed every 60 days and passwords cannot be any of the user’s last 24 passwords.]
+We enforce the following password security requirements: [passwords must be at least 12 characters and include all of the following: a lowercase letter, an uppercase letter, a number. Passwords may not include parts of the user’s username, first name, or last name. Passwords must be changed every 60 days and passwords cannot be any of the user’s last 24 passwords.]
 
 ### Do you require approval for all software installed on employee computers?
 
