@@ -1,0 +1,142 @@
+44985
+Loose coupling
+
+<p class="right third shadow">
+ <img src="/gears.jpg" /></p>
+
+Many software shops start by building a [monolith](https://en.wikipedia.org/wiki/Monolithic_application). This works! It lets them focus on functionality and domain logic and avoids the overengineering needed to coordinate multiple services.
+
+Monoliths don't scale forever, though. They gradually get too big, too hard to work with, and too hard for new people to learn. At some point, people start talking about [microservices](https://en.wikipedia.org/wiki/Microservices), code modularization (aka components), and other ways to break up our monoliths and loosen the coupling between code. The problem they're hoping to solve is:
+
+***Everything is too interdependent, and the dependencies are too diffuse, hidden, and implicit.***
+
+Specifically:
+
+* _Code_ is too interdependent.
+* _Production services_ are too interdependent.
+* _People and teams_ are too interdependent.
+
+
+## Examples
+
+### Code
+
+* Someone moves a column from one database table to another, or splits a table into two. This takes much more effort than it ideally should, since existing code uses the original column or table directly in various unexpected ways.
+* Someone makes a larger data model change. So much existing code reads and writes the original data model directly that they don't try to delete the original tables or usages. Instead, they implement a bidirectional synching system to keep the data in the old and new tables in sync.
+
+### Ops
+
+* Multiple services or variants of services share the same database, so they need to be deployed them at the same time to handle schema changes.
+* Different logical services aren't isolated enough. For example, traffic spikes or outageson one service also affect other services that happen to be co-located on the same servers.
+
+### People
+
+* Two different logical services are built by different teams, but they're deployed and run inside the same physical services, so the two teams are forced to share release schedules, oncall rotations, and other ops activities
+* Tribal knowledge causes bus factors. Changing something often requires talking to an old timer, since there's no other reliable way to determine exactly what depends on it.
+
+
+## Solutions
+
+The standard solution to these problems is to formalize and explicitly define the way different pieces of code, written and maintained by different teams, interact with each other.
+
+Ideally, teams work mostly within well defined chunks of the codebase that they own. Those chunks interact with each other through well defined APIs, [maybe linked and deployed together](#access-control), maybe [remotely via RPC](#microservices). They're be managed as [components (packages) in a build system](#modularization). Teams negotiate their APIs with other teams that use them.
+
+Ideally, to do all of these well, the org as a whole should standardize on a single API mechanism, or at most a few. Components should use common release processes, build systems, and RPC protocols as much as possible so that tools and practices are shared across the org. Occasionally a component will have unique requirements, due to eg a different language or platform, which is tolerable, but should be minimized.
+
+The three options below are complementary, but not dependent. Do any of them, or all of them, in any order.
+
+### Access control
+
+In monolithic codebases, any code often can (and does) call and use any other code. Data in ORM models is often the worst offender: code across the codebase can read and write a given object's fields, which makes the database a de facto universal API. Not good.
+
+One way to address this is language-based access control. In Python, for example, move internal code into private `__*` methods, which [can't easily called from outside the class](https://docs.python.org/2.7/tutorial/classes.html#private-variables-and-class-local-references). Member fields often have similar protective layers. Then, expose individual methods and fields deliberately, as needed.
+
+(In Python, it'd be nice to find a similar technique for module level functions. [`__slots__`](https://docs.python.org/3.6/reference/datamodel.html#slots) and [`__all__`](https://docs.python.org/3/tutorial/modules.html#importing-from-a-package) don't do it, nor does modifying `__dict__`.)
+
+This is the smallest of the three options. It can be done gradually, model by model, app by app, module by module. No big bang switch needed. Here are a few possible paths, again using Python as an example:
+
+#### Packages
+
+* Create a top-level `api.py` module in your package. This is the only file clients will import and use.
+* Define functions, constants, and (if necessary) classes with clear APIs you're comfortable preserving for years.
+  * Prefer primitives and simple containers (lists, dicts, sets) for arguments and return values.
+  * Beware passing objects (ie instances of classes) over your API. If you ever decide to move your package to a standalone service, they'll make it harder to maintain compability.
+  * Avoid ORM model instances as arguments or return values.
+
+#### Modules
+
+* Prefix internal filenames with `_` or `__` to discourage direct access by clients.
+* During code reviews, watch for and flag any code that "reaches behind" APIs and directly accesses `_`/`__` files.
+
+(Sadly I haven't yet found a `__slots__`/`__all__` style enforcement mechanism for this.)
+
+#### Identifiers
+
+* Prefix internal class, function, and constant names with `__` to prevent/discourage direct access by clients.
+  * For ORM column fields, configure them to omit the underscores in the database column name, eg Django's [`db_column` kwarg](https://docs.djangoproject.com/en/1.11/ref/models/fields/#django.db.models.Field.db_column).
+* During code reviews, watch for and flag any code that "reaches behind" and directly accesses `__` identifiers.
+
+
+### Modularization
+
+This is a broader version of [access control](#access-control). Separate the codebase into components, and have each component explicitly declare the other components it depends on. Use a build system to build, run tests, and optionally deploy each component with just the other components it depends on.
+
+After that, possible next steps include:
+
+* Versioning: components can optionally depend on specific versions of another components. (But beware, this way lie dragons.)
+* Mark whether other a component is reusable or "leaf only."
+* Build and test each component separately in CI. Faster builds!
+* Provide hermetic, reproducible builds of components at specific (or any) versions.
+
+Obviously, common package managers like pip and npm do much of this. The simplest straw man approach is to use them.
+
+* First, if your codebase isn't public, set up a private package repository. There are multiple services for this, eg [GitHub Packages](https://docs.github.com/en/packages/working-with-a-github-packages-registry).
+  * Configure package manager clients like `pip` and `npm` to include the internal repo, eg with [`--index-url`](https://packaging.python.org/discussions/install-requires-vs-requirements/?highlight=index-url#id4).
+* Set up a build environment (eg Python virtualenv) per project.
+* Determine and declare each project's requirements, eg in `requirements.txt` or `setup.py` for Python. These should include the dependent internal components.
+* Build and publish packages for each component.
+
+Alternatively, use one of the many modern build systems designed for large monorepos with multiple components and build targets (TODO: include newer options):
+
+* **[Bazel](https://bazel.build/)**. [Python support.](https://docs.bazel.build/versions/master/be/python.html) Focuses on correctness, speed, reproducibility. BUILD files are python-like, non-Turing-complete DSL. Rigorously opinionated, strong req'ts. Unknown support for pip dependencies/targets.
+* **[Pants](https://www.pantsbuild.org/)**. [Python support.](https://www.pantsbuild.org/python-readme.html) BUILD files are Python-like DSL. Can use/build pip packages.
+* **[Meson](http://mesonbuild.com/)** Build files are non-Turing-complete DSL.
+* **[PyBuilder](https://pybuilder.github.io/)**. Build files are full fledged executable Python. Hrm.
+
+Other traditional build systems like Ant, Gradle, Maven, and make are also possible, but probably less appropriate.
+
+
+### Microservices
+
+Microservices let teams decouple their service ops and releases from other teams in the same way [modularization](#modularization) lets them decouple their code. The primary requirements are:
+
+* Common RPC protocol(s) that services use to define the RPCs they serve and construct RPC calls to other services.
+* Common ops tool(s). Teams would use them to build and deploy services separately, but share tool maintenance and knowledge.
+
+Optional:
+
+* API versioning. Maybe helpful, maybe not.
+* Service discovery, ie talk to this service wherever it's running.
+* Explicitly enumerate the services you call or that call you.
+
+There are a number of open questions around how to do this in practice: authentication/authorization, whether and how to share storage, etc.
+
+[Here are](https://news.ycombinator.com/item?id=11076890) [lots of](https://www.slideshare.net/MaxAlexejev/modern-distributed-messaging-and-rpc) [resources](https://project-awesome.org/mfornos/awesome-microservices#service-toolkits) [on RPC](https://en.wikipedia.org/wiki/Remote_procedure_call) [frameworks](https://en.wikipedia.org/wiki/Comparison_of_data_serialization_formats). Fortunately, most projects already use RPCs! Specifically, a custom REST AIP over HTTP, often with JSON requests and responses. The simplest straw man proposal is to expand this as is.
+
+There are [lots of reasons *not* to use REST](https://news.ycombinator.com/item?id=11076890), though. In order of importance:
+
+* Resource oriented API design isn't great for verb-style operations. Services ideally want to expose *operations*, not raw resources, in order to maintain invariants.
+* No built in type checking.
+* Weak semantics, especially error handling. No built in support for fine grained errors.
+* No service discovery. (DNS is something, but not much.)
+* Feature poor. No built in retries, throttling/QoS, etc.
+* Overhead. JSON is heavy, HTTP/1.1 latency isn't great.
+
+Here are some likely alternatives:
+
+* **[GraphQL](http://graphql.org/)**, generally for low volume, latency insensitive services.
+* **[GRPC](https://grpc.io/)**. [Wikipedia](https://en.wikipedia.org/wiki/GRPC), [FAQ](https://grpc.io/faq/). HTTP/2. Largely HTTP semantics but more fine grained internally, plus protobuf serialization and better errors.
+* **[Thrift](https://thrift.apache.org/)**. [Wikipedia](https://en.wikipedia.org/wiki/Apache_Thrift).
+* **[Avro](https://avro.apache.org/)**. [Wikipedia](https://en.wikipedia.org/wiki/Apache_Avro), [compared to others](https://avro.apache.org/docs/current/#compare), [Python details](https://avro.apache.org/docs/current/gettingstartedpython.html).
+* **[ZeroRPC](https://www.zerorpc.io/)** + [MessagePack](http://msgpack.org/) + ZeroMQ. [Wikipedia](https://github.com/0rpc/zerorpc-python). Pretty low level. Emphasizes streamning responses.
+* **[JSON-RPC](http://www.jsonrpc.org/)**, maybe.

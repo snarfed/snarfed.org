@@ -270,7 +270,7 @@ Demand response to emissions, "AER." optimization algorithms. Demand response fo
 
 Related project, satellite imagery, measuring emissions from power plants worldwide. Places w/more renewables, eg CA. Grids etc can use this.
 
-Conflicts in demand response btw ISOs, power plants, etc and direct consumers from WT? Not really. IsOs less incentivized by emissions.
+Conflicts in demand response btw ISOs, power plants, etc and direct consumers from WT? Not really. ISOs less incentivized by emissions.
 
 Sgip, self generation incentive program for storage. Mostly commercial, before meter. Before, was very manually modelled, time of day curve. Increased emissions! Eg filling storage at night, w/o solar PV. So they changed program to require emissions signal. Comes from WT!
 
