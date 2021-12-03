@@ -121,7 +121,7 @@ Optional:
 
 There are a number of open questions around how to do this in practice: authentication/authorization, whether and how to share storage, etc.
 
-[Here are](https://news.ycombinator.com/item?id=11076890) [lots of](https://www.slideshare.net/MaxAlexejev/modern-distributed-messaging-and-rpc) [resources](https://project-awesome.org/mfornos/awesome-microservices#service-toolkits) [on RPC](https://en.wikipedia.org/wiki/Remote_procedure_call) [frameworks](https://en.wikipedia.org/wiki/Comparison_of_data_serialization_formats). Fortunately, most projects already use RPCs! Specifically, a custom REST AIP over HTTP, often with JSON requests and responses. The simplest straw man proposal is to expand this as is.
+[Here are](https://news.ycombinator.com/item?id=11076890) [lots of](https://www.slideshare.net/MaxAlexejev/modern-distributed-messaging-and-rpc) [resources](https://project-awesome.org/mfornos/awesome-microservices#service-toolkits) [on RPC](https://en.wikipedia.org/wiki/Remote_procedure_call) [frameworks](https://en.wikipedia.org/wiki/Comparison_of_data_serialization_formats). Fortunately, many web apps already use RPCs! Specifically, a REST API over HTTP, often with JSON requests and responses. The simplest straw man proposal is to expand this as is.
 
 There are [lots of reasons *not* to use REST](https://news.ycombinator.com/item?id=11076890), though. In order of importance:
 

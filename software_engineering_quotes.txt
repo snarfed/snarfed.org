@@ -176,7 +176,7 @@ Hamming
 > We have a squeaky bathroom door, so I thought we need to oil it. Then I realised there are a few other doors in the house that need oiled. Then I thought "wouldn't it be cool if I could pour oil down one pipe and oil all the doors at once?" That's how software engineers think.
 
 [- Paul Campbell](https://twitter.com/paulca/status/1265407453753217024)
-<!-- NCX next -->
+<!-- NCXed -->
 
 > When AT&T donated the V6 source code to Berkeley, it was classified as industrial waste for tax purposes.
 >
@@ -234,6 +234,7 @@ Hamming
 > All code is technical debt; it’s just different interest rates we’re paying on it. Debt powers the economy and it powers your business. None of this is inherently good or bad. It’s a tool.
 
 \- Dormain Drewitz
+<!-- NCXed -->
 
 > The condition of any backup is unknown until a restore is attempted.
 
@@ -319,7 +320,7 @@ Hamming
 > There exists in such a case a certain institution or law; let us say, for the sake of simplicity, a fence or gate erected across a road. The more modern type of reformer goes gaily up to it and says, 'I don't see the use of this; let us clear it away.' To which the more intelligent type of reformer will do well to answer: 'If you don't see the use of it, I certainly won't let you clear it away. Go away and think. Then, when you can come back and tell me that you do see the use of it, I may allow you to destroy it.'
 
 [- "Chesterton's Fence"](https://en.wikipedia.org/wiki/G._K._Chesterton#Chesterton's_fence) (G. K. Chesterton)
-<!-- NCX next -->
+<!-- NCXed -->
 
 > _At my last job, a team put up a poster for their reusable components. It said:_  
 > We made a thing from scratch, so you don’t HAVE to make things from scratch.  
@@ -341,6 +342,7 @@ Hamming
 > When you finish a PhD in computer science, they take to a special room and explain that you must never use recursion in real life. Its only purpose is to make programming hard for undergrads.
 
 [- John Wilander](https://twitter.com/johnwilander/status/1176457013305303040)
+<!-- NCX next -->
 
 > Another flaw in the human character is that everybody wants to build and nobody wants to do maintenance.
 
@@ -349,6 +351,7 @@ Hamming
 > A simple heuristic for technical debt: It's always fine to introduce a quick hack. But as soon as you have to work around that hack, stop and fix it instead.
 
 [- Aaron Boodman](https://twitter.com/aboodman/status/11686231818646609934)
+<!-- NCX next -->
 
 
 > If you have a procedure with 10 parameters, you probably missed some.
@@ -362,10 +365,12 @@ Hamming
 > Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't.
 
 \- Alan Perlis
+<!-- NCX next -->
 
 > To err is human; to manage error is system.
 
 \- Kevin Kelly
+<!-- NCX next -->
 
 > If software cannot be maintained, then it will be rewritten.
 
@@ -378,6 +383,7 @@ Hamming
 > There is an old network saying: Bandwidth problems can be cured with money. Latency problems are harder because the speed of light is fixed. You can’t bribe God.
 
 \- Unknown
+<!-- NCX next -->
 
 > Peres's Law: If a problem has no solution, it may not be a problem, but a fact; not to be solved, but to be coped with over time.
 
@@ -443,13 +449,14 @@ Corollary:
 > Our use of technology always expands to the very edge of its capacity. A thousand years from now, everyday technology will be just barely sufficient for the job.
 
 \- Jevon's Paradox (aka Wirth's law aka Page's law aka Gates's law aka May's law)
-
+<!-- NCX next -->
 
 > 1. Make it work.
 > 2. Make it right.
 > 3. Make it fast.
 
 \- Kent Beck
+<!-- NCX next -->
 
 > Old technology fails frequently, but in a reliable way. New technology fails less often, but when it fails, it fails in an unexpectedly new way we are not prepared for.
 
@@ -466,6 +473,7 @@ Corollary:
 > Don't solve a problem just because you can imagine it. Wait until there is a problem, then go after it. If you over-anticipate, you will design freedom out of the system.
 
 \- Stewart Brand
+<!-- NCX next -->
 
 > Matlab has normalized the practice of storing array indices as floats starting at 1.0, which now that I am used to it makes me think why bathe or brush my teeth? Why not start doing meth? Why bother at all?
 
@@ -500,6 +508,7 @@ Corollary:
 > A performance-related change - for example, adding a cache - that accidentally becomes required for correctness.
 
 [- David Smith](https://twitter.com/Catfish_Man/status/735211223323578368)
+<!-- NCX next -->
 
 > It’s a curious thing about our industry: not only do we not learn from our mistakes, we also don’t learn from our successes.
 
@@ -586,14 +595,17 @@ availability | downtime, per year | cost
 > "Feral systems": Access databases, spreadsheets with macros, and other hacked solutions made out of frustration when current systems don't meet a need.
 
 [- Hadley Beeman](https://twitter.com/hadleybeeman/status/934867384577462274)
+<!-- NCX next -->
 
 > The trouble with programmers is that you can never tell what a programmer is doing until it’s too late.
 
 \- Seymour Cray
+<!-- NCX next -->
 
 > Measuring programming by lines of code is like measuring aircraft building by weight.
 
 \- Bill Gates
+<!-- NCX next -->
 
 > Rules of Optimization:  
 > Rule 1: Don't do it.  
@@ -602,9 +614,11 @@ availability | downtime, per year | cost
 \- Michael A. Jackson
 <!-- NCXed -->
 
+<!--
 > CoffeeScript, Haml, Sass, all on top of me, holding me up psychologically for MONTHS.
 
 [- @erowidrecruiter](https://twitter.com/erowidrecruiter) (Markov-powered mashup of Erowid trip reports and tech recruiter emails)
+-->
 
 > Writing code is not an exercise in [ego].
 
