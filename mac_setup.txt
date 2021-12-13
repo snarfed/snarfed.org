@@ -20,6 +20,7 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
   * `open /opt/homebrew/Caskroom/temurin8/8*/OpenJDK8U-jdk_x64_mac_hotspot_*.pkg`
   * `# set JAVA_HOME to /Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home`
 * `gcloud components install app-engine-python beta cloud-datastore-emulator`
+* `sudo gem install twurl`
 * Update System Preferences:
   * Energy Saver, Power Adapter, check Prevent computer from sleeping automatically when the display is off, uncheck Wake for Wi-Fi network access
   * Trackpad, check Tap to Click, turn off most gestures
