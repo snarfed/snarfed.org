@@ -342,7 +342,7 @@ Hamming
 > When you finish a PhD in computer science, they take to a special room and explain that you must never use recursion in real life. Its only purpose is to make programming hard for undergrads.
 
 [- John Wilander](https://twitter.com/johnwilander/status/1176457013305303040)
-<!-- NCX next -->
+<!-- NCXed -->
 
 > Another flaw in the human character is that everybody wants to build and nobody wants to do maintenance.
 
@@ -365,7 +365,7 @@ Hamming
 > Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't.
 
 \- Alan Perlis
-<!-- NCX next -->
+<!-- NCXed -->
 
 > To err is human; to manage error is system.
 
@@ -555,6 +555,7 @@ availability | downtime, per year | cost
 > [Hyrum's Law](http://www.hyrumslaw.com/): With a sufficient number of users of an API, it does not matter what you promise in the contract: all observable behaviors will be depended on by somebody.
 
 \- Hyrum Wright; [obligatory XKCD](https://xkcd.com/1172/)
+<!-- NCXed -->
 
 > [Software engineering is what happens to computer programming when you add time and other programmers.](https://research.swtch.com/vgo-eng)
 
@@ -874,6 +875,8 @@ corollary:
 
 \- Fred Brooks
 
+<!-- NCX next -->
+
 > In computer science, we're privileged to run elbows with the giants on whose shoulders we stand.
 
 via [@zooko](https://twitter.com/zooko)
@@ -922,6 +925,23 @@ The first step in fixing a broken program is getting it to fail repeatably.
 > It is basically always the case that the long-term costs of keeping a system working reliably vastly exceed any inconveniences you encounter while building it.
 
 \- [Dan McKinley](https://mcfunley.com/), [Choose Boring Technology](https://mcfunley.com/choose-boring-technology#optimize-globally)
+
+> Don't gloss over a routine or piece of code involved in the bug because you "know" it works. Prove it. Prove it in this context, with this data, with these boundary conditions.
+
+\- Andrew Hunt
+
+> If you ever talk to a great programmer, you'll find they know their tools like an artist knows their paintbrushes.
+
+\- Bill Gates
+
+> A clever person solves a problem. A wise person avoids it.
+
+\- Albert Einstein
+
+
+> The difference between a bad programmer and a good one is whether he considers his code or his data structures more important. Bad programmers worry about the code. Good programmers worry about data structures and their relationships.
+
+\- Linus Torvalds
 
 
 <!--

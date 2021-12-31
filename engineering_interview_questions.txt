@@ -1,7 +1,7 @@
 14584
 Engineering interview questions
 
-I've done lots of technical software engineering interviews, over 600 or so, [mostly at Google but also elsewhere](/resume). I can't claim I'm particularly good at them, but I've definitely racked up some experience. Here are some of my favorite questions. They're mostly open ended system design problems, not coding questions. (Those are a necessary evil, but I'm not a huge fan personally. Take home projects are better!)
+I've done lots of technical software engineering interviews, over 800 or so, over the [course of my career](/resume). I can't claim I'm particularly good at them, but I've definitely racked up some experience. Here are some of my favorite questions. They're mostly open ended system design problems, not coding questions, which are a necessary evil at best. (Take home projects are often better!)
 
 * [Distributed transaction](#distributed-transaction)
 * [Web search spell check](#web-search-spell-check)
