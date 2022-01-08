@@ -9,17 +9,11 @@ My open source software [projects](#projects), [scripts](#scripts), and [patches
 <a name="projects"></a>
 ### Projects
 
-* [Bridgy](https://brid.gy/): Got a web site? Post links to your site on social
-networks? Wish comments and likes showed up on your site? Bridgy copies them
-back for you. Part of the [IndieWeb](https://indieweb.org/) ecosystem.
+* [Bridgy](https://brid.gy/): Got a web site? Post links to your site on social networks? Wish comments and likes showed up on your site? Bridgy copies them back for you. Part of the [IndieWeb](https://indieweb.org/) ecosystem.
 
 * [Bridgy Fed](https://fed.brid.gy/): Bridgy, for federated social networks! Lets you reply, like, and repost on <a href="https://joinmastodon.org/">Mastodon</a> and <a href="https://project.hubzilla.org/">Hubzilla</a> from your [IndieWeb](https://indieweb.org/) site, and vice versa.
 
-* [granary](https://github.com/snarfed/granary) is a library and REST API that
-read, writes, and converts Facebook, Twitter, and Instagram data to
-[ActivityStreams](http://activitystrea.ms),
-[microformats2](http://microformats.org/wiki/microformats2) HTML and JSON,
-[Atom](http://atomenabled.org/), XML, and more!
+* [granary](https://github.com/snarfed/granary) is a library and REST API that read, writes, and converts Facebook, Twitter, and Instagram data to [ActivityStreams](http://activitystrea.ms), [microformats2](http://microformats.org/wiki/microformats2) HTML and JSON, [Atom](http://atomenabled.org/), RSS, XML, and more.
 
 * [Indie Map](http://www.indiemap.org/) is a public
 [IndieWeb](https://indieweb.org/) social graph and dataset, based on a
