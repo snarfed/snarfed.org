@@ -13,7 +13,7 @@ The five patents named in the suit are:
 
 The two I'm curious about are [US9195258](https://patents.google.com/patent/US9195258B2/en) (priority date 2003-07-28), for running a task on one device at a timestamp from another device by incorporating the difference between the two devices' clocks, and [US10209953](https://patents.google.com/patent/US10209953B2/en), for applying that timestamp delta technique to many devices together. (I think.)
 
-Our project was similar to Sonos: it synchronized MP3 player apps on desktop computers over a local network to play the same song at the same time. The key document is https://snarfed.org/synchronizing_mp3_playback, originally published 2002-12-29. In its _Solution_ section, it describes a similar technique for running a task at a specific time across devices with different clocks:
+Our project was similar to Sonos: it synchronized MP3 player apps on desktop computers over a local network to play the same song at the same time. The key document is _[Synchronizing mp3 playback](https://snarfed.org/synchronizing_mp3_playback)_, originally published 2002-12-29. In its _Solution_ section, it describes a similar technique for running a task at a specific time across devices with different clocks:
 
 > Seriously, though, there’s only one trick to p4sync, and that is how it uses NTP. One host acts as the p4sync server. The other p4sync clients synchronize their system clocks to the server’s clock, using SNTP. When the server starts playing a song, it records the time, to the millisecond. The clients then retrieve that timestamp, calculate the difference between current time from that timestamp, and seek forward that far into the song.
 

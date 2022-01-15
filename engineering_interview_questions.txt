@@ -1,7 +1,7 @@
 14584
 Engineering interview questions
 
-I've done lots of technical software engineering interviews, over 800 or so, over the [course of my career](/resume). I can't claim I'm particularly good at them, but I've definitely racked up some experience. Here are some of my favorite questions. They're mostly open ended system design problems, not coding questions, which are a necessary evil at best. (Take home projects are often better!)
+I've done a _lot_ of technical software engineering interviewing over the [course of my career](/resume). I don't know if I'm particularly great at it, but I've definitely racked up some experience. Here are some of my favorite questions. They're mostly open ended system design problems, not coding questions, which are a necessary evil at best. (Take home projects are often better!)
 
 * [Distributed transaction](#distributed-transaction)
 * [Web search spell check](#web-search-spell-check)
@@ -23,6 +23,8 @@ The simple solution is to add parallel transfer log tables on each db that store
 1. Update A's transfer row and mark it complete.
 
 To recover, look for any rows in A that aren't marked complete, and roll forward.
+
+An alternative is to journal on the app server's disk, and use the contents of the journal to roll forward or back after failures. This is less elegant, but still definitely works, as long as you carefully and completely record all the initial state and changes to be applied.
 
 Some people will want to use locking. It's not entirely necessary, but if they get the lock ordering right so that they don't deadlock, ok.
 

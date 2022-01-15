@@ -479,6 +479,7 @@ Corollary:
 <!-- NCX next -->
 
 > Matlab has normalized the practice of storing array indices as floats starting at 1.0, which now that I am used to it makes me think why bathe or brush my teeth? Why not start doing meth? Why bother at all?
+<!-- NCXed -->
 
 \- Seamus Blackley
 
@@ -609,7 +610,7 @@ availability | downtime, per year | cost
 > Measuring programming by lines of code is like measuring aircraft building by weight.
 
 \- Bill Gates
-<!-- NCX next -->
+<!-- NCXed -->
 
 > Rules of Optimization:  
 > Rule 1: Don't do it.  
@@ -841,6 +842,7 @@ corollary:
 > The question of whether machines can think is about as relevant as the question of whether submarines can swim.
 
 \- Edsger Dijkstra
+<!-- NCXed -->
 
 > I love deadlines. I love the whooshing noise they make as they go by.
 
@@ -873,11 +875,11 @@ corollary:
 > Should array indices start at 0 or 1? My compromise of 0.5 was rejected without, I thought, proper consideration.
 
 [— Stan Kelly-Bootle](http://exple.tive.org/blarg/2013/10/22/citation-needed/)
+<!-- NCXed -->
 
 > Einstein argued that there must be simplified explanations of nature, because God is not capricious or arbitrary. No such faith comforts the software engineer.
 
 \- Fred Brooks
-
 <!-- NCX next -->
 
 > In computer science, we're privileged to run elbows with the giants on whose shoulders we stand.
@@ -946,6 +948,11 @@ The first step in fixing a broken program is getting it to fail repeatably.
 
 \- Linus Torvalds
 
+
+> computers think using etchings in poisoned sand and measure time using vibrating crystals so if you were looking for magic you found it
+
+[-@computerfact](https://twitter.com/computerfact/status/722931893256065024)
+<!-- NCX next -->
 
 <!--
 https://en.wikiquote.org/wiki/Computer_science
