@@ -14,9 +14,9 @@ I've done a _lot_ of technical software engineering interviewing over the [cours
 <a name="distributed-transaction"></a>
 ### Distributed transaction
 
-_Given two separate databases A and B with bank accounts on both, design a system that can transfer money from an account on A to another account on B. Assume that the dbs and any servers you add can die and restart at any time, and the dbs are the only durable storage. The system may be eventually consistent._
+_Given two separate databases A and B with bank accounts on both, design a system that can transfer money from an account on A to another account on B. Assume that the dbs and any servers you add can die and restart at any time. The system may be eventually consistent._
 
-The simple solution is to add parallel transfer log tables on each db that store the source and destination accounts, amount, and whether the local account has been updated. Algorithm:
+One simple solution is to add parallel transfer log tables on each db that store the source and destination accounts, amount, and whether the local account has been updated. Algorithm:
 
 1. In a db transaction on A, insert a new transfer row and update A's account balance.
 1. In a db transaction on B, insert a new transfer row *including A's transfer row primary key* and update B's account balance.
@@ -24,9 +24,9 @@ The simple solution is to add parallel transfer log tables on each db that store
 
 To recover, look for any rows in A that aren't marked complete, and roll forward.
 
-An alternative is to journal on the app server's disk, and use the contents of the journal to roll forward or back after failures. This is less elegant, but still definitely works, as long as you carefully and completely record all the initial state and changes to be applied.
+The other simple solution is to journal on the app server's disk, and use the contents of the journal to roll forward or back after failures. This is less elegant, but still definitely works, as long as you carefully and completely record all the initial state and changes to be applied.
 
-Some people will want to use locking. It's not entirely necessary, but if they get the lock ordering right so that they don't deadlock, ok.
+Some people will want to use locking. It's not necessary or sufficient, but if they get the lock ordering right so that they don't deadlock, ok.
 
 Some people will propose two-phase commit. This is harder, and not many people really understand and can describe the 2PC algorithm, but if they can get it right, using only the two dbs as durable storage, then ok.
 
