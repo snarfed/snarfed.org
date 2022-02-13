@@ -13,7 +13,7 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
 * [Install Karabiner Elements.](https://karabiner-elements.pqrs.org/)
 * [Install 1Password](https://1password.com/) and its [browser extension](https://1password.com/downloads/mac/#browsers).
 * [Install Homebrew.](https://brew.sh/)
-* `brew install awscli azure-cli bash colordiff coreutils ffmpeg git gnupg go google-cloud-sdk httpd imagemagick jq librsvg mpg123 node openjdk openssl pandoc php pinentry-mac pstree pwgen python@3.7 python@3.8 rename telnet universal-ctags youtube-dl wdiff wget wp-cli`
+* `brew install awscli azure-cli bash blueutil colordiff coreutils ffmpeg git gnupg go google-cloud-sdk httpd imagemagick jq librsvg mpg123 node openjdk openssl pandoc php pinentry-mac pstree pwgen python@3.7 python@3.8 rename telnet universal-ctags youtube-dl wdiff wget wp-cli`
 * `brew install --cask emacs hammerspoon`
 * If you need Java 8 ([eg for databricks-connect](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect#code-try-0)):
   * `brew install --cask homebrew/cask-versions/temurin8`
@@ -51,6 +51,7 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
 * Install the _[Disable Automatic Gain Control](https://chrome.google.com/webstore/detail/disable-automatic-gain-co/clpapnmmlmecieknddelobgikompchkk)_ Chrome extension.
 * [Install and configure Logitech Camera Settings.](https://support.logi.com/hc/en-us/articles/360049055854)
 * Pair Bluetooth devices (keyboard, headphones, etc.)
+* Copy `~/bin/disconnect_goldtouch_keyboard.sh` to `Applications/disconnect_goldtouch_keyboard.app/Contents/MacOS/disconnect_goldtouch_keyboard`, find it in Finder, and put it in the doc. [Background.](https://stackoverflow.com/a/281389/186123)
 * `mkdir -p ~/src; git clone snarfed/dotfiles; git clone snarfed/misc`
 * `cd; echo .cshrc .emacs .git_excludes .gitconfig .hgrc .inputrc .pypirc .python .sqliterc .subversion .wgetrc | xargs -n 1 -I %% ln -s src/dotfiles/%%`
 * `mkdir -p ~/.hammerspoon; cd ~/.hammerspoon; ln -s ~/src/dotfiles/hammerspoon.lua init.lua`

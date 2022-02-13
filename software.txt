@@ -9,39 +9,28 @@ My open source software [projects](#projects), [scripts](#scripts), and [patches
 <a name="projects"></a>
 ### Projects
 
-* [Bridgy](https://brid.gy/): Got a web site? Post links to your site on social networks? Wish comments and likes showed up on your site? Bridgy copies them back for you. Part of the [IndieWeb](https://indieweb.org/) ecosystem.
+* [Bridgy](https://brid.gy/) connects your web site to social media. Likes, retweets, mentions, cross-posting, and more. Part of the [IndieWeb](https://indieweb.org/) ecosystem.
 
-* [Bridgy Fed](https://fed.brid.gy/): Bridgy, for federated social networks! Lets you reply, like, and repost on <a href="https://joinmastodon.org/">Mastodon</a> and <a href="https://project.hubzilla.org/">Hubzilla</a> from your [IndieWeb](https://indieweb.org/) site, and vice versa.
+* [Bridgy Fed](https://fed.brid.gy/) connects your web site to federated social networks natively, via ActivityPub. Lets you reply, like, and repost on <a href="https://joinmastodon.org/">Mastodon</a> and <a href="https://project.hubzilla.org/">Hubzilla</a> from your [IndieWeb](https://indieweb.org/) site, and vice versa.
 
-* [granary](https://github.com/snarfed/granary) is a library and REST API that read, writes, and converts Facebook, Twitter, and Instagram data to [ActivityStreams](http://activitystrea.ms), [microformats2](http://microformats.org/wiki/microformats2) HTML and JSON, [Atom](http://atomenabled.org/), RSS, XML, and more.
+* [granary](https://github.com/snarfed/granary): the social web translator. Fetches and converts data between social networks, HTML and JSON with [microformats2](http://microformats.org/wiki/microformats2), [ActivityStreams](http://activitystrea.ms/), [Atom](https://tools.ietf.org/html/rfc4287), [RSS](http://www.rssboard.org/rss-specification), [JSON Feed](https://jsonfeed.org/), and more.
 
-* [Indie Map](http://www.indiemap.org/) is a public
-[IndieWeb](https://indieweb.org/) social graph and dataset, based on a
-complete crawl of 2300 of the most active IndieWeb sites.
+* [Indie Map](http://www.indiemap.org/) is a public [IndieWeb](https://indieweb.org/) social graph and dataset, based on a complete crawl of 2300 of the most active IndieWeb sites.
 
-* [huffduff-video](http://huffduff-video.snarfed.org/) lets you send
-[Huffduffer](http://huffduffer.com/) the audio from videos on YouTube, Vimeo,
-[and more](http://rg3.github.io/youtube-dl/supportedsites.html).
+* [huffduff-video](http://huffduff-video.snarfed.org/) lets you send [Huffduffer](http://huffduffer.com/) the audio from videos on YouTube, Vimeo, [and more](http://rg3.github.io/youtube-dl/supportedsites.html).
 
 * [flask-gae-static](https://github.com/snarfed/flask-gae-static) is a [Flask](https://flask.palletsprojects.com/) extension for [Google App Engine](https://cloud.google.com/appengine/) that serves static file handlers from [`app.yaml` files](https://cloud.google.com/appengine/docs/standard/python3/config/appref).
 
 * [wordpress-micropub](https://github.com/indieweb/wordpress-micropub) is a
 [Micropub](https://indieweb.org/micropub) server plugin for WordPress.
 
-* [Baffle](https://baffle.tech/) lets you use [Microsub](https://indieweb.org/Microsub-spec) client apps with traditional feed readers like [NewsBlur](https://www.newsblur.com/) and [Feedly](https://feedly.com/).
+* [Baffle](https://github.com/snarfed/baffle) (now decommissioned) used to let you use [Microsub](https://indieweb.org/Microsub-spec) client apps with traditional feed readers like [NewsBlur](https://www.newsblur.com/) and [Feedly](https://feedly.com/).
 
-* [OwnYourResponses](https://github.com/snarfed/ownyourresponses) is
-[PESOS](https://indieweb.org/PESOS) as a service for likes, comments,
-reshares, etc. on social networks.
+* [OwnYourResponses](https://github.com/snarfed/ownyourresponses) is [PESOS](https://indieweb.org/PESOS) as a service for likes, comments, reshares, etc. on social networks.
 
-* [OwnYourCheckin](https://github.com/snarfed/ownyourcheckin) is
-[PESOS](https://indieweb.org/PESOS) as a service for Facebook checkins.
+* [OwnYourCheckin](https://github.com/snarfed/ownyourcheckin) is [PESOS](https://indieweb.org/PESOS) as a service for Facebook checkins.
 
-* [IndieWeb Press This bookmarklets for WordPress](/indieweb-press-this-bookmarklets-for-wordpress)
-let you quickly [reply](https://indieweb.org/reply),
-[like](https://indieweb.org/like), [repost](https://indieweb.org/repost),
-and [RSVP](https://indieweb.org/rsvp) to [IndieWeb](https://indieweb.org/)
-posts and events.
+* [IndieWeb Press This bookmarklets for WordPress](/indieweb-press-this-bookmarklets-for-wordpress) let you quickly [reply](https://indieweb.org/reply), [like](https://indieweb.org/like), [repost](https://indieweb.org/repost), and [RSVP](https://indieweb.org/rsvp) to [IndieWeb](https://indieweb.org/) posts and events.
 
 * [oauth-dropins](https://github.com/snarfed/oauth-dropins) is a collection of
 drop-in [OAuth](http://oauth.net/) client flows in Python

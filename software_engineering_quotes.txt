@@ -474,7 +474,7 @@ Corollary:
 > Don't solve a problem just because you can imagine it. Wait until there is a problem, then go after it. If you over-anticipate, you will design freedom out of the system.
 
 \- Stewart Brand
-<!-- NCX next -->
+<!-- NCXed -->
 
 > Matlab has normalized the practice of storing array indices as floats starting at 1.0, which now that I am used to it makes me think why bathe or brush my teeth? Why not start doing meth? Why bother at all?
 <!-- NCXed -->
@@ -878,7 +878,7 @@ corollary:
 > Einstein argued that there must be simplified explanations of nature, because God is not capricious or arbitrary. No such faith comforts the software engineer.
 
 \- Fred Brooks
-<!-- NCX next -->
+<!-- NCXed -->
 
 > In computer science, we're privileged to run elbows with the giants on whose shoulders we stand.
 
