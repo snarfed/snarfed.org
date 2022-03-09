@@ -383,8 +383,8 @@ Hamming
 
 > There is an old network saying: Bandwidth problems can be cured with money. Latency problems are harder because the speed of light is fixed. You can’t bribe God.
 
-\- Unknown
-<!-- NCX next -->
+\- [David Clark](https://groups.csail.mit.edu/ana/People/Clark.html)
+<!-- NCXed -->
 
 > Peres's Law: If a problem has no solution, it may not be a problem, but a fact; not to be solved, but to be coped with over time.
 
@@ -603,7 +603,7 @@ availability | downtime, per year | cost
 > The trouble with programmers is that you can never tell what a programmer is doing until it’s too late.
 
 \- Seymour Cray
-<!-- NCX next -->
+<!-- NCXed -->
 
 > Measuring programming by lines of code is like measuring aircraft building by weight.
 
@@ -767,7 +767,7 @@ corollary:
 
 > Manual until it hurts.
 
-\- Ryan, re automation
+\- Me, re automation
 
 > Software is not an academic discipline, not a liberal art. It’s a craft. And the only way to learn craftsmanship is to apprentice.
 
@@ -960,7 +960,7 @@ The first step in fixing a broken program is getting it to fail repeatably.
 > If it hurts, do it more often.
 
 \– Unknown; [popularized by Martin Fowler et al](https://martinfowler.com/bliki/FrequencyReducesDifficulty.html)
-<!-- NCX next -->
+<!-- NCXed -->
 
 <!--
 https://en.wikiquote.org/wiki/Computer_science
