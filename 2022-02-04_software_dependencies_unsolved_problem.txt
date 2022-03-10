@@ -25,13 +25,13 @@ The dominant form of code reuse now isn't OS distributions or web APIs, though. 
 
 ### npm install everything
 
+As an industry, we've jumped into this wholeheartedly. [You've probably seen run-of-the-mill web applications with hundreds of direct dependencies](https://blog.tidelift.com/dependency-management-and-your-software-health), thousands if you include the [transitive closure](https://en.wikipedia.org/wiki/Transitive_dependency#Computer_programs) of indirect dependencies (which you should). It may feel like a lot, but it works, right? All that glorious code reuse, isn't that the dream?
+
 <p class="left third" style="text-align: center">
  <a href="https://xkcd.com/2347/">
   <img src="/xkcd_dependency.png"/>
   <em>Randall Munroe / XKCD</em>
 </a></p>
-
-As an industry, we've jumped into this wholeheartedly. [You've probably seen run-of-the-mill web applications with hundreds of direct dependencies](https://blog.tidelift.com/dependency-management-and-your-software-health), thousands if you include the [transitive closure](https://en.wikipedia.org/wiki/Transitive_dependency#Computer_programs) of indirect dependencies (which you should). It may feel like a lot, but it works, right? All that glorious code reuse, isn't that the dream?
 
 In large part, yes. There really is a vast ecosystem of reusable code now, in dozens of languages, easily discoverable, often mature enough to use in production applications. Even docs and licenses are common and standardized. So yes, this is the dream!
 
@@ -45,12 +45,12 @@ So, we upgrade. We regularly check each dependency for new releases, read the ch
 
 #### This is fine
 
+[Who am I kidding?](https://research.swtch.com/deps) No we don't. We have thousands of dependencies, and anyway, we have real work to do. We put off upgrading as long as possible, until the the bugs become intolerable and we're embarrassed to tell recruiting candidates and our CISO is breathing down our neck about a vulnerability. Then we upgrade everything all at once, fumble through fixing the breakages we notice, dutifully poke at the site on staging, and when it seems ok, throw it over the wall to production and get back to "real work."
+
 <p class="left half" style="text-align: center">
   <img class="shadow" src="/ostrich_head_sand.webp"/>
   <a href="https://pixabay.com/users/joojoo41-1135596/"><em>Vicki Nunn</em></a>
 </p>
-
-[Who am I kidding?](https://research.swtch.com/deps) No we don't. We have thousands of dependencies, and anyway, we have real work to do. We put off upgrading as long as possible, until the the bugs become intolerable and we're embarrassed to tell recruiting candidates and our CISO is breathing down our neck about a vulnerability. Then we upgrade everything all at once, fumble through fixing the breakages we notice, dutifully poke at the site on staging, and when it seems ok, throw it over the wall to production and get back to "real work."
 
 We did this for a while - many of us still do - bu it's not great. The new hotness is to apply the agile maxims of continuous integration and _[if it hurts, do it more often](https://martinfowler.com/bliki/FrequencyReducesDifficulty.html)_ and [upgrade more frequently](https://depfu.com/blog/updating-dependencies-sucks). If you upgrade each new dependency release as it happens, in isolation, it's easier to identify and fix breakages. You don't have to guess which upgrade broke you; there's only one suspect.
 
