@@ -1,9 +1,15 @@
 45963
 Software dependencies are an unsolved problem
 
-We live in a golden age of software reuse. We've never before had such a wealth of freely available code, in so many languages, this easy to find and install.
+<p class="right half" style="text-align: center">
+ <a href="https://www.theguardian.com/sport/2016/mar/27/cambridge-beat-oxford-win-162-boat-race">
+  <img class="shadow" src="/sinking_rowboat.webp"/>
+  <em>Matthew Childs / Reuters</em>
+</a></p>
 
-And yet, we're drowning. We slap together rickety rowboats and toss them out on PyPI Ocean and npm Sea, then act surprised when the changes flood in. We ignore the flood as long as we can, then patch the holes with duct tape and bilge pumps. We [trade tips and techniques](https://softwareengineering.stackexchange.com/questions/340705/when-should-dependencies-be-updated) as if they can hold back the tide. They cannot.
+We live in a golden age of software reuse. We've never before had such a wealth of freely available code, in so many languages, so easy to find and install.
+
+And yet, we're drowning. We slap together rickety rowboats and toss them out on PyPI Ocean and npm Sea, then act surprised when the changes flood in. We ignore the flood as long as we can, then patch the holes with [duct tape and bilge pumps](https://softwareengineering.stackexchange.com/questions/340705/when-should-dependencies-be-updated) as if they can hold back the tide. They cannot.
 
 It's a wonderful, horrible problem, and I don't know what to do about it.
 
@@ -19,49 +25,72 @@ The dominant form of code reuse now isn't OS distributions or web APIs, though. 
 
 ### npm install everything
 
-As an industry, we've jumped into this wholeheartedly. [You've probably seen run-of-the-mill web applications with hundreds of direct dependencies](https://blog.tidelift.com/dependency-management-and-your-software-health), thousands if you add indirect dependencies in the [transitive closure](https://en.wikipedia.org/wiki/Transitive_dependency#Computer_programs) (which you shoould). It may feel like a lot, but it works, right? All that glorious code reuse, isn't that the dream?
+<p class="left third" style="text-align: center">
+ <a href="https://xkcd.com/2347/">
+  <img src="/xkcd_dependency.png"/>
+  <em>Randall Munroe / XKCD</em>
+</a></p>
 
-In large part, yes. There really is a vast ecosystem of reusable code now, in dozens of languages, easily discoverable, often mature enough to use in production applications. Even docs and licenses are common and standardized. So yes, this is the dream. However, it's also a nightmare: how to upgrade without breaking your application.
+As an industry, we've jumped into this wholeheartedly. [You've probably seen run-of-the-mill web applications with hundreds of direct dependencies](https://blog.tidelift.com/dependency-management-and-your-software-health), thousands if you include the [transitive closure](https://en.wikipedia.org/wiki/Transitive_dependency#Computer_programs) of indirect dependencies (which you should). It may feel like a lot, but it works, right? All that glorious code reuse, isn't that the dream?
 
-By default, when you install a package, package managers generally install the latest available version. This is what you want: the latest features and compatibility, all the bug fixes, etc. Code changes over time, though, and those changes often aren't backward compatible. If you start using `foo-util` 1.0, you'll likely need to adapt your code to 2.0 when it comes around.
+In large part, yes. There really is a vast ecosystem of reusable code now, in dozens of languages, easily discoverable, often mature enough to use in production applications. Even docs and licenses are common and standardized. So yes, this is the dream!
 
-That may be ok, but if you're always installing the latest versions, 2.0 can appear and break you at any time. Fortunately, we know how to prevent this: pin, or lock, versions. If your code currently works with 1.0, put exactly that version in your manifest file, eg `foo-util==1.0` in `requirements.txt`. This tells pip to always install 1.0. Most package managers support this, [some even](https://bundler.io/rationale.html#checking-your-code-into-version-control) [do it](https://yarnpkg.com/features/zero-installs#how-does-yarn-impact-a-projects-stability) [automatically](https://python-poetry.org/docs/basic-usage/#installing-without-poetrylock). Problem solved?
+There's also a nightmare, though: how to upgrade without breaking your application. Most package managers default to installing the latest versions of packages. In some ways, this is what you want: the newest features, bug fixes, etc. Code changes over time, though, and those changes often aren't backward compatible. If you start using `foo` 1.0, you'll likely need to adapt your code to 2.0 when it comes around.
 
-...kind of. We do now know that we'll always get 1.0, but 2.0 happens for a reason. [Features are added, bugs are fixed, security holes are patched.](https://depfu.com/blog/2016/12/01/why-you-should-keep-your-dependencies-up-to-date) Those are all good. We _want_ those things.
+That may be ok, but if you're always installing the latest versions, 2.0 can appear and break you at any time. Fortunately, we know how to prevent this: pin versions. If you develop against version 1.0, put exactly that version in your requirements or lock file, eg `foo==1.0` in `requirements.txt`. This tells pip to always install 1.0. Most package managers support this, [some even](https://bundler.io/rationale.html#checking-your-code-into-version-control) [do it](https://yarnpkg.com/features/zero-installs#how-does-yarn-impact-a-projects-stability) [automatically](https://python-poetry.org/docs/basic-usage/#installing-without-poetrylock).
+
+We now know that we'll always get 1.0, which helps, but 2.0 was released for a reason. [Features were added, bugs fixed, security holes patched.](https://depfu.com/blog/2016/12/01/why-you-should-keep-your-dependencies-up-to-date) Those are all good. We _want_ those things.
 
 So, we upgrade. We regularly check each dependency for new releases, read the changelogs and maybe even the diffs, upgrade each one in isolation, thoroughly test our application, and then carefully deploy and watch for any problems.
 
 #### This is fine
 
-[Who am I kidding?](https://research.swtch.com/deps) No we don't. We have thousands of dependencies total, direct and indirect, and anyway, we have real work to do. We put off upgrading as long as possible, until the the bugs become intolerable and we're embarrassed to tell recruiting candidates and our CISO is breathing down our neck about the latest vulnerability. Then we upgrade everything all at once, fumble through fixing the breakages we notice, dutifully poke at the site on staging, and when it seems ok, throw it over the wall to production and get back to "real work."
+<p class="left half" style="text-align: center">
+  <img class="shadow" src="/ostrich_head_sand.webp"/>
+  <a href="https://pixabay.com/users/joojoo41-1135596/"><em>Vicki Nunn</em></a>
+</p>
 
-This obviously isn't great. Fortunately, the industry has figured out a better way. The accepted wisdom is to follow the agile maxims of continuous integration and _[if it hurts, do it more often](https://martinfowler.com/bliki/FrequencyReducesDifficulty.html)_, and upgrade more frequently. If you upgrade each new dependency release as it happens, in isolation, it's easier to identify and fix breakages. You don't have to guess which upgrade broke you; there's only one suspect.
+[Who am I kidding?](https://research.swtch.com/deps) No we don't. We have thousands of dependencies, and anyway, we have real work to do. We put off upgrading as long as possible, until the the bugs become intolerable and we're embarrassed to tell recruiting candidates and our CISO is breathing down our neck about a vulnerability. Then we upgrade everything all at once, fumble through fixing the breakages we notice, dutifully poke at the site on staging, and when it seems ok, throw it over the wall to production and get back to "real work."
 
-Plus, doing anything often enough motivates lazy engineers to automate, and the industry is always happy to oblige with new tools that we might pay for. [GitHub's Dependabot](https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/about-dependabot-version-updates) is probably the best known example, along with [Renovate](https://www.whitesourcesoftware.com/free-developer-tools/renovate/), [Depfu](https://depfu.com/), [Snyk](https://snyk.io/), and others. These tools parse your dependency manifests, watch new releases, and automatically send PRs that update pinned versions.
+We did this for a while - many of us still do - bu it's not great. The new hotness is to apply the agile maxims of continuous integration and _[if it hurts, do it more often](https://martinfowler.com/bliki/FrequencyReducesDifficulty.html)_ and [upgrade more frequently](https://depfu.com/blog/updating-dependencies-sucks). If you upgrade each new dependency release as it happens, in isolation, it's easier to identify and fix breakages. You don't have to guess which upgrade broke you; there's only one suspect.
+
+Plus, when lazy engineers have to do anything often enough, they're motivated to automate, and the industry is happy to oblige with new tools. [GitHub's Dependabot](https://docs.github.com/en/code-security/supply-chain-security/keeping-your-dependencies-updated-automatically/about-dependabot-version-updates) is probably the best known example, along with [Renovate](https://www.whitesourcesoftware.com/free-developer-tools/renovate/), [Depfu](https://depfu.com/), [Snyk](https://snyk.io/), and others. These tools parse your requirements files, watch for new releases, and automatically send PRs that upgrade them.
 
 ### Millennium Edition
 
-This is great, but it's only one side of the coin. The other side is compatibility. How do we know which upgrades need us to update our own code?
+This is great, but it's only one side of the coin. The other side is compatibility. How do we know when we need to change our own code to handle a dependency upgrade?
 
-[Some software versioning schemes](https://en.wikipedia.org/wiki/Software_versioning) try to tell us. The standard `MAJOR.MINOR.PATCH` format was popularized by commercial software, whiich traditionally incremented major versions on a schedule, or based on organizational roadmaps, or whenever they needed to sell more units. Open source followed this to a degree, incrementing versions whenever new changes seemed big enough.
+[Some versioning schemes](https://en.wikipedia.org/wiki/Software_versioning) try to tell us. The standard `MAJOR.MINOR.PATCH` format was popularized by commercial software, whiich incremented major versions on a schedule, or based on organizational roadmaps, or whenever they needed to sell more units. Open source originally followed this, incrementing versions whenever they made enough changes.
 
-Versioning systems born after the dependency flood, on the other hand, tackled the compatibility question head on. [SemVer](https://semver.org/) requires updating the major version whenever there's a backward incompatible change. [CalVer](https://calver.org/) derives versions from calendar dates for easier comparison. More exotic systems [combine both](https://avatao.com/blog-semancat-versioning/), [or forbid breaking changes altogether](https://www.honeybadger.io/blog/golang-go-package-management/), [or turn versions](https://en.wikipedia.org/wiki/Software_versioning#TeX) [into a joke](https://0ver.org/), or give up entirely and abdicate to Linux distributions [or content-addressable hashes](https://nixos.org/).
+<p class="right half" style="text-align: center">
+ <a href="https://allaboutwindowsphone.com/features/item/23782_Its_obvious_but_Dont_use_WDRT_.php">
+  <img src="/lumia_software_version_numbers.png"/>
+  <em>All About Windows Phone</em>
+</a></p>
 
-This all helps, but none of it is a guarantee. It's not always easy to know which versioning scheme a given dependency follows, if any. Projects occasionally switch from one scheme to another. Backward compatibility can be subtle; it's easy to introduce incompatible changes in a minor or patch version accidentally. Or on the other hand, a dependency may carefully follow semver and bump the major version for an incompatible change, but it's in a feature you don't use. Or you use a part that the developers consider private and not part of the official API, and therefore not subject to compatibility versioning guarantees at all. Oops.
+More recent versioning schemes, on the other hand, tackled the compatibility question head on. [SemVer](https://semver.org/) requires updating the major version whenever there's a backward incompatible change. [CalVer](https://calver.org/) derives versions from calendar dates for easier comparison. More exotic systems [combine both](https://avatao.com/blog-semancat-versioning/), [or forbid breaking changes altogether](https://www.honeybadger.io/blog/golang-go-package-management/), [or turn versions](https://en.wikipedia.org/wiki/Software_versioning#TeX) [into a joke](https://0ver.org/), or give up entirely and abdicate to Linux distributions [or content-addressable hashes](https://nixos.org/).
+
+These can still help, sometimes, but they're not guarantees. It's not always easy to know which versioning scheme a given package follows, if any. Projects occasionally switch from one scheme to another. Backward compatibility can be subtle; it's easy to introduce incompatible changes in a minor or patch version accidentally. Other times, a project may carefully follow semver and bump the major version for a breaking change, but it's in a feature you don't use. Or you use something the developers consider private and not part of the official API, and therefore not subject to compatibility versioning guarantees at all. Oops.
 
 ### It worked on my machine
 
-We have accepted wisdom for all this too: automated testing. We floss our teeth, we change the oil in our cars ([for now](https://evadoption.com/)), and we write tests and run them in CI. Tests are aimed primarily at our own code, but they can also help us upgrade dependencies. If we upgrade a dependency, and the tests all pass, it's more likely to be safe.
+We have accepted wisdom for handling this: automated testing. We floss our teeth, we change the oil in our cars ([for now](https://evadoption.com/)), and we write tests and run them in CI. Tests are aimed primarily at our own code, but they can also help here. If we upgrade a dependency, and the tests all pass, it's likely to be safe.
 
-Of course, in reality, no one has perfect test coverage, so we combine tests with other safeguard: human code review and manual QA. After a developer finishes a PR, they send it to another developer, who reads it and determines if anything is wrong or missing. Similarly, developers usually try out their changes manually to make sure they work in practice. [Each one of these layers will only catch a subset of issues](https://en.wikipedia.org/wiki/Defence_in_depth), but together they add up.
+Of course, in reality, no one has perfect test coverage, so we combine tests with other safeguards like human code review and manual QA. After a developer finishes a PR, they send it to another developer, who reads it and determines if anything is wrong or missing. Similarly, developers often try out their changes manually to make sure they work in practice. [Each is a layer that catches some issues, not all,](https://en.wikipedia.org/wiki/Defence_in_depth) but together they add up.
 
-Dependencies are different, though. You didn't write them, you don't know their codebases, and they're orders of magnitude bigger, cumulatively, than your app. You may occasionally dive into their source to debug issues, or to check out specific changes, but those are exceptions. You're not going to read the diffs for every dependency upgrade, and even if you did, it would take extraordinary effort to understand them all.
+Dependencies are different than your own code, though. You didn't write them, you don't know their codebases, and they're orders of magnitude bigger, cumulatively, than your app. You may occasionally dive into their source to debug an issue, or to see how something works, but not often. You're not going to read the source diffs for most dependency upgrades, if any at all, and even if you did, it would take extraordinary effort to understand them.
 
-Manual testing isn't much better. When you deploy your own changes, you generally know how to check that they're working. When a direct dependency changes, you may know roughly where it's being used, but only roughly, and it's not always easy to know how a new release affects you. When it's an indirect dependency, you may not even know at all.
+<p class="left half" style="text-align: center">
+ <a href="https://simpsons.fandom.com/wiki/Cupcake_Kid">
+  <img class="shadow" src="/bart_simpson_cupcake_shock.jpg"/>
+  <em>Fox / The Simpsons</em>
+</a></p>
 
-If we waved a magic wand and gave ourselves perfect test coverage, would that do the trick? Maybe. By definition, our tests would exercise all code paths, including the ones that use each dependency. That's quite a magic wand though. Automated testing has grown massively over the last couple generations and replaced wide swathes of human QA, but areas like UI and configuration and unique data patterns still stubbornly resist testing.
+Manual testing isn't much better. When you deploy your own changes, you generally know how to check that they're working. When a direct dependency changes, you may know roughly where it's being used, but only roughly, and it's not always easy to know how a new release will affect you. When it's an indirect dependency, you may not know at all.
 
-So perfect test coverage is a pipe dream, dependency changes are uniquely difficult to review or test manually, and the ease of modern code reuse has swelled a trickle of upgrades into a flood. We truly are drowning.
+If we waved a magic wand and gave ourselves perfect test coverage, would that do the trick? Maybe. By definition, our tests would exercise all code paths, including dependencies. That's quite a magic wand though. Automated testing has grown massively over the last couple generations and replaced wide swathes of human QA, but UI and configuration and data (among others) still stubbornly resist testing.
+
+So, perfect test coverage is a pipe dream, dependency changes are difficult to review or test manually, and the ease of modern code reuse has swelled a trickle of upgrades into a flood. We're drowning.
 
 ### These 10 weird tricks
 
@@ -72,29 +101,35 @@ To recap, the current best practices seem to be:
 1. Use a tool to generate upgrade PRs
 1. When you get one:
   1. If it's a major version change, check the release notes for breaking changes. Otherwise, roll the dice, hope you feel lucky
-  1. Update your code...?
+  1. Update your code...maybe?
   1. Read the source diffs for the new ver...no you won't, who am I kidding
   1. If your tests fail, find and fix the breakages
   1. Guess what to poke at manually
   1. Repeat until everything works
-  1. Merge the change
+  1. Merge the upgrade
 1. Deploy early and often
 1. Monitor for breakages, fix them as soon as you (read: your users) notice
 
-Upgrade broke your app? Tough luck; debug it and fix it. Calver or other non-semver? You're on your own. Interested in a new feature? Whoa there, we're not actually trying to improve anything here, just keep our heads above water. Too many upgrades to handle? Nonsense, this is the future!
+Upgrade broke your app in production? Tough luck; debug it and fix it. Calver or other non-semver? You're on your own. Interested in a new feature? Whoa there, we're not actually trying to improve anything here, just keep our heads above water. Too many upgrades to handle? Nonsense, this is the future!
 
 More importantly, remember those thousands of dependencies? Release schedules vary, but even if we conservatively assume just a few releases per year on average, add those up and you're looking at a _dozen dependency upgrades every business day_. I recently pinned all dependencies and enabled weekly Dependabot PRs on a [handful](https://brid.gy/) [of](https://oauth-dropins.appspot.com/) [side](https://granary.io/) [projects](https://fed.brid.gy/), and I now get 10-20 PRs in my inbox every Monday. Ugh.
 
-Apart from burying your head, are there any alternatives? Well...kind of. Many older big tech companies - Google, Microsoft, IBM, Apple - famously avoided external dependencies altogether. They used a few, like Linux and SQLite, but not many, and often [vendored them into their internal codebases](https://stackoverflow.com/questions/26217488/what-is-vendoring) and treated them similarly to internal code. This is pejoratively referred to as [NIH syndrome](https://en.wikipedia.org/wiki/Not_invented_here), for good reason, but it does avoid many of these problems.
+<p class="right half" style="text-align: center">
+ <a href="https://bonkersworld.net/organizational-charts">
+  <img src="/org_charts_microsoft.png"/>
+  <em>Manu Cornet</em>
+</a></p>
+
+Apart from burying your head in the sand, are there any alternatives? Well...kind of. Many older big tech companies - Google, Microsoft, IBM, Apple - famously avoided external dependencies altogether. They used a few, like Linux and SQLite, but not many, and often [vendored them into their internal codebases](https://stackoverflow.com/questions/26217488/what-is-vendoring) and treated them similarly to internal code. This is pejoratively referred to as [NIH syndrome](https://en.wikipedia.org/wiki/Not_invented_here), for good reason, but it does avoid the upgrade flood problem.
 
 Naturally, this means that big companies develop more of their own code instead, which they then reuse across teams internally. Those teams eventually end up with the same problem: how to upgrade their internal dependencies. The difference is, as centralized organizations, they have more tools at their disposal to drive and manage those upgrades. They can enforce standardized versioning, upgrade codebases in bulk, monitor tests across projects, etc.
 
 For the rest of us, though, this isn't really feasible. A big company can afford to build everything in house when that house has tens of thousands of engineers, but the rest of us don't have that luxury. Reusing external code is a huge advantage, and when everyone does it, it's also a competitive necessity.
 
-Interestingly, platforms like GitHub now have enough scale to play some of the same big company tricks. [Dependabot compatibility scores](https://docs.github.com/en/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/about-dependabot-security-updates#about-compatibility-scores) are a clever example: count the repos with CI runs that passed or failed on a given upgrade, then include that fraction as a warning label on those upgrade PRs. This still feels like duct tape though; new and improved, maybe, but sitll fundamentally inadequate.
+Interestingly, platforms like GitHub now have enough scale to play some of the same big company tricks. [Dependabot compatibility scores](https://docs.github.com/en/code-security/supply-chain-security/managing-vulnerabilities-in-your-projects-dependencies/about-dependabot-security-updates#about-compatibility-scores) are a clever example: count the repos with CI runs that passed or failed on a given upgrade, then include that fraction as a warning label on those upgrade PRs. This still feels like duct tape though; new and improved, maybe, but still fundamentally inadequate.
 
 ### This is water
 
-So we're drowning, and I don't know what to do about it. [Many people agree](https://www.freecodecamp.org/news/code-dependencies-are-the-devil-35ed28b556d/), but they still seem surprisingly unconcerned. They have bigger problems, or they think Dependabot and friends will solve it, or they just can't be bothered. Security people may be sounding the alarm about [typosquatting](https://snyk.io/blog/typosquatting-attacks/) and [dependency confusion](https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610) and supply chain security, but that's a different conversation. The occasional Log4j cannonball blast now and then gets everyone's attention, but our rickety little rowboats all have thousands of dependency pinholes, and we're sinking just the same.
+So we're drowning, and I don't know what to do about it. [People agree](https://www.freecodecamp.org/news/code-dependencies-are-the-devil-35ed28b556d/), but they still seem surprisingly unconcerned. They have bigger problems, or they think Dependabot and friends will solve it, or they just can't be bothered. Security people are sounding alarms about [typosquatting](https://snyk.io/blog/typosquatting-attacks/) and [dependency confusion](https://medium.com/@alex.birsan/dependency-confusion-4a5d60fec610) and supply chain security, but that's a different conversation. The occasional Log4j cannonball blast now and then gets everyone's attention, but our rickety little rowboats all have thousands of dependency pinholes, and we're sinking just the same.
 
 If you're staying afloat somehow, please let me know, I'd love to check out your boat. In the meantime, pardon me, I have a fresh batch of Dependabot PRs in my inbox, and they're not going to review themselves.
