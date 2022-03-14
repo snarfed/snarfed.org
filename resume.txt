@@ -16,7 +16,7 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 
 #### [NCX](https://www.ncx.com/) (née SilviaTerra), 2021 - present
 
-_Data Engineering_
+_Head of Data_
 
 [More background.](/2021-05-31_new-job-hello-climate-tech) [We're hiring!](https://ncx.com/careers/)
 
@@ -60,7 +60,7 @@ Built and contributed to server and storage system, data model, synchronization 
 
 _Senior Staff Engineer_
 
-Co-founded [Google App Engine](https://cloud.google.com/appengine/), which eventually expanded into [Google Cloud](https://cloud.google.com/). Led engineering for the [datastore](https://cloud.google.com/datastore/), a large scale, [globally multi-homed](https://googleappengine.blogspot.com/2009/09/migration-to-better-datastore.html) [NoSQL](http://en.wikipedia.org/wiki/NoSQL) database that stores >1T rows, >1EB of data, and serves >3M[qps](http://en.wikipedia.org/wiki/Queries_per_second). <!-- (2005 - 2010) -->
+Co-founded [Google App Engine](https://cloud.google.com/appengine/), one of the first cloud [PaaS](https://en.wikipedia.org/wiki/Platform_as_a_service) platforms, which eventually hit >$1B run rate and led to [Google Cloud](https://cloud.google.com/). Led engineering for the [datastore](https://cloud.google.com/datastore/), a large scale, [globally multi-homed](https://googleappengine.blogspot.com/2009/09/migration-to-better-datastore.html) [NoSQL](http://en.wikipedia.org/wiki/NoSQL) database that stores >1T rows, >1EB of data, and serves >3M[qps](http://en.wikipedia.org/wiki/Queries_per_second). <!-- (2005 - 2010) -->
 
 Designed and built [company-wide ML infrastructure for personalization](https://googleblog.blogspot.com/2012/01/updating-our-privacy-policies-and-terms.html). <!-- Implemented a piece of it (in [Go](https://golang.org/)) that served 500kqps at peak. --> <!-- (2011 - 2013) -->
 
