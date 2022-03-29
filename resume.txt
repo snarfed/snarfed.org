@@ -1,7 +1,7 @@
 5428
 Resume
 
-Experienced engineering leader. 17+ years building and scaling backend infrastructure, data platforms and applications, and cross functional teams.
+Experienced engineering leader. 20+ years building and scaling backend infrastructure, data platforms and applications, and cross functional teams.
 
 <p class="quarter right">
  <a href="https://ncx.com/">
@@ -18,9 +18,10 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 
 _Head of Data_
 
+Leading a team of engineers and data scientist to build the data processing pipelines and machine learning models for [Basemap](https://ncx.com/basemap/), a detailed forest inventory of the entire continental US, and our carbon exchange marketplace.
+
 [More background.](/2021-05-31_new-job-hello-climate-tech) [We're hiring!](https://ncx.com/careers/)
 
-<br style="clear: both">
 <p class="quarter right">
  <a href="https://www.color.com/">
   <img src="/color_logo.png" /></a></p>
@@ -70,6 +71,24 @@ Spearheaded Google's [OpenID](https://openid.net/) support, including [Blogger](
 
 Co-founded Google's transaction processing and billing platform and led its storage engineering team. <!-- At the end of my tenure, it served >XXM customers, >XB transactions per day, and >XXkqps with 99.98% uptime. --> <!-- (2003 - 2006) -->
 
+<p class="sixth right">
+ <a href="https://www.ibm.com/">
+  <img src="/ibm_logo.png" /></a></p>
+
+[IBM Research Almaden](http://research.ibm.com/labs/almaden/), [Extreme Blue](https://www.ibm.com/employment/extremeblue/), 2001 - 2003, <em>Software Engineer</em>
+
+[LucasArts Entertainment](https://en.wikipedia.org/wiki/LucasArts), 2001, <em>Intern</em>
+
+[Webvan Group](https://en.wikipedia.org/wiki/Webvan), 2000, <em>Intern</em>
+
+[Electronic Arts](https://www.ea.com/), 1999, <em>QA Tester</em>
+
+MobileForce Technologies, 1998, <em>Intern</em>
+
+<!--
+Helped design and build a collaboration and visualization platform for molecular biologists. Also developed a parallel computing system for running molecular analyses and simulations on large server clusters.
+-->
+
 <hr />
 
 <p class="sixth right">
@@ -81,19 +100,6 @@ _MS Computer Science_
 _BS Computer Science, Mathematics minor_
 
 <!-- Coursework: networking, distributed systems, security, streaming algorithms, advanced databases, operating systems, C/C++, Java, graphics, discrete math, abstract algebra. -->
-
-<!---
-<p class="quarter right">
- <a href="https://www.ibm.com/">
-  <img src="/ibm_logo.png" /></a></p>
-
-[IBM Research Almaden](http://research.ibm.com/labs/almaden/), [Extreme Blue](https://www.ibm.com/employment/extremeblue/), engineer, 2002 - 2003  
-Helped design and build a collaboration and visualization platform for molecular biologists. Also developed a parallel computing system for running molecular analyses and simulations on large server clusters.
-[LucasArts Entertainment](https://en.wikipedia.org/wiki/LucasArts), engineering intern, 2001  
-[Webvan Group](https://en.wikipedia.org/wiki/Webvan), engineering intern, 2000  
-[Electronic Arts](https://www.ea.com/), QA Tester, 1999  
-MobileForce Technologies, engineering intern, 1998  
--->
 
 <hr />
 

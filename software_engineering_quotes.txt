@@ -355,19 +355,6 @@ Hamming
 [- Aaron Boodman](https://twitter.com/aboodman/status/11686231818646609934)
 <!-- NCXed -->
 
-> If you have a procedure with 10 parameters, you probably missed some.
-
-\- Alan Perlis
-
-> Optimization hinders evolution.
-
-\- Alan Perlis
-
-> Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't.
-
-\- Alan Perlis
-<!-- NCXed -->
-
 > To err is human; to manage error is system.
 
 \- Kevin Kelly
@@ -377,9 +364,51 @@ Hamming
 
 \- Dave Cheney
 
+> If you have a procedure with 10 parameters, you probably missed some.
+
+[- Alan Perlis](https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+
+> Optimization hinders evolution.
+
+[- Alan Perlis](https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+
+> Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't.
+
+[- Alan Perlis](https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+<!-- NCXed -->
+
 > A programming language is low level when its programs require attention to the irrelevant.
 
-\- Alan Perlis
+[- Alan Perlis](https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+
+> It is better to have 100 functions operate on one data structure than 10 functions on 10 data structures.
+
+[- Alan Perlis](https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+
+> Simplicity does not precede complexity, but follows it.
+
+[- Alan Perlis](https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+
+> The string is a stark data structure and everywhere it is passed there is much duplication of process. It is a perfect vehicle for hiding information.
+
+[- Alan Perlis](https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+<!-- NCX next -->
+
+> Bringing computers into the home won't change either one, but may revitalize the corner saloon.
+
+[- Alan Perlis](https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+
+> In computing, invariants are ephemeral.
+
+[- Alan Perlis](https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+
+> A year spent in artificial intelligence is enough to make one believe in God.
+
+[- Alan Perlis](https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+
+> Computer Science is embarrassed by the computer.
+
+[- Alan Perlis](https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
 
 > There is an old network saying: Bandwidth problems can be cured with money. Latency problems are harder because the speed of light is fixed. You can’t bribe God.
 
@@ -389,10 +418,6 @@ Hamming
 > Peres's Law: If a problem has no solution, it may not be a problem, but a fact; not to be solved, but to be coped with over time.
 
 \- Shimon Peres
-
-> One programmer's constant is another programmer's variable.
-
-\- Alan Perlis
 
 > Code is like humor. When you have to explain it, it’s bad.
 
@@ -457,7 +482,7 @@ Corollary:
 > 3. Make it fast.
 
 \- Kent Beck
-<!-- NCX next -->
+<!-- NCXed -->
 
 > Old technology fails frequently, but in a reliable way. New technology fails less often, but when it fails, it fails in an unexpectedly new way we are not prepared for.
 
