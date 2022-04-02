@@ -392,7 +392,7 @@ Hamming
 > The string is a stark data structure and everywhere it is passed there is much duplication of process. It is a perfect vehicle for hiding information.
 
 [- Alan Perlis](https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
-<!-- NCX next -->
+<!-- NCXed -->
 
 > Bringing computers into the home won't change either one, but may revitalize the corner saloon.
 
@@ -975,7 +975,7 @@ The first step in fixing a broken program is getting it to fail repeatably.
 > computers think using etchings in poisoned sand and measure time using vibrating crystals so if you were looking for magic you found it
 
 [-@computerfact](https://twitter.com/computerfact/status/722931893256065024)
-<!-- NCX next -->
+<!-- NCXed -->
 
 > A computer should never ask a question if it should be able to work out the answer.
 
