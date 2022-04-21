@@ -22,12 +22,12 @@ I had my own web site, and I posted to it on and off. After a while, I started [
 
 I knew how to code, and the social networks all had APIs, so I dove in. I'd followed the [federated social web](https://en.wikipedia.org/wiki/Distributed_social_network) movement for a while, so I knew about [OStatus](https://en.wikipedia.org/wiki/OStatus), the main open standard at the time. None of the big silos supported it, but I wondered how much of it I could implement through their APIs.
 
+A solid amount, as it turned out. Implementing all of the APIs _and_ OStatus would take a lot of work, [so I narrowed down the web site part to just WordPress](/2012-01-08_bridgy_launched), cranked out an MVP, [and launched it on Jan. 8, 2012](/2012-01-08_bridgy_launched). Not many other people used it, but I didn't mind. I wasn't trying to build a business or a movement, I was just [scratching my own itch](https://indieweb.org/scratch_your_own_itch).
+
 <p class="right half">
  <a href="https://indieweb.org/">
   <img src="indiewebcamp_logotype_big.png" /></a>
 </p>
-
-A solid amount, as it turned out. Implementing all of the APIs _and_ OStatus would take a lot of work, [so I narrowed down the web site part to just WordPress](/2012-01-08_bridgy_launched), cranked out an MVP, [and launched it on Jan. 8, 2012](/2012-01-08_bridgy_launched). Not many other people used it, but I didn't mind. I wasn't trying to build a business or a movement, I was just [scratching my own itch](https://indieweb.org/scratch_your_own_itch).
 
 I moved on to other things, but the WordPress part kept nagging at me. I knew I wanted an open standard, and I knew the main candidate was OStatus (and Salmon), but I was reluctant. It was complicated, most web servers didn't support it, and it was already slowing down in favor of [pump.io](http://pump.io/), the predecessor to [ActivityPub](https://activitypub.rocks/).
 
@@ -35,12 +35,12 @@ I searched around a bit, eventually stumbled upon the [IndieWeb](https://indiewe
 
 I [jumped into the IndieWeb chat](https://indieweb.org/discuss), started coding, and quickly added webmention support to Bridgy. [I launched the new version on Dec. 9, 2013](/2013-12-09_brid-gy-meet-webmentions), and the rest, as they say, is history.
 
+How does it feel, 10 years later? What have I learned? First, [as Avery](https://apenwarr.ca/log/20211229) [and DHH](https://world.hey.com/dhh/i-won-t-let-you-pay-me-for-my-open-source-d7cf4568) have described recently, it's been hugely rewarding to build a tool people want and give it away for free. I built Bridgy primarily for myself; I let other people use it because I believe in sharing, reuse, specialization, and open source.  [I'd made plenty of other small projects before](/software), but none saw any significant adoption, so I didn't expect Bridgy to be any different.
+
 <p class="left half">
  <a href="/2021-06-05_bridgy-stats-update-6">
   <img class="shadow" src="/bridgy_stats/2021/accounts_stacked_thumb.png" /></a>
 </p>
-
-How does it feel, 10 years later? What have I learned? First, [as Avery](https://apenwarr.ca/log/20211229) [and DHH](https://world.hey.com/dhh/i-won-t-let-you-pay-me-for-my-open-source-d7cf4568) have described recently, it's been hugely rewarding to build a tool people want and give it away for free. I built Bridgy primarily for myself; I let other people use it because I believe in sharing, reuse, specialization, and open source.  [I'd made plenty of other small projects before](/software), but none saw any significant adoption, so I didn't expect Bridgy to be any different.
 
 It grew slowly and steadily though, [through](/2013-12-23_bridgy-now-with-likes-and-retweets) [feature](/2014-03-25_bridgy-publish) [launches](/2014-05-13_webmentions-for-blogger-tumblr-and-wordpress-com) and [silo ups](/2019-10-22_mastodon-on-bridgy) [and downs](/2018-08-03_rip-facebook-for-bridgy) and [growth spikes](/2018-11-05_bridgy-traffic-bump) and [design](/2015-11-29_keep-bridgy-publish-dumb) [debates](/backfeed-without-code) and [plumbing](https://github.com/snarfed/bridgy/issues/578#issuecomment-376233546) [shifts](/2021-01-05_bridgy-browser-extension-for-instagram). Today, [it has more than 6,000 accounts, sent over 2M webmentions, and processed over 26M silo interactions](/2021-06-05_bridgy-stats-update-6). It's even been [studied by academic researchers](https://dissertation.jackjamieson.net/#x1-1100007.3)!
 
