@@ -18,7 +18,7 @@ if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').match
 
 _Head of Data_
 
-Leading a team of engineers and data scientist to build the data processing pipelines and machine learning models for [Basemap](https://ncx.com/basemap/), a detailed forest inventory of the entire continental US, and our carbon exchange marketplace.
+Leading a team of machine learning engineers and data scientists to build a [carbon exchange marketplace](https://ncx.com/ncx/) based on a [detailed forest inventory of the entire continental US](https://ncx.com/basemap/).
 
 [More background.](/2021-05-31_new-job-hello-climate-tech) [We're hiring!](https://ncx.com/careers/)
 
