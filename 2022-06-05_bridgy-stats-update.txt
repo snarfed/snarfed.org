@@ -1,0 +1,77 @@
+
+Bridgy stats update
+
+<style type="text/css">
+.half {
+    margin-bottom: 1em;
+}
+.half.right {
+    clear: both;
+    margin-left: 0px;
+    margin-right: -10px;
+}
+.half.left {
+    margin-right: 0px;
+}
+</style>
+
+<p class="right third">
+ <a href="https://brid.gy/">
+  <img src="/bridgy_logo.png" /></a></p>
+
+It's that time of year again...[Bridgy](https://brid.gy/) stats update! Top line numbers: 6471 accounts, 28M silo responses, 4.7M links, 2.3M webmentions sent, 99k posts published, 102k [blog posts processed](https://brid.gy/about#blogs), 16k [blog webmentions](https://brid.gy/about#blogs) received.
+
+<p class="right half">
+ <a href="/bridgy_stats/2022/accounts_stacked.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2022/accounts_stacked_thumb.png" /></a>
+</p>
+<p class="left half">
+ <a href="/bridgy_stats/2022/accounts.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2022/accounts_thumb.png" /></a></p>
+</p>
+<p class="right half">
+ <a href="/bridgy_stats/2022/publishes.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2022/publishes_thumb.png" /></a></p>
+</p>
+<p class="left half">
+ <a href="/bridgy_stats/2022/webmentions.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2022/webmentions_thumb.png" /></a>
+</p>
+<!--more-->
+
+<br style="clear: both">
+<br>
+
+<p class="right half">
+ <a href="/bridgy_stats/2022/costs.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2022/costs_thumb.png" /></a></p>
+</p>
+
+Trends and growth are mostly stable [since last year](/2021-06-05_bridgy-stats-update-6). One noticeable exception was a sharp uptick in publish attempts that made me split out successes vs failures. After that, it wasn't too hard to find the culprit. 😎
+
+<p class="right half">
+ <a href="/bridgy_stats/2022/costs.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2022/costs_thumb.png" /></a></p>
+</p>
+<p class="left half">
+ <a href="/bridgy_stats/2022/features.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2022/features_thumb.png" /></a>
+</p>
+<p class="half" style="clear: both">
+ <a href="/bridgy_stats/2022/cost_history.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2022/cost_history_thumb.png" /></a>
+</p>
+
+<br>
+
+One bit of good news is that costs are down materially, thanks to some work I did to [trim down the datastore](https://github.com/snarfed/bridgy/#delete-old-responses=). Otherwise, growth continues apace, up and to the right.
+
+[Data](https://docs.google.com/spreadsheets/d/1VhGiZ9Z9PEl7f9ciiVZZgupNcUTsRVltQ8_CqFETpfU/edit),
+[methodology](https://github.com/snarfed/bridgy#stats),
+[previously](/2021-06-05_bridgy-stats-update-6),
+[previously](/2020-06-27_bridgy-stats-update-5),
+[previously](/2019-01-02_bridgy-stats-update-4),
+[previously](/2018-01-02_bridgy-stats-update-3),
+[previously](/2016-06-06_bridgy-stats-update-2),
+[previously](/2015-12-07_bridgy-stats-update),
+[previously](/2014-11-06_happy-1000th-bridgy).
