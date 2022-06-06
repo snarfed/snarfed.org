@@ -1,4 +1,4 @@
-
+47005
 Bridgy stats update
 
 <style type="text/css">
@@ -26,28 +26,26 @@ It's that time of year again...[Bridgy](https://brid.gy/) stats update! Top line
   <img class="u-photo shadow" src="/bridgy_stats/2022/accounts_stacked_thumb.png" /></a>
 </p>
 <p class="left half">
- <a href="/bridgy_stats/2022/accounts.png">
-  <img class="u-photo shadow" src="/bridgy_stats/2022/accounts_thumb.png" /></a></p>
-</p>
-<p class="right half">
- <a href="/bridgy_stats/2022/publishes.png">
-  <img class="u-photo shadow" src="/bridgy_stats/2022/publishes_thumb.png" /></a></p>
-</p>
-<p class="left half">
  <a href="/bridgy_stats/2022/webmentions.png">
   <img class="u-photo shadow" src="/bridgy_stats/2022/webmentions_thumb.png" /></a>
+</p>
+<p class="right half">
+ <a href="/bridgy_stats/2022/publishes_increase.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2022/publishes_increase_thumb.png" /></a></p>
+</p>
+<p class="left half">
+ <a href="/bridgy_stats/2022/publishes.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2022/publishes_thumb.png" /></a></p>
 </p>
 <!--more-->
 
 <br style="clear: both">
 <br>
 
-<p class="right half">
- <a href="/bridgy_stats/2022/costs.png">
-  <img class="u-photo shadow" src="/bridgy_stats/2022/costs_thumb.png" /></a></p>
-</p>
-
 Trends and growth are mostly stable [since last year](/2021-06-05_bridgy-stats-update-6). One noticeable exception was a sharp uptick in publish attempts that made me split out successes vs failures. After that, it wasn't too hard to find the culprit. 😎
+
+<br style="clear: both">
+<br>
 
 <p class="right half">
  <a href="/bridgy_stats/2022/costs.png">
@@ -64,7 +62,7 @@ Trends and growth are mostly stable [since last year](/2021-06-05_bridgy-stats-u
 
 <br>
 
-One bit of good news is that costs are down materially, thanks to some work I did to [trim down the datastore](https://github.com/snarfed/bridgy/#delete-old-responses=). Otherwise, growth continues apace, up and to the right.
+One bit of good news is that costs are down materially, thanks to some work I did to [trim down the datastore](https://github.com/snarfed/bridgy/#delete-old-responses). Otherwise, growth continues apace, up and to the right.
 
 [Data](https://docs.google.com/spreadsheets/d/1VhGiZ9Z9PEl7f9ciiVZZgupNcUTsRVltQ8_CqFETpfU/edit),
 [methodology](https://github.com/snarfed/bridgy#stats),
