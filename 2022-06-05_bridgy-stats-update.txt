@@ -40,12 +40,8 @@ It's that time of year again...[Bridgy](https://brid.gy/) stats update! Top line
 <!--more-->
 
 <br style="clear: both">
-<br>
 
 Trends and growth are mostly stable [since last year](/2021-06-05_bridgy-stats-update-6). One noticeable exception was a sharp uptick in publish attempts that made me split out successes vs failures. After that, it wasn't too hard to find the culprit. 😎
-
-<br style="clear: both">
-<br>
 
 <p class="right half">
  <a href="/bridgy_stats/2022/costs.png">
@@ -60,7 +56,7 @@ Trends and growth are mostly stable [since last year](/2021-06-05_bridgy-stats-u
   <img class="u-photo shadow" src="/bridgy_stats/2022/cost_history_thumb.png" /></a>
 </p>
 
-<br>
+<br style="clear: both">
 
 One bit of good news is that costs are down materially, thanks to some work I did to [trim down the datastore](https://github.com/snarfed/bridgy/#delete-old-responses). Otherwise, growth continues apace, up and to the right.
 

@@ -476,7 +476,7 @@ Corollary:
 > Our use of technology always expands to the very edge of its capacity. A thousand years from now, everyday technology will be just barely sufficient for the job.
 
 \- Jevon's Paradox (aka Wirth's law aka Page's law aka Gates's law aka May's law)
-<!-- NCX next -->
+<!-- NCXed -->
 
 > 1. Make it work.
 > 2. Make it right.
@@ -990,7 +990,17 @@ The first step in fixing a broken program is getting it to fail repeatably.
 
 > If it hurts, do it more often.
 
-\– Unknown; [popularized by Martin Fowler et al](https://martinfowler.com/bliki/FrequencyReducesDifficulty.html)
+\- Unknown; [popularized by Martin Fowler et al](https://martinfowler.com/bliki/FrequencyReducesDifficulty.html)
+<!-- NCXed -->
+
+> Digital information lasts forever - or five years, whichever comes first.
+
+\- Jeff Rothenberg
+<!-- NCXed -->
+
+> a popular myth is that people who are Very Computer have computers that work. nothing could be further from the truth. the Very Computer are capable of generating much more novel and fascinating ways to make computers not fucking work and exercise this capability wantonly
+
+[- @cakesandcourage](https://twitter.com/cakesandcourage/status/1461481653059129345)
 <!-- NCXed -->
 
 <!--
