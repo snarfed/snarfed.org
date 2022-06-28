@@ -125,7 +125,7 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > Of all my programming bugs, 80 percent are syntax errors. Of the remaining 20 percent, 80 percent are trivial logical errors. Of the remaining 4 percent, 80 percent are pointer errors. And the remaining 0.8 percent are hard.
 
 \- Marc Donner
-<!-- NCX next. include https://www.cnbc.com/amp/2021/10/01/defi-protocol-compound-mistakenly-gives-away-millions-to-users.html -->
+<!-- NCXed. included https://www.cnbc.com/amp/2021/10/01/defi-protocol-compound-mistakenly-gives-away-millions-to-users.html -->
 
 > Twenty percent of all input forms filled out by people contain bad data.
 
