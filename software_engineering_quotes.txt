@@ -50,10 +50,12 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > A systems programmer will know what to do when society breaks down, because the systems programmer already lives in a world without law.
 
 [- James Mickens](https://web.archive.org/web/20140124024832/http://research.microsoft.com/en-us/people/mickens/thenightwatch.pdf)
+<!-- NCXed -->
 
 > Docker containers are kind of neat. They are also kind of a craven surrender to the rotting mess of excessive software complexity.
 
 [- John Carmack](https://twitter.com/ID_AA_Carmack/status/1385103110977179649)
+<!-- NCXed -->
 
 > The first rule of systems engineering is: If you optimize the components you will probably ruin the system performance.
 
@@ -74,6 +76,7 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > To this very day, idiot software managers measure "programmer productivity" in terms of "lines of code produced," whereas the notion of "lines of code spent" is much more appropriate.
 
 \- Edsger W. Dijkstra
+<!-- NCXed -->
 
 > Running a successful open source project is just Good Will Hunting in reverse, where you start out as a respected genius and end up being a janitor who gets into fights.
 
@@ -410,6 +413,7 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > A year spent in artificial intelligence is enough to make one believe in God.
 
 [- Alan Perlis](https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
+<!-- NCXed -->
 
 > Computer Science is embarrassed by the computer.
 
@@ -462,10 +466,6 @@ Corollary:
 > [There is a rising tide of security breaches. There is an even faster rising tide of hysteria. Yet the world is doing remarkably well overall. This continuing general progress of society suggests that cyber security is not very important.](https://www.schneier.com/blog/archives/2019/03/an_argument_tha.html)
 
 \- Andrew Odlyzko
-
-> This stuff is really important. We don't want to swap the As and the Ts, that would be a real mess.
-
-\- NIH / All of Us
 
 > First you listen to the users; then you ignore them.
 
