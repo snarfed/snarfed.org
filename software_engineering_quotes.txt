@@ -357,6 +357,7 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > Another flaw in the human character is that everybody wants to build and nobody wants to do maintenance.
 
 \- Kurt Vonnegut, _Hocus Pocus_
+<!-- NCXed -->
 
 > A simple heuristic for technical debt: It's always fine to introduce a quick hack. But as soon as you have to work around that hack, stop and fix it instead.
 
@@ -1001,6 +1002,10 @@ The first step in fixing a broken program is getting it to fail repeatably.
 > a popular myth is that people who are Very Computer have computers that work. nothing could be further from the truth. the Very Computer are capable of generating much more novel and fascinating ways to make computers not fucking work and exercise this capability wantonly
 
 [- @cakesandcourage](https://twitter.com/cakesandcourage/status/1461481653059129345)
+<!-- NCXed -->
+
+Sometimes in engineering you need to do the wrong thing in order to figure out what the right thing is.
+[- Tim Angus](https://twitter.com/tim_angus/status/1554186739849240576)
 <!-- NCXed -->
 
 <!--
