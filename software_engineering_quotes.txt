@@ -250,6 +250,10 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 
 \- "Schrödinger's Backup," Redditor intelx88
 
+> Schrödinger's Backup -- "The condition of any backup is unknown until a restore is attempted." -- is overly optimistic.
+
+[- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
+
 > Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.
 
 \- Brian Kernighan (aka Kernighan's Law)
@@ -972,7 +976,7 @@ The first step in fixing a broken program is getting it to fail repeatably.
 > A clever person solves a problem. A wise person avoids it.
 
 \- Albert Einstein
-
+<!-- NCXed -->
 
 > The difference between a bad programmer and a good one is whether he considers his code or his data structures more important. Bad programmers worry about the code. Good programmers worry about data structures and their relationships.
 
@@ -1004,9 +1008,94 @@ The first step in fixing a broken program is getting it to fail repeatably.
 [- @cakesandcourage](https://twitter.com/cakesandcourage/status/1461481653059129345)
 <!-- NCXed -->
 
-Sometimes in engineering you need to do the wrong thing in order to figure out what the right thing is.
+> Sometimes in engineering you need to do the wrong thing in order to figure out what the right thing is.
+
 [- Tim Angus](https://twitter.com/tim_angus/status/1554186739849240576)
 <!-- NCXed -->
+
+> The severity of an incident is measured by the number of rules broken in resolving it.
+
+[- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
+<!-- NCX next -->
+
+> If a postmortem follow-up task is not picked up within a week, it's unlikely to be completed at all.
+
+[- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
+<!-- NCX next -->
+
+> [UTC or GTFO.](https://utc-or-gtfo.creator-spring.com/)
+
+[- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
+<!-- NCX next -->
+
+> Very few operations are truly idempotent.
+
+[- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
+<!-- NCX next -->
+
+> "Asserting state" beats "monitoring for compliance" any day.
+
+[- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
+<!-- NCX next -->
+
+> If you determine "human error" as the root cause, then you're doing it wrong.
+
+[- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
+<!-- NCX next -->
+
+> There are very few network restrictions creative and determined use of ssh(1) port forwarding can't overcome. This is both incredibly useful and concerning.
+
+[- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
+<!-- NCX next -->
+
+> It is tempting to jump right into implementing a solution when the right thing may well be to not do the thing that requires the solution in the first place.
+
+[- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
+<!-- NCX next -->
+
+> Turning things off permanently is surprisingly difficult.
+
+[- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
+<!-- NCX next -->
+
+> Debugging any sufficiently complex open source product is indistinguishable from reverse engineering a black box.
+
+[- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
+<!-- NCX next -->
+
+> At some point in your career you will implement half of kerberos. Poorly.
+
+[- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
+<!-- NCX next -->
+
+> CAPEX budget always increases, OPEX budget always decreases.
+
+[- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
+<!-- NCX next -->
+
+> That completely automated solution you set up requires at least three manual steps you didn't document.
+
+[- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
+<!-- NCX next -->
+
+> Software projects sorted by increasing difficulty:  
+> - criticizing existing thing  
+> - maintaining own thing  
+> - rewriting own thing  
+> - writing a new thing  
+> - rewriting somebody else’s thing  
+> - maintaining somebody else’s thing  
+> - moving from old thing to new thing  
+> - turning off old thing
+
+[- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
+<!-- NCX next -->
+
+> One in a million is next Tuesday.
+
+[- Larry Osterman](https://docs.microsoft.com/en-us/archive/blogs/larryosterman/one-in-a-million-is-next-tuesday)
+<!-- NCX next -->
+
 
 <!--
 https://en.wikiquote.org/wiki/Computer_science
