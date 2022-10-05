@@ -1026,7 +1026,7 @@ The first step in fixing a broken program is getting it to fail repeatably.
 > [UTC or GTFO.](https://utc-or-gtfo.creator-spring.com/)
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCX next -->
+<!-- NCXed -->
 
 > Very few operations are truly idempotent.
 
@@ -1036,7 +1036,7 @@ The first step in fixing a broken program is getting it to fail repeatably.
 > "Asserting state" beats "monitoring for compliance" any day.
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCX next -->
+<!-- NCXed -->
 
 > If you determine "human error" as the root cause, then you're doing it wrong.
 
@@ -1063,7 +1063,7 @@ The first step in fixing a broken program is getting it to fail repeatably.
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
 <!-- NCX next -->
 
-> At some point in your career you will implement half of kerberos. Poorly.
+> At some point in your career you will implement half of Kerberos. Poorly.
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
 <!-- NCX next -->
@@ -1096,6 +1096,23 @@ The first step in fixing a broken program is getting it to fail repeatably.
 [- Larry Osterman](https://docs.microsoft.com/en-us/archive/blogs/larryosterman/one-in-a-million-is-next-tuesday)
 <!-- NCX next -->
 
+> To consult the statistician [or, in our case, peer-reviewer] after an experiment is finished is often merely to ask him to conduct a post mortem examination. He can perhaps say what the experiment died of.
+
+[- Ronald Fisher](https://www.gwern.net/docs/statistics/decision/1938-fisher.pdf)
+
+(also see [_Notes on Progress: Doing science backwards_](https://worksinprogress.substack.com/p/notes-on-progress-doing-science-backwards), [_We don’t know how to fix science_](https://www.worksinprogress.co/issue/we-dont-know-how-to-fix-science/))
+
+> The Lindy Effect is a heuristic that the future life expectancy of non-perishable entities is proportional to their age. The longer something has already lasted, the higher likelihood it will continue to endure.
+
+[- Matt Rickard](https://matt-rickard.com/ssh-in-cloud-era)
+
+Corollaries:
+
+> The longer a feature has been on the product roadmap, the longer it'll tend to remain on the roadmap.
+[- Shreyas Doshi](https://twitter.com/shreyas/status/1285819968039223296)
+
+> The longer a technology has been in an organization, the longer it will take to move off that software.
+[- Packy McCormick](https://www.notboring.co/p/excel-never-dies)
 
 <!--
 https://en.wikiquote.org/wiki/Computer_science
