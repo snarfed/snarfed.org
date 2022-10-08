@@ -1,0 +1,14 @@
+47623
+Micropub for Bridgy Publish
+
+<p class="right third">
+ <a href="https://brid.gy/">
+  <img src="/bridgy_logo.png" /></a></p>
+
+I've added a significant new [Bridgy Publish](https://brid.gy/about#publishing) feature: [Micropub support](https://brid.gy/about#micropub)! Up until now, Bridgy Publish offered two ways to post to silos: interactively from user pages and via [webmention trigger](https://brid.gy/about#webmentions). Now there's a third way: [Micropub](https://micropub.net/).
+
+You can now connect a Micropub client to Bridgy and use it to publish posts to [any supported silo](https://brid.gy/about#publish-types). Bridgy publishes the exact contents of the Micropub request; it doesn't depend on or use any original post on your web site. Otherwise, it [behaves exactly the same as normal Bridgy Publish, and supports the exact same microformats2 input](https://brid.gy/about#microformats). It just gets that input from the Micropub request, not from a post on your site.
+
+To use it, go to your Bridgy user page for a given silo, click the _Get token_ button, and copy and paste the token into your Micropub token. Bridgy's Micropub endpoint is `https://brid.gy/micropub`; it supports create and delete and photo/video URLs but not update or file upload. (It doesn't directly require an original post on your web site, but we expect that will still be the common case, and photos and videos will generally already be online.)
+
+Feel free to try it out, [let us know what you think](https://github.com/snarfed/bridgy/issues), and happy hacking!
