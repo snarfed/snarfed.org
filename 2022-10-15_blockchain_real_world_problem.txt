@@ -1,0 +1,71 @@
+47671
+Blockchain's real world problem
+
+<p class="right half">
+ <a href="https://en.wikipedia.org/wiki/The_Wizard_of_Oz_(1939_film)">
+  <img class="shadow" src="/wizard_of_oz_man_behind_curtain.jpg" />
+</a></p>
+
+The blockchain has proven it can do two things well: cryptocurrencies and smart contracts. When it was introduced in 2008, Bitcoin successfully provided [digital scarcity]() and an [immutable ledger](), two core building blocks for digital currencies. Later blockchains like [Ethereum]() added [smart contracts]() based on decentralized consensus. These are striking, powerful new computer science primitives, which don't come around often.
+
+That early success encouraged people to try blockchains for all sorts of other things: [NFTs](https://opensea.io/), naturally, but also [currency exchanges](), organizations ([DAOs](https://ethereum.org/en/dao/)), [real estate](https://propy.com/), [art](), [carbon offsets](), [supply chains](), even [full fledged nation states](https://thenetworkstate.com/).
+
+Many of these attempt to connect blockchains to the real world. Property ownership, fine art provenance and authenticity, greenhouse gas emissions, and manufacturing all exist _offline_, in the physical world. Cryptocurrencies and smart contracts may exist entirely inside computers, but land definitely doesn't. Neither do paintings, greenhouse gases, or assembly lines.
+
+Nevertheless, people dutifully built cryptocurrency tokens and blockchain services to track and sometimes "prove" real world claims. These are formally known as [blockchain oracles](https://en.wikipedia.org/wiki/Blockchain_oracle). Blockchains are closed systems, with no built in way to interact with outside data. A blockchain oracle is a system that fetches data from off chain and publishes it on chain, with a variety of mechanisms and guarantees. Early oracles provided directly relevant information, such as currency exchange rates, but later systems quickly spread further afield. [Chainlink](https://chain.link/), one of the best known providers, [publishes all sorts of real world data](https://chain.link/use-cases) onto the Ethereum blockchain.
+
+Do these blockchain oracles work? Sometimes, yes, in the best cases. But they sacrifice one of the blockchain's critical properties: decentralization. And without decentralization, the benefits of using the blockchain fall apart pretty fast.
+
+<p class="left half">
+ <a href="">
+  <img class="shadow" src="/" />
+</a></p>
+
+Consider art. There are lots of blockchain-based projects to track art ownership and authenticity. At first glance, this seems good. Selling and valuing fine art depends on verifying its authenticity (_Is this the real Mona Lisa?_), ownership (_Who owns it right now?)_, and provenance (_Who owned it before? How did they each get it?_). Also, [_91%_ of the art auction market is currently controlled by the Sotheby's and Christie's duopoly](https://www.barrons.com/articles/global-auction-sales-soared-to-a-record-12-6-billion-in-2021-01641328947). Could a decentralized auction platform help reduce their grip on the industry?
+
+The startup world certainly thought so: [Maecenas](https://www.maecenas.co/), [Codex](https://codexprotocol.com/), [Verisart](https://verisart.com/), [Blockchain Art Collective](https://blockchainartcollective.com/), [and](https://www.disruptordaily.com/blockchain-market-map-art/) [others](https://www.artmarket.guru/product/art-and-blockchain-industry-report/) all jumped in, swinging blockchains at the art world like broomsticks at a piñata.
+
+Still, the three goals here - ownership, authenticity, and provenance - are all tied up in the real world, outside of the blockchain. If Verisart says _Alice owns the Mona Lisa_, how do they guarantee that it's actually true?
+
+At first, they didn't. Anyone could create an account, type in anything they wanted, and it would show up. It wasn't long before ["digital troublemaker" Terence Eden](https://twitter.com/edent) [claimed that he owned the Mona Lisa](https://shkspr.mobi/blog/2018/06/how-i-became-leonardo-da-vinci-on-the-blockchain/) and [Verisart dutifully accepted it](https://www.verisart.com/works/terence-eden-23f2c64a-08c6-4a42-8013-84ac8422dffb).
+
+> [Long story short, I convinced them that I painted the Mona Lisa. An excellent situationalist prank. Much avant-garde, so postmodernism.](https://shkspr.mobi/blog/2018/06/how-i-became-leonardo-da-vinci-on-the-blockchain/)
+
+It took Verisart [three more years to start verifying identities](https://www.businesswire.com/news/home/20210413005446/en/Vouched-and-Verisart-Partner-to-Provide-Peace-of-Mind-for-NFT-Artists-Investors) and [authenticating work](https://verisart.com/our-certificates), but only for artists participating in their program. They never figured out authenticity or provenance otherwise. [They've also pivoted heavily to NFTs](https://verisart.com/minting-service), which are less problematic. Likewise, Blockchain Art Collective [seems to be defunct](https://blockchainartcollective.com/pressandevents), [Maecenas too](https://app.maecenas.co/), and Codex retreated from the problem entirely, its founder demurring ["Codex itself isn't designed to provide provenance information."](https://www.artnome.com/news/2018/1/26/why-use-blockchain-provenance-for-art)
+
+[Artory](https://www.artory.com/) may be one of the few exceptions. Like the rest, they're [now heavily focused on NFTs](https://www.artory.com/blog/artory-fundraise-nft/), [and they](https://pitchbook.com/profiles/company/231810-76) [seem stalled](https://pitchbook.com/profiles/company/229973-59) [at Series A](https://pitchbook.com/profiles/company/117698-59#board), but [they do partener with real art appraisers](https://www.artory.com/how-it-works/) like Christie's, Sotheby's, and [Winston](https://winstonartgroup.com/) to verify authenticity and provenance before publishing registering artwork on their blockchain. This is good! If any blockchain art startup wants to be a believable source of record for fine art, that's exactly what they need to do.
+
+However, this significantly changes how they work. Veritas, for example, was originally a very open, decentralized platform. Anyone could jump on and claim they owned a given painting, and that they'd bought or sold it to anyone else. Artory's blockchain, on the other hand, doesn't allow that. Users can _submit_ claims, but Artory has the sole authority to approve and publish those claims.
+
+<p class="right half">
+ <a href="https://www.artory.com/">
+  <img class="shadow" src="/art_collectors.jpg" />
+</a></p>
+
+At this point, Artory is no longer decentralized in a meaningful way, which makes the blockchain less useful as a a building block. What do they get out of it? If they switched to a bog standard database, would they lose anything? Well, maybe. Anyone can download the Artory blockchain and see its entire history. If they used a standard database instead, they could chose to let people download the data, but they'd have to take Artory's word that it was complete and accurate, and that Artory would never change that historical data.
+
+Blockchains have built in safeguards that guarantee integrity, ie _these are the real contents_, and immutability, ie users can only _append_ data, they can't change existing data. This is a less common feature for databases, and it doesn't have as rich an ecosystem, but it is possible. [Vitra](https://paulfrazee.medium.com/smart-contracts-without-blockchains-fc54603df754) is one example. [The Internet Archive](https://archive.org/) is another: it provides a comprehensive, independent historical record of pretty much everything published publicly on the internet.
+
+Blockchain provenance projects like Codex have tried to address this single point of failure. Codex works with multiple appraisers, auditors, and verifiers. Users may be able to choose the verifier they want to work with. However, Codex still vets and approves all of the verifiers and auditors first. This adds a layer of indirection, [which computer scientists love](https://wiki.c2.com/?OneMoreLevelOfIndirection=), but doesn't change the core problem. Verisart users must trust that it reliably verifies its artists' identities; Codex users must trust that it reliably vets its partner institutions. Either way, users have to trust a single human organization.
+
+Other blockchain oracle systems combine multiple data sources in more creative ways. [Chainlink](https://chain.link/), the leading blockchain oracle provider, provides equity prices and currency exchange rates on chain by fetching quotes from multiple sources and averaging them together. [They do the same with weather, sports, news, and much more.](https://chain.link/data-feeds)
+
+<p class="left half">
+ <a href="https://www.acxiom.com/blog/internet-nobody-knows-youre-dog-still-true-today/">
+  <img class="shadow" src="/on_the_internet_nobody_knows_youre_a_dog.jpg" /></a>
+ <a href="https://en.wikipedia.org/wiki/Peter_Steiner_(cartoonist)"><em>Peter Steiner</em></a>
+</p>
+
+Regardless, these are all variations on the same theme. Cryptocurrencies and smart contracts truly do reduce the need for trust and centralization! However, if you want to connect them with anything off chain, you immediately need to trust the source(s) of that off chain data, which will usually be centralized, human organizations. Some oracle providers like Artory vet their data sources stringently, while [others like Chainlink don't](https://blog.chain.link/easily-sell-your-apis-and-data-to-any-blockchain-via-chainlink/#join-the-chainlink-network-to-sell-more-reliable-data):
+
+> Data providers can get a Chainlink Node quickly spun up and ready to sell data to smart contracts in less than 10 minutes. Chainlink is an open-sourced technology just like Linux and Python, so you don’t need our or anyone’s permission to set anything up, you can just go.
+
+At this point, the blockchain starts to look less like a disruptive, transformative piece of technology and more like just a bad database, [a database that hates you](/2019-01-24_35993). Caldarelli et al echo this in [_Understanding the Blockchain Oracle Problem: A Call for Action_](https://www.proquest.com/docview/2524524192):
+
+> While the [blockchain] platform could be decentralized and independent from a central authority...oracles are unlikely to also be decentralized and autonomous. The chance for those centralized sensors to be free and independent from a central authority...is indeed quite low. An external authority monitoring those procedures is essential for the system to work correctly.
+
+So where does this leave us? Cryptocurrencies and smart contracts are still fascinating. True, they're also [dumpster fires](https://en.wikipedia.org/wiki/Bitcoin#Environmental_impact) right now, [for](https://www.forbes.com/sites/qai/2022/09/20/what-really-happened-to-luna-crypto/) [many](https://moxie.org/2022/01/07/web3-first-impressions.html) [valid](https://www.theverge.com/2022/10/7/23392424/hacker-steals-570-million-binance-bnb-chain) [reasons](https://blog.chainalysis.com/reports/2022-crypto-crime-report-preview-ransomware/), but the blockchains underneath them will improve over time. Technology always does.
+
+However, next time you hear someone say they've taken a real world problem and solved it by putting it on the blockchain, ask them how. How do they authenticate the data? How do they vet the people, or systems, that do the authentication? How does the data get onto the blockchain? As they attempt to provide stronger guarantees, they'll depend more and more on off-chain tools, procedures, organizations, and people. Always people.
+
+We trusted people in various ways before blockchain - we had to! - [and we still do now](https://www.schneier.com/blog/archives/2019/02/blockchain_and_.html). It's the basis of modern civilization, civil society, and the social contracts that underlie all human communities. This is a good thing, not a bad thing. Let's remember that.

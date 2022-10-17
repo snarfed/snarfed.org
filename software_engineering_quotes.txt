@@ -1016,7 +1016,7 @@ The first step in fixing a broken program is getting it to fail repeatably.
 > The severity of an incident is measured by the number of rules broken in resolving it.
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCX next -->
+<!-- NCXed -->
 
 > If a postmortem follow-up task is not picked up within a week, it's unlikely to be completed at all.
 
@@ -1031,7 +1031,7 @@ The first step in fixing a broken program is getting it to fail repeatably.
 > Very few operations are truly idempotent.
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCX next -->
+<!-- NCXed -->
 
 > "Asserting state" beats "monitoring for compliance" any day.
 
