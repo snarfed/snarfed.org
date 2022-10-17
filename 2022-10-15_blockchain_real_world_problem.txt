@@ -17,8 +17,8 @@ Nevertheless, people dutifully built cryptocurrency tokens and blockchain servic
 Do these blockchain oracles work? Sometimes, yes, in the best cases. But they sacrifice one of the blockchain's critical properties: decentralization. And without decentralization, the benefits of using the blockchain fall apart pretty fast.
 
 <p class="left half">
- <a href="">
-  <img class="shadow" src="/" />
+ <a href="https://www.artory.com/">
+  <img class="shadow" src="/art_collectors.jpg" />
 </a></p>
 
 Consider art. There are lots of blockchain-based projects to track art ownership and authenticity. At first glance, this seems good. Selling and valuing fine art depends on verifying its authenticity (_Is this the real Mona Lisa?_), ownership (_Who owns it right now?)_, and provenance (_Who owned it before? How did they each get it?_). Also, [_91%_ of the art auction market is currently controlled by the Sotheby's and Christie's duopoly](https://www.barrons.com/articles/global-auction-sales-soared-to-a-record-12-6-billion-in-2021-01641328947). Could a decentralized auction platform help reduce their grip on the industry?
@@ -38,9 +38,10 @@ It took Verisart [three more years to start verifying identities](https://www.bu
 However, this significantly changes how they work. Veritas, for example, was originally a very open, decentralized platform. Anyone could jump on and claim they owned a given painting, and that they'd bought or sold it to anyone else. Artory's blockchain, on the other hand, doesn't allow that. Users can _submit_ claims, but Artory has the sole authority to approve and publish those claims.
 
 <p class="right half">
- <a href="https://www.artory.com/">
-  <img class="shadow" src="/art_collectors.jpg" />
-</a></p>
+ <a href="https://www.acxiom.com/blog/internet-nobody-knows-youre-dog-still-true-today/">
+  <img class="shadow" src="/on_the_internet_nobody_knows_youre_a_dog.jpg" /></a>
+ <a href="https://en.wikipedia.org/wiki/Peter_Steiner_(cartoonist)"><em>Peter Steiner</em></a>
+</p>
 
 At this point, Artory is no longer decentralized in a meaningful way, which makes the blockchain less useful as a a building block. What do they get out of it? If they switched to a bog standard database, would they lose anything? Well, maybe. Anyone can download the Artory blockchain and see its entire history. If they used a standard database instead, they could chose to let people download the data, but they'd have to take Artory's word that it was complete and accurate, and that Artory would never change that historical data.
 
@@ -51,10 +52,7 @@ Blockchain provenance projects like Codex have tried to address this single poin
 Other blockchain oracle systems combine multiple data sources in more creative ways. [Chainlink](https://chain.link/), the leading blockchain oracle provider, provides equity prices and currency exchange rates on chain by fetching quotes from multiple sources and averaging them together. [They do the same with weather, sports, news, and much more.](https://chain.link/data-feeds)
 
 <p class="left half">
- <a href="https://www.acxiom.com/blog/internet-nobody-knows-youre-dog-still-true-today/">
-  <img class="shadow" src="/on_the_internet_nobody_knows_youre_a_dog.jpg" /></a>
- <a href="https://en.wikipedia.org/wiki/Peter_Steiner_(cartoonist)"><em>Peter Steiner</em></a>
-</p>
+  <img class="shadow" src="/airport_security_wand_boy.jpg" /></p>
 
 Regardless, these are all variations on the same theme. Cryptocurrencies and smart contracts truly do reduce the need for trust and centralization! However, if you want to connect them with anything off chain, you immediately need to trust the source(s) of that off chain data, which will usually be centralized, human organizations. Some oracle providers like Artory vet their data sources stringently, while [others like Chainlink don't](https://blog.chain.link/easily-sell-your-apis-and-data-to-any-blockchain-via-chainlink/#join-the-chainlink-network-to-sell-more-reliable-data):
 
@@ -64,7 +62,7 @@ At this point, the blockchain starts to look less like a disruptive, transformat
 
 > While the [blockchain] platform could be decentralized and independent from a central authority...oracles are unlikely to also be decentralized and autonomous. The chance for those centralized sensors to be free and independent from a central authority...is indeed quite low. An external authority monitoring those procedures is essential for the system to work correctly.
 
-So where does this leave us? Cryptocurrencies and smart contracts are still fascinating. True, they're also [dumpster fires](https://en.wikipedia.org/wiki/Bitcoin#Environmental_impact) right now, [for](https://www.forbes.com/sites/qai/2022/09/20/what-really-happened-to-luna-crypto/) [many](https://moxie.org/2022/01/07/web3-first-impressions.html) [valid](https://www.theverge.com/2022/10/7/23392424/hacker-steals-570-million-binance-bnb-chain) [reasons](https://blog.chainalysis.com/reports/2022-crypto-crime-report-preview-ransomware/), but the blockchains underneath them will improve over time. Technology always does.
+So where does this leave us? Cryptocurrencies and smart contracts are still fascinating. True, they're also [dumpster fires](https://en.wikipedia.org/wiki/Bitcoin#Environmental_impact) [right now](https://www.forbes.com/sites/qai/2022/09/20/what-really-happened-to-luna-crypto/), [for](https://moxie.org/2022/01/07/web3-first-impressions.html) [many](https://www.theverge.com/2022/10/7/23392424/hacker-steals-570-million-binance-bnb-chain) [reasons](https://blog.chainalysis.com/reports/2022-crypto-crime-report-preview-ransomware/), but the blockchains underneath them will improve over time. Technology always does.
 
 However, next time you hear someone say they've taken a real world problem and solved it by putting it on the blockchain, ask them how. How do they authenticate the data? How do they vet the people, or systems, that do the authentication? How does the data get onto the blockchain? As they attempt to provide stronger guarantees, they'll depend more and more on off-chain tools, procedures, organizations, and people. Always people.
 
