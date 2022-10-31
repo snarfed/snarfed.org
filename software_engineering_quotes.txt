@@ -545,7 +545,7 @@ Corollary:
 > A performance-related change - for example, adding a cache - that accidentally becomes required for correctness.
 
 [- David Smith](https://twitter.com/Catfish_Man/status/735211223323578368)
-<!-- NCX next -->
+<!-- NCXed -->
 
 > It’s a curious thing about our industry: not only do we not learn from our mistakes, we also don’t learn from our successes.
 

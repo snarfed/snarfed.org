@@ -141,7 +141,7 @@ are my [.slate](/dotfiles/.slate) and [.slate.js](/dotfiles/.slate.js). It's
 disappointing that the project itself is abandoned, but
 meh. [mattr's fork](https://github.com/mattr-/slate/) used to be maintained, but
 not any more either as of 5/2017. I should eventually switch
-to [Hammerspoon](http://www.hammerspoon.org/)
+to [Hammerspoon](http://www.hammerspoon.org/).
 
 One minor config note: when I used multiple displays and focused a window of an
 app on one display that also had windows on the other display, it focused the
