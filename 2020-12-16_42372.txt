@@ -1,0 +1,10 @@
+42372
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e Running a successful open source project is just Good Will Hunting in reverse, where you start out as a respected genius and end up being a janitor who gets into fights.\n\n[- Byrne Hobart](https://diff.substack.com/p/working-in-public-and-the-economics)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>Running a successful open source project is just Good Will Hunting in reverse, where you start out as a respected genius and end up being a janitor who gets into fights.</p>
+</blockquote>
+<p><a href="https://diff.substack.com/p/working-in-public-and-the-economics">- Byrne Hobart</a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

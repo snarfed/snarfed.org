@@ -1,0 +1,12 @@
+42678
+
+
+<!-- wp:jetpack/markdown {"source":"\u0022Papa! Did you know? I got invited to a SECRET SLEEPOVER!!!\u0022  \n\u0022Whoa, really? What makes it secret?\u0022  \n\u0022Well, you know. I think we might get to STEAL things.\u0022  \n\u0022Steal things! Huh. Like...what?\u0022  \n\u0022Oh, you know, just things. Like, a stapler from your mama. Or, a hole punch from your papa.\u0022  \n?"} -->
+<div class="wp-block-jetpack-markdown"><p>&quot;Papa! Did you know? I got invited to a SECRET SLEEPOVER!!!&quot;<br>
+&quot;Whoa, really? What makes it secret?&quot;<br>
+&quot;Well, you know. I think we might get to STEAL things.&quot;<br>
+&quot;Steal things! Huh. Like...what?&quot;<br>
+&quot;Oh, you know, just things. Like, a stapler from your mama. Or, a hole punch from your papa.&quot;<br>
+?</p>
+</div>
+<!-- /wp:jetpack/markdown -->

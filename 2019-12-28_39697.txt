@@ -1,18 +1,18 @@
 39697
 
 
-<!-- wp:paragraph -->
+
 <p>Fascinating: distributed systems techniques now also apply to performance sensitive applications on high end multi-core computers, eg AAA game engines on modern consoles, as well as to actual distributed systems.</p>
-<!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+
+
 <p><blockquote class="twitter-tweet"><p lang="en" dir="ltr">Using the holidays for a 2-week coding session. Writing a new transactional memory manager that’s O(1) for all operations, completely non-blocking and progress-guaranteeing, and uses atomics only for writes.</p>— Tim Sweeney (@TimSweeneyEpic) <a href="https://twitter.com/TimSweeneyEpic/status/1210260682605764611?ref_src=twsrc%5Etfw">December 26, 2019</a></blockquote> <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-<!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+
+
 <p>Notably, serializing distributed transactions algorithmically, offline.</p>
-<!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+
+
 <p><blockquote class="twitter-tweet" data-conversation="none"><p lang="en" dir="ltr">The “trick” is to store a 10-bit transaction id inside variables and use that to resolve conflicts. Any transaction can undo any earlier one, and can be undone by any later one, at any time, with detection at read and write points.</p>— Tim Sweeney (@TimSweeneyEpic) <a href="https://twitter.com/TimSweeneyEpic/status/1210261802216497152?ref_src=twsrc%5Etfw">December 26, 2019</a></blockquote> <script async="" src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-<!-- /wp:paragraph -->
+

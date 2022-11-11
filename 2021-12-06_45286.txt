@@ -1,0 +1,10 @@
+45286
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e [Art forms become mainstream, or they stagnate and disappear.](https://www.penny-arcade.com/news/post/2021/12/06/water)\n\n\\- [Warren Spector](https://warrenspector.wordpress.com/), [PAX 2010 Keynote](https://www.youtube.com/watch?v=GjV3PJvZDEE\u0026list=PL91CFAC8EE4F1B9C7) ([writeup](https://www.gamespot.com/articles/warren-spector-proclaims-victory-in-gaming-culture-wars/1100-6275168/))"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p><a href="https://www.penny-arcade.com/news/post/2021/12/06/water">Art forms become mainstream, or they stagnate and disappear.</a></p>
+</blockquote>
+<p>- <a href="https://warrenspector.wordpress.com/">Warren Spector</a>, <a href="https://www.youtube.com/watch?v=GjV3PJvZDEE&amp;list=PL91CFAC8EE4F1B9C7">PAX 2010 Keynote</a> (<a href="https://www.gamespot.com/articles/warren-spector-proclaims-victory-in-gaming-culture-wars/1100-6275168/">writeup</a>)</p>
+</div>
+<!-- /wp:jetpack/markdown -->

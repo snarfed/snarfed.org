@@ -6,6 +6,7 @@ Responses
 [Replies](#replies) &middot;
 [Retweets](#retweets) &middot;
 [Likes](#likes) &middot;
+[Follows](#follows) &middot;
 [RSVPs](#rsvps)
 
 <!-- catlist docs: http://wordpress.org/plugins/list-category-posts/other_notes/ -->
@@ -15,6 +16,9 @@ Responses
 
 <span id="retweets">Recent retweets:</span>  
 [catlist name=repost orderby=date order=desc numberposts=20]
+
+<span id="follows">Recent follows:</span>  
+[catlist name=follow orderby=date order=desc numberposts=20]
 </div>
 
 <div class="right half archive-page">

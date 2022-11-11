@@ -1,0 +1,10 @@
+42428
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e I don't trust people, I trust their incentives.\n\n\\- [Vanessa Rousso](https://en.wikipedia.org/wiki/Vanessa_Rousso)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>I don't trust people, I trust their incentives.</p>
+</blockquote>
+<p>- <a href="https://en.wikipedia.org/wiki/Vanessa_Rousso">Vanessa Rousso</a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

@@ -1,0 +1,12 @@
+42355
+
+
+
+
+
+
+<!-- wp:html -->
+<p class="right third"><a href="/remote"><img class="shadow" src="/remote.jpg"></a></a>
+
+<p>Fond memory of peak late '90s tech: interned at <a href="https://en.wikipedia.org/wiki/Webvan">Webvan</a>, set up a <a href="https://en.wikipedia.org/wiki/Winamp">Winamp</a> <a href="https://en.wikipedia.org/wiki/SHOUTcast">Shoutcast</a> server on my home desktop so I could listen to its MP3s at work, open sourced a <a href="/remote">network remote control for it</a> on <a href="https://sourceforge.net/">SourceForge</a>. Tarballs and patches and mailing lists, oh my. Good times.</p>
+<!-- /wp:html -->

@@ -1,0 +1,14 @@
+42504
+
+
+<!-- wp:video {"id":42502,"className":"half-sidebyside left"} -->
+<figure class="wp-block-video half-sidebyside left"><video controls src="https://snarfed.org/w/wp-content/uploads/2021/02/PXL_20210225_0227406887E5.mp4"></video></figure>
+<!-- /wp:video -->
+
+<!-- wp:video {"id":42503,"className":"half-sidebyside right"} -->
+<figure class="wp-block-video half-sidebyside right"><video controls src="https://snarfed.org/w/wp-content/uploads/2021/02/PXL_20210225_0227406887E4.mp4"></video></figure>
+<!-- /wp:video -->
+
+
+<p><a class="p-location" href="https://www.goldengatepark150.com/entwined"><em>Entwined, Peacock Meadow, Golden Gate Park.</em></a></p>
+

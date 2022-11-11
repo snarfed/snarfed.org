@@ -1,0 +1,10 @@
+45334
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e A resource arrangement that works in practice can work in theory.\n\n\\- [Elinor Ostrom, _Ostrom's Law_](https://en.wikipedia.org/wiki/Elinor_Ostrom#Ostrom's_law)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>A resource arrangement that works in practice can work in theory.</p>
+</blockquote>
+<p>- <a href="https://en.wikipedia.org/wiki/Elinor_Ostrom#Ostrom's_law">Elinor Ostrom, <em>Ostrom's Law</em></a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

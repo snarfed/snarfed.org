@@ -1,0 +1,10 @@
+42659
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e The EU...installed the precautionary principle as a guiding light. This superficially sensible idea – that we should worry about unintended consequences of innovation – morphed into a device by which activists prevent life-saving new technologies displacing more dangerous ones. The principle holds the new to a higher standard than the old and is essentially a barrier to all innovations, however safe, on behalf of all existing practices, however dangerous. This is because it considers the potential hazards, but not the likely benefits of an innovation, shifting the burden of proof to an innovator to prove that its product will not cause harm, but not allowing that innovator to demonstrate that it might cause good, or might displace a technology that already causes harm.\n\n[- Matt Ridley – _How Innovation Works_](https://www.harpercollins.com/products/how-innovation-works-matt-ridley)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>The EU...installed the precautionary principle as a guiding light. This superficially sensible idea – that we should worry about unintended consequences of innovation – morphed into a device by which activists prevent life-saving new technologies displacing more dangerous ones. The principle holds the new to a higher standard than the old and is essentially a barrier to all innovations, however safe, on behalf of all existing practices, however dangerous. This is because it considers the potential hazards, but not the likely benefits of an innovation, shifting the burden of proof to an innovator to prove that its product will not cause harm, but not allowing that innovator to demonstrate that it might cause good, or might displace a technology that already causes harm.</p>
+</blockquote>
+<p><a href="https://www.harpercollins.com/products/how-innovation-works-matt-ridley">- Matt Ridley – <em>How Innovation Works</em></a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

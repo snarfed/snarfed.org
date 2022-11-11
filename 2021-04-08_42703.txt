@@ -1,0 +1,17 @@
+42703
+
+
+<!-- wp:jetpack/markdown {"source":"[**clow·der**](https://en.wiktionary.org/wiki/clowder)  \n`/?kloud?r/`  \n_noun: clowder; plural noun: clowders_  \na group of cats.\n\n\u003e Most of us aren't looking to adopt a pack of dogs or a clowder of cats."} -->
+<div class="wp-block-jetpack-markdown"><p><a href="https://en.wiktionary.org/wiki/clowder"><strong>clow·der</strong></a><br>
+<code>/?kloud?r/</code><br>
+<em>noun: clowder; plural noun: clowders</em><br>
+a group of cats.</p>
+<blockquote>
+<p>Most of us aren't looking to adopt a pack of dogs or a clowder of cats.</p>
+</blockquote>
+</div>
+<!-- /wp:jetpack/markdown -->
+
+
+
+

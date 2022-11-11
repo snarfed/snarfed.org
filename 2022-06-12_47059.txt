@@ -1,0 +1,10 @@
+47059
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e Two powerful and opposing drives — the desire to enjoy the world and the urge to set the world straight.\n\n[- E. B. White](https://en.wikipedia.org/wiki/Walden#Background_information)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>Two powerful and opposing drives — the desire to enjoy the world and the urge to set the world straight.</p>
+</blockquote>
+<p><a href="https://en.wikipedia.org/wiki/Walden#Background_information">- E. B. White</a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

@@ -1,0 +1,14 @@
+43613
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e The idea that new code is better than old is patently absurd. Old code has been _used_. It has been _tested_. Lots of bugs have been found, and they’ve been _fixed_. There’s nothing wrong with it. It doesn’t acquire bugs just by sitting around on your hard drive. Au contraire, baby! Is software supposed to be like an old Dodge Dart, that rusts just sitting in the garage? Is software like a teddy bear that’s kind of gross if it’s not made out of _all new material_?\n\n\\- [Joel Spolsky](https://www.joelonsoftware.com/), _[Things You Should Never Do, Part I](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)_"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>The idea that new code is better than old is patently absurd. Old code has been <em>used</em>. It has been <em>tested</em>. Lots of bugs have been found, and they’ve been <em>fixed</em>. There’s nothing wrong with it. It doesn’t acquire bugs just by sitting around on your hard drive. Au contraire, baby! Is software supposed to be like an old Dodge Dart, that rusts just sitting in the garage? Is software like a teddy bear that’s kind of gross if it’s not made out of <em>all new material</em>?</p>
+</blockquote>
+<p>- <a href="https://www.joelonsoftware.com/">Joel Spolsky</a>, <em><a href="https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/">Things You Should Never Do, Part I</a></em></p>
+</div>
+<!-- /wp:jetpack/markdown -->
+
+
+
+

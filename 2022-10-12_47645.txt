@@ -1,0 +1,18 @@
+47645
+
+
+
+
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e I must study politics and war that my sons may have liberty to study mathematics and philosophy. My sons ought to study mathematics and philosophy, geography, natural history, naval architecture, navigation, commerce, and agriculture, in order to give their children a right to study painting, poetry, music, architecture, statuary, tapestry, and porcelain.\n\n[- John Adams](https://www.goodreads.com/quotes/42294-the-science-of-government-it-is-my-duty-to-study)\n\n\u003e Our parents studied business and engineering so that our generation may study World of Warcraft and 4chan.\n\n[- GreenStrong, via Reddit](https://www.reddit.com/r/history/comments/cxphf/comment/c0w11vk/)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>I must study politics and war that my sons may have liberty to study mathematics and philosophy. My sons ought to study mathematics and philosophy, geography, natural history, naval architecture, navigation, commerce, and agriculture, in order to give their children a right to study painting, poetry, music, architecture, statuary, tapestry, and porcelain.</p>
+</blockquote>
+<p><a href="https://www.goodreads.com/quotes/42294-the-science-of-government-it-is-my-duty-to-study">- John Adams</a></p>
+<blockquote>
+<p>Our parents studied business and engineering so that our generation may study World of Warcraft and 4chan.</p>
+</blockquote>
+<p><a href="https://www.reddit.com/r/history/comments/cxphf/comment/c0w11vk/">- GreenStrong, via Reddit</a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

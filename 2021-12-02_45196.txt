@@ -1,0 +1,19 @@
+45196
+
+
+<!-- wp:jetpack/markdown {"source":"[Bruce Schneier on smart contracts](https://www.schneier.com/blog/archives/2021/12/smart-contract-bug-results-in-31-million-loss.html):\n\n\u003e The basic problem is that the code is the ultimate authority — there is no adjudication protocol — so if there’s a vulnerability in the code, there is no recourse. And, of course, there are lots of vulnerabilities in code.  \n   \n\u003e To me, this is reason enough never to use smart contracts for anything important. Human-based adjudication systems are not useless pre-Internet human baggage, they’re vital.\n\nI'd love to see a smart contract platform that allows human adjudication somehow! Devil's in the details, but still, seems promising. It would be directly counter to most of that camp's ideology and dogma though, so I'm not holding my breath.\n\n(News flash: society is built on human trust. Code won't change that.)"} -->
+<div class="wp-block-jetpack-markdown"><p><a href="https://www.schneier.com/blog/archives/2021/12/smart-contract-bug-results-in-31-million-loss.html">Bruce Schneier on smart contracts</a>:</p>
+<blockquote>
+<p>The basic problem is that the code is the ultimate authority — there is no adjudication protocol — so if there’s a vulnerability in the code, there is no recourse. And, of course, there are lots of vulnerabilities in code.</p>
+</blockquote>
+<blockquote>
+<p>To me, this is reason enough never to use smart contracts for anything important. Human-based adjudication systems are not useless pre-Internet human baggage, they’re vital.</p>
+</blockquote>
+<p>I'd love to see a smart contract platform that allows human adjudication somehow! Devil's in the details, but still, seems promising. It would be directly counter to most of that camp's ideology and dogma though, so I'm not holding my breath.</p>
+<p>(News flash: society is built on human trust. Code won't change that.)</p>
+</div>
+<!-- /wp:jetpack/markdown -->
+
+
+
+

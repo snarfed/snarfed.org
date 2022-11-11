@@ -1,0 +1,17 @@
+44216
+
+
+<!-- wp:html -->
+<p class="right half">
+ <a href="https://en.wikipedia.org/wiki/Border_Gateway_Protocol">
+  <img class="shadow" src="/world_network_visualization.jpg" alt="world network visualization" />
+</a></p>
+
+<!-- /wp:html -->
+
+<!-- wp:jetpack/markdown {"source":"[BGP](https://en.wikipedia.org/wiki/Border_Gateway_Protocol) takes a lot of flak for being insecure and error prone, most recently during the [Facebook outage](https://www.nytimes.com/2021/10/05/technology/facebook-outage-cause.html). Much of that is warranted. However, it's also one of computer science's biggest success stories, the clearest case I know of where a single, simple algorithm - [Dijkstra's](https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm), via [OSPF](https://en.wikipedia.org/wiki/Open_Shortest_Path_First) - can claim direct credit for one of civilization's greatest achievements, the Internet.\n\nWhat's more, that core algorithm, largely unchanged, scaled from [less than 100 route prefixes in 1982](https://web.archive.org/web/20090721093920/http://www.columbia.edu/~rh120/other/tcpdigest_paper.txt) to [almost 1M today](https://bgp.potaroo.net/). Four orders of magnitude! Dijkstra and [DEC](https://en.wikipedia.org/wiki/Digital_Equipment_Corporation) clearly never heard that you need to rearchitect every 10x. (They also stood on the shoulders of network fabric researchers, hardware engineers, and backbone network operators, who deserve just as much credit for its scaling and success.)\n\nThank you, BGP. The world owes you a greater debt than it may ever know."} -->
+<div class="wp-block-jetpack-markdown"><p><a href="https://en.wikipedia.org/wiki/Border_Gateway_Protocol">BGP</a> takes a lot of flak for being insecure and error prone, most recently during the <a href="https://www.nytimes.com/2021/10/05/technology/facebook-outage-cause.html">Facebook outage</a>. Much of that is warranted. However, it's also one of computer science's biggest success stories, the clearest case I know of where a single, simple algorithm - <a href="https://en.wikipedia.org/wiki/Dijkstra%27s_algorithm">Dijkstra's</a>, via <a href="https://en.wikipedia.org/wiki/Open_Shortest_Path_First">OSPF</a> - can claim direct credit for one of civilization's greatest achievements, the Internet.</p>
+<p>What's more, that core algorithm, largely unchanged, scaled from <a href="https://web.archive.org/web/20090721093920/http://www.columbia.edu/~rh120/other/tcpdigest_paper.txt">less than 100 route prefixes in 1982</a> to <a href="https://bgp.potaroo.net/">almost 1M today</a>. Four orders of magnitude! Dijkstra and <a href="https://en.wikipedia.org/wiki/Digital_Equipment_Corporation">DEC</a> clearly never heard that you need to rearchitect every 10x. (They also stood on the shoulders of network fabric researchers, hardware engineers, and backbone network operators, who deserve just as much credit for its scaling and success.)</p>
+<p>Thank you, BGP. The world owes you a greater debt than it may ever know.</p>
+</div>
+<!-- /wp:jetpack/markdown -->

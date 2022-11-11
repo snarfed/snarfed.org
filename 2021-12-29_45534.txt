@@ -1,0 +1,11 @@
+45534
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e ...the total outcome of NATs is to increase the available address capacity in IPv4 from 4 billion endpoints (232) to some 1,000 trillion endpoints (250). ...the usable address capacity in IPv6 is somewhere between 49 bits and 58 bits. This conclusion points to the observation that **the overall carrying capacity of IPv6 is not all that different from that of a dense IPv4 deployment making highly efficient use of NATs.**\n\n?\n\n[- Geoff Huston, _IPv4 Address Markets_](https://www.potaroo.net/ispcol/2021-12/ipv4markets.html) (emphasis mine)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>...the total outcome of NATs is to increase the available address capacity in IPv4 from 4 billion endpoints (232) to some 1,000 trillion endpoints (250). ...the usable address capacity in IPv6 is somewhere between 49 bits and 58 bits. This conclusion points to the observation that <strong>the overall carrying capacity of IPv6 is not all that different from that of a dense IPv4 deployment making highly efficient use of NATs.</strong></p>
+</blockquote>
+<p>?</p>
+<p><a href="https://www.potaroo.net/ispcol/2021-12/ipv4markets.html">- Geoff Huston, <em>IPv4 Address Markets</em></a> (emphasis mine)</p>
+</div>
+<!-- /wp:jetpack/markdown -->

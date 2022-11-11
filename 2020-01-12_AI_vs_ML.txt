@@ -1,22 +1,22 @@
 39770
 AI vs ML
 
-<!-- wp:paragraph -->
+
 <p>Are there any common forms of AI now that <em>aren't</em> machine learning?</p>
-<!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+
+
 <p>Historically we had expert systems, formal logic, hand-authored decision trees (eg old school machine translation), domain-specific algorithms (eg A* pathfinding), and more.</p>
-<!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+
+
 <p>Nowadays it seems like everything is some form of ML trained on real world data.</p>
-<!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+
+
 <p>(I'm broadly lumping everything generated automatically from data into the "ML" bucket, including HMMs, Bayesian networks, stochastic modeling, etc.)</p>
-<!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+
+
 <p>Maybe this is a good thing? The results definitely speak for themselves. I might buy that the scale of most modern problems simply overwhelms hand-authored approaches. Are we losing anything by putting all our eggs in the big-data-and-opaque-emergent-models basket, though? Are there any other forms of AI that we're neglecting? Or am I just being old fashioned and naive?</p>
-<!-- /wp:paragraph -->
+

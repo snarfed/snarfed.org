@@ -1,0 +1,14 @@
+43584
+
+
+
+<p><a href="https://dl.acm.org/doi/10.1145/3458336.3465297">Last night's reading: "mercurial" cores</a>, CPUs that very occasionally return the wrong result for some instructions. ? Affects a few CPUs per thousand, across vendors.</p>
+
+
+
+<p>We're used to ephemeral bit flips at scale in memory and (some) storage, due to solar rays, which we handle with ECC and CRCs, but we expect a different failure model from CPUs. Maybe no longer. </p>
+
+
+
+<p>I mean, how would you ECC compute? Can't even begin to imagine. Redundant hardware? Starts to feel as big and unfixable as Spectre/Meltdown. ???</p>
+

@@ -1,26 +1,26 @@
 42262
 
 
-<!-- wp:paragraph -->
-<p>A common intermediate step to going <a href="https://en.wikipedia.org/wiki/Carbon_neutrality">carbon neutral</a> is to "match" your electricity usage with purchases of the same amount of renewable electricity. But you often still use some non-renewable, at least at this stage, due to grid realities. So, where does the excess go?</p>
-<!-- /wp:paragraph -->
 
-<!-- wp:paragraph -->
+<p>A common intermediate step to going <a href="https://en.wikipedia.org/wiki/Carbon_neutrality">carbon neutral</a> is to "match" your electricity usage with purchases of the same amount of renewable electricity. But you often still use some non-renewable, at least at this stage, due to grid realities. So, where does the excess go?</p>
+
+
+
 <p>Haven't found a clear answer yet. Google was an early example of this, but I haven't found an explanation from them. <a href="https://www.blog.google/topics/environment/google-green-blog-what-it-means-to-be_8/">The closest is from this blog post:</a></p>
-<!-- /wp:paragraph -->
+
 
 <!-- wp:quote -->
 <blockquote class="wp-block-quote"><p>…we may find ourselves temporarily oversupplied in some regions and undersupplied in others (where access to renewables is currently more limited). We will also be drawing energy from the grid to meet our 24/7 electricity needs…</p></blockquote>
 <!-- /wp:quote -->
 
-<!-- wp:paragraph -->
+
 <p><a href="https://static.googleusercontent.com/media/www.google.com/en//green/pdf/achieving-100-renewable-energy-purchasing-goal.pdf">And from this white paper:</a></p>
-<!-- /wp:paragraph -->
+
 
 <!-- wp:quote -->
 <blockquote class="wp-block-quote"><p>While we work hand in hand with regulators and utilities in these areas to evolve the market structure to unlock renewable purchasing, we overbuy renewables on one grid to offset our inability to purchase renewables on another.</p></blockquote>
 <!-- /wp:quote -->
 
-<!-- wp:paragraph -->
+
 <p>So what happens to the oversupply? Is it resold at a loss? <a href="https://www.caiso.com/informed/Pages/ManagingOversupply.aspx">Curtailed away?</a> Something else? And so then the benefit is guaranteeing demand for renewable projects, even if not all energy gets consumed?</p>
-<!-- /wp:paragraph -->
+

@@ -1,0 +1,13 @@
+43241
+
+
+<!-- wp:image {"align":"right","width":357,"height":250,"linkDestination":"custom","className":"shadow"} -->
+<div class="wp-block-image shadow"><figure class="alignright is-resized"><a href="https://99percentinvisible.org/article/defining-moments-how-the-rise-of-railroads-ushered-in-an-era-of-time-zones/"><img src="https://99percentinvisible.org/app/uploads/2020/11/time-zones.jpg" alt="" width="357" height="250"/></a><figcaption><em><a href="https://99percentinvisible.org/article/defining-moments-how-the-rise-of-railroads-ushered-in-an-era-of-time-zones/">Defining Moments: How Traveling by Train Ushered in the Era of Time Zones</a></em></figcaption></figure></div>
+
+
+<!-- wp:jetpack/markdown {"source":"Discovered a fascinating job in late 19th century London: [train timekeepers.](https://99percentinvisible.org/episode/matters-of-time/) Stations in cities across England wanted to keep track of London time, aka _[railway time](https://en.wikipedia.org/wiki/Railway_time)_. Railway workers would set their watches, ride the train, get off at each stop, and show their watch to the station master, who would set a clock marked \u0022London time.\u0022\n\nClocks were imperfect and inevitably skewed, so the timekeepers did this regularly to fix them.\n\nThis is basically [NTP](https://en.wikipedia.org/wiki/Network_Time_Protocol), the venerable protocol for synchronizing clocks between computers connected over a network. The timekeepers even correspond to the UDP packets that NTP uses to communicate the current time over the network. Love it."} -->
+<div class="wp-block-jetpack-markdown"><p>Discovered a fascinating job in late 19th century London: <a href="https://99percentinvisible.org/episode/matters-of-time/">train timekeepers.</a> Stations in cities across England wanted to keep track of London time, aka <em><a href="https://en.wikipedia.org/wiki/Railway_time">railway time</a></em>. Railway workers would set their watches, ride the train, get off at each stop, and show their watch to the station master, who would set a clock marked &quot;London time.&quot;</p>
+<p>Clocks were imperfect and inevitably skewed, so the timekeepers did this regularly to fix them.</p>
+<p>This is basically <a href="https://en.wikipedia.org/wiki/Network_Time_Protocol">NTP</a>, the venerable protocol for synchronizing clocks between computers connected over a network. The timekeepers even correspond to the UDP packets that NTP uses to communicate the current time over the network. Love it.</p>
+</div>
+<!-- /wp:jetpack/markdown -->

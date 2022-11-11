@@ -1,0 +1,13 @@
+43894
+
+
+<!-- wp:jetpack/markdown {"source":"Wow. [Let's Encrypt has issued 62% of all active SSL certs in the wild](https://censys.io/certificates/report?q=tags:trusted\u0026field=parsed.issuer.organization.raw), according to [Censys](https://censys.io). That's awesome...but also worrisome? We obviously want all CAs to meet a high quality bar, but if any ecosystem needs healthy diversity, it's this one, right?\n\nI wonder what the appropriate next steps here would be, if any.\n\n([Props to Geoff Huston for noticing this!](https://www.potaroo.net/ispcol/2021-08/rfc9102.html))"} -->
+<div class="wp-block-jetpack-markdown"><p>Wow. <a href="https://censys.io/certificates/report?q=tags:trusted&amp;field=parsed.issuer.organization.raw">Let's Encrypt has issued 62% of all active SSL certs in the wild</a>, according to <a href="https://censys.io">Censys</a>. That's awesome...but also worrisome? We obviously want all CAs to meet a high quality bar, but if any ecosystem needs healthy diversity, it's this one, right?</p>
+<p>I wonder what the appropriate next steps here would be, if any.</p>
+<p>(<a href="https://www.potaroo.net/ispcol/2021-08/rfc9102.html">Props to Geoff Huston for noticing this!</a>)</p>
+</div>
+<!-- /wp:jetpack/markdown -->
+
+
+
+

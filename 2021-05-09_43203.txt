@@ -1,0 +1,10 @@
+43203
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e You are only as young as the last time you changed your mind.\n\n[- Kevin Kelly](https://kk.org/thetechnium/99-additional-bits-of-unsolicited-advice/)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>You are only as young as the last time you changed your mind.</p>
+</blockquote>
+<p><a href="https://kk.org/thetechnium/99-additional-bits-of-unsolicited-advice/">- Kevin Kelly</a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

@@ -1,0 +1,10 @@
+45690
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e Beware of all enterprises that require new clothes.\n\n[- Henry David Thoreau, _Walden_](https://en.wikiquote.org/wiki/Walden)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>Beware of all enterprises that require new clothes.</p>
+</blockquote>
+<p><a href="https://en.wikiquote.org/wiki/Walden">- Henry David Thoreau, <em>Walden</em></a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

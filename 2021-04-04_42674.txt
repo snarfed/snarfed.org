@@ -1,0 +1,9 @@
+42674
+
+
+<!-- wp:jetpack/markdown {"source":"6yo, holding up an incomprehensible drawing: \u0022What does this look like?\u0022  \nMe: \u0022Um, a crazy island?\u0022  \nHer: \u0022That's it! A pterodactyl playing a trumpet!\u0022"} -->
+<div class="wp-block-jetpack-markdown"><p>6yo, holding up an incomprehensible drawing: &quot;What does this look like?&quot;<br>
+Me: &quot;Um, a crazy island?&quot;<br>
+Her: &quot;That's it! A pterodactyl playing a trumpet!&quot;</p>
+</div>
+<!-- /wp:jetpack/markdown -->
