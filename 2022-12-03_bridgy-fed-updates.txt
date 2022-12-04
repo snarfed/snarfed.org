@@ -1,0 +1,21 @@
+48189
+Bridgy Fed updates
+
+<p class="right third">
+ <a href="https://fed.brid.gy/">
+  <img src="/bridgy_fed_logo.png" />
+</a></p>
+
+All the recent Twitter drama has sparked renewed interest in [Mastodon](https://joinmastodon.org/) and the [fediverse](https://en.wikipedia.org/wiki/Fediverse), including [Bridgy Fed](https://fed.brid.gy/), my little [IndieWeb](https://indieweb.org/) side project that turns personal web sites into full-fledged fediverse accounts.
+
+A month and change ago, I was all set to take it easy, maybe play [a game](https://halfmermaid.co/) [or two](https://jumpship.co.uk/), and [poke at a new project](https://atproto.com/docs). Then, Musk happened. A ridiculous mess, to be sure, but also a huge opportunity for fediverse projects like Bridgy Fed. At that point, it worked, mostly, but it was rough. Very rough. Onboarding was especially bad: the home page was a wall of text, and there was no UI to speak of. If I wanted to capitalize on all the newfound interest, I had work to do.
+
+So, I rolled up my sleeves and started building. I started with my own web site: I'd hooked it up to Bridgy Fed a long time ago, but I wasn't really using it, so I dove in and [scratched my own itches](https://indieweb.org/scratch_your_own_itch). I listened to early users and new ones drawn into the migration, and I scratched some of their itches too. I built actual, honest to God UI and onboarding. [I added features, handled interoperability issues and property quirks, and fixed lots of bugs.](https://github.com/snarfed/bridgy-fed/issues?q=is%3Aissue+is%3Aclosed) I watched as dozens of active users gew to hundreds and traffic swelled 10x over the course of just a few weeks.
+
+<a href="/bridgy-fed-growth.png">
+  <img src="/bridgy-fed-growth.png" />
+</a>
+
+It's been a hell of a sprint. I'm slowing down, but I can now say I'm using this web site to fully participate in the fediverse, at least as much as I want to, with complete posting, reading, and responding experiences [on both desktop and phone](https://wordpress.org/plugins/indieweb-press-this/).
+
+If this sounds interesting, [try it out](https://fed.brid.gy/) and let me know what you think. Feedback is welcome. Happy federating!
