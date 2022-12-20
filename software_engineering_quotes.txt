@@ -1046,7 +1046,7 @@ The first step in fixing a broken program is getting it to fail repeatably.
 > There are very few network restrictions creative and determined use of ssh(1) port forwarding can't overcome. This is both incredibly useful and concerning.
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCX next -->
+<!-- NCXed -->
 
 > It is tempting to jump right into implementing a solution when the right thing may well be to not do the thing that requires the solution in the first place.
 
@@ -1056,7 +1056,7 @@ The first step in fixing a broken program is getting it to fail repeatably.
 > Turning things off permanently is surprisingly difficult.
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCX next -->
+<!-- NCXed -->
 
 > Debugging any sufficiently complex open source product is indistinguishable from reverse engineering a black box.
 
@@ -1122,7 +1122,13 @@ Corollaries:
 
 > A sign you've created a good infrastructure abstraction is that AWS offers it as a service.
 [- Jay Kreps](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
-<!-- ncx next -->
+<!-- NCXed -->
+
+> Before you can develop reusable software you need to have developed it three times. Before you can reap the benefits of reuse, you need to reuse it at least three times.
+
+\- Ted Biggerstaff, via Will Tracz
+<!-- NCXed -->
+
 
 <!--
 https://en.wikiquote.org/wiki/Computer_science
@@ -1313,9 +1319,6 @@ If you think good architecture is expensive, try bad architecture.
 There are two ways you can get exercise out of a bicycle: you can "overhaul" it, or you can ride it. On the whole, I am not sure that a man who takes his pleasure overhauling does not have the best of the bargain. He is independent of the weather and the wind; the state of the roads troubles him not. Give him a screw-hammer, a bundle of rags, an oil-can, and something to sit down upon, and he is happy for the day. He has to put up with certain disadvantages, of course; there is no joy without alloy. He himself always looks like a tinker, and his machine always suggests the idea that, having stolen it, he has tried to disguise it; but as he rarely gets beyond the first milestone with it, this, perhaps, does not much matter. The mistake some people make is in thinking they can get both forms of sport out of the same machine. This is impossible; no machine will stand the double strain. You must make up your mind whether you are going to be an "overhauler" or a rider.
 
 - Jerome K Jerome, http://www.cyf-kr.edu.pl/rowery/3men03.html
-
-Before you can develop reusable software you need to have developed it three times. Before you can reap the benefits of reuse, you need to reuse it at least three times.
-- Ted Biggerstaff, via Will Tracz
 
 Having a discussion about technical debt is a luxury. Being able to talk about technical debt implies success.
 
