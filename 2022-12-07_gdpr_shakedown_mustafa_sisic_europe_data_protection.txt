@@ -1,0 +1,94 @@
+48884
+GDPR troll shakedown from Mustafa Sisic of Europe Data Protection
+
+Wow. I just got a [GDPR troll](https://www.google.com/search?q=GDPR+trolls#ip=1) shakedown email from Mustafa Sisic of "[Europe Data Protection](https://europedataprotection.com/)," demanding €100 because they visited this web site, which uses Google Fonts, which violated their [GDPR](https://gdpr.eu/) rights as an EU citizen. Wow. Just...wow. Full text below. So much to unpack here.
+
+First. Mustafa, you're not fooling anyone. You may protest that "This is, first of all, honest and well-intentioned advice," and "I want to point out that my intentions are well-intentioned," but we all know this is a shakedown, pure and simple. You're going after small, non-commercial personal web sites, you're demanding a small amount of money, and you included your bank account, Western Union, and cryptocurrency wallet addresses. Of the 17 paragraphs in your email, 15 are about how and why I should pay you. You're trying to scare defenseless people with small [IndieWeb](https://indieweb.org/) sites just enough to pay an amount most of them can afford, but not enough to get help or fight back. Shame on you.
+
+Second, privacy. If you ever actually read my web site, or looked at any of my [projects](https://snarfed.org/software), you'd know I'm a [huge](/2013-02-08_privacy_for_postal_mail) [privacy](/2011-08-03_why_im_weird_about_privacy) [and security](/generic-security-posture-and-faq) [advocate](https://snarfed.org/2005-04-17_privacy_and_credit_cards), I'm [fairly technical](/resume), and I [know a bit about GDPR already](https://brid.gy/about#gdpr). If you cared about privacy, this wouldn't be how you go about it. As privacy incursions go, Google receiving your IP address - and nothing else - is minor. There are plenty of constructive ways you could try to help improve privacy online if you wanted to. Extorting individual people over trivialities is not one.
+
+Third, legalities. This web site is a small, non-commercial project with no revenue. [Recital 18 of the GDPR](https://gdpr-info.eu/recitals/no-18/) says:
+
+> This Regulation does not apply to the processing of personal data...with no connection to a professional or commercial activity.
+
+In other words, the GDPR has no standing here. Go after Google if you want, but not harmless personal web sites like this one. Get a real job, one that doesn't involve scaring and extorting people to make a few bucks.
+
+<hr>
+
+**Violation of GDPR - unlawful transfer of personal data**  
+From: Mustafa Sisic <***>  
+To: ***  
+
+Hello,
+
+On January 06, 2023 I visited your website https://snarfed.org/.
+My IP address is: ***
+
+Unfortunately, third-party services are dynamically integrated into your website, mainly Google services (Google fonts and similar). Third-party services can be found in the source code of your site. These can be links like: "[fonts.googleapis.com](http://fonts.googleapis.com/)", "[fonts.gstatic.com](http://fonts.gstatic.com/)" or links to any other sites that are not on the same domain as your site.
+My web browser has detected a link from your website to Google's servers, as you can see in the attached image.
+
+In this way you are passing at least my IP address to a company in a third country, the USA, without my consent (I did not allow the sharing of my data by accepting in the modal window). Please note that Google still does not guarantee an adequate level of data protection. On the contrary, Google has already been sued by various European data protection authorities for massive GDPR violations. Since I can be tracked using my IP address, for example, or Google could use this to track my online activities and collect data about me, this falls under the GDPR as personal data.
+
+Personal data is information that relates to an identified or identifiable individual. What identifies an individual could be as simple as a name or a number or could include other identifiers such as an ip address or a cookie identifier, or other factors.
+Examples of personal data include:
+
+- a name and surname
+- a cookie ID
+- an Internet Protocol (IP) address
+- the advertising identifier
+- an email address
+- location data
+- a home address
+- data held by a hospital or doctor, symbol that identifies a person
+- an identification card number
+
+Since you have now passed on my IP address without my consent, even though there is no need or legitimate interest to pass it on (as you could have saved Google Fonts content locally on your server to display the content), you are in breach of the GDPR. You are also violating my right to informational self-determination.
+
+I also want to encourage you to find the right technical and security solutions for the above-mentioned (and all integrated third-party services) as soon as possible, because according to announcements on the official EU website, the laws and penalties for violations of privacy rights will be significantly stricter. This is, first of all, honest and well-intentioned advice.
+
+Thousands of people visit your website and their data is being transmitted without consent.Imagine a situation where thousands of people seek compensation for a data breach or file a lawsuit against your company and you as a responsible person. That's why I'd like to draw your attention to this issue today and encourage you to integrate GDPR-compliant Google Fonts.
+
+According to Art. 82 GDPR, those affected are entitled to compensation.This is also confirmed by the example of the following sentences:
+On January 20, 2022, by the District Court of Munich under number 3 O 17493/20 https://rewis.io/juicios/juicio/lhm-20-01-2022-3-o-1749320,
+and in this case, the Austrian website was found to be in violation of the GDPR
+https://techcrunch.com/2022/01/12/austrian-dpa-schrems-ii/
+
+You can find more information about personal data charges (GDPR) and penalty claims by searching the internet.
+
+However, since I am also affected and my inconvenience of the transfer of my data is enormous, upon learning of the transfer of my data I have launched an investigation into what is being done with my data and in what ways it can be used.
+During the research and learning about it I became more concerned about privacy laws and it took a lot of my time, which began to directly affect my private life.
+
+I want to point out that my intentions are well-intentioned and to point out to you an omission that anyone who does not correct can face huge financial and other consequences.
+
+I found out that according to the GDPR, for this type of violation of my privacy, I have the right to compensation for non-material damage, and I want to use that right according to Art. 82 GDPR
+Art. 82 GDPR - Right to compensation and liability - GDPR.eu.
+
+I refer to the previous sentences.
+
+Please make the payment of €100 by January 12, 2023
+
+After your payment of €100, I confirm that I waive all other claims related to this case of non-compliance with GDPR - illegal data sharing.
+
+I offer the following payment methods:
+If you choose WESTERN UNION, after the payment you need to send me the MTCN code and the payer's details (name and surname) because I need this information to withdraw funds.
+
+
+BANK ACCOUNT:
+
+\*\*\*
+
+WESTERN UNION:
+
+\*\*\*
+
+CRYPTO PAYMENTS:
+
+\*\*\*
+
+
+I hope this is how we end the topic and that my comment today was useful to you.
+Please make your website GDPR compliant in the future or your business could face major consequences.
+
+With respect,
+
+Mustafa Sisic
