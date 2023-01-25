@@ -219,6 +219,7 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > Early in the morning of 17 July 1997, human error at Network Solutions causes the DNS table for .com and .net domains to become corrupted, making millions of systems unreachable.
 
 [- RFC 2235: Hobbes' Internet Timeline](https://tools.ietf.org/html/rfc2235)
+<!-- NCXed -->
 
 > There are really only two types of computations: calculating stuff about an unchanging thing, and calculating a new version of a thing that is changing over time. Recognizing this simplifies the debate over functional versus imperative programming.
 
@@ -1041,7 +1042,7 @@ The first step in fixing a broken program is getting it to fail repeatably.
 > If you determine "human error" as the root cause, then you're doing it wrong.
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCX next -->
+<!-- NCXed -->
 
 > There are very few network restrictions creative and determined use of ssh(1) port forwarding can't overcome. This is both incredibly useful and concerning.
 
@@ -1061,7 +1062,7 @@ The first step in fixing a broken program is getting it to fail repeatably.
 > Debugging any sufficiently complex open source product is indistinguishable from reverse engineering a black box.
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCX next -->
+<!-- NCXed -->
 
 > At some point in your career you will implement half of Kerberos. Poorly.
 
