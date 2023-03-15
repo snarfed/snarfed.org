@@ -377,6 +377,7 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > If software cannot be maintained, then it will be rewritten.
 
 \- Dave Cheney
+<!-- NCXed -->
 
 > If you have a procedure with 10 parameters, you probably missed some.
 
@@ -441,6 +442,7 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > The only thing you will get from a Big Bang Rewrite is a big bang.
 
 \- Martin Fowler
+<!-- NCXed -->
 
 > The first step of any project is to grossly underestimate its complexity and difficulty.
 
@@ -559,10 +561,6 @@ Corollary:
 > Sometimes the problem is to discover what the problem is.
 
 \- Gordon Glegg
-
-> Code gets rewritten all the time. Don't get attached to it. The ideas are all that matter.
-
-\- Parisa Tabriz
 
 availability | downtime, per year | cost
 --- | --- | ---
@@ -940,6 +938,7 @@ via [@zooko](https://twitter.com/zooko)
 > Beware of bugs in the above code; I have only proved it correct, not tried it.
 
 \- Donald Knuth
+<!-- NCXed -->
 
 > In my experience, all distributed consensus algorithms are either 1: Paxos, 2: Paxos with extra unnecessary cruft, or 3: broken.
 
@@ -954,9 +953,15 @@ via [@zooko](https://twitter.com/zooko)
 
 \- Me
 
+> Code gets rewritten all the time. Don't get attached to it. The ideas are all that matter.
+
+\- Parisa Tabriz
+<!-- NCXed -->
+
 > The idea that new code is better than old is patently absurd. Old code has been used. It has been tested. Lots of bugs have been found, and they’ve been _fixed_. There’s nothing wrong with it. It doesn’t acquire bugs just by sitting around on your hard drive. Au contraire, baby! Is software supposed to be like an old Dodge Dart, that rusts just sitting in the garage? Is software like a teddy bear that’s kind of gross if it’s not made out of _all new material?_
 
 [- Joel Spolsky, _Things You Should Never Do, Part I_](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
+<!-- NCXed -->
 
 The first step in fixing a broken program is getting it to fail repeatably.
 

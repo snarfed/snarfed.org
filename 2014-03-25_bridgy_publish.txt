@@ -26,7 +26,7 @@ Examples are worth a thousand words, like pictures, so let's jump right in.
 <br />
 I posted this
 [microformatted](http://microformats.org/wiki/microformats2)
-[reply](http://indiewebcamp.com/reply) [here](/snarfed.org/2014-03-24_8571), on
+[reply](http://indiewebcamp.com/reply) [here](/2014-03-24_8571), on
 my web site:
 
 <style type="text/css">
@@ -54,8 +54,8 @@ You can use similar microformatted HTML to post original Facebook posts and
 Twitter tweets, [likes and favorites](http://indiewebcamp.com/like) and
 [retweets](http://indiewebcamp.com/repost), and even
 [event RSVPs](http://indiewebcamp.com/rsvp). Check out
-[the docs](https://www.brid.gy/about#publish), or
-[jump right in](https://www.brid.gy/) and try it out. Let me know what you
+[the docs](https://brid.gy/about#publish), or
+[jump right in](https://brid.gy/) and try it out. Let me know what you
 think, and enjoy!
 
 <a class="u-syndication" href="http://news.indiewebcamp.com/post/snarfed.org/2014-03-25_bridgy-publish">

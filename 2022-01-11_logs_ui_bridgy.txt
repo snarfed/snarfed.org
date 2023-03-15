@@ -1,0 +1,41 @@
+48949
+Logs as end user UI
+
+<p class="right third">
+ <img class="shadow" src="/matrix.webp" />
+</p>
+
+A long time ago, I decided to show [Bridgy](https://brid.gy/)'s end users its raw logs. Like, _raw_ logs. HTTP requests, database reads and writes, JSON objects, stack traces, etc. It's an unusual UI feature, but it's been an unqualified success, enough that when I built [Bridgy Fed](https://fed.brid.gy/), I immediately included it and never looked back.
+
+Whenever Bridgy does something nontrivial - [poll a social network account](https://brid.gy/about#checks+your+accounts), [send a webmention](https://brid.gy/about#which), [publish a post](https://brid.gy/about#publishing) - I generally include a link to the server logs for that operation. [Here's an example](/bridgy-poll-log.png), a series of timestamped plain text log messages from a poll of my Twitter account. They include initial config and parameters, account status, each individual Twitter API request, the results of those requests, how Bridgy interpreted them, HTTP requests to my web site, the subsequent actions Bridgy took and why, how the account's status changed, and when the next poll is scheduled for.
+<!--more-->
+
+These kinds of logs can answer a number of common user questions:
+
+* Why isn't Bridgy seeing this post?
+* Why didn't Bridgy send that webmention?
+* Why isn't Bridgy interpreting my [microformats](https://microformats.org/wiki/microformats2) right?
+* Why did Bridgy's request to my web site fail?
+* Why did Bridgy's request to that social network fail?
+* What exact data did Bridgy send in this webmention?
+* What exact data did Bridgy send to that social network?
+* Look what Bridgy did here, is this a bug?
+* etc.
+
+<p class="left third">
+ <a href="/bridgy-poll-log.png">
+  <img class="shadow" src="/bridgy-poll-log-thumb.png" />
+</a></p>
+
+Why do I like this so much? In a word, ROI. I'm not a UX designer or frontend engineer, I dread building UI, so I'm always on the lookout for ways to minimize it or [avoid it altogether](/2015-11-29_keep-bridgy-publish-dumb#No+UI+needed). Unfortunately, Bridgy is a complex tool. It connects to dozens of external services and thousands of web sites, it has complex internal logic in a number of ways, and it requires involved, specific setup on users' parts. I work hard to keep the [docs](https://brid.gy/about) complete and up to date, but in tech, we all know that [users don't read](https://www.google.com/search?q=%22users+don%27t+read%22).
+
+So, as a way to communicate a broad, deep range of complex information, logs give me tremendous bang for the buck. Plain text log messages are flexible, cheap, and widely supported in most infrastructure. I already include logging during development as an [observability](https://newrelic.com/blog/best-practices/what-is-observability) tool for myself. I had to [build an extra handler](https://github.com/snarfed/webutil/blob/main/logs.py) to serve those logs to end users, but that was mostly straightforward. Mostly.
+
+This isn't for the faint of heart though. It's a tricky idea with a number of drawbacks:
+
+* It only works for relatively technical user bases. Plain text logs are _not_ good general-purpose UI. Wading through a wall of fixed width text and technical jargon is akin to [seeing the matrix](https://www.urbandictionary.com/define.php?term=seeing%20the%20matrix). Bridgy's user base _is_ relatively technical, but that's not the norm. For most mainstream users, it's a non-starter.
+* Furthermore, even if _most_ of your users are technical, the fact that logs are bad UI means they may _cause_ confusion in the minority who aren't.
+* Exposing raw logs is risky! Most services have credentials, private data, and other non-public information. Developers often try to keep those out of logs, but some always slips in. That's not critical when logs are internal only, but as soon as you expose them publicly, any exposure is unacceptable. You have to sanitize _all_ non-public information, or at least anything that the logged in user shouldn't see. That work is tedious, detail-oriented, and error-prone.
+* Similarly, logs air all of your dirty laundry. All those quick hacks, shortcuts, missing features, old legacy incompatibilities, internal design decisions, and straight up bugs are on full display for anyone willing to spend the time to look for them. This can be good, transparency and all, but still. You have to be ok with the world looking through your underwear drawer and second guessing everything you do.
+
+Regardless, even considering all of those tradeoffs, I love the logs UI. It's saved me - and users! - countless hours of support and debugging. Consider it next time you build something for developers or other technical people. As low effort, high return, "worse is better" UI goes, it's one of my favorite techniques.
