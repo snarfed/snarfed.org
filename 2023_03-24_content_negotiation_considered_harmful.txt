@@ -5,7 +5,7 @@ Content negotiation considered harmful
  <a href="https://thenewswheel.com/top-5-worst-car-salesmen-from-movies/">
   <img class="u-photo" src="/matilda-used-car-salesman-harry-wormwood.jpg"/>
 </a>
-[_Matilda_](https://www.imdb.com/title/tt0117008/)
+<em><a href="https://www.imdb.com/title/tt0117008/">Matilda</a></em>
 </p>
 
 [Content negotiation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation) is a feature of HTTP that lets clients ask for, and servers return, different content types based on the request's `Accept` header.
