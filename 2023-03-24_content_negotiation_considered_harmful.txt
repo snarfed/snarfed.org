@@ -1,16 +1,17 @@
 49619
 Content negotiation considered harmful
 
-<p class="right third">
+<p class="right half">
  <a href="https://thenewswheel.com/top-5-worst-car-salesmen-from-movies/">
-  <img class="u-photo" src="/matilda-used-car-salesman-harry-wormwood.jpg"/>
+  <img class="u-photo shadow" src="/matilda-used-car-salesman-harry-wormwood.jpg"/>
 </a>
-<em><a href="https://www.imdb.com/title/tt0117008/">Matilda</a></em>
+<em><a href="https://www.imdb.com/title/tt0117008/">Matilda</a></em>, 1996
 </p>
 
 [Content negotiation](https://developer.mozilla.org/en-US/docs/Web/HTTP/Content_negotiation) is a feature of HTTP that lets clients ask for, and servers return, different content types based on the request's `Accept` header.
 
 Sounds great, right? Well, no. Content negotiation is the classic example of an idea that sounds good in theory, but for the vast majority of web developers, turns out to be net harmful in practice. A few reasons:
+<!--more-->
 
 * Most web developers are not aware that conneg exists. This is usually fine, since it's uncommon, but can be an unpleasant surprise when they first hit it and don't understand it.
 * The `Accept` header is notoriously complicated to parse, generate, and fully comply with. Imo much of that complexity is unneeded in practice.

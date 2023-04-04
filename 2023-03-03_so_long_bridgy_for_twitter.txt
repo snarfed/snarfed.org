@@ -1,0 +1,20 @@
+49789
+So long, Twitter API, and thanks for all the fish
+
+<p class="right third">
+ <a href="https://brid.gy/">
+  <img src="/twitter_logo_upside_down.png" /></a></p>
+
+Well, it's come to this. [Twitter is burning](https://twitterisgoinggreat.com/), [a billionaire owes money](https://www.reuters.com/technology/twitter-makes-first-interest-payment-musk-buyout-debt-bloomberg-news-2023-01-30/), [an API will soon get lobotomized](https://twittercommunity.com/t/announcing-new-access-tiers-for-the-twitter-api/188728), so [Bridgy](https://brid.gy/)'s Twitter support will die within the month. [Granary](https://granary.io/)'s and [twitter-atom](https://twitter-atom.appspot.com/) too. [The Twitter API may now be effectively unmaintained](/the-twitter-api-is-now-effectively-unmaintained), but they still managed to find an engineer somewhere to [change a few numbers in the billing code](https://twittercommunity.com/t/announcing-new-access-tiers-for-the-twitter-api/188728) and [update some text on a web page](https://developer.twitter.com/en/docs/twitter-api/getting-started/about-twitter-api).
+
+What a waste. Plenty of ink has been spilled on all this already, I won't belabor the point, but what an utter waste.
+
+Right now, Bridgy uses a free tier of Twitter's API, equivalent to what many other major social networks offer. [By April 29th, this free tier will disappear.](https://twittercommunity.com/t/announcing-new-access-tiers-for-the-twitter-api/188728) If I want to read tweets, my options will be a $100/mo plan with a quota of 10k tweets/mo, roughly .1% of what Bridgy currently uses, or an enterprise plan with unknown quota that [reportedly starts at $42k/mo](https://www.wired.com/story/twitter-data-api-prices-out-nearly-everyone/).
+
+Neither of these options is feasible. Bridgy can't function with .1% of its current usage, and I won't pay Twitter $500k/yr for a little side project.
+
+The silver lining is, after all the chaos and destruction and flight to the [fediverse](https://en.wikipedia.org/wiki/Fediverse), Twitter doesn't feel nearly as important now as it did half a year ago. It's always been Bridgy's biggest user base, [it had a great 11-year run](/2022-01-08_happy-10th-birthday-bridgy), I never quite expected it to end like this, but here we are.
+
+To everyone who used it, thank you for your interest and support over the years! It's been a great ride. And who knows, Elon's [Twitter 2.0](https://blog.twitter.com/en_us/topics/company/2022/twitter-2-0-our-continued-commitment-to-the-public-conversation) is awful at comms and changes its plans all the time, so there's a chance they'll take this all back tomorrow. But assuming it sticks, Bridgy Twitter will stop working on April 29, if not before. I plan to leave it up and running until then.
+
+[A billionaire owes money](https://www.reuters.com/technology/twitter-makes-first-interest-payment-musk-buyout-debt-bloomberg-news-2023-01-30/), [Twitter is burning](https://twitterisgoinggreat.com/), and the future is the [IndieWeb](https://indiemap.org/) and the [fediverse](https://en.wikipedia.org/wiki/Fediverse). Try out [Mastodon with Bridgy, classic or Fed](https://fed.brid.gy/user/), and join us there!

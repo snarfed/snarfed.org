@@ -5,18 +5,20 @@ about
  <a href="/ryan_and_ken_painting_full.jpg">
   <img class="shadow" src="/ryan_profile_square.jpg" /></a></p>
 
-<a href="https://twitter.com/schnarfed" title="Twitter">
-  <span class="genericon genericon-twitter"></span>
-  schnarfed
-</a>  
+<p class="about-links">
+<a href="https://fed.brid.gy/user/snarfed.org" title="Fediverse" class="mastodon-link">
+  <span style="margin-bottom: -3px;"></span>
+  @snarfed.org@snarfed.org
+</a><br>
 <a href="https://github.com/snarfed" title="GitHub">
   <span class="genericon genericon-github"></span>
   snarfed
-</a>  
+</a><br>
 <a href="mailto:public_at_ryanb_dot_org" title="email">
   <span class="genericon genericon-mail" style="vertical-align: text-bottom"></span>
   public&#64;ryanb&#46;org
 </a>
+</p>
 
 <!-- [public encryption key](/pubkey.txt) -->
 
