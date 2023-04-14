@@ -9,7 +9,7 @@ My open source software [projects](#projects), [scripts](#scripts), and [patches
 <a name="projects"></a>
 ### Projects
 
-* [Bridgy](https://brid.gy/) connects your web site to social media. Likes, retweets, mentions, cross-posting, and more. Part of the [IndieWeb](https://indieweb.org/) ecosystem.
+* [Bridgy](https://brid.gy/) connects your web site to social media. Likes, reposts, mentions, cross-posting, and more. Part of the [IndieWeb](https://indieweb.org/) ecosystem.
 
 * [Bridgy Fed](https://fed.brid.gy/) connects your web site to federated social networks natively, via ActivityPub. Lets you reply, like, and repost on <a href="https://joinmastodon.org/">Mastodon</a> and <a href="https://project.hubzilla.org/">Hubzilla</a> from your [IndieWeb](https://indieweb.org/) site, and vice versa.
 

@@ -4,7 +4,7 @@ Responses
 [Posts](/archive#posts) &middot;
 [Pages](/archive#pages) &middot;
 [Replies](#replies) &middot;
-[Retweets](#retweets) &middot;
+[Reposts](#reposts) &middot;
 [Likes](#likes) &middot;
 [Follows](#follows) &middot;
 [RSVPs](#rsvps)
@@ -14,7 +14,7 @@ Responses
 <span id="replies">Recent replies:</span>  
 [catlist name=reply orderby=date order=desc numberposts=20]
 
-<span id="retweets">Recent retweets:</span>  
+<span id="reposts">Recent reposts:</span>  
 [catlist name=repost orderby=date order=desc numberposts=20]
 
 <span id="follows">Recent follows:</span>  
