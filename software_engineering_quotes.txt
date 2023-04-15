@@ -19,6 +19,11 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 \- Me
 <!-- NCXed -->
 
+> Over time, all data approaches either deleted or public.
+
+[- Norton's Law](https://medium.com/message/hello-future-pastebin-readers-39d9b4eb935f)
+<!-- NCX next -->
+
 > Scope wants to creep.
 
 \- [Todd Wolfson](https://twolfson.com/)
@@ -843,6 +848,7 @@ corollary:
 \- Programmer's Bible, Code Psalms 12:56-57
 
 > Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.
+
 ― Jalaluddin Rumi
 
 > Have no fear of perfection.  You'll never reach it.
@@ -1127,6 +1133,7 @@ Corollaries:
 [- 6thgrade4ever](https://twitter.com/6thgrade4ever/status/1433519577892327424)
 
 > A sign you've created a good infrastructure abstraction is that AWS offers it as a service.
+
 [- Jay Kreps](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
 <!-- NCXed -->
 
@@ -1142,6 +1149,19 @@ Corollaries:
 > `test && commit || revert`
 
 [- Kent Beck](https://medium.com/@kentbeck_7670/test-commit-revert-870bbd756864)
+
+> It's always a great feeling when you fix the last bug in a software project. With a big enough project you can have that feeling every few hours, forever.
+
+- Unknown
+<!-- NCX next -->
+
+There are two ways you can get exercise out of a bicycle: you can "overhaul" it, or you can ride it. On the whole, I am not sure that a man who takes his pleasure overhauling does not have the best of the bargain. He is independent of the weather and the wind; the state of the roads troubles him not. Give him a screw-hammer, a bundle of rags, an oil-can, and something to sit down upon, and he is happy for the day. He has to put up with certain disadvantages, of course; there is no joy without alloy. He himself always looks like a tinker, and his machine always suggests the idea that, having stolen it, he has tried to disguise it; but as he rarely gets beyond the first milestone with it, this, perhaps, does not much matter. The mistake some people make is in thinking they can get both forms of sport out of the same machine. This is impossible; no machine will stand the double strain. You must make up your mind whether you are going to be an "overhauler" or a rider.
+
+[- Jerome K Jerome](http://www.cyf-kr.edu.pl/rowery/3men03.html)
+
+> Having a discussion about technical debt is a luxury. Being able to talk about technical debt implies success.
+
+- Kelly Sutton
 
 <!--
 https://en.wikiquote.org/wiki/Computer_science
@@ -1328,14 +1348,6 @@ Furious activity is no substitute for understanding.
 
 If you think good architecture is expensive, try bad architecture.
 \- Brian Foote and Joseph Yoder
-
-There are two ways you can get exercise out of a bicycle: you can "overhaul" it, or you can ride it. On the whole, I am not sure that a man who takes his pleasure overhauling does not have the best of the bargain. He is independent of the weather and the wind; the state of the roads troubles him not. Give him a screw-hammer, a bundle of rags, an oil-can, and something to sit down upon, and he is happy for the day. He has to put up with certain disadvantages, of course; there is no joy without alloy. He himself always looks like a tinker, and his machine always suggests the idea that, having stolen it, he has tried to disguise it; but as he rarely gets beyond the first milestone with it, this, perhaps, does not much matter. The mistake some people make is in thinking they can get both forms of sport out of the same machine. This is impossible; no machine will stand the double strain. You must make up your mind whether you are going to be an "overhauler" or a rider.
-
-- Jerome K Jerome, http://www.cyf-kr.edu.pl/rowery/3men03.html
-
-Having a discussion about technical debt is a luxury. Being able to talk about technical debt implies success.
-
-- Kelly Sutton
 
 All PaaSes will expand until they are indistinguishable from IaaS.
 
