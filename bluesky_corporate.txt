@@ -1,7 +1,9 @@
 50042
 Bluesky corporate ownership and structure
 
-Collecting details here from various places on [Bluesky PBLLC](https://blueskyweb.xyz/)'s corporate structure, ownership, governance, and history.
+Collecting details here from various places on [Bluesky PBLLC](https://blueskyweb.xyz/)'s corporate structure, ownership, governance, and history, along with a few technical design decisions.
+
+## Corporate
 
 > Today, we are excited to announce the formation of the Bluesky PBLLC, a Public Benefit LLC that will implement that vision as an independent organization....We were formed in late 2021 with the initial funding provided by Twitter. Our board members include Jack Dorsey, a founder of Twitter, Jeremie Miller, the inventor of Jabber/XMPP, and Jay Graber, CEO of the Bluesky company.
 
@@ -23,6 +25,10 @@ Collecting details here from various places on [Bluesky PBLLC](https://blueskywe
 
 [- @bluesky on Twitter](https://twitter.com/bluesky/status/1518707603232083968), Apr 25, 2022
 
+> Jay does hold the majority of the equity but everyone on the team has equity as well, and (currently) no outside investors even own any of the company (which is a public benefit LLC to boot)
+
+[- @whyrusleeping on Bluesky](https://bsky.app/profile/why.bsky.team/post/3juihbj6zfs2i) ([public mirror](https://blue.amazingca.dev/?username=why.bsky.team&postid=3juihbj6zfs2i)), Apr 28 2023
+
 > twitter holds no stake. jack is 1 of 3 board members: me and @jeremie.com are the others
 
 [- @jay.bsky.team on Bluesky](https://staging.bsky.app/profile/jay.bsky.team/post/3ju65fvwo6h2q) ([public mirror](https://blue.amazingca.dev/?username=jay.bsky.team&postid=3ju65fvwo6h2q)), Apr 25 2023
@@ -39,3 +45,36 @@ Collecting details here from various places on [Bluesky PBLLC](https://blueskywe
 [@dave.tf on Bluesky, asking about ownership](https://staging.bsky.app/profile/dave.tf/post/3ju2qff7y4b2s) ([public mirror](https://blue.amazingca.dev/?username=dave.tf&postid=3ju2qff7y4b2s)), Apr 25 2023
 
 Also, as far as we know from various conversations, Bluesky hasn't yet taken any other funding beyond Twitter's initial $13M grant. It's a substantial amount of money, they've only existed for a couple years, the team is still small, and they probably don't have many costs beyond headcount. They have ideas for revenue down the line, but they say that won't be a focus for a while yet. (From threads on Bluesky that I saw originally but haven't managed to find again yet to cite. Please add links in the comments if you find them!)
+
+
+## Technical
+
+### Open Source
+
+Most of the Bluesky code is open source. [The main atproto repo](https://github.com/bluesky-social/atproto) includes the full server and PDS that runs the current live instance, the reference AT Protocol and Bluesky API implementations, and all of the `com.atproto` and `app.bsky` lexicons.
+
+Beyond that, the [indigo repo](https://github.com/bluesky-social/indigo) includes an in-progress PDS, invite handling, and other support code. The [did-method-plc repo](https://github.com/bluesky-social/did-method-plc) includes a [`did:plc`](https://atproto.com/specs/did-plc) reference implementation and registry, [plc.director](https://plc.directory/). The [bluesky-social GitHub org](https://github.com/bluesky-social) also has other miscellaneous repos with open source code.
+
+The official web frontend at [staging.bsky.app](https://staging.bsky.app/) and iOS and Android client apps are currently closed source (as of May 2023). The team hopes to open source them eventaully.
+
+
+### Main server features and stack
+
+The main live server (PDS) underneath [staging.bsky.app](https://staging.bsky.app/) and the mobile apps currently runs the [TypeScript code in the main atproto repo](https://github.com/bluesky-social/atproto/tree/main/packages/pds). Docs and guides on running the PDS from that code are thin, but [this one from the adenosine repo is useful](https://gitlab.com/bnewbold/adenosine/-/blob/main/notes/atproto_quickstart.md), if a bit dated.
+
+Federation between PDS instances is not currently enabled, but the team hopes to finish it and turn it on soon. A few people outside the team are already running their own PDSes, notably [stems.social](https://stems.social/), which runs Bluesky's open source TypeScript code with an extension to support their Handshake blockchain-based domain names. These third party PDSes are currently islands that don't communicate with each other.
+
+Search on the main server is currently powered by [Elastic](https://www.elastic.co/). That integration is probably not open source, and it seems to be a one-off, ie not really part of [AT Protocol's future "big world" indexing design](https://atproto.com/guides/overview#achieving-scale).
+
+
+### ActivityPub
+
+The Bluesky team was well aware of and understood [ActivityPub](https://activitypub.rocks/), the protocol underlying the [fediverse](https://en.wikipedia.org/wiki/Fediverse), before they decided to create their own protocol. The main reason they didn't go with AP was that they wanted true account portability:
+
+> Account portability is the major reason why we chose to build a separate protocol. We consider portability to be crucial because it protects users from sudden bans, server shutdowns, and policy disagreements.
+
+[_- FAQ: Why not use ActivityPub?_](https://atproto.com/guides/faq#why-not-use-activitypub)
+
+Mastodon does have [non-standard, partial support for account migration](https://docs.joinmastodon.org/user/moving/#migration) between two Mastodon instances. It moves your followers and displays a human-readable "redirect" on the old account's profile. Mastodon also has separate support for exporting and importing your posts. These have awkward UX at best, but more importantly, when you use them to migrate Mastodon accounts, your fediverse identity changes from user@old to user@new. [AT Protocol's account portability](https://atproto.com/guides/overview#account-portability) preserves your identity across migrations, and works even if your server goes offline or malicious.
+
+Other motivations included for a new protocol included [global indexing support](https://atproto.com/guides/overview#achieving-scale), a [preference for domain names](https://blueskyweb.xyz/blog/3-6-2023-domain-names-as-handles-in-bluesky) as identities instead of @-@ handles, and [stronger schema support](https://atproto.com/guides/lexicon) in the data model.
