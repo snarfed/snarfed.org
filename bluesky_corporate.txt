@@ -33,6 +33,12 @@ Collecting details here from various places on [Bluesky PBLLC](https://blueskywe
 
 [- @jay.bsky.team on Bluesky](https://staging.bsky.app/profile/jay.bsky.team/post/3ju65fvwo6h2q) ([public mirror](https://blue.amazingca.dev/?username=jay.bsky.team&postid=3ju65fvwo6h2q)), Apr 25 2023
 
+> why: Jack does have some advisors shares for serving on the board, but its quite a small amount IIRC. This is very standard practice for any board member of any company.  
+> Ryan: I won't make you quote a number, but I'll assume it's < 1%. "No equity" is a clearer and stronger message than "quite a small amount," so I'm hoping to preserve the clarity as much as possible.  
+> ^ [liked by why]
+
+[- @why, @snarfed.org on Bluesky](https://bsky.app/profile/why.bsky.team/post/3jv3wondcup2g)
+
 > @moneyries: jack might sell y’all to the highest bidder, careful now  
 > @jay: [he] can't  
 > @csm : Because of board structure? Or org structure?  
@@ -51,11 +57,9 @@ Also, as far as we know from various conversations, Bluesky hasn't yet taken any
 
 ### Open Source
 
-Most of the Bluesky code is open source. [The main atproto repo](https://github.com/bluesky-social/atproto) includes the full server and PDS that runs the current live instance, the reference AT Protocol and Bluesky API implementations, and all of the `com.atproto` and `app.bsky` lexicons.
+The Bluesky code is open source. [The main atproto repo](https://github.com/bluesky-social/atproto) includes the full server and PDS that runs the current live instance at [bsky.app](https://bsky.app/), the reference AT Protocol and Bluesky API implementations, and all of the `com.atproto` and `app.bsky` lexicons. [The social-app repo](https://github.com/bluesky-social/social-app/) contains the web and mobile apps.
 
-Beyond that, the [indigo repo](https://github.com/bluesky-social/indigo) includes an in-progress PDS, invite handling, and other support code. The [did-method-plc repo](https://github.com/bluesky-social/did-method-plc) includes a [`did:plc`](https://atproto.com/specs/did-plc) reference implementation and registry, [plc.director](https://plc.directory/). The [bluesky-social GitHub org](https://github.com/bluesky-social) also has other miscellaneous repos with open source code.
-
-The official web frontend at [staging.bsky.app](https://staging.bsky.app/) and iOS and Android client apps are currently closed source (as of May 2023). The team hopes to open source them eventaully.
+Beyond that, the [indigo repo](https://github.com/bluesky-social/indigo) includes an in-progress PDS, invite handling, and other support code. The [did-method-plc repo](https://github.com/bluesky-social/did-method-plc) includes a [`did:plc`](https://atproto.com/specs/did-plc) reference implementation and registry, [plc.directory](https://plc.directory/). The [bluesky-social GitHub org](https://github.com/bluesky-social) also has other miscellaneous repos with open source code.
 
 
 ### Main server features and stack

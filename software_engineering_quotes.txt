@@ -177,8 +177,7 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 >   
 > not to oversimplify: first you have to flatten the rock and put lightning inside it
 
-\- ben ([@daisyowl](https://twitter.com/daisyowl/status/8418063799
-62646532))
+[\- ben (@daisyowl)](https://twitter.com/daisyowl/status/841806379962646532)
 
 > The more equally attractive two alternatives seem, the harder it can be to choose between them — no matter that, to the same degree, the choice can only matter less.
 
@@ -460,25 +459,25 @@ Corollary:
 [-Douglas Hofstadter](https://en.wikipedia.org/wiki/Hofstadter%27s_law)
 <!-- NCXed -->
 
-> [Programming is like a “choose your own adventure game” except every path leads you to a StackOverflow question from 2013 describing the same bug, with no answer.](https://twitter.com/ppathole/status/1120660372267122689)
+> Programming is like a “choose your own adventure game” except every path leads you to a StackOverflow question from 2013 describing the same bug, with no answer.
 
-\- Pranay Pathole
+[- Pranay Pathole](https://twitter.com/ppathole/status/1120660372267122689)
 
 > Of all the technical debt you can incur, the worst in my experience is bad names - database columns, variables, functions, etc. Fix those IMMEDIATELY before they metastasize all over your codebase and become extremely painful to fix later...and they always do.
 
 \- Jeff Atwood
 
-> [Betting on an apocalyptic future in every line of code - as if any assumption might break in the future - that is the path to immense developer productivity waste.](https://twitter.com/evolvable/status/1113031675796025347)
+> Betting on an apocalyptic future in every line of code - as if any assumption might break in the future - that is the path to immense developer productivity waste.
 
-\- Graham Lee, paraphrased
+[- Graham Lee, paraphrased](https://twitter.com/evolvable/status/1113031675796025347)
 
 > [It's amusing how hard it is to get computers to behave deterministically. I mean, they just had the one job.](https://twitter.com/aboodman/status/11217981787542732850)
 
 \- Aaron Boodman
 
-> [There is a rising tide of security breaches. There is an even faster rising tide of hysteria. Yet the world is doing remarkably well overall. This continuing general progress of society suggests that cyber security is not very important.](https://www.schneier.com/blog/archives/2019/03/an_argument_tha.html)
+> There is a rising tide of security breaches. There is an even faster rising tide of hysteria. Yet the world is doing remarkably well overall. This continuing general progress of society suggests that cyber security is not very important.
 
-\- Andrew Odlyzko
+[- Andrew Odlyzko](https://www.schneier.com/blog/archives/2019/03/an_argument_tha.html)
 
 > First you listen to the users; then you ignore them.
 
@@ -536,9 +535,9 @@ Corollary:
 
 \- Unknown
 
-> [As a programmer, my core strengths have always been apologizing to users and composing funny tweets.](https://blog.pinboard.in/2013/04/the_matasano_crypto_challenges/)
+> As a programmer, my core strengths have always been apologizing to users and composing funny tweets.
 
-\- [Maciej Cegłowski](https://twitter.com/@pinboard)
+[- Maciej Cegłowski](https://blog.pinboard.in/2013/04/the_matasano_crypto_challenges/)
 
 > Absence is beauty, in error logs.
 
@@ -582,15 +581,15 @@ availability | downtime, per year | cost
 >
 > When you have resolved this error, use git rebase --continue
 
-\- Andrew Chatham ([tweet](https://twitter.com/Jumbosaur/status/1017125769871544320))
+[- Andrew Chatham](https://twitter.com/Jumbosaur/status/1017125769871544320)
 
 > Testing leads to failure, and failure leads to understanding.
 
 \- [Burt Rutan](https://en.wikipedia.org/wiki/Burt_Rutan) (SpaceShipOne designer)
 
-> [You have a problem. You use a distributed system. Now you still have a problem, but you no longer know where.](https://twitter.com/llogiq/status/1010831210199777280)
+> You have a problem. You use a distributed system. Now you still have a problem, but you no longer know where.
 
-\- [@llogiq](https://twitter.com/@llogiq)
+[- @llogiq](https://twitter.com/llogiq/status/1010831210199777280)
 <!-- NCXed -->
 
 > [Hyrum's Law](http://www.hyrumslaw.com/): With a sufficient number of users of an API, it does not matter what you promise in the contract: all observable behaviors will be depended on by somebody.
@@ -598,13 +597,13 @@ availability | downtime, per year | cost
 \- Hyrum Wright; [obligatory XKCD](https://xkcd.com/1172/)
 <!-- NCXed -->
 
-> [Software engineering is what happens to computer programming when you add time and other programmers.](https://research.swtch.com/vgo-eng)
+> Software engineering is what happens to computer programming when you add time and other programmers.
 
-\- Russ Cox and Titus Winters
+[- Russ Cox, Titus Winters](https://research.swtch.com/vgo-eng)
 
-> [Programming is the art of knowing when to use google, when to ask for help, and when to go for a walk around the block.](https://twitter.com/dnscollective/status/412855470294962176)
+> Programming is the art of knowing when to use google, when to ask for help, and when to go for a walk around the block.
 
-\-Dennis Collinson
+[-Dennis Collinson](https://twitter.com/dnscollective/status/412855470294962176)
 
 > Sometimes, the elegant implementation is just a function. Not a method. Not a class. Not a framework. Just a function.
 
@@ -614,9 +613,9 @@ availability | downtime, per year | cost
 
 \- Peter Weinberger
 
-> [Goodhart's Law: When a measure becomes a target, it ceases to be a good measure.](https://en.wikipedia.org/wiki/Goodhart%27s_law)
+> Goodhart's Law: When a measure becomes a target, it ceases to be a good measure.
 
-\- Charles Goodhart
+[- Charles Goodhart](https://en.wikipedia.org/wiki/Goodhart%27s_law)
 
 > Walking on water and developing software from a specification are easy if both are frozen.
 
@@ -849,7 +848,7 @@ corollary:
 
 > Yesterday I was clever, so I wanted to change the world. Today I am wise, so I am changing myself.
 
-― Jalaluddin Rumi
+\- Jalaluddin Rumi
 
 > Have no fear of perfection.  You'll never reach it.
 
@@ -969,7 +968,7 @@ via [@zooko](https://twitter.com/zooko)
 [- Joel Spolsky, _Things You Should Never Do, Part I_](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
 <!-- NCXed -->
 
-The first step in fixing a broken program is getting it to fail repeatably.
+> The first step in fixing a broken program is getting it to fail repeatably.
 
 \- Tom Duff
 
@@ -1155,7 +1154,7 @@ Corollaries:
 \- Unknown
 <!-- NCXed -->
 
-There are two ways you can get exercise out of a bicycle: you can "overhaul" it, or you can ride it. On the whole, I am not sure that a man who takes his pleasure overhauling does not have the best of the bargain. He is independent of the weather and the wind; the state of the roads troubles him not. Give him a screw-hammer, a bundle of rags, an oil-can, and something to sit down upon, and he is happy for the day. He has to put up with certain disadvantages, of course; there is no joy without alloy. He himself always looks like a tinker, and his machine always suggests the idea that, having stolen it, he has tried to disguise it; but as he rarely gets beyond the first milestone with it, this, perhaps, does not much matter. The mistake some people make is in thinking they can get both forms of sport out of the same machine. This is impossible; no machine will stand the double strain. You must make up your mind whether you are going to be an "overhauler" or a rider.
+> There are two ways you can get exercise out of a bicycle: you can "overhaul" it, or you can ride it. On the whole, I am not sure that a man who takes his pleasure overhauling does not have the best of the bargain. He is independent of the weather and the wind; the state of the roads troubles him not. Give him a screw-hammer, a bundle of rags, an oil-can, and something to sit down upon, and he is happy for the day. He has to put up with certain disadvantages, of course; there is no joy without alloy. He himself always looks like a tinker, and his machine always suggests the idea that, having stolen it, he has tried to disguise it; but as he rarely gets beyond the first milestone with it, this, perhaps, does not much matter. The mistake some people make is in thinking they can get both forms of sport out of the same machine. This is impossible; no machine will stand the double strain. You must make up your mind whether you are going to be an "overhauler" or a rider.
 
 [- Jerome K Jerome](http://www.cyf-kr.edu.pl/rowery/3men03.html)
 
@@ -1172,10 +1171,13 @@ There are two ways you can get exercise out of a bicycle: you can "overhaul" it,
 \- Brian W. Kernighan
 <!-- NCX next -->
 
-I really didn't foresee the Internet. But then, neither did the computer industry. Not that that tells us very much of course - the computer industry didn't even foresee that the century was going to end.
+> I really didn't foresee the Internet. But then, neither did the computer industry. Not that that tells us very much of course - the computer industry didn't even foresee that the century was going to end.
 
 \- Douglas Adams
 
+> It is generally recognized that the current approach of using IP address both as a locator and as an identifier was a poor design choice.
+
+- [David D. Clark, _Designing an Internet_](https://mitpress.mit.edu/9780262038607/)
 
 <!--
 https://en.wikiquote.org/wiki/Computer_science
@@ -1446,7 +1448,7 @@ https://twitter.com/larsrosenquist/status/1200765420543840257
 https://www.theregister.co.uk/2018/07/25/google_app_engine_python_3/
 
 Crypto is a tool for turning a whole swathe of problems into key management problems. Key management problems are way harder than (virtually all) cryptographers think.
-https://twitter.com/LeaKissner/status/1198595109756887040?s=19
+https://twitter.com/LeaKissner/status/1198595109756887040
 
 Law is a lot more ex post facto, and he-who-has-the-gold-makes-the-rules, than it would appear.
 
