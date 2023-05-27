@@ -1,7 +1,11 @@
+50288
 
+<p class="right third">
+ <a href="https://www.thoughtworks.com/radar">
+  <img src="/thoughtworks_radar_quadrant.png" /></a></p>
 
-I don't spend much time on software engineering media, if any, but one of the few pieces of analysis I regularly read and love is the Thoughtworks Radar. Broad, clear-eyed, hands on, eminently useful. Bite-sized analyses of ~100 tools and techniques (both new and old), adopt/trial/assess/hold recommendations, and a nod toward overarching themes. ~40 pages, twice a year.
+I don't spend much time on software engineering industry reports, but the [Thoughtworks Radar](https://www.thoughtworks.com/radar) is one I love. Broad, clear-eyed, hands on, eminently useful. Bite-sized analyses of ~100 tools and techniques, new and old, with recommendations to adopt or trial or assess or hold, and a brief nod toward overarching themes. It's evidently become so successful that it's [spawned an entire category](https://www.workingsoftware.dev/inspirational-technology-radar-examples/).
 
-The latest volume came out recently, and as usual, it's a banger. I'm only maybe a quarter of the way through, and I already have todos to learn more about run cost prediction, 
+The [latest volume](https://www.thoughtworks.com/radar/archive#download-current-radar) came out last month, and as usual, it's a banger. I'm only maybe a third of the way through, and I already have todos to learn more about [run cost prediction](https://www.thoughtworks.com/radar/techniques/run-cost-as-architecture-fitness-function), [accessibility testing](https://www.thoughtworks.com/radar/techniques/intelligent-guided-accessibility-tests), and [Logseq](https://www.thoughtworks.com/radar/techniques/logseq-as-team-knowledge-base), among others.
 
-Not an ad, I have no affiliation. Just good stuff.
+Free, ~40 pages, twice a year. Not an ad, I have no affiliation with them, just a fan.
