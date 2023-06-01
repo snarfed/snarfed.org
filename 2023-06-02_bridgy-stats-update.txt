@@ -1,0 +1,77 @@
+50358
+Bridgy stats update
+
+<style type="text/css">
+.half {
+    margin-bottom: 1em;
+}
+.half.right {
+    clear: both;
+    margin-left: 0px;
+    margin-right: -10px;
+}
+.half.left {
+    margin-right: 0px;
+}
+</style>
+
+<p class="right third">
+ <a href="https://brid.gy/">
+  <img src="/bridgy_logo.png" /></a></p>
+
+Well well well. This year's [Bridgy](https://brid.gy/) stats update has shaped up to be  one the most eventful one in a long time.
+
+Top line numbers: 6278 accounts (after subtracting Twitter!), 32M silo responses, 5.3M links, 2.5M webmentions sent, 125K posts published, 138K [blog posts processed](https://brid.gy/about#blogs), 18K [blog webmentions](https://brid.gy/about#blogs) received.
+
+<p class="right half">
+ <a href="/bridgy_stats/2023/accounts_stacked.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2023/accounts_stacked_thumb.png" /></a>
+</p>
+<p class="left half">
+ <a href="/bridgy_stats/2023/webmentions.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2023/webmentions_thumb.png" /></a>
+</p>
+<p class="right half">
+ <a href="/bridgy_stats/2023/publishes.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2023/publishes_thumb.png" /></a></p>
+</p>
+<p class="left half">
+ <a href="/bridgy_stats/2023/features.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2023/features_thumb.png" /></a>
+</p>
+<p class="right half">
+ <a href="/bridgy_stats/2023/costs_users.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2023/costs_users_thumb.png" /></a></p>
+</p>
+<!--more-->
+
+<br style="clear: both">
+
+Trends and growth are mostly stable [since last year](/2022-06-05_bridgy-stats-update-7).
+
+<br style="clear: both">
+
+<p class="right half">
+ <a href="/bridgy_stats/2023/accounts_stacked_recent.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2023/accounts_stacked_recent_thumb.png" /></a>
+</p>
+<p class="left half">
+ <a href="/bridgy_stats/2023/costs_users_recent.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2023/costs_users_recent_thumb.png" /></a>
+</p>
+
+<br style="clear: both">
+
+TODO
+Costs are flat in Bridgy specifically, but users are way down, so maybe there are new efficiencies to be found there. Costs in other projects are up!
+
+[Data](https://docs.google.com/spreadsheets/d/1VhGiZ9Z9PEl7f9ciiVZZgupNcUTsRVltQ8_CqFETpfU/edit),
+[methodology](https://github.com/snarfed/bridgy#stats),
+[previously](/2022-06-05_bridgy-stats-update-7),
+[previously](/2021-06-05_bridgy-stats-update-6),
+[previously](/2020-06-27_bridgy-stats-update-5),
+[previously](/2019-01-02_bridgy-stats-update-4),
+[previously](/2018-01-02_bridgy-stats-update-3),
+[previously](/2016-06-06_bridgy-stats-update-2),
+[previously](/2015-12-07_bridgy-stats-update),
+[previously](/2014-11-06_happy-1000th-bridgy).
