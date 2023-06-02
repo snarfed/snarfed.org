@@ -19,35 +19,29 @@ Bridgy stats update
  <a href="https://brid.gy/">
   <img src="/bridgy_logo.png" /></a></p>
 
-Well well well. This year's [Bridgy](https://brid.gy/) stats update has shaped up to be  one the most eventful one in a long time.
-
-Top line numbers: 6278 accounts (after subtracting Twitter!), 32M silo responses, 5.3M links, 2.5M webmentions sent, 125K posts published, 138K [blog posts processed](https://brid.gy/about#blogs), 18K [blog webmentions](https://brid.gy/about#blogs) received.
+Well, well, well, what do we have here. It's this year's [Bridgy](https://brid.gy/) stats update, and it's shaped up to be one the most eventful in a long time. Notice anything new?
 
 <p class="right half">
  <a href="/bridgy_stats/2023/accounts_stacked.png">
   <img class="u-photo shadow" src="/bridgy_stats/2023/accounts_stacked_thumb.png" /></a>
 </p>
 <p class="left half">
- <a href="/bridgy_stats/2023/webmentions.png">
-  <img class="u-photo shadow" src="/bridgy_stats/2023/webmentions_thumb.png" /></a>
-</p>
-<p class="right half">
- <a href="/bridgy_stats/2023/publishes.png">
-  <img class="u-photo shadow" src="/bridgy_stats/2023/publishes_thumb.png" /></a></p>
-</p>
-<p class="left half">
  <a href="/bridgy_stats/2023/features.png">
   <img class="u-photo shadow" src="/bridgy_stats/2023/features_thumb.png" /></a>
 </p>
 <p class="right half">
- <a href="/bridgy_stats/2023/costs_users.png">
-  <img class="u-photo shadow" src="/bridgy_stats/2023/costs_users_thumb.png" /></a></p>
+ <a href="/bridgy_stats/2023/webmentions.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2023/webmentions_thumb.png" /></a>
+</p>
+<p class="left half">
+ <a href="/bridgy_stats/2023/publishes.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2023/publishes_thumb.png" /></a></p>
 </p>
 <!--more-->
 
 <br style="clear: both">
 
-Trends and growth are mostly stable [since last year](/2022-06-05_bridgy-stats-update-7).
+That's right, there's a huge ass cliff just a couple months ago. Let's see that a bit closer.
 
 <br style="clear: both">
 
@@ -59,11 +53,53 @@ Trends and growth are mostly stable [since last year](/2022-06-05_bridgy-stats-u
  <a href="/bridgy_stats/2023/costs_users_recent.png">
   <img class="u-photo shadow" src="/bridgy_stats/2023/costs_users_recent_thumb.png" /></a>
 </p>
+<p class="right half">
+ <a href="/bridgy_stats/2023/costs_users.png">
+  <img class="u-photo shadow" src="/bridgy_stats/2023/costs_users_thumb.png" /></a></p>
+</p>
 
 <br style="clear: both">
 
-TODO
-Costs are flat in Bridgy specifically, but users are way down, so maybe there are new efficiencies to be found there. Costs in other projects are up!
+If you guessed that cliff was Twitter, ding ding ding, you win. [The Twitter API apocalypse came and went](/2023-04-03_so-long-twitter-api-and-thanks-for-all-the-fish), and while they still haven't managed to found the off button itself - some smaller apps like [granary](https://granary.io/) are still up and running just fine - they did manually suspend Bridgy and most other nontrivial apps.
+
+Twitter accounted for a majority of Bridgy accounts, 4k of the 10k total accounts as of April 2023, along with backfeed and publish volume, which you can see in the plateaus in sent webmentions and successful publishes over the last couple months.
+
+The other striking trend is the marked uptick in Mastodon account growth since Elon took over back in November. It's more than doubled in the last 6 months, from 557 on Nov. 1 to 1125 yesterday! Exodus indeed.
+
+In Bridgy land, the Twitter implosion and Mastodon growth has spurred much more development on [granary](https://granary.io/) and especially [Bridgy Fed](https://fed.brid.gy/), its decentralized/federated cousin, than on Bridgy itself. I expect that to continue for the foreseeable future.
+
+<br style="clear: both">
+
+<p class="left half">
+ <a href="https://github.com/snarfed/bridgy-fed/graphs/contributors?from=2022-08-04&to=2023-06-02&type=a">
+  <img class="u-photo shadow" src="/bridgy_stats/2023/github_additions_bridgy.png" /></a>
+</p>
+<p class="right half">
+ <a href="https://github.com/snarfed/bridgy-fed/graphs/contributors?from=2022-08-04&to=2023-06-02&type=c">
+  <img class="u-photo shadow" src="/bridgy_stats/2023/github_commits_bridgy.png" /></a>
+</p>
+
+<p class="left half">
+ <a href="https://github.com/snarfed/bridgy/graphs/contributors?from=2022-08-04&to=2023-06-02&type=a">
+  <img class="u-photo shadow" src="/bridgy_stats/2023/github_additions_bridgy_fed.png" /></a>
+</p>
+<p class="right half">
+ <a href="https://github.com/snarfed/bridgy/graphs/contributors?from=2022-08-04&to=2023-06-02&type=c">
+  <img class="u-photo shadow" src="/bridgy_stats/2023/github_commits_bridgy_fed.png" /></a>
+</p>
+
+<p class="left half">
+ <a href="https://github.com/snarfed/granary/graphs/contributors?from=2022-08-04&to=2023-06-02&type=a">
+  <img class="u-photo shadow" src="/bridgy_stats/2023/github_additions_granary.png" /></a>
+</p>
+<p class="right half">
+ <a href="https://github.com/snarfed/granary/graphs/contributors?from=2022-08-04&to=2023-06-02&type=c">
+  <img class="u-photo shadow" src="/bridgy_stats/2023/github_commits_granary.png" /></a>
+</p>
+
+<br style="clear: both">
+
+As for the rest of the numbers: 6278 accounts (after subtracting Twitter), 32M silo responses, 5.3M links, 2.5M webmentions sent, 125K posts published, 138K [blog posts processed](https://brid.gy/about#blogs), 18K [blog webmentions](https://brid.gy/about#blogs) received. Apart from Twitter and Mastodon, trends and growth and costs are largely stable [since last year](/2022-06-05_bridgy-stats-update-7).
 
 [Data](https://docs.google.com/spreadsheets/d/1VhGiZ9Z9PEl7f9ciiVZZgupNcUTsRVltQ8_CqFETpfU/edit),
 [methodology](https://github.com/snarfed/bridgy#stats),
