@@ -1,0 +1,35 @@
+49946
+I'm not eating my own dog food
+
+<p class="right half">
+ <img class="shadow" src="/dog_not_eating_dog_food.webp" />
+  <a class="captioned" href="https://www.petmd.com/dog/symptoms/why-my-dog-not-eating">PetMD</a>
+</p>
+
+...or if you prefer, [eating my own cooking](https://indieweb.org/eat_what_you_cook), or [scratching my own itch](https://indieweb.org/scratch_your_own_itch), or [drinking my own champagne](https://indieweb.org/selfdogfood#drinking_our_own_champagne). Sure. These are all metaphors for the idea that if you build something, it turns out better if you use it yourself, especially if you _want_ it yourself. However, when I think about [my projects](https://brid.gy/) [for bridging](https://fed.brid.gy/) [social networks](https://granary.io/), I wonder if I don't use them myself deeply enough. If I'm not the target audience. Is that a problem?
+
+It's not entirely true. Strictly speaking, I do use them. After this post gets published, you'll see a trickle of likes, reposts, and replies from social networks start to show up [down in the comments](#comments), thanks to [Bridgy](https://brid.gy/) and [Bridgy Fed](https://fed.brid.gy/). The part I worry about isn't the tools part, it's the social part. How online social tools should work, how communities should use them, how they affect the ways people interact online. These have all been hot topics for a while now, with social networks pushing "healthy conversations" and Congress haranguing tech execs on Capitol Hill, and even more acutely recently now that [Twitter is burning](https://snarfed.org/2023-04-03_so-long-twitter-api-and-thanks-for-all-the-fish) and a new crop of social networks has sprouted.
+<!--more-->
+
+These questions are complex, deep, and important. Many people have their own slants: big companies on business models, startups [on](https://on.substack.com/p/introducing-notes) [features](https://bere.al/) [and](https://post.news/) [news](https://artifact.news/), [IndieWeb](https://indieweb.org/) on owning your data, the [fediverse](https://en.wikipedia.org/wiki/Fediverse) on [consent and safety](https://www.hughrundle.net/home-invasion/), libertarian techies [on anti-censorship](https://github.com/nostr-protocol/nostr), government officials on...whatever helps them get re-elected, I guess.
+
+I don't know which of these angles is right,  but I do know the issues are important. And as someone building social plumbing and tools, I'm keenly aware that my choices directly impact them, if only for my relatively small user base. They're not easy choices! [In Thorsten Ball's dichotomy](https://registerspill.thorstenball.com/p/two-types-of-software-engineers), I'm fully type 2: if a technical problem requires human behavior, that makes it _more_ difficult to handle, not less.
+
+<p class="left half">
+ <img class="shadow" src="/cebu_taoist_temple_philippines.jpg" />
+ <a class="captioned" href="https://www.shutterstock.com/image-photo/pagoda-dragon-sculpture-taoist-temple-cebu-338318765">Curioso</a>
+</p>
+
+The problem is, I don't have my own angle. I don't know how tech should handle online social interactions - granted, probably no one does for sure - and I'm not particularly qualified or motivated to tackle it. Part of it is that [I don't really hang out on the internet](/2018-09-04_i-dont-hang-out-on-the-internet). I'm [somewhat online](https://en.wikipedia.org/wiki/Extremely_online) in a few bits of open source, but only somewhat, and not a ton elsewhere. I don't post many times a day, I'm not on Twitter or Mastodon for hours at a time, I haven't made many close friends on the internet. I definitely don't have deep experience in community organizing or support.
+
+At the same time, I'm not under any illusion that the tools and services I build are neutral. We've mostly matured beyond "tech isn't good or bad, it's how it's used," especially for social tech. [Joel Spolksy's historical view on this is one of my favorites](https://www.joelonsoftware.com/2003/03/03/building-communities-with-software/), including his "primary axiom of online communities":
+
+> Small software implementation details result in big differences in the way the community develops, behaves, and feels.
+
+I've seen this firsthand with [Bridgy](https://brid.gy/). Most users love it, but I do occasionally hear complaints that it creates surprising [context collapses](https://en.wikipedia.org/wiki/Context_collapse) when someone's reply shows up in a different place than they originally posted it. There's also the broader concern that webmentions [support and promote public conversations over private ones](https://havenweb.org/2023/04/10/private-comments.html), and the ongoing debate over whether they [hurt](https://sebastiangreger.net/2018/05/indieweb-privacy-challenge-webmentions-backfeeds-gdpr/) [or help](https://ascraeus.org/micro/1525556293/) your control over your own data. These conversations are [many years old](https://indieweb.org/backfeed#Storage,_legal,_data_ownership,_UX...), but the recent explosion of alternative social networks and the fediverse has injected new life into them.
+
+Again, these are important questions. We need to figure out how to design healthy online spaces and tools! And I may have a few loose opinions here and there, but in general, I don't have deeply held ideas or convictions, nor do I have a burning desire to work on the problem. It's just not me.
+
+I'm grateful to the people and groups who are. And honestly, I'm not _too_ worried. I still believe I can build tools that are net positive even if I'm Not That Online. I don't feel too much like I'm neglecting some internet civic duty. But every now and then, I wonder if I'm not eating quite enough of my own <strike>dog food</strike> cooking, or not in quite the right way, or something.
+
+Am I overthinking it? What do you think?
