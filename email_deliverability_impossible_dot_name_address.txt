@@ -7,7 +7,7 @@ Is email deliverability impossible with a .name email address?
 </a></p>
 
   
-_[Also on ServerFault.](https://serverfault.com/questions/1044206/is-email-deliverability-impossible-with-a-name-email-address)_
+_<a class="u-syndication" href="https://serverfault.com/questions/1044206/is-email-deliverability-impossible-with-a-name-email-address">Also on ServerFault.</a>_
 
 I have a [dot name domain](https://en.wikipedia.org/wiki/.name). .name is an odd TLD: they [originally only offered _third_ level domains](https://www.cnet.com/news/net-makes-a-name-for-itself/), eg first.last.name, so that more people could get their own name. They also included the first@last.name email address with each domain registration. They [later opened up to normal second level registrations](https://www.zdnet.com/article/registry-remakes-name-for-itself/), eg last.name, but only for domains that didn't have existing third level registrations. I got mine before that, so I'm stuck with it.
 

@@ -1,0 +1,46 @@
+50408
+hide library lines in Python unittest failure tracebacks
+
+If you write Python unit tests with the [built in `unittest` module](https://docs.python.org/3.9/library/unittest.html), here's a code snippet you can add to your `TestCase` classes to hide lines in tracebacks from libraries in your virtualenv and Python itself:
+
+```
+    def run(self, result=None):
+        """Override to hide stdlib and virtualenv lines in tracebacks.
+
+        https://docs.python.org/3.9/library/unittest.html#unittest.TestCase.run
+        https://docs.python.org/3.9/library/unittest.html#unittest.TestResult
+        """
+        result = super().run(result=result)
+
+        def prune(results):
+            return [
+                (tc, re.sub(r'\n  File ".+/(local|Python.framework|.venv)/.+\n.+\n',
+                            '\n', tb))
+                for tc, tb in results]
+
+        result.errors = prune(result.errors)
+        result.failures = prune(result.failures)
+        return result
+```
+
+The `local|.venv|Python.framework` in the regular expression includes the common directories in my virtualenv and in Python installed by Homebrew on Mac OS X. Update with your own if necessary!
+
+This converts test failures tracebacks like this:
+
+```
+Traceback (most recent call last):
+  File "/opt/homebrew/Cellar/python@3.9/3.9.16/Frameworks/Python.framework/Versions/3.9/lib/python3.9/unittest/mock.py", line 1336, in patched
+    return func(*newargs, **newkeywargs)
+  File "/Users/ryan/src/bridgy-fed/tests/test_activitypub.py", line 1178, in test_followers_collection_unknown_user
+    assert False
+AssertionError
+```
+
+to this:
+
+```
+Traceback (most recent call last):
+  File "/Users/ryan/src/bridgy-fed/tests/test_activitypub.py", line 1178, in test_followers_collection_unknown_user
+    assert False
+AssertionError
+```
