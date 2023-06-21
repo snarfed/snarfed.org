@@ -29,17 +29,18 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
 * `gcloud auth login`
 * `sudo gem install twurl`
 * Update System Preferences:
-  * Energy Saver, Power Adapter, check Prevent computer from sleeping automatically when the display is off, uncheck Wake for Wi-Fi network access
+  * Battery, Options, leave Wake for network access on Only on power adapter? Or Never?
   * Trackpad, check Tap to Click, turn off most gestures
   * Accessibility => Pointer Control => Mouse & Trackpad => Trackpad Options => check Enable dragging => Three finger drag
   * General => Dark mode
   * Sound => uncheck Play UI sound effects
   * Keyboard => repeat speed fastest, delay shortest
   * Mission Control => remove keyboard shortcuts
-  * Security & Privacy
-      * Require password 1 hour
+  * Privacy & Security
       * turn on FileVault
       * Privacy => Full Disk Access => [add `/usr/bin/ruby` (for Emacs)](https://emacs.stackexchange.com/a/53037)
+  * Lock screen
+      * Require password after 1 hour
   * Desktop & screen saver: no screen saver, Hot corners => upper right put display to sleep
   * Sharing => set hostname, enable Remote Login for SSH
   * Displays => Resolution scaled => one step up from default, Night Shift => on, 10p-6a
@@ -57,7 +58,7 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
   * Disable synching Drive to the computer.
 * [Install and configure MenuMeters.](https://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/)
 * [Install and configure Docker.](https://hub.docker.com/editions/community/docker-ce-desktop-mac/)
-* [Install and configure Asana.](https://asana.com/download)
+<!-- * [Install and configure Asana.](https://asana.com/download) -->
 * [Install and configure Meet](https://support.google.com/chrome/answer/9658361) and [Enhancement Suite for Chrome](https://www.meetenhancementsuite.com/).
 * Install the _[Disable Automatic Gain Control](https://chrome.google.com/webstore/detail/disable-automatic-gain-co/clpapnmmlmecieknddelobgikompchkk)_ Chrome extension.
 * Pair Bluetooth devices (keyboard, headphones, etc.)
@@ -73,7 +74,7 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
   * `mkdir -p chrome`
   * `ln -s ~/src/dotfiles/userChrome.css`
 * `mkdir -p ~/.ssh; cd ~/.ssh; ln -s ~/src/dotfiles/ssh_config config`.
-  * * Download SSH keys from 1Password, unzip them into `~/.ssh`.
+  * Download SSH keys from 1Password, unzip them into `~/.ssh`.
 * Set up GnuPG:
   * `mkdir -p ~/.gnupg; cd ~/.gnupg; ln -s ~/src/dotfiles/gpg.conf ; ln -s ~/src/dotfiles/gpg.conf`
   * Run `gpg --list-keys` and `gpg --list-secret-keys`.
@@ -88,4 +89,4 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
   `%admin		ALL = (ALL) NOPASSWD: ALL`
 * In Emacs:
   * `M-x package-list-packages`, install `dash-at-point ess git-link go-mode helm lua-mode markdown-mode rainbow-delimiters rainbow-identifiers yaml-mode`
-* Run `etags` on all repos in `~/src`.
+* Run `ctags` on all repos in `~/src`.
