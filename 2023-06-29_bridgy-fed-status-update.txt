@@ -1,0 +1,13 @@
+50504
+Bridgy Fed status update
+
+I may start posting brief status updates here on my progress on [Bridgy Fed](https://fed.brid.gy/) toward a general-purpose decentralized social bridge. Maybe weekly or so. Here's the first!
+
+The current phase is tracked in [snarfed/bridgy-fed#512](https://github.com/snarfed/bridgy-fed/issues/512) . Right now I'm finishing the [abstract router that handles incoming activities/events](https://github.com/snarfed/bridgy-fed/issues/529). It's been tough figuring out the right abstractions! There are two main parts:
+
+1. A set of operations that need to be implemented for all protocols. [Right now it's `fetch`, `send`, `serve`, and `target_for`.](https://github.com/snarfed/bridgy-fed/blob/ee52a7b1c6307ae2ff4d63b32f0e511a9525a6dd/protocol.py#L228-L306)
+1. The protocol-independent router and logic for handling activities. Eg if it receives a follow, it stores that new follower and replies with an accept. If it gets a new post, it delivers it to all followers. etc.
+
+#2 was originally split across partial implementations [for webmention](https://github.com/snarfed/bridgy-fed/blob/merge-web-protocol-receive/protocol.py#L307-L638) [and ActivityPub](https://github.com/snarfed/bridgy-fed/blob/merge-web-protocol-receive/web.py#L558-L772). I'm currently merging those and filling in the remaining parts. And tests. Lots and lots of tests.
+
+I'm hoping to finish that in a week or less. After that, I'm switching to ATProto work, [standing up a proof of concept PDS and testing out federation against Bluesky's sandbox](https://github.com/snarfed/arroba/issues/3). That's probably at least a couple weeks. After that, I'll be able to integrate the result into Bridgy Fed, which is the last big phase to get a real live bridge running.
