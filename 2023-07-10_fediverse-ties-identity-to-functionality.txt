@@ -1,0 +1,10 @@
+50589
+
+
+I've written before about how [your fediverse identity, data, and administration are all tied to your instance](/2023-05-04_50157), for both technical and cultural reasons. There's an awkward corollary: _functionality_ in the fediverse is also currently tied to your instance.
+
+Signed up on mastodon.social? Great! You can microblog...but you can’t really do groups, long-form writing, live streaming, or much else. You can do those on Lemmy, WriteFreely, or OwnCast, but you'll need an entirely separate account and identity for each one.
+
+To be fair, this is the norm for consumer apps in general. Centralized social services all aim at their own specific niches. Consider Twitter, Reddit, Instagram, YouTube, LinkedIn. Facebook tried to grow to be everything to everyone, but it's an exception. (It also takes a much bigger centralized team, with more coordination and resources.)
+
+Still, considering the bold modern vision of decentralized social, it seems positively quaint for your instance to limit what you can do. This is one reason I’m excited about new protocol ideas that more aggressively decouple identity from servers, eg Bluesky/ATProto and Nostr. The present moment seems ripe for experimentation, at least for a while. Let a thousand flowers bloom!

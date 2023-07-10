@@ -124,6 +124,12 @@ Open source projects: [Bridgy](https://brid.gy/), <!-- [webmention](https://webm
 
 <hr />
 
+##### CVEs
+
+[CVE-2023-36462](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-36462)
+([GitHub](https://github.com/mastodon/mastodon/security/advisories/GHSA-55j9-c3mp-6fcq)): [Mastodon](https://github.com/mastodon/mastodon): _Verified profile links can be formatted in a misleading way_
+
+
 ##### Patents
 
 <!-- template:

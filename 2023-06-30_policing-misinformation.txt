@@ -1,20 +1,19 @@
 50523
 Policing misinformation
 
+Unpopular opinion: I have deep reservations about policing misinformation.
+
 <p class="right half">
  <a href="https://birdsarentreal.com/">
   <img class="shadow" src="/birds-arent-real.jpg" />
 </a></p>
 
-Unpopular opinion: I have deep reservations about policing misinformation.
-
-I'm a big believer in the [demarcation problem](https://erikhoel.substack.com/p/elon-musks-twitter-and-the-crisis). In the general case, there's no shortcut to determining objective truth. It's similar to the [halting problem](https://en.wikipedia.org/wiki/Halting_problem) in computer science: if we want to know whether a claim is true, we have to go through the scientific method. It's arguably the only process we know that works.
+I'm a big believer in the [demarcation problem](https://erikhoel.substack.com/p/elon-musks-twitter-and-the-crisis): in the general case, there's no shortcut to determining objective truth. It's similar to the [halting problem](https://en.wikipedia.org/wiki/Halting_problem) in computer science: if we want to know whether a claim is true, we have to go through the scientific method. It's the only process we know that works.
 
 It's far from ideal, though. Sometimes the claim is fiendishly complex, sprawling, or only loosely defined. The scientific method can't always come up with a simple, easy answer, especially not on the first try. [Instead, it _approaches_ the right answer, narrowing in over years or decades](/2017-07-05_pessimistic-induction), with missteps and false starts along the way.
 
 This means that policing misinformation is fraught, at best. Forget policing, we can't even reliably _identify_ misinformation, at least not always, or in any reasonable time frame.
-
-<!-- more -->
+<!--more-->
 
 This is unfair, of course. We may not be able to determine 100% objective truth every time, but we can pretty damn often. [Flat earth?](https://en.wikipedia.org/wiki/Modern_flat_Earth_beliefs) No it's not. [Vaccines implant 5G microchips?](https://www.bbc.com/news/53191523) Come on. [Lizard people from outer space?](https://en.wikipedia.org/wiki/Reptilian_conspiracy_theory#Politics) 🤦
 
@@ -29,17 +28,17 @@ The line is fuzzy, though. COVID was a perfect example: a brand new disease, a g
 
 Food is another great example. For decades, nutrition scientists convinced themselves that fat was bad and carbohydrates, particularly grains, were good. The FDA designed an entire food pyramid around this, taught a generation of kids to avoid olive oil and binge on white bread, and inspired food engineers to spend billions on dangerous boondoggles like [Olestra](https://en.wikipedia.org/wiki/Olestra).
 
-We eventually figured out that this was backward. Many fats are good for us, and many grains and simple carbohydrates are bad, at least in large amounts. The pendulum may have swung too far backward, giving us dangerous new extremes like [Atkins](https://en.wikipedia.org/wiki/Atkins_diet), but it was at least a big step closer to the truth. What if we'd suppressed or blocked everyone who questioned the "fat bad, grains good" party line? How much longer would it have taken us to come around? How many people would have suffered and died prematurely from unhealthy diets they thought were good for them?
+We eventually figured out that this was backward. Many fats are good for us, and many grains and simple carbohydrates are bad, at least in large amounts. The pendulum may have swung too far backward, giving us dangerous new extremes like [Atkins](https://en.wikipedia.org/wiki/Atkins_diet), but it was at least one big step closer to the truth. What if we'd suppressed or blocked everyone who questioned the "fat bad, grains good" party line? How much longer would it have taken us to come around? How many people would have suffered and died prematurely from unhealthy diets they thought were good for them?
 
 The _motivations_ for policing misinformation are similarly fuzzy. Sometimes it's an easy call - [drinking bleach will clearly hurt you, and won't cure or prevent COVID](https://en.wikipedia.org/wiki/List_of_unproven_methods_against_COVID-19#Other_disinfection-related_methods) - but sometimes it's harder. The earth isn't flat, sure, but does that mean we should take down flat earth content? Probably not. What if the leading flat earthers know it's wrong, and they're only doing it to fleece suckers into buying their merch? Can we know their intent? If so, should we take down their posts, or their accounts?
 
-More egregiously, the lizard people conspiracy is clearly ridiculous, and not a call to violence, but it's linked to [PizzaGate](https://en.wikipedia.org/wiki/Pizzagate_conspiracy_theory), which directly led a [crazed gunman to shoot up a family restaurant with an AR-15](https://en.wikipedia.org/wiki/Pizzagate_conspiracy_theory#Criminal_responses). Once that happened, should we have taken down PizzaGate content and accounts? How about lizard people content? Or [QAnon](https://en.wikipedia.org/wiki/QAnon) more broadly? How about election denial, which is related? Where should we draw the lines?
+More egregiously, the lizard people conspiracy is clearly ridiculous, and not a direct call to violence, but it's linked to [PizzaGate](https://en.wikipedia.org/wiki/Pizzagate_conspiracy_theory), which led a [crazed gunman to shoot up a family restaurant with an AR-15](https://en.wikipedia.org/wiki/Pizzagate_conspiracy_theory#Criminal_responses). Once that happened, should we have taken down PizzaGate content and accounts? How about lizard people content? Or [QAnon](https://en.wikipedia.org/wiki/QAnon) more broadly? How about election denial, which is related? Where should we draw the lines?
 
 <p class="right half">
   <img class="shadow" src="/airport_security_wand_boy.jpg" /></p>
 
-I don't know the answers. None of these are easy questions. What's more, the debate over policing misinformation itself long predates the Internet. And in case it's not obvious, I'm personally 100% pro science and shared facts and anti conspiracy theories. Vaccines are good, they don't implant microchips inside us, Hillary Clinton is clearly not a child molester, etc.
+In case it's not obvious, I'm personally 100% pro science, pro shared facts, and anti conspiracy theories. Vaccines are good, they don't implant microchips inside us, Hillary Clinton is clearly not a child molester, etc. Regardless, the debate over policing misinformation long predates the Internet, and I don't know where all the lines should be drawn.
 
-However. When we police misinformation, I think we should tread lightly. When the truth is clear, and misinformation directly leads to meaningful harm, ok. Probably. But maybe err on the side of tolerance. Free speech may be a lightning rod these days, but I believe in it in spirit, and it only truly matters for speech we disagree with. Or in the case of misinformation, speech we think is objectively wrong. Who knows? In another generation, or a year, or maybe even tomorrow, it might turn out that we're the ones who were wrong.
+In general though, I think we should tread lightly. When the truth is clear, and misinformation directly leads to meaningful harm, ok. Probably. But maybe err on the side of tolerance. It may be a lightning rod these days, but I believe in freedom of speech, especially speech we disagree with. Or in the case of misinformation, speech we think is objectively wrong. Who knows? Someday, it might turn out that _we're_ the ones who are wrong.
 
 (Also, [birds aren't real](https://en.wikipedia.org/wiki/Birds_Aren%27t_Real). Spread the word.)
