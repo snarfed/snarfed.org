@@ -3,16 +3,18 @@ Bridgy Fed status update
 
 <p class="right half">
  <a href="/octopus_attacks_ship_bridgy_fed.jpg">
-  <img class="shadow" src="/octopus_attacks_ship_bridgy_fed.jpg">
+  <img class="shadow" src="/octopus_attacks_ship_bridgy_fed.jpg" />
   Based on [Linnaea Mallette](https://www.publicdomainpictures.net/en/browse-author.php?a=18382)'s _[Vintage Map Ship Octopus Ocean](https://www.publicdomainpictures.net/en/view-image.php?image=490157&picture=vintage-map-ship-octopus-ocean)_
 </a></p>
 
-[Bridgy Fed](https://fed.brid.gy/) status update: the [protocol-independent activity router](https://github.com/snarfed/bridgy-fed/issues/529) is done! If the separate networks that Bridgy Fed supports - web(mention), ActivityPub, Bluesky, etc. - are the limbs, then the router is the brain. Or the heart? Don't take the analogy too seriously, I guess. Regardless, progress!
+If [Bridgy Fed](https://fed.brid.gy/) was a mythical sea monster, and the protocols - webmention, ActivityPub, Bluesky, etc. - were its limbs, then the [protocol-independent activity router](https://github.com/snarfed/bridgy-fed/issues/529) might be its...brain?
 
-I plan to deploy it to [production](https://fed.brid.gy/) tomorrow morning. It's a big change, so I expect at least a full day or two of bug triage and fixes, if not more.
+Or...its heart? Or something? In any case, that router is finally done, at least for now. Progress!
+
+I plan to deploy it to [production](https://fed.brid.gy/) today. It's a big change, so I expect at least a full day or two of bug triage and fixes, if not more.
 
 After that, big context switch to [ATProto](https://atproto.com/), jumping back into [arroba](https://github.com/snarfed/arroba/) to see what's left, if anything, to get it to [federate with Bluesky's sandbox](https://github.com/snarfed/arroba/issues/3). I expect that to be at least the next week or two, minimum. End result should be a minimal standalone arroba-based [PDS](https://atproto.com/guides/data-repos) that federates successfully.
 
 Onward!
 
-[Previously.](/2023-06-29_bridgy-fed-status-update)
+([Previously.](/2023-06-29_bridgy-fed-status-update))
