@@ -13,6 +13,10 @@ Collecting details here from various places on [Bluesky PBLLC](https://blueskywe
 
 [- Bluesky Blog: _How it Started_](https://blueskyweb.xyz/blog/2-28-2022-how-it-started), Feb 28 2022
 
+> This summer, we converted from a public benefit LLC to a public benefit C Corp in order to gain more independence from the legacy of the past. Our mission and board have stayed the same.
+
+[- Bluesky Blog: _Our Plan for a Sustainably Open Social Network_](https://blueskyweb.xyz/blog/7-05-2023-business-plan), Jul 5, 2023
+
 > Bluesky has received $13 million to ensure we have the freedom and independence to get started on R&D. Former Twitter CEO @jack is on our board, & a former Twitter security engineer has joined the team.
 
 [- @bluesky on Twitter](https://twitter.com/bluesky/status/1518707604750430208), Apr 25, 2022
@@ -21,11 +25,15 @@ Collecting details here from various places on [Bluesky PBLLC](https://blueskywe
 
 [- @bluesky on Twitter](https://twitter.com/bluesky/status/1518707606881067008), Apr 25, 2022
 
+> We raised $8M in a seed round led by [Neo](https://neo.com/), a community-led firm with amazing partners like Ali Partovi and Suzanne Xie, and a wonderful cast of additional investors including Joe Beda who co-created Kubernetes, Bob Young of Red Hat, Amjad Masad of Replit, Amir Shevat of Darkmode, Heather Meeker, Jeromy Johnson, Automattic, Protocol Labs, Sarah Drasner, Katelyn Donnelly, Ali Evans, Stav Erez, Kris Nóva, Brad Fitzpatrick, Abdul Ly, and many other operators who have much wisdom to share.
+
+[- Bluesky Blog: _Our Plan for a Sustainably Open Social Network_](https://blueskyweb.xyz/blog/7-05-2023-business-plan), Jul 5, 2023
+
 > The company is owned by the team itself, without any controlling stake held by Twitter.
 
 [- @bluesky on Twitter](https://twitter.com/bluesky/status/1518707603232083968), Apr 25, 2022
 
-> Jay does hold the majority of the equity but everyone on the team has equity as well, and (currently) no outside investors even own any of the company (which is a public benefit LLC to boot)
+> Jay does hold the majority of the equity but everyone on the team has equity as well, <strike>and (currently) no outside investors even own any of the company (which is a public benefit LLC to boot)</strike>
 
 [- @whyrusleeping on Bluesky](https://bsky.app/profile/why.bsky.team/post/3juihbj6zfs2i) ([public mirror](https://blue.amazingca.dev/?username=why.bsky.team&postid=3juihbj6zfs2i)), Apr 28 2023
 
@@ -50,7 +58,11 @@ Collecting details here from various places on [Bluesky PBLLC](https://blueskywe
 
 [@dave.tf on Bluesky, asking about ownership](https://staging.bsky.app/profile/dave.tf/post/3ju2qff7y4b2s) ([public mirror](https://blue.amazingca.dev/?username=dave.tf&postid=3ju2qff7y4b2s)), Apr 25 2023
 
-Also, as far as we know from various conversations, Bluesky hasn't yet taken any other funding beyond Twitter's initial $13M grant. It's a substantial amount of money, they've only existed for a couple years, the team is still small, and they probably don't have many costs beyond headcount. They have ideas for revenue down the line, but they say that won't be a focus for a while yet. (From threads on Bluesky that I saw originally but haven't managed to find again yet to cite. Please add links in the comments if you find them!)
+> We set out to build a protocol where users can own their data and always have the freedom to leave, and this approach means that advertising couldn’t be our dominant business model. So, we’ve been exploring other avenues of monetization.  
+>
+> We believe that there must be better strategies to sustain social networks that don’t require selling user data for ads. Our first step in another direction is paid services, and we’re starting with [custom domains](https://blueskyweb.xyz/blog/3-6-2023-domain-names-as-handles-in-bluesky).
+
+[- Bluesky Blog: _Our Plan for a Sustainably Open Social Network_](https://blueskyweb.xyz/blog/7-05-2023-business-plan), Jul 5, 2023
 
 
 ## Technical
@@ -79,6 +91,6 @@ The Bluesky team was well aware of and understood [ActivityPub](https://activity
 
 [_- FAQ: Why not use ActivityPub?_](https://atproto.com/guides/faq#why-not-use-activitypub)
 
-Mastodon does have [non-standard, partial support for account migration](https://docs.joinmastodon.org/user/moving/#migration) between two Mastodon instances. It moves your followers and displays a human-readable "redirect" on the old account's profile. Mastodon also has separate support for exporting and importing your posts. These have awkward UX at best, but more importantly, when you use them to migrate Mastodon accounts, your fediverse identity changes from user@old to user@new. [AT Protocol's account portability](https://atproto.com/guides/overview#account-portability) preserves your identity across migrations, and works even if your server goes offline or malicious.
+Mastodon does have [non-standard, partial support for account migration](https://docs.joinmastodon.org/user/moving/#migration) between two Mastodon instances. It moves your followers and displays a human-readable "redirect" on the old account's profile. Mastodon also has separate support for exporting your posts, but it can't re-import them. These have awkward UX at best, but more importantly, when you use them to migrate Mastodon accounts, your fediverse identity changes from user@old to user@new. [AT Protocol's account portability](https://atproto.com/guides/overview#account-portability) preserves your identity across migrations, and works even if your server goes offline or malicious.
 
 Other motivations included for a new protocol included [global indexing support](https://atproto.com/guides/overview#achieving-scale), a [preference for domain names](https://blueskyweb.xyz/blog/3-6-2023-domain-names-as-handles-in-bluesky) as identities instead of @-@ handles, and [stronger schema support](https://atproto.com/guides/lexicon) in the data model.
