@@ -1,0 +1,17 @@
+50725
+Bridgy Fed status update
+
+It's been a few weeks since the [last Bridgy Fed status update](https://snarfed.org/2023-07-11_bridgy-fed-status-update-2)! Half of that was due to a family vacation, but I still do have progress to report.
+
+As planned, I shipped the [Bridgy Fed activity router](https://fed.brid.gy/docs#router) and switched gears to [arroba](https://github.com/snarfed/arroba) and [Bluesky federation](https://atproto.com/blog/federation-developer-sandbox). I implemented most of the `com.atproto` XRPC methods for accessing an arroba-based ATProto repo and PDS, including CAR serialization. This got me as far as a [prototype PDS](https://arroba-pds.appspot.com/) that I can log into with the official Bluesky [web app](https://bsky.app/) and mobile apps! Big milestone.
+
+Next up:
+
+* Get the prototype PDS fully working and hooked up to the sandbox BGS and AppView.
+* Maybe switch it to `did:plc` DIDs and integrated with the official PLC registry? It currently uses `did:web`s, not sure if those will fly.
+* Learn and implement the ATProto [v2 repo data structure.](https://atproto.com/specs/repository#repo-data-structure-v2) It's a pretty significant change to support rebases, from complete chain of commits to independent snapshots.
+* Set up websockets for [event streams](https://atproto.com/specs/event-stream), implement [`com.atproto.sync.subscribeRepos`](https://atproto.com/lexicons/com-atproto-sync#comatprotosyncsubscriberepos), and get that all running on App Engine Flex.
+
+Here we go!
+
+([Previously](https://snarfed.org/2023-07-11_bridgy-fed-status-update-2), [previously](https://snarfed.org/2023-06-29_bridgy-fed-status-update).)
