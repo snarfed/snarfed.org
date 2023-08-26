@@ -1,0 +1,12 @@
+50803
+Bridgy Fed status update
+
+[Last time here, a couple weeks ago](https://snarfed.org/2023-08-04_bridgy-fed-status-update-3), I had an incomplete, bare bones ATProto PDS up and running. I planned to finish it, hook it up to the [federation sandbox](https://atproto.com/blog/federation-developer-sandbox) BGS and AppView, switch to [`did:plc`](https://atproto.com/specs/did-plc) DIDs, and learn and implement the [v2 repo](https://atproto.com/specs/repository#repo-data-structure-v2), [websocket event streams](https://atproto.com/specs/event-stream), and [`subscribeRepos`](https://atproto.com/lexicons/com-atproto-sync#comatprotosyncsubscriberepos).
+
+All that is done! Along with [low-S ECDSA signatures](https://atproto.com/specs/cryptography#ecdsa-signature-malleability) and a number of other things. The end result is a seemingly complete ATProto PDS.
+
+...which leaves interop testing. That's where I am right now. Getting close to having that working!
+
+On the side, I've been implementing [Nostr](https://nostr.com/) in [granary](https://granary.io/). I shipped that last week, so now I'm starting to add it to [Bridgy Fed](https://fed.brid.gy/). That has a good chance of shipping before ATProto/Bluesky federation gets turned on.
+
+[Previously](https://snarfed.org/2023-08-04_bridgy-fed-status-update-3), [previously](https://snarfed.org/2023-07-11_bridgy-fed-status-update-2), [previously](https://snarfed.org/2023-06-29_bridgy-fed-status-update).
