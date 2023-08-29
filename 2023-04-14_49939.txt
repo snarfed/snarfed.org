@@ -1,0 +1,10 @@
+49939
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e Over time, all data approaches either deleted or public.\n\n[- Norton's Law](https://medium.com/message/hello-future-pastebin-readers-39d9b4eb935f)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>Over time, all data approaches either deleted or public.</p>
+</blockquote>
+<p><a href="https://medium.com/message/hello-future-pastebin-readers-39d9b4eb935f">- Norton's Law</a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

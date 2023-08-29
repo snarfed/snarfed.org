@@ -1,0 +1,14 @@
+50133
+
+
+<!-- wp:jetpack/markdown {"source":"Data sizes, a taxonomy:\n* Tape backup facility\n* Spark + Parquet cluster\n* Fits on disk\n* Fits in memory\n* Just use a list"} -->
+<div class="wp-block-jetpack-markdown"><p>Data sizes, a taxonomy:</p>
+<ul>
+<li>Tape backup facility</li>
+<li>Spark + Parquet cluster</li>
+<li>Fits on disk</li>
+<li>Fits in memory</li>
+<li>Just use a list</li>
+</ul>
+</div>
+<!-- /wp:jetpack/markdown -->

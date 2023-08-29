@@ -1,0 +1,11 @@
+50094
+
+
+<!-- wp:jetpack/markdown {"source":"Richard Dawkins [coined the term _meme_](https://en.wikipedia.org/wiki/Meme#Dawkins) in his 1976 book [_The Selfish Gene_](https://en.wikipedia.org/wiki/The_Selfish_Gene) to mean \u0022a unit of cultural transmission, or a unit of imitation.\u0022\n\nI wondered what he'd think of it evolving to mean primarily \u0022silly bad internet joke\u0022 these days. [Evidently he told us what he thought, somewhat, back in 2012](https://twitter.com/RichardDawkins/status/276449081746915328):\n\n\u003e It is very good that Wikipedia also gives a page to \u0022Internet Meme\u0022. Internet memes are arguably the most important subset of memes today."} -->
+<div class="wp-block-jetpack-markdown"><p>Richard Dawkins <a href="https://en.wikipedia.org/wiki/Meme#Dawkins">coined the term <em>meme</em></a> in his 1976 book <a href="https://en.wikipedia.org/wiki/The_Selfish_Gene"><em>The Selfish Gene</em></a> to mean &quot;a unit of cultural transmission, or a unit of imitation.&quot;</p>
+<p>I wondered what he'd think of it evolving to mean primarily &quot;silly bad internet joke&quot; these days. <a href="https://twitter.com/RichardDawkins/status/276449081746915328">Evidently he told us what he thought, somewhat, back in 2012</a>:</p>
+<blockquote>
+<p>It is very good that Wikipedia also gives a page to &quot;Internet Meme&quot;. Internet memes are arguably the most important subset of memes today.</p>
+</blockquote>
+</div>
+<!-- /wp:jetpack/markdown -->

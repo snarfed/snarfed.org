@@ -1,0 +1,18 @@
+48058
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e A rocket scientist responsible for calculating propulsion capacity approached a software engineer. The rocket scientist wanted to calculate the effect of all that software on the mass of the system. The software engineer didn't understand; was he asking about the weight of the computers? No, the computers' weight was already accounted for. Then what was the problem?  \n\u003e \u0022Well, you guys are using hundreds of thousands of lines of software in this moon shot, right?\u0022  \n\u003e \u0022Right,\u0022 said the software engineer.  \n\u003e \u0022Well,\u0022 asked the rocket scientist, \u0022how much does all that stuff weigh?\u0022  \n\u003e The reply: \u0022...Nothing!\u0022"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>A rocket scientist responsible for calculating propulsion capacity approached a software engineer. The rocket scientist wanted to calculate the effect of all that software on the mass of the system. The software engineer didn't understand; was he asking about the weight of the computers? No, the computers' weight was already accounted for. Then what was the problem?<br>
+&quot;Well, you guys are using hundreds of thousands of lines of software in this moon shot, right?&quot;<br>
+&quot;Right,&quot; said the software engineer.<br>
+&quot;Well,&quot; asked the rocket scientist, &quot;how much does all that stuff weigh?&quot;<br>
+The reply: &quot;...Nothing!&quot;</p>
+</blockquote>
+</div>
+<!-- /wp:jetpack/markdown -->
+
+<!-- wp:jetpack/markdown {"source":"\\- [Howard Baetjer Jr., _Software as Capital_](https://www.google.com/books/edition/Software_as_Capital/K7JQAAAAMAAJ). \u0022This story was told to me in a personal conversation with Robert Polutchko of Martin Marietta Corporation.\u0022"} -->
+<div class="wp-block-jetpack-markdown"><p>- <a href="https://www.google.com/books/edition/Software_as_Capital/K7JQAAAAMAAJ">Howard Baetjer Jr., <em>Software as Capital</em></a>. &quot;This story was told to me in a personal conversation with Robert Polutchko of Martin Marietta Corporation.&quot;</p>
+</div>
+<!-- /wp:jetpack/markdown -->

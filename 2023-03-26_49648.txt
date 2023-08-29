@@ -1,0 +1,7 @@
+49648
+
+
+<!-- wp:jetpack/markdown {"source":"Pouring one out for [Gordon Moore](https://en.wikipedia.org/wiki/Gordon_Moore), what a legend. Truly one of our forefathers. We'll all be forever in your debt."} -->
+<div class="wp-block-jetpack-markdown"><p>Pouring one out for <a href="https://en.wikipedia.org/wiki/Gordon_Moore">Gordon Moore</a>, what a legend. Truly one of our forefathers. We'll all be forever in your debt.</p>
+</div>
+<!-- /wp:jetpack/markdown -->

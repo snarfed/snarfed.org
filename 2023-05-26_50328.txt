@@ -1,0 +1,10 @@
+50328
+
+
+<!-- wp:paragraph -->
+<p>Hey decentralized social people, can I ask a favor? <a href="https://fed.brid.gy/docs#translate">Here's a rough draft of how I'm thinking about translating/bridging across multiple protocols and identities</a> (via federation, ie not syndication/cross posting). Could you take a look when you get a chance and see which parts look reasonable and which are totally off base? Feel free to comment here <a href="https://github.com/snarfed/bridgy-fed/pull/521">or on the PR</a>, whichever's easier.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Hugely appreciated, thanks in advance!</p>
+<!-- /wp:paragraph -->

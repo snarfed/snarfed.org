@@ -1,0 +1,14 @@
+50774
+
+
+<!-- wp:paragraph -->
+<p>Having spent a fair amount of time developing for all of them, my experience has been that most proprietary social network (<a href="https://indieweb.org/silo">"silo"</a>) APIs are on the easy/low effort end of the spectrum, followed closely by the <a href="https://blueskyweb.xyz/">Bluesky</a> API, <a href="https://webmention.net/">webmention</a> + <a href="https://microformats.org/">microformats2</a>, and <a href="https://nostr.com/">Nostr</a>, then a big jump up to <a href="https://activitypub.rocks/">ActivityPub</a> at above average, then <a href="https://atproto.com/">AT Protocol</a> at the high end.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>They all differ in many important ways beyond development effort, of course. Personally, I'm most <em>excited</em> about webmention + mf2, ATProto, and then ActivityPub, for all the obvious reasons. Still though.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>(If not for all the <a href="https://github.com/nostr-protocol/nips#readme">NIPs</a>, Nostr would be the easiest of all. Developing for Nostr is pretty simple, but the NIPs are so loose and terse and spread out that ramping up on them and grokking how they all fit together can feel chaotic, at least at first.)</p>
+<!-- /wp:paragraph -->

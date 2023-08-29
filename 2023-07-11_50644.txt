@@ -1,0 +1,10 @@
+50644
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e New inventions start out novel, slightly broken, and eventually become utilities.\n\n\\- [Simon Wardley](https://en.wikipedia.org/wiki/Simon_Wardley)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>New inventions start out novel, slightly broken, and eventually become utilities.</p>
+</blockquote>
+<p>- <a href="https://en.wikipedia.org/wiki/Simon_Wardley">Simon Wardley</a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

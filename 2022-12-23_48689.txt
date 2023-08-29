@@ -1,0 +1,8 @@
+48689
+
+
+<!-- wp:jetpack/markdown {"source":"Learned about a new job today: [intimacy coordinator](https://en.wikipedia.org/wiki/Intimacy_coordinator). Fascinating! I'd never heard of it before. What a world we live in.\n\n(Via [this interview with Manon Gage](https://www.gamerswithjobs.com/node/1304412), star of the formidable new game _[Immortality](https://halfmermaid.co/)_, which I just finished. Incredible experience, a work of art.)"} -->
+<div class="wp-block-jetpack-markdown"><p>Learned about a new job today: <a href="https://en.wikipedia.org/wiki/Intimacy_coordinator">intimacy coordinator</a>. Fascinating! I'd never heard of it before. What a world we live in.</p>
+<p>(Via <a href="https://www.gamerswithjobs.com/node/1304412">this interview with Manon Gage</a>, star of the formidable new game <em><a href="https://halfmermaid.co/">Immortality</a></em>, which I just finished. Incredible experience, a work of art.)</p>
+</div>
+<!-- /wp:jetpack/markdown -->

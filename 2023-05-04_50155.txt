@@ -1,0 +1,10 @@
+50155
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e the correct threat model for things you post to the public internet is “it’s constantly being scraped and persisted”\n\n[- ??? @dystopiabreaker.xyz](https://blue.amazingca.dev/?username=dystopiabreaker.xyz\u0026postid=3juwhvfe5pz2j)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>the correct threat model for things you post to the public internet is “it’s constantly being scraped and persisted”</p>
+</blockquote>
+<p><a href="https://blue.amazingca.dev/?username=dystopiabreaker.xyz&amp;postid=3juwhvfe5pz2j">- ??? @dystopiabreaker.xyz</a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

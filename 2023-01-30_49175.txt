@@ -1,0 +1,11 @@
+49175
+
+
+<!-- wp:jetpack/markdown {"source":"[**single entendre**](https://en.wiktionary.org/wiki/single_entendre)  \n\u0026nbsp;\u0026nbsp; (noun, humorous)\n\n\u003e A phrase that has a single, often bawdy, meaning and is lacking in subtlety or cleverness."} -->
+<div class="wp-block-jetpack-markdown"><p><a href="https://en.wiktionary.org/wiki/single_entendre"><strong>single entendre</strong></a><br>
+   (noun, humorous)</p>
+<blockquote>
+<p>A phrase that has a single, often bawdy, meaning and is lacking in subtlety or cleverness.</p>
+</blockquote>
+</div>
+<!-- /wp:jetpack/markdown -->

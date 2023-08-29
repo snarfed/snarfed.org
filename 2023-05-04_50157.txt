@@ -1,0 +1,18 @@
+50157
+
+
+<!-- wp:paragraph -->
+<p>One core difference between the <a href="https://enwp.org/fediverse">fediverse</a> and the <a href="https://atproto.com/">AT Protocol</a> seems to be that AT decouples many key building blocks - identity, moderation, ranking algorithms, even your own data to some degree - from your server. The fediverse, on the other hand, ties them all to your server and sees that as a desirable feature.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The fediverse says, choose a server that you identify with as an individual, with admins who moderate according to your values, and a local timeline that you like reading.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>The AT Protocol, on the other hand says sure, choose all of those, but <em>independently</em> from your server, and keep those choices if/when you migrate to a new server.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Interestingly, I don't think much of this is really driven by ActivityPub itself except identity. Third party AP moderation tools could easily be built, and probably have been. Same with clients that rank your feed with custom algorithms. This seems like more of a cultural difference, a difference of values and philosophy about how social networking should work.</p>
+<!-- /wp:paragraph -->

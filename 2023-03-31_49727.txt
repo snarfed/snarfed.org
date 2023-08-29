@@ -1,0 +1,6 @@
+49727
+
+
+<!-- wp:paragraph -->
+<p>Amidst all the excitement around <a href="https://blog.twitter.com/engineering/en_us/topics/open-source/2023/twitter-recommendation-algorithm">Twitter open sourcing its "algorithm,"</a> one bit is easy to miss: <a href="https://github.com/twitter/the-algorithm/blob/7f90d0ca342b928b479b512ec51ac2c3821f5922/COPYING">they licensed it as AGPL</a>. That means anyone else who uses it will have to open source their code too, even cloud-based web sites and services, but Twitter themselves are under no such obligation to open source the rest of <em>their</em> code. Clever!</p>
+<!-- /wp:paragraph -->
