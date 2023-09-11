@@ -1,0 +1,13 @@
+50830
+
+<p class="right third">
+ <a href="https://atproto.com/">
+  <img src="/atproto-logo.png" /></a></p>
+
+Hit a big milestone in [AT Protocol](https://atproto.com/) development today: my PDS implementation [arroba](https://github.com/snarfed/arroba) is successfully [federating with the sandbox](https://atproto.com/blog/federation-developer-sandbox)! That means its repo, MST, commit chain, sync protocol, and more are all working and interoperating. Took lots of work to get here, feels good to have it all come together.
+
+Lots more to do before I have a fully working [bridge to other protocols](https://snarfed.org/2023-08-22_bridgy-fed-status-update-4), mostly the corresponding client side: creating and resolving DIDs, creating and fetching records, querying Bluesky API for app-specific logic (likes, reposts, etc)...but still, glad to be this far.
+
+If you're curious, my PDS is [arroba-pds.appspot.com](https://arroba-pds.appspot.com/), and I'm [arroba5.snarfed.org](https://bsky.app/profile/arroba5.snarfed.org) (among others) on the sandbox. Feel free to say hi if you're there.
+
+Huge thanks to [Bryan](https://bnewbold.net/), [Jake](http://jacob.gold/), [Jaz](https://jazco.dev/), and especially [David](https://www.da.vidbuchanan.co.uk/) for all of their help along the way!
