@@ -5,7 +5,7 @@ Since [our last episode](/2023-08-22_bridgy-fed-status-update-4), I've implement
 
 The end result is that I now have a one way, end to end pipeline to receive web and ActivityPub posts and federate them all the way to an ATProto BGS. I've tested locally, and it's working. I'm looking forward to testing against the sandbox!
 
-Next is the other direction. ATProto is pull, not push, and [there isn't yet a subscription XRPC for notifications](https://github.com/bluesky-social/atproto/discussions/1538), so I need to build a dedicated process to poll `listNotifications` on the AppView. Sigh, ok.
+Next is the other direction. AT[There isn't yet a subscription XRPC for notifications](https://github.com/bluesky-social/atproto/discussions/1538), so I need to build a dedicated process to poll `listNotifications` on the AppView. Sigh, ok.
 
 Oh, and I threw together [a fun comparison chart of IndieWeb, ActivityPub, ATProto, and Nostr](https://fed.brid.gy/docs#compare).
 
