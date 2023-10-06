@@ -1,0 +1,21 @@
+51003
+Bridgy Fed status update
+
+Big milestone this episode! I now have Bluesky profiles bridged end to end to the fediverse. Try it yourself! Add `@atproto.brid.gy` to any Bluesky handle, eg `@snarfed.org@atproto.brid.gy` or `jay.bsky.team@atproto.brid.gy`, and search for that in any fediverse server you're logged into. Et voilà!
+
+<p class="right half">
+ <a href="/bluesky-into-fediverse-bsky-app.png">
+  <img class="u-photo shadow" src="/bluesky-into-fediverse-bsky-app.png" /></a>
+</p>
+<p class="left half">
+ <a href="/fediverse-to-bluesky-chris-messina.jpg">
+  <img class="u-photo shadow" src="/fediverse-to-bluesky-chris-messina.jpg" /></a>
+</p>
+
+Following and interacting won't work until the Bluesky team turns on federation, and I have plenty left to do anyway, but still! Nice to have something working end to end.
+
+To get here over the past few weeks, I did a lot more Bluesky client side work: upgraded [arroba](https://github.com/snarfed/arroba) to [repo v3](https://atproto.com/blog/repo-sync-update), implemented [handle resolution](https://atproto.com/specs/handle#handle-resolution) (both DNS and HTTP), started [polling notifications](https://github.com/bluesky-social/atproto/discussions/1538), more DID doc wrangling, more Bluesky lexicon conversion code in granary, etc.
+
+Lastly, I got to talk with [Laurens Hof](https://laurenshof.online/) of [Fediverse Report](https://fediversereport.com/) fame for a bit this morning. Lots of fun, you may get to read a bit about it soon. Thanks for everything you do, Laurens!
+
+[Previously](https://snarfed.org/2023-09-23_bridgy-fed-status-update-6), [previously](/2023-09-09_bridgy-fed-status-update-5), [previously](/2023-08-22_bridgy-fed-status-update-4), [previously](/2023-08-04_bridgy-fed-status-update-3), [previously](/2023-07-11_bridgy-fed-status-update-2), [previously](/2023-06-29_bridgy-fed-status-update).
