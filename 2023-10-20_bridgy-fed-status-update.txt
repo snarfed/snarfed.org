@@ -1,0 +1,22 @@
+
+
+Brief [Bridgy Fed](https://fed.brid.gy/) status update: I spent last week on other things, but I got back in the saddle this week and got Bluesky => fediverse follows and fediverse => Bluesky posts working!
+
+<p class="right half">
+ <a href="/bluesky-follower-in-fediverse.png">
+  <img class="u-photo shadow" src="/bluesky-follower-in-fediverse.png" /></a>
+</p>
+<p class="left half-sidebyside">
+ <a href="/fediverse-post.png">
+  <img class="u-photo shadow" src="/fediverse-post.png" /></a>
+</p>
+<p class="right half">
+ <a href="/bluesky-follower-in-fediverse.png">
+  <img class="u-photo shadow" src="/bluesky-follower-in-fediverse.png" /></a>
+</p>
+
+<br style="clear: both">
+
+The usual caveat applies: this is in the [Bluesky federation sandbox](https://atproto.com/blog/federation-developer-sandbox), not prod, until they turn on federation there. [Hopefully early next year!](https://atproto.com/blog/2023-protocol-roadmap)
+
+[Previously](/2023-10-06_bridgy-fed-status-update-7), [previously](https://snarfed.org/2023-09-23_bridgy-fed-status-update-6), [previously](/2023-09-09_bridgy-fed-status-update-5), [previously](/2023-08-22_bridgy-fed-status-update-4), [previously](/2023-08-04_bridgy-fed-status-update-3), [previously](/2023-07-11_bridgy-fed-status-update-2), [previously](/2023-06-29_bridgy-fed-status-update).
