@@ -1,0 +1,21 @@
+51217
+Following the Not So Online
+
+<p class="right half">
+ <img class="shadow" src="/turtle.jpg" />
+ <a class="captioned" href="https://www.istockphoto.com/photo/turtle-on-road-gm178634748-20675137">Nadezhda1906</a>
+</p>
+
+[Bryan](https://bnewbold.net/) [inspired me today](https://blue.amazingca.dev/user/bnewbold.net/post/3kcm7vcnvgk26):
+
+> feed request: just my timeline, minus anybody who posted more than 12 times in the past 12 days
+
+I'd been thinking along the same lines recently. I didn't realize it at first, but this is a big part of how I curate my follows. Occasional life events and baby photos, sure. Flood of memes and politics dunks and inscrutable subtweets, not so much.
+
+I like social media! But only to a point. I'm down for 15 or 30 minutes of social scrolling a day, which isn't all that much time, all things considered, so every new follow needs to pull their weight. I love all my Very Online friends, but I can't often justify following them and their floods of Very Online Poasts. It's just too much. I wish I could still use social media to keep up with them, but oh well. Them's the breaks, I guess.
+
+...or are they? Could we train a model to extract the occasional life event or baby photo out of a Very Online flood? I'd pay good money for that.
+
+In one sense, this seems like what algorithmic feeds are aimed at. In practice though, they often end up optimizing for engagement more than human "importance." Not too surprising for the big ad-supported platforms; engagement is their moneymaker. Plus, if you need to come up with a training dataset, it's _way_ easier to quantify and measure engagement than importance. Human labelers may be able to do it, sometimes, but us humans don't come cheap.
+
+So here we are. Barring someone with deep pockets funding a big new dataset, I'm stuck following the [Slow Poasters](https://snarfed.org/2013-08-18_im-slow) and the Only Kinda Online. Maybe that's not so bad.

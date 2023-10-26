@@ -1,0 +1,29 @@
+51062
+Bridgy Fed status update
+
+Another big milestone this episode! I now have fediverse profiles fully bridged into the Bluesky [federation sandbox](https://atproto.com/blog/federation-developer-sandbox). That means profiles can now be bridged both directions, in and out of Bluesky.
+
+<p class="right half">
+ <a href="/bluesky-into-fediverse-bsky-app.png">
+  <img class="u-photo shadow" src="/bluesky-into-fediverse-bsky-app.png" /></a>
+</p>
+<p class="left half-sidebyside">
+ <a href="/fediverse-to-bluesky-chris-messina.jpg">
+  <img class="u-photo shadow" src="/fediverse-to-bluesky-chris-messina.jpg" /></a>
+</p>
+
+<br style="clear: both">
+
+This took roughly 10x the work of bridging Bluesky profiles into the fediverse. Some of that is because I already had the ActivityPub plumbing built, but much of it is due to AT Protocol's architecture.
+
+Webmention, ActivityPub, and Nostr are primarily messaging protocols: they dictate how you exchange information, eg activities, but not how you store them. AT Protocol is different: it specifies sophisticated internal data structures that you have to reproduce, notably a [Merkle search tree and a signed repo chain](https://atproto.com/specs/repository#repo-data-structure-v3). These are tricky to get right, and the other parts of Bluesky's architecture, notably the [BGS and AppView](https://blueskyweb.xyz/blog/5-5-2023-federation-architecture), refuse to ingest and accept them if you get anything wrong. (And there are many ways to do that!)
+
+Nevertheless, profiles are now flowing. And since the hard internal ATProto work is now done, I hope to have posts, replies, etc flowing within the next couple weeks. Progress!
+
+(None of this is usable or real by users until Bluesky turns on federation, of course. Hopefully soon, once they've shipped their v2 infra stack!)
+
+A few interesting bits I hit over the last couple weeks: [creating DNS records on the fly](https://github.com/bluesky-social/atproto/discussions/1697), [creating CID-based blobs](https://github.com/snarfed/arroba/commit/b99cbecd21ed419e1e54b21755f069879659b93f) [on the fly](https://github.com/snarfed/arroba/commit/7b948adde574a31c08e1614960762e6e3f6aeb71), [serving redirects to XRPC calls](https://github.com/bluesky-social/atproto/discussions/1228), and substantially revising the [id mapping between protocols](https://fed.brid.gy/docs#translate). Phew.
+
+Lastly, I got to talk with [Laurens Hof](https://laurenshof.online/) of [Fediverse Report](https://fediversereport.com/) fame for a bit this morning. Lots of fun, you may get to read a bit about it soon. Thanks for everything you do, Laurens!
+
+[Previously](https://snarfed.org/2023-09-23_bridgy-fed-status-update-6), [previously](/2023-09-09_bridgy-fed-status-update-5), [previously](/2023-08-22_bridgy-fed-status-update-4), [previously](/2023-08-04_bridgy-fed-status-update-3), [previously](/2023-07-11_bridgy-fed-status-update-2), [previously](/2023-06-29_bridgy-fed-status-update).
