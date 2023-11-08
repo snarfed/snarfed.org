@@ -328,6 +328,10 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 
 \- internal NSA saying, via [Steve Bellovin](https://twitter.com/SteveBellovin)
 
+> A cryptosystem should be secure even if everything about the system, except the key, is public knowledge.
+
+[- Kerckhoffs's principle](https://en.wikipedia.org/wiki/Kerckhoffs%27s_principle)
+
 > All code you haven’t tested is wrong. All code you have tested is also wrong, but appears to work by coincidence. And code you’ve proven correct does the wrong thing, correctly.
 
 [- Tim Sweeney](https://twitter.com/TimSweeneyEpic/status/1192527288723804160)
