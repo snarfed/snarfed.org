@@ -1,0 +1,19 @@
+51411
+Bridgy Fed status update
+
+Another brief [Bridgy Fed](https://fed.brid.gy/) progress report: [first pass at Bluesky support](https://github.com/snarfed/bridgy-fed/issues/381) is feature complete! All basic interactions - user discovery, following, posts, replies, likes, reposts - are working in both directions. The last bit I got working this week was posts flowing from Bluesky to the fediverse and replies, likes, and reposts flowing back. Screenshots below.
+
+<a href="https://snarfed.org/bluesky-post.png">
+  <img class="shadow third" src="https://snarfed.org/bluesky-post.png" /></a>
+<a href="https://snarfed.org/bridged-post-in-masto.png">
+  <img class="shadow third" src="https://snarfed.org/bridged-post-in-masto.png" /></a>
+<a href="https://snarfed.org/bridged-like-repost-bsky.png">
+  <img class="shadow third" src="https://snarfed.org/bridged-like-repost-bsky.png" /></a>
+
+Disclaimer! As usual. This is only in the [federation sandbox](https://atproto.com/blog/federation-developer-sandbox), not the production [bsky.app](https://bsky.app/) site. I have lots more work to do on outreach, safeguards, incorporating feedback, etc before this launches for real users, not to mention that it depends on Bluesky themselves enabling federation.
+
+Next up, lots more bug fixes and cleanup, and I badly need to redesign the home page and a lot of UI for Bridgy Fed's shiny new multi-protocol future. If you're a UX designer and this sounds interesting, please get in touch! I'd dearly love help from someone who actually knows what they're doing. 😆
+
+Otherwise, feedback is welcome, as always!
+
+[Previously](https://snarfed.org/2023-11-07_bridgy-fed-status-update-8), [previously](https://snarfed.org/2023-10-20_51173), [previously](https://snarfed.org/2023-10-06_bridgy-fed-status-update-7), [previously](https://snarfed.org/2023-09-23_bridgy-fed-status-update-6), [previously](https://snarfed.org/2023-09-09_bridgy-fed-status-update-5), [previously](https://snarfed.org/2023-08-22_bridgy-fed-status-update-4), [previously](https://snarfed.org/2023-08-04_bridgy-fed-status-update-3), [previously](https://snarfed.org/2023-07-11_bridgy-fed-status-update-2), [previously](https://snarfed.org/2023-06-29_bridgy-fed-status-update), cc [@activitypubblueskybridge@venera.social](https://venera.social/profile/activitypubblueskybridge).

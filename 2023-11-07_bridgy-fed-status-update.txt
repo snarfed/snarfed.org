@@ -1,4 +1,5 @@
 51349
+Bridgy Fed status update
 
 Hi all! I finally got another big bit of [Bridgy Fed](https://fed.brid.gy/) interop working earlier today: bridging Bluesky replies, likes, and reposts into the fediverse. (Only the Bluesky [federation sandbox](https://atproto.com/blog/federation-developer-sandbox), not real users, since federation is still months away.)
 
