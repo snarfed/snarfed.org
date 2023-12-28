@@ -3,6 +3,7 @@ User-agent: *
 Disallow: /category/
 Disallow: /gallery/
 Disallow: /page/
+Disallow: /search/
 Disallow: /tag/
 Disallow: /unlisted
 Disallow: /w/wp-admin/
