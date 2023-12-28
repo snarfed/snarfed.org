@@ -1,12 +1,12 @@
 51485
 Re-introducing Bridgy Fed
 
-<a href="/ryan_teeth.jpeg">
-  <img class="u-photo shadow third right" src="/ryan_teeth.jpeg" /></a>
+<a href="/ryan_cowboy_costume.jpg">
+  <img class="shadow third right" src="/ryan_cowboy_costume.jpg" /></a>
 
 Hi! I'm [Ryan](/). I've been building social network bridges and related tools for over 12 years, including [Bridgy](https://brid.gy/), which connects personal web sites and blogs to centralized social networks, and [Bridgy Fed](https://fed.brid.gy/), which connects them to the fediverse.
 
-I love how decentralized social networks like the fediverse let us move away from walled gardens controlled by single monolithic entities. I love that we can control our own destinies online, nurture and grow our own communities and instances, and still interact with people elsewhere. I want to be able to interact across networks just like we interact across servers. That's why I build bridges!
+I love how decentralized social networks like the fediverse and the [IndieWeb](https://indieweb.org/) let us move away from walled gardens controlled by single monolithic entities. I love that we can control our own destinies online, nurture and grow our own communities and instances, and still interact with people elsewhere. I want to be able to interact across networks just like we interact across servers. That's why I build bridges!
 
 Recently, I've been working on adding new protocols to Bridgy Fed, starting with [Bluesky](https://blueskyweb.xyz/). It's still months away from launching, but I expect it will draw in people who aren't familiar with Bridgy Fed yet, and I know it will affect people in obvious and not-so-obvious ways, so I want to start a conversation. What do you think? How do you hope this will work? What are your concerns? What feedback do you have, especially now while big changes may be easier to make? I've talked with a number of fediverse admins and representatives so far, but I want to hear from you too.
 
@@ -16,7 +16,7 @@ Here's some information about Bridgy Fed:
 * I build and run it myself, with occasional contributors and lots of support, but still mostly alone. It's [open source](https://github.com/snarfed/bridgy-fed).
 * I don't plan to incorporate or monetize in any way. No donations, no paid tiers, no VC funding. I've self-funded Bridgy classic for 12 years and Bridgy Fed for 6 years so far, and I can continue indefinitely. I have experience scaling services like these as personal projects. I care about and believe in decentralized social networks, and I build and pay for these tools as a way to give back.
 * The bridge is fully bidirectional. Anyone on supported network A can follow anyone else on supported network B, see their posts, and reply, like, and repost them. Bridgy Fed translates interactions from A to B, and vice versa.
-* The two currently supported networks are the fediverse and the [IndieWeb](https://indieweb.org/), specifically HTML with microformats2 and webmentions.
+* The two currently supported networks are the fediverse and the IndieWeb, specifically HTML with [microformats2](https://microformats.org/wiki/microformats2) and [webmentions](https://webmention.net/).
 * [Bluesky support is under development](/2023-11-15_bridgy-fed-status-update-9), but hasn't launched yet. Two things need to happen first: [Bluesky themselves need to enable federation](https://blueskyweb.xyz/blog/11-15-2023-toward-federation), and I need to reach out to people and gather feedback. Thanks for getting this far!
 * All native moderation features will work automatically: blocking, muting, server level blocking/defederating, etc. This includes the fediverse's [authorized fetch](https://fedi.tips/authorized-fetch/) aka secure mode, which Bridgy Fed supports: it always includes valid HTTP Signatures when fetching actors and other objects.
 * Bridgy Fed doesn't index anything and has no search functionality. You can only follow someone on a different network by entering their exact Bridgy Fed handle.
