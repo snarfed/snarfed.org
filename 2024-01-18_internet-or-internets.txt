@@ -1,0 +1,107 @@
+51922
+Internet or internets?
+
+[picture: small village in a valley, with developments on all sides over the hills]
+
+The scope of the fediverse has been a [hotly debated topic](https://fediversereport.com/last-week-in-fediverse-ep-51/) recently. [Are we a big fedi? Or a small fedi](https://evanp.me/2023/12/26/big-fedi-small-fedi/)? [Are instances just nodes? Or networked communities?](https://merveilles.town/@lrhodes/110555014534253768) Which of the [Two Camps of Mastodon](https://heat-shield.space/mastodon_two_camps.html) are we in? [How far should our replies travel](https://xoxo.zone/@fraying/111734924727494794)? [How about](https://genart.social/@twilliability/111688775264827884) [our blog posts](https://mastodon.social/@fromjason/111737319152217700) and [Bluesky skeets](https://mastodon.online/@mastodonmigration/110511687993851111)? Should we [welcome](https://reb00ted.org/tech/20231208-meta-threads-data-dialogue/) [Threads](http://plasticbag.org/archives/2024/01/how-threads-will-integrate-with-the-fediverse/)? Or [block](https://fedipact.veganism.social/) [them](https://fedipact.online/)?
+
+Should we open the fediverse to everyone equally, embrace the inevitable [Eternal September](https://en.wikipedia.org/wiki/Eternal_September), and [get good](https://en.wikiquote.org/wiki/Stewart_Brand#Sourced) at managing and preventing the problems? Or should we learn from the last few decades that a "global town square" is a net negative, and only expand [once we have consent from the existing community](https://privacy.thenexus.today/free-fediverses-and-consent/)?
+
+In short, should there be one internet? Or multiple, mostly separate internets?
+
+I have a vested interest in this topic. I [build and run bridges](/2023-11-27_re-introducing-bridgy-fed), [Bridgy](https://brid.gy/) and particularly [Bridgy Fed](https://fed.brid.gy/), that push the boundaries of the fediverse by integrating traditional web sites and blogs. These bridges are small so far, but as they [add new networks like Bluesky](/2023-11-15_bridgy-fed-status-update-9), I expect them to grow, attract more attention, and stress test those boundaries. I have to make concrete design decisions that determine how these bridges work, and those decisions squarely depend on this "scope of the fediverse" question.
+
+If there's a right answer to that question, I don't know it yet. I have thoughts, naturally, but I'm very aware that other people here are much more knowledgeable and experienced. They may not always agree amongst themselves, but still, [I know I have more to learn here than to teach](/2023-04-15_im-not-eating-my-own-dog-food). (Not to mention that as a straight white guy, I have plenty of privilege to check, and not much lived experience of being harassed or mistreated online.) Consider this my way of thinking out loud, working through ideas, asking questions, and hoping for useful feedback. Thanks in advance.
+
+
+## Opt-in vs opt-out
+
+For people like me who run bridges, the concrete question we face is whether to make them opt-in or opt-out. Opt-in is the conservative answer, and what some vocal parts of the fediverse [seem to](https://searchtodon.social/Adventures-in-Mastoland.html) [expect](https://www.anildash.com/2023/01/16/a-fediverse-search/), at least for services that provide any kind of global indexing or search. (Bridgy and Bridgy Fed don't, but still.)
+
+However, for services like bridges that live and die by network effects, opt-out seems to be the only way they can be broadly useful. If Bluesky user Alice opts into bridging her account to the fediverse, people in the fediverse will see her and her posts, but she won't see their replies or other interactions. More importantly, people in the fediverse won't be able to follow anyone _else_ on Bluesky.
+
+All else equal, people tend to stick with defaults. Opt-in rates are famously low, in general, regardless of what they're for. Mastodon made a [big splash with its launch of opt-in full text search last September](https://blog.joinmastodon.org/2023/09/mastodon-4.2/), along with a big press push. After four months, one instance looked at the ~800k users in its database, from across the fediverse, and [found that only 4% had opted in](https://vmst.io/@iostat/111562800612134464).
+
+Certainly, of the remaining 96%, some knew about the option, carefully evaluated it, and deliberately decided not to opt in. But realistically, most of them probably hadn't heard about it, or didn't know how to opt in, or forgot, or didn't feel strongly enough either way to bother.
+
+My primary motivation for building bridges is to [scratch my own itch](https://indieweb.org/scratch_your_own_itch). I want to follow people on all of these networks, and interact with them, and I'd rather not juggle a separate account on each network to do it. It takes more work to build out the bridges so that anyone can use them, and definitely costs more to host, but I'm happy to do that work and bear those costs. I see it as a way to give back to the community.
+
+However, if these bridges were opt-in, and I could only follow 2% of people with them, that wouldn't scratch my own itch. Same with most other people who use them. They'd be drastically less useful, and I'd be much less likely to keep building and running them.
+
+What I'm personally interested in building isn't really a justification for anything here. However, the _utility_ that many people get from these bridges may be. I hear regularly from all sorts of people that they love Bridgy and Bridgy Fed, that they connect them to other people across the internet in ways that they couldn't otherwise, and that they find real, deep value in those connections.
+
+
+## Context collapse, or where is the fediverse anyway?
+
+More importantly, I don't know if opt-in vs opt-out bridging is even the right question. It assumes that there are clear, bright lines between each network, and I'm not sure there are.
+
+The [WordPress ActivityPub plugin](https://wordpress.org/plugins/activitypub/) is a great example. Historically, it's easy to tell a WordPress blog and a fediverse server apart. The blog is an island: it has posts, and people may comment on those posts, but those posts and comments stay on the blog. They're not federated.
+
+The fediverse server, on the other hand, _is_ federated. It has local users, sure, but it also shows remote users and posts from other servers. Local users interact with remote users, posts and replies and interactions flow to all of the servers involved. It's the fediverse we know and love.
+
+When you install the ActivityPub plugin, suddenly your WordPress blog _is also_ a fediverse server. It federates posts, replies, and other interactions back and forth just like we expect. Notably, if a blog post is federated to the blog's followers, and someone in the fediverse replies, that reply gets federated back and appears as a comment on the post.
+
+Is this surprising? Is it a [problematic instance](https://xoxo.zone/@fraying/111734924727494794) of [context collapse](https://en.wikipedia.org/wiki/Context_collapse)? Maybe! But why? The exact same thing happens between "true" fediverse servers. In both cases, the post and reply are public, and can be seen by anyone on the internet. The [publics](https://indieweb.org/publics) involved are different, but in both cases the reply is federated to a different place than it was originally written.
+
+Is it a cultural problem? Blogs are a generation or two older than the fediverse, and the two have grown and matured into their own separate spaces, with different norms and user expectations. Web sites may "feel" different than "native" fediverse servers. Those expectations and feelings may differ from the technical reality of the ActivityPub plugin, but they still matter.
+
+This all applies to other social networks, whether bridged or native. When [Mostr](https://mostr.pub/) federates a post from the fediverse into [Nostr](https://nostr.com/), it gets copied to its Nostr followers' relays just like to its fediverse followers' instances. Same with Tumblr, for example, if/when they add ActivityPub support.
+
+Hell, this even happens entirely _within_ the "native" fediverse. The fediverse has a range of functionality, and the communities around each main feature tend to be fairly distinct. People on microblogging servers like Mastodon and Pleroma tend to interact with each other more than with people on link aggregators like [Lemmy](https://join-lemmy.org/) and [kbin](https://kbin.pub/), or video sites like [PeerTube](https://joinpeertube.org/en), or streamers on [Owncast](https://owncast.online/). However, all of these servers still happily [federate posts](https://lemmy.world/post/10417324) [and replies](https://www.reddit.com/r/PeerTube/comments/ypgbk8/comment/ivkpsar/) back and forth. Do these different fediverse communities understand and expect this? Is it meaningfully different from federating with a blog?
+
+
+## Qui consentit
+
+Context collapse is obviously just one of many problems people experience online, and far from the worst. Many early fediverse people were [refugees from mainstream social networks, often queer and trans](https://wedistribute.org/2023/06/a-partial-queer-trans-and-non-binary-history-of-mastodon-and-the-fediverse/), who'd been abused there and were looking for a smaller, safer, more welcoming place. The [paradox of tolerance](https://en.wikipedia.org/wiki/Paradox_of_tolerance) is real, and much of the early fediverse staked out a clear position of rejecting intolerance.
+
+For them, and many other people who see the fediverse as a safe haven, "small fedi" is more than just a personal preference. It's a crucial difference between feeling safe online vs in harm's way. Far right instances like Gab and Truth Social may support ActivityPub technically - some are even [based on Mastodon](https://en.wikipedia.org/wiki/Truth_Social)! - but the fediverse still largely united in blocking them in anticipation of their users harassing vulnerable native fediverse users.
+
+Giants like Meta, Automattic, [and Flipboard](https://flipboard.medium.com/flipboard-begins-to-federate-c56ec788feaa) may not pose quite as much of a clear and present danger, but they still comprise huge, often more mainstream populations that are new to the fediverse and might still pose risks to these kinds of marginalized people. Even the native fediverse itself has long had instances hosting and even run by bad actors that are routinely defederated as a safeguard. Services like [Fediseer](https://fediseer.com/), [The Bad Space](https://tweaking.thebad.space/), and [FediMod](https://www.fedimod.org/) have popped up to help admins share block lists and other information about instances they might or might not want to federate with. Even the ActivityPub protocol itself explicitly supports [federated `Block` activities](https://www.w3.org/TR/activitystreams-vocabulary/#dfn-block) and may eventually add `Report`s as well.
+
+Federating or defederating at the instance level is another opt-in vs opt-out question. Most instances are opt-out, ie they default to allowing federation with any other instance. When an admin decides to block another instance, they add them to a blocklist and opt their entire server out of federating with them.
+
+However, some instances flip this and federate on an opt-in basis. Federation with unknown instances is blocked; admins have to manually add remote instances to an allowlist before they're allowed to interoperate.
+
+[Jon Pincus calls this _consent-based federation_](https://privacy.thenexus.today/free-fediverses-and-consent/), and I like it a lot. It's bold, and not at all how I personally think about connecting with people online, or how I think most instances should work, but I deeply appreciate the _consistency_ that it provides admins who want to be aggressive(ly conservative) about who they federate with. If you're an admin who believes in small fedi, if you don't trust Threads or #TwitterMigration or Eternal September, you should be able to exercise your freedom of association and choose who to federate with _based on who they are and what they do_, and whether that fits with your users and your instance's - your community's! - values.
+
+Notably, this is different - and better! - than the weak half-measures we've had so far. Big mainstream commercial social networks haven't federated for business and product reasons, but those are changing. Web sites and blogs historically couldn't speak ActivityPub; [now more](https://wordpress.org/plugins/activitypub/) [and more](https://meta.discourse.org/t/activitypub-plugin/266794) do. [Other](https://blueskyweb.xyz/) [decentralized](https://nostr.com/) [networks](https://www.farcaster.xyz/) use their own protocols, not ActivityPub; [bridges are closing those gaps](https://mostr.pub/).
+
+We leaned on these old divisions for technical and product reasons, but they were always poor substitutes for actual human judgment. The fediverse has plenty of homegrown bad actors and abuse, originating from servers running stock Mastodon and other similar software. Likewise, maybe not every blogger or Bluesky skeeter would integrate well into a carefully guarded, consent-based fediverse instance (community), but some certainly would.
+
+In many cases, individual networks do have some degree of their own distinct culture. The fediverse grew on the backs of progressives, queer people, and others who the mainstream treated as misfits. Bluesky famously found early traction with shitposters and [TPOT](https://www.lesswrong.com/posts/rtM3jFaoQn3eoAiPh/explaining-the-twitter-postrat-scene). Nostr is full of Bitcoiners. Old graybeards like me still cling onto the blogosphere, idolizing [Yahoo Pipes](https://retool.com/pipes) and seeing ourselves as great thought leaders and writers who take day jobs in big tech to pay the bills.
+
+These are obviously overgeneralizations - they may have a kernel of truth, at most - and that kernel shrinks more and more as these networks grow. And that's the point! Whether [ActivityPub](https://activitypub.rocks/) or [ATProto](https://atproto.com/) or [webmention](https://webmention.net/), the underlying technical protocol a community uses to interact online is a poor way to judge who they are and whether your community might want to hang out with them. Same with the way their web site(s) are designed, or whether they organize around posts or links or videos, or even whether they call them replies or comments or responses.
+
+The best way to judge a community is to _actually judge_ them. Look at who they are, what they say, and how they behave. If you admin your own community (instance), you'll have your own bar for which communities you want to interact with. Weight loss communities may choose not to federate with cooking communities. Jewish communities probably won't federate with Nazi communities. (Nor will many others.) That's great! Make those judgments for your communities, instance by instance, not with a massive sledgehammer for entire networks or server software.
+
+
+## Users, instances, and mod services
+
+Of course, even instance level consent-based federation is still a big sledgehammer. Much of the time, an instance itself isn't rotten, it may just have a bad actor or two, or someone who made a mistake. User-level tools like blocks and mutes often seem like a better first step in these cases.
+
+However, throwing people to the wolves on their own, naked, seems like the wrong idea. Most people who experience abuse online don't have the time or knowledge or willingness to wade through it all and block themselves up to a livable level that they can sustain over time. Nor should they have to. [Pincus describes this well](https://privacy.thenexus.today/free-fediverses-and-consent/):
+
+> Even if you're not an expert on online privacy and safety, which sounds better to you: "Nazis and terfs can't communicate with me unless I give my permission" or "Nazis and terms can harass me and see my followers-only posts until I realize it's happening and say no"?
+
+Quite so. This isn't a nail in the coffin of user-oriented moderation features, but it's a spot-on rejection if they're only used _in isolation_, every user for themselves.
+
+Fortunately, collaborative moderation tooling has made solid progress, much of it grass roots and bottom up. Email server admins were pioneers here with shared graylists of domains and IPS such as [Spamhaus](https://www.spamhaus.org/) and [DNSBL](https://www.dnsbl.info/). The social space had shared blocklists early too, followed by independent tools like [Block Party](https://www.blockpartyapp.com/) for Twitter, and now a multitude of fediverse options.
+
+Other networks have even more ambitious ideas. Bluesky [has built a platform](https://blueskyweb.xyz/blog/01-16-2024-moderation-2023) for [independent moderation and labeling services](https://blueskyweb.xyz/blog/4-13-2023-moderation) that users and communities can subscribe to. These services might specialize in different areas, eg detecting CSAM or fighting antisemitism. Jewish Bluesky users could subscribe to an antisemitism mod service to proactively filter out abuse before they ever see it in the first place.
+
+The IndieWeb's nascent [Vouch](https://indieweb.org/Vouch) protocol is another example that brings a web-of-trust approach to moderating webmentions. When you send a webmention to someone you don't already know, you can include a link to a friend-of-a-friend who "knows" you both, according on any existing links between your web sites. The receiver can evaluate these links and determine whether that person "vouches" for you, and if so, they can accept the webmention, and maybe trust your webmentions in the future.
+
+Even Nostr, the land of crypto libertarianism and [adversarial interop](https://www.youtube.com/watch?v=9pGZ2epF8ZY), has a thriving ecosystem of [shared mutelists](https://github.com/nostr-protocol/nips/blob/master/51.md#standard-lists) and [moderated groups](https://github.com/nostr-protocol/nips/blob/master/72.md) that has seen big uptake. Nostr tends to be an anything-goes kind of place, and maybe that spurs _more_ mod tooling ideas and innovation, since users need it to survive? Who knows.
+
+I love all this user-focused tooling for the exact same reasons I like consent-based federation and communities over networks: it brings the moderation focus back to people, groups, and their behavior, not protocols or server software. Some of us want to connect with people far and wide, others want to lock our stuff down and proceed with caution. When we choose whether and how to open up, people and communities feel like the right units to work with.
+
+
+## So...?
+
+Like I mentioned earlier, I have more questions than answers. I'm keenly aware of everyone here who knows more than me about managing healthy online communities, all the way back to [The Well](https://en.wikipedia.org/wiki/The_WELL) and [Usenet](https://en.wikipedia.org/wiki/Usenet) and [Habitat](https://en.wikipedia.org/wiki/Habitat_(video_game)). I've been following the debates with a close eye, trying hard to understand what it all means and what I need to do, concretely, with Bridgy and Bridgy Fed.
+
+First off, I'd kill for a big, thorough, comprehensive [threat model](https://en.wikipedia.org/wiki/Threat_model) of human interaction online. Threat modeling is an important, mature technique from the infosec community, but I usually see it applied to the engineering side of security. I haven't seen it applied to human behavior as often. Sociology is obviously age-old, and has a ton of wisdom to share, as do more recent people who have focused on online behavior. Can we bring them together and come up with a concrete threat model that people like me could use when we build social tools? It would be a huge help.
+
+Otherwise, I'm ready to listen. If you've read this far, you can probably tell that I lean toward big fedi, inclusivity, opt-out federation, and opt-out bridging between networks. I'm a fan of user level moderation and blocking tools. I definitely don't think open federation fits all communities and instances, though! Constent-based, opt-in federation is a great idea. Especially, I think, when it's _per community_, not per network or server software.
+
+At heart, though, I'm an engineer, not a product developer or community manager or instance admin or online social expert. I'm writing this because I need to type the right Python code into Emacs, and I'm not wise enough to know what it is on my own. Thank you for reading, and thank you in advance for your feedback.

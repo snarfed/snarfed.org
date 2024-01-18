@@ -122,11 +122,9 @@ Open source projects: [Bridgy](https://brid.gy/), <!-- [webmention](https://webm
 <!-- * Ashcraft, Barrett, et al. _[P4 Protocol Specification](/p4protocol)._ snarfed.org, 2002. [Citations](https://scholar.google.com/scholar?cites=16310453643830093000&as_sdt=2005&sciodt=1,5&hl=en), [background](/p4), [proposal](/p4proposal). -->
 
 
-<hr />
-
 ##### CVEs
 
-[CVE-2023-36462](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-36462)
+* [CVE-2023-36462](https://cve.mitre.org/cgi-bin/cvename.cgi?name=CVE-2023-36462)
 ([GitHub](https://github.com/mastodon/mastodon/security/advisories/GHSA-55j9-c3mp-6fcq)): [Mastodon](https://github.com/mastodon/mastodon): _Verified profile links can be formatted in a misleading way_
 
 

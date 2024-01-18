@@ -1,0 +1,13 @@
+51810
+
+<p class="right third">
+ <a href="https://fed.brid.gy/">
+  <img src="/bridgy_logo.png" /></a></p>
+
+[Bridgy Fed](https://fed.brid.gy/) now supports all web sites! You can now use it from the fediverse to see and follow any site, regardless of whether it has microformats2, webmentions, or WebFinger. Bridgy Fed extracts as much profile info as it can, generates fediverse posts from Atom and RSS feeds, and so on.
+
+Web sites start out [bridged to the fediverse as `[domain]@web.brid.gy`](https://fed.brid.gy/docs#fediverse-follow). For example, to see new [nature.com](https://www.nature.com/) articles in your fediverse feed, follow `@nature.com@web.brid.gy`. And as always, you can [upgrade Bridgy Fed to use your web site's domain in its fediverse handle](https://fed.brid.gy/docs#fediverse-enhanced), like mine at `@snarfed.org@snarfed.org`.
+
+(I've loved seeing other similar bridges recently too, including [@twilliability@genart.social](https://genart.social/@twilliability)'s [RSS Parrot](https://rss-parrot.net/) and [@dave@podcastindex.social](https://podcastindex.social/@dave)'s [pi-activitypub-server](https://github.com/Podcastindex-org/pi-activitypub-server). We're all pulling in the same direction!)
+
+This is one more step toward making Bridgy Fed support people wherever they are, on any network, fully bidirectionally. Stay tuned for more!
