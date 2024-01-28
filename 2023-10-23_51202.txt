@@ -1,0 +1,11 @@
+51202
+
+
+<!-- wp:jetpack/markdown {"source":"Parenting quote of the day:\n\n\u003e \u0022All things are difficult before they are easy.\u0022\n\n\\- Thomas Fuller"} -->
+<div class="wp-block-jetpack-markdown"><p>Parenting quote of the day:</p>
+<blockquote>
+<p>“All things are difficult before they are easy.”</p>
+</blockquote>
+<p>- Thomas Fuller</p>
+</div>
+<!-- /wp:jetpack/markdown -->

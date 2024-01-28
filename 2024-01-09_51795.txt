@@ -1,0 +1,18 @@
+51795
+
+
+<!-- wp:jetpack/markdown {"source":"This plank in [Die Partei Bundesverband's platform](https://www.die-partei.de/regierungsprogramm/) is amazing. My non-existent interest in politics is suddenly renewed.\n\n\u003e **11 Beer price cap**\n\n\u003e The PARTEI is committed to a nationwide beer price cap and the strengthening of the ordering principle. For this purpose, a beer price index is collected. The brake comes into force as soon as two indicators appear somewhere in the economy at the same time: great thirst and a verifiable empty glass jar rate. In preparation: kebab price brake (3 euros)\n\n([Google Translated](https://www-die\u002d\u002dpartei-de.translate.goog/regierungsprogramm/?_x_tr_sl=auto\u0026_x_tr_tl=en\u0026_x_tr_hl=en\u0026_x_tr_pto=wapp) from the original German)"} -->
+<div class="wp-block-jetpack-markdown"><p>This plank in <a href="https://www.die-partei.de/regierungsprogramm/">Die Partei Bundesverband’s platform</a> is amazing. My non-existent interest in politics is suddenly renewed.</p>
+<blockquote>
+<p><strong>11 Beer price cap</strong></p>
+</blockquote>
+<blockquote>
+<p>The PARTEI is committed to a nationwide beer price cap and the strengthening of the ordering principle. For this purpose, a beer price index is collected. The brake comes into force as soon as two indicators appear somewhere in the economy at the same time: great thirst and a verifiable empty glass jar rate. In preparation: kebab price brake (3 euros)</p>
+</blockquote>
+<p>(<a href="https://www-die--partei-de.translate.goog/regierungsprogramm/?_x_tr_sl=auto&amp;_x_tr_tl=en&amp;_x_tr_hl=en&amp;_x_tr_pto=wapp">Google Translated</a> from the original German)</p>
+</div>
+<!-- /wp:jetpack/markdown -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

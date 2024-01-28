@@ -14,7 +14,7 @@ Should we open the fediverse to everyone, let them exercise freedom of associati
 _Should there be one internet? Or multiple, sometimes separate internets?_
 <!--more-->
 
-I have a vested interest in this topic. I [build and run two bridges](/2023-11-27_re-introducing-bridgy-fed), [Bridgy](https://brid.gy/) and [Bridgy Fed](), that push the boundaries of the fediverse by integrating traditional web sites and blogs. These bridges are small so far, but [as I add Bluesky and other networks](/2023-11-15_bridgy-fed-status-update-9), I expect them to grow and attract more attention and stress test those boundaries. I have to design how those bridges work, and this question puts them squarely in the crosshairs.
+I have a vested interest in this topic. I build and run two bridges, [Bridgy](https://brid.gy/) and [Bridgy Fed](/2023-11-27_re-introducing-bridgy-fed), that push the boundaries of the fediverse by integrating traditional web sites and blogs. These bridges are small so far, but [as I add Bluesky and other networks](/2023-11-15_bridgy-fed-status-update-9), I expect them to grow and attract more attention and stress test those boundaries. I have to design how those bridges work, and this question puts them squarely in the crosshairs.
 
 If there's a right answer, I don't know it yet. I have thoughts, but I know other people have more knowledge and experience, all the way back to [The Well](https://en.wikipedia.org/wiki/The_WELL) and [Usenet](https://en.wikipedia.org/wiki/Usenet) and [Habitat](https://en.wikipedia.org/wiki/Habitat_(video_game)), and [I know I have more to learn](/2023-04-15_im-not-eating-my-own-dog-food). Not to mention that as a straight white guy, I have plenty of privilege to check, and not much lived experience of being harassed or mistreated online. This is one way for me to think out loud, work through ideas, ask questions, and hope for useful feedback.
 
@@ -46,7 +46,7 @@ This kind of context collapse happens entirely within the fediverse too, though.
 
 ## Qui consentit
 
-Context collapse is just one problem. Many early fediverse people were [queer and trans refugees from mainstream social networks](https://wedistribute.org/2023/06/a-partial-queer-trans-and-non-binary-history-of-mastodon-and-the-fediverse/) who left in search of somewhere smaller, safer, and more welcoming. They'd seen the [paradox of tolerance](https://en.wikipedia.org/wiki/Paradox_of_tolerance) firsthand, so they staked out a clear position of rejecting intolerance in the fediverse.
+Context collapse is just one problem. Many early fediverse people were [queer and trans refugees from mainstream social networks](https://wedistribute.org/2023/06/a-partial-queer-trans-and-non-binary-history-of-mastodon-and-the-fediverse/) who left in search of somewhere smaller, safer, and more welcoming. They'd seen the [paradox of tolerance](https://en.wikipedia.org/wiki/Paradox_of_tolerance) firsthand and staked out a clear position of rejecting intolerance in the fediverse.
 
 For them, and others who see it as a safe haven, "small fedi" is more than just a preference. It's a key part of feeling safe online. The "native" fediverse itself has long included bad actors and instances that routinely get defederated. Far right instances like Gab and Truth Social may technically support ActivityPub - some are even [based on Mastodon](https://en.wikipedia.org/wiki/Truth_Social) - but the fediverse saw them coming and blocked them in order to prevent an inevitable flood of abuse.
 
@@ -110,22 +110,22 @@ For bridge developers like me, the concrete question is whether to make them opt
 
 Opt-in is the conservative answer, and what some vocal parts of the fediverse [seem to](https://searchtodon.social/Adventures-in-Mastoland.html) [expect](https://www.anildash.com/2023/01/16/a-fediverse-search/), at least for services that provide any kind of global indexing or search. (Bridgy and Bridgy Fed don't, but still.)
 
-However, if the useful units to moderate are people and communities, and a network isn't a single coherent community, but a collection of loosely related communities (and individual users!), then making bridges opt-in or opt-out doesn't quite follow. For single-instance or [single-user bridges](https://fietkau.software/pinhole), sure, but most bridges connect _entire networks_, not individual instances or users.
+However, if the useful units to moderate are people and communities, and a network isn't a single coherent community but a collection of different communities (and users), then making bridges opt-in or opt-out doesn't seem to follow. For single-instance or [single-user bridges](https://fietkau.software/pinhole), sure, but most bridges connect entire networks, not individual instances or users.
 
-Those general-purpose bridges seem closer to the protocol level, akin to ActivityPub or ATProto or webmention. You can't really make an open standard protocol opt-in or opt-out, browser trust roots and VeriSign root DNS zone notwithstanding. Anyone can build an ActivityPub server that federates openly. Same with a server that does consent-based federation.
+These general-purpose bridges seem closer to protocols, akin to ActivityPub or ATProto or webmention. You can't really make an open standard protocol opt-in or opt-out, browser trust roots and VeriSign root DNS zone notwithstanding. Anyone can build an ActivityPub server that federates openly. Anyone can build one that does consent-based federation.
 
-General-purpose bridges translate between networks and protocols. Individual users and larger communities exist in every network, more or less. Networks differ, and translating is complicated and imperfect, but ideally _moderate people, not code_ applies to bridges too. An IndieWeb user should be able to block a fediverse user just like they block a native IndieWeb user. A fediverse instance admin should be able to block an ATProto PDS just like they block a fediverse instance.
+General-purpose bridges translate between networks and protocols. Users and communities exist in every network, more or less. Networks differ, and translating is complicated and imperfect, but ideally _moderate people, not code_ applies to bridges too. An IndieWeb user should be able to block a fediverse user just like they block a native IndieWeb user. A fediverse instance admin should be able to block an ATProto PDS just like they block a fediverse instance.
 
-This isn't easy, and it requires effort and commitment on the part of bridge developers, above and beyond the baseline effort to get a bridge working at all. So far though, it feels like the best path. I try to put that effort in and ensure that native moderation functionality works across my bridges as much as possible, [even when there are tradeoffs involved](https://github.com/snarfed/bridgy-fed/issues/711).
+This isn't easy, and it requires effort and commitment on the part of bridge developers, above and beyond the baseline effort to get a bridge working at all. So far though, it feels like the best path. I know I put that effort in so that native moderation functionality works across my bridges as much as possible, [even when there are tradeoffs involved](https://github.com/snarfed/bridgy-fed/issues/711).
 
 
 ## Metcalfe was right
 
-Having said all that, for services like bridges that live and die by network effects, opt-out seems to be the only way to be broadly useful. If Alice opts into bridging her Bluesky account to the fediverse, people there will see her and her posts, but she won't see their replies or other interactions. More importantly, people in the fediverse still won't see anyone _else_ on Bluesky.
+Having said all that, for services like bridges that live and die by network effects, opt-out seems like the only way to be broadly useful. If Alice opts into bridging her Bluesky account to the fediverse, people there will see her and her posts, but she won't see their replies or other interactions. More importantly, people in the fediverse still won't see anyone _else_ on Bluesky.
 
-All else equal, people tend to stick with defaults. Opt-in rates are famously low, regardless of what they're for. (This is the premise of an entire [pop-sci book](https://en.wikipedia.org/wiki/Nudge_(book)), [movement](https://en.wikipedia.org/wiki/Nudge_theory), and even a [department of the UK government](https://en.wikipedia.org/wiki/Behavioural_Insights_Team).) As an example, Mastodon made a big splash and press push for its [opt-in full text search last September](https://blog.joinmastodon.org/2023/09/mastodon-4.2/). After four months, one instance looked at ~800k users across the fediverse - [two third of all active users!](https://fedidb.org/) - and [found that only 4% had opted in](https://vmst.io/@iostat/111562800612134464).
+All else equal, people tend to stick with defaults. Opt-in rates are famously low, regardless of what they're for. (This is the premise of an entire [pop-sci book](https://en.wikipedia.org/wiki/Nudge_(book)), [movement](https://en.wikipedia.org/wiki/Nudge_theory), and even a [department of the UK government](https://en.wikipedia.org/wiki/Behavioural_Insights_Team).) As an example, Mastodon made a big splash and press push for its [opt-in full text search last September](https://blog.joinmastodon.org/2023/09/mastodon-4.2/). After four months, one instance looked at ~800k users across the fediverse - not necessarily all active, but for comparison, [FediDB counts less than 1.2M monthly active users right now](https://fedidb.org/) - and [found that only 4% had opted in](https://vmst.io/@iostat/111562800612134464).
 
-<p class="right third captioned">
+<p class="left third captioned">
   <a href="/dixit_white_red_flowers.jpg">
     <img class="shadow" src="/dixit_white_red_flowers.jpg" /></a>
   <a href="https://www.libellud.com/en/our-games/dixit/">Dixit</a> / <a href="https://en.wikipedia.org/wiki/Marie_Cardouat">Marie Cardouat</a>
@@ -138,7 +138,7 @@ Certainly, of the remaining 96%, some knew about the option, carefully evaluated
 If bridges were opt-in, and I could only follow 4% of people on other networks, they would be drastically less useful. I know I'd be much less likely to keep building and running them. My personal interests don't justify anything, of course, but the _utility_ of these bridges might. I hear regularly from a wide range of people that they love Bridgy and Bridgy Fed, that they connect them to other people in ways that they might not otherwise, and that they find real, deep value in those connections. That wouldn't happen, for the most part, if they were opt-in.
 
 
-## So...?
+## So...
 
 Like I mentioned earlier, I have more questions than answers. I'm keenly interested to hear more from people who study online communities and their health. I've been following our current debates with a close eye, trying hard to understand what it all means and what I should do.
 

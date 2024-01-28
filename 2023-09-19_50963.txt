@@ -1,0 +1,10 @@
+50963
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e You strap a database to a laundromat and you’ve got a business.\n\n[- Matthew Panzarino](https://www.theverge.com/23880330/matthew-panzarino-techcrunch-eic-digital-media-ai-google-disrupt-decoder)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>You strap a database to a laundromat and you’ve got a business.</p>
+</blockquote>
+<p><a href="https://www.theverge.com/23880330/matthew-panzarino-techcrunch-eic-digital-media-ai-google-disrupt-decoder">- Matthew Panzarino</a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

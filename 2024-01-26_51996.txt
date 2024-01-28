@@ -1,0 +1,15 @@
+51996
+
+
+<!-- wp:jetpack/markdown {"source":"Daaamn. Reading [_Meditations_](https://en.wikipedia.org/wiki/Meditations), this jumped out at me:\n\n\u003e Thou must hasten therefore; not only because thou art every day nearer unto death than other, but also because that intellective faculty in thee, whereby thou art enabled to know the true nature of things, and to order all thy actions by that knowledge, doth daily waste and decay: or, may fail thee before thou die.\n\nTo paraphrase:\n\n\u003e Sure, hurry up and do stuff before you die, but that's not enough. You'll run out of strength and get dementia way before that. So hurry up even more!\n\nHoo boy. This is not the chill, everything's fine, don't stress, Zen style Stoicism I was promised. ?"} -->
+<div class="wp-block-jetpack-markdown"><p>Daaamn. Reading <a href="https://en.wikipedia.org/wiki/Meditations"><em>Meditations</em></a>, this jumped out at me:</p>
+<blockquote>
+<p>Thou must hasten therefore; not only because thou art every day nearer unto death than other, but also because that intellective faculty in thee, whereby thou art enabled to know the true nature of things, and to order all thy actions by that knowledge, doth daily waste and decay: or, may fail thee before thou die.</p>
+</blockquote>
+<p>To paraphrase:</p>
+<blockquote>
+<p>Sure, hurry up and do stuff before you die, but that’s not enough. You’ll run out of strength and get dementia way before that. So hurry up even more!</p>
+</blockquote>
+<p>Hoo boy. This is not the chill, everything’s fine, don’t stress, Zen style Stoicism I was promised. ?</p>
+</div>
+<!-- /wp:jetpack/markdown -->

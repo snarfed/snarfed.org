@@ -1,0 +1,9 @@
+51890
+
+
+<!-- wp:jetpack/markdown {"source":"Nothing has made me feel more like a graybeard recently than seeing people use \u0022the internet\u0022 to mean social networking, or what people are saying to each other online, instead of the series of tubes and hardware and software that carry data packets from one networked device to another.\n\nI know, I know. Language evolves, words mean what we mean them to mean, literally no longer means literally. All this is Good and Right and The Way Of The World.\n\nStill though. You young whippersnappers, get off my lawn, uphill in the snow both ways."} -->
+<div class="wp-block-jetpack-markdown"><p>Nothing has made me feel more like a graybeard recently than seeing people use “the internet” to mean social networking, or what people are saying to each other online, instead of the series of tubes and hardware and software that carry data packets from one networked device to another.</p>
+<p>I know, I know. Language evolves, words mean what we mean them to mean, literally no longer means literally. All this is Good and Right and The Way Of The World.</p>
+<p>Still though. You young whippersnappers, get off my lawn, uphill in the snow both ways.</p>
+</div>
+<!-- /wp:jetpack/markdown -->

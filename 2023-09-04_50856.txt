@@ -1,0 +1,18 @@
+50856
+
+
+<!-- wp:paragraph -->
+<p>Threw together a <a href="https://fed.brid.gy/docs#compare">comparison of the four decentralized social protocols I know best</a>: IndieWeb, ActivityPub, ATProto, Nostr. Obviously oversimplified, hopefully still useful! Preview below, click through for full table with links.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>I tried to focus on how these protocols are currently deployed and used in the real world. For example, <a href="https://www.w3.org/TR/activitypub/#obj-id">identity in ActivityPub is technically URL-based</a>, but in practice the fediverse uses <a href="https://webfinger.net/">WebFinger</a> <a href="https://datatracker.ietf.org/doc/html/rfc7565#section-4"><code>user@domain</code> identifiers</a> more or less universally, so the table reflects that.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Feedback is welcome!</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:image {"id":50858,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://fed.brid.gy/docs#compare"><img src="https://snarfed.org/w/wp-content/uploads/2023/09/image-1-1024x684.png" alt="" class="u-photo shadow wp-image-50858"/></a></figure>
+<!-- /wp:image -->

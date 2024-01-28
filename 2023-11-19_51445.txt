@@ -1,0 +1,13 @@
+51445
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e They paint the world full of shadows, and then tell their children to stay close to the light. Their light. Their reasons, their judgments. Because in the darkness, there be dragons.\n\n\u003e But it isn't true. We can prove that it isn't true. In the dark there is discovery, there is possibility, there is freedom. In the dark, once someone has illuminated it. And who has been so close to doing it as we are, right now?\n\n\\- James Flint, _[Black Sails](http://www.imdb.com/title/tt2375692/)_"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>They paint the world full of shadows, and then tell their children to stay close to the light. Their light. Their reasons, their judgments. Because in the darkness, there be dragons.</p>
+</blockquote>
+<blockquote>
+<p>But it isn’t true. We can prove that it isn’t true. In the dark there is discovery, there is possibility, there is freedom. In the dark, once someone has illuminated it. And who has been so close to doing it as we are, right now?</p>
+</blockquote>
+<p>- James Flint, <em><a href="http://www.imdb.com/title/tt2375692/">Black Sails</a></em></p>
+</div>
+<!-- /wp:jetpack/markdown -->
