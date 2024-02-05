@@ -1,0 +1,10 @@
+52058
+
+<p class="right third">
+ <a href="https://blueskyweb.xyz/">
+  <img src="https://brid.gy//oauth_dropins_static/bluesky.svg" style="width: 100%" />
+</a></p>
+
+I'm happy to announce that [Bridgy Publish](https://brid.gy/about#publishing) now supports Bluesky! Big thanks to <a class="h-card" href="https://www.joelotter.com/">Joel Otter</a> who did much of the heavy lifting here, like with Bluesky backfeed.
+
+We're still working on a few niceties, eg [@-mentions, hashtags, links](https://github.com/snarfed/granary/issues/675), and [link preview cards](https://github.com/snarfed/granary/issues/675#issuecomment-1928111387). Regardless, posts, replies, likes, and reposts should all work now. [Feel free to try.](https://brid.gy/) Feedback is welcome!
