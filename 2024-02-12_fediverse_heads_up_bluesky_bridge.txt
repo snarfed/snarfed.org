@@ -1,0 +1,11 @@
+52106
+
+Fediverse! [I've been building a bridge](https://snarfed.org/2023-11-27_re-introducing-bridgy-fed) to [Bluesky](https://bsky.social/), and they're turning on federation soon, which means my bridge will be available soon too. You'll be able to follow people on Bluesky from here in the fediverse, and vice versa.
+
+Bluesky is a broad network with lots of worthwhile people and conversations! I hope you'll give it a chance. Only fully public content is bridged, not followers-only, unlisted, or otherwise private posts or profiles. Still, if you want to limit or block the bridge, I understand, the domain to block is `bsky.brid.gy`. Alternatively, I can also opt you out in the bridge itself. Feel free to DM me at [@snarfed@indieweb.social](https://indieweb.social/@snarfed) (different account than this one), [email me](https://snarfed.org/about), [file a GitHub issue](https://github.com/snarfed/bridgy-fed/issues), or put `#nobridge` in your profile bio.
+
+Admins, likewise, if you don't want your instance to federate with Bluesky over the bridge, the domain to limit or block is `bsky.brid.gy`.)
+
+[A number of us have thought about this for a while now](https://snarfed.org/2024-01-19_moderate-people-not-code), we're committed to making it work well for everyone, and we're very open to feedback. Thanks for listening. Feel free to share broadly.
+
+cc [@activitypubblueskybridge](https://venera.social/profile/activitypubblueskybridge) [@fedidevs](https://venera.social/profile/fedidevs) [@fediversenews](https://venera.social/profile/fediversenews)

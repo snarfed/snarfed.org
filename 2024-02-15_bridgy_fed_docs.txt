@@ -1,0 +1,9 @@
+52395
+
+For the Bluesky bridge, discoverable opt in instead of opt out is definitely something I could have (should have) figured out before the announcement. Sorry. Lesson learned.
+
+Another thing I should have had ready beforehand was user-facing docs. [The introduction post has some information](https://snarfed.org/2023-11-27_re-introducing-bridgy-fed), but not enough. People reasonably have lots of questions! I've tried to answer some, here and elsewhere, but that obviously doesn't scale.
+
+Docs would have avoided a lot of misapprehensions - for example, will it immediately bridge everyone and everything? (No, only when someone follows you, and only going forward.) What about blocks and reports? (They'll work, and be bridged, as much as possible.) And deletes, and edits? (They’ll work too.) Etc.
+
+The bridge is still a month or more away, so I haven't written complete user docs yet, but they obviously would have helped. [The current docs](https://fed.brid.gy/docs) for bridging web sites and blogs are pretty substantial, but they don't cover Bluesky. I'll work on that.

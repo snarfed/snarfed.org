@@ -121,7 +121,7 @@ This isn't easy, and it requires effort and commitment on the part of bridge dev
 
 ## Metcalfe was right
 
-Having said all that, for services like bridges that live and die by network effects, opt-out seems like the only way to be broadly useful. If Alice opts into bridging her Bluesky account to the fediverse, people there will see her and her posts, but she won't see their replies or other interactions. More importantly, people in the fediverse still won't see anyone _else_ on Bluesky.
+Having said all that, for services like bridges that live and die by network effects, opt-out seems like the only way to be broadly useful. If a Bluesky/fediverse bridge is opt in, and Alice opts into bridging her Bluesky account, people in the fediverse will see her and her posts, but she won't see their replies or other interactions unless they've also opted in. More importantly, people in the fediverse won't see anyone _else_ on Bluesky either.
 
 All else equal, people tend to stick with defaults. Opt-in rates are famously low, regardless of what they're for. (This is the premise of an entire [pop-sci book](https://en.wikipedia.org/wiki/Nudge_(book)), [movement](https://en.wikipedia.org/wiki/Nudge_theory), and even a [department of the UK government](https://en.wikipedia.org/wiki/Behavioural_Insights_Team).) As an example, Mastodon made a big splash and press push for its [opt-in full text search last September](https://blog.joinmastodon.org/2023/09/mastodon-4.2/). After four months, one instance looked at ~800k users across the fediverse - not necessarily all active, but for comparison, [FediDB counts less than 1.2M monthly active users right now](https://fedidb.org/) - and [found that only 4% had opted in](https://vmst.io/@iostat/111562800612134464).
 
