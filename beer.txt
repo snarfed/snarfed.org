@@ -96,6 +96,7 @@ Crazy Donkey IPA
 <a name="tried"></a>
 **Tried**:
 
+
 [Texas Leaguer](https://txleaguer.com/)
 [2 Hopper](https://www.beeradvocate.com/beer/profile/42751/305122/) (IPA)
 <bad>
@@ -2231,11 +2232,6 @@ Friday's Pale Ale
 <ok>
 </span>
 
-[New Belgium](http://www.newbelgium.com/)
-[Fat Tire](http://beeradvocate.com/beer/profile/192/607)
-(amber)
-<ok>
-
 <span title="dinner at monk's kettle w/gina and dan, 12/7/2011">
 [Brouwerij Het Anker](http://www.hetanker.be/)
 [Gouden Carolus Noël](http://beeradvocate.com/beer/profile/1534/7286)
@@ -3174,8 +3170,10 @@ Stout of Circumstance
 <bad>
 </span>
 
-<span title="home sat 3/6/2010 w/dan; from city beer">
+
 [New Belgium](http://www.newbelgium.com/)
+[Fat Tire](http://beeradvocate.com/beer/profile/192/607) (amber),
+<span title="home sat 3/6/2010 w/dan; from city beer">
 [1554](http://www.newbelgium.com/beer/1554) (black ale)
 <ok>,
 </span>
@@ -3200,6 +3198,8 @@ Stout of Circumstance
 <good>,
 </span>
 Bretta IPA
+<bad>,
+[Voodoo Ranger](https://www.beeradvocate.com/beer/profile/192/259546/)
 <bad>
 
 <span title="home wed 3/3/2010; from city beer">
