@@ -1,0 +1,21 @@
+52803
+
+<p class="right third">
+ <a href="https://fed.brid.gy/">
+  <img src="/bridgy_logo.png"/>
+</a></p>
+
+Hi all! It's been a while since my last status update on [Bridgy Fed](https://fed.brid.gy/), its upcoming [Bluesky](https://bsky.social/)/[AT Protocol](https://atproto.com/) support, and [the resulting firestorm](https://techcrunch.com/2024/02/14/bluesky-and-mastodon-users-are-having-a-fight-that-could-shape-the-next-generation-of-social-media/).
+
+It's coming along! It's not launched yet, I still have [a number of things to build and tests to run](https://github.com/snarfed/bridgy-fed/issues/381), but it's getting there. Also, Bluesky's [current federation test](https://docs.bsky.app/blog/self-host-federation) is [limited to 10 users per federated server](https://docs.bsky.app/blog/self-host-federation#early-access-limitations). We can't launch until they lift that limit. I don't know when that will happen, but I'm confident it will.
+<!--more-->
+
+I'm also blocking launch on building the [opt in/out prompt idea](https://github.com/snarfed/bridgy-fed/issues/880) that came out of the blowup. Thank you all (and [Kio](https://kio.moe/)!) again for that idea, I really do appreciate it. I wish I'd come up with it beforehand, would have saved everyone the headache. But it seems like this - getting feedback before launch and incorporating it - is the system working, at least in some ways, which is good.
+
+The current design is that a Bridgy Fed instance actor (user) will DM you the first time anyone on Bluesky requests to follow or interact with you over the bridge. If you reply _yes_, or follow the Bridgy Fed user, you'll be bridged. If you reply _no_, or ignore the DM, or block that user, you won't be. You'll also be able to follow or block the Bridgy Fed user to opt in or out proactively, ahead of time.
+
+On a related note, I still think there's a tension between the fediverse's current default of open, opt-out federation and its [culture of consent and opt-in](https://www.anildash.com/2023/01/16/a-fediverse-search/). That tension is magnified by the fact that [the fediverse has always been multi-protocol](https://en.wikipedia.org/wiki/Fediverse#Historical_protocols), not just ActivityPub but also OStatus, Diaspora, and Zot/Nomad, among others, so boundaries between networks have been fuzzy at best.
+
+For people who want it, [consent-based/opt-in federation](https://privacy.thenexus.today/free-fediverses-and-consent/) is the most promising solution that I've heard so far. Beyond that, I don't have any answers of my own, but there's obviously been lots of discussion over the last couple months, which feels like a good sign.
+
+As always, feedback is welcome!

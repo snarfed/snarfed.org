@@ -21,5 +21,6 @@ Also see [software engineering quotes](/software-engineering-quotes).
 * Make interfaces. Map them to teams.
 * Data wants to be dirty.
 * Duplicated data wants to skew.
+* It's not dumb if it works.
 * [There's a healthy tension between flow and YAGNI.](/2020-05-27_flow-vs-yagni) Navigate them thoughtfully.
 * [Bandwidth increases with the _square_ of latency.](/2019-07-10_37849) This has subtle but powerful implications for system design. Ignore it at your peril.
