@@ -8,7 +8,11 @@ about
 <p class="about-links">
 <a href="https://fed.brid.gy/web/snarfed.org" title="Fediverse" class="mastodon-link">
   <span style="margin-bottom: -3px;"></span>
-  @snarfed.org@snarfed.org
+  @snarfed.org<!-- @snarfed.org -->
+</a><br>
+<a href="https://bsky.app/profile/snarfed.org" title="Bluesky" class="bluesky-link">
+  <span style="margin-bottom: -3px;"></span>
+  snarfed.org
 </a><br>
 <a href="https://github.com/snarfed" title="GitHub">
   <span class="genericon genericon-github"></span>
@@ -20,7 +24,7 @@ about
 </a>
 </p>
 
-I'm an [open source](/software) and [professional](/resume) software engineer, [father](https://snarfed.org/2014-09-23_brooke), [pianist](/2020-11-11_deep-piano), [writer](https://snarfed.org/category/essay), [climate hawk](/2021-05-31_new-job-hello-climate-tech), [and more](/resume#Eagle). I'm based in San Francisco.
+I'm an [open source](/software) and [professional](/resume) software engineer, [father](https://snarfed.org/2014-09-23_brooke), [pianist](/2020-11-11_deep-piano), [writer](https://snarfed.org/category/essay), [climate hawk](/2021-05-31_new-job-hello-climate-tech), [and more](/resume#Eagle). I'm [based in San Francisco](/2021-05-18_43217).
 
 <!-- [public encryption key](/pubkey.txt) -->
 

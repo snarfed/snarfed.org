@@ -1,0 +1,15 @@
+53013
+
+Phew! It's been quite a few days, [Bridgy Fed](https://fed.brid.gy/) is up to almost 2500 bridged accounts total. Thanks again for all of your interest! I've been in a constant state of whiplash, back and forth between hearing "this is so cool!" and "it's broken in these 10 different ways."
+
+I love that you all are enjoying it! And it absolutely is [broken in all of those ways, and more](https://github.com/snarfed/bridgy-fed/issues). I'm sorry. I'd planned on a bit more time to iron out bugs first, but c'est la vie. Testing in production! 🤷
+<!--more-->
+
+I'm seeing most of the problems break down into four broad buckets, which I'm tackling in this order:
+
+* _Bridging stuff from Bluesky to the fediverse is flaky and unreliable._ True. This is largely because it's currently based on polling. [I'm in the middle of switching it to the Bluesky firehose](https://github.com/snarfed/bridgy-fed/issues/978); that should hopefully be complete within a day or two.
+* [_Bridging stuff from the fediverse to Bluesky sometimes stops working._](https://github.com/snarfed/bridgy-fed/issues/1038#issuecomment-2103575564) True. Bridgy Fed isn't as rigorous about validating Bluesky records as it needs to be, so when we emit an invalid record in one user's repo, I suspect the Bluesky relay gets stuck and won't accept any more for that user. Fixing some parts of this may be tricky, but it's still very fixable.
+* [_Lots of things don't translate right, or at all._](https://github.com/snarfed/bridgy-fed/issues) True. This is annoying, but seems lower priority than the unreliability buckets, and most of these bugs are straightforward to fix, so I'm focusing on reliability first.
+* _Scaling is inefficient and expensive._ True. OK, I'm the only one seeing this, but it's still true. 😎 Fortunately I'm not too worried, since I'm confident I'll be able to optimize it. [Make it work, then make it right, then make it fast (and cheap)](/software-engineering-quotes#Make+it+work), in that order.
+
+I'll continue to post updates here now and then. You can also follow the [_now_ label on Bridgy Fed's GitHub issues](https://github.com/snarfed/bridgy-fed/issues?q=is%3Aopen+is%3Aissue+label%3Anow) to see what I'm focusing on at any given moment. Thanks again for all of the interest, and for your patience. It'll get better, one step at a time.
