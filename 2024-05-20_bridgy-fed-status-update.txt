@@ -1,0 +1,17 @@
+53092
+
+[Bridgy Fed](https://fed.brid.gy/) status update time! It's been a busy couple weeks. I'm happy to report that I've made solid progress on [three of my four goals from last time](/2024-05-09_53013) - reliability, delays, and bugs - and improved a number of other things along the way. Here's a sampling:
+<!--more-->
+
+* [Switched Bluesky => fediverse from polling to firehose](https://github.com/snarfed/bridgy-fed/issues/978). This made it way less flaky, and cut the 5-15m delay down to just seconds.
+* Fixed [fediverse => Bluesky getting stuck for many accounts.](https://github.com/snarfed/bridgy-fed/issues/1038) I took some shortcuts in my Bluesky infrastructure, and they came back to bite me. Still work left to do, but the user-visible issues should be largely fixed.
+* Various [issues](https://github.com/snarfed/bridgy-fed/issues/997) with [finding](https://github.com/snarfed/bridgy-fed/issues/995) the bot accounts, [following](https://github.com/snarfed/bridgy-fed/issues/1017) [them](https://github.com/snarfed/bridgy-fed/issues/1058), [and](https://github.com/snarfed/bridgy-fed/issues/1026) [getting](https://github.com/snarfed/bridgy-fed/issues/1027) [bridging](https://github.com/snarfed/bridgy-fed/issues/1052) [started](https://github.com/snarfed/bridgy-fed/issues/975).
+* Fixed [images in Bluesky => fediverse posts.](https://github.com/snarfed/bridgy-fed/issues/1000)
+* Implemented [deleting posts, Bluesky => fediverse.](https://github.com/snarfed/bridgy-fed/issues/987) (Fediverse => Bluesky was already working.)
+* Fixed [flakiness](https://github.com/snarfed/bridgy-fed/issues/1054) [bridging](https://github.com/snarfed/bridgy-fed/issues/1011) [replies](https://github.com/snarfed/bridgy-fed/issues/1032), both directions.
+* Fixed [links](https://github.com/snarfed/bridgy-fed/issues/993), [mentions](https://github.com/snarfed/bridgy-fed/issues/957), and [hashtags](https://github.com/snarfed/bridgy-fed/issues/1013), [both](https://github.com/snarfed/bridgy-fed/issues/1062) [directions](https://github.com/snarfed/bridgy-fed/issues/980). Still some broken bits here, notably Bluesky => fediverse mentions, but otherwise these should be much better now.
+* [First pass at spam filtering.](https://conspirator0.substack.com/p/federation-and-political-spam) Sigh.
+
+Apart from the firehose, one notable area I _haven't_ focused on yet is [infrastructure](https://github.com/snarfed/bridgy-fed/issues?q=is%3Aopen+is%3Aissue+label%3Ainfra). It's scaling ok so far, but it could be a lot better, and a lot more efficient. I'll need to work on that soon. If you see a bit of time go by without many user-visible improvements, that's probably what's happening.
+
+Otherwise, thanks for all the feedback and questions and [bug reports](https://github.com/snarfed/bridgy-fed/issues)! Please do keep them coming. As always, you can follow the [_now_ label in GitHub](https://github.com/snarfed/bridgy-fed/issues?q=is%3Aopen+is%3Aissue+label%3Anow) to see what I'm focusing on. See you on the bridge!

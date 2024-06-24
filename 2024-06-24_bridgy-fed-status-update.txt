@@ -1,0 +1,33 @@
+53250
+
+It's been a month since the last [Bridgy Fed](https://fed.brid.gy/) status update, so it's time for a new one! I've spent a lot of time over the last month on user-visible improvements and bug fixes, notably more complex post types and links, as well as underlying infrastructure. Details below.
+<!--more-->
+
+One area I need to spend more time on is cost. My attempts at optimization there have been slower than I'd originally hoped. I intentionally prioritized functionality over cost efficiency for a long time, and I'm still optimistic that I can get cost per user down to a reasonable level. If I do that, but user count itself gets too high...that will be a wonderful problem, and I'll cross that bridge when I get to it. 😁
+
+(Standard disclaimer: Bridgy Fed is non-commercial, free, [open source](https://github.com/snarfed/bridgy-fed), and ad-free, and I have no plans to change any of that or ask for donations any time soon! It's one way I try to support and give back to the open social web.)
+
+Beyond cost, I'm hoping to work on [native replies](https://github.com/snarfed/bridgy-fed/issues/1047) and opt in prompts via DM, [both](https://github.com/snarfed/bridgy-fed/issues/966) [directions](https://github.com/snarfed/bridgy-fed/issues/1148), soon.
+
+As usual, feel free to ping me with feedback, questions, and [bug reports](https://github.com/snarfed/bridgy-fed/issues). You can follow the [_now_ label on GitHub](https://github.com/snarfed/bridgy-fed/issues?q=is%3Aopen+is%3Aissue+label%3Anow) to see what I'm currently focusing on. See you on the bridge!
+
+* [You can disable and delete your bridged account, on either side, by blocking the Bridgy Fed bot user](https://fed.brid.gy/docs#opt-out) ([background](https://github.com/snarfed/bridgy-fed/issues/783)). Note that right now this _cannot be undone_. Maybe eventually!
+* Lots of improvements to rich post/profile content and text:
+  * [quote posts](https://github.com/snarfed/bridgy-fed/issues/461)
+  * [videos and GIFs](https://github.com/snarfed/bridgy-fed/issues/1078)
+  * [content warnings](https://github.com/snarfed/bridgy-fed/issues/1001)
+  * [link previews](https://github.com/snarfed/bridgy-fed/issues/958)
+  * [hashtags](https://github.com/snarfed/bridgy-fed/issues/980)
+  * [@-mentions](https://github.com/snarfed/bridgy-fed/issues/493) ([more](https://github.com/snarfed/bridgy-fed/issues/957))
+  * [profile](https://github.com/snarfed/bridgy-fed/issues/1065) [bios](https://github.com/snarfed/bridgy-fed/issues/976)
+  * [full text of truncated posts and profile bios](https://github.com/snarfed/bridgy-fed/issues/1092) for third party Bluesky apps like [Skythread](https://blue.mackuba.eu/skythread/) [and Skywalker](https://bsky.app/profile/skywalker.thereforeiam.eu/post/3kvlp7p74tn2j)
+  * ...[and other](https://github.com/snarfed/bridgy-fed/issues/1123) [bug fixes](https://github.com/snarfed/bridgy-fed/issues/1121)
+* [Improved authorization/access control checks](https://github.com/snarfed/bridgy-fed/issues/566)
+* Infrastructural improvements:
+  * [ATProto PDS XRPC methods](https://github.com/snarfed/bridgy-fed/issues/1046) and [error handling](https://github.com/snarfed/bridgy-fed/issues/1083)
+  * [webfinger HTTP status codes](https://github.com/snarfed/bridgy-fed/issues/1115)
+  * [firehose client stability](https://github.com/snarfed/bridgy-fed/issues/1059)
+  * [firehose server stability](https://github.com/snarfed/bridgy-fed/issues/1091)
+  * [better HTTP caching](https://github.com/snarfed/bridgy-fed/issues/432)
+* Cut new releases of [arroba](https://github.com/snarfed/arroba/releases/tag/v0.6), [lexrpc](https://github.com/snarfed/lexrpc/releases/tag/v0.7), and [dag-json](https://github.com/snarfed/dag-json/releases/tag/v0.2), three libraries of mine that are key building blocks for Bridgy Fed's Bluesky ([AT Protocol](https://atproto.com/)) support.
+
