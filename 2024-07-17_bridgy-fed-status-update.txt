@@ -1,0 +1,28 @@
+53382
+
+Hi all! Time for another regular (ish) [Bridgy Fed](https://fed.brid.gy/) status update, with big news: we're bridging web sites to Bluesky!
+
+[We've supported this on the fediverse for a while](/2024-01-09_51810), and we're now doing it for Bluesky too. You can use Bridgy Fed to automatically generate a Bluesky presence for your web site, and you can follow any site that has microformats2 or an RSS or Atom feed. Bridgy Fed extracts profile info, converts blog posts to Bluesky posts, etc.
+
+As examples, check out [Nature](https://bsky.app/profile/nature.com.web.brid.gy) and [Electrek](https://bsky.app/profile/electrek.co.web.brid.gy). To get started, [enter a web site here](https://fed.brid.gy/#enter-web-site).
+
+Beyond that, lots more happened over the last few weeks:
+<!--more-->
+
+* [Lots](https://github.com/snarfed/bridgy-fed/issues/1166) [of](https://github.com/snarfed/bridgy-fed/issues/1181) [improvements](https://github.com/snarfed/bridgy-fed/issues/1179) [to replies](https://github.com/snarfed/bridgy-fed/issues/1047)
+* [Bug fix: stop duplicating posts occasionally](https://github.com/snarfed/bridgy-fed/issues/1161)
+* [Removing reposts](https://github.com/snarfed/bridgy-fed/issues/1127)
+* [Bluesky labels, fediverse content warnings](https://github.com/snarfed/bridgy-fed/issues/1099), [and the `sensitive` flag](https://github.com/snarfed/bridgy-fed/issues/1100)
+* [Post language](https://github.com/snarfed/bridgy-fed/issues/1134)
+* [Blocks](https://github.com/snarfed/bridgy-fed/issues/1162)
+* Improved interop with [Firefish](https://github.com/snarfed/bridgy-fed/issues/531), [Akkoma](https://github.com/snarfed/bridgy-fed/issues/374), [Sharkey](https://github.com/snarfed/bridgy-fed/issues/1050), and other fediverse projects
+* [Disabling the bridge for Bluesky => fediverse can now be undone](https://github.com/snarfed/bridgy-fed/issues/1130#issuecomment-2198224527)
+* [Drop spam filter requirement that display name is different than username/handle](https://akkoma.dev/AkkomaGang/akkoma/issues/438#issuecomment-12745)
+* [Lots of](https://github.com/snarfed/bridgy-fed/issues/1177) [improvements to](https://github.com/snarfed/bridgy-fed/issues/1089) [reliability](https://github.com/snarfed/bridgy-fed/issues/1046) [and](https://github.com/snarfed/bridgy-fed/issues/1157) [infrastructure](https://github.com/snarfed/bridgy-fed/issues/1151)
+* [More docs!](https://fed.brid.gy/docs)
+
+On a minor fun note, [I counted tests recently](/2024-07-14_53352), across the parts of the Bridgy Fed stack that I maintain - including [granary](https://github.com/snarfed/granary), [arroba](https://github.com/snarfed/arroba), [lexrpc](https://github.com/snarfed/lexrpc), etc - and there are currently 2680 total. 🤩
+
+Standard disclaimer: Bridgy Fed is non-commercial, free, [open source](https://github.com/snarfed/bridgy-fed), and ad-free, and I have no plans to change any of that or ask for donations any time soon. It's one way I try to support and give back to the open social web.
+
+As usual, feel free to ping me with feedback, questions, and [bug reports](https://github.com/snarfed/bridgy-fed/issues). You can follow the [_now_ label on GitHub](https://github.com/snarfed/bridgy-fed/issues?q=is%3Aopen+is%3Aissue+label%3Anow) to see what I'm currently focusing on. See you on the bridge!

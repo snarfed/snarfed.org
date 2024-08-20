@@ -1197,6 +1197,10 @@ Corollaries:
 
 \- [Simon Wardley](https://en.wikipedia.org/wiki/Simon_Wardley)
 
+> Object oriented programming makes code understandable by encapsulating moving parts. Functional programming makes code understandable by minimizing moving parts.
+
+[- John D. Cook](https://www.johndcook.com/blog/2010/11/03/object-oriented-vs-functional-programming/)
+
 <!--
 https://en.wikiquote.org/wiki/Computer_science
 https://en.wikiquote.org/wiki/Engineering
