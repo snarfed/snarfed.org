@@ -10,16 +10,32 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
 * [Install Firefox.](https://firefox.com/) Sign into sync.
   * In Preferences, General => Language and Appearance => Advanced => set minimum font size to 14 points.
   * To make the tab key only cycle between input forms, not links too, open [`about:config`](about:config) and add a new entry, [`accessibility.tabfocus`](https://developer.mozilla.org/en-US/docs/Mozilla/Preferences/Preference_reference/accessibility.tabfocus), with value 1 (integer).
+* [Install 1Password](https://1password.com/) and its [browser extension](https://1password.com/downloads/mac/#browsers).
+* `mkdir -p ~/.ssh; cd ~/.ssh; ln -s ~/src/dotfiles/ssh_config config`.
+  * Download SSH keys from 1Password, unzip them into `~/.ssh`.
+* `mkdir -p ~/src; git clone snarfed/dotfiles; git clone snarfed/misc`
+* `cd; echo .cshrc .emacs .git_excludes .gitconfig .hgrc .inputrc .pypirc .python .sqliterc .subversion .wgetrc | xargs -n 1 -I %% ln -s src/dotfiles/%%`
+* `chsh
+* `mkdir -p ~/.hammerspoon; cd ~/.hammerspoon; ln -s ~/src/dotfiles/hammerspoon.lua init.lua`
+* `mkdir -p ~/.config/pip; cd ~/.config/pip; ln -s ~/src/dotfiles/pip.conf`
+
+* [Install Hammerspoon.](https://www.hammerspoon.org/)
 * [Install Karabiner Elements.](https://karabiner-elements.pqrs.org/)
   * ```cd ~/.config/karabiner/assets/complex_modifications/
     foreach f (~/src/misc/karabiner_elements/*)
       ln -s $f
     end```
   * [Import "Change return to control"](https://ke-complex-modifications.pqrs.org/?q=change+return+control).
-  * Enable most of those in Karabiner settings.
-* [Install 1Password](https://1password.com/) and its [browser extension](https://1password.com/downloads/mac/#browsers).
+  * Enable all of those in Karabiner settings.
+* Set up GnuPG:
+  * `mkdir -p ~/.gnupg; cd ~/.gnupg; ln -s ~/src/dotfiles/gpg.conf ; ln -s ~/src/dotfiles/gpg-agent.conf`
+  * Run `gpg --list-keys` and `gpg --list-secret-keys`.
+  * If they don't show anything:
+      * Run `gpg-connect-agent`, then `keyinfo --list`.
+      * Check that it shows the keys in `~/.gnupg/private-keys-v1.d`.
+      * Then run `gpg --import ~/.gnupg/pubring.gpg`.
 * [Install Homebrew.](https://brew.sh/)
-* `brew install awscli azure-cli bash blueutil colordiff coreutils ffmpeg git gnupg go google-cloud-sdk httpd imagemagick jq librsvg mpg123 node openjdk openssl pandoc php pinentry-mac pstree pwgen python@3.7 python@3.8 rename telnet universal-ctags youtube-dl wdiff wget wp-cli`
+* `brew install awscli azure-cli bash blueutil colordiff coreutils ffmpeg git gnupg go google-cloud-sdk httpd imagemagick java jq librsvg mpg123 node openjdk openssl pandoc php pinentry-mac pstree pwgen python rename telnet universal-ctags youtube-dl wdiff wget wp-cli`
 * `brew tap railwaycat/emacsmacport && brew install emacs-mac --with-emacs-sexy-icon --with-librsvg --with-mac-metal --with-native-compilation --with-starter`  
   (I used Homebrew's cask of [emacsformacosx.com](https://emacsformacosx.com/) for a long time, but it suddenly got unusably slow when I upgraded to Emacs 29.1. Switching to `emacs-mac` and `--with-native-compilation` fixed that.)
 * If you need Java 8 ([eg for databricks-connect](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect#code-try-0)):
@@ -27,8 +43,9 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
   * `open /usr/local//Caskroom/temurin8/8*/OpenJDK8U-jdk_x64_mac_hotspot_*.pkg`
   * `# set JAVA_HOME to /Library/Java/JavaVirtualMachines/temurin-8.jdk/Contents/Home`
 * `gcloud components install beta cloud-datastore-emulator`
-* `gcloud auth login`
-* `sudo gem install twurl`
+  * `gcloud auth login`
+  * `gcloud config set project bridgy-federated`
+<!-- * `sudo gem install twurl` -->
 * Update System Preferences:
   * Battery, Options, leave Wake for network access on Only on power adapter? Or Never?
   * Trackpad, check Tap to Click, turn off most gestures
@@ -58,36 +75,23 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
   * Add folders to sync to Drive: `bin books camera_extra docs etc gallery src/snarfed.org`. Uncheck the rest.
   * Disable synching Drive to the computer.
 * [Install and configure MenuMeters.](https://member.ipmu.jp/yuji.tachikawa/MenuMetersElCapitan/)
-* [Install and configure Docker.](https://hub.docker.com/editions/community/docker-ce-desktop-mac/)
+<!-- * [Install and configure Docker.](https://hub.docker.com/editions/community/docker-ce-desktop-mac/) -->
 <!-- * [Install and configure Asana.](https://asana.com/download) -->
 * [Install and configure Meet](https://support.google.com/chrome/answer/9658361) and [Enhancement Suite for Chrome](https://www.meetenhancementsuite.com/).
 * Install the _[Disable Automatic Gain Control](https://chrome.google.com/webstore/detail/disable-automatic-gain-co/clpapnmmlmecieknddelobgikompchkk)_ Chrome extension.
 * Pair Bluetooth devices (keyboard, headphones, etc.)
-* `mkdir -p ~/src; git clone snarfed/dotfiles; git clone snarfed/misc`
-* `cd; echo .cshrc .emacs .git_excludes .gitconfig .hgrc .inputrc .pypirc .python .sqliterc .subversion .wgetrc | xargs -n 1 -I %% ln -s src/dotfiles/%%`
-* `mkdir -p ~/.hammerspoon; cd ~/.hammerspoon; ln -s ~/src/dotfiles/hammerspoon.lua init.lua`
-* `mkdir -p ~/.config/pip; cd ~/.config/pip; ln -s ~/src/dotfiles/pip.conf`
-* Start Hammerspoon.
 * Install the [Gmail More Minimalist userstyle](https://userstyles.org/styles/35678/gmail-more-minimalist) in Stylus in Firefox.
 * To remove Firefox's highlight/glow dot on app tabs with notifications:
   * Open [`about:config`](about:config), search for `toolkit.legacyUserProfileCustomizations.stylesheets`, set it to true.
   * `cd 'Library/Application Support/Firefox/profiles/'*.default-release/`
   * `mkdir -p chrome`
   * `ln -s ~/src/dotfiles/userChrome.css`
-* `mkdir -p ~/.ssh; cd ~/.ssh; ln -s ~/src/dotfiles/ssh_config config`.
-  * Download SSH keys from 1Password, unzip them into `~/.ssh`.
-* Set up GnuPG:
-  * `mkdir -p ~/.gnupg; cd ~/.gnupg; ln -s ~/src/dotfiles/gpg.conf ; ln -s ~/src/dotfiles/gpg.conf`
-  * Run `gpg --list-keys` and `gpg --list-secret-keys`.
-  * If they don't show anything:
-      * Run `gpg-connect-agent`, then `keyinfo --list`.
-      * Check that it shows the keys in `~/.gnupg/private-keys-v1.d`.
-      * Then run `gpg --import ~/.gnupg/pubring.gpg`.
 * Add `127.0.0.1	my.dev.com` to `/etc/hosts`.
 * Tell `sudo` not to require my password by changing this line in `/etc/sudoers`:
   `%admin		ALL = (ALL) ALL`
   to:
   `%admin		ALL = (ALL) NOPASSWD: ALL`
 * In Emacs:
-  * `M-x package-list-packages`, install `dash-at-point ess git-link go-mode helm lua-mode markdown-mode rainbow-delimiters rainbow-identifiers yaml-mode`
+  * `M-x package-list-packages`, install `dash-at-point ess git-link go-mode helm helm-comint lua-mode markdown-mode php-mode rainbow-delimiters rainbow-identifiers yaml-mode`
 * Run `ctags` on all repos in `~/src`.
+* `touch ~/s/blogpost.last`
