@@ -19,7 +19,7 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
 * `mkdir -p ~/.hammerspoon; cd ~/.hammerspoon; ln -s ~/src/dotfiles/hammerspoon.lua init.lua`
 * `mkdir -p ~/.config/pip; cd ~/.config/pip; ln -s ~/src/dotfiles/pip.conf`
 
-* [Install Hammerspoon.](https://www.hammerspoon.org/)
+* [Install Hammerspoon.](https://www.hammerspoon.org/) (Also see [this Verge article on macOS's new built in tiling support](https://www.theverge.com/24273664/apple-macos-sequoia-windows-snap-how-to) if I ever consider switching.)
 * [Install Karabiner Elements.](https://karabiner-elements.pqrs.org/)
   * ```cd ~/.config/karabiner/assets/complex_modifications/
     foreach f (~/src/misc/karabiner_elements/*)
