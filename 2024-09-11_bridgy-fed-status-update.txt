@@ -20,6 +20,6 @@ Anyway. [Since last time](/2024-07-17_53382): video, DMs, usage spike, and other
 * [Improved style of web => Bluesky bridged posts](https://github.com/snarfed/bridgy-fed/issues/1192), also now [try harder to include an image](https://github.com/snarfed/bridgy-fed/issues/1191).
 * [Drastically improved monitoring and alerting.](https://github.com/snarfed/bridgy-fed/issues/1060)
 * [Stricter authorization for AP `Undo`s.](https://github.com/snarfed/bridgy-fed/issues/1243)
-* [...and lots more bug fixes.](https://github.com/snarfed/bridgy-fed/issues?page=2&q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desck)
+* [...and lots more bug fixes.](https://github.com/snarfed/bridgy-fed/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc)
 
 As usual, feel free to ping me with feedback, questions, and [bug reports](https://github.com/snarfed/bridgy-fed/issues). You can follow the [_now_ label on GitHub](https://github.com/snarfed/bridgy-fed/issues?q=is%3Aopen+is%3Aissue+label%3Anow) to see what I'm currently focusing on. See you on the bridge!

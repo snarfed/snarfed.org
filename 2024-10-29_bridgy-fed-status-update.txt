@@ -1,0 +1,36 @@
+53910
+
+<p class="right third">
+ <a href="https://fed.brid.gy/">
+  <img src="/bridgy_logo.png" /></a></p>
+
+Hi [Bridgy Fed](https://fed.brid.gy/) fans! It's time for another status update, headlined by two big new features.
+
+First, [you can now use custom domain handles on accounts bridged into Bluesky](https://fed.brid.gy/docs#bluesky-enhanced)! Web sites and fediverse accounts can both do this; click through for instructions. [Here's an example.](https://bsky.app/profile/fedi.test.snarfed.org) We've been excited about this for a while, we hope it makes bridged accounts feel a bit more like first class citizens.
+
+Second, if you deactivate bridging to Bluesky, [you can now undo it and bring back your bridged account](https://fed.brid.gy/docs#opt-out)! Just un-block and re-follow the bot, or for a web site, [file an issue](https://github.com/snarfed/bridgy-fed/issues) or [ping me](https://fed.brid.gy/docs#opt-out). This is supported if you first deactivated after 2024-10-22; we're still working on the rest.
+
+<!--more-->
+
+I'm also excited that [Tamschi](https://github.com/Tamschi) has generously volunteered to help triage issues and coordinate development. He's been a valuable presence on the project for a while now. Please give him a warm welcome!
+
+Oh, and I got distracted for a bit and [built a labeler that emits custom self-labels](https://github.com/snarfed/self-labeler), then [promptly realized that custom self-labels probably aren't allowed](https://github.com/bluesky-social/atproto/discussions/2885#discussioncomment-11009285), even though [Bridgy Fed has been using them since launch](https://github.com/snarfed/bridgy-fed/issues/827). Ah well!
+
+Lots more [since last time](/2024-09-12_53693) too:
+
+* [Add original account ids to Bluesky DID documents](https://github.com/snarfed/bridgy-fed/issues/1331)
+* [Scale new user signup better](https://github.com/snarfed/bridgy-fed/issues/1376)
+* [Fix nasty rare bug that bridged reposts with the wrong original post](https://github.com/snarfed/bridgy-fed/issues/1357)
+* [Translate fediverse @-mentions to webmentions](https://github.com/snarfed/bridgy-fed/issues/1366)
+* [Better error handling in RSS/Atom feed processing](https://github.com/snarfed/bridgy-fed/issues/885)
+* [Improve Sharkey/Misskey compatibility with images in posts](https://github.com/snarfed/bridgy-fed/issues/1000#issuecomment-2366867141) [and profile banners](https://github.com/snarfed/bridgy-fed/issues/1408)
+* [Improve GoToSocial compatibility](https://github.com/snarfed/bridgy-fed/issues/1356) ([more](https://github.com/superseriousbusiness/gotosocial/issues/3381))
+* [Detect and handle Bluesky handle changes better](https://github.com/snarfed/bridgy-fed/issues/1334)
+* [Bridge videos into Bluesky more efficiently](https://github.com/snarfed/bridgy-fed/issues/1348)
+* [Significantly improve Bluesky firehose efficiency](https://github.com/snarfed/bridgy-fed/issues/1329)
+* [Bluesky => fediverse: link mentions of non-bridged users to their bsky.app profile](https://github.com/snarfed/bridgy-fed/issues/1288)
+* [Improve handling of deleted fediverse accounts](https://github.com/snarfed/bridgy-fed/issues/1304)
+* [Full AT Protocol lexicon schema validation](https://github.com/snarfed/lexrpc/issues/3)
+* [...and lots more bug fixes and internal improvements](https://github.com/snarfed/bridgy-fed/issues?q=is%3Aissue+is%3Aclosed+sort%3Aupdated-desc)
+
+As usual, feel free to ping me with feedback, questions, and [bug reports](https://github.com/snarfed/bridgy-fed/issues). You can follow the [_now_ label on GitHub](https://github.com/snarfed/bridgy-fed/issues?q=is%3Aopen+is%3Aissue+label%3Anow) to see what I'm currently focusing on. See you on the bridge!

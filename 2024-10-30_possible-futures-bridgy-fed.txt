@@ -1,0 +1,30 @@
+53932
+Possible futures for Bridgy Fed
+
+<p class="right half captioned">
+  <a href="/tomorrowland.jpg">
+    <img class="shadow" src="/tomorrowland.jpg" /></a>
+  <a href="https://www.theguardian.com/film/2015/may/21/tomorrowland-disney-strange-utopia-shaped-world-tomorrow">Tomorrowland / Walt Disney</a>
+</p>
+
+This post is not about [making Bridgy Fed opt-in or opt-out](https://wedistribute.org/2024/02/tear-down-walls-not-bridges/). It is _inspired_ by that, though.
+
+I regularly get requests to switch Bridgy Fed to opt-out, either in part or whole. That was my original plan, after [thinking and talking it over](/2024-01-19_moderate-people-not-code), and many people think it's the right approach, but obviously many other people think it's the wrong approach. And other people still think it shouldn't be up to bridges or tools at all, but that users and instance admins should be able to choose these defaults for themselves, and not have to play whack-a-mole with every new thing that gets built.
+
+I understand all these positions. I'm partial to them all, in one way or another. And this post is not about opt-in vs opt-out. Instead, it's about _who should get to make that decision_, and _how it should be made_.
+
+Right now, [Bridgy Fed is effectively one person's side project](/2023-11-27_re-introducing-bridgy-fed). I love building and running (and funding!) it, and I have no plans to change that. However, it has basically no organization, governance, or institutional structure behind it. It's just me.
+
+That's ok! At least, as long as it continues to be one person's side project. It's growing, though, and people are starting to envision it, and bridges in general, as more important parts of the decentralized social web. Some of this comes from opt-out, [big fedi](https://evanp.me/2023/12/26/big-fedi-small-fedi/) fans who hope to connect everyone who's willing, regardless of instance or network or protocols. Other people see bridges as important for entirely different reasons.
+
+Stable, reliable infrastructure is hugely valuable. To do it right, though, you need stable, reliable organizational structure. You need people to dedicate their time and expertise, sustainably. You need funding, and institutional governance, and some amount of transparency.
+
+Right now, Bridgy Fed mostly doesn't have those things. It's one person's side project.
+
+That could change! I'm open to it. _I don't plan to lead that change myself, though._ I've enjoyed building it in my spare time for the last 6-7 years, and somewhat full time for the last year, and I have no plans to stop any time soon. It is not [my career](/resume), though, or my calling, or my life's work. For me, it's a just fun, hopefully useful side project. I've been between gigs for a bit now, spending a lot of time on it, but that won't last forever. I expect to take a real job again eventually, and when that happens, I'll have way less time for it.
+
+So, to anyone hoping for Bridgy Fed to become core infrastructure for the social web: that is indeed one possible future. The first thing we'd need is an executive director or CEO, someone who wants to lead its organization, product, and policy. Someone who'd build relationships with groups like [IFTAS](https://about.iftas.org/), the [SWF](https://socialwebfoundation.org/), [Bluesky](https://bsky.social/), [IndieWeb](https://indieweb.org/), and others. Someone who'd own fundraising, if necessary. I self fund Bridgy Fed right now, and I could expand that to help with staff and other costs, but I might not be able to do it alone.
+
+Another possible future for Bridgy Fed is the glide path it's on now: one person's side project. I can keep running it like this for the foreseeable future. Hopefully useful and stable and long-lived, definitely not core infrastructure. No real governance or institutional structure. Probably not opt-out on any large networks or protocols.
+
+If you think Bridgy Fed needs to grow up and be real infrastructure, and you're interested in possibly leading it as executive director, or you know somone who might be, that's a very possible future. [Drop me a line](/about), I'd love to talk. In the meantime, when people ask me to make it opt-out, or what the long term plan or end game is, I now have something to point them to. Thanks for reading.
