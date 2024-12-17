@@ -9,11 +9,13 @@ My open source software [projects](#projects), [scripts](#scripts), and [patches
 <a name="projects"></a>
 ### Projects
 
-* [Bridgy](https://brid.gy/) connects your web site to social media. Likes, reposts, mentions, cross-posting, and more. Part of the [IndieWeb](https://indieweb.org/) ecosystem.
-
 * [Bridgy Fed](https://fed.brid.gy/) connects your web site to federated social networks natively, via ActivityPub. Lets you reply, like, and repost on <a href="https://joinmastodon.org/">Mastodon</a> and <a href="https://project.hubzilla.org/">Hubzilla</a> from your [IndieWeb](https://indieweb.org/) site, and vice versa.
 
+* [Bridgy](https://brid.gy/) connects your web site to social media. Likes, reposts, mentions, cross-posting, and more. Part of the [IndieWeb](https://indieweb.org/) ecosystem.
+
 * [granary](https://github.com/snarfed/granary): the social web translator. Fetches and converts data between social networks, HTML and JSON with [microformats2](http://microformats.org/wiki/microformats2), [ActivityStreams](http://activitystrea.ms/), [Atom](https://tools.ietf.org/html/rfc4287), [RSS](http://www.rssboard.org/rss-specification), [JSON Feed](https://jsonfeed.org/), and more.
+
+* [arroba](https://arroba.readthedocs.io/) is a Python [AT Protocol](https://atproto.com/specs/atp) [PDS](https://atproto.com/guides/data-repos) implementation, including data repository, Merkle search tree, and [XRPC methods](https://atproto.com/lexicons/com-atproto-sync).
 
 * [lexrpc](https://lexrpc.readthedocs.io/) is a Python implementation of [AT Protocol](https://atproto.com/)'s [XRPC](https://atproto.com/specs/xrpc) + [Lexicon](https://atproto.com/guides/lexicon).
 
