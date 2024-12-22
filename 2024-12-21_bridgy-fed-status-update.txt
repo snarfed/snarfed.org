@@ -1,0 +1,37 @@
+54377
+
+<p class="right third">
+ <a href="https://fed.brid.gy/">
+  <img src="/bridgy_logo.png" /></a></p>
+
+It's time for a special holiday [Bridgy Fed](https://fed.brid.gy/) status update!
+
+[Since last time](/2024-10-29_53910), we've been working mostly on getting [A New Social](https://www.anew.social/) off the ground and on Bridgy Fed internals. Specifically, my development focus for a while now has been [cost cutting](https://github.com/snarfed/bridgy-fed/issues/1149). I fund Bridgy Fed myself right now, which I'm happy to do, but it costs more to run than it should, probably by 2-3x or so.
+
+(We do plan to fundraise for A New Social eventually and fund Bridgy Fed there instead! Including individual donations, among other sources. [Stay tuned for more news when we have it.](https://www.anew.social/))
+
+In the meantime, I've been pushing the optimization boulder uphill, making slow progress. I'm currently struggling with one big issue: getting caching working in [ndb](https://googleapis.dev/python/python-ndb/latest/), our ORM.
+
+ndb can cache both [in memory](https://googleapis.dev/python/python-ndb/latest/context.html?highlight=cache) and [in memcache](https://googleapis.dev/python/python-ndb/latest/global_cache.html?highlight=memcache#google.cloud.ndb.global_cache.MemcacheCache). We configure it to do both, but [it doesn't seem to be using memcache in production](https://github.com/snarfed/bridgy-fed/issues/1149#issuecomment-2555794833), and I'm not even sure it's caching in memory there either. If you have experience with ndb, [Google Cloud Datastore](https://cloud.google.com/datastore/docs/), [Memorystore](https://cloud.google.com/memorystore/docs/), or related tools, please [take a look](https://github.com/snarfed/bridgy-fed/issues/1149#issuecomment-2558271452) and let me know if you see anything obviously wrong!
+
+This also means that I haven't had much time to spend on features, bug fixes, or other user-visible updates. I'm the only developer on Bridgy Fed right now, and I'm only part time. I'd love help! It's [entirely open source](https://github.com/snarfed/bridgy-fed), so if you're interested, check out the [open issues](https://github.com/snarfed/bridgy-fed/issues/), feel free to dive in, and [ping me on GitHub](https://github.com/snarfed) if you have any questions!
+
+Having said that, I have done a bit besides cost cutting [since last time](/2024-10-29_53910):
+
+* [Generate link previews (aka embeds) on Bluesky.](https://github.com/snarfed/bridgy-fed/issues/1411)
+* [Launch Threads support!](https://github.com/snarfed/bridgy-fed/issues/1210) Just via normal ActivityPub, nothing special, but I worked with them a fair amount on interop.
+* [Improve sign-up flow for web => Bluesky bridging.](https://github.com/snarfed/bridgy-fed/issues/1490)
+* [Try harder to redirect fediverse @-mentions of bridged users to their web site or Bluesky profile.](https://github.com/snarfed/bridgy-fed/issues/1009)
+* Reduce confusion on the [home page](https://fed.brid.gy/) sign-up form by [detecting web sites that are already fediverse instances](https://github.com/snarfed/bridgy-fed/issues/1458).
+* [Let fediverse accounts re-enable the bridge](https://github.com/snarfed/bridgy-fed/issues/1446) even if they [disabled it before October](https://github.com/snarfed/bridgy-fed/issues/1130#issuecomment-2430525165).
+* Improve interop with [Friendica](https://github.com/snarfed/bridgy-fed/issues/1482#issuecomment-2484901105), [Hubzilla](https://github.com/snarfed/bridgy-fed/issues/941), [Misskey/Sharkey](https://github.com/snarfed/bridgy-fed/issues/1093#issuecomment-2433794322), [Sharkey](https://github.com/snarfed/bridgy-fed/issues/1474#issuecomment-2471681545), [WordPress Friends plugin](https://github.com/snarfed/bridgy-fed/issues/1493), and [GoToSocial](https://github.com/snarfed/bridgy-fed/issues/1492).
+* [Improve authorization to prevent a cache poisoning attack.](https://github.com/snarfed/bridgy-fed/security/advisories/GHSA-37r7-jqmr-3472)
+* [Improve](https://github.com/snarfed/bridgy-fed/issues/1268) [DNS](https://github.com/snarfed/bridgy-fed/issues/1458#issuecomment-2504711399) [scaling](https://github.com/snarfed/bridgy-fed/issues/744#issuecomment-2516099779) for Bluesky handles.
+* [Populate the `discoverable` and `indexable` flags on bridged ActivityPub actors.](https://github.com/snarfed/bridgy-fed/issues/1419)
+* [Misc bug fixes for web sites on www subdomains.](https://github.com/snarfed/bridgy-fed/issues/1206)
+* [Fix rare bug where we occasionally missed bridging posts or other interactions to Bluesky.](https://github.com/snarfed/bridgy-fed/issues/1367)
+* [Fix rare bug where we occasionally missed bridging deletes.](https://github.com/snarfed/bridgy-fed/issues/1361)
+* [Continued](https://github.com/snarfed/bridgy-fed/issues/1595) [debugging](https://github.com/bluesky-social/atproto/discussions/3214) [of](https://github.com/snarfed/bridgy-fed/issues/1202) accounts bridged into Bluesky that occasionally get stuck and stop bridging.
+* [Lots of](https://github.com/snarfed/bridgy-fed/issues/1465) [docs](https://github.com/snarfed/bridgy-fed/issues/1467#issuecomment-2467836269) [improvements](https://github.com/snarfed/bridgy-fed/issues/1531).
+
+As usual, feel free to ping us with feedback, questions, and [bug reports](https://github.com/snarfed/bridgy-fed/issues). You can follow the [_now_ label on GitHub](https://github.com/snarfed/bridgy-fed/issues?q=is%3Aopen+is%3Aissue+label%3Anow) to see what we're currently focusing on. See you on the bridge!
