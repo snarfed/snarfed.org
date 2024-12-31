@@ -2,10 +2,10 @@
 
 I've been a fan of [Stewart Brand](https://en.wikipedia.org/wiki/Stewart_Brand)'s _[Pace Layering](https://longnow.org/ideas/pace-layers/)_ for [decades](/2015-01-27_12755) [now](/2022-04-25_46706). Really great framework for thinking about how different ecosystems and emergent forces interact. I've been thinking about a tech version of it for the better part of a year now, and I finally took advantage of the holiday break to bang out a rough draft. Thoughts?
 
-<a class="half-sidebyside shadow" href="/pace_layering.jpg">
- <img src="/pace_layering.jpg"></a>
-<a class="half-sidebyside shadow" href="/tech_pace_layering.png">
- <img src="/tech_pace_layering.png"></a>
+<a href="/pace_layering.jpg">
+ <img class="half-sidebyside shadow" src="/pace_layering.jpg"></a>
+<a href="/tech_pace_layering.png">
+ <img class="half-sidebyside shadow" src="/tech_pace_layering.png"></a>
 
 Product includes devices like XBox, TiVo, and PalmPilot; apps like Firefox, MS Office, and Lotus 1-2-3; and services like Google, Facebook, and Wikipedia.
 
