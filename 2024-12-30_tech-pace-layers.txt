@@ -1,20 +1,21 @@
 54435
+Tech pace layers
 
-I've been a fan of [Stewart Brand](https://en.wikipedia.org/wiki/Stewart_Brand)'s _[Pace Layering](https://longnow.org/ideas/pace-layers/)_ for [decades](/2015-01-27_12755) [now](/2022-04-25_46706). Really great framework for thinking about how different ecosystems and emergent forces interact. I've been thinking about a tech version of it for the better part of a year now, and I finally took advantage of the holiday break to bang out a rough draft. Thoughts?
+I've been a fan of [Stewart Brand](https://en.wikipedia.org/wiki/Stewart_Brand)'s _[Pace Layering](https://longnow.org/ideas/pace-layers/)_ for [decades](/2015-01-27_12755) [now](/2022-04-25_46706). Really great framework for thinking about how different ecosystems and emergent forces interact. I've been thinking about a tech version of it for the better part of a year, and I finally took advantage of the holiday break to bang out a rough draft. Thoughts?
 
 <a href="/pace_layering.jpg">
- <img class="half-sidebyside shadow" src="/pace_layering.jpg"></a>
+ <img class="u-photo half-sidebyside shadow" src="/pace_layering.jpg" alt="Pace layering diagram: fashion, commerce, infrastructure, governance, culture, nature"></a>
 <a href="/tech_pace_layers.png">
- <img class="half-sidebyside shadow" src="/tech_pace_layers.png"></a>
+ <img class="u-photo half-sidebyside shadow" src="/tech_pace_layers.png" alt="Tech pace layering diagram: product, components, organizations, standards, computer science / electrical engineering, math / physics"></a>
 
 Product includes devices like XBox, TiVo, and PalmPilot; apps like Firefox, MS Office, and Lotus 1-2-3; and services like Google, Facebook, and Wikipedia.
 
 Components include libraries and frameworks: glibc, LLVM, Django, React, Docker, Arduino, etc.
 
-Standards are both formal, via standards bodies, and de facto. Examples include networking protocols like TCP/IP, HTTP, and SMTP; file formats like HTML, JPEG, and WAV; character encodings like ASCII, ISO 8859-1, and Unicode; operating system interfaces like Win32, POSIX, and Cocoa; and hardware languages like Verilog, VHDL, CUDA, FPGAs, etc.
-
 Organizations involve some form of human governance, eg companies like Bell Labs, IBM, Microsoft, and ARM; non-profits like ICANN, the FSF, and the Linux and Apache foundations; and standards bodies like IETF, W3C, ECMA, and OASIS.
 
-Computer science and electrical engineering are the academic fields that provide the direct foundations for software and hardware, respectively, and math and physics underneath them. Number theory and cryptography, information theory, combinatorics, Boolean logic, circuit design, digital and analog circuit design, and arguably even materials science processes like EUV lithography all live here.
+Standards are open via standards bodies, proprietary to individual companies, and de facto. Examples include networking protocols like TCP/IP, HTTP, and SMTP; file formats like HTML, JPEG, and WAV; character encodings like ASCII, ISO 8859-1, and Unicode; operating system interfaces like Win32, POSIX, and Cocoa; and hardware languages like Verilog, VHDL, CUDA, FPGAs, etc.
+
+Computer science and electrical engineering are the academic fields that provide the direct foundations for software and hardware, respectively, and math and physics underneath them. Number theory and cryptography, information theory, combinatorics, Boolean logic, digital and analog circuit design, and arguably even materials science processes like EUV lithography all live here.
 
 I'm far from the first to think along these lines. [Erik Samsoe on Twitter](https://x.com/eriksamsoe/status/1600899162907717634) ([with Brand himself](https://twitter.com/stewartbrand/status/1600912558008848386)), Dmitri Glazkov's _[Forces of the pace layering confusion](https://glazkov.com/2021/06/04/forces-of-the-pace-layering-confusion/)_, and [Gartner's Pace-layered Application Strategy](https://www.thoughtworks.com/en-us/radar/techniques/pace-layered-application-strategy). Taking a wider view, the classic 7-layer ISO network model and 4-layer IETF model are a form of pace layering applied to networking protocols.
