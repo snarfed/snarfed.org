@@ -36,6 +36,7 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
       * Then run `gpg --import ~/.gnupg/pubring.gpg`.
 * [Install Homebrew.](https://brew.sh/)
 * `brew install awscli azure-cli bash blueutil colordiff coreutils difft ffmpeg git gnupg go google-cloud-sdk httpd imagemagick java jq librsvg mpg123 node openjdk openssl pandoc php pinentry-mac pstree pwgen python rename telnet universal-ctags youtube-dl wdiff wget wp-cli`
+* `brew install --cask dehesselle-meld`
 * `brew tap railwaycat/emacsmacport && brew install emacs-mac --with-emacs-sexy-icon --with-librsvg --with-mac-metal --with-native-compilation --with-starter`  
   (I used Homebrew's cask of [emacsformacosx.com](https://emacsformacosx.com/) for a long time, but it suddenly got unusably slow when I upgraded to Emacs 29.1. Switching to `emacs-mac` and `--with-native-compilation` fixed that.)
 * If you need Java 8 ([eg for databricks-connect](https://docs.microsoft.com/en-us/azure/databricks/dev-tools/databricks-connect#code-try-0)):

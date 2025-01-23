@@ -1,0 +1,20 @@
+54543
+Interactive navigation in embedding space
+
+<p class="right half">
+  <a href="/sound-studio-mixing-board.jpg">
+    <img class="shadow" src="/sound-studio-mixing-board.jpg"></a>
+  <span class="captioned"><a href="https://pixabay.com/users/tdjgordon-655284/">tdjgordon</a>, <a href="https://pixabay.com/photos/sound-studio-mixer-fader-edit-571995/">Pixabay</a></a>
+</p>
+
+Discussed a fascinating idea for a foundation model tool at lunch today: interactive navigation in embedding space.
+
+Right now, you prompt most generative models with human language. That works, but it's imprecise and coarse. If you're generating an image of an outside scene, and you want the sunlight ever so slightly brighter, you could add the phrase "and ever so slightly brighter" to the prompt, and it might work, but it's clunky, and not great, and clearly doesn't scale. Maybe good enough for recreational use cases; clearly not professional grade.
+
+What you really want to do is move your target in embedding space directly, without the lossy indirection of going through human language. Ideally, you'd have a dial that mapped directly to sunlight luminance, and you could bump it up just a bit. Similar to temperature for LLMs, but for fine control over direction and distance in high-dimensionality embedding space, as opposed to overall stochasticity.
+
+Imagine a big mixing board at a professional music studio. You generate an initial image as a starting point, and the model analyzes it and gives you the top 100 principal components as vectors in embedding space, each [grounded](https://techcommunity.microsoft.com/blog/fasttrackforazureblog/grounding-llms/3843857) to the closest embedding and human word that describes them. Smiles, spikiness, wood, buttons, height above the ground, crowd density, all sorts of concepts, each with a knob you can dial up or down. They won't be entirely independent, so cranking up smiles may also move the warmth, happiness, and sociability knobs, which is ok.
+
+It's a complicated UI! Definitely not as approachable as "just type into the text box." And typing into a text box has gotten us pretty far! But if we're stuck with human language as our main interface to generative models, that's extremely limiting. Professionals won't tolerate that for long; they need more powerful, fine grained interfaces that give them a high degree of interactive control and ability to iterate. Language prompts may have gotten us here, as they say, but they may not get us there.
+
+(AI researchers will note that this has lots of prior art in grounding and interpretability, among other areas. I'm no expert, I'd love to hear any thoughts!)
