@@ -6,18 +6,15 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > All code is liability.
 
 \- Peter Norvig
-<!-- NCXed -->
 
 > Information wants to be free.  
 
 \- Stewart Brand
-<!-- NCXed -->
 
 > Data wants to be dirty.  
 > Duplicated data wants to skew.
 
 \- Me
-<!-- NCXed -->
 
 > Over time, all data approaches either deleted or public.
 
@@ -27,12 +24,10 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > Scope wants to creep.
 
 \- [Todd Wolfson](https://twolfson.com/)
-<!-- NCXed -->
 
 > Code wants to be broken.
 
 [- Noam Ben-Ami](https://www.quora.com/Why-is-coding-so-hard)
-<!-- NCXed -->
 
 > All models are wrong. Some are useful.
 
@@ -50,22 +45,22 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > By June 1949, people had begun to realize that it was not so easy to get a program right as had at one time appeared. ... It was on one of my journeys between the EDSAC room and the punching equipment that the realization came over me with full force that a good part of the remainder of my life was going to be spent in finding errors in my own programs.
 
 [- Maurice Vincent Wilkes](https://www.google.com/books/edition/Memoirs_of_a_Computer_Pioneer/9Uc4AQAAIAAJ?hl=en)
-<!-- NCXed -->
 
 > A systems programmer will know what to do when society breaks down, because the systems programmer already lives in a world without law.
 
 [- James Mickens](https://web.archive.org/web/20140124024832/http://research.microsoft.com/en-us/people/mickens/thenightwatch.pdf)
-<!-- NCXed -->
 
 > Docker containers are kind of neat. They are also kind of a craven surrender to the rotting mess of excessive software complexity.
 
 [- John Carmack](https://twitter.com/ID_AA_Carmack/status/1385103110977179649)
-<!-- NCXed -->
+
+> In research, if you know what you are doing, you should not be doing it. In engineering, if you do not know what you are doing, you should not be doing it.
+
+[- Richard Hamming](https://blog.southparkcommons.com/case-for-talent-density-minus-one/)
 
 > The first rule of systems engineering is: If you optimize the components you will probably ruin the system performance.
 
-\- Richard W. Hamming
-<!-- NCXed -->
+\- Richard Hamming
 
 > 1. Make the requirements less dumb.  
 >    (Aka, question the requirements.)  
@@ -76,22 +71,18 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > 5. Automate.  
 
 \- Elon Musk
-<!-- NCXed -->
 
 > To this very day, idiot software managers measure "programmer productivity" in terms of "lines of code produced," whereas the notion of "lines of code spent" is much more appropriate.
 
 \- Edsger W. Dijkstra
-<!-- NCXed -->
 
 > Running a successful open source project is just Good Will Hunting in reverse, where you start out as a respected genius and end up being a janitor who gets into fights.
 
 [- Byrne Hobart](https://diff.substack.com/p/working-in-public-and-the-economics)
-<!-- NCXed -->
 
 > Any organization that designs a system (defined broadly) will produce a design whose structure is a copy of the organization's communication structure.
 
 \- [Conway's Law](https://en.wikipedia.org/wiki/Conway%27s_law)
-<!-- NCXed -->
 
 > 90% of everything is crap.
 
@@ -126,7 +117,6 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > Type systems and type checking in programming languages are just an approximate solution to a more general problem: determining whether a program is free of errors for all possible values of variables along all possible control flow paths.
 
 [- Tim Sweeney](https://twitter.com/TimSweeneyEpic/status/1307778368562171904)
-<!-- NCXed -->
 
 > Always do the hard part first. If the hard part is impossible, why waste time on the easy part? Once the hard part is done, you’re home free.
 
@@ -152,14 +142,12 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > When in doubt, use brute force.
 
 \- Ken Thompson, Bell Labs
-<!-- NCXed -->
 
 > To be a programmer is to develop a carefully managed relationship with error.
 
 \- Ellen Ullman
 
 [engineering flowchart, wd40 vs duct tape](https://www.flickr.com/photos/dullhunk/7214525854)
-<!-- NCXed -->
 
 > Everything should be built top-down, except the first time.
 
@@ -168,12 +156,10 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > We build our computer systems the way we build our cities: over time, without a plan, on top of ruins.
 
 \- [_Life in Code_](https://www.google.com/books/edition/Life_in_Code/rPTtDQAAQBAJ), Ellen Ulman
-<!-- NCXed -->
 
 > Choose the least powerful programming language suitable for a given purpose, not the most powerful.
 
 \- [Rule of least power](https://en.wikipedia.org/wiki/Rule_of_least_power), W3C
-<!-- NCXed -->
 
 > maybe teaching sand to do math was a mistake
 
@@ -196,7 +182,6 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > We have a squeaky bathroom door, so I thought we need to oil it. Then I realised there are a few other doors in the house that need oiled. Then I thought "wouldn't it be cool if I could pour oil down one pipe and oil all the doors at once?" That's how software engineers think.
 
 [- Paul Campbell](https://twitter.com/paulca/status/1265407453753217024)
-<!-- NCXed -->
 
 > When AT&T donated the V6 source code to Berkeley, it was classified as industrial waste for tax purposes.
 >
@@ -207,12 +192,10 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > AT&T being the Phone Company, they were forbidden to commercialize anything not directly related to telephony. UNIX was a byproduct of their research work, and they couldn't sell it. But they could give it away as sludge!
 
 [- Evan Hunt](https://twitter.com/nuthaven/status/1254897999290892289)
-<!-- NCXed -->
 
 > Just like entropy always increases, mean time to failure always decreases.
 
 \- Alan Perlis, paraphrased
-<!-- NCXed -->
 
 > I'll buckle down and get to work as soon as I finish reading the internet.
 
@@ -229,7 +212,6 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > Early in the morning of 17 July 1997, human error at Network Solutions causes the DNS table for .com and .net domains to become corrupted, making millions of systems unreachable.
 
 [- RFC 2235: Hobbes' Internet Timeline](https://tools.ietf.org/html/rfc2235)
-<!-- NCXed -->
 
 > There are really only two types of computations: calculating stuff about an unchanging thing, and calculating a new version of a thing that is changing over time. Recognizing this simplifies the debate over functional versus imperative programming.
 
@@ -255,7 +237,6 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > All code is technical debt; it’s just different interest rates we’re paying on it. Debt powers the economy and it powers your business. None of this is inherently good or bad. It’s a tool.
 
 \- Dormain Drewitz
-<!-- NCXed -->
 
 > The condition of any backup is unknown until a restore is attempted.
 
@@ -278,7 +259,6 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > Consistency, availability, partition tolerance: choose two.
 
 \- [CAP Theorem](https://en.wikipedia.org/wiki/CAP_theorem), Eric Brewer
-<!-- NCXed -->
 
 > When we can finally print from any computer to any printer consistently, there will be no computer science problems left to solve.
 
@@ -349,7 +329,6 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > There exists in such a case a certain institution or law; let us say, for the sake of simplicity, a fence or gate erected across a road. The more modern type of reformer goes gaily up to it and says, 'I don't see the use of this; let us clear it away.' To which the more intelligent type of reformer will do well to answer: 'If you don't see the use of it, I certainly won't let you clear it away. Go away and think. Then, when you can come back and tell me that you do see the use of it, I may allow you to destroy it.'
 
 [- "Chesterton's Fence"](https://en.wikipedia.org/wiki/G._K._Chesterton#Chesterton's_fence) (G. K. Chesterton)
-<!-- NCXed -->
 
 > _At my last job, a team put up a poster for their reusable components. It said:_  
 > We made a thing from scratch, so you don’t HAVE to make things from scratch.  
@@ -371,17 +350,14 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > When you finish a PhD in computer science, they take to a special room and explain that you must never use recursion in real life. Its only purpose is to make programming hard for undergrads.
 
 [- John Wilander](https://twitter.com/johnwilander/status/1176457013305303040)
-<!-- NCXed -->
 
 > Another flaw in the human character is that everybody wants to build and nobody wants to do maintenance.
 
 \- Kurt Vonnegut, _Hocus Pocus_
-<!-- NCXed -->
 
 > A simple heuristic for technical debt: It's always fine to introduce a quick hack. But as soon as you have to work around that hack, stop and fix it instead.
 
 [- Aaron Boodman](https://twitter.com/aboodman/status/11686231818646609934)
-<!-- NCXed -->
 
 > To err is human; to manage error is system.
 
@@ -391,7 +367,6 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > If software cannot be maintained, then it will be rewritten.
 
 \- Dave Cheney
-<!-- NCXed -->
 
 > If you have a procedure with 10 parameters, you probably missed some.
 
@@ -404,7 +379,6 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > Every program has (at least) two purposes: the one for which it was written, and another for which it wasn't.
 
 [- Alan Perlis](https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
-<!-- NCXed -->
 
 > A programming language is low level when its programs require attention to the irrelevant.
 
@@ -421,7 +395,6 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > The string is a stark data structure and everywhere it is passed there is much duplication of process. It is a perfect vehicle for hiding information.
 
 [- Alan Perlis](https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
-<!-- NCXed -->
 
 > Bringing computers into the home won't change either one, but may revitalize the corner saloon.
 
@@ -434,7 +407,6 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > A year spent in artificial intelligence is enough to make one believe in God.
 
 [- Alan Perlis](https://www.cs.yale.edu/homes/perlis-alan/quotes.html)
-<!-- NCXed -->
 
 > Computer Science is embarrassed by the computer.
 
@@ -443,7 +415,6 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > There is an old network saying: Bandwidth problems can be cured with money. Latency problems are harder because the speed of light is fixed. You can’t bribe God.
 
 \- [David Clark](https://groups.csail.mit.edu/ana/People/Clark.html)
-<!-- NCXed -->
 
 > Peres's Law: If a problem has no solution, it may not be a problem, but a fact; not to be solved, but to be coped with over time.
 
@@ -456,7 +427,6 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > The only thing you will get from a Big Bang Rewrite is a big bang.
 
 \- Martin Fowler
-<!-- NCXed -->
 
 > The first step of any project is to grossly underestimate its complexity and difficulty.
 
@@ -467,7 +437,6 @@ Corollary:
 > Hofstadter's Law: It always takes longer than you expect, even when you take into account Hofstadter's Law.
 
 [-Douglas Hofstadter](https://en.wikipedia.org/wiki/Hofstadter%27s_law)
-<!-- NCXed -->
 
 > Programming is like a “choose your own adventure game” except every path leads you to a StackOverflow question from 2013 describing the same bug, with no answer.
 
@@ -498,14 +467,12 @@ Corollary:
 > Our use of technology always expands to the very edge of its capacity. A thousand years from now, everyday technology will be just barely sufficient for the job.
 
 \- Jevon's Paradox (aka Wirth's law aka Page's law aka Gates's law aka May's law)
-<!-- NCXed -->
 
 > 1. Make it work.
 > 2. Make it right.
 > 3. Make it fast.
 
 \- Kent Beck
-<!-- NCXed -->
 
 > Old technology fails frequently, but in a reliable way. New technology fails less often, but when it fails, it fails in an unexpectedly new way we are not prepared for.
 
@@ -522,14 +489,12 @@ Corollary:
 > Don't solve a problem just because you can imagine it. Wait until there is a problem, then go after it. If you over-anticipate, you will design freedom out of the system.
 
 \- Stewart Brand
-<!-- NCXed -->
 
 > The cost of adding a feature isn’t just the time it takes to code it. It's also an obstacle to future expansion...The trick is to pick the features that don’t fight each other.
 
 \- John Carmack
 
 > Matlab has normalized the practice of storing array indices as floats starting at 1.0, which now that I am used to it makes me think why bathe or brush my teeth? Why not start doing meth? Why bother at all?
-<!-- NCXed -->
 
 \- Seamus Blackley
 
@@ -562,7 +527,6 @@ Corollary:
 > A performance-related change - for example, adding a cache - that accidentally becomes required for correctness.
 
 [- David Smith](https://twitter.com/Catfish_Man/status/735211223323578368)
-<!-- NCXed -->
 
 > It’s a curious thing about our industry: not only do we not learn from our mistakes, we also don’t learn from our successes.
 
@@ -600,12 +564,10 @@ availability | downtime, per year | cost
 > You have a problem. You use a distributed system. Now you still have a problem, but you no longer know where.
 
 [- @llogiq](https://twitter.com/llogiq/status/1010831210199777280)
-<!-- NCXed -->
 
 > [Hyrum's Law](http://www.hyrumslaw.com/): With a sufficient number of users of an API, it does not matter what you promise in the contract: all observable behaviors will be depended on by somebody.
 
 \- Hyrum Wright; [obligatory XKCD](https://xkcd.com/1172/)
-<!-- NCXed -->
 
 > Software engineering is what happens to computer programming when you add time and other programmers.
 
@@ -634,7 +596,6 @@ availability | downtime, per year | cost
 > No one in the brief history of computing has ever written a piece of perfect software. It's unlikely that you'll be the first.
 
 \- Andy Hunt
-<!-- NCXed -->
 
 > A primary cause of complexity is that software vendors uncritically adopt almost any feature that users want.
 
@@ -647,24 +608,20 @@ availability | downtime, per year | cost
 > "Feral systems": Access databases, spreadsheets with macros, and other hacked solutions made out of frustration when current systems don't meet a need.
 
 [- Hadley Beeman](https://twitter.com/hadleybeeman/status/934867384577462274)
-<!-- NCXed -->
 
 > The trouble with programmers is that you can never tell what a programmer is doing until it’s too late.
 
 \- Seymour Cray
-<!-- NCXed -->
 
 > Measuring programming by lines of code is like measuring aircraft building by weight.
 
 \- Bill Gates
-<!-- NCXed -->
 
 > Rules of Optimization:  
 > Rule 1: Don't do it.  
 > Rule 2 (for experts only): Don't do it yet.
 
 \- Michael A. Jackson
-<!-- NCXed -->
 
 <!--
 > CoffeeScript, Haml, Sass, all on top of me, holding me up psychologically for MONTHS.
@@ -683,7 +640,6 @@ availability | downtime, per year | cost
 > Junior developer: "I will just copy over this code to reuse it"  
 > Middle developer: "I will make it DRY with code sharing/inheritance/macros"  
 > Senior developer: "I will just copy over this code to reuse it"
-<!-- NCXed -->
 
 [- Hubert Lepicki](https://twitter.com/hubertlepicki/status/946725454043598849)
 
@@ -720,12 +676,10 @@ availability | downtime, per year | cost
 > Every technology, when sufficiently complicated, becomes programmable.
 
 [- Kenton Varda](https://blog.cloudflare.com/introducing-cloudflare-workers/)
-<!-- NCXed -->
 
 > Any sufficiently complicated C or Fortran program contains an ad-hoc, informally-specified, bug-ridden, slow implementation of half of Common Lisp.
 
 [- Philip Greenspun](https://philip.greenspun.com/research/)
-<!-- NCXed -->
 
 > Compatibility means deliberately repeating other people's mistakes.
 
@@ -738,7 +692,6 @@ availability | downtime, per year | cost
 > Debugging is like being the detective in a crime movie where you are also the murderer.
 
 \- Filipe Fortes
-<!-- NCXed -->
 
 > You don't pay engineers to write code, you pay them to understand problems, subtleties, and edges. The code is incidental.
 
@@ -890,7 +843,6 @@ corollary:
 > The question of whether machines can think is about as relevant as the question of whether submarines can swim.
 
 \- Edsger Dijkstra
-<!-- NCXed -->
 
 > I love deadlines. I love the whooshing noise they make as they go by.
 
@@ -923,12 +875,10 @@ corollary:
 > Should array indices start at 0 or 1? My compromise of 0.5 was rejected without, I thought, proper consideration.
 
 [— Stan Kelly-Bootle](http://exple.tive.org/blarg/2013/10/22/citation-needed/)
-<!-- NCXed -->
 
 > Einstein argued that there must be simplified explanations of nature, because God is not capricious or arbitrary. No such faith comforts the software engineer.
 
 \- Fred Brooks
-<!-- NCXed -->
 
 > In computer science, we're privileged to run elbows with the giants on whose shoulders we stand.
 
@@ -953,7 +903,6 @@ via [@zooko](https://twitter.com/zooko)
 > Beware of bugs in the above code; I have only proved it correct, not tried it.
 
 \- Donald Knuth
-<!-- NCXed -->
 
 > In my experience, all distributed consensus algorithms are either 1: Paxos, 2: Paxos with extra unnecessary cruft, or 3: broken.
 
@@ -962,7 +911,6 @@ via [@zooko](https://twitter.com/zooko)
 > We should forget about small efficiencies, say about 97% of the time: premature optimization is the root of all evil.
 
 [- Donald Knuth (apocryphal: C.A.R Hoare)](https://shreevatsa.wordpress.com/2008/05/16/premature-optimization-is-the-root-of-all-evil/)
-<!-- NCXed -->
 
 > Progress is a new error message.
 
@@ -971,12 +919,10 @@ via [@zooko](https://twitter.com/zooko)
 > Code gets rewritten all the time. Don't get attached to it. The ideas are all that matter.
 
 \- Parisa Tabriz
-<!-- NCXed -->
 
 > The idea that new code is better than old is patently absurd. Old code has been used. It has been tested. Lots of bugs have been found, and they’ve been _fixed_. There’s nothing wrong with it. It doesn’t acquire bugs just by sitting around on your hard drive. Au contraire, baby! Is software supposed to be like an old Dodge Dart, that rusts just sitting in the garage? Is software like a teddy bear that’s kind of gross if it’s not made out of _all new material?_
 
 [- Joel Spolsky, _Things You Should Never Do, Part I_](https://www.joelonsoftware.com/2000/04/06/things-you-should-never-do-part-i/)
-<!-- NCXed -->
 
 > The first step in fixing a broken program is getting it to fail repeatably.
 
@@ -997,7 +943,6 @@ via [@zooko](https://twitter.com/zooko)
 > A clever person solves a problem. A wise person avoids it.
 
 \- Albert Einstein
-<!-- NCXed -->
 
 > The difference between a bad programmer and a good one is whether he considers his code or his data structures more important. Bad programmers worry about the code. Good programmers worry about data structures and their relationships.
 
@@ -1007,37 +952,30 @@ via [@zooko](https://twitter.com/zooko)
 > computers think using etchings in poisoned sand and measure time using vibrating crystals so if you were looking for magic you found it
 
 [-@computerfact](https://twitter.com/computerfact/status/722931893256065024)
-<!-- NCXed -->
 
 > A computer should never ask a question if it should be able to work out the answer.
 
 \- Unknown
-<!-- NCXed -->
 
 > If it hurts, do it more often.
 
 \- Unknown; [popularized by Martin Fowler et al](https://martinfowler.com/bliki/FrequencyReducesDifficulty.html)
-<!-- NCXed -->
 
 > Digital information lasts forever - or five years, whichever comes first.
 
 \- Jeff Rothenberg
-<!-- NCXed -->
 
 > a popular myth is that people who are Very Computer have computers that work. nothing could be further from the truth. the Very Computer are capable of generating much more novel and fascinating ways to make computers not fucking work and exercise this capability wantonly
 
 [- @cakesandcourage](https://twitter.com/cakesandcourage/status/1461481653059129345)
-<!-- NCXed -->
 
 > Sometimes in engineering you need to do the wrong thing in order to figure out what the right thing is.
 
 [- Tim Angus](https://twitter.com/tim_angus/status/1554186739849240576)
-<!-- NCXed -->
 
 > The severity of an incident is measured by the number of rules broken in resolving it.
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCXed -->
 
 > If a postmortem follow-up task is not picked up within a week, it's unlikely to be completed at all.
 
@@ -1047,27 +985,22 @@ via [@zooko](https://twitter.com/zooko)
 > [UTC or GTFO.](https://utc-or-gtfo.creator-spring.com/)
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCXed -->
 
 > Very few operations are truly idempotent.
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCXed -->
 
 > "Asserting state" beats "monitoring for compliance" any day.
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCXed -->
 
 > If you determine "human error" as the root cause, then you're doing it wrong.
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCXed -->
 
 > There are very few network restrictions creative and determined use of ssh(1) port forwarding can't overcome. This is both incredibly useful and concerning.
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCXed -->
 
 > It is tempting to jump right into implementing a solution when the right thing may well be to not do the thing that requires the solution in the first place.
 
@@ -1077,12 +1010,10 @@ via [@zooko](https://twitter.com/zooko)
 > Turning things off permanently is surprisingly difficult.
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCXed -->
 
 > Debugging any sufficiently complex open source product is indistinguishable from reverse engineering a black box.
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCXed -->
 
 > At some point in your career you will implement half of Kerberos. Poorly.
 
@@ -1110,12 +1041,10 @@ via [@zooko](https://twitter.com/zooko)
 > - turning off old thing
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCXed -->
 
 > One in a million is next Tuesday.
 
 [- Larry Osterman](https://docs.microsoft.com/en-us/archive/blogs/larryosterman/one-in-a-million-is-next-tuesday)
-<!-- NCXed -->
 
 > To consult the statistician [or, in our case, peer-reviewer] after an experiment is finished is often merely to ask him to conduct a post mortem examination. He can perhaps say what the experiment died of.
 
@@ -1144,12 +1073,10 @@ Corollaries:
 > A sign you've created a good infrastructure abstraction is that AWS offers it as a service.
 
 [- Jay Kreps](https://engineering.linkedin.com/distributed-systems/log-what-every-software-engineer-should-know-about-real-time-datas-unifying)
-<!-- NCXed -->
 
 > Before you can develop reusable software you need to have developed it three times. Before you can reap the benefits of reuse, you need to reuse it at least three times.
 
 \- Ted Biggerstaff, via Will Tracz
-<!-- NCXed -->
 
 > ORM is the Vietnam of Computer Science.
 
@@ -1162,7 +1089,6 @@ Corollaries:
 > It's always a great feeling when you fix the last bug in a software project. With a big enough project you can have that feeling every few hours, forever.
 
 \- Unknown
-<!-- NCXed -->
 
 > There are two ways you can get exercise out of a bicycle: you can "overhaul" it, or you can ride it. On the whole, I am not sure that a man who takes his pleasure overhauling does not have the best of the bargain. He is independent of the weather and the wind; the state of the roads troubles him not. Give him a screw-hammer, a bundle of rags, an oil-can, and something to sit down upon, and he is happy for the day. He has to put up with certain disadvantages, of course; there is no joy without alloy. He himself always looks like a tinker, and his machine always suggests the idea that, having stolen it, he has tried to disguise it; but as he rarely gets beyond the first milestone with it, this, perhaps, does not much matter. The mistake some people make is in thinking they can get both forms of sport out of the same machine. This is impossible; no machine will stand the double strain. You must make up your mind whether you are going to be an "overhauler" or a rider.
 

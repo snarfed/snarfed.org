@@ -17,4 +17,4 @@ Imagine a big mixing board at a professional music studio. You generate an initi
 
 It's a complicated UI! Definitely not as approachable as "just type into the text box." And typing into a text box has gotten us pretty far! But if we're stuck with human language as our main interface to generative models, that's extremely limiting. Professionals won't tolerate that for long; they need more powerful, fine grained interfaces that give them a high degree of interactive control and ability to iterate. Language prompts may have gotten us here, as they say, but they may not get us there.
 
-(AI researchers will note that this has lots of prior art in grounding and interpretability, among other areas. I'm no expert, I'd love to hear any thoughts!)
+AI researchers will note that this has lots of prior art in grounding and interpretability, among other areas. I'm no expert, I'd love to hear any thoughts!

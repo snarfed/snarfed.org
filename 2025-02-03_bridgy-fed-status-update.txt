@@ -1,0 +1,29 @@
+
+
+<p class="right third">
+ <a href="https://fed.brid.gy/">
+  <img src="/bridgy_logo.png" /></a></p>
+
+Hi everyone! It's been a while [since last time](/2024-12-21_54377), and we've been busy, so here's another [Bridgy Fed](https://fed.brid.gy/) status update.
+
+<p class="right third">
+ <a href="bridgy_fed_costs_2025_02.png">
+  <img src="/bridgy_fed_costs_2025_02.png" /></a></p>
+
+First, [we've made progress on cutting costs](https://github.com/snarfed/bridgy-fed/issues/1149). They're down by half from their peak back in mid Nov, even though our user base and load has roughly doubled since then. [I still think I can get them lower](https://github.com/snarfed/arroba/issues/34), but for now, I'm ok with where we are.
+
+We're also still pushing [A New Social](https://www.anew.social/) forward. Paperwork, people, and plans (ie roadmap), oh my. More when we know it!
+
+Other than that, I [wrote up a developer design doc](https://bridgy-fed.readthedocs.io/source/design.html), and I managed to fix some bugs and add some features. Here are a few:
+
+* [New `block` and `unblock` DM commands to block/unblock accounts that aren't bridged](https://github.com/snarfed/bridgy-fed/issues/1406)
+* [Improved PixelFed compatibility](https://github.com/snarfed/bridgy-fed/issues/39#issuecomment-2525113104)
+* Improved UI and accessibility of [finding user pages](https://github.com/snarfed/bridgy-fed/issues/1043) [and rendering them](https://github.com/snarfed/bridgy-fed/issues/1666)
+* [Added aspect ratio for images in Bluesky](https://github.com/snarfed/bridgy-fed/issues/1571)
+* Bug fixes for [DM command parsing](https://github.com/snarfed/bridgy-fed/issues/1750), [web site feed polling](https://github.com/snarfed/bridgy-fed/issues/1712), [large objects](https://github.com/snarfed/bridgy-fed/issues/636)
+* Skip [blank posts](https://github.com/snarfed/bridgy-fed/issues/1737), [old backdated posts](https://github.com/snarfed/bridgy-fed/issues/1736), [follow spam](https://github.com/snarfed/bridgy-fed/issues/1669)
+* Store activities [more](https://github.com/snarfed/bridgy-fed/issues/1360) [efficiently](https://github.com/snarfed/bridgy-fed/issues/1359)
+* ATProto: [finish `com.atproto.repo.describeRepo`](https://github.com/snarfed/arroba/issues/33), [validate XRPC call parameters](https://github.com/snarfed/lexrpc/issues/19), [refresh DID docs more often](https://github.com/snarfed/bridgy-fed/issues/1201)
+* [Add per-protocol user counts to nodeinfo](https://github.com/snarfed/bridgy-fed/issues/1509)
+
+As usual, feel free to ping us with feedback, questions, and [bug reports](https://github.com/snarfed/bridgy-fed/issues). You can follow the [_now_ label on GitHub](https://github.com/snarfed/bridgy-fed/issues?q=is%3Aopen+is%3Aissue+label%3Anow) to see what we're currently focusing on. See you on the bridge!
