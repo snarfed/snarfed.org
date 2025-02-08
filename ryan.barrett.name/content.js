@@ -1,6 +1,6 @@
 /*
  * http://ryan.barrett.name/
- * Ryan Barrett <public@ryanb.org>
+ * Ryan Barrett <snarfed@ryanb.org>
  *
  * JavaScript/ECMAScript for the content mouse-overs. Provides functions for
  * each content's specific behavior. (usually just showing hidden text.)

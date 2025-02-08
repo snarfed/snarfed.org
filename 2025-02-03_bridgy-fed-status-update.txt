@@ -1,14 +1,9 @@
-
-
-<p class="right third">
- <a href="https://fed.brid.gy/">
-  <img src="/bridgy_logo.png" /></a></p>
+54609
 
 Hi everyone! It's been a while [since last time](/2024-12-21_54377), and we've been busy, so here's another [Bridgy Fed](https://fed.brid.gy/) status update.
 
-<p class="right third">
- <a href="bridgy_fed_costs_2025_02.png">
-  <img src="/bridgy_fed_costs_2025_02.png" /></a></p>
+<a href="bridgy_fed_costs_2025_02.png">
+ <img class="u-photo shadow" src="/bridgy_fed_costs_2025_02.png" /></a>
 
 First, [we've made progress on cutting costs](https://github.com/snarfed/bridgy-fed/issues/1149). They're down by half from their peak back in mid Nov, even though our user base and load has roughly doubled since then. [I still think I can get them lower](https://github.com/snarfed/arroba/issues/34), but for now, I'm ok with where we are.
 

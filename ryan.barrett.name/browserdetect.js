@@ -1,6 +1,6 @@
 /*
  * http://ryan.barrett.name/
- * Ryan Barrett <public@ryanb.org>
+ * Ryan Barrett <snarfed@ryanb.org>
  *
  * JavaScript/ECMAScript for browser detection. Right now, it only detects
  * Netscape 4.7, since it's the only browser i know of that partially (read:

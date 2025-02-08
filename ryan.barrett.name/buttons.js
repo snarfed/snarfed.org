@@ -1,8 +1,8 @@
 /*
  * http://ryan.barrett.name/
- * Ryan Barrett <public@ryanb.org>
+ * Ryan Barrett <snarfed@ryanb.org>
  *
- * JavaScript/ECMAScript for the button mouse-overs. Fills them in, makes 
+ * JavaScript/ECMAScript for the button mouse-overs. Fills them in, makes
  * them bigger, and shows the name of the page that the button links to.
  */
 

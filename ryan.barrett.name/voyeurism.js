@@ -1,6 +1,6 @@
 /*
  * http://ryan.barrett.name/
- * Ryan Barrett <public@ryanb.org>
+ * Ryan Barrett <snarfed@ryanb.org>
  *
  * JavaScript/ECMAScript for detecting user browser, IP, etc., and displaying
  * my current song, away message, location (from geobytes), etc. The geobytes
