@@ -3,17 +3,16 @@ Resume
 
 Experienced engineering leader. 20+ years building and scaling backend infrastructure, data platforms and applications, and cross functional teams.
 
-<script type="text/javascript">
-if (window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches) {
-  document.getElementById("ncx").src = "/ncx_logo_white.png";
-  document.getElementById("a-new-social").src = "/a-new-social-logotype-dark-mode.svg";
-}
-</script>
-
 
 <p class="quarter right">
- <a href="https://anew.social/">
-  <img id="a-new-social" src="/a-new-social-logotype-light-mode.svg" /></a></p>
+ <a href="https://ncx.com/">
+  <picture>
+    <source srcset="a-new-social-logotype-dark-mode.svg"
+            media="(prefers-color-scheme: dark)" />
+    <img srcset="a-new-social-logotype-light-mode.svg" />
+  </picture>
+ </a>
+</p>
 
 #### [A New Social](https://anew.social/) / [Bridgy Fed](https://fed.brid.gy/), 2017 - present
 
@@ -24,7 +23,13 @@ _CTO_
 
 <p class="quarter right">
  <a href="https://ncx.com/">
-  <img id="ncx" src="/ncx_logo.png" /></a></p>
+  <picture>
+    <source srcset="ncx_logo_white.png" media="(prefers-color-scheme: dark)" />
+    <img srcset="ncx_logo.png" />
+  </picture>
+ </a>
+</p>
+
 
 #### [NCX](https://www.ncx.com/), 2021 - 2024
 
