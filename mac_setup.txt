@@ -80,7 +80,8 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
 <!-- * [Install and configure Docker.](https://hub.docker.com/editions/community/docker-ce-desktop-mac/) -->
 <!-- * [Install and configure Asana.](https://asana.com/download) -->
 * [Install and configure Meet](https://support.google.com/chrome/answer/9658361) and [Enhancement Suite for Chrome](https://www.meetenhancementsuite.com/).
-* Install the _[Disable Automatic Gain Control](https://chrome.google.com/webstore/detail/disable-automatic-gain-co/clpapnmmlmecieknddelobgikompchkk)_ Chrome extension.
+* ~~Install the _[Disable Automatic Gain Control](https://chrome.google.com/webstore/detail/disable-automatic-gain-co/clpapnmmlmecieknddelobgikompchkk)_ Chrome extension.~~  
+  In Chrome, open [`chrome://flags/`](chrome://flags/), turn _Allow WebRTC to adjust the input volume_ off.
 * Pair Bluetooth devices (keyboard, headphones, etc.)
 * Install the [Gmail More Minimalist userstyle](https://userstyles.org/styles/35678/gmail-more-minimalist) in Stylus in Firefox.
 * To remove Firefox's highlight/glow dot on app tabs with notifications:

@@ -1,0 +1,34 @@
+54995
+
+
+<a href="https://fed.brid.gy/">
+ <img class="right half" src="/bridgy_logo.png" /></a>
+
+Hi everyone! Time for a [Bridgy Fed](https://fed.brid.gy/) status update. We have a lot of new features and bug fixes to announce [since the last time](/2025-02-04_54609), so here we go!
+
+* [Added a web-based UI for enabling and configuring the bridge for your accounts.](https://blog.anew.social/bridgy-fed-config-patreon/)
+* [Added support for fediverse split domain mode](https://github.com/snarfed/bridgy-fed/issues/1031), ie when your webfinger address and server are on different domains
+* We now [fully support Bluesky custom handle changes and propagate them to bridged accounts](https://github.com/snarfed/bridgy-fed/issues/1074)
+* [Fediverse instance admins can now automatically enable the bridge for their users and automatically give them custom Bluesky handles](https://github.com/snarfed/bridgy-fed/issues/1305)
+* [Redesigned our Bluesky firehose server](https://github.com/snarfed/arroba/issues/30), which has significantly improved its reliability and reduced delays [in both directions](https://github.com/snarfed/bridgy-fed/issues/1641)
+* [Implemented](https://github.com/snarfed/arroba/issues/52) [ATProto sync v1.1](https://github.com/bluesky-social/proposals/tree/main/0006-sync-iteration). This isn't a user-visible change, but it's an important part of reducing the cost of running an ATProto relay
+* [Implemented pinned posts for fediverse => Bluesky](https://github.com/snarfed/bridgy-fed/issues/1374)
+* [Detect videos that are too long for Bluesky and link to them instead of including them as broken video embeds](https://github.com/snarfed/bridgy-fed/issues/1353) (thank you [@Daft-Freak](https://github.com/Daft-Freak)!)
+* [Improved our compatibility with Mastodon profile updates](https://github.com/snarfed/bridgy-fed/issues/1877#issuecomment-2800033419)
+* [Improved our](https://github.com/snarfed/bridgy-fed/issues/1839) [handling of HTML](https://github.com/snarfed/bridgy-fed/issues/1615) in web link previews
+* [Made DMs smarter about understanding handle formats and encodings](https://github.com/snarfed/bridgy-fed/issues/1936#issuecomment-2899183997)
+* [Started using an image proxy for Threads](https://github.com/snarfed/bridgy-fed/issues/1825), to work around its image URLs expiring
+* [Bug fix for images that are reused across fediverse posts and drafts](https://github.com/snarfed/bridgy-fed/issues/1650)
+* [Link to audio attachments instead of ignoring them](https://github.com/snarfed/bridgy-fed/issues/1503) (thank you [@Daft-Freak](https://github.com/Daft-Freak)!)
+* [Improve fediverse instances' hashtag handling so that they open inside the local instance](https://github.com/snarfed/bridgy-fed/issues/1634)
+* [Added "Open in Mastodon" support for user pages on fed.brid.gy](https://github.com/snarfed/bridgy-fed/issues/1840)
+* [Improved our nodeinfo support for Friendica](https://github.com/snarfed/bridgy-fed/issues/1769)
+* [Handle fediverse posts with over 8 hashtags](https://github.com/snarfed/bridgy-fed/issues/1770)
+* Fediverse => Bluesky: [fix text formatting for posts with < and > characters](https://github.com/snarfed/bridgy-fed/issues/1144)
+* Bluesky => fediverse: [add support for "out-of-line" hashtags](https://github.com/snarfed/bridgy-fed/issues/1394)
+* [Make our fediverse posts more translate-able](https://github.com/snarfed/bridgy-fed/issues/1609)
+* [When a user tries to enable the bridge but isn't eligible, DM them an explanation](https://github.com/snarfed/bridgy-fed/issues/758)
+* [Don't apply spam filters to users who aren't bridged and follow a bridged user](https://github.com/snarfed/bridgy-fed/issues/758)
+* [Improved our deploy process so that it no longer causes delays temporarily](https://github.com/snarfed/bridgy-fed/issues/1771)
+
+As usual, feel free to ping us with feedback, questions, and [bug reports](https://github.com/snarfed/bridgy-fed/issues), and [please support us on Patreon](https://www.patreon.com/c/ANewSocial)! You can follow the [_now_ label on GitHub](https://github.com/snarfed/bridgy-fed/issues?q=is%3Aopen+is%3Aissue+label%3Anow) to see what we're currently focusing on. See you on the bridge!
