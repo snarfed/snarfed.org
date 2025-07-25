@@ -9,6 +9,8 @@ My open source software [projects](#projects), [scripts](#scripts), and [patches
 <a name="projects"></a>
 ### Projects
 
+* [Bounce](https://bounce.anew.social/) lets you migrate from one decentralized social network to another, keep all of your followers, and keep many of the people you follow.
+
 * [Bridgy Fed](https://fed.brid.gy/) connects your web site to federated social networks natively, via ActivityPub. Lets you reply, like, and repost on <a href="https://joinmastodon.org/">Mastodon</a> and <a href="https://project.hubzilla.org/">Hubzilla</a> from your [IndieWeb](https://indieweb.org/) site, and vice versa.
 
 * [Bridgy](https://brid.gy/) connects your web site to social media. Likes, reposts, mentions, cross-posting, and more. Part of the [IndieWeb](https://indieweb.org/) ecosystem.
