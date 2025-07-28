@@ -1,11 +1,11 @@
 55295
 Bridging identity with links
 
-One of the most common questions we get here is, "can you help me connect all my different accounts?" You may be on Bluesky, and Instagram, and Mastodon; you may make a video series on YouTube; you may have a blog, and maybe post on Reddit, and once a while back you set up a Linktree to connect them all. Half of them are inactive, the other half you end up copy and pasting between. At least once a day, you open a notification on one account, only to end up pointing someone to a _different_ account of yours.
+One of the most common questions we get here is, "can you help me connect all my different accounts?" You're on Bluesky, and Instagram, and Mastodon, you may make a video series on YouTube, you have a blog, and sometimes you post on Reddit, and a while back you set up a Linktree to connect them all. Half of your accounts are inactive, the other half you end up copy and pasting between way too often. At least once a day, you open a notification on one account, only to end up on a different account altogether, with no way to connect the two.
 
 There must be a better way, right?
 
-Maybe! We hope so. It's a big, fuzzy problem, with lots of different needs and problems to solve. [We ran a session](https://fediforum.org/2025-06/session/7-b/) at [FediForum back in June](https://fediforum.org/2025-06/) and came away with a great set of draft user stories and future directions. Today, though, we want to focus on one technique we've been using in [Bridgy Fed](https://fed.brid.gy/) and [Bounce](https://blog.anew.social/bounce-a-cross-protocol-migration-tool/) with a handful of partners: _account links_.
+We hope so! It's a big, fuzzy, gnarly, multi-faceted problem. [We ran a session](https://fediforum.org/2025-06/session/7-b/) on it [at FediForum, back in June,](https://fediforum.org/2025-06/) and came away with a great set of draft user stories and future directions. Today, though, we want to focus on one technique we've been using in [Bridgy Fed](https://fed.brid.gy/) and [Bounce](https://blog.anew.social/bounce-a-cross-protocol-migration-tool/) for a while now: _account links_.
 
 Often, when people think about consolidating their identities online, they think top-down. If the problem is too many different accounts, the obvious solution is to make a new, meta account that knows about all the rest and connects them together, right?
 
@@ -68,7 +68,7 @@ For example, this web site is bridged into the fediverse as ActivityPub actor id
 When clients see my fediverse actor and its `alsoKnownAs`, they can fetch it, look for the `rel="me"` link, see that it points back to the actor, and confirm that this site and that fediverse account are legitimately the same person. Likewise, if they start from this web site, they can look for the `rel="me"` link and do the same check.
 
 <a href="/mastodon-rel-me-checks-gargron.png">
-  <img class="shadow" src="/mastodon-rel-me-checks-gargron.png"></a>
+  <img class="shadow half right" src="/mastodon-rel-me-checks-gargron.png"></a>
 
 Mastodon already does this! If you add a profile link to your web site, and then link from your web site back to your Mastodon profile with `rel="me"`, [Mastodon shows that link with a green check](https://docs.joinmastodon.org/user/profile/#verification). Account links in the wild! We love to see it.
 
