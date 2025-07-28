@@ -1,0 +1,58 @@
+
+
+Bridging identity with links
+
+Since we spend most of our time thinking across protocols and networks, one of the most common questions we get here is, "can you help me connect all my different accounts?" You may be on Bluesky, and Instagram, and Mastodon; you may make a video series on YouTube; you may have a blog, and maybe post on Reddit, and once a while back you set up a Linktree to connect them all. Half of them are inactive, the other half you end up copy and pasting between. At least once a day, you open a notification on one account, only to end up pointing someone to a _different_ account of yours.
+
+There must be a better way, right?
+
+Maybe! We hope so. It's a big, fuzzy problem, with lots of different needs and problems to solve. [We ran a session on it](https://fediforum.org/2025-06/session/7-b/) at [FediForum back in June](https://fediforum.org/2025-06/), and we came away with a great first pass at a set of user stories and future directions. Today, though, we want to focus on one technique we've been using in [Bridgy Fed](https://fed.brid.gy/) and [Bounce](https://blog.anew.social/bounce-a-cross-protocol-migration-tool/) with a handful of partners: _publishing links_.
+
+Often, when people think about consolidating their identities online, they think top-down. If the problem is too many different accounts, the obvious solution is to make a new, meta account that knows about all the rest and connects them together, right?
+
+It's a good thought! FriendFeed, Plaxo, Linktree, HootSuite, and countless other [social network aggregators](https://en.wikipedia.org/wiki/Social_network_aggregation) have taken a swing at exactly this over the years, many still to this day.
+
+The catch is, this just crowns a new central authority, with control over everyone's accounts, that everyone has to use. It might work, but here in the open social web, we're looking for something less centralized. As [David Clark of the IETF said](https://en.wikiquote.org/wiki/David_D._Clark#Sourced): _We reject kings, presidents and voting. We believe in rough consensus and running code._
+
+<p class="right half">
+  <a href="https://xkcd.com/927/">
+    <img class="shadow" src="https://imgs.xkcd.com/comics/standards.png"></a>
+</p>
+
+Often, the next thought is to take this meta account and turn it into a new open standard. A noble, worthy idea! WebFinger, DIDs, OpenID, PGP keyservers, and many others thought so too. Enter [XKCD 927](https://xkcd.com/927/).
+
+So, if thinking top down can lead to over-centralization or over-standardization, Anuj and I wondered about the other direction. What's the smallest thing we could do, bottom up, without introducing yet another central authority or new standard? We quickly realized that it already existed: every network and protocol we work with has a way to _link_ to other accounts, on other networks and services. The web has [`rel=me`](https://microformats.org/wiki/rel-me), the fediverse (ActivityPub) has [`alsoKnownAs`](https://www.w3.org/ns/activitystreams#did-core), Bluesky (AT Protocol) also uses [`alsoKnownAs`](https://www.w3.org/TR/did-1.0/#dfn-alsoknownas), and Nostr has [NIP-39](https://nips.nostr.com/39). (We're not sure about Farcaster yet. If you know how, [please let us know](mailto:letsbuild@anew.social)!)
+
+Let's look at an example. [Anuj](https://quillmatiq.com/) is [@quillmatiq@pixelfed.social](https://pixelfed.social/quillmatiq) on Pixelfed. That account is [bridged to Bluesky](https://bsky.app/profile/quillmatiq.pixelfed.social.ap.brid.gy), and Bridgy Fed includes this in [its DID document](https://web.plc.directory/did/did:plc:3qp6hiiqwuzasese2vtex6xl):
+
+```json
+  "alsoKnownAs": [
+    "at://pixels.quillmatiq.com",
+    "https://pixelfed.social/users/quillmatiq"
+  ]
+```
+
+The second element there, `https://pixelfed.social/users/quillmatiq`, is the Pixelfed account's ActivityPub actor id. The bridged Bluesky account is _publishing a link_ back to its original source account. Any Bluesky client or app can read this DID document, fetch `https://pixelfed.social/users/quillmatiq`, see that it has a `link rel=alternate type=application/activity+json`, and use that to find the Pixelfed account.
+
+It's not hard to imagine [bsky.app](https://bsky.app/), or an alternative Bluesky client like [deer.social](https://deer.social/) or [Graysky](https://graysky.app/), using this to render external accounts directly in its UI. Here's an example mockup; note the Pixelfed logo and linked handle:
+
+<a href="/bsky-pixelfed-quillmatiq-link.png">
+  <img class="shadow" src="/bsky-pixelfed-quillmatiq-link.png"></a>
+
+This works the other direction too. As an example, [Anuj's Bluesky account](https://bsky.app/profile/quillmatiq.com) is bridged to the fediverse, and [its bridged ActivityPub actor](https://browser.pub/@quillmatiq.com@bsky.brid.gy) includes this:
+
+```json
+"alsoKnownAs": [
+    "at://did:plc:xgvzy7ni6ig6ievcbls5jaxe"
+  ],
+```
+
+Fediverse clients and apps can resolve and fetch [`did:plc:xgvzy7ni6ig6ievcbls5jaxe`](https://web.plc.directory/did/did:plc:xgvzy7ni6ig6ievcbls5jaxe), see that it's an AT Protocol account, and [link users to its Bluesky profile](https://bsky.app/profile/quillmatiq.com). We already even include the link and make it user-visible; clients and apps just need to match it to `alsoKnownAs`, detect that it's a Bluesky account, and show that.
+
+<a href="/bsky-pixelfed-quillmatiq-orig.png">
+  <img class="shadow half-sidebyside" src="/bsky-pixelfed-quillmatiq-orig.png"></a>
+<a href="/bsky-pixelfed-quillmatiq-link.png">
+  <img class="shadow half-sidebyside" src="/bsky-pixelfed-quillmatiq-link.png"></a>
+
+
+Bidirectional verification is also common and expected in these standards. Anyone can _claim_ that they're behind another account.
