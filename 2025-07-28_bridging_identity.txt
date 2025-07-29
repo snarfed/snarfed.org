@@ -1,11 +1,16 @@
 55295
 Bridging identity with links
 
-One of the most common questions we get here is, "can you help me connect all my different accounts?" You're on Bluesky, and Instagram, and Mastodon, you may make a video series on YouTube, you have a blog, and sometimes you post on Reddit, and a while back you set up a Linktree to connect them all. Half of your accounts are inactive, the other half you end up copy and pasting between way too often. At least once a day, you open a notification on one account, only to end up on a different account altogether, with no way to connect the two.
+<p class="right half">
+  <a href="https://commons.wikimedia.org/wiki/File:Funny_Kitten.jpg">
+    <img class="shadow half right" src="/funny_kittens_wikimedia.jpg"></a>
+</p>
+
+One of the most common questions we get here is, "can you help me connect all my different accounts?" You're on Bluesky, and Instagram, and Mastodon, you make a video series on YouTube, you have a blog, sometimes you post on Reddit, and a while back you set up a Linktree to connect them all. Half of your accounts are inactive, the other half you copy and paste between way too often. At least once a day, you open a notification on one account, only to end up on a different account altogether, with no way to connect the two.
 
 There must be a better way, right?
 
-We hope so! It's a big, fuzzy, gnarly, multi-faceted problem. [We ran a session](https://fediforum.org/2025-06/session/7-b/) on it [at FediForum, back in June,](https://fediforum.org/2025-06/) and came away with a great set of draft user stories and future directions. Today, though, we want to focus on one technique we've been using in [Bridgy Fed](https://fed.brid.gy/) and [Bounce](https://blog.anew.social/bounce-a-cross-protocol-migration-tool/) for a while now: _account links_.
+We hope so! It's a big, gnarly, multi-faceted problem. [We ran a session](https://fediforum.org/2025-06/session/7-b/) on it [at FediForum, back in June,](https://fediforum.org/2025-06/) and came away with a great set of draft user stories and future directions. Today, though, we want to focus on one technique we've been using in [Bridgy Fed](https://fed.brid.gy/) and [Bounce](https://blog.anew.social/bounce-a-cross-protocol-migration-tool/): _account links_.
 
 Often, when people think about consolidating their identities online, they think top-down. If the problem is too many different accounts, the obvious solution is to make a new, meta account that knows about all the rest and connects them together, right?
 
@@ -33,23 +38,23 @@ Let's look at an example. [Anuj](https://quillmatiq.com/) is [@quillmatiq@pixelf
 
 The second element there, <code>https://pixelfed.social/users/quillmatiq</code>, is the Pixelfed account's ActivityPub actor id. The bridged Bluesky account is _publishing an account link_ back to its original source account. Any Bluesky client or app can read this DID document, fetch <code>https://pixelfed.social/users/quillmatiq</code>, see that it has a `link rel=alternate type=application/activity+json`, and use that to find the Pixelfed account.
 
-Any Bluesky client can use this to link to external accounts in its UI. Here's an example mockup based on bsky.app; note the Pixelfed logo and linked handle:
-
 <a href="/bsky-pixelfed-quillmatiq-link.png">
-  <img class="shadow" src="/bsky-pixelfed-quillmatiq-link.png"></a>
+  <img class="shadow half right" src="/bsky-pixelfed-quillmatiq-link.png"></a>
 
-This works both directions. [Anuj's Bluesky account](https://bsky.app/profile/quillmatiq.com) is bridged to the fediverse, and [its bridged ActivityPub actor](https://browser.pub/@quillmatiq.com@bsky.brid.gy) includes this:
+Any Bluesky client can use this to link to external accounts in its UI. Here's an example mockup based on bsky.app; note the Pixelfed logo and linked handle.
+
+This works in both directions. [Anuj's Bluesky account](https://bsky.app/profile/quillmatiq.com) is bridged to the fediverse, and [its bridged ActivityPub actor](https://browser.pub/@quillmatiq.com@bsky.brid.gy) includes this:
 
 ```json
 "alsoKnownAs": ["at://did:plc:xgvzy7ni6ig6ievcbls5jaxe"]
 ```
 
-Fediverse clients and apps can resolve and fetch that DID document ([`did:plc:xgvzy7ni6ig6ievcbls5jaxe`](https://web.plc.directory/did/did:plc:xgvzy7ni6ig6ievcbls5jaxe)), see that it's an AT Protocol account, and [link users to its Bluesky profile](https://bsky.app/profile/quillmatiq.com). Bridgy Fed even already includes that user-visible link! Clients just need to match it to `alsoKnownAs`, detect that it's a Bluesky account, and show a visible indicator. Here's an example mockup, based on Mastodon's web UI:
-
 <!-- <a href="/mastodon-bsky-quillmatiq-orig.png"> -->
 <!--   <img class="shadow half-sidebyside" src="/mastodon-bsky-quillmatiq-orig.png"></a> -->
 <a href="/mastodon-bsky-quillmatiq-link.png">
-  <img class="shadow" src="/mastodon-bsky-quillmatiq-link.png"></a>
+  <img class="shadow half right" src="/mastodon-bsky-quillmatiq-link.png"></a>
+
+Fediverse clients and apps can resolve and fetch that DID document ([`did:plc:xgvzy7ni6ig6ievcbls5jaxe`](https://web.plc.directory/did/did:plc:xgvzy7ni6ig6ievcbls5jaxe)), see that it's an AT Protocol account, and [link users to its Bluesky profile](https://bsky.app/profile/quillmatiq.com). Bridgy Fed even already includes that user-visible link! Clients just need to match it to `alsoKnownAs`, detect that it's a Bluesky account, and show a visible indicator. Here's an example mockup, based on Mastodon's web UI:
 
 The other useful thing to do with these links is bidirectional verification. Anyone can _claim_ that they're a given Mastodon or Bluesky account; so you only really want to trust them if that account confirms it. We do this by publishing links in both directions, from each account to the other. Clients can then check both sides to verify that the two accounts really are the same person.
 
@@ -72,8 +77,10 @@ When clients see my fediverse actor and its `alsoKnownAs`, they can fetch it, lo
 
 Mastodon already does this! If you add a profile link to your web site, and then link from your web site back to your Mastodon profile with `rel="me"`, [Mastodon shows that link with a green check](https://docs.joinmastodon.org/user/profile/#verification). Account links in the wild! We love to see it.
 
+Mastodon and Pixelfed users can also set their own account links. The user-facing term for these in the fediverse is _aliases_; here are the [Mastodon docs](https://docs.joinmastodon.org/user/moving/#aliases) and [Pixelfed GitHub discussion](https://github.com/pixelfed/pixelfed/discussions/4661) for how to set them. Bluesky's [bsky.app](https://bsky.app/) client doesn't have a way for users add aliases to their DID docs yet, but it's straightforward for any Bluesky client developer to add.
+
 There's lots more to talk about here. [You can do this with posts](https://fed.brid.gy/docs#identify-bridged-post), and many other interactions, as well as with accounts. You can use this to build an identity aggregator that detects and sets up all of your accounts for you. Multi-protocol clients can use this to automatically show the native version of every account and post, regardless of where you discovered it. And so on.
 
-But for now, we want to propose account links as one modest, bottom-up starting point for handling our myriad identities online. They don't solve all problems. They're not a grand vision. But they do help decentralized social networks say, hey, this person here, they're also that one over there. And apps on those networks can use account links to surface those connections to users. We think that could be useful.
+But for now, we want to propose account links as one modest, bottom-up starting point for handling all of our myriad identities online. They don't solve all problems. They're not a grand vision. But they do help decentralized social networks say, hey, this person here, they're also that one over there. And apps on those networks can use account links to surface those connections to users. We think that could be useful.
 
 (If you're a developer, and this piques your interest, [check out the Bridgy Fed docs for more details](https://fed.brid.gy/docs#api), and [feel free to reach out to us](mailto:letsbuild@anew.social), we'd love to work with you!)
