@@ -1,43 +1,47 @@
 55320
 Bridging vs cross-posting
 
-<p class="half right shadow">
+<p class="half right">
  <a href="https://officialbridgeday.com/">
-  <img src="base_jumping.jpg">
+  <img class="shadow" src="base_jumping.jpg">
   <span class="captioned">Bridge Day, West Virginia</span>
  </a>
 </p>
 
-When we talk about what we do here, one topic that comes up often is _bridging vs cross-posting_. They've both been around for a long time, and they're similar, but they're also different in some important ways, notably whether their resulting conversations are more unified or fragmented. That difference isn't always obvious, but we think it's important.
+When we talk about what we do here, one topic that comes up often is _bridging vs cross-posting_. They've both been around for a long time, and they're similar, but they're also different in some important ways. Notably, bridging results in more unified conversations, while cross-posted conversations are more fragmented. That difference isn't always obvious, but we think it can be important.
 
 Cross-posting starts out pretty straightforward. Instead of posting to just one network, you set up multiple accounts, on multiple networks, and post to all of them at the same time. So far, so good.
 
-[cross-posting diagram, Alice to Mastodon and Bluesky]
+<a href="/bridging_vs_cross_posting_alice.png">
+ <img class="shadow" src="/bridging_vs_cross_posting_alice.png"></a>
 
-Bridges, on the other hand, generally aren't clients or platforms that users interact with directly. Instead, they use their existing client and network, and the bridge extends them into another network. When people there respond, those responses are bridged back to the original network.
+Bridges, on the other hand, extend posts from one network into another. When people there respond, those responses are bridged back to the original network.
 
-[bridging diagram, Bob on Bluesky, bridged to the fediverse]
+<a href="/bridging_vs_cross_posting_bob.png">
+ <img class="shadow" src="/bridging_vs_cross_posting_bob.png"></a>
 
 At first glance, these seem similar. The plumbing may work differently, but the end result is the same: Alice and Bob both post to both Bluesky and the fediverse at the same time, automatically.
 
 The interesting bit happens when other people respond. Say Eve replies on the fediverse, and Frank replies on Bluesky. For Alice, those two networks are separate, so each reply stays on its own network. Alice may see them both, but Frank doesn't see Eve's reply, and Eve doesn't see Frank's. The conversation is fragmented.
 
-[disconnected replies diagram]
+<a href="/bridging_vs_cross_posting_alice_replies.png">
+ <img class="shadow" src="/bridging_vs_cross_posting_alice_replies.png"></a>
 
-This is true even if Eve and Frank themselves are bridged! Alice's cross-posted posts generally aren't linked in any standard way that bridges can see and use. [TODO: link to account links post] Bridgy Fed doesn't bridge replies to un-bridged posts, and it doesn't know that Alice's posts were cross-posted, so it can't bridge these replies.
+This is true even if Eve and Frank themselves are bridged! Alice's cross-posted posts generally aren't linked in any standard way that bridges can see or use. [TODO: link to account links post] Bridgy Fed doesn't bridge replies to un-bridged posts, and it doesn't know that Alice's posts were cross-posted, so it can't bridge these replies.
 
-However, this all changes if Alice herself is bridged. The bridge knows that her posts on each network are the same, so when Eve and Frank reply, it can bridge those replies and connect them to the corresponding original post. Eve and Frank can see and reply to each other, and the overall conversation is unified.
+However, this all changes if Alice herself is bridged. The bridge knows that her posts on each network are the same, so when Eve and Frank reply, it can bridge those replies and connect them to her original posts on each network. Eve and Frank can see and reply to each other, and the overall conversation is unified.
 
-[bridged replies diagram]
+<a href="/bridging_vs_cross_posting_bob_replies.png">
+ <img class="shadow" src="/bridging_vs_cross_posting_bob_replies.png"></a>
 
-Some modern cross-posting clients have sophisticated logic that gets them close to this. Beyond posting to multiple networks, they generally _read_ from them too, seamlessly merging all of their timelines and feeds and activity. Some keep track of cross-posted posts internally, merging their replies and threads into a conversation that _looks_ unified. Sometimes they even store these mappings centrally, and use them to merge conversations from other users of the same client.
+Some modern cross-posting clients have sophisticated logic that gets close to this. Along with posting to multiple networks, they generally _read_ from multiple networks too, seamlessly merging the different timelines and feeds and activities. Some keep track of cross-posted posts, merging their replies and threads into conversations that _look_ unified. Some may even store those mappings centrally and use them to merge conversations for everyone else who uses the client.
 
-However, they can only do this for their own users. A cross-posting client can't change what people outside of it see. Here, it can't make Eve or Frank see each other's replies. That means the conversation stays fragmented by network, _even for the cross-posting client's users themselves._ Eve may have had something useful to say to Frank, but Eve never sees Frank's reply, so that conversation will never happen.
+However, they can only do this for their own users. A cross-posting client can't change what people outside of it see. Here, it can't make Eve or Frank see each other's replies. That means that the conversation stays fragmented by network, _even for the cross-posting client's users._ Frank may have something useful to say to Eve, but if Frank never sees Eve's reply, that conversation never happens.
 
-To be fair, there are benefits to cross-posting over bridging. Cross-posting is usually less complicated to develop. It can be done entirely client side. And it lets users bring their own native accounts, and continue to use them outside the client, whereasbridges like Bridgy Fed often fully own and manage their bridged accounts.
+To be fair, there are benefits to cross-posting over bridging too. Cross-posting is usually less complicated to develop. It can be done entirely client side. And it lets users bring their own native accounts, and continue to use them outside the client, whereas bridges like Bridgy Fed often fully own and manage their bridged accounts.
 
-These are meaningful differences. Cross-posting and bridging are both useful; both have their place. We even built and run both ourselves, [Bridgy classic](https://brid.gy/about) for cross-posting, [Bridgy Fed](https://fed.brid.gy/docs) for bridging. When we talk with partners in the space, we regularly find ourselves recommending both, at different times, depending on the situations.
+These are meaningful differences. Cross-posting and bridging are both useful; both have their place. We even build and run both ourselves, [Bridgy classic](https://brid.gy/about) for cross-posting, [Bridgy Fed](https://fed.brid.gy/docs) for bridging. When we talk with partners in the space, we regularly find ourselves recommending both of them, at different times, depending on the situation.
 
-Even so, the difference between fragmented and unified conversations may be subtle, especially with advanced clients, but we think it's important, and worth keeping in mind.
+Even so, while the difference between fragmented and unified conversations is subtle, especially with advanced clients, we think it's important and worth keeping in mind.
 
-If you're a developer, and this piques your interest, [check out the Bridgy Fed developer docs](https://fed.brid.gy/docs#api), and [feel free to reach out to us](mailto:letsbuild@anew.social), we'd love to work with you!
+If you're a developer and this piques your interest, [check out the Bridgy Fed developer docs](https://fed.brid.gy/docs#api), and [feel free to reach out to us](mailto:letsbuild@anew.social), we'd love to work with you!
