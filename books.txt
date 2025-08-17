@@ -16,6 +16,8 @@ Also see [movies](movies), [games](games), and [other lists](lists).
 <a name="to_read"></a>
 **Books I'd like to read**:
 
+[Nick Harkaway - _Gnomon_](https://www.google.com/books/edition/Gnomon/NY1EDwAAQBAJ)
+
 [Jon Osterhout - _A Philosophy Of Software Design_](https://www.google.com/books/edition/A_Philosophy_of_Software_Design/pD6-swEACAAJ)
 <nf>nf</nf>
 
@@ -26,19 +28,7 @@ Joyce Carol Oates - [_them_](https://www.google.com/books/edition/Them/q7RY_V7oF
 [Umberto Eco - _Faith In Fakes_](https://www.google.com/books/edition/Faith_in_Fakes/xFYdAQAAIAAJ)
 <nf>nf</nf>
 
-[Daniel Suarez - _Delta V_](https://www.google.com/books/edition/Delta_v/7LJkDwAAQBAJ)
-<f>f</f>
-
-[James Baldwin - _Giovanni's Room_](https://www.google.com/books/edition/Giovanni_s_Room/0OBAjgEACAAJ)
-<f>f</f>
-
-[Robert M. Sapolsky - _Determined_](https://www.google.com/books/edition/Determined/K3oQEQAAQBAJ)
-<nf>nf</nf>
-
 [Emily Tesh - _Some Desperate Glory_](https://www.google.com/books/edition/Some_Desperate_Glory/LG9pEAAAQBAJ)
-<f>f</f>
-
-[Vajra Chandrasekera - _The Saint Of Bright Doors_](https://www.google.com/books/edition/The_Saint_of_Bright_Doors/xE-BEAAAQBAJ)
 <f>f</f>
 
 [Luo Guanzhong - _The Romance Of The Three Kingdoms_](https://www.google.com/books/edition/The_Romance_of_the_Three_Kingdoms/hSJJDwAAQBAJ)
@@ -54,12 +44,6 @@ Joyce Carol Oates - [_them_](https://www.google.com/books/edition/Them/q7RY_V7oF
 <f>f</f>
 
 [Elmore Leonard - _Glitz_](https://www.google.com/books/edition/Glitz/ncvGPwUhNVQC)
-<f>f</f>
-
-Evelyn Waugh - [_Vile Bodies_](https://www.google.com/books/edition/VILE_BODIES/xQ7CEAAAQBAJ), [_The Loved One_](https://www.google.com/books/edition/The_Loved_One/QFmXDwAAQBAJ)
-<f>f</f>
-
-[Greg Egan - _Phoresis And Other Journeys_](https://www.google.com/books/edition/Phoresis_and_Other_Journeys/9He9EAAAQBAJ)
 <f>f</f>
 
 [_The Immortal King Rao_](https://www.google.com/books/edition/The_Immortal_King_Rao_A_Novel/mf1KEAAAQBAJ)
@@ -99,12 +83,6 @@ _[The Book Of The New Sun](https://www.google.com/books/edition/The_Book_of_the_
 _[The Fifth Head Of Cerberus](https://www.google.com/books/edition/The_Fifth_Head_of_Cerberus/zn40b5Sg7lUC)_
 <f>f</f>
 
-[George Eliot - _Middlemarch_](https://www.google.com/books/edition/Middlemarch/iPLjUhiXAhYC)
-<f>f</f>
-
-[John Cornwell et al - _Nature's Imagination_](https://www.google.com/books/edition/Nature_s_Imagination/L7vaAAAAMAAJ)
-<nf>nf</nf>
-
 [Kim Stanley Robinson - _The Ministry For The Future_](https://www.google.com/books/edition/The_Ministry_for_the_Future/dvHNDwAAQBAJ)
 <f>f</f>
 
@@ -137,6 +115,20 @@ _[The Long Mars](https://www.google.com/books/edition/_/B6PcAgAAQBAJ)_, etc.
 <f>f</f>
 
 <!--
+[John Cornwell et al - _Nature's Imagination_](https://www.google.com/books/edition/Nature_s_Imagination/L7vaAAAAMAAJ)
+<nf>nf</nf>
+
+[James Baldwin - _Giovanni's Room_](https://www.google.com/books/edition/Giovanni_s_Room/0OBAjgEACAAJ)
+<f>f</f>
+
+[Evelyn Waugh -_The Loved One_](https://www.google.com/books/edition/The_Loved_One/QFmXDwAAQBAJ)
+
+[Robert M. Sapolsky - _Determined_](https://www.google.com/books/edition/Determined/K3oQEQAAQBAJ)
+<nf>nf</nf>
+
+[Vajra Chandrasekera - _The Saint Of Bright Doors_](https://www.google.com/books/edition/The_Saint_of_Bright_Doors/xE-BEAAAQBAJ)
+<f>f</f>
+
 [Saul Griffith - _In Climate Emergency, Break Glass_](https://www.breakglassbook.com/)
 <nf>nf</nf>
 
@@ -179,6 +171,18 @@ _[The Long Mars](https://www.google.com/books/edition/_/B6PcAgAAQBAJ)_, etc.
 <a name="read"></a>
 **Books I've read**:
 
+[Daniel Suarez - _Delta V_](https://www.google.com/books/edition/Delta_v/7LJkDwAAQBAJ)
+<f>f</f>
+<ok><good>
+
+[Greg Egan - _Phoresis And Other Journeys_](https://www.google.com/books/edition/Phoresis_and_Other_Journeys/9He9EAAAQBAJ)
+<f>f</f>
+<bad>
+
+[Evelyn Waugh - _Vile Bodies_](https://www.google.com/books/edition/VILE_BODIES/xQ7CEAAAQBAJ)
+<f>f</f>
+<ok>
+
 Agatha Christie -
 [_And Then There Were None_](https://www.google.com/books/edition/And_Then_There_Were_None/VCZCBIEQwLgC)
 <f>f</f>
@@ -191,6 +195,10 @@ Agatha Christie -
 <good>
 
 [Joost van Dreunen - _One Up_](https://www.google.com/books/edition/One_Up/K7neDwAAQBAJ)
+<ok>
+
+[George Eliot - _Middlemarch_](https://www.google.com/books/edition/Middlemarch/iPLjUhiXAhYC)
+<nf>nf</nf>
 
 [Samuel Dickson - _San Francisco Is Your Home_](https://www.google.com/books/edition/San_Francisco_is_Your_Home/hwW8AAAAIAAJ)
 <nf>nf</nf>

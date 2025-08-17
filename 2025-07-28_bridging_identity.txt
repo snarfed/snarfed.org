@@ -2,7 +2,7 @@
 Bridging identity with account links
 
 <p class="right half">
-  <a href="https://commons.wikimedia.org/wiki/File:Funny_Kitten.jpg"><img class="shadow" src="/funny_kittens_wikimedia.jpg"></a>
+  <a href="https://commons.wikimedia.org/wiki/File:Funny_Kitten.jpg"><img class="shadow" src="/funny_kittens_wikimedia.jpg" alt="three kittens, one sticking its head up above the other two, with a big grin"></a>
 </p>
 
 One of the most common questions we get here is, "can you help me connect all my different accounts?" You're on Bluesky, and Instagram, and Mastodon, you make a video series on YouTube, you have a blog, sometimes you post on Reddit, and a while back you set up a Linktree to connect them all. Half of your accounts are inactive, the other half you copy and paste between all the time. At least once a day, you open a notification in one place, only to end up in a different place altogether, with no way to connect the two.
@@ -11,17 +11,25 @@ There must be a better way, right?
 
 We hope so! It's a big, gnarly, multi-faceted problem. We ran a session on it [at FediForum, back in June,](https://fediforum.org/2025-06/) and came away with a [great set of draft user stories and future directions](https://fediforum.org/2025-06/session/7-b/). Today, we want to focus on one technique we've been using in [Bridgy Fed](https://fed.brid.gy/) and [Bounce](https://blog.anew.social/bounce-a-cross-protocol-migration-tool/): _account links_.
 
+
+### One universal standard
+
 Often, when people think about consolidating their identities online, they think top-down. If the problem is too many different accounts, one obvious solution is to make a new, meta account that knows them all and connects them all together, right?
 
-It's a good thought! FriendFeed, Plaxo, Linktree, HootSuite, and countless other [social network aggregators](https://en.wikipedia.org/wiki/Social_network_aggregation) have taken a swing at it over the years, many still to this day. The catch is, this just crowns a new central authority, with control over all of your accounts. It might work, but here in the open social web, we tend to prefer things less centralized. With apologies to [David Clark](https://en.wikiquote.org/wiki/David_D._Clark#Sourced) and the [IETF](https://www.ietf.org/): _We reject kings, presidents, and voting. We believe in rough consensus and running code._
+It's a good thought! FriendFeed, Plaxo, Linktree, HootSuite, and countless other [social network aggregators](https://en.wikipedia.org/wiki/Social_network_aggregation) have taken a swing at it over the years. The catch is, this just crowns a new central authority, with control over all of your accounts. It might work, but here in the open social web, we tend to prefer things less centralized. With apologies to [David Clark](https://en.wikiquote.org/wiki/David_D._Clark#Sourced) and the [IETF](https://www.ietf.org/): _We reject kings, presidents, and voting. We believe in rough consensus and running code._
 
 <p class="left half">
-  <a href="https://xkcd.com/927/"><img class="shadow" src="https://imgs.xkcd.com/comics/standards.png"></a>
+  <a href="https://xkcd.com/927/"><img class="shadow" src="https://imgs.xkcd.com/comics/standards.png" alt="XKCD comic: Standards"></a>
 </p>
 
-The natural next step is to take this meta account service and turn it into an open standard. A noble, worthy idea! WebFinger, DIDs, OpenID, PGP keyservers, and many others had the same idea. Enter [XKCD 927](https://xkcd.com/927/).
+The natural next step is to take this meta account service and turn it into an open standard. A noble, worthy idea! WebFinger, DIDs, OpenID, PGP keyservers, and many others thought so too. Enter [XKCD 927](https://xkcd.com/927/).
 
-So if thinking top down can lead to over-centralization and over-standardization, we wondered about the other direction. What's the smallest thing we could do, bottom up, without introducing another central authority or standard? We immediately thought of profile links. Many social networks let you include links in your profile: your web site, Linktree, Patreon, etc. These are aimed at human users, but we knew that there were machine-readable corollaries: places in each account's underlying data where they can _link to other accounts_, on other networks. The web has [`rel=me`](https://microformats.org/wiki/rel-me), the fediverse has [`alsoKnownAs`](https://www.w3.org/ns/activitystreams#did-core), Bluesky also uses [`alsoKnownAs`](https://www.w3.org/TR/did-1.0/#dfn-alsoknownas) (also check out their 2022 [Satellite contest](https://web.archive.org/web/20220319151052/https://blueskyweb.org/blog/satellite)), and Nostr has [NIP-39](https://nips.nostr.com/39). (We're not sure about Farcaster yet. If you know how, [please let us know](mailto:letsbuild@anew.social)!)
+So if thinking top down can lead to over-centralization and over-standardization, we wondered about the other direction. What's the smallest thing we could do, bottom up, without introducing another central authority or standard?
+
+
+### Account links
+
+We immediately thought of profile links. Many social networks let you include links in your profile: your web site, Linktree, Patreon, etc. These are aimed at human users, but we knew that there were machine-readable corollaries: places in each account's underlying data where they can _link to other accounts_, on other networks. The web has [`rel=me`](https://microformats.org/wiki/rel-me), the fediverse has [`alsoKnownAs`](https://www.w3.org/ns/activitystreams#did-core), Bluesky also uses [`alsoKnownAs`](https://www.w3.org/TR/did-1.0/#dfn-alsoknownas) (also check out their 2022 [Satellite contest](https://web.archive.org/web/20220319151052/https://blueskyweb.org/blog/satellite)), and Nostr has [NIP-39](https://nips.nostr.com/39).
 
 Let's look at an example. [Anuj](https://quillmatiq.com/) is [@quillmatiq@pixelfed.social](https://pixelfed.social/quillmatiq) on Pixelfed. That account is [bridged to Bluesky](https://bsky.app/profile/quillmatiq.pixelfed.social.ap.brid.gy) by Bridgy Fed, which _publishes an account link_ back to the Pixelfed account [in the Bluesky account's DID document](https://web.plc.directory/did/did:plc:3qp6hiiqwuzasese2vtex6xl), via `alsoKnownAs`:
 
@@ -32,9 +40,9 @@ Let's look at an example. [Anuj](https://quillmatiq.com/) is [@quillmatiq@pixelf
   ]
 ```
 
-The second element there, <code>https://pixelfed.social/users/quillmatiq</code>, is the Pixelfed account's ActivityPub actor id. Any Bluesky client or app can read this DID document, fetch <code>https://pixelfed.social/users/quillmatiq</code>, see that it has a `link rel=alternate type=application/activity+json`, and use that to find and show the Pixelfed account. Here's an example mockup based on bsky.app; note the Pixelfed logo and linked handle.
+The second element there, <code>https://pixelfed.social/users/quillmatiq</code>, is the Pixelfed account's ActivityPub actor id. Any Bluesky client or app can read this DID document, fetch <code>https://pixelfed.social/users/quillmatiq</code>, see that it has a `link rel=alternate type=application/activity+json`, and use that to find and show the Pixelfed account. Here's an example mockup based on [bsky.app](https://bsky.app/); note the Pixelfed logo and linked handle.
 
-<a href="/bsky-pixelfed-quillmatiq-link.png"><img class="shadow" src="/bsky-pixelfed-quillmatiq-link.png"></a>
+<a href="/bsky-pixelfed-quillmatiq-link.png"><img class="shadow" src="/bsky-pixelfed-quillmatiq-link.png" alt="Anuj Ahooja's Bluesky profile. A link to his Pixelfed account has been edited in"></a>
 
 This works in both directions. [Anuj's Bluesky account](https://bsky.app/profile/quillmatiq.com) is bridged to the fediverse, and [its bridged ActivityPub actor](https://browser.pub/@quillmatiq.com@bsky.brid.gy) includes this:
 
@@ -46,9 +54,12 @@ Fediverse clients and apps can fetch [that DID document](https://web.plc.directo
 
 <!-- <a href="/mastodon-bsky-quillmatiq-orig.png"> -->
 <!--   <img class="shadow half-sidebyside" src="/mastodon-bsky-quillmatiq-orig.png"></a> -->
-<a href="/mastodon-bsky-quillmatiq-link.png"><img class="shadow" src="/mastodon-bsky-quillmatiq-link.png"></a>
+<a href="/mastodon-bsky-quillmatiq-link.png"><img class="shadow" src="/mastodon-bsky-quillmatiq-link.png" alt="Anuj Ahooja's Mastodon profile. A link to his Bluesky account has been edited in"></a>
 
-The other useful thing to do with these account links is bidirectional verification. Anyone can _claim_ that they're a given account; you only want to trust them if that account agrees. Platforms can support this by publishing links in both directions, from each account to the other. Clients can then verify by loading both accounts and check each one's account links.
+
+### Bidirectional verification
+
+The other useful thing to do with these account links is bidirectional verification. Anyone can _claim_ that they're a given account; you only want to trust them if that other account agrees. Platforms can support this by publishing links in both directions, from each account to the other. Clients can then verify by loading both accounts and checking both links.
 
 For example, this web site, [`snarfed.org`](https://snarfed.org/), is bridged into the fediverse as ActivityPub actor <code><a href="https://browser.pub/https://fed.brid.gy/snarfed.org">https://fed.brid.gy/snarfed.org</a></code>. Bridgy Fed includes this site's home page in that actor's `alsoKnownAs`:
 
@@ -65,15 +76,30 @@ In return, [this site's home page](https://snarfed.org/) links back to that acto
 When clients see my fediverse account, they can fetch the `alsoKnownAs` URL, look for the `rel="me"` link, see that it points back to the actor, and confirm that this site and that fediverse account are legitimately the same person. Likewise, if they start from this web site, they can follow the `rel="me"` link and do the same check.
 
 <p>
-<a href="/mastodon-rel-me-checks-gargron.png"><img class="shadow half right" src="/mastodon-rel-me-checks-gargron.png"></a>
+<a href="/mastodon-rel-me-checks-gargron.png"><img class="shadow half right" src="/mastodon-rel-me-checks-gargron.png" alt="Eugen Rochko's Mastodon profile, with green verified links to his web site and GitHub profile"></a>
 </p>
 
 Mastodon already does this! If you add a profile link to your web site, and then link from your site back to Mastodon with `rel="me"`, [Mastodon shows that link with a green check](https://docs.joinmastodon.org/user/profile/#verification). Account links in the wild! We love to see it.
 
-Mastodon and Pixelfed users can even set their own account links. The user-facing term for these in the fediverse is _aliases_; here are the [Mastodon docs](https://docs.joinmastodon.org/user/moving/#aliases) and [Pixelfed GitHub discussion](https://github.com/pixelfed/pixelfed/discussions/4661) for how to set them. Bluesky's [bsky.app](https://bsky.app/) client doesn't have a way for users add aliases to their DID docs yet, but it's straightforward for any Bluesky client developer to add.
+Mastodon and Pixelfed users can even set their own account links. The fediverse's term for these is _aliases_; here's how to set them [in Mastodon](https://docs.joinmastodon.org/user/moving/#aliases) [and Pixelfed](https://github.com/pixelfed/pixelfed/discussions/4661). Bluesky's [bsky.app](https://bsky.app/) client doesn't have a way for users add aliases to their DID docs yet, but it's straightforward for any Bluesky client developer to add.
 
-There's lots more to talk about here. [You can connect posts across networks with post links](https://fed.brid.gy/docs#identify-bridged-post) just like account links. Multi-protocol clients can use account and post links to automatically show the native versions of every account and post, regardless of where they came from. You could use account links to build an identity aggregator that detects and sets up all of your accounts for you. And so on.
 
-For now, we propose account links as one modest, bottom-up starting point for connecting our myriad identities online. They don't solve all problems. They're not a grand vision. But they do help the open social web say, hey, this person here? They're also that one over there. And they help apps surface those connections to users. We think that's useful.
+### Next steps
+
+There's lots more to talk about. [There are post links too, which you can use to connect posts across networks](https://fed.brid.gy/docs#identify-bridged-post). Multi-protocol clients can use these links to show every account and post natively, regardless of where it first came from. You could use account links to build an identity aggregator that detects and sets up all of your accounts for you. And so on.
+
+There's also more work here for the ecosystem to do. Account and post links aren't supported in all networks yet. Bluesky doesn't have a standard field for post links; Farcaster doesn't seem to support either kind. Also, some networks lack a way to specify the "canonical" (ie native) version of an account or post.
+
+Regardless, for now, we propose account links as one modest, bottom-up starting point for connecting our myriad identities online. They don't solve all problems. They're not a grand vision. But they do help the open social web say, hey, this person here? They're also that one over there. And they help apps surface those connections to users. We think that's useful.
 
 If you're a developer, and this piques your interest, [check out the Bridgy Fed docs for more details](https://fed.brid.gy/docs#api), and [feel free to reach out to us](mailto:letsbuild@anew.social), we'd love to work with you!
+
+Specifically, if you work on a social web platform, client, or bridge, here are our recommendations:
+
+* When you see a new account, check whether it has any account links. If it does, show those links to the user.
+  * Bonus: include the logo for each linked account's network.
+  * Bonus: fetch the linked account(s) and check that they have link(s) back. Include user-visible indicators on the links that verify.
+* Do the same for posts and post links.
+* Let your users set their own account links (aka aliases).
+* If you cross-post or bridge, set account and post links automatically.
+* If an account or post specifies its canonical version, prefer to fetch and render that version, since it will usually have the highest fidelity.
