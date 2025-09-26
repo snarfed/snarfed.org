@@ -1,0 +1,22 @@
+55391
+
+
+Hi everyone! It's been a few months [since last time](https://snarfed.org/2025-06-10_54995), so let's dive into another status update. The big new projects and features we've been working on are elsewhere or still baking, so it's mostly smaller additions and bug fixes, but there's still plenty of good stuff.
+
+* On the fediverse, [we now try to deliver replies to all upstream authors in the thread](https://github.com/snarfed/bridgy-fed/issues/1608). This is complicated, and varies by ActivityPub implementation, but we now more closely match common inbox delivery and notification conventions, so fediverse users should now see and get notified of bridged replies more often.
+* [Hopefully fixed a persistent issue where replies, likes, reposts, and quotes sometimes wouldn't get bridged to Bluesky if they post they depended on hadn't finished bridging yet.](https://github.com/snarfed/bridgy-fed/issues/1361) Another complicated one, still keeping an eye on it for now.
+* Web UI on fed.brid.gy:
+  * Made login UX [more](https://github.com/snarfed/bridgy-fed/issues/1958) [forgiving](https://github.com/snarfed/bridgy-fed/issues/1957)
+  * We now [refresh profiles on login](https://github.com/snarfed/bridgy-fed/issues/1965)
+  * [Improved OAuth compatibility with more old versions of Mastodon](https://github.com/snarfed/bridgy-fed/issues/1944)
+  * [Fixed a bug in the activity logs on user pages](https://github.com/snarfed/bridgy-fed/issues/1937)
+  * [Fixed a bug with follower/following counts on networks where the user is no longer bridged](https://github.com/snarfed/bridgy-fed/issues/1966)
+* Added support for fediverse admins to [opt in users at the instance level](https://github.com/snarfed/bridgy-fed/issues/1305), including automatic custom Bluesky handles. [More details](https://mastodon.social/@quillmatiq/114717857790559268).
+* For fediverse developers: [added FEP-ffd proxy links to ActivityPub objects](https://github.com/snarfed/bridgy-fed/issues/543). [More background.](https://blog.anew.social/bridging-identity-with-account-links/)
+* [Made ATProto custom domain handles more case-insensitive](https://github.com/snarfed/bridgy-fed/issues/1974)
+* ActivityPub: [after `Delete`, `Create` or `Update` now undeletes](https://github.com/snarfed/bridgy-fed/issues/1961)
+* [Fixed Misskey and Sharkey interop for users with pinned posts](https://github.com/snarfed/bridgy-fed/issues/1985)
+* [Improved GoToSocial interop](https://github.com/snarfed/bridgy-fed/issues/1033#issuecomment-3035605572) ([thanks GtS!](https://codeberg.org/superseriousbusiness/gotosocial/pulls/3928))
+* [Improved error messages for DM invitations](https://github.com/snarfed/bridgy-fed/issues/1975)
+
+As usual, feel free to ping us with feedback, questions, and [bug reports](https://github.com/snarfed/bridgy-fed/issues), and [please support us on Patreon](https://www.patreon.com/c/ANewSocial)! You can follow the [_now_ label on GitHub](https://github.com/snarfed/bridgy-fed/issues?q=is%3Aopen+is%3Aissue+label%3Anow) to see what we're currently focusing on. See you on the bridge!

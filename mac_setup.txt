@@ -98,3 +98,8 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
   * `M-x package-list-packages`, install `dash-at-point ess git-link go-mode helm helm-comint lua-mode markdown-mode php-mode rainbow-delimiters rainbow-identifiers yaml-mode`
 * Run `ctags` on all repos in `~/src`.
 * `touch ~/s/blogpost.last`
+* If [scrolling eventually gets slow in many apps](https://www.reddit.com/r/MacOS/comments/1no872w/psa_macos_26_bug_leads_to_performance_issues_in/), eg Emacs, run this (just once):
+  ```
+  defaults write -g NSAutoFillHeuristicControllerEnabled -bool false
+  defaults delete -g NSAutoFillHeuristicControllerEnabled
+  ```
