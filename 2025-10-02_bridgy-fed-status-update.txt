@@ -1,0 +1,23 @@
+55855
+
+
+Hi everyone! We've been working on a few big projects [since our last status update](https://snarfed.org/2025-08-16_55391), but we've also made progess on smaller improvements and bug fixes for Bounce and Bridgy Fed. Here are the noticeable Bridgy Fed changes since last time.
+
+* [When a bridged user receives a DM, reply and say "DMs aren't bridged"](https://github.com/snarfed/bridgy-fed/issues/2039)
+* [Handle dependent activities that arrive in the wrong order, eg delete before create](https://github.com/snarfed/bridgy-fed/issues/1361)
+* [Rate limit activities per user.](https://github.com/snarfed/bridgy-fed/issues/1788) We still bridge everything, we just slow down users individually if they do too much too fast.
+* [Accept DIDs as well as handles in DM commands](https://github.com/snarfed/bridgy-fed/issues/1979) (thanks [@tesaguri](https://github.com/tesaguri)!)
+* [Revised "bridged by ..." profile bio footer to say how to bridge yourself](https://github.com/snarfed/bridgy-fed/issues/1903)
+* [Interop fix for unfollows from Smithereen](https://github.com/snarfed/bridgy-fed/issues/2048)
+* [Interop fix for unusually shaped Delete activities from Mastodon](https://github.com/snarfed/bridgy-fed/issues/2065)
+* [Bug fix for sending webmentions for quote posts](https://github.com/snarfed/bridgy-fed/issues/2045)
+* [Bug fix for resolving handles and logging in with `did:web`s](https://github.com/snarfed/bridgy-fed/issues/2055)
+* [Bug fix for implied quote posts with unusual bsky.app links](https://github.com/snarfed/bridgy-fed/issues/2064)
+* [Bug fix for sending invite prompts to ineligible users](https://github.com/snarfed/bridgy-fed/issues/2082)
+* [Bug fix for unblocking users via DM when multiple block records exist for them](https://github.com/snarfed/bridgy-fed/issues/2073)
+* [Bug fix for deleting replies when their in-reply-to post is already deleted](https://github.com/snarfed/bridgy-fed/issues/2099)
+* [Bug fix for bridging profile updates from Bluesky](https://github.com/snarfed/bridgy-fed/issues/2050)
+* [Bug fix for posts with links to invalid URLs](https://github.com/snarfed/bridgy-fed/issues/2059)
+* [Fix rare bug that occasionally broke new web and Bluesky users signing up](https://github.com/snarfed/bridgy-fed/issues/1881)
+
+As usual, feel free to ping us with feedback, questions, and [bug reports](https://github.com/snarfed/bridgy-fed/issues), and [please support us on Patreon](https://www.patreon.com/c/ANewSocial)! You can follow the [_now_ label on GitHub](https://github.com/snarfed/bridgy-fed/issues?q=is%3Aopen+is%3Aissue+label%3Anow) to see what we're currently focusing on. See you on the bridge!
