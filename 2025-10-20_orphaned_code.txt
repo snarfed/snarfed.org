@@ -1,0 +1,15 @@
+56013
+
+Lately I've been thinking about orphaned code. Code that's still running, live, with no remaining developers or users.
+
+Forgotten hardware devices. Deserted VMs on cloud free tiers. Smart contracts whose DAOs disbanded years ago. Old school internet worms. Abandoned, starving Tamagotchi.
+
+Can you think of other examples?
+
+There are obvious conclusions here about maintainability, ecosystem security, etc, but I'm not here to lecture, I have no particular conclusions. Just a vibe.
+
+<p class="captioned">
+  <a href="/wall-e.png">
+    <img class="shadow u-photo" src="/wall-e.png" alt="WALL-E, among piles of trash" /></a>
+  <a href="https://en.wikipedia.org/wiki/WALL-E">WALL·E</a>
+</p>
