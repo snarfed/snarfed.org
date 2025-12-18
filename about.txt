@@ -8,19 +8,19 @@ about
 <p class="about-links">
 <a href="https://fed.brid.gy/web/snarfed.org" title="Fediverse" class="mastodon-link">
   <span style="margin-bottom: -3px;"></span>
-  @snarfed.org<!-- @snarfed.org -->
+  <span class="text">@snarfed.org</span>
 </a><br>
 <a href="https://bsky.app/profile/snarfed.org" title="Bluesky" class="bluesky-link">
   <span style="margin-bottom: -3px;"></span>
-  snarfed.org
+  <span class="text">snarfed.org</span>
 </a><br>
 <a href="https://github.com/snarfed" title="GitHub">
   <span class="genericon genericon-github"></span>
-  snarfed
+  <span class="text">snarfed</span>
 </a><br>
 <a href="mailto:snarfed at ryanb dot org" title="email">
   <span class="genericon genericon-mail" style="vertical-align: text-bottom"></span>
-  snarfed&#64;ryanb&#46;org
+  <span class="text">snarfed&#64;ryanb&#46;org</span>
 </a>
 </p>
 
