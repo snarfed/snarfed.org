@@ -1,7 +1,7 @@
 55855
 
 
-Hi everyone! We've been working on a few big projects [since our last status update](https://snarfed.org/2025-08-16_55391), but we've also made progess on smaller improvements and bug fixes for Bounce and Bridgy Fed. Here are the noticeable Bridgy Fed changes since last time.
+Hi everyone! We've been working on a few big projects [since our last status update](/2025-08-16_55391), but we've also made progess on smaller improvements and bug fixes for Bounce and Bridgy Fed. Here are the noticeable Bridgy Fed changes since last time.
 
 * [When a bridged user receives a DM, reply and say "DMs aren't bridged"](https://github.com/snarfed/bridgy-fed/issues/2039)
 * [Handle dependent activities that arrive in the wrong order, eg delete before create](https://github.com/snarfed/bridgy-fed/issues/1361)
