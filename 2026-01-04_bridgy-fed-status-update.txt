@@ -1,0 +1,50 @@
+56304
+
+Happy New Year! Hope you all had a good holiday. It's shaping up to be a great year on the open social web!
+
+We've been busy working on new features, internal improvements, bug fixes, and exploring new networks over the last couple months. Here are the noticeable changes on the bridge [since our last update](/2025-10-01_55855):
+
+* [DM notifications for interactions from non-bridged users](https://blog.anew.social/new-blocking-features-on-bridgy-fed/) ([more](https://github.com/snarfed/bridgy-fed/issues/1200))
+* [Mastodon to Bluesky support in Bounce](https://blog.anew.social/bounce-mastodon-to-bluesky/) ([more](https://blog.anew.social/bounce-beta-now-live-2/))
+* [Expand blocking](https://blog.anew.social/new-blocking-features-on-bridgy-fed/) to [Bluesky blocklists](https://github.com/snarfed/bridgy-fed/issues/1632), [multiple at once](https://github.com/snarfed/bridgy-fed/issues/2105), [web UI](https://github.com/snarfed/bridgy-fed/issues/2199), [and more](https://github.com/snarfed/bridgy-fed/issues/2194)...
+* [Support setting Bluesky handle back to the default `*.ap.brid.gy`](https://github.com/snarfed/bridgy-fed/issues/2248) ([more](https://github.com/snarfed/bridgy-fed/issues/2273))
+* [More support for fediverse => Bluesky pinned posts](https://github.com/snarfed/bridgy-fed/issues/2102)
+* Make images/videos on Bluesky more reliable:
+  * [Refresh them periodically](https://github.com/snarfed/bridgy-fed/issues/1650#issuecomment-3315502762)
+  * [Handle the same file at multiple URLs](https://github.com/snarfed/bridgy-fed/issues/1650)
+  * [Upgraded to a paid CloudImage account for proxying Threads images/videos](https://github.com/snarfed/bridgy-fed/issues/2118)
+* [Customize Bluesky labels based on keywords in fediverse content warning](https://github.com/snarfed/bridgy-fed/issues/2270) (thanks [@KDederichs](https://github.com/KDederichs)!)
+* [Improve GoToSocial compatibility](https://github.com/snarfed/bridgy-fed/issues/2266)
+* [Bridge Web Monetization wallet addresses](https://github.com/snarfed/bridgy-fed/issues/2098)
+* [For Bluesky profiles bridged to the fediverse, make the link back to Bluesky "verified" (green check) in Mastodon](https://github.com/snarfed/bridgy-fed/issues/2186)
+* [Add support for new (invisible) `website` field in Bluesky profiles](https://github.com/snarfed/bridgy-fed/issues/2187)
+* [Web UI: improve handling of IDNs (domain names with emoji) and punycode](https://github.com/snarfed/bridgy-fed/issues/2222)
+* [RSS feeds: support `application/rdf+xml`](https://github.com/snarfed/bridgy-fed/issues/2255)
+* [Web UI: reload profile on login](https://github.com/snarfed/bridgy-fed/issues/2151)
+
+Bug fixes:
+
+* [...for race condition on writing to Bluesky repos](https://github.com/snarfed/bridgy-fed/issues/2089)
+* [...for bridging Bluesky handle changes to fediverse Webfinger address](https://github.com/snarfed/bridgy-fed/issues/2207)
+* [...for bridging web posts, replies, etc after we've already seen them](https://github.com/snarfed/bridgy-fed/issues/1835)
+* [...for deleting bridged fediverse profiles on some servers](https://github.com/snarfed/bridgy-fed/issues/2235)
+* [...for bridging Bluesky profile pictures to the fediverse](https://github.com/snarfed/bridgy-fed/issues/2241)
+* [...for links in post text](https://github.com/snarfed/bridgy-fed/issues/2252)
+* [When there's an unbridged dependency, only skip that one protocol, not all](https://github.com/snarfed/bridgy-fed/issues/2113)
+* [Add missing `PropertyValue` in AS2 `@context`](https://github.com/snarfed/bridgy-fed/issues/1782)
+* [...for duplicated images in posts bridged to Bluesky](https://github.com/snarfed/bridgy-fed/issues/2265)
+
+Internal:
+
+* Bluesky:
+  * [Reliability improvements for firehose server/client](https://github.com/snarfed/bridgy-fed/issues/2150)
+  * [Scale past ~10qps bottleneck in allocating sequence numbers](https://github.com/snarfed/arroba/issues/69) ([more](https://github.com/snarfed/bridgy-fed/issues/2232))
+  * [implement `listBlobs`](https://github.com/snarfed/arroba/issues/64)
+* [Expand continuous deploy flags](https://github.com/snarfed/bridgy-fed/issues/2105)
+* Cut hosting costs by 40-50% with various optimizations:
+
+<a href="/bridgy_fed_costs_2026_01.png">
+ <img class="u-photo shadow" src="/bridgy_fed_costs_2026_01.png">
+</a>
+
+As usual, feel free to ping us with feedback, questions, and [bug reports](https://github.com/snarfed/bridgy-fed/issues), and [please support us on Patreon](https://www.patreon.com/c/ANewSocial)! You can follow the [_now_ label on GitHub](https://github.com/snarfed/bridgy-fed/issues?q=is%3Aopen+is%3Aissue+label%3Anow) to see what we're currently focusing on. See you on the bridge!
