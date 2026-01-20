@@ -41,7 +41,7 @@ Internal:
   * [Scale past ~10qps bottleneck in allocating sequence numbers](https://github.com/snarfed/arroba/issues/69) ([more](https://github.com/snarfed/bridgy-fed/issues/2232))
   * [implement `listBlobs`](https://github.com/snarfed/arroba/issues/64)
 * [Expand continuous deploy flags](https://github.com/snarfed/bridgy-fed/issues/2105)
-* Cut hosting costs by 40-50% with various optimizations:
+* Various cost optimizations added up to savings of 40-50%:
 
 <a href="/bridgy_fed_costs_2026_01.png">
  <img class="u-photo shadow" src="/bridgy_fed_costs_2026_01.png">
