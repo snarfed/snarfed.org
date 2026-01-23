@@ -49,7 +49,7 @@ Helped grow team to 30 software engineers and data scientists. Led bioinformatic
 
 <!-- Led engineering for Color's partnership with the NIH's [All of Us program](https://www.joinallofus.org/) to deliver full clinical genetics for 1M participants. -->
 
-Led data platform and data science teams. Built internal analytics stack and multi-billion-row data warehouse that does [GWAS studies](https://en.wikipedia.org/wiki/Genome-wide_association_study) and [polygenic scores](https://en.wikipedia.org/wiki/Polygenic_score) in minutes. Created [Color Data](https://data.color.com/) ([blog post](https://blog.color.com/building-a-public-research-database-out-of-spare-parts-1fd8f996b733)), a large interactive public research dataset.
+Led data platform and data science teams. Built internal analytics stack and multi-billion-row data warehouse that does [GWAS studies](https://en.wikipedia.org/wiki/Genome-wide_association_study) and [polygenic scores](https://en.wikipedia.org/wiki/Polygenic_score) in minutes. Created [Color Data](https://blog.color.com/building-a-public-research-database-out-of-spare-parts-1fd8f996b733), a large interactive public research dataset.
 
 Implemented much of the bioinformatics pipeline. [Sped up development cycle from 12-24h to ~2m](https://blog.color.com/engineering-bioinformatics-in-seconds-not-hours-b17af684f682).
 
