@@ -34,7 +34,7 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 [- George Box](https://en.wikipedia.org/wiki/All_models_are_wrong)
 <!-- NCXed, by Nathan -->
 
-> Open source is a gift
+> Open source is a gift.
 
 [- François Zaninotto](https://www.redotheweb.com/2011/11/13/open-source-is-a-gift.html)
 
@@ -315,6 +315,10 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > A cryptosystem should be secure even if everything about the system, except the key, is public knowledge.
 
 [- Kerckhoffs's principle](https://en.wikipedia.org/wiki/Kerckhoffs%27s_principle)
+
+> Cryptography turns data security problems into key management problems.
+
+\- Unknown; [via Moxie Marlinspike](https://confer.to/blog/2025/12/passkey-encryption/)
 
 > All code you haven’t tested is wrong. All code you have tested is also wrong, but appears to work by coincidence. And code you’ve proven correct does the wrong thing, correctly.
 
@@ -695,7 +699,7 @@ availability | downtime, per year | cost
 
 > Debugging is like being the detective in a crime movie where you are also the murderer.
 
-\- Filipe Fortes
+[- Filipe Fortes](https://x.com/fortes/status/399339918213652480)
 
 > You don't pay engineers to write code, you pay them to understand problems, subtleties, and edges. The code is incidental.
 

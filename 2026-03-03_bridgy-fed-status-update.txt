@@ -1,0 +1,21 @@
+56661
+
+Hi everyone! Here's your semi-regular Bridgy Fed status update. We've been busy [since last time](/2026-01-04_56304)!
+
+The two big new features we launched were [domain blocklists](https://blog.anew.social/launch-domain-blocklists/) ([GitHub](https://github.com/snarfed/bridgy-fed/issues/2194)) and [responding to unbridged users](https://blog.anew.social/launch-interact-with-unbridged-replies-mentions/) ([GitHub](https://github.com/snarfed/bridgy-fed/issues/2042)). We've seen good feedback and usage on both, especially responding to unbridged users. Please keep the feedback coming!
+
+We also significantly improved bridging speed, especially to Bluesky. For a couple months, it slowed down to an average delay of 3-5 minutes, with outliers that took so long that we occasionally dropped them entirely. Not good. [We worked hard to optimize](https://github.com/snarfed/arroba/issues/74) and managed to cut that average delay down to just 5-10 seconds, which feels way better.
+
+We shipped a bunch of smaller stuff too:
+
+* Bluesky [standard.site](https://standard.site/) [support](https://github.com/snarfed/bridgy-fed/issues/2324) (still rolling out)
+* [Improve pinned posts](https://github.com/snarfed/bridgy-fed/issues/2136), notably when they were pinned before a user enabled the bridge
+* [Fediverse: use Article `preview` field](https://github.com/snarfed/bridgy-fed/issues/2091)
+* [Web UI: add buttons to unblock domain blocklists in settings](https://github.com/snarfed/bridgy-fed/issues/2284)
+* [Web UI: bug fix for raw HTML appearing in some warning messages](https://github.com/snarfed/bridgy-fed/issues/2296)
+* [bug fix for linking @-mentions of unbridged fediverse users](https://github.com/snarfed/bridgy-fed/issues/2338)
+* [bug fix for Webfinger XRD output](https://github.com/snarfed/bridgy-fed/issues/2316)
+* [Misc](https://github.com/snarfed/bridgy-fed/issues/2327) [reliability](https://github.com/snarfed/bridgy-fed/issues/2367) [improvements](https://github.com/snarfed/arroba/issues/75) to our ATProto firehose server and client
+* [Unfollowed everyone from the @ap.brid.gy Bluesky bot account](https://github.com/snarfed/bridgy-fed/issues/2060). Its large number of follows (65k+) had unintentionally landed it on a handful of "follows too many people" automated blocklists.
+
+As usual, feel free to ping us with feedback, questions, and [bug reports](https://github.com/snarfed/bridgy-fed/issues), and [please support us on Patreon](https://www.patreon.com/c/ANewSocial)! You can follow the [_now_ label on GitHub](https://github.com/snarfed/bridgy-fed/issues?q=is%3Aopen+is%3Aissue+label%3Anow) to see what we're currently focusing on. See you on the bridge!
