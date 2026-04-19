@@ -318,7 +318,7 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 
 > Cryptography turns data security problems into key management problems.
 
-\- Unknown; [via Moxie Marlinspike](https://confer.to/blog/2025/12/passkey-encryption/)
+\- Bruce Schneier, [via Moxie Marlinspike](https://confer.to/blog/2025/12/passkey-encryption/)
 
 > All code you haven’t tested is wrong. All code you have tested is also wrong, but appears to work by coincidence. And code you’ve proven correct does the wrong thing, correctly.
 
@@ -1134,6 +1134,10 @@ Corollaries:
 > Object oriented programming makes code understandable by encapsulating moving parts. Functional programming makes code understandable by minimizing moving parts.
 
 [- John D. Cook](https://www.johndcook.com/blog/2010/11/03/object-oriented-vs-functional-programming/)
+
+> Technology is neither good nor bad; nor is it neutral.
+
+[- Melvin Kranzberg](https://maa1.medium.com/kranzbergs-six-laws-of-technology-faff3931b623)
 
 <!--
 https://en.wikiquote.org/wiki/Computer_science
