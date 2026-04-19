@@ -15,7 +15,7 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
   * Download SSH keys from 1Password, unzip them into `~/.ssh`.
 * `ssh-add`
 * `sudo xcode-select --install`
-* `mkdir -p ~/src; cd ~/src; git clone git@github.com:snarfed/dotfiles; git clone git@github.com:snarfed/misc`
+* `mkdir -p ~/src; cd ~/src; git clone git@github.com:snarfed/dotfiles; git clone git@github.com:snarfed/misc; git clone git@github.com:snarfed/fillcode`
 * `cd; echo .cshrc .emacs .git_excludes .gitconfig .hgrc .inputrc .pypirc .python .sqliterc .subversion .wgetrc | xargs -n 1 -I %% ln -s src/dotfiles/%%`
 * `chsh`
 * `mkdir -p ~/.hammerspoon; cd ~/.hammerspoon; ln -s ~/src/dotfiles/hammerspoon.lua init.lua`
@@ -33,7 +33,7 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
 * `brew install awscli azure-cli bash blueutil colordiff coreutils ffmpeg git gnupg go google-cloud-sdk httpd imagemagick java jq librsvg lunar mpg123 node oauth2l openjdk openssl pandoc php pinentry-mac pstree pwgen pyright python rename telnet universal-ctags yt-dlp wdiff wget wp-cli`
   * `/Applications/Lunar.app/Contents/MacOS/Lunar install-cli`
 * `brew install --cask dehesselle-meld`
-* `brew tap railwaycat/emacsmacport && brew install emacs-mac --with-emacs-sexy-icon --with-librsvg --with-mac-metal --with-native-compilation --with-starter`  
+* `brew tap railwaycat/emacsmacport && brew install emacs-mac --with-emacs-sexy-icon --with-librsvg --with-mac-metal --with-native-compilation --with-starter && open $(brew --prefix)/opt/emacs-mac/Emacs.app`  
   (I used Homebrew's cask of [emacsformacosx.com](https://emacsformacosx.com/) for a long time, but it suddenly got unusably slow when I upgraded to Emacs 29.1. Switching to `emacs-mac` and `--with-native-compilation` fixed that.)
 * Set up GnuPG:
   * `mkdir -p ~/.gnupg; cd ~/.gnupg; ln -s ~/src/dotfiles/gpg.conf ; ln -s ~/src/dotfiles/gpg-agent.conf`
@@ -69,9 +69,10 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
   * Notifications -> disable _Badge app icon_ for all apps
   * Users => add Karabiner Elements to login items
 * [Install WhatsApp.](https://www.whatsapp.com/download/) Log in.
+* [Install Signal.](https://signal.org/download/) Log in.
 * [Install Slack.](https://slack.com/download) Log in.
 * [Install Dash.](https://kapeli.com/dash)
-  * Copy `~/etc/dash.5.license` to `~/license.dash-license` - Dash requires that exact filename - then load it in preferences.
+  * In Preferences => Purchase, enter `dash@ryanb.org` as the email address, then click on the link they send.
 * [Install Google Drive](https://www.google.com/drive/download/).
   * Make sure I have everything I need off the old computer's backup in Drive, then delete it.
   * Add folders to sync to Drive: `bin books camera_extra docs etc gallery src/snarfed.org`. Uncheck the rest.
@@ -96,7 +97,7 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
   `%admin		ALL = (ALL) NOPASSWD: ALL`
 * `npm install -g @zed-industries/claude-code-acp`
 * In Emacs:
-  * `M-x package-list-packages`, install `agent-shell dash-at-point ess git-link go-mode helm helm-comint helm-lsp lsp-mode lsp-pyright lua-mode markdown-mode php-mode rainbow-delimiters rainbow-identifiers yaml-mode`
+  * `M-x package-list-packages`, install `apache-mode apel dash-at-point dockerfile-mode editorconfig git-link go-mode helm-comint helm-git-grep lsp-pyright lua-mode magit nginx-mode php-mode popup python-mode rainbow-delimiters rainbow-identifiers request sass-mode typescript-mode yaml-mode`
 * Run `ctags` on all repos in `~/src`.
 * `touch ~/s/blogpost.last`
 * If [scrolling eventually gets slow in many apps](https://www.reddit.com/r/MacOS/comments/1no872w/psa_macos_26_bug_leads_to_performance_issues_in/), eg Emacs, run this (just once):
