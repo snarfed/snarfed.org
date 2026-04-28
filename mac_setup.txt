@@ -67,7 +67,6 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
   * Internet accounts => iCloud, turn off everything except Find My Mac, remove Game Center
   * Bluetooth => Show in menu bar
   * Notifications -> disable _Badge app icon_ for all apps
-  * Users => add Karabiner Elements to login items
 * [Install WhatsApp.](https://www.whatsapp.com/download/) Log in.
 * [Install Signal.](https://signal.org/download/) Log in.
 * [Install Slack.](https://slack.com/download) Log in.
@@ -95,7 +94,7 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
   `%admin		ALL = (ALL) ALL`
   to:
   `%admin		ALL = (ALL) NOPASSWD: ALL`
-* `npm install -g @zed-industries/claude-code-acp`
+* ~~`npm install -g @zed-industries/claude-code-acp`~~
 * In Emacs:
   * `M-x package-list-packages`, install `apache-mode apel dash-at-point dockerfile-mode editorconfig git-link go-mode helm-comint helm-git-grep lsp-pyright lua-mode magit nginx-mode php-mode popup python-mode rainbow-delimiters rainbow-identifiers request sass-mode typescript-mode yaml-mode`
 * Run `ctags` on all repos in `~/src`.
