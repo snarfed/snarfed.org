@@ -1,0 +1,23 @@
+
+
+Hi everyone! Here's your semi-regular Bridgy Fed status update. We've been busy [since last time](/2026-03-03_56661)!
+
+This month we focused heavily on cost cutting. Infrastructure costs have been a challenge as we've grown, and we made real progress on multiple fronts. The biggest project was a [full datastore migration](https://github.com/snarfed/bridgy-fed/issues/2168) — we moved from a multi-region Google Cloud Firestore/Datastore to a single-region setup, saving us ~$630/month. It required careful planning, a Dataflow backfill job, and a coordinated downtime window, but it went smoothly. We also [optimized `getRepo`](https://github.com/snarfed/arroba/issues/88) in our ATProto library, bringing it down over 20x, from 60-120s for large repos down to 5-10s. And we reduced datastore reads and App Engine instance counts throughout the codebase in various smaller places.
+
+We also shipped some useful new features:
+
+* [standard.site](https://standard.site/) article bridging is now fully rolled out ([GitHub](https://github.com/snarfed/bridgy-fed/issues/2324))
+* [Bluesky bot accounts now appear as `Service` type in ActivityPub](https://github.com/snarfed/bridgy-fed/issues/2391), improving fediverse compatibility
+* [Improved DM notifications](https://github.com/snarfed/bridgy-fed/issues/2376): more structured data, better coverage for [AP-to-AT content](https://github.com/snarfed/bridgy-fed/issues/2468), and [fixed a missing notification case](https://github.com/snarfed/bridgy-fed/issues/2352)
+* [Domain-based exemptions from the 2-week backdating limit](https://github.com/snarfed/bridgy-fed/issues/2374)
+* [Guidance for users on how to block interactions from non-bridged users](https://github.com/snarfed/bridgy-fed/issues/2467)
+* [Bridged web sites now show `[Unofficial]` in their display names](https://github.com/snarfed/bridgy-fed/issues/2452) to reduce confusion
+* [Indexable flag for Bluesky accounts bridged to the fediverse now respects the user's own Bluesky preferences](https://github.com/snarfed/bridgy-fed/issues/2431)
+
+Bug fixes:
+
+* [Auto-deleted Mastodon posts now get properly deleted on Bluesky/AT too](https://github.com/snarfed/bridgy-fed/issues/2393)
+* [Profile pictures not bridging from GoToSocial to Bluesky](https://github.com/snarfed/bridgy-fed/issues/2396)
+* [Webmentions with fragment URLs not being bridged from microformats h-entry](https://github.com/snarfed/bridgy-fed/issues/2412)
+
+As usual, feel free to ping us with feedback, questions, and [bug reports](https://github.com/snarfed/bridgy-fed/issues), and [please support us on Patreon](https://www.patreon.com/c/ANewSocial)! You can follow the [_now_ label on GitHub](https://github.com/snarfed/bridgy-fed/issues?q=is%3Aopen+is%3Aissue+label%3Anow) to see what we're currently focusing on. See you on the bridge!
