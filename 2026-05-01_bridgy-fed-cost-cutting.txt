@@ -1,6 +1,10 @@
 56964
 Bridging on a budget
 
+<a href="/bridgy-fed-costs-apr-2026-datastore.png">
+  <img src="/bridgy-fed-costs-apr-2026-datastore.png" alt="Bridgy Fed datastore costs in April and May 2026, with a large spike on April 21-22 from the migration and a sharp drop afterward">
+</a>
+
 Over the last few months, instead of adding new features to Bridgy Fed or Bounce, I've been focusing on cost cutting. It's not fun, exactly. I'd rather be building new things! But we're a non-profit, surviving on grants and individual donations from people who don't have a lot to spare. When you all give us your hard-earned money, we feel a deep responsibility to use it as well, and as efficiently, as possible.
 
 So we optimize, we cut, and we stretch every dollar as far as we can. Over the past two years or so, we've managed to cut our serving costs 5x, from ~$0.15 per active user per month to ~$0.03. Over that same period, our user base grew by 75x, we rearchitected to handle that growth, and we shipped a ton of new features that significantly increased our load. So, I'm proud of that cost reduction.
@@ -93,8 +97,8 @@ Of course, nothing this complicated goes perfectly. We discovered at the last mi
 
 Still, we ended up paused for only 45 minutes total, which felt ok. And the migration cut our total spend by as much as 40%, which was huge.
 
-<a href="/bridgy-fed-costs-apr-2026-datastore.png">
-  <img src="/bridgy-fed-costs-apr-2026-datastore.png" alt="Bridgy Fed datastore costs in April and May 2026, with a large spike on April 21-22 from the migration and a sharp drop afterward">
+<a href="/bridgy-fed-apr-2026-datastore-migration.png">
+  <img src="/bridgy-fed-apr-2026-datastore-migration.png" alt="Bridgy Fed datastore migration in April 2026">
 </a>
 
 
