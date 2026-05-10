@@ -1,23 +1,24 @@
-
+56963
 
 Hi everyone! Here's your semi-regular Bridgy Fed status update. We've been busy [since last time](/2026-03-03_56661)!
 
-This month we focused heavily on cost cutting. Infrastructure costs have been a challenge as we've grown, and we made real progress on multiple fronts. The biggest project was a [full datastore migration](https://github.com/snarfed/bridgy-fed/issues/2168) — we moved from a multi-region Google Cloud Firestore/Datastore to a single-region setup, saving us ~$630/month. It required careful planning, a Dataflow backfill job, and a coordinated downtime window, but it went smoothly. We also [optimized `getRepo`](https://github.com/snarfed/arroba/issues/88) in our ATProto library, bringing it down over 20x, from 60-120s for large repos down to 5-10s. And we reduced datastore reads and App Engine instance counts throughout the codebase in various smaller places.
+Our main focus over the last couple months has been cost cutting. We have an entire blog post on this coming up, but suffice it to say that we've had to work hard to keep costs under control while growing users and adding lots of new functionality.
 
-We also shipped some useful new features:
+Our two biggest projects on that front were [migrating our datastore to a cheaper configuration](https://github.com/snarfed/bridgy-fed/issues/2168), which cut datastore costs by half, and [optimizing ATProto `getRepo` calls](https://github.com/snarfed/arroba/issues/88), which sped them up over 20x and brought down our frontend instance count ~3x.
 
-* [standard.site](https://standard.site/) article bridging is now fully rolled out ([GitHub](https://github.com/snarfed/bridgy-fed/issues/2324))
-* [Bluesky bot accounts now appear as `Service` type in ActivityPub](https://github.com/snarfed/bridgy-fed/issues/2391), improving fediverse compatibility
-* [Improved DM notifications](https://github.com/snarfed/bridgy-fed/issues/2376): more structured data, better coverage for [AP-to-AT content](https://github.com/snarfed/bridgy-fed/issues/2468), and [fixed a missing notification case](https://github.com/snarfed/bridgy-fed/issues/2352)
-* [Domain-based exemptions from the 2-week backdating limit](https://github.com/snarfed/bridgy-fed/issues/2374)
-* [Guidance for users on how to block interactions from non-bridged users](https://github.com/snarfed/bridgy-fed/issues/2467)
-* [Bridged web sites now show `[Unofficial]` in their display names](https://github.com/snarfed/bridgy-fed/issues/2452) to reduce confusion
-* [Indexable flag for Bluesky accounts bridged to the fediverse now respects the user's own Bluesky preferences](https://github.com/snarfed/bridgy-fed/issues/2431)
+We also shipped some great new features:
 
-Bug fixes:
+* [Long-form articles to/from standard.site on the ATmosphere](https://blog.anew.social/long-form-comes-to-bridgy-fed/)
+* [Bot accounts are now labeled as bots on the ATmosphere](https://github.com/snarfed/bridgy-fed/issues/2391)
+* Improved DM notifications: [added structured data](https://github.com/snarfed/bridgy-fed/issues/2376), fixed cases where notifs were [missing](https://github.com/snarfed/bridgy-fed/issues/2352) and [overly eager](https://github.com/snarfed/bridgy-fed/issues/2467)
+* [Domain-based exemptions from the 2-week post backdating limit](https://github.com/snarfed/bridgy-fed/issues/2374)
+* [Bridged web sites now show `[Unofficial]` in their display names](https://github.com/snarfed/bridgy-fed/issues/2452) to reduce confusion. Web site owners can remove this by [verifying their sites](https://fed.brid.gy/docs#web-enhanced).
 
-* [Auto-deleted Mastodon posts now get properly deleted on Bluesky/AT too](https://github.com/snarfed/bridgy-fed/issues/2393)
-* [Profile pictures not bridging from GoToSocial to Bluesky](https://github.com/snarfed/bridgy-fed/issues/2396)
-* [Webmentions with fragment URLs not being bridged from microformats h-entry](https://github.com/snarfed/bridgy-fed/issues/2412)
+...and bug fixes:
+
+* [Missing profile picture updates](https://github.com/snarfed/bridgy-fed/issues/2396)
+* [Webmentions from home page fragment URLs not bridged](https://github.com/snarfed/bridgy-fed/issues/2412)
+* [h-feed to Atom conversion lost entry tags](https://github.com/snarfed/granary/issues/935)
+* [SSRF protection for outbound HTTP requests](https://github.com/snarfed/webutil/issues/11) and [websocket connections](https://github.com/snarfed/bridgy-fed/issues/2140)
 
 As usual, feel free to ping us with feedback, questions, and [bug reports](https://github.com/snarfed/bridgy-fed/issues), and [please support us on Patreon](https://www.patreon.com/c/ANewSocial)! You can follow the [_now_ label on GitHub](https://github.com/snarfed/bridgy-fed/issues?q=is%3Aopen+is%3Aissue+label%3Anow) to see what we're currently focusing on. See you on the bridge!
