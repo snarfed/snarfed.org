@@ -1,0 +1,28 @@
+57325
+
+Hi everyone! Welcome to another Bridgy Fed status update!
+
+Our biggest focus [since last time](/2026-05-01_56963) was [migration and credible exit](https://blog.anew.social/migrations-update-launch/): letting you move your bridged accounts onto and off of the bridge, in both directions, on every network. We also worked on more [cost cutting](https://blog.anew.social/bridging-on-a-budget/) and other internal improvements.
+
+Here are all the other features and changes we've shipped recently:
+
+* [Preserve whitespace more faithfully](https://github.com/snarfed/bridgy-fed/issues/990)
+* [Label automated accounts as bots](https://github.com/snarfed/bridgy-fed/issues/2513)
+* [Support more than four images](https://github.com/snarfed/bridgy-fed/issues/2504) in Atmosphere (Bluesky) posts
+* [Include aspect ratio with images to the fediverse](https://github.com/snarfed/bridgy-fed/issues/2502)
+* [Add IndieAuth login to the web UI](https://github.com/snarfed/bridgy-fed/issues/2185)
+* [When a new user joins, DM everyone who requested them](https://github.com/snarfed/bridgy-fed/issues/1321)
+* [Include account links](https://blog.anew.social/bridging-identity-with-account-links/) [for more networks](https://github.com/snarfed/bridgy-fed/issues/1990)
+* [Encrypt private keys in the datastore](https://github.com/snarfed/bridgy-fed/issues/794).
+
+...and bug fixes:
+
+* [Images not displaying on the Atmosphere (Bluesky)](https://github.com/snarfed/bridgy-fed/issues/2516)
+* [HTML showing up in content warnings](https://github.com/snarfed/bridgy-fed/issues/2509)
+* [Web login issues with Mastodon and Atmosphere](https://github.com/snarfed/bridgy-fed/issues/2506)
+* [Fix Atmosphere login for PDSes that require appview proxying](https://github.com/snarfed/bridgy-fed/issues/2519), eg Tranquil
+* [Update docs for Mastodon's web site verification](https://github.com/snarfed/bridgy-fed/issues/2505)
+* Fix misc [invalid website](https://github.com/snarfed/bridgy-fed/issues/2478) [errors](https://github.com/snarfed/bridgy-fed/issues/2486)
+* [Make unfollows more reliable](https://github.com/snarfed/bridgy-fed/issues/1631)
+
+As usual, feel free to ping us with feedback, questions, and [bug reports](https://github.com/snarfed/bridgy-fed/issues), and [please support us on Patreon](https://www.patreon.com/c/ANewSocial)! You can follow the [_now_ label on GitHub](https://github.com/snarfed/bridgy-fed/issues?q=is%3Aopen+is%3Aissue+label%3Anow) to see what we're currently focusing on. See you on the bridge!
