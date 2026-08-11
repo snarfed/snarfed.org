@@ -1,0 +1,16 @@
+53802
+
+
+<!-- wp:gallery {"linkTo":"none"} -->
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":53801,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://snarfed.org/wp-content/uploads/2024/10/PXL_20241003_1521339017E2-768x1024.jpg"><img src="https://snarfed.org/wp-content/uploads/2024/10/PXL_20241003_1521339017E2-768x1024.jpg" alt="Red emergency door release handle with a small yellow sign" class="u-photo wp-image-53801"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":53800,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://snarfed.org/wp-content/uploads/2024/10/PXL_20241003_152011380.MP7E2-1024x768.jpg"><img src="https://snarfed.org/wp-content/uploads/2024/10/PXL_20241003_152011380.MP7E2-1024x768.jpg" alt="Yellow sign on an emergency door release handle: &quot;Do not dumb here. No dumb area&quot;" class="u-photo wp-image-53800"/></a></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

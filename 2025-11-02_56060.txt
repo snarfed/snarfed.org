@@ -1,0 +1,11 @@
+56060
+
+
+<!-- wp:jetpack/markdown {"source":"TIL: _free driver_\n\nopposite of free rider\n\n\u003e [...solar geoengineering’s economics are almost the exact opposite of climate change’s: While global warming is a “free rider” problem, where countries must collaborate to avoid burning cheap fossil fuels, solar geoengineering is a “free driver” problem, where one country could theoretically do it alone.](https://heatmap.news/climate-tech/stardust-geoengineering)"} -->
+<div class="wp-block-jetpack-markdown"><p>TIL: <em>free driver</em></p>
+<p>opposite of free rider</p>
+<blockquote>
+<p><a href="https://heatmap.news/climate-tech/stardust-geoengineering">…solar geoengineering’s economics are almost the exact opposite of climate change’s: While global warming is a “free rider” problem, where countries must collaborate to avoid burning cheap fossil fuels, solar geoengineering is a “free driver” problem, where one country could theoretically do it alone.</a></p>
+</blockquote>
+</div>
+<!-- /wp:jetpack/markdown -->

@@ -1,0 +1,11 @@
+54877
+
+
+<!-- wp:jetpack/markdown {"source":"Word of the day:\n\n\u003e [aleatory (adj)](https://www.merriam-webster.com/dictionary/aleatory)  \n\u003e  \n\u003e _random, left to chance_"} -->
+<div class="wp-block-jetpack-markdown"><p>Word of the day:</p>
+<blockquote>
+<p><a href="https://www.merriam-webster.com/dictionary/aleatory">aleatory (adj)</a></p>
+<p><em>random, left to chance</em></p>
+</blockquote>
+</div>
+<!-- /wp:jetpack/markdown -->

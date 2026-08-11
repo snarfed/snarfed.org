@@ -1,0 +1,10 @@
+54453
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e I've seen things you people wouldn't believe. Attack ships on fire off the shoulder of Orion. I watched C-beams glitter in the dark near the Tannhäuser Gate. All those moments will be lost in time, like tears in rain. Time to die.\n\n\\- [David Peoples / Rutger Hauer, _Blade Runner_](https://en.wikipedia.org/wiki/Tears_in_rain_monologue)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>I’ve seen things you people wouldn’t believe. Attack ships on fire off the shoulder of Orion. I watched C-beams glitter in the dark near the Tannhäuser Gate. All those moments will be lost in time, like tears in rain. Time to die.</p>
+</blockquote>
+<p>- <a href="https://en.wikipedia.org/wiki/Tears_in_rain_monologue">David Peoples / Rutger Hauer, <em>Blade Runner</em></a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

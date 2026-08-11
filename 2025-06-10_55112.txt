@@ -1,0 +1,17 @@
+55112
+
+
+<!-- wp:jetpack/markdown {"source":"Morpheus, _The Matrix_, 1999:\n\n\u003e What we know for certain is that at some point in the early 21st century, all of mankind was united in celebration. We marveled at our own magnificence as we gave birth to...A.I.\n\n🤔"} -->
+<div class="wp-block-jetpack-markdown"><p>Morpheus, <em>The Matrix</em>, 1999:</p>
+<blockquote>
+<p>What we know for certain is that at some point in the early 21st century, all of mankind was united in celebration. We marveled at our own magnificence as we gave birth to…A.I.</p>
+</blockquote>
+<p>🤔</p>
+</div>
+<!-- /wp:jetpack/markdown -->
+
+<!-- wp:embed {"url":"https://www.youtube.com/watch?v=Z47MEtn4O8E","type":"video","providerNameSlug":"youtube","responsive":true,"className":"wp-embed-aspect-16-9 wp-has-aspect-ratio"} -->
+<figure class="wp-block-embed is-type-video is-provider-youtube wp-block-embed-youtube wp-embed-aspect-16-9 wp-has-aspect-ratio"><div class="wp-block-embed__wrapper">
+https://www.youtube.com/watch?v=Z47MEtn4O8E
+</div></figure>
+<!-- /wp:embed -->

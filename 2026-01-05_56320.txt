@@ -1,0 +1,10 @@
+56320
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e This song is Copyrighted in U.S., under Seal of Copyright #154085, for a period of 28 years, and anybody caught singin' it without our permission, will be mighty good friends of ourn, cause we don't give a dern. Publish it. Write it. Sing it. Swing to it. Yodel it. We wrote it, that's all we wanted to do.\n\n[- Woody Guthrie](https://en.wikipedia.org/wiki/Woody_Guthrie#cite_ref-32)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>This song is Copyrighted in U.S., under Seal of Copyright #154085, for a period of 28 years, and anybody caught singin’ it without our permission, will be mighty good friends of ourn, cause we don’t give a dern. Publish it. Write it. Sing it. Swing to it. Yodel it. We wrote it, that’s all we wanted to do.</p>
+</blockquote>
+<p><a href="https://en.wikipedia.org/wiki/Woody_Guthrie#cite_ref-32">- Woody Guthrie</a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

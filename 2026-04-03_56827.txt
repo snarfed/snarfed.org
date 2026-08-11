@@ -1,0 +1,16 @@
+56827
+
+
+<!-- wp:jetpack/markdown {"source":"In my [25+ yr career](https://snarfed.org/resume) in (systems) software engineering, I can count on one hand the number of real paradigm shifts I've seen:\n\n* Ubiquitous automated testing, eg unit tests\n* Modern network routing fabrics, which made intra-DC bandwidth effectively infinite and intra-DC latency effectively zero for most workloads, [Patterson notwithstanding](/2019-07-10_37849)\n* SSDs, which combined the speed of memory with the capacity of disk. No more counting seeks!\n* Cloud infrastructure\n* AI coding\n\nI'm not saying anything new by including AI coding here. I don't fully know what its long term effects will be. I doubt many of us do. And the industry is obviously far from perfect.\n\nBut coming from a late adopter, and a skeptic in general, it's still very clearly a big deal. And I don't see those often."} -->
+<div class="wp-block-jetpack-markdown"><p>In my <a href="https://snarfed.org/resume">25+ yr career</a> in (systems) software engineering, I can count on one hand the number of real paradigm shifts I’ve seen:</p>
+<ul>
+<li>Ubiquitous automated testing, eg unit tests</li>
+<li>Modern network routing fabrics, which made intra-DC bandwidth effectively infinite and intra-DC latency effectively zero for most workloads, <a href="/2019-07-10_37849">Patterson notwithstanding</a></li>
+<li>SSDs, which combined the speed of memory with the capacity of disk. No more counting seeks!</li>
+<li>Cloud infrastructure</li>
+<li>AI coding</li>
+</ul>
+<p>I’m not saying anything new by including AI coding here. I don’t fully know what its long term effects will be. I doubt many of us do. And the industry is obviously far from perfect.</p>
+<p>But coming from a late adopter, and a skeptic in general, it’s still very clearly a big deal. And I don’t see those often.</p>
+</div>
+<!-- /wp:jetpack/markdown -->

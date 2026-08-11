@@ -1,0 +1,18 @@
+55779
+
+
+<!-- wp:paragraph -->
+<p>I don't understand the value of consumer VPNs. Can someone explain it to me?</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>We do pretty much everything over SSL these days. Definitely everything that matters. That provides confidentiality, so network intermediaries can't see the data, and server authentication, so they can't impersonate the server.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Yes, DNS is the exception, it's not encrypted, but more and more browsers and other user agents are building in DoH and DoT, and even enabling it by default.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>So, given all that, what do general purpose VPNs add? What am I missing? Are they just security theater marketing? Or do they bundle other security features like anti-malware etc, and the term "VPN" now means a bundle of miscellaneous endpoint security features, like (shudder) anti-virus used to?</p>
+<!-- /wp:paragraph -->

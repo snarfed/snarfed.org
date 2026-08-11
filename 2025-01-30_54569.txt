@@ -1,0 +1,20 @@
+54569
+
+
+<!-- wp:paragraph -->
+<p>Wrote up a <a href="https://bridgy-fed.readthedocs.io/source/design.html">technical design doc on Bridgy Fed's internals</a>, hopefully useful for anyone who wants to contribute or just see how it works. Feedback is welcome!</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:gallery {"linkTo":"none"} -->
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"lightbox":{"enabled":false},"id":54571,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://bridgy-fed.readthedocs.io/source/design.html"><img src="https://snarfed.org/wp-content/uploads/2025/01/diagram-tasks.png" alt="Bridgy Fed services and task flow diagram" class="wp-image-54571 u-photo"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"id":50625,"sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large"><a href="https://bridgy-fed.readthedocs.io/source/design.html"><img src="https://snarfed.org/wp-content/uploads/2023/07/octopus_attacks_ship_bridgy_fed-1024x802.jpg" alt="In the old Age of Sail style. A Lovecraftian giant octopus attacks three large sailing ships. The ships' sails have the Twitter, Reddit, and Threads logos. The octopus's tentacles have the webmention, ActivityPub, fediverse, ATProto, and Nostr logos. The octopus's head is a router with the Bridgy (Fed) logo." class="wp-image-50625 u-photo"/></a></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

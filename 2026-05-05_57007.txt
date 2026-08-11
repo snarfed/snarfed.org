@@ -1,0 +1,22 @@
+57007
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e Consider the world’s simplest database:\n\n\u003e ```\n\u003e #!/bin/bash\n\u003e \n\u003e db_set () {\n\u003e   echo \u0022$1,$2\u0022 \u003e\u003e database\n\u003e }\n\u003e \n\u003e db_get () {\n\u003e   grep \u0022^$1,\u0022 database | sed -e \u0022s/^$1,//\u0022 | tail -n 1\n\u003e }\n\u003e ```\n\n\u005c- _[Designing Data-Intensive Applications](https://dataintensive.net/)_, 2nd edition, [Martin Kleppmann](https://martin.kleppmann.com/) and [Chris Riccomini](https://cnr.sh/)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>Consider the world’s simplest database:</p>
+</blockquote>
+<blockquote>
+<pre><code>#!/bin/bash
+
+db_set () {
+  echo &quot;$1,$2&quot; &gt;&gt; database
+}
+
+db_get () {
+  grep &quot;^$1,&quot; database | sed -e &quot;s/^$1,//&quot; | tail -n 1
+}
+</code></pre>
+</blockquote>
+<p>- <em><a href="https://dataintensive.net/">Designing Data-Intensive Applications</a></em>, 2nd edition, <a href="https://martin.kleppmann.com/">Martin Kleppmann</a> and <a href="https://cnr.sh/">Chris Riccomini</a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

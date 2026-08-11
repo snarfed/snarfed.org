@@ -1,0 +1,14 @@
+56794
+
+
+<!-- wp:jetpack/markdown {"source":"Best paper title I've seen in a long time: \n\n\u003e [Replication of Quantum Factorisation Records with an 8-bit Home Computer, an Abacus, and a Dog](https://eprint.iacr.org/2025/1237)"} -->
+<div class="wp-block-jetpack-markdown"><p>Best paper title I’ve seen in a long time:</p>
+<blockquote>
+<p><a href="https://eprint.iacr.org/2025/1237">Replication of Quantum Factorisation Records with an 8-bit Home Computer, an Abacus, and a Dog</a></p>
+</blockquote>
+</div>
+<!-- /wp:jetpack/markdown -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

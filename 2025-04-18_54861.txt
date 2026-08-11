@@ -1,0 +1,11 @@
+54861
+
+
+<!-- wp:jetpack/markdown {"source":"Error from [Emacs vc-mode](https://www.gnu.org/software/emacs/manual/html_node/emacs/Version-Control.html) just now:\n\n\u003e Hunk seriously messed up\n\n...you and me both, Emacs, you and me both"} -->
+<div class="wp-block-jetpack-markdown"><p>Error from <a href="https://www.gnu.org/software/emacs/manual/html_node/emacs/Version-Control.html">Emacs vc-mode</a> just now:</p>
+<blockquote>
+<p>Hunk seriously messed up</p>
+</blockquote>
+<p>…you and me both, Emacs, you and me both</p>
+</div>
+<!-- /wp:jetpack/markdown -->

@@ -1,0 +1,10 @@
+54941
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e Too much Harvard, not enough Harlem.\n\n\\- [Clarence Avant](https://en.m.wikipedia.org/wiki/Clarence_Avant), the \u0022Godfather of Black Music,\u0022 [via Bobby Kotick](https://youtu.be/D2urSgcuyyo?t=7232)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>Too much Harvard, not enough Harlem.</p>
+</blockquote>
+<p>- <a href="https://en.m.wikipedia.org/wiki/Clarence_Avant">Clarence Avant</a>, the “Godfather of Black Music,” <a href="https://youtu.be/D2urSgcuyyo?t=7232">via Bobby Kotick</a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

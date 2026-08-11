@@ -1,0 +1,10 @@
+57433
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e The world is a comedy to those that think; a tragedy to those that feel\n\n[- Horace Walpole](https://en.wikiquote.org/wiki/Horace_Walpole)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>The world is a comedy to those that think; a tragedy to those that feel</p>
+</blockquote>
+<p><a href="https://en.wikiquote.org/wiki/Horace_Walpole">- Horace Walpole</a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

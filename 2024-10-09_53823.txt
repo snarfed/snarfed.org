@@ -1,0 +1,10 @@
+53823
+
+
+<!-- wp:paragraph -->
+<p>Added <a href="https://www.farcaster.xyz/">Farcaster</a> to my <a href="https://fed.brid.gy/docs#compare">social protocols comparison table</a>. Click through for HTML version with text, links, etc. Feedback is welcome!</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<figure class="wp-block-image size-large"><a href="https://snarfed.org/wp-content/uploads/2024/10/social-protocols-compared.png"><img src="https://snarfed.org/wp-content/uploads/2024/10/social-protocols-compared-1024x845.png" alt="A table comparing five decentralized social networking protocols on various dimensions: https://fed.brid.gy/docs#compare" class="wp-image-53824 u-photo"/></a></figure>
+<!-- /wp:html -->

@@ -1,0 +1,16 @@
+54867
+
+
+<!-- wp:paragraph -->
+<p>current status</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:gallery {"linkTo":"file"} -->
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":54869,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://snarfed.org/wp-content/uploads/2025/04/vis_two_deep_split_before.png"><img src="https://snarfed.org/wp-content/uploads/2025/04/vis_two_deep_split_before.png" alt="visualization of an AT Protocol Merkle search tree" class="wp-image-54869"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":54868,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://snarfed.org/wp-content/uploads/2025/04/vis_two_deep_split_after.png"><img src="https://snarfed.org/wp-content/uploads/2025/04/vis_two_deep_split_after.png" alt="visualization of a slightly more complicated AT Protocol Merkle search tree" class="wp-image-54868"/></a></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->

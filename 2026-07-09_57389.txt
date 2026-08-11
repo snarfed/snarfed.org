@@ -1,0 +1,28 @@
+57389
+
+
+<!-- wp:paragraph -->
+<p>Jasper National Park, Canadian Rockies</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:video {"id":57388} -->
+<figure class="wp-block-video"><video controls src="https://snarfed.org/wp-content/uploads/2026/07/wp-1783617840590.mp4"></video></figure>
+<!-- /wp:video -->
+
+<!-- wp:gallery {"linkTo":"none"} -->
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":57385,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://snarfed.org/wp-content/uploads/2026/07/wp-17836178809497415480025163777096-1024x768.jpg" alt="North Thompson River, Jasper National Park" class="wp-image-57385"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":57387,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://snarfed.org/wp-content/uploads/2026/07/wp-17836178811792507610550454189324-1024x768.jpg" alt="Devil's Gate, Jasper National Park" class="wp-image-57387"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":57386,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://snarfed.org/wp-content/uploads/2026/07/wp-17836178808447492137073543883150-1024x768.jpg" alt="Wooden foot bridge over a stream out of Lac Bauvert, Jasper National Park" class="wp-image-57386"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":57384,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://snarfed.org/wp-content/uploads/2026/07/wp-17836178807195618496296051688933-768x1024.jpg"><img src="https://snarfed.org/wp-content/uploads/2026/07/wp-17836178807195618496296051688933-768x1024.jpg" alt="Trail through a sparse burnt stand of trees after a wildfire near Lac Bauvert, Jasper National Park" class="wp-image-57384"/></a></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->

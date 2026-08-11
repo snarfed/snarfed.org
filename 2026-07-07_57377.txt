@@ -1,0 +1,20 @@
+57377
+
+
+<!-- wp:paragraph -->
+<p>taking a vacation? forgot which day of the week it is? don't worry, hotel elevator's got you</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:gallery {"linkTo":"none"} -->
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":57375,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://snarfed.org/wp-content/uploads/2026/07/pxl_20260707_1308035626913703833273903575-1024x768.jpg" alt="Floor of a hotel elevator with a rug that says &quot;Tuesday&quot;" class="wp-image-57375"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":57378,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://snarfed.org/wp-content/uploads/2026/07/pxl_20260707_1308085271354634745521247215-1024x768.jpg" alt="Floor of a hotel elevator with a rug that says &quot;Tuesday&quot;" class="wp-image-57378"/></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

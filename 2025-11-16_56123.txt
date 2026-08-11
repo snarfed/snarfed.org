@@ -1,0 +1,10 @@
+56123
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e You should consider that the essential art of civilization is maintenance.\n\n[- Pete Seeger](\nhttps://books.worksinprogress.co/book/maintenance-of-everything/addenda/page/introduction)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>You should consider that the essential art of civilization is maintenance.</p>
+</blockquote>
+<p><a href="https://books.worksinprogress.co/book/maintenance-of-everything/addenda/page/introduction">- Pete Seeger</a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

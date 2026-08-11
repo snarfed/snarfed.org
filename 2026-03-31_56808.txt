@@ -1,0 +1,27 @@
+56808
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e ...this produces what I will call the AI Developer’s Descent Into Madness:\n\n\u003e 1. Whoa, I produced this prototype so fast! I have super powers!\n\u003e 2. This prototype is getting buggy. I’ll tell the AI to fix the bugs.\n\u003e 3. Hmm, every change now causes as many new bugs as it fixes.\n\u003e 4. Aha! But if I have an AI agent also review the code, it can find its own bugs!\n\u003e 5. Wait, why am I personally passing data back and forth between agents\n\u003e 6. I need an agent framework\n\u003e 7. I can have my agent write an agent framework!\n\u003e 8. Return to step 1\n\u003e\n\u003e It’s actually alarming how many friends and respected peers I’ve lost to this cycle already.\n\n[Avery Pennarun, _Every layer of review makes you 10x slower_](https://apenwarr.ca/log/20260316)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>…this produces what I will call the AI Developer’s Descent Into Madness:</p>
+</blockquote>
+<blockquote>
+<ol>
+<li>Whoa, I produced this prototype so fast! I have super powers!</li>
+<li>This prototype is getting buggy. I’ll tell the AI to fix the bugs.</li>
+<li>Hmm, every change now causes as many new bugs as it fixes.</li>
+<li>Aha! But if I have an AI agent also review the code, it can find its own bugs!</li>
+<li>Wait, why am I personally passing data back and forth between agents</li>
+<li>I need an agent framework</li>
+<li>I can have my agent write an agent framework!</li>
+<li>Return to step 1</li>
+</ol>
+<p>It’s actually alarming how many friends and respected peers I’ve lost to this cycle already.</p>
+</blockquote>
+<p><a href="https://apenwarr.ca/log/20260316">Avery Pennarun, <em>Every layer of review makes you 10x slower</em></a></p>
+</div>
+<!-- /wp:jetpack/markdown -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

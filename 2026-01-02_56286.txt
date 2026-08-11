@@ -1,0 +1,14 @@
+56286
+
+
+<!-- wp:paragraph -->
+<p>Does a given word rhyme with itself?</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Eg, does <em>kitten</em> rhyme with <em>kitten</em>?</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

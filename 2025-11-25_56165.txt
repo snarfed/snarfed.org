@@ -1,0 +1,20 @@
+56165
+
+
+<!-- wp:jetpack/markdown {"source":"Fun fact: [\u0022six seven\u0022](https://www.urbandictionary.com/define.php?term=67%20(six%20seven)) traces its roots all the way back to Old English in the 1380s. Geoffrey Chaucer coined it in his epic poem _[Troilus and Criseyd](http://www.librarius.com/troicris.htm)_:\n\n\u003e But manly set the world on sixe and sevene;  \n\u003e And, if thou deye a martir, go to hevene.\n\n200 years later, Shakespeare picked it up and used it in his play _[Richard II](https://shakespeare.mit.edu/richardii/richardii.2.2.html)_:\n\n\u003e But time will not permit: all is uneven  \n\u003e And every thing is left at six and seven\n\nThe common English phrase \u0022at sixes and sevens,\u0022 from an early dice game that preceded craps, [is unrelated](https://en.wikipedia.org/wiki/At_sixes_and_sevens).\n\n\u003e It is thought that the expression was originally _to set on cinque and sice_ (from the French for five and six). These were apparently the most risky numbers to shoot for ('to set on') and anyone who tried for them was considered careless or confused."} -->
+<div class="wp-block-jetpack-markdown"><p>Fun fact: <a href="https://www.urbandictionary.com/define.php?term=67%20(six%20seven)">“six seven”</a> traces its roots all the way back to Old English in the 1380s. Geoffrey Chaucer coined it in his epic poem <em><a href="http://www.librarius.com/troicris.htm">Troilus and Criseyd</a></em>:</p>
+<blockquote>
+<p>But manly set the world on sixe and sevene;<br>
+And, if thou deye a martir, go to hevene.</p>
+</blockquote>
+<p>200 years later, Shakespeare picked it up and used it in his play <em><a href="https://shakespeare.mit.edu/richardii/richardii.2.2.html">Richard II</a></em>:</p>
+<blockquote>
+<p>But time will not permit: all is uneven<br>
+And every thing is left at six and seven</p>
+</blockquote>
+<p>The common English phrase “at sixes and sevens,” from an early dice game that preceded craps, <a href="https://en.wikipedia.org/wiki/At_sixes_and_sevens">is unrelated</a>.</p>
+<blockquote>
+<p>It is thought that the expression was originally <em>to set on cinque and sice</em> (from the French for five and six). These were apparently the most risky numbers to shoot for (‘to set on’) and anyone who tried for them was considered careless or confused.</p>
+</blockquote>
+</div>
+<!-- /wp:jetpack/markdown -->

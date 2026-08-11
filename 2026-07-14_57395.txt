@@ -1,0 +1,10 @@
+57395
+
+
+<!-- wp:jetpack/markdown {"source":"Of all the themes in _The Matrix_, one of my favorites is [the requirement of a land line](https://matrix.fandom.com/wiki/Hardline) to call the operator and exit the Matrix.\n\nCordless phones, cell radios, wireless networking...none of it can be trusted. When you're doing serious business, you need good old fashioned copper.\n\nAnd not just any land line, either. Inevitably, they end up using *anonymous* land lines. The front desk phone in a hotel room, an aging rotary dial in an abandoned building, or the holy grail: a pay phone.\n\nCypherpunks. Gotta love 'em. Immaculate vibes."} -->
+<div class="wp-block-jetpack-markdown"><p>Of all the themes in <em>The Matrix</em>, one of my favorites is <a href="https://matrix.fandom.com/wiki/Hardline">the requirement of a land line</a> to call the operator and exit the Matrix.</p>
+<p>Cordless phones, cell radios, wireless networking…none of it can be trusted. When you’re doing serious business, you need good old fashioned copper.</p>
+<p>And not just any land line, either. Inevitably, they end up using <em>anonymous</em> land lines. The front desk phone in a hotel room, an aging rotary dial in an abandoned building, or the holy grail: a pay phone.</p>
+<p>Cypherpunks. Gotta love 'em. Immaculate vibes.</p>
+</div>
+<!-- /wp:jetpack/markdown -->

@@ -1,0 +1,16 @@
+56291
+
+
+<!-- wp:gallery {"linkTo":"none"} -->
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":56289,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://snarfed.org/wp-content/uploads/2026/01/img-20260102-wa00005234470750338488751-1024x739.jpg" alt="Child riding a bike over a homemade plywood ramp jump, on a quiet suburban street in the '80s with lots of trees" class="wp-image-56289"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":56290,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://snarfed.org/wp-content/uploads/2026/01/img-20260101-wa00067E23798962593776297250-1024x720.jpg" alt="Painting of the first picture in this post on a notecard" class="wp-image-56290"/></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

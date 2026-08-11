@@ -1,0 +1,10 @@
+52787
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e Half the world's economy runs on Excel.\n\n\\- [@riskybusiness](https://infosec.exchange/@riskybusiness) [#743](https://risky.biz/RB743/)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>Half the world’s economy runs on Excel.</p>
+</blockquote>
+<p>- <a href="https://infosec.exchange/@riskybusiness">@riskybusiness</a> <a href="https://risky.biz/RB743/">#743</a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

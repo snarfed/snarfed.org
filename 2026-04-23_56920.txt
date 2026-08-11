@@ -1,0 +1,11 @@
+56920
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e #### Fixed time, variable scope\n\u003e Just like content development in any other medium, software development reduces to the elimination of entropy. Unlike other media, however, there is very little else to count. The problem is that you and/or your team can only eliminate a fixed-ish number of bits of entropy per unit time, and at the outset you don't know how many bits there are in the problem to eliminate. So you say we're gonna work this much, and whatever comes out the other end of that process is whatever you get. In the current theory, and sometimes in practice, this is how sprints are supposed to work, and the material that doesn't fit is accumulated into some backlog or other.\n\n[- Dorian Taylor, _Agile as Trauma_](https://doriantaylor.com/agile-as-trauma)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<h4>Fixed time, variable scope</h4>
+<p>Just like content development in any other medium, software development reduces to the elimination of entropy. Unlike other media, however, there is very little else to count. The problem is that you and/or your team can only eliminate a fixed-ish number of bits of entropy per unit time, and at the outset you don’t know how many bits there are in the problem to eliminate. So you say we’re gonna work this much, and whatever comes out the other end of that process is whatever you get. In the current theory, and sometimes in practice, this is how sprints are supposed to work, and the material that doesn’t fit is accumulated into some backlog or other.</p>
+</blockquote>
+<p><a href="https://doriantaylor.com/agile-as-trauma">- Dorian Taylor, <em>Agile as Trauma</em></a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

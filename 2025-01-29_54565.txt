@@ -1,0 +1,10 @@
+54565
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e In research, if you know what you are doing, you should not be doing it. In engineering, if you do not know what you are doing, you should not be doing it.\n\n\\- Richard Hamming, via [South Park Commons, _The Case for Talent Density in -1 to 0_](https://blog.southparkcommons.com/case-for-talent-density-minus-one/)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>In research, if you know what you are doing, you should not be doing it. In engineering, if you do not know what you are doing, you should not be doing it.</p>
+</blockquote>
+<p>- Richard Hamming, via <a href="https://blog.southparkcommons.com/case-for-talent-density-minus-one/">South Park Commons, <em>The Case for Talent Density in -1 to 0</em></a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

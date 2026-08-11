@@ -1,0 +1,20 @@
+56886
+
+
+<!-- wp:paragraph -->
+<p>A few challenge coins: <a href="https://longnow.org/">Long Now</a>, Google NetOps, and our family LLC.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:gallery {"linkTo":"file"} -->
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":56884,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://snarfed.org/wp-content/uploads/2026/04/pxl_20260415_163500591322632525349835351-1024x768.jpg" alt="" class="wp-image-56884"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":56885,"sizeSlug":"large"} -->
+<figure class="wp-block-image size-large"><img src="https://snarfed.org/wp-content/uploads/2026/04/pxl_20260415_1635308172641069851863099692-1024x768.jpg" alt="" class="wp-image-56885"/></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

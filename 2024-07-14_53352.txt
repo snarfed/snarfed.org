@@ -1,0 +1,6 @@
+53352
+
+
+<!-- wp:paragraph -->
+<p>Counted tests just now while working on <a href="https://fed.brid.gy/">Bridgy Fed</a>, it currently has 814. Expanding to include the whole stack, including <a href="https://granary.io/">granary</a>, <a href="https://arroba.readthedocs.io/">arroba</a>, <a href="https://lexrpc.readthedocs.io/">lexrpc</a>, etc, there are 2669 total. (Nice.)</p>
+<!-- /wp:paragraph -->

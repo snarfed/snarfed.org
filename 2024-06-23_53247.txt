@@ -1,0 +1,6 @@
+53247
+
+
+<!-- wp:paragraph -->
+<p>Finally got around to reading <a href="https://www.potaroo.net/ispcol/2024-05/dnssec-fin.html">Geoff Huston's comprehensive, heartbreaking eulogy for DNSSEC</a>. He takes the thought-provoking position that TLS has largely subsumed the need for DNSSEC - not perfectly, and with a somewhat different threat model, but still. Great networking neckbeard reading, as always.</p>
+<!-- /wp:paragraph -->

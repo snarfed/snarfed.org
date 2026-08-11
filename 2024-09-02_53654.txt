@@ -1,0 +1,10 @@
+53654
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e Bad defendants make bad law.\n\nLove it. Heard recently for the first time via [Alex Stamos](https://en.wikipedia.org/wiki/Alex_Stamos) on the [8/30 Moderated Content podcast episode](https://podcasts.apple.com/us/podcast/the-arrest-of-telegrams-ceo/id1646510125?i=1000667556271) on Pavel Durov getting arrested. Sounds like maybe a variation on the [_hard cases make bad law_](https://en.wikipedia.org/wiki/Hard_cases_make_bad_law) legal adage?"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>Bad defendants make bad law.</p>
+</blockquote>
+<p>Love it. Heard recently for the first time via <a href="https://en.wikipedia.org/wiki/Alex_Stamos">Alex Stamos</a> on the <a href="https://podcasts.apple.com/us/podcast/the-arrest-of-telegrams-ceo/id1646510125?i=1000667556271">8/30 Moderated Content podcast episode</a> on Pavel Durov getting arrested. Sounds like maybe a variation on the <a href="https://en.wikipedia.org/wiki/Hard_cases_make_bad_law"><em>hard cases make bad law</em></a> legal adage?</p>
+</div>
+<!-- /wp:jetpack/markdown -->

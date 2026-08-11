@@ -1,0 +1,32 @@
+55889
+
+
+<!-- wp:paragraph -->
+<p>A glimpse into the <a href="https://fed.brid.gy/">Bridgy Fed</a> monitoring dashboards. Pretty conventional mix of infra, OS, and app level metrics.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Note the delay numbers. When you do something in one network, how quickly do we bridge it across? We pay a lot of attention to that, we try hard to keep it as fast as possible!</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:gallery {"linkTo":"file"} -->
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":55883,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://snarfed.org/wp-content/uploads/2025/10/bridgy-fed-monitoring-2.png"><img src="https://snarfed.org/wp-content/uploads/2025/10/bridgy-fed-monitoring-2-1024x589.png" alt="monitoring dashboard with graphs for task results, task queues, CPU, and memory" class="wp-image-55883"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":55884,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://snarfed.org/wp-content/uploads/2025/10/bridgy-fed-monitoring-3.png"><img src="https://snarfed.org/wp-content/uploads/2025/10/bridgy-fed-monitoring-3-1024x571.png" alt="monitoring dashboard with graphs for receive protocols, types, source instances, and ATProto firehose commits" class="wp-image-55884"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":55885,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://snarfed.org/wp-content/uploads/2025/10/bridgy-fed-monitoring-4.png"><img src="https://snarfed.org/wp-content/uploads/2025/10/bridgy-fed-monitoring-4-1024x566.png" alt="monitoring dashboard with graphs for unsupported activities and sent activities by protocol and type" class="wp-image-55885"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":55882,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://snarfed.org/wp-content/uploads/2025/10/bridgy-fed-monitoring-1.png"><img src="https://snarfed.org/wp-content/uploads/2025/10/bridgy-fed-monitoring-1-1024x512.png" alt="monitoring dashboard with graphs for user count, receive/send/ATProto serve/ATProto consume delays, tasks run, and processing delays" class="wp-image-55882"/></a></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:paragraph -->
+<p>I wish we could <a href="https://github.com/snarfed/bridgy-fed/issues/1546">make these dashboards public</a>! Google Cloud Monitoring doesn't support that right now; <a href="https://issuetracker.google.com/issues/354101899">hopefully they will eventually</a>.</p>
+<!-- /wp:paragraph -->

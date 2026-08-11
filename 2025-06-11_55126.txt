@@ -1,0 +1,14 @@
+55126
+
+
+<!-- wp:paragraph -->
+<p>For me, the defining characteristic of open source is that you're <em>giving up control</em> over your code. You can choose how much to give up, based on the license, but you pretty much always end up with less control than if you kept it closed source.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>That's good! It's the point. I tend to license <a href="https://snarfed.org/software" data-type="page" data-id="858">my open source work</a> as public domain, which gives up as much control as possible, but that's just me.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Regardless, once you've given up control, it's gone. You can re-license going forward, but not retroactively. You can't - or at least, shouldn't - try to claw back control later. You gave it up. That's the whole point.</p>
+<!-- /wp:paragraph -->

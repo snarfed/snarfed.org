@@ -1,0 +1,116 @@
+56579
+
+
+<!-- wp:paragraph -->
+<p>Really enjoyed <a href="https://www.nathanielbullard.com/presentations">Nat Bullard's <em>State of decarbonization</em> presentation</a> this year, as always. Reminds me of Mary Meeker's classic yearly Internet Trends decks, but for climate tech. It's that valuable, and useful.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:html -->
+<iframe allow="fullscreen" allowfullscreen="" src="https://pitch.com/embed-link/4zva9e?share=false&amp;wmode=opaque" width="100%" data-embed="true" style="border:0" height="600"></iframe>
+<!-- /wp:html -->
+
+<!-- wp:paragraph -->
+<p>Some takeaways, in no particular order:</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:more -->
+<!--more-->
+<!-- /wp:more -->
+
+<!-- wp:list -->
+<ul class="wp-block-list"><!-- wp:list-item -->
+<li>Land use emissions are at their lowest in 60y</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Almost 25% of emissions fall under some price on carbon regime</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Electricity passed oil as the single largest form of energy in ~2005. It provided ~70EJ of energy in 2025, vs &lt; 50EJ from oil, the next largest form</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>China now generates 40% more electricity (10k TWh) than US + EU combined (7TWh)!</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>China's CO2 emissions have been flat for the last 2+y. India's is effectively flat now too. (US and EU are 10-20% down from their peaks in ~2010.)</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Price of oil has trended steadily down 4y, from $120/barrel peaks in 2022 to $60 now. Plus, we're currently at 5M barrels/day of oversupply, and rising sharply</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>US public opinion on nuclear has risen sharply, 61% favorable now, vs 44% 10y ago</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Related: global annual nuclear investment has more than doubled in the last 10y, from ~$32B to ~$74B. (Almost past coal!)</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Global power generation asset investment finally surpassed fossil fuels in 2025, at just over $1T</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Climate capital inflows of all kinds are down, as are sustainability fund returns and launches. Climate tech investment specifically is up, barely.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>China is the exception: it's <em>half</em> of global renewables investment, $70B/y green manufacturing investment, leading (by far!) on nuclear project development and cost per MW</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Voluntary carbon credits are back to historic $.5B/y level. 2021-22 spike of $2B/y was an anomaly.</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Coal demand has been flat for the last few years, including China. Coal generation in India is flat (~1300 TWh), everywhere else flat to down</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Renewables generation passed coal, 5100 TWh vs 4900</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Solar generation surpassed wind for the first time</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>…but solar installation rate in EU has flattened at ~65 GW/y</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Solar duck curve peak-to-trough is now 50-75% of generation in Texas, 80-90% in California!</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>US grid activity is booming, and chaotic. Record interconnection requests (PJM, ERCOT), transformer prices, etc. Demand and generation forecasts all over the map<br>"I think our forecast of datacenter load for, say, 2032 is probably off by a factor of two. I just don't know which way, two times too high or two times too low."</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Datacenter power consumption is up 80% since 2020…</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>…but still just ~1.5% of global demand and .5% of emissions, total. Even if AI doubles that <em>again</em>, it's still just 1% of emissions. Worth remembering the next time you see another breathless "ChatGPT is destroying the planet!" post</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Lithium ion dominates battery chemistry, 95% of installed volume. Storage is second largest use case (22%) after EVs (70%). &gt;100 GW scale storage projects planned for 2026</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Despite press, EV growth has continued, roughly linearly. They're over 25% of global auto sales now. China is leading; they'll sell more EVs this year than <em>all</em> US passenger cars</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>SAF production has doubled every year for the past 7+y, but it's still negligible, &lt; 1% of total jet fuel</li>
+<!-- /wp:list-item -->
+
+<!-- wp:list-item -->
+<li>Hydrogen outlook (demand, generation, projects) is mixed at best</li>
+<!-- /wp:list-item --></ul>
+<!-- /wp:list -->

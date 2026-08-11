@@ -1,0 +1,20 @@
+54352
+
+
+<!-- wp:paragraph -->
+<p>fog over the bay was intense this morning</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:gallery {"linkTo":"none"} -->
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":54350,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://snarfed.org/wp-content/uploads/2024/12/pxl_20241218_150728721285055488536558326-1024x769.jpg"><img src="https://snarfed.org/wp-content/uploads/2024/12/pxl_20241218_150728721285055488536558326-1024x769.jpg" alt="San Francisco Bay at sunrise with thick fog" class="wp-image-54350 u-photo"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":54351,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://snarfed.org/wp-content/uploads/2024/12/pxl_20241218_1507433118523387751226697700-1024x769.jpg"><img src="https://snarfed.org/wp-content/uploads/2024/12/pxl_20241218_1507433118523387751226697700-1024x769.jpg" alt="San Francisco Bay at sunrise with thick fog" class="wp-image-54351 u-photo"/></a></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

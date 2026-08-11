@@ -1,0 +1,26 @@
+56271
+
+
+<!-- wp:paragraph -->
+<p>Quick appreciation post for checklists.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>I had to do a <a href="https://github.com/snarfed/arroba/issues/69">delicate migration in prod</a> recently, so I did the usual SRE thing: step by step checklist, minimize the critical section where things are down, lots of sanity checks throughout, dry run before the real thing. (If I was really serious, I would have found someone to watch over my shoulder too.)</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>First time through, one of the sanity checks in a critical section failed, so I immediately aborted and rolled back. Turned out to be a trivial bug, but it would have been ugly if I'd continued and didn't catch it until later.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Fixed the bug, started the procedure again from the beginning, everything worked fine this time through.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Kudos to the humble checklist. Far from the first time it's saved my ass.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

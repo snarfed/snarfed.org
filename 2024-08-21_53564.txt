@@ -1,0 +1,18 @@
+53564
+
+
+<!-- wp:html -->
+<p class="right third">
+  <a href="https://xoxofest.com/2024/">
+    <img class="shadow" src="/xoxo_yellow.png" />
+</a></p>
+<!-- /wp:html -->
+
+<!-- wp:jetpack/markdown {"source":"I'm headed to [XOXO 2024](https://xoxofest.com/2024/) tomorrow! I'm excited, XOXO is legendary, but I've never been before, and this is the first one they've put on since 2019. I caught it just in time, too, they say this will be the last one ever."} -->
+<div class="wp-block-jetpack-markdown"><p>I’m headed to <a href="https://xoxofest.com/2024/">XOXO 2024</a> tomorrow! I’m excited, XOXO is legendary, but I’ve never been before, and this is the first one they’ve put on since 2019. I caught it just in time, too, they say this will be the last one ever.</p>
+</div>
+<!-- /wp:jetpack/markdown -->
+
+<!-- wp:html -->
+<p>Drop me a line if you'll be there too, I'd love to say hi! <data class="p-category" value="xoxofest"></data></p>
+<!-- /wp:html -->

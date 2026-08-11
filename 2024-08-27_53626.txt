@@ -1,0 +1,10 @@
+53626
+
+
+<!-- wp:jetpack/markdown {"source":"The [Field Notes](https://fieldnotesbrand.com/) motto: \n\n\u003e I’m not writing it down to remember it later, I’m writing it down to remember it now."} -->
+<div class="wp-block-jetpack-markdown"><p>The <a href="https://fieldnotesbrand.com/">Field Notes</a> motto:</p>
+<blockquote>
+<p>I’m not writing it down to remember it later, I’m writing it down to remember it now.</p>
+</blockquote>
+</div>
+<!-- /wp:jetpack/markdown -->

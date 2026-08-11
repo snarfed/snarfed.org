@@ -1,0 +1,14 @@
+55187
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e These two statements are both true: _all accidents are preventable_ and _we cannot prevent all accidents._\n\n\\- [Timber Stinson-Schroff](https://www.timberschroff.com/), _[Safe New World](https://summerofprotocols.com/safe-new-world-web#footnote-012-backlink)_, [Summer of Protocols](https://summerofprotocols.com/)\n"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>These two statements are both true: <em>all accidents are preventable</em> and <em>we cannot prevent all accidents.</em></p>
+</blockquote>
+<p>- <a href="https://www.timberschroff.com/">Timber Stinson-Schroff</a>, <em><a href="https://summerofprotocols.com/safe-new-world-web#footnote-012-backlink">Safe New World</a></em>, <a href="https://summerofprotocols.com/">Summer of Protocols</a></p>
+</div>
+<!-- /wp:jetpack/markdown -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

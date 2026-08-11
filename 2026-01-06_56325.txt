@@ -1,0 +1,10 @@
+56325
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e Have you ever alphabetized your hard drive?\n\n\u005c- _[Makers](https://craphound.com/makers/Cory_Doctorow_-_Makers.html#:~:text=Have%20you%20ever%20alphabetized%20your%20hard%20drive)_, Cory Doctorow"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>Have you ever alphabetized your hard drive?</p>
+</blockquote>
+<p>- <em><a href="https://craphound.com/makers/Cory_Doctorow_-_Makers.html#:~:text=Have%20you%20ever%20alphabetized%20your%20hard%20drive">Makers</a></em>, Cory Doctorow</p>
+</div>
+<!-- /wp:jetpack/markdown -->

@@ -1,0 +1,21 @@
+57262
+
+
+<!-- wp:paragraph -->
+<p><a href="https://worksonmymachine.ai/">Scott Werner</a>: <a href="https://worksonmymachine.ai/p/the-wizard-with-the-very-defensible"><em>The Wizard With the Very Defensible Pond</em></a></p>
+<!-- /wp:paragraph -->
+
+<!-- wp:jetpack/markdown {"source":"\u003e There was once a wizard who lived beside a pond. It was a small pond. The sort of pond that probably gets called a “water feature” on a Zillow listing by a real estate agent who really knows their euphemisms..."} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>There was once a wizard who lived beside a pond. It was a small pond. The sort of pond that probably gets called a “water feature” on a Zillow listing by a real estate agent who really knows their euphemisms…</p>
+</blockquote>
+</div>
+<!-- /wp:jetpack/markdown -->
+
+<!-- wp:image {"lightbox":{"enabled":false},"width":"458px","height":"auto","aspectRatio":"1.3275734821379566","sizeSlug":"large","linkDestination":"custom"} -->
+<figure class="wp-block-image size-large is-resized"><a href="https://worksonmymachine.ai/p/the-wizard-with-the-very-defensible"><img src="https://substackcdn.com/image/fetch/$s_!LaZf!,f_auto,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F9ecae46d-e3c3-4f8f-a52b-10818f48e980_1232x928.png" alt="" style="aspect-ratio:1.3275734821379566;width:458px;height:auto"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

@@ -1,0 +1,10 @@
+56185
+
+
+<!-- wp:jetpack/markdown {"source":"\u003e Democracy is the worst form of government...except for all the others.\n\n[- Winston Churchill](https://winstonchurchill.org/resources/quotes/the-worst-form-of-government/)"} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>Democracy is the worst form of government…except for all the others.</p>
+</blockquote>
+<p><a href="https://winstonchurchill.org/resources/quotes/the-worst-form-of-government/">- Winston Churchill</a></p>
+</div>
+<!-- /wp:jetpack/markdown -->

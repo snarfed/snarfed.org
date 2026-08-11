@@ -1,0 +1,14 @@
+53757
+
+
+<!-- wp:paragraph -->
+<p>Discovered a nasty, days-old data bug in prod just now in an untested code path. Only hit a few users, but still, ugh.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p>Lesson learned: 90+% test coverage is great, but bugs still happen in the other 10%. It may be harder to test, but do it anyway. If you shipped it then you should have put a test on it. 💍</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

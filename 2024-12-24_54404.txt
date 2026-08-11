@@ -1,0 +1,32 @@
+54404
+
+
+<!-- wp:paragraph -->
+<p>ah, that wonderful age-old Christmas tradition, the cardboard boat race</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:group {"layout":{"type":"constrained"}} -->
+<div class="wp-block-group"><!-- wp:gallery {"ids":[54401,54402,54400,54403],"linkTo":"none"} -->
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":54401,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://snarfed.org/wp-content/uploads/2024/12/pxl_20241224_2140312547438489137604184919-1024x769.jpg" alt="Table full of cardboard, scissors, duct tape, boats under construction" class="wp-image-54401 u-photo"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":54402,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://snarfed.org/wp-content/uploads/2024/12/pxl_20241224_2311070895143933935955595104-1024x769.jpg" alt="A range of finished cardboard boats, lined up outside" class="wp-image-54402 u-photo"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":54400,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://snarfed.org/wp-content/uploads/2024/12/pxl_20241224_2319384474779862087899607347-1024x769.jpg" alt="Someone dropping a cardboard boat into a rushing stream " class="wp-image-54400 u-photo"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":54403,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://snarfed.org/wp-content/uploads/2024/12/pxl_20241224_2317159252273965320959058277-1024x769.jpg" alt="Someone dropping an oddly shaped cardboard boat into a rushing stream" class="wp-image-54403 u-photo"/></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery --></div>
+<!-- /wp:group -->
+
+<!-- wp:video {"id":54410,"poster":"https://snarfed.org/wp-content/uploads/2024/12/wp-1735089366896_mp4_avc_240p.original.jpg","guid":["qcLwPSDn"],"videoPressClassNames":"wp-block-embed is-type-video is-provider-videopress"} -->
+<figure class="wp-block-video wp-block-embed is-type-video is-provider-videopress"><div class="wp-block-embed__wrapper">
+https://videopress.com/v/qcLwPSDn?resizeToParent=true&amp;cover=true&amp;posterUrl=https%3A%2F%2Fsnarfed.org%2Fwp-content%2Fuploads%2F2024%2F12%2Fwp-1735089366896_mp4_avc_240p.original.jpg&amp;preloadContent=metadata&amp;useAverageColor=true
+</div></figure>
+<!-- /wp:video -->

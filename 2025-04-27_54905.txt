@@ -1,0 +1,21 @@
+54905
+
+
+<!-- wp:jetpack/markdown {"source":"It's an age-old cliche that hip-hop and rap music are crude about sex and love, at best, but the exceptions always manage to surprise me. Back in the day, artists like LL Cool J were out here spitting bars straight out of romance novels. Take 1995's [_Hey Lover_](https://genius.com/Ll-cool-j-hey-lover-lyrics):\n\n\u003e I touched you gently with my hands  \n\u003e We talked about traveling to distant lands  \n\u003e Escaping all the madness out here in the world  \n\u003e Becoming my wife, no longer my girl  \n\u003e Then, you let your dress fall down to the floor  \n\u003e I kissed you softly and you yearned for more  \n\u003e We experienced pleasure unparalleled  \n\u003e Into an ocean of love, we both fell  \n\u003e Swimming in the timeless currents of pure bliss  \n\u003e Fantasies interchanging with each kiss  \n\u003e Undying passion unites our souls  \n\u003e Together we swim until the point of no control  "} -->
+<div class="wp-block-jetpack-markdown"><p>It’s an age-old cliche that hip-hop and rap music are crude about sex and love, at best, but the exceptions always manage to surprise me. Back in the day, artists like LL Cool J were out here spitting bars straight out of romance novels. Take 1995’s <a href="https://genius.com/Ll-cool-j-hey-lover-lyrics"><em>Hey Lover</em></a>:</p>
+<blockquote>
+<p>I touched you gently with my hands<br>
+We talked about traveling to distant lands<br>
+Escaping all the madness out here in the world<br>
+Becoming my wife, no longer my girl<br>
+Then, you let your dress fall down to the floor<br>
+I kissed you softly and you yearned for more<br>
+We experienced pleasure unparalleled<br>
+Into an ocean of love, we both fell<br>
+Swimming in the timeless currents of pure bliss<br>
+Fantasies interchanging with each kiss<br>
+Undying passion unites our souls<br>
+Together we swim until the point of no control</p>
+</blockquote>
+</div>
+<!-- /wp:jetpack/markdown -->

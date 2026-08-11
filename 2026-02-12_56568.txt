@@ -1,0 +1,24 @@
+56568
+
+
+<!-- wp:gallery {"linkTo":"none"} -->
+<figure class="wp-block-gallery has-nested-images columns-default is-cropped"><!-- wp:image {"id":56569,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://snarfed.org/wp-content/uploads/2026/02/pxl_20260213_0612355807E38352057525220007983-1024x768.jpg" alt="Diagram of misc text projected on a downtown city building" class="wp-image-56569"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":56563,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://snarfed.org/wp-content/uploads/2026/02/pxl_20260213_0617367615670290415449577770-1024x768.jpg" alt="Davies Symphony Hall lit with many colors San Francisco city hall lit up at night" class="wp-image-56563"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":56564,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://snarfed.org/wp-content/uploads/2026/02/pxl_20260213_0617191267611850635774331099-1024x768.jpg" alt="San Francisco city hall lit up at night" class="wp-image-56564"/></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":56565,"sizeSlug":"large","linkDestination":"none"} -->
+<figure class="wp-block-image size-large"><img src="https://snarfed.org/wp-content/uploads/2026/02/pxl_20260213_0615405242828009510885136932-1024x768.jpg" alt="War Memorial Opera House with SF Ballet posters and multi-colored lights" class="wp-image-56565"/></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->

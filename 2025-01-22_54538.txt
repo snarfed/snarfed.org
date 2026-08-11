@@ -1,0 +1,13 @@
+54538
+
+
+<!-- wp:paragraph -->
+<p>Enjoyed this early proposal for an alternative to BGP/OSPF <a href="https://www.rand.org/pubs/research_memoranda/RM3420.html" data-type="link" data-id="https://www.rand.org/pubs/research_memoranda/RM3420.html">from way back in 1964</a>. Even more bottom-up! ASes don't claim routes or prefixes at all, they just send packets with source IPs and per-hop TTLs, and shortest paths converge backward based on those.</p>
+<!-- /wp:paragraph -->
+
+<!-- wp:jetpack/markdown {"source":"\u003e Assuming symmetrical bi-directional links, the postman can infer the \u0022best\u0022 paths to transmit mail to any station merely by looking at the cancellation time or the equivalent handover number tag. If the postman sitting in the center of the United States received letters from San Francisco, he would find that letters from San Francisco arriving from channels to the west would come in with later cancellation dates than if such letters had arrived in a roundabout manner from the east. Each letter carries an implicit indication of its length of transmission path. The astute postman can then deduce that the best channel to send a message to San Francisco is probably the link associated with the latest cancellation dates of messages from San Francisco. By observing the cancellation dates for all letters in transit, information is derived to route future traffic. The return address and cancellation date of recent letters is sufficient to determine the best direction in which to send subsequent letters."} -->
+<div class="wp-block-jetpack-markdown"><blockquote>
+<p>Assuming symmetrical bi-directional links, the postman can infer the “best” paths to transmit mail to any station merely by looking at the cancellation time or the equivalent handover number tag. If the postman sitting in the center of the United States received letters from San Francisco, he would find that letters from San Francisco arriving from channels to the west would come in with later cancellation dates than if such letters had arrived in a roundabout manner from the east. Each letter carries an implicit indication of its length of transmission path. The astute postman can then deduce that the best channel to send a message to San Francisco is probably the link associated with the latest cancellation dates of messages from San Francisco. By observing the cancellation dates for all letters in transit, information is derived to route future traffic. The return address and cancellation date of recent letters is sufficient to determine the best direction in which to send subsequent letters.</p>
+</blockquote>
+</div>
+<!-- /wp:jetpack/markdown -->

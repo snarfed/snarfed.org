@@ -1,0 +1,20 @@
+55247
+
+
+<!-- wp:gallery {"columns":3,"linkTo":"media","className":"is-style-rectangular"} -->
+<figure class="wp-block-gallery has-nested-images columns-3 is-cropped is-style-rectangular"><!-- wp:image {"id":55244,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://snarfed.org/wp-content/uploads/2025/07/pxl_20250719_2054127282290679905737362589.jpg"><img src="https://snarfed.org/wp-content/uploads/2025/07/pxl_20250719_2054127282290679905737362589-769x1024.jpg" alt="Zoomed out view of a cat 10 feet from a robot cat toy" class="wp-image-55244"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":55246,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://snarfed.org/wp-content/uploads/2025/07/pxl_20250719_2054127281633808589735939870.jpg"><img src="https://snarfed.org/wp-content/uploads/2025/07/pxl_20250719_2054127281633808589735939870-697x1024.jpg" alt="Closer view of the cat. It is not amused" class="wp-image-55246"/></a></figure>
+<!-- /wp:image -->
+
+<!-- wp:image {"id":55245,"sizeSlug":"large","linkDestination":"media"} -->
+<figure class="wp-block-image size-large"><a href="https://snarfed.org/wp-content/uploads/2025/07/pxl_20250719_2054127285673441428930973370.jpg"><img src="https://snarfed.org/wp-content/uploads/2025/07/pxl_20250719_2054127285673441428930973370.jpg" alt="Zoomed in on the cat's face. It is very unimpressed" class="wp-image-55245"/></a></figure>
+<!-- /wp:image --></figure>
+<!-- /wp:gallery -->
+
+<!-- wp:paragraph -->
+<p></p>
+<!-- /wp:paragraph -->
