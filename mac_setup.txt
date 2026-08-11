@@ -34,7 +34,7 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
   * [Import "Change return to control"](https://ke-complex-modifications.pqrs.org/?q=change+return+control).
   * Enable all of those in Karabiner settings.
 * [Install Homebrew.](https://brew.sh/)
-* `brew install awscli azure-cli bash blueutil colordiff coreutils emacs-app ffmpeg git gnupg go google-cloud-sdk httpd imagemagick java jq librsvg lunar mpg123 node oauth2l openjdk openssl pandoc php pinentry-mac pstree pwgen pyright python rename telnet universal-ctags yt-dlp wdiff wget wp-cli`
+* `brew install awscli azure-cli bash blueutil colordiff coreutils emacs-app ffmpeg git gnupg go google-cloud-sdk httpd imagemagick java jq librsvg lunar mpg123 node oauth2l openjdk openssl pandoc php pinentry-mac pstree pwgen pyright python rename sem-cli  telnet universal-ctags yt-dlp wdiff wget wp-cli`
 * `open /Applications/Emacs.app`
 * `/Applications/Lunar.app/Contents/MacOS/Lunar install-cli`
 <!--
@@ -102,7 +102,10 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
   to:
   `%admin		ALL = (ALL) NOPASSWD: ALL`
 <!-- * ~~`npm install -g @zed-industries/claude-code-acp`~~ -->
-* ~~`npm install -g sfw && sfw`~~
+* ```claude mcp add --scope user observability -- npx -y @google-cloud/observability-mcp
+  claude mcp add --scope user gcloud -- npx -y @google-cloud/gcloud-mcp
+  ```
+* `npm install -g sfw && sfw`
 * In Emacs:
   * `M-x package-list-packages`, install `apache-mode apel dash-at-point dockerfile-mode editorconfig git-link go-mode helm-comint helm-git-grep lsp-pyright lua-mode magit nginx-mode php-mode popup python-mode rainbow-delimiters rainbow-identifiers request sass-mode typescript-mode yaml-mode`
 * Run `ctags` on all repos in `~/src`.
