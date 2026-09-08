@@ -19,7 +19,6 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > Over time, all data approaches either deleted or public.
 
 [- Norton's Law](https://medium.com/message/hello-future-pastebin-readers-39d9b4eb935f)
-<!-- NCX next -->
 
 > Scope wants to creep.
 
@@ -32,7 +31,6 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > All models are wrong. Some are useful.
 
 [- George Box](https://en.wikipedia.org/wiki/All_models_are_wrong)
-<!-- NCXed, by Nathan -->
 
 > Open source is a gift.
 
@@ -133,7 +131,6 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > Of all my programming bugs, 80 percent are syntax errors. Of the remaining 20 percent, 80 percent are trivial logical errors. Of the remaining 4 percent, 80 percent are pointer errors. And the remaining 0.8 percent are hard.
 
 \- Marc Donner
-<!-- NCXed. included https://www.cnbc.com/amp/2021/10/01/defi-protocol-compound-mistakenly-gives-away-millions-to-users.html -->
 
 > Twenty percent of all input forms filled out by people contain bad data.
 
@@ -378,7 +375,6 @@ Engineering quotes I like, collected over many years. Also see [engineering less
 > To err is human; to manage error is system.
 
 \- Kevin Kelly
-<!-- NCX next -->
 
 > If software cannot be maintained, then it will be rewritten.
 
@@ -662,7 +658,6 @@ availability | downtime, per year | cost
 > We are in the business of novel outages.
 
 [- Google SRE](https://cloudplatform.googleblog.com/2018/01/consequences-of-SLO-violations-CRE-life-lessons.html)
-<!-- NCXed! -->
 
 > Unix was not designed to stop people from doing stupid things, because that would also stop them from doing clever things.
 
@@ -996,7 +991,6 @@ via [@zooko](https://twitter.com/zooko)
 > If a postmortem follow-up task is not picked up within a week, it's unlikely to be completed at all.
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCX next -->
 
 > [UTC or GTFO.](https://utc-or-gtfo.creator-spring.com/)
 
@@ -1021,7 +1015,6 @@ via [@zooko](https://twitter.com/zooko)
 > It is tempting to jump right into implementing a solution when the right thing may well be to not do the thing that requires the solution in the first place.
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCX next -->
 
 > Turning things off permanently is surprisingly difficult.
 
@@ -1034,17 +1027,14 @@ via [@zooko](https://twitter.com/zooko)
 > At some point in your career you will implement half of Kerberos. Poorly.
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCX next -->
 
 > CAPEX budget always increases, OPEX budget always decreases.
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCX next -->
 
 > That completely automated solution you set up requires at least three manual steps you didn't document.
 
 [- Jan Schauman](https://www.netmeister.org/blog/ops-lessons.html)
-<!-- NCX next -->
 
 > Software projects sorted by increasing difficulty:  
 > - criticizing existing thing  
@@ -1121,7 +1111,6 @@ Corollaries:
 > Debugging is twice as hard as writing the code in the first place. Therefore, if you write the code as cleverly as possible, you are, by definition, not smart enough to debug it.
 
 \- Brian W. Kernighan
-<!-- NCX next -->
 
 > I really didn't foresee the Internet. But then, neither did the computer industry. Not that that tells us very much of course - the computer industry didn't even foresee that the century was going to end.
 
