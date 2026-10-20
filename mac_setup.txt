@@ -25,6 +25,7 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
 * `mkdir -p ~/.config/git/hooks/; ln -s ~/src/dotfiles/git-pre-commit ~/.config/git/hooks/pre-commit`
 * `mkdir -p ~/.claude; cd ~/.claude; ln -s ~/src/dotfiles/CLAUDE.md; ln -s ~/src/dotfiles/claude-settings.json settings.json`
 * [Install Hammerspoon.](https://www.hammerspoon.org/) (Also see [this Verge article on macOS's new built in tiling support](https://www.theverge.com/24273664/apple-macos-sequoia-windows-snap-how-to) if I ever consider switching.)
+  * Clone [dmgerman/hammerspoon](https://github.com/dmgerman/hammerspoon.git) into `~/src` and `git checkout new-window-filter` to [fix `hs.window.filter` latency on macOS](https://github.com/Hammerspoon/hammerspoon/issues/3574#issuecomment-4313695744).
 * [Install Karabiner Elements.](https://karabiner-elements.pqrs.org/)
   * ```cd ~/.config/karabiner/assets/complex_modifications/  
     foreach f (~/src/misc/karabiner_elements/*)  

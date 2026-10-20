@@ -1,0 +1,27 @@
+57644
+
+Hi everyone! Welcome to another Bridgy Fed status update. [Since last time](/2026-08-11_57480), we've been focusing on a big new project that we're almost ready to start beta testing, but we also managed to ship some smaller features and improvements:
+
+* From the Atmosphere:
+  * [Support posts with link embed but no text](https://github.com/snarfed/bridgy-fed/issues/2658)
+  * [Improve account deactivation/delete handling](https://github.com/snarfed/bridgy-fed/issues/1293)
+  * [Fix missed profile updates when you make more than one in a row](https://github.com/snarfed/bridgy-fed/issues/2686)
+* To the Atmosphere: [link previews for bsky.app links](https://github.com/snarfed/bridgy-fed/issues/1597)
+* From the fediverse: [handle pinned posts in paged collections](https://github.com/snarfed/bridgy-fed/issues/2302)
+* To the fediverse:
+  * [Serve real outboxes again](https://github.com/snarfed/bridgy-fed/issues/1248)
+  * [Speed up delivery for accounts with many followers](https://github.com/snarfed/bridgy-fed/issues/2154)
+  * [Preserve line breaks in profile bios](https://github.com/snarfed/bridgy-fed/issues/2675)
+* From the web: [ask for confirmation before bridging](https://github.com/snarfed/bridgy-fed/issues/2525)
+* DM notifications:
+  * [Notify you of responses to replies you send from the web UI](https://github.com/snarfed/bridgy-fed/issues/2481)
+  * [Show original posts from Atmosphere users who are only visible to logged in users](https://github.com/snarfed/bridgy-fed/issues/2444)
+* Internal:
+  * Security: more hardening [against SSRF](https://github.com/snarfed/webutil/issues/11), [XSS](https://github.com/snarfed/granary/issues/586), and CSRF attacks
+  * [Add a load balancer](https://github.com/snarfed/bridgy-fed/issues/2681)
+  * [Faster `listRepos`](https://github.com/snarfed/arroba/issues/80)
+  * [Real `collections` in `describeRepo`](https://github.com/snarfed/arroba/issues/87)
+  * [Improve firehose reliability](https://github.com/snarfed/arroba/issues/94)
+* [Switch "Bluesky" to "Atmosphere" in docs, UI, etc](https://github.com/snarfed/bridgy-fed/issues/2668)
+
+As usual, feel free to ping us with feedback, questions, and [bug reports](https://github.com/snarfed/bridgy-fed/issues), and [please support us on Patreon](https://www.patreon.com/c/ANewSocial)! You can follow the [_now_ label on GitHub](https://github.com/snarfed/bridgy-fed/issues?q=is%3Aopen+is%3Aissue+label%3Anow) to see what we're currently focusing on. See you on the bridge!
