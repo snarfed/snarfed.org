@@ -1,0 +1,40 @@
+57768
+The risks of bridging private data
+
+<p class="captioned">
+ <a href="/locked_diaries.webp">
+  <img src="/locked_diaries.webp" alt="Four locked childrens' diaries in different pastel colors">
+ </a>
+ <a href="https://www.etsy.com/shop/UshineValley">UshineValley</a>
+</p>
+
+_[Also on the A New Social blog.](https://blog.anew.social/the-risks-of-bridging-private-data/)_
+
+One of the most common questions we get is, "Could you bridge my DMs?" And not just DMs, but also group chats, followers-only posts, subscriptions, groups and communities, etc.
+
+It's a fair question! People get used to interacting across networks from a single account, so when they hit something they *can't* do, the natural reaction is, why not?
+
+Technically, there's no reason. Bridging private data (aka non-public, permissioned, etc.) is entirely possible. It would take some work, like everything, but there's no inherent structural reason that we can't do it.
+
+However, private and public data are different in many ways. First, bridging is always an approximation. We try to preserve as much fidelity as we can across networks, but we'll never hit 100%. Character counts, media limits, formatting, functionality, notifications, etc. all vary in many ways. We can't get rid of those differences, or "fix" them, we can only minimize and work around them.
+
+When we bridge your public profile, those differences are usually acceptable. If we bridge a post to a network with a lower character count, and we have to truncate it and include a "Read more" link, that's awkward, but not a big deal.
+
+However, private data doesn't differ on just *data*, eg formatting and functionality. It also differs on the *private* part: who gets access to which data, how that access works, who can change it, and more.
+
+For example, on [WhatsApp](https://www.whatsapp.com/), when you add someone new to a group, you can choose to share previous messages with them. [Signal](https://signal.org/), on the other hand, has no such option.
+
+Say we bridged Signal and WhatsApp. Signal users, in general, expect that new group members won't see previous messages. If a WhatsApp user adds another user to a group chat and shares previous messages with them, the Signal users may be unpleasantly surprised that the new member can now see everything they said before.
+
+As another example, say we bridged the [threadiverse](https://joinfediverse.wiki/Threadiverse) ([fediverse FEP-1b12 groups](https://codeberg.org/fediverse/fep/src/branch/main/fep/1b12/fep-1b12.md)) and [AT Protocol Spaces](https://atproto.com/blog/atproto-spaces-alpha). The threadiverse is already broad, varied, and only mildly interoperable, so let's consider [Lemmy](https://join-lemmy.org/) specifically.
+
+Lemmy groups have [three tiers of permissions](https://join-lemmy.org/docs/users/04-moderation.html): admins, moderators, and normal users. Only moderators can add other moderators, and only admins can add other admins, but both can remove users. Spaces, on the other hand, has [multi-dimensional permissions](https://github.com/bluesky-social/proposals/blob/main/0016-permissioned-data/README.md#oauth-scopes) across collections and actions, but only a single `manage` permission family for adding and removing users.
+
+Consider a Lemmy community bridged to an AT Protocol space. Should Lemmy admins and moderators both get `manage` on the space? Only admins? Neither seems right; both could be unpleasant, dangerous surprises.
+
+These aren't impossible problems. For every impedance mismatch like this, we can make a careful decision, communicate it loudly, and support our users in making the best of a bridge that's sometimes awkward but hopefully still useful.
+
+The stakes and risks of bridging private data, however, are drastically higher than public data. When we truncate a post, readers have to click a link to read the rest. When we expose a private message to someone that the author didn't intend it for, they may be embarrassed, hurt a friend, lose a job, or - at the extreme - get disappeared or worse.
+
+These are heavy stakes, and they warrant qualitatively stronger [threat modeling](https://github.com/snarfed/bridgy-fed/issues/773) and precautions than public data. If you're still reading, and we haven't scared you away yet, [reach out](https://anew.social/contact/), we'd love to talk!
+

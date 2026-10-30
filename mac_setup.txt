@@ -35,7 +35,7 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
   * [Import "Change return to control"](https://ke-complex-modifications.pqrs.org/?q=change+return+control).
   * Enable all of those in Karabiner settings.
 * [Install Homebrew.](https://brew.sh/)
-* `brew install awscli azure-cli bash blueutil colordiff coreutils emacs-app ffmpeg git gnupg go google-cloud-sdk httpd imagemagick java jq librsvg lunar mpg123 node oauth2l openjdk openssl pandoc php pinentry-mac pstree pwgen pyright python rename sem-cli  telnet universal-ctags yt-dlp wdiff wget wp-cli`
+* `brew install awscli azure-cli bash blueutil colordiff coreutils emacs-app ffmpeg git gnupg go google-cloud-sdk httpd imagemagick java jq librsvg lunar mpg123 node oauth2l openjdk openssl pandoc php pinentry-mac pstree pwgen pyright python rename rust sem-cli  telnet universal-ctags yt-dlp wdiff wget wp-cli`
 * `open /Applications/Emacs.app`
 * `/Applications/Lunar.app/Contents/MacOS/Lunar install-cli`
 <!--
@@ -57,6 +57,7 @@ I've used Mac OS [for the last seven years](/2013-03-02_mac_os_x). Here are my n
 * `gcloud components install beta cloud-datastore-emulator`
   * `gcloud auth login`
   * `gcloud config set project bridgy-federated`
+* `cargo install --locked --git https://github.com/guibeira/datastore-emulator --tag v0.1.9`
 * Update System Preferences:
   * Trackpad, check Tap to Click, turn off most gestures
   * Accessibility => Pointer Control => Mouse & Trackpad => Trackpad Options => check Enable dragging => Three finger drag
